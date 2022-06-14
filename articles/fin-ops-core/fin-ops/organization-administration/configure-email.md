@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This topic is divided into sections for administrators and users to make it easy to find relevant information.
+The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. This article is divided into sections for administrators and users to make it easy to find relevant information.
 
 Both administrators and users set the behavior of the email subsystem.
 

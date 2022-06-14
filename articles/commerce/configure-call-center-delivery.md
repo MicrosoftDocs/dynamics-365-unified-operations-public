@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure call center delivery modes and charges
-description: This topic describes how to set up modes of delivery and charges for a call center order in Dynamics 365 Commerce.
+description: This article describes how to set up modes of delivery and charges for a call center order in Dynamics 365 Commerce.
 author: josaw1
 ms.date: 04/26/2018
 ms.topic: article
@@ -40,7 +40,7 @@ Commerce has capabilities that let users limit the delivery modes that can be us
 
 Before you specify which delivery modes can be used for call center orders, and define the associated rules and charges, you must define the delivery modes. Go to **Sales and marketing \> Setup \> Distribution \> Modes of delivery**. Select **New** to create a new delivery mode. Alternatively, select an existing delivery mode in the list, and then select **Edit** to make changes.
 
-In the **Mode of delivery** field, you can enter any combination alphanumeric characters, based on your business requirement. You can then use the **Description** field to provide additional context. The **Charges group** and **Expedite** fields are optional and will be explained in more detail later in this topic.
+In the **Mode of delivery** field, you can enter any combination alphanumeric characters, based on your business requirement. You can then use the **Description** field to provide additional context. The **Charges group** and **Expedite** fields are optional and will be explained in more detail later in this article.
 
 On the **Commerce channels** FastTab, add any channel that should be allowed to use the delivery mode when sales transactions are created in that channel.
 

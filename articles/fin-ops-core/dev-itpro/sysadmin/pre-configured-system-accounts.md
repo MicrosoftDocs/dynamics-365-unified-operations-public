@@ -2,7 +2,7 @@
 # required metadata
 
 title: Preconfigured system accounts
-description: This topic provides information about the system accounts that are pre-configured on your Finance and Operations environments.
+description: This article provides information about the system accounts that are pre-configured on your Finance and Operations environments.
 author: jaredha
 ms.date: 03/09/2022
 ms.topic: article

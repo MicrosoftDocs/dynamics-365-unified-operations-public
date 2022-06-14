@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reason codes for inventory counting
-description: This topic describes how to set up and apply reason codes for counting tasks.
+description: This article describes how to set up and apply reason codes for counting tasks.
 author: perlynne
 ms.date: 08/02/2021
 ms.topic: article
@@ -46,7 +46,7 @@ Before you set up the system, we recommend that you define a strategy for workin
 
 ## Turn on reason code features in your system
 
-If you don't see all the features that are described in this topic in your system, you probably have to turn on the *Post on-hand adjustments using configurable reason codes connected to offset accounts* feature. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
+If you don't see all the features that are described in this article in your system, you probably have to turn on the *Post on-hand adjustments using configurable reason codes connected to offset accounts* feature. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Post on-hand adjustments using configurable reason codes connected to offset accounts*
@@ -115,7 +115,7 @@ To set up your counting reason codes, follow these steps.
 
 ### <a name="reason-groups"></a>Set up counting reason code groups
 
-*Counting reason code groups* can be used as part of the *Adjustment in* and *Adjustment out* menu items in the Warehouse Management mobile app to limit the list of counting reason codes. (For more information about counting reason code groups, see the [Set up mobile device menu items for adjustment in and adjustment out](#setup-adjustment-in-out) section later in this topic.)
+*Counting reason code groups* can be used as part of the *Adjustment in* and *Adjustment out* menu items in the Warehouse Management mobile app to limit the list of counting reason codes. (For more information about counting reason code groups, see the [Set up mobile device menu items for adjustment in and adjustment out](#setup-adjustment-in-out) section later in this article.)
 
 1. Go to **Inventory management** \> **Setup** \> **Inventory** \> **Counting reason code groups**.
 1. On the Action Pane, select **New** to add a group.
@@ -178,7 +178,7 @@ To set up a mobile device menu item for adjustment in or adjustment out, follow 
         - *Hide* – Don't show the reason code.
 
     - **Edit counting reason code** – Set this option to *Yes* to allow the worker to edit the reason code when it's shown on the mobile device during counting. Set it to *No* to prevent the worker from editing the code.
-    - **Counting reason code group** – Select a reason code group if you want to limit the list of options that is presented to workers. For information about how to set up reason code groups, see the [Set up counting reason code groups](#reason-groups) section earlier in this topic. 
+    - **Counting reason code group** – Select a reason code group if you want to limit the list of options that is presented to workers. For information about how to set up reason code groups, see the [Set up counting reason code groups](#reason-groups) section earlier in this article. 
 
 > [!NOTE]
 > When you assign a counting reason code group to *Adjustment in* and *Adjustment out* menu items where the **Use process guide** option is set to *Yes*, you can get a limited list of the counting reason codes as part of the processing in the Warehouse Management mobile app.

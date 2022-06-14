@@ -2,7 +2,7 @@
 # required metadata
 
 title: Query cookbook 
-description: This topic describes queries in the SQL Insights tab and how they should be used when troubleshooting performance issues. 
+description: This article describes queries in the SQL Insights tab and how they should be used when troubleshooting performance issues. 
 author: meeramahabala
 ms.date: 11/09/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides details on each query under the **SQL Insights** tab on the **Environment Monitoring** page in Lifecycle Services (LCS) and how they should be used when troubleshooting performance issues. For details about this feature, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](performancetroubleshooting.md).
+This article provides details on each query under the **SQL Insights** tab on the **Environment Monitoring** page in Lifecycle Services (LCS) and how they should be used when troubleshooting performance issues. For details about this feature, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](performancetroubleshooting.md).
 
 ## Current blocking
 

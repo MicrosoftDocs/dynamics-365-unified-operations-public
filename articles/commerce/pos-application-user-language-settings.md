@@ -2,7 +2,7 @@
 # required metadata
 
 title: Point of sale (POS) application and user language settings
-description: This topic describes how to change language settings in Modern POS (MPOS) and Cloud POS.
+description: This article describes how to change language settings in Modern POS (MPOS) and Cloud POS.
 author: jblucher
 ms.date: 06/20/2017
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to change language settings in Modern POS (MPOS) and Cloud POS.
+This article describes how to change language settings in Modern POS (MPOS) and Cloud POS.
 
 ## Overview
 Modern POS (MPOS) and Cloud POS support environments where language settings and translations can vary between the store and user settings. For example, the store could be located in a region where English is most common for their customers, but some workers prefer to use the application with French translations.

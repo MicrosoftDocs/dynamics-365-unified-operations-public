@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage shipping containers
-description: This topic describes how to work with shipping containers. Shipping containers are used to group together goods that are physically grouped together. They are also used in cases where costs must be shared only across those goods, usually because they are physically together.
+description: This article describes how to work with shipping containers. Shipping containers are used to group together goods that are physically grouped together. They are also used in cases where costs must be shared only across those goods, usually because they are physically together.
 author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
@@ -147,7 +147,7 @@ To open the **Lines** view, open a shipping container, and then select the **Lin
 
 ### Information on the Shipping container FastTab
 
-The **Shipping container** FastTab in the **Lines** view shows information about the folio. Most of this information also appears in the **Header** view, as described earlier in this topic.
+The **Shipping container** FastTab in the **Lines** view shows information about the folio. Most of this information also appears in the **Header** view, as described earlier in this article.
 
 ### Information and buttons on the Lines FastTab
 

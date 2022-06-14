@@ -2,7 +2,7 @@
 # required metadata
 
 title: Override POS request handler
-description: This topic explains how to override a POS request handler.
+description: This article explains how to override a POS request handler.
 author: mugunthanm
 ms.date: 07/13/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.3.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to override POS request handler. We've introduced an extension pattern for overriding the POS business logic. If you have a scenario where you want to modify/add some business logic to the core POS business flow, then you can follow this pattern.
+This article explains how to override POS request handler. We've introduced an extension pattern for overriding the POS business logic. If you have a scenario where you want to modify/add some business logic to the core POS business flow, then you can follow this pattern.
 
 For example, when you sell a serial item, POS will display a dialog box where you can enter the serial number for that item after the scan. If you want to automate the serial number process by entering the serial number through code, then you can override this serial number request handler and use custom business logic. Most of the business logic in POS is implemented in request handler, however, you can override the relevant request handler and return the response according to your business flow.
 

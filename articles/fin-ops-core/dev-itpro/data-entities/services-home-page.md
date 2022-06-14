@@ -2,7 +2,7 @@
 # required metadata
 
 title: Service endpoints overview
-description: This topic describes the service endpoints that are available.
+description: This article describes the service endpoints that are available.
 author: peakerbl
 ms.date: 06/22/2020
 ms.topic: overview
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the service endpoints that are available in Microsoft Dynamics 365 Finance. It also provides a comparison to the endpoints that are available in Microsoft Dynamics AX 2012.
+This article describes the service endpoints that are available in Microsoft Dynamics 365 Finance. It also provides a comparison to the endpoints that are available in Microsoft Dynamics AX 2012.
 
 ## List of services
 The following table lists all the service endpoints, and compares the endpoints available for the application, and AX 2012.
@@ -46,7 +46,7 @@ The following table lists all the service endpoints, and compares the endpoints 
 | OData Service               | No      | Yes                            |
 | REST Metadata Service       | No      | Yes                            |
 
-This topic describes authentication for services, and the REST Metadata service. The following links provide detailed documentation for:
+This article describes authentication for services, and the REST Metadata service. The following links provide detailed documentation for:
 
 - [Custom service development](custom-services.md)
 - [Open Data Protocol (OData)](odata.md)

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Incorrect field values on the GSTR report
-description: This topic provides troubleshooting information that can help when field values on the generated GSTR report are incorrect.
+description: This article provides troubleshooting information that can help when field values on the generated GSTR report are incorrect.
 author: yungu
 ms.date: 06/08/2021
 ms.topic: article
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-When the GSTR report is generated, some of the field values might be incorrect. In this case, follow the steps in the sections of this topic to try to fix the issue.
+When the GSTR report is generated, some of the field values might be incorrect. In this case, follow the steps in the sections of this article to try to fix the issue.
 
-This topic uses the **State of supply** value of the **Invoice and bill of supply** field in the **GSTR-1** legal entity as an example.
+This article uses the **State of supply** value of the **Invoice and bill of supply** field in the **GSTR-1** legal entity as an example.
 
 ## Determine whether the issue is related to Excel
 
@@ -87,7 +87,7 @@ To determine whether the issue is related to Microsoft Excel, see [Details for i
 
 ## Debug code to analyze the field logic
 
-1. Find references of the method as explained earlier in the topic.
+1. Find references of the method as explained earlier in the article.
 2. Set breakpoints in the places where the method is called, and then debug it.
 
     [![Breakpoints in references.](./media/field-value-incorrect-in-GSTR-report-result-Picture6.png)](./media/field-value-incorrect-in-GSTR-report-result-Picture6.png)

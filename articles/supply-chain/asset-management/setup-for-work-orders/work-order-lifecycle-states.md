@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work order lifecycle states
-description: This topic explains work order lifecycle states in Asset Management.
+description: This article explains work order lifecycle states in Asset Management.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article
@@ -74,7 +74,7 @@ The following table describes the options in the **Work order** and **Schedule**
 
     On the **Details** FastTab, the **Lifecycle models** field shows the number of work order lifecycle models that use this lifecycle state.
 
-8. On the **General** FastTab, in the **Work order** section, select the functions that should be available for this lifecycle state by setting the relevant options to **Yes**. For descriptions of the options, see the table earlier in this topic.
+8. On the **General** FastTab, in the **Work order** section, select the functions that should be available for this lifecycle state by setting the relevant options to **Yes**. For descriptions of the options, see the table earlier in this article.
 9. In the **Project** section, in the **Stage** field, select the project stage that should be related to this lifecycle state.
 10. In the **Project** section, set the **Close activities** option to **Yes** if project activities that are related to each work order job should be automatically closed when the work order is in this lifecycle state.
 
@@ -82,7 +82,7 @@ The following table describes the options in the **Work order** and **Schedule**
     > To find the number of the project activity that is related to a work order job, select **Asset management** \> **Common** \> **Work orders** \> **All work orders**, **Active work orders**, or **My active work orders**. Open the work order, and then select the work order job. The activity number is shown in the **Activity number** field in the **Project** section on the **General** tab of the **Line details** FastTab.
 
 11. In the **Forecast** section, set the **Copy hour forecast**, **Copy item forecast**, and/or **Copy expense forecast** option to **Yes** if work order project forecasts should automatically be copied to work order journals when the work order is in this lifecycle state.
-12. In the **Schedule** section, set one of the options to **Yes** if the schedule status for work order jobs should be updated when the work order is in this lifecycle state. For descriptions of the **Ready**, **Start**, **End**, and **Delete schedule lines** options, see the table earlier in this topic.
+12. In the **Schedule** section, set one of the options to **Yes** if the schedule status for work order jobs should be updated when the work order is in this lifecycle state. For descriptions of the **Ready**, **Start**, **End**, and **Delete schedule lines** options, see the table earlier in this article.
 
     > [!NOTE]
     > To view schedule lines that are related to work order jobs, select **Asset management** \> **Common** \> **Work orders** \> **All work orders**, **Active work orders**, or **My active work orders**. Open the work order, select the work order job on the **Work order jobs** FastTab, and view related information on the **Line details** FastTab. The **Status** field on the **Schedule** tab shows the status of the work order job. The **Status** field can be set to the following values: **Scheduled**, **Ready**, **Started**, **Stopped**, and **Ended**.

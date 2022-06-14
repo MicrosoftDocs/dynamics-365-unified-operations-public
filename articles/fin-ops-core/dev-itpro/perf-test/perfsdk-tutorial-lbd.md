@@ -1,6 +1,6 @@
 ---
 title: Performance SDK and multiuser testing in on-premises environments
-description: This topic explains how to use the Performance software development kit (SDK) to do multiuser load testing in an on-premises environment.
+description: This article explains how to use the Performance software development kit (SDK) to do multiuser load testing in an on-premises environment.
 author: hasaid
 ms.date: 03/22/2019
 ms.topic: article
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: Platform update 19
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to use the Performance software development kit (SDK) to do multiuser load testing in an on-premises environment.
+This article explains how to use the Performance software development kit (SDK) to do multiuser load testing in an on-premises environment.
 
   > [!IMPORTANT]
   > Visual Studio 2019 will be the last version of Visual Studio with web performance and load test features. In the future, we will be publishing some recommendations for alternative solutions.  
@@ -160,7 +160,7 @@ Follow these steps in the development environment.
 ### Prepare the on-premises environment
 Follow these steps on each Application Object Server (AOS) VM in the on-premises deployment.
 
-1. Copy the **authcert.cer** file that you created in the [Prepare the development environment](#prepare-the-development-environment) section of this topic to the AOS VM.
+1. Copy the **authcert.cer** file that you created in the [Prepare the development environment](#prepare-the-development-environment) section of this article to the AOS VM.
 2. Install the **authcert.cer** certificate file. When you install the certificate, make sure that you select **Local Machine**. Also make sure that you put the certificate in the **Trusted Root Certification Authorities** store.
 3. Open the **wif.config** file in a text editor. The path of the file will resemble **C:\\ProgramData\\SF\\AOS1\\Fabric\\work\\Applications\\AXSFType\_App19\\AXSF.Code.1.0.20180717001108**.
 
@@ -223,7 +223,7 @@ Follow these steps on each Application Object Server (AOS) VM in the on-premises
 
 ### Create a multiuser test from a single-user test
 
-After you create a single-user test by using the information earlier in this topic, you can convert it to a multiuser test. Add **MS.Dynamics.TestTools.UIHelpers.Core;** to your test script, and find the following line in the **TestSetup** method.
+After you create a single-user test by using the information earlier in this article, you can convert it to a multiuser test. Add **MS.Dynamics.TestTools.UIHelpers.Core;** to your test script, and find the following line in the **TestSetup** method.
 
 ```csharp
 Client = DispatchedClient.DefaultInstance;
@@ -364,7 +364,7 @@ You might receive the error message for several reasons:
     Get-ChildItem | Where-Object { $_.Subject -like "CN=127.0.0.1" }
     ```
 
-    If the thumbprint doesn't appear in the Windows PowerShell console after you run the script, the certificate can't be found. To fix the issue, copy and install the .cer file that you created earlier in this topic to the AOS machine.
+    If the thumbprint doesn't appear in the Windows PowerShell console after you run the script, the certificate can't be found. To fix the issue, copy and install the .cer file that you created earlier in this article to the AOS machine.
 
 - If this issue occurs when you run load tests, the setup scripts might not have installed the corresponding .pfx file correctly. Verify that the password that is specified in the CloudCtuFakeACSInstall.cmd file matches the password that was set when the certificate was created.
 
@@ -430,7 +430,7 @@ System.TypeInitializationException: The type initializer for 'MS.Dynamics.TestTo
 This issue occurs when the AOS endpoint can't validate the thumbprint of the certificate that you created. There are three possible causes:
 
 - In the CloudEnvironment.Config file, either a value isn't specified for the **IsAdfs** key, or the value is set to **False**. Make sure that the value for the **IsAdfs** key is set to **True**.
-- The certificate wasn't installed on the AOS machine. To fix the issue, copy the .cer file that you created earlier in this topic to the AOS machine, and install the certificate.
+- The certificate wasn't installed on the AOS machine. To fix the issue, copy the .cer file that you created earlier in this article to the AOS machine, and install the certificate.
 - The thumbprint of the certificate wasn't added to the wif.config file on the AOS machine. To fix the issue, see step 8 in the [Run a single-user test by using the Performance SDK](#run-a-single-user-test-by-using-the-performance-sdk) section for information about how to add the certificate to the wif.config file. After you modify the wif.config file, be sure to restart the application through Service Fabric Explorer.
 
 ### MS.Dynamics.Test.Team.Foundation.WebClient.InteractionService.dll.config is missing from the deployment items

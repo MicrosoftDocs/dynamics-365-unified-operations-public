@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Finance and Operations platform update 28 (July 2019)
-description: This topic describes features that are in preview in Dynamics 365 for Finance and Operations platform update 28 (July 2019). 
+description: This article describes features that are in preview in Dynamics 365 for Finance and Operations platform update 28 (July 2019). 
 author: tonyafehr
 ms.date: 07/08/2019
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform 28
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 28. This version has a build number of 7.0.5314. For more information about Platform update 28, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
+This article describes features that are new or changed in Dynamics 365 for Finance and Operations platform update 28. This version has a build number of 7.0.5314. For more information about Platform update 28, see [Additional resources](whats-new-platform-update-28.md#additional-resources).
 
 ## Data management enhanced view as the default view
 For several years the standard view in data management has been deprecated. Users going to the data management workspace were informed about the deprecation during this period. The enhanced view is now being set as the default view. The standard view is still available and can be brought back using the existing setting in framework parameters, although it is not recommended to use standard view as it will be deleted sometime in future. If users explicitly choose to use standard view by clicking the **Standard view** button on any of the data management forms, these users will continue to see standard view as their personalized settings will be honored. However, such users are also advised to switch to using enhanced view.
@@ -69,12 +69,12 @@ Wondering about upcoming and recently released capabilities in any of our busine
 [Check out the April '19 release notes](/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 

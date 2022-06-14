@@ -1,6 +1,6 @@
 ---
 title: Inventory forecasts
-description: This topic describes the supply and demand forecast functionality that can be used to create inventory forecasts in Microsoft Dynamics 365 Supply Chain Management.
+description: This article describes the supply and demand forecast functionality that can be used to create inventory forecasts in Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
 ms.date: 06/08/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to view and create inventory forecasts. You can create and view supply and demand forecast lines for items, item groups, item allocation keys, customer accounts, customer groups, vendor accounts, and vendor groups.
+This article describes how to view and create inventory forecasts. You can create and view supply and demand forecast lines for items, item groups, item allocation keys, customer accounts, customer groups, vendor accounts, and vendor groups.
 
 For each forecast line, you can select the forecast model that is used. You can then specify the item or item group, plus the quantity or the transaction amount. You can also set up a time schedule for allocating the forecast quantity.
 
@@ -55,7 +55,7 @@ As the table in step 1 show, there are different ways to access the pages that a
     Depending on your selection, the **Supply forecast** or **Demand forecast** page appears. It shows any existing forecast lines for the record that you selected before you opened the page.
 
 1. On the Action Pane, select **New** to add a forecast line to the grid in the upper part of the page.
-1. On the new line, in the **Model** field, select the forecast model to use. Then enter other details as required, such as the item, item group, customer or vendor account or group, item quantity, or total transaction amount. For complete details about the fields that are available on the **Supply forecast** and **Demand forecast** pages, see the later sections in this topic.
+1. On the new line, in the **Model** field, select the forecast model to use. Then enter other details as required, such as the item, item group, customer or vendor account or group, item quantity, or total transaction amount. For complete details about the fields that are available on the **Supply forecast** and **Demand forecast** pages, see the later sections in this article.
 1. To distribute the forecast over the period, on the **Overview** tab, select **Allocate forecast** on the toolbar.
 1. In the **Allocation** grid, review the time horizon and the time intervals that are used to distribute the forecast quantities.
 
@@ -63,7 +63,7 @@ As the table in step 1 show, there are different ways to access the pages that a
 
 The supply forecast lets you create a plan for items that must be purchased. It tells procurement and sourcing clerks what they are expected to order.
 
-You can enter a supply forecast by item, item group, item allocation key, vendor, and vendor group. For information about all the ways to open the **Supply forecast** page for various entities and records, see the [View and manually enter forecast lines](#manual-entry) section earlier in this topic.
+You can enter a supply forecast by item, item group, item allocation key, vendor, and vendor group. For information about all the ways to open the **Supply forecast** page for various entities and records, see the [View and manually enter forecast lines](#manual-entry) section earlier in this article.
 
 The upper part of the **Supply forecast** page provides a grid of supply forecast lines and a set of tabs that you can use to view and set more information about a selected forecast line. The lower part of the page provides an **Allocation** grid.
 
@@ -89,9 +89,9 @@ The following table describes the commands that are available on the toolbar on 
 
 | Command | Description |
 |---|---|
-| Allocate forecast | If you're using an allocation method, generate the individual schedule lines for the forecast transaction. The line's quantity is then distributed by date (according to the selected time intervals), quantity, and amount for the whole time horizon. (See the [Allocate forecast](#allocate-forecast) section later in this topic.) |
-| Bulk update | Open the **Edit forecast transactions** page. (See the [Bulk update forecast transactions](#bulk-update) section later in this topic.) |
-| Inventory forecast | Open a view of the **Inventory forecast** page that is filtered for the selected item/model combination. (See the [Inventory forecast](#inventory-forecast) section later in this topic.) |
+| Allocate forecast | If you're using an allocation method, generate the individual schedule lines for the forecast transaction. The line's quantity is then distributed by date (according to the selected time intervals), quantity, and amount for the whole time horizon. (See the [Allocate forecast](#allocate-forecast) section later in this article.) |
+| Bulk update | Open the **Edit forecast transactions** page. (See the [Bulk update forecast transactions](#bulk-update) section later in this article.) |
+| Inventory forecast | Open a view of the **Inventory forecast** page that is filtered for the selected item/model combination. (See the [Inventory forecast](#inventory-forecast) section later in this article.) |
 | Create item requirement | Open a dialog box where you can create item requirements, and sales order or item journal lines for project-related forecast transactions. Although this command is available for both supply forecast lines and demand forecast lines, it can't be used on the **Supply forecast** page. |
 
 ### The Overview tab on the Supply forecast page
@@ -168,7 +168,7 @@ If you're using an item allocation key, or if you've entered an item forecast fo
 
 The demand forecast lets you enter or generate demand for a customer. It helps sales and marketing clerks inform master planning clerks about the expected demand during the upcoming forecast period.
 
-You can enter a demand forecast by item, item group, item allocation key, customer, and customer group. For information about all the ways to open the **Demand forecast** page for various entities and records, see the [View and manually enter forecast lines](#manual-entry) section earlier in this topic.
+You can enter a demand forecast by item, item group, item allocation key, customer, and customer group. For information about all the ways to open the **Demand forecast** page for various entities and records, see the [View and manually enter forecast lines](#manual-entry) section earlier in this article.
 
 The upper part of the **Demand forecast** page provides a grid of demand forecast lines and a set of tabs that you can use to view and set more information about a selected forecast line. The lower part of the page provides an **Allocation** grid.
 
@@ -196,9 +196,9 @@ The following table describes the commands that are available on the toolbar on 
 
 | Command | Description |
 |---|---|
-| Allocate forecast | If you're using an allocation method, generate the individual schedule lines for the forecast transaction. The line's quantity is then distributed by date (according to the selected time intervals), quantity, and amount for the whole time horizon. (See the [Allocate forecast](#allocate-forecast) section later in this topic.)|
-| Bulk update | Open the **Edit forecast transactions** page. (See the [Bulk update forecast transactions](#bulk-update) section later in this topic.) |
-| Inventory forecast | Open a view of the **Inventory forecast** page that is filtered for the selected item/model combination. (See the [Inventory forecast](#inventory-forecast) section later in this topic.) |
+| Allocate forecast | If you're using an allocation method, generate the individual schedule lines for the forecast transaction. The line's quantity is then distributed by date (according to the selected time intervals), quantity, and amount for the whole time horizon. (See the [Allocate forecast](#allocate-forecast) section later in this article.)|
+| Bulk update | Open the **Edit forecast transactions** page. (See the [Bulk update forecast transactions](#bulk-update) section later in this article.) |
+| Inventory forecast | Open a view of the **Inventory forecast** page that is filtered for the selected item/model combination. (See the [Inventory forecast](#inventory-forecast) section later in this article.) |
 | Create item requirement | Open a dialog box where you can create item requirements, and sales order or item journal lines for project-related forecast transactions. |
 
 ### The Overview tab on the Demand forecast page
@@ -291,7 +291,7 @@ The **Inventory dimensions** tab shows all the inventory dimension values for th
 
 ### The Allocation grid on the Demand forecast page
 
-If you're using an item allocation key, or if you've entered an item forecast for one or more future periods, you can allocate the forecast by selecting **Allocate forecast** on the toolbar on the **Overview** tab. The quantity is then distributed in the manner that is indicated by the lines in the **Allocation** grid. (See the [Allocate forecast](#allocate-forecast) section later in this topic.)
+If you're using an item allocation key, or if you've entered an item forecast for one or more future periods, you can allocate the forecast by selecting **Allocate forecast** on the toolbar on the **Overview** tab. The quantity is then distributed in the manner that is indicated by the lines in the **Allocation** grid. (See the [Allocate forecast](#allocate-forecast) section later in this article.)
 
 ## <a name="inventory-forecast"></a>Inventory forecast
 

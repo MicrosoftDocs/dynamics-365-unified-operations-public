@@ -2,7 +2,7 @@
 # required metadata
 
 title: Onboard vendors
-description: This topic describes the process for onboarding new vendors. It explains the actions that are required by various roles during this process.
+description: This article describes the process for onboarding new vendors. It explains the actions that are required by various roles during this process.
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article

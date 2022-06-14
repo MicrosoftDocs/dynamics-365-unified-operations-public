@@ -1,6 +1,6 @@
 ---
 title: Run test cases by using the Regression suite automation tool (RSAT)
-description: This topic explains how to load test cases from Azure DevOps, run tests, and save your work back to Azure DevOps.
+description: This article explains how to load test cases from Azure DevOps, run tests, and save your work back to Azure DevOps.
 author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to load test cases from Azure DevOps, generate automation files, modify test parameters, run and investigate results, and save your work back to Azure DevOps.
+This article explains how to load test cases from Azure DevOps, generate automation files, modify test parameters, run and investigate results, and save your work back to Azure DevOps.
 
 ## Load test cases and create automation files
 

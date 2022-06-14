@@ -1,6 +1,6 @@
 ---
 title: Using Microsoft Power Apps portals with the Party data model
-description: This topic describes the changes to the web roles for Microsoft Power Apps portals because of the party data model in dual-write.
+description: This article describes the changes to the web roles for Microsoft Power Apps portals because of the party data model in dual-write.
 author: RamaKrishnamoorthy
 ms.date: 03/22/2021
 ms.topic: article
@@ -19,7 +19,7 @@ ms.search.validFrom: 2021-03-22
 
 The Dual-write application orchestration solution version 2.0.999.0 and later includes data model changes to party and global address book for the Account and Contact tables. The changes allow many-to-many relationships that support advanced business scenarios. These changes are not supported by portal web roles, including the customer portal, that are shipped out-of-the-box or that existed in your environment before you installed dual-write. For the web roles to work as expected, you need to create new web roles by using the new data model. 
 
-In summary, the way the tables interact has changed, but the table permissions in the customer portal haven't changed. This topic explains how to create new web roles that work with the new advanced data model.
+In summary, the way the tables interact has changed, but the table permissions in the customer portal haven't changed. This article explains how to create new web roles that work with the new advanced data model.
 
 This diagram shows the table relationship **without** the party and global address book data model:
 

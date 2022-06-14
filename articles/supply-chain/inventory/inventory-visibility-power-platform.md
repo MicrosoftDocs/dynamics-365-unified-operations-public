@@ -1,6 +1,6 @@
 ---
 title: Inventory Visibility app
-description: This topic describes how to use the Inventory Visibility app.
+description: This article describes how to use the Inventory Visibility app.
 author: yufeihuang
 ms.date: 05/27/2022
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.21
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes how to use the Inventory Visibility app.
+This article describes how to use the Inventory Visibility app.
 
 Inventory Visibility provides a model-driven app for visualization. The app contains three pages: **Configuration**, **Operational visibility**, and **Inventory summary**. It has the following features:
 

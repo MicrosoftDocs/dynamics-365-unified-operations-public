@@ -1,6 +1,6 @@
 ---
 title: Inventory Visibility on-hand change schedules and available to promise
-description: This topic describes how to schedule future on-hand changes and calculate available-to-promise (ATP) quantities.
+description: This article describes how to schedule future on-hand changes and calculate available-to-promise (ATP) quantities.
 author: yufeihuang
 ms.date: 05/11/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.26
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up the *On-hand change schedule* feature to schedule future on-hand changes and calculate available-to-promise (ATP) quantities. ATP is the quantity of an item that is available and can be promised to a customer in the next period. Use of this calculation can greatly increase your order fulfillment capability.
+This article describes how to set up the *On-hand change schedule* feature to schedule future on-hand changes and calculate available-to-promise (ATP) quantities. ATP is the quantity of an item that is available and can be promised to a customer in the next period. Use of this calculation can greatly increase your order fulfillment capability.
 
 For many manufacturers, retailers, or sellers, it isn't enough just to know what is currently on hand. They must have full visibility into future availability. This future availability should consider future supply, future demand, and ATP.
 

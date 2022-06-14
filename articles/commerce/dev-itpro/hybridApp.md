@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up POS hybrid app on Android and iOS
-description: This topic shows how to set up the POS hybrid app on Android and iOS.
+description: This article shows how to set up the POS hybrid app on Android and iOS.
 author: mugunthanm 
 ms.date: 09/13/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 8.0, AX 8.1
 # Set up POS hybrid app on Android and iOS
 [!include [banner](../includes/banner.md)]
 
-This topic shows how to build and run the Retail POS hybrid app on Android and iOS devices. 
+This article shows how to build and run the Retail POS hybrid app on Android and iOS devices. 
 
 ## Overview
 

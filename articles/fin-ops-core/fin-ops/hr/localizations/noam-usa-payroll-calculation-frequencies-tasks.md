@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up payroll calculation frequencies
-description: This topic describes how to set up payroll calculation frequencies.
+description: This article describes how to set up payroll calculation frequencies.
 author: andreabichsel
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to set up payroll calculation frequencies. Payroll calculation frequencies determine how often payroll contributions and deductions take place throughout the payroll process.
+This article describes how to set up payroll calculation frequencies. Payroll calculation frequencies determine how often payroll contributions and deductions take place throughout the payroll process.
 
 Some earnings, contributions, and deductions should be processed in specific pay periods. For example, the worker deduction for medical insurance might be processed in the first pay period of every month, and the employer contribution might be processed in the first pay period of every quarter. A car allowance might be processed in the last pay period of the month.
 
@@ -40,7 +40,7 @@ You can use payroll calculation frequencies to control which pay periods these p
 > [!NOTE]
 > The payroll calculation frequency and the pay cycle frequency aren't the same. The *pay cycle frequency* determines how often a pay cycle is run. Pay periods and pay dates are defined as part of the pay cycle. You use the *payroll calculation frequency* to select the specific pay periods when specific earnings or other payroll entities should be processed. For more information about pay cycle frequencies, see [Set up pay cycles and pay periods](noam-usa-pay-cycle-pay-period-tasks-sample.md).
 
-By default, all earnings, contributions, and deductions are processed in every pay period. If this behavior meets your payroll processing requirements, you don't have to complete the tasks in this topic.
+By default, all earnings, contributions, and deductions are processed in every pay period. If this behavior meets your payroll processing requirements, you don't have to complete the tasks in this article.
 
 ## Create payroll calculation frequencies
 

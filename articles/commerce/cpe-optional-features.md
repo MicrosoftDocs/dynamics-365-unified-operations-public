@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure optional features for a Dynamics 365 Commerce evaluation environment
-description: This topic explains how to configure optional features for a Microsoft Dynamics 365 Commerce evaluation environment.
+description: This article explains how to configure optional features for a Microsoft Dynamics 365 Commerce evaluation environment.
 author: psimolin
 ms.date: 07/16/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to configure optional features for a Microsoft Dynamics 365 Commerce evaluation environment.
+This article explains how to configure optional features for a Microsoft Dynamics 365 Commerce evaluation environment.
 
 ## Prerequisites
 
@@ -112,7 +112,7 @@ You might want to customize the email templates so that they use different image
     - Pack order template
     - Pick order template
 
-1. Customize the templates by using a text or HTML editor. See the list of [supported tokens](#supported-tokens-in-the-email-template) later in this topic.
+1. Customize the templates by using a text or HTML editor. See the list of [supported tokens](#supported-tokens-in-the-email-template) later in this article.
 1. Sign in to Commerce.
 1. Use the menu on the left to go to **Modules \> Organization administration \> Setup \> Organization email templates**.
 1. Expand the list on the left to see all the templates.

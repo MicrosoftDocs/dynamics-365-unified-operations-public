@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import files in XML format with optional attributes
-description: This topic provides information about designing ER formats which specify XML attributes to parse incoming electronic documents in XML format.
+description: This article provides information about designing ER formats which specify XML attributes to parse incoming electronic documents in XML format.
 author: NickSelin
 ms.date: 07/03/2019
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 
 You can design Electronic reporting (ER) formats to parse incoming electronic documents in XML format. Certain attributes of XML elements can be specified in designed ER format as optional. It will allow you to handle incoming files with and without such XML attributes properly. You can then use the content from these files to update application data.
 
-To learn more about this feature, complete the steps in the topic, [(RCS) Import files in XML format with optional attributes](tasks/import-files-xml-format-optional-attributes.md), which is part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process. You can download this task guide and associated sample files from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
+To learn more about this feature, complete the steps in the article, [(RCS) Import files in XML format with optional attributes](tasks/import-files-xml-format-optional-attributes.md), which is part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process. You can download this task guide and associated sample files from the [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684).
 
 
 | Content description       | File                                                         |
@@ -45,7 +45,7 @@ To learn more about this feature, complete the steps in the topic, [(RCS) Import
 The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can design ER format configuration to import files in XML format containing optional attributes. To complete these steps, you must first complete the steps in the procedure, [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md). Before you begin, download and save locally the IncomingDocumentToLearnHowToHandleOptionalAttributes.xml file from Microsoft Download Center (https://go.microsoft.com/fwlink/?linkid=874684 ).
 
 1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**.
-2. Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**. If you don't see this configuration provider, complete the steps in the topic, [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
+2. Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**. If you don't see this configuration provider, complete the steps in the article, [Create configuration providers and mark them as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 3. Click **Reporting configurations**.
 
 ## Create a new data model configuration

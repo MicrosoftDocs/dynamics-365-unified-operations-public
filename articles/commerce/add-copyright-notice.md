@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add a copyright notice
-description: This topic describes how to add a copyright notice to your e-Commerce website.
+description: This article describes how to add a copyright notice to your e-Commerce website.
 author: psimolin
 ms.date: 10/16/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to add a copyright notice to your e-Commerce website.
+This article describes how to add a copyright notice to your e-Commerce website.
 
 ## Prerequisites
 

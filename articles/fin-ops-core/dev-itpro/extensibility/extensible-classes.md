@@ -1,6 +1,6 @@
 ---
 title: Write extensible classes
-description: This topic provides information about how to write extensible classes.
+description: This article provides information about how to write extensible classes.
 author: smithanataraj
 ms.date: 09/09/2018
 ms.topic: article

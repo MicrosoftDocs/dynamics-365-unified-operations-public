@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail store doesn't appear in the list of stores to pick up from
-description: This topic provides troubleshooting guidance that can help when a retail store doesn't appear in the list of stores where items can be picked up.
+description: This article provides troubleshooting guidance that can help when a retail store doesn't appear in the list of stores where items can be picked up.
 author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting guidance that can help when a retail store doesn't appear in the list of stores where items can be picked up.
+This article provides troubleshooting guidance that can help when a retail store doesn't appear in the list of stores where items can be picked up.
 
 ## Description
 

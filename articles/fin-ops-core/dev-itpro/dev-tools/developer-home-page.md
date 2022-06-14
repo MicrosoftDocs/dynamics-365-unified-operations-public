@@ -1,8 +1,8 @@
 ---
 title: Develop and customize home page
-description: This topic provides links to topics about development.
+description: This article provides links to topics about development.
 author: RobinARH
-ms.date: 10/26/2021
+ms.date: 06/13/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to topics about development.
+This article provides links to topics about development.
 
 ## Overview
 
@@ -114,7 +114,6 @@ The Finance and Operations apps enable the entire enterprise resource planning (
 
 ## Code migration
 
-- [How to resolve conflicts in Visual Studio (video)](https://youtu.be/4rxO0zUN2zU)
 - [Code migration and upgrade home page](../migration-upgrade/code-migration-home-page.md)
 
 ## Move packages between environments

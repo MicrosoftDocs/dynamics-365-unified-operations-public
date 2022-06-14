@@ -2,7 +2,7 @@
 # required metadata
 
 title: Chinese vouchers
-description: This topic describes Chinese vouchers and how they are used in Microsoft Dynamics 365 Finance.
+description: This article describes Chinese vouchers and how they are used in Microsoft Dynamics 365 Finance.
 author: anasyash
 ms.date: 03/13/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes Chinese vouchers and how they are used.
+This article describes Chinese vouchers and how they are used.
 
 You must create a voucher document for every posted journal. You can print a paper voucher and a posted journal. Based on your requirements, you can use the Voucher type setup wizard to set up the **Get**, **Pay** and **Transfer** voucher types that are often used, or you can create new voucher types on the **Voucher type setup** page. You can use booking vouchers to enter and group transactions into the Receipt voucher, Payment voucher, or Transfer voucher. 
 

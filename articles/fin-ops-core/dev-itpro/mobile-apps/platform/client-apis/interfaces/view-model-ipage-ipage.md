@@ -130,7 +130,7 @@ syncError: boolean
 
 (Read-only) True if the page's submission is in error state.
 This normally happens when the server rejects submissions due to validation errors.
-Refer to [this topic](../modules/view-model-ipage.md#page-data-synchronization) for a detailed explanation of page data synchronization.
+Refer to [this article](../modules/view-model-ipage.md#page-data-synchronization) for a detailed explanation of page data synchronization.
 
 
 ### syncPending
@@ -138,7 +138,7 @@ Refer to [this topic](../modules/view-model-ipage.md#page-data-synchronization) 
 syncPending: boolean
 
 (Read-only) True if the page's submission is waiting to be synced.
-Refer to [this topic](../modules/view-model-ipage.md#page-data-synchronization) for a detailed explanation of page data synchronization.
+Refer to [this article](../modules/view-model-ipage.md#page-data-synchronization) for a detailed explanation of page data synchronization.
 
 
 ### syncProcessing
@@ -146,7 +146,7 @@ Refer to [this topic](../modules/view-model-ipage.md#page-data-synchronization) 
 syncProcessing: boolean
 
 (Read-only) True if the page instance is currently syncing its submission.
-Refer to [this topic](../modules/view-model-ipage.md#page-data-synchronization) for a detailed explanation of page data synchronization.
+Refer to [this article](../modules/view-model-ipage.md#page-data-synchronization) for a detailed explanation of page data synchronization.
 
 
 ### syncUnitEditable
@@ -154,7 +154,7 @@ Refer to [this topic](../modules/view-model-ipage.md#page-data-synchronization) 
 syncUnitEditable: boolean
 
 (Read-only) True if it's possible to edit a submission while it's waiting to be synchronized.
-Refer to [this topic](../modules/view-model-ipage.md#page-data-synchronization) for a detailed explanation of page data synchronization.
+Refer to [this article](../modules/view-model-ipage.md#page-data-synchronization) for a detailed explanation of page data synchronization.
 
 
 ### title

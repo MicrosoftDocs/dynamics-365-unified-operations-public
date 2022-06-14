@@ -2,7 +2,7 @@
 # required metadata
 
 title: DIOT declaration statement
-description: This topic provides information about the DIOT declaration statement for Mexico.
+description: This article provides information about the DIOT declaration statement for Mexico.
 author: sndray
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the DIOT declaration statement for Mexico.
+This article provides information about the DIOT declaration statement for Mexico.
 
 The DIOT declaration statement (informative declaration of operation with vendors) is used to report vendor transactions to the Mexican tax authorities (Servicio de Administración Tributaria \[SAT\]). You might have to do this if you're subject to value-added tax (VAT). The DIOT declaration statement is a text file. You can generate this file in Dynamics 365 Finance, and then import it into the government validation and delivery tool. Consolidated and detailed reports are also generated for control purposes. The statement includes transactions that were generated from purchase orders, invoice register journals, invoice approval journals, invoice journals. It also includes vendor transactions that were generated from the **Project** module. Additionally, you can include open transactions or settled transactions.
 

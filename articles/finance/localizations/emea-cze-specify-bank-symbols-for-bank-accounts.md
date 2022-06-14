@@ -2,7 +2,7 @@
 # required metadata
 
 title: Bank symbols for bank accounts
-description: This topic provides information about bank symbols for bank accounts.
+description: This article provides information about bank symbols for bank accounts.
 author: anasyash
 ms.date: 07/23/2021
 ms.topic: article

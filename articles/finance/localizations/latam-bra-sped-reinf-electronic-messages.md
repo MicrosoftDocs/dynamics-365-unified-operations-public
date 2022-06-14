@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up electronic messages for SPED-Reinf events
-description: This topic explains how to set up electronic messages for SPED-Reinf events for Brazil.
+description: This article explains how to set up electronic messages for SPED-Reinf events for Brazil.
 author: sndray
 ms.date: 04/09/2021
 ms.topic: article

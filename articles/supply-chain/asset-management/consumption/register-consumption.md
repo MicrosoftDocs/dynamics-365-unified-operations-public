@@ -2,7 +2,7 @@
 # required metadata
 
 title: Register consumption
-description: This topic explains how to register consumption in Asset Management.
+description: This article explains how to register consumption in Asset Management.
 author: johanhoffmann
 ms.date: 08/21/2019
 ms.topic: article

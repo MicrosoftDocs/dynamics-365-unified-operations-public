@@ -2,9 +2,9 @@
 # required metadata
 
 title: Set up and deploy on-premises environments (Platform update 41 and later)
-description: This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
+description: This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 05/25/2022
+ms.date: 06/07/2022
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 41
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later. Platform update 41 is available with version 10.0.17.
+This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later. Platform update 41 is available with version 10.0.17.
 
 The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is available. There, you can post any questions or feedback that you have about the on-premises deployment.
 
@@ -126,7 +126,7 @@ For more information, see [System requirements for on-premises deployments](../.
 
 Plan your infrastructure and Service Fabric cluster, based on the recommended sizing in [Hardware sizing requirements for on-premises environments](../../fin-ops/get-started/hardware-sizing-on-premises-environments.md). For more information about how to plan the Service Fabric cluster, see [Plan and prepare your Service Fabric standalone cluster deployment](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
 
-The following table shows an example of a hardware layout. This example is used throughout this topic to demonstrate the setup. When you complete the setup, you will have to replace the machine names and IP addresses that are provided in the following instructions with the names and IP addresses for the machines in your environment.
+The following table shows an example of a hardware layout. This example is used throughout this article to demonstrate the setup. When you complete the setup, you will have to replace the machine names and IP addresses that are provided in the following instructions with the names and IP addresses for the machines in your environment.
 
 > [!NOTE]
 > The Primary node of the Service Fabric cluster must have at least three nodes. In this example, **OrchestratorType** is designated as the Primary node type. If you have a node type that has more than three VMs, consider making that node type your Primary (Seed) node type to help increase the reliability of the cluster. 
@@ -249,7 +249,7 @@ For example, if your company's domain is contoso.com, your zone for Finance + Op
 
 Secure Sockets Layer (SSL) certificates are required to secure a Service Fabric cluster and all the applications that are deployed. For your production and sandbox workloads, we recommend that you acquire certificates from a certificate authority (CA) such as [DigiCert](https://www.digicert.com/ssl-certificate/), [Comodo](https://ssl.comodo.com/), [Symantec](https://www.websecurity.symantec.com/ssl-certificate), [GoDaddy](https://www.godaddy.com/web-security/ssl-certificate), or [GlobalSign](https://www.globalsign.com/en/ssl/). If your domain is set up with [AD CS](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772393(v=ws.10)), you can use the Microsoft setup scripts to create the templates and certificates. Each certificate must contain a private key that was created for key exchange, and it must be exportable to a Personal Information Exchange (.pfx) file.
 
-Self-signed certificates can be used only for testing purposes. For the sake of convenience, the setup scripts that are provided in LCS include scripts that generate and export self-signed certificates. If you're using self-signed scripts, you will be instructed to run the creation scripts during later steps in this topic. As has been mentioned, these certificates can be used only for testing purposes.
+Self-signed certificates can be used only for testing purposes. For the sake of convenience, the setup scripts that are provided in LCS include scripts that generate and export self-signed certificates. If you're using self-signed scripts, you will be instructed to run the creation scripts during later steps in this article. As has been mentioned, these certificates can be used only for testing purposes.
 
 > [!IMPORTANT]
 > Microsoft plans to discontinue support for the generation of self-signed certificates through the setup scripts, in favor of automatic certificate creation through AD CS.
@@ -299,7 +299,7 @@ DNS Name=*.d365ffo.onprem.contoso.com
 
 ### <a name="plansvcacct"></a>Step 3. Plan your users and service accounts
 
-You must create several user or service accounts for Finance + Operations to work. You must create a combination of group managed service accounts (gMSAs), domain accounts, and SQL accounts. The following table shows the user accounts, their purpose, and example names that will be used in this topic.
+You must create several user or service accounts for Finance + Operations to work. You must create a combination of group managed service accounts (gMSAs), domain accounts, and SQL accounts. The following table shows the user accounts, their purpose, and example names that will be used in this article.
 
 | User account                                            | Type | Purpose | User name |
 |---------------------------------------------------------|------|---------|-----------|
@@ -538,8 +538,8 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 5. Export the certificates into .pfx files. As part of the export process, the following command will check that the correct cryptographic provider is set for your certificates. 
 
     ```powershell
-    # Exports .pfx files into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
-    .\Export-PfxFiles.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    # Exports certificates into a directory VMs\<VMName>. All the certs will be written to the infrastructure\Certs folder.
+    .\Export-Certificates.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
 ### <a name="setupssis"></a>Step 11. Set up SSIS
@@ -556,7 +556,7 @@ For more information, see [Install Integration Services (SSIS)](/sql/integration
 
 You can configure more than one SSRS node. For more information, see [Configuring High Availability for SSRS nodes](./onprem-SSRSHA.md).
 
-1. Before you begin, make sure that the [prerequisites](#prerequisites) that are listed at the beginning of this topic are in place.
+1. Before you begin, make sure that the [prerequisites](#prerequisites) that are listed at the beginning of this article are in place.
 
     > [!IMPORTANT]
     > - You must install the Database Engine when you install SSRS.
@@ -620,7 +620,7 @@ Next, follow these steps for each VM, or use remoting from a single machine.
 
 > [!NOTE]
 > - The following procedure requires execution on multiple VMs. However, to simplify the process, you can use the remoting scripts that are provided. These scripts let you run the required scripts from a single machine, such as the same machine that is used to run the **.\\Export-Scripts.ps1** command. When the remoting scripts are available, they are declared after a **\# If Remoting** comment in the Windows PowerShell sections. If you use the remoting scripts, you might not have to run the remaining scripts in a section. In these cases, see the section text.
-> - Remoting uses [WinRM](/windows/win32/winrm/portal). In some cases, it requires that [CredSSP](/windows/win32/secauthn/credential-security-support-provider) be enabled. The remoting module enables and disables CredSSP on an execution-by-execution basis. We recommend that you disable CredSSP when it isn't used. Otherwise, there is a risk of credential theft. When you've completed the setup, see the [Tear down CredSSP, if remoting was used](#teardowncredssp) section later in this topic.
+> - Remoting uses [WinRM](/windows/win32/winrm/portal). In some cases, it requires that [CredSSP](/windows/win32/secauthn/credential-security-support-provider) be enabled. The remoting module enables and disables CredSSP on an execution-by-execution basis. We recommend that you disable CredSSP when it isn't used. Otherwise, there is a risk of credential theft. When you've completed the setup, see the [Tear down CredSSP, if remoting was used](#teardowncredssp) section later in this article.
 
 1. Copy the contents of each **infrastructure\\VMs\\\<VMName\>** folder to the corresponding VM. (If the remoting scripts are used, they will automatically copy the contents to the target VMs.) Then run the following command as an administrator.
 
@@ -1078,7 +1078,7 @@ The following illustration shows a successful deployment. Notice that the upper-
 
 ### <a name="connect"></a>Step 23. Connect to your Finance + Operations environment
 
-- In a web browser, go to `https://[yourD365FOdomain]/namespaces/AXSF`, where **yourD365FOdomain** is the domain name that you defined in the [Step 1. Plan your domain name and DNS zones](#plandomain) section earlier in this topic.
+- In a web browser, go to `https://[yourD365FOdomain]/namespaces/AXSF`, where **yourD365FOdomain** is the domain name that you defined in the [Step 1. Plan your domain name and DNS zones](#plandomain) section earlier in this article.
 
 ## Known issues
 

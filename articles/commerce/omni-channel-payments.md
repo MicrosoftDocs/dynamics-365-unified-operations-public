@@ -2,7 +2,7 @@
 # required metadata
 
 title: Omni-channel payments overview
-description: This topic provides an overview of omni-channel payments in Dynamics 365 Commerce.
+description: This article provides an overview of omni-channel payments in Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 09/17/2020
 ms.topic: overview
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 8.1.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of omni-channel payments in Dynamics 365 Commerce. It includes a comprehensive list of supported scenarios, information about functionality, setup, and troubleshooting, and descriptions of some typical issues.
+This article provides an overview of omni-channel payments in Dynamics 365 Commerce. It includes a comprehensive list of supported scenarios, information about functionality, setup, and troubleshooting, and descriptions of some typical issues.
 
 ## Key terms
 
@@ -48,15 +48,15 @@ This topic provides an overview of omni-channel payments in Dynamics 365 Commerc
 
 In general, the term *omni-channel payments* describes the ability to create an order in one channel and fulfill it in another channel. The key to omni-channel payment support is preserving payment details together with the rest of the order details, and then using those payment details when the order is recalled or processed in another channel. A classic example is the "Buy online, pick up in store" scenario. In this scenario, the payment details are added when the order is created online. They are then recalled at the POS to charge the customer's payment card at the time of pickup. 
 
-All the scenarios that are described in this topic can be implemented by using the standard Payments software development kit (SDK) that is provided with Commerce. The [Dynamics 365 Payment Connector for Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here. 
+All the scenarios that are described in this article can be implemented by using the standard Payments software development kit (SDK) that is provided with Commerce. The [Dynamics 365 Payment Connector for Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here. 
 
 ### Prerequisites
 
-Every scenario that is described in this topic requires a payment connector that supports omni-channel payments. The out-of-box Adyen connector can also be used, because it supports the scenarios that are made available through the Payments SDK. For more information about how to implement payment connectors, and about the Retail SDK in general, visit the [Retail for IT pros and developers home page](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
+Every scenario that is described in this article requires a payment connector that supports omni-channel payments. The out-of-box Adyen connector can also be used, because it supports the scenarios that are made available through the Payments SDK. For more information about how to implement payment connectors, and about the Retail SDK in general, visit the [Retail for IT pros and developers home page](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page#payment-connectors).
 
 #### Supported versions
 
-The omni-channel payment capabilities that are described in this topic were released as part of Microsoft Dynamics 365 for Retail version 8.1.3. 
+The omni-channel payment capabilities that are described in this article were released as part of Microsoft Dynamics 365 for Retail version 8.1.3. 
 
 #### "Card present" and "card not present" connectors
 
@@ -69,7 +69,7 @@ The second set of APIs is named **iNamedRequestHandler**. It supports the implem
 The following components and setup steps are required:
 
 - **eCommerce integration:** An integration with Commerce is required to support scenarios where an order originates in an online storefront. For more information about the Retail e-Commerce SDK, see [e-Commerce platform software development kit (SDK)](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk). In a demo environment, the reference storefront supports omni-channel payment scenarios. 
-- **Online payments configuration:** The setup of the online channel must include a payment connector that has been updated to support omni-channel payments. Alternatively, the out-of-box payment connector can be used. For information about how to configure the Adyen payment connector for online stores, see [Adyen payment connector](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). In addition to the eCommerce setup steps that are described in that topic, the **Allow saving payment information in e-commerce** parameter must be set to **True** in the settings for the Adyen connector. 
+- **Online payments configuration:** The setup of the online channel must include a payment connector that has been updated to support omni-channel payments. Alternatively, the out-of-box payment connector can be used. For information about how to configure the Adyen payment connector for online stores, see [Adyen payment connector](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#e-commerce). In addition to the eCommerce setup steps that are described in that article, the **Allow saving payment information in e-commerce** parameter must be set to **True** in the settings for the Adyen connector. 
 - **Omni-channel payments configuration:** In the back office, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**. Then, on the **Omni-channel payments** tab, set the **Use omni-channel payments** option to **Yes**. In Commerce versions 10.0.12 and later, this setting is in the **Feature Management** workspace. Select the **Omni-channel payments** feature and click **Enable now**. 
 - **Payment services:** The call center uses the default payment connector on the **Payment services** page to process payments. To support scenarios such as "Buy in call center, pick up in store," this default payment connector must be the Adyen payment connector or a payment connector that meets the implementation requirements for omni-channel payments.
 - **EFT service:** Payments through a payment terminal must be set up on the **EFT service** FastTab of the hardware profile. The Adyen connector supports omni-channel payments scenarios out of the box. Other payment connectors that support the **iNamedRequestHandler** interface can also be used if they support omni-channel payments.
@@ -236,7 +236,7 @@ If the card that was used to create an order is no longer valid, when products a
 
 When an order that has multiple tenders and multiple lines is picked up, the cashier first receives the **Use available payment method** prompt. If there are multiple cards, when the cashier selects **Use available payment method**, existing card tender lines will be captured until the balance is met for the goods that are currently being picked up. The cashier won't have the option to select the card that should be used for the goods that are being picked up. 
 
-## Related topics
+## Related articles
 
 - [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 - [Dynamics 365 Payment Connector for Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3)

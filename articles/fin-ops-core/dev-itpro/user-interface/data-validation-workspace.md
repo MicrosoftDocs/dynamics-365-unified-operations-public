@@ -31,7 +31,7 @@ ms.author: bking
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic provides an overview of the **Data validation checklist workspace** and the associated configuration.
+This article provides an overview of the **Data validation checklist workspace** and the associated configuration.
 
 The **Data validation checklist** workspace lets you track data validation processes across companies, areas, and people. The checklist can be used during a new implementation, after an upgrade, or after a migration. Depending on your view of the **Data validation checklist** workspace, you'll see either all tasks and statuses for a data validation project, or just the tasks that are assigned to you.
 

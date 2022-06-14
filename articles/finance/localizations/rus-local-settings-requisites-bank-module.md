@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Set up bank accounts (Russia)
-description: This topic provides information about local settings and prerequisites for bank modules for Russia. 
+description: This article provides information about local settings and prerequisites for bank modules for Russia. 
 author: anasyash
 ms.date: 12/06/2018
 ms.topic: article

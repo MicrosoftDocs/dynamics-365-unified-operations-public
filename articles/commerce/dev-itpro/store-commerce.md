@@ -1,8 +1,8 @@
 ---
 title: Store Commerce app
-description: This topic explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app.
+description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app.
 author: mugunthanm
-ms.date: 06/01/2022
+ms.date: 06/10/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app and applies to Microsoft Dynamics 365 Commerce version 10.0.25 and later.
+This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app and applies to Microsoft Dynamics 365 Commerce version 10.0.25 and later.
 
 The Store Commerce app in Dynamics 365 Commerce is the next-generation offering for physical stores. It unifies Modern Point of Sale (MPOS) and Cloud Point of Sale (CPOS) into a single application, provides deployment choices to retailers, helps improve performance, and offers superior application lifecycle management (ALM). At the same, it retains all the functionality of MPOS and CPOS, including extensibility.
 
@@ -77,6 +77,12 @@ To update Store Commerce, just update the CSU. Store Commerce will then automati
 
 Store Commerce has full functional parity with MPOS. Store Commerce currently doesn't support dual display. For more information about the different POS applications and topologies, see [Choose between Modern POS (MPOS) and Cloud POS](../mpos-or-cpos.md).
 
+## Hardware parity between MPOS and Store Commerce
+
+The Store Commerce app does not support Universal Windows Platform (UWP) peripherals that are [Point of Service devices](/windows/uwp/devices-sensors/pos-get-started.md). If you are currently using a Universal Serial Bus (USB) scanner or magnetic stripe reader in plug-and-play mode, you will need to install OLE for Retail POS (OPOS) drivers and configure these devices in your hardware profile so they work with the Store Commerce app. For more information about Store Commerce peripheral support, refer to the [Commerce peripherals](../retail-peripherals-overview.md) article.
+
+To migrate from MPOS to Store Commerce, refer the [Migrate Modern POS to Store Commerce](pos-extension/migrate-mpos-store-commerce.md) article.
+
 ## Store Commerce and CPOS parity
 
 Store Commerce has full functional parity with CPOS. In addition, Store Commerce supports dedicated hardware station and offline deployment.
@@ -118,7 +124,7 @@ We recommend that you use Store Commerce or CPOS for all new deployments. Existi
 </tr>
 <tr>
 <th scope="row">Support for local hardware station</th>
-<td>Yes</td>
+<td>Yes, but does not support UWP peripherals that are Point of Service devices. For more information about Store Commerce peripheral support, refer the [Commerce peripherals](../retail-peripherals-overview.md) article.</td>
 <td>Yes</td>
 </tr>
 <tr>

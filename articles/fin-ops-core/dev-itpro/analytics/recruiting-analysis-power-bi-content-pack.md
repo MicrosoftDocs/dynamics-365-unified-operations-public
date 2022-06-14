@@ -2,7 +2,7 @@
 # required metadata
 
 title: Recruiting Power BI content
-description: This topic describes the Recruiting Power BI content.
+description: This article describes the Recruiting Power BI content.
 author: jcart1106 
 ms.date: 12/19/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the **Recruiting** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
+This article describes the **Recruiting** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 
 ## Accessing the Power BI content
 The **Recruiting** Power BI content is shown in the **Recruitment management** workspace.

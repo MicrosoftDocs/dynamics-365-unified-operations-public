@@ -2,7 +2,7 @@
 # required metadata
 
 title: Optimize data migration for Finance and Operations apps
-description: The topic provides an overview of steps and actions that you can use to optimize data migration for Finance and Operations apps.
+description: The article provides an overview of steps and actions that you can use to optimize data migration for Finance and Operations apps.
 author: skaue-ms
 ms.date: 10/20/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.13
 
 Data migration is a key success factor in almost every implementation. A primary concern of some customers is the speed that data can be migrated at, especially if there are vast amounts of data and a small cutover window. The [Data migration framework](../data-entities/data-entities-data-packages.md) is also used to move data as part of business requirements and operations.
 
-The information in this topic represents a set of steps and actions that you can use to optimize the performance of data migration.
+The information in this article represents a set of steps and actions that you can use to optimize the performance of data migration.
 
 > [!NOTE]
 > Testing results in a Tier-1 environment should not be compared or extrapolated to performance in a Tier-2 or higher sandbox environment.

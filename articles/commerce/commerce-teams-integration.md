@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Dynamics 365 Commerce and Microsoft Teams integration overview
-description: This topic presents an overview of Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
+description: This article presents an overview of Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 author: gvrmohanreddy
 ms.date: 03/31/2021
 ms.topic: overview
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](includes/banner.md)]
 
-This topic presents an overview of Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
+This article presents an overview of Microsoft Dynamics 365 Commerce and Microsoft Teams integration.
 
 Dynamics 365 Commerce is integrating with Teams to help customers and their employees improve productivity by synchronizing task management between the two applications. The seamless task management that Commerce and Teams integration provides lets store managers and employees create task lists, assign tasks to multiple stores, and track the status of tasks across stores, from either application.
 

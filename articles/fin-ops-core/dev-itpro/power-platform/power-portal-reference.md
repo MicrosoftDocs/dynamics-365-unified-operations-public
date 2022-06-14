@@ -2,7 +2,7 @@
 # required metadata
 
 title: Power Apps portals with Finance and Operations
-description: This topic explains how Power Apps portals can be used with Finance and Operations.
+description: This article explains how Power Apps portals can be used with Finance and Operations.
 author: Sunil-Garg
 ms.date: 07/13/2020
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.12
 > [!IMPORTANT]
 > This functionality requires version 10.0.12 for Finance and Operations apps, while service update 189 is required for Dataverse. The release information for Dataverse is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
 
-Power Apps portals will enable create, update, and delete (CRUD) operations to Finance and Operations entities that are available as virtual entities in Dataverse. This topic explains the scenarios that are implemented in Power Apps portals for Finance and Operations apps.
+Power Apps portals will enable create, update, and delete (CRUD) operations to Finance and Operations entities that are available as virtual entities in Dataverse. This article explains the scenarios that are implemented in Power Apps portals for Finance and Operations apps.
 
 ## Anonymous access from Power Apps portals
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dual currency
-description: This topic provides information about dual currency, where the reporting currency is used as a second accounting currency for Microsoft Dynamics 365 Finance.
+description: This article provides information about dual currency, where the reporting currency is used as a second accounting currency for Microsoft Dynamics 365 Finance.
 author: kweekley
 ms.date: 04/17/2020
 ms.topic: article
@@ -41,7 +41,7 @@ In addition, several modules have been enhanced to track, report, and use the re
 - Fixed assets 
 - Consolidations
 
-After an upgrade, you must complete specific steps for Cash and bank management and Fixed assets. Therefore, be sure to read and understand the relevant sections of this topic.
+After an upgrade, you must complete specific steps for Cash and bank management and Fixed assets. Therefore, be sure to read and understand the relevant sections of this article.
 
 ## Posting process
 
@@ -98,7 +98,7 @@ The following additional changes were made in the **General ledger** module:
 - A separate exchange rate type for the reporting currency can be defined on the ledger. If an organization doesn't want to use a different exchange rate type, you can leave the field for the exchange rate type for the reporting currency blank. Alternatively, you can select the same exchange rate type that is used for the accounting currency. If you leave the field blank, the system uses the exchange rate type for the accounting currency.
 - A new journal, the Reporting currency adjustment journal, enables adjustments to be posted to ledger accounts in the reporting currency only. This journal enables posting only to ledger accounts. It doesn't support intercompany, and the currency must be the reporting currency of the legal entity where the journal is posted. When the journal is posted, the transaction currency and accounting currency amounts are 0 (zero), and the reporting currency amount is posted with the amount that is entered on the transaction. Because the way that the reporting currency is used in the **Accounts payable**, **Accounts receivable**, and **Fixed assets** modules has changed, this journal can be used for adjustments after an upgrade. For examples that show how this journal can be used, see the sections for those modules.
 - The process for period allocation has been updated so that it allocates amounts in the transaction, accounting, and reporting currencies. Previously, amounts were allocated in the transaction and accounting currencies, and then the accounting currency amount was translated to the reporting currency. That behavior could cause a balance to remain on the ledger account in the reporting currency. Now, when amounts are calculated and used in the accounting entry, no translation occurs.
-- The process for foreign currency revaluation already revalued amounts in the reporting currency. However, the reporting currency amount is now calculated through the transaction currency amount, as described in the [Posting process](#posting-process) section earlier in this topic.
+- The process for foreign currency revaluation already revalued amounts in the reporting currency. However, the reporting currency amount is now calculated through the transaction currency amount, as described in the [Posting process](#posting-process) section earlier in this article.
 - Many reports and inquiries in General ledger already had the reporting currency, but a few didn't. One example is the **Trial balance** list page. This list page now includes columns for both the accounting currency and the reporting currency. Note that the columns for the reporting currency are hidden if the accounting currency and the reporting currency are the same, or if no reporting currency was defined on the ledger.
 
 ### Financial reporting

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Filters and Toolbar subpatterns
-description: This topic provides information about the Filters and Toolbar subpatterns, which show filters and actions inside panorama sections that host lists and charts.
+description: This article provides information about the Filters and Toolbar subpatterns, which show filters and actions inside panorama sections that host lists and charts.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the Filters and Toolbar subpatterns. These workspace-specific subpatterns have been developed to show filters and/or actions inside panorama sections that host lists and charts.
+This article provides information about the Filters and Toolbar subpatterns. These workspace-specific subpatterns have been developed to show filters and/or actions inside panorama sections that host lists and charts.
 
 ## Usage
 

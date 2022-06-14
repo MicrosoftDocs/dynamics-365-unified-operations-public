@@ -2,7 +2,7 @@
 # required metadata
 
 title: Peripherals
-description: This topic explains the concepts that are related to Commerce peripherals. 
+description: This article explains the concepts that are related to Commerce peripherals. 
 author: BrianShook
 ms.date: 03/01/2022
 ms.topic: article
@@ -19,7 +19,7 @@ ms.search.validFrom: 2016-11-30
 
 [!include[banner](includes/banner.md)]
 
-This topic explains the concepts that are related to store peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
+This article explains the concepts that are related to store peripherals. It describes the various ways that peripherals can be connected to the point of sale (POS) and the components that are responsible for managing the connection with the POS.
 
 ## Concepts
 
@@ -51,7 +51,7 @@ Modern POS for Android is an Android-based version of the Modern POS program tha
 
 ### POS peripherals
 
-POS peripherals are devices that are explicitly supported for POS functions. These peripherals are typically divided into specific classes. For more information about these classes, see the "Device classes" section of this topic.
+POS peripherals are devices that are explicitly supported for POS functions. These peripherals are typically divided into specific classes. For more information about these classes, see the "Device classes" section of this article.
 
 ### Hardware station
 

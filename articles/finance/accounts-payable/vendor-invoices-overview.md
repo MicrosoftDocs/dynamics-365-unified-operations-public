@@ -2,7 +2,7 @@
 # required metadata
 
 title: Vendor invoices overview
-description: This topic provides general information about vendor invoices.
+description: This article provides general information about vendor invoices.
 author: abruer
 ms.date: 02/25/2022
 ms.topic: overview
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-This topic provides general information about vendor invoices. Vendor invoices are requests for payment for products and services. Vendor invoices might represent a bill for ongoing services, or they can be based on purchase orders for specific items and services.
+This article provides general information about vendor invoices. Vendor invoices are requests for payment for products and services. Vendor invoices might represent a bill for ongoing services, or they can be based on purchase orders for specific items and services.
 
 ## Vendor invoices
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Recurring integrations
-description: This topic describes recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
+description: This article describes recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
 author: peakerbl
 ms.date: 10/07/2021
 ms.topic: article
@@ -84,6 +84,8 @@ The integration REST API uses the same OAuth 2.0 authentication model as the ot
     > Currently, monitoring recurrence enables load monitoring only on the queue for your recurring data job. No additional policies are supported via this service. You can use this feature to fine-tune the processing recurrence as the load demand requires.
 
 7. Select **OK**, and then select **Yes** in the confirmation message box.
+
+For more information, see [Process and consume data packages in the finance and operations solutions](../lcs-solutions/process-data-packages-lcs-solutions.md).
 
 ## Manage recurring data jobs
 1. In the **System administration** workspace (not the **System administration** module), select the **Data Management IT** workspace.

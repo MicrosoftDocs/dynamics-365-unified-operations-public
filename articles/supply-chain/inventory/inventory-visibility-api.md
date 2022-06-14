@@ -1,6 +1,6 @@
 ---
 title: Inventory Visibility public APIs
-description: This topic describes the public APIs that are provided by Inventory Visibility.
+description: This article describes the public APIs that are provided by Inventory Visibility.
 author: yufeihuang
 ms.date: 12/09/2021
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.22
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes the public APIs that are provided by Inventory Visibility.
+This article describes the public APIs that are provided by Inventory Visibility.
 
 The public REST API of the Inventory Visibility Add-in presents several specific endpoints for integration. It supports four main interaction types:
 
@@ -155,7 +155,7 @@ To get a security service token, follow these steps.
    ```
 
 > [!IMPORTANT]
-> When you use the *Postman* request collection to call Inventory Visibility public APIs, you must add a bearer token for each request. To find your bearer token, select the **Authorization** tab under the request URL, select the **Bearer Token** type, and copy the access token that was fetched in the last step. In later sections of this topic, `$access_token` will be used to represent the token that was fetched in the last step.
+> When you use the *Postman* request collection to call Inventory Visibility public APIs, you must add a bearer token for each request. To find your bearer token, select the **Authorization** tab under the request URL, select the **Bearer Token** type, and copy the access token that was fetched in the last step. In later sections of this article, `$access_token` will be used to represent the token that was fetched in the last step.
 
 ## <a name="create-onhand-change-event"></a>Create on-hand change events
 
@@ -354,7 +354,7 @@ Body:
     ]
 ```
 
-The following example shows sample body content. The behavior of this API differs from the behavior of the APIs that are described in the [Create on-hand change events](#create-onhand-change-event) section earlier in this topic. In this sample, the quantity of the *T-shirt* product will be set to 1.
+The following example shows sample body content. The behavior of this API differs from the behavior of the APIs that are described in the [Create on-hand change events](#create-onhand-change-event) section earlier in this article. In this sample, the quantity of the *T-shirt* product will be set to 1.
 
 ```json
 [

@@ -44,7 +44,7 @@ To define the default order settings for a product, follow these steps.
     - On the **Plan** tab, in the **Order settings** group, select **Default order settings**.
     - On the **Manage inventory** tab, in the **Order settings** group, select **Default order settings**.
 
-1. Configure the settings as described in the rest of this topic.
+1. Configure the settings as described in the rest of this article.
 
 ## Default order settings
 

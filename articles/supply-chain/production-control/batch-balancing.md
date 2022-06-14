@@ -2,7 +2,7 @@
 # required metadata
 
 title: Batch balancing
-description: This topic describes the batch balancing process.
+description: This article describes the batch balancing process.
 author: johanhoffmann
 ms.date: 01/04/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 8.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how the batch balancing process is supported.
+This article describes how the batch balancing process is supported.
 
 For more information, watch a [video on batch balancing](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
@@ -211,7 +211,7 @@ that have a status of **Started**.
 In general, batch balancing can be applied to batch orders if the formula has at
 least one formula line where the **Ingredient type** is *Active*. (For the
 exception to this rule, see the "Batch orders that aren't applicable for batch
-balancing" section later in this topic.)
+balancing" section later in this article.)
 
 The batch balancing process can be divided into two subprocesses:
 

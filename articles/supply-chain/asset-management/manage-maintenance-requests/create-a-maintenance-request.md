@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create maintenance requests
-description: This topic explains how to create a maintenance request in Asset Management.
+description: This article explains how to create a maintenance request in Asset Management.
 author: johanhoffmann
 ms.date: 10/01/2019
 ms.topic: article

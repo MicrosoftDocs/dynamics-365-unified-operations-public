@@ -1,6 +1,6 @@
 ---
 title: Extensibility home page
-description: This topic provides links to topics about extensibility.
+description: This article provides links to topics about extensibility.
 author: FrankDahl
 ms.date: 05/14/2019
 ms.topic: index-page
@@ -62,7 +62,7 @@ This section includes fundamentals, principles, and practices for making extensi
 
 ## How do I create extensions?
 
-This section includes "How do I?" topics that explain how to customize specific object types or code. Most of these topics are brief and to the point. Because there are many topics here, it might be practical to search for a specific topic.
+This section includes "How do I?" topics that explain how to customize specific object types or code. Most of these topics are brief and to the point. Because there are many topics here, it might be practical to search for a specific article.
 
 ### Data types
 + [Add values to enums through extension](add-enum-value.md)

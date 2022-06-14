@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure financial reports in Excel (Russia)
-description: This topic walks you through the process of creating an Electronic reporting (ER) configuration that contains a template for generating a financial report in an Excel format. 
+description: This article walks you through the process of creating an Electronic reporting (ER) configuration that contains a template for generating a financial report in an Excel format. 
 author: Anasyash
 ms.date: 07/19/2021
 ms.topic: article
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating a financial report in Microsoft Excel format.
+This article explains how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating a financial report in Microsoft Excel format.
 
-Before you read this topic, you should review [Create Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=%2ffin-and-ops%2ftoc.json) and related electronic reporting topics about creating configurations.
+Before you read this article, you should review [Create Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=%2ffin-and-ops%2ftoc.json) and related electronic reporting topics about creating configurations.
 
 ## Set up a financial report
 

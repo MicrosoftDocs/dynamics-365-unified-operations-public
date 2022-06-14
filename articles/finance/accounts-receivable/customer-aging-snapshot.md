@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer aging snapshots
-description: This topic provides information about customer aging snapshots. An aging snapshot calculates aged balances for a group of customers at a point in time.
+description: This article provides information about customer aging snapshots. An aging snapshot calculates aged balances for a group of customers at a point in time.
 author: JodiChristiansen
 ms.date: 05/05/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about customer aging snapshots. An aging snapshot calculates aged balances for a group of customers at a point in time. You can create aging snapshot records either for all customers or for the customers in a customer pool.
+This article provides information about customer aging snapshots. An aging snapshot calculates aged balances for a group of customers at a point in time. You can create aging snapshot records either for all customers or for the customers in a customer pool.
 
 Information from aging snapshots is shown on the **Aged balances** list page and the **Collections** page. You must create an aging snapshot before you can use the **Aged balances** list page. The list page lists only customers that an aging snapshot has been created for.
 

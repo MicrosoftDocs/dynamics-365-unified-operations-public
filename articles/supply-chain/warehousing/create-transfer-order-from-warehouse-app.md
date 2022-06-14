@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create transfer orders from the warehouse app
-description: This topic describes how to create and process transfer orders from the Warehouse Management mobile app 
+description: This article describes how to create and process transfer orders from the Warehouse Management mobile app 
 author: perlynne
 ms.date: 09/02/2020
 ms.topic: article

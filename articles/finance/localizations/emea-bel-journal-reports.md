@@ -2,7 +2,7 @@
 # required metadata
 
 title: Journal reports
-description: This topic explains how to work with journal reports that are specific to legal entities with a primary address in Belgium. 
+description: This article explains how to work with journal reports that are specific to legal entities with a primary address in Belgium. 
 author: anasyash
 ms.date: 04/08/2021
 ms.topic: article

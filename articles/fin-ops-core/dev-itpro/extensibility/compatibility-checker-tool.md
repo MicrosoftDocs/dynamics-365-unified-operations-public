@@ -1,6 +1,6 @@
 ---
 title: Compatibility checker tool
-description: This topic provides information about the compatibility checker tool, which finds and reports metadata breaking changes.
+description: This article provides information about the compatibility checker tool, which finds and reports metadata breaking changes.
 author: smithanataraj
 ms.date: 03/26/2020
 ms.topic: article
@@ -34,10 +34,10 @@ The compatibility checker tool is available as one of the dev tools in Platform 
 
 The tool compares metadata of the current version with metadata of a baseline version. It detects and reports metadata changes that Microsoft has identified as breaking and added to the tool.
 
-For a list of breaking changes that the tool detects, see the [List of breaking changes detected by the tool](#list-of-breaking-changes-detected-by-the-tool) section later in this topic.
+For a list of breaking changes that the tool detects, see the [List of breaking changes detected by the tool](#list-of-breaking-changes-detected-by-the-tool) section later in this article.
 
 > [!NOTE]
-> + The list in this topic doesn't include all the breaking changes that the tool can detect.
+> + The list in this article doesn't include all the breaking changes that the tool can detect.
 > + The tool doesn't detect all breaking changes.
 
 ## What the tool doesn't detect

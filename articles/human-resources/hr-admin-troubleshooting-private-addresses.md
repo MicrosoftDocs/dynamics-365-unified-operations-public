@@ -2,7 +2,7 @@
 # required metadata
 
 title: Access to private addresses by security role
-description: This topic explains how to resolve when a customer can't access private addresses.
+description: This article explains how to resolve when a customer can't access private addresses.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Competence date for transactions and the Fiscal journal report
-description: This topic provides information about the competence date and explains how to turn on the functionality for transactions in Italy
+description: This article provides information about the competence date and explains how to turn on the functionality for transactions in Italy
 author: anasyash
 ms.date: 02/05/2021
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version:
 
 # Competence date for transactions and the Fiscal journal report
 
-This topic provides information about the competence date and explains how to turn on the functionality for transactions in Italy.
+This article provides information about the competence date and explains how to turn on the functionality for transactions in Italy.
 
 In Italy, companies must use a posting date when they post transactions. The posting date in the fiscal journal is the date when the company acknowledges the transaction.
 

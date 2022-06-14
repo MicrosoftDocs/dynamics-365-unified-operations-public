@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed for India GST in 10.0.03 (June 2019)
-description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.03.
+description: This article describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.03.
 author: prabhatb
 ms.date: 06/15/2020
 ms.topic: article
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: 10.0.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.03 for India GST localization. 
+This article includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.03 for India GST localization. 
 
 ## New features and updates
 ### GST solution document is updated 
-Updates have been made to the following topic, [India Goods and Services Tax (GST) overview](apac-ind-gst.md).
+Updates have been made to the following article, [India Goods and Services Tax (GST) overview](apac-ind-gst.md).
 
 ### GSTR report performance improvement
 **GSTR** report generation time reduced 30% because of the replacement of line-by-line data fetch with dataset operation.

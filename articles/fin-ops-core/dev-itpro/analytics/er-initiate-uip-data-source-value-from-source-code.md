@@ -2,7 +2,7 @@
 # required metadata
 
 title: Initiate data source values of the USER INPUT PARAMETER type from source code
-description: This topic describes how the data source values of the USER INPUT PARAMETER type can be initiated from source code.
+description: This article describes how the data source values of the USER INPUT PARAMETER type can be initiated from source code.
 author: NickSelin
 ms.date: 04/26/2022
 ms.topic: article

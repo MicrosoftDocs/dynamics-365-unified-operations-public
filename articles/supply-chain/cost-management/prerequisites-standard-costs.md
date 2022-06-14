@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prerequisites for standard costs overview
-description: This topic describes the basic steps for using standard costs. 
+description: This article describes the basic steps for using standard costs. 
 author: JennySong-SH
 ms.date: 07/25/2019
 ms.topic: overview
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the basic steps for using standard costs. Subsequent steps depend on the company's operations. For example, the steps differ for a nonmanufacturing environment, a manufacturing environment that doesn't use routings, and a manufacturing environment that uses routings. 
+This article describes the basic steps for using standard costs. Subsequent steps depend on the company's operations. For example, the steps differ for a nonmanufacturing environment, a manufacturing environment that doesn't use routings, and a manufacturing environment that uses routings. 
 
 To set up standard costs, follow these steps.
 
@@ -70,7 +70,7 @@ Use the **Costing version setup** page to create one or more costing versions fo
 Customers who want to change their existing items to a standard cost inventory model must use the **Standard cost conversions** page.
 
 
-## Related topics
+## Related articles
 
 [Standard cost conversion overview](standard-cost-conversion-overview.md)
 

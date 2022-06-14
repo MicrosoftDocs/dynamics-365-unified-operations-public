@@ -1,6 +1,6 @@
 ---
 title: Dual-write mapping reference
-description: This topic lists the column mappings for each dual-write mapping.
+description: This article lists the column mappings for each dual-write mapping.
 author: tonyafehr
 ms.date: 12/22/2020
 ms.topic: reference

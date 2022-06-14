@@ -2,7 +2,7 @@
 # required metadata
 
 title: Batch processing of alerts
-description: This topic provides information about batch processing of alerts.
+description: This article provides information about batch processing of alerts.
 author: RichdiMSFT
 ms.date: 08/24/2021
 ms.topic: article

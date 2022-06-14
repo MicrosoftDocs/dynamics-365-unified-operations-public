@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up cluster picking
-description: This topic describes how to set up cluster picking and how to apply item confirmation with cluster picking.
+description: This article describes how to set up cluster picking and how to apply item confirmation with cluster picking.
 author: Mirzaab
 ms.date: 05/26/2017
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes how to enable workers to use their mobile devices to group
+This article describes how to enable workers to use their mobile devices to group
 picking work into clusters, so that they can pick items from a single location
 for multiple work orders at the same time. This is called *cluster picking*.
 

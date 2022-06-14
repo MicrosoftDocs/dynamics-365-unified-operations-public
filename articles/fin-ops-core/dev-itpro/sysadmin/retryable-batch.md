@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable batch retries
-description: This topic describes how to enable automatic retries on batch jobs when transient failures occur.
+description: This article describes how to enable automatic retries on batch jobs when transient failures occur.
 author: matapg007
 ms.date: 01/10/2022
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.validFrom: 2021-05-31
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how retries are implemented on batch jobs in Finance and Operations apps, and how you can enable automatic retries on batch jobs when transient failures occur. Currently, the batch platform provides three ways to enable batch resiliency and prevent transient failures.
+This article describes how retries are implemented on batch jobs in Finance and Operations apps, and how you can enable automatic retries on batch jobs when transient failures occur. Currently, the batch platform provides three ways to enable batch resiliency and prevent transient failures.
 
 ## Retry the batch job task, regardless of the error type
 

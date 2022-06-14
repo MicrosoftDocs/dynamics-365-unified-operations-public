@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable location-based store detection
-description: This topic describes how to turn on location-based store detection for your Dynamics 365 Commerce site.
+description: This article describes how to turn on location-based store detection for your Dynamics 365 Commerce site.
 author: brianshook
 ms.date: 07/02/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to turn on location-based store detection for your Dynamics 365 Commerce site.
+This article describes how to turn on location-based store detection for your Dynamics 365 Commerce site.
 
 Location-based store detection in Commerce lets you provide relevant site content to customers, based on their location. When location-based store detection is turned on, the Commerce rendering service uses the country/region information from the IP address of the customer's web browser to direct the customer to the best geographical site configuration that is available.
 

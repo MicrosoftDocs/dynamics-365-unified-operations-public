@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up a warehouse by using a warehouse configuration template
-description: This topic explains how to set up a warehouse by using a warehouse configuration template.
+description: This article explains how to set up a warehouse by using a warehouse configuration template.
 author: yufeihuang
 ms.date: 11/16/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up a warehouse by using a warehouse configuration template. There are several predefined configuration templates that you can use. For information about how to use these templates, see [Configuration data templates](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
+This article explains how to set up a warehouse by using a warehouse configuration template. There are several predefined configuration templates that you can use. For information about how to use these templates, see [Configuration data templates](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md).
 
 ## Scenarios where configuration templates can be helpful
 
@@ -41,7 +41,7 @@ Configuration templates can be helpful in many scenarios. Here are some examples
 - You want to quickly prepare for a demo of the warehouse functionality.
 - You want existing items and warehouses to use the functionality in Warehouse management instead of the functionality in Inventory management.
 
-This topic focuses on the first of these scenarios. It shows how you can use a configuration template to copy a configuration setup from a test environment to a production environment.
+This article focuses on the first of these scenarios. It shows how you can use a configuration template to copy a configuration setup from a test environment to a production environment.
 
 ## Copy a configuration setup from a test environment to a production environment
 
@@ -95,7 +95,7 @@ The **View execution** log provides detailed information about each data entity 
 
 To learn more about how to use warehouse template to copy the configuration of a warehouse from one company to a new company within the same instance, see this 3-minute video on YouTube about [how to use warehouse template to copy the configuration for Finance and Operations](https://www.youtube.com/watch?v=K2WIfFlqJYs).
 
-## Related topic
+## Related article
 
 [Configuration data templates](../../fin-ops-core/dev-itpro/data-entities/configuration-data-templates.md)
 

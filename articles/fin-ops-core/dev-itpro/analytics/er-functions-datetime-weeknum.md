@@ -2,7 +2,7 @@
 # required metadata
 
 title: WEEKNUM ER function
-description: This topic provides information about how the WEEKNUM Electronic reporting (ER) function is used.
+description: This article provides information about how the WEEKNUM Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 01/15/2022
 ms.prod: 

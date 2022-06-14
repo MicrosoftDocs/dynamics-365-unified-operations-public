@@ -2,7 +2,7 @@
 # required metadata
 
 title: Plan and prepare for compiling code against the latest update
-description: This topic highlights potential issues that a developer might see when compiling partner code with the latest product updates.
+description: This article highlights potential issues that a developer might see when compiling partner code with the latest product updates.
 author: dfroslie
 
 ms.date: 10/15/2019

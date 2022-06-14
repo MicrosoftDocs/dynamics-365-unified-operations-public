@@ -2,7 +2,7 @@
 # required metadata
 
 title: Self-service upgrade to the latest version
-description: This topic describes the process for moving to the latest update of Finance and Operations.
+description: This article describes the process for moving to the latest update of Finance and Operations.
 author: laneswenka
 ms.date: 11/01/2021
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.1
 > [!IMPORTANT]
 > The process that is described here is now deprecated for data upgrade between older versions of Finance and Operations apps and the latest version. For more information about Dynamic AX 2012 upgrades, see [Upgrade from AX 2012 to Finance and Operations](upgrade-overview-2012.md).
 >
-> This topic applies to the following starting versions:
+> This article applies to the following starting versions:
 >
 > - Microsoft Dynamics 365 for Operations version 1611 (November 2016) (also known as version 7.1)
 > - Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) (also known as version 7.2)
@@ -118,7 +118,7 @@ A dialog box appears, where you can select the latest combination of an applicat
 <img src="media/UpgradeAutomation/02_Prepare.png" width="500px" alt="Prepare upgrade environment dialog box" />
 
 > [!IMPORTANT]
-> If you receive an error that states that preparation failed, see the [Known issues](#known-issues) section later in this topic.
+> If you receive an error that states that preparation failed, see the [Known issues](#known-issues) section later in this article.
 
 ### Preparation
 

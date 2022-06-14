@@ -2,7 +2,7 @@
 # required metadata
 
 title: VAT management and reporting by tax point date (Date of VAT register)
-description: This topic provides information about the changes to value-added tax (VAT) management in Italy.
+description: This article provides information about the changes to value-added tax (VAT) management in Italy.
 author: liza-golub
 ms.date: 09/15/2021
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend

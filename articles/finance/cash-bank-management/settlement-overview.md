@@ -2,7 +2,7 @@
 # required metadata
 
 title: Settlement overview
-description: This topic provides general information about the settlement process. It describes which transaction types can be settled, and the timing and process for settling them. It also describes the results of the settlement process.
+description: This article provides general information about the settlement process. It describes which transaction types can be settled, and the timing and process for settling them. It also describes the results of the settlement process.
 author: panolte
 ms.date: 07/30/2021
 ms.topic: overview
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 [!include [preview banner](../includes/preview-banner.md)]
 
 
-This topic provides general information about the settlement process. It describes which transaction types can be settled, and the timing and process for settling them. It also describes the results of the settlement process.
+This article provides general information about the settlement process. It describes which transaction types can be settled, and the timing and process for settling them. It also describes the results of the settlement process.
 
 During settlement, the transactions on one document are applied to the transactions on another document to increase or decrease the balance of each document. For example, a payment can be applied to an invoice. Various types of transactions can be settled, at different times, through different methods. The settlement process can also generate new transactions.
 

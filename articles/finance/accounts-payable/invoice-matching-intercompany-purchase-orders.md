@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The purchasing legal entity that is involved in an intercompany trade transaction might be set up to use accounts payable invoice matching. When the **Post invoice with discrepancies** field in the **Accounts payable parameters** page is set to **Require approval**, invoice matching validation will be performed. In this case, the posting requirements for both intercompany trade and accounts payable invoice matching must be met before intercompany vendor invoices can be posted.
 
-The examples in this topic use the following setup for intercompany trade:
+The examples in this article use the following setup for intercompany trade:
 -   Fabrikam Purchase is the purchasing legal entity.
 -   Fabrikam Sales is the selling legal entity.
 -   Customer 4020 exists in Fabrikam Sales.

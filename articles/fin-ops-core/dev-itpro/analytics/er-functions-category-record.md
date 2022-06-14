@@ -2,7 +2,7 @@
 # required metadata
 
 title: List of ER functions in the record category
-description: This topic provides information about the record functions that are supported in Electronic reporting (ER).
+description: This article provides information about the record functions that are supported in Electronic reporting (ER).
 author: NickSelin
 ms.date: 12/12/2019
 ms.prod: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Electronic reporting (ER) record functions can be used to extract information from, and perform operations on, data sources of the *Container (record)* data type. This topic provides a summary of these functions.
+Electronic reporting (ER) record functions can be used to extract information from, and perform operations on, data sources of the *Container (record)* data type. This article provides a summary of these functions.
 
 ## List of supported functions
 

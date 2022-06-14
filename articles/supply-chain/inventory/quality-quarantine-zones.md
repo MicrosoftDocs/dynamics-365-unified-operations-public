@@ -2,7 +2,7 @@
 # required metadata
 
 title: Quarantine zones for nonconformances
-description: This topic describes how to create and use quarantine zones for nonconformances.
+description: This article describes how to create and use quarantine zones for nonconformances.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create and use quarantine zones for nonconformances.
+This article describes how to create and use quarantine zones for nonconformances.
 
 You use the **Quarantine zones** page to define zones that can be assigned to nonconformances. When you create a nonconformance, you can set the **Quarantine zone** and **Quarantine type** fields on the **General** tab of the **Non conformances** page. The **Quarantine zone** field typically indicates the area or location where the item is located. The **Quarantine type** field defines the item as either *Restricted usage* or *Unusable*.
 

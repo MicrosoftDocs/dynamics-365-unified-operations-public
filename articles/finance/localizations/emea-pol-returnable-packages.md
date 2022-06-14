@@ -2,7 +2,7 @@
 # required metadata
 
 title: Returnable packaging for Poland
-description: The topic describes how to set up and use returnable packaging for Poland.
+description: The article describes how to set up and use returnable packaging for Poland.
 author: ShylaThompson
 ms.date: 04/10/2017
 ms.topic: article

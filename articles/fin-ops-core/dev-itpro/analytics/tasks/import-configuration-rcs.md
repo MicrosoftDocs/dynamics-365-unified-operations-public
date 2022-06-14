@@ -2,7 +2,7 @@
 # required metadata 
  
 title: (ER) Import configurations from RCS
-description: This topic provides information about how a user can import a new version of an ER configuration from RCS.
+description: This article provides information about how a user can import a new version of an ER configuration from RCS.
 author: NickSelin
 ms.date: 07/03/2019
 ms.topic: business-process 
@@ -27,10 +27,10 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can import a new version of an Electronic reporting (ER) configuration from Microsoft Regulatory Configuration Services (RCS). In this example, you will select the version of the ER configuration that has been configured in an RCS instance and import it into the current instance for sample company, Litware, Inc. These steps can be performed in any company because ER configurations are shared among companies. To complete these steps, you must first complete the steps in the topic, [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md). To complete these steps, you must also have access to an RCS instance containing at least one ER configuration in either **Completed** or **Shared** status.
+The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can import a new version of an Electronic reporting (ER) configuration from Microsoft Regulatory Configuration Services (RCS). In this example, you will select the version of the ER configuration that has been configured in an RCS instance and import it into the current instance for sample company, Litware, Inc. These steps can be performed in any company because ER configurations are shared among companies. To complete these steps, you must first complete the steps in the article, [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md). To complete these steps, you must also have access to an RCS instance containing at least one ER configuration in either **Completed** or **Shared** status.
 
 1. Go to **Organization administration** > **Workspaces** > **Electronic reporting**. 
-2. Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**. If you don't see this configuration provider, complete the steps in the topic, [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md). 
+2. Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as **Active**. If you don't see this configuration provider, complete the steps in the article, [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md). 
 3. If you have no RCS environment provisioned to your company, select **Regulatory services – Configuration** external link and follow the instructions to provision an RCS environment. 
 4. Select **Electronic reporting parameters**. 
 5. Select the **RCS** tab. 

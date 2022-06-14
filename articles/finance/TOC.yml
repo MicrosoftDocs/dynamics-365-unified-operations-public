@@ -18,8 +18,6 @@
           href: get-started/whats-new-changed-10-0-27.md
         - name: Finance 10.0.26 (May)
           href: get-started/whats-new-changed-10-0-26.md
-        - name: Finance 10.0.25 (April)
-          href: get-started/whats-new-changed-10-0-25.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -2116,6 +2114,8 @@
           href: localizations/emea-cze-intra-community-VAT.md
         - name: Year-end close
           href: localizations/emea-cze-hun-year-end.md
+        - name: EU sales list
+          href: localizations/emea-cze-eu-sales-list.md
       - name: Denmark
         items:
         - name: Denmark overview
@@ -2462,6 +2462,8 @@
           href: localizations/emea-hun-intrastat.md
         - name: Deferred sales tax calculations
           href: localizations/emea-hun-deferred-vat.md
+        - name: EU sales list
+          href: localizations/emea-hun-eu-sales-list.md
       - name: Iceland
         items:
         - name: Iceland overview
@@ -2968,6 +2970,8 @@
           href: localizations/tasks/configure-depreciation-profile-posting.md
         - name: Configure main accounts for asset retirement obligation posting and market discount rates
           href: localizations/tasks/configure-main-accounts-asset-retirement.md
+        - name: Consumption tax report
+          href: localizations/apac-jpn-consumption-tax-report.md
         - name: Consolidated invoices
           href: localizations/apac-jpn-consolidate-invoices.md
         - name: Create a fixed asset with additional depreciation
@@ -3520,6 +3524,8 @@
             href: localizations/rus-land-tax-declaration.md
           - name: Profit tax declaration
             href: localizations/rus-profit-tax-declaration.md
+          - name: Report about operations with traceable goods
+            href: localizations/rus-traceable-goods-operation-report.md
         - name: Organization administration
           items:    
           - name: Tax registration info related to address

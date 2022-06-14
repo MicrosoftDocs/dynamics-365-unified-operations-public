@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up Azure resources for IoT Intelligence
-description: This topic explains how to create and configure the Microsoft Azure resources that you require for IoT Intelligence.
+description: This article explains how to create and configure the Microsoft Azure resources that you require for IoT Intelligence.
 author: johanhoffmann
 ms.date: 08/16/2019
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to create and configure the Microsoft Azure resources that you require for IoT Intelligence.
+This article explains how to create and configure the Microsoft Azure resources that you require for IoT Intelligence.
 
 ## Create Azure resources
 

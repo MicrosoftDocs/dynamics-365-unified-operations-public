@@ -2,7 +2,7 @@
 # required metadata
 
 title: Issue electronic invoices in Finance and Supply Chain Management
-description: This topic explains how to issue electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management through Electronic invoicing.
+description: This article explains how to issue electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management through Electronic invoicing.
 author: gionoder
 ms.date: 03/29/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to issue electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management through Electronic invoicing.
+This article explains how to issue electronic invoices in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management through Electronic invoicing.
 
 
 ## Feature activation

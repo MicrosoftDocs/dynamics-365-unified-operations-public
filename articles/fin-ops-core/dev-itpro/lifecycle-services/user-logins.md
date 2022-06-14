@@ -2,7 +2,7 @@
 # required metadata
 
 title: Track user sign-ins 
-description: This topic explains how to create an audit log of users who have signed in and used Finance and Operations apps.
+description: This article explains how to create an audit log of users who have signed in and used Finance and Operations apps.
 author: angelmarshall
 ms.date: 11/02/2017
 ms.topic: article

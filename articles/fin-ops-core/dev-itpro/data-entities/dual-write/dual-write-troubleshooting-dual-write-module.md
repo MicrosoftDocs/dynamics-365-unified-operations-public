@@ -1,6 +1,6 @@
 ---
 title: Troubleshoot dual-write issues in Finance and Operations apps
-description: This topic provides troubleshooting information that can help you fix issues with the Dual-write module in Finance and Operations apps.
+description: This article provides troubleshooting information that can help you fix issues with the Dual-write module in Finance and Operations apps.
 author: RamaKrishnamoorthy 
 ms.date: 04/18/2022
 ms.topic: article
@@ -17,10 +17,10 @@ ms.search.validFrom: 2020-03-16
 
 
 
-This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse. Specifically, it provides information that can help you fix issues with the **Dual-write** module in Finance and Operations apps.
+This article provides troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse. Specifically, it provides information that can help you fix issues with the **Dual-write** module in Finance and Operations apps.
 
 > [!IMPORTANT]
-> Some of the issues that this topic addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
+> Some of the issues that this article addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
 
 ## You can't load the dual-write module in a Finance and Operations app
 

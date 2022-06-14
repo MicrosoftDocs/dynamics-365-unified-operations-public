@@ -2,9 +2,9 @@
 # required metadata
 
 title: Export a database
-description: This topic explains how to export a database for Finance and Operations.
+description: This article explains how to export a database for Finance and Operations.
 author: LaneSwenka
-ms.date: 02/18/2022
+ms.date: 06/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -89,6 +89,23 @@ When you export a database backup from an environment, some elements of the data
 * [Maintenance mode](../sysadmin/maintenance-mode.md) settings will be disabled even if it was enabled in source.
 * Dual-write configuration.  To setup a new link on the target environment after this operation is successful, see [Dual-write environment linking](../data-entities/dual-write/link-your-environment.md).
 
+### Commerce-related data elements that aren't exported
+
+* The following tables are not exported:
+  * RetailCDXDownloadSession
+  * RetailCDXDownloadSessionDataStore
+  * RetailCDXDownloadSummaryCache
+  * RetailCDXUploadSession
+  * RetailCDXUploadPathHistory
+  * RetailCDXUploadSummaryCache
+  * RetailCDXDataSyncRowVersion
+* All references to a Commerce Scale Unit is removed from the **RetailConnDatabaseProfile** table.
+* All references to a Commerce Scale Unit is removed from the **RetailScaleUnit** table.
+* All references to a Commerce Scale Unit is removed from the **RetailChannelProfile** table and all children of this table.
+* All environment specific values are removed from the **RetailSharedParamaters** table.
+* All environment specific values are removed from the **RetailHardwareProfile** table.
+* All environment specific values are removed from the **CreditCardAccountSetup** table.
+* All environment specific values are removed from the **RetailSelfServicePackageInfo** table and all children of this table.
 
 ### Known issues
 

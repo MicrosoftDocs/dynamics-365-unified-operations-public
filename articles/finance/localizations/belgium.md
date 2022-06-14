@@ -2,7 +2,7 @@
 # required metadata
 
 title: Belgium overview
-description: This topic provides an overview of functionality specific to Belgium.
+description: This article provides an overview of functionality specific to Belgium.
 author: anasyash
 ms.date: 05/27/2022
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include[banner](../includes/banner.md)]
 
-This topic includes information and links to resources that should be considered for legal entities with a primary address in Belgium.
+This article includes information and links to resources that should be considered for legal entities with a primary address in Belgium.
 
 ## Coda bank statement
 CODA is a report format that is used in the Belgian electronic banking system. For more information, see [CODA bank statement](emea-bel-coda-bank-statement-import.md).

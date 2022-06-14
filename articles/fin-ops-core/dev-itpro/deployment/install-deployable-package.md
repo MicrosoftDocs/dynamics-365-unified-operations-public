@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install deployable packages from the command line
-description: This topic describes how to use the command line to apply a binary update or an application (AOT) deployable package that was created in your environment.
+description: This article describes how to use the command line to apply a binary update or an application (AOT) deployable package that was created in your environment.
 author: jorisdg
 ms.date: 07/23/2019
 ms.topic: article
@@ -31,10 +31,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development or build environment.
+This article walks you through the steps for using the command line to apply either a binary update or an application (AOT) deployable package that was created in your development or build environment.
 
 > [!IMPORTANT]
-> For most types of environments, you can apply a deployable package to an environment directly from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Apply updates to cloud environments](apply-deployable-package-system.md). Therefore, this topic applies primarily to environment types that don't support the application of updates via LCS. Examples include local development environments (downloadable virtual hard disks [VHDs]), multi-box development/test environments in Microsoft Azure (LCS Partner and trial projects), and build environments. However, you can also use this topic any time that you want to install deployable packages by using the command line instead of LCS.
+> For most types of environments, you can apply a deployable package to an environment directly from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Apply updates to cloud environments](apply-deployable-package-system.md). Therefore, this article applies primarily to environment types that don't support the application of updates via LCS. Examples include local development environments (downloadable virtual hard disks [VHDs]), multi-box development/test environments in Microsoft Azure (LCS Partner and trial projects), and build environments. However, you can also use this article any time that you want to install deployable packages by using the command line instead of LCS.
 
 ## Key concepts
 - **Deployable package** – A deployable package is a unit of deployment that can be applied to any environment. It can consist of a binary hotfix to the runtime components of Application Object Server (AOS), an updated application package, or a new application package.
@@ -45,7 +45,7 @@ This topic walks you through the steps for using the command line to apply eithe
 > [!NOTE]
 > The steps listed below are for customization packages only. Do not use the **devinstall** parameter when running the Data Upgrade deployable package as part of an upgrade from Microsoft Dynamics AX 2012 to a Finance and Operations app.
 
-An AOT deployable package is a package that contains customizations and extensions to your application. If you want to use the command line just to install an AOT deployable package on a development or demo environment, follow the instructions in this section. You can then skip the rest of this topic.
+An AOT deployable package is a package that contains customizations and extensions to your application. If you want to use the command line just to install an AOT deployable package on a development or demo environment, follow the instructions in this section. You can then skip the rest of this article.
 
 1. On the virtual machine (VM), download the zip file for the deployable package. Make sure that the zip file is stored in a non-user folder.
 

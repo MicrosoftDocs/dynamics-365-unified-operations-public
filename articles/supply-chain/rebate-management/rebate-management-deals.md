@@ -2,7 +2,7 @@
 # required metadata
 
 title: Rebate management deals
-description: This topic describes how to create Rebate management deals. Deals are used to control different methods and bases for calculating rebates and royalties. They include rules for inclusions and exclusions.
+description: This article describes how to create Rebate management deals. Deals are used to control different methods and bases for calculating rebates and royalties. They include rules for inclusions and exclusions.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-Rebate management deals are used to control different methods and bases for calculating rebates and royalties. They include rules for inclusions and exclusions. There are three types of Rebate management deals: customer rebates, customer royalties, and vendor rebates. All three types use similar settings. This topic points out differences where they exist.
+Rebate management deals are used to control different methods and bases for calculating rebates and royalties. They include rules for inclusions and exclusions. There are three types of Rebate management deals: customer rebates, customer royalties, and vendor rebates. All three types use similar settings. This article points out differences where they exist.
 
 ## Create a deal
 
@@ -123,7 +123,7 @@ The **General** tab on the **Rebate management details** FastTab lets you set up
 
 | Field | Description |
 |---|---|
-| Calculation method | Select the method to use when the selected deal line is combined with other deal lines (*Stepped*, *Cumulative*, *Rolling*, or *Total*). The value of this field can dramatically affect the outcome of your rebate calculations. For a full description of each method and examples that show how it affects the rebate calculation, see the [Calculation methods for deal lines](#calc-methods) section later in this topic. |
+| Calculation method | Select the method to use when the selected deal line is combined with other deal lines (*Stepped*, *Cumulative*, *Rolling*, or *Total*). The value of this field can dramatically affect the outcome of your rebate calculations. For a full description of each method and examples that show how it affects the rebate calculation, see the [Calculation methods for deal lines](#calc-methods) section later in this article. |
 | Basis | Select whether the rebate is applied based on quantity (that is, the total number of units that are purchased or sold) or value (that is, the total price of goods that are purchased or sold). |
 | Transaction type | <p>Select the point in the process when the calculation should occur:</p><ul><li>*Order* – Use the ordered quantity or value as the basis for the calculation.</li><li>*Delivered* – Use the delivered quantity or value as the basis for the calculation.</li><li>*Invoice* – Use the invoiced quantity or value as the basis for the calculation.</li></ul> |
 | Unit | If you selected *Quantity* in the **Basis** field, select the unit that the quantity must be specified in. |

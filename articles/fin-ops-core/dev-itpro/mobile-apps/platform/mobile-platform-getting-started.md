@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get started with the mobile platform
-description: This topic describes how to develop on the mobile platform.
+description: This article describes how to develop on the mobile platform.
 author: tonyafehr
 ms.date: 05/26/2022
 ms.topic: article

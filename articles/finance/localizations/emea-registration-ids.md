@@ -2,7 +2,7 @@
 # required metadata
 
 title: Registration IDs
-description: This topic provides information about setting up and using registration IDs.
+description: This article provides information about setting up and using registration IDs.
 author: ShylaThompson
 ms.date: 11/08/2017
 ms.topic: article
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about setting up and using registration IDs.
+This article provides information about setting up and using registration IDs.
 
-Many countries and regions have different regulations and requirements for recording registration numbers or IDs. This topic provides an overview of the required settings and processing of supported registration types for parties in different European countries/regions. All countries/regions have their requirements for supporting various country-specific functionalities related to registration numbers provided by different state offices. Examples of registration numbers include, social security number (SSN), tax identification number (TIN), and European VAT identification (EU VAT ID). This feature provides unified framework for all countries in all regions taking into account country-specific requirements of some European countries. The following sections describe the overall flow of information that is used for setting up and processing registration IDs.
+Many countries and regions have different regulations and requirements for recording registration numbers or IDs. This article provides an overview of the required settings and processing of supported registration types for parties in different European countries/regions. All countries/regions have their requirements for supporting various country-specific functionalities related to registration numbers provided by different state offices. Examples of registration numbers include, social security number (SSN), tax identification number (TIN), and European VAT identification (EU VAT ID). This feature provides unified framework for all countries in all regions taking into account country-specific requirements of some European countries. The following sections describe the overall flow of information that is used for setting up and processing registration IDs.
 
 ## Registration type creation
 Before you can enter registration ID, you must set up registration types for the different types of registration numbers that each party is subject to. Go to **Organization administration** &gt; **Global address book** &gt; **Registration types** &gt; **Registration types**  page to create and manage registration types for vendors, customers, workers, and legal entities in different countries/regions.
@@ -55,7 +55,7 @@ Registration category is country/region registration identifier approved for usi
 |-----------------------|----------------|
 | Registration type     | The registration type in particular country/region.|
 | Restricted to         | The kind of restriction applies to the tax registration type: None, Person, Organization.|
-| Registration category | The unique registration identifier approved for using in the country. The full list of supported categories is shown later in this topic. |
+| Registration category | The unique registration identifier approved for using in the country. The full list of supported categories is shown later in this article. |
 
 ## Enter registration IDs for Global address book records
 

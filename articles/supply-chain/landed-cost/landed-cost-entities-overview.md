@@ -1,6 +1,6 @@
 ---
 title: Landed cost entities overview
-description: This topic provides an overview of the data entities for Landed cost that enable external data sources to create voyages and costs, and update container tracking records.
+description: This article provides an overview of the data entities for Landed cost that enable external data sources to create voyages and costs, and update container tracking records.
 author: yufeihuang
 ms.date: 05/27/2022
 ms.topic: article

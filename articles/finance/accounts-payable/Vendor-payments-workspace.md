@@ -2,7 +2,7 @@
 # required metadata
 
 title: Vendor payments workspace
-description: This topic provides information about the Vendor payments workspace. The Vendor payments workspace shows information that is related to the processing of vendor payments.
+description: This article provides information about the Vendor payments workspace. The Vendor payments workspace shows information that is related to the processing of vendor payments.
 author: abruer
 ms.date: 10/16/2020
 ms.topic: article

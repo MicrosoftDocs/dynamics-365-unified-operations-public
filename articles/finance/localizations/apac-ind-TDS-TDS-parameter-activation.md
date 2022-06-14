@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set the TDS parameters
-description: This topic explains how to set parameters to activate Tax Deducted at Source (TDS) functionality in specified transactions. This is a necessary step to use the Tax Deducted at Source TDS feature.
+description: This article explains how to set parameters to activate Tax Deducted at Source (TDS) functionality in specified transactions. This is a necessary step to use the Tax Deducted at Source TDS feature.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set parameters to activate Tax Deducted at Source (TDS) functionality in specified transactions. This is a necessary step to use the Tax Deducted at Source TDS feature.
+This article explains how to set parameters to activate Tax Deducted at Source (TDS) functionality in specified transactions. This is a necessary step to use the Tax Deducted at Source TDS feature.
 
 1. Go to **General ledger \> Ledger setup \> General ledger parameters**.
 2. On the **Direct taxes** tab, in the **Tax Deducted at Source** section, set the **Activate TDS** option to **Yes** to activate the TDS functionality, and the pages and fields that are used for it.

@@ -2,7 +2,7 @@
  # required metadata
 
 title: Work with templates
-description: This topic describes how to work with templates in Microsoft Dynamics 365 Commerce.
+description: This article describes how to work with templates in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 02/03/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to work with templates in Microsoft Dynamics 365 Commerce.
+This article describes how to work with templates in Microsoft Dynamics 365 Commerce.
 
 As was discussed in [Templates and layouts overview](templates-layouts-overview.md), templates define the set of options that is available to downstream authors. Templates are useful to an enterprise's web authoring team for several reasons, and well-structured templates can help with all the following goals:
 

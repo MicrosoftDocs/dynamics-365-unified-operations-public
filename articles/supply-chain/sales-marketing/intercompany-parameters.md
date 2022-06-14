@@ -1,6 +1,6 @@
 ---
 title: Intercompany parameters
-description: This topic explains intercompany parameters
+description: This article explains intercompany parameters
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article

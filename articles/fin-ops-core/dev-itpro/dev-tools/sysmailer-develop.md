@@ -1,6 +1,6 @@
 ---
 title: Develop email experiences by using the SysMailer framework
-description: This topic describes how you can use the SysMailer framework to send email.
+description: This article describes how you can use the SysMailer framework to send email.
 author: ChrisGarty
 ms.date: 05/23/2018
 ms.topic: article
@@ -25,7 +25,7 @@ The SysMailer framework consists of a factory class that is used to retrieve an 
 
 ### Scenarios
 
-This topic describes three scenarios:
+This article describes three scenarios:
 
 - Sending an interactive message
 - Sending a non-interactive (batch) message
@@ -188,7 +188,7 @@ The **System.Net.Mail.MailMessage** object contains a large amount of advanced f
 
 ## Migration from Microsoft Dynamics AX 2012 to Finance and Operations applications
 
-Migration involves using the **SysMailerMessageBuilder** object to build a message and then using the **SysMailerFactory** to send it, as outlined in the examples in this topic.
+Migration involves using the **SysMailerMessageBuilder** object to build a message and then using the **SysMailerFactory** to send it, as outlined in the examples in this article.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

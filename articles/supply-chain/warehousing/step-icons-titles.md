@@ -1,10 +1,10 @@
 ---
 title: Assign step icons and titles for the Warehouse Management mobile app
-description: This topic describes how to assign step icons and titles for new or customized task flows for the Warehouse Management mobile app.
+description: This article describes how to assign step icons and titles for new or customized task flows for the Warehouse Management mobile app.
 author: Mirzaab
 ms.date: 05/17/2021
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to assign step icons and step titles for new or customized task flows for the Warehouse Management mobile app.
+This article describes how to assign step icons and step titles for new or customized task flows for the Warehouse Management mobile app.
 
 The following illustrations shows how step icons and titles appear in the Warehouse Management mobile app.
 
@@ -25,7 +25,7 @@ The following illustrations shows how step icons and titles appear in the Wareho
 
 ## Turn this feature on or off
 
-To use the functionality described in this topic, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *User settings, icons, and step titles for the new warehouse app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use the functionality described in this article, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *User settings, icons, and step titles for the new warehouse app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Standard step IDs, classes, and icons
 
@@ -35,7 +35,7 @@ Each step in a task flow is identified by a step ID, and each step ID has a corr
 
 The following table lists every step ID that is currently available, and its corresponding step class. The control name of the primary input field is used as the step ID.
 
-For an example that shows how these step IDs and classes are used, see the implementation of the `WHSMobileAppStepInfoBuilder.stepId()` method in the [Example: Assign step icons and titles for a custom flow](#example) section later in this topic.
+For an example that shows how these step IDs and classes are used, see the implementation of the `WHSMobileAppStepInfoBuilder.stepId()` method in the [Example: Assign step icons and titles for a custom flow](#example) section later in this article.
 
 | Step ID | Step Class |
 |-|-|
@@ -369,7 +369,7 @@ final internal class WHSMobileAppStepContainerId extends WHSMobileAppStep
 
 The identifier of the step icon is stored in the `defaultStepIcon` class member, and the step title is stored in the `defaultStepTitle` class member.
 
-To assign a step icon, set `defaultStepIcon` to one of the icon IDs that are listed in the [Available step icons](#step-icons) section earlier in this topic.
+To assign a step icon, set `defaultStepIcon` to one of the icon IDs that are listed in the [Available step icons](#step-icons) section earlier in this article.
 
 ### Use a standard or custom step icon and title for the weight input
 
@@ -401,7 +401,7 @@ public class WHSMobileAppStepInfoBuilderWeighContainer extends WHSMobileAppStepI
 }
 ```
 
-You then create a step class for the `NewWeight` step. The code should resemble the code for the `ContainerId` example that was shown earlier in this topic.
+You then create a step class for the `NewWeight` step. The code should resemble the code for the `ContainerId` example that was shown earlier in this article.
 
 #### Override the stepInfo() method
 

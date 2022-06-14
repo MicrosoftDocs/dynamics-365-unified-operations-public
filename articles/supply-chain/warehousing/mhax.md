@@ -2,7 +2,7 @@
 # required metadata
 
 title: Material handling equipment interface (MHAX)
-description: This topic describes how to set up the material handling equipment interface (MHAX) so that you can connect to external physical material handling (MH) systems.
+description: This article describes how to set up the material handling equipment interface (MHAX) so that you can connect to external physical material handling (MH) systems.
 author: Mirzaab
 ms.date: 03/04/2021
 ms.topic: article
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -93,7 +93,7 @@ To create a subscription, go to **Material handling equipment interface \> Setup
 
 A query can be associated with each subscription. This query filters work lines and headers to further limit the work that will use the subscription to generate events. To add a query to a subscription, select the **Run query** check box for the relevant subscription on the **Subscriptions** page, and then select **Edit query** on the Action Pane. The standard Supply Chain Management query editor appears.
 
-In addition, the subscription includes a *subscription map* that maps fields from either the work header or the work line to some or all of the 10 free data fields of the outbound event, as required. To return information to the MHAX service, you will typically include the work line record ID or the *work line pair ID*. (The work line pair ID is a new property that enables the system to use a single return command to process pick and put lines.) The remaining fields depend on the use case. Some examples are provided later in this topic.
+In addition, the subscription includes a *subscription map* that maps fields from either the work header or the work line to some or all of the 10 free data fields of the outbound event, as required. To return information to the MHAX service, you will typically include the work line record ID or the *work line pair ID*. (The work line pair ID is a new property that enables the system to use a single return command to process pick and put lines.) The remaining fields depend on the use case. Some examples are provided later in this article.
 
 To set up a subscription map, select the relevant subscription on the **Subscriptions** page, and then select **Subscription map** on the Action Pane. In the **Subscription map** dialog box that appears, you can assign a table and field for each available data field as you require.
 
@@ -166,7 +166,7 @@ If the work line pair ID is provided, all pick, put, or custom work lines that a
 
 Pick lines from license plate–controlled locations require that the **data03** specify the license plate that should be picked from, regardless of whether the lines are marked by the work line record ID or the work line pair ID. The **data04** field must specify the work header's target license plate for the pick.
 
-Put lines don't accept further information. They are run based only on the current work line's location and the work's target license plate. If the put must be done to a different location, change the location of the work line as described in the [Override events](#override-events) section later in this topic.
+Put lines don't accept further information. They are run based only on the current work line's location and the work's target license plate. If the put must be done to a different location, change the location of the work line as described in the [Override events](#override-events) section later in this article.
 
 Custom work lines don't require, or support, any additional information in the inbound event.
 
@@ -225,7 +225,7 @@ Eventually, your inbound queue will start to become full of queue items that hav
 
 ## Get a quick overview by using the queue manager
 
-To get a quick overview of all the activity that is related to your inbound and outbound queues, go to **Material handling equipment interface \> Workspaces \> Queue manager**. The **Queue manager** page provides a set of tabs and tiles that you can use to monitor and explore your queues. It also provides useful links to most of the other pages that are mentioned in this topic.
+To get a quick overview of all the activity that is related to your inbound and outbound queues, go to **Material handling equipment interface \> Workspaces \> Queue manager**. The **Queue manager** page provides a set of tabs and tiles that you can use to monitor and explore your queues. It also provides useful links to most of the other pages that are mentioned in this article.
 
 ## Connect to the MHAX service
 

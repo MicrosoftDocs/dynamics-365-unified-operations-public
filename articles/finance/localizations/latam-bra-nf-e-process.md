@@ -2,7 +2,7 @@
 # required metadata
 
 title: Brazil NF-e process overview 
-description: This topic provides an overview of the process for setting up and submitting a Nota fiscal eletrônica (NF-e) to register the movement of items and services between two parties.
+description: This article provides an overview of the process for setting up and submitting a Nota fiscal eletrônica (NF-e) to register the movement of items and services between two parties.
 author: sndray
 ms.date: 07/25/2019
 ms.topic: overview
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the process for setting up and submitting a Nota fiscal eletrônica (NF-e) to register the movement of items and services between two parties.
+This article provides an overview of the process for setting up and submitting a Nota fiscal eletrônica (NF-e) to register the movement of items and services between two parties.
 
 You can use a Nota fiscal eletrônica (NF-e) to register the movement of items and services between two parties. You can generate an NF-e from any of the following fiscal documents:
 

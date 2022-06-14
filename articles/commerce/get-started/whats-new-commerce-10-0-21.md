@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new and changed in Dynamics 365 Commerce 10.0.21 (October 2021)
-description: This topic describes features that are either new or changed in the preview release of Dynamics 365 Commerce 10.0.21. 
+description: This article describes features that are either new or changed in the preview release of Dynamics 365 Commerce 10.0.21. 
 author: josaw1
 ms.date: 10/28/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.21
 [!include [banner](../includes/banner.md)]
 
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.21. This version has a build number of 10.0.960 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.21. This version has a build number of 10.0.960 and is available on the following schedule:
 
 - **Preview of release:** August 2021
 - **General availability of release (self-update):** September 2021
@@ -95,12 +95,12 @@ Check out the [Dynamics 365: 2021 release wave 2 plan](/dynamics365-release-plan
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) topic describes features that have been removed or deprecated for Commerce.
+The [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) article describes features that have been removed or deprecated for Commerce.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 

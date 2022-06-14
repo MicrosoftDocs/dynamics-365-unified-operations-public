@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up withholding tax component groups for the TDS tax type
-description: This topic explains how to set up withholding tax component groups, such as Rent and Contractor, for the Tax Deducted at Source (TDS) tax type.
+description: This article explains how to set up withholding tax component groups, such as Rent and Contractor, for the Tax Deducted at Source (TDS) tax type.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up withholding tax component groups, such as **Rent** and **Contractor**, for the Tax Deducted at Source (TDS) tax type.
+This article explains how to set up withholding tax component groups, such as **Rent** and **Contractor**, for the Tax Deducted at Source (TDS) tax type.
 
 1. Go to **Tax \> Setup \> Withholding tax \> Withholding tax component groups**.
 

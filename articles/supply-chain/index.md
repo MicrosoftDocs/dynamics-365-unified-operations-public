@@ -2,7 +2,7 @@
 # required metadata
 
 title: Supply Chain Management home page
-description: This page provides a list of the help topics and other resources for Supply Chain Management features.   
+description: This page provides a list of the help articles and other resources for Supply Chain Management features.   
 author: kamaybac
 ms.date: 09/15/2021
 ms.topic: index-page
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](includes/banner.md)]
 
-This topic provides a list of the help topics and other resources in Dynamics 365 Supply Chain Management.
+This article provides a list of the help articles and other resources in Dynamics 365 Supply Chain Management.
 
 ## What's new and in development
 
@@ -98,7 +98,7 @@ The following tech conference recordings discuss supply chain management functio
 
 ## Blogs
 
-There are many topics about manufacturing and supply chain management on the [Dynamics AX Manufacturing R&D Team Blog](/archive/blogs/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm/). Most of these were written for the previous version, but the same concepts still apply, and the procedures are similar in the current version.
+There are many articles about manufacturing and supply chain management on the [Dynamics AX Manufacturing R&D Team Blog](/archive/blogs/axmfg/) and [Supply Chain Management in Dynamics AX R&D Team Blog](https://blogs.msdn.microsoft.com/dynamicsaxscm/). Most of these were written for the previous version, but the same concepts still apply, and the procedures are similar in the current version.
 
 ## White papers
 

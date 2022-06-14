@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create Windows installers for payment connectors
-description: This topic describes how to create a Windows installer for a payment connector. 
+description: This article describes how to create a Windows installer for a payment connector. 
 author: RobinARH
 ms.date: 05/07/2018
 ms.topic: article
@@ -31,12 +31,12 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create a Windows installer for a payment connector. This topic is targeted at developers working for or with a payment connector provider, for example, MasterCard or Visa, to describe how to package a payment connector, which can then be shared with implementation partners working for specific customers. 
+This article describes how to create a Windows installer for a payment connector. This article is targeted at developers working for or with a payment connector provider, for example, MasterCard or Visa, to describe how to package a payment connector, which can then be shared with implementation partners working for specific customers. 
 
 After you've implemented and tested your payment connector in the development environment, you must create an installer to transfer the payment connector to a retailer IT professional or a value-added reseller (VAR) for production deployment. For more information, see [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md).
 
 ## Windows Installer
-Microsoft Windows Installer (MSI) is the application and configuration service for Microsoft Windows. You must create an installer that contains all the files that are required in order to deploy a payment connector. The installer itself doesn't deploy the payment connector. It just unzips and copies the connector files to a designated folder. The next section of this topic defines the contents of that folder. You can configure the installer to require that customers accept a user agreement before they can continue with the installation. You can also choose your preferred format for the installer. For example, you can have an .exe file.
+Microsoft Windows Installer (MSI) is the application and configuration service for Microsoft Windows. You must create an installer that contains all the files that are required in order to deploy a payment connector. The installer itself doesn't deploy the payment connector. It just unzips and copies the connector files to a designated folder. The next section of this article defines the contents of that folder. You can configure the installer to require that customers accept a user agreement before they can continue with the installation. You can also choose your preferred format for the installer. For example, you can have an .exe file.
 
 ## Installer contents
 The installer must install the required files in the following structure:

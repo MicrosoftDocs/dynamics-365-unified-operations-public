@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customize App Suite reports by using extensions
-description: This topic discusses a series of scenarios for customizing App Suite reports.
+description: This article discusses a series of scenarios for customizing App Suite reports.
 author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Platform update 3
 
 [!include [banner](../includes/banner.md)]
 
-This topic discusses a series of scenarios for customizing App Suite reports.
+This article discusses a series of scenarios for customizing App Suite reports.
 
-Finance and Operations offers an expanded set of tools to support custom solutions. Customizations to reporting solutions in the standard application are fully supported using a pure extension model. This topic contains guidance about how to add the most common customizations to standard application reports without overlayering Application Suite artifacts. Here are some of the key benefits of using an extension-based approach when customizing the application:
+Finance and Operations offers an expanded set of tools to support custom solutions. Customizations to reporting solutions in the standard application are fully supported using a pure extension model. This article contains guidance about how to add the most common customizations to standard application reports without overlayering Application Suite artifacts. Here are some of the key benefits of using an extension-based approach when customizing the application:
 
 - It reduces the footprint of your application solutions by minimizing code duplication.
 - Custom reports benefit from enhancements made to standard solutions including updates to business logic in Report Data Provider (RDP), data contracts, and UI Builder classes.

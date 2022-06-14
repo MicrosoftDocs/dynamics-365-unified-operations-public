@@ -2,7 +2,7 @@
 # required metadata
 
 title: Record TDS concession certificate numbers
-description: This topic explains how to record the Tax Deducted at Source (TDS) concession certificate numbers that are issued to vendors.
+description: This article explains how to record the Tax Deducted at Source (TDS) concession certificate numbers that are issued to vendors.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to record the Tax Deducted at Source (TDS) concession certificate numbers that are issued to vendors.
+This article explains how to record the Tax Deducted at Source (TDS) concession certificate numbers that are issued to vendors.
 
 1. Go to **Tax \> Indirect taxes \> Withholding tax \> Withholding tax concessions**.
 2. In the **Tax type** field, select **TDS** to record concession certificates for the TDS tax type.

@@ -1,6 +1,6 @@
 ---
 title: Create and automate user acceptance tests
-description: This topic provides information about using Task guides and BPM to create and execute acceptance test suites.
+description: This article provides information about using Task guides and BPM to create and execute acceptance test suites.
 author: jorisdg
 ms.date: 10/02/2018
 ms.topic: article
@@ -33,7 +33,7 @@ You can use Task recorder and Business process modeler (BPM) to create user acce
 
 Because BPM can be synchronized with Azure DevOps (formerly known as Visual Studio Team Services), you can automatically create test cases (including test steps) in your Azure DevOps project. Azure DevOps can then serve as your test configuration and test management tool where you can create targeted test plans and test suites, manage the execution of tests and investigate results. For more information about testing with Azure DevOps, see [What are test plans, test suites, and test cases?](/azure/devops/test/create-a-test-plan#what-are-test-plans-test-suites-and-test-cases)
 
-This topic walks through the process of creating and executing acceptance test suites to be used for manual or automated testing.
+This article walks through the process of creating and executing acceptance test suites to be used for manual or automated testing.
 
 ## Create a Scenario Acceptance Testing BPM library
 BPM is a great LCS tool to describe a hierarchy of business processes and user tasks. LCS also allows Microsoft partners and customers to author and distribute BPM libraries across LCS projects via the Asset library. This section describes how to take advantage of BPM to define your acceptance test library.
@@ -41,7 +41,7 @@ BPM is a great LCS tool to describe a hierarchy of business processes and user t
 ### Create a BPM library
 There are several ways to create a Business process modeler (BPM) library. For more information about how to create libraries in BPM, see [Create, edit, and browse Business process modeler (BPM) libraries](creating-editing-browsing.md).
 
-For illustration purposes, this topic uses a library that contains common business processes, such as create an expense report and approve order requests. The library was created by using the Excel import functionality.  
+For illustration purposes, this article uses a library that contains common business processes, such as create an expense report and approve order requests. The library was created by using the Excel import functionality.  
 
 ![Import from Excel.](./media/import-from-excel.PNG "Import from Excel")
 

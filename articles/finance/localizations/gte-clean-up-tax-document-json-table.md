@@ -2,9 +2,9 @@
 # required metadata
 
 title: Clean up the TaxDocumentJSON table 
-description: This topic explains how free up space in the database by removing old data from the TaxDocumentJSON table.
+description: This article explains how free up space in the database by removing old data from the TaxDocumentJSON table.
 author: prabhatb
-ms.date: 10/07/2019
+ms.date: 06/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: 10.0.14
 
 ## Purpose
 
-As the system runs, more and more data is produced, and the database size continues to increase. To free up space in the database, you can clean up old data. During cleanup, if you observe that the TaxDocumentJSON table is using too much space, you can follow the steps in this topic to clean it up.
+As the system runs, more and more data is produced, and the database size continues to increase. To free up space in the database, you can clean up old data. During cleanup, if you observe that the TaxDocumentJSON table is using too much space, you can follow the steps in this article to clean it up.
 
 ## Before you begin
 
@@ -48,8 +48,8 @@ Before you begin the cleanup, complete the following tasks:
 
 ## Clean up the database
 
-1. Verify that you've turned on the following flighted feature: **TaxRemoveDependenciesOnTaxDocumentJSONFlighting**.
-2. Go to **Tax** \> **Periodic tasks** \> **Tax document JSON cleanup**. 
+1. By default, the **Cleanup** options wouldn't be available because it's a one-time task to compress old data from versions that are earlier than 10.0.9. If you want to use the **Remove** option, contact Microsoft to enable, **TaxRemoveDependenciesOnTaxDocumentJSONFlighting**.
+2. Go to **Tax** > **Periodic tasks** > **Tax document JSON cleanup**. 
 3. Select the **Remove** option.
 
     > [!NOTE]
@@ -61,7 +61,7 @@ Before you begin the cleanup, complete the following tasks:
     > 1\. Confirm with technical consultant or administrator that no customization depends on tax document object.  
     > 2\. Specify conditions in 'Records to include' tab. It's recommended to only remove the data prior to current fiscal year.
 
-4. On the **Records to include** FastTab, specify the conditions that you confirmed with the customer's business department. For example, you've agreed to remove the tax document JSON before March 31, 2018. In this case, in the **Tax document extension information for India** section, in the **Transaction date** field, specify **31/3/2018**.
+4. On the **Records to include** FastTab, specify the conditions that you confirmed with the customer's business department. For example, you've agreed to remove the tax document JSON before March 31, 2018. In this case, in the **Tax document extension information for India** section, in the **Transaction date** field, specify **.."31/3/2018"**. For more details about the query filter, see [Advanced filtering and query syntax](../../fin-ops-core/fin-ops/get-started/advanced-filtering-query-options.md).
 
     ![Transaction date field in the Tax document extension information for India section.](media/tax-document-json-02.png)
 

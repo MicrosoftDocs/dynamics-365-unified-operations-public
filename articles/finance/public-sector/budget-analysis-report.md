@@ -2,7 +2,7 @@
 # required metadata
 
 title: Budget analysis report
-description: This topic describes the Budget analysis report, which is used to generate a summarized report that compares budgeted amounts to actual expenses and revenue activity during a period that you specify.
+description: This article describes the Budget analysis report, which is used to generate a summarized report that compares budgeted amounts to actual expenses and revenue activity during a period that you specify.
 author: v-kiarnd
 ms.date: 07/08/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
@@ -39,7 +39,7 @@ To view more information about an account, select the account name or number to 
 
 ## Filter the data on this report
 
-When you generate the report, the following default parameters are shown. You can use these parameters to filter the data that appears on the report. For more information, see the "How to work with reports" section of this topic.
+When you generate the report, the following default parameters are shown. You can use these parameters to filter the data that appears on the report. For more information, see the "How to work with reports" section of this article.
 
 | Field | Description |
 |---|---|

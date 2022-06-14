@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mobile app home page
-description: This topic describes the Finance and Operations (Dynamics 365) mobile app and provides links to resources that can help you implement it in your organization.
+description: This article describes the Finance and Operations (Dynamics 365) mobile app and provides links to resources that can help you implement it in your organization.
 author: ChrisGarty
 ms.date: 05/24/2022
 ms.topic: article
@@ -32,7 +32,7 @@ ms.search.validFrom: 2017-02-28
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-This topic describes the **Finance and Operations (Dynamics 365)** mobile app and provides links to resources that can help you implement it in your organization.
+This article describes the **Finance and Operations (Dynamics 365)** mobile app and provides links to resources that can help you implement it in your organization.
 
 ## Overview
 

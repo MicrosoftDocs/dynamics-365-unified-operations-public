@@ -2,7 +2,7 @@
 # required metadata
 
 title: Removed or deprecated platform features
-description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
+description: This article describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 33
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
+This article describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
@@ -46,7 +46,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | We are deprecating the Finance and Operations (Dynamics 365) mobile application and platform to consolidate to a single mobile platform, which is Power Apps. |
-| **Replaced by another feature?**   | Yes, mobile experiences over Finance and Operations app data can be built with Power Platform integration. See [Building mobile experiences](../power-platform/build-mobile-experiences.md) for more details. |
+| **Replaced by another feature?**   | Yes, mobile experiences over Finance and Operations app data can be built with Power Platform integration. See the [blog post](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) and [Building mobile experiences](../power-platform/build-mobile-experiences.md) for more details. |
 | **Product areas affected**         | Finance and Operations apps |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. End of support date is targeted for October 2024. |

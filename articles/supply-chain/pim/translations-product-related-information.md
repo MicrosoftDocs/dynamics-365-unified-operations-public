@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product-related translations FAQ
-description: This topic describes how to manage translations for products, product dimension values, and product attributes. 
+description: This article describes how to manage translations for products, product dimension values, and product attributes. 
 author: t-benebo
 ms.date: 08/06/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to manage translations for products, product dimension values, and product attributes. 
+This article describes how to manage translations for products, product dimension values, and product attributes. 
 
 ## What product-related data can be translated?
 

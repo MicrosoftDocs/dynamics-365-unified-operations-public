@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install Export to Azure Data Lake add-in
-description: This topic provides information about configuring the export to Azure Data Lake.
+description: This article provides information about configuring the export to Azure Data Lake.
 author: MilindaV2
 ms.date: 11/22/2021
 ms.topic: article

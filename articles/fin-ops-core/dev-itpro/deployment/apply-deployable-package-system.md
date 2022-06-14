@@ -2,7 +2,7 @@
 # required metadata
 
 title: Apply updates to cloud environments
-description: This topic explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a cloud environment.
+description: This article explains how to use Lifecycle Services (LCS) to apply a binary update or an application (AOT) deployable package to a cloud environment.
 author: laneswenka
 ms.date: 06/08/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to automatically apply updates to cloud environments. 
+This article describes how you can use Microsoft Dynamics Lifecycle Services (LCS) to automatically apply updates to cloud environments. 
 
 > [!IMPORTANT]
 > Updates are applied using deployable packages. Applying updates causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied. You should plan accordingly.
@@ -48,7 +48,7 @@ For other environments (listed below), you must use Remote Desktop Protocol (RDP
 
 ## Key concepts
 
-Before you begin, you should understand *deployable packages*, *runbooks*, and the *AXInstaller*. A deployable package is a unit of deployment that can be applied in any environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. The AXInstaller creates a runbook that enables installing a package. For more details, see [Packages, runbooks, and the AXUpdateInstaller in depth](apply-deployable-package-system.md#packages-runbooks-and-the-axupdateinstaller-in-depth) at the end of this topic.
+Before you begin, you should understand *deployable packages*, *runbooks*, and the *AXInstaller*. A deployable package is a unit of deployment that can be applied in any environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. The AXInstaller creates a runbook that enables installing a package. For more details, see [Packages, runbooks, and the AXUpdateInstaller in depth](apply-deployable-package-system.md#packages-runbooks-and-the-axupdateinstaller-in-depth) at the end of this article.
 
 ## Supported package types
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Separate accounts for credit notes
-description: This topic explains how to set up and use separate accounts for credit notes.
+description: This article explains how to set up and use separate accounts for credit notes.
 author: ilkond
 ms.date: 09/16/2019
 ms.topic: article

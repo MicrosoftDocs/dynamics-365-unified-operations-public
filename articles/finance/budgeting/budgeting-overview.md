@@ -2,7 +2,7 @@
 # required metadata
 
 title: Budgeting home page
-description: This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 Finance.
+description: This article provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities in Microsoft Dynamics 365 Finance.
 author: panolte
 ms.date: 04/29/2021
 ms.topic: overview
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities. 
+This article provides an overview of the budgeting functionality components, budgeting tools, and reporting capabilities. 
 
 ## Components of budgeting functionality
 
