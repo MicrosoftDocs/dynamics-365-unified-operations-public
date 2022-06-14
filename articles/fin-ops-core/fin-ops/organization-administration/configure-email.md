@@ -4,7 +4,7 @@
 title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: jasongre
-ms.date: 08/26/2021
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -404,7 +404,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
     <table>
       <tr>
         <th>Explanation</th>
-        <td>An email failed to send because at least one recipient's mailbox is full. See <a href="https://docs.microsoft.com/en-us/exchange/troubleshoot/email-delivery/cannot-send-mail-mepf">Error (554 5.2.2 mailbox full) when sending email to mail-enabled public folders in Office 365</a> for more details.</td>
+        <td>An email failed to send because at least one recipient's mailbox is full. See <a href="https://docs.microsoft.com/exchange/troubleshoot/email-delivery/cannot-send-mail-mepf">Error (554 5.2.2 mailbox full) when sending email to mail-enabled public folders in Office 365</a> for more details.</td>
       </tr>
       <tr>
         <th>Fix</th>
@@ -421,7 +421,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
       <tr>
         <th>Fix</th>
-        <td>Adjust the user account configuration appropriately in Office 365 before trying again. See <a href="https://docs.microsoft.com/en-us/exchange/mail-flow-best-practices/fix-issues-with-printers-scanners-and-lob-applications-that-send-email-using-off#error-authentication-unsuccessful">Fix issues with printers, scanners, and LOB applications that send email using Microsoft 365 or Office 365</a> for more details.</td>
+        <td>Adjust the user account configuration appropriately in Office 365 before trying again. See <a href="https://docs.microsoft.com/exchange/mail-flow-best-practices/fix-issues-with-printers-scanners-and-lob-applications-that-send-email-using-off#error-authentication-unsuccessful">Fix issues with printers, scanners, and LOB applications that send email using Microsoft 365 or Office 365</a> for more details.</td>
       </tr>
     </table>
 
