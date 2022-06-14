@@ -2772,6 +2772,8 @@
                   href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
                 - name: Set up TDS registration numbers for legal entities
                   href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                - name: Set up withholding tax component groups for the TDS tax type
+                  href: localizations/apac-ind-TDS-Withholding-tax-component-groups-setup-for-TDS-tax-type.md
                 - name: Set up withholding tax authorities for the TDS tax type
                   href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
                 - name: Set up tax components for the TDS tax type
