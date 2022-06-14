@@ -44,7 +44,7 @@ After your Commerce sandbox environment has been provisioned end to end, additio
 1. Make sure that the **USRT** legal entity is selected in the upper-right corner. This legal entity has been preconfigured in the demo data.
 1. Go to **Commerce parameters \> Configuration parameters** and ensure that there's an entry for **ProductSearch.UseAzureSearch** and that the value is set to **true**. If this entry is missing, add it and set the value to **true**.
 1. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Initialize Commerce scheduler**. On the **Initialize commerce scheduler** flyout menu, set the **Delete existing configuration** option to **Yes**, and then select **OK**.
-1. For the store and e-commerce channels to work properly, they must be added to the Commerce Scale Unit. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**, and then in the left pane select the Commerce Scale Unit. On the **Retail channel** FastTab, add the **AW online store**, **AW Business online store**, and **Fabrikam extended online store** channels if you plan to use those e-commerce channels. Optionally, you can also add retail stores if you will be using point of sale (POS) (for example, **Seattle**, **San Francisco**, and **San Jose**).
+1. For the store and e-commerce channels to work properly, they must be added to the Commerce Scale Unit. Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Channel database**, and then in the left pane select the Commerce Scale Unit. On the **Retail channel** FastTab, add the **AW online store**, **AW Business online store**, and **Fabrikam extended online store** channels if you plan to use those e-commerce channels. Optionally, you can also add retail stores if you will be using point of sale (POS) (for example, **Seattle**, **San Francisco**, and/or **San Jose**).
 1. To ensure that all changes are synchronized with the channel database, select **Channel Database \> Full data sync** for the Commerce Scale Unit.
 
 During post-provisioning activities in Commerce headquarters, make sure that the **USRT** legal entity is always selected.
@@ -86,7 +86,7 @@ There are three available e-commerce demo sites: Fabrikam, Adventure Works, and 
 
 1. Sign in to site builder by using the URL that you made a note of when you initialized e-Commerce during provisioning (see [Initialize e-Commerce](provisioning-guide.md#initialize-e-commerce)).
 1. Select the site (**Fabrikam**, **Adventure Works**, or **Adventure Works Business**), to open the site setup dialog box.
-1. Select the domain that you entered when you initialized e-commerce.
+1. Select the domain that you entered when you initialized Commerce.
 1. In headquarters, select the preconfigured online store channel (**Fabrikam extended online store**, **AW online store**, or **AW Business online store**) that corresponds to the default channel.
 1. Select **en-us** as the default language.
 1. Configure the path fields. This can be left blank for a single site but will need to be configured if using the same domain name for multiple sites. For example, if the domain name is `https://www.constoso.com`, you can use a blank path for Fabrikam (`https://contoso.com`), and then use "aw" for Adventure Works (`https://contoso.com/aw`) and "awbusiness" for the Adventure Works business site (`https://contoso.com/awbusiness`).
@@ -154,7 +154,7 @@ After the provisioning and configuration steps are completed, you can start to u
 
 To configure optional features for your Commerce sandbox environment, see [Configure optional features for a Commerce sandbox environment](cpe-optional-features.md).
 
-To enable e-commerce users to sign into the e-commerce site, additional configuration is required to enable site authentication via Azure Active Directory business-to-consumer (B2C), follow the instructions in [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md).
+To enable e-commerce users to sign into the e-commerce site, additional configuration is required to enable site authentication via Azure Active Directory business-to-consumer (B2C). For instructions, see [Set up a B2C tenant in Commerce](set-up-b2c-tenant.md).
 
 ## Troubleshooting
 
