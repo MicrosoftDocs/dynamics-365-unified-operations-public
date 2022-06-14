@@ -4,7 +4,7 @@
 title: One Version service updates FAQ
 description: This article provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: laneswenka
-ms.date: 05/03/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -165,17 +165,17 @@ All additional sandbox environments will be updated during the same update windo
 
 All environments will be updated to version N. 
 
-### What if default sandbox environment is manually updated to the exact same version as the automatic update version? 
+### What if the default sandbox environment is manually updated to the exact same version as the automatic update version? 
 
-Automatic updates for production environment, and all additional sandbox environments will be updated to the current N version.  
+Automatic updates for the production environment and all additional sandbox environments will be updated to the current N version.  
  
-Default sandbox environment update will be cancelled. 
+The default sandbox environment update will be cancelled. 
 
-### What if default sandbox environment is manually updated to a higher version than the automatic update version?
+### What if the default sandbox environment is manually updated to a higher version than the automatic update version?
 
 Automatic updates for the default sandbox environment, production environment, and all additional sandbox environments will be canceled. 
 
-### What if default sandbox environment is manually updated to a lower version than the automatic update version? 
+### What if the default sandbox environment is manually updated to a lower version than the automatic update version? 
  
 The default sandbox environment, production environment, and all additional sandbox environments will be updated to the current N version.
 
