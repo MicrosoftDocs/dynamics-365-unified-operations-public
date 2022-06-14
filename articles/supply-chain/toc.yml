@@ -617,8 +617,6 @@
           href: asset-management/asset-management-mobile-workspace.md
       - name: Integrate asset management with Dynamics 365 Guides
         href: asset-management/asset-management-guides-integration.md
-    - name: Data management
-      items:
       - name: Target entities
         href: asset-management/data-management/target-entities.md
     - name: Cost accounting
