@@ -233,7 +233,7 @@ The process of implementing a business event contract involves extending the **B
     }
     ```
 
-    The **initialize** method is responsible for setting the private state of the business event contract class, based on data that is provided through the static constructor method. It should be protected so that a CoC class extension can be used to extend the contract class.
+    The **initialize** method is responsible for setting the private state of the business event contract class, based on data that is provided through the static constructor method. It should be protected so that a [Chain of Command (CoC)](../../extensibility/method-wrapping-coc.md) class extension can be used to extend the contract class.
 
 4. Implement a static constructor method.
 
@@ -448,7 +448,7 @@ public str parmMyModelCustomerClassification(str _customerClassification = custo
 
 Here is the complete implementation of the extended business contract.
 
-Note to follow the [standard naming guidelines for extensions](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/extensibility/naming-guidelines-extensions) when creating your class to avoid collisions with your newly added fields.
+Note to follow the [standard naming guidelines for extensions](../../extensibility/naming-guidelines-extensions.md) when creating your class to avoid collisions with your newly added fields.
 
 ```xpp
 [ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEventContract))]
