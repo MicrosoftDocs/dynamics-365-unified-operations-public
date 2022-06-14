@@ -1,5 +1,60 @@
 {
-  "redirections": [
+  "redirections": [    {
+      "source_path": "articles/finance/localizations/can-set-up-gst-hst-internet-file-transfer.md",
+      "redirect_url": "can-gst-hst-internet-file-transfer",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-configuration-rcs.md",
+      "redirect_url": "e-invoicing-set-up-rcs?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md",
+      "redirect_url": "e-invoicing-create-azure-key-vault-azure-portal?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md",
+      "redirect_url": "e-invoicing-submit-electronic-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-ita-get-started.md",
+      "redirect_url": "e-invoicing-ita-fatturapa-get-started",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-service-administration.md",
+      "redirect_url": "e-invoicing-service-overview?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/emea-aut-vat-statement-details.md",
+      "redirect_url": "localizations/emea-aut-vat-declaration-austria",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/emea-cze-vat-statement-details.md",
+      "redirect_url": "emea-cze-vat-declaration-tax-declaration-model",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/emea-de-vat-declaration.md",
+      "redirect_url": "emea-deu-vat-declaration-germany",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/emea-nl-vat-declaration.md",
+      "redirect_url": "emea-nl-vat-declaration-netherlands",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/analytical-workspaces.md",
+      "redirect_url": "power-bi-home-page?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+
     {
       "source_path": "articles/fin-ops-core/dev-itpro/deployment/france-local-deployment.md",
       "redirect_url": "deployment-options-geo",
