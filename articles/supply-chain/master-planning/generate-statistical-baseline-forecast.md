@@ -74,11 +74,8 @@ If the forecast is not generated for a big set of items, but, for example, for o
 ## Additional resources
 
 - [Demand forecasting setup](demand-forecasting-setup.md)
-
 - [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
-
 - [Authorize an adjusted forecast](authorize-adjusted-forecast.md)
-
-- [Demand Forecasting with Azure Machine Learning Series](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
+- [Webinar: Demand Forecasting with Azure Machine Learning Series](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
