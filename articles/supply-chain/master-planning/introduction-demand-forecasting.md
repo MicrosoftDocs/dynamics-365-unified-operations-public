@@ -107,5 +107,7 @@ Note that the demand forecast UOM does not have to have any specific meaning. It
 
 [Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
 
+[Demand Forecasting with Azure Machine Learning Series](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
