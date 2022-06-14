@@ -46,8 +46,8 @@ The following prerequisites must be in place before you can provision your Comme
 
 - You have access to the Microsoft Dynamics Lifecycle Services (LCS) portal.
 - You are an existing Microsoft Dynamics 365 partner or customer and have an implementation project already created and available to use in LCS.  
-- You have created an Azure Active Directory (Azure AD) security group that can be used as a Commerce system admin group, and you have its ID available.
-- You have created an Azure AD security group that can be used as a ratings and reviews moderator group, and you have its ID available. (This security group can be the same as the Commerce system admin group.)
+- You have created an Azure Active Directory (Azure AD) security group that can be used as a Commerce system administrator group, and you have its ID available.
+- You have created an Azure AD security group that can be used as a ratings and reviews moderator group, and you have its ID available. (This security group can be the same as the Commerce system administrator group.)
 - You have deployed a headquarters instance within LCS. For more information, see [Deploy a new environment](/dynamics365/fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure).
 
 Note that this list isn't exhaustive. If you experience any issues, reach out to your Microsoft partner contact for assistance.
@@ -67,7 +67,7 @@ To initialize the CSU, follow these steps.
 1. In the **REGION** field, select the region that is the same or close to the region that you deployed the environment to.
 1. In the **Version** drop-down list, select the latest version available.
 1. Select **Initialize**.
-1. In the warning dialog box that appears for you to confirm the Commerce Scale Unit initialization, select **Yes**. The CSU has now been queued for provisioning.
+1. In the warning dialog box that asks you to confirm the Commerce Scale Unit initialization, select **Yes**. The CSU has now been queued for provisioning.
 1. Before you continue, ensure that the status of your CSU is **SUCCESS**. Initialization takes approximately two to five hours.
 
 If you can't find the **Manage** link in the environment details view, reach out to your Microsoft contact for assistance.
