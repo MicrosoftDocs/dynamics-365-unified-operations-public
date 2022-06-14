@@ -75,11 +75,11 @@ Follow these steps to install the add-in so that you can use Global Inventory Ac
 1. Go to **Power Platform Integration**, and select **Setup**.
 1. In the **Power platform environment setup** dialog box, select the checkbox, and then select **Setup**. Typically, setup takes between 60 and 90 minutes.
 1. After the setup of the Microsoft Power Platform environment is complete, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then install the Global Inventory Accounting add-in by doing the following steps:
-   - Select the environment where you want to install the add-in.
-   - Select **Dynamics 365 apps**.
-   - Select **Install App**.
-   - Select **Dynamics 365 Global Inventory Accounting**.
-   - Select **Next** to install.
+   1. Select the environment where you want to install the add-in.
+   1. Select **Dynamics 365 apps**.
+   1. Select **Install App**.
+   1. Select **Dynamics 365 Global Inventory Accounting**.
+   1. Select **Next** to install.
 1. Go back to LCS environment. On the **Environment add-ins** FastTab, select **Install a new add-in**.
 1. Select **Global inventory accounting**.
 1. Follow the installation guide, and agree to the terms and conditions.
