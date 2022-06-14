@@ -4,7 +4,7 @@
 title: Business events developer documentation
 description: This article walks you through the development process and best practices for implementing business events.
 author: jaredha
-ms.date: 02/09/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -422,9 +422,9 @@ internal final class CustFreeTextInvoicePostedBusinessEventContractMyModel_Exten
 }
 ```
 
-#### Step 2: Extend the initialize method through CoC
+#### Step 2: Extend the initialize method through Chain of Command
 
-Create a CoC extension of the **initialize** method that initializes the value of the private contract.
+Create a Chain of Command extension of the **initialize** method that initializes the value of the private contract.
 
 ```xpp
 protected void initialize(CustInvoiceJour _custInvoiceJour)
@@ -434,7 +434,7 @@ protected void initialize(CustInvoiceJour _custInvoiceJour)
     customerClassification = 'StandardCustomer';
 }
 ```
-#### Step 3: Add parm methods for additional fields you want to add to the payload
+#### Step 3: Add parm methods for additional fields that you want to add to the payload
 
 ```xpp
 // contract extension data members
@@ -448,7 +448,7 @@ public str parmMyModelCustomerClassification(str _customerClassification = custo
 
 Here is the complete implementation of the extended business contract.
 
-Note to follow the [standard naming guidelines for extensions](../extensibility/naming-guidelines-extensions.md) when creating your class to avoid collisions with your newly added fields.
+Follow the [standard naming guidelines for extensions](../extensibility/naming-guidelines-extensions.md) when creating your class to avoid collisions with your newly added fields.
 
 ```xpp
 [ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEventContract))]
