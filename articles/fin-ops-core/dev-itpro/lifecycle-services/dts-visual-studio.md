@@ -3,13 +3,13 @@
 
 title: Dynamics 365 Translation Service Visual Studio extension (Public preview)
 description: This article explains how to integrate the Microsoft Dynamics 365 Translation Service (DTS) extension for Visual Studio into your Visual Studio workflow.
-author: abmotgi
+author: arianapadilla 
 ms.date: 06/15/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: abmotgi
+ms.author: arianap
 ms.search.validFrom: 2021-12-13
 
 ---
@@ -121,13 +121,12 @@ On the **Tools** menu, select **Dynamics 365 Translation Services**, and then se
 | Target Language    | Yes | Select the language of the target files and upload the file or folder. |
 | Output Path        | Yes | Select the output path. |
 
-![Align with DTS dialog box.](media/dts-vs-alignment.png)
+![Dialog box where you can configure the alignment request.](media/dts-vs-alignment.png)
 
 When you have finished configuring the alignment request, select **Submit** to send it to DTS. You will be notified that the process has started.
 
-![Align with DTS dialog box.](media/dts-vs-alignmentinprocess.png)
-
+![You will be notified that the process has started.](media/dts-vs-alignmentinprocess.png)
 
 The **Output** window will show the status of the request. When the request is completed, you will see a window stating that output files are available.
 
-![Align with DTS dialog box.](media/dts-vs-alignedfiles.png)
+![Output files are available.](media/dts-vs-alignedfiles.png)
