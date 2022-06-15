@@ -1,5 +1,55 @@
 {
-  "redirections": [
+  "redirections": [    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/er-prepare-application-specific-metadata.md",
+      "redirect_url": "tasks/prepare-application-metadata-rcs?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/parse-incoming-documents-excel.md",
+      "redirect_url": "er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-in-excel-format",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/parse-incoming-documents-json-format.md",
+      "redirect_url": "er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-in-json-format ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/parse-incoming-electronic-documents.md",
+      "redirect_url": "er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-to-update-application-data",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md",
+      "redirect_url": "er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-in-csv-format",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/create-model-map-config-er.md",
+      "redirect_url": "er-define-model-mapping-select-data-sources-2016-11?toc=%2Fdynamics365%2Ffinance%2Ftoc.json ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/design-config-import-app-data-er.md",
+      "redirect_url": "../er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-to-update-application-data ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/design-config-import-csv-er.md",
+      "redirect_url": "../er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-in-csv-format ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/er-modify-format-by-reapplying-microsoft-excel-template-july-2017.md",
+      "redirect_url": "../modify-electronic-reporting-format-reapply-excel-template?toc=%2Fdynamics365%2Ffinance%2Ftoc.json. ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/model-map-aggregate-calculations-er.md",
+      "redirect_url": "../er-groupby-data-sources?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+
     {
       "source_path": "articles/finance/localizations/can-set-up-gst-hst-internet-file-transfer.md",
       "redirect_url": "can-gst-hst-internet-file-transfer",
