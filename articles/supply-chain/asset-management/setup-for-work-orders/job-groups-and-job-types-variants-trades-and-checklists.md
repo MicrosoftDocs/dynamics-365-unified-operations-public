@@ -248,7 +248,7 @@ You can set up a batch job to update maintenance job type default references at 
 
 After you've created the required maintenance job type default combinations, you can use the **All assets** page to get an overview of the current maintenance job type default that is related to a specific asset. The overview shows all maintenance job type default combinations that can be used on the asset type that is selected for the asset. These combinations include combinations that have variations of maintenance job type variants and maintenance job trades.
 
-1. Select **Asset management** \> **Common** \> **Assets** \> **All assets** or **Active assets**.
+1. Select **Asset management** \> **Assets** \> **All assets** or **Active assets**.
 2. In the list, select the asset to see an overview of maintenance job type combinations for.
 3. On the Action Pane, on the **General** tab, in the **Related information** group, select **Maintenance job types**.
 

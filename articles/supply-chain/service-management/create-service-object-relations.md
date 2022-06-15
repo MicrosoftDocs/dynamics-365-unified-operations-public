@@ -37,7 +37,7 @@ This article describes how to create service object relations for a service agre
 
 Use the following steps to create a service object relation for a service agreement:
 
-1.  Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+1.  Click **Service management** \> **Service agreements** \> **Service agreements**.
 
 2.  In the **Service agreements** list, select an existing service agreement, or click **New** to create a new service agreement.
 
@@ -51,7 +51,7 @@ Use the following steps to create a service object relation for a service agreem
 
 Use the following steps to create a service object relation for a service order:
 
-1.  Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.
+1.  Click **Service management** \> **Service orders** \> **Service orders**.
 
 2.  In the **Service orders** list, select an existing service order, or create a new service order.
 

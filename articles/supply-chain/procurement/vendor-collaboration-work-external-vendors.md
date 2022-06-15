@@ -35,9 +35,6 @@ The **Vendor collaboration** module is targeted at vendors who don't have electr
 
 For more information about what external vendors can do in the vendor collaboration interface, see [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md).
 
-> [!NOTE]
-> The information about vendor collaboration in this article applies only to the current version of Supply Chain Management. In Microsoft Dynamics AX 7.0 (February 2016) and Microsoft Dynamics AX application version 7.0.1 (May 2016), you collaborate with vendors by using the **Vendor portal** module. For information about the **Vendor portal** module, see [Collaborate with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md).
-
 For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
 
 ## Defining the information that is shown to vendors when they respond to POs

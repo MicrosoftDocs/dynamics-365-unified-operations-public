@@ -57,7 +57,7 @@ After you've created the maintenance downtime reason codes that you want to use,
 
 ## Create maintenance downtime registrations
 
-1. Click **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
+1. Click **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
 
 2. Select the work order, and then, on the **Work order** tab, in the **Asset** group, select **Maintenance downtime**.
 

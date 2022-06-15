@@ -46,7 +46,7 @@ To be able to work with functional locations, you start by creating two "categor
 
 When you use functional locations, start by creating one default location to be used when you create new assets. This functional location is the one you select in **Asset management** > **Setup** > **Asset management parameters** > **Assets** link > **Default functional location** field. The default functional location can be used when you create new assets, and you have not yet set up a functional location structure for those assets.
 
-1. Select **Asset management** > **Common** > **Functional locations** > **All Functional locations**.  
+1. Select **Asset management** > **Functional locations** > **All Functional locations**.  
 2. In **All functional locations**, select **New**.
 3. Insert an ID in the **Functional location** field, for example, "0000" or "Default", to indicate that this is a special functional location.
 4. Insert name for the default functional location in the **Name** field.
@@ -58,7 +58,7 @@ When you use functional locations, start by creating one default location to be 
 
 The following procedure describes how you create the functional locations required for maintenance management in your company.
 
-1. Select **Asset management** > **Common** > **Functional locations** > **All Functional locations**. You can create a functional location from grid view or details view.
+1. Select **Asset management** > **Functional locations** > **All Functional locations**. You can create a functional location from grid view or details view.
 2. Select the **New** button.
 3. Insert an ID in the **Functional location** field.
 4. Insert a name for the functional location in the **Name** field.

@@ -19381,6 +19381,51 @@
       "source_path": "articles/supply-chain/troubleshooting/warehousing/you-cannot-cancel-wo.md",
       "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/you-cannot-cancel-work-on-user-error",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/configure-security-vendor-portal-users.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/manage-vendor-collaboration-users",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/collaborate-vendors-vendor-portal.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/vendor-collaboration-work-external-vendors",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/cost-management/cost-calculation-level",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cost-management/tasks/calculate-bom-single-level-structure-2016-02.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/cost-management/cost-calculation-level",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/cluster-picking-item-confirmation.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/set-up-cluster-picking",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/consolidate-shipments.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/about-shipment-consolidation-policies",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/configure-linked-products.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/pim/product-information",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/create-product.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/pim/product-information",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/release-product-product-master-legal-entities.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/pim/product-information",
+      "redirect_document_id": "false"
     }
   ]
 }
