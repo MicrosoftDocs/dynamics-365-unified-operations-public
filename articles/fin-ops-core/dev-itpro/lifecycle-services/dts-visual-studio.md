@@ -1,34 +1,33 @@
 ---
 # required metadata
 
-title: Dynamics 365 Translation Service Visual Studio extension (Public Preview)
+title: Dynamics 365 Translation Service Visual Studio extension (Public preview)
 description: This article explains how to integrate the Microsoft Dynamics 365 Translation Service (DTS) extension for Visual Studio into your Visual Studio workflow.
 author: abmotgi
-ms.date: 12/13/2021
+ms.date: 06/15/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
-ROBOTS: NOINDEX, NOFOLLOW
 ms.search.region: Global
 ms.author: abmotgi
 ms.search.validFrom: 2021-12-13
 
 ---
 
-# Dynamics 365 Translation Service Visual Studio extension (Public Preview)
+# Dynamics 365 Translation Service Visual Studio extension (Public preview)
 
 [!include[banner](../includes/banner.md)]
 [!include[preview banner](../includes/preview-banner.md)]
 
-The Microsoft Dynamics 365 Translation Service (DTS) extension for Visual Studio lets Finance & Operations (F&O) developers perform actions in DTS directly from their Visual Studio integrated development environment (IDE). For example, you can translate user interface (UI) files and regenerate the translations. For more information about the supported functionality, see [Dynamics 365 Translation Service overview](translation-service-overview.md).
+The Microsoft Dynamics 365 Translation Service (DTS) extension for Visual Studio lets finance and operations developers perform actions in DTS directly from their Visual Studio integrated development environment (IDE). For example, you can translate user interface (UI) files and regenerate the translations. For more information about the supported functionality, see [Dynamics 365 Translation Service overview](translation-service-overview.md).
 
-To use the DTS Visual Studio extension, you must have access to Microsoft Dynamics Lifecycle Services (LCS). Additionally, the extension is intended primarily to support the development workflow for Finance and Operations apps in Visual Studio. For more information, see [Development and administration for Finance and Operations apps](/dynamics365/fin-ops-core/dev-itpro/). 
+To use the DTS Visual Studio extension, you must have access to Microsoft Dynamics Lifecycle Services (LCS). Additionally, the extension is intended primarily to support the development workflow for finance and operations apps in Visual Studio. For more information, see [Development and administration for finance and operations apps](/dynamics365/fin-ops-core/dev-itpro/). 
 
 ## Installing the extension
 
 You can download the Visual Studio extension from [Visual Studio Marketplace](https://marketplace.visualstudio.com/).
 
-Download and install the extension to your Visual Studio development environment. After you install the extension, the **Tools** menu should include new commands that were added from DTS. This extension only supports F&O app localization.
+Download and install the extension to your Visual Studio development environment. After you install the extension, the **Tools** menu should include new commands that were added from DTS. This extension only supports finance and operations app localization.
 
 ## Using the extension
 
@@ -40,7 +39,7 @@ Before you can start to use the DTS Visual Studio extension, you must authentica
 
 The DTS commands can be accessed in two ways:
 
-- Select **Tools** on the main toolbar, then select **Dynamics 365 Translation Service**, and then select a DTS command on the menu. Five DTS commands are available: **Translate**, **Regenerate**, **Download translation result**, **Align**, and **Log out**.
+- Select **Tools** on the main toolbar, select **Dynamics 365 Translation Service**, and then select a DTS command from the menu. Five DTS commands are available: **Translate**, **Regenerate**, **Download translation result**, **Align**, and **Log out**.
 
     ![Tools menu in the Visual Studio IDE.](media/dts-vs-tools-menu.png)
 
@@ -64,7 +63,7 @@ The following table describes the fields in the **Translate with Dynamics 365 Tr
 
 | Field              | Required | Description |
 |--------------------|----------|-------------|
-| Region             | Yes | Leave as Default unless it is required to change. |
+| Region             | Yes | Leave the default value, unless it is required to change. |
 | Request name       | Yes | Enter a name for the request. |
 | Product            | Yes | Select the product type. |
 | Project            | Yes | Select the project that contains the resource files. |
@@ -76,11 +75,11 @@ The following table describes the fields in the **Translate with Dynamics 365 Tr
 
 ![Translate with DTS dialog box.](media/dts-vs-translate.png)
 
-When you've finished configuring the translation request, select **Submit** to send it to DTS. You will receive a confirmation window stating next steps.
+When you've finished configuring the translation request, select **Submit** to send it to DTS. You will receive a confirmation window stating the next steps.
 
 ![Confirmation window for the DTS extension.](media/dts-vs-confirmation.png)
 
-After a short time, the Output window will show the status of the request (unless Create custom MT option is selected). 
+After a short time, the Output window will show the status of the request (unless the **Create custom MT?** option is selected). 
 
 ![Output window for the DTS extension.](media/dts-vs-outputwindow.png)
 
@@ -117,8 +116,8 @@ On the **Tools** menu, select **Dynamics 365 Translation Services**, and then se
 
 | Field              | Required | Description |
 |--------------------|----------|-------------|
-| Region             | Yes | Leave as Default unless it is required to change. |
-| Source Language    | Yes | Select the language of the source files.  Select a label file or folder containing the label files. |
+| Region             | Yes | Leave the default value, unless it is required to change. |
+| Source Language    | Yes | Select the language of the source files. Select a label file or folder containing the label files. |
 | Target Language    | Yes | Select the language of the target files and upload the file or folder. |
 | Output Path        | Yes | Select the output path. |
 
