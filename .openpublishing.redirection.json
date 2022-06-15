@@ -6,6 +6,16 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/commerce/cpe-overview.md",
+      "redirect_url": "provisioning-guide",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/cpe-faq.md",
+      "redirect_url": "provisioning-guide",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/localizations/e-invoicing-get-started.md",
       "redirect_url": "e-invoicing-working-globalization-features",
       "redirect_document_id": "false"
