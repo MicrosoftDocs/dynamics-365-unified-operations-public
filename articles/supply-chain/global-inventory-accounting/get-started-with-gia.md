@@ -85,9 +85,10 @@ Follow these steps to install the add-in so that you can use Global Inventory Ac
 1. Follow the installation guide, and agree to the terms and conditions.
 1. Select **Install**.
 1. On the **Environment add-ins** FastTab, you should see that Global Inventory Accounting is being installed. After a few minutes, the status should change from *Installing* to *Installed*. (You might have to refresh the page to see this change.) At that point, Global Inventory Accounting is ready to use.
-1. If the default language of your Dataverse installation isn't English, follow these steps:
-    1. Go to **Advanced Setting \> Administration \> Languages**.
-    1. Select *English* (*LanguageCode=1033*), and then select **Apply**.
+
+If the default language of your Dataverse installation isn't English, follow these steps:
+1. Go to **Advanced Setting \> Administration \> Languages**.
+1. Select *English* (*LanguageCode=1033*), and then select **Apply**.
 
 ## Set up the integration
 
