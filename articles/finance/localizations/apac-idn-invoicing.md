@@ -68,7 +68,7 @@ Tax invoice numbers are generated according to the structure of the tax serial n
 
 ![Structure of tax serial numbers.](media/apac-idn-structure-of-tax-invoice-number.png)
 
-## Set up tax invoice numbers
+### Set up tax invoice numbers
 
 Follow these steps to create invoice numbers for one period at a time for a company that has only one branch.
 
@@ -216,13 +216,13 @@ In the list, select a configuration version, and then select **Edit** or **View*
 
 You can review the configuration and customize it as you require. Use the **Format designer** page to edit and view the Electronic reporting (ER) format file configurations. For more information, see [Create electronic document configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md).
 
-### Import the Invoices communication Dataverse mapping configuration
+#### Import the Invoices communication Dataverse mapping configuration
 
 1. Sign in to your RCS account.
 1. On the RCS home page, and select **Electronic reporting**.
 2. Select **Repositories**, and then find and import the **Invoices communication Dataverse mapping** configuration.
 
-### Create a connected application for Dataverse
+#### Create a connected application for Dataverse
 
 1. Sign in to your RCS account.
 2. On the RCS home page, select **Electronic reporting**.
@@ -231,7 +231,7 @@ You can review the configuration and customize it as you require. Use the **Form
 
     - **Name** – Enter the name of the Dataverse instance. For example, enter **UAT Dataverse**.
     - **Type** – Select **Dataverse**.
-    - **Application** – Enter the Dataverse endpoint URL. You can find this URL on the Customers LCS application page.
+    - **Application** – Enter the Dataverse endpoint URL. You can find this URL on the customers Microsoft Dynamics Lifecycle Services (LCS) application page.
     - **Tenant** – Enter the customer tenant.
     - **Custom URL** – Enter the Dataverse endpoint URL followed by **api/data/v9.1/**. For example, enter `https://operations-dgxtest-uat.crm.dynamics.com/api/data/v9.1/`.
 
