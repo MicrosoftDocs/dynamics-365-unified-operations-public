@@ -58,9 +58,7 @@ To import vendor catalog data, you must complete the following tasks:
 
 4. Configure workflow for catalog import. Create a CMR file template and share this with your vendor.
 
-5. Select **Procurement and sourcing** \> **Common** \> **Catalogs** \> **Vendor
-    catalogs** to create a vendor catalog. The catalog maintenance request (CMR) files that
-    you receive from your vendor are grouped in this catalog. 
+5. Select **Procurement and sourcing** \> **Catalogs** \> **Vendor catalogs** to create a vendor catalog. The catalog maintenance request (CMR) files that you receive from your vendor are grouped in this catalog.
 
 6. Upload the CMR file.
 

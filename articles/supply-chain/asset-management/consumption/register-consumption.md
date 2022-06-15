@@ -40,7 +40,7 @@ In some cases, you may be able to add or delete forecast lines on a work order. 
 >[!NOTE]
 >It is possible to set up automatic posting of journals on a work order lifecycle state. Refer to [Work order lifecycle states](../setup-for-work-orders/work-order-lifecycle-states.md) for more information.
 
-1. Click **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.
+1. Click **Asset management** > **Work orders** > **All Work orders** or **Active work orders**.
 
 2. Select the work order, and click **Journals**.
 
@@ -66,7 +66,7 @@ The screenshot below shows an example of hour and item registrations on a work o
 
 If a work order contains several work order jobs, you can register work hours using the **Split hours** functionality, meaning one hour registration line can be distributed evenly on each work order job.
 
-1. Click **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.
+1. Click **Asset management** > **Work orders** > **All Work orders** or **Active work orders**.
 
 2. Select the work order and click **Journals**.
 

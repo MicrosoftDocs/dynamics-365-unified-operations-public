@@ -35,9 +35,6 @@ The vendor collaboration interface exposes a limited set of information about pu
 
 This article explains how to set up vendor collaboration in Dynamics 365 Supply Chain Management. It also explains how to set up a workflow to provision new vendor collaboration users, and how to manage the security roles for those users.
 
-> [!NOTE]
-> The information about the setup of security roles for vendor collaboration applies only to the current version of Finance and Operations. In Microsoft Dynamics AX 7.0 (February 2016) and Microsoft Dynamics AX application version 7.0.1 (May 2016), you collaborate with vendors by using the **Vendor portal** module. For information about user permissions for the Vendor portal in Microsoft Dynamics AX, see [Vendor portal user security](configure-security-vendor-portal-users.md).
-
 ## Set up vendor collaboration security roles
 
 A procurement professional or a vendor that has enough permissions can request that a contact person be provisioned as a user by enabling **Provision vendor user** on the contact person record. During the provisioning process, user permissions are selected for the new external user, and the new vendor user request is submitted. It's important that you correctly set up the user permissions that are available for selection in the vendor user request. Otherwise, vendors might be granted access to information that they should not have access to in Supply Chain Management.

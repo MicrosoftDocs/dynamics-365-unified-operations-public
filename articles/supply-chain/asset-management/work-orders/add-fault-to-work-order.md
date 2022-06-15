@@ -37,7 +37,7 @@ ms.dyn365.ops.version: 10.0.5
 
 You can add faults that were set up in the fault designer to a work order. One or more fault records must be connected to the asset types that are used for the asset that is selected in the work order. For more information about the setup, see [Fault management](../setup-for-work-orders/fault-management.md).
 
-1. Select **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.
+1. Select **Asset management** > **Work orders** > **All Work orders** or **Active work orders**.
 
 2. Select the work order to make a fault registration on, and then, on the Action Pane, on the **Work order** tab, in the **Asset** group, select **Asset fault**.
 
@@ -71,7 +71,7 @@ On the **Asset faults** list page, you can get an overview of all faults that ha
 
 From the **All assets** list page, you can print an asset fault report that shows all fault registrations and a graphical overview of fault statistics.
 
-1. Select **Asset management** > **Common** > **Assets** > **All assets**.
+1. Select **Asset management** > **Assets** > **All assets**.
 
 2. Select the asset to print a fault report for.
 

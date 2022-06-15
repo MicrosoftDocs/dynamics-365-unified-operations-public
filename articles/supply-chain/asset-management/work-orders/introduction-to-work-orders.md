@@ -52,15 +52,15 @@ Work orders can be created in the following ways:
 
 ## All work orders
 
-Select **Asset management** > **Common** > **Work orders** > **All work orders** to open the **All work orders** list page. This page shows all work orders and some of the information that is related to each.
+Select **Asset management** > **Work orders** > **All work orders** to open the **All work orders** list page. This page shows all work orders and some of the information that is related to each.
 
 The illustration below shows an example of the **All work orders** list page.
 
 ![Figure 1.](media/01-work-orders.png)
 
-To view a list of only active work orders, select **Asset management** > **Common** > **Work orders** > **Active work orders**. 
+To view a list of only active work orders, select **Asset management** > **Work orders** > **Active work orders**. 
 
-To view a list of work order jobs that contain assets that are installed on functional locations that you're related to as a worker, select **Asset management** > **Common** > **Work orders** > **My functional location work order maintenance jobs**. (The relation between workers and functional locations is set up on the **Workers** page. For more information, see [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).)
+To view a list of work order jobs that contain assets that are installed on functional locations that you're related to as a worker, select **Asset management** > **Work orders** > **My functional location work order maintenance jobs**. (The relation between workers and functional locations is set up on the **Workers** page. For more information, see [Maintenance workers and worker groups](../setup-for-objects/workers-and-worker-groups.md).)
 
 Here are some ways that you can use the **All work orders** page:
 

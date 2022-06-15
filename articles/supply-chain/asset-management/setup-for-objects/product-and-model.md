@@ -58,7 +58,7 @@ This article explains how to set up asset manufacturers and related models in As
 
 ## Select a manufacturer and model on an object
 
-1. Select **Asset management** \> **Common** \> **Assets** \> **All assets**.
+1. Select **Asset management** \> ***Assets** \> **All assets**.
 2. In the **Asset** column, select the link for the asset. The **Details** page appears.
 3. Select **Edit**.
 4. On the **General** FastTab, select values in the **Manufacturer** and **Model** fields.
