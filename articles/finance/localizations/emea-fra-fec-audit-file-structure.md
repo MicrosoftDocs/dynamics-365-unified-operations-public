@@ -325,7 +325,7 @@ The value of `Sens` field is calculated as follows:
 The value of `EcritureLet` field is reported for general ledger transactions of *Customer balance* or *Vendor balance* posting type and collected from several data sources in Finance: 
 
 1.	In case when `JournalCategory` field of the `GeneralJournalEntry` table record is Payment, then the payment voucher is represented in `EcritureLet` field, the same value as in `EcritureNum` filed of the report.
-2.	For other values of `JournalCategory` field of the `GeneralJournalEntry` table record, Finance represents value of `OffsetTransVoucher` field from `VendSettlement` table or `CustSettlement` table related to the `VendTrans` table or `CustTrans` table by `RecId`, `AccountNum` and `DataAreaID` fields in case when there is a record in `VendSettlement` table or `CustSettlement` table within the reporting period. In the user interface of Finance this field value can be observed as **Voucher** field of general ledger transactions posted for the latest within the reporting period settled payment.
+2.	For other values of `JournalCategory` field of the `GeneralJournalEntry` table record, Finance represents value of `OffsetTransVoucher` field from `VendSettlement` table or `CustSettlement` table related to the `VendTrans` table or `CustTrans` table by `RecId`, `AccountNum` and `DataAreaID` fields in case when there is a record in `VendSettlement` table or `CustSettlement` table within the reporting period. In the user interface of Finance this field value can be observed as **Voucher** field of general ledger transactions posted for the latest within the reporting period settled payment. If several vouchers are included in settlement, they will be separated by a coma.
 
 ### **DateLet** - lettering date
 
