@@ -25,7 +25,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
-# Page version history and revert
+# Page version history and restore
 
 [!include [banner](includes/banner.md)]
 
