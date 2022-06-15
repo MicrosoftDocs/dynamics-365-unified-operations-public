@@ -458,7 +458,7 @@
             href: accounts-receivable/sb-revenue-split.md
           - name: Periodic tasks
             href: accounts-receivable/sb-periodic-tasks.md
-        - name: Revenue and expense deferrals
+        - name: Revenue and expense  deferrals
           items:
           - name: Set up revenue and expense deferrals
             href: accounts-receivable/sb-deferrals.md
