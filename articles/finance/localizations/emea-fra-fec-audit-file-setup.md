@@ -42,3 +42,6 @@ Starting in version 10.0.20, to use the **FEC audit file (FR)** format, you mus
 1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2. On the **Ledger** tab, on the **Electronic reporting** FastTab, in the **Ledger transactions export** section, in the **Ledger transactions export** field, select the **FEC audit file (FR)** format.
 3. Save the new setting.
+
+> [!NOTE]
+> If you introduce a customization to the FEC electronic reporting configurations and do not use **Ledger transactions export** field in **General ledger parameters** to predefine the format that must be used to generate FEC, we recommend creating customized electronic reporting format via *derive* function from **FEC audit file (FR)** format in **Electronic reporting** workspace so that new customized format would be a child configuration for **FEC audit file (FR)**. For more information about how to create a custom format, see [Create a custom format](https://review.docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report?toc=%2Fdynamics365%2Ffinance%2Ftoc.json&branch=main#DeriveProvidedFormat).
