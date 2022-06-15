@@ -275,7 +275,7 @@ If troubleshooting is needed, ensure that it’s possible to sign in to the curr
 
 ### Common issues with sending email
 
-There are a few standard processes that can help you troubleshoot the configuration of email settings. 
+There are some standard processes that can help you troubleshoot the configuration of email settings. 
 
 <table>
   <tr>
@@ -294,7 +294,7 @@ There are a few standard processes that can help you troubleshoot the configurat
     <th>Verify that the email batch process is running</th>
     <td>
       <ol>
-        <li>Go to <b>System administration > Periodic tasks > Email processing > Batch</b></li>
+        <li>Go to <b>System administration > Periodic tasks > Email processing > Batch</b>.</li>
         <li>Make sure that the <b>Batch processing</b> option is set to <b>Yes</b>.</li>
         <li>Review the recurrence of the email process:
           <ol>
@@ -315,7 +315,7 @@ There are a few standard processes that can help you troubleshoot the configurat
             <li>If the account is incorrect, you need to adjust settings such as user options, system templates, or organization templates, as needed.</li>
           </ul>
         </li>
-        <li>Verify that all email user accounts have been granted permission to <b>Send As</b> for the configured SMTP account (see the section titled <b>Verify all email accounts have appropriate permissions</b>).</li>
+        <li>Verify that all email user accounts have been granted permission to <b>Send As</b> for the configured SMTP account (see the section titled <b>Verify all email accounts have appropriate Send As permissions</b>).</li>
       </ol>
     </td>
   </tr>
@@ -349,7 +349,7 @@ There are a few standard processes that can help you troubleshoot the configurat
     <table>
       <tr>
         <th>Explanation</th>
-        <td>This issue may indicate an invalid or improperly set up mailbox in Office 365</td>
+        <td>This issue may indicate an invalid or improperly set up mailbox in Office 365.</td>
       </tr>
       <tr>
         <th>Fix</th>
@@ -391,7 +391,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
     <table>
       <tr>
         <th>Explanation</th>
-        <td>Your email failed to send because a recipient is using a single label domain, which is not supported by O365. Single label domains are DNS names that don't contain a suffix, such as .com, .corp, .net, or .org. For example, contoso would be an SLD. However, contoso.com, contoso.net, or contoso.local would not be an SLD.</td>
+        <td>Your email failed to send because a recipient is using a single label domain, which is not supported by Office 365. Single label domains are DNS names that don't contain a suffix, such as .com, .corp, .net, or .org. For example, contoso would be an SLD. However, contoso.com, contoso.net, or contoso.local would not be an SLD.</td>
       </tr>
       <tr>
         <th>Fix</th>
@@ -417,7 +417,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
     <table>
       <tr>
         <th>Explanation</th>
-        <td>An email failed to send because the SMTP user account requires additional criteria to be authenticated successfully. This may be because multifactor authentication is configured, which is not currently supported within the Finance and Operations apps.</td>
+        <td>An email failed to send because the SMTP user account requires additional criteria to be authenticated successfully. This may be because multifactor authentication is configured, which is not currently supported within the finance and operations apps.</td>
       </tr>
       <tr>
         <th>Fix</th>
@@ -443,7 +443,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
     <table>
       <tr>
         <th>Explanation</th>
-        <td>This is related to a migration from the .NET SMTP mail client (which is now obsolete) to MailKit per Microsoft recommendations. A result of this migration is a change in behavior regarding the handling of SMTP user name and password in situations where the mail server didn't support authentication. Previously, if an SMTP user name was provided but the server didn't support authentication, the .NET SMTP mail client would ignore the provided user name and password and continue without authentication. This behavior may have lead customers to the false belief they were using an authenticated mail server. With MailKit, if a user name is provided, authentication is required, which will trigger an error for mail servers that don't support authentication and will cause emails to fail to send.</td>
+        <td>This is related to a migration from the .NET SMTP mail client (which is now obsolete) to MailKit per Microsoft recommendations. A result of this migration is a change in behavior regarding the handling of SMTP user name and password in situations where the mail server didn't support authentication. Previously, if an SMTP user name was provided but the server didn't support authentication, the .NET SMTP mail client would ignore the provided user name and password and continue without authentication. This behavior may have led customers to the false belief they were using an authenticated mail server. With MailKit, if a user name is provided, authentication is required, which will trigger an error for mail servers that don't support authentication and will cause emails to fail to send.</td>
       </tr>
       <tr>
         <th>Fix</th>
@@ -473,7 +473,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
       <tr>
         <th>Fix</th>
-        <td>Clear and reenter the SMTP password on the [SMTP settings tab](#smtp-settings-tab) on the <b>Email parameters</b> page.</td>
+        <td>Clear and reenter the SMTP password on the <b>SMTP settings tab<b> on the <b>Email parameters</b> page.</td>
       </tr>
     </table>
 
@@ -486,7 +486,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
       <tr>
         <th>Fix</th>
-        <td>Ensure there are appropriate <b>Send As</b> permissions for the email account. For details, see <b>Verify all email accounts have appropriate Send as permissions</b>.
+        <td>Ensure there are appropriate <b>Send As</b> permissions for the email account. For details, see <b>Verify all email accounts have appropriate Send As permissions</b>.
       </tr>
     </table>
 
