@@ -37,3 +37,6 @@ To generate a compliant Fichier des écritures comptables (FEC) audit file in Mi
 
 > [!NOTE]
 > In France, changes aren't allowed to the description of main accounts and posted journals.
+
+> [!NOTE]
+> Use of the [One voucher](../general-ledger/one-voucher.md) functionality introduces a limitation on FEC reporting for some scenarios that are subject to FEC. Specifically, a bank statement scenario must be posted by using different vouchers for transactions that have different counteragent accounts. We recommend that you set the **Allow multiple transactions within one voucher** parameter on the **General ledger parameters** page to **No** in your legal entity if you post transactions that are part of the FEC report. 
