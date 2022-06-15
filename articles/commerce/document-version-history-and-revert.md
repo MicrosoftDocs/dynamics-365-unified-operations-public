@@ -1,8 +1,8 @@
 ---
  # required metadata
 
-title: Page version history and revert
-description: This article describes how to view version history for a page or fragment and revert/restore to older versions in Microsoft Dynamics 365 Commerce site builder.
+title: Page version history and restore
+description: This article describes how to view version history for a page or fragment and restore to older versions in Microsoft Dynamics 365 Commerce site builder.
 author: phinneyridge
 ms.date: 06/14/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to view version history for a page or fragment and revert/restore to older versions in Microsoft Dynamics 365 Commerce site builder.
+This article describes how to view version history for a page or fragment and restore to older versions in Microsoft Dynamics 365 Commerce site builder.
 
 Site builder's **visual page builder** interface for pages and fragments contains a button in the action bar, **Show history**, that will display a history of all versions and save activities for the page or fragment.  Authors can use this to view historical versions and restore a previous version of the document being edited.  To use this feature, follow these steps:
 
