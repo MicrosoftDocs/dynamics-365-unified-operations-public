@@ -37,7 +37,7 @@ If your company receives assets for repair or maintenance jobs from either inter
 
 ## Register asset loans on a maintenance request
 
-1. Select **Asset management** \> **Common** \> **Maintenance requests** \> **All maintenance requests** or **Active maintenance requests**.
+1. Select **Asset management** \> **Maintenance requests** \> **All maintenance requests** or **Active maintenance requests**.
 2. Select the maintenance request to register an asset loan on, and then select **Edit**.
 3. On the **Request** page, select **Send loan asset**.
 4. Select the asset, and enter the expected return date.
@@ -47,7 +47,7 @@ If your company receives assets for repair or maintenance jobs from either inter
 > - You can send a loan asset only if an asset of the same asset type is available.
 > - The asset that you loan must have an asset lifecycle state that allows it to be used as a loan asset, such as **InStorage**. When the asset loan is registered, the asset lifecycle state of the asset is automatically updated to, for example, **OnLoan**.
 
-To view a list of all the assets that you've loaned to other locations or customers, select **Asset management** \> **Common** \> **Asset loan** \> **All asset loans**. If the **Ended** check box is selected for an asset, the asset has been registered as returned to your company.
+To view a list of all the assets that you've loaned to other locations or customers, select **Asset management** \> **Asset loan** \> **All asset loans**. If the **Ended** check box is selected for an asset, the asset has been registered as returned to your company.
 
 ![Manage Maintenance Requests.](media/06-manage-maintenance-requests.png)
 
@@ -55,7 +55,7 @@ On the **Active asset loans** page, you can view a list of all the loan assets t
 
 ## Register loan assets as returned
 
-1. Select **Asset management** \> **Common** \> **Asset loan** \> **Active asset loans**.
+1. Select **Asset management** \> **Asset loan** \> **Active asset loans**.
 2. Select the asset loan to register as returned, and then select **Return asset loan**.
 3. In the **Returned** field, enter the date and time.
 4. Select **OK**.

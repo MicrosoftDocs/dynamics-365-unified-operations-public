@@ -45,7 +45,7 @@ After you've installed assets on a functional location, you can replace a parent
 
 ## Install an asset structure on a functional location
 
-1. Select **Asset management** \> **Common** \> **Functional locations** \> **All Functional locations** or **Active functional locations**.
+1. Select **Asset management** \> **Functional locations** \> **All Functional locations** or **Active functional locations**.
 2. Select the functional location to install an asset on.
 3. Select **Install asset**.
 

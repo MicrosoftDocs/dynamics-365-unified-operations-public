@@ -50,7 +50,7 @@ First, you set up the items to be used for creating assets from a purchase order
 
 ## Create assets from pending assets
 
-1. Click **Asset management** > **Common** > **Assets** > **Pending Assets**.
+1. Click **Asset management** > **Assets** > **Pending Assets**.
 2. You will see an updated list of the purchase orders based on the items selected in **Asset items**.
 3. You can filter the status of purchase orders to select at which lifecycle state the asset should be created. For example, you may only want to create assets when a product receipt has been posted on a purchase order.
 4. Select the **Reference number** link on a purchase order line to view detailed information about the item.

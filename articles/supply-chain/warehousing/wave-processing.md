@@ -65,9 +65,9 @@ To manually create a wave, follow these steps:
 1. Make sure that the relevant [Wave templates](wave-templates.md) aren't set to automatically create a wave for the warehouse and order types where you want to do so manually.
 1. Depending on the type of wave you want to create, do one of the following:
 
-    - Go to **Warehouse management** \> **Common** \> **Waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
-    - Go to **Warehouse management** \> **Common** \> **Waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
-    - Go to **Warehouse management** \> **Common** \> **Waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
+    - Go to **Warehouse management** \> **Outbound waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
+    - Go to **Warehouse management** \> **Outbound waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
+    - Go to **Warehouse management** \> **Outbound waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
 
 1. In the **Description** field, enter a short description of the wave. This should indicate what you are processing in the wave.
 
@@ -92,9 +92,9 @@ When a wave has been created but not yet released, you can manually specify what
 
 1. Depending on the type of wave to add lines to, do one of the following:
 
-    - Go to **Warehouse management** \> **Common** \> **Waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
-    - Go to **Warehouse management** \> **Common** \> **Waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
-    - Go to **Warehouse management** \> **Common** \> **Waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
+    - Go to **Warehouse management** \> **Outbound waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
+    - Go to **Warehouse management** \> **Outbound waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
+    - Go to **Warehouse management** \> **Outbound waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
 
 1. Select the wave. On the Action Pane, select one of the following:
 
@@ -126,9 +126,9 @@ To manually process a wave that has all of its required content, follow these st
 
 1. Depending on the type of wave to process, do one of the following:
 
-    - Select **Warehouse management** \> **Common** \> **Waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
-    - Select **Warehouse management** \> **Common** \> **Waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
-    - Select **Warehouse management** \> **Common** \> **Waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
+    - Select **Warehouse management** \> **Outbound waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
+    - Select **Warehouse management** \> **Outbound waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
+    - Select **Warehouse management** \> **Outbound waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
 
 1. Select the wave to process. On the Action Pane, select **Process**.
 
@@ -146,9 +146,9 @@ To release a wave manually, follow these steps:
 
 1. Depending on the type of wave to release, do one of the following:
 
-      - Select **Warehouse management** \> **Common** \> **Waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
-      - Select **Warehouse management** \> **Common** \> **Waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
-      - Select **Warehouse management** \> **Common** \> **Waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
+      - Select **Warehouse management** \> **Outbound waves** \> **Shipment waves** \> **All waves**. On the Action Pane, select **Wave**.
+      - Select **Warehouse management** \> **Outbound waves** \> **Production waves** \> **All production waves**. On the Action Pane, select **Production wave**.
+      - Select **Warehouse management** \> **Outbound waves** \> **Kanban waves** \> **All kanban waves**. On the Action Pane, select **Create wave**.
 
 1. Select the wave to release. On the Action Pane, select **Release wave**.
 
@@ -184,9 +184,9 @@ If needed, you can cancel a wave that has been processed. To cancel a wave, and 
 
 1. Depending on the type of wave to cancel, do one of the following:
 
-      - Go to **Warehouse management** \> **Common** \> **Waves** \> **Shipment waves** \> **All waves**.
-      - Go to **Warehouse management** \> **Common** \> **Waves** \> **Production waves** \> **All production waves**.
-      - Go to **Warehouse management** \> **Common** \> **Waves** \> **Kanban waves** \> **All kanban waves**.
+      - Go to **Warehouse management** \> **Outbound waves** \> **Shipment waves** \> **All waves**.
+      - Go to **Warehouse management** \> **Outbound waves** \> **Production waves** \> **All production waves**.
+      - Go to **Warehouse management** \> **Outbound waves** \> **Kanban waves** \> **All kanban waves**.
 
 1. Select the wave to cancel. On the Action Pane, on the **Work** tab, select **Cancel**.
 

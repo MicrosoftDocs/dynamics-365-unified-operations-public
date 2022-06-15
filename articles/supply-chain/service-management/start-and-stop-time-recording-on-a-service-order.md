@@ -35,7 +35,7 @@ Use this procedure to start and stop time recording for a service order for whic
 
 ## Start time recording
 
-1.  Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.
+1.  Click **Service management** \> **Service orders** \> **Service orders**.
 
 2.  Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Start**.
 
@@ -43,7 +43,7 @@ Use this procedure to start and stop time recording for a service order for whic
 
 ## Stop time recording
 
-1.  Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.
+1.  Click **Service management** \> **Service orders** \> **Service orders**.
 
 2.  Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Stop**.
 
