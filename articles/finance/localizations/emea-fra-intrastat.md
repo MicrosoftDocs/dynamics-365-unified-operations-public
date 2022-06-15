@@ -166,7 +166,7 @@ Go to **Tax** > **Setup** > **Foreign trade** > **Compression of Intrastat**, an
 
 ### Set up product parameters for the Intrastat declaration
 
-1. Go to **Product information management** >** Products** > **Released products**.
+1. Go to **Product information management** > **Products** > **Released products**.
 2. In the grid, select a product.
 3. On the **Foreign trade** FastTab, in the **Intrastat** section, in the **Commodity** field, select the commodity code. The name of the commodity will be printed in the **Description of commodities** field on the Intrastat report.
 3. In the **Origin** section, in the **Country/region** field, select the product's country or region of origin.
@@ -309,6 +309,9 @@ The following example shows how to set up French Intrastat and create the DEB re
 3. On the **Electronic reporting** FastTab, in the **File format mapping** field, select **Intrastat INTRACOM (FR)**.
 4. In the **Report format mapping** field, select **Intrastat report**.
 5. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
+6. In the **Worker** field, select **Jodi Christiansen**.
+7. On the **Contact** tab, in the **Telephone** field, enter **425-555-5068**.
+8. In the **Fax** field, enter **425-555-5106**.
 
 ### Create NGP code
 
