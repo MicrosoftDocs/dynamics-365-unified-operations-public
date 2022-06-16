@@ -98,7 +98,7 @@ b. The transfer order movement happens between warehouses that belong to differe
 
 If it is required to post stock transfers to general ledger and track inventory in transit warehouses, it is recommended to enable Dimension link and create separate sites for transit warehouses.
 
-For more information, see [Configure and manage financial dimension links to sites](../../../dynamicsax-2012/appuser-itpro/configure-and-manage-financial-dimension-links-to-sites.md).
+For more information, see [Configure and manage financial dimension links to sites](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/configure-and-manage-financial-dimension-links-to-sites).
 
 ## Supported scenarios
 
