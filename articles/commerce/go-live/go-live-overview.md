@@ -17,10 +17,10 @@ ms.search.validFrom: 2021-09-20
 
 [!include[banner](../includes/banner.md)]
 
-This article provides information about the tasks that you should complete to help yourself go live with or update your Microsoft Dynamics 365 Commerce implementation project. It provides links to content that will help you configure your system so that it works smoothly and effectively.
+This article provides information about the tasks you should complete to help yourself go live with or update your Microsoft Dynamics 365 Commerce implementation project. It provides links to content that will help you configure your system so it works smoothly and effectively.
 
 > [!NOTE]
-> The list of topics will grow over time. It isn't an exhaustive list of all possible items that should be considered during your release.
+> The list of articles will grow over time. It isn't an exhaustive list of all possible items that should be considered during your release.
 
 Before you begin, download a copy of the [current go-live checklist](https://aka.ms/d365fogolivechecklist).
 
@@ -38,4 +38,4 @@ You can help improve website performance by excluding unused JavaScript modules 
 
 ### Add/update robots.txt
 
-Unexpected or undirected crawling of your site by search engines can result in a high volume of page not found errors. This can lead to performance issues as the site responds to the many requests for pages that don't exist. To help fix this problem, [add/update robots.txt](add-robots-txt.md) for your domain.
+Unexpected or undirected crawling of your site by search engines can result in a high volume of page not found errors. These errors can lead to performance issues as the site responds to the many requests for pages that don't exist. To help fix this problem, [add/update robots.txt](add-robots-txt.md) for your domain.
