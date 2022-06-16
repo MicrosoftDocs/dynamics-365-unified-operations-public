@@ -2,7 +2,7 @@
 # required metadata
 
 title: Go-live and update recommendations overview
-description: This topic provides information about tasks that you should complete to help yourself go live with or update your Microsoft Dynamics 365 Commerce implementation project.
+description: This article provides information about tasks that you should complete to help yourself go live with or update your Microsoft Dynamics 365 Commerce implementation project.
 author: mssle
 ms.date: 01/13/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-09-20
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides information about the tasks that you should complete to help yourself go live with or update your Microsoft Dynamics 365 Commerce implementation project. It provides links to content that will help you configure your system so that it works smoothly and effectively.
+This article provides information about the tasks that you should complete to help yourself go live with or update your Microsoft Dynamics 365 Commerce implementation project. It provides links to content that will help you configure your system so that it works smoothly and effectively.
 
 > [!NOTE]
 > The list of topics will grow over time. It isn't an exhaustive list of all possible items that should be considered during your release.
@@ -38,4 +38,4 @@ You can help improve website performance by excluding unused JavaScript modules 
 
 ### Add/update robots.txt
 
-Unexpected or undirected crawling of your site by search engines can result in a high volume of page not found errors, leading to performance issues as the site responds to the many requests for pages that do not exist. To help alleviate this problem, [add/update robots.txt](add-robots-txt.md) for your domain.
+Unexpected or undirected crawling of your site by search engines can result in a high volume of page not found errors. This can lead to performance issues as the site responds to the many requests for pages that do not exist. To help fix this problem, [add/update robots.txt](add-robots-txt.md) for your domain.
