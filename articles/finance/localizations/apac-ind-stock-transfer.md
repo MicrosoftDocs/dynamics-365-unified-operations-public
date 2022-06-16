@@ -122,5 +122,13 @@ You must also set up main accounts to post inventory cost for transfer orders to
     
 You can also cancel a previously posted stock transfer order shipment if no receipts have been posted for this order. On the **Transfer orders** page, select **Transfer order** > **Transfer order history**. On the **Transfer order history** page, select a previously posted shipment. Select **Cancel**, and confirm the cancellation of the shipment. The shipment will be canceled, and all inventory movements and GST that was posted for the shipment will be reversed. The "Transfer Order Cancellation" feature in the **Feature management** workspace must be enabled to cancel transfer order shipments.
 
+## Supported scenarios
+The following example scenarios show some stock transfer order postings.
+### Scenario 1: Standard transfer order posting
+Example 1:
+From warehouse -> Site 1
+Transit warehouse -> Site 2
+To warehouse -> Site 3
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
