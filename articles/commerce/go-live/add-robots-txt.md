@@ -31,40 +31,36 @@ This topic applies to the following configurations:
 
 ## Prerequisites
 
-You are a Commerce system admin.
+You are a [System Administrator](../manage-ecommerce-users-roles#system-administrator-role) in your Commerce instance.
 
 ## Steps to complete
 
-1. Create or download a robots.txt file
-* If you do not have a robots.txt file uploaded for your domain, create a new robots.txt file according to the [robots exclusion standard](https://www.robotstxt.org/orig.html). 
-* If you have previously uploaded a robots.txt file for your domain, [Download](../manage-robots-txt-files.md#download-a-robotstxt-file) your existing file. 
-1.	Update the file to include the following disallow entries: 
-Disallow: /signin
-Disallow: /cart
-Disallow: /*?refiners=
-Disallow: /*?sorting=
-Disallow: /*?search=
+1. If you do not have a robots.txt file uploaded for your domain, create a new robots.txt file according to the [robots exclusion standard](https://www.robotstxt.org/orig.html) by using the [provided sample](#sample-robotstxt-file-contents). If you have previously uploaded a robots.txt file for your domain, [Download](../manage-robots-txt-files.md#download-a-robotstxt-file) your existing file. 
+1.	Ensure the file includes the disallow entries shown in the [provided sample](#sample-robotstxt-file-contents). 
 1.	Verify your robots.txt file is correctly formatted.
 1.	Upload the file to your site using these [upload instructions](../manage-robots-txt-files.md#upload-a-robotstxt-file).
 
-### Sample robots.txt file contents: 
-<code>
+### Sample robots.txt file contents 
+```Plaintext
 User-agent: *
 Disallow: /signin
 Disallow: /cart
 Disallow: /*?refiners=
 Disallow: /*?sorting=
 Disallow: /*?search=
-</code>
+```
 
 ## Validate
 
 Use the following method to validate the file has been added.
 
 - **Description or purpose:** Verify robots.txt file is available.
-- **Steps to run:** Using a web browser, open the page at <domain>/robots.txt.
+- **Steps to run:** Using a web browser, open the page at *&lt;domain&gt;*/robots.txt.
 - **Passing result:** Your robots.txt file can be viewed successfully.
 
 ## Additional resources
 
 [Manage robots.txt files](../manage-robots-txt-files.md)
+
+[System Administrator role](../manage-ecommerce-users-roles#system-administrator-role)
+
