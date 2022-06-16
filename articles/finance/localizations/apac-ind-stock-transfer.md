@@ -93,8 +93,8 @@ You must also set up main accounts to post inventory cost for transfer orders to
 ### Configure posting to general ledger based on financial dimension links to sites
 
 In the standard Dynamics 365 functionality, transfer orders are only posted to general ledger if:
-a. Dimension link is activated, that is, there is a link between the Site inventory dimension and some financial dimension.
-b. The transfer order movement happens between warehouses that belong to different sites. This condition applies to the From, Transit, and To warehouses. If the From warehouse and Transit warehouse belong to the same site, the transfer order shipment is not posted to general ledger. Similarly, if the Transit warehouse and To warehouse belong to the same site, the transfer order receipt is not posted to General ledger.
+1. Dimension link is activated, that is, there is a link between the Site inventory dimension and some financial dimension.
+2. The transfer order movement happens between warehouses that belong to different sites. This condition applies to the From, Transit, and To warehouses. If the From warehouse and Transit warehouse belong to the same site, the transfer order shipment is not posted to general ledger. Similarly, if the Transit warehouse and To warehouse belong to the same site, the transfer order receipt is not posted to General ledger.
 
 If it is required to post stock transfers to general ledger and track inventory in transit warehouses, it is recommended to enable Dimension link and create separate sites for transit warehouses.
 
@@ -102,7 +102,7 @@ For more information, see [Configure and manage financial dimension links to sit
 
 ## Supported scenarios
 
-The following example scenarious show frequently performed actions that are associated with transfer orders where the **Transfer type** field is set to **Stock transfer**.
+The following example scenarious show frequently performed actions that are associated with transfer orders where the **Transfer type** field is set to **Stock transfer** and **Dimension link** is **enabled**.
 
 ## Scenario 1: Create and post a stock transfer order
 
@@ -164,7 +164,7 @@ Transfer order receipt posting:
 | Inventory inter-unit payable    | Site 3                             |                    |         100         | 
 | Inventory receipt               | Site 3                             |        100         |                     |
 
-The inventory in **transit balance** can be calculated as **_InventoryIssue-Site2 - InventoryReceipt-Site2_**. It is nullified upon the receipt.
+The **balance on the inventory in transit** can be calculated as **_InventoryIssue-Site2 - InventoryReceipt-Site2_**. It is nullified upon the receipt.
 
 #### Example 2:
 - From warehouse -> Site 1
@@ -184,5 +184,46 @@ Transfer order receipt posting:
 | Inventory receipt               | Site 3                             |        100         |                     |
 
 In this case, no inventry in transit balance is tracked.
+
+### Scenario 3: Stock transfer order with GST
+
+Complete the procedures in this article to create a stock transfer order that has tax on the transfer price. 
+
+    > [!NOTE]
+    > Assume that:
+> - Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
+> - **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
+> - **GST** rate is **10%**.
+
+- From warehouse -> Site 1
+- Transit warehouse -> Site 2
+- To warehouse -> Site 3
+
+Transfer order shipment posting:
+
+|      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (rs.) |
+|---------------------------------|------------------------------------|--------------------|---------------------|
+| Inventory issue                 | Site 1                             |                    |         100         |  
+| Inventory inter-unit receiveble | Site 1                             |        100         |                     |
+| Inventory inter-unit payable    | Site 2                             |                    |         100         | 
+| Inventory receipt               | Site 2                             |        100         |                     |
+| GST payable                     | Site 1                             |                    |          12         | 
+| Interim account                 | Site 1                             |         12         |                     |
+
+Transfer order receipt posting:
+
+|      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (rs.) |
+|---------------------------------|------------------------------------|--------------------|---------------------|
+| Inventory issue                 | Site 2                             |                    |         100         |  
+| Inventory inter-unit receiveble | Site 2                             |        100         |                     |
+| Inventory inter-unit payable    | Site 3                             |                    |         100         | 
+| Inventory receipt               | Site 3                             |        100         |                     |
+| GST receivable                  | Site 3                             |                    |          12         |  
+| Interim account                 | Site 3                             |         12         |                     |
+
+    > [!NOTE]
+    > - "Inventory issue" and "Inventory receipt" are most likely one and the same balance account, such as "Finished goods".
+    > - The **balance on the inventory in transit** can be calculated as **_InventoryIssue-Site2 - InventoryReceipt-Site2_**. It is nullified upon the receipt.
+    > - The above settings for Dimension links and sites (that is, a separate site for the transit warehouse) are recommended if it is needed to track the in-transit inventory in general ledger.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
