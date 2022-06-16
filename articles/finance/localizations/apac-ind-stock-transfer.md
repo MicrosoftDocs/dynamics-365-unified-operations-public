@@ -189,6 +189,15 @@ In this case, no inventry in transit balance is tracked.
 
 Complete the procedures in this article to create a stock transfer order that has tax on the transfer price. 
 
+
+    > [!NOTE]
+    > Assume that:
+    
+    "- Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
+    - **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
+    - **GST** rate is **10%**."
+    
+    
     > [!NOTE]
     > Assume that:
 > - Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
