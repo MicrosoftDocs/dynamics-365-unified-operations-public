@@ -94,6 +94,8 @@
             href: data-entities/develop-entity-for-data-migration.md
           - name: Develop composite data entities
             href: data-entities/develop-composite-data-entities.md
+          - name: Cross-company data sharing for developers
+            href: sysadmin/drs-srs-dev.md
           - name: Configure financial cross-company data sharing
             href: data-entities/tasks/configure-financial-cross-company-data-sharing.md
           - name: Create record templates to facilitate data entry
