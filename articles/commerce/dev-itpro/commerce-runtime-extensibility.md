@@ -220,6 +220,7 @@ For serialization to work, the new request type must implement the **\[DataContr
 > [!NOTE]
 > - We recommend that for the extension code, you use **ConfigureAwait(false)** when executing the request.
 > - Using Microsoft Distributed Transaction Coordinator (MSDTC) in a CRT database extension is not supported.
+> - Avoid wrapping the existing CRT request and response with a TransactionScope because this may cause database exception because of opening multiple database connection within a same transaction. Also, to improve performance avoid using TransactionScope for read scenarios.
 
 
 ### Request class
@@ -518,8 +519,7 @@ public sealed class CreateOrUpdateCustomerDataRequestHandler : SingleAsyncReques
     {
         ThrowIf.Null(request, "request");
 
-        using (var databaseContext = new DatabaseContext(request.RequestContext))
-        using (var transactionScope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
+       using (var databaseContext = new DatabaseContext(request.RequestContext))
         {
             // Execute original functionality to save the customer.
             var response = await this.ExecuteNextAsync<SingleEntityDataServiceResponse<Customer>>(request).ConfigureAwait(false);
@@ -532,8 +532,6 @@ public sealed class CreateOrUpdateCustomerDataRequestHandler : SingleAsyncReques
                 parameters["@TVP_EXTENSIONPROPERTIESTABLETYPE"] = new ExtensionPropertiesExtTableType(request.Customer.RecordId, request.Customer.ExtensionProperties).DataTable;
                 await databaseContext.ExecuteStoredProcedureNonQueryAsync("[ext].UPDATECUSTOMEREXTENSIONPROPERTIES", parameters, resultSettings: null).ConfigureAwait(false);
             }
-
-            transactionScope.Complete();
 
             return response;
         }
@@ -560,7 +558,6 @@ protected override async Task<Response> Process(SaveSalesTransactionDataRequest 
     NullResponse response;
 
     using (var databaseContext = new DatabaseContext(request.RequestContext))
-    using (var transactionScope = CreateReadCommittedTransactionScope(TransactionScopeAsyncFlowOption.Enabled))
     {
         // Execute original logic.
         var requestHandler = request.RequestContext.Runtime.GetNextAsyncRequestHandler(request.GetType(), this);
@@ -572,7 +569,6 @@ protected override async Task<Response> Process(SaveSalesTransactionDataRequest 
             response = await SaveSalesTransactionExtAsync(request).ConfigureAwait(false);
         }
 
-        transactionScope.Complete();
     }
 
     return response;
@@ -905,7 +901,6 @@ namespace Contoso
                 ThrowIf.Null(request, "request");
 
                 using (var databaseContext = new DatabaseContext(request.RequestContext))
-                using (var transactionScope = new TransactionScope(TransactionScopeAsyncFlowOption.Enabled))
                 {
                     // Execute original functionality to save the customer.
                     var requestHandler = new Microsoft.Dynamics.Commerce.Runtime.DataServices.SqlServer.CustomerSqlServerDataService();
@@ -919,8 +914,6 @@ namespace Contoso
                         parameters["@TVP_EXTENSIONPROPERTIESTABLETYPE"] = new ExtensionPropertiesExtTableType(request.Customer.RecordId, request.Customer.ExtensionProperties).DataTable;
                         await databaseContext.ExecuteStoredProcedureNonQueryAsync("[ext].UPDATECUSTOMEREXTENSIONPROPERTIES", parameters, resultSettings: null).ConfigureAwait(false);
                     }
-
-                    transactionScope.Complete();
 
                     return response;
                 }
