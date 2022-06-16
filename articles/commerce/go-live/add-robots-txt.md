@@ -19,7 +19,7 @@ ms.search.validFrom: 2021-09-20
 
 This article describes how to create (or edit), upload, and validate the robots.txt file for each domain hosted in Microsoft Dynamics 365 Commerce. 
 
-Unexpected or undirected crawling of your site by search engines can result in a high volume of page not found errors, leading to performance issues as the site responds to the many requests for pages that don't exist. To help alleviate this problem, you should always upload a valid robots.txt file to guide conforming crawlers to crawl only relevant pages on your site. 
+Unexpected or undirected crawling of your site by search engines can result in a high volume of page not found errors. This can lead to performance issues as the site responds to the many requests for pages that don't exist. To help fix this problem, you should always upload a valid robots.txt file to guide conforming crawlers to crawl only relevant pages on your site. 
 
 ## Applies to
 
@@ -34,8 +34,8 @@ This article applies to the following configurations:
 You're a [System Administrator](../manage-ecommerce-users-roles.md#system-administrator-role) in your Commerce instance.
 
 You've either created or downloaded a copy of robots.txt to your computer depending on your situation: 
-- If you don't have a robots.txt file uploaded for your domain, create a new robots.txt file on your computer according to the [robots exclusion standard](https://www.robotstxt.org/orig.html) by using the [provided sample](#sample-robotstxt-file-contents). 
-- If you've previously uploaded a robots.txt file for your domain, [download](../manage-robots-txt-files.md#download-a-robotstxt-file) your existing robots.txt file. 
+- If you don't have a robots.txt file uploaded for your domain, create a new robots.txt file on your computer following the [robots exclusion standard](https://www.robotstxt.org/orig.html). Use the [provided content sample](#sample-robotstxt-file-contents) as a starting point. 
+- If you've previously uploaded a robots.txt file for your domain, [download](../manage-robots-txt-files.md#download-a-robotstxt-file) your existing file. 
 
 ## Steps to complete
 
