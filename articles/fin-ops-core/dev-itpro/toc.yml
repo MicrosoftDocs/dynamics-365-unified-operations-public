@@ -1048,7 +1048,9 @@
           href: lifecycle-services/dts-devops-extension.md
         - name: Azure DevOps extension tutorial (Public Preview)
           href: lifecycle-services/dts-ado-tutorial.md
-        - name: Dynamics 365 Translation Service Visual Studio Code extension (Public Preview)
+        - name: Visual Studio extension (Private Preview)
+          href: lifecycle-services/dts-visual-studio.md
+        - name: Visual Studio Code extension (Public Preview)
           href: lifecycle-services/dts-vscode-doc.md
     - name: Microsoft Power Platform integration
       items:
