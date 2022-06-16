@@ -98,7 +98,7 @@ b. The transfer order movement happens between warehouses that belong to differe
 
 If it is required to post stock transfers to general ledger and track inventory in transit warehouses, it is recommended to enable Dimension link and create separate sites for transit warehouses.
 
-For more information, see [Configure and manage financial dimension links to sites](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/configure-and-manage-financial-dimension-links-to-sites).
+For more information, see [Configure and manage financial dimension links to sites](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/configure-and-manage-financial-dimension-links-to-sites).
 
 ## Supported scenarios
 
@@ -147,6 +147,21 @@ You can also cancel a previously posted stock transfer order shipment if no rece
 - To warehouse -> Site 3
 
 Transfer order shipment posting:
+
+
+
+| Language ID | Text ID | Text                                            |
+|-------------|---------|-------------------------------------------------|
+| en-US       | 900201  | Issuer's trade name                             |
+| en-US       | 900202  | Testing environment                             |
+| en-US       | 900203  | Testing environment (">" characters on 3 lines) |
+| en-US       | 900204  | Cancellation Total value                        |
+| en-US       | 900205  | Cancellation Access key                         |
+| en-US       | 900206  | Cancellation QR-code                            |
+| en-US       | 900207  | Cancellation Barcode (44 characters)            |
+| en-US       | 900208  | Cancellation Barcode block 1 (22 characters)    |
+| en-US       | 900209  | Cancellation Barcode block 2 (22 characters)    |
+| en-US       | 900210  | Cancellation Date of issue                      |
 
 
 |      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (rs.) |
