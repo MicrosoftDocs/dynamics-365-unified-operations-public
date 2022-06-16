@@ -24,7 +24,7 @@ This article describes whether and how the system will recalculate line net amou
 Supply Chain Management version 10.0.23 introduced [bugfix 604418](https://fix.lcs.dynamics.com/issue/results/?q=604418), which changed the conditions under which the line **Net amount** field could be updated or recalculated when importing updates to existing sales orders, returns, and quotations. In version 10.0.29, this bugfix can be replaced by turning on the *Calculate line net amount on import* feature, which has a similar effect but provides a global setting that enables you to return to the old behavior if needed. The new behavior makes the system work more intuitively going forward, but can produce unexpected results in specific scenarios where all the following conditions are met:
 
 - Data that updates existing records is imported through the *Sales order lines V2*, *Sales quotation lines V2*, or *Return order lines* entity using OData (including when using dual-write, import/export through Microsoft Excel, and some third-party integrations).
-- [Trade agreement evaluation policies](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper) are in place that establish a change policy that restricts updates to the **Net amount** field for sales order lines, sales quotation lines, or return order lines.
+- [Trade agreement evaluation policies](/dynamicsax-2012/appuser-itpro/trade-agreement-evaluation-policies-white-paper) are in place that establish a change policy that restricts updates to the **Net amount** field for sales order lines, sales quotation lines, and/or return order lines.
 - The imported data includes changes to the line **Net amount** field, or changes (such as unit price, quantity, or discount) that would cause the value of the line **Net amount** field to be recalculated for one or more existing line records.
 
 In this specific scenario, the effect of the trade agreement evaluation policy is to place a restriction on updating the line **Net amount** field (this restriction is called a *change policy*). As a result of this policy, when you edit or recalculate this field using the user interface, the system will ask you to confirm the change, but when you are importing a record, the system must make the choice for you. Before version 10.0.23, the system would always leave the line net amount unchanged (unless the incoming line net amount is zero), but in newer versions, the system will always update or recalculate the net amount as needed unless explicitly told not to. The new behavior is more logical, but if you are already running processes or integrations that assume the older behavior, then changing to the new behavior could create problems for you. This article describes how to revert to the old behavior if needed.
@@ -43,7 +43,7 @@ Admins can turn the *Calculate line net amount on import* feature on or off usin
 
 When the *Calculate line net amount on import* feature is turned on, you can set the **Calculate line net amount** option by doing the following:
 
-1. Go to **Accounts receivable &gt; Setup &gt; Accounts receivable parameters**.
+1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**.
 1. Open the **Prices** tab.
 1. Expand the **Line net amount calculation through integration** FastTab.
 1. Set **Calculate line net amount** to one of the following values:
