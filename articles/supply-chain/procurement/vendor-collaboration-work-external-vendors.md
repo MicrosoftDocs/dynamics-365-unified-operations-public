@@ -62,7 +62,7 @@ An administrator configures the general settings for vendor collaboration, such 
 
 Before user accounts can be created for an external vendor, you must configure the vendor account so that vendor can use vendor collaboration. On the **Vendors** page, on the **General** tab, set the **Collaboration activation** field. The following options are available:
 
-- **Active (PO is auto-confirmed)** – POs are automatically confirmed if the vendor accepts them without changes. If you use this option, be sure to schedule the *Confirm accepted purchase orders from vendor collaboration* batch job, which is required in order for confirmations to be processed automatically. See the following section for instructions.
+- **Active (PO is auto-confirmed)** – POs are automatically confirmed if the vendor accepts them without changes. If you use this option, be sure to schedule the *Confirm accepted purchase orders from vendor collaboration* batch job, which is responsible for processing the confirmations. See the following section for instructions.
 - **Active (PO is not auto-confirmed)** – Your organization must manually confirm POs after the vendor has accepted them.
 
 ### Scheduling the auto-confirmation batch job
@@ -71,9 +71,12 @@ If you use the **Active (PO is auto-confirmed)** option for one or more of your 
 
 1. Go to **Procurement and sourcing \> Purchase orders \> Purchase order confirmation \> Confirm accepted purchase orders from vendor collaboration**.
 1. The **Confirm accepted purchase orders from vendor collaboration** dialog opens. Expand the **Run in the background** FastTab.
-1. Select **Recurrence** to open the **Define recurrence** dialog. Use the setting here to establish the schedule by which the job should run. <!-- KFM: Can we offer any advice? What would be typic? Every minute? Every day? Every year? -->
+1. Select **Recurrence** to open the **Define recurrence** dialog. Use the settings here to establish the schedule by which the job should run. When choosing your schedule, consider the following issues:
+    - If your system processes a large volume of data and runs many batch jobs, then performance could be an issue. In this case, you probably shouldn't run this job more often than every 10 minutes (depending on your other requirements). If performance isn't an issue for you, you could even run it as often as every 1-2 minutes if needed.
+    - If your vendors tend to deliver goods quickly (within the day they agreed), then the recurrence should be frequent (every 10-30 minutes or so). That way, once confirmation is done, warehouse workers will be able to receive the goods against the confirmed PO.
+    - If your vendors tend to have a long lead time (more than 24 hours), then you can set this task to run just once a day or so.
 1. Select **OK** to apply your schedule and return to the **Confirm accepted purchase orders from vendor collaboration** dialog.
-1. Set additional background options as needed. The dialog provides the usual options for setting up batch jobs in Supply Chain Management.  <!-- KFM: Can we offer any specific advice regarding the settings here as they apply to this specific job or type of job? Are any of the settings here required or recommended for this use case? -->
+1. Set additional background options as needed. The dialog provides the usual options for setting up batch jobs in Supply Chain Management.
 
 For more information about batch jobs, see [Batch processing overview](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
