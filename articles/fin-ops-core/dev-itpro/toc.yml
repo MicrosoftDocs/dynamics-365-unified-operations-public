@@ -94,6 +94,8 @@
             href: data-entities/develop-entity-for-data-migration.md
           - name: Develop composite data entities
             href: data-entities/develop-composite-data-entities.md
+          - name: Cross-company data sharing overview
+            href: sysadmin/srs-overview.md
           - name: Cross-company data sharing for developers
             href: sysadmin/drs-srs-dev.md
           - name: Tables supported for duplicate record data sharing
