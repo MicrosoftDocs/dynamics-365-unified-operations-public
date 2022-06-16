@@ -98,7 +98,7 @@ b. The transfer order movement happens between warehouses that belong to differe
 
 If it is required to post stock transfers to general ledger and track inventory in transit warehouses, it is recommended to enable Dimension link and create separate sites for transit warehouses.
 
-For more information, see [Configure and manage financial dimension links to sites](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/configure-and-manage-financial-dimension-links-to-sites).
+For more information, see [Configure and manage financial dimension links to sites](../dynamicsax-2012/appuser-itpro/configure-and-manage-financial-dimension-links-to-sites.md).
 
 ## Supported scenarios
 
@@ -184,11 +184,5 @@ Transfer order receipt posting:
 | Inventory receipt               | Site 3                             |        100         |                     |
 
 In this case, no inventry in transit balance is tracked.
-
-||top header 1 |top header 2 |top header 3|
-|--------------------|-------------|-------------|------------|
-|**column header 1** |content 1a   |content 2a   |content 3a  |
-|**column header 2** |content 1b   |content 2b   |content 3b  |
-|**column header 3** |content 1c   |content 2c   |content 3c  |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
