@@ -38,4 +38,4 @@ You can help improve website performance by excluding unused JavaScript modules 
 
 ### Add/update robots.txt
 
-Unexpected or undirected crawling of your site by search engines can result in a high volume of page not found errors. This can lead to performance issues as the site responds to the many requests for pages that do not exist. To help fix this problem, [add/update robots.txt](add-robots-txt.md) for your domain.
+Unexpected or undirected crawling of your site by search engines can result in a high volume of page not found errors. This can lead to performance issues as the site responds to the many requests for pages that don't exist. To help fix this problem, [add/update robots.txt](add-robots-txt.md) for your domain.
