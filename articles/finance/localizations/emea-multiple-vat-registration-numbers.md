@@ -117,6 +117,9 @@ On the **Sales tax settlement periods** page, create sales tax settlement period
    ![Customer and vendor registration IDs on the Tax feature setup page.](./media/tax-service-multvatid-tax-feature-setup-09-2NewUI.png)
 
     > [!NOTE]
+    > This step is optional unless the customer or vendor has multiple tax registration numbers and you want Tax Calculation service to determine it. Tax Calculation service will use the value from "Tax exempt number" filed on sales and purchase documents header as the default value of customer/vendor tax registration number and replace it with the value which you defined in customer/vendor tax registration number applicability rules.
+
+    > [!NOTE]
     > During sales tax calculation and document posting, the tax service returns the customer's or vendor's tax registration number to Dynamics 365 Finance and updates the **Tax exempt number** field on the sales order or purchase order. If the corresponding value isn't set up on the **Registration ID** FastTab on the **Manage addresses** page for the customer or vendor, the registration ID is left blank, and you receive the following message: "Customer tax registration 'xxx' is not found in the customer's Registration IDs setup. To add customer tax registration to sales tax transactions and posted documents, make sure the registration is defined in the Registration IDs setup."
 
 ## Sales order and purchase order processing
