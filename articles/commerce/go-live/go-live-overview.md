@@ -36,6 +36,6 @@ Website performance is often affected by image downloads. You can help improve w
 
 You can help improve website performance by excluding unused JavaScript modules in Commerce. For more information, see [Reduce JavaScript by excluding unused modules](performance-reduce-javascript.md).
 
-### Add/Update robots.txt
+### Add/update robots.txt
 
 Unexpected or undirected crawling of your site by search engines can result in a high volume of page not found errors, leading to performance issues as the site responds to the many requests for pages that do not exist. To help alleviate this problem, [add/update robots.txt](add-robots-txt.md) for your domain.
