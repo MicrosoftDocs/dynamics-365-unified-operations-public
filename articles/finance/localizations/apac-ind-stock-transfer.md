@@ -90,15 +90,15 @@ You must also set up main accounts to post inventory cost for transfer orders to
 > [!NOTE]
 > The **Inventory expenditure, loss** account is required to post the scrap amount when receiving a transfer order with scrap.
 
-### Configure posting to general ledger based on finansial dimension links to sites
+### Configure posting to general ledger based on financial dimension links to sites
 
 In the standard Dynamics 365 functionality, transfer orders are only posted to general ledger if:
-a) Dimension link is activated, that is, there is a link between the Site inventory dimension and some financial dimension.
-b) The transfer order movement happens between warehouses that belong to different sites. This condition applies to the From, Transit, and To warehouses. If the From warehouse and Transit warehouse belong to the same site, the transfer order shipment is not posted to general ledger. Similarly, if the Transit warehouse and To warehouse belong to the same site, the transfer order receipt is not posted to General ledger.
+a. Dimension link is activated, that is, there is a link between the Site inventory dimension and some financial dimension.
+b. The transfer order movement happens between warehouses that belong to different sites. This condition applies to the From, Transit, and To warehouses. If the From warehouse and Transit warehouse belong to the same site, the transfer order shipment is not posted to general ledger. Similarly, if the Transit warehouse and To warehouse belong to the same site, the transfer order receipt is not posted to General ledger.
 
-If it is required to post stock transfers to general ledger and track inventory in transit warehouses, it is recommended to enable Dimension link and creating a separate site for transit warehouses.
+If it is required to post stock transfers to general ledger and track inventory in transit warehouses, it is recommended to enable Dimension link and create separate sites for transit warehouses.
 
-Use the following procedures to configure and manage financial dimension links for sites: https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/configure-and-manage-financial-dimension-links-to-sites.
+For more information, see [Configure and manage financial dimension links to sites](https://docs.microsoft.com/en-us/dynamicsax-2012/appuser-itpro/configure-and-manage-financial-dimension-links-to-sites).
 
 ## Supported scenarios
 
@@ -135,7 +135,7 @@ The following example scenarious show frequently performed actions that are asso
     > If the "Enable uniform tax amount and GST transaction ID for both shipment and receipt transaction of a stock transfer order" feature is enabled in the **Feature management** workspace, it is only possible to receive a previously posted shipment. You need to select **Shipment** in the **Update** field when posting a receipt and select a previously posted shipment in the **Shipment voucher** field.
 
     > [!NOTE]
-    > If the From warehouse and Transit warehouse belong to the same site, the transfer order shipment is not posted to general ledger. Similarly, if the Transit warehouse and To warehouse belong to the same site, the transfer order receipt is not posted to General ledger.
+    > If the From warehouse and Transit warehouse belong to the same site, the transfer order shipment is not posted to general ledger. Similarly, if the Transit warehouse and To warehouse belong to the same site, the transfer order receipt is not posted to general ledger.
     
 You can also cancel a previously posted stock transfer order shipment if no receipts have been posted for this order. On the **Transfer orders** page, select **Transfer order** > **Transfer order history**. On the **Transfer order history** page, select a previously posted shipment. Select **Cancel**, and confirm the cancellation of the shipment. The shipment will be canceled, and all inventory movements and GST that was posted for the shipment will be reversed. The "Transfer Order Cancellation" feature in the **Feature management** workspace must be enabled to cancel transfer order shipments.
 
@@ -147,7 +147,9 @@ You can also cancel a previously posted stock transfer order shipment if no rece
 - To warehouse -> Site 3
 
 Transfer order shipment posting:
-| **Ledger account name**             | **Financial dimension linked to site** | **Debit amount (Rs.)** | **Credit amount (rs.)** |
+
+
+|      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
 | Inventory issue                 | Site 1                             |                    |         100         |  
 | Inventory inter-unit receiveble | Site 1                             |        100         |                     |
