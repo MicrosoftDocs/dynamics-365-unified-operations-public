@@ -1,0 +1,70 @@
+---
+# required metadata
+
+title: Add a robots.txt file
+description: This topic describes how to create (or edit), upload, and validate the robots.txt file for each domain hosted in Microsoft Dynamics 365 Commerce.
+author: mssle
+ms.date: 06/16/2022
+ms.topic: article
+audience: Developer, IT Pro
+ms.reviewer: josaw
+ms.search.region: Global
+ms.author: sheaton
+ms.search.validFrom: 2021-09-20
+---
+
+# Add a robots.txt file
+
+[!include[banner](../includes/banner.md)]
+
+This topic describes how to create (or edit), upload, and validate the robots.txt file for each domain hosted in Microsoft Dynamics 365 Commerce. 
+
+Unexpected or undirected crawling of your site by search engines can result in a high volume of page not found errors, leading to performance issues as the site responds to the many requests for pages that do not exist. To help alleviate this problem, you should always upload a valid robots.txt file to guide conforming crawlers to crawl only relevant pages on your site. 
+
+## Applies to
+
+This topic applies to the following configurations:
+
+- **Version:** Commerce 10.0.16 or later
+- **Component:** Business to consumer (B2C) or business to business (B2B)
+- **Feature area:** Commerce website performance
+
+## Prerequisites
+
+You are a Commerce system admin.
+
+## Steps to complete
+
+1. Create or download a robots.txt file
+* If you do not have a robots.txt file uploaded for your domain, create a new robots.txt file according to the [robots exclusion standard](https://www.robotstxt.org/orig.html). 
+* If you have previously uploaded a robots.txt file for your domain, [Download](../manage-robots-txt-files.md#download-a-robotstxt-file) your existing file. 
+1.	Update the file to include the following disallow entries: 
+Disallow: /signin
+Disallow: /cart
+Disallow: /*?refiners=
+Disallow: /*?sorting=
+Disallow: /*?search=
+1.	Verify your robots.txt file is correctly formatted.
+1.	Upload the file to your site using these [upload instructions](../manage-robots-txt-files.md#upload-a-robotstxt-file).
+
+### Sample robots.txt file contents: 
+<code>
+User-agent: *
+Disallow: /signin
+Disallow: /cart
+Disallow: /*?refiners=
+Disallow: /*?sorting=
+Disallow: /*?search=
+</code>
+
+## Validate
+
+Use the following method to validate the file has been added.
+
+- **Description or purpose:** Verify robots.txt file is available.
+- **Steps to run:** Using a web browser, open the page at <domain>/robots.txt.
+- **Passing result:** Your robots.txt file can be viewed successfully.
+
+## Additional resources
+
+[Manage robots.txt files](../manage-robots-txt-files.md)
