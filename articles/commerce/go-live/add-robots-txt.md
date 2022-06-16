@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add or update a robots.txt file
-description: This topic describes how to create, edit, upload, and validate the robots.txt file for each domain hosted in Microsoft Dynamics 365 Commerce.
+description: This article describes how to create, edit, upload, and validate the robots.txt file for each domain hosted in Microsoft Dynamics 365 Commerce.
 author: mssle
 ms.date: 06/16/2022
 ms.topic: article
@@ -17,13 +17,13 @@ ms.search.validFrom: 2021-09-20
 
 [!include[banner](../includes/banner.md)]
 
-This topic describes how to create (or edit), upload, and validate the robots.txt file for each domain hosted in Microsoft Dynamics 365 Commerce. 
+This article describes how to create (or edit), upload, and validate the robots.txt file for each domain hosted in Microsoft Dynamics 365 Commerce. 
 
-Unexpected or undirected crawling of your site by search engines can result in a high volume of page not found errors, leading to performance issues as the site responds to the many requests for pages that do not exist. To help alleviate this problem, you should always upload a valid robots.txt file to guide conforming crawlers to crawl only relevant pages on your site. 
+Unexpected or undirected crawling of your site by search engines can result in a high volume of page not found errors, leading to performance issues as the site responds to the many requests for pages that don't exist. To help alleviate this problem, you should always upload a valid robots.txt file to guide conforming crawlers to crawl only relevant pages on your site. 
 
 ## Applies to
 
-This topic applies to the following configurations:
+This article applies to the following configurations:
 
 - **Version:** Commerce 10.0.16 or later
 - **Component:** Business to consumer (B2C) or business to business (B2B)
@@ -31,11 +31,11 @@ This topic applies to the following configurations:
 
 ## Prerequisites
 
-You are a [System Administrator](../manage-ecommerce-users-roles.md#system-administrator-role) in your Commerce instance.
+You're a [System Administrator](../manage-ecommerce-users-roles.md#system-administrator-role) in your Commerce instance.
 
-You have either created or downloaded a copy of robots.txt to your computer depending on your situation: 
-- If you do not have a robots.txt file uploaded for your domain, create a new robots.txt file on your computer according to the [robots exclusion standard](https://www.robotstxt.org/orig.html) by using the [provided sample](#sample-robotstxt-file-contents). 
-- If you have previously uploaded a robots.txt file for your domain, [download](../manage-robots-txt-files.md#download-a-robotstxt-file) your existing robots.txt file. 
+You've either created or downloaded a copy of robots.txt to your computer depending on your situation: 
+- If you don't have a robots.txt file uploaded for your domain, create a new robots.txt file on your computer according to the [robots exclusion standard](https://www.robotstxt.org/orig.html) by using the [provided sample](#sample-robotstxt-file-contents). 
+- If you've previously uploaded a robots.txt file for your domain, [download](../manage-robots-txt-files.md#download-a-robotstxt-file) your existing robots.txt file. 
 
 ## Steps to complete
 
