@@ -189,21 +189,12 @@ In this case, no inventry in transit balance is tracked.
 
 Complete the procedures in this article to create a stock transfer order that has tax on the transfer price. 
 
-
     > [!NOTE]
-    > Assume that:
+    > "Assume that:
+- Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
+- **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
+- **GST** rate is **10%**."
     
-    "- Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
-    - **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
-    - **GST** rate is **10%**."
-    
-    
-    > [!NOTE]
-    > Assume that:
-> - Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
-> - **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
-> - **GST** rate is **10%**.
-
 - From warehouse -> Site 1
 - Transit warehouse -> Site 2
 - To warehouse -> Site 3
@@ -231,8 +222,16 @@ Transfer order receipt posting:
 | Interim account                 | Site 3                             |         12         |                     |
 
     > [!NOTE]
-    > - "Inventory issue" and "Inventory receipt" are most likely one and the same balance account, such as "Finished goods".
-    > - The **balance on the inventory in transit** can be calculated as **_InventoryIssue-Site2 - InventoryReceipt-Site2_**. It is nullified upon the receipt.
-    > - The above settings for Dimension links and sites (that is, a separate site for the transit warehouse) are recommended if it is needed to track the in-transit inventory in general ledger.
+>"- \"Inventory issue\" and \"Inventory receipt\" are most likely one and the same balance account, such as \"Finished goods\".
+- The **balance on the inventory in transit** can be calculated as **_InventoryIssue-Site2 - InventoryReceipt-Site2_**. It is nullified upon the receipt.
+- The above settings for Dimension links and sites (that is, a separate site for the transit warehouse) are recommended if it is needed to track the in-transit inventory in general ledger."
+    
+    > [!NOTE]
+> Use an alert such as a note when appropriate.
+
+"Use quotes if appropriate... Lorem ipsum dolor sit amet,
+consectetur adipiscing elit. Etiam efficitur id orci ac euismod.
+Cras risus justo, molestie ac nulla eget, porttitor aliquam 
+lectus. Aliquam eu ipsum vestibulum, tempus ante at, porta dui."
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
