@@ -117,9 +117,6 @@ To use this functionality, turn on the following feature in [Feature management]
 
 ### Enable the "My day" dialog
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 The **My day** dialog provides workers with an overview of their daily registrations and current balances for paid time, paid overtime, absence, and paid absence.
 
 To use this functionality, turn on the following feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
@@ -128,9 +125,6 @@ To use this functionality, turn on the following feature in [Feature management]
 
 ### Enable teams
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 When multiple workers are assigned to the same production job, they can form a team. The team can nominate one worker as a pilot. The remaining workers then automatically become assistants of that pilot. For the resulting team, only the pilot must register job status. Time records apply to all team members.
 
 To use this functionality, turn on the following feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
@@ -138,9 +132,6 @@ To use this functionality, turn on the following feature in [Feature management]
 - *Production teams in the production floor execution interface*
 
 ### Enable additional configuration in the production floor execution interface
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 This feature adds settings for the following functionality to the **Configure production floor execution** page:
 
