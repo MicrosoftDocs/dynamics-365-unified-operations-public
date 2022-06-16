@@ -980,6 +980,8 @@
           href: lifecycle-services/configuration-manager-lcs.md
         - name: Set up Configuration manager
           href: lifecycle-services/set-up-configuration-manager-lcs.md
+        - name: Copy configurations
+          href: lifecycle-services/copy-configuration-lcs.md
       - name: Configure the code upgrade service
         href: lifecycle-services/configure-execute-code-upgrade.md
       - name: Create or update methodologies
