@@ -148,22 +148,6 @@ You can also cancel a previously posted stock transfer order shipment if no rece
 
 Transfer order shipment posting:
 
-
-
-| Language ID | Text ID | Text                                            |
-|-------------|---------|-------------------------------------------------|
-| en-US       | 900201  | Issuer's trade name                             |
-| en-US       | 900202  | Testing environment                             |
-| en-US       | 900203  | Testing environment (">" characters on 3 lines) |
-| en-US       | 900204  | Cancellation Total value                        |
-| en-US       | 900205  | Cancellation Access key                         |
-| en-US       | 900206  | Cancellation QR-code                            |
-| en-US       | 900207  | Cancellation Barcode (44 characters)            |
-| en-US       | 900208  | Cancellation Barcode block 1 (22 characters)    |
-| en-US       | 900209  | Cancellation Barcode block 2 (22 characters)    |
-| en-US       | 900210  | Cancellation Date of issue                      |
-
-
 |      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
 | Inventory issue                 | Site 1                             |                    |         100         |  
@@ -173,5 +157,32 @@ Transfer order shipment posting:
 
 Transfer order receipt posting:
 
+|      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (rs.) |
+|---------------------------------|------------------------------------|--------------------|---------------------|
+| Inventory issue                 | Site 2                             |                    |         100         |  
+| Inventory inter-unit receiveble | Site 2                             |        100         |                     |
+| Inventory inter-unit payable    | Site 3                             |                    |         100         | 
+| Inventory receipt | Receipt     | Site 3                             |        100         |                     |
+
+The inventory in **transit balance** can be calculated as **_InventoryIssue-Site2 - InventoryReceipt-Site2_**. It is nullified upon the receipt.
+
+#### Example 2:
+- From warehouse -> Site 1
+- Transit warehouse -> Site 1
+- To warehouse -> Site 3
+
+Transfer order shipment posting:
+* no posting to general ledger occurs.
+
+Transfer order receipt posting:
+
+|      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (rs.) |
+|---------------------------------|------------------------------------|--------------------|---------------------|
+| Inventory issue                 | Site 1                             |                    |         100         |  
+| Inventory inter-unit receiveble | Site 1                             |        100         |                     |
+| Inventory inter-unit payable    | Site 3                             |                    |         100         | 
+| Inventory receipt | Receipt     | Site 3                             |        100         |                     |
+
+In this case, no inventry in transit balance is tracked.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
