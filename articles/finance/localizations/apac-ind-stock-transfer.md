@@ -153,7 +153,7 @@ Transfer order shipment posting:
 | Inventory issue                 | Site 1                             |                    |         100         |  
 | Inventory inter-unit receiveble | Site 1                             |        100         |                     |
 | Inventory inter-unit payable    | Site 2                             |                    |         100         | 
-| Inventory receipt | Receipt     | Site 2                             |        100         |                     |
+| Inventory receipt               | Site 2                             |        100         |                     |
 
 Transfer order receipt posting:
 
@@ -162,7 +162,7 @@ Transfer order receipt posting:
 | Inventory issue                 | Site 2                             |                    |         100         |  
 | Inventory inter-unit receiveble | Site 2                             |        100         |                     |
 | Inventory inter-unit payable    | Site 3                             |                    |         100         | 
-| Inventory receipt | Receipt     | Site 3                             |        100         |                     |
+| Inventory receipt               | Site 3                             |        100         |                     |
 
 The inventory in **transit balance** can be calculated as **_InventoryIssue-Site2 - InventoryReceipt-Site2_**. It is nullified upon the receipt.
 
@@ -181,8 +181,14 @@ Transfer order receipt posting:
 | Inventory issue                 | Site 1                             |                    |         100         |  
 | Inventory inter-unit receiveble | Site 1                             |        100         |                     |
 | Inventory inter-unit payable    | Site 3                             |                    |         100         | 
-| Inventory receipt | Receipt     | Site 3                             |        100         |                     |
+| Inventory receipt               | Site 3                             |        100         |                     |
 
 In this case, no inventry in transit balance is tracked.
+
+||top header 1 |top header 2 |top header 3|
+|--------------------|-------------|-------------|------------|
+|**column header 1** |content 1a   |content 2a   |content 3a  |
+|**column header 2** |content 1b   |content 2b   |content 3b  |
+|**column header 3** |content 1c   |content 2c   |content 3c  |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
