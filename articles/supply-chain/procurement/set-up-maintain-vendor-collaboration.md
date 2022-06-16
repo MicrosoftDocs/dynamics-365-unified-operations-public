@@ -123,7 +123,7 @@ To set up this branching, create a new workflow of the **User Request Workflow (
 2. Assign a task to the person who is responsible for requesting new Microsoft Azure Active Directory (Azure AD) user accounts in Azure portal. Use the predefined **Send Azure B2B user invitation** task for this step. B2B users can be automatically exported to Azure AD. Use the predefined **Provision Azure AD B2B user**. For more information, see [Export B2B users to Azure AD](../../fin-ops-core/dev-itpro/sysadmin/implement-b2b.md).
 3. Assign an approval task to the person who uploads to Azure. If an account isn't successfully created, this person rejects the task and ends the workflow. This approval task can be skipped if you've included the step that automatically exports new user accounts to Azure via the B2B application programming interface (API).
 4. Add an automated task that provisions a new user. Use the predefined **Automated provision user** task for this step.
-5. Add a task that notifies the new user. You might want to send the new user a welcome email that includes a URL for Supply Chain Management. This email can use a template that you create on the **Email messages** page and then select on the **User workflow parameters** page. The template can include the **%portalURL%** tag. When the welcome email is generated, this tag which will be replaced by the URL of the Supply Chain Management tenant.
+5. Add a task that notifies the new user. You might want to send the new user a welcome email that includes a URL for Supply Chain Management. This email can use a template that you create on the **Email messages** page and then select on the **User workflow parameters** page. The template can include the **%portalURL%** tag. When the welcome email is generated, this tag will be replaced by the URL of the Supply Chain Management tenant.
 
     > [!NOTE]
     > This workflow can be used in multiple scenarios that involve user onboarding. For example, it can be used when prospective vendors or contact persons require a vendor collaboration account. Therefore, you should phrase the email as a general statement that can be used for multiple purposes.
@@ -143,7 +143,7 @@ Create a workflow of the **Inactivate user request workflow platform** type, and
 
 ## Enable vendor collaboration for a specific vendor
 
-Before you create a user account for someone who will use vendor collaboration, you must set up the vendor so that it can use vendor collaboration. For details on how to do this, see [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md).
+Before you create a user account for someone who will use vendor collaboration, you must set up the vendor so that it can use vendor collaboration. For details about how to do this, see [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md).
 
 ## Troubleshoot the provisioning of new vendor collaboration users
 
