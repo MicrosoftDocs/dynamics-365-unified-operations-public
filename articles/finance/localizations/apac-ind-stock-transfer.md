@@ -220,12 +220,16 @@ Complete the procedures in this scenario to create a stock transfer order that h
     - In the **Update** field, select **All**.
     - Select **Setup** > **Tax document**.
 
-1. Select **Receive** > **Receive**, and on the **Receive** page, post the transfer order receipt.
+1. Select **Receive** > **Receive**, and on the **Receive** page, post the transfer order receipt as follows:
+
+    - Select the **Edit lines** check box.
+    - In the **Update** field, select **All**.
+    - Select **Setup** > **Tax document**.
 
 Transfer order shipment posting:
 
-    - Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
-    - **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
+- Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
+- **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
 
 |      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
