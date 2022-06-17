@@ -116,11 +116,11 @@ Value of this field represents the name of the legal entity specified in the **N
 
 #### <a name="company-uen"></a>CompanyUEN - Unique Entity Number (UEN) of the business user
 
-To report the UEN of the company that is reporting IAF, the system retrieves value from the registration ID that is defined in the properties of the legal entity that is associated with the **Enterprise ID (COID)** registration category. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories).
+To report the UEN of the company that is reporting IAF, the system retrieves value from the registration ID that is defined in the properties of the legal entity that is associated with the **Enterprise ID (COID)** registration category that is valid on the date specified in **To date** parameter of the report. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories).
 
 #### <a name="company-gst"></a>GSTNo - GST Registration Number of the business user
 
-To report the GST Registration Number of the company that is reporting IAF, the system retrieves value from the registration ID that is defined in the properties of the legal entity that is associated with the **VAT ID** registration category. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories).
+To report the GST Registration Number of the company that is reporting IAF, the system retrieves value from the registration ID that is defined in the properties of the legal entity that is associated with the **VAT ID** registration category that is valid on the date specified in **To date** parameter of the report or in case when there is no such value, the **Tax registration number field** field's value. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories).
 
 ## Generate an IRAS Audit File (IAF) for Singapore
 
@@ -145,3 +145,11 @@ To generate a **IAF for Singapore**, follow these steps.
 
 3. You can use the **Records to include** option to filter the data on the report by one or more main accounts. This parameter affects only *GLDataLines* section of the report.
 4. On the **Run in the background** FastTab, you can specify parameters of the batch job and run the report in batch mode. When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+
+## Implementation details
+
+### Using of special symbols in values of different text fields
+
+	\"\|\" is a special symbol in **IAF** an if it is used in any text fields of the report, it is replaced with a space.
+ 
+ In case char(10) or char(32) are included in value of a text field of **IAF**, these characters are excluded for the value in reporting.
