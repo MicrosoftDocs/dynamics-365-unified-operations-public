@@ -238,8 +238,11 @@ Now try out the different capabilities and note that you will be able to send ba
 [![Purchase receiving - Lookup PO by vendor](media/WMSappPurchaseReceive-LookupPOByVendor-detours.png "Purchase receiving - Lookup PO by vendor")](media/WMSappPurchaseReceive-LookupPOByVendor-detours.png)
 
 > [!INFORMATION]
-> Try out an alternative way of running the receiving flow - instead of doing a look up from the **Purchase Receive** menu item, you could start from an inquiry flow, and invoke a detour to do the desired flow.
+>
+> Try out an alternative way of running the receiving flow - instead of doing a look up from the **Purchase Receive** menu item, you could start from an inquiry flow (**Main** > **Inquire** > **Lookup POs by vendor**), and invoke a detour to do the desired flow by long pressing one of the cards in the list.
+> This will be possible by defining a detour in the **Mobile device steps** for the *GenericDataInquiryList*.  
 > Because this is a detour flow it is not possible to invoke more detours from here. So when you e.g. get to the item number entry screen it will not have the look up for the items available, as it is only currently supported with one level of detours.
+> 
 >[![Data inquire - Lookup PO by vendor - Purchase receiving detour](media/WMSappDataInquireDetour.png "Data inquire - Lookup PO by vendor - Purchase receiving detour")](media/WMSappDataInquireDetour.png)
 <!--Add new picture-->
 
