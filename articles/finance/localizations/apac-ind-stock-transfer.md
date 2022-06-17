@@ -208,13 +208,24 @@ Complete the procedures in this scenario to create a stock transfer order that h
 1. In the **Price type** field, select the price type for the transfer order line as required.
 1. In the **Unit price** field, enter the cost price XX or the transfer price for one unit of the item.
 1. Select the **Tax information** tab to set up taxes for the transfer order and enter details. You can change the default information that is displayed in the fields.
+    
+    - At the line level, select **Tax information from warehouse**, select the **GST** tab and click **OK**.
+    - At the line level, select **Tax information to warehouse**, select the **GST** tab and click **OK**.
     - **GST** rate is **10%**."
-1. Select **Ship** > **Ship transfer order**, and on the **Shipment** page, post the transfer order shipment.
-    - Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
-    - **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
+
+1. Go to **Inquiries** > **Tax document** and verify that the tax is calculated.
+1. Select **Ship** > **Ship transfer order**, and on the **Shipment** page, post the transfer order shipment as follows:
+
+    - Select the **Edit lines** check box.
+    - In the **Update** field, select **All**.
+    - Select **Setup** > **Tax document**.
+
 1. Select **Receive** > **Receive**, and on the **Receive** page, post the transfer order receipt.
 
 Transfer order shipment posting:
+
+    - Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
+    - **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
 
 |      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
