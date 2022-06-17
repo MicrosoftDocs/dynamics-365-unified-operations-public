@@ -4,7 +4,7 @@
 title: Maintenance in self-service environments FAQ
 description: This article provides answers to frequently asked questions about the Microsoft planned maintenance in self-service environments.
 author: matapg007
-ms.date: 06/02/2022
+ms.date: 06/17/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -30,14 +30,22 @@ Some of the common planned maintenance activities performed by Microsoft are:
 ## What are the planned maintenance windows?
 A planned maintenance window is typically during the dark hours of the geographic region that your environment is deployed in. The following list shows the maintenance windows for each geography in Coordinated Universal Time (UTC).
 
-- US, BR, CA: 4:00 AM to 10:00 AM UTC 
-- CH, FR, EU, GB, NO, ZA: 10:00 PM to 4:00 AM UTC
-- AE: 6:00 PM to 12:00 AM UTC
-- CN, JP: 4:00 PM to 10:00 PM UTC
-- AU: 1:00 PM to 7:00 PM UTC
-- IN: 6:30 PM to 00:30 AM UTC
-
-To view a list of the geographical regions, see [Country/Region hierarchy used by Azure Traffic Manager for geographic traffic routing method](/azure/traffic-manager/traffic-manager-geographic-regions).
+|Geo | Maintenance window |
+|----|--------------------|
+|Australia |1:00 PM to 7:00 PM UTC|
+|Brazil |4:00 AM to 10:00 AM UTC |
+|Canada	|4:00 AM to 10:00 AM UTC |
+|C|hina	|4:00 PM to 10:00 PM UTC|
+|Europe	|10:00 PM to 4:00 AM UTC|
+|France	|10:00 PM to 4:00 AM UTC|
+|India	|6:30 PM to 00:30 AM UTC|
+|Japan	|4:00 PM to 10:00 PM UTC|
+|Norway	|10:00 PM to 4:00 AM UTC|
+|South Africa	|10:00 PM to 4:00 AM UTC|
+|Switzerland	|10:00 PM to 4:00 AM UTC|
+|United Arab Emirates	|6:00 PM to 12:00 AM UTC|
+|United Kingdom	|10:00 PM to 4:00 AM UTC|
+|United States	|4:00 AM to 10:00 AM UTC |
 
 ## What is the schedule for operating system maintenance?
 
