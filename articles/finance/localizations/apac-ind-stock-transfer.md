@@ -104,12 +104,16 @@ For more information, see [Configure and manage financial dimension links to sit
 
 The following example scenarious show frequently performed actions that are associated with transfer orders where the **Transfer type** field is set to **Stock transfer** and **Dimension link** is **enabled**.
 
-## Scenario 1: Create and post a stock transfer order
+### Scenario 1: Create and post a stock transfer order
 
 1. Go to **Inventory management** > **Outbound orders** > **Transfer order** and create a new transfer order.
 1. In the **From warehouse** field, select the supply warehouse that the items are dispatched from.
 1. In the **To warehouse** field, select the receiving warehouse that the items are delivered to.
-1. In the **Transfer type** field, select **Stock transfer** to apply GST to the transfer of items.
+
+    > [!NOTE]
+    > If the From warehouse and Transit warehouse belong to the same site, the transfer order shipment is not posted to general ledger. Similarly, if the Transit warehouse and To warehouse belong to the same site, the transfer order receipt is not posted to general ledger.
+
+3. In the **Transfer type** field, select **Stock transfer** to apply GST to the transfer of items.
 
     > [!NOTE]
     > If you select **Transfer order** in the **Transfer type** field, the transfer order will be posted based on the standard transfer order process.
@@ -132,15 +136,12 @@ The following example scenarious show frequently performed actions that are asso
 
     > [!NOTE]
     > If the "Enable uniform tax amount and GST transaction ID for both shipment and receipt transaction of a stock transfer order" feature is enabled in the **Feature management** workspace, it is only possible to receive a previously posted shipment. You need to select **Shipment** in the **Update** field when posting a receipt and select a previously posted shipment in the **Shipment voucher** field.
-
-    > [!NOTE]
-    > If the From warehouse and Transit warehouse belong to the same site, the transfer order shipment is not posted to general ledger. Similarly, if the Transit warehouse and To warehouse belong to the same site, the transfer order receipt is not posted to general ledger.
     
 You can also cancel a previously posted stock transfer order shipment if no receipts have been posted for this order. On the **Transfer orders** page, select **Transfer order** > **Transfer order history**. On the **Transfer order history** page, select a previously posted shipment. Select **Cancel**, and confirm the cancellation of the shipment. The shipment will be canceled, and all inventory movements and GST that was posted for the shipment will be reversed. The "Transfer Order Cancellation" feature in the **Feature management** workspace must be enabled to cancel transfer order shipments.
 
 ### Scenario 2: Standard transfer order posting
 
-In this scenario, complete the procedures described in the above **Scenario 1: Create and post a stock transfer order**, assuming that the values are as provided in the below examples. 
+In this scenario, complete the procedures described in the above [**Scenario 1: Create and post a stock transfer order**](scenario-1-create-and-post-a-stock-transfer-order.md), assuming that the values are entered as provided in the below examples. 
 
 #### Example 1:
 
@@ -148,7 +149,7 @@ In this scenario, complete the procedures described in the above **Scenario 1: C
 - Transit warehouse -> Site 2
 - To warehouse -> Site 3
 
-Transfer order shipment posting:
+##### Transfer order shipment posting:
 
 |      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
@@ -157,7 +158,7 @@ Transfer order shipment posting:
 | Inventory inter-unit payable    | Site 2                             |                    |         100         | 
 | Inventory receipt               | Site 2                             |        100         |                     |
 
-Transfer order receipt posting:
+##### Transfer order receipt posting:
 
 |      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
@@ -174,10 +175,10 @@ The **balance on the inventory in transit** can be calculated as **_InventoryIss
 - Transit warehouse -> Site 1
 - To warehouse -> Site 3
 
-Transfer order shipment posting:
+##### Transfer order shipment posting:
 * no posting to general ledger occurs.
 
-Transfer order receipt posting:
+##### Transfer order receipt posting:
 
 |      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
@@ -226,7 +227,7 @@ Complete the procedures in this scenario to create a stock transfer order that h
     - In the **Update** field, select **All**.
     - Select **Setup** > **Tax document**.
 
-Transfer order shipment posting:
+##### Transfer order shipment posting:
 
 - Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
 - **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
@@ -240,7 +241,7 @@ Transfer order shipment posting:
 | GST payable                     | Site 1                             |                    |          12         | 
 | Interim account                 | Site 1                             |         12         |                     |
 
-Transfer order receipt posting:
+##### Transfer order receipt posting:
 
 |      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
