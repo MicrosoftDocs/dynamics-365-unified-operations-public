@@ -3,7 +3,7 @@
 
 title: Provision Human Resources in the finance and operations infrastrcuture
 description: This article explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources in the finance and operations infrastructure.
-author: raprofit; 
+author: raprofit
 ms.date: 01/07/2022
 ms.topic: article
 ms.prod: 
@@ -42,7 +42,7 @@ Before you begin provisioning a new environment, the following prerequisites mus
 
 - You have purchased Human Resources through a Cloud Solution Provider (CSP) or enterprise architecture (EA) agreement. If you have an existing Microsoft Dynamics 365 license that already includes the Human Resources service plan, and you can't complete the steps in this article, contact Support.
 
-- The global administrator has signed in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and created a new Finance and Operations project. 
+- The global administrator has signed in to [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) and created a new finance and operations project. 
 
 ## Provision a Human Resources trial environment
 
@@ -58,7 +58,7 @@ Considerations for additional optional environments:
 - **Integration**: You may need to consider an additional environment to configure and test integrations. This could include native integrations or custom integrations such as those for payroll, applicant tracking systems, or benefit systems and providers.
 - **Training**: You may need a separate environment that is configured with a set of training data in order to train your employees on use of the new system. 
 - **Multi-phase project**: You may need an additional environment to support configuration, data migration, testing, or other activities in a project phase that is planned after the initial go-live of the project.
-- **Development**: With the finance and operations infrastructure you can now extend the solution and develop your own customizations. Each developer is required to use thier own development environment. For more information, see [Deploy and access development environments](/fin-ops-core/dev-itpro/dev-tools/access-instances)
+- **Development**: With the finance and operations infrastructure, you can now extend the solution and develop your own customizations. Each developer is required to use thier own development environment. For more information, see [Deploy and access development environments](/fin-ops-core/dev-itpro/dev-tools/access-instances)
 - **GOLD**: It is common practice for new deployments to use a seperate "GOLD" environment that is kept pristine for configuration and data migration. This environment can be used throughout the implementation to refresh other environments and is used to create the new production environment with the base configuration and data migration. This practice is commonly used becuase you cannot deploy a production environment on the finance and operations infrastructure until you have completed the go-live readiness process. For more infromations, see [Prepare for go-live](/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live) 
 
 --NOTE: Need to come back and verify Tier-1 can be used and if a customer cannot purchase tier 3-5 need specific documentation about this. 
