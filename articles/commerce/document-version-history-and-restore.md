@@ -4,7 +4,7 @@
 title: View version history to restore pages, fragments, and templates
 description: This article describes how to view version history for a page, fragment, or template and roll back to an older version in Microsoft Dynamics 365 Commerce site builder.
 author: phinneyridge
-ms.date: 08/01/2022
+ms.date: 06/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
