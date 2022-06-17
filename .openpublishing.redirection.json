@@ -1,6 +1,21 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform.md",
+      "redirect_url": "mobile-platform-getting-started",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lcs-solutions/business-process-modeler-libraries-updated-experience.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/creating-editing-browsing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-environments.md",
+      "redirect_url": "setup-deploy-on-premises-pu41",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/deployment/france-local-deployment.md",
       "redirect_url": "deployment-options-geo",
       "redirect_document_id": "false"
