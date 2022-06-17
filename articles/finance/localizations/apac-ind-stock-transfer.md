@@ -234,4 +234,11 @@ consectetur adipiscing elit. Etiam efficitur id orci ac euismod.
 Cras risus justo, molestie ac nulla eget, porttitor aliquam 
 lectus. Aliquam eu ipsum vestibulum, tempus ante at, porta dui."
 
+> #### The quarterly results look great!
+>
+> - Revenue was off the chart.
+> - Profits were higher than ever.
+>
+>  *Everything* is going according to **plan**.
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
