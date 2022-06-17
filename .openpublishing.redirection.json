@@ -1,6 +1,21 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/ax4-content-retired.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/axerd-retired.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012?toc=%2fdynamics365%2ffinance%2ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/throttling-faq.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/data-entities/priority-based-throttling",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform.md",
       "redirect_url": "mobile-platform-getting-started",
       "redirect_document_id": "false"
