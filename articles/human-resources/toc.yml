@@ -836,6 +836,10 @@
         href: hr-developer-api-authentication.md
       - name: Entities
         items:
+        - name: Job detail
+          href: hr-admin-integration-api-job-detail.md
+        - name: Employment type option
+          href: hr-admin-integration-payroll-api-hcmemploymenttype.md
         - name: MyLeaveRequests
           items: 
           - name: MyLeaveRequests overview
