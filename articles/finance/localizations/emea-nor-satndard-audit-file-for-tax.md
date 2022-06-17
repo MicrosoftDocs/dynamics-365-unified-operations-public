@@ -125,6 +125,7 @@ You can easily export the setup of application-specific parameters from one vers
 
     - **Optimization of query data source creation time during execution of ER reports**
     - **Optimize datasets memory consumption at ER reports runtime**
+    - **Dimension attributes values collection optimization in \‘MasterFiles\’ report section of SAF-T for Norway**
 
 3. Select **Enable now**.
 
