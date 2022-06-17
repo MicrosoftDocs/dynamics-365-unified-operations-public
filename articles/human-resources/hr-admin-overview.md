@@ -117,6 +117,6 @@ Check out the how-to videos that are now available on the [Microsoft Dynamics 36
 
 - [What's new or changed in Human Resources](hr-admin-whats-new.md)
 - [Developer Guide](hr-developer-overview.md)
-- [User Guide](hr-hrpro-overview.md)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

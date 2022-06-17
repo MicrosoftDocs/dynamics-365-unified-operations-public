@@ -496,6 +496,8 @@
           items:
           - name: Manage recruiting project process
             href: ../fin-ops-core/fin-ops/hr/manage-recruiting-process.md
+          - name: Set up recruitment projects
+            href: hr-personnel-develop-open-job-requisition.md
           - name: Manually enter applicant and application data
             href: ../fin-ops-core/fin-ops/hr/tasks/enter-applicant-application-data-manually.md
           - name: Develop and open job requisitions
@@ -626,6 +628,10 @@
           items: 
           - name: Set up benefit plans
             href: hr-benefits-plans-setup.md
+          - name: Create worker benefit plans
+            href: hr-benefits-plans-worker.md
+          - name: Set up future life events
+            href: hr-benefits-plans-future-life-events.md
           - name: Set up flex credit programs
             href: hr-benefits-plans-flex-credit-programs.md
         - name: Process benefit plans
@@ -836,6 +842,10 @@
         href: hr-developer-api-authentication.md
       - name: Entities
         items:
+        - name: Job detail
+          href: hr-admin-integration-api-job-detail.md
+        - name: Employment type option
+          href: hr-admin-integration-payroll-api-hcmemploymenttype.md
         - name: MyLeaveRequests
           items: 
           - name: MyLeaveRequests overview
