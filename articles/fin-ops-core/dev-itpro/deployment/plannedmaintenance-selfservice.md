@@ -97,5 +97,5 @@ For more information, see [Can I change the maximum number of retries and the re
 > We are working to reduce the downtime for batch service to be a few minutes. This will require customers to adopt priority-based scheduling of batch jobs.
 
 ## Is it possible to reschedule near-zero-downtime operating system maintenance?
-No,To meet regulatory and security compliance standards, Microsoft will perform the planned maintenance during the dark hours of the geographic region where your environment is deployed. The main objective of planned maintenance is to regularly patch environments to remediate security vulnerabilities and apply critical quality updates. If you delay updates, you will put data security, availability, and reliability at risk. 
+No. To meet regulatory and security compliance standards, Microsoft will perform the planned maintenance during the dark hours of the geographic region where your environment is deployed. The main objective of planned maintenance is to regularly patch environments to remediate security vulnerabilities and apply critical quality updates. If you delay updates, you will put data security, availability, and reliability at risk. 
 
