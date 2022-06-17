@@ -1,6 +1,111 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/er-prepare-application-specific-metadata.md",
+      "redirect_url": "tasks/prepare-application-metadata-rcs?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/parse-incoming-documents-excel.md",
+      "redirect_url": "er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-in-excel-format",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/parse-incoming-documents-json-format.md",
+      "redirect_url": "er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-in-json-format ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/parse-incoming-electronic-documents.md",
+      "redirect_url": "er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-to-update-application-data",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md",
+      "redirect_url": "er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-in-csv-format",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/create-model-map-config-er.md",
+      "redirect_url": "er-define-model-mapping-select-data-sources-2016-11?toc=%2Fdynamics365%2Ffinance%2Ftoc.json ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/design-config-import-app-data-er.md",
+      "redirect_url": "../er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-to-update-application-data ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/design-config-import-csv-er.md",
+      "redirect_url": "../er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-in-csv-format ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/er-modify-format-by-reapplying-microsoft-excel-template-july-2017.md",
+      "redirect_url": "../modify-electronic-reporting-format-reapply-excel-template?toc=%2Fdynamics365%2Ffinance%2Ftoc.json. ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/model-map-aggregate-calculations-er.md",
+      "redirect_url": "../er-groupby-data-sources?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/can-set-up-gst-hst-internet-file-transfer.md",
+      "redirect_url": "can-gst-hst-internet-file-transfer",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-configuration-rcs.md",
+      "redirect_url": "e-invoicing-set-up-rcs?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md",
+      "redirect_url": "e-invoicing-create-azure-key-vault-azure-portal?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md",
+      "redirect_url": "e-invoicing-submit-electronic-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-ita-get-started.md",
+      "redirect_url": "e-invoicing-ita-fatturapa-get-started",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-service-administration.md",
+      "redirect_url": "e-invoicing-service-overview?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/emea-aut-vat-statement-details.md",
+      "redirect_url": "emea-aut-vat-declaration-austria",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/emea-cze-vat-statement-details.md",
+      "redirect_url": "emea-cze-vat-declaration-tax-declaration-model",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/emea-de-vat-declaration.md",
+      "redirect_url": "emea-deu-vat-declaration-germany",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/emea-nl-vat-declaration.md",
+      "redirect_url": "emea-nl-vat-declaration-netherlands",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/analytical-workspaces.md",
+      "redirect_url": "power-bi-home-page?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform.md",
       "redirect_url": "mobile-platform-getting-started",
       "redirect_document_id": "false"
