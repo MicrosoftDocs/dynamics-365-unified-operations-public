@@ -150,7 +150,7 @@ In this scenario, complete the procedures described in the above **Scenario 1: C
 
 Transfer order shipment posting:
 
-|      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (rs.) |
+|      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
 | Inventory issue                 | Site 1                             |                    |         100         |  
 | Inventory inter-unit receiveble | Site 1                             |        100         |                     |
@@ -159,7 +159,7 @@ Transfer order shipment posting:
 
 Transfer order receipt posting:
 
-|      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (rs.) |
+|      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
 | Inventory issue                 | Site 2                             |                    |         100         |  
 | Inventory inter-unit receiveble | Site 2                             |        100         |                     |
@@ -179,7 +179,7 @@ Transfer order shipment posting:
 
 Transfer order receipt posting:
 
-|      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (rs.) |
+|      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
 | Inventory issue                 | Site 1                             |                    |         100         |  
 | Inventory inter-unit receiveble | Site 1                             |        100         |                     |
@@ -231,7 +231,7 @@ Transfer order shipment posting:
 - Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
 - **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
 
-|      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (rs.) |
+|      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
 | Inventory issue                 | Site 1                             |                    |         100         |  
 | Inventory inter-unit receiveble | Site 1                             |        100         |                     |
@@ -242,7 +242,7 @@ Transfer order shipment posting:
 
 Transfer order receipt posting:
 
-|      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (rs.) |
+|      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
 | Inventory issue                 | Site 2                             |                    |         100         |  
 | Inventory inter-unit receiveble | Site 2                             |        100         |                     |
