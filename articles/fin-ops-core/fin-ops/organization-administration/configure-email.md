@@ -338,7 +338,7 @@ There are some standard processes that can help you troubleshoot the configurati
   </tr>
 </table>
  
-### Specific Exchange email issues
+ ### Specific Exchange email issues
 
 -  **"(401) Unauthorized" or "(403) Forbidden" error when email is sent via Exchange**
 
