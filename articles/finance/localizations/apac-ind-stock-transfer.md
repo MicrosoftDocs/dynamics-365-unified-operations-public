@@ -221,18 +221,13 @@ Transfer order receipt posting:
 | GST receivable                  | Site 3                             |                    |          12         |  
 | Interim account                 | Site 3                             |         12         |                     |
 
-    > [!NOTE]
->"- \"Inventory issue\" and \"Inventory receipt\" are most likely one and the same balance account, such as \"Finished goods\".
-- The **balance on the inventory in transit** can be calculated as **_InventoryIssue-Site2 - InventoryReceipt-Site2_**. It is nullified upon the receipt.
-- The above settings for Dimension links and sites (that is, a separate site for the transit warehouse) are recommended if it is needed to track the in-transit inventory in general ledger."
+> [!NOTE]
+>
+> - **Inventory issue** and **Inventory receipt** are most likely one and the same balance account, such as "Finished goods".
+>  - The **balance on the inventory in transit** can be calculated as **_InventoryIssue-Site2 - InventoryReceipt-Site2_**. It is nullified upon the receipt.
+> - The above settings for Dimension links and sites (that is, a separate site for the transit warehouse) are recommended if it is needed to track the in-transit inventory in general ledger.
     
-    > [!NOTE]
-> Use an alert such as a note when appropriate.
 
-"Use quotes if appropriate... Lorem ipsum dolor sit amet,
-consectetur adipiscing elit. Etiam efficitur id orci ac euismod.
-Cras risus justo, molestie ac nulla eget, porttitor aliquam 
-lectus. Aliquam eu ipsum vestibulum, tempus ante at, porta dui."
 
 > #### The quarterly results look great!
 >
