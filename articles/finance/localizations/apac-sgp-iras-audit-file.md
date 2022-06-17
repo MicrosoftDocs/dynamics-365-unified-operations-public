@@ -43,6 +43,7 @@ To start to work with the **IAF for Singapore**, complete the following tasks:
 2. [Associate sales tax codes with singaporean standard GST codes](#tax-codes)
 3. [Enable features in Feature management](#features).
 4. [Select the ER configuration in General ledger parameters](#gl-param).
+5. [Set up company information for reporting header](#header-information).
 
 ### <a name="import"></a>Import ER configurations
 
@@ -101,9 +102,29 @@ In case your legal entity's GST codes set up *is **not** in accordance* with the
 1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
 2. On the **General ledger parameters** page, on the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select **IRAS Audit File - IAF in TXT (SG)**.
 
+### <a name="header-information"></a>Set up company information for reporting header
+
+The first section of the **IAF for Singapore** represent the following information about reporting legal entity:
+
+- [CompanyName](#company-name): Company name of business user
+- [CompanyUEN](#company-uen): Unique Entity Number (UEN) of the business user
+- [GSTNo](#company-gst): GST Registration Number of the business user
+
+#### <a name="company-name"></a>CompanyName - Company name of business user
+
+Value of this field represents the name of the legal entity specified in the **Name** field on **Organization administration** \> **Organizations** > **Legal entities** page.
+
+#### <a name="company-uen"></a>CompanyUEN - Unique Entity Number (UEN) of the business user
+
+To report the UEN of the company that is reporting IAF, the system retrieves value from the registration ID that is defined in the properties of the legal entity that is associated with the **Enterprise ID (COID)** registration category. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories).
+
+#### <a name="company-gst"></a>GSTNo - GST Registration Number of the business user
+
+To report the GST Registration Number of the company that is reporting IAF, the system retrieves value from the registration ID that is defined in the properties of the legal entity that is associated with the **VAT ID** registration category. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories).
+
 ## Generate an IRAS Audit File (IAF) for Singapore
 
-To generate a **IRAS Audit File (IAF) for Singapore**, follow these steps.
+To generate a **IAF for Singapore**, follow these steps.
 
 1. Go to **General ledger** > **Inquiries and reports** > **Standard Audit File for Tax (SAF-T)** > **Standard Audit File for Tax (SAF-T)**.
 2. In the report dialog box, set the following fields.
@@ -122,5 +143,5 @@ To generate a **IRAS Audit File (IAF) for Singapore**, follow these steps.
     | Settlement period | Select a settlement period to filter sales tax transactions on the report. If you leave this field blank, sales tax transactions from all settlement periods are included on the report. |
     | Include invoices by | Data reported in *Purchase Listing Table (PurchaseLines)* and *Supply Listing Table (SupplyLines)* sections of the report is filtered is filtered according to dates specified in **From date** and **To date** parameters. Use **Include invoices by** parameter to define on which field of the data this filted must be applied. The following options are available: Invoice Date, Tax transaction date, Date of VAT register. **Date of VAT register** option is available only when [Date of VAT register](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-tax-point-date) feature is enabled.  |
 
-3. You can use the **Records to include** option to filter the data on the report by one or more main accounts.
+3. You can use the **Records to include** option to filter the data on the report by one or more main accounts. This parameter affects only *GLDataLines* section of the report.
 4. On the **Run in the background** FastTab, you can specify parameters of the batch job and run the report in batch mode. When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
