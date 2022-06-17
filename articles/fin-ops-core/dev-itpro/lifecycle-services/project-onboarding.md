@@ -82,6 +82,9 @@ For more information, see [Configuring project security](configure-lcs-security.
 - Connect LCS and Azure DevOps to maintain the application lifecycle.
 - Enter the root URL of your Azure DevOps account and the personal access token that you obtained from Azure DevOps. The Azure DevOps account should belong to the customer.
 
+> [!NOTE]
+> LCS requires entering the Azure DevOps root URL in the legacy format. The legacy format is https://ACCOUNT.visualstudio.com and https://contoso.visualstudio.com is an example.
+
 ## Configure Azure DevOps
 
 - Map work items between LCS and Business process modeler (BPM).
