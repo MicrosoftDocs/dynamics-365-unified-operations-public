@@ -189,11 +189,12 @@ In this case, no inventry in transit balance is tracked.
 
 Complete the procedures in this article to create a stock transfer order that has tax on the transfer price. 
 
-    > [!NOTE]
-    > "Assume that:
-- Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
-- **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
-- **GST** rate is **10%**."
+> [!NOTE]
+>
+> Assume that:
+> - Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
+> - **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
+> - **GST** rate is **10%**."
     
 - From warehouse -> Site 1
 - Transit warehouse -> Site 2
@@ -227,13 +228,4 @@ Transfer order receipt posting:
 >  - The **balance on the inventory in transit** can be calculated as **_InventoryIssue-Site2 - InventoryReceipt-Site2_**. It is nullified upon the receipt.
 > - The above settings for Dimension links and sites (that is, a separate site for the transit warehouse) are recommended if it is needed to track the in-transit inventory in general ledger.
     
-
-
-> #### The quarterly results look great!
->
-> - Revenue was off the chart.
-> - Profits were higher than ever.
->
->  *Everything* is going according to **plan**.
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
