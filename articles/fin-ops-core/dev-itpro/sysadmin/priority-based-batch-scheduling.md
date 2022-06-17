@@ -151,7 +151,7 @@ A batch job is a group of tasks that are submitted for automatic processing. Bat
 A new internal system batch job, **System job to clean up expired batch heartbeat records**, cleans up the new BatchHeartbeatTable table. This batch job has the class name **SysCleanupBatchHeartbeatTable**. BatchHeartbeatTable is an internal monitoring table that is used to determine, configure, and distribute reserved capacity threads among online nodes.
 
 ## Best practices
-1. We recommend that you adjust the priority so that all batch jobs don't have the same priority. For example, don't set the priority for all batch jobs to **High** or **Critical**. The following table provides the distribution that you should consider when configuring batch priorities.
+- We recommend that you adjust the priority so that all batch jobs don't have the same priority. For example, don't set the priority for all batch jobs to **High** or **Critical**. The following table provides the distribution that you should consider when configuring batch priorities.
 
     | Priority	| Possible distribution percentage of bat jobs, excluding **Reserved capacity** |
     |----------|--------|
@@ -160,10 +160,10 @@ A new internal system batch job, **System job to clean up expired batch heartbea
     | High	| 15% to 35%
     | Critical | 	10% to 30%
 
-2. Batch jobs should be scheduled in such a way that there is always a mix of jobs with different priorities around the clock. For example, don't schedule all batch jobs with the **Normal** priority in the morning, **High** in the afternoon, **Critical** in the evening, and **Low** at night.
-3. The reserved queue, when used with **Reserved capacity** priority, will give the experience as having dedicated resources for batch job. If not required, then do not allocate batch jobs to the **Reserved capacity** priority.
-4. Priorities are not used to stack rank tasks against each other. Instead, priorities determine the probability with which a task will be picked for execution.
-5. We recommend that you keep the number of threads the same across the servers to eliminate performance degradation.
+- Batch jobs should be scheduled in such a way that there is always a mix of jobs with different priorities around the clock. For example, don't schedule all batch jobs with the **Normal** priority in the morning, **High** in the afternoon, **Critical** in the evening, and **Low** at night.
+- The reserved queue, when used with **Reserved capacity** priority, will give the experience as having dedicated resources for batch job. If not required, then do not allocate batch jobs to the **Reserved capacity** priority.
+- Priorities are not used to stack rank tasks against each other. Instead, priorities determine the probability with which a task will be picked for execution.
+- We recommend that you keep the number of threads the same across the servers to eliminate performance degradation.
 
 ## Automatic batch group migration for batch jobs
 
