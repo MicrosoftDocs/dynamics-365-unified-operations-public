@@ -4,7 +4,7 @@
 title: Enable batch retries
 description: This article describes how to enable automatic retries on batch jobs when transient failures occur.
 author: matapg007
-ms.date: 01/10/2022
+ms.date: 06/16/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -22,7 +22,7 @@ This article describes how retries are implemented on batch jobs in Finance and 
 
 ## Retry the batch job task, regardless of the error type
 
-We recommended that you use this option when you want a batch job task always to be retried, regardless of the error type. The **Maximum retries** value specifies the number of retries that will be applied to a task, regardless of the type of exception that occurs. If a task fails, the batch platform evaluates the number of times that it has been retried. If the number is less than the value of **Maximum retries**, the task is put back into a ready state so that it can be picked up again. 
+We recommended that you use this option when you want a batch job task always to be retried, regardless of the error type. The **Maximum retries** value specifies the number of retries that will be applied to a task, regardless of the type of exception that occurs. If a task fails, the batch platform evaluates the number of times that it has been retried. If the number is less than the value of **Maximum retries**, the task is put back into a ready state so that it can be picked up again. Maximum allowed value for **Maximum retries** is **5**.
 
 1. On the **Batch jobs** page, select **Batch task details**.
 2. On the **General** tab, set the **Maximum retries** field.

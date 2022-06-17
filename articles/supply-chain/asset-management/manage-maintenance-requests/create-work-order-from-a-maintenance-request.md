@@ -38,7 +38,7 @@ After you've created maintenance requests, you can easily convert them to work o
 > [!NOTE]
 > Every maintenance request can be related to only one work order. However, multiple maintenance requests can be included in one work order, even if the maintenance requests have different assets.
 
-1. Select **Asset management** \> **Common** \> **maintenance requests** \> **All maintenance requests**.
+1. Select **Asset management** \> **Maintenance requests** \> **All maintenance requests**.
 2. Before you can create a work order from maintenance requests, you must select, at a minimum, a maintenance job type for the maintenance requests, and also a maintenance job type variant and trade, if this information is relevant. In the grid view, you can easily update information for a maintenance request.
 3. When you're ready to create a work order, select the maintenance requests to include in it.
 
@@ -52,7 +52,7 @@ After you've created maintenance requests, you can easily convert them to work o
 
     Additionally, when you create a work order that is based on a maintenance request, if the asset that is related to the maintenance request is included in a warranty agreement, a message bar notifies you about the warranty agreement.
 
-6. Select **Asset management** \> **Common** \> **Work orders** \> **All work orders**, and open the new work order.
+6. Select **Asset management** \> **Work orders** \> **All work orders**, and open the new work order.
 
     ![Open new work order.](media/05-manage-maintenance-requests.png)
 

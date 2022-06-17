@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.26
 
 [!include [banner](../includes/banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.26. This version has a build number of 10.0.119 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.26. This version has a build number of 10.0.1192 and is available on the following schedule:
 
 - **Preview of release:** March 2022
 - **General availability of release (self-update):** April 2022

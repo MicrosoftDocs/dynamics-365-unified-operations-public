@@ -80,7 +80,7 @@ You can create repair lines for each step in the repair process.
 
 ## Create a repair line on a service order
 
-1.  Go to **Service management** \> **Common** \> **Service orders** \> **Service orders**.
+1.  Go to **Service management** \> **Service orders** \> **Service orders**.
 
 2.  Select the service order with the service object that needs repair.
 

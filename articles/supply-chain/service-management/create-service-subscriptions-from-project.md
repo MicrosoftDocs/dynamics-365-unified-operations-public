@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 You can create a service subscription from a project in **Project management and accounting**.
 
-1.  Click **Project management and accounting** \> **Common** \> **Projects** \> **All projects**. Open the project that you want to create a subscription for.
+1.  Click **Project management and accounting** \> **Projects** \> **All projects**. Open the project that you want to create a subscription for.
 
 2.  On the **Projects** form, on the **Action Pane**, on the **Manage** tab, click **Service** \> **Service subscription**.
 

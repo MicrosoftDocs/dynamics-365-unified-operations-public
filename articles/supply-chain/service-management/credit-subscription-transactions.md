@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Credit subscription transactions
 
-1.  Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.
+1.  Click **Service management** \> **Service subscriptions** \> **All service subscriptions**.
 
 2.  Select the subscription attached to the subscription transaction for which you want to create a credit note.
 

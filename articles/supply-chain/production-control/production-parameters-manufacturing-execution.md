@@ -66,7 +66,7 @@ On the **Production parameters** page, automatic BOM consumption is set up in th
 
 For each stage, the **Automatic BOM consumption** field lets you select one of three methods for picking items for a production order:
 
-- **Flushing principle** – This option is used in combination with an option that is defined for the BOM in the **Production** module. Click **Production control** &gt; **Common** &gt; **Production orders** &gt; **All production orders**. On the **All production orders** page, select a production order in the list, and then, on the Action Pane, click **BOM**. On the **BOM** page, on the **Setup** tab, in **Flushing principle** field, select one of the following options:
+- **Flushing principle** – This option is used in combination with an option that is defined for the BOM in the **Production** module. Click **Production control** &gt; **Production orders** &gt; **All production orders**. On the **All production orders** page, select a production order in the list, and then, on the Action Pane, click **BOM**. On the **BOM** page, on the **Setup** tab, in **Flushing principle** field, select one of the following options:
 
   - **Start**
   - **Finish**

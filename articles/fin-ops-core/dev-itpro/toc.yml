@@ -374,11 +374,11 @@
             href: deployment/on-premises-overview.md
           - name: Plan and prepare for on-premises deployments
             href: deployment/plan-onprem-deployment.md
-          - name: Microsoft Dynamics 365 Finance + Operations (on-premises) supported software
+          - name: On-premises supported software
             href: deployment/onprem-compatibility.md
           - name: Hardware sizing requirements
             href: ../fin-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-          - name: Authentication in Dynamics 365 Finance + Operations (on-premises)
+          - name: Authentication in on-premises environments
             href: deployment/authentication-onprem.md
         - name: Set up and deploy on-premises environments
           items: 
@@ -400,7 +400,7 @@
             href: deployment/certificate-rotation-on-prem.md
           - name: Client internet connectivity
             href: user-interface/client-disconnected.md
-          - name: Configure Batch-only and Interactive-only AOS nodes in on-premises deployments
+          - name: Configure batch-only and interactive-only AOS nodes in on-premises deployments
             href: deployment/onprem-batchonly.md
           - name: Configure high availability for SQL Server Reporting Services (SSRS) nodes
             href: deployment/onprem-SSRSHA.md
@@ -408,7 +408,7 @@
             href: deployment/onprem-reverseproxy.md
           - name: Configure the Warehousing app for on-premises deployments
             href: deployment/warehousing-for-on-premise-deployments.md
-          - name: Enable RSAT in Finance + Operations (on-premises) environments
+          - name: Enable RSAT in on-premises environments
             href: deployment/onprem-rsat-configuration.md
           - name: Install network printer devices in on-premises environments
             href: analytics/install-network-printer-onprem.md
@@ -426,9 +426,9 @@
             href: deployment/onprem-remove-reinstall-AOS-node.md
           - name: Reuse the same AD FS instance for multiple environments
             href: deployment/onprem-reuseadfs.md
-          - name: Upgrade Windows Server on your Microsoft Dynamics 365 Finance + Operations (on-premises) environments
+          - name: Upgrade Windows Server on your on-premises environments
             href: deployment/onprem-upgrade-os.md
-          - name: Upgrade the SQL Server instance of Microsoft Dynamics 365 Finance + Operations (on-premises) environments
+          - name: Upgrade or replace the SQL Server instance of on-premises environments
             href: deployment/onprem-upgrade-sqlserver.md
         - name: Local agent
           items:
@@ -980,6 +980,8 @@
           href: lifecycle-services/configuration-manager-lcs.md
         - name: Set up Configuration manager
           href: lifecycle-services/set-up-configuration-manager-lcs.md
+        - name: Copy configurations
+          href: lifecycle-services/copy-configuration-lcs.md
       - name: Configure the code upgrade service
         href: lifecycle-services/configure-execute-code-upgrade.md
       - name: Create or update methodologies
@@ -1048,7 +1050,9 @@
           href: lifecycle-services/dts-devops-extension.md
         - name: Azure DevOps extension tutorial (Public Preview)
           href: lifecycle-services/dts-ado-tutorial.md
-        - name: Dynamics 365 Translation Service Visual Studio Code extension (Public Preview)
+        - name: Visual Studio extension (Private Preview)
+          href: lifecycle-services/dts-visual-studio.md
+        - name: Visual Studio Code extension (Public Preview)
           href: lifecycle-services/dts-vscode-doc.md
     - name: Microsoft Power Platform integration
       items:
