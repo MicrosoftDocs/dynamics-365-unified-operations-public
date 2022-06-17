@@ -1,5 +1,6 @@
 {
-  "redirections": [    {
+  "redirections": [
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/analytics/er-prepare-application-specific-metadata.md",
       "redirect_url": "tasks/prepare-application-metadata-rcs?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
       "redirect_document_id": "false"
@@ -49,7 +50,6 @@
       "redirect_url": "../er-groupby-data-sources?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
       "redirect_document_id": "false"
     },
-
     {
       "source_path": "articles/finance/localizations/can-set-up-gst-hst-internet-file-transfer.md",
       "redirect_url": "can-gst-hst-internet-file-transfer",
@@ -105,10 +105,54 @@
       "redirect_url": "power-bi-home-page?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
       "redirect_document_id": "false"
     },
-
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform.md",
+      "redirect_url": "mobile-platform-getting-started",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lcs-solutions/business-process-modeler-libraries-updated-experience.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/creating-editing-browsing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-environments.md",
+      "redirect_url": "setup-deploy-on-premises-pu41",
+      "redirect_document_id": "false"
+    },
     {
       "source_path": "articles/fin-ops-core/dev-itpro/deployment/france-local-deployment.md",
       "redirect_url": "deployment-options-geo",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/pos-extension/pos-extension-getting-started.md",
+      "redirect_url": "pos-extension-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/pos-api-extension.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/pos-extension/pos-extension-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/create-windows-installer-payment-connector.md",
+      "redirect_url": "deploy-payment-connector",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/dev-retail-home-page.md",
+      "redirect_url": "/dynamics365/commerce/retail-sdk/retail-sdk-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/cpe-overview.md",
+      "redirect_url": "provisioning-guide",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/cpe-faq.md",
+      "redirect_url": "provisioning-guide",
       "redirect_document_id": "false"
     },
     {
@@ -119,6 +163,11 @@
     {
       "source_path": "articles/finance/localizations/e-invoicing-create-new-e-invoicing-feature.md",
       "redirect_url": "e-invoicing-working-globalization-features",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/define-maintain-retail-channels.md",
+      "redirect_url": "channels-overview",
       "redirect_document_id": "false"
     },
     {
@@ -18915,7 +18964,7 @@
     },
     {
       "source_path": "articles/supply-chain/troubleshooting/procurement/resubmit-po-after-change.md",
-      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/cant-resubmit-purchase-order-after-change",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
@@ -19486,6 +19535,51 @@
     {
       "source_path": "articles/supply-chain/troubleshooting/warehousing/you-cannot-cancel-wo.md",
       "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/you-cannot-cancel-work-on-user-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/configure-security-vendor-portal-users.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/manage-vendor-collaboration-users",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/collaborate-vendors-vendor-portal.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/vendor-collaboration-work-external-vendors",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02.md",
+      "redirect_url": "/dynamics365/supply-chain/cost-management/cost-calculation-level",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cost-management/tasks/calculate-bom-single-level-structure-2016-02.md",
+      "redirect_url": "/dynamics365/supply-chain/cost-management/cost-calculation-level",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/cluster-picking-item-confirmation.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/set-up-cluster-picking",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/consolidate-shipments.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/about-shipment-consolidation-policies",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/configure-linked-products.md",
+      "redirect_url": "/dynamics365/supply-chain/pim/product-information",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/create-product.md",
+      "redirect_url": "/dynamics365/supply-chain/pim/product-information",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/release-product-product-master-legal-entities.md",
+      "redirect_url": "/dynamics365/supply-chain/pim/product-information",
       "redirect_document_id": "false"
     }
   ]
