@@ -107,18 +107,18 @@ The following example scenarious show frequently performed actions that are asso
 ## Scenario 1: Create and post a stock transfer order
 
 1. Go to **Inventory management** > **Outbound orders** > **Transfer order** and create a new transfer order.
-2. In the **From warehouse** field, select the supply warehouse that the items are dispatched from.
-3. In the **To warehouse** field, select the receiving warehouse that the items are delivered to.
-4. In the **Transfer type** field, select **Stock transfer** to apply GST to the transfer of items.
+1. In the **From warehouse** field, select the supply warehouse that the items are dispatched from.
+1. In the **To warehouse** field, select the receiving warehouse that the items are delivered to.
+1. In the **Transfer type** field, select **Stock transfer** to apply GST to the transfer of items.
     
 
     > [!NOTE]
     > If you select **Transfer order** in the **Transfer type** field, the transfer order will be posted based on the standard transfer order process.
 
 1. In the **Price type** field, select a default price type for transfer order lines.
-2. On the **Transfer order lines** tab, create a new line and in the **Item number** field, select the item to transfer.
-3. In the **Transfer quantity** field, enter the quantity of the items to transfer, and in the **Unit** field, modify the default unit of measurement, if required.
-4. In the **Price type** field, select the price type for the transfer order line, from the following options:
+1. On the **Transfer order lines** tab, create a new line and in the **Item number** field, select the item to transfer.
+1. In the **Transfer quantity** field, enter the quantity of the items to transfer, and in the **Unit** field, modify the default unit of measurement, if required.
+1. In the **Price type** field, select the price type for the transfer order line, from the following options:
     
     - **Cost price** – The cost price, or the on-hand price, of the item is used for the transfer order line.
     - **Transfer price** – The transfer price that is set up for the item is used for the transfer order line.
@@ -127,9 +127,9 @@ The following example scenarious show frequently performed actions that are asso
     > If the **Price type** is set to **Transfer price**, the quantity of the items that are defined for the combination of item and dimension on the **Transfer price** page is displayed in the **Transfer quantity** field, but it can be modified.
 
 1. In the **Unit price** field, enter the cost price or the transfer price for one unit of the item.
-2. Select the **Tax information** tab to set up taxes for the transfer order and enter details. You can change the default information that is displayed in the fields.
-3. Select **Ship** > **Ship transfer order**, and on the **Shipment** page, post the transfer order shipment.
-4. Select **Receive** > **Receive**, and on the **Receive** page, post the transfer order receipt.
+1. Select the **Tax information** tab to set up taxes for the transfer order and enter details. You can change the default information that is displayed in the fields.
+1. Select **Ship** > **Ship transfer order**, and on the **Shipment** page, post the transfer order shipment.
+1. Select **Receive** > **Receive**, and on the **Receive** page, post the transfer order receipt.
 
     > [!NOTE]
     > If the "Enable uniform tax amount and GST transaction ID for both shipment and receipt transaction of a stock transfer order" feature is enabled in the **Feature management** workspace, it is only possible to receive a previously posted shipment. You need to select **Shipment** in the **Update** field when posting a receipt and select a previously posted shipment in the **Shipment voucher** field.
@@ -185,20 +185,20 @@ Transfer order receipt posting:
 
 In this case, no inventry in transit balance is tracked.
 
-### Scenario 3: Stock transfer order with GST
+### Scenario 3: Stock transfer order that have tax on the transfer price (GST)
 
-Complete the procedures in this article to create a stock transfer order that has tax on the transfer price. 
+1. Complete the procedures described in the above point **Scenario 1: Create and post a stock transfer order**, assuming that the values are as follows: 
 
-> [!NOTE]
->
-> Assume that:
-> - Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
-> - **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
-> - **GST** rate is **10%**."
-    
+- Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
+- **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
+- **GST** rate is **10%**."
 - From warehouse -> Site 1
 - Transit warehouse -> Site 2
 - To warehouse -> Site 3
+
+1. At the line level, select **Tax information from warehouse**, select the **GST** tab and click **OK**.
+1. At the line level, select **Tax information to warehouse**, select the **GST** tab and click **OK**.
+1. Go to **Inquiries** > **Tax document** and verify that the tax is calculated
 
 Transfer order shipment posting:
 
