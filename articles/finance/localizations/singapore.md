@@ -33,6 +33,7 @@ This article provides links to documentation resources for Singapore.
 
 - [Generate the Singapore GST-05 report](apac-sgp-generate-gst-05-report.md)
 - [Reverse charge VAT](emea-reverse-charge.md)
+- [IRAS Audit File (IAF)](apac-sgp-iras-audit-file.md)
 
 
 ## Additional resources
