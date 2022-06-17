@@ -6,6 +6,31 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/commerce/tasks/create-associate-registers.md",
+      "redirect_url": "/dynamics365/commerce/implementation-considerations-devices",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/tasks/create-associate-hardware-station.md",
+      "redirect_url": "/dynamics365/commerce/commerce/retail-hardware-station-configuration-installation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/retail-time-attendance.md",
+      "redirect_url": "/dynamics365/commerce/task-mgmt-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/serialized-inventory.md",
+      "redirect_url": "/dynamics365/commerce/pos-serialized-items",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/tasks/create-associate-device.md",
+      "redirect_url": "/dynamics365/commerce/implementation-considerations-devices",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/lcs-solutions/business-process-modeler-libraries-updated-experience.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/creating-editing-browsing",
       "redirect_document_id": "false"
