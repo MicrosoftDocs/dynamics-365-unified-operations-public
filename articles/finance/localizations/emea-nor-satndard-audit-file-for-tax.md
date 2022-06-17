@@ -72,6 +72,10 @@ Import the most recent versions of the configurations. The version description u
 
 ![Standard Audit File for Tax (SAF-T) field on the General ledger parameters page.](media/nor-saf-gl-parameters.jpg)
 
+> [!NOTE]
+> If you enable [**Standard Audit File for Tax (SAF-T) electronic report**](../general-ledger/standard-audit-file.md) feature in **Feature management**, in addition to **Standard Audit File for Tax (SAF-T)** field on the **Standard Audit File for Tax (SAF-T)** tab of the **General ledger parameters** page, you will see **Use common menu item** check box. 
+> **Use common menu item** check box must be *unmaked* to run SAF-T Format (NO) electronic reporting configuration. Enable **Use common menu item** check box by marking it only if you plan to use electronic reporting configuration which can be run directly from Electronic Reporting workspace and does not require any data preprocessing on Finance application side.
+
 ### <a name="sales"></a>Associate sales tax codes with Norwegian standard value-added tax (VAT) tax codes
 
 As the documentation explains, in Norwegian SAF-T Financial data, sales tax codes that are used in Finance must be associated with Norwegian standard VAT tax codes (\<StandardTaxCode\>) for the purpose of SAF-T reporting. The Norwegian standard VAT tax codes are available at <https://github.com/Skatteetaten/saf-t>.
