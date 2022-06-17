@@ -110,7 +110,6 @@ The following example scenarious show frequently performed actions that are asso
 1. In the **From warehouse** field, select the supply warehouse that the items are dispatched from.
 1. In the **To warehouse** field, select the receiving warehouse that the items are delivered to.
 1. In the **Transfer type** field, select **Stock transfer** to apply GST to the transfer of items.
-    
 
     > [!NOTE]
     > If you select **Transfer order** in the **Transfer type** field, the transfer order will be posted based on the standard transfer order process.
@@ -141,7 +140,10 @@ You can also cancel a previously posted stock transfer order shipment if no rece
 
 ### Scenario 2: Standard transfer order posting
 
+In this scenario, complete the procedures described in the above **Scenario 1: Create and post a stock transfer order**, assuming that the values are as provided in the below examples. 
+
 #### Example 1:
+
 - From warehouse -> Site 1
 - Transit warehouse -> Site 2
 - To warehouse -> Site 3
@@ -167,6 +169,7 @@ Transfer order receipt posting:
 The **balance on the inventory in transit** can be calculated as **_InventoryIssue-Site2 - InventoryReceipt-Site2_**. It is nullified upon the receipt.
 
 #### Example 2:
+
 - From warehouse -> Site 1
 - Transit warehouse -> Site 1
 - To warehouse -> Site 3
@@ -187,18 +190,29 @@ In this case, no inventry in transit balance is tracked.
 
 ### Scenario 3: Stock transfer order that have tax on the transfer price (GST)
 
-1. Complete the procedures described in the above point **Scenario 1: Create and post a stock transfer order**, assuming that the values are as follows: 
+Complete the procedures in this scenario to create a stock transfer order that has tax on the transfer price.
 
-- Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
-- **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
-- **GST** rate is **10%**."
+1. Set up sites and warehouses as follows:
+
 - From warehouse -> Site 1
 - Transit warehouse -> Site 2
 - To warehouse -> Site 3
 
-1. At the line level, select **Tax information from warehouse**, select the **GST** tab and click **OK**.
-1. At the line level, select **Tax information to warehouse**, select the **GST** tab and click **OK**.
-1. Go to **Inquiries** > **Tax document** and verify that the tax is calculated
+1. Go to **Inventory management** > **Outbound orders** > **Transfer order** and create a new transfer order.
+1. In the **From warehouse** field, select the supply warehouse that the items are dispatched from.
+1. In the **To warehouse** field, select the receiving warehouse that the items are delivered to.
+1. In the **Transfer type** field, select **Stock transfer** to apply GST to the transfer of items.
+1. In the **Price type** field, select a default price type for transfer order lines.
+1. On the **Transfer order lines** tab, create a new line and in the **Item number** field, select the item to transfer.
+1. In the **Transfer quantity** field, enter the quantity of the items to transfer, and in the **Unit** field, modify the default unit of measurement, if required.
+1. In the **Price type** field, select the price type for the transfer order line as required.
+1. In the **Unit price** field, enter the cost price XX or the transfer price for one unit of the item.
+1. Select the **Tax information** tab to set up taxes for the transfer order and enter details. You can change the default information that is displayed in the fields.
+    - **GST** rate is **10%**."
+1. Select **Ship** > **Ship transfer order**, and on the **Shipment** page, post the transfer order shipment.
+    - Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
+    - **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
+1. Select **Receive** > **Receive**, and on the **Receive** page, post the transfer order receipt.
 
 Transfer order shipment posting:
 
