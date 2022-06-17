@@ -100,7 +100,7 @@ The code for the number sequence group is then entered by default on the sales o
 > [!NOTE]
 > The lookup for the **Tax registration number** field on the **Tax registration** FastTab contains only the registration numbers of the legal entity that have a VAT ID registration category. The list of registration IDs is available for the corresponding country or region of the tax authority.
 >
-> Date effectivity isn't supported for assigned registration numbers. If the the registration number of the legal entity is changed or expired, you must manually update the tax registration in the setup of the tax authority and sales tax settlemet period.
+> Date effectivity isn't supported for assigned registration numbers. If the registration number of the legal entity is changed or expired, you must manually update the tax registration in the setup of the tax authority and sales tax settlement period.
 
 ### Set up the sales tax settlement period
 
@@ -117,9 +117,8 @@ On the **Sales tax settlement periods** page, create sales tax settlement period
    ![Customer and vendor registration IDs on the Tax feature setup page.](./media/tax-service-multvatid-tax-feature-setup-09-2NewUI.png)
 
     > [!NOTE]
-    > This step is optional unless the customer or vendor has multiple tax registration numbers and you want the Tax Calculation service to determine the ID. The Tax Calculation service will use the value from "Tax exempt number" that is filed on sales and purchase documents header as the default value of customer/vendor tax registration number and replace it with the value which you defined in customer/vendor tax registration number applicability rules.
-
-    > [!NOTE]
+    > This step is optional unless the customer or vendor has multiple tax registration numbers, and you want the Tax Calculation service to determine the ID. As the default value for the customer/vendor tax registration number, the Tax Calculation service will use the value that is entered in the **Tax exempt number** field on the header of sales and purchase documents. It will replace that default value with the value that you defined in customer/vendor tax registration number applicability rules.
+    >
     > During sales tax calculation and document posting, the tax service returns the customer's or vendor's tax registration number to Dynamics 365 Finance and updates the **Tax exempt number** field on the sales order or purchase order. If the corresponding value isn't set up on the **Registration ID** FastTab on the **Manage addresses** page for the customer or vendor, the registration ID is left blank, and you receive the following message: "Customer tax registration 'xxx' is not found in the customer's Registration IDs setup. To add customer tax registration to sales tax transactions and posted documents, make sure the registration is defined in the Registration IDs setup."
 
 ## Sales order and purchase order processing
