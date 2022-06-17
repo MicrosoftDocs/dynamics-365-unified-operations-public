@@ -11,6 +11,31 @@
       "redirect_document_id": "false"
     },
     {
+      "source_path": "articles/commerce/tasks/run-out-box-reports.md",
+      "redirect_url": "/dynamics365/commerce/price-report",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/tasks/perform-self-service-download-hardware-station.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/synchronize-installers",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/tasks/create-online-channel-define-channel-attributes.md",
+      "redirect_url": "/dynamics365/commerce/channel-setup-online",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/tasks/retail-price-adjustments.md",
+      "redirect_url": "/dynamics365/commerce/price-adjustments-discounts",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/tasks/define-call-center-channel-channel-attributes.md",
+      "redirect_url": "/dynamics365/commerce/channel-setup-callcenter",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-environments.md",
       "redirect_url": "setup-deploy-on-premises-pu41",
       "redirect_document_id": "false"
