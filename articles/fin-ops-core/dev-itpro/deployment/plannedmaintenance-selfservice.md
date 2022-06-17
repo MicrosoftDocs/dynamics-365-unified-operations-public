@@ -35,7 +35,7 @@ A planned maintenance window is typically during the dark hours of the geographi
 |Australia |1:00 PM to 7:00 PM UTC|
 |Brazil |4:00 AM to 10:00 AM UTC |
 |Canada	|4:00 AM to 10:00 AM UTC |
-|C|hina	|4:00 PM to 10:00 PM UTC|
+|China	|4:00 PM to 10:00 PM UTC|
 |Europe	|10:00 PM to 4:00 AM UTC|
 |France	|10:00 PM to 4:00 AM UTC|
 |India	|6:30 PM to 00:30 AM UTC|
@@ -87,7 +87,7 @@ Individual batch servers will not be available for up to 30 minutes.The followin
   - Check printing 
   - Statement posting
 
-For more information, see [Can I change the maximum number of retries and the retry interval?](../sysadmin/retryable-batch.md#can-i-change-the-maximum-number-of-retries-and-the-retry-interval) to leran more about batch retry.
+For more information, see [Can I change the maximum number of retries and the retry interval?](../sysadmin/retryable-batch.md#can-i-change-the-maximum-number-of-retries-and-the-retry-interval) to learn more about batch retry.
 
 ### Priority-based scheduling
 - If priority-based scheduling is enabled, users will experience reduced Application Object Server (AOS) capacity during the maintenance window. Batch jobs will be served by the available AOS instances. Therefore, there will eventually be no complete downtime during the servicing window.
