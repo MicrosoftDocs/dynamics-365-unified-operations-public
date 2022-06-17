@@ -631,7 +631,7 @@
           - name: Create worker benefit plans
             href: hr-benefits-plans-worker.md
            -name: Set up future life events
-            name: hr-benefits-plans-future-life-events.md
+            href: hr-benefits-plans-future-life-events.md
           - name: Set up flex credit programs
             href: hr-benefits-plans-flex-credit-programs.md
         - name: Process benefit plans
