@@ -49,9 +49,13 @@ You've either created or downloaded a copy of robots.txt to your computer depend
 User-agent: *
 Disallow: /signin
 Disallow: /cart
-Disallow: /*?refiners=
-Disallow: /*?sorting=
-Disallow: /*?search=
+Disallow: /*refiners=
+Disallow: /*sorting=
+Disallow: /*search?
+Disallow: /*search=
+Disallow: /*.woff
+Disallow: /*.woff2
+Disallow: /*skip=
 ```
 
 ## Validate
