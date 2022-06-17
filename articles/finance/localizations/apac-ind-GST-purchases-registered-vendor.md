@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.4
 
 1. Go to **Procurement and sourcing** \> **Requests for quotations** \> **All requests for quotations**.
 2. Create a record for a taxable item.
-3. On the Action Pane, on the **Quotation** tab, in the **Process** group, select **Send**, and publish the request for quotation (RFQ) to the vendor portal.
+3. On the Action Pane, on the **Quotation** tab, in the **Process** group, select **Send**, and publish the request for quotation (RFQ) to the vendor collaboration module.
 4. Select **OK**.
 5. Close the message that you receive.
 6. Close the **Request for quotation details** page.

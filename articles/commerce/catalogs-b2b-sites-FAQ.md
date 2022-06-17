@@ -17,7 +17,6 @@ ms.search.validFrom: 2022-02-28
 # Commerce catalogs for B2B FAQ
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article provides answer to frequently asked questions about Microsoft Dynamics 365 Commerce [business-to-business (B2B) catalogs](catalogs-b2b-sites.md).
 

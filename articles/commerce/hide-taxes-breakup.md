@@ -16,7 +16,6 @@ ms.search.validFrom: 2022-03-28
 # Hide tax breakup information in order summaries
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes how to hide tax breakup information in order summaries on cart, checkout, order confirmation, and order details pages in Microsoft Dynamics 365 Commerce.
 

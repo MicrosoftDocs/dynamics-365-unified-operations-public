@@ -823,7 +823,7 @@ Currently, Retail Modern POS is available only as a Windows 8.1 application for 
 | Adjust vendor-owned inventory by using a counting journal. | It's important that you keep the system on-hand inventory in sync with the actual physical inventory. The vendor-owned inventory can be adjusted in and out by using counting processes such as quantity adjustment and counting journal processes. |
 | Find out more about consignment support in Dynamics 365 for Operations | For more information about the support for consignment processes, see [Consignment](../../../supply-chain/inventory/consignment.md), [Setting up consignment](/d365F-O/fin-ops-core/fin-ops/get-started/consignment), [Create a consignment replenishment order (Task guide)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md), and [Change the ownership of consignment inventory based on production demand (Task guide)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
-### Vendor collaboration (previously known as the Vendor portal)
+### Vendor collaboration
 
 | What you can do | Why this is important |
 |-----------------|-----------------------|

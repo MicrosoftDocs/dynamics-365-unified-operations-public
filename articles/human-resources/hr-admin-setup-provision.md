@@ -149,7 +149,9 @@ Use the following guidance when determining which Power Apps environment to depl
 6. Dual-write capabilities for integrating Human Resources data with the Power Apps environment can only be used if the **Enable Dynamics 365 apps** option is selected for the environment. See [Dual-write home page](../fin-ops-core/dev-itpro/data-entities/dual-write/dual-write-home-page.md) for more information on Dual-write.
 
     > [!NOTE]
-    > The **Enable Dynamics 365 apps** option must be selected at the time the Power Apps environment is created. If the option is not selected at the time of provisioning, you won't be able to use Dual-write to integrate data between Dynamics 365 Human Resources and the Power Apps environment, or install Dynamics 365 apps such as Dynamics 365 Sales and Field Service on the environment. This option is not reversible. For more information, see [Some important considerations when creating a new environment](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) on the Power Platform documentation site.
+    > The **Enable Dynamics 365 apps** option must be selected at the time the Power Apps environment is created. If the option is not selected at the time of provisioning, you won't be able to use Dual-write to integrate data between Dynamics 365 Human Resources and the Power Apps environment, or install Dynamics 365 apps such as Dynamics 365 Sales and Field Service on the environment. This option is not reversible. 
+    > -  Human Resources does not support changing the linked Dataverse instance once Human Resources has been deployed into it. </br></br>
+    > For more information, see [Some important considerations when creating a new environment](/power-platform/admin/create-environment#some-important-considerations-when-creating-a-new-environment) on the Power Platform documentation site.  
 
 7. After you've determined the correct environment to use, you can continue with the provisioning process. 
 

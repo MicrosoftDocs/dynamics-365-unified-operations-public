@@ -47,20 +47,20 @@ You can view translations of product-related information in any external source 
 
 ## How do I create translations for product-related information?
 To create translations for a product, follow these steps:
-1.  Click **Product information management** &gt; **Common** &gt; **Released products**.
+1.  Click **Product information management** &gt; **Products** &gt; **Released products**.
 2.  Select a product, and on the Action Pane, in the **Languages** group, click **Translations**.
 3.  In the **Text translation** page, in the **Language** field, select a language. To add more languages, expand the **Language** field, and then click **OK**.
 4.  In the **Translated text** group, enter translations in the **Description** and **Product name** fields.
 
 To create translations for product attributes, follow these steps:
-1.  Click **Product information management** &gt; **Common** &gt; **Released products**.
+1.  Click **Product information management** &gt; **Products** &gt; **Released products**.
 2.  Under **Setup**, click **Attributes**, and then click **Attributes**.
 3.  In the **Attributes** page, click **Translate**.
 4.  In the **Text translation** page, in the **Language** field, select a language. To add more languages, expand the **Language** field, and then click **OK**.
 5.  In the **Translated text** group, enter translations in the **Description**, **Friendly name**, and **Help text** fields.
 
 To create translations for product dimension values, follow these steps:
-1.  Click **Product information management** &gt; **Common** &gt; **Released products**.
+1.  Click **Product information management** &gt; **Products** &gt; **Released products**.
 2.  Select a product, and then click **Product dimensions**.
 3.  Select one of the links for the product dimensions: **Configurations**, **Sizes**, **Colors**, or **Style**.
 4.  Select a dimension value and then click **Translate**.

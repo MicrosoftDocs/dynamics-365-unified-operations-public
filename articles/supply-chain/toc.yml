@@ -617,8 +617,6 @@
           href: asset-management/asset-management-mobile-workspace.md
       - name: Integrate asset management with Dynamics 365 Guides
         href: asset-management/asset-management-guides-integration.md
-    - name: Data management
-      items:
       - name: Target entities
         href: asset-management/data-management/target-entities.md
     - name: Cost accounting
@@ -773,6 +771,10 @@
           href: cost-management/physical-financial-updates.md
         - name: Include physical value
           href: cost-management/include-physical-value.md
+        - name: Fixed receipt price
+          href: cost-management/fixed-receipt-price.md
+        - name: Post to charge account accounting principle
+          href: cost-management/post-to-charge-account-accounting-principle.md
         - name: Cost objects
           href: cost-management/cost-object.md
         - name: View cost object balance
@@ -1649,6 +1651,8 @@
           href: inventory/tasks/check-availability-stock.md
         - name: Inventory on-hand list
           href: inventory/inventory-on-hand-list.md
+        - name: Inventory transaction details
+          href: inventory/inventory-transactions-details.md
         - name: Initialize stock levels in the warehouse
           href: inventory/tasks/initialize-stock-levels-warehouse.md
         - name: Transfer physical inventory within the warehouse
@@ -2109,6 +2113,8 @@
         href: ../fin-ops-core/fin-ops/organization-administration/date-time-zones.md?toc=/dynamics365/supply-chain/toc.json
     - name: Procurement and sourcing
       items:
+      - name: Procurement and sourcing home page
+        href: procurement/procurement-sourcing.md
       - name: Procurement and sourcing overview
         href: procurement/procurement-sourcing-overview.md
       - name: Procurement and sourcing workflow
@@ -2165,6 +2171,8 @@
           href: procurement/purchase-order-creation.md
         - name: Create a purchase order
           href: procurement/tasks/create-purchase-order.md
+        - name: Create a purchase order governed by budget
+          href: cost-management/tasks/create-purchase-order-governed-by-budget.md
         - name: Create a purchase order with a delivery schedule
           href: procurement/tasks/create-purchase-order-delivery-schedule.md
         - name: Create a purchase order for a one-time supplier
@@ -2381,6 +2389,8 @@
             href: pim/tasks/create-dimension-based-configurations.md
         - name: Create constraint-based configuration
           items:
+          - name: Product configuration models overview
+            href: pim/product-configuration-models.md
           - name: Set up a product configuration model
             href: pim/set-up-maintain-product-configuration-model.md
           - name: Product configuration model calculations
@@ -2931,6 +2941,8 @@
           href: sales-marketing/customer-portal-user-admin.md
         - name: Customize and use the Customer portal
           href: sales-marketing/customer-portal-customize.md
+      - name: Credit limits for customers
+        href: sales-marketing/credit-limits-customers.md
       - name: Trade allowance
         href: sales-marketing/trade-allowance.md
       - name: Create a new trade agreement
@@ -2949,6 +2961,8 @@
             href: service-management/service-agreement-groups.md
           - name: Create service agreements
             href: service-management/create-service-agreements.md
+          - name: Create service agreement groups
+            href: service-management/create-service-agreement-groups.md
           - name: Service intervals
             href: service-management/service-intervals.md
           - name: Set up service intervals
@@ -2970,7 +2984,7 @@
           - name: Service objects overview
             href: service-management/service-objects.md
           - name: Create service objects
-            href: service-management/create-service-task-relations.md
+            href: service-management/create-service-objects.md
           - name: Attach inventory items to service objects
             href: service-management/attach-inventory-items-service-objects.md
           - name: Service object groups
@@ -3115,6 +3129,8 @@
               href: service-management/create-item-requirements-service-orders.md
             - name: Service order item requirements
               href: service-management/service-order-item-requirements.md
+            - name: Add an address to a service order
+              href: service-management/add-address-service-order.md
             - name: Subscription workflow overview
               href: service-management/subscription-workflow-overview.md
             - name: Combine service orders
@@ -3137,6 +3153,8 @@
               href: service-management/set-up-preferred-technician.md
             - name: Set up dispatch teams
               href: service-management/set-up-dispatch-teams.md
+            - name: View dispatch teams
+              href: service-management/view-dispatch-teams.md
             - name: Prioritize service orders
               href: service-management/prioritize-service-orders.md
             - name: View the status of service orders
@@ -3255,8 +3273,6 @@
           href: landed-cost/landed-cost-enable.md
         - name: Landed cost parameters
           href: landed-cost/landed-cost-parameters.md
-        - name: Landed cost procurement and sourcing parameters
-          href: landed-cost/landed-cost-procurement-parameters.md
         - name: Voyage status setup
           href: landed-cost/voyage-status-setup.md
         - name: Shipping container setup
@@ -3267,12 +3283,16 @@
           href: landed-cost/multi-leg-journey-setup.md
         - name: Shipping information setup
           href: landed-cost/shipping-information-setup.md
+        - name: Auto costs setup
+          href: landed-cost/auto-cost-setup.md
         - name: Costing parameter values setup
           href: landed-cost/costing-parameters-setup.md
+        - name: Landed cost procurement and sourcing parameters
+          href: landed-cost/landed-cost-procurement-parameters.md
+        - name: Vendor settings added for Landed cost
+          href: landed-cost/vendors-landed-cost-settings.md
         - name: Default descriptions for the general ledger
           href: landed-cost/defult-descriptions.md
-      - name: Vendor settings added for Landed cost
-        href: landed-cost/vendors-landed-cost-settings.md
       - name: Work with voyages, containers, and folios
         items:
         - name: Manage voyages
