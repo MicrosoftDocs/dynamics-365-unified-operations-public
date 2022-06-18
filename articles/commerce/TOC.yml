@@ -1398,6 +1398,8 @@
         items:
         - name: Fiscal registration service integration sample for Austria
           href: localizations/emea-aut-fi-sample.md
+        - name: Deployment guidelines for cash registers for Austria
+          href: localizations/emea-aut-deployment.md   
         - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
           href: localizations/emea-aut-fi-sample-sdk.md
       - name: Brazil
