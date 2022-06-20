@@ -38,11 +38,12 @@ This article explains how to do reporting for multiple value-added tax (VAT) reg
 - France
 - Germany
 - Netherlands
-- United Kingdom
 - Norway
+- Poland
 - Spain
 - Sweden
 - Switzerland
+- United Kingdom
   
 The scope of reporting is limited to generation of the following reports:
 
@@ -353,6 +354,10 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.21 | Norway | Tax declaration model.version.112<br>Tax declaration model mapping.version.112.192<br>VAT Declaration XML (NO).version.112.54<br>VAT Declaration Excel (NO).version.112.54.39 | [VAT return with direct submission to Altinn](emea-nor-vat-return.md) |
     | 10.0.23 | Spain | VAT Declaration TXT(ES).version.101.28<br>VAT Declaration Excel (ES).version.101.28.17 | [VAT declaration (Spain)](emea-esp-vat-declaration-spain.md) |
     | 10.0.25 | Denmark | VAT Declaration Excel (DK).version.101.8 | [VAT declaration (Denmark)](emea-dnk-vat-declaration-denmark.md) |
+    | 10.0.29 | Poland  | Standard Audit File (SAF-T).version.112<br>Standard Audit File model mapping.version.112.192<br>JPK-V7M XML format (PL).version.112.54<br>JPK-V7M Excel format (PL).version.112.54.39 | [VAT declaration (Poland)](emea-pol-vat-declaration.md) |
+
+    > [!NOTE]
+    > VAT declaration of Poland (JPK-V7M) is supported via Electronic messaging functionality only. For more information, see [VAT declaration with registers (JPK-V7M, VDEK)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-pol-vdek).
 
 ## Generate a VAT declaration for multiple VAT registrations
 
@@ -368,6 +373,9 @@ All tax registrations have the same settings for EU sales list parameters.
     ![Report sales tax.](media/Multipleid-image16.png)
 
 5. Select **OK** to generate the report.
+
+    > [!NOTE]
+    > VAT declaration of Poland (JPK-V7M) is supported via Electronic messaging functionality only. For more information, see [VAT declaration with registers (JPK-V7M, VDEK)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-pol-vdek).
 
 <!--## Known limitations-->
 
