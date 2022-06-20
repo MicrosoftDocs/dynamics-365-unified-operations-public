@@ -56,14 +56,14 @@ Some of the parameters from the **Polish electronic invoice (PL)** electronic in
 1. Import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the Global repository](e-invoicing-import-feature-global-repository.md).
 2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](e-invoicing-create-new-globalization-feature.md).
 3. On the **Versions** tab, verify that the **Draft** version is selected.
-4. On the **Setups** tab, in the grid, select the **Sales invoice derived** feature setup.
+4. On the **Setups** tab, in the grid, select the **Submit sales invoice** feature setup.
 5. Select **Edit**.
 6. On the **Processing pipeline** tab, in the **Processing pipeline** section, select **Sign ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ**.
 7. In the **Parameters** section, select **Certificate name**, and then select the name of the digital certificate that you created.
 8. In the **Processing pipeline** section, select **Integrate with ZZZZZZZZZZZZZZZZZZZZZZZ**. Repeat this step for the two occurrences of this action.
 9. In the **Parameters** section, select **Web service URL** and **Login service URL**. Then review the URL parameters. To get the testing and production URL, go to the website of Polish National system for electronic invoicing [KSEF](https://www.podatki.gov.pl/ksef).
 10. Select **Save**, and close the page.
-11. Repeat the steps 4 through 10 for the **Project invoice derived** and **Advance invoice derived** feature setups ZZZZZZZZZZZZZZZZZZZZ.
+11. Repeat the steps 4 through 10 for the **Submit project invoice** and **Submit advance invoice** feature setups.
 
 ## Country-specific configuration for the Polish electronic invoice (PL) application setup
 
