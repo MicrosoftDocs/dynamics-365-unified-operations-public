@@ -2,10 +2,10 @@
 # required metadata
 
 title: IRAS Audit File (IAF) for Singapore
-description: This article explains how to set up and generate the IRAS Audit File (IAF) for Singapore for legal entities that have their primary address in Singapore. 
+description: This article explains how to set up and generate the IRAS Audit File (IAF) for Singapore for legal entities with a primary address in Singapore. 
 author: liza-golub
 ms.author: elgolu
-ms.date: 06/17/2022
+ms.date: 06/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,15 +29,15 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-According to Inland Revenue Authority of Singapore (IRAS), companies in Singapore should maintain sales and purchases listings to support the figures reported in GST returns. During an audit, the listings are to be provided in the form of an IRAS Audit File (IAF).
+According to Inland Revenue Authority of Singapore (IRAS), companies in Singapore should maintain a listing of sales and purchases to support the figures reported in GST returns. During an audit, the listings are provided in the form of an IRAS Audit File (IAF).
 
-This topic describes how to set up Dynamics 365 Finance to prepare the IAF in TXT format for legal entities that have their primary address in Singapore.
+This article describes how to set up Dynamics 365 Finance to prepare the IAF in TXT format for legal entities with a primary address in Singapore.
 
-The IAF in TXT format is available in Dynamics 365 Finance as of version 10.0.26.
+The IAF in TXT format is available in Finance starting with version 10.0.26.
 
-## Prepare your environment to generate a IRAS Audit File (IAF) for Singapore
+## Prepare your environment to generate an IRAS Audit File (IAF) for Singapore
 
-To start to work with the **IAF for Singapore**, complete the following tasks:
+To work with the **IAF for Singapore**, complete the following tasks:
 
 1. [Import Electronic reporting (ER) configurations](#import).
 2. [Associate sales tax codes with singaporean standard GST codes](#tax-codes)
@@ -47,7 +47,7 @@ To start to work with the **IAF for Singapore**, complete the following tasks:
 
 ### <a name="import"></a>Import ER configurations
 
-Before you can generate a **IAF for Singapore**, you must import the latest versions of the following ER configurations.
+Before you generate a **IAF for Singapore**, import the latest versions of the following ER configurations.
 
 | ER configuration name | Type | Description |
 |-----------------------|------|--------------------|
@@ -64,24 +64,24 @@ Import the most recent versions of the configurations. The version description u
 
 ### <a name="tax-codes"></a>Associate sales tax codes with Singaporean standard GST codes
 
-As the documentation explains, in **IAF for Singapore**, sales tax codes that are used in Finance must be associated with Singaporean standard GST codes for the purpose of IAF reporting. 
+In **IAF for Singapore**, sales tax codes that are used in Finance must be associated with Singaporean standard GST codes for the purpose of IAF reporting. 
 
-In case your legal entity's GST codes set up is *in accordance* with the Singaporean standard GST codes, complete the following tasks:
+If your legal entity's GST codes set up is *in accordance* with the Singaporean standard GST codes, complete the following tasks:
 
-1. Open the **Electronic reporting** workspace, in the configuration tree, select the **IRAS Audit File - IAF in TXT (SG)** electronic reporting format. 
-2. Make sure that company you are working is the company for which you will be running **IAF for Singapore**.
+1. In the **Electronic reporting** workspace, in the configuration tree, select the **IRAS Audit File - IAF in TXT (SG)** electronic reporting format. 
+2. Make sure that the company you are working is the company for which you will run **IAF for Singapore**.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 4. Select the version of the format that you want to use on the left side of the **Application specific parameters** page.
 7. Change the value of the **State** field to **Completed**, save your changes, and close the page.
 
-In case your legal entity's GST codes set up *is **not** in accordance* with the Singaporean standard GST codes, to associate GST codes that are used in Finance with Singaporean standard GST codes, follow these steps.
+If your legal entity's GST codes set up *is **not** in accordance* with the Singaporean standard GST codes, to associate GST codes that are used in Finance with Singaporean standard GST codes, follow these steps.
 
-1. Open the **Electronic reporting** workspace, in the configuration tree, select the **IRAS Audit File - IAF in TXT (SG)** electronic reporting format. 
-2. Make sure that company you are working is the company for which you will be running **IAF for Singapore**.
+1. In the **Electronic reporting** workspace, in the configuration tree, select the **IRAS Audit File - IAF in TXT (SG)** electronic reporting format. 
+2. Make sure that the company you are working is the company for which you will run **IAF for Singapore**.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 4. Select the version of the format that you want to use on the left side of the **Application specific parameters** page.
 5. On the **Lookup** FastTab, select **StandardTaxCodes_Lookup**, and then specify criteria on the **Conditions** FastTab by adding lines for each **Result** value which must be used in the selected company. If several **GST codes** in the selected company must result the same **Standard GST codes**, add a separate line for each **GST code** and specify the same **Standard GST code** for each one.
-6. Select the value, **Other** as the last condition in the list. It must be set to **\*Not blank\*** in **GST code** column. Verify the value in the **Line** column that **Other** is the last condition in the table.
+6. Select the value **Other** as the last condition in the list. This condition must be set to **\*Not blank\*** in the **GST code** column. Verify the value in the **Line** column that **Other** is the last condition in the table.
 7. When you've finished setting up conditions, change the value of the **State** field to **Completed**, save your changes, and close the page.
 
 ### <a name="features"></a>Enable features in Feature management
@@ -89,38 +89,38 @@ In case your legal entity's GST codes set up *is **not** in accordance* with the
 1. Open the **Feature management** workspace.
 2. On the **All** tab, in the feature list, find and select the following features:
  
-    - [Standard Audit File for Tax (SAF-T) electronic report](https://docs.microsoft.com/en-us/dynamics365/finance/general-ledger/standard-audit-file.md) - mandatory to be enabled
-    - [Optimization of query data source creation time during execution of ER reports](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting) - optionally to be enabled
-    - [Optimize datasets memory consumption at ER reports runtime]() - optionally to be enabled
-    - [Accelerate the ER labels storage](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports#performance) - optionally to be enabled
-    - [Use application specific parameters from previous versions of ER formats](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up#reuse-legal-entitydependent-parameters) - optionally to be enabled
+    - [Standard Audit File for Tax (SAF-T) electronic report](../standard-audit-file.md) - Mandatory to be enabled.
+    - [Optimization of query data source creation time during execution of ER reports](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) - Optional to be enabled.
+    - [Optimize datasets memory consumption at ER reports runtime]() - Optional to be enabled.
+    - [Accelerate the ER labels storage](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance) - Optional to be enabled.
+    - [Use application specific parameters from previous versions of ER formats](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md#reuse-legal-entitydependent-parameters) - Optional to be enabled.
 
 3. Select **Enable now**.
 
 ### <a name="gl-param"></a>Select the ER configuration in General ledger parameters
 
-1. Go to **General ledger** \> **Setup** \> **General ledger parameters**.
+1. Go to **General ledger** > **Setup** > **General ledger parameters**.
 2. On the **General ledger parameters** page, on the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select **IRAS Audit File - IAF in TXT (SG)**.
 
-### <a name="header-information"></a>Set up company information for reporting header
+### <a name="header-information"></a>Set up company information for the reporting header
 
-The first section of the **IAF for Singapore** represent the following information about reporting legal entity:
+The first section of the **IAF for Singapore** represents the following information about a reporting legal entity:
 
-- [CompanyName](#company-name): Company name of business user
-- [CompanyUEN](#company-uen): Unique Entity Number (UEN) of the business user
-- [GSTNo](#company-gst): GST Registration Number of the business user
+- [CompanyName](#company-name): The company name of the business user.
+- [CompanyUEN](#company-uen): The unique Entity Number (UEN) of the business user.
+- [GSTNo](#company-gst): The GST Registration Number of the business user.
 
 #### <a name="company-name"></a>CompanyName - Company name of business user
 
-Value of this field represents the name of the legal entity specified in the **Name** field on **Organization administration** \> **Organizations** > **Legal entities** page.
+The value of this field represents the name of the legal entity that is specified in the **Name** field on the **Legal entities** page (**Organization administration** > **Organizations** > **Legal entities**).
 
 #### <a name="company-uen"></a>CompanyUEN - Unique Entity Number (UEN) of the business user
 
-To report the UEN of the company that is reporting IAF, the system retrieves value from the registration ID that is defined in the properties of the legal entity that is associated with the **Enterprise ID (COID)** registration category that is valid on the date specified in **To date** parameter of the report. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories).
+To report the UEN of the company that is reporting IAF, the system retrieves value from the registration ID. The registration ID is defined in the properties of the legal entity that's associated with the **Enterprise ID (COID)** registration category that's valid on the date specified in **To date** parameter of the report. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories).
 
 #### <a name="company-gst"></a>GSTNo - GST Registration Number of the business user
 
-To report the GST Registration Number of the company that is reporting IAF, the system retrieves value from the registration ID that is defined in the properties of the legal entity that is associated with the **VAT ID** registration category that is valid on the date specified in **To date** parameter of the report or in case when there is no such value, the **Tax registration number field** field's value. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories).
+To report the GST Registration Number of the company that is reporting IAF, the system retrieves value from the registration ID that's defined in the properties of the legal entity that are associated with the **VAT ID** registration category that's valid on the date specified in **To date** parameter of the report. Or. if there is no such value, the **Tax registration number field** field's value is used. For more information, see [Registration type](emea-registration-ids.md#registration-type-creation) and [Registration category](emea-registration-ids.md#supported-registration-categories).
 
 ## Generate an IRAS Audit File (IAF) for Singapore
 
@@ -131,25 +131,29 @@ To generate a **IAF for Singapore**, follow these steps.
 
     | Field name | Description |
     | ---------- | ----------- |
-    | Report language | Select the language you want the report to be generated. |
-    | Purchase and supply data in tax code currency | Mark this check box if you want to report `PurchaseValueSGD` and `GSTValueSGD` amounts in *Purchase Listing Table (PurchaseLines)* and `SupplyValueSGD` and `GSTValueSGD` amounts in *Supply Listing Table (SupplyLines)* in tax code currency. If this check box is not marked, these amounts will be reported depending on selection of \"Currency\" parameter. |
-    | From date, To date | Select dates to specify the date interval for the report. You can select dates within one fiscal year. |
-    | Currency | Select **Accounting currency** to report amounts in the **Debit**, **Credit**, and **Balance** columns of the *GLDataLines* section of the report in the accounting currency. Select **Reporting currency** to report those amounts in the reporting currency. |
-    | Main financial dimension set | Select the standard financial dimension set, including the main account that the report uses to calculate the opening balance by main account at the beginning of the reporting period. This parameter affects only *GLDataLines* section of the report. For more information about financial dimension sets, see [Financial dimension sets](financial-dimension-sets.md). |
+    | Report language | Select the language in which you want to generate the report. |
+    | Purchase and supply data in tax code currency | Mark this check box to report the `PurchaseValueSGD` and `GSTValueSGD` amounts in the **Purchase Listing Table (PurchaseLines)** and `SupplyValueSGD` and `GSTValueSGD` amounts in the **Supply Listing Table (SupplyLines)** in the tax code currency. If this check box is not marked, these amounts will be reported depending on selection of the **Currency** parameter. |
+    | From date, To date | Select the dates to specify the date interval for the report. You can select dates within one fiscal year. |
+    | Currency | Select the **Accounting currency** to report amounts in the **Debit**, **Credit**, and **Balance** columns of the *GLDataLines* section of the report in the accounting currency. Select **Reporting currency** to report those amounts in the reporting currency. |
+    | Main financial dimension set | Select the standard financial dimension set, including the main account that the report uses to calculate the opening balance by main account at the beginning of the reporting period. This parameter affects only the *GLDataLines* section of the report. For more information about financial dimension sets, see [Financial dimension sets](financial-dimension-sets.md). |
     | Group by main account | Select this checkbox to group general ledger account entries by main account on the report. When this checkbox is selected, the amounts in *GLDataLines* section of the report that are reported for each main account are represented as aggregated amounts where aggregation is done by `TransactionDate` and `TransactionID` fields. |
-    | Include reversed | Select this checkbox if reversed transaction must be reported. This parameter affects only *GLDataLines* section of the report. |
-    | Posting layer(s) | Select one or more posting layer transactions to include on the report. If you leave this field blank, all the posting layers are reported. This parameter affects only *GLDataLines* section of the report. |
-    | Sales tax specification | Select this checkbox to report standard GST codes [associated with the GST codes in Finance](#tax-codes) in `TaxCode` field of *Purchase Listing Table (PurchaseLines)* and *Supply Listing Table (SupplyLines)* sections of the report. When this check box is not selected, GST codes set up and used in Finance will be reported in `TaxCode` field of *Purchase Listing Table (PurchaseLines)* and *Supply Listing Table (SupplyLines)* sections of the report. |
+    | Include reversed | Select this checkbox if a reversed transaction must be reported. This parameter affects only the *GLDataLines* section of the report. |
+    | Posting layer(s) | Select one or more posting layer transactions to include on the report. If you leave this field blank, all the posting layers are reported. This parameter affects only the *GLDataLines* section of the report. |
+    | Sales tax specification | Select this checkbox to report standard GST codes [associated with the GST codes in Finance](#tax-codes) in the `TaxCode` field of the *Purchase Listing Table (PurchaseLines)* and *Supply Listing Table (SupplyLines)* sections of the report. When this check box is not selected, GST codes set up and used in Finance are reported in the `TaxCode` field of *Purchase Listing Table (PurchaseLines)* and *Supply Listing Table (SupplyLines)* sections of the report. |
     | Settlement period | Select a settlement period to filter sales tax transactions on the report. If you leave this field blank, sales tax transactions from all settlement periods are included on the report. |
-    | Include invoices by | Data reported in *Purchase Listing Table (PurchaseLines)* and *Supply Listing Table (SupplyLines)* sections of the report is filtered is filtered according to dates specified in **From date** and **To date** parameters. Use **Include invoices by** parameter to define on which field of the data this filted must be applied. The following options are available: Invoice Date, Tax transaction date, Date of VAT register. **Date of VAT register** option is available only when [Date of VAT register](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-tax-point-date) feature is enabled.  |
+    | Include invoices by | Data reported in *Purchase Listing Table (PurchaseLines)* and *Supply Listing Table (SupplyLines)* sections of the report is filtered is filtered according to dates specified in **From date** and **To date** parameters. Use **Include invoices by** parameter to define on which field of the data this filted must be applied. The following options are available: Invoice Date, Tax transaction date, Date of VAT register. **Date of VAT register** option is available only when [Date of VAT register](emea-tax-point-date.md) feature is enabled.  |
 
-3. You can use the **Records to include** option to filter the data on the report by one or more main accounts. This parameter affects only *GLDataLines* section of the report.
-4. On the **Run in the background** FastTab, you can specify parameters of the batch job and run the report in batch mode. When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** \> **Electronic reporting** \> **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
+3. You can use the **Records to include** option to filter the data on the report by one or more main accounts. This parameter affects only the *GLDataLines* section of the report.
+4. On the **Run in the background** FastTab, you can specify parameters of the batch job and run the report in batch mode. When an electronic report is generated in batch mode, you can find related batch information and the generated output file as an attachment by going to **Organization administration** > **Electronic reporting** > **Electronic reporting jobs**. For more information about how to configure a destination for each ER format configuration and its output component, see [Electronic reporting (ER) destinations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations.md).
 
 ## Implementation details
 
-### Using of special symbols in values of different text fields
+### Using special symbols in the value of different text fields
 
 	\"\|\" is a special symbol in **IAF** an if it is used in any text fields of the report, it is replaced with a space.
  
- In case char(10) or char(32) are included in value of a text field of **IAF**, these characters are excluded for the value in reporting.
+ If char(10) or char(32) are included in value of a text field of **IAF**, these characters are excluded for the value in reporting.
+
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
