@@ -39,7 +39,7 @@ This topic provides information about onboarding process for taxpayers and their
 - The legal entity must be registered as a Taxpayer in Saudi Arabia and have a valid VAT registration number.
 - The legal entity must have the access to Saudi Arabian Taxation Portal - [ERAD](https://fatoora.zatca.gov.sa/) 
 
-## Onbaording process
+## Onboarding process
 
 1. In the Taxation Portal (**ERAD**), navigate to the Onboarding and Management Portal by clicking on the relevant tile.
 2. On the main landing page of the Onboarding and Management Portal select the **Onboard new solution unit/device** tile and then click on 
@@ -55,9 +55,9 @@ Text [Customer certificates and secrets](e-invoicing-customer-certificates-secre
    ![Property type added on the Electronic document property types page.](media/e-invoicing-pol-parameters.jpg)
    
    
-### Create an app registration
+## Onboarding script
 
-1. Use the following Windows PowerShell script to create a self-signed certificate for service-to-service (S2S) authentication.
+1. Use the following Windows PowerShell script to obtain CCSID and PCSID.
 
     ```powershell
     param($otp, $csrconfig)
@@ -137,7 +137,7 @@ Text [Customer certificates and secrets](e-invoicing-customer-certificates-secre
    }
     ```
 
-2. Save the .pfx certificate file to the key vault, and then delete the local copy.
+2. Save the .pfx certificate file to the key vault.
 
 ## Additional resources
 
