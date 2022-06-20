@@ -93,19 +93,13 @@ Note that the demand forecast UOM does not have to have any specific meaning. It
 
 ## Additional resources
 
-[Demand forecasting setup](demand-forecasting-setup.md)
-
-[Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)
-
-[Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
-
-[Authorize an adjusted forecast](authorize-adjusted-forecast.md)
-
-[Monitor forecast accuracy](monitor-forecast-accuracy.md)
-
-[Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
-
-[Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
-
+- [Demand forecasting setup](demand-forecasting-setup.md)
+- [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)
+- [Make manual adjustments to the baseline forecast](manual-adjustments-baseline-forecast.md)
+- [Authorize an adjusted forecast](authorize-adjusted-forecast.md)
+- [Monitor forecast accuracy](monitor-forecast-accuracy.md)
+- [Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
+- [Video: Extend the demand forecasting functionality](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+- [Webinar: Demand Forecasting with Azure Machine Learning Series](https://aka.ms/DemandForecastingwithAzureMachineLearningSeries)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -16,7 +16,6 @@ ms.search.validFrom: 2022-04-12
 # Commerce posting parameters
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes the parameters that are specific to the posting of financial and physical transactions in Microsoft Dynamics 365 Commerce. Commerce posting parameters are located in Commerce headquarters at **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters \> Posting**.
 

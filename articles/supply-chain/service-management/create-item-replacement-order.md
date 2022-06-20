@@ -35,7 +35,7 @@ Item replacement orders are usually created after a product is returned and insp
 
 ## Create a replacement order after you receive an item that is returned
 
-1.  Click **Sales and marketing** \> **Common** \> **Return orders** \> **All return orders**.
+1.  Click **Sales and marketing** \> **Sales returns** \> **All return orders**.
 
 2.  Create a new return order, or select a returned order from the list to open the **Return order - RMA number: %1, %2** form.
 
@@ -49,7 +49,7 @@ Item replacement orders are usually created after a product is returned and insp
 
 ## Create a replacement order before you receive an item that will be returned
 
-1.  Click **Sales and marketing** \> **Common** \> **Return orders** \> **All return orders**.
+1.  Click **Sales and marketing** \> **Sales returns** \> **All return orders**.
 
 2.  Create a new return order, or select a return order from the list to open the **Return order - RMA number: %1, %2** form.
 

@@ -42,7 +42,7 @@ The **Assets** tab provides the following settings:
 
 - **Default functional location** is the standard functional location, which is automatically selected on assets when you create new assets.  
 - In the **Standard calendar** field, select a calendar to be used for calculating asset KPIs if no resource is selected on an asset.  
-- In the **View** field, select the standard view that is shown when you open **Asset view** (**Asset management** > **Common** > **Assets** > **Asset view**).
+- In the **View** field, select the standard view that is shown when you open **Asset view** (**Asset management** > **Assets** > **Asset view**).
 - **Default request type** is the standard maintenance request type, which is automatically selected when you create a new request.  
 - Forecasts on job types are stored on the project selected in the **Forecast project** field. For each job type, a new activity is automatically created on the forecast project. Forecasts on the job type are then saved on the forecast project.  
 - In the **Model** field, select the forecast model used on job type and work order forecasts.
