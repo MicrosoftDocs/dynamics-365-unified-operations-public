@@ -59,17 +59,17 @@ Some of the parameters from the **Polish electronic invoice (PL)** electronic in
 1. Import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the Global repository](e-invoicing-import-feature-global-repository.md).
 2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](e-invoicing-create-new-globalization-feature.md).
 3. On the **Versions** tab, verify that the **Draft** version is selected.
-4. On the **Setups** tab, in the grid, select the **Batch** feature setup  and click on the **Edit** button.
+4. On the **Setups** tab, in the grid, select the **Batch** feature setup and click on the **Edit** button.
 5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **KSEF: send batch to the invoice system** action.
 6. In the **Parameters** section, select **Client ID**, and then select the name of the secret previously created for the legal entity tax identification number.
 7. In the **Parameters** section, select **Certificate name**, and then select the name of the digital certificate that you created.
 8. In the **Parameters** section, select **Public key**, and then select the name of the secret created for the public key.
 9. In the **Parameters** section, select **Service URL**, and make sure that a valid URL is configured. To get the testing and production URLs, go to the website of Polish National system for electronic invoicing [KSEF](https://www.podatki.gov.pl/ksef).
 10. Select **Save**, and close the page.
-11. 
-12. On the **Setups** tab, in the grid, select the **Submit sales invoice** feature setup
-13. Select .
-14. Repeat the steps 4 through 10 for the **Submit project invoice** and **Submit advance invoice** feature setups. 
+11. On the **Setups** tab, in the grid, select the **Submit sales invoice** feature setupand click on the **Edit** button.
+12. On the **Applicability rules** tab, make sure that the conditionans for applicability rules are properly configured.
+13. Select **Save** (if changes were made), and close the page.
+14. Repeat the steps 12 through 13 for the **Submit project invoice** and **Submit advance invoice** feature setups.
 
 
 ## Country-specific configuration for the Polish electronic invoice (PL) application setup
