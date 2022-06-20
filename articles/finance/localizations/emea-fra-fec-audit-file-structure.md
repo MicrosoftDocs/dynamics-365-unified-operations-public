@@ -43,7 +43,6 @@ As of version 10.0.23 of Finance, use the [Missing numbers justification](#missi
 
 The following sections list the data sources that are used in the FEC main file and annexes.
 
-
 Data sources are described in detail in the [Detailed data source descriptions](#fec-detailed-datasources) section of this topic.
 
 ## <a id="fec-main"></a>Main FEC file for the period specified
@@ -237,7 +236,6 @@ The following table shows the **FEC main file including fiscal year opening bala
 | 17     | Montantdevise | Numérique      | Le montant en devise (à blanc si non utilisé) | The amount in currency. This field is blank if it isn't used. | <p>$VouchersOmissions/$AmountCur</p><ul><li>**Scenario 1:** GeneralJournalView_FR.GeneralJournalAccountEntryTransactionCurrencyAmount</li><li>**Scenario 2:** InventTrans.CostAmountPhysical</li><li>**Scenario 3:** \'0.00\'</li></ul> |
 | 18     | Idevise       | Alphanumérique | L'identifiant de la devise (à blanc si non utilisé) | The currency identifier. This field is blank if it isn't used. | <p>$VouchersOmissions/$Currency</p><ul><li>**Scenario 1:** GeneralJournalView_FR.GeneralJournalAccountEntryTransactionCurrencyCode</li><li>**Scenario 2:** InventTrans.CurrencyCode</li><li>**Scenario 3:** Not applicable</li></ul> |
 
-
 ## <a id="fec-detailed-datasources"></a>Detailed data source descriptions
 
 This section explains the data sources of the fields in FEC of the "Main" type in terms of Finance tables and fields.
@@ -346,4 +344,3 @@ The `Montantdevise` field represents the value of the `TransactionCurrencyAmount
 ### Idevise – Currency identifier
 
 The `Idevise` field represents the value of the `TransactionCurrencyCode` field of the `GeneralJournalAccountEntry` table record that is related to each reporting transaction. In the Finance UI, this field value can be viewed in the **Currency** field of general ledger transactions.
-
