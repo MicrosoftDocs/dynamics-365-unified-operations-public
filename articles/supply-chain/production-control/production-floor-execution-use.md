@@ -267,9 +267,6 @@ A worker registers a break by selecting **Break** and then selecting the card th
 
 ## View the "My day" dialog
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 The **My day** dialog provides workers with an overview of their registrations and balances. The dialog is divided into the following three sections:
 
 - The main section lists the registrations that the current worker made on a selected date. It opens showing registrations for the current day, and provides a date picker that lets the worker view other days.
@@ -279,9 +276,6 @@ The **My day** dialog provides workers with an overview of their registrations a
 Admins can add this feature to the interface by placing the **My day** button on a toolbar for each relevant tab as described in [Design the production floor execution interface](production-floor-execution-tabs.md).
 
 ## Working in teams
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 When multiple workers are assigned to the same production job, they can form a team. The team can nominate one worker as a pilot. The remaining workers then automatically become assistants of that pilot. For the resulting team, only the pilot must register job status. Time records apply to all team members.
 

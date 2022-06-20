@@ -37,7 +37,7 @@ When you create a work order, you create work order jobs that have related asset
 
 You might be able to add forecast lines to a work order or delete them from a work order. The setup of the work order lifecycle state, the related project type, and the stage rules that are related to the project type determine whether you can add or edit forecast lines. For more information about work order lifecycle states and related project stages, see [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
-1. Select **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
+1. Select **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
 
 2. Select the work order in the list, and then, on the Action Pane > **Work order** tab > the **Project** group, select **Forecast**. The **Work order maintenance forecast** page shows forecast lines from the maintenance job type that is selected on the work order job.
 

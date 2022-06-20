@@ -434,6 +434,8 @@
               href: pos-healthcheck.md
             - name: Support for network peripherals
               href: dev-itpro/network-peripherals.md
+            - name: Peripheral compatibility
+              href: Compatible-peripherals.md
           - name: Screen layouts
             items:
             - name: Demo data screen layouts in MPOS/CPOS
@@ -1396,6 +1398,8 @@
         items:
         - name: Fiscal registration service integration sample for Austria
           href: localizations/emea-aut-fi-sample.md
+        - name: Deployment guidelines for cash registers for Austria
+          href: localizations/emea-aut-deployment.md   
         - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
           href: localizations/emea-aut-fi-sample-sdk.md
       - name: Brazil
@@ -2890,6 +2894,8 @@
             href: dev-itpro/cloud-dev-box.md
           - name: Retail SDK build pipeline
             href: dev-itpro/retail-sdk/sdk-build-pipeline.md
+          - name: Set up a Visual Studio 2017 build agent to build MPOS
+            href: dev-itpro/retail-sdk/mpos-build-agent.md
           - name: Run POS samples
             href: dev-itpro/pos-run-samples.md
         - name: Reference

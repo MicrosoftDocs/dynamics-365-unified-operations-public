@@ -1,24 +1,13 @@
---- 
-# required metadata 
- 
+---
 title: Create a purchase order governed by budget
 description: Use this procedure to create a purchase order that is checked for available budget. 
 author: JennySong-SH
-ms.date: 06/20/2017
+ms.date: 06/15/2020
 ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
+ms.search.form:
+audience: Application User
 ms.reviewer: kamaybac
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: yanansong
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
@@ -27,42 +16,35 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-Use this procedure to create a purchase order that is checked for available budget. This recording uses the USMF demo data company.
-
+Use this procedure to create a purchase order that is checked for available budget.
 
 ## Review the budget control configuration
-1. Go to Budgeting > Setup > Budget control > Budget control configuration.
-2. Click the Budget funds available tab.
-3. Click the Documents and journals tab.
-4. Click the Define budget control rules tab.
-5. Click the Define budget groups tab.
-6. Close the page.
 
-## Create the purchase order header
-1. Go to Procurement and sourcing > Purchase orders > All purchase orders.
-2. Click New.
-3. In the Vendor account field, enter or select a value.
-4. Expand the General section.
-5. In the Accounting date field, set the date to '2016-01-01'.
-6. Click OK.
+1. Go to **Budgeting > Setup > Budget control > Budget control configuration**.
+1. Select the **Budget funds available** tab.
+1. Select the **Documents and journals** tab.
+1. Select the **Define budget control rules** tab.
+1. Select the **Define budget groups** tab.
+1. Close the page.
 
-## Add a purchase order line
-1. In the Procurement category field, enter or select a value.
-2. Set Quantity to '2'.
-3. In the Unit field, enter or select a value.
-4. Set Unit price to '10000'.
-5. Click Financials.
-6. Click Distribute amounts.
-7. In the Ledger account field, specify the value '601300-001-023--'.
-8. Close the page.
+## Create a purchase order
+
+1. Go to **Procurement and sourcing > Purchase orders > All purchase orders**.
+1. Select **New**.
+1. In the **Vendor account** field, enter or select a value.
+1. Expand the **General** FastTab.
+1. In the **Accounting date** field, set the date.
+1. Select **OK** to close the dialog and open your new purchase order.
+1. On the **Purchase order lines** FastTab, select **Add line** from the toolbar to add a new line and then fill out the line as needed to add an item to the order.
+1. On the **Purchase order lines** FastTab toolbar, select **Financials \> Distribute amounts**.
+1. In the **Ledger account** field, specify an account.
+1. Close the page.
 
 ## Perform budget checking
-1. Click Financials.
-2. Click Perform budget checking.
-3. Click Financials.
-4. Click Budget check errors or warnings.
-5. Click Close.
 
-
+1. Continue working with the purchase order you just added a line to.
+1. On the **Purchase order lines** FastTab toolbar, select **Financials \> Perform budget checking**.
+1. On the **Purchase order lines** FastTab toolbar, select **Financials \> Budget check errors or warnings**.
+1. The **Budget check errors or warnings** dialog opens. Check the results of the check and then select **Close** to close the dialog.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

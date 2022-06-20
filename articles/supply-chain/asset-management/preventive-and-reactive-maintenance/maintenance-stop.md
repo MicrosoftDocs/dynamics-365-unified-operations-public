@@ -43,14 +43,14 @@ When assets have been selected on a maintenance downtime registration, all open 
 
 ## Maintenance downtime activities
 
-Click **Asset management** > **Common** > **Maintenance downtime activities** > **All maintenance downtime activities** to open a list of all maintenance downtime activities and see some of the information related to the activities. Click on a link in the **Maintenance downtime activities** column to open the details view. The illustration below shows an example of the **Maintenance downtime activities** list.
+Click **Asset management** > **Maintenance downtime activities** > **All maintenance downtime activities** to open a list of all maintenance downtime activities and see some of the information related to the activities. Click on a link in the **Maintenance downtime activities** column to open the details view. The illustration below shows an example of the **Maintenance downtime activities** list.
 
 ![Figure 1.](media/19-preventive-maintenance.png)
 
 
 ## Create a maintenance downtime activity
 
-1. Click **Asset management** > **Common** > **Maintenance downtime activities** > **All maintenance downtime activities** or **Active maintenance downtime activities**.
+1. Click **Asset management** > **Maintenance downtime activities** > **All maintenance downtime activities** or **Active maintenance downtime activities**.
 
 2. Click **New**.
 

@@ -460,6 +460,8 @@
           items:
           - name: Set up revenue and expense deferrals
             href: accounts-receivable/sb-deferrals.md
+          - name: Deferral posting method 
+            href: accounts-receivable/Deferral-posting-methods.md
           - name: Create deferral schedules
             href: accounts-receivable/sb-deferrals-schedules.md
           - name: Deferral default transactions
@@ -1214,6 +1216,8 @@
         href: ../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/dynamics365/finance/toc.json
       - name: Financial report components
         href: ../fin-ops-core/dev-itpro/analytics/financial-report-components.md?toc=/dynamics365/finance/toc.json
+      - name: View and design financial reports
+        href: ../fin-ops-core/dev-itpro/analytics/design-financial-reports.md
       - name: Currency capabilities in financial reporting
         href: general-ledger/financial-reporting-currency-capability.md
       - name: Retained earnings calculation in Financial reporting
@@ -1980,6 +1984,8 @@
           href: localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
         - name: Set up bank account numbers for Brazil
           href: localizations/latam-bra-bank-account-number-setup-brazil-localization.md
+        - name: Transfer orders
+          href: localizations/latam-bra-about-transfer-orders.md
         - name: Taxes
           items:
           - name: Brazil taxes overview
@@ -2134,8 +2140,8 @@
           href: localizations/tasks/create-post-project-invoice-public-sector-customer.md
         - name: EU sales list
           href: localizations/emea-dnk-eu-sales-list.md
-        - name: Import OIOUBL electronic invoicing configurations
-          href: localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
+        - name: Customer electronic invoices in Denmark
+          href: localizations/emea-dnk-e-invoices.md
         - name: Post a free text invoice with a payment slip
           href: localizations/tasks/post-free-text-invoice-payment-slip.md
         - name: Post a project invoice with a payment slip
@@ -2224,6 +2230,8 @@
             href: localizations/emea-ISO20022-file-formats.md
           - name: Import ISO20022 direct debit configuration
             href: localizations/tasks/import-iso20022-direct-debit-configuration.md
+          - name: Prerequisites for ISO 20022 credit transfer format
+            href: localizations/emea-fra-ISO20022-international.md
           - name: Import ISO20022 credit transfer configuration
             href: localizations/tasks/import-iso20022-credit-transfer-configuration.md
           - name: Set up company bank accounts for ISO20022 credit transfers
@@ -2772,6 +2780,8 @@
                   href: localizations/apac-ind-TDS-TDS-ledger-accounts-setup.md
                 - name: Set up TDS registration numbers for legal entities
                   href: localizations/apac-ind-TDS-TDS-registration-numbers-setup-for-legal-entities.md
+                - name: Set up withholding tax component groups for the TDS tax type
+                  href: localizations/apac-ind-TDS-Withholding-tax-component-groups-setup-for-TDS-tax-type.md
                 - name: Set up withholding tax authorities for the TDS tax type
                   href: localizations/apac-ind-TDS-Withholding-tax-authorities-setup-for-TDS-tax-type.md
                 - name: Set up tax components for the TDS tax type
@@ -3424,6 +3434,8 @@
               href: localizations/rus-register-acquisition.md
             - name: Acquiring fixed assets and putting them into operation
               href: localizations/rus-fixed-asset-acquisition.md
+            - name: Vehicles and realty as fixed assets 
+              href: localizations/rus-vehicles-realty.md
             - name: Calculate depreciation
               href: localizations/rus-depreciation-calculation.md
             - name: Partial fixed asset disassembly (liquidation)
@@ -3452,6 +3464,8 @@
             items:
             - name: Not valuable fixed assets (NVFAs) (Russia)
               href: localizations/rus-not-valuable-assets.md
+            - name: Primary forms for NVFA, working clothes, and special riggings (Russia)
+              href: localizations/rus-nvfa.md
             - name: Working clothes/special rigging accounting (Russia)
               href: localizations/rus-working-clothes-instruments-accounting.md
           - name: Integration of fixed assets with Asset management module

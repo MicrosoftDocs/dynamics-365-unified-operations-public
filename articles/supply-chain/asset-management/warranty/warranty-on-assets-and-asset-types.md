@@ -44,7 +44,7 @@ This article explains how to set up warranties on assets and asset types in Asse
 
 ## Set up a warranty on an asset
 
-1. Select **Asset management** \> **Common** \> **Assets** \> **All assets**.
+1. Select **Asset management** \> **Assets** \> **All assets**.
 2. Select the asset, and then select **Edit**.
 3. On the **Vendor** FastTab, in the **Vendor warranty** section, in the **Warranty** field, select the warranty agreement.
 4. In the **Warranty start** and **Warranty end** fields, select the start and end dates.

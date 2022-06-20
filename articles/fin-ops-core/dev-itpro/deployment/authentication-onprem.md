@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Authentication in Dynamics 365 Finance + Operations (on-premises)
+title: Authentication in Dynamics 365 Finance + Operations (on-premises) environments
 description: This article provides background information about how the authentication process works so that if you have issues you can work to resolve them.
 author: faix
 ms.date: 11/18/2020
@@ -26,7 +26,7 @@ ms.search.validFrom: 2020-09-30
 ms.dyn365.ops.version: 10.0.15
 ---
 
-# Authentication in Dynamics 365 Finance + Operations (on-premises)
+# Authentication in Dynamics 365 Finance + Operations (on-premises) environments
 
 [!include[banner](../includes/banner.md)]
 
@@ -100,7 +100,7 @@ If values in the AOS config file are incorrect, then that typically means the va
 Receiving a 500 error when accessing the application URL is an indication that there may be an invalid URL for AD FS. This is because on startup the AOS will use that URL to obtain information from the AD FS server. If the URL is incorrect or inaccessible, the AOS will be unable to start.
 
 ## AD FS
-The second part of the authentication process is AD FS itself. On the AD FS server if you open AD FS Management ((from **Control Panel > System and Security > Administrative Tools**), and go to **Application groups**, you'll find a group called **Microsoft Dynamics 365 for Operations On-premises**. Within this group, the settings for AD FS for your Dynamics 365 application are stored.
+The second part of the authentication process is AD FS itself. On the AD FS server, if you open AD FS Management (from **Control Panel > System and Security > Administrative Tools**), and go to **Application groups**, you'll find a group called **Microsoft Dynamics 365 for Operations On-premises**. Within this group, the settings for AD FS for your Dynamics 365 application are stored.
 
 ![AD FS application group setup.](media/ADFS.png)
 

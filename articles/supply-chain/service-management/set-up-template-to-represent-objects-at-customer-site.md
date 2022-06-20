@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Use this procedure to set up a template that represents objects at a customer site.
 
-1.  Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+1.  Click **Service management** \> **Service agreements** \> **Service agreements**.
 
 2.  Double-click a service agreement, or click **Service agreement** to create a new service agreement.
 
