@@ -3,7 +3,7 @@
 
 title: Provision Human Resources in the finance and operations infrastrcuture
 description: This article explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources in the finance and operations infrastructure.
-author: raprofit
+author: twheeloc
 ms.date: 01/07/2022
 ms.topic: article
 ms.prod: 
