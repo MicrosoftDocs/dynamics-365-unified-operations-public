@@ -105,7 +105,7 @@ To deploy a feature to the service environment and an application setup to the F
 
 
 
-## Microcost Dynamics D365 configuration
+## Microcost Dynamics D365 Finance configuration
 
 ### Prerequisites
 
