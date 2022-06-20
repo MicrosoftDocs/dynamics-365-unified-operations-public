@@ -191,7 +191,7 @@ In Human Resources, select **Settings** and then select **User options**. Verify
 
 ![Human Resources User options.](./media/hr-teams-leave-app-user-options.png)
 
-If you still experience translation issues, let us know. For information, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
+If you still experience translation issues, let us know. For information, see [Get support for finance and operations apps or Lifecycle Services (LCS)](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md?toc=%2fdynamics365%2fhuman-resources%2ftoc.json).
 
 ### Error when approving leave requests in the Human Resources app in Teams
 
@@ -251,3 +251,4 @@ To restrict access to the Human Resources app in Microsoft Teams for your organi
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

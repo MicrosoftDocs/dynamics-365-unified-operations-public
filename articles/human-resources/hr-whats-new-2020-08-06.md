@@ -37,7 +37,7 @@ This article describes features that are either new or changed in Dynamics 365 H
 
 ## Platform update 10.0.12(36) is now available
 
-For more information, see [Platform updates for version 10.0.12 of Finance and Operations apps (August 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
+For more information, see [Platform updates for version 10.0.12 of finance and operations apps (August 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
 
 ## Data management framework (DMF) entities for Benefits management
  

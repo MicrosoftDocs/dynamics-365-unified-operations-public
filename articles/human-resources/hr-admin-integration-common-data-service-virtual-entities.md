@@ -126,10 +126,10 @@ The next step is to configure the virtual table data source in the Power Apps en
 
 4. In the **Solution Health Hub**, select the **Advanced Find** icon in the top right of the application page.
 
-5. On the **Advanced Find** page, in the **Look for** dropdown list, select **Finance and Operations Virtual Data Source Configurations**.
+5. On the **Advanced Find** page, in the **Look for** dropdown list, select **finance and operations Virtual Data Source Configurations**.
 
    > [!NOTE]
-   > The installation of the virtual table app from the previous setup step can take a few minutes. If **Finance and Operations Virtual Data Source Configurations** isn't available in the list, wait for a minute and refresh the list.
+   > The installation of the virtual table app from the previous setup step can take a few minutes. If **finance and operations Virtual Data Source Configurations** isn't available in the list, wait for a minute and refresh the list.
 
 6. Select **Results**.
 
@@ -223,3 +223,4 @@ The slideout pane displays the most recent execution results for the process. Yo
 [Overview of creating apps in Power Apps](/powerapps/maker/)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

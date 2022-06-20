@@ -100,13 +100,13 @@ You can't add or remove custom fields from a virtual table if you've created dep
 
 When setting up virtual tables in the **Microsoft Dataverse integration** page, you may see an error message in the Action center stating the following:
 
-`User Dynamics365 for Talent was not found in Finance and Operations. Please ensure this user exists.`
+`User Dynamics365 for Talent was not found in finance and operations. Please ensure this user exists.`
 
 This message indicates that permissions haven't been granted in Human Resources application to the app set up for virtual tables. You can resolve this by completing the steps to [Grant app permissions in Human Resources](hr-admin-integration-common-data-service-virtual-entities.md#grant-app-permissions-in-human-resources).
 
-### What do I do if the Finance and Operations Virtual Data Source Configurations option isn't available in my Microsoft Dataverse environment?
+### What do I do if the finance and operations Virtual Data Source Configurations option isn't available in my Microsoft Dataverse environment?
 
-During the setup of the virtual tables, you need to install the Dynamics 365 HR Virtual Table app, which adds the option for **Finance and Operations Virtual Data Source Configurations**. For more information about installing the app in the **Microsoft Dataverse integration** page, see [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md#install-the-dynamics-365-hr-virtual-table-app).
+During the setup of the virtual tables, you need to install the Dynamics 365 HR Virtual Table app, which adds the option for **finance and operations Virtual Data Source Configurations**. For more information about installing the app in the **Microsoft Dataverse integration** page, see [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md#install-the-dynamics-365-hr-virtual-table-app).
 
 If the **Install virtual table app** action on the **Microsoft Dataverse integration** page doesn't complete successfully, you can perform the action in the Power Platform admin center.
 
@@ -124,7 +124,7 @@ If the **Install virtual table app** action on the **Microsoft Dataverse integra
 
 7. Select **Install**.
 
-The installation takes a few minutes. When it completes, the **Finance and Operations Virtual Data Source Configurations** entity is generated in the environment.
+The installation takes a few minutes. When it completes, the **finance and operations Virtual Data Source Configurations** entity is generated in the environment.
 
 ![Install the Dynamics 365 HR Virtual Table app from the Power Platform admin center.](media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 
@@ -154,3 +154,4 @@ Yes. After completing the prerequisite setup steps for virtual tables outlined i
 > You can generate multiple virtual tables at once by using the **Change Multiple Records** page. Select multiple records on the page and select the **Edit** action on the ribbon. You can then change the **Has Been Generated** property for all selected records.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

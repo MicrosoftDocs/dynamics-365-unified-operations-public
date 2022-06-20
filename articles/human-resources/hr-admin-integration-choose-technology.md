@@ -77,7 +77,7 @@ Dataverse tables and their associated APIs are the best option for accessing Hum
 
 ### DMF/DIXF entities
 
-Human Resources, built primarily on the same platform as Finance and Operations applications, provides a [Data Management Framework (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF is also known as the Data Import Export Framework (DIXF). Human Resources provides a set of data entities you can use for importing and exporting Human Resources data. While Dataverse tables are the preferred data integration interface for Human Resources, DMF entities are still useful in some circumstances, such as:
+Human Resources, built primarily on the same platform as finance and operations applications, provides a [Data Management Framework (DMF)](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=%2ffin-and-ops%2ftoc.json). DMF is also known as the Data Import Export Framework (DIXF). Human Resources provides a set of data entities you can use for importing and exporting Human Resources data. While Dataverse tables are the preferred data integration interface for Human Resources, DMF entities are still useful in some circumstances, such as:
 
 - Dataverse tables aren't yet available.
 
@@ -121,7 +121,7 @@ BYOD is appropriate for reporting solutions, data integrations, data mashups, as
 
 ### OData-enabled entities
 
-Most DMF entities are also enabled for access through the Human Resources data service (OData). The documentation provided for the [Finance and Operations OData service](/dynamics365/unified-operations/dev-itpro/data-entities/odata) applies to Human Resources, except for creating your own OData-exposed entities.
+Most DMF entities are also enabled for access through the Human Resources data service (OData). The documentation provided for the [finance and operations OData service](/dynamics365/unified-operations/dev-itpro/data-entities/odata) applies to Human Resources, except for creating your own OData-exposed entities.
 
 While Dataverse and the OData implementation provided by Dataverse (through the [Dynamics 365 Web API](/previous-versions/dynamicscrm-2016/developers-guide/mt593051(v=crm.8))) is preferred over the Human Resources data service, the Human Resources data service currently has more complete entity coverage for the Human Resources data.
 
@@ -161,3 +161,4 @@ With so many different integration technologies available, deciding on which int
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

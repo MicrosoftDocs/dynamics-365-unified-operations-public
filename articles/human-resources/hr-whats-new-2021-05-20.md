@@ -47,7 +47,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Platform update 10.0.18 (42) | -- | [Platform updates for version 10.0.18 of Finance and Operations apps (May 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18) |
+| Platform update 10.0.18 (42) | -- | [Platform updates for version 10.0.18 of finance and operations apps (May 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-18) |
 | Human Resources app for Microsoft Teams now supports half day definitions and split day capability | -- | [Manage leave requests in Teams](/dynamics365/human-resources/hr-teams-leave-app#create-a-new-request) |
 
 ### Bug fixes
@@ -93,3 +93,4 @@ For a complete list of planned features and their scheduled releases, see [Overv
 [Manage features](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

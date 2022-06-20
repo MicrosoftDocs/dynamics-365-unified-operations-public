@@ -47,7 +47,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Platform update 10.0.20 | -- | [Platform updates for version 10.0.20 of Finance and Operations apps (August 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20) |
+| Platform update 10.0.20 | -- | [Platform updates for version 10.0.20 of finance and operations apps (August 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20) |
 
 ### Bug fixes
 
@@ -89,3 +89,4 @@ For a complete list of planned features and their scheduled releases, see [Overv
 [Manage features](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

@@ -88,7 +88,7 @@ The following new features are in preview. For more information about turning fe
 
 | Feature | Details |
 | --- | --- |
-| Platform update 10.0.19 (43) | Platform update 10.0.19 is scheduled to begin rolling out with the service release on June 28, 2021. For more information, see [Platform updates for version 10.0.19 of Finance and Operations apps (June 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19). |
+| Platform update 10.0.19 (43) | Platform update 10.0.19 is scheduled to begin rolling out with the service release on June 28, 2021. For more information, see [Platform updates for version 10.0.19 of finance and operations apps (June 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-19). |
 |  Years of service display toggle | This feature provides the option to use different dates to calculate the years of service displayed in the **Streamlined employee entry** form and in the **People** form.  This will be available in Human Resources parameters. |
 |  Enable an absence manager to manage leave | [Enable an absence manager to manage leave](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/enable-absence-manager-manage-leave) |
 |  Mandate attachments for specific leave types | This feature enables admins to mandate attachments to be added when submitting leave requests for specific leave types. |
@@ -105,3 +105,4 @@ For a complete list of planned features and their scheduled releases, see [Overv
 [Manage features](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

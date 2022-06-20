@@ -48,7 +48,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Platform update 10.0.16(40) | -- | [Platform updates for version 10.0.16 of Finance and Operations apps (February 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
+| Platform update 10.0.16(40) | -- | [Platform updates for version 10.0.16 of finance and operations apps (February 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
 | Enhanced workflow requests and approvals | [Organization and personnel management workflow experience enhancements](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Configuration option to position Work items assigned to me list](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
 | Affordable Care Act (ACA) compliance updates for Form 1095-C, Form 1095-B, and electronic reporting in legacy Benefits | -- | -- | 
 | Benefits management now supports ACA compliance reporting for US-based legal entities | -- | [Generate ACA reports in Benefits Management](hr-benefits-management-aca-reports.md) |

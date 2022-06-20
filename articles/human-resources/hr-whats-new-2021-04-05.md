@@ -77,7 +77,7 @@ The following new features are in preview. For more information about turning fe
 | Feature | Details |
 | --- | --- |
 | Skills entered by a manager for their employees can be auto-approved by a workflow | Coming soon. |
-| Platform update 10.0.17 (41) | Platform update 10.0.17 is scheduled to begin rolling out with the next release on April 19, 2021. For more information, see [Platform updates for version 10.0.17 of Finance and Operations apps (April 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md). |
+| Platform update 10.0.17 (41) | Platform update 10.0.17 is scheduled to begin rolling out with the next release on April 19, 2021. For more information, see [Platform updates for version 10.0.17 of finance and operations apps (April 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-17.md). |
 
 For a complete list of planned features and their scheduled releases, see [Overview of Dynamics 365 Human Resources 2021 release wave 1](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/).
 
