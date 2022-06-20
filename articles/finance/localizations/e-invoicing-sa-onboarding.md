@@ -60,19 +60,81 @@ Text [Customer certificates and secrets](e-invoicing-customer-certificates-secre
 1. Use the following Windows PowerShell script to create a self-signed certificate for service-to-service (S2S) authentication.
 
     ```powershell
-    $certOutputLocation = "C:\certs\proxytest"
-    $certName = "sdiProxyClientS2SCert"
-    $certPassword = "123"
-
-    $certCerFile = Join-Path $certOutputLocation "$certName.cer"
-    $certPfxFile = Join-Path $certOutputLocation "$certName.pfx"
-
-    $securePassword = ConvertTo-SecureString $certPassword -AsPlainText -Force
-
-    $cert = New-SelfSignedCertificate -KeyLength 2048 -KeyExportPolicy Exportable -FriendlyName "CN=$certName" -CertStoreLocation Cert:\CurrentUser\My -Subject $certName -Provider "Microsoft Enhanced RSA and AES Cryptographic Provider"
-
-    Export-Certificate -Cert $cert -FilePath $certCerFile -type CERT | Out-Null
-    Export-PfxCertificate -Cert $cert -FilePath $certPfxFile -Password $securePassword | Out-Null
+    param($otp, $csrconfig)
+    $env:path = $env:path + ";C:\Program Files\Git\usr\bin"
+    Invoke-Expression "openssl ecparam -name secp256k1 -genkey -noout -out privatekey.pem"
+    Write-Host "Private key generated"
+    Invoke-Expression "openssl ec -in privatekey.pem -pubout -conv_form compressed -out publickey.pem"
+    Write-Host "Public key generated"
+    Invoke-Expression "openssl base64 -d -in publickey.pem -out publickey.bin"
+    Invoke-Expression "openssl req -new -sha256 -key privatekey.pem -extensions v3_req -config <csrconfig> -out .\taxpayer.csr".replace('<csrconfig>', $csrconfig)
+    Invoke-Expression "openssl base64 -in taxpayer.csr -out text.txt"
+    $Text = Get-Content -path text.txt -Raw
+    $Text = $Text -replace "`n",""
+    $postParams = @{"csr"=$Text} | ConvertTo-Json
+    
+    $postHeader = @{
+	    "Accept"="application/json"
+	    "OTP"=$otp
+	    "Content-Type"="application/json"}
+	    
+    $response = Invoke-WebRequest -Uri 'https://gw-apic-gov.gazt.gov.sa/e-invoicing/developer-portal/compliance' -Method POST -Body $postParams -Headers $postHeader 
+    
+    if ($response.StatusCode -eq 200)
+    {
+	    $response = $response | ConvertFrom-Json
+	    $requestId = $response.requestID
+	    $bst = $response.binarySecurityToken
+	    
+	    $postHeader = @{
+		    "Accept"="application/json"
+		    "Authentication-Certificate"=$bst
+		    "Accept-Language"="en"
+		    "Content-Type"="application/json"}
+		    
+	    $invoiceText = Get-Content -path invoice.txt -Raw
+	    $invoiceText = $invoiceText -replace "`n",""
+	    $uuid = "3cf5ee18-ee25-44ea-a444-2c37ba7f28be" #[guid]::NewGuid().ToString()
+	    $postParams = @{"invoiceHash"="9ZUyaT5frZko5fHO09jYj0T2A/Kd77sIn1V3knLVAso=";"uuid"=$uuid;"invoice"=$invoiceText} | ConvertTo-Json
+	    #$response = Invoke-WebRequest -Uri 'https://gw-apic-gov.gazt.gov.sa/e-invoicing/developer-portal/compliance/invoices' -Method POST -Body $postParams -Headers      $postHeader 
+	
+	if (1 -eq 1) #$response.StatusCode -eq 200)
+	{
+		Write-Host "Successfully submitted test invoice."
+		Write-Host "Requesting for production BST."
+		
+		$postHeader = @{
+			"Accept"="application/json"
+			"currentCCSID"=$bst
+			"Content-Type"="application/json"}
+		$postParams = @{"compliance_request_id"=$requestID} | ConvertTo-Json
+		$response = Invoke-WebRequest -Uri 'https://gw-apic-gov.gazt.gov.sa/e-invoicing/developer-portal/production/csids' -Method POST -Body $postParams -Headers    $postHeader 
+		
+		   if ($response.StatusCode -eq 200)
+		   {
+			   Write-Host "Successfully obtained production BST:"
+			   $response = $response | ConvertFrom-Json
+			   Write-Host $response.binarySecurityToken
+		   }
+			   else
+		   {
+			   Write-Host "Production BST request failed."
+			   Write-Host $response.StatusCode
+			   Write-Host $response.StatusDescription
+		   }
+	   }
+	   else
+	   {
+		   Write-Host "Test invoice submission failure."
+		   Write-Host $response.StatusCode
+		   Write-Host $response.StatusDescription
+	   }
+   }
+   else
+   {
+	   Write-Host $response.StatusCode
+	   Write-Host $response.StatusDescription
+   }
     ```
 
 2. Save the .pfx certificate file to the key vault, and then delete the local copy.
