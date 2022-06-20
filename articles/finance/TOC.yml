@@ -1628,6 +1628,10 @@
               items:
               - name: VAT declaration
                 href: localizations/emea-nor-vat-declaration.md
+            - name: Poland reporting
+              items:
+              - name: VAT declaration
+                href: localizations/emea-pol-vat-declaration.md
             - name: Spain reporting
               items:
               - name: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
