@@ -41,12 +41,19 @@ This topic provides information about onboarding process for taxpayers and their
 
 ## Onboarding process
 
+Onboarding process consist of 2 parts:
+1. Obtaining Compliance CSID (**CCSID**) which is initially assigned by ZATCA to perform compliance checks of electronic invoices generation solutions.
+2. Obtaining Production CSID (**PCSID**) which is finally assigned by ZATCA to compliant electronic invoices generation solutions.
+
+### Obtaining Compliance CSID
+
 1. In the Taxation Portal (**ERAD**), navigate to the Onboarding and Management Portal by clicking on the relevant tile.
 2. On the main landing page of the Onboarding and Management Portal select the **Onboard new solution unit/device** tile and then click on 
 **Generate OTP code**.
 3. Choose to the number of **OTP** (*on-time password*) codes to be generated. The number depends on how many e-invoicing generation units (devices) will be used.
 4. Save the generated OTP codes to be used on the next steps.
 
+### Obtaining Production CSID
 Text [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md). 
 
 > [!NOTE]
