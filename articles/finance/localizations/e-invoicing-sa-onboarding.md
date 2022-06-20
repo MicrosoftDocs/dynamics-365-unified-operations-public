@@ -31,13 +31,14 @@ ms.dyn365.ops.version: AX 10.0.28
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about onboarding process for taxpayers and their electronic invoicing software by Saudi Arabian tax authorities.
+Onboarding is mandatory for all taxpayers who are subjects to electronic invoicing in Saudi Arabia. This topic provides information about onboarding process for taxpayers and their electronic invoicing software by Saudi Arabian tax authorities.
 
 ## Prerequisites
 
-Before you begin the procedures in this topic, complete the following prerequisites:
+The legal entity must be registered as a Taxpayer in Saudi Arabia and have a valid VAT registration number.
 
 - Text [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md). 
+- [ERAD](https://fatoora.zatca.gov.sa/) 
 
 ## Process
 
