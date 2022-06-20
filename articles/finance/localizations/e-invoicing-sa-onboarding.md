@@ -42,7 +42,7 @@ This topic provides information about onboarding process for taxpayers and their
 ## Onboarding process
 
 Onboarding process consist of 2 parts:
-1. Obtaining Compliance CSID (**CCSID**) which is initially assigned by ZATCA to perform compliance checks of electronic invoices generation solutions.
+1. Obtaining Compliance CSID (**CCSID**) which is initially assigned by ZATCA to perform compliance checks of Electronic invoices Generation Solutions (**EGS**).
 2. Obtaining Production CSID (**PCSID**) which is finally assigned by ZATCA to compliant electronic invoices generation solutions.
 
 ### Obtaining Compliance CSID
@@ -54,9 +54,44 @@ Onboarding process consist of 2 parts:
 4. Save the generated OTP codes to be used on the next steps.
 5. Prepare a configuration file for Certificate Signing Request in a form of a plain text file which should contain the following data ()
 
+    ```powershell
+    oid_section = OIDs
+    [OIDs]
+    certificateTemplateName = 1.3.6.1.4.1.311.20.2
+    [req]
+    default_bits = 2048
+    emailAddress = amelnikov@ancorofficeline.onmicrosoft.com
+    req_extensions = v3_req
+    x509_extensions = v3_ca
+    prompt = no
+    default_md = sha 256
+    req_extensions = req_ext
+    distinguished_name = dn
+    [dn]
+    C=SA
+    OU=Contoso
+    O=John
+    CN=127.0.0.1
+    [v3_req]
+    basicConstraints = CA:FALSE
+    keyUsage = digitalSignature, nonRepudiation, keyEncipherment
+    [req_ext]
+    certificateTemplateName = ASN1:PRINTABLESTRING:TSTZATCACodeSigning
+    subjectAltName = dirName:alt_names
+    [alt_names]
+    SN=334623324111111
+    UID=310122393501111
+    title=1100
+    registeredAddress=Sample E
+    businessCategory=Sample Bussiness
+    ```
 
-6. 
-7. 
+
+
+    | Name                             | Description | Specification |
+    |----------------------------------|-------------|-------------|
+    | Solution Name                    | Unique Name of the Solution or Unit | Free text |
+    | Solution serial number | any| ddddd|
 
 ### Obtaining Production CSID
 Text [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md). 
