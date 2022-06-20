@@ -65,7 +65,7 @@ The following table describes the current supported versions of various Commerce
 
 | Component | Latest available release (first release available in Sandbox) | Latest available component version number (first release available in Sandbox) | Earliest supported release | Earliest supported component version number |
 |---|---|---|---|---|
-| finance and operations apps | 10.0.26 | 10.0.26 | 10.0.22 | 10.0.22 |
+| Finance and operations apps | 10.0.26 | 10.0.26 | 10.0.22 | 10.0.22 |
 | Commerce Scale Unit (cloud-hosted) | 10.0.26 | 9.36 | 10.0.22 | 9.32 |
 | Commerce module library | 10.0.26 | 9.36 | 10.0.22 | 9.32 |
 | Commerce Scale Unit (self-hosted) | 10.0.26 | 9.36 | 10.0.18 | 9.28 |
