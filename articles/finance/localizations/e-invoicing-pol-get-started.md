@@ -47,7 +47,10 @@ Before you begin the procedures in this topic, complete the following prerequisi
     - [Install the add-in for microservices in Lifecycle Services](e-invoicing-install-add-in-microservices-lcs.md)
 	
 - Activate the integration between your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management application and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](e-invoicing-activate-setup-integration.md).
-- Create a digital certificate secret in Azure Key Vault, and set it up it as described in [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md). 
+- Create certificates and secrets in Azure Key Vault, and set it up it as described in [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md). 
+    - The secret for the legal entity tax identification number.
+    - The secret that will contain the public key provided by Polish National system for electronic invoicing [KSEF](https://www.podatki.gov.pl/ksef)
+    - The certificate for digital signing.
 
 ## Country-specific configuration for the Polish electronic invoice (PL) feature
 
