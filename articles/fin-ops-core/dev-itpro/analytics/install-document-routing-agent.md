@@ -4,7 +4,7 @@
 title: Install the Document Routing Agent to enable network printing
 description: This article describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 Finance.
 author: RichdiMSFT
-ms.date: 03/21/2022
+ms.date: 06/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,7 +35,7 @@ This article describes how to install and configure the Document Routing Agent. 
 
 ## Preparing to install the Document Routing Agent
 
-- Supported on Windows 8.1, Windows 10, Microsoft Windows Server 2012 R2, or Microsoft Windows Server 2016.
+- Supported on Windows 8.1, Windows 10, Microsoft Windows Server 2012 R2, Microsoft Windows Server 2016, or Microsoft Windows Server 2019.
 - Access to network printing resources requires Active Directory Domain Services (AD DS) authentication.
 - When installing the Document Routing Agent, make sure you are logged in as the Admin user.
 - The Microsoft Azure Active Directory (Azure AD) account that is used to configure the Document Routing Agent must share the same domain as the Azure tenant.
