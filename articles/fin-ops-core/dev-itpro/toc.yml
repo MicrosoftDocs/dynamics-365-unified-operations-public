@@ -1604,6 +1604,8 @@
         href: sysadmin/implement-b2b.md
       - name: Data maintenance
         href: sysadmin/DataMaintenancePortal.md
+      - name: Manage access to network printers across legal entities
+        href: sysadmin/sys-admin-tools-network-printer.md
       - name: Security
         items:
         - name: Role-based security
