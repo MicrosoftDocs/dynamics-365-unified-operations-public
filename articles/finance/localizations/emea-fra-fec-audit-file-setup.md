@@ -42,4 +42,3 @@ Starting in version 10.0.20, to use the **FEC audit file (FR)** format, you mus
 1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
 2. On the **Ledger** tab, on the **Electronic reporting** FastTab, in the **Ledger transactions export** section, in the **Ledger transactions export** field, select the **FEC audit file (FR)** format.
 3. Save the new setting.
-
