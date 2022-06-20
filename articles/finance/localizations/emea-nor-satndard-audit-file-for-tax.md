@@ -5,7 +5,7 @@ title: Standard Audit File for Tax (SAF-T) for Norway
 description: This article explains how to set up and generate the Standard Audit File for Tax (SAF-T) for legal entities that have their primary address in Norway. 
 author: liza-golub
 ms.author: elgolu
-ms.date: 03/21/2022
+ms.date: 06/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -73,8 +73,8 @@ Import the most recent versions of the configurations. The version description u
 ![Standard Audit File for Tax (SAF-T) field on the General ledger parameters page.](media/nor-saf-gl-parameters.jpg)
 
 > [!NOTE]
-> If you enable [**Standard Audit File for Tax (SAF-T) electronic report**](../general-ledger/standard-audit-file.md) feature in **Feature management**, in addition to **Standard Audit File for Tax (SAF-T)** field on the **Standard Audit File for Tax (SAF-T)** tab of the **General ledger parameters** page, you will see **Use common menu item** check box. 
-> **Use common menu item** check box must be *unmaked* to run SAF-T Format (NO) electronic reporting configuration. Enable **Use common menu item** check box by marking it only if you plan to use electronic reporting configuration which can be run directly from Electronic Reporting workspace and does not require any data preprocessing on Finance application side.
+> If you enable the [**Standard Audit File for Tax (SAF-T) electronic report**](../general-ledger/standard-audit-file.md) feature in the **Feature management** workspace, in addition to the **Standard Audit File for Tax (SAF-T)** field on the **Standard Audit File for Tax (SAF-T)** tab of the **General ledger parameters** page, you will see the **Use common menu item** check box. 
+> The **Use common menu item** check box must be *unmarked* to run the SAF-T Format (NO) electronic reporting configuration. Enable the **Use common menu item** check box by marking it only if you plan to use an electronic reporting configuration which can be run directly from the **Electronic reporting** workspace and doesn't require any data preprocessing on Finance application side.
 
 ### <a name="sales"></a>Associate sales tax codes with Norwegian standard value-added tax (VAT) tax codes
 
