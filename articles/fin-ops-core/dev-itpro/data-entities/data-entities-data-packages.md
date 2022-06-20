@@ -4,7 +4,7 @@
 title: Data management overview
 description: This article provides information about data management in Finance and Operations.
 author: peakerbl
-ms.date: 04/22/2021
+ms.date: 06/20/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
