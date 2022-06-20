@@ -45,4 +45,3 @@ Starting in version 10.0.20, to use the **FEC audit file (FR)** format, you mus
 
 > [!NOTE]
 > If you introduce a customization to the FEC ER configurations, and you don't use the **Ledger transactions export** field on the **General ledger parameters** page to predefine the format that must be used to generate FEC, we recommend that you use the *derive* function to create a customized ER format from the **FEC audit file (FR)** format in the **Electronic reporting** workspace. In this way, the new custom format will be a child configuration of **FEC audit file (FR)**. For more information about how to create a custom format, see [Create a custom format](../../fin-ops-core/dev-itpro/analytics/er-quick-start2-customize-report.md).
-
