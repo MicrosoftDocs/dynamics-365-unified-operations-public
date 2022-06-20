@@ -31,19 +31,21 @@ ms.dyn365.ops.version: AX 10.0.28
 
 [!include [banner](../includes/banner.md)]
 
-Onboarding is mandatory for all taxpayers who are subjects to electronic invoicing in Saudi Arabia. This topic provides information about onboarding process for taxpayers and their electronic invoicing software by Saudi Arabian tax authorities.
+Onboarding is mandatory for all taxpayers who are subjects to electronic invoicing in Saudi Arabia. As the result of onboarding process, taxpayers will obtain Cryptographic Stamp Identifiers (**CSID**) which are required for integration with Saudi Arabian electronic invoicing portal and further electronic invoices submission.
+This topic provides information about onboarding process for taxpayers and their electronic invoicing software by Saudi Arabian tax authorities.
 
 ## Prerequisites
 
 - The legal entity must be registered as a Taxpayer in Saudi Arabia and have a valid VAT registration number.
 - The legal entity must have the access to Saudi Arabian Taxation Portal - [ERAD](https://fatoora.zatca.gov.sa/) 
 
-## Process
+## Onbaording process
 
 1. In the Taxation Portal (**ERAD**), navigate to the Onboarding and Management Portal by clicking on the relevant tile.
 2. On the main landing page of the Onboarding and Management Portal select the **Onboard new solution unit/device** tile and then click on 
 **Generate OTP code**.
 3. Choose to the number of **OTP** (*on-time password*) codes to be generated. The number depends on how many e-invoicing generation units (devices) will be used.
+4. Save the generated OTP codes to be used on the next steps.
 
 Text [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md). 
 
