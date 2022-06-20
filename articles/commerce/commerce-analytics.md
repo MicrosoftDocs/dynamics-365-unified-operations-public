@@ -346,7 +346,7 @@ The **Impression report** page includes the following metrics:
 ## Commerce analytics (Preview) installation
 
 > [!NOTE]
-> Commerce analytics (Preview) is in preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, and Japan regions. If your Finance and Operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS). Before you can use this feature, see [Configure export to Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).
+> Commerce analytics (Preview) is in preview in the United States, Canada, United Kingdom, Europe, South East Asia, East Asia, Australia, and Japan regions. If your finance and operations environment is in any of those regions, you can enable this feature in your environment by using Microsoft Dynamics Lifecycle Services (LCS). Before you can use this feature, see [Configure export to Azure Data Lake](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).
 
 ### <a name="enableCommerceAnalytics"></a>Enable and configure Commerce analytics (Preview)
 
@@ -470,3 +470,4 @@ To install the Power BI template app for Commerce analytics (Preview), follow th
 Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

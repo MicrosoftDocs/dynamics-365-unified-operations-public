@@ -43,9 +43,9 @@ The following illustration shows an overview of Dynamics 365 Commerce components
 
 To ensure compatibility between all Commerce components that are serviced and deployed by customers and partners, you must follow several versioning dependencies during servicing updates. The following list describes all these dependencies.
 
-- **Commerce headquarters and Finance and Operations apps must be on the same version as, or a newer version than, Commerce Scale Unit (both cloud and self-hosted).**
+- **Commerce headquarters and finance and operations apps must be on the same version as, or a newer version than, Commerce Scale Unit (both cloud and self-hosted).**
 
-    For example, if Commerce headquarters and Finance and Operations apps are on version 10.0.26, Commerce Scale Unit must be on version 10.0.26 or earlier (for example, 10.0.25 or 10.0.24).
+    For example, if Commerce headquarters and finance and operations apps are on version 10.0.26, Commerce Scale Unit must be on version 10.0.26 or earlier (for example, 10.0.25 or 10.0.24).
 
 - **Commerce Scale Unit must be on the same version as, or a newer version than, Modern Point of Sale (POS), Hardware Station, and the Commerce software development kit (SDK) and associated local site configurations (such as modules, data actions, and themes).**
 
@@ -65,7 +65,7 @@ The following table describes the current supported versions of various Commerce
 
 | Component | Latest available release (first release available in Sandbox) | Latest available component version number (first release available in Sandbox) | Earliest supported release | Earliest supported component version number |
 |---|---|---|---|---|
-| Finance and Operations apps | 10.0.26 | 10.0.26 | 10.0.22 | 10.0.22 |
+| finance and operations apps | 10.0.26 | 10.0.26 | 10.0.22 | 10.0.22 |
 | Commerce Scale Unit (cloud-hosted) | 10.0.26 | 9.36 | 10.0.22 | 9.32 |
 | Commerce module library | 10.0.26 | 9.36 | 10.0.22 | 9.32 |
 | Commerce Scale Unit (self-hosted) | 10.0.26 | 9.36 | 10.0.18 | 9.28 |
@@ -80,7 +80,7 @@ Commerce components follow the One Version service updates. For more information
 
 Customers can pause up to three consecutive updates across the following components. (Three updates correspond to approximately six calendar months.)
 
-- Commerce headquarters and Finance and Operations apps
+- Commerce headquarters and finance and operations apps
 - Commerce Scale Unit (cloud-hosted)
 - Commerce SDK and associated local site configurations (such as modules, data actions, and themes)
 
@@ -120,3 +120,4 @@ For more information about serviceability for extensions, see [Create deployable
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
