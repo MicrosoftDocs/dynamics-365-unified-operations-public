@@ -33,9 +33,11 @@ As of October 1, 2020, businesses in Poland are responsible for reporting VAT in
 - Both VAT records (a set of information about purchases and sales that is produced from the entrepreneur's VAT records for a given period)
 - A VAT declaration (VAT-7 declaration)
 
+As of Finance **10.0.29** the JPK-V7M feature supports filing a VAT return for [Multiple VAT registrations](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers).
+
 ## Prerequisites
 
-Before you can prepare Microsoft Dynamics 365 Finance to report a JPK_V7M, your business processes and the system must meet the following conditions:
+Before you can prepare Microsoft Dynamics 365 Finance to report a JPK-V7M, your business processes and the system must meet the following conditions:
 
 - On the **Sales tax authorities** page (**Tax** > **Indirect tax** > **Sales tax** > **Sales tax authorities**), for the tax authority that is associated with tax codes that are used in tax transactions that must be considered by the JPK_V7M report, the **Report layout** field must be set to **Default**. For more information about how to set up sales tax authorities, see [Set up sales tax authorities](../general-ledger/tasks/set-up-sales-tax-authorities.md).
 - When tax transactions that must be considered by the JPK_V7M report are posted, the **Date of VAT register** field must be set.
