@@ -4,7 +4,7 @@
 title: Data management overview
 description: This article provides information about data management in Finance and Operations.
 author: peakerbl
-ms.date: 04/22/2021
+ms.date: 06/20/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -283,9 +283,9 @@ The following features are enabled via flighting. *Flighting* is a concept that 
 | DMFXsltEnableScript     | This flight only applies to Platform update 34 and non-production environments. A fix was made in Platform update 34 to prevent scripting in XSLT. However, this resulted in breaking some functionality that was dependent on scripting. As a result, this flight has been turned ON by Microsoft in all production environments as a preventive measure. In non-production environments, this must be added by customers if they encounter XSLT failures related to scripting. From Platform update 35 onward, a code change was made to revert the Platform update 34 change so this flight does not apply from Platform update 35 onward. Even if you enabled this flight in Platform update 34, upgrading to Platform update 35 will not cause any negative impact due to this flight being ON from Platform update 34. |
 | DMFExecuteSSISInProc     | This flight is OFF by default. This is related to a code fix that was made to run SQL Server Integration Services (SSIS) out of in-process to optimize memory utilization of SSIS when running DIXF jobs. However, this change has caused a regression in a scenario where if the DIXF data project name has an apostrophe (') in it, then the job will fail with an error. If you encounter this issue, removing the (') in the data project name will resolve the failure. However, if for some reason the name cannot be changed, then this flight can be enabled to overcome this error. Enabling this flight will make SSIS run in-process as before, which could lead to higher memory consumption when running DIXF jobs.  |
 
-The following steps enable a flight in a non-production environment. Execute the following SQL command.
+The following steps enable a flight in a Tier-1 environment. Execute the following SQL command.
 
-For enabling flights in a production environment, a support case must be logged with Microsoft.
+For enabling flights in a production or sandbox environment, a support case must be logged with Microsoft.
 
 - After running the SQL statement, ensure that the following is set in the web.config file on each of the AOS's.
         add key="DataAccess.FlightingServiceCatalogID" value="12719367"
