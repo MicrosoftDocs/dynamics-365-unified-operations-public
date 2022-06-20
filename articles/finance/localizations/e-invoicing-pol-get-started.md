@@ -49,7 +49,7 @@ Before you begin the procedures in this topic, complete the following prerequisi
 - Activate the integration between your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management application and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](e-invoicing-activate-setup-integration.md).
 - Create certificates and secrets in Azure Key Vault, and set it up it as described in [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md). 
     - The secret for the legal entity tax identification number.
-    - The secret that will contain the public key provided by Polish National system for electronic invoicing [KSEF](https://www.podatki.gov.pl/ksef)
+    - The secret that will contain the public key provided by Polish National system for electronic invoicing [KSEF](https://www.podatki.gov.pl/ksef).
     - The certificate for digital signing.
 
 ## Country-specific configuration for the Polish electronic invoice (PL) feature
@@ -59,14 +59,18 @@ Some of the parameters from the **Polish electronic invoice (PL)** electronic in
 1. Import the latest version of the **Polish electronic invoice (PL)** Globalization feature as described in [Import features from the Global repository](e-invoicing-import-feature-global-repository.md).
 2. Create a copy of the imported Globalization feature, and select your configuration provider for it, as described in [Create a Globalization feature](e-invoicing-create-new-globalization-feature.md).
 3. On the **Versions** tab, verify that the **Draft** version is selected.
-4. On the **Setups** tab, in the grid, select the **Submit sales invoice** feature setup.
-5. Select **Edit**.
-6. On the **Processing pipeline** tab, in the **Processing pipeline** section, select **Sign ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ**.
+4. On the **Setups** tab, in the grid, select the **Batch** feature setup  and click on the **Edit** button.
+5. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **KSEF: send batch to the invoice system** action.
+6. In the **Parameters** section, select **Client ID**, and then select the name of the secret previously created for the legal entity tax identification number.
 7. In the **Parameters** section, select **Certificate name**, and then select the name of the digital certificate that you created.
-8. In the **Processing pipeline** section, select **Integrate with ZZZZZZZZZZZZZZZZZZZZZZZ**. Repeat this step for the two occurrences of this action.
-9. In the **Parameters** section, select **Web service URL** and **Login service URL**. Then review the URL parameters. To get the testing and production URL, go to the website of Polish National system for electronic invoicing [KSEF](https://www.podatki.gov.pl/ksef).
+8. In the **Parameters** section, select **Public key**, and then select the name of the secret created for the public key.
+9. In the **Parameters** section, select **Service URL**, and make sure that a valid URL is configured. To get the testing and production URLs, go to the website of Polish National system for electronic invoicing [KSEF](https://www.podatki.gov.pl/ksef).
 10. Select **Save**, and close the page.
-11. Repeat the steps 4 through 10 for the **Submit project invoice** and **Submit advance invoice** feature setups.
+11. 
+12. On the **Setups** tab, in the grid, select the **Submit sales invoice** feature setup
+13. Select .
+14. Repeat the steps 4 through 10 for the **Submit project invoice** and **Submit advance invoice** feature setups. 
+
 
 ## Country-specific configuration for the Polish electronic invoice (PL) application setup
 
