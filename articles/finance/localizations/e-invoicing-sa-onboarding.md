@@ -35,14 +35,17 @@ Onboarding is mandatory for all taxpayers who are subjects to electronic invoici
 
 ## Prerequisites
 
-The legal entity must be registered as a Taxpayer in Saudi Arabia and have a valid VAT registration number.
-
-- Text [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md). 
-- [ERAD](https://fatoora.zatca.gov.sa/) 
+- The legal entity must be registered as a Taxpayer in Saudi Arabia and have a valid VAT registration number.
+- The legal entity must have the access to Saudi Arabian Taxation Portal - [ERAD](https://fatoora.zatca.gov.sa/) 
 
 ## Process
 
-Text
+1. In the Taxation Portal (**ERAD**), navigate to the Onboarding and Management Portal by clicking on the relevant tile.
+2. On the main landing page of the Onboarding and Management Portal select the **Onboard new solution unit/device** tile and then click on 
+**Generate OTP code**.
+3. Choose to the number of **OTP** (*on-time password*) codes to be generated. The number depends on how many e-invoicing generation units (devices) will be used.
+
+Text [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md). 
 
 > [!NOTE]
 > Some .
