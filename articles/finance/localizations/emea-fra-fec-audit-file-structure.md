@@ -4,7 +4,7 @@
 title: Structure of Dynamics 365 Finance data sources for the FEC
 description: This article describes the structure of Microsoft Dynamics 365 Finance data sources for the Fichier des écritures comptables (FEC).
 author: liza-golub
-ms.date: 11/24/2021
+ms.date: 06/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -242,7 +242,7 @@ This section explains the data sources of the fields in FEC of the "Main" type i
 
 ### JournalCode – Journal code of the accounting entry
 
-The value of the `JournalCode` field represents the text part of the prefix that is specified for the number sequence of the general ledger voucher that the general ledger transaction uses when it's posted. The algorithm for extracting the prefix is based on the rule that must be applied during the setup of the number sequences, as described in [Prerequisites for generating an FEC audit file](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-fra-fec-audit-file-pre-requisites). For example, if the voucher series for vendor invoice journals is defined as **FRSIFACF-\#\#\#\#\#\#\#\#**, the value **FRSIFACF** is reported in the `JournalCode` field in the FEC.
+The value of the `JournalCode` field represents the text part of the prefix that is specified for the number sequence of the general ledger voucher that the general ledger transaction uses when it's posted. The algorithm for extracting the prefix is based on the rule that must be applied during the setup of the number sequences, as described in [Prerequisites for generating an FEC audit file](emea-fra-fec-audit-file-pre-requisites.md). For example, if the voucher series for vendor invoice journals is defined as **FRSIFACF-\#\#\#\#\#\#\#\#**, the value **FRSIFACF** is reported in the `JournalCode` field in the FEC.
 
 ### JournalLib – Journal caption of the accounting entry
 
