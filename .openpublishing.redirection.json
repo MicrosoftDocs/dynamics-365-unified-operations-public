@@ -1,6 +1,31 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/new-task-guides-available-february-2016.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/new-task-guides-dec-2017.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/new-task-guides-november-2016.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/new-updated-task-guides-available-august-2016.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/new-updated-task-guides-available-may-2016.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/fin-ops/get-started/ax4-content-retired.md",
       "redirect_url": "/dynamics365/fin-ops-core/fin-ops/index",
       "redirect_document_id": "false"
@@ -15,7 +40,7 @@
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/data-entities/priority-based-throttling",
       "redirect_document_id": "false"
     },
-    {      
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/analytics/er-prepare-application-specific-metadata.md",
       "redirect_url": "tasks/prepare-application-metadata-rcs?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
       "redirect_document_id": "false"
