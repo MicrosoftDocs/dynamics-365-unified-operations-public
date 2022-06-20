@@ -2,7 +2,7 @@
 title: Project onboarding
 description: This article provides information about the Project onboarding wizard in Microsoft Dynamics Lifecycle Services.
 author: vetrivicky
-ms.date: 11/30/2020
+ms.date: 06/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -81,6 +81,9 @@ For more information, see [Configuring project security](configure-lcs-security.
 
 - Connect LCS and Azure DevOps to maintain the application lifecycle.
 - Enter the root URL of your Azure DevOps account and the personal access token that you obtained from Azure DevOps. The Azure DevOps account should belong to the customer.
+
+> [!NOTE]
+> LCS requires entering the Azure DevOps root URL in the legacy format. The legacy format is `https://ACCOUNT.visualstudio.com` and `https://contoso.visualstudio.com` is an example.
 
 ## Configure Azure DevOps
 
