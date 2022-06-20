@@ -4,7 +4,7 @@
 title: Financial reporting overview
 description: This article describes where to access financial reporting in Microsoft Dynamics 365 Finance and how to use the financial reporting capabilities.
 author: aprilolson
-ms.date: 03/31/2022
+ms.date: 06/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,17 +33,17 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes where to access Financial reporting and how to use the financial reporting capabilities. It also includes a description of the default financial reports that are provided.
 
-## Enabling Financial Reporting
-To begin using the financial reporting service for your organization, a Lifecycle Services (LCS) administrator must enable this service in the LCS portal for your organization. If Financial Reporting has not been provisioned for your environment,  please contact your LCS administrator in order to enable the service. 
+## Enable Financial reporting
+To use the financial reporting service for your organization, a Lifecycle Services (LCS) administrator must enable this service in the LCS portal for your organization. If Financial reporting hasn't been provisioned for your environment, contact your LCS administrator to enable the service. 
 
-## Accessing Financial Reporting
+## Accessing Financial reporting
 
-You can find the **Financial Reporting** menu in the following locations:
+You can find the **Financial reporting** menu in the following locations:
 
-- **General Ledger** &gt; **Inquiries and reports**
-- **Budgeting** &gt; **Inquires and reports** &gt; **Basic budgeting**
-- **Budgeting** &gt; **Inquiries and reports** &gt; **Budget planning**
-- **Budgeting** &gt; **Inquiries and reports** &gt; **Budget control**
+- **General Ledger** > **Inquiries and reports**
+- **Budgeting** > **Inquires and reports** > **Basic budgeting**
+- **Budgeting** > **Inquiries and reports** > **Budget planning**
+- **Budgeting** > **Inquiries and reports** > **Budget control**
 - Consolidations
 
 To create and generate financial reports for a legal entity, you must set up the following information for that legal entity:
@@ -55,7 +55,7 @@ To create and generate financial reports for a legal entity, you must set up the
 - Post a transaction to at least one account
 - MainAccount is listed in the **Selected** column on the **Financial reporting setup** page (**General ledger > Ledger setup > Financial reporting setup**)
 
-## Granting security access to Financial Reporting
+## Granting security access to Financial reporting
 
 The financial reporting functions are available to users who have the appropriate privileges and duties assigned to them through their security roles. The following sections list these privileges and duties, together with the associated roles.
 
