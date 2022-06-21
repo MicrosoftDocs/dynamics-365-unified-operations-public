@@ -50,7 +50,7 @@ Onboarding process consist of 2 parts:
 1. In the Taxation Portal (**ERAD**), navigate to the Onboarding and Management Portal by clicking on the relevant tile.
 2. On the main landing page of the Onboarding and Management Portal select the **Onboard new solution unit/device** tile and then click on 
 **Generate OTP code**.
-3. Choose to the number of **OTP** (*on-time password*) codes to be generated. The number depends on how many e-invoicing generation units (devices) will be used.
+3. Choose the number of **OTP** (*on-time password*) codes to be generated. The number depends on how many e-invoicing generation units (devices) will be used.
 4. Save the generated OTP codes to be used on the next steps.
 5. Prepare a configuration file for Certificate Signing Request in a form of a plain text file which should contain the following data:
 
