@@ -73,8 +73,9 @@ Import the most recent versions of the configurations. The version description u
 ![Standard Audit File for Tax (SAF-T) field on the General ledger parameters page.](media/nor-saf-gl-parameters.jpg)
 
 > [!NOTE]
-> If you enable the [**Standard Audit File for Tax (SAF-T) electronic report**](../general-ledger/standard-audit-file.md) feature in the **Feature management** workspace, in addition to the **Standard Audit File for Tax (SAF-T)** field on the **Standard Audit File for Tax (SAF-T)** tab of the **General ledger parameters** page, you will see the **Use common menu item** check box. 
-> The **Use common menu item** check box must be *unmarked* to run the SAF-T Format (NO) electronic reporting configuration. Enable the **Use common menu item** check box by marking it only if you plan to use an electronic reporting configuration which can be run directly from the **Electronic reporting** workspace and doesn't require any data preprocessing on Finance application side.
+> If you enable the [**Standard Audit File for Tax (SAF-T) electronic report**](../general-ledger/standard-audit-file.md) feature in the **Feature management** workspace, the **Standard Audit File for Tax (SAF-T)** tab of the **General ledger parameters** page will include the **Use common menu item** checkbox in addition to the **Standard Audit File for Tax (SAF-T)** field.
+>
+> To run the **SAF-T Format (NO)** ER configuration, you must *clear* the **Use common menu item** checkbox. Select the **Use common menu item** checkbox only if you plan to use an ER configuration that can be run directly from the **Electronic reporting** workspace and doesn't require any data preprocessing on the Finance app side.
 
 ### <a name="sales"></a>Associate sales tax codes with Norwegian standard value-added tax (VAT) tax codes
 
@@ -104,7 +105,7 @@ Starting from **version 54.61**, the electronic reporting format **SAF-T Format 
 To associate **Main accounts** that are used in Finance with Norwegian standard accounts via **Application specific parameters** follow the following steps:
 
 1. Open the **Electronic reporting** workspace, in the configuration tree, select the **SAF-T Format (NO)** electronic reporting format. 
-2. Make sure that company you are working is the company for which you want to set up the **Application specific parameters**.
+2. Make sure that the company you are working in is the company for which you want to set up the **Application specific parameters**.
 3. On the Action Pane, on the **Configurations** tab, in the **Application specific parameters** group, select **Setup**.
 4. Select the version of the format that you want to use on the left side of the **Application specific parameters** page.
 5. On the **Lookup** FastTab, select **StandardMainAccount_Lookup**, and then specify criteria on the **Conditions** FastTab by adding lines for each **Result** value which must be used in the selected company. If several **Main accounts** in the selected company must result the same **Standard account**, add a separate line for each **Main account** and specify the same **Standard account** for each one.
@@ -125,7 +126,7 @@ You can easily export the setup of application-specific parameters from one vers
 
     - **Optimization of query data source creation time during execution of ER reports**
     - **Optimize datasets memory consumption at ER reports runtime**
-    - **Dimension attributes values collection optimization in \‘MasterFiles\’ report section of SAF-T for Norway**
+    - **Dimension attributes values collection optimization in 'MasterFiles' report section of SAF-T for Norway**
 
 3. Select **Enable now**.
 
