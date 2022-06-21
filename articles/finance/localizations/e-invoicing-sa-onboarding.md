@@ -101,10 +101,11 @@ Onboarding process consist of 2 parts:
     | businessCategory | Industry or sector for which the device or solution will generate invoices| Free text|
 
 6. Run provided below [onboarding script](#script) with the OTP and configuration file as input parameters, for example: *script.ps -OTP 1234567 -CSR config.txt*
-7. As result of the script running, the CCSID will be received as a certificate file in *pfx* format. Save this CCSID certificate file as a secret in Azure Key Vault. For more information, see [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md) 
+7. As result of the script running, the CCSID will be received as a certificate file in *pfx* format. Save this CCSID certificate file in Azure Key Vault. For more information, see [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md) 
 
 ### Obtaining Production CSID
-Text [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md). 
+To obtain Production CSID the solution for electronic invoices generation and submission must be properly configured and fully functioning.
+To achive this, all required configuration steps must be preliminary completed. For more information, see [Get started with Electronic invoicing for Saudi Arabia](e-invoicing-sa-get-started.md). 
 
 > [!NOTE]
 > Some .
