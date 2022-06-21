@@ -60,7 +60,7 @@ Onboarding process consist of 2 parts:
     certificateTemplateName = 1.3.6.1.4.1.311.20.2
     [req]
     default_bits = 2048
-    emailAddress = amelnikov@ancorofficeline.onmicrosoft.com
+    emailAddress = MyEmail@email.com
     req_extensions = v3_req
     x509_extensions = v3_ca
     prompt = no
@@ -69,9 +69,9 @@ Onboarding process consist of 2 parts:
     distinguished_name = dn
     [dn]
     C=SA
-    OU=Contoso North
+    OU=Riyad Branch
     O=Contoso
-    CN=MSD365Finance
+    CN=EA123456789
     [v3_req]
     basicConstraints = CA:FALSE
     keyUsage = digitalSignature, nonRepudiation, keyEncipherment
@@ -80,13 +80,13 @@ Onboarding process consist of 2 parts:
     subjectAltName = dirName:alt_names
     [alt_names]
     SN=MSD365Finance10028
-    UID=310122393501111
+    UID=310122393500003
     title=1100
-    registeredAddress= address
-    businessCategory=Sample Bussiness
+    registeredAddress= MyAddress
+    businessCategory=Industry
     ```
 
-    In the configuration file, only the following data must be updated with the Company specific information:
+    In the configuration file, update the **emailAddress** and the following specific data:
 
     | Code                             | Description | Specification |
     |----------------------------------|-------------|-------------|
