@@ -2,7 +2,7 @@
 # required metadata
 
 title: Standard Audit File for Tax (SAF-T) electronic report
-description: This article explains how to generate the Standard Audit File for Tax (SAF-T) electronic report in Dynamics 365 Finance.
+description: This article explains how to generate the Standard Audit File for Tax (SAF-T) electronic report in Microsoft Dynamics 365 Finance.
 author: liza-golub
 ms.author: elgolu
 ms.date: 06/20/2022
@@ -29,36 +29,34 @@ ms.search.validFrom: 2022-06-17
 
 This article explains how to set up and run the Standard Audit File for Tax (SAF-T) electronic report.
 
-The **Standard Audit File for Tax (SAF-T) electronic report** feature is available in Dynamics 365 Finance as of version 10.0.26.
+The **Standard Audit File for Tax (SAF-T) electronic report** feature is available in Microsoft Dynamics 365 Finance as of version 10.0.26.
 
-If there is a provided [Electronic Reporting (ER)](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) format configuration for the country that's defined in the primary address of your legal entity which can be run directly from ER workspace, you can use the **Standard Audit File for Tax (SAF-T) electronic report** feature to run this ER format. The format is run from the **General ledger** > **Inquires and reports** > **Standard Audit File for Tax (SAF-T)** > **Standard Audit File for Tax (SAF-T)** menu item.
+If an [Electronic Reporting (ER)](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) format configuration is provided for the country or region that is defined in the primary address of your legal entity, and that ER format can be run directly from the ER workspace, you can use the **Standard Audit File for Tax (SAF-T) electronic report** feature to run it. To run the format, go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
 
-Complete the following steps to use the **Standard Audit File for Tax (SAF-T) electronic report** feature. 
+Follow these steps to use the **Standard Audit File for Tax (SAF-T) electronic report** feature.
 
-1. In Finance, go to **Feature management** > **All**.
-2. In the feature list, find and select the **Standard Audit File for Tax (SAF-T) electronic report** feature.
+1. In Finance, open the **Feature management** workspace.
+2. On the **All** tab, find and select the **Standard Audit File for Tax (SAF-T) electronic report** feature in the feature list.
 3. Select **Enable now**.
 
-When **Standard Audit File for Tax (SAF-T) electronic report** feature is enabled, complete the following steps to set up an ER format configuration.
+After the **Standard Audit File for Tax (SAF-T) electronic report** feature is enabled, follow these steps to set up an ER format configuration.
 
-1. Go to **General ledger** > **Ledger setup** > **General ledger parameters**.
-2. On the **General ledger parameters** page, on the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select the ER format configuration which must be used.
+1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
+2. On the **Standard Audit File for Tax (SAF-T)** tab, in the **Standard Audit File for Tax (SAF-T)** field, select the ER format configuration that must be used.
 
-To generate a report using the selected ER format configuration in the **General ledger parameters**, follow these steps.
+Follow these steps to generate a report by using the ER format configuration that is selected in General ledger parameters.
 
-1. go to **General ledger** > **Inquiries and reports** > **Standard Audit File for Tax (SAF-T)** > **Standard Audit File for Tax (SAF-T)**.
-2. In the dialog box of the report, specify the necessary parameters and select **OK**.
+1. Go to **General ledger** \> **Inquiries and reports** \> **Standard Audit File for Tax (SAF-T)** \> **Standard Audit File for Tax (SAF-T)**.
+2. In the dialog box for the report, specify the required parameters, and then select **OK**.
 
 ## Country-specific regulatory features supported by the Standard Audit File for Tax (SAF-T) electronic report feature
 
 The following table provides information about country-specific regulatory features that are supported by the **Standard Audit File for Tax (SAF-T) electronic report** feature.
 
-| Country     | Feature name |
-|-------------|--------------|
-| Lithuania   | [Standard Audit File for Tax (SAF-T) for Lithuania](../localizations/emea-ltu-saf-t.md) |
-| Norway      | [Standard Audit File for Tax (SAF-T) for Norway](../localizations/emea-nor-satndard-audit-file-for-tax.md) |
-| Singapore   | [IRAS Audit File (IAF) for Singapore](../localizations/apac-sgp-iras-audit-file.md) |
-
-
+| Country   | Feature name |
+|-----------|--------------|
+| Lithuania | [Standard Audit File for Tax (SAF-T) for Lithuania](../localizations/emea-ltu-saf-t.md) |
+| Norway    | [Standard Audit File for Tax (SAF-T) for Norway](../localizations/emea-nor-satndard-audit-file-for-tax.md) |
+| Singapore | [IRAS Audit File (IAF) for Singapore](../localizations/apac-sgp-iras-audit-file.md) |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
