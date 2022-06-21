@@ -90,30 +90,28 @@ You must also set up main accounts to post inventory cost for transfer orders to
 > [!NOTE]
 > The **Inventory expenditure, loss** account is required to post the scrap amount when receiving a transfer order with scrap.
 
-### Configure posting to general ledger based on financial dimension links to sites
+### Configure posting to General ledger based on financial dimension links to sites
 
-In the standard Dynamics 365 functionality, transfer orders are only posted to general ledger if:
-1. Dimension link is activated, that is, there is a link between the Site inventory dimension and some financial dimension.
-2. The transfer order movement happens between warehouses that belong to different sites. This condition applies to the From, Transit, and To warehouses. If the From warehouse and Transit warehouse belong to the same site, the transfer order shipment is not posted to general ledger. Similarly, if the Transit warehouse and To warehouse belong to the same site, the transfer order receipt is not posted to General ledger.
+In the standard Dynamics 365 functionality, transfer orders are only posted to General ledger if:
+1. Dimension link is activated, that is, there is a link between the Site inventory dimension and some financial dimension, and
+2. the transfer order movement happens between warehouses that belong to different sites. This condition applies to the From, Transit, and To warehouses. If the From warehouse and Transit warehouse belong to the same site, the transfer order shipment is not posted to General ledger. Similarly, if the Transit warehouse and To warehouse belong to the same site, the transfer order receipt is not posted to General ledger.
 
-If it is required to post stock transfers to general ledger and track inventory in transit warehouses, it is recommended to enable Dimension link and create separate sites for transit warehouses.
+If it is required to post stock transfers to General ledger and track inventory in transit warehouses, it is recommended to enable Dimension link and create separate sites for transit warehouses.
 
 For more information, see [Configure and manage financial dimension links to sites](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/configure-and-manage-financial-dimension-links-to-sites).
 
-## Supported scenarios
+## Create and post a stock transfer order
 
-The following example scenarious show frequently performed actions that are associated with transfer orders where the **Transfer type** field is set to **Stock transfer** and **Dimension link** is **enabled**.
-
-### Scenario 1: Create and post a stock transfer order
+The following example scenario shows frequently performed actions that are associated with transfer orders where the **Transfer type** field is set to **Stock transfer** and **Dimension link** is **enabled**.
 
 1. Go to **Inventory management** > **Outbound orders** > **Transfer order** and create a new transfer order.
 1. In the **From warehouse** field, select the supply warehouse that the items are dispatched from.
 1. In the **To warehouse** field, select the receiving warehouse that the items are delivered to.
 
     > [!NOTE]
-    > If the From warehouse and Transit warehouse belong to the same site, the transfer order shipment is not posted to general ledger. Similarly, if the Transit warehouse and To warehouse belong to the same site, the transfer order receipt is not posted to general ledger.
+    > If the From warehouse and Transit warehouse belong to the same site, the transfer order shipment is not posted to General ledger. Similarly, if the Transit warehouse and To warehouse belong to the same site, the transfer order receipt is not posted to General ledger.
 
-3. In the **Transfer type** field, select **Stock transfer** to apply GST to the transfer of items.
+1. In the **Transfer type** field, select **Stock transfer** to apply GST to the transfer of items.
 
     > [!NOTE]
     > If you select **Transfer order** in the **Transfer type** field, the transfer order will be posted based on the standard transfer order process.
@@ -131,103 +129,88 @@ The following example scenarious show frequently performed actions that are asso
 
 1. In the **Unit price** field, enter the cost price or the transfer price for one unit of the item.
 1. Select the **Tax information** tab to set up taxes for the transfer order and enter details. You can change the default information that is displayed in the fields.
+    
+    - At the line level, select **Tax information from warehouse**, select the **GST** tab and click **OK**.
+    - At the line level, select **Tax information to warehouse**, select the **GST** tab and click **OK**.
+    
+1. Go to **Inquiries** > **Tax document** and verify that the tax is calculated.
 1. Select **Ship** > **Ship transfer order**, and on the **Shipment** page, post the transfer order shipment.
+
+    - Select the **Edit lines** check box.
+    - In the **Update** field, select **All**.
+    - Select **Setup** > **Tax document**.
+	- Select **Close**.
+	- Click **OK**.
+
 1. Select **Receive** > **Receive**, and on the **Receive** page, post the transfer order receipt.
+
+    - Select the **Edit lines** check box.
+    - In the **Update** field, select **All**.
+    - Select **Setup** > **Tax document**.
+	- Select **Close**.
+	- Click **OK**.	
 
     > [!NOTE]
     > If the "Enable uniform tax amount and GST transaction ID for both shipment and receipt transaction of a stock transfer order" feature is enabled in the **Feature management** workspace, it is only possible to receive a previously posted shipment. You need to select **Shipment** in the **Update** field when posting a receipt and select a previously posted shipment in the **Shipment voucher** field.
     
 You can also cancel a previously posted stock transfer order shipment if no receipts have been posted for this order. On the **Transfer orders** page, select **Transfer order** > **Transfer order history**. On the **Transfer order history** page, select a previously posted shipment. Select **Cancel**, and confirm the cancellation of the shipment. The shipment will be canceled, and all inventory movements and GST that was posted for the shipment will be reversed. The "Transfer Order Cancellation" feature in the **Feature management** workspace must be enabled to cancel transfer order shipments.
 
-### Scenario 2: Standard transfer order posting
-
-In this scenario, complete the procedures described in the above [**Scenario 1: Create and post a stock transfer order**](scenario-1-create-and-post-a-stock-transfer-order.md), assuming that the values are entered as provided in the below examples. 
-
-#### Example 1:
+### Example 1: Standard transfer order posting
 
 - From warehouse -> Site 1
 - Transit warehouse -> Site 2
 - To warehouse -> Site 3
 
-##### Transfer order shipment posting:
+#### Transfer order shipment posting:
 
 |      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
 | Inventory issue                 | Site 1                             |                    |         100         |  
-| Inventory inter-unit receiveble | Site 1                             |        100         |                     |
+| Inventory inter-unit receivable | Site 1                             |        100         |                     |
 | Inventory inter-unit payable    | Site 2                             |                    |         100         | 
 | Inventory receipt               | Site 2                             |        100         |                     |
 
-##### Transfer order receipt posting:
+#### Transfer order receipt posting:
 
 |      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
 | Inventory issue                 | Site 2                             |                    |         100         |  
-| Inventory inter-unit receiveble | Site 2                             |        100         |                     |
+| Inventory inter-unit receivable | Site 2                             |        100         |                     |
 | Inventory inter-unit payable    | Site 3                             |                    |         100         | 
 | Inventory receipt               | Site 3                             |        100         |                     |
 
 The **balance on the inventory in transit** can be calculated as **_InventoryIssue-Site2 - InventoryReceipt-Site2_**. It is nullified upon the receipt.
 
-#### Example 2:
+### Example 2:
 
 - From warehouse -> Site 1
 - Transit warehouse -> Site 1
 - To warehouse -> Site 3
 
 ##### Transfer order shipment posting:
-* no posting to general ledger occurs.
+* no posting to General ledger occurs.
 
 ##### Transfer order receipt posting:
 
 |      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
 | Inventory issue                 | Site 1                             |                    |         100         |  
-| Inventory inter-unit receiveble | Site 1                             |        100         |                     |
+| Inventory inter-unit receivable | Site 1                             |        100         |                     |
 | Inventory inter-unit payable    | Site 3                             |                    |         100         | 
 | Inventory receipt               | Site 3                             |        100         |                     |
 
-In this case, no inventry in transit balance is tracked.
+In this case, **no inventry in transit balance** is tracked.
 
-### Scenario 3: Stock transfer order that have tax on the transfer price (GST)
-
-Complete the procedures in this scenario to create a stock transfer order that has tax on the transfer price.
-
-1. Set up sites and warehouses as follows:
+### Example 3: Stock transfer order that have tax on the transfer price (GST)
 
 - From warehouse -> Site 1
 - Transit warehouse -> Site 2
 - To warehouse -> Site 3
 
-1. Go to **Inventory management** > **Outbound orders** > **Transfer order** and create a new transfer order.
-1. In the **From warehouse** field, select the supply warehouse that the items are dispatched from.
-1. In the **To warehouse** field, select the receiving warehouse that the items are delivered to.
-1. In the **Transfer type** field, select **Stock transfer** to apply GST to the transfer of items.
-1. In the **Price type** field, select a default price type for transfer order lines.
-1. On the **Transfer order lines** tab, create a new line and in the **Item number** field, select the item to transfer.
-1. In the **Transfer quantity** field, enter the quantity of the items to transfer, and in the **Unit** field, modify the default unit of measurement, if required.
-1. In the **Price type** field, select the price type for the transfer order line as required.
-1. In the **Unit price** field, enter the cost price XX or the transfer price for one unit of the item.
-1. Select the **Tax information** tab to set up taxes for the transfer order and enter details. You can change the default information that is displayed in the fields.
-    
-    - At the line level, select **Tax information from warehouse**, select the **GST** tab and click **OK**.
-    - At the line level, select **Tax information to warehouse**, select the **GST** tab and click **OK**.
-    - **GST** rate is **10%**."
+- **GST** rate is **10%**."
 
-1. Go to **Inquiries** > **Tax document** and verify that the tax is calculated.
-1. Select **Ship** > **Ship transfer order**, and on the **Shipment** page, post the transfer order shipment as follows:
 
-    - Select the **Edit lines** check box.
-    - In the **Update** field, select **All**.
-    - Select **Setup** > **Tax document**.
-
-1. Select **Receive** > **Receive**, and on the **Receive** page, post the transfer order receipt as follows:
-
-    - Select the **Edit lines** check box.
-    - In the **Update** field, select **All**.
-    - Select **Setup** > **Tax document**.
-
-##### Transfer order shipment posting:
+#### Transfer order shipment posting:
 
 - Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
 - **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
@@ -235,18 +218,18 @@ Complete the procedures in this scenario to create a stock transfer order that h
 |      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
 | Inventory issue                 | Site 1                             |                    |         100         |  
-| Inventory inter-unit receiveble | Site 1                             |        100         |                     |
+| Inventory inter-unit receivable | Site 1                             |        100         |                     |
 | Inventory inter-unit payable    | Site 2                             |                    |         100         | 
 | Inventory receipt               | Site 2                             |        100         |                     |
 | GST payable                     | Site 1                             |                    |          12         | 
 | Interim account                 | Site 1                             |         12         |                     |
 
-##### Transfer order receipt posting:
+#### Transfer order receipt posting:
 
 |      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
 | Inventory issue                 | Site 2                             |                    |         100         |  
-| Inventory inter-unit receiveble | Site 2                             |        100         |                     |
+| Inventory inter-unit receivable | Site 2                             |        100         |                     |
 | Inventory inter-unit payable    | Site 3                             |                    |         100         | 
 | Inventory receipt               | Site 3                             |        100         |                     |
 | GST receivable                  | Site 3                             |                    |          12         |  
@@ -256,6 +239,6 @@ Complete the procedures in this scenario to create a stock transfer order that h
 >
 > - **Inventory issue** and **Inventory receipt** are most likely one and the same balance account, such as "Finished goods".
 >  - The **balance on the inventory in transit** can be calculated as **_InventoryIssue-Site2 - InventoryReceipt-Site2_**. It is nullified upon the receipt.
-> - The above settings for Dimension links and sites (that is, a separate site for the transit warehouse) are recommended if it is needed to track the in-transit inventory in general ledger.
+> - The above settings for Dimension links and sites (that is, a separate site for the transit warehouse) are recommended if it is needed to track the in-transit inventory in General ledger.
     
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
