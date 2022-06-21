@@ -54,23 +54,21 @@ To calculate differential ICMS (ICMS-DIF) according to the rules of the RS state
     - Define the taxation code so that it has a fiscal value of **3**. In this way, the adjustment transaction will automatically be created when the **Fiscal books** module is enabled.
     - In the configuration of the sales tax group, select the **Use tax** option for the **ICMS-DIF** sales tax code.
 
-### Use delta tax rate in the configuration of dual base ICMS-DIF sales tax codes
+### Use the delta tax rate in the configuration of dual-base ICMS-DIF sales tax codes
 
-With the above settings, the **ICMS-DIF** sales tax code will be calculated in the dual base rule. However, the nominal tax rate becomes 18% which is different to the 6% in the simple base rule. This causes inconsistency issues in fiscal document and tax reporting. Starting in Dynamics 365 Finance version 10.0.29, the **(Brazil) Configure the delta tax rate in ICMS-DIF tax code for the dual base case** feature can be enabled in **Feature management** to remove the inconsistency.
+When the previously described settings are used, the **ICMS-DIF** sales tax code will be calculated in the dual base rule. However, the nominal tax rate becomes 18 percent, which differs from the 6-percent rate in the simple base rule. This difference causes inconsistency issues in fiscal document and tax reporting. As of Microsoft Dynamics 365 Finance version 10.0.29, you can enable the **(Brazil) Configure the delta tax rate in ICMS-DIF tax code for the dual base case** feature in **Feature management** to remove the inconsistency.
 
-- In addition to the steps listed above, in the **Sales tax on sales tax** field, select the **ICMS 12** sales tax code.
-- Set the value of the tax rate of the **ICMS-DIF** sales tax code to 18%. The **Percentage/Amount** field will display the nominal tax rate as 6%.
-    
-> [!NOTE] 
-> **ICMS-DIF** and **ICMS 12** must be assigned in the same sales tax group.
+- In addition to completing the steps in the previous section, select the **ICMS 12** sales tax code in the **Sales tax on sales tax** field.
+- Set the tax rate of the **ICMS-DIF** sales tax code to 18 percent. The **Percentage/Amount** field will show the nominal tax rate as 6 percent.
+
+> [!NOTE]
+> The **ICMS-DIF** and **ICMS 12** sales tax codes must be assigned in the same sales tax group.
 
 ## Basis change (dual base) in ICMS-DIF tax calculations for products to non-taxpayer consumers (DIFAL) in other states
 
 Enable the **(Brazil) Dual base calculation for ICMS-DIFAL in sales transactions** feature in **Feature management** to support the basis-change ICMS-DIF on trading to non-taxpayer consumers from another state. The sample ICMS-DIF sales tax code becomes effective in sales order and free text invoice transactions.
 
-Enable the **(Brazil) Dual base calculation for ICMS-DIFAL for IPI cases** feature in **Feature management** to support scenarios when the trading to non-taxpayer consumers from another state is liable to IPI as well. The tax amount of IPI sales tax code will be recognized and applied in the ICMS-DIFAL tax base.
+Enable the **(Brazil) Dual base calculation for ICMS-DIFAL for IPI cases** feature in **Feature management** to support scenarios where trading to non-taxpayer consumers from another state is also liable for Imposto sobre Produtos Industrializados (IPI). The tax amount of the IPI sales tax code will be recognized and applied in the ICMS-DIFAL tax base.
 
-- In the header of the sales order or free text invoice, on the **Fiscal information** FastTab, the **Final user** option must be set to **Yes**.
-- In the header of the purchase order or vendor invoice, on the **Fiscal information** FastTab, the **Use and consumption** option must be set to **Yes**.
-
-
+- On the header of the sales order or free text invoice, on the **Fiscal information** FastTab, the **Final user** option must be set to **Yes**.
+- On the header of the purchase order or vendor invoice, on the **Fiscal information** FastTab, the **Use and consumption** option must be set to **Yes**.
