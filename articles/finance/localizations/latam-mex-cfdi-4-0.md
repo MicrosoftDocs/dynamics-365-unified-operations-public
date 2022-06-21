@@ -4,7 +4,7 @@
 title: CFDI layout version 4.0
 description: This article provides information about Comprobante Fiscal Digital por Internet (CFDI) layout version 4.0 for Mexico.
 author: v-oskinaolga
-ms.date: 4/08/2022
+ms.date: 06/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -35,7 +35,7 @@ To work with version 4.0, set the following values for the electronic invoice pa
 
 - On the **Electronic invoice parameters** page, in the **CFDI version** field, select **4.0**.
 - On the **CFDI** tab, in the **CFDI XML scheme file** and **CFDI Payment XML schema file** fields, select a new XML scheme file.
-- On the **Electronic invoice parameters** page, you can set a default period type in the **Period** field. The value in this field is used for CFDI global invoices. You can update this value when you are posting a sales order invoice, free text invoice or invoice proposal. If a customer RFC='XAXX010101000' then the system populates the **InformacionGlobal** element with **Periodicidad**, **Meses**, **Año** attributes in the xml file.
+- On the **Electronic invoice parameters** page, you can set a default period type in the **Period** field. The value in this field is used for CFDI global invoices. You can update this value when you post a sales order invoice, free text invoice, or invoice proposal. If a customer RFC='XAXX010101000', the system populates the **InformacionGlobal** element with **Periodicidad**, **Meses**, and **Año** attributes in the xml file.
 - On the **CFDI withholding** tab, in the **CFDI XML scheme file** field, select a new XML scheme file.
 - Go to **Accounts receivable** \> **Customers**, and then, on the **Invoice and delivery** FastTab, in the **Electronic invoices** section, enter the tax regime for customers.
 
