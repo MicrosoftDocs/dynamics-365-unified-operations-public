@@ -4,7 +4,7 @@
 title: Basis change in ICMS-DIF tax calculations for products from suppliers in other states
 description: This article describes the configuration for calculations of the ICMS-DIF tax type when a fiscal document is received in the Brazilian state of Rio Grande do Sul (RS) or São Paulo (SP).
 author: Kai-Cloud
-ms.date: 1/20/2022
+ms.date: 06/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -56,20 +56,21 @@ To calculate differential ICMS (ICMS-DIF) according to the rules of the RS state
 
 ### Use delta tax rate in the configuration of dual base ICMS-DIF sales tax codes
 
-With the above settings, the **ICMS-DIF** sales tax code will be calculated in the dual base rule. However, the nominal tax rate becomes 18% which is different to the 6% in the simple base rule. This causes inconsistency issues in fiscal document and tax reporting. Starting Dynamics 365 Finance version 10.0.29, the **(Brazil) Configure the delta tax rate in ICMS-DIF tax code for the dual base case** feature can be enabled in **Feature management** to get ride of the inconsistency.
+With the above settings, the **ICMS-DIF** sales tax code will be calculated in the dual base rule. However, the nominal tax rate becomes 18% which is different to the 6% in the simple base rule. This causes inconsistency issues in fiscal document and tax reporting. Starting in Dynamics 365 Finance version 10.0.29, the **(Brazil) Configure the delta tax rate in ICMS-DIF tax code for the dual base case** feature can be enabled in **Feature management** to remove the inconsistency.
 
-- In addition to above steps, in the **Sales tax on sales tax**, select the **ICMS 12** sales tax code.
-- Set the value of the tax rate of the **ICMS-DIF** sales tax code to 18%, the **Percentage/Amount** field shall display the nominal tax rate as 6%.
+- In addition to the steps listed above, in the **Sales tax on sales tax** field, select the **ICMS 12** sales tax code.
+- Set the value of the tax rate of the **ICMS-DIF** sales tax code to 18%. The **Percentage/Amount** field will display the nominal tax rate as 6%.
     
-> [!Note] **ICMS-DIF** and **ICMS 12** must be assigned in the same sales tax group.
+> [!NOTE] 
+> **ICMS-DIF** and **ICMS 12** must be assigned in the same sales tax group.
 
 ## Basis change (dual base) in ICMS-DIF tax calculations for products to non-taxpayer consumers (DIFAL) in other states
 
 Enable the **(Brazil) Dual base calculation for ICMS-DIFAL in sales transactions** feature in **Feature management** to support the basis-change ICMS-DIF on trading to non-taxpayer consumers from another state. The sample ICMS-DIF sales tax code becomes effective in sales order and free text invoice transactions.
 
-Enable the **(Brazil) Dual base calculation for ICMS-DIFAL for IPI cases** feature in **Feature management** to support the scenario when the trading to non-taxpayer consumers from another state is liable to IPI as well. The tax amount of IPI sales tax code will be recognized and applied in the ICMS-DIFAL tax base.
+Enable the **(Brazil) Dual base calculation for ICMS-DIFAL for IPI cases** feature in **Feature management** to support scenarios when the trading to non-taxpayer consumers from another state is liable to IPI as well. The tax amount of IPI sales tax code will be recognized and applied in the ICMS-DIFAL tax base.
 
-- In the Header of the sales order or free text invoice, in the **Fiscal information** fasttab, the **Final user** option must be set to **Yes**.
-- In the Header of the purchase order or vendor invoice, in the **Fiscal information** fasttab, the **Use and consumption** option must be set to **Yes**.
+- In the header of the sales order or free text invoice, on the **Fiscal information** FastTab, the **Final user** option must be set to **Yes**.
+- In the header of the purchase order or vendor invoice, on the **Fiscal information** FastTab, the **Use and consumption** option must be set to **Yes**.
 
 
