@@ -31,14 +31,14 @@ ms.dyn365.ops.version: AX 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you get started with Electronic invoicing for Saudi Arabia in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Services (RCS). 
+This topic provides information that will help you get started with Electronic invoicing for Saudi Arabia in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. It guides you through the configuration steps that are country/region-dependent in different components of the system. 
 
 ### Prerequisites
 
 Before you begin the procedures in this topic, complete the following prerequisites: 
 
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](e-invoicing-service-overview.md).
-- Sign up for RCS, and set up Electronic invoicing. For more information, see the following topics:
+- Sign up for Regulatory Configuration Services (RCS), and set up Electronic invoicing. For more information, see the following topics:
 
     - [Sign up for and install the Electronic Invoicing service](e-invoicing-sign-up-install.md)
     - [Set up Azure resources for Electronic invoicing](e-invoicing-set-up-azure-resources.md)
@@ -75,11 +75,14 @@ Some of the parameters from the Saudi Arabian electronic invoice (SA) electronic
 Onboarding is mandatory for all taxpayers who are subjects to electronic invoicing in Saudi Arabia. Taxpayers and their software for e-invoicing must be onboarded by Saudi Arabian tax authorities (**ZATCA**). As the result of onboarding process, taxpayers will obtain Cryptographic Stamp Identifiers (**CSID**) which are required for integration with electronic invoicing portal managed by Saudi Arabian Tax authority and further electronic invoices submission.
 Onboarding is an essential part of Electronic invoicing configuration. For more information, about onboarding process, see [Electronic invoicing onboarding in Saudi Arabia](e-invoicing-sa-onboarding.md).
 
+## Microcost Dynamics D365 Finance configuration
+
+Add here...
+
+For more details about Microcost Dynamics D365 Finance configuration, see: [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md)
+
 ## Additional resources
 
 - [Electronic invoicing overview](e-invoicing-service-overview.md)
-- [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md)
-- [Get started with Electronic invoicing](e-invoicing-get-started.md)
-- [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
