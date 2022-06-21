@@ -58,7 +58,7 @@ The following events occur when you copy a Human Resources database:
 
 - Documents in Microsoft Azure Blob storage aren't copied from one environment to another. As a result, any documents and templates that are attached won't be copied and will remain in the source environment.
 
-- All users except the except those with the "System Administrator" security role and other internal service user accounts will be unavailable. The Admin user can delete or obfuscate data before other users are allowed back into the system.
+- All users except the except those with the "System Administrator" security role and other internal service user accounts will be unavailable. The Admin user can delete data before other users are allowed back into the system.
 
 - Any user with the "System Administrator" security role must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 
@@ -75,7 +75,7 @@ To complete this task, you first copy an instance, and then sign in to the Micro
 
 3. Select the instance to copy, and then select **Copy**.
 
-4. In the **Copy an instance** task pane, select the instance to overwrite, and then select **Copy**. Wait for the value of the **Copy status** field to be updated to **Completed**.
+4. In the **Copy an instance** task pane, select the instance to overwrite, and then select **Copy**. Wait for the **Copy status** field to be updated to **Completed**.
 
    ![[Select instance to overwrite.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
@@ -85,7 +85,7 @@ To complete this task, you first copy an instance, and then sign in to the Micro
 
 6. Select the Power Apps environment to copy, and then select **Copy**.
 
-7. When the copy process is completed, sign in to the target instance, and enable Dataverse integration. For more information and instructions, see [Configure Dataverse integration](./hr-admin-integration-common-data-service.md).
+7. When the copy process is completed, sign in to the target instance, and enable Dataverse integration. For more information, see [Configure Dataverse integration](./hr-admin-integration-common-data-service.md).
 
 ## Data elements and statuses
 
