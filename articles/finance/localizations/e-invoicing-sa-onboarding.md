@@ -100,6 +100,8 @@ Onboarding process consist of 2 parts:
     | registeredAddress     | The address of the Branch or location where the device or solution unit is primarily situated | Free text |
     | businessCategory | Industry or sector for which the device or solution will generate invoices| Free text|
 
+6. Run provided below [onboarding script](#script) with the OTP and configuration file as input parameters, for example: *script.ps -OTP 1234567 -CSR config.txt*
+
 ### Obtaining Production CSID
 Text [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md). 
 
@@ -109,7 +111,7 @@ Text [Customer certificates and secrets](e-invoicing-customer-certificates-secre
    ![Property type added on the Electronic document property types page.](media/e-invoicing-pol-parameters.jpg)
    
    
-## Onboarding script
+## <a id="script"></a>Onboarding script
 
 1. Use the following Windows PowerShell script to obtain CCSID and PCSID.
 
