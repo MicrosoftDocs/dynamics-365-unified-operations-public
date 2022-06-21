@@ -61,16 +61,16 @@ For information on Dynamics 365 Finance, go to the [Finance home page](../financ
 
 ## Videos
 
-This short video summarize the new supply chain management features added to Microsoft Dynamics 365 for Finance and Operations version 8.0 (April 2018).
+This short video summarize the new supply chain management features added to Microsoft Dynamics 365 Finance version 8.0 (April 2018).
 
-- [Synchronize a work order between Field Service and Finance and Operations](https://youtu.be/hAB4TDVMjxU)
+- [Synchronize a work order between Field Service and finance and operations](https://youtu.be/hAB4TDVMjxU)
 
-These short videos summarize the new supply chain management features added to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017).
+These short videos summarize the new supply chain management features added to Microsoft Dynamics 365 Finance, Enterprise edition 7.3 (December 2017).
 
 - [Optimization advisor](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
 - [Use warehouse template to copy configuration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
-These short videos summarize the new supply chain management features added to Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017).
+These short videos summarize the new supply chain management features added to Microsoft Dynamics 365 Finance, Enterprise edition (July 2017).
 
 - [Get started with Cost accounting](https://youtu.be/1pUDtJQZ8FU)
 - [Cost control mobile workspace](https://youtu.be/imsuTg8rUVk)
@@ -78,7 +78,7 @@ These short videos summarize the new supply chain management features added to M
 - [Approve purchase orders on a mobile device](https://youtu.be/gZ-gOlJe7H8)
 - [Visual scheduling with Gantt chart for production and batch orders](https://youtu.be/BtbuShkGj4I)
 
-The following tech conference recordings discuss supply chain management functionality from previous versions of Finance and Operations. This functionality is now part of Dynamics 365 Supply Chain Management; the same concepts still apply, and the procedures are similar in the current version.
+The following tech conference recordings discuss supply chain management functionality from previous versions of finance and operations. This functionality is now part of Dynamics 365 Supply Chain Management; the same concepts still apply, and the procedures are similar in the current version.
 
 - **Cost management:**
   - [Overview of Cost management](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
@@ -111,3 +111,4 @@ For online courses and training, check out [Dynamics 365 Supply Chain Management
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+
