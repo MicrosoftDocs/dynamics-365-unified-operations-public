@@ -120,7 +120,7 @@ Generate and submit to ZATCA for complaince check all types of sample invoices w
 
 After completeion of all the configurations steps above, the system is ready to be used in production mode.
 
-To review obtained CSIDs on ZATCA side, use the **Review Existing Cryptographic Stamp Identifier (CSID)** tile on the landing page of the Onboarding and Management Portal.
+To review obtained CSIDs on ZATCA side, use the **Review Existing Cryptographic Stamp Identifier (CSID)** tile on the landing page of the Onboarding and Management Portal which is accessible from the main Saudi ArabianTaxation Portal - [ERAD](https://fatoora.zatca.gov.sa/).
   
 ## <a id="script"></a>Onboarding script
 
