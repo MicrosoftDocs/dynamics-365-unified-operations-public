@@ -164,9 +164,9 @@ A new internal system batch job, **System job to clean up expired batch heartbea
 - The reserved queue, when used with **Reserved capacity** priority, will give the experience as having dedicated resources for batch job. If not required, then do not allocate batch jobs to the **Reserved capacity** priority.
 - Priorities are not used to stack rank tasks against each other. Instead, priorities determine the probability with which a task will be picked for execution.
 - We recommend that you keep the number of threads the same across the servers to eliminate performance degradation.
-- We recommend implementing the BatchRetryable interface to batch tasks to prevent issues due to SQL Server transient errors. For more information, see [Retry the batch job task when transient SQL Server errors occur](retryable-batch.md#retry-the-batch-job-task-when-transient-sql-server-errors-occur).
+- We recommend implementing the BatchRetryable interface to batch tasks to prevent issues from SQL Server transient errors. For more information, see [Retry the batch job task when transient SQL Server errors occur](retryable-batch.md#retry-the-batch-job-task-when-transient-sql-server-errors-occur).
 - Batch tasks should be idempotent in nature. Regardless of how many times you execute them, you should achieve the same result, and tasks should be set up with a retry count greater than zero. This allows the system to recover from any kind of transient errors that may occur during job execution. For more information, see [Retry the batch job task when transient SQL Server errors occur](retryable-batch.md#retry-the-batch-job-task-when-transient-sql-server-errors-occur).
-- If there are larger workloads, we recommend breaking it down into smaller workloads or tasks so that it executes and completes in 10 minutes or less.
+- If there are larger workloads, we recommend breaking them down into smaller workloads or tasks so that they execute and complete in ten minutes or less.
 - SQL Server transactions in batch tasks should be as small as possible in duration so that it doesn't cause SQL Server blocking that may impact performance of other batch jobs and user activity.
 - We recommend having more than one batch group to take advantage of priority-based batch scheduling, and use different priorities at a batch-group level.
 
