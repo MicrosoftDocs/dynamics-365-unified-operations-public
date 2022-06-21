@@ -35,8 +35,17 @@ This topic provides information that will help you get started with Electronic i
 
 ### Prerequisites
 
-Before you complete the steps in this topic, the following prerequisites must be met: 
+Before you begin the procedures in this topic, complete the following prerequisites: 
 
+- Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](e-invoicing-service-overview.md).
+- Sign up for RCS, and set up Electronic invoicing. For more information, see the following topics:
+
+    - [Sign up for and install the Electronic Invoicing service](e-invoicing-sign-up-install.md)
+    - [Set up Azure resources for Electronic invoicing](e-invoicing-set-up-azure-resources.md)
+    - [Install the add-in for microservices in Lifecycle Services](e-invoicing-install-add-in-microservices-lcs.md)
+	
+- Activate the integration between your Microsoft Dynamics 365 Finance application and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](e-invoicing-activate-setup-integration.md).
+- Learn how to create certificates and secrets in Azure Key Vault, and set it up it as described in [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md). 
 - Import the **Saudi Arabian electronic invoice (SA)** electronic invoicing feature into RCS from the Global repository. For more information, see the [Import an Electronic invoicing feature from the Microsoft configuration provider](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) section in the "Get started with Electronic invoicing" topic.
 - In Microsoft Dataverse, configure virtual entities for Finance and Supply Chain Management. For more information, see [Configure Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
 - Enable the **CustomerPaymentMethodEntity** virtual entity. For more information, see [Enable Microsoft Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
