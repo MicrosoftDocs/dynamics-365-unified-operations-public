@@ -4,7 +4,7 @@
 title: Reporting for multiple VAT registrations
 description: This article provides information about reporting for multiple value-added tax (VAT) registrations.
 author: anasyash
-ms.date: 02/15/2022
+ms.date: 06/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -357,7 +357,7 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.29 | Poland  | Standard Audit File (SAF-T).version.131<br>Standard Audit File model mapping.version.131.280<br>JPK-V7M XML format (PL).version.129.220<br>JPK-V7M Excel format (PL).version.129.220.69 | [VAT declaration (Poland)](emea-pol-vat-declaration.md) |
 
     > [!NOTE]
-    > VAT declaration of Poland (JPK-V7M) is supported via Electronic messaging functionality only. For more information, see [VAT declaration with registers (JPK-V7M, VDEK)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-pol-vdek).
+    > VAT declaration of Poland (JPK-V7M) is supported by using the Electronic messaging functionality only. For more information, see [VAT declaration with registers (JPK-V7M, VDEK)](emea-pol-vdek.md).
 
 ## Generate a VAT declaration for multiple VAT registrations
 
