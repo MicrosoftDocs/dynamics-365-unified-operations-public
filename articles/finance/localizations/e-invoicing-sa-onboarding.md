@@ -52,7 +52,7 @@ Onboarding process consist of 2 parts:
 **Generate OTP code**.
 3. Choose to the number of **OTP** (*on-time password*) codes to be generated. The number depends on how many e-invoicing generation units (devices) will be used.
 4. Save the generated OTP codes to be used on the next steps.
-5. Prepare a configuration file for Certificate Signing Request in a form of a plain text file which should contain the following data ()
+5. Prepare a configuration file for Certificate Signing Request in a form of a plain text file which should contain the following data:
 
     ```powershell
     oid_section = OIDs
@@ -69,9 +69,9 @@ Onboarding process consist of 2 parts:
     distinguished_name = dn
     [dn]
     C=SA
-    OU=Contoso
-    O=John
-    CN=127.0.0.1
+    OU=Contoso North
+    O=Contoso
+    CN=MSD365Finance
     [v3_req]
     basicConstraints = CA:FALSE
     keyUsage = digitalSignature, nonRepudiation, keyEncipherment
@@ -79,19 +79,26 @@ Onboarding process consist of 2 parts:
     certificateTemplateName = ASN1:PRINTABLESTRING:TSTZATCACodeSigning
     subjectAltName = dirName:alt_names
     [alt_names]
-    SN=334623324111111
+    SN=MSD365Finance10028
     UID=310122393501111
     title=1100
-    registeredAddress=Sample E
+    registeredAddress= address
     businessCategory=Sample Bussiness
     ```
 
+    In the configuration file, only the following data must be updated with the Company specific information:
 
-
-    | Name                             | Description | Specification |
+    | Code                             | Description | Specification |
     |----------------------------------|-------------|-------------|
-    | Solution Name                    | Unique Name of the Solution or Unit | Free text |
-    | Solution serial number | any| ddddd|
+    | C                    | Country code | 2 letter code (ISO 3166 Alpha-2)  |
+    | OU                    | Organization Unit name| Free text in the case of normal taxpayer; in the case of VAT Groups identify this through the 11th digit of Organization Identifier being ‘1’. Run a validation that the input is a 10-digit TIN |
+    | O                    | Organization/Taxpayer Name  | Free text |
+    | CN                    | Unique Name of the Solution or Unit | Free text |
+    | SN                    | Unique identification code for the solution | Free text |
+    | UID                   | VAT Registration Number of the Taxpayer | 15 digits; begins with 3 and ends with 3 |
+    | title                 | The document type that the Taxpayer’s solution unit will be issuing | 4-digit numerical input using 0 & 1 mapped to “TSCZ”: 0 = False/Not supported, 1= True/Supported. T= Tax invoice (Standard), S = Simplified Tax Invoice, C= “for future use”, Z = “for future use” |
+    | registeredAddress     | The address of the Branch or location where the device or solution unit is primarily situated | Free text |
+    | businessCategory | Industry or sector for which the device or solution will generate invoices| Free text|
 
 ### Obtaining Production CSID
 Text [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md). 
