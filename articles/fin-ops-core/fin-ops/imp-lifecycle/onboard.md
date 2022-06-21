@@ -32,28 +32,29 @@ This article describes how to onboard a Finance and Operations project by using 
 
 ## Microsoft 365 Admin Center
 
-After your organization has purchased a subscription to Finance and Operations, it must be activated on your organization's Azure Active Directory (Azure AD) tenant by your Tenant Administrator, who completes the following steps:
+After your organization has purchased a subscription to Finance and Operations, the service must be activated on your organization's Azure Active Directory (Azure AD) tenant by a tenant administrator. In this article, **tenant administrator** refers to any user of the Azure AD tenant with the **Global Administrator** security role. For more information about Azure AD roles, please see [Understand roles in Azure Active directory](https://docs.microsoft.com/azure/active-directory/roles/concept-understand-roles).
 
+The tenant administrator must complete the following steps:
 
 1. Open an InPrivate or Incognito browser session and go to the [Microsoft 365 Admin Center](https://admin.microsoft.com/).
-2. Sign in with the tenant administrator credentials.
+2. Sign in with their tenant administrator credentials.
 3. Go to **Billing > Products & services** and confirm that there is an active subscription for the application that you want to deploy. 
    > [!NOTE]
    > If you do not see an active subscription, consult with your licensing partner to confirm the status of the subscription transaction. It is important to confirm that the subscriptions were purchased for the correct Azure AD tenant.  By default, all Microsoft online services should be running on the same Azure AD tenant. The most frequent cause for onboarding delays is that subscriptions are inadvertently placed on an incorrect Azure AD tenant. 
 4. If the subscription in question is shown as active, proceed to the next step by signing in to LCS to trigger the Implementation Project creation flow.
-5. Open another private browser tab and go to [Lifecycle Services](https://lcs.dynamics.com). Select **Login** to access LCS with your current Tenant Admin credentials.
+5. Open another private browser tab and go to [Lifecycle Services](https://lcs.dynamics.com). Select **Login** to access LCS with your current tenant administrator credentials.
    > [!NOTE]
-   > Connection endpoints might be different for Government Community Cloud (GCC) and other local cloud deployment options. For more information see, [Sovereign and local cloud deployment options for Dynamics 365 Finance and Dynamics 365 Supply Chain Management](../../dev-itpro//deployment/deployment-options-geo.md).
+   > Connection endpoints might be different for Government Community Cloud (GCC) and other local cloud deployment options. For more information see, [Sovereign and local cloud deployment options for Dynamics 365 Finance and Dynamics 365 Supply Chain Management](../../dev-itpro/deployment/deployment-options-geo.md).
 7. Accept and confirm any other prompts displayed to complete the implementation project provisioning.
 8. The tenant administrator is assigned the Project Owner security role in the provisioned implementation project.  
    > [!NOTE]
-   > If the Tenant Administrator will not be a participant in the implementation, at least one additional Project Owner must be assigned to the implementation project.
+   > If the tenant administrator will not be a participant in the implementation, at least one additional Project Owner must be assigned to the implementation project.
 
    For an overview of LCS user management, including the security roles that can be assigned to users, see [Configure Lifecycle Services (LCS) security](../../dev-itpro/lifecycle-services/configure-lcs-security.md#configuring-project-security).
 
 ## LCS implementation project workspace
 
-After the Tenant Administrator has completed the Finance and Operations subscription activation and added additional project owners as appropriate, those team members can access the **Implementation project** workspace.
+After the tenant administrator has completed the Finance and Operations subscription activation and added additional project users as appropriate, those team members can access the **Implementation project** workspace.
 
 The first step to be completed in LCS is **Project onboarding**. This step is required for all LCS implementation projects that are created **on or after August 22, 2019, PST**, prior to deploying any of the Microsoft-managed environments. You can access the **Project onboarding** feature using the action center notification or the LCS Implementation project menu. You must be assigned to the Project owner security role to access **Project onboarding** in LCS.
 
