@@ -54,7 +54,7 @@ Onboarding process consist of 2 parts:
 4. Save the generated OTP codes to be used on the next steps.
 5. Prepare a configuration file for Certificate Signing Request in a form of a plain text file which should contain the following data:
 
-    ```powershell
+    ```txt
     oid_section = OIDs
     [OIDs]
     certificateTemplateName = 1.3.6.1.4.1.311.20.2
