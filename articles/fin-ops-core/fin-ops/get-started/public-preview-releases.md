@@ -4,7 +4,7 @@
 title: Service update availability
 description: This article provides information about the different release options.
 author: hmahl
-ms.date: 05/03/2022
+ms.date: 06/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,7 +47,7 @@ Customers will be able to take up to 7 service updates per year and are required
 |-----------------|-----------------------------|-----------------------------------|----------------------------------------------------------------------|--------------------|
 |     10.0.38<br>(The "February" release)     | October 13, 2023            | January 12, 2024                  | February 2, 2024                                                     | April 12, 2024     |
 |     10.0.37<br>(The "November" release)     | September 1, 2023           | October 20, 2023                  | November 3, 2023                                                     | January 12, 2024   |
-|     10.0.36\*<br>(The "October" release)   | July 31, 2023               | September 15, 2023                | September 29, 2023                                                   | December 8, 2023   |
+|     10.0.36\*<br>(The "October" release)   | July 31, 2023               | September 15, 2023                | September 29, 2023                                                   | March 15, 2024   |
 |     10.0.35<br>(The "August" release)     | May 26, 2023                | July 14, 2023                     | July 28, 2023                                                        | October 20, 2023   |
 |     10.0.34<br>(The "July" release)     | April 21, 2023              | June 16, 2023                     | June 30, 2023                                                        | September 15, 2023 |
 |   10.0.33<br>(The "May" release)    | March 3, 2023               | April 14, 2023                    | April 28, 2023                                                       | July 14, 2023      |
