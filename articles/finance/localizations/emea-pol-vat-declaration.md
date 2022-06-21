@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Support for multiple VAT registration numbers in the VAT return of Poland
+title: Support for multiple VAT registration numbers in the VAT return of Poland (JPK-V7M)
 description: This article explains how to support multiple value-added tax (VAT) registration numbers in a VAT return of Poland.
 author: liza-golub
 ms.date: 06/20/2022
@@ -30,8 +30,8 @@ ms.dyn365.ops.version: AX 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-As of Microsoft Dynamics 365 Finance version 10.0.29, the JPK-V7M feature lets you file a VAT return for [multiple VAT registrations](emea-multiple-vat-registration-numbers.md). 
+As of Microsoft Dynamics 365 Finance version 10.0.29, the JPK-V7M feature lets you file a value-added tax (VAT) return for [multiple VAT registrations](emea-multiple-vat-registration-numbers.md).
 
 For more information about how to set up and use the JPK-V7M feature in Finance, see [VAT declaration with registers (JPK-V7M, VDEK)](emea-pol-vdek.md).
 
-If you want to report a VAT return of Poland from a legal entity that has a primary address outside of Poland, we recommend that you use the [Tax Calculation](global-tax-calcuation-service-overview.md) service, and that you enable the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature in the **Feature management** workspace. 
+If you want to report a VAT return of Poland from a legal entity that has a primary address outside Poland, we recommend that you use the [Tax Calculation](global-tax-calcuation-service-overview.md) service, and that you enable the [Support multiple VAT registration numbers](emea-multiple-vat-registration-numbers.md) feature in the **Feature management** workspace.
