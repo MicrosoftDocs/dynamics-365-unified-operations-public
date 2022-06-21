@@ -44,16 +44,14 @@ Updates are released on a regular cadence to all environments. Human Resources i
 
 Human Resources updates are applied to all environments automatically. Human Resources provides two types of releases:
 
-- **Service updates**: Updates occur every two weeks that include bug fixes and new features. Service updates also include applicable platform updates when they release. For more information about platform releases, see [What's new or changed in Platform updates](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Biweekly updates have a staged global rollout across regions. For more information about biweekly updates, see [What's new or changed in Dynamics 365 Human Resources](hr-admin-whats-new.md).
-
-    All supported data centers update every two weeks, unless otherwise noted. US, Australia, Europe, UK, Asia, and Canada regions are included in biweekly updates. 
+- **Service updates**: Updates occur every two weeks that include bug fixes and new features. Service updates also include applicable platform updates when they release. For more information about platform releases, see [What's new or changed in Platform updates](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Updates have a staged global rollout across regions. For more information about updates, see [What's new or changed in Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
 - **Dataverse solution updates**: These updates occur approximately every six weeks, as needed. They include new entities and changes to existing entities in Dataverse. These updates release to the same regions as the biweekly updates, and they take about six weeks to replicate through all data centers. Solution updates may or may not align with biweekly service updates.
 
 > [!NOTE]
 > Solution updates are available on all data centers once they're released. If you don't want to wait for the updates to replicate automatically, you can manually apply these updates on any environment in any data center.
 
-When needed, Human Resources also provides the following types of fixes:
+When needed, Human Resources provides the following types of fixes:
 
 - **Revision (hotfix)**: Bug fixes that can occur either with or apart from a biweekly service update release
 
@@ -90,11 +88,11 @@ You can find out what's in the works for Human Resources and what we've released
 
 You can validate preview features in a sandbox environment before enabling them in your production environment. For more information about enabling features, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-All new features remain in preview for at least 30 days, and typically 30-60 days. Major features are generally available in October and April of each year following the preview period. As soon as you see new capabilities in the Feature management workspace, you can turn them on. Some features may be on by default.
+All new features remain in preview for at least 30 days, and typically 30-60 days. Major features are generally available in October and April of each year following the preview period. As soon as you see new capabilities in the **Feature management** workspace, you can turn them on. Some features may be on by default.
 
 At times, an integral feature will be on by default and can't be turned off (for example, the Feature management workspace).
 
-Once a feature is generally available, it may be turned on or off in production environments. The Feature management workspace indicates when a preview feature will become mandatory. This date is usually on October 1 or April 1 to align with the semiannual release plans. You can't turn off mandatory features. Until it becomes mandatory, you can turn a feature on and off in all environments.
+Once a feature is generally available, it may be turned on or off in production environments. The **Feature management** workspace indicates when a preview feature will become mandatory. This date is usually on October 1 or April 1 to align with the semiannual release plans. You can't turn off mandatory features. Until it becomes mandatory, you can turn a feature on and off in all environments.
 
 We highly recommend previewing features in a sandbox or trial environment. It's best to create a copy of your current production environment or database into a sandbox environment so you can get the complete experience of the new features with your data.
 
