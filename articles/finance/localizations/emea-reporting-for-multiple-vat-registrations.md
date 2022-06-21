@@ -280,14 +280,13 @@ All tax registrations have the same settings for EU sales list parameters.
 
     ![transfer intrastat.](media/Multipleid-image8.png)
 
-4. In the **Intrastat (Transfer)** dialog box, select the documents to transfer: **Free text invoice**, **Customer invoice**, **Customer packing slips**, **Vendor invoice**, **Vendor product receipts**, **Project invoice**, or **Transfer order**. Then and select **OK**.
+4. In the **Intrastat (Transfer)** dialog box, select the documents to transfer: **Free text invoice**, **Customer invoice**, **Customer packing slips**, **Vendor invoice**, **Vendor product receipts**, **Project invoice**, or **Transfer order**. Then select **OK**.
 
     ![Intrastat  Transfer  dialog box.](media/Multipleid-image9.png)
 
 5. Transactions for the selected tax registration and documents are transferred. Review the transactions, and make any adjustments that are required.
 
     > [!NOTE]
-    > 
     > In the 10.0.19, 10.0.20 release, Intrastat **Transfer** function has country-specific logic that isn't yet covered in the **Intrastat transfer for Multiple Tax ID** feature for the following countries: Czech Republic, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.
 
 6. Select **Output** > **Report**.
@@ -357,7 +356,7 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.29 | Poland  | Standard Audit File (SAF-T).version.131<br>Standard Audit File model mapping.version.131.280<br>JPK-V7M XML format (PL).version.129.220<br>JPK-V7M Excel format (PL).version.129.220.69 | [VAT declaration (Poland)](emea-pol-vat-declaration.md) |
 
     > [!NOTE]
-    > VAT declaration of Poland (JPK-V7M) is supported by using the Electronic messaging functionality only. For more information, see [VAT declaration with registers (JPK-V7M, VDEK)](emea-pol-vdek.md).
+    > The VAT declaration of Poland (JPK-V7M) is supported by using the Electronic messaging functionality only. For more information, see [VAT declaration with registers (JPK-V7M, VDEK)](emea-pol-vdek.md).
 
 ## Generate a VAT declaration for multiple VAT registrations
 
