@@ -119,6 +119,8 @@ Generate and submit to ZATCA for complaince check all types of sample invoices w
 4. Configure related *feature setup* in **Saudi Arabian electronic invoice (SA)** electronic invoicing feature, replace previously configured CCSID certificate with the obtained CCSID certificate saved in Azure Key Vault.
 
 After completeion of all the configurations steps above, the system is ready to be used in production mode.
+
+To review obtained CSIDs on ZATCA side, use the **Review Existing Cryptographic Stamp Identifier (CSID)** tile on the landing page of the Onboarding and Management Portal.
   
 ## <a id="script"></a>Onboarding script
 
