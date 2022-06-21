@@ -46,9 +46,9 @@ PA-DSS implementation guides are linked to in the **Version** column in the foll
 
 | Release | Version  | 
 | ----------------------|-------- | 
-| Microsoft Dynamics 365 for Finance and Operations | 10.0  |
+| Microsoft Dynamics 365 Finance | 10.0  |
 | Microsoft Dynamics 365 for Retail | July 2017 (7.2)  |
-| Microsoft Dynamics 365 for Finance and Operations, Enterprise edition | July 2017 (7.2) |
+| Microsoft Dynamics 365 Finance, Enterprise edition | July 2017 (7.2) |
 | Microsoft Dynamics 365 for Operations | 1611 (7.1)  |
 | Microsoft Dynamics AX | 7.0     |
 | Microsoft Dynamics AX | 2012 R3 |
@@ -62,3 +62,4 @@ PA-DSS implementation guides are linked to in the **Version** column in the foll
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

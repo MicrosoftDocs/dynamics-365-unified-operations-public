@@ -248,7 +248,7 @@ The following procedure describes the configuration that is required to run the 
     + **Commerce Scale Unit URL** – Enter the Commerce Scale Unit URL that should be used for device activation, if the device hasn't already been activated.
 
         > [!NOTE]
-        > The Cloud POS and Commerce Scale Unit URL can be obtained from Finance and Operations environment. Navigate to **Retail and Commerce > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
+        > The Cloud POS and Commerce Scale Unit URL can be obtained from finance and operations environment. Navigate to **Retail and Commerce > Channel setup > Channel profiles**. You can also obtain the URLs from the LCS environment page.
    
    + **AAD user email** – Enter the email address of the Azure Active Directory (Azure AD) user that should be used for device activation. The Azure AD user must have permission to activate the device.
    + **AAD password** – Enter the password of the Azure AD user that should be used for device activation.
@@ -406,3 +406,4 @@ If multifactor authentication is enabled for the device activation user, then pl
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

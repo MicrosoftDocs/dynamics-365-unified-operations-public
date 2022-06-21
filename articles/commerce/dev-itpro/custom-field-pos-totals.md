@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.0.1
 
 [!include[banner](../includes/banner.md)]
 
-This article explains how to add a new custom field to the **Totals** panel on the POS transaction screen by using the screen layout designer. This article is applicable to Microsoft Dynamics 365 for Finance and Operations 7.3 and later, and to Microsoft Dynamics 365 Retail 7.3 and later.
+This article explains how to add a new custom field to the **Totals** panel on the POS transaction screen by using the screen layout designer. This article is applicable to Microsoft Dynamics 365 Finance 7.3 and later, and to Microsoft Dynamics 365 Retail 7.3 and later.
 
 Custom fields that you add for the **Totals** panel on the **Custom fields** page will appear in the designer. You can then select which custom fields should be in the left and right columns. The logic for the custom fields should be coded in the point of sale (POS) extensions.
 

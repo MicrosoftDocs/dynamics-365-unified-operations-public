@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 8.0.1
 
 [!include[banner](../includes/banner.md)]
 
-This article explains how to extend the point of sale (POS) Dual display view so that it shows custom information. This article is applicable to Microsoft Dynamics 365 for Finance and Operations 7.2 or Microsoft Dynamics 365 Retail 7.2 with KB 4091080, and later versions.
+This article explains how to extend the point of sale (POS) Dual display view so that it shows custom information. This article is applicable to Microsoft Dynamics 365 Finance 7.2 or Microsoft Dynamics 365 Retail 7.2 with KB 4091080, and later versions.
 
 You can extend the POS Dual display view by adding a custom control. In the custom control, you can add images, POS data lists, labels, and so on, to show custom information.
 

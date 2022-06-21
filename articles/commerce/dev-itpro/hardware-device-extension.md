@@ -235,7 +235,7 @@ return this.extensionContextRuntime.executeAsync(hardwareStationDeviceActionRequ
 ## Package the HWS extension with Modern POS to use local HWS
 
 > [!NOTE]
-> This section is applicable if you are using POS independent packaging SDK with version 10.0.22 or later of Finance and Operations apps.
+> This section is applicable if you are using POS independent packaging SDK with version 10.0.22 or later of finance and operations apps.
  
 To package the HWS extension with Modern POS to use local HWS, the HWS extension must be packaged with the POS. In the Modern POS JavaScript project, add a reference to your HWS project. Then use the POS installer project to create extension installer. For more information, see the sample JavaScript project in the [Dynamics365Commerce.InStore/src/PosSample/ModernPos/ModernPos.jsproj GitHub repo](https://github.com/microsoft/Dynamics365Commerce.InStore).
 
@@ -272,3 +272,4 @@ To generate the sealed extension installer for the Hardware station, follow thes
 11. Validate the extension hardware station scenario.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

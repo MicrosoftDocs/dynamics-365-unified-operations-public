@@ -38,10 +38,10 @@ Before discussing the different scenarios for extension, it's important to under
 
 We have made some improvements to how extensions are handled during an upgrade. We recommend using one of the following environment configurations:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) with application update 5.
+- Microsoft Dynamics 365 Finance, Enterprise edition (July 2017) with application update 5.
 - Microsoft Dynamics 365 Retail 7.2 with application update 5, which will be available soon.
 - Microsoft Dynamics 365 Retail 7.3, which includes application update 5.
-- Microsoft Dynamics 365 for Finance and Operations 7.3, which includes application update 5.
+- Microsoft Dynamics 365 Finance 7.3, which includes application update 5.
 
 ## Ext schema
 
