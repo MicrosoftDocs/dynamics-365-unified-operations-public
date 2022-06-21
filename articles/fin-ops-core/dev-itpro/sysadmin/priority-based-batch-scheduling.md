@@ -164,6 +164,11 @@ A new internal system batch job, **System job to clean up expired batch heartbea
 - The reserved queue, when used with **Reserved capacity** priority, will give the experience as having dedicated resources for batch job. If not required, then do not allocate batch jobs to the **Reserved capacity** priority.
 - Priorities are not used to stack rank tasks against each other. Instead, priorities determine the probability with which a task will be picked for execution.
 - We recommend that you keep the number of threads the same across the servers to eliminate performance degradation.
+- We recommend to implement BatchRetryable interface to batch tasks to prevent issues due to SQL transient errors. [More info](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/retryable-batch#retry-the-batch-job-task-when-transient-sql-server-errors-occur)
+- Batch tasks should be idempotent in nature i.e. no matter how many times you execute them, you achieve the same result, and tasks should be setup with retry count greater than zero. This allows to recover from any kind of transient errors that may occur during job execution. [More info how to enable batch retries](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/retryable-batch#retry-the-batch-job-task-when-transient-sql-server-errors-occur)
+- If there are larger workloads we recommend breaking it down into smaller workloads or tasks so that it executes and completes in 10 mins or less.
+- SQL transactions in batch tasks should be as small as possible in duration, else it can cause SQL blocking that may impact performance of other batch jobs and user activity.
+- We recommend to have more than one batch group to take advantage of PBS and configure different priorities at batch group level.
 
 ## Automatic batch group migration for batch jobs
 
