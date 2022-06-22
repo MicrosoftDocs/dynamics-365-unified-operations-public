@@ -66,7 +66,7 @@ For more information, see [Software lifecycle policy and cloud releases](../../d
 
 ## Our sandbox environments are deployed in a different datacenter from where we want our production environment to be deployed. Can I select a different datacenter for my production environment?
 
-It is strongly recommended to deploy the production environment in the same data center used in the acceptance testing environment, which should be the data center you are planning to go live with, to ensure that you are validating latency as well as support for all services under production-like conditions. Going live on a data center different from the one you tested on is **not** recommended, as it can lead to unexpected performance issues and unforeseen functionality gaps that can negatively impact the go-live experience.
+It is strongly recommended to deploy the production environment in the same datacenter used in the acceptance testing environment, which should be the data center you are planning to go live with. Using the same datacenter helps ensure that you are validating latency as well as support for all services under production-like conditions. Going live on a datacenter different from the one you tested on is **not** recommended, as it can lead to unexpected performance issues and unforeseen functionality gaps that can negatively impact the go-live experience.
 
 For information that can help you select the correct datacenter, see the [Network requirements](../get-started/system-requirements.md#network-requirements) section of the "System requirements" article.
 
@@ -79,7 +79,7 @@ Your production environment will be sized based on the current user license coun
 
 ## I submitted the request for a production environment, but I made a mistake. Can I still change it?
 
-No, production environment deployment starts as soon as you submit the request. Please wait until the deployment has completed and then log a support ticket to have the Production environment deleted, so that you can redeploy it.
+No. Production environment deployment starts as soon as you submit the request. Please wait until the deployment has completed and then log a support ticket to have the production environment deleted, so that you can redeploy it.
 
 ## How long does it take to deploy my production environment?
 
