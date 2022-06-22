@@ -31,6 +31,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+>[!NOTE:]
+> This functionality will be deprecated September 2022, new users should use electronic reporting. For more information, see [Set up advanced bank reconciliation import by using Electronic reporting](../accounts-payable/import-bai2-er.md).
+
+
+
 The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Dynamics 365 Finance. This article explains how to set up the import functionality for your bank statements. 
 
 The setup for bank statement import varies, depending on the format of your electronic bank statement. Finance supports three bank statement formats out of the box: ISO20022, MT940, and BAI2.

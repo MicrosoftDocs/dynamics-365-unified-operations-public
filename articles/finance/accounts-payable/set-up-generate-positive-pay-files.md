@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
+>[!NOTE:]
+> This functionality will be deprecated September 2022, new users should use electronic reporting. For more information, see [Set up positive pay files by using Electronic reporting](set-up-positive-pay-er.md).
+
 This article explains how to set up positive pay and generate positive pay files. 
 
 Set up positive pay to generate an electronic list of checks that is provided to the bank. Then, when a check is presented to the bank, the bank compares it with the list of checks. If the check matches a check in the list, the bank clears it. If the check doesn't match a check in the list, the bank holds it for review.
