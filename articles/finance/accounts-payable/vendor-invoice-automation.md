@@ -61,7 +61,7 @@ A data package is the unit of work that must be sent so that invoice headers, in
 
 Vendor invoice document attachment is a new data entity that is introduced as part of this feature. The Vendor invoice header entity has been modified so that it supports attachments. The Vendor invoice line entity hasn’t been modified for this feature.
 
-For detailed information about data packages, see [Data management overview](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). For information about how to create data packages using the data management workspace, see [Process and consume data packages in Dynamics 365 Finance and Operations apps solution](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
+For detailed information about data packages, see [Data management overview](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md). For information about how to create data packages using the data management workspace, see [Process and consume data packages in Dynamics 365 finance and operations apps solution](../../fin-ops-core/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions.md).
 
 To quickly generate test data that includes invoices and attachments, follow these steps.
 
@@ -89,7 +89,7 @@ Invoices that are imported via data packages can be associated with the legal en
 
 ## Exception processing
 
-In scenarios where vendor invoices come into Finance and Operations via integration, there must be an easy way for an Accounts payable team member to process exceptions or failed invoices, and to create pending invoices out of failed invoices. This exception processing for vendor invoices is now part of Finance and Operations.
+In scenarios where vendor invoices come into finance and operations via integration, there must be an easy way for an Accounts payable team member to process exceptions or failed invoices, and to create pending invoices out of failed invoices. This exception processing for vendor invoices is now part of finance and operations.
 
 ### Vendor invoices that failed to import list page
 
@@ -228,3 +228,4 @@ By default, if the user role provides edit rights on any page, the user will als
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
