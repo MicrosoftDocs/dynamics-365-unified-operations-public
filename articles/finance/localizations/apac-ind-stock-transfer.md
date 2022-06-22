@@ -47,6 +47,20 @@ For more information, see [Feature management overview](../../fin-ops-core/fin-o
 
 You also need to configure the India GST functionality to enable GST calculation for stock transfer orders. For more information, see [India Goods and Services Tax (GST) overview](apac-ind-gst.md).   
 
+> [!NOTE]
+> The following improvements are included in the stock transfer order functionality:
+> 
+> - Default Transfer type and Price type values can be configured in the Inventory and warehouse management parameters.
+> - The unit price on a stock transfer order line is recalculated based on the inventory dimensions specified in the line until the first shipment is posted for the line.
+> - Shipment of a stock transfer order line with a unit price of zero (0) isn't possible.
+> - Inventory costs are posted for stock transfer orders if there's partial shipment or receipts or batch-controlled items.
+> - Unrealized profit or loss is no longer posted during the shipment or receipt of a stock transfer line if the unit price differs from the inventory cost price of the item.
+> - Changing the unit of measure on stock a transfer order line is restricted.
+
+> [!NOTE]
+> If mutual settlements and profit / loss transactions are required for internal transfers between own company's warehouses, other Dynamics 365 functionalities may be used for this. For example, Purchase orders and Sales orders invoices or Intercompany may be configured for intracompany transfers.
+> For more information, see [Set up intercompany trade](../../supply-chain/sales-marketing/intercompany-trade-set-up.md).
+
 ### Set up default transfer type and price type for transfer orders
 
 You can define a default transfer order type and a default price type for transfer orders that are created manually. On the **Inventory and warehouse management parameters** page, on the **Transfer orders** tab, select **Stock transfer** in the **Transfer type** field to enable the **Stock transfer** functionality for all newly created transfer orders.  In the **Price type** field, select a default price type for newly created stock transfer orders:
@@ -100,6 +114,9 @@ If it is required to post stock transfers to General ledger and track inventory 
 
 For more information, see [Configure and manage financial dimension links to sites](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/configure-and-manage-financial-dimension-links-to-sites).
 
+> [!NOTE]
+> Financial dimensions are derived from products master-data and the above mensioned dimension link. There is no possibility to change financial dimensions in Transfer orders.
+
 ## Create and post a stock transfer order
 
 The following example scenario shows frequently performed actions that are associated with transfer orders where the **Transfer type** field is set to **Stock transfer** and **Dimension link** is **enabled**.
@@ -133,22 +150,24 @@ The following example scenario shows frequently performed actions that are assoc
     - At the line level, select **Tax information from warehouse**, select the **GST** tab and click **OK**.
     - At the line level, select **Tax information to warehouse**, select the **GST** tab and click **OK**.
     
-1. Go to **Inquiries** > **Tax document** and verify that the tax is calculated.
+1. Go to **Inquiries** > **Tax document** and verify that the tax is calculated correctly.
 1. Select **Ship** > **Ship transfer order**, and on the **Shipment** page, post the transfer order shipment.
 
-    - Select the **Edit lines** check box.
+    - Select the **Explode lines** check box.
     - In the **Update** field, select **All**.
     - Select **Setup** > **Tax document**.
-	- Select **Close**.
-	- Click **OK**.
+	- Check tax settings and amounts, make and apply adjustment if needed.
+	- **Close** the **Tax document** form.
+	- Click **OK** in the bottom of the **Receive** form to post the operation.	
 
 1. Select **Receive** > **Receive**, and on the **Receive** page, post the transfer order receipt.
 
-    - Select the **Edit lines** check box.
+    - Select the **Explode lines** check box.
     - In the **Update** field, select **All**.
     - Select **Setup** > **Tax document**.
-	- Select **Close**.
-	- Click **OK**.	
+	- Check tax settings and amounts, make and apply adjustment if needed.
+	- **Close** the **Tax document** form.
+	- Click **OK** in the bottom of the **Receive** form to post the operation.	
 
     > [!NOTE]
     > If the "Enable uniform tax amount and GST transaction ID for both shipment and receipt transaction of a stock transfer order" feature is enabled in the **Feature management** workspace, it is only possible to receive a previously posted shipment. You need to select **Shipment** in the **Update** field when posting a receipt and select a previously posted shipment in the **Shipment voucher** field.
@@ -206,8 +225,8 @@ In this case, **no inventry in transit balance** is tracked.
 - From warehouse -> Site 1
 - Transit warehouse -> Site 2
 - To warehouse -> Site 3
-
-- **GST** rate is **10%**."
+- Taxable value (base amount): 120.00
+- **GST** rate: **10%**"
 
 
 #### Transfer order shipment posting:
@@ -235,10 +254,11 @@ In this case, **no inventry in transit balance** is tracked.
 | GST receivable                  | Site 3                             |                    |          12         |  
 | Interim account                 | Site 3                             |         12         |                     |
 
+The **balance on the inventory in transit** can be calculated as **_InventoryIssue-Site2 - InventoryReceipt-Site2_**. It is nullified upon the receipt.
+
 > [!NOTE]
 >
 > - **Inventory issue** and **Inventory receipt** are most likely one and the same balance account, such as "Finished goods".
->  - The **balance on the inventory in transit** can be calculated as **_InventoryIssue-Site2 - InventoryReceipt-Site2_**. It is nullified upon the receipt.
 > - The above settings for Dimension links and sites (that is, a separate site for the transit warehouse) are recommended if it is needed to track the in-transit inventory in General ledger.
     
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
