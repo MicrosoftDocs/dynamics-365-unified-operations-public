@@ -64,7 +64,7 @@ It is strongly recommended that you go live on a version that is **not** near en
 
 For more information, see [Software lifecycle policy and cloud releases](../../dev-itpro/migration-upgrade/versions-update-policy.md) and [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
-## Our sandbox environments are deployed in a different datacenter from where we want our production environment to be deployed. Can I select a different datacenter in my production configuration than I did in my sandboxes?
+## Our sandbox environments are deployed in a different datacenter from where we want our production environment to be deployed. Can I select a different datacenter for my production environment?
 
 It is strongly recommended to deploy the production environment in the same data center used in the acceptance testing environment, which should be the data center you are planning to go live with, to ensure that you are validating latency as well as support for all services under production-like conditions. Going live on a data center different from the one you tested on is **not** recommended, as it can lead to unexpected performance issues and unforeseen functionality gaps that can negatively impact the go-live experience.
 
