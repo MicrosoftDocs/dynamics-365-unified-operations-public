@@ -21,7 +21,7 @@ ms.search.validFrom: 2017-06-20
 
 This article describes how to view the version history for a page or fragment and revert to an older version in Microsoft Dynamics 365 Commerce site builder.
 
-Commerce site builder allows you to see to view the version history for a page or fragment and revert to a specific previous version of a document if needed. Selecting **Show history** on the command bar when a document is open brings up a **Version history** flyout menu that lists the history of all versions and save activities for the page or fragment on the **Version** tab. A previous version of the document can then be selected from the list, previewed, and restored as the current version. The **Activity** tab of the **Version history** flyout menu lists the full activity history of the document, which includes all save, publish, and unpublish events.
+Commerce site builder allows you to see to view the version history of a page or fragment and revert to a specific previous version of a document if needed. Selecting **Show history** on the command bar when a document is open brings up a **Version history** flyout menu that lists the history of all versions and save activities for the page or fragment on the **Version** tab. A previous version of the document can then be selected from the list, previewed, and restored as the current version. The **Activity** tab of the **Version history** flyout menu lists the full activity history of the document, which includes all save, publish, and unpublish events.
 
 > [!NOTE]
 > New versions of a document are created each time a site author makes changes and then selects **Finished editing** for the document. 
@@ -33,7 +33,7 @@ To view the version history for a page or fragment and revert to a previous vers
 
     ![Show history button.](./media/version-history-1.png)
 
-1. On the **Versions** tab of the **Version history** flyout menu, select a previous version of the document. In the property pane on the right, you can view a thumbnail preview of a previous version and information on who modified that version of the document and when it was modified.
+1. On the **Version** tab of the **Version history** flyout menu, select a previous version of the document. In the property pane on the right, you can view a thumbnail preview of a previous version and information on who modified that version of the document and when it was modified.
 
     ![Version history list view.](./media/version-history-2.png)
 
