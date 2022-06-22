@@ -38,11 +38,11 @@ This procedure defines a cash discount and due date setup. This task guide uses 
 7. Click **Save**.
 8. Close the page.
 9. Go to **Navigation pane > Modules > Accounts receivable > Payments setup > Terms of payment**.
-10. Click **New**. Terms of payment is used to define how the due dates will be calculated. The cash discount date setup is defined in a separate page. 
+10. Click **New**. **Terms of payment** is used to define how the due dates will be calculated. The cash discount date setup is defined in a separate page. 
 11. In the **Terms of payment field**, enter an ID.
 12. In the **Description** field, enter a description.
-13. Select a **Payment method** such as COD, Net, Current month, etc. The Payment method is used to define the start of how the due will be calculated. For example, Net is used if the due date is always a set number of months or days after the invoice date. COD can be used to when payment is required upon invoice, so a due date wouldn't be calculated. Select 'Current month' for this task guide.  
-14. Select a **Payment day** if a specific day of the  week or date are included in the calculation. Depending on your terms of payment, you may enter a quantity in Months or Days. Or you can use the **Payment schedule** or **Payment day** to 'add' to the end of the Payment method. If the due date will always be the 10th of the next month, select a **Payment day** of the 10th. If you are using a Payment calendar, you can define how the system should determine the due date when the calculated date lands on a non-workday. The initial due date is calculated using calendar days. If the calculated date lands on a non-workday, you can select to adjust the calculated date to the next or earlier working day.
+13. Select a **Payment method** such as **COD**, **Net**, **Current month**, etc. The **Payment method** is used to define the start of how the due will be calculated. For example, **Net** is used if the due date is always a set number of months or days after the invoice date. **COD** can be used to when payment is required upon invoice, so a due date wouldn't be calculated. Select **Current month** for this task guide.  
+14. Select a **Payment day** if a specific day of the  week or date are included in the calculation. Depending on your terms of payment, you may enter a quantity in Months or Days. Or you can use the **Payment schedule** or **Payment day** to 'add' to the end of the **Payment method**. If the due date will always be the 10th of the next month, select a **Payment day** of the 10th. If you are using a **Payment calendar**, you can define how the due date is determined when the calculated date lands on a non-workday. The initial due date is calculated using calendar days. If the calculated date lands on a non-workday, you can adjust the calculated due date to either the next working date or earlier working day.
 15. Click **Save**.
 16. Close the page.
 17. Go to **Accounts receivable > Payments setup > Cash discounts**.
@@ -53,7 +53,7 @@ This procedure defines a cash discount and due date setup. This task guide uses 
 22. In the **Days** field, enter the number of days used to calculate the cash dicount date. If **Net** principle is selected, the number of days will be added to the invoice date to calculate the cash discount date.  
 23. In the **Discount percentage** field, enter the percentage of the cash discount.
 24. In the **Main account for customer discounts**, enter the main account to which the cash discount will post for customer invoices.
-25. In the **Discount offset accounts** field, select an option. If you select 'Accounts on the invoice lines', the cash discount will post to the same asset/expense main account on the lines of the vendor invoice. If you select 'Use main account for vendor invoices', the cash discount will post to the main account you define in the 'Main account for vendor invoices'. For this example, select 'Use main account for vendor invoices'. 
+25. In the **Discount offset accounts** field, select an option. If you select 'Accounts on the invoice lines', the cash discount will post to the same asset/expense main account on the lines of the vendor invoice. If you select **Use main account for vendor invoices**, the cash discount will post to the main account you define in the **Main account for vendor invoices**. For this example, select **Use main account for vendor invoices**. 
 26. In the **Main account for vendor discounts** field, enter the main account to which the cash discount will post for vendor invoices.
 27. Click **Save**.
 
