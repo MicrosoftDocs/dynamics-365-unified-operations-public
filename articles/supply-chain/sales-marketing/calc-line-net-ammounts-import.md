@@ -47,7 +47,7 @@ When the *Calculate line net amount on import* feature is turned on, you can set
 1. On the **Prices** tab, on the **Line net amount calculation through integration** FastTab, set the **Calculate line net amount** option to one of the following values:
 
     - *Yes* – The system will always recalculate and update line amounts when needed. (Therefore, it will ignore the trade agreement evaluation policy.)
-    - *No* – The system will always leave the current line amount unchanged, even when incoming changes to the line price, quantity, and/or discount imply that the line total should be recalculated. (Therefore, it will strictly enforce the trade agreement evaluation policy.) <!-- KFM: Also when line net amount is zero? -->
+    - *No* – If the existing or incoming net amount for any line is 0 (zero), the value for that line is recalculated based on other values (such as the unit price, quantity, and discount). If the existing or incoming net amount differs from 0 (zero), and a change policy is set on the **Net amount** field on the line, the field isn't recalculated or updated, even when incoming changes to the line price, quantity, and/or discount would imply that the line total should be recalculated. This behavior matches that of version 10.0.22.
 
 ### <a name="CalculateLineAmount"></a>How the Calculate line net amount on import feature affects the CalculateLineAmount parameter
 
