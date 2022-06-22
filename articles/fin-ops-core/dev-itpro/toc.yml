@@ -1,14 +1,14 @@
-- name: Development and administration for Finance and Operations apps
+- name: Development and administration for finance and operations apps
   items:
-  - name: Development and administration for Finance and Operations apps
+  - name: Development and administration for finance and operations apps
     items:
-    - name: Finance and Operations application documentation
+    - name: Finance and operations application documentation
       href: ../fin-ops/index.md
-    - name: Development and administration for Finance and Operations apps
+    - name: Development and administration for finance and operations apps
       href: index.md
     - name: What's new or changed
       items:
-      - name: What's new or changed in Finance and Operations apps
+      - name: What's new or changed in finance and operations apps
         href: ../fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/fin-ops-core/dev-itpro/toc.yml
       - name: What's new or changed in Platform updates
         items:
@@ -48,7 +48,7 @@
         href: dev-tools/version-models-build.md
     - name: Data integration
       items:
-      - name: Integration between Finance and Operations apps and third-party services
+      - name: Integration between finance and operations apps and third-party services
         href: data-entities/integration-overview.md
       - name: Data integration APIs
         items:
@@ -82,7 +82,7 @@
           href: data-entities/service-protection-monitoring.md
         - name: Maximize API throughput
           href: data-entities/service-protection-maximizing-api-throughput.md
-      - name: Finance and Operations Connector
+      - name: Finance and operations Connector
         href: data-entities/fin-ops-connector.md
       - name: Development for integration
         items:
@@ -106,39 +106,39 @@
             items:
             - name: Prospect to cash
               href: ../../supply-chain/sales-marketing/prospect-to-cash.md
-            - name: Synchronize accounts directly from Sales to customers in Finance and Operations
+            - name: Synchronize accounts directly from Sales to customers in finance and operations
               href: ../../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-            - name: Synchronize products directly from Finance and Operations to products in Sales
+            - name: Synchronize products directly from finance and operations to products in Sales
               href: ../../supply-chain/sales-marketing/products-template-mapping-direct.md
-            - name: Synchronize contacts directly from Sales to contacts or customers in Finance and Operations
+            - name: Synchronize contacts directly from Sales to contacts or customers in finance and operations
               href: ../../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-            - name: Synchronize sales quotation headers and lines directly from Sales to Finance and Operations
+            - name: Synchronize sales quotation headers and lines directly from Sales to finance and operations
               href: ../../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-            - name: Synchronization of sales orders directly between Sales and Finance and Operations
+            - name: Synchronization of sales orders directly between Sales and finance and operations
               href: ../../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-            - name: Synchronize sales invoice headers and lines directly from Finance and Operations to Sales
+            - name: Synchronize sales invoice headers and lines directly from finance and operations to Sales
               href: ../../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
           - name: Configure integration with Field Service
             items:
             - name: Configure integration with Field Service overview
               href: ../../supply-chain/sales-marketing/field-service.md
-            - name: Synchronize products in Finance and Operations to products in Field Service
+            - name: Synchronize products in finance and operations to products in Field Service
               href: ../../supply-chain/sales-marketing/field-service-product.md
-            - name: Synchronize work orders in Field Service to sales orders in Finance and Operations
+            - name: Synchronize work orders in Field Service to sales orders in finance and operations
               href: ../../supply-chain/sales-marketing/field-service-work-order.md
-            - name: Synchronize agreement invoices in Field Service to free text invoices in Finance and Operations
+            - name: Synchronize agreement invoices in Field Service to free text invoices in finance and operations
               href: ../../supply-chain/sales-marketing/field-service-invoice.md
-            - name: Synchronize inventory transfers and adjustments from Field Service to Finance and Operations
+            - name: Synchronize inventory transfers and adjustments from Field Service to finance and operations
               href: ../../supply-chain/sales-marketing/synchronize-inventory-adjustments.md
-            - name: Synchronize inventory level information from Finance and Operations to Field Service 
+            - name: Synchronize inventory level information from finance and operations to Field Service 
               href: ../../supply-chain/sales-marketing/synchronize-inventory-level-info.md
-            - name: Synchronize products with inventory unit from Finance and Operations to Field Service
+            - name: Synchronize products with inventory unit from finance and operations to Field Service
               href: ../../supply-chain/sales-marketing/synchronize-products-inv-unit.md
-            - name: Synchronize project list from Finance and Operations to Field Service
+            - name: Synchronize project list from finance and operations to Field Service
               href: ../../supply-chain/sales-marketing/synchronize-project-list.md
-            - name: Synchronize warehouses from Finance and Operations to Field Service
+            - name: Synchronize warehouses from finance and operations to Field Service
               href: ../../supply-chain/sales-marketing/synchronize-warehouse.md
-            - name: Synchronize work orders with project from Field Service to Finance and Operations
+            - name: Synchronize work orders with project from Field Service to finance and operations
               href: ../../supply-chain/sales-marketing/synchronize-work-orders.md
           - name: Configure Project Service Automation integration
             items:
@@ -200,7 +200,7 @@
           href: data-entities/data-synchronize-date-and-time.md
         - name: Importing vouchers using the General journal entity
           href: data-entities/tips-tricks-import-general-journal-entity.md
-        - name: Optimizing data migration for Finance and Operations apps
+        - name: Optimizing data migration for finance and operations apps
           href: sysadmin/optimize-data-migration.md
       - name: Development for data entities
         items:
@@ -246,7 +246,7 @@
         href: data-entities/Azure-Data-Lake-GA-version-overview.md
       - name: Install Export to Azure Data Lake add-in
         href: data-entities/configure-export-data-lake.md
-      - name: Finance and Operations apps in Azure Data Lake 
+      - name: Finance and operations apps in Azure Data Lake 
         href: data-entities/finance-data-azure-data-lake.md 
       - name: Data and metadata stored in Azure Data Lake
         href: data-entities/Azure-Data-Lake-Enhanced-Metadata.md
@@ -348,9 +348,9 @@
           href: deployment/arm-onboarding.md
         - name: Complete the Azure Resource Manager onboarding process for US government LCS projects
           href: deployment/arm-onbarding-us-goverment.md
-        - name: Azure ExpressRoute and Finance and Operations
+        - name: Azure ExpressRoute and finance and operations
           href: deployment/expressroute.md
-        - name: Finance and Operations architecture
+        - name: Finance and operations architecture
           href: ../fin-ops/imp-lifecycle/architecture-overview.md
         - name: Apply updates to cloud environments
           href: deployment/apply-deployable-package-system.md
@@ -484,7 +484,7 @@
           href: help/language-locale.md
         - name: Extend, customize, and collaborate on the help
           href: help/contributor-guide.md
-      - name: Finance and Operations apps regional services
+      - name: Finance and operations apps regional services
         items:
         - name: Local geographies
           href: deployment/deployment-options-geo.md
@@ -584,7 +584,7 @@
           href: dev-tools/metadata-search-visual-studio.md
         - name: Models and packages
           href: dev-tools/models.md
-        - name: Finance and Operations project type
+        - name: Finance and operations project type
           href: dev-tools/projects.md
         - name: Tools add-ins for Visual Studio
           href: dev-tools/developer-tools-add-ins.md
@@ -1082,9 +1082,9 @@
               href: data-entities/dual-write/sync-limits.md
             - name: Dual-write setup from Lifecycle Services
               href: data-entities/dual-write/lcs-setup.md
-            - name: Enable dual-write for existing Finance and Operations apps
+            - name: Enable dual-write for existing finance and operations apps
               items:
-                - name: Enable dual-write for existing Finance and Operations apps
+                - name: Enable dual-write for existing finance and operations apps
                   href: data-entities/dual-write/enable-dual-write.md
                 - name: System requirements and prerequisites
                   href: data-entities/dual-write/requirements-and-prerequisites.md
@@ -1198,15 +1198,15 @@
                 href: data-entities/dual-write/dual-write-troubleshooting-initial-sync.md
               - name: Troubleshoot live synchronization issues
                 href: data-entities/dual-write/dual-write-troubleshooting-live-sync.md
-              - name: Troubleshoot dual-write issues in Finance and Operations apps
+              - name: Troubleshoot dual-write issues in finance and operations apps
                 href: data-entities/dual-write/dual-write-troubleshooting-dual-write-module.md
               - name: Troubleshoot party and global address book problems
                 href: data-entities/dual-write/dual-write-troubleshooting-party-gab.md
               - name: Troubleshoot issues related to solution awareness
                 href: data-entities/dual-write/dual-write-troubleshooting-solution-awareness.md
-              - name: Troubleshoot issues from upgrades of Finance and Operations apps
+              - name: Troubleshoot issues from upgrades of finance and operations apps
                 href: data-entities/dual-write/dual-write-troubleshooting-finops-upgrades.md
-              - name: Verify dual-write configuration in Finance and Operations apps and Dataverse
+              - name: Verify dual-write configuration in finance and operations apps and Dataverse
                 href: data-entities/dual-write/dual-write-troubleshooting-verify-config.md
               - name: Errors codes for the table map health check
                 href: data-entities/dual-write/table-map-health-check.md
@@ -1224,9 +1224,9 @@
           href: power-platform/admin-reference.md
         - name: Enable Dataverse virtual entities
           href: power-platform/enable-virtual-entities.md
-        - name: Power Apps portals with Finance and Operations
+        - name: Power Apps portals with finance and operations
           href: power-platform/power-portal-reference.md
-        - name: Finance and Operations virtual entities FAQ
+        - name: Finance and operations virtual entities FAQ
           href: power-platform/faq.md
       - name: Business events
         items:
@@ -1574,15 +1574,15 @@
           href: lcs-solutions/submit-localization-alerts.md
     - name: Support
       items:
-      - name: Get support for Finance and Operations and Lifecycle Services
+      - name: Get support for finance and operations and Lifecycle Services
         href: lifecycle-services/lcs-support.md
       - name: Dynamics 365 support overview
         href: /power-platform/admin/support-overview?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
-      - name: Get support for Finance and Operations operated by 21Vianet in China
+      - name: Get support for finance and operations operated by 21Vianet in China
         href: lifecycle-services/21vianet-support.md
-      - name: Set up technical support for Finance and Operations apps
+      - name: Set up technical support for finance and operations apps
         href: lifecycle-services/support-experience.md
-      - name: Manage support experiences for Finance and Operations apps
+      - name: Manage support experiences for finance and operations apps
         href: lifecycle-services/cloud-powered-support-lcs.md
       - name: Production support and monitoring
         href: ../fin-ops/imp-lifecycle/production-support-monitoring.md
@@ -1612,7 +1612,7 @@
           href: sysadmin/role-based-security.md
         - name: Security architecture
           href: sysadmin/security-architecture.md
-        - name: Encryption in Finance and Operations apps
+        - name: Encryption in finance and operations apps
           href: sysadmin/encryption.md
         - name: Set the session inactivity timeout
           href: sysadmin/session-idle-timeout.md
@@ -1698,7 +1698,7 @@
         href: migration-upgrade/upgrade-home-page.md
       - name: Upgrade from AX 2012
         items:
-        - name: Upgrade from AX 2012 to Finance and Operations
+        - name: Upgrade from AX 2012 to finance and operations
           href: migration-upgrade/upgrade-overview-2012.md
         - name: AX 2012 upgrade - Plan using the Upgrade analyzer tool
           href: migration-upgrade/upgrade-analyzer-tool.md
@@ -1758,7 +1758,7 @@
             href: migration-upgrade/compress-tables-ax-2012.md
       - name: Migrate data from AX 2009
         items:
-        - name: Migrate data from AX 2009 to Finance and Operations
+        - name: Migrate data from AX 2009 to finance and operations
           href: migration-upgrade/data-migration-tool.md
         - name: AX 2009 migration - Install the Data migration tool
           href: migration-upgrade/install-dmt.md
@@ -2044,3 +2044,4 @@
     href: ../../commerce/index.md
   - name: Dynamics 365 Human Resources
     href: ../../human-resources/index.md
+
