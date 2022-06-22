@@ -1050,7 +1050,7 @@
           href: lifecycle-services/dts-devops-extension.md
         - name: Azure DevOps extension tutorial (Public Preview)
           href: lifecycle-services/dts-ado-tutorial.md
-        - name: Visual Studio extension (Private Preview)
+        - name: Visual Studio extension (Public Preview)
           href: lifecycle-services/dts-visual-studio.md
         - name: Visual Studio Code extension (Public Preview)
           href: lifecycle-services/dts-vscode-doc.md
