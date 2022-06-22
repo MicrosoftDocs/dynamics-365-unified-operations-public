@@ -40,7 +40,7 @@ In general, the revenue recognition process can be used to perform these tasks:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44iER]
 
-The [How to use revenue recognition in Dynamics 365 Finance](https://youtu.be/v3amIsiqvoo) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [How to use revenue recognition in Dynamics 365 Finance](https://youtu.be/v3amIsiqvoo) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 The Revenue recognition feature provides a flexible framework that lets you define company-specific rules for recognizing both the revenue price and the revenue schedule.
 
@@ -58,3 +58,4 @@ If a contractual change causes a new sales order line to be added either to the 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

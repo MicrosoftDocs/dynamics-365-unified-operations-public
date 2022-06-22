@@ -73,9 +73,10 @@ Send email to [Customer payment insights (Preview)](mailto:fiap@microsoft.com) i
 
 ## Privacy Notice
 
-Previews (1) may utilize less privacy and security measures than the Dynamics 365 Finance and Operations service, (2) are not included in the service level agreement for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) has limited support.
+Previews (1) may utilize less privacy and security measures than the Dynamics 365 finance and operations service, (2) are not included in the service level agreement for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) has limited support.
 
 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
