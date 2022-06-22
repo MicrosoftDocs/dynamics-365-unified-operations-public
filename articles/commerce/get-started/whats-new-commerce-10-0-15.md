@@ -52,9 +52,9 @@ The following features are included in this release. The feature titles link to 
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Dynamics 365 Commerce 10.0.15 includes platform updates. To learn more, see [Platform updates for version 10.0.15 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-15.md).
+Dynamics 365 Commerce 10.0.15 includes platform updates. To learn more, see [Platform updates for version 10.0.15 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-15.md).
 
 ### Bug fixes 
 For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=514518&dbType=3&qc=8fbe12733a7e1aa197e91fb11530f69fa89b9b39c08d89a19873f755c9430988).

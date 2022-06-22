@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10
 
 This article describes features that are new or changed in Dynamics 365 Retail. 
 
-To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [What's new or changed in Finance and Operations version 10.0.3 (June 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3).
+To learn about the features in Microsoft Dynamics 365 Finance, see [What's new or changed in finance and operations version 10.0.3 (June 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-3).
 
 ## New calculation logic for autocharges in call center for mixed delivery mode sales lines
 

@@ -66,7 +66,7 @@ Check out the [Dynamics 365: 2020 release wave 1 plan](/dynamics365-release-plan
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) article describes features that have been removed or deprecated for Finance and Operations apps.
+The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) article describes features that have been removed or deprecated for finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.

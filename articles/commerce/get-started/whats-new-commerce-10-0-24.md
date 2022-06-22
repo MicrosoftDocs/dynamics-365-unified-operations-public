@@ -62,9 +62,9 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Dynamics 365 Commerce 10.0.24 includes platform updates. To learn more, see [Platform updates for version 10.0.24 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+Dynamics 365 Commerce 10.0.24 includes platform updates. To learn more, see [Platform updates for version 10.0.24 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### Bug fixes 
 For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=641306&dbType=3&qc=5b1d5e49c96b8a5cfb5601889a413e6f3773ba6500f9bc47310dcc5c54fff42f).
@@ -90,3 +90,4 @@ For breaking changes that only affect compilation time, but are binary compatibl
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

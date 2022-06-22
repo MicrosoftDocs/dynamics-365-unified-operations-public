@@ -53,9 +53,9 @@ The following table lists the features that are included in this release. We mig
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Dynamics 365 Commerce 10.0.26 includes platform updates. To learn more, see [Platform updates for version 10.0.26 of Finance and Operations apps (May 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
+Dynamics 365 Commerce 10.0.26 includes platform updates. To learn more, see [Platform updates for version 10.0.26 of finance and operations apps (May 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
 
 ### Bug fixes 
 For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=662864).
@@ -81,3 +81,4 @@ For breaking changes that only affect compilation time, but are binary compatibl
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

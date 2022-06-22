@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10.0.6
 
 This article describes features that are new or changed in Microsoft Dynamics 365 Retail in 10.0.6. 
 
-To learn about the features in Finance and Operations applications, see [What's new or changed in Finance and Operations apps version 10.0.6 (November 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-6).
+To learn about the features in finance and operations applications, see [What's new or changed in finance and operations apps version 10.0.6 (November 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-6).
 
 ## New Inventory Availability API's for E-commerce use
 Four new API's will be made available to provide e-commerce or 3rd party solutions with an estimation of on-hand inventory for a requested item and warehouse.  These API's are intended to replace the existing GetProductAvailabilities and GetAvailableInventoryNearby API's that are currently in-market.   These new API's will have improved calculation logic and caching to improve performance.  The names of the new API's are:

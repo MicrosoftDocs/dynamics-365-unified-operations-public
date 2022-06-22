@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Release 10.0.5
 This article describes features that are new or changed in Dynamics 365 Retail in 10.0.5. 
 
 
-To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [What's new or changed in Finance and Operations version 10.0.5 (October 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-5).
+To learn about the features in Microsoft Dynamics 365 Finance, see [What's new or changed in finance and operations version 10.0.5 (October 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-5).
 
 ## Test recorder and Regression suite automation tool for Retail Cloud POS
   
