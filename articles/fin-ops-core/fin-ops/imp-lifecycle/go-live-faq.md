@@ -4,7 +4,7 @@
 title: Go-live for implementation projects FAQ
 description: This article lists frequently asked questions about how to go live with an implementation project.
 author: OlgaPetrovaFT
-ms.date: 05/10/2022
+ms.date: 06/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -58,7 +58,9 @@ For more information about how to complete methodology phases in LCS, see [Lifec
 
 ## My sandbox environment is currently on an update that is set to expire in two months. Can I request a production environment that has the latest update?
 
-It is strongly recommended to deploy the production environment with the same version used in the acceptance testing environment, which should be the version you are planning to go live with. Going live on a version different from the version you tested on is **not** recommended, as it can lead to unexpected behavior and unforeseen issues that can negatively impact the go-live experience. It is further recommended to go live on a version that is **not** near end of service, so that you are able to apply quality updates for some time after the go-live, if needed. Hence it is important to carefully plan the version on which you are conducting the User Acceptance Test (UAT), keeping it as up-to-date as possible.
+We strongly recommended that you deploy the production environment with the same version used in the acceptance testing environment, which should be the version you are planning to go live with. Going live on a version different from the version you tested on is **not** recommended, as it can lead to unexpected behavior and unforeseen issues that can negatively impact the go-live experience. 
+
+It is strongly recommended that you go live on a version that is **not** near end of service, so that you are able to apply quality updates for some time after the go-live, if needed. It is important to carefully plan the version on which you are conducting the User Acceptance Test (UAT), and keep it as up-to-date as possible.
 
 For more information, see [Software lifecycle policy and cloud releases](../../dev-itpro/migration-upgrade/versions-update-policy.md) and [Service update availability](../../fin-ops/get-started/public-preview-releases.md).
 
