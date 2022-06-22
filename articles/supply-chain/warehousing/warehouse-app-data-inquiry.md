@@ -1,6 +1,6 @@
 ---
-title: Configure data inquiry mobile device menu item detours
-description: This topic describes how to configure data inquiry mobile device menu items and how to use them as part of detours.
+title: Query data using Warehouse Management mobile app detours
+description: This article describes how to configure data inquiry mobile device menu items and how to use them as part of detours.
 author: perlynne
 ms.date: 08/01/2022
 ms.topic: article
@@ -13,67 +13,78 @@ ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
 ---
 
-# Inquire data information via Warehouse management mobile app detours
+# Query data using Warehouse Management mobile app detours
 
 [!include [banner](../includes/banner.md)]
 
 ## Feature introduction
 
-By providing bar code scanning capability the warehouse management mobile app offers an easy and accurate way to capture data as part of your warehouse processes. But sometimes bar codes get damaged and unreadable, or the needed data information might not exist as a bar code in your business process flows.
+By providing bar code scanning capability, the Warehouse Management mobile app offers an easy and accurate way to capture data as part of your warehouse processes. But sometimes, bar codes get damaged and unreadable, or the needed data information might not exist as a bar code in your business process flows. In these cases, it can take a long time to manually key in the data and can even result in capturing incorrect data, resulting in reduced effectivity and a lower service level.
 
-In these cases, it can take a long time to manually key in the data and can even result in wrong data capturing with the outcome of being less effective and having a lower warehouse service level.
+By using a flexible data inquiry process, workers can easily look up the required information as part of the embedded Warehouse Management mobile app flows, applying filtering options that only list the relevant data, thereby making manual selection faster and more accurate.
 
-By using a flexible data inquiry process the warehouse workers can easily lookup the required data information as part of the imbedded warehouse management mobile app flows with filtering options only listing the relevant data - and thereby making the manual selection faster and more accurate.
+One example is the purchase order receiving flow, where a purchase order number is required to match arriving inventory. As part of this process, you can easily configure menu items to provide a card list view of the relevant purchase order numbers, making it possible to continue the receiving flow using a quick point-to-select approach. This article provides an example scenario, but this functionality can also be used within any or all your Warehouse Management mobile app flows.
 
-One example could be during a purchase order receiving flow, where a purchase order number is required to get recorded for matching up the arrived inventory item quantities. As part of this process, you can easily configure different menu items to obtain a card list view of the relevant purchase order numbers and thereby being able to continue the receiving flow with a quick point-to-select approach; but the functionality can get used within all your warehouse management mobile app flows and not only within the following example.
+## Turn on the data inquiry flow feature and its prerequisites
 
-## Enable the warehouse management app data inquiry capability
+Before you can use the functionality described in this article, you must complete the following procedure to turn on the required features.
 
-Before you can use the functionality, the feature must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+1. Go to **System administration \> Workspaces \> Feature management**. (For more information about how to use this workspace, see the [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
+1. Turn on the feature that is listed in the following way:
 
-- **Module:** *Warehouse management*
-- **Feature name:** *Warehouse management app data inquiry flow*
+    - **Module:** *Warehouse management*
+    - **Feature name:** *Warehouse app step instructions*
 
-The feature has dependencies of having the [Warehouse app step instructions](mobile-app-titles-instructions.md) and [Warehouse management app detours](warehouse-app-detours.md) features enabled.
+    This feature is a prerequisite for the *Warehouse management app data inquiry flow* feature. For more information about the *Warehouse app step instructions* feature, see [Customize step titles and instructions for the Warehouse Management mobile app](mobile-app-titles-instructions.md). 
 
-## Example scenario
+1. Turn on the feature that is listed in the following way:
 
-In the following the *Warehouse management app data inquiry flow* will get explained as part of the **Purchase Receive** flow within the Contoso demo data set in company *USMF*. In this exiting flow the warehouse management mobile app will prompt for the identification of a purchase order number within the very first step.
+    - **Module:** *Warehouse management*
+    - **Feature name:** *Warehouse management app detours*
 
-To enhance the selection process of the purchase order number we will add three mobile device menu items to this page:
+    This feature is a prerequisite for the *Warehouse management app data inquiry flow* feature. For more information about the *Warehouse management app detours* feature, see [Configure detours for steps in mobile device menu items](warehouse-app-detours.md).
 
-### Example scenario - Lookup POs by vendor
+1. If the *Warehouse management app detours* feature wasn't already turned on, then update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 
-In this example the warehouse management mobile app flow will prompt for a vendor name or part of a vendor name (using wildcards).
+1. Turn on the feature that is listed in the following way:
 
-Imagine that you are expecting an inbound delivery today from a vendor called *Tailspin* something - in this case you can type *Tail** to keep it short and will see all open purchase orders based on the filter where the vendor’s name starts with *Tail* as part of a cards view.
+    - **Module:** *Warehouse management*
+    - **Feature name:** *Warehouse management app data inquiry flow*
 
-Each card has a number of fields that convey necessary information about the purchase orders. Besides the complete vendor’s name, you can for example define to see the vendor account number, delivery date, and document status to ease the selecting of the specific purchase order number you would like to get returned to the purchase order number identification step.
+    This is the feature described in this article.
 
-### Example scenario - Lookup POs for today
+## Example scenarios
 
-In this example the inquiry menu item option will not require any entering when invoked but will simply show pre-configured filters like today’s date, and you can just proceed with your selection of a card for the specific purchase order you are going to register inventory items against. Again, the purchase order number will get returned to the previous page making it possible to continue the inbound inventory item registration flow.
+This article uses a example scenarios to show how you can use the *Warehouse management app data inquiry flow* feature to improve the purchase receipt flow. The scenarios use the standard sample data, which includes a flow called *Purchase receive*. This flow starts by prompting workers to identify a purchase order number to receive against. To make it easier to identify the purchase order, you will enhance the first page of this flow by adding following new query options:
 
-### Example scenario - Lookup POs by item
+- **Look up POs by vendor** – Opens a page that prompts the worker to enter a vendor name or part of a vendor name (which they can enter using wildcards). For example, if the worker is expecting an inbound delivery today from a vendor called *Tailspin* something, the worker can enter "Tail\*" to view a set of cards for open purchase orders that include this text. Each card has several fields that convey information about each purchase order. In addition to the vendor's name, you can design the cards to show the vendor account number, delivery date, and document status.
 
-This example shows how easy it is to find a purchase order number by scanning one of the item bar codes on the arrived inventory. The logic will simply list all the open purchase orders containing lines for the specific item number making it simple to select the purchase order number for the flowing receiving process.
+- **Look up POs for today** – Opens a page that prompts doesn't ask workers to enter data, but instead shows preconfigured filters (such as today's date). The page then shows a set of cards that match the filter. Workers proceed by selecting a card for the purchase order they want to register inventory items against.
 
-As additional inspiration you can try to add an inquire detour lookup on the **Scan item** page to search for item numbers within a specific purchase order. This could be relevant in a scenario where an item number bar code cannot get read.
+- **Look up POs by item** – Opens a page that asks the worker to scan the bar code of any item in the arrived inventory. The flow then lists all open purchase orders that contain lines for the scanned item number. To cover situations where a bar code can't be read, you could add an additional detour lookup to this page that lets workers to search for item numbers within a specific purchase order.
 
-### Configuring the mobile device menu items
+In each case, the worker identifies a purchase order by selecting a card and then returns to the first page, which receives and shows the selected purchase order number, making it possible for the worker to continue the inbound inventory item registration flow.
 
-First, let's create the three new lookup mobile device menu items we are going to add as part of the **Purchase Receipt** flow.
+## Enable sample data
 
-#### Lookup POs by vendor
+To work through the scenarios described in this topic, you must be on a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. Additionally, you must select the *USMF* legal entity (company) before you begin.
+
+## Configure the mobile device menu items
+
+To create each of the new query options you need to add to the first page of the flow, you must set them up as mobile device menu items, which you will later make available as detours to the *Purchase receive* flow.
+
+### Create the look up POs by vendor menu item
+
+Create the **Look up POs by vendor** menu item by following these steps:
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 1. Select **New** on the Action Pane to add a new mobile device menu item.
-1. Make the following settings:
-   - **Menu item name:** *Lookup POs by vendor*
-   - **Title:** *Lookup POs by vendor*
+1. Make the following settings for the new item:
+   - **Menu item name:** *Look up POs by vendor*
+   - **Title:** *Look up POs by vendor*
    - **Mode:** *Indirect*
 
-1. Under **General** select the following:
+1. On the **General** FastTab, select the following:
    - **Activity code:** *Data inquiry*
    - **Use process guide:** *Automatically selected*
    - **Table name:** *PurchTable (we would like to lookup purchase order numbers from this table)*
@@ -110,7 +121,7 @@ First, let's create the three new lookup mobile device menu items we are going t
 
 1. Select **Save** and close the page by selecting **X** (Close) or back in the browser.
 
-#### Lookup POs for today
+### Lookup POs for today
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 1. Select **New** on the Action Pane to add a new mobile device menu item.
@@ -199,7 +210,7 @@ First, let's create the three new lookup mobile device menu items we are going t
 
 1. Select **Save** and close the page by selecting **X** (Close) or back in the browser.
 
-## Add the three above mobile device menu items to a menu
+## Add the new mobile device menu items to a menu
 
 With now having the three new *lookup* mobile device menu items, we are ready to get them added to the **Mobile device menu**. This is required to use them as part of a detour process.
 In this example we will create a new sub menu and add the just created mobile device menu items into it.
@@ -216,7 +227,7 @@ In this example we will create a new sub menu and add the just created mobile de
 1. Find the just created menu under the *Menus* grouping in the **Available menus and menu items** list and select it.
 1. Select the arrow-bottom to move this menu into the **Menu structure** list.
 
-## Configuring the detours in mobile app steps
+## Configure detours in your mobile device steps
 
 To get the three additional mobile device menu items added to the existing purchase order identification step in the  **Purchase Receive** flow, we will use the detour configuration in the **Mobile device steps**.
 
@@ -237,7 +248,7 @@ To get the three additional mobile device menu items added to the existing purch
 
 ## Try out a purchase receiving flow with data inquiry as part of a detour
 
-1. Create several purchase orders with lines to try out your setup and then run the warehouse management mobile app process for the **Purchase Receive**.
+1. Create several purchase orders with lines to try out your setup and then run the Warehouse Management mobile app process for the **Purchase Receive**.
 
 1. You should now see the following page with the three additional menu items:
 
