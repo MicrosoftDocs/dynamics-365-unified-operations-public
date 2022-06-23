@@ -23,11 +23,11 @@ The June release of dual-write core solution 1.0.35.0 contains the following fea
 
 | Feature | Description | Status |
 |---|---|---|
-| Bug fix | Fixes bug where dual-write fails with a system error for improperly formatted table lookups, which were configured with a missing lookup attribute. | General availability |
-| Error handling | Provides actionable error message for case of invalid authentication. | General availability |
-| Performance | Manages dual-write plugins such that outdated plugins are removed from the environment. | General availability |
-| Bug fix | Fixes Finance and Operations request timeout issue, such that the Dual-write plugin timeout is now synchronized with the request to Finance and Operations during live sync. | General availability |
-| Compliance | Updates dual-write pause functionality to store data for 1 day only, for compliance reasons. | General availability |
+| Bug fix | Fixes bug where dual-write fails for improperly formatted table lookups, which were configured with a missing lookup attribute. | General availability |
+| Error handling | Provides actionable error message for invalid authentication failure. | General availability |
+| Performance | Manages dual-write plugins volume and remove the outdated plugins from the environment. | General availability |
+| Bug fix | dual-write plugin timeout duration is now synchronized with the Finance and Operations live sync timeout duration. | General availability |
+| Compliance | Due to compliance reasons, store the catchup sync errors for 24 hours only. Administrators are requested to retry the catchup errors within 24 hours. | General availability |
 
 ## April 2022 release
 
