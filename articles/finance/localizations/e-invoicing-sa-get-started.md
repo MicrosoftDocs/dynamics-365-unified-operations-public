@@ -73,6 +73,7 @@ Some of the parameters from the Saudi Arabian electronic invoice (SA) electronic
      > You need to create Compliance Cryptographic Stamp Identifier (**CCSID**) or Production Cryptographic Stamp Identifier (**PCSID**) depending of your stage of [onboarding](#onboarding) process.
 11. In the **Globalization feature** workspace, select the **Environment setup** related link, then the **Service environments** menu and select the environment that will be used for the feature deployment.
 12. In “Number Sequence” section, add new record for the number sequence that will be used for submitted electronic invoices counting.
+    ![Number Sequence ыуегз](media/emea-sa-einvoice-counter.jpg)
 13. 
 14. Complete, publish, and deploy the **Saudi Arabian electronic invoice (SA)** feature to the service environment. For more information, see the [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) section in the "Get started with Electronic invoicing" topic.
 15. Deploy the **Saudi Arabian electronic invoice (SA)** feature to the connected application. For more information, see the [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) section in the "Get started with Electronic invoicing" topic.
