@@ -132,8 +132,9 @@ An expiration date is shown only for connectors that use management certificates
 
 There are a few known limitations when you set up or manage Azure connectors in LCS:
 
-- Because prospect organizations haven't purchased a license for a Finance and Operations app, and therefore can't deploy the software, they aren't allowed to set up Azure connectors. To determine your organization type, select your name in the upper-right corner of the page while you're signed in to LCS.
+- Because prospect organizations haven't purchased a license for a finance and operations app, and therefore can't deploy the software, they aren't allowed to set up Azure connectors. To determine your organization type, select your name in the upper-right corner of the page while you're signed in to LCS.
 - An Azure connector can be created only for a unique combination of an LCS project ID, an Azure subscription ID, and an Azure region. You can't create multiple connectors for the same subscription and region. If you must delete an Azure connector for a given combination of a subscription and a region, you must first delete all environments that were created by that connector.
 - A management certificate can't be reused in the same project for the same Azure subscription ID, regardless of the region.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

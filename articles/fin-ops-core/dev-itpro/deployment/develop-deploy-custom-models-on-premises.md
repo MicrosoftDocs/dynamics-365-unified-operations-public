@@ -88,7 +88,7 @@ When your deployable package is ready, follow these steps to upload it to your L
 3. Click the plus sign (**+**) to upload the deployable package. 
 
 ## Configure an on-premises runtime environment that uses your code
-As of the July 2017 release of Microsoft Dynamics 365 for Finance and Operations (on-premises), you can apply your customizations and extensions only during the deployment of a sandbox or production environment.
+As of the July 2017 release of Microsoft Dynamics 365 Finance (on-premises), you can apply your customizations and extensions only during the deployment of a sandbox or production environment.
 
 1. In your LCS project, click **Configure** to deploy your environment.
 
@@ -107,3 +107,4 @@ As of the July 2017 release of Microsoft Dynamics 365 for Finance and Operations
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

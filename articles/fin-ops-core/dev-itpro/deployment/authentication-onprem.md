@@ -41,7 +41,7 @@ You'll find this URL in the deployment instructions found in [Configure AD FS](
 C:\\ProgramData\\SF\\AOS_10\\Fabric\\work\\Applications\\AXSFType_App218\\AXSF.Package.1.0.xml
 
 ## XML configuration file
-There is a file called AXSF.Package.Current.xml. This file will be a copy of the AXSF.Package.1.0.xml in Finance and Operations deployments. The AXSF.Package.Current.xml file represents the variable that have been used to initialize the currently running AOS instance (AxService.exe).
+There is a file called AXSF.Package.Current.xml. This file will be a copy of the AXSF.Package.1.0.xml in finance and operations deployments. The AXSF.Package.Current.xml file represents the variable that have been used to initialize the currently running AOS instance (AxService.exe).
 
 Within this configuration file (which is on each AOS machine), you'll find some sections that are set from the Lifecycle Services (LCS) deployment setting for AD FS.
 
@@ -112,3 +112,4 @@ If any of the AD FS application group setup is incorrect, you're likely see an e
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

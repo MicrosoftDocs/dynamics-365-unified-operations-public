@@ -61,7 +61,7 @@ The following diagram illustrates the required setup, at a high level.
 
 In Lifecycle Services (LCS), the production environment should be deployed using the environment slot named **Production**. Your disaster recovery environment will not use an additional environment slot in LCS. It will instead reuse the slot for your production environment. 
 
-Finance and Operations AOS nodes and SQL Server must be co-located within the same datacenter. For more information, see [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md#network-requirements).
+Finance and operations AOS nodes and SQL Server must be co-located within the same datacenter. For more information, see [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md#network-requirements).
 
 ## Deploying code packages to production
 
@@ -278,3 +278,4 @@ Clean up your DR environment by manually unprovisioning all Dynamics Service Fab
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
