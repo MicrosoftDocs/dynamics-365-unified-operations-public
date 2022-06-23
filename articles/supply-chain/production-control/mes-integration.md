@@ -247,9 +247,10 @@ After the MES has sent a message to Supply Chain Management, it might be relevan
 In these cases, you can take advantage of the standard alert feature in Supply Chain Management. For information about how standard alerts work, see the following resources:
 
 - Help article: [Alerts overview](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
-- Video: [Alert rule options in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
+- Video: [Alert rule options in Dynamics 365 Finance](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
 
 For example, you might set up the following alerts to provide feedback about the state of a message:
 
 - Create a business event ("Send externally") that is used when a message is *Failed*.
 - Send a notification and email to the IT admin or production floor manager.
+
