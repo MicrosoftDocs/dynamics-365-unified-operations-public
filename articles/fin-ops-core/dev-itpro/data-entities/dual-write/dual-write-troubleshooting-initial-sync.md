@@ -237,6 +237,6 @@ Initial sync may fail for records with zero value for a price field like Fixed P
 
 *An error occurred while validating input parameters: Microsoft.OData.ODataException: Cannot convert the literal '000000' to the expected type'Edm.Decimal',...*
 
-The problem is with the setup of the 'Source data format' Plese change the Language locale to en-us and retry.
+The problem is with the 'Language locale' value of the 'Source data format' under Data Management module. Please change the Language locale to en-us and retry.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
