@@ -31,6 +31,9 @@ Address formats determine how address data will appear when it's printed. In the
 
 The Federal Informational Address System (or FIAS) address database might be required for businesses in the Russian Federation. You can use specialized tools to import FIAS into your system and keep it up to date. This article explains how to set up and use the FIAS import mechanisms.
 
+The Federal Tax Service (FTS) stopped updating files with address information in the FIAS format in August 2021. The new format was approved by order of the Federal Tax Service dated May 13, 2020 No. ED-7-6 / 329 @ FIAS (old format that contains information about addresses in the structure of administrative-territorial division); State address register (GAR - a new format with information about addresses in the municipal division). 
+More information about how to import addresses in the GAR format
+
 ## Set up Russian address formats
 
 ### Set up the address format, country or region, state or province, county, city and postal code
