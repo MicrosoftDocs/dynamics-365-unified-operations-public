@@ -27,7 +27,7 @@ ms.search.validFrom: 2017-07-8
 
 ---
 
-# Synchronize sales invoice headers and lines directly from Finance and Operations to Sales
+# Synchronize sales invoice headers and lines directly from finance and operations to Sales
 
 [!include [banner](../includes/banner.md)]
 
