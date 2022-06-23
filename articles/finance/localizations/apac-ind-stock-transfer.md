@@ -268,7 +268,6 @@ The **balance on the inventory in transit** can be calculated as **_InventoryIss
 	- price = 115 for Site 1 
 	- price = 112 for Site 2 
 	- price = 111 for Site 3
-
 - From warehouse -> Site 1
 - Transit warehouse -> Site 2
 - To warehouse -> Site 3
