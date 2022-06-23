@@ -24,10 +24,10 @@ The June release of dual-write core solution 1.0.35.0 contains the following fea
 | Feature | Description | Status |
 |---|---|---|
 | Bug fix | Fixes bug where dual-write fails for improperly formatted table lookups, which were configured with a missing lookup attribute. | General availability |
-| Error handling | Provides actionable error message for invalid authentication failure. | General availability |
-| Performance | Manages dual-write plugins volume and remove the outdated plugins from the environment. | General availability |
-| Bug fix | dual-write plugin timeout duration is now synchronized with the Finance and Operations live sync timeout duration. | General availability |
-| Compliance | Due to compliance reasons, store the catchup sync errors for 24 hours only. Administrators are requested to retry the catchup errors within 24 hours. | General availability |
+| Error handling | Provides actionable error message for invalid authentication failure for Power Platform Integration environments. | General availability |
+| Performance | Manages dual-write plugins volume and removes the outdated plugins from the environment. | General availability |
+| Bug fix | Dual-write plugin timeout duration is now synchronized with the Finance and Operations live sync timeout duration. It means the dual-write transaction commit must succeed on both sides within 2 minute window. Otherwise it is fail on both sides. | General availability |
+| Compliance | Due to compliance reasons, when entity maps are paused in dual-write, the data is stored for 24 hours only. Administrators are requested to run the maps within 24 hours. | General availability |
 
 ## April 2022 release
 
