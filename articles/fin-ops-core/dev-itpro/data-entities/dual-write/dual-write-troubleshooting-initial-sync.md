@@ -231,4 +231,12 @@ We are working on a fix to remove the party type range on the Finance and Operat
 
 If you have run the initial sync for **Customer** data and have the **Customer** maps running and then you are run the initial sync for **Contacts** data, there might be performance issues during inserts and updates to the **LogisticsPostalAddress** and **LogisticsElectronicAddress** tables for **Contact** addresses. The same global postal address and electronic address tables are tracked for **CustCustomerV3Entity** and **VendVendorV2Entity** and dual-write tries to build more queries to write data to other side. If you have already run the initial sync for **Customer**, then stop the corresponding map while running initial sync for **Contacts** data. Do the same thing for the **Vendor** data. When the initial sync is finished, you can run all the maps by skipping the initial sync.
 
+## Float data type with zero value cannot be synchronized
+
+Initial sync may fail for records with zero value for a price field like Fixed Payment Amount or Amount in transaction currency. As a result, you will see an error message like the following:
+
+*An error occurred while validating input parameters: Microsoft.OData.ODataException: Cannot convert the literal '000000' to the expected type'Edm.Decimal',...*
+
+The problem is with the setup of the 'Source data format' Plese change the Language locale to en-us and retry.
+
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
