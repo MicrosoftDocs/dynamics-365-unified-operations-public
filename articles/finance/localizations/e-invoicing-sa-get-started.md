@@ -84,7 +84,7 @@ Some of the parameters from the Saudi Arabian electronic invoice (SA) electronic
     - In the **Parameters** section, select the **API method name** name. In the **Value** field, select from the list either **Invoice clearance** for tax invoices or **Invoice reporting** for simplified invoices.
     - In the **Parameters** section, select the **Certificate name** name. In the **Value** field, select from the list either **CCSID** or **PCSID** created on step 10 depending of your stage of [onboarding](#onboarding) process.
  > [!NOTE]
- > Repeat the steps 13 through 16 for the **Project invoice** feature setup. 
+ > Repeat the steps 13 through 16 for the **Project invoice** and **Retail simplified invoice** feature setup. 
 17. Complete, publish, and deploy the **Saudi Arabian electronic invoice (SA)** feature to the service environment. For more information, see the [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) section in the "Get started with Electronic invoicing" topic.
 18. Deploy the **Saudi Arabian electronic invoice (SA)** feature to the connected application. For more information, see the [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) section in the "Get started with Electronic invoicing" topic.
 
@@ -94,7 +94,7 @@ Some of the parameters must be additionally configured directly in Microsoft Dyn
 
 1. Make sure that country specific Electronic reporting configurations required for Saudi Arabia are imported. For more information, see: [Set up Electronic invoicing parameters](e-invoicing-set-up-parameters.md)
 2. In the **Organization administration** module, in the **Setup** section, open the **Electronic documents parameters** form.
-3. In the **Electronic document** section, add new records for the **Customer Invoice journal** and **Project nvoice** table names. 
+3. In the **Electronic document** section, add new records for the **Customer Invoice journal**, **Project nvoice** and **Fiscal transaction document** table names. 
 4. For each table name, fill in **Document context** and **Electronic document model mapping** in accordance with point 1.
 5. In the **Electronic document** section, for the **Customer Invoice journal** table name, select **Response types** menu.
 6. Create a new **Response type** with the same name as was defined for the related variable in the respective feature setups in RCS. Enter the following values:
