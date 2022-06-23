@@ -88,9 +88,9 @@ Some of the parameters from the Saudi Arabian electronic invoice (SA) electronic
 17. Complete, publish, and deploy the **Saudi Arabian electronic invoice (SA)** feature to the service environment. For more information, see the [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) section in the "Get started with Electronic invoicing" topic.
 18. Deploy the **Saudi Arabian electronic invoice (SA)** feature to the connected application. For more information, see the [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) section in the "Get started with Electronic invoicing" topic.
 
-## Microcost Dynamics D365 Finance configuration
+## Microsoft Dynamics D365 Finance configuration
 
-Some of the parameters must be additionally configured directly in Microcost Dynamics D365 Finance.
+Some of the parameters must be additionally configured directly in Microsoft Dynamics D365 Finance. When tax invoices are cleared by ZATCA, all the required clearance information including digital signatures and QR codes must be imported back to the system. To achieve this, response types must be configured in the system. Please do the following configuration steps.
 
 1. In the **Organization administration** module, in the **Setup** section, open the **Electronic documents parameters** form.
 2. In the **Electronic document** section, for the **Customer Invoice journal** table name, select **Response types** menu.
@@ -101,7 +101,7 @@ Some of the parameters must be additionally configured directly in Microcost Dyn
  
  ![Response type setup](media/emea-sa-einvoice-response.jpg)
 
-For more details about business data configuration in Microcost Dynamics D365 Finance, see: [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md)
+For more details about business data configuration and processing in Microcost Dynamics D365 Finance, see: [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md)
 
 # <a id="onboarding"></a>Electronic invoicing onboarding in Saudi Arabia
 Onboarding is mandatory for all taxpayers who are subjects to electronic invoicing in Saudi Arabia. Taxpayers and their software for e-invoicing must be onboarded by Saudi Arabian tax authorities (**ZATCA**). As the result of onboarding process, taxpayers will obtain Cryptographic Stamp Identifiers (**CSID**) which are required for integration with electronic invoicing portal managed by Saudi Arabian Tax authority and further electronic invoices submission.
