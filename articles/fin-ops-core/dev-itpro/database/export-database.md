@@ -2,7 +2,7 @@
 # required metadata
 
 title: Export a database
-description: This article explains how to export a database for Finance and Operations.
+description: This article explains how to export a database for finance and operations.
 author: LaneSwenka
 ms.date: 06/07/2022
 ms.topic: article
@@ -119,3 +119,4 @@ The export process differs from other database movement operations, and the gene
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
