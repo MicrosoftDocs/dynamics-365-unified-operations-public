@@ -154,7 +154,7 @@ You can create an unlimited number of reporting trees to display your organizati
 
 ## Update the Financial reporting version through slipstreaming
 
-Finance and Operations apps are updated every month. However, Financial reporting isn't necessarily updated on that cadence. Moreover, customers have more options about when they implement updates for Finance and Operations apps. Financial reporting updates are automatically installed. Financial reporting has a designated version that is consumed in a customer environment when a service update is implemented, when downtime is initiated, or when a customer's environment is in Maintenance mode. This process is known as *slipstreaming* or *true-up*, because all customer implementations are set to the same version of Financial reporting.
+finance and operations apps are updated every month. However, Financial reporting isn't necessarily updated on that cadence. Moreover, customers have more options about when they implement updates for finance and operations apps. Financial reporting updates are automatically installed. Financial reporting has a designated version that is consumed in a customer environment when a service update is implemented, when downtime is initiated, or when a customer's environment is in Maintenance mode. This process is known as *slipstreaming* or *true-up*, because all customer implementations are set to the same version of Financial reporting.
 
 Changes that are released in each version can be found in [What's new or changed in Dynamics 365 Finance](../../finance/get-started/whats-new-home-page.md). Platform updates and bug fixes can be found in the "Additional Resources" section at the bottom of the page for each release.
 
@@ -257,3 +257,4 @@ Issue: You receive the error "Unable to Connect to the Financial reporting serve
 - [Reporting tree definitions in financial reports](../../fin-ops-core/dev-itpro/analytics/financial-reporting-tree-definitions.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

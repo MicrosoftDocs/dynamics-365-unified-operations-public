@@ -83,7 +83,7 @@ The following table provides information about some country-specific regulatory 
 |-------------|--------------|------------------------|
 | Spain       | [Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)](../localizations/emea-esp-sii.md) | |
 | Hungary     | [Online invoicing system](../localizations/emea-hun-online-invoicing.md) | |
-| United Kingdom | [Making Tax Digital (MTD) – VAT statement submission](../localizations/emea-gbr-mtd-vat-integration.md) | [Finance and Operations: UK Digital Tax - VAT Declaration In Dynamics 365](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) |
+| United Kingdom | [Making Tax Digital (MTD) – VAT statement submission](../localizations/emea-gbr-mtd-vat-integration.md) | [finance and operations: UK Digital Tax - VAT Declaration In Dynamics 365](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-uk-digital-tax-vat-declaration-in-dynamics-365) |
 | Lithuania   | [i.SAF reporting](../localizations/emea-ltu-isaf.md) | |
 | Poland      | [VAT declaration with registers (JPK_V7M, VDEK)](../localizations/emea-pol-vdek.md) | [Dynamics 365 Finance: SAF/JPK VAT Audit Registers](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-finance-saf-jpk-vat-audit-registers-june-4-2020) |
 | Netherlands | [VAT declaration for Netherlands](../localizations/emea-nl-vat-declaration-netherlands.md) | |
@@ -104,4 +104,5 @@ The following table provides information about some country-specific regulatory 
 | Switzerland | [VAT declaration (Switzerland)](../localizations/emea-che-vat-declaration-switzerland.md) | |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
 

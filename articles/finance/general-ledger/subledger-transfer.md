@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.8
 
 This article describes capabilities that are related to the rules for transferring batches of subledger journal entries.
 
-In version 8.1, changes were made to allow the transfer of rules, which deprecated the **Synchronous** option. For more information, see [Removed or deprecated features for Finance and Operations](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=%2fdynamics365%2ffinance%2ftoc.json#finance-and-operations-81-with-platform-update-20).
+In version 8.1, changes were made to allow the transfer of rules, which deprecated the **Synchronous** option. For more information, see [Removed or deprecated features for finance and operations](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=%2fdynamics365%2ffinance%2ftoc.json#finance-and-operations-81-with-platform-update-20).
 
 The following options are available for transferring subledger batches:
 
@@ -51,3 +51,4 @@ The efficiency change at the batch level uses a single recurring batch job for a
 For more information about process automation setup, see [Process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

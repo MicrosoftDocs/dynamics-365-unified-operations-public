@@ -48,7 +48,7 @@ Here are some of the factors that you must consider when you plan the structure 
 You create the chart of accounts on the **Chart of accounts** page. You can create main accounts from the **Chart of accounts** page or the **Main accounts** page. Your main accounts shouldn't use any special characters that are used as delimiters for chart of accounts. Otherwise, you might experience instability, or you might always have to use lookups or the dialog box when you enter combinations of accounts and dimensions. For more information, see [Create a main account](tasks/create-main-account.md).
 
 > [!NOTE]
-> In Dynamics 365 for Finance and Operations version 8.0 (April 2018), you can modify the chart of accounts delimiter from the **General ledger parameters** page.
+> In Dynamics 365 Finance version 8.0 (April 2018), you can modify the chart of accounts delimiter from the **General ledger parameters** page.
 
 It's a good idea to link the main accounts to main account categories, so that you can take advantage of the default financial reports without having to make any modifications. Therefore, you can more quickly and easily design and maintain reports.
 
@@ -65,3 +65,4 @@ For more information, see the following topics:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
