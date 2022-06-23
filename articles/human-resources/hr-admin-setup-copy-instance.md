@@ -31,8 +31,8 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
->[!NOTE]
-> Starting June 2022, Human Resources environments can only be deployed on the finance and operations app infrastrcuture. For more information, see [Provision Human Resources on the finance and operations infrastrcuture](/hr-admin-setup-provision-fo.md).
+> [!NOTE]
+> Starting June 2022, Human Resources environments can be deployed only on the finance and operations app infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](/hr-admin-setup-provision-fo.md).
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Human Resources database to a sandbox environment. If you have another sandbox environment, you can also copy the database from that environment to a targeted sandbox environment.
 
@@ -123,7 +123,7 @@ Also, the following statuses change when you copy an instance:
 
 ## Environment admin
 
-All users in the target sandbox environment, including Administrators, are replaced by the users of the source environment. Before you copy an instance, be sure that you're an Administrator in the source environment. If you aren't, you can't sign in to the target sandbox environment after the copy has completed.
+All users in the target sandbox environment, including Administrators, are replaced by the users of the source environment. Before you copy an instance, be sure that you're an Administrator in the source environment. If you aren't, you can't sign in to the target sandbox environment after the copy has been completed.
 
 All non-Administrator users in the target sandbox environment are disabled to prevent unwanted sign-ins in the sandbox environment. Administrators can reenable users if needed.
 
