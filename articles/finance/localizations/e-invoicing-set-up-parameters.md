@@ -63,7 +63,7 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
     - **Invoice model mapping**
     - **Fiscal documents mapping** (for Brazilian scenarios, if required)
     - **Advance invoice model mapping** (for Polish scenarios, if required) 
-    - **Fiscal document mapping** (for Saudi Arabian Retail specific scenarios, if required)
+    - **Retail fiscal document mapping** (for Saudi Arabian Retail specific scenarios, if required)
 
 ## Set up Electronic document parameters
 
