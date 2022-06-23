@@ -113,7 +113,7 @@ Note the following limitations:
 
 - All invoices from an original sales order are included in a return electronic invoice as the related CFDI documents.
 - The scenario of a customer order return that involves an exchange is supported only for Global CFDI electronic invoices.
-- Mixed transactions are not supported for CFDI. Therefore, prohibit mixing sales and returns in one receipt. When this restriction it is enabled, the mixed lines are blocked in cash&carry sales, also the system does not allow Exchange on return in the customer order.
+- Mixed transactions are not supported for CFDI-global and for CFDI-normal for commerce orders: electronic invoices could not be created in case of mixed (positive & negative lines) orders. Therefore, it is recommended to turn on the **Prohibit mixing sales and returns in one receipt** flag (**Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**). When this restriction is enabled, the mixed lines are blocked in cash&carry sales.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
