@@ -92,9 +92,12 @@ Some of the parameters from the Saudi Arabian electronic invoice (SA) electronic
 
 Some of the parameters must be additionally configured directly in Microsoft Dynamics D365 Finance. When tax invoices are cleared by ZATCA, all the required clearance information including digital signatures and QR codes must be imported back to the system. To achieve this, response types must be configured in the system. Please do the following configuration steps.
 
-1. In the **Organization administration** module, in the **Setup** section, open the **Electronic documents parameters** form.
-2. In the **Electronic document** section, for the **Customer Invoice journal** table name, select **Response types** menu.
-3. Create a new **Response type** with the same name as was defined for the related variable in the respective feature setups in RCS. Enter the following values:
+1. Make sure that required country specific Electronic reporting configurations are imported. For more information, see: [Set up Electronic invoicing parameters](e-invoicing-set-up-parameters.md)
+2. 
+3. 
+4. In the **Organization administration** module, in the **Setup** section, open the **Electronic documents parameters** form.
+5. In the **Electronic document** section, for the **Customer Invoice journal** table name, select **Response types** menu.
+6. Create a new **Response type** with the same name as was defined for the related variable in the respective feature setups in RCS. Enter the following values:
    - select **Pending** in the **Submission status** field.
    - select **Sales invoice QR code entity** in the **Data entity name** field.
    - select **Zatca response data import** in the **Model mapping** field.
