@@ -68,6 +68,9 @@ You can define a default transfer order type and a default price type for transf
 - **Cost price** – The cost price, or the on-hand price, of the item will be used for stock transfer orders.
 - **Transfer price** – The transfer price that is set up for the item will be used for stock transfer orders.
 
+> [!NOTE]
+> In the case of the **Cost price** price type, the system calculates a running average cost price based on the inventory dimensions specified for an item line. This running average price is stored to the cost price field either on creation of the line, or when it is updated. Thereafter, this saved cost price is never recalculated when shipping and receiving transactions are posted.
+
 ### Configure Master planning parameters
 
 You can define a default transfer order type and a default price type for transfer orders that are created when confirming planned orders in the **Master planning** module. On the **Master planning parameters** page, on the **Standard update** tab, select **Transfer type** and **Price type** in the **Firm - Transfer** group.
