@@ -73,7 +73,7 @@ Some of the parameters from the Saudi Arabian electronic invoice (SA) electronic
      > You need to create Compliance Cryptographic Stamp Identifier (**CCSID**) or Production Cryptographic Stamp Identifier (**PCSID**) depending of your stage of [onboarding](#onboarding) process.
 11. In the **Globalization feature** workspace, select the **Environment setup** related link, then the **Service environments** menu and select the environment that will be used for the feature deployment.
 12. In “Number Sequence” section, add new record for the number sequence that will be used for submitted electronic invoices counting.
-    ![Number Sequence ыуегз](media/emea-sa-einvoice-counter.jpg)
+    ![Number Sequence setup](media/emea-sa-einvoice-counter.jpg)
 13. In the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile, select Draft version of the **Saudi Arabian electronic invoice (SA)** Electronic invoicing feature. In the **Setups** menu, select the **Sales invoice** feature setup and select **Edit**.
 14. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Get next number sequence value** action. In the **Parameters** section, in the **Value** field, select from the list the number sequence defined on step 12.
 15. In the **Processing pipeline** section, select the **(Preview) Prepare document for submit for Saudi Arabia Zatca** action.
@@ -98,7 +98,7 @@ Some of the parameters must be additionally configured directly in Microcost Dyn
    - select **Pending** in the **Submission status** field.
    - select **Sales invoice QR code entity** in the **Data entity name** field.
    - select **Zatca response data import** in the **Model mapping** field.
-
+   ![Response type setup](media/emea-sa-einvoice-response.jpg)
 
 For more details about Microcost Dynamics D365 Finance configuration, see: [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md)
 
