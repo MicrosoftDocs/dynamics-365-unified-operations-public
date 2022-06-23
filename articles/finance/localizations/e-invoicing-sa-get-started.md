@@ -90,7 +90,15 @@ Some of the parameters from the Saudi Arabian electronic invoice (SA) electronic
 
 ## Microcost Dynamics D365 Finance configuration
 
-Add here...
+Some of the parameters must be additionally configured directly in Microcost Dynamics D365 Finance.
+
+1. In the **Organization administration** module, in the **Setup** section, open the **Electronic documents parameters** form.
+2. In the **Electronic document** section, for the **Customer Invoice journal** table name, select **Response types** menu.
+3. Create a new response type with the same name as was defined as the variable in the RCS feature setup. Enter the following values:
+   - select **Pending** in the **Submission status** field.
+   - select **Sales invoice QR code entity** in the **Data entity name** field.
+   - select **Zatca response data import** in the **Model mapping** field.
+
 
 For more details about Microcost Dynamics D365 Finance configuration, see: [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md)
 
