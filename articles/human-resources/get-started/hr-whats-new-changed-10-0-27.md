@@ -117,8 +117,9 @@ Dynamics 365 Finance 10.0.27 includes platform updates. To learn more, see [Plat
 
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=673217).
 
-## Lifecycle Services (LCS) Updates
+## LCS updates
+
 | Feature name | Overview | Release status |
 |----|----|----|
-| Deploy Dynamics 365 Human Resources by using Finance and Operartions LCS projects | If you have purchased the mimimum required licenses for Dynamics 365 Human Resources, you can now deploy new LCS projects and environments by using the Implementation project type and select Finance and Operations for the product in LCS. For more information, see [Provision Human Resources in the finance and operations infrastructure](hr-admin-setup-provision-fo.md).| June 2022 |
-| Prevention of deploying production environments in Human Resources LCS projects | If you have an existing Human Resources LCS project, you can no longer deploy a production environment in the Human Resources LCS project. Instead you must create a new Finance and Operations LCS project and follow the standard process to deploy a production environment. | June 2022 |
+| Deploy Dynamics 365 Human Resources by using Finance and Operations LCS projects | If you've purchased the minimum required licenses for Dynamics 365 Human Resources, you can now deploy new LCS projects and environments by using the **Implementation** project type and selecting **Finance and Operations** as the product in LCS. For more information, see [Provision Human Resources in the finance and operations infrastructure](hr-admin-setup-provision-fo.md). | June 2022 |
+| Prevention of deploying production environments in Human Resources LCS projects | If you have an existing Human Resources LCS project, you can no longer deploy a production environment in it. Instead, you must create a new Finance and Operations LCS project and follow the standard process to deploy a production environment. | June 2022 |
