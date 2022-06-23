@@ -78,8 +78,8 @@ Customers who want to change their existing items to a standard cost inventory m
 
 #### Community blogs
 
-- [How to set up standard costs for direct materials in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/06/07/how-to-set-up-standard-costs-for-direct-materials-in-dynamics-365-for-finance-and-operations)
-- [Standard direct labor costs in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/07/16/standard-direct-labor-cost-in-dynamics-365-for-finance-and-operations)
+- [How to set up standard costs for direct materials in Dynamics 365 Finance](https://financefunction.tech/2018/06/07/how-to-set-up-standard-costs-for-direct-materials-in-dynamics-365-for-finance-and-operations)
+- [Standard direct labor costs in Dynamics 365 Finance](https://financefunction.tech/2018/07/16/standard-direct-labor-cost-in-dynamics-365-for-finance-and-operations)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
