@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes how you can use the solver strategy to improve the performance of product configuration.
 
-The concept of solver strategies was first introduced in Cumulative update 7 (CU7) for Microsoft Dynamics AX 2012 R2. It was extended in Cumulative update 8 (CU8) for Microsoft Dynamics AX 2012 R3 and Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.
+The concept of solver strategies was first introduced in Cumulative update 7 (CU7) for Microsoft Dynamics AX 2012 R2. It was extended in Cumulative update 8 (CU8) for Microsoft Dynamics AX 2012 R3 and Microsoft Dynamics 365 Finance, Enterprise edition 7.3.
 
 The solver strategy concept now consists of the following strategies:
 
