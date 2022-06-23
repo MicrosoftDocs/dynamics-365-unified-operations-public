@@ -68,10 +68,13 @@ Some of the parameters from the Saudi Arabian electronic invoice (SA) electronic
 
 8. On the **Setups** tab, select **Edit** for the selected configuration. 
 9. In the **Processing pipeline** section, turn on the **Export result** option for the **Transform document** action.
-10. Complete, publish, and deploy the **Saudi Arabian electronic invoice (SA)** feature to the service environment. For more information, see the [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) section in the "Get started with Electronic invoicing" topic.
-11. Deploy the **Saudi Arabian electronic invoice (SA)** feature to the connected application. For more information, see the [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) section in the "Get started with Electronic invoicing" topic.
+10. Create certificates for Cryptographic Stamp Identifiers in Azure Key Vault, see [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md) for details.
+     > [!NOTE]
+     > You need to create Compliance Cryptographic Stamp Identifier (**CCSID**) or Production Cryptographic Stamp Identifier (**PCSID**) depending of your stage of [onboarding](#onboarding) process.
+11. Complete, publish, and deploy the **Saudi Arabian electronic invoice (SA)** feature to the service environment. For more information, see the [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) section in the "Get started with Electronic invoicing" topic.
+12. Deploy the **Saudi Arabian electronic invoice (SA)** feature to the connected application. For more information, see the [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) section in the "Get started with Electronic invoicing" topic.
 
-# Electronic invoicing onboarding in Saudi Arabia
+# <a id="onboarding"></a>Electronic invoicing onboarding in Saudi Arabia
 Onboarding is mandatory for all taxpayers who are subjects to electronic invoicing in Saudi Arabia. Taxpayers and their software for e-invoicing must be onboarded by Saudi Arabian tax authorities (**ZATCA**). As the result of onboarding process, taxpayers will obtain Cryptographic Stamp Identifiers (**CSID**) which are required for integration with electronic invoicing portal managed by Saudi Arabian Tax authority and further electronic invoices submission.
 Onboarding is an essential part of Electronic invoicing configuration. For more information, about onboarding process, see [Electronic invoicing onboarding in Saudi Arabia](e-invoicing-sa-onboarding.md).
 
