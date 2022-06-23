@@ -31,8 +31,8 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
->[!NOTE]
-> Starting June 2022, Human Resources environments can only be deployed on the finance and operations app infrastrcuture. For more information, see [Provision Human Resources on the finance and operations infrastrcuture](/hr-admin-setup-provision-fo.md).
+> [!NOTE]
+> Starting June 2022, Human Resources environments can be deployed only on the finance and operations app infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](/hr-admin-setup-provision-fo.md).
 
 This article explains the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
 
@@ -51,9 +51,9 @@ The existing test drive environment will be removed. When it is removed, you can
 
 This article assumes that you've purchased Human Resources through a Cloud Solution Provider (CSP) or an enterprise architecture (EA) agreement. 
 
-Since a single Human Resources environment is contained within a single Power Apps environment, there are two options to consider when removing an evironment: 
-1. Remove the entire Power Apps environment - preferred when the Power Apps environment was created for the purpose of provisioning Human Resources, implementation just begun, or don’t have any established integrations.  
-2. Remove only Human Resources - appropriate when there's an established Power Apps environment populated with data that's leveraged in Power Apps and Power Automate.
+Because a single Human Resources environment is contained in a single Power Apps environment, there are two options to consider when you remove an environment: 
+- **Remove the entire Power Apps environment.** This option is preferred when the Power Apps environment was created for the purpose of provisioning Human Resources, implementation has just begun, or you don't have any established integrations.  
+- **Remove only Human Resources.** This option is appropriate when there is an established Power Apps environment that is populated with data that is used in Microsoft Power Apps and Power Automate.
 
 
 > [!Important]
