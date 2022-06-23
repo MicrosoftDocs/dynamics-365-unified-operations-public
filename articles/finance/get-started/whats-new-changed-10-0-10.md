@@ -67,14 +67,14 @@ This feature will enable the ability to view and edit default accounting setup d
  
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
-Dynamics 365 Finance 10.0.10 includes platform updates. To learn more, see [Platform updates for version 10.0.10 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
+### Platform updates for finance and operations apps
+Dynamics 365 Finance 10.0.10 includes platform updates. To learn more, see [Platform updates for version 10.0.10 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
 
 ### Bug fixes 
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
 
 ### Regulatory updates
-For information about regulatory updates for Dynamics 365 Finance and Operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
+For information about regulatory updates for Dynamics 365 finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
 
 ### Dynamics 365: 2020 release wave 1 plan
 
@@ -84,7 +84,7 @@ Check out the [Dynamics 365: 2020 release wave 1 plan](/dynamics365-release-plan
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) article describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) article describes features that have been removed or deprecated for Dynamics 365 Finance.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
@@ -95,3 +95,4 @@ For breaking changes that only affect compilation time, but are binary compatibl
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
