@@ -58,7 +58,7 @@ Procurement and sourcing covers all steps from identifying a need for product an
 -   [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Manage vendor collaboration users](manage-vendor-collaboration-users.md)
 -   [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md)
--   [Inbound consignment inventory demo script for Microsoft Dynamics 365 for Finance and Operations](https://www.microsoft.com/download/details.aspx?id=101945)(white paper)
+-   [Inbound consignment inventory demo script for Microsoft Dynamics 365 Finance](https://www.microsoft.com/download/details.aspx?id=101945)(white paper)
 -   [Monitor consignment inventory using vendor collaboration](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
 -   [Vendor collaboration mobile workspace](vendor-collaboration-mobile-workspace.md)
 
