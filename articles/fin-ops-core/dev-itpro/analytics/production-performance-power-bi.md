@@ -67,7 +67,7 @@ The following data is used for the report pages in the **Production performance*
 
 The following table shows the key aggregate measurements that are used as the basis of the Power BI content.
 
-| Entity                   | Key aggregate measurements  | Data source for Finance and Operations apps | Field              |
+| Entity                   | Key aggregate measurements  | Data source for finance and operations apps | Field              |
 |--------------------------|-----------------------------|----------------------------------------|--------------------|
 | CostCalculation          | CostAmount                  | ProdCalcTransExpanded                  | CostAmount         |
 | CostCalculation          | CostMarkup                  | ProdCalcTransExpanded                  | CostMarkup         |

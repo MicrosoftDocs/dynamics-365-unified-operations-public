@@ -172,7 +172,7 @@ Data from the application is used to fill the report pages in the **Cost managem
 
 The key aggregate measurements of the following objects are used as the basis of the Power BI content.
 
-| Object                          | Key aggregate measurements | Data source for Finance and Operations | Field               |
+| Object                          | Key aggregate measurements | Data source for finance and operations | Field               |
 |---------------------------------|----------------------------|----------------------------------------|---------------------|
 | CostObjectStatementCacheMonthly | Amount                     | CostObjectStatementCache               | Amount              |
 | CostObjectStatementCacheMonthly | Quantity                   | CostObjectStatementCache               | Qty                 |
@@ -207,3 +207,4 @@ The following key dimensions are used as filters to slice the aggregate measurem
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

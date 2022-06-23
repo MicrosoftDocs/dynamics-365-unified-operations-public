@@ -2,7 +2,7 @@
 # required metadata
 
 title: Improve tracing the results of generated ER reports to compare with baseline values
-description: This article describes improvements to the ER baseline feature in Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (June 2019).
+description: This article describes improvements to the ER baseline feature in Microsoft Dynamics 365 Finance version 10.0.3 (June 2019).
 author: NickSelin
 ms.date: 06/19/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 8.0
 
 [!include[banner](../includes/banner.md)]
 
-This article describes the first set of improvements that have been made to the baseline feature of the Electronic reporting (ER) framework. These improvements are available in Microsoft Dynamics 365 for Finance and Operations version 10.0.3 (June 2019) and later.
+This article describes the first set of improvements that have been made to the baseline feature of the Electronic reporting (ER) framework. These improvements are available in Microsoft Dynamics 365 Finance version 10.0.3 (June 2019) and later.
 
 ## Automate the setting of baseline rules
 
@@ -214,3 +214,4 @@ To import baseline settings from an XML file that is stored on the Microsoft Sha
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

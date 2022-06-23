@@ -104,7 +104,7 @@ Assume that you've started to design a new ER solution to generate a new report 
 
 Assume that you've finished designing the first version of the ER solution. You now want to test it in your instance and analyze execution performance.
 
-### <a id='import-configuration'></a>Import an ER configuration from RCS into Finance and Operations
+### <a id='import-configuration'></a>Import an ER configuration from RCS into finance and operations
 
 1. Sign in to your application instance.
 2. For this tutorial, you will import configurations from your RCS instance (where you design your ER components) into your instance (where you test and finally use them). Therefore, you must make sure that all the required artifacts have been prepared. For instructions, see the [Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)](rcs-download-configurations.md) procedure.
@@ -311,7 +311,7 @@ It can also be useful to reduce the number of calls that are made to the LedgerT
 
 ### Import the modified ER model mapping configuration from RCS into the application
 
-Repeat the steps in the [Import an ER configuration from RCS into Finance and Operations](#import-configuration) section earlier in this article to import version 1.2 of the **Performance trace mapping** configuration.
+Repeat the steps in the [Import an ER configuration from RCS into finance and operations](#import-configuration) section earlier in this article to import version 1.2 of the **Performance trace mapping** configuration.
 
 ## Run the modified ER solution to trace execution
 
@@ -369,7 +369,7 @@ Notice that the web browser offers a zip file for download. This file contains t
 
 ## Use external tools to review an execution trace that includes database queries
 
-Because of improvements that have been made to the ER framework, the performance trace that is generated in PerfView format now offers more details about ER format execution. In Microsoft Dynamics 365 for Finance and Operations version 10.0.4 (July 2019), this trace can also include details of executed SQL queries to the application database.
+Because of improvements that have been made to the ER framework, the performance trace that is generated in PerfView format now offers more details about ER format execution. In Microsoft Dynamics 365 Finance version 10.0.4 (July 2019), this trace can also include details of executed SQL queries to the application database.
 
 ### Configure user parameters
 
@@ -398,3 +398,4 @@ Notice that the web browser offers a zip file for download. This file contains t
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -33,7 +33,7 @@ This article describes the **Compensation** Microsoft Power BI content. It expla
 ## Accessing the Power BI content
 The **Compensation** Power BI content is shown in the **Compensation management** workspace if you use one of the following products:
 
-- Finance and Operations apps
+- finance and operations apps
 - Microsoft Dynamics 365 Human Resources
 
 ## Reports that are included in the Power BI content
