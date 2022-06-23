@@ -83,18 +83,20 @@ Some of the parameters from the Saudi Arabian electronic invoice (SA) electronic
     - In the **Parameters** section, select the **Web service URL** name. In the **Value** field, enter the URL of either development portal or production environment provided by **ZATCA**.
     - In the **Parameters** section, select the **API method name** name. In the **Value** field, select from the list either **Invoice clearance** for tax invoices or **Invoice reporting** for simplified invoices.
     - In the **Parameters** section, select the **Certificate name** name. In the **Value** field, select from the list either **CCSID** or **PCSID** created on step 10 depending of your stage of [onboarding](#onboarding) process.
+ > [!NOTE]
+ > Repeat the steps 13 through 16 for the **Project invoice** feature setup. 
 17. Complete, publish, and deploy the **Saudi Arabian electronic invoice (SA)** feature to the service environment. For more information, see the [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) section in the "Get started with Electronic invoicing" topic.
 18. Deploy the **Saudi Arabian electronic invoice (SA)** feature to the connected application. For more information, see the [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) section in the "Get started with Electronic invoicing" topic.
-
-# <a id="onboarding"></a>Electronic invoicing onboarding in Saudi Arabia
-Onboarding is mandatory for all taxpayers who are subjects to electronic invoicing in Saudi Arabia. Taxpayers and their software for e-invoicing must be onboarded by Saudi Arabian tax authorities (**ZATCA**). As the result of onboarding process, taxpayers will obtain Cryptographic Stamp Identifiers (**CSID**) which are required for integration with electronic invoicing portal managed by Saudi Arabian Tax authority and further electronic invoices submission.
-Onboarding is an essential part of Electronic invoicing configuration. For more information, about onboarding process, see [Electronic invoicing onboarding in Saudi Arabia](e-invoicing-sa-onboarding.md).
 
 ## Microcost Dynamics D365 Finance configuration
 
 Add here...
 
 For more details about Microcost Dynamics D365 Finance configuration, see: [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md)
+
+# <a id="onboarding"></a>Electronic invoicing onboarding in Saudi Arabia
+Onboarding is mandatory for all taxpayers who are subjects to electronic invoicing in Saudi Arabia. Taxpayers and their software for e-invoicing must be onboarded by Saudi Arabian tax authorities (**ZATCA**). As the result of onboarding process, taxpayers will obtain Cryptographic Stamp Identifiers (**CSID**) which are required for integration with electronic invoicing portal managed by Saudi Arabian Tax authority and further electronic invoices submission.
+Onboarding is an essential part of Electronic invoicing configuration. For more information, about onboarding process, see [Electronic invoicing onboarding in Saudi Arabia](e-invoicing-sa-onboarding.md).
 
 ## Additional resources
 
