@@ -77,7 +77,8 @@ Some of the parameters from the Saudi Arabian electronic invoice (SA) electronic
 13. In the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile, select Draft version of the **Saudi Arabian electronic invoice (SA)** Electronic invoicing feature. In the **Setups** menu, select the **Sales invoice** feature setup and select **Edit**.
 14. On the **Processing pipeline** tab, in the **Processing pipeline** section, select the **Get next number sequence value** action. In the **Parameters** section, in the **Value** field, select from the list the number sequence defined on step 12.
 15. In the **Processing pipeline** section, select the **(Preview) Prepare document for submit for Saudi Arabia Zatca** action.
-    - Invoice counter value – select in drop down “Get next number sequence value: Number sequence value”
+    - In the **Parameters** section, select the **Invoice counter value** name. In the **Value** field, select **Get next number sequence value: Number sequence value** from the list.
+    - In the **Parameters** section, select the **ii.	Invoice counter name** name. In the **Value** field, select **Get next number sequence value: Number sequence name** from the list.
 16. 
 17. Complete, publish, and deploy the **Saudi Arabian electronic invoice (SA)** feature to the service environment. For more information, see the [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) section in the "Get started with Electronic invoicing" topic.
 18. Deploy the **Saudi Arabian electronic invoice (SA)** feature to the connected application. For more information, see the [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) section in the "Get started with Electronic invoicing" topic.
