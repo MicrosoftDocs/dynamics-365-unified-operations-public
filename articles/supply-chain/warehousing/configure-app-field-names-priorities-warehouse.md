@@ -139,7 +139,7 @@ Based on the warehouse app field priority set up in the table above, the followi
 -   Row 2: Item description
 -   Row 3: Size
 
-The remaining metadata, for example, Location, will not be displayed on the task page, but will be displayed on a details page. To learn more and see examples of the user interface, refer to the blog post [Announcing Finance and Operations - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
+The remaining metadata, for example, Location, will not be displayed on the task page, but will be displayed on a details page. To learn more and see examples of the user interface, refer to the blog post [Announcing finance and operations - Warehousing](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
 ## Additional resources
 

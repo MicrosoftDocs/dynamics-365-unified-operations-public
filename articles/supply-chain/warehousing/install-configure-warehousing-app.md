@@ -55,7 +55,7 @@ The warehouse app is available for both Windows and Android operating systems. T
 
 Use one of the following links to download the app:
 
-- **Windows (UWP):** [Dynamics 365 for Finance and Operations - Warehousing on Microsoft Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
+- **Windows (UWP):** [Dynamics 365 Finance - Warehousing on Microsoft Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 - **Android:** [Warehousing - Dynamics 365 on Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
 
 For smaller deployments, you might want to install the app from the relevant store on each device and then manually configure the connection to the environments that you're using. However, in version 1.7.0.0 and later of the warehouse app, you can also automate app deployment and/or configuration. You might find this approach convenient if you manage many devices, and you're using a mobile device management and mobile application management solution such as [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). For information about how to use Intune to add applications, see [Add apps to Microsoft Intune](/mem/intune/apps/apps-add).
@@ -281,3 +281,4 @@ In the event of a lost or compromised device, you must remove access to Supply C
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
