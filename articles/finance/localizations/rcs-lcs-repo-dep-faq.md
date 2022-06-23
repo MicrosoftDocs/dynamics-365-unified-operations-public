@@ -33,8 +33,8 @@ ms.dyn365.ops.version: AX 10.0.19
 The use of Microsoft Dynamics Lifecycle Services (LCS) as a storage repository for Electronic reporting (ER) configurations is being deprecated. This deprecation will involve the following changes:
 
 - Microsoft-produced configurations that are used in Microsoft Dynamics 365 applications will no longer be published to the Shared asset library in LCS. Instead, they will be published only through the RCS Global repository. However, configurations for Dynamics AX 2012 will continue to be published to the Shared asset library in LCS until the support lifecycle for AX 2012 ends.
-- The functionality that lets you upload configurations to the Project asset library in LCS from Finance and Operations apps, and from RCS, will be inactivated. However, you will still be able to use the browser in LCS to upload configurations to the Project asset library. Therefore, you will still be able to add configurations to LCS so that they can be included in solution packages.
-- Import of configurations from LCS will continue to be available and supported in Finance and Operations apps, and in RCS, for some time. However, the functionality will eventually be deprecated. (The exact deprecation date will be announced later.)
+- The functionality that lets you upload configurations to the Project asset library in LCS from finance and operations apps, and from RCS, will be inactivated. However, you will still be able to use the browser in LCS to upload configurations to the Project asset library. Therefore, you will still be able to add configurations to LCS so that they can be included in solution packages.
+- Import of configurations from LCS will continue to be available and supported in finance and operations apps, and in RCS, for some time. However, the functionality will eventually be deprecated. (The exact deprecation date will be announced later.)
 
 ## Deprecation notice
 
@@ -77,7 +77,7 @@ Use the Globalization repository for the following purposes:
 
 ### Does this change mean that LCS can't be used as central storage for configurations?
 
-Yes. The functionality that lets you upload configurations to the Project asset library in LCS from Finance and Operations apps will be deprecated. However, you can still use the browser in LCS to upload configurations to the Project asset library as you require.
+Yes. The functionality that lets you upload configurations to the Project asset library in LCS from finance and operations apps will be deprecated. However, you can still use the browser in LCS to upload configurations to the Project asset library as you require.
 
 ### I thought that RCS was a replacement repository for importing global template files. I didn't think that it's used to store configurations. Which is correct?
 
@@ -85,7 +85,7 @@ RCS is a design service for creating and editing ER configurations. RCS has its 
 
 ### Without LCS, what is the suggested way to store configurations so that "test" and "production" configurations can easily be managed and transferred?
 
-RCS uses the concept of a *connected application*. A connected application forms a connection between RCS and any instance of Finance and Operations apps. Because RCS can be used to edit configurations, the connected application can be used to push the configurations directly from the designer to Finance and Operations apps environments. Therefore, you can quickly change and test your configurations instead of having to go through LCS project-level storage.
+RCS uses the concept of a *connected application*. A connected application forms a connection between RCS and any instance of finance and operations apps. Because RCS can be used to edit configurations, the connected application can be used to push the configurations directly from the designer to finance and operations apps environments. Therefore, you can quickly change and test your configurations instead of having to go through LCS project-level storage.
 
 ### Are there any examples that show the setup and management?
 
@@ -108,4 +108,4 @@ For more information about product support, see [Dynamics Globalization services
 
 ### What's the cost of using RCS?
 
-RCS and the Globalization repository are provided free of charge as part of existing Finance and Operations app licenses. No separate costs are associated with using the RCS design service or storing configurations in the Global repository. There is currently no limit on the number of configurations or connected applications.
+RCS and the Globalization repository are provided free of charge as part of existing finance and operations app licenses. No separate costs are associated with using the RCS design service or storing configurations in the Global repository. There is currently no limit on the number of configurations or connected applications.

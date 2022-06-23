@@ -71,7 +71,7 @@ Initially, experts interpreted the new TCS provision in the following way:
    - Tax must be collected when the amount of the sale exceeds INR 50,00,000, regardless of the amount of the sale consideration that was received during the previous year.
    - Tax must be collected when the amount that was received as a sale consideration exceeds INR 50,00,000, regardless of the amount of the sale that was made during the previous year.
    
-Based on this initial interpretation Finance and Operations apps provided functionality for the first option. However, some scenarios didn't comply with the intended law.
+Based on this initial interpretation finance and operations apps provided functionality for the first option. However, some scenarios didn't comply with the intended law.
 
 To clarify the applicability of the new TCS provisions, the CBDT issued circular no. 17, dated September 30, 2020. According to this circular, the third option is a more convenient, realistic, and reasonable way to get the expected result.
 
@@ -299,3 +299,4 @@ Every organization will claim a credit for TCS deduction after it reconciles the
 2. Select the required column fields to generate the report.
 
    ![Tax transaction inquiry page.](media/TCS-on-Sale-of-Goods-008.PNG)
+

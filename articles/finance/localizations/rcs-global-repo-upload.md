@@ -42,7 +42,7 @@ Before you can complete those procedures, you must complete the following prereq
 
 You must make sure that an RCS environment is provisioned for your organization. If you do not have an RCS instance provisioned for your organization, you can do so using the following steps:
 
-1. In a Finance and Operations app, go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+1. In a finance and operations app, go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 2. In **Related links / External links**, select **Regulatory services – Configuration**, and then follow the instructions to **Sign up** to provision one.
 
 If an RCS environment has been already provisioned for your organization, use the page URL to access it and select the **sign-in** option.
@@ -110,3 +110,4 @@ The configuration version is deleted, and confirmation message is shown.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

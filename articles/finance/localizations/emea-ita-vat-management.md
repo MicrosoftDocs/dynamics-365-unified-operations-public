@@ -36,7 +36,7 @@ On October 23, 2018, Law Decree 119 (L.D.119/2018) in Italy introduced a change 
 - Invoices that are booked before the fifteenth day of the next month but have a reference to the previous VAT settlement should not interrupt the sequential posting. If invoices have a VAT point date in the previous month but an invoice date in the current month, they should be booked in chronological order with the invoices in the current month that have a reference that indicates that these invoices are related to the previous VAT settlement.
 - Companies that issue the sales invoice on the same day, without applying the change that is introduced by L.D.119/2018, remain compliant.
 
-The Date of VAT register feature supports the changes that were introduced by L.D.119/2018. It's delivered in Microsoft Dynamics 365 for Finance and Operations version 10.0.6 (November 2019) and later.
+The Date of VAT register feature supports the changes that were introduced by L.D.119/2018. It's delivered in Microsoft Dynamics 365 Finance version 10.0.6 (November 2019) and later.
 
 Before you can use the Date of VAT register feature, you must turn it on in the **Feature management** workspace. This feature introduces a new date-type field, **Date of VAT register**, for VAT transactions. The additional date will be used as a VAT point determination criterion for the inclusion of VAT transactions in the scope of the sales tax settlement period and, effectively, in reporting for VAT returns.
 
@@ -109,3 +109,4 @@ When the **Date of VAT register** option on the **General ledger parameters** pa
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

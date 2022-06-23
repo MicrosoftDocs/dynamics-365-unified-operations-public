@@ -40,9 +40,9 @@ This article provides information about how to set up and configure the Electron
 
 The following requirements must be met before you configure the Dataverse solution for Electronic invoicing:
 
-- [Platform updates for version 10.0.23 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md) must be installed.
-- Microsoft Power Platform integration with Finance and Operations must be configured. For more information, see [Enable the Microsoft Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
-- Electronic invoicing for Finance and Operations apps must be configured. For more information, see [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md).
+- [Platform updates for version 10.0.23 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md) must be installed.
+- Microsoft Power Platform integration with finance and operations must be configured. For more information, see [Enable the Microsoft Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
+- Electronic invoicing for finance and operations apps must be configured. For more information, see [Get started with Electronic invoicing service administration](e-invoicing-get-started-service-administration.md).
 - The business events catalog must be synced, and the periodic processing batch job must be running. For more information, see [Business events overview](../../fin-ops-core/dev-itpro/business-events/home-page.md).
 
 ## Getting the solution
@@ -51,11 +51,11 @@ The [Dataverse solution for Electronic invoicing (Microsoft Dynamics 365 Electro
 
 ## Authentication and authorization
 
-After the solution is imported into the Dataverse environment, the Finance and Operations apps environment and the Dataverse environment must be set up to connect to each other. Dataverse will call Finance and Operations apps by using Service-to-Service (S2S) authentication, based on an Azure Active Directory (Azure AD) application. The security role for Finance and Operations apps must be manually added by the system administrator. Different security roles can be assigned to users in your Finance and Operations apps. The roles that are assigned to a user (for example, the Accounts payable clerk) depend on the functions that the user requires to perform their duties. These assigned roles must have the privileges to run the corresponding virtual entities and business events.
+After the solution is imported into the Dataverse environment, the finance and operations apps environment and the Dataverse environment must be set up to connect to each other. Dataverse will call finance and operations apps by using Service-to-Service (S2S) authentication, based on an Azure Active Directory (Azure AD) application. The security role for finance and operations apps must be manually added by the system administrator. Different security roles can be assigned to users in your finance and operations apps. The roles that are assigned to a user (for example, the Accounts payable clerk) depend on the functions that the user requires to perform their duties. These assigned roles must have the privileges to run the corresponding virtual entities and business events.
 
 Follow these steps to assign security roles.
 
-1. In your Finance and Operations apps, go to **System administration** \> **Users**.
+1. In your finance and operations apps, go to **System administration** \> **Users**.
 2. In the list, find and select the user that you want to assign security roles to, and then select **Assign roles**.
 3. Select the roles to assign.
 4. Save your changes.
@@ -64,7 +64,7 @@ Follow these steps to set up the integration between environments.
 
 1. In Regulatory Configuration Services (RCS), go to **Globalization features** \> **Environments** \> **Service environments**, and select the target service environment.
 2. In the **Dataverse endpoint URI** field, enter `https://<Dataverse organization URL>/api/data/v9.1/`.
-3. In your Finance and Operations apps, go to **System Administration** \> **Setup** \> **Azure Active Directory applications** to register Dataverse.
+3. In your finance and operations apps, go to **System Administration** \> **Setup** \> **Azure Active Directory applications** to register Dataverse.
 4. Add a row.
 5. In the **Client ID** field, enter **ecd93392-c922-4f48-9ddf-10741e4a9b65**.
 6. In the **Name** field, enter **Microsoft Dataverse Integration**.
@@ -78,7 +78,7 @@ Follow these steps to set up the integration between environments.
     - Electronic Invoice Submission
     - Electronic Invoice Submission Document
 
-13. Create another application user in Dataverse, and associate it with the app ID **ecd93392-c922-4f48-9ddf-10741e4a9b65**. This user should be assigned the **Finance and Operations Basic User** security role and a role that has privileges to read and write the following Dataverse entities:
+13. Create another application user in Dataverse, and associate it with the app ID **ecd93392-c922-4f48-9ddf-10741e4a9b65**. This user should be assigned the **finance and operations Basic User** security role and a role that has privileges to read and write the following Dataverse entities:
 
     - Electronic Invoice Action
     - Electronic Invoice Execution
@@ -87,7 +87,7 @@ Follow these steps to set up the integration between environments.
 
 ## Enabling virtual entities
 
-The Dataverse solution for Electronic invoicing for Indonesia depends on a set of virtual entities that must be enabled before you run the Electronic invoicing scenario. Because so many entities that are enabled for Open Data Protocol (OData) are available in Finance and Operations apps, the entities aren't available as virtual entities in Dataverse by default.
+The Dataverse solution for Electronic invoicing for Indonesia depends on a set of virtual entities that must be enabled before you run the Electronic invoicing scenario. Because so many entities that are enabled for Open Data Protocol (OData) are available in finance and operations apps, the entities aren't available as virtual entities in Dataverse by default.
 
 For more general information about how to enable virtual entities in Dataverse, see [Enable Microsoft Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
 
@@ -110,3 +110,4 @@ For Indonesia, the following virtual entities must be enabled in Dataverse:
 - BusinessDocumentParametersEntity
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

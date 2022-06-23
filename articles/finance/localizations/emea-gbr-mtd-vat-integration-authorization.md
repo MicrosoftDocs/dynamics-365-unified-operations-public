@@ -38,20 +38,20 @@ Two parameters uniquely identify each web application on the HMRC side:
 
 These parameters are used when requests are sent to HMRC. They must be filled in before you start the authorization process for a web application.
 
-For the production web application (**Dynamics 365 for Finance and Operations**), Microsoft delivers these parameters through the [package of data entities](emea-gbr-mtd-vat-integration-setup.md#entities), and they are stored in the system in an encrypted format. These parameters are imported when you import the predefined setup of Electronic messages functionality for Making Tax Digital for value-added tax (MTD VAT). No additional manual actions are required. After the parameters are imported, the production web application is ready for authorization.
+For the production web application (**Dynamics 365 Finance**), Microsoft delivers these parameters through the [package of data entities](emea-gbr-mtd-vat-integration-setup.md#entities), and they are stored in the system in an encrypted format. These parameters are imported when you import the predefined setup of Electronic messages functionality for Making Tax Digital for value-added tax (MTD VAT). No additional manual actions are required. After the parameters are imported, the production web application is ready for authorization.
 
 > [!IMPORTANT]
 > When you use the MTD VAT feature that is provided by Microsoft, you don't have to request production credentials from HMRC. All the required web application credentials are imported into your system during setup of the MTD VAT feature.
 
-- Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, and verify that the **Client ID** and **Client secret** fields are set for the **Dynamics 365 for Finance and Operations** web application. Don't change these values.
+- Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, and verify that the **Client ID** and **Client secret** fields are set for the **Dynamics 365 Finance** web application. Don't change these values.
 
     ![Web application credentials.](media/uk-mtd-prod-credentials.png)
 
-You don't have to create a web application of the production type on the HMRC side, because the **Dynamics 365 for Finance and Operations** web application is ready to interoperate with the production MTD service for VAT. Complete the procedures in the next section to obtain an authorization code and an access token.
+You don't have to create a web application of the production type on the HMRC side, because the **Dynamics 365 Finance** web application is ready to interoperate with the production MTD service for VAT. Complete the procedures in the next section to obtain an authorization code and an access token.
 
 ## Obtain an authorization code for the production environment
 
-When your company is [registered for VAT](https://www.gov.uk/vat-registration) and ready to interoperate with MTD VAT in a production environment, you must [create an HMRC online account](https://www.gov.uk/guidance/help-and-support-for-making-tax-digital#sign-up-for-making-tax-digital-for-vat) if it doesn't already exist. This account is also known as a Government Gateway account. Next, link the [online account](https://www.gov.uk/send-vat-return) to the Finance application by selecting **Microsoft Dynamics 365 for Finance and Operations** as the [MTD-compatible software](https://www.tax.service.gov.uk/making-tax-digital-software?_ga=2.124730698.1312416614.1630487369-812816713.1605853350). A user ID and password will be obtained and linked to your VAT registration number:
+When your company is [registered for VAT](https://www.gov.uk/vat-registration) and ready to interoperate with MTD VAT in a production environment, you must [create an HMRC online account](https://www.gov.uk/guidance/help-and-support-for-making-tax-digital#sign-up-for-making-tax-digital-for-vat) if it doesn't already exist. This account is also known as a Government Gateway account. Next, link the [online account](https://www.gov.uk/send-vat-return) to the Finance application by selecting **Microsoft Dynamics 365 Finance** as the [MTD-compatible software](https://www.tax.service.gov.uk/making-tax-digital-software?_ga=2.124730698.1312416614.1630487369-812816713.1605853350). A user ID and password will be obtained and linked to your VAT registration number:
 
 - **User ID** – The name that is used to access HMRC while an authorization code is being requested.
 - **Password** – The password that is used to access HMRC while an authorization code is being requested.
@@ -62,7 +62,7 @@ After you obtain your user credentials, a web application of the production type
 
 Follow these steps to get an authorization code from HMRC.
 
-1. In Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, and select the **Dynamics 365 for Finance and Operations** web application.
+1. In Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, and select the **Dynamics 365 Finance** web application.
 2. On the Action Pane, select **Get authorization code** and select **Yes** to confirm that you want to initialize the authorization process.
 3. In the **Electronic reporting parameters** dialog box, in the **Scope** field, enter **read:vat write:vat**. 
 4. Select **OK**.
@@ -88,10 +88,11 @@ Follow these steps to get an authorization code from HMRC.
 
 Follow these steps to initialize retrieval of an access token within 10 minutes after HMRC grants an authorization code.
 
-1. In Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, and select the **Dynamics 365 for Finance and Operations** web application.
+1. In Finance, go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**, and select the **Dynamics 365 Finance** web application.
 2. On the **Web applications** page, on the Action Pane, select **Obtain access token** to request an access token from HMRC.
 3. Paste the authorization code that you copied from the HMRC portal in the previous procedure. Then select **OK**. The access token request is sent to HMRC, and the access token from the response that is received is automatically saved in Finance. You can't view the access token from the user interface (UI). However, the **Access token will expire in** field shows the validity period of the access token.
 
 Every access token is valid for four hours after HMRC creates it. During interoperation with HMRC, the system automatically handles the process of refreshing the access token. Therefore, you don't have to manually refresh it. However, if you want to manually refresh the access token, on the **Web applications** page, on the Action Pane, select **Refresh access token**. A refresh access token request is sent to HMRC, and a new access token from the response that is received is automatically saved in Finance.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

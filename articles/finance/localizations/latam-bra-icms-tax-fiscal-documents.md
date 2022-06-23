@@ -91,7 +91,7 @@ Recoverable ICMS long term (deferred account)
 
 **Long term asset** (deferred account) balance: R$ 9.000,00
 
-**ICMS Tax adjustment of month** **Finance and Operations: Issue an Incoming Tax fiscal document**
+**ICMS Tax adjustment of month** **finance and operations: Issue an Incoming Tax fiscal document**
 
 Recoverable ICMS tax account
 

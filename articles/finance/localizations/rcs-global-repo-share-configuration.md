@@ -41,7 +41,7 @@ The following procedures explain how an RCS user can share a version of an ER co
 
 You must also make sure that an RCS environment is provisioned for your company.
 
-1. In a Finance and Operations app, go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
+1. In a finance and operations app, go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 2. If no RCS environment is provisioned for your company, select **Regulatory services – Configuration external**, and then follow the instructions to provision one.
 
 If an RCS environment has been already provisioned for your company, use the page URL to access it by selecting the sign-in option.
@@ -72,7 +72,7 @@ After a configuration has been created under your configuration provider, you ca
 
     ![Share configuration version with external organization dialog box.](media/1_RCS_Repo_for_Share_with_form.JPG)
 
-The configuration is shared with the external organization and is available to that organization in the Global repository. From there, it can be imported into the organization's instance of RCS or into its instances of Finance and Operations apps.
+The configuration is shared with the external organization and is available to that organization in the Global repository. From there, it can be imported into the organization's instance of RCS or into its instances of finance and operations apps.
 
 6. To unshare a configuration that has been previously shared with an external organization, select the configuration and click **Unshare**, and then select **OK**
 

@@ -57,7 +57,7 @@ To generate and submit a Global CFDI electronic invoice, follow these steps.
 
 ## Updates for the Global CFDI functionality
 
-In Microsoft Dynamics 365 for Finance and Operations version 10.0.2 (May 2019), the Global CFDI functionality was extended to support new requirements that were introduced in the second revision of the *Global CFDI filling guide*. Starting in Microsoft Dynamics 365 for Finance and Operations version 10.0.2 (May 2019), you can perform the following tasks:
+In Microsoft Dynamics 365 Finance version 10.0.2 (May 2019), the Global CFDI functionality was extended to support new requirements that were introduced in the second revision of the *Global CFDI filling guide*. Starting in Microsoft Dynamics 365 Finance version 10.0.2 (May 2019), you can perform the following tasks:
 
 - At the customer's request, generate a separate CFDI Normal electronic invoice that is based on a sale or return operation that is registered at the POS.
 
@@ -65,7 +65,7 @@ In Microsoft Dynamics 365 for Finance and Operations version 10.0.2 (May 2019), 
 
 - In a CFDI electronic invoice that is generated based on returns, specify universally unique identifiers (UUIDs) for CFDI electronic invoices that are related to the original sales operations.
 
-Starting in Dynamics 365 for Finance and Operations version 10.0.2 (May 2019), the Global CFDI functionality also supports the following additional scenarios:
+Starting in Dynamics 365 Finance version 10.0.2 (May 2019), the Global CFDI functionality also supports the following additional scenarios:
 
 - [Item returns across multiple customer orders and invoices](/dynamics365/unified-operations/retail/multireturn)
 - Customer order returns that involve an exchange, when a customer invoice includes both lines that have positive amounts and lines that have negative amounts

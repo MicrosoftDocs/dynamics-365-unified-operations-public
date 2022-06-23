@@ -52,7 +52,7 @@ Although channel partners might provide solutions that meet specific regulatory 
 
 Channel partners or customers are solely responsible for any configurations, customizations, localizations, or translations that they create or implement on behalf of customers, and also for any updates to such solutions. They are also solely responsible for any support or other service that is provided to customers for these solutions. Contact your channel partner for information about the solutions that the channel partner creates for licensed versions of Finance.
 
-This article describes the strategy and scope of specific requirements that Microsoft has implemented as part of the Finance and Operations software that it made generally available in Mexico.
+This article describes the strategy and scope of specific requirements that Microsoft has implemented as part of the finance and operations software that it made generally available in Mexico.
 
 ## Terminology and abbreviations
 **Customization** refers to:

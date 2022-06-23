@@ -205,10 +205,10 @@ The **UK MTD VAT setup** package provides a setup for two sets of processing tha
 
 The **UK MTD VAT setup** package also provides a setup for two web applications that are used to interoperate with HMRC web services:
 
-- **Dynamics 365 for Finance and Operations** – For interoperation with the **production** HMRC web service.
+- **Dynamics 365 Finance** – For interoperation with the **production** HMRC web service.
 - **Sandbox HMRC** – For interoperation with the **sandbox** HMRC web service.
 
-When you import the setup of Electronic messages functionality for MTD VAT from the **UK MTD VAT setup** package that Microsoft provides, credentials for the **Dynamics 365 for Finance and Operations** web application are imported into your system and stored in encrypted format. These credentials are provided by Microsoft and will be used for production interoperation with HMRC.
+When you import the setup of Electronic messages functionality for MTD VAT from the **UK MTD VAT setup** package that Microsoft provides, credentials for the **Dynamics 365 Finance** web application are imported into your system and stored in encrypted format. These credentials are provided by Microsoft and will be used for production interoperation with HMRC.
 
 For more information about the predefined setup that is included in the data entities in the package for MTD VAT, see [Checklist for Electronic messages setup for MTD VAT](emea-gbr-mtd-vat-integration-em-setup-checklist.md).
 
@@ -356,3 +356,4 @@ If you cancel the transmission at this point by selecting **Do not submit**, the
 When a request to HMRC in a batch job is initiated, the fraud prevention headers are transmitted to HMRC, and information about the headers that were sent is attached to the batch job. To view this information, go to **System administration** \> **Inquiries** \> **Batch jobs**, and select your batch job. To review the log details, select **Batch job** \> **Log** on the Action Pane.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
