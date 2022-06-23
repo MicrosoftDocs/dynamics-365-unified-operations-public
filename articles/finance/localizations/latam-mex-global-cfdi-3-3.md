@@ -57,7 +57,7 @@ you must create a new number sequence with the following settings:
     > [!NOTE]
     > Turn on the **Aggregation** flag and select the period for aggregation: Daily, Weekly, Biweekly, Monthly, or Bimonthly. This option is mandatory for the layout vesion 4.0.
 
-    As a result of the **Post CFDI – Electronic invoices** periodic operation, two Global CFDI electronic invoices are created. One electronic invoice collects all receipts that are related to sales operations, and the other collects all receipts that are related to returns. For the electronic invoice that is related to returns, the **Return** attribute is set to **Yes**. You can view these electronic invoices on the **CFDI (electronic invoices) aggregated** page (**Retail and Commerce \> Inquiries and reports \> CFDI (electronic invoices)**).
+    As a result of the **Post CFDI – Electronic invoices** periodic operation, two Global CFDI electronic invoices are created. One electronic invoice collects all receipts that are related to sales operations, and the other collects all receipts that are related to returns. For the electronic invoice that is related to returns, the **Return** attribute is set to **Yes**. You can view these electronic invoices on the **CFDI (electronic invoices)** pages (**Retail and Commerce \> Inquiries and reports \> CFDI (electronic invoices)** and **CFDI (electronic invoices) aggregated**).
 
     All further workflows, such as communication with a service provider, generation of the .pdf and .xml files, and manual functions are the same as the workflows for CFDI Normal electronic invoices.
 
