@@ -63,9 +63,6 @@ you must create a new number sequence with the following settings:
 
 1. Run the **Export/import electronic invoice process** periodic operation to submit electronic invoices to the PAC.
 
-> [!NOTE]
-> Mixed transactions are not supported for CFDI. Therefore, prohibit mixing sales and returns in one receipt. When this restriction it is enabled, the mixed lines are blocked in cash&carry sales, also the system does not allow Exchange on return in the customer order.
-
 ## Updates for the Global CFDI functionality
 
 In Microsoft Dynamics 365 for Finance and Operations version 10.0.2 (May 2019), the Global CFDI functionality was extended to support new requirements that were introduced in the second revision of the *Global CFDI filling guide*. Starting in Microsoft Dynamics 365 for Finance and Operations version 10.0.2 (May 2019), you can perform the following tasks:
@@ -81,8 +78,9 @@ Starting in Dynamics 365 for Finance and Operations version 10.0.2 (May 2019), t
 - [Item returns across multiple customer orders and invoices](/dynamics365/unified-operations/retail/multireturn)
 - Customer order returns that involve an exchange, when a customer invoice includes both lines that have positive amounts and lines that have negative amounts
 
-Starting in Dynamics 365 for Finance and Operations version 10.0.27 (June 2022), the Global CFDI functionality also supports the following legal requirement:
-- The electonic invoice contains sales data aggregated in accordanca with the chosen period (that is, daily, weekly, beweekly, monthly, or bemonthly) and the element **InformacionGlobal** indicating the period parameters. 
+Starting in Dynamics 365 for Finance and Operations version 10.0.27 (June 2022), the Global CFDI functionality has been extended to meet the regulatory requirement for version 4.0 of the Global CFDI layout. The following main changes to the format were made:
+- Aggregation of all receipts that were issued to the final consumers per the chosen period.
+- New retail-specific element "InformacionGlobal" that indicates the period parameters;
 
 
 ### Showing related CFDI documents in a CFDI electronic invoice
@@ -115,6 +113,7 @@ Note the following limitations:
 
 - All invoices from an original sales order are included in a return electronic invoice as the related CFDI documents.
 - The scenario of a customer order return that involves an exchange is supported only for Global CFDI electronic invoices.
+- Mixed transactions are not supported for CFDI. Therefore, prohibit mixing sales and returns in one receipt. When this restriction it is enabled, the mixed lines are blocked in cash&carry sales, also the system does not allow Exchange on return in the customer order.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
