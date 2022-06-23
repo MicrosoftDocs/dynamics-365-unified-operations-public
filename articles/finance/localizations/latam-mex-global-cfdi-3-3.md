@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Global CFDI electronic invoices for Mexico
+title: Global CFDI electronic invoices version 3.3 for Mexico
 description: This article gives an overview of the functionality for Global CFDI electronic invoices for Mexico.
 author: EvgenyPopovMBS
 ms.date: 06/28/2019
