@@ -98,9 +98,10 @@ Some of the parameters must be additionally configured directly in Microcost Dyn
    - select **Pending** in the **Submission status** field.
    - select **Sales invoice QR code entity** in the **Data entity name** field.
    - select **Zatca response data import** in the **Model mapping** field.
-   ![Response type setup](media/emea-sa-einvoice-response.jpg)
+ 
+ ![Response type setup](media/emea-sa-einvoice-response.jpg)
 
-For more details about Microcost Dynamics D365 Finance configuration, see: [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md)
+For more details about business data configuration in Microcost Dynamics D365 Finance, see: [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md)
 
 # <a id="onboarding"></a>Electronic invoicing onboarding in Saudi Arabia
 Onboarding is mandatory for all taxpayers who are subjects to electronic invoicing in Saudi Arabia. Taxpayers and their software for e-invoicing must be onboarded by Saudi Arabian tax authorities (**ZATCA**). As the result of onboarding process, taxpayers will obtain Cryptographic Stamp Identifiers (**CSID**) which are required for integration with electronic invoicing portal managed by Saudi Arabian Tax authority and further electronic invoices submission.
