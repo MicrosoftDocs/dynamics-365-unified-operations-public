@@ -56,9 +56,14 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
     - **Customer invoice context model**
     - **Invoice model**
     - **Fiscal documents** (for Brazilian scenarios, if required)
+    - **Retail channel data** (for Saudi Arabian Retail specific scenarios, if required)
     - **Response message model**
 
-5. Verify that **Invoice model mapping**, **Fiscal documents mapping** (for Brazilian scenarios, if required) and **Advance invoice model mapping** (for Polish scenarios, if required) were automatically imported. If they weren't, import them, and then close the page.
+5. Verify that following mapping configurations were automatically imported. If they weren't, import them, and then close the page.
+    - **Invoice model mapping**
+    - **Fiscal documents mapping** (for Brazilian scenarios, if required)
+    - **Advance invoice model mapping** (for Polish scenarios, if required) 
+    - **Fiscal document mapping** (for Saudi Arabian Retail specific scenarios, if required)
 
 ## Set up Electronic document parameters
 
@@ -71,6 +76,7 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
     | CustInvoiceJour | <p>**Mapping name:** Customer invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Customer Invoice</p><p>**Configuration:** Invoice model mapping</p> | <ul><li>Austrian electronic invoices (AT)</li><li>Belgian electronic invoice (BE)</li><li>Danish electronic invoice (DK)</li><li>Egyptian electronic invoice (EG)</li><li>Estonian electronic invoice (EE)</li><li>Finish electronic invoice (FI)</li><li>French electronic invoice (FR)</li><li>German electronic invoice (DE)</li><li>FatturaPA (IT)</li><li>Dutch electronic invoice (NL)</li><li>Norwegian electronic invoice (NO)</li><li>Polish electronic invoice (PL)</li><li>Spanish electronic invoice (ES)</li><li>PEPPOL electronic invoice</li><li>Saudi Arabian electronic invoice (SA)</li></ul> |
     | ProjInvoiceJour | <p>**Mapping name:** Customer invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Project Invoice</p><p>**Configuration:** Invoice model mapping</p> | <ul><li>Austrian electronic invoices (AT)</li><li>Belgian electronic invoice (BE)</li><li>Danish electronic invoice (DK)</li><li>Egyptian electronic invoice (EG)</li><li>Estonian electronic invoice (EE)</li><li>Finish electronic invoice (FI)</li><li>French electronic invoice (FR)</li><li>German electronic invoice (DE)</li><li>FatturaPA (IT)</li><li>Dutch electronic invoice (NL)</li><li>Norwegian electronic invoice (NO)</li><li>Polish electronic invoice (PL)</li><li>Spanish electronic invoice (ES)</li><li>PEPPOL electronic invoice</li><li>Saudi Arabian electronic invoice (SA)</li></ul> |
     | CzCustAdvanceInvoiceTable | <p>**Mapping name:** Advance invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Advance invoice model mapping</p><p>**Configuration:** Advance invoice model mapping</p> | Polish electronic invoice (PL) |
+    | RetailTransactionFiscalTransDocumentView | <p>**Mapping name:** Retail fiscal document context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Retail fiscal document</p><p>**Configuration:** Retail fiscal document mapping</p> | Saudi Arabian electronic invoice (SA) |
     | FiscalDocument_BR | <p>**Mapping name:** Fiscal document context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Fiscal documents mapping</p><p>**Configuration:** Fiscal documents mapping</p> | Brazilian NF-e (BR) |
     | Correction letter | <p>**Mapping name:** FD correction letter context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Correction letter mapping</p><p>**Configuration:** Fiscal documents mapping</p> | Brazilian NF-e (BR) |
     | Service Fiscal document | <p>**Mapping name:** Fiscal document context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Fiscal documents mapping</p><p>**Configuration:** Fiscal documents mapping</p> | Brazilian NFS-e ABRASF Curitiba (BR) |
