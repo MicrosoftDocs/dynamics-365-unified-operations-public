@@ -31,8 +31,8 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
->[!NOTE]
-> Starting June 2022, Human Resources environments can only be deployed on the finance and operations app infrastrcuture. For more information, see [Provision Human Resources on the finance and operations infrastrcuture](/hr-admin-setup-provision-fo.md).
+> [!NOTE]
+> Starting June 2022, Human Resources environments can be deployed only on the finance and operations app infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](/hr-admin-setup-provision-fo.md).
 
 Microsoft Dynamics 365 Human Resources is a true software as a service (SaaS) that provides continuous, touchless service updates. These updates contain both application and platform changes that often provide critical improvements to the service, including regulatory updates.
 
@@ -44,9 +44,9 @@ Updates are released on a regular cadence to all environments. Human Resources i
 
 Human Resources updates are applied to all environments automatically. Human Resources provides two types of releases:
 
-- **Service updates**: Updates occur every two weeks that include bug fixes and new features. Service updates also include applicable platform updates when they release. For more information about platform releases, see [What's new or changed in Platform updates](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Updates have a staged global rollout across regions. For more information about updates, see [What's new or changed in Dynamics 365 Human Resources](hr-admin-whats-new.md).
+- **Service updates**: Updates occur every two weeks that include bug fixes and new features. Service updates also include applicable platform updates when they are released. For more information about platform releases, see [What's new or changed in Platform updates](../fin-ops-core/dev-itpro/get-started/whats-new-home-page.md). Updates have a staged global rollout across regions. For more information about updates, see [What's new or changed in Dynamics 365 Human Resources](hr-admin-whats-new.md).
 
-- **Dataverse solution updates**: These updates occur approximately every six weeks, as needed. They include new entities and changes to existing entities in Dataverse. These updates release to the same regions as the biweekly updates, and they take about six weeks to replicate through all data centers. Solution updates may or may not align with biweekly service updates.
+- **Dataverse solution updates**: These updates occur approximately every six weeks, as needed. They include new entities and changes to existing entities in Dataverse. These updates are released to the same regions as the biweekly updates, and they take about six weeks to replicate through all data centers. Solution updates may or may not align with biweekly service updates.
 
 > [!NOTE]
 > Solution updates are available on all data centers once they're released. If you don't want to wait for the updates to replicate automatically, you can manually apply these updates on any environment in any data center.
