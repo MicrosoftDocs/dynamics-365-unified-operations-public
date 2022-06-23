@@ -42,9 +42,9 @@ This release includes an updated platform and general improvements, but doesn't 
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.14 includes platform updates. To learn more, see [Platform updates for version 10.0.14 of Finance and Operations apps (October 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.14 includes platform updates. To learn more, see [Platform updates for version 10.0.14 of finance and operations apps (October 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-14.md).
 
 ### Bug fixes
 

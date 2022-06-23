@@ -60,9 +60,9 @@ We have recently added or significantly updated the following help articles. The
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.26 includes platform updates. To learn more, see [Platform updates for version 10.0.26 of Finance and Operations apps (May 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.26 includes platform updates. To learn more, see [Platform updates for version 10.0.26 of finance and operations apps (May 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
 
 ### Bug fixes
 
@@ -86,3 +86,4 @@ Before any feature is removed from the product, the deprecation notice will be a
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

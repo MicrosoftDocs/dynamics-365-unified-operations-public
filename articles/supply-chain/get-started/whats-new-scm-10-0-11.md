@@ -54,9 +54,9 @@ The following features are included in this release. The feature titles link to 
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.11 includes platform updates. To learn more, see [Platform updates for version 10.0.11 of Finance and Operations apps (July 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-35.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.11 includes platform updates. To learn more, see [Platform updates for version 10.0.11 of finance and operations apps (July 2020)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-35.md).
 
 ### Bug fixes
 
