@@ -115,7 +115,7 @@ If it is required to post stock transfers to General ledger and track inventory 
 For more information, see [Configure and manage financial dimension links to sites](https://docs.microsoft.com/dynamicsax-2012/appuser-itpro/configure-and-manage-financial-dimension-links-to-sites).
 
 > [!NOTE]
-> Financial dimensions are derived from products master-data and the above mensioned dimension link. There is no possibility to change financial dimensions in Transfer orders.
+> Financial dimensions are derived from products master-data and the above mentioned dimension link. There is no possibility to change financial dimensions in Transfer orders.
 
 ## Create and post a stock transfer order
 
@@ -200,7 +200,7 @@ You can also cancel a previously posted stock transfer order shipment if no rece
 
 The **balance on the inventory in transit** can be calculated as **_InventoryIssue-Site2 - InventoryReceipt-Site2_**. It is nullified upon the receipt.
 
-### Example 2:
+### Example 2: Standard transfer order posting without transit site
 
 - From warehouse -> Site 1
 - Transit warehouse -> Site 1
@@ -260,5 +260,42 @@ The **balance on the inventory in transit** can be calculated as **_InventoryIss
 >
 > - **Inventory issue** and **Inventory receipt** are most likely one and the same balance account, such as "Finished goods".
 > - The above settings for Dimension links and sites (that is, a separate site for the transit warehouse) are recommended if it is needed to track the in-transit inventory in General ledger.
-    
+  
+### Example 4: Stock transfer order with standard cost
+
+- Create an item with the Standard cost inventory model
+- Create and active different item prices for the item with Costing type = Standard cost and Price type = Cost:
+	- price = 115 for Site 1 
+	- price = 112 for Site 2 
+	- price = 111 for Site 3
+
+- From warehouse -> Site 1
+- Transit warehouse -> Site 2
+- To warehouse -> Site 3
+
+#### Transfer order shipment posting:
+
+Inventory **cost price** is defined by the stadard cost on the "From warehouse" site and is equal to  **115 Rs** in our case.
+
+|      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
+|---------------------------------|------------------------------------|--------------------|---------------------|
+| Inventory issue                 | Site 1                             |                    |         115         |  
+| Inventory inter-unit receivable | Site 1                             |        115         |                     |
+| Inventory inter-unit payable    | Site 2                             |                    |         115         | 
+| Inventory receipt               | Site 2                             |        112         |                     |
+| Cost change variance            | Site 2                             |          3         |                     | 
+
+#### Transfer order receipt posting:
+
+|      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
+|---------------------------------|------------------------------------|--------------------|---------------------|
+| Inventory issue                 | Site 2                             |                    |         112         |  
+| Inventory inter-unit receivable | Site 2                             |        112         |                     |
+| Inventory inter-unit payable    | Site 3                             |                    |         112         | 
+| Inventory receipt               | Site 3                             |        111         |                     |
+| Cost change variance            | Site 3                             |          1         |                     | 
+
+The **balance on the inventory in transit** can be calculated as **_InventoryIssue-Site2 - InventoryReceipt-Site2_**. It is nullified upon the receipt.
+
+  
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
