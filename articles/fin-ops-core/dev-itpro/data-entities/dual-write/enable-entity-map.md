@@ -63,11 +63,11 @@ After you've finished making your selections in the dialog box, and you select *
 
 ## <a id="criteria-for-linking"></a>Criteria for linking tables
 
-To enable table maps for dual-write, you must define an alternative key in Dataverse. The value of the alternative key in Dataverse must match the key that is defined in the Finance and Operations app.
+To enable table maps for dual-write, you must define an alternative key in Dataverse. The value of the alternative key in Dataverse must match the key that is defined in the finance and operations app.
 
-For example, in a Finance and Operations app, **CustomerAccount** is the key for the Account table.
+For example, in a finance and operations app, **CustomerAccount** is the key for the Account table.
 
-![Key for the Account table in a Finance and Operations app.](media/define-alternative-key.png)
+![Key for the Account table in a finance and operations app.](media/define-alternative-key.png)
 
 In Dataverse, **accountnumber** is defined as the key for the Account table.
 
