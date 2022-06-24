@@ -96,7 +96,8 @@ Some of the parameters must be additionally configured directly in Microsoft Dyn
 10. Select the **Create configuration** menu and the **Derive from Name: Customer invoice context model, Microsoft** option to create a derived configuration.
 11. Open the derived configuration for editting in **Designer** and select the **select Map model to datasource** menu.
 12. Open the **DataChannel** definition for editting in **Designer**. In the **Data sources** tree, expand the **$Context_Channel** container.
-13. In the **Value** field, select **Edit** and enter the data channel name. This is the name of the channel given in the configuration of the data channel for the Electronic invoicing feature in RCS.
+13. In the **Value** field, select **Edit** and enter the data channel name. This is the name of the **Data channel** configured in RCS, in the **Export chanel** section for the **Submit batch** feature setup.
+14. 
 
 ## Microcost Dynamics D365 Finance business data configuration
 
