@@ -54,7 +54,7 @@ The flushing principles are configured in a hierarchy of default values. The hie
 ## Description of the flushing principles
 
 ### Manual
-The Manual flushing principle indicates that the registration of material consumption is a manual operation. This principle is relevant if, for example, you want to be able to track time, and the quantity of consumed batch numbers or serial numbers must be accounted for, for tracking purposes. Manual consumption is registered in a production picking list journal. For items that are enabled for advanced warehouse processes, a hand-held flow can be applied.
+The Manual flushing principle indicates that the registration of material consumption is a manual operation. This principle is relevant if, for example, you want to be able to track time, and the quantity of consumed batch numbers or serial numbers must be accounted for, for tracking purposes. Manual consumption is registered in a production picking list journal. For items that are enabled for warehouse management processes (WMS), a hand-held flow can be applied.
 
 ### Start
 The Start flushing principle indicates that material will be automatically consumed when the production order is started. The amount of material that is consumed is proportional to the quantity that is started. When the Start flushing principle is used together with the manufacturing execution system, it can also be used to flush materials when an operation or a process job is started. This principle is relevant if, for example, the variance in the consumption is low, the materials are low-value materials, there are no tracking requirements, or there is a short run time on operations. 

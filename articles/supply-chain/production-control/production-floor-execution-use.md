@@ -221,7 +221,7 @@ Workers can adjust material consumption for catch weight items. This functionali
 
 In the **Adjust material** dialog box, a worker can make and adjust material reservations by selecting **Reserve material**. The **Reserve material** dialog box that appears shows the physically available inventory for the item for each storage and tracking dimension.
 
-If the material is enabled for the advanced warehouse processes, the list shows only the physically available inventory for the production input location for the material. The production input location is defined on the resource where the production job is planned. If the item number is batch or serial number controlled, the full list of physically available batch and serial numbers is shown. To specify a quantity to reserve, the worker can select **Reserve material**. To remove an existing reservation, the worker can select **Remove reservation**.
+If the material is enabled for warehouse management processes (WMS), the list shows only the physically available inventory for the production input location for the material. The production input location is defined on the resource where the production job is planned. If the item number is batch or serial number controlled, the full list of physically available batch and serial numbers is shown. To specify a quantity to reserve, the worker can select **Reserve material**. To remove an existing reservation, the worker can select **Remove reservation**.
 
 For more information about how to set up the production input location, see the following blog post: [Setting up the production input location](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
 
