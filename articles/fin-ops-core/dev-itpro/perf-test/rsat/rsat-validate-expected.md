@@ -49,7 +49,7 @@ When recording test cases, Task Recorder supports additional validation action:
 + Validate whether a control is enabled or disabled.
 + Validate whether a control is editable or read-only.
 
-To take advantage of this validation, you need to be use a Finance and Operations app running on 10.0.13 (or newer) and RSAT 2.0 (or newer). For more information, see [Validate](../../user-interface/task-recorder.md#validate).
+To take advantage of this validation, you need to be use a finance and operations app running on 10.0.13 (or newer) and RSAT 2.0 (or newer). For more information, see [Validate](../../user-interface/task-recorder.md#validate).
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
