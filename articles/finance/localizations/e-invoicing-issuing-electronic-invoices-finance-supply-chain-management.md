@@ -60,6 +60,7 @@ The following table shows the list of features that Electronic invoicing may sup
 |Dutch electronic invoice                           |Netherlands     |
 |Norwegian electronic invoice                       |Norway          |
 |Polish electronic invoice                          |Poland          |
+|Saudi Arabian electronic invoice                   |Saudi Arabia    |
 |Spanish electronic invoice                         |Spain           |
 
 When there is a legacy Electronic invoicing feature that is supported in a country/region's localizations scope, activating one of these features turns off the legacy feature and enables electronic invoices to be issued through Electronic invoicing.
@@ -85,7 +86,7 @@ The submission process can be run manually or in the background.
 
 ## View the submission logs
 
-In Finance and Supply Chain Management, you can use the submission logs to view the results of processing the submission to Electronic invoicing. Go to **Organization administration &gt; Periodic &gt; Electronic documents &gt; Electronic document submission**, and then, in the **Document type** field, select a value to filter the type of invoices that the logs show.
+In Finance and Supply Chain Management, you can use the submission logs to view the results of processing the submission to Electronic invoicing. Go to **Organization administration &gt; Periodic &gt; Electronic documents &gt; Electronic document submission log**, and then, in the **Document type** field, select a value to filter the type of invoices that the logs show.
 
 There are three possible submission statuses:
 
