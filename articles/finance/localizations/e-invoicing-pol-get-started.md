@@ -97,7 +97,11 @@ Some of the parameters must be additionally configured directly in Microsoft Dyn
 11. Open the derived configuration for editting in **Designer** and select the **select Map model to datasource** menu.
 12. Open the **DataChannel** definition for editting in **Designer**. In the **Data sources** tree, expand the **$Context_Channel** container.
 13. In the **Value** field, select **Edit** and enter the data channel name. This is the name of the **Data channel** configured in RCS, in the **Export chanel** section for the **Submit batch** feature setup.
-14. 
+14. Save changes and complete the derived configuration.
+15. In the **Organization administration** module, in the **Setup** section, open the **Electronic documents parameters** form.
+16. In the **Integration channels** section, add a new channel with the same name as was used in step 13.
+17. Enter a required Legal entity code in the **Company** column and refer to the derived configuration in the **Document context** column.
+18. Save changes and and close the page.
 
 ## Microcost Dynamics D365 Finance business data configuration
 
