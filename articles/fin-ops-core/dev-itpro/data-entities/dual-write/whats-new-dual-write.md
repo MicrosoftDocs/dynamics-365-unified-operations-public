@@ -24,11 +24,11 @@ The June release of [Dual-write core solution 1.0.35.0](https://appsource.micros
 
 | Feature | Description | Status |
 |---|---|---|
-| Bug fix | Fixes bug where dual-write fails for improperly formatted table look-ups with a missing look-up attribute value in the transform. | General availability |
-| Error handling | Provides actionable error message for an invalid, authentication failure during setup from Dynamics Lifecycle Services or Power Platform Admin Center. | General availability |
-| Performance | Manages dual-write plug-ins volume and removes the outdated plug-ins from the environment. | General availability |
-| Bug fix | Dual-write plug-in timeout duration is now synchronized with the finance and operations live sync timeout duration. This means the dual-write transaction commit must succeed on both sides within a 2-minute window. Otherwise, it will fail on both sides. | General availability |
-| Compliance | Due to compliance reasons, when entity maps are paused in dual-write, the data is stored for 24 hours only. Administrators are requested to run the maps within 24 hours. | General availability |
+| Bug fix | Fixes a bug where dual-write fails for incorrectly formatted table look-ups that have a missing look-up attribute value in the transform. | General availability |
+| Error handling | Provides an actionable error message for an invalid authentication failure during the setup from Microsoft Dynamics Lifecycle Services (LCS) or Power Platform admin center. | General availability |
+| Performance | Manages the dual-write plug-ins volume and removes outdated plug-ins from the environment. | General availability |
+| Bug fix | The dual-write plug-in time-out duration is now synchronized with the finance and operations live sync time-out duration. Therefore, the dual-write transaction commit must succeed on both sides within a two-minute window. Otherwise, it fails on both sides. | General availability |
+| Compliance | For compliance reasons, when entity maps are paused in dual-write, the data is stored for only 24 hours. Administrators are requested to run the maps within 24 hours. | General availability |
 
 ## April 2022 release
 
