@@ -44,7 +44,7 @@ Follow these steps to set up the project.
 1.  Add a new project by clicking the plus sign (**+**).
 2.  Enter a name that uses the following project naming convention: **REG-Alerts-Country/region name**
 3.  Enter a project description.
-4.  For the product name, specify the latest version of your Dynamics 365 Finance and Operations app.
+4.  For the product name, specify the latest version of your Dynamics 365 finance and operations app.
 5.  For the product version, specify the latest version.
 6.  Specify the industry:
     -   Select **Other** if the solution is related to all industries.
@@ -146,7 +146,7 @@ The following table describes the processing options that are available for aler
 > Submitted alerts can be rejected for various reasons. Here are some examples:
 >    -   The alert is too vague to identify the underlying localization feature.
 >    -   The alert is related to an area where no features are localized.
->    -   The alert is related to an area that isn't currently supported by Finance and Operations functionality.
+>    -   The alert is related to an area that isn't currently supported by finance and operations functionality.
 > 
 > Alerts can be stored in LCS as references.
 > 
