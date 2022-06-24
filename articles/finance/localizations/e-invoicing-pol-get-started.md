@@ -69,9 +69,9 @@ Some of the parameters from the **Polish electronic invoice (PL)** electronic in
 11. In the **Parameters** section, select **Service URL**, and make sure that a valid URL is configured.
 12. Select **Save**, and close the page.
 13. On the **Setups** tab, in the grid, select the **Submit customer invoice** feature setupand click on the **Edit** button.
-14. On the **Applicability rules** tab, make sure that the conditionans for applicability rules are properly configured... the**LegalEntityID** field.
+14. On the **Applicability rules** tab, in the **LegalEntityID** field, make sure that a valid Legal entity code is configured in the **Value** column.
 15. Select **Save** (if changes were made), and close the page.
-16. Repeat the steps 12 through 13 for the **Submit project invoice** and **Submit advance invoice** feature setups.
+16. Repeat the steps 13 through 15 for the **Submit project invoice** and **Submit advance invoice** feature setups.
 
 
 ## Country-specific configuration for the Polish electronic invoice (PL) application setup
