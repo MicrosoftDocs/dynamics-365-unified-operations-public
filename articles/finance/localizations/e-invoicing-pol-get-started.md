@@ -87,13 +87,18 @@ Some of the parameters must be additionally configured directly in Microsoft Dyn
 3. In the **Electronic document** section, add new records for the **Customer Invoice journal**, **Project nvoice** and **Advance invoice** table names. 
 4. For each table name, fill in **Document context** and **Electronic document model mapping** in accordance with point 1.
 5. In the **Electronic document** section, for the **Customer Invoice journal** table name, select **Response types** menu.
-6. Create a new **Response type** with the same name as was defined for the related variable in the respective feature setups in RCS. Enter the following values:
+6. Create a new **Response type** with the same name as was defined for the related variable of **To client** type in the respective feature setups in RCS. Enter the following values:
    - select **Pending** in the **Submission status** field.
    - select **KSeF response data import format (PL)** in the **Model mapping** field.
 7. Repeat the steps 5 through 6 for the **Project nvoice** and **Advance invoice** electronic documents.
 8. In the **Feature management** workspace, the **Export channels for electronic invoicing integraion** feature must be enabled. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+9. On the **Electronic reporting** workspace, on the **Reporting configurations** tile, select **Customer invoice context model** configuration.
+10. Select the **Create configuration** menu and the **Derive from Name: Customer invoice context model, Microsoft** option to create a derived configuration.
+11. Open the derived configuration for editting in **Designer** and select the **select Map model to datasource** menu.
+12. Open the **DataChannel** definition for editting in **Designer**. In the **Data sources** tree, expand the **$Context_Channel** container.
+13. In the **Value** field, select **Edit** and enter the data channel name. This is the name of the channel given in the configuration of the data channel for the Electronic invoicing feature in RCS.
 
-## Microcost Dynamics D365 Finance configuration
+## Microcost Dynamics D365 Finance business data configuration
 
 ### Prerequisites
 
