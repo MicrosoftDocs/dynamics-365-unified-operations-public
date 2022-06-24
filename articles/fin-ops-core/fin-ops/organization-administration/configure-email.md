@@ -82,37 +82,13 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 </tbody>
 </table>  
 
-#### Server Information
+#### Authentication
 
 | Field | Description |
 | ----- | ----------- |
 | Authentication required | Determines whether a user name and password are needed to send emails. |
 | **User name** and **Password** | If authentication is required, specify the appropriate mail account to send email from. All users need to provide the SMTP account **Send As** and **Send On Behalf Of** permissions to enable the ability to send SMTP mail. You can configure Send As permissions in the Microsoft 365 admin center (portal.office.com/Admin) at **Users** &gt; **Active users** &gt; **User** &gt; **Edit mailbox permissions** &gt; **Send email from this mailbox**. For more information, see [Enable sending email from another user's mailbox in Microsoft 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E). |
   
-#### Server information
-<table>
-<thead>  
-<tr>
-<th>Field</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-  <tr>
-    <td>Authentication required</td>
-    <td>Determines whether a user name and password are needed to send emails. </td>
-  </tr>
-
-  <tr>
-    <td><strong>User name</strong> and <strong>Password</strong></td>
-    <td>If authentication is required, specify the appropriate mail account to send email from. All users need to provide the SMTP account <strong>Send As</strong> and <strong>Send On Behalf Of</strong> permissions to enable the ability to send SMTP mail. You can configure Send As permissions in the Microsoft 365 admin center (portal.office.com/Admin) at <strong>Users</strong> &gt; <strong>Active users</strong> &gt; <strong>User</strong> &gt; <strong>Edit mailbox permissions</strong> &gt; <strong>Send email from this mailbox</strong>. For more information, see <a href="https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E">Enable sending email from another user's mailbox in Microsoft 365</a>.
-    </td>
-  </tr>
-      
-</tbody>
-
-</table>
-
 ## [Administrator] Email distributor batch process
 
 Email that is sent directly from the server, without user interaction, via SMTP is sent by the **Email distributor batch** process. That batch process must be started to process the email queue. To start the process, open the **Email distributor batch** pane (**System administration** &gt; **Periodic tasks** &gt; **Email processing** &gt; **Batch**) and turn on **Batch processing**.
@@ -340,10 +316,9 @@ There are some standard processes that can help you troubleshoot the configurati
   </tr>
   <tr>
     <th>Verify user mailboxes.</th>
-    <td>Consider signing in to the affected (or all) user mailboxes to verify that they are valid and can be accessed by using sign-in.</td>
-  </tr>
-</table>
+    <td>Consider signing in to the affected (or all) user mailboxes to verify that they are valid and can be accessed by using sign-in.</td></tr></table>
  
+
  ### Specific Exchange email issues
 
 -  **"(401) Unauthorized" or "(403) Forbidden" error when email is sent via Exchange**
