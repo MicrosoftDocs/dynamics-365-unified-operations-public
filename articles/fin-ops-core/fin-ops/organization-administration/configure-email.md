@@ -81,6 +81,13 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
   </tr>
 </tbody>
 </table>  
+
+#### Server Information
+
+| Field | Description |
+| ----- | ----------- |
+| Authentication required | Determines whether a user name and password are needed to send emails. |
+| **User name** and **Password** | If authentication is required, specify the appropriate mail account to send email from. All users need to provide the SMTP account **Send As** and **Send On Behalf Of** permissions to enable the ability to send SMTP mail. You can configure Send As permissions in the Microsoft 365 admin center (portal.office.com/Admin) at **Users** &gt; **Active users** &gt; **User** &gt; **Edit mailbox permissions** &gt; **Send email from this mailbox**. For more information, see [Enable sending email from another user's mailbox in Microsoft 365](https://support.office.com/article/Enable-sending-email-from-another-user-s-mailbox-in-Office-365-2B828C5F-41AB-4904-97B9-3B63D8129C4E). |
   
 #### Server information
 <table>
