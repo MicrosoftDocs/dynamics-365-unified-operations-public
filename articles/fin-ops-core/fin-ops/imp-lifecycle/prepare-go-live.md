@@ -4,7 +4,7 @@
 title: Prepare for go-live
 description: This article provides guidance about how to prepare for the go-live for Finance and Operations apps.
 author: ClaudiaBetz-Haubold
-ms.date: 05/19/2022
+ms.date: 06/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -90,7 +90,8 @@ All Finance and Operations apps customers must complete a Go-live Readiness Revi
 
 The review might require up to three business days for the initial report, plus additional time for any risk mitigation that is required. Determine an appropriate time to start this review, so that you can meet the go-live timeline.
 
-**For most projects, the Go-live Readiness Review is done in the FastTrack for Dynamics 365 implementation portal.**
+> [!Note]
+> For most projects, the Go-live Readiness Review is done in the FastTrack for Dynamics 365 implementation portal.
 
 There are **two exceptions** that will not use the FastTrack for Dynamics 365 implementation portal:
 - Projects that are in **[United States (US) Government Community Cloud (GCC)](../../dev-itpro/deployment/us-gcc-deployment.md)**. Please [download the Go-live checklist](https://aka.ms/d365fogolivechecklist), fill in all necessary details and send it via email to <d365fogccglr@microsoft.com>. Always include a key stakeholder from the customer and the implementation partner on the email. Microsoft FastTrack will review the project and follow up.
