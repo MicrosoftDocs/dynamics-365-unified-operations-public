@@ -35,7 +35,7 @@ This article explains how delegate methods serve as a means for defining a contr
 
 ## Overview
 
-Finance and Operations is split into several models, with each model in separate package. The principal 3 models are Application Platform, Application Foundation, and Application Suite. With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above. For example, in this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements. Application Foundation can access its own elements and those of Application Platform. Finally, Application Platform can only access its own elements. To learn about models and packages, see [Models and packages](../dev-tools/models.md).
+Finance and operations is split into several models, with each model in separate package. The principal 3 models are Application Platform, Application Foundation, and Application Suite. With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above. For example, in this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements. Application Foundation can access its own elements and those of Application Platform. Finally, Application Platform can only access its own elements. To learn about models and packages, see [Models and packages](../dev-tools/models.md).
 
 [![Del1.](./media/del1.jpg)](./media/del1.jpg) 
 
@@ -75,7 +75,7 @@ When comparing this overlay with the code from Dynamics AX 2012, this is a simpl
 
 [![5.](./media/51.png)](./media/51.png) 
 
-However, the section for Finance and Operations does not appear to resemble either of the Dynamics AX 2012 code snippets. 
+However, the section for finance and operations does not appear to resemble either of the Dynamics AX 2012 code snippets. 
 
 [![6.](./media/61.png)](./media/61.png) 
 

@@ -36,7 +36,7 @@ There are significant differences in budget planning between Microsoft Dynamics 
 Budget planning in Finance has many enhancements that weren't available in Dynamics AX 2012. This article explains the changes that customers who upgrade must make. It also points out the new features that should be considered in the upgrade process. Because of the extent of the changes, any existing budget plans will not be able to be opened until the changes that are outlined in this article are made. However, reports should continue to work and not require additional changes.
 
 ## Overview of changes
-Many significant changes have been made in Budgeting for Finance and Operations. These changes are intended to make Budget planning easier to configure and more reusable, to reduce year-over-year maintenance and setup. The following areas in AX 2012 no longer exist in Finance:
+Many significant changes have been made in Budgeting for finance and operations. These changes are intended to make Budget planning easier to configure and more reusable, to reduce year-over-year maintenance and setup. The following areas in AX 2012 no longer exist in Finance:
 
 -   Budget plan templates (Budget planning configuration)
 -   Budget plan folders (Budget planning configuration)
@@ -53,7 +53,7 @@ Columns are a new concept that replace parts of the Excel template and also matr
 
 ### Layouts
 
-Layouts are a new concept that replace the Excel template. Layouts contain the columns that define which budget or actuals data and periods should be shown. Layouts are also shared between the client and the Excel add-in. Therefore, the user experience when you enter or view data in the Finance and Operations client is better than the user experience in AX 2012. To enter data in the Finance client, you're no longer limited to viewing and entering a single scenario in a transaction view. Instead, a comparison view lets you easily view and enter amounts for multiple periods and accounts at the same time. Layouts can also be defined so that you can enter and view currency, comments, and other optional data. Layouts also let you define which ledger dimensions and dimension descriptions should be shown. Layouts also incorporate scenario constraints to define which columns in a template can be edited and which columns should be available in Excel. After you define a layout, a template is generated for it. This template, in turn, creates the corresponding Excel template. You can then edit the Excel template to incorporate more formulas and formatting, and then upload it again. Layouts are then assigned to each stage rule on the **Budget planning process** page. Therefore, the layouts replace templates, which were assigned and used in a similar manner.
+Layouts are a new concept that replace the Excel template. Layouts contain the columns that define which budget or actuals data and periods should be shown. Layouts are also shared between the client and the Excel add-in. Therefore, the user experience when you enter or view data in the finance and operations client is better than the user experience in AX 2012. To enter data in the Finance client, you're no longer limited to viewing and entering a single scenario in a transaction view. Instead, a comparison view lets you easily view and enter amounts for multiple periods and accounts at the same time. Layouts can also be defined so that you can enter and view currency, comments, and other optional data. Layouts also let you define which ledger dimensions and dimension descriptions should be shown. Layouts also incorporate scenario constraints to define which columns in a template can be edited and which columns should be available in Excel. After you define a layout, a template is generated for it. This template, in turn, creates the corresponding Excel template. You can then edit the Excel template to incorporate more formulas and formatting, and then upload it again. Layouts are then assigned to each stage rule on the **Budget planning process** page. Therefore, the layouts replace templates, which were assigned and used in a similar manner.
 
 ### Budget planning processes
 
@@ -75,7 +75,7 @@ To help you determine how to configure the upgraded system, the following exampl
    -   Budget plan scenarios: Actuals, Baseline, Budget Request, Budget Approved
    -   Budget plan lines for all scenarios in 2017, and Actuals for both 2017 and 2016
 
-   The following columns will be created in Finance and Operations:
+   The following columns will be created in finance and operations:
 
    | Column name    | Budget plan scenario | Column time period | Year offset |
    |----------------|----------------------|--------------------|-------------|
