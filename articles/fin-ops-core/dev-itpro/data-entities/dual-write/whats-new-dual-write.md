@@ -18,7 +18,6 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and Finance and Operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
-
 ## April 2022 release
 
 The April release of Dual-write Party and Global Address Book Solutions 3.5.0.1 contains the following features and bug fixes.
