@@ -180,7 +180,7 @@ In Poland, the standard submission procedure will only generate electronic invoi
 1. In the **Organization administration** module, select **Periodic**, then select **Electronic documents** and open **Run submission process in export channels** form.
 2. In the **Channel** field, select the channel previously created on the [step 16](#channel) of the **Microsoft Dynamics D365 Finance configuration** section and click on the **OK** button.
 
-You can inquire the result of the submission in **Organization administration** module, **Periodic**, **Electronic documents**, **Electronic document submission log** form.
+You can inquire the result of the submission in the **Organization administration** module &gt; **Periodic** &gt; **Electronic documents** &gt; **Electronic document submission log** form.
 
 ## Additional resources
 
