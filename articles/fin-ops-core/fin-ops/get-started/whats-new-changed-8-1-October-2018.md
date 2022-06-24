@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Finance and Operations version 8.1 (October 2018)
-description: This article describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1. This version was released in October 2018.
+title: What's new or changed in Dynamics 365 Finance version 8.1 (October 2018)
+description: This article describes features that are either new or changed in Dynamics 365 Finance version 8.1. This version was released in October 2018.
 author: tonyafehr
 ms.date: 10/15/2019
 ms.topic: article
@@ -26,11 +26,11 @@ ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Release 8.1
 
 ---
-# What's new or changed in Dynamics 365 for Finance and Operations version 8.1 (October 2018)
+# What's new or changed in Dynamics 365 Finance version 8.1 (October 2018)
 
 [!include [banner](../includes/banner.md)]
 
-This article describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018). This version was released in October 2018 and has a build number of 8.1.136.
+This article describes features that are either new or changed in Microsoft Dynamics 365 Finance version 8.1 (October 2018). This version was released in October 2018 and has a build number of 8.1.136.
 
 To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail](../../../commerce/get-started/whats-new.md).
 
@@ -88,7 +88,7 @@ For more information, see [Dual currency](../../../finance/general-ledger/dual-c
 
 ## Extensibility enhancements
 
-In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility through chain of command, delegates, or by providing access to members. In addition, enhancements have been made to enumerations, metadata, and SQL operations. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1](../../dev-itpro/extensibility/extensibility-changes-81.md)
+In this release of finance and operations, numerous extensibility enhancements have been made to support extensibility through chain of command, delegates, or by providing access to members. In addition, enhancements have been made to enumerations, metadata, and SQL operations. For detailed information, see [Extensibility changes in Dynamics 365 Finance version 8.1](../../dev-itpro/extensibility/extensibility-changes-81.md)
 
 ## Phantom items
 
@@ -98,13 +98,13 @@ For more information, see [Phantom items](../../../supply-chain/production-contr
 
 ## Russian localization
 
-Dynamics 365 for Finance and Operations now supports mandatory regulatory requirements in Russia (for on-premises deployment only). This release of Russian localization covers the following functional areas: accounts payable, accounts receivable, advance holders, bank and cash, export part of Client-Bank interface, fixed assets, general ledger and G/L reporting, electronic reporting for financial reports, inventory, addresses/FIAS, VAT and profit tax registers in areas of cash movement, goods movement, rated expenses, deferred expenses, exchange difference and WIP.
+Dynamics 365 Finance now supports mandatory regulatory requirements in Russia (for on-premises deployment only). This release of Russian localization covers the following functional areas: accounts payable, accounts receivable, advance holders, bank and cash, export part of Client-Bank interface, fixed assets, general ledger and G/L reporting, electronic reporting for financial reports, inventory, addresses/FIAS, VAT and profit tax registers in areas of cash movement, goods movement, rated expenses, deferred expenses, exchange difference and WIP.
 
 For more information, see [Russia](../../../finance/localizations/russia.md).
 
 ## VAT reporting for the United Arab Emirates
 
-Standard sales tax functionality in Finance and Operations now fulfils the majority of legislation requirements of United Arab Emirates VAT law. The following country-specific features are specific to the United Arab Emirates:
+Standard sales tax functionality in finance and operations now fulfils the majority of legislation requirements of United Arab Emirates VAT law. The following country-specific features are specific to the United Arab Emirates:
 
 - Legal entity configuration has been extended with additional fields required in VAT reporting.
 - VAT reverse charge functionality has been enabled for UAE (ARE country context) to properly record taxable domestic operations within GCC territory.
@@ -115,3 +115,4 @@ Standard sales tax functionality in Finance and Operations now fulfils the major
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

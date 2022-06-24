@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 11 (October 2017)
-description: This article describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 11. This version was released in October 2017.
+title: What's new or changed in Dynamics 365 Finance, Enterprise edition platform update 11 (October 2017)
+description: This article describes features that are either new or changed in Dynamics 365 Finance, Enterprise edition platform update 11. This version was released in October 2017.
 author: tonyafehr
 ms.date: 10/09/2017
 ms.topic: article
@@ -26,11 +26,11 @@ ms.dyn365.ops.version: Platform update 11
 
 ---
 
-# What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 11 (October 2017)
+# What's new or changed in Dynamics 365 Finance, Enterprise edition platform update 11 (October 2017)
 
 [!include [banner](../includes/banner.md)]
 
-This article describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 11. This version was released in October 2017 and has a build number of 7.0.4679.35176.
+This article describes features that are either new or changed in Dynamics 365 Finance, Enterprise edition platform update 11. This version was released in October 2017 and has a build number of 7.0.4679.35176.
 
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 11, log in to Lifecycle Services (LCS) and view this [KB article](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4047244&bugId=3869536&qc=310ad7de90642ce961cc3f51358f3b40788c975dec466891d0fcc17c13145f56).
 
@@ -40,13 +40,13 @@ When viewing a record, the system will indicate the number of attachments on tha
 
 ## Auditing
 
-Auditing of user sign in and sign out is now enabled in Finance and Operations. The system logs when a user signs in or out of the application. A sign out is logged even if the user's session expires or ends.
+Auditing of user sign in and sign out is now enabled in finance and operations. The system logs when a user signs in or out of the application. A sign out is logged even if the user's session expires or ends.
 
 A system administrator or security administrator can access the audit logs by going to the **User log** page (**System administration** \> **Inquiries** \> **User log**).
 
 ## Bring your Own Database (BYOD) support for delete operations
 
-Bring your own data store (BYOD) is a feature that's used by customers to integrate data from Finance and Operations with existing data warehouses. BYOD allows you to incrementally export data into a customer's SQL Azure database. While an incremental export feature is ideal for propagating changes, we will also support full export, which is typically used for initial data population. Incremental operation propagates insert and update operations to the destination database. With this addition, BYOD incremental refresh operations delete records in the destination database if corresponding records are deleted in source.
+Bring your own data store (BYOD) is a feature that's used by customers to integrate data from finance and operations with existing data warehouses. BYOD allows you to incrementally export data into a customer's SQL Azure database. While an incremental export feature is ideal for propagating changes, we will also support full export, which is typically used for initial data population. Incremental operation propagates insert and update operations to the destination database. With this addition, BYOD incremental refresh operations delete records in the destination database if corresponding records are deleted in source.
 
 ## Cloud and Edge elements
 
@@ -112,13 +112,13 @@ When you use an extension of an extended data type of type EDTReal, you can know
 
 ## Multiple document reports sent as a .zip file to streamline delivery
 
-The framework has been extended to better handle scenarios where reporting sessions produce multiple documents for download. As a security precaution, the Dynamics 365 for Finance and Operations service has adjusted how to handle scenarios that download multiple files to the browser. Instead of receiving multiple documents, one after another, the documents will be packaged and downloaded in a single .zip file. This will affect existing reports that produce multiple documents such customer account statements and collection letters.
+The framework has been extended to better handle scenarios where reporting sessions produce multiple documents for download. As a security precaution, the Dynamics 365 Finance service has adjusted how to handle scenarios that download multiple files to the browser. Instead of receiving multiple documents, one after another, the documents will be packaged and downloaded in a single .zip file. This will affect existing reports that produce multiple documents such customer account statements and collection letters.
 
 ## Resource governor manages server workloads
 
-Resource governor is a component that reduces the management overhead for a system administrator. Finance and Operations contains batch and processing tasks that are compute intensive. Users can schedule many jobs as the business demands dictate, such as the month-end workload where there are multiple posting jobs. While these compute processes occupy the server, interactive operations such as front-office processes, continue to run without any degradation of performance.
+Resource governor is a component that reduces the management overhead for a system administrator. Finance and operations contains batch and processing tasks that are compute intensive. Users can schedule many jobs as the business demands dictate, such as the month-end workload where there are multiple posting jobs. While these compute processes occupy the server, interactive operations such as front-office processes, continue to run without any degradation of performance.
 
-Resource governor uses the built-in resource governance services offered by SQL Azure database. Dynamics 365 for Finance and Operations Runtime service allocates quotas for interactive, as well as batch processes, so that SQL Azure database (where most of the compute is performed) does not degrade if there are sudden compute spikes.
+Resource governor uses the built-in resource governance services offered by SQL Azure database. Dynamics 365 Finance Runtime service allocates quotas for interactive, as well as batch processes, so that SQL Azure database (where most of the compute is performed) does not degrade if there are sudden compute spikes.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

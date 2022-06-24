@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
+title: What's new or changed in Dynamics 365 Finance, Enterprise edition (July 2017)
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Finance, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 author: tonyafehr
 ms.date: 11/20/2020
 ms.topic: article
@@ -25,19 +25,19 @@ ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update 
 ---
 
-# What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
+# What's new or changed in Dynamics 365 Finance, Enterprise edition (July 2017)
 
 [!include [banner](../includes/banner.md)]
 
 
 
-This article describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
+This article describes features that are either new or changed in Microsoft Dynamics 365 Finance, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
 
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development.
 
-## Introducing Dynamics 365 for Finance and Operations
+## Introducing Dynamics 365 Finance
 
-Users and developers will see an updated product name ("Microsoft Dynamics 365 for Finance and Operations") and product icon in the web client. Some platform components (for example, the developer tools and the mobile application) that are shared by Dynamics 365 for Finance and Operations, Dynamics 365 for Retail, and Dynamics 365 Human Resources will now appear as "Dynamics 365 Unified Operations."
+Users and developers will see an updated product name ("Microsoft Dynamics 365 Finance") and product icon in the web client. Some platform components (for example, the developer tools and the mobile application) that are shared by Dynamics 365 Finance, Dynamics 365 for Retail, and Dynamics 365 Human Resources will now appear as "Dynamics 365 Unified Operations."
 
 ## Financial management
 
@@ -93,7 +93,7 @@ Many organizations require that a copy of a receipt be attached to a travel-rela
 
 Specifically, the **Expense management** mobile workspace enables a user to:
 
-- Take a photo of a receipt, and upload it to Microsoft Dynamics for Finance and Operations. A user can then attach that photo to an expense report later.
+- Take a photo of a receipt, and upload it to Microsoft Dynamics for finance and operations. A user can then attach that photo to an expense report later.
 - Upload a file as a captured receipt. A user can then attach that file to an expense report later.
 - Create a new expense line by using an attached receipt. A user can then add the line item to an expense report later, and submit it for approval and reimbursement.
 - Create a new expense report.
@@ -216,7 +216,7 @@ For more information, see [Mobile invoice approvals](../../../finance/accounts-p
 
 ### Configuration data packages
 
-Configuration data packages are available as process data packages from Lifecycle Services (LCS) for core Financial modules. These data packages can help improve the repeatability of implementations and accelerate the configuration of Dynamics 365 for Finance and Operations.
+Configuration data packages are available as process data packages from Lifecycle Services (LCS) for core Financial modules. These data packages can help improve the repeatability of implementations and accelerate the configuration of Dynamics 365 Finance.
 
 The data packages contain configuration entity spreadsheets. These entity spreadsheets have best practice data, which you can use to create an initial 'golden' build. The data entities in the data packages are also sequenced appropriately, to help ensure a successful single-click import of the data. For more information, see [Configuration data packages](../../dev-itpro/data-entities/configuration-data-packages.md).
 
@@ -239,9 +239,9 @@ Travel requisitions and policies can be used to help with budget control. For ex
 
 ### Vendor invoice attachment enhancements
 
-As organizations look to streamline their Accounts payable processes, invoice processing is often one of the top process areas that needs efficiency. Oftentimes, organizations offload the paper invoice processing to a third-party optical character recognition (OCR) service provider to get machine readable invoice metadata along with the scanned image of the invoice. To help with automation, a solution is built in the invoicing system to enable consumption of these artifacts. Dynamics 365 for Finance and Operations enables this automation out of the box. 
+As organizations look to streamline their Accounts payable processes, invoice processing is often one of the top process areas that needs efficiency. Oftentimes, organizations offload the paper invoice processing to a third-party optical character recognition (OCR) service provider to get machine readable invoice metadata along with the scanned image of the invoice. To help with automation, a solution is built in the invoicing system to enable consumption of these artifacts. Dynamics 365 Finance enables this automation out of the box. 
 
-The basic premise of invoice automation is to enable a standard interface that can accept invoice metadata for invoice header and invoice lines, as well as the attachments that are applicable to the invoice. Any external system that can generate the artifacts and comply with the interface will be able to send the feed to Finance and Operations for automatic processing of invoices and attachments. 
+The basic premise of invoice automation is to enable a standard interface that can accept invoice metadata for invoice header and invoice lines, as well as the attachments that are applicable to the invoice. Any external system that can generate the artifacts and comply with the interface will be able to send the feed to finance and operations for automatic processing of invoices and attachments. 
 
 The following components make up the solution footprint of vendor invoice automation. 
 
@@ -259,7 +259,7 @@ The workflow history for an expense report can be complicated depending on how m
 
 ### Cross legal entities reporting in Cost accounting
 
-This feature lets you run multiple legal entities on different versions or instances of the same version by connecting the data from instances in Dynamics AX 2012 R3 CU11 or later to Dynamics 365 for Finance and Operations. You can cross the boundaries of legal entities to address both organizational and statutory reporting needs.
+This feature lets you run multiple legal entities on different versions or instances of the same version by connecting the data from instances in Dynamics AX 2012 R3 CU11 or later to Dynamics 365 Finance. You can cross the boundaries of legal entities to address both organizational and statutory reporting needs.
 
 For more information, see [Cost accounting overview](../../../finance/cost-accounting/cost-accounting-home-page.md).
 
@@ -355,7 +355,7 @@ Information about prerequisites is used to automatically recognize and import to
 
 ### Global coverage – Languages
 
-This feature allows ISVs and partners to create a new language in Dynamics 365 for Finance and Operations, including managing this process throughout upgrades and updates of source labels via extensions.
+This feature allows ISVs and partners to create a new language in Dynamics 365 Finance, including managing this process throughout upgrades and updates of source labels via extensions.
 
 ### Global coverage – Retail
 
@@ -449,7 +449,7 @@ For more information see [My team mobile workspace](../../dev-itpro/mobile-apps/
 
 ### Analytics and insights through Power BI
 
-Gain deeper insight about your most valuable resource, your people, using the flexible and comprehensive analysis provide by Finance and Operations. By taking advantage of Power BI, Finance and Operations provides embedded analytics that contains data visualizations that allow you to gain a deeper understanding of the talent in your organization.
+Gain deeper insight about your most valuable resource, your people, using the flexible and comprehensive analysis provide by finance and operations. By taking advantage of Power BI, finance and operations provides embedded analytics that contains data visualizations that allow you to gain a deeper understanding of the talent in your organization.
 
 Analytics and insights provide the following data and visualizations:
 
@@ -504,9 +504,9 @@ For more information, see [Credit and collections management Power BI content](.
 
 In the August 2016 update of Dynamics 365 for Operations (referred to as Dynamics AX 7.0), users could pin full page Power BI reports to their workspaces. With full page, interactive reports, you could explore data and perform what-if analysis over large volumes of data. Accessing and pinning Power BI reports required you to have a PowerBI.com subscription. As additional reports are delivered by Microsoft and our partner ecosystem, Power BI capability is becoming a crucial reporting option for all users of your organization.
 
-All user can now access Power BI reports based on Entity store, the operational data warehouse that is included with Dynamics 365 for Finance and Operations, Enterprise edition.
+All user can now access Power BI reports based on Entity store, the operational data warehouse that is included with Dynamics 365 Finance, Enterprise edition.
 
-No Power BI licenses are required to access these reports, which are embedded in the Finance and Operations application. If a user requires access to Power BI reports and functionality outside of this embedded experience, a Power BI license must be obtained separately. Features that were introduced to pin tiles and reports from PowerBI.com will continue to be supported.
+No Power BI licenses are required to access these reports, which are embedded in the finance and operations application. If a user requires access to Power BI reports and functionality outside of this embedded experience, a Power BI license must be obtained separately. Features that were introduced to pin tiles and reports from PowerBI.com will continue to be supported.
 
 ### Embedded Practice manager Power BI content
 
@@ -514,7 +514,7 @@ The Practice manager Power BI content pack has been embedded into the Project ma
 
 The Practice manager Power BI content pack is also available in the Shared assets library in Microsoft Dynamics Lifecycle Services (LCS.md).
 
-The Practice manager Power BI content was created for practice managers and project managers. It provides key metrics that are related to the projects that the organization is working on. The content gives an overview of the projects and related customers. The Power BI content pulls data from the project accounting aggregate measurements for Microsoft Dynamics 365 for Finance and Operations.
+The Practice manager Power BI content was created for practice managers and project managers. It provides key metrics that are related to the projects that the organization is working on. The content gives an overview of the projects and related customers. The Power BI content pulls data from the project accounting aggregate measurements for Microsoft Dynamics 365 Finance.
 
 The Practice manager Power BI content contains five report pages: one overview page and four pages that provide details about project costs, revenues, earned value management, and hour metrics that are split out across various dimensions. For more information, see [Practice manager Power BI content](../../dev-itpro/analytics/practice-manager-power-bi.md).
 
@@ -542,12 +542,12 @@ For more information, see [Add financial dimensions to aggregate measurements](.
 
 ### Purchase spend analysis Power BI reports
 
-The Purchase spend analysis content pack for Microsoft Power BI was created for purchasing managers and managers who are responsible for budgets. It's designed to help them monitor purchase spending. It uses purchase transactional data from Dynamics 365 for Finance and Operations and provides both an aggregate view of the company-wide purchase figures and a breakdown of purchase spending by vendor and product. Reports highlight changes in purchase spending over time. Therefore, they can be used to alert managers about positive and negative spending trends for individual vendors and products. Charts show purchase spending for different procurement categories and vendor groups. Category and regional managers might find it useful to use these charts to help identify changes in spending behavior. The content pack lets purchase managers and managers who are responsible for budgets to analyze purchase spending in the following ways: 
+The Purchase spend analysis content pack for Microsoft Power BI was created for purchasing managers and managers who are responsible for budgets. It's designed to help them monitor purchase spending. It uses purchase transactional data from Dynamics 365 Finance and provides both an aggregate view of the company-wide purchase figures and a breakdown of purchase spending by vendor and product. Reports highlight changes in purchase spending over time. Therefore, they can be used to alert managers about positive and negative spending trends for individual vendors and products. Charts show purchase spending for different procurement categories and vendor groups. Category and regional managers might find it useful to use these charts to help identify changes in spending behavior. The content pack lets purchase managers and managers who are responsible for budgets to analyze purchase spending in the following ways: 
 
 - Year-to-date purchase (by vendor group and individual vendors, procurement category and individual products, and vendor location).
 - Year-over-year purchase change (by vendor group and procurement category).
 
-The Purchase spend analysis Power BI content pack is available via the Lifecycle Services (LCS) Asset library and as an embedded report in Dynamics 365 for Finance and Operations.
+The Purchase spend analysis Power BI content pack is available via the Lifecycle Services (LCS) Asset library and as an embedded report in Dynamics 365 Finance.
 
 For more information, see [Purchase spend analysis Power BI content](../../dev-itpro/analytics/purchase-content-pack-for-power-bi.md).
 
@@ -567,7 +567,7 @@ Comprehensive reporting and Dashboarding capabilities built into Power BI enable
 
 ### Sales and profitability performance Power BI reports
 
-This content pack was created for sales managers to monitor the key sales metrics of revenue, gross profit, and profit margins. It uses sales transactional data from Dynamics 365 for Finance and Operations, Enterprise edition and provides both an aggregate view of the company-wide sales figures and a breakdown of sales performance for customers and products. By highlighting changes in the revenue and profit growth over time, reports can be used to alert managers about positive and negative trends for individual customers and products. Category and regional managers will find it useful to have charts that compare revenue and profitability of different product categories and customer groups to each other to single out laggards and leaders. A comprehensive report that plots individual customer's revenue versus profit margin offers account managers a data-backed foundation to attune their sales and marketing efforts to each customer's respective profile. The Sales and profitability performance content pack enables sales managers to analyze sales performance by: 
+This content pack was created for sales managers to monitor the key sales metrics of revenue, gross profit, and profit margins. It uses sales transactional data from Dynamics 365 Finance, Enterprise edition and provides both an aggregate view of the company-wide sales figures and a breakdown of sales performance for customers and products. By highlighting changes in the revenue and profit growth over time, reports can be used to alert managers about positive and negative trends for individual customers and products. Category and regional managers will find it useful to have charts that compare revenue and profitability of different product categories and customer groups to each other to single out laggards and leaders. A comprehensive report that plots individual customer's revenue versus profit margin offers account managers a data-backed foundation to attune their sales and marketing efforts to each customer's respective profile. The Sales and profitability performance content pack enables sales managers to analyze sales performance by: 
 
 - Revenue, year-to-date (by customer group and individual customers, sales categories, and individual products and geographies).
 - Revenue change, year-over-year (by customer regions and sales categories).
@@ -578,7 +578,7 @@ Profitability can be analyzed by:
 - Gross profit change, year-over-year.
 - Customer profitability (by revenue versus gross margin).
 
-The Sales and profitability performance Power BI content pack is available via the Lifecycle Services (LCS) Asset library and as an embedded report in Dynamics 365 for Finance and Operations.
+The Sales and profitability performance Power BI content pack is available via the Lifecycle Services (LCS) Asset library and as an embedded report in Dynamics 365 Finance.
 
 For more information, see [Sales and profitability performance Power BI content](../../dev-itpro/analytics/sales-profitability-performance-content-pack.md).
 
@@ -592,7 +592,7 @@ For more information, see [Vendor payment workspace](../../../finance/accounts-p
 
 With Warehousing Power BI reports, the warehouse and supply chain manager can easily take advantage of the rich visualization and dashboard capabilities to analyze warehouse performance in the past, present, and future.
 
-Warehouse and operations managers can monitor the key inbound, outbound, and inventory metrics. This feature uses product and other transactional data from Dynamics 365 for Finance and Operations to provide both an aggregate view of the warehouse performance and a breakdown for customers, vendors, product groups, and product sites and warehouses. For more information, see [Warehouse performance Power BI content](../../dev-itpro/analytics/warehouse-power-bi-content.md).
+Warehouse and operations managers can monitor the key inbound, outbound, and inventory metrics. This feature uses product and other transactional data from Dynamics 365 Finance to provide both an aggregate view of the warehouse performance and a breakdown for customers, vendors, product groups, and product sites and warehouses. For more information, see [Warehouse performance Power BI content](../../dev-itpro/analytics/warehouse-power-bi-content.md).
 
 ## Manufacturing
 
@@ -690,15 +690,15 @@ For more information, see [Configuration data templates](../../dev-itpro/data-en
 
 ### Upgrade
 
-You can upgrade from Dynamics AX 2012 to Dynamics 365 for Finance and Operations. The complete Dynamics AX 2012 database can be brought forward, and your AX 2012 codebase can be upgraded to Finance and Operations. You can migrate from Dynamics AX 2009 to Finance and Operations via a migration toolset to bring forward master data and opening balances.
+You can upgrade from Dynamics AX 2012 to Dynamics 365 Finance. The complete Dynamics AX 2012 database can be brought forward, and your AX 2012 codebase can be upgraded to finance and operations. You can migrate from Dynamics AX 2009 to finance and operations via a migration toolset to bring forward master data and opening balances.
 
-Upgrade is now more predictable, which reduces the overall cost of the upgrade process. Upgrade kicks off with an automated analysis phase, which defines the preparation tasks required to reduce the time and cost to upgrade, as well as the ongoing future cost of Finance and Operations. Post upgrade, an automated validation phase provides statistics and metrics on the success of the upgrade process. The validation details can be used to quickly assess the state of the upgrade, so you can continue with functional testing and sign off.
+Upgrade is now more predictable, which reduces the overall cost of the upgrade process. Upgrade kicks off with an automated analysis phase, which defines the preparation tasks required to reduce the time and cost to upgrade, as well as the ongoing future cost of finance and operations. Post upgrade, an automated validation phase provides statistics and metrics on the success of the upgrade process. The validation details can be used to quickly assess the state of the upgrade, so you can continue with functional testing and sign off.
 
-In Finance and Operations there are no expensive upgrades needed to stay current and take advantage of continuous innovation. You can update to the latest versions of the product with a click of a button. The product supports rich customizations but the need for costly code upgrade is gone. Extensions-based customizations easily migrate with every upgrade. New features introduced in the product are opt-in, which means that business processes will not be affected by the upgrade process. The Administrator can enable new features using the product post-upgrade, as they see fit. To minimize risks, upgrade enforces a workflow of an upgrade sandbox, validation, and then release to production.
+In finance and operations there are no expensive upgrades needed to stay current and take advantage of continuous innovation. You can update to the latest versions of the product with a click of a button. The product supports rich customizations but the need for costly code upgrade is gone. Extensions-based customizations easily migrate with every upgrade. New features introduced in the product are opt-in, which means that business processes will not be affected by the upgrade process. The Administrator can enable new features using the product post-upgrade, as they see fit. To minimize risks, upgrade enforces a workflow of an upgrade sandbox, validation, and then release to production.
 
 For more information, see the following topics:
 
-- [Upgrade from AX 2012 to Finance and Operations](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md)
+- [Upgrade from AX 2012 to finance and operations](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md)
 - [Upgrade from AX 2012 - Plan by using the Upgrade analyzer tool](../../dev-itpro/migration-upgrade/upgrade-analyzer-tool.md)
 - [Upgrade from AX 2012 - Estimate effort by using the Code upgrade service](../../dev-itpro/migration-upgrade/analyze-code-upgrade.md)
 - [Upgrade from AX 2012 - Deploy a demo environment for analysis](../../dev-itpro/migration-upgrade/analysis-sandbox.md)
@@ -726,11 +726,11 @@ After the project team is defined, open the **Work breakdown** structure on the 
 
 ### Manage or view a project work breakdown structure using Microsoft Project Client
 
-Planning and maintaining a project schedule can be complex and project managers need to use tools that help them manage this. This feature provides support to open and manage the project work breakdown structure using the Microsoft Project Client Application. The project manager will be able to publish any changes back to Finance and Operations project work breakdown structure.
+Planning and maintaining a project schedule can be complex and project managers need to use tools that help them manage this. This feature provides support to open and manage the project work breakdown structure using the Microsoft Project Client Application. The project manager will be able to publish any changes back to finance and operations project work breakdown structure.
 
 To enable the integration, a Dynamics 365 add-in is required to be installed in the user's client Microsoft Project application. This is done by opening the **Project management workspace**. Click the **Configure project client add-in** link in the **Setup** section under **Links**.
 
-A work breakdown structure that is in a draft status can be opened in the Microsoft Project Client Application by clicking **Open in Microsoft Project** from the project form (**Project management and accounting \> Projects \> All projects**) or can be opened from within Microsoft Project Client by clicking **Open** in the **Dynamics 365 for Operations** tab. Users can make necessary changes to the draft work breakdown structure, including assigning resources. If a project team has already been added to the project in Finance and Operations, the resource list will be populated with the team members. If a project team has not yet been added to the project, you can select the resources and build the team within Microsoft Project Client by clicking the **Resources** button on the **Dynamics 365 for Operations** tab. Edits to the work breakdown structure is published back to Finance and Operations.
+A work breakdown structure that is in a draft status can be opened in the Microsoft Project Client Application by clicking **Open in Microsoft Project** from the project form (**Project management and accounting \> Projects \> All projects**) or can be opened from within Microsoft Project Client by clicking **Open** in the **Dynamics 365 for Operations** tab. Users can make necessary changes to the draft work breakdown structure, including assigning resources. If a project team has already been added to the project in finance and operations, the resource list will be populated with the team members. If a project team has not yet been added to the project, you can select the resources and build the team within Microsoft Project Client by clicking the **Resources** button on the **Dynamics 365 for Operations** tab. Edits to the work breakdown structure is published back to finance and operations.
 
 ### Project time entry mobile workspace
 
@@ -804,7 +804,7 @@ The attribute framework now supports configuration-driven development for custom
 
 **Granular CRT handlers** – We are continuously improving our code base to simplify the customization experience. We have enhanced many of the CRT handlers with more granular message handlers, so you can easily override or add triggers at specific extension points instead of owning the entire service or operation. For example, loyalty service is enhanced with more granular handlers to support customization at earn (sale and return), redeem, calculation, or validation. Previously, to skip some standard checks you needed to override the entire calculate service but now this can be done just by overriding or adding pre/post triggers for the validation check request handlers. Refer to the commerce runtime messages.chm file in the Retail SDK folder for the available requests and responses for customization.
 
-**Extensible enums** – We have enhanced the CRT to support extensible enums. Extensible enums can be now accessed using the new API exposed in CRT. Using this new API you can easily set/get or validate values based on the enum type. In previous versions you needed to manually define the enums in the CRT layer and type match it without direct mapping between Finance and Operations enums and CRT enums. With the new extensible API exposed in CRT, you can directly map between Finance and Operations enums and CRT enums without manually creating the enums in CRT. Multiple partners and ISVs can create extensible enums and use them in their code independently, without any code merge. For example, if you create a new discount type extension enum, the same enum will be available for you in CRT. In your code you can check if discount type is equal to my discount enum type, instead of manually validating with some hardcoded values.
+**Extensible enums** – We have enhanced the CRT to support extensible enums. Extensible enums can be now accessed using the new API exposed in CRT. Using this new API you can easily set/get or validate values based on the enum type. In previous versions you needed to manually define the enums in the CRT layer and type match it without direct mapping between finance and operations enums and CRT enums. With the new extensible API exposed in CRT, you can directly map between finance and operations enums and CRT enums without manually creating the enums in CRT. Multiple partners and ISVs can create extensible enums and use them in their code independently, without any code merge. For example, if you create a new discount type extension enum, the same enum will be available for you in CRT. In your code you can check if discount type is equal to my discount enum type, instead of manually validating with some hardcoded values.
 
 ### Support for multiple Retail server extensions
 
@@ -907,7 +907,7 @@ For details about Retail upgrade and N-1 support, see [Overview of upgrade and N
 
 ### Batch and license plate confirmation
 
-Batch confirmation and license plate confirmation has been added to this release of Finance and Operations. With this enhancement, using a mobile device, you can confirm that the correct batch or license plate is being picked.
+Batch confirmation and license plate confirmation has been added to this release of finance and operations. With this enhancement, using a mobile device, you can confirm that the correct batch or license plate is being picked.
 
 In previous versions, batch and license plate confirmation for items was not supported. For more information, see [Batch and license plate confirmation](../../../supply-chain/warehousing/batch-and-license-plate-confirmation.md).
 
@@ -937,22 +937,22 @@ For more information, see [Piece picking confirmation](../../../supply-chain/war
 
 ### Product work confirmation for cluster picking
 
-Dynamics 365 for Finance and Operations now supports item scanning and verification in the cluster picking flow.
+Dynamics 365 Finance now supports item scanning and verification in the cluster picking flow.
 
 When cluster picking is applied, item confirmation is crucial to verify the items that are added to clusters. Now you can verify Items in cluster picking during the cluster picking process. In previous versions, it was not possible to confirm item bar codes and verify items using a bar code scanner. For more information, see [Product confirmation for cluster picking](../../../supply-chain/warehousing/cluster-picking-item-confirmation.md).
 
 ### Prospect to cash integration capabilities
 
-Prospect to cash integration capabilities deliver first party integration between Dynamics 365 for Sales and Dynamics 365 for Finance and Operations, Enterprise edition.
+Prospect to cash integration capabilities deliver first party integration between Dynamics 365 for Sales and Dynamics 365 Finance, Enterprise edition.
 
-This solution leverages the strengths of the individual Dynamics 365 components and connects them via Dataverse. While the data is flowing seamlessly between Finance and Operations and Dynamics 365 for Sales, customers can carry out sales and marketing activities in Dynamics 365 for Sales and handle the order fulfillment with inventory management in Finance and Operations. This solution provides powerful integration with a flexible solution and simplification of the integration process, without dependency on third-party solutions. These advancements offer the best of both worlds, each with significant productivity enhancements that help businesses and workers achieve more.
+This solution leverages the strengths of the individual Dynamics 365 components and connects them via Dataverse. While the data is flowing seamlessly between finance and operations and Dynamics 365 for Sales, customers can carry out sales and marketing activities in Dynamics 365 for Sales and handle the order fulfillment with inventory management in finance and operations. This solution provides powerful integration with a flexible solution and simplification of the integration process, without dependency on third-party solutions. These advancements offer the best of both worlds, each with significant productivity enhancements that help businesses and workers achieve more.
 
-- Maintain accounts in Dynamics 365 for Sales and sync them to Finance and Operations as customers.
-- Maintain contacts in Dynamics 365 for Sales and sync them to Finance and Operations.
-- Maintain products in Finance and Operations and sync them to Dynamics 365 for Sales.
-- Create quotes in Dynamics 365 for Sales and sync them to Finance and Operations.
-- Generate sales orders in Finance and Operations and sync them to Dynamics 365 for Sales.
-- Generate invoices in Finance and Operations and sync them to Dynamics 365 for Sales.
+- Maintain accounts in Dynamics 365 for Sales and sync them to finance and operations as customers.
+- Maintain contacts in Dynamics 365 for Sales and sync them to finance and operations.
+- Maintain products in finance and operations and sync them to Dynamics 365 for Sales.
+- Create quotes in Dynamics 365 for Sales and sync them to finance and operations.
+- Generate sales orders in finance and operations and sync them to Dynamics 365 for Sales.
+- Generate invoices in finance and operations and sync them to Dynamics 365 for Sales.
 
 **Easy access to data through the power of Dataverse**
 
@@ -964,7 +964,7 @@ Integration between different ERP systems have traditionally been known for thei
 
 **Enhanced systems and flexible setup**
 
-The integration comes with a rich solution to optimize the experience and allow for complex process flows between Dynamics 365 for Sales and Dynamics 365 for Finance and Operations. Finance and Operations, optimized to support integration with enhanced entities and Dynamics 365 for Sales is optimized with a solution.
+The integration comes with a rich solution to optimize the experience and allow for complex process flows between Dynamics 365 for Sales and Dynamics 365 Finance. Finance and operations, optimized to support integration with enhanced entities and Dynamics 365 for Sales is optimized with a solution.
 
 For additional information, see [Prospect to cash](../../..//supply-chain/sales-marketing/prospect-to-cash.md).
 
@@ -986,7 +986,7 @@ In previous versions, the filtering options were limited to work group and it wa
 
 ### Vendor collaboration
 
-Vendor collaboration was enabled in earlier releases. In Dynamics 365 for Finance and Operations, we have enabled a seamless consumption of changes to a purchase order when a vendor accepts or suggests changes to a purchase order in the vendor collaboration interface and returns the changed purchase order to the purchasing professionals.
+Vendor collaboration was enabled in earlier releases. In Dynamics 365 Finance, we have enabled a seamless consumption of changes to a purchase order when a vendor accepts or suggests changes to a purchase order in the vendor collaboration interface and returns the changed purchase order to the purchasing professionals.
 
 - The vendor's acceptance of the purchase order without changes will automatically update the confirmed delivery date on the purchase order, and, optionally, confirm the order.
 - The vendor's suggested changes in quantities or delivery dates or the purchase order header info can easily be transferred to the purchase order. This is a one-click action for purchasing professionals when they receive the response with the suggested changes from the vendor.

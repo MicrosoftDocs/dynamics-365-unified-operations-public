@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Finance and Operations version 10.0 (April 2019)
-description: This article describes features that are in preview in Microsoft Dynamics 365 for Finance and Operations version 10.0. This version will be released in April 2019.
+title: What's new or changed in finance and operations version 10.0 (April 2019)
+description: This article describes features that are in preview in Microsoft Dynamics 365 Finance version 10.0. This version will be released in April 2019.
 author: tonyafehr
 ms.date: 10/15/2019
 ms.topic: article
@@ -27,17 +27,17 @@ ms.dyn365.ops.version: Release 10
 
 ---
 
-# What's new or changed in Finance and Operations version 10.0 (April 2019)
+# What's new or changed in finance and operations version 10.0 (April 2019)
 
 [!include [banner](../includes/banner.md)]
 
-This article describes features that are new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0. This version has a build number of 10.0.8. For more information about version 10.0, see [Additional resources](whats-new-changed-10.md#additional-resources).
+This article describes features that are new or changed in Microsoft Dynamics 365 Finance version 10.0. This version has a build number of 10.0.8. For more information about version 10.0, see [Additional resources](whats-new-changed-10.md#additional-resources).
 
 To learn about the features in Retail, see [What's new or changed in Dynamics 365 for Retail (April 2019)](../../../commerce/get-started/april-whats-new.md).
 
 ## Extensibility enhancements
 
-In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility including enhancements to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 10.0](../../dev-itpro/extensibility/extensibility-changes-10.md).
+In this release of finance and operations, numerous extensibility enhancements have been made to support extensibility including enhancements to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 Finance version 10.0](../../dev-itpro/extensibility/extensibility-changes-10.md).
 
 ## Catch weight product processing with warehouse management
 This feature allows you to use catch weight products within warehouse management processes. This feature is only available to a limited audience for this release. 
@@ -82,7 +82,7 @@ Maintaining tax setup parameters (such as tax rates and non-deductible percentag
 
 ### Enabling tax configuration with tax currency and sales tax codes
 
-Sales tax code is a mandatory setup for GTE to integrate with Finance and Operations. Previously, GTE created the sales tax code with the same name as the tax component when synchronizing the tax configuration, and it used the accounting currency for the auto-create sales tax codes.
+Sales tax code is a mandatory setup for GTE to integrate with finance and operations. Previously, GTE created the sales tax code with the same name as the tax component when synchronizing the tax configuration, and it used the accounting currency for the auto-create sales tax codes.
 
 Companies with multiple tax registration across the world need to maintain different tax currencies for tax components used in different countries. With the release of this feature, users can do the following.
 
@@ -104,7 +104,7 @@ As part of the ongoing enhancements to RCS, we are increasing the breadth of reg
 
 In China, official tax invoices can only be issued via two government-authorized invoicing software (Aisino and BaiWang). This feature lets you export the issued invoices into the .TXT and .XML file formats so you can import the files into the authorized invoicing software of Aisino and BaiWang providers accordingly. 
 
-You can also maintain the tax classification and codes in Finance and Operations, which is in alignment with tax integration interface 3.0. The exported invoice file will include commodity codes (classification of goods and services) which is mandatory for China. 
+You can also maintain the tax classification and codes in finance and operations, which is in alignment with tax integration interface 3.0. The exported invoice file will include commodity codes (classification of goods and services) which is mandatory for China. 
 
 The standard category hierarchy setting functionality is used to include the commodity codes in the invoice lines of the exported file.
 
@@ -126,9 +126,9 @@ Before this release, caching supported only a flat list of records, which meant 
 
 ### Setting up parameters by legal entity
 
-This feature allows you to configure an ER format that includes an abstract data source and lets you specify how this data source can be filled in by a business user. The business user can then use the Finance and Operations user interface to set up an ER format with master data from a specific legal entity. This can be done for any legal entity that might control execution of the corresponding ER format.
+This feature allows you to configure an ER format that includes an abstract data source and lets you specify how this data source can be filled in by a business user. The business user can then use the finance and operations user interface to set up an ER format with master data from a specific legal entity. This can be done for any legal entity that might control execution of the corresponding ER format.
 
-This feature also enables a business user to export an ER format with master data for a specific company from one Finance and Operations instance and import it to another one.
+This feature also enables a business user to export an ER format with master data for a specific company from one finance and operations instance and import it to another one.
 
 ### Specify a custom storage location for generated documents
 
@@ -185,13 +185,13 @@ Basic localization in the following two areas is available:
 ## Additional resources
 
 ### Bug fixes
-For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0, sign in to Lifecycle Services (LCS) and view the [KB article](https://go.microsoft.com/fwlink/?linkid=2080156). 
+For information about the bug fixes included in each of the updates that are part of finance and operations version 10.0, sign in to Lifecycle Services (LCS) and view the [KB article](https://go.microsoft.com/fwlink/?linkid=2080156). 
 
 ## Regulatory updates
-For information about the regulatory updates for Finance and Operations, see [Localization and Regulatory features – Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
+For information about the regulatory updates for finance and operations, see [Localization and Regulatory features – Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
 ### Platform update 24
-Microsoft Dynamics 365 for Finance and Operations version 10.0 includes Platform update 24. To learn more about Platform update 24, see [What's new or changed in Finance and Operations platform update 24 (March 2019)](whats-new-platform-update-24.md).
+Microsoft Dynamics 365 Finance version 10.0 includes Platform update 24. To learn more about Platform update 24, see [What's new or changed in finance and operations platform update 24 (March 2019)](whats-new-platform-update-24.md).
 
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
@@ -199,14 +199,15 @@ Wondering about upcoming and recently released capabilities in any of our busine
 [Check out the April '19 release notes](/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features for finance and operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article describes features that have been removed or deprecated for Dynamics 365 Finance.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for finance and operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to made to the compiler.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

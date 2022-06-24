@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Finance and Operations version 10.0.1 (April 2019)
-description: This article describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.1. This version will be released in April.
+title: What's new or changed in finance and operations version 10.0.1 (April 2019)
+description: This article describes features that are either new or changed in Dynamics 365 Finance version 10.0.1. This version will be released in April.
 author: tonyafehr
 ms.date: 10/02/2019
 ms.topic: article
@@ -26,12 +26,12 @@ ms.search.validFrom:
 ms.dyn365.ops.version: Release 10.0.1
 
 ---
-# What's new or changed in Finance and Operations version 10.0.1 (April 2019)
+# What's new or changed in finance and operations version 10.0.1 (April 2019)
 
 [!include [banner](../includes/banner.md)]
 
 
-This article describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.1. This version will be released in April and has a build number of 10.0.51. For more information about version 10.0.1, see [Additional resources](whats-new-changed-10-0-1.md#additional-resources).
+This article describes features that are either new or changed in Microsoft Dynamics 365 Finance version 10.0.1. This version will be released in April and has a build number of 10.0.51. For more information about version 10.0.1, see [Additional resources](whats-new-changed-10-0-1.md#additional-resources).
 
 To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.1](../../../commerce/get-started/whats-new-10-0-1.md).
 
@@ -72,19 +72,19 @@ For more information, see [VAT declaration (Russia)](../../../finance/localizati
 This functionality allows you to generate sales, purchase books, and factures journals in electronic format applicable from the year 2019. For details about how to work with sales and purchase books, see [Sales books, purchase books, and invoice-factures journals](../../../finance/localizations/rus-sales-books-purchase-books.md).
 
 ## Regulatory updates
-For information about the regulatory updates for Finance and Operations, see [Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
+For information about the regulatory updates for finance and operations, see [Regulatory updates](../../../finance/localizations/regulatory-updates.md). Alternatively, you can sign in to Lifecycle Services (LCS) and view the planned regulatory updates using the issue search tool, where you can search by country, type of feature, and release.
 
 ## Extensibility enhancements
 
-In this release of Finance and Operations, numerous enhancements have been made to support extensibility. For example, extensibility enhancements have been made to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.1](../../dev-itpro/extensibility/extensibility-changes-10-1.md).
+In this release of finance and operations, numerous enhancements have been made to support extensibility. For example, extensibility enhancements have been made to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 Finance version 10.0.1](../../dev-itpro/extensibility/extensibility-changes-10-1.md).
 
 ## Additional resources
 
 ### Bug fixes
-For information about the bug fixes included in each of the updates that are part of Finance and Operations version 10.0.1, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=299640&dbType=3&qc=2da6de70aab0f4c61b0f920b3242211f5043697189d50a6e1fb1ac3d27ee5f78).
+For information about the bug fixes included in each of the updates that are part of finance and operations version 10.0.1, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=299640&dbType=3&qc=2da6de70aab0f4c61b0f920b3242211f5043697189d50a6e1fb1ac3d27ee5f78).
 
 ### Platform update 25
-Microsoft Dynamics 365 for Finance and Operations version 10.0.1 includes Platform update 25. To learn more about Platform update 25, see [What's new or changed in Dynamics 365 for Finance and Operations platform update 25 (April 2019)](whats-new-platform-25.md).
+Microsoft Dynamics 365 Finance version 10.0.1 includes Platform update 25. To learn more about Platform update 25, see [What's new or changed in Dynamics 365 Finance platform update 25 (April 2019)](whats-new-platform-25.md).
 
 ### Dynamics 365 April '19 release notes
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
@@ -92,15 +92,16 @@ Wondering about upcoming and recently released capabilities in any of our busine
 [Check out the April '19 release notes](/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features for finance and operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article describes features that have been removed or deprecated for Dynamics 365 Finance.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for finance and operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically these are functional updates that need to made to the compiler.
 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
