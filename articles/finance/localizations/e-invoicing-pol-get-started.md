@@ -176,9 +176,11 @@ When you've completed all the required configuration steps, you can generate and
 > [!NOTE]
 > For Polish electronic invoices submission, there are the steps that must be performed additionally to the standard procedure described above.
 
-In Poland, the standard submission procedure will generate electronic invoices and store it on the service side witout actual submission to KSeF. To perform submission, do the following steps:
+In Poland, the standard submission procedure will only generate electronic invoices and store it on the service side witout actual submission to KSeF. To perform submission, do the following steps:
 1. In the **Organization administration** module, select **Periodic**, then select **Electronic documents** and open **Run submission process in export channels** form.
-2. In the **Channel** field, select the channel previously created on the [step 16](#channel) of the **Microsoft Dynamics D365 Finance configuration** section.
+2. In the **Channel** field, select the channel previously created on the [step 16](#channel) of the **Microsoft Dynamics D365 Finance configuration** section and click on the **OK** button.
+
+You can inquire the result of the submission in **Organization administration** module, **Periodic**, **Electronic documents**, **Electronic document submission log** form.
 
 ## Privacy notice
 
