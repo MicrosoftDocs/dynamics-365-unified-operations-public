@@ -96,7 +96,7 @@ If you use the [AzureSearchCustomHelp](walkthrough-help-azure.md) solution that 
 [Custom Help overview](custom-help-overview.md)  
 [Custom Help Toolkit](custom-help-toolkit.md)  
 [Language and locale descriptors in the product and in Help](language-locale.md)  
-[Configure the Help experience for Finance and Operations apps](../../fin-ops/get-started/help-connect.md)  
+[Configure the Help experience for finance and operations apps](../../fin-ops/get-started/help-connect.md)  
 [Help system](../../fin-ops/get-started/help-overview.md)
 
 
