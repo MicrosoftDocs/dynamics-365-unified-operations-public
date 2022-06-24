@@ -86,7 +86,7 @@ Company and currency exchange tables are global in nature and all dual-write use
 
 #### Initial synchronization is a full push or incremental push
 
-If an individual row fails to be synchronized, you can't resync only that individual row. The first run of initial synchronization pushes the whole data set. This behavior is known as a *full push*. When change tracking is enabled in finance and operations apps, the subsequent runs are an incremental push based on the last run map version. When change tracking is disabled, subsequent runs result in a full push. During the incremental push, the error records will not be considered for resubmission.
+If an individual row fails to be synchronized, you can't resync only that individual row. The first run of initial synchronization pushes the whole data set. This behavior is known as a *full push*. When change tracking is enabled in finance and operations apps, the subsequent runs are an incremental push that is based on the last run map version. When change tracking is disabled, subsequent runs cause a full push. During the incremental push, the error records won't be considered for resubmission.
 
 
 #### Only the top five errors can be viewed
