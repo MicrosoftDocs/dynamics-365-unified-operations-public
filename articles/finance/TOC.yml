@@ -3522,6 +3522,12 @@
               href: localizations/rus-set-up-inventory-profile.md
             - name: Use an inventory profile in documents and queries
               href: localizations/rus-use-inventory-profile-documents-queries.md
+           - name: Customs clearance
+            items:
+            - name: Set up customs clearance
+              href: localizations/rus-set-up-customs-clearance.md          
+            - name: Work with customs clearance
+              href: localizations/rus-work-with-customs-clearance.md
         - name: Reporting
           items:
           - name: Financial reporting
