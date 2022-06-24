@@ -95,7 +95,7 @@ Follow these steps to prepare the sample solution for performance testing. You c
     6. Comment out the **AzureActiveDirectoryConfiguration** and **KeyVaultConfigurations** elements.
 
     > [!NOTE]
-    > If your Finance and Operations apps were deployed in 21Vianet, be sure to specify `NetworkDomain="https://sts.chinacloudapi.cn/"` for **SelfMintingSysUser** and **SelfMintingAdminUser**.
+    > If your finance and operations apps were deployed in 21Vianet, be sure to specify `NetworkDomain="https://sts.chinacloudapi.cn/"` for **SelfMintingSysUser** and **SelfMintingAdminUser**.
 
     The result should resemble the following example.
 
@@ -198,3 +198,4 @@ We recommend that you use the console application to create the users, because i
 For more information about single-user or multi-user testing that uses the Performance SDK, see [Troubleshooting guide for single-user or multi-user testing with the Performance SDK](troubleshoot-perf-sdk-user-testing.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

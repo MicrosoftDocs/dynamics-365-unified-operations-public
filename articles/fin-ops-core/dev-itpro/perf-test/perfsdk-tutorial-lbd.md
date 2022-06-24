@@ -196,7 +196,7 @@ Follow these steps on each Application Object Server (AOS) VM in the on-premises
 
 7. In Service Fabric Explorer, find the **Code** package for the AOS node, select the ellipse button (**...**), and then select **Restart** to restart the application.
 
-    ![Restarting Finance and Operations from Service Fabric Explorer.](./media/ServiceFabricExplorerRestart.png)
+    ![Restarting finance and operations from Service Fabric Explorer.](./media/ServiceFabricExplorerRestart.png)
 
 ### Run the single-user test
 
@@ -536,3 +536,4 @@ A hotfix is available that resolves this issue. The Microsoft Knowledge Base (KB
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
