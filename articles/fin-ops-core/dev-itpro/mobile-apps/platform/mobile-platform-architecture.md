@@ -21,7 +21,7 @@ The mobile app communicates with Application Object Server (AOS) to get the meta
 
 ![Mobile architecture.](media/mobilearchitecture.png)
 
-The mobile app platform doesn't assume connectivity to Finance and Operations apps. Activities such as navigation, data view, and data entry don't require server connectivity after data has been cached.
+The mobile app platform doesn't assume connectivity to finance and operations apps. Activities such as navigation, data view, and data entry don't require server connectivity after data has been cached.
 
 ## Understanding navigation in the mobile app
 Navigation in the mobile app consists of four simple concepts: the dashboard, workspaces, pages, and actions. 
@@ -77,3 +77,4 @@ The mobile app designer lets you select the specific data fields from forms that
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+
