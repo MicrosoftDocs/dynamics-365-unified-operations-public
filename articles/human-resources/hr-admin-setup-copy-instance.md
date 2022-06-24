@@ -31,6 +31,8 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
+> [!NOTE]
+> Starting June 2022, Human Resources environments can be deployed only on the finance and operations app infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](/hr-admin-setup-provision-fo.md).
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Human Resources database to a sandbox environment. If you have another sandbox environment, you can also copy the database from that environment to a targeted sandbox environment.
 
@@ -56,7 +58,7 @@ The following events occur when you copy a Human Resources database:
 
 - Documents in Microsoft Azure Blob storage aren't copied from one environment to another. As a result, any documents and templates that are attached won't be copied and will remain in the source environment.
 
-- All users except the except those with the "System Administrator" security role and other internal service user accounts will be unavailable. The Admin user can delete or obfuscate data before other users are allowed back into the system.
+- All users except the except those with the "System Administrator" security role and other internal service user accounts will be unavailable. The Admin user can delete data before other users are allowed back into the system.
 
 - Any user with the "System Administrator" security role must make required configuration changes, such as reconnecting integration endpoints to specific services or URLs.
 
@@ -73,7 +75,7 @@ To complete this task, you first copy an instance, and then sign in to the Micro
 
 3. Select the instance to copy, and then select **Copy**.
 
-4. In the **Copy an instance** task pane, select the instance to overwrite, and then select **Copy**. Wait for the value of the **Copy status** field to be updated to **Completed**.
+4. In the **Copy an instance** task pane, select the instance to overwrite, and then select **Copy**. Wait for the **Copy status** field to be updated to **Completed**.
 
    ![[Select instance to overwrite.](./media/copy-instance-select-target-instance.png)](./media/copy-instance-select-target-instance.png)
 
@@ -82,6 +84,8 @@ To complete this task, you first copy an instance, and then sign in to the Micro
    ![[Select Power Platform.](./media/copy-instance-select-power-platform.png)](./media/copy-instance-select-power-platform.png)
 
 6. Select the Power Apps environment to copy, and then select **Copy**.
+
+For more information about copying Power Apps environments, see [Copy an environment](/power-platform/admin/copy-environment#copy-an-environment-1).
 
 7. When the copy process is completed, sign in to the target instance, and enable Dataverse integration. For more information and instructions, see [Configure Dataverse integration](./hr-admin-integration-common-data-service.md).
 
@@ -121,7 +125,7 @@ Also, the following statuses change when you copy an instance:
 
 ## Environment admin
 
-All users in the target sandbox environment, including Administrators, are replaced by the users of the source environment. Before you copy an instance, be sure that you're an Administrator in the source environment. If you aren't, you can't sign in to the target sandbox environment after the copy has completed.
+All users in the target sandbox environment, including Administrators, are replaced by the users of the source environment. Before you copy an instance, be sure that you're an Administrator in the source environment. If you aren't, you can't sign in to the target sandbox environment after the copy has been completed.
 
 All non-Administrator users in the target sandbox environment are disabled to prevent unwanted sign-ins in the sandbox environment. Administrators can reenable users if needed.
 

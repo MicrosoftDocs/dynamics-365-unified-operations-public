@@ -68,6 +68,8 @@
         items:
         - name: Provision Human Resources
           href: hr-admin-setup-provision.md
+        - name: Provision Human Resources in the finance and operations infrastructure
+          href: hr-admin-setup-provision-fo.md
         - name: Copy an instance
           href: hr-admin-setup-copy-instance.md
         - name: Remove an instance
