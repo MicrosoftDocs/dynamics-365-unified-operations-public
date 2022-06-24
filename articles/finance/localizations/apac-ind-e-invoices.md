@@ -88,7 +88,7 @@ You will receive a notification in the Action center, or you can manually refres
 
 After the data entities are imported, the following types of electronic message processing are available. This processing contains most of the setup that is required in your legal entity.
 
-- **OnlineInvoicing** – Indian online invoicing. This processing supports interoperation with the IRP system to submit information about sales, free text invoices, project customer invoices, and transfer orders. IRP responses are parsed to obtain and save the Invoice Registration Number (IRN) and signed QR code.
+- **OnlineInvoicing** – Indian online invoicing. This processing supports interoperation with the IRP system to submit information about sales invoices, free text invoices, project customer invoices, and transfer orders. IRP responses are parsed to obtain and save the Invoice Registration Number (IRN) and signed QR code.
 - **CancelInvoice** – Cancel Indian online invoicing. This processing supports interoperation with the IRP system to cancel previously registered customer invoices.
 - **RegisterEWB** – Register e-Way Bill. This processing supports interoperation with the system to submit information that includes e-Way Bill details. As a result of this processing, the e-Way Bill status and other details, such as the e-Way Bill number and date, are updated.
 - **CancelEWB** – Cancel e-Way Bill. This processing supports interoperation with the system to cancel previously registered e-Way Bills.
@@ -129,9 +129,7 @@ If no additional fields were imported from the data package, follow these steps.
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Additional fields**.
 2. Select **New**, and enter the following information:
 
-    - In the **Field name** field, enter **AppKey**.
-    - In the **Description** field, enter **Unique ID**.
-    - Enter the identifying unique user session.
+    - In the field, enter **AppKey**, enter **Unique ID**, identifying unique user session.
 
 #### Set up executable class parameters
 
@@ -187,8 +185,10 @@ To enable the use of Key Vault and advanced certificate storage, follow these st
 
 1. Go to **System administration** \> **Setup** \> **System parameters**.
 2. Set the **Use advanced certificate store** option to **No** to store sensitive data locally. Set it to **Yes** to use Key Vault storage.
-3. If you set the **Use advanced certificate store** option to **Yes**, go to **System administration** \> **Setup** \> **Key Vault parameters** to define the Key Vault parameters.
-4. Create a secret that has a reference to the custom Key Vault storage for each of five required secrets (**User name**, **User password**, **Client ID**, **Client secret**, and **Certificate**).
+3. If you set the **Use advanced certificate store** option to **Yes**, follow these steps:
+
+    1. Go to **System administration** \> **Setup** \> **Key Vault parameters** to define the Key Vault parameters.
+    2. Create a secret that has a reference to the custom Key Vault storage for each of five required secrets (**User name**, **User password**, **Client ID**, **Client secret**, and **Certificate**).
 
 > [!NOTE]
 > The .CER certificate must be stored in Key Vault as a secret, not as a certificate. Open your .CER file in any text editor, and copy its entire content to a secret value in Key Vault.
@@ -462,7 +462,7 @@ The following table provides a list of known issues and workaround information f
 
 | Issue | Solution |
 |-------|----------|
-| The project invoice can't be posted. If the **Validate before posting** checkbox is selected, the following validation error occurs when you try to post a project invoice proposal: "Document Details: Document number cannot be empty." | <p>Go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax setup**. Select the company, and then select **Parameters**. Set the **Tax document posting mode** field to **Synchronous**.</p><p>Action: Generate SalesInvoice/ProjInvoice/CustomsShippingBillJour/TransferOrder EM.</p> |
+| The project invoice can't be posted. If the **Validate before posting** checkbox is selected, the following validation error occurs when you try to post a project invoice proposal: "Document Details: Document number cannot be empty." | <p>Go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax setup**. Select the company, and then select **Parameters**. Set the **Tax document posting mode** field to **Synchronous**.</p><p></p> |
 | When an electronic invoice is generated in EM, the **StateCode_IN** field can't be found in the **LogisticsAddressState** table. | Turn off the **Minimize memory consumption by storing datasets at ER reports runtime** feature in the **Feature management** workspace. |
 | An error occurs while the token request is being generated. | <p>Make sure that no setup is missing for the ER configurations, electronic invoice parameters, or Key Vault. If the error contains the following text, the certificate is incorrectly set up: "Function DigitalCertificateManager::findCertificateBySubject has been incorrectly called." Download a certificate from IRP again, and add it to the key vault as a secret by copying the entire file contents. The following illustration shows an example of a correct setup.</p>![Item setup page.](media/apac-ind-einvoicesetup.png) |
 | An error occurs while the token response is being imported. The error message indicates that the client ID, client secret, user name, or password isn't valid. | Check Key Vault. The client ID or secret is incorrect. |
