@@ -182,10 +182,6 @@ In Poland, the standard submission procedure will only generate electronic invoi
 
 You can inquire the result of the submission in **Organization administration** module, **Periodic**, **Electronic documents**, **Electronic document submission log** form.
 
-## Privacy notice
-
-Enabling the **Polish electronic invoice (PL)** feature might require that limited data be sent. This data includes the organization's tax registration ID. The data will be transmitted to third-party agencies that have been authorized by the tax authority to send electronic invoices to that tax authority in the predefined format that is required for integration with the government's web service. An administrator can enable and disable the feature by going to **Organization administration** \> **Setup** \> **Electronic document parameters**. On the **Features** tab, select the row that contains the **Polish electronic invoice (PL)** feature, and then make the appropriate selection. Data that is imported from external systems into this Dynamics 365 online service are subject to our [privacy statement](https://go.microsoft.com/fwlink/?LinkId=512132). For more information, see the "Privacy notice" section in country-specific feature documentation.
-
 ## Additional resources
 
 - [Electronic invoicing overview](e-invoicing-service-overview.md)
