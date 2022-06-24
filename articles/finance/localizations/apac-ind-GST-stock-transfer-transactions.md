@@ -29,6 +29,10 @@ ms.dyn365.ops.version: 10.0.4
 
 [!include [banner](../includes/banner.md)]
 
+> [!WARNING]
+> The behavior described in this article is being deprecated and will be removed starting from ...
+
+
 Complete the procedures in this article to create a stock transfer order that has tax on the transfer price.
 
 ## Create a stock transfer order

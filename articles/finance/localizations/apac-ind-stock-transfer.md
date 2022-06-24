@@ -55,11 +55,6 @@ For more information, see [Feature management overview](../../fin-ops-core/fin-o
 
 You also need to configure the India GST functionality to enable GST calculation for stock transfer orders. For more information, see [India Goods and Services Tax (GST) overview](apac-ind-gst.md).   
 
-> [!NOTE]
-> 
-> - 
-> - Changing the unit of measure on stock a transfer order line is restricted.
-
 ### Set up default transfer type and price type for transfer orders
 
 You can define a default transfer order type and a default price type for transfer orders that are created manually. On the **Inventory and warehouse management parameters** page, on the **Transfer orders** tab, select **Stock transfer** in the **Transfer type** field to enable the **Stock transfer** functionality for all newly created transfer orders.  In the **Price type** field, select a default price type for newly created stock transfer orders:

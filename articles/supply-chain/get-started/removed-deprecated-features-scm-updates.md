@@ -39,6 +39,17 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
 
+## Features removed or deprecated in the Supply Chain Management 10.0.29 release
+
+### Stock transfer orders that have tax on the transfer price
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | The [Stock transfer orders that have tax on the transfer price](../production-control/config-job-card-device.md) is being replaced by the new [production floor execution interface](../production-control/production-floor-execution-configure.md). |
+| **Replaced by another feature?**   | Yes, the [job card device](../production-control/config-job-card-device.md) is to be replaced by the new [production floor execution interface](../production-control/production-floor-execution-configure.md). |
+| **Product areas affected** | Supply Chain Management - production control |
+| **Deployment option** | Cloud and on-premises |
+| **Status** | Being deprecated. The Stock transfer orders that have tax on the transfer price will not receive support with bug and security fixes, and feature enhancements will no longer be provided. After April 2023, customers will be asked to use by default the improved functionality Stock transfer orders for India. After October 2023, the Stock transfer orders that have tax on the transfer price will be n longer anavailable and customers will be asked to move to the improved functionality Stock transfer orders for India. For more information, see [Stock transfer orders for India](../finance/localizations/apac-ind-stock-transfer)||
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.19 release
 
