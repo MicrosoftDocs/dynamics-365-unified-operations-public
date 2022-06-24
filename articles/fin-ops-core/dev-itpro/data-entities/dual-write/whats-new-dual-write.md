@@ -17,17 +17,7 @@ ms.dyn365.ops.version: 10.0.8
 [!include [banner](../../includes/banner.md)]
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and Finance and Operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
-## June 2022 release
 
-The June release of dual-write core solution 1.0.35.0 contains the following features and bug fixes.
-
-| Feature | Description | Status |
-|---|---|---|
-| Bug fix | Fixes bug where dual-write fails for improperly formatted table lookups, which were configured with a missing lookup attribute. | General availability |
-| Error handling | Provides actionable error message for invalid authentication failure. | General availability |
-| Performance | Manages dual-write plugins volume and remove the outdated plugins from the environment. | General availability |
-| Bug fix | dual-write plugin timeout duration is now synchronized with the Finance and Operations live sync timeout duration. | General availability |
-| Compliance | Due to compliance reasons, store the catchup sync errors for 24 hours only. Administrators are requested to retry the catchup errors within 24 hours. | General availability |
 
 ## April 2022 release
 
