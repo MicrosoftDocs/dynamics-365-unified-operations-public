@@ -45,7 +45,8 @@ Before you start to provision a new environment, the following prerequisites mus
 
 ## Provision a Human Resources trial environment
 
-Starting April 2022, the Human Resources trial environments are available on the stand-alone application. Potential customers who are interested in evaluating the Human Resources capabilities in finance and operations apps can use the free 30-day trial together with the demo data. Dynamics 365 Finance will include the Human Resources capabilities, which are brought to the Finance infrastructure through the merge of the stand-alone application. For more information, see [Merging of HR offerings brings capabilities together for customers](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers)/ For more information about Finance trials, see the [step-by-step guide](../fin-ops-core/fin-ops/get-started/before-you-buy.md).
+Starting April 2022, the Human Resources trial environments are available on the stand-alone application. Potential customers who are interested in evaluating the Human Resources capabilities in finance and operations apps can use the free 30-day trial together with the demo data. Dynamics 365 Finance will include the Human Resources capabilities, which are brought to the Finance infrastructure through the merge of the stand-alone application. For more information, see [Merging of HR offerings brings capabilities together for customers](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). 
+For more information about Finance trials, see the [step-by-step guide](../fin-ops-core/fin-ops/get-started/before-you-buy.md).
 
 ## Plan Human Resources environments
 
