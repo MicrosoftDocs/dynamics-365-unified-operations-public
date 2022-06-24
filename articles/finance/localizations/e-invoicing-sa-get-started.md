@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you get started with Electronic invoicing for Saudi Arabia in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. It guides you through the configuration steps that are country/region-dependent in different components of the system. 
+This topic provides information that will help you get started with Electronic invoicing for Saudi Arabia. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management application. These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md). 
 
 ### Prerequisites
 
