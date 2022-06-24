@@ -25,7 +25,7 @@ The June release of [Dual-write core solution 1.0.35.0](https://appsource.micros
 | Feature | Description | Status |
 |---|---|---|
 | Bug fix | Fixes bug where dual-write fails for improperly formatted table lookups with a missing lookup attribute value in the transform. | General availability |
-| Error handling | Provides actionable error message for invalid authentication failure during setup from LCS or Power Platform Admin Center. | General availability |
+| Error handling | Provides actionable error message for invalid authentication failure during setup from Dynamics Lifecycle Services or Power Platform Admin Center. | General availability |
 | Performance | Manages dual-write plugins volume and removes the outdated plugins from the environment. | General availability |
 | Bug fix | Dual-write plugin timeout duration is now synchronized with the finance and operations live sync timeout duration. It means the dual-write transaction commit must succeed on both sides within 2 minute window. Otherwise it is fail on both sides. | General availability |
 | Compliance | Due to compliance reasons, when entity maps are paused in dual-write, the data is stored for 24 hours only. Administrators are requested to run the maps within 24 hours. | General availability |
