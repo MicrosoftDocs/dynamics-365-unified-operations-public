@@ -1,6 +1,6 @@
 ---
 # required metadata
-title: Russian address formats
+title: Russian address formats. Import from State Address Register (GAR)
 description: This topic provides information about how to import addresses in the GAR format.
 author: epodkolz
 ms.date: 23/06/2022
