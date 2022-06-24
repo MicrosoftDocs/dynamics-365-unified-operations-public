@@ -148,7 +148,7 @@ The business scenario involves sending an email message whenever a free text inv
 
 9. Select **New Step** to add a new action.
 10. Search for the **Parse Json** data operation. This step is required so that the message can be parsed by using the provided schema for the data contract.
-11. Click in the **Content** field of the **Parse Json** action. The pane that appears gives you the option form the previous trigger. You must select the **Data object** field of the event grid message that contains the payload that is transmitted by Finance and Operations.
+11. Click in the **Content** field of the **Parse Json** action. The pane that appears gives you the option form the previous trigger. You must select the **Data object** field of the event grid message that contains the payload that is transmitted by finance and operations.
 
     <img alt="Logic appas parse JSON " src="../../media/BEF-Howto-EventGrid-14.png" width="50%">
 

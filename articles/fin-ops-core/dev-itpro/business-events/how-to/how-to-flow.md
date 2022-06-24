@@ -28,14 +28,14 @@ ms.dyn365.ops.version: 2019-6-30
 
 [!include[banner](../../includes/banner.md)]
 
-This article explains how to configure and consume a business event from a Microsoft Power Automate endpoint by using the **When a Business Event occurs** trigger of the Finance and Operations connector. 
+This article explains how to configure and consume a business event from a Microsoft Power Automate endpoint by using the **When a Business Event occurs** trigger of the finance and operations connector. 
 
 This article shows how to perform the following tasks:
 
 - Create a new flow in Power Automate.
 - Trigger a business event.
 
-The steps in this article show how use the Finance and Operations connector. However, they can also be applied to the process of creating flows in Power Automate for Finance and Operations apps business events and data events in the Microsoft Dataverse connector. For more information about Finance and Operations apps business events and data events that have the **When an action is performed** and **When a row is added, modified or deleted** triggers in the Dataverse connector, see [Business events in Microsoft Power Automate](../business-events-flow.md).
+The steps in this article show how use the finance and operations connector. However, they can also be applied to the process of creating flows in Power Automate for finance and operations apps business events and data events in the Microsoft Dataverse connector. For more information about finance and operations apps business events and data events that have the **When an action is performed** and **When a row is added, modified or deleted** triggers in the Dataverse connector, see [Business events in Microsoft Power Automate](../business-events-flow.md).
 
 ## Create a new flow in Power Automate
 
@@ -45,7 +45,7 @@ The steps in this article show how use the Finance and Operations connector. How
 
 3.  Select **New \> Create from blank**.
 
-4.  Search for **Dynamics 365 for Finance and Operations** and select the connector.
+4.  Search for **Dynamics 365 Finance** and select the connector.
      
 5.  You will notice a trigger named **When a Business Event occurs**. Select this trigger.
 
@@ -113,3 +113,4 @@ Here are some troubleshooting suggestions:
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+
