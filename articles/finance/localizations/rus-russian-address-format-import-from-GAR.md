@@ -94,7 +94,7 @@ For more information on importing ER configurations, see [Download ER configurat
 > [!IMPORTANT]
 > Currently, there is a 2Gb limitation for the import of addresses. Zip files that exceed 2Gb in size can’t be imported. 
 
-PICT Import GAR
+![ImportFromGARDialog.](./media/RUAddressImportGARDialog.png)
 
 Due to the size limitation for import of addresses, you need to unzip the downloaded database, and create zip file for the state(s) that are needed. 
 You can import either one state or several states. To import several states, the zip file should contain folders with those states. Follow these steps to create a zip file with required states:
@@ -108,7 +108,8 @@ You can import either one state or several states. To import several states, the
     - AS_OPERATION_TYPES_*
     - AS_ROOM_TYPES_*
     
-PICT MetaData
+
+![AddressMetadata](./media/RUAddressMetadata.png)
 
 > [!Note]
 >
@@ -120,30 +121,30 @@ After import is completed, you can validate the imported data on the **Address s
 
 The **Urban/Rural settlement** and **Localit**y are imported to the **City** level with the respective **Address level**. If exists, the parent **Urban/Rural settlement** will contain the respective code of **Urban/Rural settlement**.
 
-PICT Address setup
+![AddressSetupCityLevel](./media/RUAddressSetupCity.png)
 
 > [!Note]
 >
 > Filtering by **Urban/Rural settlement**, **City** and **Locality** address levels is not supported.
 
-Codes for Cities (including Urban/Rural settlements and Localities), Districts, Streets are generated automatically while importing. They are unique within the parent address component level. If the current parent level component has no children, then 001 or 0001 will be assigned (depending on the object type); if there are child records, the new one will be incremented by 1.
+Codes for **Cities** (including **Urban/Rural settlements** and **Localities**), **Districts**, **Streets** are generated automatically while importing. They are unique within the parent address component level. If the current parent level component has no children, then 001 or 0001 will be assigned (depending on the object type); if there are child records, the new one will be incremented by 1.
 
 ### Importing GAR in batch
-The process of importing of addresses can take time, thus it is highly recommended to use the Batch job mode by enabling the Batch processing option. 
-You can review the status of the “Import from GAR” batch in the Batch jobs page. You can also review the log there (Batch job tab, Log button). The import can be completed with Error. For example, if the version of the file is older than the one that was already imported, the error “Address version validation failed: the version is older than the latest imported version” will be shown.
+The process of importing of addresses can take time, thus it is highly recommended to use the batch job mode by enabling the **Batch processing** option. 
+You can review the status of the “Import from GAR” batch in the **Batch jobs** page. You can also review the log there (**Batch job** tab, **Log** button). The import can be completed with error. For example, if the version of the file is older than the one that was already imported, the error “Address version validation failed: the version is older than the latest imported version” will be shown.
 
 ## Address format setup
 Follow the steps described in [Address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md#set-up-address-formats).
 
 To comply with the GAR address format, on the Address setup page, on the **Address format** tab, add new **Urban/Rural settlement** and **Locality address** components that are available in the **Address application object** enum.
 
-PICT ADDRESS SETUP
+![AddressFormatSetup](./media/RUAddressFormatSetup.png)
 
 These address components are also available on the **Manage addresses** page, and **New Address** and **Edit Address** dialogs:
 
-PICT MANAGE ADDR
+![AddressManageAddresses](./media/RUAddressManageAddresses.png)
 
-PICT EDIT ADDR
+![AddressEditAddress](./media/RUAddressEditAddress.png)
 
 [!INCLUDEfooter-include]
 
