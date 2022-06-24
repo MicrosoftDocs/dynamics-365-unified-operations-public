@@ -53,7 +53,7 @@ Before you begin the procedures in this topic, complete the following prerequisi
 - Make sure that the following Electronic Reporting format configurations are imported. For moe information, see [Import Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md)
     - Sales e-invoice (SA).
     - Project e-invoice (SA).
-    - Fiscal document format.
+    - Retail fiscal document format (for Retail specific scenarios, if required).
 
 ## Country-specific configuration for the Saudi Arabian electronic invoice (SA) Electronic invoicing feature
 
