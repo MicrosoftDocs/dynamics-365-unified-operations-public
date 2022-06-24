@@ -82,8 +82,7 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 </tbody>
 </table>  
   
-#### Authentication
-
+#### Server information
 <table>
 <thead>  
 <tr>
