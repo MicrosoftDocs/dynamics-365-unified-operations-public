@@ -2,7 +2,7 @@
 title: Troubleshoot issues during initial synchronization
 description: This article provides troubleshooting information that can help you fix issues that might occur during initial synchronization.
 author: RamaKrishnamoorthy 
-ms.date: 03/16/2020
+ms.date: 06/24/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
@@ -233,10 +233,10 @@ If you have run the initial sync for **Customer** data and have the **Customer**
 
 ## Float data type with zero value cannot be synchronized
 
-Initial sync may fail for records with zero value for a price field like Fixed Payment Amount or Amount in transaction currency. As a result, you will see an error message like the following:
+Initial sync may fail for records with a zero value for a price field, such as **Fixed payment amount** or **Amount** in transaction currency. As a result, you will see an error message like the following:
 
 *An error occurred while validating input parameters: Microsoft.OData.ODataException: Cannot convert the literal '000000' to the expected type'Edm.Decimal',...*
 
-The problem is with the 'Language locale' value under the 'Source data formats' inside Finance and Operations \ Data Management module. Please change the Language locale to en-us and try again.
+The problem is with the **Language locale** value under the **Source data formats** in the Data management module. Please change the **Language locale** field to **en-us** and try again.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
