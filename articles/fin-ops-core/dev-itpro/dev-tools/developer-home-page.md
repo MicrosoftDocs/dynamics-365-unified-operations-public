@@ -21,7 +21,7 @@ This article provides links to topics about development.
 
 ## Overview
 
-The Finance and Operations apps enable the entire enterprise resource planning (ERP) application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. The apps leverage the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft. The development experience includes:
+The finance and operations apps enable the entire enterprise resource planning (ERP) application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. The apps leverage the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft. The development experience includes:
 
 - Development tools that are decoupled from any running environment. You develop against local, XML-based files, not the online database.
 - Microsoft Visual Studio is the development environment. The Visual Studio environment is customized to provide you with a smooth and familiar experience.
@@ -62,7 +62,7 @@ The Finance and Operations apps enable the entire enterprise resource planning (
 
 - [Development tools in Visual Studio](development-tools-overview.md)
 - [Application Explorer](application-explorer.md)
-- [Finance and Operations project type in Visual Studio](projects.md)
+- [Finance and operations project type in Visual Studio](projects.md)
 - [Element designers](element-designers.md)
 - [Commands for determining how elements are used](element-usage.md)
 - [Models and packages](models.md)
@@ -180,3 +180,4 @@ The client is an HTML web client that runs in all major browsers. For informatio
 [Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

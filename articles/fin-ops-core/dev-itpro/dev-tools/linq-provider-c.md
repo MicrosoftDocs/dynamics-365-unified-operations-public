@@ -107,7 +107,7 @@ var query = customers
     .Select(primaryAndForeign => primaryAndForeign.P);
 ```
 
-There's a good match between the `while select` syntax used in X++ and the specialized LINQ syntax in C\# (Visual Basic has particularly good LINQ syntax). It's evident that the specialized LINQ syntax is actually very useful in expressing joins, but the specialized syntax built into the C\# compiler doesn't handle the extensions provided by the Finance and Operations applications.
+There's a good match between the `while select` syntax used in X++ and the specialized LINQ syntax in C\# (Visual Basic has particularly good LINQ syntax). It's evident that the specialized LINQ syntax is actually very useful in expressing joins, but the specialized syntax built into the C\# compiler doesn't handle the extensions provided by the finance and operations applications.
 
 ### Limitation of the specialized LINQ syntax
 
@@ -173,3 +173,4 @@ private IEnumerable RichCustomers(bool orderByName)
 LINQ queries can be applied for CRUD operations. But the model for updating, deleting, and inserting records isn't useful for the expression of set based operations. We're now working on extensions to add to the LINQ model that will translate into set based operations.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
