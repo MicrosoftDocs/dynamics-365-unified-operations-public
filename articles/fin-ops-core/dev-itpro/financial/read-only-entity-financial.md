@@ -92,7 +92,7 @@ In the properties, we assign **ReferenceDistribution** a range filter value of *
 ## Expose financial dimensions as fields
 The next important step is to expose the financial dimensions as separate fields on the entity. Because our scenario builds on top of a posted transaction, we must add the fields to the DimensionCombinationentity entity. We want to make the adjustments in a resilient manner by using the extension approach, so that minimal maintenance will be required when we upgrade the code base to newer versions in the future.
 
-### Microsoft Dynamics 365 for Finance and Operations, Enterprise edition version 1611
+### Microsoft Dynamics 365 Finance, Enterprise edition version 1611
 
 For version 1611 or later, you should use the wizard that is available in Microsoft Visual Studio (at **Dynamics 365** &gt; **Addins** &gt; **Add financial dimensions for Odata**). For instructions, see [Add dimensions to Excel templates](dimensions-overview.md).
 
@@ -179,3 +179,4 @@ The entity work is now complete, and we can build it.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

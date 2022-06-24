@@ -59,7 +59,7 @@ This article provides links to topics about financials development.
 - Currency Exchange rate providers
 
     + [Create exchange rate providers](../financial/create-exchange-rate-providers.md)
-    + [Create exchange rate providers in Finance and Operations version 8.0](../financial/create-exchange-rate-8.md)
+    + [Create exchange rate providers in finance and operations version 8.0](../financial/create-exchange-rate-8.md)
 
 - Process automation framework
 
