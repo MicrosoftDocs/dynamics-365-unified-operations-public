@@ -28,11 +28,11 @@ The activity log provides a chronological list of events that a specific table m
 
 ## Re-running execution for Initial sync
 
-If you encounter issues while you copy pre-existing data between Finance and Operations apps and Dataverse, the **Initial sync details** tab provides a count of the errors. 
+If you encounter issues while you copy pre-existing data between finance and operations apps and Dataverse, the **Initial sync details** tab provides a count of the errors. 
 
 ![Initial sync error.](media/Initial-sync-rerun-1.png)
 
-Clicking on the individual project will show you the direction in which the sync failed (Finance and Operations app to Dataverse or vice-versa) and details of why it failed. You can choose to fix the underlying issues and then select **Re-run execution** which retries the entire execution, along with the records that failed or errored out in the last sync. Once this completes, initial sync is completed and the table returns to the **Running** state. There may be cases where you want to ignore the errors and add new incremental data. In these cases, you can select **Rerun execution without errors**, which lets you add new data and not retry the errored records. 
+Clicking on the individual project will show you the direction in which the sync failed (finance and operations app to Dataverse or vice-versa) and details of why it failed. You can choose to fix the underlying issues and then select **Re-run execution** which retries the entire execution, along with the records that failed or errored out in the last sync. Once this completes, initial sync is completed and the table returns to the **Running** state. There may be cases where you want to ignore the errors and add new incremental data. In these cases, you can select **Rerun execution without errors**, which lets you add new data and not retry the errored records. 
 
 ![Initial sync retry with errors.](media/Initial-sync-rerun-3.png)
 
