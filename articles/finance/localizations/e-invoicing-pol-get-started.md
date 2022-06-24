@@ -51,7 +51,7 @@ Before you begin the procedures in this topic, complete the following prerequisi
     - The secret for the legal entity tax identification number.
     - The secret that will contain the public key provided by Polish National system for electronic invoicing [KSEF](https://www.podatki.gov.pl/ksef).
     - The certificate for digital signing.
-- Make sure that the following Electronic Reporting format configurations are imported. For moe information, see 
+- Make sure that the following Electronic Reporting format configurations are imported. For moe information, see [Import Electronic reporting (ER) configurations](../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md)
     - Sales e-invoice (PL).
     - Project e-invoice (PL).
     - Advance e-invoice (PL).
