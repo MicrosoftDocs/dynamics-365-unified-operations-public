@@ -51,7 +51,7 @@ Before you begin the procedures in this topic, complete the following prerequisi
     - The secret for the legal entity tax identification number.
     - The secret that will contain the public key provided by Polish National system for electronic invoicing [KSEF](https://www.podatki.gov.pl/ksef).
     - The certificate for digital signing.
-- Make sure that the following Electronic Reporting format configurations are imported. For moe information, see [Import Electronic reporting (ER) configurations](../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md)
+- Make sure that the following Electronic Reporting format configurations are imported. For moe information, see [Import Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md)
     - Sales e-invoice (PL).
     - Project e-invoice (PL).
     - Advance e-invoice (PL).
@@ -91,6 +91,7 @@ Some of the parameters must be additionally configured directly in Microsoft Dyn
    - select **Pending** in the **Submission status** field.
    - select **KSeF response data import format (PL)** in the **Model mapping** field.
 7. Repeat the steps 5 through 6 for the **Project nvoice** and **Advance invoice** electronic documents.
+8. In the **Feature management** workspace, the **Export channels for electronic invoicing integraion** feature must be enabled. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Microcost Dynamics D365 Finance configuration
 
