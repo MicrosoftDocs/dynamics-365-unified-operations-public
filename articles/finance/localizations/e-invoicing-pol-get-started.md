@@ -99,7 +99,7 @@ Some of the parameters must be additionally configured directly in Microsoft Dyn
 13. In the **Value** field, select **Edit** and enter the data channel name. This is the name of the **Data channel** configured in RCS, in the **Export chanel** section for the **Submit batch** feature setup.
 14. Save changes and complete the derived configuration.
 15. In the **Organization administration** module, in the **Setup** section, open the **Electronic documents parameters** form.
-16. In the **Integration channels** section, add a new channel with the same name as was used in step 13.
+16. <a id="channel"></a>In the **Integration channels** section, add a new channel with the same name as was used in step 13.
 17. Enter a required Legal entity code in the **Company** column and refer to the derived configuration in the **Document context** column.
 18. Save changes and and close the page.
 
@@ -176,7 +176,9 @@ When you've completed all the required configuration steps, you can generate and
 > [!NOTE]
 > For Polish electronic invoices submission, there are the steps that must be performed additionally to the standard procedure described above.
 
-
+In Poland, the standard submission procedure will generate electronic invoices and store it on the service side witout actual submission to KSeF. To perform submission, do the following steps:
+1. In the **Organization administration** module, select **Periodic**, then select **Electronic documents** and open **Run submission process in export channels** form.
+2. In the **Channel** field, select the channel previously created on the [step 16](#channel) of the **Microsoft Dynamics D365 Finance configuration** section.
 
 ## Privacy notice
 
