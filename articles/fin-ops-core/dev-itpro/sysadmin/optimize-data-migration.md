@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Optimize data migration for Finance and Operations apps
-description: The article provides an overview of steps and actions that you can use to optimize data migration for Finance and Operations apps.
+title: Optimize data migration for finance and operations apps
+description: The article provides an overview of steps and actions that you can use to optimize data migration for finance and operations apps.
 author: skaue-ms
 ms.date: 10/20/2021
 ms.topic: article
@@ -25,7 +25,7 @@ ms.dyn365.ops.version: 10.0.13
 
 ---
 
-# Optimize data migration for Finance and Operations apps
+# Optimize data migration for finance and operations apps
 
 [!include [banner](../includes/banner.md)]
 
@@ -193,3 +193,4 @@ For more information about performance troubleshooting and optimization, see the
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -39,7 +39,7 @@ To enable the automatic export feature, a one-time setup and configuration proce
 
 The one-time set up and configuration means that you'll need to: 
 1. Set up a B2B invitation service application in Azure AD.
-2. Configure the B2B invitation service settings in Finance and Operations.
+2. Configure the B2B invitation service settings in finance and operations.
 
 ### Set up a B2B invitation service application in Azure AD
 The tenant administrator of your Azure AD tenant will need to complete the following steps.
@@ -55,7 +55,7 @@ The tenant administrator of your Azure AD tenant will need to complete the follo
 5. Enter the following information, and then click **Create**.
     1. In the **Name** field, enter the name of the application. For example: **B2B admin application**.
     2. In the **Application type** field, select **Web app /API**.
-    3. In the **Sign-on URL** field, enter the URL for Finance and Operations.
+    3. In the **Sign-on URL** field, enter the URL for finance and operations.
   
 6. Click the **App registrations** tab, click the newly created application, copy the **Application ID**, and save it. You will need this later.
 
@@ -90,7 +90,7 @@ The tenant administrator of your Azure AD tenant will need to complete the follo
 
 ### Configure the B2B invitation service settings
 
-1. Sign in to Finance and Operations as administrator.
+1. Sign in to finance and operations as administrator.
 
 2. Navigate to the **B2B Invitation Configuration** page, and click **Edit**.
 
