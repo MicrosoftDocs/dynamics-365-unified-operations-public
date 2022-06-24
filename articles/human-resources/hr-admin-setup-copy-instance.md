@@ -85,7 +85,9 @@ To complete this task, you first copy an instance, and then sign in to the Micro
 
 6. Select the Power Apps environment to copy, and then select **Copy**.
 
-7. When the copy process is completed, sign in to the target instance, and enable Dataverse integration. For more information, see [Configure Dataverse integration](./hr-admin-integration-common-data-service.md).
+For more information about copying Power Apps environments, see [Copy an environment](/power-platform/admin/copy-environment#copy-an-environment-1).
+
+7. When the copy process is completed, sign in to the target instance, and enable Dataverse integration. For more information and instructions, see [Configure Dataverse integration](./hr-admin-integration-common-data-service.md).
 
 ## Data elements and statuses
 
