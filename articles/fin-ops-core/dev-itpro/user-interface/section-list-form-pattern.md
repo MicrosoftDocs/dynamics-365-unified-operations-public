@@ -49,7 +49,7 @@ The Form Part Section List form patterns are workspace-specific patterns that ar
 
 [![Wireframe for Form Part Section List--Double form pattern.](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)
 
-## Pattern changes for Finance and Operations
+## Pattern changes for finance and operations
 These patterns did not exist for Microsoft Dynamics AX 2012.
 
 ## Model
