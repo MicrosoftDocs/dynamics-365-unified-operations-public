@@ -45,11 +45,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | The [Stock transfer orders that have tax on the transfer price](../production-control/config-job-card-device.md) is being replaced by the new [production floor execution interface](../production-control/production-floor-execution-configure.md). |
-| **Replaced by another feature?**   | Yes, the [job card device](../production-control/config-job-card-device.md) is to be replaced by the new [production floor execution interface](../production-control/production-floor-execution-configure.md). |
-| **Product areas affected** | Supply Chain Management - production control |
+| **Reason for deprecation/removal** | The [Stock transfer orders that have tax on the transfer price](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) is being replaced by the new [production floor execution interface](../production-control/production-floor-execution-configure.md). |
+| **Replaced by another feature?**   | Yes, the [Stock transfer orders that have tax on the transfer price](../../finance/localizations/apac-ind-gst-stock-transfer-transactions.md) is to be replaced by the [Stock transfer orders for India](../finance/localizations/apac-ind-stock-transfer.md) functionality. |
+| **Product areas affected** | Supply Chain Management - inventory |
 | **Deployment option** | Cloud and on-premises |
-| **Status** | Being deprecated. The Stock transfer orders that have tax on the transfer price will not receive support with bug and security fixes, and feature enhancements will no longer be provided. After April 2023, customers will be asked to use by default the improved functionality Stock transfer orders for India. After October 2023, the Stock transfer orders that have tax on the transfer price will be n longer anavailable and customers will be asked to move to the improved functionality Stock transfer orders for India. For more information, see [Stock transfer orders for India](../finance/localizations/apac-ind-stock-transfer)||
+| **Status** | Being deprecated. The Stock transfer orders that have tax on the transfer price will not receive support with bug and security fixes, and feature enhancements will no longer be provided. <br><br>After April 2023, customers will be asked to use by default the improved functionality Stock transfer orders for India. After October 2023, the Stock transfer orders that have tax on the transfer price will be no longer available and customers will be asked to move to the improved functionality Stock transfer orders for India. <br><br>For more information, see [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md)||
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.19 release
 
