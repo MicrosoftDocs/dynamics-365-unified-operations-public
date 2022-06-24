@@ -52,7 +52,7 @@ journals, KTS numbers, operations for posting GTD and KTS in a usual way.
 ![](media/7358a387b3bf14e4d6a9f5d5dda918da.png)
 
 
-### *Set up ledger posting groups*
+## Set up ledger posting groups
 
 1.  Go to **Tax \> Setup \> Sales tax \> Ledger porting groups.**
 2.  Create a ledger posting group for each of the following type of customs
@@ -86,7 +86,7 @@ duties and fees are not included in the cost of the product.
 | Customs fee for export issuance | 44.                                         |
 | Customs fee for import issuance | 44.                                         |
 
-### *Set up a fixed unit*
+### Set up a fixed unit
 
 To calculate customs payments for the calculation method **Weight** or
 **Volume**, set up fixed units.
@@ -96,7 +96,6 @@ To calculate customs payments for the calculation method **Weight** or
 2.  If it is necessary, create and set up the unit in a usual way. For more
     information, see [Manage units of
     measure](https://docs.microsoft.com/dynamics365/supply-chain/pim/tasks/manage-unit-measure).
-
 3.  On the **General** FastTab, set the following fields:
    
     -   In the **Classification** section, in the **Unit class** field, select
@@ -107,7 +106,7 @@ To calculate customs payments for the calculation method **Weight** or
 
 ![Graphical user interface, text, application, email Description automatically generated](media/fc7c69312d444c7068301c88b18e7eb5.png)
 
-### *Set up sales tax codes *
+### Set up sales tax codes
 
 To set up a sales tax codes that can be used to automatically calculate customs
 payments, follow these steps.
@@ -122,9 +121,7 @@ payments, follow these steps.
 
     -  On the **Calculation** FastTab, in the **Origin** field, select **Amount
         per unit.**
-
     -  In the **Unit** field, select the unit value.
-
     -  On the **General** FastTab, in the **Fee type** field, select the type
         of customs fee.
 
@@ -190,7 +187,7 @@ payments, follow these steps.
 
 7.  On the Action Pane, select **Save**.
 
-### *Set up an inventory profile*
+## Set up an inventory profile
 
 1.  Go to **Inventory management** \> **Setup** \> **Dimensions** \> **Inventory
     profiles**.
@@ -201,7 +198,7 @@ payments, follow these steps.
 
 ![Graphical user interface, application Description automatically generated](media/9004b4f431418a2dc0af54dc37192c14.png)
 
-### *Set up the terms of delivery for customs clearance of products*
+## Set up the terms of delivery for customs clearance of products
 
 Follow these steps to set up the terms of delivery for the customs clearance of
 imported products, which determine the time of transfer of ownership, and the
@@ -242,7 +239,7 @@ overhead expenses.
 
 ![Graphical user interface, text, application, email Description automatically generated](media/8585baddca9f5b848ef1c7195b929dc1.png)
 
-### *Set up a charges code for customs payments*
+## Set up a charges code for customs payments
 
 If for imported purchases the transfer of ownership occurred after the customs
 clearance procedure, the amounts of customs duties and fees adjust the purchase
@@ -293,7 +290,7 @@ are not available for manual choosing when creating a purchase order.
 
 5.  On the Action Pane, select **Save**.
 
-### *Assign a charges code to terms of delivery*
+## Assign a charges code to terms of delivery
 
 To relate the terms of delivery with overhead expenses that increase the
 transaction amount (the cost of imported products), follow these steps.
@@ -308,7 +305,8 @@ transaction amount (the cost of imported products), follow these steps.
 4.  In the **Delivery terms** field, select a term of delivery for the charges
     code.
 
->[!NOTE] After processing the customs journal, it is forbidden to distribute on
+>[!NOTE]
+>After processing the customs journal, it is forbidden to distribute on
 the lines of the included in the customs journal purchase or invoice overhead
 expenses, whose delivery condition corresponds to the delivery conditions in the
 customs journal header, because these overhead expenses affect the basis for
@@ -318,8 +316,7 @@ calculating customs payments.
 
 1.  Go to **Product information management** \> **Products** \> **Released
 products**.
-
-If it’s necessary, create and set up a new product in a usual way.
+2.  If it’s necessary, create and set up a new product in a usual way.
 
 >[!NOTE]
 >On the Manage inventory FastTab, in the **Weight measurements** and
@@ -327,12 +324,12 @@ If it’s necessary, create and set up a new product in a usual way.
 characteristics of the product to distribute customs payments on the lines of
 the customs journal.
 
-1.  In the **Tracking dimension group** field, select a GTD group that you created
+3.  In the **Tracking dimension group** field, select a GTD group that you created
 earlier.
-2.  In the **Units of measures** section, in the **Inventory unit**, **Purchase
+4.  In the **Units of measures** section, in the **Inventory unit**, **Purchase
 unit** and **Sales unit** fields, select a unit that you set earlier.
-3.  Select **OK**.
-4.  On the **General** FastTab, in the **Charges** section, in the **Charges code**
+5.  Select **OK**.
+6.  On the **General** FastTab, in the **Charges** section, in the **Charges code**
 field select a charges code for transportation. This field is available only for
 services.
 
@@ -348,26 +345,26 @@ the customs offices are defined in the Customs Code of the Russian Federation.
     payments** \> **Customs counteragents**.
 2.  On the Action Pane, select **New**. 
 
--   In the **Counteragent account** field, select a vendor account number as the
+    -   In the **Counteragent account** field, select a vendor account number as the
     counteragent account number.
--   In the **Counteragent type** field, select the type of counteragent:
--   **Custom authority**. In this case, the counteragent cannot act as a customs
+    -   In the **Counteragent type** field, select the type of counteragent:
+    -   **Custom authority**. In this case, the counteragent cannot act as a customs
     counteragent. The debt on customs payments will be formed to the customs.
     The contract can only have the type of contract with customs.
--   **Custom broker**. In this case, the counteragent acts as a customs
+    -   **Custom broker**. In this case, the counteragent acts as a customs
     counteragent. When creating a customs journal, you can select its contract
     as a contract with a customs counteragent. In this case, the debt on customs
     payments will be formed to the customs broker.
--   In the **Description** field, enter a brief description of the customs
+    -   In the **Description** field, enter a brief description of the customs
     counteragent.
--   In the **Posting profile** field, select the posting profile that is used to
+    -   In the **Posting profile** field, select the posting profile that is used to
     calculate the customs payments.
 
 >[!Note]
 >**Acquit method** field is available only when you select **Custom
 broker** in the **Counteragent type** field.
 
--   In the **Acquit method** field, select the acquit method for the customs
+    -   In the **Acquit method** field, select the acquit method for the customs
     services that are provided. The acquit method determines the counteragent to
     whom the debt on customs payments and fees will be formed.
 
@@ -449,24 +446,24 @@ these steps.
 2.  On the Action Pane, select **New** to create an indicative price and fill in
     the following fields:
 
--   In the **Description** field, enter the description of the indicative price.
--   In the **From date** field, select the activation date of the indicative
+    -   In the **Description** field, enter the description of the indicative price.
+    -   In the **From date** field, select the activation date of the indicative
     price for the import or export of products.
--   The **Customs code** field is filled in automatically and shows the
+    -   The **Customs code** field is filled in automatically and shows the
         customs counteragent code that the indicative price is selected for. If
         this field is empty, the indicative price applies to all customs posts.
--   The **Customs name** field is filled in automatically and shows the name
+    -   The **Customs name** field is filled in automatically and shows the name
         of the counteragent.
--   In the **TN VED code** field, select the TN VED code that the indicative
+    -   In the **TN VED code** field, select the TN VED code that the indicative
     price is selected for. Only non-blocked TN VED codes are available for
     selection.
--   In the **Price for import** and **Price for export** fields, enter the
+    -   In the **Price for import** and **Price for export** fields, enter the
     indicative prices for import and export.
--   In the **Currency** field, select the currency code for the indicative
+    -   In the **Currency** field, select the currency code for the indicative
     price.
--   In the **Quantity** field, enter the quantity of products for the import and
+    -   In the **Quantity** field, enter the quantity of products for the import and
     export price.
--   In the **Unit** field, select the type of unit for the indicative price.
+    -   In the **Unit** field, select the type of unit for the indicative price.
 
 3.  On the Action Pane, select **Save**.
 4.  To correct indicative prices, on the Action Pane, select **Change**:
@@ -485,12 +482,12 @@ these steps.
     VED code relation with customs payment**.
 2.  On the Action Pane, select **New** to set up the relationship:
 
--   In the **From date** field, select the starting date of the relationship
+    -   In the **From date** field, select the starting date of the relationship
     between the TN VED code and the customs payment that is calculated based on
     the customs duty and fees.
--   In the **TN VED code** field, select the TN VED code to associate with the
+    -   In the **TN VED code** field, select the TN VED code to associate with the
     customs payment. Only non-blocked TN VED codes are available for selection.
--   In the **Direction** field, select the direction of the product movement from
+    -   In the **Direction** field, select the direction of the product movement from
 the following options: **Import** , **Export** or **All.**
 
 >[!NOTE]
@@ -499,14 +496,14 @@ record by the type of the journal (**Import** or **Export**). If there are no
 values for the corresponding type, then the setting with the **All** type is
 used.
 
--   In the **VAT** field, select the tax code with the tax type **Standard
+    -   In the **VAT** field, select the tax code with the tax type **Standard
     VAT**, **Reduced VAT**, or **VAT 0%**. This field is not available for
     export direction.
--   In the **Excise** field, select the sales tax code that is used to calculate
+    -   In the **Excise** field, select the sales tax code that is used to calculate
     excise duty. This field is not available for export direction.
--   In the **Customs duty** field, select the sales tax code that is used to
+    -   In the **Customs duty** field, select the sales tax code that is used to
     calculate customs duty.
--   Optional: In the **Country/region** field, enter the code of the country of
+    -   Optional: In the **Country/region** field, enter the code of the country of
     origin of the payment.
 
 3.  On the Action Pane, select **Save**.
