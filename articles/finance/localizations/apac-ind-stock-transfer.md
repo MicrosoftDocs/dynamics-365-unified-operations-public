@@ -33,6 +33,11 @@ You can use transfer orders to process inventory transfers between warehouses. I
 
 The **Stock transfer** functionality that is available for India supports this process.
 
+> [!NOTE]
+> Unrealized profit or loss is not posted during the shipment or receipt of a stock transfer line if the unit price differs from the inventory cost price of the item.
+> If mutual settlements and profit / loss transactions are required for internal transfers between own company's warehouses, other Dynamics 365 functionalities may be used for this. For example, Purchase orders and Sales orders invoices or Intercompany may be configured for intracompany transfers.
+> For more information, see [Set up intercompany trade](../../supply-chain/sales-marketing/intercompany-trade-set-up.md).
+
 ## Set up stock transfers
 
 ### Enable stock transfer functionality
@@ -43,23 +48,17 @@ Enable the following features in the **Feature management** workspace:
 - (Stock transfer for India) Set up the default transfer type and price type for transfer orders created from Master planning
 - Enable uniform tax amount and GST transaction ID for both shipment and receipt transaction of a stock transfer order
 
+> [!NOTE]
+> Pay your attension that the above features will be turned on by default in one of the future releases.
+
 For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 You also need to configure the India GST functionality to enable GST calculation for stock transfer orders. For more information, see [India Goods and Services Tax (GST) overview](apac-ind-gst.md).   
 
 > [!NOTE]
-> The following improvements are included in the stock transfer order functionality:
 > 
-> - Default Transfer type and Price type values can be configured in the Inventory and warehouse management parameters.
-> - The unit price on a stock transfer order line is recalculated based on the inventory dimensions specified in the line until the first shipment is posted for the line.
-> - Shipment of a stock transfer order line with a unit price of zero (0) isn't possible.
-> - Inventory costs are posted for stock transfer orders if there's partial shipment or receipts or batch-controlled items.
-> - Unrealized profit or loss is no longer posted during the shipment or receipt of a stock transfer line if the unit price differs from the inventory cost price of the item.
+> - 
 > - Changing the unit of measure on stock a transfer order line is restricted.
-
-> [!NOTE]
-> If mutual settlements and profit / loss transactions are required for internal transfers between own company's warehouses, other Dynamics 365 functionalities may be used for this. For example, Purchase orders and Sales orders invoices or Intercompany may be configured for intracompany transfers.
-> For more information, see [Set up intercompany trade](../../supply-chain/sales-marketing/intercompany-trade-set-up.md).
 
 ### Set up default transfer type and price type for transfer orders
 
@@ -110,8 +109,8 @@ You must also set up main accounts to post inventory cost for transfer orders to
 ### Configure posting to General ledger based on financial dimension links to sites
 
 In the standard Dynamics 365 functionality, transfer orders are only posted to General ledger if:
-1. Dimension link is activated, that is, there is a link between the Site inventory dimension and some financial dimension, and
-2. the transfer order movement happens between warehouses that belong to different sites. This condition applies to the From, Transit, and To warehouses. If the From warehouse and Transit warehouse belong to the same site, the transfer order shipment is not posted to General ledger. Similarly, if the Transit warehouse and To warehouse belong to the same site, the transfer order receipt is not posted to General ledger.
+1. Dimension link is activated, that is, there is a link between the Site inventory dimension and some financial dimension; and
+2. The transfer order movement happens between warehouses that belong to different sites. This condition applies to the From, Transit, and To warehouses. If the From warehouse and Transit warehouse belong to the same site, the transfer order shipment is not posted to General ledger. Similarly, if the Transit warehouse and To warehouse belong to the same site, the transfer order receipt is not posted to General ledger.
 
 If it is required to post stock transfers to General ledger and track inventory in transit warehouses, it is recommended to enable Dimension link and create separate sites for transit warehouses.
 
@@ -139,6 +138,10 @@ The following example scenario shows frequently performed actions that are assoc
 1. In the **Price type** field, select a default price type for transfer order lines.
 1. On the **Transfer order lines** tab, create a new line and in the **Item number** field, select the item to transfer.
 1. In the **Transfer quantity** field, enter the quantity of the items to transfer, and in the **Unit** field, modify the default unit of measurement, if required.
+
+    > [!NOTE]
+    > Changing the unit of measure on stock a transfer order line is restricted.
+
 1. In the **Price type** field, select the price type for the transfer order line, from the following options:
     
     - **Cost price** – The cost price, or the on-hand price, of the item is used for the transfer order line.
@@ -148,10 +151,15 @@ The following example scenario shows frequently performed actions that are assoc
     > If the **Price type** is set to **Transfer price**, the quantity of the items that are defined for the combination of item and dimension on the **Transfer price** page is displayed in the **Transfer quantity** field, but it can be modified.
 
 1. In the **Unit price** field, enter the cost price or the transfer price for one unit of the item.
-1. Select the **Tax information** tab to set up taxes for the transfer order and enter details. You can change the default information that is displayed in the fields.
+
+	> [!NOTE]
+    > - The unit price on a stock transfer order line is recalculated based on the inventory dimensions specified in the line until the first shipment is posted for the line.
+	> - Shipment of a stock transfer order line with a unit price of zero (0) can be controlled through the **Prevent shipment with zero unit price** of **Inventory and warehouse management parameters**.
+
+1. Click on the **Tax information** button to check taxes configuration for the transfer order.
     
-    - At the line level, select **Tax information from warehouse**, select the **GST** tab and click **OK**.
-    - At the line level, select **Tax information to warehouse**, select the **GST** tab and click **OK**.
+    - At the line level, under the **Invent transfer order from location** tab, you will find tax information linked to the shipment (from warahouse).
+    - At the line level, under the **Invent transfer order to location** tab, you will find tax information linked to the receiving (to warahouse).
     
 1. Go to **Inquiries** > **Tax document** and verify that the tax is calculated correctly.
 1. Select **Ship** > **Ship transfer order**, and on the **Shipment** page, post the transfer order shipment.
@@ -161,7 +169,7 @@ The following example scenario shows frequently performed actions that are assoc
     - Select **Setup** > **Tax document**.
 	- Check tax settings and amounts, make and apply adjustment if needed.
 	- **Close** the **Tax document** form.
-	- Click **OK** in the bottom of the **Receive** form to post the operation.	
+	- Click **OK** in the bottom of the **Ship** form to post the operation.	
 
 1. Select **Receive** > **Receive**, and on the **Receive** page, post the transfer order receipt.
 
@@ -177,8 +185,13 @@ The following example scenario shows frequently performed actions that are assoc
     
 You can also cancel a previously posted stock transfer order shipment if no receipts have been posted for this order. On the **Transfer orders** page, select **Transfer order** > **Transfer order history**. On the **Transfer order history** page, select a previously posted shipment. Select **Cancel**, and confirm the cancellation of the shipment. The shipment will be canceled, and all inventory movements and GST that was posted for the shipment will be reversed. The "Transfer Order Cancellation" feature in the **Feature management** workspace must be enabled to cancel transfer order shipments.
 
+Below you can find several examples of how stock transfer orders are posted on different conditions.
+
 ### Example 1: Standard transfer order posting
 
+Preconditions for the example are as follows:
+
+- Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
 - From warehouse -> Site 1
 - Transit warehouse -> Site 2
 - To warehouse -> Site 3
@@ -205,6 +218,9 @@ The **balance on the inventory in transit** can be calculated as **_InventoryIss
 
 ### Example 2: Standard transfer order posting without transit site
 
+Preconditions for the example are as follows:
+
+- Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
 - From warehouse -> Site 1
 - Transit warehouse -> Site 1
 - To warehouse -> Site 3
@@ -225,17 +241,17 @@ In this case, **no inventry in transit balance** is tracked.
 
 ### Example 3: Stock transfer order that have tax on the transfer price (GST)
 
-- From warehouse -> Site 1
-- Transit warehouse -> Site 2
-- To warehouse -> Site 3
-- Taxable value (base amount): 120.00
-- **GST** rate: **10%**"
-
-
-#### Transfer order shipment posting:
+Preconditions for the example are as follows:
 
 - Current inventory **cost price** at the moment the shipment is posted is **100 Rs**.
 - **Unit price** specified in the line is **120 Rs**. It can be the inventory cost price at the moment the line was created or updated, or it can be the transfer price of the item from the dictionaty.
+- Taxable value (base amount): 120.00
+- **GST** rate: **10%**"
+- From warehouse -> Site 1
+- Transit warehouse -> Site 2
+- To warehouse -> Site 3
+
+#### Transfer order shipment posting:
 
 |      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
@@ -266,18 +282,19 @@ The **balance on the inventory in transit** can be calculated as **_InventoryIss
   
 ### Example 4: Stock transfer order with standard cost
 
-- Create an item with the Standard cost inventory model
+Preconditions for the example are as follows:
+
+- Create an item with the **Standard cost** inventory model
 - Create and active different item prices for the item with Costing type = Standard cost and Price type = Cost:
 	- price = 115 for Site 1 
 	- price = 112 for Site 2 
 	- price = 111 for Site 3
+- Inventory **cost price** is defined by the stadard cost on the "From warehouse" site and is equal to  **115 Rs** in our case.
 - From warehouse -> Site 1
 - Transit warehouse -> Site 2
 - To warehouse -> Site 3
 
 #### Transfer order shipment posting:
-
-Inventory **cost price** is defined by the stadard cost on the "From warehouse" site and is equal to  **115 Rs** in our case.
 
 |      Ledger account name        | Financial dimension linked to site | Debit amount (Rs.) | Credit amount (Rs.) |
 |---------------------------------|------------------------------------|--------------------|---------------------|
