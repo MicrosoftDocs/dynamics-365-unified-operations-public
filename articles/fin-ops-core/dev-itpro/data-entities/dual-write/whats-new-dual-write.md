@@ -20,7 +20,7 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 ## June 2022 release
 
-The June release of dual-write core solution 1.0.35.0 contains the following features and bug fixes.
+The June release of [Dual-write core solution 1.0.35.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following features and bug fixes.
 
 | Feature | Description | Status |
 |---|---|---|
