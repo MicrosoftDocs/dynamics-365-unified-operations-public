@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 10.0.28
 
 ---
 
-# Electronic invoicing for Poland
+# Get started with Electronic invoicing for Poland
 
 [!include [banner](../includes/banner.md)]
 
@@ -51,6 +51,10 @@ Before you begin the procedures in this topic, complete the following prerequisi
     - The secret for the legal entity tax identification number.
     - The secret that will contain the public key provided by Polish National system for electronic invoicing [KSEF](https://www.podatki.gov.pl/ksef).
     - The certificate for digital signing.
+- Make sure that the following Electronic Reporting format configurations are imported. For moe information, see 
+    - Sales e-invoice (PL).
+    - Project e-invoice (PL).
+    - Advance e-invoice (PL).
 
 ## Country-specific configuration for the Polish electronic invoice (PL) feature
 
