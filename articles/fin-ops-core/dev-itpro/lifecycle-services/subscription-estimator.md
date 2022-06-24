@@ -56,7 +56,7 @@ To edit the estimate for multiple implementation projects, follow these steps.
 
     [![Active subscription estimate in the Subscription estimator tool.](./media/SubscriptionEstimatorWithEdit.jpg)](./media/SubscriptionEstimatorWithEdit.jpg)
 
-3. In the **Edit estimate** dialog box, enter the license count for each type of Finance and Operations license. By default, when every subscription estimate is created, the full count of all purchased licenses is assigned to it. Customers can't allocate more than the total number of licenses to a single estimate. Additionally, they can't reduce the allocated number so that it's less than the minimum number that the Dynamics 365 Licensing policy requires.
+3. In the **Edit estimate** dialog box, enter the license count for each type of finance and operations license. By default, when every subscription estimate is created, the full count of all purchased licenses is assigned to it. Customers can't allocate more than the total number of licenses to a single estimate. Additionally, they can't reduce the allocated number so that it's less than the minimum number that the Dynamics 365 Licensing policy requires.
 
     [![Edit estimate dialog box in the Subscription estimator tool.](./media/SubscriptionEstimatorEditDialog.jpg)](./media/SubscriptionEstimatorEditDialog.jpg)
 
@@ -100,3 +100,4 @@ If you receive any other error message or encounter other issues, create a suppo
 [Subscriptions, LCS projects, and Azure Active Directory tenants FAQ](../../fin-ops/get-started/subscription-overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

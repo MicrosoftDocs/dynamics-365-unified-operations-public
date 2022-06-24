@@ -50,9 +50,9 @@ Activities that can appear in flowcharts are described in the following table.
 | Script                    | Action performed by a script.                                                                                                                                    |
 | Loop                      | Action performed repetitively.                                                                                                                                   |
 | Service                   | Action performed by a service.                                                                                                                                   |
-| Manual                    | Step performed outside of a Finance and Operations app.                                                                                                                               |
-| Receive                   | Information received from outside of a Finance and Operations app without using a service or script.                                                                                  |
-| Send                      | Information sent outside of a Finance and Operations app without using a service or script.                                                                                           |
+| Manual                    | Step performed outside of a finance and operations app.                                                                                                                               |
+| Receive                   | Information received from outside of a finance and operations app without using a service or script.                                                                                  |
+| Send                      | Information sent outside of a finance and operations app without using a service or script.                                                                                           |
 | User                      | Action performed by a user.                                                                                                                                      |
 | Collapsed                 | A sub-process that is not shown in the diagram. Collapsed processes cannot be expanded.                                                                          |
 | Arrow                     | Indicates direction of flow between process steps.                                                                                                               |
@@ -135,7 +135,7 @@ To generate a gap analysis and export it, follow these steps:
 -->
 
 ## Unconnected flowcharts
-Unconnected flowcharts, such as a Visio diagram, can be very helpful for describing high-level business processes that are performed outside of the Finance and Operations apps.
+Unconnected flowcharts, such as a Visio diagram, can be very helpful for describing high-level business processes that are performed outside of the finance and operations apps.
 
 ### Upload an unconnected flowchart
 

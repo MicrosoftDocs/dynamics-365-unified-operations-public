@@ -36,7 +36,7 @@ A service request is a ticket that you use to request that the Dynamics Service 
 > [!NOTE]
 > Service requests are only required for environments that are **Microsoft-managed**. Most environments are self-service. For more information about environment types, see [Cloud deployment overview](../deployment/cloud-deployment-overview.md).
 
-> Do not use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this article, submit a support ticket instead. For more information about support tickets, see [Get support for Finance and Operations apps or Lifecycle Services (LCS)](lcs-support.md).
+> Do not use service requests for product issues. If you encounter a situation that doesn't fit into any of the tasks that are described in this article, submit a support ticket instead. For more information about support tickets, see [Get support for finance and operations apps or Lifecycle Services (LCS)](lcs-support.md).
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to submit service requests directly to the DSE team. You can also view which requests have been submitted, executed, and canceled for your environments.
 
@@ -124,7 +124,7 @@ Here are some typical examples of service requests that will be denied:
 - You submit a request of the **Other request** type for one of the following actions, but you should have submitted a support ticket instead:
 
     - You want to activate a new subscription estimate after you're live in production or after you've requested a production environment.
-    - You want to reset the Financial reporting data mart in a release that is earlier than Microsoft Dynamics 365 for Finance and Operations Financial reporting release 7.2.6.0.
+    - You want to reset the Financial reporting data mart in a release that is earlier than Microsoft Dynamics 365 Finance Financial reporting release 7.2.6.0.
     - You want to restore a production database after go-live.
     - You encountered an issue after the DSE team did an application upgrade.
 
@@ -147,3 +147,4 @@ Here are some typical examples of service requests that will be denied:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
