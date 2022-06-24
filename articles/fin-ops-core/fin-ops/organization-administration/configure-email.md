@@ -77,8 +77,12 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 
   <tr>
     <td>SSL required</td>
-    <td>Determines whether secure transport is used. Typically, this is <strong>Yes</strong>, except for internal or troubleshooting scenarios.</td></tr></tbody></table>
+    <td>Determines whether secure transport is used. Typically, this is <strong>Yes</strong>, except for internal or troubleshooting scenarios.</td>
+  </tr>
+</tbody>
+</table>  
   
+
 #### Authentication
 
 <table>
@@ -331,7 +335,10 @@ There are some standard processes that can help you troubleshoot the configurati
   </tr>
   <tr>
     <th>Verify user mailboxes.</th>
-    <td>Consider signing in to the affected (or all) user mailboxes to verify that they are valid and can be accessed by using sign-in.</td></tr></table>
+    <td>Consider signing in to the affected (or all) user mailboxes to verify that they are valid and can be accessed by using sign-in.</td>
+  </tr>
+</table>
+ 
  
  ### Specific Exchange email issues
 
