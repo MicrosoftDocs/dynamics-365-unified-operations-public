@@ -169,10 +169,12 @@ Follow these steps to enter additional invoice data.
 > [!NOTE]
 > Similarly, you can enter additional data for Project invoices in **Project management and accounting** \> **Project Invoices** \> **Project invoicei**.
 
-### Issue electronic invoices
+## Issue electronic invoices
 
-When you've completed all the required configuration steps, you can generate electronic invoices for posted invoices. For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
+When you've completed all the required configuration steps, you can generate and sumbit electronic invoices for posted invoices. For more information about how to generate electronic invoices, see [Issue electronic invoices in Finance and Supply chain management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
 
+> [!NOTE]
+> For Polish electronic invoices submission, there are the steps that must be performed additionally to the standard procedure described above.
 
 
 
