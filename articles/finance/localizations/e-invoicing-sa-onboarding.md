@@ -102,7 +102,7 @@ Onboarding process consist of 2 parts:
 
 6. Run provided below [onboarding script](#script) with the OTP and configuration file as input parameters, for example: *.\OnboardingScript.ps1 -action getComplianceCSID -otp 123345 -csrconfig .\csr_config.txt -password 123*
    > [!NOTE]
-   > The parameter *pasword* is optional and can be omitted. If exists then the certificate will be generated with the given password.
+   > The parameter *password* is optional and can be omitted. If exists then the certificate will be generated with the given password.
 7. As result of the script running, the CCSID will be received as a certificate file in *pfx* format. Save this CCSID certificate file in Azure Key Vault. For more information, see [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md).
 8. Configure related *feature setup* in **Saudi Arabian electronic invoice (SA)** electronic invoicing feature, refer to the CCSID certificate saved in Azure Key Vault. The certificate will be used for communication with ZATCA electronic invoicing portal.
 
@@ -118,7 +118,7 @@ Generate and submit to ZATCA for complaince check all types of sample invoices w
 1. Make sure that all electronic invoices are successfully submitted to ZATCA.
 2. Run provided below [onboarding script](#script) with the CCSID as an input parameter, for example: *.\OnboardingScript.ps1 -action getProductionCSID -password 123*
    > [!NOTE]
-   > The parameter *pasword* is optional and can be omitted. If exists then the certificate will be generated with the given password. 
+   > The parameter *password* is optional and can be omitted. If exists then the certificate will be generated with the given password. 
 3. As result of the script running, the **PCSID** will be received as a certificate file in *pfx* format. Save this PCSID certificate file in Azure Key Vault.
 4. Configure related *feature setup* in **Saudi Arabian electronic invoice (SA)** electronic invoicing feature, replace previously configured CCSID certificate with the obtained CCSID certificate saved in Azure Key Vault.
 
@@ -127,6 +127,9 @@ After completeion of all the configurations steps above, the system is ready to 
 To review obtained CSIDs on ZATCA side, use the **Review Existing Cryptographic Stamp Identifier (CSID)** tile on the landing page of the Onboarding and Management Portal which is accessible from the main Saudi ArabianTaxation Portal - [ERAD](https://fatoora.zatca.gov.sa/).
   
 ## <a id="script"></a>Onboarding script
+
+> [!NOTE]
+> You need
 
 1. Use the following Windows PowerShell script to obtain CCSID and PCSID.
 
