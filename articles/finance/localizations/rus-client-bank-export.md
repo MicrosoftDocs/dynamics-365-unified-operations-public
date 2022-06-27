@@ -28,22 +28,13 @@ ms.search.validFrom:
 
 # Client-Bank interface and reconciliation procedure
 
-## Overview
-
-This topic provides information about user settings for export electronic
-outgoing payments created in the payment journals using the Client-Bank system.
-Payment formats with a specific bank must be customized using GER
-configurations.
-
-The Client-Bank interface allows you to automatically reconcile bank payments
-and statement data instead of completely manual reconciliation.
+This topic provides information about user settings for export electronic outgoing payments created in the payment journals using the Client-Bank system. The Client-Bank interface allows you to automatically reconcile bank payments and statement data instead of completely manual reconciliation. Payment formats for a specific bank are customized using GER configurations.
 
 ## Set up
 
 ### Import configurations
 
-Before you start using Client-Bank functionality, you should import GER
-configurations from the Global repository of Configuration service.
+Before you start using Client-Bank functionality, you should import GER configurations from the Global repository of Configuration service.
 
 1.  Import the following configurations:
 
@@ -54,12 +45,12 @@ configurations from the Global repository of Configuration service.
 
 For more information, see [Import configurations from GR](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo?toc=/dynamics365/finance/toc.json).
 
-1.  Go to **Workspaces** \> **Electronic reporting**.
-2.  On the **Configurations** section, select **Reporting configurations**.
-3.  On the Action Pane, select **Edit**.
-4.  On the navigation list, under **Payment model** section, select main payment model to be set it as the default. For example, select **Payment model mapping 1611**.
-5.  On the **Configurations** page, set **Default for model mapping** to **Yes**.
-6.  On the Action Pane, select **Save**.
+2.  Go to **Workspaces** \> **Electronic reporting**.
+3.  On the **Configurations** section, select **Reporting configurations**.
+4.  On the Action Pane, select **Edit**.
+5.  On the navigation list, under **Payment model** section, select main payment model to be set it as the default. For example, select **Payment model mapping 1611**.
+6.  On the **Configurations** page, set **Default for model mapping** to **Yes**.
+7.  On the Action Pane, select **Save**.
 
 ### Set up kinds of documents
 
@@ -69,11 +60,11 @@ For more information, see [Import configurations from GR](https://docs.microsoft
 4.  In the **Description** field, enter the description of the document.
 5.  In the **Document type** field, select one of the following:
 
--   **Pay document**.
--   **Memorial order**.
--   **Currency transfer**.
--   **Currency sale**.
--   **Currency purchase**.
+    -   **Pay document**.
+    -   **Memorial order**.
+    -   **Currency transfer**.
+    -   **Currency sale**.
+    -   **Currency purchase**.
 
 ![Graphical user interface, application Description automatically generated](media/a553a2c0e5cbc3e70cbe2cd20f9e7b70.png)
 
@@ -102,7 +93,7 @@ To set up a matching format for exporting a payment and the specified payment me
 -   The Client-Bank functionality uses **txt** format for export payments.
 -   To customize electronic format, see more information in [Formula designer in Electronic reporting (ER)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer?toc=/dynamics365/commerce/toc.json).
 -   All payments download in the **Downloads** folder by default. To change this, see [Electronic reporting (ER) destinations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations).
--   
+
 ## Operations in the Client-Bank functionality for export
 
 ### Create outgoing payments before export
