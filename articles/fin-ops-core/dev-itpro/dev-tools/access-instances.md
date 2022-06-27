@@ -58,6 +58,23 @@ When a cloud environment is provisioned through LCS:
 + The user who requests the cloud environment is provisioned as the administrator in that environment.
 + User accounts are provisioned on the development VM to allow access to the environment using Remote Desktop, these credentials are accessible on the environment page in LCS.
 
+> [!NOTE]
+> Each cloud environment provisioned through LCS will create the following resources in your Azure subscription.
+> + 1 Virtual machine
+> + 1 SQL Virtual machine
+> + 5 Disks
+> + 1 Load balancer
+> + 1 Regular Network Interface
+> + 1 Network security group
+> + 1 Virtual network
+> + 1 Public IP address
+> + 1 Storage account
+> + Possible additional Storage accounts that are prefixed with “dyn” depending on the deployment region.
+>
+> The number of Disks created is configurable.
+>
+> The Network security group will contain all the resources that are created for the environment.
+
 ### Accessing an instance through a URL
 
 The system can be accessed by end users. The administrator can add users to this system by using the **Users** page in the instance. Note that these additional users don't have to be users in LCS. You obtain the base URL for the cloud environment from your LCS project site.
