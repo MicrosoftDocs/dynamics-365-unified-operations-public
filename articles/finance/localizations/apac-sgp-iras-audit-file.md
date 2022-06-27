@@ -92,7 +92,7 @@ If your legal entity's GST codes are **not** set up in accordance with the Singa
 
     | Feature name | Mandatory or optional |
     |--------------|-----------------------|
-    | [Standard Audit File for Tax (SAF-T) electronic report](../standard-audit-file.md) | Mandatory |
+    | [Standard Audit File for Tax (SAF-T) electronic report](../general-ledger/standard-audit-file.md) | Mandatory |
     | [Optimization of query data source creation time during execution of ER reports](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) | Optional |
     | [Optimize datasets memory consumption at ER reports runtime](../../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md) | Optional |
     | [Accelerate the ER labels storage](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance) | Optional |
@@ -138,7 +138,7 @@ To generate an IAF for Singapore, follow these steps.
     | Purchase and supply data in tax code currency | Select this checkbox to report the `PurchaseValueSGD` and `GSTValueSGD` amounts in the **Purchase Listing Table (PurchaseLines)** section of the report, and the `SupplyValueSGD` and `GSTValueSGD` amounts in the **Supply Listing Table (SupplyLines)** section of the report, in the tax code currency. If this checkbox is cleared, these amounts will be reported in the currency that is selected in the **Currency** field. |
     | From date, To date | Select dates to specify the date interval for the report. You can select dates within one fiscal year. |
     | Currency | Select **Accounting currency** to report amounts in the **Debit**, **Credit**, and **Balance** columns of the **GLDataLines** section of the report in the accounting currency. Select **Reporting currency** to report those amounts in the reporting currency. |
-    | Main financial dimension set | Select the standard financial dimension set, including the main account that the report uses to calculate the opening balance by main account at the beginning of the reporting period. This parameter affects only the **GLDataLines** section of the report. For more information about financial dimension sets, see [Financial dimension sets](financial-dimension-sets.md). |
+    | Main financial dimension set | Select the standard financial dimension set, including the main account that the report uses to calculate the opening balance by main account at the beginning of the reporting period. This parameter affects only the **GLDataLines** section of the report. For more information about financial dimension sets, see [Financial dimension sets](../general-ledger/financial-dimension-sets.md). |
     | Group by main account | Select this checkbox to group general ledger account entries by main account on the report. When this checkbox is selected, the amounts in **GLDataLines** section of the report that are reported for each main account are represented as aggregated amounts, where aggregation is done by the `TransactionDate` and `TransactionID` fields. |
     | Include reversed | Select this checkbox if a reversed transaction must be reported. This parameter affects only the **GLDataLines** section of the report. |
     | Posting layer(s) | Select one or more posting layer transactions to include on the report. If you leave this field blank, all the posting layers are reported. This parameter affects only the **GLDataLines** section of the report. |
