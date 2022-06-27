@@ -52,10 +52,8 @@ This topic provides information about the registration information, which reflec
 
 1.  Go to **Product information management** \> **Setup** \> **Dimension and variant groups** \> **Tracking dimension groups**.
 2.  Create and set up a customs declaration number as described in [Customs declaration numbers](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/rus-custom-declaration-number#set-up-customs-declaration-numbers-in-tracking-dimensions). When creating, on the **Tracking dimensions** FastTab, select the following check boxes to activate the inventory profile and the GTD number:
-3.  On the **Inventory profile** line, select the **Active** and **Coverage plan
-    by dimension** check boxes;
-4.  On the **GTD number** line, select the **Active**, **Blank receipt
-    allowed**, **Blank issue allowed** and **Physical inventory** check boxes.
+3.  On the **Inventory profile** line, select the **Active** and **Coverage plan by dimension** check boxes;
+4.  On the **GTD number** line, select the **Active**, **Blank receipt allowed**, **Blank issue allowed** and **Physical inventory** check boxes.
 5.  On the Action Pane, select **Save**.
 
 ![](media/7358a387b3bf14e4d6a9f5d5dda918da.png)
@@ -64,8 +62,7 @@ This topic provides information about the registration information, which reflec
 ## Set up ledger posting groups
 
 1.  Go to **Tax \> Setup \> Sales tax \> Ledger porting groups.**
-2.  Create a ledger posting group for each of the following type of customs
-    duties and fees:
+2.  Create a ledger posting group for each of the following type of customs duties and fees:
 
     -   Customs duty for import
     -   Customs duty for export
@@ -74,15 +71,10 @@ This topic provides information about the registration information, which reflec
     -   Customs fee for export issuance
     -   Customs fee for import issuance
 
-3.  In the **Sales tax receivable** field, select an expense account for this
-    type of tax. For example, select account **91** with subaccounts for customs
-    duty for import or export, customs fee for escort and account **44** with
-    subaccounts for customs fee for storage, customs fee for import or export
-    issuance.
+3.  In the **Sales tax receivable** field, select an expense account for this type of tax. For example, select account **91** with subaccounts for customs duty for import or export, customs fee for escort and account **44** with subaccounts for customs fee for storage, customs fee for import or export issuance.
 
 >[!NOTE] 
->In the case of import deliveries, the configured account is used only if
-duties and fees are not included in the cost of the product.
+>In the case of import deliveries, the configured account is used only if duties and fees are not included in the cost of the product.
 
 4.  On the Action Pane, select **Save**.
 
@@ -97,18 +89,13 @@ duties and fees are not included in the cost of the product.
 
 ### Set up a fixed unit
 
-To calculate customs payments for the calculation method **Weight** or
-**Volume**, set up fixed units.
+To calculate customs payments for the calculation method **Weight** or **Volume**, set up fixed units.
 
-1.  Go to **Organization
-    administration** \> **Setup** \> **Units** \> **Units**.
-2.  If it is necessary, create and set up the unit in a usual way. For more
-    information, see [Manage units of
-    measure](https://docs.microsoft.com/dynamics365/supply-chain/pim/tasks/manage-unit-measure).
+1.  Go to **Organization administration** \> **Setup** \> **Units** \> **Units**.
+2.  If it is necessary, create and set up the unit in a usual way. For more information, see [Manage units of measure](https://docs.microsoft.com/dynamics365/supply-chain/pim/tasks/manage-unit-measure).
 3.  On the **General** FastTab, set the following fields:
    
-    -   In the **Classification** section, in the **Unit class** field, select
-        the quantity, volume or weight indicator.
+    -   In the **Classification** section, in the **Unit class** field, select the quantity, volume or weight indicator.
     -   In the **Roles** section, set the **System unit** option to **Yes**.
 
 4.  On the Action Pane, select **Save**.
@@ -117,30 +104,22 @@ To calculate customs payments for the calculation method **Weight** or
 
 ### Set up sales tax codes
 
-To set up a sales tax codes that can be used to automatically calculate customs
-payments, follow these steps.
+To set up a sales tax codes that can be used to automatically calculate customs payments, follow these steps.
 
 1.  Go to **Tax** \> **Indirect taxes** \> **Sales tax** \> **Sales tax codes**.
-2.  Create and set up the sales tax code as described in [Set up sales tax
-    codes](https://docs.microsoft.com/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-codes).
+2.  Create and set up the sales tax code as described in [Set up sales tax codes](https://docs.microsoft.com/dynamics365/finance/general-ledger/tasks/set-up-sales-tax-codes).
 3.  In the **Type of tax** field, select **Customs duty** or **Customs fee**.
-4.  On the **General** FastTab, in the **Ledger posting group** field, select a
-    ledger posting group that you created earlier.
+4.  On the **General** FastTab, in the **Ledger posting group** field, select a ledger posting group that you created earlier.
 5.  For customs fee set the following fields:
 
-    -  On the **Calculation** FastTab, in the **Origin** field, select **Amount
-        per unit.**
+    -  On the **Calculation** FastTab, in the **Origin** field, select **Amount per unit.**
     -  In the **Unit** field, select the unit value.
-    -  On the **General** FastTab, in the **Fee type** field, select the type
-        of customs fee.
+    -  On the **General** FastTab, in the **Fee type** field, select the type of customs fee.
 
 >[!NOTE] 
->You can create only one sales tax code for **Export issuance** and for
-**Import issuance** values of the **Fee type** field.
+>You can create only one sales tax code for **Export issuance** and for **Import issuance** values of the **Fee type** field.
 
-    -  Optional: For **Escort** and **Storage** fee type, on the Action Pane,
-    select **Sales tax code \> Limits** and configure the limits of escort or
-    volume of stored products.
+    -  Optional: For **Escort** and **Storage** fee type, on the Action Pane, select **Sales tax code \> Limits** and configure the limits of escort or volume of stored products.
 
 ![A screenshot of a computer Description automatically generated](media/ac57e84903655b6d40615ba53689b770.png)
 
@@ -150,8 +129,8 @@ payments, follow these steps.
 
     -  On the **General** FastTab, in the **Complex rate** field, select the
         complex rate value that is applied to the customs duty:
-
-        -   If this field isn’t set, the complex rate value is an ad valorem
+      
+       -   If this field isn’t set, the complex rate value is an ad valorem
             duty and is calculated as a percentage of the customs value of the
             products. In this case, the distribution of the duty on the lines of
             the section in the customs journal is made in proportion to the
