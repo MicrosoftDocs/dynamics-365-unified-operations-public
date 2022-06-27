@@ -59,7 +59,7 @@ To enable the Advanced WMS feature for Inventory Visibility, follow these steps.
     1. *Enable warehouse items in Inventory Visibility*
 
 1. Go to **Inventory Management \> Setup \> Inventory Visibility integration parameters**.
-1. On the **Enable WHS Items** tab, set the **Enable WHS Items** option to *Yes*.
+1. On the **Enable WMS Items** tab, set the **Enable WMS Items** option to *Yes*.
 1. Sign in to Power Apps.
 1. Open the **Configuration** page, and then, on the **Feature Management** tab, turn on the *AdvancedWHS* feature.
 1. In Supply Chain Management, go to **Inventory Management \> Periodic Tasks \> Inventory Visibility integration**.
