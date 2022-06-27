@@ -5,7 +5,7 @@ title: IRAS Audit File (IAF) for Singapore
 description: This article explains how to set up and generate the IRAS Audit File (IAF) for Singapore for legal entities that have a primary address in Singapore.
 author: liza-golub
 ms.author: elgolu
-ms.date: 06/20/2022
+ms.date: 06/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -94,7 +94,7 @@ If your legal entity's GST codes are **not** set up in accordance with the Singa
     |--------------|-----------------------|
     | [Standard Audit File for Tax (SAF-T) electronic report](../standard-audit-file.md) | Mandatory |
     | [Optimization of query data source creation time during execution of ER reports](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md) | Optional |
-    | [Optimize datasets memory consumption at ER reports runtime]() | Optional |
+    | [Optimize datasets memory consumption at ER reports runtime](../../fin-ops-core/dev-itpro/analytics/er-reduce-fetched-fields-number.md) | Optional |
     | [Accelerate the ER labels storage](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance) | Optional |
     | [Use application specific parameters from previous versions of ER formats](../../fin-ops-core/dev-itpro/analytics/er-app-specific-parameters-set-up.md#reuse-legal-entitydependent-parameters) | Optional |
 
