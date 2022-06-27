@@ -61,7 +61,6 @@ When a cloud environment is provisioned through LCS:
 > [!NOTE]
 > Each cloud environment provisioned through LCS will create the following resources in your Azure subscription.
 > + 1 Virtual machine
-> + 1 SQL Virtual machine
 > + 5 Disks
 > + 1 Load balancer
 > + 1 Regular Network Interface
@@ -69,11 +68,7 @@ When a cloud environment is provisioned through LCS:
 > + 1 Virtual network
 > + 1 Public IP address
 > + 1 Storage account
-> + Possible additional Storage accounts that are prefixed with “dyn” depending on the deployment region.
->
-> The number of Disks created is configurable.
->
-> The Network security group will contain all the resources that are created for the environment.
+> + 1 or more additional Storage accounts prefixed with “dyn” for storage of product binaires.
 
 ### Accessing an instance through a URL
 
