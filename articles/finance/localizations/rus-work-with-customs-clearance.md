@@ -1,3 +1,30 @@
+---
+# required metadata
+
+title: Work with customs clearance
+description: This topic provides information about how to work with customs clearance of products transported across the border of the Russian Federation.
+author: akroshkina
+ms.date: 06/27/2022
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+#ms.search.form:
+audience: IT Pro, Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.suite: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
+ms.author: anasyash
+ms.dyn365.ops.version: 
+ms.search.validFrom: 
+---
+
 # Work with customs clearance
 
 The registration of the customs clearance procedure is carried out in new
