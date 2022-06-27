@@ -80,8 +80,8 @@ In Dynamics 365 Finance, the settings on the **Compensation** tab define whether
 
 In Human Resources, you can use the **Compensation** tab to choose to restrict access to compensation plans and to set a default currency.
 
->[!NOTE]
-> In the merged infrastructure, the default **Currency** parameter on the **Compensation** tab in **Human resources parameters** has been removed. Moving forward, the currency will be handled by the **Ledger currency** to ensure no conflicts for existing finance and operations functionality and to avoid duplication. For more information on how to use ledger currency functionality, see [Configure ledgers](/general-ledger/configure-ledger#configuring-currencies-for-the-ledger.md). 
+> [!NOTE]
+> In the merged infrastructure, the default **Currency** parameter on the **Compensation** tab of the **Human resources parameters** page has been removed. Moving forward, the currency will be handled by the **Ledger currency** parameter to ensure that there are no conflicts for existing finance and operations functionality and to prevent duplication. For more information about how to use ledger currency functionality, see [Configure ledgers](/general-ledger/configure-ledger#configuring-currencies-for-the-ledger.md). 
 
 For more information about compensation, see [Compensation plans overview](hr-compensation-overview.md).
 
@@ -129,7 +129,7 @@ For more information about how to set up **Employee self service**, see [Employe
 The settings on the **Manager self service** tab affect what managers see in **Manager self service**. On this tab, you can configure the following options:
 
 - The range for expiring records
-- Information managers can view in expiring records
+- Information that managers can view in expiring records
 - Whether managers can view open positions for extended reports
 - Views of exiting workers
 - Useful links for managers
