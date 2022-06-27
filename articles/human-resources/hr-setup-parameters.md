@@ -81,7 +81,7 @@ In Dynamics 365 Finance, the settings on the **Compensation** tab define whether
 In Human Resources, you can use the **Compensation** tab to choose to restrict access to compensation plans and to set a default currency.
 
 >[!NOTE]
-> In the merged infrastructure, the default **Currency** parameter on the **Compensation** tab in **Human resources parameters** has been removed. Moving forward, the currency will be handled by the **Ledger currency** to ensure no conflicts for existing finance and operations functionality and to avoid duplication. For more information on how to use ledger currency functionality, see [Configure ledgers](../general-ledger/configure-ledger#configuring-currencies-for-the-ledger.md). 
+> In the merged infrastructure, the default **Currency** parameter on the **Compensation** tab in **Human resources parameters** has been removed. Moving forward, the currency will be handled by the **Ledger currency** to ensure no conflicts for existing finance and operations functionality and to avoid duplication. For more information on how to use ledger currency functionality, see [Configure ledgers](/general-ledger/configure-ledger#configuring-currencies-for-the-ledger.md). 
 
 For more information about compensation, see [Compensation plans overview](hr-compensation-overview.md).
 
