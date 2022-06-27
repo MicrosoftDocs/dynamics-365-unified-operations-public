@@ -50,7 +50,7 @@ Optionally, companies can set up **Vesting rules**. **Vesting rules** describe h
 ## Variable compensation plans
 The **variable compensation plan** contains the rules, calculation methods, and default values for the calculation of variable compensation for enrolled employees. When you create a variable compensation plan, you must set the variable compensation type. The variable compensation type determines whether the system calculates a currency amount or a number of units as the award. 
 
-The **Restrict access to selected roles** parameter restricts access to the specific compensation plan to selected security roles that have been assigned to that plan in Human Resources. For example, when creating compensation plans that are for executives and shouldn't be visible to all HR specific roles, this feature will restrict access to that compensation plan. 
+The **Restrict access to selected roles** parameter restricts access to the compensation plan to selected security roles that have been assigned to that plan in Human Resources. For example, when you create compensation plans that are for executives and should not be visible to all HR-specific roles, you can use this parameter to restrict access to those compensation plans. 
 
 You must also set the calculation method:
 
