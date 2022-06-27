@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.4
 
 > [!WARNING]
 > The behavior described in this article is being deprecated and will be removed after October 2023. 
-> For more information, see [Features removed or deprecated in the Finance 10.0.29 release](../../supply-chain/get-started/removed-deprecated-features-scm-updates.md#stock-transfer-orders-that-have-tax-on-the-transfer-price) and [Features removed or deprecated in the Supply Chain Management 10.0.29 release](../../finance/get-started/removed-deprecated-features-finance.md#stock-transfer-orders-that-have-tax-on-the-transfer-price).
+> For more information, see [Features removed or deprecated in the Finance 10.0.29 release](../../supply-chain/get-started/removed-deprecated-features-scm-updates.md) and [Features removed or deprecated in the Supply Chain Management 10.0.29 release](../../finance/get-started/removed-deprecated-features-finance.md).
 
 
 Complete the procedures in this article to create a stock transfer order that has tax on the transfer price.
