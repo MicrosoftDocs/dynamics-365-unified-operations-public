@@ -133,7 +133,7 @@ This article provides information about functionality that supports Russian regu
   - [Set up an inventory profile](rus-set-up-inventory-profile.md)
   - [Use an inventory profile in documents and queries](rus-use-inventory-profile-documents-queries.md)
 - Customs clearance  
-  -[Work with customs clearance](rus-work-with-customs-clearance.md)
+  - [Work with customs clearance](rus-work-with-customs-clearance.md)
 
 ## Reporting
 
