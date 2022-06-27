@@ -91,7 +91,7 @@ To set up a matching format for exporting a payment and the specified payment me
 ### Set up the exchange interface
 
 -   The Client-Bank functionality uses **txt** format for export payments.
--   To customize electronic format, see more information in [Formula designer in Electronic reporting (ER)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer?toc=/dynamics365/commerce/toc.json).
+-   Customize electronic format. For more information, see [Formula designer in Electronic reporting (ER)](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer?toc=/dynamics365/commerce/toc.json).
 -   All payments download in the **Downloads** folder by default. To change this, see [Electronic reporting (ER) destinations](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/analytics/electronic-reporting-destinations).
 
 ## Operations in the Client-Bank functionality for export
