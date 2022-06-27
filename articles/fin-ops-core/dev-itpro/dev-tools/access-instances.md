@@ -59,7 +59,7 @@ When a cloud environment is provisioned through LCS:
 + User accounts are provisioned on the development VM to allow access to the environment using Remote Desktop, these credentials are accessible on the environment page in LCS.
 
 > [!NOTE]
-> Each cloud environment provisioned through LCS will create the following resources in your Azure subscription.
+> Each cloud environment provisioned through LCS will create a Resource group in your Azure subscription containing the following resources:
 > + 1 Virtual machine
 > + 5 Disks
 > + 1 Load balancer
@@ -68,7 +68,7 @@ When a cloud environment is provisioned through LCS:
 > + 1 Virtual network
 > + 1 Public IP address
 > + 1 Storage account
-> + 1 or more additional Storage accounts prefixed with “dyn” for storage of product binaires.
+> + 1 or more additional Storage accounts prefixed with “dyn” for storage of product binaires
 
 ### Accessing an instance through a URL
 
