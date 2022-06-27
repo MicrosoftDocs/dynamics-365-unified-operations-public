@@ -1,48 +1,57 @@
+---
+# required metadata
+
+title: Set up customs clearance
+description: This topic provides information about the registration information, which reflects the process of customs clearance of products transported across the border of the Russian Federation.
+author: akroshkina
+ms.date: 06/27/2022
+ms.topic: article
+ms.prod: 
+ms.technology: 
+
+# optional metadata
+
+#ms.search.form:
+audience: IT Pro, Application User
+# ms.devlang: 
+ms.reviewer: kfend
+# ms.suite: 
+# ms.tgt_pltfrm: 
+# ms.custom: 
+ms.search.region: 
+# ms.search.industry: 
+ms.author: anasyash
+ms.dyn365.ops.version: 
+ms.search.validFrom: 
+---
+
 # Set up customs clearance
 
-This topic provides information about the registration information, which
-reflects the process of customs clearance of products transported across the
-border of the Russian Federation:
+This topic provides information about the registration information, which reflects the process of customs clearance of products transported across the border of the Russian Federation:
 
--   calculation of customs payments: import and export customs fees, customs
-    duties, value added tax (VAT) and excise tax collected on the import of
-    products to the customs territory of the Russian Federation
--   reflection of the issue by the customs authorities of the cargo customs
-    declaration (GTD) and the adjustment of the customs value (KTS)
--   generation of postings on debts to customs or customs broker for the amount
-    of customs payments
--   adjustment of the cost of imported products for the amount of customs duties
-    and fees
+-   calculation of customs payments: import and export customs fees, customs duties, value added tax (VAT) and excise tax collected on the import of products to the customs territory of the Russian Federation
+-   reflection of the issue by the customs authorities of the cargo customs declaration (GTD) and the adjustment of the customs value (KTS)
+-   generation of postings on debts to customs or customs broker for the amount of customs payments
+-   adjustment of the cost of imported products for the amount of customs duties and fees
 -   write-off of duties and fees for expenses
 
 ## Set up currency of statistical value and number sequences
 
-1.  Go to **Inventory management** \> **Setup** \> **Inventory and warehouse
-    management parameters**.
-2.  On the **General** tab, in the **Customs declaration** section, in the
-**Currency of statistical value** field, select a currency code of the
-statistical value to reflect the totals for customs payments. For example,
-**USD**.
+1.  Go to **Inventory management** \> **Setup** \> **Inventory and warehouse management parameters**.
+2.  On the **General** tab, in the **Customs declaration** section, in the **Currency of statistical value** field, select a currency code of the statistical value to reflect the totals for customs payments. For example, **USD**.
 3.  On the Action Pane, select **Save**.
 
 >[!NOTE] 
->If this field is empty, on the **Section overview** form, the main
-currency of the company will be used as the currency of the statistical value.
+>If this field is empty, on the **Section overview** form, the main currency of the company will be used as the currency of the statistical value.
 
-4.  On the **Number sequences** tab, set number sequences for numbering customs
-journals, KTS numbers, operations for posting GTD and KTS in a usual way.
+4.  On the **Number sequences** tab, set number sequences for numbering customs journals, KTS numbers, operations for posting GTD and KTS in a usual way.
 
 ![Graphical user interface, application Description automatically generated](media/15c2f4055ed1ab2606fc34788b7cada5.png)
 
 ## Set up Inventory profile and GTD number
 
-1.  Go to **Product information management** \> **Setup** \> **Dimension and
-    variant groups** \> **Tracking dimension groups**.
-2.  Create and set up a customs declaration number as described in [Customs
-    declaration
-    numbers](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/rus-custom-declaration-number#set-up-customs-declaration-numbers-in-tracking-dimensions).
-    When creating, on the **Tracking dimensions** FastTab, select the following
-    check boxes to activate the inventory profile and the GTD number:
+1.  Go to **Product information management** \> **Setup** \> **Dimension and variant groups** \> **Tracking dimension groups**.
+2.  Create and set up a customs declaration number as described in [Customs declaration numbers](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/rus-custom-declaration-number#set-up-customs-declaration-numbers-in-tracking-dimensions). When creating, on the **Tracking dimensions** FastTab, select the following check boxes to activate the inventory profile and the GTD number:
 3.  On the **Inventory profile** line, select the **Active** and **Coverage plan
     by dimension** check boxes;
 4.  On the **GTD number** line, select the **Active**, **Blank receipt
