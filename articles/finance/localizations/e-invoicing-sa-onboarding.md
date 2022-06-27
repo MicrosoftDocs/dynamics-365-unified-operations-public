@@ -127,81 +127,120 @@ To review obtained CSIDs on ZATCA side, use the **Review Existing Cryptographic 
 1. Use the following Windows PowerShell script to obtain CCSID and PCSID.
 
     ```powershell
-    param($otp, $csrconfig)
+    param($action, $otp, $csrconfig, $password)
     $env:path = $env:path + ";C:\Program Files\Git\usr\bin"
-    Invoke-Expression "openssl ecparam -name secp256k1 -genkey -noout -out privatekey.pem"
-    Write-Host "Private key generated"
-    Invoke-Expression "openssl ec -in privatekey.pem -pubout -conv_form compressed -out publickey.pem"
-    Write-Host "Public key generated"
-    Invoke-Expression "openssl base64 -d -in publickey.pem -out publickey.bin"
-    Invoke-Expression "openssl req -new -sha256 -key privatekey.pem -extensions v3_req -config <csrconfig> -out .\taxpayer.csr".replace('<csrconfig>', $csrconfig)
-    Invoke-Expression "openssl base64 -in taxpayer.csr -out text.txt"
-    $Text = Get-Content -path text.txt -Raw
-    $Text = $Text -replace "`n",""
-    $postParams = @{"csr"=$Text} | ConvertTo-Json
     
-    $postHeader = @{
-	    "Accept"="application/json"
-	    "OTP"=$otp
-	    "Content-Type"="application/json"}
-	    
-    $response = Invoke-WebRequest -Uri 'https://gw-apic-gov.gazt.gov.sa/e-invoicing/developer-portal/compliance' -Method POST -Body $postParams -Headers $postHeader 
-    
-    if ($response.StatusCode -eq 200)
+    if ($action -eq "getComplianceCSID")
     {
-	    $response = $response | ConvertFrom-Json
-	    $requestId = $response.requestID
-	    $bst = $response.binarySecurityToken
-	    
-	    $postHeader = @{
-		    "Accept"="application/json"
-		    "Authentication-Certificate"=$bst
-		    "Accept-Language"="en"
-		    "Content-Type"="application/json"}
-		    
-	    $invoiceText = Get-Content -path invoice.txt -Raw
-	    $invoiceText = $invoiceText -replace "`n",""
-	    $uuid = "3cf5ee18-ee25-44ea-a444-2c37ba7f28be" #[guid]::NewGuid().ToString()
-	    $postParams = @{"invoiceHash"="9ZUyaT5frZko5fHO09jYj0T2A/Kd77sIn1V3knLVAso=";"uuid"=$uuid;"invoice"=$invoiceText} | ConvertTo-Json
-	    #$response = Invoke-WebRequest -Uri 'https://gw-apic-gov.gazt.gov.sa/e-invoicing/developer-portal/compliance/invoices' -Method POST -Body $postParams -Headers      $postHeader 
-	
-	if (1 -eq 1) #$response.StatusCode -eq 200)
-	{
-		Write-Host "Successfully submitted test invoice."
-		Write-Host "Requesting for production BST."
-		
-		$postHeader = @{
-			"Accept"="application/json"
-			"currentCCSID"=$bst
-			"Content-Type"="application/json"}
-		$postParams = @{"compliance_request_id"=$requestID} | ConvertTo-Json
-		$response = Invoke-WebRequest -Uri 'https://gw-apic-gov.gazt.gov.sa/e-invoicing/developer-portal/production/csids' -Method POST -Body $postParams -Headers    $postHeader 
-		
-		   if ($response.StatusCode -eq 200)
-		   {
-			   Write-Host "Successfully obtained production BST:"
-			   $response = $response | ConvertFrom-Json
-			   Write-Host $response.binarySecurityToken
-		   }
-			   else
-		   {
-			   Write-Host "Production BST request failed."
-			   Write-Host $response.StatusCode
-			   Write-Host $response.StatusDescription
-		   }
-	   }
-	   else
-	   {
-		   Write-Host "Test invoice submission failure."
-		   Write-Host $response.StatusCode
-		   Write-Host $response.StatusDescription
-	   }
-   }
-   else
-   {
-	   Write-Host $response.StatusCode
-	   Write-Host $response.StatusDescription
-   }
+        #Generate private key
+        openssl ecparam -name secp256k1 -genkey -noout -out privatekey.pem
+        Write-Host "Private key generated"
+    
+        #Generate public key
+        openssl ec -in privatekey.pem -pubout -conv_form compressed -out publickey.pem
+        Write-Host "Public key generated"
+    
+        #Generate CSR(Certificate signing request)
+        openssl base64 -d -in publickey.pem -out publickey.bin
+        openssl req -new -sha256 -key privatekey.pem -extensions v3_req -config $csrconfig -out .\taxpayer.csr #".replace('<csrconfig>', $csrconfig)
+        openssl base64 -in taxpayer.csr -out taxpayerCSRbase64Encoded.txt
+        $CSRbase64Encoded = Get-Content -path taxpayerCSRbase64Encoded.txt -Raw
+        $CSRbase64Encoded = $CSRbase64Encoded -replace "`n",""
+    
+        #Init request for CCSID
+        $postParams = @{"csr"=$CSRbase64Encoded} | ConvertTo-Json
+        $postHeader = @{
+               "Accept"="application/json"
+               "OTP"=$otp
+               "Content-Type"="application/json"}
+    
+        #Change URL to Zatca production URL when onboarding     
+        $response = Invoke-WebRequest -Uri 'https://gw-apic-gov.gazt.gov.sa/e-invoicing/developer-portal/compliance' -Method POST -Body $postParams -Headers $postHeader
+        if ($response.StatusCode -eq 200)
+        {
+               $response = $response | ConvertFrom-Json
+               $requestId = $response.requestID
+            Write-Host "Request ID:"
+            Write-Host $requestId
+            $requestId | Out-File -FilePath .\requestId.txt -Encoding utf8 -NoNewline
+    
+            $CCSIDbase64 = $response.binarySecurityToken
+            Write-Host "Compliance CSID received from Zatca:"
+            Write-Host $CCSIDbase64
+            $CCSID = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($CCSIDbase64))
+            $CCSIDCertString = "-----BEGIN CERTIFICATE-----`n" + $CCSID + "`n" + "-----END CERTIFICATE-----"
+        
+            $CCSIDStringFileName = "CCSIDString.txt"
+            $CCSIDCertFileName = "CCSID.pem"
+            $CCSIDFolderPath = Get-Location
+            $CCSIDCertFilePath = Join-Path $CCSIDFolderPath $CCSIDCertFileName
+            $CCSIDStringFilePath = Join-Path $CCSIDFolderPath $CCSIDStringFileName
+    
+            $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
+            [System.IO.File]::WriteAllLines($CCSIDCertFilePath, $CCSIDCertString, $Utf8NoBomEncoding)
+            [System.IO.File]::WriteAllLines($CCSIDStringFilePath, $CCSIDbase64, $Utf8NoBomEncoding)
+    
+            openssl pkcs12 -inkey privatekey.pem -in CCSID.pem -export -passout pass:$password -out CCSID.pfx
+            Write-Host "Certificate is saved to CCSID.pfx file"
+        }
+        else
+        {
+               Write-Host "Zatca service communication error:"
+               Write-Host $response.StatusCode
+               Write-Host $response.StatusDescription
+        }
+    }
+    
+    if ($action -eq "getProductionCSID")
+    {
+        $requestId = Get-Content -path requestId.txt -Raw
+        Write-Host "Request ID for PCSID is:"
+        Write-Host $requestId
+        $CCSID = Get-Content -path CCSIDString.txt -Raw
+        $CCSID = $CCSID -replace "`n",""
+        Write-Host "Compliance CSID received from Zatca:"
+        Write-Host $CCSID
+    
+        Write-Host "Manual CCSID"
+        Write-Host $CCSID
+        $requestId = "1234567890123"
+    
+        #Init request for Production CSID (PCSID)
+        $postParams = @{"compliance_request_id"=$requestId} | ConvertTo-Json
+        $postHeader = @{
+               "Accept"="application/json"
+               "currentCCSID"=$CCSID
+               "Content-Type"="application/json"}
+    
+        #Change URL to Zatca production URL when onboarding     
+        $response = Invoke-WebRequest -Uri 'https://gw-apic-gov.gazt.gov.sa/e-invoicing/developer-portal/production/csids' -Method POST -Body $postParams -Headers $postHeader
+    
+        if ($response.StatusCode -eq 200)
+        {
+               $response = $response | ConvertFrom-Json
+               $PCSIDbase64 = $response.binarySecurityToken
+            Write-Host "Production CSID received from Zatca:"
+            Write-Host $PCSIDbase64
+    
+            $PCSID = [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($PCSIDbase64))
+            $PCSIDCertString = "-----BEGIN CERTIFICATE-----`n" + $PCSID + "`n" + "-----END CERTIFICATE-----"
+            
+            $PCSIDCertFileName = "PCSID.pem"
+            $PCSIDCertFilePath = Get-Location
+            $PCSIDCertFilePath = Join-Path $PCSIDCertFilePath $PCSIDCertFileName
+    
+            $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding $False
+            [System.IO.File]::WriteAllLines($PCSIDCertFilePath, $PCSIDCertString, $Utf8NoBomEncoding)
+    
+            openssl pkcs12 -inkey privatekey.pem -in PCSID.pem -export -passout pass:$password -out PCSID.pfx
+        }
+        else
+        {
+               Write-Host "Zatca service communication error:"
+               Write-Host $response.StatusCode
+               Write-Host $response.StatusDescription
+        }
+    } 
     ```
 
 2. Save the received output *pfx* certificate file in Azure Key Vault.
