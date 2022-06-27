@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Human Resources
 
 The settings of some Human resources parameters are shared across companies, while the settings of other parameters are company-specific. This article explains how to set up company-specific Human resources parameters.
 
-Two pages are used to set Human resources parameters. For parameters that are shared across companies, you use the **Human resources shared parameters** page. For parameters that are company-specific (in other words, the settings apply to a single company), you use the **Human resource parameters** page.
+Two pages are used to set Human resources parameters. For parameters that are shared across companies, you use the **Human resources shared parameters** page. For parameters that are company-specific, you use the **Human resource parameters** page.
 
 ![Go to Human resources parameters.](./media/hr-employee-self-service-human-resources-parameters.png)
 
@@ -80,9 +80,10 @@ In Dynamics 365 Finance, the settings on the **Compensation** tab define whether
 
 In Human Resources, you can use the **Compensation** tab to choose to restrict access to compensation plans and to set a default currency.
 
-For more information about compensation, see [Compensation plans overview](hr-compensation-overview.md).
+>[!NOTE]
+> In the merged infrastructure, the default **Currency** parameter on the **Compensation** tab in **Human resources parameters** has been removed. Moving forward, the currency will be handled by the **Ledger currency** to ensure no conflicts for existing finance and operations functionality and to avoid duplication. For more information on how to use ledger currency functionality, see [Configure ledgers](../general-ledger/configure-ledger#configuring-currencies-for-the-ledger.md). 
 
-![Compensation tab.](./media/hr-setup-parameters-compensation.png)
+For more information about compensation, see [Compensation plans overview](hr-compensation-overview.md).
 
 ## Number sequences
 
