@@ -61,6 +61,7 @@ This article provides information about functionality that supports Russian regu
 - [Foreign currency sales, purchases, and transfers](rus-currency-sale-purchase.md)
 - [Petty cash](emea-petty-cash.md)
 - [Cash - Local primary forms and unified reports](rus-local-primary-forms-and-unified-reports.md)
+- [Client-Bank interface and reconciliation procedure](localizations/rus-client-bank-export.md)
 
 ## VAT
 
