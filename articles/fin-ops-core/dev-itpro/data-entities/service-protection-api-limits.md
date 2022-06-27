@@ -145,8 +145,13 @@ The service protection API limits don't apply to all Microsoft services. The fol
 - [Data Import/Export Framework (DIXF)](data-import-export-job.md)
 - [Data Integrator](/power-platform/admin/data-integrator)
 - [Dual-write](dual-write/dual-write-overview.md)
-- [Power Platform virtual tables for Finance and Operations apps](../power-platform/virtual-entities-overview.md)
 - [Finance and Operations apps Connector](fin-ops-connector.md)
+- [Power Platform virtual tables for Finance and Operations apps](../power-platform/virtual-entities-overview.md)
+
+The exemption for virtual tables applies only when the [Microsoft Power Platform integration with Finance and Operations apps](../power-platform/overview.md) is enabled. The service protection API limits will apply to virtual tables if the integration is not enabled for the Finance and Operations apps environment. When the integration is enabled, the exemption applies only to the Finance and Operations apps API endpoints that are invoked by the virtual entity plugin. The Finance and Operations apps service will not throttle the request. However, because the request is made through the Microsoft Dataverse API, [Dataverse service protection API limits](../../../power-apps/developer/data-platform/api-limits.md) may still apply to the request.
+
+> [!NOTE]
+> The service protection API limits apply to the Finance and Operations apps environment. If the
 
 Although these services are currently exempt from the limits, they prioritize implementation of the service protection limits. Notifications will be provided before any changes, and the documentation will be updated when exemptions are removed for these services.
 
