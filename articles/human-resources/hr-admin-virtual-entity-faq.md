@@ -106,7 +106,7 @@ This message indicates that permissions haven't been granted in Human Resources 
 
 ### What do I do if the finance and operations Virtual Data Source Configurations option isn't available in my Microsoft Dataverse environment?
 
-During the setup of the virtual tables, you need to install the Dynamics 365 HR Virtual Table app, which adds the option for **finance and operations Virtual Data Source Configurations**. For more information about installing the app in the **Microsoft Dataverse integration** page, see [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md#install-the-dynamics-365-hr-virtual-table-app).
+During the setup of the virtual tables, you need to install the Dynamics 365 HR Virtual Table app, which adds the option for **Finance and operations Virtual Data Source Configurations**. For more information about installing the app in the **Microsoft Dataverse integration** page, see [Configure Dataverse virtual tables](hr-admin-integration-common-data-service-virtual-entities.md#install-the-dynamics-365-hr-virtual-table-app).
 
 If the **Install virtual table app** action on the **Microsoft Dataverse integration** page doesn't complete successfully, you can perform the action in the Power Platform admin center.
 
@@ -124,7 +124,7 @@ If the **Install virtual table app** action on the **Microsoft Dataverse integra
 
 7. Select **Install**.
 
-The installation takes a few minutes. When it completes, the **finance and operations Virtual Data Source Configurations** entity is generated in the environment.
+The installation takes a few minutes. When it completes, the **Finance and operations Virtual Data Source Configurations** entity is generated in the environment.
 
 ![Install the Dynamics 365 HR Virtual Table app from the Power Platform admin center.](media/hr-admin-integration-virtual-entities-power-platform-install.jpg)
 
