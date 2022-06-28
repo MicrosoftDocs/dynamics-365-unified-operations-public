@@ -203,7 +203,7 @@ When data is located, use in-product features to correct the data where the prod
 
 \*You might find that some data that qualifies as personal data can't be modified directly. Typically, this data is part of a financial transaction or other business data that is kept "as is" for compliance with financial laws (for example, tax laws), prevention of fraud (such as security audit trail), or compliance with industry certifications.
 
-\** GDPR is not a law exclusive of all other laws. As an enterprise resource planning system, finance and operations does not allow for modification of certain business or transactional data, and will not endorse nor provide functionality for the modification of business data that is necessary for compliance with other laws or certifications. Finance and operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
+\** GDPR is not a law exclusive of all other laws. As an enterprise resource planning system, finance and operations doesn't allow for modification of certain business or transactional data, and will not endorse nor provide functionality for the modification of business data that is necessary for compliance with other laws or certifications. Finance and operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
 
 
 ### Right to be forgotten\*
@@ -248,7 +248,7 @@ Controllers can use the following information to complete DSR requests.
 
 + **Data inventory and tagging** – Microsoft has enabled a tagging infrastructure that developers and customers can use. Each data field that is defined in metadata contains a classification property that has a suggested value that the controller can confirm or change to any value or term they choose in order to identify data that they deem fits within the definition of personal data.
 + **Data flow diagram** – Microsoft will publish a data flow diagram that identifies flows of data between systems in the customers production environments.
-+ **Person search report** – finance and operations includes the Person search report, which can be used to gather information in support of a request for a copy of the requestor's personal information. 
++ **Person search report** – Finance and operations includes the Person search report, which can be used to gather information in support of a request for a copy of the requestor's personal information. 
 
 ## Activity and diagnostic information
 
