@@ -104,8 +104,8 @@ The notification detail entity has the following properties. Some of these prope
 > [!NOTE]
 > The action property in the notification detail entity will be sent to the POS operation request. Use the action property to pass any custom information from the notification service to the POS. The **ActionProperty** can be configured using the **Operation parameter** field of the button grid designer, and the **ActionProperty** value should be equal to the input of the **Operation** parameter in the button grid designer.
 
-    ```csharp
-    namespace Contoso
+```csharp
+   namespace Contoso
     {
         namespace Commerce.Runtime.NotificationSample
         {
@@ -155,7 +155,7 @@ The notification detail entity has the following properties. Some of these prope
             }
         }
     }
-    ```
+```
 
 7. After you've completed your changes, build the project, and drop the output library into **\\RetailServer\\webroot\\bin\\Ext**.
 8. Register the output library in the **CommerceRuntime.Ext.config** file.
