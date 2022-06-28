@@ -96,6 +96,13 @@ You can configure the splitting of sales order customer invoices by site or by d
 ## Post to Revenue account for sales order lines that have no price and no cost
 You'll have the option to update the **Revenue** account in the **General ledger** for sales order lines that have no price and no cost. To set up or view this information, go to the **Post to Revenue account for zero priced and zero cost sales order invoice lines** parameter on the **Ledger and sales tax** tab of the **Accounts receivable parameters** page. (**Accounts receivable > Setup > Accounts receivable parameters**). Select **Yes** to update the **Revenue** account for sales order invoice lines that have no price and no cost. If this option is selected, the voucher will contain 0.00 entries for the **Customer balance** and **Revenue** posting types. A revenue account is defined on the **Inventory posting** parameter page, on the **Sales order** account definition tab. If this option isn't selected, lines that don't have price or cost information won't post to the **Revenue** account. Instead, the voucher will contain a 0.00 entry for the **Customer balance** posting type.
 
+## Line creation sequence number information
+You’ll have the option to create sequential **Line creation sequence numbers** when posting customer invoice lines. Line creation sequence numbers are assigned during the posting process. Allowing non-sequential numbering can improve customer invoice posting performance. The line creation sequence number may be used by third-party integrations that expect sequential ordering. Consult your IT department about any extensions that may integrate with the line creation sequence number.
+
+To set up or view this information, go to the **Assign sequential line numbers when posting customer invoice lines** option on the **Updates** tab of the **Accounts receivable parameters** page. (Accounts receivable > Setup > Accounts receivable parameters)
+ - Select **No** to use non-sequential numbering for the **Line creation sequence number**.
+ - Select **Yes** to use sequential numbering. You must set the option to **Yes** for legal entities with a primary address in Italy. Additionally, when the flight **CustInvoiceTransRandLineCreationSeqNumFlight** is disabled, the option must be set to **Yes**.
+
 ## Additional settings that change the posting behavior
 The following fields change the behavior of the posting process.
 
