@@ -65,7 +65,7 @@ To read a description of this feature, see [Recommended fields](/dynamics365-rel
 To read a description of this feature, see [New task recorder capabilities for RSAT](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/new-task-recorder-capabilities-rsat) in the release plan.
 
 ### (Preview) Branding changes for updated finance and operations licensing
-To read a description of this feature, see [finance and operations licensing](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-licensing) in the release plan.
+To read a description of this feature, see [Finance and operations licensing](/dynamics365-release-plan/2020wave1/finance-operations-crossapp-capabilities/finance-operations-licensing) in the release plan.
 
 ## Additional resources
 
