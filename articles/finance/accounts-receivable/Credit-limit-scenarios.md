@@ -37,12 +37,12 @@ Let's assume the customer has an individual credit limit of $10,000. The custome
 Let's assume the customer has an individual credit limit of $20,000. The customer is assigned to a **Customer credit group** and the group's limit is $15,000. The customer's effective credit limit is $15,000 because the blocking rules always check the customer group credit limit first. Any sales orders over $15,000 will be blocked. 
 
 ## Individual credit limit set to 0.00 and mandatory credit limit is set to Yes
-If a customer has an individual credit limit set to 0.00 with the **Mandatory credit limit** set to **Yes**, their effective credit limit is 0.00. Even if they're assigned to a customer credit group the credit limit is $0.00. This allows the customer to be part of a group but all orders will go to Credit management.
+If a customer has an individual credit limit set to 0.00 with the **Mandatory credit limit** set to **Yes**, the effective credit limit is 0.00. Even if they're assigned to a customer credit group, the credit limit is $0.00. This allows the customer to be part of a group but all orders will go to Credit management.
 
 ## Individual credit limit is set to 0.00 and Unlimited credit limit is set to Yes
 If a customer has an individual credit limit set to 0.00 but the **Unlimited credit limit** option is set to **Yes**, they will have unlimited credit. Even if they're assigned to a customer credit group, the credit limit is unlimited. 
 
 ## Individual credit limit is set to 0.00 and part of a customer credit group
-Let's assume a customer has an individual credit limited set to 0.00, the Unlimited credit set to No and Mandatory credit limit set to No. The customer is assigned to a customer credit group with a limit of $15,000. The customer's effective credit limit is group limit of $15,000 so any sales orders over this amount would be blocked. 
+Let's assume a customer has an individual credit limited set to 0.00, the **Unlimited credit** is set to **No** and **Mandatory credit limit** is set to **No**. The customer is assigned to a customer credit group with a limit of $15,000. The customer's effective credit limit is group limit of $15,000 so any sales orders over this amount would be blocked. 
 This allows the credit limit to be managed at the customer group level instead of the individual customer level. All customers assigned to one group share the credit limit. 
 
