@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Release 10
 
 This article describes features that are new or changed in Microsoft Dynamics 365 Retail. 
 
-To learn about the features in Finance and Operations, see [What's new or changed in Finance and Operations version 10.0 (April 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10).
+To learn about the features in finance and operations, see [What's new or changed in finance and operations version 10.0 (April 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10).
 
 ## Restrict payment methods for returns without a receipt
 
