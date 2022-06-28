@@ -79,11 +79,11 @@ The Retail software development kit (SDK) includes a sample that shows how to ex
 
 ## Properties of the notification detail entity
 
-The notification detail entity has the following properties.
+The notification detail entity has the following properties, some of these properties can be configured in the button grid properties created for the custom operation in the Retain and Commerce headquaters.
 
 | Property               | Data type      | Description                                                                            |
 |------------------------|----------------|----------------------------------------------------------------------------------------|
-| ActionProperty         | string         | A custom property to send to the POS operation.                                        |
+| ActionProperty         | string         | A custom property to send to the POS operation. (This property can be configured using the **Operation parameter** field in the button grid designer.)         |
 | DisplayText            | string         | The display text of the notification.                                                  |
 | IsLiveContentOnly      | bool           | A value that indicates whether the notification is only for live content.              |
 | IsNew                  | bool           | A value that indicates whether the notification is new.                                |
@@ -101,8 +101,8 @@ The notification detail entity has the following properties.
 5. Either create a new class and override **GetNotificationsExtensionServiceRequest**, or use the sample template. 
 6. In the **NotificationExtensionService** class, there is a method that is named **Process**. The code inside that method checks the operation ID and then, based on the operation ID, creates a notification details object and adds any notifications. Check whether the operation ID is custom operation ID, and then write logic to check whether there are any notifications. If there are, create a notification object that contains the details, and return it together with the response. The POS will then parse the response and show the notification. The following code example is based on the template.
 
-    > [!NOTE]
-    > Remove the sample implementation inside the process method. Keep only the custom logic.
+> [!NOTE]
+> The action property in the Notification detail entity will be sent to the POS operation request. Use that action property to pass any custom information from the notification service to the POS and ActionProperty can be configured using the **Operation parameter** field in the button grid designer and ActionProperty value should be equal to the input of Operation parameter in the button grid designer.
 
     ```csharp
     namespace Contoso
@@ -144,6 +144,7 @@ The notification detail entity has the following properties.
                         IsSuccess = true,
                         // If you would like POS to navigate to a specific action property for the given operation
                         // when the notification tile is selected, define the action property as well.
+                        // This property can be configured using the **Operation parameter** field in the button grid designer and passed to the CRT code.
                         ActionProperty = "1"
                         };
                     details.Add(detail);
@@ -160,10 +161,7 @@ The notification detail entity has the following properties.
 8. Register the output library in the **CommerceRuntime.Ext.config** file.
 9. In the POS, create a new operation that has the same operation ID that is used in the CRT extension. In this example, the operation ID is **5000**. You can use any operation ID that is above 5000.
 10. When the POS user selects the notification tile, the POS framework calls the operation handler for the operation ID that is used. Inside the handler, add the required logic to specify what should happen when the POS user selects the notification. For information about how to create a POS operation request, response, and handler, see [Show order notifications in the point of sale (POS)](add-POS-operations.md).
-
-    > [!NOTE]
-    > The action property in the Notification detail entity will be sent to the POS operation request. Use that action property to pass any custom information from the notification service to the POS.
-
+ 
 11. Configure the notification scheduler according to the instructions in [Show order notifications in the point of sale (POS)](../notifications-pos.md).
 
 ## Validate the customization
