@@ -332,6 +332,78 @@ The following table lists the columns that are pre-extended.
 | FISCALDOCUMENTSOURCETEXT\_BR               | NAME                                                         | nvarchar(120)  |                       |                                     |
 | RETAILTHEMEACCENT               | NAME                                                         | nvarchar(120)  |                       |                                     |
 | ECORESATTRIBUTEGROUP               | NAME                                                         | nvarchar(120)  |                       |                                     |
+|TAXRUNTIMELOOKUPSTRUCTUREFIELDBINDING  | NAME   | nvarchar(120)  |          |           |  
+|TAXRUNTIMEPOSTINGTYPE     		    | NAME   | nvarchar(120)  |           |           |  
+|RETAILVISUALPROFILE                    | NAME| nvarchar(120)      |          |           |  
+|TAXRUNTIMELOOKUP		  	    | NAME| nvarchar(120)      |          |          | 
+|TAXRUNTIMEDOCMODELROWMEASURE		   | NAME| nvarchar(120)      |          |          |  
+| TAXRUNTIMEMEASURE		    | NAME| nvarchar(120)      |          |          |  
+| PRICEDISCGROUP		    | NAME| nvarchar(120)      |          |          |  
+| SYSSERVICECONFIGURATIONSETTING | NAME| nvarchar(120)      |          |          |  
+| RETAILKEYBOARDBUTTONCONTROL	 | NAME| nvarchar(120)      |          |          |  
+| RETAILDISCOUNTVALIDATIONPERIOD | NAME| nvarchar(120)      |          |          |  
+| ERFORMATMAPPINGVERSIONTABLE		    | NAME| nvarchar(120)      |          |          |  
+| EXCHANGERATETYPE		    | NAME| nvarchar(120)      |          |          |  
+| TAXRUNTIMEDOCCOMPONENT		    | NAME| nvarchar(120)      |          |          |  
+| ERFORMATMAPPINGTABLE		    | NAME| nvarchar(120)      |          |          |  
+| RETAILBUTTONGRID		    | NAME| nvarchar(120)      |          |          |  
+| ERSOLUTIONTABLE		    | NAME| nvarchar(120)      |          |          |  
+| RETAILTRANSACTIONATTRIBUTETRANS	| NAME| nvarchar(120)      |          |          |  
+| TAXRUNTIMEDOCCONTEXT		    | NAME| nvarchar(120)      |          |          |  
+| TAXRUNTIMECOMPONENTMEASURE		    | NAME| nvarchar(120)      |          |          |  
+| INVENTMODELGROUP		    | NAME| nvarchar(120)      |          |          |  
+| RETAILPERIODICDISCOUNT		    | NAME| nvarchar(120)      |          |          |  
+| DIRADDRESSBOOK		    | NAME| nvarchar(120)      |          |          |  
+| RETAILFUNCTIONALITYPROFILE		    | NAME| nvarchar(120)      |          |          |  
+| RETAILIDENTITYPROVIDER		    | NAME| nvarchar(120)      |          |          |  
+| TAXRUNTIMEDOCTAXTYPE		    | NAME| nvarchar(120)      |          |          |  
+| TAXRUNTIMEREFERENCEMODELROW		    | NAME| nvarchar(120)      |          |          |  
+| RETAILPOSPERMISSIONGROUP		    | NAME| nvarchar(120)      |          |          |  
+| TAXRUNTIMEDEFCONTEXT		    | NAME| nvarchar(120)      |          |          |  
+| COMMISSIONSALESGROUP		    | NAME| nvarchar(120)      |          |          |  
+| LOGISTICSLOCATIONROLE		    | NAME| nvarchar(120)      |          |          |  
+| RETAILPOSTHEME		    | NAME| nvarchar(120)      |          |          |  
+| TAXRUNTIMELOOKUPSTRUCTUREFIELD	| NAME| nvarchar(120)      |          |          |  
+| WHSINVENTSTATUS		    | NAME| nvarchar(120)      |          |          |  
+| ERDATAMODELTABLE		    | NAME| nvarchar(120)      |          |          |  
+| RETAILTERMINALTABLE		    | NAME| nvarchar(120)      |          |          |  
+| RETAILFISCALINTEGRATIONDOCUMENTPROVIDERTABLE | NAME| nvarchar(120)      |      |          |  
+| TAXRUNTIMEMODEL		    | NAME| nvarchar(120)      |          |          |  
+| TAXRUNTIMEDOCCOMPONENTPOSTINGPROFILEDET	| NAME| nvarchar(120)      |          |          |  
+| ERTEXTFORMATTABLE	| NAME| nvarchar(120)      |          |          |  
+| RETAILTENDERTYPETABLE	| NAME| nvarchar(120)      |          |          |  
+| TAXPERIODHEADER	| NAME| nvarchar(120)      |          |          |  
+| RETAILTABLEIDTABLE		    | NAME| nvarchar(120)      |          |          |  
+| RETAILPERIODICDISCOUNTLINE		    | NAME| nvarchar(120)      |          |          |  
+| RETAILCONNDATABASEPROFILE		    | NAME| nvarchar(120)      |          |          |  
+| RETAILSTORETENDERTYPECARDTABLE	| NAME| nvarchar(120)      |          |          |  
+| RETAILAFFILIATION		    | NAME| nvarchar(120)      |          |          |  
+| RETAILONLINECHANNELFUNCTIONALITYPROFILETABLE| NAME| nvarchar(120)      |        |          |  
+| TAXRUNTIMEREFERENCEMODEL		    | NAME| nvarchar(120)      |          |          |  
+| RETAILTENDERTYPECARDTABLE		    | NAME| nvarchar(120)      |          |          |  
+| ERVENDORTABLE		    | NAME| nvarchar(120)      |          |          |  
+| ERMODELMAPPINGTABLE		    | NAME| nvarchar(120)      |          |          |  
+| RETAILDRAWERPOOLDEVICE		    | NAME| nvarchar(120)      |          |          |  
+| RETAILDRAWERPOOL		    | NAME| nvarchar(120)      |          |          |  
+| RETAILCONFIGURATIONPARAMETERS	| NAME| nvarchar(120)      |          |          |  
+| TAXENGINESQLDICTIONARY		    | NAME| nvarchar(120)      |          |          |  
+| LOGISTICSADDRESSFORMATHEADING	| NAME| nvarchar(120)      |          |          |  
+| TAXRUNTIMEDOCMODELROW		    | NAME| nvarchar(120)      |          |          |  
+| RETAILCDXDATAGROUP		    | NAME| nvarchar(120)      |          |          |  
+| ECORESPRODUCTMASTERDIMVALUETRANSLATION	| NAME| nvarchar(120)      |          |          |  
+| TAXRUNTIMELOOKUPSTRUCTUREBINDING	| NAME| nvarchar(120)      |          |          |  
+| RETAILTRANSACTIONSERVICEPROFILE	| NAME| nvarchar(120)      |          |          |  
+| RETAILSTORESAFE		    | NAME| nvarchar(120)      |          |          |  
+| TAXRUNTIMETAXTYPE		    | NAME| nvarchar(120)      |          |          |  
+| RETAILTERMINALCUSTOMFIELD		    | NAME| nvarchar(120)      |          |          |  
+| RETAILFISCALINTEGRATIONCONNECTORTABLE	| NAME| nvarchar(120)      |          |          |  
+| TAXRUNTIMEMODELROW		    | NAME| nvarchar(120)      |          |          |  
+| ERDATAMODELVERSIONTABLE		    | NAME| nvarchar(120)      |          |          |  
+| TAXRUNTIMEDOCCOMPONENTPOSTINGPROFILE | NAME| nvarchar(120)      |          |          |  
+| TAXRUNTIMEDOCMODEL		    | NAME| nvarchar(120)      |          |          |  
+| RETAILPOSITIONPOSPERMISSION		    | NAME| nvarchar(120)      |          |          |  
+| RETAILTENDERDISCOUNT		    | NAME| nvarchar(120)      |          |          |  
+
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
