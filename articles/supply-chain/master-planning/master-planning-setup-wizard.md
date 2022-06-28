@@ -35,7 +35,7 @@ This article provides a guide for the **Master planning setup wizard**. It expla
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3YnSB]
 
-The [Master planning setup wizard in Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [Master planning setup wizard in Dynamics 365 Supply Chain Management](https://youtu.be/c-e6n-8rZb4) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 
 ## Specific requirements of your company
