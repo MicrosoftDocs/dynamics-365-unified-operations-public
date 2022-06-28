@@ -403,6 +403,29 @@ The following table lists the columns that are pre-extended.
 | TAXRUNTIMEDOCMODEL		    | NAME| nvarchar(120)      |          |          |  
 | RETAILPOSITIONPOSPERMISSION		    | NAME| nvarchar(120)      |          |          |  
 | RETAILTENDERDISCOUNT		    | NAME| nvarchar(120)      |          |          |  
+|RETAILDLVMODEADDRESSEXPLODED | STATE | nvarchar(60)      |          |          |  
+| INVENTLOCATIONDEFAULTLOCATION | INVENTLOCATIONID | nvarchar(25)     |   |          |  
+| RETAILRETURNPOLICYLINE	| INVENTLOCATIONID | nvarchar(25)      |          |          |  
+| RETAILRETURNINFOCODEPOLICYLINE	    | INVENTLOCATIONID | nvarchar(25)      |     |       |  
+| RETAILRETURNREASONCODEPOLICYLINE |	INVENTLOCATIONID | nvarchar(25)      |          |        |  
+| RETAILPRODUCTWAREHOUSEINVENTORY	| INVENTLOCATIONID | nvarchar(25)      |        |       |  
+| RETAILPUBRETAILSTORETABLE	| INVENTLOCATIONIDFORCUSTOMERORDER | nvarchar(25)   |    |      |  
+| RETAILSTORETABLE | INVENTLOCATIONIDFORCUSTOMERORDER | nvarchar(25)      |      |          |  
+| RETAILSTORELOCATORGROUPMEMBER | INVENTLOCATIONID | nvarchar(25)      |          |          |  
+| RETAILTRANSACTIONORDERINVOICETRANS	   | INVOICEID | nvarchar(40)      |          |          |  
+| RETAILTRANSACTIONTABLE	   | INVENTLOCATIONID | nvarchar(25)      |          |          |  
+| RETAILTRANSACTIONTABLE	   | CUSTOMERNAME | nvarchar(300)      |          |          |  
+| RETAILCHANNELTABLE		   | INVENTLOCATION | nvarchar(25)      |          |          |  
+| RETAILPUBRETAILCHANNELTABLE	 | INVENTLOCATION | nvarchar(25)      |          |          |  
+| UNITOFMEASURE		    | SYMBOL | nvarchar(20)      |          |          |  
+| RETAILPRODUCTLISTLINEUPDATE	    | UNITOFMEASURE | nvarchar(20)      |          |          |  
+| RETAILUNIT		    | UNITID | nvarchar(20)      |          |          |  
+| LOGISTICSELECTRONICADDRESS	  | COUNTRYREGIONCODE | nvarchar(10)      |          |          |  
+| REQITEMTABLE		    | ITEMID | nvarchar(100)      |          |          |  
+| GUPITEMBASEPRICE		    | ITEMID | nvarchar(100)      |          |          |  
+| AGREEMENTLINE		    | ITEMID | nvarchar(100)      |          |          |  
+| MARKUPAUTOTABLE		    | ITEMRELATION | nvarchar(100)      |          |          |  
+
 
 
 
