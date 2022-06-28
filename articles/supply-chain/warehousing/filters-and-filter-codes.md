@@ -99,7 +99,7 @@ To set up filter codes on item groups, follow these steps.
     For example, if the **Use filter code 1** and **Use filter code 2** check boxes are selected, both filter code 1 and filter code 2 of the item must match the setup of the filter group for the item group before the filter group can be selected. When you create a new item, the selected filter group will be the default filter group in the **Group 1** and **Group 2** fields on the **Warehouse** FastTab of the **Released product details** page.
 
 > [!IMPORTANT]
-> Product filter codes are enabled only for items that use advanced warehouse management.
+> Product filter codes are enabled only for items that use warehouse management processes (WMS).
 
 ## Specify filter codes for released products
 
@@ -162,7 +162,7 @@ To set up vendor filter codes, follow these steps.
 1. In the **Code 1** through **Code 10** fields, select the filter codes to use as criteria to limit the items that are available for vendors in the selected item group. You must make a selection for every filter code that is set up for the item group.
 
 > [!NOTE]
-> The setup of vendor product filters applies to released products where warehouse management processes are enabled for the associated storage dimension group. The filter codes are used to determine whether the system will allow users to purchase a given item from a given vendor when they create purchase order lines. Microsoft Dynamics 365 Supply Chain Management has two methods for handling vendor approval. If one or more released products exist where the **Approved vendor check method** field is set to *Warning only* or *Not allowed*, both vendor approval methods could be enabled for those items. This situation might cause issues when users create purchase order lines.
+> The setup of vendor product filters applies to released products where warehouse management processes (WMS) are enabled for the associated storage dimension group. The filter codes are used to determine whether the system will allow users to purchase a given item from a given vendor when they create purchase order lines. Microsoft Dynamics 365 Supply Chain Management has two methods for handling vendor approval. If one or more released products exist where the **Approved vendor check method** field is set to *Warning only* or *Not allowed*, both vendor approval methods could be enabled for those items. This situation might cause issues when users create purchase order lines.
 
 ## See also
 

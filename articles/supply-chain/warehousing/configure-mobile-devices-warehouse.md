@@ -128,13 +128,13 @@ You can set up a menu item that creates work for another worker after an initial
 <td>Transfer order item receiving</td>
 <td>Register the receipt of a quantity of an item, and create put-away work for another worker.
 
-<strong>Note:</strong> Use this option only if the items were shipped from a warehouse that isn't enabled for warehouse management processes.</td>
+<strong>Note:</strong> Use this option only if the items were shipped from a warehouse that isn't enabled for warehouse management processes (WMS).</td>
 </tr>
 <tr>
 <td>Transfer order item receiving and put away</td>
 <td>Register the receipt of a quantity of an item, and put the items away. The same worker performs both actions.
 
-<strong>Note:</strong> Use this option only if the items were shipped from a warehouse that isn't enabled for warehouse management processes.</td>
+<strong>Note:</strong> Use this option only if the items were shipped from a warehouse that isn't enabled for warehouse management processes (WMS).</td>
 </tr>
 <tr>
 <td>Transfer order line receiving</td>

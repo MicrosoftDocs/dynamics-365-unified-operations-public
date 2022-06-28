@@ -34,10 +34,10 @@ ms.dyn365.ops.version: AX 7.0.0
 This article explains how to configure a warehouse. It includes information about how to enable a warehouse layout and warehouse processes.
 
 > [!NOTE]
-> This article applies to features in the **Warehouse management** module (advanced warehousing). It doesn't apply to warehouse features in the **Inventory management** module.
+> This article applies to features in the **Warehouse management** module. It doesn't apply to warehouse features in the **Inventory management** module.
 
 ## Warehouse layout
-The Warehouse management system in Supply Chain Management gives you flexible ways to define your warehouse layout to meet changing needs, so that you can achieve optimal warehouse efficiency.
+Warehouse management processes (WMS) in Supply Chain Management gives you flexible ways to define your warehouse layout to meet changing needs, so that you can achieve optimal warehouse efficiency.
 
 -   You can establish high-priority and low-priority storages areas for optimum placement of goods.
 -   You can divide your warehouse into zones to accommodate various storage needs, such as temperature requirements, or various turnover rates for items.
@@ -45,7 +45,7 @@ The Warehouse management system in Supply Chain Management gives you flexible wa
 -   You can group locations by using physical capacity constraint settings.
 -   You can control how items are stored and picked, based on query-defined rules.
 
-To use warehouse management in Supply Chain Management, you must create a warehouse and enable it for more advanced or specialized warehouse management activities. On the **Warehouses** page, select the **Use warehouse management processes** option.
+To use WMS in Supply Chain Management, you must create a warehouse and enable it for WMS. On the **Warehouses** page, select the **Use warehouse management processes** option.
 
 ### Zone groups, zones, location types, and locations
 
