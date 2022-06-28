@@ -4,7 +4,7 @@
 title: Show custom notifications in the POS
 description: This article explains how to add custom notifications in the point of sale (POS).
 author: mugunthanm
-ms.date: 09/17/2019
+ms.date: 06/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -79,7 +79,7 @@ The Retail software development kit (SDK) includes a sample that shows how to ex
 
 ## Properties of the notification detail entity
 
-The notification detail entity has the following properties, some of these properties can be configured in the button grid properties created for the custom operation in the Retain and Commerce headquaters.
+The notification detail entity has the following properties. Some of these properties can be configured in the Retail essentials button grid designer and in Commerce headquarters.
 
 | Property               | Data type      | Description                                                                            |
 |------------------------|----------------|----------------------------------------------------------------------------------------|
@@ -102,7 +102,7 @@ The notification detail entity has the following properties, some of these prope
 6. In the **NotificationExtensionService** class, there is a method that is named **Process**. The code inside that method checks the operation ID and then, based on the operation ID, creates a notification details object and adds any notifications. Check whether the operation ID is custom operation ID, and then write logic to check whether there are any notifications. If there are, create a notification object that contains the details, and return it together with the response. The POS will then parse the response and show the notification. The following code example is based on the template.
 
 > [!NOTE]
-> The action property in the Notification detail entity will be sent to the POS operation request. Use that action property to pass any custom information from the notification service to the POS and ActionProperty can be configured using the **Operation parameter** field in the button grid designer and ActionProperty value should be equal to the input of Operation parameter in the button grid designer.
+> The action property in the notification detail entity will be sent to the POS operation request. Use the action property to pass any custom information from the notification service to the POS. The **ActionProperty** can be configured using the **Operation parameter** field of the button grid designer, and the **ActionProperty** value should be equal to the input of the **Operation** parameter in the button grid designer.
 
     ```csharp
     namespace Contoso
@@ -144,7 +144,7 @@ The notification detail entity has the following properties, some of these prope
                         IsSuccess = true,
                         // If you would like POS to navigate to a specific action property for the given operation
                         // when the notification tile is selected, define the action property as well.
-                        // This property can be configured using the **Operation parameter** field in the button grid designer and passed to the CRT code.
+                        // This property can be configured using the Operation parameter field of the button grid designer and passed to the CRT code.
                         ActionProperty = "1"
                         };
                     details.Add(detail);
