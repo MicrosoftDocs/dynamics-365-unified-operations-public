@@ -57,7 +57,7 @@ For more information, see [Develop and customize home page](dev-tools/developer-
 Finance, Supply Chain Management, and Commerce are cloud-hosted. As an IT professional, you can use Dynamics Lifecycle Services (LCS) to monitor and tune your environments, deploy features, and stay up to date with recent hotfixes. Within your deployment, you can configure security, and manage when processes run. You can also use LCS when you are called on to support business intelligence and reporting, mobile apps, Office, and other integrations. 
 
 ## BI & reporting
-finance and operations provides five distinct reporting experiences. Specialized tools are provided to meet the complex and diverse reporting needs of various functions throughout the organization.
+Finance and operations provides five distinct reporting experiences. Specialized tools are provided to meet the complex and diverse reporting needs of various functions throughout the organization.
 - Operational views – Designed to address the specific needs of a given business persona.
 - Business documents – Static documents used to capture and exchange processed business data.
 - Analytical tools and visualizations – Personalized presentations of logical calculations that allow the user to explore their data.
