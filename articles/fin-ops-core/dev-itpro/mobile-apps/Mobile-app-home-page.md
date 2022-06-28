@@ -32,7 +32,7 @@ ms.search.validFrom: 2017-02-28
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-This article describes the **finance and operations (Dynamics 365)** mobile app and provides links to resources that can help you implement it in your organization.
+This article describes the **Finance and operations (Dynamics 365)** mobile app and provides links to resources that can help you implement it in your organization.
 
 ## Overview
 
@@ -138,8 +138,8 @@ The following table includes links to resources that can help you implement both
 <td>User</td>
 <td>Download and install the mobile app.</td>
 <td>
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">finance and operations app for Android</a><BR/>
-<a href="https://go.microsoft.com/fwlink/?linkid=850663">finance and operations app for iOS</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and operations app for Android</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and operations app for iOS</a><BR/>
 (Windows Phone unsupported)
 </td>
 </tr>
