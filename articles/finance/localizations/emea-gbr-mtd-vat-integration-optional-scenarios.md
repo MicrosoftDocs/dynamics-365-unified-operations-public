@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.22
 
 [!include [banner](../includes/banner.md)]
 
-Her Majesty's Revenue and Customs (HMRC) lets you retrieve information about value-added tax (VAT) payments and VAT liabilities. Therefore, the **UK MTD VAT returns** processing includes actions that let you use the **Dynamics 365 for Finance and Operations** web application to retrieve this information from HMRC.
+Her Majesty's Revenue and Customs (HMRC) lets you retrieve information about value-added tax (VAT) payments and VAT liabilities. Therefore, the **UK MTD VAT returns** processing includes actions that let you use the **Dynamics 365 Finance** web application to retrieve this information from HMRC.
 
 ## Retrieve information about VAT payments
 
@@ -67,3 +67,4 @@ The following illustration shows a simplified representation of the processing f
 ![Retrieving information about VAT liabilities.](media/uk-mtd-liabilities-schema.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
