@@ -63,7 +63,7 @@ To use the finance and operations apps business events in the **When an action i
 
 After the **When an action is performed** trigger is added to a flow in Power Automate, the following information must be provided:
 
-- **Catalog** – Select **finance and operations**. This exposes finance and operations business events as a Dataverse business events catalog.
+- **Catalog** – Select **Finance and operations**. This exposes finance and operations business events as a Dataverse business events catalog.
 - **Category** – Select the category of the desired business event. The list of unique business event categories in the business event catalog in finance and operations apps is shown.
 - **Table name** – If the action is related to a specific table, select the related table. Typically, the value will be **(none)** for finance and operations apps business events.
 - **Action name** – Select the action or business event that the flow should be triggered from. The drop-down list shows all synchronized business events in the selected category in the finance and operations apps business event catalog.
@@ -77,7 +77,7 @@ For more information about how to use the **When an action is performed** trigge
 
 ## Subscribing to data events
 
-finance and operations apps entities that are enabled as virtual entities in Dataverse are included in the **When a row is added, modified or deleted** trigger of the Dataverse connector. When you add the trigger to a flow in Power Automate, define the table name of the table that you want to trigger the flow for. The **Table name** list contains the list of all finance and operations apps entities that are exposed as virtual entities in Dataverse from the finance and operations apps environment that is connected to the Microsoft Power Platform environment through the Microsoft Power Platform integration. For information about how to enable virtual entities, see [Enable Dataverse virtual entities](../power-platform/enable-virtual-entities.md).
+Finance and operations apps entities that are enabled as virtual entities in Dataverse are included in the **When a row is added, modified or deleted** trigger of the Dataverse connector. When you add the trigger to a flow in Power Automate, define the table name of the table that you want to trigger the flow for. The **Table name** list contains the list of all finance and operations apps entities that are exposed as virtual entities in Dataverse from the finance and operations apps environment that is connected to the Microsoft Power Platform environment through the Microsoft Power Platform integration. For information about how to enable virtual entities, see [Enable Dataverse virtual entities](../power-platform/enable-virtual-entities.md).
 
 ![When a row is added, modified or deleted trigger in the Microsoft Dataverse connector.](../media/businessevents_DataEventConnector.png)
 
