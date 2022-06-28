@@ -2,9 +2,9 @@
 # required metadata
 
 title: Get started with Electronic invoicing for Saudi Arabia
-description: This topic provides information that will help you get started with Electronic invoicing for Saudi Arabia.
+description: This article provides information that will help you get started with Electronic invoicing for Saudi Arabia.
 author: ikondo
-ms.date: 11/08/2021
+ms.date: 06/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,26 +31,26 @@ ms.dyn365.ops.version: AX 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you get started with Electronic invoicing for Saudi Arabia. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management application. These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md). 
+This article provides information that will help you get started with Electronic invoicing for Saudi Arabia. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Service (RCS) and in Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management. These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md). 
 
 ### Prerequisites
 
-Before you begin the procedures in this topic, complete the following prerequisites: 
+Before you begin the procedures in this article, complete the following prerequisites: 
 
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](e-invoicing-service-overview.md).
-- Sign up for Regulatory Configuration Services (RCS), and set up Electronic invoicing. For more information, see the following topics:
+- Sign up for the Regulatory Configuration Services (RCS), and set up Electronic invoicing. For more information, see:
 
     - [Sign up for and install the Electronic Invoicing service](e-invoicing-sign-up-install.md)
     - [Set up Azure resources for Electronic invoicing](e-invoicing-set-up-azure-resources.md)
     - [Install the add-in for microservices in Lifecycle Services](e-invoicing-install-add-in-microservices-lcs.md)
 	
-- Activate the integration between your Microsoft Dynamics 365 Finance application and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](e-invoicing-activate-setup-integration.md).
+- Activate the integration between your Finance application and the Electronic Invoicing service as described in [Activate and setup integration with Electronic invoicing](e-invoicing-activate-setup-integration.md).
 - Learn how to create certificates and secrets in Azure Key Vault, and set it up it as described in [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md). 
 - In Microsoft Dataverse, configure virtual entities for Finance and Supply Chain Management. For more information, see [Configure Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
 - Enable the **CustomerPaymentMethodEntity** virtual entity. For more information, see [Enable Microsoft Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
-- Add the Dataverse endpoint as a connected application in the RCS instance. For more information, see the [Create a connected application](e-invoicing-connected-applications.md) section in the "Get started with Electronic invoicing service administration" topic.
+- Add the Dataverse endpoint as a connected application in the RCS instance. For more information, see the [Create a connected application](e-invoicing-connected-applications.md) section in the "Get started with Electronic invoicing service administration" article.
 - Import the **Saudi Arabian electronic invoice (SA)** electronic invoicing feature into RCS from the Global repository. For more information, see [Import features from the Global repository](e-invoicing-import-feature-global-repository.md).
-- Make sure that the following Electronic Reporting format configurations are imported. For moe information, see [Import Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md)
+- Make sure that the following Electronic Reporting format configurations are imported. For more information, see [Import Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md).
     - Sales e-invoice (SA).
     - Project e-invoice (SA).
     - Retail fiscal document format (for Retail specific scenarios, if required).
@@ -72,9 +72,11 @@ Some of the parameters from the Saudi Arabian electronic invoice (SA) electronic
 
 8. On the **Setups** tab, select **Edit** for the selected configuration. 
 9. In the **Processing pipeline** section, turn on the **Export result** option for the **Transform document** action.
-10. Create certificates for Cryptographic Stamp Identifiers in Azure Key Vault, see [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md) for details.
+10. Create certificates for Cryptographic Stamp Identifiers in Azure Key Vault. For more information, see [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md).
+
      > [!NOTE]
-     > You need to create Compliance Cryptographic Stamp Identifier (**CCSID**) or Production Cryptographic Stamp Identifier (**PCSID**) depending of your stage of [onboarding](#onboarding) process.
+     > Depending on your place in teh [onboarding](#onboarding) process, create a Compliance Cryptographic Stamp Identifier (**CCSID**) or Production Cryptographic Stamp Identifier (**PCSID**).
+     
 11. In the **Globalization feature** workspace, select the **Environment setup** related link, then the **Service environments** menu and select the environment that will be used for the feature deployment.
 12. In “Number Sequence” section, add new record for the number sequence that will be used for submitted electronic invoices counting.
     ![Number Sequence setup](media/emea-sa-einvoice-counter.jpg)
@@ -89,8 +91,8 @@ Some of the parameters from the Saudi Arabian electronic invoice (SA) electronic
     - In the **Parameters** section, select the **Certificate name** name. In the **Value** field, select from the list either **CCSID** or **PCSID** created on step 10 depending of your stage of [onboarding](#onboarding) process.
  > [!NOTE]
  > Repeat the steps 13 through 16 for the **Project invoice** and **Retail simplified invoice** feature setup. 
-17. Complete, publish, and deploy the **Saudi Arabian electronic invoice (SA)** feature to the service environment. For more information, see the [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) section in the "Get started with Electronic invoicing" topic.
-18. Deploy the **Saudi Arabian electronic invoice (SA)** feature to the connected application. For more information, see the [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) section in the "Get started with Electronic invoicing" topic.
+17. Complete, publish, and deploy the **Saudi Arabian electronic invoice (SA)** feature to the service environment. For more information, see the [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) section in the "Get started with Electronic invoicing" article.
+18. Deploy the **Saudi Arabian electronic invoice (SA)** feature to the connected application. For more information, see the [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) section in the "Get started with Electronic invoicing" article.
 
 ## Microsoft Dynamics D365 Finance configuration
 
