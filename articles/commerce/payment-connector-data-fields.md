@@ -57,7 +57,7 @@ This section describes all data points that are sent to the payment connector fo
 
 | Field | Description |
 |---|---|
-| merchantInformation | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
+| merchantInformation | The merchant information that is defined on the **POS hardware profile** page in the finance and operations client. |
 | invoiceNumber | The unique invoice number that the POS generates to track the sales transaction. |
 
 #### UpdateLineItemsPaymentTerminalDeviceRequest
@@ -151,7 +151,7 @@ This section describes data that is sent to the payment connector for card-not-p
 
 | Namespace | Field | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
+| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the finance and operations client. |
 | PaymentCard | Last4Digits | The last four digits of the card that is used for the payment. | 
 | PaymentCard | UniqueCardId | The unique randomized identifier of the card that is used for the payment. |
 | PaymentCard | ExpirationYear | The expiration year of the card that is used for the payment. |
@@ -172,7 +172,7 @@ This section describes data that is sent to the payment connector for card-not-p
 
 | Namespace | Field | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
+| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the finance and operations client. |
 | TransactionData | Amount | The total amount of the transaction. |
 | TransactionData | CurrencyCode | The currency code for the transaction. |
 | PurchaseLevelData | L2Data | The list of "Level 2" data. For more details, see the [L2 data](#l2-data) section later in this article. |
@@ -182,7 +182,7 @@ This section describes data that is sent to the payment connector for card-not-p
 
 | Namespace | Field | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
+| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the finance and operations client. |
 | TransactionData | Amount | The total amount of the transaction. |
 | TransactionData | CurrencyCode | The currency code for the transaction. |
 
@@ -190,7 +190,7 @@ This section describes data that is sent to the payment connector for card-not-p
 
 | Namespace | Field | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
+| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the finance and operations client. |
 | PaymentCard | Last4Digits | The last four digits of the card that is used for the payment. | 
 | PaymentCard | UniqueCardId | The unique randomized identifier of the card that is used for the payment. |
 | PaymentCard | ExpirationYear | The expiration year of the card that is used for the payment. |
@@ -211,7 +211,7 @@ This section describes data that is sent to the payment connector for card-not-p
 
 | Namespace | Field | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
+| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the finance and operations client. |
 | PaymentCard | Name | The name of the cardholder. |
 | PaymentCard | StreetAddress | The street of the billing address that is associated with the card that is used for the payment. |
 | PaymentCard | City | The city of the billing address that is associated with the card that is used for the payment. |

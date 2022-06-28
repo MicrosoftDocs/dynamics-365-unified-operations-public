@@ -55,8 +55,8 @@ The following table shows the views that support custom controls in POS.
 
 > [!NOTE]
 > Custom controls are supported only in the following product versions:
-> - **For views that aren't based on the screen layout designer:** Microsoft Dynamics 365 for Finance and Operations App update 3 and Microsoft Dynamics 365 Retail App update 3
-> - **For views that are based on the screen layout designer:** Microsoft Dynamics 365 for Finance and Operations App update 4 and Microsoft Dynamics 365 Retail App update 4
+> - **For views that aren't based on the screen layout designer:** Microsoft Dynamics 365 Finance App update 3 and Microsoft Dynamics 365 Retail App update 3
+> - **For views that are based on the screen layout designer:** Microsoft Dynamics 365 Finance App update 4 and Microsoft Dynamics 365 Retail App update 4
 
 ## Create a custom control
 

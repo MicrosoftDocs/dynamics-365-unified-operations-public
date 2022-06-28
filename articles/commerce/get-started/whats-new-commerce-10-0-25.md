@@ -64,9 +64,9 @@ The following table lists the features that are included in this release. The *F
 
 The [Modernizing the Dynamics 365 Commerce In-Store Technology Stack](https://download.microsoft.com/download/2/2/3/22310579-4b89-4703-becb-9c48aac3cd9c/Modernizing-the-Dynamics-365-Commerce-In-Store-Technology-Stack.pdf) white paper describes the evolution of the Commerce in-store solution, the motivation for new modernization work, and a detailed release timeline to help customers and partners plan their adoption of the new Store Commerce app and Commerce SDK. 
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Dynamics 365 Commerce 10.0.25 includes platform updates. To learn more, see [Platform updates for version 10.0.25 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-25.md).
+Dynamics 365 Commerce 10.0.25 includes platform updates. To learn more, see [Platform updates for version 10.0.25 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-25.md).
 
 ### Bug fixes 
 For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=654580).
@@ -92,3 +92,4 @@ For breaking changes that only affect compilation time, but are binary compatibl
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

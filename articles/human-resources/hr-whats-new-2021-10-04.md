@@ -47,7 +47,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 |---|---|---|
-| Platform update 10.0.21 (45) | -- | [Platform updates for version 10.0.21 of Finance and Operations apps (October 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21) |
+| Platform update 10.0.21 (45) | -- | [Platform updates for version 10.0.21 of finance and operations apps (October 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21) |
 
 
 ### Bug fixes
@@ -92,7 +92,7 @@ For a complete list of planned features and their scheduled releases, see [Overv
 
 | Feature | Details |
 |---|---|
-| Platform update 10.0.22 (46) | Roll-out of Platform update 10.0.22 is scheduled to begin with the service release on November 1, 2021. For more information, see [Platform updates for version 10.0.22 of Finance and Operations apps (November 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22). |
+| Platform update 10.0.22 (46) | Roll-out of Platform update 10.0.22 is scheduled to begin with the service release on November 1, 2021. For more information, see [Platform updates for version 10.0.22 of finance and operations apps (November 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-22). |
 
 
 
@@ -104,3 +104,4 @@ For a complete list of planned features and their scheduled releases, see [Overv
 [Manage features](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

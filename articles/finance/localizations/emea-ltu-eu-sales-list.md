@@ -153,7 +153,7 @@ For information about how to create a general setup, create postings, and transf
     | Field            | Value     | Comment    |
     |------------------|-----------|------------|
     | Version          | 7.0       |    &nbsp;  |
-    | Created By App   | Microsoft Dynamics 365 for Finance and Operations |  &nbsp; |
+    | Created By App   | Microsoft Dynamics 365 Finance |  &nbsp; |
     | Created By Login | Admin     |    &nbsp;      |
     | Created On       | 2021-09-24     | The date when the report was created.   |
     | Pages Count      | 1      | The number of pages.    |
@@ -198,3 +198,4 @@ For information about how to create a general setup, create postings, and transf
 5. Review the report in Excel format that is generated.
 
     ![EU sales list report.](media/EUSL-ltu.png)
+

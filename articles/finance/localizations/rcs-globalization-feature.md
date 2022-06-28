@@ -44,7 +44,7 @@ Before you complete the procedures, you must complete the steps that are related
 - Accessing an RCS instance.
 - Creating and activating a configuration provider. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-In your Finance and Operations apps instance, follow these steps.
+In your finance and operations apps instance, follow these steps.
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 2. If no RCS environment is provisioned for your company, select **Regulatory services – Configuration**, and follow the instructions to provision one.
