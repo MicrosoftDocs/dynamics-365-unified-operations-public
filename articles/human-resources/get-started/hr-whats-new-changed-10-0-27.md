@@ -109,9 +109,9 @@ The following table lists the feature enhancements that are included in this rel
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Dynamics 365 Finance 10.0.27 includes platform updates. To learn more, see [Platform updates for version 10.0.27 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
+Dynamics 365 Finance 10.0.27 includes platform updates. To learn more, see [Platform updates for version 10.0.27 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
 
 ### Bug fixes
 
@@ -121,5 +121,6 @@ For information about the bug fixes included in this update, sign in to Lifecycl
 
 | Feature name | Overview | Release status |
 |----|----|----|
-| Deploy Dynamics 365 Human Resources by using Finance and Operations LCS projects | If you've purchased the minimum required licenses for Dynamics 365 Human Resources, you can now deploy new LCS projects and environments by using the **Implementation** project type and selecting **Finance and Operations** as the product in LCS. For more information, see [Provision Human Resources in the finance and operations infrastructure](hr-admin-setup-provision-fo.md). | June 2022 |
-| Prevention of deploying production environments in Human Resources LCS projects | If you have an existing Human Resources LCS project, you can no longer deploy a production environment in it. Instead, you must create a new Finance and Operations LCS project and follow the standard process to deploy a production environment. | June 2022 |
+| Deploy Dynamics 365 Human Resources by using Finance and Operations LCS projects | If you've purchased the minimum required licenses for Dynamics 365 Human Resources, you can now deploy new LCS projects and environments by using the **Implementation** project type and selecting **Finance and operations** as the product in LCS. For more information, see [Provision Human Resources in the finance and operations infrastructure](hr-admin-setup-provision-fo.md). | June 2022 |
+| Prevention of deploying production environments in Human Resources LCS projects | If you have an existing Human Resources LCS project, you can no longer deploy a production environment in it. Instead, you must create a new finance and operations LCS project and follow the standard process to deploy a production environment. | June 2022 |
+
