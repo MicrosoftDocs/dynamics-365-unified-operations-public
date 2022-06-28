@@ -27,77 +27,29 @@ ms.search.validFrom:
 
 # Work with customs clearance
 
-The registration of the customs clearance procedure is carried out in new
-journals: the customs journal and the KTS journal. In these journals, the
-information about the composition of the GTD or KTS is shown, customs payments
-are calculated based on the transaction amount or the indicative price of
-products, factures with the type of GTD or KTS are registered.
+The registration of the customs clearance procedure is carried out in new journals: the customs journal and the KTS journal. In these journals, the information about the composition of the GTD or KTS is shown, customs payments are calculated based on the transaction amount or the indicative price of products, factures with the type of GTD or KTS are registered.
 
-The formation of a customs journal is created considering the movement of
-products: import or export, as well as the delivery conditions that determine
-the moment of transfer of ownership: before or after the customs clearance
-procedure.
+The formation of a customs journal is created considering the movement of products: import or export, as well as the delivery conditions that determine the moment of transfer of ownership: before or after the customs clearance procedure.
 
-1.  In case of import journal and transfer of ownership after the customs
-    clearance procedure, purchase orders must be registered. The lines of the
-    customs journal will be generated based on inventory transactions with the
-    **Ordered** status. After posting a customs journal or KTS journal, the
-    amounts of customs duties and fees adjust the cost of products or are
-    debited to the expense account, depending on the parameter of the journal.
-    Also, transactions are generated for the amount of VAT, excise and debt to
-    the customs service provider. Adjustment of the cost price for the amount of
-    duties and fees occurs in two iterations: a transaction is generated to the
-    transit account when the customs journal is posted, and a cost adjustment
-    transaction is generated when a purchase order invoice is posted. In the
-    inventory transactions, the analytics of the **GTD number** is registered
-    and the status of the inventory transactions changes to **Registered**.
+1.  In case of import journal and transfer of ownership after the customs clearance procedure, purchase orders must be registered. The lines of the customs journal will be generated based on inventory transactions with the **Ordered** status. After posting a customs journal or KTS journal, the amounts of customs duties and fees adjust the cost of products or are debited to the expense account, depending on the parameter of the journal. Also, transactions are generated for the amount of VAT, excise and debt to the customs service provider. Adjustment of the cost price for the amount of duties and fees occurs in two iterations: a transaction is generated to the transit account when the customs journal is posted, and a cost adjustment transaction is generated when a purchase order invoice is posted. In the inventory transactions, the analytics of the **GTD number** is registered and the status of the inventory transactions changes to **Registered**.
 
-2.  In case of import journal and transfer of ownership before the customs
-    clearance procedure, invoices for purchase orders must be registered. The
-    lines of the customs journal will be generated based on inventory
-    transactions with the **Purchased** status. After posting a customs journal
-    or KTS journal, the amounts of customs duties and fees adjust the cost of
-    products or are debited to the expense account, depending on the parameter
-    of the journal. Also, transactions are generated for the amount of VAT,
-    excise and debt to the customs service provider. In the inventory
-    transactions, the analytics of the **GTD number** is registered.
+2.  In case of import journal and transfer of ownership before the customs clearance procedure, invoices for purchase orders must be registered. The lines of the customs journal will be generated based on inventory transactions with the **Purchased** status. After posting a customs journal or KTS journal, the amounts of customs duties and fees adjust the cost of products or are debited to the expense account, depending on the parameter of the journal. Also, transactions are generated for the amount of VAT, excise and debt to the customs service provider. In the inventory transactions, the analytics of the **GTD number** is registered.
 
-3.  In case of export journal and transfer of ownership after the customs
-    clearance procedure, invoices for purchase orders with the **Postponed
-    passing of property** posting type must be registered. The lines of the
-    customs journal will be generated based on inventory transactions with the
-    status **Deducted** or **Sold**. After posting a customs journal or KTS
-    journal, the amounts of customs duties and fees are debited to the expense
-    account. Also, the debt is generated to the customs service provider.
+3.  In case of export journal and transfer of ownership after the customs clearance procedure, invoices for purchase orders with the **Postponed passing of property** posting type must be registered. The lines of the customs journal will be generated based on inventory transactions with the status **Deducted** or **Sold**. After posting a customs journal or KTS journal, the amounts of customs duties and fees are debited to the expense account. Also, the debt is generated to the customs service provider.
 
-4.  In case of export journal and transfer of ownership before the customs
-    clearance procedure, invoices for purchase orders with the **Standard**
-    posting type must be registered. The lines of the customs journal will be
-    generated based on inventory transactions with the status **Deducted** or
-    **Sold**. After posting a customs journal or KTS journal, the amounts of
-    customs duties and fees are debited to the expense account. Also, the debt
-    is generated to the customs service provider.
+4.  In case of export journal and transfer of ownership before the customs clearance procedure, invoices for purchase orders with the **Standard** posting type must be registered. The lines of the customs journal will be generated based on inventory transactions with the status **Deducted** or **Sold**. After posting a customs journal or KTS journal, the amounts of customs duties and fees are debited to the expense account. Also, the debt is generated to the customs service provider.
 
 ## Create and set up customs journal
 
-The registration of information on customs clearance is made on the of the **All
-customs journals** page (**Inventory management** \> **Journal entries** \>
-**All customs journals**).
+The registration of information on customs clearance is made on the of the **All customs journals** page (**Inventory management** \> **Journal entries** \> **All customs journals**).
 
-The form of the customs journal consists of two parts: the header and the lines
-of the journal.
+The form of the customs journal consists of two parts: the header and the lines of the journal.
 
 ### Create customs journal header
 
-1.  Go to **Inventory management** \> **Journal entries** \> **All customs
-    journals**.
-
-2.  To manage an existing journal, select a line with it and on the Action pane,
-    select **Customs journal** \> **Edit**.
-
-3.  To create new customs journal, on the Action pane, select **Customs
-    journal** \> **New**.
-
+1.  Go to **Inventory management** \> **Journal entries** \> **All customs journals**.
+2.  To manage an existing journal, select a line with it and on the Action pane, select **Customs journal** \> **Edit**.
+3.  To create new customs journal, on the Action pane, select **Customs journal** \> **New**.
 4.  In the **Create customs journal** dialog box, set the following fields:
 
     -   In the **Partner** section:
@@ -112,31 +64,20 @@ of the journal.
 set to **Yes**.
 
         -   The **Partner name** field will be automatically filled in.
+        -   In the **Agreement ID** field, select an agreement number for this partner. The **Document title** field is automatically filled in.
 
-        -   In the **Agreement ID** field, select an agreement number for this partner.
-    The **Document title** field is automatically filled in.
-
-        -   The **Delivery terms** field is automatically filled in from the agreement
-    or from the partner’s account details.
+        -   The **Delivery terms** field is automatically filled in from the agreement or from the partner’s account details.
 
 -   In the **Customs requisites** section:
 
-    -   In the **Customs code** field, select a customs code. The **Customs
-        name** and the **Customs office code** fields will be automatically
-        filled in.
+    -   In the **Customs code** field, select a customs code. The **Customs name** and the **Customs office code** fields will be automatically filled in.
 
-    -   In the **Vendor of customs services** field, select **Custom authority**
-        or **Custom broker** depending on who the debt for customs clearance
-        will be.
+    -   In the **Vendor of customs services** field, select **Custom authority** or **Custom broker** depending on who the debt for customs clearance will be.
 
 -   In the **Requisites of customs services vendor** section:
 
-    -   In the **Broker code** field, select a broker code. The **Broker name**
-        field will be automatically filled in.
-    -   In the **Agreement ID** field, select a registration number of the
-        contract of the customs services provider, taking into account the value
-        in **Vendor of customs services** field. The **Document title** field
-        will be automatically filled in.
+    -   In the **Broker code** field, select a broker code. The **Broker name** field will be automatically filled in.
+    -   In the **Agreement ID** field, select a registration number of the contract of the customs services provider, taking into account the value in **Vendor of customs services** field. The **Document title** field will be automatically filled in.
 
 -   In the **Delivery and pay** section:
 
@@ -144,112 +85,60 @@ set to **Yes**.
     -   In the **CMR\\BOL date** field, select a date of CMR/BOL.
     -   In the **TIR** field, select a TIR number.
     -   In the **Declaration date** field, select a declaration date.
-    -   In the **Posting type** field, select the posting type for sales order
-        invoices to reflect a sale with a deferred transfer of ownership. This
-        field is available only for journals with **Export** type.
-    -   In the **Inventory profile** field, select an accounting profile to
-        change the accounting profile of products after the customs clearance
-        procedure. This field is taken from the terms of delivery and available
-        only for journals with **Import** type.
-    -   In the **Customs clearance method** field, select the method of customs
-        clearance, which determines based on which prices the customs duty will
-        be calculated: **Import invoice** or **Indicative**. If this field is
-        filled in in the customs journal, it will be automatically applied to
-        all lines of the journal.
-    -   In the **Country/region** field, select the country of origin of the
-        products. If this field is filled in in the customs journal, it will be
-        automatically applied to all lines of the journal.
-    -   Set **Include to the cost price** option to **Yes**, if you need to
-        include duties and fees for customs clearance in the cost of the
-        product. This field is available only for journals with **Import** type.
+    -   In the **Posting type** field, select the posting type for sales order invoices to reflect a sale with a deferred transfer of ownership. This field is available only for journals with **Export** type.
+    -   In the **Inventory profile** field, select an accounting profile to change the accounting profile of products after the customs clearance procedure. This field is taken from the terms of delivery and available only for journals with **Import** type.
+    -   In the **Customs clearance method** field, select the method of customs clearance, which determines based on which prices the customs duty will be calculated: **Import invoice** or **Indicative**. If this field is filled in in the customs journal, it will be automatically applied to all lines of the journal.
+    -   In the **Country/region** field, select the country of origin of the products. If this field is filled in in the customs journal, it will be automatically applied to all lines of the journal.
+    -   Set **Include to the cost price** option to **Yes**, if you need to include duties and fees for customs clearance in the cost of the product. This field is available only for journals with **Import** type.
 
-5.  Select **OK**. The journal ID will be automatically created and displayed in
-    the **Journal ID** field.
+5.  Select **OK**. The journal ID will be automatically created and displayed in the **Journal ID** field.
 
 ![Graphical user interface, application Description automatically generated](media/245f651f3e4b3448ed828cdea8810fae.png)
 
-6.  In the **Header** tab you can correct the fields, which you filled in in the
-    **Create customs journal** dialog box. Also, on the customs journal header
-    you can set the following fields:
+6.  In the **Header** tab you can correct the fields, which you filled in in the **Create customs journal** dialog box. Also, on the customs journal header you can set the following fields:
 
-    -   On the **General** FastTab, in the **Vendor of customs services**
-        section:
-        -   The **Posting profile** field reflects the posting profile for the
-            formation of debts to the customs service provider. It is defined
-            based on the selected agreement of the customs service provider.
-        -   The **Customs terminal** field reflects the warehouse associated
-            with the customs office. This field must be filled in if the
-            **Warehouse change** option is set to **Yes** when generating the
-            GTD issuance.
+    -   On the **General** FastTab, in the **Vendor of customs services** section:
+        -   The **Posting profile** field reflects the posting profile for the formation of debts to the customs service provider. It is defined based on the selected agreement of the customs service provider.
+        -   The **Customs terminal** field reflects the warehouse associated with the customs office. This field must be filled in if the **Warehouse change** option is set to **Yes** when generating the GTD issuance.
 
     -   In the **Various** section:
 
-        -   The **Facture (system identifier)** field reflects the number of the
-            facture generated from the KTS journal.
-        -   The **Receipt transactions status** field shows the terms of
-            delivery for customs clearance of products. Only for journals with
-            **Import** type.
-        -   The **Transfer journal** field shows the number of the journal with
-            **Transfer** status, which can be created when issuing GTD.
+        -   The **Facture (system identifier)** field reflects the number of the facture generated from the KTS journal.
+        -   The **Receipt transactions status** field shows the terms of delivery for customs clearance of products. Only for journals with **Import** type.
+        -   The **Transfer journal** field shows the number of the journal with **Transfer** status, which can be created when issuing GTD.
 
-    -   On the **Settings** FastTab, in the **Fees setup** section, in the
-        **Allocation base of fee** field, select the base for the allocation of
-        the fee to the lines of the customs journal. This field is available if
-        the **Include to the cost price** option is set to **Yes**.
-    -   In the **GTD** section, the **GTD number** and **GTD issue date** fields
-        will be filled in when posting the GTD journal.
+    -   On the **Settings** FastTab, in the **Fees setup** section, in the **Allocation base of fee** field, select the base for the allocation of the fee to the lines of the customs journal. This field is available if the **Include to the cost price** option is set to **Yes**.
+    -   In the **GTD** section, the **GTD number** and **GTD issue date** fields will be filled in when posting the GTD journal.
     -   In the **Pay** section:
-        -   In the **Payment due date** field, select the deadline for payment
-            of customs payments.
+        -   In the **Payment due date** field, select the deadline for payment of customs payments.
         -   In the **Method of payment** field, select a method of payment.
-    -   In the **Posting** section, the **Voucher** field shows the number of
-        the journal’s voucher. This field is automatically filled in after
-        posting GTD.
+    -   In the **Posting** section, the **Voucher** field shows the number of the journal’s voucher. This field is automatically filled in after posting GTD.
     -   In the **Status** section:
 
-        -   The **Status** field reflects the status of the journal. For the
-            created journal, the initial status is **In Progress**. After the
-            operation of issuing a GTD, the status changes to **Issued**. After
-            the customs journal is posted, the status value becomes **Posted**.
-        -   The **Manually correction** option reflects the manual adjustment of
-            the calculated customs payments in the journal lines.
+        -   The **Status** field reflects the status of the journal. For the created journal, the initial status is **In Progress**. After the operation of issuing a GTD, the status changes to **Issued**. After the customs journal is posted, the status value becomes **Posted**.
+        -   The **Manually correction** option reflects the manual adjustment of the calculated customs payments in the journal lines.
 
-    -   On the **Financial dimensions** FastTab you can see financial analysts
-        of the customs journal, which are determined by the selection of the
-        customs service provider and can be manually changed.
+    -   On the **Financial dimensions** FastTab you can see financial analysts of the customs journal, which are determined by the selection of the customs service provider and can be manually changed.
 
 ![A screenshot of a computer Description automatically generated](media/8b181aef7f8b002d2fd7d6503c636bdd.png)
 
 ### Create customs journal lines
 
-1.  Go to **Inventory management** \> **Journal entries** \> **All customs
-    journals**.
-2.  Select a line with customs journal and on the Action Pane, select **Customs
-    journal** \> **Edit**.
-3.  On the **Customs journal** FastTab, you can see the data about the journal
-    entered when it was created.
+1.  Go to **Inventory management** \> **Journal entries** \> **All customs journals**.
+2.  Select a line with customs journal and on the Action Pane, select **Customs journal** \> **Edit**.
+3.  On the **Customs journal** FastTab, you can see the data about the journal entered when it was created.
 4.  On the **Customs journal lines** FastTab, you can see the following fields:
 
-    -   **TN VED code**: a TN VED code that was set on the **Item relation with
-        TN VED** page, considering the date of the declaration and customs
-        specified in the customs journal header.
-    -   **Item number**: The product number for which the journal line is
-        generated.
+    -   **TN VED code**: a TN VED code that was set on the **Item relation with TN VED** page, considering the date of the declaration and customs specified in the customs journal header.
+    -   **Item number**: The product number for which the journal line is generated.
     -   **Product name**: The name of the product.
-    -   **Section**: The number of the section that is filled in automatically
-        when creating lines. This field can be changed manually.
+    -   **Section**: The number of the section that is filled in automatically when creating lines. This field can be changed manually.
     -   **Quantity**: The quantity of the product.
     -   **Unit**: The unit of the product.
-    -   **Customs clearance method**: The customs clearance method which is
-        taken from the customs journal header. If it isn’t specified in the
-        customs journal header, then the value is defined from the last posted
-        customs journal for these TN VED code and customs.
-    -   **Total (import invoice)**: The amount of customs payments calculated
-        according to the invoice cost.
-    -   **Total (indicative)**: The amount of customs payments calculated
-        according to the indicative cost.
-    -   **Variance**: The difference between the values from the **Total (import
-        invoice)** and **Total (indicative)** fields.
+    -   **Customs clearance method**: The customs clearance method which is taken from the customs journal header. If it isn’t specified in the customs journal header, then the value is defined from the last posted customs journal for these TN VED code and customs.
+    -   **Total (import invoice)**: The amount of customs payments calculated according to the invoice cost.
+    -   **Total (indicative)**: The amount of customs payments calculated according to the indicative cost.
+    -   **Variance**: The difference between the values from the **Total (import invoice)** and **Total (indicative)** fields.
 
 5.  On the **Customs journal lines** FastTab, you can see the following buttons:
 
@@ -263,42 +152,27 @@ set to **Yes**.
 | **Customs journal line** \> **Invoice**                  | Navigate to the invoice for the current line. The request is available only for journals with the **Import** type, formed according to the terms of delivery with the transfer of ownership before the border |
 | **Customs journal line** \> **Product receipt**          | Navigate to the qualifying invoice for the current line. The request is available only for journals with the **Export** type                                                                                  |
 
-6.  On the **Line details** FastTab, you can see the details of the created
-    customs journal line:
+6.  On the **Line details** FastTab, you can see the details of the created customs journal line:
 
     -   On the **General** tab:
 
-        -   In the **Identification** section, you can see **Journal ID** and
-            **Line number** fields.
-        -   In the **General** section, in the **Section** field, you can change
-            the section number. For example, this field is used when
-            distributing duties.
-        -   The **Customs clearance method** and **Country/region** fields are
-            taken from the customs journal header.
-        -   In the **Item** section, you can see **Item number** and **TN VED
-            code** fields. Their relation was set on the **Item relation with TN
-            VED** page.
-        -   In the **References** and **Invoice** section, you can see links to
-            the original purchase or sale order number, invoice, packing slip.
+        -   In the **Identification** section, you can see **Journal ID** and **Line number** fields.
+        -   In the **General** section, in the **Section** field, you can change the section number. For example, this field is used when distributing duties.
+        -   The **Customs clearance method** and **Country/region** fields are taken from the customs journal header.
+        -   In the **Item** section, you can see **Item number** and **TN VED code** fields. Their relation was set on the **Item relation with TN VED** page.
+        -   In the **References** and **Invoice** section, you can see links to the original purchase or sale order number, invoice, packing slip.
 
-    -   On the **Setup** tab, you can see information about the calculation of
-        customs payments based on the invoice and indicative values, and the
-        amount of the calculated storage fee. The indicative cost is determined
-        based on the settings on the **Indicative prices of TN VED** page.
+    -   On the **Setup** tab, you can see information about the calculation of customs payments based on the invoice and indicative values, and the amount of the calculated storage fee. The indicative cost is determined based on the settings on the **Indicative prices of TN VED** page.
 
 ![Graphical user interface Description automatically generated](media/57fd8a751e0d1b21380580adb7f6b150.png)
 
-    -   On the **Financial dimensions** tab, you can see financial information of
-    the line that is defined from the line of the linked purchase order /
-    invoice / sales order / packing slip line.
+    -   On the **Financial dimensions** tab, you can see financial information of the line that is defined from the line of the linked purchase order / invoice / sales order / packing slip line.
 
 To create a new line, follow these steps.
 
-1.  On the **Customs journal lines** FastTab, on the toolbar select **Create
-    lines**.
+1.  On the **Customs journal lines** FastTab, on the toolbar select **Create lines**.
 
-The inventory transactions available for creating customs journal lines are
-described in the table below.
+The inventory transactions available for creating customs journal lines are described in the table below.
 
 | **Customs journal type** | **Conditions**                                                                  | **Source**                                                               | **Inventory transaction status** |
 |--------------------------|---------------------------------------------------------------------------------|--------------------------------------------------------------------------|----------------------------------|
@@ -307,41 +181,21 @@ described in the table below.
 | **Export**               | Posting type is **Standard**                                                    | Packing slip for a sales order                                           | *Deducted* or *Sold*             |
 | **Export**               | Posting type is **Postponed passing of property**                               | Sales order invoice with posting type **Deferred transfer of ownership** | *Deducted* or *Sold*             |
 
-2.  The **Create customs journal lines.** form is opened. It consists of two
-    parts:
+2.  The **Create customs journal lines.** form is opened. It consists of two parts:
 
-    -   The upper part shows the source of the payment. The view of this part
-        depends on the **Log type** field: for **Import** type it depends on the
-        from the terms of transfer of ownership, reflected in the terms of
-        delivery; for **Export** type it depends on the terms of the transfer of
-        ownership reflected in the posting type. The following filters are
-        applied to the part: In the **Invoice account** field, there is an
-        account that is the same as the **Partner code** field in the customs
-        journal header.
+    -   The upper part shows the source of the payment. The view of this part depends on the **Log type** field: for **Import** type it depends on the from the terms of transfer of ownership, reflected in the terms of delivery; for **Export** type it depends on the terms of the transfer of ownership reflected in the posting type. The following filters are applied to the part: In the **Invoice account** field, there is an account that is the same as the **Partner code** field in the customs journal header.
 
-    -   If the **Agreement ID** field is filled in the customs journal header,
-        you can see orders/invoices with the same agreement ID. If this field is
-        empty, you can see all orders/ invoices of this partner.
+    -   If the **Agreement ID** field is filled in the customs journal header, you can see orders/invoices with the same agreement ID. If this field is empty, you can see all orders/ invoices of this partner.
 
-    -   The lower part shows the quantity of products available for selection
-        according to the warehouse transaction associated with the purchase
-        order line/ supplier's invoice/ customer's packing slip/customer's
-        invoice meet the following conditions:
+    -   The lower part shows the quantity of products available for selection according to the warehouse transaction associated with the purchase order line/ supplier's invoice/ customer's packing slip/customer's invoice meet the following conditions:
 
-        -   For **Import** journal type, GTD number is not specified in the
-            warehouse transaction.
-        -   For **Export** journal type, the warehouse transaction is not
-            included in another customs journal.
+        -   For **Import** journal type, GTD number is not specified in the warehouse transaction.
+        -   For **Export** journal type, the warehouse transaction is not included in another customs journal.
         -   The source of the transaction is not a credit note.
-        -   The status of the warehouse transaction matches the type of the
-            customs journal and the terms of the transfer of ownership.
-        -   For **Export** journal type, the lines have a sales tax code with
-            value **VAT 0%** in the **Type of tax** field and the **Tax code for
-            domestic market** field is not empty.
+        -   The status of the warehouse transaction matches the type of the customs journal and the terms of the transfer of ownership.
+        -   For **Export** journal type, the lines have a sales tax code with value **VAT 0%** in the **Type of tax** field and the **Tax code for domestic market** field is not empty.
 
-3.  Mark the required lines. You can also change the quantity to be included in
-    the customs journal in the **Selected quantity** field.
-
+3.  Mark the required lines. You can also change the quantity to be included in the customs journal in the **Selected quantity** field.
 4.  Select **OK**.
 
 ![Graphical user interface, application Description automatically generated](media/9e93327dc79cc0f3f442cc7c875dc54b.png)
