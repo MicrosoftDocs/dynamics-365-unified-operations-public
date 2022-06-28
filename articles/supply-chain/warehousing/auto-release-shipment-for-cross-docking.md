@@ -47,8 +47,8 @@ This cross-docking functionality has two advantages:
 
 | Prerequisite | Description |
 |---|---|
-| Item | The item must be enabled for warehouse management processes.<p>**Note:** Catch-weight-enabled items can't be included in the cross-docking processes.</p> |
-| Warehouse | The warehouse must be enabled for warehouse management processes. |
+| Item | The item must be enabled for warehouse management processes (WMS).<p>**Note:** Catch-weight-enabled items can't be included in the cross-docking processes.</p> |
+| Warehouse | The warehouse must be enabled for warehouse management processes (WMS). |
 | Cross-docking templates | At least one cross-docking template that uses the **At supply receipt** demand release policy must be set up for a given warehouse. |
 | Work class | A cross-docking work class ID must be created for the **Cross docking** work order type. |
 | Work templates | Work templates of the **Cross docking** work order type are required to create cross-docking pick and put work. |

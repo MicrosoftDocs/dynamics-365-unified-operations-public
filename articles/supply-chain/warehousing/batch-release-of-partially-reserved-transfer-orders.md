@@ -35,7 +35,7 @@ Because you have the option to release a partial quantity, you don’t have to
 wait for the whole order quantity to be available in the warehouse before you
 release an order.
 
-The release of orders to a warehouse is an advanced warehouse management
+The release of orders to a warehouse is a warehouse management processes (WMS)
 process. This process involves activities, such as picking, packing, and
 shipping, that a warehouse worker can perform by using a mobile device.
 
