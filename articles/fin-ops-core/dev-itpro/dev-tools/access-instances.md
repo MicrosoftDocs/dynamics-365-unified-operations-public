@@ -2,7 +2,7 @@
 title: Deploy and access development environments
 description: This article describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
 author: laneswenka
-ms.date: 05/24/2022
+ms.date: 06/28/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -37,7 +37,7 @@ This article describes how to access development instances, configure local deve
 
 ## Deploying cloud development environments
 
-To deploy a cloud development environment in your LCS project:
+To deploy a cloud development environment in your Lifecycle Services (LCS) project:
 
 1. Create a connection between an LCS project and your Azure subscription. You will need your Azure subscription ID and authorize the use of the subscription.
 2. Select **+** under **Environments** to deploy.
@@ -57,6 +57,19 @@ To deploy a cloud development environment in your LCS project:
 When a cloud environment is provisioned through LCS:
 + The user who requests the cloud environment is provisioned as the administrator in that environment.
 + User accounts are provisioned on the development VM to allow access to the environment using Remote Desktop, these credentials are accessible on the environment page in LCS.
+
+> [!NOTE]
+> Each cloud environment provisioned through LCS will create a resource group in your Azure subscription containing the following resources:
+> 
+> + 1 Virtual machine
+> + 5 Disks
+> + 1 Load balancer
+> + 1 Regular network interface
+> + 1 Network security group
+> + 1 Virtual network
+> + 1 Public IP address
+> + 1 Storage account
+> + 1 or more additional storage accounts prefixed with “dyn” for storage of product binaires
 
 ### Accessing an instance through a URL
 
