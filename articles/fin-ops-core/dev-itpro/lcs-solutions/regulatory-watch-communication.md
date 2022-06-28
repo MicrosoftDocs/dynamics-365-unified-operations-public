@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-As part of the requirements for LCS solutions for localization &amp; translation, localization ISV solution providers must undertake their regulatory watch by taking advantage of localization tools in Microsoft Dynamics Lifecycle Services (LCS).
+As part of the requirements for LCS solutions for localization and translation, localization ISV solution providers must undertake their regulatory watch by taking advantage of localization tools in Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Set up an alerting project in LCS
 
@@ -44,7 +44,7 @@ Follow these steps to set up the project.
 1.  Add a new project by clicking the plus sign (**+**).
 2.  Enter a name that uses the following project naming convention: **REG-Alerts-Country/region name**
 3.  Enter a project description.
-4.  For the product name, specify the latest version of your Dynamics 365 finance and operations app.
+4.  For the product name, specify the latest version of your finance and operations app.
 5.  For the product version, specify the latest version.
 6.  Specify the industry:
     -   Select **Other** if the solution is related to all industries.
