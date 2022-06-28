@@ -37,7 +37,7 @@ This article describes features that are either new or changed in Dynamics 365 H
 
 ## Platform changes
 
-Platform changes are included in this week's release. For more information, see [Platform updates for version 10.0.10 of Finance and Operations apps (May 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). This release includes bug fixes and changes to saved views.
+Platform changes are included in this week's release. For more information, see [Platform updates for version 10.0.10 of finance and operations apps (May 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md). This release includes bug fixes and changes to saved views.
  
 ## Ensure Dataverse picklists are consistent with Leave enums (436343)
 

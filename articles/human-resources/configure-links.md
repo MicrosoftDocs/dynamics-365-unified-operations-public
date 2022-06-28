@@ -59,7 +59,7 @@ Each link that you create will have the following information defined:
 
    To find the menu item required:
    1. Go to the Finance environment and open the page that is the target of the navigation. 
-   2. Copy the menu item from the URL. For example, if you want the link to take you to the employee list in Finance and Operations, enter the value that appears after the "&mi" in the URL. 
+   2. Copy the menu item from the URL. For example, if you want the link to take you to the employee list in finance and operations, enter the value that appears after the "&mi" in the URL. 
    3. The menu item to navigate to the employee list page in this example is: HcmWorkerListPage_Employees.
 
  - **Link to data source**: Select the source of data that the link is referencing. The most common sources like **Worker** and **Position** are available.
@@ -69,4 +69,5 @@ Each link that you create will have the following information defined:
 System administrators will see the newly created links on the defined pages even if the **Enable this link** option is set to **No**. This can be used for testing links prior to surfacing them to other employees. All other roles will see only the configured links after the **Enable this link** option is set to **Yes**. Employees who have access to the pages in which the links are surfaced will have access to the links.
 
 Users must also have security rights within the secondary environment defined to access the pages in that environment. If they don't, a security dialog box will be displayed when using the link.
+
 
