@@ -1713,7 +1713,7 @@
           href: inventory/inventory-visibility-setup.md
         - name: Configure Inventory Visibility
           href: inventory/inventory-visibility-configuration.md
-        - name: Inventory Visibility support for WHS items
+        - name: Inventory Visibility support for WMS items
           href: inventory/inventory-visibility-whs-support.md
         - name: Use the Inventory Visibility app
           href: inventory/inventory-visibility-power-platform.md
@@ -3335,7 +3335,7 @@
         items:
         - name: Warehouse handling of inbound loads for purchase orders
           href: warehousing/inbound-load-handling.md
-        - name: Register items for an advanced warehousing enabled item using an item arrival journal
+        - name: Register items enabled for warehouse management processes using an item arrival journal
           href: warehousing/tasks/register-items-advanced-warehousing.md
         - name: Register items for a basic warehousing enabled item using an item arrival journal
           href: warehousing/tasks/register-items-basic-warehousing.md
