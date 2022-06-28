@@ -78,7 +78,7 @@ Follow these steps to set up the integration between environments.
     - Electronic Invoice Submission
     - Electronic Invoice Submission Document
 
-13. Create another application user in Dataverse, and associate it with the app ID **ecd93392-c922-4f48-9ddf-10741e4a9b65**. This user should be assigned the **finance and operations Basic User** security role and a role that has privileges to read and write the following Dataverse entities:
+13. Create another application user in Dataverse, and associate it with the app ID **ecd93392-c922-4f48-9ddf-10741e4a9b65**. This user should be assigned the **Finance and operations Basic User** security role and a role that has privileges to read and write the following Dataverse entities:
 
     - Electronic Invoice Action
     - Electronic Invoice Execution
