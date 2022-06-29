@@ -86,6 +86,9 @@ When a new endpoint is added in finance and operations apps, it's synced to Data
 
 For more information about the **ServiceEndpoint** table, see [ServiceEndpoint table/entity reference](/powerapps/developer/data-platform/reference/entities/serviceendpoint).
 
+> [!NOTE]
+> When endpoints are mapped in Dataverse, Dataverse IP addresses must be added to the allow list of firewall policies for business events and data events. See [IP addresses required](/power-platform/admin/online-requirements.md#ip-addresses-required) in Dataverse documentation for more information on the IP addresses required for the firewall policies.
+
 ### Microsoft Power Automate endpoints
 
 The **Microsoft Power Automate** endpoint type isn't made available for setup directly in finance and operations apps. This endpoint type is used for subscriptions that are created and sent directly from a flow in Power Automate. 
