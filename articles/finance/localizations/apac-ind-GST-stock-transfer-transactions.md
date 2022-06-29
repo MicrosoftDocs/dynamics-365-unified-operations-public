@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.4
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> The behavior described in this article is being deprecated and will be removed after October 2023. 
+> The behavior that is described in this article is being deprecated and will be removed after October 2023. 
 > For more information, see [Features removed or deprecated in the Finance 10.0.29 release](../../finance/get-started/removed-deprecated-features-finance.md) and [Features removed or deprecated in the Supply Chain Management 10.0.29 release](../../supply-chain/get-started/removed-deprecated-features-scm-updates.md).
 
 
