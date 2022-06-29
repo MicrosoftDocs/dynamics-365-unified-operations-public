@@ -54,14 +54,14 @@ You can specify the reason for the cancellation. When you select **Functions** \
 4. In the **Cancel key name** field, enter the reason for the cancellation.
 5. Select **OK** to confirm the cancellation of the electronic invoice. The status of electronic invoice is changed to **Manual cancel**.
 
-## Manually update the status of CFDI document which is in progress after cancellation
+## Manually update the status of a CFDI document that is in progress after cancellation
 
-You can use the **Update electronic document status** periodic task to update the status a CFDI document that is **In progress** for a long time after cancellation, if the document was cancelled in a PAC application. 
+You can use the **Update electronic document status** periodic task to update the status a CFDI document that is **In progress** for a long time after cancellation, if the document was canceled in a PAC application.
 
-1. Go to **Acctounts receivable** > **Invoices** > **E-invoices** > **Update electronic invoice status**.
-2. Filter the records to find those in which the status needs to be updated.
+1. Go to **Accounts receivable** \> **Invoices** \> **E-invoices** \> **Update electronic invoice status**.
+2. Filter the records to find those where the status must be updated.
 
-> [!NOTE] The **To status** and **To message status** fields can't be updated. You can only update CFDI documents with a staus of **In progress**. 
-
+> [!NOTE]
+> The **To status** and **To message status** fields can't be updated. You can update only CFDI documents that have a status of **In progress**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
