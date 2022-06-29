@@ -51,8 +51,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected** | Application |
 | **Deployment option** | All |
-| **Status** | Deprecated: After April 2023, the **Stock transfer orders that have tax on the transfer price** will not receive support with bug and security fixes. <br><br>Customers will be asked to use the improved functionality **Stock transfer orders for India**. After October 2023, the Stock transfer orders that have tax on the transfer price will be no longer available and customers will be asked to move to the improved functionality [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md).||
-
+| **Status** | Deprecated: After April 2023, the **Stock transfer orders that have tax on the transfer price** functionality will no longer receive support through bug fixes and security fixes. Customers will be asked to use the improved functionality, [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md). After October 2023, the **Stock transfer orders that have tax on the transfer price** functionality will be no longer available, and customers will be asked to move to the improved functionality. |
 
 ## Features removed or deprecated in the Finance 10.0.26 release
 
