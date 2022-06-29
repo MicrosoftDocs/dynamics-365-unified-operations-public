@@ -44,7 +44,7 @@ You can cancel a CFDI electronic invoice that was previously validated and certi
 > [!NOTE]
 > You can't cancel a CFDI document if an associated document exists. For example, you can't cancel a prepayment if an invoice references that payment. Cancel the associated documents, and then cancel the CFDI document.
 
-As of Microsoft Dynamics 365 Finance version 10.0.23, you can specify the reason for the cancellation. When you select **Functions** \> **Cancel CFDI** on the Action Pane, you can select a cancellation reason. If you select **01** as the reason, fill in a replacement document to replace the current document.
+Also You can specify the reason for the cancellation. When you select **Functions** \> **Cancel CFDI** on the Action Pane, you can select a cancellation reason. If you select **01** as the reason, fill in a replacement document to replace the current document.
 
 ## Manually cancel a CFDI electronic invoice
 
@@ -53,5 +53,12 @@ As of Microsoft Dynamics 365 Finance version 10.0.23, you can specify the reason
 3. Enter the date of the cancellation.
 4. In the **Cancel key name** field, enter the reason for the cancellation.
 5. Select **OK** to confirm the cancellation of the electronic invoice. The status of electronic invoice is changed to **Manual cancel**.
+
+## Manually update the status of CFDI document which is in progress after cancelation
+
+You can use the **Update electronic document status** periodic task to update the status a CFDI document that remains **In progress** for a long time after cancelation, but this document was cancelled in a PAC application. 
+Go to **Acctounts receivable** &gt; **Invoices** &gt; **E-invoices** &gt; **Update electronic invoice status** and filter records in which the status needs to be updated.
+> [!NOTE] **To status** and **To message status** are closed for edit. A user can only update CFDI documents with a stause of **In progress**. 
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
