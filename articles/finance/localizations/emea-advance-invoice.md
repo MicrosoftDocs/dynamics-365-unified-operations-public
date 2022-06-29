@@ -248,7 +248,7 @@ To link an advance invoice to a purchase order, follow these steps.
     | Update purchase | Select an option. The advance invoice amount will be calculated based on the purchase order amount for the items. |
     | Posting profile with prepayment journal voucher | Specify the posting profile for the prepayment. |
     
-№№ Use the Advance invoice and Prepayment handling functionality
+## Use the Advance invoice and Prepayment handling functionality
 
 You can use **Advance invoice** and **Prepayment handling** functionality in the business process.
 
