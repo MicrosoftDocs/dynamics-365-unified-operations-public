@@ -43,6 +43,25 @@ Advance invoice functionality lets you perform the following tasks:
 - Change the VAT posting in posted prepayments (that is, convert a prepayment to a payment or a payment to a prepayment, or change the posting date, tax rate, or amount).
 - *For the Czech Republic only:* Create a tax document for the VAT liable delivery.
 
+The article contains the following sections:
+
+- [Advance invoices for Poland](#advance-invoices-for-poland)
+- [Set up Accounts receivable for advance invoices](#set-up-accounts-receivable-for-advance-invoices)
+- [Create a customer advance invoice](#create-a-customer-advance-invoice)
+- [VAT on advance invoices](#vat-on-advance-invoices)
+- [Link an advance invoice to a sales order or a free text invoice](#link-an-advance-invoice-to-a-sales-order-or-a-free-text-invoice)
+- [Create a customer advance invoice from a sales order](#create-a-customer-advance-invoice-from-a-sales-order)
+- [Create a customer advance invoice from a free text invoice](#create-a-customer-advance-invoice-from-a-free-text-invoice)
+- [Print an advance invoice](#print-an-advance-invoice)
+- [Create a payment proposal from an advance invoice](#create-a-payment-proposal-from-an-advance-invoice)
+- [Link a prepayment to an advance invoice](#link-a-prepayment-to-an-advance-invoice)
+- [Link an advance invoice to a prepayment](#link-an-advance-invoice-to-a-prepayment)
+- [Advance invoice credit notes](#advance-invoice-credit-notes)
+- [Tax documents for the Czech Republic](#tax-documents-for-the-czech-republic)
+- [Set up Accounts payable for advance invoices](#set-up-accounts-payable-for-advance-invoices)
+- [Create a vendor advance invoice](#create-a-vendor-advance-invoice)
+- [Use the Advance invoice and Prepayment handling functionality](#use-the-advance-invoice-and-prepayment-handling-functionality)
+
 ## Advance invoices for Poland
 
 Polish companies that receive prepayments must create an invoice for prepayments for the customer. This advance invoice is posted to the general ledger and is a mandatory document for VAT tax purposes. The tax that is calculated on the advance invoice must be reported to the tax authority.
