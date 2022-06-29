@@ -34,7 +34,7 @@ The Federal Informational Address System (or FIAS) address database might be req
 > [!NOTE]
 > The Federal Tax Service (FTS) stopped updating files with address information in the FIAS format in August 2021. The new format was approved by order of the Federal Tax Service dated May 13, 2020. No. ED-7-6 / 329 @ FIAS (old format that contains information about addresses in the structure of administrative-territorial division); State address register (GAR - a new format with information about addresses in the municipal division). 
 >
-> For more information about how to import addresses in the GAR format, see [Import from GAR](rus-russian-address-format-import-from-GAR.md)
+> For more information about how to import addresses in the GAR format, see [Import from GAR](rus-russian-address-format-import-gar.md)
 
 ## Set up Russian address formats
 
