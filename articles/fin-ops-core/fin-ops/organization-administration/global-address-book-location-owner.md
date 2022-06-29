@@ -31,6 +31,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Each address in the global address book has a location owner. The location owner determines whether the address can be edited on the party record. If the party is the location owner of the address, the party can be used to edit the address from either the global address book or the associated master record page (such as the customer, vendor, or worker). If the party isn't the location owner of the address, the record can't be edited.
 
+## Specify location owner
+
+System administrators can specify the owner of a location (address) using the **Specify location owner** feature. Typically, a party will own the locations that are associated with it. If a location doesn't have an owner (or the owner is set incorrectly), then the address can't be edited. Previously, there wasn’t a way to specify a location owner. With the **Specify location owner** feature, a location owner can be specified in the **Advanced** option on the party address and in a new list page. Once the location owner is set, the address can be edited. This feature is only available to system administrators by default.
+
+
 ## Assigning location ownership
 
 The location owner is determined when an address is created. When the address is created, the party that the address is created for is assigned as the location owner.
@@ -42,7 +47,7 @@ If locations are created through data entities, the location owner property (**I
 If the location owner isn't correct, the associated party can't be used to edit the address. In this case, you can update the location owner by either changing or confirming the location owner.
 
 > [!NOTE]
-> Before the location owner can be updated, the **Specify location owner** feature must be enabled in Feature management, and users must be assigned to a role that has the **Set location owner** privilege.
+> In Feature management, click the **Check for updates** button. This will update the **Enabled by default** status for the **Specify location owner** feature.
 
 ### Change the location owner
 
