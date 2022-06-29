@@ -38,17 +38,17 @@ The following table provides information about GAR levels and corresponding tabs
 
 | Level | Name in GAR | Tab on the Address setup page | Table |
 |---|---|---|---|
-| 1 | Subject of the Russian Federation | State/Province | LOGISTICSADDRESSSTATE |
-| 2 | Administrative area | City （Address level - City）|LOGISTICSADDRESSCity |
-| 3 | Municipal district | County | LOGISTICSADDRESSCOUNTY |
-| 4 |	Rural / Urban Settlement | City （Address level - Rural / Urban Settlement）|	LOGISTICSADDRESSCITY |
-| 5 |	City | City （Address level - City) |	LOGISTICSADDRESSCity |
-| 6 |	Locality	|City （Address level - Locality) | LOGISTICSADDRESSCity
-| 7	| Planning structure element |	District	| LOGISTICSADDRESSDISTRICT |
-| 8 |	Road network element	| Street	| LOGISTICSADDRESSSTREET_RU |
-| 9	| Steads |	Land plots	| LOGISTICSADDRESSHOUSENUMBER_RU |
-| 10 |	House	| Group of houses |	LOGISTICSADDRESSHOUSENUMBER_RU |
-| 11 |	Apartments and Rooms |	Group of flats	| LOGISTICSADDRESSFLATNUMBER_RU |
+| 1 | Subject of the Russian Federation | State/Province | LogisticsAddressState |
+| 2 | Administrative area | City （Address level - City）|LogisticsAddressCity |
+| 3 | Municipal district | County | LogisticsAddressCounty |
+| 4 |	Rural / Urban Settlement | City （Address level - Rural / Urban Settlement）|	LogisticsAddressCity |
+| 5 |	City | City （Address level - City) |	LogisticsAddressCity |
+| 6 |	Locality	|City （Address level - Locality) | LogisticsAddressCity
+| 7	| Planning structure element |	District	| LogisticsAddressDistrict |
+| 8 |	Road network element	| Street	| LogisticsAddressStreet_RU |
+| 9	| Steads |	Land plots	| LogisticsAddressSteadNumber_RU |
+| 10 |	House	| Group of houses |	LogisticsAddressHouseNumber_RU |
+| 11 |	Apartments and Rooms |	Group of flats	| LogisticsAddressFlatNumber_RU |
 
 
 ## Enable Import from GAR feature
@@ -60,23 +60,30 @@ After enabling the feature, the **Import from FIAS** functionality won’t be av
 ## Import ER configurations
 The **GAR import** feature utilizes the [Electronic Reporting (ER) functionality](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md). You need to import the following ER configurations:
 
-1.	GAR address import ADDR_OBJ(RU)
-2.	GAR address import APARTMENTS(RU)
-3.	GAR address import HOUSES(RU)
-4.	GAR address import ROOMS(RU)
-5.	GAR address import STEADS(RU)
-6.	GAR hierarchy import MUN_HIERARCHY(RU)
-7.	GAR metadata import ADDHOUSE(RU)
-8.	GAR metadata import ADDR_OBJ(RU)
-9.	GAR metadata import APARTMENT(RU)
-10.	GAR metadata import HOUSE(RU)
-11.	GAR metadata import OPERATION(RU)
-12.	GAR metadata import ROOM(RU)
-13.	GAR parameters import ADDR_OBJ(RU)
-14.	GAR parameters import APARTMENTS(RU)
-15.	GAR parameters import HOUSES(RU)
-16.	GAR parameters import ROOMS(RU)
-17.	GAR parameters import STEADS(RU)
+1.  Import configurations for GAR address metadata files:
+    1.  GAR metadata import ADDHOUSE(RU)
+    2.  GAR metadata import ADDR_OBJ(RU)
+    3.	GAR metadata import APARTMENT(RU)
+    4.	GAR metadata import HOUSE(RU)
+    5.	GAR metadata import OPERATION(RU)
+    6.	GAR metadata import ROOM(RU)
+
+2.  Import configurations for GAR MUN hierarchy file:
+    1.  GAR hierarchy import MUN_HIERARCHY(RU)
+
+3.  Import configurations for GAR address files:
+    1.	GAR address import ADDR_OBJ(RU)
+    2.	GAR address import APARTMENTS(RU)
+    3.	GAR address import HOUSES(RU)
+    4.	GAR address import ROOMS(RU)
+    5.	GAR address import STEADS(RU)
+
+4.  Import configurations for GAR address parameters files:
+    1.  GAR parameters import ADDR_OBJ(RU)
+    2.  GAR parameters import APARTMENTS(RU)
+    3.	GAR parameters import HOUSES(RU)
+    4.	GAR parameters import ROOMS(RU)
+    5.  GAR parameters import STEADS(RU)
 
 For more information on importing ER configurations, see [Download ER configurations](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
@@ -92,8 +99,7 @@ For more information on importing ER configurations, see [Download ER configurat
 8.	Select **OK** to start the import.
 
 > [!IMPORTANT]
-> Currently, there is a 2Gb limitation for the import of addresses. Zip files that exceed 2Gb in size can’t be imported. 
-
+> Currently, there is a 2Gb limitation for the import of addresses. The state can’t be imported if it contains an XML file that exceeds 2Gb in size.
 ![ImportFromGARDialog.](./media/RUAddressImportGARDialog.png)
 
 Due to the size limitation for import of addresses, you need to unzip the downloaded database, and create zip file for the state(s) that are needed. 
@@ -107,7 +113,7 @@ You can import either one state or several states. To import several states, the
     - AS_HOUSE_TYPES_*
     - AS_OPERATION_TYPES_*
     - AS_ROOM_TYPES_*
-    
+
 
 ![AddressMetadata](./media/RUAddressMetadata.png)
 
@@ -116,21 +122,19 @@ You can import either one state or several states. To import several states, the
 > Do not change the folders names in the zip file, they should remain as the codes of states.
 >
 > Metadata files are optional, except for the first import. For the first import make sure the zip file contains metadata.
-
 After import is completed, you can validate the imported data on the **Address setup** page.
 
-The **Urban/Rural settlement** and **Localit**y are imported to the **City** level with the respective **Address level**. If exists, the parent **Urban/Rural settlement** will contain the respective code of **Urban/Rural settlement**.
+The **Urban/Rural settlement** and **Locality** are imported to the **City** level with the respective **Address level**. If exists, the parent **Urban/Rural settlement** will contain the respective code of **Urban/Rural settlement**.
 
 ![AddressSetupCityLevel](./media/RUAddressSetupCity.png)
 
 > [!Note]
 >
 > Filtering by **Urban/Rural settlement**, **City** and **Locality** address levels is not supported.
-
 Codes for **Cities** (including **Urban/Rural settlements** and **Localities**), **Districts**, **Streets** are generated automatically while importing. They are unique within the parent address component level. If the current parent level component has no children, then 001 or 0001 will be assigned (depending on the object type); if there are child records, the new one will be incremented by 1.
 
 ### Importing GAR in batch
-The process of importing of addresses can take time, thus it is highly recommended to use the batch job mode by enabling the **Batch processing** option. 
+The process of importing of addresses can take time, thus it is highly recommended to use the batch job mode by enabling the **Batch processing** option (For example: Address data size is about 800M for state 01, and may take 1-2 hours to import). 
 You can review the status of the “Import from GAR” batch in the **Batch jobs** page. You can also review the log there (**Batch job** tab, **Log** button). The import can be completed with error. For example, if the version of the file is older than the one that was already imported, the error “Address version validation failed: the version is older than the latest imported version” will be shown.
 
 ## Address format setup
@@ -147,4 +151,3 @@ These address components are also available on the **Manage addresses** page, an
 ![AddressEditAddress](./media/RUAddressEditAddress.png)
 
 [!INCLUDEfooter-include]
-
