@@ -1,6 +1,6 @@
 ---
 title: Extend, customize, and collaborate on the Help (contains video)
-description: This article provides tips and tricks for working with the GitHub repos and Markdown files for Finance and Operations apps.
+description: This article provides tips and tricks for working with the GitHub repos and Markdown files for finance and operations apps.
 author: edupont04
 ms.topic: article
 
@@ -24,7 +24,7 @@ ms.author: edupont
 
 # Extend, customize, and collaborate on the Help
 
-The source files for the Microsoft Help for Finance and Operations apps are available in public GitHub repositories (repos). Any solution provider can easily extend and customize the content for specific solutions. This article explains how to work with the GitHub repos and Markdown files.
+The source files for the Microsoft Help for finance and operations apps are available in public GitHub repositories (repos). Any solution provider can easily extend and customize the content for specific solutions. This article explains how to work with the GitHub repos and Markdown files.
 
 For information about how to create Markdown files in GitHub repos, see the [Docs contributor guide](/contribute/). For information about how to deploy custom Help, see [Custom Help overview](custom-help-overview.md).
 
@@ -107,3 +107,4 @@ You can use the [Dynamics 365 Translation Service](../lifecycle-services/transla
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

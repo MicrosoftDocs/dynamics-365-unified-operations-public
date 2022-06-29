@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
->[!NOTE:]
+> [!NOTE]
 > This functionality will be deprecated September 2022, new users should use electronic reporting. For more information, see [Set up positive pay files by using Electronic reporting](set-up-positive-pay-er.md).
 
 This article explains how to set up positive pay and generate positive pay files. 

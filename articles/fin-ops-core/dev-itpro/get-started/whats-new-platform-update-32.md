@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Platform update 32 for Finance and Operations apps (February 2020)
-description: This article lists the features that are in preview in Platform update 32 for Finance and Operations apps. 
+title: What's new or changed in Platform update 32 for finance and operations apps (February 2020)
+description: This article lists the features that are in preview in Platform update 32 for finance and operations apps. 
 author: sericks007
 ms.date: 02/26/2020
 ms.topic: article
@@ -26,11 +26,11 @@ ms.search.validFrom: 2019-11-30
 ms.dyn365.ops.version: Platform update 32
 
 ---
-# What's new or changed in Platform update 32 for Finance and Operations apps (February 2020)
+# What's new or changed in Platform update 32 for finance and operations apps (February 2020)
 
 [!include [banner](../includes/banner.md)]
 
-This article lists features that are new or changed for Platform update 32 for Finance and Operations apps. This version has a build number of 7.0.5493 and is available on the following schedule:
+This article lists features that are new or changed for Platform update 32 for finance and operations apps. This version has a build number of 7.0.5493 and is available on the following schedule:
 
 - **Preview release:** December 2019
 - **General availability (self-update):** January 2020
@@ -44,9 +44,9 @@ For more information about Platform update 32, see [Additional resources](whats-
 
 For more information about this feature, see [Data management export file size limit removed](/dynamics365-release-plan/2019wave2/finance-operations-crossapp-capabilities/data-management-export-file-size-limit-removed).
 
-### Finance and Operations AOS (kernel) improvements
+### Finance and operations AOS (kernel) improvements
 
-For more information about this feature, see [Finance and Operations AOS (kernel) improvements](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/finance-and-operations-aos-kernel-improvements).
+For more information about this feature, see [finance and operations AOS (kernel) improvements](https://community.dynamics.com/365/financeandoperations/b/newdynamicsax/posts/finance-and-operations-aos-kernel-improvements).
 
 ### Continued stabilization of saved views
 
@@ -86,7 +86,7 @@ Check out the [Dynamics 365: 2019 release wave 2 plan](/dynamics365-release-plan
 
 ### Removed and deprecated platform features
 
-The [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) article describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
+The [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and might be removed in a future update.

@@ -82,7 +82,7 @@ For a complete list of planned features and their scheduled releases, see [Overv
 
 | Feature | Details |
 |---|---|
-| Platform update 10.0.21 (45) | Roll-out of Platform update 10.0.21 is scheduled to begin with the service release on October 4, 2021. For more information, see [Platform updates for version 10.0.21 of Finance and Operations apps (October 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
+| Platform update 10.0.21 (45) | Roll-out of Platform update 10.0.21 is scheduled to begin with the service release on October 4, 2021. For more information, see [Platform updates for version 10.0.21 of finance and operations apps (October 2021)](/dynamics365/fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-21). |
 | Benefits statement | Benefits statement for viewing an employee's current benefit elections. For more information, see [Benefits Statement](/dynamics365-release-plan/2021wave1/human-resources/dynamics365-human-resources/benefits-summary-statement) in the Release wave document. |
 
 ## See also
@@ -93,3 +93,4 @@ For a complete list of planned features and their scheduled releases, see [Overv
 [Manage features](hr-admin-manage-features.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

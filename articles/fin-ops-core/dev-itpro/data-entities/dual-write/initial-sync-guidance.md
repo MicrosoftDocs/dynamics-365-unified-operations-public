@@ -2,7 +2,7 @@
 title: Considerations for initial synchronization
 description: This article provides information about constraints, known issues, and guidance for the initial synchronization of dual-write.
 author: RamaKrishnamoorthy
-ms.date: 10/12/2020
+ms.date: 06/24/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -18,14 +18,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 
-Before you start dual-write on a table, you can run an initial synchronization to handle existing data on both sides: Finance and Operations apps and customer engagement apps. You can skip the initial synchronization if you don't have to sync data between the two environments.
+Before you start dual-write on a table, you can run an initial synchronization to handle existing data on both sides: finance and operations apps and customer engagement apps. You can skip the initial synchronization if you don't have to sync data between the two environments.
 
 The initial synchronization lets you copy existing data from one app to another bidirectionally, and there are several considerations when you run it. For example, you might have to migrate data before your go-live. In this case, data can be loaded into one side through data migration and then synced to the other side through the initial synchronization.
 
 We recommend that you use the following approach for the initial synchronization:
 
-+ **[Single-threaded tables](#single-threaded-entities):** First migrate data into the Finance and Operations app, and then trigger the initial synchronization to move the data over to Dataverse. Based on lab testing that Microsoft has done, this sequence has better performance than synchronization from Dataverse to Finance and Operations apps.
-+ **Multi-threaded tables:** First migrate data into Dataverse, and then trigger the initial synchronization to move the data over to the Finance and Operations app.
++ **[Single-threaded tables](#single-threaded-entities):** First migrate data into the finance and operations app, and then trigger the initial synchronization to move the data over to Dataverse. Based on lab testing that Microsoft has done, this sequence has better performance than synchronization from Dataverse to finance and operations apps.
++ **Multi-threaded tables:** First migrate data into Dataverse, and then trigger the initial synchronization to move the data over to the finance and operations app.
 
 ## Constraints
 
@@ -37,7 +37,7 @@ If you first activate the map in dual-write and then start to import data, migra
 
 The maximum number of rows that is allowed through initial synchronization is 500,000 per run. The limit of 500,000 rows applies to each legal table, because each legal entity runs separately. For more information, see [Integrate data into Dataverse](/power-platform/admin/data-integrator). In particular, pay attention to the note that states, "To optimize performance and not overload the apps, we currently limit project executions to 500k rows per execution per project."
 
-If there must be more than 500,000 rows in a run when you the initial synchronization, we recommend that you migrate data into the Finance and Operations app and Dataverse separately, and skip the initial synchronization.
+If there must be more than 500,000 rows in a run when you the initial synchronization, we recommend that you migrate data into the finance and operations app and Dataverse separately, and skip the initial synchronization.
 
 ### Twenty-four-hour limit
 
@@ -84,9 +84,10 @@ Company and currency exchange tables are global in nature and all dual-write use
 
 ### Error handling capabilities
 
-#### Initial synchronization is always a full push
+#### Initial synchronization is a full push or incremental push
 
-If an individual row fails to be synced, you can't resync only that individual row. The initial synchronization always pushes the whole data set. This behavior is known as a *full push*. If the initial synchronization only partially succeeds, a second synchronization runs for all the rows, not just the rows that failed to be synced during the initial synchronization.
+If an individual row fails to be synchronized, you can't resync only that individual row. The first run of initial synchronization pushes the whole data set. This behavior is known as a *full push*. When change tracking is enabled in finance and operations apps, the subsequent runs are an incremental push that is based on the last run map version. When change tracking is disabled, subsequent runs cause a full push. During the incremental push, the error records won't be considered for resubmission.
+
 
 #### Only the top five errors can be viewed
 

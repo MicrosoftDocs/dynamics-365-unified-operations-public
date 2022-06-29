@@ -50,7 +50,7 @@ The Inventory Visibility Add-in adds several new features to your Power Apps ins
 | *OnHandMostSpecificBackgroundService* | This feature provides an inventory summary for products, together with all dimensions. The inventory summary data will periodically be synced from Inventory Visibility. For more information, see [Inventory summary](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | This optional feature enables the on-hand change schedule and available to promise (ATP) features. For more information, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md). |
 | *Allocation* | This optional feature enables Inventory Visibility to have the ability for inventory protection (ringfencing) and oversell control. For more information, see [Inventory Visibility inventory allocation](inventory-visibility-allocation.md). |
-| *Enable warehouse items in Inventory Visibility* | This optional feature enables Inventory Visibility to support items that are enabled for advanced warehouse processes (WHS items). For more information, see [Inventory Visibility support for WHS items](inventory-visibility-whs-support.md). |
+| *Enable warehouse items in Inventory Visibility* | This optional feature enables Inventory Visibility to support items that are enabled for warehouse management processes (WMS). For more information, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md). |
 
 ## <a name="get-service-endpoint"></a>Find the service endpoint
 
@@ -58,7 +58,7 @@ If you don't know the correct Inventory Visibility service endpoint, open the **
 
 ## <a name="data-source-configuration"></a>Data source configuration
 
-Each data source represents a system that your data comes from. Example data source names include `fno` (which stands for "Dynamics 365 Finance and Operations apps") and `pos` (which stands for "point of sale"). By default, Supply Chain Management is set up as a default data source (`fno`) in Inventory Visibility.
+Each data source represents a system that your data comes from. Example data source names include `fno` (which stands for "Dynamics 365 finance and operations apps") and `pos` (which stands for "point of sale"). By default, Supply Chain Management is set up as a default data source (`fno`) in Inventory Visibility.
 
 > [!NOTE]
 > The `fno` data source is reserved for Supply Chain Management. If your Inventory Visibility Add-in is integrated with a Supply Chain Management environment, we recommend that you not delete configurations that are related to `fno` in the data source.
@@ -804,3 +804,4 @@ The following table shows the default reservation hierarchy.
 | `ExtendedDimension8` | 33 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

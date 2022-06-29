@@ -42,7 +42,7 @@ Updates have been made to the following article, [India Goods and Services Tax (
 In addition to deleting one or all records, you can now delete multiple selected records.
 
 ### Enable tax calculation based on the accounting currency for import and export orders
-For more information about calculating tax in the accounting currency for import and export orders, see [What's new or changed in Finance and Operations version 10.0.3 (June 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-3.md#calculate-tax-in-accounting-currency-for-importexport-order).
+For more information about calculating tax in the accounting currency for import and export orders, see [What's new or changed in finance and operations version 10.0.3 (June 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-3.md#calculate-tax-in-accounting-currency-for-importexport-order).
 
 ![Tax setup parameters, currency type.](media/GST-tax-based-accounting-currency-2-10-0-03.png	)
 

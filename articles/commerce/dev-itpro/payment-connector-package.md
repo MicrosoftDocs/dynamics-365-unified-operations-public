@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Create Commerce payment packaging for Finance and Operations deployment
-description: This article explains how to package a payment connector for Finance and Operations deployment in Microsoft Dynamics 365 Commerce.
+title: Create Commerce payment packaging for finance and operations deployment
+description: This article explains how to package a payment connector for finance and operations deployment in Microsoft Dynamics 365 Commerce.
 author: mugunthanm
 ms.date: 12/02/2020
 ms.topic: article
@@ -27,11 +27,11 @@ ms.dyn365.ops.version: 10.0.10
 
 ---
 
-# Create Commerce payment packaging for Finance and Operations deployment
+# Create Commerce payment packaging for finance and operations deployment
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains how to package a payment connector for Finance and Operations deployment in Microsoft Dynamics 365 Commerce.
+This article explains how to package a payment connector for finance and operations deployment in Microsoft Dynamics 365 Commerce.
 
 In releases that are earlier than 10.0.10, you use the Commerce software development kit (SDK) to create a payment connector package. (The Commerce SDK was previously known as the Retail SDK.) In the 10.0.10 release and later, you can use only Visual Studio to create an Application Object Server (AOS) payment connector package. Packages that you create by using this approach can be deployed for both earlier deployments and self-service deployments by using [all-in-one packages](../../fin-ops-core/dev-itpro/dev-tools/aio-deployable-packages.md).
 
@@ -100,3 +100,4 @@ For information about how to uninstall or remove a deployable package from an en
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

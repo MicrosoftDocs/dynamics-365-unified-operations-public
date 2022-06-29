@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Platform updates for version 10.0.14 of Finance and Operations apps (November 2020)
-description: This article lists the features are included in the platform updates for version 10.0.14 of Finance and Operations apps.
+title: Platform updates for version 10.0.14 of finance and operations apps (November 2020)
+description: This article lists the features are included in the platform updates for version 10.0.14 of finance and operations apps.
 author: sericks007
 ms.date: 10/15/2020
 ms.topic: article
@@ -26,11 +26,11 @@ ms.search.validFrom: 2020-08-31
 ms.dyn365.ops.version: 10.0.14
 
 ---
-# Platform updates for version 10.0.14 of Finance and Operations apps (November 2020)
+# Platform updates for version 10.0.14 of finance and operations apps (November 2020)
 
 [!include [banner](../includes/banner.md)]
 
-This article lists the features that are included in the platform updates for version 10.0.14 of Finance and Operations apps. This version has a build number of 7.0.5778 and is available on the following schedule:
+This article lists the features that are included in the platform updates for version 10.0.14 of finance and operations apps. This version has a build number of 7.0.5778 and is available on the following schedule:
 
 - **Preview release:** September 2020
 - **General availability (self-update):** October 2020
@@ -58,7 +58,7 @@ Check out the [Dynamics 365: 2020 release wave 2 plan](/dynamics365-release-plan
 
 ### Removed and deprecated platform features
 
-The [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) article describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
+The [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and might be removed in a future update.

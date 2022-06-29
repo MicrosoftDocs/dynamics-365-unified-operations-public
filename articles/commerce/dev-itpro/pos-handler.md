@@ -40,7 +40,7 @@ For example, when you sell a serial item, POS will display a dialog box where yo
 
 ## POS request handler logic exposed for overriding
 
-This list is based on [Microsoft Dynamics 365 for Finance and Operations - Version 7.3.5](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&bugId=235124&qc=9fef9e411bd4f715508205b6c65b16afdc4096cea0f15e1535c3d8e3f13716c1).
+This list is based on [Microsoft Dynamics 365 Finance - Version 7.3.5](https://fix.lcs.dynamics.com/Issue/Details?kb=4456209&bugId=235124&qc=9fef9e411bd4f715508205b6c65b16afdc4096cea0f15e1535c3d8e3f13716c1).
 
 In each monthly update we will be adding additional extension points, so check the Pos.api.d.ts file in the Retail SDK for the full list.
 
