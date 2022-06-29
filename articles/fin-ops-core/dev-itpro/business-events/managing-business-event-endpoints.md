@@ -4,7 +4,7 @@
 title: Manage business event endpoints
 description: This article provides information about how to manage endpoints for finance and operations apps business events.
 author: jaredha
-ms.date: 11/09/2021
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -87,7 +87,7 @@ When a new endpoint is added in finance and operations apps, it's synced to Data
 For more information about the **ServiceEndpoint** table, see [ServiceEndpoint table/entity reference](/powerapps/developer/data-platform/reference/entities/serviceendpoint).
 
 > [!NOTE]
-> When endpoints are mapped in Dataverse, Dataverse IP addresses must be added to the allow list of firewall policies for business events and data events. See [IP addresses required](/power-platform/admin/online-requirements.md#ip-addresses-required) in Dataverse documentation for more information on the IP addresses required for the firewall policies.
+> When endpoints are mapped in Dataverse, Dataverse IP addresses must be added to the allow list of firewall policies for business events and data events. See [IP addresses required](/power-platform/admin/online-requirements#ip-addresses-required) for more information about the IP addresses required for the firewall policies.
 
 ### Microsoft Power Automate endpoints
 
