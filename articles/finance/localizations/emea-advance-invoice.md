@@ -290,7 +290,14 @@ To create a prepayment handling and link it to an advance invoice run the follow
 
 ## Reversing sales tax amounts for Czech Republic
 
-To manually define the reversal of sales tax amounts based on the base of a prepament handling first you must to enable the **(Czech) Enable manual input sales tax amounts** feature.
+To manually define the reversal of sales tax amounts based on the base of a prepament handling first you must enable the **(Czech) Enable manual input sales tax amounts** feature. For information about how to enable features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+> [!NOTE]. This functionality is available only on the Accounts payble side.
+
+When marking a invoice transaction for settlement against a payment a user can update the sales tax amounts for reversing on **Reverse sales tax amounts** tab in the **Settle transaction** form. Update tax amounts in the **Tax amount for settlement** field if needed.     
+
+
+
 
  
 
