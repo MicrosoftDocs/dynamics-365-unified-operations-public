@@ -61,6 +61,7 @@ The article contains the following sections:
 - [Set up Accounts payable for advance invoices](#set-up-accounts-payable-for-advance-invoices)
 - [Create a vendor advance invoice](#create-a-vendor-advance-invoice)
 - [Use the Advance invoice and Prepayment handling functionality](#use-the-advance-invoice-and-prepayment-handling-functionality)
+- [Reversing sales tax amounts for Czech Republic](#reversing-sales-tax-amounts-for-czech-republic)
 
 ## Advance invoices for Poland
 
@@ -286,6 +287,10 @@ To create a prepayment handling and link it to an advance invoice run the follow
 3. Set **Transform to payment** option to **No**  
 4. Link prepayment handling to the advance invoice (**Advance invoice** button). The system automaticflly creates VAT lines from the advance invoice. 
 5. Post the prepayment handling. The system automatically creates sales tax transactions for the prepayment.  
+
+## Reversing sales tax amounts for Czech Republic
+
+To manually define the reversal of sales tax amounts based on the base of a prepament handling first you must to enable the **(Czech) Enable manual input sales tax amounts** feature.
 
  
 
