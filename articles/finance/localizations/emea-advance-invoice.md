@@ -247,5 +247,27 @@ To link an advance invoice to a purchase order, follow these steps.
     | Percent | Specify the percentage of the prepayment for the purchase order. |
     | Update purchase | Select an option. The advance invoice amount will be calculated based on the purchase order amount for the items. |
     | Posting profile with prepayment journal voucher | Specify the posting profile for the prepayment. |
+    
+№№ Use the Advance invoice and Prepayment handling functionality
+
+You can use **Advance invoice** and **Prepayment handling** functionality in the business process.
+
+Example. 
+1. A user submits an advance invoice with VAT to a customer for the prepayment. The advance invoice is not posted in the Ledger.
+2. A user creates the prepayment without VAT.
+3. A user creates prepayment handling and relates this prepayment handling to the advance invoice, then post the the prepayment handling and creates the tax dacument. The system posts VAT to the ledger and relate VAT to prepayment.
+
+> [!NOTE]. - Clear value in the **Posting profile** field in the the Account receivable parameters (**Update** tab &gt; **Advance invoice** FastTab)
+>          - set **Post tax** option to **Yes** when you create the advance invoice
+   
+
+To create a prepayment handling and link it to an advance invoice run the following steps:
+1. Open the customer record
+2. On Action pane click **Customer** &gt; Transactions**, highlight the prepayment transaction and click **Prepayment handling**
+3. Set **Transform to payment**  to **No**  
+4. Link prepayment handling to the advance invoice (**Advance invoice** button). The system automaticflly creates VAT lines from the advance invoice. 
+5. Post the prepayment handling. The system automatically creates sales tax transactions for the prepayment.  
+
+ 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
