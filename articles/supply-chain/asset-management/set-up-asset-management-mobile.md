@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up the Asset management mobile workspace
-description: This article describes how to set up Microsoft Dynamics 365 Supply Chain Management and the Finance and Operations (Dynamics 365) mobile app to run an Asset management mobile workspace that workers can use to perform asset management tasks.
+description: This article describes how to set up Microsoft Dynamics 365 Supply Chain Management and the finance and operations (Dynamics 365) mobile app to run an Asset management mobile workspace that workers can use to perform asset management tasks.
 author: johanhoffmann
 ms.date: 01/15/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to set up Microsoft Dynamics 365 Supply Chain Management and the Finance and Operations (Dynamics 365) mobile app to run an **Asset management** mobile workspace that workers can use to perform asset management tasks.
+This article describes how to set up Microsoft Dynamics 365 Supply Chain Management and the finance and operations (Dynamics 365) mobile app to run an **Asset management** mobile workspace that workers can use to perform asset management tasks.
 
 ## Set up maintenance worker users in Supply Chain Management
 
@@ -47,7 +47,7 @@ For each user that requires access to the **Asset management** mobile workspace,
 
 ## Publish the Asset management mobile workspace
 
-To make asset management features available in the Finance and Operations (Dynamics 365) mobile app, you must publish the **Asset management** mobile workspace.
+To make asset management features available in the finance and operations (Dynamics 365) mobile app, you must publish the **Asset management** mobile workspace.
 
 1. In Supply Chain Management, select the **Settings** button (the gear symbol in upper-right corner), and then select **Mobile app** on the menu.
 1. In the **Manage mobile app** dialog box, find the **Asset Management** tile. If it contains the text "In metadata - not published," the workspace hasn't yet been published. If it contains the text "In metadata - published," the workspace has already been published, and you can skip the rest of this procedure.
@@ -56,14 +56,14 @@ To make asset management features available in the Finance and Operations (Dynam
 
 1. Select the **Asset Management** tile, and then select **Publish** on the toolbar. After a few seconds, you should receive a notification that states that the workspace has been successfully published. Additionally, the text on the tile should change to "In metadata - published."
 
-## Install and set up the Finance and Operations (Dynamics 365) mobile app
+## Install and set up the finance and operations (Dynamics 365) mobile app
 
-1. Go to one of the following app stores to install the **Microsoft Finance and Operations (Dynamics 365)** app on your mobile device:
+1. Go to one of the following app stores to install the **Microsoft finance and operations (Dynamics 365)** app on your mobile device:
 
     - [For Google Android devices](https://go.microsoft.com/fwlink/?linkid=850662)
     - [For Apple iOS devices](https://go.microsoft.com/fwlink/?linkid=850663)
 
-1. Open the Finance and Operations (Dynamics 365) app. The sign-in page should appear. In the **Sign in** field, enter your Supply Chain Management URL, or select a recent URL in the **Recent environments** list, and then tap **Connect**.
+1. Open the finance and operations (Dynamics 365) app. The sign-in page should appear. In the **Sign in** field, enter your Supply Chain Management URL, or select a recent URL in the **Recent environments** list, and then tap **Connect**.
 
     ![Sign-in page.](media/mobile-app-sign-in.png "Sign-in page")
 
@@ -86,7 +86,7 @@ To make asset management features available in the Finance and Operations (Dynam
 
 For more information about how to work with the **Asset management** mobile workspace, see [Use the Asset management mobile workspace](asset-management-mobile-workspace.md).
 
-For more information about the Finance and Operations (Dynamics 365) mobile app, see the [Mobile app home page](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
+For more information about the finance and operations (Dynamics 365) mobile app, see the [Mobile app home page](../../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
