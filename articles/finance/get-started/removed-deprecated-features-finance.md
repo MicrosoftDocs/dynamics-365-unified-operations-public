@@ -4,7 +4,7 @@
 title: Removed or deprecated features in Dynamics 365 Finance 
 description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Finance.
 author: kfend
-ms.date: 03/21/2022
+ms.date: 06/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,11 +47,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | Is being replaced by an improved functionality, [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md)|
+| **Reason for deprecation/removal** | Replaced by improved functionality, [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md)|
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected** | Application |
 | **Deployment option** | All |
-| **Status** | Being deprecated. The **Stock transfer orders that have tax on the transfer price** will not receive support with bug and security fixes. <br><br>After April 2023, customers will be asked to use by default the improved functionality **Stock transfer orders for India**. After October 2023, the Stock transfer orders that have tax on the transfer price will be no longer available and customers will be asked to move to the improved functionality [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md).||
+| **Status** | Deprecated: After April 2023, the **Stock transfer orders that have tax on the transfer price** will not receive support with bug and security fixes. <br><br>Customers will be asked to use the improved functionality **Stock transfer orders for India**. After October 2023, the Stock transfer orders that have tax on the transfer price will be no longer available and customers will be asked to move to the improved functionality [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md).||
 
 
 ## Features removed or deprecated in the Finance 10.0.26 release
