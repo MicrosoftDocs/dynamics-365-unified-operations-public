@@ -29,7 +29,7 @@ You should use the [scale unit deployment tools for one-box development environm
 
 To try out the distributed hybrid topology, you must have two sandbox environments (tier 2), one of which has your data (enterprise hub) and the other of which is for the scale unit and has "empty data."
 
-You must acquire add-ins for at least one cloud or edge scale unit. Corresponding project and environment slots will then be granted in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/), so that the scale unit environments can be deployed by using the [Scale Unit Manager portal](https://aka.ms/SCMSUM).
+You must acquire add-ins for at least one cloud or edge scale unit. Corresponding project and environment slots will then be granted in [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/).
 
 Contact Microsoft Support to request that the sandbox environments be enabled.
 

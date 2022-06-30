@@ -43,7 +43,7 @@ Scale units provide resilience, reliability, and scale for the assigned workload
 
 A *workload* is a defined set of business functionality that can be factored out and delegated to a scale unit. Although the workload for warehouse management has been released, the workload for manufacturing execution is still in preview.
 
-You can configure your hub environment and cloud scale units for selected workloads by using the [Scale Unit Manager portal](https://sum.dynamics.com). You can also assign multiple workloads per scale unit. For information about the prerequisites and limitations for cloud scale units in the current release, see the [Prerequisites and limitations for cloud scale units](#cloud-scale-unit-prerequisites) section later in this article.
+If you need to configure your hub environment and cloud scale units for selected workloads, please write to [d365scmcneext@microsoft.com](mailto:d365scmcneext@microsoft.com) for assistance. You can also assign multiple workloads per scale unit. For information about the prerequisites and limitations for cloud scale units in the current release, see the [Prerequisites and limitations for cloud scale units](#cloud-scale-unit-prerequisites) section later in this article.
 
 ### Dedicated warehouse management workload capabilities in a scale unit
 
@@ -111,7 +111,7 @@ Metrics and measures that might help you select the best application for your sc
 
 ### <a name="data-processing-management"></a>Data processing during management of scale units
 
-When you enable your Dynamics 365 environment to support the distributed hybrid topology for cloud and edge scale units, some management services will be hosted only in the United States, as for LCS. This behavior affects the transfer and storage of some administrative and configuration information that is used by the [Scale Unit Manager portal](https://sum.dynamics.com). Here are some examples:
+When you enable your Dynamics 365 environment to support the distributed hybrid topology for cloud and edge scale units, some management services will be hosted only in the United States, as for LCS. This behavior affects the transfer and storage of some administrative and configuration information. Here are some examples:
 
 - Your tenant names and IDs
 - Your LCS project IDs
@@ -148,8 +148,7 @@ Overage add-ins don't entitle you to new environment slots.
 
 If you want to acquire more sandbox environments, you can purchase additional regular sandbox slots. Microsoft can then help you enable those slots as sandbox scale units for the hybrid topology.
 
-
-After you've finished planning how you will onboard to the distributed hybrid topology for Supply Chain Management, you will use the [Scale Unit Manager portal](https://aka.ms/SCMSUM) to begin the onboarding process. In the portal, select the **Dynamics 365 Tenants** tab. This tab shows the list of tenants that your account is part of, and where you're an owner or environment admin for an LCS project.
+After you've finished planning how you will onboard to the distributed hybrid topology for Supply Chain Management, please write to [d365scmcneext@microsoft.com](mailto:d365scmcneext@microsoft.com) to get help implementing your plan.
 
 If the tenant that you're looking for isn't in the list, go to [LCS](https://lcs.dynamics.com/v2), and make sure that you're either an environment admin or a project owner of the LCS project for that tenant. Only Azure Active Directory (Azure AD) accounts from the selected tenant are authorized to complete the sign-up experience.
 
@@ -168,17 +167,9 @@ Microsoft will review your request and inform you about the next steps by sendin
 
 After the onboarding is completed, you can use the port to configure scale units and workloads.
 
-### <a name="scale-unit-manager-portal"></a>Manage scale units and workloads by using the Scale Unit Manager portal
+### <a name="scale-unit-manager-portal"></a>Manage scale units and workloads
 
-Go to the [Scale Unit Manager portal](https://aka.ms/SCMSUM), and sign in by using your tenant account. On the **Configure scale units** page, you can add a hub environment if it isn't already listed. You can then select the hub that you want to configure with scale units and workloads.
-
-:::image type="content" source="media/cloud_edge-Manage.png" alt-text="Scale Unit Manager portal, Configure scale units page.":::
-
-To add one or more scale units that are available in your subscriptions, select **Add scale units**.
-
-On the **Defined workloads** tab, use the **Create workload** button to add a warehouse management workload to one of your scale units. For each workload, you must specify the context of the processes that will be owned by the workload. For warehouse management workloads, the context is a specific warehouse in a specific site and legal entity.
-
-:::image type="content" source="media/cloud_edge-DefineWorkload.png" alt-text="Define workloads dialog.":::
+To get help managing your scale units and workloads, please write to [d365scmcneext@microsoft.com](mailto:d365scmcneext@microsoft.com).
 
 #### <a name="manage-workloads"></a>Manage workloads
 
@@ -215,7 +206,7 @@ When you install a workload, the installation process creates a workload definit
 | Scale unit support for warehouse app work lists | Warehouse |
 | Production floor execution | Manufacturing |
 
-When you deploy a workload by using the [scale unit deployment tools for one-box development environments](https://github.com/microsoft/SCMScaleUnitDevTools) or the [scale unit manager portal](https://sum.dynamics.com), all the mandatory features will automatically be enabled. However, if you do a manual test deployment that is missing one or more mandatory features, the workload installation will fail, and you will receive a message that lists the missing features. You must then manually enable those features and retrigger the workload installation.
+When you deploy a workload by using the [scale unit deployment tools for one-box development environments](https://github.com/microsoft/SCMScaleUnitDevTools), all the mandatory features will automatically be enabled. However, if you do a manual test deployment that is missing one or more mandatory features, the workload installation will fail, and you will receive a message that lists the missing features. You must then manually enable those features and retrigger the workload installation.
 
 ### Enabling or disabling features that have data synchronization dependencies
 
