@@ -158,7 +158,7 @@ Version 2.2.8 of the finance and operations mobile app fixes the known issues wi
 
 ### The Mobile Client app is not working on particular devices
 Sometimes the cache associated with the app becomes corrupt or obsolete and needs to be cleared. Unfortunately, the only way to clear the data associated with the app is to uninstall the app.
-To completely uninstall the app, don't use the "long-press wiggle and x on the app icon" method. Instead, completely uninstall the app by navigating to **Settings** > **General** > **iPhone Storage** > **finance and operations (Dynamics 365)**, and then click **Delete App**. After 10-15 seconds, the app can be reinstalled.
+To completely uninstall the app, don't use the "long-press wiggle and x on the app icon" method. Instead, completely uninstall the app by navigating to **Settings** > **General** > **iPhone Storage** > **Finance and operations (Dynamics 365)**, and then click **Delete App**. After 10-15 seconds, the app can be reinstalled.
 
 ### On Android devices with non-English regions, the comma can't be used as the decimal separator in an amount field
 On Android devices with non-English regions, using a comma as the decimal separator is standard practice. Problems using a comma in an amount field is an Android-specific problem because iPhone works as expected. On Android, use of the comma in an amount field is a problem with the default "gboard" keyboard and some other keyboards. Installing the SwiftKey keyboard (published by Microsoft) allows the entry of commas just like on iPhone: [SwiftKey Keyboard](https://www.microsoft.com/swiftkey).
