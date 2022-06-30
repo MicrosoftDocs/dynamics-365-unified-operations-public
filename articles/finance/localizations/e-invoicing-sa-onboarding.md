@@ -2,9 +2,9 @@
 # required metadata
 
 title: Electronic invoicing onboarding in Saudi Arabia
-description: This topic provides information about onboarding process of taxpayers and their electronic invoicing software by Saudi Arabian tax authorities.
+description: This article provides information about how to onboard taxpayers and their electronic invoicing software by Saudi Arabian tax authorities.
 author: ilkond
-ms.date: 06/20/2022
+ms.date: 06/30/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,27 +31,28 @@ ms.dyn365.ops.version: AX 10.0.28
 
 [!include [banner](../includes/banner.md)]
 
-Onboarding is mandatory for all taxpayers who are subjects to electronic invoicing in Saudi Arabia. As the result of onboarding process, taxpayers will obtain Cryptographic Stamp Identifiers (**CSID**) which are required for integration with electronic invoicing portal managed by Saudi Arabian Tax authority (**ZATCA**) and further electronic invoices submission.
-This topic provides information about onboarding process for taxpayers and their electronic invoicing software by Saudi Arabian tax authorities.
+Onboarding is mandatory for all taxpayers who are subjects to electronic invoicing in Saudi Arabia. As the result of onboarding process, taxpayers will obtain Cryptographic Stamp Identifiers (**CSID**) which are required for integration with the electronic invoicing portal managed by the Saudi Arabian Tax authority (**ZATCA**) and further electronic invoices submission.
+
+This article provides information about the onboarding process for taxpayers and their electronic invoicing software by Saudi Arabian tax authorities.
 
 ## Prerequisites
 
-- The legal entity must be registered as a Taxpayer in Saudi Arabia and have a valid VAT registration number.
-- The legal entity must have the access to Saudi Arabian Taxation Portal - [ERAD](https://fatoora.zatca.gov.sa/) 
+- The legal entity must be registered as a taxpayer in Saudi Arabia and have a valid VAT registration number.
+- The legal entity must have the access to the [Saudi Arabian Taxation Portal - ERAD](https://fatoora.zatca.gov.sa/).
 
 ## Onboarding process
 
-Onboarding process consist of 2 parts:
-1. Obtaining Compliance CSID (**CCSID**) which is initially assigned by ZATCA to perform compliance checks of Electronic invoices Generation Solutions (**EGS**).
-2. Obtaining Production CSID (**PCSID**) which is finally assigned by ZATCA to compliant electronic invoices generation solutions.
+The onboarding process consist of two separate steps:
 
-### Obtaining Compliance CSID
+1. Obtaining Compliance CSID (**CCSID**), which is assigned by ZATCA to perform compliance checks of Electronic invoices Generation Solutions (**EGS**).
+2. Obtaining Production CSID (**PCSID**), which is assigned by ZATCA to compliant electronic invoices generation solutions.
 
-1. In the Taxation Portal (**ERAD**), navigate to the Onboarding and Management Portal by clicking on the relevant tile.
-2. On the main landing page of the Onboarding and Management Portal select the **Onboard new solution unit/device** tile and then click on 
-**Generate OTP code**.
-3. Choose the number of **OTP** (*on-time password*) codes to be generated. The number depends on how many e-invoicing generation units (devices) will be used.
-4. Save the generated OTP codes to be used on the next steps.
+### Obtain Compliance CSID
+
+1. In the Taxation Portal (**ERAD**), navigate to the Onboarding and Management Portal by selecting the relevant tile.
+2. On the main landing page of the Onboarding and Management Portal, select the **Onboard new solution unit/device** tile and then select **Generate OTP code**.
+3. Select the number of **OTP** (*on-time password*) codes to be generated. The number depends on how many e-invoicing generation units (devices) will be used.
+4. Save the generated OTP codes to use on the next steps.
 5. Prepare a configuration file for Certificate Signing Request in a form of a plain text file which should contain the following data:
 
     ```txt
@@ -91,45 +92,49 @@ Onboarding process consist of 2 parts:
     | Code                             | Description | Specification |
     |----------------------------------|-------------|-------------|
     | C                    | Country code | 2 letter code (ISO 3166 Alpha-2)  |
-    | OU                    | Organization Unit name| Free text in the case of normal taxpayer; in the case of VAT Groups identify this through the 11th digit of Organization Identifier being ‘1’. Run a validation that the input is a 10-digit TIN |
+    | OU                    | Organization Unit name| Free text in the case of normal taxpayer. In the case of VAT groups, identify this through the 11th digit of Organization Identifier being ‘1’. Run a validation that the input is a 10-digit TIN. |
     | O                    | Organization/Taxpayer Name  | Free text |
     | CN                    | Unique Name of the Solution or Unit | Free text |
     | SN                    | Unique identification code for the solution | Free text |
-    | UID                   | VAT Registration Number of the Taxpayer | 15 digits; begins with 3 and ends with 3 |
-    | title                 | The document type that the Taxpayer’s solution unit will be issuing | 4-digit numerical input using 0 & 1 mapped to “TSCZ”: 0 = False/Not supported, 1= True/Supported. T= Tax invoice (Standard), S = Simplified Tax Invoice, C= “for future use”, Z = “for future use” |
-    | registeredAddress     | The address of the Branch or location where the device or solution unit is primarily situated | Free text |
-    | businessCategory | Industry or sector for which the device or solution will generate invoices| Free text|
+    | UID                   | VAT Registration Number of the Taxpayer | 15 digits. This number begins with 3 and ends with 3. |
+    | title                 | The document type that the Taxpayer’s solution unit will be issuing. | A 4-digit numerical input using 0 and 1 mapped to “TSCZ”: 0 = False/Not supported, 1= True/Supported. T= Tax invoice (Standard), S = Simplified Tax Invoice, C= for future use, Z = for future use. |
+    | registeredAddress     | The address of the branch or location where the device or solution unit is primarily situated. | Free text |
+    | businessCategory | Industry or sector for which the device or solution will generate invoices. | Free text |
 
-6. Run provided below [onboarding script](#script) with the OTP and configuration file as input parameters, for example: *.\OnboardingScript.ps1 -action getComplianceCSID -otp 123345 -csrconfig .\csr_config.txt -password 123*
-   > [!NOTE]
-   > The parameter *password* is optional and can be omitted. If exists then the certificate will be generated with the given password.
-7. As result of the script running, the CCSID will be received as a certificate file in *pfx* format. Save this CCSID certificate file in Azure Key Vault. For more information, see [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md).
-8. Configure related *feature setup* in **Saudi Arabian electronic invoice (SA)** electronic invoicing feature, refer to the CCSID certificate saved in Azure Key Vault. The certificate will be used for communication with ZATCA electronic invoicing portal.
+6. Run the [onboarding script](#script) provided later in this article with the OTP and configuration file as input parameters. For example: *.\OnboardingScript.ps1 -action getComplianceCSID -otp 123345 -csrconfig .\csr_config.txt -password 123*
+  
+  > [!NOTE]
+  > The parameter *password* is optional and can be omitted. If it exists, the certificate is generated with the given password.
+
+7. As result of the script running, the CCSID will be received as a certificate file in *pfx* format. Save this CCSID certificate file in the Azure Key Vault. For more information, see [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md).
+8. Configure the related *feature setup* in **Saudi Arabian electronic invoice (SA)** electronic invoicing feature and refer to the CCSID certificate saved in the Azure Key Vault. The certificate will be used for communication with ZATCA electronic invoicing portal.
 
 ### Obtaining Production CSID
-To obtain Production CSID the solution for electronic invoices generation and submission must be properly configured and fully functioning.
-To achive this, all required configuration steps must be preliminary completed. For more information, see [Get started with Electronic invoicing for Saudi Arabia](e-invoicing-sa-get-started.md). 
+To obtain Production CSID, the solution for electronic invoice generation and submission must be properly configured and fully functioning.
+To achive this, all the required prelimiary configuration steps must be complete. For more information, see [Get started with Electronic invoicing for Saudi Arabia](e-invoicing-sa-get-started.md). 
 
-Generate and submit to ZATCA for complaince check all types of sample invoices which you plan to issue according to your business needs. Use the standard process for electronic invoices issuing. For more information, see [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
+To check compliance, generate and submit to ZATCA, all types of sample invoices which you plan to issue according to your business needs. Use the standard process for electronic invoices issuing. For more information, see [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
 
 > [!NOTE]
-> You need to generate and submit not only invoices but also **credit notes** and **debit notes** samples at the stage of obtaining PCSID to register all types of documents which might be potentially issued.
+> In addition to invoices, you need to generate and submit credit note and debit note samples at the same time that you obtain PCSID to register all types of documents which might be potentially issued.
 
 1. Make sure that all electronic invoices are successfully submitted to ZATCA.
-2. Run provided below [onboarding script](#script) with the CCSID as an input parameter, for example: *.\OnboardingScript.ps1 -action getProductionCSID -password 123*
+2. Run the [onboarding script](#script) provided below, with the CCSID as an input parameter. For example: *.\OnboardingScript.ps1 -action getProductionCSID -password 123*.
+
    > [!NOTE]
-   > The parameter *password* is optional and can be omitted. If exists then the certificate will be generated with the given password. 
-3. As result of the script running, the **PCSID** will be received as a certificate file in *pfx* format. Save this PCSID certificate file in Azure Key Vault.
-4. Configure related *feature setup* in **Saudi Arabian electronic invoice (SA)** electronic invoicing feature, replace previously configured CCSID certificate with the obtained CCSID certificate saved in Azure Key Vault.
+   > The parameter *password* is optional and can be omitted. If the parameter exists, the certificate will be generated with the given password. 
 
-After completeion of all the configurations steps above, the system is ready to be used in production mode.
+3. As result of the script running, the **PCSID** wis received as a certificate file in *pfx* format. Save this PCSID certificate file in the Azure Key Vault.
+4. Configure related *feature setup* in **Saudi Arabian electronic invoice (SA)** electronic invoicing feature. Replace the previously configured CCSID certificate with the obtained CCSID certificate that you saved in the Azure Key Vault.
 
-To review obtained CSIDs on ZATCA side, use the **Review Existing Cryptographic Stamp Identifier (CSID)** tile on the landing page of the Onboarding and Management Portal which is accessible from the main Saudi ArabianTaxation Portal - [ERAD](https://fatoora.zatca.gov.sa/).
+After you compelte all of the configurations steps, the system is ready to be used in production mode.
+
+To review obtained CSIDs on ZATCA side, use the **Review Existing Cryptographic Stamp Identifier (CSID)** tile on the landing page of the Onboarding and Management Portal which is accessible from the main [Saudi ArabianTaxation Portal - ERAD](https://fatoora.zatca.gov.sa/).
   
 ## <a id="script"></a>Onboarding script
 
 > [!NOTE]
-> The sample scripts are not supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
+> The sample scripts aren't supported under any Microsoft standard support program or service. The sample scripts are provided AS IS without warranty of any kind. Microsoft further disclaims all implied warranties including, without limitation, any implied warranties of merchantability or of fitness for a particular purpose. The entire risk arising out of the use or performance of the sample scripts and documentation remains with you. In no event shall Microsoft, its authors, or anyone else involved in the creation, production, or delivery of the scripts be liable for any damages whatsoever (including, without limitation, damages for loss of business profits, business interruption, loss of business information, or other pecuniary loss) arising out of the use of or inability to use the sample scripts or documentation, even if Microsoft has been advised of the possibility of such damages.
 
 1. Use the following Windows PowerShell script to obtain CCSID and PCSID.
 
@@ -250,7 +255,7 @@ To review obtained CSIDs on ZATCA side, use the **Review Existing Cryptographic 
     } 
     ```
 
-2. Save the received output *pfx* certificate file in Azure Key Vault.
+2. Save the received output *pfx* certificate file in the Azure Key Vault.
 
 ## Additional resources
 
