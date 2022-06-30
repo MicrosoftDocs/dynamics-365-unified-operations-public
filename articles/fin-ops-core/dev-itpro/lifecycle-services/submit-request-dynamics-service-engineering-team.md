@@ -124,7 +124,7 @@ Here are some typical examples of service requests that will be denied:
 - You submit a request of the **Other request** type for one of the following actions, but you should have submitted a support ticket instead:
 
     - You want to activate a new subscription estimate after you're live in production or after you've requested a production environment.
-    - You want to reset the Financial reporting data mart in a release that is earlier than Microsoft Dynamics 365 Finance Financial reporting release 7.2.6.0.
+    - You want to reset the Financial reporting data mart in a release that is earlier than Microsoft Dynamics 365 for Finance and Operations Financial reporting release 7.2.6.0.
     - You want to restore a production database after go-live.
     - You encountered an issue after the DSE team did an application upgrade.
 
