@@ -128,7 +128,7 @@ This article explains how to update the local agent. The latest version of the l
 ## Download the latest local agent and configuration from LCS
 
 > [!NOTE]
-> If you require an older version of the local agent for your current deployments, download it from the Asset library in Microsoft Dynamics Lifecycle Services (LCS). To download Local agent version 1.1.0, go to **Shared Asset Library -> Model** and click on Dynamics 365 Finance on-premises - Local agent v1.1.0**.
+> If you require an older version of the local agent for your current deployments, download it from the Asset library in Microsoft Dynamics Lifecycle Services (LCS). To download Local agent version 1.1.0, go to **Shared Asset Library -> Model** and click on Dynamics 365 Finance and Operations (on-premises) - Local agent v1.1.0**.
 >
 > You must have version 2.0.0 or later to deploy Platform update 12 and complete update flows.
 
