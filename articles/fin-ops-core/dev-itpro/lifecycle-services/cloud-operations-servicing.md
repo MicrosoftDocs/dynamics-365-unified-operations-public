@@ -41,14 +41,14 @@ A key tenant for a successful onboarding experience to the cloud service is know
 After go-live, the Production environment must be updated at regular intervals. Lifecycle Services (LCS) provides a self-serve experience to continuously update your environments.
 
 ### Update types
-For customers who are on **Dynamics 365 Finance version 8.0 (April 2018) and earlier**, the following updates are available:
+For customers who are on **Dynamics 365 for Finance and Operations version 8.0 (April 2018) and earlier**, the following updates are available:
 
 - **Platform updates** – A single cumulative binary update of all the platform fixes.
 - **Application hotfixes** – Application hotfixes that are released as granular X++ updates.
 - **Application release** – A new major release of the application. This type of update typically requires an upgrade.
 - **Application customizations** – Customizations that are built on top of the application. The best practice is to apply a single deployable package that consists of all your independent software vendor (ISV) solutions and customizations.
 
-For customers who are on **Dynamics 365 Finance version 8.1 (October 2018) and later**, the following updates are available:
+For customers who are on **Dynamics 365 for Finance and Operations version 8.1 (October 2018) and later**, the following updates are available:
 
 - **Application updates** – A single cumulative binary update of the application and the platform fixes. You can update for yourself by using the regular update flows. Otherwise, you will be automatically updated by Microsoft.
 - **Application customizations** – Customizations that are built on top of the application. The best practice is to apply a single deployable package that consists of all your ISV solutions and customizations.
