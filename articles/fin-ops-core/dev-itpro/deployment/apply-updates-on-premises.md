@@ -47,7 +47,7 @@ While an on-premises environment is being deployed, you can select to deploy a c
 To apply updates to an on-premises environment after it has been deployed, in LCS, on the **Environment details** page for the environment, under **Maintain**, select **Apply updates**.
 
 > [!NOTE]
-> You can apply updates after deployment only on environments that have Platform update 12 for Finance and Operations or later. The environment must also have the latest version of the local agent available in LCS. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md). 
+> You can apply updates after deployment only on environments that have Platform update 12 for finance and operations or later. The environment must also have the latest version of the local agent available in LCS. For more information, see [Update the local agent](../lifecycle-services/update-local-agent.md). 
 > If you're on a platform version that is older than Platform update 12, you can reconfigure an environment that is already deployed to update the customizations or update to the latest platform release. For more information about how to redeploy an environment, see [Redeploy on-premises environments](redeploy-on-prem.md).
 
 ## Apply application or binary updates through LCS
@@ -134,3 +134,4 @@ After you review the logs and determine the cause of the failure, complete one o
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
