@@ -41,7 +41,7 @@ This article is a tutorial that helps you get setup and get started with RSAT an
 
 ### Prerequisites
 
-- An environment that runs Microsoft Dynamics 365 Finance version 10.0 (April 2019) or later is required for this tutorial. For customers who are using Microsoft Dynamics 365 Finance, Enterprise edition 7.3, Platform update 20 (PU20) or later is also supported.
+- An environment that runs Microsoft Dynamics 365 for Finance and Operations version 10.0 (April 2019) or later is required for this tutorial. For customers who are using Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, Platform update 20 (PU20) or later is also supported.
 - The user must have admin rights to the environment.
 - You must have access to the customer tenant LCS and Azure DevOps (previously known as Microsoft Visual Studio Team Services \[VSTS\]).
 - The user that is creating and managing tests suites must have an Azure DevOps Test Plans or Test Manager license. The following licenses will also give you access to Test Plans:
