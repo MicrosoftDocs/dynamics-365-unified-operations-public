@@ -112,7 +112,7 @@ The Azure AD application that you created will be used by Dataverse to call Fina
 
     - **Email** - Enter **dataverseintegration** (or a different value, does *not* need to be a valid email account).
 
-    - Assign the security role **CDS virtual entity application** to this user.
+    - Assign the security role **Dataverse Virtual entity integration app** to this user.
 
     - Remove all other roles including **System user**.
 
