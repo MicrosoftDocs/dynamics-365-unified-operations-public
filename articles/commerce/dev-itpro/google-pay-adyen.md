@@ -20,17 +20,17 @@ ms.search.validFrom: 2017-06-20
 
 This topic describes how to configure Google Pay with Adyen in Microsoft Dynamics 365 Commerce.
 
+Microsoft Dynamics 365 Commerce offers an out-of-box integration for Google Pay when using the Adyen payment gateway service. Google Pay is a digital wallet payment method that uses a Google Pay merchant account in coordination with the Adyen payment service. When configured, the Google Pay button is a selectable payment method that is available as part of an online order checkout. When users select **Google Pay** from a supported browser or device, they're directed to complete their payment directly with the Google Pay service and then are returned to the online storefront for order completion. 
+
+When using Google Pay with the express checkout module in Commerce, users have their payment account information automatically prefilled on the checkout form to get through the checkout process faster. Commerce includes a payment express module that enables express checkout behavior. The payment express module can be used in a fragment that is included in the checkout or cart page. The Dynamics 365 Payment Connector for Google Pay connector reference is used in addition to the Dynamics 365 Payment Connector for Adyen to enable both the payment express or regular checkout options when PayPal is configured. Google Pay can also be configured with Adyen payment terminals and the Commerce point-of-sale (POS) for in-store use.
+
 ## Key terms
 
 | Term | Description |
 |---|---|
 | Google Pay | Also known as the Google Pay "button", Google Pay is a wallet payment offering supported via the Adyen connector, allowing the customer experience and integration supported by the Dynamics Google Pay Connector. |
 | Wallet | A payment type that doesn't include traditional payment characteristics such as the bank identification number (BIN) range and expiration date that are used to differentiate credit and debit card types. |
-|Payment Express |An added module in Dynamics 365 Commerce that supports faster checkout behavior with supported payment methods.|
-
-Microsoft Dynamics 365 Commerce offers an out-of-box integration for Google Pay when using the Adyen payment gateway service. Google Pay is a digital wallet payment method that uses a Google Pay merchant account in coordination with the Adyen payment service. When configured, the Google Pay button is a selectable payment method that is available as part of an online order checkout. When users select **Google Pay** from a supported browser or device, they're directed to complete their payment directly with the Google Pay service and then are returned to the online storefront for order completion. 
-
-When using Google Pay with the express checkout module in Commerce, users have their payment account information automatically prefilled on the checkout form to get through the checkout process faster. Commerce includes a payment express module that enables express checkout behavior. The payment express module can be used in a fragment that is included in the checkout or cart page. The Dynamics 365 Payment Connector for Google Pay connector reference is used in addition to the Dynamics 365 Payment Connector for Adyen to enable both the payment express or regular checkout options when PayPal is configured. Google Pay can also be configured with Adyen payment terminals and the Commerce point-of-sale (POS) for in-store use.
+|Payment express module |A Dynamics 365 Commerce module that supports faster checkout behavior with supported payment methods.|
 
 ## Prerequisites
 
