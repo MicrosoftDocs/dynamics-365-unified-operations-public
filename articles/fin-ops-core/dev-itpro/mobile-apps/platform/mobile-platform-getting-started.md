@@ -40,7 +40,7 @@ We have created new, purpose-built forms in the **Fleet Management** module. The
 
 1.  [Download the file that contains the Fleet Management project](https://github.com/Microsoft/Dynamics365-for-Operations-mobile-FleetManagementSamples) (.axpp file).
 2.  Extract the contents of the zip file to a temporary location on the development computer.
-3.  Import the project (.axpp) file by using Microsoft Visual Studio (click **finance and operations** &gt; **Import Project**).
+3.  Import the project (.axpp) file by using Microsoft Visual Studio (click **Finance and operations** > **Import Project**).
 4.  After you've imported the project file, build the project or module.
 
 ### Get the sample workspace
