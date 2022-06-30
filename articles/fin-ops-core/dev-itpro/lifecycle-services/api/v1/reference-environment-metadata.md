@@ -126,10 +126,10 @@ For each environment, the following properties are available. If no value is ava
             "EnvironmentInfrastructure": "MicrosoftManaged",
             "EnvironmentType": "Production",
             "EnvironmentGroup": "Primary",
-            "EnvironmentProduct": "Finance and Operations",
+            "EnvironmentProduct": "finance and operations",
             "EnvironmentEndpointBaseUrl": "<example>",
             "DeploymentState": "Finished",
-            "TopologyDisplayName": "Finance and Operations - High Availability (10.0.20 with Platform update 44)",
+            "TopologyDisplayName": "finance and operations - High Availability (10.0.20 with Platform update 44)",
             "CurrentApplicationBuildVersion": "10.0.886.48",
             "CurrentApplicationReleaseName": "10.0.20",
             "CurrentPlatformReleaseName": "Update44",
@@ -148,10 +148,10 @@ For each environment, the following properties are available. If no value is ava
             "EnvironmentInfrastructure": "MicrosoftManaged",
             "EnvironmentType": "Sandbox",
             "EnvironmentGroup": "Primary",
-            "EnvironmentProduct": "Finance and Operations",
+            "EnvironmentProduct": "finance and operations",
             "EnvironmentEndpointBaseUrl": "<example>",
             "DeploymentState": "Finished",
-            "TopologyDisplayName": "Finance and Operations - Sandbox (10.0.20 with Platform update 44)",
+            "TopologyDisplayName": "finance and operations - Sandbox (10.0.20 with Platform update 44)",
             "CurrentApplicationBuildVersion": "10.0.960.24",
             "CurrentApplicationReleaseName": "10.0.21",
             "CurrentPlatformReleaseName": "Update45",
@@ -181,3 +181,4 @@ To better load balance requests, there are rate limits on this API:
 > Requests that exceed the limits will be rejected, and an "HTTP 429 Too Many Requests" response will be returned. The **retry-after** header will indicate the number of seconds that the request can be retried after.
 
 [!INCLUDE[footer-include](../../../../../includes/footer-banner.md)]
+
