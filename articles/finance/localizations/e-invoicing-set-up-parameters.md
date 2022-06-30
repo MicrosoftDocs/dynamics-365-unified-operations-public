@@ -56,14 +56,14 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
     - **Customer invoice context model**
     - **Invoice model**
     - **Fiscal documents** (for Brazilian scenarios, if required)
-    - **Retail channel data** (for Saudi Arabian Retail specific scenarios, if required)
+    - **Retail channel data** (for Saudi Arabian Retail-specific scenarios, if required)
     - **Response message model**
 
-5. Verify that following mapping configurations were automatically imported. If they weren't, import them, and then close the page.
+5. Verify that the following mapping configurations were automatically imported. If they weren't, import them, and then close the page.
     - **Invoice model mapping**
     - **Fiscal documents mapping** (for Brazilian scenarios, if required)
     - **Advance invoice model mapping** (for Polish scenarios, if required) 
-    - **Retail fiscal document mapping** (for Saudi Arabian Retail specific scenarios, if required)
+    - **Retail fiscal document mapping** (for Saudi Arabian Retail-specific scenarios, if required)
 
 ## Set up Electronic document parameters
 
@@ -83,7 +83,7 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
 
 If you derive a configuration from the configuration that is mentioned in the preceding table, define the new configuration.
 
-To set up the rules to process responses from the Electronic invoicing service, and to update Finance and Supply Chain Management data based on invoices that are processed by the service, set up response types. In most scenarios, this setup is country/region-specific. Therefore, we recommend that you to follow the country/region-specific instructions. For more information, see [Availability of Electronic invoicing features by country or region](e-invoicing-country-specific-availability.md)
+To set up the rules to process responses from the Electronic invoicing service, and to update Finance and Supply Chain Management data based on invoices that are processed by the service, set up response types. In most scenarios, this setup is country/region-specific. Therefore, we recommend that you follow the country/region-specific instructions. For more information, see [Availability of Electronic invoicing features by country or region](e-invoicing-country-specific-availability.md)
  
 To inactivate old (legacy) ER functionality for some features and activate additional functionality in Finance and Supply Chain Management for some country/region-specific scenarios, enable the corresponding feature on the **Features** tab of the **Electronic document parameters** page.
 
