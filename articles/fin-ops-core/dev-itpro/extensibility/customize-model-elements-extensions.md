@@ -221,7 +221,7 @@ In the event handler code of the **FMRentalCharge\_Extension** class shown in th
 
     [![FMParameters.](./media/code3_customizemodel.png)](./media/code3_customizemodel.png)
 
-    The Finance and Operations apps also support configurable plug-in classes where the plug-in metadata associate with the class isn't known at development time and is configurable at runtime by an administrator. This tutorial doesn't cover that feature.
+    The finance and operations apps also support configurable plug-in classes where the plug-in metadata associate with the class isn't known at development time and is configurable at runtime by an administrator. This tutorial doesn't cover that feature.
 
 ## Create additional Fleet Management extensions
 
