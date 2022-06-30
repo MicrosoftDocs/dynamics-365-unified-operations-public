@@ -39,7 +39,7 @@ This article explains how to configure the <strong>Code upgrade </strong>tile in
 The code upgrade tool operates by connecting to your Azure DevOps project, locating your Trunk\\Main branch, branching to a new branch that will be named as Releases\\\<version number\>, and then performing the code upgrade there. After this process is complete, you can synchronize your developer environment to this new branch under Releases\\\<version number\> and resolve conflicts. When you have compiled and tested your upgraded code you can merge the new branch back into Trunk\\Main, using source control explorer in Visual Studio and the process is complete.
 
 
-Dynamics 365 Finance version 8.0 and newer, does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have a plan to refactor your customizations into extensions. For more information, see the [Extensibility home page](../extensibility/extensibility-home-page.md) and [Relax model restrictions to refactor overlayering into extensions](../extensibility/refactoring-over-layering.md).
+Dynamics 365 for Finance and Operations version 8.0 and newer, does not allow customization via overlayering of Microsoft models. Before you upgrade, you must have a plan to refactor your customizations into extensions. For more information, see the [Extensibility home page](../extensibility/extensibility-home-page.md) and [Relax model restrictions to refactor overlayering into extensions](../extensibility/refactoring-over-layering.md).
 
 ## Process
 ### Create the Trunk\\Main folder structure
