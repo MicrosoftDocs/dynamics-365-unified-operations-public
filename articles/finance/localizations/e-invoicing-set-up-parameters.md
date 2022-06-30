@@ -4,7 +4,7 @@
 title: Set up Electronic invoicing parameters
 description: This topic explains how to set up the Electronic invoicing parameters.
 author: dkalyuzh
-ms.date: 12/15/2021
+ms.date: 06/30/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
