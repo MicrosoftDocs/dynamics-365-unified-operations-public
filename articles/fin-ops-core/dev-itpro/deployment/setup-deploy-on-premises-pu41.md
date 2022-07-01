@@ -752,7 +752,7 @@ The following script automates the steps of the manual process that is described
 # If Remoting, execute
 #.\Configure-SQLCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 
-.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com"
+.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com.pfx"
 ```
 
 You can verify that everything has been configured correctly by running the following command.
@@ -761,7 +761,7 @@ You can verify that everything has been configured correctly by running the foll
 # If Remoting, execute
 #.\Configure-SQLCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Test
 
-.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com" -Test
+.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com.pfx" -Test
 ```
 
 #### Manually configure the certificate for an Always-On SQL availability group or instance
