@@ -78,7 +78,7 @@ If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or 
 </table>
 
 ## Download and install the mobile app
-Download and install the Finance and Operations mobile app:
+Download and install the finance and operations mobile app:
 
 - [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 - [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -121,3 +121,4 @@ After you've viewed the purchase order that is assigned to you and read the work
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

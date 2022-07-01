@@ -34,7 +34,7 @@ ms.search.validFrom: 2016-11-30
 
 This article provides information about the **Vendor collaboration** mobile workspace. This workspace helps your vendors stay up to date about the purchase orders that have been sent to them for approval. They can also view information about new and updated purchase orders and contacts.
 
-This mobile workspace is intended to be used with the Finance and Operations (Dynamics 365) mobile app.
+This mobile workspace is intended to be used with the finance and operations (Dynamics 365) mobile app.
 
 ## Overview 
 The **Vendor collaboration** mobile workspace keeps vendors informed about new purchase orders, so that they can view purchase orders and then respond to them in the web client. 
@@ -116,7 +116,7 @@ If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or 
 
 ## Download and install the mobile app
 
-Download and install the Finance and Operations (Dynamics 365) mobile app:
+Download and install the finance and operations (Dynamics 365) mobile app:
 
 -   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -177,3 +177,4 @@ When the purchase order is confirmed by the customer (that is, the status of the
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
