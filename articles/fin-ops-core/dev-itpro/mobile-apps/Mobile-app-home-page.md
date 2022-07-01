@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mobile app home page
-description: This article describes the Finance and Operations (Dynamics 365) mobile app and provides links to resources that can help you implement it in your organization.
+description: This article describes the finance and operations (Dynamics 365) mobile app and provides links to resources that can help you implement it in your organization.
 author: ChrisGarty
 ms.date: 05/24/2022
 ms.topic: article
@@ -32,7 +32,7 @@ ms.search.validFrom: 2017-02-28
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-This article describes the **Finance and Operations (Dynamics 365)** mobile app and provides links to resources that can help you implement it in your organization.
+This article describes the **Finance and operations (Dynamics 365)** mobile app and provides links to resources that can help you implement it in your organization.
 
 ## Overview
 
@@ -83,7 +83,7 @@ The following table includes links to resources that can help you implement both
 <tr class="odd">
 <td>1</td>
 <td>System administrator</td>
-<td>Implement the Finance and Operations app in your organization.</td>
+<td>Implement the finance and operations app in your organization.</td>
 <td><ul><li>If you haven&#39;t yet deployed a version of Microsoft Dynamics 365, see <a href="../deployment/deploy-demo-environment.md">Deploy a demo environment</a>.</li><li>To see a list of mobile workspaces that can be used, see <a href="mobile-workspaces-released.md">Mobile workspaces recently released</a>.</li></ul></td>
 </tr>
 <tr class="even">
@@ -138,8 +138,8 @@ The following table includes links to resources that can help you implement both
 <td>User</td>
 <td>Download and install the mobile app.</td>
 <td>
-<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and Operations app for Android</a><BR/>
-<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and Operations app for iOS</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850662">Finance and operations app for Android</a><BR/>
+<a href="https://go.microsoft.com/fwlink/?linkid=850663">Finance and operations app for iOS</a><BR/>
 (Windows Phone unsupported)
 </td>
 </tr>
@@ -158,3 +158,4 @@ The following table includes links to resources that can help you implement both
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

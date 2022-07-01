@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This feature is supported in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) (version 7.2) and later releases.
+> This feature is supported in Microsoft Dynamics 365 Finance, Enterprise edition (July 2017) (version 7.2) and later releases.
 
 ## Introduction
 This article provides a walk-through for application developers who want to help secure analytical workspaces and reports that are delivered by using Microsoft Power BI Embedded. It describes the recommended strategies for securing access to both the reports and the data set, based on viewer access rights. By using the techniques that are described in this article, you can hide reports from users and filter reports to show the data set that is appropriate for a specific user, based on the active company context.
@@ -111,3 +111,4 @@ The reports will now show data as if you're running the USMF company.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -45,9 +45,9 @@ This article lists features that are either new or changed in Microsoft Dynamics
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Dynamics 365 Commerce 10.0.12 includes platform updates. To learn more, see [Platform updates for version 10.0.12 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
+Dynamics 365 Commerce 10.0.12 includes platform updates. To learn more, see [Platform updates for version 10.0.12 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-10-0-12.md).
 
 ### Bug fixes 
 For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=453382&dbType=3&qc=a68cf77635c0ab926e7b1b75c6925c82a23058c524c4d728ba8b30fedaf41746)

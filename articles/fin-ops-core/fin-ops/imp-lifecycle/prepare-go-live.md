@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prepare for go-live
-description: This article provides guidance about how to prepare for the go-live for Finance and Operations apps.
+description: This article provides guidance about how to prepare for the go-live for finance and operations apps.
 author: ClaudiaBetz-Haubold
 ms.date: 06/24/2022
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This article provides guidance about how to prepare for the go-live for Finance and Operations apps.
+This article provides guidance about how to prepare for the go-live for finance and operations apps.
 
 To ensure that the production environment is used for live operations, Microsoft provisions the production instance when the solution is ready and after project readiness has been validated as part of the Go-live Readiness Review with Microsoft. For more information about the environments in your subscription, see the [Licensing guide](https://go.microsoft.com/fwlink/?LinkId=866544&clcid=0x409).
 
@@ -86,7 +86,7 @@ The project team should validate solution readiness. The following prerequisites
 >
 > If you're already in the process of using a Word checklist, you can continue if you plan to submit it before June 20. However, because the portal and the Word checklist include the same questions, we invite you to use the portal.
 
-All Finance and Operations apps customers must complete a Go-live Readiness Review with the [Microsoft FastTrack for Dynamics 365](/dynamics365/fasttrack/) team before production environments can be deployed. The main purpose of the review is to assess project readiness and help you have a smooth and successful go-live experience. LCS project users will receive an email reminder about the Go-live Readiness Review, based on the go-live date in LCS.
+All finance and operations apps customers must complete a Go-live Readiness Review with the [Microsoft FastTrack for Dynamics 365](/dynamics365/fasttrack/) team before production environments can be deployed. The main purpose of the review is to assess project readiness and help you have a smooth and successful go-live experience. LCS project users will receive an email reminder about the Go-live Readiness Review, based on the go-live date in LCS.
 
 The review might require up to three business days for the initial report, plus additional time for any risk mitigation that is required. Determine an appropriate time to start this review, so that you can meet the go-live timeline.
 
@@ -144,3 +144,4 @@ The production environment is sized based on the number of licenses that have be
 After production has been deployed, the project team can apply the deployable package by following the instructions in [Promote an update to production environments](../../dev-itpro/deployment/updateenvironment-newinfrastructure.md#promote-an-update-to-production-environments) and then migrate the data. For data migration, we recommend that you prepare and validate data in a non-production environment and then [copy the sandbox database to production](../../dev-itpro/database/dbmovement-scenario-goldenconfig.md#copy-the-sandbox-database-to-production).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

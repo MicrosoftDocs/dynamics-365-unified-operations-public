@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Manage support experiences for Finance and Operations apps
+title: Manage support experiences for finance and operations apps
 description: This article provides information about using the Support tool to on Microsoft Dynamics Lifecycle Services to manage support incidents. 
 author: kfend
 ms.date: 02/16/2021
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Manage support experiences for Finance and Operations apps
+# Manage support experiences for finance and operations apps
 [!include [banner](../includes/banner.md)]
 
 
@@ -145,3 +145,4 @@ We prefer that you contact Support following the steps in [Open a new incident](
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

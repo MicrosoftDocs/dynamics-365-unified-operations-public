@@ -132,7 +132,7 @@ You can choose how to move your electronic reporting functionality into ER. Howe
 | ER                  | Electronic reporting is an engine that simplifies the creation of electronic reports for information interchange with governments, banks, and other parties. Currently, Electronic reporting supports text, XML, and OpenXML spreadsheet formats, and provides an extension interface to support more formats. |
 | Transformation       | If you have a typical action that must be done on the source of data before it is sent as output to a format, you can introduce a transformation and attach it to format components. Transformation is an ER formula that takes one value as a parameter and returns another value. For example, you have many format fields that contain spaces, and the spaces should be replaced by spaces when the fields are exported. In this case, you can create a transformation that takes a string argument and uses the REPLACE function to do the job. You can then create string components and associate them with that transformation. |
 | Data model           | A data model provides a structure for data. This structure is used to abstractly describe certain business domain areas at sufficient detail to satisfy the reporting requirements in this domain. |
-| Configuration        | A container for either a data model or a format, together with its mappings to data sources, that can be maintained and executed, and that supports versioning. The configuration is the entity that will be imported or exported to organize electronic document format exchange between Finance and Operations instances. |
+| Configuration        | A container for either a data model or a format, together with its mappings to data sources, that can be maintained and executed, and that supports versioning. The configuration is the entity that will be imported or exported to organize electronic document format exchange between finance and operations instances. |
 | Derive action        | An operation that uses a configuration that already exists as a basis to create a new configuration. |
 | Rebase action        | An operation that updates a derived configuration with changes that were introduced in a new version of the base configuration. The version number is selected at the rebase initialization stage. |
 | Update conflict      | A conflict that is discovered during the rebase action, where the new base version contains adjustments of a format/mapping element (name, property, and so on) that has also been adjusted in the derived version. |
@@ -147,3 +147,4 @@ You can choose how to move your electronic reporting functionality into ER. Howe
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

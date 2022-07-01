@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data management overview
-description: This article provides information about data management in Finance and Operations.
+description: This article provides information about data management in finance and operations.
 author: peakerbl
 ms.date: 06/20/2022
 ms.topic: overview
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This article describes how you can use the data management framework to manage data entities and data entity packages in Finance and Operations.
+This article describes how you can use the data management framework to manage data entities and data entity packages in finance and operations.
 
 The data management framework consists of the following concepts:
 
@@ -312,3 +312,4 @@ For enabling flights in a production or sandbox environment, a support case must
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

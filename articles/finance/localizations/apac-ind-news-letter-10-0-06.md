@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-This article includes a summary of the new features and critical bug fixes released in version 10.0.06 for India. You can learn more about the shipped features in the article, [What's new or changed in Finance and Operations version 10.0.6](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md).
+This article includes a summary of the new features and critical bug fixes released in version 10.0.06 for India. You can learn more about the shipped features in the article, [What's new or changed in finance and operations version 10.0.6](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-6.md).
 
 ## New features
 ### Validate non-existent and duplicate records when importing tax setup 

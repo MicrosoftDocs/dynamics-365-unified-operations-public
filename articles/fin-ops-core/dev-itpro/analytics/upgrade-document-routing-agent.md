@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-The solution for managing the print job queue is designed to allow customers to properly scale Dynamics 365 Finance and Operations apps to satisfy high-volume printing requirements. Although public service endpoints used to manage print jobs are backward-compatible, we strongly recommend that customers update **all** existing Document Routing Agent (DRA) clients.
+The solution for managing the print job queue is designed to allow customers to properly scale Dynamics 365 finance and operations apps to satisfy high-volume printing requirements. Although public service endpoints used to manage print jobs are backward-compatible, we strongly recommend that customers update **all** existing Document Routing Agent (DRA) clients.
 
 If you don't update existing installations of the DRA the most current version, you might experience issues such as:
 
@@ -47,7 +47,7 @@ To continue to run the DRA as a Microsoft Windows service, you must have both th
 ![Services snap-in.](media/Services_dialog.png)
 
 ## Uninstall an existing Document Routing Agent
-Open **Programs and Features**, and then find and uninstall **Microsoft Dynamics 365 for Finance and Operations: Document Routing**.
+Open **Programs and Features**, and then find and uninstall **Microsoft Dynamics 365 Finance: Document Routing**.
 
 ![Uninstall or change a program window.](media/Programs_and_Features_dialog.png)
 

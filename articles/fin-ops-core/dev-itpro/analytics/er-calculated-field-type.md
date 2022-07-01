@@ -42,7 +42,7 @@ To complete the examples in this article, you must have the following access:
     - Electronic reporting functional consultant
     - System administrator
 
-- Access to Regulatory Configuration Services (RCS) that have been provisioned for the same tenant as Finance and Operations for one of the following roles:
+- Access to Regulatory Configuration Services (RCS) that have been provisioned for the same tenant as finance and operations for one of the following roles:
 
     - Electronic reporting developer
     - Electronic reporting functional consultant
@@ -90,7 +90,7 @@ In this example, you will create a configuration for the sample company, Litware
             - Sum of tax values.
             - Minimum value of applied tax rate.
 
-    The model mapping in this configuration implements the base data model for any of the ER formats created for this model and executed in Finance and Operations. As a result, the content of the **Tax** and **Gr** data sources is exposed for ER formats such as abstract data sources.
+    The model mapping in this configuration implements the base data model for any of the ER formats created for this model and executed in finance and operations. As a result, the content of the **Tax** and **Gr** data sources is exposed for ER formats such as abstract data sources.
 
     ![Model mapping designer page showing Tax and Gr data sources.](media/er-calculated-field-type-01.png)
 
@@ -349,3 +349,4 @@ You can import reviewed configurations from RCS by using the ER repository of th
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -107,11 +107,11 @@ No, you can't enable the **Financial inventory** option for the **Location** dim
 
 ### Should I enable the Use warehouse management processes option for the storage dimension group?
 
-If you think that you might want to use the advanced warehouse management features in the future, you should enable the **Use warehouse management processes** option. After you save a storage dimension group, you can no longer change the setting of the **Use warehouse management processes** option for it. If you decide to use warehouse management processes later, you will have to create a new warehouse where the option is enabled. There is no automated process that you can use to move all the inventory from one warehouse to another warehouse, or to copy related configurations to a new warehouse.
+If you think that you might want to use the warehouse management processes (WMS) features in the future, you should enable the **Use warehouse management processes** option. After you save a storage dimension group, you can no longer change the setting of the **Use warehouse management processes** option for it. If you decide to use warehouse management processes later, you will have to create a new warehouse where the option is enabled. There is no automated process that you can use to move all the inventory from one warehouse to another warehouse, or to copy related configurations to a new warehouse.
 
-### Can I enable the Use warehouse management processes for the storage dimension group even if I'm not planning to use advanced warehousing?
+### Can I enable the Use warehouse management processes for the storage dimension group even if I'm not planning to use warehouse management processes (WMS)?
 
-Yes, even if you don't plan to use the advanced warehouse management features, you can enable the **Use warehouse management processes** option for the storage dimension group. To create and process transactions, you will have to complete the minimum configuration, such as reservation hierarchies and unit sequence groups. However, the settings for advanced warehousing are generally ignored when you manually process picking lists, packing slips, and product receipts (for example, on the sales order and purchase order pages).
+Yes, even if you don't plan to use the warehouse management processes (WMS) features, you can enable the **Use warehouse management processes** option for the storage dimension group. To create and process transactions, you will have to complete the minimum configuration, such as reservation hierarchies and unit sequence groups. However, the settings for WMS are generally ignored when you manually process picking lists, packing slips, and product receipts (for example, on the sales order and purchase order pages).
 
 ### When should I enable the Physical inventory option for a storage or tracking dimension group?
 

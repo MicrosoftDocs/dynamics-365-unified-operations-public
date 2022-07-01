@@ -39,7 +39,7 @@ This article shows how to use the load planning workbench to create a load for a
 7. Select item **A0001**. **A0001** is enabled for transportation management.  
 8. In the **Site** field, select the drop-down button to open the lookup, then select an item.
 9. In the **Quantity** field, enter a number.
-10. In the **Warehouse** field, type '24' for this example. This warehouse is enabled for transportation management and advanced warehouse management.  
+10. In the **Warehouse** field, type '24' for this example. This warehouse is enabled for transportation management and warehouse management processes (WMS).  
 11. Select **Save**.
 12. Close the page.
 

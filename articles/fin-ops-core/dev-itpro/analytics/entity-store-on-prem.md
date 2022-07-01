@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The cloud version provides several features that allow for deeper integration with Microsoft Power BI. Some of these features haven't yet been implemented for on-premises deployments. However, the availability of Entity Store in on-premises deployments lets customers use PowerBI.com to report on and analyze data. 
 
-This article outlines the analytical capabilities that are available in on-premises deployments that run Microsoft Dynamics 365 for Finance and Operations platform update 26 (May 2019) and later.
+This article outlines the analytical capabilities that are available in on-premises deployments that run Microsoft Dynamics 365 Finance platform update 26 (May 2019) and later.
 
 | Feature/capability                                                           | Cloud     | On-premises (Platform update 26 or later) |
 |------------------------------------------------------------------------------|-----------|-------------------------------------------|
@@ -140,3 +140,4 @@ Note the following additional steps that are specific to on-premises deployments
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

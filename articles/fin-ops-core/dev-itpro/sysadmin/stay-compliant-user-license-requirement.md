@@ -2,7 +2,7 @@
 # required metadata
 
 title: Stay compliant with user licensing requirements
-description: This article provides information about how you can stay compliant with the user licensing requirements for Finance and Operations apps.
+description: This article provides information about how you can stay compliant with the user licensing requirements for finance and operations apps.
 author: peakerbl 
 ms.date: 10/06/2020
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0
 
 [!include [banner](../includes/banner.md)]
 
-This article provides an overview of how customers can stay compliant with the user licensing requirements for Finance and Operations apps, such as Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Commerce.
+This article provides an overview of how customers can stay compliant with the user licensing requirements for finance and operations apps, such as Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Commerce.
 
 The licensing requirements for users are determined by the security roles that are assigned to those users. Security roles are built based on a hierarchy of:
 
@@ -109,7 +109,7 @@ The totals per specific full user license counts aren't divided into *base* lice
 
 ## Additional resources
 
-For information about how to buy and license Finance and Operations apps, see [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
+For information about how to buy and license finance and operations apps, see [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409).
 
 For information about how to assign licenses to users in the Microsoft 365 admin center, see [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users).
 

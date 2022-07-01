@@ -2,7 +2,7 @@
 title: Guidance for dual-write setup
 description: This article describes the scenarios that are supported for dual-write setup.
 author: RamaKrishnamoorthy
-ms.date: 10/12/2020
+ms.date: 06/28/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: tfehr
@@ -23,6 +23,7 @@ You can set up a dual-write connection between a finance and operations environm
 
 + A **finance and operations environment** provides the underlying platform for **finance and operations apps** (for example, Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Human Resources).
 + A **Dataverse environment** provides the underlying platform for **customer engagement apps** (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 column Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).
+
 
 > [!IMPORTANT]
 > The Human Resources module in Dynamics 365 Finance supports dual-write connections, but the Dynamics 365 Human Resources app doesn't.

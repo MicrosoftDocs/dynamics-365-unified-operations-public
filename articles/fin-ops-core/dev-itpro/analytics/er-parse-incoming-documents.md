@@ -87,7 +87,7 @@ Download the following files to complete the task guides mentioned above.
 | Incoming file in .XLSX format - template    | [1099import-template.xlsx](https://download.microsoft.com/download/b/8/b/b8ba3c9c-97c6-4fc2-898f-7701aac6035c/1099import-template.xlsx) |
 | Incoming file in .XLSX format - sample data | [1099import-data.xlsx](https://download.microsoft.com/download/f/f/4/ff4dbce9-8364-4391-adee-877945ff01f7/1099import-data.xlsx)     |
 
-If you have not yet played the following task guide, [ER Create required configurations to import data from an external file](./tasks/er-required-configurations-import-data.md) in the current Finance and Operations application, download the following file.
+If you have not yet played the following task guide, [ER Create required configurations to import data from an external file](./tasks/er-required-configurations-import-data.md) in the current finance and operations application, download the following file.
 
 | Content description    | File                                                            |
 |------------------------|-----------------------------------------------------------------|
@@ -132,7 +132,7 @@ Download the following files to complete the task guide mentioned above.
 | ER format configuration                | [1099formatcsv.xml](https://download.microsoft.com/download/c/0/1/c014b0fa-d4ee-4de6-8f55-fa539df9ce83/1099formatcsv.xml)  |
 | Sample of incoming file in .csv format | [1099entriescsv.csv](https://download.microsoft.com/download/0/0/c/00c7c78c-55d5-46ba-b6ac-971fb9646502/1099entriescsv.csv) |
 
-Download the following file that is required to complete the task guide mentioned above if you have not played the task guide, **ER Create required configurations to import data from an external file for electronic reporting** in the current Finance and Operations application.
+Download the following file that is required to complete the task guide mentioned above if you have not played the task guide, **ER Create required configurations to import data from an external file for electronic reporting** in the current finance and operations application.
 
 | Title                  | File name                                                       |
 |------------------------|-----------------------------------------------------------------|
@@ -140,3 +140,4 @@ Download the following file that is required to complete the task guide mentione
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

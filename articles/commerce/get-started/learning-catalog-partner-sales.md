@@ -26,7 +26,7 @@ Are you responsible for helping your customers buy the right solution?
 
 The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs.
 
-For training about features shared with other Finance and Operations apps, see the [Dynamics 365 Finance Learning Catalog](../../finance/get-started/learning-catalog-partner-sales.md).
+For training about features shared with other finance and operations apps, see the [Dynamics 365 Finance Learning Catalog](../../finance/get-started/learning-catalog-partner-sales.md).
 
 ## Get started<a name="get-started"></a>
 
@@ -38,3 +38,4 @@ For training about features shared with other Finance and Operations apps, see t
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
