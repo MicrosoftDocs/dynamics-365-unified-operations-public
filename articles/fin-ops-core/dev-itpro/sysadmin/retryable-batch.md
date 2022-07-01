@@ -18,7 +18,7 @@ ms.search.validFrom: 2021-05-31
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how retries are implemented on batch jobs in Finance and Operations apps, and how you can enable automatic retries on batch jobs when transient failures occur. Currently, the batch platform provides three ways to enable batch resiliency and prevent transient failures.
+This article describes how retries are implemented on batch jobs in finance and operations apps, and how you can enable automatic retries on batch jobs when transient failures occur. Currently, the batch platform provides three ways to enable batch resiliency and prevent transient failures.
 
 ## Retry the batch job task, regardless of the error type
 
@@ -29,7 +29,7 @@ We recommended that you use this option when you want a batch job task always to
 
 ## Retry the batch job task when transient SQL Server errors occur
 
-Currently, if Finance and Operations apps experience a brief loss of connection to Microsoft SQL Server, all batch jobs that are running fail. This behavior disrupts business processes. Because connection loss is inevitable in a cloud service, Microsoft enables automated retries when failures of this type occur.
+Currently, if finance and operations apps experience a brief loss of connection to Microsoft SQL Server, all batch jobs that are running fail. This behavior disrupts business processes. Because connection loss is inevitable in a cloud service, Microsoft enables automated retries when failures of this type occur.
 
 By default, all batch classes that are idempotent and produce the same results even after multiple runs are retryable. You can set an idempotency flag in the batch class instance by using **classinstance.BatchInfo().parmIdempotent(boolean)**. 
 
@@ -117,3 +117,4 @@ In this context, *idempotent* means that a retry won't change or affect the over
 ### Can I change the maximum number of retries and the retry interval?
 
 The **BatchRetryable** interface enables transient SQL connection issues to be handled. It's mainly controlled by the framework. Customers can't update settings for **BatchRetryable**, such as the maximum number of retries and the retry interval.
+
