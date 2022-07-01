@@ -68,7 +68,7 @@ A Microsoft Cloud Solution Provider can work closely with you to understand the 
 
 ### Buy through a Dynamics partner (on-premises)
 
-You must work with a partner to purchase finance and operations on-premises. For more information, see [Buy Finance + Operations (on-premises)](purchase-on-premises.md).
+You must work with a partner to purchase Finance + Operations (on-premises). For more information, see [Buy Finance + Operations (on-premises)](purchase-on-premises.md).
 
 ### Buy through volume licensing (cloud or on-premises)
 
