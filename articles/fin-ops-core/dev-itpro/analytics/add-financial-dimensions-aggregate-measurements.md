@@ -22,7 +22,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: milindav
 ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: Platform update 8 for Finance and Operations
+ms.dyn365.ops.version: Platform update 8 for finance and operations
 ---
 
 # Add financial dimensions to aggregate measurements
@@ -36,7 +36,7 @@ Financial dimensions are user-defined configuration data that enables the ledger
 After financial dimension fields are included in the report, you can share the report with other users. Those other users can modify existing visuals, such as charts, by including all or some of the financial dimension fields.
 
 > [!NOTE]
-> This feature is available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). Platform update 8 or later is also required. 
+> This feature is available in Microsoft Dynamics 365 Finance, Enterprise edition (July 2017). Platform update 8 or later is also required. 
 
 ## How does this feature work?
 

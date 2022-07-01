@@ -91,7 +91,7 @@ If you ever restore your database from a backup or copy the database from anothe
 
 ### Stop services
 
-The following Microsoft Windows services will have open connections to the Finance and Operations database. Therefore, you must use Microsoft Remote Desktop to connect to all the computers in the environment and then use services.msc to stop these services.
+The following Microsoft Windows services will have open connections to the finance and operations database. Therefore, you must use Microsoft Remote Desktop to connect to all the computers in the environment and then use services.msc to stop these services.
 
 - World wide web publishing service (on all Application Object Servers \[AOS\] computers)
 - Batch Management Service (on non-private AOS computers only)
@@ -679,7 +679,7 @@ First, follow these steps to export the report designs from Report designer.
 2. Select the building block group to export, and then select **Export**.
 
     > [!NOTE]
-    > For Finance and Operations, only one building block group is supported: **Default**.
+    > For finance and operations, only one building block group is supported: **Default**.
 
 3. Select the report definitions to export:
 
@@ -711,3 +711,4 @@ Next, import your report designs from Report designer by using the file that was
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
