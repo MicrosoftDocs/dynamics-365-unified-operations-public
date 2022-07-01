@@ -217,7 +217,7 @@ moving window thereby, always leaving the history for the specified number of da
 ## Job history clean up and archival 
 The job history clean up and archival functionality replaces the previous versions of the clean-up functionality. This section will explain these new capabilities.
 
-One of the main changes to the cleanup functionality is the use of the system batch job for cleaning up the history. The use of the system batch job allows Finance and Operations apps to have the clean-up batch job automatically scheduled and running as soon as the system is ready. It is no longer required to schedule the batch job manually. In this default execution mode, the batch job will execute every hour starting at midnight and will retain the execution history for the most recent 7 days. The purged history is archived for future retrieval. Starting with version 10.0.20, this feature in always on.
+One of the main changes to the cleanup functionality is the use of the system batch job for cleaning up the history. The use of the system batch job allows finance and operations apps to have the clean-up batch job automatically scheduled and running as soon as the system is ready. It is no longer required to schedule the batch job manually. In this default execution mode, the batch job will execute every hour starting at midnight and will retain the execution history for the most recent 7 days. The purged history is archived for future retrieval. Starting with version 10.0.20, this feature in always on.
 
 The second change in the clean-up process is the archival of the purged execution history. The clean-up job will archive the deleted records to the blob storage that DIXF uses for regular integrations. The archived file will be in the DIXF package format and will be available for 7 days in the blob during which time it can be downloaded. The default longevity of 7 days for the archived file can be changed to a maximum of 90 days in the parameters.
 
@@ -243,3 +243,4 @@ To download the archived execution history, go to the data management workspace 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
