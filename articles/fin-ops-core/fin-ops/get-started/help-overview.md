@@ -101,7 +101,7 @@ For more information, see the [Docs contributor guide](/contribute), which is pu
 
 A task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a task guide from the **Help** pane. When you first select a task guide, the **Help** pane will show the step-by-step instructions for the task. Localized task guides are available.
 
-Microsoft released task guide libraries for product versions through the December 2017 release of Dynamics 365 Finance. The [Accessing task guides from the Help pane](#accessing-task-guides-from-the-help-pane) section of this article explains how to find the correct task guides for your product.
+Microsoft released task guide libraries for product versions through the December 2017 release of Dynamics 365 Finance and Operations. The [Accessing task guides from the Help pane](#accessing-task-guides-from-the-help-pane) section of this article explains how to find the correct task guides for your product.
 
 ![Task guide reading view.](./media/task-guide-ops.png)
 
