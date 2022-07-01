@@ -55,7 +55,7 @@ At the organization or tenant level, anyone who has the Global Administrator rol
 In addition, admins can create additional LCS implementation projects by following the steps in [Create multiple LCS projects](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md#create-multiple-lcs-projects).
 
 ### Organization contributor
-Contributors are other users from your Azure AD tenant, but they don't have admin capabilities. Contributors can create projects. They can also create the first implementation project if they are the first user of their tenant to sign in, and if they do so after the purchase of applicable Finance and Operations apps licenses.
+Contributors are other users from your Azure AD tenant, but they don't have admin capabilities. Contributors can create projects. They can also create the first implementation project if they are the first user of their tenant to sign in, and if they do so after the purchase of applicable finance and operations apps licenses.
 
 ### Delegated admin
 The delegated admin role is identical to the admin role, except the user is from a Microsoft partner tenant and has an established relationship with the customer organization. The delegated admin can sign in on behalf of the customer, and can perform required operations and provide required support.
@@ -129,3 +129,4 @@ If you have an implementation project, you will have the option to specify proje
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

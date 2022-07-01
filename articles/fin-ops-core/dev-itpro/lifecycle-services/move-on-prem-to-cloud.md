@@ -36,12 +36,12 @@ If you don't already have cloud subscription licenses, work with your cloud serv
 
 ## Configure LCS cloud implementation project
 
-If no Finance and Operations cloud-named user subscription licenses have previously been activated on the Azure AD tenant, a new Microsoft Dynamics Lifecycle Services (LCS) cloud implementation project is automatically provisioned. Otherwise, you must open a support request to have an LCS cloud implementation project created. For more information, see [Multiple LCS projects and production environments on one Azure AD tenant](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md).
+If no finance and operations cloud-named user subscription licenses have previously been activated on the Azure AD tenant, a new Microsoft Dynamics Lifecycle Services (LCS) cloud implementation project is automatically provisioned. Otherwise, you must open a support request to have an LCS cloud implementation project created. For more information, see [Multiple LCS projects and production environments on one Azure AD tenant](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md).
 
 After your LCS cloud implementation project has been created, you must fully configure it. As part of this configuration, you must add users, an Azure DevOps association, and subscription estimates, fill in the Asset library and Business process modeler (BPM), and more.
 
 > [!NOTE]
-> While you're onboarding your project, you must select **AX 2012 Upgrade** as the source system, so that a singleton Azure SQL database will be used for your sandbox instead of an elastic pool. Eventually, a more appropriate option will be available, such as **On-premises Finance and Operations**.
+> While you're onboarding your project, you must select **AX 2012 Upgrade** as the source system, so that a singleton Azure SQL database will be used for your sandbox instead of an elastic pool. Eventually, a more appropriate option will be available, such as **On-premises finance and operations**.
 
 ## Complete development and testing of updated integrations
 
@@ -113,7 +113,7 @@ You should consider developing your updated interfaces in such a way that they c
 Document handling attachments for Finance + Operations (on-premises) environments are stored in a file share. However, the cloud version doesn't support this file share. You can use the following procedure to copy the attachments to the Azure storage account for your sandbox environment and update the corresponding metadata in the database. For subsequent promotion to production, you can request that Dynamics Support Engineering copy the attachments from your sandbox to production.
 
 1. <!--HERE-->Upload a copy of the document handling attachment files from the on-premises production file share to a temporary folder on one of the sandbox instances of Application Object Server (AOS). For example, you can upload a zip file of the attachments and unpack it on the target. If you don't have remote desktop access (for example, for a self-service environment), you can use a different virtual machine (VM) instead. For reasonable conversion performance, this VM should be in the same Azure datacenter as the target sandbox. If you aren't using the AOS instance, you must add the VM to an allow list for access to the sandbox's SQL database instance.
-2. Open a support request to get the name of the sandbox Azure storage account and a time-limited shared access signature token for the documents container. Update the corresponding placeholders in the Windows PowerShell script that is run in the next step. Also update the placeholders for your temporary folder, and for your Finance and Operations transactional database, by using the environment details in LCS.
+2. Open a support request to get the name of the sandbox Azure storage account and a time-limited shared access signature token for the documents container. Update the corresponding placeholders in the Windows PowerShell script that is run in the next step. Also update the placeholders for your temporary folder, and for your finance and operations transactional database, by using the environment details in LCS.
 3. Run the following Windows PowerShell script on the sandbox AOS instance or other VM to upload the document handling files to the storage account and create the required metadata for each file.
 
     ```powershell
@@ -191,3 +191,4 @@ Document handling attachments for Finance + Operations (on-premises) environment
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

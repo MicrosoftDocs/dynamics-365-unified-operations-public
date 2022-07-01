@@ -472,8 +472,8 @@ The following tax reporting requirements are out of scope for fiscal books for t
 - Requirements from regulatory agencies or autarchies, such as SUFRAMA, ANVISA, and ANATEL
 - IN86
 - GIA for states other than São Paulo
-- Data upgrade for fiscal books from AX 2009 to AX 2012 R3 and Finance and Operations
-- Data upgrade of fiscal documents from AX 2009 to AX 2012 R3 and Finance and Operations
+- Data upgrade for fiscal books from AX 2009 to AX 2012 R3 and finance and operations
+- Data upgrade of fiscal documents from AX 2009 to AX 2012 R3 and finance and operations
 
 ## References
 
@@ -518,3 +518,4 @@ The [Microsoft Dynamics Localization Portal](/dynamics/s-e/) provides informatio
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

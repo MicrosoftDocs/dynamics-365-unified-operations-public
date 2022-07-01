@@ -30,11 +30,11 @@ ms.dyn365.ops.version: 10.0.12
 
 The performance of queries that are used to calculate on-hand inventory is affected by the number of records in the tables that are involved. One way to help improve the performance is to reduce the number of records that the database must consider.
 
-This article describes the on-hand entries cleanup job, which deletes unneeded records in the InventSum and WHSInventReserve tables. These tables store on-hand information for items that are enabled for warehouse management processing. (These items are referred to as WHS items.) Deletion of these records can significantly improve the performance of on-hand calculations.
+This article describes the on-hand entries cleanup job, which deletes unneeded records in the `InventSum` and `WHSInventReserve` tables. These tables store on-hand information for items that are enabled for warehouse management processing. (These items are referred to as WMS items.) Deletion of these records can significantly improve the performance of on-hand calculations.
 
 ## What the cleanup job does
 
-The on-hand entries cleanup job deletes any records in the WHSInventReserve and InventSum tables where all the field values are *0* (zero). These records can be deleted because they don't contribute to the on-hand information. The job deletes only records that are below the **Location** level.
+The on-hand entries cleanup job deletes any records in the `WHSInventReserve` and `InventSum` tables where all the field values are *0* (zero). These records can be deleted because they don't contribute to the on-hand information. The job deletes only records that are below the **Location** level.
 
 If negative physical inventory is allowed, the cleanup job might not be able to delete all the relevant entries. The reason for this limitation is that the job must allow for a special scenario where a license plate has multiple serial numbers, and one of those serial numbers has become negative. For example, the system will have zero on hand at the license plate level when a license plate has +1 pcs of serial number 1 and –1 pcs of serial number 2. For this special scenario, the job does a breadth-first deletion, where it tries to delete from lower levels first.
 

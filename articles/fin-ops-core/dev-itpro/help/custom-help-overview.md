@@ -34,10 +34,10 @@ ms.dyn365.ops.version: Operations
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-Finance and Operations apps are often customized and extended to fit an organization's needs. If your solution is based on Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce, you can connect solution-specific and customer-specific Help content to the [Help pane](../../fin-ops/get-started/help-overview.md#in-product-help) in the Finance and Operations client. This article describes the main steps and decision points.
+Finance and operations apps are often customized and extended to fit an organization's needs. If your solution is based on Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce, you can connect solution-specific and customer-specific Help content to the [Help pane](../../fin-ops/get-started/help-overview.md#in-product-help) in the finance and operations client. This article describes the main steps and decision points.
 
 > [!NOTE]
-> Users of Finance and Operations apps can create custom task guides to supplement conceptual content that describes the functionality of their solution. These conceptual descriptions are also referred to as Help and can be provided by Microsoft, partners, and an organization itself. For more information, see [Help system](../../fin-ops/get-started/help-overview.md).
+> Users of finance and operations apps can create custom task guides to supplement conceptual content that describes the functionality of their solution. These conceptual descriptions are also referred to as Help and can be provided by Microsoft, partners, and an organization itself. For more information, see [Help system](../../fin-ops/get-started/help-overview.md).
 
 The following illustration, and this article in general, use the term *Help* for conceptual descriptions that either include or exclude how-to guides. The term *task guides* refers to in-product task guides.
 
@@ -49,7 +49,7 @@ Custom Help content typically originates from one of three sources:
 
 - Microsoft documentation repositories (repos)
 
-    You can use the [HTMLFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool from the Custom Help Toolkit to clone content from any of the Finance and Operations repositories and generate corresponding HTML files. Those files can then be updated with content that is specific to your solution.
+    You can use the [HTMLFromRepoGenerator](custom-help-toolkit-HtmlFromRepoGenerator.md) tool from the Custom Help Toolkit to clone content from any of the finance and operations repositories and generate corresponding HTML files. Those files can then be updated with content that is specific to your solution.
 
 - Existing customized Dynamics AX content
 
@@ -104,7 +104,7 @@ The [Deploy custom Help to Azure](walkthrough-help-azure.md) article describes a
 [Deploy custom Help to Azure](walkthrough-help-azure.md)  
 [Custom Help Toolkit](custom-help-toolkit.md)  
 [Language and locale descriptors in the product and in Help](language-locale.md)  
-[Configure the Help experience for Finance and Operations apps](../../fin-ops/get-started/help-connect.md)  
+[Configure the Help experience for finance and operations apps](../../fin-ops/get-started/help-connect.md)  
 [Help system](../../fin-ops/get-started/help-overview.md)
 
 

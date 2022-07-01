@@ -57,10 +57,11 @@ This article lists features that are new or changed for Microsoft Dynamics 365 H
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Dynamics 365 Finance 10.0.26 includes platform updates. To learn more, see [Platform updates for version 10.0.26 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
+Dynamics 365 Finance 10.0.26 includes platform updates. To learn more, see [Platform updates for version 10.0.26 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md).
 
 ### Bug fixes
 
 For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=662864).
+

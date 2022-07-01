@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.28
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.28. This version has a build number of 10.0.1227 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.28. This version has a build number of 10.0.1264 and is available on the following schedule:
 
 - **Preview of release:** May 2022
 - **General availability of release (self-update):** July 2022
@@ -50,7 +50,7 @@ The following table lists the features that are included in this release. We mig
 
 ## Additional resources
 
-Dynamics 365 Finance 10.0.28 includes platform updates. To learn more, see [Platform updates for version 10.0.28 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).
+Dynamics 365 Finance 10.0.28 includes platform updates. To learn more, see [Platform updates for version 10.0.28 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).
 
 ### Bug fixes
 
@@ -75,3 +75,4 @@ For breaking changes that only affect compilation time, but are binary compatibl
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

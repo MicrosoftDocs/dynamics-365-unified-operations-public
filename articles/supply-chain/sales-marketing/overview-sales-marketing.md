@@ -127,7 +127,7 @@ A pro forma invoice is an invoice that is prepared as an estimate of the actual 
 #### Blogs
 
 You can find an overview of a sales process in the post
-[How sales work in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
+[How sales work in Dynamics 365 Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

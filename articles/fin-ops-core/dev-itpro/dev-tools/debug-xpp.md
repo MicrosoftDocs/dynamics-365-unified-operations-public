@@ -44,7 +44,7 @@ To debug X++ code, follow these steps.
 
    [![Hover.](./media/34_DevoToolsConcept.png)](./media/34_devotoolsconcept.png)
 
-   Another tool that is specific to Finance and Operations applications is the Infolog. Often, **info()** statements are added to code to log status messages while the application is running. You can view these Infolog messages directly in Visual Studio. On the **View** menu, click **Infolog**.
+   Another tool that is specific to finance and operations applications is the Infolog. Often, **info()** statements are added to code to log status messages while the application is running. You can view these Infolog messages directly in Visual Studio. On the **View** menu, click **Infolog**.
 
    [![Infolog.](./media/35_DevoToolsConcept.png)](./media/35_devotoolsconcept.png)
 
@@ -126,3 +126,4 @@ Put a breakpoint on the print statements by pressing F9 while that statement is 
 The **Immediate** window is a debugger feature that lets you enter expressions and statements to evaluate at any given time. This feature isn't implemented in the X++ stack. However, you can still benefit from the immediate window. The snippets must be expressed in C\#, not in X++.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

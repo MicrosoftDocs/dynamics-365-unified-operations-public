@@ -2,7 +2,7 @@
 # required metadata
 
 title: Golden configuration promotion
-description: This article explains a golden configuration promotion for Finance and Operations.
+description: This article explains a golden configuration promotion for finance and operations.
 author: LaneSwenka
 ms.date: 09/17/2021
 ms.topic: article
@@ -227,3 +227,4 @@ Are you looking for more tools to help you prepare backup files from your develo
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

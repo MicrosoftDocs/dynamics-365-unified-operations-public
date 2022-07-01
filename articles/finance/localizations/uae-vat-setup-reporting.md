@@ -36,7 +36,7 @@ Registered businesses and traders will charge VAT to all their customers at the 
 
 ## Overview
 
-Standard sales tax functionality in Finance and Operations meets a majority of the legislative requirements of the UAE VAT law. To align the UAE VAT localization with UAE requirements for VAT reporting, the following country-specific enhancements have been added to the localization:
+Standard sales tax functionality in finance and operations meets a majority of the legislative requirements of the UAE VAT law. To align the UAE VAT localization with UAE requirements for VAT reporting, the following country-specific enhancements have been added to the localization:
 
 - The legal entity configuration has been extended so that it includes additional fields that are required for VAT reporting.
 - VAT reverse charge functionality has been made available for the UAE (**ARE** country/region context) to correctly record taxable domestic operations in Gulf Cooperation Council (GCC) territory.
@@ -67,7 +67,7 @@ For more information about the patterns that are used in localized solutions, se
 
 ## Configure VAT for a legal entity
 
-The VAT declaration and the FAF require that additional information be set up in the configuration of a legal entity. In Finance and Operations, go to **Organization administration** \> **Organizations** \> **Legal entities**, and then, on the **Value added tax** FastTab, set the following fields:
+The VAT declaration and the FAF require that additional information be set up in the configuration of a legal entity. In finance and operations, go to **Organization administration** \> **Organizations** \> **Legal entities**, and then, on the **Value added tax** FastTab, set the following fields:
 
 - **Taxable person name** – Electronic VAT reports require the name of the taxable person. Names in English and Arabic will be filled in on reports. If the UI language of the legal entity is set to English, the **Known as** field on the **Global address book** page can be used to store names in another language, such as Arabic.
 - **Tax agency name** and **Tax agent name** – The tax agency name, tax agency number, tax agent name, and tax agent approval number are required when electronic VAT reports are prepared by a contracted tax agent or vendor.
@@ -258,3 +258,4 @@ To achieve consistent printout results, other data in the system should be set u
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

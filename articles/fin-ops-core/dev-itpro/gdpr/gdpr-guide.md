@@ -2,7 +2,7 @@
 # required metadata
 
 title: General Data Protection Regulation overview
-description: This article provides information about the user log functionality in Finance and Operations.
+description: This article provides information about the user log functionality in finance and operations.
 author: ToddLefor
 ms.date: 07/23/2019
 ms.topic: overview
@@ -59,7 +59,7 @@ To determine responsibilities for compliance, the GDPR identifies the following 
 + **C1** – C1 is a Microsoft direct customer (IT Admin in the Enterprise Cloud).
 + **C2** – C2 is C1's customer.
 
-For Finance and Operations apps, Microsoft acts as a processor. As a data processor, Finance and Operations provides processes and features that help you comply with your GDPR obligations as a data controller.
+For finance and operations apps, Microsoft acts as a processor. As a data processor, finance and operations provides processes and features that help you comply with your GDPR obligations as a data controller.
 
 The following illustration shows the flow of data from your customer to the application database, and the roles that you and Microsoft play in that process. For each application, the controller is the tenant administrator, and Microsoft is the processor. In this scenario, the data is sent to the processor (Microsoft), who then processes the data by storing it, retrieving it, sorting it, and so on.
 
@@ -141,7 +141,7 @@ When a data subject chooses to submit a DSR, the data subject makes the request 
 </td>
 <td>
 <ul>
-<li>Uses Finance and Operations to locate the data and fulfill the request. </li>
+<li>Uses finance and operations to locate the data and fulfill the request. </li>
 <li>Writes a customization.</li>
 <li>Reaches out to third parties for shared-controller DSRs.</li>
 <li>Reaches out to Microsoft for activity data.</li> 
@@ -203,7 +203,7 @@ When data is located, use in-product features to correct the data where the prod
 
 \*You might find that some data that qualifies as personal data can't be modified directly. Typically, this data is part of a financial transaction or other business data that is kept "as is" for compliance with financial laws (for example, tax laws), prevention of fraud (such as security audit trail), or compliance with industry certifications.
 
-\** GDPR is not a law exclusive of all other laws. As an enterprise resource planning system, Finance and Operations does not allow for modification of certain business or transactional data, and will not endorse nor provide functionality for the modification of business data that is necessary for compliance with other laws or certifications. Finance and Operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
+\** GDPR is not a law exclusive of all other laws. As an enterprise resource planning system, finance and operations doesn't allow for modification of certain business or transactional data, and will not endorse nor provide functionality for the modification of business data that is necessary for compliance with other laws or certifications. Finance and operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
 
 
 ### Right to be forgotten\*
@@ -214,7 +214,7 @@ An organization might decide to take any of the following actions in response to
 + Anonymize the personal data where the product enables that action directly.
 + Author a customization to erase/modify the personal data.
 
-\* GDPR is not a law exclusive of all other laws. As an enterprise resource planning system, Finance and Operations does not allow for deletion of certain business or transactional data, and will not endorse nor provide functionality for the deletion of business data that is necessary for compliance with other laws or certifications. Finance and Operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
+\* GDPR is not a law exclusive of all other laws. As an enterprise resource planning system, finance and operations does not allow for deletion of certain business or transactional data, and will not endorse nor provide functionality for the deletion of business data that is necessary for compliance with other laws or certifications. Finance and operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
 
 ### Right to port
 
@@ -237,7 +237,7 @@ An organization might decide to take the following action in response to a DSR r
 
 + Remove the customer from, for example, a marketing campaign.
 
-\* GDPR is not a law exclusive of all other laws. As an enterprise resource planning system, Finance and Operations does not allow for restricted processing of certain business or transactional data, and will not endorse nor provide functionality for the restriction of processing of business data that is necessary for compliance with other laws or certifications. Finance and Operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
+\* GDPR is not a law exclusive of all other laws. As an enterprise resource planning system, finance and operations does not allow for restricted processing of certain business or transactional data, and will not endorse nor provide functionality for the restriction of processing of business data that is necessary for compliance with other laws or certifications. Finance and operations will not provide support for modifications/customizations or other actions that result in the corruption of referential or business data integrity.
 
 
 ## Controller considerations
@@ -248,15 +248,15 @@ Controllers can use the following information to complete DSR requests.
 
 + **Data inventory and tagging** – Microsoft has enabled a tagging infrastructure that developers and customers can use. Each data field that is defined in metadata contains a classification property that has a suggested value that the controller can confirm or change to any value or term they choose in order to identify data that they deem fits within the definition of personal data.
 + **Data flow diagram** – Microsoft will publish a data flow diagram that identifies flows of data between systems in the customers production environments.
-+ **Person search report** – Finance and Operations includes the Person search report, which can be used to gather information in support of a request for a copy of the requestor's personal information. 
++ **Person search report** – Finance and operations includes the Person search report, which can be used to gather information in support of a request for a copy of the requestor's personal information. 
 
 ## Activity and diagnostic information
 
 The controller can make DSR requests regarding telemetry data by using the [Microsoft Enterprise Privacy Portal](https://www.microsoft.com/trustcenter/privacy). Some telemetry data that we collect is in system generated logs. Without additional information or your assistance, the user's identity is anonymous.
 
-## Representation of a person in Finance and Operations
+## Representation of a person in finance and operations
 
-Finance and Operations has a common [Global address book](../../fin-ops/organization-administration/overview-global-address-book.md). Typically, every time that you add a contact, customer, user, worker, or other person in your system, you first create an address book entry for that person. Each person in the address book is referred to as a party and is assigned a PartyID. The person also takes on a role in the system, such as Customer, User, or Worker, and has a role ID: CustID, UserID, WorkerID, and so on.
+Finance and operations has a common [Global address book](../../fin-ops/organization-administration/overview-global-address-book.md). Typically, every time that you add a contact, customer, user, worker, or other person in your system, you first create an address book entry for that person. Each person in the address book is referred to as a party and is assigned a PartyID. The person also takes on a role in the system, such as Customer, User, or Worker, and has a role ID: CustID, UserID, WorkerID, and so on.
 
 ![Data model for the Global address book.](../media/gdpr-address-data-model.jpg)
 
@@ -301,7 +301,7 @@ Some organizations conduct their activities only through business-to-business re
 + If a master record has transactional data associated with it, it can't be deleted.
 + Similarly, transactions that have been posted or completed can't be deleted.
 
-### Reasons why Finance and Operations might not support modifying or deleting data out of the box
+### Reasons why finance and operations might not support modifying or deleting data out of the box
 
 The following table lists several reasons why data modifications might be restricted.
 
@@ -331,7 +331,7 @@ Personal data might also be contained in other roles that aren't listed here. Pa
 
 ## Detailed inventory
 
-As you use Finance and Operations apps, you might find that you generate or collect large amounts of data that resides in multiple data stores. To help you make sense of where your data resides, we've introduced a data marker for each piece of data in our data stores. This marker is called "Asset Classification," and it can be used to identify or track personal data. Any data that you collect has been described as "customer content." Some customer content might contain personal data, and some customer content might contain business data. You can choose to treat all customer content as personal data, or you can change the classification yourself, so that you can identify and track any data that you feel is considered "Personal Data." Although Microsoft has a supplied a set of default classifications, you're free to use any classification or identifiers that you choose.
+As you use finance and operations apps, you might find that you generate or collect large amounts of data that resides in multiple data stores. To help you make sense of where your data resides, we've introduced a data marker for each piece of data in our data stores. This marker is called "Asset Classification," and it can be used to identify or track personal data. Any data that you collect has been described as "customer content." Some customer content might contain personal data, and some customer content might contain business data. You can choose to treat all customer content as personal data, or you can change the classification yourself, so that you can identify and track any data that you feel is considered "Personal Data." Although Microsoft has a supplied a set of default classifications, you're free to use any classification or identifiers that you choose.
 
 <!--
 <Link to documentation on how to modify asset classifications>
@@ -384,3 +384,4 @@ When you've completed your entries in the system parameters, the link to your or
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

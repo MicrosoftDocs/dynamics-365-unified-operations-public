@@ -24,7 +24,7 @@ ASNs can help warehouse workers learn what is arriving when. Therefore, they can
 This article presents a collection of scenarios that show, through examples, how to work with ASN files.
 
 > [!IMPORTANT]
-> *Inbound ASN* import applies only to items that are enabled for advanced warehouse management (WMS). Before you receive an ASN, a purchase order must be registered in the system against the vendor who is sending that ASN.
+> *Inbound ASN* import applies only to items that are enabled for warehouse management processes (WMS). Before you receive an ASN, a purchase order must be registered in the system against the vendor who is sending that ASN.
 
 ## Inbound ASN V3 entity
 

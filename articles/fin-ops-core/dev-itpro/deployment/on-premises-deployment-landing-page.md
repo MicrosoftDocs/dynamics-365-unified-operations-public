@@ -56,7 +56,7 @@ You can deploy Dynamics 365 Finance + Operations (on-premises). When you choose 
 - [Import Electronic reporting (ER) configurations](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Document generation, publishing, and printing in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
 - [Configure proxies for on-premises environments](onprem-reverseproxy.md)
-- [Set up technical support for Finance and Operations apps](../lifecycle-services/support-experience.md)
+- [Set up technical support for finance and operations apps](../lifecycle-services/support-experience.md)
 - [Client internet connectivity](../user-interface/client-disconnected.md)
 - [Apply updates to on-premises deployments](apply-updates-on-premises.md)
 - [Redeploy on-premises environments](redeploy-on-prem.md)
@@ -76,9 +76,10 @@ You can deploy Dynamics 365 Finance + Operations (on-premises). When you choose 
 - [Scripts for resolving issues in on-premises environments](onprem-tsg-implementations.md)
 - [Certificate rotation](certificate-rotation-on-prem.md)
 - [On-premises diagnostics](on-premises-diagnostics.md)
-- [Removed or deprecated features for Finance and Operations](../migration-upgrade/deprecated-features.md)
+- [Removed or deprecated features for finance and operations](../migration-upgrade/deprecated-features.md)
 - [Software lifecycle policy and on-premises releases](../migration-upgrade/on-prem-version-update-policy.md)
  
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -34,7 +34,7 @@ ms.search.validFrom: 2016-11-30
 
 This article provides information about the **Sales orders** mobile workspace. This workspace helps you stay up to date about your sales orders anywhere and anytime. 
 
-This mobile workspace is intended to be used with the Finance and Operations (Dynamics 365) mobile app.
+This mobile workspace is intended to be used with the finance and operations (Dynamics 365) mobile app.
 
 ## Overview
 The **Sales orders** mobile workspace lets you view detailed information about each sales order. This information includes the status of the order, contact information for the customer, and contact information for the order taker. The **Sales orders** mobile workspace provides an instant view of sales orders. You can view all sales orders, view sales orders by customer, or view information about a specific sales order. 
@@ -123,7 +123,7 @@ If Dynamics 365 for Operations version 1611 with platform update 3 or later has 
 </table>
 
 ## Download and install the mobile app
-Download and install the Finance and Operations (Dynamics 365) mobile app:
+Download and install the finance and operations (Dynamics 365) mobile app:
 
 -   [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -148,3 +148,4 @@ Download and install the Finance and Operations (Dynamics 365) mobile app:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

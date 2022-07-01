@@ -46,7 +46,7 @@ The following features are included in this release. Some of the listed features
 | Feature area | Feature | More information | Enabled by  |
 |----|----|----|----|
 | Global address book | Define a default state/province for each country/region in address setup | You can now define a default state/province for each country/region in the address setup for the global address book. When a default state/province is set, it will be the default value entered in state/province fields when you create a new county or city record for that country/region. For more information, see [Address setup](../../fin-ops-core/fin-ops/organization-administration/global-address-book-address-setup.md) | Enabled by default |
-|Tax Calculation    | [Integration with free text invoice](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/tax-calculation-service--integration-free-text-invoice)   | [Tax Calculation integration with Finance and Operations](/dynamics365/finance/localizations/tax-calculation-data-model-overview)   | Parameter   |
+|Tax Calculation    | [Integration with free text invoice](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/tax-calculation-service--integration-free-text-invoice)   | [Tax Calculation integration with finance and operations](/dynamics365/finance/localizations/tax-calculation-data-model-overview)   | Parameter   |
 |Electronic Invoicing    | [Configurable e-invoice submission to Italian SDI system](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/electronic-invoicing-service-configurable-e-invoice-submission-italian-sdi-sistema-di-interscambio-system-preview)   | [Electronic invoicing overview](/dynamics365/finance/localizations/e-invoicing-service-overview)   | Feature management   |
 |   Accounts payable  | [Vendor open transactions report](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/open-vendor-transaction-report)  |  [Vendor invoices overview](../accounts-payable/vendor-invoices-overview.md) |  Feature management   |
 |  Accounts payable  | [Create invoice lines based on the quantity option parameter in Accounts payable](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-finance/create-invoice-lines-based-quantity-option-parameter-accounts-payable)  | [Generate invoice lines when you import vendor invoices](../accounts-payable/auto-create-invc-lines-at-import.md) | Enabled by default |
@@ -67,8 +67,8 @@ The following table lists the feature enhancements included in this release. Eac
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
-Dynamics 365 Finance 10.0.23 includes platform updates. To learn more, see [Platform updates for version 10.0.23 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md). 
+### Platform updates for finance and operations apps
+Dynamics 365 Finance 10.0.23 includes platform updates. To learn more, see [Platform updates for version 10.0.23 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md). 
 
 ### Bug fixes 
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=627874). The following issues are fixed in this release.
@@ -79,7 +79,7 @@ For information about the bug fixes included in this update, sign in to Lifecycl
 | Date filter on Transaction log   | Oftentimes you might restart a consolidation process for a date range while the process is still running. This can happen if you believe the process wasn’t started correctly, or that it became stalled after it was started. When the process is restarted, the same date range is entered for the consolidation while the process that had been started with that date range is still running. You might even go to the consolidation transactions and attempt to delete the consolidation results for the same date range while that consolidation process is still running. Issues can arise when multiple processes are run on the same data set at the same time. A change has been added that provides a validation to ensure that a consolidation process, or deletion, can’t be performed for the same date range when another consolidation is already in progress. As part of this change, consolidations must now be done using a batch, rather than in real time. |  
 
 ### Regulatory updates
-For information about regulatory updates for Finance and Operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
+For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
 
 ### Dynamics 365: 2021 release wave 2 plans
 
@@ -100,3 +100,4 @@ For breaking changes that only affect compilation time, but are binary compatibl
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+
