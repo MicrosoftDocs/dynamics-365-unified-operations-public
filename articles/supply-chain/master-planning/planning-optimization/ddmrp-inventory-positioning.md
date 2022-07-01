@@ -17,57 +17,61 @@ ms.dyn365.ops.version: 10.0.28
 
 [!include [banner](../includes/banner.md)]
 
-## Decoupling points
+Strategic inventory positioning involves identifying decoupling points in your supply chain where you can build up inventory on hand. This is mainly done to provide lead time compression and shock absorption in your supply chain. It lets you mitigate the bullwhip effect by not passing demand variability all the way down the supply chain.
 
-Strategic inventory positioning involves identifying points in your supply chain where we can build up inventory on hand - we do this for a few reasons, mainly for lead time compression and shock absorption in our supply chain. This lets us mitigate the bullwhip effect by not passing demand variability all the way down the supply chain. There is an example of a multi-level BOM for a pillow product.
+## Inventory positioning for manufacturing
 
-![Diagram Description automatically generated](media/image1.png)
+This section provides an example that illustrates how to make inventory positioning decisions when manufacturing a typical pillow product. The pillow has a multi-level bill of material (BOM), as shown in the following illustration.
 
-Also, the following various considerations we take into account when choosing where our decoupling points are:
+![Example of a multi-level bill of material (BOM) for a pillow product](media/ddmrp-bom-example.png "Example of a multi-level bill of material (BOM) for a pillow product")
+
+### Choose your decoupling points
+
+When choosing where to put your decoupling points, consider all of the following aspects of each item in the BOM:
 
 - External variability
-
 - Inventory leverage and flexibility
-
 - Critical operation protection
-
 - Customer tolerance time
-
 - Sales order visibility horizon
-
 - Market potential lead time
 
-The first decoupling point can be placed at Foam billets (represented by the yellow inventory icon) for two main reasons – one, that sourcing the materials used to make the billet is difficult and volatile in the current supply chain and because foam billets are then cut into many different shapes and sizes of foam inserts for our products, so this part meets the qualifications for external variability and inventory leverage and flexibility
+In the pillow example, you might place your first decoupling point might at the *foam billets* for the following reasons:
 
-![Diagram Description automatically generated](media/image2.png)
+- It is difficult to source the materials used to make the billet and availability is volatile. This meets the criterion on *external variability*.
+- The foam billets can be cut into many different shapes and sizes to create foam inserts for a variety of products that you manufacture, in addition to the pillow. This meets the criterion on *inventory leverage and flexibility*.
 
-The next decoupling point is at the Fabric kit, which is our pre-cut pillow fabric. We chose this one because we only have one fabric cutting machine and so we are using the critical operation protection factor in this case.
+Continuing with this example, the next decoupling point could be at the *fabric kit*, which is pre-cut pillow fabric. You might choose this one because you only have one fabric cutting machine, so  the *critical operation protection* criterion applies.
 
-And finally, we are choosing to set up a decoupling point for the finished good pillow item – firstly, because we have a very low customer tolerance time on sales, secondly because our sales order visibility horizon is fairly short and we want to ensure we have the inventory on hand to meet incoming orders. We are also able to set a higher price when we can keep the lead time this short, which is what the market potential lead time consideration refers to.
+Finally, you might set the finished good pillow item as your final decoupling point. This could be because you have a very low *customer tolerance time* on sales, and because your *sales order visibility horizon* is fairly short so  you want to ensure you have the inventory on hand to meet incoming orders. You can also set a higher price by keeping the lead time this short, which is what the *market potential lead time* criterion refers to.
 
-## Decoupled lead time
+Based on this analysis, the following illustration shows the pillow BOM would like with the decoupling points highlighted by yellow inventory icons.
 
-Let's use this same pillow example to understand how decoupling points can help us compress our lead times. Looking at the gray boxes in the top left corner we can see the lead time for each item in our multi-level BOM.
+![Example BOM with decoupling points highlighted](media/ddmrp-bom-decoupling-example.png "Example BOM with decoupling points highlighted")
 
-![Teams Description automatically generated](media/image3.png)
+### Calculate your decoupled lead time
 
-In red, we can see the items that drive the cumulative lead time for this item, which is 21 days if we have to start from scratch.
+This section shows how to calculate your new lead times after you have introduced decoupling points. 
 
-But if we apply the decoupling points for our previous example
+Continuing with the pillow example used in the previous section, the followign illustration shows lead times in grey boxes at the top left of each BOM item. Boxes with a red outline indicate items that drive the cumulative lead time, which is 21 days when starting from scratch.
 
-![Application  Teams Description automatically generated](media/image4.png)
+![Example BOM with lead times](media/ddmrp-bom-lead-times-example.png "Example BOM with lead times")
 
-We see that our new lead time for the pillow would be only 5 days – the three days to produce the pillow and the two days to purchase the thread. This is called a decoupled lead time.
+However, if you apply the decoupling points found previously, then the decoupled items will always be in stock and therefore have a lead time of zero. The new lead time for the pillow is just five days&mdash;two days to purchase the thread and three days to produce the pillow. This is called a decoupled lead time.
+
+![Example of decoupled lead time](media/ddmrp-bom-decoupled-lead-time-example.png "Example of decoupled lead time")
 
 ## Strategic inventory positioning in a retail model
 
-Another way we can look at strategic inventory positioning and buffer levels is not just looking at which items in a BOM we should stock, but also which locations in our distribution network. In this example we have a distribution center in Seattle and stores in Boston, Atlanta, and Portland that sell blankets from our company.
+Retailers only stock finished products, so BOMs aren't an issue. However, retainers can still use DDMRP by setting strategic inventory positioning and buffer levels based on storage locations within the distribution network.
 
-![Diagram  timeline Description automatically generated with medium confidence](media/image5.png)
+The following illustration shows an example of a company that has a distribution center in Seattle and stores in Boston, Atlanta, and Portland.
 
-You could decide that the transfer time between the distribution center and the stores is too long for my customer tolerance time since they expect the product to be in stock when they visit. In this case, you would set up a decoupling point for the blanket item at each of the three stores and each one would get a different buffer level based on that particular store's lead times, demand patterns, etc.
+![Decoupling points based on location in a retail model](media/ddmrp-retail-decoupl-points-example.png "Decoupling points based on location in a retail model")
 
-## How should we do that in DYNAMICS?
+You could decide that the transfer time to move a blanket product between the distribution center and the stores violates your *customer tolerance time* because your customers expect the blanket to be in stock when they visit. In this case, you would set up a decoupling point for the blanket item at each of the three stores and each one would get a different buffer level based on that particular store's lead times, demand patterns, and so on.
+
+## Implement inventory positioning in Supply Chain Management
 
 It's a very careful, unexamined decision on how should you place decoupling points and where.
 
