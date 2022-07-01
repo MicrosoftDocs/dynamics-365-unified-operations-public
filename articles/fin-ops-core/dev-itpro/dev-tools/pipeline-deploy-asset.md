@@ -28,7 +28,7 @@ You can use the **Dynamics Lifecycle Services (LCS) Asset Deployment** task in M
 This article assumes that you have a working knowledge of [Azure Pipelines](/azure/devops/pipelines/get-started/pipelines-get-started).
 
 > [!NOTE]
-> Before you can add these steps to a pipeline, the [Dynamics 365 Finance and Operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](/azure/devops/marketplace/install-extension).
+> Before you can add these steps to a pipeline, the [Dynamics 365 finance and operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](/azure/devops/marketplace/install-extension).
 
 ## Dynamics 365 Commerce Cloud Scale Unit (CSU) extension and e-Commerce package deployment
 
@@ -64,3 +64,4 @@ The following table describes the options that are available for this task.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

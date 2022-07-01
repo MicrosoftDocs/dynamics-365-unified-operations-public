@@ -23,20 +23,20 @@ This article explains how to update the development tools.
 Use this tutorial to update your Visual Studio development tools with a new version. It explains how to uninstall your existing Visual Studio development tools and install the new extension. The new extension is in the form of an installable VSIX file. This file is a part of the binary hotfix available on the Dynamics Lifecycle Services (LCS) site. The VSIX file is located in the **DevToolsService\\Scripts** folder of the binary hotfix package. 
 
 > [!NOTE]
-> You do not need to follow the instructions in this article if you are upgrading your Finance and Operations platform to Platform update 4 or newer. It is an automatic step that is part of the platform upgrade process.
+> You do not need to follow the instructions in this article if you are upgrading your finance and operations platform to Platform update 4 or newer. It is an automatic step that is part of the platform upgrade process.
 
 ## Uninstall the existing Visual Studio extension
 In order to install a new version of the development tools, you'll need to uninstall the existing version first. Verify the version of the development tools that you have installed. If you don't have it installed, you can skip this section.
 
 ### Verify your current version of the Visual Studio extension
 
-1.  Open the Visual Studio **Help &gt; About Microsoft Visual Studio** dialog and find **Finance and Operations Developer Tools**.
+1.  Open the Visual Studio **Help &gt; About Microsoft Visual Studio** dialog and find **finance and operations Developer Tools**.
 2.  Select it and click **OK**.
 
 ### Uninstall the extension
 
 1.  Open the Visual Studio **Tools &gt; Extensions and Updates** dialog.
-2.  Select **Finance and Operations Visual Studio Tools** and click **Uninstall**.
+2.  Select **finance and operations Visual Studio Tools** and click **Uninstall**.
 3.  When the extension is uninstalled, exit Visual Studio.
 
 ## Install a new version of the extension

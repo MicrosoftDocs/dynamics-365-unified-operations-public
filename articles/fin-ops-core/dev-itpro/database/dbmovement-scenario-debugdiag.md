@@ -2,7 +2,7 @@
 # required metadata
 
 title: Debug a copy of the production database
-description: This article explains a debugging and diagnostics scenario for Finance and Operations.
+description: This article explains a debugging and diagnostics scenario for finance and operations.
 author: LaneSwenka
 ms.date: 01/25/2021
 ms.topic: article

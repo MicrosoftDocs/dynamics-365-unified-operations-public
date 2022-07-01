@@ -65,7 +65,7 @@ This article includes the following sections:
 
 ## Servicing customers
 
-Dynamics 365 Finance and Operations apps run on Microsoft Azure. Therefore, it's a solution that runs as a service. Microsoft services companies 24/7, either proactively from alerts that report unusual behavior, or from support tickets that are submitted by customers or their partners. Microsoft has a range of tools to help support the services that are running. These tools include usage data that is collected from the services. To help safeguard customer data, Microsoft is also careful about who can access customer systems.
+Dynamics 365 finance and operations apps run on Microsoft Azure. Therefore, it's a solution that runs as a service. Microsoft services companies 24/7, either proactively from alerts that report unusual behavior, or from support tickets that are submitted by customers or their partners. Microsoft has a range of tools to help support the services that are running. These tools include usage data that is collected from the services. To help safeguard customer data, Microsoft is also careful about who can access customer systems.
 
 When Microsoft analyzes an issue, it might determine that the issue is related to your ISV solution. Microsoft reports this type of issue to you, so that you can follow up offline.
 
@@ -81,7 +81,7 @@ This recommendation applies to servicing and maintaining your released solution.
 
 Microsoft diligently tries to guarantee compatibility with existing customizations. To achieve this goal, Microsoft uses strict practices in its engineering processes, together with tool and automation support that helps identify API contracts that are unintentionally broken. Telemetry lets Microsoft engineers determine customizations that reference or extend a Microsoft API.
 
-Updates to Finance and Operations apps that are applied to customer environments are intended to be functionally compatible and binary-compatible with existing customizations. This compatibility covers not only APIs, but also functionality and the user experience. Customers must explicitly opt in to all new experiences.
+Updates to finance and operations apps that are applied to customer environments are intended to be functionally compatible and binary-compatible with existing customizations. This compatibility covers not only APIs, but also functionality and the user experience. Customers must explicitly opt in to all new experiences.
 
 Any deprecation or breaking change in binary or functional compatibility will be announced 12 months in advance. Therefore, you will have enough time to align your customizations with an alternative design. You must pay attention to the monthly updates to Microsoft documentation, and you must review the APIs that are marked as obsolete (deprecated) or internal. In this way, you will be able to manage changes in a timely manner.
 
@@ -115,7 +115,7 @@ Design-time breaking changes that are binary-compatible don't require a 12-month
 
 ## Developing new releases
 
-Together, One Version and the fact that the Finance and Operations apps run as a service provides a great vehicle for collecting feedback. Feedback is useful, because it helps Microsoft decide which new features it should add to upcoming updates. Historically, the Microsoft approach has been to release major releases that include many new features. However, the new model encourages a different approach. Therefore, Microsoft has moved to a series of continuous updates that gradually build on the available capabilities of the system. In many cases, one update contains an initial small feature that Microsoft then enriches in later updates. In some cases, Microsoft must provide staging for new features, and must use feature exposure to hide the new features or control modifications to them.
+Together, One Version and the fact that the finance and operations apps run as a service provides a great vehicle for collecting feedback. Feedback is useful, because it helps Microsoft decide which new features it should add to upcoming updates. Historically, the Microsoft approach has been to release major releases that include many new features. However, the new model encourages a different approach. Therefore, Microsoft has moved to a series of continuous updates that gradually build on the available capabilities of the system. In many cases, one update contains an initial small feature that Microsoft then enriches in later updates. In some cases, Microsoft must provide staging for new features, and must use feature exposure to hide the new features or control modifications to them.
 
 We recommend that you follow a similar approach for your ISV solutions. You will benefit from quicker integration and extension of new standard features.
 
@@ -246,3 +246,4 @@ If an implementation partner or customer compiles your solution in an updated en
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

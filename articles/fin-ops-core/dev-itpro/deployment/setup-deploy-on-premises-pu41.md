@@ -1114,5 +1114,6 @@ If AD FS is installed with a non-English version of Windows Server 2016, the **P
 - [Import Electronic reporting (ER) configurations](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Document generation, publishing, and printing in on-premises deployments](../analytics/printing-capabilities-on-premises.md)
 - [Configure proxies for on-premises environments](onprem-reverseproxy.md)
-- [Set up technical support for Finance and Operations apps](../lifecycle-services/support-experience.md)
+- [Set up technical support for finance and operations apps](../lifecycle-services/support-experience.md)
 - [Client internet connectivity](../user-interface/client-disconnected.md)
+
