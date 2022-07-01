@@ -3,8 +3,8 @@
 
 title: Electronic invoices in India
 description: This topic explains how to set up and submit electronic invoices and e-Way Bill information in India.
-author: lnesterov
-ms.date: 04/20/2022
+author: mrolecki
+ms.date: 07/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: India
 # ms.search.industry: 
-ms.author: lnesterov
+ms.author: mrolecki
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---
@@ -127,9 +127,7 @@ Additional fields are associated with EM items and required for their processing
 If no additional fields were imported from the data package, follow these steps.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Additional fields**.
-2. Select **New**, and enter the following information:
-
-    - In the field, enter **AppKey**, enter **Unique ID**, identifying unique user session.
+2. Select **New**, and enter the **AppKey** and a **Unique ID** that identifies the unique user session.
 
 #### Set up executable class parameters
 
@@ -183,11 +181,11 @@ We recommend that you use Key Vault storage. For more information about how to s
 
 To enable the use of Key Vault and advanced certificate storage, follow these steps.
 
-1. Go to **System administration** \> **Setup** \> **System parameters**.
+1. Go to **System administration** > **Setup** > **System parameters**.
 2. Set the **Use advanced certificate store** option to **No** to store sensitive data locally. Set it to **Yes** to use Key Vault storage.
 3. If you set the **Use advanced certificate store** option to **Yes**, follow these steps:
 
-    1. Go to **System administration** \> **Setup** \> **Key Vault parameters** to define the Key Vault parameters.
+    1. Go to **System administration** > **Setup** > **Key Vault parameters** to define the Key Vault parameters.
     2. Create a secret that has a reference to the custom Key Vault storage for each of five required secrets (**User name**, **User password**, **Client ID**, **Client secret**, and **Certificate**).
 
 > [!NOTE]
