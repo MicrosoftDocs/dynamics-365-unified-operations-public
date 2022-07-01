@@ -41,9 +41,9 @@ If there must be more than 500,000 rows in a run when you the initial synchroniz
 
 ### Twenty-four-hour limit
 
-If you're running the initial synchronization from Dataverse to the Finance and Operations app, the import result must be received back from the Finance and Operations app within 24 hours. Otherwise, a time-out occurs. Therefore, if you're syncing lots of data, and the single run takes more than 24 hours, the initial synchronization might fail because of a time-out. For example, an initial synchronization from Dataverse to a Finance and Operations app for the **Customer/Account** table involves 70,000 rows. Therefore, the run might take more than 24 hours and time out.
+If you're running the initial synchronization from Dataverse to the finance and operations app, the import result must be received back from the finance and operations app within 24 hours. Otherwise, a time-out occurs. Therefore, if you're syncing lots of data, and the single run takes more than 24 hours, the initial synchronization might fail because of a time-out. For example, an initial synchronization from Dataverse to a finance and operations app for the **Customer/Account** table involves 70,000 rows. Therefore, the run might take more than 24 hours and time out.
 
-Don't run the initial synchronization from Dataverse to a Finance and Operations app for [single-threaded tables](#single-threaded-entities) if the data volume is more than 70,000 rows. Because these tables don't support multi-threading during import, a time-out might occur if the volume is more 70,000 rows. In this situation, you should migrate data into the Finance and Operations app and Dataverse separately, and skip the initial synchronization.
+Don't run the initial synchronization from Dataverse to a finance and operations app for [single-threaded tables](#single-threaded-entities) if the data volume is more than 70,000 rows. Because these tables don't support multi-threading during import, a time-out might occur if the volume is more 70,000 rows. In this situation, you should migrate data into the finance and operations app and Dataverse separately, and skip the initial synchronization.
 
 ### Limit of 40 legal entities while the environments are being linked
 
@@ -68,11 +68,11 @@ As a workaround you can split the initial sync into these steps:
 3. After the initial sync for the first step is successful, add the remaining lookup columns and remove the lookup columns that were synced in first step. Once again make sure the number of lookup columns is 10. Save the map and run the initial sync. Repeat these steps to make sure all the lookup columns are synced. 
 4. Add all the lookup columns back to the map, save the map and run the map with skip initial sync. This will enable the map for live sync mode.
 
-### Five-minute limit for Finance and Operations data export
+### Five-minute limit for finance and operations data export
 
-If you're running the initial synchronization from the Finance and Operations app to Dataverse and the Finance and Operations data export takes more than five minutes, then the initial sync might time out. The time-out can happen if the data table has virtual columns with the `postLoad` method, or the export query isn't optimized (for example, if it has missing indexes).
+If you're running the initial synchronization from the finance and operations app to Dataverse and the finance and operations data export takes more than five minutes, then the initial sync might time out. The time-out can happen if the data table has virtual columns with the `postLoad` method, or the export query isn't optimized (for example, if it has missing indexes).
 
-This type of synchronization is supported in Platform update 37 (PU37) and later. Therefore, you should update your Finance and Operations app to PU37 or later.
+This type of synchronization is supported in Platform update 37 (PU37) and later. Therefore, you should update your finance and operations app to PU37 or later.
 
 ### Security role for write access
 
@@ -102,7 +102,7 @@ For information about known issues, see [Troubleshoot issues during initial sync
 <table>
 <thead>
 <tr>
-<th>Finance and Operations app instance</th>
+<th>finance and operations app instance</th>
 <th>Dataverse instance</th>
 <th>Has data to run the initial synchronization</th>
 <th>Description</th>
@@ -116,7 +116,7 @@ For information about known issues, see [Troubleshoot issues during initial sync
 <td>New</td>
 <td>New</td>
 <td>No</td>
-<td>A new Finance and Operations app instance and a new customer engagement app instance, where neither app has initial data</td>
+<td>A new finance and operations app instance and a new customer engagement app instance, where neither app has initial data</td>
 <td>Not applicable</td>
 <td>Any</td>
 <td>
@@ -129,12 +129,12 @@ For information about known issues, see [Troubleshoot issues during initial sync
 <td rowspan='3'>New</td>
 <td rowspan='3'>New</td>
 <td rowspan='3'>Yes</td>
-<td rowspan='3'>A new Finance and Operations app instance and a new customer engagement app instance, where one of the apps has migrated data</td>
+<td rowspan='3'>A new finance and operations app instance and a new customer engagement app instance, where one of the apps has migrated data</td>
 <td>&lt; 500,000</td>
 <td><a href='#single-threaded-entities'>Single-threaded</a></td>
 <td>
 <ol>
-<li>Migrate data to the Finance and Operations app.</li>
+<li>Migrate data to the finance and operations app.</li>
 <li>Run the initial synchronization.</li>
 </ol>
 </td>
@@ -163,12 +163,12 @@ For information about known issues, see [Troubleshoot issues during initial sync
 <td rowspan='4'>New</td>
 <td rowspan='4'>Existing</td>
 <td rowspan='4'>Yes</td>
-<td rowspan='4'>A new Finance and Operations app instance and an existing customer engagement app instance</td>
+<td rowspan='4'>A new finance and operations app instance and an existing customer engagement app instance</td>
 <td>&lt; 70,000</td>
 <td><a href='#single-threaded-entities'>Single-threaded</a></td>
 <td>
 <ol>
-<li>Create a new company in the Finance and Operations app.</li>
+<li>Create a new company in the finance and operations app.</li>
 <li>Bootstrap Dataverse for the company code.</li
 ><li>Run the initial synchronization.</li>
 </ol>
@@ -179,7 +179,7 @@ For information about known issues, see [Troubleshoot issues during initial sync
 <td><a href='#single-threaded-entities'>Single-threaded</a></td>
 <td>
 <ol>
-<li>Create a new company in the Finance and Operations app.</li>
+<li>Create a new company in the finance and operations app.</li>
 <li>Bootstrap Dataverse for the company code.</li>
 <li>Migrate data to each app outside the initial synchronization.</li>
 <li>Activate dual-write, and skip the initial synchronization.</li>
@@ -191,7 +191,7 @@ For information about known issues, see [Troubleshoot issues during initial sync
 <td>Multi-threaded</td>
 <td>
 <ol>
-<li>Create a new company in the Finance and Operations app.</li>
+<li>Create a new company in the finance and operations app.</li>
 <li>Bootstrap Dataverse for the company code.</li>
 <li>Run the initial synchronization.</li>
 </ol>
@@ -202,7 +202,7 @@ For information about known issues, see [Troubleshoot issues during initial sync
 <td>Any</td>
 <td>
 <ol>
-<li>Create a new company in the Finance and Operations app.</li>
+<li>Create a new company in the finance and operations app.</li>
 <li>Bootstrap Dataverse for the company code.</li>
 <li>Migrate data to each app outside the initial synchronization.</li>
 <li>Activate dual-write, and skip the initial synchronization.</li>
@@ -213,7 +213,7 @@ For information about known issues, see [Troubleshoot issues during initial sync
 <td rowspan='2'>Existing</td>
 <td rowspan='2'>New</td>
 <td rowspan='2'>Yes</td>
-<td rowspan='2'>An existing Finance and Operations app instance and a new customer engagement app instance</td>
+<td rowspan='2'>An existing finance and operations app instance and a new customer engagement app instance</td>
 <td>&lt; 500,000</td>
 <td>Any</td>
 <td>
@@ -236,7 +236,7 @@ For information about known issues, see [Troubleshoot issues during initial sync
 <td rowspan='4'>Existing</td>
 <td rowspan='4'>Existing</td>
 <td rowspan='4'>Yes</td>
-<td rowspan='4'>An existing Finance and Operations app instance and an existing customer engagement app instance</td>
+<td rowspan='4'>An existing finance and operations app instance and an existing customer engagement app instance</td>
 <td>&lt; 70,000</td>
 <td><a href='#single-threaded-entities'>Single-threaded</a></td>
 <td>
@@ -295,3 +295,4 @@ For information about known issues, see [Troubleshoot issues during initial sync
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

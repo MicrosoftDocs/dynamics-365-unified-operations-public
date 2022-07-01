@@ -99,7 +99,7 @@ If any rows in the vendor table have values in the **PrimaryContactPersonId** an
 
 1. In the finance and operations app, delete the **PrimaryContactPersonId** and **InvoiceVendorAccountNumber** columns from the mapping, and then save the mapping.
 
-    1. On the dual-write mapping page for **Vendors V2 (msdyn\_vendors)**, on the **Table mappings** tab, in the left filter, select **Finance and Operations apps.Vendors V2**. In the right filter, select **Sales.Vendor**.
+    1. On the dual-write mapping page for **Vendors V2 (msdyn\_vendors)**, on the **Table mappings** tab, in the left filter, select **finance and operations apps.Vendors V2**. In the right filter, select **Sales.Vendor**.
     2. Search for **primarycontactperson** to find the **PrimaryContactPersonId** source column.
     3. Select **Actions**, and then select **Delete**.
 
@@ -146,7 +146,7 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
 
 1. In the finance and operations app, delete the **ContactPersonID** and **InvoiceAccount** columns from the **Customers V3 (accounts)** mapping, and then save the mapping.
 
-    1. On the dual-write mapping page for **Customers V3 (accounts)**, on the **Table mappings** tab, in the left filter, select **Finance and Operations app.Customers V3**. In the right filter, select **Dataverse.Account**.
+    1. On the dual-write mapping page for **Customers V3 (accounts)**, on the **Table mappings** tab, in the left filter, select **finance and operations app.Customers V3**. In the right filter, select **Dataverse.Account**.
     2. Search for **contactperson** to find the **ContactPersonID** source column.
     3. Select **Actions**, and then select **Delete**.
 
@@ -180,7 +180,7 @@ If any rows in the customer table have values in the **ContactPersonID** and **I
 6. Run initial synchronization again for the **Customers V3 (Accounts)** mapping. Because change tracking is turned off, the data for **InvoiceAccount** and **ContactPersonId** will be synced from the finance and operations app to Dataverse.
 7. To sync the data for **InvoiceAccount** and **ContactPersonId** from Dataverse to the finance and operations app, you must use a data integration project.
 
-    1. In Power Apps, create a data integration project between the **Sales.Account** and **Finance and Operations apps.Customers V3** tables. The data direction must be from Dataverse to the finance and operations app. Because **InvoiceAccount** is a new attribute in dual-write, you might want to skip initial synchronization for it. For more information, see [Integrate data into Dataverse](/power-platform/admin/data-integrator).
+    1. In Power Apps, create a data integration project between the **Sales.Account** and **finance and operations apps.Customers V3** tables. The data direction must be from Dataverse to the finance and operations app. Because **InvoiceAccount** is a new attribute in dual-write, you might want to skip initial synchronization for it. For more information, see [Integrate data into Dataverse](/power-platform/admin/data-integrator).
 
         The following illustration shows a project that updates **CustomerAccount** and **ContactPersonId**.
 
@@ -240,3 +240,4 @@ Initial synchronization might fail for records that have a zero value for a pric
 The issue is with the **Language locale** value under **Source data formats** in the **Data management** module. Change the value of the **Language locale** field to **en-us**, and then try again.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

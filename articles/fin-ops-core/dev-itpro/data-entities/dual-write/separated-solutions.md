@@ -21,14 +21,14 @@ ms.search.validFrom: 2021-11-29
 Previously, the Dual-write Application Orchestration package was a single package that contained the following solutions:
 
 - Dynamics 365 Notes
-- Dynamics 365 Finance and Operations Common Anchor
-- Dynamics 365 Finance and Operations Dual Write Entity Maps
+- Dynamics 365 finance and operations Common Anchor
+- Dynamics 365 finance and operations Dual Write Entity Maps
 - Dynamics 365 Asset Management App
 - Dynamics 365 Asset Management
 - HCM Common
 - Dynamics 365 Supply Chain Extended
 - Dynamics 365 Finance Extended
-- Dynamics 365 Finance and Operations Common
+- Dynamics 365 finance and operations Common
 - Dynamics 365 Company
 - Currency Exchange Rates
 - Field Service Common
@@ -53,7 +53,7 @@ The Dual-write Application Core package lets users install and configure dual-wr
 
 The following maps are available in this package.
 
-| Finance and Operations apps     | Customer engagement apps                    |
+| Finance and operations apps     | Customer engagement apps                    |
 |---------------------------------|---------------------------------------------|
 | Operating unit                  | msdyn_internalorganizations                 |
 | Organization hierarchy          | msdyn_internalorganizationhierarchies       |
@@ -84,7 +84,7 @@ The Dual-write Human Resources package contains the solutions and maps that are 
 
 The following maps are available in this package.
 
-| Finance and Operations apps | Customer engagement apps         |
+| Finance and operations apps | Customer engagement apps         |
 |-----------------------------|----------------------------------|
 | Ethnic origins              | cdm_ethnicorigins                |
 | Compensation job function   | cdm_jobfunctions                 |
@@ -114,7 +114,7 @@ The Dual-write Supply Chain package contains the solutions and maps that are req
 
 The following maps are available in this package.
 
-| Finance and Operations apps                 | Customer engagement apps                      |
+| Finance and operations apps                 | Customer engagement apps                      |
 |---------------------------------------------|-----------------------------------------------|
 | Units                                       | uoms                                          |
 | CDS sales order headers                     | salesorders                                   |
@@ -192,7 +192,7 @@ The Dual-write Finance package contains the solutions and maps that are required
 
 The following maps are available in this package.
 
-| Finance and Operations apps             | Customer engagement apps        |
+| Finance and operations apps             | Customer engagement apps        |
 |-----------------------------------------|---------------------------------|
 | Withholding tax groups                  | msdyn_withholdingtaxgroups      |
 | CDS Contacts V2 (Customer)              | contacts                        |
@@ -242,7 +242,7 @@ The Dual-write Notes package contains the solutions and maps that are required t
 
 The following maps are available in this package.
 
-| Finance and Operations                     | Customer Engagement |
+| Finance and operations                     | Customer Engagement |
 |--------------------------------------------|---------------------|
 | Sales order header document attachments    | annotations         |
 | Customer Attachments                       | annotations         |
@@ -269,7 +269,7 @@ The Dual-write Asset Management package contains the solutions and maps that are
 
 The following maps are available in this package.
 
-| Finance and Operations apps                           | Customer engagement apps                |
+| Finance and operations apps                           | Customer engagement apps                |
 |-------------------------------------------------------|-----------------------------------------|
 | Asset management warranty                             | msdyn_warranties                        |
 | Asset management models                               | msdyn_models                            |
@@ -339,3 +339,4 @@ The dual-write party and global address book solutions depend on the following t
 - Dual-write Application Core package
 - Dual-write Finance package
 - Dual-write Supply Chain package
+
