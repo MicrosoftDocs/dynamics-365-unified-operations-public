@@ -112,7 +112,7 @@ The illustration below shows an example of the **Work order maintenance forecast
 
 ## Automatic update of work order forecasts
 
-If hour costs, item costs, and expenses are updated in other modules in Microsoft Dynamics 365 Finance, work order forecasts in Asset Management can automatically be updated to reflect those changes. This capability helps guarantee that the latest cost prices are always used in your work order forecasts. You can also do similar updates for [maintenance job type forecasts](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
+If hour costs, item costs, and expenses are updated in other modules, work order forecasts in Asset Management can automatically be updated to reflect those changes. This capability helps guarantee that the latest cost prices are always used in your work order forecasts. You can also do similar updates for [maintenance job type forecasts](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
 1. Select **Asset management** > **Periodic** > **Forecast** > **Update work order forecast**.
 
