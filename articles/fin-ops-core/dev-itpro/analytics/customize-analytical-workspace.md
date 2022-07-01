@@ -109,7 +109,8 @@ The Power BI service requires explicit permission from the user to allow access 
 
 1. Open any application workspace containing a section titled **Link**. For example, "Bank management".
 2. Select **Options**, and then select **Open report catalog** on the top left.
-3. Follow the steps in the dialog box to **Authorize to Power BI** to access Finance and Operations apps for the current user.
+3. Follow the steps in the dialog box to **Authorize to Power BI** to access finance and operations apps for the current user.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

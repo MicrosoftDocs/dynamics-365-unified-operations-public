@@ -41,7 +41,7 @@ In the examples in this article, the active provider is Contoso, and you use it 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWAVQg]
 
-The [Create a new business document using Business document management](https://youtu.be/gAIYl-mM_pw) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [Create a new business document using Business document management](https://youtu.be/gAIYl-mM_pw) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ## Make the new document UI in Business document management available
 
@@ -150,3 +150,4 @@ This example shows how to use the **New document** button in the **Business docu
 7. Select **OK** to confirm the start of the editing process.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

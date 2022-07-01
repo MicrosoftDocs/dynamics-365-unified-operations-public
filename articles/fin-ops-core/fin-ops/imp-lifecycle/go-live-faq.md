@@ -54,7 +54,7 @@ Please follow the guidance in the [Prepare for go-live](prepare-go-live.md) arti
 
 The **Production** button in LCS is available only after you've completed the **Analysis**, **Design & develop**, and **Test** phases of the LCS implementation methodology and a **Go-live Readiness Review** is completed with Microsoft. For more information, see [Prepare for go-live](prepare-go-live.md).
 
-For more information about how to complete methodology phases in LCS, see [Lifecycle Services (LCS) for Finance and Operations apps customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
+For more information about how to complete methodology phases in LCS, see [Lifecycle Services (LCS) for finance and operations apps customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 ## My sandbox environment is currently on an update that is set to expire in two months. Can I request a production environment that has the latest update?
 
@@ -117,3 +117,4 @@ To report a production outage, follow the process described in the article, [Rep
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

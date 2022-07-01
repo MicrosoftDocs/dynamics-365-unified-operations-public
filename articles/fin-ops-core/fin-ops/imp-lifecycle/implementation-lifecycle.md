@@ -2,7 +2,7 @@
 # required metadata
 
 title: Implementation lifecycle management home page
-description: These topics describe the programs, tools, and processes available that are related to the implementation lifecycle of your Finance and Operations project.
+description: These topics describe the programs, tools, and processes available that are related to the implementation lifecycle of your finance and operations project.
 author: ClaudiaBetz-Haubold
 ms.date: 01/04/2021
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-These topics describe the programs, tools, and processes available related to the implementation lifecycle of your Finance and Operations project.
+These topics describe the programs, tools, and processes available related to the implementation lifecycle of your finance and operations project.
 
 ## Programs
 
@@ -38,7 +38,7 @@ These topics describe the programs, tools, and processes available related to th
 
 [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com)
 
-[Lifecycle Services (LCS) for Finance and Operations apps customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)
+[Lifecycle Services (LCS) for finance and operations apps customers](../../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
 ## Processes
 

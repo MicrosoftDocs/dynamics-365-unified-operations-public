@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 12
 
 [!include [banner](../includes/banner.md)]
 
-In previous releases, demo data was delivered as a database. In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, a subset of demo data has been released as data packages. These packages are available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment.
+In previous releases, demo data was delivered as a database. In Microsoft Dynamics 365 Finance, Enterprise edition 7.3, a subset of demo data has been released as data packages. These packages are available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). The packages are designed so that they can be loaded into an empty environment.
 
 Here are some of the benefits of using data packages instead of a database to deliver demo data:
 
@@ -90,7 +90,7 @@ These names of these data packages consist of **300-Supply chain** followed by t
 
 The demo data packages will be released through LCS and will be specific to a release. Note that the contents of a given package are subject to change as we add more demo scenarios and tune the packages. Additional packages will also be released as we add more module areas and industry-specific scenarios.
 
-Package names will include a release identifier. For example, for Finance and Operations 7.3, **Demo data-7.3-** will precede the package name that uses the previously described naming conventions. For example, the full name of the Financials package for the HQUS legal entity for Finance and Operations 7.3 will be **Demo data-7.3-200-Financials-HQUS.zip**.
+Package names will include a release identifier. For example, for finance and operations 7.3, **Demo data-7.3-** will precede the package name that uses the previously described naming conventions. For example, the full name of the Financials package for the HQUS legal entity for finance and operations 7.3 will be **Demo data-7.3-200-Financials-HQUS.zip**.
 
 ## Before you load the packages
 
@@ -249,3 +249,4 @@ If you have a mixture of transactions, some of which should be processed whereas
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -23,7 +23,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: laswenka
 ms.search.validFrom: 2018-08-01
-ms.dyn365.ops.version: Finance and Operations
+ms.dyn365.ops.version: Finance and operations
 
 ---
 
@@ -181,3 +181,4 @@ After you've identified the environments, the environments plan can be used to s
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

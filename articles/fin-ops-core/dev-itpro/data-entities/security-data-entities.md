@@ -243,7 +243,7 @@ The pattern for modeling security resembles the pattern for modeling security wi
 [![RolebasedSecurity.](./media/rolebasedsecurity.png)](./media/rolebasedsecurity.png)
 
 ## Sensitive data
-The Table Protection Framework (TPF) enables strict access control to data that is stored in Finance and Operations. This feature is exposed through the AOSAuthorization property on tables and table fields. If you mark a table or field by using AOSAuthorization, the security framework now requires that a user be granted explicit access to that resource. This requirement also applies when the table or field is accessed through data entities. This section describes the guidelines for granting TPF permissions for data entities.
+The Table Protection Framework (TPF) enables strict access control to data that is stored in finance and operations. This feature is exposed through the AOSAuthorization property on tables and table fields. If you mark a table or field by using AOSAuthorization, the security framework now requires that a user be granted explicit access to that resource. This requirement also applies when the table or field is accessed through data entities. This section describes the guidelines for granting TPF permissions for data entities.
 
 ### Data management 
 For data entities that are targeted at data migration, you should assign TPF permissions to the corresponding import/export privileges. In this way, you help guarantee that all data can be imported and exported.
@@ -261,3 +261,4 @@ There are several advantages to granting explicit access to TPF-protected fields
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

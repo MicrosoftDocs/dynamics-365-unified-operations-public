@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This feature is supported in Finance and Operations (version 7.2 and later).
+> This feature is supported in finance and operations (version 7.2 and later).
 
 ## Introduction
 This article shows how to embed a Microsoft Power BI report on the **Analytics** tab of a workspace. For the example that is given here, we will extend the **Reservation management** workspace in the Fleet Management application to embed an analytical workspace on an **Analytics** tab.
