@@ -72,7 +72,7 @@ The process of setting up the EM functionality to interoperate with the IRP syst
 3. After the file is downloaded, open Finance, and select the company that you will interoperate with the IRP system from.
 4. Go to **Workspaces** \> **Data management**.
 5. In the **Data management** workspace, go to **Framework parameters** \> **Entity settings**, and select **Refresh entity list**. Wait for confirmation that the refresh has been completed. For more information about how to refresh the entity list, see [Entity list refresh](../../fin-ops-core/dev-itpro/data-entities/data-entities.md#entity-list-refresh).
-6. Validate that the source data and target data are correctly mapped. For more information, see [Validate that the source data and target data are mapped correctly](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job#validate-that-the-source-data-and-target-data-are-mapped-correctly).
+6. Validate that the source data and target data are correctly mapped. For more information, see [Validate that the source data and target data are mapped correctly](../../fin-ops-core/dev-itpro/data-entities/data-import-export-job.md#validate-that-the-source-data-and-target-data-are-mapped-correctly).
 7. Before you use the data entities to import the data from the package, follow these steps for each data entity in the package:
 
     1. Sync the mapping of the source data and target data. In the package list, select a data entity, and then, on the Action Pane, select **Modify target mapping**.
