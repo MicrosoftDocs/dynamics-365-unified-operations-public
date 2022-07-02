@@ -43,9 +43,9 @@ The dual-write core solution contains metadata for your table maps and must be i
 ## <a id="install-table-maps"></a>Install the dual-write table maps solution
 
 1. In Power Apps, in the left pane, select **Solutions**.
-2. Select **Open AppSource**, and search for the solution that is named **Dataverse Add-in for Finance and Operations package**.
+2. Select **Open AppSource**, and search for the solution that is named **Dataverse Add-in for finance and operations package**.
 3. Follow the prompts to import the solution.
-4. In the Finance and Operations app, on the **Dual-write** page, select **Apply Solution** to apply the table maps that you downloaded and installed. After you apply the solution, you will see that the default table maps are published.
+4. In the finance and operations app, on the **Dual-write** page, select **Apply Solution** to apply the table maps that you downloaded and installed. After you apply the solution, you will see that the default table maps are published.
 
     ![Publishing the dual-write table maps.](media/default-entity-maps.png)
 
@@ -59,7 +59,7 @@ This section explains how to import table maps from AppSource and apply them to 
 
 1. Import the dual-write core solution.
 
-    1. Create a new dual-write environment (a Finance and Operations app environment and a Dataverse environment).
+    1. Create a new dual-write environment (a finance and operations app environment and a Dataverse environment).
     2. Follow the instructions in the [Install the dual-write core solution](#install-the-dual-write-core-solution) section earlier in this article to install the dual-write core solution from AppSource in Power Apps.
     3. Verify that the dual-write core solution is listed under **Solutions** in Power Apps.
 
@@ -68,9 +68,9 @@ This section explains how to import table maps from AppSource and apply them to 
     1. Follow the instructions in the [Install the dual-write table maps solution](#install-table-maps) section to download and install the Microsoft-published or ISV-published table maps from AppSource in Power Apps.
     2. Verify that the table maps solution is listed under **Solutions** in Power Apps.
 
-3. Apply the dual-write table maps solution to your Finance and Operations app environment.
+3. Apply the dual-write table maps solution to your finance and operations app environment.
 
-    Apply the solution that you downloaded by selecting **Apply Solutions** on the **Dual-write** page in the Finance and Operations app, as described in the [Install the dual-write table maps solution](#install-table-maps) section.
+    Apply the solution that you downloaded by selecting **Apply Solutions** on the **Dual-write** page in the finance and operations app, as described in the [Install the dual-write table maps solution](#install-table-maps) section.
 
 ## <a id="update-table-maps"></a>Update table maps and export them to other environments as a solution
 
@@ -82,7 +82,7 @@ This section explains how to export your customized table maps as a solution, us
 
 The first step is to customize your table maps by modifying existing table maps and adding a new table map.
 
-1. In the Finance and Operations app, on the **Table mappings** tab, customize the mappings for the default table map that you just installed by using a solution. To add a new table map, select **Add Table**. In both cases, when you save the table map, you're prompted to specify the publisher and the version number.
+1. In the finance and operations app, on the **Table mappings** tab, customize the mappings for the default table map that you just installed by using a solution. To add a new table map, select **Add Table**. In both cases, when you save the table map, you're prompted to specify the publisher and the version number.
 
     The following figure shows how to add a new column that is named **birthday** to the contacts - CDS Contacts V2 table map and select the default publisher.
 

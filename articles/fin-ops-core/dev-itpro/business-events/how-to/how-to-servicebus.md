@@ -99,7 +99,7 @@ In this procedure, you will create a key vault to store the key that you copied 
 
 ## Register a new application
 
-In this procedure, you will register a new application with Azure AD, and give it read and retrieve access to key vault secrets. Finance and Operations will then use this application to retrieve Service Bus secrets.
+In this procedure, you will register a new application with Azure AD, and give it read and retrieve access to key vault secrets. Finance and operations will then use this application to retrieve Service Bus secrets.
 
 1. In the Azure portal, select **All services \> Security \> Azure Active Directory**.
 2. Select **App registrations (preview) \> New registration**, and enter a name for your application.
