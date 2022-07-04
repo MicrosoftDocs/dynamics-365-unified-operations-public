@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.28
 
 [!include [banner](../includes/banner.md)]
 
-Strategic inventory positioning involves identifying decoupling points in your supply chain where you can build up inventory on hand. This is mainly done to provide lead time compression and shock absorption in your supply chain. It lets you mitigate the bullwhip effect by not passing demand variability all the way down the supply chain.
+Strategic inventory positioning involves identifying decoupling points in your supply chain where you can build up inventory on hand. This is mainly done to provide lead time compression and shock absorption in your supply chain. It lets you mitigate the bullwhip effect by not passing demand variability all the way down the supply chain. This is the first step of Demand Driven Materials Resource Planning (DDMRP).
 
 ## Inventory positioning for manufacturing
 
@@ -73,77 +73,62 @@ You could decide that the transfer time to move a blanket product between the di
 
 ## Implement inventory positioning in Supply Chain Management
 
-It's a very careful, unexamined decision on how should you place decoupling points and where.
+This section describes how to implement your inventory positioning strategy in Supply Chain Management.
 
-And there's many factors such as Customer tolerance time, External variability and Inventory leverage and flexibility that would influence on and how should you take them into account.
+### Set up item coverage groups that create decoupling points
 
-### Customer tolerance time
+<!-- KFM: Add intro that briefly describes the purpose of item coverage groups in the context of DDMRP.  Mention why you should set up groups vs. individual items. Explain why you might have just one or more than one decoupling group. -->
 
-If you know that for your end item, the highest in this bill of material, the customers willing to wait, let's say 8 days. Please see the Pillow item structure picture from Decoupling lead time parameters.
+Decide which coverage groups you will need to implement your DDMRP strategy and then create each of them using the following steps:
 
-Then you probably want to took the items as in the picture. Because the whole cumulative time will be longer than 8 days and it is about 25 days.
+1. Go to **Master planning \> Setup \> Coverage \> Coverage groups**
+1. On the Action Pane, select **New** to create a new coverage group.
+1. Enter information that identifies the coverage group and then select the calendar to use.
+1. On the **General** tab, set **Coverage code** to *Decoupling point*. This setting will cause all items belonging to this coverage group to be treated as decoupling points for DDMRP. It also enabled all DDMRP settings for this group, as described later in this procedure.
+1. On the **Other** tab, make the following settings in the **DDMRP parameters** section:
+    - **Lead time factor** – Specify a factor (as a decimal between 0 and 1) to control the impact that lead time should have when calculating the minimum and maximum stock levels for items in this coverage group. In general, the longer the lead time an item has, the lower its lead time factor should be. A lower lead time factor produces lower minimum and maximum stock levels and therefore results in smaller and more frequent orders. DDMRP methodology recommends using a value between 0.20 and 0.40 for items with long lead times, 0.41 to 0.60 for items with medium lead times, and 0.61 to 1.00 for items with short lead times.
+    - **Variability factor** – Specify a factor (as a decimal between 0 and 1) to control the impact that varying demand should have when calculating the minimum stock level for items in this coverage group. In general, the more variable and item's demand is, the higher its variability factor should be. A higher variability factor will result in a higher minimum stock level. DDMRP methodology recommends using a value between 0.00 and 0.40 for items with low variability, 0.41 to 0.60 for items with medium variability, and 0.61 to 1.00 for items with high variability.
+    - **Min, max, and re-order point period** – <!-- KFM: Description needed. Tooltip is missing. -->
+1. On the **Other** tab, make the following settings in the **Average daily usage** section:
+    - **Average daily usage based on** – Select which time periods the average daily usage should be calculated based. Choose one of the following values:
+        - *Past* – Look only at past usage for the number of days specified in the **Past period (days)** field. The average daily usage is calculated as the total demand for an item during the calculation period (in inventory units) divided by the number of days in the calculation period.
+        - *Forward* – Look only at projected future usage (including forecasts) for the number of days specified in the **Forward period (days)** field. The average daily usage is calculated as the total demand for an item during the calculation period (in inventory units) divided by the number of days in the calculation period. 
+        - *Blended* – Look at both the past and future usage. Settings for **Past period (days)**, **Forward period (days)**, and blending options all apply. Blended average daily usage (ADU) = (\[Past weighting\] × \[Past ADU\]) + (\[Forward weighting\] × \[Forward ADU\]).
+    - **Past period (days)** – Enter the number of past days (up to and including today) that the system should consider when calculating the average daily usage of items in this coverage group. This setting only applies when **Average daily usage based on** is set to *Past* or *Blended*.
+    - **Forward period (days)** – Enter the number of future days (from today and up to the specified day) that the system should consider when calculating the average daily usage of items in this coverage group. This setting only applies when **Average daily usage based on** is set to *Forward* or *Blended*.
+    - **Relative weight of past period for blended average daily usage** – Enter the weight (in percent) to apply to the past period when calculating the blended average daily usage. This setting only applies when **Average daily usage based on** is set to *Blended*.
+    - **Relative weight of forward period for blended average daily usage** – Enter the weight (in percent) to apply to the forward period when calculating the blended average daily usage. This setting only applies when **Average daily usage based on** is set to *Blended*.
+1. For all other tabs and fields, enter the detailed settings that are used to calculate requirements for the items that are linked to the coverage group.
 
-If you place decoupling points at Foam billet and Fabric kit you will be able to reduce cumulative time up to 5 days and you will be able to meet the expectations of the client.
+### Set an item as a decoupling point
 
-### External variability
+<!-- KFM: Add intro that briefly describes what we are doing here. -->
 
-If there's a lot of variability your stock, have some stock to be on the safe side seems to be a good idea because some of your items may have long lead time.
+To set an item as a decoupling point, follow these steps:
 
-### Same with inventory, leverage and flexibility
+1. Go to **Product information management \> Products \> Released products**
+1. Find and select a released item that you want to set up for DDMRP.
+1. On the Action pane, open the **Plan** tab and select **Item coverage**.
+1. The **Item coverage** page opens. On the Action Pane, select **New** to create a new item coverage record. <!-- KFM: What if coverage records already exist? Do we recommend having more than one of these when using DDMRP? Maybe this text from the draft is relevant here (more detail is needed): "Among other things you can create many different Item coverage codes if you want many different defaults. There is the easiest way to specify a decoupling point." -->
+1. Set up the item coverage record as usual and then, with the new record still selected, open the **General** tab. <!-- KFM: Can we give better advice here than just "as usual"? Maybe this text from the draft is relevant here (more detail is needed): "Besides, you have to specify all the dimensions. If you miss site or warehouse that are mandatory for this item, you will not be able to define the decoupling point for this item." -->
+1. Select the **Use specific settings** check box.
+1. Set **Coverage group** to a coverage group set up to create decoupling points (as described in the previous section).
+1. <!-- KFM: We seem to have other DDMRP settings that should be described here, including **average daily usage**, **order cycle** and **order spike threshold** -->
 
-Maybe a purchased item you probably want to stock because it's used in many bills of materials across many your items. So that gives you a lot of flexibility.
+<!-- The purpose of the following text isn't clear. Are these the settings from the decoupling coverage group? 
 
-In case of having some bottlenecks in production, or if you have specific resources that breakdown a lot, or they are very expensive if they go down, you probably want to protect those operations and then make sure that the product you use before that operation you always have it stocked and handy.
-
-Step 1. Set up an Item coverage group
-
-1. Go to **Master planning &gt; Setup &gt; Coverage &gt; Coverage groups**
-
-1. Click **New**
-
-1. Set **Coverage code** = *Decoupling point*
-
-1. Expand the **Other** FastTab
-
-1. Set necessary values to **Lead time factor**, **Variability factor**, **Average daily usage past period (days)**, **Min, max, and re-order point period**.
-
-Once you choose value *Decoupling po*int for the**Coverage code** field, all new fields DDMRP parameters are going to be enabled and then these will be used in DDMRP process.
-
-![Graphical user interface  application Description automatically generated](media/image6.png)
-
-Step 2. Set up Item coverage for item
-
-1. Go to **Product information management &gt; Products &gt; Released products**
-
-1. Select a released item that you want to set up
-
-1. Click the **Plan** tab
-
-1. Click **Item coverage** under **Coverage** button group
-
-1. Click **New** and create a new item coverage record
-
-1. Click the **General** tab
-
-1. Set **Use specific settings** = *Checked*
-
-1. Set **Coverage group** to previously created coverage group for your decoupling point
-
-To define a decoupling point for specific item you have to put this definition on the item coverage level. You need to specify the following fields:
-
-**Coverage code** = Decoupling point. The value of the field determines the principle of replenishment. All records with Decoupling points value are considered by the system as part of the data for DDMRP planning.
-
-**Lead time factor** – The values range from 0 to 1 and the guidance is that the longer the lead time is, the lower the value should be.
-
-**Variability factor** – The values once again range from 0 to 1 and the guidance for this is that products with a higher demand variability should have a higher value for this factor
-
-**Average daily usage past period (days)** – the value means how much do you consume when you order from the moment you order until the order arrives.
-
-**Min, max and reorder-point period** – ???
-
-Besides, you have to specify all the dimensions. If you miss site or warehouse that are mandatory for this item, you will not be able to define the decoupling point for this item.
-
-Among other things you can create many different Item coverage codes if you want many different defaults. There is the easiest way to specify a decoupling point.
+        To define a decoupling point for specific item you have to put this definition on the item coverage level. You need to specify the following fields:
+        
+        **Coverage code** = Decoupling point. The value of the field determines the principle of replenishment. All records with Decoupling points value are considered by the system as part of the data for DDMRP planning.
+        
+        **Lead time factor** – The values range from 0 to 1 and the guidance is that the longer the lead time is, the lower the value should be.
+        
+        **Variability factor** – The values once again range from 0 to 1 and the guidance for this is that products with a higher demand variability should have a higher value for this factor
+        
+        **Average daily usage past period (days)** – the value means how much do you consume when you order from the moment you order until the order arrives.
+        
+        **Min, max and reorder-point period** – ???
+-->
 
 > [!NOTE]
-> All other items that are not decoupling points should continue to be planned as they are with the classic MRP.
+> You should plan all items that aren't decoupling points just as you would when using standard MRP.

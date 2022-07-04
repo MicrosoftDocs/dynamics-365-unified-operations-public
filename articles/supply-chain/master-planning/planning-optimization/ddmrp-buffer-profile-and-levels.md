@@ -17,91 +17,91 @@ ms.dyn365.ops.version: 10.0.28
 
 [!include [banner](../includes/banner.md)]
 
-Once we have identified our key items that we will strategically stock (the decoupling points), the next question is: how much should we stock?
+Once you have identified your decoupling points (key items that you will strategically keep in stock) you must decide how much stock (buffer) you will keep at each of them. This is the second step of Demand Driven Materials Resource Planning (DDMRP).
 
-This is the second step of DDMRP.
+## Buffer levels and zones
 
-## Buffer levels
+In DDMRP, each stock buffer is defined using three values: minimum quantity, maximum quantity, and reorder point. These values establish three difference zones, are identified using the following color codes:
 
-Each stock buffer will have a minimum quantity, a reorder point and a maximum quantity. 
+- **Red zone** – This is the area below the minium quantity. The minimum point is also called "top of red" and your planning strategy should be designed to ensure that stock levels are always above this point.
+- **Yellow zone** – This is the area between the minimum quantity and the reorder point. The reorder point is also called "top of yellow". When this point is reached, the system should reorder.
+- **Green zone** – This is the area between the reorder point and the maximum quantity. The maximum point is also called "top of green". This point is the maximum level to which the stock will be replenished.
 
-![Chart  funnel chart Description automatically generated](media/image7.png)
+The following illustration shows the three colored zones and how they relate to the minimum quantity, maximum quantity, and reorder point.
 
-With these, the buffer is defined by having 3 zones:
+![DDMRP buffer zones and levels](media/ddmrp-buffer-levels.png "DDMRP buffer zones and levels")
 
-- The red zone: from zero up to the minimum. The minimum point is also called "top of red" and that you should always try to get to.
-- The yellow zone: between the minimum and the reorder point. The reorder point is also called "top of yellow". When this point is reached, the system should reorder.
-- The green zone: between the reorder point and the maximum. The maximum point is also called "top of green". This point is the maximum level to which the stock will be replenished.
+## Calculating the buffer zones
 
-## Calculating of Buffer zones
+This section explains how the height of each buffer zone is calculated.
 
-The buffer zones (red, yellow and green) are calculated by the equations shown below.
+The yellow zone is usually calculated first. This zone represents the quantity you consume from the moment you order until the order arrives. In other words, it's the expected consumption during the replenishment lead time and is calculated using the following equation:
 
-The yellow zone usually calculated as the first step. The yellow zone means how much do you consume when you order from the moment you order until the order arrives. So, what's the average daily usage of that component.
+- **Yellow zone** = \[Average daily usage\] × \[decoupled lead time\]
 
-In other words, the yellow zone is expected consumption during replenishment lead time and can be calculated as:
+The *decoupled lead time* represents the time it takes to produce or receive an item assuming the decoupling points are always stock, and is normally much shorter than the *cumulative lead time* traditionally used in master planning. Correct buffer settings are key to ensuring that decoupling points actually are always in stock without being overstocked.
 
-- Average daily usage × decoupled lead time
+The red zone is calculated using the following equations:
 
-Decoupled lead time means how long does it take to get this item, knowing that you will always have the decoupling points on stock. So instead of the cumulative lead time that is used in the system, any lead time then you would assume that those you have on-hand always and the buffer maintenance and creation is to make sure that happens.
+- **Red base** = \[Average daily usage\] × \[Decoupled lead time\] × \[Lead time factor\]
+- **Red safety** = \[Red base\] × \[Variability factor\]
+- **Red zone** = \[Red base\] + \[Red safety\]
 
-The Red zone can be calculated as sum of:
+The green zone is calculated as the maximum result of the following three equations:
 
-- Red base = average daily usage × decoupled lead time × lead time factor
+- \[Minimum order quantity\]
+- \[Average daily usage\] × \[Order cycle\]
+- \[Average daily usage\] × \[Decoupled lead time\] × \[Lead time factor\]
 
-- Red safety = red base × variability factor
+## Calculating average daily usage
 
-The Green zone is calculated as a maximum of three parameters:
+The system calculates the amount you consume per day using one of three approaches:
 
-- Minimum order quantity
+- **Average daily usage (past)** – Based on actual past consumption
+- **Average daily usage (forward)** – Based on the forecasted future consumption.
+- **Average daily usage (blended)** - Based on a weighted mix of past and forecasted consumption
 
-- Average daily usage × order cycle
+<!-- KFM: We should provide examples/logic for picking each of the above. -->
 
-- Average daily usage × decoupled lead time × lead time factor
+### Average daily usage (past)
 
-The amount you consume per day can be calculated by the system automatically using three approaches:
+Past average daily usage (ADU) is calculated as an average by adding up the quantities used each day for a specified number of past days and then dividing by that number of days. The following illustration shows how this works when looking three days into the past.
 
-- Based on the past – Average daily usage (past)
+![Average daily usage (past) chart](media/ddmrp-adu-past.png "Average daily usage (past) chart")
 
-- Based on the forecast – Average daily usage (forward)
+<!-- KFM: The average values in the figure are shifted back one day, so this image should be updated. -->
 
-- Blended approach when you want to take a mix between the past and the forward - Average daily usage (blended).
+In previous illustration, if today is the morning of June 11th, the average daily usage for the previous 3 days (June 8th, 9th, and 10th) is 21.
 
-## Average daily usage (past)
+- **ADU (past)** = (29+11+23) ÷ 3 = 21
 
-The first concept is the average daily usage (ADU) – that is how much was used of the item on average on a day – looking a certain number of days in the past.
+### Average daily usage (forward)
 
-![Chart  bar chart  histogram Description automatically generated](media/image8.png)
+For a new product, you may not have any past usage data, so you might instead use the projected average daily usage going forward, for example based on forecasted demand. The following illustration shows how this works when looking three days into the future (which includes today).
 
-In this example, if today is the morning/beginning of 11th of June and we establish a past period of 3 days the average daily usage is sum of the usage of the item on the last 3 days (the 8th, the 9th, and the 10th), which is 21
+![Average daily usage (forward) chart](media/ddmrp-adu-forward.png "Average daily usage (forward) chart")
 
-ADU (past) = (29+11+23)/3= 21
+In previous illustration, if today is the morning of June 11th, the average daily usage for the next 3 days (June 11th, 12th, and 13th) is 21.66.
 
-## Average daily usage (forward)
+- **ADU (forward)** = (18+18+29) ÷ 3 = 21.66
 
-For a new product, we may not have any usage data in the past. Then we could use the average daily usage forward – that it would look into the future for instance forecasted demand. For example, in this case it would be looking into the future 3 days.
+### Average daily usage (blended)
 
-![Chart Description automatically generated](media/image9.png)
+The blended average daily usage combines the average past usage and average forward usage, as shown in the following illustration.
 
-In this case we would get that it is slightly higher value
+![Average daily usage (blended) chart](media/ddmrp-adu-blended.png "Average daily usage (blended) chart")
 
-ADU forward = (18+18+29)/3= 21.66
+In previous illustration, if today is the morning of June 11th, the blended average daily usage for the previous and next 3 days (June 8th to 13th) is 21.33.
 
-## Average daily usage (blended)
+- **ADU blended** = (\[ADU past\] + \[ADU forward\]) ÷ 2<br>= (21+ 21.66) ÷ 2<br>= 21.33
 
-And finally, if we wanted a combination of both – we would use the blended average daily usage, which looks both at the past and the future
-
-![Chart  bar chart Description automatically generated](media/image10.png)
-
-This approach smooths out difference between the Average daily usage based in the past and the based in the forecast
-
-ADU blended = (ADU past +ADU forward) /2= = (21+21.66)/2 = 21.33
+<!-- KFM: We should probably show the weighting factors here. -->
 
 ## Zone calculation factors
 
-Then, there are two factors in the setup of our items that we can use to define how big the red and green zones should be in the buffer
+For each item, you can define two factors to adjust how big the red and green zones should be to compensate for the expected lead time and supply variability.
 
-![Chart  waterfall chart Description automatically generated](media/image11.png)
+![Lead time and variability factors](media/ddmrp-zone-factors.png "Lead time and variability factors")
 
 The first factor is the lead time factor. The values range from 0 to 1 and the guidance is that the longer the lead time is, the lower the value should be. The following ranges presented here which are recommended by the Demand Driven Institute.
 
