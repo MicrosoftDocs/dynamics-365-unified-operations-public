@@ -16,6 +16,7 @@ ms.dyn365.ops.version: 10.0.25
 # Try out scale units in a distributed hybrid topology
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [cloud-edge-paused-banner](../includes/cloud-edge-paused-banner.md)]
 
 The process of trying out the distributed hybrid topology is simple. During the first stage, you should validate customizations to ensure that they work in the distributed topology. You have two options.
 

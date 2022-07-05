@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 10.0.25
 # Configure the Warehouse Management mobile app for cloud and edge scale units
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [cloud-edge-paused-banner](../includes/cloud-edge-paused-banner.md)]
 
 This article explains how to set up your Warehouse Management mobile apps so that they can be used at warehouses that are served by a cloud or edge scale unit.
 
