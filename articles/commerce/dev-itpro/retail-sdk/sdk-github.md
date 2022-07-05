@@ -17,9 +17,174 @@ ms.dyn365.ops.version: 10.0.16
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from a public feed. The Retail SDK includes the code samples, templates, and tools that are required to extend or customize Microsoft Dynamics 365 Commerce functionality. The SDK is published in different repositories (repos) in GitHub, depending on the extension components.
+This article explains to how to download Commerce software development kit (SDK) samples from GitHub and reference packages from a public feed. The Commerce SDK includes the code samples, templates, and tools that are required to extend or customize Microsoft Dynamics 365 Commerce functionality. The SDK is published in different repositories (repos) in GitHub, depending on the extension components.
 
-This article applies to Retail SDK version 10.0.16 or later. For more information about how to download earlier versions of the Retail SDK, see [Retail software development kit (SDK)](retail-sdk-overview.md).
+This article applies to Commerce SDK version 10.0.16 or later. For more information about how to download earlier versions of the Commerce SDK, see [Retail software development kit (SDK)](retail-sdk-overview.md).
+
+## Commerce SDK overview
+
+The Retail SDK includes the code, code samples, templates, and tools that are required to extend or customize existing Commerce functionality. The SDK supports rapid development, full MSBuild integration, and package generation. The following image shows the relationship between the development environment and the cloud components.
+
+![Commerce components.](media/developer-environment.png)
+
+## Extension components in the Dynamics 365 Commerce 
+
+The following tables provide information about the components in the Retail SDK that must be customized for different scenarios. Only the sample projects inside the RetailSDK\\SampleExtensions folder can be changed for extension purposes. No other files or projects/scripts in the Retail SDK should be changed.
+
+### Client (Store Commerce)
+
+<table>
+<tbody>
+<tr>
+<th>Scenario</th>
+<td>Extend the Store Commerce app for user experience (UX) changes, client logic, workflows, and simple validations.</td>
+</tr>
+<tr>
+<th>Commerce SDK reference</th>
+<td><a href="https://github.com/microsoft/Dynamics365Commerce.InStore">Store Commerce app samples</a>
+</td>
+</tr>
+<tr>
+<th>Technology</th>
+<td>TypeScript, HTML, and CSS</td>
+</tr>
+<tr>
+<th>Documentation</th>
+<td><a href="../pos-run-samples.md">Run the point of sale (POS) samples</a></td>
+</tr>
+</tbody>
+</table>
+
+### Commerce Runtime (CRT)
+
+<table>
+<tbody>
+<tr>
+<th>Scenario</th>
+<td>Extend CRT to add or change business logic (for example, logic for calculating tax, prices, or discounts).</td>
+</tr>
+<tr>
+<th>Commerce SDK reference</th>
+<td><a href="https://github.com/microsoft/Dynamics365Commerce.ScaleUnit">CRT samples</a>
+</td>
+</tr>
+<tr>
+<th>Technology</th>
+<td>C#</td>
+</tr>
+<tr>
+<th>Documentation</th>
+<td><a href="../commerce-runtime-extensibility.md">Commerce runtime (CRT) and Retail Server extensibility</a></td>
+</tr>
+</tbody>
+</table>
+
+### Headless Commerce APIs
+
+<table>
+<tbody>
+<tr>
+<th>Scenario</th>
+<td>Create a Headless Commerce API extension to expose new Commerce APIs to the client.</td>
+</tr>
+<tr>
+<th>Commerce SDK reference</th>
+<td><a href="https://github.com/microsoft/Dynamics365Commerce.ScaleUnit">Retail Server samples</a>
+</td>
+</tr>
+<tr>
+<th>Technology</th>
+<td>Open Data Protocol (OData) and C#</td>
+</tr>
+<tr>
+<th>Documentation</th>
+<td><a href="../retail-server-icontroller-extension.md">Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)</a>
+</td>
+</tr>
+</tbody>
+</table>
+
+### TypeScript proxy
+
+<table>
+<tbody>
+<tr>
+<th>Scenario</th>
+<td>A TypeScript proxy is required if new Headless Commerce API extensions must be consumed in the POS or E-Commerce clients.</td>
+</tr>
+<tr>
+<th>Commerce SDK reference</th>
+<td><a href="https://github.com/microsoft/Dynamics365Commerce.ScaleUnit">CommerceProxyGenerator</a>
+</td>
+</tr>
+<tr>
+<th>Technology</th>
+<td>OData and C#</td>
+</tr>
+<tr>
+<th>Documentation</th>
+<td><a href="../retail-server-icontroller-extension.md">Create a new Retail Server extension API (Retail SDK version 10.0.11 and later)</a>
+</td>
+</tr>
+</tbody>
+</table>
+
+### Hardware station
+
+<table>
+<tbody>
+<tr>
+<th>Scenario</th>
+<td>A Hardware station is required to add or change logic that is related to peripherals.</td>
+</tr>
+<tr>
+<th>Commerce SDK reference</th>
+<td><a href="https://github.com/microsoft/Dynamics365Commerce.InStore">src\HardwareStationSample samples</a>
+</td>
+</tr>
+<tr>
+<th>Technology</th>
+<td>C#</td>
+</tr>
+<tr>
+<th>Documentation</th>
+<td><a href="../hardware-device-extension.md">Integrate POS with a new hardware device</a></td>
+</tr>
+</tbody>
+</table>
+
+### Payment connector
+
+<table>
+<tbody>
+<tr>
+<th>Scenario</th>
+<td>Integrate the POS with a new payment connector.</td>
+</tr>
+<tr>
+<th>Commerce SDK reference</th>
+<td>\RetailSDK\SampleExtensions\HardwareStation\\Extension.PaymentSample
+<p>Open the HardwareStation.Extension.PaymentSample.sln file.</p>
+</td>
+</tr>
+<tr>
+<th>Technology</th>
+<td>C#</td>
+</tr>
+<tr>
+<th>Documentation</th>
+<td><a href="../end-to-end-payment-extension.md">Create an end-to-end payment integration for a payment terminal</a></td>
+</tr>
+</tbody>
+</table>
+
+## Best practices for naming
+
+The C\# source code in the Retail SDK uses the Contoso namespace. Therefore, it's easier to distinguish Microsoft types and extension types. If your extension code references a type from the Microsoft binary, use **Microsoft.Dynamics** for the reference, to distinguish between Microsoft libraries and the libraries from the extension. The extension libraries must not begin with the **Microsoft.Dynamics** name.
+
+## Deployment packages
+
+After extension development (CRT, Retail Server, database scripts, POS, and Hardware station), you can use the Retail SDK to generate deployment packages. Packages can be deployed to test, sandbox, and production environments. For more information, see [Create deployable packages](retail-sdk-packaging.md).
 
 The following sample repositories contain code samples, templates, and tools that are required to extend or customize existing Commerce functionality. Samples are published to repositories in GitHub based on the Commerce extension components. You don't have to close these repositories, instead, you can download and use the samples and template projects.
 
