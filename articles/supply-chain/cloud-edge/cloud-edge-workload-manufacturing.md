@@ -4,7 +4,7 @@
 title: Manufacturing execution workloads for cloud and edge scale units
 description: This article describes how manufacturing execution workloads work with cloud and edge scale units.
 author: johanhoffmann
-ms.date: 10/06/2020
+ms.date: 07/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 

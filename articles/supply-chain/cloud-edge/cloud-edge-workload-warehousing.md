@@ -4,7 +4,7 @@
 title: Warehouse management workloads for cloud and edge scale units
 description: This article provides information about the feature that enables scale units to run selected processes from your warehouse management workload.
 author: perlynne
-ms.date: 09/03/2021
+ms.date: 07/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 

@@ -2,7 +2,7 @@
 title: Warehouse orders for cloud and edge scale units
 description: This article provides information about the warehouse order capability that is used as part of the warehouse scale unit workload.
 author: perlynne
-ms.date: 04/22/2021
+ms.date: 07/05/2022
 ms.topic: article
 ms.search.form: WHSWarehouseOrderLine, WHSWarehouseReceiptEntry, PurchTable
 audience: Application User

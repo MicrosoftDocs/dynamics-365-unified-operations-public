@@ -4,7 +4,7 @@
 title: Message processor messages
 description: This article provides information about the Message processor messages feature for scale unit workloads.
 author: perlynne
-ms.date: 04/22/2021
+ms.date: 07/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 

@@ -4,7 +4,7 @@
 title: Warehouse inventory adjustment
 description: This article provides information about the Warehouse inventory adjustment journal and processing when you are using scale units.
 author: perlynne
-ms.date: 04/22/2021
+ms.date: 07/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
