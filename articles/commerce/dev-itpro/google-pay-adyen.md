@@ -20,7 +20,7 @@ ms.search.validFrom: 2017-06-20
 
 This article describes how to configure Google Pay with Adyen in Microsoft Dynamics 365 Commerce.
 
-Dynamics 365 Commerce offers an out-of-box integration for Google Pay when the Adyen payment gateway service is used. Google Pay is a digital wallet payment method that uses a Google Pay Merchant account in coordination with the Adyen payment service. When it's configured, the Google Pay button is available as a selectable payment method during online order checkout. When users select **Google Pay** in a supported browser or device, they are directed to complete their payment directly with the Google Pay service. They are then returned to the online storefront to complete the order.
+Dynamics 365 Commerce offers an out-of-box integration for Google Pay when the Adyen payment gateway service is used. Google Pay is a digital wallet payment method that uses a Google Pay Merchant account in coordination with the Adyen payment service. When it's configured, the Google Pay button is available as a selectable payment method during online order checkout. When users select **Google Pay** in a supported browser or device, they're directed to complete their payment directly with the Google Pay service. They're then returned to the online storefront to complete the order.
 
 When Google Pay is used with the express checkout module in Commerce, the user's payment account information automatically is prefilled in the checkout form to help the user get through the checkout process faster. Commerce includes a payment express module that enables express checkout behavior. The payment express module can be used in a fragment that is included on the checkout or cart page. The Dynamics 365 Payment Connector for Google Pay connector reference is used in addition to the Dynamics 365 Payment Connector for Adyen to enable both the payment express and regular checkout options when PayPal is configured. Google Pay can also be configured with Adyen payment terminals and the Commerce point of sale (POS) for in-store use.
 
@@ -53,7 +53,7 @@ To map the Google Pay payment method to card tender types for both POS and onlin
 1. In the **Type** field, enter **Wallet**.
 1. In the **Issuer** field, enter **Google**.
 1. On the Action Pane, select **Processor mapping** to open the **Processor payment mapping methods** dialog box.
-1. Under **Unmapped Processor Payment Methods**, you will see a list of unmapped processor payment methods, each of which is paired with the appropriate connector. To map unmapped Google Pay processor payment methods to card tender types, follow these steps for each card tender type:
+1. Under **Unmapped Processor Payment Methods**, you'll see a list of unmapped processor payment methods, each of which is paired with the appropriate connector. To map unmapped Google Pay processor payment methods to card tender types, follow these steps for each card tender type:
 
     1. Under **Card tender types**, select a card tender type.
     1. In the **Unmapped Processor Payment Methods** column, select both the **Dynamics 365 Payment Connector for Adyen** connector (for use at the POS) and the **Dynamics 365 Payment Connector for Google Pay** connector (for use in online channels).
@@ -90,7 +90,7 @@ To configure a Commerce online store to use Google Pay, follow these steps.
 
 ## Configure Commerce POS for Google Pay
 
-The POS configuration uses the setting of the hardware profile's **EFT service** field for the Dynamics 365 Payment Connector for Adyen. For information about how to configuring the electronic funds transfer (EFT) service for the Dynamics 365 Payment Connector for Adyen in Commerce headquarters, see [Set up a Dynamics 365 POS hardware profile section](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
+The POS configuration uses the setting of the hardware profile's **EFT service** field for the Dynamics 365 Payment Connector for Adyen. For information about how to configure the electronic funds transfer (EFT) service for the Dynamics 365 Payment Connector for Adyen in Commerce headquarters, see [Set up a Dynamics 365 POS hardware profile section](adyen-connector-setup.md#set-up-a-dynamics-365-pos-hardware-profile).
 
 The processor mapping for the Adyen connector captures the wallet card types that Google Pay uses at the POS terminal.
 
@@ -100,7 +100,7 @@ The Commerce payment express module works with supporting payment methods to giv
 
 When the payment express module is used with Google Pay, if customers select the Google Pay button in the **Payment Express** section, the Google Pay iframe window is opened. Users can then sign in to their Google account to use their account shipping address, billing address, email address, and Google Pay payment method of choice to pay for the transaction.
 
-When users complete the action in the Google Pay window, they are directed to the Commerce site checkout page, where the checkout form is prefilled with their Google Pay account details. After users return to the checkout page from the Google Pay window, they will see the following details:
+When users complete the action in the Google Pay window, they're directed to the Commerce site checkout page, where the checkout form is prefilled with their Google Pay account details. After users return to the checkout page from the Google Pay window, they'll see the following details:
 
 - In the payment express flow, the first delivery option that is available for the shipping address that was returned will be preselected for the customer.
 - When Google Pay is used, no contact email address is returned. Guest checkout users will have to enter an email address in the contact section of the checkout page. Signed-in users will have their contact data automatically filled in from their Dynamics customer account (the primary email address that they used for authentication).
@@ -220,7 +220,7 @@ The order in which the delivery methods are displayed in the payment express mod
 
 The checkout module also uses the delivery options module when modes of delivery are rendered during checkout. For more information, see [Delivery options module](../delivery-options-module.md).
 
-Modes of delivery are displayed as they are added to the **Modes of delivery** list in the online store.
+Modes of delivery are displayed as they're added to the **Modes of delivery** list in the online store.
 
 ## Additional resources
 
