@@ -48,26 +48,24 @@ To copy all content items to a new locale in Commerce site builder, follow these
 
 1. In site builder, navigate to your site.
 1. In the left navigation pane, select **Site settings**, and then select **Channels**.
-4.	Select **Create locale copy** from the command bar – locale copy side pane will open.
-5.	Ensure that the correct site has been selected in the **Select site**.
-6.	Select the source for the content from **Source channel**.
-7.	Select the same channel in the **Destination channel**.
-8.	Select the source locale in “Source locale” and the new locale in **Destination locale**.
-9.	Select **Copy locale**.
-10.	Notification toast will appear confirming that the locale copy has been started.
+1. On the command bar, select **Create locale copy** from  – locale copy side pane will open.
+1. In the **Create locale copy** on the right, confirm that the correct site has been selected under **Source site**.
+1. On the **Source channel** drop-down menu, select the source channel.
+1. On the **Destination channel** drop-down menu, select the same source channel.
+1. On the **Source localel** drop-down menu, select the source locale. in “” and the new locale in ****.
+1. On the **Destination locale** drop-down menu, select the new locale.
+1. Select **Copy locale**. A notification will appear confirming that the locale copy operation has started.
 
 > [!NOTE]
-> You may also copy content between different channels.
+> You can also copy content between different channels.
 
 ## Monitor the status of the locale copy
 
 To monitor the status of the locale copy, follow these steps.
 
 1. In site builder, navigate to your site.
-1. In the left navigation pane, select **Site settings**, and then select **Channels**.
-4.	Select **Jobs**.
-5.	From the list of jobs in the view, select the one you wish to monitor.
-6.	Details will appear on the right side of the view.
+1. In the left navigation pane, select **Site settings**, and then select **Jobs**.
+1. Under **Current jobs**, select the job you want to monitor. Job details will appear on the flyout menu on the right.
 
 
 
