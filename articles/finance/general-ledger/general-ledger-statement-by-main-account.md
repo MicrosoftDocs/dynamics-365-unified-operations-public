@@ -31,7 +31,7 @@ This article explains how to use [Electronic Reporting (ER)](../../fin-ops-core/
 
 The **General ledger statement by main account** report in Excel format is available in Dynamics 365 Finance as of version 10.0.27.
 
-In addition to the [ledger reports](view-journal-entries-transactions#ledger-reports.md), you can use the **General ledger statement by main account** report in Excel format to view general ledger transactions. For each transaction, the report shows the following details.
+In addition to the [ledger reports](view-journal-entries-transactions.md#ledger-reports), you can use the **General ledger statement by main account** report in Excel format to view general ledger transactions. For each transaction, the report shows the following details.
 
 | Column name | Data source description |
 |---|---|
