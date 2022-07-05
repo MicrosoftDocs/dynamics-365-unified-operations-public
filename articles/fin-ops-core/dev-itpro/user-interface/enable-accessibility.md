@@ -161,7 +161,7 @@ Complex interactions can be learned, but current state isn’t always easy to de
 
 #### Describe applicable context menu
 
-Finance and Operations apps provide a context menu. When the application author has provided functionality to the current control or context, you can announce that functionality.
+Finance and operations apps provide a context menu. When the application author has provided functionality to the current control or context, you can announce that functionality.
 
 - *aria-haspopup* - Indicates that the element has a pop-up context menu or sub-level menu.
 
