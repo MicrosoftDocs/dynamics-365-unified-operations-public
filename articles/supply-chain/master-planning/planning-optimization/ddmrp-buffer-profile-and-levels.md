@@ -153,108 +153,98 @@ The following illustration summarizes these zone calculation results using the f
 
 ## Implement buffers in Supply Chain Management
 
-This section describes how to implement your buffer zone strategy in Supply Chain Management.
+This section describes how to implement your buffer zone strategy in Supply Chain Management. It assumes that you have already done the analyses and calculations outlined in the first half of this article.
 
-### Set up buffer values for a decoupling point
+### <a name="set-up-buffers"></a>Set up buffers for a decoupling point item
 
 Use the following procedure to set up buffer values for a decoupling point:
 
 1. Go to **Product information management \> Products \> Released products**
-1. Select a released item that you want to set up
-1. Click the **Plan** tab
-1. Click **Item coverage** under **Coverage** button group
-1. Select a record for decoupling point
-1. Click the **General** tab
-1. Set **Buffer values over time** = *Checked*
-1. The confirmation page opens.
-1. Click **Yes**, as a result the system will disable **Minimum**, **Reorder point** and **Maximum** fields and will begin calculating these values automatically. The result of this calculations you can see on the **Buffer values** tab
+1. Select a released item that is set up as a decoupling point (see also [Inventory positioning](ddmrp-inventory-positioning.md)).
+1. On the Action Pane, open the **Plan** tab and select **Item coverage**.
+1. The **Item coverage** page opens. Select an item coverage record that creates a decoupling point (this record will show the name of a **Coverage group** that is set up to create decoupling points).
+1. Open the **General** tab.
+1. If you want the system to calculate buffer values automatically based on your sales history, forecasts, and coverage group settings, then do the following steps: <!-- KFM: I *think* this is what we are doing here. Please confirm. -->
+    1. Set **Buffer values over time** to *Yes*.
+    1. A dialog opens to tell you that you manual buffer settings (**Minimum**, **Reorder point**, and **Maximum**) will be reset if you continue. Select *Yes* to keep the new setting.
+1. If you prefer to enter your buffer settings manually, then do the following steps:
+    1. Set **Buffer values over time** to *No*.
+    1. Set **Minimum** to the value you have calculated for the minimum stock level (red zone), as described earlier in this topic.
+    1. Set **Reorder point** to the value you have calculated for the reorder point (yellow zone), as described earlier in this topic.
+    1. Set **Maximum** to the value you have calculated for the maximum stock level (green zone), as described earlier in this topic.
 
-> [!NOTE]
-> If you set **Buffer values over time** = *Unchecked*, you can set values for the **Minimum**, **Reorder point** and **Maximum** fields manually.
+### <a name="calc-lead-time"></a>Calculate or enter decoupled lead times
 
-Work with the **Buffer values**
+For items where you choose to allow the system to [calculate your buffer zones automatically](set-up-buffers)), use the following procedure to calculate or enter decoupled lead times for a decoupling point item:
 
-1. Preconditions are a decoupling point is set up, the **Buffer values over time** = *Checked* for this decoupling point.
+1. Open the **Item coverage** page for your decoupling point item (see also [Set up buffers for a decoupling point item](set-up-buffers)).
+1. Select an item coverage record that creates a decoupling point.
+1. Open the **Buffer values** tab.
+1. If no time periods are shown on the grid, then on the Action Pane, open the **Buffer values** tab and select **Add time periods**. The system then populates the grid with rows for each daily or weekly time period, depending on whether the coverage group is set to use a **Min, max, and reorder-point period** of *Daily* or *Weekly*. <!-- KFM: How many rows does it create? How often do we have to do this? -->
+1. Select a time period where you would like to calculate the decoupled lead time. <!-- KFM: Can we choose more than one? -->
+1. On the Action Pane, open the **Buffer values** tab and select **Calculate decoupled lead time**.
+1. The **Calculate decoupled lead time dialog** opens. Make the following settings:
+    - **BOM** – Select the BOM you want to run the calculation on. <!-- KFM: More info is needed here. What BOM is this, where does it come from? -->
+    - **Date** – Select the date you want to run the calculation on.  <!-- KFM: More info is needed here. Didn't we select a date already? What date is this? -->
+    - **Quantity** – Enter the quantity you want to run the calculation for. <!-- KFM: More info is needed here. What does this have to do with the lead time calculation? -->
+1. Select **OK** to run the calculation and close the **Calculate decoupled lead time dialog** dialog. The **Decoupled lead time** column for your selected time period now shows the calculated value. <!-- KFM: Please confirm this is what should happen here. For me, nothing happened. -->
+1. Inspect the **Decoupled lead time** calculated for each row and adjust each value as needed. For rows where the result is zero, insufficient data was available so you must enter a manual estimate for any row where you want to make buffer calculations later. <!-- KFM: Please confirm this. -->
 
-1. Go to **Product information management \> Products \> Released products**
+### <a name="calc-adu"></a>Calculate or enter average daily usage
 
-1. Select a released item that you want to set up
+For items where you choose to allow the system to [calculate your buffer zones automatically](set-up-buffers)), use the following procedure to calculate or enter average daily usage for a decoupling point item:
 
-1. Click the **Plan** tab
+1. Open the **Item coverage** page for your decoupling point item (see also [Set up buffers for a decoupling point item](set-up-buffers)).
+1. Select an item coverage record that creates a decoupling point.
+1. Open the **Buffer values** tab.
+1. If no time periods are shown on the grid, then on the Action Pane, open the **Buffer values** tab and select **Add time periods**. The system then populates the grid with rows for each daily or weekly time period, depending on whether the [coverage group](ddmrp-inventory-positioning.md) is set to use a **Min, max, and reorder-point period** of *Daily* or *Weekly*. Default values for the **Lead time factor**, and **Variability factor** are also taken from the coverage group, though you can edit these for each row if needed. <!-- KFM: Strange that order cycle doesn't appear in this grid. Also strange that the ADU set on the General tab isn't copied here. -->
+1. Select a time period where you would like to calculate average daily usage. <!-- KFM: Can we choose more than one? -->
+1. On the Action Pane, open the **Buffer values** tab and select **Calculate average daily usage**. The system now attempts to collect data required for the average daily use calculation, as defined for the [coverage group](ddmrp-inventory-positioning.md). Do one of the following steps:
+    - If the required data is available, then calculation results are added to the **Average daily usage** column. Inspect the values and adjust them if needed based on your own estimates.
+    - If the required data isn't available, no values are added automatically. In this case, manually enter estimated values for each row where you are planning to calculate buffer values.
 
-1. Click **Item coverage** under **Coverage** button group
+### Calculate and apply buffer values
 
-1. Select a record for decoupling point
+For items where you choose to allow the system to [calculate your buffer zones automatically](set-up-buffers)), you can manually trigger the calculation of buffer values by doing the following steps:
 
-1. Click the **Buffer values** tab
+1. For the relevant decoupling-point item, [configure the buffer calculation](set-up-buffers), [calculate or enter decoupled lead times](calc-lead-time) and [calculate or enter average daily usage](calc-adu) for all relevant time periods, as described previously in this article.
+1. Open the **Item coverage** page for your decoupling point item and go to the **Buffer values** tab, which should already show a list of time periods.
+1. Select the time periods where you would like to calculate buffer values. Each row that you select must already have a non-zero values in the **Average daily usage** and **Decoupled lead time** columns.
+1. Edit the **Demand adjustment factor** field for one or more rows as needed. The system will apply this factor to the **Average daily usage** value in all buffer calculations where that value is used. This factor enables you to adjust for how demand fluctuates by date, such as for holidays or seasonal items.
+1. On the Action Pane, open the **Buffer values** tab and select **Calculate min, max and reorder point quantities**.
+1. The system calculates and populates the **Calculated min**, **Calculated reorder point** and **Calculated max** columns in the grid on the **Item coverage** page.
+1. Inspect all of the calculated values and make adjustments as needed.
+    > [!TIP]
+    > You can adjust values and rerun the calculations as often as you like to see how your settings affect the result. This is a good way to get a feel for how all the values work, and can help you to fine tune your factors for when calculations are run automatically by a batch job. <!-- KFM: I added this. Please confirm. -->
 
-1. Click **Add time period**s under the **Periodic setup button** group on the **Buffer values** tab of the ribbon
+1. When you are satisfied with the calculations results, you must apply them, otherwise they will have no effect. When you apply a calculation for one or more rows, values from the **Calculated min**, **Calculated reorder**, and **Calculated max** fields are copied to the **Min**, **Reorder point**, and **Max** columns, respectively. On the Action Pane, open the **Buffer values** tab and select one of the following buttons from the **Take action** group:
+    - **Accept all calculations** – Applies all calculated values in the grid.
+    - **Accept calculations for selected rows** – Only applies calculated values for the selected rows
+    - **Discard all calculations** – Discards all calculated values for min, max, and reorder points in the grid.
+    - **Discard calculations for selected rows** – Discards all calculated values for min, max, and reorder points for the selected rows.
+1. All rows where the **Min**, **Reorder point**, and **Max** fields contain non-zero values will be used to generated planned orders as needed during future master planning runs. <!-- KFM: I added this. Please confirm. -->
 
-1. The grid on the **Buffer values** tab of the **Item coverage** page is populated with **From date** and **To date** values
+### Schedule automatic buffer value calculations
 
-1. Click **Calculate decoupled lead time** under the **Calculate** button group on the the **Buffer values** tab of the ribbon
+Once you have your DDMRP settings fully set up and have confirmed they work as expected, you'll probably want to set up a batch job to periodically recalculate average daily usage and related buffer values as needed based on actual consumption data and/or updated forecasts. This only applies for items where you choose to allow the system to [calculate your buffer zones automatically](set-up-buffers)).
 
-1. The **Calculate decoupled lead time** page shows
-
-1. Set **BOM** = the BOM you want to run calculation and **Date** and **Quantity** for this calculation
-
-1. Click **OK** to run the calculation process
-
-1. The system calculates the **Decoupled lead time** for the selected date
-
-1. Select dates you want to calculate average daily usage
-
-1. Click **Calculate** **average daily usage** under the **Calculate** button group on the the **Buffer values** tab of the ribbon
-
-1. The system calculates the value of **Average daily usage** for the selected dates in case you have any usage data. If not, set the value of **Average daily usage** manually in the grid
-
-1. Select dates you want to calculate min, max and reorder point quantities
-
-1. Click **Calculate min, max and reorder point quantities** under the **Calculate** button group on the the **Buffer values** tab of the ribbon
-
-1. The system calculates and populates the **Calculated min**, **Calculated reorder point** and **Calculated max** fields in the grid on the **Item coverage** page.
-
-1. Click **Accept all calculations** under the **Take action** button group on the the **Buffer values** tab of the ribbon. You also can use **Accept calculations from selected rows** depends on what calculation you want to accept or **Decline all calculations** or **Decline calculations from selected rows** in case you want to decline calculations
-
-1. The **Min**, **Reorder** **point** and **Max** fields will be populated based on the calculated valued for accepted records
-
-Calculating the Buffer values in batch mode
+Use the following procedure to schedule automatic buffer value calculations:
 
 1. Go to **Master planning \> Master planning \> DDMRP \> Calculate buffer values**
+1. The **Calculate buffer values** dialog opens. Make the following settings:
+    - **Calculate average daily usage** – <!--KFM: describe the effect of each setting (yes/no) and the conditions under which you would choose each of them -->
+    - **Calculate decoupled lead time** – <!--KFM: describe the effect of each setting (yes/no) and the conditions under which you would choose each of them -->
+    - **Calculate buffer values** – <!--KFM: describe the effect of each setting (yes/no) and the conditions under which you would choose each of them -->
+    - **Accept calculation for min, max and reorder point** – <!--KFM: describe the effect of each setting (yes/no) and the conditions under which you would choose each of them -->
+    - **Master plan** – <!--KFM: describe this setting and how/when to use it. -->
+1. To limit the set of records on which this batch job should run, expand the **Records to include** FastTab and select **Filter** to open the **Inquiry** dialog, which works the same as it does for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management
+1. On the **Run in the background** FastTab, specify how, when, and how often the selected calculations should be made for the selected items. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
+1. Click **OK** to add the new job to a batch queue for execution.
 
-1. The **Calculate buffer values** form opens
+### Review and recalculate decoupled lead times for all items
 
-1. Set **Calculate average daily usage** = *Yes*
+Use the following procedure to review and recalculate all decoupled lead times available in your legal entity (company): <!--KFM: correct? -->
 
-1. Set **Calculate decoupled lead time** = *Yes*
-
-1. Set **Calculate buffer values** = *Yes*
-
-1. Set **Accept calculation for min, max and reorder point** = *Yes*
-
-1. Set filter to run this calculation for the selected items
-
-1. Set **Batch processing** = *Yes* on the**Run in the background** FastTab
-
-1. Se Recurrence if you want
-
-1. Click OK to put new task in a batch queue for execution.
-
-As a result, the system will calculate the buffer values on a date when the batch task is executed.
-
-Calculating the **Decoupling lead time**
-
-1. Go to **Master planning \> Master planning \> DDMRP \> Decoupled lead time**
-
-1. Click **OK**
-
-1. The **Decoupled lead time** form opens
-
-1. Select the line you want to check the Decoupled lead time calculation
-
-1. Click the selected record to open a page with detailed information
-
-1. Expand the **General** tab
-
-1. Verify calculated values in **Decoupled lead time** and **Lead time** fields
-
+1. Go to **Master planning \> Master planning \> DDMRP \> Decoupled lead time**.
+1. The **Decoupled lead time** page opens. Browse and filter the list as needed to find the information you are looking for. To see even more information for an item, select its link in the **Item number** column.
+1. If you want to recalculate the decoupled lead time for any item, select the item and then select **Calculate decoupled lead time** from the Action Pane. The **Calculate decoupled lead time** dialog opens, which works the same way as it does when [calculating decoupled lead times](calc-lead-time) for the **Item coverage** page for the same item.

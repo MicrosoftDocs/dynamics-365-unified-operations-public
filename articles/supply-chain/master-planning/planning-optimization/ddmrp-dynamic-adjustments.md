@@ -17,6 +17,8 @@ ms.dyn365.ops.version: 10.0.28
 
 [!include [banner](../includes/banner.md)]
 
+<!-- KFM: I think this topic isn't necessary because we now describe how to use this factor in the topic about setting up buffer calculations. I don't think we have any unique info here. -->
+
 The article describes DDMRP dynamic adjustments, which flex buffer zones up or down based on market changes or future events.
 
 In the **Buffer values** tab you see the periods for which you will have the different buffer values, remember these values are calculated by the system according to the equations that we have shown before.
