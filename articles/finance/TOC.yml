@@ -1122,6 +1122,8 @@
           href: general-ledger/view-journal-entries-transactions.md
         - name: Trial balance with transactional detail report
           href: public-sector/general-ledger-public-sector-trial-balance.md      
+        - name: General ledger statement by main account
+          href: general-ledger/general-ledger-statement-by-main-account.md
         - name: Standard Audit File for Tax (SAF-T) electronic report
           href: general-ledger/standard-audit-file.md      
       - name: Period-end close
@@ -1718,6 +1720,8 @@
             href: general-ledger/dual-currency-for-tax.md          
           - name: Sales tax specification by ledger transaction report
             href: general-ledger/Sales-tax-specification-by-ledger-transaction-report.md
+          - name: General ledger statement by main account with sales tax specification report
+            href: general-ledger/general-ledger-statement-by-main-account.md
           - name: Standard Audit File for Tax (SAF-T) electronic report
             href: general-ledger/standard-audit-file.md      
           - name: Set up sales tax settlement periods
