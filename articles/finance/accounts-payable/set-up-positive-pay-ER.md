@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Set up and generate positive pay files by using Electronic reporting
-description: This topic explains how to set up positive pay by using Electronic reporting.
+description: This article explains how to set up positive pay by using Electronic reporting.
 author: panolte
 ms.date: 03/20/2022
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Set up positive pay files by using Electronic reporting
 
-This topic explains how to set up positive pay and generate positive pay files by using Electronic reporting.
+This article explains how to set up positive pay and generate positive pay files by using Electronic reporting.
 
 > [!NOTE] 
 > Before using the **Generate bank positive pay file** function, you will need to refresh the entity list first.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cost accounting home page
-description: This topic provides a list of the help topics and other resources that are available for Cost accounting.
+description: This article provides a list of the help topics and other resources that are available for Cost accounting.
 author: aprilolson
 ms.date: 04/25/2018
 ms.topic: article

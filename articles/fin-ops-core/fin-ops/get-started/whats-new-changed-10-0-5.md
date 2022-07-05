@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Finance and Operations apps version 10.0.5 (October 2019)
-description: This topic describes features that are either new or changed in Finance and Operations apps version 10.0.5. This version releases in October.
+description: This article describes features that are either new or changed in Finance and Operations apps version 10.0.5. This version releases in October.
 author: tonyafehr
 ms.date: 10/01/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes features that are either new or changed in Finance and Operations apps, including Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management version 10.0.5. This version has a build number of 10.0.197. While the general availability date is in October, the new features are available for early release in August. For more information about version 10.0.5, see [Additional resources](whats-new-changed-10-0-5.md#additional-resources).
+This article describes features that are either new or changed in Finance and Operations apps, including Microsoft Dynamics 365 Finance and Microsoft Dynamics 365 Supply Chain Management version 10.0.5. This version has a build number of 10.0.197. While the general availability date is in October, the new features are available for early release in August. For more information about version 10.0.5, see [Additional resources](whats-new-changed-10-0-5.md#additional-resources).
 
 
 To learn about the new features and changes in the latest releases of Dynamics 365 Retail, see [What's new or changed in Dynamics 365 for Retail version 10.0.5](../../../commerce/get-started/whats-new-10-0-5.md).
@@ -107,12 +107,12 @@ Wondering about upcoming and recently released capabilities in any of our busine
 Check out the [Dynamics 365: 2019 release wave 2 plan](/dynamics365-release-plan/2019wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated.
+The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article describes features that have been removed or deprecated.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 

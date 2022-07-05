@@ -1,6 +1,6 @@
 ---
 title: X++ string runtime functions
-description: This topic describes the string run-time functions.
+description: This article describes the string run-time functions.
 author: RobinARH
 ms.date: 08/15/2019
 audience: Developer
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the string run-time functions.
+This article describes the string run-time functions.
 
 ## match
 

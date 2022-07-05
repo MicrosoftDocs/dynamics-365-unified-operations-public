@@ -2,7 +2,7 @@
 # required metadata
 
 title: Group records and aggregate calculations by using GROUPBY data sources
-description: This topic explains how you can use GROUPBY type data sources in Electronic reporting (ER).
+description: This article explains how you can use GROUPBY type data sources in Electronic reporting (ER).
 author: NickSelin
 ms.date: 03/18/2022
 ms.topic: article

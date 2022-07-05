@@ -89,7 +89,7 @@ Go to the [Microsoft Dynamics 365 Roadmap](/dynamics365/release-plans/) to see w
 
 #### Blogs
 
-You can find opinions, news, and other information about Accounts receivable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 Finance and Operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).
+You can find opinions, news, and other information about Accounts receivable and other solutions on the [Microsoft Dynamics 365 blog](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise) and the [Microsoft Dynamics 365 finance and operations - Financials blog](https://community.dynamics.com/365/financeandoperations/b/financials).
 
 The [Microsoft Dynamics Operations Partner Community Blog](https://community.dynamics.com/partner/b/operationspartnercommunityblog) gives Microsoft Dynamics Partners a single resource where they can learn what is new and trending in Dynamics 365.
 
@@ -109,3 +109,4 @@ Check out the how-to videos that are now available on the [Microsoft Dynamics 36
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

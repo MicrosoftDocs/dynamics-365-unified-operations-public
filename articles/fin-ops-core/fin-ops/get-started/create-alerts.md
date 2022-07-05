@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create alert rules
-description: This topic provides information about alerts and explains how to create an alert rule.
+description: This article provides information about alerts and explains how to create an alert rule.
 author: RichdiMSFT
 ms.date: 10/08/2020
 ms.topic: article

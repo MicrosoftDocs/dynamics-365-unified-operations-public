@@ -2,7 +2,7 @@
 # required metadata
 
 title: Order synchronization error related to the default payment service
-description: This topic provides troubleshooting guidance that can help fix an error that might occur when an online order is synced.
+description: This article provides troubleshooting guidance that can help fix an error that might occur when an online order is synced.
 author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting guidance that can help fix an error that might occur when an online order is synced.
+This article provides troubleshooting guidance that can help fix an error that might occur when an online order is synced.
 
 ## Description
 

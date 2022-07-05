@@ -1,6 +1,6 @@
 ---
 title: Type registration
-description: This topic describes how to register types from the process automation framework.
+description: This article describes how to register types from the process automation framework.
 author: RyanCCarlson2
 ms.date: 09/10/2020
 ms.topic: article
@@ -52,7 +52,7 @@ The following example shows a process for a scheduled type. Note the following p
 
 - A background process doesn't have to set the **Parameter** tab list, because background processes don't support parameters.
 - The type name isn't shown in the UI. The name should be a developer-created string such as **VendorInvoiceBatchPosting**. It's used internally as a key to reference your type for various purposes. It **cannot** be a label.
-- The type name is used heavily with the **SysPlugIn** pattern. Most of the interfaces that are implemented for the process automation framework follow the **SysPlugIn** pattern and require that the type name be supplied by the **ExportMetadataAttribute**. In most cases in this pattern, the framework invokes the implementation of an interface only for the type that is being operated on, not for other types. Code examples in this topic and related topics follow this pattern.
+- The type name is used heavily with the **SysPlugIn** pattern. Most of the interfaces that are implemented for the process automation framework follow the **SysPlugIn** pattern and require that the type name be supplied by the **ExportMetadataAttribute**. In most cases in this pattern, the framework invokes the implementation of an interface only for the type that is being operated on, not for other types. Code examples in this article and related topics follow this pattern.
 
 ```xpp
 using System.ComponentModel.Composition;
@@ -194,7 +194,7 @@ The **ProcessScheduleTypeRegistrationItem** class is used as a part of type regi
 | `public ProcessScheduleTypeCompanyScope parmCompanyScope(ProcessScheduleTypeCompanyScope _companyScope = companyScope)` | This method determines whether the process is a single-company process or a global process. A single-company process sets the company context in a batch, depending on the company that the user is in when a series is created. If the scope is global, the company context is ignored, and all jobs are in **dat**. |
 | `public LabelId parmLabelId(LabelId _labelId = labelId)` | The label that this method returns is shown to users and represents the display name for your type. An example is **Vendor payment proposal**. |
 | `public className parmProcessAutomationTaskClassName(ClassName _processAutomationTaskClassName = processAutomationTaskClassName)` | The class name that this method returns is the class name of the class that will implement the **ProcessAutomationTask** interface. |
-| `public NoYes parmIsEnabled(NoYes _isEnabled = isEnabled)` | This method determines whether the type that you're registering is enabled by default. If your type is feature-managed, a default value is taken from the state of the feature. Be sure to implement the enabled and disabled feature management events. Enable and disable your type in the process automation framework in the appropriate way, by using **ProcessScheduleTypeRegistration.enableOrDisableType** method. Example code is shown earlier in this topic. |
+| `public NoYes parmIsEnabled(NoYes _isEnabled = isEnabled)` | This method determines whether the type that you're registering is enabled by default. If your type is feature-managed, a default value is taken from the state of the feature. Be sure to implement the enabled and disabled feature management events. Enable and disable your type in the process automation framework in the appropriate way, by using **ProcessScheduleTypeRegistration.enableOrDisableType** method. Example code is shown earlier in this article. |
 | `public List parmParameterTabItemList(List _parameterTabList = parameterTabList)` | A process can have many parameter pages in the UI. These parameter pages contain parameters that are specific to the process. They are surfaced as form parts in the **Create series** wizard and edit occurrence dialog box. For each parameter page, an instance of the **ProcessSchedulelTypeRegistrationParameterTabItem** class must be constructed and returned in the list. If the process doesn't require parameter pages, return **null**. For more information, see [Process parameters](process-parameters.md). |
 | `public static ProcessScheduleTypeRegistrationItem construct()` | This method constructs an instance of the **ProcessScheduleTypeRegistrationItem** class. |
 

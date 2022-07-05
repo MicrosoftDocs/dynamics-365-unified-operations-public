@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fixed asset impairment accounting on cash-generating units for Japan
-description: This topic gives the user an overview of the conceptual model for impairment accounting for Japan. 
+description: This article gives the user an overview of the conceptual model for impairment accounting for Japan. 
 author: kfend
 ms.date: 07/28/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic introduces the features for fixed asset impairment, and the primary objective is to give you an overview of the conceptual model for impairment accounting. 
+This article introduces the features for fixed asset impairment, and the primary objective is to give you an overview of the conceptual model for impairment accounting. 
 
 Fixed assets might be susceptible to impairment (decline) of their value because of factors such as poor management, new competition, and technological innovations. Impairment losses are stated in a profit and loss account. The impairment value is measured by comparing the value of the fixed asset or income generating unit with its recoverable amount. The recoverable amount is the highest value that can be obtained from selling the fixed asset or income that is generated from operation of the fixed asset. In Japan, impairment of fixed assets is done in accordance with No. 6 of Japanese generally accepted accounting principles (GAAP), where a two-step method is used. The first step is a recognition test of impairment loss, and the second step is measurement of the impairment loss. After impairment, the recoverable amount will be the new net book value of the fixed asset for future depreciation calculation. The impairment work process includes the following major tasks.
 

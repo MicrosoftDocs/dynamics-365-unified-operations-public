@@ -2,7 +2,7 @@
 # required metadata
 
 title: Estonia overview
-description: This topic provides an overview of functionality specific to Estonia.
+description: This article provides an overview of functionality specific to Estonia.
 author: kfend
 ms.date: 07/25/2019
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include[banner](../includes/banner.md)]
 
-This topic includes information and links to resources that should be considered for legal entities with a primary address in Estonia.
+This article includes information and links to resources that should be considered for legal entities with a primary address in Estonia.
 
 -   [VAT statement details for Estonia](emea-est-vat-statement-details.md)
 -   [Fixed assets disposal for Estonia and Lithuania](emea-credit-note-reverse-fixed-asset-sale.md)

@@ -2,7 +2,7 @@
 # required metadata
 
 title: List of ER functions of the text category
-description: This topic provides information about the text functions that are supported in Electronic reporting (ER).
+description: This article provides information about the text functions that are supported in Electronic reporting (ER).
 author: NickSelin
 ms.date: 02/28/2022
 ms.prod: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Electronic reporting (ER) text functions can be used to perform operations on data sources of the *String* data type. This topic provides a summary of these functions.
+Electronic reporting (ER) text functions can be used to perform operations on data sources of the *String* data type. This article provides a summary of these functions.
 
 ## List of supported functions
 

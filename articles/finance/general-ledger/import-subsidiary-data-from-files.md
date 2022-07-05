@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import subsidiary data from files
-description: This topic explains how to prepare data from external systems so that it can be imported into Microsoft Dynamics 365 Finance.
+description: This article explains how to prepare data from external systems so that it can be imported into Microsoft Dynamics 365 Finance.
 author: jinniew
 ms.date: 10/09/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to prepare data from external systems so that it can be imported into Microsoft Dynamics 365 Finance. You use the **Consolidate with import** page (**Consolidations \> Consolidate with import**) to prepare the transfer of subsidiary data from external systems.
+This article explains how to prepare data from external systems so that it can be imported into Microsoft Dynamics 365 Finance. You use the **Consolidate with import** page (**Consolidations \> Consolidate with import**) to prepare the transfer of subsidiary data from external systems.
 
 1. Create a subsidiary legal entity for the consolidation. For information about how to create legal entities, see [Create a legal entity](../../fin-ops-core/fin-ops/organization-administration/tasks/create-legal-entity.md). For more information, see [Prepare a legal entity for use in the consolidation process](prepare-company-for-consolidation.md) and [Set up a subsidiary legal entity for consolidation](set-up-subsidiary-company-for-consolidation.md).
 

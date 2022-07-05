@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 Commerce authentication flows
-description: This topic provides an overview of the various authentication flows in Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of the various authentication flows in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 05/24/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.11
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of the various authentication flows in Microsoft Dynamics 365 Commerce. Although the Dynamics 365 Commerce solution currently supports several authentication scenarios and flows, the core authentication infrastructure of the Commerce Scale Unit (also known as the headless commerce engine) is fully based on [OpenID Connect](https://openid.net/connect/).
+This article provides an overview of the various authentication flows in Microsoft Dynamics 365 Commerce. Although the Dynamics 365 Commerce solution currently supports several authentication scenarios and flows, the core authentication infrastructure of the Commerce Scale Unit (also known as the headless commerce engine) is fully based on [OpenID Connect](https://openid.net/connect/).
 
 ## Authentication methods
 

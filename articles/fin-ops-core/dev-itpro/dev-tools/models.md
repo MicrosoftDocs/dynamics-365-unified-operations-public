@@ -1,6 +1,6 @@
 ---
 title: Models and packages
-description: This topic describes the concept of models and packages. It explains how to create new models, update parameters, and visualize dependencies between models.
+description: This article describes the concept of models and packages. It explains how to create new models, update parameters, and visualize dependencies between models.
 author: jorisdg
 ms.date: 02/07/2020
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the concept of models and packages. It also explains how to use the development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.
+This article describes the concept of models and packages. It also explains how to use the development tools in Microsoft Visual Studio to create new models, how to update the parameters of existing models, and how to visualize dependencies between models.
 
 To work with models in the model store, you use tools in Microsoft Visual Studio. You can create new models and change parameters for existing models.
 

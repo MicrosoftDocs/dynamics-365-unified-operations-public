@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure the Help experience for Finance and Operations apps
-description: This topic provides information about the components of the Help system for some Microsoft Dynamics 365 apps.
+description: This article provides information about the components of the Help system for some Microsoft Dynamics 365 apps.
 author: margoc
 ms.date: 08/11/2021
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-In this topic, you will find an overview of the components of the Help system for Finance and Operations apps, such as Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Human Resources. The topic also explains how to connect these components and provides a summary of the process for creating custom Help.
+In this article, you will find an overview of the components of the Help system for Finance and Operations apps, such as Microsoft Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, and Dynamics 365 Human Resources. The article also explains how to connect these components and provides a summary of the process for creating custom Help.
 
 ## Help architecture
 

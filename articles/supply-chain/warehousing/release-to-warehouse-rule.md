@@ -2,7 +2,7 @@
 # required metadata
 
 title: Release to warehouse rule
-description: This topic provides information about the Release to warehouse rule feature, which provides flexibility during release to the warehouse. It adds a configuration option that controls whether the system allows partially reserved order lines to be released.
+description: This article provides information about the Release to warehouse rule feature, which provides flexibility during release to the warehouse. It adds a configuration option that controls whether the system allows partially reserved order lines to be released.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -82,7 +82,7 @@ You can also use these scenarios as guidance for the feature when you work on a 
 This scenario shows how the feature works for warehouses that are set to **Require full reservation**.
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
-1. For warehouse _62_, set the **Requirement for inventory reservation** field to **Require full reservation**, as described in the [Set the release to warehouse rule for each warehouse](#set-option-warehouse) section earlier in this topic.
+1. For warehouse _62_, set the **Requirement for inventory reservation** field to **Require full reservation**, as described in the [Set the release to warehouse rule for each warehouse](#set-option-warehouse) section earlier in this article.
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 1. Select **New** to create a sales order.
 1. In the **Create sales order** dialog box, set the following values:
@@ -116,7 +116,7 @@ This scenario shows how the feature works for warehouses that are set to **Requi
 This scenario shows how the feature works for warehouses that are set to **Allow partial release**.
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
-1. For warehouse _62_, set the **Requirement for inventory reservation** field to **Allow partial reservation**, as described in the [Set the release to warehouse rule for each warehouse](#set-option-warehouse) section earlier in this topic.
+1. For warehouse _62_, set the **Requirement for inventory reservation** field to **Allow partial reservation**, as described in the [Set the release to warehouse rule for each warehouse](#set-option-warehouse) section earlier in this article.
 1. As you did in the [previous scenario](#scenario1), go to **Sales and marketing \> Sales orders \> All sales orders**, and create a sales order for customer account _US-004_ from warehouse _62_. Add the following two order lines:
 
     - **Line 1:** Set the **Item number** field to _A0001_, the **Quantity** field to _2_, and the **Unit** field to _Pcs_.

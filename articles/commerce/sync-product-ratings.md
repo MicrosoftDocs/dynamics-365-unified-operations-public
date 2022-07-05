@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sync product ratings in Dynamics 365 Commerce
-description: This topic describes how to sync product ratings in Microsoft Dynamics 365 Commerce.
+description: This article describes how to sync product ratings in Microsoft Dynamics 365 Commerce.
 author:  gvrmohanreddy 
 ms.date: 02/06/2020
 ms.topic: article
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to sync product ratings in Microsoft Dynamics 365 Commerce.
+This article describes how to sync product ratings in Microsoft Dynamics 365 Commerce.
 
 To consume product ratings in omnichannels, such as at the point of sale (POS) and in call centers, product ratings from the ratings and reviews service must be imported into the Commerce channel database. When product ratings are made available in omnichannels, they can help customers indirectly during their interactions with sales associates.
 
-This topic describes following tasks:
+This article describes following tasks:
 
 1. Configure **Product ratings sync job** as a batch job to synchronize product ratings from the **Ratings and Reviews service**.
 1. Verify that the batch job for product rating synchronization was successful.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create returns in POS
-description: This topic describes how to initiate returns for cash-and-carry transactions or customer orders in the Microsoft Dynamics 365 Commerce Point of Sale (POS) application.
+description: This article describes how to initiate returns for cash-and-carry transactions or customer orders in the Microsoft Dynamics 365 Commerce Point of Sale (POS) application.
 author: hhainesms
 ms.date: 04/27/2022
 ms.topic: article
@@ -19,7 +19,7 @@ ms.dyn365.ops.version: Release 10.0.20
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to initiate returns for cash-and-carry transactions or customer orders in the Microsoft Dynamics 365 Commerce point of sale (POS) app.
+This article describes how to initiate returns for cash-and-carry transactions or customer orders in the Microsoft Dynamics 365 Commerce point of sale (POS) app.
 
 > [!NOTE]
 > In the Commerce version 10.0.20 release and later, a new feature that is named **Unified return processing experience in POS** is available. This feature provides a more consistent and unified return process in POS, regardless of the transaction type (cash-and-carry transaction or customer order) or the original channel that the order was created in. We recommend that all organizations turn on this new feature to help improve the overall reliability of return processing through POS.

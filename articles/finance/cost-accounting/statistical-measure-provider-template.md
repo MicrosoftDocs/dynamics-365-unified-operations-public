@@ -2,7 +2,7 @@
 # required metadata
 
 title: Provider templates for statistical dimension members and measure providers
-description: This topic provides information about statistical dimension members and statistical measure provider templates. 
+description: This article provides information about statistical dimension members and statistical measure provider templates. 
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article

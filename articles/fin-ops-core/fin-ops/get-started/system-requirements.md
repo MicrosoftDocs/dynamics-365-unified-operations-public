@@ -2,7 +2,7 @@
 # required metadata
 
 title: System requirements for cloud deployments
-description: This topic lists the system requirements for the current version of Finance and Operations apps.
+description: This article lists the system requirements for the current version of Finance and Operations apps.
 author: sericks007
 ms.date: 02/08/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the system requirements for the current version of Finance and Operations apps. You should verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
+This article lists the system requirements for the current version of Finance and Operations apps. You should verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 
 ## Supported web browsers
 

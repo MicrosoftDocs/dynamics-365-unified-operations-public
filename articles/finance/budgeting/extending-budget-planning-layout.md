@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extend the budget planning layout
-description: This topic explains how to extend the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout.
+description: This article explains how to extend the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout.
 author: panolte
 ms.date: 07/24/2020
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Developer
 # ms.devlang: 
 ms.reviewer: kfend
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.4
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the process for extending the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout. This process might be required if you're comparing information over multiple years, if many scenarios are being evaluated, or if weekly or daily periods are being evaluated. This topic was written for a developer audience.
+This article describes the process for extending the number of columns in the BudgetPlanLineActiveView table to accommodate additional data in the budget plan layout. This process might be required if you're comparing information over multiple years, if many scenarios are being evaluated, or if weekly or daily periods are being evaluated. This article was written for a developer audience.
 
 - **BudgetPlanLineActiveView table** – This table contains the pivoted budget planning data. Out of the box, it contains 36 monetary columns and 36 quantity columns. This default configuration lets users manipulate the budget plan layout so that they can show and compare up to three years of monthly planning data.
 - **BudgetPlanWorksheetEntity entity** – This entity is a counterpart of the BudgetPlanLineActiveView table and serves as a data source for the Microsoft Excel worksheet. The columns in this entity map to the columns in the BudgetPlanLineActiveView table. Any changes in the table must be replicated in the entity.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Header module
-description: This topic covers header modules and describes how to create page headers in Microsoft Dynamics 365 Commerce.
+description: This article covers header modules and describes how to create page headers in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-This topic covers header modules and describes how to create page headers in Microsoft Dynamics 365 Commerce.
+This article covers header modules and describes how to create page headers in Microsoft Dynamics 365 Commerce.
 
 In Dynamics 365 Commerce, a page header is configured as a page fragment that includes the header, promo banner, and cookie consent modules. 
 

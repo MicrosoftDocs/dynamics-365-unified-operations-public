@@ -2,7 +2,7 @@
 # required metadata
 
 title: In-place upgrade process for on-premises environments
-description: This topic provides the detailed process for upgrading on-premises environments from versions 7.x to 10.0.x.  
+description: This article provides the detailed process for upgrading on-premises environments from versions 7.x to 10.0.x.  
 author: laneswenka
 ms.date: 01/14/2021
 ms.topic: article
@@ -12,7 +12,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.x
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides the detailed process for upgrading on-premises environments of Finance and Operations from version 7.x to 10.0.x.  
+This article provides the detailed process for upgrading on-premises environments of Finance and Operations from version 7.x to 10.0.x.  
 
 > [!NOTE]
 > Please perform the upgrade with your sandbox environment before upgrading your production environment.
@@ -87,7 +87,7 @@ An overview of each path is given below:
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
     ```
     > [!NOTE] 
-    > Substitute `<DB-Name>` with the appropriate value in your case (for example, AXDB). If you would like to edit more values, refer to the appendix of this topic.
+    > Substitute `<DB-Name>` with the appropriate value in your case (for example, AXDB). If you would like to edit more values, refer to the appendix of this article.
 
     The script will run a database connection test to check that the information you provide is valid.
 

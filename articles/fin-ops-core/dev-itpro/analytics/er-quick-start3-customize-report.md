@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customize Electronic reporting configurations to generate an electronic document
-description: This topic explains how to customize the Microsoft-provided Electronic reporting (ER) configurations that are used to generate a custom electronic document.
+description: This article explains how to customize the Microsoft-provided Electronic reporting (ER) configurations that are used to generate a custom electronic document.
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -35,9 +35,9 @@ The [Electronic reporting (ER) framework](general-electronic-reporting.md) lets 
 
 ## Overview
 
-For the example in this topic, you must specify a federal tax identification code as a new custom attribute of every customer that you electronically invoice. Therefore, you must customize the structure of the invoice that is currently used, by adding a new item that must be filled with the tax code in every e-invoice that is generated.
+For the example in this article, you must specify a federal tax identification code as a new custom attribute of every customer that you electronically invoice. Therefore, you must customize the structure of the invoice that is currently used, by adding a new item that must be filled with the tax code in every e-invoice that is generated.
 
-The procedures in this topic explain how a user in the System Administrator, Electronic Reporting Developer, or Electronic Reporting Functional Consultant role can perform the following tasks in your Finance instance:
+The procedures in this article explain how a user in the System Administrator, Electronic Reporting Developer, or Electronic Reporting Functional Consultant role can perform the following tasks in your Finance instance:
 
 - [Configure the minimal set of ER parameters that is required to start to use the ER framework](#ConfigureER).
 - [Import the initial versions of the standard ER configurations that are provided to generate e-invoices](#ImportERConfigurations1).

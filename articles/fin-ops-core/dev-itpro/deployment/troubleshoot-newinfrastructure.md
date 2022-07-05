@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot environments deployed through self-service deployment
-description: This topic explains how to troubleshoot and diagnose issues in an environment that was deployed using the self-service deployment experience.
+description: This article explains how to troubleshoot and diagnose issues in an environment that was deployed using the self-service deployment experience.
 author: laneswenka
 ms.date: 12/18/2018
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1.1
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This topic explains how you can troubleshoot issues on an environment that was deployed using the [self-service deployment](infrastructure-stack.md) experience. When a user reports an issue, you can use various tools in Lifecycle Services (LCS) for troubleshooting. The rich set of telemetry data helps you build a storyboard view that shows what that user and other users were doing when the issue was reported.
+This article explains how you can troubleshoot issues on an environment that was deployed using the [self-service deployment](infrastructure-stack.md) experience. When a user reports an issue, you can use various tools in Lifecycle Services (LCS) for troubleshooting. The rich set of telemetry data helps you build a storyboard view that shows what that user and other users were doing when the issue was reported.
 
 To open the **Environment Monitoring** dashboard, follow the steps listed below:
 

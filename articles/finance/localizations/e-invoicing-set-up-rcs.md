@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up Regulatory Configuration Service (RCS)
-description: This topic explains how to set up Regulatory Configuration Service (RCS).
+description: This article explains how to set up Regulatory Configuration Service (RCS).
 author: dkalyuzh
 ms.date: 02/09/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up Regulatory Configuration Service (RCS).
+This article explains how to set up Regulatory Configuration Service (RCS).
 
 ## Turn on Globalization features
 

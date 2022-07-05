@@ -2,7 +2,7 @@
 # required metadata
 
 title: VAT declaration for Indonesia (ID-00004)
-description: This topic explains how to configure and generate the SPT Masa PPN 1111 (Pajak Pertambahan Nilai) form for Indonesia.
+description: This article explains how to configure and generate the SPT Masa PPN 1111 (Pajak Pertambahan Nilai) form for Indonesia.
 author: sndray
 ms.date: 11/30/2021
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.20
 
 # VAT declaration for Indonesia (ID-00004)
 
-This topic explains how to set up and generate the value-added tax (VAT) return form for legal entities in Indonesia. This form is often referred as *SPT Masa PPN 1111 (Pajak Pertambahan Nilai)*. Corporate taxpayers should issue it to report the calculated amount of tax so that they can report VAT (PPN) and Luxury Goods Sales Tax (PPNnBM) that are owed. In addition to being used to report payments or pay taxes, the SPT Masa PPN 1111 form is used to report property, liabilities, and tax deposits from cutters or collectors.
+This article explains how to set up and generate the value-added tax (VAT) return form for legal entities in Indonesia. This form is often referred as *SPT Masa PPN 1111 (Pajak Pertambahan Nilai)*. Corporate taxpayers should issue it to report the calculated amount of tax so that they can report VAT (PPN) and Luxury Goods Sales Tax (PPNnBM) that are owed. In addition to being used to report payments or pay taxes, the SPT Masa PPN 1111 form is used to report property, liabilities, and tax deposits from cutters or collectors.
 
 The **SPT Masa PPN 1111 (Pajak Pertambahan Nilai)** page in Microsoft Dynamics 365 Finance includes the following reports:
 
@@ -55,7 +55,7 @@ Implementation of the VAT return form for Indonesia is based on Electronic repor
 
 In the **Electronic reporting** workspace, import the **VAT Declaration Excel (ID)** ER format from the repository. This format is based on the **Tax declaration model** configuration and uses the **Tax declaration model mapping** configuration. These additional configurations will be automatically imported.
 
-After you've finished downloading the ER configurations from Microsoft Dynamics Lifecycle Services (LCS) or the Global repository, complete the remaining steps in this topic.
+After you've finished downloading the ER configurations from Microsoft Dynamics Lifecycle Services (LCS) or the Global repository, complete the remaining steps in this article.
 
 ## Set up application-specific parameters
 

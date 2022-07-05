@@ -2,7 +2,7 @@
 # required metadata
 
 title: Search engine optimization (SEO) considerations for your site
-description: This topic covers search engine optimization (SEO) considerations for your site from development to production.
+description: This article covers search engine optimization (SEO) considerations for your site from development to production.
 author: psimolin
 ms.date: 05/25/2022
 ms.topic: article
@@ -20,7 +20,7 @@ ms.search.validFrom: 2019-10-31
 
 [!include [banner](includes/banner.md)]
 
-This topic covers search engine optimization (SEO) considerations for your site from development to production.
+This article covers search engine optimization (SEO) considerations for your site from development to production.
 
 ## A site that is under development
 

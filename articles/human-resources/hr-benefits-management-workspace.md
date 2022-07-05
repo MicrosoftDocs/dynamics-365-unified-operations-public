@@ -2,7 +2,7 @@
 # required metadata
 
 title: Benefits management workspace
-description: This topic describes the Benefits management workspace in Dynamics 365 Human Resources.
+description: This article describes the Benefits management workspace in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 01/03/2022
 ms.topic: article
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [preview feature](./includes/preview-feature.md)]
 
-This topic describes the **Benefits management** workspace in Dynamics 365 Human Resources.
+This article describes the **Benefits management** workspace in Dynamics 365 Human Resources.
 
 > [!NOTE]
 > To view the **Benefits management** workspace, you must first enable the **(Preview) Benefits management workspace** feature in Feature management. For more information about enabling preview features, see [Manage features](hr-admin-manage-features.md).<br><br>![Enable Benefits management workspace.](./media/hr-benefits-management-workspace-enable.png)

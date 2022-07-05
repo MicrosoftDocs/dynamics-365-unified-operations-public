@@ -2,7 +2,7 @@
 # required metadata
 
 title: Budget planning data allocation
-description: This topic describes the allocation methods that are available in Microsoft Dynamics 365 Finance and how they can be used. 
+description: This article describes the allocation methods that are available in Microsoft Dynamics 365 Finance and how they can be used. 
 author: panolte
 ms.date: 03/05/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the allocation methods that are available in Microsoft Dynamics 365 Finance and how they can be used.  
+This article describes the allocation methods that are available in Microsoft Dynamics 365 Finance and how they can be used.  
 
 You can distribute the data in a budget plan in a number of ways to accurately portray the projected amounts.
 

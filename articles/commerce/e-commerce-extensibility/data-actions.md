@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data actions
-description: This topic covers data actions in Microsoft Dynamics 365 Commerce.
+description: This article covers data actions in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/31/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers data actions in Microsoft Dynamics 365 Commerce.
+This article covers data actions in Microsoft Dynamics 365 Commerce.
 
 Data actions are JavaScript functions that are used in the Dynamics 365 Commerce architecture to help fetch and map data that is required by modules across applications.
 

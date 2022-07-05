@@ -2,7 +2,7 @@
 # required metadata
 
 title: Social share module 
-description: This topic covers social share modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This article covers social share modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.14
 
 [!include [banner](includes/banner.md)]
 
-This topic covers social share modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers social share modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 Social share modules allow users to share e-Commerce site page URLs on social media such as Facebook, Twitter, Pinterest, and LinkedIn. Site page URLs can also be shared via email. Social share modules are commonly used on product details pages (PDPs) to help users share product information.
 

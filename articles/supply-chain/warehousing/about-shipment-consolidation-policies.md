@@ -2,7 +2,7 @@
 # required metadata
 
 title: Shipment consolidation policies
-description: This topic provides an overview of the functionality that provides flexible configuration of shipment consolidation policies.
+description: This article provides an overview of the functionality that provides flexible configuration of shipment consolidation policies.
 author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article

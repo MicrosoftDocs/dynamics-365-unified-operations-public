@@ -2,7 +2,7 @@
 # required metadata
 
 title: Advanced filtering and query syntax
-description: This topic describes the filtering and query options for the Advanced filter/sort dialog and the matches operator in the Filter pane or grid column header filters.  
+description: This article describes the filtering and query options for the Advanced filter/sort dialog and the matches operator in the Filter pane or grid column header filters.  
 author: jasongre
 ms.date: 03/09/2020
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic describes the filtering and query options that are available when you use the Advanced filter/sort dialog or the **matches** operator in the Filter pane or grid column header filters.
+This article describes the filtering and query options that are available when you use the Advanced filter/sort dialog or the **matches** operator in the Filter pane or grid column header filters.
 
 ## Advanced query syntax
 

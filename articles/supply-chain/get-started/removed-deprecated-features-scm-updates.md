@@ -2,7 +2,7 @@
 # required metadata
 
 title: Removed or deprecated features in Dynamics 365 Supply Chain Management
-description: This topic describes features that have been removed, or that are planned for removal in Dynamics 365 Supply Chain Management.
+description: This article describes features that have been removed, or that are planned for removal in Dynamics 365 Supply Chain Management.
 author: kamaybac
 ms.date: 04/27/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 33
 
 [!include [banner](../includes/banner.md)]
 
-This topic will be updated as new removed or deprecated features are documented for Dynamics 365 Supply Chain Management.
+This article will be updated as new removed or deprecated features are documented for Dynamics 365 Supply Chain Management.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: ICMS tax fiscal documents for Brazil
-description: This topic explains the concept of tax fiscal documents and describes the requirements for generating them.
+description: This article explains the concept of tax fiscal documents and describes the requirements for generating them.
 author: sndray
 ms.date: 08/08/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the concept of tax fiscal documents and describes the requirements for generating them.
+This article explains the concept of tax fiscal documents and describes the requirements for generating them.
 
 In Brazil, some types of fiscal documents have no effect on vendors, customers, or inventory balances. These fiscal documents enable legal entities to enter tax adjustments, transfer between other subsidiaries, and recover taxes in installments for a period. To register these operations in the legal entity, specific fiscal documents must be generated that affect the General ledger and fiscal books reporting.
 
@@ -91,7 +91,7 @@ Recoverable ICMS long term (deferred account)
 
 **Long term asset** (deferred account) balance: R$ 9.000,00
 
-**ICMS Tax adjustment of month** **Finance and Operations: Issue an Incoming Tax fiscal document**
+**ICMS Tax adjustment of month** **finance and operations: Issue an Incoming Tax fiscal document**
 
 Recoverable ICMS tax account
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sign up for and install the Electronic Invoicing service
-description: This topic provides information about how to sign up for and install the Electronic Invoicing service.
+description: This article provides information about how to sign up for and install the Electronic Invoicing service.
 author: dkalyuzh
 ms.date: 02/07/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to sign up for and install the Electronic Invoicing service. There are four steps to this process. Steps 1 through 3 are required, and step 4 is optional.
+This article provides information about how to sign up for and install the Electronic Invoicing service. There are four steps to this process. Steps 1 through 3 are required, and step 4 is optional.
 
 ### Step 1: Sign up for Regulatory Configuration Service
 

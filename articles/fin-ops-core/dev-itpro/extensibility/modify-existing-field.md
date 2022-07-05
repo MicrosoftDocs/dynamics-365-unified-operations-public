@@ -1,6 +1,6 @@
 ---
 title: Modify existing fields in a table through extension
-description: This topic provides information about how to modify an existing field in a table.
+description: This article provides information about how to modify an existing field in a table.
 author: ivanv-microsoft
 ms.date: 04/24/2019
 ms.topic: article

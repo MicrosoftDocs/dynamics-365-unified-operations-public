@@ -1,6 +1,6 @@
 ---
 title: Extend the RunBase class
-description: This topic contains an example that shows how a RunBase class can be augmented end to end.
+description: This article contains an example that shows how a RunBase class can be augmented end to end.
 author: MichaelFruergaardPontoppidan
 ms.date: 02/28/2019
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-When you extend functionality of the application suite, you will encounter classes that extend the **RunBase** class. This topic shows how a **RunBase** class can be augmented end to end.
+When you extend functionality of the application suite, you will encounter classes that extend the **RunBase** class. This article shows how a **RunBase** class can be augmented end to end.
 
 For example, you want to extend the SysUserLogCleanup class. Out of the box, this class can delete records from the SysUserLog table. However, you want to archive these records to a different table before they are deleted.
 

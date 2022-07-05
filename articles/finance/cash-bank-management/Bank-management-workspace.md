@@ -2,7 +2,7 @@
 # required metadata
 
 title: Bank management workspace
-description: This topic provides information about the Bank management workspace. This workspace shows information that's related to company bank accounts.   
+description: This article provides information about the Bank management workspace. This workspace shows information that's related to company bank accounts.   
 author: kweekley
 ms.date: 01/12/2018
 ms.topic: article

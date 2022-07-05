@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get started with Electronic invoicing for Saudi Arabia
-description: This topic provides information that will help you get started with Electronic invoicing for Saudi Arabia.
+description: This article provides information that will help you get started with Electronic invoicing for Saudi Arabia.
 author: ikondo
 ms.date: 11/08/2021
 ms.topic: article
@@ -31,22 +31,22 @@ ms.dyn365.ops.version: AX 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you get started with Electronic invoicing for Saudi Arabia in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Services (RCS). These steps complement the steps that are described in [Get started with Electronic invoicing](e-invoicing-get-started.md).
+This article provides information that will help you get started with Electronic invoicing for Saudi Arabia in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management. It guides you through the configuration steps that are country/region-dependent in Regulatory Configuration Services (RCS). These steps complement the steps that are described in [Get started with Electronic invoicing](e-invoicing-get-started.md).
 
 ### Prerequisites
 
-Before you complete the steps in this topic, the following prerequisites must be met: 
+Before you complete the steps in this article, the following prerequisites must be met: 
 
-- Import the **Saudi Arabian electronic invoice (SA)** electronic invoicing feature into RCS from the Global repository. For more information, see the [Import an Electronic invoicing feature from the Microsoft configuration provider](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) section in the "Get started with Electronic invoicing" topic.
+- Import the **Saudi Arabian electronic invoice (SA)** electronic invoicing feature into RCS from the Global repository. For more information, see the [Import an Electronic invoicing feature from the Microsoft configuration provider](e-invoicing-get-started.md#import-an-electronic-invoicing-feature-from-the-microsoft-configuration-provider) section in the "Get started with Electronic invoicing" article.
 - In Microsoft Dataverse, configure virtual entities for Finance and Supply Chain Management. For more information, see [Configure Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md).
 - Enable the **CustomerPaymentMethodEntity** virtual entity. For more information, see [Enable Microsoft Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
-- Add the Dataverse endpoint as a connected application in the RCS instance. For more information, see the [Create a connected application](e-invoicing-get-started-service-administration.md#create-a-connected-application) section in the "Get started with Electronic invoicing service administration" topic.
+- Add the Dataverse endpoint as a connected application in the RCS instance. For more information, see the [Create a connected application](e-invoicing-get-started-service-administration.md#create-a-connected-application) section in the "Get started with Electronic invoicing service administration" article.
 
 ## Country-specific configuration for the Saudi Arabian electronic invoice (SA) Electronic invoicing feature
 
 Follow these steps before you deploy the application setup to your connected Finance or Supply Chain Management application.
 
-This section complements the [Country-specific configuration of application setup](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) section in the "Get started with Electronic invoicing" topic that was mentioned earlier.
+This section complements the [Country-specific configuration of application setup](e-invoicing-get-started.md#country-specific-configuration-of-application-setup) section in the "Get started with Electronic invoicing" article that was mentioned earlier.
 
 1. In RCS, in the **Globalization feature** workspace, in the **Features** section, select the **Electronic invoicing** tile.
 2. On the **Electronic invoicing features** page, verify that the **Saudi Arabian electronic invoice (SA)** Electronic invoicing feature is selected.
@@ -61,8 +61,8 @@ This section complements the [Country-specific configuration of application setu
 
 8. On the **Setups** tab, select **Edit** for the selected configuration. 
 9. In the **Processing pipeline** section, turn on the **Export result** option for the **Transform document** action.
-10. Complete, publish, and deploy the **Saudi Arabian electronic invoice (SA)** feature to the service environment. For more information, see the [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) section in the "Get started with Electronic invoicing" topic.
-11. Deploy the **Saudi Arabian electronic invoice (SA)** feature to the connected application. For more information, see the [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) section in the "Get started with Electronic invoicing" topic.
+10. Complete, publish, and deploy the **Saudi Arabian electronic invoice (SA)** feature to the service environment. For more information, see the [Deploy the Electronic invoicing feature to Service environment](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-service-environment) section in the "Get started with Electronic invoicing" article.
+11. Deploy the **Saudi Arabian electronic invoice (SA)** feature to the connected application. For more information, see the [Deploy the Electronic invoicing feature to Connected application](e-invoicing-get-started.md#deploy-the-electronic-invoicing-feature-to-connected-application) section in the "Get started with Electronic invoicing" article.
 
 ## Additional resources
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Production order posting
-description: This topic provides information about different types of production order posting.  
+description: This article provides information about different types of production order posting.  
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -22,7 +22,7 @@ ms.author: raprofit
 
 # Production postings
 
-This topic provides information about different types of posting in the production order process.
+This article provides information about different types of posting in the production order process.
 
 
 ## Material consumption

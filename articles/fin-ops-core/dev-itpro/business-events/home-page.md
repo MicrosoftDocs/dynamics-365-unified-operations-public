@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events overview
-description: This topic provides information about business events, which allow external systems to receive notifications from Finance and Operations apps.
+description: This article provides information about business events, which allow external systems to receive notifications from finance and operations apps.
 author: Sunil-Garg
 ms.date: 04/22/2022
 ms.topic: overview
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 2019-02-28
 [!include[banner](../includes/banner.md)]
 [!include[preview banner](../includes/preview-banner.md)]
 
-Business events provide a mechanism that lets external systems receive notifications from Finance and Operations applications. In this way, the systems can perform business actions in response to the business events.
+Business events provide a mechanism that lets external systems receive notifications from finance and operations applications. In this way, the systems can perform business actions in response to the business events.
 
 Business events occur when a business process is run. During a business process, users who participate in it perform business actions to complete the tasks that make up the business process. 
 
@@ -153,7 +153,7 @@ this information to subscribe to more specific topics as required.
 
 -   **Category** – This is the business event category as displayed in the
     business event catalog. This is useful as a filter criterion when a common
-    topic is used for receiving business events from multiple categories and
+    article is used for receiving business events from multiple categories and
     subscribers want to only receive business events for the category that they are
     interested in.
 
@@ -227,3 +227,4 @@ To ensure backward compatibility, the following behavior must be understood.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

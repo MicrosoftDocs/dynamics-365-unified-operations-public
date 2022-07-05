@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales of taxable goods where there is a reverse charge
-description: This topic provides information about the sale of taxable goods where there is a reverse charge.
+description: This article provides information about the sale of taxable goods where there is a reverse charge.
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article

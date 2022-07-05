@@ -2,7 +2,7 @@
 # required metadata
 
 title: Russia overview
-description: This topic provides an overview of functionality that is specific to Russia.
+description: This article provides an overview of functionality that is specific to Russia.
 author: kfend
 ms.date: 02/02/2022
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about functionality that supports Russian regulations. 
+This article provides information about functionality that supports Russian regulations. 
 
 ## General ledger
 

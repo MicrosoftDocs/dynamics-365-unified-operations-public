@@ -1,6 +1,6 @@
 ---
 title: Configure Inventory Visibility
-description: This topic describes how to configure Inventory Visibility.
+description: This article describes how to configure Inventory Visibility.
 author: yufeihuang
 ms.date: 05/27/2022
 ms.topic: article
@@ -18,11 +18,11 @@ ms.dyn365.ops.version: 10.0.21
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes how to configure Inventory Visibility using the Inventory Visibility app in Power Apps.
+This article describes how to configure Inventory Visibility using the Inventory Visibility app in Power Apps.
 
 ## <a name="introduction"></a>Introduction
 
-Before you start to work with Inventory Visibility, you must complete the following configuration as described in this topic:
+Before you start to work with Inventory Visibility, you must complete the following configuration as described in this article:
 
 - [Data source configuration](#data-source-configuration)
 - [Partition configuration](#partition-configuration)
@@ -36,7 +36,7 @@ Before you begin, install and set up the Inventory Visibility Add-in as describe
 
 ## <a name="configuration"></a>The Configuration page of the Inventory Visibility app
 
-In Power Apps, the **Configuration** page of the [Inventory Visibility app](inventory-visibility-power-platform.md) helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default settings. Additionally, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems. The remaining sections of this topic explain how to use each part of the **Configuration** page.
+In Power Apps, the **Configuration** page of the [Inventory Visibility app](inventory-visibility-power-platform.md) helps you set up the on-hand configuration and soft reservation configuration. After the add-in is installed, the default configuration includes the value from Microsoft Dynamics 365 Supply Chain Management (the `fno` data source). You can review the default settings. Additionally, based on your business requirements and the inventory posting requirements of your external system, you can modify the configuration to standardize the way that inventory changes can be posted, organized, and queried across the multiple systems. The remaining sections of this article explain how to use each part of the **Configuration** page.
 
 After the configuration is completed, be sure to select **Update Configuration** in the app.
 
@@ -50,7 +50,7 @@ The Inventory Visibility Add-in adds several new features to your Power Apps ins
 | *OnHandMostSpecificBackgroundService* | This feature provides an inventory summary for products, together with all dimensions. The inventory summary data will periodically be synced from Inventory Visibility. For more information, see [Inventory summary](inventory-visibility-power-platform.md#inventory-summary). |
 | *OnhandChangeSchedule* | This optional feature enables the on-hand change schedule and available to promise (ATP) features. For more information, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md). |
 | *Allocation* | This optional feature enables Inventory Visibility to have the ability for inventory protection (ringfencing) and oversell control. For more information, see [Inventory Visibility inventory allocation](inventory-visibility-allocation.md). |
-| *Enable warehouse items in Inventory Visibility* | This optional feature enables Inventory Visibility to support items that are enabled for advanced warehouse processes (WHS items). For more information, see [Inventory Visibility support for WHS items](inventory-visibility-whs-support.md). |
+| *Enable warehouse items in Inventory Visibility* | This optional feature enables Inventory Visibility to support items that are enabled for warehouse management processes (WMS). For more information, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md). |
 
 ## <a name="get-service-endpoint"></a>Find the service endpoint
 
@@ -58,7 +58,7 @@ If you don't know the correct Inventory Visibility service endpoint, open the **
 
 ## <a name="data-source-configuration"></a>Data source configuration
 
-Each data source represents a system that your data comes from. Example data source names include `fno` (which stands for "Dynamics 365 Finance and Operations apps") and `pos` (which stands for "point of sale"). By default, Supply Chain Management is set up as a default data source (`fno`) in Inventory Visibility.
+Each data source represents a system that your data comes from. Example data source names include `fno` (which stands for "Dynamics 365 finance and operations apps") and `pos` (which stands for "point of sale"). By default, Supply Chain Management is set up as a default data source (`fno`) in Inventory Visibility.
 
 > [!NOTE]
 > The `fno` data source is reserved for Supply Chain Management. If your Inventory Visibility Add-in is integrated with a Supply Chain Management environment, we recommend that you not delete configurations that are related to `fno` in the data source.
@@ -388,7 +388,7 @@ When you make a reservation, you might want to know whether on-hand inventory is
 
 By setting up the mapping from the physical measure to the calculated measure, you enable the Inventory Visibility service to automatically validate reservation availability, based on the physical measure.
 
-Before you set up this mapping, the physical measures, calculated measures, and their data sources must be defined on the **Data source** and **Calculated measure** tabs of the **Configuration** page in Power Apps (as described earlier in this topic).
+Before you set up this mapping, the physical measures, calculated measures, and their data sources must be defined on the **Data source** and **Calculated measure** tabs of the **Configuration** page in Power Apps (as described earlier in this article).
 
 To define the soft reservation mapping, follow these steps.
 
@@ -804,3 +804,4 @@ The following table shows the default reservation hierarchy.
 | `ExtendedDimension8` | 33 |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update environments from version 8.0 to 10.0.X
-description: This topic explains the steps required to update existing Finance and Operations 8.0 environments to 10.0.X application releases.
+description: This article explains the steps required to update existing Finance and Operations 8.0 environments to 10.0.X application releases.
 author: laneswenka
 ms.date: 02/20/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the steps required to update existing Finance and Operations 8.0 environments to 10.0.X application releases.
+This article explains the steps required to update existing Finance and Operations 8.0 environments to 10.0.X application releases.
 
 ## Background
 
@@ -89,7 +89,7 @@ Now you are ready to map this branch to a new development environment and compil
 After you have compiled in a developer environment and there are no errors to resolve, start a build in Azure DevOps using your new 10.0.X build environment agent that was setup earlier. When this is complete, a deployable package artifact will be attached to your build results. Download this package and upload it to the Lifecycle Services Asset Library.  This single package should have all of your extensions and ISV solutions.
 
 ## Merge the deployable package with the 10.0.X binary update package
-In your project's **Asset Library**, locate both your new 10.0.X software deployable package (your customization package that includes your ISVs) and the 10.0.X PU2X binary update package that was saved in Step 1 at the beginning of the topic. Highlight both packages and select **Merge**. This will combine the files into a merged update package. You can now apply this package to your various test environments.
+In your project's **Asset Library**, locate both your new 10.0.X software deployable package (your customization package that includes your ISVs) and the 10.0.X PU2X binary update package that was saved in Step 1 at the beginning of the article. Highlight both packages and select **Merge**. This will combine the files into a merged update package. You can now apply this package to your various test environments.
 
 > [!NOTE]
 > You can't move this merged package between different Lifecycle Services projects. The merge references other packages in your Asset library, and those packages won't be found in a different project.
@@ -109,7 +109,7 @@ This error is transient and can be ignored.  To bypass, hit the **Resume** butto
 The package can be applied to your 8.0 environments and it will update your source code.  Compiling of your extension packages should not be impacted.  If you had overlayering and have removed objects from the ApplicationSuite package, and try to recompile it, you may run in to errors.  Until this is resolved, please redeploy your developer environments on 10.0.X and sync in your source code from version control.
 
 ### Cannot find 10.0.X binary update package on the All Binary Updates tile on the My environment details page
-It was originally communicated that the package would be found on the **All Binary Updates** tile. To prevent customers who want to simply get the latest binaries for release 8.0 from accidentally updating to release 10.0.X, we have moved the binary package to the Shared Asset Library. This topic has been updated to reflect this change.
+It was originally communicated that the package would be found on the **All Binary Updates** tile. To prevent customers who want to simply get the latest binaries for release 8.0 from accidentally updating to release 10.0.X, we have moved the binary package to the Shared Asset Library. This article has been updated to reflect this change.
 
 ### Deployment of my environment fails with error on duplicate objects
 By default, in Visual Studio when an object is extended, it is created with a name of Object.*Extension1*. This name could clash if Microsoft introduces new extensions of the same object. If this occurs, your deployment will fail with an error similar to the following:

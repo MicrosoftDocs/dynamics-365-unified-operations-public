@@ -2,7 +2,7 @@
 # required metadata
 
 title: Service description for Finance and Operations apps
-description: This topic provides the service description for Finance and Operations apps.
+description: This article provides the service description for Finance and Operations apps.
 author: tomhig
 ms.date: 04/27/2022
 ms.topic: article

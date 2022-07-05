@@ -2,7 +2,7 @@
 # required metadata
 
 title: Improve performance of ER solutions by reducing the number of table fields that are fetched at runtime
-description: This topic explains how you can help improve performance by reducing the number of table fields that are fetched at runtime.
+description: This article explains how you can help improve performance by reducing the number of table fields that are fetched at runtime.
 author: NickSelin
 ms.date: 05/12/2022
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.28
 
 You can design [Electronic reporting](general-electronic-reporting.md) (ER) [formats](er-overview-components.md#format-components-for-outgoing-electronic-documents) that generate outgoing documents in various formats. When a document is generated, an ER format calls data sources that were configured in a corresponding ER [model mapping](er-overview-components.md#model-mapping-component). To configure access to application tables, queries, or entities for record retrieval, you can use ER data sources of the *Table records* type. By default, a data source of the *Table records* type retrieves the values of all fields in the requested records. However, you can configure this type of data source so that it fetches only the field values that are required for the running ER format. This configuration helps reduce memory consumption of the application server that performs data retrieval and further record caching.
 
-To learn more about how to limit the list of fetched fields of data sources of the *Table records* type, complete the example in this topic.
+To learn more about how to limit the list of fetched fields of data sources of the *Table records* type, complete the example in this article.
 
 ## Example: Reduce the number of table fields that are fetched at runtime
 
@@ -54,7 +54,7 @@ Follow the steps in [Configure the ER framework](er-quick-start2-customize-repor
 
 ### Import the sample ER configurations
 
-If you haven't yet completed the example in the [Design a new ER solution to print a custom report](er-quick-start1-new-solution.md) topic, download and locally store the XML files for the following configurations of the provided ER solution.
+If you haven't yet completed the example in the [Design a new ER solution to print a custom report](er-quick-start1-new-solution.md) article, download and locally store the XML files for the following configurations of the provided ER solution.
 
 | Content description            | File name |
 |--------------------------------|-----------|

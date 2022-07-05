@@ -1,6 +1,6 @@
 ---
 title: Inventory Visibility tips
-description: This topic provides a few tips that you should consider when you set up and use the Inventory Visibility Add-in.
+description: This article provides a few tips that you should consider when you set up and use the Inventory Visibility Add-in.
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article

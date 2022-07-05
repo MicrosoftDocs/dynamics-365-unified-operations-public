@@ -2,7 +2,7 @@
 # required metadata
 
 title: Form Part Section List form patterns
-description: This topic provides information about the Form Part Section List form patterns, which were developed to show filtered lists inside workspaces.
+description: This article provides information about the Form Part Section List form patterns, which were developed to show filtered lists inside workspaces.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the Form Part Section List form patterns. These workspace-specific patterns have been developed to show filtered lists inside workspaces.
+This article provides information about the Form Part Section List form patterns. These workspace-specific patterns have been developed to show filtered lists inside workspaces.
 
 ## Usage
 
@@ -49,7 +49,7 @@ The Form Part Section List form patterns are workspace-specific patterns that ar
 
 [![Wireframe for Form Part Section List--Double form pattern.](./media/formpartsectionlistdoublewireframe.png)](./media/formpartsectionlistdoublewireframe.png)
 
-## Pattern changes for Finance and Operations
+## Pattern changes for finance and operations apps
 These patterns did not exist for Microsoft Dynamics AX 2012.
 
 ## Model

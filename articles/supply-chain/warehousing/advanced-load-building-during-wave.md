@@ -2,7 +2,7 @@
 # required metadata
 
 title: Advanced load building during wave
-description: This topic provides information about advanced wave load building, which automatically assigns shipments to existing waves during wave execution. Therefore, you can create meaningful loads that represent trucks without having to use the load planning workbench.
+description: This article provides information about advanced wave load building, which automatically assigns shipments to existing waves during wave execution. Therefore, you can create meaningful loads that represent trucks without having to use the load planning workbench.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -224,7 +224,7 @@ You can set up as many load build templates as you require. However, to use adva
 
 ## Scenario
 
-This scenario shows how the settings that were described earlier in this topic affect warehouse operations while a sales order is processed. This scenario uses the **USMF** demo data together with other demo values that are provided in those setup instructions.
+This scenario shows how the settings that were described earlier in this article affect warehouse operations while a sales order is processed. This scenario uses the **USMF** demo data together with other demo values that are provided in those setup instructions.
 
 ### Create sales orders
 

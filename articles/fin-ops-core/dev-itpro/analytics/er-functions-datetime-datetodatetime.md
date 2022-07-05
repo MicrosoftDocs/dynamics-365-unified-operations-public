@@ -2,7 +2,7 @@
 # required metadata
 
 title: DATETODATETIME ER function
-description: This topic provides information about how the DATETODATETIME Electronic reporting (ER) function is used.
+description: This article provides information about how the DATETODATETIME Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 12/04/2019
 ms.prod: 
@@ -52,7 +52,7 @@ The resulting date/time value.
 
 ## Example 1
 
-`DATETODATETIME (CompInfo. 'getCurrentDate()')` returns the date of the current Microsoft Dynamics 365 Finance session, December 24, 2015, as **12/24/2015 12:00:00 AM**. In this example, **CompInfo** is an Electronic reporting (ER) data source of the **Finance and Operations/Table** type, and it refers to the CompanyInfo table.
+`DATETODATETIME (CompInfo. 'getCurrentDate()')` returns the date of the current Microsoft Dynamics 365 Finance session, December 24, 2015, as **12/24/2015 12:00:00 AM**. In this example, **CompInfo** is an Electronic reporting (ER) data source of the **finance and operations/Table** type, and it refers to the CompanyInfo table.
 
 ## Example 2
 

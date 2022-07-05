@@ -2,7 +2,7 @@
 # required metadata
 
 title: Pre-servicing and post-servicing
-description: This topic explains new changes that have been introduced for the servicing process.
+description: This article explains new changes that have been introduced for the servicing process.
 author: matapg007
 ms.date: 05/19/2022
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.validFrom: 2022-05-19
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains new changes that have been introduced for the servicing process.
+This article explains new changes that have been introduced for the servicing process.
 
 Microsoft has introduced new steps for servicing pipeline pre-servicing and post-servicing to enable database synchronization precheck and index creation on tables to occur outside offline servicing. Therefore, the environment remains up and running, and accessible so that users can perform regular activities. However, servicing can't be done, because all servicing operations are restricted during pre-servicing and post-servicing. The main benefit of the change is that it helps reduce the overall servicing downtime.
 

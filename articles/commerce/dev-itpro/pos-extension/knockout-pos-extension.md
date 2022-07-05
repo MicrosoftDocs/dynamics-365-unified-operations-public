@@ -1,6 +1,6 @@
 ---
 title: How to consume external or third party libraries like Knockout.js in POS extensions
-description: This topic explains how to consume external or third party libraries like Knockout.js in Point of Sale (POS) extensions.
+description: This article explains how to consume external or third party libraries like Knockout.js in Point of Sale (POS) extensions.
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../../../includes/banner.md)]
 
-This topic shows some basic steps on how to use **Knockout.js** in Point of Sale (POS) extensions, the same pattern can be applied to other external or third party libraries . It applies to version 10.0.18 and later of the Retail software development kit (SDK).
+This article shows some basic steps on how to use **Knockout.js** in Point of Sale (POS) extensions, the same pattern can be applied to other external or third party libraries . It applies to version 10.0.18 and later of the Retail software development kit (SDK).
 
 1. Add a NuGet package reference for the **Knockout.js** library to your **Pos.Extensions** project.
 2. Add an MSBuild target to copy the knockout library to your project directory during the build and include it in your package. The following example shows the XML.

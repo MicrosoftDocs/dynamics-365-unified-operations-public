@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the **Financial period close** workspace and the associated configuration.
+This article provides an overview of the **Financial period close** workspace and the associated configuration.
 
 Financial period close workspace
 

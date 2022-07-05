@@ -2,7 +2,7 @@
 # required metadata
 
 title: Planned cross docking
-description: This topic describes advanced planned cross-docking, where the inventory quantity that is required for an order is directed straight from receipt or creation to the correct outbound dock or staging area. All remaining inventory from the inbound source is directed to the correct storage location through the regular put-away process.
+description: This article describes advanced planned cross-docking, where the inventory quantity that is required for an order is directed straight from receipt or creation to the correct outbound dock or staging area. All remaining inventory from the inbound source is directed to the correct storage location through the regular put-away process.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -15,7 +15,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.7
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes advanced planned cross-docking. Cross-docking is a warehouse process where the inventory quantity that is required for an order is directed straight from receipt or creation to the correct outbound dock or staging area. All remaining inventory from the inbound source is directed to the correct storage location through the regular put-away process.
+This article describes advanced planned cross-docking. Cross-docking is a warehouse process where the inventory quantity that is required for an order is directed straight from receipt or creation to the correct outbound dock or staging area. All remaining inventory from the inbound source is directed to the correct storage location through the regular put-away process.
 
 Cross-docking lets workers skip inbound put-away and outbound picking of inventory that is already marked for an outbound order. Therefore, the number of times that inventory is touched is minimized, where possible. Additionally, because there is less interaction with the system, time and space savings on the warehouse shop floor are increased.
 
@@ -40,7 +40,7 @@ At the time of inbound order receiving, the cross-docking setup automatically id
 
 ## Turn on the planned cross docking features
 
-If your system doesn't already include the features described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the following features in the following order:
+If your system doesn't already include the features described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the following features in the following order:
 
 1. *Planned cross docking*
 1. *Cross docking templates with location directives*
@@ -121,7 +121,7 @@ Planned cross-docking is implemented as a load posting method. After you turn on
     - **Supply source:** *Purchase order*
 
 > [!NOTE]
-> You can set up a query to control when a specific cross docking template is used. The query for cross docking templates has only the *InventTable* (items) table and the inner-joined *WHSInventTable* (WHS items) table. If you want to add other tables to the query, you can join them by using only *exist joins* or *not exist joins*. When you filter on the joined tables, a record from the main table is retrieved for each matching record in the joined table. If the join type is *exist join*, the search ends after the first match has been found. For example, if you join the sales order line table to the items table, the system validates and returns items for which at least one sales order line has the defined condition. Essentially, the data is fetched from the parent (items) table, not from the child (sales order line) table. Therefore, filtering by source documents such as sales order lines or customers can't be done out of the box.
+> You can set up a query to control when a specific cross docking template is used. The query for cross docking templates has only the *InventTable* (items) table and the inner-joined *WHSInventTable* (WMS items) table. If you want to add other tables to the query, you can join them by using only *exist joins* or *not exist joins*. When you filter on the joined tables, a record from the main table is retrieved for each matching record in the joined table. If the join type is *exist join*, the search ends after the first match has been found. For example, if you join the sales order line table to the items table, the system validates and returns items for which at least one sales order line has the defined condition. Essentially, the data is fetched from the parent (items) table, not from the child (sales order line) table. Therefore, filtering by source documents such as sales order lines or customers can't be done out of the box.
 
 ### Create a work class
 

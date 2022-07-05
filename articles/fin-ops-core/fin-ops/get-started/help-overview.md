@@ -2,7 +2,7 @@
 # required metadata
 
 title: Help system (contains video)
-description: This topic provides an overview of the Help system for Finance and Operations apps.
+description: This article provides an overview of the Help system for Finance and Operations apps.
 author: edupont04
 ms.date: 07/20/2021
 ms.topic: overview
@@ -73,7 +73,7 @@ Alternatively, you can subscribe to an RSS feed by app:
 
 ### Leave us feedback
 
-If you have feedback or questions about a topic, leave us a comment at the bottom of the page.
+If you have feedback or questions about a article, leave us a comment at the bottom of the page.
 
 1. Select **Feedback** to get to the comments at the bottom of the page. Then, select either **Product feedback** or **Sign in to give documentation feedback**.
 
@@ -86,7 +86,7 @@ If you have feedback or questions about a topic, leave us a comment at the botto
 
 ## Contribute to the documentation
 
-You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on a topic. The following video shows how you can contribute to our documentation.
+You can contribute and make edits to the documentation. To get started, select the **Edit** button (pencil symbol) on a article. The following video shows how you can contribute to our documentation.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE36liB]
 
@@ -101,7 +101,7 @@ For more information, see the [Docs contributor guide](/contribute), which is pu
 
 A task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a task guide from the **Help** pane. When you first select a task guide, the **Help** pane will show the step-by-step instructions for the task. Localized task guides are available.
 
-Microsoft released task guide libraries for product versions through the December 2017 release of Dynamics 365 for Finance and Operations. The [Accessing task guides from the Help pane](#accessing-task-guides-from-the-help-pane) section of this topic explains how to find the correct task guides for your product.
+Microsoft released task guide libraries for product versions through the December 2017 release of Dynamics 365 for Finance and Operations. The [Accessing task guides from the Help pane](#accessing-task-guides-from-the-help-pane) section of this article explains how to find the correct task guides for your product.
 
 ![Task guide reading view.](./media/task-guide-ops.png)
 
@@ -124,7 +124,7 @@ To access Help content, select the **Help** button (**?**), and then select **He
 
 ### Accessing Help topics from the Help pane
 
-From the **Help** pane, you can access topics that apply to the client. When you first open the **Help** pane, the **Help** tab shows the topics that apply to the page that you're currently on. If no topics are found, you can enter keywords to refine your search. When you select a topic in the **Help** pane, it's opened on a new tab in your browser.
+From the **Help** pane, you can access topics that apply to the client. When you first open the **Help** pane, the **Help** tab shows the topics that apply to the page that you're currently on. If no topics are found, you can enter keywords to refine your search. When you select a article in the **Help** pane, it's opened on a new tab in your browser.
 
 > [!IMPORTANT]
 > This section does not apply to Dynamics 365 Human Resources. The Help system for Human Resources is automatically connected to task guides for the product. Also, you cannot create custom task guides for Human Resources.

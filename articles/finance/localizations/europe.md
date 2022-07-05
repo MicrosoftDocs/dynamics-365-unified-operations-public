@@ -2,7 +2,7 @@
 # required metadata
 
 title: Europe overview
-description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Europe. 
+description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Europe. 
 author: kfend
 ms.date: 01/15/2022
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes information and links to resources that can help you set up legal entities with a primary address in Europe. 
+This article includes information and links to resources that can help you set up legal entities with a primary address in Europe. 
 
 - [Advance holders overview](emea-advance-holders.md)
  - [Advance holder transactions](emea-advance-holders-transactions.md)

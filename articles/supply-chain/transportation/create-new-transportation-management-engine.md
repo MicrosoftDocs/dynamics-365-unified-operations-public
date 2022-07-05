@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a new transportation management engine
-description: This topic describes how to create a new transportation management engine in Dynamics 365 Supply Chain Management. 
+description: This article describes how to create a new transportation management engine in Dynamics 365 Supply Chain Management. 
 author: Weijiesa
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create a new transportation management engine in Dynamics 365 Supply Chain Management. 
+This article describes how to create a new transportation management engine in Dynamics 365 Supply Chain Management. 
 
 Transportation management (TMS) engines define the logic that is used to generate and process transportation rates in Transportation management. Supply Chain Management provides several different engine types that calculate different parameters, such as rates, transit times, and the number of zones that will be crossed during transit. This article explains how to use the Microsoft Visual Studio development environment together with Supply Chain Management development tools to create and deploy a new TMS engine, and then how to set up the engine in Operations. For more information about the engines, see [Transportation management engines](transportation-management-engines.md).
 

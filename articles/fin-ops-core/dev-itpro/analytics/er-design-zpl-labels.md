@@ -2,7 +2,7 @@
 # required metadata
 
 title: Design a new ER solution to print ZPL labels
-description: This topic explains how to design a new Electronic reporting (ER) solution to print Zebra Programming Language (ZPL) labels.
+description: This article explains how to design a new Electronic reporting (ER) solution to print Zebra Programming Language (ZPL) labels.
 author: NickSelin
 ms.date: 02/28/2022
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.26
 [!include [banner](../includes/banner.md)]
 
 
-This topic explains how a user in the System Administrator, Electronic Reporting Developer, or Electronic Reporting Functional Consultant role can configure parameters of the [Electronic reporting (ER)](general-electronic-reporting.md) framework, design the required ER [configurations](general-electronic-reporting.md#Configuration) of a new ER solution to access the data of the Warehouse management system, and generate custom warehouse location labels in Zebra Programming Language (ZPL) II format. These steps can be completed in the **USRT** company.
+This article explains how a user in the System Administrator, Electronic Reporting Developer, or Electronic Reporting Functional Consultant role can configure parameters of the [Electronic reporting (ER)](general-electronic-reporting.md) framework, design the required ER [configurations](general-electronic-reporting.md#Configuration) of a new ER solution to access the data of the Warehouse management system, and generate custom warehouse location labels in Zebra Programming Language (ZPL) II format. These steps can be completed in the **USRT** company.
 
 ## Business scenario
 

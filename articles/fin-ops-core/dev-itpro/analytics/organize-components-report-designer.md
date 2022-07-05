@@ -2,7 +2,7 @@
 # required metadata
 
 title: Organize report components in report designer
-description: This topic explains how to organize existing reports, building blocks, and objects in report designer.
+description: This article explains how to organize existing reports, building blocks, and objects in report designer.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article

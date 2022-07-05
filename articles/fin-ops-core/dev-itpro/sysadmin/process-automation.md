@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process automation
-description: This topic provides details about how process automation allows simple scheduling of processes that will be run by the batch server.
+description: This article provides details about how process automation allows simple scheduling of processes that will be run by the batch server.
 author: RyanCCarlson2
 ms.date: 04/20/2021
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Arrival overview
-description: This topic provides information about the Arrival overview feature. The Arrival overview page is part of this feature and provides an overview of all items that are expected to arrive as incoming items.
+description: This article provides information about the Arrival overview feature. The Arrival overview page is part of this feature and provides an overview of all items that are expected to arrive as incoming items.
 author: yufeihuang
 ms.date: 11/02/2017
 ms.topic: article
@@ -31,9 +31,9 @@ ms.search.validFrom: 2016-02-28
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the Arrival overview feature. The Arrival overview page is part of this feature and provides an overview of all items that are expected to arrive as incoming items.
+This article provides information about the Arrival overview feature. The Arrival overview page is part of this feature and provides an overview of all items that are expected to arrive as incoming items.
 
-The **Arrival overview** page provides an overview of all expected incoming items. It also shows arrivals that can be initialized based on the overview. This topic focuses on the receiving process.
+The **Arrival overview** page provides an overview of all expected incoming items. It also shows arrivals that can be initialized based on the overview. This article focuses on the receiving process.
 
 ## Business scenario
 Consider the following scenario in the inbound processes.

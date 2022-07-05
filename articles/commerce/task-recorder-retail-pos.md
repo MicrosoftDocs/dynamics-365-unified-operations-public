@@ -2,7 +2,7 @@
 # required metadata
 
 title: Task recorder and Help for Retail Modern POS (MPOS) and Cloud POS
-description: This topic describes how to use Task recorder in Retail Modern POS and Cloud POS.
+description: This article describes how to use Task recorder in Retail Modern POS and Cloud POS.
 author: mugunthanm
 ms.date: 06/19/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to use Task recorder in Retail Modern POS and Cloud POS.
+This article describes how to use Task recorder in Retail Modern POS and Cloud POS.
 
 ## Overview
 
@@ -143,7 +143,7 @@ To show your own custom task recordings in the Help pane of Retail Modern POS an
 
 [![Help button.](./media/help.jpg)](./media/help.jpg)
 
-When you click a Task guide in the search results, you can either view the steps as a Help topic or export the steps to a Word document.
+When you click a Task guide in the search results, you can either view the steps as a Help article or export the steps to a Word document.
 
 > [!NOTE]
 > Help in Retail Modern POS and Cloud POS will not bring up task guides according to what form you're on or operation you're doing. You have to type the process name in the search box and then click **Search**.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Copy customers by using shared number sequences
-description: This topic explains how to use shared number sequences to copy a customer to another legal entity but keep the same customer ID.
+description: This article explains how to use shared number sequences to copy a customer to another legal entity but keep the same customer ID.
 author: abruer
 ms.date: 08/31/2018
 ms.topic: index-page

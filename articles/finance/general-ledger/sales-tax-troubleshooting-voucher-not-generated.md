@@ -2,7 +2,7 @@
 # required metadata
 
 title: Voucher isn't generated
-description: This topic provides troubleshooting information that can help when a voucher should be generated but isn't.
+description: This article provides troubleshooting information that can help when a voucher should be generated but isn't.
 author: qire
 ms.date: 04/13/2021
 ms.topic: article

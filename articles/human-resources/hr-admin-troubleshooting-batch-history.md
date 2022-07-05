@@ -2,7 +2,7 @@
 # required metadata
 
 title: Optimize performance with auto cleanup tasks
-description: This topic explains how to improve performance in Microsoft Dynamics 365 Human Resources by cleaning up the batch job history.
+description: This article explains how to improve performance in Microsoft Dynamics 365 Human Resources by cleaning up the batch job history.
 author: twheeloc
 ms.date: 08/21/2021
 ms.topic: article

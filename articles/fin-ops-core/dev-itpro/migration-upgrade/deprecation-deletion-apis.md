@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deprecation of methods and metadata elements
-description: This topic provides information about the deprecation of methods and metadata elements that become obsolete as the code base evolves. 
+description: This article provides information about the deprecation of methods and metadata elements that become obsolete as the code base evolves. 
 author: jorisdg
 ms.date: 02/19/2021
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Developer
 # ms.devlang: 
 ms.reviewer: tfehr

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process customer order pickups in POS
-description: This topic explains the functionality that is available in the point of sale (POS) application for processing customer order pickups.
+description: This article explains the functionality that is available in the point of sale (POS) application for processing customer order pickups.
 author: Hhainesms
 ms.date: 01/06/2021
 ms.topic: article

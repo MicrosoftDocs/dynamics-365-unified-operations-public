@@ -2,7 +2,7 @@
 # required metadata
 
 title: Form I-9 verification
-description: This topic provides information about Form I-9 verification.
+description: This article provides information about Form I-9 verification.
 author: ShielaSogge
 ms.date: 06/19/2017
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
-This topic provides information about Form I-9 verification. Employers must complete Form I-9 for all new employees who will be working in the United States. The form documents that the employer has verified the identity of the new employee, and that the employee is authorized to work in the United States.
+This article provides information about Form I-9 verification. Employers must complete Form I-9 for all new employees who will be working in the United States. The form documents that the employer has verified the identity of the new employee, and that the employee is authorized to work in the United States.
 
 The Immigration Reform and Control Act (IRCA) requires U.S. employers to verify the employment eligibility status of all newly hired employees, even U.S. citizens. IRCA makes it unlawful for employers to knowingly hire or continue to use unauthorized workers. 
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: VAT declaration (Czech Republic)
-description: This topic provides information about the value-added tax (VAT) declaration for the Czech Republic. 
+description: This article provides information about the value-added tax (VAT) declaration for the Czech Republic. 
 author: anasyash
 ms.date: 01/04/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the value-added tax (VAT) declaration for the Czech Republic. It includes instructions for setting up and generating the VAT declaration and the VAT control statement.
+This article provides information about the value-added tax (VAT) declaration for the Czech Republic. It includes instructions for setting up and generating the VAT declaration and the VAT control statement.
 
 ## <a name="overview"></a>VAT declaration overview
 
@@ -38,7 +38,7 @@ This topic provides information about the value-added tax (VAT) declaration for 
 
 This section describes the sections and rows of the VAT declaration, calculations, and the relations between the VAT declaration and the VAT control statement.
 
-To automatically generate the VAT declaration and the VAT control statement, you must first create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the VAT declaration format and the VAT control statement format, you must associate sales tax codes with the lookup result of the lookup for the VAT declaration boxes. For more information about how to set up application-specific parameters, see the [Set up parameters for declaration fields](#set-up-parameters-for-declaration-fields) section later in this topic.
+To automatically generate the VAT declaration and the VAT control statement, you must first create enough sales tax codes to keep a separate VAT accounting for each box on the VAT declaration. Additionally, in the application-specific parameters of the VAT declaration format and the VAT control statement format, you must associate sales tax codes with the lookup result of the lookup for the VAT declaration boxes. For more information about how to set up application-specific parameters, see the [Set up parameters for declaration fields](#set-up-parameters-for-declaration-fields) section later in this article.
 
 In the table in section 1, the "Lookup result" column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format and the VAT control statement format. Use this information to correctly associate sales tax codes with the lookup result and then with the row of the VAT declaration.
 
@@ -147,9 +147,9 @@ Section A1 shows the documents that generate the amount in row 25 of the VAT dec
 | Subject code                                   | kod\_pred\_pl |
 | Tax base                                       | zakl\_dane1   |
 
-To automatically determine the subject code for the document, set up enough reverse charge item groups, and associate them with items (products), items groups, or procurement categories. For more information, see the [Set up reverse charge item groups](#set-up-reverse-charge-item-groups) section later in this topic. For more information about how to configure reverse charges, see [Reverse charge VAT](emea-reverse-charge.md). If you will post incoming reverse charges in the vendor invoice journals that aren't associated with products, you should have enough item sales tax groups to differentiate the subject codes of the reverse charges.
+To automatically determine the subject code for the document, set up enough reverse charge item groups, and associate them with items (products), items groups, or procurement categories. For more information, see the [Set up reverse charge item groups](#set-up-reverse-charge-item-groups) section later in this article. For more information about how to configure reverse charges, see [Reverse charge VAT](emea-reverse-charge.md). If you will post incoming reverse charges in the vendor invoice journals that aren't associated with products, you should have enough item sales tax groups to differentiate the subject codes of the reverse charges.
 
-You must also associate the pairs of reverse charge item groups and tax codes with the result of the **\$SubjectCodeLookup** lookup in the application-specific parameters of the **VAT control statement (CZ)** format. For more information about how to set up application-specific parameters, see the [Set up parameters for subject codes](#set-up-parameters-for-subject-codes) section later in this topic.
+You must also associate the pairs of reverse charge item groups and tax codes with the result of the **\$SubjectCodeLookup** lookup in the application-specific parameters of the **VAT control statement (CZ)** format. For more information about how to set up application-specific parameters, see the [Set up parameters for subject codes](#set-up-parameters-for-subject-codes) section later in this article.
 
 The following subject codes are available in the **VAT control statement XML (CZ)** format.
 
@@ -234,7 +234,7 @@ Sections A4 and A5 show the documents that generate the amounts in rows 1 and 2 
 
 Information about VAT amount adjustments for customer bad debts is also shown in row 33 of the VAT declaration.
 
-To automatically determine the amount of VAT adjustment for bad debts, create a special tax code, and use it to post the write-off of the customer bad debts. For more information, see the [Write off customer bad debts by using the Write off function](#write-off-customer-bad-debts-by-using-the-write-off-function) section later in this topic. Also associate this sales tax code with the **VATAdjustmentCustomerBadDebtsStandard**, **VATAdjustmentCustomerBadDebtsReduced**, and **VATAdjustmentCustomerBadDebtsReduced2** lookup results of **\$ReportFieldLookup** in the application-specific parameters of the VAT declaration format and the VAT control statement format.
+To automatically determine the amount of VAT adjustment for bad debts, create a special tax code, and use it to post the write-off of the customer bad debts. For more information, see the [Write off customer bad debts by using the Write off function](#write-off-customer-bad-debts-by-using-the-write-off-function) section later in this article. Also associate this sales tax code with the **VATAdjustmentCustomerBadDebtsStandard**, **VATAdjustmentCustomerBadDebtsReduced**, and **VATAdjustmentCustomerBadDebtsReduced2** lookup results of **\$ReportFieldLookup** in the application-specific parameters of the VAT declaration format and the VAT control statement format.
 
 This section contains the following information about each document.
 
@@ -252,7 +252,7 @@ This section contains the following information about each document.
 | Tax amount at second reduced rate                                                                                                                  | dan3         |
 | <p>Flag of VAT adjustment for bad debts:</p><ul><li>**N** – The document isn't a VAT adjustment of bad debts.</li><li>**P** – The document is a VAT adjustment of bad debts.</li></ul> | zdph\_44      |
 
-To automatically determine the fulfillment mode code, associate sales tax codes with the lookup result of **\$FulfillmentModeCodeLookup** in the application-specific parameters of the VAT control statement format. For more information about how to set up application-specific parameters, see the [Set up parameters for fulfillment mode codes](#set-up-parameters-for-fulfillment-mode-codes) section later in this topic.
+To automatically determine the fulfillment mode code, associate sales tax codes with the lookup result of **\$FulfillmentModeCodeLookup** in the application-specific parameters of the VAT control statement format. For more information about how to set up application-specific parameters, see the [Set up parameters for fulfillment mode codes](#set-up-parameters-for-fulfillment-mode-codes) section later in this article.
 
 The following fulfillment mode codes are available in the XML of the VAT control statement format.
 
@@ -268,7 +268,7 @@ Sections B2 and B3 show the documents that generate the amounts in rows 40 and 4
 
 Information about VAT amount adjustments for vendor bad debts is also shown in row 34 of the VAT declaration.
 
-To automatically determine the amount of VAT adjustment for bad debts, create a special tax code, and use it to post the write-off of vendor bad debts. For more information, see the section [Manually write off vendor bad debts](#manually-write-off-vendor-bad-debts) section later in this topic. Associate this sales tax code with the **VATAdjustmentVendorBadDebtsStandard**, **VATAdjustmentVendorBadDebtsReduced**, and **VATAdjustmentVendorBadDebtsReduced2** lookup results of **\$ReportFieldLookup** in the application-specific parameters of the VAT declaration format and the VAT control statement format.
+To automatically determine the amount of VAT adjustment for bad debts, create a special tax code, and use it to post the write-off of vendor bad debts. For more information, see the section [Manually write off vendor bad debts](#manually-write-off-vendor-bad-debts) section later in this article. Associate this sales tax code with the **VATAdjustmentVendorBadDebtsStandard**, **VATAdjustmentVendorBadDebtsReduced**, and **VATAdjustmentVendorBadDebtsReduced2** lookup results of **\$ReportFieldLookup** in the application-specific parameters of the VAT declaration format and the VAT control statement format.
 
 Section B2 contains the following information about each document.
 
@@ -341,7 +341,7 @@ To automatically generate a VAT declaration, you should associate sales tax code
 
     | Column          | Description |
     |-----------------|-------------|
-    | Lookup result   | Select the report field for setup. For more information about the report fields and their assignment to VAT declaration rows, see the [VAT declaration overview](#overview) section earlier in this topic. |
+    | Lookup result   | Select the report field for setup. For more information about the report fields and their assignment to VAT declaration rows, see the [VAT declaration overview](#overview) section earlier in this article. |
     | Tax code (Code) | <p>Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate report field.</p><p>We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one report field.</p> |
     | Name            | <p>If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one report field, you can set up a transaction classifier. The following transaction classifiers are available:</p><ul><li>**Purchase**</li><li>**PurchaseExempt** (tax-exempt purchase)</li><li>**PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</li><li>**Sales**</li><li>**SalesExempt** (tax-exempt sale)</li><li>**SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</li><li>**Use tax**</li></ul>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note). |
 
@@ -377,7 +377,7 @@ To automatically classify a transaction by using the subject code of a reverse c
 
     | Column                              | Description |
     |-------------------------------------|-------------|
-    | Lookup result                       | Select the subject code. For the full list of subject codes, see the [Section A1: Sale of goods and services under domestic reverse charge](#sectiona1) section earlier in this topic. |
+    | Lookup result                       | Select the subject code. For the full list of subject codes, see the [Section A1: Sale of goods and services under domestic reverse charge](#sectiona1) section earlier in this article. |
     | Reverse charge code (Code)          | Select the reverse charge item group to associate with the selected subject code. For some transactions, if you post incoming reverse charge transactions that don't have a reference to the product, you must associate the item sales tax group with the subject code. In this case, select **\*Blank\*** in this field. To prevent an exception error from being generated when transactions don't have a reverse charge, the application-specific parameters must always include one line where the **Lookup result** field is set to **Other** and the **Reverse charge code (Code)** field is set to **\*Blank\***. This line must be the last line in the setup. |
     | Item sales tax group (TaxItemGroup) | Select the item sales tax group to associate with the selected subject code. You must select a specific item sales tax group if you don't have an appropriate reverse charge item group that will be used when you post incoming reverse charge transactions that don't have a reference to the product (for example, transactions from the vendor invoice journal). Otherwise, for all lines, you can select **\*Not blank\*** in this column. |
 
@@ -400,7 +400,7 @@ To automatically classify a transaction by using the fulfillment mode code in se
 
     | Column          | Description |
     |-----------------|-------------|
-    | Lookup result   | Select a fulfillment code. For the full list of codes, see the [Section A4: Taxable sales with amounts above 10,000 including VAT and all VAT adjustments made for customer bad debts](#sectionA4) section earlier in this topic. |
+    | Lookup result   | Select a fulfillment code. For the full list of codes, see the [Section A4: Taxable sales with amounts above 10,000 including VAT and all VAT adjustments made for customer bad debts](#sectionA4) section earlier in this article. |
     | Tax code (Code) | Select the sales tax code. |
 
 5. If you have transactions that use only normal filling, you can create the following line in the setup. Otherwise, set up the same line that you set up as the last line of the preceding setup, to prevent the format from failing and throwing an exception error message because of missed setup.

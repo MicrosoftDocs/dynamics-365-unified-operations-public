@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a workflow type
-description: This topic describes how to create workflow types.
+description: This article describes how to create workflow types.
 author: RobinARH
 ms.date: 06/19/2019
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-To add workflow support for a document, you must create a workflow type. After you create a workflow type, it can be used to create workflow configurations for the document. This topic provides links to the procedures for creating a workflow type.
+To add workflow support for a document, you must create a workflow type. After you create a workflow type, it can be used to create workflow configurations for the document. This article provides links to the procedures for creating a workflow type.
 
 You create workflow types to define the following elements:
 

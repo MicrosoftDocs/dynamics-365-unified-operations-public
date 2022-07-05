@@ -2,7 +2,7 @@
 # required metadata
 
 title: Oman overview
-description: This topic provides an overview of functionality specific to Oman. 
+description: This article provides an overview of functionality specific to Oman. 
 author: ilkond
 ms.date: 09/15/2021
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes information and links to documentation resources for Oman.
+This article includes information and links to documentation resources for Oman.
 
 - [Reverse charge VAT](emea-reverse-charge.md)
 - [VAT declaration for Oman (OM-00003)](emea-oma-vat-declaration.md)

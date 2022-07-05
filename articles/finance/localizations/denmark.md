@@ -2,7 +2,7 @@
 # required metadata
 
 title: Denmark overview
-description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Denmark. 
+description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Denmark. 
 author: kfend
 ms.date: 01/10/2022
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for Denmark. 
+This article provides links to documentation resources for Denmark. 
 
 - [Assign a payment slip format to a customer account](tasks/assign-payment-slip-format-customer-account.md)
 - [Create and post a customer invoice for a public sector customer](tasks/create-post-customer-invoice-public-sector-customer.md)

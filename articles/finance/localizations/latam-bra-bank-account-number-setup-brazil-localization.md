@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up bank account numbers for Brazil
-description: This topic explains how to set up bank account numbers for the Brazilian localization.
+description: This article explains how to set up bank account numbers for the Brazilian localization.
 author: gionoder
 ms.date: 01/20/2022
 ms.topic: overview

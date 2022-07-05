@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade from AX 2012 - Estimate effort by using the Code upgrade service
-description: This topic explains how to use the Code upgrade service in LCS to estimate the tasks and effort that are required in order to upgrade a code base.
+description: This article explains how to use the Code upgrade service in LCS to estimate the tasks and effort that are required in order to upgrade a code base.
 author: LaneSwenka
 ms.date: 01/31/2018
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-This topic explains how to use the Code upgrade service in Microsoft Dynamics Lifecycle Services (LCS) to help estimate the tasks and effort that are required in order to upgrade a code base from Microsoft Dynamics AX 2012 Finance and Operations.
+This article explains how to use the Code upgrade service in Microsoft Dynamics Lifecycle Services (LCS) to help estimate the tasks and effort that are required in order to upgrade a code base from Microsoft Dynamics AX 2012 Finance and Operations.
 
 The Code upgrade service converts an export of your AX 2012 model store to the correct format. However, the new version of your code won’t be fully functional until a developer resolves any issues that the service identifies but can’t resolve itself.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Processing of incoming electronic documents
-description: This topic provides an overview of the processing for incoming electronic documents.
+description: This article provides an overview of the processing for incoming electronic documents.
 author: dkalyuzh
 ms.date: 02/28/2022
 ms.topic: article

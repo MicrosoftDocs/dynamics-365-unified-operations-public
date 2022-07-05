@@ -2,7 +2,7 @@
 # required metadata
 
 title: Report 340 for Spain
-description: This topic provides information about how to set up and generate Report 340 for Spain.
+description: This article provides information about how to set up and generate Report 340 for Spain.
 author: anasyash
 ms.date: 05/02/2022
 ms.topic: article

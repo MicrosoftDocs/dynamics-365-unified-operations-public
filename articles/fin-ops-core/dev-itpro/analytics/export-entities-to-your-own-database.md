@@ -2,7 +2,7 @@
 # required metadata
 
 title: Bring your own database (BYOD)
-description: This topic explains how to export entities to your own Azure SQL database.
+description: This article explains how to export entities to your own Azure SQL database.
 author: peakerbl
 ms.date: 10/21/2021
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 2
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic explains how administrators can export data entities from the application into their own Microsoft Azure SQL database. This feature is also known as *bring your own database* (BYOD). 
+This article explains how administrators can export data entities from the application into their own Microsoft Azure SQL database. This feature is also known as *bring your own database* (BYOD). 
 
 The BYOD feature lets administrators configure their own database, and then export one or more data entities that are available in the application into the database. (Currently, more than 1,700 data entities are available.) Specifically, this feature lets you complete these tasks:
 
@@ -54,7 +54,7 @@ However, the BYOD feature is recommended for the following scenarios:
 - You must perform batch integration with other systems.
 
 > [!NOTE]
-> The application doesn't allow T-SQL connections to the production database. If you're upgrading from a previous version of Finance and Operations, and you have integration solutions that require direct T-SQL access to the database, BYOD is the recommended upgrade path.
+> The application doesn't allow T-SQL connections to the production database. If you're upgrading from a previous version of finance and operations, and you have integration solutions that require direct T-SQL access to the database, BYOD is the recommended upgrade path.
 
 You can use either Entity store or BYOD. The default operational reports that are available take advantage of embedded Power BI and Entity store. We recommend that you use our default operational reports as your first choice. You can also extend the ready-made operational reports to meet your requirements. You should consider BYOD a complementary option that you use as you require.
 
@@ -69,9 +69,9 @@ You should also create a SQL user account for sign-in to the database. Write dow
 If you're using the BYOD feature for integration for analytical purposes, you should consider using clustered columnstore indexes as described in [Columnstore indexes: Overview](/sql/relational-databases/indexes/columnstore-indexes-overview?view=sql-server-ver15).
 
 > [!NOTE]
-> Your BYOD database must be accessible to Finance and Operations apps. If you encounter issues where you are unable to access BYOD, you must ensure firewall rules in your BYOD are configured appropriately. For more information about self-service deployments, see [Self-service deployment FAQ](../deployment/deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment).
+> Your BYOD database must be accessible to finance and operations apps. If you encounter issues where you are unable to access BYOD, you must ensure firewall rules in your BYOD are configured appropriately. For more information about self-service deployments, see [Self-service deployment FAQ](../deployment/deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment).
 > > 
-> Selecting the correct service tier and compute size, is critical to secure expected performance. While doing this, it is important to consider the total, targeted workload and not just the load based on the Finance and Operations export. For production environments, it is recommended to use, at a minimum, compute size P2 in the Premium service tier or compute size S4 in the Standard service tier. Your specific BYOD usage might very well require a service tier greater than the above minimum. For more details about tiers and compute sizes, see [SQL Azure service tiers](/azure/azure-sql/database/service-tiers-dtu) and [Detailed resource limits](/azure/azure-sql/database/resource-limits-dtu-single-databases#single-database-storage-sizes-and-compute-sizes). To determine DTU needs or utilization, see [Determine number of DTUs needed by a workload](/azure/azure-sql/database/purchasing-models#determine-the-number-of-dtus-needed-by-a-workload)
+> Selecting the correct service tier and compute size, is critical to secure expected performance. While doing this, it is important to consider the total, targeted workload and not just the load based on the finance and operations export. For production environments, it is recommended to use, at a minimum, compute size P2 in the Premium service tier or compute size S4 in the Standard service tier. Your specific BYOD usage might very well require a service tier greater than the above minimum. For more details about tiers and compute sizes, see [SQL Azure service tiers](/azure/azure-sql/database/service-tiers-dtu) and [Detailed resource limits](/azure/azure-sql/database/resource-limits-dtu-single-databases#single-database-storage-sizes-and-compute-sizes). To determine DTU needs or utilization, see [Determine number of DTUs needed by a workload](/azure/azure-sql/database/purchasing-models#determine-the-number-of-dtus-needed-by-a-workload)
 
 ## Configuring the entity export option
 
@@ -190,7 +190,7 @@ To create a cross-company entity:
 > Use of recurring exports in **Manage > Manage recurring data jobs** for BYOD is not supported. You must use the **Export in batch** option.
 
 ### Incremental export
-When you add an entity for data export, you can select to do an incremental export (which is also known as incremental push) or a full push. For incremental push to work, you must enable the **Change tracking** option in the database and specify an appropriate change tracking option, as described earlier in this topic.
+When you add an entity for data export, you can select to do an incremental export (which is also known as incremental push) or a full push. For incremental push to work, you must enable the **Change tracking** option in the database and specify an appropriate change tracking option, as described earlier in this article.
 
 >[!NOTE]
 > A full push deletes all existing records from an entity and then inserts the current set of records from the selected entity.
@@ -248,3 +248,4 @@ OLE DB Destination failed the pre-execute phase and returned error code 0xC02020
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

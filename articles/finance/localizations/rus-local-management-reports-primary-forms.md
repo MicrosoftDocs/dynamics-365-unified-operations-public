@@ -2,7 +2,7 @@
 # required metadata
 
 title: Advance holders reports
-description: This topic describes the Advance holder reports that are available for Russia. 
+description: This article describes the Advance holder reports that are available for Russia. 
 author: ShylaThompson
 ms.date: 10/05/2018
 ms.topic: article

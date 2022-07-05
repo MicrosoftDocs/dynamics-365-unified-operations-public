@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Register sales commissions
-description: This topic explains how sales commissions are calculated and registered. 
+description: This article explains how sales commissions are calculated and registered. 
 author: Henrikan
 ms.date: 08/06/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how sales commissions are calculated and registered. You can run this procedure in demo data company USMF or on your own data. Before starting this guide, run the guide called "Set up sales commission rules" to make sure that you have all the necessary commission calculation setup.
+This article explains how sales commissions are calculated and registered. You can run this procedure in demo data company USMF or on your own data. Before starting this guide, run the guide called "Set up sales commission rules" to make sure that you have all the necessary commission calculation setup.
 
 Take note of the customer and item numbers that you have chosen for the commission process and use them when asked to create a sales order in this guide.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Spain overview
-description: This topic provides links to documentation resources for Spain. 
+description: This article provides links to documentation resources for Spain. 
 author: kfend
 ms.date: 05/26/2022
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for Spain. 
+This article provides links to documentation resources for Spain. 
 
 - [Cash discount is applied in the invoice parameter](emea-esp-cash-discount-applied-invoice.md)
 - [Spanish bill of exchange options](emea-esp-bill-of-exchange-options.md)

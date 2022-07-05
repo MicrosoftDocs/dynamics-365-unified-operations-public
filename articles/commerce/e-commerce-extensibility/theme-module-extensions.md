@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extend a theme to add module extensions
-description: This topic describes how to extend a theme to add module extensions in Microsoft Dynamics 365 Commerce. 
+description: This article describes how to extend a theme to add module extensions in Microsoft Dynamics 365 Commerce. 
 author: samjarawan
 ms.date: 09/15/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to extend a theme to add module extensions in Microsoft Dynamics 365 Commerce.
+This article describes how to extend a theme to add module extensions in Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce e-Commerce themes can optionally contain the following module extensions to either the set of modules in the Commerce module library or custom modules:
 
@@ -39,7 +39,7 @@ Dynamics 365 Commerce e-Commerce themes can optionally contain the following mod
 
 ## Theme module view extensions
 
-Themes let you include customized module view extensions, which are generally used to change the default layout of a module for a selected theme. These customized module view extensions are supported for both module library modules and custom modules. For example, you might want to add a new button to a module library module to support additional features. By creating a view extension, you can avoid having to use the **clone** command-line interface (CLI) command to create a full copy of the module library module. In some cases, you might want to extend the module definition, and also add more configuration properties, slots, or resources. For more information about how to create module view extensions, see the [Create a module view extension](#create-a-module-view-extension) section of this topic.
+Themes let you include customized module view extensions, which are generally used to change the default layout of a module for a selected theme. These customized module view extensions are supported for both module library modules and custom modules. For example, you might want to add a new button to a module library module to support additional features. By creating a view extension, you can avoid having to use the **clone** command-line interface (CLI) command to create a full copy of the module library module. In some cases, you might want to extend the module definition, and also add more configuration properties, slots, or resources. For more information about how to create module view extensions, see the [Create a module view extension](#create-a-module-view-extension) section of this article.
 
 View extensions are stored under the **...\\src\\themes\\THEME\_NAME\\views** directory and follow a naming pattern that resembles the naming pattern for module views (**MODULE\_NAME.view.tsx**). For example, a view extension might be named **product-feature.view.tsx**. If a view extension exists in the selected theme, the React component will call it instead of the default view file. Therefore, view extensions can be written exactly like a module view that is used for a module.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Server-side development (workspace X++ APIs)
-description: This topic describes the platform that supports the mobile phone app, providing rich offline and mobile interactions, and an easy-to-use designer experience.
+description: This article describes the platform that supports the mobile phone app, providing rich offline and mobile interactions, and an easy-to-use designer experience.
 author: tonyafehr
 ms.date: 05/26/2022
 ms.topic: article

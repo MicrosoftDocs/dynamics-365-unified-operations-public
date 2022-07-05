@@ -2,7 +2,7 @@
 # required metadata
 
 title: Localize mobile workspaces
-description: This topic describes how you can use workspace classes to provide localization support to workspaces.
+description: This article describes how you can use workspace classes to provide localization support to workspaces.
 author: tonyafehr
 ms.date: 05/26/2022
 ms.topic: article

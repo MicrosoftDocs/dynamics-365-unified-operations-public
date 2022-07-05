@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up garnishments and tax levies
-description: This topic explains how to set up garnishments and tax levies.
+description: This article explains how to set up garnishments and tax levies.
 author: andreabichsel
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,16 +31,16 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up garnishments and tax levies. Garnishments and tax levies are created and managed by using the benefit framework. This framework helps guarantee that the effect that garnishments and tax levies have on payroll is handled correctly.
+This article explains how to set up garnishments and tax levies. Garnishments and tax levies are created and managed by using the benefit framework. This framework helps guarantee that the effect that garnishments and tax levies have on payroll is handled correctly.
 
-If you have questions about garnishments that aren't answered in this topic, or in [Enroll workers in garnishments or tax levies](noam-usa-garnishment-tax-levy-enrollment-tasks.md) or [Garnishments, tax levies, and administrative fees FAQ](noam-usa-garnishment-tax-levy-administrative-fees.md), contact your legal advisor. Here is a summary of each step in the process:
+If you have questions about garnishments that aren't answered in this article, or in [Enroll workers in garnishments or tax levies](noam-usa-garnishment-tax-levy-enrollment-tasks.md) or [Garnishments, tax levies, and administrative fees FAQ](noam-usa-garnishment-tax-levy-administrative-fees.md), contact your legal advisor. Here is a summary of each step in the process:
 
 1. **Set up disposable income definitions.** When the court imposes an order to garnish a worker's wages, the actual amount of the garnishment is limited to a percentage of the worker's disposable income. The federal definition of disposable income is built into the payroll calculation. However, some states require additional reductions to disposable income. You can use disposable income definitions to identify those reductions and help guarantee that the correct earnings and deductions are included when the worker's disposable income is calculated.
 2. **Set up benefit elements for garnishments, tax levies, and administrative fees.** Because garnishments and tax levies are processed as benefits, each garnishment or tax levy consists of a benefit type, plan, and option. Together, these elements create a single instance of a garnishment or tax levy. Administrative fees aren't permitted in every state. Even in states where administrative fees are permitted, they are never mandatory. Your organization must decide whether to charge them.
 3. **Create benefits for garnishments, tax levies, and administrative fees.** You must have at least one benefit for garnishments and at least one benefit for tax levies. If a worker has more than one garnishment of the same type, you must have more than one garnishment benefit of that type. If your organization charges an administrative fee for handling garnishments and tax levies, you must have at least one benefit for the fee. You can also optionally have additional benefits for other administrative fees.
 
 > [!NOTE]
-> In this topic, the term *garnishment* implies both garnishments and tax levies, unless the text specifies otherwise. For more information about the concepts that are discussed in this topic, see [Garnishments, tax levies, and administrative fees FAQ](noam-usa-garnishment-tax-levy-administrative-fees.md).
+> In this article, the term *garnishment* implies both garnishments and tax levies, unless the text specifies otherwise. For more information about the concepts that are discussed in this article, see [Garnishments, tax levies, and administrative fees FAQ](noam-usa-garnishment-tax-levy-administrative-fees.md).
 
 ## Setting up disposable income definitions
 

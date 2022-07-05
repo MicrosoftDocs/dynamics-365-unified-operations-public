@@ -2,7 +2,7 @@
 # required metadata
 
 title: SEPA direct debit overview
-description: This topic provides information about the Single Euro Payments Area (SEPA), which is set up by the European Commission.   
+description: This article provides information about the Single Euro Payments Area (SEPA), which is set up by the European Commission.   
 author: ShivamPandey-msft
 ms.date: 08/22/2017
 ms.topic: overview

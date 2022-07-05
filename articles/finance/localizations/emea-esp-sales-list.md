@@ -2,7 +2,7 @@
 # required metadata
 
 title: EU sales list for Spain (Report 349)
-description: This topic provides information about the European Union (EU) sales list report for Spain, also known as Report 349. 
+description: This article provides information about the European Union (EU) sales list report for Spain, also known as Report 349. 
 author: AKroshkina
 ms.date: 05/26/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the European Union (EU) sales list report for Spain, also known as Report 349. The Spanish EU sales list report contains information about sale and purchase of goods and services for reporting in text format.
+This article provides information about the European Union (EU) sales list report for Spain, also known as Report 349. The Spanish EU sales list report contains information about sale and purchase of goods and services for reporting in text format.
 
 The following fields are included on the Spanish EU sales list report:
 

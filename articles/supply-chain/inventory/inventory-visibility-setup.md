@@ -1,6 +1,6 @@
 ---
 title: Install the Inventory Visibility Add-in
-description: This topic describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
+description: This article describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 05/27/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
+This article describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
 
 You must use Microsoft Dynamics Lifecycle Services (LCS) to install the Inventory Visibility Add-in. LCS is a collaboration portal that provides an environment and a set of regularly updated services that help you manage the application lifecycle of your finance and operations apps. For more information, see [Lifecycle Services resources](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 

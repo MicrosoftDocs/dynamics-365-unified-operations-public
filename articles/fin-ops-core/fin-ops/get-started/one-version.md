@@ -2,16 +2,16 @@
 # required metadata
 
 title: One Version service updates FAQ
-description: This topic provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
+description: This article provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: laneswenka
-ms.date: 05/03/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include[banner](../includes/banner.md)]
 
-This FAQ is intended to provide clarity about the service updates, processes, and tools that you can use to prepare for the change. We will continue to add information to this topic as required.
+This FAQ is intended to provide clarity about the service updates, processes, and tools that you can use to prepare for the change. We will continue to add information to this article as required.
 
 For more information about One Version service updates, see [One Version service updates overview](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
@@ -149,7 +149,7 @@ For all Microsoft-managed environments, and sandbox and production environments 
 After you apply a service update for a supported version, this functionality will be available in the affected environment.
 
 > [!NOTE]
-> In this topic, versions are noted in the following ways:
+> In this article, versions are noted in the following ways:
 >
 > - Version N is the latest version, such as 10.0.25
 > - Version N-1 is one version older than N, such as 10.0.24
@@ -165,13 +165,19 @@ All additional sandbox environments will be updated during the same update windo
 
 All environments will be updated to version N. 
 
-### What if the default sandbox environment is manually updated before the default sandbox environment email is sent? 
+### What if the default sandbox environment is manually updated to the exact same version as the automatic update version? 
 
-Automatic updates for the default sandbox environment, production environment, and all additional sandbox environments will be canceled.
+Automatic updates for the production environment and all additional sandbox environments will be updated to the current N version.  
+ 
+The default sandbox environment update will be cancelled. 
 
-### What if the default sandbox environment is manually updated after the default sandbox email is sent? 
+### What if the default sandbox environment is manually updated to a newer version than the automatic update version?
 
 Automatic updates for the default sandbox environment, production environment, and all additional sandbox environments will be canceled. 
+
+### What if the default sandbox environment is manually updated to an older version than the automatic update version? 
+ 
+The default sandbox environment, production environment, and all additional sandbox environments will be updated to the current N version.
 
 ### What if the production environment is manually updated before the production environment email is sent? 
 
@@ -254,7 +260,7 @@ Deprecated features will be documented for each release. For more information, s
 
 ### How can I log an extensibility request?
 
-Extensibility requests can be logged in LCS. Details are available in the [Extensibility requests](../../dev-itpro/extensibility/extensibility-requests.md) topic. Note the following timelines for logging and using the available extensions.
+Extensibility requests can be logged in LCS. Details are available in the [Extensibility requests](../../dev-itpro/extensibility/extensibility-requests.md) article. Note the following timelines for logging and using the available extensions.
 
 | Date         | Extensibility requests |
 |--------------|------------------------|

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Software lifecycle policy and cloud releases
-description: This topic outlines the lifecycle and support policies for the Finance and Operations online service.
+description: This article outlines the lifecycle and support policies for the Finance and Operations online service.
 author: sericks007
 ms.date: 05/06/2022
 ms.topic: article

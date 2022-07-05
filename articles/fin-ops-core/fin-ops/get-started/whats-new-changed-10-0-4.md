@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Finance and Operations version 10.0.4 (July 2019)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.4. This version will be released in July.
+description: This article describes features that are either new or changed in Dynamics 365 for Finance and Operations version 10.0.4. This version will be released in July.
 author: tonyafehr
 ms.date: 07/26/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.4
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.4. This version was released in July and has a build number of 10.0.136. For more information about version 10.0.4, see [Additional resources](whats-new-changed-10-0-4.md#additional-resources).
+This article describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 10.0.4. This version was released in July and has a build number of 10.0.136. For more information about version 10.0.4, see [Additional resources](whats-new-changed-10-0-4.md#additional-resources).
 
 
 
@@ -62,12 +62,12 @@ Wondering about upcoming and recently released capabilities in any of our busine
 [Check out the April '19 release notes](/business-applications-release-notes/April19/index). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
 ### Removed and deprecated features
-The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features for Finance and Operations](../../dev-itpro/migration-upgrade/deprecated-features.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 

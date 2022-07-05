@@ -1,8 +1,268 @@
 {
   "redirections": [
     {
+      "source_path": "articles/finance/localizations/tasks/eur-00011-eu-sales-list-report.md",
+      "redirect_url": "../emea-eu-sales-list-example",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/tasks/eur-00011-eu-sales-list-reporting.md",
+      "redirect_url": "../emea-eu-sales-list-example",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/tasks/de-00003-electronic-transmission-elster.md",
+      "redirect_url": "/dynamics365/finance/get-started/removed-deprecated-features-finance#elster-declaration-for-germany-design-based-on-reporting-codes",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md",
+      "redirect_url": "../emea-nl-vat-declaration-netherlands",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/new-task-guides-available-february-2016.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/new-task-guides-dec-2017.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/new-task-guides-november-2016.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/new-updated-task-guides-available-august-2016.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/new-updated-task-guides-available-may-2016.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/ax4-content-retired.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/index",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/axerd-retired.md",
+      "redirect_url": "/dynamics365/fin-ops-core/fin-ops/get-started/mainstream-support-ax-2009-2012?toc=%2fdynamics365%2ffinance%2ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/data-entities/throttling-faq.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/data-entities/priority-based-throttling",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/er-prepare-application-specific-metadata.md",
+      "redirect_url": "tasks/prepare-application-metadata-rcs?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/parse-incoming-documents-excel.md",
+      "redirect_url": "er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-in-excel-format",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/parse-incoming-documents-json-format.md",
+      "redirect_url": "er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-in-json-format ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/parse-incoming-electronic-documents.md",
+      "redirect_url": "er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-to-update-application-data",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md",
+      "redirect_url": "er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-in-csv-format",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/create-model-map-config-er.md",
+      "redirect_url": "er-define-model-mapping-select-data-sources-2016-11?toc=%2Fdynamics365%2Ffinance%2Ftoc.json ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/design-config-import-app-data-er.md",
+      "redirect_url": "../er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-to-update-application-data ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/design-config-import-csv-er.md",
+      "redirect_url": "../er-parse-incoming-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#parse-incoming-documents-in-csv-format ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/er-modify-format-by-reapplying-microsoft-excel-template-july-2017.md",
+      "redirect_url": "../modify-electronic-reporting-format-reapply-excel-template?toc=%2Fdynamics365%2Ffinance%2Ftoc.json. ",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/tasks/model-map-aggregate-calculations-er.md",
+      "redirect_url": "../er-groupby-data-sources?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/can-set-up-gst-hst-internet-file-transfer.md",
+      "redirect_url": "can-gst-hst-internet-file-transfer",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-configuration-rcs.md",
+      "redirect_url": "e-invoicing-set-up-rcs?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-create-azure-storage-account-key-vault.md",
+      "redirect_url": "e-invoicing-create-azure-key-vault-azure-portal?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md",
+      "redirect_url": "e-invoicing-submit-electronic-documents?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-ita-get-started.md",
+      "redirect_url": "e-invoicing-ita-fatturapa-get-started",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/e-invoicing-service-administration.md",
+      "redirect_url": "e-invoicing-service-overview?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/emea-aut-vat-statement-details.md",
+      "redirect_url": "emea-aut-vat-declaration-austria",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/emea-cze-vat-statement-details.md",
+      "redirect_url": "emea-cze-vat-declaration-tax-declaration-model",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/emea-de-vat-declaration.md",
+      "redirect_url": "emea-deu-vat-declaration-germany",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/emea-nl-vat-declaration.md",
+      "redirect_url": "emea-nl-vat-declaration-netherlands",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/analytics/analytical-workspaces.md",
+      "redirect_url": "power-bi-home-page?toc=%2Fdynamics365%2Ffinance%2Ftoc.json",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform.md",
+      "redirect_url": "mobile-platform-getting-started",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/tasks/create-associate-registers.md",
+      "redirect_url": "/dynamics365/commerce/implementation-considerations-devices",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/tasks/create-associate-hardware-station.md",
+      "redirect_url": "/dynamics365/commerce/retail-hardware-station-configuration-installation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/retail-time-attendance.md",
+      "redirect_url": "/dynamics365/commerce/task-mgmt-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/serialized-inventory.md",
+      "redirect_url": "/dynamics365/commerce/pos-serialized-items",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/tasks/create-associate-device.md",
+      "redirect_url": "/dynamics365/commerce/implementation-considerations-devices",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/lcs-solutions/business-process-modeler-libraries-updated-experience.md",
+      "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/creating-editing-browsing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/tasks/run-out-box-reports.md",
+      "redirect_url": "/dynamics365/commerce/price-report",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/tasks/perform-self-service-download-hardware-station.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/synchronize-installers",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/tasks/create-online-channel-define-channel-attributes.md",
+      "redirect_url": "/dynamics365/commerce/channel-setup-online",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/tasks/retail-price-adjustments.md",
+      "redirect_url": "/dynamics365/commerce/price-adjustments-discounts",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/tasks/define-call-center-channel-channel-attributes.md",
+      "redirect_url": "/dynamics365/commerce/channel-setup-callcenter",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/fin-ops-core/dev-itpro/deployment/setup-deploy-on-premises-environments.md",
+      "redirect_url": "setup-deploy-on-premises-pu41",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/deployment/france-local-deployment.md",
       "redirect_url": "deployment-options-geo",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/pos-extension/pos-extension-getting-started.md",
+      "redirect_url": "pos-extension-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/pos-api-extension.md",
+      "redirect_url": "/dynamics365/commerce/dev-itpro/pos-extension/pos-extension-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/create-windows-installer-payment-connector.md",
+      "redirect_url": "deploy-payment-connector",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/dev-itpro/dev-retail-home-page.md",
+      "redirect_url": "/dynamics365/commerce/retail-sdk/retail-sdk-overview",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/cpe-overview.md",
+      "redirect_url": "provisioning-guide",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/cpe-faq.md",
+      "redirect_url": "provisioning-guide",
       "redirect_document_id": "false"
     },
     {
@@ -13,6 +273,11 @@
     {
       "source_path": "articles/finance/localizations/e-invoicing-create-new-e-invoicing-feature.md",
       "redirect_url": "e-invoicing-working-globalization-features",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/define-maintain-retail-channels.md",
+      "redirect_url": "channels-overview",
       "redirect_document_id": "false"
     },
     {
@@ -698,132 +963,132 @@
     },
     {
       "source_path": "articles/supply-chain/cost-management/troubleshoot-costmanagement.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/costing/aging-report-discrepancies",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/inventory/troubleshoot-inventory-operations.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/inventory/cant-find-workflow-dropdown",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/master-planning/troubleshoot-masterplanning.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/planning/bom-explosion-works-differently",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/pim/troubleshooting-productconfigurator.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/products/cant-delete-released-prod",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/pim/troubleshooting-productinformation.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/products/cant-delete-released-prod",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/procurement/troubleshoot-procurementworkflows.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/procurement/accounting-over-under-distributed",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/procurement/troubleshoot-purchaseorders.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/procurement/accounting-over-under-distributed",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/procurement/troubleshooting-pricediscountagreements.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/procurement/accounting-over-under-distributed",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/procurement/troubleshooting-productreceiptinvoicing.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/procurement/accounting-over-under-distributed",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/production-control/troubleshoot-discretemanufacturing.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/production/backflush-costing-calculation-error",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/production-control/troubleshoot-processmanufacturing.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/production/backflush-costing-calculation-error",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/sales-marketing/troubleshooting-sales.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/sales/bundle-item-intercompany-process",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/sales-marketing/troubleshooting-salesquotation.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/sales/bundle-item-intercompany-process",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-app-connection.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/certification-path-app-connection-error",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-batch-and-serial-reservation-hierarchies.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-configuration.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-inbound.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-loads-shipments.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-outbound.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-partial-release-shipment.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-picking-packing.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-replenishment.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-reservations.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-setup.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-upgrade-migration.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/supply-chain/warehousing/troubleshoot-warehouse-work.md",
-      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
       "redirect_document_id": "false"
     },
     {
@@ -18470,6 +18735,961 @@
     {
       "source_path": "articles/supply-chain/warehousing/import-asn-v2-data-entity.md",
       "redirect_url": "/dynamics365/supply-chain/warehousing/import-asn-data-entity",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/costing/aging-report-discrepancies.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/costing/aging-report-discrepancies",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/costing/change-ledger-period-without-closing.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/costing/errors-change-ledger-period-without-closing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/costing/copying-item-model-groups.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/costing/missing-field-settings-copy-item-model-groups",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/costing/function-gaps-storage-reports.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/costing/function-gaps-storage-reports",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/costing/indirect-costs-in-pr.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/costing/indirect-costs-process-report-has-deleted-orders",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/costing/posting-to-purchase.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/costing/posting-to-purchase-accrual-with-zero-if-posted-receipt-has-zero",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/costing/purchase-orders-rece.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/costing/check-open-quantities-not-show-physically-received-purchase-orders",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/costing/there-is-no-from-dat.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/costing/no-from-date-active-prices-tab-item-price",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/costing/update-conflict-standard-moving.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/costing/update-conflict-standard-cost-moving-average-inventory-valuation",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/inventory/cant-find-workflow-dropdown.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/inventory/cant-find-workflow-dropdown",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/inventory/cant-post-inventory-journal.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/inventory/cant-post-inventory-journal",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/inventory/inventory-journal-locked-workflow.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/inventory/inventory-journal-locked-workflow",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/inventory/journal-unit-quantity-incorrect.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/inventory/journal-unit-quantity-incorrect",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/inventory/journal-workflow-conditions.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/inventory/journal-workflow-conditions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/inventory/multiple-inventory-t.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/inventory/multiple-inventory-transactions-on-physical-update-disabled",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/inventory/on-hand-filter-unexpected.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/inventory/on-hand-filter-unexpected",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/inventory/quantity-on-a-start.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/inventory/quantity-started-quarantine-order-not-updated",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/inventory/reverse-report-as-fi.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/inventory/reverse-report-as-finished-creates-open-transaction",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/inventory/sku-max-decimals-zero.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/inventory/maximum-number-of-decimals-for-stock-keeping-unit-is-0",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/inventory/the-field-last-test.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/inventory/last-tested-date-not-updated",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/inventory/unable-to-print-the.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/inventory/picking-list-report-not-show-new-notes-attached-to-journal",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/inventory/while-splitting-the.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/inventory/minimum-quantity-pick-qty-catch-weight-quantity-split-into-batches",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/bom-explosion-works-differently.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/bom-explosion-works-differently",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/delay-value-not-updated.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/delay-value-not-updated",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/deprecated-master-planning-error.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/deprecated-master-planning-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/firmed-directly-deri.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/firmed-directly-derived-orders-processed-by-in-review-workflow",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/item-cannot-have-bom-formula.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/item-cannot-have-bom-formula",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/master-planning-batc.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/cant-filter-master-planning-batch-items-by-coverage-group-values",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/no-parameters-for-master-plan.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/no-parameters-for-master-plan",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/not-enough-capacity-error.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/not-enough-capacity-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/planned-order-long-update.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/planned-order-long-update",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/planned-order-must-be-scheduled.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/planned-order-must-be-scheduled",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/planned-order-not-exist.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/planned-order-not-exist",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/planned-orders-are-g.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/planned-orders-created-for-phantom-products-master-planning",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/planned-orders-in-stock-items.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/planned-orders-in-stock-items",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/planning-optimisatio.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/planning-optimization-creates-planned-purchase-order-negative-days",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/prod-schedule-safety-margins.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/production-schedule-not-consider-safety-margins",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/product-is-on-hold.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/product-is-on-hold",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/respect-capacity-limitations.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/master-planning-not-respect-capacity-limitations",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/selected-formula-not-approved.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/selected-formula-not-approved",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/unable-to-upload-the.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/unable-to-update-forecasted-unit-cost",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/vendor-code-not-authorized.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/vendor-code-not-authorized",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/vendor-not-specified.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/vendor-not-specified",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/warehouse-removal-fr.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/warehouse-removal-from-forest-lines-not-work",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/planning/when-importing-to-th.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/planning/prompted-to-save-item-coverage-settings-without-changes",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/accounting-over-under-distributed.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/over-under-distribution",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/action-requires-full-distribution.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/action-requires-full-distribution",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/approved-vendor-effective-date.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/approved-vendor-effective-date",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/canceled-po-in-draft-list.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/canceled-po-in-draft-list",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/canceled-receipts-posted.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/canceled-receipts-posted",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/change-management-canceled-remainder.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/change-management-canceled-remainder",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/consolidate-multiple-receipts.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/consolidate-multiple-receipts",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/default-tax-group-and-discount.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/default-tax-group-and-discount",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/delivery-name-isnt-synced.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/delivery-name-isnt-synced",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/invocation-target-exception.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/invocation-target-exception",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/line-number-increments.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/line-number-increments",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/max-limit-on-requisition.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/max-limit-on-requisition",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/not-able-to-invoice-.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/cant-invoice-original-sales-order-direct-delivery-purchase-order",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/object-reference-not-set.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/object-reference-not-set",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/over-under-distribution.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/over-under-distribution",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/personalize-purchase-agreement-price.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/personalize-purchase-agreement-price",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/po-language.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/purchase-order-language-not-reflect-legal-entity-settings",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/po-receipt-missing-charges.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/po-receipt-missing-charges",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/po-unit-prices-not-calculated.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/po-unit-prices-not-calculated",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/post-setting-turned-off.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/post-setting-turned-off",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/purchase-order-line-data-issues.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/purchase-order-line-data-issues",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/purchase-requisition.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/cant-add-line-to-purchase-requisition-after-change",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/resubmit-po-after-change.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/trade-agreement-currencies.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/trade-agreement-currencies",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/trade-agreement-not-applied.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/trade-agreement-not-applied",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/trade-agreements-from-rejected-rfq.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/trade-agreements-from-rejected-rfq",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/vendor-rebate-not-cumulated.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/vendor-rebate-not-cumulated",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/procurement/voucher-number-consumed.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/procurement/voucher-number-consumed",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/backflush-costing-calculation-error.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/backflush-costing-calculation-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/bom-consumption-cost-error.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/bom-consumption-cost-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/cant-insert-bom-route-number.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/cant-insert-bom-route-number",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/flushing-principle-n.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/flushing-principle-not-respected-bom-lines",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/in-progress-jobs-ended.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/in-progress-jobs-ended",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/item-rm-not-reserved.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/item-rm-not-reserved",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/late-selection-is-no.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/late-selection-not-respected-reset-status-recurring-batch-job",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/missing-report-finished-quantity.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/missing-report-finished-quantity",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/posting-report-as-.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/quantity-ordered-cant-reduced-post-report-as-finished-journal",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/production-order-status-error.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/production-order-status-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/production-orders-marking-page.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/production-orders-marking-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/raw-material-lines-a.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/unpick-raw-material-lines-for-reported-as-finished-products",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/resource-name-not-updated.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/resource-name-not-updated",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/the-warehouse-in-pic.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/picking-list-warehouse-not-updated-bom-line",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/total-good-quantity-order-error.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/total-good-quantity-order-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/trace-finished-goods-consumed-goods.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/trace-finished-goods-consumed-goods",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/warehouse-management-processes-used.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/warehouse-management-processes-used",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/production/when-customer-is-try.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/production/batch-number-cleared-new-lot-id-selected",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/products/apply-template-in-re.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/products/cant-apply-template-create-released-product",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/products/cannot-import-with-r.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/products/cannot-import-item-with-released-products-v-2-entity",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/products/cant-delete-released-prod.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/products/cant-delete-released-prod",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/products/integers-incorrectly-rounded.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/products/integers-incorrectly-rounded",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/products/text-overwritten-configured-item.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/products/text-overwritten-configured-item",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/products/when-the-customer-ad.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/products/purchase-orders-not-show-translated-product-text",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/rebates/cumulating-customer-.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/rebates/cumulate-customer-rebates-fails",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/sales/bundle-item-intercompany-process.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/sales/bundle-item-intercompany-process",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/sales/cancel-intercompany-purchase-order.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/sales/cancel-intercompany-purchase-order",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/sales/cancel-order-reservations-not-removed.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/sales/cancel-order-reservations-not-removed",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/sales/quantity-cannot-be-reduced.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/sales/quantity-cannot-be-reduced",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/sales/sales-update-history-cleanup-job-performance-issues.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/sales/sales-update-history-cleanup-job-performance-issues",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/sales/same-trade-agreement-selected.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/sales/same-trade-agreement-selected",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/sales/service-item-sales-quantity.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/sales/service-item-sales-quantity",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/sales/system-administrator.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/sales/system-administrator-cant-clear-order-holds",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/sales/tax-information-not-updated.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/sales/tax-information-not-updated",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/transportation/reconciliation-reaso.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/transportation/add-only-main-account-as-credit-reconciliation-reason",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/auto-reservation-prompt-shown.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/auto-reservation-prompt-shown",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/blocked-unfinished-replenishment-work.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/blocked-unfinished-replenishment-work",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/cancel-posted-packing-slip.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/cancel-posted-packing-slip",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/canceled-product-receipts.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/canceled-product-receipts-not-updated-to-registered",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/cant-move-license-plate.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/cant-move-license-plate",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/cant-reduce-picked-quantities.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/cant-reduce-picked-quantities",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/certification-path-app-connection-error.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/certification-path-app-connection-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/cluster-profile-not-found-error.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/cluster-profile-not-found-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/customer-is-on-hold.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/shipment-cannot-be-confirmed-customer-is-on-hold-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/decimal-rounding-of-quantity.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/decimal-rounding-of-physical-updating-quantity-unit-incorrect-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/delivery-note-correction.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/delivery-note-correction",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/dimension-location-left-blank.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/dimension-location-left-blank",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/direct-delivery-wms-enabled-warehouse.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/direct-delivery-wms-enabled-warehouse",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/dock-management-inventory-mixing.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/dock-management-inventory-mixing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/error-cannot-update.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/error-cannot-update-quantity-with-new-dimensions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/evaluate-multiple-location-directive-actions.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/evaluate-multiple-location-directive-actions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/generate-work-immediately-load-release.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/generate-work-immediately-load-release",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/invalid-license-plate.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/invalid-license-plate",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/inventory-owner-not-allowed.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/inventory-owner-not-allowed",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/inventory-quantity-insufficient-transactions.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/inventory-quantity-insufficient-transactions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/inventory-status-change-work-type.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/inventory-status-change-work-type",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/license-plate-location-invalid.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/license-plate-location-invalid",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/license-plate-quantity-not-valid.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/license-plate-quantity-not-valid",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/license-plate-specified-location.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/license-plate-specified-location",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/line-already-on-load.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/line-already-on-load",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/load-has-active-appo.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/calendar-type-requires-appointment-checked-in-out-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/load-line-quantity-is-zero.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/load-line-quantity-is-zero",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/load-weight-positive-numbers.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/load-weight-positive-numbers",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/location-profile-set.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/location-profile-set",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/mixed-license-plate-receiving.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/mixed-license-plate-receiving",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/mobile-app-emulator-administrator.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/mobile-app-emulator-administrator",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/move-basic-to-advanced-warehousing.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/move-basic-to-advanced-warehousing",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/not-enough-work-for-cluster.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/not-enough-work-for-cluster",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/open-or-no-work-exis.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/shipment-for-load-could-not-confirmed-all-work-must-complete",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/order-status-partially-released.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/order-status-partially-released",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/packing-station-not-.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/packing-station-not-show-product-notes",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/partial-picking-warehouse-app.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/partial-picking-warehouse-app",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/partial-quantity-inventory-status.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/partial-quantity-inventory-status",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/physical-remaining-q.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/physical-remaining-quantity-unit-must-other-than-zero",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/picked-quantity-is-n.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/picked-quantity-not-sufficient-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/picked-quantity-is-not-on-final.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/some-items-not-picked-moved-to-final-shipping-location",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/picked-quantity-is-zero.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/picked-quantity-is-zero",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/print-documents-by-warehouse.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/print-documents-by-warehouse",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/quantity-exceeds-ove.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/quantity-exceeds-overdelivery-percentage",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/quantity-exceeds-over-pack-slip.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/quantity-exceeds-over-pack-slip",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/quantity-exceeds-rec-del.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/quantity-exceeds-received-delivered-quantity",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/quantity-exceeds-und.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/quantity-exceeds-underdelivery-percentage",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/quantity-exceeds-under-pack-slip.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/quantity-exceeds-under-pack-slip",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/quantity-invalid-multiple-license-plates.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/quantity-invalid-multiple-license-plates",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/quantity-invalid-split-pick.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/quantity-invalid-split-pick",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/released-qty-cannot-be-negative.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/released-qty-cannot-be-negative",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/request-session-data-difference.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/request-session-data-difference",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/rerelease-partially-shipped-load.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/rerelease-partially-shipped-load",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/reservations-0-inventory-available.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/reservations-0-inventory-available",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/return-order-invalid-dimensions.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/return-order-invalid-dimensions",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/sales-order-not-released.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/sales-order-not-released",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/Scale-unit-warehouse-workload-installation-issues.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/scale-unit-warehouse-workload-installation-issues",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/shipment-confirmed-no-posting.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/shipment-confirmed-no-posting",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/slotting-templates-inventory-batch-above.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/slotting-templates-inventory-batch-above",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/specify-dimensions-above-location.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/specify-dimensions-above-location",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/the-last-closed-work.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/the-last-closed-work-link-must-be-a-put-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/the-weight-fields-on.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/weight-fields-on-load-lines-dont-match-weight-fields-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/unable-to-post-packi.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/cant-post-packing-slip-for-stopped-sales-order-line",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/unconfirmed-purchase-orders-confirmed.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/unconfirmed-purchase-orders-confirmed",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/unreserve-inventory-sales-line.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/unreserve-inventory-sales-line",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/upgrade-migration-certification-path-error.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/upgrade-migration-certification-path-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/wave-is-not-eligible.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/wave-is-not-eligible",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/weight-must-be-posit.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/weight-must-be-positive-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/when-receipting-prod.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/one-label-printed-for-multiple-work-headers-receipt",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/work-cannot-be-canceled-blocked.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/work-cannot-be-canceled-blocked",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/work-cannot-be-canceled-status.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/work-cannot-be-canceled-status",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/work-is-not-blocked.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/work-is-not-blocked",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/work-remains-blocked.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/work-remains-blocked",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/troubleshooting/warehousing/you-cannot-cancel-wo.md",
+      "redirect_url": "/troubleshoot/dynamics-365/supply-chain/warehousing/you-cannot-cancel-work-on-user-error",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/configure-security-vendor-portal-users.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/manage-vendor-collaboration-users",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/procurement/collaborate-vendors-vendor-portal.md",
+      "redirect_url": "/dynamics365/supply-chain/procurement/vendor-collaboration-work-external-vendors",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cost-management/tasks/calculate-bom-multilevel-structure-2016-02.md",
+      "redirect_url": "/dynamics365/supply-chain/cost-management/cost-calculation-level",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cost-management/tasks/calculate-bom-single-level-structure-2016-02.md",
+      "redirect_url": "/dynamics365/supply-chain/cost-management/cost-calculation-level",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/cluster-picking-item-confirmation.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/set-up-cluster-picking",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/consolidate-shipments.md",
+      "redirect_url": "/dynamics365/supply-chain/warehousing/about-shipment-consolidation-policies",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/configure-linked-products.md",
+      "redirect_url": "/dynamics365/supply-chain/pim/product-information",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/create-product.md",
+      "redirect_url": "/dynamics365/supply-chain/pim/product-information",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/pim/tasks/release-product-product-master-legal-entities.md",
+      "redirect_url": "/dynamics365/supply-chain/pim/product-information",
       "redirect_document_id": "false"
     }
   ]

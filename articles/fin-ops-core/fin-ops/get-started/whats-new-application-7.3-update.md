@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition 7.3
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017.
 author: tonyafehr
 ms.date: 10/02/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: josaw
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 7.3
 
 
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017 and has a build number of 7.3.11971.56116.
+This article describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3. This version was released in December 2017 and has a build number of 7.3.11971.56116.
 
 To learn more about the new features and changes in all of the latest product releases, see [What's new or changed](whats-new-changed.md) and [What's new or changed in Dynamics 365 for Retail](../../../commerce/get-started/whats-new.md).
 
@@ -148,7 +148,7 @@ India localization is available with the following features:
 - Withholding tax, including TDS and TCS.
 - Fixed assets, including depreciation as per the Companies act, depreciation as per the Income tax act, and special depreciation.
 - Value-added tax (VAT).
-- Custom duty and India Goods and Services Tax (GST). For more information, see the "Tax Engine (GTE) – India GST only" section in this topic.
+- Custom duty and India Goods and Services Tax (GST). For more information, see the "Tax Engine (GTE) – India GST only" section in this article.
 
 ## Master and reference data entities for warehouse and transportation management
 

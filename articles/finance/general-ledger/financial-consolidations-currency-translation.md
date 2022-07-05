@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial consolidations and currency translation overview
-description: This topic describes financial consolidations and currency translation in General ledger.
+description: This article describes financial consolidations and currency translation in General ledger.
 author: jinniew
 ms.date: 10/07/2021
 ms.topic: overview
@@ -30,15 +30,15 @@ ms.dyn365.ops.version: 8.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic takes you through the approach that both Microsoft Dynamics 365 Finance and Financial reporting use for consolidations. It describes scenarios that involve multi-company reporting, aggregation, elimination, and minority interest. It also explains how to handle special situations, such as scenarios where legal entities have different fiscal periods or different charts of accounts.
+This article takes you through the approach that both Microsoft Dynamics 365 Finance and Financial reporting use for consolidations. It describes scenarios that involve multi-company reporting, aggregation, elimination, and minority interest. It also explains how to handle special situations, such as scenarios where legal entities have different fiscal periods or different charts of accounts.
 
-This topic was written for users and functional consultants, and it assumes that readers have a general understanding of Finance and Financial reporting. Basic setup isn't covered.
+This article was written for users and functional consultants, and it assumes that readers have a general understanding of Finance and Financial reporting. Basic setup isn't covered.
 
 > [!NOTE]
-> The term *legal entity* is used in Finance, and the term *company* is used in Financial reporting. Both these terms are used in this topic. However, for the purposes of this topic, their meanings are the same.
+> The term *legal entity* is used in Finance, and the term *company* is used in Financial reporting. Both these terms are used in this article. However, for the purposes of this article, their meanings are the same.
 
 ## Audience
-This topic is intended for finance and accounting users and application consultants who want to use Finance and Reporting and Financial reporting to consolidate multi-company and multi-currency data.
+This article is intended for finance and accounting users and application consultants who want to use Finance and Reporting and Financial reporting to consolidate multi-company and multi-currency data.
 
 ## Approach
 Finance uses a separate legal entity to process a consolidation. It enables single-instance consolidation but provides an option to bring in data from other sources. The consolidation process must be run every time that changes are made in the source legal entities.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Budget control overview
-description: This topic introduces the budget control feature and provides information to help you configure budget control to optimize management of your organization's financial resources.
+description: This article introduces the budget control feature and provides information to help you configure budget control to optimize management of your organization's financial resources.
 author: panolte
 ms.date: 03/28/2022
 ms.topic: overview
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic introduces the budget control feature and provides information to help you configure budget control to optimize management of your organization's financial resources.
+This article introduces the budget control feature and provides information to help you configure budget control to optimize management of your organization's financial resources.
 
 Budget control supports the management of an organization's financial resources through the chart of accounts, workflows, user groups, source documents and journals, configurable calculation of available funds, budget cycles, and thresholds. When controls are in place, an organization can plan, measure, manage, and forecast its financial resources throughout its fiscal year. 
 

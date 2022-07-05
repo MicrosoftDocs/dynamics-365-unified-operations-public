@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up consignment
-description: This topic explains how to use the inbound consignment inventory processes.
+description: This article explains how to use the inbound consignment inventory processes.
 author: yufeihuang
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to use the inbound consignment inventory processes.
+This article explains how to use the inbound consignment inventory processes.
 
-Consignment inventory is inventory that’s owned by a vendor, but stored at your site. When you’re ready to consume or use the inventory, you take over the ownership of the inventory. This topic includes information about how to physically receive vendor-owned inventory on-hand without creating general ledger transactions, how to start a production process where the vendor-owned inventory can be physically reserved. and how to change the ownership of the raw material in order to be able to process the consumption as part of the production order processing. There’s also some information about how vendors can monitor consumption of their inventory using the vendor collaboration interface.
+Consignment inventory is inventory that’s owned by a vendor, but stored at your site. When you’re ready to consume or use the inventory, you take over the ownership of the inventory. This article includes information about how to physically receive vendor-owned inventory on-hand without creating general ledger transactions, how to start a production process where the vendor-owned inventory can be physically reserved. and how to change the ownership of the raw material in order to be able to process the consumption as part of the production order processing. There’s also some information about how vendors can monitor consumption of their inventory using the vendor collaboration interface.
 
 ## Overview of the consignment process
 
@@ -89,7 +89,7 @@ If your vendors are using the vendor collaboration interface, they can use this 
 - **Products received from consignment inventory** - Shows information about the items and quantities that have product receipts updated during the ownership change process.
 - **On-hand consignment inventory** - Shows information about the consignment items that they are expected to deliver, and the items that are already physically available at the customer site.
 
-For more information about setting up vendors to use vendor collaboration, see [Vendor portal user security](../procurement/configure-security-vendor-portal-users.md).
+For more information about setting up vendors to use vendor collaboration, see [Manage vendor collaboration users](../procurement/manage-vendor-collaboration-users.md).
 
 ## Inventory owners
 

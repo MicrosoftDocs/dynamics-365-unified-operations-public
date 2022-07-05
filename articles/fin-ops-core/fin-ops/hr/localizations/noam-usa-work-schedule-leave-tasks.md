@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up work schedules and leave
-description: This topic describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
+description: This article describes the processes for creating working time templates, working time calendars, and leave types, and the process for putting workers on leave.
 author: andreabichsel
 ms.date: 11/22/2019
 ms.topic: article

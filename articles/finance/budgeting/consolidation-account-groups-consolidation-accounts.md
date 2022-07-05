@@ -2,7 +2,7 @@
 # required metadata
 
 title: Consolidation account groups and additional consolidation accounts
-description: This topic provides information about consolidation account groups and additional consolidation accounts, and explains how they're used.
+description: This article provides information about consolidation account groups and additional consolidation accounts, and explains how they're used.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about consolidation account groups and additional consolidation accounts, and explains how they're used.
+This article provides information about consolidation account groups and additional consolidation accounts, and explains how they're used.
 
 ## Consolidation account groups
 

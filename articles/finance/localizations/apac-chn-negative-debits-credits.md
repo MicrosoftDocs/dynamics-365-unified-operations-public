@@ -2,7 +2,7 @@
 # required metadata
 
 title: Display debit and credit amounts in ledger accounts for China
-description: This topic shows how to display credit and debit amounts for ledger accounts in two separate columns in the general ledger for China. 
+description: This article shows how to display credit and debit amounts for ledger accounts in two separate columns in the general ledger for China. 
 author: ShylaThompson
 ms.date: 03/21/2018
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic shows how to display credit and debit amounts for ledger accounts in two separate columns in the general ledger for China. 
+This article shows how to display credit and debit amounts for ledger accounts in two separate columns in the general ledger for China. 
 
 You can view credit and debit amounts for ledger accounts in two separate columns on the **Voucher transactions** inquiry page. You can also view the negative amounts that are related to the reversing entries. All negative amounts are displayed in red letters on the **Voucher transactions** inquiry page.
 

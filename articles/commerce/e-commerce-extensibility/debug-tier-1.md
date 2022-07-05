@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure an e-commerce development environment against a Commerce cloud environment
-description: This topic describes how to set up an e-commerce online development environment to debug against a Microsoft Dynamics 365 Commerce cloud development environment.
+description: This article describes how to set up an e-commerce online development environment to debug against a Microsoft Dynamics 365 Commerce cloud development environment.
 author: samjarawan
 ms.date: 11/20/2020
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.5
 # Configure an e-commerce development environment against a Commerce cloud environment
 
 [!include [banner](../includes/banner.md)]
-This topic describes how to set up an e-commerce online development environment to debug against a Microsoft Dynamics 365 Commerce cloud development environment.
+This article describes how to set up an e-commerce online development environment to debug against a Microsoft Dynamics 365 Commerce cloud development environment.
 
 An e-commerce development environment can be configured to debug your live e-commerce website or to test e-commerce configuration changes against various Commerce cloud environments, such as "Dev," "Test," "UAT," or "Prod" environments. This environment is useful for testing and debugging e-commerce modules and data actions against Retail Server extensions. After it's configured, modules and data actions that use Retail Server APIs will directly call the Retail Server in the Commerce cloud environment. Otherwise, mock data will be required.
 
@@ -110,7 +110,7 @@ You may get CORS (cross origin) errors when calling Retail Server APIs from your
 When the Retail Server is configured with HTTP instead of HTTPS, you may receive "Mixed Content" errors when rendering e-commerce content. Ensure the Retail Server is configured with an HTTPS end point to avoid this type of error.
 
 ### Retail calls are failing 404 error
-404 errors may result if the channel ID and OUN are incorrect. To avoid those errors, ensure that the channel ID and OUN are correct in the **.env** file. See the [Configure a development environment (.env) file](configure-env-file.md) topic for details.
+404 errors may result if the channel ID and OUN are incorrect. To avoid those errors, ensure that the channel ID and OUN are correct in the **.env** file. See the [Configure a development environment (.env) file](configure-env-file.md) article for details.
 
 ## Additional resources
 

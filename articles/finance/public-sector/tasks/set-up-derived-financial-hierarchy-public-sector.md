@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Set up a derived financial hierarchy in the public sector
-description: This topic provides information about using derived financial hierarchies to work with posted transaction data for main and full account numbers and financial dimension values. 
+description: This article provides information about using derived financial hierarchies to work with posted transaction data for main and full account numbers and financial dimension values. 
 author: twheeloc
 ms.date: 02/14/2022
 ms.topic: business-process 

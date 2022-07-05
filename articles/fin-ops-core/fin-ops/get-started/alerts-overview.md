@@ -2,7 +2,7 @@
 # required metadata
 
 title: Alerts overview (contains video)
-description: This topic provides general information about alerts. You can use alerts to stay informed about events that you want to track during the workday.
+description: This article provides general information about alerts. You can use alerts to stay informed about events that you want to track during the workday.
 author: RichdiMSFT
 ms.date: 09/04/2019
 ms.topic: overview

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Define continuity schedules
-description: This topic walks through setting up a continuity program (otherwise known as reoccurring orders). 
+description: This article walks through setting up a continuity program (otherwise known as reoccurring orders). 
 author: josaw1
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic walks through setting up a continuity program (otherwise known as reoccurring orders). This topic uses company USRT in the demo data.
+This article walks through setting up a continuity program (otherwise known as reoccurring orders). This article uses company USRT in the demo data.
 
 
 ## Create continuity program

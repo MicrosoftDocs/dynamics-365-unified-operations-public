@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add languages to your site
-description: This topic explains how to add support for additional languages to a Microsoft Dynamics 365 Commerce site.
+description: This article explains how to add support for additional languages to a Microsoft Dynamics 365 Commerce site.
 author: bicyclingfool
 ms.date: 12/12/2019
 ms.topic: article
@@ -28,9 +28,9 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to add support for additional languages to a Microsoft Dynamics 365 Commerce site.
+This article explains how to add support for additional languages to a Microsoft Dynamics 365 Commerce site.
 
-You can localize your website into any language that Commerce supports. (The list of supported languages appears later in this topic.) To add a language on your website, you must first add it to an online store that is bound to your site.
+You can localize your website into any language that Commerce supports. (The list of supported languages appears later in this article.) To add a language on your website, you must first add it to an online store that is bound to your site.
 
 ## Add a language to an online store
 

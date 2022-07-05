@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial reporting (Russia)
-description: This topic provides information about financial reporting for Russia.
+description: This article provides information about financial reporting for Russia.
 author: Anasyash
 ms.date: 07/19/2021
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Agreements
-description: This topic provides information about sales and purchase agreements for Russian localization.
+description: This article provides information about sales and purchase agreements for Russian localization.
 author: v-nadyuz
 ms.date: 02/06/2020
 ms.topic: article

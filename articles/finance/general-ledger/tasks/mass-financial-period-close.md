@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Mass financial period close
-description: This topic shows how to place a period on hold or permanently close a period or more than one legal entity at a time. 
+description: This article shows how to place a period on hold or permanently close a period or more than one legal entity at a time. 
 author: aprilolson
 ms.date: 08/16/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic shows how to place a period on hold or permanently close a period or more than one legal entity at a time. In addition, the task will show how to restrict user group posting to specific modules.
+This article shows how to place a period on hold or permanently close a period or more than one legal entity at a time. In addition, the task will show how to restrict user group posting to specific modules.
 
 1. In the navigation pane, go to **General ledger > Period close > Ledger calendars**. Note that the list of legal entities displayed is dependent on the fiscal calendar selected on the page. Only legal entities using the selected fiscal calendar will display.
 2. Select **Edit**.

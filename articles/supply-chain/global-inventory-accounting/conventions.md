@@ -1,10 +1,10 @@
 ---
 title: Conventions
-description: This topic describes how to set up conventions to establish how costs should be accounted in Global Inventory Accounting.
+description: This article describes how to set up conventions to establish how costs should be accounted in Global Inventory Accounting.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global

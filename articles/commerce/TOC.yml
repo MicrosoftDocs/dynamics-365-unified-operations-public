@@ -6,7 +6,7 @@
       href: index.md
     - name: What's new or changed
       items:
-      - name: What's new or changed in Finance and Operations apps
+      - name: What's new or changed in finance and operations apps
         href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/commerce/toc.json
       - name: What's new or changed in Commerce
         items:
@@ -18,13 +18,11 @@
           href: get-started/whats-new-commerce-10-0-27.md
         - name: Commerce 10.0.26 (May 2022)
           href: get-started/whats-new-commerce-10-0-26.md
-        - name: Commerce 10.0.25 (April 2022)
-          href: get-started/whats-new-commerce-10-0-25.md 
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
           href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/commerce/toc.json
-        - name: Removed or deprecated features in Finance and Operations
+        - name: Removed or deprecated features in finance and operations
           href: ../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md?toc=/dynamics365/commerce/toc.json
         - name: Removed or deprecated features in Dynamics 365 Commerce
           href: get-started/removed-deprecated-features-commerce.md
@@ -59,7 +57,7 @@
         - name: Configure service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/configure-service-updates.md?toc=/dynamics365/commerce/toc.json
         - name: Pre-servicing and post-servicing
-          herf: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/commerce/toc.json
+          href: ../fin-ops-core/dev-itpro/lifecycle-services/pre-post-servicing.md?toc=/dynamics365/commerce/toc.json
         - name: Pause service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?toc=/dynamics365/commerce/toc.json
         - name: Get notified about service updates
@@ -70,20 +68,16 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/oneversion-isv.md?toc=/dynamics365/commerce/toc.json
         - name: Create and automate user acceptance tests
           href: ../fin-ops-core/dev-itpro/lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md?toc=/dynamics365/commerce/toc.json   
-      - name: Set up a Dynamics 365 Commerce evaluation environment
+      - name: Set up a Dynamics 365 Commerce sandbox environment
         items:
-        - name: Dynamics 365 Commerce evaluation environment overview
-          href: cpe-overview.md
-        - name: Provision a Dynamics 365 Commerce evaluation environment
+        - name: Provision a Dynamics 365 Commerce sandbox environment
           href: provisioning-guide.md
-        - name: Configure a Dynamics 365 Commerce evaluation environment
+        - name: Configure a Dynamics 365 Commerce sandbox environment
           href: cpe-post-provisioning.md
-        - name: Configure BOPIS in a Dynamics 365 Commerce evaluation environment
+        - name: Configure BOPIS in a Dynamics 365 Commerce sandbox environment
           href: cpe-bopis.md
-        - name: Configure optional features for a Dynamics 365 Commerce evaluation environment
+        - name: Configure optional features for a Dynamics 365 Commerce sandbox environment
           href: cpe-optional-features.md
-        - name: Dynamics 365 Commerce evaluation environment FAQ
-          href: cpe-faq.md
       - name: Deployment considerations
         items:
         - name: Deployment options
@@ -198,7 +192,7 @@
         items:
         - name: Implementation lifecycle management home page
           href: ../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md?toc=/dynamics365/commerce/toc.json
-        - name: Architecture for Finance and Operations apps
+        - name: Architecture for finance and operations apps
           href: ../fin-ops-core/fin-ops/imp-lifecycle/architecture-overview.md?toc=/dynamics365/commerce/toc.json
         - name: Microsoft FastTrack
           href: /dynamics365/fasttrack/
@@ -224,7 +218,7 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/commerce/toc.json 
         - name: Multiple LCS projects and production environments on one Azure AD tenant
           href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/commerce/toc.json  
-        - name: Implement Finance and Operations Commerce projects
+        - name: Implement finance and operations Commerce projects
           href: dev-itpro/implementing-dynamics-365-fin-and-ops-retail-projects.md
         - name: Set up new environments, Azure DevOps, and branches for projects
           href: dev-itpro/new-environments-visual-studio-teams-branch-retail-projects.md
@@ -396,6 +390,8 @@
           items:
           - name: Store Commerce app
             href: dev-itpro/store-commerce.md
+          - name: Migrate Modern POS to Store Commerce
+            href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
             href: implementation-considerations-devices.md
           - name: Choose between Store Commerce and Cloud POS
@@ -438,6 +434,8 @@
               href: pos-healthcheck.md
             - name: Support for network peripherals
               href: dev-itpro/network-peripherals.md
+            - name: Peripheral compatibility
+              href: Compatible-peripherals.md
           - name: Screen layouts
             items:
             - name: Demo data screen layouts in MPOS/CPOS
@@ -1400,6 +1398,8 @@
         items:
         - name: Fiscal registration service integration sample for Austria
           href: localizations/emea-aut-fi-sample.md
+        - name: Deployment guidelines for cash registers for Austria
+          href: localizations/emea-aut-deployment.md   
         - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
           href: localizations/emea-aut-fi-sample-sdk.md
       - name: Brazil
@@ -2272,7 +2272,7 @@
           href: ../fin-ops-core/dev-itpro/analytics/er-api-named-destinations.md?toc=/dynamics365/commerce/toc.json
         - name: Implement a custom ER source of inbound documents
           href: ../fin-ops-core/dev-itpro/analytics/er-custom-file-source.md?toc=/dynamics365/commerce/toc.json
-    - name: Finance and Operations (Dynamics 365) mobile app
+    - name: Finance and operations (Dynamics 365) mobile app
       items:
       - name: Mobile app home page
         href: ../fin-ops-core/dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/dynamics365/commerce/toc.json
@@ -2480,6 +2480,8 @@
             href: dev-itpro/retail-sdk/sdk-github.md
           - name: Legacy Retail SDK migration
             href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
+          - name: Obsolete and removed APIs, classes, and methods
+            href: dev-itpro/obsolete-apis-classes-methods.md
           - name: Modernizing the Commerce in-store technology stack (white paper)
             href: https://www.microsoft.com/download/details.aspx?id=103896
         - name: Environment setup
@@ -2564,6 +2566,8 @@
           items:
           - name: Create a Cloud Scale Unit extension package
             href: dev-itpro/CSU-packaging.md
+          - name: Merge Cloud Scale Unit extension packages for deployment
+            href: dev-itpro/merge-csu-extensions.md
           - name: Remove Cloud Scale Unit extensions
             href: dev-itpro/retail-sdk/remove-csu-package.md
       - name: Store Commerce
@@ -2870,7 +2874,7 @@
             href: dev-itpro/extend-customer-CDX-package.md
         - name: Packaging and deployment
           items:
-          - name: Create Commerce payment packaging for Finance and Operations deployment
+          - name: Create Commerce payment packaging for finance and operations deployment
             href: dev-itpro/payment-connector-package.md
       - name: Retail SDK (Legacy)
         items:
@@ -2890,6 +2894,8 @@
             href: dev-itpro/cloud-dev-box.md
           - name: Retail SDK build pipeline
             href: dev-itpro/retail-sdk/sdk-build-pipeline.md
+          - name: Set up a Visual Studio 2017 build agent to build MPOS
+            href: dev-itpro/retail-sdk/mpos-build-agent.md
           - name: Run POS samples
             href: dev-itpro/pos-run-samples.md
         - name: Reference
@@ -2912,6 +2918,14 @@
             href: dev-itpro/create-retail-experience-app.md
     - name: Troubleshooting
       items: 
+      - name: Store Commerce
+        items:
+        - name: Setup and installation issues
+          href: troubleshoot/store-commerce-setup-installation.md
+        - name: Performance issues
+          href: troubleshoot/store-commerce-performance.md
+        - name: Extension issues
+          href: troubleshoot/store-commerce-extensions.md
       - name: Order processing
         items:
         - name: Payment type must be credit card error
@@ -2968,9 +2982,10 @@
         items:
         - name: Set up an e-commerce development environment to debug against a Tier 1 Retail Server VM
           href: troubleshoot/set-up-dev-environment-debugging.md
-  - name: Finance and Operations apps development and administration 
+  - name: Finance and operations apps development and administration 
     href: ../fin-ops-core/dev-itpro/index.md
   - name: Dynamics 365 Finance
     href: ../finance/index.md
   - name: Dynamics 365 Supply Chain Management 
     href: ../supply-chain/index.md
+

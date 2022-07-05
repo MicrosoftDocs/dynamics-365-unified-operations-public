@@ -2,7 +2,7 @@
 # required metadata
 
 title: Absence registration in Time and attendance
-description: This topic explains how to handle absence registrations in Time and attendance.
+description: This article explains how to handle absence registrations in Time and attendance.
 author: johanhoffmann
 ms.date: 05/26/2017
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the concepts for absence and explains how to handle absence in Time and attendance.
+This article describes the concepts for absence and explains how to handle absence in Time and attendance.
 
 ## Absence that is based on regular work hours
 

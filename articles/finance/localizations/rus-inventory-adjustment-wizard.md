@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Inventory adjustment wizard  
-description: This topic provides information about the Inventory adjustment wizard which is used to adjust on-hand inventory and transactions.
+description: This article provides information about the Inventory adjustment wizard which is used to adjust on-hand inventory and transactions.
 author: v-nadyuz
 ms.date: 02/07/2020
 ms.topic: article
@@ -39,9 +39,9 @@ In the Russian localization, these features are available through the **Inventor
 
 ## Preliminary setup
 
-Before you can adjust item cost by using miscellaneous charges and the **Inventory adjustment** wizard, verify that you've completed the prerequisites in the Inventory cost structure (here will be link to the topic from content deliverable 148943) topic.
+Before you can adjust item cost by using miscellaneous charges and the **Inventory adjustment** wizard, verify that you've completed the prerequisites in the Inventory cost structure (here will be link to the article from content deliverable 148943) article.
 
-Additionally, before you can adjust item cost in a secondary currency, verify that you've completed the prerequisites in the Inventory valuation in secondary currency (here will be link to the topic from content deliverable 148936) topic.
+Additionally, before you can adjust item cost in a secondary currency, verify that you've completed the prerequisites in the Inventory valuation in secondary currency (here will be link to the article from content deliverable 148936) article.
 
 ## <a name="adjust-item-cost-using-inventory-adjustment-wizard"></a>Adjust item cost by using the Inventory adjustment wizard
 

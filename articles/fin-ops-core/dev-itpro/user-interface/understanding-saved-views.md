@@ -2,7 +2,7 @@
 # required metadata
 
 title: Build forms that fully utilize saved views
-description: This topic explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.
+description: This article explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.
 author: jasongre
 ms.date: 02/08/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 28
 
 [!include [banner](../includes/banner.md)]
 
-Saved views are an important expansion of personalization capabilities Finance and Operations applications. While the [Saved views](../../fin-ops/get-started/saved-views.md) topic provides general details about this feature, this topic focuses on the more technical elements of saved views as well as aspects of form development that may be impacted by views. 
+Saved views are an important expansion of personalization capabilities finance and operations applications. While the [Saved views](../../fin-ops/get-started/saved-views.md) article provides general details about this feature, this article focuses on the more technical elements of saved views as well as aspects of form development that may be impacted by views. 
 
 ## "User-perceived" pages
 Traditionally, a set of personalizations has a 1:1 link to a modeled form. For many pages, this makes sense to the user, as the user's perception of the page matches the way in which the form is modeled. However, in some cases the 1:1 link of a modeled form to a set of personalizations is not intuitive or obvious because users do not see or care about the boundaries between modeled forms. 
@@ -91,7 +91,7 @@ Custom filters are controls that are modeled on forms and that cause modificatio
 ### Relative filter values
 Forms might have to use relative filter conditions to retrieve the appropriate information when the page is loaded. For example, they often have to use filter conditions to restrict data for the current user, current date, and current legal entity. If a form hard-codes a filter to a specific value, any view that is saved with that filter might have issues showing the intended data or being shared with other users. For example, a form hard-codes a "current date" filter to a specific date, that query is saved to a view, and the view is shared with another user. In this case, the view might provide unexpected results, because it will still try to retrieve data from the hard-coded date in the past instead of the current date. Or a filter condition was intended to represent the current user but was hard-coded to a specific user. In this case, when the view is shared with another user, an error might occur when that user tries to load or import the view. 
 
-To help avoid this situation, forms that have relative filter conditions should have filter values that use **SysQueryRangeUtil** methods in combination with the Finance and Operations [advanced filter syntax](../../fin-ops/get-started/advanced-filtering-query-options.md), specifically the syntax where a filter value is enclosed in parentheses. Evaluation of the filter method will then be deferred until the query is run. Therefore, relative filtering conditions can be used in views and passed between users without causing issues. Users in the user interface can use this same syntax in conjunction with the "matches" operator to achieve the same effect.  
+To help avoid this situation, forms that have relative filter conditions should have filter values that use **SysQueryRangeUtil** methods in combination with the finance and operations [advanced filter syntax](../../fin-ops/get-started/advanced-filtering-query-options.md), specifically the syntax where a filter value is enclosed in parentheses. Evaluation of the filter method will then be deferred until the query is run. Therefore, relative filtering conditions can be used in views and passed between users without causing issues. Users in the user interface can use this same syntax in conjunction with the "matches" operator to achieve the same effect.  
 
 As an explicit example, consider a form that has a filter condition on a **User** field. If the filter value is set to **currentUserId()**, the function will be evaluated immediately, and the hard-coded user name will be used in the query. If a simple change is made to the filter value, so that it's set to **(currentUserId())** instead, the function will be saved to the query definition. Therefore, a view that has this condition can be saved to views and passed to other users without causing issues.  
 
@@ -136,3 +136,4 @@ This section provides a list of known issues for saved views while the feature i
 - Cannot move a view with a QuickFilter condition saved to it to another environment. The fix in release 10.0.13 more gracefully handles the situation, but does not allow these conditions to move between environments.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

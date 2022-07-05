@@ -1,8 +1,8 @@
 ---
 title: Warehouse orders for cloud and edge scale units
-description: This topic provides information about the warehouse order capability that is used as part of the warehouse scale unit workload.
+description: This article provides information about the warehouse order capability that is used as part of the warehouse scale unit workload.
 author: perlynne
-ms.date: 04/22/2021
+ms.date: 07/05/2022
 ms.topic: article
 ms.search.form: WHSWarehouseOrderLine, WHSWarehouseReceiptEntry, PurchTable
 audience: Application User
@@ -16,9 +16,10 @@ ms.dyn365.ops.version: 10.0.19
 # Warehouse orders for cloud and edge scale units
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [cloud-edge-paused-banner](../includes/cloud-edge-paused-banner.md)]
 
 > [!WARNING]
-> Not all business functionality is fully supported in the public preview when scale unit workloads are used. If you're using scale units, be sure to use only those processes that this topic explicitly describes as supported.
+> Not all business functionality is fully supported in the public preview when scale unit workloads are used. If you're using scale units, be sure to use only those processes that this article explicitly describes as supported.
 
 ## What are warehouse orders?
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Move environments between data centers
-description: This topic explains how to move environments that are managed by Microsoft to a different Microsoft Azure data center.
+description: This article explains how to move environments that are managed by Microsoft to a different Microsoft Azure data center.
 author: ClaudiaBetz-Haubold 
 ms.date: 04/29/2022
 ms.topic: article
@@ -51,7 +51,7 @@ Before you begin the move, you must save your data.
 - **Tier 1 environment database that is based on Microsoft SQL Server:** Make a backup of the database.
 - **Tier 2 and higher environments that are based on Azure SQL Database:** Choose one of the following options:
 
-    - **Option 1:** Review the processes that are listed in the [Database movement operations home page](../../dev-itpro/database/dbmovement-operations.md) topic.
+    - **Option 1:** Review the processes that are listed in the [Database movement operations home page](../../dev-itpro/database/dbmovement-operations.md) article.
     - **Option 2:** If you have an Azure subscription, save a copy of the Azure SQL database under that subscription.
     - **Option 3:** If you have multiple Azure SQL database environments, redeploy one environment, leave the remaining environments in the old data center, and then request a database refresh between the environments.
     - **Option 4:** Save data as data packages, and then import the packages after the redeployment is completed.

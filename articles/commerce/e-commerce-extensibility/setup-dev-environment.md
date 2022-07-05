@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up a development environment
-description: This topic describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
+description: This article describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 03/28/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
+This article describes how to set up a development environment for Microsoft Dynamics 365 Commerce.
 
 To set up a development environment for Dynamics 365 Commerce online extensibility development, you must install three free tools: Microsoft Visual Studio Code, Node.js, and Yarn. You must also install the Dynamics 365 Commerce Online Software Development Kit (SDK). You can install these tools in any order.
 
@@ -66,7 +66,7 @@ git clone https://github.com/microsoft/Msdyn365.Commerce.Online.git
 ```
 
 > [!NOTE]
-> The whole SDK and module library won't be downloaded and installed until you run the **yarn** command. For more information, see the [Download SDK dependencies](#download-sdk-dependencies) section later in this topic.
+> The whole SDK and module library won't be downloaded and installed until you run the **yarn** command. For more information, see the [Download SDK dependencies](#download-sdk-dependencies) section later in this article.
 
 If you cloned the repo, you can remove the .git folder (the hidden directory under the root). You will use Yarn to pull down updated dependencies.
 

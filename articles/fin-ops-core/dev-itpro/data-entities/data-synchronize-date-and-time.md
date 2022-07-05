@@ -33,7 +33,7 @@ It's important to set the time zone for your import job to Coordinated Universal
 
 This dual conversion causes dates to change between applications. For example, the dual conversion could cause an employee's start date to be different between Dynamics 365 Human Resources and Dynamics 365 Finance due to differences in local time zones. Setting the import job to UTC resolves this problem.
 
-1. In Dynamics 365 Finance and Operations, select **Data management**.
+1. In Dynamics 365 finance and operations, select **Data management**.
 
 2. Select **Import projects**, and then select the project.
 
@@ -47,3 +47,4 @@ This dual conversion causes dates to change between applications. For example, t
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

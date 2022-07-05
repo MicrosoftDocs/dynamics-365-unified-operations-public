@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import services that have GST
-description: This topic explains how to import services that have Goods and Services Tax (GST).
+description: This article explains how to import services that have Goods and Services Tax (GST).
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.4
 
 [!include [banner](../includes/banner.md)]
 
-Complete the procedures in this topic to import services that have Goods and Services Tax (GST).
+Complete the procedures in this article to import services that have Goods and Services Tax (GST).
 
 1. Go to **Accounts payable** \> **Invoices** \> **Invoice journal**.
 2. Create a journal.

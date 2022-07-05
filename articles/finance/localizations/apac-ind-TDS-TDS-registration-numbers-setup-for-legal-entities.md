@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up TDS registration numbers for legal entities
-description: This topic explains how to set up Tax Deducted at Source (TDS) registration numbers for legal entities.
+description: This article explains how to set up Tax Deducted at Source (TDS) registration numbers for legal entities.
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up Tax Deducted at Source (TDS) registration numbers for legal entities.
+This article explains how to set up Tax Deducted at Source (TDS) registration numbers for legal entities.
 
 1. Go to **Organization administration \> Organizations \> Legal entities**.
 

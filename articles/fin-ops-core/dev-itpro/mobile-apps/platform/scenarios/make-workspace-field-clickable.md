@@ -2,7 +2,7 @@
 # required metadata
 
 title: Make fields on mobile app pages clickable
-description: This topic explains how to customize the fields on a mobile app page so that they are shown as email addresses, phone numbers, or URLs.
+description: This article explains how to customize the fields on a mobile app page so that they are shown as email addresses, phone numbers, or URLs.
 author: tonyafehr
 ms.date: 05/26/2022
 ms.topic: article

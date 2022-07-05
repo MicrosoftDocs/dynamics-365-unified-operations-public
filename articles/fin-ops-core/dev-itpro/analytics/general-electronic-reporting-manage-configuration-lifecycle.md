@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage the Electronic reporting (ER) configuration lifecycle
-description: This topic describes how to manage the lifecycle of Electronic reporting (ER) configurations for Dynamics 365 Finance.
+description: This article describes how to manage the lifecycle of Electronic reporting (ER) configurations for Dynamics 365 Finance.
 author: NickSelin
 ms.date: 07/23/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to manage the lifecycle of Electronic reporting (ER) configurations for Dynamics 365 Finance.
+This article describes how to manage the lifecycle of Electronic reporting (ER) configurations for Dynamics 365 Finance.
 
 ## Overview
 
@@ -78,7 +78,7 @@ The following roles and related activities are associated with the ER configurat
 | Accounts payable payments clerk            | Use ER artifacts in a specific business process.                | For example, an **Accounts payable payments clerk** role that allows electronic payment messages to be generated for processing invoices, based on the ER format that is configured for a specific payment method. |
 
 ## ER configuration development lifecycle
-For the following ER-related reasons, we recommend that you design ER configurations in the development environment, as a separate instance of Finance and Operations:
+For the following ER-related reasons, we recommend that you design ER configurations in the development environment, as a separate instance of finance and operations:
 
 - Users in either the **Electronic reporting developer** role or the **Electronic reporting functional consultant** role can edit configurations and run them for testing purposes. This scenario can cause calls of methods of classes and tables that might harm business data and the performance of the instance.
 - Calls of methods of classes and tables as ER data sources of ER configurations aren't restricted by entry points and logged company content. Therefore, users in either the **Electronic reporting developer** role or the **Electronic reporting functional consultant** role can access business-sensitive data.
@@ -118,3 +118,4 @@ In some cases, you might require that the system ignore the configured prerequis
 [Define the dependency of ER configurations on other components](tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

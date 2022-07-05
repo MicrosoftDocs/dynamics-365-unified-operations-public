@@ -2,7 +2,7 @@
 # required metadata
 
 title: Embed third-party apps 
-description: This topic explains how to embed third-party apps to augment the product's functionality.
+description: This article explains how to embed third-party apps to augment the product's functionality.
 author: jasongre
 ms.date: 09/13/2021
 ms.topic: article
@@ -58,7 +58,7 @@ Use this procedure if you want to supplement an existing page in the system with
     > - The app or website must be configured to allow itself to be embedded.
 
 6. Select **Save** to embed the app on the page. The app is added as the last tab or section in the group.
-7. Confirm that the app appears as expected. If the app isn't rendered, see the [Troubleshooting](#troubleshooting) section later in this topic.
+7. Confirm that the app appears as expected. If the app isn't rendered, see the [Troubleshooting](#troubleshooting) section later in this article.
 8. Open the view selector, and select either **Save** (if the app should be associated with the current view) or **Save as** (to save the app to a different view).
 
     If the page doesn't have a view selector (for example, if the page is a dialog box or a workspace), you can skip this step.
@@ -80,7 +80,7 @@ Use this procedure if the app that you want to embed isn't related to an existin
     > - The app or website must be configured to allow itself to be embedded.
 
 5. Select **Save** to add the app to the dashboard as a new tile.
-6. Select the new tile on the dashboard, and confirm that the app appears as expected. If the app isn't being rendered, see the [Troubleshooting](#troubleshooting) section later in this topic.
+6. Select the new tile on the dashboard, and confirm that the app appears as expected. If the app isn't being rendered, see the [Troubleshooting](#troubleshooting) section later in this article.
 
 ## Sharing embedded apps
 
@@ -131,6 +131,6 @@ If a website isn't rendered correctly after it's embedded in a Finance and Opera
 
 ### [Developer] Modeling a website on a form
 
-Although this topic is focused on embedding third-party apps or websites through personalization, developers can also embed them in a form by using the Visual Studio development experience. Just add a **WebsiteHostControl** control to the form. The metadata properties that are available for the control provide the same capabilities as the personalization experience.
+Although this article is focused on embedding third-party apps or websites through personalization, developers can also embed them in a form by using the Visual Studio development experience. Just add a **WebsiteHostControl** control to the form. The metadata properties that are available for the control provide the same capabilities as the personalization experience.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

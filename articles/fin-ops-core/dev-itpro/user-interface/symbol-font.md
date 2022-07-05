@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics Symbol font
-description: This topic provides a link to the list of available symbols for each release.
+description: This article provides a link to the list of available symbols for each release.
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article

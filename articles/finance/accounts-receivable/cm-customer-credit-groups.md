@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer credit groups
-description: This topic provides information about customer credit groups.
+description: This article provides information about customer credit groups.
 author: JodiChristiansen
 ms.date: 04/14/2020
 ms.topic: article
