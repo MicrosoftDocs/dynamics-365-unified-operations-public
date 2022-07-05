@@ -4,7 +4,7 @@
 title: Copy content to another locale
 description: This article describes how to copy existing content to another locale within a site in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
-ms.date: 07/01/2022
+ms.date: 07/05/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -27,15 +27,15 @@ In this article we describe the steps how to add a new locale to existing channe
 
 1.	Log in to the site builder
 2.	Open the site you wish to operate within
-3.	Expand “Site settings” and open the “Channels” view
-4.	Click on the title of the channel you wish to add new locale to. Locale side pane will open.
-5.	Click “+ Add a locale”
-6.	Select “Locale to support” and confirm that “Domain” is correct
-7.	Enter unique URL path to “Path” e.g. “en-us” or “english-us”
-8.	Click OK
-9.	Close the locale side pane
-10.	Confirm that the new locale is listed next to the correct channel
-11.	Click “Save and publish”
+3.	Expand **Site settings** and open the **Channels** view.
+4.	Select the title of the channel you wish to add new locale to. Locale side pane will open.
+5.	Select **+Add a locale**.
+6.	Select **Locale to support** and confirm that the **Domain** value is correct.
+7.	Enter unique URL path to **Path**, for example "en-us" or "english-us".
+8.	Select **OK**.
+9.	Close the locale side pane.
+10.	Confirm that the new locale is listed next to the correct channel.
+11.	Select **Save and publish**.
 
 > [!NOTE]
 > Before the new locale can be configured in the site builder, it must be added to the associated online store channel in Commerce headquarters.
@@ -44,26 +44,26 @@ In this article we describe the steps how to add a new locale to existing channe
 
 1.	Log in to the site builder
 2.	Open the site you wish to operate within
-3.	Expand “Site settings” and open the “Channels” view
-4.	Click “Create locale copy” from the command bar – locale copy side pane will open
-5.	Ensure that the correct site has been selected in the “Select site”
-6.	Select the source for the content from “Source channel”
-7.	Select the same channel in the “Destination channel”
-8.	Select the source locale in “Source locale” and the new locale in “Destination locale”
-9.	Click “Copy locale”
-10.	Notification toast will appear confirming that the locale copy has been started
+3.	Expand **Site settings* and open the **Channels** view.
+4.	Select **Create locale copy** from the command bar – locale copy side pane will open.
+5.	Ensure that the correct site has been selected in the **Select site**.
+6.	Select the source for the content from **Source channel**.
+7.	Select the same channel in the **Destination channel**.
+8.	Select the source locale in “Source locale” and the new locale in **Destination locale**.
+9.	Select **Copy locale**.
+10.	Notification toast will appear confirming that the locale copy has been started.
 
 > [!NOTE]
 > You may also copy content between different channels.
 
 ## Monitor the status of the locale copy
 
-1.	Log in to the site builder
-2.	Open the site you wish to operate within
-3.	Expand “Site settings” and open the “Channels” view
-4.	Click “Jobs”
-5.	From the list of jobs in the view, click the one you wish to monitor
-6.	Details will appear on the right side of the view
+1.	Log in to the site builder.
+2.	Open the site you wish to operate within\.
+3.	Expand “Site settings” and open the **Channels** view.
+4.	Select **Jobs**.
+5.	From the list of jobs in the view, select the one you wish to monitor.
+6.	Details will appear on the right side of the view.
 
 
 
