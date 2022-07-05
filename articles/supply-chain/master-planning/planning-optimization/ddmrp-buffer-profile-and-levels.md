@@ -73,7 +73,7 @@ Past average daily usage (ADU) is calculated as an average by adding up the quan
 
 In previous illustration, if today is the morning of June 11th, the average daily usage for the previous 3 days (June 8th, 9th, and 10th) is 21.
 
-- **ADU (past)** = (29+11+23) ÷ 3 = 21
+- **ADU (past)** = (29 + 11 + 23) ÷ 3 = 21
 
 ### Average daily usage (forward)
 
@@ -97,81 +97,80 @@ In previous illustration, if today is the morning of June 11th, the blended aver
 
 <!-- KFM: We should probably show the weighting factors here. -->
 
-## Zone calculation factors
+## Buffer calculation factors
 
-For each item, you can define two factors to adjust how big the red and green zones should be to compensate for the expected lead time and supply variability.
+For each item, you can define two factors to adjust how big the red and green zones should be to compensate for the expected lead time and demand variability.
 
 ![Lead time and variability factors](media/ddmrp-zone-factors.png "Lead time and variability factors")
 
-The first factor is the lead time factor. The values range from 0 to 1 and the guidance is that the longer the lead time is, the lower the value should be. The following ranges presented here which are recommended by the Demand Driven Institute.
+The first factor is the *lead time factor*. The value is a decimal that ranges from 0 to 1. The longer the lead time is, the lower the value should be. The Demand Driven Institute recommends the following ranges:
 
-In our Pillow Example, we have a medium lead time and will use the value of 0.5 as our lead time factor.
+- Long lead time: 0.20 - 0.40
+- Medium lead time: 0.41 - 0.60
+- Short lead time: 0.61 - 1.00
 
-The second factor is the variability factor. The values once again range from 0 to 1 and the guidance for this is that products with a higher demand variability should have a higher value for this factor. On the picture you can see the recommended ranges for low, medium, and high variability.
+The second factor is the *variability factor*. The value is also a decimal that ranges from 0 to 1. The higher the demand variability is, the lower the value should be. The Demand Driven Institute recommends the following ranges:
 
-Our example product has a pretty high demand variability so we will set the variability factor at 0.8
+- Low variability: 0.20 - 0.40
+- Medium variability: 0.41 - 0.60
+- High variability: 0.61 - 1.00
 
-## Example of Buffer levels calculation
+## Buffer calculation examples
 
-We will start by calculating the yellow zone because it is the simplest. The equation for yellow is average daily usage times the decoupled lead time. In other terms, this amount is the expected consumption of inventory during the replenishment lead time for the item
+This example continues with the pillow production example provided in [Inventory positioning](ddmrp-inventory-positioning.md), where we selected decoupling points that reduced the lead time from 21 days to 5 days, as shown in the following illustration.
 
-Using the data we showed in our example, with an average daily usage of 23 eaches and a lead time of 5 days
+![Example of decoupled lead time](media/ddmrp-bom-decoupled-lead-time-example.png "Example of decoupled lead time")
 
-![Graphical user interface  text  application  email Description automatically generated](media/image12.png)
+For the pillow example, assume that the average daily usage has been calculated to 23 pieces and, as shown in the previous illustration, the decoupled lead time is 5 days. Using these values, you can calculate the yellow zone using the following equation:
 
-We multiple these together and we get a yellow zone of 115 eaches
+- **Yellow zone** = \[Average daily usage\] × \[Decoupled lead time\] = 115
 
-Next step is to calculate parameters for red zone – the red zone is made up of two parts – the red base and the red safety. The red base is average daily usage times decoupled lead time times the lead time factor. Then we have the red safety component which is the red base times the variability factor, allowing us to pad our red zone amount for items with a higher demand variability you'll notice that the red base equation is related to the yellow zone – the average daily usage times the decoupled lead time.
+![Example of yellow zone calculation](media/ddmrp-example-calc-yellow.png "Example of yellow zone calculation")
 
-Looking again at the example data for our pillow, we have the same data for yellow plus our lead time factor of 0.5 and our variability factor of 0.8
+The red zone calculation is similar to the yellow zone, but is padded for variability and lead time. For the pillow example, assume that you have observed a medium lead time (factor = 0.50) and high demand variability (factor = 0.8). Using these values, combined with the components from the yellow equation, you can calculate the red zone using the following equations:
 
-![Graphical user interface Description automatically generated with low confidence](media/image13.png)
+- **Red base** = \[Average daily usage\] × \[Decoupled lead time\] × \[Lead time factor\] = 57.5
+- **Red safety** = \[Red base\] × \[Variability factor\] = 46
+- **Red zone** = \[Red base\] + \[Red safety\] = 103.5
 
-Using this data, our red base will be 23 times 5 times 0.5 which comes out to 57.5 eaches. Then our red safety is that 57.5 for the red base times our variability factor of 0.8 and giving us 46 eaches. Then we will sum these two together to get the red zone value of 103.5 eaches, which will be rounded by the system to 104 units since we count in whole numbers for our eaches unit
+The system will round the red zone off to 104 pieces (ea) because pieces are counted in whole numbers.
 
-And finally, we will calculate the green zone, which is the max of these three calculations – the item's minimum order quantity, the average daily usage times the order cycle, or the average daily usage times decoupled lead time times the lead time factor.
+![Example of red zone calculation](media/ddmrp-example-calc-red.png "Example of red zone calculation")
 
-Once again, we have our equation also based on the yellow zone equation. If we look at our data for the pillow when we calculate this, we will assume there is no order cycle (which means we don't have any time constraints around how frequently we order), and we will use our minimum order quantity of 10 eaches.
+The green zone calculation also includes the yellow zone equation, but allows for minimum order size, order cycle, and lead time factor. Looking at the pillow example, assume there is no order cycle (which means you don't have any time constraints around how frequently you order), and the minimum order quantity is 10 pieces. The green zone is then calculated as the maximum result of the following three equations:
 
-- Our first option for green will be the minimum order quantity which is 10.
-- Our second option is the 23 eaches of the average daily usage times our order cycle which is zero, so this would result in zero eaches.
-- Our third option is to take the yellow zone times the lead time factor which will give us a value of 57.5 eaches
+- \[Minimum order quantity\] = 10
+- \[Average daily usage\] × \[Order cycle\] = 0
+- \[Average daily usage\] × \[Decoupled lead time\] × \[Lead time factor\] = 57.5
 
-![Graphical user interface  text  application Description automatically generated](media/image14.png)
+Once again, the system will round the green zone off to 58 pieces (ea) because pieces are counted in whole numbers.
 
-That is the highest value of the three, so our green zone will be set at 58 eaches since we will round, as we mentioned before.
+![Example of red green calculation](media/ddmrp-example-calc-green.png "Example of green zone calculation")
 
-So to summarize, taking the zone calculations we completed, our red zone is 104 eaches and our minimum is also 104. Our yellow zone is 115 eaches which gives us a reorder point on 219, and our green zone is 58 eaches which gives us a maximum quantity of 277 eaches.
+The following illustration summarizes these zone calculation results using the funnel graphic often used in DDMRP.
 
-![Chart  funnel chart Description automatically generated](media/image15.png)
+![Summary of zone calculation results](media/ddmrp-example-calc-summary.png "Summary of zone calculation results")
 
-## How should we do that in DYNAMICS?
+## Implement buffers in Supply Chain Management
 
-As a precondition step you need to set up decoupling points as described above.
+This section describes how to implement your buffer zone strategy in Supply Chain Management.
 
-After setting up the decoupling point you can see (19:30)
+### Set up buffer values for a decoupling point
 
-Set up buffer values for a decoupling point
+Use the following procedure to set up buffer values for a decoupling point:
 
 1. Go to **Product information management \> Products \> Released products**
-
 1. Select a released item that you want to set up
-
 1. Click the **Plan** tab
-
 1. Click **Item coverage** under **Coverage** button group
-
 1. Select a record for decoupling point
-
 1. Click the **General** tab
-
 1. Set **Buffer values over time** = *Checked*
-
 1. The confirmation page opens.
+1. Click **Yes**, as a result the system will disable **Minimum**, **Reorder point** and **Maximum** fields and will begin calculating these values automatically. The result of this calculations you can see on the **Buffer values** tab
 
-1. Click **Yes**, as a result the system will disable **Minimum**, **Reorder** **point** and **Maximum** fields and will begin calculating these values automatically. The result of this calculations you can see on the **Buffer values** tab
-
-Note: If you set **Buffer values over time** = *Unchecked*, you can set values for the**Minimum**, **Reorder** **point** and **Maximum** fields manually.
+> [!NOTE]
+> If you set **Buffer values over time** = *Unchecked*, you can set values for the **Minimum**, **Reorder point** and **Maximum** fields manually.
 
 Work with the **Buffer values**
 
