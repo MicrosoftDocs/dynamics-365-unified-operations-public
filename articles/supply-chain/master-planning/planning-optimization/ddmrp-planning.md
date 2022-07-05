@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.28
 
 # Demand driven planning
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The article describes how generate planned orders for items that are set up as decoupling points. Here we have the same buffer levels we used in our example previously.
 

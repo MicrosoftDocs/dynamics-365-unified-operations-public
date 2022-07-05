@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.28
 
 # Buffer profile and levels
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Once you have identified your decoupling points (key items that you will strategically keep in stock) you must decide how much stock (buffer) you will keep at each of them. This is the second step of Demand Driven Materials Resource Planning (DDMRP).
 

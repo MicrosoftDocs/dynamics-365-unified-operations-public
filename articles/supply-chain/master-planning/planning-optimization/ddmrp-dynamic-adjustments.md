@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.28
 
 # Dynamic adjustments
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 <!-- KFM: I think this topic isn't necessary because we now describe how to use this factor in the topic about setting up buffer calculations. I don't think we have any unique info here. -->
 

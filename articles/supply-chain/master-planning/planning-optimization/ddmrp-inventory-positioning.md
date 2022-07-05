@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.28
 
 # Inventory positioning
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Strategic inventory positioning involves identifying decoupling points in your supply chain where you can build up inventory on hand. This is mainly done to provide lead time compression and shock absorption in your supply chain. It lets you mitigate the bullwhip effect by not passing demand variability all the way down the supply chain. This is the first step of Demand Driven Materials Resource Planning (DDMRP).
 

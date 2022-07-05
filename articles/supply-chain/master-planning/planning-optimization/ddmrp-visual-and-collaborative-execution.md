@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.28
 
 # Visual and collaborative execution
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 The topic described how the buffer for the pillow was replenished. Now, from an execution perspective it is important to see how is the actual on-hand of the buffer.
 
