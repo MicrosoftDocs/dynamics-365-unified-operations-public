@@ -52,7 +52,7 @@ The rest of this article will focus on the **Operational workspace** patterns.
 
 [![Wireframe for operational workspace.](./media/verticalOperationalWorkspace.png)](./media/verticalOperationalWorkspace.png)
 
-## Pattern changes for finance and operations
+## Pattern changes for finance and operations apps
 The Microsoft Dynamics AX 2012 Role Center has been replaced by multiple activity-focused workspaces.
 
 ## Model
