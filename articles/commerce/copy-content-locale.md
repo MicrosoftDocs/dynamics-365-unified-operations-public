@@ -19,11 +19,13 @@ ms.search.validFrom: 2017-06-20
 
 This article describes how to copy existing content to another locale within a site in Microsoft Dynamics 365 Commerce site builder.
 
-Content created in the site builder always has a locale. Individual pages and assets can be copied to a different locale by switching the locale when editing the content item and creating a new variant of it.
-In some cases it makes sense to duplicate all the content items in a certain locale to a new locale. For example, when you are launching entirely new locale on your storefront. If the new locale shares the base language with one of the existing locales (e.g. “en-us” and “en-au”) using that as the source locale reduces the effort required to localize the content in the new locale.
-In this article we describe the steps how to add a new locale to existing channel and how to copy all the content items from existing locale to a new locale.
+Content created in Commerce site builder is always associated with a locale (also known as a locale identifier), for example "en-us". Individual pages and assets can be copied to a different locale within the same e-commerce site by switching the locale when editing a content item and then creating a new variant of the content item. In some cases it makes sense to duplicate all of the content items in a locale to a new locale, for example when you are launching an entirely new locale on your storefront. If the new locale uses the same base language as one of the existing locales, using that existing locale as the source locale reduces the effort required to localize the content in the new locale. For example, the "en-us" and "en-au" locales both use the English language. 
+
+The following procedures step through how to add a new locale to existing channel and how to copy all the content items from existing locale to a new locale.
 
 ## Add a new locale
+
+To add a new locale in Commerce site builder, follow these steps.
 
 1.	Log in to the site builder
 2.	Open the site you wish to operate within
@@ -40,7 +42,9 @@ In this article we describe the steps how to add a new locale to existing channe
 > [!NOTE]
 > Before the new locale can be configured in the site builder, it must be added to the associated online store channel in Commerce headquarters.
 
-## Copy all the content items to a new locale
+## Copy all content items to a new locale
+
+To copy all content items to a new locale in Commerce site builder, follow these steps.
 
 1.	Log in to the site builder
 2.	Open the site you wish to operate within
@@ -57,6 +61,8 @@ In this article we describe the steps how to add a new locale to existing channe
 > You may also copy content between different channels.
 
 ## Monitor the status of the locale copy
+
+To monitor the status of the locale copy, follow these steps.
 
 1.	Log in to the site builder.
 2.	Open the site you wish to operate within\.
