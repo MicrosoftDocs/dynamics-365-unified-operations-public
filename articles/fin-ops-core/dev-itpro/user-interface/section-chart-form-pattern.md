@@ -40,7 +40,7 @@ The Section Chart form pattern is intended to be used primarily in conjunction w
 ## Wireframe
 [![Wireframe for Section Chart form pattern.](./media/sectionchartwireframe1.png)](./media/sectionchartwireframe1.png)
 
-## Pattern changes for finance and operations
+## Pattern changes for finance and operations apps
 This pattern didn't exist for Microsoft Dynamics AX 2012.
 
 ## Model
