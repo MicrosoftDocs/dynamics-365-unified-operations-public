@@ -56,9 +56,9 @@ In Microsoft Dynamics AX 2012, the arrangement of controls in containers is almo
 
 **Columns**=**1** 1 2 3 **Columns**=**2** 1 4 2 5 3 In Dynamics AX 2012, sizing is achieved via the **Height** and **Width** properties. If **Height** and **Width** are set to **Auto**, the size is as large as the child controls require. If **Height** and **Width** are set to **Column**, the container is as large as it can be within the parent container. By default, **Height** and **Width** are set to **Auto** for every container.
 
-### Layout in finance and operations 
+### Layout in finance and operations apps 
 
-In finance and operations, layout is controlled by the same basic properties that control layout in Dynamics AX 2012. However, additional options have been added to support a more responsive layout. In particular, the layout of a page is based on the following factors:
+In finance and operations apps, layout is controlled by the same basic properties that control layout in Dynamics AX 2012. However, additional options have been added to support a more responsive layout. In particular, the layout of a page is based on the following factors:
 
 -   The arrangement method that is specified by the **ArrangeMethod** property.
 -   The columns that are specified by the **Columns** property.
