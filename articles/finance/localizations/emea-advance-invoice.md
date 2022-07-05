@@ -4,7 +4,7 @@
 title: Advance invoices for Eastern Europe
 description: This article provides information about advance invoices for Eastern Europe. An advance invoice is a document that you can create for a customer or vendor. It states the amount that must be prepaid on a sales order.
 author: EvgenyPopovMBS
-ms.date: 05/25/2022
+ms.date: 07/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -270,31 +270,33 @@ To link an advance invoice to a purchase order, follow these steps.
     
 ## Use the Advance invoice and Prepayment handling functionality
 
-You can use **Advance invoice** and **Prepayment handling** functionality in the business process.
+You can use the **Advance invoice** and **Prepayment handling** functionality in the business process.
 
-Example. 
-1. A user submits an advance invoice with VAT to a customer for a prepayment. The advance invoice is not posted in the Ledger.
+For example:  
+1. A user submits an advance invoice with VAT to a customer for a prepayment. The advance invoice isn't posted in the ledger.
 2. A user creates and posts the prepayment without VAT.
-3. A user creates prepayment handling and relates this prepayment handling to the advance invoice, then post the the prepayment handling and creates the tax document. The system posts VAT to the ledger and relates VAT to prepayment.
+3. A user creates prepayment handling and relates this prepayment handling to the advance invoice. The user then posts the the prepayment handling and creates the tax document. The system posts the VAT to the ledger and relates the VAT to the prepayment.
 
-> [!NOTE]. - Clear value in the **Posting profile** field in the the Account receivable parameters (**Update** tab &gt; **Advance invoice** FastTab)
->          - set **Post tax** option to **Yes** when you create the advance invoice
-   
+> [!NOTE]
+> Clear the value in the **Posting profile** field on the **Account receivable parameters**, on the **Update** tab, on the **Advance invoice** FastTab. When you create the advance invoice, set the **Post tax** option to **Yes**.
+  
 
-To create a prepayment handling and link it to an advance invoice run the following steps:
-1. Open the customer record
-2. On Action pane click **Customer** &gt; **Transactions**, highlight the prepayment transaction and click **Prepayment handling**
-3. Set **Transform to payment** option to **No**  
-4. Link prepayment handling to the advance invoice (**Advance invoice** button). The system automaticflly creates VAT lines from the advance invoice. 
+To create a prepayment handling and link it to an advance invoice, complete the following steps.
+
+1. Go to **Accounts receivable** > **Customers**, and locate and open the customer record.
+2. On the Action Pane, select **Customer** > **Transactions**, highlight the prepayment transaction, and select **Prepayment handling**.
+3. Set the **Transform to payment** option to **No**  
+4. Select **Advance invoice** to link the prepayment handling to the advance invoice. The system automaticflly creates VAT lines from the advance invoice. 
 5. Post the prepayment handling. The system automatically creates sales tax transactions for the prepayment.  
 
 ## Reversing sales tax amounts for Czech Republic
 
-To manually define the reversal of sales tax amounts based on the base of a prepament handling first you must enable the **(Czech) Enable manual input sales tax amounts** feature. For information about how to enable features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To manually define the reversal of sales tax amounts based on the base of a prepament handling, enable the **(Czech) Enable manual input sales tax amounts** feature. For information about how to enable features, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-> [!NOTE]. This functionality is available only on the Accounts payble side.
+> [!NOTE]
+> This functionality is available only for accounts payable.
 
-When marking a invoice transaction for settlement against a payment a user can update the sales tax amounts for reversing on **Reverse sales tax amounts** tab in the **Settle transaction** form. Update tax amounts in the **Tax amount for settlement** field if needed.     
+When you mark an invoice transaction for settlement against a payment, you can update the sales tax amounts for reversing on **Reverse sales tax amounts** tab on the **Settle transaction** page. If needed, you can update tax amounts in the **Tax amount for settlement** field.     
 
 
 
