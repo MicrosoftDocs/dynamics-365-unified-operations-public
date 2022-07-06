@@ -45,7 +45,7 @@ In Supply Chain Management, you can visually track how buffers, on-hand quantiti
 
 ## Track the status and planned orders for all decoupling points
 
-The **Demand driven MRP** workspace provides several tools with KPIs and overviews of the status of your decoupling point items and related planned orders. To open it, go to **Master planning \> Workspaces \> Demand driven MRP**. <!-- KFM: It would be nice to provide some more details here. -->
+The **Demand driven MRP** workspace provides several tools with KPIs and overviews of the status of your decoupling point items and related planned orders. To open it, go to **Master planning \> Workspaces \> Demand driven MRP**.
 
 ![The Demand driven MRP workspace.](media/ddmrp-workspace.png "The Demand driven MRP workspace")
 
