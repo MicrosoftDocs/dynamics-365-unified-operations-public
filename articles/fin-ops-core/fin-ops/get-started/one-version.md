@@ -4,7 +4,7 @@
 title: One Version service updates FAQ
 description: This article provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: laneswenka
-ms.date: 06/14/2022
+ms.date: 07/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -169,7 +169,7 @@ All environments will be updated to version N.
 
 Automatic updates for the production environment and all additional sandbox environments will be updated to the current N version.  
  
-The default sandbox environment update will be cancelled. 
+The default sandbox environment update will be canceled. 
 
 ### What if the default sandbox environment is manually updated to a newer version than the automatic update version?
 
