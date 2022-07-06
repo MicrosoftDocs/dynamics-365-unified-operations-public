@@ -114,8 +114,8 @@ Finance and operations apps are served from several Azure regions around the wor
 
 ### Country/region-specific considerations
 
-- Customers in regulated industry or commercial organizations that do business with entities in France that require local data residency should review [finance and operations in France](../../dev-itpro/deployment/france-local-deployment.md).
-- Customers that have operations in China should review [Azure China Playbook](/azure/china/) and [finance and operations operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md).
+- Customers in regulated industry or commercial organizations that do business with entities in France that require local data residency should review [Finance and operations in France](../../dev-itpro/deployment/france-local-deployment.md).
+- Customers that have operations in China should review [Azure China Playbook](/azure/china/) and [Finance and operations operated by 21Vianet in China](../../dev-itpro/deployment/china-local-deployment.md).
 - Customers that have operations in Russia should review the [Russian personal data localization law](/business-applications-release-notes/october18/dynamics365-finance-operations/russian-regulations-on-prem#when-will-the-cloud-deployment-option-of-dynamics-365-for-finance-and-operations-be-generally-available-for-russia).
 
 ### General Data Protection Regulation (GDPR)
