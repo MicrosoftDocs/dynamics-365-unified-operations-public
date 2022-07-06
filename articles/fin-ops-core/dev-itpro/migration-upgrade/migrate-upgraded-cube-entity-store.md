@@ -2,7 +2,7 @@
 # required metadata
 
 title: Migrate upgraded AX 2012 R3 sales cubes to the entity store
-description: In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in a Finance and Operations application. 
+description: In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in a finance and operations application. 
 author: MilindaV2
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in a Finance and Operations application. You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.
+In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in a finance and operations application. You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.
 
 The entity store will support near real-time Microsoft Power BI integration scenarios, as shown in the following diagram. For an overview of Power BI integration with entity store, see [Power BI integration with entity store](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update). [![Power BI Architecture diagram.](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)
 
@@ -179,7 +179,7 @@ Notice that the asset library enables adding **PowerBI report models** (PBIX fil
 
 ### Configure an LCS project
 
-If you haven’t already done so, associate your environment with an LCS project so that Finance and Operations apps can consume assets within the project.
+If you haven’t already done so, associate your environment with an LCS project so that finance and operations apps can consume assets within the project.
 
 1.  Launch the client from the instance that you want to use to deploy the Power BI reports. Typically this is the test or a production instance where you want to see a report with a different set of data than what you worked with as a report developer.
 2.  Open **System Administration** &gt; **Setup** &gt; **System parameters**. Select the **Help** tab. Using the **Lifecycle services help configuration** list box, select the LCS project that you uploaded the PBIX file to. Click **Save**.

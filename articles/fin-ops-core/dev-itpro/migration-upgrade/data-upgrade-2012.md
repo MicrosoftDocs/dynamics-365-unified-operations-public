@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade from AX 2012 - Data upgrade in development environments
-description: This article explains the end-to-end process for upgrading from Microsoft Dynamics AX 2012 to the latest Finance and Operations development environment.
+description: This article explains the end-to-end process for upgrading from Microsoft Dynamics AX 2012 to the latest finance and operations development environment.
 author: laneswenka
 ms.date: 06/03/2022
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-This is an exciting moment in the upgrade project. The output of this task provides the first upgraded dataset from Microsoft Dynamics AX 2012 to the latest Finance and Operations development environment.
+This is an exciting moment in the upgrade project. The output of this task provides the first upgraded dataset from Microsoft Dynamics AX 2012 to the latest finance and operations development environment.
 
 Before you run this process in a shared sandbox environment, we recommend that you run it in a development environment. There are two reasons for this approach:
 
@@ -212,3 +212,4 @@ For more troubleshooting information, see the following articles:
 - [Troubleshoot PreSync and PostSync upgrade scripts](pre-post-upgrade-scripts.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

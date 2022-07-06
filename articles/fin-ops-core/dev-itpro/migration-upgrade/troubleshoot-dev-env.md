@@ -37,7 +37,7 @@ Set the recovery mode on the database to **Simple**.
 
 During the additive or partial synchronization that is done as part of the prerequisite steps for the upgrade, you might receive an error that resembles the following example in the downloaded synchronization log:
 
-> Stopped DBSync monitoring. Microsot.Dynamics.Ax.Xpp.ErrorException: Failed to create a session; confirm that the user has the proper privileges to log on to Microsoft Dynamics 365 for Finance and Operations.
+> Stopped DBSync monitoring. Microsot.Dynamics.Ax.Xpp.ErrorException: Failed to create a session; confirm that the user has the proper privileges to log on to Microsoft Dynamics 365 Finance.
 
 **Possible causes**
 
@@ -52,3 +52,4 @@ During the additive or partial synchronization that is done as part of the prere
     ```SQL
     TRUNCATE TABLE SYSCLIENTSESSIONS;
     ```
+
