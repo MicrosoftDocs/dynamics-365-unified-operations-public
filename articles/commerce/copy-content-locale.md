@@ -19,9 +19,9 @@ ms.search.validFrom: 2017-06-20
 
 This article describes how to copy existing content to another locale within a site in Microsoft Dynamics 365 Commerce site builder.
 
-When you create content in Commerce site builder, it's always associated with a locale identifier, such as "en-us." You can copy individual pages and assets to a different locale within the same e-commerce site by switching the locale when you edit a content item and then creating a new variant of the item. In some cases, such as when you're launching an entirely new locale on your storefront, it makes sense to duplicate all the content items in an existing locale to the new locale. If the new locale shares the same base language as one of the existing locales, you can help reduce the effort that is required to localize the content in the new locale by using the existing locale as the source locale for the locale copy operation. For example, the "en-us" and "en-au" locales both use the English language.
+When you create content in Commerce site builder, it's always associated with a locale identifier, such as "en-us." You can copy individual pages and assets to a different locale within the same e-commerce site by switching the locale when you edit a content item and then creating a new variant of the item. In some cases, such as when you're launching an entirely new locale on your storefront, it makes sense to duplicate all the content items in an existing locale to the new locale. If the new locale has the same base language as one of the existing locales, you can use the existing locale as the source locale for the locale copy operation. (For example, the "en-us" and "en-au" locales both use the English language.) In this way, you help reduce the effort that is required to localize the content in the new locale.
 
-The following procedures explains how to add a new locale to an existing channel, copy all the content items from an existing locale to a new locale, and monitor the status of a locale copy operation.
+The following procedures explain how to add a new locale to an existing channel, copy all the content items from an existing locale to a new locale, and monitor the status of a locale copy operation.
 
 ## Add a new locale
 
