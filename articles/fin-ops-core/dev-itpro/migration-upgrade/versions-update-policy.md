@@ -37,9 +37,9 @@ The finance and operations online service is covered by the Modern Lifecycle Pol
 
 - Customers purchasing subscriptions of finance and operations apps and operating on the following application versions will experience continuous updates of the platform and Financial Reporting. Microsoft will continually update these components. Customers have the option to postpone up to 3 consecutive service updates.
     - Finance and operations apps, version 10.0+ (April 2019)
-    - Finance and operations apps, version 8.0 (April 2018)
-    - Dynamics 365 Finance, Enterprise edition 7.3 (December 2017)   
-    - Dynamics 365 Finance, Enterprise edition (June 2017)
+    - Finance and Operations apps, version 8.0 (April 2018)
+    - Dynamics 365 Finance and Operations, Enterprise edition 7.3 (December 2017)   
+    - Dynamics 365 Finance and Operations, Enterprise edition (June 2017)
     - Dynamics 365 for Operations version 1611 (November 2016)
     
 
@@ -52,9 +52,9 @@ The finance and operations online service is covered by the Modern Lifecycle Pol
     - **Non-critical updates** – Customers operating on the following application releases must update to the most current finance and operations platform and financial reporter version to deploy non-critical updates. 
     
       - Finance and operations apps, version 10.0+ (April 2019)
-      - Finance and operations apps, version 8.0+ (April 2018)
-      - Dynamics 365 Finance, Enterprise edition 7.3 (December 2017)   
-      - Dynamics 365 Finance, Enterprise edition (June 2017)
+      - Finance and Operations apps, version 8.0+ (April 2018)
+      - Dynamics 365 Finance and Operations, Enterprise edition 7.3 (December 2017)   
+      - Dynamics 365 Finance and Operations, Enterprise edition (June 2017)
       - Dynamics 365 for Operations version 1611 (November 2016)          
 
 > [!NOTE]
