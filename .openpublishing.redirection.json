@@ -19691,6 +19691,46 @@
       "source_path": "articles/supply-chain/pim/tasks/release-product-product-master-legal-entities.md",
       "redirect_url": "/dynamics365/supply-chain/pim/product-information",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cloud-edge/cloud-edge-edge-scale-units-lbd.md",
+      "redirect_url": "/dynamics365/supply-chain/cloud-edge/cloud-edge-landing-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cloud-edge/cloud-edge-message-processor-messages.md",
+      "redirect_url": "/dynamics365/supply-chain/cloud-edge/cloud-edge-landing-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cloud-edge/cloud-edge-try-out.md",
+      "redirect_url": "/dynamics365/supply-chain/cloud-edge/cloud-edge-landing-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cloud-edge/cloud-edge-warehouse-inventory-adjustment.md",
+      "redirect_url": "/dynamics365/supply-chain/cloud-edge/cloud-edge-landing-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cloud-edge/cloud-edge-warehouse-order.md",
+      "redirect_url": "/dynamics365/supply-chain/cloud-edge/cloud-edge-landing-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cloud-edge/cloud-edge-workload-manufacturing.md",
+      "redirect_url": "/dynamics365/supply-chain/cloud-edge/cloud-edge-landing-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cloud-edge/cloud-edge-workload-setup-warehouse-app.md",
+      "redirect_url": "/dynamics365/supply-chain/cloud-edge/cloud-edge-landing-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cloud-edge/cloud-edge-workload-warehousing.md",
+      "redirect_url": "/dynamics365/supply-chain/cloud-edge/cloud-edge-landing-page",
+      "redirect_document_id": "false"
     }
   ]
 }
