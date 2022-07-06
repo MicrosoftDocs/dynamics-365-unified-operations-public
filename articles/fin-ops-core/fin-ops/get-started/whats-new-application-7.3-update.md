@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance, Enterprise edition 7.3
-description: This article describes features that are either new or changed in Microsoft Dynamics 365 Finance, Enterprise edition 7.3. This version was released in December 2017.
+title: What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition 7.3
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations, Enterprise edition 7.3. This version was released in December 2017.
 author: tonyafehr
 ms.date: 10/02/2019
 ms.topic: article
@@ -24,13 +24,13 @@ ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3 
 ---
 
-# What's new or changed in Dynamics 365 Finance, Enterprise edition 7.3
+# What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition 7.3
 
 [!include [banner](../includes/banner.md)]
 
 
 
-This article describes features that are either new or changed in Microsoft Dynamics 365 Finance, Enterprise edition 7.3. This version was released in December 2017 and has a build number of 7.3.11971.56116.
+This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations, Enterprise edition 7.3. This version was released in December 2017 and has a build number of 7.3.11971.56116.
 
 To learn more about the new features and changes in all of the latest product releases, see [What's new or changed](whats-new-changed.md) and [What's new or changed in Dynamics 365 for Retail](../../../commerce/get-started/whats-new.md).
 
@@ -48,40 +48,40 @@ Demo data has been delivered in prior releases as a database with a large number
 
 The data packages are similar but not identical to existing demo companies and may change over time. The packages are very small and provide a quick way to download the demo data and modify it before you import it into an environment. We will continue to add additional demo data for more companies and module functionality in the future.
 
-## Dynamics 365 for Project Service Automation to Dynamics 365 Finance integration – Phase 1 (private preview)
+## Dynamics 365 for Project Service Automation to Dynamics 365 Finance and Operations integration – Phase 1 (private preview)
 
-The first phase of the integration from Dynamics 365 for Project Service Automation to Dynamics 365 Finance is now available in private preview.
+The first phase of the integration from Dynamics 365 for Project Service Automation to Dynamics 365 Finance and Operations is now available in private preview.
 
-The Project Service Automation to finance and operations integration solution uses Data Integration to synchronize data across Microsoft Dynamics 365 Finance and Dynamics 365 for Project Service Automation instances via the Dataverse. The integration templates available with the Data Integration feature enable the flow of projects, project contracts, and project contract lines from Project Service Automation to finance and operations. For more information about Dataverse data integration, see [Integrate data into Dataverse for Apps](/powerapps/administrator/data-integrator) in the Power Apps documentation.
+The Project Service Automation to Finance and Operations integration solution uses Data Integration to synchronize data across Microsoft Dynamics 365 Finance and Operations and Dynamics 365 for Project Service Automation instances via the Dataverse. The integration templates available with the Data Integration feature enable the flow of projects, project contracts, and project contract lines from Project Service Automation to Finance and Operations. For more information about Dataverse data integration, see [Integrate data into Dataverse for Apps](/powerapps/administrator/data-integrator) in the Power Apps documentation.
 
 This solution provides direct synchronization in the following areas:
 
-- Maintain project contracts in Project Service Automation and sync them directly from Project Service Automation to finance and operations.
-- Create projects in Project Service Automation and sync them directly from Project Service Automation to finance and operations.
-- Maintain project contract lines in Project Service Automation and sync them directly from Project Service Automation to finance and operations.
-- Maintain project contract line milestones in Project Service Automation and sync them directly from Project Service Automation to finance and operations.
+- Maintain project contracts in Project Service Automation and sync them directly from Project Service Automation to Finance and Operations.
+- Create projects in Project Service Automation and sync them directly from Project Service Automation to Finance and Operations.
+- Maintain project contract lines in Project Service Automation and sync them directly from Project Service Automation to Finance and Operations.
+- Maintain project contract line milestones in Project Service Automation and sync them directly from Project Service Automation to Finance and Operations.
 
 To nominate your organization to participate in the private preview, fill out the survey at [https://aka.ms/psafinandopsintpreview](https://aka.ms/psafinandopsintpreview).
 
-## Enhanced integration of Prospect to cash between Dynamics 365 for Sales and Dynamics 365 Finance
+## Enhanced integration of Prospect to cash between Dynamics 365 for Sales and Dynamics 365 Finance and Operations
 
-Enhancements to Prospect to cash integration between Dynamics 365 for Sales and Dynamics 365 Finance, Enterprise edition 7.3 enable direct synchronization in the following processes:
+Enhancements to Prospect to cash integration between Dynamics 365 for Sales and Dynamics 365 Finance and Operations, Enterprise edition 7.3 enable direct synchronization in the following processes:
 
-- Maintain accounts in Sales and sync them to finance and operations as customers.
-- Maintain contacts in Sales and sync them to finance and operations as either customers or contacts for a customer.
-- Maintain products in finance and operations and sync them to Sales.
-- Create quotes in Sales and sync them to finance and operations.
-- Generate sales orders in Sales for existing products and sync them to finance and operations.
-- Generate, modify, and fulfill sales orders in finance and operations and sync changes to Sales.
-- Generate invoices in finance and operations and sync them to Sales.
+- Maintain accounts in Sales and sync them to Finance and Operations as customers.
+- Maintain contacts in Sales and sync them to Finance and Operations as either customers or contacts for a customer.
+- Maintain products in Finance and Operations and sync them to Sales.
+- Create quotes in Sales and sync them to Finance and Operations.
+- Generate sales orders in Sales for existing products and sync them to Finance and Operations.
+- Generate, modify, and fulfill sales orders in Finance and Operations and sync changes to Sales.
+- Generate invoices in Finance and Operations and sync them to Sales.
 
 Highlights of these integration enhancements include:
 
 - Support data entity overwrite of numbers for quotes, sales orders, and invoices (no need to set number sequence to manual).
 - Conversion of quote, sales, or invoice line discount from per unit to per line.
-- Support for sync of tax related charges from finance and operations to Sales, such as freight tax.
-- Additional functionality to support sales order sync from Sales to finance and operations.
-- Additional functionality to support sales order sync from finance and operations to Sales.
+- Support for sync of tax related charges from Finance and Operations to Sales, such as freight tax.
+- Additional functionality to support sales order sync from Sales to Finance and Operations.
+- Additional functionality to support sales order sync from Finance and Operations to Sales.
 - Sync support for country/region ISO codes on invoice address, exposed on data entities.
 
 ### More information
@@ -101,9 +101,9 @@ For more information, see [Expense management mobile workspace](/dynamics365/pro
 
 ## Financial reporting using Power BI
 
-A set of default reports built using a new visualization using Power BI is available for financial reporting. The new financial reporting experience will be embedded within finance and operations, giving you a seamless experience of report generation and allowing you to drill into supporting documents. Limited subledger data will be available to provide better ledger to subledger analysis. Default reports, such as a trial balance, balance sheet, and profit and loss, will be shipped out of the box, however, initially no edits will be allowed using finance and operations. Edits need to be made using the Power BI desktop. The existing financial reporting using Report Designer is still available and fully supported.
+A set of default reports built using a new visualization using Power BI is available for financial reporting. The new financial reporting experience will be embedded within Finance and Operations, giving you a seamless experience of report generation and allowing you to drill into supporting documents. Limited subledger data will be available to provide better ledger to subledger analysis. Default reports, such as a trial balance, balance sheet, and profit and loss, will be shipped out of the box, however, initially no edits will be allowed using Finance and Operations. Edits need to be made using the Power BI desktop. The existing financial reporting using Report Designer is still available and fully supported.
 
-To view additional information about Financial reporting using Power BI, watch the following video: [Reporting for Dynamics 365 Finance](https://youtu.be/9m5ys9UmaVg).
+To view additional information about Financial reporting using Power BI, watch the following video: [Reporting for Dynamics 365 Finance and Operations](https://youtu.be/9m5ys9UmaVg).
 
 ## Fixed asset roll forward report
 
@@ -273,7 +273,7 @@ For more information, see [Safety stock fulfillment for items](../../../supply-c
 
 ## Tax Engine (GTE) – India GST only
 
-The Tax Engine (GTE) is an essential part of the configurable business application experience in finance and operations. It's highly customizable and lets a business user, functional consultant, or power user configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. Tax configuration is more flexible with GTE. It provides an easier extension experience; almost no code change is required for the data provider in the AOT to support extension scenarios.
+The Tax Engine (GTE) is an essential part of the configurable business application experience in Finance and Operations. It's highly customizable and lets a business user, functional consultant, or power user configure tax rules that determine tax applicability, calculation, posting, and settlement, based on legal and business requirements. Tax configuration is more flexible with GTE. It provides an easier extension experience; almost no code change is required for the data provider in the AOT to support extension scenarios.
 
 ### More information
 
