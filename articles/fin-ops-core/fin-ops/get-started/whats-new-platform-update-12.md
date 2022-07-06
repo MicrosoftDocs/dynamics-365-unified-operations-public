@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance, Enterprise edition platform update 12 (November 2017)
-description: This article describes features that are either new or changed in Dynamics 365 Finance, Enterprise edition platform update 12. This version was released in November 2017.
+title: What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition platform update 12 (November 2017)
+description: This article describes features that are either new or changed in Dynamics 365 Finance and Operations, Enterprise edition platform update 12. This version was released in November 2017.
 author: tonyafehr
 ms.date: 01/17/2018
 ms.topic: article
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: Platform update 12
 
 ---
 
-# What's new or changed in Dynamics 365 Finance, Enterprise edition platform update 12 (November 2017)
+# What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition platform update 12 (November 2017)
 
 [!include [banner](../includes/banner.md)]
 
-This article describes features that are either new or changed in Dynamics 365 Finance, Enterprise edition platform update 12. This version was released in November 2017 and has a build number of 7.0.4709.
+This article describes features that are either new or changed in Dynamics 365 Finance and Operations, Enterprise edition platform update 12. This version was released in November 2017 and has a build number of 7.0.4709.
 
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 12, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=863949).
 
@@ -44,7 +44,7 @@ For more information, see [Keyboard shortcuts](shortcut-keys.md).
 
 ## Development and build environments in a customer LCS implementation project are monitored and managed by Microsoft
 
-If you're a customer operating or implementing finance and operations, you are provided with a set of environments to enable development, testing, and production. Sandbox (Tier-2) and production environments are managed by Microsoft, while your IT staff is responsible for managing developer and build environments. With this feature, all environments in a Lifecycle Services (LCS) implementation project that are running in the Microsoft subscription, including developer and build environments, are monitored and managed by Microsoft. This relieves your IT staff from having to monitor and manage security, including applying security patches and updates for these environments. This does not affect development and build environments running on-premises or in the customer's or partner's own Microsoft Azure subscription.
+If you're a customer operating or implementing Finance and Operations, you are provided with a set of environments to enable development, testing, and production. Sandbox (Tier-2) and production environments are managed by Microsoft, while your IT staff is responsible for managing developer and build environments. With this feature, all environments in a Lifecycle Services (LCS) implementation project that are running in the Microsoft subscription, including developer and build environments, are monitored and managed by Microsoft. This relieves your IT staff from having to monitor and manage security, including applying security patches and updates for these environments. This does not affect development and build environments running on-premises or in the customer's or partner's own Microsoft Azure subscription.
 
 Development and application management tasks performed by developers can be done without requiring local administrator rights on the development virtual machine (VM). Customers will not have access to the VM admin account of development and build environments running in the Microsoft subscription.
 
@@ -52,7 +52,7 @@ For more information, refer to this LCS blog article, [Restricted Admin Access](
 
 ## Enabling SQL triggers in 'bring your own database' (BYOD)
 
-The 'bring your own database' feature, also called BYOD, enables incrementally exporting data entities from Dynamics 365 Finance into your own SQL Azure database. If your destination database contains SQL database triggers, at present, the BYOD process bypasses triggers to enable efficient bulk data transfer.
+The 'bring your own database' feature, also called BYOD, enables incrementally exporting data entities from Dynamics 365 Finance and Operations into your own SQL Azure database. If your destination database contains SQL database triggers, at present, the BYOD process bypasses triggers to enable efficient bulk data transfer.
 
 You can now use SQL database triggers in your own database, for data that is exported or BYOD. This allows for downstream processes to easily integrate with the BYOD processes.
 
@@ -67,7 +67,7 @@ To enable the automatic export feature, a one-time setup and configuration proce
 The one-time set up and configuration means that you'll need to:
 
 - Set up a B2B invitation service application in Azure AD.
-- Configure the B2B invitation service settings in finance and operations.
+- Configure the B2B invitation service settings in finance and Operations.
 
 For more information, see [Export business-to-business (B2B) users to Azure Active Directory](../../dev-itpro/sysadmin/implement-b2b.md).
 
