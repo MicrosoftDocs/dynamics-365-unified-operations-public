@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Finance and Operations deployment. This feature resembles the virtual companies feature in Microsoft Dynamics AX 2012.
+This article provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a finance and operations deployment. This feature resembles the virtual companies feature in Microsoft Dynamics AX 2012.
 
 ## What is this feature and how does it work?
 
@@ -177,3 +177,4 @@ For details about how to use a template, see [Configure financial cross-company 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -1,6 +1,26 @@
 {
   "redirections": [
     {
+      "source_path": "articles/finance/localizations/tasks/eur-00011-eu-sales-list-report.md",
+      "redirect_url": "../emea-eu-sales-list-example",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/tasks/eur-00011-eu-sales-list-reporting.md",
+      "redirect_url": "../emea-eu-sales-list-example",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/tasks/de-00003-electronic-transmission-elster.md",
+      "redirect_url": "/dynamics365/finance/get-started/removed-deprecated-features-finance#elster-declaration-for-germany-design-based-on-reporting-codes",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/finance/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md",
+      "redirect_url": "../emea-nl-vat-declaration-netherlands",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/fin-ops/get-started/new-task-guides-available-february-2016.md",
       "redirect_url": "/dynamics365/fin-ops-core/dev-itpro/user-interface/task-recorder-training-docs",
       "redirect_document_id": "false"

@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 28
 
 [!include[banner](../includes/banner.md)]
 
-Streamline application experiences that result in the production of business documents by taking advantage of the embedded PDF Preview option. Finance and Operations applications deliver a modern experience to preview business documents that are produced by the service. You can use the built-in toolbar to navigate and download the document or to print to locally connected devices.
+Streamline application experiences that result in the production of business documents by taking advantage of the embedded PDF Preview option. Finance and operations applications deliver a modern experience to preview business documents that are produced by the service. You can use the built-in toolbar to navigate and download the document or to print to locally connected devices.
 
 The embedded viewer offers consistency between the screen presentation and the printed output. In addition, report viewing times are drastically reduced when compared to the legacy experience. The Preview option is available on all supported devices and does not require any additional third-party software. Documents can be easily downloaded and navigated by using the built-in viewer toolbar options.
 

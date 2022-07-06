@@ -106,7 +106,7 @@ The client secret is also known as an *application password*. It's a string valu
 5. Select **Add**.
 6. Be sure to record the secret's value so that you can use it in your client application code. 
 
-## Register the app in the Finance and Operations app so that Retail Server trusts it
+## Register the app in the finance and operations app so that Retail Server trusts it
 
 1. In Commerce Headquarters, go to **Retail and Commerce** &gt; **Headquarters setup** &gt; **Parameters** &gt; **Commerce shared parameters**.
 2. On the **Identity providers** FastTab, select the provider with type `Azure Active Directory`. The values on the **Relying parties** FastTab are set based on your selection.
@@ -277,3 +277,4 @@ After the request has finished running, the response body will contain the custo
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -82,6 +82,7 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 </tbody>
 </table>  
   
+
 #### Authentication
 
 <table>
@@ -183,7 +184,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 9. Click **Collect** &gt; **Customer balances** &gt; **Collections** to open the **Collections** page.
 10. Click **Communicate** &gt; **Email** &gt; **Statements to contact**.
 11. Click **OK** to accept the default values in the dialog box.
-12. If you're prompted for the mail option to use, select **Use the Microsoft Dynamics 365 for Finance and Operations email client**, and then click **OK**.
+12. If you're prompted for the mail option to use, select **Use the Microsoft Dynamics 365 Finance email client**, and then click **OK**.
 13. To receive the test message, change the **To address** to your email address.
 
     Ensure that the account specified in the SMTP settings is able to **Send As** and **Send On Behalf Of** your email account. The easiest way to ensure this is to use your email account in the SMTP settings.
@@ -338,6 +339,8 @@ There are some standard processes that can help you troubleshoot the configurati
   </tr>
 </table>
  
+ 
+
  ### Specific Exchange email issues
 
 -  **"(401) Unauthorized" or "(403) Forbidden" error when email is sent via Exchange**
@@ -509,3 +512,4 @@ The system communicates with Exchange or an SMTP server like a typical email cli
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

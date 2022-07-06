@@ -44,7 +44,7 @@ This release includes the following new features and bug fixes. Changes apply to
 
 The following feature is generally available with this release:
 
-- **Platform update 10.0.13 is now available**: For more information on the update, see [Platform updates for version 10.0.13 of Finance and Operations apps (October 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
+- **Platform update 10.0.13 is now available**: For more information on the update, see [Platform updates for version 10.0.13 of finance and operations apps (October 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
 
 ### Bug fixes
 

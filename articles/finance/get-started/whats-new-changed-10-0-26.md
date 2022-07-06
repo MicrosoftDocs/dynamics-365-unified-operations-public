@@ -54,8 +54,8 @@ The following table lists the features that are included in this release. We mig
 | Fixes assets   | Allow update to the asset book status by using a data entity  | This feature ensures that the asset book status will be updated through the data entity asset book V2 entity and the user interface.   | Default |
 | Globalization | (ER) Support ZPL printing | This functionality enhances the direct printing option of the Electronic reporting (ER) framework. In addition to providing the option to print outbound documents in Microsoft Office formats, ER lets you configure various labels by using the Zebra Programming Language (ZPL II). You can also send generated labels directly to a selected network printer. For more information, see [ZPL printing](../../fin-ops-core/dev-itpro/analytics/er-destination-type-print.md#zpl-printing). | Parameter |
 | Globalization | (ER) Keep rows of a single section together on the same Excel page | This feature lets you use an Excel template to tune an ER format, so that all the rows of a single section are kept together on the same page. In this way, you can help improve the look and readability of generated reports. For more information, see [Row handling](../../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md#row-handling). | Parameter |
-| Tax Calculation   | Integration with general journal  | [Tax Calculation integration with Finance and Operations](../localizations/tax-calculation-data-model-overview.md)   | Parameter |
-| Tax Calculation   | Integration with vendor invoice journal  | [Tax Calculation integration with Finance and Operations](../localizations/tax-calculation-data-model-overview.md)   | Parameter |
+| Tax Calculation   | Integration with general journal  | [Tax Calculation integration with finance and operations](../localizations/tax-calculation-data-model-overview.md)   | Parameter |
+| Tax Calculation   | Integration with vendor invoice journal  | [Tax Calculation integration with finance and operations](../localizations/tax-calculation-data-model-overview.md)   | Parameter |
 | Tax Calculation   | Tax Calculation service feature setup new UI   | This feature enhances the tax feature setup user interface (UI) in the Tax Calculation service to improve usability.   | Feature management |
 
 
@@ -74,14 +74,14 @@ The following table lists the feature enhancements included in this release. Eac
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
-Dynamics 365 Finance 10.0.26 includes platform updates. To learn more, see [Platform updates for version 10.0.26 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md). 
+### Platform updates for finance and operations apps
+Dynamics 365 Finance 10.0.26 includes platform updates. To learn more, see [Platform updates for version 10.0.26 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-26.md). 
 
 ### Bug fixes 
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=662864). 
 
 ### Regulatory updates
-For information about regulatory updates for Finance and Operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
+For information about regulatory updates for finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
 
 ### Dynamics 365 and industry clouds: 2022 release wave 1 plan
 
@@ -102,3 +102,4 @@ For breaking changes that only affect compilation time, but are binary compatibl
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

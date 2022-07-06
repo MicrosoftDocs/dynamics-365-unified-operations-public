@@ -2,7 +2,7 @@
 # required metadata
 
 title: Quality management for warehouse processes
-description: This article provides information about the Quality management for warehouse processes feature. This feature extends the capabilities of quality management and lets users integrate item sampling controls into the warehouse receiving process by using advanced warehouse management. 
+description: This article provides information about the Quality management for warehouse processes feature. This feature extends the capabilities of quality management and lets users integrate item sampling controls into the warehouse receiving process by using warehouse management processes (WMS). 
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../includes/banner.md)]
 
-The _Quality management for warehouse processes_ feature lets you integrate item sampling controls into the warehouse receiving process by using advanced warehouse management. Warehouse work can be automatically generated to move inventory to the quality control location, based on a percentage or a fixed quantity, or based on every *n*th license plate. After a quality order has been completed, work can be automatically generated to move inventory to the next location in the process, depending on the quality results.
+The _Quality management for warehouse processes_ feature lets you integrate item sampling controls into the warehouse receiving process by using warehouse management processes (WMS). Warehouse work can be automatically generated to move inventory to the quality control location, based on a percentage or a fixed quantity, or based on every *n*th license plate. After a quality order has been completed, work can be automatically generated to move inventory to the next location in the process, depending on the quality results.
 
 The _Quality management for warehouse processes_ feature extends the capabilities of the basic quality management feature. It provides the option to create quality orders for the inventory that is sent to the quality control location, although quality orders aren't always required. Therefore, it allows for a lightweight quality control process that is based on warehouse work.
 
@@ -82,7 +82,7 @@ Before the _Quality management for warehouse processes_ feature can be applied f
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Warehouses**.
 1. Select the warehouse to enable for quality management.
-1. On the **Warehouse** FastTab, set the **Enable quality order for warehouse processes** option to _Yes_. (Note that this option can be set to _Yes_ only for warehouses that use warehouse management processes.)
+1. On the **Warehouse** FastTab, set the **Enable quality order for warehouse processes** option to _Yes_. (Note that this option can be set to _Yes_ only for warehouses that use warehouse management processes (WMS).)
 
 When the **Enable quality order for warehouse processes** option is set to _Yes_, the quality association setup controls whether the _Quality management for warehouse processes_ feature is actually applied for the selected warehouse. You can change the setting of the option to _No_ at any time. In that case, the feature will no longer apply for the warehouse, regardless of the quality association setup.
 
@@ -102,7 +102,7 @@ Each [quality association record](enable-quality-management.md) defines the set 
     - **All** – Inactivate the _Quality management for warehouse processes_ feature. Select this value for all reference types except *Purchase* and *Production*.
 
 > [!NOTE]
-> The _Quality management for warehouse processes_ feature takes effect only if the item on the source document line uses advanced warehouse management processes, and if the **Enable quality order for warehouse processes** option is set to _Yes_ for the warehouse on the source document line.
+> The _Quality management for warehouse processes_ feature takes effect only if the item on the source document line uses warehouse management processes (WMS), and if the **Enable quality order for warehouse processes** option is set to _Yes_ for the warehouse on the source document line.
 
 As each item is registered (or reported as finished), the system determines which quality associations apply to it.
 

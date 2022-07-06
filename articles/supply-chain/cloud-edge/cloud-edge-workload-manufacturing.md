@@ -4,7 +4,7 @@
 title: Manufacturing execution workloads for cloud and edge scale units
 description: This article describes how manufacturing execution workloads work with cloud and edge scale units.
 author: johanhoffmann
-ms.date: 10/06/2020
+ms.date: 07/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,6 +29,7 @@ ms.dyn365.ops.version: 10.0.15
 # Manufacturing execution workloads for cloud and edge scale units
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [cloud-edge-paused-banner](../includes/cloud-edge-paused-banner.md)]
 
 > [!IMPORTANT]
 > The manufacturing execution workload is currently available only in preview.

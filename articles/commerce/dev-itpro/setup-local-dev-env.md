@@ -33,7 +33,7 @@ Commerce supports both cloud-based environments and local environments.
 
 ## Hardware requirements
 
-We recommend that you use a Windows machine with 16 GB of RAM and a minimum of two CPU cores. If you are running Finance and Operations apps, Retail Server, e-Commerce development, and other concurrent process, then we recommend 24 GB of RAM with four CPU cores.
+We recommend that you use a Windows machine with 16 GB of RAM and a minimum of two CPU cores. If you are running finance and operations apps, Retail Server, e-Commerce development, and other concurrent process, then we recommend 24 GB of RAM with four CPU cores.
 
 ## Local self-hosted CSU
 
@@ -231,3 +231,4 @@ If the setup doesn't work as expected, or if you need help, use the following li
 + [Retail Interest Group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=1585934)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

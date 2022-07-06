@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-This article lists the mobile workspaces that are available for use with the Finance and Operations (Dynamics 365) mobile app. The below table indicates the deprecation plan for each of these mobile workspaces in terms of whether a replacement experience is planned or not.  
+This article lists the mobile workspaces that are available for use with the finance and operations (Dynamics 365) mobile app. The below table indicates the deprecation plan for each of these mobile workspaces in terms of whether a replacement experience is planned or not.  
 
 
 | Mobile workspace     | Description   | Deprecation plan   |
@@ -49,3 +49,4 @@ This article lists the mobile workspaces that are available for use with the Fin
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

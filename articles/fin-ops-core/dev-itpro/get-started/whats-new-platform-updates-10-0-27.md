@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Platform updates for version 10.0.27 of Finance and Operations apps (July 2022)
-description: This article lists the features that are included in the platform updates for version 10.0.27 of Finance and Operations apps.
+title: Platform updates for version 10.0.27 of finance and operations apps (July 2022)
+description: This article lists the features that are included in the platform updates for version 10.0.27 of finance and operations apps.
 author: sericks007
 ms.date: 06/16/2022
 ms.topic: article
@@ -13,11 +13,11 @@ ms.author: sericks
 ms.search.validFrom: 2022-04-22
 
 ---
-# Platform updates for version 10.0.27 of Finance and Operations apps (July 2022)
+# Platform updates for version 10.0.27 of finance and operations apps (July 2022)
 
 [!include [banner](../includes/banner.md)]
 
-This article lists the features that are included in the platform updates for version 10.0.27 of Finance and Operations apps. This version has a build number of 7.0.6395 and is available on the following schedule:
+This article lists the features that are included in the platform updates for version 10.0.27 of finance and operations apps. This version has a build number of 7.0.6395 and is available on the following schedule:
 
 - **Preview of release:** April 2022
 - **General availability of release (self-update):** June 2022
@@ -44,7 +44,7 @@ Check out the [Dynamics 365: 2022 release wave 1 plan](/dynamics365-release-plan
 
 ### Removed and deprecated platform features
 
-The [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) article describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
+The [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and might be removed in a future update.
@@ -52,3 +52,4 @@ The [Removed or deprecated platform features](removed-deprecated-features-platfo
 A deprecation notice will be added in the [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) article 12 months before the removal of any feature from the product.
 
 For breaking changes that affect only compilation time, but that are binary-compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these changes are functional updates that must be made to the compiler.
+

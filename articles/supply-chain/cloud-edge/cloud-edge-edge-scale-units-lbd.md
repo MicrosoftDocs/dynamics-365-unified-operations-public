@@ -2,7 +2,7 @@
 title: Deploy edge scale units on custom hardware using LBD
 description: This article explains how to provision on-premises edge scale units by using custom hardware and deployment that is based on local business data (LBD). 
 author: Mirzaab
-ms.date: 01/24/2022
+ms.date: 07/05/2022
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -18,6 +18,7 @@ ms.dyn365.ops.version: 10.0.21
 # Deploy edge scale units on custom hardware using LBD
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [cloud-edge-paused-banner](../includes/cloud-edge-paused-banner.md)]
 
 Edge scale units play an important role in the distributed hybrid topology for supply chain management. In the hybrid topology you can distribute workloads between your Supply Chain Management cloud hub and additional scale units in the cloud or on the edge.
 
@@ -232,7 +233,7 @@ This step aligns the application version, platform version, and customizations i
 
 ## <a name="assign-edge-to-hub"></a>Assign your LBD edge scale unit to a hub
 
-You configure and manage your edge scale unit through the Scale Unit Management Portal. For more information, see [Manage scale units and workloads by using the Scale Unit Manager portal](./cloud-edge-landing-page.md#scale-unit-manager-portal).
+Please write to [d365scmcneext@microsoft.com](mailto:d365scmcneext@microsoft.com) for assistance configuring and managing your LBD edge scale unit
 
 [!INCLUDE [cloud-edge-privacy-notice](../../includes/cloud-edge-privacy-notice.md)]
 

@@ -101,7 +101,7 @@ The following action have been removed from the **Actions** tab of **SQL Insight
 | Name | Removed | Notes |
 |-------------------------|-------------------------|-------------------------|
 | Create index | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>Manual index creation is no longer needed as this is handled by a background platform processes.</li></br></ul></br>**Details**</br><ul></br><li>A system background process will handle this as required.</li></br></ul> |
-| Drop index | Yes | No longer applicable. </br><br>**Reason**</br><ul></br><li>Not included in Data Administration and Management Service (DAMS) because of the periodic nature of Finance and Operations workloads.</li></br></ul></br>**Details**</br><ul></br><li>The system will automatically tune as required.</li></br></ul> |
+| Drop index | Yes | No longer applicable. </br><br>**Reason**</br><ul></br><li>Not included in Data Administration and Management Service (DAMS) because of the periodic nature of finance and operations workloads.</li></br></ul></br>**Details**</br><ul></br><li>The system will automatically tune as required.</li></br></ul> |
 | Rebuilt index | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>Manual index creation is no longer needed as this is handled by background platform processes.</li></br></ul></br>**Details**</br><ul></br><li>A system background process will handle this as required.</li></br></ul> |
 | Update statistics | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>A platform background process handles index and statistics maintenance.</li></br></ul></br>**Details**</br><ul></br><li>The platform is responsible for index and statistics maintenance.</li></br></ul> |
 | Query hint optimization | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>The platform handles query hint optimization so customers don't have to do manual tuning.</li></br></ul></br>**Details**</br><ul></br><li>The platform automatically detects the correct hint and applies it to the queries that need optimization.</li></br></ul> |
@@ -120,3 +120,4 @@ The following live views have been removed from the **Live views** tab of **SQL 
 | Common metrics (DTU) | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>Current DTU has been removed from queries.</li></br></ul></br>**Details**</br><ul></br><li>See **Current DTU** under **Queries** above.</li></br></ul> |
 | Currently executing statements | No | Remains available in LCS. |
 | Blocking statements | No | Remains available in LCS. | -->
+

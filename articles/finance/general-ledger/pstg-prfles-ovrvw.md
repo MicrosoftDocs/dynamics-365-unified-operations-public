@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 # Posting profiles overview
 
-In Finance and Operations apps, the term *posting profiles* is used to describe the configurations that control how subledger accounts are converted to main accounts so that they can be used in transactions that are posted to the general ledger. For example, they control how the customer is converted to an Accounts receivable main account when an invoice is posted.
+In finance and operations apps, the term *posting profiles* is used to describe the configurations that control how subledger accounts are converted to main accounts so that they can be used in transactions that are posted to the general ledger. For example, they control how the customer is converted to an Accounts receivable main account when an invoice is posted.
 
 Some modules and features have a page that includes the words "posting profile" in the name (for example, **Customer posting profile** or **Vendor posting profile**). Additionally, some modules have multiple options for configuring the ledger posting for transactions that are generated from the subledger. For example, in the **Production control** module, you can set up the posting by production group, resource, or resource group.
 
@@ -39,7 +39,7 @@ Before you can configure the posting profiles, posting definitions, or the **Acc
 
 ## Posting types
 
-In Finance and Operations apps, a posting type is used to define a general category for a debit or a credit. This category is independent of the main account in General ledger. There are posting types for each debit or credit in General ledger.
+In finance and operations apps, a posting type is used to define a general category for a debit or a credit. This category is independent of the main account in General ledger. There are posting types for each debit or credit in General ledger.
 
 A single voucher can have one or more posting types. For example, a transaction that is posted through a general journal where the account and offset account are set to **Ledger** will have a posting type of **Ledger journal** for both the debit and the credit. By contrast, a vendor invoice will have multiple posting types. Those posting types will include one line for the vendor balance and additional lines for the offset entry, such as **Ledger journal**.
 
@@ -126,3 +126,4 @@ Many modules in Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dyna
 - Time and attendance posting (Coming soon)
 - Transportation management posting (Coming soon)
 - Rebate management posting profiles (Coming soon)
+

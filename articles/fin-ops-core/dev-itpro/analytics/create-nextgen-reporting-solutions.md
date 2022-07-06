@@ -54,7 +54,7 @@ For this tutorial, you must access the application environment, and you must be 
 - Network Print monitoring form
 - Table extensions need to be supported through the VS Query picker
 
-## What is a report in Dynamics 365 Finance and Operations apps?
+## What is a report in Dynamics 365 finance and operations apps?
 Reports can be defined simply as any visualization of a structured data set. This may include transactional data presented in a tabular layout and advanced graphical views of aggregate information. To account for this broad definition, the application offers several tools to produce reports to satisfy complex business requirements. Some common applications of reports in an ERP include:
 
 - Creating and archiving transactional documents as part of a posting process
@@ -122,7 +122,7 @@ Business Intelligence can be useful at every level of an organization. Use embed
 2. On the toolbar, click **View**, and then select **Application Explorer**
 3. Use the **Application Explorer** to search for the **FMReservationsReport** form in the **Fleet Management** module.
 4. In the **Application Explorer's** search results, right-click **FMReservationsReport** form, and then select **Add to new project**.
-5. Select the **Finance and Operations Project** template, and then click **OK** to create the project.
+5. Select the **finance and operations Project** template, and then click **OK** to create the project.
 6. In **Solution Explorer**, right-click **FMReservationsReport** menu item, and then select **Set as startup object.**
 7. Press Ctrl+Shift+B to save and build the project.
 8. Press Ctrl+F5 to load the form containing the report.

@@ -67,6 +67,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [Course MB-300T03-A: Data migration and preparing for go-live with finance and operations](https://www.microsoft.com/learning/course.aspx?cid=MB-300T03) | This course discusses data migration and go-live preparation for finance and operations. | Instructor-led in person or online training, cost varies by region and partner | 1 day |
 | [Implementation Lifecycle home page](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | These articles describe the programs, tools, and processes available related to the implementation lifecycle of your finance and operations projects. | Documentation | |
 
+
 ## Supply chain management<a name="supply-chain-management"></a>
 
 | Content | Description | Format | Length |

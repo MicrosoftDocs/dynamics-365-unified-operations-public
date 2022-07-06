@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.5
 
 In the **Data management** workspace, you can get an overview of target entities, related entity types and staging tables related to the **Asset management** module. 
 
-1. Click the **Finance and Operations** button in the upper-left corner of the screen, and click **Data management**.
+1. Click the **Finance and operations** button in the upper-left corner of the screen, and click **Data management**.
 
 2. In the **Import / Export** section, click **Data entities**. 
 

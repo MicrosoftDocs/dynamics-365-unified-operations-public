@@ -77,7 +77,7 @@ Use the following procedure to configure the client application so that it can c
 4. Add the following settings:
 
     - **Application ID** – The ID that is unique to the application and should be entered automatically.
-    - **Finance and Operations URL** – The base URL of the application.
+    - **finance and operations URL** – The base URL of the application.
     - **Azure AD tenant** – The domain name of the Azure AD.
 
 5. Click **OK**.
@@ -145,7 +145,7 @@ Yes. The Document Routing Agent is supported on Microsoft Windows Server 2019.
 
 No, not at this time. There are several dependencies on Azure capabilities that are available only in Microsoft Windows Server 2012 R2 and Microsoft Windows Server 2016.
 
-### Does the user who installs the Document Routing Agent have to be part of a Finance and Operations apps security group?
+### Does the user who installs the Document Routing Agent have to be part of a finance and operations apps security group?
 
 Yes. To access the agent installation links, the user must be part of the **Document routing client** security role.
 
@@ -159,3 +159,4 @@ Multiple Document Routing Agents should be configured for your printers to ensur
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

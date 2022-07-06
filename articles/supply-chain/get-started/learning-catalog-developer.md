@@ -55,6 +55,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [How To Extend or Build New Analytical Workspaces (DYN321PAL)](https://community.dynamics.com/365/b/techtalks/posts/how-to-extend-or-build-new-analytical-workspaces-september-18-2017) | This Tech Talk will provide a walk through on how to extend or build new Analytical Workspaces. | Free recording of a web conference | 59 minutes |
 | [Mobile Framework (VIR824PAL)](https://community.dynamics.com/365/b/techtalks/posts/mobile-framework-april-11-2017) | This tech talk will walk through the mobile framework capabilities for building apps in finance and operations apps. The session will also demonstrate some recently built apps. | Free recording of a web conference | 58 minutes |
 
+
 ## Servicing<a name="servicing"></a>
 
 | Content  | Description  | Format  | Length    |
@@ -65,6 +66,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [Microsoft Managed Continuous Updates: What's new (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | During this hour we will explain what is new since our initial announcements about Microsoft Managed Continuous updates. We will discuss the cadence of updates, how we have responded to your valuable feedback on the process, and take a look at the forthcoming Lifecycle Services user experience, through which you will be able to manage your updates. | Free recording of a web conference | 56 minutes |
 | [Microsoft Managed Continuous Updates (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | We will discuss Microsoft’s plans for keeping your system up-to-date with the latest release. We will cover timelines, the cadence for major and minor updates, the planned procedures, the implications, and what you should do for optimal results. | Free recording of a web conference | 62 minutes |
 
+
 ## Migration and upgrade<a name="migration-and-upgrade"></a>
 
 | Content  | Description    | Format  | Length    |
@@ -73,6 +75,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [Finance and Operations: Upgrading from 7.x to 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Please join us for our next TechTalk, during which we will cover the 7.X to 8.X upgrade process. We will discuss various scenarios and steps to execute for code upgrade and data upgrade. We will also cover extensibility request scenarios and how to raise them where appropriate. Part 1 of 2. | Free recording of a web conference | 61 minutes |
 | [AX2012 to Dynamics 365 for Supply Chain Management Upgrade (VIR817PAL2)](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | This Tech Talk will provide an overview on how to upgrade code and data from Dynamics AX 2012 to Dynamics 365 Supply Chain Management. | Free recording of a web conference | 45 minutes |
 | [AX2009 to Dynamics 365 Supply Chain Management Migration Tools (VIR809PAL)](https://community.dynamics.com/365/b/techtalks/posts/ax2009-to-dynamics-365-for-operations-migration-tools-march-2-2017) | This session will cover tooling available to assist you with migrating from AX2009 to D365 Supply Chain Management. | Free recording of a web conference | 55 minutes |
+
 
 ## Testing<a name="testing"></a>
 
@@ -86,6 +89,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [Finance and operations: Performance Troubleshooting Tools for Dynamics 365 (DYN541PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-performance-troubleshooting-tools-for-dynamics-365-12-14-18) | In this Tech Talk, we will present the different tools that can be used to troubleshoot Microsoft Dynamics 365 Finance performance issues. This session will contain some scenario-based demonstrations and initial guidance on how to approach typical performance issues. | Free recording of a web conference | 64 minutes |
 | [Task Automation Framework for Data Management (DYN447PAL2)](https://community.dynamics.com/365/b/techtalks/posts/task-automation-framework-for-data-management-march-3-2018) | Please join us for this tech talk on the new Task Automation Framework for Data Management. Learn how the framework facilitates testing of data entities & integrations, validation of the resulting data, and automation of other tasks in the Data Management Framework. | Free recording of a web conference | 55 minutes |
 | [Finance and operations: Warehouse App Task Validation Framework](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-warehouse-app-task-validation-framework-october-23-2019) | This talk will introduce and explain the new Warehouse App Task Validation Framework, which is designed to allow for the automation of warehouse tasks within the standard Dynamics 365 Warehousing application. This new framework bridges the gap between the Regression Suite Automation Tool (RSAT) and the warehouse functionality so that end-to-end regression tests can be built, including both core Dynamics workflows as well as distribution scenarios utilizing the advanced warehousing module. The talk will walk through the setup and configuration of the framework and show how it can be utilized to automate a warehouse process through RSAT. | Free recording of a web conference | 66 minutes |
+
 
 ## Exam<a name="exam"></a>
 

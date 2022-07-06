@@ -70,6 +70,7 @@ For functional consultants, our job-task analysis research showed that everyone 
 | [Course MB-300T03-A: Data migration and preparing for go-live with finance and operations apps](https://www.microsoft.com/learning/course.aspx?cid=MB-300T03) | This course discusses data migration and go-live preparation for finance and operations apps. | Instructor-led in person or online training, cost varies by region and partner | 1 day |
 | [Implementation Lifecycle home page](/dynamics365/unified-operations/fin-and-ops/imp-lifecycle/implementation-lifecycle) | These articles describe the programs, tools, and processes available related to the implementation lifecycle of your finance and operations apps projects. | Documentation | |
 
+
 ## Migration and upgrade<a name="migration"></a>
 
 | Content | Description | Format | Length |
@@ -78,6 +79,7 @@ For functional consultants, our job-task analysis research showed that everyone 
 | [How to upgrade to 7.2 (July 2017) from 7.0 (RTW)/7.1 (Release 1611) (DYN338PAL2)](https://community.dynamics.com/365/b/techtalks/posts/how-to-upgrade-to-7-2-july-2017-from-7-0-rtw-7-1-release-1611-august-3-2017) | In this session we will explain how to upgrade from Dynamics 365 finance and operations application v7.0 (RTW) and v7.1 (1611) to v7.2 (July 2017). We make a clear differentiation between Live customers and ongoing projects (not live yet). | Tech Talk (recorded webinar) | 58 minutes |
 | [Finance and operations apps: Upgrading from 7.x to 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Please join us for our next TechTalk, during which we will cover the 7.X to 8.X upgrade process. We will discuss various scenarios and steps to execute for code upgrade and data upgrade. We will also cover extensibility request scenarios and how to raise them where appropriate. Part 1 of 2. | Tech Talk (recorded webinar) | 61 minutes |
 | [AX2012 to finance and operations apps Upgrade (VIR817PAL2)](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | This Tech Talk will provide an overview on how to upgrade code and data from Dynamics AX 2012 to finance and operations apps. | Tech Talk (recorded webinar) | 45 minutes |
+
 
 ## Manufacturing<a name="manufacturing"></a>
 

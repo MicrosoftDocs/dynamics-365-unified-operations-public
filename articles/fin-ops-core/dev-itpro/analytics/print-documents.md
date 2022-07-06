@@ -58,7 +58,7 @@ Because the solution varies, depending on the scenario, applications provide bui
 - **Scenario 2** uses client applications and Microsoft 365 services.
 - **Scenario 3** requires support from client applications and from services that are hosted in Microsoft Azure.
 
-In addition to the platform that is deployed to the Azure subscription, Finance and Operations applications provide customers with an integrated, first-party Azure application that helps them more easily use domain-hosted devices to print documents.
+In addition to the platform that is deployed to the Azure subscription, finance and operations applications provide customers with an integrated, first-party Azure application that helps them more easily use domain-hosted devices to print documents.
 
 ## Service overview
 While documents that are produced by the hosted applications are waiting to be printed on a network-connected device, they are stored in Azure blob storage. The [Install the Document Routing Agent to enable network printing](install-document-routing-agent.md) uses Azure authentication to establish a secure channel to the Azure services.
