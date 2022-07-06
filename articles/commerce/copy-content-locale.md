@@ -4,7 +4,7 @@
 title: Copy content to another locale
 description: This article describes how to copy existing content to another locale within a site in Microsoft Dynamics 365 Commerce site builder.
 author: psimolin
-ms.date: 07/05/2022
+ms.date: 07/06/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
