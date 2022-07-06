@@ -78,7 +78,7 @@ The existing functionality for financial journals (general journal, fixed asset 
 - **Spring '18 release** – The functionality will be turned off by default, through a General ledger parameter. However, you can turn the functionality on if your organization has a scenario that falls in the business scenario gaps that are listed in the One voucher documentation.
 
     - If a customer has a business scenario that doesn't require One voucher, don't turn the functionality on. We won't fix "bugs" in the areas that are identified in the One voucher documentation if this functionality is used.
-    - Stop using One voucher for integrations into Microsoft Dynamics 365 finance and operations, unless the functionality is required for one of the functional gaps.
+    - Stop using One voucher for integrations into Microsoft Dynamics 365 Finance and Operations, unless the functionality is required for one of the functional gaps.
 
 - **Fall '18 and later releases** – The functional gaps will be filled. After the functional gaps are filled, the One voucher functionality will be permanently turned off.
 
@@ -96,7 +96,7 @@ Customers can submit a request to Microsoft for extension support to be added to
 
 ### Embedding Microsoft Power Apps in workspaces and forms
 
-Use Microsoft Power Apps to embed data from external sources into finance and operations data. For information about how to embed a PowerApp on a finance and operations page, see [Embed PowerApps](embed-power-apps.md).
+Use Microsoft Power Apps to embed data from external sources into Finance and Operations data. For information about how to embed a PowerApp on a Finance and Operations page, see [Embed PowerApps](embed-power-apps.md).
 
 ### Custom fields
 
@@ -106,15 +106,15 @@ Organizations can add custom fields to tailor their application to their busines
 
 ### Integration with Dataverse
 
-Dynamics 365 Finance has enabled cross-application business processes between finance and operations and Dynamics 365 for Field Service and between finance and operations and Dynamics 365 for Project Service Automation. These scenarios are configured using extensible Data integrator templates and Dataverse to enable the cross-application scenarios.
+Dynamics 365 Finance and Operations has enabled cross-application business processes between finance and operations and Dynamics 365 for Field Service and between Finance and Operations and Dynamics 365 for Project Service Automation. These scenarios are configured using extensible Data integrator templates and Dataverse to enable the cross-application scenarios.
 
 ### Integration with Dynamics 365 for Field Service
 
-Provides data integration to support scenarios where Field Service activities are done outside finance and operations, leveraging the data integrator.
+Provides data integration to support scenarios where Field Service activities are done outside Finance and Operations, leveraging the data integrator.
 
 ### Integration with Dynamics 365 for Project Service Automation
 
-Supports scenarios where project and resource management activities are done outside finance and operations, and the project accounting activities are done in finance and operations, leveraging the data integrator.
+Supports scenarios where project and resource management activities are done outside Finance and Operations, and the project accounting activities are done in Finance and Operations, leveraging the data integrator.
 
 ## Improved support experiences
 
@@ -160,7 +160,7 @@ New Analytical workspaces for Cost management are embedded in the Cost administr
 
 ### India localization – project and upgrade
 
-Users can manage India Goods and Services Tax (GST) for the Project management and accounting module, and AX 2012 customers can upgrade to Dynamics 365 Finance.
+Users can manage India Goods and Services Tax (GST) for the Project management and accounting module, and AX 2012 customers can upgrade to Dynamics 365 Finance and Operations.
 
 ### Enhanced configurability
 
