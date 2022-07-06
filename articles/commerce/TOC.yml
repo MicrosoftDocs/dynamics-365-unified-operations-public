@@ -2476,7 +2476,7 @@
         items:
         - name: Commerce SDK overview
           items:
-          - name: Overview
+          - name: Download Commerce SDK samples and reference packages
             href: dev-itpro/retail-sdk/sdk-github.md
           - name: Legacy Retail SDK migration
             href: dev-itpro/retail-sdk/migrate-commerce-sdk.md
