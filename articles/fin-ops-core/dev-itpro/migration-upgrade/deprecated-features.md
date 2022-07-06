@@ -277,7 +277,7 @@ Support for creating project-based sales orders where the project contract has m
 ## Finance and Operations 8.1.3 with Platform update 23
 
 ### SQL Server Reporting Services ReportViewer Control
-Customers can use the **Export** action provided by the embedded SQL Server Reporting Services (SSRS) ReportViewer control to download documents produced by financFinance and Operations applications. This HTML-based presentation of the report offers users a non-paginated preview of the document.
+Customers can use the **Export** action provided by the embedded SQL Server Reporting Services (SSRS) ReportViewer control to download documents produced by Finance and Operations applications. This HTML-based presentation of the report offers users a non-paginated preview of the document.
 
 | &nbsp;  |&nbsp;  |
 |------------|--------------------|
