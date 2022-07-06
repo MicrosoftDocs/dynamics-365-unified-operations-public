@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 to finance and operations 
 description:  This article describes the process that customers who currently run Microsoft Dynamics AX 2012 can use to move their data and code to finance and operations.
 author: LaneSwenka
-ms.date: 06/07/2022
+ms.date: 07/06/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -59,7 +59,7 @@ The activities in the Analyze phase help you estimate the effort that is require
 To sign up for a preview subscription, see [Sign up for preview subscriptions](../dev-tools/sign-up-preview-subscription.md).
 
 ### Append the upgrade methodology
-In your new LCS project, append the project methodology with **Upgrade AX 2012 to Dynamics 365 Finance**. This methodology is specifically for AX 2012 customers who are upgrading. It describes the three phases in detail and provides links to all the supporting documentation about the process.
+In your new LCS project, append the project methodology with **Upgrade AX 2012 to Dynamics 365 for Finance and Operations**. This methodology is specifically for AX 2012 customers who are upgrading. It describes the three phases in detail and provides links to all the supporting documentation about the process.
  
 ### Run the upgrade analyzer
 The upgrade analyzer tool runs against your AX 2012 environment and identifies tasks that you should do to prepare the AX 2012 environment, to help make the upgrade experience smoother and less expensive:
