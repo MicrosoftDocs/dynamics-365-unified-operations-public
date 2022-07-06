@@ -32,10 +32,10 @@ Mainstream support for Dynamics AX 2009 Service Pack 1 (SP1), Dynamics AX 2012, 
 
 Mainstream support for Dynamics AX 2012 R3 ended on October 12, 2021.  Only security hotfixes will continue to be provided through the extended support period that continues until January 10, 2023.  For more information, see [Microsoft Lifecycle Policy](/lifecycle/products/?terms=Dynamics%20AX).
 
-Customers are advised to upgrade to the latest version of Finance and Operations apps, such as Dynamics 365 Finance, Supply Chain Management, Commerce, and Project Operations:
+Customers are advised to upgrade to the latest version of finance and operations apps, such as Dynamics 365 Finance, Supply Chain Management, Commerce, and Project Operations:
 
 - Dynamics AX 2009 Service Pack 1 customers should use the [migration tool](../../dev-itpro/migration-upgrade/upgrade-home-page.md) that is available.
-- Dynamics AX 2012 and Dynamics AX 2012 R2 customers should upgrade to Finance and Operations apps through Dynamics AX 2012 R3 using the upgrade tool that is available. For additional upgrade information, see [Upgrade from AX 2012 to Finance and Operations apps](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md).
+- Dynamics AX 2012 and Dynamics AX 2012 R2 customers should upgrade to finance and operations apps through Dynamics AX 2012 R3 using the upgrade tool that is available. For additional upgrade information, see [Upgrade from AX 2012 to finance and operations apps](../../dev-itpro/migration-upgrade/upgrade-overview-2012.md).
 
 ## Frequently asked questions
 
@@ -95,3 +95,4 @@ Yes, beginning with 10.0.26, preview packages for every service update are made 
 Configurations are available in the Global repository. For more information, see [Download ER configurations from the Global repository of Configuration service](../../dev-itpro/analytics/er-download-configurations-global-repo.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

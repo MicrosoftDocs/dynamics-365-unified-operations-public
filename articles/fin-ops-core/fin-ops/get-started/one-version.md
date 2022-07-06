@@ -4,7 +4,7 @@
 title: One Version service updates FAQ
 description: This article provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: laneswenka
-ms.date: 06/14/2022
+ms.date: 07/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -134,11 +134,11 @@ Yes, you can pause, delay, or opt out of an update via the update settings in LC
 
 No. Service updates will automatically be applied to the sandbox. Then, seven days later, the update will be applied to all additional sandbox and production environments, if those environments are more than three service updates old. A customer can pause only up to three consecutive updates in a row. For example, if a customer on version 10.0.22 chooses to pause updates 10.0.23, 10.0.24, and 10.0.25, service update 10.0.26 will automatically be applied first to the sandbox environment and later to all additional sandbox and production environments. 
 
-### What happens to an environment that is running a Finance and Operations app version that is no longer supported?
+### What happens to an environment that is running a finance and operations app version that is no longer supported?
 
-For environments that are running a Finance and Operations app version that is no longer supported, a warning message will appear at the top of the environment details page in LCS.
+For environments that are running a finance and operations app version that is no longer supported, a warning message will appear at the top of the environment details page in LCS.
 
-For all Microsoft-managed environments, and sandbox and production environments in on-premises implementation projects, some LCS functionality might not be available when an environment is running a Finance and Operations app version that is no longer supported. This functionality includes the ability to complete the following actions:
+For all Microsoft-managed environments, and sandbox and production environments in on-premises implementation projects, some LCS functionality might not be available when an environment is running a finance and operations app version that is no longer supported. This functionality includes the ability to complete the following actions:
 
 - Enable maintenance mode.
 - Use all capabilities that are provided for moving databases on an environment or across environments.
@@ -169,7 +169,7 @@ All environments will be updated to version N.
 
 Automatic updates for the production environment and all additional sandbox environments will be updated to the current N version.  
  
-The default sandbox environment update will be cancelled. 
+The default sandbox environment update will be canceled. 
 
 ### What if the default sandbox environment is manually updated to a newer version than the automatic update version?
 
@@ -316,3 +316,4 @@ Microsoft provides several mechanisms for progressively rolling out and enabling
 - **Modern POS and Commerce Scale Unit** – Because Modern POS and Commerce Scale Unit are self-hosted by the retailer, topologies that include either of these components enable updates to be rolled out at a separate (and slower) cadence and in a more granular fashion than cloud-only topologies.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

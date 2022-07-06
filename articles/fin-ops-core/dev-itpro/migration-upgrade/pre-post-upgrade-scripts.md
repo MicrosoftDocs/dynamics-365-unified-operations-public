@@ -124,7 +124,7 @@ The record already exists." }
 { ClassName: "ReleaseUpdateDB10\_CaseManagement", MethodName: "updateCaseCategoryTypeMajor", Company: "DAT", DataParition: "initial", ErrorCount: "1", ErrorMessage: " Cannot edit a record in Case category Security by Role (CaseCategoryRole). Category type: None.  
 The record already exists. Batch task failed: Cannot edit a record in Case category Security by Role (CaseCategoryRole). Category type: None.  
 The record already exists." }  
-_Stopped DBSync monitoring. Microsot.Dynamics.Ax.Xpp.ErrorException: Failed to create a session; confirm that the user has the proper privileges to log on to Microsoft Dynamics 365 for Finance and Operations._
+_Stopped DBSync monitoring. Microsot.Dynamics.Ax.Xpp.ErrorException: Failed to create a session; confirm that the user has the proper privileges to log on to Microsoft Dynamics 365 Finance._
 
 **Cause**
 
@@ -171,3 +171,4 @@ The SQL database has issued an error."
 1. Review the triggers on that table to check for custom triggers. Most standard triggers that are created in Dynamics 365 will be prefixed with, for example, **SysDbLog**, **SysEvenCud**, or **AIF**.
 1. To script the custom triggers that you think might be causing the issue, select and hold (or right-click) each trigger, and then select **Script Trigger as \> Create To \> New Query Editor Window**.
 1. After the script is completed, go to **Edit \> Find** to determine whether the field that is referenced in the error message exists in the script. If you find a match in the trigger, you must disable or drop the trigger.
+

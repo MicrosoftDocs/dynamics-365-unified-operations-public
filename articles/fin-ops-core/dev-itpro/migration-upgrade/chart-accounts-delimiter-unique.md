@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.0
 
 [!include [banner](../includes/banner.md)]
 
-In Microsoft Dynamics AX 2012, you could use the same delimiter for your chart of accounts and dimension values. In current versions of Finance and Operations, you cannot have the same delimiter for the chart of accounts and dimension names or values. If there is a duplicate delimiter, you can change it after upgrade. 
+In Microsoft Dynamics AX 2012, you could use the same delimiter for your chart of accounts and dimension values. In current versions of finance and operations, you cannot have the same delimiter for the chart of accounts and dimension names or values. If there is a duplicate delimiter, you can change it after upgrade. 
 
 ## Update delimiter
 If there is a conflict with the chart of accounts, the chart of accounts delimiter and the project/subproject ID format can be changed. No other dimension delimiters can be changed. 
@@ -45,3 +45,4 @@ Similar to project/subproject ID, any other master data records used as financia
 If delimiters in your upgraded environment are conflicting, you may experience instability when entering values in a segmented entry control or dimension entry control. This means that you will need to always use lookups or a flyout menu when entering account and dimension combinations.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
