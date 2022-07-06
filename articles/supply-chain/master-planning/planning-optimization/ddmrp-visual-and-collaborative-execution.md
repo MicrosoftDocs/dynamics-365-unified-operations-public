@@ -16,30 +16,42 @@ ms.dyn365.ops.version: 10.0.28
 # Visual and collaborative execution
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
-The topic described how the buffer for the pillow was replenished. Now, from an execution perspective it is important to see how is the actual on-hand of the buffer.
+## Visually tack buffers and quantities for a selected item
 
-From the item coverage form, on the on-hand tab we can see its current value. And if we had historical data we could see how the on-hand progressed over time. We can also see if it was
+In Supply Chain Management, you can visually track how buffers, on-hand quantities, and net-flow levels change over time for any selected released product. Follow these steps to open and review the graphs:
 
-- critically low (less than half of the minimum for that period of time),
-- low (between half of the minimum and the minimum),
-- average on-hand (if it between the minimum and the minimum plus the green zone)
-- Or higher than that range, as it is our case.
+1. Go to **Product information management \> Products \> Released products**
+1. Select a released item that is set up as a decoupling point (see also [Inventory positioning](ddmrp-inventory-positioning.md)).
+1. On the Action Pane, open the **Plan** tab and select **Item coverage**.
+1. The **Item coverage** page opens. Select an item coverage record that creates a decoupling point (this record will show the name of a **Coverage group** that is set up to create decoupling points).
+1. Open the **On-hand** tab. This tab shows a graph of how on-hand quantities changed over time, with the value of the on-hand recorded for a specific period every time planning optimization is run. The page also provides a table that indicates which of the following categories each recorded on-hand level falls into:
 
-Note that in the on-hand form the colors represent different ranges than in the buffer.
+    - Critically low (less than half of the minimum for that period of time)
+    - Low (between half of the minimum and the minimum)
+    - Average on-hand (if it between the minimum and the minimum plus the green zone)
+    - Higher than average
 
-![Graphical user interface  text  application  Teams Description automatically generated](media/image20.png)
+    ![The on-hand tab showing historical on-hand levels.](media/ddmrp-on-hand-graph.png "The on-hand tab showing historical on-hand levels")
 
-The value of the on-hand is recorded for a specific period every time planning optimization is run.
+    Note that the colors used on the **On-hand** tab represent different ranges than in the buffer.
 
-To give you an idea of how the on-hand would look over time if we had past data, the picture will show you the item V0002 the fabrik kit, that was also a decoupling point.
+1. To see how your buffer values changed over time and how they compare to on-hand and net-flow levels, open the **Buffer values** tab.
 
-![Chart  line chart Description automatically generated](media/image21.png)
+    ![The buffer values tab showing historical on-hand and net-flow levels.](media/ddmrp-buffer-values-graph.png "The buffer values tab showing historical on-hand and net-flow levels")
 
-And you can see as well, that the buffer values are also shown over time, with its on-hand value and its net flow.
+## Track the status and planned orders for all decoupling points
 
-![Chart Description automatically generated](media/image22.png)
+The **Demand driven MRP** workspace provides several tools with KPIs and overviews of the status of your decoupling point items and related planned orders. To open it, go to **Master planning \> Workspaces \> Demand driven MRP**. <!-- KFM: It would be nice to provide some more details here. -->
 
-Also, you can use DDMRP Workspace to track planning process.
+![The Demand driven MRP workspace.](media/ddmrp-workspace.png "The Demand driven MRP workspace")
 
-![Graphical user interface  application  table  calendar Description automatically generated](media/image23.png)
+<!-- KFM: The following pages still require documentation; note also that the final page title contains a misspelling:  
+
+- Decoupling points status by net flow
+- Decoupling points status by on-hand
+- Planned orders for decoupling points
+- Cleanup decoupling point buffer values
+
+-->

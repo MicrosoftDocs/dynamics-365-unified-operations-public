@@ -16,6 +16,7 @@ ms.dyn365.ops.version: 10.0.28
 # Buffer profile and levels
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 Once you have identified your decoupling points (key items that you will strategically keep in stock) you must decide how much stock (buffer) you will keep at each of them. This is the second step of Demand Driven Materials Resource Planning (DDMRP).
 
@@ -29,7 +30,7 @@ In DDMRP, each stock buffer is defined using three values: minimum quantity, max
 
 The following illustration shows the three colored zones and how they relate to the minimum quantity, maximum quantity, and reorder point.
 
-![DDMRP buffer zones and levels](media/ddmrp-buffer-levels.png "DDMRP buffer zones and levels")
+![DDMRP buffer zones and levels.](media/ddmrp-buffer-levels.png "DDMRP buffer zones and levels")
 
 ## Calculating the buffer zones
 
@@ -67,7 +68,7 @@ The system calculates the amount you consume per day using one of three approach
 
 Past average daily usage (ADU) is calculated as an average by adding up the quantities used each day for a specified number of past days and then dividing by that number of days. The following illustration shows how this works when looking three days into the past.
 
-![Average daily usage (past) chart](media/ddmrp-adu-past.png "Average daily usage (past) chart")
+![Average daily usage (past) chart.](media/ddmrp-adu-past.png "Average daily usage (past) chart")
 
 <!-- KFM: The average values in the figure are shifted back one day, so this image should be updated. -->
 
@@ -79,7 +80,7 @@ In previous illustration, if today is the morning of June 11th, the average dail
 
 For a new product, you may not have any past usage data, so you might instead use the projected average daily usage going forward, for example based on forecasted demand. The following illustration shows how this works when looking three days into the future (which includes today).
 
-![Average daily usage (forward) chart](media/ddmrp-adu-forward.png "Average daily usage (forward) chart")
+![Average daily usage (forward) chart.](media/ddmrp-adu-forward.png "Average daily usage (forward) chart")
 
 In previous illustration, if today is the morning of June 11th, the average daily usage for the next 3 days (June 11th, 12th, and 13th) is 21.66.
 
@@ -89,7 +90,7 @@ In previous illustration, if today is the morning of June 11th, the average dail
 
 The blended average daily usage combines the average past usage and average forward usage, as shown in the following illustration.
 
-![Average daily usage (blended) chart](media/ddmrp-adu-blended.png "Average daily usage (blended) chart")
+![Average daily usage (blended) chart.](media/ddmrp-adu-blended.png "Average daily usage (blended) chart")
 
 In previous illustration, if today is the morning of June 11th, the blended average daily usage for the previous and next 3 days (June 8th to 13th) is 21.33.
 
@@ -101,7 +102,7 @@ In previous illustration, if today is the morning of June 11th, the blended aver
 
 For each item, you can define two factors to adjust how big the red and green zones should be to compensate for the expected lead time and demand variability.
 
-![Lead time and variability factors](media/ddmrp-zone-factors.png "Lead time and variability factors")
+![Lead time and variability factors.](media/ddmrp-zone-factors.png "Lead time and variability factors")
 
 The first factor is the *lead time factor*. The value is a decimal that ranges from 0 to 1. The longer the lead time is, the lower the value should be. The Demand Driven Institute recommends the following ranges:
 
@@ -119,13 +120,13 @@ The second factor is the *variability factor*. The value is also a decimal that 
 
 This example continues with the pillow production example provided in [Inventory positioning](ddmrp-inventory-positioning.md), where we selected decoupling points that reduced the lead time from 21 days to 5 days, as shown in the following illustration.
 
-![Example of decoupled lead time](media/ddmrp-bom-decoupled-lead-time-example.png "Example of decoupled lead time")
+![Example of decoupled lead time.](media/ddmrp-bom-decoupled-lead-time-example.png "Example of decoupled lead time")
 
 For the pillow example, assume that the average daily usage has been calculated to 23 pieces and, as shown in the previous illustration, the decoupled lead time is 5 days. Using these values, you can calculate the yellow zone using the following equation:
 
 - **Yellow zone** = \[Average daily usage\] × \[Decoupled lead time\] = 115
 
-![Example of yellow zone calculation](media/ddmrp-example-calc-yellow.png "Example of yellow zone calculation")
+![Example of yellow zone calculation.](media/ddmrp-example-calc-yellow.png "Example of yellow zone calculation")
 
 The red zone calculation is similar to the yellow zone, but is padded for variability and lead time. For the pillow example, assume that you have observed a medium lead time (factor = 0.50) and high demand variability (factor = 0.8). Using these values, combined with the components from the yellow equation, you can calculate the red zone using the following equations:
 
@@ -135,7 +136,7 @@ The red zone calculation is similar to the yellow zone, but is padded for variab
 
 The system will round the red zone off to 104 pieces (ea) because pieces are counted in whole numbers.
 
-![Example of red zone calculation](media/ddmrp-example-calc-red.png "Example of red zone calculation")
+![Example of red zone calculation.](media/ddmrp-example-calc-red.png "Example of red zone calculation")
 
 The green zone calculation also includes the yellow zone equation, but allows for minimum order size, order cycle, and lead time factor. Looking at the pillow example, assume there is no order cycle (which means you don't have any time constraints around how frequently you order), and the minimum order quantity is 10 pieces. The green zone is then calculated as the maximum result of the following three equations:
 
@@ -145,11 +146,19 @@ The green zone calculation also includes the yellow zone equation, but allows fo
 
 Once again, the system will round the green zone off to 58 pieces (ea) because pieces are counted in whole numbers.
 
-![Example of red green calculation](media/ddmrp-example-calc-green.png "Example of green zone calculation")
+![Example of red green calculation.](media/ddmrp-example-calc-green.png "Example of green zone calculation")
 
 The following illustration summarizes these zone calculation results using the funnel graphic often used in DDMRP.
 
-![Summary of zone calculation results](media/ddmrp-example-calc-summary.png "Summary of zone calculation results")
+![Summary of zone calculation results.](media/ddmrp-example-calc-summary.png "Summary of zone calculation results")
+
+## <a name="dynamic-adjustments"></a>Dynamic adjustments
+
+Dynamic adjustments let you apply a *demand adjustment factor* during periods of high or low demand. This factor multiplies the average daily usage in all calculations for the selected period, which will also modify the buffer zones. You'll usually do this after you generate your initial buffer values so you can fine tune them over time and in response to changing conditions. This is therefore the third step of Demand Driven Materials Resource Planning (DDMRP).
+
+For example, a pillow product might be more in demand in August as people head to vacation, so sales are expected to be higher. In this case, you could change the **Demand adjustment factor** value for this product to 1.5 for all of the weeks in August.
+
+In this way, you can calculate buffer values over time and then adjust them based on more than just the information that the system has. With a full DDMRP implementation, you would calculate the buffer values every day with a batch job, and directly accept the values, run planning as well with a batch job, and review the planned orders every day for the buffers. <!-- KFM: This last sentence needs clarification -->
 
 ## Implement buffers in Supply Chain Management
 
@@ -248,3 +257,5 @@ Use the following procedure to review and recalculate all decoupled lead times a
 1. Go to **Master planning \> Master planning \> DDMRP \> Decoupled lead time**.
 1. The **Decoupled lead time** page opens. Browse and filter the list as needed to find the information you are looking for. To see even more information for an item, select its link in the **Item number** column.
 1. If you want to recalculate the decoupled lead time for any item, select the item and then select **Calculate decoupled lead time** from the Action Pane. The **Calculate decoupled lead time** dialog opens, which works the same way as it does when [calculating decoupled lead times](calc-lead-time) for the **Item coverage** page for the same item.
+
+

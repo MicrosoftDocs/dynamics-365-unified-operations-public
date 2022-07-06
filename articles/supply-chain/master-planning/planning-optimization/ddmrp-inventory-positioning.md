@@ -16,6 +16,7 @@ ms.dyn365.ops.version: 10.0.28
 # Inventory positioning
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 Strategic inventory positioning involves identifying decoupling points in your supply chain where you can build up inventory on hand. This is mainly done to provide lead time compression and shock absorption in your supply chain. It lets you mitigate the bullwhip effect by not passing demand variability all the way down the supply chain. This is the first step of Demand Driven Materials Resource Planning (DDMRP).
 
@@ -23,7 +24,7 @@ Strategic inventory positioning involves identifying decoupling points in your s
 
 This section provides an example that illustrates how to make inventory positioning decisions when manufacturing a typical pillow product. The pillow has a multi-level bill of material (BOM), as shown in the following illustration.
 
-![Example of a multi-level bill of material (BOM) for a pillow product](media/ddmrp-bom-example.png "Example of a multi-level bill of material (BOM) for a pillow product")
+![Example of a multi-level bill of material (BOM) for a pillow product.](media/ddmrp-bom-example.png "Example of a multi-level bill of material (BOM) for a pillow product")
 
 ### Choose your decoupling points
 
@@ -47,7 +48,7 @@ Finally, you might set the finished good pillow item as your final decoupling po
 
 Based on this analysis, the following illustration shows the pillow BOM would like with the decoupling points highlighted by yellow inventory icons.
 
-![Example BOM with decoupling points highlighted](media/ddmrp-bom-decoupling-example.png "Example BOM with decoupling points highlighted")
+![Example BOM with decoupling points highlighted.](media/ddmrp-bom-decoupling-example.png "Example BOM with decoupling points highlighted")
 
 ### Calculate your decoupled lead time
 
@@ -55,11 +56,11 @@ This section shows how to calculate your new lead times after you have introduce
 
 Continuing with the pillow example used in the previous section, the followign illustration shows lead times in grey boxes at the top left of each BOM item. Boxes with a red outline indicate items that drive the cumulative lead time, which is 21 days when starting from scratch.
 
-![Example BOM with lead times](media/ddmrp-bom-lead-times-example.png "Example BOM with lead times")
+![Example BOM with lead times.](media/ddmrp-bom-lead-times-example.png "Example BOM with lead times")
 
 However, if you apply the decoupling points found previously, then the decoupled items will always be in stock and therefore have a lead time of zero. The new lead time for the pillow is just five days&mdash;two days to purchase the thread and three days to produce the pillow. This is called a decoupled lead time.
 
-![Example of decoupled lead time](media/ddmrp-bom-decoupled-lead-time-example.png "Example of decoupled lead time")
+![Example of decoupled lead time.](media/ddmrp-bom-decoupled-lead-time-example.png "Example of decoupled lead time")
 
 ## Strategic inventory positioning in a retail model
 
@@ -67,7 +68,7 @@ Retailers only stock finished products, so BOMs aren't an issue. However, retain
 
 The following illustration shows an example of a company that has a distribution center in Seattle and stores in Boston, Atlanta, and Portland.
 
-![Decoupling points based on location in a retail model](media/ddmrp-retail-decoupl-points-example.png "Decoupling points based on location in a retail model")
+![Decoupling points based on location in a retail model.](media/ddmrp-retail-decoupl-points-example.png "Decoupling points based on location in a retail model")
 
 You could decide that the transfer time to move a blanket product between the distribution center and the stores violates your *customer tolerance time* because your customers expect the blanket to be in stock when they visit. In this case, you would set up a decoupling point for the blanket item at each of the three stores and each one would get a different buffer level based on that particular store's lead times, demand patterns, and so on.
 

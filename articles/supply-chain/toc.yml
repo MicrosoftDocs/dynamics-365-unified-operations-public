@@ -1795,8 +1795,6 @@
             href: master-planning/planning-optimization/ddmrp-inventory-positioning.md
           - name: Buffer profile and levels
             href: master-planning/planning-optimization/ddmrp-buffer-profile-and-levels.md
-          - name: Dynamic adjustments
-            href: master-planning/planning-optimization/ddmrp-dynamic-adjustments.md
           - name: Demand driven planning
             href: master-planning/planning-optimization/ddmrp-planning.md
           - name: Visual and collaborative execution

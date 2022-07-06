@@ -16,40 +16,40 @@ ms.dyn365.ops.version: 10.0.28
 # Demand driven planning
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
-The article describes how generate planned orders for items that are set up as decoupling points. Here we have the same buffer levels we used in our example previously.
+The article describes how generate planned orders for items that are set up as decoupling points.
 
-The trigger for a new planned order occurs when the net flow is below the reorder point level during the planning run. When you use DDMRP we expect that planning is run on a daily basis, so you are essentially checking your inventory levels once a day to determine whether it needs to be replenished. You can see on the bottom of the screen that we calculate net flow as being our on hand inventory plus inventory that is on order (which means existing supply orders that are not yet here) minus what we term to be qualified demand.
+## Net flow and qualified demand
 
-![Chart  funnel chart Description automatically generated](media/image16.png)
+<!-- KFM: We should add some sub-headings for the theory. We should introduce the terms "net flow" and "qualified demand" and explain why we are talking about them here.  -->
 
-When the order is triggered, the amount of the order will be the maximum level minus the net flow, as indicated on the graphic. We also leverage the functionality that was added with priority based planning to assign an order priority instead of using requirement dates. In DDMRP we use the % of maximum inventory as the rule for assigning the priority of the planed order. In this case, our % of maximum is about 60% so the order priority for replenishment will be 60 (where 0 is the highest priority and 100 is the lowest)
+The following illustration shows how net flow is calculated as on-hand inventory plus inventory that is on order (existing supply orders that are not yet received) minus what we term to be qualified demand.
+<!-- KFM: The figure also confuses me--what values are we showing here? -->
 
-Qualified demand is shown in more detail on the next picture.
+![Example net flow calculation chart.](media/ddmrp-net-flow-example.png "Example net flow calculation chart")
 
-![Chart Description automatically generated](media/image17.png)
+When a planned order is triggered during a planning run, the quantity ordered will be the maximum level minus the net flow. The system also leverages priority-based planning functionality to assign an order priority instead of using requirement dates. DDMRP uses the order quantity as a percentage of maximum inventory as the basis for assigning the priority of a planed order. In the previous illustration, the ordered quantity is 53% of the maximum quantity, so the order priority for replenishment will be 60 (where 0 is the highest priority and 100 is the lowest). <!-- KFM: this example doesn't fully make sense to me. Please confirm that we are still using the correct terms here. -->
 
-Qualified demand = the demand past due plus today's demand, plus qualified order spikes in the future. If we look at the chart on the bottom left, we assume today is June 12 and we can see our demand for today and the next three days.
+*Qualified demand* is the demand past due plus today's demand, plus qualified order spikes in the future. The followign illustration shows an example of demand levels for today (June 12) and the next three days. DDMRP lets you set an order spike threshold to identify demand that exceeds normal expectations. If the threshold is set at 25 pieces, then two of the future dates shown in the illustration would qualify as order spikes. <!-- We should explain how to set the threshold for each item (maybe with link to [Inventory positioning](ddmrp-inventory-positioning.md), provided we also document the setting there, which we don't right now.) -->
 
-With DDMRP we can set an order spike threshold to identify demand that exceeds our normal expectations. If we set that threshold at 25 eaches then we would identify that two of our future dates qualify as order spikes.
+![Example qualified demand calculation chart.](media/ddmrp-net-qualified-demand-example.png "Example qualified demand calculation chart")
 
-So now, I can calculate qualified demand, assuming there is no demand past due. We will add today's demand of 18 plus the quantities of our two order spikes, 29 and 26 eaches and we get a qualified demand of 73. Notice that even though we have demand for June 15th we are not going to use it in our net flow calculation because DDMRP is different that our traditional planning coverage groups in the way we trigger planned orders.
+Assuming there is no demand past due, you can now add today's demand (18) to the quantities of the two order spikes (29 and 26), to get a qualified demand of 73. Notice that even though there is demand for June 15th, this isn't included in the net flow calculation because DDMRP is different from traditional planning coverage groups in the way it triggers planned orders.
 
-## Generate planned orders with DDMRP
+## Generating planned orders with DDMRP
 
-The first of all we review the net requirements.
+During a planning run, the system will create a new planned order when the net flow for an item falls below the reorder point level. When you use DDMRP, you will usually do a planning is run every day, so you are essentially checking your inventory levels once a day to determine which items need to be replenished.
 
-We have 220 eachs of this item from our example above on hand.
+The following screenshot shows <!-- What is this? Planned orders? What is the page name? --> an example of a situation where you have an order for 18 pieces on June 20, an order for 29 the next day, 26 the following day, and 20 on the 23rd. The spike threshold is set at 25 pieces, so two fo these orders are flagged as spikes. Finally, there are 220 pieces of this item on hand. <!-- These dates don't match those of the earlier bar graph. Are they supposed to? -->
 
-We have an order for 18 today, an order for 29 tomorrow, 26 the following day and 20 on the 23rd. You can see here that we have a flag to say that these two orders have been identified as spikes.
+![Planning example 1.](media/ddmrp-planning-example-1.png "Planning example 1")
 
-![Graphical user interface Description automatically generated](media/image18.png)
+Now let's select update <!-- Where do we select this? --> and run master planning and see what happens. Master planning will generate a planned order if the net flow drops below the reorder point, which in this example is 219 pieces. <!-- I don't understand this example. How does this math work? Why are we ordering on the 27th? -->
 
-Now let's select update and run master planning and see what happens. Remember, master planning will generate a planned order if the net flow drops below the reorder point, which in this example was 219 units.
+![Planning example 2.](media/ddmrp-planning-example-2.png "Planning example 2")
 
-![Graphical user interface Description automatically generated](media/image19.png)
-
-Now we have our results – we got a planned purchase order for a quantity of 130, which is the maximum level minus our net flow. The planned order gets assigned a priority of 53.07 based on the % of maximum strategy.
+This example results in a planned purchase order for a quantity of 130, which is the maximum level minus the net flow. The planned order is assigned a priority of 53.07 based on its percentage of the maximum quantity.
 
 > [!NOTE]
-> The Planning optimization calculates only decoupled items as DDMRP. The rest of items are calculated as standard MRP.
+> Planning Optimization only calculates decoupled items using DDMRP. All other items are calculated using standard MRP.
