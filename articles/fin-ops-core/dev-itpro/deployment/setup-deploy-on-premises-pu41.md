@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 06/07/2022
+ms.date: 07/06/2022
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -752,7 +752,7 @@ The following script automates the steps of the manual process that is described
 # If Remoting, execute
 #.\Configure-SQLCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
 
-.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com"
+.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com.pfx"
 ```
 
 You can verify that everything has been configured correctly by running the following command.
@@ -761,7 +761,7 @@ You can verify that everything has been configured correctly by running the foll
 # If Remoting, execute
 #.\Configure-SQLCert-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Test
 
-.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com" -Test
+.\Configure-SQLCert.ps1 -PfxCertificatePath ".\Certs\SQL1.contoso.com.pfx" -Test
 ```
 
 #### Manually configure the certificate for an Always-On SQL availability group or instance
