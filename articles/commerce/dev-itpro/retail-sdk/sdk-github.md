@@ -27,7 +27,7 @@ The Commerce SDK includes the code, code samples, templates, and tools that are 
 
 ![Commerce components.](media/developer-environment.png)
 
-## Extension components in the Dynamics 365 Commerce 
+## Extension components in Dynamics 365 Commerce 
 
 The following tables provide information about the components in the Commerce SDK that can be customized for different scenarios. 
 
