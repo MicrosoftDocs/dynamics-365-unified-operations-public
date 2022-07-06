@@ -55,20 +55,20 @@ primary account numbers to simulate the transactions, but do not result
 in processing an actual transaction.
 
 1.	**Limitations.** You may not (i) deploy your websites to a live
-production environment of Dynamics 365 Finance; (ii)
+production environment of Dynamics 365 for Finance and Operations; (ii)
 distribute the software or your customization packages to third parties;
 or (iii) deploy websites that you create with the software for third
 parties to access over the Internet, unless Microsoft permits you to do
 so under another agreement. Microsoft may add or remove components from
 the software from time to time.
 
-1.	**Microsoft Dynamics 365 Finance Subscription.** Use
-of the software requires a valid Dynamics 365 Finance
-subscription. Your access to Dynamics 365 Finance
+1.	**Microsoft Dynamics 365 for Finance and Operations Subscription.** Use
+of the software requires a valid Dynamics 365 for Finance and Operations
+subscription. Your access to Dynamics 365 for Finance and Operations
 through the software must comply with the existing terms for the service
 that apply to you through your subscription license. You may lose access
-to the Dynamics 365 Finance online service (i) if
-your Dynamics 365 Finance subscription license
+to the Dynamics 365 for Finance and Operations online service (i) if
+your Dynamics 365 for Finance and Operations subscription license
 expires or is terminated, or (ii) your license to this software is
 terminated.
 
