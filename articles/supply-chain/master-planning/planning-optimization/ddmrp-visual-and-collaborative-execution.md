@@ -1,6 +1,6 @@
 ﻿---
 title: Visual and collaborative execution
-description:
+description: This article describes how to monitor your DDMRP decoupling points, buffer zones, planned orders, and history.
 author: t-benebo
 ms.date: 06/30/2022
 ms.topic: article
@@ -17,6 +17,8 @@ ms.dyn365.ops.version: 10.0.28
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+
+This article describes how to monitor your DDMRP decoupling points, buffer zones, planned orders, and history.
 
 ## Visually tack buffers and quantities for a selected item
 

@@ -39,7 +39,7 @@ When choosing where to put your decoupling points, consider all of the following
 
 In the pillow example, you might place your first decoupling point might at the *foam billets* for the following reasons:
 
-- It is difficult to source the materials used to make the billet and availability is volatile. This meets the criterion on *external variability*.
+- It's difficult to source the materials used to make the billet and availability is volatile. This meets the criterion on *external variability*.
 - The foam billets can be cut into many different shapes and sizes to create foam inserts for a variety of products that you manufacture, in addition to the pillow. This meets the criterion on *inventory leverage and flexibility*.
 
 Continuing with this example, the next decoupling point could be at the *fabric kit*, which is pre-cut pillow fabric. You might choose this one because you only have one fabric cutting machine, so  the *critical operation protection* criterion applies.
@@ -54,11 +54,11 @@ Based on this analysis, the following illustration shows the pillow BOM would li
 
 This section shows how to calculate your new lead times after you have introduced decoupling points. 
 
-Continuing with the pillow example used in the previous section, the followign illustration shows lead times in grey boxes at the top left of each BOM item. Boxes with a red outline indicate items that drive the cumulative lead time, which is 21 days when starting from scratch.
+Continuing with the pillow example used in the previous section, the following illustration shows lead times in grey boxes at the top left of each BOM item. Boxes with a red outline indicate items that drive the cumulative lead time, which is 21 days when starting from scratch.
 
 ![Example BOM with lead times.](media/ddmrp-bom-lead-times-example.png "Example BOM with lead times")
 
-However, if you apply the decoupling points found previously, then the decoupled items will always be in stock and therefore have a lead time of zero. The new lead time for the pillow is just five days&mdash;two days to purchase the thread and three days to produce the pillow. This is called a decoupled lead time.
+However, if you apply the decoupling points found previously, then the decoupled items will always be in stock and therefore have a lead time of zero. The new lead time for the pillow is just five days&mdash;two days to purchase the thread and three days to produce the pillow. This is called a *decoupled lead time*.
 
 ![Example of decoupled lead time.](media/ddmrp-bom-decoupled-lead-time-example.png "Example of decoupled lead time")
 
@@ -80,7 +80,7 @@ This section describes how to implement your inventory positioning strategy in S
 
 <!-- KFM: Add intro that briefly describes the purpose of item coverage groups in the context of DDMRP.  Mention why you should set up groups vs. individual items. Explain why you might have just one or more than one decoupling group. -->
 
-Decide which coverage groups you will need to implement your DDMRP strategy and then create each of them using the following steps:
+Decide which coverage groups you'll need to implement your DDMRP strategy and then create each of them using the following steps:
 
 1. Go to **Master planning \> Setup \> Coverage \> Coverage groups**
 1. On the Action Pane, select **New** to create a new coverage group.
@@ -113,7 +113,7 @@ To set an item as a decoupling point, follow these steps:
 1. The **Item coverage** page opens. On the Action Pane, select **New** to create a new item coverage record. <!-- KFM: What if coverage records already exist? Do we recommend having more than one of these when using DDMRP? Maybe this text from the draft is relevant here (more detail is needed): "Among other things you can create many different Item coverage codes if you want many different defaults. There is the easiest way to specify a decoupling point." -->
 1. Set up the item coverage record as usual and then, with the new record still selected, open the **General** tab. <!-- KFM: Can we give better advice here than just "as usual"? Maybe this text from the draft is relevant here (more detail is needed): "Besides, you have to specify all the dimensions. If you miss site or warehouse that are mandatory for this item, you will not be able to define the decoupling point for this item." -->
 1. Select the **Use specific settings** check box.
-1. Set **Coverage group** to a coverage group set up to create decoupling points (as described in the previous section).
+1. Set **Coverage group** to a coverage group that is set up to create decoupling points (as described in the previous section).
 1. <!-- KFM: We seem to have other DDMRP settings that should be described here, including **average daily usage**, **order cycle** and **order spike threshold** -->
 
 <!-- The purpose of the following text isn't clear. Are these the settings from the decoupling coverage group? 

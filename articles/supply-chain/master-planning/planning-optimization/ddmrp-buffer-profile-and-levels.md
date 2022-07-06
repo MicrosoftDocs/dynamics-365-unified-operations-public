@@ -18,13 +18,13 @@ ms.dyn365.ops.version: 10.0.28
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
-Once you have identified your decoupling points (key items that you will strategically keep in stock) you must decide how much stock (buffer) you will keep at each of them. This is the second step of Demand Driven Materials Resource Planning (DDMRP).
+Once you've identified your decoupling points (key items that you'll strategically keep in stock) you must decide how much stock (buffer) you'll keep at each of them. This is the second step of Demand Driven Materials Resource Planning (DDMRP).
 
 ## Buffer levels and zones
 
 In DDMRP, each stock buffer is defined using three values: minimum quantity, maximum quantity, and reorder point. These values establish three difference zones, are identified using the following color codes:
 
-- **Red zone** – This is the area below the minium quantity. The minimum point is also called "top of red" and your planning strategy should be designed to ensure that stock levels are always above this point.
+- **Red zone** – This is the area below the minimum quantity. The minimum point is also called "top of red" and your planning strategy should be designed to ensure that stock levels are always above this point.
 - **Yellow zone** – This is the area between the minimum quantity and the reorder point. The reorder point is also called "top of yellow". When this point is reached, the system should reorder.
 - **Green zone** – This is the area between the reorder point and the maximum quantity. The maximum point is also called "top of green". This point is the maximum level to which the stock will be replenished.
 
@@ -36,7 +36,7 @@ The following illustration shows the three colored zones and how they relate to 
 
 This section explains how the height of each buffer zone is calculated.
 
-The yellow zone is usually calculated first. This zone represents the quantity you consume from the moment you order until the order arrives. In other words, it's the expected consumption during the replenishment lead time and is calculated using the following equation:
+The yellow zone is typically calculated first. This zone represents the quantity you consume from the moment you order until the order arrives. In other words, it's the expected consumption during the replenishment lead time and is calculated using the following equation:
 
 - **Yellow zone** = \[Average daily usage\] × \[decoupled lead time\]
 
@@ -72,7 +72,7 @@ Past average daily usage (ADU) is calculated as an average by adding up the quan
 
 <!-- KFM: The average values in the figure are shifted back one day, so this image should be updated. -->
 
-In previous illustration, if today is the morning of June 11th, the average daily usage for the previous 3 days (June 8th, 9th, and 10th) is 21.
+In previous illustration, if today is the morning of June 11, the average daily usage for the previous three days (June 8, 9, and 10) is 21.
 
 - **ADU (past)** = (29 + 11 + 23) ÷ 3 = 21
 
@@ -82,7 +82,7 @@ For a new product, you may not have any past usage data, so you might instead us
 
 ![Average daily usage (forward) chart.](media/ddmrp-adu-forward.png "Average daily usage (forward) chart")
 
-In previous illustration, if today is the morning of June 11th, the average daily usage for the next 3 days (June 11th, 12th, and 13th) is 21.66.
+In previous illustration, if today is the morning of June 11, the average daily usage for the next three days (June 11, 12, and 13) is 21.66.
 
 - **ADU (forward)** = (18+18+29) ÷ 3 = 21.66
 
@@ -92,7 +92,7 @@ The blended average daily usage combines the average past usage and average forw
 
 ![Average daily usage (blended) chart.](media/ddmrp-adu-blended.png "Average daily usage (blended) chart")
 
-In previous illustration, if today is the morning of June 11th, the blended average daily usage for the previous and next 3 days (June 8th to 13th) is 21.33.
+In previous illustration, if today is the morning of June 11, the blended average daily usage for the previous and next three days (June 8 to 13) is 21.33.
 
 - **ADU blended** = (\[ADU past\] + \[ADU forward\]) ÷ 2<br>= (21+ 21.66) ÷ 2<br>= 21.33
 
@@ -100,7 +100,7 @@ In previous illustration, if today is the morning of June 11th, the blended aver
 
 ## Buffer calculation factors
 
-For each item, you can define two factors to adjust how big the red and green zones should be to compensate for the expected lead time and demand variability.
+For each item, you can define two factors to adjust how large the red and green zones should be to compensate for the expected lead time and demand variability.
 
 ![Lead time and variability factors.](media/ddmrp-zone-factors.png "Lead time and variability factors")
 
@@ -122,29 +122,29 @@ This example continues with the pillow production example provided in [Inventory
 
 ![Example of decoupled lead time.](media/ddmrp-bom-decoupled-lead-time-example.png "Example of decoupled lead time")
 
-For the pillow example, assume that the average daily usage has been calculated to 23 pieces and, as shown in the previous illustration, the decoupled lead time is 5 days. Using these values, you can calculate the yellow zone using the following equation:
+For the pillow example, assume that the average daily usage has been calculated to 23 pieces and, as shown in the previous illustration, the decoupled lead time is five days. Using these values, you can calculate the yellow zone using the following equation:
 
 - **Yellow zone** = \[Average daily usage\] × \[Decoupled lead time\] = 115
 
 ![Example of yellow zone calculation.](media/ddmrp-example-calc-yellow.png "Example of yellow zone calculation")
 
-The red zone calculation is similar to the yellow zone, but is padded for variability and lead time. For the pillow example, assume that you have observed a medium lead time (factor = 0.50) and high demand variability (factor = 0.8). Using these values, combined with the components from the yellow equation, you can calculate the red zone using the following equations:
+The red zone calculation is similar to the yellow zone, but is padded for variability and lead time. For the pillow example, assume that you've observed a medium lead time (factor = 0.50) and high demand variability (factor = 0.8). Using these values, combined with the components from the yellow equation, you can calculate the red zone using the following equations:
 
 - **Red base** = \[Average daily usage\] × \[Decoupled lead time\] × \[Lead time factor\] = 57.5
 - **Red safety** = \[Red base\] × \[Variability factor\] = 46
 - **Red zone** = \[Red base\] + \[Red safety\] = 103.5
 
-The system will round the red zone off to 104 pieces (ea) because pieces are counted in whole numbers.
+The system will round off the red zone to 104 pieces (ea) because pieces are counted in whole numbers.
 
 ![Example of red zone calculation.](media/ddmrp-example-calc-red.png "Example of red zone calculation")
 
-The green zone calculation also includes the yellow zone equation, but allows for minimum order size, order cycle, and lead time factor. Looking at the pillow example, assume there is no order cycle (which means you don't have any time constraints around how frequently you order), and the minimum order quantity is 10 pieces. The green zone is then calculated as the maximum result of the following three equations:
+The green zone calculation also includes the yellow zone equation, but allows for minimum order size, order cycle, and lead time factor. Looking at the pillow example, assume there's no order cycle (which means you don't have any time constraints around how frequently you order), and the minimum order quantity is 10 pieces. The green zone is then calculated as the maximum result of the following three equations:
 
 - \[Minimum order quantity\] = 10
 - \[Average daily usage\] × \[Order cycle\] = 0
 - \[Average daily usage\] × \[Decoupled lead time\] × \[Lead time factor\] = 57.5
 
-Once again, the system will round the green zone off to 58 pieces (ea) because pieces are counted in whole numbers.
+Once again, the system will round off the green zone to 58 pieces (ea) because pieces are counted in whole numbers.
 
 ![Example of red green calculation.](media/ddmrp-example-calc-green.png "Example of green zone calculation")
 
@@ -162,7 +162,7 @@ In this way, you can calculate buffer values over time and then adjust them base
 
 ## Implement buffers in Supply Chain Management
 
-This section describes how to implement your buffer zone strategy in Supply Chain Management. It assumes that you have already done the analyses and calculations outlined in the first half of this article.
+This section describes how to implement your buffer zone strategy in Supply Chain Management. It assumes that you've already done the analyses and calculations outlined in the first half of this article.
 
 ### <a name="set-up-buffers"></a>Set up buffers for a decoupling point item
 
@@ -175,18 +175,18 @@ Use the following procedure to set up buffer values for a decoupling point:
 1. Open the **General** tab.
 1. If you want the system to calculate buffer values automatically based on your sales history, forecasts, and coverage group settings, then do the following steps: <!-- KFM: I *think* this is what we are doing here. Please confirm. -->
     1. Set **Buffer values over time** to *Yes*.
-    1. A dialog opens to tell you that you manual buffer settings (**Minimum**, **Reorder point**, and **Maximum**) will be reset if you continue. Select *Yes* to keep the new setting.
+    1. A dialog opens to tell you that your manual buffer settings (**Minimum**, **Reorder point**, and **Maximum**) will be reset if you continue. Select *Yes* to keep the new setting.
 1. If you prefer to enter your buffer settings manually, then do the following steps:
     1. Set **Buffer values over time** to *No*.
-    1. Set **Minimum** to the value you have calculated for the minimum stock level (red zone), as described earlier in this topic.
-    1. Set **Reorder point** to the value you have calculated for the reorder point (yellow zone), as described earlier in this topic.
-    1. Set **Maximum** to the value you have calculated for the maximum stock level (green zone), as described earlier in this topic.
+    1. Set **Minimum** to the value you've calculated for the minimum stock level (red zone), as described earlier in this article.
+    1. Set **Reorder point** to the value you've calculated for the reorder point (yellow zone), as described earlier in this article.
+    1. Set **Maximum** to the value you've calculated for the maximum stock level (green zone), as described earlier in this article.
 
 ### <a name="calc-lead-time"></a>Calculate or enter decoupled lead times
 
-For items where you choose to allow the system to [calculate your buffer zones automatically](set-up-buffers)), use the following procedure to calculate or enter decoupled lead times for a decoupling point item:
+For items where you choose to allow the system to [calculate your buffer zones automatically](#set-up-buffers)), use the following procedure to calculate or enter decoupled lead times for a decoupling point item:
 
-1. Open the **Item coverage** page for your decoupling point item (see also [Set up buffers for a decoupling point item](set-up-buffers)).
+1. Open the **Item coverage** page for your decoupling point item (see also [Set up buffers for a decoupling point item](#set-up-buffers)).
 1. Select an item coverage record that creates a decoupling point.
 1. Open the **Buffer values** tab.
 1. If no time periods are shown on the grid, then on the Action Pane, open the **Buffer values** tab and select **Add time periods**. The system then populates the grid with rows for each daily or weekly time period, depending on whether the coverage group is set to use a **Min, max, and reorder-point period** of *Daily* or *Weekly*. <!-- KFM: How many rows does it create? How often do we have to do this? -->
@@ -201,24 +201,24 @@ For items where you choose to allow the system to [calculate your buffer zones a
 
 ### <a name="calc-adu"></a>Calculate or enter average daily usage
 
-For items where you choose to allow the system to [calculate your buffer zones automatically](set-up-buffers)), use the following procedure to calculate or enter average daily usage for a decoupling point item:
+For items where you choose to allow the system to [calculate your buffer zones automatically](#set-up-buffers)), use the following procedure to calculate or enter average daily usage for a decoupling point item:
 
-1. Open the **Item coverage** page for your decoupling point item (see also [Set up buffers for a decoupling point item](set-up-buffers)).
+1. Open the **Item coverage** page for your decoupling point item (see also [Set up buffers for a decoupling point item](#set-up-buffers)).
 1. Select an item coverage record that creates a decoupling point.
 1. Open the **Buffer values** tab.
 1. If no time periods are shown on the grid, then on the Action Pane, open the **Buffer values** tab and select **Add time periods**. The system then populates the grid with rows for each daily or weekly time period, depending on whether the [coverage group](ddmrp-inventory-positioning.md) is set to use a **Min, max, and reorder-point period** of *Daily* or *Weekly*. Default values for the **Lead time factor**, and **Variability factor** are also taken from the coverage group, though you can edit these for each row if needed. <!-- KFM: Strange that order cycle doesn't appear in this grid. Also strange that the ADU set on the General tab isn't copied here. -->
 1. Select a time period where you would like to calculate average daily usage. <!-- KFM: Can we choose more than one? -->
 1. On the Action Pane, open the **Buffer values** tab and select **Calculate average daily usage**. The system now attempts to collect data required for the average daily use calculation, as defined for the [coverage group](ddmrp-inventory-positioning.md). Do one of the following steps:
     - If the required data is available, then calculation results are added to the **Average daily usage** column. Inspect the values and adjust them if needed based on your own estimates.
-    - If the required data isn't available, no values are added automatically. In this case, manually enter estimated values for each row where you are planning to calculate buffer values.
+    - If the required data isn't available, no values are added automatically. In this case, manually enter estimated values for each row where you're planning to calculate buffer values.
 
 ### Calculate and apply buffer values
 
-For items where you choose to allow the system to [calculate your buffer zones automatically](set-up-buffers)), you can manually trigger the calculation of buffer values by doing the following steps:
+For items where you choose to allow the system to [calculate your buffer zones automatically]#(set-up-buffers)), you can manually trigger the calculation of buffer values by doing the following steps:
 
-1. For the relevant decoupling-point item, [configure the buffer calculation](set-up-buffers), [calculate or enter decoupled lead times](calc-lead-time) and [calculate or enter average daily usage](calc-adu) for all relevant time periods, as described previously in this article.
+1. For the relevant decoupling-point item, [configure the buffer calculation](#set-up-buffers), [calculate or enter decoupled lead times](#calc-lead-time) and [calculate or enter average daily usage](#calc-adu) for all relevant time periods, as described previously in this article.
 1. Open the **Item coverage** page for your decoupling point item and go to the **Buffer values** tab, which should already show a list of time periods.
-1. Select the time periods where you would like to calculate buffer values. Each row that you select must already have a non-zero values in the **Average daily usage** and **Decoupled lead time** columns.
+1. Select the time periods where you would like to calculate buffer values. Each row that you select must already have non-zero values in the **Average daily usage** and **Decoupled lead time** columns.
 1. Edit the **Demand adjustment factor** field for one or more rows as needed. The system will apply this factor to the **Average daily usage** value in all buffer calculations where that value is used. This factor enables you to adjust for how demand fluctuates by date, such as for holidays or seasonal items.
 1. On the Action Pane, open the **Buffer values** tab and select **Calculate min, max and reorder point quantities**.
 1. The system calculates and populates the **Calculated min**, **Calculated reorder point** and **Calculated max** columns in the grid on the **Item coverage** page.
@@ -226,7 +226,7 @@ For items where you choose to allow the system to [calculate your buffer zones a
     > [!TIP]
     > You can adjust values and rerun the calculations as often as you like to see how your settings affect the result. This is a good way to get a feel for how all the values work, and can help you to fine tune your factors for when calculations are run automatically by a batch job. <!-- KFM: I added this. Please confirm. -->
 
-1. When you are satisfied with the calculations results, you must apply them, otherwise they will have no effect. When you apply a calculation for one or more rows, values from the **Calculated min**, **Calculated reorder**, and **Calculated max** fields are copied to the **Min**, **Reorder point**, and **Max** columns, respectively. On the Action Pane, open the **Buffer values** tab and select one of the following buttons from the **Take action** group:
+1. When you're satisfied with the calculations results, you must apply them, otherwise they'll have no effect. When you apply a calculation for one or more rows, values from the **Calculated min**, **Calculated reorder**, and **Calculated max** fields are copied to the **Min**, **Reorder point**, and **Max** columns, respectively. On the Action Pane, open the **Buffer values** tab and select one of the following buttons from the **Take action** group:
     - **Accept all calculations** – Applies all calculated values in the grid.
     - **Accept calculations for selected rows** – Only applies calculated values for the selected rows
     - **Discard all calculations** – Discards all calculated values for min, max, and reorder points in the grid.
@@ -235,7 +235,7 @@ For items where you choose to allow the system to [calculate your buffer zones a
 
 ### Schedule automatic buffer value calculations
 
-Once you have your DDMRP settings fully set up and have confirmed they work as expected, you'll probably want to set up a batch job to periodically recalculate average daily usage and related buffer values as needed based on actual consumption data and/or updated forecasts. This only applies for items where you choose to allow the system to [calculate your buffer zones automatically](set-up-buffers)).
+Once you have your DDMRP settings fully set up and have confirmed they work as expected, you'll probably want to set up a batch job to periodically recalculate average daily usage and related buffer values as needed based on actual consumption data and/or updated forecasts. This only applies for items where you choose to allow the system to [calculate your buffer zones automatically](#set-up-buffers)).
 
 Use the following procedure to schedule automatic buffer value calculations:
 
@@ -248,14 +248,14 @@ Use the following procedure to schedule automatic buffer value calculations:
     - **Master plan** – <!--KFM: describe this setting and how/when to use it. -->
 1. To limit the set of records on which this batch job should run, expand the **Records to include** FastTab and select **Filter** to open the **Inquiry** dialog, which works the same as it does for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management
 1. On the **Run in the background** FastTab, specify how, when, and how often the selected calculations should be made for the selected items. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
-1. Click **OK** to add the new job to a batch queue for execution.
+1. Select **OK** to add the new job to a batch queue for execution.
 
 ### Review and recalculate decoupled lead times for all items
 
 Use the following procedure to review and recalculate all decoupled lead times available in your legal entity (company): <!--KFM: correct? -->
 
 1. Go to **Master planning \> Master planning \> DDMRP \> Decoupled lead time**.
-1. The **Decoupled lead time** page opens. Browse and filter the list as needed to find the information you are looking for. To see even more information for an item, select its link in the **Item number** column.
-1. If you want to recalculate the decoupled lead time for any item, select the item and then select **Calculate decoupled lead time** from the Action Pane. The **Calculate decoupled lead time** dialog opens, which works the same way as it does when [calculating decoupled lead times](calc-lead-time) for the **Item coverage** page for the same item.
+1. The **Decoupled lead time** page opens. Browse and filter the list as needed to find the information you're looking for. To see even more information for an item, select its link in the **Item number** column.
+1. If you want to recalculate the decoupled lead time for any item, select the item and then select **Calculate decoupled lead time** from the Action Pane. The **Calculate decoupled lead time** dialog opens, which works the same way as it does when [calculating decoupled lead times](#calc-lead-time) for the **Item coverage** page for the same item.
 
 
