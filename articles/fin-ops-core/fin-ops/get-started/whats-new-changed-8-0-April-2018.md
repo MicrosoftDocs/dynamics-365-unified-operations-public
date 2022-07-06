@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance version 8.0 (April 2018)
-description: This article describes features that are either new or changed in Dynamics 365 Finance version 8.0. This version was released in April 2018.
+title: What's new or changed in Dynamics 365 Finance and Operations version 8.0 (April 2018)
+description: This article describes features that are either new or changed in Dynamics 365 Finance and Operations version 8.0. This version was released in April 2018.
 author: tonyafehr
 ms.date: 10/15/2019
 ms.topic: article
@@ -27,19 +27,19 @@ ms.dyn365.ops.version: Release 8.0
 
 ---
 
-# What's new or changed in Dynamics 365 Finance version 8.0 (April 2018)
+# What's new or changed in Dynamics 365 Finance and Operations version 8.0 (April 2018)
 
 [!include [banner](../includes/banner.md)]
 
 
 
-This article describes features that are either new or changed in Microsoft Dynamics 365 Finance version 8.0 (April 2018). This version was released in April 2018 and has build numbers 8.0.30 and 8.0.35.
+This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations version 8.0 (April 2018). This version was released in April 2018 and has build numbers 8.0.30 and 8.0.35.
 
-To discover the latest updates to our business applications, as well as a host of new capabilities for building your own applications and extensions on top of our platform, download the [Dynamics 365 Spring '18 release plans](/business-applications-release-notes/April18/release-overview). The release plans provide details about the features that are either new or changed in Dynamics 365 Finance.
+To discover the latest updates to our business applications, as well as a host of new capabilities for building your own applications and extensions on top of our platform, download the [Dynamics 365 Spring '18 release plans](/business-applications-release-notes/April18/release-overview). The release plans provide details about the features that are either new or changed in Dynamics 365 Finance and Operations.
 
-### Introducing Dynamics 365 Finance
+### Introducing Dynamics 365 Finance and Operations
 
-Users and developers will see an updated product name, "Microsoft Dynamics 365 Finance." With version 8.0, Microsoft is further simplifying our Dynamics 365 offerings and increasing ease of selection for our customers and ecosystem. Going forward, Microsoft is no longer offering separate editions (Business edition and Enterprise edition), so the product name for this Dynamics 365 application is Microsoft Dynamics 365 Finance.
+Users and developers will see an updated product name, "Microsoft Dynamics 365 Finance and Operations." With version 8.0, Microsoft is further simplifying our Dynamics 365 offerings and increasing ease of selection for our customers and ecosystem. Going forward, Microsoft is no longer offering separate editions (Business edition and Enterprise edition), so the product name for this Dynamics 365 application is Microsoft Dynamics 365 Finance and Operations.
 
 ## Business productivity
 
@@ -65,7 +65,7 @@ Project resource managers can fulfill resources on tasks past the current planne
 
 ### Person search report
 
-You can find a person and their personal data in finance and operations.
+You can find a person and their personal data in Finance and Operations.
 
 ### Data sharing for customer and vendor tables
 
