@@ -33,23 +33,24 @@ There are two categories of Dynamics 365 Human Resources customers that will be 
 •	Customers who use Dynamics 365 Human Resources and do not have any additional operations apps from Microsoft Dynamics 365; 
 •	Customers who use both Dynamics 365 Human Resources and Dynamics 365 Finance, Supply Chain Management, Commerce, or Project Operations.  
 Regardless of which category the customer falls into they will need to move data into a newly created environment on the F&O infrastructure and validate the merge has 
-been completed successfully.  
+been completed successfully. 
+
 Going forward the Dynamics 365 Human Resources application will have its own F&O environment that is separate from other operations apps. This allows customers to take
 advantage of extensibility options without the need to merge their current data. We will provide tooling and a sandbox environment that can be used for testing and 
 validation of data migration, prior to moving into to a production environment. These tools will enable a near-automated process and will be available between August 
-and November 2022. Please check the release plans for updates.  
+and November 2022. Check the release plans for updates.  
  
 Customers that are using other applications on the F&O infrastructure will have the option to merge their HR data with an existing environment. Refer to the 
-Merging Dynamics 365 with an existing F&O app environment of this document for more detail. 
+Merging Dynamics 365 with an existing F&O app environment section for more detail. 
  
 ## When will customers be moved to the F&O infrastructure?  
 The transition for each company will depend on their current configuration and readiness to move to the F&O infrastructure. We recommend that customers work with 
 their Microsoft partner to determine the best path forward. 
 •	Organizations that use the HR module in Dynamics 365 Finance will have the ability to enable new capabilities from Dynamics 365 Human Resources as part of the regular
-One Version update process. New features are planned to become generally available beginning in January 2022 (dates are subject to change, please see the release plans
+One Version update process. New features are planned to become generally available beginning in January 2022 (dates are subject to change, see the release plans
 for the latest information). However, please see licensing changes and timelines, as all customers will need to move to Dynamics 365 Human Resources to use these
 capabilities in the future. 
-•	Organizations using Dynamics 365 Human Resources will have access to tooling to complete the infrastructure merge. Please check the release plans regularly for
+•	Organizations using Dynamics 365 Human Resources will have access to tooling to complete the infrastructure merge. Check the release plans regularly for
 up-to-date information on when some of the tools will be available. We will work with customers on the transition to prevent any interruption in service. Customers
 will have 12-18 months to make the transition starting from the time the migration tooling becomes available. 
 •	Organizations that use both Dynamics 365 Human Resources and the HR module can move their standalone human resources infrastructure onto the F&O infrastructure and
@@ -104,11 +105,12 @@ that is currently connected to Dynamics 365 Human Resources. The Dataverse virtu
 any additional configuration. 
 The virtual tables may need to be regenerated in the Dataverse environment that is connected to the customer’s existing F&O environment. 
 
-## How will an integration using the Applicant Tracking System (ATS) API, Payroll API, Dataverse virtual tables for Dynamics 365 Human Resources, or other entities in
-the Dataverse Web API work once the infrastructure merge is completed? 
+## How will an integration using the Applicant Tracking System (ATS) API, Payroll API, Dataverse virtual tables for Dynamics 365 Human Resources, or other entities in the Dataverse Web API work once the infrastructure merge is completed? 
 When customers migrate their Dynamics 365 Human Resources environment to the F&O infrastructure, the environment will remain connected to the Dataverse environment
 currently connected to Dynamics 365 Human Resources. Any integrations developed against the Dataverse Web API will continue to work once the migration is completed. 
-Our organization has configured custom security in Dynamics 365 Human Resources. Will our custom security still be applied once the infrastructure migration is completed? 
+Our organization has configured custom security in Dynamics 365 Human Resources. 
+
+## Will our custom security still be applied once the infrastructure migration is completed? 
 Yes, custom security configurations will be included in the data migration. 
 
 ## Will workflows in Dynamics 365 Human Resources be migrated automatically?  
@@ -120,7 +122,7 @@ Yes, saved views will be migrated to the merged infrastructure.
 ## Will features enabled in Dynamics 365 Human Resources be automatically available after the infrastructure merge? 
 For customers using the HR module, features that are only in Dynamics 365 Human Resources will be managed through Feature management. These features will not be enabled
 by default. There may be some cases where features do need to be enabled by default, in which case, they will be documented. 
-For customers using Dynamics 365 Human Resources, features will be in the infrastructure. In the event there are features that are not available we will provide 
+For customers using Dynamics 365 Human Resources, features will be in the infrastructure. In the event there are features that are not available, we will provide 
 documentation. Any feature management key that is enabled in the current Dynamics 365 Human Resources environment will be enabled in the merged infrastructure. 
 Visit Feature management overview to learn more.  
 
@@ -156,7 +158,7 @@ environments will need to be combined as part of the merge process. This will re
 ## What will happen to documents during the migration? 
 When customers migrate their Dynamics 365 Human Resources environment to the F&O infrastructure, the documents will remain in the existing document storage and will 
 be mapped automatically to the new environment in the F&O infrastructure. 
-In a future release we will provide new data entities which will allow customers to who choose to merge their Dynamics 365 Human Resources environment into an existing
+In a future release, we will provide new data entities which will allow customers to who choose to merge their Dynamics 365 Human Resources environment into an existing
 F&O environment to export documents and move them into the existing environment. 
 
 ## What happens to the batch jobs configured in Dynamics 365 Human Resources after the migration? 
@@ -191,6 +193,7 @@ Dynamics 365 product licensing resources:
 •	Dynamics 365 Licensing Portal 
 •	Dynamics 365 Licensing Training 
 •	Dynamics 365 Licensing FAQ 
+
 Other licensing resources: 
 •	Commercial Licensing - Microsoft Licensing 
 •	Field Empowerment - EmpGuide 
