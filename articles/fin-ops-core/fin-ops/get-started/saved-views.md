@@ -220,7 +220,7 @@ For a list of known issues with saved views, please see [Build forms that fully 
 ### How do I enable saved views in my environment?
 
 > [!NOTE]
-> The **Saved views** feature requires the Personalization system in finance and operations to be enabled. If personalization is turned off for the entire environment, views will be disabled even if you follow steps below. 
+> The **Saved views** feature requires the Personalization system in the finance and operations apps to be enabled. If personalization is turned off for the entire environment, views will be disabled even if you follow steps below. 
 
 You can turn the **Saved views** feature on and off through Feature management in any environment. After it's turned on, saved views will be enabled in all subsequent user sessions.
 
