@@ -50,7 +50,7 @@ For information about One Version service updates, see the [One Version service 
 There are three primary paths to get to the latest version of finance and operations.  Each path is referenced below with a link to detailed steps.
 
 ### Self-service upgrade
-*Applicable starting version: Microsoft Dynamics 365 Finance 7.0 (RTW), 7.1 (1611), 7.2 (July 2017), 7.3.*<br/>
+*Applicable starting version: Microsoft Dynamics 365 Finance and Operations 7.0 (RTW), 7.1 (1611), 7.2 (July 2017), 7.3.*<br/>
 *Scope: Complex*<br/>
 This path involves code refactoring to Extensions, and Data Upgrade in a DevTest, Sandbox, and eventually a Production environment. 
 
@@ -60,14 +60,14 @@ This path involves code refactoring to Extensions, and Data Upgrade in a DevTest
 [Self-service upgrade to the latest version](../migration-upgrade/self-service-upgrade.md).
 
 ### Rebuild and update
-*Applicable starting version: Microsoft Dynamics 365 Finance 8.0*<br/>
+*Applicable starting version: Microsoft Dynamics 365 Finance and Operations 8.0*<br/>
 *Scope: Moderate*<br/>
 This path involves removing Microsoft X++ hotfixes and creating a merged update package.
 
 [Update environments from version 8.0 to 10.0.X](../migration-upgrade/appupdate-80-81.md).
 
 ### Automatic update
-*Applicable starting version: Finance and operations 8.1.0+*<br/>
+*Applicable starting version: Finance and Operations 8.1.0+*<br/>
 *Scope: Simple*<br/>
 This path involves configuring your project for continuous updates.
 
