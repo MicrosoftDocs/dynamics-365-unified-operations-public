@@ -1046,6 +1046,8 @@
           href: publish-groups.md
         - name: Enable and use cross-channel sharing
           href: cross-channel-sharing.md
+        - name: Copy content to another locale
+          href: copy-content-locale.md
         - name: Brand your site and add store details
           items:
           - name: Add a logo
