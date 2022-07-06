@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade
-description: This article describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to finance and operations.
+description: This article describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to finance and operations apps.
 author: jorisdg
 ms.date: 02/20/2020
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
 
-This article describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to finance and operations.
+This article describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to finance and operations apps.
 
 ## Installation
 Use the pre-upgrade checklist to enter data that will be required for the upgrade procedure. 
@@ -65,7 +65,7 @@ If the process is successful, the task is marked as completed.
 
 ## Set up user mapping
 
-In AX 2012, users are authenticated against an on-premises Active Directory server. However, in finance and operations, users are authenticated against Azure Active Directory (Azure AD). This task provides a form where you can map existing AX 2012 users to equivalent Azure AD users. The AX 2012 users will then be able to access finance and operations.
+In AX 2012, users are authenticated against an on-premises Active Directory server. However, in finance and operations apps, users are authenticated against Azure Active Directory (Azure AD). This task provides a form where you can map existing AX 2012 users to equivalent Azure AD users. The AX 2012 users will then be able to access finance and operations apps.
 
 1. In the finance and operations data upgrade checklist, click **Set up user mapping**.
 2. The **User info email mapping** form appears. Follow one of these steps to fill in the grid:
