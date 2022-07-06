@@ -2,7 +2,7 @@
 # required metadata
 
 title: Videos
-description: This page lists Microsoft-created "how-to" and Tech talk videos relating to Finance and Operations apps that are available on YouTube and other sites.
+description: This page lists Microsoft-created "how-to" and Tech talk videos relating to finance and operations apps that are available on YouTube and other sites.
 author: sericks007
 ms.date: 06/13/2022
 ms.topic: article
@@ -31,16 +31,16 @@ ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 
 [!include [banner](../includes/banner.md)]
 
-On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), you can find videos created by Microsoft that demonstrate a wide range of business solutions for Dynamics 365 products. This section lists the "how-to" videos for Finance and Operations apps that are hosted on the channel.
+On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ), you can find videos created by Microsoft that demonstrate a wide range of business solutions for Dynamics 365 products. This section lists the "how-to" videos for finance and operations apps that are hosted on the channel.
 
 > [!Note]
 > Some of the videos listed were published under a previous product name, but are still applicable.
 
-## Videos for Finance and Operations development and administration
+## Videos for finance and operations development and administration
 
 ### Data integration
 
-- [Synchronize a work order between Dynamics 365 for Field Service and Finance and Operations apps](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
+- [Synchronize a work order between Dynamics 365 for Field Service and finance and operations apps](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 ### Data management
 
@@ -56,8 +56,8 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 ### Intelligence
 
 - [How to edit an embedded report in an analytical workspace](https://youtu.be/_8WlwmSggcQ)
-- [How to embed PowerBI.com reports in Finance and Operations apps](https://youtu.be/gGWuNJDoi-M)
-- [Bring your own database (BYOD) to Finance and Operations apps](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [How to embed PowerBI.com reports in finance and operations apps](https://youtu.be/gGWuNJDoi-M)
+- [Bring your own database (BYOD) to finance and operations apps](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
 - [How to use cost management Power BI content in Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 ### Lifecycle Services (LCS)
@@ -175,3 +175,4 @@ On the [Microsoft Dynamics 365 YouTube channel](https://www.youtube.com/channel/
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -220,7 +220,7 @@ For a list of known issues with saved views, please see [Build forms that fully 
 ### How do I enable saved views in my environment?
 
 > [!NOTE]
-> The **Saved views** feature requires the Personalization system in Finance and Operations to be enabled. If personalization is turned off for the entire environment, views will be disabled even if you follow steps below. 
+> The **Saved views** feature requires the Personalization system in the finance and operations apps to be enabled. If personalization is turned off for the entire environment, views will be disabled even if you follow steps below. 
 
 You can turn the **Saved views** feature on and off through Feature management in any environment. After it's turned on, saved views will be enabled in all subsequent user sessions.
 
@@ -260,3 +260,4 @@ If you publish a view to a specific legal entity, but you don't publish that vie
 - **Version 10.0.21 or later:** If the **Improved legal entity support for saved views** feature is turned on, the view selector will only ever show the view for the specified legal entities. This behavior occurs because the feature enables views (including personal views) to be linked to specific legal entities.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
