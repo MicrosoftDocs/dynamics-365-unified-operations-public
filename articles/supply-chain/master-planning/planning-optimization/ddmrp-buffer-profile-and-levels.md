@@ -247,7 +247,7 @@ Use the following procedure to schedule automatic buffer value calculations:
     - **Accept calculation for min, max and reorder point** – <!--KFM: describe the effect of each setting (yes/no) and the conditions under which you would choose each of them -->
     - **Master plan** – <!--KFM: describe this setting and how/when to use it. -->
 1. To limit the set of records on which this batch job should run, expand the **Records to include** FastTab and select **Filter** to open the **Inquiry** dialog, which works the same as it does for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management
-1. On the **Run in the background** FastTab, specify how, when, and how often the selected calculations should be made for the selected items. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
+1. On the **Run in the background** FastTab, specify how, when, and how often the selected calculations should be made for the selected items. The fields work just as they do for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
 1. Select **OK** to add the new job to a batch queue for execution.
 
 ### Review and recalculate decoupled lead times for all items
