@@ -15,7 +15,6 @@ ms.dyn365.ops.version: AX 10.0.25
 # Merge Cloud Scale Unit extension packages for deployment
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article describes how to merge Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU) extension packages.
 
