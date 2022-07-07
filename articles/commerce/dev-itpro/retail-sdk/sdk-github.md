@@ -1,6 +1,6 @@
 ---
 title: Download Commerce SDK samples and reference packages from GitHub and NuGet
-description: This article explains to how to download Commerce software development kit (SDK) samples from GitHub and reference packages from a public feed.
+description: This article describes to how to download Microsoft Dynamics 365 Commerce software development kit (SDK) samples from GitHub and reference packages.
 author: mugunthanm
 ms.date: 08/01/2022
 ms.topic: article
@@ -17,13 +17,14 @@ ms.dyn365.ops.version: 10.0.16
 
 [!include [banner](../../includes/banner.md)]
 
-This article explains to how to download Commerce software development kit (SDK) samples from GitHub and reference packages from a public feed. The Commerce SDK includes the code samples, templates, and tools that are required to extend or customize Microsoft Dynamics 365 Commerce functionality. The SDK is published in different repositories (repos) in GitHub, depending on the extension components.
+This article describes to how to download Microsoft Dynamics 365 Commerce software development kit (SDK) samples from GitHub and reference packages. 
 
-This article applies to Commerce SDK version 10.0.16 or later. For more information about how to download earlier versions of the Commerce SDK, see [Retail software development kit (SDK)](retail-sdk-overview.md).
+> [!NOTE]
+> This article applies to Commerce SDK version 10.0.16 or later. For more information about how to download earlier versions of the Commerce SDK, see [Retail software development kit (SDK)](retail-sdk-overview.md).
 
-## Commerce SDK overview
+The Commerce SDK includes the code, code samples, templates, and tools that are required to extend or customize Dynamics 365 Commerce functionality. The SDK is published in different repositories (repos) in GitHub, depending on the extension components.
 
-The Commerce SDK includes the code, code samples, templates, and tools that are required to extend or customize existing Commerce functionality. The SDK supports rapid development, full MSBuild integration, and package generation. The following image shows the relationship between the development environment and the cloud components.
+The Commerce SDK supports rapid development, full MSBuild integration, and package generation. The following image shows the relationship between the development environment and the cloud components.
 
 ![Commerce components.](media/developer-environment.png)
 
