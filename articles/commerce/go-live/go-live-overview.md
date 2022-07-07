@@ -4,7 +4,7 @@
 title: Go-live and update recommendations overview
 description: This article provides information about tasks that you should complete to help yourself go live with or update your Microsoft Dynamics 365 Commerce implementation project.
 author: mssle
-ms.date: 01/13/2022
+ms.date: 07/07/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: josaw
@@ -36,6 +36,6 @@ Website performance is often affected by image downloads. You can help improve w
 
 You can help improve website performance by excluding unused JavaScript modules in Commerce. For more information, see [Reduce JavaScript by excluding unused modules](performance-reduce-javascript.md).
 
-### Add/update robots.txt
+### Add or update robots.txt
 
-Unexpected or undirected crawling of your site by search engines can result in a high volume of page not found errors. These errors can lead to performance issues as the site responds to the many requests for pages that don't exist. To help fix this problem, [add/update robots.txt](add-robots-txt.md) for your domain.
+Unexpected or undirected crawling of your site by search engines can result in a high volume of "404 Page Not Found" errors. These errors can lead to performance issues when the site responds to the many requests for pages that don't exist. To help fix this problem, you should always upload a valid robots.txt file to guide conforming crawlers to only look for relevant pages on your site. For more information, see [Add or update a robots.txt file](add-robots-txt.md).
