@@ -7,7 +7,7 @@ author: mssle
 ms.date: 06/16/2022
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: sheaton
 ms.search.validFrom: 2021-09-20
@@ -17,34 +17,36 @@ ms.search.validFrom: 2021-09-20
 
 [!include[banner](../includes/banner.md)]
 
-This article describes how to create (or edit), upload, and validate the robots.txt file for each domain hosted in Microsoft Dynamics 365 Commerce. 
+This article describes how to create, edit, upload, and validate the robots.txt file for each domain hosted in Microsoft Dynamics 365 Commerce. 
 
-Unexpected or undirected crawling of your site by search engines can result in a high volume of page not found errors. These errors can lead to performance issues as the site responds to the many requests for pages that don't exist. To help fix this problem, you should always upload a valid robots.txt file to guide conforming crawlers to crawl only relevant pages on your site. 
+Unexpected or undirected crawling of your site by search engines can result in a high volume of page not found errors. These errors can lead to performance issues as the site responds to the many requests for pages that don't exist. To help fix this problem, you should always upload a valid robots.txt file to guide conforming crawlers to only look for relevant pages on your site. 
 
 ## Applies to
 
 This article applies to the following configurations:
 
 - **Version:** Commerce 10.0.16 or later
-- **Component:** Business to consumer (B2C) or business to business (B2B)
+- **Component:** Business-to-consumer (B2C) or business-to-business (B2B)
 - **Feature area:** Commerce website performance
 
 ## Prerequisites
 
-You're a [System Administrator](../manage-ecommerce-users-roles.md#system-administrator-role) in your Commerce instance.
-
-You've either created or downloaded a copy of robots.txt to your computer depending on your situation: 
-- If you don't have a robots.txt file uploaded for your domain, create a new robots.txt file on your computer following the [robots exclusion standard](https://www.robotstxt.org/orig.html). Use the [provided content sample](#sample-robotstxt-file-contents) as a starting point. 
+-You're a [System Administrator](../manage-ecommerce-users-roles.md#system-administrator-role) in your Commerce instance.
+-You've either created or downloaded a copy of robots.txt to your computer depending on your situation: 
+- If you don't have a robots.txt file uploaded for your domain, create a new robots.txt file on your computer following the [robots exclusion standard](https://www.robotstxt.org/orig.html). Use the [robots.txt sample](#sample-robotstxt-file-contents) provided below as a starting point. 
 - If you've previously uploaded a robots.txt file for your domain, [download](../manage-robots-txt-files.md#download-a-robotstxt-file) your existing file. 
 
 ## Steps to complete
 
-1. Open the local copy of robots.txt. 
-1. Edit the file to ensure it includes the disallow entries shown in the [provided sample](#sample-robotstxt-file-contents). 
+To edit and upload a robots.txt file, follow these steps.
+
+1. Open your local copy of robots.txt. 
+1. Edit the file to ensure that it includes the **Disallow** entries shown in the [robots.txt sample](#sample-robotstxt-file-contents) provided below. 
 1. Confirm the file is correctly formatted according to the [robots exclusion standard](https://www.robotstxt.org/orig.html).
-1. Upload the file to your site using these [upload instructions](../manage-robots-txt-files.md#upload-a-robotstxt-file).
+1. Upload the file to your site by following the instructions in [Upload a robots.txt file](../manage-robots-txt-files.md#upload-a-robotstxt-file).
 
 ### Sample robots.txt file contents 
+
 ```Plaintext
 User-agent: *
 Disallow: /signin
@@ -60,10 +62,10 @@ Disallow: /*skip=
 
 ## Validate
 
-Use the following method to validate the file has been added.
+Use the following methods to validate the file has been added.
 
-- **Description or purpose:** Validate your robots.txt file is available for your domain.
-- **Steps to run:** Using a web browser, open the page at *&lt;domain&gt;*/robots.txt.
+- **Description or purpose:** Validate that your robots.txt file is available for your domain.
+- **Steps to run:** Using a web browser, open the page at **\<your_domain\>/robots.txt**.
 - **Passing result:** Your robots.txt file can be viewed successfully.
 
 ## Additional resources
