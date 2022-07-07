@@ -108,7 +108,7 @@ Any export currently configured for Azure Data Lake in finance and operations ap
 > [!NOTE]
 > Dual Write maps will need to be enabled to continue writing data from the Human Resources environment into the Dataverse.  
 
-If a customer wants to export Human Resources data to the Data Lake, they can enable this feature after the migration to the Dynamics 365 finance and operations infrastructure is complete. For more information, see [Data lakes - Azure Architecture Center](../../azure/architecture/data-guide/scenarios/data-lake.md). 
+If a customer wants to export Human Resources data to the Data Lake, they can enable this feature after the migration to the Dynamics 365 finance and operations infrastructure is complete. For more information, see [Data lakes - Azure Architecture Center](../../azure/architecture/data-guide/scenarios/data-lake). 
 
 Customers can link multiple finance and operations apps environments to the same Data Lake, however, each environment will point to a different folder and container. Customers planning to merge environments together later should carefully plan their approach. 
  
