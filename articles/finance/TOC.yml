@@ -3394,6 +3394,8 @@
             href: localizations/emea-petty-cash.md
           - name: Cash - Local primary forms and unified reports
             href: localizations/rus-local-primary-forms-and-unified-reports.md
+          - name: Client-Bank interface and reconciliation procedure
+            href: localizations/rus-client-bank-export.md
         - name: VAT
           items:
           - name: Local specific posting of sales VAT
