@@ -17,7 +17,6 @@ ms.search.validFrom: 2017-06-20
 # Troubleshoot Store Commerce setup and installation issues
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article explains how to troubleshoot setup and installation issues in the Microsoft Dynamics 365 Commerce Store Commerce app.
 
