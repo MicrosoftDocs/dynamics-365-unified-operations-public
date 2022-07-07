@@ -2,7 +2,7 @@
 # required metadata
 
 title: Move LCS implementation projects to different Azure AD tenants
-description: This topic explains how to move your subscriptions and LCS Implementation project to a different Azure AD tenant.
+description: This article explains how to move your subscriptions and LCS Implementation project to a different Azure AD tenant.
 author: ClaudiaBetz-Haubold 
 ms.date: 11/30/2020
 ms.topic: article
@@ -33,7 +33,7 @@ You can move your subscriptions and your Microsoft Dynamics Lifecycle Services (
 - Subscriptions were accidentally purchased against the incorrect Azure AD tenant.
 
     > [!NOTE]
-    > If you're a cloud service provider, and you sell subscriptions for Finance and Operations apps to an existing customer, you must request a reseller relationship with that customer to put the subscriptions on the customer's existing Azure AD tenant. If you create a new customer record for the customer in Microsoft Partner Center, you create a new Azure AD tenant for the customer.
+    > If you're a cloud service provider, and you sell subscriptions for finance and operations apps to an existing customer, you must request a reseller relationship with that customer to put the subscriptions on the customer's existing Azure AD tenant. If you create a new customer record for the customer in Microsoft Partner Center, you create a new Azure AD tenant for the customer.
 
 - The customer changes the structure of the Azure AD tenant after the subscription is purchased.
 

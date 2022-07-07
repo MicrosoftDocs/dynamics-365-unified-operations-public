@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Inventory cost structure
-description: This topic provides information about the inventory cost structure of miscellaneous charges in inventory transactions.
+description: This article provides information about the inventory cost structure of miscellaneous charges in inventory transactions.
 author: v-nadyuz
 ms.date: 02/05/2020
 ms.topic: article
@@ -93,7 +93,7 @@ Before you can adjust transactions, you must verify that the inventory wasn't cl
 
 For more information about the adjustment of on-hand inventory, see [Adjust on-hand inventory cost values](../../supply-chain/cost-management/adjust-hand-inventory-cost-values.md).
 
-1.  Close the inventory as described in the [Close inventory](#close-inventory) section earlier in this topic.
+1.  Close the inventory as described in the [Close inventory](#close-inventory) section earlier in this article.
 2.  Go to **Inventory management** \> **Periodic tasks** \> **Closing and adjustment**.
 3.  On the Action Pane, select **Adjustment \> On-hand**.
 4.  On the Action Pane, select **Select**.
@@ -135,7 +135,7 @@ When you post an adjustment, the general ledger offset account is defined in the
 
 ### Adjust transactions
 
-1. Verify that the inventory wasn't closed. If it was closed, cancel the inventory closing as described in the [Cancel inventory closing](#cancel-inventory-closing) section earlier in this topic.
+1. Verify that the inventory wasn't closed. If it was closed, cancel the inventory closing as described in the [Cancel inventory closing](#cancel-inventory-closing) section earlier in this article.
 2. Go to **Inventory management** \> **Periodic tasks** \> **Closing and adjustment**.
 3. On the Action Pane, select **Adjustment** \> **Transactions**.
 4. On the Action Pane, select **Select**.
@@ -143,7 +143,7 @@ When you post an adjustment, the general ledger offset account is defined in the
 
     ![Adjust transactions dialog box.](media/7_Adjust_transactions.png)
 
-6. Select charges codes for items, and post the adjustment, as described in the [Adjust on-hand inventory](#adjust-on-hand-inventory) section earlier in this topic. The general ledger offset account will be defined according to the same principle.
+6. Select charges codes for items, and post the adjustment, as described in the [Adjust on-hand inventory](#adjust-on-hand-inventory) section earlier in this article. The general ledger offset account will be defined according to the same principle.
 
 ### Use a wizard to adjust item cost 
 
@@ -196,7 +196,7 @@ For more information, see [Inventory adjustment wizard](rus-inventory-adjustment
 
 On the **Settlements** page, you can view inventory cost adjustment transactions. As a result of inventory closing, receipt transactions are settled against issue transactions. After inventory closing is completed, you can open the **Cost explorer** page to view and explore the item cost structure in terms of miscellaneous charges.
 
-1. Close the inventory as described in the [Close inventory](#close-inventory) section earlier in this topic.
+1. Close the inventory as described in the [Close inventory](#close-inventory) section earlier in this article.
 2. Go to **Product information management** \> **Products** \> **Released products**.
 3. On the **Released products details** page, select an item, and then, on the Action Pane, on the **Manage Costs** tab, in the **Cost transactions** group, select **Transactions**.
 4. On the **Inventory transactions** page, select the transaction on the receipt item that you want to explore the cost structure for. Then, on the Action Pane, on the **Inventory** tab, in the **Costing** group, select **Settlements**.

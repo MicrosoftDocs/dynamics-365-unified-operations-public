@@ -44,7 +44,7 @@ As of Supply Chain Management version 10.0.21, this feature is turned on by defa
 1. Go to **Procurement and sourcing \> Setup \> Procurement and sourcing parameters**.
 1. Open the **Request for quotation** tab.
 1. Set the following options as needed:
-    - **Allow vendor questions**: Enables or disables vendor questions for RFQ cases. You must set this to *Yes* to use the features described in this topic.
+    - **Allow vendor questions**: Enables or disables vendor questions for RFQ cases. You must set this to *Yes* to use the features described in this article.
     - **Default direct response**: When you reply to a question, you can choose to reply to all vendors who received the RFQ or to reply only to the specific vendor who submitted the question. You can make choose this option each time you reply, but this setting controls the default. If you usually reply to all vendors, set this to *No*. If you usually reply to individual vendors, set this to *Yes*.
 
 ## Setting up for vendor questions

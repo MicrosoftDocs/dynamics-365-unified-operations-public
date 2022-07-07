@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure Dataverse integration
-description: This topic describes the integration between Microsoft Dataverse and Dynamics 365 Human Resources. 
+description: This article describes the integration between Microsoft Dataverse and Dynamics 365 Human Resources. 
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article

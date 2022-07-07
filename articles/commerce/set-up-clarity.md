@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up Microsoft Clarity in Dynamics 365 Commerce
-description: This topic covers how to set up Microsoft Clarity in your Dynamics 365 Commerce environment. 
+description: This article covers how to set up Microsoft Clarity in your Dynamics 365 Commerce environment. 
 author: BrianShook
 ms.date: 01/28/2022
 ms.topic: article
@@ -31,11 +31,11 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-This topic covers how to set up Microsoft Clarity in your Dynamics 365 Commerce environment. 
+This article covers how to set up Microsoft Clarity in your Dynamics 365 Commerce environment. 
 
 [Microsoft Clarity](https://clarity.microsoft.com/) is a user behavior analytics tool that can help site owners understand user interactions with their e-commerce sites. Clarity's analysis tools enable visibility using session recordings, heatmaps, and machine learning insights to review and study user interactions. 
 
-Integrating Clarity into your Dynamics 365 Commerce site is easy, just follow the steps in this topic to enable Clarity to provide you with an in-depth look at your user interactions.
+Integrating Clarity into your Dynamics 365 Commerce site is easy, just follow the steps in this article to enable Clarity to provide you with an in-depth look at your user interactions.
 
 ## Sign up for Clarity
 

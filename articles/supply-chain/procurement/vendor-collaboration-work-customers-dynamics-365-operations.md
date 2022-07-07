@@ -2,7 +2,7 @@
 # required metadata
 
 title: Vendor collaboration with customers
-description: This topic describes how you can use vendor collaboration to work with POs and monitor consignment inventory.
+description: This article describes how you can use vendor collaboration to work with POs and monitor consignment inventory.
 author: GalynaFedorova
 ms.date: 09/15/2020
 ms.topic: article
@@ -31,12 +31,12 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how you can use vendor collaboration to work with customers in Microsoft Dynamics 365 Supply Chain Management. Vendors can complete a series of business processes from the following workspaces:
+This article describes how you can use vendor collaboration to work with customers in Microsoft Dynamics 365 Supply Chain Management. Vendors can complete a series of business processes from the following workspaces:
 
 - **Purchase order confirmation** – Monitor and respond to purchase orders (POs).
 - **Vendor bidding** – View requests for quotation (RFQs), and respond to them by entering bids.
 - **Vendor information** – View and update vendor master data.
-- **Invoicing** – Work with invoices. This topic doesn't cover the **Invoicing** workspace. For more information about this workspace, see [Vendor collaboration invoicing workspace](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
+- **Invoicing** – Work with invoices. This article doesn't cover the **Invoicing** workspace. For more information about this workspace, see [Vendor collaboration invoicing workspace](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 Vendors can also monitor information about consignment inventory.
 
@@ -52,9 +52,9 @@ There are three lists in the **Purchase order confirmation** workspace:
 
 You can use the following pages to work with POs:
 
-- **Purchase orders for review** – This page contains the same information as the **Purchase orders for review** list in the workspace. See the description earlier in this topic.
+- **Purchase orders for review** – This page contains the same information as the **Purchase orders for review** list in the workspace. See the description earlier in this article.
 - **Purchase order vendor confirmation history** – This page contains all POs and all versions of POs that have been sent to the vendor. It also contains all the responses that have been returned from the vendor.
-- **Open confirmed purchase orders** This page contains the same information as the **Open confirmed purchase order** list in the workspace. See the description earlier in this topic.
+- **Open confirmed purchase orders** This page contains the same information as the **Open confirmed purchase order** list in the workspace. See the description earlier in this article.
 - **All confirmed purchase orders** – This page contains all the POs that have been confirmed. The POs that are shown on this page include POs where products or services have been received. You can use this list to monitor POs that you can send invoices for.
 
 ### Responding to POs

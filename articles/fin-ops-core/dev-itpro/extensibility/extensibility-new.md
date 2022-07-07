@@ -1,6 +1,6 @@
 ---
 title: What's new or changed for extensibility
-description: This topic provides links to topics about extensibility updates.
+description: This article provides links to topics about extensibility updates.
 author: RobinARH
 ms.date: 05/14/2019
 ms.topic: index-page
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: Platform update 4
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to extensibility updates.
+This article provides links to extensibility updates.
 
 + [Extensibility changes version 10.0.3](extensibility-changes-10-3.md)
 + [Extensibility changes version 10.0.2](extensibility-changes-10-2.md)

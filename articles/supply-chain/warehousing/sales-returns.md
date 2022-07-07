@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales returns
-description: This topic provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
+description: This article provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
 author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
+This article provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
 
 Customers can return items for various reasons. For example, an item might be defective, or it might not meet the customer's expectations. The return process starts when a customer issues a request to return an item. After the customer's request is received, a return order is created.
 
@@ -89,7 +89,7 @@ After you complete the return header, you can create return lines by using one o
 -   Create a return line by using the **Find sales order** function. We recommend that you use this function when you create a return order. The **Find sales order** function establishes a reference from the return line to the invoiced sales order line, and retrieves line details such as item number, quantity, price, discount, and cost values from the sales line. The reference helps guarantee that, when the product is returned to the company, it's valued at the same unit cost that it was sold at. The reference also validates that return orders aren't created for a quantity that exceeds the quantity that was sold on the invoice.
 
 >[!NOTE] 
->Return lines that have a reference to a sales order are handled as corrections to, or reversals of, the sale. For more information, see the "Post to the ledger" section, later in this topic.
+>Return lines that have a reference to a sales order are handled as corrections to, or reversals of, the sale. For more information, see the "Post to the ledger" section, later in this article.
 
 ### Charges
 
@@ -184,7 +184,7 @@ Before you can physically receive returned items into inventory by posting a pac
 
 [![Arrival process.](./media/salesreturn03.png)](./media/salesreturn03.png)  
 
-The process has several other variations that aren't covered in this topic. Here are some of these variations:
+The process has several other variations that aren't covered in this article. Here are some of these variations:
 
 -   Don't use the **Arrival overview** list to create an Arrival journal. Instead, manually create the Arrival journal. Return orders will have **Sales order** as the reference.
 -   If you're using Warehouse management, generate pallet transports. The return line will have a status of **Arrived** during pallet transport.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Warehouse performance Power BI content
-description: This topic describes what's included in the Warehouse performance Power BI content.
+description: This article describes what's included in the Warehouse performance Power BI content.
 author: Mirzaab 
 ms.date: 12/18/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-11-30
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes what's included in the **Warehouse performance** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
+This article describes what's included in the **Warehouse performance** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 
 ## Overview
 

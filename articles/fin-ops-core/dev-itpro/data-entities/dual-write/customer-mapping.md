@@ -1,6 +1,6 @@
 ---
 title: Integrated customer master
-description: This topic describes the integration of customer data between Finance and Operations and Dataverse.
+description: This article describes the integration of customer data between finance and operations and Dataverse.
 author: RamaKrishnamoorthy 
 ms.date: 07/15/2019
 ms.topic: article
@@ -25,9 +25,9 @@ Customer data can be mastered in more than one Dynamics 365 application. For exa
 
 ![Customer data flow.](media/dual-write-customer-data-flow.png)
 
-Customers can be broadly classified into two types: commercial/organizational customers and consumers/end users. These two types of customers are stored and handled differently in Finance and Operations and Dataverse.
+Customers can be broadly classified into two types: commercial/organizational customers and consumers/end users. These two types of customers are stored and handled differently in finance and operations and Dataverse.
 
-In Finance and Operations, both commercial/organizational customers and consumers/end users are mastered in a single table that is named **CustTable** (CustCustomerV3Entity), and they are classified based on the **Type** attribute. (If **Type** is set to **Organization**, the customer is a commercial/organizational customer, and if **Type** is set to **Person**, the customer is a consumer/end user.) The primary contact person information is handled through the SMMContactPersonEntity table.
+In finance and operations, both commercial/organizational customers and consumers/end users are mastered in a single table that is named **CustTable** (CustCustomerV3Entity), and they are classified based on the **Type** attribute. (If **Type** is set to **Organization**, the customer is a commercial/organizational customer, and if **Type** is set to **Person**, the customer is a consumer/end user.) The primary contact person information is handled through the SMMContactPersonEntity table.
 
 In Dataverse, commercial/organizational customers are mastered in the Account table and are identified as customers when the **RelationshipType** attribute is set to **Customer**. Both consumers/end users and the contact person are represented by the Contact table. To provide a clear separation between a consumer/end user and a contact person, the **Contact** table has a Boolean flag that is named **Sellable**. When **Sellable** is **True**, the contact is a consumer/end user, and quotations and orders can be created for that contact. When **Sellable** is **False**, the contact is just a primary contact person of a customer.
 
@@ -52,3 +52,4 @@ Finance and operations apps | Customer engagement apps         | Description
 [Terms of payment](mapping-reference.md#161) | msdyn_paymentterms | This template synchronizes payment terms (terms of payment) reference data, for both customers and vendors.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

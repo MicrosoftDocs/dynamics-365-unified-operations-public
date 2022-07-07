@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 for Finance and Operations version 8.1.1 (November 2018)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1.1. This version was released in November 2018.
+title: What's new or changed in Dynamics 365 Finance and Operations version 8.1.1 (November 2018)
+description: This article describes features that are either new or changed in Dynamics 365 Finance and Operations version 8.1.1. This version was released in November 2018.
 author: tonyafehr
 ms.date: 10/15/2019
 ms.topic: article
@@ -26,11 +26,11 @@ ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: Release 8.1.1
 
 ---
-# What's new or changed in Dynamics 365 for Finance and Operations version 8.1.1 (November 2018)
+# What's new or changed in Dynamics 365 Finance and Operations version 8.1.1 (November 2018)
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1.1 (November 2018). This version was released in November 2018 and has a build number of 8.1.170.
+This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations version 8.1.1 (November 2018). This version was released in November 2018 and has a build number of 8.1.170.
 
 To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail](../../../commerce/get-started/whats-new.md).
 
@@ -46,7 +46,7 @@ For information about the bug fixes included in each of the updates that are par
 
 ## Platform update 21
 
-Microsoft Dynamics 365 for Finance and Operations version 8.1.1 includes Platform update 21. To learn more about Platform update 21, see [What's new or changed in Dynamics 365 for Finance and Operations platform update 21 (November 2018)](whats-new-platform-update-21.md).
+Microsoft Dynamics 365 Finance and Operations version 8.1.1 includes Platform update 21. To learn more about Platform update 21, see [What's new or changed in Dynamics 365 Finance platform update 21 (November 2018)](whats-new-platform-update-21.md).
 
 ## Ledger settlements
 
@@ -58,7 +58,7 @@ During the tax settlement process, the system will generate offset tax transacti
 
 ## Extensibility enhancements
 
-In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility including enhancements to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1.1](../../dev-itpro/extensibility/extensibility-changes-811.md)
+In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility including enhancements to enumerations, metadata, and methods. For detailed information, see [Extensibility changes in Dynamics 365 Finance version 8.1.1](../../dev-itpro/extensibility/extensibility-changes-811.md)
 
 ## VAT declaration for Russia
 
@@ -66,3 +66,4 @@ In this release, you can review the ER configurations for generating VAT declara
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

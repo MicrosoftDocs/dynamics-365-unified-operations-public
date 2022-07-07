@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cross-docking from production orders to outbound docks
-description: This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.
+description: This article describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.
+This article describes how to manage the process of cross-docking material that is being reported as finished from a production line to an outbound transportation dock.
 
 ## Introduction
 

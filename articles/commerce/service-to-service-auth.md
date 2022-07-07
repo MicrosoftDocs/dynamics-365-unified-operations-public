@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure Service-to-Service authentication
-description: This topic describes how to configure Service-to-Service authentication in Microsoft Dynamics 365 Commerce to securely call service APIs for ratings and reviews.
+description: This article describes how to configure Service-to-Service authentication in Microsoft Dynamics 365 Commerce to securely call service APIs for ratings and reviews.
 author: gvrmohanreddy
 ms.date: 01/12/2022
 ms.topic: article
@@ -17,9 +17,9 @@ ms.search.validFrom: 2017-06-20
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to configure Service-to-Service (S2S) authentication in Microsoft Dynamics 365 Commerce to securely call service application programming interfaces (APIs) for ratings and reviews.
+This article describes how to configure Service-to-Service (S2S) authentication in Microsoft Dynamics 365 Commerce to securely call service application programming interfaces (APIs) for ratings and reviews.
 
-Dynamics 365 Commerce offers [ratings and reviews](ratings-reviews-overview.md) as an omni-channel solution. This solution enables access to service APIs from outside Commerce, so that various tasks can be performed. These tasks include importing ratings and reviews from your external system into Commerce, and exporting ratings and reviews from Commerce. To enable Commerce to securely call ratings and reviews service APIs, you must first configure S2S authentication by completing the procedures in this topic.
+Dynamics 365 Commerce offers [ratings and reviews](ratings-reviews-overview.md) as an omni-channel solution. This solution enables access to service APIs from outside Commerce, so that various tasks can be performed. These tasks include importing ratings and reviews from your external system into Commerce, and exporting ratings and reviews from Commerce. To enable Commerce to securely call ratings and reviews service APIs, you must first configure S2S authentication by completing the procedures in this article.
 
 ## Add a new app registration
 

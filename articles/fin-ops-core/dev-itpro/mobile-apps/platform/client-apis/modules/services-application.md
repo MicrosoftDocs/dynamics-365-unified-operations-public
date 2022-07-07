@@ -2,7 +2,7 @@
 title: Application module
 description: An application is a unit of runtime execution with sandboxing around concepts and data used inside of it.
 author: tonyafehr
-ms.date: 09/17/2019
+ms.date: 05/26/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
@@ -12,6 +12,7 @@ ms.author: tfehr
 # Application module
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 An application is a unit of runtime execution with sandboxing around concepts and data used inside of it. Each application consists of pages, actions, data queries, and logic that glue them together. An application is primarily described with a declarative metadata system, and can have an accompanying imperative extension model.
 

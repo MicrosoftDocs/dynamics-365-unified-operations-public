@@ -164,7 +164,7 @@ The **Help** menu is available to all users and includes the following commands.
 
 | Command | Description                                                              |
 |---------|--------------------------------------------------------------------------|
-| Help    | Open the help topic page for financial reporting. |
+| Help    | Open the help article page for financial reporting. |
 |         |                                                                          |
 
 ## Report Designer toolbar buttons

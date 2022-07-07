@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 globalization services
-description: This topic provides an overview of Microsoft Dynamics 365 globalization services.
+description: This article provides an overview of Microsoft Dynamics 365 globalization services.
 author: JaneA07
 ms.date: 04/12/2021
 ms.topic: overview

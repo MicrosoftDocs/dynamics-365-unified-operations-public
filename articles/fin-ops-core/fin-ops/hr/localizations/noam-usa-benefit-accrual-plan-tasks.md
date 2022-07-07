@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up benefit accrual plans
-description: This topic describes the process for setting up benefit accrual plans. It includes information about how to gather information and enroll workers.
+description: This article describes the process for setting up benefit accrual plans. It includes information about how to gather information and enroll workers.
 author: andreabichsel
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes the process for setting up benefit accrual plans. It includes information about how to gather information and enroll workers.
+This article describes the process for setting up benefit accrual plans. It includes information about how to gather information and enroll workers.
 
 For more information about benefit accrual plans, see [Payroll data updates FAQ](noam-usa-payroll-data-updates.md).
 

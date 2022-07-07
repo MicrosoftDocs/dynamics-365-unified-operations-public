@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create checks that have Blank status 
-description: This topic explains how to create blank checks for a bank account. 
+description: This article explains how to create blank checks for a bank account. 
 author: abruer
 ms.date: 10/26/2017
 ms.topic: index-page
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to create blank checks. For example, you might create a blank check to record a check that has been damaged and can't be used for payment.
+This article explains how to create blank checks. For example, you might create a blank check to record a check that has been damaged and can't be used for payment.
 
 On the **Checks** page, you perform maintenance tasks for checks. For example, you can create new check numbers and delete checks. You can also create checks that have a status of **Blank**. After blank checks are created, they can't be deleted or reused in the system.
 

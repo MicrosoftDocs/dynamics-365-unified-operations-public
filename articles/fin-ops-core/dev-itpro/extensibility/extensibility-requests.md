@@ -1,6 +1,6 @@
 ---
 title: Extensibility requests
-description: This topic explains how to file a request for additional extension points for Finance and Operations. 
+description: This article explains how to file a request for additional extension points for Finance and Operations. 
 author: FrankDahl
 ms.date: 06/02/2018
 ms.topic: article

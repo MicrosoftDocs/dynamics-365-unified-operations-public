@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configurable posting profiles for banks and remittance types
-description: This topic provides information about how to configure posting profiles for banks and remittance types.
+description: This article provides information about how to configure posting profiles for banks and remittance types.
 author: ilkond
 ms.date: 03/09/2020
 ms.topic: article

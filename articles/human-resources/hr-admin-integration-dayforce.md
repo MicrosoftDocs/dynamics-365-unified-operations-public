@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure integration with Dayforce
-description: This topic describes the required configuration steps needed for the integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce.
+description: This article describes the required configuration steps needed for the integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-The integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce relies on several configuration steps that are described in this topic. You must configure the integration in both Human Resources and Dayforce before you can process a pay run.
+The integration between Microsoft Dynamics 365 Human Resources and Ceridian Dayforce relies on several configuration steps that are described in this article. You must configure the integration in both Human Resources and Dayforce before you can process a pay run.
 
 When you use a service such as Dayforce to complete pay runs, you must enable the integration in Human Resources. The integration requires specific data from Human Resources. Therefore, you must verify that data that is mapped to Dayforce is configured in Human Resources in a manner that supports the integration. The integration uses the following broad categories of data:
 
@@ -43,7 +43,7 @@ When you use a service such as Dayforce to complete pay runs, you must enable th
 - Payroll data, such as pay cycles, pay periods, and earning codes
 - Worker data
 
-This topic describes the steps that you must follow to enable the integration and explains the types of data and the configuration details that the integration requires.
+This article describes the steps that you must follow to enable the integration and explains the types of data and the configuration details that the integration requires.
 
 ## Enable the integration
 

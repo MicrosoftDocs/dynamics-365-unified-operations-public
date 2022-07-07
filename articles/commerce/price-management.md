@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail sales price management
-description: This topic describes the concepts for creating and managing sales prices in Dynamics 365 Commerce.
+description: This article describes the concepts for creating and managing sales prices in Dynamics 365 Commerce.
 author: ShalabhjainMSFT
 ms.date: 07/28/2021
 ms.topic: article
@@ -29,18 +29,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information about the process of creating and managing sales prices in Dynamics 365 Commerce. It focuses on the concepts that are involved in this process, and on the effects of the various configuration options for sales prices.
+This article provides information about the process of creating and managing sales prices in Dynamics 365 Commerce. It focuses on the concepts that are involved in this process, and on the effects of the various configuration options for sales prices.
 
 ## Terminology
 
-The following terms are used in this topic.
+The following terms are used in this article.
 
 | Term | Definition, usage, and notes |
 |---|---|
-| Price | The single unit amount that a product sells for in a point of sale (POS) client or on a sales order. In this topic, the term *price* always refers to the sales price, not the inventory price or cost price. |
+| Price | The single unit amount that a product sells for in a point of sale (POS) client or on a sales order. In this article, the term *price* always refers to the sales price, not the inventory price or cost price. |
 | Base price | The price that is set in the **Price** field on a released product. |
 | Trade agreement price | The price that is set on a product or variant by using a trade agreement of the **Price (sales)** type. |
-| Best price | When more than one price or discount can be applied to a product, the smallest price amount and/or the largest discount amount that produces the lowest possible net amount that the customer must pay. In this topic, the concept of best price is always referred to as "the best price." This best price differs from and should not be confused with the **Best price** enumeration value for a discount's concurrency mode. |
+| Best price | When more than one price or discount can be applied to a product, the smallest price amount and/or the largest discount amount that produces the lowest possible net amount that the customer must pay. In this article, the concept of best price is always referred to as "the best price." This best price differs from and should not be confused with the **Best price** enumeration value for a discount's concurrency mode. |
 
 ## Price groups
 
@@ -101,7 +101,7 @@ To use pricing priority for prices, you must assign a pricing priority to a pric
 
 The pricing priority feature was introduced to support the scenario where a retailer wants to apply higher prices in a specific set of stores. For example, a retailer has defined regional prices for the east coast of the United States but wants higher prices for some products in New York City stores, because it costs more to sell some products in the city, and/or because the local market will bear a higher price.
 
-As was described in the "Best price" section of this topic, the pricing engine typically selects the lower of two prices. Therefore, the retailer is usually prevented from using the higher of two prices in a store that has both the East coast and New York price groups. To resolve this issue before the pricing priority feature was introduced, the retailer had to define prices for every product two times and not assign both price groups. Alternatively, the retailer had to create extra price groups to isolate the products that have higher prices from products that have the usual, lower prices.
+As was described in the "Best price" section of this article, the pricing engine typically selects the lower of two prices. Therefore, the retailer is usually prevented from using the higher of two prices in a store that has both the East coast and New York price groups. To resolve this issue before the pricing priority feature was introduced, the retailer had to define prices for every product two times and not assign both price groups. Alternatively, the retailer had to create extra price groups to isolate the products that have higher prices from products that have the usual, lower prices.
 
 However, the pricing priority feature lets the retailer create a pricing priority for store prices that is higher than the pricing priority for regional prices. Alternatively, the retailer can create a pricing priority just for store prices and leave regional prices at the default pricing priority, which is 0 (zero). Both setups help guarantee that store prices will always be used before regional prices.
 
@@ -155,7 +155,7 @@ By using the trade agreement journal, you can create sales price trade agreement
 
 A **Table** sales price trade agreement is for a single customer that is set directly on the trade agreement. This scenario isn't a typical business-to-consumer (B2C) scenario. However, if it occurs, the pricing engine uses **Table** trade agreements when it determines price.
 
-A **Group** sales price trade agreement is the type that is most often used with. Outside Commerce, **Group** sales price trade agreements are for a simple customer group. However, in Commerce, the concept of a customer group has been extended so that it's a more generic price group. A price group can be linked to a channel, affiliation, loyalty program, or catalog. For detailed information about price groups, see the "Price groups" section earlier in this topic.
+A **Group** sales price trade agreement is the type that is most often used with. Outside Commerce, **Group** sales price trade agreements are for a simple customer group. However, in Commerce, the concept of a customer group has been extended so that it's a more generic price group. A price group can be linked to a channel, affiliation, loyalty program, or catalog. For detailed information about price groups, see the "Price groups" section earlier in this article.
 
 > [!NOTE]
 > A trade agreement price is always used before the base price.

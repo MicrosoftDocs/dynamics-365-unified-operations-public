@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create alert rules
-description: This topic provides information about alerts and explains how to create an alert rule.
+description: This article provides information about alerts and explains how to create an alert rule.
 author: RichdiMSFT
 ms.date: 10/08/2020
 ms.topic: article
@@ -80,7 +80,7 @@ On the **Alert me with** FastTab of the **Create alert rule** dialog box, you ca
 
 ## Alerts as business events
 
-You can send alerts externally using the business events framework. When creating an alert, set **Organization-wide** to **No** and set **Send externally** to **Yes**. After you have the alert triggering the business event, you can trigger a flow built in Power Automate using the **When a business event occurs** trigger on the Finance and Operations connector, or explicitly send the event to a business events endpoint via the **Business events catalog**.
+You can send alerts externally using the business events framework. When creating an alert, set **Organization-wide** to **No** and set **Send externally** to **Yes**. After you have the alert triggering the business event, you can trigger a flow built in Power Automate using the **When a business event occurs** trigger on the finance and operations connector, or explicitly send the event to a business events endpoint via the **Business events catalog**.
 
 ## Create an alert rule
 

@@ -1,6 +1,6 @@
 ---
 title: Create a custom view in POS
-description: This topic explains how to create a custom view in Point of Sale (POS).
+description: This article explains how to create a custom view in Point of Sale (POS).
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../../../includes/banner.md)]
 
-This topic explains how to create a custom view in Point of Sale (POS). It applies to version 10.0.18 and later of the Retail software development kit (SDK).
+This article explains how to create a custom view in Point of Sale (POS). It applies to version 10.0.18 and later of the Retail software development kit (SDK).
 
 Custom views in POS are a great way to add new functionality to POS. This approach works best in scenarios where you want to support more scenarios in POS. If you want to extend existing POS workflows, a custom dialog box is a better approach.
 

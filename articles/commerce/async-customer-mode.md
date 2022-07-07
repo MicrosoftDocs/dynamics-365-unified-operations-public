@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asynchronous customer creation mode
-description: This topic describes the asynchronous customer creation mode in Microsoft Dynamics 365 Commerce.
+description: This article describes the asynchronous customer creation mode in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 12/10/2021
 ms.topic: article
@@ -19,7 +19,7 @@ ms.search.validFrom: 2021-12-17
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the asynchronous customer creation mode in Microsoft Dynamics 365 Commerce.
+This article describes the asynchronous customer creation mode in Microsoft Dynamics 365 Commerce.
 
 In Commerce, there are two modes of customer creation: synchronous (or sync) and asynchronous (or async). By default, customers are created synchronously. In other words, they are created in Commerce headquarters in real time. The sync customer creation mode is beneficial because new customers are immediately searchable across channels. However, it also has a drawback. Because it generates [Commerce Data Exchange: Real-time Service](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) calls to Commerce headquarters, performance can be affected if many concurrent customer creation calls are made.
 

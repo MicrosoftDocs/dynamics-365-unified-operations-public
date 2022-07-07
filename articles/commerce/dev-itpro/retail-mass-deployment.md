@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mass deployment of legacy self-service components
-description: This topic explains how you can use self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. 
+description: This article explains how you can use self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. 
 author: jashanno
 ms.date: 08/23/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jashanno
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Application update 3
 
 [!include [banner](../includes/banner.md)]
 
-This topic is for legacy self-service installers. It explains how you can use legacy self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. This topic will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available. 
+This article is for legacy self-service installers. It explains how you can use legacy self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. This article will be updated as the feature is developed and more functionality becomes available. Currently, only the capability for silent servicing updates is available. 
 
 ## Delimiters for mass deployment
 
@@ -52,7 +52,7 @@ The following table shows the delimiters that can currently be used in execution
 
 ### Before you begin
 
-Note that silent servicing maintains all components that are currently installed. If any configuration is still required, complete it before you begin to follow the instructions in this topic.
+Note that silent servicing maintains all components that are currently installed. If any configuration is still required, complete it before you begin to follow the instructions in this article.
 
 ### Examples of commands for silent servicing
 
@@ -81,7 +81,7 @@ StoreSystemSetup_V72.exe -S -C "C:\Temp\StoreSystemSetup_V72_Houston.xml" -SkipP
 
 ### Before you begin
 
-To use this functionality, you must be using version 7.3 or later. It's assumed that the configuration of all stores, registers, and devices, and other configurations in the headquarters have already been completed. If any configuration is still required, complete it before you follow the instructions in this topic.
+To use this functionality, you must be using version 7.3 or later. It's assumed that the configuration of all stores, registers, and devices, and other configurations in the headquarters have already been completed. If any configuration is still required, complete it before you follow the instructions in this article.
 
 ### Examples of commands for silent mass deployment
 

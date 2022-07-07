@@ -69,7 +69,7 @@ It is easier to determine the service-template lines that you want to copy if
 you have grouped the templates under names that reflect the use of the
 templates.
 
-## Related topics
+## Related articles
 
 [Copy service templates lines](copy-service-template-lines.md)
 

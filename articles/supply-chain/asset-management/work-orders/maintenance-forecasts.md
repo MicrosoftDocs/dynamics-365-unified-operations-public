@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance forecasts
-description: This topic explains maintenance forecasts in Asset Management.
+description: This article explains maintenance forecasts in Asset Management.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -37,7 +37,7 @@ When you create a work order, you create work order jobs that have related asset
 
 You might be able to add forecast lines to a work order or delete them from a work order. The setup of the work order lifecycle state, the related project type, and the stage rules that are related to the project type determine whether you can add or edit forecast lines. For more information about work order lifecycle states and related project stages, see [Forecasts, work orders, and projects](../integration-to-project-management-and-accounting/forecasts-work-orders-and-projects.md).
 
-1. Select **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
+1. Select **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
 
 2. Select the work order in the list, and then, on the Action Pane > **Work order** tab > the **Project** group, select **Forecast**. The **Work order maintenance forecast** page shows forecast lines from the maintenance job type that is selected on the work order job.
 
@@ -112,7 +112,7 @@ The illustration below shows an example of the **Work order maintenance forecast
 
 ## Automatic update of work order forecasts
 
-If hour costs, item costs, and expenses are updated in other modules in Microsoft Dynamics 365 for Finance and Operations, work order forecasts in Asset Management can automatically be updated to reflect those changes. This capability helps guarantee that the latest cost prices are always used in your work order forecasts. You can also do similar updates for [maintenance job type forecasts](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
+If hour costs, item costs, and expenses are updated in other modules, work order forecasts in Asset Management can automatically be updated to reflect those changes. This capability helps guarantee that the latest cost prices are always used in your work order forecasts. You can also do similar updates for [maintenance job type forecasts](../setup-for-work-orders/job-groups-and-job-types-variants-trades-and-checklists.md).
 
 1. Select **Asset management** > **Periodic** > **Forecast** > **Update work order forecast**.
 

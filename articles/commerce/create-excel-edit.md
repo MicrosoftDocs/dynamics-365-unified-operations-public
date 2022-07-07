@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create an Excel workbook to edit retail transactions
-description: This topic describes how to create an Excel workbook so that you can edit retail transactions in Microsoft Dynamics 365 Commerce.
+description: This article describes how to create an Excel workbook so that you can edit retail transactions in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 11/04/2020
 ms.topic: index-page
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create an Excel workbook so that you can edit retail transactions in Microsoft Dynamics 365 Commerce.
+This article describes how to create an Excel workbook so that you can edit retail transactions in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up a call center channel
-description: This topic describes how to create a new call center channel in Microsoft Dynamics 365 Commerce.
+description: This article describes how to create a new call center channel in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 03/13/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to create a new call center channel in Microsoft Dynamics 365 Commerce.
+This article describes how to create a new call center channel in Microsoft Dynamics 365 Commerce.
 
 ## Overview
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: General ledger in the public sector overview
-description: This topic describes the General ledger functionality that's available for organizations in the public sector.
+description: This article describes the General ledger functionality that's available for organizations in the public sector.
 author: v-kiarnd
 ms.date: 07/25/2019
 ms.topic: overview
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the General ledger functionality that's available for organizations in the public sector.
+This article describes the General ledger functionality that's available for organizations in the public sector.
 
 ## How do General ledger parameters need to be set for public sector organizations?
 

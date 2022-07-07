@@ -1,6 +1,6 @@
 ---
 title: Global Inventory Accounting home page
-description: This topic is the home page for the Global Inventory Accounting Add-in for Microsoft Dynamics 365 Supply Chain Management.
+description: This article is the home page for the Global Inventory Accounting Add-in for Microsoft Dynamics 365 Supply Chain Management.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article

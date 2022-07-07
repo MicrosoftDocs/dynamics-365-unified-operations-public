@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sync the tax setup from the Tax Calculation Service to Dynamics 365 Finance
-description: This topic explains how to sync tax setup master data from the Tax Calculation Service to Microsoft Dynamics 365 Finance.
+description: This article explains how to sync tax setup master data from the Tax Calculation Service to Microsoft Dynamics 365 Finance.
 author: wangchen
 ms.date: 01/05/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to sync tax setup master data from the Tax Calculation Service to Microsoft Dynamics 365 Finance.
+This article explains how to sync tax setup master data from the Tax Calculation Service to Microsoft Dynamics 365 Finance.
 
 After you complete the required setup steps in [Get started with Tax Calculation](global-get-started-with-tax-calculation-service.md), the following tax setup data is automatically synced from the Tax Calculation Service to Finance.
 

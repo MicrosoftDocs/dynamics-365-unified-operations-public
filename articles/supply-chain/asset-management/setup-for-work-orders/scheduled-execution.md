@@ -2,7 +2,7 @@
 # required metadata
 
 title: Scheduled execution
-description: This topic explains scheduled execution in Asset Management.
+description: This article explains scheduled execution in Asset Management.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article

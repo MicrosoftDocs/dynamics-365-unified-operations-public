@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create service object relations   
-description: This topic describes how to create service object relations for a service agreement and a service order.
+description: This article describes how to create service object relations for a service agreement and a service order.
 author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
@@ -31,13 +31,13 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes how to create service object relations for a service agreement and a service order. When you a create service object relation, you associate the service object to a service agreement or service order. When a customer requests service for an item that is a service object, you can select the service object from the list of service object relations.
+This article describes how to create service object relations for a service agreement and a service order. When you a create service object relation, you associate the service object to a service agreement or service order. When a customer requests service for an item that is a service object, you can select the service object from the list of service object relations.
 
 ## Create a service object relation for a service agreement
 
 Use the following steps to create a service object relation for a service agreement:
 
-1.  Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+1.  Click **Service management** \> **Service agreements** \> **Service agreements**.
 
 2.  In the **Service agreements** list, select an existing service agreement, or click **New** to create a new service agreement.
 
@@ -51,7 +51,7 @@ Use the following steps to create a service object relation for a service agreem
 
 Use the following steps to create a service object relation for a service order:
 
-1.  Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.
+1.  Click **Service management** \> **Service orders** \> **Service orders**.
 
 2.  In the **Service orders** list, select an existing service order, or create a new service order.
 

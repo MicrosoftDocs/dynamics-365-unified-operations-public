@@ -2,7 +2,7 @@
 # required metadata
 
 title: Master planning for site coverage, warehouse not mandatory
-description: This topic describes how an item that has the site dimension set for coverage is planned.
+description: This article describes how an item that has the site dimension set for coverage is planned.
 author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how an item that has the site dimension set for coverage is planned.
+This article describes how an item that has the site dimension set for coverage is planned.
 
 This master planning scenario involves the following conditions:
 

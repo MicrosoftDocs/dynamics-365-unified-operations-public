@@ -1,6 +1,6 @@
 ---
 title: Create asynchronous Commerce (CRT) APIs in your business logic
-description: This topic explains how to create Commerce (CRT) application programming interfaces (APIs) (that is, requests) that run asynchronously.
+description: This article explains how to create Commerce (CRT) application programming interfaces (APIs) (that is, requests) that run asynchronously.
 author: mugunthanm
 ms.date: 03/16/2022
 ms.topic: article
@@ -17,9 +17,9 @@ ms.dyn365.ops.version: 10.0.10
 [!include [banner](../../includes/banner.md)]
 
 > [!NOTE]
-> This topic applies to Microsoft Dynamics 365 Commerce version 10.0.10 and later.
+> This article applies to Microsoft Dynamics 365 Commerce version 10.0.10 and later.
 
-This topic explains how to create new business logic (application programming interfaces, or APIs) for the Commerce Runtime (CRT) by using the new asynchronous framework. The Commerce API framework now supports an asynchronous programming model for extensions and out-of-box Commerce handlers.
+This article explains how to create new business logic (application programming interfaces, or APIs) for the Commerce Runtime (CRT) by using the new asynchronous framework. The Commerce API framework now supports an asynchronous programming model for extensions and out-of-box Commerce handlers.
 
 Before this framework enhancement was added, requests could be run only synchronously. Long operations, like input/output (I/O) operations, database queries, or network requests, blocked the execution thread. Now that support for the asynchronous model has been added to the Commerce runtime (CRT), you can use asynchronous versions of these operations. Asynchronous requests unblock the execution thread.
 

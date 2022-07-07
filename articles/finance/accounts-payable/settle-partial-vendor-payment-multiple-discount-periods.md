@@ -2,7 +2,7 @@
 # required metadata
 
 title: Settle a partial vendor payment that has multiple discount periods
-description: This topic walks you through a scenario where multiple partial payments are made to a vendor that offers multiple cash discounts. 
+description: This article walks you through a scenario where multiple partial payments are made to a vendor that offers multiple cash discounts. 
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic walks you through a scenario where multiple partial payments are made to a vendor that offers multiple cash discounts. 
+This article walks you through a scenario where multiple partial payments are made to a vendor that offers multiple cash discounts. 
 
 Vendor 3054 offers Fabrikam a cash discount of 2 percent if an invoice is paid in five days and a cash discount of 1 percent if the invoice is paid in 14 days.
 

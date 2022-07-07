@@ -2,7 +2,7 @@
 # required metadata
 
 title: Design an ER format to keep rows together on the same Excel page
-description: This topic explains how to design an Electronic reporting (ER) format that keeps rows together on the same Microsoft Excel page.
+description: This article explains how to design an Electronic reporting (ER) format that keeps rows together on the same Microsoft Excel page.
 author: NickSelin
 ms.date: 02/28/2022
 ms.topic: article
@@ -32,11 +32,11 @@ ms.dyn365.ops.version: Version 10.0.26
 [!include [banner](../includes/banner.md)]
 
 
-This topic explains how a user in the System Administrator or Electronic Reporting Functional Consultant role can configure an [Electronic reporting (ER)](general-electronic-reporting.md) [format](er-overview-components.md#format-component) that generates outbound documents in Microsoft Excel and manage document pagination so that rows that are created are kept on the same page.
+This article explains how a user in the System Administrator or Electronic Reporting Functional Consultant role can configure an [Electronic reporting (ER)](general-electronic-reporting.md) [format](er-overview-components.md#format-component) that generates outbound documents in Microsoft Excel and manage document pagination so that rows that are created are kept on the same page.
 
 In this example, you will modify the Microsoft-provided ER format that is used to print free text invoices in Excel. Your modifications will let you manage the pagination of a generated free text invoice report so that all the rows of a single invoice line are kept on the same page when possible.
 
-The procedures in this topic can be completed in the **USMF** company. No coding is required.
+The procedures in this article can be completed in the **USMF** company. No coding is required.
 
 In this example, you will create the required ER [configurations](general-electronic-reporting.md#Configuration) for the **Litware, Inc.** sample company. Make sure that the configuration provider for the **Litware, Inc.** (`http://www.litware.com`) sample company is listed for the ER framework, and that it's marked as **Active**. If this configuration provider isn't listed, or if it isn't marked as **Active**, follow the steps in [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
@@ -78,7 +78,7 @@ Follow the steps in [Configure a format destination for on-screen preview](er-qu
 
     ![Reviewing the pagination of the generated free text invoice in the Excel desktop application.](./media/er-keep-excel-rows-together-invoice1.gif)
 
-The remaining procedures in this topic show how you can tune the standard ER format to improve the look and readability of the invoice report by keeping all the content for a single invoice line on the same page.
+The remaining procedures in this article show how you can tune the standard ER format to improve the look and readability of the invoice report by keeping all the content for a single invoice line on the same page.
 
 ## Create a custom format
 

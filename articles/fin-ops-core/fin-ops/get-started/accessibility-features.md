@@ -2,7 +2,7 @@
 # required metadata
 
 title: Accessibility features
-description: This topic describes the functionality that is designed to help users who have various disabilities.
+description: This article describes the functionality that is designed to help users who have various disabilities.
 author: TLeforMicrosoft
 ms.date: 12/02/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 7.3
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic describes the functionality that is designed to help users who have various disabilities use this app. For example, there are features for people who use sight-assistive technologies such as Microsoft Windows Narrator.
+This article describes the functionality that is designed to help users who have various disabilities use this app. For example, there are features for people who use sight-assistive technologies such as Microsoft Windows Narrator.
 
 ## Windows Narrator and keyboard-only access
 
@@ -54,7 +54,7 @@ For more information, see [Navigation search](navigation-search.md).
 
 ## Action search for keyboard-only users or for heads-down data entry
 
-Every action that is provided on a page can be accessed from a keyboard, via the tab sequence. Information about the tab sequence is provided later in this topic. To run actions more directly, you can use the action search functionality.
+Every action that is provided on a page can be accessed from a keyboard, via the tab sequence. Information about the tab sequence is provided later in this article. To run actions more directly, you can use the action search functionality.
 
 ### Example
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create billing schedules
-description: This topic explains how to create, delete, and edit billing schedules.
+description: This article explains how to create, delete, and edit billing schedules.
 author: JodiChristiansen
 ms.date: 02/09/2022
 ms.topic: article
@@ -89,7 +89,7 @@ To remove an item from a billing schedule, follow these steps.
 2. On the **Billing schedule lines** FastTab, select the line to delete, and then select **Remove**.
 3. Select **Save**.
 
-The rest of this topic describes the actions and details that are available for lines on the **Billing schedule lines** FastTab.
+The rest of this article describes the actions and details that are available for lines on the **Billing schedule lines** FastTab.
 
 ## Billing schedule line actions
 

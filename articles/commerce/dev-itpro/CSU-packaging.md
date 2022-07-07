@@ -1,8 +1,8 @@
 ---
 title: Create a Cloud Scale Unit extension package
-description: This topic describes how to create an extension package for Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU).
+description: This article describes how to create an extension package for Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU).
 author: mugunthanm
-ms.date: 04/21/2022
+ms.date: 06/01/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: v-chgriffin
@@ -15,8 +15,9 @@ ms.dyn365.ops.version: AX 10.0.25
 # Create a Cloud Scale Unit extension package
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-This topic describes how to create an extension package for Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU). 
+This article describes how to create an extension package for Microsoft Dynamics 365 Commerce Cloud Scale Unit (CSU). 
 
 A CSU extension package contains the extension code for the following components:
 
@@ -32,9 +33,17 @@ To create a CSU package, choose one of the following options, and follow the ste
 ### Option 1: Download the sample scale unit packaging project from GitHub
 
 1. Clone or download the scale unit packaging project from [Dynamics365 Commerce ScaleUnit Samples](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit). Select the correct release branch version for your software development kit (SDK)/application release. For detailed information about how to clone a project, see [Download Retail SDK samples and reference packages from GitHub and NuGet](retail-sdk/sdk-github.md).
-1. Add the extension CRT, Retail Server, channel database, and CPOS extension projects as a project reference to the scale unit packaging project.
-1. If the CRT or Retail Server extension depends on any assemblies to run, include those assemblies as a project reference in the extension project. The packaging will include these assemblies in the **ext** folder. Don't add the dependent assemblies to the **CommerceRuntime.Ext.config** file, because that approach might cause runtime errors.
-1. Build the scale unit project. The project will generate the **CloudScaleUnitExtensionPackage.zip** output package in the project bin output folder. The **CloudScaleUnitExtensionPackage.zip** package can then be uploaded to Microsoft Lifecycle Services (LCS) and deployed to CSU. In the Visual Studio NuGet package manager, Select the correct **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet version for your SDK/application version.
+1. Add the extension CRT, Retail Server, channel database, Payment, and CPOS extension projects as a project reference to the scale unit packaging project.
+1. If the CRT, Retail Server, or Payment extension depends on any assemblies or packages to run, include those assemblies as a project reference in the extension project. The packaging will include these assemblies in the **ext** folder. Don't add the dependent assemblies to the **CommerceRuntime.Ext.config** file, because that approach might cause runtime errors.
+1. If you must include any configuration or setting values in the **CommerceRuntime.Ext.config** file, edit the scale unit packaging project file, and add the **CommerceRuntimeExtensionSettings** property, as shown in the following example.
+
+    ```XML
+    <CommerceRuntimeExtensionSettings Include="ext.YourKeyName">
+        <Value>samplevalue</Value>
+    </CommerceRuntimeExtensionSettings>
+    ```
+
+1. Build the scale unit project. The project will generate the **CloudScaleUnitExtensionPackage.zip** output package in the project bin output folder. The **CloudScaleUnitExtensionPackage.zip** package can then be uploaded to Microsoft Dynamics Lifecycle Services (LCS) and deployed to CSU. In the Visual Studio NuGet package manager, select the correct **Microsoft.Dynamics.Commerce.Sdk.ScaleUnit** NuGet version for your SDK/application version.
 
 ### Option 2: Create a new scale unit packaging project
 
@@ -49,8 +58,16 @@ To create a CSU package, choose one of the following options, and follow the ste
         </packageSources>
     ```
 
-1. Add the extension CRT, Retail Server, channel database, and CPOS extension projects as a project reference to the scale unit packaging project.
-1. If the CRT or Retail Server extension depends on any assemblies to run, include those assemblies as a project reference in the extension project. The packaging will include these assemblies in the **ext** folder. Don't add the dependent assemblies to the **CommerceRuntime.Ext.config** file, because that approach might cause runtime errors.
+1. Add the extension CRT, Retail Server, channel database, Payment, and CPOS extension projects as a project reference to the CSU packaging project.
+1. If the CRT, Retail Server, or Payment extension depends on any assemblies to run, include those assemblies as a project reference in the extension project. The packaging will include these assemblies in the **ext** folder. Don't add the dependent assemblies to the **CommerceRuntime.Ext.config** file, because that approach might cause runtime errors.
+2. If you must include any configuration or setting values in the **CommerceRuntime.Ext.config** file, edit the CSU packaging project file, and add the **CommerceRuntimeExtensionSettings** property, as shown in the following example.
+ 
+    ```XML
+    <CommerceRuntimeExtensionSettings Include="ext.YourKeyName">
+        <Value>samplevalue</Value>
+    </CommerceRuntimeExtensionSettings>
+    ```
+
 1. Build the scale unit project. The project will generate the **CloudScaleUnitExtensionPackage.zip** output package in the project bin output folder. The **CloudScaleUnitExtensionPackage.zip** package can then be uploaded to LCS and deployed to CSU.
 
 The CRT extension configuration file (**Web.Config**) is generated by the scale unit packaging project. You don't have to manually create the extension configuration files.

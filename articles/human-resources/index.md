@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 
 
-This topic provides a list of the help topics and other resources in Dynamics 365 Human resources. 
+This article provides a list of the help topics and other resources in Dynamics 365 Human resources. 
 
 Select a feature area to learn more about it.
 

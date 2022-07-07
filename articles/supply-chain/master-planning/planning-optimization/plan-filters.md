@@ -2,7 +2,7 @@
 # required metadata
 
 title: Apply filters to a plan
-description: This topic explains how to use filters on a plan when the Planning Optimization functionality is used. 
+description: This article explains how to use filters on a plan when the Planning Optimization functionality is used. 
 author: t-benebo
 ms.date: 01/08/2020
 ms.topic: article

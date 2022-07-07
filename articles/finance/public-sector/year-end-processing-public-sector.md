@@ -2,7 +2,7 @@
 # required metadata
 
 title: Year-end processing in the public sector
-description: This topic provides information about year-end processing for public sector organizations.
+description: This article provides information about year-end processing for public sector organizations.
 author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.search.form: PurchYearEndClose
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 19601
 ms.assetid: ba9a7abc-bd18-47c2-b745-96cdcec8ac98
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about year-end processing for public sector organizations.
+This article provides information about year-end processing for public sector organizations.
 
-This topic describes the year-end functionality available for the public sector. At the end of a fiscal year, you must generate closing transactions and prepare your accounts for the next fiscal year.  Public sector clients have the following capabilities:
+This article describes the year-end functionality available for the public sector. At the end of a fiscal year, you must generate closing transactions and prepare your accounts for the next fiscal year.  Public sector clients have the following capabilities:
 
 -   Select accounts by fund for year-end closing.
 -   Close funds to different accounts. For example, you can close nominal accounts that are associated with governmental funds to fund balances. You can also close nominal accounts that are associated with proprietary funds to retained earnings.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Operations scheduling
-description: This topic provides information about operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
+description: This article provides information about operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
 author: johanhoffmann
 ms.date: 06/20/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
+This article provides information about operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
 
 You can schedule production at the operation level and the job level. Unlike job scheduling, operations scheduling doesn't explode the operations for the production route into jobs. If you want to include more detail in the scheduling, such as information about current capacity, you can run job scheduling after you run operations scheduling. You can also run job scheduling only. Job scheduling is typically used to schedule individual jobs on the shop floor for an immediate or short-term time frame.
 

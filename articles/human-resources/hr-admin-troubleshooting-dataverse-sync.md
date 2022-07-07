@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reset Dataverse synchronization
-description: This topic describes how to troubleshoot records that do not synchronize correctly between Microsoft Dynamics 365 Human Resources and the Human capital management (HCM) Common solution in Microsoft Dataverse.
+description: This article describes how to troubleshoot records that do not synchronize correctly between Microsoft Dynamics 365 Human Resources and the Human capital management (HCM) Common solution in Microsoft Dataverse.
 author: jaredha
 ms.date: 09/27/2021
 ms.topic: article

@@ -43,7 +43,7 @@ This article explains how to set up the collections functionality. You must comp
 - Outlook settings for those who use the **Collections** page
 - Email addresses
 
-These points are discussed in more detail throughout the rest of this topic. 
+These points are discussed in more detail throughout the rest of this article. 
 
 ## Set up aging period definitions
 

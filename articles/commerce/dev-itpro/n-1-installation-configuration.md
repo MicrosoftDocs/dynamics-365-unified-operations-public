@@ -2,7 +2,7 @@
 # required metadata
 
 title: Phased Rollout (N-1) installation, configuration, and cutover guide
-description: This topic explains how to set up Phased Rollout (N-1) components so that your channel components can work with Microsoft Dynamics 365 Commerce Headquarters.
+description: This article explains how to set up Phased Rollout (N-1) components so that your channel components can work with Microsoft Dynamics 365 Commerce Headquarters.
 author: jashanno
 ms.date: 04/28/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up Phased Rollout (N-1) components so that your Microsoft Dynamics AX 2012 R3 channel components, such as Microsoft Dynamics AX for Retail Modern Point of Sale (MPOS) and Commerce Scale Unit, or Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS), can work with Microsoft Dynamics 365 Commerce Headquarters.
+This article explains how to set up Phased Rollout (N-1) components so that your Microsoft Dynamics AX 2012 R3 channel components, such as Microsoft Dynamics AX for Retail Modern Point of Sale (MPOS) and Commerce Scale Unit, or Microsoft Dynamics AX for Retail Enterprise Point of Sale (EPOS), can work with Microsoft Dynamics 365 Commerce Headquarters.
 
 ## Key terms
 
@@ -41,7 +41,7 @@ This topic explains how to set up Phased Rollout (N-1) components so that your M
 
 ## Overview
 
-The sections in this topic describe the following steps, which you must complete to set up an environment with N-1 components. These steps assume that Headquarters is already deployed, and that an AX 2012 R3 environment is currently running.
+The sections in this article describe the following steps, which you must complete to set up an environment with N-1 components. These steps assume that Headquarters is already deployed, and that an AX 2012 R3 environment is currently running.
 
 - **[Set up Azure AD accounts](#set-up-azure-ad-accounts)** – This section explains how to set up the Microsoft Azure Active Directory (Azure AD) accounts that the N-1 components use to connect to Headquarters.
 - **[Configure N-1 components](#configure-n-1-components)** – This section explains how to configure the N-1 components in Headquarters.
@@ -290,7 +290,7 @@ When you're ready, follow these steps to download and install the component.
     3. If a specific user is required, enter the user name and password that the application pool should run as. By default, the installer automatically generates a service account to use. This approach is more secure and is recommended, but it can't be used when the database is located on a separate computer. Select **Next** to continue.
     4. Verify the HTTPS port that should be used, and verify that the host name of the computer is correct. Select **Next** to continue.
 
-        The HTTPS port is listed in the Store system profile. To access the Store system profile, on the **Store details** page, on the **Store systems** FastTab, select the profile ID of the selected Store system. The installer automatically enters the host name. If the host name must be changed for the installation, change it here. The host name must be the fully qualified domain name (FQDN) of the system, and it must match the value that you entered on the **Connector for Microsoft Dynamics AX** page earlier in this topic.
+        The HTTPS port is listed in the Store system profile. To access the Store system profile, on the **Store details** page, on the **Store systems** FastTab, select the profile ID of the selected Store system. The installer automatically enters the host name. If the host name must be changed for the installation, change it here. The host name must be the fully qualified domain name (FQDN) of the system, and it must match the value that you entered on the **Connector for Microsoft Dynamics AX** page earlier in this article.
 
     5. Enter the application ID (client ID) and secret that are associated with this Connector for Microsoft Dynamics AX installation. Then select **Install**.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Hazardous materials overview
-description: This topic provides an overview of features that are related to handling and documenting hazardous materials during product information management and warehouse management.
+description: This article provides an overview of features that are related to handling and documenting hazardous materials during product information management and warehouse management.
 author: t-benebo
 ms.date: 06/10/2020
 ms.topic: overview
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -55,7 +55,7 @@ The following common regulations were referenced when this functionality was dev
 
 Each set of regulations provides standardized lists of dangerous goods and reference codes. Therefore, Supply Chain Management provides a reference table for the common codes on those lists. Each list also has some unique codes that you can define.
 
-For more information about how to set up regulations and values for hazardous materials, and how to assign the values to relevant products, see the following topics:
+For more information about how to set up regulations and values for hazardous materials, and how to assign the values to relevant products, see the following articles:
 
 - [Set up hazardous materials](hazmat-setup.md)
 - [Hazardous materials in products, orders, shipments, and loads](hazmat-items.md)

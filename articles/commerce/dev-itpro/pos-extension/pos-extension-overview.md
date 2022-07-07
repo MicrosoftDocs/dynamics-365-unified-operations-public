@@ -1,6 +1,6 @@
 ---
 title: POS extension overview
-description: This topic provides information about how you can create Point of Sale (POS) extensions by using the new independent POS extension model and sealed software development kit (SDK).
+description: This article provides information about how you can create Point of Sale (POS) extensions by using the new independent POS extension model and sealed software development kit (SDK).
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: overview
@@ -30,14 +30,14 @@ You can use extensions in the following ways:
 + **Add custom UX and APIs:** You can extend POS to add custom views and APIs that support new functionality and features.
 + **Add custom operations:** You can add custom operations to perform custom functionality.
 
-The following topics explain how to create a POS extension by using the independent POS extension model and sealed SDK.
+The following articles explain how to create a POS extension by using the independent POS extension model and sealed SDK.
 
 + [Getting started with POS extensions](pos-extension-getting-started.md)
 + [Create a POS extension package project](create-pos-extension-package.md)
 + [Create an .appx file for a Modern POS extension package](create-pos-extension-appx.md)
 + [Debug POS extensions](debug-pos-extension.md)
 
-This topic applies to version 10.0.18 and later of the Retail SDK.
+This article applies to version 10.0.18 and later of the Retail SDK.
 
 ## Supported apps
 

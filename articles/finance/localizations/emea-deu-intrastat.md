@@ -2,7 +2,7 @@
 # required metadata
 
 title: German Intrastat
-description: This topic contains information about Intrastat declaration in Germany.
+description: This article contains information about Intrastat declaration in Germany.
 author: anasyash
 ms.date: 09/09/2021
 ms.topic: article

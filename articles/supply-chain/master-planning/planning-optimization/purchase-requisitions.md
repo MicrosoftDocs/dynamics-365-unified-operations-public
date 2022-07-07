@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchase requisitions
-description: This topic describes how purchase requisitions are supported in Planning Optimization.
+description: This article describes how purchase requisitions are supported in Planning Optimization.
 author: t-benebo
 ms.date: 01/04/2021
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cash register functionality for Sweden
-description: This topic provides an overview of the cash register functionality that is available for Sweden. 
+description: This article provides an overview of the cash register functionality that is available for Sweden. 
 author: EvgenyPopovMBS
 ms.date: 12/02/2019
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Sweden
 ms.search.industry: retail
 ms.author: epopov
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the cash register functionality that is available for Sweden in Dynamics 365 Commerce. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
+This article provides an overview of the cash register functionality that is available for Sweden in Dynamics 365 Commerce. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
 
 - Common point-of sale (POS) features that are made available to customers in all countries or regions, such as an option to prevent sales and returns from being combined on one receipt
 - Sweden-specific features, such as additional counters in daily POS reports

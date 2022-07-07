@@ -2,7 +2,7 @@
 # required metadata
 
 title: Checklist for Electronic messages setup for VAT returns with direct submission to Altinn
-description: This topic contains a checklist for setting up Electronic messages functionality for VAT returns of Norway.
+description: This article contains a checklist for setting up Electronic messages functionality for VAT returns of Norway.
 author: liza-golub
 ms.date: 12/13/2021
 ms.topic: article
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 10.0.22
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how the [Electronic messages](../general-ledger/electronic-messaging.md) functionality is set up to support the processing of value-added tax (VAT) returns with direct submission to Altinn in Norway. You can use the information in this topic to determine whether the Electronic messages functionality is correctly set up.
+This article provides information about how the [Electronic messages](../general-ledger/electronic-messaging.md) functionality is set up to support the processing of value-added tax (VAT) returns with direct submission to Altinn in Norway. You can use the information in this article to determine whether the Electronic messages functionality is correctly set up.
 
-Although this topic includes the most important information about the setup, it doesn't include information about all the data. We recommend that you use a package of data entities that contains a predefined setup of the functionality, and that includes all the data that is required to set up the processing for interoperation with Altinn.
+Although this article includes the most important information about the setup, it doesn't include information about all the data. We recommend that you use a package of data entities that contains a predefined setup of the functionality, and that includes all the data that is required to set up the processing for interoperation with Altinn.
 
 - Go to **Tax** \> **Setup** \> **Electronic messages** \> **Electronic messages processing**, and review your setup. The following type of processing is defined to support interoperation with Altinn.
 

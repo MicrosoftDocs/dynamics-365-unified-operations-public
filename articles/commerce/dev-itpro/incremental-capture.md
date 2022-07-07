@@ -2,7 +2,7 @@
 # required metadata
 
 title: Incremental payment capture  
-description: This topic describes out-of-box support for incremental capture as part of order invoicing in Dynamics 365 Commerce.
+description: This article describes out-of-box support for incremental capture as part of order invoicing in Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 3/12/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes out-of-box support for incremental capture as part of order invoicing in Dynamics 365 Commerce. This topic also describes how to enable incremental capture for the Dynamics 365 Payment Connector for Adyen, and how incremental capture can be added to third-party payment connectors using the payments software development kit (SDK).
+This article describes out-of-box support for incremental capture as part of order invoicing in Dynamics 365 Commerce. This article also describes how to enable incremental capture for the Dynamics 365 Payment Connector for Adyen, and how incremental capture can be added to third-party payment connectors using the payments software development kit (SDK).
 
 When incremental capture is enabled, orders that are fulfilled over time with multiple invoices will reference the original authorization for multiple invoices and captured payments. This contrasts with legacy support for fulfilling orders with multiple invoices, which causes a new authorization to be obtained every time a portion of the order is fulfilled and the balance due changes.
 

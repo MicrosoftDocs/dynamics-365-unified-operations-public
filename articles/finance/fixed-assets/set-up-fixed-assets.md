@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up fixed assets
-description: This topic provides an overview of the setup of the Fixed assets module.
+description: This article provides an overview of the setup of the Fixed assets module.
 author: moaamer
 ms.date: 06/08/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the setup of the **Fixed assets** module. 
+This article provides an overview of the setup of the **Fixed assets** module. 
 
 Parameters control the general behavior in Fixed assets. Fixed asset groups let you group your assets and specify default attributes for every asset that is assigned to a group. Books are assigned to fixed asset groups. Books track the financial value of a fixed asset over time by using the depreciation configuration that is defined in the depreciation profile.
 

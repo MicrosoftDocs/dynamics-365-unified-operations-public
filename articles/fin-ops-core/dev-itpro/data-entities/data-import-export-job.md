@@ -36,7 +36,7 @@ ms.dyn365.ops.version: AX 7.0.0
 To create and manage data import and export jobs, you use the **Data management** workspace. By default, the data import and export process creates a staging table for each entity in the target database. Staging tables let you verify, clean up, or convert data before you move it.
 
 > [!NOTE]
-> This topic assumes that you are familiar with [data entities](data-entities.md).
+> This article assumes that you are familiar with [data entities](data-entities.md).
 
 ## Data import/export process
 Here are the steps to import or export data.
@@ -55,7 +55,7 @@ Here are the steps to import or export data.
 5. Validate that the job ran as expected by reviewing the job history.
 6. Clean up the staging tables.
 
-The remaining sections of this topic provide more details about each step of the process.
+The remaining sections of this article provide more details about each step of the process.
 
 > [!NOTE]
 > In order to refresh the Data import/export form to see the latest progress, use the form refresh icon. Browser level refresh is not recommended because it will interrupt any import/export jobs that are not run in batch.
@@ -217,7 +217,7 @@ moving window thereby, always leaving the history for the specified number of da
 ## Job history clean up and archival 
 The job history clean up and archival functionality replaces the previous versions of the clean-up functionality. This section will explain these new capabilities.
 
-One of the main changes to the cleanup functionality is the use of the system batch job for cleaning up the history. The use of the system batch job allows Finance and Operations apps to have the clean-up batch job automatically scheduled and running as soon as the system is ready. It is no longer required to schedule the batch job manually. In this default execution mode, the batch job will execute every hour starting at midnight and will retain the execution history for the most recent 7 days. The purged history is archived for future retrieval. Starting with version 10.0.20, this feature in always on.
+One of the main changes to the cleanup functionality is the use of the system batch job for cleaning up the history. The use of the system batch job allows finance and operations apps to have the clean-up batch job automatically scheduled and running as soon as the system is ready. It is no longer required to schedule the batch job manually. In this default execution mode, the batch job will execute every hour starting at midnight and will retain the execution history for the most recent 7 days. The purged history is archived for future retrieval. Starting with version 10.0.20, this feature in always on.
 
 The second change in the clean-up process is the archival of the purged execution history. The clean-up job will archive the deleted records to the blob storage that DIXF uses for regular integrations. The archived file will be in the DIXF package format and will be available for 7 days in the blob during which time it can be downloaded. The default longevity of 7 days for the archived file can be changed to a maximum of 90 days in the parameters.
 
@@ -243,3 +243,4 @@ To download the archived execution history, go to the data management workspace 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

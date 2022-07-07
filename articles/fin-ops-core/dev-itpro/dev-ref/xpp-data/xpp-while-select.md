@@ -1,6 +1,6 @@
 ---
 title: While select statement
-description: This topic describes while select statements in the X++ language.
+description: This article describes while select statements in the X++ language.
 author: tonyafehr
 ms.date: 06/16/2020
 audience: Developer

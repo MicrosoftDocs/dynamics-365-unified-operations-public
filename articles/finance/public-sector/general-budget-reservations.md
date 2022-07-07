@@ -2,7 +2,7 @@
 # required metadata
 
 title: General budget reservations
-description: This topic provides information about general budget reservations for Public sector.
+description: This article provides information about general budget reservations for Public sector.
 author: TaylorVH
 ms.date: 08/29/2021
 ms.topic: article

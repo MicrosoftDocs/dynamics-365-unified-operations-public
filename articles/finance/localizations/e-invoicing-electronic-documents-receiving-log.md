@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work with the Electronic document receipt log
-description: This topic explains how to work with the Electronic document receipt log.
+description: This article explains how to work with the Electronic document receipt log.
 author: dkalyuzh
 ms.date: 02/14/2022
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage features in Human Resources
-description: This topic describes the Feature management feature and how you can use it.
+description: This article describes the Feature management feature and how you can use it.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article

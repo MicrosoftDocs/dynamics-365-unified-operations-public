@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deployment guidelines for cash registers for Norway (legacy)
-description: This topic is a deployment guide that shows how to enable the Microsoft Dynamics 365 Commerce localization for Norway.
+description: This article is a deployment guide that shows how to enable the Microsoft Dynamics 365 Commerce localization for Norway.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -17,16 +17,16 @@ ms.search.validFrom: 2018-2-28
 
 [!include [banner](../includes/banner.md)]
 
-This topic is a deployment guide that shows how to enable the Microsoft Dynamics 365 Commerce localization for Norway. The localization consists of several extensions of Commerce components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for Norway, see [Cash register functionality for Norway](./emea-nor-cash-registers.md).
+This article is a deployment guide that shows how to enable the Microsoft Dynamics 365 Commerce localization for Norway. The localization consists of several extensions of Commerce components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for Norway, see [Cash register functionality for Norway](./emea-nor-cash-registers.md).
 
 This sample is part of the Retail software development kit (SDK). For information about the SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-This sample consists of extensions for the Commerce runtime (CRT), Retail Server, and POS. To run this sample, you must modify and build the CRT, Retail Server, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
+This sample consists of extensions for the Commerce runtime (CRT), Retail Server, and POS. To run this sample, you must modify and build the CRT, Retail Server, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this article. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
 > [!NOTE]
-> In Commerce 10.0.8 and above, Retail Server is known as Commerce Scale Unit. Because this topic applies to multiple previous versions of the app, *Retail Server* is used throughout the topic.
+> In Commerce 10.0.8 and above, Retail Server is known as Commerce Scale Unit. Because this article applies to multiple previous versions of the app, *Retail Server* is used throughout the article.
 >
-> Some steps in the procedures in this topic differ, depending on the version of Commerce that you're using. For more information, see [What's new or changed in Dynamics 365 Retail](../get-started/whats-new.md).
+> Some steps in the procedures in this article differ, depending on the version of Commerce that you're using. For more information, see [What's new or changed in Dynamics 365 Retail](../get-started/whats-new.md).
 
 ### Using certificate profiles in Commerce channels
 
@@ -1249,7 +1249,7 @@ For more information, see [Cash register functionality for Norway](./emea-nor-ca
 
 Follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
 
-1. Complete the steps in the [Cloud POS extension components](#cloud-pos-extension-components) or [Modern POS extension components](#modern-pos-extension-components) section earlier in this topic.
+1. Complete the steps in the [Cloud POS extension components](#cloud-pos-extension-components) or [Modern POS extension components](#modern-pos-extension-components) section earlier in this article.
 2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
     1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section:

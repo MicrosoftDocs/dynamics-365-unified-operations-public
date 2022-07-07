@@ -1,7 +1,7 @@
 ---
 # required metadata 
 title: Create a depreciation proposal
-description: This topic describes how depreciation batch proposals work and explains how to propose depreciation for fixed assets. 
+description: This article describes how depreciation batch proposals work and explains how to propose depreciation for fixed assets. 
 author: abruer
 ms.date: 08/01/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how depreciation batch proposals work and explains how to propose depreciation for fixed assets. This task uses the USMF demo company and the accountant role.
+This article describes how depreciation batch proposals work and explains how to propose depreciation for fixed assets. This task uses the USMF demo company and the accountant role.
 
 
 ## Create a depreciation proposal

@@ -3,7 +3,7 @@
 
 
 title: Call Commerce Scale Unit APIs
-description: This topic explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Commerce Scale Unit from a data action or directly from module code.
+description: This article explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Commerce Scale Unit from a data action or directly from module code.
 author: samjarawan
 ms.date: 09/21/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Commerce Scale Unit from a data action or directly from module code.
+This article explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Commerce Scale Unit from a data action or directly from module code.
 
 To call Commerce Scale Unit APIs, you must use the Retail Server proxy library that the Commerce online software development kit (SDK) provides. This proxy library is also known as TypeScriptProxy or TSProxy. It allows for streamlined communication with the Commerce Scale Unit from JavaScript-based or TypeScript-based environments.
 

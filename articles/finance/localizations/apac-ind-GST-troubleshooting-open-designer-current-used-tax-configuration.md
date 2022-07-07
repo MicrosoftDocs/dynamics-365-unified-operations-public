@@ -2,7 +2,7 @@
 # required metadata
 
 title: Open the designer for the current tax configuration
-description: This topic provides troubleshooting information about how to open the designer for the tax configuration that is currently used.
+description: This article provides troubleshooting information about how to open the designer for the tax configuration that is currently used.
 author: yungu
 ms.date: 05/06/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to open the designer for the tax configuration that is currently used. It uses the tax setup in a standard environment as an example.
+This article explains how to open the designer for the tax configuration that is currently used. It uses the tax setup in a standard environment as an example.
 
 ## Find the version of the currently used tax configuration
 

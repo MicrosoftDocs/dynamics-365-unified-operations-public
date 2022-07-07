@@ -1,10 +1,10 @@
 ---
 title: Business documents supported by Global Inventory Accounting
-description: This topic lists the business documents that are supported by Global Inventory Accounting. It also provides a detailed example for purchase order documents.
+description: This article lists the business documents that are supported by Global Inventory Accounting. It also provides a detailed example for purchase order documents.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -28,7 +28,7 @@ There are two types of business documents:
 - **Documents that have a journal** – These documents include product receipt, purchase invoice, packing slip, and sales invoice documents.
 - **Documents that don't have a journal** – These documents include counting, movement, and inventory adjustment documents.
 
-Later in this topic, purchase orders will be used as an example to illustrate the process.
+Later in this article, purchase orders will be used as an example to illustrate the process.
 
 The following table lists the documents that the current release supports.
 

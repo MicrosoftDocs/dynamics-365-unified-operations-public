@@ -2,7 +2,7 @@
 # required metadata
 
 title: Thailand unrealized and realized VAT
-description: This topic provides information about unrealized and realized value-added tax (VAT) for Thailand. 
+description: This article provides information about unrealized and realized value-added tax (VAT) for Thailand. 
 author: anasyash
 ms.date: 01/25/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about unrealized and realized value-added tax (VAT) for Thailand. It also explains how to settle transactions that have unrealized VAT, how to reverse unrealized VAT, and what reports can be generated.
+This article provides information about unrealized and realized value-added tax (VAT) for Thailand. It also explains how to settle transactions that have unrealized VAT, how to reverse unrealized VAT, and what reports can be generated.
 
 Currently, four types of VAT can be calculated. They are defined by two categorical attributes: **Purchase/Sales VAT** and **Realized/Unrealized VAT**. The following table provides information about each type of VAT.
 

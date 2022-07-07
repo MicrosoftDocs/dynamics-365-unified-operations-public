@@ -2,7 +2,7 @@
 # required metadata 
  
 title: View workflow history
-description: This topic describes the steps to view the status of a document that was submitted to the workflow system for processing and approval.  
+description: This article describes the steps to view the status of a document that was submitted to the workflow system for processing and approval.  
 author: jasongre
 ms.date: 07/09/2019
 ms.topic: business-process 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
-This topic describes the steps to view the status of a document that was submitted to the workflow system for processing and approval. The demo data company used to create this procedure is USMF.
+This article describes the steps to view the status of a document that was submitted to the workflow system for processing and approval. The demo data company used to create this procedure is USMF.
 
 1. Go to **Navigation pane > Modules > Common > Inquiries > Workflow > Workflow history**.
     - Use this form to view the status of a document that was submitted to the workflow system for processing and approval.  

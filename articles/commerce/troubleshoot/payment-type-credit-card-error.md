@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payment type must be credit card error on the sales order page
-description: This topic provides troubleshooting guidance that can help when an error message is shown on the sales order page after an order is synced.
+description: This article provides troubleshooting guidance that can help when an error message is shown on the sales order page after an order is synced.
 author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting guidance that can help when an error message is shown on the sales order page after an order is synced.
+This article provides troubleshooting guidance that can help when an error message is shown on the sales order page after an order is synced.
 
 ## Description
 

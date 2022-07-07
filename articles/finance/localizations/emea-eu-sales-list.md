@@ -4,7 +4,7 @@
 title: EU Sales list reporting
 description: This article provides information about European Union (EU) Sales list reporting.
 author: EvgenyPopovMBS
-ms.date: 02/17/2022
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -154,7 +154,7 @@ Transactions of the following types can be considered intra-community trade tran
 -   Project invoices
 -   Vendor invoices
 
-A transaction is considered an intra-community trade transaction if the delivery address of the transaction is in a member state of the EU. For such countries/regions, a record should exist on the **Country/region parameters** tab of the **Foreign trade parameters** page, and the **Country/region type** value should be set to **EU**. Intra-community trade transactions are marked in the **List code** field. Using this field, you can also separate general intra-community trade transactions from triangular trade transactions. You can collect information about intra-community trade transactions on the **EU Sales list** page (click **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **EU Sales list**) by using the **Transfer** function. This function lets you include transactions that have amounts of different reporting types (i.e., items or services), according to the item sales tax groups that are specified on transaction lines. You can also apply other filters to define the transactions that should be included. The **Transfer** function creates a record on the **EU Sales list** page for each intra-community trade transaction that is included, and specifies a counterparty account number, a country/region, a tax exempt number, an invoice number and date, and the total amounts of lines per reporting type. It also copies the **List code** value from the transaction. You can manually change the list code for a transaction on the **EU Sales list** page. The **Transfer** function creates records where the **Reporting status** value is set to **Included**. You can validate the information that is collected on the **EU Sales list** page by using the **Validate** function.
+A transaction is considered an intra-community trade transaction if the delivery address of the transaction is in a member state of the EU. For such countries/regions, a record should exist on the **Country/region parameters** tab of the **Foreign trade parameters** page, and the **Country/region type** value should be set to **EU**. Intra-community trade transactions are marked in the **List code** field. Using this field, you can also separate general intra-community trade transactions from triangular trade transactions. You can collect information about intra-community trade transactions on the **EU Sales list** page (click **Tax** &gt; **Declarations** &gt; **Foreign trade** &gt; **EU Sales list**) by using the **Transfer** function. This function lets you include transactions that have amounts of different reporting types (i.e., items or services), according to the item sales tax groups that are specified on transaction lines. You can also apply other filters to define the transactions that should be included. The **Transfer** function creates a record on the **EU Sales list** page for each intra-community trade transaction that is included, and specifies a counterparty account number, a country/region, a tax exempt number, an invoice number and date, and the total amounts of lines per reporting type. It also copies the **List code** value from the transaction. You can manually change the list code for a transaction on the **EU Sales list** page. The **Transfer** function creates records where the **Reporting status** value is set to **Included**. You can validate the information that is collected on the **EU Sales list** page by using the **Validate** function. You can get detailed information about the invoice (for sale direction) by using the **Totals** function.
 
 ### Generating the EU Sales list report
 
@@ -164,8 +164,26 @@ You can generate an **EU Sales list** report by using the **Reporting** function
 
 When you've completed the reporting process for a specific period (for example, when tax authorities have accepted the **EU Sales list** report), you can mark the ESL records that are included on the report for the period by setting the **Reporting status** value to **Closed**. To set this status, use the **Mark as closed** function on the **EU Sales list** page. If you revert the closing of the period, you can mark ESL records by setting the **Reporting status** value to **Included**. These records can then be included on an **EU Sales list** report again. To set this status, use the **Mark as** **included** function on the **EU Sales list** page.
 
+## List of country-specific topics
 
-
+| Country          | Link      |
+|------------------|-----------|
+| Austria          | [EU Sales list for Austria](emea-aut-eu-sales-list.md)| 
+| Belgium          |[EU sales list for Belgium](emea-bel-eu-sales-list.md)|
+| Czech Republic          |[EU Sales list for Czech Republic](emea-cze-eu-sales-list.md)|
+| Denmark          |[EU Sales list for Denmark](emea-dnk-eu-sales-list.md)|
+| Estonia          |[EU Sales list for Estonia](emea-est-eu-sales-list.md)|
+| Finland          |[EU Sales list for Finland](emea-fin-eu-sales-list.md)|
+| France          |[EU Sales list for France](emea-fra-eu-sales-list.md)|
+| Germany          |[EU Sales list for Germany](emea-deu-eu-sales-list.md)|
+| Hungary          |[EU Sales list for Hungary](emea-hun-eu-sales-list.md)|
+| Latvia          |[EU Sales list for Latvia](emea-lva-eu-sales-list.md)|
+| Lithuania          |[EU Sales list for Lithuania](emea-ltu-eu-sales-list.md)|
+| Netherlands          |[EU sales list for Netherlands](emea-nl-eu-sales-list.md)|
+| Poland          |[EU Sales list for Poland](emea-pol-eu-sales-list.md)|
+| Spain          |[EU sales list for Spain (Report 349)](emea-esp-sales-list.md)|
+| Sweden          |[EU Sales list for Sweden](emea-swe-eu-sales-list.md)|
+| UK (Northern Ireland)          |[EU Sales list for UK (Northern Ireland)](emea-uk-eu-sales-list.md)|
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,10 +1,10 @@
 ---
 title: Manage changes in formulas and their ingredients
-description: This topic describes how to do formula management and manage changes to process manufacturing master data.
+description: This article describes how to do formula management and manage changes to process manufacturing master data.
 author: t-benebo
 ms.date: 05/19/2021
 ms.topic: article
-# ms.search.form:[Operations AOT form name to tie this topic to]
+# ms.search.form:[Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -25,7 +25,7 @@ If you're using the process manufacturing capabilities of Microsoft Dynamics 365
 
 ## Turn this feature on or off
 
-The functionality described in this topic requires that both the *Engineering Change Management* and *Manage changes to formulas and their ingredients* features be turned on for your system. For details about how to turn these features on or off, see [Engineering change management overview](product-engineering-overview.md).
+The functionality described in this article requires that both the *Engineering Change Management* and *Manage changes to formulas and their ingredients* features be turned on for your system. For details about how to turn these features on or off, see [Engineering change management overview](product-engineering-overview.md).
 
 ## Feature naming conventions
 
@@ -42,7 +42,7 @@ The following list summarizes how engineering change management features apply t
 - **Readiness control** – Use system checks and user guidance (questionnaires and checklists) to ensure that all required product data is fully entered before the product is released. For more information, see [Product readiness](product-readiness.md).
 - **Enhanced product release functionality** – Release fully defined versions of a product and its formula from an organization (legal entity) to other legal entities. You can even decide whether the product information must be reviewed or edited before release. For more information, see [Release product structures](release-product-structure.md).
 
-Note that most of the topics that are linked to in the previous list provide examples that are based on bills of materials (BOMs). However, formulas work in a similar way. Here are some additional concepts that are useful to know when you use change management (or only formula change management) to manage formulas and BOMs:
+Note that most of the articles that are linked to in the previous list provide examples that are based on bills of materials (BOMs). However, formulas work in a similar way. Here are some additional concepts that are useful to know when you use change management (or only formula change management) to manage formulas and BOMs:
 
 - For each [product engineering category](engineering-versions-product-category.md), you can specify the production type (BOM, formula, or planning item). You can also specify whether catch-weight support is required for products that use that category.
 - Co-products and by-products aren't engineering products. Therefore, they aren't versioned. If you must change them, just create a new product. This approach makes maintenance easier.

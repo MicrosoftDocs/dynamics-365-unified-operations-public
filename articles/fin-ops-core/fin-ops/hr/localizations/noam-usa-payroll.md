@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Version 1611
 US payroll provides gross-to-net processing for employees in the United States. With Payroll you can set up, enter, and maintain all payroll records and transactions. The comprehensive earnings and pay statement process covers federal, state, and local taxes, flexible deduction and benefits processing, and support for garnishments and tax levies. US payroll provides full reporting and inquires for W2 processing, and 940 and 941 reporting. It also lets you view current and historical payroll information for individual employees or for groups of employees.
 
 > [!NOTE]
-> Tax updates are being retired for the US payroll feature in Microsoft Dynamics 365 for Finance and Operations starting July 31, 2024. Tax updates were originally scheduled to be removed as of October 2021, however this was extended to July 2024. For more information, see [Support date extended for tax updates](https://cloudblogs.microsoft.com/dynamics365/it/2020/10/02/support-date-extended-for-tax-updates-in-us-payroll-feature-in-dynamics-365-finance).
+> Tax updates are being retired for the US payroll feature in Microsoft Dynamics 365 Finance starting July 31, 2024. Tax updates were originally scheduled to be removed as of October 2021, however this was extended to July 2024. For more information, see [Support date extended for tax updates](https://cloudblogs.microsoft.com/dynamics365/it/2020/10/02/support-date-extended-for-tax-updates-in-us-payroll-feature-in-dynamics-365-finance).
 
 ## Payroll setup
 
@@ -106,3 +106,4 @@ Standard payroll reports are provided to help you with payroll processing and go
 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

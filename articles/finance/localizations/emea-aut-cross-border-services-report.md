@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cross-border services report
-description: This topic explains how to use the Cross-border services report.
+description: This article explains how to use the Cross-border services report.
 author: anasyash
 ms.date: 04/08/2021
 ms.topic: article

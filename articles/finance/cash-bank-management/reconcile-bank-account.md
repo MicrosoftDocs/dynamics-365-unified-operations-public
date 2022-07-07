@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reconcile a bank account
-description: This topic describes how to reconcile a bank account.
+description: This article describes how to reconcile a bank account.
 author: panolte
 ms.date: 07/01/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend

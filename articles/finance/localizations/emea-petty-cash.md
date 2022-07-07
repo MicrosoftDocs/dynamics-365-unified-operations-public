@@ -2,7 +2,7 @@
 # required metadata
 
 title: Petty cash for Eastern Europe and Russia
-description: This topic provides information about the petty cash functionality that lets users in Estonia, Lithuania, Czech Republic, Hungary, Latvia, Poland, and Russia reflect cash operations in the system.
+description: This article provides information about the petty cash functionality that lets users in Estonia, Lithuania, Czech Republic, Hungary, Latvia, Poland, and Russia reflect cash operations in the system.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the petty cash functionality that lets users in Estonia, Lithuania, Czech Republic, Hungary, Latvia, Poland, and Russia reflect cash operations in the system.
+This article provides information about the petty cash functionality that lets users in Estonia, Lithuania, Czech Republic, Hungary, Latvia, Poland, and Russia reflect cash operations in the system.
 
 You can use the petty cash functionality to automate operations for receipts and expenditures of cash, the creation of primary documents, and the printing of related reports. The petty cash functionality lets you perform the following operations:
 
@@ -105,7 +105,7 @@ To set up cash balance control rules for a cash account, select the cash account
 <li><strong>Warning</strong> – The limit can be exceeded, but the user receives a warning message. The cash document is confirmed or approved.</li>
 <li><strong>Error</strong> – The limit can&#39;t be exceeded. The user receives an error message, and the cash document isn&#39;t confirmed or approved.</li>
 </ul>
-For more information about the approval process for cash documents, see the &quot;Cash transaction approval and posting&quot; section, later in this topic.</td>
+For more information about the approval process for cash documents, see the &quot;Cash transaction approval and posting&quot; section, later in this article.</td>
 </tr>
 <tr class="odd">
 <td>Balance limit</td>

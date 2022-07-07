@@ -2,9 +2,9 @@
 # required metadata
 
 title: Improvements to statement posting functionality
-description: This topic describes improvements that have been made to the statement posting feature.
+description: This article describes improvements that have been made to the statement posting feature.
 author: analpert
-ms.date: 04/27/2022
+ms.date: 05/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -17,11 +17,11 @@ ms.search.validFrom: 2018-04-30
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the first set of improvements that have been made to the statement posting feature. These improvements are available in Microsoft Dynamics 365 for Finance and Operations 7.3.2.
+This article describes the first set of improvements that have been made to the statement posting feature. These improvements are available in Microsoft Dynamics 365 Finance 7.3.2.
 
 ## Activation
 
-By default, during deployment of Finance and Operations 7.3.2, the program is set up to use the legacy feature for statement postings. To enable the improved statement posting feature, you must turn on the configuration key for it.
+By default, during deployment of finance and operations 7.3.2, the program is set up to use the legacy feature for statement postings. To enable the improved statement posting feature, you must turn on the configuration key for it.
 
 - Go to **System administration** \> **Setup** \> **License configuration**, and then, under the **Retail and Commerce** node, clear the **Statements (legacy)** check box, and select the **Statements** check box.
 
@@ -149,6 +149,9 @@ The aggregated transactions view provides the following benefits:
 - The user has a complete audit trail, from transactions, to sales orders, to sales invoices. This audit trail wasn't available in the legacy statement posting feature.
 - Aggregated XML file makes it easier to identify issues during sales order creation and invoicing.
 
+> [!NOTE]
+> When transactions are aggregated, the staff member assigned to the transaction is no longer available to the **Top Staff Sales Report**, meaning that the **Top Staff Sales Report** won't show all transactions. We recommend that you don't use the **Top Staff Sales Report** with aggregated transactions.
+
 ### Journal vouchers
 
 The **Journal vouchers** button in the **Execution details** group of the statement shows all the various voucher transactions that are created for a statement, and that are related to discounts, income/expense accounts, gift cards, and so on.
@@ -184,3 +187,4 @@ Other, back-end improvements that users can see have been made to the statement 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

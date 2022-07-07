@@ -1,10 +1,10 @@
 ---
 title: Maintain vendor certification
-description: This topic describes the steps that vendors can use to  maintain their certifications using the Vendor collaboration workspace. 
+description: This article describes the steps that vendors can use to  maintain their certifications using the Vendor collaboration workspace. 
 author: v-kiarnd
 ms.date: 04/27/2021
 ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the steps that your vendors can use to  maintain their certifications using the **Vendor collaboration workspace**. Examples of certifications might include a Woman Business Enterprise (WBE) or a Leadership in Energy and Environment Design (LEED) company. Vendors will need to enter certification information in the **Vendor information** workspace. From there, vendors will select **More details**, and then select **Certifications**.
+This article describes the steps that your vendors can use to  maintain their certifications using the **Vendor collaboration workspace**. Examples of certifications might include a Woman Business Enterprise (WBE) or a Leadership in Energy and Environment Design (LEED) company. Vendors will need to enter certification information in the **Vendor information** workspace. From there, vendors will select **More details**, and then select **Certifications**.
 
 ## Turn on the vendor certification feature
 

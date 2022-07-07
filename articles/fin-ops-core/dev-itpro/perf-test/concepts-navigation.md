@@ -1,6 +1,6 @@
 ---
 title: Navigation concepts for test data
-description: This topic provides information about how to use navigation to simplify the discoverability of test data generation methods.
+description: This article provides information about how to use navigation to simplify the discoverability of test data generation methods.
 author: MichaelFruergaardPontoppidan
 ms.date: 03/27/2019
 ms.topic: article

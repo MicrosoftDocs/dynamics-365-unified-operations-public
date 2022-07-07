@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Use Document Management files in format outputs (Part 1 - Prepare data model)
-description: This topic describes how to configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. (Part 1)
+description: This article describes how to configure an Electronic reporting (ER) format to use Document Management files (attachments) in ER output. (Part 1)
 author: NickSelin
 ms.date: 08/29/2018
 ms.topic: business-process 

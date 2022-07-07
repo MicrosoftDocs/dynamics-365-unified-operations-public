@@ -2,7 +2,7 @@
 # required metadata
 
 title: Process credit cards without a hardware station
-description: This topic describes how to configure the point of sale (POS) to process "card not present" transactions in POS clients that don't include a hardware station.
+description: This article describes how to configure the point of sale (POS) to process "card not present" transactions in POS clients that don't include a hardware station.
 author: BrianShook
 ms.date: 09/03/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure the point of sale (POS) to process "card not present" transactions in POS clients that don't include a hardware station. This feature specifically targets emerging scenarios such as curbside pickup.
+This article describes how to configure the point of sale (POS) to process "card not present" transactions in POS clients that don't include a hardware station. This feature specifically targets emerging scenarios such as curbside pickup.
 
 When this feature is turned on, clients such as Cloud POS and Modern POS for iOS can make credit card processing calls through Commerce Scale Unit. They don't have to depend on a standalone hardware station that is deployed on the local network. Therefore, any POS client can support curbside pickup, and fewer setup steps are required.
 

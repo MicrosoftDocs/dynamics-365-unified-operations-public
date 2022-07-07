@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create an Azure storage account in the Azure portal
-description: This topic explains how to create an Azure storage account for Electronic invoicing.
+description: This article explains how to create an Azure storage account for Electronic invoicing.
 author: dkalyuzh
 ms.date: 02/14/2022
 ms.topic: article

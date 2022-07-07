@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-09-20
 
 [!include[banner](../includes/banner.md)]
 
-This article provides information about the tasks you should complete to help yourself go live with or update your Microsoft Dynamics 365 Commerce implementation project. It provides links to content that will help you configure your system so it works smoothly and effectively.
+This article provides information about the tasks that you should complete to help yourself go live with or update your Microsoft Dynamics 365 Commerce implementation project. It provides links to content that will help you configure your system so that it works smoothly and effectively.
 
 > [!NOTE]
 > The list of articles will grow over time. It isn't an exhaustive list of all possible items that should be considered during your release.

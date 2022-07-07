@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up number sequences by warehouse
-description: This topic walks you through setting up number sequences for purchase product receipts and sales packing slips by warehouse for Poland.
+description: This article walks you through setting up number sequences for purchase product receipts and sales packing slips by warehouse for Poland.
 author: ShylaThompson
 ms.date: 09/11/2018
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include[banner](../includes/banner.md)]
 
-This topic walks you through setting up number sequences for purchase product receipts and sales packing slips by warehouse for Poland.
+This article walks you through setting up number sequences for purchase product receipts and sales packing slips by warehouse for Poland.
 
 ## Set up a number sequence for purchase product receipts by warehouse
 

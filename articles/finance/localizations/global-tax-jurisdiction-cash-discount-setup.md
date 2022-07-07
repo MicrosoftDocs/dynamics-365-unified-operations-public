@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax jurisdiction parameters for cash discount calculation setup
-description: This topic provides information about the setup of cash discount calculation options.
+description: This article provides information about the setup of cash discount calculation options.
 author: epodkolz
 ms.date: 04/05/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the setup of cash discount calculation options.
+This article provides information about the setup of cash discount calculation options.
 
 When a single legal entity has several value-added tax (VAT) registrations in different countries or regions, the requirements for calculating cash discounts and sales tax might vary by country or region. If different cash discount calculation options are required for different VAT registrations, set up the options on the **Tax jurisdiction parameters** and **Tax jurisdiction applicability** tabs of the **Tax calculation** page.
 

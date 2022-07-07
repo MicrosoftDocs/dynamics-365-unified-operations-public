@@ -2,7 +2,7 @@
 # required metadata
 
 title: Clone a module library module
-description: This topic describes how to clone a module library module in Microsoft Dynamics 365 Commerce.
+description: This article describes how to clone a module library module in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 11/22/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to clone a module library module in Microsoft Dynamics 365 Commerce.
+This article describes how to clone a module library module in Microsoft Dynamics 365 Commerce.
 
 The Dynamics 365 Commerce online software development kit (SDK) includes a set of [module library](../starter-kit-overview.md) modules that can be used on an e-commerce site. Although these modules can't be modified directly, they can be cloned into new modules and then updated. 
 
@@ -98,7 +98,7 @@ To preview the new module in a local web browser, follow these steps.
 
 ### Preview a module by using a page mock
 
-Alternatively, you can use a page mock to preview the module. For instructions, see [Test modules by using page mocks](test-page-mock.md). That topic includes information about how to use the **?item=nodeserviceproxy:true** query string parameter to create a dynamic page mock from a live production page. For the example earlier in this topic, you will save a product details page into a page mock and then modify the page mock to replace the "buy-box" module with the "super-buy-box" module. Then save the new page mock file under the **/src/pageMocks/** directory (for example, **/src/pageMocks/pdp-page-test.json**).
+Alternatively, you can use a page mock to preview the module. For instructions, see [Test modules by using page mocks](test-page-mock.md). That article includes information about how to use the **?item=nodeserviceproxy:true** query string parameter to create a dynamic page mock from a live production page. For the example earlier in this article, you will save a product details page into a page mock and then modify the page mock to replace the "buy-box" module with the "super-buy-box" module. Then save the new page mock file under the **/src/pageMocks/** directory (for example, **/src/pageMocks/pdp-page-test.json**).
 
 After you've created the page mock, you must update the module that you cloned to the new cloned module in the mock JSON file. For example, if you created a page mock that is based on a product details page, search for the "media-gallery" module. You should find a section that resembles the following example. You can then change the **typename** and **id** values from **media-gallery** to **super-media-gallery**.
 

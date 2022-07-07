@@ -2,7 +2,7 @@
 # required metadata
 
 title: In-place upgrade process for on-premises environments
-description: This topic provides the detailed process for upgrading on-premises environments from versions 7.x to 10.0.x.  
+description: This article provides the detailed process for upgrading on-premises environments from versions 7.x to 10.0.x.  
 author: laneswenka
 ms.date: 01/14/2021
 ms.topic: article
@@ -12,7 +12,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.x
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides the detailed process for upgrading on-premises environments of Finance and Operations from version 7.x to 10.0.x.  
+This article provides the detailed process for upgrading on-premises environments of Finance + Operations (on-premises) from version 7.x to 10.0.x.  
 
 > [!NOTE]
 > Please perform the upgrade with your sandbox environment before upgrading your production environment.
@@ -38,7 +38,7 @@ This topic provides the detailed process for upgrading on-premises environments 
 ## On-premises upgrade from version 7.x to 10.0.x
 
 > [!NOTE]
-> Be aware that this upgrade process takes time to complete and Finance and Operations will be inaccessible for the entire duration of the data upgrade.
+> Be aware that this upgrade process takes time to complete and Finance + Operations will be inaccessible for the entire duration of the data upgrade.
 
 To upgrade from version 7.x to 10.0.x, there are two possible paths that are currently supported.
 
@@ -87,7 +87,7 @@ An overview of each path is given below:
     .\Configure-On-Premises-Upgrade.ps1 -DatabaseName '<DB-name>'
     ```
     > [!NOTE] 
-    > Substitute `<DB-Name>` with the appropriate value in your case (for example, AXDB). If you would like to edit more values, refer to the appendix of this topic.
+    > Substitute `<DB-Name>` with the appropriate value in your case (for example, AXDB). If you would like to edit more values, refer to the appendix of this article.
 
     The script will run a database connection test to check that the information you provide is valid.
 
@@ -119,11 +119,11 @@ An overview of each path is given below:
 
     a.  In LCS, go to the Shared Assets Library.
 
-    b.  Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises, Version 10.0.x Demo Data. Select the version closest to the 10.0.x environment that you will deploy as the on-premises baseline.
+    b.  Under **Select asset type**, choose **Model** and download: Dynamics 365 Finance + Operations (on-premises), Version 10.0.x Demo Data. Select the version closest to the 10.0.x environment that you will deploy as the on-premises baseline.
 
     c.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
      
-    d.  The database will need to be configured. Follow the steps in [Configure the Finance and Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
+    d.  The database will need to be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
 
     e.  In LCS, set up a new environment and deploy it with version 10.0.x (Redeploy). For more information, see [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md). When you deploy, the database that you specify should be the one created in step 13c (typically AXDB).
 
@@ -204,7 +204,7 @@ An overview of each path is given below:
 
     a.  In LCS, go to the Shared Assets Library.
 
-    b.  Under **Select asset type**, choose **Model** and download: Dynamics 365 for Finance and Operations on-premises, Version 10.0.x Demo Data. Select the version closest to the 10.0.x environment that you will deploy as the on-premises baseline.
+    b.  Under **Select asset type**, choose **Model** and download: Dynamics 365 Finance + Operations (on-premises), Version 10.0.x Demo Data. Select the version closest to the 10.0.x environment that you will deploy as the on-premises baseline.
 
     c.  Use this file to create a new database (typically AXDB) using the restore backup option from SQL server. For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
 
@@ -248,7 +248,7 @@ The parameters that can be passed to the script are:
 
 -   **-DatabaseName** - Database name that you want to upgrade.
 
--   **-DatabaseServer** - Database server containing Finance and Operations (on-premises) database.
+-   **-DatabaseServer** - Database server containing Finance + Operations (on-premises) database.
 
 -   **-DatabaseUser** - Username for SQL Authentication.
 
@@ -417,3 +417,4 @@ else{
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

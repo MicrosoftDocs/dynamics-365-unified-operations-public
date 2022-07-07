@@ -2,7 +2,7 @@
 # required metadata
 
 title: Synchronize products directly from Supply Chain Management to products in Sales
-description: This topic discusses the templates and underlying tasks that are used to synchronize products from Dynamics 365 Supply Chain Management to Dynamics 365 Sales.
+description: This article discusses the templates and underlying tasks that are used to synchronize products from Dynamics 365 Supply Chain Management to Dynamics 365 Sales.
 author: Henrikan
 ms.date: 06/10/2019
 ms.topic: article
@@ -35,7 +35,7 @@ ms.search.validFrom: 2017-07-8
 > [!NOTE]
 > Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
 
-This topic discusses the templates and underlying tasks that are used to synchronize products directly from Dynamics 365 Supply Chain Management to Dynamics 365 Sales.
+This article discusses the templates and underlying tasks that are used to synchronize products directly from Dynamics 365 Supply Chain Management to Dynamics 365 Sales.
 
 ## Data flow in Prospect to cash
 
@@ -110,7 +110,7 @@ The following illustration shows an example of a template mapping in Data integr
 ![Template mapping in Data integrator.](./media/products-direct-template-mapping-data-integrator-1.png)
 
 
-## Related topics
+## Related articles
 
 [Prospect to cash](prospect-to-cash.md)
 

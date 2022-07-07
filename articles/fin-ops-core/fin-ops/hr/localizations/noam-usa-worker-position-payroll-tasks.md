@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits. This information is used when you generate pay statements for the worker. In addition, if contribution and deduction amounts are changed on a benefit, that change must be made for each worker who is enrolled in that benefit. This topic provides information about these tasks and the fields that are used to complete them.
+Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits. This information is used when you generate pay statements for the worker. In addition, if contribution and deduction amounts are changed on a benefit, that change must be made for each worker who is enrolled in that benefit. This article provides information about these tasks and the fields that are used to complete them.
 
 For more information, see [Payroll data updates FAQ](noam-usa-payroll-data-updates.md).
 
@@ -125,7 +125,7 @@ To set up tax regions for workers, you must first create a list or spreadsheet t
 
 Additionally, for some states, you must specify the school district and municipality that are associated with the residence or work locations. To determine whether this information is required, consult the state tax office.
 
-- On the **Worker tax regions** page, create a new tax region. Select the first task region by selecting the tax region where the worker claims residency, or the tax region where the worker can work. The first region that is assigned to a worker is designated as the worker's resident tax region. You can change the worker's residency at any time. For more information, see the "Changing worker residency (if a change is required)" section in this topic.
+- On the **Worker tax regions** page, create a new tax region. Select the first task region by selecting the tax region where the worker claims residency, or the tax region where the worker can work. The first region that is assigned to a worker is designated as the worker's resident tax region. You can change the worker's residency at any time. For more information, see the "Changing worker residency (if a change is required)" section in this article.
 - Most workers have only one worker tax region. However, a worker who resides in one tax region and works in another tax region has two worker tax regions. A worker who works in multiple locations has multiple tax regions.
 - In most cases, the worker tax codes that are required for the tax region are automatically assigned to the worker when you close this page. However, if the worker isn't assigned to a position, or if the worker's position isn't assigned to a legal entity for payroll, the tax codes are assigned later, when the position and legal entity are assigned.
 - You must then select a school district and municipality, if this information is required. If you use both fields, you must select a school district before you can select a municipality. To determine whether this information is required, consult the state tax office. If it isn't required, leave the fields blank.
