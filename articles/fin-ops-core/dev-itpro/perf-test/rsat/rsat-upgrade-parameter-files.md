@@ -1,6 +1,6 @@
 ---
 title: Upgrade parameter files
-description: This topic explains how to upgrade the parameter files that are used with Regression suite automation tool (RSAT).
+description: This article explains how to upgrade the parameter files that are used with Regression suite automation tool (RSAT).
 author: FrankDahl
 ms.date: 04/12/2021
 ms.topic: article

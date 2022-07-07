@@ -2,7 +2,7 @@
 # required metadata
 
 title: Expired subscriptions and data deletion
-description: This topic provides information about data deletion that occurs after an Azure subscription expires. It also explains how to clean up an expired Azure subscription.
+description: This article provides information about data deletion that occurs after an Azure subscription expires. It also explains how to clean up an expired Azure subscription.
 author: AngelMarshall
 ms.date: 08/16/2021
 ms.topic: article

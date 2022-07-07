@@ -4,7 +4,7 @@
 
 title: Upgrade warehouse management from Microsoft Dynamics AX 2012 to Supply Chain Management 
 
-description: This topic provides an overview of product and warehouse management migration options.
+description: This article provides an overview of product and warehouse management migration options.
 author: perlynne
 ms.date: 06/20/2017
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the process of upgrading from Microsoft Dynamics AX 2012 R3, running the WMSII module, to Supply Chain Management .
+This article provides an overview of the process of upgrading from Microsoft Dynamics AX 2012 R3, running the WMSII module, to Supply Chain Management .
 
 Supply Chain Management no longer supports the legacy **WMSII** module from Microsoft Dynamics AX 2012. Instead, you can use the **Warehouse management** module. In the WMSII module, the Location and Pallet ID inventory dimensions could be selected for financial inventory, however, the Pallet ID inventory dimension cannot be used for financial inventory in Supply Chain Management .
 
@@ -43,11 +43,11 @@ During an upgrade, all products that are associated with a storage dimension gro
 After the upgrade, you can use a set of options in the **Change storage dimension group for items** form to unblock products that were blocked during upgrade, and then process transactions for those products.
 
 ### Enabling items in Supply Chain Management 
-This change is required because in Supply Chain Management, item tracking is part of the warehouse management processes. For these processes, all warehouses and their locations must be associated with a location profile. If you want to use warehouse management processes, the following must be configured:
--   Existing warehouses must be enabled to use warehouse management processes 
--   Existing released products must be associated with a storage dimension group that uses warehouse management processes 
+This change is required because in Supply Chain Management, item tracking is part of the warehouse management processes (WMS). For these processes, all warehouses and their locations must be associated with a location profile. If you want to use WMS, the following must be configured:
+-   Existing warehouses must be enabled to use WMS 
+-   Existing released products must be associated with a storage dimension group that uses WMS 
 
-If the source storage dimension groups use the Pallet ID inventory dimension, the locations of existing on-hand inventory that used the Pallet ID inventory dimension must be associated with a location profile in which the **Use license plate tracking** parameter is selected. If the existing warehouses should not be enabled to use warehouse management processes, you can change the storage dimension groups of the existing on-hand inventory to groups that handle only the Site, Warehouse, and Location inventory dimensions. 
+If the source storage dimension groups use the Pallet ID inventory dimension, the locations of existing on-hand inventory that used the Pallet ID inventory dimension must be associated with a location profile in which the **Use license plate tracking** parameter is selected. If the existing warehouses should not be enabled to use WMS, you can change the storage dimension groups of the existing on-hand inventory to groups that handle only the Site, Warehouse, and Location inventory dimensions. 
 
 > [!NOTE] 
 >  You can change the storage dimension group for items even if open inventory transactions exist.
@@ -62,12 +62,12 @@ To be used as part of a warehouse management process, an item must be associated
 To unblock products that were blocked during upgrade, you must select a new storage dimension group for the products. Note that you can change the storage dimension group even if open inventory transactions exist. To use items that were blocked during upgrade, you have two options:
 
 -   Change the storage dimension group for the item to a storage dimension group that uses only the Site, Warehouse, and Location inventory dimensions. As a result of this change, the Pallet ID inventory dimension is no longer used.
--   Change the storage dimension group for the item to a storage dimension group that uses the warehouse management processes. As a result of this change, the License plate inventory dimension is now used.
+-   Change the storage dimension group for the item to a storage dimension group that uses WMS. As a result of this change, the License plate inventory dimension is now used.
 
-## Configure warehouse management processes
+## Configure WMS
 Before you can use released products in the **Warehouse management** module, the products must use a storage dimension group where the **Use warehouse management processes** parameter is selected.
 
-### Enable warehouses to use warehouse management processes
+### Enable warehouses to use WMS
 
 1.  Create at least one new location profile.
 2.  Click **Warehouse management** &gt; **Setup** &gt; **Enable warehouse management processes** &gt; **Enable warehouse setup**.
@@ -76,7 +76,7 @@ Before you can use released products in the **Warehouse management** module, the
 5.  Validate the changes. As part of the validation process, various validations of data integrity occur. As part of a larger upgrade process, issues that occur might have to be adjusted on the source implementation. In this case, an additional data upgrade will be required.
 6.  Process the changes.
 
-### Change the storage dimension group for items, so that it uses warehouse management processes
+### Change the storage dimension group for items, so that it uses WMS
 
 1.  Create a new **Inventory status** value, and assign it as the **Default inventory status ID** value in the **Warehouse management parameters** settings.
 2.  Create a new storage dimension group where the **Use warehouse management processes** parameter is selected.

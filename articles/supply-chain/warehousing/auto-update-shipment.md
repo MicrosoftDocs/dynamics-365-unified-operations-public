@@ -2,7 +2,7 @@
 # required metadata
 
 title: Shipment auto-updates
-description: This topic provides an overview of functionality that provides automatic updates for shipments.
+description: This article provides an overview of functionality that provides automatic updates for shipments.
 author: Mirzaab
 ms.date: 11/04/2019
 ms.topic: article
@@ -35,7 +35,7 @@ The auto-update shipment functionality automatically updates quantities (both in
 
 When the auto-update shipment functionality isn't used, only quantity decreases automatically flow until warehouse work is created. Users must manually update or delete lines, and they must then re-release lines if order quantities are increased or new order lines are added. By using the auto-update shipment functionality, businesses can seamlessly provide updates to the warehouse without having to worry that related shipments and loads won't reflect order line updates.
 
-The auto-update shipment functionality applies to both sales order lines and transfer order lines, and it's turned on for a specific warehouse. Therefore, companies can apply different auto-update shipment policies across warehouses, as they require. By default, the auto-update shipment policy for quantity decreases is applied for all warehouses that use warehouse management processes. When this default policy setting is used, only quantity decreases automatically flow through to a shipment and load until warehouse work is created. This behavior resembles the behavior that was used before the auto-update shipment functionality was introduced.
+The auto-update shipment functionality applies to both sales order lines and transfer order lines, and it's turned on for a specific warehouse. Therefore, companies can apply different auto-update shipment policies across warehouses, as they require. By default, the auto-update shipment policy for quantity decreases is applied for all warehouses that use warehouse management processes (WMS). When this default policy setting is used, only quantity decreases automatically flow through to a shipment and load until warehouse work is created. This behavior resembles the behavior that was used before the auto-update shipment functionality was introduced.
 
 ## Main elements of the functionality
 

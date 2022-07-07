@@ -2,7 +2,7 @@
 # required metadata
 
 title: Partial fixed asset disassembly (liquidation)
-description: This topic provides information about partial fixed asset disassembly or liquidation for Russia.
+description: This article provides information about partial fixed asset disassembly or liquidation for Russia.
 author: v-oloski
 ms.date: 07/28/2021
 ms.topic: article

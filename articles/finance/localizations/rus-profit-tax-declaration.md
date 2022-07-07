@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Profit tax declaration 
-description: This topic provides information about the profit tax declaration for Russia.
+description: This article provides information about the profit tax declaration for Russia.
 author: anasyash
 ms.date: 03/17/2020
 ms.topic: article

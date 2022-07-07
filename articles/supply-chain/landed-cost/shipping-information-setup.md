@@ -2,7 +2,7 @@
 # required metadata
 
 title: Shipping information setup
-description: This topic describes how to set up shipping information for the Landed cost module.
+description: This article describes how to set up shipping information for the Landed cost module.
 author: Weijiesa
 ms.date: 12/04/2020
 ms.topic: article
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to set up shipping information for the **Landed cost** module.
+This article describes how to set up shipping information for the **Landed cost** module.
 
 ## <a name="description-of-goods"></a>Description of goods
 

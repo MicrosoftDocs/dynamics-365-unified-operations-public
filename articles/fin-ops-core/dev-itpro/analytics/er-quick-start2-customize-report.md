@@ -2,7 +2,7 @@
 # required metadata
 
 title: Adjust an ER format to generate a custom electronic document
-description: This topic explains how to adjust a Microsoft-provided Electronic reporting (ER) format so that it generates a custom electronic document.
+description: This article explains how to adjust a Microsoft-provided Electronic reporting (ER) format so that it generates a custom electronic document.
 author: NickSelin
 ms.date: 06/22/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-The procedures in this topic explain how a user in the System Administrator or Electronic Reporting Functional Consultant role can perform these tasks:
+The procedures in this article explain how a user in the System Administrator or Electronic Reporting Functional Consultant role can perform these tasks:
 
 - Configure parameters for the [Electronic reporting (ER) framework](general-electronic-reporting.md).
 - Import ER configurations that are provided by Microsoft and used to generate a payment file while a [vendor payment](../../../finance/cash-bank-management/tasks/vendor-payment-overview.md) is being processed.

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Container module
-description: This topic covers container modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This article covers container modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 09/15/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic covers container modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers container modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 A container module is a module that hosts other modules inside it. The primary purpose of a container module is to define, through the properties that are set for it, the layout of the modules that it contains. For example, those modules can appear side by side in a two-column, three-column, four-column, or six-column layout. They can also be limited to the width of the container, or they can fill the screen. A heading can also be added to every container module.
 
@@ -102,17 +102,20 @@ Additional properties can be used to optimize the layout for different view port
 To add a container player module to a new page and set the required properties, follow these steps.
 
 1. Go to **Templates**, and select **New** to create a new template.
-1. In the **New Template** dialog box, under **Template name**, enter **Container template**, and then select **OK**.
-1. In the **Body** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Default Page** module, and then select **OK**.
+1. In the **New template** dialog box, under **Template name**, enter **Container template**, and then select **OK**.
+1. In the **Body** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Default Page** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it. 
 1. Go to **Pages**, and select **New** to create a new page.
-1. In the **Choose a template** dialog box, select the video player template that you created. Under **Page name**, enter **Container page**, and then select **OK**.
-1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Container** module, and then select **OK**.
+1. In the **Create a new page** dialog box, under **Page name**, enter **Container page**, and then select **Next**.
+1. Under **Choose a template**, select the **Container template** that you created, and then select **Next**.
+1. Under **Choose a layout**, select a page layout (for example, **Flexible layout**), and then select **Next**.
+1. Under **Review and finish**, review the page configuration. If you need to edit the page information, select **Back**. If the page information is correct, select **Create page**. 
+1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
 1. In the property pane for the container module, set the **Number of columns** property to **1** and the **Width** property to **Fill container**.
-1. In the **Container** slot, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Content block** module, and then select **OK**.
+1. In the **Container** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Content block** module, and then select **OK**.
 1. In the property pane for the content block module, configure the heading, image, and layout.
 1. Select **Save**, and then select **Preview** to preview the page. You should see one feature module that fits within the width of the container module.
 1. In the property pane for the container module, change the value of the **Number of columns** property to **3**.

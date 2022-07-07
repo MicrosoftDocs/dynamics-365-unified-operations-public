@@ -2,7 +2,7 @@
 # required metadata
 
 title: View POS extension package information
-description: This topic provides information about the Extension packages section of the Settings view in the point of sale (POS).
+description: This article provides information about the Extension packages section of the Settings view in the point of sale (POS).
 author: mugunthanm
 ms.date: 04/25/2019
 ms.topic: article

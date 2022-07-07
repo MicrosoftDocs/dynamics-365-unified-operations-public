@@ -45,7 +45,7 @@ A Tier-2 environment (multi-box) is required to preview Finance insights. For ba
 
 ### Version requirements
 
-This topic applies to Microsoft Dynamics 365 Finance version 10.0.21 and later.
+This article applies to Microsoft Dynamics 365 Finance version 10.0.21 and later.
 
 ### License requirements
 

@@ -1,6 +1,6 @@
 ---
 title: Set up a build pipeline for the independent-packaging SDK
-description: This topic explains how to set up a build pipeline for the Retail software development kit (SDK) so that you can generate the Cloud Scale Unit and self-service deployable packages for extension code.
+description: This article explains how to set up a build pipeline for the Retail software development kit (SDK) so that you can generate the Cloud Scale Unit and self-service deployable packages for extension code.
 author: mugunthanm
 ms.date: 05/17/2021
 ms.topic: article
@@ -16,9 +16,9 @@ ms.dyn365.ops.version: AX 10.0.19
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up a build pipeline for the Retail software development kit (SDK) so that you can generate the Cloud Scale Unit and self-service deployable packages for extension code (by using the new independent extension model).
+This article explains how to set up a build pipeline for the Retail software development kit (SDK) so that you can generate the Cloud Scale Unit and self-service deployable packages for extension code (by using the new independent extension model).
 
-This topic applies to version 10.0.19 and later of the Retail SDK. The steps that are described in this topic won't work if you're using the previous version of the Retail SDK from the developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). The information in this topic is applicable if you're using the new independent extension model (that is, if you're consuming the packages from the public feed), and the independent packaging and extension model.
+This article applies to version 10.0.19 and later of the Retail SDK. The steps that are described in this article won't work if you're using the previous version of the Retail SDK from the developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). The information in this article is applicable if you're using the new independent extension model (that is, if you're consuming the packages from the public feed), and the independent packaging and extension model.
 
 ## Set up a build pipeline in Azure DevOps to generate a Cloud Scale Unit extension package
 

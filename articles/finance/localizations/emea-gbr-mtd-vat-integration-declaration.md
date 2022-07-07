@@ -2,7 +2,7 @@
 # required metadata
 
 title: VAT setup details for VAT declarations in the United Kingdom
-description: This topic provides details about the value-added tax (VAT) setup for VAT declarations in the United Kingdom (UK).
+description: This article provides details about the value-added tax (VAT) setup for VAT declarations in the United Kingdom (UK).
 author: liza-golub
 ms.date: 09/07/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.22
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides details about the value-added tax (VAT) setup for VAT declarations in the United Kingdom (UK).
+This article provides details about the value-added tax (VAT) setup for VAT declarations in the United Kingdom (UK).
 
 Information about the administration of VAT in the UK can be found on the official website for the tax authority of the UK, [Her Majesty's Revenue and Customs (HMRC)](https://www.gov.uk/topic/business-tax/vat).
 

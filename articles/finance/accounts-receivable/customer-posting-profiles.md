@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer posting profiles
-description: This topic describes customer posting profiles, which control the posting of customer transactions to the general ledger.
+description: This article describes customer posting profiles, which control the posting of customer transactions to the general ledger.
 author: JodiChristiansen
 ms.date: 12/22/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes customer posting profiles, which control the posting of customer transactions to the general ledger.
+This article describes customer posting profiles, which control the posting of customer transactions to the general ledger.
 
 ## Customer posting profiles
 

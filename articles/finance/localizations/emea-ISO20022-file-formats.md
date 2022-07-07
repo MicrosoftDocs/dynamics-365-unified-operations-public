@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import ISO20022 files 
-description: This topic explains how to import payment files of the ISO 20022 camt.054 and pain.002 formats into Microsoft Dynamics 365 Finance.
+description: This article explains how to import payment files of the ISO 20022 camt.054 and pain.002 formats into Microsoft Dynamics 365 Finance.
 author: anasyash
 ms.date: 07/27/2017
 ms.topic: article

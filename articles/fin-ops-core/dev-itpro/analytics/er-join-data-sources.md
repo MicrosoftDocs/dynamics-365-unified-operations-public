@@ -2,7 +2,7 @@
 # required metadata
 
 title: Use JOIN data sources in ER model mappings to get data from multiple application tables
-description: This topic explains how you can use JOIN type data sources in Electronic reporting (ER).
+description: This article explains how you can use JOIN type data sources in Electronic reporting (ER).
 author: NickSelin
 ms.date: 04/26/2021
 ms.topic: article
@@ -45,7 +45,7 @@ In the configured **Join** data source, when all data sources are the **Table re
 > [!NOTE]
 > Using the **VALUEIN** function in ER expressions that specify conditions for joining records in data sources of Join type is not supported yet. Visit the [Formula designer in Electronic reporting](general-electronic-reporting-formula-designer.md) page for more details about this function.
 
-To learn more about this feature, complete the example in this topic.
+To learn more about this feature, complete the example in this article.
 
 ## Example: Use JOIN data sources in ER model mappings
 
@@ -53,7 +53,7 @@ The following steps explain how the System administrator or Electronic reporting
 
 ### Prerequisites
 
-To complete the examples in this topic, you must have access to one of the following depending on what service is used to compete these steps:
+To complete the examples in this article, you must have access to one of the following depending on what service is used to compete these steps:
 
 **Access to Finance for one of the following roles:**
 
@@ -262,7 +262,7 @@ Review settings of the ER model-mapping component. The component is configured t
 
 ## Limitations
 
-As you can see from the example in this topic, the **JOIN** data source can be built from several data sources that describe the individual datasets of the records that must eventually be joined. You can configure those data sources by using the built-in ER [FILTER](er-functions-list-filter.md) function. When you configure the data source so that it's called beyond the **JOIN** data source, you can use company ranges as part of the condition for data selection. The initial implementation of the **JOIN** data source doesn't support data sources of this type. For example, when you call a [FILTER](er-functions-list-filter.md)-based data source within the scope of execution of a **JOIN** data source, if the called data source contains company ranges as part of the condition for data selection, an exception occurs.
+As you can see from the example in this article, the **JOIN** data source can be built from several data sources that describe the individual datasets of the records that must eventually be joined. You can configure those data sources by using the built-in ER [FILTER](er-functions-list-filter.md) function. When you configure the data source so that it's called beyond the **JOIN** data source, you can use company ranges as part of the condition for data selection. The initial implementation of the **JOIN** data source doesn't support data sources of this type. For example, when you call a [FILTER](er-functions-list-filter.md)-based data source within the scope of execution of a **JOIN** data source, if the called data source contains company ranges as part of the condition for data selection, an exception occurs.
 
 In Microsoft Dynamics 365 Finance version 10.0.12 (August 2020), you can use company ranges as part of the condition for data selection in [FILTER](er-functions-list-filter.md)-based data sources that are called within the scope of execution of a **JOIN** data source. Because of the limitations of the application [query](../dev-ref/xpp-library-objects.md#query-object-model) builder, the company ranges are supported only for the first data source of a **JOIN** data source.
 

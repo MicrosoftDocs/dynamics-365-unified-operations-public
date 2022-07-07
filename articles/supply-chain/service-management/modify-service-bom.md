@@ -36,7 +36,7 @@ You can record the history of an element in a service BOM. Every time that you u
 
 ## Update a service BOM element
 
-1.  Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+1.  Click **Service management** \> **Service agreements** \> **Service agreements**.
 
 2.  Click **Edit** to open the **Service agreements** details form.
 
@@ -57,7 +57,7 @@ You can record the history of an element in a service BOM. Every time that you u
 
 ## Delete a service BOM line
 
-1.  Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+1.  Click **Service management** \> **Service agreements** \> **Service agreements**.
 
 2.  Click **Edit** to open the **Service agreements** details form.
 

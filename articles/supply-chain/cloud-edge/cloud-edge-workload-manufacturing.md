@@ -2,9 +2,9 @@
 # required metadata
 
 title: Manufacturing execution workloads for cloud and edge scale units
-description: This topic describes how manufacturing execution workloads work with cloud and edge scale units.
+description: This article describes how manufacturing execution workloads work with cloud and edge scale units.
 author: johanhoffmann
-ms.date: 10/06/2020
+ms.date: 07/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,6 +29,7 @@ ms.dyn365.ops.version: 10.0.15
 # Manufacturing execution workloads for cloud and edge scale units
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [cloud-edge-paused-banner](../includes/cloud-edge-paused-banner.md)]
 
 > [!IMPORTANT]
 > The manufacturing execution workload is currently available only in preview.
@@ -44,7 +45,7 @@ In manufacturing execution, scale units deliver the following capabilities:
 - The shop floor supervisor can adjust the operational plan.
 - Workers can access time and attendance for clock-in and clock-out on the edge, to ensure correct worker pay calculation.
 
-This topic describes how manufacturing execution workloads work with cloud and edge scale units.
+This article describes how manufacturing execution workloads work with cloud and edge scale units.
 
 ## The manufacturing lifecycle
 

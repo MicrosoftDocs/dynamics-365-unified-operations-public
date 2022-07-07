@@ -2,7 +2,7 @@
 # required metadata
 
 title: SQL Server Reporting Services (SSRS) reports that are available
-description: This topic points you to a report that lists the SQL Server Reporting Services (SSRS) reports available.
+description: This article points you to a report that lists the SQL Server Reporting Services (SSRS) reports available.
 author: sericks007
 ms.date: 02/16/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic points you to a report that lists the SQL Server Reporting Services (SSRS) reports available.
+This article points you to a report that lists the SQL Server Reporting Services (SSRS) reports available.
 
 Reports can be defined simply as any visualization of a structured data set. This may include transactional data presented in a tabular layout and advanced graphical views of aggregate information. To account for this broad definition, the application offers several tools to produce reports to satisfy complex business requirements. One of these tools is SQL Server Reporting Services. SSRS reports provide the following advantages:
 

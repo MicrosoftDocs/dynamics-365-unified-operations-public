@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchase order codes in the public sector
-description: This topic provides information about the codes and special messages that can be used with confirming purchase orders.
+description: This article provides information about the codes and special messages that can be used with confirming purchase orders.
 author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article

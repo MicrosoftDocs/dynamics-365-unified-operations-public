@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fiscal registration service integration sample for the Czech Republic
-description: This topic provides an overview of the fiscal integration sample for the Czech Republic in Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of the fiscal integration sample for the Czech Republic in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.2
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides an overview of the fiscal integration sample for the Czech Republic in Microsoft Dynamics 365 Commerce.
+This article provides an overview of the fiscal integration sample for the Czech Republic in Microsoft Dynamics 365 Commerce.
 
 To meet local fiscal requirements for cash registers in the Czech Republic, the Dynamics 365 Commerce functionality for the Czech Republic includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](https://efsta.org/sicherheitsloesungen/) solution from [EFSTA](https://efsta.org/) and enables communication with the EFR service via the HTTPS protocol. The EFR service ensures Electronic Registration of Sales (EET - Elektronická evidence tržeb), that is, the online transmission of the sales data to a fiscal web service of tax authorities.
 

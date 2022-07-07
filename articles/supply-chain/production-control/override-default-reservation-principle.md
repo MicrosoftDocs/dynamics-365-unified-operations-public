@@ -2,7 +2,7 @@
 # required metadata
 
 title: Override the default reservation principle for materials in production
-description: This topic describes how to set a default reservation principle for each item model group, so that different reservation principles can automatically be applied for each item that is part of a production bill of materials (BOM) or batch order formula.
+description: This article describes how to set a default reservation principle for each item model group, so that different reservation principles can automatically be applied for each item that is part of a production bill of materials (BOM) or batch order formula.
 author: johanhoffmann
 ms.date: 12/10/2020
 ms.topic: article
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho

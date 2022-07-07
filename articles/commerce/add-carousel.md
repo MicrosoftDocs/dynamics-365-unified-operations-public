@@ -2,7 +2,7 @@
 # required metadata
 
 title: Carousel module 
-description: This topic covers carousel modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This article covers carousel modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 ms.date: 09/15/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-This topic covers carousel modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers carousel modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 A carousel module is used to put multiple promotional items (including rich images) in a rotating carousel banner that customers can browse. For example, a retailer can use a carousel module on a home page to showcase multiple new products or promotions.
 

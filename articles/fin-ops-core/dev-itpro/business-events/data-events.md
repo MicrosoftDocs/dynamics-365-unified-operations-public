@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data events
-description: This topic provides an overview of data events.
+description: This article provides an overview of data events.
 author: jaredha
 ms.date: 05/03/2022
 ms.topic: article
@@ -27,16 +27,16 @@ ms.dyn365.ops.version: 10.0.22
 # Data events
 [!include[banner](../includes/banner.md)]
 
-Data events are events that are based on changes to data in Finance and Operations apps. Create, update, and delete (CUD) events can be enabled for each entity. For example, if the **Create** event is enabled for the **Purchase order headers V2** entity, an event notification is emitted every time that a new purchase order is created in the database.
+Data events are events that are based on changes to data in finance and operations apps. Create, update, and delete (CUD) events can be enabled for each entity. For example, if the **Create** event is enabled for the **Purchase order headers V2** entity, an event notification is emitted every time that a new purchase order is created in the database.
 
-All standard and custom entities in Finance and Operations apps that are enabled for Open Data Protocol (OData) can emit data events. In the data event catalog, each event for an entity is listed as a data event that subscriptions can be established for. The concept of activating the data event and associating it with an endpoint resembles the concept of business events. When a data event occurs, the payload of the event contains the corresponding entity record.
+All standard and custom entities in finance and operations apps that are enabled for Open Data Protocol (OData) can emit data events. In the data event catalog, each event for an entity is listed as a data event that subscriptions can be established for. The concept of activating the data event and associating it with an endpoint resembles the concept of business events. When a data event occurs, the payload of the event contains the corresponding entity record.
 
 > [!IMPORTANT]
 > Data events are available only in environments that the Microsoft Power Platform integration is enabled for. For more information, see [Enable the Microsoft Power Platform integration](../power-platform/enable-power-platform-integration.md).
 
 ## Data event catalog
 
-To access the data event catalog, select the **Data event catalog** tab on the **Business events** page (**System administration** \> **Setup** \> **Business event**). The data event catalog provides a complete list of the available data events in the Finance and Operations apps environment. For each data event, the list shows the category, event ID, and name. It also indicates whether the event is company-specific. You can filter the list by category and data event ID.
+To access the data event catalog, select the **Data event catalog** tab on the **Business events** page (**System administration** \> **Setup** \> **Business event**). The data event catalog provides a complete list of the available data events in the finance and operations apps environment. For each data event, the list shows the category, event ID, and name. It also indicates whether the event is company-specific. You can filter the list by category and data event ID.
 
 ![Data event catalog tab on the Business events page.](../media/businessevents_dataeventscatalog.png)
 
@@ -72,7 +72,7 @@ The **Data event catalog** doesn't provide the same capability for downloading t
 
 The data events functionality currently supports a burst rate of 5,000 events per five-minute period, up to 50,000 events per hour, across all entities for the environment. Event loads above these thresholds may encounter performance degradation in environment processing. There are no limits in place to explicitly throttle events, and any events above the supported thresholds will still be sent, but it may slow the performance of the environment. 
 
-Data events for update operations are inherently more expensive to process than data events for create and delete operations in Finance and Operations. If your active data events are for update operations, you may see environment performance degrade more quickly when exceeding the supported thresholds.
+Data events for update operations are inherently more expensive to process than data events for create and delete operations in finance and operations. If your active data events are for update operations, you may see environment performance degrade more quickly when exceeding the supported thresholds.
 
 ## Limitations
 
@@ -81,5 +81,6 @@ Data events are not supported for updates to virtual fields. Modify data events 
 For more information on virtual fields, see [Computed columns and virtual fields in data entities](../data-entities/data-entity-computed-columns-virtual-fields.md).
 
 [!include[banner](../includes/banner.md)]
+
 
 

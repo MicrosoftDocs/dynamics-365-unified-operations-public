@@ -2,7 +2,7 @@
 # required metadata
 
 title: Change mode of delivery in POS
-description: This topic describes how to configure and use the change mode of delivery operation in POS.
+description: This article describes how to configure and use the change mode of delivery operation in POS.
 author: hhainesms
 ms.date: 03/01/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.11
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to set up and use the "change mode of delivery" functionality in your point of sale (POS) environment. 
+This article describes how to set up and use the "change mode of delivery" functionality in your point of sale (POS) environment. 
 
 In Dynamics 365 Commerce versions 10.0.10 and later, the **Change mode of delivery** operation (647) is available to add to your POS screen layouts.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Module mock file
-description: This topic covers the module mock file in Microsoft Dynamics 365 Commerce.
+description: This article covers the module mock file in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/31/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers the module mock file in Microsoft Dynamics 365 Commerce.
+This article covers the module mock file in Microsoft Dynamics 365 Commerce.
 
 Module mock files are used to configure mock data for modules. Therefore, they can help you do local testing. The default module mock file is located at \\src\\MODULE\_NAME\\MOCKS\\MODULE\_NAME.json.
 

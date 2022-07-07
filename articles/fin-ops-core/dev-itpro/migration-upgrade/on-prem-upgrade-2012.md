@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data upgrade process for AX 2012 to Dynamics 365 Finance + Operations (on-premises)
-description: This topic describes the process for upgrading Microsoft Dynamics AX 2012 databases to Dynamics 365 Finance + Operations (on-premises) version 10.0.x.
+description: This article describes the process for upgrading Microsoft Dynamics AX 2012 databases to Dynamics 365 Finance + Operations (on-premises) version 10.0.x.
 author: faix
 ms.date: 12/16/2020
 ms.topic: article
@@ -12,7 +12,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -30,10 +30,10 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the process for upgrading Microsoft Dynamics AX 2012 databases to Dynamics 365 Finance + Operations (on-premises) version 10.0.x. Currently, upgrade is supported only from either Dynamics AX 2012 R2 or Dynamics AX 2012 R3. 
+This article describes the process for upgrading Microsoft Dynamics AX 2012 databases to Dynamics 365 Finance + Operations (on-premises) version 10.0.x. Currently, upgrade is supported only from either Dynamics AX 2012 R2 or Dynamics AX 2012 R3. 
 
 > [!IMPORTANT]
-> This topic explains the process for doing a data upgrade only. For information about how to do a code upgrade, see the upgrade guides that are available for cloud versions. The code upgrade tooling is available only through Microsoft Dynamics Lifecycle Services (LCS).
+> This article explains the process for doing a data upgrade only. For information about how to do a code upgrade, see the upgrade guides that are available for cloud versions. The code upgrade tooling is available only through Microsoft Dynamics Lifecycle Services (LCS).
 
 ## AX 2012 upgrade to Dynamics 365 Finance + Operations (on-premises)
 
@@ -73,7 +73,7 @@ Two upgrade methods are currently supported:
     ```
 
     > [!NOTE] 
-    > Replace **\<DB-name\>** with the name of your database (for example, **AXDB**). If you want to edit more values, see the [appendix](#appendix) later in this topic.
+    > Replace **\<DB-name\>** with the name of your database (for example, **AXDB**). If you want to edit more values, see the [appendix](#appendix) later in this article.
 
     The script will run a database connection test to verify that the information that you provided is valid.
 
@@ -136,7 +136,7 @@ Two upgrade methods are currently supported:
     3. `AxUpdateInstaller.exe execute -runbookid=upgrade`
 
 1. If you have customizations from ISVs or VARs, check whether you must run some post–data upgrade scripts.
-1. Run the **Configure-OnpremUpgrade.ps1** script by using the values that are stated in the [Resetting the VHD database (Optional)](#resetting-the-vhd-database-optional) section later in this topic.
+1. Run the **Configure-OnpremUpgrade.ps1** script by using the values that are stated in the [Resetting the VHD database (Optional)](#resetting-the-vhd-database-optional) section later in this article.
 1. Configure your upgraded database for Finance + Operations by following the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
 1. Deploy a new Dynamics 365 Finance + Operations (on-premises) environment.
 

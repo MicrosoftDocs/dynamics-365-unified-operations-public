@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Incoming VAT restoring  
-description: This topic explains how to restore previously deducted VAT amounts for fixed assets.
+description: This article explains how to restore previously deducted VAT amounts for fixed assets.
 author: v-nadyuz
 ms.date: 11/12/2019
 ms.topic: article

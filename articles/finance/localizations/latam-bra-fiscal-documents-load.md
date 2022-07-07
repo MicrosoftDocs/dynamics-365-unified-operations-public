@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate fiscal documents for a load
-description: This topic explains how to generate fiscal documents for a load for Brazil.
+description: This article explains how to generate fiscal documents for a load for Brazil.
 author: ShylaThompson
 ms.date: 06/05/2018
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 7.3
 You can create a load that has multiple load lines. Each load line is created for a specific quantity of items from a sales order line. You can create one or more load lines or loads for one or more sales order lines or sales orders.
 
 > [!NOTE]
-> This topic applies to features in the **Transportation management** module. It doesn't apply to features in the Inventory management  module.
+> This article applies to features in the **Transportation management** module. It doesn't apply to features in the Inventory management  module.
 
 You can generate one or more fiscal documents for a load, depending on the sales orders that the load is created for. The quantity on a fiscal document line is the pick-up quantity for the load line, not the quantity from the sales order line.
 
@@ -75,7 +75,7 @@ The following example shows how you can create load lines and loads for sales or
     1. A fiscal document for customer C1 that has a fiscal document line for 20 units of item A
     2. A fiscal document for customer C2 that has a fiscal document line for 50 units of item C
 
-Follow the steps in this topic to generate fiscal documents for a load.
+Follow the steps in this article to generate fiscal documents for a load.
 
 ## Prerequisites
 

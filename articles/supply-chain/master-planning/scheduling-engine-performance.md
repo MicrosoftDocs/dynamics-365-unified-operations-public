@@ -2,7 +2,7 @@
 # required metadata
 
 title: Improve scheduling engine performance
-description: This topic provides information about the scheduling engine and how to improve performance. 
+description: This article provides information about the scheduling engine and how to improve performance. 
 author: t-benebo
 ms.date: 09/03/2020
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 
 The resource scheduling engine is used when scheduling routes for planned and released production orders. The engine was originally released as part of Dynamics AX 2012 and has gone through several improvements since its release.
 
-The [job shop scheduling problem](https://en.wikipedia.org/wiki/Job_shop_scheduling) is an extremely complex combinatorial problem where solution time grows exponentially with the number of decision variables. Oftentimes, customers set up production routes and related data in a way that results in a scheduling problem that can't be solved in reasonable time even on the most modern hardware. This topic will help you understand the scheduling engine and how a specific setup can have influence on the performance.
+The [job shop scheduling problem](https://en.wikipedia.org/wiki/Job_shop_scheduling) is an extremely complex combinatorial problem where solution time grows exponentially with the number of decision variables. Oftentimes, customers set up production routes and related data in a way that results in a scheduling problem that can't be solved in reasonable time even on the most modern hardware. This article will help you understand the scheduling engine and how a specific setup can have influence on the performance.
 
 When it comes to improving the performance of the scheduling, general guidelines recommend reducing the complexity of the problem the engine needs to solve. Some of the main factors that can affect performance include:
 

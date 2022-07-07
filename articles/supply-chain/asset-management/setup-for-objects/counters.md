@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset measures
-description: The topic explains how to create asset measure types in Asset Management.
+description: The article explains how to create asset measure types in Asset Management.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-The topic explains how to create counter types in Asset Management. Counter types are used to make counter registrations on assets, for example, regarding number of production hours, or quantity produced on the asset. Asset types are related to the counter types. This means that a counter can only be used on an asset if the counter is set up on the asset type used on the asset.
+The article explains how to create counter types in Asset Management. Counter types are used to make counter registrations on assets, for example, regarding number of production hours, or quantity produced on the asset. Asset types are related to the counter types. This means that a counter can only be used on an asset if the counter is set up on the asset type used on the asset.
 
 Before you can make counter registrations on assets, you first create the counter types you want to use in **Counters**. Next, you can create counter registrations on assets in **Counters**. 
 

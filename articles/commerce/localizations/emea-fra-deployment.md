@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deployment guidelines for cash registers for France (legacy)
-description: This topic is a deployment guide for the Commerce localization for France.
+description: This article is a deployment guide for the Commerce localization for France.
 author: EvgenyPopovMBS
 manager: annbe
 ms.date: 08/10/2021
@@ -32,18 +32,18 @@ ms.dyn365.ops.version: 7.3.2
 > [!IMPORTANT]
 > This sample fiscal integration functionality doesn't take advantage of the [fiscal integration framework](./fiscal-integration-for-retail-channel.md) and will be deprecated in later updates. You should use the [functionality that is based on the fiscal integration framework](./emea-fra-fi-deployment.md) instead.
 
-This topic is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](./emea-fra-cash-registers.md).
+This article is a deployment guide that shows how to enable the Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](./emea-fra-cash-registers.md).
 
 This localization is part of the Retail software development kit (SDK). For information about how to install and use the SDK, see the [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md).
 
-This localization consists of extensions for the Commerce runtime (CRT), Retail Server, and POS. To run this sample, you must modify and build the CRT, Retail Server, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
+This localization consists of extensions for the Commerce runtime (CRT), Retail Server, and POS. To run this sample, you must modify and build the CRT, Retail Server, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this article. We also recommend that you use a source control system, such as Microsoft Visual Studio Online (VSO), where no files have been changed yet.
 
 > [!NOTE]
-> In Commerce 10.0.8 and above, Retail Server is known as Commerce Scale Unit. Because this topic applies to multiple previous versions of the app, *Retail Server* is used throughout the topic.
+> In Commerce 10.0.8 and above, Retail Server is known as Commerce Scale Unit. Because this article applies to multiple previous versions of the app, *Retail Server* is used throughout the article.
 
 ## Storing a certificate for digital signing in Azure Key Vault
 
-The digital signature extension uses a certificate that is installed in the local certificate storage of the machine where Retail Server is deployed. The thumbprint of the certificate must be specified in the configuration file (see the [SequentialSignatureRegister component](#sequentialsignatureregister-component) section later in this topic). Depending on the implementation topology, the certificate might have to be stored in [Microsoft Azure Key Vault storage](/azure/key-vault/key-vault-get-started). The localization for France contains a code sample that shows how to override the signing flow and sign sales transactions by using a certificate that is stored in Azure Key Vault storage.
+The digital signature extension uses a certificate that is installed in the local certificate storage of the machine where Retail Server is deployed. The thumbprint of the certificate must be specified in the configuration file (see the [SequentialSignatureRegister component](#sequentialsignatureregister-component) section later in this article). Depending on the implementation topology, the certificate might have to be stored in [Microsoft Azure Key Vault storage](/azure/key-vault/key-vault-get-started). The localization for France contains a code sample that shows how to override the signing flow and sign sales transactions by using a certificate that is stored in Azure Key Vault storage.
 
 ### Prerequisites
 
@@ -94,7 +94,7 @@ To override the signing flow, follow these steps.
     ```
 
 > [!NOTE]
-> The thumbprint of the certificate that is used for digital signing should be specified in the configuration file of the SequentialSignatureRegister assembly, even if the certificate is stored in Azure Key Vault storage. For more information, see the [SequentialSignatureRegister component](#sequentialsignatureregister-component) section later in this topic.
+> The thumbprint of the certificate that is used for digital signing should be specified in the configuration file of the SequentialSignatureRegister assembly, even if the certificate is stored in Azure Key Vault storage. For more information, see the [SequentialSignatureRegister component](#sequentialsignatureregister-component) section later in this article.
 
 ### Using certificate profiles in Commerce channels
 
@@ -170,7 +170,7 @@ private const string CertificateNumber = "18/0202";
 ```
 
 > [!NOTE]
-> You must also override the certificate category and number if you're implementing Commerce. In this case, use the certificate category and number that are provided in the [Specifying application attributes that will be printed on receipts](#specifying-application-attributes-that-will-be-printed-on-receipts) section earlier in this topic.
+> You must also override the certificate category and number if you're implementing Commerce. In this case, use the certificate category and number that are provided in the [Specifying application attributes that will be printed on receipts](#specifying-application-attributes-that-will-be-printed-on-receipts) section earlier in this article.
 
 ## Development environment
 
@@ -709,7 +709,7 @@ For more information, see [Cash register functionality for France](./emea-fra-ca
 
 Follow these steps to create deployable packages that contain Commerce components, and to apply those packages in a production environment.
 
-1. Complete the steps in the [Cloud POS extension components](#cloud-pos-extension-components) or [Modern POS extension components](#modern-pos-extension-components) section earlier in this topic.
+1. Complete the steps in the [Cloud POS extension components](#cloud-pos-extension-components) or [Modern POS extension components](#modern-pos-extension-components) section earlier in this article.
 2. Make the following changes in the package configuration files under the **RetailSdk\\Assets** folder:
 
     1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files, add the following lines to the **composition** section:
@@ -758,7 +758,7 @@ Follow these steps to create deployable packages that contain Commerce component
         To use a certificate that is stored in Azure Key Vault storage for digital signing, add the following line.
 
         > [!NOTE]
-        > Before you add this line, complete the steps in the [Storing a certificate for digital signing in Azure Key Vault](#storing-a-certificate-for-digital-signing-in-azure-key-vault) section earlier in this topic.
+        > Before you add this line, complete the steps in the [Storing a certificate for digital signing in Azure Key Vault](#storing-a-certificate-for-digital-signing-in-azure-key-vault) section earlier in this article.
 
         ``` xml
         <add source="assembly" value="Contoso.Commerce.Runtime.DataSignatureKeyVaultSample" />
@@ -828,7 +828,7 @@ Follow these steps to create deployable packages that contain Commerce component
         To use a certificate that is stored in Azure Key Vault storage for digital signing, add the following line.
 
         > [!NOTE]
-        > Before you add this line, complete the steps in the [Storing a certificate for digital signing in Azure Key Vault](#storing-a-certificate-for-digital-signing-in-azure-key-vault) section, earlier in this topic.
+        > Before you add this line, complete the steps in the [Storing a certificate for digital signing in Azure Key Vault](#storing-a-certificate-for-digital-signing-in-azure-key-vault) section, earlier in this article.
 
         ``` xml
         <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DataSignatureKeyVaultSample.dll" />
@@ -847,7 +847,7 @@ Follow these steps to create deployable packages that contain Commerce component
     ```
 
 5. Modify the certificate's configuration file by specifying the thumbprint, store location, and store name for the certificate that should be used to sign sales transactions. Then copy the configuration file to the **References** folder. The file is named **Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config**, and it's under **Extensions.SequentialSignatureRegister\\bin\\Debug**.
-6. Override the build number and the category and number of the certificate of compliance, as required. For more information, see the instructions in the [Specifying application attributes that will be printed on receipts](#specifying-application-attributes-that-will-be-printed-on-receipts) section earlier in this topic.
+6. Override the build number and the category and number of the certificate of compliance, as required. For more information, see the instructions in the [Specifying application attributes that will be printed on receipts](#specifying-application-attributes-that-will-be-printed-on-receipts) section earlier in this article.
 7. Start the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 8. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 

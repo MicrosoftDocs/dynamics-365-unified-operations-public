@@ -2,7 +2,7 @@
 # required metadata
 
 title: Database movement API - Reference - v1 - Overview
-description: This topic provides a reference for version 1 (v1) of the Database Movement application programming interface (API).
+description: This article provides a reference for version 1 (v1) of the Database Movement application programming interface (API).
 author: laneswenka
 ms.date: 09/30/2020
 ms.topic: overview

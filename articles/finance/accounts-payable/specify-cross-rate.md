@@ -2,7 +2,7 @@
 # required metadata
 
 title: Specify the cross rate
-description: This topic provides information about cross rates in Microsoft Dynamics 365 Finance. 
+description: This article provides information about cross rates in Microsoft Dynamics 365 Finance. 
 author: abruer
 ms.date: 05/16/2018
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the purpose of a cross rate, and how to specify the cross rate when you settle a payment with an invoice. Use a cross rate when the following criteria apply: 
+This article explains the purpose of a cross rate, and how to specify the cross rate when you settle a payment with an invoice. Use a cross rate when the following criteria apply: 
 -	You are settling a payment with an invoice. 
 -	The payment line and the invoice line use different currencies. 
 -	Neither currency is the accounting currency. 

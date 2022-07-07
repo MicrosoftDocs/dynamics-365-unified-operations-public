@@ -2,7 +2,7 @@
 # required metadata
 
 title: Migrate the Retail SDK from Visual Studio 2015 to Visual Studio 2017
-description: This topic explains how to migrate the Retail SDK to Visual Studio 2017 and update the reference to NuGet.
+description: This article explains how to migrate the Retail SDK to Visual Studio 2017 and update the reference to NuGet.
 author: mugunthanm 
 ms.date: 08/14/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.11
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains what has changed in the 10.0.11 release of the Retail software development kit (SDK), how to migrate it to Visual Studio 2017, and how to update an extension project reference library to NuGet.
+This article explains what has changed in the 10.0.11 release of the Retail software development kit (SDK), how to migrate it to Visual Studio 2017, and how to update an extension project reference library to NuGet.
 
 ## What has changed in the 10.0.11 release
 

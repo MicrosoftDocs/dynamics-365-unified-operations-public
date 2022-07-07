@@ -2,7 +2,7 @@
 # required metadata
 
 title: Charges allocation on Bill of entry page for import orders
-description: This topic provides information about charge allocation for import orders.
+description: This article provides information about charge allocation for import orders.
 author: EricWangChen
 ms.date: 03/21/2022
 ms.topic: article

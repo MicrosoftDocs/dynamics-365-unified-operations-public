@@ -2,7 +2,7 @@
 # required metadata
 
 title: Removed or deprecated features in Dynamics 365 Commerce 
-description: This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
+description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
 author: josaw
 ms.date: 04/27/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 33
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
+This article describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
@@ -37,7 +37,7 @@ This topic describes features that have been removed, or that are planned for re
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
 > [!NOTE]
-> Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+> Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
 ## Features removed or deprecated in the Commerce 10.0.25 release
 
@@ -201,3 +201,4 @@ To learn more about features that have been removed or deprecated in previous re
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

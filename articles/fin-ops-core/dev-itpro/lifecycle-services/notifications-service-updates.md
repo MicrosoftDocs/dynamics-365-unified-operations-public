@@ -2,7 +2,7 @@
 # required metadata
 
 title: Get notified about service updates through Lifecycle Services (LCS)
-description: This topic explains the various ways that you can be notified about service updates to your environments.
+description: This article explains the various ways that you can be notified about service updates to your environments.
 author: angelmarshall
 ms.date: 07/02/2019
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 24
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can stay up to date about service updates from Microsoft.
+This article explains how you can stay up to date about service updates from Microsoft.
 
 Microsoft uses service updates to update your configured sandbox and production environments to the latest released version. Microsoft notifies you about upcoming updates to your environments via email and through notifications in Microsoft Dynamics Lifecycle Services (LCS).
 

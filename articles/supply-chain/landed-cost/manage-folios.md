@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage folios
-description: This topic describes how to work with folios. A folio typically consists of one vendor's goods for one entity or company per shipment. The goods in a folio can be in one container, or they can be spread among multiple containers.
+description: This article describes how to work with folios. A folio typically consists of one vendor's goods for one entity or company per shipment. The goods in a folio can be in one container, or they can be spread among multiple containers.
 author: Weijiesa
 ms.date: 12/14/2020
 ms.topic: article
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa
@@ -137,7 +137,7 @@ To open the **Lines** view, open a folio, and then select the **Lines** tab in t
 
 ### Information on the Folio FastTab
 
-The **Folio** FastTab in the **Lines** view shows information about the folio. Most of this information also appears in the **Header** view, as described earlier in this topic.
+The **Folio** FastTab in the **Lines** view shows information about the folio. Most of this information also appears in the **Header** view, as described earlier in this article.
 
 ### Information and buttons on the Lines FastTab
 

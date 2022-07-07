@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Configure format to do counting and summing (Part 2 - Configure computations)
-description: This topic describes how to configure an Electronic reporting format to do counting and summing based on data of the already generated text output. (Part 2)
+description: This article describes how to configure an Electronic reporting format to do counting and summing based on data of the already generated text output. (Part 2)
 author: NickSelin
 ms.date: 08/29/2018
 ms.topic: business-process 

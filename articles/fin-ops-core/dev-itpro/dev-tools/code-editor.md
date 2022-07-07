@@ -1,6 +1,6 @@
 ---
 title: Code editor features
-description: This topic describes the code editor for Visual Studio.
+description: This article describes the code editor for Visual Studio.
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the code editor for Visual Studio.
+This article describes the code editor for Visual Studio.
 
 ## Code editor
 

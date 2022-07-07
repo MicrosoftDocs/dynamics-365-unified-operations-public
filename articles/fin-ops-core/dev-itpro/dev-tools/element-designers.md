@@ -1,6 +1,6 @@
 ---
 title: Element designers
-description: This topic reviews the element designers and explains how to use them.
+description: This article reviews the element designers and explains how to use them.
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic reviews the element designers and explains how to use them. The tools contain designers for each kind of element in the program. You use these designers when you create or modify elements.
+This article reviews the element designers and explains how to use them. The tools contain designers for each kind of element in the program. You use these designers when you create or modify elements.
 
 ## Open an element designer
 

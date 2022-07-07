@@ -2,7 +2,7 @@
 # required metadata
 
 title: Accounts payable debt tax registers and debt write-offs
-description: This topic provides information about accounts payable debt tax registers and debt write-offs. 
+description: This article provides information about accounts payable debt tax registers and debt write-offs. 
 author: anasyash
 ms.date: 04/08/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.1
 [!include [banner](../includes/banner.md)]
 
 
-This topic provides information about accounts payable bad debts, write-offs for them, and the following tax registers:
+This article provides information about accounts payable bad debts, write-offs for them, and the following tax registers:
 -   Accounts payable inventory act
 -   Accounts payable movement
 

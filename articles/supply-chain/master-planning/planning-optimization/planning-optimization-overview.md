@@ -2,7 +2,7 @@
 # required metadata
 
 title: Planning Optimization overview
-description: This topic provides an overview of the Planning Optimization functionality.
+description: This article provides an overview of the Planning Optimization functionality.
 author: t-benebo
 ms.date: 10/31/2019
 ms.topic: overview

@@ -1,6 +1,6 @@
 ---
 title: System tables
-description: This topic describes the system tables.
+description: This article describes the system tables.
 author: RobinARH
 ms.date: 11/06/2017
 audience: Developer
@@ -15,10 +15,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic contains the documentation available for the System classes. 
+This article contains the documentation available for the System classes. 
 
 > [!NOTE]
-> This topic is not a complete list of the System table members. You can find a complete list of tables and their members in the Application Explorer.
+> This article is not a complete list of the System table members. You can find a complete list of tables and their members in the Application Explorer.
 
 ## Common
 

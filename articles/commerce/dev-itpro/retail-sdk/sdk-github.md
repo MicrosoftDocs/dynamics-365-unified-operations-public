@@ -1,6 +1,6 @@
 ---
 title: Download Retail SDK samples and reference packages from GitHub and NuGet
-description: This topic explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from a public feed.
+description: This article explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from a public feed.
 author: mugunthanm
 ms.date: 05/03/2022
 ms.topic: article
@@ -17,9 +17,9 @@ ms.dyn365.ops.version: 10.0.16
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from a public feed. The Retail SDK includes the code samples, templates, and tools that are required to extend or customize Microsoft Dynamics 365 Commerce functionality. The SDK is published in different repositories (repos) in GitHub, depending on the extension components.
+This article explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from a public feed. The Retail SDK includes the code samples, templates, and tools that are required to extend or customize Microsoft Dynamics 365 Commerce functionality. The SDK is published in different repositories (repos) in GitHub, depending on the extension components.
 
-This topic applies to Retail SDK version 10.0.16 or later. For more information about how to download earlier versions of the Retail SDK, see [Retail software development kit (SDK)](retail-sdk-overview.md).
+This article applies to Retail SDK version 10.0.16 or later. For more information about how to download earlier versions of the Retail SDK, see [Retail software development kit (SDK)](retail-sdk-overview.md).
 
 The following sample repositories contain code samples, templates, and tools that are required to extend or customize existing Commerce functionality. Samples are published to repositories in GitHub based on the Commerce extension components. You don't have to close these repositories, instead, you can download and use the samples and template projects.
 

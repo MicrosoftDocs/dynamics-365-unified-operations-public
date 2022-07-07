@@ -2,7 +2,7 @@
 # required metadata
 
 title: No matching result could be found
-description: This topic explains how to troubleshoot the "No matching result could be found" error in the Tax Calculation serivce.
+description: This article explains how to troubleshoot the "No matching result could be found" error in the Tax Calculation serivce.
 author: hangwan
 ms.date: 03/25/2022
 ms.topic: business-process
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the troubleshooting steps that you can take if you receive a "No matching result could be found" error in the Tax Calculation service.
+This article explains the troubleshooting steps that you can take if you receive a "No matching result could be found" error in the Tax Calculation service.
 
 ## Symptom
 

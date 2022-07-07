@@ -2,7 +2,7 @@
 # required metadata
 
 title: Issue worker payments
-description: This topic explains how to submit pay statements, generate checks or electronic payments, generate a positive pay file for payroll, and post the payment journal.
+description: This article explains how to submit pay statements, generate checks or electronic payments, generate a positive pay file for payroll, and post the payment journal.
 author: andreabichsel
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to submit pay statements, generate checks or electronic payments, generate a positive pay file for payroll, and post the payment journal.
+This article explains how to submit pay statements, generate checks or electronic payments, generate a positive pay file for payroll, and post the payment journal.
 
 You can pay workers by check or by electronic payment. When you submit pay statements, an invoice is created and posted to the general ledger for the sum of the worker's net pay for the payroll vendor that is set up on the **Payroll parameters** page. A payment journal that has lines is created, so that you can generate and post payments. When you submit payments, you can optionally post the payroll costs that are associated with workers to the general journal.
 
@@ -152,7 +152,7 @@ To recall a positive pay file, follow these steps.
 
 ## Post a payment journal
 
-You can post a payment journal after you generate checks and electronic payments as described earlier in this topic.
+You can post a payment journal after you generate checks and electronic payments as described earlier in this article.
 
 To post a payment journal, follow these steps.
 

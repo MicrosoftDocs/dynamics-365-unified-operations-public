@@ -1,6 +1,6 @@
 ---
 title: Deploy and use a continuous build and test automation environment
-description: This topic describes how to deploy a developer topology that supports continuous build and test automation.
+description: This article describes how to deploy a developer topology that supports continuous build and test automation.
 author: RobinARH
 ms.date: 01/21/2020
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to deploy and use an environment that supports continuous build and test automation.
+This article describes how to deploy and use an environment that supports continuous build and test automation.
 
 ## Prerequisites
 
@@ -91,7 +91,7 @@ As part of code Migration process or development activities, we expect you to ch
 
 ### Deploy a Build environment
 
-The topic [Deploy and access development environments](../dev-tools/access-instances.md) describes how to deploy developer environments. Use the same flow to deploy a build environment. As you are going through the deployment or configuration wizard, when prompted to **Select a Topology**, select **DevTest** then select a **Build and Test** topology.
+The article [Deploy and access development environments](../dev-tools/access-instances.md) describes how to deploy developer environments. Use the same flow to deploy a build environment. As you are going through the deployment or configuration wizard, when prompted to **Select a Topology**, select **DevTest** then select a **Build and Test** topology.
 
 As part of the deployment wizard, you can configure the build agent name and build agent pool.
 

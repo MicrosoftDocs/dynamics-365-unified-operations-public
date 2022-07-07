@@ -1,7 +1,9 @@
 > [!IMPORTANT]
+> When a Commerce headquarters database (previously called AOS database) is migrated, the associated Commerce Scale Units (CSUs) are not moved. In several cases, depending on the features that are in use, a CSU redeployment may be required. Redeployment must then be followed by a full synchronization of data to the CSU. In extreme scenarios where data discrepancies still exist, the final action is to delete the CSU, deploy a fresh CSU to replace it, and then perform a full synchronization of data to the new CSU.
+> 
 > Some environment-specific records are not included in automated database movement operations and require additional steps. These include the following:
-> - Commerce self-service installer references
-> - Commerce Scale Unit channel database configuration records
+> - Commerce self-service installer references.
+> - Commerce Scale Unit channel database configuration records.
 
 If you copy a database between environments, Commerce capabilities in the destination environment will not be fully functional until you perform the following additional steps.
 
@@ -26,4 +28,4 @@ For more information about how to apply a deployable package, see [Create deploy
 
 ### Re-activate POS devices
 
-If you use point of sale (POS) devices, after you import a database you must activate the POS devices again. Previously activated devices in the destination environment will no longer function. For more information, see [Point of sale device activation](../../../commerce/dev-itpro/retail-device-activation.md).
+If you use point of sale (POS) devices, you must activate the POS devices again after you import a database. Previously activated devices in the destination environment will no longer function. For more information, see [Point of sale device activation](../../../commerce/dev-itpro/retail-device-activation.md).

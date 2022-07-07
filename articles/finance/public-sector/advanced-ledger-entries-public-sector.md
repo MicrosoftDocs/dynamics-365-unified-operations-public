@@ -2,7 +2,7 @@
 # required metadata
 
 title: Advanced ledger entries in the public sector
-description: This topic explains how organizations in the public sector can use advanced ledger entries to create, adjust, and reverse ledger entries.
+description: This article explains how organizations in the public sector can use advanced ledger entries to create, adjust, and reverse ledger entries.
 author: v-kiarnd
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how organizations in the public sector can use advanced ledger entries to create, adjust, and reverse ledger entries. For example, advanced ledger entries can be used to reclassify expenditures if invoices are mistakenly posted to the wrong account or project.
+This article explains how organizations in the public sector can use advanced ledger entries to create, adjust, and reverse ledger entries. For example, advanced ledger entries can be used to reclassify expenditures if invoices are mistakenly posted to the wrong account or project.
 
 ## How do I set up advanced ledger entries?
 

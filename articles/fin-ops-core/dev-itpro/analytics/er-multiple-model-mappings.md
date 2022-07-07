@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage several derived mappings for a single model root
-description: This topic explains how to manage several derived mappings that were configured for a single model root.
+description: This article explains how to manage several derived mappings that were configured for a single model root.
 author: NickSelin
 ms.date: 01/04/2021
 ms.topic: business-process
@@ -36,9 +36,9 @@ ER model mapping components can reside in ER data model [configurations](general
 
 Many configuration providers might offer ER model mapping configurations for the same ER data model. Those model mapping configurations might contain mapping components for different root definitions. You might use a model mapping for one root definition that is offered by one [provider](general-electronic-reporting.md#Provider) and use a model mapping for another root definition that is offered by another provider.
 
-The procedures in this topic explain how to manage multiple ER model mapping configurations of an ER data model when they contain different model mapping components configured for the same root definition. 
+The procedures in this article explain how to manage multiple ER model mapping configurations of an ER data model when they contain different model mapping components configured for the same root definition. 
 
-To complete the procedures in this topic, you must be assigned to the System administrator or Electronic reporting developer role.
+To complete the procedures in this article, you must be assigned to the System administrator or Electronic reporting developer role.
 
 All the following procedures can be done in the USMF company. No coding is required.
 

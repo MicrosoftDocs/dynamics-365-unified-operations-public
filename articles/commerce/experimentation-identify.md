@@ -2,7 +2,7 @@
 # required metadata
 
 title: Identify a hypothesis and determine metrics for an experiment
-description: This topic describes how to identify the hypothesis and success metrics for an experiment you'll run on an e-Commerce website in Dynamics 365 Commerce.
+description: This article describes how to identify the hypothesis and success metrics for an experiment you'll run on an e-Commerce website in Dynamics 365 Commerce.
 author:  sushma-rao 
 ms.date: 10/21/2020
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 10.0.13
 ---
 
 # Identify a hypothesis and determine success metrics for an experiment
-The first phase in the experimentation lifecycle includes identifying the hypothesis for the experiment and determining the metrics you'll track to evaluate success. The following diagram shows all of the steps involved in [setting up and running an experiment](experimentation-overview.md) on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate topics. 
+The first phase in the experimentation lifecycle includes identifying the hypothesis for the experiment and determining the metrics you'll track to evaluate success. The following diagram shows all of the steps involved in [setting up and running an experiment](experimentation-overview.md) on an e-Commerce website in Dynamics 365 Commerce. Additional steps are covered in separate articles. 
 
 [ ![Experimentation user journey - Identify.](./media/experimentation_identify.svg) ](./media/experimentation_identify.svg#lightbox)
 

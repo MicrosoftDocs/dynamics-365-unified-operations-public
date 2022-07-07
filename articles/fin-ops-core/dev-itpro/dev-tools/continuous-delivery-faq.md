@@ -1,6 +1,6 @@
 ---
 title: Development and continuous delivery FAQ
-description: This topic answers to questions that are frequently asked by ISVs and partners about development, testing, delivery, and lifecycle management.
+description: This article answers to questions that are frequently asked by ISVs and partners about development, testing, delivery, and lifecycle management.
 author: laneswenka
 ms.date: 01/21/2020
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: Platform update 2
 
 [!include [banner](../includes/banner.md)]
 
-This topic summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management.
+This article summarizes answers to questions that are frequently asked by ISVs and partners, especially regarding guidelines about development, testing, delivery, and lifecycle management.
 
 ## Customization
 
@@ -31,7 +31,7 @@ For more information, see [Extensibility home page](../extensibility/extensibili
 
 ### How do I prevent my models from being customized by customers or other partners?
 
-You can block customizations of your model as described in [Turn off model customization and deprecate functionality](lock-models.md), or you can distribute deployable packages to your customers instead of distributing model files. See the section titled "How do I distribute my application to customers" later in this topic.
+You can block customizations of your model as described in [Turn off model customization and deprecate functionality](lock-models.md), or you can distribute deployable packages to your customers instead of distributing model files. See the section titled "How do I distribute my application to customers" later in this article.
 
 ### How can I define the scope of my models? How many models or packages should I create?
 
@@ -127,7 +127,7 @@ Add an average of $15 monthly for storage (non premium) per VM.
 
 ### Can more than one developer develop concurrently on the same VM?
 
-This is not supported. However, you can provision more than one developer account on the same VM, they just cannot develop concurrently. For details, see [Create new users on development machines](/d365F-O/fin-ops-core/dev-itpro/dev-tools/access-instances).
+This is not supported. However, you can provision more than one developer account on the same VM, they just cannot develop concurrently. For details, see [Create new users on development machines](access-instances.md).
 
 If you are a Microsoft partner developing code for more than one customer, we recommend having at least one development VM per customer. You will need one addittional VM for every additional developer working on a customer project. Development VMs can be thought of as disposable assets as long as your source code is checked into version control (Azure DevOps) and you keep a backup of test databases.
 

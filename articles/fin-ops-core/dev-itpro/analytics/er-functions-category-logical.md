@@ -2,7 +2,7 @@
 # required metadata
 
 title: List of ER functions in the logical category
-description: This topic provides information about the logical functions that are supported in Electronic reporting (ER).
+description: This article provides information about the logical functions that are supported in Electronic reporting (ER).
 author: NickSelin
 ms.date: 02/11/2021
 ms.prod: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Electronic reporting (ER) logical functions can be used to work with logical values to perform more than one comparison in a single expression or test multiple conditions. This topic provides a summary of these functions.
+Electronic reporting (ER) logical functions can be used to work with logical values to perform more than one comparison in a single expression or test multiple conditions. This article provides a summary of these functions.
 
 ## List of supported functions
 

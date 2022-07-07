@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure the Electronic reporting (ER) framework
-description: This topic explains how to configure parameters of the Electronic reporting (ER) framework.
+description: This article explains how to configure parameters of the Electronic reporting (ER) framework.
 author: NickSelin
 ms.date: 04/23/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up the basic functionality for Electronic reporting (ER). It also describes the steps that you must complete before you can set up ER.
+This article explains how to set up the basic functionality for Electronic reporting (ER). It also describes the steps that you must complete before you can set up ER.
 
 ## Prerequisites for ER setup
 Before you can set up ER, you must set up the required [document types](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) in Document management:
@@ -119,7 +119,7 @@ In addition to the basic functionality, ER has other functionality that you can 
 
 **Question:** I have added a custom table to the AOT. I created a new ER model mapping configuration for my ER data model. During the design of the model mapping, I tried to add a new data source type, **Table records**, that refers to my table. I could manually add my table name to the **Table** lookup, and the ER model mapping accepted it without errors or warnings. However, my table's name isn't included in the list of available choices that the **Table** lookup of this data source offers. How do I include the name of my table?
 
-**Answer:** To include the name of your custom table in the **Table** lookup, use the **Rebuild table references** menu item as described in the "Optional setup for ER" section earlier in this topic.
+**Answer:** To include the name of your custom table in the **Table** lookup, use the **Rebuild table references** menu item as described in the "Optional setup for ER" section earlier in this article.
 
 **Question:** Why can't I mark the Microsoft provider as **Active** in the **Electronic reporting** workspace in my production environment?
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Retail version 10.0.6
-description: This topic describes features that are in preview in Dynamics 365 Retail. 
+description: This article describes features that are in preview in Dynamics 365 Retail. 
 author: josaw1
 ms.date: 10/09/2019
 ms.topic: article
@@ -30,21 +30,21 @@ ms.dyn365.ops.version: Release 10.0.6
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes features that are new or changed in Microsoft Dynamics 365 Retail in 10.0.6. 
+This article describes features that are new or changed in Microsoft Dynamics 365 Retail in 10.0.6. 
 
-To learn about the features in Finance and Operations applications, see [What's new or changed in Finance and Operations apps version 10.0.6 (November 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-6).
+To learn about the features in finance and operations applications, see [What's new or changed in finance and operations apps version 10.0.6 (November 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-6).
 
-## New Inventory Availability API's for E-commerce use
-Four new API's will be made available to provide e-commerce or 3rd party solutions with an estimation of on-hand inventory for a requested item and warehouse.  These API's are intended to replace the existing GetProductAvailabilities and GetAvailableInventoryNearby API's that are currently in-market.   These new API's will have improved calculation logic and caching to improve performance.  The names of the new API's are:
+## New Inventory Availability APIs for E-commerce use
+Four new APIs will be made available to provide e-commerce or third party solutions with an estimation of on-hand inventory for a requested item and warehouse.  These APIs are intended to replace the existing GetProductAvailabilities and GetAvailableInventoryNearby APIs that are currently in-market. These new APIs will have improved calculation logic and caching to improve performance. The names of the new APIs are:
 * GetEstimatedProductWarehouseAvailability
 * GetEstimatedAvailabilityDefaultWarehouse
 * GetEstimatedAvailabilityNearby
 * GetEstimatedAvailabilityAllWarehouses
 
-Additionally, new tables have been added for tracking available ecommerce inventory in the channel database.  Retail and Retail Shared parameters will be made available that must be configured to uptake these new API's and tables turn off the existing expensive e-commerce inventory availability logic that existed in previous versions.
+Additionally, new tables have been added for tracking available ecommerce inventory in the channel database. Retail and Retail Shared parameters will be made available that must be configured to uptake these new APIs and tables turn off the existing expensive e-commerce inventory availability logic that existed in previous versions.
 
 ### Install merchant properties deprecated from the Hardware station installer
-To better support future enhancements to headless installation, the merchant properties installer has been removed from the Hardware station installation experience. New for 10.0.6, the hardware station merchant properties will be set at runtime when the POS is paired to a hardware station and updated when the hardware station is made active, if needed. If both the POS and hardware station are not updated to 10.0.6 at the same time, the setting and updating of merchant properties by POS will not function correctly. This means that if the POS is updated, but not the hardware station, then the hardware station will continue to use old merchant properties until it is updated as well. 
+To better support future enhancements to headless installation, the merchant properties installer has been removed from the Hardware station installation experience. New for 10.0.6, the hardware station merchant properties will be set at runtime when the POS is paired to a hardware station and updated when the hardware station is made active, if needed. If both the POS and hardware station aren't updated to 10.0.6 at the same time, the setting and updating of merchant properties by POS won't function correctly. This means if the POS is updated, but not the hardware station, the hardware station will use old merchant properties until it's updated. 
 
 ## Additional resources
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Make Entity store available as a Data Lake
-description: This topic explains how to make Entity store available as a Microsoft Azure Data Lake.
+description: This article explains how to make Entity store available as a Microsoft Azure Data Lake.
 author: MilindaV2
 ms.date: 09/23/2020
 ms.topic: article
@@ -96,7 +96,7 @@ The following sections describe each task in more detail.
     - **Performance:** We recommend that you select **Standard**.
     - **Account kind:** You must select **StorageV2**.
 
-3. In the **Advanced options** dialog box, you will see the **Data Lake storage Gen2** option. Select **Enable** under the Hierarchical namespaces feature. If you disable this option, you can't consume data written by Finance and Operations apps with services such as Power BI data flows. 
+3. In the **Advanced options** dialog box, you will see the **Data Lake storage Gen2** option. Select **Enable** under the Hierarchical namespaces feature. If you disable this option, you can't consume data written by finance and operations apps with services such as Power BI data flows. 
 4. Select **Review and create**. When the deployment is completed, the new resource will be shown in the Azure portal.
 5. Select the resource, and then select **Settings** \> **Access keys**.
 6. Make a note of the connection string value, because you will have to provide it later.
@@ -144,7 +144,7 @@ The following sections describe each task in more detail.
 ## Work in Entity store in a Data Lake
 
 1. Go to **System administration** \> **Set up** \> **System parameters**.
-2. On the **Data connections** tab, enter the following information that you made a note of earlier in this topic:
+2. On the **Data connections** tab, enter the following information that you made a note of earlier in this article:
 
     - **Application ID:** Enter the application ID of the Azure AD application that you registered earlier.
     - **Application Secret:** Enter the application key (secret) for the Azure AD application.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Outbound inventory operation in POS
-description: This topic describes capabilities of the point of sale (POS) outbound inventory operation.
+description: This article describes capabilities of the point of sale (POS) outbound inventory operation.
 author: hhaines
 
 ms.date: 07/30/2020
@@ -193,7 +193,7 @@ After the document is in **Requested** status, it's ready for fulfillment proces
 
 Fully shipped transfer orders are moved to the **Complete** tab of the **Outbound operation** document list. There, they remain visible to users in the outbound store or warehouse, in read-only mode, for seven days.
 
-## Related topics
+## Related articles
 
 [Inbound inventory operation in POS](pos-inbound-inventory-operation.md)
 

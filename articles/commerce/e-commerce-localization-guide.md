@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 Commerce e-commerce localization guide
-description: This topic describes how to localize a Microsoft Dynamics 365 Commerce e-commerce site into additional languages and configure the site to support multiple channels.
+description: This article describes how to localize a Microsoft Dynamics 365 Commerce e-commerce site into additional languages and configure the site to support multiple channels.
 author: bicyclingfool
 ms.date: 04/29/2022
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2017-06-20
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to localize a Microsoft Dynamics 365 Commerce e-commerce site into additional languages and configure the site to support multiple channels, and also covers the concepts and terminology related to the process.
+This article describes how to localize a Microsoft Dynamics 365 Commerce e-commerce site into additional languages and configure the site to support multiple channels, and also covers the concepts and terminology related to the process.
 
 The e-commerce capabilities in Dynamics 365 Commerce have been designed to enable online experiences that can be tailored to specific countries and languages, but at the same time allowing for the maximum reuse of templates, pages, content, and media. You can also create a basic site and then expand into new markets by adding support for additional countries and languages over time.
 
@@ -76,7 +76,7 @@ In this configuration, customers and partners typically develop all the assets t
 ![Out of the box Dynamics 365 Commerce e-commerce site](media/loc-guide-1.png)
 
 > [!NOTE]
-> You can configure the Fabrikam demo site for an additional language so that content development can be done in that language. For information about how to for add a new language to a site and a channel, see the [Configure an additional language for your site](#configure-an-additional-language-for-your-site) section later in this topic.
+> You can configure the Fabrikam demo site for an additional language so that content development can be done in that language. For information about how to for add a new language to a site and a channel, see the [Configure an additional language for your site](#configure-an-additional-language-for-your-site) section later in this article.
 
 However, the content management system (CMS) and page model for Dynamics 365 Commerce e-commerce sites have been designed to enable expansion into new markets and locales. Therefore, through a single e-commerce site, you can manage the assets for an online store that spans multiple markets and languages.
 
@@ -114,7 +114,7 @@ To add a language to a channel in site builder, follow these steps.
 
 When you return to the **Pages** view in Commerce site builder, the new language will be available in the channel and locale picker in the upper right. You can now create localized versions of pages in your base language.
 
-The process for localizing the content of your pages and fragments is covered in the [Localize e-commerce site content](#localize-e-commerce-site-content) section later in this topic.
+The process for localizing the content of your pages and fragments is covered in the [Localize e-commerce site content](#localize-e-commerce-site-content) section later in this article.
 
 ### Configure a new channel for your site
 
@@ -154,7 +154,7 @@ The following e-commerce site assets can be localized in site builder:
 All new pages, fragments, and media assets are created in the context of the channel and language that are currently selected in the channel and locale
 picker. This language is usually your "base language", provided that you haven't configured additional languages or channels. On sites where multiple channels and languages are configured, the "base language" is defined by the channel and locale you've set as the default on the **Channels** page in site settings.
 
-The steps for localizing content for pages, fragments, and media assets are similar. Exceptions and differences will be pointed out in the sections that follow. However, the steps for localizing module content differ. For more information, see the [Localize modules](#localize-modules) section later in this topic.
+The steps for localizing content for pages, fragments, and media assets are similar. Exceptions and differences will be pointed out in the sections that follow. However, the steps for localizing module content differ. For more information, see the [Localize modules](#localize-modules) section later in this article.
 
 #### Step 1: Export an XLIFF file
 

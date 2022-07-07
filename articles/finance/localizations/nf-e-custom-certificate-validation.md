@@ -2,7 +2,7 @@
 # required metadata
 
 title: NF-e custom certificate validation
-description: This topic provides information about enabling and using the NF-e custom certificate.
+description: This article provides information about enabling and using the NF-e custom certificate.
 author: gionoder
 ms.date: 07/29/2021
 ms.topic: article

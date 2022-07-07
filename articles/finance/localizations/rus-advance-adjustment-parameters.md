@@ -2,7 +2,7 @@
 # required metadata
 
 title: Revaluate foreign currency for advance holders (Russia)
-description: This topic provides information about foreign currency revaluation for advance holders in Russia.
+description: This article provides information about foreign currency revaluation for advance holders in Russia.
 author: ilkond
 ms.date: 09/15/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.search.validFrom: 2018-10-31
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about foreign currency revaluation for advance holders in Russia.
+This article provides information about foreign currency revaluation for advance holders in Russia.
 
 When you settle advance payments and advance reports that include transactions that were completed in foreign currencies, adjustment transactions are created as a continuation of the advance report, based on the setup on the **Advance adjustment parameters** page.
 

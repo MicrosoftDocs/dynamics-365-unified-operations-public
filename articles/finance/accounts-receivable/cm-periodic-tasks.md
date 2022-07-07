@@ -2,7 +2,7 @@
 # required metadata
 
 title: Periodic credit management tasks
-description: This topic describes the periodic tasks that are part of the process of managing credit limits for customers. 
+description: This article describes the periodic tasks that are part of the process of managing credit limits for customers. 
 author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the periodic tasks that are part of the process of managing credit limits for customers.
+This article describes the periodic tasks that are part of the process of managing credit limits for customers.
 
 ## Update risk scores
 

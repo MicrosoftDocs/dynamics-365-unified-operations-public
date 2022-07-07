@@ -1,6 +1,6 @@
 ---
 title: Test data methods
-description: This topic provides information about the most common types of test data methods.
+description: This article provides information about the most common types of test data methods.
 author: MichaelFruergaardPontoppidan
 ms.date: 03/27/2019
 ms.topic: article
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: App Update 10.0.2
 
 [!include [banner](../includes/banner.md)]
 
-Entity and helper navigation objects expose test methods that let you set up test data. This topic provides information about the most common types of test data methods.
+Entity and helper navigation objects expose test methods that let you set up test data. This article provides information about the most common types of test data methods.
 
 ## Factory methods
 
@@ -206,7 +206,7 @@ public void ensureCanCreate()
 
 #### Automatic prerequisite setup
 
-To enable automatic prerequisite setup, you must call the `ensure` methods in the appropriate `init` method. For more information, see the [Factory methods](#factory-methods) section earlier in this topic.
+To enable automatic prerequisite setup, you must call the `ensure` methods in the appropriate `init` method. For more information, see the [Factory methods](#factory-methods) section earlier in this article.
 
 ## Query methods
 

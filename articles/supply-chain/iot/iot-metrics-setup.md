@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up metrics for IoT Intelligence
-description: This topic explains how to set up metrics for IoT Intelligence.
+description: This article explains how to set up metrics for IoT Intelligence.
 author: johanhoffmann
 ms.date: 04/25/2020
 ms.topic: article

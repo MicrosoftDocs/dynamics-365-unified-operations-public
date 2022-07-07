@@ -2,7 +2,7 @@
 # required metadata
 
 title: View and evaluate the results of questionnaires
-description: This topic explains how you can view and evaluate the results of questionnaires that respondents complete. 
+description: This article explains how you can view and evaluate the results of questionnaires that respondents complete. 
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic explains how you can view and evaluate the results of questionnaires that respondents complete. 
+This article explains how you can view and evaluate the results of questionnaires that respondents complete. 
 
 After respondents complete a questionnaire, you can view and evaluate the questionnaire results in the following ways:
 

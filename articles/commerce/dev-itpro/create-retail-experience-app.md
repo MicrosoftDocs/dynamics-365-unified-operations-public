@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create and apply branding to the Retail Experience app
-description: This topic explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
+description: This article explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
 author: josaw1
 ms.date: 06/09/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
  
-You can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. This topic explains how to build the app, connect, and apply your branding.
+You can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. This article explains how to build the app, connect, and apply your branding.
 
 ## Development tools
 The Retail Experience app supports the Android and iOS phone platforms. The app is built by using Xamarin.Forms, and you must install Xamarin on your development computer. To build the iOS app, you must have a Mac that has Xamarin installed. Although you can do development for both Android and iOS on a computer that runs Microsoft Windows, you must use a Mac to complete the build for the iOS platform. If your Mac is a shared team resource, you might want to use a Mac just for the build process. You must install the Retail software development kit (SDK) on all the computers you use for development.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a new workflow type
-description: This topic describes how to create a workflow type in Application Explorer.
+description: This article describes how to create a workflow type in Application Explorer.
 author: RobinARH
 ms.date: 06/19/2019
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-To make the workflow process available for a workflow document, you must create the workflow types that are used in the workflow configuration user interface (UI). This topic describes how to create a workflow type in Application Explorer.
+To make the workflow process available for a workflow document, you must create the workflow types that are used in the workflow configuration user interface (UI). This article describes how to create a workflow type in Application Explorer.
 
 A workflow type defines the following information:
 

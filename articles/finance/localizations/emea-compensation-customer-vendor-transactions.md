@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up customer and vendor compensation
-description: This topic provides information about how to run the vendor and customer account compensation process for legal entities that have their primary address in Hungary or Poland.
+description: This article provides information about how to run the vendor and customer account compensation process for legal entities that have their primary address in Hungary or Poland.
 author: mrolecki
 ms.date: 05/19/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you run the compensation process for vendor and customer accounts, for legal entities that have their primary address in Hungary or Poland.
+This article provides information that will help you run the compensation process for vendor and customer accounts, for legal entities that have their primary address in Hungary or Poland.
 
 Often, users in Eastern Europe must settle receivable and payable amounts for a company that is registered as both a customer and a vendor in the system. This settlement process uses a legal procedure that is known as *compensation* or *netting*. 
 

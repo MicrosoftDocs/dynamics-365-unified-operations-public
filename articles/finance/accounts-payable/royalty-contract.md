@@ -2,7 +2,7 @@
 # required metadata
 
 title: Royalty contract management
-description: This topic describes royalty contract management for Microsoft Dynamics 365 Finance.
+description: This article describes royalty contract management for Microsoft Dynamics 365 Finance.
 author: t-benebo
 ms.date: 08/02/2018
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: July 2017 update
 
 Royalty contract management is intended for companies that exercise the right to use a third party's assets and/or intellectual property. It helps companies better manage their royalty agreements by automating tasks that are involved in administering, tracking, and making royalty payments.
 
-This topic provides an overview of the typical process for handling royalty fees:
+This article provides an overview of the typical process for handling royalty fees:
 
 - Register details of the negotiated royalty contract.
 - Run negotiated contracts through ongoing sales, and generate royalty claims.
@@ -38,7 +38,7 @@ This topic provides an overview of the typical process for handling royalty fees
 
 ## Audience and purpose
 
-The information in this topic is intended for business decision makers in enterprise companies, in capacities such as sales manager, accounting manager, and A/P manager, who have the following responsibilities:
+The information in this article is intended for business decision makers in enterprise companies, in capacities such as sales manager, accounting manager, and A/P manager, who have the following responsibilities:
 
 - Negotiating contracts with the licensor
 - Recording royalty agreement terms and fee rates in the system

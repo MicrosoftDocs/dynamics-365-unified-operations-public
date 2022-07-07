@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer payment insights (Preview)
-description: This topic describes the payment insights capability that helps improve understanding of individual customers' typical payment practices. The feature can help you identify circumstances that justify initiating collection processes earlier than you might have done otherwise.
+description: This article describes the payment insights capability that helps improve understanding of individual customers' typical payment practices. The feature can help you identify circumstances that justify initiating collection processes earlier than you might have done otherwise.
 author: ShivamPandey-msft
 ms.date: 11/06/2019
 ms.topic: overview
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 10.0.8
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the payment insights capability that helps improve understanding of individual customers' typical payment practices. The feature can help you identify circumstances that justify initiating collection processes earlier than you might have done otherwise. 
+This article describes the payment insights capability that helps improve understanding of individual customers' typical payment practices. The feature can help you identify circumstances that justify initiating collection processes earlier than you might have done otherwise. 
 
 ## Overview
 
@@ -73,9 +73,10 @@ Send email to [Customer payment insights (Preview)](mailto:fiap@microsoft.com) i
 
 ## Privacy Notice
 
-Previews (1) may utilize less privacy and security measures than the Dynamics 365 Finance and Operations service, (2) are not included in the service level agreement for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) has limited support.
+Previews (1) may utilize less privacy and security measures than the Dynamics 365 finance and operations service, (2) are not included in the service level agreement for this service, (3) should not be used to process personal data or other data that is subject to legal or regulatory compliance requirements, and (4) has limited support.
 
 
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

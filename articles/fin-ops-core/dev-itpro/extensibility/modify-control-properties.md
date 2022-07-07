@@ -1,7 +1,7 @@
 ---
 
 title: Modify the properties of form controls through extension
-description: This topic explains how you can modify the properties of a control by using an extension.
+description: This article explains how you can modify the properties of a control by using an extension.
 author: ivanv-microsoft
 ms.date: 07/10/2017
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Platform update 4
 Often, the way that users interact with the application requires modification. Typically, you hide or disable controls on the page, replace standard labels with labels that are more appropriate, or even add new controls that the user requires. You can also create a form extension. 
 
 > [!TIP]
-> You can achieve even more flexibility through event subscription on form control events. This approach is discussed in other topics. In this topic, the focus is on metadata changes.
+> You can achieve even more flexibility through event subscription on form control events. This approach is discussed in other topics. In this article, the focus is on metadata changes.
 
 ## Example
 

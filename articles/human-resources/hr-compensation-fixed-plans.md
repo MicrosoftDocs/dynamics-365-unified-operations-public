@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create fixed compensation plans
-description: This topic describes the components that must be set up before you can create a fixed compensation plan and enroll employees.
+description: This article describes the components that must be set up before you can create a fixed compensation plan and enroll employees.
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Fixed compensation refers to an employee's regular gross salary or wages. This topic describes the components that must be set up before you can create a fixed compensation plan and enroll employees.
+Fixed compensation refers to an employee's regular gross salary or wages. This article describes the components that must be set up before you can create a fixed compensation plan and enroll employees.
 
 Fixed compensation amounts can be calculated for your employees, based on factors such as performance, region, and budget increases. Dynamics 365 Human Resources supports step, grade, and band compensation types.
 

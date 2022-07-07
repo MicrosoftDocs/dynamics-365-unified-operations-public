@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources 10.0.27 (July 2022)
-description: This topic describes features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.27 preview release.
+description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.27 preview release.
 author: twheeloc
 ms.date: 04/07/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.27
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.27. This version has a build number of 10.0.1227 and is available on the following schedule:
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.27. This version has a build number of 10.0.1227 and is available on the following schedule:
 
 - **Preview of release:** April 2022
 - **General availability of release (self-update):** June 2022
@@ -39,7 +39,7 @@ This topic lists features that are new or changed for Microsoft Dynamics 365 Hum
 
 ## Features included in this release
 
-The following table lists the features that are included in this release. We might update this topic to include features that made it into the build after this topic was initially published.
+The following table lists the features that are included in this release. We might update this article to include features that made it into the build after this article was initially published.
 
 | Feature name | Overview | Release status |
 |----|----|----|
@@ -109,10 +109,18 @@ The following table lists the feature enhancements that are included in this rel
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Dynamics 365 Finance 10.0.27 includes platform updates. To learn more, see [Platform updates for version 10.0.27 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
+Dynamics 365 Finance 10.0.27 includes platform updates. To learn more, see [Platform updates for version 10.0.27 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
 
 ### Bug fixes
 
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=673217).
+
+## LCS updates
+
+| Feature name | Overview | Release status |
+|----|----|----|
+| Deploy Dynamics 365 Human Resources by using Finance and Operations LCS projects | If you've purchased the minimum required licenses for Dynamics 365 Human Resources, you can now deploy new LCS projects and environments by using the **Implementation** project type and selecting **Finance and operations** as the product in LCS. For more information, see [Provision Human Resources in the finance and operations infrastructure](hr-admin-setup-provision-fo.md). | June 2022 |
+| Prevention of deploying production environments in Human Resources LCS projects | If you have an existing Human Resources LCS project, you can no longer deploy a production environment in it. Instead, you must create a new finance and operations LCS project and follow the standard process to deploy a production environment. | June 2022 |
+

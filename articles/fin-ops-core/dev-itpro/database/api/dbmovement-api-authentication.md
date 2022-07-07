@@ -2,7 +2,7 @@
 # required metadata
 
 title: Database movement API - Authentication
-description: This topic provides overview information about how to authenticate with the Database Movement application programming interface (API).
+description: This article provides overview information about how to authenticate with the Database Movement application programming interface (API).
 author: laneswenka
 ms.date: 02/20/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides overview information about how to authenticate with the Database Movement application programming interface (API).
+This article provides overview information about how to authenticate with the Database Movement application programming interface (API).
 
 ## Fundamentals
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Auto-update for Commerce Scale Unit (cloud)
-description: This topic describes auto-updates for Commerce Scale Unit (cloud).
+description: This article describes auto-updates for Commerce Scale Unit (cloud).
 author: AamirAllaq
 manager: tonyafehr
 ms.date: 05/03/2022

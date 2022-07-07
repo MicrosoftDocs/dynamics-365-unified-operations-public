@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add custom resources to your customization code
-description: This topic describes how to add custom static resources to your SDK customization code so that they can be accessed from within your theme.
+description: This article describes how to add custom static resources to your SDK customization code so that they can be accessed from within your theme.
 author: samjarawan
 ms.date: 05/27/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to add custom static resources such as font, image, and Cascading Style Sheet (CSS) files to your software development kit (SDK) customization code so that they can be accessed from within your theme.
+This article describes how to add custom static resources such as font, image, and Cascading Style Sheet (CSS) files to your software development kit (SDK) customization code so that they can be accessed from within your theme.
 
 Some scenarios require adding custom static resources such as font, image, or CSS files that can be accessed from within a module or a theme. These static files can be added to a ```/public``` folder within your SDK customization code so that they will be included in the configuration package generated with the [CLI **yarn msdyn365 pack** command](cli-command-reference.md#pack). Relative paths can then be used to access the resources.
 

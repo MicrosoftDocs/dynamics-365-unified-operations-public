@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configuration data templates
-description: This topic describes configuration data templates and explains how to create them.
+description: This article describes configuration data templates and explains how to create them.
 author: rcarlson
 ms.date: 08/09/2019
 ms.topic: article
@@ -124,7 +124,7 @@ The following table shows how the templates were set up to handle dependencies. 
 | Project accounting        | 1    | 650   |
 
 > [!NOTE]
-> The Retail template is scheduled to be released in Finance and Operations, App update 3.
+> The Retail template is scheduled to be released in finance and operations, App update 3.
 
 We reserved levels 10 through 22 for shared system entities, so that those entities are processed first. Almost all systems also use the company-specific general ledger entities. Therefore, we reserved level 25 for those entities. These levels represent the minimum basic setup that is required for most shared data in a configuration.
 
@@ -159,3 +159,4 @@ If you don't want to include master data in your configuration, remove those ent
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

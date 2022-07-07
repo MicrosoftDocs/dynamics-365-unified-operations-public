@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot Finance insights setup issues
-description: This topic lists issues that can occur when you use Finance insights capabilities. It also explains how to fix those issues.
+description: This article lists issues that can occur when you use Finance insights capabilities. It also explains how to fix those issues.
 author: panolte
 ms.date: 02/11/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.20
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists issues that can occur when you use Finance insights capabilities. It also explains how to fix those issues.
+This article lists issues that can occur when you use Finance insights capabilities. It also explains how to fix those issues.
 
 ## Symptom: Why can't I map the Customer payment insights Data Integration template destination column?
 
@@ -124,4 +124,4 @@ The **Budget proposal** feature requires a minimum of three years of budget or a
 
 ### Resolution
 
-The environment has reached the Data Lake Services maximum table limit. For more information about the limit, see the **Enable near real-time data changes** section of the topic, [Export to Azure Data Lake overview](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).
+The environment has reached the Data Lake Services maximum table limit. For more information about the limit, see the **Enable near real-time data changes** section of the article, [Export to Azure Data Lake overview](../../fin-ops-core/dev-itpro/data-entities/Azure-Data-Lake-GA-version-overview.md).

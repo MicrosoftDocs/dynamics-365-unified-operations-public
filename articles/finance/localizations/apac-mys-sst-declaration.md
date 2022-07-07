@@ -2,7 +2,7 @@
 # required metadata
 
 title: SST-02 declaration for Malaysia
-description: This topic explains how to configure and generate the SST-02 return form for Malaysia.
+description: This article explains how to configure and generate the SST-02 return form for Malaysia.
 author: sndray
 ms.date: 09/11/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up and generate the SST-02 return form for legal entities in Malaysia.
+This article explains how to set up and generate the SST-02 return form for legal entities in Malaysia.
 
 The SST-02 return form is the official electronic form that is used to declare and pay indirect taxes (Sales and Services Tax \[SST\]). These indirect taxes are grouped by specific classifications, as described by the tax authorities in the legislation. Registered manufacturers and legal persons must declare SST-02 returns every two months, according to the taxable period. SST replaces the existing Goods and Services Tax (GST), and affects all domestic and import operations.
 

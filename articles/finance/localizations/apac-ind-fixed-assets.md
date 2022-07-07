@@ -2,7 +2,7 @@
 # required metadata
 
 title: India fixed assets overview
-description:  This topic includes information about fixed assets for India in Microsoft Dynamics 365 Finance.
+description:  This article includes information about fixed assets for India in Microsoft Dynamics 365 Finance.
 author: AdamTrukawka
 ms.date: 07/25/2019
 ms.topic: overview

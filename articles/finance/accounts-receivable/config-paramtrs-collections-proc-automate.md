@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure parameters for collection process automation
-description: This topic describes the parameters that affect automated collection processes and provides guidance for setting them so that the automated process reflects your intentions and expectations.
+description: This article describes the parameters that affect automated collection processes and provides guidance for setting them so that the automated process reflects your intentions and expectations.
 author: JodiChristiansen
 ms.date: 08/05/2021
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the parameters that affect automated collection processes and provides guidance for setting them so that the automated process reflects your intentions and expectations. For information about how to automate collection processes, see [Collections process automation](collections-process-automate.md).
+This article describes the parameters that affect automated collection processes and provides guidance for setting them so that the automated process reflects your intentions and expectations. For information about how to automate collection processes, see [Collections process automation](collections-process-automate.md).
 
 ## General
 Enter a number in the **Percentage of customers per batch task** to determine the number of batch tasks per automation process. Set **Post collection letters automatically** to **Yes** so the collection letter action type will post the letter during the automation. Set **Create activities for automations** to **Yes** to create and close activities for non-activity action types to view all automated steps taken on an account. Define the number of days collection history is stored in the **Days to keep collections process automation history**. When an invoice reaches the last step of the collections process it won’t be used to create future process automation action types if **Exclude invoice after activating last process step** is set to **Yes**. The next oldest invoice determines the next process automation step to ensure collection process automation actions continue. 

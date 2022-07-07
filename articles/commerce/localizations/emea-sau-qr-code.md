@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate QR codes and print them on receipts for Saudi Arabia
-description: This topic provides an overview of the functionality for printing QR codes that is available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of the functionality for printing QR codes that is available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 manager: annbe
 ms.date: 01/28/2022
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides an overview of the functionality for printing QR codes that is available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
+This article provides an overview of the functionality for printing QR codes that is available for Saudi Arabia in Microsoft Dynamics 365 Commerce.
 
 In a store that is linked to a legal entity that has its primary address in Saudi Arabia, users can print a QR code on the receipt for a cash-and-carry or customer order sales transaction. The QR code contains the following information.
 

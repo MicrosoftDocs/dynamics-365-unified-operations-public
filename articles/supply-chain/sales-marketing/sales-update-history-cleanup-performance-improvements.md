@@ -1,6 +1,6 @@
 ---
 title: Schedule sales history data cleanup
-description: This topic describes how you can help improve system performance by scheduling the Sales update history cleanup periodic task to run at a regular interval.
+description: This article describes how you can help improve system performance by scheduling the Sales update history cleanup periodic task to run at a regular interval.
 author: myvakalo
 ms.date: 03/21/2022
 ms.topic: article
@@ -23,7 +23,7 @@ If you use the *Sales update history cleanup* periodic task, we recommend that y
 
 ## Turn on the sales history cleanup features
 
-To set up and use the *Sales update history cleanup* periodic task together with all the features that are described in this topic, you must enable the *Sales history cleanup performance improvements* and *Clean up sales update history based on age* features in Feature management, as described in the following subsections.
+To set up and use the *Sales update history cleanup* periodic task together with all the features that are described in this article, you must enable the *Sales history cleanup performance improvements* and *Clean up sales update history based on age* features in Feature management, as described in the following subsections.
 
 ### Sales history cleanup performance improvements
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cash out gift card balance for a retail customer
-description: This topic provides information about the cash out gift card functionality that is available in Microsoft Dynamics 365 Commerce.
+description: This article provides information about the cash out gift card functionality that is available in Microsoft Dynamics 365 Commerce.
 author: rapraj
 ms.date: 02/08/2019
 ms.topic: article
@@ -30,12 +30,12 @@ ms.dyn365.ops.version: Dynamics 365 10.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides an overview of the cash out gift card feature for the Dynamics 365 Retail Modern POS (MPOS). 
+This article provides an overview of the cash out gift card feature for the Dynamics 365 Retail Modern POS (MPOS). 
 
 The purpose of the cash out feature is to allow cashiers to cash out the remaining amount on a gift card. Retailers often need to exchange a low balance gift card for cash at the customer's request. 
 
 ## Prerequisites
-- The payment connector and corresponding payment gateway or processor must support the feature. The *payment connector* is an extension which facilitates communication between Dynamics 365 Commerce (and associated components) and a payment service. The connector described in this topic was implemented using the standard payments SDK.
+- The payment connector and corresponding payment gateway or processor must support the feature. The *payment connector* is an extension which facilitates communication between Dynamics 365 Commerce (and associated components) and a payment service. The connector described in this article was implemented using the standard payments SDK.
 - If the gift cards are external gift cards, the external gift card must be configured for both the Headquarters and the POS. Before the gift card can be configured, the retailer must have an account with an external gift card service provider.
 
 ## Scenarios

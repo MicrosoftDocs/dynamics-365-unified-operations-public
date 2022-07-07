@@ -2,7 +2,7 @@
 # required metadata
 
 title: GETENUMVALUEBYNAME ER function
-description: This topic provides information about how the GETENUMVALUEBYNAME Electronic reporting (ER) function is used.
+description: This article provides information about how the GETENUMVALUEBYNAME Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 09/23/2020
 ms.prod: 

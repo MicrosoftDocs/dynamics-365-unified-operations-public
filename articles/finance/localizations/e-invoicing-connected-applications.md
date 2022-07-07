@@ -2,7 +2,7 @@
 # required metadata
 
 title: Connected applications
-description: This topic explains how to set up connected applications in Electronic invoicing.
+description: This article explains how to set up connected applications in Electronic invoicing.
 author: dkalyuzh
 ms.date: 02/07/2022
 ms.topic: article
