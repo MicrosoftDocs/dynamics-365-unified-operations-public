@@ -22,3 +22,5 @@ Before you can use DDMRP functionality, it must be turned on for your system tog
 
 - **Feature name:** *Priority driven MRP support for Planning Optimization*
 - **Feature name:** *(Preview) DDMRP for Planning Optimization*
+
+See also [Priority-based planning](priority-based-planning.md).
