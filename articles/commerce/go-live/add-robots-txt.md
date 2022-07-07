@@ -19,7 +19,7 @@ ms.search.validFrom: 2021-09-20
 
 This article describes how to create, edit, upload, and validate the robots.txt file for each domain hosted in Microsoft Dynamics 365 Commerce. 
 
-Unexpected or undirected crawling of your site by search engines can result in a high volume of page not found errors. These errors can lead to performance issues as the site responds to the many requests for pages that don't exist. To help fix this problem, you should always upload a valid robots.txt file to guide conforming crawlers to only look for relevant pages on your site. 
+Unexpected or undirected crawling of your site by search engines can result in a high volume of "404 Page Not Found" errors. These errors can lead to performance issues as the site responds to the many requests for pages that don't exist. To help fix this problem, your domain should always have an up-to-date and valid robots.txt file to instruct web crawlers to only look for relevant pages on your site. 
 
 ## Applies to
 
