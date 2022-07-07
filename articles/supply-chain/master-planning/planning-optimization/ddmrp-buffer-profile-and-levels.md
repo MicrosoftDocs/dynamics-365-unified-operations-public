@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.28
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
-Once you've identified your decoupling points (key items that you'll strategically keep in stock) you must decide how much stock (buffer) you'll keep at each of them. This is the second step of Demand Driven Materials Resource Planning (DDMRP).
+Once you've identified your decoupling points (key items that you'll strategically keep in stock), you must decide how much stock (buffer) you'll keep at each of them. This is the second step of Demand Driven Materials Resource Planning (DDMRP).
 
 ## Buffer levels and zones
 
@@ -67,8 +67,6 @@ The system calculates the amount you consume per day using one of three approach
 Past average daily usage (ADU) is calculated as an average by adding up the quantities used each day for a specified number of past days and then dividing by that number of days. The following illustration shows how this works when looking three days into the past.
 
 ![Average daily usage (past) chart.](media/ddmrp-adu-past.png "Average daily usage (past) chart")
-
-<!-- KFM: The average values in the figure are shifted back one day, so this image should be updated. -->
 
 In previous illustration, if today is the morning of June 11, the average daily usage for the previous three days (June 8, 9, and 10) is 21.
 
@@ -174,9 +172,12 @@ Use the following procedure to set up buffer values for a decoupling point:
     1. A dialog opens to tell you that your manual buffer settings (**Minimum**, **Reorder point**, and **Maximum**) will be reset if you continue. Select *Yes* to keep the new setting.
 1. If you prefer to calculate or enter your buffer settings just once, then do the following steps:
     1. Set **Buffer values over time** to *No*.
-    1. Set **Minimum** to the value you've calculated for the minimum stock level (red zone), as described earlier in this article.
-    1. Set **Reorder point** to the value you've calculated for the reorder point (yellow zone), as described earlier in this article.
-    1. Set **Maximum** to the value you've calculated for the maximum stock level (green zone), as described earlier in this article.
+    1. Set **Minimum**, **Reorder point**, and **Maximum** to the buffer values you've calculated for this item, as described earlier in this article.
+1. Make the following settings to finish setting up the DDMRP calculations for the item:
+    - **Order cycle** – Set to the number of days that must pass between purchase orders for this item. Set to zero if no order restrictions exist. This affects the maximum quantity buffer, as discussed previously in this article.
+    - **Average daily usage** – If you would like to, you can enter an estimated average daily usage for this item here. This is for informational purposes only; usually this value is calculated automatically as part of the buffer calculations
+    - **Order spike threshold** – Specify the minimum number of daily sales of this item that would qualify as a sales spike (unusually high demand). The system uses this value to increase the reorder quantity of planned orders in periods of high demand. See also [Demand driven planning](ddmrp-planning.md).
+
 
 ### <a name="calc-lead-time"></a>Calculate or enter decoupled lead times
 
@@ -217,7 +218,7 @@ For items where you choose to allow the system to [calculate your buffer zones a
 1. Edit the **Demand adjustment factor** field for one or more rows as needed. The system will apply this factor to the **Average daily usage** value in all buffer calculations where that value is used. This factor enables you to adjust for how demand fluctuates by date, such as for holidays or seasonal items.
 1. On the Action Pane, open the **Buffer values** tab and select **Calculate min, max and reorder point quantities**.
 1. The system calculates and populates the **Calculated min**, **Calculated reorder point** and **Calculated max** columns in the grid on the **Item coverage** page.
-1. When you are done reviewing the calculated values, you must apply them, otherwise they'll have no effect. When you apply a calculation for one or more rows, values from the **Calculated min**, **Calculated reorder**, and **Calculated max** fields are copied to the **Min**, **Reorder point**, and **Max** columns, respectively. On the Action Pane, open the **Buffer values** tab and select one of the following buttons from the **Take action** group:
+1. When you're done reviewing the calculated values, you must apply them, otherwise they'll have no effect. When you apply a calculation for one or more rows, values from the **Calculated min**, **Calculated reorder**, and **Calculated max** fields are copied to the **Min**, **Reorder point**, and **Max** columns, respectively. On the Action Pane, open the **Buffer values** tab and select one of the following buttons from the **Take action** group:
     - **Accept all calculations** – Applies all calculated values in the grid.
     - **Accept calculations for selected rows** – Only applies calculated values for the selected rows.
     - **Discard all calculations** – Discards all calculated values for min, max, and reorder points in the grid.
@@ -231,11 +232,11 @@ Use the following procedure to schedule automatic buffer value calculations:
 
 1. Go to **Master planning \> Master planning \> DDMRP \> Calculate buffer values**
 1. The **Calculate buffer values** dialog opens. Make the following settings:
-    - **Calculate average daily usage** – <!--KFM: describe the effect of each setting (yes/no) and the conditions under which you would choose each of them -->
-    - **Calculate decoupled lead time** – <!--KFM: describe the effect of each setting (yes/no) and the conditions under which you would choose each of them -->
-    - **Calculate buffer values** – <!--KFM: describe the effect of each setting (yes/no) and the conditions under which you would choose each of them -->
-    - **Accept calculation for min, max and reorder point** – <!--KFM: describe the effect of each setting (yes/no) and the conditions under which you would choose each of them -->
-    - **Master plan** – <!--KFM: describe this setting and how/when to use it. -->
+    - **Calculate average daily usage** – Set to *Yes* to recalculate the average daily usage of decoupling point items each time the job runs. Set to *No* to skip this calculation. Usually you should set this to *Yes*.
+    - **Calculate decoupled lead time** – Set to *Yes* to recalculate the decoupled lead times each time the job runs. Set to *No* to skip this calculation. Usually you should set this to *Yes*.
+    - **Calculate buffer values** – Set to *Yes* to recalculate buffer values each time the job runs. Set to *No* to skip this calculation. Usually you should set this to *Yes*.
+    - **Accept calculation for min, max and reorder point** – Set to *Yes* to automatically approve and apply the recalculated buffer values each time the job runs. Set to *No* to leave them unapplied (which means they won't take effect unless somebody manually applies them later from each product's **Item coverage** page). Usually you should set this to *Yes*.
+    - **Master plan** – Select a master plan that includes the items to be affected by this calculation. The calculation will apply to all of the items in the plan filter, additionally limited by the **Filter** settings in this dialog.
 1. To limit the set of records on which this batch job should run, expand the **Records to include** FastTab and select **Filter** to open the **Inquiry** dialog, which works the same as it does for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management
 1. On the **Run in the background** FastTab, specify how, when, and how often the selected calculations should be made for the selected items. The fields work just as they do for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
 1. Select **OK** to add the new job to a batch queue for execution.

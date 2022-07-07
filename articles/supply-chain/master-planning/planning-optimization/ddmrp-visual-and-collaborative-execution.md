@@ -49,11 +49,28 @@ The **Demand driven MRP** workspace provides several tools with KPIs and overvie
 
 ![The Demand driven MRP workspace.](media/ddmrp-workspace.png "The Demand driven MRP workspace")
 
-<!-- KFM: The following pages still require documentation; note also that the final page title contains a misspelling:  
+## Get overviews of decoupling points and planned orders
 
-- Decoupling points status by net flow
-- Decoupling points status by on-hand
-- Planned orders for decoupling points
-- Cleanup decoupling point buffer values
+In addition to the **Demand driven MRP** workspace, Supply Chain Management provides several pages where you can view information about your DDMRP setup, decoupling points, and planned orders. Some of these pages also provide convenient buttons in the Action Pane that enable you to manage buffers, run master planning, and/or navigate to other related views.
 
--->
+- To view decoupling point status by net flow, go to **Master planning \> Master planning \> DDMRP \> Decoupling points status by net flow**.
+- To view decoupling point status by on-hand, go to **Master planning \> Master planning \> DDMRP \> Decoupling points status by on-hand**.
+- To view planned orders for decoupling points, go to **Master planning \> Master planning \> DDMRP \> Planned orders for decoupling points**.
+- To view decoupled lead times, go to **Master planning \> Master planning \> DDMRP \> Decoupled lead time**.
+
+## Clean up decoupling point buffer values
+
+With time, your system will build up a large amount of historical data related to ongoing buffer calculations. This will cause your data volume to increase and can eventually affect the performance of your system. Therefore, we recommend that you clean up the old decoupling point buffer values from time to time.
+
+> [!WARNING]
+> Running this job will remove historical buffer value settings and historical on-hand/net flow information and is not reversible.
+
+Use the following procedure to clean up your decoupling point buffer values 
+
+1. Go to **Master planning \> Master planning \> DDMRP \> Clean up decoupling point buffer values**
+1. The **Clean up decoupling point buffer values** dialog opens. Make the following settings:
+    - **Delete records older than (days)** – Specify the age of the youngest record to keep. All decoupling point buffer value records older than this will be deleted.
+    - **Master plan** – Select a master plan that includes items to be affected by this cleanup. The cleanup will apply to all of the items in the plan filter limited by the **Filter** settings you make in this dialog.
+1. To limit the set of records on which this batch job should run, expand the **Records to include** FastTab and select **Filter** to open the **Inquiry** dialog, which works the same as it does for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management
+1. On the **Run in the background** FastTab, specify how, when, and how often the cleanup should be made. The fields work just as they do for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
+1. Select **OK** to add the new job to a batch queue for execution.

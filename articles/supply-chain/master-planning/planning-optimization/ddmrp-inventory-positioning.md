@@ -106,29 +106,12 @@ To set an item as a decoupling point, follow these steps:
 1. Go to **Product information management \> Products \> Released products**
 1. Find and select a released item that you want to set up for DDMRP.
 1. On the Action pane, open the **Plan** tab and select **Item coverage**.
-1. The **Item coverage** page opens. On the Action Pane, select **New** to create a new item coverage record. <!-- KFM: What if coverage records already exist? Do we recommend having more than one of these when using DDMRP? Maybe this text from the draft is relevant here (more detail is needed): "Among other things you can create many different Item coverage codes if you want many different defaults. There is the easiest way to specify a decoupling point."
-
-dimensions: product, storage and tracking
--->
-1. Set up the item coverage record as usual and then, with the new record still selected, open the **General** tab. <!-- KFM: Can we give better advice here than just "as usual"? Maybe this text from the draft is relevant here (more detail is needed): "Besides, you have to specify all the dimensions. If you miss site or warehouse that are mandatory for this item, you will not be able to define the decoupling point for this item." -->
+1. The **Item coverage** page opens. You might have several different item coverage records already listed, each of which applies to a different combination of storage and product dimensions. Either select an existing item coverage record that applies to the dimensions where you want to create a decoupling point, or select **New** from the Action Pane to create a new one. 
+1. Set up the item coverage record as usual. You must, at minimum, specify the **Site** and **Warehouse** where the decoupling point will apply.
+1. With the appropriate record still selected, open the **General** tab.
 1. Select the **Use specific settings** check box.
 1. Set **Coverage group** to a coverage group that is set up to create decoupling points (as described in the previous section).
-1. <!-- KFM: We seem to have other DDMRP settings that should be described here, including **average daily usage**, **order cycle** and **order spike threshold** -->
-
-<!-- The purpose of the following text isn't clear. Are these the settings from the decoupling coverage group? I think we can just delete this.
-
-        To define a decoupling point for specific item you have to put this definition on the item coverage level. You need to specify the following fields:
-        
-        **Coverage code** = Decoupling point. The value of the field determines the principle of replenishment. All records with Decoupling points value are considered by the system as part of the data for DDMRP planning.
-        
-        **Lead time factor** – The values range from 0 to 1 and the guidance is that the longer the lead time is, the lower the value should be.
-        
-        **Variability factor** – The values once again range from 0 to 1 and the guidance for this is that products with a higher demand variability should have a higher value for this factor
-        
-        **Average daily usage past period (days)** – the value means how much do you consume when you order from the moment you order until the order arrives.
-        
-        **Min, max and reorder-point period** – ???
--->
+1. The item is now configured as a decoupling point. Usually, when using DDMRP, you will also make settings here that affect its buffer sizes and reorder quantity, but you can wait to do that until later. For more information about these settings, see [Set up buffers for a decoupling point item](ddmrp-buffer-profile-and-levels.md#set-up-buffers).
 
 > [!NOTE]
-> You should plan all items that aren't decoupling points just as you would when using standard MRP.
+> You will plan all items that aren't decoupling points just as you would when using standard MRP.
