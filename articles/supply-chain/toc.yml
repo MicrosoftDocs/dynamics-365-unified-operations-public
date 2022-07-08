@@ -3401,6 +3401,8 @@
             href: warehousing/warehouse-app-promoted-fields.md
           - name: Configure detours for steps in mobile device menu items
             href: warehousing/warehouse-app-detours.md
+          - name: Query data using Warehouse Management mobile app detours
+            href: warehousing/warehouse-app-data-inquiry.md
           - name: License plate receiving via the Warehouse Management mobile app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
           - name: Set up a mobile device menu item for completing work in a purchase order

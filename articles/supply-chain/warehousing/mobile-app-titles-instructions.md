@@ -4,7 +4,7 @@ description: This topic describes how to create and show custom instructions for
 author: MarkusFogelberg
 ms.date: 08/11/2021
 ms.topic: article
-ms.search.form:
+ms.search.form: WHSMobileAppFlowStepListPage
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
