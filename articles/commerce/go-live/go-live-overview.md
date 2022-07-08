@@ -4,7 +4,7 @@
 title: Go-live and update recommendations overview
 description: This article provides information about tasks that you should complete to help yourself go live with or update your Microsoft Dynamics 365 Commerce implementation project.
 author: mssle
-ms.date: 07/07/2022
+ms.date: 07/08/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: josaw
