@@ -306,6 +306,8 @@
             href: go-live/performance-optimize-images.md
           - name: Reduce JavaScript by excluding unused modules
             href: go-live/performance-reduce-javascript.md
+          - name: Add or update a robots.txt file
+            href: go-live/add-robots-txt.md
       - name: AX 2012 phased rollout
         items:
         - name: Upgrade and N-1 support for Commerce
