@@ -71,7 +71,7 @@ In this procedure, you will create a key vault to store the key that you copied 
 
     <img alt="Key vault DNS name" src="../../media/BEF-Howto-Keyvault-03.png" width="70%">
 
-4. Select **BE-key vault \> Secrets \> Generate/Import**. Enter a name for your secret, and paste the event grid connection string that you saved earlier.
+4. Select **BE-key vault \> Secrets \> Generate/Import**. Enter a name for your secret, and paste the **Key 1** value that you saved earlier.
 
     <img alt="Key vault secret " src="../../media/BEF-Howto-Keyvault-04.png" width="70%">
 
