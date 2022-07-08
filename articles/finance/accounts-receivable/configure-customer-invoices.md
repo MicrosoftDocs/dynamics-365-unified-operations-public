@@ -81,7 +81,7 @@ When you post the invoice, the **Invoice remainder** quantity for each item is u
 
 Inventory transactions are updated with the invoice number, and the status in the **Line status** field on the sales order is changed to **Invoiced**. 
 
-View the status of the sales orders in the **All sales orders** list page.
+View the status of the sales orders on the **All sales orders** list page.
 
 ## Consolidate sales orders or packing slips for posting
 Use this process when one or more sales orders are ready to be invoiced, and you want to consolidate them into a single invoice. 
@@ -95,6 +95,14 @@ You can configure the splitting of sales order customer invoices by site or by d
 
 ## Post to Revenue account for sales order lines that have no price and no cost
 You'll have the option to update the **Revenue** account in the **General ledger** for sales order lines that have no price and no cost. To set up or view this information, go to the **Post to Revenue account for zero priced and zero cost sales order invoice lines** parameter on the **Ledger and sales tax** tab of the **Accounts receivable parameters** page. (**Accounts receivable > Setup > Accounts receivable parameters**). Select **Yes** to update the **Revenue** account for sales order invoice lines that have no price and no cost. If this option is selected, the voucher will contain 0.00 entries for the **Customer balance** and **Revenue** posting types. A revenue account is defined on the **Inventory posting** parameter page, on the **Sales order** account definition tab. If this option isn't selected, lines that don't have price or cost information won't post to the **Revenue** account. Instead, the voucher will contain a 0.00 entry for the **Customer balance** posting type.
+
+## Line creation sequence number information
+When you post customer invoice lines, you will have the option to create sequential line creation sequence numbers. Line creation sequence numbers are assigned during the posting process. By allowing non-sequential numbering, you can help improve the performance of customer invoice posting. Line creation sequence numbers can be used by third-party integrations that expect sequential ordering. Consult your IT department about any extensions that might integrate with line creation sequence numbers.
+
+To set up or view this information, on the **Accounts receivable parameters** page, on the **Updates** tab, set the **Assign sequential line numbers when posting customer invoice lines** option:
+
+- Set the option to **No** to use non-sequential numbering for line creation sequence numbers.
+- Set the option to **Yes** to use sequential numbering. You must set the option to **Yes** for legal entities that have a primary address in Italy. You must also set it to **Yes** if the **CustInvoiceTransRandLineCreationSeqNumFlight** flight is disabled.
 
 ## Additional settings that change the posting behavior
 The following fields change the behavior of the posting process.
