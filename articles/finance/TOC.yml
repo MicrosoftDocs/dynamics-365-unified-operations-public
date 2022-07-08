@@ -1,6 +1,6 @@
 - name: Dynamics 365 Finance
   items:
-  - name: Dynamics 365  Finance
+  - name: Dynamics 365 Finance
     items:
     - name: Dynamics 365 Finance home page
       href: index.md
