@@ -69,7 +69,7 @@ When a cloud environment is provisioned through LCS:
 > + 1 Virtual network
 > + 1 Public IP address
 > + 1 Storage account
-> + 1 or more additional storage accounts prefixed with “dyn” for storage of product binaires
+> + 1 or more additional storage accounts prefixed with “dyn” for storage of product binaries
 
 ### Accessing an instance through a URL
 
