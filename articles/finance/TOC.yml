@@ -530,6 +530,8 @@
           href: accounts-receivable/cm-customer-credit-groups.md
         - name: Credit limit adjustments
           href: accounts-receivable/cm-credit-limit-adjustments.md
+        - name: Credit limit scenarios
+          href: accounts-receivable/Credit-limit-scenarios.md
         - name: Credit holds for sales orders
           href: accounts-receivable/cm-sales-order-credit-holds.md
         - name: Periodic credit management tasks
