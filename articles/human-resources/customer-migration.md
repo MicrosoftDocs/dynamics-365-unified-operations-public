@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Dynamics 365 Human Resources migration 
-description: Migrate Human Resources to the finance and operations merged infrastructure. 
+title: Human Resources customer migration
+description: This article provides information about the migration of Microsoft Dynamics 365 Human Resources to the finance and operations merged infrastructure. 
 author: twheeloc
 ms.date: 07/06/2022
 ms.topic: overview
@@ -28,135 +28,149 @@ ms.dyn365.ops.version: Human Resources
 ---
 # Human Resources customer migration
 
-## How should Dynamics 365 Human Resources customers plan to move to the F&O infrastructure? 
-There are two categories of Dynamics 365 Human Resources customers that will be impacted and will need to make changes to ensure they are on the latest Dynamics 365 finance and operations infrastructure:  
- - Customers who use Dynamics 365 Human Resources and don't have any other operations apps from Microsoft Dynamics 365. 
- - Customers who use both Dynamics 365 Human Resources and Dynamics 365 Finance, Supply Chain Management, Commerce, or Project Operations.  
+## How should Dynamics 365 Human Resources customers plan to move to the finance and operations infrastructure?
 
-Regardless of which category the customer falls into they will need to move data into a newly created environment on the Dynamics 365 finance and operations infrastructure and validate the merge has been completed successfully. 
+Two categories of Microsoft Dynamics 365 Human Resources customers will be affected and will have to make changes to ensure that they are on the latest finance and operations infrastructure:
 
-Going forward, the Dynamics 365 Human Resources application will have its own Dynamics 365 finance and operations environment that is separate from other operations apps. This allows customers to take advantage of extensibility options without the need to merge their current data. We will provide tooling and a sandbox environment that can be used for testing and validation of data migration, prior to moving into to a production environment. These tools will enable a near-automated process and will be available between August and November 2022.   
- 
-Customers that are using other applications on the finance and operations infrastructure will have the option to merge their HR data with an existing environment. Refer to the Merging Dynamics 365 with an existing Dynamics 365 finance and operations app environment section for more detail. 
- 
-## When will customers be moved to the Dynamics 365 finance and operations infrastructure?  
-The transition for each company will depend on their current configuration and readiness to move to the Dynamics 365 finance and operations infrastructure. We recommend that customers work with their Microsoft partner to determine the best path forward. 
- - Organizations that use the HR module in Dynamics 365 Finance will have the ability to enable new capabilities from Dynamics 365 Human Resources as part of the regular
-One Version update process. New features are planned to become generally available beginning in January 2022. 
- - Organizations using Dynamics 365 Human Resources will have access to tooling to complete the infrastructure merge. We will work with customers on the transition to prevent any interruption in service. Customers will have 12-18 months to make the transition starting from the time the migration tooling becomes available. 
- - Organizations that use both Dynamics 365 Human Resources and the HR module can move their stand-alone human resources infrastructure onto the Dynamics 365 finance and operations infrastructure. Another available option is to use the merge tooling to bring the environments into a single environment. There is no requirement or timeframe for merging the two environments together.  
+- Customers who use Dynamics 365 Human Resources and don't have any other operations apps from Dynamics 365
+- Customers who use both Dynamics 365 Human Resources and Dynamics 365 Finance, Dynamics 365 Supply Chain Management, Dynamics 365 Commerce, or Dynamics 365 Project Operations
 
-Check the [Release plans](/dynamics365/release-plans/) regularly for up-to-date information. 
- 
- 
-## Will customers still need custom integrations between Dynamics 365 Human Resources and the HR module?  
- - Customers that have both Dynamics 365 Human Resources and other Dynamics 365 finance and operations infrastructure environments that are currently integrated will need to continue to integrate the two environments after the merge.
- - Customers that choose to keep their Dynamics 365 Human Resources environment separate from their existing Dynamics 365 finance and operations app environment need to continue to integrate the environments to make the data available in both environments. 
- - Customers can continue to use the Data Integrator to copy data between the two environments. If the customer merges data into a single environment after the
-migration, they will no longer need to integrate the data as all data will be in a single database.  
+Regardless of the category that they belong to, customers will have to move data into a newly created environment on the finance and operations infrastructure and validate that the merge has been successfully completed.
 
-## Will customer ISV solutions be migrated automatically? 
-The migration experience for each independent software vendor (ISV) solution will vary based on the integration method of the solution. We will work closely with ISVs
-to provide a smooth transition to the finance and operations infrastructure. Many ISV solutions are built on Dataverse using the Power Platform capabilities. These solutions are dependent on the Dataverse integration between the Dynamics 365 Human Resources environment and the Dataverse environment. The Dataverse integration is being deprecated as part of the infrastructure merge. In the finance and operations infrastructure, new Dual Write maps are planned to replace the functionality of the Dataverse integration.  
+Going forward, the Dynamics 365 Human Resources app will have its own finance and operations environment that is separate from other operations apps. In this way, customers will be able to take advantage of extensibility options without having to merge their current data. Microsoft will provide tooling and a sandbox environment that customers can use to test and validate the data migration before they move to a production environment. The tooling will enable a near-automated process and will be available between August and November 2022.
 
-## How will the Data integrator that moves data between Dynamics 365 Human Resources and other Dynamics 365 apps be affected? 
-After moving to the finance and operations infrastructure, customers will need to continue to integrate data between the two environments. Customers can continue to use the Data Integrator to perform these data migration tasks. Customers who plan to keep their Dynamics 365 Human Resources environment separate from existing finance and operations apps environment will need to continue to integrate the data between the two environments. Customers who merge the two environments into a single environment, integration between the two environments will no longer be necessary. 
+Customers who are using other apps on the finance and operations infrastructure will have the option to merge their Human Resources data with an existing environment. For more information, see the Merging Dynamics 365 with an existing Dynamics 365 finance and operations app environment section.
 
-## How will data be moved between Dynamics 365 Human Resources on the F&O infrastructure and the Dataverse after the migration? 
-The current Dataverse Integration between Dynamics 365 Human Resources and the Dataverse is being deprecated as part of the finance and operations infrastructure. There are plans to introduce Dual Write maps to map the finance and operations entities to the Dataverse tables. Customers will need to decide which Dual Write maps are needed for their implementation. We recommend using Virtual Tables for integrations and ISV solutions unless there is a specific business need for the data to be duplicated into the Dataverse to execute business logic.  
+## When will customers be moved to the finance and operations infrastructure?
 
-## How does the migration impact Dataverse extensions for Dynamics 365 Human Resources? 
-Customers will be required to migrate to a Sandbox environment prior to migrating their production environment. When customers migrate their sandbox environment, they
-will need to create a copy of their Dataverse environment to connect to the new finance and operations migrated environment. We recommend customers copy both the data and the solutions for the environment, so they are the same as the customer’s current production environment. 
-When a customer is ready to migrate their production Dynamics 365 Human Resources environment, Microsoft will migrate the database and Azure Blob storage automatically. The migrated database and storage will point the new environment on the finance and operations infrastructure to the same production Dataverse environment. Customers will need to enable any Dual Write maps that are required for their integrations, extensions, and ISV solutions that are built on the Dataverse for the data to continue to be copied into the Dataverse. 
+The transition for each company will depend on that company's current configuration and readiness to move to the finance and operations infrastructure. We recommend that customers work with their Microsoft partner to determine the best path forward.
 
-## Will Power Platform components built for Dynamics 365 Human Resources work automatically once the infrastructure migration is completed? 
-Power Apps, Power Automate, and other Power Platform customizations are like Dataverse extensions. During the migration of customer production environments, there's 
-no impact to Dataverse environments including any extensions. Power Apps, Power Automate flows, and other Power Platform customizations should continue to work without
-additional configuration.  
+- Organizations that use the **Human Resources** module in Dynamics 365 Finance will be able to enable new capabilities from Dynamics 365 Human Resources as part of the regular One Version update process. New features are planned to become generally available starting in January 2022.
+- Organizations that use Dynamics 365 Human Resources will have access to tooling that they can use to complete the infrastructure merge. Microsoft will work with customers on the transition, to help prevent any interruption in service. Customers will have 12 to 18 months to make the transition, starting from the time when the migration tooling becomes available.
+- Organizations that use both Dynamics 365 Human Resources and the **Human Resources** module can move their stand-alone Human Resources infrastructure onto the finance and operations infrastructure. Another option is to use the merge tooling to bring the environments into a single environment. There is no requirement or timeframe for merging the two environments.
 
-## What will happen to Dataverse virtual tables entities for Dynamics 365 Human Resources during the migration? 
-When customers migrate their Dynamics 365 Human Resources environment to the finance and operations infrastructure, the environment will remain connected to the Dataverse environment that is currently connected to Dynamics 365 Human Resources. The Dataverse virtual tables that have been generated in the environment will continue to work without any additional configuration. The virtual tables may need to be regenerated in the Dataverse environment that is connected to the customer’s existing finance and operations environment. 
+For up-to-date information, regularly check the [Release plans](/dynamics365/release-plans/).
 
-## How will an integration using the Applicant Tracking System (ATS) API, Payroll API, Dataverse virtual tables for Dynamics 365 Human Resources, or other entities in the Dataverse Web API work after the infrastructure merge is completed? 
-When customers migrate their Dynamics 365 Human Resources environment to the finance and operations infrastructure, the environment will remain connected to the Dataverse environment currently connected to Dynamics 365 Human Resources. Any integrations developed against the Dataverse Web API will continue to work once the migration is completed. Our organization has configured custom security in Dynamics 365 Human Resources. 
+## Will customers still need custom integrations between Dynamics 365 Human Resources and the Human Resources module?
 
-## Will our custom security still be applied once the infrastructure migration is completed? 
-Yes, custom security configurations will be included in the data migration. 
+- Customers who have both Dynamics 365 Human Resources and other finance and operations infrastructure environments that are currently integrated will have to continue to integrate the two environments after the merge.
+- Customers who choose to keep their Dynamics 365 Human Resources environment separate from their existing finance and operations app environment will have to continue to integrate the environments to make the data available in both environments.
+- Customers can continue to use the Data Integrator to copy data between the two environments. Customers who merge data into a single environment after the
+migration will no longer have to integrate the data, because all data will be in a single database.
 
-## Will workflows in Dynamics 365 Human Resources be migrated automatically?  
-Yes, workflow configurations, workflow history, and current in-process workflows will be migrated. 
+## Will customer ISV solutions automatically be migrated?
 
-## Will saved views in Dynamics 365 Human Resources be migrated automatically? 
-Yes, saved views will be migrated to the merged infrastructure. 
+The migration experience for each independent software vendor (ISV) solution will vary, depending on the integration method of the solution. Microsoft will work closely with ISVs to help provide a smooth transition to the finance and operations infrastructure. Many ISV solutions are built on Dataverse by using capabilities of Microsoft Power Platform. These solutions depend on the Dataverse integration between the Dynamics 365 Human Resources environment and the Dataverse environment. The Dataverse integration is being deprecated as part of the infrastructure merge. In the finance and operations infrastructure, new dual-write maps are planned to replace the functionality of the Dataverse integration.
 
-## Will features enabled in Dynamics 365 Human Resources be automatically available after the infrastructure merge? 
- - For customers using the HR module, features that are only in Dynamics 365 Human Resources will be managed through Feature management. These features will not be enabled by default. There may be some cases where features do need to be enabled by default, in which case, they will be documented. 
- - For customers using Dynamics 365 Human Resources, features will be in the infrastructure. In the event there are features that are not available, documentation will be provided. Any feature management key that is enabled in the current Dynamics 365 Human Resources environment will be enabled in the merged infrastructure. 
-For more information, see [Feature management overview](/fin-ops/get-started/feature-management-overview.md).  
+## How will the Data Integrator that moves data between Dynamics 365 Human Resources and other Dynamics 365 apps be affected?
 
-## What happens to BYOD databases during the migration? 
-Import and export configurations for bring your own database (BYOD) will be migrated to the finance and operations infrastructure. 
+After customers move to the finance and operations infrastructure, they will have to continue to integrate data between the two environments. Customers can continue to use the Data Integrator to perform these data migration tasks. Customers who plan to keep their Dynamics 365 Human Resources environment separate from their existing finance and operations apps environment will have to continue to integrate the data between the two environments. For customers who merge the two environments into a single environment, integration between the two environments will no longer be required.
 
-## Is there an impact on the Azure region when the customer environment is migrated? 
-The Dynamics 365 Human Resources environment will stay within the same Azure region for the migration. If there is a requirement to move an environment to a different
-Azure region, customers will need to follow the standard steps to migrate to a new region after the migration is complete.  
+## How will data be moved between Dynamics 365 Human Resources on the finance and operations infrastructure and Dataverse after the migration?
 
-## What happens to Azure Data Lakes during the migration? 
-Any export currently configured for Azure Data Lake in finance and operations apps will maintain the same configuration following the migration. 
+The current Dataverse integration between Dynamics 365 Human Resources and Dataverse is being deprecated as part of the finance and operations infrastructure. There are plans to introduce dual-write maps to map the finance and operations entities to the Dataverse tables. Customers will have to decide which dual-write maps are required for their implementation. We recommend that virtual tables be used for integrations and ISV solutions, unless there is a specific business need for the data to be duplicated in Dataverse to run business logic.
+
+## How does the migration affect Dataverse extensions for Dynamics 365 Human Resources?
+
+Customers will be required to migrate to a sandbox environment before they migrate their production environment. When customers migrate their sandbox environment, they will have to create a copy of their Dataverse environment to connect to the new finance and operations migrated environment. We recommend that a customer copy both the data and the solutions for the environment, so that they match the customer's current production environment.
+
+When customers are ready to migrate their production Dynamics 365 Human Resources environment, Microsoft will automatically migrate the database and Azure Blob storage. The migrated database and storage will point the new environment on the finance and operations infrastructure to the same production Dataverse environment. Before the data can continue to be copied to Dataverse, customers will have to enable any dual-write maps that are required for their integrations, extensions, and ISV solutions that are built on Dataverse.
+
+## Will Microsoft Power Platform components that were built for Dynamics 365 Human Resources automatically work after the infrastructure migration is completed?
+
+Apps that are created in Power Apps, flows that are created in Power Automate, and other Microsoft Power Platform customizations are like Dataverse extensions. During the migration of customer production environments, there is no impact on Dataverse environments, including any extensions. Apps, flows, and other Power Microsoft Platform customizations should continue to work without requiring additional configuration.
+
+## What will happen to Dataverse virtual table entities for Dynamics 365 Human Resources during the migration?
+
+When customers migrate their Dynamics 365 Human Resources environment to the finance and operations infrastructure, the environment will remain connected to the Dataverse environment that is currently connected to Dynamics 365 Human Resources. The Dataverse virtual tables that have been generated in the environment will continue to work without requiring any additional configuration. The virtual tables might have to be regenerated in the Dataverse environment that is connected to a customer's existing finance and operations environment.
+
+## How will an integration that uses the Applicant Tracking System (ATS) API, Payroll API, Dataverse virtual tables for Dynamics 365 Human Resources, or other entities in the Dataverse Web API work after the infrastructure merge is completed?
+
+When customers migrate their Dynamics 365 Human Resources environment to the finance and operations infrastructure, the environment will remain connected to the Dataverse environment that is currently connected to Dynamics 365 Human Resources. Any integrations that were developed against the Dataverse Web API will continue to work after the migration is completed.
+
+## Our organization has configured custom security in Dynamics 365 Human Resources. Will it still be applied after the infrastructure migration is completed?
+
+Yes, custom security configurations will be included in the data migration.
+
+## Will workflows in Dynamics 365 Human Resources automatically be migrated?
+
+Yes, workflow configurations, workflow history, and current in-process workflows will be migrated to the merged infrastructure.
+
+## Will saved views in Dynamics 365 Human Resources automatically be migrated?
+
+Yes, saved views will be migrated to the merged infrastructure.
+
+## Will features that are enabled in Dynamics 365 Human Resources automatically be available after the infrastructure merge?
+
+- For customers who use the **Human Resources** module, features that are available only in Dynamics 365 Human Resources will be managed through Feature management. Usually, these features won't be enabled by default. Any features that must be enabled by default will be documented.
+- For customers who use Dynamics 365 Human Resources, features will be available in the infrastructure. Any features that aren't available will be documented. Every Feature management key that is enabled in the current Dynamics 365 Human Resources environment will be enabled in the merged infrastructure. For more information, see [Feature management overview](/fin-ops/get-started/feature-management-overview.md).
+
+## What happens to BYOD databases during the migration?
+
+Import and export configurations for bring your own database (BYOD) will be migrated to the finance and operations infrastructure.
+
+## Is there an impact on the Azure region when the customer environment is migrated?
+
+The Dynamics 365 Human Resources environment will stay in the same Azure region for the migration. If there is a requirement to move an environment to a different Azure region, customers will have to follow the standard steps to migrate to a new region after the migration is completed.
+
+## What happens to Azure data lakes during the migration?
+
+Any export that is currently configured for Azure Data Lake in finance and operations apps will maintain the same configuration after the migration.
 
 > [!NOTE]
-> Dual Write maps will need to be enabled to continue writing data from the Human Resources environment into the Dataverse.  
+> Dual-write maps will have to be enabled to continue to write data from the Human Resources environment into Dataverse.
 
-If a customer wants to export Human Resources data to the Data Lake, they can enable this feature after the migration to the Dynamics 365 finance and operations infrastructure is complete. For more information, see [Data lakes - Azure Architecture Center](/azure/architecture/data-guide/scenarios/data-lake). 
+Customers who want to export Human Resources data to the data lake can enable this feature after the migration to the finance and operations infrastructure is completed. For more information, see [Data lakes - Azure Architecture Center](/azure/architecture/data-guide/scenarios/data-lake).
 
-Customers can link multiple finance and operations apps environments to the same Data Lake, however, each environment will point to a different folder and container. Customers planning to merge environments together later should carefully plan their approach. 
+Customers can link multiple finance and operations environments to the same data lake. However, each environment will point to a different folder and container. Customers who plan to merge environments later should carefully plan their approach.
  
-## What migration will be needed if the customer is currently using the HR module? 
-Customers using the HR module will have the new feature functionality from Dynamics 365 Human Resources applied to their environment through the standard One Version
-update process. Customers can expect to see the new functionality in their environment as it becomes available in each update. Customers can use feature management to
-enable these features. Customers should plan to do validations on these new features following the processes they already have in place for validating other updates to
-their environment.
+## What migration will be required if a customer is currently using the Human Resources module?
 
-## What will happen to custom integrations to external systems? 
-Customers will need to migrate their integrations to the finance and operations environment. The endpoint of this environment is different, customers may need to make updates or changes to integrations to point to the new environment. This will be a primarily manual process and the changes required are dependent on the architecture of the integration. Customers should work with their Microsoft partner to determine the best approach for moving integrations.  
+Customers who use the **Human Resources** module will have the new feature functionality from Dynamics 365 Human Resources applied to their environment through the standard One Version update process. Customers can expect to see the new functionality in their environment as it becomes available in each update. Customers can use Feature management to enable the features. Customers should plan to validate these new features by using the processes that they already have in place and use to validate other updates to their environment.
 
-## What will happen to Power Platform (Dataverse) extensions if a customer merges Dynamics 365 Human Resources environment with an existing F&O environment? 
-If a customer decides to merge a Dynamics 365 Human Resources environment and an existing finance and operations environment into a single Dataverse after the migration, their Dataverse environments need to be combined as part of the merge process. This will require any Power Apps and other customizations to be redeployed in the new environment. 
+## What will happen to custom integrations to external systems?
 
-## What will happen to documents during the migration? 
-When customers migrate their Dynamics 365 Human Resources environment to the finance and operations infrastructure, the documents will remain in the existing document storage and will be mapped automatically to the new environment in the finance and operations infrastructure. 
-In a future release, new data entities will be provided. This will allow customers to who choose to merge their Dynamics 365 Human Resources environment into an existing
-finance and operations environment to export documents and move them into the existing environment. 
+Customers will have to migrate their integrations to the finance and operations environment. Because the endpoint of this environment is different, customers might have to update or change the integrations so that they point to the new environment. This task will primarily be a manual process, and the changes that are required will depend on the architecture of the integration. Customers should work with their Microsoft partner to determine the best approach for moving integrations.
 
-## What happens to the batch jobs configured in Dynamics 365 Human Resources after the migration? 
-Batch jobs will need to be reconfigured in the finance and operations environment. Customers will need to evaluate each batch job and compare it to the current list of batch jobs in the finance and operations environment. Customers should also analyze the overall batch schedule when merging the two sets of batch jobs together to determine if changes should be made to the batch schedule, priorities, or batch groups.
+## What will happen to Microsoft Power Platform (Dataverse) extensions if customers merge a Dynamics 365 Human Resources environment with an existing finance and operations environment?
 
-## How will the migration effect Lifecycle Service project for Dynamics 365 Human Resources? 
-Customers will be required to create a new Lifecycle Service (LCS) project and select the finance and operations product and Implementation project type. Additionally, a new sub project type field has been added when creating an LCS project. Customers will need to select the option for Dynamics 365 Human Resources migration to migrate an existing Human Resources LCS project into the finance and operations infrastructure.  
-The features of Dynamics 365 finance and operations LCS projects are different than Human Resources LCS projects. 
+If customers decide to merge a Dynamics 365 Human Resources environment and an existing finance and operations environment into a single Dataverse instance after the migration, their Dataverse environments must be combined as part of the merge process. This task will require that any apps that are created by using Power Apps, and any other customizations, be redeployed in the new environment.
 
-New customers will need to complete the following to go live:
- - project onboarding 
- - the methodology 
- - fill out a subscription estimator 
- - the go live readiness process 
-  
-## How will the Business Process Modeler be migrated? 
-Customers will be required to export their business process modeler library from the Human Resources LCS project and import into the Dynamics 365 finance and operations LCS project. Additionally, customers will need to update the Help settings in the application to point to the new LCS project. 
+## What will happen to documents during the migration?
 
-## How will the service update process be affected by the migration? 
-Customers will have much more flexibility in application lifecycle management (ALM) and service updates following the migration. Rather than having service updates 
-applied automatically to Human Resources environments, the service will follow One Version service update processes and functionality, enabling configuration options 
-for updates through Lifecycle Services (LCS). 
+When customers migrate their Dynamics 365 Human Resources environment to the finance and operations infrastructure, the documents will remain in the existing document storage and will automatically be mapped to the new environment in the finance and operations infrastructure.
 
-## Will customers be eligible for FastTrack assistance with the infrastructure merge? 
-We are still defining what tools and resources will be available from FastTrack to assist with the merge.  
+In a future release, new data entities will be provided. After that change is made, customers who choose to merge their Dynamics 365 Human Resources environment with an existing finance and operations environment will then be able to export documents and move them into the existing environment.
 
-## Licensing Impact 
-For more information regarding licensing impated, go to [Dynamics 365 Human Resources infrastructure merge FAQ](hr-infrastructure-merge-faq.md#licensing-impact).  
- 
+## After the migration, what happens to the batch jobs that were configured in Dynamics 365 Human Resources?
 
+Batch jobs will have to be reconfigured in the finance and operations environment. Customers will have to evaluate each batch job and compare it to the current list of batch jobs in the finance and operations environment. Customers should also analyze the overall batch schedule when they merge the two sets of batch jobs, to determine whether changes should be made to the batch schedule, priorities, or batch groups.
 
+## How will the migration affect the LCS project for Dynamics 365 Human Resources?
 
+Customers will be required to create a new Microsoft Dynamics Lifecycle Service (LCS) project, and they will have to select finance and operations apps as the product and **Implementation** as the project type. Additionally, a new field for the sub-project type is available when an LCS project is created. Customers will have to select the option for Dynamics 365 Human Resources migration to migrate an existing Human Resources LCS project to the finance and operations infrastructure.
 
+The features of finance and operations LCS projects differ from the features of Human Resources LCS projects.
+
+To go live, new customers will have to complete the following tasks:
+
+- Complete project onboarding.
+- Complete the methodology.
+- Fill out a subscription estimator.
+- Complete the go-live readiness process.
+
+## How will the Business process modeler be migrated?
+
+Customers will be required to export their Business process modeler library from the Human Resources LCS project and import it into the finance and operations LCS project. Additionally, customers will have to update the Help settings in the application so that they point to the new LCS project.
+
+## How will the service update process be affected by the migration?
+
+After the migration, customers will have much more flexibility for application lifecycle management (ALM) and service updates. Service updates will no longer be automatically applied to Human Resources environments. Instead, the service will follow the One Version service update processes and functionality, and configuration options for updates through LCS will be enabled.
+
+## Will customers be eligible for FastTrack assistance with the infrastructure merge?
+
+Microsoft is still defining what tools and resources will be available from FastTrack to help with the merge.
+
+## Licensing impact
+
+For more information about how licensing is affected, see [Dynamics 365 Human Resources infrastructure merge FAQ](hr-infrastructure-merge-faq.md#licensing-impact).
