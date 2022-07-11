@@ -87,7 +87,7 @@ Finally, add a link from the header of your site to your catalogs.
 
 The following illustration shows an example of an ecommerce website header with a link to the B2B catalog.
 
-![My accounts page with link to catalog.](./media/catalog-in-header.png)
+![Ecommerce website header with dropdown link to catalog.](./media/catalog-in-header.png)
 
 
 ## Additional resources 
