@@ -1088,12 +1088,14 @@
               href: general-ledger/standard-cost-variance-posting.md
             - name: Indirect cost posting
               href: general-ledger/indirect-cost-posting
-           - name: Landed cost posting
-             href: supply-chain/landed-cost/costing-parameters-setup.md
-           - name: Posting definition overview
-             href: general-ledger/posting-definitions.md
-           - name: Production control posting
-             href: general-ledger/production-posting.md  
+          - name: Landed cost posting 
+            items:   
+            - name: Costing parameter values setup
+              href: supply-chain/landed-cost/costing-parameters-setup.md
+            - name: Posting definition overview
+              href: general-ledger/posting-definitions.md
+            - name: Production control posting
+              href: general-ledger/production-posting.md  
         - name: Allocation rules
           items:
           - name: Ledger allocation rules
