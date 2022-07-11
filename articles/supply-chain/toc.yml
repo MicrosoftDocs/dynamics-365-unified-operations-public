@@ -376,24 +376,8 @@
             href: ../finance/localizations/rus-goods-transit-vendor.md?toc=/dynamics365/supply-chain/toc.json
     - name: Distributed hybrid topology
       items:
-      - name: Scale units in a distributed hybrid topology
+      - name: Scale unit capability is currently paused for new customers
         href: cloud-edge/cloud-edge-landing-page.md
-      - name: Try out scale units in a distributed hybrid topology
-        href: cloud-edge/cloud-edge-try-out.md
-      - name: Deploy edge scale units on custom hardware using LBD
-        href: cloud-edge/cloud-edge-edge-scale-units-lbd.md
-      - name: Manufacturing execution workloads for cloud and edge scale units
-        href: cloud-edge/cloud-edge-workload-manufacturing.md
-      - name: Warehouse management workloads for cloud and edge scale units
-        href: cloud-edge/cloud-edge-workload-warehousing.md
-      - name: Configure the Warehouse Management mobile app for cloud and edge scale units
-        href: cloud-edge/cloud-edge-workload-setup-warehouse-app.md
-      - name: Warehouse orders for cloud and edge scale units
-        href: cloud-edge/cloud-edge-warehouse-order.md
-      - name: Warehouse inventory adjustment
-        href: cloud-edge/cloud-edge-warehouse-inventory-adjustment.md
-      - name: Message processor messages
-        href: cloud-edge/cloud-edge-message-processor-messages.md
     - name: Asset management
       items:
       - name: Asset management overview
