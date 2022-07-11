@@ -68,6 +68,10 @@ Next, add a reference to your catalog picker page on your **My account** page.
 1. Under **Name**, select your catalog picker page, select **Apply**, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
+The following illustration shows an example of an accounts page with a reference to the catalog page.
+
+![My accounts page with link to catalog.](./media/my-accounts.png)
+
 ### Add a link from the header
 
 Finally, add a link from the header of your site to your catalogs.
@@ -80,6 +84,11 @@ Finally, add a link from the header of your site to your catalogs.
 1. In the **Add a link** dialog box, select **Custom page**, and then select **Next**.
 1. Under **Name**, select your catalog picker page, select **Apply**, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the header fragment, and then select **Publish** to publish it.
+
+The following illustration shows an example of an ecommerce website header with a link to the B2B catalog.
+
+![My accounts page with link to catalog.](./media/catalog-in-header.png)
+
 
 ## Additional resources 
 
