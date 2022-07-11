@@ -1087,11 +1087,11 @@
             - name: Standard cost variance posting
               href: general-ledger/standard-cost-variance-posting.md
             - name: Indirect cost posting
-              href: general-ledger/indirect-cost-posting
+              href: general-ledger/indirect-cost-posting.md
           - name: Landed cost posting 
             items:   
             - name: Costing parameter values setup
-              href: supply-chain/landed-cost/costing-parameters-setup.md
+              href: ../supply-chain/landed-cost/costing-parameters-setup.md
             - name: Posting definition overview
               href: general-ledger/posting-definitions.md
             - name: Production control posting
