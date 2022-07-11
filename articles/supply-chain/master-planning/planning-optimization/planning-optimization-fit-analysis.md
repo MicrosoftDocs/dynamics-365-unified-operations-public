@@ -60,7 +60,7 @@ The following table shows the various results that can be shown after a fit anal
 
 | Feature | Listed issue | Explanation | Expected availability |
 | --- | --- | --- | --- |
-| Actions | Coverage groups with Actions calculation enabled: _\#_ | This feature is now supported. | Supported |
+| Actions | Coverage groups with Actions calculation enabled: _\#_ | This feature is now supported. For more information, see [Action messages](../action-messages.md) | Supported |
 | Base calendars | Calendars using base calendar: _\#_ | This feature is now supported. | Supported | 
 | Batch disposition codes | Non-nettable batch disposition masters: _\#_ | This feature is pending. Currently, batch disposition codes are ignored when Planning Optimization is enabled. | October 2022 |
 | Capable to promise (CTP) | Default order settings with delivery date control set to CTP: _\#_ | In Supply Chain Management 10.0.28 and newer, a process called *CTP for Planning Optimization* makes confirmed ship and receipt dates available after the dynamic plan has been run. For older versions of Supply Chain Management, the legacy CTP setting is ignored when Planning Optimization is enabled. | Supported |
