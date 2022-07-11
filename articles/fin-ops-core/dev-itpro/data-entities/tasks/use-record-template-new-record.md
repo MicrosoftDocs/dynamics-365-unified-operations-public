@@ -3,7 +3,7 @@
  
 title: Use record template to create a new record
 description: This procedure shows how to use a previously defined record template to create a new record. 
-author: margoc
+author: peakerbl
 ms.date: 08/12/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: sericks
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: margoc
+ms.author: peakerbl
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
