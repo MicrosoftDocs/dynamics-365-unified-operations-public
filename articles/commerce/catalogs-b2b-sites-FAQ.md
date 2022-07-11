@@ -22,7 +22,7 @@ This article provides answer to frequently asked questions about Microsoft Dynam
 
 ## Why can't I configure a catalog-specific navigation hierarchy or see an option to associate a customer hierarchy?
 
-Ensure that the **Enable use of multiple catalogs on retails channels** feature is enabled in the Commerce headquarters **Feature management** workspace and that your environment is the Commerce version 10.0.27 or later release. Ensure that you have selected **B2B** under **Catalog type**.
+Ensure that the **Enable use of multiple catalogs on retails channels** feature is enabled in the Commerce headquarters **Feature management** workspace and that your environment is the Commerce version 10.0.27 or later release. Ensure that you've selected **B2B** under **Catalog type**.
 
 ## Can I view the catalog-specific hierarchy and enrich category pages in Commerce site builder?
 
@@ -52,7 +52,7 @@ No, a B2B shopper isn't allowed to purchase from the default assortment. That as
 
 ## Can marketing content be curated for a product that is specific to a catalog?
 
-Currently, product enrichment is only supported at the site and channel level. In other words, if a product is enriched and it is shared across multiple catalogs, then the corresponding enriched product details page (PDP) for that product would be rendered the same way across all catalogs for a given site. 
+Currently, product enrichment is supported only at the site and channel level. In other words, if a product is enriched and is shared across multiple catalogs, the corresponding enriched product details page (PDP) for that product will be rendered in the same way across all catalogs for a given site. 
 
 ## Is catalog support available for both B2B and business-to-consumer (B2C) online channels?
 
