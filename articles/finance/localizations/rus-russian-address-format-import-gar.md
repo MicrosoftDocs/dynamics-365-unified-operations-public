@@ -18,7 +18,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: 
+ms.author: kfend
 ms.search.validFrom: 
 ms.dyn365.ops.version: Version 10.0.29
 
