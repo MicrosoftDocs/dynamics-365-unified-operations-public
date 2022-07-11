@@ -47,7 +47,7 @@ To enable the drop-down list in the feature version configuration of Tax Calcula
 8. [Import and setup Dataverse Model Mapping.](#import)
 
 ## <a name='enable'></a> Enable Microsoft Power Platform integration and open the Dataverse environment
-By default, all finance and operations apps environments that are managed by Microsoft Dynamics Lifecycle Services (LCS) will receive a linked Power Platform environment without Microsoft Dataverse.
+The integration of finance and operations apps with Microsoft Power Platform can be enabled when you create a new finance and operations apps environment in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Microsoft Power Platform integration - Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). After you complete this step, the name of a Microsoft Power Platform environment will appear in the **Power Platform Integration** section.
   1. In LCS, in your finance and operations environment, under the **Power Platform Integration** section, find and note down the linked environment name. 
   
      [![Environment name page.](./media/tcs-dataverse-master-data-lookup-1.png)](./media/tcs-dataverse-master-data-lookup-1.png)
