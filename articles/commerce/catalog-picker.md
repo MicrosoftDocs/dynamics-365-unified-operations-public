@@ -31,7 +31,7 @@ The following image shows an example of a catalog picker module.
 To add a catalog picker module to your site in Commerce site builder, follow these steps.
 
 1. Go to **Pages**, and select **New** to create a new page.
-1. In the **Create a new page** dialog box, under **Page name**, enter **Catalog picker**. and then select **Next**.
+1. In the **Create a new page** dialog box, under **Page name**, enter **Catalog picker**.
 1. Under **Page URL**, enter a URL for the page, and then select **Next**.
 
 ![step-1 author-page](./media/Create-catalog-picker-page.png)
@@ -39,9 +39,12 @@ To add a catalog picker module to your site in Commerce site builder, follow the
 1. Under **Choose a template**, select **General content**, and then select **Next**.
 1. Under **Choose a layout**, select **Flexible layout**, and then select **Next**.
 1. Under **Review and finish**, review the page configuration. If you need to edit the page information, select **Back**. If the page information is correct, select **Create page**.
-1. In the **Main** slot of the new page, select the ellipsis (**...**), and then select **Add module**.
+1. Under **Catalog picker**, right click the **Main slot**, select the ellipsis (**...**), and then select **Add module**.
+
+![Add-module-catalog-picker](./media/Author-web-page-catalog-picker-1.png)
+
 1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
-1. In the **Container** slot, select the ellipsis (**...**), and then select **Add module**.
+1. Right click the **Container** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Catalog picker** module, and then select **OK**.
 1. In the **Catalog picker** properties pane, under **Heading**, select **Catalogs** and then enter a heading for the catalog picker page.
 1. Under **Heading level**, select a heading level, and then select **OK**.
