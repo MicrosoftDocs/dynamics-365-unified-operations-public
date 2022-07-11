@@ -26,7 +26,7 @@ DDMRP has been proven to be a valuable planning methodology for variable environ
 
 ## The five components of DDMRP
 
-DDMRP has five sequential components. The first three components essentially define the initial and evolving configuration of a demand-driven material requirements planning model. The last two elements define the day-to-day operation of the methodology.
+DDMRP has five sequential components (steps). The first three components essentially define the initial and evolving configuration of a demand-driven material requirements planning model. The last two components define the day-to-day operation of the methodology.
 
 1. **[Strategic inventory positioning](ddmrp-inventory-positioning.md)** – Identify decoupling points in the supply chain network. Decoupling points are specific points of your supply chain where you put an inventory buffer that you will monitor and replenish.
 2. **[Buffer profiles and levels](ddmrp-buffer-profile-and-levels.md)** – For each decoupling point, identify the buffer sizes (minimum quantity, maximum quantity, and reorder point) and the reorder quantity.
