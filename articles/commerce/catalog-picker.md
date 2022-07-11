@@ -5,7 +5,7 @@
 title: Catalog picker module
 description: This topic covers catalog picker modules and describes how to add them to Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce sites.
 author: ashishmsft
-ms.date: 05/20/2022
+ms.date: 07/11/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -22,6 +22,10 @@ This topic covers catalog picker modules and describes how to add them to Micros
 
 A catalog picker module is a special container that is used to list all the product catalogs that are available to B2B site users for shopping. Multiple catalogs are  currently only supported for B2B sites.  
 
+The following image shows an example of a catalog picker module.
+
+![Sample - Catalog picker module](./media/Catalog-picker-sample.png)
+
 ## Add a catalog picker module to your site
 
 To add a catalog picker module to your site in Commerce site builder, follow these steps.
@@ -29,6 +33,9 @@ To add a catalog picker module to your site in Commerce site builder, follow the
 1. Go to **Pages**, and select **New** to create a new page.
 1. In the **Create a new page** dialog box, under **Page name**, enter **Catalog picker**. and then select **Next**.
 1. Under **Page URL**, enter a URL for the page, and then select **Next**.
+
+![step-1 author-page](./media/Create-catalog-picker-page.png)
+
 1. Under **Choose a template**, select **General content**, and then select **Next**.
 1. Under **Choose a layout**, select **Flexible layout**, and then select **Next**.
 1. Under **Review and finish**, review the page configuration. If you need to edit the page information, select **Back**. If the page information is correct, select **Create page**.
@@ -36,8 +43,7 @@ To add a catalog picker module to your site in Commerce site builder, follow the
 1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
 1. In the **Container** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Catalog picker** module, and then select **OK**.
-1. In the **Catalog picker** properties pane, under **Heading**, select **Heading**.enter heading and 
-1. In the **Heading** dialog box, under **Heading text**, enter a heading for the catalog picker page.
+1. In the **Catalog picker** properties pane, under **Heading**, select **Catalogs** and then enter a heading for the catalog picker page.
 1. Under **Heading level**, select a heading level, and then select **OK**.
 1. Under **Rich text**, enter text that will appear at the top of the catalog picker page.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
