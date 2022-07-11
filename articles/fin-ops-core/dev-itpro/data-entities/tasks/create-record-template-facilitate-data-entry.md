@@ -3,7 +3,7 @@
  
 title: Create a record template to facilitate data entry
 description: This article demonstrates how to create a record template so that field values that are used often do not have to be entered explicitly for each new record. 
-author: margoc
+author: peakerbl
 ms.date: 07/29/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: sericks
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: margoc
+ms.author: peakerbl
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
