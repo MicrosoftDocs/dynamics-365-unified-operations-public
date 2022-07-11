@@ -1073,7 +1073,7 @@
           - name: Fixed asset posting
             href: fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
           - name: Inventory posting profiles
-           items:
+            items:
            - name: Inventory posting profiles
              href: general-ledger/inventory-posting-profiles.md
            - name: Sales order posting
