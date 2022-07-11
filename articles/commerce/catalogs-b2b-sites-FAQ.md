@@ -80,6 +80,6 @@ No. Catalog source codes are supported only for call center channels.
 
 [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md)
 
-[Add catalog picker to website](catalog-picker.md)
+[Catalog picker module](catalog-picker.md)
 
 [Extensibility impact of Commerce catalogs for B2B customizations](catalogs-b2b-sites-dev.md)
