@@ -55,9 +55,9 @@ First, create a catalog picker page.
 13. Under **Rich text**, enter text that will appear at the top of the catalog picker page.
 14. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
-### Add a link from your account page
+### Add a link on your account page
 
-Next, add a reference to your catalog picker page from your **My accounts** page.
+Next, add a reference to your catalog picker page on your **My account** page.
 
 1. Go to **Pages**, find and select your site's "My account" page, and then select **Edit**.
 1. Under the **Main** slot of the page, select the **Account generic tile** slot. 
