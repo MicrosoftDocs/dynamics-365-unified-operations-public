@@ -18,9 +18,9 @@ ms.dyn365.ops.version: 10.0.28
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
-Before you can use DDMRP functionality, it must be turned on for your system together with its prerequisite feature. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of these features and turn them on. Turn on the following features:
+Before you can use Demand Driven Material Requirements Planning (DDMRP) functionality, it and its prerequisite feature must be turned on for your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of these features and turn them on. Turn on the following features:
 
 - **Feature name:** *Priority driven MRP support for Planning Optimization*
 - **Feature name:** *(Preview) DDMRP for Planning Optimization*
 
-See also [Priority-based planning](priority-based-planning.md).
+For more information, see [Priority-based planning](priority-based-planning.md).
