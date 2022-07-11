@@ -5,7 +5,7 @@
 title: Commerce catalogs for B2B FAQ
 description: This article provides answer to frequently asked questions about Microsoft Dynamics 365 Commerce catalogs.
 author: ashishmsft
-ms.date: 05/18/2022
+ms.date: 07/11/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -22,7 +22,7 @@ This article provides answer to frequently asked questions about Microsoft Dynam
 
 ## Why can't I configure a catalog-specific navigation hierarchy or see an option to associate a customer hierarchy?
 
-Make sure that the **Enable use of multiple catalogs on retails channels** feature is enabled in the **Feature management** workspace in Commerce headquarters. Additionally, make sure that your environment is using the Commerce version 10.0.27 or later release.
+Ensure that the **Enable use of multiple catalogs on retails channels** feature is enabled in the Commerce headquarters **Feature management** workspace and that your environment is the Commerce version 10.0.27 or later release. Ensure that you've selected **B2B** under **Catalog type**.
 
 ## Can I view the catalog-specific hierarchy and enrich category pages in Commerce site builder?
 
@@ -52,7 +52,7 @@ No, a B2B shopper isn't allowed to purchase from the default assortment. That as
 
 ## Can marketing content be curated for a product that is specific to a catalog?
 
-Currently, product enrichment is supported only at the site and channel levels. In other words, if a product is enriched, it's shared across multiple catalogs, and the corresponding product details page (PDP) for that product will be rendered in the same way across all catalogs for a given site.
+Currently, product enrichment is supported only at the site and channel level. In other words, if a product is enriched and is shared across multiple catalogs, the corresponding enriched product details page (PDP) for that product will be rendered in the same way across all catalogs for a given site. 
 
 ## Is catalog support available for both B2B and business-to-consumer (B2C) online channels?
 
@@ -79,5 +79,7 @@ No. Catalog source codes are supported only for call center channels.
 ## Additional resources
 
 [Create Commerce catalogs for B2B sites](catalogs-b2b-sites.md)
+
+[Catalog picker module](catalog-picker.md)
 
 [Extensibility impact of Commerce catalogs for B2B customizations](catalogs-b2b-sites-dev.md)
