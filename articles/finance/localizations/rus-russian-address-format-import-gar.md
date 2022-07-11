@@ -107,7 +107,7 @@ For more information about how to import ER configurations, see [Download ER con
 8. Select **OK** to start the import.
 
     > [!IMPORTANT]
-    > Currently, there is a size limit of 2 gigabit for address import. The state can't be imported if it contains an XML file that exceeds the 2-gigabit size limit.
+    > Currently, there is a size limit of 2 gigabyte(GB) for address import. The state can't be imported if it contains an XML file that exceeds the 2-GB size limit.
 
     ![Parameters FastTab in the Import from GAR dialog box.](./media/RUAddressImportGARDialog.png)
 
@@ -139,7 +139,7 @@ The urban/rural settlement and locality are imported to the **City** level with 
 
 ### Importing GAR in a batch
 
-The process of importing addresses can take time. For example, if the address data size is about 800 megabit for state 01, the import might take one to two hours. We recommend that you use the batch job mode by enabling the **Batch processing** option.
+The process of importing addresses can take time. For example, if the address data size is about 800 (MB) for state 01, the import might take one to two hours. We recommend that you use the batch job mode by enabling the **Batch processing** option.
 
 You can review the status of the **Import from GAR** batch on the **Batch jobs** page. You can review the log on the **Batch job** tab by selecting the **Log** button. The import can be completed with errors. For example, if the version of the file is older than the version that was already imported, the following error message will be shown: "Address version validation failed: the version is older than the latest imported version."
 
