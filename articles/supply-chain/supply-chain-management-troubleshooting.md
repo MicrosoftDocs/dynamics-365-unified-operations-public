@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.28
 
 ## Troubleshooting articles
 
-For a large collection of troubleshooting articles, see the followign site provided by Microsoft Support:
+For a large collection of troubleshooting articles, see the following site provided by Microsoft Support:
 
 - [Microsoft Dynamics 365 Supply Chain Management troubleshooting](/troubleshoot/dynamics-365/supply-chain/welcome-supply-chain)
 
@@ -27,7 +27,7 @@ These articles explain how to determine, diagnose, and fix issues that you might
 
 ## Frequently asked questions
 
-Collections of frequently asked questions (FAQs) are integrated into the Supply Chain Management documentation. Each of these articles includes multiple FAQs for a specific feature area. 
+Collections of frequently asked questions (FAQs) are integrated into the Supply Chain Management documentation. Each of these articles includes multiple FAQs for a specific feature area.
 
 The following FAQ articles discuss issues specific to Supply Chain Management:
 
