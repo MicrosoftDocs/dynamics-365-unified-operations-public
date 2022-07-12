@@ -200,7 +200,7 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/move-on-prem-to-cloud.md?toc=/dynamics365/supply-chain/toc.json 
         - name: Multiple LCS projects and production environments on one Azure AD tenant
           href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?toc=/dynamics365/supply-chain/toc.json
-    - name: Supply Chain Management troubleshooting and FAQs
+    - name: Troubleshooting and FAQs
       href: supply-chain-management-troubleshooting.md
     - name: Globalization
       items:
