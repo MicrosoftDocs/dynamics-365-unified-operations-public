@@ -4,7 +4,7 @@
 title: Configure account structures
 description: This article provides information about account structures and financial dimensions.
 author: aprilolson
-ms.date: 06/03/2019
+ms.date: 07/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -96,7 +96,8 @@ To continue to add additional criteria, click **Duplicate in the Segment** and *
 When setting up your account structures there are some best practices you can follow. However, this is only guidance so a holistic discussion about your business, growth plan, and maintenance plan should be considered as part of that discussion.
 
 - Make main account first or as close to the front of the account structure as possible, so users get the best guided experience they can during account entry.
-  - Verify any 3rd party solutions you intend to use will function properly if main account is not in the first position if you choose to do such setup.
+  
+  - Verify that any third party solutions you intend to use will function correctly if main account isn't in the first position, should you choose that setup.
 
 - Reuse account structures as much as possible to reduce maintenance across your legal entities.
 
