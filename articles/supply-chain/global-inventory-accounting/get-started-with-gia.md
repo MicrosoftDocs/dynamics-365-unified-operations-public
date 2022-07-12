@@ -65,24 +65,27 @@ For more information, see [Enable after environment deployment](../../fin-ops-co
 
 ## <a name="install"></a>Install the add-in
 
-Follow these steps to install the add-in so that you can use Global Inventory Accounting.
+For new on-board users, please follow below steps to install the add-in so that you can use Global Inventory Accounting.
+
+> [!NOTE]
+> For current users that want to upgrade to install **Global Inventory Accounting** solution in [Power Platform admin center](https://admin.powerplatform.microsoft.com) only, please follow step 6 and skip the other steps.
 
 1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index).
-1. Open the LCS environment where you want to add the service.
-1. Go to **Full details**.
-1. Go to **Power Platform Integration**, and select **Setup**.
-1. In the **Power platform environment setup** dialog box, select the checkbox, and then select **Setup**. Typically, setup takes between 60 and 90 minutes.
-1. After the setup of the Microsoft Power Platform environment is complete, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then install the Global Inventory Accounting add-in by doing the following steps:
+2. Open the LCS environment where you want to add the service.
+3. Go to **Full details**.
+4. Go to **Power Platform Integration**, and select **Setup**.
+5. In the **Power platform environment setup** dialog box, select the checkbox, and then select **Setup**. Typically, setup takes between 60 and 90 minutes.
+6. After the setup of the Microsoft Power Platform environment is complete, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then install the Global Inventory Accounting solution by doing the following steps:
    1. Select the environment where you want to install the add-in.
    1. Select **Dynamics 365 apps**.
    1. Select **Install App**.
    1. Select **Dynamics 365 Global Inventory Accounting**.
    1. Select **Next** to install.
-1. Go back to LCS environment. On the **Environment add-ins** FastTab, select **Install a new add-in**.
-1. Select **Global inventory accounting**.
-1. Follow the installation guide, and agree to the terms and conditions.
-1. Select **Install**.
-1. On the **Environment add-ins** FastTab, you should see that Global Inventory Accounting is being installed. After a few minutes, the status should change from *Installing* to *Installed*. (You might have to refresh the page to see this change.) At that point, Global Inventory Accounting is ready to use.
+7. After the solution is installed completely, go back to LCS environment. On the **Environment add-ins** FastTab, select **Install a new add-in**.
+8. Select **Global inventory accounting**.
+9. Follow the installation guide, and agree to the terms and conditions.
+10. Select **Install**.
+11. On the **Environment add-ins** FastTab, you should see that Global Inventory Accounting is being installed. After a few minutes, the status should change from *Installing* to *Installed*. (You might have to refresh the page to see this change.) At that point, Global Inventory Accounting is ready to use.
 
 If the default language of your Dataverse installation isn't English, follow these steps:
 1. Go to **Advanced Setting \> Administration \> Languages**.
