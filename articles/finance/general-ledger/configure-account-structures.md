@@ -97,7 +97,7 @@ When setting up your account structures there are some best practices you can fo
 
 - Make main account first or as close to the front of the account structure as possible, so users get the best guided experience they can during account entry.
   
-  - Verify that any third party solutions you intend to use will function correctly if main account isn't in the first position, should you choose that setup.
+  - Verify that any third party solutions you intend to use support main account in the first position.
 
 - Reuse account structures as much as possible to reduce maintenance across your legal entities.
 
