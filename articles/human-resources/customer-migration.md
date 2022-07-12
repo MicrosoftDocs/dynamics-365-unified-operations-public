@@ -39,7 +39,7 @@ Regardless of the category that they belong to, customers will have to move data
 
 Going forward, the Dynamics 365 Human Resources app will have its own finance and operations environment that is separate from other operations apps. In this way, customers will be able to take advantage of extensibility options without having to merge their current data. Microsoft will provide tooling and a sandbox environment that customers can use to test and validate the data migration before they move to a production environment. The tooling will enable a near-automated process and will be available between August and November 2022.
 
-Customers who are using other apps on the finance and operations infrastructure will have the option to merge their Human Resources data with an existing environment. For more information, see the Merging Dynamics 365 with an existing Dynamics 365 finance and operations app environment section.
+Customers who are using other apps on the finance and operations infrastructure will have the option to merge their Human Resources data with an existing environment. 
 
 ## When will customers be moved to the finance and operations infrastructure?
 
