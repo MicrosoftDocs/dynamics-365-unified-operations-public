@@ -29,12 +29,14 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This procedure walks through looking up a customer, creating a new order, searching for a product, and collecting payment from the customer. This procedure uses demo data company USRT and is intended for the Sales Order Clerk. 
 
-## Pre-requisites:##
+## Pre-requisites
 The user who completes the procedure is set up as a Call center user and optionally, Fabrikam Semi-Annual Catalog is published with at least one Source code on it.To add yourself as a call center user, navigate to the "All call centers" form and add yourself as a user. Refer the images below:
-<ADD IMAGE HERE>
+ ![View call center users](../media/View_Callcenter_Users.png "View call center users")
+ ![Add a call center user](../media/Add_Callcenter_User.png "Add a call center user")
+
 
 Additonally, open the call center form where you are added as a user and ensure that the "Enable order completion" configuration is enabled, if visible. If this configuration is not visible, then you can skip this step. Refer the image below.
-<ADD IMAGE HERE>
+![Enable order completion](../media/Order_Completion.png "Enable Order completion configuration")
 
  ## Steps
  
@@ -45,7 +47,7 @@ Additonally, open the call center form where you are added as a user and ensure 
     * Since there is only one customer named "Karen" in demo data, the result will be automatically selected.  If not selected, then press the "Select" button.  
 4. Select **New sales order**.
 5. Expand or collapse the **Sales order** header section and choose "Mode of delivery" as 99 - Standard shipping.
- <ADD IMAGE HERE>
+ ![Select a mode of delivery](../media/Select_Mode_of_Delivery.png "Select a mode of delivery")
   
 6. Additionally, select the source code for the catalog.
     * If there are no active source codes you can skip this step.  
@@ -60,10 +62,11 @@ Additonally, open the call center form where you are added as a user and ensure 
 10. Enter the sales quantity.
   
 11. Select **Complete** to capture the customer payment. Refer the image below:
- <ADD IMAGE HERE>
+  ![Press Complete button](../media/Complete_button.png "Press Complete button")
+
   
 12. Clicking the Complete buttons opens the sales order summary which displays the total amount due. The Complete button also triggers the calculation for any charges such as shipping, handling etc. and they are displayed on the order summary form.
-   <ADD IMAGE HERE>
+ ![View order summary](../media/order_summary.png "View order summary")
     
 13. Under the "Payments" section, select **Add** to capture the payments
     * Expand the Payments tab if it is collapsed.  
