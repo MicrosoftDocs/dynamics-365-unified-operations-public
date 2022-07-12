@@ -4,7 +4,7 @@
 title: Keyboard shortcuts
 description: This article provides an overview of the shortcut key combinations that you can use when you're working with finance and operations apps.
 author: jasongre
-ms.date: 03/03/2022
+ms.date: 07/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -203,6 +203,7 @@ Users can discover currently available shortcuts directly from the user interfac
 | Close the navigation list on Details form (with focus in the navigation list) | Esc                        |
 | Move to the main page content (with focus in another pane)                    | Alt+M,M                    |
 | Move to the FactBox pane (which may include opening it)                       | Alt+M,B or Ctrl+F2         |
+| Move to the next feature callout                                              | Alt+M,C                    |
 
 > [!NOTE]
 > The **Streamline tabbing behavior in full-page forms** feature, introduced in version 10.0.26, allows users to tab through all regions of a page without requiring the mouse or a dedicated keyboard shortcut to move between regions. You can still use the existing keyboard shortcuts (such as Alt+M key chord shortcuts) to move quickly between the regions on a page.
