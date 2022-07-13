@@ -283,7 +283,7 @@ These scenarios require the _Multiple product receipt postings per load_ feature
 
 #### Enable sample data
 
-To work through these scenarios by using the specified sample records and values, you must be using a system where the standard demo data is installed. You must also select the **USMF** legal entity before you begin.
+To work through these scenarios by using the specified sample records and values, you must be using a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. You must also select the **USMF** legal entity before you begin.
 
 #### Add a menu item for receiving load items when a mobile device is used
 

@@ -17800,6 +17800,11 @@
       "source_path": "articles/retail/tasks/worker.md",
       "redirect_url": "/dynamics365/commerce/tasks/worker",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/tasks/set-up-manual-packing-2016-02-05.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/packing-containers",
+      "redirect_document_id": "false"
     }
   ]
 }

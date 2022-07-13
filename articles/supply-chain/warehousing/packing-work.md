@@ -1,8 +1,8 @@
 ---
-title: Packing work for container packing processing and 'Confirm and transfer"
-description: This topic provides details about the work order type "Packing", which is optimized for managing work for container packing processing and enables the capability of using 'Confirm and transfer' for the outbound shipment confirmation for shipments associated with containers. Packing work orders store links to each related load line, which enable workers to pack and ship partial loads. For locations configured to use this feature, the system will generate a new packing work order each time items are delivered to a packing station.
+title: Packing work for outbound container packing and shipment processing
+description: This article describes the "Packing" work order type, which manages work for packing containers and supports partial shipments of packed containers related to loads with remaining unpacked inventory items. Packing work lets you use "confirm and transfer" to confirm outbound shipments that are associated with containers.
 author: perlynne
-ms.date: 6/29/2022
+ms.date: 7/13/2022
 ms.topic: article
 ms.search.form: WHSPackingWorkLocationSetup, WHSPack, WHSContainerTable
 audience: Application User
@@ -10,57 +10,60 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2022-08-01
-ms.dyn365.ops.version: 10.0.24
+ms.dyn365.ops.version: 10.0.29
 ---
 
 # Packing work for outbound container packing and shipment processing
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides details about the work order type "Packing", which is optimized for managing work for container packing processing and enables partly shipping of the already packed containers related to loads with remaining unpacked inventory items, by using the [confirm and transfer](Confirm-and-transfer.md) capability.
+This article describes the *Packing* work order type, which manages work for packing containers and supports partial shipments of packed containers related to loads with remaining unpacked inventory items. Packing work lets you use [confirm and transfer](confirm-and-transfer.md) to confirm outbound shipments that are associated with containers.
 
-The *Packing* work will automatically get created when the inventory related to source document work gets put at locations of type *Packing location*. The work will consist of two lines, one for *Pick* and one for *Put* and the work will automatically get maintained as part of a container close/reopen process.
+Packing work is created automatically when inventory related to source document work is put at locations of type *Packing location*. The work will consist of two lines, one for *Pick* and one for *Put*, and the work will automatically be maintained as part of a container close/reopen process.
 
-You can read more about how to setup and use the container packing process here: [Packing containers](packing-containers.md) <!-- UPDATE!!! -->
+For more information about how to set up and use the container packing process, see [Packing containers](packing-containers.md).
 
 ## Turn on the feature
 
-If your system doesn't already include the features described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the following features as part of the *Warehouse management* module in the following order:
+If your system doesn't already include the features described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the following features (which are part of the *Warehouse management* module) in the following order:
 
 1. *Confirm and transfer*
 1. *Packing work for packing stations*
 
-## Configure *Packing work*
+## Set up a location for packing work
 
-You can for each packing location define if the system automatically should create *Packing* work or not. This setup gets define by:
-
- 1. Go to **Warehouse management > Setup > Packing > Packing station setup**
- 1. Select **New** on the Acton Pane to add a new setup record
- 1. Make the following settings in the new record
-    - **Warehouse** - Select or enter the warehouse
-    - **Location** - Select or enter the packing location. Note that the locations must be related to a *Packing location type*. You can read more about how to enable the packing process here: [Packing containers](packing-containers.md) <!-- UPDATE!!! -->
-    - **Create packing work** - When enabled *Packing* work will get created when items are delivered to the packing location, including links to related load lines making it possible to pack and ship partial loads.
-
-
-
-# Example scenario
-
-In the following example you will process an outbound sales order flow in the *Contoso demo data* company **USMF** by packing a container and shipping a partly load.
-
-## Configure packing work for warehouse packing location
-
-First you must configure the *Packing* work process within warehouse **62** for *Location* **Pack**:
+Use the following procedure to set up packing locations. For each location, you can choose whether the system automatically should create packing work or not.
 
  1. Go to **Warehouse management > Setup > Packing > Packing station setup**
- 1. Select **New** on the Acton Pane to add a new setup record
- 1. Make the following settings in the new record
-    - **Warehouse** - Select or enter warehouse **62**
-    - **Location** - Select or enter packing location **Pack**
-    - **Create packing work** - Enable
- 1. Close the *Packing station setup* page
+ 1. Select **New** on the Acton Pane to add a new packing station setup record.
+ 1. Make the following settings in the new record:
+    - **Warehouse** - Select or enter the warehouse where the packing location is located.
+    - **Location** - Select or enter the packing location. This location must be assigned to a **Location profile** that uses the **Location type** configured as the **Packing location type** configured for your company on the **Warehouse management parameters** page (see also [Packing containers](packing-containers.md)).
+    - **Create packing work** - Select this check box to create packing work each time items are delivered to this location. The work will include links to related load lines, which makes it possible to pack and ship partial loads. <!-- KFM: What happens when we disable this? -->
 
+## Example scenario
 
-## Configure *partly load shipping* via new *Load template*
+This example scenario shows how to process an outbound sales order flow by packing a container and shipping a partly load.
+
+### Make sample data available
+
+To work through this scenario using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
+
+You can also use these scenarios as guidance for using the feature on a production system. However, in that case, you must substitute your own values for each setting that is described here.
+
+### Configure packing work for warehouse packing location
+
+To get started, you must configure the *Packing* work process for **Warehouse** *62*, **Location** *Pack*. Do the following steps:
+
+ 1. Go to **Warehouse management > Setup > Packing > Packing station setup**.
+ 1. Select **New** on the Acton Pane to add a new setup record.
+ 1. Make the following settings in the new record:
+    - **Warehouse:** *62*
+    - **Location:** *Pack*
+    - **Create packing work:** *Yes*
+ 1. Close the **Packing station setup** page.
+
+### Create a new load template to set up partial load shipping <!-- KFM: Continue here -->
 
 To define that a load is allowed to get shipped partly you associate it with a load template allowing this:
 
@@ -73,7 +76,7 @@ To define that a load is allowed to get shipped partly you associate it with a l
 
 You can read more about the **Confirm and transfer** capability [here](Confirm-and-transfer.md).
 
-## Process a sales order flow
+### Process a sales order flow
 
 1. Follow the [example](packing-containers.md) <!-- Link to Example scenario section around line 230 in Packing-containers.md -->  which will pack 1 pcs of an item into a container and close the container
 1. Open **Warehouse management > Work > All work**

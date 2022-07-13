@@ -3241,8 +3241,10 @@
             href: warehousing/piece-picking-confirmation.md
           - name: Packing materials and fees
             href: warehousing/pack-materials-packing-material-fees.md
-          - name: Set up manual packing (February & May 2016 only)
-            href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+          - name: Packing containers
+            href: warehousing/packing-containers.md
+          - name: Packing work for outbound container packing and shipment processing
+            href: warehousing/packing-work.md
           - name: Set up short picking item reallocation
             href: warehousing/tasks/set-up-short-picking-item-reallocation.md
           - name: Cancel warehouse work for exception handling

@@ -31,7 +31,7 @@ This topic presents a scenario that shows how to register items using the item a
 
 ## Enable sample data
 
-To work through this scenario using the sample records and values specified in this topic, you must be using a system where the standard demo data is installed, and you must select the *USMF* legal entity before you begin.
+To work through this scenario using the sample records and values specified in this topic, you must be using a system where the standard [demo data](../../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed, and you must select the *USMF* legal entity before you begin.
 
 You can instead work through this scenario by substituting values from your own data provided that you have the following data available:
 

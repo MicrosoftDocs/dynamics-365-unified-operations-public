@@ -31,7 +31,7 @@ This topic provides an example of how to set up the criteria that determine what
 
 ## Enable sample data
 
-To work through this scenario using the sample records and values specified here, you must use a system where the standard demo data is installed. You must also select the **USMF** legal entity before you begin.
+To work through this scenario using the sample records and values specified here, you must use a system where the standard [demo data](../../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. You must also select the **USMF** legal entity before you begin.
 
 ## Example scenario: configure wave processing
 
