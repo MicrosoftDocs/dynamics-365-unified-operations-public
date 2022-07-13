@@ -40,8 +40,14 @@ This topic explains how to make product recommendations that are based on artifi
 1. Confirm that Azure AD Identity configuration contains an entry for Recommendations. More information on how to do this action is below.
 1. Ensure that the Entity store daily refresh to Azure Data Lake Storage Gen2 has been scheduled. For more information, see [Ensure that the Entity store refresh has been automated](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 1. Enable RetailSale measurements for Entity store. For more information about setting up this process, see [Work with measures](/dynamics365/ai/customer-insights/pm-measures).
+1. Ensure that your environment has configured the serving and cooking regions in the currently supported regions:
+   1. Supported Cooking Regions:
+   2. Supported Serving Regions: US/CA/AU
 
 After the steps above have been completed, you will be ready to enable recommendations.
+
+> [!NOTE]
+> There is a known issue with recommendations not appearing after completing the enablement steps below due to data flow issues within the environment. If your environment is having issues showing recommendations results, please follow these additional steps for configuring the alternative data for for the recommendations service: [How to set up the alternate data flow for recommendations](reco-alternate-data-flow.md). You will need Azure administrative permissions to complete these steps. Reach out to your FastTrack representative if you need assistance.
 
 ## Azure AD Identity configuration
 
@@ -98,6 +104,8 @@ To learn more about personalized recommendations, see [Enable personalized recom
 
 [Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](enable-adls-environment.md)
 
+[Set up Alternate Data flow for recommendations](reco-alternate-data-flow.md)
+
 [Enable personalized recommendations](personalized-recommendations.md)
 
 [Enable "shop similar looks" recommendations](shop-similar-looks.md)
@@ -115,6 +123,7 @@ To learn more about personalized recommendations, see [Enable personalized recom
 [Create recommendations with demo data](product-recommendations-demo-data.md)
 
 [Product recommendations FAQ](faq-recommendations.md)
+
 
 
 
