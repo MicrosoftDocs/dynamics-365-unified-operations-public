@@ -4,7 +4,7 @@
 title: Data upgrade process for AX 2012 to Dynamics 365 Finance + Operations (on-premises)
 description: This article describes the process for upgrading Microsoft Dynamics AX 2012 databases to Dynamics 365 Finance + Operations (on-premises) version 10.0.x.
 author: faix
-ms.date: 12/16/2020
+ms.date: 07/13/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service:
@@ -73,8 +73,8 @@ Two upgrade methods are currently supported:
     ```
 
     > [!NOTE] 
-    >  - The PowerShell script referenced above is in the Appendix towards the end of this document.
-    >  - Replace **\<DB-name\>** with the name of your database (for example, **AXDB**). If you want to edit more values, see the [appendix](#appendix) later in this article.
+    >  - The PowerShell script referenced above is in the Appendix of this article.
+    >  - Replace **\<DB-name\>** with the name of your database (for example, **AXDB**). If you want to edit more values, see the [Appendix](#appendix) of this article.
 
     The script will run a database connection test to verify that the information that you provided is valid.
 
@@ -89,7 +89,7 @@ Two upgrade methods are currently supported:
     ```
 
     > [!NOTE]
-    > To monitor the upgrade see the section **Monitoring the data upgrade** in the Appendix.
+    > To monitor the upgrade, see the section **Monitoring the data upgrade** in the [Appendix](#appendix) of this article.
 
 1. After the upgrade process is successfully completed, back up the newly upgraded database. If you have customizations from ISVs or VARs, check whether you must run some post–data upgrade scripts.
 1. Restore the database into your on-premises environment's SQL Server, but give it a name that differs from the name of the AX 2012 database (for example, name it **AXDBupgraded**). The restored database must be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
@@ -127,7 +127,7 @@ Two upgrade methods are currently supported:
     ```
 
     > [!NOTE]
-    > - The PowerShell script referenced above is in the Appendix towards the end of this document.
+    > - The PowerShell script, referenced above, is in the [Appendix](#appendix) of this article.
     > - Replace **\<DB-name\>**, **\<SqlServerName\>**, **\<User\>**, and **\<Password\>** with the values that you require.
     > - Only SQL Server authentication is officially supported for this upgrade. For more information, see [Create a Database User](/sql/relational-databases/security/authentication-access/create-a-database-user).
     > - You must add the certificate authority certificate that signed your SQL Server certificate to the trusted certificate authorities store in your Onebox VHD. For more information, see [Installing the trusted root certificate](/skype-sdk/sdn/articles/installing-the-trusted-root-certificate).
@@ -145,7 +145,7 @@ Two upgrade methods are currently supported:
     ```
 
     > [!NOTE]
-    > To monitor the upgrade see the section **Monitoring the data upgrade** in the Appendix.
+    > To monitor the upgrade, see the section **Monitoring the data upgrade** in the [Appendix](#appendix) of this article.
 
 1. If you have customizations from ISVs or VARs, check whether you must run some post–data upgrade scripts.
 1. Run the **Configure-OnpremUpgrade.ps1** script by using the values that are stated in the [Resetting the VHD database (Optional)](#resetting-the-vhd-database-optional) section later in this article.
@@ -365,7 +365,7 @@ ORDER BY EndTime DESC
 
 The results will resemble the following example. The dates and times that are given here are for illustration purposes only. Times vary, based on data volumes and the modules that are used in AX 2012.
 
-| StartTime | EndTime | Steps | SubSteps | STATUS |
+| StartTime | EndTime | Steps | SubSteps | Status |
 |---|---|---|---|---|
 | 2022-05-20 17:16:07.097 | 2022-05-20 17:16:07.097 | FinalDbSync | DisableDataUpgradeFlag | Completed |
 | 2022-05-20 17:16:06.997 | 2022-05-20 17:16:06.997 | FinalDbSync | EnableDbLogTriggers | Completed |
@@ -412,14 +412,14 @@ The results will resemble the following example. The dates and times that are gi
 
 ### Troubleshooting
 
-#### Database Connectivity Issues
+#### Database connectivity issues
 - Exception calling "Open" with "0" argument(s): "Cannot open database "AxDB1" requested by the login. The login failed. Login failed for user 'axdbadmin'." You supplied the Wrong database name or the user doesn't have access to that database. 
 - Exception calling "Open" with "0" argument(s): "A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)". The script could not establish a connection with the SQL Server specified. Check the ip/fqdn and port that you used.  
 - Exception calling "Open" with "0" argument(s): "Login failed for user 'axdbadmin'." The supplied login credentials are not correct.
 
 #### Rerun the runbook after a failure
 
-If the data upgrade runbook fails, you can retry the last step by using the **-rerunstep** option, as shown in the following example. Edit the step number as required.
+If the data upgrade runbook fails, you can retry the last step by using the **-rerunstep** option, as shown in the following example. Edit the step number, as required.
 
 ```PowerShell
 .\AXUpdateInstaller.exe execute -runbookid="MajorVersionDataUpgrade-runbook" -rerunstep=3
