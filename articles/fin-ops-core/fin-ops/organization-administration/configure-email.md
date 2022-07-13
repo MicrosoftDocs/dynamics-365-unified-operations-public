@@ -280,7 +280,7 @@ There are some standard processes that can help you troubleshoot the configurati
 
 <table>
   <tr>
-    <th><h6>Verify email settings, and send a test email.</h6></th>
+    <th><h5>Verify email settings, and send a test email.</h5></th>
     <td>
       <ol>
         <li>Go to <b>System administration &gt; Setup &gt; Email &gt; Email parameters</b>.</li>
@@ -292,7 +292,7 @@ There are some standard processes that can help you troubleshoot the configurati
     </td>
   </tr>
   <tr>
-    <th><h6>Verify that the email batch process is running.</h6></th>
+    <th><h5>Verify that the email batch process is running.</h5></th>
     <td>
       <ol>
         <li>Go to <b>System administration &gt; Periodic tasks &gt; Email processing &gt; Batch</b>.</li>
@@ -307,7 +307,7 @@ There are some standard processes that can help you troubleshoot the configurati
     </td>
   </tr>
   <tr>
-    <th><h6>Review the status of batch emails.</h6></th>
+    <th><h5>Review the status of batch emails.</h5></th>
     <td>
       <ol>
         <li>Go to <b>System administration &gt; Periodic tasks &gt; Email processing &gt; Batch email sending status</b>.</li>
@@ -319,7 +319,7 @@ There are some standard processes that can help you troubleshoot the configurati
     </td>
   </tr>
   <tr>
-    <th><h6>Review any errors on the Email history page.</h6></th>
+    <th><h5>Review any errors on the Email history page.</h5></th>
     <td>
       <ol>        
         <li>Go to <b>System administration &gt; Setup &gt; Email &gt; Email history</b>.
@@ -330,11 +330,11 @@ There are some standard processes that can help you troubleshoot the configurati
     </td>
   </tr>
   <tr>
-    <th id="saveas_permissions"><h6>Verify that all email accounts have appropriate Send as permissions.</h6></th>
+    <th id="saveas_permissions"><h5>Verify that all email accounts have appropriate Send as permissions.</h5></th>
     <td>In the Microsoft 365 admin center, verify that all user mail accounts that will be used to send emails have <b>Send As</b> and <b>Send On Behalf Of</b> permissions for the configured SMTP account. For more information, see <a href="/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user">Give mailbox permissions to another user in Microsoft 365</a>.</td>
   </tr>
   <tr>
-    <th><h6>Verify user mailboxes.</h6></th>
+    <th><h5>Verify user mailboxes.</h5></th>
     <td>Consider signing in to the affected (or all) user mailboxes to verify that they are valid and can be accessed by using sign-in.</td>
   </tr>
 </table>
