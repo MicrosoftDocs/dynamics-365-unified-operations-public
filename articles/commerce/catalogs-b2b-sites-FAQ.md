@@ -20,19 +20,19 @@ ms.search.validFrom: 2022-02-28
 
 This article provides answer to frequently asked questions about Microsoft Dynamics 365 Commerce [business-to-business (B2B) catalogs](catalogs-b2b-sites.md).
 
-## Why can't I configure a catalog-specific navigation hierarchy or see an option to associate a customer hierarchy?
+### Why can't I configure a catalog-specific navigation hierarchy or see an option to associate a customer hierarchy?
 
 Ensure that the **Enable use of multiple catalogs on retails channels** feature is enabled in the Commerce headquarters **Feature management** workspace and that your environment is the Commerce version 10.0.27 or later release. Ensure that you've selected **B2B** under **Catalog type**.
 
-## Can I view the catalog-specific hierarchy and enrich category pages in Commerce site builder?
+### Can I view the catalog-specific hierarchy and enrich category pages in Commerce site builder?
 
 Yes, Commerce site builder users who have access to the **Products** page in site builder can select a catalog and view the catalog-specific hierarchy. From the **Products** page, users can also enrich a category page for a specific category in the catalog. For more information, see [Enrich a category landing page](enrich-category-page.md). If you want to have enrichment that is specific to a catalog, we recommend that you have a distinct and unique navigation hierarchy for that catalog.
 
-## Can a B2B shopper purchase from multiple catalogs in a single checkout?
+### Can a B2B shopper purchase from multiple catalogs in a single checkout?
 
 Yes, purchases from multiple catalogs in a single checkout are allowed. B2B shoppers can use the catalog indicator in the cart view to determine which items were added from which catalogs.
 
-## If a B2B shopper purchases the same item from different catalogs, what is the expected behavior?
+### If a B2B shopper purchases the same item from different catalogs, what is the expected behavior?
 
 Although a given user might have access to multiple catalogs at a given time, the expectation is that products in those catalogs will be mutually exclusive. In other words, ideally, the same product should not be part of more than one catalog for a given user.
 
@@ -42,7 +42,7 @@ However, if a situation arises where the same product belongs to multiple catalo
 
 Yes. A B2B shopper will be allowed to proceed to checkout only if all items in the cart are from valid catalogs. If any cart items are from expired or retracted catalogs, they will be removed, and the user will be notified.
 
-## During the shopping experience, are search and product discovery (including related and recommended product collections) catalog-specific?
+### During the shopping experience, are search and product discovery (including related and recommended product collections) catalog-specific?
 
 Yes. As soon as a user selects a specific catalog, the whole shopping journey becomes catalog-specific. This journey includes product discovery experiences such as search suggestions, search results, category results, refiners, pricing, attributes, and recommended products (such as new, best-selling, trending, frequently bought together, and related products).
 
@@ -50,15 +50,19 @@ Yes. As soon as a user selects a specific catalog, the whole shopping journey be
 
 No, a B2B shopper isn't allowed to purchase from the default assortment. That assortment is intended only for anonymous browsing. If a B2B shopper is missing catalog assignments (pending updates from their administration), they won't be able to see any catalogs that they can choose from, and no category hierarchy will be visible.
 
-## Can marketing content be curated for a product that is specific to a catalog?
+### Can marketing content be curated for a product that is specific to a catalog?
 
 Currently, product enrichment is supported only at the site and channel level. In other words, if a product is enriched and is shared across multiple catalogs, the corresponding enriched product details page (PDP) for that product will be rendered in the same way across all catalogs for a given site. 
 
-## Is catalog support available for both B2B and business-to-consumer (B2C) online channels?
+### Is catalog support available for both B2B and business-to-consumer (B2C) online channels?
 
-Currently, Commerce catalogs are intended to work with B2B channels only.
+Currently, Commerce catalogs are intended to work with B2B Online channels only.
 
-## Can we set up catalog-specific upsell/cross-sell items?
+### New customer was added to the customer hierarchy or new hierarchy was associated with the catalog but I am not able to see catalog becoming available for the intended user?
+
+Make sure you have run 1010 jobs after association of new customer to an existing customer hierarchy as well as upon creation of new customer hierarchy. The catalogs associated with the customer hierarchy will only be visible after the 1010 job is completed successfully. Also, if the catalog itself was also newly created, please ensure you do run 1150 (Catalog) job as well along with 1010 jobs. Lastly, as with any new catalog allow some time for the data to sync to channel and then also data must sync to search-index. Jobs with 'Applied' status is only indicator of data being synced to channel database and additional time is required for it to sync to search index. 
+
+### Can we set up catalog-specific upsell/cross-sell items?
 
 Currently, only related products functionality is supported. However, upsell and cross-sell item configurations are available for call centers.
 
@@ -72,7 +76,7 @@ The following features are also supported only for call centers:
 - Payment schedules
 - Free products based on source codes
 
-## Can we use catalog source codes for B2B orders through the e-commerce portal?
+### Can we use catalog source codes for B2B orders through the e-commerce portal?
 
 No. Catalog source codes are supported only for call center channels.
 
