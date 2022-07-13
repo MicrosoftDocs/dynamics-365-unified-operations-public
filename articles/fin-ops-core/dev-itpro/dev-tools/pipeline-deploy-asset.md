@@ -20,7 +20,7 @@ You can use the **Dynamics Lifecycle Services (LCS) Asset Deployment** task in M
 * The task is available only in **Releases** pipelines.
 * The deployment of software deployable packages to production environments can't be automated.
 * Software deployable packages can't be deployed to build environments.
-* Software deployable packages, Commerce Cloud Scale Unit (CSU) extension packages, and e-commerce packages can't be deployed to local business data (LBD) environments on-premises.
+* Commerce Cloud Scale Unit (CSU) extension packages, and e-commerce packages can't be deployed to local business data (LBD) environments on-premises.
 
 > [!NOTE]
 > Commerce Cloud Scale Unit (CSU) Extension or e-Commerce Package can be deployed to production, UAT or Sandbox environment using the **Dynamics Lifecycle Services (LCS) Asset Deployment**
@@ -35,6 +35,7 @@ This article assumes that you have a working knowledge of [Azure Pipelines](/azu
 Starting with version 3.\*, the **Dynamics Lifecycle Services (LCS) Asset Deployment** task supports deploying Commerce packages. A new field type called **Type of asset** has been added to select the Commerce package deployment type. The values available for this field are:
 
 - **Software deployable package - Finance and Operation environment deployment** (default value)
+- **Software deployable package for on-premises environments - Finance + Operations (on-premises) environment deployment**
 - **Commerce Cloud Scale Unit Extension - CSU Extension package deployment** 
 - **e-Commerce Package - e-Commerce environment deployment**.
 
@@ -56,7 +57,7 @@ The following table describes the options that are available for this task.
 | LCS Project ID | Yes | Enter the ID of the project in LCS that contains both the asset to deploy and the target environment. You can find the project ID at the end of the URL of your project's dashboard. |
 | LCS Environment ID | Yes | Enter the ID of the target environment. The environment ID is a globally unique identifier (GUID) that you can find on the environment's details page, under **Environment Details** \> **Environment ID**. |
 | LCS File Asset ID | Yes | Enter the asset ID of the software deployable package to deploy. The asset ID is a GUID that you can find in the Asset library. Select the row of the asset that you want to deploy, and then, under **Additional Details**, look in the **Asset ID** field. Typically, this ID comes dynamically from other pipeline steps, such as the [Dynamics Lifecycle Services (LCS) Asset Upload](pipeline-asset-upload.md) task. |
-| Type of asset | Yes | Select the type of asset to be deployed to the environment in LCS. Options are **Software deployable package - Finance and Operation environment deployment**,  **Commerce Cloud Scale Unit Extension - CSU Extension package deployment**, and **e-Commerce Package - e-Commerce environment deployment**. |
+| Type of asset | Yes | Select the type of asset to be deployed to the environment in LCS. Options are **Software deployable package - Finance and Operation environment deployment**, **Software deployable package for on-premises environments - Finance + Operations (on-premises) environment deployment**, **Commerce Cloud Scale Unit Extension - CSU Extension package deployment**, and **e-Commerce Package - e-Commerce environment deployment**. |
 | Commerce Cloud Scale Unit Name | No | Enter the name of the Commerce Cloud Scale Unit environment, you can find the environment name in the environment's details page, under **Environment FEATURES** \> **Commerce** \> **Manage** \> **Commerce deployment & setup** \> **Commerce scale units**. If the package type is selected as **Commerce Cloud Scale Unit Extension** then the value for the field **Commerce Cloud Scale Unit Name** is mandatory. |
 | e-Commerce Environment Name | No | Enter the name of the e-Commerce environment, you can find the environment name in the environment's details page, under **Environment FEATURES** \> **Commerce** \> **Manage** \> **Commerce deployment & setup** \> **e-Commerce.** If the package type is selected as **e-Commerce Package** then value for the field **e-Commerce Environment Name** is mandatory. |
 | Name for the update | Yes | Enter the name that is shown for the update in the environment history in LCS. |
