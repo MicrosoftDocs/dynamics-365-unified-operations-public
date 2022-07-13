@@ -292,7 +292,7 @@ There are some standard processes that can help you troubleshoot the configurati
     </td>
   </tr>
   <tr>
-    <th id="verify-email-batch-process"><h4>Verify that the email batch process is running.</th>
+    <th id="verify-email-batch-process">Verify that the email batch process is running.</th>
     <td>
       <ol>
         <li>Go to <b>System administration &gt; Periodic tasks &gt; Email processing &gt; Batch</b>.</li>
