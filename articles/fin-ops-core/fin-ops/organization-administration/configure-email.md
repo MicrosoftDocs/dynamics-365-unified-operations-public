@@ -4,7 +4,7 @@
 title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: jasongre
-ms.date: 06/17/2022
+ms.date: 07/13/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -314,7 +314,7 @@ There are some standard processes that can help you troubleshoot the configurati
         <li>Verify that emails are being sent from the correct account.
           <p>If the account is incorrect, you must adjust settings such as user options, system templates, or organization templates, as needed.</p>
         </li>
-        <li>Verify that all email user accounts have been granted <b>Send As</b> permission for the configured SMTP account (see <a href="#saveas_permissions">Verify that all email accounts have appropriate Send As permissions</a> later in this table).</li>
+        <li>Verify that all email user accounts have been granted <b>Send As</b> permission for the configured SMTP account (see <a href="#sendas_permissions">Verify that all email accounts have appropriate Send As permissions</a> later in this table).</li>
       </ol>
     </td>
   </tr>
@@ -485,7 +485,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
       <tr>
         <th>Fix</th>
-        <td>Ensure that the email account has appropriate <b>Send As</b> permissions. For more information, see <a href="#saveas_permissions">Verify that all email accounts have appropriate Send As permissions</a> earlier in this article.
+        <td>Ensure that the email account has appropriate <b>Send As</b> permissions. For more information, see <a href="#sendas_permissions">Verify that all email accounts have appropriate Send As permissions</a> earlier in this article.
       </tr>
     </table>
 
