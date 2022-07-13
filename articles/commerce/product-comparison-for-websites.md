@@ -16,4 +16,10 @@ ms.search.validFrom: 2022-02-28
 
 # Product comparison
 
+> [!NOTE]
+> This feature is available starting with the Dynamics 365 Commerce version 10.0.29 release. 
+
 Enable shoppers to compare products across a wide range of categories in order to make the right purchase decision for themselves. 
+
+![Product Comparison Overview](./media/Product-Comparison-Overview.png)
+
