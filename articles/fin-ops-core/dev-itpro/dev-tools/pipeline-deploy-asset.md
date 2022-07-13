@@ -30,12 +30,18 @@ This article assumes that you have a working knowledge of [Azure Pipelines](/azu
 > [!NOTE]
 > Before you can add these steps to a pipeline, the [Dynamics 365 finance and operations Tools](https://marketplace.visualstudio.com/items?itemName=Dyn365FinOps.dynamics365-finops-tools) extension for Azure DevOps must be enabled and installed in the Azure DevOps account. For more information about how to install an extension for an organization, see [Install extensions](/azure/devops/marketplace/install-extension).
 
+## Dynamics 365 for Finance + Operations (on-premises) package deployment
+
+Starting with version 0.220713.x of the **Dynamics 365 finance and operations Tools** extension it is possible to deploy packages to local business data (LBD) environments on-premises. You should use at least version 3.\* of the  **Dynamics Lifecycle Services (LCS) Asset Deployment** task. You will then be able to select **Software deployable package for on-premises environments** under the **Type of asset** field.
+
+> [!NOTE]
+> As with cloud environments, it is not possible to use this task to deploy to production environments.
+
 ## Dynamics 365 Commerce Cloud Scale Unit (CSU) extension and e-Commerce package deployment
 
 Starting with version 3.\*, the **Dynamics Lifecycle Services (LCS) Asset Deployment** task supports deploying Commerce packages. A new field type called **Type of asset** has been added to select the Commerce package deployment type. The values available for this field are:
 
 - **Software deployable package - Finance and Operation environment deployment** (default value)
-- **Software deployable package for on-premises environments - Finance + Operations (on-premises) environment deployment**
 - **Commerce Cloud Scale Unit Extension - CSU Extension package deployment** 
 - **e-Commerce Package - e-Commerce environment deployment**.
 
