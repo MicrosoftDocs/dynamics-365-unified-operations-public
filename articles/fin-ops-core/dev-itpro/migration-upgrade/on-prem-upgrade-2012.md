@@ -73,8 +73,8 @@ Two upgrade methods are currently supported:
     ```
 
     > [!NOTE] 
-    >  - The PowerShell script referenced above is in the Appendix of this article.
-    >  - Replace **\<DB-name\>** with the name of your database (for example, **AXDB**). If you want to edit more values, see the [Appendix](#appendix) of this article.
+    > - The preceding PowerShell script is provided in the [Appendix](#appendix) of this article.
+    > - Replace **\<DB-name\>** with the name of your database (for example, **AXDB**). If you want to edit more values, see the [Appendix](#appendix) of this article.
 
     The script will run a database connection test to verify that the information that you provided is valid.
 
@@ -89,7 +89,7 @@ Two upgrade methods are currently supported:
     ```
 
     > [!NOTE]
-    > To monitor the upgrade, see the section **Monitoring the data upgrade** in the [Appendix](#appendix) of this article.
+    > For information about how to monitor the upgrade, see the [Monitoring the data upgrade](#monitoring-the-data-upgrade) section in the [Appendix](#appendix) of this article.
 
 1. After the upgrade process is successfully completed, back up the newly upgraded database. If you have customizations from ISVs or VARs, check whether you must run some post–data upgrade scripts.
 1. Restore the database into your on-premises environment's SQL Server, but give it a name that differs from the name of the AX 2012 database (for example, name it **AXDBupgraded**). The restored database must be configured. Follow the steps in [Configure the Finance + Operations database](../deployment/setup-deploy-on-premises-pu12.md#configure-the-finance--operations-database).
@@ -127,7 +127,7 @@ Two upgrade methods are currently supported:
     ```
 
     > [!NOTE]
-    > - The PowerShell script, referenced above, is in the [Appendix](#appendix) of this article.
+    > - The preceding PowerShell script is provided in the [Appendix](#appendix) of this article.
     > - Replace **\<DB-name\>**, **\<SqlServerName\>**, **\<User\>**, and **\<Password\>** with the values that you require.
     > - Only SQL Server authentication is officially supported for this upgrade. For more information, see [Create a Database User](/sql/relational-databases/security/authentication-access/create-a-database-user).
     > - You must add the certificate authority certificate that signed your SQL Server certificate to the trusted certificate authorities store in your Onebox VHD. For more information, see [Installing the trusted root certificate](/skype-sdk/sdn/articles/installing-the-trusted-root-certificate).
@@ -145,7 +145,7 @@ Two upgrade methods are currently supported:
     ```
 
     > [!NOTE]
-    > To monitor the upgrade, see the section **Monitoring the data upgrade** in the [Appendix](#appendix) of this article.
+    > For information about how to monitor the upgrade, see the [Monitoring the data upgrade](#monitoring-the-data-upgrade) section in the [Appendix](#appendix) of this article.
 
 1. If you have customizations from ISVs or VARs, check whether you must run some post–data upgrade scripts.
 1. Run the **Configure-OnpremUpgrade.ps1** script by using the values that are stated in the [Resetting the VHD database (Optional)](#resetting-the-vhd-database-optional) section later in this article.
@@ -408,7 +408,7 @@ The results will resemble the following example. The dates and times that are gi
 | 2022-05-20 06:30:00.150 | 2022-05-20 06:30:00.820 | PreReqs | PatchSqlDictionaryPass1 | Completed |
 | 2022-05-20 06:30:00.043 | 2022-05-20 06:30:00.043 | PreReqs | UpdateKernelSchema | Completed |
 | 2022-05-20 06:28:01.157 | 2022-05-20 06:29:59.929 | PreReqs | CreateSqlSequences | Completed |
-| 2022-05-20 06:28:01.020 | 2022-05-20 06:28:01.020 | PreReqs | DisableDbLogTriggers | Completed 
+| 2022-05-20 06:28:01.020 | 2022-05-20 06:28:01.020 | PreReqs | DisableDbLogTriggers | Completed |
 
 ### Troubleshooting
 
@@ -419,7 +419,7 @@ The results will resemble the following example. The dates and times that are gi
 
 #### Rerun the runbook after a failure
 
-If the data upgrade runbook fails, you can retry the last step by using the **-rerunstep** option, as shown in the following example. Edit the step number, as required.
+If the data upgrade runbook fails, you can retry the last step by using the **-rerunstep** option, as shown in the following example. Edit the step number as required.
 
 ```PowerShell
 .\AXUpdateInstaller.exe execute -runbookid="MajorVersionDataUpgrade-runbook" -rerunstep=3
@@ -443,6 +443,5 @@ For more troubleshooting information, see the following articles:
 
 - [Troubleshoot development environments during upgrade](troubleshoot-dev-env.md)
 - [Troubleshoot PreSync and PostSync upgrade scripts](pre-post-upgrade-scripts.md)
-
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
