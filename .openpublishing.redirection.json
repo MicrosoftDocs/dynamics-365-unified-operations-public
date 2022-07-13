@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/commerce/commerce-analytics.md",
+      "redirect_url": "/dynamics365/commerce/get-started/removed-deprecated-features-commerce#feature-deprecation-effective-july-2022",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/localizations/tasks/eur-00011-eu-sales-list-report.md",
       "redirect_url": "../emea-eu-sales-list-example",
       "redirect_document_id": "false"
