@@ -199,7 +199,7 @@ The visibility of the virtual entities from finance and operations apps must be 
     > [!NOTE]
     > Only the first 5,000 records of an entity can be retrieved by Dataverse and made available in the drop-down list of the Tax Calculation configuration.
 
-For more information, see [Enable Microsoft Dataverse virtual entities](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-virtual-entities).
+For more information, see [Enable Microsoft Dataverse virtual entities](../../fin-ops-core/dev-itpro/power-platform/enable-virtual-entities.md).
 
 ## <a name='set-up'></a>Set up the connected application for Tax Calculation
 
