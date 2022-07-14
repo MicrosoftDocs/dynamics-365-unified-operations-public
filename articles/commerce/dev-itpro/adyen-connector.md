@@ -55,12 +55,6 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 
 ---
 
-# [10.0.22](#tab/10-0-22)
-### Dynamics 365 Retail POS version 10.0.22
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_65p8 | adyen_v1_67p10 |
-
 # [10.0.23](#tab/10-0-23)
 ### Dynamics 365 Retail POS version 10.0.23
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
@@ -90,6 +84,12 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
 | adyen_v1_73p6 | adyen_v1_75p13 |
+
+# [10.0.28](#tab/10-0-28)
+### Dynamics 365 Retail POS version 10.0.28
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_73p6 | adyen_v1_75p22 |
 
 ---
 
@@ -194,10 +194,12 @@ The following countries have Commerce components available and card present supp
 | Iceland | ✔ |
 | Ireland | ✔ |
 | Italy | ✔ |
+| Japan | Future release |
 | Latvia | ✔ |
 | Lithuania | ✔ |
 | Malaysia | ✔ |
 | Netherlands | ✔ |
+| New Zealand | ✔ |
 | Norway | ✔ |
 | Poland | ✔ |
 | Singapore | ✔ |
@@ -301,6 +303,8 @@ The following table shows the set of features that the Dynamics 365 Payment Conn
 | [Dedicated payment terminals and prompts for a printer and cash drawer](../pos-multi-hws.md) | ✔<br>(Starting with 10.0.12) | |
 | [SDK-level tipping support through the Adyen connector](tipping.md) | ✔<br>(Starting with 10.0.14) | |
 | [Incremental capture for order invoicing](incremental-capture.md) |  | ✔<br>(Starting with 10.0.18) |
+| [Wallet Payments](./wallets.md) |  | ✔<br>(Starting with 10.0.20) |
+| [Google Pay with Adyen](google-pay-adyen.md) |  | ✔<br>(Starting with 10.0.27) |
 
 ## Next steps
 
