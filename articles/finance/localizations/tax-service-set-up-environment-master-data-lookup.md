@@ -140,7 +140,7 @@ For more information, see [Configure the virtual entity data source](../../fin-o
 
 ## <a name='virtual'></a> Enable Microsoft Dataverse virtual entities
 The visibility of the virtual entities from Finance and Operations apps must be set to **Yes** before it can be consumed by the Tax Calculation configuration.
-> [!Note] Above release 10.0.26 @jiahui, you can skip this step by enabling the Tax Calculation related virtual entities in [Step 8 - Setup the connected application for Tax Calculation]() with just one click.
+> [!Note] Above release 10.0.26, you can skip this step by enabling the Tax Calculation related virtual entities in [Step 8 - Setup the connected application for Tax Calculation]() with just one click.
 
 1. In the **Administration** page, click on the filter button on the right-up corner.
 [![Administration filter button.png](./media/tcs-dataverse-master-data-lookup-9.png)](./media/tcs-dataverse-master-data-lookup-9.png)
