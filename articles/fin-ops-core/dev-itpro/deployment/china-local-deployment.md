@@ -61,6 +61,8 @@ Due to certain technical dependencies, the following features listed will not be
 
 -  **SharePoint integration** isn't available, because the authentication mechanism that finance and operations apps use with SharePoint isn't supported in this configuration.
 
+-  The **Exchange mail provider** isn't available; customers should use SMTP for their email needs instead.  
+
 -   The following **Microsoft Dynamics Lifecycle Services (LCS)** features will have a different experience or will be unavailable due to the dependencies that are not available:
 
     -   **APQC Business process modeler (BPM) Library** will be unavailable. However, base Business process modeler (BPM) functionality will be available for custom models in April 2019. Search functionality in the BPM will be unavailable in China.
