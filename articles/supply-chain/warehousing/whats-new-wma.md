@@ -19,6 +19,18 @@ ms.dyn365.ops.version: 10.0.21
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+
+## Version 2.0.28.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Improved stability.
+- Introduced the ability to continue scanning even while an error dialog is shown on the screen.
+- Added support for ASCII 10 in barcodes.
+- Improved the usability of step instruction dialogs.
+- Fixed an issue where a blank screen could sometimes be shown.
+- Fixed an issue where work lists didn't scroll correctly when running on Microsoft Windows.
+
 ## Version 2.0.25.0
 
 This version introduces the following new features, fixes, and improvements:
