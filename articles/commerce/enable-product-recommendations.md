@@ -41,8 +41,8 @@ This topic explains how to make product recommendations that are based on artifi
 1. Ensure that the Entity store daily refresh to Azure Data Lake Storage Gen2 has been scheduled. For more information, see [Ensure that the Entity store refresh has been automated](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 1. Enable RetailSale measurements for Entity store. For more information about setting up this process, see [Work with measures](/dynamics365/ai/customer-insights/pm-measures).
 1. Ensure that your environment has configured the serving and cooking regions in the currently supported regions:
-   1. Supported Cooking Regions:
-   2. Supported Serving Regions: US/CA/AU
+   1. Supported Cooking Regions: EU/US/CA/AU.
+   2. Current Supported Serving Regions: US/CA/AU. If the Serving Region does not match one of the existing supported regions, the recommendations service will select the closest supported serving region. 
 
 After the steps above have been completed, you will be ready to enable recommendations.
 
