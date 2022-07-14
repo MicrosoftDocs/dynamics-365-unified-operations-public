@@ -4,7 +4,7 @@
 title: Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China 
 description: This article provides information about Dynamics 365 Finance, Supply Chain Management, and Commerce operated by 21Vianet in China.
 author: kfend
-ms.date: 04/11/2022
+ms.date: 07/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -60,6 +60,8 @@ Due to certain technical dependencies, the following features listed will not be
 -   The **[mobile platform](../mobile-apps/platform/mobile-platform-home-page.md)** will not be available because certain App store dependencies are unavailable in China.
 
 -  **SharePoint integration** isn't available, because the authentication mechanism that finance and operations apps use with SharePoint isn't supported in this configuration.
+
+-  The **Exchange mail provider** isn't available; customers should use SMTP for their email needs instead.  
 
 -   The following **Microsoft Dynamics Lifecycle Services (LCS)** features will have a different experience or will be unavailable due to the dependencies that are not available:
 
