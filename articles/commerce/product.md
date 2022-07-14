@@ -58,8 +58,9 @@ Product recommendations are enabled for the following POS scenarios. They are av
 
 To set up product recommendations, follow these steps:
 
-1. Confirm that you have completed the provisioning process for Commerce Product Recommendations by following the [enable product recommendations](../commerce/enable-product-recommendations.md) steps.
-2. By default, recommendations will start appearing on both the Product Details Page and User Profile page once provisioning steps are compelted and the data has successfully cooked. 
+1. Confirm that you have completed the provisioning process for Commerce Product Recommendations by following the [enable product recommendations](../commerce/enable-product-recommendations.md) steps. By default, recommendations will start appearing on both the Product Details Page and Customer Details Page once provisioning steps are compelted and the data has successfully cooked. 
+
+## Add Recommendations to the Transaction Screen
 3. In order to add recommendations to the transaction screen, you will need to [add recommendations via the layout manager.](add-recommendations-control-pos-screen.md).
 4. To reflect changes made to POS screen layout designer, run channel configuration job **1070**.
 
