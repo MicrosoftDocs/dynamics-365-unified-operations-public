@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.5
 
 This document walks you through how to configure an environment using an alternate dataflow for providing data to the Recommendations Service. 
 
-![](media/alternate-flow.png)
+![Overview of how the Alternate Data flow will fit into the environment.](media/alternate-flow.png "Overview of how the Alternate Data flow will fit into the environment.")
 
 ## Assumptions
 1. This document assumes you already have [enabled the recommendations service](enable-product-recommendations.md) for the environment.
