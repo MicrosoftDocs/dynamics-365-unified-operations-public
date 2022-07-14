@@ -15,6 +15,9 @@
   - name: Dynamics 365 Supply Chain Management
     tocHref: /dynamics365/supply-chain/
     topicHref: /dynamics365/supply-chain/index
+  - name: Dynamics 365 Human Resources
+    tocHref: /dynamics365/human-resources/
+    topicHref: /dynamics365/human-resources/index
 - name: Dynamics 365
   tocHref: /power-platform/
   topicHref: /dynamics365/index
