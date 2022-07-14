@@ -59,10 +59,12 @@ Product recommendations are enabled for the following POS scenarios. They are av
 To set up product recommendations, follow these steps:
 
 1. Confirm that you have completed the provisioning process for Commerce Product Recommendations by following the [enable product recommendations](../commerce/enable-product-recommendations.md) steps.
-2. By default, recommendations will start appearing on the Product Details Page. In order to add recommendations to the transaction screen, you will need to [add recommendations via the layout manager.](add-recommendations-control-pos-screen.md).
-3. To reflect changes made to POS screen layout designer, run channel configuration job **1070**.
+2. By default, recommendations will start appearing on both the Product Details Page and User Profile page once provisioning steps are compelted and the data has successfully cooked. 
+3. In order to add recommendations to the transaction screen, you will need to [add recommendations via the layout manager.](add-recommendations-control-pos-screen.md).
+4. To reflect changes made to POS screen layout designer, run channel configuration job **1070**.
 
-[Note!] If you are looking to enable POS recommendations with the Reco Demo Mock CSV file, you must first finish deploying the CSV to the LCS Asset Library before configuring the Layout Manager. Enabling recommendations is not necessary when using the RecoMock CSV. Additionally, the CSV is only available for demo purposes only and is a great choice for customers or Solution Archetects looking to mimic the appearance of recommendation lists for demoing to customers without having to purchase an Add-on SKU.   
+> [Note!] 
+> If you are looking to enable POS recommendations with the Reco Demo Mock CSV file, you must first finish deploying the CSV to the LCS Asset Library before configuring the Layout Manager. Enabling recommendations is not necessary when using the RecoMock CSV. The CSV is only available for demo purposes only and is a great choice for customers or Solution Archetects looking to mimic the appearance of recommendation lists for demoing to customers without having to purchase an Add-on SKU.   
 
 ## Additional resources
 
