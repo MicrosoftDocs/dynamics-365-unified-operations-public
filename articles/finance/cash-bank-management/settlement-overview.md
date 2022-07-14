@@ -3,7 +3,7 @@
 
 title: Settlement overview
 description: This article provides general information about the settlement process. It describes which transaction types can be settled, and the timing and process for settling them. It also describes the results of the settlement process.
-author: panolte
+author: angelad116
 ms.date: 07/30/2021
 ms.topic: overview
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: ["14551", "intro-internal"]
 ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: 2018-10-31
 ms.dyn365.ops.version: 8.1
 
