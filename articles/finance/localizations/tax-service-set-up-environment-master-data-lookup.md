@@ -29,190 +29,231 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to set up and enable the tax calculation master data lookup functionality. A drop-down list is available to select values in the tax calculation configuration for fields such as **Legal entity**, **Vendor account**, **Item code**, and **Delivery term**. These values come from the connected Microsoft Dynamics 365 Finance environment using the Microsoft Dataverse datasource.
+This article explains how to set up and enable the tax calculation master data lookup functionality. A drop-down list is available to select values in the tax calculation configuration for fields such as **Legal entity**, **Vendor account**, **Item code**, and **Delivery term**. These values come from the connected Microsoft Dynamics 365 Finance environment using the Microsoft Dataverse data source.
 
 > [!NOTE] 
 > The tax calculation master data lookup functionality is optional functionality. You can skip the following steps if you disable the **Tax Service Dataverse datasources support** feature in Regulatory Configuration Service (RCS). However, in that case, the drop-down list won't be available in the tax calculation configuration.
 
-
 To enable the drop-down list in the feature version configuration of Tax Calculation, complete the following steps.
 
-1. [Enable Microsoft Power Platform integration and open the Microsoft Dataverse environment.](#enable)
-2. [Install the finance and operations virtual entities.](#install)
-3. [Register an Azure AD application.](#register)
-4. [Grant app permissions.](#grant)
+1. [Enable Microsoft Power Platform integration and open the Dataverse environment.](#enable)
+2. [Install finance and operations virtual entities.](#install)
+3. [Register an Azure Active Directory (Azure AD) application.](#register)
+4. [Grant app permissions in finance and operations apps.](#grant)
 5. [Configure the virtual entity data source.](#configure)
 6. [Enable Dataverse virtual entities.](#virtual)
 7. [Set up the connected application for Tax Calculation.](#set-up)
-8. [Import and setup Dataverse Model Mapping.](#import)
+8. [Import and set up the Dataverse Model Mapping configuration.](#import)
 
-## <a name='enable'></a> Enable Microsoft Power Platform integration and open the Dataverse environment
-The integration of finance and operations apps with Microsoft Power Platform can be enabled when you create a new finance and operations apps environment in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Microsoft Power Platform integration - Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). After you complete it, the name of a Microsoft Power Platform environment will appear in the **Power Platform Integration** section.
-  1. In LCS, in your finance and operations environment, under the **Power Platform Integration** section, find and note down the linked environment name. 
-  
-     [![Environment name page.](./media/tcs-dataverse-master-data-lookup-1.png)](./media/tcs-dataverse-master-data-lookup-1.png)
-  
-  2. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), on the **Environments** tab, select the enviroment that matches the envrionment name you just noted in LCS.
-  3. On the **Details** page, find the **Environment URL** of the Dataverse environment. Make a note of the **Environment URL** value, because you will need it in [Step 7. Set up the connected application for Tax Calculation](#set-up).
-  4. Make sure you can open the Dataverse environment in your browser by selecting the **Environment URL**.
-    
-     [![Dataverse environment page](./media/tcs-dataverse-master-data-lookup-2.png)](./media/tcs-dataverse-master-data-lookup-2.png)
+## <a name='enable'></a>Enable Microsoft Power Platform integration and open the Dataverse environment
 
-  > [!NOTE]
-  > Keep the Dataverse environment open in your browser. Youll need it for [Step 5. Configure the virtual entity data source](#configure).
+The integration of finance and operations apps with Microsoft Power Platform can be enabled when you create a new finance and operations apps environment in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Microsoft Power Platform integration - Add-ins overview](../../fin-ops-core/dev-itpro/power-platform/add-ins-overview.md). When you've finished, the name of a Microsoft Power Platform environment will appear in the **Power Platform Integration** section.
+
+1. In LCS, in your finance and operations environment, in the **Power Platform Integration** section, find and make a note of the **Environment name** value for the linked environment.
+
+    [![Environment name value.](./media/tcs-dataverse-master-data-lookup-1.png)](./media/tcs-dataverse-master-data-lookup-1.png)
+
+2. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/environments), on the **Environments** tab, select the environment that matches the **Environment name** value that you made a note of.
+3. On the **Details** page, find the **Environment URL** value of the Dataverse environment. Make a note of this value, because you will need it in [Step 7. Set up the connected application for Tax Calculation](#set-up).
+4. Make sure that you can open the Dataverse environment in your browser by selecting the **Environment URL** value.
+
+    [![Dataverse environment page.](./media/tcs-dataverse-master-data-lookup-2.png)](./media/tcs-dataverse-master-data-lookup-2.png)
+
+    > [!NOTE]
+    > Keep the Dataverse environment open in your browser. You will need it in [Step 5. Configure the virtual entity data source](#configure).
 
 For more information, see [Enable the Microsoft Power Platform integration](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
 
 ## <a name='install'></a>Install finance and operations virtual entities
-The Dataverse solution for finance and operations virtual entities must be installed from Microsoft AppSource virtual entity solution.
-1. Find the [Finance and operations virtual entity](https://appsource.microsoft.com/en/product/dynamics-365/mscrm.finance_and_operations_virtual_entity) in Microsoft AppSource.
-2. Select **Get it now**.
-3. In the **Select an environment** field, enter the **Environment name** you noted down earlier.
-4. Select the check boxes and then select **Install**.
 
-When the installation is complete, find the **Finance and operations virtual entity** app on the [Microsoft Power Platform admin center](https://admin.powerplatform.microsoft.com/) under **Resources** > **Dynamics 365 apps**.
+The Dataverse solution for finance and operations virtual entities must be installed from Microsoft AppSource virtual entity solution.
+
+1. In AppSource, find the [Finance and operations virtual entity](https://appsource.microsoft.com/product/dynamics-365/mscrm.finance_and_operations_virtual_entity).
+2. Select **Get it now**.
+3. In the **Select an environment** field, enter the **Environment name** value that you made a note of earlier.
+4. Select the checkboxes, and then select **Install**.
+
+When the installation is completed, you can find the **Finance and operations virtual entity** app in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), under **Resources** \> **Dynamics 365 apps**.
 
 For more information, see [Getting the virtual entity solution](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#get-virtual-entity-solution).
-   
-## <a name='register'></a> Register an Azure AD application
-Register an Azure AD application on the same tenant as the finance and operations apps so that they can be called by Dataverse.
 
-1. Go to <https://portal.azure.com> **\> Azure Active Directory \> App registrations**.
-2. Select **New Registration** and enter the following information:
+## <a name='register'></a>Register an Azure AD application
 
-    - **Name** - Enter a unique name.
-    - **Account type** - Enter **Any Azure AD directory** (single or multi-tenant).
-    - **Redirect URI** - Leave this field blank.
+You must register an Azure AD application on the same tenant as the finance and operations apps, so that they can be called by Dataverse.
+
+1. In the [Azure portal](https://portal.azure.com), go to **Azure Active Directory \> App registrations**.
+2. Select **New registration**, and enter the following information:
+
+    - **Name** – Enter a unique name.
+    - **Account type** – Enter **Any Azure AD directory** (single-tenant or multi-tenant).
+    - **Redirect URI** – Leave this field blank.
 
 3. Select **Register**.
-4. Make a note of the **Application (client) ID** value as you will need it later. 
+4. Make a note of the **Application (client) ID** value, because you will need it later.
 
-   [![Azure AD Application ID](./media/tcs-dataverse-master-data-lookup-3.png)](./media/tcs-dataverse-master-data-lookup-3.png)
+    [![Azure AD Application (client) ID value.](./media/tcs-dataverse-master-data-lookup-3.png)](./media/tcs-dataverse-master-data-lookup-3.png)
 
 5. Create a symmetric key for the application.
-6. Select **Certificates & secrets** in the new application.
+6. In the new application, select **Certificates & secrets**.
 7. Select **New client secret**.
-8. Enter a description, select an expiration date, and then select **Save**. A key will be created and displayed. Copy this value for later use.
+8. Enter a description, select an expiration date, and then select **Save**. A key will be created and shown. Copy the value for later use.
 
 For more information, see [Register Azure AD application](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#register-the-app-in-the-azure-portal).
 
-## <a name='grant'></a> Grant app permissions in finance and operations apps
-The Azure AD application that you create is used by Dataverse to call finance and operations apps. The application must be trusted by the finance and operations apps and associated with a user account that has the appropriate rights. A special service user that has rights **only** to the virtual entity functionality must be created in the finance and operations apps. This service user must have no other rights. After you complete this step, any application that has the secret of the Azure AD application that you created will be able to call this finance and operations apps environment and access the virtual entity functionality.
+## <a name='grant'></a>Grant app permissions in finance and operations apps
 
-1. In your environment, go to **System Administration** > **Users** > **Users**.
-2. Select **New** to add a new user. Enter the following information:
+Dataverse uses the Azure AD application that you created to call finance and operations apps. Therefore, the application must be trusted by the finance and operations apps and associated with a user account that has the appropriate rights. In the finance and operations apps, you must create a special service user that has rights **only** to the virtual entity functionality. This service user must have no other rights. After you complete this step, any application that has the secret of the Azure AD application that you created will be able to call the finance and operations apps environment and access the virtual entity functionality.
 
-    - **User ID** - Enter **dataverseintegration** (or a different value).
-    - **User name** - Enter **dataverse integration** (or a different value).
-    - **Provider** - Set to **NonAAD**.
-    - **Email** - Enter **dataverseintegration** (or a different value, doesn't have to be a valid email account).
+1. In your environment, go to **System Administration** \> **Users** \> **Users**.
+2. Select **New** to add a new user, and enter the following information:
 
-3. Assign the security role **CDS virtual entity application** to this user.
-4. Remove all other roles including **System user**.
-5. Go to **System Administration** > **Setup** > **Azure Active Directory applications** to register Dataverse. 
-6. Add a new row and in the **Client ID** field, enter the **Application (client) ID** you saved earlier.
-7. In the **Name** field, enter a name. For example, **Dataverse Integration**.
-8. In the **User ID** field, enter the user ID you created earlier. 
+    - **User ID** – Enter **dataverseintegration** or another value.
+    - **User name** – Enter **dataverse integration** or another value.
+    - **Provider** – Set this field to **NonAAD**.
+    - **Email** – Enter **dataverseintegration** or another value. (The value doesn't have to be a valid email account.)
+
+3. Assign the **CDS virtual entity application** security role to the user.
+4. Remove all other roles, including **System user**.
+5. Go to **System Administration** \> **Setup** \> **Azure Active Directory applications** to register Dataverse. 
+6. Add a row, and then, in the **Client ID** field, enter the **Application (client) ID** value that you made a note of earlier.
+7. In the **Name** field, enter a name. For example, enter **Dataverse Integration**.
+8. In the **User ID** field, enter the user ID that you created earlier.
 
 For more information, see [Grant app permissions in Finance and Operations apps](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#grant-app-permissions-in-finance-and-operations-apps).
 
-## <a name='configure'></a> Configure the virtual entity data source
-The next step in the process is to provide Dataverse with the Finance and Operations instance to connect to. The following steps walk through this part of the process.
+## <a name='configure'></a>Configure the virtual entity data source
 
-1. In your Dataverse environment (see [Step 1. Enable Microsoft Power Platform integration and open the Dataverse environment](#enable)).
-2. Go to **Advanced Settings**. [![Advanced settings in Dataverse environment](./media/tcs-dataverse-master-data-lookup-4.png)](./media/tcs-dataverse-master-data-lookup-4.png)
-3. Click the **Settings** drop-down menu, and open **Administration**. [![Administration](./media/tcs-dataverse-master-data-lookup-5.png)](./media/tcs-dataverse-master-data-lookup-5.png)
-4. Click the **Virtual Entity Data Sources**. [![Virtual entity data sources](./media/tcs-dataverse-master-data-lookup-6.png)](./media/tcs-dataverse-master-data-lookup-6.png)  
-5. Select the data source named "Finance and Operations". [![Data source - Finance and Operations](./media/tcs-dataverse-master-data-lookup-7.png)](./media/tcs-dataverse-master-data-lookup-7.png)
-6. Fill in the information from the steps above.
+You must provide Dataverse with the finance and operations app instance to connect to.
 
-    - **Target URL** - The URL at which you can access Finance and Operations.
-    - **OAuth URL** - https://login.windows.net/
-    - **Tenant ID** - Your tenant, it can be the domain name of your company email (such as contoso.com).
-    - **AAD Application ID** - The **Application (client) ID** created above.
-    - **AAD Application Secret** - The secret generated above.
-    - **AAD Resource** - Enter 00000015-0000-0000-c000-000000000000 (this is the Azure AD application representing Finance and Operations, and should always be this same value).
+1. Your Dataverse environment should still be open in your browser from [Step 1. Enable Microsoft Power Platform integration and open the Dataverse environment](#enable). Select the settings button (gear symbol) in the upper right, and then select **Advanced Settings**.
 
-7. Save the changes. 
-8. Close the page and get back to the **Administration** page for [Step 6 - Enable Microsoft Dataverse virtual entities]() [![Close editing entity](./media/tcs-dataverse-master-data-lookup-8.png)](./media/tcs-dataverse-master-data-lookup-8.png)
+    [![Opening Advanced settings in the Dataverse environment.](./media/tcs-dataverse-master-data-lookup-4.png)](./media/tcs-dataverse-master-data-lookup-4.png)
+
+2. On the **Settings** drop-down menu, select **Administration**.
+
+    [![Administration.](./media/tcs-dataverse-master-data-lookup-5.png)](./media/tcs-dataverse-master-data-lookup-5.png)
+
+3. Select **Virtual Entity Data Sources**.
+
+    [![Virtual Entity Data Sources.](./media/tcs-dataverse-master-data-lookup-6.png)](./media/tcs-dataverse-master-data-lookup-6.png)
+
+4. Select the data source that is named **Finance and Operations**.
+
+    [![Finance and Operations data source.](./media/tcs-dataverse-master-data-lookup-7.png)](./media/tcs-dataverse-master-data-lookup-7.png)
+
+5. Enter the following information from earlier steps:
+
+    - **Target URL** – Enter the URL where you can access finance and operations apps.
+    - **OAuth URL** – Enter `https://login.windows.net/`.
+    - **Tenant ID** – Specify your tenant. This value can be the domain name of your company email (such as contoso.com).
+    - **AAD Application ID** – Enter the **Application (client) ID** value that was created earlier.
+    - **AAD Application Secret** – Enter the secret that was generated earlier.
+    - **AAD Resource** – Enter **00000015-0000-0000-c000-000000000000**. This value is the Azure AD application that represents finance and operations apps. It should always be this same value.
+
+6. Save your changes.
+7. Close the page to return to the **Administration** page, where you will begin [Step 6. Enable Dataverse virtual entities](#virtual).
+
+    [![Closing the entity for editing.](./media/tcs-dataverse-master-data-lookup-8.png)](./media/tcs-dataverse-master-data-lookup-8.png)
 
 For more information, see [Configure the virtual entity data source](../../fin-ops-core/dev-itpro/power-platform/admin-reference.md#configure-the-virtual-entity-data-source).
 
-## <a name='virtual'></a> Enable Microsoft Dataverse virtual entities
-The visibility of the virtual entities from Finance and Operations apps must be set to **Yes** before it can be consumed by the Tax Calculation configuration.
+## <a name='virtual'></a>Enable Dataverse virtual entities
 
-> [!NOTE] 
-> You can skip this step by enabling the Tax Calculation related virtual entities in [Step 8 - Setup the connected application for Tax Calculation](#import) with just one click. However, we recommend that you enable at least one virtual entity manually, which indicates the connection between finance and operations apps and Dataverse is well established.
+The visibility of the virtual entities from finance and operations apps must be set to **Yes** before they can be consumed by the Tax Calculation configuration.
 
-1. In the **Administration** page, click on the filter button on the right-up corner.
-[![Administration filter button.png](./media/tcs-dataverse-master-data-lookup-9.png)](./media/tcs-dataverse-master-data-lookup-9.png)
+> [!NOTE]
+> You can skip this step by enabling the Tax Calculation–related virtual entities in just one click in [Step 8. Set up the connected application for Tax Calculation](#import). However, we recommend that you manually enable at least one virtual entity, to indicate that the connection between finance and operations apps and Dataverse is well established.
 
-2. In the **ADVANCED FIND** window, Select **Available Finance and Operations Entites** in the **Look for** option.
-   
-3. Add a rule, **Name Contains CompanyInfoEntity**, click **Results**. [![Advanced find](./media/tcs-dataverse-master-data-lookup-10.png)](./media/tcs-dataverse-master-data-lookup-10.png)
-   
-4. Click the **CompanyInfoEntity** in the search result, tick the **Visible** check box and click **Save**. [![Set entity visibility](./media/tcs-dataverse-master-data-lookup-11.png)](./media/tcs-dataverse-master-data-lookup-11.png)
+1. In your Dataverse environment, on the **Administration** page, select the filter button (funnel symbol) in the upper-right corner.
 
-5. Repeat above steps for the following entities which are referred in the configuration of Tax Calculation.
-   - CompanyInfoEntity
-   - CurrencyEntity
-   - CustCustomerV3Entity
-   - DeliveryTermsEntity
-   - EcoResProductCategoryEntity
-   - EcoResReleasedProductV2Entity
-   - LogisticsAddressCountryRegionTranslationEntity
-   - LogisticsAddressStateEntity
-   - PurchProcurementChargeCDSEntity
-   - SalesChargeCDSEntity
-   - TaxGroupEntity
-   - TaxItemGroupHeadingEntity
-   - VendVendorV2Entity
-   - InventOperationalSiteV2Entity
-   - TaxExemptCodeEntity
-   - InventWarehouseEntity
-   > [!Note]
-   > Only the first 5000 records of an entity can be retrieved by Dataverse and be made available in the drop-down list of tax calculation configuration.
-  
-For more information, see [Enable Microsoft Dataverse virtual entities](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-virtual-entities)
+    [![Filter button.](./media/tcs-dataverse-master-data-lookup-9.png)](./media/tcs-dataverse-master-data-lookup-9.png)
 
-## <a name='set-up'></a> Setup the connected application for Tax Calculation
-1. In Regulatory Configuration Service (RCS), open the **Feature management** workspace, and enable the following features:
+2. In the **Advanced find** window, in the **Look for** field, select **Available Finance and Operations Entities**.
+3. Add the following rule: **Name** – **Contains** – **CompanyInfoEntity**. Then select **Results**.
+
+    [![Advanced find window.](./media/tcs-dataverse-master-data-lookup-10.png)](./media/tcs-dataverse-master-data-lookup-10.png)
+
+4. Select **CompanyInfoEntity** in the search results, select the **Visible** checkbox, and then select **Save**.
+
+    [![Setting entity visibility.](./media/tcs-dataverse-master-data-lookup-11.png)](./media/tcs-dataverse-master-data-lookup-11.png)
+
+5. Repeat the preceding steps for the following entities that are referred to in the Tax Calculation configuration:
+
+    - CompanyInfoEntity
+    - CurrencyEntity
+    - CustCustomerV3Entity
+    - DeliveryTermsEntity
+    - EcoResProductCategoryEntity
+    - EcoResReleasedProductV2Entity
+    - LogisticsAddressCountryRegionTranslationEntity
+    - LogisticsAddressStateEntity
+    - PurchProcurementChargeCDSEntity
+    - SalesChargeCDSEntity
+    - TaxGroupEntity
+    - TaxItemGroupHeadingEntity
+    - VendVendorV2Entity
+    - InventOperationalSiteV2Entity
+    - TaxExemptCodeEntity
+    - InventWarehouseEntity
+
+    > [!NOTE]
+    > Only the first 5,000 records of an entity can be retrieved by Dataverse and made available in the drop-down list of the Tax Calculation configuration.
+
+For more information, see [Enable Microsoft Dataverse virtual entities](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-virtual-entities).
+
+## <a name='set-up'></a>Set up the connected application for Tax Calculation
+
+1. In RCS, open the **Feature management** workspace, and enable the following features:
+
     - Electronic reporting Dataverse datasources support
     - Tax Service Dataverse datasources support
     - Globalization features
-2. Go to **Electronic reporting** > **Connected applications**. [![Connected applications](./media/tcs-dataverse-master-data-lookup-12.png)](./media/tcs-dataverse-master-data-lookup-12.png)
-3. Select **New** to add a record, and enter the following field information.
-   - In the Name field, enter a name.
-   - In the Type field, select Dataverse.
-   - In the Application field, enter your (Dataverse) **Environment URL** which you noted down in [step 1 - Enable Microsoft Power Platform integration and open your Dataverse environment]().
-   - In the Tenant field, enter your tenant.
-   - In the Custom URL field, enter your Dataverse URL and append it with "/api/data/v9.1".
 
-4. Select **Check connection**, in the pop-up dialog, follow the **Click here to connect to selected remote application** link.[![Check connection](./media/tcs-dataverse-master-data-lookup-13.png)](./media/tcs-dataverse-master-data-lookup-13.png)
-   
-5. Make sure you receive the **Success!** message. The connection is successfully established.
-   [![Success message](./media/tcs-dataverse-master-data-lookup-14.png)](./media/tcs-dataverse-master-data-lookup-14.png)
+2. Go to **Electronic reporting**, and then, in the **Related links** section, select **Connected applications**.
 
-## <a name='import'></a> Import and setup Dataverse Model Mapping
-Microsoft provides default model mapping configurations for entities from Finance and Operations apps to Tax Calculation.
-1. In Regulatory Configuration Service (RCS), go to **Electronic reporting**.
-2. In **Configuration providers**, find **Microsoft**, select **Repositories**
-   [![Global repositories](./media/tcs-dataverse-master-data-lookup-15.png)](./media/tcs-dataverse-master-data-lookup-15.png)
-3. Select the **Global configuration repository** record, select **Open**.
-4. Find the **Dataverse Model Mapping** configuration under **Tax Data Model** > **Tax Calculation Data Model**.
-5. Select a version which matches to your Finance and Operations version, select **Import**.
-   [![Import Dataverse Model Mapping](./media/tcs-dataverse-master-data-lookup-16.png)](./media/tcs-dataverse-master-data-lookup-16.png)
+    [![Connected applications.](./media/tcs-dataverse-master-data-lookup-12.png)](./media/tcs-dataverse-master-data-lookup-12.png)
 
-   > [!Note] 
-   > The **Dataverse Model Mapping** is effective only on its highest imported version. It means you should not import a higher version of **Dataverse Model Mapping** than the to-be-implemented **Tax Calculation Configuration** version.
-   E.g. If you plan to implement the "40.50.225" **Tax Calculation configuration** version, you should only import the "40.50.13" **Dataverse Model Mapping** version. You should not import version "40.54.14" which would cause the data model mismatching in the configuration.
+3. Select **New** to add a record, and enter the following information.
 
-6. Go back to **Electronic reporting**, select the **Tax configurations** tile.
-7. Select the imported **Dataverse Model Mapping** configuration, select **Edit**.
-8. Switch **Default for model mapping** to **Yes**.
-9. In **Connected application** field, select the connected application you just setup in [Step 7 - Setup the connected application for Tax Calculation]()
-10. Switch the **Set virtual table visibility** option to **Yes** to set all Tax Calculation-related virtual entities to visible.
+    - **Name** – Enter a name.
+    - **Type** – Select **Dataverse**.
+    - **Application** – Enter your Dataverse environment's **Environment URL** value, which you made a note of in [Step 1. Enable Microsoft Power Platform integration and open your Dataverse environment](#enable).
+    - **Tenant** – Enter your tenant.
+    - **Custom URL** – Enter your Dataverse URL, and append **/api/data/v9.1** to it.
 
-You have completed the setup for master data lookup function. The drop-down list of **Legal entity**, **Vendor account**, **Item code**, **Delivery term**, and etc. from your Dynamics 365 Finance shall be now enabled in the **Tax Calculation FEATURE VERSION** setup. [![Legal entity drop down list](./media/tcs-dataverse-master-data-lookup-17.png)](./media/tcs-dataverse-master-data-lookup-17.png)
+4. Select **Check connection**, and then, in the dialog box that appears, select **Click here to connect to selected remote application**.
+
+    [![Checking the connection.](./media/tcs-dataverse-master-data-lookup-13.png)](./media/tcs-dataverse-master-data-lookup-13.png)
+5. Make sure that you receive a "Success!" message that indicates that the connection was successfully established.
+
+    [![Success message.](./media/tcs-dataverse-master-data-lookup-14.png)](./media/tcs-dataverse-master-data-lookup-14.png)
+
+## <a name='import'></a>Import and set up the Dataverse Model Mapping configuration
+
+Microsoft provides default model mapping configurations for entities from finance and operations apps to Tax Calculation.
+
+1. In RCS, go to **Electronic reporting**.
+2. In the **Configuration providers** section, on the tile for the **Microsoft** provider, select **Repositories**.
+
+    [![Repositories.](./media/tcs-dataverse-master-data-lookup-15.png)](./media/tcs-dataverse-master-data-lookup-15.png)
+
+3. Select the **Global configuration repository** record, and then select **Open**.
+4. Under **Tax Data Model** \> **Tax Calculation Data Model**, select the **Dataverse Model Mapping** configuration.
+5. On the **Versions** FastTab, select a version that matches your finance and operations apps version, and then select **Import**.
+
+    [![Importing the Dataverse Model Mapping configuration.](./media/tcs-dataverse-master-data-lookup-16.png)](./media/tcs-dataverse-master-data-lookup-16.png)
+
+    > [!IMPORTANT]
+    > The **Dataverse Model Mapping** configuration is effective only on its highest imported version. Therefore, you should not import a version of the **Dataverse Model Mapping** configuration that is higher than the version of the Tax Calculation configuration that you plan to implement. For example, if you plan to implement version 40.50.225 of the Tax Calculation configuration, you should import only version 40.50.13 of the **Dataverse Model Mapping** configuration. You should not import version 40.54.14. Otherwise, there will be a data model mismatch in the configuration.
+
+6. Go back to **Electronic reporting**, and select the **Tax configurations** tile.
+7. Select the imported **Dataverse Model Mapping** configuration, and then select **Edit**.
+8. Set the **Default for model mapping** option to **Yes**.
+9. In **Connected application** field, select the connected application that you set up in [Step 7. Set up the connected application for Tax Calculation](#set-up).
+10. Set the **Set virtual table visibility** option to **Yes** to set all Tax Calculation–related virtual entities to visible.
+
+You've now completed the setup for the master data lookup functionality. A drop-down list for fields such as **Legal entity**, **Vendor account**, **Item code**, and **Delivery term** from Dynamics 365 Finance will now be enabled in the **Tax Calculation feature version** setup.
+
+[![Legal entity drop-down list.](./media/tcs-dataverse-master-data-lookup-17.png)](./media/tcs-dataverse-master-data-lookup-17.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
