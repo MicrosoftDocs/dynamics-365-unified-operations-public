@@ -236,6 +236,8 @@
           href: hr-admin-go-live-faq.md
         - name: Human Resources infrastructure merge FAQ
           href: hr-infrastructure-merge-faq.md
+        - name: Human Resources customer migration FAQ
+          href: customer-migration.md        
         - name: Documentation resources
           items:
           - name: Help system
