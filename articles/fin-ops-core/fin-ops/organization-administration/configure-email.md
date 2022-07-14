@@ -4,7 +4,7 @@
 title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: jasongre
-ms.date: 06/17/2022
+ms.date: 07/13/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -280,7 +280,7 @@ There are some standard processes that can help you troubleshoot the configurati
 
 <table>
   <tr>
-    <th>Verify email settings, and send a test email.</th>
+    <th id="verify-email-settings">Verify email settings, and send a test email.</th>
     <td>
       <ol>
         <li>Go to <b>System administration &gt; Setup &gt; Email &gt; Email parameters</b>.</li>
@@ -292,7 +292,7 @@ There are some standard processes that can help you troubleshoot the configurati
     </td>
   </tr>
   <tr>
-    <th>Verify that the email batch process is running.</th>
+    <th id="verify-email-batch-process">Verify that the email batch process is running.</th>
     <td>
       <ol>
         <li>Go to <b>System administration &gt; Periodic tasks &gt; Email processing &gt; Batch</b>.</li>
@@ -307,19 +307,19 @@ There are some standard processes that can help you troubleshoot the configurati
     </td>
   </tr>
   <tr>
-    <th>Review the status of batch emails.</th>
+    <th id="review-status">Review the status of batch emails.</th>
     <td>
       <ol>
         <li>Go to <b>System administration &gt; Periodic tasks &gt; Email processing &gt; Batch email sending status</b>.</li>
         <li>Verify that emails are being sent from the correct account.
           <p>If the account is incorrect, you must adjust settings such as user options, system templates, or organization templates, as needed.</p>
         </li>
-        <li>Verify that all email user accounts have been granted <b>Send As</b> permission for the configured SMTP account (see <a href="#saveas_permissions">Verify that all email accounts have appropriate Send As permissions</a> later in this table).</li>
+        <li>Verify that all email user accounts have been granted <b>Send As</b> permission for the configured SMTP account (see <a href="#sendas_permissions">Verify that all email accounts have appropriate Send As permissions</a> later in this table).</li>
       </ol>
     </td>
   </tr>
   <tr>
-    <th>Review any errors on the Email history page.</th>
+    <th id="review-errors">Review any errors on the Email history page.</th>
     <td>
       <ol>        
         <li>Go to <b>System administration &gt; Setup &gt; Email &gt; Email history</b>.
@@ -330,20 +330,18 @@ There are some standard processes that can help you troubleshoot the configurati
     </td>
   </tr>
   <tr>
-    <th id="saveas_permissions">Verify that all email accounts have appropriate Send as permissions.</th>
+    <th id="sendas_permissions">Verify that all email accounts have appropriate Send as permissions.</th>
     <td>In the Microsoft 365 admin center, verify that all user mail accounts that will be used to send emails have <b>Send As</b> and <b>Send On Behalf Of</b> permissions for the configured SMTP account. For more information, see <a href="/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user">Give mailbox permissions to another user in Microsoft 365</a>.</td>
   </tr>
   <tr>
-    <th>Verify user mailboxes.</th>
+    <th id="verify-user-mailboxes">Verify user mailboxes.</th>
     <td>Consider signing in to the affected (or all) user mailboxes to verify that they are valid and can be accessed by using sign-in.</td>
   </tr>
 </table>
- 
- 
 
  ### Specific Exchange email issues
 
--  **"(401) Unauthorized" or "(403) Forbidden" error when email is sent via Exchange**
+-  **<span id="unauthorized-forbidden-error">"(401) Unauthorized" or "(403) Forbidden" error when email is sent via Exchange</span>**
 
     <table>
       <tr>
@@ -363,7 +361,7 @@ There are some standard processes that can help you troubleshoot the configurati
       </tr>
     </table>
 
--  **"(404) Not found" error when email is sent via Exchange**
+-  **<span id="404-not-found">"(404) Not found" error when email is sent via Exchange</span>**
 
     <table>
       <tr>
@@ -387,7 +385,7 @@ There are some standard processes that can help you troubleshoot the configurati
 
 If you continue to experience issues when email is sent via SMTP, you may be running into one of the specific errors below. If not, consider entering the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.
 
--  **SMTP emails fail to be sent with "Recipient addresses in single label domains not accepted"**
+-  **<span id="single-label-domain-not-accepted-error">SMTP emails fail to be sent with "Recipient addresses in single label domains not accepted"</span>**
 
     <table>
       <tr>
@@ -400,7 +398,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
--  **SMTP emails fail to be sent with "Mailbox full"**
+-  **<span id="mailbox-full-error">SMTP emails fail to be sent with "Mailbox full"</span>**
 
     <table>
       <tr>
@@ -413,7 +411,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
--  **SMTP emails fail to be sent with "Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully"**
+-  **<span id="authentication-unsuccessful-error">SMTP emails fail to be sent with "Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully"</span>**
 
     <table>
       <tr>
@@ -426,7 +424,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
--  **SMTP emails fail to be sent with "Authentication unsuccessful, SmtpClientAuthentication is disabled for the Mailbox"**
+-  **<span id="smtpclientauthentication-disabled-error">SMTP emails fail to be sent with "Authentication unsuccessful, SmtpClientAuthentication is disabled for the Mailbox"</span>**
 
     <table>
       <tr>
@@ -439,7 +437,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
-- **SMTP emails fail to be sent with "If your SMTP server doesn't support authentication, please clear the SMTP user name and password"**
+- **<span id="smtp-emails-fail-to-send-with-if-your-smtp-server-doesnt-support-authentication-please-clear-the-smtp-user-name-and-password">SMTP emails fail to be sent with "If your SMTP server doesn't support authentication, please clear the SMTP user name and password"</span>**
 
     <table>
       <tr>
@@ -452,7 +450,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
-- **SMTP emails fail to be sent with an "5.7.57 SMTP" error, or an indication that either you aren't authenticated or authentication is required**
+-  **<span id="smtp-emails-fail-to-send-with-5757-smtp-error-or-an-indication-that-youre-not-authenticated-or-authentication-is-required">SMTP emails fail to be sent with an "5.7.57 SMTP" error, or an indication that either you aren't authenticated or authentication is required</span>**
 
     <table>
       <tr>
@@ -465,7 +463,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
-- **SMTP emails fail to be sent with "Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occurred with exception"**
+- **<span id="smtp-emails-fail-to-send-with-microsoftdynamicsaxxppsecuritycryptoencryptionexception-encryption-error-occurred-with-exception">SMTP emails fail to be sent with "Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occurred with exception"</span>**
 
     <table>
       <tr>
@@ -478,7 +476,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
--  **SMTP emails fail to be sent with "Client does not have permissions to send as this sender"**
+-  **<span id="smtp-emails-fail-to-send-with-client-does-not-have-permissions-to-send-as-this-sender">SMTP emails fail to be sent with "Client does not have permissions to send as this sender"</span>**
 
     <table>
       <tr>
@@ -487,7 +485,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
       <tr>
         <th>Fix</th>
-        <td>Ensure that the email account has appropriate <b>Send As</b> permissions. For more information, see <a href="#saveas_permissions">Verify that all email accounts have appropriate Send As permissions</a> earlier in this article.
+        <td>Ensure that the email account has appropriate <b>Send As</b> permissions. For more information, see <a href="#sendas_permissions">Verify that all email accounts have appropriate Send As permissions</a> earlier in this article.
       </tr>
     </table>
 
