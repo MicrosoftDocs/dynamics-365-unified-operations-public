@@ -4,7 +4,7 @@
 title: Enable master data lookup for tax calculation configuration
 description: This article explains how to set up and enable the tax calculation master data lookup functionality.
 author: kai-cloud
-ms.date: 11/22/2021
+ms.date: 07/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -140,7 +140,9 @@ For more information, see [Configure the virtual entity data source](../../fin-o
 
 ## <a name='virtual'></a> Enable Microsoft Dataverse virtual entities
 The visibility of the virtual entities from Finance and Operations apps must be set to **Yes** before it can be consumed by the Tax Calculation configuration.
-> [!Note] You can skip this step by enabling the Tax Calculation related virtual entities in [Step 8 - Setup the connected application for Tax Calculation]() with just one click. But, it is recommended to enable at least one virtual entity manually, which indicates the connection between Finance and Operations apps and Dataverse is well established.
+
+> [!NOTE] 
+> You can skip this step by enabling the Tax Calculation related virtual entities in [Step 8 - Setup the connected application for Tax Calculation](#import) with just one click. However, we recommend that you enable at least one virtual entity manually, which indicates the connection between finance and operations apps and Dataverse is well established.
 
 1. In the **Administration** page, click on the filter button on the right-up corner.
 [![Administration filter button.png](./media/tcs-dataverse-master-data-lookup-9.png)](./media/tcs-dataverse-master-data-lookup-9.png)
@@ -209,7 +211,7 @@ Microsoft provides default model mapping configurations for entities from Financ
 7. Select the imported **Dataverse Model Mapping** configuration, select **Edit**.
 8. Switch **Default for model mapping** to **Yes**.
 9. In **Connected application** field, select the connected application you just setup in [Step 7 - Setup the connected application for Tax Calculation]()
-10. Switch the **Set virtual table visibility** option to **Yes**, it sets all Tax Calculation related virtual entities to visible.
+10. Switch the **Set virtual table visibility** option to **Yes** to set all Tax Calculation-related virtual entities to visible.
 
 You have completed the setup for master data lookup function. The drop-down list of **Legal entity**, **Vendor account**, **Item code**, **Delivery term**, and etc. from your Dynamics 365 Finance shall be now enabled in the **Tax Calculation FEATURE VERSION** setup. [![Legal entity drop down list](./media/tcs-dataverse-master-data-lookup-17.png)](./media/tcs-dataverse-master-data-lookup-17.png)
 
