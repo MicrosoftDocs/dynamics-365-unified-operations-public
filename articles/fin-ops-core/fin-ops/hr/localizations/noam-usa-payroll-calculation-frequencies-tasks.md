@@ -3,7 +3,7 @@
 
 title: Set up payroll calculation frequencies
 description: This article describes how to set up payroll calculation frequencies.
-author: andreabichsel
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: PayrollCalculationFrequency
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 222594
 ms.assetid: 708d3b20-27cc-4f6a-b2d5-ecc328864670
