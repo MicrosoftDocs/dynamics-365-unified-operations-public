@@ -3,7 +3,7 @@
 
 title: Generate earnings for workers
 description: This article describes the various ways that you can generate earnings for workers.
-author: andreabichsel
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: HcmPosition, HcmWorker, PayrollEarningStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 220864
 ms.assetid: 87aac2bd-fcdb-4f97-a55f-7f25659d6940
