@@ -38,7 +38,7 @@ Although a given user might have access to multiple catalogs at a given time, th
 
 However, if a situation arises where the same product belongs to multiple catalogs, the system will maintain multiple cart lines for that product. There will be a separate line for each catalog. The same product from two different catalogs won't be merged at checkout.
 
-## When a B2B shopper is shopping, is there any validation for catalog availability?
+### When a B2B shopper is shopping, is there any validation for catalog availability?
 
 Yes. A B2B shopper will be allowed to proceed to checkout only if all items in the cart are from valid catalogs. If any cart items are from expired or retracted catalogs, they will be removed, and the user will be notified.
 
