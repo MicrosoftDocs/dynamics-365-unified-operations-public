@@ -1,5 +1,5 @@
 ---
-title: Packing containers
+title: Pack containers for shipment
 description: The packing process allows you to validate and pack inventory items into containers. 
 author: perlynne
 ms.date: 7/13/2022
@@ -13,73 +13,75 @@ ms.search.validFrom: 2022-08-01
 ms.dyn365.ops.version: 10.0.29
 ---
 
-# Packing containers
+# Pack containers for shipment
 
 [!include [banner](../../includes/banner.md)]
 
-The manual packing of containers process allows you to validate and pack inventory items  into containers. In this process, warehouse workers would typically pick the inventory items from the bulk storage areas and move them to a packing area where multiple warehouse workers will check the item quantities and types, and assign them to appropriate container sizes.
-When a container is fully packed, they can get closed and moved to the outbound dock area to get ready for shipment.
+The container packing process allows you to validate and pack inventory items into containers. During this process, warehouse workers typically pick inventory items from bulk storage areas and move them to a packing area where multiple warehouse workers then check the item quantities and types, and assign them to appropriate container sizes. When a container is fully packed, it is closed and moved to the outbound dock area to get ready for shipment.
 
-Containers represent the physical structure in which items are packed and you can keep track of the container information in the system. This can be useful during transportation planning, especially in the case where shipping charges are calculated based on containers. You can see the number of containers that are used in a shipment, the types of containers that are used, and physical dimensions such as total volume, weight, and so on, prior to shipping.
+Containers represent physical structures in which items are packed, and you can keep track of container information in the system. This can be useful during transportation planning, especially if you calculate shipping charges based on containers. Prior to shipping, you can see the number of containers that are used in a shipment, the types of containers that are used, and the physical dimensions of each container (such as total volume, weight, and so on).
 
-Several related outbound warehouse capabilities can be used with containers, please refer to the following documentation to read more:
-<!--[Packing work for packing operations](packing-work-for-packing-operations.md)   -   NEW COMMING PAGE -->
-<!--[Manual packing on the Warehouse management mobile app](manual-packing-on-the-warehouse-management-mobile-app.md) -   NEW COMMING PAGE -->
+Several related outbound warehouse capabilities can be used with containers. See the following articles to learn more:
+
 - [Wave containerization](wave-containerization.md)
 - [Outbound sorting](outbound-sorting.md)
 - [Small parcel shipping](small-parcel-shipping.md)
 - [Confirm and transfer](confirm-and-transfer.md)
 - [Set different dimensions for packing and storage](packing-vs-storage-dimensions.md)
+- [Packing work for packing outbound containers and processing shipments](packing-work.md)
+<!-- KFM: When published, add link to [Manual packing on the Warehouse management mobile app](manual-packing-on-the-warehouse-management-mobile-app.md) -->
 
-## Setup your warehouse to use manual packing operations
-<!--To use either the web client **Pack** page or the **Warehouse management mobile app** for the *Packing* activity code, please make sure to have the below setup enabled.-->
-When picking items based on outbound warehouse work and putting them directly to an outbound shipping location the inventory will be ready to get shipped immediately.
-Please refer to the general outbound warehouse process documentation for this [part](wave-processing.md).
+## Set up your warehouse to use manual packing operations
 
-When using the manual packing process you will add an additional operation between the picking and shipping operations. So instead of putting the inventory to a *baydoor shipping location* you put the items to a *packing location*. For this you will need at least one location used to place the inventory items going to get packed and to use the web client **Pack** page <!-- or the **Warehouse management mobile app** packing process-->, several other predefined setup data will be needed.
+There are two basic ways to organize your outbound operations:
 
-In the following it is assumed that the inventory going to get packed into containers will get brought to a packing location ready to get packed into containers.
+<!-- KFM: Confirm the following terminology and concept with Per -->
 
-### Setup warehouse locations for packing
+- **Wave creation and processing**: Workers pick items based on outbound warehouse work and then put the items directly to an outbound shipping location, where they are ready for immediate shipment. For details about how to set up and use this process, see [Wave creation and processing](wave-processing.md).
+- **Manual packing at packing stations**: This process makes use of an additional operation between the picking and shipping operations. Instead of putting the inventory to a *baydoor shipping location* workers will put them to a *packing location*. Workers will then manage the packing process at the packing station using the web client **Pack** page and/or the Warehouse Management mobile app *Packing* work flow. To enable this process, you must configure your system as described in this section and its subsections.
 
-You will need at least one location used to place the inventory items going to get packed into containers. To read about how to create warehouse locations see [Configure locations in a WMS-enabled warehouse](tasks\configure-locations-wms-enabled-warehouse.md). In the following sections you can read about how to create and setup packing locations.
+### Set up warehouse locations for packing
+
+You must have at least one packing location where workers will place inventory items to be packed into containers. To learn about how to create warehouse locations, see [Configure locations in a WMS-enabled warehouse](tasks\configure-locations-wms-enabled-warehouse.md). The following subsections describe how to create and set up packing locations.
 
 #### Set up location types for packing
 
-You will need to define a location type for the packing locations. This type must get associated with all the locations used for the packing operations.
+You must define a location type for the packing locations. This location type must be associated with each location that is used for packing operations.
 
-To set up your location types:
+To set up a location type:
 
-1. Go to **Warehouse management \> Setup \> Warehouse \> Location types**
-1. Select **New** on the Action Pane to add a new location type to the grid
-1. Make the following settings for your new location type:
+1. Go to **Warehouse management \> Setup \> Warehouse \> Location types**.
+1. Select **New** on the Action Pane to add a new location type to the grid.
+1. Make the following settings for the new location type:
     - **Location type** – Enter a name for the location type. Each name must be unique
     - **Description** – Enter a short description of the location type
 
 #### Inform the system about packing location type
 
-You must inform the system about what location type to use for the packing operations.
-To set the location type to be used in your organization for packing operations:
+After you have created a location type to use for packing operations, you must configure it as such in your system.
+
+To set the location type to be used for packing operations:
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**
-2. Select the **General** tab and expand the **Location types** FastTab
-3. Set the **Packing location type** field to the location type that is specified for packing purposes
+2. Open the **General** tab and expand the **Location types** FastTab
+3. Set the **Packing location type** field to the location type that you will use to identify packing stations.
+
+<!-- KFM: The following note may be obsolete and should maybe be removed. -->
 
 > [!NOTE]
-> If you are upgrading from a previous Microsoft Dynamics AX version the *In packing* status has been removed from the shipments and loads as they were not working consistently and resulted in redundant data. Consequently, the list pages for **In shipments** and **Loads in packing** have been deprecated. Containers in packing are tracked at the location level.
+> If you are upgrading from a version of Microsoft Dynamics AX, note that the *In packing* status has been removed from shipments and loads because the status wasn't working consistently and resulted in redundant data. Consequently, the list pages for **In shipments** and **Loads in packing** have been deprecated. Containers to be packed are tracked at the location level.
 >
-> In previous versions, the packing location was defined as a **Location profile ID**. In the current version, this is changed so setup of packing location will be defined using location types, as described above, to align with the process for identifying staging and final shipping locations.
+> In previous versions, the packing location was defined by identifying a *location profile* using the **Profile ID for packing location** field on the **Packing** tab of the **Warehouse management parameters** page. In the current version, packing location are instead defined by identifying a *location type* using the **Packing location type** field on the **General** tab of the **Warehouse management parameters** page, as described in this article. The new setting aligns better with the process for identifying staging and final shipping locations.
 >
-> It is possible to continue with the current setting, but we recommend that you update the setting because the legacy packing setting will be deprecated in future versions.
+> It is possible to continue using the legacy setting, but we recommend that you instead update to using the new setting because the legacy packing setting will eventually be deprecated.
 >
-> [!IMPORTANT]
-> After clearing and saving the **Profile ID for packing location field**, the field will be disabled and can't be used anymore. For installations where the legacy has not been used, the legacy setting will always be disabled. After having the value cleared you can follow the above setup process.
+> If you clear the legacy **Profile ID for packing location** field and then save the page, the field will be permanently disabled. For installations where the legacy setting has never been used, the legacy setting will always be disabled. After clearing this setting, use the settings described in this article to set up and identify your packing location.
 
 #### Set up location profiles for packing locations
 
-Each location profile establishes information and rules that apply for associated locations and because you at least need one location used for a packing operation, you as well need to create a *Location profile*. Each profile can be used by multiple locations as needed, but for the locations used for packing you will need to track license plates.
+Each *location profile* establishes information and rules that apply for the associated locations. Because you need at least one location to use for packing operations, you must create a location profile for it, in addition to a location type. Each profile can be used by multiple locations as needed. Locations used for packing must be set up to track license plates.
 
-To set up a location profile for a packing location:
+To set up a location profile for a packing location: <!-- KFM: Continue here. -->
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Location profiles**.
 1. Select **New** on the Action Pane to add a new location profile
@@ -231,55 +233,57 @@ To set up a *Worker*/*Person* for the packing process:
 1. Open **Default packing station** and enter *Site*, *Warehouse*, and *Location*
 <!--1. If using the **Warehouse management mobile app** create a *User* with a startup *Menu item*-->
 
-<!-- HERE ;-) -->
-
-# Example scenario
+## <a name="scenario"></a>Example scenario
 
 In this scenario we will use the already existing demo data for company *USMF* warehouse *62*.
 Please make sure that you are running as an user with proper security role access and associated with the *Worker*/*Person* 'Julia Funderburk' or with same setup.
 
-## Create sales orders
+## Create a sales order and complete the work
+
+Follow these steps to create a sales order and complete the work of moving the ordered items to the packing station:
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
 1. On the Action Pane, select **New**.
-1. On the **Create sales order** dialog box, set the following values:
+1. On the **Create sales order** dialog box, set the following value:
     - **Customer account:** *US-005*
 1. Select **OK** to close the dialog box.
-    The new sales order is opened.
-1. If a new, empty line isn't automatically added to the grid on the **Sales order lines** FastTab, select **Add line** to add one.
-1. On the new order line, set the following values:
+1. The new sales order opens and includes a single, empty line on the **Sales order lines** FastTab. Set the following values for the new order line:
     - **Item number:** *A0001*
     - **Quantity:** *2*
+    - **Site** *6*
     - **Warehouse** *62*
-1. While the new order line is still selected on the **Sales order lines** FastTab, on the **Inventory** menu above the grid, select **Reservation**.
+1. With the new order line still selected, select **Inventory \> Reservation** from the **Sales order lines** FastTab toolbar.
 1. On the **Reservation** page, select **Reserve lot** to reserve the full quantity of the selected line in the warehouse.
 1. Close the **Reservation** page to return to the sales order.
-1. On the Action Pane, on the **Warehouse** tab, in the **Actions** group, select **Release to warehouse**.
-1. You receive an informational message that shows the shipment and wave for this order.
-1. From the line select **Warehouse** > **Work details** (Note that in case the waving runs in batch processing it might take a some time before the work gets created)
-1. From the **Work** page Action select **Work** > **Complete work** to open the *Work completion* page
-1. Select **User ID** 62 and Action **Validate work** followed by **Complete work** to process the picking and putting of the inventory items to the *Pack* location
-1. Make a note about the *Shipment ID*
+1. On the Action Pane, open the **Warehouse** tab and select **Release to warehouse**.
+1. The page displays a message that shows the shipment and wave IDs for this order.
+1. With the new order line still selected, select **Warehouse** \> **Work details** from the **Sales order lines** FastTab toolbar. (If you run your waves using batch processing, you may need to wait a short time for the work to be created.)
+1. The **Work** page opens. On the Action Pane, open the **Work** tab and select **Complete work**.
+1. The **Work completion** page opens. Set **User ID** to *62*.
+1. On the Action Pane, select **Validate work**.
+1. You should see a message that your work is valid. Select **Complete work** to process the picking and putting of the inventory items to the *Pack* location
+1. Write down the **Shipment ID** shown for this work in the top grid.
 
-The inventory items have now been brought forward to the packing area and are ready to get packed into containers.
+The inventory items have now been brought forward to the packing area and are ready to get packed into containers. Now, follow these steps to create a new container in the system and pack it:
 
 1. Go to **Warehouse management \> Packing and containerization \> Pack**.
-1. On the dialog select
-   - **Site** 6
-   - **Warehouse** 62
-   - **Location** Pack
-   - **Packing profile ID** WH62
-1. Select **OK** 
-1. In the **Pack** page enter the noted shipment ID into the **License plate or shipment** field. You will now see the items remaining to get packed in the **Open lines** section.
-1. On the Action Pane select **New container** to create a container in the system
-1. Select **Container type** SmallBox
-1. Click **OK** to create a new container with the automatically assigned ID
-1. Back in the **Pack** page select **Pack** in the Action to pack all the inventory items into the new container
-
-All the items for the shipment has now been packed into containers
-
-1. On the Action Pane select **Close container**
-1. On the **Close container** dialog click **Get system weight** to default the item master gross weight
+1. The **Select packing station** dialog opens. Make the following settings:
+   - **Site:** *6*
+   - **Warehouse:** *62*
+   - **Location:** *Pack*
+   - **Packing profile ID:** *WH62*
+1. Select **OK**.
+1. The **Pack** page opens. In the **License plate or shipment** field, enter the shipment ID you noted previously. You should now see the remaining unpacked items on the **Open lines** FastTab.
+1. On the Action Pane, select **New container** to create a container in the system.
+1. The **ID of the new container** dialog opens. Set **Container type** to *SmallBox*.
+1. Click **OK** to create a new container.
+1. Select **OK** to return to the **Pack** page. The **Open containers** FastTab now shows the **Container ID** of the container you created.
+1. For this scenario, we will pack just one of the ordered items for now. Therefore, expand the **Item packing** FastTab and make the following settings:
+    - **Quantity**: *1.00*
+    - **Identifier**: *A0001*
+1. Immediately after you select the **Identifier** value, the page updates the **Open lines** and **All lines** FastTabs to indicate that one item has been packed. You should now have packed 1 out of the 2 pieces of item *A0001*.
+1. On the Action Pane select **Close container**.
+1. The **Close container** dialog opens. Select **Get system weight** to default the **Gross weight**.
 1. Select **OK** to close the container
 
 > [!NOTE]

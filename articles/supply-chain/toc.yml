@@ -3241,9 +3241,9 @@
             href: warehousing/piece-picking-confirmation.md
           - name: Packing materials and fees
             href: warehousing/pack-materials-packing-material-fees.md
-          - name: Packing containers
+          - name: Pack containers for shipment
             href: warehousing/packing-containers.md
-          - name: Packing work for outbound container packing and shipment processing
+          - name: Packing work for packing outbound containers and processing shipments
             href: warehousing/packing-work.md
           - name: Set up short picking item reallocation
             href: warehousing/tasks/set-up-short-picking-item-reallocation.md
