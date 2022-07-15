@@ -99,4 +99,13 @@ For information about the languages and geographies that are supported for Human
 
 By default, the global administrator who created the environment has access to it. You must explicitly grant access to additional application users. You must add users and assign the appropriate roles to them in the Human Resources environment. For more information, see [Create new users](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles).
 
+## Additional resources
+You can learn more about how to use and manage project in Lifecycle Services on the finance and operations app infrastrcuture by using the following resources.
+
+[Lifecycle Services resources](/fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
+[Lifecycle Services (LCS) user guide](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
+[Self-service deployment overview](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md)
+[Database movement operations home page](../fin-ops-core/dev-itpro/database/dbmovement-operations.md)
+
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
