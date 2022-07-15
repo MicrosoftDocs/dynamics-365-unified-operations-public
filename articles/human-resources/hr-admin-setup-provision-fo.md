@@ -29,10 +29,10 @@ ms.dyn365.ops.version: Human Resources
 
 # Provision Human Resources in the finance and operations infrastructure
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Applies To:** Human Resources on the finance and operations app infrastructure_ 
 
 > [!NOTE]
-> Starting June 2022, Human Resources environments can be deployed only on the finance and operations app infrastructure.
+> Starting July 2022, provisioning of new Human Resources Production environments will not be available on the stand-alone Human Resources infrastructures.  Customers can deploy Human Resources environments on the Finance and operations infrastructure.  Additionally, new Lifecycle services (LCS) project creation on the stand-alone infrastructure will also be disabled.
 
 This article explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources in the finance and operations infrastructure.
 
@@ -45,8 +45,8 @@ Before you start to provision a new environment, the following prerequisites mus
 
 ## Provision a Human Resources trial environment
 
-Starting April 2022, the Human Resources trial environments are available on the stand-alone application. Potential customers who are interested in evaluating the Human Resources capabilities in finance and operations apps can use the free 30-day trial together with the demo data. Dynamics 365 Finance will include the Human Resources capabilities, which are brought to the Finance infrastructure through the merge of the stand-alone application. For more information, see [Merging of HR offerings brings capabilities together for customers](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). 
-For more information about Finance trials, see the [step-by-step guide](../fin-ops-core/fin-ops/get-started/before-you-buy.md).
+>[!NOTE]
+> Starting April 2022, the Human Resources trial environments will not be available on the stand-alone application. Potential customers who are interested in evaluating the Human Resources capabilities within finance and operations apps, can do so using the free 30-day trial along with the demo data. Dynamics 365 Finance will include the Human Resources capabilities brought to the Finance infrastructure through the merge of the stand-alone application. For more information, see [Merging of HR offerings brings capabilities together for customers](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). For more information about Dynamics 365 Finance trials, see the step-by-step [guide](../fin-ops-core/fin-ops/get-started/before-you-buy.md).
 
 ## Plan Human Resources environments
 
