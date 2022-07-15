@@ -98,7 +98,7 @@ This feature enables workers to use the production floor execution interface to 
 
 There are two versions of this feature. One supports items that *are not* enabled to use warehouse management processes (WMS). The other supports items that *are* enabled to use WMS. To use this functionality, turn on one or both of the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order), depending on whether you have items that are enabled for WMS:
 
-- *(Preview) Register material consumption on the production floor execution interface (non-WMS)*
+- *Register material consumption on the production floor execution interface (non-WMS)*
 - *(Preview) Register material consumption on the production floor execution interface (WMS-enabled)*
 
 > [!IMPORTANT]
