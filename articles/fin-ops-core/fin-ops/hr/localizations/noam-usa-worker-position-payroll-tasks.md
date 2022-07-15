@@ -3,7 +3,7 @@
 
 title: Set up payroll for workers
 description: Before you can pay a worker, you must set up payroll information about the worker's position, taxes, and benefits.
-author: andreabichsel
+author: twheeloc
 ms.date: 11/01/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollWorkerTaxCode, Payrol
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 248404
 ms.assetid: d6530f02-bbee-4d8e-94e7-173aecb4452e
