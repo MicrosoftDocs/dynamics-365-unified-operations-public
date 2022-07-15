@@ -3,7 +3,7 @@
 # required metadata
 
 title: Commerce catalogs for B2B FAQ
-description: This article provides answer to frequently asked questions about Microsoft Dynamics 365 Commerce catalogs.
+description: This article provides answers to frequently asked questions about Microsoft Dynamics 365 Commerce catalogs.
 author: ashishmsft
 ms.date: 07/15/2022
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.validFrom: 2022-02-28
 
 [!include [banner](includes/banner.md)]
 
-This article provides answer to frequently asked questions about Microsoft Dynamics 365 Commerce [business-to-business (B2B) catalogs](catalogs-b2b-sites.md).
+This article provides answers to frequently asked questions about Microsoft Dynamics 365 Commerce [business-to-business (B2B) catalogs](catalogs-b2b-sites.md).
 
 ### Why can't I configure a catalog-specific navigation hierarchy or see an option to associate a customer hierarchy?
 
