@@ -46,14 +46,14 @@ You must have at least one packing location where workers will place inventory i
 
 #### Set up location types for packing
 
-You must define a location type for the packing locations. This location type must be associated with each location that is used for packing operations.
+You must define a location type for the packing locations. Location types can be used as filtering options to control the different warehouse management processes, and are typically named to describe something about how each of them should be used. The location type you are setting up now must be associated with each location that is used for packing operations.
 
 To set up a location type:
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Location types**.
 1. Select **New** on the Action Pane to add a new location type to the grid.
 1. Make the following settings for the new location type:
-    - **Location type** – Enter a name for the location type. Each name must be unique
+    - **Location type** – Enter a name for the location type. Each name must be unique and should usually describe something about how it is intended to be used.
     - **Description** – Enter a short description of the location type
 
 #### Inform the system about packing location type
@@ -79,9 +79,9 @@ To set the location type to be used for packing operations:
 
 #### Set up location profiles for packing locations
 
-Each *location profile* establishes information and rules that apply for the associated locations. Because you need at least one location to use for packing operations, you must create a location profile for it, in addition to a location type. Each profile can be used by multiple locations as needed. Locations used for packing must be set up to track license plates.
+Each *location profile* establishes information and rules that apply for the associated locations. Because you need at least one location to use for packing operations, you must create a location profile for it in addition to a location type. Each profile can be used by multiple locations as needed. Locations used for packing must be set up to track license plates.
 
-To set up a location profile for a packing location: <!-- KFM: Continue here. -->
+To set up a location profile for a packing location: 
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Location profiles**.
 1. Select **New** on the Action Pane to add a new location profile
@@ -89,15 +89,15 @@ To set up a location profile for a packing location: <!-- KFM: Continue here. --
     - **Location profile ID** – Enter a unique ID for the profile
     - **Name** – Enter a descriptive name for the profile
 1. Expand the **General** FastTab and make the following settings:
-    - **Location format** – Select the location format to use for the current location. Location formats are a naming-system used to create unique and consistent names for the different location bin positions used within a warehouse. If not already existing you will need to create a new format under **Warehouse management > Setup > Warehouse > Location formats**
-    - **Location type** – Select the type used in the previous section. Location types can be used as filtering options to control the different warehouse management processes and does here inform the system about use
-    - **Allow negative inventory** – For packing locations, set this to *No*. The system must have knowledged about what to pack and thereby being able to get tracked physically
-    - **Use license plate tracking** – For packing locations, set this to *Yes*. Mandatory to track the license plate IDs on the packing locations to be able to control the packing process
-    - **Allow mixed items** – For packing locations, set this to *Yes*. Typically many different item numbers will need to get brought forward to the packing locations at the same time
-    - **Allow mixed inventory statuses** – For packing locations, set this to *Yes*. Typically many different inventory statuses will need to get brought forward to the packing locations at the same time
-    - **Allow mixed inventory batches** – For packing locations, set this to *Yes*. Typically many different batch numbers will need to get brought forward to the packing locations at the same time
+    - **Location format** – Select the location format to use for the current location. Location formats are a naming system used to create unique and consistent names for the different location bin positions used within a warehouse. If you don't already have the format you need, you can create a new one by going to **Warehouse management > Setup > Warehouse > Location formats** (see also [Configure locations in a WMS-enabled warehouse](tasks/configure-locations-wms-enabled-warehouse.md)).
+    - **Location type** – Select the location type you set up as the **Packing location type** on the **Warehouse management parameters** page, as described previously.
+    - **Use license plate tracking** – For packing locations, set this to *Yes*. It is mandatory that the system be able to track license plate IDs at packing locations so it can control the packing process.
+    - **Allow negative inventory** – For packing locations, set this to *No*.
+    - **Allow mixed items** – For packing locations, set this to *Yes*. This is required because many different item numbers are typically brought forward to the packing locations at the same time.
+    - **Allow mixed inventory statuses** – For packing locations, set this to *Yes*.  This is required because items with different inventory statuses are typically brought forward to the packing locations at the same time.
+    - **Allow mixed inventory batches** – For packing locations, set this to *Yes*. This setting is automatically set to *Yes* whenever **Allow mixed items** is set to *Yes*.
 
-#### Set up packing locations
+#### Set up packing locations <!-- KFM: Continue here. -->
 
 You will need at least one location used to place the inventory items going to get packed into containers.
 
