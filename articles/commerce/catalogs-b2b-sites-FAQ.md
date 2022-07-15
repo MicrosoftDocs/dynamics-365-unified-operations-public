@@ -5,7 +5,7 @@
 title: Commerce catalogs for B2B FAQ
 description: This article provides answer to frequently asked questions about Microsoft Dynamics 365 Commerce catalogs.
 author: ashishmsft
-ms.date: 07/11/2022
+ms.date: 07/15/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -46,7 +46,7 @@ Yes. A B2B shopper will be allowed to proceed to checkout only if all items in t
 
 Yes. As soon as a user selects a specific catalog, the whole shopping journey becomes catalog-specific. This journey includes product discovery experiences such as search suggestions, search results, category results, refiners, pricing, attributes, and recommended products (such as new, best-selling, trending, frequently bought together, and related products).
 
-## Can a B2B shopper purchase from the default assortment (catalogID=0)?
+### Can a B2B shopper purchase from the default assortment (catalogID=0)?
 
 No, a B2B shopper isn't allowed to purchase from the default assortment. That assortment is intended only for anonymous browsing. If a B2B shopper is missing catalog assignments (pending updates from their administration), they won't be able to see any catalogs that they can choose from, and no category hierarchy will be visible.
 
@@ -58,9 +58,9 @@ Currently, product enrichment is supported only at the site and channel level. I
 
 Currently, Commerce catalogs are intended to work with B2B Online channels only.
 
-### New customer was added to the customer hierarchy or new hierarchy was associated with the catalog but I am not able to see catalog becoming available for the intended user?
+### A new customer was added to the customer hierarchy or a new hierarchy was associated with the catalog, but the catalog is not available to the user. Why?
 
-Make sure you have run 1010 jobs after association of new customer to an existing customer hierarchy as well as upon creation of new customer hierarchy. The catalogs associated with the customer hierarchy will only be visible after the 1010 job is completed successfully. Also, if the catalog itself was also newly created, please ensure you do run 1150 (Catalog) job as well along with 1010 jobs. Lastly, as with any new catalog allow some time for the data to sync to channel and then also data must sync to search-index. Jobs with 'Applied' status is only indicator of data being synced to channel database and additional time is required for it to sync to search index. 
+Ensure that you ran **1010** jobs after you associated the new customer to an existing customer hierarchy, and when you created the new customer hierarchy. The catalogs associated with the customer hierarchy will only be visible after the **1010** job is completed successfully. If the catalog is also new, ensure that you ran the **1150** (catalog) job as well as  the **1010** jobs. As with any new catalog, allow some time for the data to sync to the channel and the search index. If a job has the status "Applied", that means that the data is being synced to channel database, but additional time is required for the data to sync to the search index. 
 
 ### Can we set up catalog-specific upsell/cross-sell items?
 
