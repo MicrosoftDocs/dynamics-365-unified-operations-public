@@ -104,7 +104,7 @@ To learn more about personalized recommendations, see [Enable personalized recom
 
 [Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](enable-adls-environment.md)
 
-[Set up Alternate Data flow for recommendations](reco-alternate-data-flow.md)
+[Set up alternate data flow for recommendations](reco-alternate-data-flow.md)
 
 [Enable personalized recommendations](personalized-recommendations.md)
 
