@@ -3,7 +3,7 @@
 
 title: Generate and work with pay statements
 description: This article describes the process for generating pay statements.
-author: andreabichsel
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: PayrollPayStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 233834
 ms.assetid: b20b94d2-6d5e-45a8-88c3-f8657caaee13

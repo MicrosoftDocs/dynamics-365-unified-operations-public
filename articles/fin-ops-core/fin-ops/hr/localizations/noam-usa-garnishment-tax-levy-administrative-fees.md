@@ -3,7 +3,7 @@
 
 title: Garnishments, tax levies, and administrative fees FAQ
 description: This article lists frequently asked questions and answers about garnishments and tax levies.
-author: andreabichsel
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: HcmBenefit, HcmBenefitElementSetup, HcmWorkerEnrollment, Payroll
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 221144
 ms.assetid: e87ff0bd-0594-45a6-bd54-5f8d085e1894
