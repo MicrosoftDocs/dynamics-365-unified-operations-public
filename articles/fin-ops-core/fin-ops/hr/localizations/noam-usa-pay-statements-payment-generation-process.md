@@ -3,7 +3,7 @@
 
 title: Pay statements and payment generation FAQ
 description: This article answers questions that are related to activities that go beyond standard payroll processing.
-author: andreabichsel
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: PayrollPayStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 221054
 ms.assetid: 0fd018c4-a786-4d36-97eb-7087521bb9f2
