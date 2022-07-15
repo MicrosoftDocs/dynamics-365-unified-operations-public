@@ -20,7 +20,6 @@ ms.dyn365.ops.version: 10.0.25
 # Troubleshoot Store Commerce performance issues
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article explains how to troubleshoot performance issues in the Microsoft Dynamics 365 Commerce Store Commerce app.
 

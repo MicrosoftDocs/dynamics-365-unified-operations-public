@@ -17,7 +17,6 @@ ms.dyn365.ops.version: AX 10.0.25
 # Obsolete and removed APIs, classes, and methods
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article lists the obsolete and removed APIs, classes, and methods in Microsoft Dynamics 365 Commerce.
 
