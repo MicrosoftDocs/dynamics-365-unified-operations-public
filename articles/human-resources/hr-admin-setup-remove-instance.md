@@ -32,10 +32,12 @@ ms.dyn365.ops.version: Human Resources
 _**Applies To:** Human Resources on the stand-alone infrastructure_ 
 
 >[!NOTE]
-> Starting July 2022, provisioning of new Human Resources Production environments will not be available on the stand-alone Human Resources infrastructures. Customers can deploy Human Resources environments on the Finance and operations infrastructure. Additionally, new Lifecycle services (LCS) project creation on the stand-alone infrastructure will also be disabled. For more information, see [Provision Human Resources in the finance and operations infrastructure](hr-admin-setup-provision-fo.md).
+> Starting July 2022, provisioning new Human Resources environments and creating new Lifecycle Services (LCS) projects will not be available on the stand-alone Human Resources infrastructure. Customers can deploy Human Resources environments in the finance and operations infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](/hr-admin-setup-provision-fo.md).
+
+
 
 >[!IMPORTANT]
-> The finance and operations app infrastrcuture supports the deletion of an environment. To learn more about how to delete an environment, see [Delete an environment](../fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure.md#delete-an-environment).
+> The finance and operations app infrastructure supports the deletion of an environment. To learn more about deleting an environment, see [Delete an environment](../fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure.md#delete-an-environment).
 
 This article explains the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
 
