@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Human Resources
 _**Applies To:** Human Resources on the stand-alone infrastructure_ 
 
 > [!NOTE]
-> [7/15/2022 10:28 AM] Tammy Wheelock
-Starting July 2022, provisioning new Human Resources environments and creating new Lifecycle Services (LCS) projects will not be available on the stand-alone Human Resources infrastructure. Customers can deploy Human Resources environments in the finance and operations infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](/hr-admin-setup-provision-fo.md).
+> Starting July 2022, provisioning new Human Resources environments and creating new Lifecycle Services (LCS) projects will not be available on the stand-alone Human Resources infrastructure. Customers can deploy Human Resources environments in the finance and operations infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](/hr-admin-setup-provision-fo.md).
 
 
 > [!IMPORTANT]
