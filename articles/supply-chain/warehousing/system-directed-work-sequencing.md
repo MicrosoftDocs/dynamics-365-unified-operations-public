@@ -47,7 +47,7 @@ Before you can use system-directed work sequencing, the feature must be turned o
 
 ### Make demo data available
 
-To work through the scenario by using the values that are presented in this topic, you must work on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity. The scenario uses warehouse *51* from the demo data.
+To work through the scenario by using the values that are presented in this article, you must work on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity. The scenario uses warehouse *51* from the demo data.
 
 > [!IMPORTANT]
 > Before you release the orders to the warehouse, make sure that the pick locations have enough inventory for all the items on the orders.
