@@ -1,11 +1,11 @@
 ---
 title: Update a legacy pipeline in Azure Pipelines
-description: This topic explains how to update a legacy pipeline in Azure Pipelines to use a newer version of Visual Studio.
+description: This article explains how to update a legacy pipeline in Azure Pipelines to use a newer version of Visual Studio.
 author: jorisdg
 ms.date: 09/23/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom:
 ms.search.region: Global
 ms.author: jorisde

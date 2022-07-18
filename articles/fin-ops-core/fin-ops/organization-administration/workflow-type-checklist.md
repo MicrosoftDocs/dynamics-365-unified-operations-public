@@ -2,7 +2,7 @@
 # required metadata
 
 title: Workflow type checklist
-description: This topic describes the steps that are required to create a new workflow type.
+description: This article describes the steps that are required to create a new workflow type.
 author: RobinARH
 ms.date: 06/19/2019
 ms.topic: article
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 202694
 ms.assetid: 33349e0d-d8ac-4d20-8f9b-5f85d4e01004
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 
@@ -31,7 +31,10 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the steps that are required to create a new workflow type. Workflow types are used to create configurations for a workflow.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+This article describes the steps that are required to create a new workflow type. Workflow types are used to create configurations for a workflow.
 
 ## Workflow type checklist
 

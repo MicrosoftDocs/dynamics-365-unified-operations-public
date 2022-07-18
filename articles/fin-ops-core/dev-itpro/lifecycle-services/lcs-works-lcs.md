@@ -1,11 +1,11 @@
 ---
 # required metadata
 
-title: Lifecycle Services (LCS) for Finance and Operations apps customers
-description: This topic describes Lifecycle Services (LCS) for Finance and Operations apps customers.
+title: Lifecycle Services (LCS) for finance and operations apps customers
+description: This article describes Lifecycle Services (LCS) for finance and operations apps customers.
 author: angelmarshall
 ms.date: 10/23/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -27,15 +27,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Lifecycle Services (LCS) for Finance and Operations apps customers
+# Lifecycle Services (LCS) for finance and operations apps customers
 
 [!include [banner](../includes/banner.md)]
 
-This topic is intended for customers who have signed up for the current versions of Finance and Operations apps. Partners who are working with customers to help them move through the lifecycle of their Lifecycle Services (LCS) project will also find this information useful. 
 
-## LCS workspace for the current versions of the Finance and Operations apps
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-When you sign up for the current versions of Finance and Operations apps, your subscription includes an Implementation project workspace. After you activate the service, the tenant administrator must sign in at <https://lcs.dynamics.com> by using the tenant account. The project workspace is automatically created for your organization. The workspace includes the following elements:
+This article is intended for customers who have signed up for the current versions of finance and operations apps. Partners who are working with customers to help them move through the lifecycle of their Lifecycle Services (LCS) project will also find this information useful. 
+
+## LCS workspace for the current versions of the finance and operations apps
+
+When you sign up for the current versions of finance and operations apps, your subscription includes an Implementation project workspace. After you activate the service, the tenant administrator must sign in at <https://lcs.dynamics.com> by using the tenant account. The project workspace is automatically created for your organization. The workspace includes the following elements:
 
 -   Enabled features, based on the offer that you selected
 -   Environments that are deployed and managed by Microsoft
@@ -66,7 +69,7 @@ When you've completed all the required tasks in a phase, you can click **Complet
 Descriptions can help you understand what is expected of you for a specific methodology task or phase. You can expand the methodology description to learn more about each task, and then collapse the description when you've finished. The task and phase history can tell you when a task or phase was completed or reopened. If you're a project manager, this information can help you stay on top of the high-level tasks that are required for your implementations. [![Expanded task history and methodology description.](./media/2.jpg)](./media/2.jpg)
 
 ## Subscription estimator
-You can use the Subscription estimator tool to evaluate your subscription requirements for the current versions of the Finance and Operations apps. To use Subscription estimator, download the usage profile, which is a Microsoft Excel workbook. Then, in the workbook, complete the following worksheets:
+You can use the Subscription estimator tool to evaluate your subscription requirements for the current versions of the finance and operations apps. To use Subscription estimator, download the usage profile, which is a Microsoft Excel workbook. Then, in the workbook, complete the following worksheets:
 
 -   Deployment details
 -   Instance Characteristics
@@ -77,7 +80,7 @@ After you've completed the worksheets, enter the data from the summary sheet int
 ## New deployment experience
 To provision your environment, you must to complete a configuration checklist. As you make progress through the methodology, environments become available to you. Click **Configure** to add deployment information. 
 
-![Configuration checklist.](https://msdnshared.blob.core.windows.net/media/2016/02/Capture1.jpg)]
+
 
 Because the information that you enter determines your experience, carefully review your input. After you've entered all the required information, sign-off is required for the deployment request. The user who completes the sign-off becomes the system administrator on the instance. Verify that the correct user completes the sign-off for the deployment. After the sign-off is completed, the Microsoft site reliability engagement team reviews the request. After the team has reviewed the information that you entered, it initiates the provisioning. If the information isn't correct, the team will contact you. After the provisioning is completed, the status is updated to indicate that the environment has been deployed, as shown in the following screenshot. If the provisioning takes longer than expected, the Microsoft site reliability engagement team reviews the status and takes appropriate actions. These actions might include contacting you. After the environment is provisioned, click **Full details** to open the **Detailed environment** page, where you can sign in to the system, view the monitoring status, or view relevant updates. 
 
@@ -85,3 +88,4 @@ Because the information that you enter determines your experience, carefully rev
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

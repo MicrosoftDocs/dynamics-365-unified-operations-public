@@ -2,8 +2,8 @@
 # required metadata
 
 title: Troubleshoot Planning Optimization
-description: This topic describes how to fix issues that you might encounter while working with Planning Optimization.
-author: ChristianRytt
+description: This article describes how to fix issues that you might encounter while working with Planning Optimization.
+author: t-benebo
 ms.date: 05/07/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2020-5-7
 ms.dyn365.ops.version: AX 10.0.9
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.9
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to fix common issues that you might encounter while working with Planning Optimization.
+This article describes how to fix common issues that you might encounter while working with Planning Optimization.
 
 ## Installation of the Planning Optimization add-in doesn't complete
 

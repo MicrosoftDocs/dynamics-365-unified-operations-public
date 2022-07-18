@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail statements
-description: This topic describes how statements are created and posted.
+description: This article describes how statements are created and posted.
 author: ashishmsft
 ms.date: 04/04/2017
 ms.topic: article

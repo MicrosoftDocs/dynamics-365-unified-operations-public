@@ -3,8 +3,8 @@
 
 title: View and evaluate the results of questionnaires
 description: This article explains how you can view and evaluate the results of questionnaires that respondents complete. 
-author: andreabichsel
-ms.date: 06/20/2017
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,19 +15,22 @@ ms.search.form: KMCollection, KMKnowledgeCollectorCollection, KMKnowledgeCollect
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 17444
 ms.assetid: 6570206a-b2c4-4025-8715-432fe6652b78
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 ---
 
 # View and evaluate the results of questionnaires
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -36,7 +39,7 @@ This article explains how you can view and evaluate the results of questionnaire
 After respondents complete a questionnaire, you can view and evaluate the questionnaire results in the following ways:
 
 -   **Completed answer sessions** – View details about the questionnaires that respondents have completed, and generate reports to summarize answers and any points that were earned.
--   **Result groups** – View result group details and statistics for questionnaires. Result group statistics can be generated for either a single answer session  of a questionnaire or all answer sessions.
+-   **Result groups** – View result group details and statistics for questionnaires. Result group statistics can be generated for either a single answer session of a questionnaire or all answer sessions.
 -   **Questionnaire statistics** – Specify criteria to calculate statistics for a specific group of respondents.
 
 You can also generate various reports to view results that are sorted by person, answer session, or result group. The following reports that are related to completed questionnaires are available:

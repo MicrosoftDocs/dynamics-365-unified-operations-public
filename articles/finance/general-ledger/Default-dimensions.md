@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial dimensions and posting 
-description: When you plan and set up your chart of accounts, you must consider how the various components will work together when you post a document or journal. These components include account structures, advanced rules, and balancing and fixed dimensions. This topic explains what each component is and how the components work together.
+description: When you plan and set up your chart of accounts, you must consider how the various components will work together when you post a document or journal. These components include account structures, advanced rules, and balancing and fixed dimensions. This article explains what each component is and how the components work together.
 author: aprilolson
 ms.date: 08/04/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: LedgerChartofAccounts,DimensionDetails
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-When you plan and set up your chart of accounts, you must consider how the various components will work together when you post a document or journal. These components include account structures, advanced rules, and balancing and fixed dimensions. This topic explains what each component is and how the components work together.
+When you plan and set up your chart of accounts, you must consider how the various components will work together when you post a document or journal. These components include account structures, advanced rules, and balancing and fixed dimensions. This article explains what each component is and how the components work together.
 
 ## Chart of accounts and financial dimension components
 
@@ -51,7 +51,7 @@ You can optionally define a balancing financial dimension. On the **Ledger** pag
 
 ### Default/fixed financial dimensions on the main account
 
-Default dimensions come from various places, such as master records (for example, customer or vendor records), document headers, and the main account. This topic focuses on default dimensions on the main account by legal entity. You can define whether a main account has a **Not fixed** or **Fixed** value for each financial dimension that is used across all account structures for the ledger. If a financial dimension is **Not fixed**, it uses a default value, but that value can be overwritten. This behavior applies to all default values in the system, even default values that come from master records. If a financial dimension is set to a **Fixed** value, that value is always applied, regardless of whether it came from somewhere as a default value or the user entered it.
+Default dimensions come from various places, such as master records (for example, customer or vendor records), document headers, and the main account. This article focuses on default dimensions on the main account by legal entity. You can define whether a main account has a **Not fixed** or **Fixed** value for each financial dimension that is used across all account structures for the ledger. If a financial dimension is **Not fixed**, it uses a default value, but that value can be overwritten. This behavior applies to all default values in the system, even default values that come from master records. If a financial dimension is set to a **Fixed** value, that value is always applied, regardless of whether it came from somewhere as a default value or the user entered it.
 
 ## Order in which default dimensions are applied during posting
 

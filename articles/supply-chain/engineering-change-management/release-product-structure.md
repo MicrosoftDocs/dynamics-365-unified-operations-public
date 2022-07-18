@@ -2,7 +2,7 @@
 # required metadata
 
 title: Release product structures
-description: This topic explains how you can release complete product structures in addition to releasing products together with their engineering versions. In this way, you can ensure that engineering-relevant product data can easily be reused in different legal entities.
+description: This article explains how you can release complete product structures in addition to releasing products together with their engineering versions. In this way, you can ensure that engineering-relevant product data can easily be reused in different legal entities.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg

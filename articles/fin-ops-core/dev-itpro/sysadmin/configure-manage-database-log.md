@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure database logging
-description: This topic describes how to set up database logging, how to manage security and performance, and how to clean up database logs.
+description: This article describes how to set up database logging, how to manage security and performance, and how to clean up database logs.
 author: hasaid
 ms.date: 03/11/2020
 ms.topic: article

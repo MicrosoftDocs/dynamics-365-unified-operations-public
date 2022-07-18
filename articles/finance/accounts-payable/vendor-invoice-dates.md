@@ -2,9 +2,9 @@
 # required metadata
 
 title: Vendor invoice dates
-description: This topic describes the dates that appear on vendor invoices. It also explains how to set up the system so that it automatically adjusts the posting date.
+description: This article describes the dates that appear on vendor invoices. It also explains how to set up the system so that it automatically adjusts the posting date.
 author: sunfzam
-ms.date: 08/30/2021
+ms.date: 2/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: "intro-internal"
 ms.assetid: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the dates that appear on vendor invoices. It also explains how to set up the system so that it automatically adjusts the posting date.
+This article describes the dates that appear on vendor invoices. It also explains how to set up the system so that it automatically adjusts the posting date.
 
 On the **Pending vendor invoice detailed** page, the invoice header shows four dates: the invoice received date, the invoice date, the posting date, and the due date. When a vendor invoice is created, the following dates are entered by default:
 
@@ -41,7 +41,7 @@ On the **Pending vendor invoice detailed** page, the invoice header shows four d
 
 Sometimes, a vendor invoice might be in a pending state for a long time after the period close. When it's ready for posting, the old posting date of the past posting period is still used. However, that period has now been closed. Therefore, an Accounts payable (AP) clerk must manually change all the posting dates to the new posting period for all pending invoices that were previously created.
 
-The feature that is described in this topic lets you set up the system so that it automatically adjusts the posting date according to business requirements.
+The feature that is described in this article lets you set up the system so that it automatically adjusts the posting date according to business requirements.
 
 ## Parameter for automatically adjusting the vendor invoice posting date
 
@@ -54,6 +54,9 @@ Follow these steps to enable the system to automatically adjust the posting date
     - **Always change posting date to system date** – The system automatically changes the posting date to the system date during posting.
     - **Change posting date to system date when posting date period is closed or on hold** – The system changes the posting date to the system date during posting, but only if the corresponding period of the posting date has a status of **Closed** or **On hold**.
     - **Change posting date to first day of new period when posting date period is closed or on hold** – The system changes the posting date to the first day of the new open period, but only if the corresponding period of the posting date has a status of **Closed** or **On hold**.
+
+> [!NOTE]
+> If the new posting date that was automatically adjusted is in a new fiscal year, the posting date of the invoice will not be updated. The user will receive an error "The fiscal year has changed. Please check and reenter the posting date." The invoice posting date must be updated to the new fiscal year date in order to post.
 
 ## Impact of posting date changes
 

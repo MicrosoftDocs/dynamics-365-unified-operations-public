@@ -1,14 +1,14 @@
 ---
 title: Safety stock fulfillment for items
-description: This topic discusses safety stock fulfillment and how to set up safety stock quantity for items. 
-author: thethehelga
+description: This article discusses safety stock fulfillment and how to set up safety stock quantity for items. 
+author: t-benebo
 ms.date: 8/23/2021
 ms.topic: article
 ms.search.form: ReqSafetyKey, ReqItemTableSetup, ReqItemJournalName, ReqItemTable, EcoResProductDetailsExtended, ReqSafetyKeyDefaultDataWizard
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-oldolg
+ms.author: benebotg
 ms.dyn365.ops.version: 7.3 
 ms.search.validFrom: 2017-12-31
 ---
@@ -83,7 +83,7 @@ If **Minimum keys** are used, select the **Minimum periods** check box to fulfil
 The following scenario shows how this parameter works and what are the differences between its values.
 
 > [!NOTE]
-> For all the illustrations in this topic, the x-axis represents inventory, the y-axis represents days, the bars represent the inventory level, the arrows represent transactions, such as sales order lines, purchase order lines, or planned orders.
+> For all the illustrations in this article, the x-axis represents inventory, the y-axis represents days, the bars represent the inventory level, the arrows represent transactions, such as sales order lines, purchase order lines, or planned orders.
 
 [![Common scenario for safety stock fulfillment.](media/Scenario1.png)](media/Scenario1.png)
 
@@ -184,5 +184,9 @@ Fulfilling the safety stock requirement transaction is deprioritized if the syst
 During the coverage phase of master planning, safety stock replenishment is no longer deprioritized. On-hand inventory can be used before any other demand types. During the delay calculation, new logic will be added to go over the delayed sales lines, BOM line requirements, and all the other demand types, to determine whether they could be delivered on time, provided that the safety stock is used. If the system identifies that it can minimize delays by using safety stock, then the sales lines or BOM lines will replace their initial coverage with the safety stock, and the system will trigger the replenishment for the safety stock instead.
 
 If the plan or the item is not set up for delayed calculation, then the safety stock constraint will have the same priority as any other demand types. This means there is a reserve of on-hand and other available inventory before other demand types.
+
+## Additional resources
+
+- [Use the safety stock journal to update minimum coverage for items](safety-stock-journal.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

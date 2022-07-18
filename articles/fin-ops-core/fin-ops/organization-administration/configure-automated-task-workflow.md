@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure automated tasks in a workflow
-description: This topic explains how to configure the properties for an automated task.
+description: This article explains how to configure the properties for an automated task.
 author: ChrisGarty
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to configure the properties for an automated task.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+This article explains how to configure the properties for an automated task.
 
 To configure an automated task in the workflow editor, right-click the task, and then click **Properties** to open the **Properties** page. Then use the following procedures to configure the properties for the automated task.
 

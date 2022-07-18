@@ -15,7 +15,7 @@ ms.search.form: CustCollectionsActivitiesListPage
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 14031
 ms.assetid: dcc6da2f-9af5-4f1d-abaa-b72967b66979
@@ -43,7 +43,7 @@ This article explains how to set up the collections functionality. You must comp
 - Outlook settings for those who use the **Collections** page
 - Email addresses
 
-These points are discussed in more detail throughout the rest of this topic. 
+These points are discussed in more detail throughout the rest of this article. 
 
 ## Set up aging period definitions
 

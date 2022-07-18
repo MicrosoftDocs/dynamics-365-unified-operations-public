@@ -2,7 +2,7 @@
 # required metadata
 
 title: System-directed work sequencing
-description: This topic provides information about system-directed work sequencing. This functionality lets you sort and filter the work orders that the system presents to users for execution. It's helpful in scenarios where additional criteria are required to drive the warehouse picking process.
+description: This article provides information about system-directed work sequencing. This functionality lets you sort and filter the work orders that the system presents to users for execution. It's helpful in scenarios where additional criteria are required to drive the warehouse picking process.
 author: Mirzaab
 ms.date: 07/03/2020
 ms.topic: article
@@ -15,7 +15,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab

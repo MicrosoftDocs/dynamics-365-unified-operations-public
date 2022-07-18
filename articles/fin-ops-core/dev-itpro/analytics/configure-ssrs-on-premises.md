@@ -2,11 +2,12 @@
 # required metadata
 
 title: Configure SQL Server Reporting Services for on-premises deployments
-description: This topic provides information about configuring SQL Server Reporting Services (SSRS) for an on-premises deployment.
+description: This article provides information about configuring SQL Server Reporting Services (SSRS) for an on-premises deployment.
 author: PeterRFriis
 ms.date: 06/23/2017
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
+ms.service:
 ms.technology: 
 
 # optional metadata
@@ -30,7 +31,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [banner](../includes/banner.md)]
 
-Use the steps in this topic to configure SQL Server Reporting Services (SSRS) for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment.
+Use the steps in this article to configure SQL Server Reporting Services (SSRS) for your Microsoft Dynamics 365 Finance + Operations (on-premises) deployment.
 
 1. Open the Reporting Services Configuration Manager application.
 2. Leave the default **Server name**, which should be the name of the current machine, and the **Report Server Instance**, **MSSQLSERVER**.

@@ -5,7 +5,7 @@ title: Employee and Manager self service overview
 description: This article provides an overview of the Employee and Manager self service workspace.
 author: twheeloc
 ms.date: 08/26/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ ms.search.form: HRMParameters, EssWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: ["51941", "intro-internal"]
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec
@@ -28,6 +28,9 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Employee and Manager self service overview
+
+
+[!INCLUDE [PEAP](../includes/peap-2.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -96,7 +99,7 @@ View and manage documents with the **Attachments** tile. You can manage all **Ex
 
 This section provides links to other **Employee self service** areas, similar to the **My Career Information** section.
 
-Sign up for benefits through the **Benefits** link. For more information about Benefits management, see [Benefits overview](hr-benefits-management-overview.md)
+Sign up for benefits through the **Benefits** link. For more information about Benefits management, see [Benefits overview](hr-benefits-management-overview.md).
 
 Under **Performance**, you can select **Performance journal** to create performance journal entries to use on both performance goals and reviews. You can select **Send feedback** to provide feedback for other employees within your organization. Depending on your organization's settings, emails might be sent to the recipient, sender, and managers. You can send feedback to all employees within the organization. Sending feedback isn't restricted by company.
 

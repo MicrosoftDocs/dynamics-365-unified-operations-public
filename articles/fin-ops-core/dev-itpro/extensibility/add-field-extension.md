@@ -1,6 +1,6 @@
 ---
 title: Add fields to tables through extension
-description: This topic describes how to use a table extension to add a field to a table.
+description: This article describes how to use a table extension to add a field to a table.
 author: ivanv-microsoft
 ms.date: 06/20/2017
 ms.topic: article
@@ -12,7 +12,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 

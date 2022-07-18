@@ -2,7 +2,7 @@
 # required metadata
 
 title: New GSTR Offline Tool for ANX-1 and Purchase Register
-description: This topic provides information about how to generate GSTR offline return format ANX-1 and the Purchase Register according to the new prototype that was released by the government.
+description: This article provides information about how to generate GSTR offline return format ANX-1 and the Purchase Register according to the new prototype that was released by the government.
 author: prabhatb
 ms.date: 03/02/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -40,7 +40,7 @@ Based on the details that are uploaded in GST ANX-1, and the actions that the ta
 
 The Goods and Services Tax Network (GSTN) has released a trial version of the New Returns Offline Tool for Form GST ANX-1, Form GST ANX-2 (the Matching Tool is built in), and a template for the Purchase Register. The Purchase Register is used to import Purchase Register data so that it can be matched with GST ANX-2 data.
 
-This topic provides information about how to set up and use Microsoft Dynamics 365 Finance to generate comma-separate values (CSV) files by using the New GSTR Offline Tool. It includes information about how to import the configuration, generate GST ANX-1, and generate the Purchase Register.
+This article provides information about how to set up and use Microsoft Dynamics 365 Finance to generate comma-separate values (CSV) files by using the New GSTR Offline Tool. It includes information about how to import the configuration, generate GST ANX-1, and generate the Purchase Register.
 
 Generated GST ANX-1 and Purchase register reports are supported in the following version:
 

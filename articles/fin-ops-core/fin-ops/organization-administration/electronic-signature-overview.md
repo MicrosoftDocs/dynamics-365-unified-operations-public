@@ -5,7 +5,7 @@ title: Electronic signatures overview
 description: This article provides an overview of electronic signatures and describes how they can be used.
 author: maertenm
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 

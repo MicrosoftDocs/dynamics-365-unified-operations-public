@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Russian address formats
-description: This topic provides information about Russian address formats and importing from the FIAS.
+description: This article provides information about Russian address formats and importing from the FIAS.
 author: v-nadyuz
 ms.date: 11/05/2019
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1
 
 Address formats determine how address data will appear when it's printed. In the system, you can set up address formats for every country or region where business is done. In Russia, addresses have a standardized form. However, additional information can be included, such as the district, street code, building complement, building, apartment, group of houses, group of flats, and land plot.
 
-The Federal Informational Address System (or FIAS) address database might be required for businesses in the Russian Federation. You can use specialized tools to import FIAS into your system and keep it up to date. This topic explains how to set up and use the FIAS import mechanisms.
+The Federal Informational Address System (or FIAS) address database might be required for businesses in the Russian Federation. You can use specialized tools to import FIAS into your system and keep it up to date. This article explains how to set up and use the FIAS import mechanisms.
 
 ## Set up Russian address formats
 

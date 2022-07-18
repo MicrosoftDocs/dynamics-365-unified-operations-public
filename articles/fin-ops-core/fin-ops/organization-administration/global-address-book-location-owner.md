@@ -2,7 +2,7 @@
 # required metadata
 
 title: Global address book and location owners
-description: This topic describes location owners and explains how to change the owner in the global address book.
+description: This article describes location owners and explains how to change the owner in the global address book.
 author: jaredha
 ms.date: 08/16/2021
 ms.topic: article

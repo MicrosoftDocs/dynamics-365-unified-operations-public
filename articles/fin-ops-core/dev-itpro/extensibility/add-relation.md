@@ -1,7 +1,7 @@
 ---
 
 title: Add relations to tables through extension
-description: This topic explains how to add a relation to a table.
+description: This article explains how to add a relation to a table.
 author: ivanv-microsoft
 ms.date: 04/04/2019
 ms.topic: article
@@ -13,7 +13,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 

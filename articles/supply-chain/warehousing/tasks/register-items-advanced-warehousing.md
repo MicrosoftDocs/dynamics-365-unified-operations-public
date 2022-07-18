@@ -1,8 +1,8 @@
 --- 
 # required metadata 
  
-title: Register items for an advanced warehousing enabled item using an item arrival journal
-description: This topic presents a scenario that shows how to register items using the item arrival journal when you are using advanced warehouse management processes. 
+title: Register items enabled for warehouse management processes using an item arrival journal
+description: This article presents a scenario that shows how to register items using the item arrival journal when you are using warehouse management processes (WMS). 
 author: Mirzaab
 ms.date: 03/24/2021
 ms.topic: business-process 
@@ -23,11 +23,11 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
-# Register items for an advanced warehousing enabled item using an item arrival journal
+# Register items enabled for warehouse management processes using an item arrival journal
 
 [!include [banner](../../includes/banner.md)]
 
-This topic presents a scenario that shows how to register items using the item arrival journal when you are using advanced warehouse management processes. This would usually be done by a receiving clerk.
+This article presents a scenario that shows how to register items using the item arrival journal when you are using warehouse management processes (WMS). This would usually be done by a receiving clerk.
 
 ## Enable sample data
 
@@ -38,7 +38,7 @@ You can instead work through this scenario by substituting values from your own 
 - You must have a confirmed purchase order with an open purchase order line.
 - The item on the line must be stocked. It must not use product variants, and must not have tracking dimensions.
 - The item must be associated with a storage dimension group that has warehouse management process enabled.
-- The warehouse that's used must be enabled for warehouse management processes and the location that you use for receiving must be license plate controlled.
+- The warehouse that's used must be enabled for WMS and the location that you use for receiving must be license plate controlled.
 
 ## Create an item arrival journal header that uses warehouse management
 

@@ -1,11 +1,11 @@
 ---
 title: System requirements and prerequisites
-description: This topic describes the system requirements and prerequisites that must be in place before you can enable dual-write for Finance and Operations apps.
+description: This article describes the system requirements and prerequisites that must be in place before you can enable dual-write for finance and operations apps.
 author: NHelgren
-ms.date: 08/18/2021
+ms.date: 02/09/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
@@ -16,26 +16,33 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 ## What regions are available?
 
 Currently, we support dual-write in the following regions:
-    
-   + Asia
-   + Australia
-   + Canada
-   + Europe
-   + India
-   + Japan
-   + South America
-   + United Arab Emirates
-   + United Kingdom
-   + United States
+
++ Asia
++ Australia
++ Brazil
++ Canada
++ Europe
++ France
++ India
++ Japan
++ South America
++ Switzerland
++ United Arab Emirates
++ United Kingdom
++ United States
+
+
+> [!NOTE]
+> There are currently no plans to support any additional regions.
 
 ## Verify requirements and grant access
 
-Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a Finance and Operations app environment to a Dataverse environment.
+Before you enable dual-write, follow these steps to make sure that you meet the minimum system requirements and to grant access to the apps that must connect to each other. The dual-write health check validates the prerequisites as you complete the dual-write wizard to link a finance and operations app environment to a Dataverse environment.
 
 You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environment, as shown in the following image. Alternatively, you can choose a customer engagement app environment that comes with Dataverse and already has **Enable Dynamics 365 apps** set to **Yes**.
 
@@ -43,13 +50,13 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
 1. Validate the platform update and app version.
 
-    Make sure that your Finance and Operations app environment is running Platform update 33 (app version 10.0.9) or later.
+    Make sure that your finance and operations app environment is running Platform update 33 (app version 10.0.9) or later.
 
     **Related health check result:**
 
     *App version is up to date*
 
-    *Dual Write is supported on Finance and Operations app environments with Platform Update PU 33 (App version 10.0.9) or above*
+    *Dual Write is supported on finance and operations app environments with Platform Update PU 33 (App version 10.0.9) or above*
 
 2. Install the dual-write core solution.
 
@@ -68,11 +75,11 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
     *The dual-write core solution contains metadata for your table maps and must be installed in the environment*
 
-3. Grant Dataverse access so that it can connect to a Finance and Operations app.
+3. Grant Dataverse access so that it can connect to a finance and operations app.
 
-    1. Open your instance of the Finance and Operations app, search and navigate to Azure Active Directory applications.
+    1. Open your instance of the finance and operations app, search and navigate to Azure Active Directory applications.
 
-    2. Select **New** to add a new client ID row: **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452**. This row is the application ID for an app that will be used to connect from Dataverse to the Finance and Operations app.
+    2. Select **New** to add a new client ID row: **6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452**. This row is the application ID for an app that will be used to connect from Dataverse to the finance and operations app.
     3. Repeat the previous two steps to add another client ID row: **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
 
     When you've finished, follow these steps to refresh the list of tables:
@@ -81,62 +88,41 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     2. Go to **Workspaces \> Data management**, and select the **Framework parameters** tile. Then, on the **Entity settings** tab (`https://<BaseFinanceandOperationsappsURL>/?cmp=USMF&mi=DM_DataManagementWorkspaceMenuItem&TableName=DMFDefinitionGroupEntity`), select **Refresh entity list**.
 
     **Related health check result:**<br>
-    *The Dataverse can connect to the Finance and Operations app*<br>
+    *The Dataverse can connect to the finance and operations app*<br>
     *Before you can enable dual-write, you must grant access to the apps to connect to each other<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452 exists<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
 
-4. Grant a Finance and Operations app access so that it can connect to Dataverse.
+4. Grant a finance and operations app access so that it can connect to Dataverse. Follow the steps in [Create an application user](/power-platform/admin/manage-application-users#create-an-application-user), using the following information for applications IDs and security roles.
 
-    1. In Power Apps, select the **Settings** button (gear symbol) in the upper-right corner, go to **Advanced settings \> Security**, and then select **Users**.
+    + **Applications**: Add users to these applications:
 
-        ![Users.](media/selecting-users.png)
+        + 00000015-0000-0000-c000-000000000000
+        + 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b
 
-    2. Use the drop-down menu to change the view from **Enabled Users** to **Application Users**.
+    + **Security roles**: Select a preconfigured **Security Role** to grant a **Read** privilege with a **User** scope for each table integrated through dual-write.
 
-        ![Switching to the Application users view.](media/selecting-application-users.png)
+        >[!NOTE]
+        > Company and currency exchange tables are global in nature and all dual-write users require read access to these 2 tables.
+        > All dual-write users will need to be added to the **Dual-Write App User** security role.
+        > In order to allow non-administrator users to create rows in a dual-write enabled table, they will need to be assigned the **Dual-Write Runtime User** security role.
 
-    3. Create a new user, and then, on the **User** menu, select **Application User**.
+        For instructions on how to create a Security Role, see [Create or configure a custom security role](/power-platform/admin/database-security#create-or-configure-a-custom-security-role).
 
-        ![Switching to Application user.](media/create-new-user.png)
-
-    4. In the **Application ID** column, enter **00000015-0000-0000-c000-000000000000**. This application ID is for a Finance and Operations app and will enable the app to connect to Dataverse. When you've finished, follow the prompts to fill in the other columns, and then save the user account.
-
-        ![Entering the application ID.](media/add-application-id.png)
-
-    5. Provide a primary email address.
-    6. Select **Manage Roles**, and then, in the **Manage User Roles** dialog box, select the **System Administrator** check box to provide system admin rights to the selected application user.
-
-        ![Assigning the System Administrator role.](media/manage-user-roles.png)
-
-    7. Go to **Dynamics 365 \> Settings \> Security**, select **Teams**, and then change the view to **All Owner Teams**.
-    8. Select **default team for the root Business Unit**, select **Manage Roles**, and then, in the **Manage Team Roles** dialog box, select a preconfigured **Security Role** to grant a **Read** privilege with a **User** scope for each table integrated through dual-write. 
-    
-    >[!NOTE]
-    > Company and currency exchange tables are global in nature and all dual-write users require read access to these 2 tables.
-    > All dual-write users will need to be added to the **Dual-Write App User** security role.
-    > In order to allow non-administrator users to create rows in a dual-write enabled table, they will need to be assigned the **Dual-Write Runtime User** security role.
-
-      For instructions on how to create a Security Role, see [Create or configure a custom security role](/power-platform/admin/database-security#create-or-configure-a-custom-security-role).
-      
-      > [!NOTE]
-      > The root business unit’s default team will become the default owner for all rows integrated through dual-write.
-      > Because that team must be assigned a security role, this means that all users in the root business unit will inherit the security role.
-      > This means that at the very least, **users from that business unit will have read access to all the rows that are owned by that team**. If this isn’t the desired behavior, make sure that users are not a member of the root business unit.
-
-    9. Repeat the previous five steps for application ID **2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b**.
-
-        ![Assigning the application ID.](media/assign-application-id.png)
+        > [!NOTE]
+        > The root business unit’s default team will become the default owner for all rows integrated through dual-write.
+        > Because that team must be assigned a security role, this means that all users in the root business unit will inherit the security role.
+        > This means that at the very least, **users from that business unit will have read access to all the rows that are owned by that team**. If this isn’t the desired behavior, make sure that users are not a member of the root business unit.
 
     **Related health check result:**<br>
-    *The Finance and Operations app can connect to the Dataverse*<br>
+    *The finance and operations app can connect to the Dataverse*<br>
     *Before you can enable dual-write, you must grant access to the apps to connect to each other<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 00000015-0000-0000-c000-000000000000 exists<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
 
 5. Provide app consent in the tenant.
    For dual-write core solution version 1.0.16.0 or above, this step is no longer needed.
-        
+
     **Related health check result:**<br>
     *Apps in tenant*<br>
     *The required dual-write applications need to be installed in the tenant.<br>
@@ -185,7 +171,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
 9. Provide the supported tenant configuration.
 
-    Make sure that the Finance and Operations app and Dataverse are installed under the same tenant. Cross-tenant scenarios aren't currently supported.
+    Make sure that the finance and operations app and Dataverse are installed under the same tenant. Cross-tenant scenarios aren't currently supported.
 
     > [!NOTE]
     > For dual-write core solution versions lower than 1.0.16.0, see the following section for modifications and additional steps. 
@@ -201,7 +187,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
     2. Select **Accept**.
 
-        By selecting **Accept**, you indicate that you're providing consent to install the app that has application ID **33976c19-1db5-4c02-810e-c243db79efde** in your tenant. Dataverse requires this app to communicate with the Finance and Operations app.
+        By selecting **Accept**, you indicate that you're providing consent to install the app that has application ID **33976c19-1db5-4c02-810e-c243db79efde** in your tenant. Dataverse requires this app to communicate with the finance and operations app.
 
     
     **Related health check result:**<br>
@@ -215,3 +201,4 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 [Use the dual-write wizard to link your environments](link-your-environment.md)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

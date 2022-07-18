@@ -3,9 +3,9 @@
 
 title: Sales and marketing overview
 description: You can use Sales and marketing to obtain, store, and use various types of data in the sales flow. This data includes the original sales initiative, future follow-up action, and additional sales.
-author: kfend
+author: Henrikan
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -21,7 +21,7 @@ ms.custom: ["92303", "intro-internal"]
 ms.assetid: 65ca9992-bbfa-4224-bf0e-067a25c7e6a4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kfend
+ms.author: henrikan
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -127,7 +127,7 @@ A pro forma invoice is an invoice that is prepared as an estimate of the actual 
 #### Blogs
 
 You can find an overview of a sales process in the post
-[How sales work in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
+[How sales work in Dynamics 365 Finance and Operations](https://financefunction.tech/2018/05/15/how-sales-work-in-dynamics-365-for-finance-and-operations).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

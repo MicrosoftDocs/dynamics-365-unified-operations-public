@@ -2,10 +2,10 @@
 # required metadata
 
 title: Copy configuration data between companies or legal entities overview
-description: This topic describes how to use a data project and data templates to move configuration data for a company or legal entity between app instances.
-author: mikefalkner
+description: This article describes how to use a data project and data templates to move configuration data for a company or legal entity between app instances.
+author: Peakerbl
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -20,7 +20,7 @@ ms.reviewer: sericks
 ms.custom: ["77523", "intro-internal"]
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: peakerbl
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Platform update 7
 
@@ -29,7 +29,10 @@ ms.dyn365.ops.version: Platform update 7
 
 [!include [banner](../includes/banner.md)]
 
-There are two options for copying configuration data in Finance and Operations:
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+There are two options for copying configuration data in finance and operations:
 
 - To move data between instances, you must first export it from one company and then import it to another company.
 - To move data from one legal entity to another legal entity in the same instance, you can use the **Copy into legal entity** feature.
@@ -243,7 +246,7 @@ To copy a configuration from one legal entity to another legal entity in the sam
     - **Create** – Enter the legal entity ID, the legal entity name, and the region that the legal entity belongs in. Then select **Create legal entity**. The legal entity is created and added to the list of destination legal entities.
 
     > [!NOTE]
-    > The functionality for creating destination legal entities is available in Finance and Operations 7.2.3.
+    > The functionality for creating destination legal entities is available in finance and operations 7.2.3.
 
 7. After you've added the destination legal entities, select **Yes** if the number sequences should be copied. The entities that are required in order to copy the number sequence codes and number sequence references will be added to the project. The execution unit, level, and sequence number for these entities are set to the numbers in the default System and Shared templates. If you aren't using the default templates, adjust the entity sequences so that they are first in the list.
 8. If you selected **Yes** for number sequences, select **Yes** or **No** to specify whether those number sequences should be reset to the smallest value.
@@ -346,3 +349,4 @@ When you add entities, the mappings are created in the context of the country or
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

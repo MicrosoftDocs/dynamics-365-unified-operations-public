@@ -2,7 +2,7 @@
 # required metadata
 
 title: Adjust an ER format to generate a custom electronic document
-description: This topic explains how to adjust a Microsoft-provided Electronic reporting (ER) format so that it generates a custom electronic document.
+description: This article explains how to adjust a Microsoft-provided Electronic reporting (ER) format so that it generates a custom electronic document.
 author: NickSelin
 ms.date: 06/22/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include[banner](../includes/banner.md)]
 
-The procedures in this topic explain how a user in the System Administrator or Electronic Reporting Functional Consultant role can perform these tasks:
+The procedures in this article explain how a user in the System Administrator or Electronic Reporting Functional Consultant role can perform these tasks:
 
 - Configure parameters for the [Electronic reporting (ER) framework](general-electronic-reporting.md).
 - Import ER configurations that are provided by Microsoft and used to generate a payment file while a [vendor payment](../../../finance/cash-bank-management/tasks/vendor-payment-overview.md) is being processed.
@@ -159,9 +159,9 @@ To add the standard ER configurations to your current instance of Microsoft Dyna
 3. On the **Configurations** page, in the configuration tree in the left pane, expand **Payment model**.
 4. Notice that, in addition to the selected **BACS (UK)** ER format, other required ER configurations were imported. Make sure that the following ER configurations are available in the configuration tree:
 
-    - **Payment model** – This configuration contains the [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that represents the data structure of the payment business domain.
-    - **Payment model mapping 1611** – This configuration contains the [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that describes how the data model is filled in with application data at runtime.
-    - **BACS (UK)** – This configuration contains the [format](general-electronic-reporting.md#FormatComponentOutbound) and format mapping ER components. The format component specifies the report layout. The format mapping component contains the model data source and specifies how the report layout is filled in by using this data source at runtime.
+    - **Payment model** – This configuration contains the data model ER component that represents the data structure of the payment business domain.
+    - **Payment model mapping 1611** – This configuration contains the model mapping ER component that describes how the data model is filled in with application data at runtime.
+    - **BACS (UK)** – This configuration contains the format and format mapping ER components. The format component specifies the report layout. The format mapping component contains the model data source and specifies how the report layout is filled in by using this data source at runtime.
 
 ![Configurations page with specified ER configurations available in the tree.](./media/er-quick-start2-imported-solution1.png)
 

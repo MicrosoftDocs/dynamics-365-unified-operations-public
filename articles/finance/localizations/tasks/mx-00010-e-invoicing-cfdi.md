@@ -2,7 +2,7 @@
 # required metadata 
  
 title: E-invoicing CFDI
-description: This topic walks you through creating and posting a customer invoice as an electronic invoice by using the CFDI method. 
+description: This article walks you through creating and posting a customer invoice as an electronic invoice by using the CFDI method. 
 author: sndray
 ms.date: 08/03/2021
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic walks you through creating and posting a customer invoice as an electronic invoice by using the CFDI method. You can create and post multiple sales orders as electronic invoices and send the .pdf and .xml files as email attachments to customers. This task can only be completed if you are logged into a legal entity with a primary address in Mexico. This task uses the MXMF demo company data.
+This article walks you through creating and posting a customer invoice as an electronic invoice by using the CFDI method. You can create and post multiple sales orders as electronic invoices and send the .pdf and .xml files as email attachments to customers. This task can only be completed if you are logged into a legal entity with a primary address in Mexico. This task uses the MXMF demo company data.
 
 > [!NOTE] 
 > Customer invoices that are created by using a general ledger journal aren't included among the CFDI-Accounts Receivable electronic invoices that are found at **Accounts receivable** \> **Inquiries and reports** \> **CFDI (electronic invoices)**.

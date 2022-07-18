@@ -2,7 +2,7 @@
 # required metadata
 
 title: Module configuration presets
-description: This topic covers module configuration presets and how to configure them in Microsoft Dynamics 365 Commerce.
+description: This article covers module configuration presets and how to configure them in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 04/23/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers module configuration presets and how to configure them in Microsoft Dynamics 365 Commerce.
+This article covers module configuration presets and how to configure them in Microsoft Dynamics 365 Commerce.
 
 Module configuration presets are default values that are used in Commerce site builder. These values are needed when configuration values are not set at the template or layout level.
 
@@ -45,7 +45,7 @@ Themes can contain module configuration preset files that are used when a theme 
 
 ## JSON preview file structure
 
-The JSON preview file is configured similar to a [module mock file](module-mock-file.md), except for images (see the note later in this topic) and the **id** must be set to the module name. Here's an example of a JSON preview file.
+The JSON preview file is configured similar to a [module mock file](module-mock-file.md), except for images (see the note later in this article) and the **id** must be set to the module name. Here's an example of a JSON preview file.
 
 ```json
 {

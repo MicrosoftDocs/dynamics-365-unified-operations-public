@@ -2,7 +2,7 @@
 # required metadata
 
 title: Learning Power BI content
-description: This topic describes the Learning Power BI content. 
+description: This article describes the Learning Power BI content. 
 author: jcart1106 
 ms.date: 12/19/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: kfend
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the **Learning** Microsoft Power BI content.
+This article describes the **Learning** Microsoft Power BI content.
 
 ## Reports that are included in the Power BI content
 

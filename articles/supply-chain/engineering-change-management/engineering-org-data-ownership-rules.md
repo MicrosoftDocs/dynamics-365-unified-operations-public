@@ -2,7 +2,7 @@
 # required metadata
 
 title: Engineering companies and data ownership rules
-description: This topic explains how you can use one or more engineering companies to ensure that the master data for products is centrally created and maintained. An engineering company represents the company that owns the engineering products and its engineering-relevant data.
+description: This article explains how you can use one or more engineering companies to ensure that the master data for products is centrally created and maintained. An engineering company represents the company that owns the engineering products and its engineering-relevant data.
 author: t-benebo
 ms.date: 09/28/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg

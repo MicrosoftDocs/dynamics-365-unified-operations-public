@@ -2,7 +2,7 @@
 # required metadata
 
 title: Custom Filter Group subpattern
-description: This topic provides information about the Custom Filter Group subpattern.
+description: This article provides information about the Custom Filter Group subpattern.
 author: jasongre
 ms.date: 04/22/2020
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 28231
 ms.assetid: 1838c10d-9172-4853-aa49-17710adf8bc1

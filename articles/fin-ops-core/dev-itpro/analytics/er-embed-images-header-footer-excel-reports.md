@@ -2,7 +2,7 @@
 # required metadata
 
 title: Design an ER format to generate a report in Excel format with embedded images in page headers or footers
-description: This topic explains how to use Electronic reporting (ER) to generate business documents that have images and shapes embedded in page headers or footers.
+description: This article explains how to use Electronic reporting (ER) to generate business documents that have images and shapes embedded in page headers or footers.
 author: NickSelin
 ms.date: 08/11/2021
 ms.topic: article
@@ -31,14 +31,14 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how a user in the System Administrator or Electronic Reporting Functional Consultant role can perform these tasks:
+This article explains how a user in the System Administrator or Electronic Reporting Functional Consultant role can perform these tasks:
 
 - Configure parameters for the [Electronic reporting (ER)](general-electronic-reporting.md) framework.
 - Import ER [configurations](general-electronic-reporting.md#Configuration) that are [provided](general-electronic-reporting.md#Provider) by Microsoft and used to generate [free text invoices](../../../finance/accounts-receivable/create-free-text-invoice-new.md), based on a [template](er-fillable-excel.md#excel-file-component) in Microsoft Excel format.
 - Create a [custom (derived)](general-electronic-reporting.md#building-a-format-selecting-another-format-as-a-base-customization) version of a standard ER format configuration that is provided by Microsoft.
 - Modify the custom ER format configuration so that it generates a free text invoice report that has a company logo image in the footer.
 
-The procedures in this topic can be completed in the **USMF** company. No coding is required. Before you begin, download and save the following file.
+The procedures in this article can be completed in the **USMF** company. No coding is required. Before you begin, download and save the following file.
 
 | Description        | File name |
 |--------------------|-----------|
@@ -158,9 +158,9 @@ To add the standard ER configurations to your current instance of Dynamics 365 F
 3. On the **Configurations** page, in the configuration tree in the left pane, expand **Invoice model**.
 4. In addition to the selected **Free text invoice (Excel)** ER format, other required ER configurations were imported. Make sure that the following ER configurations are available in the configuration tree:
 
-    - **Invoice model** – This configuration contains the [data model](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that represents the data structure of the invoicing business domain.
-    - **Invoice model mapping** – This configuration contains the [model mapping](general-electronic-reporting.md#data-model-and-model-mapping-components) ER component that describes how the data model is filled in with application data at runtime.
-    - **Free text invoice (Excel)** – This configuration contains the [format](general-electronic-reporting.md#FormatComponentOutbound) and format mapping ER components. The format component specifies the report layout, based on a template in Excel format. The format mapping component contains the model data source and specifies how this data source is used to fill in the report layout at runtime.
+    - **Invoice model** – This configuration contains the data model ER component that represents the data structure of the invoicing business domain.
+    - **Invoice model mapping** – This configuration contains the model mapping ER component that describes how the data model is filled in with application data at runtime.
+    - **Free text invoice (Excel)** – This configuration contains the format and format mapping ER components. The format component specifies the report layout, based on a template in Excel format. The format mapping component contains the model data source and specifies how this data source is used to fill in the report layout at runtime.
 
 ![Imported ER configurations on the Configurations page.](./media/er-embed-images-header-footer-excel-reports-imported-solution.png)
 

@@ -1,10 +1,10 @@
 ---
 # required metadata
 title: Feature management overview
-description: This topic describes the Feature management feature and how you can use it.
+description: This article describes Feature management and how you can use it.
 author: Peakerbl
-ms.date: 09/13/2021
-ms.topic: article
+ms.date: 01/10/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ audience: IT Pro, Application user
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: peakerbl
@@ -26,6 +26,9 @@ ms.dyn365.ops.version: 10.0.2
 # Feature management overview
 
 [!include [banner](../../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
 Features are added and updated in every release. The Feature management experience provides a workspace where you can view a list of features that have been delivered in each release. You can then use the workspace to view feature documentation, and to enable or disable features.
 
@@ -39,7 +42,7 @@ The feature list includes the following information:
 - **Status** – A symbol indicates whether a feature is turned on (check mark), is turned off (blank), is scheduled to be turned on (clock), is mandatory (lock), requires attention before you turn it on (warning symbol), or can't be turned on (X). The setting that is shown is used for all legal entities. Note that even when a feature has been turned on, it's still controlled by security. Therefore, the feature will be available only to users who have access to it based on their security role. It will also be available only in legal entities that the user has access to.
 - **Enable date** – The date when the feature was turned on or is scheduled to be turned on.
 - **Feature added** – The date when the feature was added to your environment. This date is automatically entered when you update your environment during the monthly release cycles.
-- **Feature state** – The current lifecycle state of the feature: **Preview**, **Released** (shown as blank), **On by default**, and **Mandatory**. The states are covered in more details later in this topic. 
+- **Feature state** – The current lifecycle state of the feature: **Preview**, **Released** (shown as blank), **On by default**, and **Mandatory**. The states are covered in more details later in this article. 
 - **Module** – The module that is affected by the new feature.
 
 > [!NOTE]
@@ -70,14 +73,14 @@ The **Feature state** column for these features is blank. Features that are init
 
 ### On by default features (optional)
 
-Features that are updated to **On by default** are turned on by default, but they can be disabled. After features that can be disabled have been in the **Released** state for at least six months, they are expected to move to this state in the next major release. Features that transition to **On by default** are expected to be communicated in the [What's new](../whats-new-changed.md) topic for the release. The update is initiated by the owning product team.
+Features that are updated to **On by default** are turned on by default, but they can be disabled. After features that can be disabled have been in the **Released** state for at least six months, they are expected to move to this state in the next major release. Features that transition to **On by default** are expected to be communicated in the [What's new](../whats-new-changed.md) article for the release. The update is initiated by the owning product team.
 
 > [!NOTE]
 > Because these features will be enabled automatically, it's important that you determine whether your organization is ready to uptake these features, or whether more time is required. If more time is required, it might be necessary to temporarily disable these features. Note that the transition of a feature to **On by default** is typically done in the major release before the feature is targeted to become **Mandatory**. At that point, you won't have the option to disable the feature. 
 
-### Released features (mandatory)
+### Mandatory
 
-**Released** is the final state for features. It indicates that the features are turned on, and that you can't disable them without contacting Microsoft. Optional features are expected to become mandatory after two major releases. Critical features can, by exception, be introduced as mandatory.
+**Mandatory** is the expected final state for features. It indicates that the features are turned on, and that you can't disable them without contacting Microsoft. Optional features are expected to become mandatory after two major releases. Critical features can, by exception, be introduced as mandatory.
 
 ## Example of expected feature lifecycles
 

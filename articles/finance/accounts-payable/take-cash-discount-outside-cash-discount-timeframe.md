@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 14301
 ms.assetid: bad10b7f-e550-4742-9261-8a094c9c624d

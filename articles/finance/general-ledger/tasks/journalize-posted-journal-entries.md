@@ -4,7 +4,7 @@
 title: Journalize posted journal entries
 description: This procedure shows how to journalize posted journal entries. 
 author: aprilolson
-ms.date: 08/09/2019
+ms.date: 03/09/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: LedgerParameters, SysQueryForm   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -27,19 +27,18 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure shows how to journalize posted journal entries. This procedure uses the USMF demo data company.
+The journalize process in the general ledger provides a way to group and report on posted voucher entries for your general ledger. Based on the criteria that you provide, the processing generates a list of vouchers that use a unique number sequence and that have the general ledger **Journal number** value as a reference.
 
-1. In the **Navigation pane**, go to **Modules > General ledger > Ledger setup > General ledger parameters**.
-2. The **Extended ledger journal** field can be set to Yes or No. If Yes, the report output will be different.
-3. Select whether the period can be closed if the journalizing process hasn't been run. If this option is set to Yes, the period cannot be closed until the journalizing process has been completed for that period.  
+Follow these steps to journalize posted journal entries. This procedure uses the **USMF** demo data company.
+
+1. Go to **General ledger** \> **Ledger setup** \> **General ledger parameters**.
+2. In the **Extended ledger journal** field, select a value. If you select **Yes**, the report output will be different.
+3. Select whether the period can be closed if the journalizing process hasn't been run. If you select **Yes**, the period can't be closed until the journalizing process has been completed for that period.
 4. Close the page.
-5. In the **Navigation pane**, go to **Modules > General ledger > Periodic tasks > Journalizing**.
-6. Click **Filter**.
-7. Highlight the row with the filter criteria that you want to define.
-8. In the **Criteria** field, enter or select the filter criteria..
-9. Click **OK** to close the filter page.
-10. Click **OK** to start the journalizing process. A report will be generated after the process is complete.  
-
-
+5. Go to **General ledger** \> **Periodic tasks** \> **Journalizing**, and select **Filter**.
+6. Select the row for the filter criteria that you want to define.
+7. In the **Criteria** field, enter or select the filter criteria.
+8. Select **OK** to close the page.
+9. Select **OK** to start the journalizing process. A report will be generated after the process is completed.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

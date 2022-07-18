@@ -2,7 +2,7 @@
 # required metadata
 
 title: VALUEINLARGE ER function
-description: This topic provides information about how the VALUEINLARGE Electronic reporting (ER) function is used.
+description: This article provides information about how the VALUEINLARGE Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 08/17/2020
 ms.prod: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-The `VALUEINLARGE` function determines whether the specified input of the *Int64* or *Integer* type matches any value of a specified item in the specified list. The function returns a *Boolean* value of **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list. Otherwise, it returns a *Boolean* value of **FALSE**. To understand the difference with the `VALUEIN` function, see the [Usage note](#usage_note) section later in this topic.
+The `VALUEINLARGE` function determines whether the specified input of the *Int64* or *Integer* type matches any value of a specified item in the specified list. The function returns a *Boolean* value of **TRUE** if the specified input matches the result of running the specified expression for at least one record of the specified list. Otherwise, it returns a *Boolean* value of **FALSE**. To understand the difference with the `VALUEIN` function, see the [Usage note](#usage_note) section later in this article.
 
 ## Syntax
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Activate Storno accounting for Poland
-description: This topic provides information about storno accounting for Poland.
+description: This article provides information about storno accounting for Poland.
 author: ShylaThompson
 ms.date: 09/11/2018
 ms.topic: article

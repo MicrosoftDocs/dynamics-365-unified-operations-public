@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work with the Electronic messages functionality
-description: This topic provides information about how to work with the Electronic messages (EM) functionality.
+description: This article provides information about how to work with the Electronic messages (EM) functionality.
 author: liza-golub
 ms.date: 07/07/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global

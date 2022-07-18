@@ -2,8 +2,8 @@
 # required metadata
 
 title: Fixed assets roll forward report
-description: This topic explains how to use the Fixed assets roll forward report.
-author: saraschi2
+description: This article explains how to use the Fixed assets roll forward report.
+author: moaamer
 ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 23021
 ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: saraschi
+ms.author: moaamer
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.3
 
@@ -34,7 +34,7 @@ The **Fixed assets roll forward** report provides, in an easy-to-read Microsoft 
 
 The **Fixed assets roll forward** report uses the Electronic reporting (ER) framework. Before you can run the report, the Fixed assets model and Fixed asset roll-forward configurations must be imported from Microsoft Dynamics Lifecycle Services (LCS). For instructions, see [Download Electronic reporting configurations from Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs).
 
-This report is available in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, or as a hotfix for Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017). Three hotfixes must be applied to environments that have the July 2017 release:
+This report is available in Microsoft Dynamics 365 Finance, Enterprise edition 7.3, or as a hotfix for Microsoft Dynamics 365 Finance, Enterprise edition (July 2017). Three hotfixes must be applied to environments that have the July 2017 release:
 
 - **KB 4041754:** Electronic reporting (ER) configuration can't be downloaded from LCS as not applicable for the current version after applying the platform update package
 - **KB 4056107:** Electronic reporting (GER) cumulative update 5
@@ -71,3 +71,4 @@ The following table describes the fields that are available on the report.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

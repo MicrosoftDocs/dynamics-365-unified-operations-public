@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources September 26, 2020
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for September 26, 2020.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for September 26, 2020.
 author: jcart1106
 ms.date: 09/26/2020
 ms.topic: article
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources. For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
+
+This article describes features that are new, changed, or coming soon in Dynamics 365 Human Resources. For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
 
 For more information about new features and their expected general availability dates, see [Overview of Dynamics 365 Human Resources 2020 release wave 2](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/).
 
@@ -44,14 +44,14 @@ This release includes the following new features and bug fixes. Changes apply to
 
 The following feature is generally available with this release:
 
-- **Platform update 10.0.13 is now available**: For more information on the update, see [Platform updates for version 10.0.13 of Finance and Operations apps (October 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
+- **Platform update 10.0.13 is now available**: For more information on the update, see [Platform updates for version 10.0.13 of finance and operations apps (October 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-13.md).
 
 ### Bug fixes
 
 The following bug fixes are included in this release.
 
 > [!NOTE]
-> Our goal is to get this information to you as soon as possible. There may be updates to this topic to include bug fixes that made it into the build after this topic was initially published.
+> Our goal is to get this information to you as soon as possible. There may be updates to this article to include bug fixes that made it into the build after this article was initially published.
 
 | Issue number | Issue | Description |
 | --- | --- | --- |

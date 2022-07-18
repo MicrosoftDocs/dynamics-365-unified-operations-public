@@ -2,10 +2,10 @@
 # required metadata
 
 title: Czech Republic overview
-description: This topic provides an overview of Dynamics 365 Finance functionality that is specific to the Czech Republic.
-author: ShylaThompson
-ms.date: 09/02/2020
-ms.topic: article
+description: This article provides an overview of Dynamics 365 Finance functionality that is specific to the Czech Republic.
+author: kfend
+ms.date: 01/18/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,10 +16,9 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
 ms.search.region: Czech Republic
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -29,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes information and links to resources that can help you set up legal entities with a primary address in the Czech Republic.
+This article includes information and links to resources that can help you set up legal entities with a primary address in the Czech Republic.
 
 ## Fixed assets
 The following topics cover information that pertains to fixed assets in the Czech Republic:
@@ -60,6 +59,12 @@ Information about intra-community VAT can be calculated and posted automatically
 -   In journals, select the **Document date for intra-community VAT** parameter.
 
 When a purchase invoice is posted, the receivable VAT and payable VAT are posted at the same time. For the positive sales tax transaction, the VAT register date is set to the VAT register date from the invoice posting page, and the sales tax direction is **Sales tax receivable**. For the negative sales tax transaction, the VAT register date is set to the document date, and the sales tax direction is **Sales tax payable**.
+
+## Intrastat declaration
+For information about the Czech Intrastat report, see [Czech Intrastat](emea-cze-intrastat.md).
+
+## EU sales list
+For information about the Czech EU sales list, see [EU sales list for the Czech Republic](emea-cze-eu-sales-list.md).
 
 ## Credit note on cash discount
 For information about creating, posting, and printing credit notes for cash discounts that are given to customers, see [Credit note on cash discount](emea-cze-credit-note-cash-discount.md).
@@ -93,7 +98,6 @@ There are unique considerations for the year-end closing process and opening tra
 For more information, see [Year-end close for Czech Republic and Hungary](emea-cze-hun-year-end.md).
 
 ## Additional resources
-- [Microsoft Dynamics Localization Portal: Czech Republic report](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/CzechRepublic.html)
 - [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
 

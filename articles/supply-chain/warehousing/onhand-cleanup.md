@@ -2,7 +2,7 @@
 # required metadata
 
 title: Warehouse management on-hand entries cleanup job
-description: This topic describes the on-hand entries cleanup job, which helps improve system performance by identifying and deleting related but unneeded records.
+description: This article describes the on-hand entries cleanup job, which helps improve system performance by identifying and deleting related but unneeded records.
 author: perlynne
 ms.date: 04/23/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: perlynne
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: 10.0.12
 
 The performance of queries that are used to calculate on-hand inventory is affected by the number of records in the tables that are involved. One way to help improve the performance is to reduce the number of records that the database must consider.
 
-This topic describes the on-hand entries cleanup job, which deletes unneeded records in the InventSum and WHSInventReserve tables. These tables store on-hand information for items that are enabled for warehouse management processing. (These items are referred to as WHS items.) Deletion of these records can significantly improve the performance of on-hand calculations.
+This article describes the on-hand entries cleanup job, which deletes unneeded records in the `InventSum` and `WHSInventReserve` tables. These tables store on-hand information for items that are enabled for warehouse management processing. (These items are referred to as WMS items.) Deletion of these records can significantly improve the performance of on-hand calculations.
 
 ## What the cleanup job does
 
-The on-hand entries cleanup job deletes any records in the WHSInventReserve and InventSum tables where all the field values are *0* (zero). These records can be deleted because they don't contribute to the on-hand information. The job deletes only records that are below the **Location** level.
+The on-hand entries cleanup job deletes any records in the `WHSInventReserve` and `InventSum` tables where all the field values are *0* (zero). These records can be deleted because they don't contribute to the on-hand information. The job deletes only records that are below the **Location** level.
 
 If negative physical inventory is allowed, the cleanup job might not be able to delete all the relevant entries. The reason for this limitation is that the job must allow for a special scenario where a license plate has multiple serial numbers, and one of those serial numbers has become negative. For example, the system will have zero on hand at the license plate level when a license plate has +1 pcs of serial number 1 and –1 pcs of serial number 2. For this special scenario, the job does a breadth-first deletion, where it tries to delete from lower levels first.
 
@@ -62,10 +62,7 @@ However, the performance improvement that the cleanup job provides should make u
 
 ## <a name="max-execution-time"></a>Make the Maximum execution time setting available
 
-By default, the **Maximum execution time** setting isn't available. If you want to use it, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the related feature in your system. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Maximum execution time for the warehouse management on-hand entries cleanup job*
+The **Maximum execution time** setting is only available when the *Maximum execution time for the warehouse management on-hand entries cleanup job* feature is turned on. As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Maximum execution time for the warehouse management on-hand entries cleanup job* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

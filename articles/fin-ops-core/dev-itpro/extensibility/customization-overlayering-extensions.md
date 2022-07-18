@@ -1,6 +1,6 @@
 ---
 title: Customize through extension and overlayering
-description: This topic discusses the two methods of customizing source code and metadata of model elements, overlayering and extensions.
+description: This article discusses the two methods of customizing source code and metadata of model elements, overlayering and extensions.
 author: jorisdg
 ms.date: 09/25/2018
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 # ROBOTS:
 audience: Developer
 # ms.devlang:
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm:
 ms.custom: 26961
 ms.assetid: 8a2b3107-247d-4362-8d4d-6ee6257abfcc
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic discusses the two methods of customizing source code and metadata of model elements -  overlayering and extensions and details supported extension capabilities.
+This article discusses the two methods of customizing source code and metadata of model elements -  overlayering and extensions and details supported extension capabilities.
 
 ## Overlayering
 
@@ -85,7 +85,7 @@ Plug-ins are extension points that are defined by the base application. By using
 
 ### Class Extensions
 
-Class extensions enable you to augment a class by adding methods and variables to existing classes, tables and forms. For more details, refer to the topic [Class extension model in X++](class-extensions.md).
+Class extensions enable you to augment a class by adding methods and variables to existing classes, tables and forms. For more details, refer to the article [Class extension model in X++](class-extensions.md).
 
 ## Form extensions
 You can extend the functionality of a form by extending its controls and data sources. For example, in a form extension, you can:

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Tile list module
-description: This topic covers tile list modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This article covers tile list modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-This topic covers tile list modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers tile list modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 A tile list module is a collection of tiles in a carousel. It's used to market product categories or product brands through images and text. For example, a retailer can add a tile list module to the home page of an e-commerce site to promote all the top-selling categories.
 
@@ -70,15 +70,15 @@ The tile list module can support various layouts and styles, based on a theme. F
 To add a tile list module to a new page and set the required properties, follow these steps.
 
 1. Go to **Templates**, and open the marketing template for your site's home page (or create a new marketing template).
-1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Tile list** module, and then select **OK**.
+1. In the **Main** slot of the default page, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Tile list** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Go to **Pages**, and open the site's home page (or create a new home page by using the marketing template).
-1. In the **Main** slot of the default page, select the ellipsis button (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Tile list** module, and then select **OK**.
+1. In the **Main** slot of the default page, select the ellipsis button (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Tile list** module, and then select **OK**.
 1. In the property pane of the tile list module, add a heading.
-1. In the **Tile list** slot, select the ellipsis button (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Tile module** module, and then select **OK**.
+1. In the **Tile list** slot, select the ellipsis button (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Tile module** module, and then select **OK**.
 1. In the property pane of the tile module, add an image, a heading, and an icon symbol image.
 1. Add and configure additional tile modules as you require.
 1. Select **Save**, and then select **Preview** to preview the page.

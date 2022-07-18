@@ -1,14 +1,14 @@
 ---
 title: Replenishment methods and quantity modification
-description: This topic provides information about replenishment methods in Planning Optimization. It also explains how the multiple order quantity for a product affects the result.
-author: ChristianRytt
+description: This article provides information about replenishment methods in Planning Optimization. It also explains how the multiple order quantity for a product affects the result.
+author: t-benebo
 ms.date: 6/1/2021
 ms.topic: article
 ms.search.form: ReqGroup, ReqItemTable, InventItemOrderSetup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-06-01
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides information about replenishment methods in Planning Optimization. It also explains how the multiple order quantity for a product affects the result.
+This article provides information about replenishment methods in Planning Optimization. It also explains how the multiple order quantity for a product affects the result.
 
 Replenishment methods are also known as coverage methods and lot-sizing methods.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable change tracking for entities
-description: Use change tracking to enable incremental export of data from Finance and Operations.
+description: Use change tracking to enable incremental export of data from finance and operations.
 author: Milindav2
 ms.date: 09/17/2020
 ms.topic: article
@@ -30,7 +30,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Change tracking enables incremental export of data from Finance and Operations apps by using Data management. In an incremental export, only records that have changed are exported. To enable incremental export, you must enable change tracking on entities. If you don't enable change tracking on an entity, you can only enable a full export each time. 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Change tracking enables incremental export of data from finance and operations apps by using Data management. In an incremental export, only records that have changed are exported. To enable incremental export, you must enable change tracking on entities. If you don't enable change tracking on an entity, you can only enable a full export each time. 
 
 Change tracking can be enabled for both bring your own database (BYOD) and non-BYOD scenarios. This includes retrieving record changes through Dataverse virtual entities.
 
@@ -60,7 +63,7 @@ You can enable change tracking when you publish one or more entities to a data s
     > If a change is triggered, the change is tracked on the entire record and not at the field level. The entire entity record is exported to the destination. Regardless of the option that you select, the number of fields in the entity is the number that is exported to the destination.
 
 ## Enable change tracking for non-BYOD scenarios
-Change tracking can be enabled for non-BYOD scenarios. This includes retrieving record changes through Dataverse virtual entities for Finance and Operations apps. When change tracking is enabled for an entity, changes can be retrieved through the entity's OData endpoint by adding `odata.track-changes` as a preference header.
+Change tracking can be enabled for non-BYOD scenarios. This includes retrieving record changes through Dataverse virtual entities for finance and operations apps. When change tracking is enabled for an entity, changes can be retrieved through the entity's OData endpoint by adding `odata.track-changes` as a preference header.
 
 For more information on using change tracking for an entity, see [Use change tracking to synchronize data with external systems](/powerapps/developer/data-platform/use-change-tracking-synchronize-data-external-systems).
 
@@ -99,3 +102,4 @@ public static Query defaultCTQuery()
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

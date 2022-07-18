@@ -1,17 +1,18 @@
 ---
 title: FieldDesign type
 description: Design object interface for a field control.
-author: robinarh
-ms.date: 08/01/2017
+author: tonyafehr
+ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ---
 
 # FieldDesign type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Design object interface for a field control.
 

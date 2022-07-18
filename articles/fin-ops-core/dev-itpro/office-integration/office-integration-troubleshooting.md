@@ -2,9 +2,9 @@
 # required metadata
 
 title: Troubleshoot the Office integration
-description: This topic provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
+description: This article provides answers to questions, tips, and troubleshooting information for the Microsoft Office integration capabilities.
 author: jasongre
-ms.date: 10/15/2021
+ms.date: 04/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,7 +34,10 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-This topic provides answers to questions, tips, and troubleshooting information about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+
+This article provides answers to questions, tips, and troubleshooting information about the capabilities of the Microsoft Office integration. The questions and issues that are discussed range across user, administration, and development scenarios.
 
 ## Frequently asked questions
 
@@ -52,7 +55,7 @@ No. The Office JavaScript (JS) APIs work differently in Apple Safari and Microso
 
 ### What version of Office is required for the Excel Add-in to support AD FS?
 
-For more information, see the "Troubleshooting issue" section later in this topic.
+For more information, see the "Troubleshooting issue" section later in this article.
 
 ### How can I force an update of Office?
 
@@ -85,9 +88,14 @@ To check processing time in the Excel Add-in versus the server/service, follow t
 
 ### Is Export to Excel the best way to get data out of the system?
 
-The best way for end users to get data out of the system is to use the Excel Add-in. The add-in relies on the OData service to retrieve data and takes advantage of the security that data entities provide. The import and export capabilities in the Data management framework (DMF) and Data import/export framework (DIXF) can also be used; however, DMF and DIXF are often limited to administrators.
+The best way for end users to get data out of the system is to use the Excel Add-in. The add-in relies on the Open Data Protocol (OData) service to retrieve data and takes advantage of the security that data entities provide. The import and export capabilities in the Data management framework (DMF) and Data import/export framework (DIXF) can also be used. However, DMF and DIXF are often limited to administrators. Additionally, you might consider exploring the available [reporting and analytic features](../analytics/bi-reporting-home-page.md) in the product.
 
-The Export to Excel functionality can be used in situations where the above options are not possible, in particular to retrieve data from calculated columns (display methods), columns with formatted values, and data from temporary tables. This is because the export process uses the data from the active form to retrieve this data. Export to Excel will also return the data exactly as it is shown in the grid, which is useful for filtered datasets. However, this will take longer to export than using the options that go through the OData service.
+When the previously mentioned options can't be used, you might consider the Export to Excel functionality, which can be useful for retrieving data from calculated columns (display methods), columns that have formatted values, and data from temporary tables. Because the export process uses the data from the active form to retrieve data, Export to Excel will return the data exactly as it is shown in the grid. Additionally, it will return only the data that matches the current set of filters.
+
+Export to Excel does have its own set of limitations. First, this mechanism takes more time to export than the options that go through the OData service, and the time to export can be significant for larger exports. Secondly, the export of data to Excel is a memory-intensive process that can cause out-of-memory errors to occur and servers to stop responding, especially if the organization increases the export row limit beyond the default value. Export to Excel isn't intended for auditing purposes. When very large datasets must be exported from the system, data management is recommended.
+
+> [!WARNING]
+> Although organizations can increase the default Export to Excel row limit (50,000 records), we **strongly recommend** that you **not** raise this limit above 100,000 records. Depending on the characteristics of the environment and the specific grid that is being exported, even that limit might be too high and might cause memory issues.
 
 Because an export from Excel can take some time, it is recommended that the export is done with the Chrome or Edge browsers, with the automatic download option enabled. The automatic download option will ensure that the browser downloads the file as soon as the export is complete to ensure that the download link is used within the 15-minute time limit.
 
@@ -155,7 +163,7 @@ Skype integration is available for environments in the public cloud. For environ
 
 -  **Registration data not initialized**: If the issue wasn't addressed by signing back in to the add-in, another potential cause is that the environment doesn't yet have the add-in data initialized. To check this, the admin can navigate to the **Office app parameters** page. For each of the **App parameters**, **Registered applets**, and **Registered resources** tabs on that page, verify that there is data populated in each tab. If any tab has an empty grid, select the appropriate **Initialize** button on that tab. 
 
--  **OData issue**: If the issue persists after attempting the previous two fixes, then the final cause of this issue could be that the OData service, through which the add-in communicates with Finance and Operations, is unable to return the registration data to the add-in. Without that data, the add-in will fail to load applets. At this stage, you will need to contact Microsoft Support with information from the **Application correlation ID** from the Excel add-in with the failed session. You can find this field under **Options**.
+-  **OData issue**: If the issue persists after attempting the previous two fixes, then the final cause of this issue could be that the OData service, through which the add-in communicates with finance and operations, is unable to return the registration data to the add-in. Without that data, the add-in will fail to load applets. At this stage, you will need to contact Microsoft Support with information from the **Application correlation ID** from the Excel add-in with the failed session. You can find this field under **Options**.
 
 ### Issue: During sign-in to the Excel Add-in, users receive an error message saying they "cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e' in that tenant"
 
@@ -163,7 +171,7 @@ Skype integration is available for environments in the public cloud. For environ
 -  "AADSTS50020: User account 'XXX' from identity provider 'https://sts.windows.net/XXX' does not exist in tenant 'XXX' and cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e'(Microsoft Business Office Add-in) in that tenant."
 -  "Selected user account does not exist in tenant 'XXX' and cannot access the application '2bc50526-cdc3-4e36-a970-c284c34cbd6e' in that tenant."
 
-**Explanation:** This issue is caused by a change made to Azure Active Directory (Azure AD) in April 2021 in regard to external users. Because this change was not made to the Finance and Operations apps, it can affect customers on any version of the platform or application.  
+**Explanation:** This issue is caused by a change made to Azure Active Directory (Azure AD) in April 2021 in regard to external users. Because this change was not made to the finance and operations apps, it can affect customers on any version of the platform or application.  
 
 **Fix:** All external users need to be invited to the tenant through Azure AD. For more information, see [Invite users with Azure Active Directory B2B collaboration](/power-platform/admin/invite-users-azure-active-directory-b2b-collaboration).
 
@@ -266,3 +274,4 @@ The following URLs are accessed for authentication.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

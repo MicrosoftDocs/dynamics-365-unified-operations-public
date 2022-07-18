@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 13671
 ms.assetid: 9b4f244c-f058-416c-b3c2-6f4ca29c8db8
@@ -57,7 +57,7 @@ Use Visual Studio to import the tutorial project. The tutorial project includes 
 
 1.  Download the Fleet Management sample from <https://github.com/Microsoft/FMLab>, save it to **C:\\**, and unzip it.
 2.  On the desktop, double-click the Visual Studio shortcut to open the development environment.
-3.  On the **Finance and Operations** menu, click **Import Project**.
+3.  On the **Finance and operations** menu, click **Import Project**.
 4.  In the **Import Project** window, next to the **Filename** text box, click the ellipsis button.
 5.  In the **Select the file to import** window, browse to C:\FMLab, click FMTutorialDataModel.axpp, and then click **Open**.
 6.  In the **Project file location** text box, enter C:\FMLab.

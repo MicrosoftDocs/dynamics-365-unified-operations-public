@@ -1,6 +1,6 @@
 ---
 title: Write extensible enums
-description: This topic provides information about how to write extensible enums.
+description: This article provides information about how to write extensible enums.
 author: smithanataraj
 ms.date: 09/26/2018
 ms.topic: article
@@ -12,7 +12,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 

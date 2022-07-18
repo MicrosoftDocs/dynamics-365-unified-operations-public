@@ -2,7 +2,7 @@
 # required metadata
 
 title: Pre-extended columns in the channel database
-description: This topic explains how the pre-extended columns in the channel database are consumed for extensions.
+description: This article explains how the pre-extended columns in the channel database are consumed for extensions.
 author: mugunthanm
 ms.date: 06/04/2020
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.assetid: 

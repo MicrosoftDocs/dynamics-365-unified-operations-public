@@ -2,7 +2,7 @@
 # required metadata
 
 title: Open URL in POS
-description: This topic provides an overview of improvements that have been made to product and customer search functionality in  Dynamics 365 Commerce. 
+description: This article provides an overview of improvements that have been made to product and customer search functionality in  Dynamics 365 Commerce. 
 author: AamirAllaq
 ms.date: 01/28/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1.1
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how you can configure a button in Dynamics 365 Commerce point of sale (POS) to open a URL. This feature does not require a code customization, and can be configured by someone in a non-developer role. 
+This article describes how you can configure a button in Dynamics 365 Commerce point of sale (POS) to open a URL. This feature does not require a code customization, and can be configured by someone in a non-developer role. 
 
 This feature allows configuration of a button in POS, using the button grid designer to open a URL. Currently, this is supported in the following configurations:
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: GB/T 24589-2010 export
-description: This topic explains how to export accounting data to several XML files for a specific period.
+description: This article explains how to export accounting data to several XML files for a specific period.
 author: anasyash
 ms.date: 06/17/2021
 ms.topic: conceptual
@@ -71,7 +71,7 @@ For more information, see [Download ER configurations from the Global repository
 
 ## Set up financial reports
 
-To set up financial reports, follow the guidance in [Financial reporting overview](/general-ledger/financial-reporting-getting-started.md).
+To set up financial reports, follow the guidance in [Financial reporting overview](../general-ledger/financial-reporting-getting-started.md).
 
 You can also complete the following steps to import example reports from the **LCS Shared asset library**.
 

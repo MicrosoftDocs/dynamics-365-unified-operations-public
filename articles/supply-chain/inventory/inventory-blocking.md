@@ -2,7 +2,7 @@
 # required metadata
 
 title: Inventory blocking
-description: This topic provides an overview of inventory blocking, which is part of the quality inspection process in Supply Chain Management. You can use inventory blocking to prevent items from being processed or consumed.
+description: This article provides an overview of inventory blocking, which is part of the quality inspection process in Supply Chain Management. You can use inventory blocking to prevent items from being processed or consumed.
 author: yufeihuang
 ms.date: 03/02/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of inventory blocking, which is part of the quality inspection process in Supply Chain Management. You can use inventory blocking to prevent items from being processed or consumed.
+This article provides an overview of inventory blocking, which is part of the quality inspection process in Supply Chain Management. You can use inventory blocking to prevent items from being processed or consumed.
 
 You can block inventory items in the following ways:
 
@@ -100,13 +100,11 @@ When **Reserve ordered items** is disabled, the expected receipts can't be reser
 
 Note the difference in transaction status and dimensions between the two cases. For this reason, we recommend enabling the **Reserve ordered items** option.
 
-<!-- KFM: (Enable this section when the feature leaves private preview)
-
 ### Disable expected receipts from quality orders that sample blocked inventory feature
 
-To simplify the inventory transactions in the case of quality orders that sample inventory blocked as a consequence of inventory status, the system provides a feature that disables expected receipts from such quality orders. As the expected receipt is in any case immediately blocked by inventory status blocking, there is no reduction of on-hand inventory because of this change.
+To simplify the inventory transactions in the case of quality orders that sample inventory blocked as a consequence of inventory status, the system provides a feature that disables expected receipts from such quality orders. Because the expected receipt is immediately blocked by inventory status blocking, there is no reduction of on-hand inventory because of this change.
 
--->
+This feature is turned off by default. Admins can turn it on or off by searching for the *Disable expected receipts from quality orders that sample blocked inventory* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Additional resources
 

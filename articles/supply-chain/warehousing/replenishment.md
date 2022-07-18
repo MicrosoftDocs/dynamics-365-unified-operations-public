@@ -2,10 +2,10 @@
 # required metadata
 
 title: Replenishment overview
-description: This topic describes the replenishment strategies that are available for warehouses that use the functionality that is available in Warehouse management.
+description: This article describes the replenishment strategies that are available for warehouses that use the functionality that is available in Warehouse management.
 author: Mirzaab
 ms.date: 02/19/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the replenishment strategies that are available for warehouses that use the functionality that is available in Warehouse management. The information in this topic doesn't apply to the warehousing solution that is available in Inventory management.
+This article describes the replenishment strategies that are available for warehouses that use the functionality that is available in Warehouse management. The information in this article doesn't apply to the warehousing solution that is available in Inventory management.
 
 The following replenishment strategies are available:
 
@@ -72,8 +72,8 @@ Instead of having to sum demand at the end of an allocation process and do reple
 
 |      Prerequisite       |                                                                                                                                Description                                                                                                                                 |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|          Item           |                                                                                                        The item must be enabled for warehouse management processes.                                                                                                        |
-|        Warehouse        | The warehouse must be enabled for warehouse management processes. To enable a warehouse for warehouse management processes, on the <strong>Warehouses</strong> page, select the warehouse, and then select the <strong>Use warehouse management processes</strong> option. |
+|          Item           |                                                                                                        The item must be enabled for warehouse management processes (WMS).                                                                                                        |
+|        Warehouse        | The warehouse must be enabled for warehouse management processes (WMS). To enable a warehouse for WMS, on the <strong>Warehouses</strong> page, select the warehouse, and then select the <strong>Use warehouse management processes</strong> option. |
 | Replenishment templates |                                                                   At least one replenishment template must be set up for Min/Max replenishment, Wave demand replenishment, or Load demand replenishment.                                                                   |
 |        Locations        |                                                                                                       Locations must be created and connected to a location profile.                                                                                                       |
 |    Location profiles    |                                                                                                        Location profiles are required in order to create locations.                                                                                                        |

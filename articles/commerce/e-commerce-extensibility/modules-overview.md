@@ -2,10 +2,10 @@
 # required metadata
 
 title: Modules overview
-description: This topic provides an overview of module development in Microsoft Dynamics 365 Commerce. It includes best practices about when and how to extend a module's style or features.
+description: This article provides an overview of module development in Microsoft Dynamics 365 Commerce. It includes best practices about when and how to extend a module's style or features.
 author: samjarawan
 ms.date: 10/20/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of module development in Microsoft Dynamics 365 Commerce. It includes best practices about when and how to extend a module's style or features.
+This article provides an overview of module development in Microsoft Dynamics 365 Commerce. It includes best practices about when and how to extend a module's style or features.
 
 ## Modules in Dynamics 365 Commerce
 
@@ -44,7 +44,7 @@ Here are some examples of modules that are used on Commerce site pages:
 
 ## Anatomy of a module
 
-Modules are built by using React components, and they consist of various files. For an overview of each file type, see the following topics:
+Modules are built by using React components, and they consist of various files. For an overview of each file type, see the following articles:
 
 - [Module definition file](module-definition-file.md)
 - [Module React component file](module-react-file.md)

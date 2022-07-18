@@ -2,7 +2,7 @@
 # required metadata
 
 title: Base64StringToContainer ER function
-description: This topic provides information about how the Base64StringToContainer Electronic reporting (ER) function is used.
+description: This article provides information about how the Base64StringToContainer Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 12/14/2020
 ms.prod: 

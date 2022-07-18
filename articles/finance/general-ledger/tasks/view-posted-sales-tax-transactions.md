@@ -2,7 +2,7 @@
 # required metadata 
  
 title: View posted sales tax transactions
-description: This topic describes some ways to view posted sales tax transactions.
+description: This article describes some ways to view posted sales tax transactions.
 author: twheeloc
 ms.date: 08/08/2019
 ms.topic: business-process 
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: TaxTrans, TaxPeriod, TaxTable   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes some ways to view posted sales tax transactions. You can view posted sales tax transactions from various pages depending on what you need to view. This task uses the USMF demo company.
+This article describes some ways to view posted sales tax transactions. You can view posted sales tax transactions from various pages depending on what you need to view. This task uses the USMF demo company.
 
 ## Posted sales tax page
 

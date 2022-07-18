@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Modify formats to generate documents that have application data
-description: This topic describes how to design reporting configurations to generate an electronic document and update application data.
+description: This article describes how to design reporting configurations to generate an electronic document and update application data.
 author: NickSelin
 ms.date: 06/19/2017
 ms.topic: business-process 

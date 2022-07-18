@@ -2,16 +2,16 @@
 # required metadata
 
 title: Self-service deployment FAQ
-description: This topic provides answers to some frequently asked questions about self-service deployment.
+description: This article provides answers to some frequently asked questions about self-service deployment.
 author: rashmansur
-ms.date: 09/24/2021
+ms.date: 11/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1.1
 [!include[banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This topic provides answers to some frequently asked questions about [self-service deployment](infrastructure-stack.md). Refer to the [known issues](known-issues-new-deployment-experience.md) list if your scenario is not listed here.  
+This article provides answers to some frequently asked questions about [self-service deployment](infrastructure-stack.md). Refer to the [known issues](known-issues-new-deployment-experience.md) list if your scenario is not listed here.  
 
 ## Why do I see only application version 8.1.1 and Platform update 21 and above when I try to deploy my sandbox environment using self-service deployment? 
 
@@ -89,13 +89,13 @@ Starting in the January 2019 release, you will able to restart services through 
 ### Configure the Regression suite automation tool
 Microsoft is working on tooling that will let you update certificate thumbprints in the wif.config file without having to use Remote Desktop. This tooling is scheduled for release in February 2019. If you must use the Regression suite automation tool before then, log a support request.
 
-## I must perform one of the critical actions that are listed earlier in this topic, but the self-service feature isn't yet available. How do I get help?
+## I must perform one of the critical actions that are listed earlier in this article, but the self-service feature isn't yet available. How do I get help?
 
 Log a support ticket, and Microsoft will help you perform the action on your environment.
 
-## I don't have Remote Desktop access to my sandbox environment, and the critical action that I must perform isn't listed in this topic. How do I get help?
+## I don't have Remote Desktop access to my sandbox environment, and the critical action that I must perform isn't listed in this article. How do I get help?
 
-If your critical action isn't listed earlier in this topic, add a comment to this topic or log a documentation bug, and Microsoft will address your requirement.
+If your critical action isn't listed earlier in this article, add a comment to this article or log a documentation bug, and Microsoft will address your requirement.
 
 ## What regions are supported on self-service in North America?
 We currently only support the following regions in North America.
@@ -122,7 +122,7 @@ Projects that have been onboarded on or after August 1, 2020 are no longer suppo
 
 - With all self-service migrations, we are changing the outbound IP addresses in regions where your environments are hosted. New outbound IP addresses are available, so you must add them before your upcoming self-service migrations. For more information about IP addresses, see [For my Microsoft-managed environments, I have external components that have dependencies on an explicit outbound IP safe list. How can I ensure my service is not impacted after the move to self-service deployment?](deploymentFAQ.md#for-my-microsoft-managed-environments-i-have-external-components-that-have-dependencies-on-an-explicit-outbound-ip-safe-list-how-can-i-ensure-my-service-is-not-impacted-after-the-move-to-self-service-deployment).
 - If you have any integrations or other dependencies that are latency-driven and have questions regarding how the change in regions will impact that, please contact [Microsoft Support](../lifecycle-services/lcs-support.md).
-- Central US is no longer an option for self-service migrations. If a customer plans to leverage dual-write functionality, virtual entities, or any Finance and Operations apps add-ins that have dependencies on Dataverse, keep in mind that Dataverse is not supported in Central US. There are currently no plans to support Dataverse in Central US in the foreseeable future. For continued functionality of features in a supported region, we will plan to move your environment to East US or West US instead of Central US.
+- Central US is no longer an option for self-service migrations. If a customer plans to leverage dual-write functionality, virtual entities, or any finance and operations apps add-ins that have dependencies on Dataverse, keep in mind that Dataverse is not supported in Central US. There are currently no plans to support Dataverse in Central US in the foreseeable future. For continued functionality of features in a supported region, we will plan to move your environment to East US or West US instead of Central US.
 - If you have a project which has a few environments using self-service capabilities in Central US and others in North Central, South Central or West Central, the rest of the IaaS environments can still be moved to East or West US as part of migrations. For the environments already on Service Fabric and in Central US, please contact Microsoft Support to get them moved to East/West US based on your preference.
 -	Please review all the Azure resources in your current region and assess if they need to be co-located to the new region in preparation for the upcoming changes as part of migrations.
 - If you have questions about data movement related to cross-region migrations, see [The source and target are on different infrastructure (Microsoft-managed vs. self-Service)](../database/database-pitr-prod-sandbox.md#the-source-and-target-are-on-different-infrastructure-microsoft-managed-vs-self-service).
@@ -144,6 +144,8 @@ The inbound IP address to the AOS is dynamic. This can, and will, change over ti
 | Asia Pacific | Southeast Asia | 20.44.247.0/26 |
 | Australia | Australia East | 20.40.190.0/26 |
 | Australia | Australia Southeast | 20.40.165.192/26 |
+| Azure Government | US Gov Texas<sup>2</sup> | 52.243.163.224/28 |
+| Azure Government | US Gov Virginia | 52.227.253.160/28 |
 | Brazil | Brazil South | 191.234.130.0/26 |
 | Canada | Canada Central | 20.151.60.0/26 |
 | Canada | Canada East | 52.155.27.128/26 |
@@ -181,3 +183,4 @@ Yes, if you are migrating from the previous non self-service deployment, your en
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

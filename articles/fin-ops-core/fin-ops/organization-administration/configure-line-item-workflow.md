@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure line-item workflows
-description: This topic explains how to configure a line-item workflow element.
+description: This article explains how to configure a line-item workflow element.
 author: ChrisGarty
 ms.date: 11/03/2017
 ms.topic: article
@@ -31,7 +31,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to configure a line-item workflow element.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+This article explains how to configure a line-item workflow element.
 
 To configure a line-item workflow element, in the workflow editor, right-click the element, and then click **Properties** to open the **Properties** page. Then use the following procedures to configure the properties of the line-item workflow element.
 

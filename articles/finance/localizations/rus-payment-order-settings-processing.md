@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Set up and process payment orders for Russia
-description: This topic explains how to set up and process payment orders for Russia.
+description: This article explains how to set up and process payment orders for Russia.
 author: ShylaThompson
 ms.date: 10/28/2018
 ms.topic: article
@@ -103,7 +103,7 @@ You can generate a payment order for a money return to a customer.
 
 1. Select **Accounts receivable \> Payments \> Payment journal**.
 2. Create a journal, and then, on the Action Pane, select **Lines** to open the **Customer payments** page.
-3. Create a customer payment line. Enter information as you did when you created a vendor payment line earlier in this topic.
+3. Create a customer payment line. Enter information as you did when you created a vendor payment line earlier in this article.
 4. On the **Bank** tab, in the **Account identification** field, enter the bank account number of the customer account that should receive the payment return.
 5. In the **Payment documented on** field, select the customer account that should receive the payment return.
 6. On the Action Pane, select **Functions \> Generate payments** to generate a payment order.

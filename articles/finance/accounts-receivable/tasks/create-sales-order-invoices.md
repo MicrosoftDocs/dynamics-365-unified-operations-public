@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create sales order invoices
-description: This topic describes how to invoice a sales order, including merging invoices and batch processing. 
+description: This article describes how to invoice a sales order, including merging invoices and batch processing. 
 author: ShivamPandey-msft
 ms.date: 06/25/2019
 ms.topic: business-process 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: SalesTableListPage, SalesEditLines,  SysQueryForm, SysRecurrence   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to invoice a sales order, including merging invoices and batch processing. This procedure uses the USMF demo company.
+This article describes how to invoice a sales order, including merging invoices and batch processing. This procedure uses the USMF demo company.
 
 
 ## Create an invoice from a sales order

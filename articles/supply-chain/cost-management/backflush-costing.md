@@ -2,8 +2,8 @@
 # required metadata
 
 title: Backflush costing
-description: This topic introduces the concept of backflush costing that is used for Lean manufacturing. 
-author: AndersGirke
+description: This article introduces the concept of backflush costing that is used for Lean manufacturing. 
+author: JennySong-SH
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 272063
 ms.assetid: 62a2a7da-ff79-49bf-a6e8-29460ba5252f
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: yanansong
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 
@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-11-30
 
 [!include [banner](../includes/banner.md)]
 
-This topic introduces the concept of backflush costing that is used for Lean manufacturing. 
+This article introduces the concept of backflush costing that is used for Lean manufacturing. 
 
 Costing for Lean manufacturing enables the production flow to use the cost accumulation method that is known as backflush costing. In the backflush costing method, the direct materials that are consumed are accumulated in the production flow's work in progress (WIP) cost account. The standard cost inventory model group is used. The products that are received from the production flow are deducted from WIP at their standard cost. The main difference between backflush costing and standard cost is that, for backflush costing, variances aren't calculated per kanban or finished product. Instead, variances are calculated per production flow over a period. This method introduces a truly lean concept for reporting material consumption. Dedicated picked quantities of material aren't reported to a kanban or production order. Instead, full batches or handling units are staged to the production flow. After the batches or handling units are registered as empty, they are declared consumed. Advanced consumption might be used, depending on the [configuration of the production flow](../production-control/lean-manufacturing-modeling-lean-organization.md). Before advanced consumption can be used, organizations must allow themselves to make material vanish in the WIP of the production flow. The periodic backflush costing determines the effective value of WIP to the end of the period. This determination is based on the kanban handling units and the kanban job status. Deviations between the effective values and the actual WIP values per cost group and item are accounted and shown as variances.
 

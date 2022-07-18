@@ -2,7 +2,7 @@
 # required metadata
 
 title: Custom service development
-description: This topic describes how to create a custom service.
+description: This article describes how to create a custom service.
 author: peakerbl
 ms.date: 02/07/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-You can develop custom services for Finance and Operations. When a developer writes a custom service under a service group, the service group is always deployed on two endpoints:
+You can develop custom services for finance and operations. When a developer writes a custom service under a service group, the service group is always deployed on two endpoints:
 
 - SOAP endpoint
 - JSON endpoint
@@ -68,9 +68,10 @@ The JSON Endpoint is at `https://host_uri/api/services/service_group_name/servic
 
 **Example**
 
-`https://usnconeboxax1aos.cloud.onebox.dynamics.com/en/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo`
+`https://usnconeboxax1aos.cloud.onebox.dynamics.com/api/services/UserSessionService/AifUserSessionService/GetUserSessionInfo`
 
 Code examples for consuming JSON services are available in the [Microsoft Dynamics AX Integration GitHub repository](https://github.com/Microsoft/Dynamics-AX-Integration/tree/master/ServiceSamples/JsonConsoleApplication).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

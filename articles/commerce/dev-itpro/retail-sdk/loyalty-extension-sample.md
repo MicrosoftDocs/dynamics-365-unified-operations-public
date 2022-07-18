@@ -2,7 +2,7 @@
 # required metadata
 
 title: Loyalty extension sample
-description: This topic explains how to set up the system so that customers can both earn loyalty points and pay by using loyalty points in the same transaction.
+description: This article explains how to set up the system so that customers can both earn loyalty points and pay by using loyalty points in the same transaction.
 author: ShalabhjainMSFT
 ms.date: 05/15/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 196163
 ms.assetid:

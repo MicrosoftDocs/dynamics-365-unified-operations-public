@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources January 21, 2021
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for January 21, 2021.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for January 21, 2021.
 author: marcelbf
 ms.date: 01/21/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS:
 audience: Application User
 # ms.devlang:
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm:
 ms.custom:
 ms.assetid:
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes features that are new, changed, or coming soon in Dynamics 365 Human Resources.
+This article describes features that are new, changed, or coming soon in Dynamics 365 Human Resources.
 
 For more information about our update process and schedule, see [Update process](hr-admin-setup-update-process.md).
 
@@ -48,7 +48,7 @@ The following features are generally available with this release.
 
 | Feature | Release plan | Documentation |
 | --- | --- | --- |
-| Platform update 10.0.16(40) | -- | [Platform updates for version 10.0.16 of Finance and Operations apps (February 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
+| Platform update 10.0.16(40) | -- | [Platform updates for version 10.0.16 of finance and operations apps (February 2021)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-16.md) |
 | Enhanced workflow requests and approvals | [Organization and personnel management workflow experience enhancements](/dynamics365-release-plan/2020wave2/human-resources/dynamics365-human-resources/organization-personnel-management-workflow-experience-enhancements) | [Configuration option to position Work items assigned to me list](./hr-whats-new-2020-09-03.md#configuration-option-to-position-work-items-assigned-to-me-list-477004) |
 | Affordable Care Act (ACA) compliance updates for Form 1095-C, Form 1095-B, and electronic reporting in legacy Benefits | -- | -- | 
 | Benefits management now supports ACA compliance reporting for US-based legal entities | -- | [Generate ACA reports in Benefits Management](hr-benefits-management-aca-reports.md) |
@@ -59,7 +59,7 @@ The following features are generally available with this release.
 The following bug fixes are included in this release.
 
 > [!NOTE]
-> Our goal is to get you this information as soon as possible. We may update this topic to include bug fixes that made it into the build after this topic was initially published.
+> Our goal is to get you this information as soon as possible. We may update this article to include bug fixes that made it into the build after this article was initially published.
 
 | Issue number | Issue |  Description |
 | --- | --- | --- |

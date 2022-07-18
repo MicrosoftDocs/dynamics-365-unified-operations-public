@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enrich a product page
-description: This topic describes how to enrich a product page in Microsoft Dynamics 365 Commerce.
+description: This article describes how to enrich a product page in Microsoft Dynamics 365 Commerce.
 author: psimolin
 ms.date: 04/14/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to enrich a product page in Microsoft Dynamics 365 Commerce.
+This article describes how to enrich a product page in Microsoft Dynamics 365 Commerce.
 
 By default, your site uses a generic page to show product data. This page includes the basic information about the product and the controls that are required to sell it. However, you can supplement the information that comes from the Commerce Scale Unit with additional images or text for a specific product. This process is known as enriching the product page.
 

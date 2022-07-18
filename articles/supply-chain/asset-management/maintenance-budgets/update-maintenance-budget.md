@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update maintenance budgets
-description: This topic explains how to update a maintenance budget in Asset Management.
+description: This article explains how to update a maintenance budget in Asset Management.
 author: johanhoffmann
 ms.date: 08/13/2019
 ms.topic: article

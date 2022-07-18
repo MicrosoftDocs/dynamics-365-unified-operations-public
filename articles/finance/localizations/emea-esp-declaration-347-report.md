@@ -2,7 +2,7 @@
 # required metadata
 
 title: Declaration 347 report
-description: This topic provides information about how to generate the Declaration 347 report that is available to legal entities that have their primary address in Spain.
+description: This article provides information about how to generate the Declaration 347 report that is available to legal entities that have their primary address in Spain.
 author: Anasyash
 ms.date: 07/27/2020
 ms.topic: article
@@ -108,7 +108,7 @@ The **General** tab has the following fields.
 | Presentation   type                  | Select the media type that is   used to declare the Declaration 347:<br>- Telematic<br>-   CD-R<br>- Report<br> The default value is **Telematic**.                                                                                                                                                               |
 | Presentation   date                  | The date when the report is   generated.                                                                                                                                                                                                                                                                          |
 | Reported   by                        | The identifier (ID) of the user   who generated the report.                                                                                                                                                                                                                                                       |
-| Telephone                            | The telephone number of the   contact person. This value is transferred from the setting that you defined   in the **Prerequisites** section earlier in this topic.                                                                                                                                               |
+| Telephone                            | The telephone number of the   contact person. This value is transferred from the setting that you defined   in the **Prerequisites** section earlier in this article.                                                                                                                                               |
 | Contact                              | Enter the name of the contact   person.                                                                                                                                                                                                                                                                           |
 | Document   number of the declaration | The document number of the   Declaration 347. This number is filled in from the **Document number of the   declaration** field of the **Declaration 347** dialog box.                                                                                                                                             |
 | Previous   declaration number        | The document number of the   original Declaration 347. This number is filled in from the **Previous   declaration number** field of the **Declaration 347** dialog box.                                                                                                                                           |
@@ -155,7 +155,7 @@ The **Totals** tab shows the number of operations and the total amounts of purch
 14.  In the **File name** field, enter the file name, and then select **OK**.
 15.  Select **Output \> Print**.
 16.  In the **Declaration 347** dialog box, in the **Format mapping** field, select the **Declaration 347 report format (ES)** format that you downloaded earlier.
-17.  In the **File name** field, enter the file name, and then select **OK**. You can review the format of the report in the example later in this topic.
+17.  In the **File name** field, enter the file name, and then select **OK**. You can review the format of the report in the example later in this article.
 
 ## Generate the delta report
 
@@ -166,7 +166,7 @@ You can create a new Declaration 347 for the same period and use the delta repor
 3.  In the **Previous declaration number** field, enter the declaration number of the original declaration, and then select **OK**.
 4.  Select **Output \> Delta report**.
 5.  In the **Delta report** dialog box, in the **Format mapping** field, select the **Declaration 347 report format (ES)** format that you downloaded earlier.
-6.  In the **File name** field, enter the file name, and then select **OK**. You can review the format of the report in the example later in this topic.
+6.  In the **File name** field, enter the file name, and then select **OK**. You can review the format of the report in the example later in this article.
 
 ## Example
 

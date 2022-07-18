@@ -2,7 +2,7 @@
 # required metadata
 
 title: Round-off amount for depreciation calculations
-description: This topic discusses the Round-off depreciation field that is found on the Book setup pages.
+description: This article discusses the Round-off depreciation field that is found on the Book setup pages.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: AssetBookTable, AssetDepBookTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 13931
 ms.assetid: faf7db87-046f-41d1-9baf-0df66e373e97
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic discusses the **Round-off depreciation** field that is found on the **Book setup** pages.
+This article discusses the **Round-off depreciation** field that is found on the **Book setup** pages.
 
 Round-off depreciation amounts are set for each book. Round-off depreciation amounts are used in the fixed asset depreciation profile that shows the future depreciation and value of the fixed asset, and also in depreciation proposals. Enter the lowest depreciation amount that is allowed for the book. 
 

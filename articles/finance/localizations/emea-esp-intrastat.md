@@ -2,14 +2,14 @@
 # required metadata
 
 title: Spanish Intrastat
-description: This topic contains information about the Spanish Intrastat report.
+description: This article contains information about the Spanish Intrastat report.
 author: andosip
 ms.date: 10/18/2021
 ms.topic: article
 audience: 
 ms.reviewer: kfend 
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: 
 ---
 # Spanish Intrastat

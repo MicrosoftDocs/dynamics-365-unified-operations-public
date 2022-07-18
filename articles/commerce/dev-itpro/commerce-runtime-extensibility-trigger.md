@@ -2,7 +2,7 @@
 # required metadata
 
 title: Commerce runtime (CRT) extensibility and triggers
-description: This topic explains trigger support for the Microsoft Dynamics 365 commerce runtime (CRT). CRT supports pre-triggers and post-triggers for every request.
+description: This article explains trigger support for the Microsoft Dynamics 365 commerce runtime (CRT). CRT supports pre-triggers and post-triggers for every request.
 author: RobinARH
 ms.date: 08/20/2020
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 17731
 ms.assetid: 2d6ec331-b266-4dbc-97c5-db2919b662dc
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains trigger support for the Dynamics 365 commerce runtime (CRT). CRT supports pre-triggers and post-triggers for every request.
+This article explains trigger support for the Dynamics 365 commerce runtime (CRT). CRT supports pre-triggers and post-triggers for every request.
 
 ## CRT trigger overview
 

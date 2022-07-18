@@ -2,7 +2,7 @@
 # required metadata
 
 title: Security and data entities
-description: This topic provides information about security for data entities.
+description: This article provides information about security for data entities.
 author: peakerbl
 ms.date: 03/11/2019
 ms.topic: article
@@ -30,6 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 # Security and data entities
 
 [!include [banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 > [!NOTE]
 > Data entities do not support the Extensible Data Security (XDS) concepts.
@@ -81,7 +84,7 @@ The following table shows the privileges that you should create. It also explain
 </li>
 </ul>
 </td>
-<td>Extend the relevant data management duties with the new privileges. For more information, see the "Data administrator role" section later in this topic.</td>
+<td>Extend the relevant data management duties with the new privileges. For more information, see the "Data administrator role" section later in this article.</td>
 </tr>
 <tr>
 <td>The data entity is intended for general integration via OData.</td>
@@ -101,7 +104,7 @@ The following table shows the privileges that you should create. It also explain
 </li>
 </ul>
 </td>
-<td>Create new duties for the integration scenario, and map the relevant new privileges to these duties. For more information, see the "Duty naming guidelines" section later in this topic.</td>
+<td>Create new duties for the integration scenario, and map the relevant new privileges to these duties. For more information, see the "Duty naming guidelines" section later in this article.</td>
 </tr>
 <tr>
 <td>The data entity is intended for Microsoft Office integration.</td>
@@ -222,7 +225,7 @@ The **DataManagementApplicationAdministrator** security role enables an associat
 - DataManagementApplicationTransactionEntitiesMaintain
 - DataManagementApplicationTransactionEntitiesView
 
-When you create data entities that can be used in the **Data management** workspace, you must extend these duties with the new security privileges, based on the **Entity Category** property that is specified on the data entity. (For information about how to extend duties with the new security privileges, see the "Privilege/duty mapping" section earlier in this topic.) You can also use the duties to create new roles for specific data management scenarios.
+When you create data entities that can be used in the **Data management** workspace, you must extend these duties with the new security privileges, based on the **Entity Category** property that is specified on the data entity. (For information about how to extend duties with the new security privileges, see the "Privilege/duty mapping" section earlier in this article.) You can also use the duties to create new roles for specific data management scenarios.
 
 ## Modeling new entry point security in the Application Explorer
 The pattern for modeling security resembles the pattern for modeling security with privileges on an entry point. To model security, follow these steps.
@@ -240,7 +243,7 @@ The pattern for modeling security resembles the pattern for modeling security wi
 [![RolebasedSecurity.](./media/rolebasedsecurity.png)](./media/rolebasedsecurity.png)
 
 ## Sensitive data
-The Table Protection Framework (TPF) enables strict access control to data that is stored in Finance and Operations. This feature is exposed through the AOSAuthorization property on tables and table fields. If you mark a table or field by using AOSAuthorization, the security framework now requires that a user be granted explicit access to that resource. This requirement also applies when the table or field is accessed through data entities. This section describes the guidelines for granting TPF permissions for data entities.
+The Table Protection Framework (TPF) enables strict access control to data that is stored in finance and operations. This feature is exposed through the AOSAuthorization property on tables and table fields. If you mark a table or field by using AOSAuthorization, the security framework now requires that a user be granted explicit access to that resource. This requirement also applies when the table or field is accessed through data entities. This section describes the guidelines for granting TPF permissions for data entities.
 
 ### Data management 
 For data entities that are targeted at data migration, you should assign TPF permissions to the corresponding import/export privileges. In this way, you help guarantee that all data can be imported and exported.
@@ -258,3 +261,4 @@ There are several advantages to granting explicit access to TPF-protected fields
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

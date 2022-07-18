@@ -2,7 +2,7 @@
 # required metadata
 
 title: Benefit employee plan status
-description: This topic describes the Benefit employee plan status option set for Dynamics 365 Human Resources.
+description: This article describes the Benefit employee plan status option set for Dynamics 365 Human Resources.
 author: marcelbf
 ms.date: 07/25/2021
 ms.topic: article
@@ -26,9 +26,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Benefit employee plan status
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes the Benefit Employee Plan Status option set for Dynamics 365 Human Resources.
+This article describes the Benefit Employee Plan Status option set for Dynamics 365 Human Resources.
 
 ## Option set: Process type
 

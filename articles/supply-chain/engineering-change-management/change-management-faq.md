@@ -1,10 +1,10 @@
 ---
 title: Engineering change management FAQ
-description: This topic provides answers to frequently asked questions about the engineering change management feature.
+description: This article provides answers to frequently asked questions about the engineering change management feature.
 author: t-benebo
 ms.date: 03/25/2021
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides answers to frequently asked questions about the engineering change management feature.
+This article provides answers to frequently asked questions about the engineering change management feature.
 
 ## Should I track the version in transactions?
 
@@ -59,6 +59,11 @@ The following tables shows the fields that are copied during these processes.
 | **Product variants** | All fields in the **Default product variant** section | The same fields that are copied for the engineering company |
 
 In addition to the fields that are shown in the previous table, all default order settings are copied from the released item template, both when the product is created in the engineering company and when it's released to an operational company. (To view the default order settings for a released item template, open the relevant **Released product details** page, and then, on the Action Pane, on the **Manage inventory** tab, select **Default order settings**.)
+
+> [!NOTE]
+>
+> - The unit is defaulted from the template.
+> - For retailers using Dynamics 365 Commerce functionality, when assigning a retail category to a product, the retail category applies default values for many of the fields for the released product level. These defaults overwrite default values that may have already been set by the template or copied from engineering.
 
 ## Should I create a separate legal entity for engineering products or use an existing legal entity?
 

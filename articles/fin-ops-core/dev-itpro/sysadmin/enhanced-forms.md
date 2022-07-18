@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enhanced batch forms
-description: This topic provides information about enhanced batch forms.
+description: This article provides information about enhanced batch forms.
 author: hasaid
 ms.date: 03/18/2019
 ms.topic: article

@@ -2,11 +2,12 @@
 # required metadata
 
 title: Client internet connectivity
-description: This topic covers what will happen if a client machine cannot access the internet in on-premises deployments.
+description: This article covers what will happen if a client machine cannot access the internet in on-premises deployments.
 author: jasongre
 ms.date: 05/05/2020
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
+ms.service:
 ms.technology: 
 
 # optional metadata
@@ -15,7 +16,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 29151
 ms.assetid: 

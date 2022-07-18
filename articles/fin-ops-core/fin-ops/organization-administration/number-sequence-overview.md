@@ -3,9 +3,9 @@
 
 title: Number sequences overview
 description: Number sequences are used to generate readable, unique identifiers for master data records and transaction records that require identifiers.
-author: MargoC
+author: SunilGarg
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -21,7 +21,7 @@ ms.custom: ["15461", "intro-internal"]
 ms.assetid: 6e19bd1d-192b-4da2-8573-84f6e1ce98ef
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: margoc
+ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

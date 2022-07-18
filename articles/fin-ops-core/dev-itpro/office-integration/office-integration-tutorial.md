@@ -33,11 +33,14 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 In this tutorial, you will use and build Office integration experiences that involve Excel, Word, document management, and email. 
 
 ## Overview
 
-In this tutorial, you will use and build Microsoft Office integration experiences that involve Microsoft Excel, Microsoft Word, the document management capabilities of Finance and Operations apps, and email. You will see how Excel and Word use data entities as an entry point into the system, how Excel can become a core part of the user experience, and how Excel and Word can be used for ad-hoc lightweight reporting. You will also see how files can be stored and shared by using the document management and email capabilities.
+In this tutorial, you will use and build Microsoft Office integration experiences that involve Microsoft Excel, Microsoft Word, the document management capabilities of finance and operations apps, and email. You will see how Excel and Word use data entities as an entry point into the system, how Excel can become a core part of the user experience, and how Excel and Word can be used for ad-hoc lightweight reporting. You will also see how files can be stored and shared by using the document management and email capabilities.
 
 ## Key concepts
 -   **Entities and OData** – You will use the Microsoft Dynamics Excel Data Connector App (Excel App) to create, read, update, and delete. The connector uses OData services that are created for any entity that is left in the default state of "public" (**DataEntity.Public**=**Yes**).
@@ -440,7 +443,7 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 9.  Select **Collect** &gt; **Customer balances** &gt; **Collections** to open the **Collections** page.
 10. Select **Communicate** &gt; **Email** &gt; **Statements to contact**.
 11. Select **OK** to accept the default values in the dialog box.
-12. If you're prompted for the mail option to use, select **Use the Microsoft Dynamics 365 for Finance and Operations email client**, and then click **OK**.
+12. If you're prompted for the mail option to use, select **Use the Microsoft Dynamics 365 Finance email client**, and then click **OK**.
 13. To receive the test message, change the To address to your email address.
 14. Enter a subject and body for the message.
 15. Select **Send**. The message should be delivered in one to five minutes. Note that the message will appear to be sent from the email account that is set on the **Email parameters** page. If that email account is given "Send As" (or "Send email from this mailbox") permissions for the From address that is used in the **Send email** dialog box, messages will appear to come from that address.
@@ -463,3 +466,4 @@ Email workflows that are enabled via the SysEmail framework can also be created 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

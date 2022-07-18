@@ -2,7 +2,7 @@
 # required metadata
 
 title: Alerts as business events
-description: This topic describes alerts as business events.
+description: This article describes alerts as business events.
 author: Sunil-Garg
 ms.date: 11/12/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks

@@ -2,16 +2,16 @@
 # required metadata
 
 title: Configure document management
-description: This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records.
+description: This article explains how to configure document management (document handling) so that it stores file attachments and notes for records.
 author: jasongre
-ms.date: 10/15/2021
+ms.date: 01/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -27,9 +27,8 @@ ms.dyn365.ops.version: July 2017 update
 # Configure document management
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This topic explains how to configure document management (document handling) so that it stores file attachments and notes for records. It includes information about the concepts and features that are involved in this functionality.
+This article explains how to configure document management (document handling) so that it stores file attachments and notes for records. It includes information about the concepts and features that are involved in this functionality.
 
 To learn more about document management, watch the short [Document Management](https://www.youtube.com/watch?v=p4rl1CkiLN4&feature=youtu.be) video.
 
@@ -56,10 +55,11 @@ To create a new document type, follow these steps.
 
 ## Configure SharePoint storage
 
-Microsoft SharePoint Online is one of the storage locations that is supported natively. Currently, only SharePoint Online is supported. Support for on-premises SharePoint (a local SharePoint server) may be added in the future. 
+Microsoft SharePoint Online is one of the storage locations that is supported natively. On-premises SharePoint (a local SharePoint server) is not currently supported. 
 
 > [!IMPORTANT]
-> SharePoint storage is only available in Microsoft-managed environments.
+> -  SharePoint storage is only available in Microsoft-managed environments.
+> -  SharePoint managed device policies are incompatible with an integration to finance and operations apps
 
 To use SharePoint storage, set the **Location** field for a document type to **SharePoint**. Then, in the **SharePoint Address** field, enter a valid SharePoint address.
 
@@ -72,7 +72,7 @@ To configure SharePoint storage, follow these steps.
 
 4. Optional: Click **Test SharePoint connection** to test the specified SharePoint host name. This verifies that the security and license are working correctly. 
 5. Optional: Click **Open SharePoint** to open the specified SharePoint host name in a browser. Note that this does not verify security, it just opens the SharePoint path in a browser tab for easy exploration.
-6. Optional: On the **General** tab, turn on **Open attachments in new window**. For more information, see the [Other configuration](#other-configuration) section later in this topic. 
+6. Optional: On the **General** tab, turn on **Open attachments in new window**. For more information, see the [Other configuration](#other-configuration) section later in this article. 
 
 ### Troubleshooting SharePoint communication
 
@@ -82,6 +82,8 @@ SharePoint communication works for the current user only if the following condit
 - The user is a typical user on the tenant, not an external user (for example, a user from another tenant).
 - There is a SharePoint site for the tenant (for example, Contoso.SharePoint.com).
 - The SharePoint site is configured to **Allow this site to appear in search results**.
+- The SharePoint site does not use managed device policies. 
+    -  If managed device policies are enabled on the SharePoint instance, the finance and operations SharePoint integration will no longer work, meaning users will not be able to download, view, or create documents stored in SharePoint from finance and operations. 
 - The user has access to the folder that the document is stored in.
 
 If documents stored in SharePoint don't open or don't display in preview, follow these steps to troubleshoot the issue: 
@@ -129,7 +131,7 @@ Here are some other configuration options to consider:
 
 - On the **Document management parameters** page, on the **General** tab, you can use the **Use active document tables** option to enable the **Active document tables** allow list. If you set this option to **Yes**, you disable attachments on all other tables. Therefore, turn on this option only when it's required.
 - On the **Document management parameters** page, on the **General** tab, you can use the **Maximum file size in megabytes** field to set the maximum file size for attachments. Note that when SharePoint is used as a document type, users can only upload a document up to a maximum file size of 262 megabytes. 
-- On the **Document management parameters** page, on the **General** tab, you can use the **Open attachments in new window** option to determine if attachments are opened in place or in a new window or tab. You should consider turning on this option especially if you are using SharePoint for storing attachments, as this will prevent the Finance and Operations user session from resetting when opening attachments. Note that this option is available starting in version 10.0.23. 
+- On the **Document management parameters** page, on the **General** tab, you can use the **Open attachments in new window** option to determine if attachments are opened in place or in a new window or tab. You should consider turning on this option especially if you are using SharePoint for storing attachments, as this will prevent the finance and operations user session from resetting when opening attachments. Note that this option is available starting in version 10.0.23. 
 - On the **Options** page (**Settings** \> **User options**), on the **Preferences** tab, you can use the **Enable document handling** option to disable document handling (document management).
 
 ## Accessing document management attachments 
@@ -178,7 +180,7 @@ When attachment recovery is enabled, attachments can be recovered in one of thre
 When you work with attachments, you might want to scan the files for viruses and malicious code. Therefore, in version 10.0.12 and later, extension points are available so that customers can integrate with the file scanning software of their choice when they work with attachments. A similar extension point is also available for file upload. For more information, see [File upload control](../../dev-itpro/user-interface/file-upload-control.md).
 
 > [!IMPORTANT]
-> Out of the box, Finance and Operations apps don't scan files for viruses and malicious code, and we don't recommend specific software for file scanning. Instead, customers are responsible for choosing their own file scanning software, and for adding the appropriate code to the delegate handlers so that they can use the software or service of their choice to scan files.
+> Out of the box, finance and operations apps don't scan files for viruses and malicious code, and we don't recommend specific software for file scanning. Instead, customers are responsible for choosing their own file scanning software, and for adding the appropriate code to the delegate handlers so that they can use the software or service of their choice to scan files.
 
 The **Docu** class exposes the following two delegates. Handlers can be implemented for these delegates for document scanning purposes:
 
@@ -240,7 +242,7 @@ The following APIs from the `DocumentManagement` class allow developers to speci
 
 If this file content type is not specified correctly, the attached document may not behave as expected. For this reason, if you use these APIs you should consider one of the following courses of action:  
 
--  Pass **null** for the `_fileContentType` parameter in any of the preceeding APIs. Doing so allows the correct content type to be inferred from the file name. 
+-  Pass **null** for the `_fileContentType` parameter in any of the preceding APIs. Doing so allows the correct content type to be inferred from the file name. 
 -  Switch to using one of the following methods that doesn't include a `_fileContentType` parameter. This is to avoid the possibility of passing incorrect file content types.
     -  **attachFileForRecord()**, which replaces attachFileToCommon()
     -  **attachFileForReference()**, which replaces attachFile()
@@ -321,3 +323,4 @@ The files are retrieved from SharePoint using the current user permissions by th
 **Fix**: The admin needs to select the **Token refresh** button to the right of the **Office Web Apps Server** field on the **Document management parameters** page under the **General** tab.  
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Suppress Word content controls in generated reports
-description: This topic explains how to configure an Electronic reporting (ER) format to generate reports as Microsoft Word files where content controls are suppressed. 
+description: This article explains how to configure an Electronic reporting (ER) format to generate reports as Microsoft Word files where content controls are suppressed. 
 author: NickSelin
 ms.date: 02/11/2021
 ms.topic: business-process 
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-To generate reports as Microsoft Word documents, you must design a template for the reports as a Word document. This template must contain Word content controls as placeholders for data that will be filled in at runtime. To use the Word document that is created as a template for your reports, you can [configure](er-design-configuration-word.md) a new [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md). The solution must include an ER [configuration](general-electronic-reporting.md#Configuration) that contains an ER [format](general-electronic-reporting.md#FormatComponentOutbound) component. This ER format must be configured to use the designed template for report generation.
+To generate reports as Microsoft Word documents, you must design a template for the reports as a Word document. This template must contain Word content controls as placeholders for data that will be filled in at runtime. To use the Word document that is created as a template for your reports, you can [configure](er-design-configuration-word.md) a new [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md). The solution must include an ER [configuration](general-electronic-reporting.md#Configuration) that contains an ER format component. This ER format must be configured to use the designed template for report generation.
 
 In version 10.0.6 and later of Dynamics 365 Finance, you can configure formulas in your ER format to suppress some Word content controls in generated documents.
 
@@ -51,7 +51,7 @@ When you complete the steps of these task guides, the following items are prepar
 
 You must also download and save the following template for the sample report:
 
-- [Bounded Template 2 of Payment Report (SampleVendPaymDocReportBounded2.docx)](https://download.microsoft.com/download/a/1/2/a126cb43-6281-4f7b-bde0-25e03ff9bc1e/SampleVendPaymDocReportBounded2.docx)
+- [Bounded Template 2 of Payment Report (SampleVendPaymDocReportBounded2.docx)](https://download.microsoft.com/download/1/9/b/19b36e39-861a-414e-9150-9880d9d2487c/SampleVendPaymDocReportBounded2.docx)
 
 ## <a id="tag-control"></a>Review the downloaded Word template
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extension points for packing slips during order fulfillment
-description: This topic shows how to use customizations to add extension points to packing slips during customer order fulfillment.
+description: This article shows how to use customizations to add extension points to packing slips during customer order fulfillment.
 author: mugunthanm
 ms.date: 03/29/2018
 ms.topic: article
@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global

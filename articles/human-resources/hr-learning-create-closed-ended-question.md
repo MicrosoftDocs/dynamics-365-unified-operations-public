@@ -1,7 +1,7 @@
 --- 
 # required metadata 
  
-title: Create a closed ended question
+title: Create a closed-ended question
 description: Closed-ended questions allow you to provide options for the respondent to choose from. 
 author: twheeloc
 ms.date: 08/26/2021
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: KMAnswerCollection, KMAnswer, KMQuestion, HcmLearningWorkspace  
 audience: Application User 
 # ms.devlang:  
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -24,6 +24,9 @@ ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0 
 ---
 # Create a closed ended question
+
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
@@ -37,10 +40,10 @@ Closed-ended questions allow you to provide options for the respondent to choose
 2. Click **New**.
 3. In the **Answer group** field, type a value.
 4. In the **Description** field, type a value.
-    * Use the Randomize functionality to randomly place the answers in a different order each time the answer group is used for a question.  
+    * Use the **Randomize** functionality to randomly place the answers in a different order each time the answer group is used for a question.  
 5. Click **Answer**.
 6. Click **New**.
-    * Sequence number controls the order in which the answers are displayed, unless Randomize is selected for the Answer group.  
+    * Sequence number controls the order in which the answers are displayed, unless **Randomize** is selected for the **Answer group**.  
     * Points can be awarded to answers for use in scoring the questionnaire.  
 7. In the **Points** field, enter a number.
     * The correct answer can be marked to indicate that the selected answer is the correct one. This can be used for scoring the questionnaire.  
@@ -64,8 +67,8 @@ Closed-ended questions allow you to provide options for the respondent to choose
 ## Create the question
 1. Go to **Questionnaire** > **Design** > **Questions**.
 2. Click **New**.
-3. Use the Type field to group related questions together.
-    * You can use input types of Check box, Alternative button, or Combo box for closed-ended questions.  
+3. Use the **Type** field to group related questions together.
+    * You can use input types of **Check box**, **Alternative button**, or **Combo box** for closed-ended questions.  
 4. In the **Input type** field, select an option.
 5. In the **Answer group** field, enter or select a value.
 6. In the **Text** field, type a value.

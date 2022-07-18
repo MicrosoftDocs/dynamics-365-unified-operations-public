@@ -2,7 +2,7 @@
 # required metadata
 
 title: Leave balance
-description: This topic provides details and an example query for the leave balance entity in Dynamics 365 Human Resources.
+description: This article provides details and an example query for the leave balance entity in Dynamics 365 Human Resources.
 author: marcelbf
 ms.date: 06/25/2021
 ms.topic: article
@@ -26,9 +26,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Leave balance
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes the leave balance entity for Dynamics 365 Human Resources.
+This article describes the leave balance entity for Dynamics 365 Human Resources.
 
 ### Description
 

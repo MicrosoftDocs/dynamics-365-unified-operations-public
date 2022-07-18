@@ -3,7 +3,7 @@
 
 
 title: Configure expenditure reviewers
-description: This topic describes how to use expenditure reviewers to dynamically select the user that a workflow task, approval, or manual decision is assigned to.
+description: This article describes how to use expenditure reviewers to dynamically select the user that a workflow task, approval, or manual decision is assigned to.
 author: rachel-profitt
 ms.date: 06/25/2021
 ms.topic: article
@@ -18,6 +18,9 @@ ms.search.validFrom: 2021-06-24
 
 # Configure expenditure reviewers
 [!include[banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 You can set up dynamic expenditure reviewers to route expenditures for review, based on either the user who is assigned to a project role or the financial dimension where the expenditure is being charged. The workflow process uses the specified project role or financial dimension owner to determine who the expenditure should be routed to.
 
@@ -72,7 +75,7 @@ When the purchase order is created, the **Project** field must be specified. If 
 
 ## Set up expenditure reviewers
 
-This example shows how to configure a purchase requisition expenditure reviewer. To configure other types of expenditure reviewers, replace the navigation path in step 1 with the appropriate path from the table in the [Types of expenditure reviewers](configure-expenditure-reviewers.md#types-of-expenditure-reviewers) section, earlier this topic.
+This example shows how to configure a purchase requisition expenditure reviewer. To configure other types of expenditure reviewers, replace the navigation path in step 1 with the appropriate path from the table in the [Types of expenditure reviewers](configure-expenditure-reviewers.md#types-of-expenditure-reviewers) section, earlier this article.
 
 1. Go to **Procurement and sourcing \> Setup \> Policies \> Purchase requisition expenditure reviewers**.
 2. On the **Purchase requisition expenditure reviewers** page, select **New**.

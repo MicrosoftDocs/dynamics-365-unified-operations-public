@@ -2,7 +2,7 @@
 # required metadata
 
 title: Messaging APIs - Action center, message bar, and message details
-description: This topic describes the messaging system.
+description: This article describes the messaging system.
 author: jasongre
 ms.date: 10/15/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 64153
 ms.assetid: b69ec992-9bde-469e-99bb-773feb9489ff
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the messaging system in Finance and Operations apps, specifically in terms of the application programming interfaces (APIs) that are used to create and route messages to end users.  
+This article describes the messaging system in finance and operations apps, specifically in terms of the application programming interfaces (APIs) that are used to create and route messages to end users.  
 
 ## Introduction
 
-A new messaging system was created for Finance and Operations apps to improve this experience. Compared to earlier versions, the messaging system for Finance and Operations apps includes the following features:
+A new messaging system was created for finance and operations apps to improve this experience. Compared to earlier versions, the messaging system for finance and operations apps includes the following features:
 
 + Improved association of a message with its context (form versus global).
 + Improved level of interruption (none, subtle, and interrupting).
@@ -42,7 +42,7 @@ A new messaging system was created for Finance and Operations apps to improve th
 + The control that is used to display messages is deterministic and based on form context.
 
 ## Backwards compatibility of info(), warning()/checkfailed(), and error() 
-The **info()**, **warning()**, and **error()** application programming interfaces (APIs) from earlier versions of Finance and Operations apps are still supported; however, these APIs now sit upon the framework's new messaging system. Messages are routed deterministically to the message or Action center (in a non-interrupting manner) by using the context of the API call to determine the best way to present the message to the user. In general, if the use of the API originated from a form, the message appears in a message bar on that same form. (Drop dialogs and slider dialogs are both considered forms.) 
+The **info()**, **warning()**, and **error()** application programming interfaces (APIs) from earlier versions of finance and operations apps are still supported; however, these APIs now sit upon the framework's new messaging system. Messages are routed deterministically to the message or Action center (in a non-interrupting manner) by using the context of the API call to determine the best way to present the message to the user. In general, if the use of the API originated from a form, the message appears in a message bar on that same form. (Drop dialogs and slider dialogs are both considered forms.) 
 
 The following illustration shows **info**, **warning**/**checkfailed**, and **error** message bars that correspond to page actions, or synchronous-authored messages that come from **info()**, **warning()**, and **error()**. 
 
@@ -59,7 +59,7 @@ If **info()**, **warning()**/**checkfailed()**, or **error()** is called from an
 > Use the **Box()** API to express an interrupting error to the user.                                                               
 
 ## Backwards compatibility of SetPrefix() 
-Finance and Operations apps also support the **SetPrefix()** API for backwards compatibility. However, in the messaging system, the results of **SetPrefix()** don't actively interrupt the user; instead, the results are collected and stored (as in previous versions), and a message bar or Action center notification is presented to the user. This notification indicates that the related task has been completed, and that it might have messages that the user should review. The "Notification of results" message actually uses the task's first call to **SetPrefix()** to frame the message. This behavior is similar to the behavior in previous versions, where the first call was the "title" of the results. In this example, "Posting Results" comes from the application's first call to **SetPrefix()**.
+Finance and operations apps also support the **SetPrefix()** API for backwards compatibility. However, in the messaging system, the results of **SetPrefix()** don't actively interrupt the user; instead, the results are collected and stored (as in previous versions), and a message bar or Action center notification is presented to the user. This notification indicates that the related task has been completed, and that it might have messages that the user should review. The "Notification of results" message actually uses the task's first call to **SetPrefix()** to frame the message. This behavior is similar to the behavior in previous versions, where the first call was the "title" of the results. In this example, "Posting Results" comes from the application's first call to **SetPrefix()**.
 
 [![SetPrefix example.](./media/3_api.png)](./media/3_api.png) 
 
@@ -144,3 +144,4 @@ SystemNotificationsManager::AddSystemNotification(notification);
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

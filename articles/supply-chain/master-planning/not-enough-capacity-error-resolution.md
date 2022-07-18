@@ -1,14 +1,14 @@
 ---
-title: "Fix the 'Not enough capacity could be found' scheduling engine error"
-description: "This topic provides information about the reasons and resolutions for the 'Production order %1 could not be scheduled. Not enough capacity could be found' scheduling engine error."
-author: ChristianRytt
+title: "Fix the 'Not enough capacity could be found' scheduling engine error and finite capacity"
+description: "This article provides information about the reasons and resolutions for the 'Production order %1 could not be scheduled. Not enough capacity could be found' scheduling engine error."
+author: t-benebo
 ms.date: 7/29/2021
 ms.topic: article
 ms.search.form: ProdTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2021-07-19
 ms.dyn365.ops.version: 10.0.20
 ---
@@ -21,7 +21,7 @@ When you run scheduling, you might receive the following error message:
 
 > Production order %1 could not be scheduled. Not enough capacity could be found.
 
-There are several reasons why the scheduling engine might fail and issue this error message. This topic provides guidelines that will help you find the root cause of the error and then mitigate it.
+There are several reasons why the scheduling engine might fail and issue this error message. This article provides guidelines that will help you find the root cause of the error and then mitigate it.
 
 ## Review the applicable resources
 
@@ -82,7 +82,7 @@ To review the scheduling parameters, follow these steps.
 
 ## Review capacity
 
-The error can occur when you perform finite scheduling, but there is no free capacity.
+The error can occur when you perform finite scheduling, but there's no free capacity.
 
 To perform infinite capacity scheduling, follow these steps.
 
@@ -94,11 +94,53 @@ To perform infinite capacity scheduling, follow these steps.
 To review the available capacity on the resource, follow these steps.
 
 1. Go to **Organization administration \> Resources \> Resources**, and select a resource that is applicable to the order that can't be scheduled.
-1. On the Action Pane, on the **Resource** tab, in the **View** group, select **Capacity load** or **Capacity load, graphically**, and make sure that there is available capacity.
+1. On the Action Pane, on the **Resource** tab, in the **View** group, select **Capacity load** or **Capacity load, graphically**, and make sure that there's available capacity.
 
 To review the available capacity on the resource group, follow these steps.
 
 1. Go to **Organization administration \> Resources \> Resource groups**, and select a resource group that is applicable to the order that can't be scheduled.
-1. On the Action Pane, on the **Resource group** tab, in the **View** group, select **Capacity load** or **Capacity load, graphically**, and make sure there is available capacity.
+1. On the Action Pane, on the **Resource group** tab, in the **View** group, select **Capacity load** or **Capacity load, graphically**, and make sure there's available capacity.
+
+## Master planning books a resource when the resource calendar is closed
+
+When using operations scheduling, master planning will plan capacity according to the calendar of the primary resource group. It books the secondary operation at the same time as the primary operation and doesn't take into account the calendars or capacity of the secondary operation. This can result in the production order being scheduled on a closed calendar or at a time when the secondary operation isn't available (calendar closed, no capacity).
+
+When using job scheduling, master planning will take into account the capacity and calendar of both the primary and secondary operation when scheduling the order. For the order to be scheduled, calendars for the resources of both operations must be open and have available capacity.
+
+## Maximum job lead time is too short
+
+The scheduling engine won't be able to schedule an order if the **Maximum job lead time** set for your site is less than the lead time specified for an item in its default order settings or coverage settings.
+
+To view or edit the **Maximum job lead time** setting for your site, go to **Production control \> Setup \> Production control parameters** and open the **General** tab.
+
+To view or edit the default order settings for an item, follow these steps:
+
+1. Go to **Product information management \> Products \> Released products**.
+1. Find and select the relevant product in the list.
+1. On the Action Pane, open the **Manage inventory** tab and select **Default order settings**.
+1. Expand the **Inventory** FastTab and view or edit the **Inventory lead time** setting as needed.
+
+To view or edit the coverage settings for an item, follow these steps:
+
+1. Go to **Product information management \> Products \> Released products**.
+1. Find and select the relevant product in the list.
+1. On the Action Pane, open the **Plan** tab and select **Item coverage**.
+1. Open the **Lead time** tab and view or edit the **Production time** value as needed.
+
+## Excessive quantity of required resources
+
+During scheduling, the engine tries to match the required resource quantity set for a route operation to the applicable resources according to the operation resource requirements. Setting the resource quantity too high can lead to a route being unfeasible, which will produce a scheduling error.
+
+Use the following procedure to check both the specified quantity and applicable resources for a selected product, route, and route operation:
+
+1. Go to **Product information management \> Products \> Released products**.
+1. Find and select the relevant product in the grid.
+1. On the Action Pane, open the **Engineer** tab and select **Route**.
+1. Find and select the relevant route in the grid.
+1. Open to the **Overview** tab at the bottom of the page.
+1. Select an operation from the list of the selected route operations.
+1. Select **Applicable resources** to open a dialog where you can view the applicable resources for the selected route operation.
+1. Open the **Resource load** tab. The **Quantity** field here shows the resource quantity required for the selected route operation. View and/or edit it as needed.
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

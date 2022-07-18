@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payroll API No Yes
-description: This topic describes the No Yes option set in the Dynamics 365 Human Resources Payroll API.
+description: This article describes the No Yes option set in the Dynamics 365 Human Resources Payroll API.
 author: marcelbf
 ms.date: 06/25/2021
 ms.topic: article
@@ -26,9 +26,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Payroll - No Yes option set
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes the No Yes option set for Dynamics 365 Human Resources.
+This article describes the No Yes option set for Dynamics 365 Human Resources.
 
 ## Option set: No Yes
 

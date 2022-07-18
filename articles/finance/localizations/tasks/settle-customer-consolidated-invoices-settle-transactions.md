@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Settle customer consolidated invoices by using settle transactions
-description: This topic provides information about payments that are made and settled against consolidated invoices. 
+description: This article provides information about payments that are made and settled against consolidated invoices. 
 author: ShylaThompson
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom:  
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---

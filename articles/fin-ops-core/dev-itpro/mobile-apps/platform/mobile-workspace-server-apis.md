@@ -2,9 +2,9 @@
 # required metadata
 
 title: Server-side development (workspace X++ APIs)
-description: This topic describes the platform that supports the mobile phone app, providing rich offline and mobile interactions, and an easy-to-use designer experience.
-author: robinarh
-ms.date: 11/10/2017
+description: This article describes the platform that supports the mobile phone app, providing rich offline and mobile interactions, and an easy-to-use designer experience.
+author: tonyafehr
+ms.date: 05/26/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -13,11 +13,11 @@ ms.technology:
 # ms.search.form:
 # ROBOTS:
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 255544
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 
@@ -25,6 +25,7 @@ ms.dyn365.ops.version: Platform update 3
 # Server-side development (workspace X++ APIs)
 
 [!include [banner](../../includes/banner.md)]
+[!include [mobile app deprecated](../../includes/mobile-app-deprecation-banner.md)]
 
 ## Class SysAppActionAttribute
 

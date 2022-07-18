@@ -3,7 +3,7 @@
 
 title: Cycle counting
 description: This article describes how you can use cycle counting with the warehousing solution that is available in Warehouse management. This article doesn't apply to the warehousing solution that's available in Inventory management.
-author: MarkusFogelberg
+author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 50671
 ms.assetid: 49f5c431-b043-4170-aa24-b7d5d1ee063e
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -57,11 +57,11 @@ The following table shows the prerequisites that must be in place before you can
 <tbody>
 <tr class="odd">
 <td>Item</td>
-<td>The item must be enabled for warehouse management processes.</td>
+<td>The item must be enabled for warehouse management processes (WMS).</td>
 </tr>
 <tr class="even">
 <td>Warehouse</td>
-<td>The warehouse must be enabled for warehouse management processes. To enable the warehouse for warehouse management processes, on the <strong>Warehouses</strong> page, select the warehouse, and then select the <strong>Use warehouse management processes</strong> option. To enable workers to move pallets during a cycle count, on the <strong>Warehouse management</strong> FastTab, select the <strong>Allow pallet moves during cycle counting</strong> option.</td>
+<td>The warehouse must be enabled for warehouse management processes (WMS). To enable the warehouse for WMS, on the <strong>Warehouses</strong> page, select the warehouse, and then select the <strong>Use warehouse management processes</strong> option. To enable workers to move pallets during a cycle count, on the <strong>Warehouse management</strong> FastTab, select the <strong>Allow pallet moves during cycle counting</strong> option.</td>
 </tr>
 <tr class="odd">
 <td>Work pools</td>

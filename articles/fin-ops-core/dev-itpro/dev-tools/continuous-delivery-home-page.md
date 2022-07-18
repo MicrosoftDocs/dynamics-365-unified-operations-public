@@ -5,11 +5,11 @@ author: RobinARH
 ms.date: 10/16/2019
 ms.topic: index-page
 audience: Developer, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: "intro-internal"
 ms.assetid: 11271903-30bc-4d0f-a1da-2a595d973289
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

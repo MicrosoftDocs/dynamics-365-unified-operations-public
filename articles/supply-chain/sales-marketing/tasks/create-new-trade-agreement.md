@@ -81,7 +81,7 @@ For more information, download the following white paper (written to support AX2
 
 ### Community blogs
 
-- [Sales prices in Dynamics 365 for Finance and Operations](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
+- [Sales prices in finance and operations](https://financefunction.tech/2018/11/14/sales-prices-in-dynamics-365-for-finance-and-operations/#sales_price_in_trade_agreements)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage Content Security Policy (CSP)
-description: This topic describes how to manage Content Security Policy (CSP) in Microsoft Dynamics 365 Commerce.
+description: This article describes how to manage Content Security Policy (CSP) in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 11/13/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to manage Content Security Policy (CSP) in Microsoft Dynamics 365 Commerce.
+This article describes how to manage Content Security Policy (CSP) in Microsoft Dynamics 365 Commerce.
 
 CSP is an additional layer of security that helps detect and mitigate some types of web attacks. The purpose of these attacks can range from data theft, to site defacement, to the distribution of malware. CSP provides an extensive set of policy directives that help you control the resources that a site page is allowed to load. Each directive defines the restrictions for a specific type of resource.
 

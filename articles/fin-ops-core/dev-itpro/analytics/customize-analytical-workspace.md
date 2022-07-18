@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Customize embedded reports in analytical workspaces
-description: This topic describes how power users can customize the application reports that are embedded in analytical workspaces.
+title: Customize embedded reports in analytical workspaces (contains video)
+description: This article describes how power users can customize the application reports that are embedded in analytical workspaces.
 author: RichdiMSFT
 ms.date: 09/11/2020
 ms.topic: article
@@ -62,7 +62,7 @@ Here are some important points to note about this service capability:
 
 ## Customize an analytical workspace
 
-To customize the embedded application solutions, a user must be a member of the System Report Editors security group. Members of this security group can do customizations by using the buttons on the **Options** tab on the Action Pane of the application workspaces. This example shows how to customize one of the standard analytical workspaces that are bundled with the application suite.
+To customize the embedded application solutions, a user must be assigned the **System report editor** security role. Users assigned this security role can do customizations by using the buttons on the **Options** tab on the Action Pane of the application workspaces. This example shows how to customize one of the standard analytical workspaces that are bundled with the application suite.
 
 1. Sign in and open the application workspace that you want to customize. In this example, you will replace the standard analytical report that is embedded in the **Compensation management** workspace.
 
@@ -109,7 +109,8 @@ The Power BI service requires explicit permission from the user to allow access 
 
 1. Open any application workspace containing a section titled **Link**. For example, "Bank management".
 2. Select **Options**, and then select **Open report catalog** on the top left.
-3. Follow the steps in the dialog box to **Authorize to Power BI** to access Finance and Operations apps for the current user.
+3. Follow the steps in the dialog box to **Authorize to Power BI** to access finance and operations apps for the current user.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

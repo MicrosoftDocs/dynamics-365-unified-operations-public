@@ -2,10 +2,10 @@
 # required metadata
 
 title: Database movement toolkit
-description: This topic explains how to download and use the Database movement toolkit. 
+description: This article explains how to download and use the Database movement toolkit. 
 author: laneswenka
 ms.date: 12/02/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: Platform update 30
 
 # Database movement toolkit
 
-The Database movement toolkit is a ZIP file hosted in Microsoft Dynamics Lifecycle Services (LCS). This toolkit is available for download. It contains a series of scripts that enhance the customer experience for movement of data between developer environments and sandbox environments. This topic explains the components of the toolkit, how to download it, and any recent changes.
+The Database movement toolkit is a ZIP file hosted in Microsoft Dynamics Lifecycle Services (LCS). This toolkit is available for download. It contains a series of scripts that enhance the customer experience for movement of data between developer environments and sandbox environments. This article explains the components of the toolkit, how to download it, and any recent changes.
 
 ## Download the latest version
 
@@ -44,7 +44,7 @@ The toolkit contains the following primary components:
 
 The toolkit currently supports the following scenarios. More will be added over time.  
 
-* [Upgrade from AX 2012 - Data upgrade in sandbox environments](../migration-upgrade/upgrade-data-sandbox-dacpac.md)
+* [Upgrade from AX 2012 - Data upgrade in sandbox environments](/d365F-O/fin-ops-core/dev-itpro/database/data-upgrade-self-service)
 
 ## Versions
 

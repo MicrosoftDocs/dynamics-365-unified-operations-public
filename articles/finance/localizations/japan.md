@@ -2,10 +2,10 @@
 # required metadata
 
 title: Japan overview
-description: This topic provides an overview of functionality specific to Japan.
-author: ShylaThompson
-ms.date: 07/25/2019
-ms.topic: article
+description: This article provides an overview of functionality specific to Japan.
+author: kfend
+ms.date: 06/09/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,10 +16,10 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Japan
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include[banner](../includes/banner.md)]
 
-This topic includes information and links to resources that can help you set up legal entities with a primary address in Japan.
+This article includes information and links to resources that can help you set up legal entities with a primary address in Japan.
 
 ## Cash and bank management
 
@@ -120,7 +120,10 @@ This topic includes information and links to resources that can help you set up 
 -  [Inquiry on deductible expenses](tasks/inquiry-deductible-expenses.md)
 -  [Progressive withholding tax](apac-jpn-progressive-withholding-tax-calculation.md)
 -  [Set up master data for inclusion of deductible expenses for multiple posting layers](tasks/set-up-master-data-inclusion.md)
--  [Setup Japan consumption tax report](tasks/setup-japan-consumption-tax-report.md)
+
+ ### Consumprtion tax report
+ -  [Consumption tax report](apac-jpn-consumption-tax-report.md)   
+ -  [Task: Setup Japan consumption tax report](tasks/setup-japan-consumption-tax-report.md)
 
 ## System administration
 -  [Import postal codes](apac-jpn-import-postal-codes.md) 

@@ -3,7 +3,7 @@
 
 title: Authorize an adjusted forecast
 description: Not all forecast data must be authorized immediately. This article explains how you can specify the period that a forecast is authorized for. It also explains how you can authorize the forecast for specific companies and forecast models.
-author: ChristianRytt
+author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 72734
 ms.assetid: cb8fd809-605a-4a8b-a390-636edfec21f9
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

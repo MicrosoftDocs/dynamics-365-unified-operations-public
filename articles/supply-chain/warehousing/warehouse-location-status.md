@@ -2,7 +2,7 @@
 # required metadata
 
 title: Warehouse location status
-description: This topic provides an overview of the Warehouse location status feature.
+description: This article provides an overview of the Warehouse location status feature.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: perlynne
+ms.author: mirzaab
 ms.search.validFrom: 2020-07-01
 ms.dyn365.ops.version: 10.0.7
 
@@ -170,7 +170,7 @@ The example scenario requires that you prepare two location profiles.
 1. Notice that the **Location status** field for the location that the sales order work picked from is now set to *Picking*, and the **Last activity date and time** field has been updated.
 
 > [!NOTE]
-> The location fields are updated only by warehouse transactions. If you move inventory by using a journal or other non-WHS processes, the fields won't be updated.
+> The location fields are updated only by warehouse transactions. If you move inventory by using a journal or other non-WMS processes, the fields won't be updated.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

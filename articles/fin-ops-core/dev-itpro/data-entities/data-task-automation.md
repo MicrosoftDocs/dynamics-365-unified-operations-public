@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data task automation
-description: This topic explains how you can use data task automation to repeat many types of data tasks and validate the outcome of each task.
+description: This article explains how you can use data task automation to repeat many types of data tasks and validate the outcome of each task.
 author: peakerbl
 ms.date: 05/06/2021
 ms.topic: article
@@ -26,6 +26,9 @@ ms.dyn365.ops.version: Platform update 16
 # Data task automation
 
 [!include[banner](../includes/banner.md)]
+
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 Data task automation lets you easily repeat many types of data tasks and validate the outcome of each task. Data task automation is very useful for projects that are in the implementation phase. For example, you can automate the creation and configuration of data projects. You can also configure and trigger the execution of import/export operations, such as the setup of demo data and golden configuration data, and other tasks that are related to data migration. You can also create automated testing of data entities by using task outcome validation.
 
@@ -61,7 +64,7 @@ We recommend the following approach for data task automation.
 The following video is a 55-minute TechTalk that walks you through an early release of [Task automation framework](https://community.dynamics.com/365/b/techtalks/posts/task-automation-framework-for-data-management-march-3-2018).
 
 ## Task manifest
-A task must be defined in an XML manifest. This section describes the manifest. For guidance about how to name and design the manifest, see the "Best practices for manifest design" section later in this topic.
+A task must be defined in an XML manifest. This section describes the manifest. For guidance about how to name and design the manifest, see the "Best practices for manifest design" section later in this article.
 
 ### Manifest root
 The **\<TestManifest\>** element is the root of the manifest. All other elements are children of this element.

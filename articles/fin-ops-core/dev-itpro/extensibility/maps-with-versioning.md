@@ -1,7 +1,7 @@
 ---
 
 title: Extend table maps that are used for versioning
-description: This topic describes how to extend table maps that can be used for versioning.
+description: This article describes how to extend table maps that can be used for versioning.
 author: MichaelFruergaardPontoppidan
 ms.date: 12/10/2017
 ms.topic: article
@@ -12,7 +12,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 

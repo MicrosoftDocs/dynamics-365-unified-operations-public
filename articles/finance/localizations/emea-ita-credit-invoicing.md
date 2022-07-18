@@ -2,7 +2,7 @@
 # required metadata
 
 title: Credit invoicing (Italy)
-description: This topic explains how to set up and use the credit invoicing functionality in Italy. 
+description: This article explains how to set up and use the credit invoicing functionality in Italy. 
 author: liza-golub
 ms.date: 09/15/2021
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 1611
 
 ## Activate credit invoicing
 
-To activate the credit invoicing functionality gomplete the following steps.
+To activate the credit invoicing functionality complete the following steps.
 
 1. Go to **Accounts payable** > **Setup** > **Parameters**, and on the **Updates** tab, select the **Credit invoicing** check box.
 2. Go to **Accounts receivable** > **Setup** > **Parameters**, and on the **Updates** tab, select the **Credit invoicing** check box.

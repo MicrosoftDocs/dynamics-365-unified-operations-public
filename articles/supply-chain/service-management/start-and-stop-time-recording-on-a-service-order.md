@@ -3,7 +3,7 @@
 
 title: Start and stop time recording on a service order 
 description: Start and stop time recording on a service order.
-author: kamaybac
+author: sorenva
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -35,7 +35,7 @@ Use this procedure to start and stop time recording for a service order for whic
 
 ## Start time recording
 
-1.  Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.
+1.  Click **Service management** \> **Service orders** \> **Service orders**.
 
 2.  Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Start**.
 
@@ -43,7 +43,7 @@ Use this procedure to start and stop time recording for a service order for whic
 
 ## Stop time recording
 
-1.  Click **Service management** \> **Common** \> **Service orders** \> **Service orders**.
+1.  Click **Service management** \> **Service orders** \> **Service orders**.
 
 2.  Click the **Service order** tab. On the **Action Pane**, in the **Service level agreement** group, click **Stop**.
 

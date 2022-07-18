@@ -2,9 +2,9 @@
 # required metadata
 
 title: Quick view module
-description: This topic covers quick view modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This article covers quick view modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 01/28/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-#ms.search.scope: Retail, Core, Operations
+#
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Release 10.0.17
 
 [!include [banner](includes/banner.md)]
 
-This topic covers quick view modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers quick view modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 The quick view module lets users quickly view product information when they browse products on a list page, and add one or more products to the cart from the list page, without having to go to the product details page (PDP). The quick view module provides an overview of the product information that users require to make an "add to cart" decision. It also provides a link to the PDP, so that users can view additional product details and purchase options.
 
@@ -66,8 +66,8 @@ A quick view module can be added to the product collection and search results mo
 To add a quick view module to a product collection module in Commerce site builder, follow these steps.
 
 1. Go to **Pages**, and then select the home page for the Fabrikam site.
-1. Go to any **Product Collection** module on the homepage, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Quick View** module, and then select **OK**.
+1. Go to any **Product Collection** module on the homepage, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Quick View** module, and then select **OK**.
 1. In the properties pane of the **Quick View** module, select **Heading**. In the **Heading** dialog box, set the **Heading Level** field to **H2**, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the page, and then select **Publish** to publish it.
 

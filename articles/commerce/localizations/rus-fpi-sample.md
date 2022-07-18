@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fiscal printer integration sample for Russia
-description: This topic provides an overview of the fiscal integration sample for Russia in Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of the fiscal integration sample for Russia in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 manager: annbe
 ms.date: 09/21/2021
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the fiscal integration sample for Russia in Microsoft Dynamics 365 Commerce.
+This article provides an overview of the fiscal integration sample for Russia in Microsoft Dynamics 365 Commerce.
 
 The Dynamics 365 Commerce functionality for Russia includes a sample integration of the point of sale (POS) with a fiscal printer. This sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and supports the application programming interface (API) of fiscal printers from [ATOL](http://integration.atol.ru/). It enables communication with a fiscal printer that is connected via a communication (COM) port by using a native software driver. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
@@ -144,7 +144,7 @@ To enable the fiscal registration process for Russia in Commerce headquarters, f
 
 ### Configure channel components
 
-The fiscal printer integration sample for Russia is part of the Retail SDK. The sample is located in the **src\\FiscalIntegration\\AtolFiscalPrinterSample** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31/src/FiscalIntegration/AtolFiscalPrinterSample)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
+The fiscal printer integration sample for Russia is part of the Retail SDK. The sample is located in the **src\\FiscalIntegration\\AtolFiscalPrinterSample** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository (for example, [the sample in release/9.31](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.31/src/FiscalIntegration/AtolFiscalPrinterSample)). The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Retail SDK, see [Retail SDK architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
 
 > [!WARNING]
 > Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this fiscal integration sample. You must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). The following sections describe how to use the previous version of the Retail SDK to enable the sample.

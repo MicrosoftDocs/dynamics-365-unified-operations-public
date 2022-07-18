@@ -2,8 +2,8 @@
 # required metadata
 
 title: Dynamics 365 payment data use
-description: This topic provides an overview of the data that is managed by the payment connectors for Microsoft Dynamics 365.
-author: rubendel
+description: This article provides an overview of the data that is managed by the payment connectors for Microsoft Dynamics 365.
+author: BrianShook
 ms.date: 12/03/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2018-11-06
 ms.dyn365.ops.version: AX 8.1.2
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 8.1.2
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of the data that is managed by the payment connectors for Microsoft Dynamics 365.
+This article provides an overview of the data that is managed by the payment connectors for Microsoft Dynamics 365.
 
 ## Key terms
 
@@ -42,7 +42,7 @@ This topic provides an overview of the data that is managed by the payment conne
 
 ## Overview
 
-This topic provides specific details about the following areas with respect to data that is managed by the payment connectors:
+This article provides specific details about the following areas with respect to data that is managed by the payment connectors:
 
 - **[Data used in card-present scenarios](#data-used-in-card-present-scenarios)** – This section provides a list and descriptions of data fields that are passed to the payment connector for card-present scenarios.
 - **[Data used in card-not-present scenarios](#data-used-in-card-not-present-scenarios)** – This section provides a list and descriptions of data fields that are passed to the payment connector for card-not-present scenarios.
@@ -57,7 +57,7 @@ This section describes all data points that are sent to the payment connector fo
 
 | Field | Description |
 |---|---|
-| merchantInformation | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
+| merchantInformation | The merchant information that is defined on the **POS hardware profile** page in the finance and operations client. |
 | invoiceNumber | The unique invoice number that the POS generates to track the sales transaction. |
 
 #### UpdateLineItemsPaymentTerminalDeviceRequest
@@ -84,7 +84,7 @@ This section describes all data points that are sent to the payment connector fo
 |---|---|
 | amount | The amount to capture. |
 | currency | The currency for the amount to capture. |
-| paymentPropertiesXml | The content of the **PaymentSdkData** object that is returned by the **AuthorizePaymentTerminalDeviceRequest** or **RefundPaymentTerminalDeviceRequest** request, and that is used to support stateful properties between the requests. For more details, see the [Payment SDK data](#payment-sdk-data) section later in this topic. |
+| paymentPropertiesXml | The content of the **PaymentSdkData** object that is returned by the **AuthorizePaymentTerminalDeviceRequest** or **RefundPaymentTerminalDeviceRequest** request, and that is used to support stateful properties between the requests. For more details, see the [Payment SDK data](#payment-sdk-data) section later in this article. |
 
 #### VoidPaymentTerminalDeviceRequest
 
@@ -92,7 +92,7 @@ This section describes all data points that are sent to the payment connector fo
 |---|---|
 | amount | The amount of the payment to void. |
 | currency | The currency for the payment to void. |
-| paymentPropertiesXml | The content of the **PaymentSdkData** object that is returned by the **AuthorizePaymentTerminalDeviceRequest** or **RefundPaymentTerminalDeviceRequest** request, and that is used to support stateful properties between the requests. For more details, see the [Payment SDK data](#payment-sdk-data) section later in this topic. |
+| paymentPropertiesXml | The content of the **PaymentSdkData** object that is returned by the **AuthorizePaymentTerminalDeviceRequest** or **RefundPaymentTerminalDeviceRequest** request, and that is used to support stateful properties between the requests. For more details, see the [Payment SDK data](#payment-sdk-data) section later in this article. |
 
 #### RefundPaymentTerminalDeviceRequest
 
@@ -151,7 +151,7 @@ This section describes data that is sent to the payment connector for card-not-p
 
 | Namespace | Field | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
+| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the finance and operations client. |
 | PaymentCard | Last4Digits | The last four digits of the card that is used for the payment. | 
 | PaymentCard | UniqueCardId | The unique randomized identifier of the card that is used for the payment. |
 | PaymentCard | ExpirationYear | The expiration year of the card that is used for the payment. |
@@ -165,24 +165,24 @@ This section describes data that is sent to the payment connector for card-not-p
 | TransactionData | Amount | The total amount of the transaction. |
 | TransactionData | CurrencyCode | The currency code for the transaction. |
 | TransactionData | TerminalId | The unique identifier of the terminal where the transaction occurred. |
-| PurchaseLevelData | L2Data | The list of "Level 2" data. For more details, see the [L2 data](#l2-data) section later in this topic. |
-| PurchaseLevelData | L3Data | The list of "Level 3" data. For more details, see the [L3 data](#l3-data) section later in this topic. |
+| PurchaseLevelData | L2Data | The list of "Level 2" data. For more details, see the [L2 data](#l2-data) section later in this article. |
+| PurchaseLevelData | L3Data | The list of "Level 3" data. For more details, see the [L3 data](#l3-data) section later in this article. |
 
 #### Capture
 
 | Namespace | Field | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
+| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the finance and operations client. |
 | TransactionData | Amount | The total amount of the transaction. |
 | TransactionData | CurrencyCode | The currency code for the transaction. |
-| PurchaseLevelData | L2Data | The list of "Level 2" data. For more details, see the [L2 data](#l2-data) section later in this topic. |
-| PurchaseLevelData | L3Data | The list of "Level 3" data. For more details, see the [L3 data](#l3-data) section later in this topic. |
+| PurchaseLevelData | L2Data | The list of "Level 2" data. For more details, see the [L2 data](#l2-data) section later in this article. |
+| PurchaseLevelData | L3Data | The list of "Level 3" data. For more details, see the [L3 data](#l3-data) section later in this article. |
 
 #### Void
 
 | Namespace | Field | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
+| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the finance and operations client. |
 | TransactionData | Amount | The total amount of the transaction. |
 | TransactionData | CurrencyCode | The currency code for the transaction. |
 
@@ -190,7 +190,7 @@ This section describes data that is sent to the payment connector for card-not-p
 
 | Namespace | Field | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
+| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the finance and operations client. |
 | PaymentCard | Last4Digits | The last four digits of the card that is used for the payment. | 
 | PaymentCard | UniqueCardId | The unique randomized identifier of the card that is used for the payment. |
 | PaymentCard | ExpirationYear | The expiration year of the card that is used for the payment. |
@@ -204,14 +204,14 @@ This section describes data that is sent to the payment connector for card-not-p
 | TransactionData | Amount | The total amount of the transaction. |
 | TransactionData | CurrencyCode | The currency code for the transaction. |
 | TransactionData | TerminalId | The unique identifier of the terminal where the transaction occurred. |
-| PurchaseLevelData | L2Data | The list of "Level 2" data. For more details, see the [L2 data](#l2-data) section later in this topic. |
-| PurchaseLevelData | L3Data | The list of "Level 3" data. For more details, see the [L3 data](#l3-data) section later in this topic. |
+| PurchaseLevelData | L2Data | The list of "Level 2" data. For more details, see the [L2 data](#l2-data) section later in this article. |
+| PurchaseLevelData | L3Data | The list of "Level 3" data. For more details, see the [L3 data](#l3-data) section later in this article. |
 
 #### GetPaymentAcceptPoint 
 
 | Namespace | Field | Description |
 |---|---|---|
-| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the Finance and Operations client. |
+| MerchantAccount | MerchantId | The merchant information that is defined on the **POS hardware profile** page in the finance and operations client. |
 | PaymentCard | Name | The name of the cardholder. |
 | PaymentCard | StreetAddress | The street of the billing address that is associated with the card that is used for the payment. |
 | PaymentCard | City | The city of the billing address that is associated with the card that is used for the payment. |
@@ -333,9 +333,9 @@ This section describes data that is sent to the payment connector for card-not-p
 | L3Data | MiscellaneousCharges\[\].ChargeType | The list of charge types that are applied to the specific line item part of the order. |
 | L3Data | MiscellaneousCharges\[\].ChargeAmount | The list of charge amounts that are applied to the specific line item part of the order. |
 
-## Related topics
+## Related articles
 
-- **[Create an end-to-end payment integration for a payment terminal](/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)** – This topic describes how to create a custom payment connector.
+- **[Create an end-to-end payment integration for a payment terminal](/dynamics365/unified-operations/retail/dev-itpro/end-to-end-payment-extension)** – This article describes how to create a custom payment connector.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Revenue recognition reallocation
-description: This topic provides information about reallocation, which enables organizations to recalculate revenue prices when the terms of a contractual sale are changed. It includes links to other topics that describe how to recognize revenue in multiple scenarios.
+description: This article provides information about reallocation, which enables organizations to recalculate revenue prices when the terms of a contractual sale are changed. It includes links to other topics that describe how to recognize revenue in multiple scenarios.
 author: kweekley
 ms.date: 09/09/2021
 ms.topic: index-page
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: Customer
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -63,7 +63,7 @@ One parameter affects the reallocation process.
 
 Because reallocation can be done on a sales order that is partially or fully invoiced, any previous accounting entries for the invoice must be corrected by using the new, reallocated revenue prices. This correction is done by reversing the original invoice's accounting entry and posting a new accounting entry that is based on the reallocated revenue prices.
 
-Every organization must decide whether the correction should update only General ledger, or whether it should also update Accounts receivable. The decision that is reached determines the appropriate setting of the **Post invoice corrections to Accounts receivable** option on the **Revenue recognition** tab of the **General ledger parameters** page (**Revenue recognition \> Setup \> General ledger parameters**). The appropriate setting depends on the specific scenario. For more information about possible scenarios, use the links in the [Scenarios for reallocation](#scenarios-for-reallocation) section later in this topic.
+Every organization must decide whether the correction should update only General ledger, or whether it should also update Accounts receivable. The decision that is reached determines the appropriate setting of the **Post invoice corrections to Accounts receivable** option on the **Revenue recognition** tab of the **General ledger parameters** page (**Revenue recognition \> Setup \> General ledger parameters**). The appropriate setting depends on the specific scenario. For more information about possible scenarios, use the links in the [Scenarios for reallocation](#scenarios-for-reallocation) section later in this article.
 
 [![Revenue recognition tab on the General ledger parameters page.](./media/01_RevRecScenarios.png)](./media/01_RevRecScenarios.png)
 
@@ -95,7 +95,7 @@ To start the reallocation process, select **Reallocate price with new order line
 
 [![Reallocate price with new order lines page.](./media/02_RevRecScenarios.png)](./media/02_RevRecScenarios.png)
 
-The upper grid on the **Reallocate price with new order lines** page is named **Sales**. It lists the sales orders for the customer. Select the sales orders that must be reallocated. If a sales order has a reallocation ID, it has already been marked for reallocation by another user. If one or more sales orders were previously reallocated and must be included in another reallocation, the reallocation of those sales orders must first be undone. It can then be included in a new reallocation. For more detailed information, see the [Undo a reallocation](#undo-a-reallocation) and [Reallocate multiple times](#reallocate-multiple-times) sections later in this topic.
+The upper grid on the **Reallocate price with new order lines** page is named **Sales**. It lists the sales orders for the customer. Select the sales orders that must be reallocated. If a sales order has a reallocation ID, it has already been marked for reallocation by another user. If one or more sales orders were previously reallocated and must be included in another reallocation, the reallocation of those sales orders must first be undone. It can then be included in a new reallocation. For more detailed information, see the [Undo a reallocation](#undo-a-reallocation) and [Reallocate multiple times](#reallocate-multiple-times) sections later in this article.
 
 The lower grid on the page is named **Lines**. After you select one or more sales orders in the **Sales** grid, the **Lines** grid shows the sales order lines. Select the sales order lines that must be reallocated. If you selected only one sales order, lines on the same sales order must be reallocated. This situation can occur when one of the sales order lines was previously invoiced, and then a new line was added, or an existing line was removed or canceled. If a line was removed, it won't appear in the grid. Therefore, it can't be selected. However, it will still be considered when the reallocation process is run.
 

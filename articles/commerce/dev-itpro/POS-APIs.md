@@ -2,7 +2,7 @@
 # required metadata
 
 title: Point of sale (POS) APIs
-description: This topic contains a list of available POS APIs and how to access them.
+description: This article contains a list of available POS APIs and how to access them.
 author: mugunthanm 
 ms.date: 11/03/2020
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Saudi Arabia overview
-description: This topic provides links to documentation resources for Saudi Arabia. 
+description: This article provides links to documentation resources for Saudi Arabia. 
 author: ShylaThompson
 ms.date: 10/26/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Saudi Arabia
 # ms.search.industry: 
 ms.author: roschlom
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for Saudi Arabia. 
+This article provides links to documentation resources for Saudi Arabia. 
 
 - [Sales tax](apac-sau-sales-tax.md)
 - [Zakat reporting](emea-sau-zakat-reporting.md)

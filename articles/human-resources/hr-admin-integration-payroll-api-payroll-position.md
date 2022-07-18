@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payroll details for Positions
-description: This topic provides details and an example query for the Payroll details for the Positions entity in Dynamics 365 Human Resources.
+description: This article provides details and an example query for the Payroll details for the Positions entity in Dynamics 365 Human Resources.
 author: jcart
 ms.date: 04/07/2021
 ms.topic: article
@@ -26,9 +26,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Payroll position
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes the Payroll Positions entity in Dynamics 365 Human Resources.
+This article describes the Payroll Positions entity in Dynamics 365 Human Resources.
 
 Physical name: mshr_payrollpositionentity.
 

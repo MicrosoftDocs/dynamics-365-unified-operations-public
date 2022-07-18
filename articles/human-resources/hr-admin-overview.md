@@ -2,10 +2,10 @@
 # required metadata
 
 title: Administration overview
-description: This topic provides a list of the help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
+description: This article provides a list of the help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/11/2021
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,9 +15,9 @@ ms.search.form: SystemAdministrationWorkspaceForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -29,11 +29,14 @@ ms.dyn365.ops.version: Human Resources
 
 # Administration overview
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-This topic provides a list of the help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
+
+This article provides a list of the help topics and other resources to set up, manage, and troubleshoot Dynamics 365 Human Resources.
 
 - [System requirements](hr-admin-system-requirements.md)
 
@@ -104,7 +107,7 @@ This topic provides a list of the help topics and other resources to set up, man
 ## Additional resources
 
 ### eLearning courses
-For online courses and training, check out [Dynamics 365 Human Resources on Microsoft Learn](//learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+For online courses and training, check out [Dynamics 365 Human Resources on Microsoft Learn](/learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
 
 ### Videos
 
@@ -114,6 +117,6 @@ Check out the how-to videos that are now available on the [Microsoft Dynamics 36
 
 - [What's new or changed in Human Resources](hr-admin-whats-new.md)
 - [Developer Guide](hr-developer-overview.md)
-- [User Guide](hr-hrpro-overview.md)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

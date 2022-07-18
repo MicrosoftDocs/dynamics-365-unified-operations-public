@@ -2,7 +2,7 @@
 # required metadata
 
 title: Job exempt status
-description: This topic describes the Job exempt status option set for Dynamics 365 Human Resources.
+description: This article describes the Job exempt status option set for Dynamics 365 Human Resources.
 author: jaredha
 ms.date: 02/05/2021
 ms.topic: article
@@ -26,9 +26,12 @@ ms.dyn365.ops.version: Human Resources
 
 # Job exempt status
 
+
+[!INCLUDE [PEAP](../includes/peap-1.md)]
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes the Job exempt status option set for Dynamics 365 Human Resources.
+This article describes the Job exempt status option set for Dynamics 365 Human Resources.
 
 Physical name: cdm_jobexemptstatus
 

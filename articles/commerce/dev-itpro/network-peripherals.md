@@ -2,8 +2,8 @@
 # required metadata
 
 title: Support for network peripherals
-description: This topic provides an overview of network peripherals that are supported in the store.
-author: rubendel
+description: This article provides an overview of network peripherals that are supported in the store.
+author: BrianShook
 ms.date: 05/26/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2019-03-31
 ms.dyn365.ops.version: AX 7.0.1
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the support for and setup of network peripherals in the store.
+This article describes the support for and setup of network peripherals in the store.
 
 ## Key terms
 

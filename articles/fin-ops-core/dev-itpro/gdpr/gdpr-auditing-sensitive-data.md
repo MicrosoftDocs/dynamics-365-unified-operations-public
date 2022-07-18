@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage access to sensitive data
-description: This topic provides information about the user log functionality.
+description: This article provides information about the user log functionality.
 author: ToddLefor
 ms.date: 12/31/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 10031
 ms.search.region: Global

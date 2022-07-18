@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product identifiers 
-description: This topic provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
+description: This article provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
 author: t-benebo
 ms.date: 03/27/2020
 ms.topic: article
@@ -27,11 +27,11 @@ ms.search.validFrom: 2017-12-31
 
 # Product identifiers
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
+This article provides information about the various types of product identifiers and explains how you can add product identifiers in your product data.
 
 When you work with products on the shop floor or in a warehouse in Microsoft Dynamics ERP or Microsoft Dynamics CRM, you must have a good strategy for identifying those products and product variants.
 
@@ -41,7 +41,7 @@ In Dynamics 365 Supply Chain Management, the primary identifier for a product is
 
 In many cases, the product number isn't originally created in Dynamics 365 Supply Chain Management. Instead, it's associated with a product in a product lifecycle management (PLM) system or a product data management (PDM) system. In this case, you use data entities to import the products and product variants. Supply Chain Management then uses the numbers in all operations.
 
-When you implement Supply Chain Management, you should give special consideration to your strategy for product numbers. A good numbering system improves logistics flows and helps prevent errors. A good product identifier has a maximum of 15 characters. Ideally, it has fewer than 10 characters and includes no more than five classifying characters. You can also use search names to enable quick searches. A search name is an extra name that represents the classifications of a product.
+When you implement Supply Chain Management, you should give special consideration to your strategy for product numbers. A good numbering system improves logistics flows and helps prevent errors. A good product identifier should usually have 20 characters or less, but we generally recommend using fewer than 10 characters and including no more than 5 classifying characters. You can also use search names to enable quick searches. A search name is an extra name that represents the classifications of a product.
 
 When you use Microsoft Dataverse, the product number in Supply Chain Management is also the product number in Microsoft Dataverse. Product variants are synchronized to Dataverse as distinct products.
 
@@ -127,7 +127,7 @@ Unfortunately, there is no standard functionality that lets you search for produ
 | Products V2 | Product number, product search name, product name, product description | Product number, product search name, product name, product description | Depending on the settings of the entity and the number sequence for the product number, the product number can be automatically created at the time of import. |
 | Product variants | Product number, product search name, product name, product description | Product number, product search name, product name, product description | Depending on the product nomenclature template, the product number can be automatically created at the time of import. However, you can import any unique product number, and that product number doesn't have to follow the structure of the product nomenclature templates. |
 | Product translations | Product name, product description | Product name, product description | This entity overwrites any language. When the name or description of a legal entity's primary language is overwritten, the name and description of the product itself is changed. |
-| Released product creation V2 | Item number, product number, item search name| Item number, product number, item search name, product search name, product name | This entity can be a challenge when number sequences are used during the creation of new released products. Both the **Item number** number sequence and the **Product number** number sequence have an influence. However, the **Item number** number sequence is per legal entity, whereas the **Product number** number sequence is global. Therefore, we don't recommend that you use the **Item number** number sequence when you deploy new released products. Obviously, when the entity is used to release an existing product, the product number must be given in the entity. For more information, see the "Product and item number sequences" section in this topic. |
+| Released product creation V2 | Item number, product number, item search name| Item number, product number, item search name, product search name, product name | This entity can be a challenge when number sequences are used during the creation of new released products. Both the **Item number** number sequence and the **Product number** number sequence have an influence. However, the **Item number** number sequence is per legal entity, whereas the **Product number** number sequence is global. Therefore, we don't recommend that you use the **Item number** number sequence when you deploy new released products. Obviously, when the entity is used to release an existing product, the product number must be given in the entity. For more information, see the "Product and item number sequences" section in this article. |
 | Released product variants | Item number, product dimensions, product number | Product number, product search name, product name, product description, product dimensions | Like the **Product variants** entity, this entity can be used to create new products that either follow the product nomenclature template or use their own product numbers for the variant. |
 | External item description for customers | Customer item number, customer item name, customer description, customer account | Customer item number, customer item name, customer description, customer account | A group of customers (for example, a buyer association) can be aggregated into one group by using the **External item description customer groups** entity. |
 | External item description for vendors | Vendor item number, vendor item name, vendor description, vendor account | Vendor item number, vendor item name, vendor description, vendor account | A group of vendors (for example, a sales association or industry organization) can be aggregated into one group by using the **External item description vendor groups** entity. |
@@ -186,7 +186,7 @@ Follow these steps to configure the environment.
 
 You can now use the **Product entity common data service identifier entity**, **Product entity identifier code**, and **Product entity identifier scope** data entities to export the identifiers for any target system.
 
-## Related topic
+## Related article
 
 [Search for products and product variants during order entry](search-products-product-variants.md)
 

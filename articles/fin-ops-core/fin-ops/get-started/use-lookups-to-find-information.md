@@ -2,7 +2,7 @@
 # required metadata
 
 title: Find information by using lookups
-description: In this topic, you will learn about lookup features and will receive some helpful tips to get the optimal use out of lookups in the system.  
+description: In this article, you will learn about lookup features and will receive some helpful tips to get the optimal use out of lookups in the system.  
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Many fields have lookups that can help you easily find the correct or desired value. Several enhancements have been added to lookups that make these controls more usable and make users more productive. In this topic, you will learn about these new lookup features and will receive some helpful tips to get the optimal use out of lookups in the system.
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
+Many fields have lookups that can help you easily find the correct or desired value. Several enhancements have been added to lookups that make these controls more usable and make users more productive. In this article, you will learn about these new lookup features and will receive some helpful tips to get the optimal use out of lookups in the system.
 
 ## Responsive lookups
 

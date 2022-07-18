@@ -2,8 +2,8 @@
 # required metadata
 
 title: Work line details
-description: This topic provides information about the Work line details page, which shows a comprehensive, sortable, and filterable list of the individual work lines in your system.
-author: mirzaab
+description: This article provides information about the Work line details page, which shows a comprehensive, sortable, and filterable list of the individual work lines in your system.
+author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -31,7 +31,7 @@ The **Work line details** page shows a comprehensive, sortable, and filterable l
 
 ## Turn on the work line details feature
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
+As of Supply Chain Management version 10.0.21, this feature is turned on by default. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable or disable it if needed. Here, the feature is listed as:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Work line details*

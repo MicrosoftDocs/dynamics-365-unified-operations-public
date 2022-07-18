@@ -1,6 +1,6 @@
 ---
 title: Intrusive customizations
-description: This topic defines the characteristics of an intrusive customization.
+description: This article defines the characteristics of an intrusive customization.
 author: MichaelFruergaardPontoppidan
 ms.date: 04/10/2018
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 
@@ -26,7 +26,7 @@ ms.dyn365.ops.version: Platform update 9
 
 [!include [banner](../includes/banner.md)]
 
-This topic defines the characteristics of an intrusive customization. Intrusive customizations are the major obstacle to keeping continuous upgrade costs close to zero. Some types of intrusive customizations can be prevented by tooling, whereas other types remain the responsibility of the author of the extension. The X++ compiler and Microsoft Visual Studio designers will prevent some types of intrusive customizations. However, a subset of intrusive customizations can't be detected by tooling but might still prevent continuous upgrades. Ultimately, the developer is responsible for avoiding intrusive customizations.
+This article defines the characteristics of an intrusive customization. Intrusive customizations are the major obstacle to keeping continuous upgrade costs close to zero. Some types of intrusive customizations can be prevented by tooling, whereas other types remain the responsibility of the author of the extension. The X++ compiler and Microsoft Visual Studio designers will prevent some types of intrusive customizations. However, a subset of intrusive customizations can't be detected by tooling but might still prevent continuous upgrades. Ultimately, the developer is responsible for avoiding intrusive customizations.
 
 A customization that violates any of the following principles is intrusive.
 

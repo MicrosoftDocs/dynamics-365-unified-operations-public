@@ -1,11 +1,11 @@
 ---
 title: Troubleshoot issues during initial setup
-description: This topic provides information that can help you fix issues that occur during the initial setup of dual-write integration.
+description: This article provides information that can help you fix issues that occur during the initial setup of dual-write integration.
 author: RamaKrishnamoorthy 
 ms.date: 08/10/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
@@ -15,22 +15,22 @@ ms.search.validFrom: 2020-03-16
 
 [!include [banner](../../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
 
-This topic provides troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse. Specifically, it provides information that can help you fix issues that might occur during the initial setup of dual-write integration.
+
+This article provides troubleshooting information for dual-write integration between finance and operations apps and Dataverse. Specifically, it provides information that can help you fix issues that might occur during the initial setup of dual-write integration.
 
 > [!IMPORTANT]
-> Some of the issues that this topic addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
+> Some of the issues that this article addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
 
-## You can't link a Finance and Operations app to Dataverse
+## You can't link a finance and operations app to Dataverse
 
-**Required role to set up dual-write:** System administrator in Finance and Operations apps and Dataverse.
+**Required role to set up dual-write:** System administrator in finance and operations apps and Dataverse.
 
 Errors on the **Setup link to Dataverse** page are usually caused by incomplete setup or permissions issues. Make sure that the whole health check passes on the **Setup link to Dataverse** page, as shown in the following illustration. You can't link dual-write unless the whole health check passes.
 
 ![Successful health check.](media/health_check.png)
 
-You must have Azure AD tenant admin credentials to link the Finance and Operations and Dataverse environments. After you link the environments, users can sign in by using their account credentials and update an existing table map.
+You must have Azure AD tenant admin credentials to link the finance and operations and Dataverse environments. After you link the environments, users can sign in by using their account credentials and update an existing table map.
 
 ## Find the limit on the number of legal tables or companies that can be linked for dual-write
 
@@ -54,7 +54,7 @@ Dual-write does not support multiple legal entities/companies with the same name
 
 To unblock the customer, remove duplicate records from **cdm_company** table in Dataverse. Also, if the **cdm_company** table has records with blank name, remove or correct those records.
 
-## Error when opening the Dual-write page in Finance and Operations apps
+## Error when opening the Dual-write page in finance and operations apps
 
 You might receive the following error message when you try to link a Dataverse environment for dual-write:
 
@@ -69,22 +69,23 @@ This error occurs when the app consent step is not complete. You can validate if
     `https://login.microsoftonline.com/common/oauth2/authorize?client_id=33976c19-1db5-4c02-810e-c243db79efde&response_type=code&prompt=admin_consent`
 
 + Select **Accept** to consent. You are providing the consent to install the app (with `id=33976c19-1db5-4c02-810e-c243db79efde`) in your tenant.
-+ This app is required for Dataverse to communicate to Finance and Operations apps.
++ This app is required for Dataverse to communicate to finance and operations apps.
 
     ![Initial sync setup troubleshooting.](media/Initial-sync-setup-troubleshooting-1.png)
 
 > [!NOTE]
 > If this doesn't work, launch the URL in private mode of Microsoft Edge or incognito mode of Chrome .
 
-## Finance and Operations environment is not discoverable
+## Finance and operations environment is not discoverable
 
 You might receive the following error message:
 
-*Finance and Operations apps environment \*\*\*.cloudax.dynamics.com is not discoverable.*
+*Finance and operations apps environment \*\*\*.cloudax.dynamics.com is not discoverable.*
 
 There are two things that can cause an issue with environment not being discoverable:
 
-+ The user used for login is not in the same tenant as the Finance and Operations instance.
-+ There are some legacy Finance and Operations instances that were Microsoft-hosted that had an issue with discovery. To fix this, update the Finance and Operations instance. The environment becomes discoverable with any update.
++ The user used for login is not in the same tenant as the finance and operations instance.
++ There are some legacy finance and operations instances that were Microsoft-hosted that had an issue with discovery. To fix this, update the finance and operations instance. The environment becomes discoverable with any update.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

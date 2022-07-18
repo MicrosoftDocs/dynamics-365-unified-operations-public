@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mobile invoice approvals
-description: This topic is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case. 
+description: This article is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case. 
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, IT Pro
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18
@@ -31,18 +31,18 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-Mobile capabilities let a business user design mobile experiences. For advanced scenarios, the platform also lets developers extend the capabilities as they desire. The most effective way to learn some of the new concepts on mobile is to go through the process of designing a few scenarios. This topic is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case. This topic should help you design other variations of the scenarios and can also be applied to other scenarios that aren’t related to vendor invoices.
+Mobile capabilities let a business user design mobile experiences. For advanced scenarios, the platform also lets developers extend the capabilities as they desire. The most effective way to learn some of the new concepts on mobile is to go through the process of designing a few scenarios. This article is intended to provide a practical approach to designing mobile scenarios by taking vendor invoice approvals for mobile as a use case. This article should help you design other variations of the scenarios and can also be applied to other scenarios that aren’t related to vendor invoices.
 
 ## Prerequisites
 
-| Prerequisite                                                                                            | Description                                                                                                                                                          |
-|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Prerequisite                                                                                            | Description                       |
+|---------------------------------------------------------------------------------------------------------|--------------------------------------------|
 | Mobile handbook pre-read                                                                                |[Mobile platform](../../fin-ops-core/dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 Finance                                                                              | An environment that has version 1611 and Platform update 3 (November 2016)                   |
 | Install hotfix KB 3204341.                                                                              | Task recorder can erroneously record two Close commands for dropdown dialogs; this is included in Platform update 3 (November 2016 update). |
 | Install hotfix KB 3207800.                                                                              | This hotfix enables attachments to be viewed on the mobile client; this is included in Platform update 3 (November 2016 update).           |
 | Install hotfix KB 3208224.                                                                              | Application code for the mobile vendor invoice approval application; this is included in version 7.0.1 (May 2016).                          |
-| An Android or iOS or a Windows device that has the mobile app installed. | Search for the app in the appropriate app store.                                                                                                                     |
+| An Android or iOS or a Windows device that has the mobile app installed. | Search for the app in the appropriate app store.                            |
 
 ## Introduction
 Mobile approvals for vendor invoices require the three hotfixes that are mentioned in the “Prerequisites” section. These hotfixes don’t provide a workspace for the invoice approvals. To learn what a workspace is in the context of mobile, read the mobile handbook that is mentioned in the “Prerequisites” section. The invoice approvals workspace must be designed. 
@@ -57,11 +57,11 @@ Every organization orchestrates and defines its business process for vendor invo
     -   Do the invoices also have accounting distributions on the invoice header? If so, should these accounting distributions be available on the device?
 
     > [!NOTE]
-    > This topic doesn’t explain how to edit accounting distributions, because this functionality isn’t currently supported for mobile scenarios.
+    > This article doesn’t explain how to edit accounting distributions, because this functionality isn’t currently supported for mobile scenarios.
 
 -   Will users want to see attachments for the invoice on the device?
 
-The design of the mobile experience for invoice approvals will differ, depending on the answers to these questions. The objective is to optimize the user experience for the business process on mobile in an organization. In the rest of this topic, we will look at two scenario variations that are based on different answers to the preceding questions. 
+The design of the mobile experience for invoice approvals will differ, depending on the answers to these questions. The objective is to optimize the user experience for the business process on mobile in an organization. In the rest of this article, we will look at two scenario variations that are based on different answers to the preceding questions. 
 
 As a general guidance, when working with the mobile designer, make sure to 'publish' the changes to prevent losing the updates.
 

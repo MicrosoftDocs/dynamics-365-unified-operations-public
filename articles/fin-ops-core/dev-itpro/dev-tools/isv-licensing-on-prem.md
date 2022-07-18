@@ -1,11 +1,13 @@
 ---
 title: Independent software vendor (ISV) licensing (on-premises)
-description: This topic describes the independent software vendor (ISV) licensing feature for on-premises environments.
+description: This article describes the independent software vendor (ISV) licensing feature for on-premises environments.
 author: jorisdg
-ms.date: 03/08/2018
+ms.date: 11/29/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.prod: dynamics-365
+ms.service: 
+ms.reviewer: tfehr
 ms.custom: 70381
 ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 ms.search.region: Global
@@ -19,10 +21,10 @@ ms.dyn365.ops.version: AX 7.3.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to import independent software vendor (ISV) licenses into an on-premises deployment.
+This article explains how to import independent software vendor (ISV) licenses into an on-premises deployment.
 
 > [!IMPORTANT]
-> The process that is described in this topic is available only for customers who have on-premises environments that are deployed with Platform update 12 or later.
+> The process that is described in this article is available only for customers who have on-premises environments that are deployed with Platform update 12 or later.
 
 For general information about the benefits of ISV licensing, information about how to enable licensing for your solution, and other information that is related to self-signed certificates, see [Independent software vendor (ISV) licensing](isv-licensing.md).
 
@@ -66,7 +68,7 @@ The following procedure can be used for a sandbox environment or a production en
     ```
 
 3. Copy the licenses that are generated to a folder on one of the machines that is running fabric:/AXSF, and verify that fabric:/AXSF is healthy.
-4. Run the **Import-LicensePackage.ps1** script from one of the AOS machines. You can find this script in the latest **Deployment scripts** folder on the **Model** tab in the Shared asset library in LCS. Here is a list of the parameters that you must pass to the script:
+4. Run the **Import-LicensePackage.ps1** script from one of the AOS machines. You can find this script in the latest **Microsoft Dynamics 365 Finance + Operations (on-premises), Deployment scripts** folder on the **Model** tab in the Shared asset library in LCS. Here is a list of the parameters that you must pass to the script:
 
    - **LicenseFilesPath** – The path of a folder that contains the license files that must be imported. 
    - **SqlUser** – The same user who is specified in the credentials.json file to run the AOS.

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set up pay cycles and pay periods
-description: This topic explains setup variations in pay cycles, how to generate periods for a pay cycle, and how to assign periods to a worker's position. 
-author: andreabichsel
+description: This article explains setup variations in pay cycles, how to generate periods for a pay cycle, and how to assign periods to a worker's position. 
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: PayrollPayCycle
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 222624
 ms.assetid: d635184b-0905-43ab-841d-9f6cc95ab861
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-Pay cycles determine the intervals that workers are paid in. This topic explains setup variations, how to generate periods for a pay cycle, and how to assign periods to a worker's position.
+Pay cycles determine the intervals that workers are paid in. This article explains setup variations, how to generate periods for a pay cycle, and how to assign periods to a worker's position.
 
 A pay cycle determines how often payroll is run and the specific days that workers are paid on. For example, a pay cycle is monthly, and employees are paid on the last day of the month. Alternatively, a pay cycle is weekly, and employees are paid on the Tuesday after the end of the pay period.
 
@@ -83,7 +83,7 @@ The following table shows the number of pay periods that you enter to generate p
 | Biweekly            | 26                      | 130                       |
 | Weekly              | 52                      | 260                       |
 
-If you don't want to modify default payment dates at this point, the pay cycles are ready for you to use. You can assign the pay cycles to positions to control when workers in those positions are paid. For more information, see "Assign pay cycles to positions." later in this topic.
+If you don't want to modify default payment dates at this point, the pay cycles are ready for you to use. You can assign the pay cycles to positions to control when workers in those positions are paid. For more information, see "Assign pay cycles to positions." later in this article.
 
 You can also assign the pay periods that are associated with each pay cycle to the payroll calculation frequencies that determine the schedule for processing payroll elements, such as benefits or recurring earnings. For more information, see "Assign pay periods to payroll calculation frequencies" in [Set up pay cycles and pay periods](noam-usa-pay-cycle-pay-period-tasks-sample.md).
 

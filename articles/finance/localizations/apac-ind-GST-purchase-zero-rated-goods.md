@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchase of zero-rated goods
-description: This topic provides information about the purchase of zero-rated goods.
+description: This article provides information about the purchase of zero-rated goods.
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article

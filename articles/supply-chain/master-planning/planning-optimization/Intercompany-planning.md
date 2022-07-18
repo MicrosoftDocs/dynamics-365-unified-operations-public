@@ -2,8 +2,8 @@
 # required metadata
 
 title: Intercompany planning
-description: This topic describes intercompany planning and explains how to configure intercompany planning with Planning Optimization in Microsoft Dynamics 365 Supply Chain Management.
-author: ChristianRytt
+description: This article describes intercompany planning and explains how to configure intercompany planning with Planning Optimization in Microsoft Dynamics 365 Supply Chain Management.
+author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2020-12-02
 ms.dyn365.ops.version: 10.0.14
 
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: 10.0.14
 
 For some organizations, logistics operations depend on other legal entities (companies) in the organization. These operations are handled by using intercompany sales and purchases, because each legal entity has a separate chart of accounts.
 
-This topic describes intercompany planning and explains how to configure intercompany planning with Planning Optimization in Microsoft Dynamics 365 Supply Chain Management.
+This article describes intercompany planning and explains how to configure intercompany planning with Planning Optimization in Microsoft Dynamics 365 Supply Chain Management.
 
-This topic uses the following important intercompany terms:
+This article uses the following important intercompany terms:
 
 - **Upstream** – A relative reference in a firm or supply chain. It indicates movement in the direction of the raw material supplier.
 - **Downstream** – A relative reference in a firm or supply chain. It indicates movement in the direction of the customer.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Routes and operations
-description: This topic provides information about routes and operations. 
+description: This article provides information about routes and operations. 
 author: johanhoffmann
 ms.date: 03/18/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about routes and operations. A route defines the process for producing a product or product variant. It describes each step (operation) in the production process and the order that these steps must be performed in. For each step, the route also defines the required operations resources, the required setup time and run time, and how the cost should be calculated.
+This article provides information about routes and operations. A route defines the process for producing a product or product variant. It describes each step (operation) in the production process and the order that these steps must be performed in. For each step, the route also defines the required operations resources, the required setup time and run time, and how the cost should be calculated.
 
 ## Overview
 
@@ -227,7 +227,7 @@ When you use this approach, the **Operation relations** page becomes your primar
 If you don't specify an operations resource or resource group as part of the resource requirements for an operation, the applicable resources might operate at different speeds. Therefore, the time that is required in order to process an operation might vary. To resolve this issue, you can use the **Formula** field on the operation relation to specify how the process time is calculated. The following options are available:
 
 - **Standard** – (Default option) The calculation uses only the fields from the operation relation and multiplies the specified run time by the order quantity.
-- **Capacity** – The calculation includes the **Capacity** field from the operations resource. Therefore, the time is resource-dependent. The value that is specified on the operations resource is capacity per hour. The **Process time** is calculated as **Order quantity** divided by **Capacity**.
+- **Capacity** – The calculation includes the **Capacity** field from the operations resource. Therefore, the time is resource-dependent. The value that is specified on the operations resource is capacity per hour. The **Process time** is calculated as **Order quantity** divided by **Capacity**. The capacity value isn't specific to a particular unit of measure and therefore isn't converted based on the **Capacity unit** field, which is just a descriptive field that isn't used in calculations.
 - **Batch** – A batch capacity is calculated by using information from the operation relation. The number of batches and, therefore, the process time can then be calculated based on the order quantity.
 - **Resource batch** – This option is basically the same as the **Batch** option. However, the calculation includes the **Batch capacity** field from the operations resource. Therefore, the time is resource dependent.
 

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Client-side design APIs
-description: This topic provides an overview of the client-side design APIs and includes recommendations for using them.
-author: robinarh
-ms.date: 07/01/2017
-ms.topic: article
+description: This article provides an overview of the client-side design APIs and includes recommendations for using them.
+author: tonyafehr
+ms.date: 05/26/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
 
@@ -30,8 +30,9 @@ ms.dyn365.ops.version: Platform update 3
 # Client-side design APIs
 
 [!include [banner](../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../includes/mobile-app-deprecation-banner.md)]
 
-This topic provides an overview of the application programming interfaces (APIs) for client-side design and includes recommendations for using them.
+This article provides an overview of the application programming interfaces (APIs) for client-side design and includes recommendations for using them.
 
 ## Terminology
 The following list includes some frequently used terms that apply to the client-side design APIs.

@@ -3,7 +3,7 @@
 
 title: Correct a free text invoice
 description: This article explains how to correct a free text invoice that has been posted and reissue it as a corrected invoice.
-author: ShivamPandey-msft
+author: abruer
 ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: CustFreeInvoice
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 13991
 ms.assetid: 2a0a4789-8619-4974-bef9-0923cc848420
@@ -49,7 +49,7 @@ You can identify canceling and correcting invoices in two ways:
 -   The header of the free text invoice shows a status of **Cancelling invoice '\[invoice number\]'** or **Corrected invoice '\[invoice number\]'**.
 
 > [!NOTE]
-> This feature is available only if the **Free text invoice correction** configuration key is selected. For more information on how to enable Configuration keys refer to the Enable (or disable) configuration keys section in the [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) topic. 
+> This feature is available only if the **Free text invoice correction** configuration key is selected. For more information on how to enable Configuration keys refer to the Enable (or disable) configuration keys section in the [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) article. 
 
 
 

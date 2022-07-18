@@ -2,7 +2,7 @@
 # required metadata
 
 title: Email ER destination type
-description: This topic explains how to configure an email destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
+description: This article explains how to configure an email destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
 author: NickSelin
 ms.date: 08/03/2021
 ms.topic: article
@@ -145,7 +145,7 @@ To specify the type of email addresses that must be used at runtime, in the **Em
 
 ### Configuration email
 
-Select **Configuration email** as the email address type if the configuration that you use has a node in the data sources that returns either a single email address or multiple email addresses that are separated by semicolons (;). You can use [data sources](general-electronic-reporting.md#FormatComponentOutbound) and [functions](er-formula-language.md#Functions) in the formula designer to get a correctly formatted email address or correctly formatted email addresses that are separated by semicolons. For example, if you use the **ISO 20022 Credit Transfer** configuration, the node that represents the primary email address of a vendor from the vendor contact details that the covering letter should be sent to is `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
+Select **Configuration email** as the email address type if the configuration that you use has a node in the data sources that returns either a single email address or multiple email addresses that are separated by semicolons (;). You can use data sources and [functions](er-formula-language.md#Functions) in the formula designer to get a correctly formatted email address or correctly formatted email addresses that are separated by semicolons. For example, if you use the **ISO 20022 Credit Transfer** configuration, the node that represents the primary email address of a vendor from the vendor contact details that the covering letter should be sent to is `'$PaymentsForCoveringLetter'.Creditor.ContactDetails.Email`.
 
 [![Configuring an email address source.](./media/ER_Destinations-EmailDefineAddressSource2.png)](./media/ER_Destinations-EmailDefineAddressSource2.png)
 
@@ -167,7 +167,7 @@ The following illustration shows the structure of an ER format that was configur
 
 [![Structure of an ER format that generates outbound documents.](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
-The following illustration shows the process, as described in this topic, of grouping individual components and enabling the **Email** destination for the new group, so that a collection letter note is sent together with appropriate customer invoices as email attachments.
+The following illustration shows the process, as described in this article, of grouping individual components and enabling the **Email** destination for the new group, so that a collection letter note is sent together with appropriate customer invoices as email attachments.
 
 [![Grouping individual components and enabling the Email destination.](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 

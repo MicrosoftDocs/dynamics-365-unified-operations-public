@@ -5,7 +5,7 @@ title: Commerce runtime (CRT) architecture and configuration
 description: This article provides information about the architecture and configuration of the Commerce Runtime (CRT).
 author: AamirAllaq
 ms.date: 06/20/2017
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: ["218654", "intro-internal"]
 ms.assetid: ac422f7e-bc71-4b42-b8c1-4702c6c18421

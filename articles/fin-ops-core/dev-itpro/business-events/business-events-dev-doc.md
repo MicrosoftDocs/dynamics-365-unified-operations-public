@@ -2,23 +2,23 @@
 # required metadata
 
 title: Business events developer documentation
-description: This topic walks you through the development process and best practices for implementing business events.
-author: Sunil-Garg
-ms.date: 09/19/2019
+description: This article walks you through the development process and best practices for implementing business events.
+author: jaredha
+ms.date: 06/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: jaredha
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
 ---
@@ -27,17 +27,17 @@ ms.dyn365.ops.version: 2019-02-28
 
 [!include[banner](../includes/banner.md)]
 
-This topic walks you through the development process and best practices for implementing business events.
+This article walks you through the development process and best practices for implementing business events.
 
 ## What is a business event, and what isn't a business event?
 
-This question comes up every time that we start to think about use cases where business events can help. Is the creation of a vendor a business event? Is confirmation of a purchase order a business event? Is it a business event if you capture the event at the table level? Or should business events be captured only at the business logic level in a business process? These questions aren't just valid, but they are also a key topic of discussion when a solution is planned and architected for integration. The following guidelines can help with this thought process and decision making.
+This question comes up every time that we start to think about use cases where business events can help. Is the creation of a vendor a business event? Is confirmation of a purchase order a business event? Is it a business event if you capture the event at the table level? Or should business events be captured only at the business logic level in a business process? These questions aren't just valid, but they are also a key article of discussion when a solution is planned and architected for integration. The following guidelines can help with this thought process and decision making.
 
 ## Intent
 
 The intent behind capturing a business event must be clearly understood. In other words, what is the reason for capturing the business event, and how it will be used by the recipient?
 
-If your intent is to capture a business event so that you can take a business action outside Dynamics 365 Finance and Operations apps in response to a business event that occurs in Finance and Operations, you have a good use case for business events. The business action that is taken in response to the business event can be to notify users about the business event and/or to call into another business application to take a business action, such as creation of a sales order. It's important that you look at the business action generically and not base the need for a business event on the type of business action that will be taken.
+If your intent is to capture a business event so that you can take a business action outside finance and operations apps in response to a business event that occurs in the finance and operations apps, you have a good use case for business events. The business action that is taken in response to the business event can be to notify users about the business event and/or to call into another business application to take a business action, such as creation of a sales order. It's important that you look at the business action generically and not base the need for a business event on the type of business action that will be taken.
 
 If your intent is to transfer data to a recipient and, in effect, realize a data export scenario, you don't have a good use case for business events. In fact, the use of business events for data transfer scenarios is a misuse of the business events framework. Such scenarios must continue to use data export mechanisms that are already available in data management.
 
@@ -135,7 +135,7 @@ The process of implementing an extension of the **BusinessEventsBase** class is 
 5. Implement the **buildContract** method. Note that you need an **EventContract** stub for this step.
 
     ```xpp
-    [Wrappable(true), Replaceable(true)]
+    [Wrappable(false), Replaceable(false)]
     public BusinessEventsContract buildContract()
     {
         return
@@ -143,7 +143,7 @@ The process of implementing an extension of the **BusinessEventsBase** class is 
     }
     ```
 
-    For extensibility, the **buildContract** method must have the **Wrappable(true)** and **Replaceable(true)** attributes. The **buildContract** method is called only when a business event is enabled for a company.
+    The **buildContract** method is called only when a business event is enabled for a company.
 
 Here is the complete implementation of the "Sales order invoice posted" business event.
 
@@ -180,7 +180,7 @@ public class SalesInvoicePostedBusinessEvent extends BusinessEventsBase
     private void new()
     {
     }
-    [Wrappable(true), Replaceable(true)]
+    [Wrappable(false), Replaceable(false)]
     public BusinessEventsContract buildContract()
     {
         return SalesInvoicePostedBusinessEventContract::newFromCustInvoiceJour(custInvoiceJour);
@@ -217,10 +217,10 @@ The process of implementing a business event contract involves extending the **B
     private LegalEntityDataAreaId legalEntity;
     ```
 
-3. Implement a private initialization method.
+3. Implement a protected initialization method.
 
     ```xpp
-    private void initialize(CustInvoiceJour _custInvoiceJour)
+    protected void initialize(CustInvoiceJour _custInvoiceJour)
     {
         invoiceAccount = _custInvoiceJour.InvoiceAccount;
         invoiceId = _custInvoiceJour.InvoiceId;
@@ -233,7 +233,7 @@ The process of implementing a business event contract involves extending the **B
     }
     ```
 
-    The **initialize** method is responsible for setting the private state of the business event contract class, based on data that is provided through the static constructor method.
+    The **initialize** method is responsible for setting the private state of the business event contract class, based on data that is provided through the static constructor method. It should be protected so that a [Chain of Command (CoC)](../extensibility/method-wrapping-coc.md) class extension can be used to extend the contract class.
 
 4. Implement a static constructor method.
 
@@ -247,7 +247,7 @@ The process of implementing a business event contract involves extending the **B
     }
     ```
 
-    The static constructor method calls a private **initialize** method to initialize the private class state.
+    The static constructor method calls the **initialize** method to initialize the private class state.
 
 5. Implement **parm** methods to access the contract state.
 
@@ -302,7 +302,7 @@ BusinessEventsContract
         contract.initialize(_custInvoiceJour);
         return contract;
     }
-    private void initialize(CustInvoiceJour _custInvoiceJour)
+    protected void initialize(CustInvoiceJour _custInvoiceJour)
     {
         invoiceAccount = _custInvoiceJour.InvoiceAccount;
         invoiceId = _custInvoiceJour.InvoiceId;
@@ -372,7 +372,7 @@ BusinessEventsContract
 
 ## Sending a business event
 
-You must modify application code so that it sends the business event at the appropriate point. Often, you can use a common point in a framework. Documents that extend **SourceDocument** have a common point for creating and sending a business event. For more information, see the [Source document framework support](#source-document-framework-support) section later in this topic.
+You must modify application code so that it sends the business event at the appropriate point. Often, you can use a common point in a framework. Documents that extend **SourceDocument** have a common point for creating and sending a business event. For more information, see the [Source document framework support](#source-document-framework-support) section later in this article.
 
 Other frameworks also provide common points for sending business events. For example, the **CustVendVoucher** class hierarchy in the Application Object Tree (AOT) has a **post** method that is used to send business events that are related to posting customer or vendor vouchers. Overrides of the base class implementation provide specialization of the logic for sending business events. For an example, see **CustVoucher.createBusinessEvent** or **VendVoucher.createBusinessEvent** in the AOT.
 
@@ -409,77 +409,37 @@ You might want to publish additional information as part of the payload of a bus
 
 This example shows how to extend the **CustFreeTextInvoicePostedBusinessEventContract** class so that it includes a customer classification. This customer classification is an industry-based custom classification.
 
-#### Step 1: Create an extended business event contract
+#### Step 1: Create an extension class for the business event contract
 
-Create a contract that consists of the standard business event contract plus any additional information that must be included in the payload.
+Create an extension class of the contract class you are extending to add information that must be included in the payload.
 
 ```xpp
-[DataContract]
-public class CustFreeTextInvoicePostedBusinessEventExtendedContract
-extends BusinessEventsContract
+[ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEventContract))]
+internal final class CustFreeTextInvoicePostedBusinessEventContractMyModel_Extension
 {
-    // standard contract
-    private CustFreeTextInvoicePostedBusinessEventContract
-    custFreeTextInvoicePostedBusinessEventContract;
-    // contract extensions
+    // contract extension state
     private str customerClassification;
 }
 ```
 
-#### Step 2: Create an initialize method
+#### Step 2: Extend the initialize method through Chain of Command
 
-Create an **initialize** method that initializes the value of the private contract.
+Create a Chain of Command extension of the **initialize** method that initializes the value of the private contract.
 
 ```xpp
-private void initialize(CustFreeTextInvoicePostedBusinessEventContract
-_custFreeTextInvoicePostedBusinessEventContract)
+protected void initialize(CustInvoiceJour _custInvoiceJour)
 {
-    custFreeTextInvoicePostedBusinessEventContract =
-    _custFreeTextInvoicePostedBusinessEventContract;
+    next initialize(_custInvoiceJour);
+    
+    customerClassification = 'StandardCustomer';
 }
 ```
-
-#### Step 3: Create a static newFrom method
-
-Create a static **newFrom** method that takes the standard contract as an argument and calls the **initialize** method.
+#### Step 3: Add parm methods for additional fields that you want to add to the payload
 
 ```xpp
-public static CustFreeTextInvoicePostedBusinessEventExtendedContract
-newFromCustFreeTextInvoicePostedBusinessEventContract(CustFreeTextInvoicePostedBusinessEventContract
-_custFreeTextInvoicePostedBusinessEventContract)
-{
-    var contract = new CustFreeTextInvoicePostedBusinessEventExtendedContract();
-    contract.initialize(_custFreeTextInvoicePostedBusinessEventContract);
-    return contract;
-}
-```
-
-#### Step 4: Map parm methods
-
-Copy the **parm** methods from the standard data contract, and modify each method so that it gets and sets values in the class's standard contract instance.
-
-```xpp
-[DataMember('InvoiceAccount')]
-public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount _invoiceAccount
-= custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount())
-{
-    return
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount(_invoiceAccount);
-}
-[DataMember('InvoiceId')]
-public CustInvoiceId parmInvoiceId(CustInvoiceId _invoiceId =
-custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId())
-{
-    return custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId(_invoiceId);
-}
-```
-
-#### Step 5: Add parm methods for additional payload data
-
-```xpp
-[DataMember('CustomerClassification')]
-public CustomerClassification parmCustomerClassification(CustomerClassification
-_customerClassification = customerClassification)
+// contract extension data members
+[DataMember('MyModelCustomerClassification')]
+public str parmMyModelCustomerClassification(str _customerClassification = customerClassification)
 {
     customerClassification = _customerClassification;
     return customerClassification;
@@ -488,107 +448,27 @@ _customerClassification = customerClassification)
 
 Here is the complete implementation of the extended business contract.
 
+Follow the [standard naming guidelines for extensions](../extensibility/naming-guidelines-extensions.md) when creating your class to avoid collisions with your newly added fields.
+
 ```xpp
-[DataContract]
-public class CustFreeTextInvoicePostedBusinessEventExtendedContract
-extends BusinessEventsContract
+[ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEventContract))]
+internal final class CustFreeTextInvoicePostedBusinessEventContractMyModel_Extension
 {
-    // standard contract
-    private CustFreeTextInvoicePostedBusinessEventContract
-    custFreeTextInvoicePostedBusinessEventContract;
-    // contract extensions
+    // contract extension private state
     private str customerClassification;
-    public static CustFreeTextInvoicePostedBusinessEventExtendedContract
-    newFromCustFreeTextInvoicePostedBusinessEventContract(CustFreeTextInvoicePostedBusinessEventContract
-    _custFreeTextInvoicePostedBusinessEventContract)
+    protected void initialize(CustInvoiceJour _custInvoiceJour)
     {
-        var contract = new CustFreeTextInvoicePostedBusinessEventExtendedContract();
-        contract.initialize(_custFreeTextInvoicePostedBusinessEventContract);
-        return contract;
+        next initialize(_custInvoiceJour);
+
+        customerClassification = 'StandardCustomer';
     }
-    private void initialize(CustFreeTextInvoicePostedBusinessEventContract
-    _custFreeTextInvoicePostedBusinessEventContract)
-    {
-        custFreeTextInvoicePostedBusinessEventContract =
-        _custFreeTextInvoicePostedBusinessEventContract;
-    }
-    private void new()
-    {
-    }
-    [DataMember('InvoiceAccount')]
-    public CustInvoiceAccount parmInvoiceAccount(CustInvoiceAccount _invoiceAccount
-    = custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAccount(_invoiceAccount);
-    }
-    [DataMember('InvoiceId')]
-    public CustInvoiceId parmInvoiceId(CustInvoiceId _invoiceId =
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId())
-    {
-        return custFreeTextInvoicePostedBusinessEventContract.parmInvoiceId(_invoiceId);
-    }
-    [DataMember('InvoiceDate')]
-    public TransDate parmInvoiceDate(TransDate _invoiceDate =
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDate())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDate(_invoiceDate);
-    }
-    [DataMember('InvoiceDueDate')]
-    public DueDate parmInvoiceDueDate(DueDate _invoiceDueDate =
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDueDate())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceDueDate(_invoiceDueDate);
-    }
-    [DataMember('InvoiceAmountInAccountingCurrency')]
-    public AmountMST parmInvoiceAmount(AmountMST _invoiceAmount =
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAmount())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceAmount(_invoiceAmount);
-    }
-    [DataMember('InvoiceTaxAmount')]
-    public TaxAmount parmInvoiceTaxAmount(TaxAmount _invoiceTaxAmount =
-    custFreeTextInvoicePostedBusinessEventContract.parmInvoiceTaxAmount())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmInvoiceTaxAmount(_invoiceTaxAmount);
-    }
-    [DataMember('LegalEntity')]
-    public LegalEntityDataAreaId parmLegalEntity(LegalEntityDataAreaId _legalEntity
-    = custFreeTextInvoicePostedBusinessEventContract.parmLegalEntity())
-    {
-        return
-        custFreeTextInvoicePostedBusinessEventContract.parmLegalEntity(_legalEntity);
-    }
-    // contract extensions
-    [DataMember('CustomerClassification')]
-    public CustomerClassification parmCustomerClassification(CustomerClassification
-    _customerClassification = customerClassification)
+
+    // contract extension data members
+    [DataMember('MyModelCustomerClassification')]
+    public str parmMyModelCustomerClassification(str _customerClassification = customerClassification)
     {
         customerClassification = _customerClassification;
         return customerClassification;
-    }
-}
-```
-
-#### Step 6: Wrap the buildContract method
-
-Provide a build contract implementation that calls **next** to load the standard business event contract and populates any payload extensions. Here is the complete class.
-
-```xpp
-[ExtensionOf(classStr(CustFreeTextInvoicePostedBusinessEvent))]
-public final class FreeTextInvoicePostedBusinessEventContract_Extension
-{
-    public BusinessEventsContract buildContract()
-    {
-        var businessEventContract =
-        CustFreeTextInvoicePostedBusinessEventExtendedContract::newFromCustFreeTextInvoicePostedBusinessEventContract(next
-        buildContract());
-        businessEventContract.parmCustomerClassification(CustomerClassifier::deriveCustomerClassification(businessEventContract.parmInvoiceAccount()));
-        return businessEventContract;
     }
 }
 ```
@@ -609,9 +489,9 @@ A custom payload context must be extended from the **BusinessEventsCommitLogPayl
 class CustomCommitLogPayloadContext extends BusinessEventsCommitLogPayloadContext
 {
     private utcdatetime eventTime;
-    public utcdatetime parmEventTime(utcdatetime \_eventTime = eventTime)
+    public utcdatetime parmEventTime(utcdatetime _eventTime = eventTime)
     {
-        eventTime = \_eventTime;
+        eventTime = _eventTime;
         return eventTime;
     }
 }
@@ -626,7 +506,7 @@ A Chain of Command (CoC) extension must be written for the **BusinessEventsSende
 public final class CustomPayloadContextBusinessEventsSender_Extension
 {
     protected BusinessEventsCommitLogPayloadContext
-    buildPayloadContext(BusinessEventsCommitLogEntry \_commitLogEntry)
+    buildPayloadContext(BusinessEventsCommitLogEntry _commitLogEntry)
     {
         BusinessEventsCommitLogPayloadContext payloadContext = next
         buildPayloadContext(_commitLogEntry);
@@ -646,17 +526,18 @@ Adapters that consume payload context are written in such a way that they expose
 The **BusinessEventsServiceBusAdapter** class has the CoC method that is named **addProperties**.
 
 ```xpp
+using Microsoft.ServiceBus.Messaging;
+
 [ExtensionOf(classStr(BusinessEventsServiceBusAdapter))]
 public final class CustomBusinessEventsServiceBusAdapter_Extension
 {
-    protected void addProperties(BrokeredMessage \_message,
-    BusinessEventsEndpointPayloadContext \_context)
+    protected void addProperties(BrokeredMessage _message, BusinessEventsEndpointPayloadContext _context)
     {
+        next addProperties(_message, _context);
         if (_context is CustomCommitLogPayloadContext)
         {
-            CustomCommitLogPayloadContext customPayloadContext = \_context as
-            CustomCommitLogPayloadContext;
-            var propertyBag = \_message.Properties;
+            CustomCommitLogPayloadContext customPayloadContext = _context as CustomCommitLogPayloadContext;
+            var propertyBag = _message.Properties;
             propertyBag.Add('EventId', customPayloadContext.parmEventId());
             propertyBag.Add('BusinessEventId', customPayloadContext.parmBusinessEventId());
             // Convert the enum to string to be able to serialize the property.
@@ -664,6 +545,28 @@ public final class CustomBusinessEventsServiceBusAdapter_Extension
             customPayloadContext.parmBusinessEventCategory()));
             propertyBag.Add('LegalEntity', customPayloadContext.parmLegalEntity());
             propertyBag.Add('EventTime', customPayloadContext.parmEventTime());
+        }
+    }
+}
+```
+
+
+The **BusinessEventsEventGridAdapter** class has the CoC method that is named **setContextProperties**. The following example shows what this step looks like for the Event Grid Adapter. The eventGridMessage has a Subject that can be filtered on.
+
+```xpp
+using Microsoft.Azure.EventGrid.Models;
+
+[ExtensionOf(classStr(BusinessEventsEventGridAdapter))]
+public final class CustomBusinessEventsEventGridAdapter_Extension
+{
+    protected void setContextProperties(EventGridEvent _eventGridEvent, BusinessEventsEndpointPayloadContext _context)
+    {
+        next setContextProperties(_eventGridEvent, _context);
+        if (_context is CustomCommitLogPayloadContext)
+        {
+            CustomCommitLogPayloadContext customPayloadContext = _context as CustomCommitLogPayloadContext;
+
+            _eventGridEvent.Subject = _eventGridEvent.Subject + customPayloadContext.parmLegalEntity();
         }
     }
 }
@@ -705,10 +608,9 @@ The **initialize** method should be implemented to check the type of the **Busin
 if (!(_endpoint is CustomBusinessEventsEndpoint))
 {
     BusinessEventsEndpointManager::logUnknownEndpointRecord(tableStr(CustomBusinessEventsEndpoint),
-    \_endpoint.RecId);
+    _endpoint.RecId);
 }
-CustomBusinessEventsEndpoint customBusinessEventsEndpoint = \_endpoint as
-CustomBusinessEventsEndpoint;
+CustomBusinessEventsEndpoint customBusinessEventsEndpoint = _endpoint as CustomBusinessEventsEndpoint;
 customField = customBusinessEventsEndpoint.CustomField;
 if (!customField)
 {
@@ -776,3 +678,4 @@ public DateTimeIso8601 testIsoEdtUtcDateTime(DateTimeIso8601 _value = this._test
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

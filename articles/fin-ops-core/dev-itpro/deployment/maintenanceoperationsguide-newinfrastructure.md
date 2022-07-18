@@ -2,9 +2,9 @@
 # required metadata
 
 title: Maintenance operations for deployments
-description: This topic explains how to perform maintenance operations for an environment that was deployed by using the self-service deployment experience.
+description: This article explains how to perform maintenance operations for an environment that was deployed by using the self-service deployment experience.
 author: laneswenka
-ms.date: 12/02/2020
+ms.date: 03/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: 8.1.1
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This topic explains how to perform maintenance operations for an environment that was deployed by using the [self-service deployment](infrastructure-stack.md) experience.
+This article explains how to perform maintenance operations for an environment that was deployed by using the [self-service deployment](infrastructure-stack.md) experience.
 
 ## Restart services
 
-You can use the restart services functionality to restart individual services that are associated with a Tier 2, Tier 3, Tier 4, or Tier 5 standard acceptance test (sandbox) environment that is deployed in a Microsoft subscription. The services that you can restart are **AOS service**, **DIXF (Data import export framework service)**, and **MR (Management Reporter service)**.
+You can use the restart services functionality to restart individual services that are associated with a Tier 2, Tier 3, Tier 4, or Tier 5 standard acceptance test (sandbox) environment that is deployed in a Microsoft subscription. The services that you can restart are **finance and operations apps service**, **Data management workspace**, and **Financial reporting service**.
 
 To restart a service, follow these steps.
 
@@ -46,7 +46,7 @@ To restart a service, follow these steps.
 
 ## Maintenance mode
 
-Finance and Operations apps includes a system-wide setting that is named [maintenance mode](../sysadmin/maintenance-mode.md). Maintenance mode gives system admins a safe way to make system changes that might affect system functionality. For example, configuration keys can be turned on or off. While maintenance mode is on, only the system admin and users who are assigned to the **Maintenance mode** user role can sign in to the system. By default, maintenance mode is turned off.
+finance and operations apps includes a system-wide setting that is named [maintenance mode](../sysadmin/maintenance-mode.md). Maintenance mode gives system admins a safe way to make system changes that might affect system functionality. For example, configuration keys can be turned on or off. While maintenance mode is on, only the system admin and users who are assigned to the **Maintenance mode** user role can sign in to the system. By default, maintenance mode is turned off.
 
 To turn maintenance mode on or off, follow these steps.
 
@@ -66,3 +66,4 @@ To connect to a database, follow the instructions in [Enable just-in-time access
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

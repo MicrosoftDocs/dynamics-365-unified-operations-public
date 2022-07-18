@@ -31,6 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 To configure a parallel activity, complete the following procedures in the workflow editor.
 
 A parallel activity consists of workflow branches that run at the same time.

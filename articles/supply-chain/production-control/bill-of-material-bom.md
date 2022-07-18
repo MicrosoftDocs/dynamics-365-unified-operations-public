@@ -2,7 +2,7 @@
 # required metadata
 
 title: Bills of materials and formulas
-description: This topic provides information about bills of materials (BOMs) and formulas, which are a central part of the definition of products and product variants. 
+description: This article provides information about bills of materials (BOMs) and formulas, which are a central part of the definition of products and product variants. 
 author: johanhoffmann
 ms.date: 11/03/2017
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about bills of materials (BOMs) and formulas, which are a central part of the definition of products and product variants. BOMs and formulas specify the required materials or ingredients for a specific product. Formulas also specify the co-products and by-products that are received in a specific production context. 
+This article provides information about bills of materials (BOMs) and formulas, which are a central part of the definition of products and product variants. BOMs and formulas specify the required materials or ingredients for a specific product. Formulas also specify the co-products and by-products that are received in a specific production context. 
 
 ## Bills of materials
 

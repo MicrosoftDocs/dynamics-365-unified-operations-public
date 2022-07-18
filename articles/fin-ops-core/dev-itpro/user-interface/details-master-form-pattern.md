@@ -2,7 +2,7 @@
 # required metadata
 
 title: Details Master form pattern
-description: This topic provides information about the Details Master form pattern. A details form is the primary method for entering data.
+description: This article provides information about the Details Master form pattern. A details form is the primary method for entering data.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 12373
 ms.assetid: e4518f56-57b5-4cf1-b197-3fbaea7be861
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the Details Master form pattern. A details form is the primary method for entering data.
+This article provides information about the Details Master form pattern. A details form is the primary method for entering data.
 
 ## Usage
 

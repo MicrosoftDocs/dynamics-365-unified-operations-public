@@ -1,14 +1,14 @@
 ---
 title: Configure detours for steps in mobile device menu items
-description: This topic describes how to configure detours for menu items so that workers can park the current task, perform another task, and then return to the original task without losing any information.
-author: MarkusFogelberg
+description: This article describes how to configure detours for menu items so that workers can park the current task, perform another task, and then return to the original task without losing any information.
+author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: mafoge
+ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: 10.0.23
 ---
@@ -16,12 +16,11 @@ ms.dyn365.ops.version: 10.0.23
 # Configure detours for steps in mobile device menu items
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)] <!--KFM: GA with 10.0.23 -->
 
 > [!IMPORTANT]
-> The features that are described in this topic apply only to the new Warehouse Management mobile app. They don't affect the old warehouse app, which is now deprecated.
+> The features that are described in this article apply only to the new Warehouse Management mobile app. They don't affect the old warehouse app, which is now deprecated.
 
-This topic describes how to configure detours for menu items so that workers can "park" the current task, perform another task, and then return to the original task without losing any information.
+This article describes how to configure detours for menu items so that workers can "park" the current task, perform another task, and then return to the original task without losing any information.
 
 A detour is a separate menu item that can be opened from a step in a main task. At the end of the detour, the worker is returned to the place where they left the main task. During the configuration, you specify the menu item that should act as a detour. You also select which field values from the main task should automatically be forwarded (copied) to the detour and entered there. Therefore, you must understand where in the task flow you want the detour to be available to workers. You must also ensure that the information that must be copied to the detour is available for that step of the task flow.
 
@@ -42,7 +41,7 @@ Before you can configure detours for steps in mobile device menu items, you must
     - **Module:** *Warehouse management*
     - **Feature name:** *Warehouse management app detours*
 
-    This feature is the feature that is described in this topic.
+    This feature is the feature that is described in this article.
 
 1. Update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 1. Repeat the previous step for each legal entity (company) where you use the Warehouse Management mobile app.
@@ -53,7 +52,7 @@ Use the following procedure to set up a detour from a menu-specific override.
 
 1. Create a menu-specific override for the relevant menu and step as described in [Customize step titles and instructions for the Warehouse Management mobile app](mobile-app-titles-instructions.md).
 1. Find the combination of **Step ID** and **Menu item name** values that you want to edit, and then select the value in the **Step ID** column.
-1. On the page that appears, on the **Available detours (menu items)** FastTab, you can specify the menu item that should act as a detour. You can also select which field values from the main task should automatically be copied to and from the detour. For examples that show how to use these settings, see the scenarios later in this topic.
+1. On the page that appears, on the **Available detours (menu items)** FastTab, you can specify the menu item that should act as a detour. You can also select which field values from the main task should automatically be copied to and from the detour. For examples that show how to use these settings, see the scenarios later in this article.
 
 ## Sample scenario 1: Sales picking where a location inquiry acts as a detour
 

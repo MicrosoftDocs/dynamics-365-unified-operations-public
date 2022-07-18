@@ -2,8 +2,8 @@
 # required metadata
 
 title: Planning Optimization extensibility
-description: This topic describes the extensibility scenarios that are supported in Planning Optimization. 
-author: ChristianRytt
+description: This article describes the extensibility scenarios that are supported in Planning Optimization. 
+author: t-benebo
 ms.date: 08/05/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2020-07-07
 ms.dyn365.ops.version: 10.0.13
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes the extensibility scenarios that are related to master planning and supported in Planning Optimization. These capabilities are available starting in Microsoft Dynamics 365 Supply Chain Management version 10.0.13.
+This article describes the extensibility scenarios that are related to master planning and supported in Planning Optimization. These capabilities are available starting in Microsoft Dynamics 365 Supply Chain Management version 10.0.13.
 
 ## Custom processing when master planning is completed
 

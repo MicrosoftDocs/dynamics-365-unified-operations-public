@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Sales VAT report
-description: This topic describes the reports in Microsoft Dynamics 365 Finance that you can use to submit information about value-added tax (VAT) amounts for sales and purchases to tax authorities in Thailand.
+title: VAT reports
+description: This article describes the reports in Microsoft Dynamics 365 Finance that you can use to submit information about value-added tax (VAT) amounts for sales and purchases to tax authorities in Thailand.
 author: anasyash
 ms.date: 01/25/2021
 ms.topic: article
@@ -25,11 +25,11 @@ ms.search.validFrom: 2
 ms.dyn365.ops.version:
 ---
 
-# Sales VAT report
+# VAT reports
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the reports in Microsoft Dynamics 365 Finance that you can use to submit information about value-added tax (VAT) amounts for sales and purchases to tax authorities in Thailand.
+This article describes the reports in Microsoft Dynamics 365 Finance that you can use to submit information about value-added tax (VAT) amounts for sales and purchases to tax authorities in Thailand.
 
 ## Generate the Purchase unrealized VAT remaining report
 

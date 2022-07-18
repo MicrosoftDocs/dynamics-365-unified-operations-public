@@ -2,9 +2,9 @@
 # required metadata
 
 title: Configure account structures
-description: This topic provides information about account structures and financial dimensions.
+description: This article provides information about account structures and financial dimensions.
 author: aprilolson
-ms.date: 06/03/2019
+ms.date: 07/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: LedgerEliminationRule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 13131
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
@@ -84,7 +84,7 @@ When entering a journal and selecting an account in the profit and loss range, s
 
 ## More than 7 criteria needed
 
-If you have more than 7 criteria that are needed, you can continue adding them on the next line. You will notice when working in the **Allowed value details** section that the **+Add new** criteria is nt longer active after the seventh criteria is entered. This is due to many factors such as: 
+If you have more than 7 criteria that are needed, you can continue adding them on the next line. You will notice when working in the **Allowed value details** section that the **+Add new** criteria is no longer active after the seventh criteria is entered. This is due to many factors such as: 
  - Column width 
  - How the data is stored 
  - Performance of the **Allowed value details** control
@@ -96,6 +96,8 @@ To continue to add additional criteria, click **Duplicate in the Segment** and *
 When setting up your account structures there are some best practices you can follow. However, this is only guidance so a holistic discussion about your business, growth plan, and maintenance plan should be considered as part of that discussion.
 
 - Make main account first or as close to the front of the account structure as possible, so users get the best guided experience they can during account entry.
+  
+  - Verify that any third party solutions you intend to use support main account in the first position.
 
 - Reuse account structures as much as possible to reduce maintenance across your legal entities.
 
@@ -106,7 +108,7 @@ When setting up your account structures there are some best practices you can fo
 - Do not just put an asterisk for every segment in the account structure and then solely rely on the advanced rules. This can be difficult to manage and often leads to user error during maintenance that can make the system unable to post.
 
 ## Account structure activation
-When you are satifisfied with your new setup or a change to an account structure, you must activate it. If an account structure is assigned to a ledger, this activation can be a long running process, as all unposted transactions in the system must be synced to the new structure. Posted transactions are not impacted with account structure changes.
+When you are satisfied with your new setup or a change to an account structure, you must activate it. If an account structure is assigned to a ledger, this activation can be a long running process, as all unposted transactions in the system must be synced to the new structure. Posted transactions are not impacted with account structure changes.
 
 For more information, see [Plan your chart of accounts](plan-chart-of-accounts.md), [Financial dimensions](financial-dimensions.md) and [Enter account and dimension combinations (segmented entry control)](enter-account-dimension-combinations-segmented-entry-control.md).
 

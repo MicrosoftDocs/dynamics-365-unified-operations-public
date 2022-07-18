@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Process collection letters
-description: This topic shows how to create, print, and post collection letters. 
+description: This article shows how to create, print, and post collection letters. 
 author: ShivamPandey-msft
 ms.date: 07/01/2019
 ms.topic: business-process 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: CustPosting, CustCollectionLetterNote   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1.3
 
 [!include [banner](../../includes/banner.md)]
 
-This topic shows how to create, print, and post collection letters. This task uses the USMF demo company.
+This article shows how to create, print, and post collection letters. This task uses the USMF demo company.
 
 ## Set up a collection letter sequence on the posting profile
 1. Go to **Navigation pane > Modules > Credit and collections > Setup > Customer posting profiles**.

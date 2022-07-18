@@ -3,8 +3,8 @@
  
 title: Create calendars and generate working times
 description: Calendars describe the capacity and working times of operations resources. This article explains how to define a work calendar based on a working time template.  
-author: andreabichsel
-ms.date: 07/09/2019
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: OpResLifeCycleManagementWorkspace, WorkCalendarTable, WorkCalendarDate, HcmPersonnelManagementWorkspace, WrkCtrGroupDateCalendar, WrkCtrDateCalendar
 audience: Application User 
 # ms.devlang:  
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -27,6 +27,8 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
+> [!IMPORTANT]
+> The functionality noted in this article is currently available for Human Resources customers on the Finance infrastructure.  
 
 
 Calendars describe the capacity and working times of operations resources. This article explains how to define a work calendar based on a working time template. You can walk through this procedure in demo data company USMF, or using your own data.
@@ -35,9 +37,9 @@ Calendars describe the capacity and working times of operations resources. This 
 2. Select **Calendars**.
 3. Select **New**.
 4. In the **Calendar** field, classify your calendar. This is the ID of the calendar, which is used as a reference when assigning calendars, such as to an operations resource or a resource group.  
-5. In the **Name** field, name your calendar.
+5. In the **Name** field, enter a name for your calendar.
 6. In the **Standard work day in hours** field, enter a number.
-7. Make sure the row is selected, then select **Working times** from the Action Pane.
+7. Make sure the row is selected, then select **Working times** from the **Action Pane**.
 8. Select **Compose working times**. Generate working hours for each day in the period where you want to be able to schedule work. As time goes by, you can generate working times for additional periods.  
 9. In the **From date** field, enter a date. This is the first day that this calendar must be open.  
 10. In the **To date field**, enter a date. This is the last day that this calendar is open.  

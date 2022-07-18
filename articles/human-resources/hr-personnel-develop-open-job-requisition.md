@@ -3,8 +3,8 @@
  
 title: Create and open job requisition
 description: Recruitment projects help you manage your recruiting process. 
-author: andreabichsel
-ms.date: 02/03/2021
+author: twheeloc
+ms.date: 10/28/2021
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: HRMRecruitingTable, HcmWorkerLookUp, HcmJobLookup, HRMRecruitingMedia, HRMRecruitingJobAd, HcmPersonnelManagementWorkspace  
 audience: Application User
 # ms.devlang:  
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: anbichse
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -43,7 +43,7 @@ Recruitment projects help you manage your recruiting process. After creating a r
 6. In the list, find and select your record.
 7. In the list, select the link in the selected row.
 8. Choose **Select**.
-9. In the Department field, select the drop-down button to open the lookup.
+9. In the **Department** field, select the drop-down button to open the lookup.
 10. In the list, select the link in the selected row.
 11. In the **Job** field, select the drop-down button to open the lookup.
 12. In the list, find and select your record.
@@ -62,10 +62,10 @@ Recruitment projects help you manage your recruiting process. After creating a r
 25. In the **End date** field, enter a date.
 26. Select **Save**.
 27. Close the page.
-28. Select Job ads.
+28. Select **Job ads**.
 29. Select **Save**.
 30. Close the page.
-31. Check or uncheck the **Display on employee self-service** checkbox. Select the **Display on employee self-service** check box. This selection makes the recruitment project visible to employees on their Employee self-service pages.
+31. Check or uncheck the **Display on Employee self service** checkbox. Select the **Display on Employee self service** check box. This selection makes the recruitment project visible to employees on their **Employee self service** page.
 32. Select **Recruitment project status**.
 33. Select **Start**. The **Started** status means that the project is ready to receive applications.  
 34. Select **OK**.

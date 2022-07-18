@@ -3,7 +3,7 @@
  
 title: Define coverage rules for items
 description: This procedure shows how to create coverage rules and override coverage settings for a specific item. It also shows how to specify default inventory settings.
-author: ChristianRytt
+author: t-benebo
 ms.date: 07/01/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -116,6 +116,7 @@ Create item coverage rules by doing the following:
 1. In the **Purchase time** field, enter '5'.
 1. Select **Save**.
 
-
+> [!NOTE]
+> For manufactured items, the **Production lead time** is used if there is no route for the item. If an active route has been associated to the item, then master planning will schedule the order and calculate its dates according to the route times and capacity of the resources (if applicable).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

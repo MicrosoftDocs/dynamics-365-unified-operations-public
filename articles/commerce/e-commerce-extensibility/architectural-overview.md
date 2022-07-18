@@ -2,10 +2,10 @@
 # required metadata
 
 title: E-commerce architectural overview
-description: This topic presents an architectural overview of Microsoft Dynamics 365 Commerce.
+description: This article presents an architectural overview of Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 11/20/2020
-ms.topic: article
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,7 +16,7 @@ audience: Developer
 # ms.devlang: 
 ms.reviewer: v-chgri
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic presents an architectural overview of Microsoft Dynamics 365 Commerce.
+This article presents an architectural overview of Microsoft Dynamics 365 Commerce.
 
 The Dynamics 365 Commerce online extensibility software development kit (SDK) lets partners easily extend their website so that it includes additional business logic and user experience (UX) logic. Partners can do this extension by using open-source technologies that are freely available.
 

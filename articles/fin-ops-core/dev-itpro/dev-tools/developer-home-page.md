@@ -1,14 +1,14 @@
 ---
 title: Develop and customize home page
-description: This topic provides links to topics about development.
+description: This article provides links to topics about development.
 author: RobinARH
-ms.date: 08/27/2021
+ms.date: 06/13/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: "intro-internal"
 ms.search.region: Global
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -17,11 +17,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to topics about development.
+This article provides links to topics about development.
 
 ## Overview
 
-The Finance and Operations apps enable the entire enterprise resource planning (ERP) application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. The apps leverage the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft. The development experience includes:
+The finance and operations apps enable the entire enterprise resource planning (ERP) application suite as a cloud-based solution, for both public and private clouds, as well as on-premises. The apps leverage the speed, simplicity, and cost-effectiveness of working in the cloud, while building on the latest technology from Microsoft. The development experience includes:
 
 - Development tools that are decoupled from any running environment. You develop against local, XML-based files, not the online database.
 - Microsoft Visual Studio is the development environment. The Visual Studio environment is customized to provide you with a smooth and familiar experience.
@@ -62,7 +62,7 @@ The Finance and Operations apps enable the entire enterprise resource planning (
 
 - [Development tools in Visual Studio](development-tools-overview.md)
 - [Application Explorer](application-explorer.md)
-- [Finance and Operations project type in Visual Studio](projects.md)
+- [Finance and operations project type in Visual Studio](projects.md)
 - [Element designers](element-designers.md)
 - [Commands for determining how elements are used](element-usage.md)
 - [Models and packages](models.md)
@@ -71,7 +71,7 @@ The Finance and Operations apps enable the entire enterprise resource planning (
 - [Tools add-ins for Visual Studio](developer-tools-add-ins.md)
 - [Export and import models](models-export-import.md)
 - [Metadata search in Visual Studio](metadata-search-visual-studio.md)
-- [Create new users on development machines](enable-development-machine.md)
+- [Create new users on development machines](/d365F-O/fin-ops-core/dev-itpro/dev-tools/access-instances)
 - [Update the Visual Studio development tools](update-development-tools.md)
 - [Development and build VMs that don't allow admin access FAQ](../sysadmin/VMs-no-admin-access.md)
 
@@ -97,7 +97,7 @@ The Finance and Operations apps enable the entire enterprise resource planning (
 ### Overviews
 
 - [Write business logic by using C\# and X++ source code](write-business-logic.md)
-- [Visual Studio 2017 requirements for X++](developer-tools-vs2017.md)
+- [Visual Studio requirements for X++](developer-tools-vs2017.md)
 
 ### Language support
 
@@ -105,6 +105,7 @@ The Finance and Operations apps enable the entire enterprise resource planning (
 - [Debug X++ code by using the debugger in Visual Studio](debug-xpp.md)
 - [Language Integrated Query (LINQ) provider for C\#](linq-provider-c.md)
 - [Write best practice rules](author-best-practice-rules.md)
+- [SysSetupConfigAttribute attribute](syssetupconfigattribute.md)
 
 ## Customize with extensions and overlayering
 
@@ -113,7 +114,6 @@ The Finance and Operations apps enable the entire enterprise resource planning (
 
 ## Code migration
 
-- [How to resolve conflicts in Visual Studio (video)](https://youtu.be/4rxO0zUN2zU)
 - [Code migration and upgrade home page](../migration-upgrade/code-migration-home-page.md)
 
 ## Move packages between environments
@@ -180,3 +180,4 @@ The client is an HTML web client that runs in all major browsers. For informatio
 [Insider tips on development](https://community.dynamics.com/ax/b/newdynamicsax)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

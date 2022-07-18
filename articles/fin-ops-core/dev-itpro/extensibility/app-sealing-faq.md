@@ -1,6 +1,6 @@
 ---
 title: Extensibility FAQ
-description: This topic provides answers to some frequently asked questions about extensibility.
+description: This article provides answers to some frequently asked questions about extensibility.
 author: FrankDahl
 ms.date: 02/25/2019
 ms.topic: article
@@ -10,7 +10,7 @@ ms.technology:
 # ms.search.form: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 89563
 ms.assetid: 

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Denmark overview
-description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Denmark. 
-author: ShylaThompson
-ms.date: 07/25/2019
-ms.topic: article
+description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Denmark. 
+author: kfend
+ms.date: 01/10/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -16,10 +16,10 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Denmark
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
@@ -29,12 +29,13 @@ ms.dyn365.ops.version: July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for Denmark. 
+This article provides links to documentation resources for Denmark. 
 
 - [Assign a payment slip format to a customer account](tasks/assign-payment-slip-format-customer-account.md)
 - [Create and post a customer invoice for a public sector customer](tasks/create-post-customer-invoice-public-sector-customer.md)
 - [Create and post a free text invoice for a public sector customer](tasks/create-post-free-text-invoice-public-sector-customer.md)
 - [Create and post a project invoice for a public sector customer](tasks/create-post-project-invoice-public-sector-customer.md)
+- [EU sales list for Denmark](emea-dnk-eu-sales-list.md)
 - [Import OIOUBL electronic invoicing configurations](tasks/import-oioubl-electronic-invoicing-configurations.md)
 - [Post a free text invoice with a payment slip](tasks/post-free-text-invoice-payment-slip.md)
 - [Post a project invoice with a payment slip](tasks/post-project-invoice-payment-slip.md)
@@ -42,6 +43,8 @@ This topic provides links to documentation resources for Denmark.
 - [Set up customer accounts for OIOUBL electronic invoicing](tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md)
 - [Set up OIOUBL electronic invoicing](tasks/set-up-oioubl-electronic-invoicing.md)
 - [Set up payment slip format](tasks/set-up-payment-slip-format.md)
+- [Danish Intrastat](emea-dnk-intrastat.md)
+- [VAT declaration](emea-dnk-vat-declaration-denmark.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

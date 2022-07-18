@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set up order fulfillment for stores
-description: This topic provides an overview of how to set up store order fulfillment. 
-author: rubencdelgado
+description: This article provides an overview of how to set up store order fulfillment. 
+author: BrianShook
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: josaw
 # ms.custom: 
 ms.search.region: Global
 ms.search.industry: retail
-ms.author: rubendel
+ms.author: brshoo
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Test services by using third-party utilities
-description: This topic describes how to set up third-party utilities to test services.
+description: This article describes how to set up third-party utilities to test services.
 author: peakerbl
 ms.date: 12/05/2019
 ms.topic: article
@@ -31,17 +31,20 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
+
+[!INCLUDE [PEAP](../../../includes/peap-1.md)]
+
 At <https://github.com/Microsoft/Dynamics-AX-Integration>, Microsoft provides sample code for consuming services. However, there are many scenarios where the other endpoint in an integration might not use a Microsoft stack. Even when the other endpoint does use, for example, the Open Data Protocol (OData) client code that Microsoft makes available, you might find it useful to perform the following actions:
 
 - Explore and analyze how an interaction's messages are constructed.
 - Test the response of a service to a well-known request.
 - Determine how exceptions will appear to the other endpoint.
 
-Many frequently used tools that will help you perform these actions are available. This topic isn't an endorsement of any tool. Although it provides examples that use some frequently used software utilities, the principles should broadly apply to other, similar tools.
+Many frequently used tools that will help you perform these actions are available. This article isn't an endorsement of any tool. Although it provides examples that use some frequently used software utilities, the principles should broadly apply to other, similar tools.
 
 ## Prerequisites
 
-Before you can test a service by using an external application, you must register the application in Microsoft Azure, and in Finance and Operations.
+Before you can test a service by using an external application, you must register the application in Microsoft Azure, and in finance and operations.
 
 For details, see:
 
@@ -98,7 +101,7 @@ Postman (<https://www.getpostman.com/postman>) is a tool that is often used to i
 14. Create a request to perform create, read, update, or delete (CRUD) operations on the desired data entity via the OData service. Create the URL according to your requirements. For more information, see [Open Data Protocol (OData)](odata.md). You might find it useful to parameterize the request by using a variable that is stored in the environment, as shown earlier. The following example of a GET query uses a **Customer Account** parameter. The query returns name and address details for the customer account that is specified in the environment variable. Note that special characters must be correctly URL-encoded.
 
     ```Console
-    https://[Finance and Operations instance URL]/data/Customers?$format=json&$filter=CustomerAccount%20eq%20%27{{custAccount}}%27&$select=CustomerAccount,Name,AddressDescription,FullPrimaryAddress
+    https://[finance and operations instance URL]/data/Customers?$format=json&$filter=CustomerAccount%20eq%20%27{{custAccount}}%27&$select=CustomerAccount,Name,AddressDescription,FullPrimaryAddress
     ```
 
 15. Add an Authorization header that refers to the authorization token that was retrieved earlier and stored in the **bearerToken** environment variable. The token must be prefixed by **Bearer** in the header.
@@ -126,9 +129,9 @@ SoapUI (<https://www.soapui.org/>) is a tool that is often used to interact with
 2. Complete the information for the project:
 
     - In the **Project Name** field, enter a name for the project.
-    - In the **Initial WSDL** field, enter the service address, and add the suffix **?wsdl**. (The service address should be in the format \[Finance and Operations instance base URL\]/soap/services/\[service group name\].) For more information, see the [Services home page](services-home-page.md).
+    - In the **Initial WSDL** field, enter the service address, and add the suffix **?wsdl**. (The service address should be in the format \[finance and operations instance base URL\]/soap/services/\[service group name\].) For more information, see the [Services home page](services-home-page.md).
 
-        For example, we are querying the user session service at the URL `https://[Finance and Operations base URL]/soap/services/UserSessionService?wsdl`.
+        For example, we are querying the user session service at the URL `https://[finance and operations base URL]/soap/services/UserSessionService?wsdl`.
 
     - Select the **Create sample requests for all operations?** check box.
 
@@ -164,3 +167,4 @@ In our example, we have now successfully authenticated and then queried UserSess
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

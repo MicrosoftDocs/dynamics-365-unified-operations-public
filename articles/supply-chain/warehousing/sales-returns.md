@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales returns
-description: This topic provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
+description: This article provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
 author: Mirzaab
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
+This article provides information about the process for return orders. It includes information about customer returns and their effect on costing and on-hand inventory quantities.
 
 Customers can return items for various reasons. For example, an item might be defective, or it might not meet the customer's expectations. The return process starts when a customer issues a request to return an item. After the customer's request is received, a return order is created.
 
@@ -81,7 +81,6 @@ When you create a return order, the information in the following table must be i
 | RMA number         | The ID that is assigned to the return order              | The RMA number is used as an alternate key throughout the return order process. The RMA number that is assigned is based on the RMA number sequence that is set up on the **Accounts receivable parameters** page.                                                                                                                              |
 | Deadline           | The last date that an item can be returned               | The default value is calculated as the current date plus the period of validity. For example, if a return is valid for only 90 days from date when the return order is created, and the return order was created on May 1, the value in the field is **30-July**. The period of validity is set on the **Accounts receivable parameters** page. |
 | Return reason code | The customer’s reason for returning the product          | The reason code is selected in the list of user-defined reason codes. You can update this field at any time.                                                                                                                                                                                                                                    |
-
 ### Create return order lines
 
 After you complete the return header, you can create return lines by using one of the following methods:
@@ -89,8 +88,8 @@ After you complete the return header, you can create return lines by using one o
 -   Manually enter the item details, quantity, and other information for every return line.
 -   Create a return line by using the **Find sales order** function. We recommend that you use this function when you create a return order. The **Find sales order** function establishes a reference from the return line to the invoiced sales order line, and retrieves line details such as item number, quantity, price, discount, and cost values from the sales line. The reference helps guarantee that, when the product is returned to the company, it's valued at the same unit cost that it was sold at. The reference also validates that return orders aren't created for a quantity that exceeds the quantity that was sold on the invoice.
 
->[Note!] 
->Return lines that have a reference to a sales order are handled as corrections to, or reversals of, the sale. For more information, see the "Post to the ledger" section, later in this topic.
+>[!NOTE] 
+>Return lines that have a reference to a sales order are handled as corrections to, or reversals of, the sale. For more information, see the "Post to the ledger" section, later in this article.
 
 ### Charges
 
@@ -185,7 +184,7 @@ Before you can physically receive returned items into inventory by posting a pac
 
 [![Arrival process.](./media/salesreturn03.png)](./media/salesreturn03.png)  
 
-The process has several other variations that aren't covered in this topic. Here are some of these variations:
+The process has several other variations that aren't covered in this article. Here are some of these variations:
 
 -   Don't use the **Arrival overview** list to create an Arrival journal. Instead, manually create the Arrival journal. Return orders will have **Sales order** as the reference.
 -   If you're using Warehouse management, generate pallet transports. The return line will have a status of **Arrived** during pallet transport.
@@ -195,8 +194,9 @@ During the arrival process, returns are integrated with the general process for 
 
 ### Identify products in the Arrival overview list
 
-The **Arrival overview** page lists all the planned incoming arrivals. 
->[Note!] 
+The **Arrival overview** page lists all the planned incoming arrivals.
+
+>[!NOTE] 
 >Arrivals from return orders must be processed separately from other types of arrival transactions. After you've identified an incoming package on the **Arrival overview** page (for example, by using the accompanying RMA document), on the Action Pane, click **Start arrival** to create and initialize an Arrival journal that matches the arrival.
 
 ### Edit the Arrival journal
@@ -239,7 +239,7 @@ If you ship a replacement item to the customer, and you use the **Replace and sc
 
 The replacement item will be delivered by using an independent sales order, the replacement sales order. This sales order is created when the packing slip for the return order is generated. The order header uses information from the customer that is referenced on the return order header. The line information is collected from the information that is entered on the **Replacement item** page. The **Replacement item** page must be filled in for lines that have disposition actions that start with the word "replace." However, neither the quantity nor the identity of the replacement item is validated or limited. This behavior allows for cases where the customer wants the same item but in a different configuration or size, and also cases where the customers wants a completely different item. By default, an identical item is entered on the **Replacement item** page. However, you can select a different item, provided that the function has been set up. 
 
->[Note!] 
+>[!NOTE] 
 >You can edit and delete the replacement sales order after it's created.
 
 ## Generate a packing slip
@@ -261,9 +261,10 @@ Although the **Return order** page contains the information and actions that are
 
 ### Credit correction
 
-As part of the invoicing process, verify that any miscellaneous charges are correct. To cause the ledger postings to become corrections (Storno), consider using the **Credit correction** option on the **Other** tab of the **Posting invoice** page when you post the invoice/credit note. 
->[Note!] 
->By default, the **Credit correction** option is activated if the **Credit note as correction** option on the **Accounts receivable parameters** page has been enabled. However, we recommend that you not post returns with Storno.
+As part of the invoicing process, verify that any miscellaneous charges are correct. To cause the ledger postings to become corrections (Storno), consider using the **Credit correction** option on the **Other** tab of the **Posting invoice** page when you post the invoice/credit note.
+
+> [!NOTE]
+> By default, the **Credit correction** option is activated if the **Credit note as correction** option on the **Accounts receivable parameters** page has been enabled. However, we recommend that you not post returns with Storno.
 
 ## Create intercompany return orders
 Return orders can be completed between two companies within your organization. The following scenarios are supported:
@@ -317,8 +318,8 @@ The return order doesn't reference a customer invoice. The returned item is cred
 
 ![Return order doesn't reference a customer invoic.](./media/SalesReturn09.png)  
 
->[Note!]
->The item master price is used as the default value for the **Return cost price** parameter. The default price differs from the cost price at the time of inventory issue. Therefore, the implication is that a loss of 3 has been incurred. Additionally, the return order doesn't include the discount that was given to the customer on the sales order. Therefore, an excessive credit occurs.
+> [!NOTE]
+> The item master price is used as the default value for the **Return cost price** parameter. The default price differs from the cost price at the time of inventory issue. Therefore, the implication is that a loss of 3 has been incurred. Additionally, the return order doesn't include the discount that was given to the customer on the sales order. Therefore, an excessive credit occurs.
 
 ### Example 2: Credit correction is selected for the return order
 
@@ -326,7 +327,7 @@ Example 2 is the same as example 1, but the **Credit correction** parameter is s
 
 ![Return order where credit correction is selected .](./media/SalesReturn10.png)  
 
->[Note!] 
+>[!NOTE] 
 >The ledger postings are entered as negative corrections.
 
 ### Example 3: The return order line is created by using the Find sales order function
@@ -335,8 +336,8 @@ In this example, the return order line is created by using the **Find sales orde
 
 ![Return order line that is created by using Find sales order .](./media/SalesReturn11.png)  
 
->[Note!] 
->**Discount** and **Return cost price** are set correctly. Therefore, an exact reversal of the customer invoice occurs.
+> [!NOTE]
+> **Discount** and **Return cost price** are set correctly. Therefore, an exact reversal of the customer invoice occurs.
 
 
 

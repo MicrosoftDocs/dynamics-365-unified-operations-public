@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Inventory locations are used with basic warehousing (WMS I) to determine where items are stored and where items are picked from in a WMS I warehouse.
 
-This topic applies to features in the Inventory management module. It does not apply to features in the Warehouse management module.
+This article applies to features in the Inventory management module. It does not apply to features in the Warehouse management module.
 
 The term location refers to the place that items are stored and drawn from.
 

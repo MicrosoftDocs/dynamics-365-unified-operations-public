@@ -2,8 +2,8 @@
 # required metadata
 
 title: Master planning with purchase trade agreements
-description: This topic describes how Planning Optimization can find the vendor and/or lead time for a planned order, based on the best price or lead time that is found in purchase trade agreements.
-author: ChristianRytt
+description: This article describes how Planning Optimization can find the vendor and/or lead time for a planned order, based on the best price or lead time that is found in purchase trade agreements.
+author: t-benebo
 ms.date: 06/29/2020
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: crytt
+ms.author: benebotg
 ms.search.validFrom: 2020-05-29
 ms.dyn365.ops.version: AX 10.0.12
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how Planning Optimization can find the vendor and/or lead time for a planned order, based on the best price or lead time that is found among all purchase trade agreements that have been specified for a given product.
+This article describes how Planning Optimization can find the vendor and/or lead time for a planned order, based on the best price or lead time that is found among all purchase trade agreements that have been specified for a given product.
 
 ## Turn on the Purchase trade agreements for Planning Optimization feature
 

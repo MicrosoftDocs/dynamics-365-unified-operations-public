@@ -1,8 +1,8 @@
 ---
 title: Inventory Visibility public APIs
-description: This topic describes the public APIs that are provided by Inventory Visibility.
+description: This article describes the public APIs that are provided by Inventory Visibility.
 author: yufeihuang
-ms.date: 09/30/2021
+ms.date: 12/09/2021
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -16,9 +16,9 @@ ms.dyn365.ops.version: 10.0.22
 # Inventory Visibility public APIs
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [cc-data-platform-banner](../../includes/cc-data-platform-banner.md)]
 
-This topic describes the public APIs that are provided by Inventory Visibility.
+
+This article describes the public APIs that are provided by Inventory Visibility.
 
 The public REST API of the Inventory Visibility Add-in presents several specific endpoints for integration. It supports four main interaction types:
 
@@ -36,13 +36,22 @@ The following table lists the APIs that are currently available:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Post | [Set/override on-hand quantities](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Post | [Create one reservation event](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Post | [Create multiple reservation events](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/onhand/indexquery | Get | [Query by using the post method](#query-with-post-method) |
-| /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the get method](#query-with-get-method) |
-
-Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/90bd57f36a789e1f8d4c>.
+| /api/environment/{environmentId}/onhand/changeschedule | Post | [Create one scheduled on-hand change](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/changeschedule/bulk | Post | [Create multiple scheduled on-hand changes](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the post method](#query-with-post-method) |
+| /api/environment/{environmentId}/onhand | Get | [Query by using the get method](#query-with-get-method) |
+| /api/environment/{environmentId}/allocation​/allocate | Post | [Create one allocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation​/unallocate | Post | [Create one unallocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation​/reallocate | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation​/consume | Post | [Create one consume event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation​/query | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
 
 > [!NOTE]
 > The {environmentId} part of the path is the environment ID in Microsoft Dynamics Lifecycle Services (LCS).
+> 
+> The bulk API can return a maximum of 512 records for each request.
+
+Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/ad8a1322f953f88d9a55>.
 
 ## Find the endpoint according to your Lifecycle Services environment
 
@@ -146,7 +155,7 @@ To get a security service token, follow these steps.
    ```
 
 > [!IMPORTANT]
-> When you use the *Postman* request collection to call Inventory Visibility public APIs, you must add a bearer token for each request. To find your bearer token, select the **Authorization** tab under the request URL, select the **Bearer Token** type, and copy the access token that was fetched in the last step. In later sections of this topic, `$access_token` will be used to represent the token that was fetched in the last step.
+> When you use the *Postman* request collection to call Inventory Visibility public APIs, you must add a bearer token for each request. To find your bearer token, select the **Authorization** tab under the request URL, select the **Bearer Token** type, and copy the access token that was fetched in the last step. In later sections of this article, `$access_token` will be used to represent the token that was fetched in the last step.
 
 ## <a name="create-onhand-change-event"></a>Create on-hand change events
 
@@ -244,7 +253,7 @@ The following example shows sample body content without `dimensionDataSource`. I
 
 ### <a name="create-multiple-onhand-change-events"></a>Create multiple change events
 
-This API can create multiple records at the same time. The only differences between this API and the [single-event API](#create-one-onhand-change-event) are the `Path` and `Body` values. For this API, `Body` provides an array of records.
+This API can create multiple records at the same time. The only differences between this API and the [single-event API](#create-one-onhand-change-event) are the `Path` and `Body` values. For this API, `Body` provides an array of records. The maximum number of records is 512, which means that the on-hand change bulk API  can support up to 512 change events at a time.
 
 ```txt
 Path:
@@ -345,7 +354,7 @@ Body:
     ]
 ```
 
-The following example shows sample body content. The behavior of this API differs from the behavior of the APIs that are described in the [Create on-hand change events](#create-onhand-change-event) section earlier in this topic. In this sample, the quantity of the *T-shirt* product will be set to 1.
+The following example shows sample body content. The behavior of this API differs from the behavior of the APIs that are described in the [Create on-hand change events](#create-onhand-change-event) section earlier in this article. In this sample, the quantity of the *T-shirt* product will be set to 1.
 
 ```json
 [
@@ -471,7 +480,7 @@ Body:
 
 ## Query on-hand
 
-The _Query on-hand_ API is used to fetch current on-hand inventory data for your products.
+Use the _Query on-hand_ API to fetch current on-hand inventory data for your products. The API currently supports querying up to 100 individual items by `ProductID` value. Multiple `SiteID` and `LocationID` values can also be specified in each query. The maximum limit is defined as `NumOf(SiteID) * NumOf(LocationID) <= 100`.
 
 ### <a name="query-with-post-method"></a>Query by using the post method
 
@@ -510,6 +519,9 @@ The `groupByValues` parameter should follow your configuration for indexing. For
 
 The `returnNegative` parameter controls whether the results contain negative entries.
 
+> [!NOTE]
+> If you've enabled the on-hand change schedule and available-to-promise (ATP) features, your query can also include the `QueryATP` Boolean parameter, which controls whether the query results include ATP information. For more information and examples, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
+
 The following example shows sample body content.
 
 ```json
@@ -527,7 +539,7 @@ The following example shows sample body content.
 }
 ```
 
-The following examples shows how to query all products in a specific site and location.
+The following example shows how to query all products in a specific site and location.
 
 ```json
 {
@@ -546,7 +558,7 @@ The following examples shows how to query all products in a specific site and lo
 
 ```txt
 Path:
-    /api/environment/{environmentId}/onhand/indexquery
+    /api/environment/{environmentId}/onhand
 Method:
     Get
 Headers:
@@ -563,7 +575,15 @@ Query(Url Parameters):
 Here is a sample get URL. This get request is exactly the same as the post sample that was provided earlier.
 
 ```txt
-/api/environment/{environmentId}/onhand/indexquery?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
+/api/environment/{environmentId}/onhand?organizationId=usmf&productId=T-shirt&SiteId=1&LocationId=11&ColorId=Red&groupBy=ColorId,SizeId&returnNegative=true
 ```
+
+## Available to promise
+
+You can set up Inventory Visibility to let you schedule future on-hand changes and calculate ATP quantities. ATP is the quantity of an item that is available and can be promised to a customer in the next period. Use of the ATP calculation can greatly increase your order fulfillment capability. For information about how to enable this feature, and how to interact with Inventory Visibility through its API after the feature is enabled, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md#api-urls).
+
+## Allocation
+
+Allocattion related APIs are located in [Inventory Visibility allocation](inventory-visibility-allocation.md#using-allocation-api).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

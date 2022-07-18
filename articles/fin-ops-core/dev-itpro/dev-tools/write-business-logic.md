@@ -5,7 +5,7 @@ author: pvillads
 ms.date: 02/07/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 ms.custom: 26821
 ms.search.region: Global
 ms.author: pvillads

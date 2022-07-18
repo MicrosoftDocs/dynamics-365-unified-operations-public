@@ -2,7 +2,7 @@
 # required metadata
 
 title: Translate documentation files
-description: This topic explains how to translate a documentation file for a Microsoft Dynamics product or solution.
+description: This article explains how to translate a documentation file for a Microsoft Dynamics product or solution.
 author: abmotgi 
 ms.date: 10/25/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.3.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to translate a documentation file for Microsoft Dynamics products and solutions.
+This article explains how to translate a documentation file for Microsoft Dynamics products and solutions.
 
 ## Create a translation request
 1. In Microsoft Dynamics Lifecycle Services (LCS), on the DTS dashboard, select **Add** to create a new translation request.

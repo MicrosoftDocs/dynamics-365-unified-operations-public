@@ -2,10 +2,10 @@
 # required metadata
 
 title: Tax Calculation overview
-description: This topic explains the overall scope and features of the Tax Calculation capability.
+description: This article explains the overall scope and features of the Tax Calculation capability.
 author: wangchen
-ms.date: 10/15/2021
-ms.topic: article
+ms.date: 03/02/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,9 +15,9 @@ ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: wangchen
@@ -35,7 +35,7 @@ Tax Calculation is a hyper-scalable multitenant service that enables the global 
 Tax Calculation integrates with Dynamics 365 Finance and Dynamics 365 Supply Chain Management. Eventually, it will also integrate with Dynamics 365 Project Operations, Dynamics 365 Commerce, and other first-party and third-party applications.
 
 > [!IMPORTANT]
-> When you enable Tax Calculation, some operations on related data might be performed in a data center other than the data center that maintains your service data. Review the [Terms and Conditions](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) before you enable Tax Calculation. Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
+> When you enable Tax Calculation, some operations on related data might be performed in a data center other than the data center that maintains your service data. Review the [Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2156043) before you enable Tax Calculation. Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 Tax Calculation is a microservice-based tax engine that offers exponential scalability and can help you perform the following tasks:
 
@@ -63,15 +63,34 @@ Tax Calculation is deployed in the following Azure geographies. More Azure geogr
 - Canada
 - Europe
 - Japan
+- Switzerland
 - United Kingdom
 - United States
 
 > [!NOTE]
 > Tax Calculation doesn't support earlier version of Dynamics 365, such as Dynamics AX 2012, or on-premises deployments of Dynamics 365.
 
+## Versions
+We recommend that you import and set up your Tax Calculation configuration with the version that matches your Finance or Supply Chain Management version.
+
+| Finance or Supply Chain Management version | Tax configuration version               |
+| --------------- | --------------------------------------- |
+| 10.0.18         | Tax Configuration - Europe 30.12.82     |
+| 10.0.19         | Tax Calculation Configuration 36.38.193 |
+| 10.0.20         | Tax Calculation Configuration 40.43.208 |
+| 10.0.21         | Tax Calculation Configuration 40.48.215 |
+| 10.0.22         | Tax Calculation Configuration 40.48.215 |
+| 10.0.23         | Tax Calculation Configuration 40.50.221 |
+| 10.0.24         | Tax Calculation Configuration 40.50.225 |
+| 10.0.25         | Tax Calculation Configuration 40.50.225 |
+| 10.0.26         | Tax Calculation Configuration 40.54.234 |
+| 10.0.27         | Tax Calculation Configuration 40.54.234 |
+| 10.0.28         | Tax Calculation Configuration 40.54.234 |
+
+
 ## Data flow
 
-Here is an outline of the data flow process for tTax Calculation. 
+Here is an outline of the data flow process for Tax Calculation. 
 
 1. In RCS, view and import taxable document model configurations and model mapping configurations. If you must extend configurations for an advanced scenario, see [Add data fields in tax configurations](tax-service-add-data-fields-tax-configurations.md).
 2. In RCS, create or maintain tax features. You can use tax features to maintain tax rates and tax applicability rules.
@@ -126,6 +145,16 @@ The following transactions are supported in version 10.0.23:
 
 - Free text invoice
 
+The following transactions are supported in version 10.0.26: 
+
+- General journals
+- Vendor invoice journal
+
+The following transactions are supported in version 10.0.28: 
+
+- Vendor payment journal
+- Customer payment journal
+
 ## Supported countries/regions
 
 Tax Calculation can be enabled by legal entity. 
@@ -141,6 +170,7 @@ The following countries/regions for a legal entity's primary address are support
 - Germany
 - Hungary
 - Iceland
+- Ireland
 - Italy
 - Latvia
 - Lithuania
@@ -173,6 +203,16 @@ The following countries/regions for a legal entity's primary address are support
 - Japan
 - Malaysia
 - Singapore
+
+The following countries/regions for a legal entity's primary address are supported in version 10.0.24:
+
+- Mexico
+
+The following countries/regions for a legal entity's primary address are supported in version 10.0.26:
+
+- China
+- Czech Republic
+- Spain
 
 ## Related resources
 

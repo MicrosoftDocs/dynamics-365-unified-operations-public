@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot service authentication issues
-description: This topic provides some tips for troubleshooting issues that involve service authentication.
+description: This article provides some tips for troubleshooting issues that involve service authentication.
 author: nimakms
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 195943
 ms.assetid: 0c22fad3-be0a-4111-97c0-2f3fadfd5f6b
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sericks
+ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides some tips for troubleshooting issues that involve service authentication.
+This article provides some tips for troubleshooting issues that involve service authentication.
 
-When you troubleshoot service authentication issues, there are a few basic and common procedures that can help resolve the issues that are most often encountered. These procedures also provide a hands-on demonstration of how the authentication mechanism works. This topic includes instructions and also lists a few common issues that users have encountered so far.
+When you troubleshoot service authentication issues, there are a few basic and common procedures that can help resolve the issues that are most often encountered. These procedures also provide a hands-on demonstration of how the authentication mechanism works. This article includes instructions and also lists a few common issues that users have encountered so far.
 
 ## Inspect the JWT
 ### Capture the JWT from an HTTP request

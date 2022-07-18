@@ -2,8 +2,8 @@
 # required metadata
 
 title: Import vendor catalogs
-description: This topic describes the process to import vendor catalog data.
-author: Henrikan
+description: This article describes the process to import vendor catalog data.
+author: GalynaFedorova
 ms.date: 03/20/2018
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 ms.custom: 
 ms.search.region: Global
 ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2018-04-20 
 ms.dyn365.ops.version: 7.3
 ---
@@ -58,9 +58,7 @@ To import vendor catalog data, you must complete the following tasks:
 
 4. Configure workflow for catalog import. Create a CMR file template and share this with your vendor.
 
-5. Select **Procurement and sourcing** \> **Common** \> **Catalogs** \> **Vendor
-    catalogs** to create a vendor catalog. The catalog maintenance request (CMR) files that
-    you receive from your vendor are grouped in this catalog. 
+5. Select **Procurement and sourcing** \> **Catalogs** \> **Vendor catalogs** to create a vendor catalog. The catalog maintenance request (CMR) files that you receive from your vendor are grouped in this catalog.
 
 6. Upload the CMR file.
 

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Inventory management overview
-description: This topic provides an overview of Inventory management.
+description: This article provides an overview of Inventory management.
 author: yufeihuang
 ms.date: 07/25/2019
-ms.topic: article
+ms.topic: overview
 ms.prod:
 ms.technology:
 

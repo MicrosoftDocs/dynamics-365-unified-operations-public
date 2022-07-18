@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Design a new ER configuration to generate reports in Word format
-description: This topic explains how users can configure a new Electronic reporting (ER) format to generate reports as Microsoft Word documents. 
+description: This article explains how users can configure a new Electronic reporting (ER) format to generate reports as Microsoft Word documents. 
 author: NickSelin
 ms.date: 12/17/2020
 ms.topic: business-process 
@@ -32,7 +32,7 @@ To generate reports as Microsoft Word documents, you must design a template for 
 
 ![Sample template for the control report in the Word desktop application.](./media/er-design-configuration-word-image1.png)
 
-To use a Word document as a template for reports in Word format, you can configure a new [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md). This solution must include an ER [configuration](general-electronic-reporting.md#Configuration) that contains an ER [format](general-electronic-reporting.md#FormatComponentOutbound) component.
+To use a Word document as a template for reports in Word format, you can configure a new [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md). This solution must include an ER [configuration](general-electronic-reporting.md#Configuration) that contains an ER format component.
 
 > [!NOTE]
 > When you create a new ER format configuration to generate reports in Word format, you must either select **Word** as the format type in the **Create configuration** drop-down dialog box or leave the **Format type** field blank.

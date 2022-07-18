@@ -2,7 +2,7 @@
 # required metadata
 
 title: Rebate reduction principles
-description: This topic describes how to set up reduction principles. Reduction principles control the behavior when multiple rebates apply to the same item or transaction.
+description: This article describes how to set up reduction principles. Reduction principles control the behavior when multiple rebates apply to the same item or transaction.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -15,9 +15,9 @@ ms.search.form: TAMRebateCategory
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng

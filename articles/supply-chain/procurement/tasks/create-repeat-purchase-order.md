@@ -2,8 +2,8 @@
 # required metadata 
  
 title: Create a repeat purchase order
-description: This topic shows you how to create a repeat purchase order (PO) by copying lines from an earlier purchase order document to a new PO or to an existing PO. 
-author: Henrikan
+description: This article shows you how to create a repeat purchase order (PO) by copying lines from an earlier purchase order document to a new PO or to an existing PO. 
+author: GalynaFedorova
 ms.date: 07/29/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic shows you how to create a repeat purchase order (PO) by copying lines from an earlier purchase order document to a new PO or to an existing PO. There are two methods for creating repeat orders. You can use the actions available at the document level from the Action Pane, or you can use the line detail actions. The document level actions are mainly intended for creating a new purchase order by adding lines and header information from another order, while the line details action is mainly for adding lines to an existing order. The example shown in this guide can be used in the USMF demo data company. This task would typically be carried out by a purchasing agent.
+This article shows you how to create a repeat purchase order (PO) by copying lines from an earlier purchase order document to a new PO or to an existing PO. There are two methods for creating repeat orders. You can use the actions available at the document level from the Action Pane, or you can use the line detail actions. The document level actions are mainly intended for creating a new purchase order by adding lines and header information from another order, while the line details action is mainly for adding lines to an existing order. The example shown in this guide can be used in the USMF demo data company. This task would typically be carried out by a purchasing agent.
 
 
 ## Create a new repeat purchase order

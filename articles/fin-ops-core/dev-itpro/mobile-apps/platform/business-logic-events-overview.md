@@ -3,9 +3,9 @@
 
 title: Business logic events
 description: Code that executes in business logic can make runtime modifications to the metadata of Pages, Actions, and Controls.
-author: robinarh
-ms.date: 08/14/2017
-ms.topic: article
+author: tonyafehr
+ms.date: 05/24/2022
+ms.topic: overview
 ms.prod: 
 ms.technology: 
 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: ["255544", "intro-internal"]
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: rhaertle
+ms.author: tfehr
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
 
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: Platform update 3
 # Business logic events
 
 [!include [banner](../../includes/banner.md)]
+[!include [mobile app deprecated](../../includes/mobile-app-deprecation-banner.md)]
 
 Mobile workspace business logic events provide places for developers to specify workspace configuration to enhance capability, and implement business-scenario-specific behaviors. All mobile business logic executes in the process of the mobile app, and business logic execution flow is controlled by the Operations mobile app framework. 
 

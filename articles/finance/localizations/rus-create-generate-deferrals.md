@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Create or generate deferrals (Russia)
-description: This topic explains how to manually create deferrals and how to generate them by using a periodic task.
+description: This article explains how to manually create deferrals and how to generate them by using a periodic task.
 author: anasyash
 ms.date: 06/16/2020
 ms.topic: article

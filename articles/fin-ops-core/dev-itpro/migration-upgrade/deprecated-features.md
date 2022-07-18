@@ -2,7 +2,7 @@
 # required metadata
 
 title: Removed or deprecated features in previous releases
-description: This topic describes features that have been removed, or that were planned for removal from Dynamics 365 for Finance and Operations and previous releases.
+description: This article describes features that have been removed, or that were planned for removal from Dynamics 365 for Finance and Operations and previous releases.
 author: sericks007
 ms.date: 02/16/2021
 ms.topic: article
@@ -31,12 +31,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-[!include [rename-banner](~/includes/cc-data-platform-banner.md)]
+
 
 > [!IMPORTANT]
-> This topic is no longer updated. To see a current list of features that have been removed or deprecated from Finance and Operations apps, search for **"Removed or deprecated features"** content that relates to the app you're using.
+> This article is no longer updated. To see a current list of features that have been removed or deprecated from Finance and Operations apps, search for **"Removed or deprecated features"** content that relates to the app you're using.
 
-This topic describes features that have been removed or deprecated from Dynamics 365 for Finance and Operations and previous releases of that product.
+This article describes features that have been removed or deprecated from Dynamics 365 for Finance and Operations and previous releases of that product.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
@@ -90,7 +90,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: By October 1, 2020, we plan to no longer support the **setUtcString()** method. Developers should be using the **setUtcDateTime()** method instead. |
 
-### Blacklist report (IT) – Feature reference IT-00001
+### Blocklist report (IT) – Feature reference IT-00001
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
@@ -1423,3 +1423,4 @@ The Windows 8 tablet app provided functionality for expense entry and approval.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

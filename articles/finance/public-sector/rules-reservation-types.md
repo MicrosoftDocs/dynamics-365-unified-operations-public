@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up general budget reservation rules and reservation types
-description: This topic explains how to set up and modify general budget reservation rules and reservation types for Public sector.
+description: This article explains how to set up and modify general budget reservation rules and reservation types for Public sector.
 author: AlexRenney
 ms.date: 04/25/2019
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: BudgetReservation_PSN, BudgetReservationType_PSN
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -36,7 +36,7 @@ Public sector entities often use general budget reservations to set aside or ear
 > [!NOTE]
 > If your organization is in France, you will use commitments instead of general budget reservations.
 
-The following illustration shows how to set up the system to use general budget reservations. Each numbered step corresponds to a section of this topic.
+The following illustration shows how to set up the system to use general budget reservations. Each numbered step corresponds to a section of this article.
 
 ![Setup for general budget reservation.](media/gbr-rules-reservations-process.jpg "Setup for general budget reservation")
 

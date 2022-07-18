@@ -2,7 +2,7 @@
 # required metadata
 
 title: Project resource scheduling data model
-description: This topic provides information about the Project resource scheduling data model.
+description: This article provides information about the Project resource scheduling data model.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 202281
 ms.assetid: 46d23d3e-b5ef-43a7-ae9d-a1e202cc8abc
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the Project resource scheduling data model.
+This article provides information about the Project resource scheduling data model.
 
 ## Physical data model for Project resource scheduling
 

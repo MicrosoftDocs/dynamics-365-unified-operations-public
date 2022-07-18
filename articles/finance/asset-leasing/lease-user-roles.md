@@ -2,7 +2,7 @@
 # required metadata
 
 title: Assign lease user roles
-description: This topic describes the security roles that are used in Asset leasing. It also explains how to assign users to those roles.
+description: This article describes the security roles that are used in Asset leasing. It also explains how to assign users to those roles.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: SysOperationTemplateForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the security roles that are used in Asset leasing. It also explains how to assign users to those roles.
+This article describes the security roles that are used in Asset leasing. It also explains how to assign users to those roles.
 
 Three user roles differentiate access in Asset leasing. One role is appropriate for maintaining leases, one is appropriate for viewing leases, and one is appropriate for performing a lease clerk's duties. Each role has specific permissions for all lease pages, and each lets users view, create, edit, or delete leases, according to their job duties.
 

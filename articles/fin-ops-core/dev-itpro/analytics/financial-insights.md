@@ -44,7 +44,7 @@ ms.dyn365.ops.version: 7.3
 
 The **Financial analysis** workspace is focused on letting you view and filter the data on existing reports. You are able to add new visuals to the **Financial analysis** workspace. The **Financial analysis** workspace is available for current company as well as all companies to show data for all legal entities, regardless of the legal entities that the role has access to.
 
-- [Add or edit Power BI visualizations on your dashboard](/powerapps-docs/user/add-powerbi-dashboards.md)
+- [Add or edit Power BI visualizations on your dashboard](/powerapps/user/add-powerbi-dashboards)
 
 ## Dynamics 365 Finance setup
 **General ledger**
@@ -84,7 +84,7 @@ Currently, the data on embedded Power BI reports can't be limited to the legal e
 | Duty                                    | Roles | Description |
 |-----------------------------------------|-------|------------|
 | View financial analysis current company | <ul><li>Accountant</li><li>Accounting manager</li><li>Accounting supervisor</li><li>Auditor</li><li>Budget manager</li><li>Chief executive officer</li><li>Chief financial officer</li><li>Financial controller</li></ul> | This duty provides access to Financial analysis. By default, the active company is used as a filter. You can't add other legal entities. |
-| View financial analysis all company   | In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, this duty isn't assigned to a role. In the next release, this duty will be assigned to the Chief financial officer role. | This duty provides access to the menu item for the CFO overview workspace. By default, the active company is used as a filter. However, you can add all legal entities, regardless of whether the user has access to the other legal entities. |
+| View financial analysis all company   | In Microsoft Dynamics 365 Finance, Enterprise edition 7.3, this duty isn't assigned to a role. In the next release, this duty will be assigned to the Chief financial officer role. | This duty provides access to the menu item for the CFO overview workspace. By default, the active company is used as a filter. However, you can add all legal entities, regardless of whether the user has access to the other legal entities. |
 
 
 ## Financial reporting vs. Financial analysis
@@ -102,7 +102,7 @@ The following comparison chart will help differentiate the two options:
 | **Support reporting hierarchy/Organization hierarchy**   | Yes                                                               | No |
 | **Report on subledger data**                             | Yes Limited to only vendor, customer                              | Yes Vendor, customer, vendor/customer groups, vendor/customer addresses, etc. |
 | **Reporting Currency**                                   | Yes Accounting currency and translate to reporting currency       | No Accounting currency only |
-| **Security**                                             | Yes Adheres to Finance reporting tree security | Limited View reports for all companies (regardless of Finance and Operations security) or only active company |
+| **Security**                                             | Yes Adheres to Finance reporting tree security | Limited View reports for all companies (regardless of finance and operations security) or only active company |
 | **Support different Chart of accounts and fiscal years** | Yes                                                               | No |
 | **report on external data**                              | No                                                                | No |
 | **Support consolidations**                               | Yes                                                               | Limited Can report on multiple companies but use accounting currency only |
@@ -250,3 +250,4 @@ The information in the following resources isn't required in order to enable the
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

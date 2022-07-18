@@ -2,7 +2,7 @@
 # required metadata
 
 title: Power Apps Host control
-description: By using the Power Apps Host control, you can embed an app from Power Apps into one of the Finance and Operations apps.
+description: By using the Power Apps Host control, you can embed an app from Power Apps into one of the finance and operations apps.
 author: TLeforMicrosoft
 ms.date: 04/25/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 16061
 ms.assetid: 80c93e91-1952-44ce-af93-a17965ee476a
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-In Microsoft Power Apps, you can manage organizational data through apps that you created, or apps that someone else created and shared with you. Apps run on [mobile devices such as phones](https://powerapps.microsoft.com/tutorials/run-app-client/) or [in a browser](https://powerapps.microsoft.com/tutorials/run-app-browser/). Apps can also be embedded in Finance and Operations apps by developers using the Microsoft Visual Studio developer experience. To learn more about Power Apps, see [https://powerapps.microsoft.com](https://powerapps.microsoft.com/).
+In Microsoft Power Apps, you can manage organizational data through apps that you created, or apps that someone else created and shared with you. Apps run on [mobile devices such as phones](https://powerapps.microsoft.com/tutorials/run-app-client/) or [in a browser](https://powerapps.microsoft.com/tutorials/run-app-browser/). Apps can also be embedded in finance and operations apps by developers using the Microsoft Visual Studio developer experience. To learn more about Power Apps, see [https://powerapps.microsoft.com](https://powerapps.microsoft.com/).
 
 ## Host an app from Power Apps on a page
 

@@ -3,7 +3,7 @@
 
 
 title: Manage Bing Maps for your organization
-description: This topic describes how to manage Bing Maps for your application.
+description: This article describes how to manage Bing Maps for your application.
 author: aamirallaqaband 
 ms.date: 08/17/2017
 ms.topic: article
@@ -15,9 +15,9 @@ ms.technology:
 ms.search.form: RetailSharedParameters
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global 
 ms.search.industry: Retail
 ms.author: aamiral

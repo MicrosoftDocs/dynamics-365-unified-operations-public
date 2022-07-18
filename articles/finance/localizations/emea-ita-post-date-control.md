@@ -2,7 +2,7 @@
 # required metadata
 
 title: Unified posting date control
-description: This topic explains how to configure chronology control for invoices posting dates.  
+description: This article explains how to configure chronology control for invoices posting dates.  
 author: ikond
 ms.date: 02/01/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.search.form:  NumberSequenceGroup
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 537707
 ms.search.region: Italy
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.17
 [!include [banner](../includes/banner.md)]
 
 
-This topic explains how to configure chronology control of invoices posting dates within a specific sales tax book section.
+This article explains how to configure chronology control of invoices posting dates within a specific sales tax book section.
 
 ## Prerequisites
 

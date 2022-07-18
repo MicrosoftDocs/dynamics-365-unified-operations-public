@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set product quantity limits for B2B e-commerce sites
-description: This topic describes how to set product quantity limits for business-to-business (B2B) e-commerce sites.
+description: This article describes how to set product quantity limits for business-to-business (B2B) e-commerce sites.
 author: josaw1
 ms.date: 01/20/2021
 ms.topic: article
@@ -13,7 +13,7 @@ ms.search.form: RetailOperations
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: v-chgri
-#ms.search.scope: Core, Operations, Retail
+#
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to set product quantity limits for business-to-business (B2B) e-commerce sites.
+This article describes how to set product quantity limits for business-to-business (B2B) e-commerce sites.
 
 Most products have a unit of measure that defines their grouping. The grouping affects how the products can be sold. Some products might have an additional grouping for quantities. This grouping determines whether the products can be sold as individual units or multiples, and whether there is a minimum or maximum order quantity limit that must be followed.
 
@@ -80,7 +80,7 @@ To turn on the B2B order quantity limits feature in Commerce site builder, follo
 
 [Set up a B2B e-commerce site](set-up-b2b-site.md)
 
-[Create org modeling hierarchies for B2B organizations](org-model.md)
+[Manage B2B business partners using customer hierarchies](partners-customer-hierarchies.md)
 
 [Manage business partner users on B2B e-commerce sites](manage-b2b-users.md)
 

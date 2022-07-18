@@ -2,9 +2,9 @@
 # required metadata
 
 title: Financial dimensions
-description: This topic describes the various types of financial dimensions and how they are set up.
+description: This article describes the various types of financial dimensions and how they are set up.
 author: aprilolson
-ms.date: 01/03/2019
+ms.date: 03/07/2022
 ms.topic: article
 ems.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: DimensionDetails, DimensionValueDetails, SysTranslationDetail
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 25871
 ms.search.region: Global
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the various types of financial dimensions and how they are set up.
+This article explains the various types of financial dimensions and how they are set up.
 
 Use the **Financial dimensions** page to create financial dimensions that you can use as account segments for charts of accounts. There are two types of financial dimensions: custom dimensions and entity-backed dimensions. Custom dimensions are shared across legal entities, and the values are entered and maintained by users. For entity-backed dimensions, the values are defined somewhere else in the system, such as in Customers or Stores entities. Some entity-backed dimensions are shared across legal entities, whereas other entity-backed dimensions are company-specific.
 
@@ -83,8 +83,12 @@ To help maintain referential integrity of the data, financial dimensions can rar
 - Is the financial dimension used in any active account structure, advanced rule structure, or financial dimension set?
 - Is the financial dimension part of a default financial dimension integration format?
 - Has the financial dimension been set up as a default dimension?
+- Has the financial dimension been unselected from the Financial Reporting setup? 
 
 If any of the criteria are met, you can't delete the financial dimension.
+
+> [!NOTE]
+> Starting in Finance version 10.0.27, financial dimensions will not longer be automatically selected for financial reporting setup as they are created. 
 
 ## Default dimension values
 

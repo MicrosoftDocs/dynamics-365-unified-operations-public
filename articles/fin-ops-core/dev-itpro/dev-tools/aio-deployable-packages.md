@@ -1,6 +1,6 @@
 ---
 title: All-in-one deployable packages
-description: This topic describes the all-in-one deployable package concept and its use.
+description: This article describes the all-in-one deployable package concept and its use.
 author: laneswenka
 ms.date: 05/20/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.9
 
 Customers can update the software in their environments by applying software deployable packages. These packages can originate from the customers themselves in the form of customizations. They can also be provided by partners and independent software vendors (ISVs). Microsoft recommends that customers combine all these various packages into a single package before they apply them to an environment. For customers who have self-service environments, this approach is a hard requirement.
 
-This topic outlines the best practices for creating and managing an all-in-one deployable package.
+This article outlines the best practices for creating and managing an all-in-one deployable package.
 
 > [!IMPORTANT]
 > - The enforcement of all-in-one packages will be done in phases. Requests to extend the support for deployable packages that are **not** all-in-one deployable packages ended on October 31, 2020.

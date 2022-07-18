@@ -2,9 +2,9 @@
 # required metadata
 
 title: Archive inventory transactions
-description: This topic describes how to archive inventory transaction data to help improve system performance.
+description: This article describes how to archive inventory transaction data to help improve system performance.
 author: yufeihuang
-ms.date: 03/01/2021
+ms.date: 05/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: yufeihuang
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-Over time, the inventory transactions table (`InventTrans`) will continue to grow and consume more database space. Therefore, queries that are made against the table will gradually become slower. This topic describes how you can use the *Inventory transactions archive* feature to archive data about inventory transactions to help improve system performance.
+Over time, the inventory transactions table (`InventTrans`) will continue to grow and consume more database space. Therefore, queries that are made against the table will gradually become slower. This article describes how you can use the *Inventory transactions archive* feature to archive data about inventory transactions to help improve system performance.
 
 > [!NOTE]
 > Only financially updated inventory transactions can be archived in a selected closed ledger period. To be archived, financially updated outbound inventory transactions must have an issue status of *Sold*, and inbound inventory transactions must have a receipt status of *Purchased*.
@@ -38,7 +38,7 @@ If an `itemId` and `inventDimId` combination contains only one receipt or issue 
 
 ## Turn on the feature in your system
 
-If your system doesn't already include the features that is described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Inventory transactions archive* feature. Note that this feature cannot be disabled once it has been enabled.
+If your system doesn't already include the features that is described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the *Inventory transactions archive* feature. Note that this feature cannot be disabled once it has been enabled.
 
 ## Things to consider before you archive inventory transactions
 
@@ -119,3 +119,110 @@ The toolbar above the grid provides the following buttons that you can use to wo
 - **Pause archiving** – Pause a selected archive that is currently being processed. The pause takes effect only after the archiving task has been generated. Therefore, there might be a short delay before the pause takes effect. If an archive has been paused, a check mark appears in its **Stop current update** field.
 - **Resume archiving** – Resume processing for a selected archive that is currently paused.
 - **Reverse** – Reverse the selected archive. You can reverse an archive only if its **State** field is set to *Finished*. If an archive has been reversed, a check mark appears in its **Reverse** field.
+
+## Extend your code to support custom fields
+
+If the `InventTrans` table contains one or more custom fields, then you may need to extend the code to support them, depending on how they are named.
+
+- If the custom fields from the `InventTrans` table have the same field names as in the `InventtransArchive` table, that means they are 1:1 mapped. Therefore, you can just put the custom fields into the `InventoryArchiveFields` fields group of the `inventTrans` table.
+- If the custom field names in the `InventTrans` table don't match the field names in the `InventtransArchive` table, then you need to add code to map them. For example, if you have a system field called  `InventTrans.CreatedDateTime`, then you must create a field in the `InventTransArchive` table with a different name (such as `InventtransArchive.InventTransCreatedDateTime`) and add extensions to the `InventTransArchiveProcessTask` and  `InventTransArchiveSqlStatementHelper` classes, as shown in the following sample code.
+
+The following sample code shows an example of how to add the required extension to the `InventTransArchiveProcessTask` class.
+
+```xpp
+[ExtensionOf(classStr(InventTransArchiveProcessTask))]
+Final class InventTransArchiveProcessTask_Extension
+{
+
+    protected void addInventTransFields(SysDaSelection _selectionObject)
+    {
+        _selectionObject.add(fieldStr(InventTrans, ModifiedBy))
+            .add(fieldStr(InventTrans, CreatedBy)).add(fieldStr(InventTrans, CreatedDateTime));
+
+        next addInventTransFields(_selectionObject);
+    }
+
+
+    protected void addInventTransArchiveFields(SysDaSelection _selectionObject)
+    {
+        _selectionObject.add(fieldStr(InventTransArchive, InventTransModifiedBy))
+            .add(fieldStr(InventTransArchive, InventTransCreatedBy)).add(fieldStr(InventTransArchive, InventTransCreatedDateTime));
+
+        next addInventTransArchiveFields(_selectionObject);
+    }
+}
+```
+
+The following sample code shows an example of how to add the required extension to the `InventTransArchiveSqlStatementHelper` class.
+
+```xpp
+[ExtensionOf(classStr(InventTransArchiveSqlStatementHelper))]
+final class InventTransArchiveSqlStatementHelper_Extension
+{
+    private str     inventTransModifiedBy;  
+    private str     inventTransCreatedBy;
+    private str     inventTransCreatedDateTime;
+
+    protected void initialize()
+    {
+        next initialize();
+        inventTransModifiedBy = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, ModifiedBy)).name(DbBackend::Sql);
+        inventTransCreatedDateTime = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, CreatedDateTime)).name(DbBackend::Sql);
+        inventTransCreatedBy = new SysDictField(tablenum(InventTrans), fieldNum(InventTrans, CreatedBy)).name(DbBackend::Sql);
+    }
+
+    protected str buildInventTransArchiveSelectionFieldsStatement()
+    {
+        str     ret;
+
+        ret = next buildInventTransArchiveSelectionFieldsStatement();
+        
+        if (inventTransModifiedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransModifiedBy)).name(DbBackend::Sql));
+        }
+
+        if (inventTransCreatedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransCreatedBy)).name(DbBackend::Sql));
+        }
+
+        if (inventTransCreatedDateTime)
+        {
+            ret += ',';
+            ret += strFmt('%1',  new SysDictField(tablenum(InventTransArchive), fieldNum(InventTransArchive, InventTransCreatedDateTime)).name(DbBackend::Sql));
+        }
+
+        return ret;
+    }
+
+    protected str buildInventTransTargetFieldsStatement()
+    {
+        str     ret;
+
+        ret = next buildInventTransTargetFieldsStatement();
+
+        if (inventTransModifiedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransModifiedBy);
+        }
+
+        if (inventTransCreatedBy)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransCreatedBy);
+        }
+
+        if (inventTransCreatedDateTime)
+        {
+            ret += ',';
+            ret += strFmt('%1', inventTransCreatedDateTime);
+        }
+
+        return ret;
+    }
+}
+```

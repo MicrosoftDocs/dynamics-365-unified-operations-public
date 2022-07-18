@@ -53,7 +53,7 @@ Product dimension values for the size, color, and style dimensions can be create
 
 Product dimension values for the configuration dimension are typically created by using either the Product configurator or the Dimension-based configurator. 
 
-Product versions are usually created for specific versions as the product evolves during its lifecycle. Product versions are covered in detail later in this topic.
+Product versions are usually created for specific versions as the product evolves during its lifecycle. Product versions are covered in detail later in this article.
 
 Product dimensions can also be created and maintained on the **Product dimensions** page, which can be accessed from the following locations:
 
@@ -84,7 +84,7 @@ A company sells denim jeans. The item, *Jeans*, uses the color and size product 
 
 ## The version product dimension
 
-Version is a product dimension that is intended to help you maintain and track multiple versions of a product throughout the supply chain. Version tracking is essential to the success of manufacturers that operate in a world of constantly shrinking product lifecycles, increased quality and reliability requirements, and increased focus on product safety.
+Version is a product dimension that is intended to help you maintain and track multiple versions of a product throughout the supply chain. Version tracking is essential to the success of manufacturers that operate in a world of constantly shrinking product lifecycles, increased quality and reliability requirements, and increased focus on product safety.
 
 As a standard product dimension, version will behave similarly to the existing product dimensions (size, style, color, and configuration). Therefore, you can use it for other purposes besides tracking product versions.
 

@@ -1,7 +1,7 @@
 ---
 
 title: Add indexes to tables through extension
-description: This topic describes how to add an index to a table.
+description: This article describes how to add an index to a table.
 author: ivanv-microsoft
 ms.date: 03/09/2020
 ms.topic: article
@@ -13,7 +13,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: rhaertle
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 268724
 ms.assetid: 

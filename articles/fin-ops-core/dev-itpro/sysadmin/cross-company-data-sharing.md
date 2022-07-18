@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cross-company data sharing
-description: This topic describes cross-company data sharing, which is a mechanism for sharing reference and group data among companies in a deployment.
+description: This article describes cross-company data sharing, which is a mechanism for sharing reference and group data among companies in a deployment.
 author: peakerbl
 ms.date: 06/03/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a Finance and Operations deployment. This feature resembles the virtual companies feature in Microsoft Dynamics AX 2012.
+This article provides information about cross-company data sharing. Cross-company sharing is a mechanism for sharing reference and group data among companies in a finance and operations deployment. This feature resembles the virtual companies feature in Microsoft Dynamics AX 2012.
 
 ## What is this feature and how does it work?
 
@@ -64,9 +64,9 @@ Data sharing is managed by defined policies that are saved in data packages. Tem
 
 -   The fields that are replicated
 -   The entities that participate in the replication
--   The companies that participates in the sharing
+-   The companies that participate in the sharing
 
-The same company and table can only be in one policy. It is possible to share the same table in more than policy. This can happen when the limits of records or companies are reached, or to create policies for tables that need to be shared differently for different country/regions. 
+The same company and table can only be in one policy. It is possible to share the same table in more than one policy. This can happen when the limits of records or companies are reached, or to create policies for tables that need to be shared differently for different country/regions. 
 
 > [!NOTE]
 > Only required foreign key fields are selected by default. Optional foreign keys need to be selected manually to be included. The best practice is to add one or more tables when selecting a foreign key field, unless the table has already been added.
@@ -177,3 +177,4 @@ For details about how to use a template, see [Configure financial cross-company 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
