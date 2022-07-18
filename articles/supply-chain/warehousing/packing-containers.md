@@ -297,4 +297,4 @@ The inventory items have now been brought forward to the packing area and are re
 >
 >Go to **Warehouse management \> Packing and containerization \> Containers**
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
