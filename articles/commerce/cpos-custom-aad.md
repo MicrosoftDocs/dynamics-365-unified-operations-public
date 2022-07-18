@@ -79,8 +79,8 @@ To create and configure a custom CPOS application in AAD, follow these steps.
 
 Open CPOS config.jason file and make the following updates in the file.
 
-1. Locate the key **AADClientId**, and replace its value with the **Application (client) ID** of the custom CPOS application.
-1. Locate the key **AADRetailServerResourceId**, and replace its value with the **Application ID URI** of the custom Retail Server application.
+1. Locate the key **AADClientId**, and replace its value with the **Application (client) ID** of the **custom CPOS application** created in previous steps.
+1. Locate the key **AADRetailServerResourceId**, and replace its value with the **Application ID URI** of the **custom Retail Server application** created in previous steps.
 
 Both parameters above will be used by CPOS when it sends a request to AAD to acquire a security token.
 
