@@ -54,7 +54,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ## Features removed or deprecated in the Supply Chain Management 10.0.18 release
 
-### Supply Chain Management- Warehousing (the warehouse app)
+### <a name="wma"></a>Supply Chain Management- Warehousing (the warehouse app)
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|

@@ -19736,6 +19736,11 @@
       "source_path": "articles/supply-chain/cloud-edge/cloud-edge-workload-warehousing.md",
       "redirect_url": "/dynamics365/supply-chain/cloud-edge/cloud-edge-landing-page",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/install-configure-warehousing-app.md",
+      "redirect_url": "/dynamics365/supply-chain/get-started/removed-deprecated-features-scm-updates#wma",
+      "redirect_document_id": "false"
     }
   ]
 }
