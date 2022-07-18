@@ -3507,7 +3507,7 @@
             href: warehousing/work-split.md
           - name: Material handling equipment interface (MHAX)
             href: warehousing/mhax.md
-      - name: The warehouse app
+      - name: The Warehouse Management mobile app
         items:
         - name: Install, set up, and use mobile devices
           items:
