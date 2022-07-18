@@ -45,7 +45,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |----|----|----|----|
-|    |    |    |    |
+|Tax calculation    |Integration with periodical journal    |[Tax Calculation integration with finance and operations apps](../localizations/global-tax-calcuation-service-overview.md)    |Parameter    |
 |    |    |    |    |
 |    |    |    |    |
 
@@ -56,9 +56,9 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
-|              |              |                  |
-|              |              |                  |
-|              |              |                  |
+|Tax calculation              | Tax Calculation service             |Customer/vendor tax exempt numbers from document header can be used as tax group applicability conditions to determine matrix output. For more information, see [Multiple VAT registration numbers]([../localizations/global-tax-calcuation-service-overview.md](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/emea-multiple-vat-registration-numbers))                  |
+|Tax calculation              |Tax Calculation service              |Loading address on freee text invoice header can be used as ship from address to build applicability rules. For more information, see [Tax calculation data model](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/tax-calculation-data-model-overview)                  |
+|Tax calculation              |Tax Calculation service              |"Adjust execution sequence" function is available now in applicability rule matrix to support adjusting applicabulity rule execution seuqnce within the same weight. For more information, see [Sales tax applicability and sales tax group determination logic](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/global-sales-tax-group-determination?toc=%2Fdynamics365%2Ffinance%2Ftoc.json#matching-logic)                 |
 
 ## Additional resources
 
