@@ -69,10 +69,10 @@ This section complements the [Country-specific configuration of application setu
 4. In the **Applicability rules** section, go through the clauses, and review or set the required fields:
     - Review the **LegalEntityID** clause and update with the proper value from your legal entity.
 
-6. Select **Validate** to ensure that all required fields have been set.
-7. Save your changes, and close the page.
-8. On the **Setups** tab, select **Project invoices**, and then select **Edit**.
-9. Repeat steps 3 through 5 for project invoices.
+5. Select **Validate** to ensure that all required fields have been set.
+6. Save your changes, and close the page.
+7. On the **Setups** tab, select **Project invoices**, and then select **Edit**.
+8. Repeat steps 3 through 6 for project invoices.
 
 ### Configure the processing pipeline for import
 
