@@ -45,6 +45,8 @@ Introduced in **10.0.4** release, this API gets a product’s calculated price i
 
 The main use case scenario of this API is the product details page where the retailer wants to showcase the best price including any effective discounts for a product.
 
+The input paramaters are listed below.
+
 | Name                                    	| Sub name      	| Type                                	| Required / Optional 	| Description                                                                                            	|
 |-----------------------------------------	|---------------	|-------------------------------------	|---------------------	|--------------------------------------------------------------------------------------------------------	|
 | projectDomain                           	|               	| ProjectionDomain                    	| Required            	|                                                                                                        	|
@@ -122,7 +124,7 @@ The data model for both request and response of this API is **Cart** (in the con
 
 The scope of the API is to calculate prices and discounts only, taxes or charges are not involved.
 
-Input parameters inside the object named salesDocument are listed below.
+The input parameters inside the object named salesDocument are listed below.
 
 | Name             	| Sub name             	| Type                          	| Required / Optional                             	| Description                                                                                                                                                                                                           	|
 |------------------	|----------------------	|-------------------------------	|-------------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
@@ -146,6 +148,66 @@ Input parameters inside the object named salesDocument are listed below.
 |                  	| CodeId               	| String                        	| Optional                                        	| Coupon code identifier. Once provided, it must match Code.                                                                                                                                                            	|
 |                  	| DiscountOfferId      	| String                        	| Optional                                        	| Discount identifier. Once provided, it must match Code.                                                                                                                                                               	|
 
+Sample request body:
+
+```json
+{
+    "salesDocument": 
+    {
+        "Id": "CalculateSalesDocument",
+        "CartLines": 
+        [
+            {
+                "ProductId": 68719491408,
+                "ItemId": "91003",
+                "InventoryDimensionId": "",
+                "Quantity": 1,
+                "UnitOfMeasureSymbol": "ea"
+            },
+            {
+                "ProductId": 68719493014,
+                "Quantity": 2,
+                "UnitOfMeasureSymbol": "ea"
+            }
+        ],
+        "CustomerId": "3003",
+        "AffiliationLines": 
+        [
+            {
+                "AffiliationId": 68719476742,
+                "LoyaltyTierId": 0,
+                "AffiliationTypeValue": 0,
+                "ReasonCodeLines": [],
+                "CustomerId": null
+            }
+        ],
+        "LoyaltyCardId": "55103",
+        "Coupons": 
+        [
+            {
+                "CodeId": "CODE-0005",
+                "Code": "CPN0004",
+                "DiscountOfferId": "ST100077"
+            }
+        ]
+    }
+}
+```
+
+The entire Cart object is returned as the response body. To check prices and discounts, we may focus on the fields listed below.
+
+| Name           	| Sub name       	| Type                	| Description                                                                                                       	|
+|----------------	|----------------	|---------------------	|-------------------------------------------------------------------------------------------------------------------	|
+| NetPrice       	|                	| Decimal             	| Net price of the entire sales document before applying discounts.                                                 	|
+| DiscountAmount 	|                	| Decimal             	| Total discount amount of the entire sales document.                                                               	|
+| TotalAmount    	|                	| Decimal             	| Total amount of the entire sales document.                                                                        	|
+| CartLines      	|                	| IList<CartLine>     	| Calculated lines with price and discount details.                                                                 	|
+|                	| Price          	| Decimal             	| Unit price of the item.                                                                                           	|
+|                	| NetPrice       	| Decimal             	| Price * Quantity, net price of the line before applying discounts.                                                	|
+|                	| DiscountAmount 	| Decimal             	| Discount amount.                                                                                                  	|
+|                	| TotalAmount    	| Decimal             	| The final total pricing result of the line.                                                                       	|
+|                	| PriceLines     	| IList<PriceLine>    	| Price details, including the source of the price (base price, price adjustment, trade agreement), and the amount. 	|
+|                	| DiscountLines  	| IList<DiscountLine> 	| Discount details.                                                                                                 	|
 
 
 ## GetAvailablePromotions 
@@ -153,6 +215,39 @@ Input parameters inside the object named salesDocument are listed below.
 Given a cart with several cart lines, this API returns all applicable discounts for the cart lines. 
 
 The main use case scenario of this API is the cart page where the retailer wants to showcase applied discounts or available coupons for the current cart.
+
+The input parameters are listed below.
+
+| Name        	| Type                	| Required / Optional 	| Description                                                      	|
+|-------------	|---------------------	|---------------------	|------------------------------------------------------------------	|
+| key         	| String              	| Required            	| Cart ID.                                                         	|
+| cartLineIds 	| IEnumerable<string> 	| Optional            	| Set this field to only return discounts for selected cart lines. 	|
+
+Sample response body:
+
+```json
+{
+    "value": 
+    [
+        {
+            "LineId": "f495ffa507bc4f63a47a409cd8713dd7",
+            "Promotion": {
+                "OfferId": "ST100012",
+                "OfferName": "Loyalty 5% off over $100",
+                "PeriodicDiscountTypeValue": 4,
+                "IsDiscountCodeRequired": false,
+                "ValidationPeriodId": null,
+                "AdditionalRestrictions": null,
+                "Description": "All loyalty members get 5% with transaction total above $10 unless some exclusive or best price discounts are already applied on the transaction",
+                "ValidFromDate": "2022-06-20T06:52:56.2460219Z",
+                "ValidToDate": "2022-06-20T06:52:56.2460224Z",
+                "CouponCodes": [],
+                "ValidationPeriod": null
+            }
+        }
+    ]
+}
+```
 
 ## AddCoupons
 
