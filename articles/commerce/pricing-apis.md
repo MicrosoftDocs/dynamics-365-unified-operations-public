@@ -31,10 +31,10 @@ ms.dyn365.ops.version: Application update 10.0.29
 
 Commerce pricing engine provides the following APIs that can be consumed by external applications to support various pricing scenarios.
 
--	**GetActivePrices** – Gets a product’s calculated price including simple discounts.
--	**CalculateSalesDocument** – Calculates prices and discounts for items with quantities as they were bought together.
--	**GetAvailablePromotions** – Gets applicable discounts for items in cart. 
--	**AddCoupons** – Adds coupons into a cart.
+- **GetActivePrices** – Gets a product’s calculated price including simple discounts.
+- **CalculateSalesDocument** – Calculates prices and discounts for items with quantities as they were bought together.
+- **GetAvailablePromotions** – Gets applicable discounts for items in cart. 
+- **AddCoupons** – Adds coupons into a cart.
 - **RemoveCoupons** – Removes coupons from a cart.
 
 For more information about how to consume Retail Server APIs in external applications, please check [Consume Retail Server APIs in external applications](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/consume-retail-server-api).
@@ -194,7 +194,7 @@ Sample request body:
 }
 ```
 
-The entire Cart object is returned as the response body. To check prices and discounts, we may focus on the fields listed below.
+The entire cart object is returned as the response body. To check prices and discounts, we may focus on the fields listed below.
 
 | Name           	| Sub name       	| Type                	| Description                                                                                                       	|
 |----------------	|----------------	|---------------------	|-------------------------------------------------------------------------------------------------------------------	|
@@ -251,6 +251,25 @@ Sample response body:
 
 ## AddCoupons
 
+This API supports adding a list of coupons into a cart, and returns the cart object after coupons are added.
+
+The input paramaters are listed below.
+
+| Name                 	| Type                	| Required / Optional 	| Description                                                                  	|
+|----------------------	|---------------------	|---------------------	|------------------------------------------------------------------------------	|
+| key                  	| String              	| Required            	| Cart ID.                                                                     	|
+| couponCodes          	| IEnumerable<string> 	| Required            	| Coupon codes to be added to the cart.                                        	|
+| isLegacyDiscountCode 	| Bool                	| Optional            	| Set true to indicate the coupon is a legacy discount code. Default is false. 	|
+
 ## RemoveCoupons
+
+This API supports removing a list of coupons from a cart, and returns the cart object after coupons are removed.
+
+The input paramaters are listed below.
+
+| Name                 	| Type                	| Required / Optional 	| Description                                                                  	|
+|----------------------	|---------------------	|---------------------	|------------------------------------------------------------------------------	|
+| key                  	| String              	| Required            	| Cart ID.                                                                     	|
+| couponCodes          	| IEnumerable<string> 	| Required            	| Coupon codes to be removed from the cart.                                     |
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
