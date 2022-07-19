@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Human Resources
 _**Applies To:** Human Resources on the finance and operations app infrastructure_ 
 
 > [!NOTE]
-> Starting July 2022, provisioning new Human Resources environments and creating new Lifecycle services (LCS) projects will not be available on the stand-alone Human Resources infrastructure. Customers can deploy Human Resources environments in the finance and operations infrastructure.
+> Starting July 2022, new Human Resources environments can't be provisioned on the stand-alone Human Resources infrastructure, and new Microsoft Dynamics Lifecycle Services (LCS) projects can't be created on it. Customers can deploy Human Resources environments on the finance and operations infrastructure.
 
 This article explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources in the finance and operations infrastructure.
 
@@ -45,8 +45,8 @@ Before you start to provision a new environment, the following prerequisites mus
 
 ## Provision a Human Resources trial environment
 
->[!NOTE]
-> Starting April 2022, the Human Resources trial environments will not be available on the stand-alone application. Potential customers who are interested in evaluating the Human Resources capabilities within finance and operations apps, can do so using the free 30-day trial along with the demo data. Dynamics 365 Finance will include the Human Resources capabilities brought to the Finance infrastructure through the merge of the stand-alone application. For more information, see [Merging of HR offerings brings capabilities together for customers](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). For more information about Dynamics 365 Finance trials, see the [step-by-step guide](../fin-ops-core/fin-ops/get-started/before-you-buy.md).
+> [!NOTE]
+> Starting April 2022, the Human Resources trial environments won't be available in the stand-alone application. Potential customers who are interested in evaluating the Human Resources capabilities in finance and operations apps can use the free 30-day trial together with the demo data. Dynamics 365 Finance will include the Human Resources capabilities that are brought to the Finance infrastructure through the merge of the stand-alone application. For more information, see [Merging of HR offerings brings capabilities together for customers](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). For more information about Dynamics 365 Finance trials, see the [step-by-step guide](../fin-ops-core/fin-ops/get-started/before-you-buy.md).
 
 ## Plan Human Resources environments
 
@@ -100,12 +100,11 @@ For information about the languages and geographies that are supported for Human
 By default, the global administrator who created the environment has access to it. You must explicitly grant access to additional application users. You must add users and assign the appropriate roles to them in the Human Resources environment. For more information, see [Create new users](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) and [Assign users to security roles](/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles).
 
 ## Additional resources
-You can learn more about how to use and manage project in Lifecycle Services on the finance and operations app infrastrcuture by using the following resources.
+You can learn more about how to use and manage projects in LCS on the finance and operations app infrastructure by using the following resources:
 
-[Lifecycle Services resources](/fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
-[Lifecycle Services (LCS) user guide](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
-[Self-service deployment overview](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md)
-[Database movement operations home page](../fin-ops-core/dev-itpro/database/dbmovement-operations.md)
-
+- [Lifecycle Services resources](/fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
+- [Lifecycle Services (LCS) user guide](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
+- [Self-service deployment overview](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md)
+- [Database movement operations home page](../fin-ops-core/dev-itpro/database/dbmovement-operations.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
