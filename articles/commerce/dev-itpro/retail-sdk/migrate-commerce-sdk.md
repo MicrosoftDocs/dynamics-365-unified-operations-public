@@ -224,10 +224,6 @@ DataCacheAccessor is internal. Use .NET memory cache or a similar approach.
 <td> Extensions should not call PricingEngine directly and instead should use CalculatePricesServiceRequest, CalculateDiscountsServiceRequest. </td>
 </tr>
 <tr>
-<td> PriceEvents </td>
-<td> Telemetries should only be used for internal purposes, extensions should not use this. </td>
-</tr>
-<tr>
 <td> PricingDatabaseAccessor </td>
 <td> Obsolete since version 10.0.1, use the relevant CRT data requests. </td>
 </tr>
