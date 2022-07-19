@@ -31,13 +31,11 @@ ms.dyn365.ops.version: Human Resources
 
 _**Applies To:** Human Resources on the stand-alone infrastructure_ 
 
->[!NOTE]
-> Starting July 2022, provisioning new Human Resources environments and creating new Lifecycle Services (LCS) projects will not be available on the stand-alone Human Resources infrastructure. Customers can deploy Human Resources environments in the finance and operations infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](/hr-admin-setup-provision-fo.md).
+> [!NOTE]
+> Starting July 2022, new Human Resources environments can't be provisioned on the stand-alone Human Resources infrastructure, and new Microsoft Dynamics Lifecycle Services (LCS) projects can't be created on it. Customers can deploy Human Resources environments on the finance and operations infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](/hr-admin-setup-provision-fo.md).
 
-
-
->[!IMPORTANT]
-> The finance and operations app infrastructure supports the deletion of an environment. To learn more about deleting an environment, see [Delete an environment](../fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure.md#delete-an-environment).
+> [!IMPORTANT]
+> The finance and operations app infrastructure supports the deletion of an environment. For more information about how to delete an environment, see [Delete an environment](../fin-ops-core/dev-itpro/deployment/deployenvironment-newinfrastructure.md#delete-an-environment).
 
 This article explains the process of removing a test drive or production environment for Microsoft Dynamics 365 Human Resources.
 
@@ -99,7 +97,7 @@ To restore the environment:
 2. Contact Support to restore the Human Resources environment. For more information, see [Get support](../fin-ops-core/dev-itpro/lifecycle-services/lcs-support.md).
 
 > [!Warning]
-> Power Apps environments are only saved for seven days after deletion. You must recover the environment within the seven day period.
+> Power Apps environments are only saved for seven days after deletion. You must recover the environment within the seven-day period.
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
