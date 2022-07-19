@@ -32,11 +32,10 @@ ms.dyn365.ops.version: Human Resources
 _**Applies To:** Human Resources on the stand-alone infrastructure_ 
 
 > [!NOTE]
-> Starting July 2022, provisioning new Human Resources environments and creating new Lifecycle Services (LCS) projects will not be available on the stand-alone Human Resources infrastructure. Customers can deploy Human Resources environments in the finance and operations infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](/hr-admin-setup-provision-fo.md).
-
+> Starting July 2022, new Human Resources environments can't be provisioned on the stand-alone Human Resources infrastructure, and new Microsoft Dynamics Lifecycle Services (LCS) projects can't be created on it. Customers can deploy Human Resources environments on the finance and operations infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](/hr-admin-setup-provision-fo.md).
 
 > [!IMPORTANT]
-> The update and hotfix process on the finance and operations app infrastructure is different than the Human Resources stand-alone update and hot fix process. For more information about the update process, see [Process for moving to the latest update of finance and operations](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). For more information about hot fixes, see [Download updates from Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 
+> The update and hotfix process on the finance and operations app infrastructure differs from the Human Resources stand-alone update and hotfix process. For more information about the update process, see [Process for moving to the latest update of finance and operations](../fin-ops-core/dev-itpro/migration-upgrade/upgrade-latest-update.md). For more information about hotfixes, see [Download updates from Lifecycle Services (LCS)](/fin-ops-core/dev-itpro/migration-upgrade/download-hotfix-lcs.md). 
 
 Microsoft Dynamics 365 Human Resources is a true software as a service (SaaS) that provides continuous, touchless service updates. These updates contain both application and platform changes that often provide critical improvements to the service, including regulatory updates.
 
