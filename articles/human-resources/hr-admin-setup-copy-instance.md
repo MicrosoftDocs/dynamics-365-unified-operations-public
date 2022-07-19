@@ -35,7 +35,7 @@ _**Applies To:** Human Resources on the stand-alone infrastructure_
 > Starting June 2022, Human Resources environments can be deployed only on the finance and operations app infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](hr-admin-setup-provision-fo.md).
 
 > [!IMPORTANT]
-> The finance and operations infrastrcuture does not support a copy instance function. You can deploy new environments and use database movements to create copies. To learn more about self-service deployments, see [Self-service deployment overview](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md). For more information about database movements on the finance and operations infrastrcuture, see [Database movement operations home page](../fin-ops-core/dev-itpro/database/dbmovement-operations.md).
+> The finance and operations infrastructure doesn't support a copy instance function. You can deploy new environments and use database movements to create copies. For more information about self-service deployments, see [Self-service deployment overview](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md). For more information about database movements on the finance and operations infrastructure, see [Database movement operations home page](../fin-ops-core/dev-itpro/database/dbmovement-operations.md).
 
 You can use Microsoft Dynamics Lifecycle Services (LCS) to copy a Microsoft Dynamics 365 Human Resources database to a sandbox environment. If you have another sandbox environment, you can also copy the database from that environment to a targeted sandbox environment.
 
