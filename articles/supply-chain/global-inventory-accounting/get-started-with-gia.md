@@ -68,7 +68,7 @@ For more information, see [Enable after environment deployment](../../fin-ops-co
 Use the following procedure to install or update the Global Inventory Accounting add-in and solution. The part of the procedure you should follow depends on whether you are installing for the first time or just need to update the solution for an existing installation.
 
 - If you have never installed the add-in before, follow the full procedure to install both the add-in and the solution.
-- If you have previously installed the add-in in LCS but need to update the solution in the [Power Platform admin center](https://admin.powerplatform.microsoft.com), then do step 6 only and skip all of the other steps.
+- If you are already using Global Inventory Accounting but need to update the solution in the [Power Platform admin center](https://admin.powerplatform.microsoft.com), then do step 6 only and skip all of the other steps.
 
 To install or update the add-in and solution:
 
