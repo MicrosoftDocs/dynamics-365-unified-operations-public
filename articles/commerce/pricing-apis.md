@@ -42,7 +42,75 @@ For more information about how to consume Retail Server APIs in external applica
 ## GetActivePrices
 
 Introduced in **10.0.4** release, this API gets a product’s calculated price including simple discounts. This API doesn’t calculate multi-line discounts and assumes each product in the API request has quantity of one (1). This API supports Employee, Customer, Anonymous and Application Commerce roles.
-The main use case scenario of this API is the product details page where the retailer wants to showcase the best price including any effective discounts for a product. 
+
+The main use case scenario of this API is the product details page where the retailer wants to showcase the best price including any effective discounts for a product.
+
+| Name                                    	| Sub name      	| Type                                	| Required / Optional 	| Description                                                                                            	|
+|-----------------------------------------	|---------------	|-------------------------------------	|---------------------	|--------------------------------------------------------------------------------------------------------	|
+| projectDomain                           	|               	| ProjectionDomain                    	| Required            	|                                                                                                        	|
+|                                         	| ChannelId     	| Long                                	| Required            	|                                                                                                        	|
+|                                         	| CatalogId     	| Long                                	| Required            	|                                                                                                        	|
+| productIds                              	|               	| IEnumerable<long>                   	| Required            	| List of products to calculate prices.                                                                  	|
+| activeDate                              	|               	| DateTimeOffset                      	| Required            	| Date for calculating price.                                                                            	|
+| customerId                              	|               	| String                              	| Optional            	| Customer account number.                                                                               	|
+| affiliationLoyaltyTiers                 	|               	| IEnumerable<AffiliationLoyaltyTier> 	| Optional            	| Affiliation and loyalty tiers.                                                                         	|
+|                                         	| AffiliationId 	| Long                                	| Required            	| Affiliation Id.                                                                                        	|
+|                                         	| LoyaltyTierId 	| Long                                	| Optional            	| Loyalty tier Id.                                                                                       	|
+| includeSimpleDiscountsInContextualPrice 	|               	| Bool                                	| Optional            	| Set true to include simple discounts in the pricing calculation. Default is false.                     	|
+| includeVariantPriceRange                	|               	| Bool                                	| Optional            	| Set true to get minimum and maximum price amongst all variants for a master product. Default is false. 	|
+| includeAttainablePricesAndDiscounts     	|               	| Bool                                	| Optional            	| Set true to return attainable prices and discounts. Default is false.                                  	|
+
+Sample request body:
+
+```json
+{
+    "projectDomain": 
+    {
+        "ChannelId": 5637144592,
+        "CatalogId": 0
+    },
+    "productIds": 
+    [
+        68719489871
+    ],
+    "activeDate": "2022-06-20T14:40:05.873+08:00",
+    "includeSimpleDiscountsInContextualPrice": true,
+    "includeVariantPriceRange": false
+}
+```
+
+Sample response body:
+
+```json
+{
+    "value": 
+    [
+        {
+            "ProductId": 68719489871,
+            "ListingId": 68719489871,
+            "BasePrice": 0,
+            "TradeAgreementPrice": 0,
+            "AdjustedPrice": 0,
+            "MaxVariantPrice": 0,
+            "MinVariantPrice": 0,
+            "CustomerContextualPrice": 0,
+            "DiscountAmount": 0,
+            "CurrencyCode": "USD",
+            "ItemId": "82000",
+            "InventoryDimensionId": null,
+            "UnitOfMeasure": "ea",
+            "ValidFrom": "2022-06-20T01:40:05.873-05:00",
+            "ProductLookupId": 0,
+            "ChannelId": 5637144592,
+            "CatalogId": 0,
+            "SalesAgreementPrice": 0,
+            "PriceSourceTypeValue": 1,
+            "DiscountLines": [],
+            "AttainablePriceLines": [],
+        }
+    ]
+}
+```
 
 ## CalculateSalesDocument
 
@@ -53,6 +121,32 @@ The mainline use case of this API is pricing calculation for scenarios where ful
 The data model for both request and response of this API is **Cart** (in the context of this API, we name it **SalesDocument**). Since most of the properties are optional, and only a few of them impact the pricing calculation, in order to avoid confusion, only those pricing related fields are listed below, and we recommend not to involve any other fields in the API request.
 
 The scope of the API is to calculate prices and discounts only, taxes or charges are not involved.
+
+Input parameters inside the object named salesDocument are listed below.
+
+| Name             	| Sub name             	| Type                          	| Required / Optional                             	| Description                                                                                                                                                                                                           	|
+|------------------	|----------------------	|-------------------------------	|-------------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Id               	|                      	| String                        	| Required                                        	| Identifier of the sales document.                                                                                                                                                                                     	|
+| CartLines        	|                      	| IList<CartLine>               	| Optional                                        	| List of lines to calculate prices and discounts.                                                                                                                                                                      	|
+|                  	| ProductId            	| Long                          	| Required in the scope of CartLine               	| Product record ID.                                                                                                                                                                                                    	|
+|                  	| ItemId               	| String                        	| Optional                                        	| Item identifier. Once provided, it must match the ProductId.                                                                                                                                                          	|
+|                  	| InventoryDimensionId 	| String                        	| Optional                                        	| Inventory dimension identifier. Once provided, the combination of ItemId and InventoryDimensionId must match the ProductId.                                                                                           	|
+|                  	| Quantity             	| Decimal                       	| Required in the scope of CartLine               	| Quantity of the item.                                                                                                                                                                                                 	|
+|                  	| UnitOfMeasureSymbol  	| String                        	| Optional                                        	| Unit of the item. If not provided, the API by default uses the sale unit of the item.                                                                                                                                 	|
+| CustomerId       	|                      	| String                        	| Optional                                        	| Customer account number.                                                                                                                                                                                              	|
+| LoyaltyCardId    	|                      	| String                        	| Optional                                        	| Loyalty card identifier. The customer account of the loyalty card (if any) must match the CustomerId field value (if provided). The loyalty card will not be considered if it is not found, or its status is blocked. 	|
+| AffiliationLines 	|                      	| IList<AffiliationLoyaltyTier> 	| Optional                                        	| Affiliation loyalty tier lines. If CustomerId and/or LoyaltyCardId values are provided, their corresponding affiliation loyalty tier lines will be merged with those provided in AffiliationLines.                    	|
+|                  	| AffiliationId        	| Long                          	| Required in the scope of AffiliationLoyaltyTier 	| Affiliation record ID.                                                                                                                                                                                                	|
+|                  	| LoyaltyTierId        	| Long                          	| Required in the scope of AffiliationLoyaltyTier 	| Loyalty tier record ID.                                                                                                                                                                                               	|
+|                  	| AffiliationTypeValue 	| Int                           	| Required in the scope of AffiliationLoyaltyTier 	| The value that indicates whether the affiliation line is General type (0) or Loyalty type (1). If 0, the API takes AffiliationId as the identifier and ignores LoyaltyTierId. If 1, vice versa.                       	|
+|                  	| ReasonCodeLines      	| Collection<ReasonCodeLine>    	| Required in the scope of AffiliationLoyaltyTier 	| Reason code lines. No impact on pricing calculation but is required as part of AffiliationLoyaltyTier object.                                                                                                         	|
+|                  	| CustomerId           	| String                        	| Required in the scope of AffiliationLoyaltyTier 	| Customer account number.                                                                                                                                                                                              	|
+| Coupons          	|                      	| IList<Coupon>                 	| Optional                                        	| Coupons that are not applicable (e.g. inactive, expired, not found) will not be considered in pricing calculation.                                                                                                    	|
+|                  	| Code                 	| String                        	| Required in the scope of Coupon                 	| Coupon code.                                                                                                                                                                                                          	|
+|                  	| CodeId               	| String                        	| Optional                                        	| Coupon code identifier. Once provided, it must match Code.                                                                                                                                                            	|
+|                  	| DiscountOfferId      	| String                        	| Optional                                        	| Discount identifier. Once provided, it must match Code.                                                                                                                                                               	|
+
+
 
 ## GetAvailablePromotions 
 
