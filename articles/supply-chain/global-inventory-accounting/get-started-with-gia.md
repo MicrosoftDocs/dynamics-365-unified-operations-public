@@ -65,10 +65,12 @@ For more information, see [Enable after environment deployment](../../fin-ops-co
 
 ## <a name="install"></a>Install or upgrade the add-in and solution
 
-Use the following procedure to install or upgrade the Global Inventory Accounting add-in and solution. The part of procedure you should follow depends on whether you are installing for the first time, or just upgrading the solution for an existing installation.
+Use the following procedure to install or upgrade the Global Inventory Accounting add-in and solution. The part of the procedure you should follow depends on whether you are installing for the first time or just need to upgrade the solution for an existing installation.
 
-- If you have never installed the add-in before, follow the full procedure.
-- If you have already installed the add-in in LCS but need to upgrade the Global Inventory Accounting solution in your [Power Platform admin center](https://admin.powerplatform.microsoft.com), then do step 6 only and skip all of the other steps.
+- If you have never installed the add-in before, follow the full procedure to install both the add-in and the solution.
+- If you have previously installed the add-in in LCS but need to upgrade the solution in the [Power Platform admin center](https://admin.powerplatform.microsoft.com), then do step 6 only and skip all of the other steps.
+
+To install or upgrade the add-in and solution:
 
 1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index).
 1. Open the LCS environment where you want to add the service.
