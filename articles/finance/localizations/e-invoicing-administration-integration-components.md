@@ -2,7 +2,7 @@
 # required metadata
 
 title: Electronic invoicing administration and integration components
-description: This topic provides an overview of the Electronic invoicing administration and integration components.
+description: This article provides an overview of the Electronic invoicing administration and integration components.
 author: dkalyuzh
 ms.date: 01/20/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the components that are related to the administration of Electronic invoicing, and their roles in the setup and operation of Electronic invoicing.
+This article provides information about the components that are related to the administration of Electronic invoicing, and their roles in the setup and operation of Electronic invoicing.
 
 ## Microsoft Azure
 

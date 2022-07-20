@@ -2,7 +2,7 @@
 # required metadata
 
 title: Batch release of partially reserved transfer orders
-description: This topic describes how to set up and apply batch release of partially reserved transfer orders from a mobile device.
+description: This article describes how to set up and apply batch release of partially reserved transfer orders from a mobile device.
 author: perlynne
 ms.date: 05/26/2017
 ms.topic: article
@@ -35,7 +35,7 @@ Because you have the option to release a partial quantity, you don’t have to
 wait for the whole order quantity to be available in the warehouse before you
 release an order.
 
-The release of orders to a warehouse is an advanced warehouse management
+The release of orders to a warehouse is a warehouse management processes (WMS)
 process. This process involves activities, such as picking, packing, and
 shipping, that a warehouse worker can perform by using a mobile device.
 

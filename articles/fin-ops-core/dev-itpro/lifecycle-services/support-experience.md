@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up technical support for Finance and Operations apps
-description: This topic provides information about the support experience for cloud and on-premises deployments.
+title: Set up technical support for finance and operations apps
+description: This article provides information about the support experience for cloud and on-premises deployments.
 author: kfend
 ms.date: 10/13/2020
 ms.topic: article
@@ -27,12 +27,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Set up technical support for Finance and Operations apps 
+# Set up technical support for finance and operations apps 
 [!include [banner](../includes/banner.md)]
 
 ## Prerequisites
 
-Before you can set up technical support, you must acquire a Microsoft Azure Active Directory (Azure AD) account. This account is created when you set up a subscription for one of the Microsoft Dynamics 365 Finance and Operations apps.
+Before you can set up technical support, you must acquire a Microsoft Azure Active Directory (Azure AD) account. This account is created when you set up a subscription for one of the Microsoft Dynamics 365 finance and operations apps.
 
 ## Create an Azure DevOps project
 The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps to store issues that are submitted through the client and issues that are manually created from the **Support** tile in LCS. This functionality requires that a Azure DevOps project be configured in the LCS project that you want to use for support. All users who need to use the **Support** tile to submit an issue must have access to the Azure DevOps project, and must authorize LCS to access Azure DevOps on their own behalf. Most users don't have access to LCS or Azure DevOps. Therefore, in the Azure DevOps project, you should create a special system account that can be used to submit issues.
@@ -156,7 +156,7 @@ In the LCS **Support** tile, issues are stored as work items in the Azure DevOp
 
 ### Edit issues
 1.  In the **Issues** grid, click the title of an issue.
-2.  If necessary, sign in to Azure DevOps by using an account that has access to the Azure DevOps project that you set up in the first section of this topic, **Create an Azure DevOps project**. 
+2.  If necessary, sign in to Azure DevOps by using an account that has access to the Azure DevOps project that you set up in the first section of this article, **Create an Azure DevOps project**. 
 
     > [!NOTE]
     > There is an issue in Azure DevOps, where the link to edit work items doesn't work correctly if sign-in is required. If you see the **Assigned to me** query after you sign in to Azure DevOps, go back to LCS, and click the title of the issue in the issue grid again.
@@ -182,7 +182,7 @@ LCS users must have a valid Microsoft support plan to submit issues to Microso
 > [!NOTE]
 > The information in this section is not applicable to on-premises deployments. 
 
-When you deploy your application from Lifecycle Services, no configuration is required, because the Support tool automatically saves any issues to the same LCS project that Finance and Operations was deployed from. To verify the LCS project that Support uses, go to **System administration** > **Setup** > **System parameters**, and then click **Help** > **Support Contact**. 
+When you deploy your application from Lifecycle Services, no configuration is required, because the Support tool automatically saves any issues to the same LCS project that finance and operations was deployed from. To verify the LCS project that Support uses, go to **System administration** > **Setup** > **System parameters**, and then click **Help** > **Support Contact**. 
 
 ## Prevent users from creating issues from the client
 By default, the System user role has the privilege, *SysLCSCPSIssueEntry* assigned. This privilege controls access to the **Contact your support team** menu item on the Help menu. If you want to prevent users from being able to create and submit issues from the client, remove this privilege from the System user role.

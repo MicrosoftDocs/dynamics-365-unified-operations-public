@@ -2,7 +2,7 @@
 # required metadata
 
 title: Alerts overview (contains video)
-description: This topic provides general information about alerts. You can use alerts to stay informed about events that you want to track during the workday.
+description: This article provides general information about alerts. You can use alerts to stay informed about events that you want to track during the workday.
 author: RichdiMSFT
 ms.date: 09/04/2019
 ms.topic: overview
@@ -82,13 +82,13 @@ An alert rule has five components:
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3DWZ3]
 
-The [How to use alerts to monitor filtered data](https://youtu.be/ZYKMcv6kl9s) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [How to use alerts to monitor filtered data](https://youtu.be/ZYKMcv6kl9s) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ### Alert rule options
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3E4PV]
 
-The [Alert rule options](https://youtu.be/cpzimwOjicM) video (shown above) is included in the [Finance and Operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
+The [Alert rule options](https://youtu.be/cpzimwOjicM) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 
 

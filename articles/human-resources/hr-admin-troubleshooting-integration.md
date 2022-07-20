@@ -2,7 +2,7 @@
 # required metadata
 
 title: Integration with Finance FAQ
-description: This topic explains what data is synchronized in a Human Resources and Finance integration.
+description: This article explains what data is synchronized in a Human Resources and Finance integration.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -36,7 +36,7 @@ ms.dyn365.ops.version: Human Resources
 
 
 
-This topic answers common questions associated about what data is synchronized when Dynamics 365 Human Resources is integrated with Dynamics 365 Finance.
+This article answers common questions associated about what data is synchronized when Dynamics 365 Human Resources is integrated with Dynamics 365 Finance.
 
 ## Can I edit the Dynamics 365 Talent application user in Power Apps?
 
@@ -95,7 +95,7 @@ No special setup is required for exception handling. The Data Integrator will au
 
 ## Can I set up bi-directional integration?
 
-No, integration is currently one-way (Human Resources to Finance and Operations). However, there is a default template available to send data from Human Resources to Finance.
+No, integration is currently one-way (Human Resources to finance and operations). However, there is a default template available to send data from Human Resources to Finance.
 
 ## Can I allow record deletion as part of my integration?
 
@@ -125,7 +125,7 @@ Reasons for this error can include:
 
 - The data transfer resulted in duplicate records extraction at the source (Dataverse).
 
-- The data transfer has null values for fields that are required in Finance and Operations. Verify the data that is in Dataverse and meets the requirements of Finance and
+- The data transfer has null values for fields that are required in finance and operations. Verify the data that is in Dataverse and meets the requirements of Finance and
 Operations.
 
 ## If there are execution errors and the Employee ID didn't sync, how do I find the history job which has the failed employee record?
@@ -160,7 +160,7 @@ verify the data management jobs have successfully run. Errors may occur during t
 
 ## The addresses for my employees are incorrect after I import them into Finance. What should I do?
 
-The number sequence for **Location ID** uses the same pattern in both Human Resources and Finance. The number sequence needs to be unique on both sides so there are no address collisions when integrating data from Dataverse to Finance and Operations.
+The number sequence for **Location ID** uses the same pattern in both Human Resources and Finance. The number sequence needs to be unique on both sides so there are no address collisions when integrating data from Dataverse to finance and operations.
 
 During implementation of Human Resources, verify that the number sequences are not the same in Human Resources and Finance. Validate that all number sequences are not identical where data may be maintained in both systems.
 
@@ -194,3 +194,4 @@ Refresh the data entities in Finance by going to **Data management \> Framework 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

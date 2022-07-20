@@ -1,6 +1,6 @@
 ---
 title: X++ syntax
-description: This topic contains the syntax reference for X++. 
+description: This article contains the syntax reference for X++. 
 author: RobinARH
 ms.date: 07/22/2019
 audience: Developer
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic contains the syntax reference for X++. 
+This article contains the syntax reference for X++. 
 
 ## X++ Keywords
 
@@ -811,7 +811,7 @@ Work\_Team = Manager Employee {, Employee}  Employee = Developer | Tester This
 For example, if the accessories you buy for your bicycle consist of a saddle, water-bottle holders, bells, and horns, and you could have either a bell or a horn, and zero, one, or more water bottle holders, and exactly one saddle, this could be expressed as: Bicycle\_Accessories = saddle \[bell | horn\] {water\_bottle\_holders} This grammar defines the following possibilities: `saddle`  `saddle bell`  `saddle horn`  saddle water\_bottle\_holder  saddle bell water\_bottle\_holder  saddle bell water\_bottle\_holder water\_bottle\_holder And so on.
 
 ## X++ Grammar
-This topic shows the formal grammar of the X++ language.
+This article shows the formal grammar of the X++ language.
 
 ### How to Interpret the Formal BNF Grammar
 
@@ -1333,7 +1333,7 @@ This section contains the BNF that defines the grammar of X++.
  
 
 ## X++ Language Syntax is Stricter in Microsoft Dynamics AX 2012
-Starting in Microsoft Dynamics AX 2012, the syntax rules for X++ are stricter than in previous versions of the product. This topic describes the syntax changes.
+Starting in Microsoft Dynamics AX 2012, the syntax rules for X++ are stricter than in previous versions of the product. This article describes the syntax changes.
 
 ### Table of X++ Syntax Changes
 

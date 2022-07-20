@@ -2,7 +2,7 @@
 # required metadata
 
 title: Preview and debug a module
-description: This topic describes how to test a module by previewing and debugging it in a web browser.
+description: This article describes how to test a module by previewing and debugging it in a web browser.
 author: samjarawan
 ms.date: 09/15/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to test a module by previewing and debugging it in a web browser.
+This article describes how to test a module by previewing and debugging it in a web browser.
 
 During development of a module, you can preview and debug the module in your local web browser.
 
@@ -80,7 +80,7 @@ yarn start --inspect-brk
 
 As you can see, the **inspect-brk** argument is added to the regular **start** command. After the application is compiled, a message that resembles the following message should appear in your console: "Waiting for debugger..."
 
-The previously opened window should gain focus. The application isn't actually run until you select **Play** in the debugging window. After you allow the application to continue, you can set breakpoints by using the methods that are described in the [Debug the client (browser)](#debug-the-client-browser) section earlier in this topic.
+The previously opened window should gain focus. The application isn't actually run until you select **Play** in the debugging window. After you allow the application to continue, you can set breakpoints by using the methods that are described in the [Debug the client (browser)](#debug-the-client-browser) section earlier in this article.
 
 ### Additional reading
 

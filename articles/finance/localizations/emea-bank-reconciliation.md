@@ -2,7 +2,7 @@
 # required metadata
 
 title: Bank statement and payment reconciliation for the EU
-description: This topic provides an overview of the functionality that you can use to reconcile payment information from banks in formats that are used by European countries.
+description: This article provides an overview of the functionality that you can use to reconcile payment information from banks in formats that are used by European countries.
 author: anasyash
 ms.date: 06/20/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the functionality that you can use to reconcile payment information from banks in formats that are used by European countries. You can import transactions from banks and settle these transactions against existing transactions. In Europe, you can do this for the following scenarios:
+This article provides an overview of the functionality that you can use to reconcile payment information from banks in formats that are used by European countries. You can import transactions from banks and settle these transactions against existing transactions. In Europe, you can do this for the following scenarios:
 
 -   Importing bank statements
 -   Importing payments

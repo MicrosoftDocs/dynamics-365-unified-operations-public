@@ -39,7 +39,7 @@ When you create service orders manually or automatically from the service agreem
 
 ## Create service orders automatically for a service agreement
 
-1.  Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+1.  Click **Service management** \> **Service agreements** \> **Service agreements**.
 
 2.  Select a service agreement.
 

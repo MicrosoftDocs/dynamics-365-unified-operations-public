@@ -2,7 +2,7 @@
 # required metadata
 
 title: TRANSLATE ER function
-description: This topic provides information about how the TRANSLATE Electronic reporting (ER) function is used.
+description: This article provides information about how the TRANSLATE Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 04/02/2020
 ms.prod: 

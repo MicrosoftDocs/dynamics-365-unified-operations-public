@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add POS operations to POS layouts by using Button grid designer
-description: This topic explains how to create a new POS operation and add it to the POS layout by using Button grid designer.
+description: This article explains how to create a new POS operation and add it to the POS layout by using Button grid designer.
 author: mugunthanm
 ms.date: 05/23/2018
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Developer
 # ms.devlang: 
 ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: retail
 ms.author: mumani
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Application update 4
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how to create a new point of sale (POS) operation and add it to the POS layout by using Button grid designer. This topic applies to the following applications where Platform update 8 and the Application update 4 hotfix are installed:
+This article explains how to create a new point of sale (POS) operation and add it to the POS layout by using Button grid designer. This article applies to the following applications where Platform update 8 and the Application update 4 hotfix are installed:
 
 - Finance
 - Dynamics 365 Commerce

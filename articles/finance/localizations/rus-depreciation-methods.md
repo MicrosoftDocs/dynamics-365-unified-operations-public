@@ -2,7 +2,7 @@
 # required metadata
 
 title: Depreciation methods (Russia)
-description: This topic describes the various fixed asset depreciation methods for Russia.
+description: This article describes the various fixed asset depreciation methods for Russia.
 author: anasyash
 ms.date: 09/20/2018
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the various methods that can be used for fixed asset depreciation for Russia and their implementation in the application.
+This article describes the various methods that can be used for fixed asset depreciation for Russia and their implementation in the application.
 The process of calculating monthly depreciation can be done in several ways. In tax accounting and accounting, there are a linear and non-linear depreciation calculation methods.
 
 ## Linear and non-linear depreciation methods

@@ -1,6 +1,6 @@
 ---
 title: POS extension basics
-description: This topic describes the basic concepts of Point of Sale (POS) extension.
+description: This article describes the basic concepts of Point of Sale (POS) extension.
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -16,13 +16,13 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../../../includes/banner.md)]
 
-This topic describes the basic concepts of Point of Sale (POS) extension. It applies to version 10.0.18 and later of the Retail software development kit (SDK).
+This article describes the basic concepts of Point of Sale (POS) extension. It applies to version 10.0.18 and later of the Retail software development kit (SDK).
 
 Extension developers can create customizations by using the POS API library. The POS APIs let you customize both business logic and user interface (UI) layers of POS.
 
 ## Terminology
 
-The following terms are used in this topic.
+The following terms are used in this article.
 
 | Term | Definition | Examples |
 |---|---|---|

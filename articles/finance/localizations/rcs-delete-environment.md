@@ -2,7 +2,7 @@
 # required metadata
 
 title: Regulatory Configuration Service (RCS) - Delete an RCS environment
-description: This topic explains how a Regulatory Configuration Service (RCS) system administrator can delete an RCS environment and related data.
+description: This article explains how a Regulatory Configuration Service (RCS) system administrator can delete an RCS environment and related data.
 author: JaneA07
 ms.date: 06/14/2021
 ms.topic: article
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how a Regulatory Configuration Service (RCS) system administrator can delete an RCS environment and related data.
+This article explains how a Regulatory Configuration Service (RCS) system administrator can delete an RCS environment and related data.
 
-Before you can complete the procedure in this topic, the following prerequisites must be met:
+Before you can complete the procedure in this article, the following prerequisites must be met:
 
 - You must have the **System Admin** role assigned to you for the RCS environment.
 - The **System Admin** role must have the **RCSDeleteEnvironmentDuty** role assigned to it.

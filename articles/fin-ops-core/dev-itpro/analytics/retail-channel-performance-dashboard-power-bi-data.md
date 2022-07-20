@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retail channel performance PowerBI.com solution
-description: This topic provides information about the Retail channel performance PowerBI.com solution for Dynamics AX 7.0 releases.
+description: This article provides information about the Retail channel performance PowerBI.com solution for Dynamics AX 7.0 releases.
 author: ashishmsft
 ms.date: 05/09/2018
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 > [!NOTE]
 > This PowerBI.com solution has been deprecated as documented in [Power BI content packs available on AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-This topic provides information about the Retail channel performance PowerBI.com solution for Dynamics AX. This PowerBI.com solution lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
+This article provides information about the Retail channel performance PowerBI.com solution for Dynamics AX. This PowerBI.com solution lets channel managers quickly build channel performance analytics to predict trends and uncover insights, based on sales performance.
 
 The Retail channel performance PowerBI.com solution lets you quickly build your channel performance analytics. The PowerBI.com solution is designed specifically for channel managers who focus on sales performance to predict trends and uncover insights. Its components draw directly from Retail and commerce data in the Dynamics AX database, and provide drill-down reports about organization-wide sales performance across global geography by employee, category, product, terminal, channel, and more. Power BI automatically creates reports and dashboards that give you a great starting point for exploring and analyzing your Retail and commerce data. This article includes the following information:
 

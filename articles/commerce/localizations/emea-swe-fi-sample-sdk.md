@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deployment guidelines for the control unit integration sample for Sweden (legacy)
-description: This topic provides guidelines for deploying the control unit integration sample for Sweden from the Retail SDK
+description: This article provides guidelines for deploying the control unit integration sample for Sweden from the Retail SDK
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -17,9 +17,9 @@ ms.search.validFrom: 2019-3-1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides guidelines for deploying the control unit integration sample for Sweden from the Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Control unit integration sample for Sweden](emea-swe-fi-sample.md). 
+This article provides guidelines for deploying the control unit integration sample for Sweden from the Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Control unit integration sample for Sweden](emea-swe-fi-sample.md). 
 
-The fiscal integration sample for Sweden is part of the Retail SDK. For information about how to install and use the SDK, see [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md). This sample consists of extensions for the Commerce runtime (CRT), Hardware station, and point of sale (POS). To run this sample, you must modify and build the CRT, Hardware station, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this topic. We also recommend that you use a source control system such as Azure DevOps where no files have been changed yet.
+The fiscal integration sample for Sweden is part of the Retail SDK. For information about how to install and use the SDK, see [Retail software development kit (SDK) architecture](../dev-itpro/retail-sdk/retail-sdk-overview.md). This sample consists of extensions for the Commerce runtime (CRT), Hardware station, and point of sale (POS). To run this sample, you must modify and build the CRT, Hardware station, and POS projects. We recommend that you use an unmodified Retail SDK to make the changes that are described in this article. We also recommend that you use a source control system such as Azure DevOps where no files have been changed yet.
 
 ## Development environment
 
@@ -254,7 +254,7 @@ The migration process should consist of the following steps.
 1. Update the POS and Hardware station components, disable the extensions that are parts of the earlier sample, and enable the extensions of the current sample.
 
     > [!NOTE]
-    > Depending on the type of environment, you can find more technical details about the migration process in either the [Migration in a development environment](#migration-in-a-development-environment) section or the [Migration in a production environment](#migration-in-a-production-environment) section of this topic.
+    > Depending on the type of environment, you can find more technical details about the migration process in either the [Migration in a development environment](#migration-in-a-development-environment) section or the [Migration in a production environment](#migration-in-a-production-environment) section of this article.
 
 ### Migration in a development environment
 

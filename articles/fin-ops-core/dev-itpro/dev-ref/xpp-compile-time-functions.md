@@ -1,6 +1,6 @@
 ---
 title: X++ compile-time functions
-description: This topic lists the compile-time functions and describes their syntax, parameters, and return values.
+description: This article lists the compile-time functions and describes their syntax, parameters, and return values.
 author: RobinARH
 ms.date: 11/03/2017
 audience: Developer
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists the compile-time functions and describes their syntax, parameters, and return values.
+This article lists the compile-time functions and describes their syntax, parameters, and return values.
 
 ## Overview
 

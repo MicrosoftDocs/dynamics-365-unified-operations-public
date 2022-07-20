@@ -2,7 +2,7 @@
 # required metadata
 
 title: e-Commerce platform software development kit (SDK)
-description: This topic describes the e-Commerce Platform SDK.
+description: This article describes the e-Commerce Platform SDK.
 author: mugunthanm
 ms.date: 07/09/2018
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the e-Commerce Platform SDK. The e-Commerce Platform software development kit (SDK) consists of the following components:
+This article describes the e-Commerce Platform SDK. The e-Commerce Platform software development kit (SDK) consists of the following components:
 
 -   Framework
 -   Controls

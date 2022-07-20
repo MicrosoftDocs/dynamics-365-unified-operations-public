@@ -2,7 +2,7 @@
 # required metadata
 
 title: COUNTIFS ER function
-description: This topic provides information about how the COUNTIFS Electronic reporting (ER) function is used.
+description: This article provides information about how the COUNTIFS Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 12/05/2019
 ms.prod: 

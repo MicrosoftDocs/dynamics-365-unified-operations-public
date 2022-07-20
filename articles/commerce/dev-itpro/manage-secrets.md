@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage secrets for retail channels
-description: This topic explains how to manage secrets when you're using an extension with channels that require access to secrets.
+description: This article explains how to manage secrets when you're using an extension with channels that require access to secrets.
 author: AamirAllaq
 ms.date: 04/21/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to manage secrets when you're using an extension with channels that require access to secrets. Extensions will not be able to deploy any custom certificates in Commerce scale unit or add thumbprints or secrets in web.config files. The recommended approach for managing secrets is to use the Azure Key Vault, as noted in this topic.
+This article explains how to manage secrets when you're using an extension with channels that require access to secrets. Extensions will not be able to deploy any custom certificates in Commerce scale unit or add thumbprints or secrets in web.config files. The recommended approach for managing secrets is to use the Azure Key Vault, as noted in this article.
 
 ## Key Vault setup
 

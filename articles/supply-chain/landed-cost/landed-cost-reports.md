@@ -2,7 +2,7 @@
 # required metadata
 
 title: Landed cost reports
-description: This topic describes how to find and use the various types of reports that are available for the Landed cost module.
+description: This article describes how to find and use the various types of reports that are available for the Landed cost module.
 author: Weijiesa
 ms.date: 02/01/2021
 ms.topic: article
@@ -17,7 +17,7 @@ audience: Application User
 ms.reviewer: kamaybac
 
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa

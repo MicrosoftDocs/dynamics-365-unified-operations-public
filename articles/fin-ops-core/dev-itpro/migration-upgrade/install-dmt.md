@@ -2,7 +2,7 @@
 # required metadata
 
 title: AX 2009 migration - Install the Data migration tool 
-description: This topic explains how to set up the Data migration tool (DMT) so that you can migrate your data from Microsoft Dynamics AX 2009.
+description: This article explains how to set up the Data migration tool (DMT) so that you can migrate your data from Microsoft Dynamics AX 2009.
 author: kfend
 ms.date: 09/13/2018
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Platform update 17
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up the Data migration tool (DMT) so that you can migrate data from Microsoft Dynamics AX 2009 to Finance and Operations. 
+This article explains how to set up the Data migration tool (DMT) so that you can migrate data from Microsoft Dynamics AX 2009 to finance and operations. 
 
 > [!IMPORTANT]
 > At this time, the DMT is in private preview. If you are interested you can sign up for the [Preview Program](https://microsoft.qualtrics.com/jfe/form/SV_brOLCioQ7mmeykB). The public release date for the DMT has not been set. 
@@ -99,7 +99,7 @@ Go to the location to where you extracted the zip file, and find **defaultvalue.
 3. Under **Setup**, select **Configure connections**, and enter the appropriate information on the following fields:
 
     - **DIXF service host** – Enter the host name of the DIXF service installation.
-    - **Tenant URL** – Enter the URL for the application tenant. If you aren't sure of the tenant, see the web.config file for the Finance and Operations application.
+    - **Tenant URL** – Enter the URL for the application tenant. If you aren't sure of the tenant, see the web.config file for the finance and operations applications.
 
     > [!NOTE}
     > In the Azure Portal, when you create a new app in the Azure Active Directory (AAD), you can select from two options. **Web API** and **Native**. In this instance, select **Native** and grant permissions to native AAD app.

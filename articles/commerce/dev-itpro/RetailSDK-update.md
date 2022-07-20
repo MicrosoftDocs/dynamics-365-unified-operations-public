@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade the Retail channel extension to the latest Retail SDK
-description: This topic explains how to upgrade the commerce channel extension from earlier releases to the latest update of the Retail SDK. 
+description: This article explains how to upgrade the commerce channel extension from earlier releases to the latest update of the Retail SDK. 
 author: mugunthanm
 ms.date: 11/21/2018
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.3.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to upgrade to the latest update of the Retail SDK from earlier releases. The overall process and the supported scenario information are included, but this topic doesn’t provide detailed instructions of every step in the process. This topic is applicable for Dynamics 365 Commerce and Dynamics 365 Finance.
+This article provides information about how to upgrade to the latest update of the Retail SDK from earlier releases. The overall process and the supported scenario information are included, but this article doesn’t provide detailed instructions of every step in the process. This article is applicable for Dynamics 365 Commerce and Dynamics 365 Finance.
 
 
 The following sections will walk through how to manually move your extension to the new Retail SDK, however you can do this using any source control system like Azure DevOps or Git.
@@ -155,7 +155,7 @@ After you have upgraded all of the components, deploy the Commerce deployable pa
 ## Upgrade the channel extension from 7.2 to a higher version
 The steps mentioned  in the previous section, **Upgrade the channel extension from 7.3 to higher versions**, will remain same for all the components except the Commerce proxy. In 7.2, you must have completed inline changes in the proxy project if you have CRT with RS extension and the typescript proxy was auto-generated based on the **customization.settings** file.
 
-To upgrade your proxy to 7.3, complete the steps in the topic, [Typescript and C# proxies for Retail point of sale (POS)](typescript-proxy-retail-pos.md) and then move the proxy to the Retail SDK folder and then update the config file, **RetailProxy.MPOSOffline.ext.config**.
+To upgrade your proxy to 7.3, complete the steps in the article, [Typescript and C# proxies for Retail point of sale (POS)](typescript-proxy-retail-pos.md) and then move the proxy to the Retail SDK folder and then update the config file, **RetailProxy.MPOSOffline.ext.config**.
 
 ## Upgrade the channel extension from 7.1 to a higher version
 In 7.1, you should have completed most of the POS and Proxy customizations inline. To upgrade to higher a application release, you should move all of your inline changes to extensions. If it is a binary hotfix upgrade, then you must perform a code merge with the new Retail SDK and then regenerate the package.
@@ -164,7 +164,7 @@ In 7.1, you should have completed most of the POS and Proxy customizations inlin
 In 7.0, you should have completed most of the customizations inline. To upgrade to higher a application release, you should move all of your inline changes to extensions. If it is binary hotfix upgrade, you must perform a code merge with the new Retail SDK and regenerate the package.
 
 ## Generate a deployable package for validation
-Complete the steps in the topic, [Create deployable packages](retail-sdk/retail-sdk-packaging.md), to generate the deployable package for validation.
+Complete the steps in the article, [Create deployable packages](retail-sdk/retail-sdk-packaging.md), to generate the deployable package for validation.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

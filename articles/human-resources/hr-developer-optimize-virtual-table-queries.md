@@ -55,12 +55,12 @@ One cause of slow performance with Dataverse virtual tables for Human Resources 
 An example where you may see this impact is in queries against the Worker (**mshr_hcmworkerentity**) or Base worker (**mshr_hcmworkerbaseentity**) entity. You may see the performance issue manifest itself in a few different ways:
 
 - **Slow query execution**: The query against the virtual table may return the expected results, but take longer than expected to complete execution of the query.
-- **Query timeout**: The query may time out and return the following error: "A token was obtained to call Finance and Operations, but Finance and Operations returned an error of type InternalServerError."
+- **Query timeout**: The query may time out and return the following error: "A token was obtained to call finance and operations, but finance and operations returned an error of type InternalServerError."
 - **Unexpected error**: The query may return an error type 400 with the following message: "An unexpected error occurred."
 
   ![Error type 400 on HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType400.png)
 
-- **Throttling**: The query may overuse server resources, and become subject to throttling. In this case, the query returns the following error: "A token was obtained to call Finance and Operations, but Finance and Operations returned an error of type 429." For more information in throttling in Human Resources, see [Throttling FAQ](./hr-admin-integration-throttling-faq.md).
+- **Throttling**: The query may overuse server resources, and become subject to throttling. In this case, the query returns the following error: "A token was obtained to call finance and operations, but finance and operations returned an error of type 429." For more information in throttling in Human Resources, see [Throttling FAQ](./hr-admin-integration-throttling-faq.md).
 
   ![Error type 429 on HcmWorkerBaseEntity.](./media/HcmWorkerBaseEntityErrorType429.png)
 
@@ -167,3 +167,4 @@ For more information on paging, see [Specify the number of entities to return in
 - [Throttling FAQ](./hr-admin-integration-throttling-faq.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

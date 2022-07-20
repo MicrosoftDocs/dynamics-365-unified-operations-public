@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work line details
-description: This topic provides information about the Work line details page, which shows a comprehensive, sortable, and filterable list of the individual work lines in your system.
+description: This article provides information about the Work line details page, which shows a comprehensive, sortable, and filterable list of the individual work lines in your system.
 author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
@@ -15,7 +15,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab

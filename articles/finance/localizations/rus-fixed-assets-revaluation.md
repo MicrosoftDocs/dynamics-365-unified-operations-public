@@ -2,7 +2,7 @@
 # required metadata
 
 title: Revaluate fixed asset cost and depreciation (Russia)
-description: This topic explains how to revaluate the cost and depreciation of fixed assets for Russia.
+description: This article explains how to revaluate the cost and depreciation of fixed assets for Russia.
 author: anasyash
 ms.date: 07/28/2021
 ms.topic: article

@@ -1,6 +1,6 @@
 ---
 title: Inventory Visibility reservations
-description: This topic describes how to set up the reservation feature to create reservations, consume reservations, and/or unreserve specified inventory quantities by using Inventory Visibility.
+description: This article describes how to set up the reservation feature to create reservations, consume reservations, and/or unreserve specified inventory quantities by using Inventory Visibility.
 author: yufeihuang
 ms.date: 08/02/2021
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.21
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes how to set up the reservation feature to create reservations, consume reservations, and/or unreserve specified inventory quantities by using Inventory Visibility.
+This article describes how to set up the reservation feature to create reservations, consume reservations, and/or unreserve specified inventory quantities by using Inventory Visibility.
 
 Reservations mark a quantity of inventory that will be used in the future. When you create a reservation, the system prevents other orders from reserving or consuming the reserved goods until the reservation is either consumed or unreserved. Reservations are created, consumed, and canceled by using API calls to the Inventory Visibility service.
 

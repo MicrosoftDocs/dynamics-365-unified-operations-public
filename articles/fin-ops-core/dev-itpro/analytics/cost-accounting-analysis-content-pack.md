@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cost accounting analysis Power BI content
-description: This topic describes what is included in the Cost accounting analysis Power BI content.
+description: This article describes what is included in the Cost accounting analysis Power BI content.
 author: AndersGirke
 ms.date: 10/02/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes what is included in the **Cost accounting analysis** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
+This article describes what is included in the **Cost accounting analysis** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 
 ## Overview
 

@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
  > [!NOTE]
- > This topic applies to legal entities with a primary address in Denmark, Germany, France, Ireland, the Netherlands, or the United Kingdom.
+ > This article applies to legal entities with a primary address in Denmark, Germany, France, Ireland, the Netherlands, or the United Kingdom.
 
 A credit note or credit memorandum (memo) is a document that reduces or eliminates the amount that the buyer has to pay.
 

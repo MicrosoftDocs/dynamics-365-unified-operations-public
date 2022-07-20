@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add credit management information for customers
-description: This topic explains how to add credit management information for a customer.
+description: This article explains how to add credit management information for a customer.
 author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article

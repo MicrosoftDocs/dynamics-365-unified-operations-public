@@ -2,7 +2,7 @@
 # required metadata
 
 title: Document routing layout for license plate labels
-description: This topic describes how to use formatting methods to print values on labels.
+description: This article describes how to use formatting methods to print values on labels.
 author: perlynne
 ms.date: 04/01/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: perlynne
@@ -57,7 +57,7 @@ Several widely available label generation tools can help you format the text for
 
 ## Turn on this feature for your system
 
-If your system doesn't already include the features described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Enhanced license plate label layouts* feature. (As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off.)
+If your system doesn't already include the features described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Enhanced license plate label layouts* feature. (As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off.)
 
 ## Custom number formats
 
@@ -133,7 +133,7 @@ You can print from a display method by using the following format.
 $DisplayMethod()$
 ```
 
-You can combine this format with other types that were described earlier in this topic. For example, you have a display method that is named `DisplayListOfItemsNumbers()`, and you want to print the first item number of this method. In this case, you can use the following code.
+You can combine this format with other types that were described earlier in this article. For example, you have a display method that is named `DisplayListOfItemsNumbers()`, and you want to print the first item number of this method. In this case, you can use the following code.
 
 ```dos
 $DisplayListOfItemsNumbers()[1]$

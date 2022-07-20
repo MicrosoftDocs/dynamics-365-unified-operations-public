@@ -2,7 +2,7 @@
 # required metadata
 
 title: STARTSWITH ER function
-description: This topic provides information about how the STARTSWITH Electronic reporting (ER) function is used.
+description: This article provides information about how the STARTSWITH Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 02/11/2021
 ms.prod: 

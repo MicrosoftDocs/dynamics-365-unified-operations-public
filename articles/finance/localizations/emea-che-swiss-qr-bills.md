@@ -2,7 +2,7 @@
 # required metadata
 
 title: Swiss QR-bills
-description: This topic provides information about how to generate QR-bills (QR-slips) and process incoming QR-bills.
+description: This article provides information about how to generate QR-bills (QR-slips) and process incoming QR-bills.
 author: anasyash
 ms.date: 03/25/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.9
 [!include [banner](../includes/banner.md)]
 
 
-As of July 2020, QR-bills (QR-slips) will have to be processed and issued in addition to invoices. This topic explains how to generate QR-bills and process incoming QR-bills in Microsoft Dynamics 365 Finance.
+As of July 2020, QR-bills (QR-slips) will have to be processed and issued in addition to invoices. This article explains how to generate QR-bills and process incoming QR-bills in Microsoft Dynamics 365 Finance.
 
 To make the QR-bill functionality available, you must turn on the following features in the **Feature management** module:
 

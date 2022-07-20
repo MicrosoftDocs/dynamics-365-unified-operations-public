@@ -2,7 +2,7 @@
 # required metadata
 
 title: Saved views
-description: This topic describes how to use the saved views features.
+description: This article describes how to use the saved views features.
 author: jasongre
 ms.date: 04/25/2022
 ms.topic: article
@@ -201,7 +201,7 @@ For the list of all published views for the page, the following set of actions a
 
 ## Managing views globally
 
-Although some management capabilities are surfaced on every page, as indicated in this topic, **system administrators** and **saved view administrators** can manage views more holistically for the system via the **Personalization** page. In particular, this page has the following sections and capabilities: 
+Although some management capabilities are surfaced on every page, as indicated in this article, **system administrators** and **saved view administrators** can manage views more holistically for the system via the **Personalization** page. In particular, this page has the following sections and capabilities: 
 
 - **Published views** – This section lists all views that have been published for your organization. From here, you can republish a view after you adjust the security roles or legal entities that the view targets. You can also export, delete, or unpublish views. You can use the **Save as personal** action to create a personal copy of a view, so that you can update the view or gain a better understanding of its contents. 
 - **Unpublished views** – This section lists all the organization views in your system that aren't currently published. These views most often come into the system through the import capability. You can publish, export, or delete these views. The **Quick publish** action that was added in version 10.0.12 enables multiple views from this section to be published in one action, by using the existing security role and legal entity configurations. You can use the **Save as personal** action to create personal copies of these views, so that you can gain a better understand their contents.
@@ -220,7 +220,7 @@ For a list of known issues with saved views, please see [Build forms that fully 
 ### How do I enable saved views in my environment?
 
 > [!NOTE]
-> The **Saved views** feature requires the Personalization system in Finance and Operations to be enabled. If personalization is turned off for the entire environment, views will be disabled even if you follow steps below. 
+> The **Saved views** feature requires the Personalization system in the finance and operations apps to be enabled. If personalization is turned off for the entire environment, views will be disabled even if you follow steps below. 
 
 You can turn the **Saved views** feature on and off through Feature management in any environment. After it's turned on, saved views will be enabled in all subsequent user sessions.
 
@@ -260,3 +260,4 @@ If you publish a view to a specific legal entity, but you don't publish that vie
 - **Version 10.0.21 or later:** If the **Improved legal entity support for saved views** feature is turned on, the view selector will only ever show the view for the specified legal entities. This behavior occurs because the feature enables views (including personal views) to be linked to specific legal entities.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

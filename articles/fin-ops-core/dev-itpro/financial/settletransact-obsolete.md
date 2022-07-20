@@ -2,7 +2,7 @@
 # required metadata
 
 title: Settle transactions by using CustTrans::settleTransaction
-description: This topic describes the new CustTrans::settleTransaction method and explains why CustTrans::settleTransact is now obsolete.
+description: This article describes the new CustTrans::settleTransaction method and explains why CustTrans::settleTransact is now obsolete.
 author: RobinARH
 ms.date: 06/01/2019
 ms.topic: article

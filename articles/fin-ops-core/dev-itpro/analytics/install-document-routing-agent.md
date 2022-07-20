@@ -2,9 +2,9 @@
 # required metadata
 
 title: Install the Document Routing Agent to enable network printing
-description: This topic describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 Finance.
+description: This article describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 Finance.
 author: RichdiMSFT
-ms.date: 03/21/2022
+ms.date: 06/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,21 +31,21 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to install and configure the Document Routing Agent.  The Document Routing Agent is a downloadable application that you can use to enable network printing scenarios. You can enable network printers for specific companies by using in-client administrative pages.
+This article describes how to install and configure the Document Routing Agent.  The Document Routing Agent is a downloadable application that you can use to enable network printing scenarios. You can enable network printers for specific companies by using in-client administrative pages.
 
 ## Preparing to install the Document Routing Agent
 
-- Supported on Windows 8.1, Windows 10, Microsoft Windows Server 2012 R2, or Microsoft Windows Server 2016.
+- Supported on Windows 8.1, Windows 10, Microsoft Windows Server 2012 R2, Microsoft Windows Server 2016, or Microsoft Windows Server 2019.
 - Access to network printing resources requires Active Directory Domain Services (AD DS) authentication.
 - When installing the Document Routing Agent, make sure you are logged in as the Admin user.
 - The Microsoft Azure Active Directory (Azure AD) account that is used to configure the Document Routing Agent must share the same domain as the Azure tenant.
-- The Document Routing Agent requires .NET 4.62 or later and Adobe Acrobat Reader 32-bit on the client.
+- The Document Routing Agent requires .NET 4.62 or later and Adobe Acrobat Reader 32-bit or 64-bit on the client.
 - Configure Adobe client print settings to prevent document scaling.
 
 Network printers that are registered for applications can be used by all legal entities (also known as companies) that are defined in the environment. Network printer settings are company-specific. Therefore, administrators can restrict access, based on the user's active company. For example, users in the active company might have access to all the network printers that are registered by the Document Routing Agent. However, users in another company won't have access to those printers until access is explicitly enabled for that company.
 
 ## Key concepts
-This topic will help you with the following tasks:
+This article will help you with the following tasks:
 
 - Identify the key components that are involved in the support for network printing in applications.
 - Learn about the function of the Document Routing Agent.
@@ -77,7 +77,7 @@ Use the following procedure to configure the client application so that it can c
 4. Add the following settings:
 
     - **Application ID** – The ID that is unique to the application and should be entered automatically.
-    - **Finance and Operations URL** – The base URL of the application.
+    - **finance and operations URL** – The base URL of the application.
     - **Azure AD tenant** – The domain name of the Azure AD.
 
 5. Click **OK**.
@@ -145,7 +145,7 @@ Yes. The Document Routing Agent is supported on Microsoft Windows Server 2019.
 
 No, not at this time. There are several dependencies on Azure capabilities that are available only in Microsoft Windows Server 2012 R2 and Microsoft Windows Server 2016.
 
-### Does the user who installs the Document Routing Agent have to be part of a Finance and Operations apps security group?
+### Does the user who installs the Document Routing Agent have to be part of a finance and operations apps security group?
 
 Yes. To access the agent installation links, the user must be part of the **Document routing client** security role.
 
@@ -159,3 +159,4 @@ Multiple Document Routing Agents should be configured for your printers to ensur
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

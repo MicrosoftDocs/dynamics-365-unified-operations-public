@@ -2,7 +2,7 @@
 # required metadata
 
 title: Funds in the public sector
-description: This topic explains how public sector entities can use funds to demonstrate their fiscal accountability. A fund is a self-balancing set of financial books that's used to control and monitor the planned use of resources, often in compliance with legal and administrative requirements.
+description: This article explains how public sector entities can use funds to demonstrate their fiscal accountability. A fund is a self-balancing set of financial books that's used to control and monitor the planned use of resources, often in compliance with legal and administrative requirements.
 author: v-kiarnd
 ms.date: 08/07/2017
 ms.topic: article

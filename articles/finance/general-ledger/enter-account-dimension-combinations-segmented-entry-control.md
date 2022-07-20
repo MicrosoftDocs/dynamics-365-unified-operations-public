@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enter account and dimension combinations (segmented entry control)
-description: This topic describes how to enter account and dimension combinations or ledger accounts. The entry experience is often referred to as segmented entry control.
+description: This article describes how to enter account and dimension combinations or ledger accounts. The entry experience is often referred to as segmented entry control.
 author: aprilolson
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to enter account and dimension combinations or ledger accounts. The entry experience is often referred to as segmented entry control.
+This article describes how to enter account and dimension combinations or ledger accounts. The entry experience is often referred to as segmented entry control.
 
 Users enter account and dimension combinations on various pages, such as pages for general journals, budgeting, and posting definitions. The valid account and dimension combinations depend on the account structures that are assigned to the ledger and the advanced rules that are assigned to the account structures. When users enter a combination, they can either manually type the values or take advantage of a rich, lookup experience. When you enter the field, you can start to type and it will search the value and the description. For example, if you type 180 it will search any value that begins with that number combination. Or you may type Cash and it will search any value that has a description that begins with Cash. You can also use a wildcard, such as \*Cash or \*180 to search if the value or description contain the search criteria. 
 

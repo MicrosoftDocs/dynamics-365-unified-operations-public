@@ -2,7 +2,7 @@
 # required metadata
 
 title: Swedish Intrastat
-description: This topic contains information about Intrastat reporting in Sweden.
+description: This article contains information about Intrastat reporting in Sweden.
 author: anasyash
 ms.date: 8/24/2021
 ms.topic: article

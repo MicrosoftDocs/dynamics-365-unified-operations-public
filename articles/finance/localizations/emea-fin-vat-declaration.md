@@ -2,7 +2,7 @@
 # required metadata
 
 title: VAT declaration (Finland)
-description: This topic describes how to set up and generate a value-added tax (VAT) declaration for Finland. 
+description: This article describes how to set up and generate a value-added tax (VAT) declaration for Finland. 
 author: liza-golub
 ms.date: 03/21/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up and generate a value-added tax (VAT) declaration for Finland in the official TXT format. It also describes how to preview the VAT declaration in Microsoft Excel.
+This article describes how to set up and generate a value-added tax (VAT) declaration for Finland in the official TXT format. It also describes how to preview the VAT declaration in Microsoft Excel.
 
 To automatically generate the report, first create enough sales tax codes to keep a separate VAT accounting for each type of operation that is subject to reporting in the VAT declaration for Finland. Additionally, in the application-specific parameters of the Electronic reporting (ER) format for the VAT declaration, associate sales tax codes with the lookup result of the **Report field lookup** lookup field. In the following table, the "Lookup result" column shows the lookup result that is preconfigured for a specific VAT declaration field ID in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the field ID of the VAT declaration.
 
@@ -62,7 +62,7 @@ The VAT declaration for Finland contains the following fields that are used to r
 
 For more information about how to configure reverse charge VAT, see [Reverse charges](emea-reverse-charge.md).
 
-For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up) section later in this topic.
+For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#set-up) section later in this article.
 
 ## Set up the VAT declaration for Finland
 
@@ -100,7 +100,7 @@ Follow these steps to define which sales tax codes in your Finance generate whic
 
     | Field | Description |
     |---|---|
-    | Lookup result | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this topic. |
+    | Lookup result | Select the value of the report field. For more information about the values and their assignment to VAT declaration rows, see the [VAT declaration overview](#vat-declaration-overview) section earlier in this article. |
     | Tax code | Select the sales tax code to associate with the report field. Posted tax transactions that use the selected sales tax code will be collected in the appropriate declaration box. We recommend that you separate sales tax codes in such a way that one sales tax code generates amounts in only one declaration box. |
     | Transaction classifier | <p>If you created enough sales tax codes to determine a declaration box, select **\*Not blank\***. If you didn't create enough sales tax codes so that one sales tax code generates amounts in only one declaration box, you can set up a transaction classifier. The following transaction classifiers are available:</p><ul><li>**Purchase**</li><li>**PurchaseExempt** (tax-exempt purchase)</li><li>**PurchaseReverseCharge** (tax receivable from a purchase reverse charge)</li><li>**Sales**</li><li>**SalesExempt** (tax-exempt sale)</li><li>**SalesReverseCharge** (tax payable from a purchase reverse charge or a sales reverse charge)</li><li>**Use tax**</li></ul><p>For each transaction classifier, a classifier for the credit note is also available. For example, one of these classifiers is **PurchaseCreditNote** (purchase credit note).</p><p>Be sure to create two lines for each sales tax code: one that has the transaction classifier value and one that has the transaction classifier for credit note value.</p> |
 
@@ -217,7 +217,7 @@ Sales tax payment transaction are produced by the [Settle and post sales tax](..
 
 ## Generate the electronic file for the VAT declaration from electronic messages
 
-When you use electronic messages to generate the report, you can collect tax data from multiple legal entities. For more information, see the [Run the VAT declaration for multiple legal entities](#run-the-vat-declaration-for-multiple-legal-entities) section later in this topic.
+When you use electronic messages to generate the report, you can collect tax data from multiple legal entities. For more information, see the [Run the VAT declaration for multiple legal entities](#run-the-vat-declaration-for-multiple-legal-entities) section later in this article.
 
 The following procedure applies to the electronic message processing example that you [imported earlier from the LCS Shared asset library](#import-em).
 
@@ -234,7 +234,7 @@ The following procedure applies to the electronic message processing example tha
 11. Verify that the message status is changed to **FI VAT Ready to generate VAT return**.
 12. Select **Generate report**.
 13. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **FI VAT Preview report**, and then select **OK**.
-14. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#report-sales-tax-for-settlement-period) section earlier in this topic, and then select **OK**.
+14. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#report-sales-tax-for-settlement-period) section earlier in this article, and then select **OK**.
 15. Select the **Attachments** button (paper clip symbol) in the upper-right corner of the page, and then select **Open** to open the file.
 16. Review the amounts in the Excel document, and then select **Generate report**.
 17. To generate the VAT declaration in TXT format, in the **Run processing** dialog box, select **FI VAT Generate report**, and then select **OK**.

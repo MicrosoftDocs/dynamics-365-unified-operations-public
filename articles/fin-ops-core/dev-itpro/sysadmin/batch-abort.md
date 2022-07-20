@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cancel an executing batch job
-description: This topic provides information about how to cancel an executing batch job.
+description: This article provides information about how to cancel an executing batch job.
 author: karimelazzouni
 ms.date: 03/26/2021
 ms.topic: article

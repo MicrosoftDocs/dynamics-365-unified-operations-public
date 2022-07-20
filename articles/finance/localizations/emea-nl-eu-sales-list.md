@@ -2,7 +2,7 @@
 # required metadata
 
 title: EU sales list for Netherlands
-description: This topic provides information about how to generate the EU sales list for Netherlands.
+description: This article provides information about how to generate the EU sales list for Netherlands.
 author: anasyash
 ms.date: 09/20/2021
 ms.topic: article
@@ -201,7 +201,7 @@ To view the changes in EU sales list, complete the following steps.
 To view the changes in VAT declaration, follow these steps:
 
 1. Open the file, Versioning_rpt-from_NT14_20191211_to_NT15_20201209-bd-rpt-ob-aangifte-2021.html to see the changes in VAT declaration.
-2. In the file, under **Schema referenties,** you can see xsd schema names for taxonomies NT14 and NT15. Take the name of xsd schema for entering to **XSDSchema** lookup result. Find more details about application specific parameters for VAT declaration format in [VAT declaration for Netherlands](emea-nl-vat-declaration-netherlands.md) topic in **Set up XSD schema and namespaces** section.
+2. In the file, under **Schema referenties,** you can see xsd schema names for taxonomies NT14 and NT15. Take the name of xsd schema for entering to **XSDSchema** lookup result. Find more details about application specific parameters for VAT declaration format in [VAT declaration for Netherlands](emea-nl-vat-declaration-netherlands.md) article in **Set up XSD schema and namespaces** section.
 3. In the file, under the **Namespaces** table, you can see the line: bd-i=http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data. Take this value for entering to **SchemaInstanceData** lookup result.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

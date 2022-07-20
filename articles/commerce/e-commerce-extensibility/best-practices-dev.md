@@ -2,7 +2,7 @@
 # required metadata
 
 title: Best practices for Dynamics 365 Commerce development 
-description: This topic describes some best practices to follow when developing Dynamics 365 Commerce customizations. 
+description: This article describes some best practices to follow when developing Dynamics 365 Commerce customizations. 
 author: samjarawan
 ms.date: 05/19/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes some best practices to follow when developing Dynamics 365 Commerce customizations.
+This article describes some best practices to follow when developing Dynamics 365 Commerce customizations.
 
 The Dynamics 365 Commerce platform provides a rich online software development kit (SDK) for developer extensibility. Custom modules, data actions, and themes can be created, or modules from the Commerce [module library](../starter-kit-overview.md) can be extended. It is important to consider web site performance when building Commerce customizations. Standard best practices used for website development are applicable including minimizing HTML, JavaScript, and CSS files, and optimizing images.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax code cannot be determined
-description: This topic explains how to troubleshoot the "Tax code cannot be determined" error in the Tax Calculation service.
+description: This article explains how to troubleshoot the "Tax code cannot be determined" error in the Tax Calculation service.
 author: hangwan
 ms.date: 03/25/2022
 ms.topic: business-process
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Version 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains the troubleshooting steps that you can take if you receive a "Tax code cannot be determined" error in the Tax Calculation service.
+This article explains the troubleshooting steps that you can take if you receive a "Tax code cannot be determined" error in the Tax Calculation service.
 
 ## Symptom
 
@@ -125,7 +125,7 @@ Follow these steps to troubleshoot the issue.
 
 ## Mitigation
 
-1. Go through each step in the [Troubleshoot](#troubleshoot) section of this topic, and fix the setup as required. If the tax group and item tax group haven't been determined correctly, see [No matching result be found](tcs-troubleshooting-no-matching-result.md).
+1. Go through each step in the [Troubleshoot](#troubleshoot) section of this article, and fix the setup as required. If the tax group and item tax group haven't been determined correctly, see [No matching result be found](tcs-troubleshooting-no-matching-result.md).
 2. If there is no intersection for the tax group and the item tax group, create a new feature version in RCS, and fix the setup.
 
     - Go to **Tax features** \> **Tax codes and groups** > **Item tax group**.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Export financial information for auditors in Sweden
-description: This topic provides information about the SIE standard report for Sweden.
+description: This article provides information about the SIE standard report for Sweden.
 author: ShylaThompson
 ms.date: 04/05/2018
 ms.topic: article

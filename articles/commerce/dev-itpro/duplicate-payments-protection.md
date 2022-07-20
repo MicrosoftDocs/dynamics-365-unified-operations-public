@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable duplicate payment protection for payment connector
-description: This topic describes how to enable duplicate payment protection for a given payment connector.
+description: This article describes how to enable duplicate payment protection for a given payment connector.
 author: Reza-Assadi
 ms.date: 03/16/2020
 ms.topic: article
@@ -30,19 +30,19 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to enable duplicate payment protection functionality in a payment connector that manages the integration with a payment terminal. A *payment connector* is an extension library that is written to integrate the POS with a payment terminal.
+This article describes how to enable duplicate payment protection functionality in a payment connector that manages the integration with a payment terminal. A *payment connector* is an extension library that is written to integrate the POS with a payment terminal.
 
 ## Overview
 
-- [Required reading](#required-reading) - List of topics that you should be read before starting the implementation of the duplicate payment protection functionality in a payment connector. 
+- [Required reading](#required-reading) - List of articles that you should be read before starting the implementation of the duplicate payment protection functionality in a payment connector. 
 - [Prerequisites](#prerequisites) - List of prerequisites to enable duplicate payment protection in a payment connector implementation.
 - [Understanding duplicate payment protection flows](#understanding-duplicate-payment-protection-flows) - Describes the various flows where the duplicate payment protection is invoked in the POS.
 - [Implement duplicate payment requests](#implement-duplicate-payment-requests) - Describes the various payment-related requests that need to be implemented to support the duplicate payment protection feature.
 
 ## Required reading
-Be sure to read the following topic before enabling duplicate payment protection for a given payment connector.
+Be sure to read the following article before enabling duplicate payment protection for a given payment connector.
 
-- [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md) - The duplicate payment protection feature builds on the payment integration for a payment terminal described in this topic.
+- [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md) - The duplicate payment protection feature builds on the payment integration for a payment terminal described in this article.
 
 ## Prerequisites
 The following prerequisites must be met before duplicate payment protection can be enabled for a payment connector implementation.
@@ -182,7 +182,7 @@ public GetTransactionByTransactionReferencePaymentTerminalDeviceRequest(string l
 | Variable | Description |
 |---|---|
 | lockToken | Unique token value that is generated when the payment terminal is initially locked for the transaction. |
-| transactionReferenceData | Property bag containing various properties used to uniquely identify a payment transaction. For more information, see the section [PaymentTransactionReferenceData](#paymenttransactionreferencedata) in this topic. |
+| transactionReferenceData | Property bag containing various properties used to uniquely identify a payment transaction. For more information, see the section [PaymentTransactionReferenceData](#paymenttransactionreferencedata) in this article. |
 
 #### Response signature
 ``` csharp

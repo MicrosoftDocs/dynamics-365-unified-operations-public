@@ -2,7 +2,7 @@
 # required metadata
 
 title: i.SAF reporting for Lithuania
-description: This topic explains how to set up and work with the i.SAF report for legal entities in Lithuania.
+description: This article explains how to set up and work with the i.SAF report for legal entities in Lithuania.
 author: LizaGolub
 ms.date: 03/22/2022
 ms.topic: article
@@ -34,9 +34,9 @@ According to Order No VA-55, "On the Approval of Rules for the Processing and Su
 
 ## Overview
 
-This topic describes how to set up Electronic Reporting (ER) configurations for the i.SAF report and how to set up and use Electronic Messages (EM) functionality in Dynamics 365 Finance.
+This article describes how to set up Electronic Reporting (ER) configurations for the i.SAF report and how to set up and use Electronic Messages (EM) functionality in Dynamics 365 Finance.
 
-The topic includes information about:
+The article includes information about:
 
 - Import and set up ER configurations and application-specific parameters
 - Set up EM functionality

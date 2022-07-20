@@ -2,7 +2,7 @@
 # required metadata
 
 title: Complete the Azure Resource Manager onboarding process for US government Lifecycle Services projects
-description: This topic explains how to complete the Microsoft Azure Resource Manager onboarding process for your connectors. This topic applies to Azure US government projects.
+description: This article explains how to complete the Microsoft Azure Resource Manager onboarding process for your connectors. This article applies to Azure US government projects.
 author: saurabhsurana
 ms.date: 08/12/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2021-07-31
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to complete the Microsoft Azure Resource Manager onboarding process for your connectors.
+This article explains how to complete the Microsoft Azure Resource Manager onboarding process for your connectors.
 
 To deploy Azure Resource Manager topologies, you must complete the Resource Manager onboarding process for your connectors. To start the onboarding process, you must have the following items:
 

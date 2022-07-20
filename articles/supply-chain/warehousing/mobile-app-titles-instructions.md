@@ -1,6 +1,6 @@
 ---
 title: Customize step titles and instructions for the Warehouse Management mobile app
-description: This topic describes how to create and show custom instructions for each step of each task flow that you set up for the Warehouse Management mobile app.
+description: This article describes how to create and show custom instructions for each step of each task flow that you set up for the Warehouse Management mobile app.
 author: Mirzaab
 ms.date: 08/11/2021
 ms.topic: article
@@ -16,9 +16,9 @@ ms.dyn365.ops.version: 10.0.21
 # Customize step titles and instructions for the Warehouse Management mobile app
 
 > [!IMPORTANT]
-> The features that are described in this topic apply only to the new Warehouse Management mobile app. They do not affect the old warehouse app, which is now deprecated.
+> The features that are described in this article apply only to the new Warehouse Management mobile app. They do not affect the old warehouse app, which is now deprecated.
 
-This topic describes how to create and show custom instructions for every step of every task flow that you set up for the Warehouse Management mobile app. When warehouse workers receive well-written instructions, they can immediately start to use new flows without requiring previous training. This feature provides the following benefits:
+This article describes how to create and show custom instructions for every step of every task flow that you set up for the Warehouse Management mobile app. When warehouse workers receive well-written instructions, they can immediately start to use new flows without requiring previous training. This feature provides the following benefits:
 
 - **Ramp up workers faster by letting them follow simple instructions for every task step.** Every step of a flow provides instructions that enable front-line workers to understand the task.
 - **Provide instructions that match your own processes.** Write your own instructions to match your business and warehouse processes. For example, you can make the terminology fit your physical space and local abbreviations.

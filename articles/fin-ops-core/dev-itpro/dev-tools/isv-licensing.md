@@ -1,6 +1,6 @@
 ---
 title: Independent software vendor (ISV) licensing
-description: This topic describes the independent software vendor (ISV) licensing feature. 
+description: This article describes the independent software vendor (ISV) licensing feature. 
 author: peakerbl
 ms.date: 05/08/2020
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the independent software vendor (ISV) licensing feature. It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
+This article describes the independent software vendor (ISV) licensing feature. It includes information about benefits and capabilities of the ISV licensing feature, and explains how to enable licensing for an ISV solution, create a package and generate a customer-specific license, and create self-signed certificates for test purposes.
 
 The Microsoft Dynamics ecosystem provides tools and frameworks that let independent software vendors (ISVs) build, deploy, sell, and therefore monetize vertical industry solutions that can be repackaged. The ISV licensing feature provides the following benefits:
 
@@ -148,7 +148,7 @@ Follow these steps to enable licensing for your solution.
 3.  Import the license into the target environment.
 
     > [!NOTE]
-    > In production systems, you complete this step from Microsoft Dynamics Lifecycle Services (LCS), by using a deployable package. For more information, see the "Production environments" section later in this topic.
+    > In production systems, you complete this step from Microsoft Dynamics Lifecycle Services (LCS), by using a deployable package. For more information, see the "Production environments" section later in this article.
 
     | Parameter name                | Description                                                                                            |
     |-------------------------------|--------------------------------------------------------------------------------------------------------|

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Referenced fiscal documents for Brazil
-description: This topic provides an overview of referenced fiscal documents that are used in Brazil.
+description: This article provides an overview of referenced fiscal documents that are used in Brazil.
 author: sndray
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of referenced fiscal documents that are used in Brazil.
+This article provides an overview of referenced fiscal documents that are used in Brazil.
 
 In some scenarios, a fiscal document must include another fiscal document's information. You can attach the information for a referenced fiscal document in two ways:
 

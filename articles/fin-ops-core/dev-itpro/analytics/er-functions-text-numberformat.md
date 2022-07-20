@@ -2,7 +2,7 @@
 # required metadata
 
 title: NUMBERFORMAT ER function
-description: This topic provides information about how the NUMBERFORMAT Electronic reporting (ER) function is used.
+description: This article provides information about how the NUMBERFORMAT Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 12/10/2019
 ms.prod: 

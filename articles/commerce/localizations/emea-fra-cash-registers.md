@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cash register functionality for France
-description: This topic provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
+description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
 manager: annbe
 ms.date: 05/17/2022
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3.2
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the cash register functionality that is available for France in Microsoft Dynamics 365 Commerce. It also provides guidelines for setting up the functionality.
+This article provides an overview of the cash register functionality that is available for France in Microsoft Dynamics 365 Commerce. It also provides guidelines for setting up the functionality.
 
 The cash register functionality for France consists of the following parts:
 

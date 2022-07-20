@@ -1,8 +1,8 @@
 ---
 title: Deploy and access development environments
-description: This topic describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
+description: This article describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
 author: laneswenka
-ms.date: 05/04/2022
+ms.date: 07/08/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -11,19 +11,20 @@ ms.assetid: 4be8b7a1-9632-4368-af41-6811cd100a37
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
 # Deploy and access development environments
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to access development instances, configure local development virtual machines (VMs), and find important configurations settings for developers and administrators.
+This article describes how to access development instances, configure local development virtual machines (VMs), and find important configurations settings for developers and administrators.
 
 > [!NOTE]
 > - Microsoft Support may provide limited troubleshooting on Tier 1 development environments.
 > - In certain circumstances, a fresh deploy of a Tier 1 environment may be requested by Microsoft Support to resolve an issue.
 > - Development environments should not contain business critical data and are considered disposable.
+> - Only 120 environments are support per tenant. We recommend that you limit the number of cloud-hosted environments under a specific tenant to allow enough capacity to be able to deploy sandbox and production environments.
  
 
 ## Definitions
@@ -36,7 +37,7 @@ This topic describes how to access development instances, configure local develo
 
 ## Deploying cloud development environments
 
-To deploy a cloud development environment in your LCS project:
+To deploy a cloud development environment in your Lifecycle Services (LCS) project:
 
 1. Create a connection between an LCS project and your Azure subscription. You will need your Azure subscription ID and authorize the use of the subscription.
 2. Select **+** under **Environments** to deploy.
@@ -57,19 +58,32 @@ When a cloud environment is provisioned through LCS:
 + The user who requests the cloud environment is provisioned as the administrator in that environment.
 + User accounts are provisioned on the development VM to allow access to the environment using Remote Desktop, these credentials are accessible on the environment page in LCS.
 
+> [!NOTE]
+> Each cloud environment provisioned through LCS will create a resource group in your Azure subscription containing the following resources:
+> 
+> + 1 Virtual machine
+> + 5 Disks
+> + 1 Load balancer
+> + 1 Regular network interface
+> + 1 Network security group
+> + 1 Virtual network
+> + 1 Public IP address
+> + 1 Storage account
+> + 1 or more additional storage accounts prefixed with “dyn” for storage of product binaries
+
 ### Accessing an instance through a URL
 
 The system can be accessed by end users. The administrator can add users to this system by using the **Users** page in the instance. Note that these additional users don't have to be users in LCS. You obtain the base URL for the cloud environment from your LCS project site.
 
 1. Go to your LCS project navigation menu, and select **Cloud-hosted environments**.
 2. In the environment list section, select the deployed environment.
-3. When the environment page opens, you can access the application by clicking **Login** &gt; **Log on to Finance and Operations** in the upper-right corner.
+3. When the environment page opens, you can access the application by clicking **Login** &gt; **Log on to finance and operations** in the upper-right corner.
 4. Use valid end user credentials to sign in to the application. If the current LCS user is the user who originally deployed the environment, that user is probably a valid end user and the administrator of the application.
 5. In your browser, make a note of the base URL after you sign in. For example, the base URL might be `https://dynamicsAx7aosContoso.cloud.dynamics.com`.
 
 ### Accessing the cloud instance through Remote Desktop
 
-Cloud environments can be accessed both as an end user and as a developer. The developer gets access to the system through Remote Desktop credentials. The Remote Desktop credentials are obtained from the environment page on the LCS project site (see the illustration earlier in this topic).
+Cloud environments can be accessed both as an end user and as a developer. The developer gets access to the system through Remote Desktop credentials. The Remote Desktop credentials are obtained from the environment page on the LCS project site (see the illustration earlier in this article).
 
 ![Restricted admin access.](media/restricted-admin.png)
 
@@ -106,11 +120,11 @@ If LCS was not able to successfully complete the delete operation, the operation
 You can easily identify the environment’s resource group in the Azure subscription, as it will have the same name as the environment in LCS.
 
 ## VM that is running locally
-A virtual hard disk (VHD) is made available for download from LCS, so that you can set it up on a local machine. This system is intended to be accessed by a developer and is a pre-configured one-box development environment of Finance and Operations apps. The VHD is available in the Shared Asset library of LCS under the asset type **Downloadable VHD**.
+A virtual hard disk (VHD) is made available for download from LCS, so that you can set it up on a local machine. This system is intended to be accessed by a developer and is a pre-configured one-box development environment of finance and operations apps. The VHD is available in the Shared Asset library of LCS under the asset type **Downloadable VHD**.
 
 1. Go to the LCS main page and select **Shared asset library** or go to [Shared Asset Library](https://lcs.dynamics.com/V2/SharedAssetLibrary).
 2. Select the asset type **Downloadable VHD**.
-3. Find the VHD you are looking for based on the desired Finance and Operations version. The VHD is divided into multiple file parts that you need to download. For example, the asset files that start with "VHD - 10.0.5" are the different files you need in order to install version 10.0.5.
+3. Find the VHD you are looking for based on the desired finance and operations version. The VHD is divided into multiple file parts that you need to download. For example, the asset files that start with "VHD - 10.0.5" are the different files you need in order to install version 10.0.5.
 4. Download all files (parts) associated with the desired VHD to a local folder.
 5. After the download is complete, run the executable file that you downloaded, accept the software license agreement, and choose a file path to extract the VHD to.
 6. This creates a local VHD file that you can use to run a local virtual machine.
@@ -241,7 +255,7 @@ To facilitate cloud-hosted deployments, we recommend that partners follow this s
 > The Azure AD tenant that is associated with the Azure subscription doesn't play any role in environment configuration. The Azure subscription and the corresponding connector configuration are used only to deploy Azure resources.
 
 ### I have run the Admin user provisioning tool on my development environment, and now I receive the following sign-in error: "Error: AADSTS50011: The reply URL specified in the request does not match the reply URLs configured for the application."
-As was stated earlier, it's very important that Finance and Operations environments be deployed under the correct Azure AD tenant. For Tier 1/customer-managed environments that are deployed via LCS, changes to the Azure AD tenant settings aren't supported after deployment.
+As was stated earlier, it's very important that finance and operations environments be deployed under the correct Azure AD tenant. For Tier 1/customer-managed environments that are deployed via LCS, changes to the Azure AD tenant settings aren't supported after deployment.
 
 ### How can I fix my existing environment when my environment is in a failed state or I am getting sign-in errors?
 
@@ -286,3 +300,4 @@ Restart your environment from LCS by first performing **Stop** and then **Start*
 If you are using the virtual hard drive (VHD) that was released for versions 10.0.24 and later, the Generate Self-Signed Certificates tool needs to be run before the Admin user provisioning tool. See [Set up the downloadable VHD for first use](vhd-setup.md) for more information.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Audit file (XML Auditfile Financieel, XAF)
-description: This topic explains how to set up and generate the Audit file for legal entities in the Netherlands.  
+description: This article explains how to set up and generate the Audit file for legal entities in the Netherlands.  
 author: liza-golub
 ms.date: 05/06/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 This functionality is available for legal entities whose primary address is in the Netherlands.
 
-This topic explains how to import Electronic reporting (ER) configurations for the Audit file and then generate the Audit file for legal entities in the Netherlands.
+This article explains how to import Electronic reporting (ER) configurations for the Audit file and then generate the Audit file for legal entities in the Netherlands.
 
 ## Import and set up ER configurations
 

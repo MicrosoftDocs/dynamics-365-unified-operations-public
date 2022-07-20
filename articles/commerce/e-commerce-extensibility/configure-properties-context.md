@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure module properties to be shown based on context
-description: This topic describes how to configure module properties so that they are shown or hidden based on the contextual values of other configuration properties.
+description: This article describes how to configure module properties so that they are shown or hidden based on the contextual values of other configuration properties.
 author: samjarawan
 ms.date: 09/14/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure module properties so that they are shown or hidden based on the contextual values of other configuration properties.
+This article describes how to configure module properties so that they are shown or hidden based on the contextual values of other configuration properties.
 
 Multiple module configuration properties can be defined in a module's definition file. However, there might be scenarios where the relevance of some property fields depends on the values that are set for other property fields of the module. Property fields that aren't relevant should be hidden to minimize the number of fields that are shown to a page editor who is configuring the module. This behavior helps reduce complexity and the possibility of confusion.
 

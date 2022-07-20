@@ -3,7 +3,7 @@
 
 title: Cash discounts
 description: Cash discounts are setup and shared for Accounts payable and Accounts receivable.  The cash discount available can be defined on the customer invoice or vendor invoice, and will be taken if the invoice is paid within the cash discount date. 
-author: kweekley
+author: angelad116
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 3741
 ms.assetid: c25f9d85-2702-46aa-8e61-0b4886e069b3
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -35,7 +35,7 @@ Cash discounts are setup and shared for Accounts payable and Accounts receivable
 
 ## Cash discounts
 
-Cash discounts for both customers or vendors can be created in the Cash discounts page. You can also define, by using the Next discount code field, a series of cash discounts that succeed each other as previous cash discount dates expire. For more information, see “Example: Series of cash discounts” later in this topic. If the invoice, credit transaction (either a payment or a credit note), or both are entered in a currency other than the accounting currency of the legal entity, the cash discount is calculated using the exchange rate based on the date of the payment or credit note. If the invoice and credit document are entered in different legal entities, and if the accounting currencies for the legal entities differ, the exchange rate is taken from the legal entity of the invoice, as of the date of the credit document. For more information, see “Example: Exchange rates for cash discounts” later in this topic.
+Cash discounts for both customers or vendors can be created in the Cash discounts page. You can also define, by using the Next discount code field, a series of cash discounts that succeed each other as previous cash discount dates expire. For more information, see “Example: Series of cash discounts” later in this article. If the invoice, credit transaction (either a payment or a credit note), or both are entered in a currency other than the accounting currency of the legal entity, the cash discount is calculated using the exchange rate based on the date of the payment or credit note. If the invoice and credit document are entered in different legal entities, and if the accounting currencies for the legal entities differ, the exchange rate is taken from the legal entity of the invoice, as of the date of the credit document. For more information, see “Example: Exchange rates for cash discounts” later in this article.
 
 ## Defaulting order of cash discount main account
 

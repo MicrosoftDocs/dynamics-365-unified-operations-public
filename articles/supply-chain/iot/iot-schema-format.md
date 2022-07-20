@@ -2,7 +2,7 @@
 # required metadata
 
 title: Schema formats for IoT Hub messages
-description: This topic explains how you should design a message schema that you can use in IoT Intelligence.
+description: This article explains how you should design a message schema that you can use in IoT Intelligence.
 author: johanhoffmann
 ms.date: 04/25/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how you should design a message schema that you can use in IoT Intelligence.
+This article explains how you should design a message schema that you can use in IoT Intelligence.
 
 ## Message requirements
 

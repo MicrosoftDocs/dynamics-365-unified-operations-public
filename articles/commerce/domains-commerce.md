@@ -2,7 +2,7 @@
 # required metadata
 
 title: Domains in Dynamics 365 Commerce
-description: This topic describes how domains are handled in Microsoft Dynamics 365 Commerce.
+description: This article describes how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrShoo
 ms.date: 05/10/2022
 ms.topic: article
@@ -29,9 +29,9 @@ ms.dyn365.ops.version: Release 10.0.12
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how domains are handled in Microsoft Dynamics 365 Commerce.
+This article describes how domains are handled in Microsoft Dynamics 365 Commerce.
 
-Domains are web addresses used to navigate to Dynamics 365 Commerce sites in a web browser. You control management of your domain with a chosen Domain Name Server (DNS) provider. Domains are referenced throughout Dynamics 365 Commerce site builder to coordinate how a site will be accessed when published. This topic reviews how domains are handled and referenced throughout the lifecycle of the Commerce site development and launch.
+Domains are web addresses used to navigate to Dynamics 365 Commerce sites in a web browser. You control management of your domain with a chosen Domain Name Server (DNS) provider. Domains are referenced throughout Dynamics 365 Commerce site builder to coordinate how a site will be accessed when published. This article reviews how domains are handled and referenced throughout the lifecycle of the Commerce site development and launch.
 
 > [!NOTE]
 > As of May 6th, 2022, all environments created in Dynamics 365 Commerce will be provisioned with the `.dynamics365commerce.ms` domain, replacing the earlier pattern of `.commerce.dynamics.com`. Existing environments provisioned with the `.commerce.dynamics.com` domain will continue to work.

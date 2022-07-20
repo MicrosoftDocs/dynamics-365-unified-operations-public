@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fiscal documents and fiscal document framework for Brazil
-description: This topic describes fiscal documents for Brazil.
+description: This article describes fiscal documents for Brazil.
 author: sndray
 ms.date: 06/20/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes fiscal documents for Brazil.
+This article describes fiscal documents for Brazil.
 
 ## Overview
 

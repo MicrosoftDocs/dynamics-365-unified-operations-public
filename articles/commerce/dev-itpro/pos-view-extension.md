@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extend POS views to add custom columns and app bar buttons
-description: This topic explains how you can extend existing POS views such as the Customer Add/Edit screen.
+description: This article explains how you can extend existing POS views such as the Customer Add/Edit screen.
 author: mugunthanm
 ms.date: 04/21/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how you can extend existing point of sale (POS) views. To extend the **Transaction** screen and **Welcome** screen, you can use the screen layout designer. To extend all other POS views, such as the **Customer Add/Edit** screen, you use the Retail software development kit (SDK). This topic focuses on the extension of existing POS views via the Retail SDK.
+This article explains how you can extend existing point of sale (POS) views. To extend the **Transaction** screen and **Welcome** screen, you can use the screen layout designer. To extend all other POS views, such as the **Customer Add/Edit** screen, you use the Retail software development kit (SDK). This article focuses on the extension of existing POS views via the Retail SDK.
 
 
 

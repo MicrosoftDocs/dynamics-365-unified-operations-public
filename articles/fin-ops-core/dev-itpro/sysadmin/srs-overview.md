@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cross-company data sharing overview
-description: This topic provides an overview of cross-company data sharing. This is a mechanism for sharing reference and group data among companies in a deployment.
+description: This article provides an overview of cross-company data sharing. This is a mechanism for sharing reference and group data among companies in a deployment.
 author: ramasri
 ms.date: 02/15/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-Cross-company data sharing concept allows you to share company specific master, reference, and setup data across companies within Finance and Operations deployment. 
+Cross-company data sharing concept allows you to share company specific master, reference, and setup data across companies within finance and operations deployment. 
 
 Two data sharing concepts are available: 
 + Duplicate record sharing (DRS) is a concept where creating, updating, or deleting of records in for any company in the policy is copied/replicated across all companies in the policy. Updates of fields will also be replicated if selected for sharing in the policy. DRS was the first sharing type made available. 
@@ -143,3 +143,4 @@ The following limitations exist:
 +	Change tracking for child company tables is not supported. For example, this means that full export must be used in data management.
 +	Sharing cannot be used in combination with Retail Channel Databases.
 +	Sharing is based on kernel logic. This means that no actual records exist in SQL for child companies.
+

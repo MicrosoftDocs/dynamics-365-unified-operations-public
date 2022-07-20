@@ -2,7 +2,7 @@
 # required metadata
 
 title: Withholding tax declaration for Egypt
-description: This topic explains how to configure and generate the withholding tax declarations for Egypt.
+description: This article explains how to configure and generate the withholding tax declarations for Egypt.
 author: sndray
 ms.date: 03/08/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.18
 [!include[banner](../includes/preview-banner.md)]
 
 ## Overview
-This topic explains how to set up and generate the withholding tax declaration and the withholding tax declaration forms 41 and 11 for legal entities in Egypt 
+This article explains how to set up and generate the withholding tax declaration and the withholding tax declaration forms 41 and 11 for legal entities in Egypt 
 
 All Egyptian entities must prepare the form  41 which summarizes all taxes that are retained from local suppliers and service providers. In addition to form 41, form 11 must be generated to detail all of the retained taxed from foreign providers. 
 
@@ -63,7 +63,7 @@ For more information about how to import Electronic reporting configurations, se
 
 The implementation of the WHT declaration forms for Egypt is based on Electronic reporting (ER) configurations. For more information about the capabilities and concepts of configurable reporting, see [Electronic reporting](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md).
 
-For production and user acceptance testing (UAT) environments, follow the instructions in the topic, [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
+For production and user acceptance testing (UAT) environments, follow the instructions in the article, [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).
 
 To generate the Withholding declarations in an Egyptian legal entity, you need to upload the following configurations:
 

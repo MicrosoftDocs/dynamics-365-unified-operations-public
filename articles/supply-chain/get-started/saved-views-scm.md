@@ -2,7 +2,7 @@
 # required metadata
 
 title: Standard saved views for Supply Chain Management
-description: This topic describes the standard saved views that are available and explains how to enable them.
+description: This article describes the standard saved views that are available and explains how to enable them.
 author: kamaybac
 ms.date: 02/03/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../../includes/banner.md)]
 
-Microsoft Dynamics 365 Supply Chain Management includes several saved views that you can enable and use as needed. Some of these standard saved views are optimized and named for a specific role or task (for example, "Quality control" or "Receiving"). Others are optimized so that they include only the fields and settings that Microsoft usage statistics indicate are most often used by customers. These saved views are typically referred to as *simplified* views. This topic describes the standard saved views that are available, and explains how to enable and customize them.
+Microsoft Dynamics 365 Supply Chain Management includes several saved views that you can enable and use as needed. Some of these standard saved views are optimized and named for a specific role or task (for example, "Quality control" or "Receiving"). Others are optimized so that they include only the fields and settings that Microsoft usage statistics indicate are most often used by customers. These saved views are typically referred to as *simplified* views. This article describes the standard saved views that are available, and explains how to enable and customize them.
 
 For complete details about how to work with saved views, including the standard saved views, after you enable them, see [Saved views](../../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json).
 
@@ -44,7 +44,7 @@ For more information about how to customize and rename saved views, see [Saved v
 
 To use any saved views, regardless of whether you will use the standard saved views, you must turn on the *Saved views* feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (as of version 10.0.21, this feature is enabled by default).
 
-The remaining sections of this topic provide tables that describe the standard saved views that are currently available for each relevant module. Each table shows the name of each saved view, the page where you can find it, and a description of it. Each table also shows the name of the feature that includes the saved view. To see a standard saved view in your system, you must turn on the specified feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of version 10.0.25, all of the listed views are turned on by default.
+The remaining sections of this article provide tables that describe the standard saved views that are currently available for each relevant module. Each table shows the name of each saved view, the page where you can find it, and a description of it. Each table also shows the name of the feature that includes the saved view. To see a standard saved view in your system, you must turn on the specified feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). As of version 10.0.25, all of the listed views are turned on by default.
 
 ## Saved views for the Inventory management module
 

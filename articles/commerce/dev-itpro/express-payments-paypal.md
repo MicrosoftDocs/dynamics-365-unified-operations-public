@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure express payments for PayPal
-description: This topic describes how to configure express payments for PayPal to enable faster checkout capabilities in Microsoft Dynamics 365 Commerce.
+description: This article describes how to configure express payments for PayPal to enable faster checkout capabilities in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 05/11/2022
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.validFrom: 2017-06-20
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure express payments for PayPal to enable faster checkout capabilities in Microsoft Dynamics 365 Commerce.
+This article describes how to configure express payments for PayPal to enable faster checkout capabilities in Microsoft Dynamics 365 Commerce.
 
 ## Key terms
 
@@ -26,7 +26,7 @@ This topic describes how to configure express payments for PayPal to enable fast
 |---|---|
 | PayPal Wallet | The customer experience and integration that are supported by the PayPal connector. It's also known as the PayPal button. |
 | Wallet | A payment type that doesn't include traditional payment characteristics, such as the Bank Identification Number (BIN) range and expiration date, which are used to differentiate credit and debit card types. |
-| Payment express | A Commerce module that supports faster checkout behavior when supported payment methods are used. This topic covers use of the payment express module with PayPal. |
+| Payment express | A Commerce module that supports faster checkout behavior when supported payment methods are used. This article covers use of the payment express module with PayPal. |
 
 Dynamics 365 Commerce offers an out-of-box integration for PayPal Wallet. When the Dynamics 365 Payment Connector for PayPal is configured, the PayPal button appears as a selectable payment method during online order checkout. When users select PayPal, they are directed to complete their payment directly through PayPal and are then returned to the online storefront to complete their order. PayPal cart checkout lets customers use their payment account information to prefill the checkout form, so that they can complete the checkout process more quickly.
 

@@ -1,6 +1,6 @@
 ---
 title: Inventory Visibility Add-in overview
-description: This topic explains what Inventory Visibility is and describes its features.
+description: This article explains what Inventory Visibility is and describes its features.
 author: yufeihuang
 ms.date: 03/18/2022
 ms.topic: overview
@@ -56,9 +56,9 @@ Visibility into your near-future projected inventory (including supply, demand, 
 
 The ATP feature is easy to adopt into your daily order fulfillment process. Most importantly, like other Inventory Visibility offerings, the ATP feature is *global and real-time*. Therefore, you can set up multiple ATP calculation formulas to have full inventory availability queries that cover all your business channels and data sources. For more information, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
 
-### Compatibility with advanced warehouse management items
+### Compatibility with warehouse management processes (WMS) items
 
-Microsoft aims to provide out-of-box integration with advanced warehouse management (WHS), so that WHS customers can also enjoy the benefits of the Inventory Visibility service. Per the 2022 Wave 1 release (public preview in March), inventory service supports WHS item on-hand queries and ATP. The soft reservation and allocation feature will be supported for WHS customers in next wave. For more information, see [Inventory Visibility support for WHS items](inventory-visibility-whs-support.md).
+Microsoft aims to provide out-of-box integration with warehouse management processes (WMS), so that WMS customers can also enjoy the benefits of the Inventory Visibility service. Per the 2022 Wave 1 release (public preview in March), inventory service supports WMS item on-hand queries and ATP. The soft reservation and allocation feature will be supported for WMS customers in next wave. For more information, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md).
 
 ## Licensing
 

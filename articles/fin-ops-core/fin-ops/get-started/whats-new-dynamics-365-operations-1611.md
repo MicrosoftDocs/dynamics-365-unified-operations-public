@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Operations version 1611 (November 2016)
-description: This topic describes features that are either new or changed in Dynamics 365 for Operations version 1611.
+description: This article describes features that are either new or changed in Dynamics 365 for Operations version 1611.
 author: sericks007
 ms.date: 10/15/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Operations version 1611.
+This article describes features that are either new or changed in Dynamics 365 for Operations version 1611.
 
 ## Cost accounting
 
@@ -823,7 +823,7 @@ Currently, Retail Modern POS is available only as a Windows 8.1 application for 
 | Adjust vendor-owned inventory by using a counting journal. | It's important that you keep the system on-hand inventory in sync with the actual physical inventory. The vendor-owned inventory can be adjusted in and out by using counting processes such as quantity adjustment and counting journal processes. |
 | Find out more about consignment support in Dynamics 365 for Operations | For more information about the support for consignment processes, see [Consignment](../../../supply-chain/inventory/consignment.md), [Setting up consignment](/d365F-O/fin-ops-core/fin-ops/get-started/consignment), [Create a consignment replenishment order (Task guide)](../../../supply-chain/inventory/tasks/create-consignment-replenishment-order.md), and [Change the ownership of consignment inventory based on production demand (Task guide)](../../../supply-chain/inventory/tasks/change-ownership-consignment.md). |
 
-### Vendor collaboration (previously known as the Vendor portal)
+### Vendor collaboration
 
 | What you can do | Why this is important |
 |-----------------|-----------------------|
@@ -947,7 +947,7 @@ Currently, Retail Modern POS is available only as a Windows 8.1 application for 
 
 ## Additional resources
 
-[What's new or changed in Finance and Operations home page](whats-new-changed.md)
+[What's new or changed in finance and operations home page](whats-new-changed.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

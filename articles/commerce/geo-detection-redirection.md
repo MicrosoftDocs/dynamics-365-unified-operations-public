@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up geo detection and redirection
-description: This topic explains how to set up geo detection and redirection for your e-commerce site in Microsoft Dynamics 365 Commerce.
+description: This article explains how to set up geo detection and redirection for your e-commerce site in Microsoft Dynamics 365 Commerce.
 author: stuharg
 ms.date: 04/06/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.search.validFrom:
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up geo detection and redirection for your e-commerce site in Microsoft Dynamics 365 Commerce.
+This article explains how to set up geo detection and redirection for your e-commerce site in Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce lets you create shopping and purchasing experiences that are tailored to specific countries or regions. For example, you can define products, assortments, categories, pricing, fulfillment, and other aspects of the e-commerce experience for specific countries or regions. 
 

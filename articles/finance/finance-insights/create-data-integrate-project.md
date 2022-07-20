@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a data integration project
-description: This topic explains how to create a data integration project.
+description: This article explains how to create a data integration project.
 author: ShivamPandey-msft
 ms.date: 05/06/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to create a data integration project.
+This article explains how to create a data integration project.
 
 1. Sign in to Microsoft Dynamics 365 Finance.
 2. Go to **Workspaces \> Data management**, and select **Data entities**. Wait until all the data entities have been refreshed before you move on to the next step.

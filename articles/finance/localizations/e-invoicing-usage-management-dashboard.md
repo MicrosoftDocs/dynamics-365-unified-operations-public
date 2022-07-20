@@ -2,7 +2,7 @@
 # required metadata
 
 title: Usage management dashboard
-description: This topic explains how to use the Usage management dashboard to monitor usage of the Electronic Invoicing service and remain compliant.
+description: This article explains how to use the Usage management dashboard to monitor usage of the Electronic Invoicing service and remain compliant.
 author: gionoder
 ms.date: 06/02/2021
 ms.topic: article

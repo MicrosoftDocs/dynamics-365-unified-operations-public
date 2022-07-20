@@ -2,7 +2,7 @@
 # required metadata
 
 title: Planned maintenance window FAQ
-description: This topic provides answers to frequently asked questions about the Microsoft planned maintenance windows.
+description: This article provides answers to frequently asked questions about the Microsoft planned maintenance windows.
 author: angelmarshall
 ms.date: 02/25/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 > [!IMPORTANT]
-> This topic is applicable to Infrastructure-as-a-Service (IaaS) environments and will be removed soon. For up-to-date information, see [Planned maintenance in self-service environments FAQ](../deployment/plannedmaintenance-selfservice.md).
+> This article is applicable to Infrastructure-as-a-Service (IaaS) environments and will be removed soon. For up-to-date information, see [Planned maintenance in self-service environments FAQ](../deployment/plannedmaintenance-selfservice.md).
 
 ### What is a planned maintenance window?
 A planned maintenance window is the timeframe that Microsoft has scheduled to apply infrastructure or [service updates](../../fin-ops/get-started/one-version.md) to your cloud service.

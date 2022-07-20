@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Debug data sources of an executed ER format to analyze data flow and transformation
-description: This topic explains how you can debug the data sources of an executed ER format to better understand the configured data flow and transformation.
+description: This article explains how you can debug the data sources of an executed ER format to better understand the configured data flow and transformation.
 author: NickSelin
 ms.date: 04/22/2020
 ms.topic: article
@@ -38,7 +38,7 @@ Sometimes, the data of the generated output looks different than the same data i
 
 To turn on the data source debugging feature, set the **Enable data debugging at format run** option to **Yes** in the ER user parameters. You can then start data source debugging while you run an ER format to generate outbound documents. You can also use the **Start debugging** option to initiate data source debugging for an ER format that is configured in the [ER Operation designer](./tasks/er-format-configuration-2016-11.md#design-the-format-of-an-electronic-document).
 
-This topic provides guidelines for initiating data source debugging for executed ER formats. It explains how the information can help you understand the data flow and data transformations. The examples in this topic use the business process for vendor payments processing.
+This article provides guidelines for initiating data source debugging for executed ER formats. It explains how the information can help you understand the data flow and data transformations. The examples in this article use the business process for vendor payments processing.
 
 ## Limitations
 
@@ -53,7 +53,7 @@ The following settings of ER formats aren't currently accessible for data source
 
 ## Prerequisites
 
-- To complete the examples in this topic, you must have the access to one of the following [roles](../sysadmin/tasks/assign-users-security-roles.md):
+- To complete the examples in this article, you must have the access to one of the following [roles](../sysadmin/tasks/assign-users-security-roles.md):
 
     - Electronic reporting developer
     - Electronic reporting functional consultant
@@ -61,12 +61,12 @@ The following settings of ER formats aren't currently accessible for data source
 
 - The company must be set to **DEMF**.
 
-- Follow the steps in [Appendix 1](#appendix1) of this topic to download the components of the Microsoft ER solution that are required to process vendor payments.
-- Follow the steps in [Appendix 2](#appendix2) of this topic to prepare Accounts payable for vendor payment processing by using the ER solution that you will download.
+- Follow the steps in [Appendix 1](#appendix1) of this article to download the components of the Microsoft ER solution that are required to process vendor payments.
+- Follow the steps in [Appendix 2](#appendix2) of this article to prepare Accounts payable for vendor payment processing by using the ER solution that you will download.
 
 ## Process a vendor payment to get a payment file
 
-1. Follow the steps in [Appendix 3](#appendix3) of this topic to process vendor payments.
+1. Follow the steps in [Appendix 3](#appendix3) of this article to process vendor payments.
 
     ![Vendor payment processing in progress.](./media/er-data-debugger-process-payment.png)
 
@@ -93,7 +93,7 @@ The following settings of ER formats aren't currently accessible for data source
 
 ## Process a vendor payment for debugging
 
-1. Follow the steps in [Appendix 3](#appendix3) of this topic to process vendor payments.
+1. Follow the steps in [Appendix 3](#appendix3) of this article to process vendor payments.
 2. In the message box, select **Yes** to confirm that you want to interrupt vendor payment processing and instead start data source debugging on the **Debug Datasources** page.
 
     ![Confirmation message box.](./media/er-data-debugger-start-debugging.png)

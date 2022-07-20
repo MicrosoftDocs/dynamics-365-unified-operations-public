@@ -2,7 +2,7 @@
 # required metadata
 
 title: Subscribe module
-description: This topic covers subscribe modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This article covers subscribe modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 05/18/2022
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.8
 
 [!include [banner](includes/banner.md)]
 
-This topic covers subscribe modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers subscribe modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 Subscribe modules can be used on site pages to capture customer information for newsletters or promotions.
 

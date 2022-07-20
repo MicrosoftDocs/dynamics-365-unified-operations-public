@@ -2,9 +2,9 @@
 # required metadata
 
 title: Removed or deprecated platform features
-description: This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
+description: This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: sericks007
-ms.date: 04/26/2022
+ms.date: 05/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,14 +29,41 @@ ms.dyn365.ops.version: Platform update 33
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
+This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
-Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
+
+
+## Feature deprecation effective June 2022
+
+### Finance and operations (Dynamics 365) mobile application and mobile platform 
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We are deprecating the finance and operations (Dynamics 365) mobile application and platform to consolidate to a single mobile platform, which is Power Apps. |
+| **Replaced by another feature?**   | Yes, mobile experiences over finance and operations app data can be built with Power Platform integration. See the [blog post](https://cloudblogs.microsoft.com/dynamics365/it/2022/06/03/finance-and-operations-dynamics-365-mobile-app-to-be-deprecated/) and [Building mobile experiences](../power-platform/build-mobile-experiences.md) for more details. |
+| **Product areas affected**         | Finance and operations apps |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. End of support date is targeted for October 2024. |
+
+
+## Platform updates for version 10.0.29 of finance and operations apps
+
+### Panorama tab style
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | Horizontally-scrolling pages align to out-dated layout patterns which has known usability and accessibility issues.  |
+| **Replaced by another feature?**   | No, but other tab styles are still available. |
+| **Product areas affected**         | Web client |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated. |
+
 
 ## Feature deprecation effective April 2022
 
@@ -46,7 +73,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 |------------|--------------------|
 | **Reason for deprecation/removal** | We are removing support for XML URL resolution since this has been identified as a potential security vulnerability. This means that external resources associated with XML files will no longer be resolved.  |
 | **Replaced by another feature?**   | No. |
-| **Product areas affected**         | Finance and Operations apps |
+| **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. |
 
@@ -56,9 +83,9 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The support for XSLT scripting in Data management is deprecated to improve security and data protection within Finance and Operations apps.  |
+| **Reason for deprecation/removal** | The support for XSLT scripting in Data management is deprecated to improve security and data protection within finance and operations apps.  |
 | **Replaced by another feature?**   | No. Customers and ISVs should consider reimplementing their solutions based on X++ language, in place of XSLT scripting. |
-| **Product areas affected**         | Finance and Operations apps |
+| **Product areas affected**         | Finance and operations apps |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated <br><br>**Exception:** Customers who are currently using XLST scripting. They can continue to use it until they update to version 10.0.30 or later. For earlier versions, the exception will expire effective January 31, 2023. Customers with this exception have received a notification in the Message center available in the Microsoft 365 Admin Center. |
 
@@ -97,7 +124,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | Deprecated  |
 
-## Platform updates for version 10.0.23 of Finance and Operations apps
+## Platform updates for version 10.0.23 of finance and operations apps
 
 ### OnDBSynchronize event
 
@@ -120,7 +147,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Deployment option**              | All |
 | **Status**                         | Deprecated. Planned removal date is April 2023. |
 
-## Platform updates for version 10.0.21 of Finance and Operations apps
+## Platform updates for version 10.0.21 of finance and operations apps
 
 ### Skype for Business Online support
 
@@ -175,12 +202,12 @@ Detailed information about objects in Finance and Operations apps can be found i
 |------------|--------------------|
 | **Reason for deprecation/removal** | In order to reduce the overhead of operating, monitoring, and maintaining the index management by customers, this feature has been removed. |
 | **Replaced by another feature?**   | Going forward, the index maintenance will be performed by Microsoft services. This will happen continuously without affecting the user workloads. |
-| **Product areas affected**         | Finance and Operations apps|
+| **Product areas affected**         | Finance and operations apps|
 | **Deployment option**              | Cloud deployment - affects Microsoft-managed production environments and Tier 2 through Tier 5 sandbox environments. |
 | **Status**                         | This feature is removed. |
 
 
-## Platform updates for version 10.0.17 of Finance and Operations apps
+## Platform updates for version 10.0.17 of finance and operations apps
 
 
 ### Visual Studio 2015
@@ -207,7 +234,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The metadata artifacts associated with Dynamics AX 2012 Enterprise Portal (EP) have been deprecated, as EP was never supported in the Finance and Operations apps. |
+| **Reason for deprecation/removal** | The metadata artifacts associated with Dynamics AX 2012 Enterprise Portal (EP) have been deprecated, as EP was never supported in the finance and operations apps. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Web client |
 | **Deployment option**              | All |
@@ -225,7 +252,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Deployment option**              | All|
 | **Status**                         | Deprecated: Internet Explorer 11 won’t be supported after August 2021.|
 
-## Platform updates for version 10.0.15 of Finance and Operations apps
+## Platform updates for version 10.0.15 of finance and operations apps
 
 ### Visual Studio add-in to apply metadata hotfixes
 
@@ -238,7 +265,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Status**                         | With version 10.0.15, the add-in is no longer included in the Visual Studio tools. |
 
 
-## Platform updates for version 10.0.14 of Finance and Operations apps
+## Platform updates for version 10.0.14 of finance and operations apps
 
 ### Online users page 
 
@@ -251,7 +278,7 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Status**                         | By October 2021 this form will be removed.   |
 
 
-## Platform updates for version 10.0.13 of Finance and Operations apps
+## Platform updates for version 10.0.13 of finance and operations apps
 
 
 ### Custom code defined in SSRS report properties 
@@ -295,19 +322,19 @@ Detailed information about objects in Finance and Operations apps can be found i
 | **Status**                         | In version 10.0.13/Platform update 37, the saved views feature is generally available, and customers can optionally turn on this feature. The saved views feature will become mandatory in the October 2021 release. |
 
 
-## Platform updates for version 10.0.12 of Finance and Operations apps
+## Platform updates for version 10.0.12 of finance and operations apps
 
 ### Grid or group control form extensions containing invalid field references
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The data group property on grid or group controls is used to automatically show all the fields of a field group. A grid or group control added by extension could contain fields that are no longer defined on the field group, or it might be missing fields that are defined on the field group. This can cause inconsistent behavior at runtime. Platform updates for version 10.0.12 of Finance and Operations apps now categorize this issue as a compiler *warning*. To fix this issue, open the form extension and save it.
+| **Reason for deprecation/removal** | The data group property on grid or group controls is used to automatically show all the fields of a field group. A grid or group control added by extension could contain fields that are no longer defined on the field group, or it might be missing fields that are defined on the field group. This can cause inconsistent behavior at runtime. Platform updates for version 10.0.12 of finance and operations apps now categorize this issue as a compiler *warning*. To fix this issue, open the form extension and save it.
 | **Replaced by another feature?**   | This compiler warning will be replaced with a compiler error in a future update. |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | A compiler warning is introduced in platform updates for version 10.0.12 of Finance and Operations apps. |
+| **Status**                         | A compiler warning is introduced in platform updates for version 10.0.12 of finance and operations apps. |
 
-## Platform updates for version 10.0.11 of Finance and Operations apps
+## Platform updates for version 10.0.11 of finance and operations apps
 
 ### Explicit safe lists for self-service environments
 
@@ -333,11 +360,11 @@ Detailed information about objects in Finance and Operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Field groups in table metadata definitions can contain field references that aren't valid. If these field groups are deployed, they can cause runtime failures in Financial Reporting and Microsoft SQL Server Reporting Services (SSRS). Platform update 23 introduced a compiler *warning* that enabled this metadata issue to be addressed. Platform updates for version 10.0.11 of Finance and Operations apps categorize this issue as a compiler *error*.<p>To fix this issue, follow these steps.</p><ol><li>Remove the invalid field reference from the table field group definition.</li><li>Recompile.</li><li>Make sure that any errors are addressed.</li></ol> |
+| **Reason for deprecation/removal** | Field groups in table metadata definitions can contain field references that aren't valid. If these field groups are deployed, they can cause runtime failures in Financial Reporting and Microsoft SQL Server Reporting Services (SSRS). Platform update 23 introduced a compiler *warning* that enabled this metadata issue to be addressed. Platform updates for version 10.0.11 of finance and operations apps categorize this issue as a compiler *error*.<p>To fix this issue, follow these steps.</p><ol><li>Remove the invalid field reference from the table field group definition.</li><li>Recompile.</li><li>Make sure that any errors are addressed.</li></ol> |
 | **Replaced by another feature?**   | This compiler error permanently replaces the compiler warning.  |
 | **Product areas affected**         | Visual Studio development tools |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: The compiler warning is a compiler error in platform updates for version 10.0.11 of Finance and Operations apps. |
+| **Status**                         | Deprecated: The compiler warning is a compiler error in platform updates for version 10.0.11 of finance and operations apps. |
 
 ### ISV licenses created by using the SHA1 hashing algorithm
 
@@ -377,3 +404,4 @@ To learn more about features that have been removed or deprecated in previous re
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

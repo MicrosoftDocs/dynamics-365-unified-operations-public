@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Operations platform update 5 (March 2017)
-description: This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 5. This version was released in March 2017 and has a build number of 7.0.4475.16165.
+description: This article describes features that are either new or changed in Dynamics 365 for Operations platform update 5. This version was released in March 2017 and has a build number of 7.0.4475.16165.
 author: tonyafehr
 ms.date: 04/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.search.validFrom: 2017-03-31
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 5. This version was released in March 2017 and has a build number of 7.0.4475.16165.
+This article describes features that are either new or changed in Dynamics 365 for Operations platform update 5. This version was released in March 2017 and has a build number of 7.0.4475.16165.
 
 ## Development and customization
 

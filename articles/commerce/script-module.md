@@ -2,7 +2,7 @@
 # required metadata
 
 title: External and inline script modules
-description: This topic covers external and inline script modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
+description: This article covers external and inline script modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 05/18/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic covers external and inline script modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
+This article covers external and inline script modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
 
 External and inline script modules let you add client-side JavaScript scripts to site pages. The scripts can be inline, or they can be called from an external file. External and inline script modules can be added to a template's **HTML Head**, **Body Begin**, or **Body End** slot.
 

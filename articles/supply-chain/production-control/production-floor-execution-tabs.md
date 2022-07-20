@@ -2,7 +2,7 @@
 # required metadata
 
 title: Design the production floor execution interface
-description: This topic describes how to design the content of the user interface for each configuration.
+description: This article describes how to design the content of the user interface for each configuration.
 author: johanhoffmann
 ms.date: 12/01/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho

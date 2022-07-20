@@ -1,6 +1,6 @@
 ---
 title: Select statement
-description: This topic describes the select statement in the X++ language.
+description: This article describes the select statement in the X++ language.
 author: tonyafehr
 ms.date: 08/27/2021
 audience: Developer
