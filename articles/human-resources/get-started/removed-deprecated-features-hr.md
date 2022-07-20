@@ -25,7 +25,7 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
-# Removed or deprecated features in Dynamics 365 Finance
+# Removed or deprecated features in Dynamics 365 Human resources
 
 [!include [banner](../includes/banner.md)]
 
