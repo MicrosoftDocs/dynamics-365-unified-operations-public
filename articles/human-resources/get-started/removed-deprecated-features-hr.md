@@ -1,4 +1,5 @@
 ---
+
 # required metadata
 
 title: Removed or deprecated features in Dynamics 365 Human resources
