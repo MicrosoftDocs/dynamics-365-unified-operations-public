@@ -1,5 +1,4 @@
 ---
-
 # required metadata
 
 title: Removed or deprecated features in Dynamics 365 Human resources
@@ -12,14 +11,12 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: HcmJob, HcmPosition, OMOperatingUnit, HcmPersonnelManagementWorkspace
+ms.search.form:
 # ROBOTS: 
-audience: Application User
+audience: Application User, Developer, IT Pro
 # ms.devlang: 
-
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
-ms.custom: 87933
-ms.assetid: eb5dcacb-a5fe-451d-b30a-7ef14da65d81
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: twheeloc
@@ -42,6 +39,8 @@ This list is intended to help you consider these removals and deprecations for y
 ## Features removed or deprecated in the Human resources release
 
 ### New LCS project creation on the stand-alone Human resources infrastructure 
+
+[Provision Human resources](hr-admin-setup-provision.md)
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
