@@ -46,7 +46,7 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |----|----|----|----|
 |Tax calculation    |Integration with periodical journal    |[Tax Calculation integration with finance and operations apps](../localizations/global-tax-calcuation-service-overview.md)    |Parameter    |
-|Globalization    |(Russia) Import addresses from the State Address Register (GAR)    |Starting in 10.0.29, address import is available in a new State Address Register (GAR) format: Import from GAR. For more informatino, see [Import from State Address Register (GAR)](https://docs.microsoft.com/en-us/dynamics365/finance/localizations/rus-russian-address-format-import-from-GAR)    |Feature management    |
+|Globalization    |(Russia) Import addresses from the State Address Register (GAR)    |Starting in 10.0.29, address import is available in a new State Address Register (GAR) format: Import from GAR. For more informatino, see [Import from State Address Register (GAR)](https://go.microsoft.com/fwlink/?linkid=2200866)    |Feature management    |
 |    |    |    |    |
 
 
