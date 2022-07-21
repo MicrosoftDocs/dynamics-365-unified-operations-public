@@ -42,8 +42,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** |Replaced with project creation on the finance and operations infrastructure. To learn more about the infrastructure merge, see 
-[Dynamics 365 Human resource infrastructure merge FAQ](/hr-infrastructure-merge-faq).|
+| **Reason for deprecation/removal** |Replaced with project creation on the finance and operations infrastructure. To learn more about the infrastructure merge, see [Dynamics 365 Human resource infrastructure merge FAQ](/hr-infrastructure-merge-faq).|
 | **Replaced by another feature?**   |  Yes|
 | **Product areas affected**         |Application |
 | **Deployment option**              | All  |
@@ -53,8 +52,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** |Replaced with environment provision on the finance and operations infrastructure. To learn more about the infrastructure merge, 
-see [Dynamics 365 Human resource infrastructure merge FAQ](/hr-infrastructure-merge-faq.md).|
+| **Reason for deprecation/removal** |Replaced with environment provision on the finance and operations infrastructure. To learn more about the infrastructure merge, see [Dynamics 365 Human resource infrastructure merge FAQ](/hr-infrastructure-merge-faq.md).|
 | **Replaced by another feature?**   |  Yes|
 | **Product areas affected**         |Application |
 | **Deployment option**              | All  |
