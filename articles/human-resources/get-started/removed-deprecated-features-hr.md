@@ -38,7 +38,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 ### New LCS project creation on the stand-alone Human resources infrastructure 
 
-[Provision Human resources](hr-admin-setup-provision.md)
+[Provision Human resources](/hr-admin-setup-provision)
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
