@@ -8,7 +8,7 @@ ms.search.form: SalesAvailableDlvDates, SalesTable, CustParameters, InventItemOr
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: XXXX
+ms.author: benebotg
 ms.search.validFrom: 2022-07-20
 ms.dyn365.ops.version: 10.0.28
 ---
