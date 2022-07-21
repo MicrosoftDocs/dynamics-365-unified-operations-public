@@ -47,6 +47,7 @@ The following table lists the features that are included in this release. We mig
 |----|----|----|----|
 |Tax calculation    |Integration with periodical journal    |[Tax Calculation integration with finance and operations apps](../localizations/global-tax-calcuation-service-overview.md)    |Parameter    |
 |Globalization    |(Russia) Import addresses from the State Address Register (GAR)    |Starting in 10.0.29, address import is available in a new State Address Register (GAR) format: Import from GAR. For more informatino, see [Import from State Address Register (GAR)](https://go.microsoft.com/fwlink/?linkid=2200866)    |Feature management    |
+|Globalization    | Global withholding tax |Starting in 10.0.29, global withholding tax currency exchange rate type and calculation date type can be specified for foreign currency transactions. For more information, see [Global withholding tax - Setup foreign exchange rate type for withholding tax currency](https://go.microsoft.com/fwlink/?linkid=2197949)    |Feature management    |
 |    |    |    |    |
 
 
