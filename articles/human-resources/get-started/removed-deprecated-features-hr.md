@@ -34,9 +34,9 @@ This article describes features that have been removed, or that are planned for 
 
 This list is intended to help you consider these removals and deprecations for your own planning.
 
-## Features removed or deprecated in the Human resources release
+## Features removed or deprecated in Human resources 
 
-### New LCS project creation on the stand-alone Human resources infrastructure
+### New LCS project creation in Human resources (stand-alone) 
 
 [Provision Human resources](/hr-admin-setup-provision)
 
@@ -46,9 +46,9 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: As of July 2022, we no longer support creating new projects on the stand-alone Human resources infrastructure. |
+| **Status**                         | Deprecated: As of July 2022, we no longer support creating new projects in Human resources (stand-alone). |
 
-### Production environment provisioning on the stand-alone Human resources infrastructure
+### Production environment provisioning on Human resources (stand-alone) infrastructure
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
@@ -56,4 +56,4 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: As of July 2022, we no longer support provisioning HR production environments on the stand-alone Human resources infrastructure. |
+| **Status**                         | Deprecated: As of July 2022, we no longer support provisioning HR production environments on Human resources (stand-alone). |
