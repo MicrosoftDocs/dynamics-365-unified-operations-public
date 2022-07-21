@@ -66,10 +66,10 @@ Commerce Scale Unit is available for deployment in the following regions.
 | APAC            | East Asia           | Limited capacity    |                           |
 | APAC            | India South         | Capacity restricted | No deployments allowed    |
 | APAC            | India Central       | Limited capacity    | Requires approval process |
-| EMEA            | West Europe         | Generally available |                           |
-| EMEA            | North Europe        | Generally available |                           |
-| EMEA            | UK South            | Limited capacity    |                           |
-| EMEA            | UK West             | Limited capacity    |                           |
+| EMEA            | West Europe         | Limited capacity    | Not available in LCS at this time |
+| EMEA            | North Europe        | Limited capacity    | Not available in LCS at this time |
+| EMEA            | UK South            | Generally available |                           |
+| EMEA            | UK West             | Generally available |                           |
 | Switzerland     | Switzerland North   | Limited capacity    | Requires approval process |
 | UAE             | UAE North           | Limited capacity    | Requires approval process |
 
