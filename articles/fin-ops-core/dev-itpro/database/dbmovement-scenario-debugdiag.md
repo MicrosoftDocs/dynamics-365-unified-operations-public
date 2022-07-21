@@ -79,6 +79,8 @@ Update these configurations so that they use the values from the environment det
 <add key="DataAccess.DbServer" value="<example_axdb_server.database.windows.net>" />
 <add key="DataAccess.SqlPwd" value="<axdbadmin_password_from_LCS>" />
 <add key="DataAccess.SqlUser" value="axdbadmin" />
+<add key="DataAccess.AxAdminSqlPwd" value="<axdbadmin_password_from_LCS>" />
+<add key="DataAccess.AxAdminSqlUser" value="axdbadmin" />
 ```
 Save the file. If you're operating in a cloud-hosted environment, run IISRESET. If you're on a Microsoft-managed developer machine and have limited permissions, make sure that Microsoft Visual Studio is closed.
 
@@ -99,6 +101,6 @@ Here are some common best practices that will help guarantee that your debugging
 - Make sure that the version of the code and binaries in the DevTest environment exactly match the version in the UAT environment. Connect the DevTest environment to the same branch that you build packages for deployment from. Alternatively, connect it to a "HotfixSupport" branch that is kept up to date with the latest customizations that are released.
 - Don't run a database synchronization from Visual Studio. Otherwise, you will affect the availability of the schema in the UAT database and might affect users in the UAT environment.
 - For the best experience, use a developer environment that was deployed in the same datacenter as the UAT environment.
-
+- Make sure that during editing/copying of the web.conifg file, you are not adding duplicate tags for SqlUser, SqlPwd. 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
