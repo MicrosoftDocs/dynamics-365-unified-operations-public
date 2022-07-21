@@ -27,8 +27,6 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Removed or deprecated features in Dynamics 365 Human resources
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
-
 This article describes features that have been removed, or that are planned for removal from Dynamics 365 Human resources.
 
 - A *removed* feature is no longer available in the product.
@@ -45,7 +43,7 @@ This list is intended to help you consider these removals and deprecations for y
 | &nbsp; | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** |Replaced with project creation on the finance and operations infrastructure. To learn more about the infrastructure merge, see 
-[Dynamics 365 Human resource infrastructure merge FAQ](/hr-infrastructure-merge-faq.md).|
+[Dynamics 365 Human resource infrastructure merge FAQ](/hr-infrastructure-merge-faq).|
 | **Replaced by another feature?**   |  Yes|
 | **Product areas affected**         |Application |
 | **Deployment option**              | All  |
