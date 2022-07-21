@@ -48,7 +48,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: As of July 2022, we no longer support creating new projects in Human resources (stand-alone). |
 
-### Production environment provisioning on Human resources (stand-alone) infrastructure
+### Production environment provisioning on Human resources (stand-alone) 
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
