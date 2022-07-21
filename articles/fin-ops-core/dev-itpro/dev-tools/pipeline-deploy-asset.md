@@ -2,7 +2,7 @@
 title: Deploy assets by using Azure Pipelines
 description: This article explains how you can deploy assets from the Asset library in Microsoft Dynamics Lifecycle Services (LCS) by using pipelines in Azure DevOps.
 author: jorisdg
-ms.date: 07/13/2022
+ms.date: 07/21/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -32,7 +32,7 @@ This article assumes that you have a working knowledge of [Azure Pipelines](/azu
 
 ## Dynamics 365 for Finance + Operations (on-premises) package deployment
 
-Starting with version 0.220713.x of the **Dynamics 365 finance and operations tools** extension, it is possible to deploy packages to local business data environments on-premises. You should use at least version 3.\* of the  **Dynamics Lifecycle Services (LCS) Asset Deployment** task. You will then be able to select **Software deployable package for on-premises environments** under the **Type of asset** field.
+Starting with version 0.2.1239020 of the **Dynamics 365 finance and operations tools** extension, it is possible to deploy packages to local business data environments on-premises. You should use at least version 3.\* of the  **Dynamics Lifecycle Services (LCS) Asset Deployment** task. You will then be able to select **Software deployable package for on-premises environments** under the **Type of asset** field.
 
 > [!NOTE]
 > As with cloud environments, it is not possible to use this task to deploy to production environments.
