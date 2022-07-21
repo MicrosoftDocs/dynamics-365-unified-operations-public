@@ -66,7 +66,9 @@ The following table lists the feature enhancements that are included in this rel
 |Budget Control|Budget control document filtering enhancement|This feature provides a query-based filter option for each document that is included in budget control, so that you can specify which budget control documents are budget checked. This release adds the ability for journals to be filtered by a user defined query extending this feature from the prior release.|
 |Budget Control|Budget control data maintenance - journal reprocessing|This enhancement to budget control data maintenance allows for reprocessing of budget data for journal documents|
 |General Ledger|Default journal sorting direction|This enhancement to journals allows for selecting the journal list to have the default sorting set to either ascending or descending by journal batch number. The sorting direction is set in the general ledger parameters.|
+|Globalization |Indonesian Commercial invocie and tax invoices  |Commercial invoice can be issued in foreign currency, while tax invoice (which is a file created as a subset of data in the commercial invoice) must always be in local currency. Commercial invoice can have separate numbering, different from the numbering of e-invoices, mandated by the authorities. |
 | | | |
+
 
 ## Additional resources
 
