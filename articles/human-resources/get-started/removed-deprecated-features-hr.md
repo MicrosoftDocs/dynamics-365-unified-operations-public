@@ -2,7 +2,7 @@
 # required metadata
 
 title: Removed or deprecated features in Dynamics 365 Human resources
-description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Human resources. 
+description: This article describes features that have been removed, or that are planned for removal from Microsoft Dynamics 365 Human resources. 
 author: twheeloc
 ms.date: 07/20/2022
 ms.topic: article
@@ -27,46 +27,33 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 # Removed or deprecated features in Dynamics 365 Human resources
 
-This article describes features that have been removed, or that are planned for removal from Dynamics 365 Human resources.
+This article describes features that have been removed, or that are planned for removal from Microsoft Dynamics 365 Human resources.
 
 - A *removed* feature is no longer available in the product.
-- A *deprecated* feature is not in active development and may be removed in a future update.
+- A *deprecated* feature isn't in active development and might be removed in a future update.
 
-This list is intended to help you consider these removals and deprecations for your own planning. 
+This list is intended to help you consider these removals and deprecations for your own planning.
 
 ## Features removed or deprecated in the Human resources release
 
-### New LCS project creation on the stand-alone Human resources infrastructure 
+### New LCS project creation on the stand-alone Human resources infrastructure
 
 [Provision Human resources](/hr-admin-setup-provision)
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** |Replaced with project creation on the finance and operations infrastructure. To learn more about the infrastructure merge, see [Dynamics 365 Human resource infrastructure merge FAQ](/hr-infrastructure-merge-faq).|
-| **Replaced by another feature?**   |  Yes|
-| **Product areas affected**         |Application |
-| **Deployment option**              | All  |
-| **Status**                         | Deprecated: By July 2022, we no longer support new project creation on the stand-alone Human resources.|
+| **Reason for deprecation/removal** | Replaced with project creation on the finance and operations infrastructure. To learn more about the infrastructure merge, see [Dynamics 365 Human resource infrastructure merge FAQ](/hr-infrastructure-merge-faq). |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: As of July 2022, we no longer support creating new projects on the stand-alone Human resources infrastructure. |
 
-### Provision production environment on the stand-alone Human resources infrastructure 
+### Production environment provisioning on the stand-alone Human resources infrastructure
 
 | &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** |Replaced with environment provision on the finance and operations infrastructure. To learn more about the infrastructure merge, see [Dynamics 365 Human resource infrastructure merge FAQ](/hr-infrastructure-merge-faq.md).|
-| **Replaced by another feature?**   |  Yes|
-| **Product areas affected**         |Application |
-| **Deployment option**              | All  |
-| **Status**                         | Deprecated: By July 2022, we no longer support provisioning HR production environments on the stand-alone Human resources.|
-
-
-
-
-
-
-
-
-
-
-
-
-
+| **Reason for deprecation/removal** | Replaced with environment provisioning on the finance and operations infrastructure. To learn more about the infrastructure merge, see [Dynamics 365 Human resource infrastructure merge FAQ](/hr-infrastructure-merge-faq.md). |
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: As of July 2022, we no longer support provisioning HR production environments on the stand-alone Human resources infrastructure. |
