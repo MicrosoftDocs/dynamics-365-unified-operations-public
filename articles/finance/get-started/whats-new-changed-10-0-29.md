@@ -48,6 +48,9 @@ The following table lists the features that are included in this release. We mig
 |Tax calculation    |Integration with periodical journal    |[Tax Calculation integration with finance and operations apps](../localizations/global-tax-calcuation-service-overview.md)    |Parameter    |
 |Globalization    |(Russia) Import addresses from the State Address Register (GAR)    |Starting in 10.0.29, address import is available in a new State Address Register (GAR) format: Import from GAR. For more informatino, see [Import from State Address Register (GAR)](https://go.microsoft.com/fwlink/?linkid=2200866)    |Feature management    |
 |Globalization    | Global withholding tax |Starting in 10.0.29, global withholding tax currency exchange rate type and calculation date type can be specified for foreign currency transactions. For more information, see [Global withholding tax - Setup foreign exchange rate type for withholding tax currency](https://go.microsoft.com/fwlink/?linkid=2197949)    |Feature management    |
+|Globalization    |(Preview) Electronic Invoicing service – French e-invoice integration with Chorus Pro   | The configurable Electronic Invoicing service supports integration with French Chorus Pro and the automatic submission of electronic invoices in PEPPOL UBL Biz 3 format to the Chorus Pro Platform.   | Parameter   |
+|Globalization    |(Preview) Electronic Invoicing service – configurable Polish e-invoice and integration   | The Configurable Electronic Invoicing service supports generating and submitting electronic invoices in the format legally required by Polish authorities.   | Parameter   |
+|Globalization    |Electronic Invoicing service – Saudi Arabia e-invoice integration    | The configurable Electronic Invoicing supports submitting electronic invoices to Saudi Arabia tax authorities in the format legally required in Saudi Arabia.   | Parameter   |
 |    |    |    |    |
 
 
