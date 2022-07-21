@@ -71,6 +71,9 @@ On your Services drive, go to the **AoSService\\WebRoot** directory. (Typically,
 - DataAccess.DBServer
 - DataAccess.SqlPwd
 - DataAccess.SqlUser
+- DataAccess.AxAdminSqlUser
+- DataAccess.AxAdminSqlPwd
+- 
 
 Update these configurations so that they use the values from the environment details page for the UAT environment in LCS.
 
@@ -79,6 +82,8 @@ Update these configurations so that they use the values from the environment det
 <add key="DataAccess.DbServer" value="<example_axdb_server.database.windows.net>" />
 <add key="DataAccess.SqlPwd" value="<axdbadmin_password_from_LCS>" />
 <add key="DataAccess.SqlUser" value="axdbadmin" />
+<add key="DataAccess.AxAdminSqlPwd" value="<axdbadmin_password_from_LCS>" />
+<add key="DataAccess.AxAdminSqlUser" value="axdbadmin" />
 ```
 Save the file. If you're operating in a cloud-hosted environment, run IISRESET. If you're on a Microsoft-managed developer machine and have limited permissions, make sure that Microsoft Visual Studio is closed.
 
