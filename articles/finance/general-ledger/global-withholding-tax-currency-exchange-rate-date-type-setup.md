@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Global withholding tax currency exchange rate type and date type setup
+title: Enable global withholding tax currency exchange rate type and date type setup
 description: This article explains how to enable and setup global withholding tax currency exchange rate type and date type.
 author: kailiang
 ms.date: 07/12/2021
@@ -11,7 +11,7 @@ ms.technology:
 
 ---
 
-# Global withholding tax currency exchange rate type and date type setup
+# Enable global withholding tax currency exchange rate type and date type setup
 
 This article explains how to enable global withholding tax currency exchange rate type and date type setup. You can now specify a dedicated withholding tax currency exchange rate type and an exchange rate calculate date type to determine the foreign currency exchange rate used for withholding tax amount (in withholding tax currency) calculation in the payment transactions.
 
