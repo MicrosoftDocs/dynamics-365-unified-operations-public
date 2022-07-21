@@ -1101,7 +1101,9 @@
           - name: Verify page content accessibility
             href: verify-accessibility.md
           - name: Create dynamic e-commerce pages based on URL parameters
-            href: create-dynamic-pages.md            
+            href: create-dynamic-pages.md
+          - name: View version history to revert pages and fragments
+            href: version-history-revert.md
         - name: Site navigation
           items:
           - name: Customize site navigation
