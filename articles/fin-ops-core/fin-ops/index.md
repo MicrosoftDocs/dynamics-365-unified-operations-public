@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: DefaultDashboard
+ms.search.form: Default Dashboard
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
