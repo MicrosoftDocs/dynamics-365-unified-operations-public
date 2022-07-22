@@ -21,6 +21,7 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 ## July 2022 release 
 
 The July release of Dual-write GAB solution 3.5.1.6 contains the following bug fixes.
+
 | Feature | Description | Status |
 |---|---|---|
 | Bug fix |Update the Postal address table when an address is updated in Marketing portal|General availability |
