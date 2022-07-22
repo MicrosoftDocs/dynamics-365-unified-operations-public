@@ -33,12 +33,12 @@ In Microsoft Dynamics 365 Supply Chain Management, you can visually track how bu
     - **Critically low** – Less than half the minimum for the period.
     - **Low** – Between half the minimum and the minimum.
     - **Average on-hand** – Between the minimum and the minimum plus the green zone.
-    - **Higher than average**
+    - **Higher than average** – Higher than average.
 
     ![Historical on-hand levels on the On-hand tab.](media/ddmrp-on-hand-graph.png "Historical on-hand levels on the On-hand tab")
 
     > [!NOTE]
-    > The colors that are used on the **On-hand** tab represent different ranges than in the buffer.
+    > The colors that are used on the **On-hand** tab represent different ranges than the similar colors used on the **Buffer values** tab.
 
 1. To view how your buffer values changed over time, and how they compare to on-hand and net-flow levels, select the **Buffer values** tab.
 
@@ -54,8 +54,8 @@ The **Demand driven MRP** workspace provides several tools, together with key pe
 
 In addition to the **Demand driven MRP** workspace, Supply Chain Management provides several pages where you can view information about your DDMRP setup, decoupling points, and planned orders. Some of these pages also provide convenient buttons on the Action Pane that let you manage buffers, run master planning, and open other related views.
 
-- To view decoupling point status by net flow, go to **Master planning \> Master planning \> DDMRP \> Decoupling points status by net flow**.
-- To view decoupling point status by on-hand, go to **Master planning \> Master planning \> DDMRP \> Decoupling points status by on-hand**.
+- To view decoupling point status by net flow level, go to **Master planning \> Master planning \> DDMRP \> Decoupling points status by net flow**.
+- To view decoupling point status by on-hand inventory level, go to **Master planning \> Master planning \> DDMRP \> Decoupling points status by on-hand**.
 - To view planned orders for decoupling points, go to **Master planning \> Master planning \> DDMRP \> Planned orders for decoupling points**.
 - To view decoupled lead times, go to **Master planning \> Master planning \> DDMRP \> Decoupled lead time**.
 
