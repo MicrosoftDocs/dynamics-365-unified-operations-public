@@ -68,8 +68,6 @@ The default delivery date control method will be applied to all new order lines 
     - *CTP* – Use the CTP calculation provided by the built-in master planning engine. If you are using Planning Optimization, then the *CTP* delivery date control method isn't allowed and, if selected, will result in an error when the calculation runs.
     - *CTP for Planning Optimization* – Use the CTP calculation provided by Planning Optimization. This setting has no effect if you are using the built-in master planning engine.
 
-1. Make related order promising settings as needed, as described in [Order promising](../../sales-marketing/delivery-dates-available-promise-calculations.md).
-
 ### Set delivery date control overrides for individual products
 
 You can assign overrides for specific products where you want to use a delivery date control other than the one set as your global default. To do so, follow these steps:
@@ -80,7 +78,6 @@ You can assign overrides for specific products where you want to use a delivery 
 1. The **Default order settings page opens**. Expand the **Sales order** FastTab.
 1. Set **Override delivery control** to *Yes*.
 1. Set **Delivery date control** to the method you want to use for the selected product. The available settings are the same as those described in [Set the global default delivery date control](#global-default).
-1. Make related order promising settings for the selected product as needed, as described in [Order promising](../../sales-marketing/delivery-dates-available-promise-calculations.md).
 
 ## <a name="batch-job"></a>Schedule CTP for Planning Optimization calculations
 
