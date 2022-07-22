@@ -18,6 +18,26 @@ ms.dyn365.ops.version: 10.0.8
 
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
+## July 2022 release 
+
+The July release of Dual-write GAB solution 3.5.1.6 contains the following bug fixes.
+| Feature | Description | Status |
+|---|---|---|
+| Bug fix |Update the Postal address table when an address is updated in Marketing portal|General availability |
+| Bug fix |Fix the time zone conversion for addresses with a **Never** expiration date when date is passed from the customer engagement apps to finance and operations.|General availability |
+
+
+### Solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+| Party | Yes | 3.5.0.1 | 3.5.1.6|
+| Dynamics365GABExtended | Yes | 3.5.0.1 | 3.5.1.6 |
+| Dynamics365GABDualWriteEntityMaps | Yes | 3.5.0.1 | 3.5.1.6 |
+| Dynamics365GABPartyAnchor | Yes | 3.5.0.1 |3.5.1.6 |
+| Dynamics365GABPartyCommon | Yes | 3.5.0.1 | 3.5.1.6 |
+
+
 ## June 2022 release
 
 The June release of [Dual-write core solution 1.0.35.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following features and bug fixes.
