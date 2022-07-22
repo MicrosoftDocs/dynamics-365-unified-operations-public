@@ -20,7 +20,7 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 ## July 2022 release 
 
-The July release of Dual-write GAB solution 3.5.1.6 contains the following bug fixes.
+The July release of Dual-write Global Address Book solution 3.5.1.6 contains the following bug fixes.
 
 | Feature | Description | Status |
 |---|---|---|
