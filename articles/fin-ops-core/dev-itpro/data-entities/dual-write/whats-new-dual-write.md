@@ -24,7 +24,7 @@ The July release of Dual-write GAB solution 3.5.1.6 contains the following bug f
 
 | Feature | Description | Status |
 |---|---|---|
-| Bug fix |Update the Postal address table when an address is updated in Marketing portal|General availability |
+| Bug fix |Update the Postal address table when an address is updated in Marketing portal.|General availability |
 | Bug fix |Fix the time zone conversion for addresses with a **Never** expiration date when date is passed from the customer engagement apps to finance and operations.|General availability |
 
 
