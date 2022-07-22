@@ -1795,6 +1795,8 @@
           href: master-planning/planning-optimization/cancel-planning-job.md
         - name: Action messages
           href: master-planning/action-messages.md
+        - name: Calculate sales order delivery dates using CTP
+          href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
         - name: Troubleshoot Planning Optimization
           href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
         - name: Planning Optimization extensibility
@@ -2795,6 +2797,8 @@
         items:
         - name: Order promising
           href: sales-marketing/delivery-dates-available-promise-calculations.md
+        - name: Calculate sales order delivery dates using CTP
+          href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
         - name: Order entry deadlines
           href: sales-marketing/order-entry-deadlines.md
         - name: Delivery alternatives

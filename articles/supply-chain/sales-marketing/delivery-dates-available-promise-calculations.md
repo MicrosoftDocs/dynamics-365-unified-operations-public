@@ -33,20 +33,22 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article provides information about order promising. Order promising helps you reliably promise delivery dates to your customers and gives you flexibility so that you can meet those dates.
 
-Order promising calculates the earliest ship and receipt dates, and is based on the delivery date control method and transport days. You can select among four delivery date control methods:
+Order promising calculates the earliest ship and receipt dates, and is based on the delivery date control method and transport days. You can select among the following delivery date control methods:
 
--   **Sales lead time** – Sales lead time is the time between creation of the sales order and shipment of the items. The delivery date calculation is based on a default number of days, and does not consider stock availability, known demand, or planned supply.
--   **ATP (available-to-promise)** – ATP is the quantity of an item that is available and can be promised to a customer on a specific date. The ATP calculation includes uncommitted inventory, lead times, planned receipts, and issues.
--   **ATP + Issue margin** – The shipping date is equal to the ATP date plus the issue margin for the item. The issue margin is the time that is required to prepare the items for shipment.
--   **CTP (capable-to-promise)** – Availability is calculated through explosion.
+- **Sales lead time** – Sales lead time is the time between creation of the sales order and shipment of the items. The delivery date calculation is based on a default number of days, and does not consider stock availability, known demand, or planned supply.
+- **ATP (available-to-promise)** – ATP is the quantity of an item that is available and can be promised to a customer on a specific date. The ATP calculation includes uncommitted inventory, lead times, planned receipts, and issues.
+- **ATP + Issue margin** – The shipping date is equal to the ATP date plus the issue margin for the item. The issue margin is the time that is required to prepare the items for shipment.
+- **CTP (capable-to-promise)** – Availability is calculated through explosion.  If you are using Planning Optimization, then the *CTP* delivery date control method isn't allowed and, if selected, will result in an error when the calculation runs. For more information about how to set up and use CTP, see [Calculate sales order delivery dates using CTP](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md).
+- **CTP for Planning Optimization** – Use the CTP calculation provided by Planning Optimization. This setting has no effect if you are using the built-in master planning engine. For more information about how to set up and use CTP, see [Calculate sales order delivery dates using CTP](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md).
 
 > [!NOTE]
 > When a sales order is updated, the order promising information is only updated if the existing order promising date can't be fulfilled, as illustrated in the following examples:
-> 
+>
 > - **Example 1**: The current order promising date is July 20, but due to increased quantity, you won't be able to deliver until July 25. Because the current date can no longer be met, order promising is triggered.
-> -  **Example 2**: The current order promising date is July 20, but due to decreased quantity, it is now possible to deliver on July 15. However, because the current date can still be fulfilled, order promising is not triggered, and July 20 remains the order promising date.
+> - **Example 2**: The current order promising date is July 20, but due to decreased quantity, it is now possible to deliver on July 15. However, because the current date can still be fulfilled, order promising is not triggered, and July 20 remains the order promising date.
 
 ## ATP calculations
+
 The ATP quantity is calculated by using the “cumulative ATP with look-ahead” method. The main advantage of this ATP calculation method is that it can handle cases where the sum of issues among receipts is more than the latest receipt (for example, when a quantity from an earlier receipt must be used to meet a requirement). The “cumulative ATP with look-ahead” calculation method includes all issues until the cumulative quantity to receive exceeds the cumulative quantity to issue. Therefore, this ATP calculation method evaluates whether some of the quantity from an earlier period can be used in a later period.  
 
 The ATP quantity is the uncommitted inventory balance in the first period. Typically, it's calculated for each period in which a receipt is scheduled. The program calculates the ATP period in days and calculates the current date as the first date for the ATP quantity. In the first period, ATP includes on-hand inventory minus customer orders that are due and overdue.  
@@ -81,8 +83,14 @@ Because the delivery date control is method is ATP, the ATP data is calculated t
 
 Therefore, the ship date is set to 10 days from now, based on the ATP calculation. Therefore, you tell the customer that the requested quantity can be delivered 10 days from now.
 
+## CTP calculations
 
+Capable-to-promise (CTP) functionality allows you to provide customers with realistic dates for when you can promise specific goods. For each sales line, you can provide a date that takes account of existing on-hand inventory, production capacity, and transportation times.
 
+CTP extends available-to-promise (ATP) functionality by considering capacity information. Whereas ATP only considers material availability and assumes infinite capacity resources, CTP considers availability of both materials and capacity, which provides a more realistic picture of whether demand can be satisfied within a given time frame.
 
+CTP works slightly differently based on which master planning engine you are using (Planning Optimization or the built-in engine). This article describes how to set it up for each engine. CTP for Planning Optimization currently supports only a subset of the CTP scenarios supported by the built-in engine.
+
+For details about how to set up and use CTP, see [Calculate sales order delivery dates using CTP](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

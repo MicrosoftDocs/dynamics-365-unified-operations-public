@@ -1,5 +1,5 @@
 ﻿---
-title: Calculate delivery dates using CTP
+title: Calculate sales order delivery dates using CTP
 description: Capable-to-promise (CTP) functionality allows you to provide customers with realistic dates for when you can promise specific goods. This article describes how to set up and use CTP for each planning engine (Planning Optimization and the built-in engine).
 author: t-benebo
 ms.date: 07/20/2022
@@ -13,7 +13,7 @@ ms.search.validFrom: 2022-07-20
 ms.dyn365.ops.version: 10.0.28
 ---
 
-# Calculate delivery dates using CTP
+# Calculate sales order delivery dates using CTP
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
