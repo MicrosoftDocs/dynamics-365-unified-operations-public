@@ -51,7 +51,8 @@ The following table lists the features that are included in this release. We mig
 |Globalization    |(Preview) Electronic Invoicing service – French e-invoice integration with Chorus Pro   | The configurable Electronic Invoicing service supports integration with French Chorus Pro and the automatic submission of electronic invoices in PEPPOL UBL Biz 3 format to the Chorus Pro Platform.   | Parameter   |
 |Globalization    |(Preview) Electronic Invoicing service – configurable Polish e-invoice and integration   | The Configurable Electronic Invoicing service supports generating and submitting electronic invoices in the format legally required by Polish authorities.   | Parameter   |
 |Globalization    |Electronic Invoicing service – Saudi Arabia e-invoice integration    | The configurable Electronic Invoicing supports submitting electronic invoices to Saudi Arabia tax authorities in the format legally required in Saudi Arabia.   | Parameter   |
-|    |    |    |    |
+|General ledger    |Allow edits to internal data on general ledger vouchers    |When enabled, this feature gives the Accounting manager and Accounting supervisor roles the ability to modify internal data on posted vouchers. The feature is limited to editing the Description only for 10.0.29, but the feature will be expanded to editing financial tags when that feature is released. An audit trail is maintained for all changes.     |Feature management    |
+|General ledger    |Option to include or exclude reporting currency adjustments in the GL Foreign currency revaluation   |When running the general ledger foreign currency revaluation, a new option is available on the dialog to either include or exclude reporting currency adjustment transactions from the revaluation process. The default is to include reporting currency adjustments in revaluation.   |Parameter    |
 
 
 ## Feature enhancements included in this release
@@ -67,8 +68,9 @@ The following table lists the feature enhancements that are included in this rel
 |Budget Control|Budget control data maintenance - journal reprocessing|This enhancement to budget control data maintenance allows for reprocessing of budget data for journal documents|
 |General Ledger|Default journal sorting direction|This enhancement to journals allows for selecting the journal list to have the default sorting set to either ascending or descending by journal batch number. The sorting direction is set in the general ledger parameters.|
 |Globalization |Indonesian Commercial invocie and tax invoices  |Commercial invoice can be issued in foreign currency, while tax invoice (which is a file created as a subset of data in the commercial invoice) must always be in local currency. Commercial invoice can have separate numbering, different from the numbering of e-invoices, mandated by the authorities. |
-| | | |
-
+|General ledger    |Ability to edit the fiscal year name  |A new dialog has been added to the Fiscal calendar setup page allowing the user to change the name of a fiscal year within the selected fiscal calendar.      |
+|General ledger |Dimension statement data limitation |The dimension statement will now be limited to run for 31 days or less. If transaction detail is necessary for a larger date range, the General journal account entry reporting entity should be used instead. |
+|General ledger    |Require year end close to be run in fiscal year order |When running the general ledger year end close, the previous fiscal year must be closed before running the close for the selected fiscal year. This is to ensure that correct balances exist in the fiscal year being closed.    |
 
 ## Additional resources
 
