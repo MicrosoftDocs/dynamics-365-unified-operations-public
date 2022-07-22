@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.28
 
 # Calculate delivery dates using CTP
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
 
 Capable-to-promise (CTP) functionality allows you to provide customers with realistic dates for when you can promise specific goods. For each sales line, you can provide a date that takes account of existing on-hand inventory, production capacity, and transportation times.
@@ -26,7 +26,7 @@ CTP works slightly differently based on which master planning engine you are usi
 
 ## Turn on CTP for Planning Optimization
 
-CTP for the built-in master planning engine is always available, but if you want to use CTP for Planning Optimization, it must be turned for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+CTP for the built-in master planning engine is always available, but if you want to use CTP for Planning Optimization, it must be turned for your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Master planning*
 - **Feature name:** *(Preview) CTP for Planning Optimization*
@@ -49,11 +49,11 @@ The following table summarizes the differences between CTP for Planning Optimiza
 | Calculation time | The calculation is triggered by running a dynamic plan as a scheduled task. | The calculation is triggered right away each time you enter or update a sales order line. |
 | **CTP for Planning Optimization status** field values | Shows *Not ready* for orders and order lines where the dynamic plan has not run since they were created or last updated.<br><br>Shows *Ready* for orders and lines where confirmed delivery dates have been calculated using CTP by running the dynamic plan. | Always shows a value of *Ready*. |
 
-## Set default delivery date control methods
+## <a name="default-methods"></a>Set default delivery date control methods
 
 The system can use any of several different methods for calculating delivery date estimates for each order and order line. You should set the delivery date control method you want to use most often as the global default. You can also set individual overrides for each product. Later, you will be able to override these defaults for each individual order and/or order line as needed.
 
-### <a name="set-date-control"></a>Set the global default delivery date control
+### <a name="global-default"></a>Set the global default delivery date control
 
 The default delivery date control method will be applied to all new order lines where an override doesn't apply. To choose one, follow these steps:
 
@@ -79,10 +79,10 @@ You can assign overrides for specific products where you want to use a delivery 
 1. On the Action Pane, open the **Manage inventory** tab and, from the **Order settings** group, select **Default order settings**.
 1. The **Default order settings page opens**. Expand the **Sales order** FastTab.
 1. Set **Override delivery control** to *Yes*.
-1. Set **Delivery date control** to the method you want to use for the selected product. The available settings are the same as those described in [Set the global default delivery date control](#set-date-control).
+1. Set **Delivery date control** to the method you want to use for the selected product. The available settings are the same as those described in [Set the global default delivery date control](#global-default).
 1. Make related order promising settings for the selected product as needed, as described in [Order promising](../../sales-marketing/delivery-dates-available-promise-calculations.md).
 
-## Schedule CTP for Planning Optimization calculations
+## <a name="batch-job"></a>Schedule CTP for Planning Optimization calculations
 
 When you use CTP for Planning Optimization, a dynamic plan must run to trigger the system to make the CTP calculations and then populate the confirmed ship and receipt dates for all relevant orders. The plan must include all items for which confirmed ship and receipt dates are needed. (When you use CTP for the built-in planning engine, the CTP calculations are done locally right away, so you don't need to run a dynamic plan to see the CTP results.)
 
@@ -103,7 +103,7 @@ Use the following procedure to set up a batch job to run a dynamic plan on a reg
 
 ### Create a new order using CTP for built-in master planning
 
-Each time you add a new sales order or order line, the system assigns a default delivery date control method to it. The order header will always initiate at the global default. If an ordered item has an override assigned to it, the new order line will use that, otherwise it too will use the global default. You should therefore set your defaults to match the delivery date control method you use most often. After creating an order, you can override the default at the order header and/or order line level as needed. See also [Set default delivery date control methods](#set-default-delivery-date-control-methods) and [Change existing sales orders to use a different delivery date control method](#update-sales-orders-to-use-a-different-delivery-date-control-method).
+Each time you add a new sales order or order line, the system assigns a default delivery date control method to it. The order header will always initiate at the global default. If an ordered item has an override assigned to it, the new order line will use that, otherwise it too will use the global default. You should therefore set your defaults to match the delivery date control method you use most often. After creating an order, you can override the default at the order header and/or order line level as needed. See also [Set default delivery date control methods](#default-methods) and [Change existing sales orders to use CTP](#change-orders).
 
 ### View confirmed delivery dates when using CTP for built-in master planning
 
@@ -118,13 +118,13 @@ For sales lines that use CTP for built-in master planning, the system automatica
 
 ### Create a new order using CTP for Planning Optimization
 
-Each time you add a new sales order or order line, the system assigns a default delivery date control method to it. The order header will always initiate at the global default. If an ordered item has an override assigned to it, the new order line will use that, otherwise it too will use the global default. You should therefore set your defaults to match the delivery date control method you use most often. After creating an order, you can override the default at the order header and/or order line level as needed. See also [Set default delivery date control methods](#set-default-delivery-date-control-methods) and [Change existing sales orders to use a different delivery date control method](#update-sales-orders-to-use-a-different-delivery-date-control-method).
+Each time you add a new sales order or order line, the system assigns a default delivery date control method to it. The order header will always initiate at the global default. If an ordered item has an override assigned to it, the new order line will use that, otherwise it too will use the global default. You should therefore set your defaults to match the delivery date control method you use most often. After creating an order, you can override the default at the order header and/or order line level as needed. See also [Set default delivery date control methods](#default-methods) and [Change existing sales orders to use CTP](#change-orders).
 
 ### View confirmed delivery dates when using CTP for Planning Optimization
 
 If you are using Planning Optimization, then CTP calculations are applied to orders and/or order lines where the **Delivery date control** is *CTP for Planning Optimization*.
 
-For sales lines that use *CTP for Planning Optimization*, the **Confirmed ship date** and **Confirmed receipt date** fields will be blank until you run the appropriate dynamic plan (typically using a periodic batch job), which then populates them automatically. See also [Schedule CTP for Planning Optimization calculations](#schedule-ctp-for-planning-optimization-calculations).
+For sales lines that use *CTP for Planning Optimization*, the **Confirmed ship date** and **Confirmed receipt date** fields will be blank until you run the appropriate dynamic plan (typically using a periodic batch job), which then populates them automatically. See also [Schedule CTP for Planning Optimization calculations](#batch-job).
 
 The **CTP for Planning Optimization status** field indicates whether confirmed dates have been calculated yet for each line that uses *CTP for Planning Optimization*. The field shows a value of *Not ready* for lines and orders where the confirmed delivery dates either haven't yet been calculated or are no longer valid due to other changes; it shows a value of *Ready* for lines and orders that have been calculated. You can view the status for each individual line and for the entire order.
 
@@ -139,7 +139,7 @@ The sales orders that are *Ready* or *Not ready* are shown in the **All sales or
 >
 > - If you edit a related setting that may affect existing confirmed dates (such as changing lead times, reservations, or markings), then you should clear the confirmed dates for the relevant existing orders. This will change the status for each relevant line to *Not ready*, which will cause the system to recalculate the confirmed dates the next time it runs the dynamic plan.
 
-## Change existing sales orders to use CTP
+## <a name="change-orders"></a>Change existing sales orders to use CTP
 
 You can change the **Delivery date control** option for any open order at any time. You can change this option at the header level and/or for each line individually as needed.
 
