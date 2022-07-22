@@ -4,7 +4,7 @@ description: This article provides information about strategic inventory positio
 author: t-benebo
 ms.date: 06/30/2022
 ms.topic: article
-ms.search.form:
+ms.search.form: ReqGroup, EcoResProductDetailsExtended
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
