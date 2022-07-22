@@ -31,20 +31,20 @@ You must have the credentials for a user who has access to one or more LCS proje
 
 To enable direct connections from Azure DevOps to LCS on a user's behalf, you must register an application in your Azure Active Directory (Azure AD).
 
-1. Follow the instructions in [Quickstart: Register an application with the Microsoft identity platform](/azure/active-directory/develop/quickstart-register-app), and add a new redirect URI:
+1. Follow the instructions in [Quickstart: Register an application in the Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app), and add a new redirect URI:
 
     1. Select **Public client/native (mobile & desktop)**.
     2. Enter any valid URI, such as `http://localhost`.
 
-2. Add permissions to the application registration to access the LCS web APIs. Follow the instructions in [Add permissions to access your web API](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api). When you request the API permissions, select **APIs my organization uses**, and search for **Dynamics Lifecycle services**.
-3. Make sure that the account that you will use has given consent for the application registration in Azure AD. Follow the instructions in [Configure the way end-users consent to an application in Azure Active Directory](/azure/active-directory/manage-apps/configure-user-consent). You can either enable a specific user or grant admin consent for the whole tenant.
+2. Add permissions to the application registration to access the LCS web APIs. Follow the instructions in [Add permissions to access your web API](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-your-web-api). When you request the API permissions, select **APIs my organization uses**, and search for **Dynamics Lifecycle services**.
+3. Make sure that the account that you will use has given consent for the application registration in Azure AD. Follow the instructions in [Configure the way end-users consent to an application in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-user-consent). You can either enable a specific user or grant admin consent for the whole tenant.
 4. Configure the registration as a public client application.
     1. In the Azure portal, select your app in **App registrations**, and then select **Authentication**.
     2. In **Advanced settings** > **Allow public client flows** > **Enable the following mobile and desktop flows:**, select **Yes**.
 
 ## Create the Dynamics Lifecycle Services service connection
 
-You can create a new service connection either directly from a pipeline task or from your project's settings page. For more information about how to create service connections, see [Create a service connection](/azure/devops/pipelines/library/service-endpoints#create-a-service-connection). In the dialog box for the **Dynamics Lifecycle Services** service connection, provide the following information:
+You can create a new service connection either directly from a pipeline task or from your project's settings page. For more information about how to create service connections, see [Create a service connection](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints?view=azure-devops&tabs=yaml#create-a-service-connection). In the dialog box for the **Dynamics Lifecycle Services** service connection, provide the following information:
 
 - **Authentication Endpoint** – The default value works for all Azure AD tenants in the Azure cloud. If your Azure AD is in a national cloud, see [National clouds](/azure/active-directory/develop/authentication-national-cloud) to find the correct authentication endpoint.
 - **Lifecycle Services API Endpoint** – Provide the endpoint.
