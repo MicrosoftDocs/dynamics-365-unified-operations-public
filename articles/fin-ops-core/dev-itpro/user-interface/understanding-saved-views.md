@@ -125,6 +125,13 @@ In the long term, the plan is for views to replace modeled secondary list pages.
 - Typically, secondary list pages, such as **Customers on hold**, are menu items that point to the same form but have a different query. Because menu items that pass in queries override any query that is defined on the default view, these entry points can cause confusion for users, because the default view query won't be run when users navigate to a form by using one of these menu items. The current long-term plan is to make secondary list pages obsolete (deprecated) and move them to views.
 - To help prevent user confusion between the form caption (such as "All customers") and the view name (such as "My customers"), consider renaming form captions to the name of the corresponding entity. For example, instead of using "All customers" or "All sales orders" as a form caption, change the form caption to "Customers" or "Sales orders."
 
+## Improving form load performance 
+Traditionally, personalizations have been applied during the super() of run(), after the form query has been initially executed. Because of this timing, if personalizations included an added field, the query may be re-executed to ensure the extra data was fetched. With saved views, the application of personalizations related to the default view was done at the same time as before. However, the possibility for at least one extra execution of the query during form load increased since this would occur if the default view contained any personalizations that impacted the query, such as added fields, modified filters, or changes to sorting.  
+
+Starting in version 10.0.29, you can improve the performance of form load for default views with personalizations that impact the query with the **Saved views performance enhancement** feature. This feature modifies when certain parts of the default view are applied so that all query-related changes (i.e. added fields, filters, and sorts) are in place when the form initially executes its query in super() of run() resulting in the system executing the form query once during form load, instead of potentially multiple times, which can speed up the load time for forms.   
+
+Because this feature changes when certain personalizations associated with the default view are applied, however, there is the potential for a change in behavior on the page. In particular, any code impacting the query in the **OnPostRun** event handler of the form will now be run after the view query is executed instead of before. Evaluation of any query-impacting code in this event handler on forms should be evaluated before enabling this feature. 
+
 ## Known issues
 This section provides a list of known issues for saved views while the feature is in a preview state.
 
