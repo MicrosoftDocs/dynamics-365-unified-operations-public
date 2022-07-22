@@ -58,6 +58,12 @@
             href: hr-whats-new-2021-01-28.md
           - name: January 21, 2021
             href: hr-whats-new-2021-01-21.md
+        - name: Removed or deprecated features
+          items:
+          - name: Removed or deprecated features home page
+            href: ../fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page.md?toc=/dynamics365/finance/toc.json
+          - name: Removed or deprecated features in Dynamics 365 Human Resources
+            href: get-started/removed-deprecated-features-hr.md
     - name: Get started   
       items:
       - name: Overview
