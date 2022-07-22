@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Platform updates for version 10.0.29 of Finance and Operations apps (September 2022)
-description: This topic lists the features that are included in the platform updates for version 10.0.29 of Finance and Operations apps.
+title: Platform updates for version 10.0.29 of finance and operations apps (September 2022)
+description: This topic lists the features that are included in the platform updates for version 10.0.29 of finance and operations apps.
 author: sericks007
 ms.date: 07/22/2022
 ms.topic: article
@@ -13,12 +13,12 @@ ms.author: sericks
 ms.search.validFrom: 2022-07-22
 
 ---
-# Platform updates for version 10.0.29 of Finance and Operations apps (September 2022)
+# Platform updates for version 10.0.29 of finance and operations apps (September 2022)
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic lists the features that are included in the platform updates for version 10.0.29 of Finance and Operations apps. This version has a build number of 7.0.XXXX and is available on the following schedule:
+This topic lists the features that are included in the platform updates for version 10.0.29 of finance and operations apps. This version has a build number of 7.0.XXXX and is available on the following schedule:
 
 - **Preview of release:** August 2022
 - **General availability of release (self-update):** September 2022
@@ -45,7 +45,7 @@ Check out the [Dynamics 365: 2022 release wave 1 plan](/dynamics365-release-plan
 
 ### Removed and deprecated platform features
 
-The [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) topic describes features that have been removed, or that are planned for removal in platform updates of Finance and Operations apps.
+The [Removed or deprecated platform features](removed-deprecated-features-platform-updates.md) topic describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature isn't in active development and might be removed in a future update.
