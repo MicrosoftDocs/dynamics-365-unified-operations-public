@@ -24,20 +24,18 @@ The July release of Dual-write Global Address Book solution 3.5.1.6 contains the
 
 | Feature | Description | Status |
 |---|---|---|
-| Bug fix |Update the Postal address table when an address is updated in Marketing portal.|General availability |
-| Bug fix |Fix the time zone conversion for addresses with a **Never** expiration date when date is passed from the customer engagement apps to finance and operations.|General availability |
-
+| Bug fix | Update the Postal address table when an address is updated in the Marketing portal. | General availability |
+| Bug fix | Fix the time zone conversion for addresses that have an expiration date of **Never** when a date is passed from customer engagement apps to finance and operations apps. | General availability |
 
 ### Solution details
 
 | Solution name | Has new changes? | Previous version | New version |
 |---|---|---|---|
-| Party | Yes | 3.5.0.1 | 3.5.1.6|
+| Party | Yes | 3.5.0.1 | 3.5.1.6 |
 | Dynamics365GABExtended | Yes | 3.5.0.1 | 3.5.1.6 |
 | Dynamics365GABDualWriteEntityMaps | Yes | 3.5.0.1 | 3.5.1.6 |
 | Dynamics365GABPartyAnchor | Yes | 3.5.0.1 |3.5.1.6 |
 | Dynamics365GABPartyCommon | Yes | 3.5.0.1 | 3.5.1.6 |
-
 
 ## June 2022 release
 
