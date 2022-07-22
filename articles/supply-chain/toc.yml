@@ -1763,6 +1763,8 @@
           href: master-planning/planning-optimization/purchase-requisitions.md
         - name: Production planning
           href: master-planning/planning-optimization/production-planning.md
+        - name: Master planning for products with limited shelf life
+          href: master-planning/planning-optimization/shelf-life.md
         - name: Scheduling with infinite capacity
           href: master-planning/planning-optimization/infinite-capacity-planning.md
         - name: Scheduling with resource selection based on capability
