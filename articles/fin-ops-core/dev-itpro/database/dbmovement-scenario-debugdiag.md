@@ -4,7 +4,7 @@
 title: Debug a copy of the production database
 description: This article explains a debugging and diagnostics scenario for finance and operations.
 author: LaneSwenka
-ms.date: 01/25/2021
+ms.date: 07/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
