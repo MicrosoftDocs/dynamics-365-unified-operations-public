@@ -2,7 +2,7 @@
   items:
   - name: Dynamics 365 Human Resources
     items:
-    - name: Dynamics 365 Human Resources home  page
+    - name: Dynamics 365 Human Resources home page
       href: index.md  
     - name: What's new or changed
       items:
