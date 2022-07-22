@@ -165,15 +165,11 @@ All additional sandbox environments will be updated during the same update windo
 
 All environments will be updated to version N. 
 
-### What if the default sandbox environment is manually updated to the exact same version as the automatic update version? 
+### What if the default sandbox environment is manually updated to the exact same version OR higher version than the automatic update version? 
 
 Automatic updates for the production environment and all additional sandbox environments will be updated to the current N version.  
  
 The default sandbox environment update will be canceled. 
-
-### What if the default sandbox environment is manually updated to a newer version than the automatic update version?
-
-Automatic updates for the default sandbox environment, production environment, and all additional sandbox environments will be canceled. 
 
 ### What if the default sandbox environment is manually updated to an older version than the automatic update version? 
  
