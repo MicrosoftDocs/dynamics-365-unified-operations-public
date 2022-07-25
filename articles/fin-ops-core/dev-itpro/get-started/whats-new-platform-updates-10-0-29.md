@@ -40,7 +40,7 @@ The following table lists the features that are made mandatory or turned on by d
 | Feature name | Enable date | Feature added | Feature state | Module |
 | :--- | :--- | :--- | :--- | :--- |
 | Customer and vendor master data sharing | 8/1/2022 | 6/14/2020 | Mandatory | System administration |
-| Execution history cleanup | 8/1/2022 | 6/9/2019 | On by default | Data Management |
+| Execution history cleanup | 8/1/2022 | 6/9/2019 | On by default | Data management |
 
 ### Bug fixes
 
