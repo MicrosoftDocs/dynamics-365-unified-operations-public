@@ -38,7 +38,7 @@ The following table lists the features that are included in this release.
 The following table lists features that are now mandatory or turned on by default with this release. For more details see [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
 | Module or feature area | Feature name | Feature state |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- |  :--- | :--- |
 | System administration | Customer and vendor master data sharing | Mandatory |
 | Data management | Execution history cleanup | On by default | 
 
