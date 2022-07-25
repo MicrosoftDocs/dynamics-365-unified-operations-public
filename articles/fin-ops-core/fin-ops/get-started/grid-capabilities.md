@@ -41,6 +41,8 @@ The new grid control provides several useful and powerful capabilities that you 
 ## Showing calculated values
 In finance and operations apps, users have the ability to see a show a calculated value for each numeric column in a grid. A footer section at the bottom of the grid shows these calculated values.  
 
+[![Show calculated values in grids.](./media/grids-aggregation.png)](./media/grids-aggregation.png)
+
 In versions prior 10.0.29, the only supported calculated value is totals; however, starting in 10.0.29 and later after enabling the **Extended grid aggregation capabilities** feature, users can choose between the following four calculated values: 
 -  Minimum
 -  Maximum
@@ -88,6 +90,8 @@ Calculated values will update automatically as you update, delete, or create row
 ## Typing ahead of the system
 In many business scenarios, the ability to quickly enter data into the system is very important. Before the new grid control was introduced, users could change data only in the current row. Before they could create a new row or switch to a different row, they were forced to wait for the system to successfully validate any changes. In an attempt to reduce the amount of time that users wait for these validations to be completed, and to improve user productivity, the new grid adjusts these validations so that they are asynchronous. Therefore, the user can move to other rows to make changes while previous row validations are pending. 
 
+[![Typing ahead of the system](./media/gridFastEntry-07-25-2022.gif)](./media/gridFastEntry-07-25-2022.gif)
+
 To support this new behavior, a new column for the row status has been added to the right of the row selection column when the grid is in edit mode. This column indicates one of the following statuses:
 
 - **Blank** – No status image indicates that the row has been successfully saved by the system.
@@ -107,12 +111,16 @@ Users have always been able to export data from grids in finance and operations 
 ## Evaluating math expressions
 As a productivity booster, users can enter mathematical formulas in numeric cells in a grid. They don't have to do the calculation in an app outside the system. For example, if you enter **=15\*4** and then press the **Tab** key to move out of the field, the system will evaluate the expression and save a value of **60** for the field.
 
+[![Evaluating math expressions.](./media/gridMathExpression-07-25-2022.gif)](./media/gridMathExpression-07-25-2022.gif)
+
 To make the system recognize a value as an expression, start the value with an equal sign (**=**). For more information about the supported operators and syntax, see [Supported math symbols](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 Starting in 10.0.29, this ability to evaluate math expressions in numeric controls has been extended and now is possible outside the grid as well!  
 
 ## Grouping tabular data
 Business users often need to perform ad-hoc analysis of data. While this can be done by exporting data to Microsoft Excel and using pivot tables, the **Grouping in grids** feature, which is dependent on the new grid control feature, allows users to organize their tabular data in interesting ways within finance and operations apps. Because this feature extends the **Calculated values** feature, **Grouping** allows you to get meaningful insights into the data by providing calculated values (e.g. subtotals) at the group level.
+
+[![Grouping data in a grid.](./media/grids-groupingWithTotals.png)](./media/grids-groupingWithTotals.png)
 
 To use this feature, right-click the column that you want to group by, and select **Group by this column**. This action will sort the data by the selected column, add a new **Group by** column to the beginning of the grid, and insert "header rows" at the beginning of each group. These header rows provide the following information about each group:
 
@@ -150,6 +158,8 @@ When grouping on Date or DateTime fields, you have the option to group by year, 
 
 ## Freezing columns
 Some columns in a grid might be important enough for context that you don't want them to scroll out of view. Instead, you might want the values in those columns to always be visible. The **Freezing columns in grid** feature provides this flexibility to users. 
+
+[![Freezing columns in a grid.](./media/gridFreezingColumns-07-25-2022.gif)](./media/gridFreezingColumns-07-25-2022.gif)
 
 To freeze a column, right-click in the column's header, and then select **Freeze column**. The first time that you complete this step, the selected column becomes the first column and will no longer scroll out of view. Any subsequent column that you freeze will be added to the right of the last frozen column. You can use the standard Move functionality to reorder frozen columns as you require. However, frozen columns can't be moved so that they appear among the set of unfrozen columns. Likewise, unfrozen columns can't be moved so that they appear among the set of frozen columns.
 
