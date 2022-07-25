@@ -31,7 +31,10 @@ The following table lists the features that are included in this release.
 | Module or feature area    | Feature name | More information | Enabled by |
 |-----------------|---------|------------------|---------------------------|
 | Data management  | Refresh entity list | Refresh entity list is refactored to always run in batch. | Default |
-|Feature area  | [Name of feature](URL to feature description in the Release Plans)  | [Topic name](URL to topic with more information in core documentation)  | How do you turn this feature on? If you turn it on in Feature management, say: [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)   |
+| Web client  | <p>**Extended grid aggregation capabilities**</p><p>This feature extends the current "totals" feature in the grid by allowing users to choose one of four aggregation functions for each numeric column. Besides showing a total, grid columns can now be configured to show the minimum value, maximum value, or averge value in the column. If grouping has been performed within the grid, the chosen aggregation function for that column will be shown for each group, as well.</p> | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md)  | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
+| Web client  | <p>**Saved views performance enhancement**</p><p>This feature improves the performance of loading the default view on page load by minimizing the number of times the query is executed. This is accomplished by modifying when certain parts of the default view are applied so that all query-related changes are in place when the form initially executes its query.</p> | [Build forms that fully utilize saved views](../user-interface/understanding-saved-views.md)  | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
+| Web client  | <p>**Evaluating math expressions in numeric cells outside the grid**</p><p>Numeric cells in the new grid have long allowed users to enter mathematical expressions directly in cells (e.g. "=15*4" followed by Enter will evaluate the expression and set a value of 60 in the cell) to boost user productivity. Starting with this release, this mathematical expression support has been extended to numeric controls outside the grid as well.</p> | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md#evaluating-math-expressions)  | Default |
+| Feature area  | [Name of feature](URL to feature description in the Release Plans)  | [Topic name](URL to topic with more information in core documentation)  | How do you turn this feature on? If you turn it on in Feature management, say: [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)   |
 
 ## Features that are mandatory or turned on by default in this release
 
@@ -40,6 +43,24 @@ The following table lists features that are now mandatory or turned on by defaul
 | Module or feature area | Feature name | Feature state |
 | :--- |  :--- | :--- |
 | System administration | Customer and vendor master data sharing | Mandatory |
+| System administration | Saved views | Mandatory |
+| System administration | Designate fields as required using personalization | Mandatory |
+| System administration | Translation support for organization views | Mandatory |
+| System administration | Improved legal entity support for saved views | Mandatory |
+| System administration | Saved views support for dialogs | On by default |
+| System administration | Allow queries to be saved to views on Task Single and Task Double pages | On by default |
+| System administration | Full pages apps | Mandatory |
+| System administration | Allow users to select and change tile sizes | On by default |
+| System administration | New grid control | Mandatory |
+| System administration | Grouping in grids | Mandatory |
+| System administration | Freezing columns in grids | Mandatory |
+| System administration | Align combo box interactions with lookup controls | Mandatory |
+| System administration | Allow admins to select default document types | Mandatory |
+| System administration | Allow configuration of the publish batch size in the Excel add-in | Mandatory |
+| System administration | Visual update for wizards | Mandatory |
+| System administration | Upgrade to jQuery UI 1.13.0 | Mandatory |
+| System administration | Streamline tabbing behavior in full-page forms | On by default |
+| System administration | Optimize loading of Action center notifications | On by default |
 | Data management | Execution history cleanup | On by default | 
 
 ### Bug fixes
