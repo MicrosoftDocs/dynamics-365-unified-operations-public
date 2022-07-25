@@ -28,19 +28,19 @@ This topic lists the features that are included in the platform updates for vers
 
 The following table lists the features that are included in this release.
 
-| Feature area    | Feature | More information | Enabled by |
+| Module or feature area    | Feature name | More information | Enabled by |
 |-----------------|---------|------------------|---------------------------|
-| Data Management  | Refresh entity list | Refresh entity list is refactored to always run in batch. | Default |
+| Data management  | Refresh entity list | Refresh entity list is refactored to always run in batch. | Default |
 |Feature area  | [Name of feature](URL to feature description in the Release Plans)  | [Topic name](URL to topic with more information in core documentation)  | How do you turn this feature on? If you turn it on in Feature management, say: [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)   |
 
 ## Features that are mandatory or turned on by default in this release
 
-The following table lists the features that are made mandatory or turned on by default in this release. For more details see [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
+The following table lists features that are now mandatory or turned on by default with this release. For more details see [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
-| Feature name | Enable date | Feature added | Feature state | Module |
+| Module or feature area | Feature name | Feature state |
 | :--- | :--- | :--- | :--- | :--- |
-| Customer and vendor master data sharing | 8/1/2022 | 6/14/2020 | Mandatory | System administration |
-| Execution history cleanup | 8/1/2022 | 6/9/2019 | On by default | Data management |
+| System administration | Customer and vendor master data sharing | Mandatory |
+| Data management | Execution history cleanup | On by default | 
 
 ### Bug fixes
 
