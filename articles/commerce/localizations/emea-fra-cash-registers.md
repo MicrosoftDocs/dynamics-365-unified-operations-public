@@ -494,6 +494,9 @@ To enable audit events, you must reinitialize the Commerce extensible enumeratio
 
 ### Configure channel components
 
+> [!WARNING]
+> You need to make specific steps to configure Commerce channel components for France only if you are using the Commerce version 10.0.28 or earlier. Starting from the version 10.0.29, all required channel components are enabled out-of-the-box.
+
 To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-fi-deployment.md).
 
 > [!NOTE]
