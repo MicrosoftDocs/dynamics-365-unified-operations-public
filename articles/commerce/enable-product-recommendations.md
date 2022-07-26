@@ -4,7 +4,7 @@
 title: Enable product recommendations
 description: This topic explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 Commerce customers. 
 author: bebeale
-ms.date: 07/15/2022
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,17 +41,17 @@ This topic explains how to make product recommendations that are based on artifi
 1. Ensure that the Entity store daily refresh to Azure Data Lake Storage Gen2 has been scheduled. For more information, see [Ensure that the Entity store refresh has been automated](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 1. Enable RetailSale measurements for Entity store. For more information about setting up this process, see [Work with measures](/dynamics365/ai/customer-insights/pm-measures).
 1. Ensure that your environment has configured the serving and cooking regions in the currently supported regions, as follows.
-   1. Supported cooking regions: EU/US/CA/AU.
-   2. Supported serving regions: US/CA/AU. If the serving region doesn't match one of the existing supported regions, the recommendations service will select the closest supported serving region. 
+   - Supported cooking regions: EU/US/CA/AU.
+   - Supported serving regions: US/CA/AU. If the serving region doesn't match one of the existing supported regions, the recommendations service will select the closest supported serving region. 
 
 After the steps above have been completed, you will be ready to enable recommendations.
 
 > [!NOTE]
-> There's a known issue with recommendations not appearing after the enablement steps below are completed. This is due to data flow issues within the environment. If you are having issues with your environment not showing recommendations results, please follow the steps for configuring the alternative data for the recommendations service in the [How to set up the alternate data flow for recommendations](reco-alternate-data-flow.md) article. You'll need Azure admin permissions to complete these steps. Reach out to your FastTrack representative if you need assistance.
+> There's a known issue with recommendations not appearing after the following steps below are completed. This is due to data flow issues within the environment. If you are having issues with your environment not showing recommendations results, follow the steps for configuring the alternative data for the recommendations service in [How to set up the alternate data flow for recommendations](reco-alternate-data-flow.md). You'll need Azure administrator permissions to complete these steps. If you need assistance, contact your FastTrack representative.
 
 ## Azure AD Identity configuration
 
-This step is only required for customers running an infrastructure as a service (IaaS) configuration. Azure AD Identity configuration is automatic for customers running on Azure Service Fabric, but it is recommended that you verify that the setting is configured as expected.
+This step is only required for customers running an infrastructure as a service (IaaS) configuration. Azure AD identity configuration is automatic for customers running on Azure Service Fabric, but it is recommended that you verify that the setting is configured as expected.
 
 ### Setup
 
@@ -104,7 +104,7 @@ To learn more about personalized recommendations, see [Enable personalized recom
 
 [Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](enable-adls-environment.md)
 
-[Set up alternate data flow for recommendations](reco-alternate-data-flow.md)
+[Set up alternate data flow for recommendations](set-up-alternate-data-flow.md)
 
 [Enable personalized recommendations](personalized-recommendations.md)
 
