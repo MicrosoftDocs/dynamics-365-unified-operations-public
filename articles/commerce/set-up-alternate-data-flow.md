@@ -69,11 +69,11 @@ To configure tables to export in Dynamics 365, follow these steps.
 
     `https://<environment-URL>/?mi=DataFeedsDefinitionWorkspace`
 
-1.	Open the **Export to Data Lake** form and copy the list of tables [from *Table 1* in the Appendix](set-up-alternate-data-flow.md#appendix) of this document.
-2.	On the **System Name** column, expand the filter options drop-down list. 
-3.	Choose ```is one of``` for the filter type and place your cursor in the text box and paste in the table list.
-4.	At the bottom of the filter drop-down list, select **Apply** .
-5.	Select all rows in the grid, then select **Activate**
+1. Open the **Export to Data Lake** form and copy the list of tables [from *Table 1* in the Appendix](set-up-alternate-data-flow.md#appendix) of this document.
+1. On the **System Name** column, expand the filter options drop-down list. 
+1. For the filter type, select **is one of**, place your cursor in the text box, and then paste in the table list copied from the **Export to Data Lake** form.
+1. At the bottom of the filter drop-down list, select **Apply**.
+1. Select all rows in the grid, and then select **Activate**.
 
 > [!NOTE]
 > Ensure that all rows update to the status of **Running** before proceeding to the next step. Troubleshoot and resolve any errors before proceeding.
@@ -145,11 +145,11 @@ In the data lake:
 1.	Create a new empty folder named RetailSales.
 2.	Upload the model.json file to the directory.
 
-## Create a Pipeline to Copy the RetailSales Cube Data
+## Create a pipeline to copy the RetailSales cube data
 
 The pipeline will read the RetailSales cube views and export the data to csv files in the data lake.
 
-### Steps
+To create a pipeline to copy the RetailSales cube data, follow these steps.
 
 1.	Select the integrate tab in the Synapse workspace.
 1.	Click the ```+``` icon and select import from pipeline template.
@@ -166,13 +166,11 @@ It's recommended to test the pipeline using only one view. The **RetailSales_Ret
 
 Every time the pipeline runs, Azure consumption occurs. It's recommended to schedule executions at intervals of 48 hours or longer. You can always execute the pipeline manually if you need to sync data immediately. 
  
-## Appendix
+## Table list for syncing from Dynamics 365 to Azure Data Lake Store
 
-### Table list for syncing from Dynamics 365 to ADLS
+This list of tables is a subset of all tables needed for the whole RetailSales cube. Only 15 of the views in the RetailSales cube are used by the recommendations service and the list of tables needed was filtered accordingly.
 
-This list of tables is a subset of all tables needed for the whole RetailSales cube. Only 15 of the views in the RetailSales cube are used by the Recommendations Service and the list of tables needed was filtered accordingly.
-
-#### Retail Sales Cube Table
+### Retail Sales Cube table
 
 |Table 1|
 | --- |
@@ -255,7 +253,7 @@ DIMENSIONHIERARCHYLEVEL <br>
 DIMENSIONPARAMETER <br>
 OMExplodedOrganizationSecurityGraph |
 
-### View list for parameter to pass into the Synapse Pipeline
+### View list for parameter to pass into the Synapse pipeline
 
 This is a comma separated list of RetailSales cube views. This is the list of views the pipeline will perform a ‘select’ operation on and copy the results to the data lake. 
 
@@ -266,9 +264,9 @@ This is a comma separated list of RetailSales cube views. This is the list of vi
 RetailSales_RetailAssortmentRulesView,RetailSales_RetailChannelNavigationHierarchiesView,RetailSales_RetailChannelNavigationHierarchyCatalogProductsView,RetailSales_RetailChannelNavigationHierarchyCategoryNodesView,RetailSales_RetailChannelNavigationHierarchyCategoryProductsView,RetailSales_RetailMediaBaseUrlChannelView,RetailSales_RetailMediaRelativeUrlProductView,RetailSales_RetailMediaTemplateView,RetailSales_RetailOptOutCustomersView,RetailSales_RetailProductCategory,RetailSales_RetailProductTransaction,RetailSales_RetailProductVariantDimensionsView,RetailSales_RetailRecoListConfigurationParametersView,RetailSales_RetailRecoListsSharedParametersView,RetailSales_RetailEcoResProductTranslation|
 ```
 
-### Environment specific fixes
+## Environment specific fixes
 
-#### [RETAILCHANNELVIEW]
+### [RETAILCHANNELVIEW]
 
 This view has a hardcoded integer in it that represents a ‘retail channel’ type of organization.  
 The actual value of the type can change from environment to environment or at least from tenant to tenant.
@@ -301,9 +299,9 @@ To fix this use SSMS attached to the synapse database.
 select INSTANCERELATIONTYPE, NAME, NAMEALIAS, * from dbo.DIRPARTYTABLE where RECID IN (select OMOPERATINGUNITID from dbo.RETAILCHANNELTABLE where RETAILCHANNELID = <channelID>)
 ```
 
-### Troubleshooting
+## Troubleshooting
 
-#### Pipeline task fails
+### Pipeline task fails
 
 There should be 15 pipeline task executions for CopyData. If any of them fail, you will need to validate that all the dependent SQL objects exist and the queries execute. To get to all the dependencies, it is easiest to use SSMS to connect to the database.  You can then right click on a view and select Generate CREATE as to a new window’
 Example error message text includes: 
@@ -311,7 +309,7 @@ Example error message text includes:
 - Error handling external file: 'Max errors count.   
 - /RetailSales/RetailSales_xxxxxx
 
-##### Example scenario
+#### Example scenario
 
 As an example, let’s consider the RetailSales_RetailProductCategory task fails with an error ‘max errors count’
 1.	Using the ```EntityList.json``` file, open it in a text editor (Visual studio code is good for this).
