@@ -67,7 +67,7 @@ Currently, no columns show calculated values by default. Instead, this is consid
 
 There are two ways to configure a column to show a calculated value: 
 
-- Right-click in the column that you want to see a calculated value for. If the **Extended grid aggregation capabilities** feature is enabled, then select **View column totals** and choose the desired calculated value. If that feature is not enabled, then select **Total this column** . This action causes three events to occur:
+- Right-click in the column that you want to see a calculated value for. If the **Extended grid aggregation capabilities** feature is enabled, then select **View column totals** and choose the desired calculated value. If that feature is not enabled, then select **Total this column**. This action causes three events to occur:
 
     1. The grid footer becomes visible. 
     2. Your preference for seeing a calculated value for this column is saved. 
@@ -117,7 +117,7 @@ As a productivity booster, users can enter mathematical formulas in numeric cell
 
 To make the system recognize a value as an expression, start the value with an equal sign (**=**). For more information about the supported operators and syntax, see [Supported math symbols](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
-Starting in 10.0.29, this ability to evaluate math expressions in numeric controls has been extended and now is possible outside the grid as well!  
+Starting in version 10.0.29, this ability to evaluate math expressions in numeric controls has been extended and now is possible outside the grid as well.  
 
 ## Grouping tabular data
 Business users often need to perform ad-hoc analysis of data. While this can be done by exporting data to Microsoft Excel and using pivot tables, the **Grouping in grids** feature, which is dependent on the new grid control feature, allows users to organize their tabular data in interesting ways within finance and operations apps. Because this feature extends the **Calculated values** feature, **Grouping** allows you to get meaningful insights into the data by providing calculated values (e.g. subtotals) at the group level.
@@ -170,7 +170,7 @@ To unfreeze a column, right-click in the frozen column's header, and then select
 Note that the row selection and row status columns in the new grid are always frozen as the first two columns. Therefore, when these columns are included in a grid, they will always be visible to users, regardless of the horizontal scroll position in the grid. These two columns can't be reordered.
 
 ## Autofit column width
-Similar to Excel, users can automatically force a column to resize based on the content currently shown in that column. To do this, double click on the sizing handles in the column, or by putting focus into the column header and pressing **A** (for autofit).
+Similar to Excel, users can automatically force a column to resize based on the content currently shown in that column. To do this, double-click on the sizing handles in the column, or by putting focus into the column header and pressing **A** (for autofit).
 
 ## Frequently asked questions
 ### How do I enable the new grid control in my environment? 
