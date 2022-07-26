@@ -3,16 +3,16 @@
   tocHref: /dynamics365/
   topicHref: /dynamics365/index
   items:
-  - name: Dynamics 365 Finance
+  - name: Dynamics 365 Human Resources
     tocHref: /dynamics365/finance/
     topicHref: /dynamics365/finance/index
-  - name: Dynamics 365 Finance
+  - name: Dynamics 365 Human Resources
     tocHref: /dynamics365/fin-ops-core/
     topicHref: /dynamics365/fin-ops-core/index
-  - name: Dynamics 365 Commerce
+  - name: Dynamics 365 Human Resources
     tocHref: /dynamics365/commerce/
     topicHref: /dynamics365/commerce/index
-  - name: Dynamics 365 Supply Chain Management
+  - name: Dynamics 365 Human Resources
     tocHref: /dynamics365/supply-chain/
     topicHref: /dynamics365/supply-chain/index
   - name: Dynamics 365 Human Resources
