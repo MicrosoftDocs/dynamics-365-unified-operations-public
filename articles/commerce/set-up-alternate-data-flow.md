@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up an alternate data flow for recommendations
-description: This article describes how to configure an environment using an alternate data flow to provide data to the recommendations service. 
+title: Set up an alternate dataflow for recommendations
+description: This article describes how to configure an environment using an alternate dataflow to provide data to the recommendations service. 
 author: bebeale
 ms.date: 07/26/2022
 ms.topic: article
@@ -27,56 +27,56 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Set up an alternate data flow for recommendations
+# Set up an alternate dataflow for recommendations
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to configure an environment using an alternate data flow to provide data to the recommendations service. 
+This article describes how to configure an environment using an alternate dataflow to provide data to the recommendations service. 
 
-![Overview of how the Alternate Data flow will fit into the environment.](media/alternate-flow.png "Overview of how the Alternate Data flow will fit into the environment.")
+![Overview of how the alternate dataflow will fit into the environment](media/alternate-flow.png)
 
 ## Assumptions
-1. This document assumes you already have [enabled the recommendations service](enable-product-recommendations.md) for the environment.
-1. When working with files and folders in the data lake storage account:
-    1. You can use either the Azure Web Portal interface or the Microsoft Azure Storage Explorer application.
-    1. The starting points for working with files and folders is in the container named ```dynamics365-financeandoperations``` and under the folder with a name matching your environment URL. 
-    2. If your sandbox environment name is ```MyUAT``` then the environment base URL would be ```myuat.sandbox.operations.dynamics.com```. 
-    3. If you've more than one environment connected to the same storage account than each environment will have its own "root folder".
+
+- This document assumes you have already enabled the recommendations service for your environment. For more information, see [Enable product recommendations](enable-product-recommendations.md).
+- When working with files and folders in the Microsoft Azure Data Lake storage account:
+    - You can use either the Azure web portal interface or the the Azure Storage Explorer application.
+    - The starting points for working with files and folders is in the container named **dynamics365-financeandoperations** that is located under the folder that is named to match your environment URL. 
+    - If your sandbox environment name is **MyUAT**, then the environment base URL would be `myuat.sandbox.operations.dynamics.com`. 
+    - If you have more than one environment connected to the same storage account, each environment will have its own root folder.
 
 ## Prerequisites
 
-The following sections are pre-requisites for completing the alternate data flow approach.
+The following prerequisites must be met to implement the alternate dataflow approach.
 
-### Set up Power Platform
+### Set up Microsoft Power Platform
 
-Follow the instructions here: [Enable the Microsoft Power Platform integration.](../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md)
+For instructions on setting up Microsoft Power Platform, see [Enable the Microsoft Power Platform integration](../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md).
 
-### Install Export to Data Lake Add-in
+### Install the Export to Data Lake add-in
 
-Follow the instructions here: [Install Export to Azure Data Lake add-in.](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).
+To install the Export to Data Lake add-in, follow the instructions in [Install Export to Azure Data Lake add-in](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).
 
->[Note]
+> [!NOTE]
 > Make notes of these values. They will be needed later during the configuration steps.
 
-### Configure Tables to Export in Dynamics 365
+### Configure tables to export in Dynamics 365
 
-Table syncing from D365 to ADLS is managed in the Export to Data Lake form. 
-This form currently doesn't have a menu item so a user must be in the **System Administrator** security role to open it. 
+Table syncing from Dynamics 365 to Azure Date Lake Store is managed in the **Export to Data Lake** form. The form doesn't currently have a menu item so a user must be in the **System Administrator** security role to open it. 
 
-To open the form, add the string ```?mi=DataFeedsDefinitionWorkspace``` to the environment's base URL, as shown in the example below: 
+To configure tables to export in Dynamics 365, follow these steps.
 
-```
-https://<environment-URL>/?mi=DataFeedsDefinitionWorkspace
-```
-Next, you will:
+1. To open the form, add the string `?mi=DataFeedsDefinitionWorkspace` to the environment's base URL, as shown in the following example: 
+
+    `https://<environment-URL>/?mi=DataFeedsDefinitionWorkspace`
+
 1.	Open the **Export to Data Lake** form and copy the list of tables [from *Table 1* in the Appendix](set-up-alternate-data-flow.md#appendix) of this document.
 2.	On the **System Name** column, expand the filter options drop-down list. 
 3.	Choose ```is one of``` for the filter type and place your cursor in the text box and paste in the table list.
 4.	At the bottom of the filter drop-down list, select **Apply** .
 5.	Select all rows in the grid, then select **Activate**
 
->[Note]
-> Ensure all rows update to status Running before proceeding to the next step. Troubleshoot and resolve any errors before proceeding.
+> [!NOTE]
+> Ensure that all rows update to the status of **Running** before proceeding to the next step. Troubleshoot and resolve any errors before proceeding.
 
 
 ### Create a Synapse Workspace if you don't already have one
@@ -121,7 +121,7 @@ Using the CDM Utility Console Application (CDMUtil_ConsoleApp) creates a databas
 > [!NOTE]
 > When reviewing the output there should be 35 Entities/Views and at least 75 tables and no errors.
 
-## Prepare the Data Lake RetailSales Aggrege Measurement Directory
+## Prepare the Data Lake RetailSales Aggregate Measurements directory
 
 ### Back up your current RetailSales cube data from the Data Lake
 
@@ -141,6 +141,7 @@ Rename it to ```RetailSales-backup```, or something similar. This preserves the 
 ### Create a New RetailSales folder and upload the model file
 
 In the data lake:
+
 1.	Create a new empty folder named RetailSales.
 2.	Upload the model.json file to the directory.
 
@@ -149,21 +150,21 @@ In the data lake:
 The pipeline will read the RetailSales cube views and export the data to csv files in the data lake.
 
 ### Steps
+
 1.	Select the integrate tab in the Synapse workspace.
-2.	Click the ```+``` icon and select import from pipeline template.
-3.	Download and Select the [ExportRetailSalesCubeViews.zip file](https://aka.ms/reco-alternate-dataflow-files).
-4.	Select your SQL database linked service.
-5.	Select your storage account linked service.
-6.	Open the CopyData task and change the folder property to be the ```<environment_name>/…```
+1.	Click the ```+``` icon and select import from pipeline template.
+1.	Download and Select the [ExportRetailSalesCubeViews.zip file](https://aka.ms/reco-alternate-dataflow-files).
+1.	Select your SQL database linked service.
+1.	Select your storage account linked service.
+1.	Open the **CopyData** task and change the folder property to be the `<environment_name>/...`.
 
+### Test execution of the pipeline
 
-### Test execution of the Pipeline
-It’s recommended to test the pipeline using only 1 view. The ```RetailSales_RetailMediaTemplateView``` works well as it’s less than 10 rows usually.
+It's recommended to test the pipeline using only one view. The **RetailSales_RetailMediaTemplateView** view works well as it usually contains fewer than 10 rows.
 
-## Schedule the Pipeline to Run on a Reoccurring Schedule
+## Schedule the pipeline to run on a recurring schedule
 
-Every time the Pipeline runs Azure consumption occurs. 
-It's recommended to schedule executions at 48 hour or longer intervals. You can always execute the Pipeline manually if the need arises to sync data "now". 
+Every time the pipeline runs, Azure consumption occurs. It's recommended to schedule executions at intervals of 48 hours or longer. You can always execute the pipeline manually if you need to sync data immediately. 
  
 ## Appendix
 
