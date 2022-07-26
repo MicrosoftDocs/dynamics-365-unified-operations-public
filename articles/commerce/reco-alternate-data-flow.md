@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Set up Alternate Data flow for recommendations
-description: This document walks you through configuring an environment using an alternate dataflow for providing data to the Recommendations Service. 
+title: Set up an alternate data flow for recommendations
+description: This article describes how to configure an environment using an alternate data flow to provide data to the recommendations service. 
 author: bebeale
-ms.date: 07/13/2022
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,11 +27,11 @@ ms.dyn365.ops.version: 10.0.5
 
 ---
 
-# Set up Alternate Data flow for recommendations
+# Set up an alternate data flow for recommendations
 
 [!include [banner](includes/banner.md)]
 
-This document walks you through how to configure an environment using an alternate dataflow for providing data to the Recommendations Service. 
+This article describes how to configure an environment using an alternate data flow to provide data to the recommendations service. 
 
 ![Overview of how the Alternate Data flow will fit into the environment.](media/alternate-flow.png "Overview of how the Alternate Data flow will fit into the environment.")
 
@@ -41,12 +41,14 @@ This document walks you through how to configure an environment using an alterna
     1. You can use either the Azure Web Portal interface or the Microsoft Azure Storage Explorer application.
     1. The starting points for working with files and folders is in the container named ```dynamics365-financeandoperations``` and under the folder with a name matching your environment URL. 
     2. If your sandbox environment name is ```MyUAT``` then the environment base URL would be ```myuat.sandbox.operations.dynamics.com```. 
-    3. If you have more than one environment connected to the same storage account than each environment will have its own "root folder".
+    3. If you've more than one environment connected to the same storage account than each environment will have its own "root folder".
 
-## Pre-requisites
+## Prerequisites
+
 The following sections are pre-requisites for completing the alternate data flow approach.
 
-### Setup Power Platform
+### Set up Power Platform
+
 Follow the instructions here: [Enable the Microsoft Power Platform integration.](../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md)
 
 ### Install Export to Data Lake Add-in
@@ -57,6 +59,7 @@ Follow the instructions here: [Install Export to Azure Data Lake add-in.](../fin
 > Make notes of these values. They will be needed later during the configuration steps.
 
 ### Configure Tables to Export in Dynamics 365
+
 Table syncing from D365 to ADLS is managed in the Export to Data Lake form. 
 This form currently doesn't have a menu item so a user must be in the **System Administrator** security role to open it. 
 
@@ -66,30 +69,32 @@ To open the form, add the string ```?mi=DataFeedsDefinitionWorkspace``` to the e
 https://<environment-URL>/?mi=DataFeedsDefinitionWorkspace
 ```
 Next, you will:
-1.	Open the Export to Data Lake form and copy the list of tables [from *Table 1* in the Appendix](reco-alternate-data-flow.md#appendix) of this document.
-2.	Expand the filter options drop down on the System Name column
-3.	Choose ```is one of``` for the filter type and place your cursor in the text box and paste in the table list
-4.	Click **Apply** at the bottom of the filter drop down.
-5.	Select all rows in the grid, then click **Activate**
+1.	Open the **Export to Data Lake** form and copy the list of tables [from *Table 1* in the Appendix](reco-alternate-data-flow.md#appendix) of this document.
+2.	On the **System Name** column, expand the filter options drop-down list. 
+3.	Choose ```is one of``` for the filter type and place your cursor in the text box and paste in the table list.
+4.	At the bottom of the filter drop-down list, select **Apply** .
+5.	Select all rows in the grid, then select **Activate**
 
 >[Note]
 > Ensure all rows update to status Running before proceeding to the next step. Troubleshoot and resolve any errors before proceeding.
 
 
-### Create a Synapse Workspace if you do not already have one
+### Create a Synapse Workspace if you don't already have one
+
 Follow the QuickStart guide here: [Quickstart: create a Synapse workspace](/azure/synapse-analytics/quickstart-create-workspace)
 
-To keep your Azure resources organized it is advised to put the ADLS storage account and synapse workspace together in a resource group in Azure.
+To keep your Azure resources organized it's advised to put the ADLS storage account and synapse workspace together in a resource group in Azure.
 You can reuse the storage account you created when you installed the Export to Data Lake Add-in.
 
 ## Create a Database in Synapse for Recommendations Data Processing
-Using the CDM Utility Console Application (CDMUtil_ConsoleApp) creates a database in your Synapse workspace and populates it from the CDM tables manifest in your data lake. 
-It is recommended to use the CMD Utility in a development environment with your database (in case there are any extensions). 
+
+Using the CDM Utility Console Application (CDMUtil_ConsoleApp) creates a database in your Synapse workspace and populates it from the CDM tables manifest in your data lake. It's recommended to use the CMD Utility in a development environment with your database (in case there are any extensions). 
 
 > [!NOTE] 
 > The steps below assume no extension data is added to the RetailSales cube.
 
 ### Steps
+
 1. Follow the steps and download the CDMUtilConsoleApp.zip file from the [Dynamics-365-FastTrack-Implementation-Assets GitHub](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution#2-cdmutil-console-app).
 2. Extract the zip into a local folder.
 3. Open ```CDMUtil_ConsoleApp.dll.config``` file in a text editor and update these values.
@@ -103,9 +108,9 @@ It is recommended to use the CMD Utility in a development environment with your 
    4. Set the ```TargetDbConnectionString``` to the connection string for the Built-in serverless SQL pool of your Synapse workspace.
        1. In the Synapse workspace open the Manage tab: 
           1. Select SQL pools in the submenu. 
-          2. Click on the name Built-in to view it’s properties.
-          3. In the properties dialog choose the ADO.NET connection type you wish to use and then copy the connection string value and paste it into the config file between the double quotes. 
-      >[Note]
+          2. Select the name **Built-in** to view its properties.
+          3. In the properties dialog box, select the ADO.NET connection type you want to use and then copy the connection string value and paste it into the config file between the double quotes. 
+      > [!NOTE]
       > The user must have permission to create databases. For ease of use you might want to use the builtin admin login ```sqladminuser```.
   5. Next, Uncomment the ```ProcessEntities``` node and set it to **true**.
       1. ```<add key="ProcessEntities" value ="true"/>```
@@ -116,10 +121,10 @@ It is recommended to use the CMD Utility in a development environment with your 
 > [!NOTE]
 > When reviewing the output there should be 35 Entities/Views and at least 75 tables and no errors.
 
-
 ## Prepare the Data Lake RetailSales Aggrege Measurement Directory
 
-### Backup your current RetailSales cube data from the Data Lake
+### Back up your current RetailSales cube data from the Data Lake
+
 The easiest way to do this is to rename the RetailSales folder in the data lake. 
 Rename it to ```RetailSales-backup```, or something similar. This preserves the existing data in case troubleshooting is required later.
 
@@ -133,11 +138,14 @@ Rename it to ```RetailSales-backup```, or something similar. This preserves the 
         /RetailSales
 ```
 
-### Create a New RetailSales folder and upload the model file.
+### Create a New RetailSales folder and upload the model file
+
 In the data lake:
 1.	Create a new empty folder named RetailSales.
 2.	Upload the model.json file to the directory.
+
 ## Create a Pipeline to Copy the RetailSales Cube Data
+
 The pipeline will read the RetailSales cube views and export the data to csv files in the data lake.
 
 ### Steps
@@ -151,13 +159,16 @@ The pipeline will read the RetailSales cube views and export the data to csv fil
 
 ### Test execution of the Pipeline
 It’s recommended to test the pipeline using only 1 view. The ```RetailSales_RetailMediaTemplateView``` works well as it’s less than 10 rows usually.
-## Schedule the Pipeline to Run on a Reoccurring Schedule.
+
+## Schedule the Pipeline to Run on a Reoccurring Schedule
+
 Every time the Pipeline runs Azure consumption occurs. 
-It is recommended to schedule executions at 48 hour or longer intervals. You can always execute the Pipeline manually if the need arises to sync data "now". 
+It's recommended to schedule executions at 48 hour or longer intervals. You can always execute the Pipeline manually if the need arises to sync data "now". 
  
 ## Appendix
 
 ### Table list for syncing from Dynamics 365 to ADLS
+
 This list of tables is a subset of all tables needed for the whole RetailSales cube. Only 15 of the views in the RetailSales cube are used by the Recommendations Service and the list of tables needed was filtered accordingly.
 
 #### Retail Sales Cube Table
@@ -243,11 +254,10 @@ DIMENSIONHIERARCHYLEVEL <br>
 DIMENSIONPARAMETER <br>
 OMExplodedOrganizationSecurityGraph |
 
-
-
-
 ### View list for parameter to pass into the Synapse Pipeline
-This is a comma separated list of RetailSales cube views. This is the list of views the pipeline will perform a ‘select *’ operation on and copy the results to the data lake. 
+
+This is a comma separated list of RetailSales cube views. This is the list of views the pipeline will perform a ‘select’ operation on and copy the results to the data lake. 
+
 > [NOTE]
 > The Pipeline parameter must be a list of view names separated by a coma with no spaces or line feeds.
 
@@ -256,7 +266,9 @@ RetailSales_RetailAssortmentRulesView,RetailSales_RetailChannelNavigationHierarc
 ```
 
 ### Environment specific fixes
+
 #### [RETAILCHANNELVIEW]
+
 This view has a hardcoded integer in it that represents a ‘retail channel’ type of organization.  
 The actual value of the type can change from environment to environment or at least from tenant to tenant.
 
@@ -280,17 +292,18 @@ WHERE  ((((T1.OMOPERATINGUNITID = T2.RECID)
               ))
         AND T2.INSTANCERELATIONTYPE IN (8363));
 ```
-To fix this use SSMS attached to the synapse database
-1.	In Dynamics 365 Look up the ChannelID for your online channel
+To fix this use SSMS attached to the synapse database.
+1.	In Dynamics 365, look up the **ChannelID** for your online channel.
 2.	Run this query and copy the value from the first column, ```INSTANCERELATIONTYPE```, and paste it into ```the view definition```
 
 ```
 select INSTANCERELATIONTYPE, NAME, NAMEALIAS, * from dbo.DIRPARTYTABLE where RECID IN (select OMOPERATINGUNITID from dbo.RETAILCHANNELTABLE where RETAILCHANNELID = <channelID>)
 ```
 
-
 ### Troubleshooting
+
 #### Pipeline task fails
+
 There should be 15 pipeline task executions for CopyData. If any of them fail you will need to validate that all the dependent sql objects exist and the queries execute. To get to all the dependencies it is easiest to use SSMS to connect to the database.  You can then right click on a view and select Generate CREATE as to a new window’
 Example error message text includes: 
 - Error: Failure happened on 'Source' side
@@ -298,6 +311,7 @@ Example error message text includes:
 - /RetailSales/RetailSales_xxxxxx
 
 ##### Example scenario
+
 As an example, let’s consider the RetailSales_RetailProductCategory task fails with an error ‘max errors count’
 1.	Using the ```EntityList.json``` file, open it in a text editor (Visual studio code is good for this).
 2.	Find the view definition for``` RetailSales_RetailProductCategory```
