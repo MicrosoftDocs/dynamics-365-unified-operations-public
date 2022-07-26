@@ -4,7 +4,7 @@
 title: Add product recommendations on POS
 description: This topic describes using product recommendations on a point of sale (POS) device.
 author: bebeale
-ms.date: 05/26/2020
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,7 +41,7 @@ Product recommendations are enabled for the following POS scenarios. They are av
 
 1. On the **Product details** page:
 
-    - If a store associate visits a **Product details** page when looking at previous transactions across different channels, the recommendations service suggests additional items that are likely to be purchased together. Depending on the add-ons for the service, retailers can show **Shop similar looks** and **Shop similar description** for products in addition to personalized recommendations for users with previous purchase history.
+    - If a store associate visits a **Product details** page when looking at previous transactions across different channels, the recommendations service suggests additional items that are likely to be purchased together. Depending on the add-ons for the service, retailers can show **Shop similar looks** and **Shop similar description** recommendations for products in addition to personalized recommendations for users with a previous purchase history.
 
     [![Recommendations on the Product details page.](./media/proddetails.png)](./media/proddetails.png)
 
@@ -56,16 +56,15 @@ Product recommendations are enabled for the following POS scenarios. They are av
 
 ## Configure Commerce to enable POS recommendations 
 
-To set up product recommendations, follow these steps:
-
-1. Confirm that you completed the provisioning process for Commerce product recommendations by following the steps in [Enable product recommendations](../commerce/enable-product-recommendations.md). By default, recommendations will appear on both the **Product details** page and **Customer details** page once you complete the provisioning steps and the data has successfully cooked. 
+To set up product recommendations, confirm that you have completed the provisioning process for Commerce product recommendations by following the steps in [Enable product recommendations](../commerce/enable-product-recommendations.md). By default, recommendations appear on both the **Product details** page and **Customer details** page once you complete the provisioning steps and the data has successfully cooked. 
 
 ## Add recommendations to the transaction screen
-1. To add recommendations to the transaction screen, follow the steps in [Add recommendations via the layout manager.](add-recommendations-control-pos-screen.md).
-1. To reflect changes made to POS screen layout designer, run channel configuration job **1070**.
+
+1. To add recommendations to the transaction screen, follow the steps in [Add recommendations via the layout manager](add-recommendations-control-pos-screen.md).
+1. To reflect changes made to POS screen layout designer, in headquarters run channel configuration job **1070**.
 
 > [!NOTE] 
-> If you want to enable POS recommendations with the RecoMock CSV file, you must complete the deployment of the CSV to the Dynamics Lifecycle Services (LCS) asset library before you configure the layout manager. Enabling recommendations isn't necessary when using the RecoMock CSV. The CSV is only available for demo purposes, and is recommended for customers or Solution Architects who want to mimic the appearance of recommendation lists for demo purposes without having to purchase an add-on SKU.   
+> If you want to enable POS recommendations with the RecoMock CSV file, you must complete the deployment of the CSV to the Microsoft Dynamics Lifecycle Services (LCS) asset library before you configure the layout manager. Enabling recommendations isn't necessary when using the RecoMock CSV. The CSV is only available for demo purposes, and is recommended for customers or solution architects who want to mimic the appearance of recommendation lists for demo purposes without having to purchase an add-on SKU.   
 
 ## Additional resources
 
