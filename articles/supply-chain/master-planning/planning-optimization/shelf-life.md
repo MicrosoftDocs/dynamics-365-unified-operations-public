@@ -64,150 +64,197 @@ Use the following procedure to set up shelf life for a product:
 1. Expand the **Manage inventory** FastTab and make the following settings:
     - **Shelf advice period in days** – Specify the period (in days) by which to check a batch of this product to ensure it is suitable for consumption or resale. This value is added to a batch's *manufacturing date* to determine its *shelf advice date*. You can configure the system to generate quality orders when a batch approaches its shelf advice date.
     - **Shelf life in days** – Specify the number of days before a batch of this product expires. This value is added to the date of manufacture to get the *expiration date*. The batch is considered unusable after this date.
-    - **Best before in days**  – Specify the period (in days) after which a batch of this product is still deemed sellable but may no longer retain some of its original properties. This is subtracted from the expiry date to calculate the **best before date**. You can run reports to identify inventory that is past its **sell-by date**. <!-- KFM: are best-before and sell-by date the same? -->
+    - **Best before in days** – Specify the period (in days) after which a batch of this product is still deemed sellable but may no longer retain some of its original properties. This is subtracted from the expiry date to calculate the *best before date*. <!--KFM: Is it correct that we SUBTRACT the best before in days from the expiry date to get the best before date? Seems like we should ADD it to the manufacture date. -->You can run reports to identify inventory that is past its *sell-by date*. <!-- KFM: are best-before and sell-by date the same? Where are these values shown?  -->
 
-### Sellable days
+### Set sellable days rule for each customer
 
-*Sellable days* functionality ensures that products from a batch with a short remaining shelf life are not sent to customers. Moreover, it ensures that when products that are sent to a customer, an adequate number of sellable days will still remain after delivery.
+*Sellable days* functionality ensures that products from a batches that will soon expire aren't sent to customers. Moreover, it ensures that when products are sent to a customer, an adequate number of sellable days will still remain after delivery.
 
-To use the sellable days functionality, you must define a number of sellable days for each customer record. There is no data entity for this process, so you must do it manually. <!-- KFM: continue here. -->
+To use the sellable days functionality, you must define the number of sellable days that applies for each product (or group of products) for each customer. There is no data entity for this process, so you must do it manually.
 
-Navigate to **Sales and marketing \> Customers \> All customers**. Click the **Setup** button under the **Set up** button group on the **Sell** tab. In the dropdown list select *Sellable days*.
+Use the following procedure to set up sellable days per product for each customer:
 
-On the **Sellable days for customer** page the user can define the customer's sellable days for all products (value *All* in the**Item code** field), a group of products (Item group, value *Group* in the**Item code** field), or a specific product. Sellable days is the minimum number of days that the customer requires to sell the product before the batch expires. Sellable days is based on the requested (or confirmed if defined) receipt date for that product on the sales order.
+1. Go to **Sales and marketing \> Customers \> All customers**.
+1. Find and select the customer you want to set up.
+1. On the Action Pane, open the **Sell** tab and, from the **Set up** group, select **Sell \> Sellable days**.
+1. The **Sellable days for customer** page opens. The grid lists existing sellable days rules for each product or group of products. Use buttons on the Action Pane to add or edit rows in the grid as needed. A **Filter** is provided to help you find existing rows.
+1. For each row, make the following settings:
+    - **Item code** – Select one of the following values to specify the scope of items that will be affected.
+        - *Table* – The row applies to a specific item.
+        - *Group* – The row applies to a specific item group.
+        - *All* – The row applies to all items.
+    - **Item relation** – If you set the **Item code** field to *Table*, select a specific item. If you set the **Item code** field to *Group*, select an item group. If you set the **Item code** field to *All*, this 
+    - **Sellable days** – Enter the minimum number of days that the customer requires to sell matching products before the batch expires. Sellable days is based on the requested (or confirmed, if defined) receipt date for the matching products on the sales order.
+    - *(Other product dimensions)* – To further limit the scope of a row, specify other dimension values (such as **Size**, **Color**, and so on) as needed. You can control which dimensions are shown in the grid by selecting **Display dimensions** on the Action Pane.
 
-> [!NOTE]
-> For sellable days to work the item must have the "FEFO date-controlled" flag selected on the item model group associated with the item. If this flag is not enabled the sellable days will be ignored by the system.*
+### Set all relevant products to be FEFO date controlled
+
+For sellable days to work, each relevant item must belong to an item model group that has the **FEFO date-controlled** check box selected.
+
+Use the following procedure to set up an item model group to support sellable days functionality:
+
+1. Go to **Inventory management \> Setup \> Inventory \> Item model groups**.
+1. Either select an existing group from the list pane or create a new one by selecting **New** on the Action Pane.
+1. Expand the **Inventory policies** FastTab.
+1. Select the **FEFO date-controlled** check box.
+1. Make other settings for the group as needed.
+
+Use the following procedure to view or set the item model group that a product belongs to:
+
+1. Go to **Product information management \> Products \> Released products**.
+1. Open the product you want to inspect or edit.
+1. Expand the **General** FastTab and set the **Item model group** to a group that has  **FEFO date-controlled** enabled.
 
 ## Example 1: Simple FEFO, period 10 days, lead time 0 days
 
-This example shows a basic example of shelf life, where the pegging between the supply orders and the demand are done satisfying the goals of the system (1- Minimize sum of delays 2- Maximize sum of FEFO supply 3-Minimize replenishment of inventory)
+This example shows a basic example of shelf life, where pegging between the supply orders and the demand is done to satisfy the goals of the system, which are:
 
-Item and master planning setup:
+- Minimize sum of delays
+- Maximize sum of FEFO supply
+- Minimize replenishment of inventory
 
-- **Replenishment strategy (coverage code)**: *Period*
-- **Period**: *10 days*
-- **Shelf life**: *10 days*
-- **Sellable days**: *0 days*
-- **Lead time**: *0 days*
-- **Type of planned order (default order settings of the item)**: *Purchase order*
+The system has the following item and master plan settings:
 
-There are three Sales orders (SO) for the item above:
+- **Replenishment strategy (coverage code)** – Period
+- **Period** – 10 days
+- **Shelf life** – 10 days
+- **Sellable days** – 0 days
+- **Lead time** – 0 days
+- **Type of planned order (default order settings of the item)** – Purchase order
 
-- SO1 Quantity (Qty) = 2, requested for today+3 days,
-- SO2 Qty =1, requested for today+4 days,
-- SO3 Qty =1, requested for today+5 days.
+There are three sales orders (SO) for the item:
 
-All these Sales orders create demand for item.
+- **SO1** – Quantity (qty) = 2, requested for today +3 days
+- **SO2** – Qty = 1, requested for today +4 days
+- **SO3** – Qty = 1, requested for today +5 days
 
-There is existing supply for the item:
+All of these sales orders create demand for the item.
 
-- On-hand – On-hand quantity = 1 and its expiration date is Today + 5 days
-- Purchase order (PO) with delivery date is Today+2 days, PO qty = 1 and Expiration date = Today + 4 days
+The following supply exists for the item:
 
-The system will create a list of supply that can cover these demands and sort this list by the Expiration date (FEFO)
+- **On-hand inventory** – Qty = 1, expiration date = today + 5 days
+- **Purchase order (PO1)** – Receipt date = today +2 days, qty = 1, expiration date = today + 4 days
 
-Master planning will create the needed pegging between supply and demand, as well as create any needed demand based on the Supply (FEFO) list and considering availability date. Thus, SO1 can be fulfilled by On-hand quantity and cannot be fulfilled by PO because the availability date for PO is one day later than SO1 needs. As a result, SO1 still makes a demand for one unit of goods.
+The system will create a list of supply that can cover this demand, and it will sort the list by expiration date (using FEFO).
 
-SO2 can be covered by PO because the PO arrival will be available at requested time and the Expiration date is still to be valid. So, the SO2 requirement will be fully covered by PO.
+Master planning will create the needed pegging between supply and demand. It will also create any needed demand based on the supply list (using FEFO) and consider availability date.
 
-SO3 will not be covered because lack of available resources. It means that SO3 requires 1 qty.
+- SO1 can be fulfilled by on-hand quantity, but can't be fulfilled by PO1 because the availability date for PO1 is one day later than SO1 requires. As a result, SO1 generates a demand for one unit of goods. <!--KFM: Seems like PO1 comes one day before S01 requires. Right? -->
+- SO2 can be covered by PO1 because PO1 will arrive by the requested time and the expiration date will still be valid. Therefore, the SO2 requirement is fully covered by PO1.
+- SO3 isn't covered because resources aren't available. As a result, SO3 generates a demand for one unit of goods.
 
-To cover all remaining requirements the system will create a Planned purchase order (PPO) for Today, qty 2 and Exp Today+10 days. The final result is shown in the table below.
+To cover all the remaining requirements, the system will create the following planned purchase order:
 
-| Demand (sorted requirement date) | Pegging |
-|-------------------------|-------------------------|
-| SO1 Today + 3 , 2 qty | On-hand Today , 1 qty, Exp Today + 5</br>PPO Today, 1 qty, Exp Today +10 |
-| SO2 Today + 4 , 1 qty | PO Today + 2, 1 qty, Exp Today + 4 |
-| SO3 Today + 5 , 1 qty | PPO Today, 2 qty, Exp Today +10 |
+- **PPO1** – Receipt date = today, qty = 2, expiration date = today + 10 days <!--KFM: Illustration shows qty = 1. What do we mean? -->
+
+The following table shows the final result:
+
+| Demand (sorted by requirement date) | Pegging |
+|---|---|
+| **SO1** – Shipping date = today + 3 days, qty = 2 | **On-hand** – Qty = 1, expiration date = today + 5 days</br>**PPO** – Receipt date = today, qty = 1, expiration date = today + 10 days|
+| **SO2** – Shipping date = today + 4 days, qty = 1 | **PO1** – Receipt date = today + 2 days, 1 qty, expiration date = today + 4 days |
+| **SO3** – Shipping date = today + 5 days, qty = 1 | **PPO** – Receipt date = today, qty = 2, expiration date = today + 10 days |
 
 The result is shown on the picture below. Note that PO represents purchase order and PPO planned purchase order.
+
+<!-- KFM: Illustration notes:
+- The illustration doesn't match the text. Shows PPO for just 1 qty; shows S01 covered by PO1 and on-hand; shows S02 covered by on-hand, shows S03 covered by PPO1. None of this matches. 
+- Expiration date for PO1 (blue) is shown too short.
+- Meaning of period and shelf life bar at the bottom is not clear. 
+- Add numbers for PO1 and PPO1
+- Clean up capitalization and notation
+ -->
 
 ![Example 1: Simple FEFO, period 10 days, lead time 0 days.](media/fefo-example-1.png "Example 1: Simple FEFO, period 10 days, lead time 0 days")
 
 ## Example 2: Simple FEFO, requirement, lead time 3 days
 
-This example illustrates how the system has the goal to minimize delays, which in some cases (as shown in this example) may result in overordering.
+This example illustrates how the system seeks to minimize delays, which can sometimes result in overordering.
 
-Initial conditions:
+The system has the following item and master plan settings:
 
-- **Replenishment strategy**: *Requirement*
-- **Shelf life**: *10 days*
-- **Sellable days**: *0 days*
-- **Lead time**:
-  - *Trade agreements: if qty = 1 the Lead time = 4*
-  - *Trade agreements: if qty = 2 the Lead time = 3*
-- **Type of planned order**: *Purchase order*
+- **Replenishment strategy** – Requirement
+- **Shelf life** – 10 days
+- **Sellable days** – 0 days
+- **Lead time** – Established by the following vendor trade agreements:
+  - **Trade agreement 1** – If qty = 1, then the lead time = 4
+  - **Trade agreement 2** – If qty = 2, then the lead time = 3
+- **Type of planned order** – Purchase order
 
-The system has one Sales order (SO):
+The system has one sales order (SO1):
 
-- SO1 Quantity (Qty) = 2 requested for today+3 days,
+- **SO1** – Qty = 2, requested for today +3 days
 
-This demand may be covered by the existing supply with a confirmed purchase order:
+This demand is covered by the existing supply and a confirmed purchase order (PO):
 
-- On-hand – the items that are always available on warehouse and can be shipped at any time. On-hand quantity = 1 and its expiration date is Today + 2 days
-- Purchase order with delivery date is Today+3 days, PO qty = 1 and Expiration date = Today + 4 days
+- **On-hand inventory** – Available = today, qty = 1, expiration date = today + 2 days
+- **PO1** – Receipt date = today + 3 days, qty = 1, expiration date = today + 4 days
 
-All these conditions are reflected in the table below.
+SO1 can't be fulfilled by on-hand inventory because the inventory expiration date is before the shipment date. PO1 can cover the SO1 requirement with just 1 qty. As a result, SO1 generates demand for one unit of goods. To cover this requirement, the system will create a planned purchase order (PPO1).
 
-SO1 cannot be fulfilled by On-hand quantity because the Expiration date is less than the shipment date. PO can cover the SO requirement by 1 qty. As a result, SO1 still makes a demand for one unit of goods.
-
-To cover this requirement the system will create a Planned purchase order (PPO). Since the system has two Trade agreements, the first one for Qty=1 with Lead time = 4 days and the second one for Qty=2 with Lead time = 3 days, the system will create PPO for Today+3 days to minimize delay, according to the second Trade agreement, we will have overdelivery and Qty=2 and Exp Today+10. The final result is shown in the table below.
-
-This is the key decision that the system will take to minimize delays, so that it is always preferable to minimize delays rather than overordering.
+The system has two trade agreements (the first one for qty = 1, lead time = 4 days; and the second one for qty = 2, lead time = 3 days), so the system will minimize delay by creating planned purchase order (PPO1) that meets the second trade agreement. Therefore, we will have overdelivery (qty = 2, expiration date = today + 10 days). The following table shows the final result.
 
 | Demand (sorted requirement date) | Pegging |
-|-------------------------|-------------------------|
-| SO1 Today + 3 , 2 qty | PO Today + 3, 1 qty, Exp Today + 4</br>**PPO Today+3, 1 qty, Exp Today +10**</br>**Net requirement: 0 qty** |
-|  |  |
+|---|---|
+| **SO1** – Shipping date = today + 3 days, qty = 2 | **PO1** – Receipt date = today + 3 days, qty = 1, expiration date = today + 4 days</br>**PPO1** – Receipt date = today + 3 days, qty = 1, expiration date = today + 10 days</br>**Net requirement** – 0 qty |
 
-As the result, after planning the system will have On-hand Today with Qty=1 and Expiration date = Today+2 and overdelivery PPO for Today+3 with Qty=2 and Expiration date Today+10.
+<!--KFM: Is the "Net requirement" line really needed above? -->
 
-The result is shown on the picture below.
+The following illustration shows a timeline for this example.
+
+<!-- KFM: Illustration notes:
+- Minimazing (typo). 
+- Add numbers for PO1 and PPO1
+- Clean up capitalization and notation
+- Meaning of shelf life bar at the bottom is not clear. 
+ -->
 
 ![Example 2: Simple FEFO, requirement, lead time 3 days.](media/fefo-example-2.png "Example 2: Simple FEFO, requirement, lead time 3 days")
 
 ## Example 3: Simple FEFO, requirement, lead time 3 days, sellable days 5 days
 
-This example shows how shelf life works when adding sellable days for the item
+This example shows how shelf life works when adding sellable days for an item.
 
-Initial conditions:
+The system has the following item and master plan settings:
 
-- **Replenishment strategy**: *Requirement*
-- **Shelf life**: *10 days*
-- **Sellable days**: *5 days*
-- **Lead time**: 3 days
-- **Sellable days**: 5 days
-- **Type of planned order**: *Purchase order*
+- **Replenishment strategy** – Requirement
+- **Shelf life** – 10 days
+- **Sellable days** – 5 days
+- **Lead time** – 3 days
+- **Sellable days** – 5 days
+- **Type of planned order** – Purchase order
 
-There are three Sales orders (SO):
+The following sales orders exist in the system:
 
-- SO1 Quantity (Qty) = 2 requested receipt date for today+2 days,
-- SO2 Quantity = 1 requested receipt date for today+3 days,
-- SO3 Quantity = 1 requested receipt date for today+5 days,
+- **SO1** – Qty = 2, requested receipt date = today + 2 days
+- **SO2** – Qty = 1, requested receipt date = today + 3 days
+- **SO3** – Qty = 1, requested receipt date = today + 5 days
 
-This demand may be covered by the existing supply with a confirmed purchase order:
+This demand can be covered by existing supply and a confirmed purchase order:
 
-- On-hand – the items that are always available on warehouse and can be shipped at any time. On-hand quantity = 1 and its expiration date is Today + 6 days
-- Purchase order with delivery date is Today+3 days, PO qty = 3 and Expiration date = Today + 10 days
+- **On-hand inventory** – Available = today, qty = 1, expiration date = Today + 6 days
+- **PO1** – Receipt date = today + 2 days, qty = 3, expiration date = today + 10 days
 
-The list of the Pegging candidates will be created based on the Supply (FEFO) list and considering availability date. Thus, SO1 cannot be fulfilled by On-hand quantity because the Expiration date is less than the requested receipt date + 5 Sellable days for a Customer. PO can cover the SO1 requirement by 1 qty and SO2 requirement by 2 qty. As a result, only SO3 still makes a demand for one unit of goods.
+The system creates a list of pegging candidates based on the supply (FEFO) list and availability dates. Therefore, SO1 can't be fulfilled by the on-hand inventory because that inventory expires before the end of the sellable days required by the customer (requested receipt date + 5 days). PO1 can cover the SO1 requirement with 2 units and SO2 requirement with 1 unit. As a result, only SO3 still has uncovered demand for one unit of goods. To cover this requirement, the system will create the following planned purchase order:
 
-To cover this requirement the system will create a Planned purchase order (PPO).
+- **PP01** – Receipt day = today + 5 days, qty = 1, expiration date = today + 10 days
 
-Since the system has Lead time = 3 days and demand Today+5 days, the system will create PPO for Today+5 days to minimize a delay, with Quantity =1 and Expiration date = Today+10.
-
-As the result, after planning the system will have On-hand Today with Qty=1 and Expiration date = Today+6.
-
-The result is shown in the table and on the picture below.
-
+The result is shown in the following table and illustration.
+<!-- KFM: Note that I changed the PO1 date to today +2 days (from 3 days). I *think* this is required in order for the example to work, and also matches the illustration. Please confirm. -->
 | Demand (sorted requirement date) | Pegging |
-|-------------------------|-------------------------|
-| SO1 Today + 2 , 2 qty | PO Today + 3, 2 qty, Exp Today + 10 |
-| SO2 Today + 3 , 1 qty | PO Today + 3, 1 qty, Exp Today + 10 |
-| SO3 Today + 5 , 1 qty | PPO Today+5, 1 qty, Exp Today +10 |
+|---|---|
+| **SO1** – Shipping date = today + 2 days, qty = 2 | **PO1** – Receipt date = today + 2 days, qty = 2, expiration date = today + 10 days |
+| **SO2** – Shipping date = today + 3 days, qty = 1 | **PO1** – Receipt date = today + 2 days, qty = 1, expiration date = today + 10 days |
+| **SO3** – Shipping date = today + 5 days, qty = 1 | **PPO1** – Receipt date = today + 5 days, qty = 1, expiration date = today + 10 days |
 
 ![Example 3: Simple FEFO, requirement, lead time 3 days, sellable days 5 days.](media/fefo-example-3.png "Example 3: Simple FEFO, requirement, lead time 3 days, sellable days 5 days")
+
+<!-- KFM: Illustration notes:
+- Text for PO1 is incorrect (Should be Exp = today + 10)
+- Add numbers for PO1 and PPO1
+- Clean up capitalization and notation
+- Meaning of shelf life bar at the bottom is not clear. 
+ -->
 
 ## Example 4: Simple FEFO, period, lead time depends on quantity
 
@@ -215,12 +262,12 @@ This example illustrates that the main objective of the system is to minimize de
 
 Initial conditions:
 
-- **Replenishment strategy**: *Period*
-- **Period** is equal to **Shelf life**
+- **Replenishment strategy** – Period
+- **Period** – is equal to **Shelf life**
 - **Trade agreements:**
   - If qty is 1, the lead time is 5
   - If qty is 2, the lead time is 0
-- **Type of planned order**: *Purchase order*
+- **Type of planned order** – Purchase order
 
 There are two Sales orders (SO):
 
@@ -239,7 +286,7 @@ As the result, after planning the system will have Purchase order PO1 with deliv
 The result is shown on the picture below.
 
 | Demand (sorted requirement date) | Pegging |
-|-------------------------|-------------------------|
+|---|---|
 | SO1 Today, 1 qty | PPO Today, 1 qty, Exp Today +10 |
 | SO2 Today + 6 , 1 qty | PO2 Today + 3, 1 qty, Exp Today + 7 |
 |  | Note: PO1 is not in use, PPO overorderdering qty 1 |
@@ -254,9 +301,9 @@ Negative days are the number of days that you're willing to wait before you orde
 
 Initial conditions:
 
-- **Replenishment strategy**: *Requirement*
-- **Negative days:** *10*
-- **Type of planned order**: *Purchase order*
+- **Replenishment strategy** – Requirement
+- **Negative days** – 10
+- **Type of planned order** – Purchase order
 
 The system has a Sales orders (SO):
 
@@ -275,7 +322,7 @@ The result is shown on the picture below.
 As shown, the system will cover the demand with existing supply despite the delay in delivery.
 
 | Demand (sorted requirement date) | Pegging |
-|-------------------------|-------------------------|
+|---|---|
 | SO1 Today, 1 qty | PO Today + 3, 1 qty, Exp Today + 5 |
 
 ![Example 5: Simple FEFO, requirement, 10 negative days.](media/fefo-example-5.png "Example 5: Simple FEFO, requirement, 10 negative days")
@@ -286,9 +333,9 @@ This example will illustrate that how shelf life works when a number of negative
 
 Initial conditions:
 
-- **Replenishment strategy**: *Requirement*
-- **Negative days:** 5
-- **Type of planned order**: *Purchase order*
+- **Replenishment strategy** – Requirement
+- **Negative days** – 5
+- **Type of planned order** – Purchase order
 
 The system has a Sales orders (SO):
 
@@ -306,9 +353,8 @@ The PO1 will not be used in this planning exercise.
 The result is shown on the picture below.
 
 | Demand (sorted requirement date) | Pegging |
-|-------------------------|-------------------------|
+|---|---|
 | SO1 Today, 2 qty | PO1 Today, 1 qty, Exp Today + 1 |
 |  | PPO Today, 1 qty, Exp Today + 10 |
-|  |  |
 
 ![Example 6: Simple FEFO, requirement, 5 negative days.](media/fefo-example-6.png "Example 6: Simple FEFO, requirement, 5 negative days")
