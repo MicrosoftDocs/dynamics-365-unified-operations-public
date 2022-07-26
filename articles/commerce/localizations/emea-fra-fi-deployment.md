@@ -187,15 +187,3 @@ To create deployable packages that contain Commerce components, and to apply tho
 
 1. Open the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 1. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
-
-## Enable the digital signature in offline mode for Modern POS
-
-To enable the digital signature in offline mode for Modern POS, you must follow these steps after you activate Modern POS on a new device.
-
-1. Sign in to POS.
-1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending downloads** field is **0** (zero), the database is fully synchronized.
-1. Sign out of POS.
-1. Wait for the offline database to be fully synchronized.
-1. Sign in to POS.
-1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending transactions in offline database** field is **0** (zero), the database is fully synchronized.
-1. Restart Modern POS.
