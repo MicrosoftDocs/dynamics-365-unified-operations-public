@@ -4,7 +4,7 @@
 title: Grid capabilities
 description: This article describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
 author: jasongre
-ms.date: 04/25/2022
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -27,6 +27,7 @@ ms.dyn365.ops.version: Platform update 33
 # Grid capabilities
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 The new grid control provides several useful and powerful capabilities that you can use to enhance user productivity, construct more interesting views of your data, and get meaningful insights into your data. This article will cover the following capabilities: 
 
@@ -39,11 +40,12 @@ The new grid control provides several useful and powerful capabilities that you 
 - Stretchable columns
 
 ## Showing calculated values
-In finance and operations apps, users have the ability to see a show a calculated value for each numeric column in a grid. A footer section at the bottom of the grid shows these calculated values.  
+In finance and operations apps, users have the ability to see a calculated value for each numeric column in a grid. A footer section at the bottom of the grid shows these calculated values.  
 
 [![Show calculated values in grids.](./media/grids-aggregation.png)](./media/grids-aggregation.png)
 
-In versions prior 10.0.29, the only supported calculated value is totals; however, starting in 10.0.29 and later after enabling the **Extended grid aggregation capabilities** feature, users can choose between the following four calculated values: 
+In versions prior to 10.0.29, the only supported calculated value is totals; however, starting in version 10.0.29, after enabling the **Extended grid aggregation capabilities** feature, users can choose between the following four calculated values: 
+
 -  Minimum
 -  Maximum
 -  Total
@@ -61,7 +63,7 @@ There is a footer area at the bottom of every tabular grid in finance and operat
 This footer is hidden by default, but you can turn it on. To show the footer for a grid, select the **Grid options** button in the grid header, and then select the **Show footer** option. After you turn on the footer for a particular grid, that setting will be remembered until the user chooses to hide the footer. To hide the footer, select **Hide footer** on the **Grid options** menu.
 
 ### Specifying columns with calculated values
-Currently, no columns show calculated values by default. Instead, this is considered a one-time setup activity, similar to adjusting the widths of columns in grids. Once you specify that you want to see a calcluated value for a column, that setting will be remembered the next time you visit the page.
+Currently, no columns show calculated values by default. Instead, this is considered a one-time setup activity, similar to adjusting the widths of columns in grids. After you specify that you want to see a calcluated value for a column, that setting will be remembered the next time you visit the page.
 
 There are two ways to configure a column to show a calculated value: 
 
