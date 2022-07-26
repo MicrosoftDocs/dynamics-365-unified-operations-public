@@ -33,7 +33,9 @@ ms.dyn365.ops.version: 10.0.5
 
 This article describes how to configure an environment using an alternate dataflow to provide data to the recommendations service. 
 
-![Overview of how the alternate dataflow will fit into the environment](media/alternate-flow.png)
+The following illustration compares out-of-band (OOB) and alternate dataflows in an environment.
+
+![Overview of how the alternate dataflow will fit into an environment](media/alternate-flow.png)
 
 ## Assumptions
 
@@ -57,7 +59,7 @@ For instructions on setting up Microsoft Power Platform, see [Enable the Microso
 To install the Export to Data Lake add-in, follow the instructions in [Install Export to Azure Data Lake add-in](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).
 
 > [!NOTE]
-> Make notes of these values. They will be needed later during the configuration steps.
+> Make note of the configuration values because they will be needed for some of the steps below.
 
 ### Configure tables to export in Dynamics 365
 
@@ -69,7 +71,7 @@ To configure tables to export in Dynamics 365, follow these steps.
 
     `https://<environment-URL>/?mi=DataFeedsDefinitionWorkspace`
 
-1. Open the **Export to Data Lake** form and copy the tables listed in [List of Retail Sales cube tables](#list-of-retail-sales-cube-tables).
+1. Open the **Export to Data Lake** form and copy the tables listed in [List of RetailSales cube tables](#list-of-retailsales-cube-tables).
 1. On the **System Name** column, expand the filter options drop-down list. 
 1. For the filter type, select **is one of**, place your cursor in the text box, and then paste in the table list copied from the **Export to Data Lake** form.
 1. At the bottom of the filter drop-down list, select **Apply**.
@@ -89,7 +91,7 @@ To keep your Azure resources organized, it's recommnended that you put the Azure
 Use the Common Data Model (CDM) utility console application (CDMUtil_ConsoleApp) to create a database in your Synapse workspace and populate it from the CDM tables in your Azure Data Lake storage. It's recommended to use the CMD utility in a development environment with your database, in case there are any extensions. 
 
 > [!NOTE] 
-> The following steps assume that no extension data is being added to the Retail Sales cube.
+> The following steps assume that no extension data is being added to the RetailSales cube.
 
 To create a database in Synapse, follow these steps.
 
@@ -119,9 +121,9 @@ To create a database in Synapse, follow these steps.
 
 ## Prepare the Data Lake RetailSales Aggregate Measurements directory
 
-### Back up your current Retail Sales cube data from Azure Data Lake storage
+### Back up your current RetailSales cube data from Azure Data Lake storage
 
-The easiest way to back up your current Retail Sales cube data is to rename the **RetailSales** directory in Azure Data Lake storage to **RetailSales-backup** or something similar. This method preserves the existing data in case troubleshooting is required later.
+The easiest way to back up your current RetailSales cube data is to rename the **RetailSales** directory in Azure Data Lake storage to **RetailSales-backup** or something similar. This method preserves the existing data in case troubleshooting is required later.
 
 The **/RetailSales** cube folder can be found in the following location: 
 
@@ -134,11 +136,11 @@ To create a new **RetailSales** directory and upload the **model.json** file in 
 1. Create a new empty directory named **RetailSales** at the same level as the previous directory.
 1. Upload the **model.json** file to the new directory.
 
-## Create a pipeline to copy the Retail Sales cube data
+## Create a pipeline to copy the RetailSales cube data
 
-The pipeline will read the Retail Sales cube views and export the data to .csv files in the Azure Data Lake storage.
+The pipeline will read the RetailSales cube views and export the data to .csv files in the Azure Data Lake storage.
 
-To create a pipeline to copy the Retail Sales cube data, follow these steps.
+To create a pipeline to copy the RetailSales cube data, follow these steps.
 
 1.	In the Synapse workspace, select the **Integrate** tab.
 1.	Select the plus symbol (**+**), and then select **Import from pipeline template**.
@@ -157,9 +159,9 @@ Every time the pipeline runs, Azure consumption occurs. It's recommended to sche
  
 ## Table list for syncing from Dynamics 365 to Azure Data Lake Store
 
-The following list of tables is a subset of all tables needed for the whole Retail Sales cube. Only 15 of the views in the Retail Sales cube are used by the recommendations service and the list of tables needed was filtered accordingly.
+The following list of tables is a subset of all tables needed for the whole RetailSales cube. Only 15 of the views in the RetailSales cube are used by the recommendations service and the list of tables needed was filtered accordingly.
 
-### List of Retail Sales cube tables
+### List of RetailSales cube tables
 
 |Table 1|
 | --- |
@@ -244,7 +246,7 @@ OMExplodedOrganizationSecurityGraph |
 
 ### View list for parameter to pass into the Synapse pipeline
 
-The following comma-separated list of Retail Sales cube views contains the views that the pipeline will perform a "select" operation on and then copy the results to Azure Data Lake storage. 
+The following comma-separated list of RetailSales cube views contains the views that the pipeline will perform a "select" operation on and then copy the results to Azure Data Lake storage. 
 
 RetailSales_RetailAssortmentRulesView,RetailSales_RetailChannelNavigationHierarchiesView,RetailSales_RetailChannelNavigationHierarchyCatalogProductsView,RetailSales_RetailChannelNavigationHierarchyCategoryNodesView,RetailSales_RetailChannelNavigationHierarchyCategoryProductsView,RetailSales_RetailMediaBaseUrlChannelView,RetailSales_RetailMediaRelativeUrlProductView,RetailSales_RetailMediaTemplateView,RetailSales_RetailOptOutCustomersView,RetailSales_RetailProductCategory,RetailSales_RetailProductTransaction,RetailSales_RetailProductVariantDimensionsView,RetailSales_RetailRecoListConfigurationParametersView,RetailSales_RetailRecoListsSharedParametersView,RetailSales_RetailEcoResProductTranslation|
 
@@ -294,7 +296,7 @@ To update the hardcoded integer, follow these steps.
 
 There should be 15 pipeline task executions for the **CopyData** task. If any of them fail, you will need to validate that all the dependent SQL objects exist and the queries execute. To get to all the dependencies, it is easiest to use SQL Server Management Studio to connect to the database. You can then right-click on a view and select Generate CREATE as to a new window’
 
-Example error message text includes: 
+Example error message text can include the following: 
 - Error: Failure happened on 'Source' side
 - Error handling external file: 'Max errors count'.   
 - /RetailSales/RetailSales_xxxxxx
