@@ -4,7 +4,7 @@
 title: Build forms that fully utilize saved views
 description: This article explains some of the technical aspects of saved views and describes considerations with form development to ensure forms work well with saved views.
 author: jasongre
-ms.date: 02/08/2022
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -128,7 +128,7 @@ In the long term, the plan is for views to replace modeled secondary list pages.
 ## Improving form load performance 
 Traditionally, personalizations have been applied during the super() of run(), after the form query has been initially executed. Because of this timing, if personalizations included an added field, the query may be re-executed to ensure the extra data was fetched. With saved views, the application of personalizations related to the default view was done at the same time as before. However, the possibility for at least one extra execution of the query during form load increased since this would occur if the default view contained any personalizations that impacted the query, such as added fields, modified filters, or changes to sorting.  
 
-Starting in version 10.0.29, you can improve the performance of form load for default views with personalizations that impact the query with the **Saved views performance enhancement** feature. This feature modifies when certain parts of the default view are applied so that all query-related changes (i.e. added fields, filters, and sorts) are in place when the form initially executes its query in super() of run() resulting in the system executing the form query once during form load, instead of potentially multiple times, which can speed up the load time for forms.   
+Starting in version 10.0.29, you can improve the performance of form load for default views with personalizations that impact the query with the **Saved views performance enhancement** feature. This feature modifies when certain parts of the default view are applied so that all query-related changes (such as added fields, filters, and sorts) are in place when the form initially executes its query in super() of run() resulting in the system executing the form query once during form load, instead of potentially multiple times, which can speed up the load time for forms.   
 
 Because this feature changes when certain personalizations associated with the default view are applied, however, there is the potential for a change in behavior on the page. In particular, any code impacting the query in the **OnPostRun** event handler of the form will now be run after the view query is executed instead of before. Evaluation of any query-impacting code in this event handler on forms should be evaluated before enabling this feature. 
 
