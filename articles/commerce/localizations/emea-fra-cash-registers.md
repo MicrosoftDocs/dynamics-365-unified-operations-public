@@ -492,6 +492,18 @@ To enable audit events, you must reinitialize the Commerce extensible enumeratio
 1. On the **Commerce parameters** page, on the **General** FastTab, select **Initialize**. For more information, see [Initialize seed data in new Retail environments](../enable-configure-retail-functionality.md).
 1. There is an option to separately configure the scheduler. Go to **Commerce scheduler** \> **Initialize Commerce scheduler**. In the **Initialize Commerce scheduler** dialog box, select **OK**.
 
+### Enable the digital signature in offline mode
+
+To enable the digital signature in offline mode, you must follow these steps after you activate POS on a new device.
+
+1. Sign in to POS.
+1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending downloads** field is **0** (zero), the database is fully synchronized.
+1. Sign out of POS.
+1. Wait for the offline database to be fully synchronized.
+1. Sign in to POS.
+1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending transactions in offline database** field is **0** (zero), the database is fully synchronized.
+1. Restart POS.
+
 ### Configure channel components
 
 > [!WARNING]
