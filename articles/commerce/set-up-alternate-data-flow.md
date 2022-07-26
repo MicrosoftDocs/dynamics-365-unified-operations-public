@@ -263,10 +263,9 @@ RetailSales_RetailAssortmentRulesView,RetailSales_RetailChannelNavigationHierarc
 
 ### [RETAILCHANNELVIEW]
 
-This view has a hardcoded integer in it that represents a ‘retail channel’ type of organization.  
-The actual value of the type can change from environment to environment or at least from tenant to tenant.
+This view has a hardcoded integer in it that represents a "retail channel" type of organization. The actual value of the type can change from environment to environment or at least from tenant to tenant.
 
-```
+```SQL
 CREATE OR ALTER   VIEW [dbo].[RETAILCHANNELVIEW]
 AS
 SELECT T1.RECID AS RECID1,
@@ -286,19 +285,23 @@ WHERE  ((((T1.OMOPERATINGUNITID = T2.RECID)
               ))
         AND T2.INSTANCERELATIONTYPE IN (8363));
 ```
-To fix this use SQL Server Management Studio attached to the synapse database.
-1.	In Dynamics 365, look up the **ChannelID** for your online channel.
-2.	Run this query and copy the value from the first column, ```INSTANCERELATIONTYPE```, and paste it into ```the view definition```
 
-```
-select INSTANCERELATIONTYPE, NAME, NAMEALIAS, * from dbo.DIRPARTYTABLE where RECID IN (select OMOPERATINGUNITID from dbo.RETAILCHANNELTABLE where RETAILCHANNELID = <channelID>)
-```
+To update the hardcoded integer, follow these steps.
+
+1. In Dynamics 365, look up the **ChannelID** for your online channel.
+1. In SQL Server Management Studio attached to the Synapse database, run the following query:
+
+    ```SQL
+    select INSTANCERELATIONTYPE, NAME, NAMEALIAS, * from dbo.DIRPARTYTABLE where RECID IN (select OMOPERATINGUNITID from dbo.RETAILCHANNELTABLE where RETAILCHANNELID =     <channelID>)
+    ```
+1. Copy the value from the first column (**INSTANCERELATIONTYPE**), and then paste it into the view definition.
 
 ## Troubleshooting
 
 ### Pipeline task fails
 
 There should be 15 pipeline task executions for CopyData. If any of them fail, you will need to validate that all the dependent SQL objects exist and the queries execute. To get to all the dependencies, it is easiest to use SQL Server Management Studio to connect to the database.  You can then right click on a view and select Generate CREATE as to a new window’
+
 Example error message text includes: 
 - Error: Failure happened on 'Source' side
 - Error handling external file: 'Max errors count.   
@@ -307,26 +310,25 @@ Example error message text includes:
 #### Example scenario
 
 As an example, let’s consider the RetailSales_RetailProductCategory task fails with an error ‘max errors count’
-1.	Using the ```EntityList.json``` file, open it in a text editor (Visual studio code is good for this).
-2.	Find the view definition for``` RetailSales_RetailProductCategory```
+
+1. Using the ```EntityList.json``` file, open it in a text editor (Visual studio code is good for this).
+1. Find the view definition for``` RetailSales_RetailProductCategory```
 
 
-```
+```SQL
 CREATE  VIEW [dbo].[RetailSales_RetailProductCategory] AS SELECT 0 AS ROW_UNIQUEKEY ,CATEGORY AS CATEGORYID ,PRODUCT AS PRODUCTID ,PRODUCTNAME ,CATEGORYNAME ,PARENTCATEGORY AS PARENTCATEGORYID ,PARTITION ,RECID FROM RetailProductCategoryView
 ```
 
-3.	This view depends on only 1 other view: ```RetailProductCategoryView```
-4.	Find the view definition for ```RetailProductCategoryView```.
+1. This view depends on only 1 other view: ```RetailProductCategoryView```
+1. Find the view definition for ```RetailProductCategoryView```.
 
-
-```
+```SQL
 CREATE VIEW [DBO].[RETAILPRODUCTCATEGORYVIEW] AS SELECT T1.CATEGORY AS CATEGORY, T1.PRODUCT AS PRODUCT, T1.PARTITION AS PARTITION, T1.RECID AS RECID, T2.PRODUCTNAME AS PRODUCTNAME, T2.PARTITION AS PARTITION#2, T3.NAME AS CATEGORYNAME, T3.PARENTCATEGORY AS PARENTCATEGORY, T3.PARTITION AS PARTITION#3 FROM RETAILPRODUCTCATEGORY T1 CROSS JOIN ECORESPRODUCTTRANSLATIONS T2 CROSS JOIN RETAILCATEGORYEXPANDED T3 WHERE((( T1.PRODUCT = T2.PRODUCT) AND ( T1.PARTITION = T2.PARTITION)) AND (( T1.CATEGORY = T3.RECID) AND ( T1.PARTITION = T3.PARTITION)))
-
 ```
 
-5.	This view depends on 3 other views: ```RETAILPRODUCTCATEGORY```, ```ECORESPRODUCTTRANSLATIONS```, ```RETAILCATEGORYEXPANDED```
-6.	Find the definitions for each of these views and list their dependencies.  Continue this until you find all the dependent views.
-7.	In this example here is the whole list in dependency tree order. There are 13 views that need to be validated.
+1. This view depends on 3 other views: ```RETAILPRODUCTCATEGORY```, ```ECORESPRODUCTTRANSLATIONS```, ```RETAILCATEGORYEXPANDED```
+1. Find the definitions for each of these views and list their dependencies.  Continue this until you find all the dependent views.
+1. In this example here is the whole list in dependency tree order. There are 13 views that need to be validated.
 
 - RetailSales_RetailProductCategory
    - RetailProductCategoryView
@@ -346,9 +348,9 @@ CREATE VIEW [DBO].[RETAILPRODUCTCATEGORYVIEW] AS SELECT T1.CATEGORY AS CATEGORY,
          - ECORESCATEGORYHIERARCHYROLE
 
 
-8.	Now a quick copy and paste using excel you can create 13 **select count(\*) from <view_name>** statements. Run these in SQL Server Management Studio with results to text and you can scroll through the results to see if any of the views failed. The initial error suggests that at least one of them will
+1. Now a quick copy and paste using excel you can create 13 **select count(\*) from <view_name>** statements. Run these in SQL Server Management Studio with results to text and you can scroll through the results to see if any of the views failed. The initial error suggests that at least one of them will.
 
- ```
+```SQL
 select count(*) from	RetailProductCategoryView
 select count(*) from	RETAILPRODUCTCATEGORY
 select count(*) from	ECORESPRODUCTCATEGORY
@@ -364,7 +366,7 @@ select count(*) from	RETAILCATEGORYEXPANDED
 select count(*) from	ECORESCATEGORY
 ```
 
-9.	A technique to validate what you are looking at, you can create  a root dependent view to generate the view definition in SQL Server Management Studio and verify there is a data lake file column named **r.filepath**. That indicates the view you are looking at is reading data from the data lake.
+1. A technique to validate what you are looking at, you can create  a root dependent view to generate the view definition in SQL Server Management Studio and verify there is a data lake file column named **r.filepath**. That indicates the view you are looking at is reading data from the data lake.
 
 ## Additional resources
 
