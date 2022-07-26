@@ -9,13 +9,13 @@
   - name: Dynamics 365 Finance
     tocHref: /dynamics365/fin-ops-core/
     topicHref: /dynamics365/fin-ops-core/index
-  - name: Dynamics 365 Commerce
+  - name: Dynamics 365 Finance
     tocHref: /dynamics365/commerce/
     topicHref: /dynamics365/commerce/index
-  - name: Dynamics 365 Supply Chain Management
+  - name: Dynamics 365 Finance
     tocHref: /dynamics365/supply-chain/
     topicHref: /dynamics365/supply-chain/index
-  - name: Dynamics 365 Human Resources
+  - name: Dynamics 365 Finance
     tocHref: /dynamics365/human-resources/
     topicHref: /dynamics365/human-resources/index
 - name: Dynamics 365
