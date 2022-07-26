@@ -30,6 +30,9 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
+> [!WARNING]
+> You need to make the steps described in this article only if you are using the Commerce version 10.0.28 or earlier. Starting from the version 10.0.29, all required Commerce channel components for France are enabled out-of-the-box.
+
 This article provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. These extensions let you perform actions such as printing custom fields on receipts, registering additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally signing sales transactions, and printing X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](./emea-fra-cash-registers.md). For more information about how to configure Commerce for France, see [Set up Commerce for France](./emea-fra-cash-registers.md#set-up-commerce-for-france).
 
 > [!NOTE]
