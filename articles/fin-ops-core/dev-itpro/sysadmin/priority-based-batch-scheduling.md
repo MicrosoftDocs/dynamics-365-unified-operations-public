@@ -170,12 +170,12 @@ A new internal system batch job, **System job to clean up expired batch heartbea
 - SQL Server transactions in batch tasks should be as small as possible in duration so that it doesn't cause SQL Server blocking that may impact performance of other batch jobs and user activity.
 - We recommend having more than one batch group to take advantage of priority-based batch scheduling, and use different priorities at a batch-group level.
 - When debugging batches in UAT by connecting to a development machine, you will have to disable the reset of the batch server by running the following script to ensure that all the batches are running on the development machine. 
-
+```
     UPDATE ssc
     SET ssc.enablebatch = 0
     FROM dbo.sysserverconfig ssc
     WHERE ssc.serverid = '<servername Tier2 batch server>'   
-
+```
 ## Automatic batch group migration for batch jobs
 
 After the feature is turned on, batch group information on the task is duplicated on the job that will be used. The batch group assignment on a job is based on the batch group that is most used for the tasks for the job.
