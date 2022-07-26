@@ -4,7 +4,7 @@
 title: Authentication and authorization
 description: This article describes the authentication and authorization models for user synchronization and permissions between finance and operations apps and Microsoft Power Platform. 
 author: jaredha
-ms.date: 10/18/2021
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -55,10 +55,9 @@ For more information about Dataverse virtual entity interaction and the finance 
 
 ### Security roles in Microsoft Power Platform
 
-When users who have the **Dynamics 365 Finance** license are automatically created as users in Microsoft Power Platform, both the **finance and operations Basic User** security role and the **Environment Maker** security role are automatically assigned to the Microsoft Power Platform users.
+When users who have the **Dynamics 365 Finance** license are automatically created as users in Microsoft Power Platform, the **finance and operations Basic User** security role is automatically assigned to the Microsoft Power Platform users.
 
 - **Finance and operations Basic User** – This security role allows the user to access and update virtual entities and business events. When a virtual entity or business event is activated in the Dataverse environment, the virtual entity or business event privileges are automatically granted to the security role.
-- **Environment Maker** – This security role allows the user to create apps in Power Apps and flows in Power Automate.
 
 For information about how to manually assign security roles to Microsoft Power Platform users in the Power Platform admin center, see [Assign a security role to a user](/power-platform/admin/assign-security-roles).
 
