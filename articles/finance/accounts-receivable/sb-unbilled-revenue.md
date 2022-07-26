@@ -135,7 +135,9 @@ If you want to use unbilled revenue, leave the **Item group setup** page blank, 
 
 ### Examples
 
-As of version 10.0.27, a new account is introduced when unbilled revenue is used. When the initial **Create journal entry** process is posted, the credit is done to a new unbilled revenue offset account. This account is used instead of the revenue account, because the same value must be reversed out when the billing schedule is invoiced. If exchange rate or rounding differences occur, the amounts that are calculated during the **Generate invoice** process might be different. This behavior ensures that the net amount of the accounts is 0 (zero).
+As of version 10.0.29, a new parameter is added to Recurring contract billing parameters. When set to Yes, the **Use unbilled offset accounts** parameter enables two new accounts in **Unbilled revenue setup**. The Unbilled revenue offset and Unbilled discount offset accounts become available and are best used when billing schedules are created in a currency other than the accounting currency. Using the offset accounts ensures that the unbilled revenue and unbilled discount accounts are reversed out using the same exchange rates as their initial entries. The initial **Create journal entry** process is the same with the debit to unbilled revenue and credit to revenue. If using a discount the initial journal entry is the same with a debit to Discount and credit to unbilled discount. 
+
+The **Unbilled revenue offset** If exchange rate or rounding differences occur, the amounts that are calculated during the **Generate invoice** process might be different. This behavior ensures that the net amount of the accounts is 0 (zero).
 
 This example shows how to use unbilled revenue to recognize the whole amount of a contract on the balance sheet as unbilled revenue. The other side of the entry is the unbilled revenue offset. When you invoice the customer, the unbilled revenue and unbilled revenue offset are reversed. Revenue recognition will occur either at the time of invoicing or according to the deferral recognition schedule that was set up.
 
