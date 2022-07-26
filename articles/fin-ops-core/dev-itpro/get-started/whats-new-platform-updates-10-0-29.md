@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.29 of finance and operations apps (October 2022)
 description: This topic lists the features that are included in the platform updates for version 10.0.29 of finance and operations apps.
 author: sericks007
-ms.date: 07/25/2022
+ms.date: 07/26/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -42,6 +42,7 @@ The following table lists features that are now mandatory or turned on by defaul
 
 | Module or feature area | Feature name | Feature state |
 | :--- |  :--- | :--- |
+| Data management | Execution history cleanup | On by default | 
 | System administration | Customer and vendor master data sharing | Mandatory |
 | System administration | Saved views | Mandatory |
 | System administration | Designate fields as required using personalization | Mandatory |
@@ -61,7 +62,6 @@ The following table lists features that are now mandatory or turned on by defaul
 | System administration | Upgrade to jQuery UI 1.13.0 | Mandatory |
 | System administration | Streamline tabbing behavior in full-page forms | On by default |
 | System administration | Optimize loading of Action center notifications | On by default |
-| Data management | Execution history cleanup | On by default | 
 
 ### Bug fixes
 
