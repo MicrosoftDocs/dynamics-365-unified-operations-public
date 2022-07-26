@@ -61,5 +61,14 @@ For information about how to install the latest DRA that is available with your 
 > [!NOTE]
 > Be sure to open the DRA client after upgrading to refresh network user credentials.
 
+## Best practices
+When creating support ticket specific to DRA, consider export event logs containing events at the time that issue occurs from the DRA machine. 
+
+The default event log size is only 1MB, so if the issue is intermittent such as performance issue, consider increasing the event log size.
+
+Then wait for some time before exporting the event logs.
+
+1. \\Applications and Services Logs\Microsoft\Dynamics\Ax-DocumentRouting\Operational
+2. \\Applications and Services Logs\Microsoft\Dynamics\Ax-DocumentRouting\Admin
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
