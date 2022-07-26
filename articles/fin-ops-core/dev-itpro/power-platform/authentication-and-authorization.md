@@ -55,7 +55,7 @@ For more information about Dataverse virtual entity interaction and the finance 
 
 ### Security roles in Microsoft Power Platform
 
-When users who have the **Dynamics 365 Finance** license are automatically created as users in Microsoft Power Platform, both the **finance and operations Basic User** security role is automatically assigned to the Microsoft Power Platform users.
+When users who have the **Dynamics 365 Finance** license are automatically created as users in Microsoft Power Platform, the **finance and operations Basic User** security role is automatically assigned to the Microsoft Power Platform users.
 
 - **Finance and operations Basic User** – This security role allows the user to access and update virtual entities and business events. When a virtual entity or business event is activated in the Dataverse environment, the virtual entity or business event privileges are automatically granted to the security role.
 
