@@ -47,10 +47,11 @@ This document walks you through how to configure an environment using an alterna
 The following sections are pre-requisites for completing the alternate data flow approach.
 
 ### Setup Power Platform
-Follow the instructions here: [Enable the Microsoft Power Platform integration.]( https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration)
+Follow the instructions here: [Enable the Microsoft Power Platform integration.](../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md)
 
 ### Install Export to Data Lake Add-in
-Follow the instructions here: [Install Export to Azure Data Lake add-in.](https://docs.microsoft.com/dynamics365/fin-ops-core/dev-itpro/data-entities/configure-export-data-lake)
+
+Follow the instructions here: [Install Export to Azure Data Lake add-in.](../fin-ops-core/dev-itpro/data-entities/configure-export-data-lake.md).
 
 >[Note]
 > Make notes of these values. They will be needed later during the configuration steps.
@@ -76,7 +77,7 @@ Next, you will:
 
 
 ### Create a Synapse Workspace if you do not already have one
-Follow the QuickStart guide here: [Quickstart: create a Synapse workspace]( https://docs.microsoft.com/azure/synapse-analytics/quickstart-create-workspace)
+Follow the QuickStart guide here: [Quickstart: create a Synapse workspace](/azure/synapse-analytics/quickstart-create-workspace)
 
 To keep your Azure resources organized it is advised to put the ADLS storage account and synapse workspace together in a resource group in Azure.
 You can reuse the storage account you created when you installed the Export to Data Lake Add-in.
