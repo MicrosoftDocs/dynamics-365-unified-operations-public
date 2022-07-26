@@ -169,7 +169,8 @@ A new internal system batch job, **System job to clean up expired batch heartbea
 - If there are larger workloads, we recommend breaking them down into smaller workloads or tasks so that they execute and complete in ten minutes or less.
 - SQL Server transactions in batch tasks should be as small as possible in duration so that it doesn't cause SQL Server blocking that may impact performance of other batch jobs and user activity.
 - We recommend having more than one batch group to take advantage of priority-based batch scheduling, and use different priorities at a batch-group level.
-- **Debugging batches in UAT** by connecting a Dev machine, you will have to disable the reset of the batch server by running the following script to ensure that all the batches are running on the dev box. 
+- When debugging batches in UAT by connecting to a development machine, you will have to disable the reset of the batch server by running the following script to ensure that all the batches are running on the development machine. 
+
     UPDATE ssc
     SET ssc.enablebatch = 0
     FROM dbo.sysserverconfig ssc
