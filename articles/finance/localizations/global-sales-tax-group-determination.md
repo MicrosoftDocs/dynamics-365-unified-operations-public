@@ -4,7 +4,7 @@
 title: Sales tax applicability and sales tax group determination logic
 description: This article explains the logic for determining sales tax applicability and sales tax groups in the tax feature setup.
 author: epodkolz
-ms.date: 12/08/2021
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -68,20 +68,22 @@ In the 10.0.28 update, you can adjust the execution sequence of the applicabilit
 
 The following example shows how the **Adjust execution sequence** button works.
 
-In Regulatory Configuration Service (RCS), the **Tax group applicability** tab is configured as shown in the following table.
+In the Regulatory Configuration Service (RCS), the **Tax group applicability** tab is configured as follows:
 
 | Business process | Currency | Item code | Tax group | Weight |
 |------------------|----------|-----------|-----------|--------|
-| Purchase         | EUR      |           | TG\_A     | 20     |
-| Purchase         |          | D0001     | TG\_B     | 20     |
+| Purchase         | EUR      | &nbsp;    | TG\_A     | 20     |
+| Purchase         | &nbsp;   | D0001     | TG\_B     | 20     |
 
-Per the matching logic, the above rules are equally weighted. If you are purchasing Item **D0001** with transaction currency **EUR**, then the first rule (Tax group **TG\_A**) will be applied.
+Per the matching logic, the rules in the table are equally weighted. If you are purchase item **D0001** with the transaction currency **EUR**, the first rule (Tax group **TG\_A**) is applied.
 
-To adjust the rule which shall be applied in such case,
-1. Click the **Adjust execution sequence** button.
-2. Select the second rule and click the **Move up** button. Select **Complete**.
+Complete the following steps to adjust the rule which is applied.
 
-Now, the second rule (Tax group **TG\_B**) is moved above the first one, and will be applied in above scenario.
+1. Select **Adjust execution sequence**.
+2. Select the second rule, and the select **Move up**. 
+3. Select **Complete**.
+
+Now, the second rule (Tax group **TG\_B**) is moved above the first one, and would be applied first.
 
 > [!NOTE]
 > You can't move a rule above or under another rule which has a different **Weight**.
