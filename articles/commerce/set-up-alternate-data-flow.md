@@ -39,12 +39,12 @@ The following illustration compares out-of-band (OOB) and alternate dataflows in
 
 ## Assumptions
 
-- This document assumes you have already enabled the recommendations service for your environment. For more information, see [Enable product recommendations](enable-product-recommendations.md).
+- This document assumes you've already enabled the recommendations service for your environment. For more information, see [Enable product recommendations](enable-product-recommendations.md).
 - When working with files and folders in the Microsoft Azure Data Lake storage account:
-    - You can use either the Azure web portal interface or the the Azure Storage Explorer application.
+    - You can use either the Azure web portal interface or the Azure Storage Explorer application.
     - The starting points for working with files and folders is in the container named **dynamics365-financeandoperations** that is located under the folder that is named to match your environment URL. 
     - If your sandbox environment name is **MyUAT**, then the environment base URL would be `myuat.sandbox.operations.dynamics.com`. 
-    - If you have more than one environment connected to the same storage account, each environment will have its own root folder.
+    - If you've more than one environment connected to the same storage account, each environment will have its own root folder.
 
 ## Prerequisites
 
@@ -84,7 +84,7 @@ To configure tables to export in Dynamics 365, follow these steps.
 
 To create a Synapse workspace if you don't already have one, follow the instructions in [Quickstart: Create a Synapse workspace](/azure/synapse-analytics/quickstart-create-workspace).
 
-To keep your Azure resources organized, it's recommnended that you put the Azure Data Lake Store storage account and Synapse workspace together in a resource group in Azure. You can reuse the storage account you created when you installed the Export to Data Lake add-in.
+To keep your Azure resources organized, it's recommended that you put the Azure Data Lake Store storage account and Synapse workspace together in a resource group in Azure. You can reuse the storage account you created when you installed the Export to Data Lake add-in.
 
 ## Create a database in Synapse for recommendations data processing
 
@@ -294,7 +294,7 @@ To update the hardcoded integer, follow these steps.
 
 ### Pipeline task fails
 
-There should be 15 pipeline task executions for the **CopyData** task. If any of them fail, you will need to validate that all the dependent SQL objects exist and the queries execute. To get to all the dependencies, it is easiest to use SQL Server Management Studio to connect to the database. You can then right-click on a view and select Generate CREATE as to a new window’
+There should be 15 pipeline task executions for the **CopyData** task. If any of them fail, you'll need to validate that all the dependent SQL objects exist and the queries execute. To get to all the dependencies, it's easiest to use SQL Server Management Studio to connect to the database. You can then right-click on a view and select Generate CREATE as to a new window’
 
 Example error message text can include the following: 
 - Error: Failure happened on 'Source' side
@@ -359,7 +359,7 @@ To debug the error, follow these steps.
     select count(*) from	ECORESCATEGORY
     ```
 
-1. One technique to validate what you are looking at is to create a root dependent view to generate the view definition in SQL Server Management Studio and then verify that there is an Azure Data Lake file column named **r.filepath**. That will indicate that the view you are looking at is reading data from the Azure Data Lake storage.
+1. One technique to validate what you're looking at is to create a root dependent view to generate the view definition in SQL Server Management Studio and then verify that there's an Azure Data Lake file column named **r.filepath**, which will indicate that the view you're inspecting is reading data from Azure Data Lake storage.
 
 ## Additional resources
 
