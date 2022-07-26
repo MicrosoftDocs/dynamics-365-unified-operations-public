@@ -4,7 +4,7 @@
 title: Maintenance in self-service environments FAQ
 description: This article provides answers to frequently asked questions about the Microsoft planned maintenance in self-service environments.
 author: matapg007
-ms.date: 06/17/2022
+ms.date: 07/26/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -62,7 +62,7 @@ A planned maintenance window is typically during the dark hours of the geographi
 > 
 > All the maintenance activity (operating system patching, security hotfixes, and quality updates) will be performed during the dark hour window to provide a near-zero-downtime experience. 
 
-## Can operating system updates be applied in near zero downtime?
+## Can operating system updates be applied in near-zero-downtime?
 Yes, Microsoft began to roll out near-zero-downtime infrastructure maintenance for operating system updates since May 2021.
 
 ## What does near-zero-downtime maintenance mean?
