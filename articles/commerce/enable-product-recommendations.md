@@ -47,7 +47,7 @@ This topic explains how to make product recommendations that are based on artifi
 After the steps above have been completed, you will be ready to enable recommendations.
 
 > [!NOTE]
-> There's a known issue with recommendations not appearing after the following steps below are completed. This is due to data flow issues within the environment. If you are having issues with your environment not showing recommendations results, follow the steps for configuring the alternative data for the recommendations service in [How to set up the alternate data flow for recommendations](reco-alternate-data-flow.md). You'll need Azure administrator permissions to complete these steps. If you need assistance, contact your FastTrack representative.
+> There's a known issue with recommendations not appearing after the following steps below are completed. This is due to data flow issues within the environment. If you are having issues with your environment not showing recommendations results, follow the steps for configuring the alternative data for the recommendations service in [How to set up the alternate data flow for recommendations](set-up-alternate-data-flow.md). You'll need Azure administrator permissions to complete these steps. If you need assistance, contact your FastTrack representative.
 
 ## Azure AD Identity configuration
 
