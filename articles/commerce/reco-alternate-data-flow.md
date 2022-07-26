@@ -83,7 +83,7 @@ Next, you will:
 
 Follow the QuickStart guide here: [Quickstart: create a Synapse workspace](/azure/synapse-analytics/quickstart-create-workspace)
 
-To keep your Azure resources organized it's advised to put the ADLS storage account and synapse workspace together in a resource group in Azure.
+To keep your Azure resources organized, it's advised to put the ADLS storage account and synapse workspace together in a resource group in Azure.
 You can reuse the storage account you created when you installed the Export to Data Lake Add-in.
 
 ## Create a Database in Synapse for Recommendations Data Processing
@@ -100,11 +100,11 @@ Using the CDM Utility Console Application (CDMUtil_ConsoleApp) creates a databas
 3. Open ```CDMUtil_ConsoleApp.dll.config``` file in a text editor and update these values.
    1. Set the Tenant ID (azure tenant id).
    2. Set the Access key (access key to storage account for data lake).
-       1. In the Azure portal open the storage account. In the menu on the left side of the page select Access keys. 
+       1. In the Azure portal, open the storage account. In the menu on the left side of the page, select **Access keys**. 
        2. Click Show keys on the top of the page.
        3. Click on the copy icon for one of the two key fields and paste it into the config file between the double quotes.
    3. Set the ```ManifestURL``` to the URL of your ```Tables.manifest.cdm.json``` file in ADLS
-       1. In the Azure portal browse the file, click on the 3 dots on the right side of the view and click Properties. The first property in the overview tab is the URL. Copy it and paste it into the config file between the double quotes.
+       1. In the Azure portal, browse the file, click on the 3 dots on the right side of the view and click Properties. The first property in the overview tab is the URL. Copy it and paste it into the config file between the double quotes.
    4. Set the ```TargetDbConnectionString``` to the connection string for the Built-in serverless SQL pool of your Synapse workspace.
        1. In the Synapse workspace open the Manage tab: 
           1. Select SQL pools in the submenu. 
@@ -304,7 +304,7 @@ select INSTANCERELATIONTYPE, NAME, NAMEALIAS, * from dbo.DIRPARTYTABLE where REC
 
 #### Pipeline task fails
 
-There should be 15 pipeline task executions for CopyData. If any of them fail you will need to validate that all the dependent sql objects exist and the queries execute. To get to all the dependencies it is easiest to use SSMS to connect to the database.  You can then right click on a view and select Generate CREATE as to a new window’
+There should be 15 pipeline task executions for CopyData. If any of them fail, you will need to validate that all the dependent SQL objects exist and the queries execute. To get to all the dependencies, it is easiest to use SSMS to connect to the database.  You can then right click on a view and select Generate CREATE as to a new window’
 Example error message text includes: 
 - Error: Failure happened on 'Source' side
 - Error handling external file: 'Max errors count.   
