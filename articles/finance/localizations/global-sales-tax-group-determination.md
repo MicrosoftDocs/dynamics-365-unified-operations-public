@@ -57,10 +57,35 @@ For the first line in the table, two input fields are set. Therefore, the line h
 
 When sales tax is calculated for a purchase order that has the EUR currency and item D0001, the Tax calculation service uses the condition that has a higher weight. Therefore, it uses the second line in the table.
 
+## Adjust execution sequence
+
+In the 10.0.28 update, you can adjust the execution sequence of the applicability rules which are equally weighted.
+
 > [!NOTE]
-> On the **Applicability rule** tabs, line numbers aren't visible, and the **Move up** and **Move down** buttons are no longer available. After you save a setup and reopen the page, the lines are ordered according to their weight.
-> 
-> Even though line numbers aren't visible in the UI, they are still available in the table. If two lines have the same weight, the line that has the smaller line number is used.
+> The **Tax calculation service feature setup new UI** feature must be enabled in feature management to make the **Adjust execution sequence** button visible in the **Applicability rules** tables.
+
+### Example
+
+The following example shows how the **Adjust execution sequence** button works.
+
+In Regulatory Configuration Service (RCS), the **Tax group applicability** tab is configured as shown in the following table.
+
+| Business process | Currency | Item code | Tax group | Weight |
+|------------------|----------|-----------|-----------|--------|
+| Purchase         | EUR      |           | TG\_A     | 20     |
+| Purchase         |          | D0001     | TG\_B     | 20     |
+
+Per the matching logic, the above rules are equally weighted. If you are purchasing Item **D0001** with transaction currency **EUR**, then the first rule (Tax group **TG\_A**) will be applied.
+
+To adjust the rule which shall be applied in such case,
+1. Click the **Adjust execution sequence** button.
+2. Select the second rule and click the **Move up** button. Select **Complete**.
+
+Now, the second rule (Tax group **TG\_B**) is moved above the first one, and will be applied in above scenario.
+
+> [!NOTE]
+> You can't move a rule above or under another rule which has a different **Weight**.
+
 
 ## Sales tax group and item sale tax group determination logic
 
