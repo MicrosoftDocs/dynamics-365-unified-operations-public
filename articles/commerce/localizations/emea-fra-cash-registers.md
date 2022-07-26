@@ -5,7 +5,7 @@ title: Cash register functionality for France
 description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 05/17/2022
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -286,7 +286,7 @@ You must enable the following features in the **Feature management** workspace:
 You must make the following changes on the **Legal entities** page. These settings are used in the archive format.
 
 - On the **Bank account information** FastTab, in the **Routing number** field, specify the VAT identifier of the organization.
-- On the **Statutory reporting** FastTab, in the **NAF code** field, specify the Nomenclature des Activités Françaises (NAF) code of the organization.
+- On the **Registration numbers** FastTab, in the **NAF code** field, specify the Nomenclature des Activités Françaises (NAF) code of the organization.
 - On the **Tax registration** FastTab, in the **Tax registration number** field, specify the Système d'identification du répertoire des établissements (SIRET) number of the organization.
 
 ### Set up VAT per French requirements
