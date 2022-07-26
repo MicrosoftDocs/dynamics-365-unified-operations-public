@@ -17,82 +17,60 @@ ms.dyn365.ops.version: 10.0.28
 
 [!include [banner](../../includes/banner.md)]
 
-Shelf life is the period of time when a product can be stored until it can no longer be used. For products that have a limited shelf life, you will probably use a FEFO (first-expire-first-out) warehouse strategy, which prioritizes shipments based on the remaining shelf life. The method is relevant for food, medicines, and other goods that are characterized by a short storage time. According to FEFO, goods are stored like goods on a supermarket shelf, with products that have a long shelf life remaining placed deep into the shelves so that products with a shorter remaining shelf life are shipped first.
+Shelf life is the period of time when a product can be stored until it can no longer be used or sold. For products that have a limited shelf life, you will probably use a FEFO (first-expire-first-out) warehouse strategy, which prioritizes the consumption and sale of items based on their remaining shelf life. The method is relevant for food, medicines, and other goods that are characterized by a short storage time. According to FEFO, items in the warehouse are stored like goods on a supermarket shelf, with products that have a long shelf life placed deep into the shelves so that products with a shorter remaining shelf life are shipped first.
 
 ## Use shelf life
 
-This section explains how master planning suggests supply for shelf life items and examples of results.
+This section explains how master planning suggests supply for shelf life items and shows some examples of results.
 
-When running master planning, it will give you the best possible plan to suggest you supply (planned orders) to fulfill your demand minimizing delays, as it is important and given that the objective is to minimize delays on your demand.
+When you run a master plan, it generates suggest planned orders (supply) that will fulfill your demand while minimizing delays. When your plan includes items with limited shelf life, planning calculations becomes more complex because the plan must not only minimize delays, but also use existing supply before it expires. The plan must seek to use supply that is closest to its expiration date before using supply that expires later. Therefore, master planning seeks to achieve the following goals, in this order:
 
-Introducing shelf life, the planning problem becomes more complex, as now the good will expire and while trying to diminish delays, it is also trying to use the existing supply during its shelf life.
+1. Minimize sum of delays
+1. Maximize sum of FEFO supply
+1. Minimize replenishment of inventory
 
-Now we add shelf life into the mix and that means we are trying to maximize the shelf life. So, we want to the extent possible, use supply that expires sooner rather than later.
-
-The goals that master planning tries to achieve are (in this order):
-
-- Minimize sum of delays
-- Maximize sum of FEFO supply
-- Minimize replenishment of inventory
-
-There, but in some cases there may be a conflict between the first two goals. In some cases, there may be a choice. Do we want a shipment to be delayed or do we want to use supply that expires later rather than sooner? However, we cannot have both. As a result, master planning will prioritize minimizing delays over using expired supply.
-
-In general, these conflicts appear when there may be delays and coverage by period.
-
-> [!NOTE]
-> We recommend that the shelf life for the item is longer than the period setup.
-
-Other types of coverage, like requirement, will most likely not be in these situations.
-
-Now, we will show different examples where this contradiction may exist.
-
-Here is a list of examples and what each of them will illustrate:
-
-- Example 1 – This example shows a basic example of shelf life, where the pegging between the supply orders and the demand are done satisfying the goals of the system
-- Example 2 – This example shows how the system has the goal to minimize delays, which in some cases (as shown in this example) may result in overordering.
-- Example 3 – This example illustrates how shelf life works when adding sellable days for the item
-- Example 4 – This example illustrates that the main objective of the system is to minimize delays and in some cases, it may result it overordering.
-- Example 5 – This example illustrates how shelf life works when adding a big number of negative days for the item.
-- Example 6 – This example shows how shelf life works when a number of negative days for the item less than shelf-life period.
+In some cases there may be a conflict between the first two goals, so a choice must be made&mdash;do you want to delay a shipment or do you want to use supply that expires later rather than sooner? During master planning, the system resolves this issue by prioritizing minimal delays over using up soon-to-be-expired supply. In general, these conflicts appear when there may be delays and coverage by period. Therefore, we recommend that the shelf life for an item be longer than the period setup. Other types of coverage (such as requirement) most likely won't encounter such conflicts.
 
 ## Set up shelf life
 
-### Master Planning Parameters
+### Configure each master plan to consider shelf life
 
-The Master plan parameters needs **Use shelf life dates** activated. This will cause master planning to create a planned order when the inventory is due to be expired. The user can activate this parameter under Setup field group on the general FastTab on the **Master plan** form
+By default, master plans don't consider shelf life. Use the following procedure to enable shelf life calculations for each master plan that requires it:
 
-### Tracking dimension group
+1. Go to **Master planning \> setup \> plans \> Master plans**.
+1. Either select an existing plan in the list pane or create a new one.
+1. Expand the **General** FastTab and set **Use shelf life dates** to *Yes*.
 
-To enable items to be shelf-life controlled, the item must be tracked at the batch dimension. This means the batch reference and the required dates are recorded upon receipt or manufacture and through every inventory transaction of the item. In other words, you need to use existing or create a new one tracking dimension group with enabled *Active* and*Physical inventory* parameters for**Batch number** on the **Tracking dimension groups** page (**Product information management \> Setup \> Dimension and variant groups \> Tracking dimension groups**)
+### Configure tracking dimension groups to track the batch dimension
 
-### Item setup
+To track the shelf life of an item, that item must be tracked at the batch dimension, which means that the batch reference and the required dates are recorded upon receipt or manufacture and through every inventory transaction of the item. You manage this option by setting up one or more tracking dimension groups to do the required tracking and then assigning the relevant items to these groups as needed.
 
-**Tracking dimension group**, **Shelf advice period in days**, **Shelf life in days** and **Best before in days** must be setup in the item for it to be setup as a shelf life item. All these parameters in days can be set up under the **Item data** field group on the **Manage inventory** FastTab of the **Released product detail** page.
+Use the following procedure to set up a tracking dimension groups to track the batch dimension:
 
-Getting into detail for each of these:
+1. Go to **Product information management \> Setup \> Dimension and variant groups \> Tracking dimension groups**.
+1. Do one of the following to create or select the tracking dimension group you want to set to track the batch dimension:
+    - Create a new group by selecting **New** on the Action Pane. Give the new group a **Name** and **Description** and then select **Save** on the Action Pane.
+    - Select an existing group form the list pane.
+1. Expand the **Tracking dimension** FastTab. In the **Batch number** row, select the check box in the **Active** and **Physical inventory** columns.
 
-The fields **Shelf advice period in days**, **Shelf life in days** and **Best before in days** described below and should be setup for each released product. All these fields can be found under **Manage inventory** tab of the **Released product details** page.
+### Set up shelf life for a product
 
-#### Shelf advice period in days
+Use the following procedure to set up shelf life for a product:
 
-This is the period, in days, that you want to check the item to ensure the product is suitable for resale. It is added to the manufacturing date to determine the Shelf advice date. Quality orders can be configured to automatically generate when the product approaches its advice date.
-
-#### Shelf-life period in days
-
-This is the number of days before the product expires. Days are added to the date of manufacture to get the expiration date. This is really the date when the product will be considered unworthy to sell.
-
-> [!NOTE]
-> Shelf advice field is not used during planning.
-
-#### Best before period in days
-
-This is the period in days, that the item is deemed sellable but may not retain its original properties. It is subtracted from the expiry date to calculate the Best before date. Reports can be run identifying the inventory past the Sell by date.
+1. Go to **Product information management \> Products \> Released products**.
+1. Open the product you want to set up.
+1. Expand the **General** FastTab and make the following setting:
+    - **Tracking dimension group** – Select a tracking dimension group that is set up to track the batch dimension, as described in the previous section. <!-- KFM: Appears to be read only, as are all the parameters below. More info may be needed. -->
+1. Expand the **Manage inventory** FastTab and make the following settings:
+    - **Shelf advice period in days** – Specify the period (in days) by which to check a batch of this product to ensure it is suitable for consumption or resale. This value is added to a batch's *manufacturing date* to determine its *shelf advice date*. You can configure the system to generate quality orders when a batch approaches its shelf advice date.
+    - **Shelf life in days** – Specify the number of days before a batch of this product expires. This value is added to the date of manufacture to get the *expiration date*. The batch is considered unusable after this date.
+    - **Best before in days**  – Specify the period (in days) after which a batch of this product is still deemed sellable but may no longer retain some of its original properties. This is subtracted from the expiry date to calculate the **best before date**. You can run reports to identify inventory that is past its **sell-by date**. <!-- KFM: are best-before and sell-by date the same? -->
 
 ### Sellable days
 
-The functionality of the Sellable days ensures that a product with a short shelf life is not sent to customers. Moreover, when a product is sent to customers, they have enough "sellable days" from the moment when the product is expected to reach the customer.
+*Sellable days* functionality ensures that products from a batch with a short remaining shelf life are not sent to customers. Moreover, it ensures that when products that are sent to a customer, an adequate number of sellable days will still remain after delivery.
 
-To start using the Sellable days functionality, sellable days need to be defined against the Customer record. There is not a data entity for this process, so the user can do it manually.
+To use the sellable days functionality, you must define a number of sellable days for each customer record. There is no data entity for this process, so you must do it manually. <!-- KFM: continue here. -->
 
 Navigate to **Sales and marketing \> Customers \> All customers**. Click the **Setup** button under the **Set up** button group on the **Sell** tab. In the dropdown list select *Sellable days*.
 
