@@ -121,17 +121,11 @@ To create a database in Synapse, follow these steps.
 
 ### Back up your current Retail Sales cube data from Azure Data Lake storage
 
-The easiest way to back up your current Retail Sales cube data is to rename the **RetailSales** directory in Azure Data Lake storage to **RetailSales-backup** or something similar. This preserves the existing data in case troubleshooting is required later.
+The easiest way to back up your current Retail Sales cube data is to rename the **RetailSales** directory in Azure Data Lake storage to **RetailSales-backup** or something similar. This method preserves the existing data in case troubleshooting is required later.
 
 The **/RetailSales** cube folder can be found in the following location: 
 
-`
-<storage-account>
-  /dynamics365-financeandoperations
-    /<environment-url> (for example, `myuat.sandbox.operations.dynamics.com`)
-      /AggregateMeasurements
-        /RetailSales
-`
+`<storage-account>/dynamics365-financeandoperations/<environment-url>(for example, myuat.sandbox.operations.dynamics.com)/AggregateMeasurements/RetailSales`
 
 ### Create a new RetailSales folder and upload the model file
 
@@ -148,7 +142,7 @@ To create a pipeline to copy the Retail Sales cube data, follow these steps.
 
 1.	In the Synapse workspace, select the **Integrate** tab.
 1.	Select the plus symbol (**+**), and then select **Import from pipeline template**.
-1.	Download and select the [ExportRetailSalesCubeViews.zip file](https://aka.ms/reco-alternate-dataflow-files).
+1.	Download and then select the [ExportRetailSalesCubeViews.zip file](https://aka.ms/reco-alternate-dataflow-files).
 1.	Select your SQL database linked service.
 1.	Select your storage account linked service.
 1.	Open the **CopyData** task and change the folder property to **<environment_name>/...**.
@@ -250,20 +244,18 @@ OMExplodedOrganizationSecurityGraph |
 
 ### View list for parameter to pass into the Synapse pipeline
 
-This is a comma separated list of Retail Sales cube views. This is the list of views that the pipeline will perform a "select" operation on and then copy the results to Azure Data Lake storage. 
+The following comma-separated list of Retail Sales cube views contains the views that the pipeline will perform a "select" operation on and then copy the results to Azure Data Lake storage. 
+
+RetailSales_RetailAssortmentRulesView,RetailSales_RetailChannelNavigationHierarchiesView,RetailSales_RetailChannelNavigationHierarchyCatalogProductsView,RetailSales_RetailChannelNavigationHierarchyCategoryNodesView,RetailSales_RetailChannelNavigationHierarchyCategoryProductsView,RetailSales_RetailMediaBaseUrlChannelView,RetailSales_RetailMediaRelativeUrlProductView,RetailSales_RetailMediaTemplateView,RetailSales_RetailOptOutCustomersView,RetailSales_RetailProductCategory,RetailSales_RetailProductTransaction,RetailSales_RetailProductVariantDimensionsView,RetailSales_RetailRecoListConfigurationParametersView,RetailSales_RetailRecoListsSharedParametersView,RetailSales_RetailEcoResProductTranslation|
 
 > [NOTE]
 > The pipeline parameter must be a list of view names separated by single commas with no spaces or line feeds.
 
-```
-RetailSales_RetailAssortmentRulesView,RetailSales_RetailChannelNavigationHierarchiesView,RetailSales_RetailChannelNavigationHierarchyCatalogProductsView,RetailSales_RetailChannelNavigationHierarchyCategoryNodesView,RetailSales_RetailChannelNavigationHierarchyCategoryProductsView,RetailSales_RetailMediaBaseUrlChannelView,RetailSales_RetailMediaRelativeUrlProductView,RetailSales_RetailMediaTemplateView,RetailSales_RetailOptOutCustomersView,RetailSales_RetailProductCategory,RetailSales_RetailProductTransaction,RetailSales_RetailProductVariantDimensionsView,RetailSales_RetailRecoListConfigurationParametersView,RetailSales_RetailRecoListsSharedParametersView,RetailSales_RetailEcoResProductTranslation|
-```
-
 ## Environment-specific fixes
 
-### [RETAILCHANNELVIEW]
+### RETAILCHANNELVIEW fix
 
-This view has a hardcoded integer in it that represents a "retail channel" type of organization. The actual value of the type can change from environment to environment or at least from tenant to tenant.
+The **RETAILCHANNELVIEW** view contains a hardcoded integer that represents a "retail channel" type of organization. The actual value of the type can change from environment to environment, or from tenant to tenant.
 
 ```SQL
 CREATE OR ALTER   VIEW [dbo].[RETAILCHANNELVIEW]
@@ -289,7 +281,7 @@ WHERE  ((((T1.OMOPERATINGUNITID = T2.RECID)
 To update the hardcoded integer, follow these steps.
 
 1. In Dynamics 365, look up the **ChannelID** for your online channel.
-1. In SQL Server Management Studio attached to the Synapse database, run the following query:
+1. In a SQL Server Management Studio instance attached to the Synapse database, run the following query:
 
     ```SQL
     select INSTANCERELATIONTYPE, NAME, NAMEALIAS, * from dbo.DIRPARTYTABLE where RECID IN (select OMOPERATINGUNITID from dbo.RETAILCHANNELTABLE where RETAILCHANNELID =     <channelID>)
@@ -300,35 +292,34 @@ To update the hardcoded integer, follow these steps.
 
 ### Pipeline task fails
 
-There should be 15 pipeline task executions for CopyData. If any of them fail, you will need to validate that all the dependent SQL objects exist and the queries execute. To get to all the dependencies, it is easiest to use SQL Server Management Studio to connect to the database.  You can then right click on a view and select Generate CREATE as to a new window’
+There should be 15 pipeline task executions for the **CopyData** task. If any of them fail, you will need to validate that all the dependent SQL objects exist and the queries execute. To get to all the dependencies, it is easiest to use SQL Server Management Studio to connect to the database. You can then right-click on a view and select Generate CREATE as to a new window’
 
 Example error message text includes: 
 - Error: Failure happened on 'Source' side
-- Error handling external file: 'Max errors count.   
+- Error handling external file: 'Max errors count'.   
 - /RetailSales/RetailSales_xxxxxx
 
 #### Example scenario
 
-As an example, let’s consider the RetailSales_RetailProductCategory task fails with an error ‘max errors count’
+As an example, let's say that the **RetailSales_RetailProductCategory** task fails with a "Max errors count" error. 
 
-1. Using the ```EntityList.json``` file, open it in a text editor (Visual studio code is good for this).
-1. Find the view definition for``` RetailSales_RetailProductCategory```
+To debug the error, follow these steps.
 
+1. Open the **EntityList.json** file in a text editor (for example, Visual Studio Code).
+1. Find the view definition for **RetailSales_RetailProductCategory**.
 
-```SQL
-CREATE  VIEW [dbo].[RetailSales_RetailProductCategory] AS SELECT 0 AS ROW_UNIQUEKEY ,CATEGORY AS CATEGORYID ,PRODUCT AS PRODUCTID ,PRODUCTNAME ,CATEGORYNAME ,PARENTCATEGORY AS PARENTCATEGORYID ,PARTITION ,RECID FROM RetailProductCategoryView
-```
+    ```SQL
+    CREATE  VIEW [dbo].[RetailSales_RetailProductCategory] AS SELECT 0 AS ROW_UNIQUEKEY ,CATEGORY AS CATEGORYID ,PRODUCT AS PRODUCTID ,PRODUCTNAME ,CATEGORYNAME     ,PARENTCATEGORY AS PARENTCATEGORYID ,PARTITION ,RECID FROM RetailProductCategoryView
+    ```
 
-1. This view depends on only 1 other view: ```RetailProductCategoryView```
-1. Find the view definition for ```RetailProductCategoryView```.
+1. This view depends on only one other view: **RetailProductCategoryView***. Find the view definition for **RetailProductCategoryView**.
 
-```SQL
-CREATE VIEW [DBO].[RETAILPRODUCTCATEGORYVIEW] AS SELECT T1.CATEGORY AS CATEGORY, T1.PRODUCT AS PRODUCT, T1.PARTITION AS PARTITION, T1.RECID AS RECID, T2.PRODUCTNAME AS PRODUCTNAME, T2.PARTITION AS PARTITION#2, T3.NAME AS CATEGORYNAME, T3.PARENTCATEGORY AS PARENTCATEGORY, T3.PARTITION AS PARTITION#3 FROM RETAILPRODUCTCATEGORY T1 CROSS JOIN ECORESPRODUCTTRANSLATIONS T2 CROSS JOIN RETAILCATEGORYEXPANDED T3 WHERE((( T1.PRODUCT = T2.PRODUCT) AND ( T1.PARTITION = T2.PARTITION)) AND (( T1.CATEGORY = T3.RECID) AND ( T1.PARTITION = T3.PARTITION)))
-```
+    ```SQL
+    CREATE VIEW [DBO].[RETAILPRODUCTCATEGORYVIEW] AS SELECT T1.CATEGORY AS CATEGORY, T1.PRODUCT AS PRODUCT, T1.PARTITION AS PARTITION, T1.RECID AS RECID, T2.PRODUCTNAME AS PRODUCTNAME, T2.PARTITION AS PARTITION#2, T3.NAME AS CATEGORYNAME, T3.PARENTCATEGORY AS PARENTCATEGORY, T3.PARTITION AS PARTITION#3 FROM RETAILPRODUCTCATEGORY T1 CROSS JOIN ECORESPRODUCTTRANSLATIONS T2 CROSS JOIN RETAILCATEGORYEXPANDED T3 WHERE((( T1.PRODUCT = T2.PRODUCT) AND ( T1.PARTITION = T2.PARTITION)) AND (( T1.CATEGORY = T3.RECID) AND ( T1.PARTITION = T3.PARTITION)))
+    ```
 
-1. This view depends on 3 other views: ```RETAILPRODUCTCATEGORY```, ```ECORESPRODUCTTRANSLATIONS```, ```RETAILCATEGORYEXPANDED```
-1. Find the definitions for each of these views and list their dependencies.  Continue this until you find all the dependent views.
-1. In this example here is the whole list in dependency tree order. There are 13 views that need to be validated.
+1. This view depends on three other views: **RETAILPRODUCTCATEGORY**, **ECORESPRODUCTTRANSLATIONS**, **RETAILCATEGORYEXPANDED**. Find the definitions for each of these views and list their dependencies. Continue until you find all the dependent views.
+1. For this example, the following is the whole list in dependency tree order. There are 13 views that need to be validated.
 
 - RetailSales_RetailProductCategory
    - RetailProductCategoryView
@@ -348,25 +339,25 @@ CREATE VIEW [DBO].[RETAILPRODUCTCATEGORYVIEW] AS SELECT T1.CATEGORY AS CATEGORY,
          - ECORESCATEGORYHIERARCHYROLE
 
 
-1. Now a quick copy and paste using excel you can create 13 **select count(\*) from <view_name>** statements. Run these in SQL Server Management Studio with results to text and you can scroll through the results to see if any of the views failed. The initial error suggests that at least one of them will.
+1. In Microsoft Excel, create 13 **select count(\*) from <view_name>** statements as shown below. Run these in SQL Server Management Studio sending results to text and scroll through the results to see if any of the views failed. The initial error suggests that at least one of them will.
 
-```SQL
-select count(*) from	RetailProductCategoryView
-select count(*) from	RETAILPRODUCTCATEGORY
-select count(*) from	ECORESPRODUCTCATEGORY
-select count(*) from	ECORESCATEGORYHIERARCHYROLE
-select count(*) from	RETAILSPECIALCATEGORYPRODUCT
-select count(*) from	ECORESPRODUCT
-select count(*) from	RETAILGROUPMEMBERLINE
-select count(*) from	RETAILSPECIALCATEGORYMEMBER
-select count(*) from	ECORESPRODUCTTRANSLATIONS
-select count(*) from	ECORESPRODUCTTRANSLATION
-select count(*) from	SYSTEMPARAMETERS
-select count(*) from	RETAILCATEGORYEXPANDED
-select count(*) from	ECORESCATEGORY
-```
+    ```SQL
+    select count(*) from	RetailProductCategoryView
+    select count(*) from	RETAILPRODUCTCATEGORY
+    select count(*) from	ECORESPRODUCTCATEGORY
+    select count(*) from	ECORESCATEGORYHIERARCHYROLE
+    select count(*) from	RETAILSPECIALCATEGORYPRODUCT
+    select count(*) from	ECORESPRODUCT
+    select count(*) from	RETAILGROUPMEMBERLINE
+    select count(*) from	RETAILSPECIALCATEGORYMEMBER
+    select count(*) from	ECORESPRODUCTTRANSLATIONS
+    select count(*) from	ECORESPRODUCTTRANSLATION
+    select count(*) from	SYSTEMPARAMETERS
+    select count(*) from	RETAILCATEGORYEXPANDED
+    select count(*) from	ECORESCATEGORY
+    ```
 
-1. A technique to validate what you are looking at, you can create  a root dependent view to generate the view definition in SQL Server Management Studio and verify there is a data lake file column named **r.filepath**. That indicates the view you are looking at is reading data from the data lake.
+1. One technique to validate what you are looking at is to create a root dependent view to generate the view definition in SQL Server Management Studio and then verify that there is an Azure Data Lake file column named **r.filepath**. That will indicate that the view you are looking at is reading data from the Azure Data Lake storage.
 
 ## Additional resources
 
