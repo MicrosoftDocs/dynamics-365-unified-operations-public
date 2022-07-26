@@ -69,7 +69,7 @@ To open the form, add the string ```?mi=DataFeedsDefinitionWorkspace``` to the e
 https://<environment-URL>/?mi=DataFeedsDefinitionWorkspace
 ```
 Next, you will:
-1.	Open the **Export to Data Lake** form and copy the list of tables [from *Table 1* in the Appendix](reco-alternate-data-flow.md#appendix) of this document.
+1.	Open the **Export to Data Lake** form and copy the list of tables [from *Table 1* in the Appendix](set-up-alternate-data-flow.md#appendix) of this document.
 2.	On the **System Name** column, expand the filter options drop-down list. 
 3.	Choose ```is one of``` for the filter type and place your cursor in the text box and paste in the table list.
 4.	At the bottom of the filter drop-down list, select **Apply** .
