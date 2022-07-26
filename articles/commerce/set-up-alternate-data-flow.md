@@ -69,7 +69,7 @@ To configure tables to export in Dynamics 365, follow these steps.
 
     `https://<environment-URL>/?mi=DataFeedsDefinitionWorkspace`
 
-1. Open the **Export to Data Lake** form and copy the list of tables [from *Table 1* in the Appendix](set-up-alternate-data-flow.md#appendix) of this document.
+1. Open the **Export to Data Lake** form and copy the tables listed in [List of Retail Sales cube tables](#list-of-retail-sales-cube-tables).
 1. On the **System Name** column, expand the filter options drop-down list. 
 1. For the filter type, select **is one of**, place your cursor in the text box, and then paste in the table list copied from the **Export to Data Lake** form.
 1. At the bottom of the filter drop-down list, select **Apply**.
@@ -78,85 +78,80 @@ To configure tables to export in Dynamics 365, follow these steps.
 > [!NOTE]
 > Ensure that all rows update to the status of **Running** before proceeding to the next step. Troubleshoot and resolve any errors before proceeding.
 
+### Create a Synapse workspace
 
-### Create a Synapse Workspace if you don't already have one
+To create a Synapse workspace if you don't already have one, follow the instructions in [Quickstart: Create a Synapse workspace](/azure/synapse-analytics/quickstart-create-workspace).
 
-Follow the QuickStart guide here: [Quickstart: create a Synapse workspace](/azure/synapse-analytics/quickstart-create-workspace)
+To keep your Azure resources organized, it's recommnended that you put the Azure Data Lake Store storage account and Synapse workspace together in a resource group in Azure. You can reuse the storage account you created when you installed the Export to Data Lake add-in.
 
-To keep your Azure resources organized, it's advised to put the ADLS storage account and synapse workspace together in a resource group in Azure.
-You can reuse the storage account you created when you installed the Export to Data Lake Add-in.
+## Create a database in Synapse for recommendations data processing
 
-## Create a Database in Synapse for Recommendations Data Processing
-
-Using the CDM Utility Console Application (CDMUtil_ConsoleApp) creates a database in your Synapse workspace and populates it from the CDM tables manifest in your data lake. It's recommended to use the CMD Utility in a development environment with your database (in case there are any extensions). 
+Use the Common Data Model (CDM) utility console application (CDMUtil_ConsoleApp) to create a database in your Synapse workspace and populate it from the CDM tables in your Azure Data Lake storage. It's recommended to use the CMD utility in a development environment with your database, in case there are any extensions. 
 
 > [!NOTE] 
-> The steps below assume no extension data is added to the RetailSales cube.
+> The following steps assume that no extension data is being added to the Retail Sales cube.
 
-### Steps
+To create a database in Synapse, follow these steps.
 
-1. Follow the steps and download the CDMUtilConsoleApp.zip file from the [Dynamics-365-FastTrack-Implementation-Assets GitHub](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution#2-cdmutil-console-app).
-2. Extract the zip into a local folder.
-3. Open ```CDMUtil_ConsoleApp.dll.config``` file in a text editor and update these values.
-   1. Set the Tenant ID (azure tenant id).
-   2. Set the Access key (access key to storage account for data lake).
-       1. In the Azure portal, open the storage account. In the menu on the left side of the page, select **Access keys**. 
-       2. Click Show keys on the top of the page.
-       3. Click on the copy icon for one of the two key fields and paste it into the config file between the double quotes.
-   3. Set the ```ManifestURL``` to the URL of your ```Tables.manifest.cdm.json``` file in ADLS
-       1. In the Azure portal, browse the file, click on the 3 dots on the right side of the view and click Properties. The first property in the overview tab is the URL. Copy it and paste it into the config file between the double quotes.
-   4. Set the ```TargetDbConnectionString``` to the connection string for the Built-in serverless SQL pool of your Synapse workspace.
-       1. In the Synapse workspace open the Manage tab: 
-          1. Select SQL pools in the submenu. 
-          2. Select the name **Built-in** to view its properties.
-          3. In the properties dialog box, select the ADO.NET connection type you want to use and then copy the connection string value and paste it into the config file between the double quotes. 
+1. Go to [Dynamics-365-FastTrack-Implementation-Assets GitHub](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/tree/master/Analytics/CDMUtilSolution#2-cdmutil-console-app) to follow the steps and download the CDMUtilConsoleApp.zip file.
+1. Extract the .zip file into a local folder.
+1. Open the **CDMUtil_ConsoleApp.dll.config** file in a text editor and update the following values:
+    1. Set the Tenant ID value (Azure tenant ID).
+    1. Set the Access key value (the access key for the Azure Data Lake storage account).
+        1. In the Azure portal, open your storage account. In the menu on the left side of the page, select **Access keys**. 
+        1. At the top of the page, select **Show keys**.
+        1. Select the copy symbol for one of the two key fields and then paste it into the config file between the double quotes.
+    1. Set the **ManifestURL** value to the URL of your **Tables.manifest.cdm.json** file in Azure Data Lake Store. To obtain the URL, browse to the file In the Azure portal, select the ellipsis (**...**) on the right side of the view, and then select **Properties**. The first property displayed on the overview tab is the URL.
+    1. Set the **TargetDbConnectionString** value to the connection string for the built-in serverless SQL pool of your Synapse workspace by doing the following:
+        1. In the Synapse workspace, open the **Manage** tab. 
+        1. Select **SQL pools** in the submenu. 
+        2. Select the name **Built-in** to view its properties.
+        3. In the properties dialog box, select the ADO.NET connection type you want to use and then copy the connection string value and paste it into the config file between the double quotes. 
       > [!NOTE]
-      > The user must have permission to create databases. For ease of use you might want to use the builtin admin login ```sqladminuser```.
-  5. Next, Uncomment the ```ProcessEntities``` node and set it to **true**.
-      1. ```<add key="ProcessEntities" value ="true"/>```
-  6. Save and close the ```CDMUtil_ConsoleApp.dll.config``` file.
-  7. Copy in ```EntityList.json``` to the ```/Manifest``` directory
-  8. In a command prompt window run ```cdmutil_consoleapp.exe```.
+      > The user must have permission to create databases. For ease of use, you might want to use the built-in administrator account **sqladminuser**.
+  5. Uncomment the **ProcessEntities** node and set its value to **true**, for example `<add key="ProcessEntities" value ="true"/>`.
+  6. Save and close the **CDMUtil_ConsoleApp.dll.config** file.
+  7. Copy the **EntityList.json** file to the **/Manifest** directory.
+  8. In a command prompt window, run **cdmutil_consoleapp.exe**.
 
 > [!NOTE]
-> When reviewing the output there should be 35 Entities/Views and at least 75 tables and no errors.
+> When reviewing the output, there should be 35 entities/views, at least 75 tables, and no errors.
 
 ## Prepare the Data Lake RetailSales Aggregate Measurements directory
 
-### Back up your current RetailSales cube data from the Data Lake
+### Back up your current Retail Sales cube data from Azure Data Lake storage
 
-The easiest way to do this is to rename the RetailSales folder in the data lake. 
-Rename it to ```RetailSales-backup```, or something similar. This preserves the existing data in case troubleshooting is required later.
+The easiest way to back up your current Retail Sales cube data is to rename the **RetailSales** directory in Azure Data Lake storage to **RetailSales-backup** or something similar. This preserves the existing data in case troubleshooting is required later.
 
-#### The RetailSales cube folder is here: 
+The **/RetailSales** cube folder can be found in the following location: 
 
-```
+`
 <storage-account>
   /dynamics365-financeandoperations
-    /<environment-url> (example: myuat.sandbox.operations.dynamics.com)
+    /<environment-url> (for example, `myuat.sandbox.operations.dynamics.com`)
       /AggregateMeasurements
         /RetailSales
-```
+`
 
-### Create a New RetailSales folder and upload the model file
+### Create a new RetailSales folder and upload the model file
 
-In the data lake:
+To create a new **RetailSales** directory and upload the **model.json** file in Azure Data Lake storage, follow these steps.
 
-1.	Create a new empty folder named RetailSales.
-2.	Upload the model.json file to the directory.
+1. Create a new empty directory named **RetailSales** at the same level as the previous directory.
+1. Upload the **model.json** file to the new directory.
 
-## Create a pipeline to copy the RetailSales cube data
+## Create a pipeline to copy the Retail Sales cube data
 
-The pipeline will read the RetailSales cube views and export the data to csv files in the data lake.
+The pipeline will read the Retail Sales cube views and export the data to .csv files in the Azure Data Lake storage.
 
-To create a pipeline to copy the RetailSales cube data, follow these steps.
+To create a pipeline to copy the Retail Sales cube data, follow these steps.
 
-1.	Select the integrate tab in the Synapse workspace.
-1.	Click the ```+``` icon and select import from pipeline template.
-1.	Download and Select the [ExportRetailSalesCubeViews.zip file](https://aka.ms/reco-alternate-dataflow-files).
+1.	In the Synapse workspace, select the **Integrate** tab.
+1.	Select the plus symbol (**+**), and then select **Import from pipeline template**.
+1.	Download and select the [ExportRetailSalesCubeViews.zip file](https://aka.ms/reco-alternate-dataflow-files).
 1.	Select your SQL database linked service.
 1.	Select your storage account linked service.
-1.	Open the **CopyData** task and change the folder property to be the `<environment_name>/...`.
+1.	Open the **CopyData** task and change the folder property to **<environment_name>/...**.
 
 ### Test execution of the pipeline
 
@@ -168,9 +163,9 @@ Every time the pipeline runs, Azure consumption occurs. It's recommended to sche
  
 ## Table list for syncing from Dynamics 365 to Azure Data Lake Store
 
-This list of tables is a subset of all tables needed for the whole RetailSales cube. Only 15 of the views in the RetailSales cube are used by the recommendations service and the list of tables needed was filtered accordingly.
+The following list of tables is a subset of all tables needed for the whole Retail Sales cube. Only 15 of the views in the Retail Sales cube are used by the recommendations service and the list of tables needed was filtered accordingly.
 
-### Retail Sales Cube table
+### List of Retail Sales cube tables
 
 |Table 1|
 | --- |
@@ -255,16 +250,16 @@ OMExplodedOrganizationSecurityGraph |
 
 ### View list for parameter to pass into the Synapse pipeline
 
-This is a comma separated list of RetailSales cube views. This is the list of views the pipeline will perform a ‘select’ operation on and copy the results to the data lake. 
+This is a comma separated list of Retail Sales cube views. This is the list of views that the pipeline will perform a "select" operation on and then copy the results to Azure Data Lake storage. 
 
 > [NOTE]
-> The Pipeline parameter must be a list of view names separated by a coma with no spaces or line feeds.
+> The pipeline parameter must be a list of view names separated by single commas with no spaces or line feeds.
 
 ```
 RetailSales_RetailAssortmentRulesView,RetailSales_RetailChannelNavigationHierarchiesView,RetailSales_RetailChannelNavigationHierarchyCatalogProductsView,RetailSales_RetailChannelNavigationHierarchyCategoryNodesView,RetailSales_RetailChannelNavigationHierarchyCategoryProductsView,RetailSales_RetailMediaBaseUrlChannelView,RetailSales_RetailMediaRelativeUrlProductView,RetailSales_RetailMediaTemplateView,RetailSales_RetailOptOutCustomersView,RetailSales_RetailProductCategory,RetailSales_RetailProductTransaction,RetailSales_RetailProductVariantDimensionsView,RetailSales_RetailRecoListConfigurationParametersView,RetailSales_RetailRecoListsSharedParametersView,RetailSales_RetailEcoResProductTranslation|
 ```
 
-## Environment specific fixes
+## Environment-specific fixes
 
 ### [RETAILCHANNELVIEW]
 
@@ -291,7 +286,7 @@ WHERE  ((((T1.OMOPERATINGUNITID = T2.RECID)
               ))
         AND T2.INSTANCERELATIONTYPE IN (8363));
 ```
-To fix this use SSMS attached to the synapse database.
+To fix this use SQL Server Management Studio attached to the synapse database.
 1.	In Dynamics 365, look up the **ChannelID** for your online channel.
 2.	Run this query and copy the value from the first column, ```INSTANCERELATIONTYPE```, and paste it into ```the view definition```
 
@@ -303,7 +298,7 @@ select INSTANCERELATIONTYPE, NAME, NAMEALIAS, * from dbo.DIRPARTYTABLE where REC
 
 ### Pipeline task fails
 
-There should be 15 pipeline task executions for CopyData. If any of them fail, you will need to validate that all the dependent SQL objects exist and the queries execute. To get to all the dependencies, it is easiest to use SSMS to connect to the database.  You can then right click on a view and select Generate CREATE as to a new window’
+There should be 15 pipeline task executions for CopyData. If any of them fail, you will need to validate that all the dependent SQL objects exist and the queries execute. To get to all the dependencies, it is easiest to use SQL Server Management Studio to connect to the database.  You can then right click on a view and select Generate CREATE as to a new window’
 Example error message text includes: 
 - Error: Failure happened on 'Source' side
 - Error handling external file: 'Max errors count.   
@@ -351,7 +346,7 @@ CREATE VIEW [DBO].[RETAILPRODUCTCATEGORYVIEW] AS SELECT T1.CATEGORY AS CATEGORY,
          - ECORESCATEGORYHIERARCHYROLE
 
 
-8.	Now a quick copy and paste using excel you can create 13 select count(*) from <view_name> statements.  Run these in SSMS with results to text and you can scroll through the results to see if any of the views failed. The initial error suggests that at least one of them will
+8.	Now a quick copy and paste using excel you can create 13 **select count(\*) from <view_name>** statements. Run these in SQL Server Management Studio with results to text and you can scroll through the results to see if any of the views failed. The initial error suggests that at least one of them will
 
  ```
 select count(*) from	RetailProductCategoryView
@@ -369,9 +364,7 @@ select count(*) from	RETAILCATEGORYEXPANDED
 select count(*) from	ECORESCATEGORY
 ```
 
-9.	A technique to validate what you are looking at, you can create  a root dependent view to generate the view definition in SSMS and verify there is a data lake file column named ```r.filepath```. That indicates the view you are looking at is reading data from the data lake.
-
-
+9.	A technique to validate what you are looking at, you can create  a root dependent view to generate the view definition in SQL Server Management Studio and verify there is a data lake file column named **r.filepath**. That indicates the view you are looking at is reading data from the data lake.
 
 ## Additional resources
 
