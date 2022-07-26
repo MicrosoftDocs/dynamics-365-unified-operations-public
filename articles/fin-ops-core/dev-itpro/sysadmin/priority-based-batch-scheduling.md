@@ -171,12 +171,12 @@ A new internal system batch job, **System job to clean up expired batch heartbea
 - We recommend having more than one batch group to take advantage of priority-based batch scheduling, and use different priorities at a batch-group level.
 - When debugging batches in UAT by connecting to a development machine, you will have to disable the reset of the batch server by running the following script to ensure that all the batches are running on the development machine. 
 
-```
+    ```
     UPDATE ssc
     SET ssc.enablebatch = 0
     FROM dbo.sysserverconfig ssc
     WHERE ssc.serverid = '<servername Tier2 batch server>'   
-```
+    ```
 
 ## Automatic batch group migration for batch jobs
 
