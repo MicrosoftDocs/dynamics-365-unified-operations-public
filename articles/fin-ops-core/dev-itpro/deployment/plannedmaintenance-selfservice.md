@@ -63,7 +63,7 @@ A planned maintenance window is typically during the dark hours of the geographi
 > All the maintenance activity (operating system patching, security hotfixes, and quality updates) will be performed during the dark hour window to provide a near-zero-downtime experience. 
 
 ## Can operating system updates be applied in near-zero-downtime?
-Yes, Microsoft has provided near-zero-downtime infrastructure maintenance for operating system updates since May 2021.
+Yes. Microsoft has provided near-zero-downtime infrastructure maintenance for operating system updates since May 2021.
 
 ## What does near-zero-downtime maintenance mean?
 Customers can continue to operate the system during the maintenance activity. They may experience brief interruptions or disconnects during this window, but will not need to take a full downtime.
