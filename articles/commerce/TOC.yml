@@ -672,7 +672,7 @@
           href: product-recommendations.md 
         - name: Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment 
           href: enable-ADLS-environment.md 
-        - name: Set up an alternate data flow
+        - name: Set up an alternate dataflow
           href: set-up-alternate-data-flow.md
         - name: Enable product recommendations
           href: enable-product-recommendations.md
