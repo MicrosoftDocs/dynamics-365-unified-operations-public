@@ -1,7 +1,7 @@
 ---
 title: Install network printer devices in on-premises environments
 description: This article explains how to connect an on-premises deployment of Microsoft Dynamics 365 Finance + Operations (on-premises), to existing network printer devices.
-author: RichdiMSFT
+author: faix
 ms.date: 04/07/2022
 ms.topic: article
 ms.prod: dynamics-365
