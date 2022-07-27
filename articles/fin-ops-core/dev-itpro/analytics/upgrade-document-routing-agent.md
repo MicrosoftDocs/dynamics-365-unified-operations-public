@@ -4,7 +4,7 @@
 title: Update the Document Routing Agent
 description: This article explains how to update the Document Routing Agent.
 author: RichdiMSFT
-ms.date: 05/14/2020
+ms.date: 07/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -61,5 +61,12 @@ For information about how to install the latest DRA that is available with your 
 > [!NOTE]
 > Be sure to open the DRA client after upgrading to refresh network user credentials.
 
+## Best practices
+When creating a support ticket specific to the Document Routing Agent, consider exporting event logs containing events at the time that the issue occured from the Document Rountin Agent machine. 
+
+The default event log size is only 1 MB, so if the issue is intermittent, such as a performance issue, consider increasing the event log size. Then wait for some time before exporting the event logs.
+
+- \\Applications and Services Logs\Microsoft\Dynamics\Ax-DocumentRouting\Operational
+- \\Applications and Services Logs\Microsoft\Dynamics\Ax-DocumentRouting\Admin
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
