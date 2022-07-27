@@ -31,23 +31,26 @@ This article walks through an example procedure where call center users can look
 
 ## Prerequisites
 
-The user who completes the procedure must be set up as a call center user. Optionally, the Fabrikam semi-annual aatalog can be published with at least one source code on it. 
+The user who completes the procedure must be set up as a call center user. Optionally, the Fabrikam semi-annual catalog can be published with at least one source code on it. 
 
-To add yourself as a call center user, in Commerce headquarters navigate to the **All call centers** form and add yourself as a user. Refer the images below:
+## Add yourself as a call center user
 
+To add yourself as a call center user, follow these steps.
 
-![View call center users](../media/View_Callcenter_Users.png)
+1. In Commerce headquarters, go to **Retail and Commerce \> Channels \> Call centers \> All call centers**.
+1. Under **Users**, select **Channel users**.
+1. On the action pane, select **+New**.
+1. Under **User ID**, enter your user ID. 
+1. Under **Name**, enter your user name. The user name can be the same as the user ID.
+1. On the action pane, select **Save**.
+1. Go back to **Retail and Commerce \> Channels \> Call centers \> All call centers**.
+1. Select the **Retail Channel Id**, select the retail channel ID for the call center.
+1. Confirm that the **Enable order completion** option is set to **Yes**. If this option is not visible, you can skip this step.
 
+## Step through the example call center procedure
 
-![Add a call center user](../media/Add_Callcenter_User.png)
+To step through the example call center procedure, follow these steps.
 
-
-Additionally, open the call center form where you are added as a user and ensure that the **Enable order completion** option is set to **Yes**. If this option is not visible, you can skip this step. Refer the image below.
-
-![Enable order completion](../media/Order_Completion.png "Enable Order completion configuration")
-
-## Steps
- 
 1. Go to **Retail and Commerce \> Customers \> Customer service**.
 2. For **SearchText**, enter the search criteria to look up the customer. For this example procedure, enter "Karen" and select **Tab**.  
 3. Select **Search**. Since there is only one customer named "Karen" in the demo data, the result will be automatically selected. If the result is not automatically selected, select **Select**.  
