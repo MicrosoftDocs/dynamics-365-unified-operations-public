@@ -32,8 +32,6 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This page is currently being updated with new content. 
-
 ## What is Dynamics 365 Human Resources?
 
 Microsoft Dynamics 365 Human Resources provides tools that help HR teams increase organizational agility, transform the employee experience, and optimize HR programs to create a workplace where people and the business can thrive. To learn more about Dynamics 365 Human Resources, see [Dynamics 365 Human Resources](https://dynamics.microsoft.com/human-resources/overview/).
