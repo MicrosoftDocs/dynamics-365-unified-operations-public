@@ -60,7 +60,7 @@ Use the following procedure to set up shelf life for a product:
 1. Go to **Product information management \> Products \> Released products**.
 1. Open the product you want to set up.
 1. Expand the **General** FastTab and make the following setting:
-    - **Tracking dimension group** – Select a tracking dimension group that is set up to track the batch dimension, as described in the previous section. <!-- KFM: Appears to be read only, as are all the parameters below. More info may be needed. -->
+    - **Tracking dimension group** – Select a tracking dimension group that is set up to track the batch dimension, as described in the previous section. <!-- KFM: Appears to be read only, as are all the parameters below. More info may be needed. Maybe tracking dimension can only be specified when creating a product?  -->
 1. Expand the **Manage inventory** FastTab and make the following settings:
     - **Shelf advice period in days** – Specify the period (in days) by which to check a batch of this product to ensure it is suitable for consumption or resale. This value is added to a batch's *manufacturing date* to determine its *shelf advice date*. You can configure the system to generate quality orders when a batch approaches its shelf advice date.
     - **Shelf life in days** – Specify the number of days before a batch of this product expires. This value is added to the date of manufacture to get the *expiration date*. The batch is considered unusable after this date.
@@ -116,50 +116,49 @@ This example shows a basic example of shelf life, where pegging between the supp
 The system has the following item and master plan settings:
 
 - **Replenishment strategy (coverage code)** – Period
-- **Period** – 10 days
 - **Shelf life** – 10 days
+- **Period** – 10 days (equal to the shelf life)
 - **Sellable days** – 0 days
 - **Lead time** – 0 days
 - **Type of planned order (default order settings of the item)** – Purchase order
 
 There are three sales orders (SO) for the item:
 
-- **SO1** – Quantity (qty) = 2, requested for today +3 days
-- **SO2** – Qty = 1, requested for today +4 days
-- **SO3** – Qty = 1, requested for today +5 days
+- **SO1** – Quantity (qty) = 2, requested delivery date = today + 3 days
+- **SO2** – Qty = 1, requested delivery date = today + 4 days
+- **SO3** – Qty = 1, requested delivery date =  + 5 days
 
 All of these sales orders create demand for the item.
 
 The following supply exists for the item:
 
 - **On-hand inventory** – Qty = 1, expiration date = today + 5 days
-- **Purchase order (PO1)** – Receipt date = today +2 days, qty = 1, expiration date = today + 4 days
+- **Purchase order (PO1)** – Receipt date = today + 2 days, qty = 1, expiration date = today + 4 days
 
 The system will create a list of supply that can cover this demand, and it will sort the list by expiration date (using FEFO).
 
 Master planning will create the needed pegging between supply and demand. It will also create any needed demand based on the supply list (using FEFO) and consider availability date.
 
-- SO1 can be fulfilled by on-hand quantity, but can't be fulfilled by PO1 because the availability date for PO1 is one day later than SO1 requires. As a result, SO1 generates a demand for one unit of goods. <!--KFM: Seems like PO1 comes one day before S01 requires. Right? -->
+- SO1 can be fulfilled by on-hand quantity, but can't be fulfilled by PO1 because the availability date for PO1 is one day later than SO1 requires. As a result, SO1 generates a demand for one unit of goods. <!--KFM: Seems like PO1 actually comes one day *before* S01 is required. Right? -->
 - SO2 can be covered by PO1 because PO1 will arrive by the requested time and the expiration date will still be valid. Therefore, the SO2 requirement is fully covered by PO1.
 - SO3 isn't covered because resources aren't available. As a result, SO3 generates a demand for one unit of goods.
 
-To cover all the remaining requirements, the system will create the following planned purchase order:
+To cover all the remaining requirements, the system must create the following planned purchase order:
 
-- **PPO1** – Receipt date = today, qty = 2, expiration date = today + 10 days <!--KFM: Illustration shows qty = 1. What do we mean? -->
+- **PPO1** – Receipt date = today, qty = 2, expiration date = today + 10 days
 
 The following table shows the final result:
 
-| Demand (sorted by requirement date) | Pegging |
+| Demand | Pegging |
 |---|---|
-| **SO1** – Shipping date = today + 3 days, qty = 2 | **On-hand** – Qty = 1, expiration date = today + 5 days</br>**PPO** – Receipt date = today, qty = 1, expiration date = today + 10 days|
-| **SO2** – Shipping date = today + 4 days, qty = 1 | **PO1** – Receipt date = today + 2 days, 1 qty, expiration date = today + 4 days |
-| **SO3** – Shipping date = today + 5 days, qty = 1 | **PPO** – Receipt date = today, qty = 2, expiration date = today + 10 days |
+| **SO1** – Delivery date = today + 3 days, qty = 2 | **On-hand** – Qty = 1, expiration date = today + 5 days</br>**PPO** – Receipt date = today, qty = 1, expiration date = today + 10 days|
+| **SO2** – Delivery date = today + 4 days, qty = 1 | **PO1** – Receipt date = today + 2 days, 1 qty, expiration date = today + 4 days |
+| **SO3** – Delivery date = today + 5 days, qty = 1 | **PPO** – Receipt date = today, qty = 2, expiration date = today + 10 days |
 
-The result is shown on the picture below. Note that PO represents purchase order and PPO planned purchase order.
+The following illustration shows the timeline for this example.
 
 <!-- KFM: Illustration notes:
-- The illustration doesn't match the text. Shows PPO for just 1 qty; shows S01 covered by PO1 and on-hand; shows S02 covered by on-hand, shows S03 covered by PPO1. None of this matches. 
-- Expiration date for PO1 (blue) is shown too short.
+- The illustration doesn't match the text. Shows PPO for just 1 qty; shows S01 covered by PO1 and on-hand; shows S02 covered by on-hand; shows on-hand qty 2. None of this matches. 
 - Meaning of period and shelf life bar at the bottom is not clear. 
 - Add numbers for PO1 and PPO1
 - Clean up capitalization and notation
@@ -183,7 +182,7 @@ The system has the following item and master plan settings:
 
 The system has one sales order (SO1):
 
-- **SO1** – Qty = 2, requested for today +3 days
+- **SO1** – Qty = 2, requested delivery date = today + 3 days
 
 This demand is covered by the existing supply and a confirmed purchase order (PO):
 
@@ -194,13 +193,13 @@ SO1 can't be fulfilled by on-hand inventory because the inventory expiration dat
 
 The system has two trade agreements (the first one for qty = 1, lead time = 4 days; and the second one for qty = 2, lead time = 3 days), so the system will minimize delay by creating planned purchase order (PPO1) that meets the second trade agreement. Therefore, we will have overdelivery (qty = 2, expiration date = today + 10 days). The following table shows the final result.
 
-| Demand (sorted requirement date) | Pegging |
+| Demand | Pegging |
 |---|---|
-| **SO1** – Shipping date = today + 3 days, qty = 2 | **PO1** – Receipt date = today + 3 days, qty = 1, expiration date = today + 4 days</br>**PPO1** – Receipt date = today + 3 days, qty = 1, expiration date = today + 10 days</br>**Net requirement** – 0 qty |
+| **SO1** – Delivery date = today + 3 days, qty = 2 | **PO1** – Receipt date = today + 3 days, qty = 1, expiration date = today + 4 days</br>**PPO1** – Receipt date = today + 3 days, qty = 1, expiration date = today + 10 days</br>**Net requirement** – 0 qty |
 
 <!--KFM: Is the "Net requirement" line really needed above? -->
 
-The following illustration shows a timeline for this example.
+The following illustration shows the timeline for this example.
 
 <!-- KFM: Illustration notes:
 - Minimazing (typo). 
@@ -220,15 +219,15 @@ The system has the following item and master plan settings:
 - **Replenishment strategy** – Requirement
 - **Shelf life** – 10 days
 - **Sellable days** – 5 days
-- **Lead time** – 3 days
+- **Lead time** – 3 days <!--KFM: PO1 appears to use lead time of just 2 days -->
 - **Sellable days** – 5 days
 - **Type of planned order** – Purchase order
 
 The following sales orders exist in the system:
 
-- **SO1** – Qty = 2, requested receipt date = today + 2 days
-- **SO2** – Qty = 1, requested receipt date = today + 3 days
-- **SO3** – Qty = 1, requested receipt date = today + 5 days
+- **SO1** – Qty = 2, requested delivery date = today + 2 days
+- **SO2** – Qty = 1, requested delivery date = today + 3 days
+- **SO3** – Qty = 1, requested delivery date = today + 5 days
 
 This demand can be covered by existing supply and a confirmed purchase order:
 
@@ -237,15 +236,17 @@ This demand can be covered by existing supply and a confirmed purchase order:
 
 The system creates a list of pegging candidates based on the supply (FEFO) list and availability dates. Therefore, SO1 can't be fulfilled by the on-hand inventory because that inventory expires before the end of the sellable days required by the customer (requested receipt date + 5 days). PO1 can cover the SO1 requirement with 2 units and SO2 requirement with 1 unit. As a result, only SO3 still has uncovered demand for one unit of goods. To cover this requirement, the system will create the following planned purchase order:
 
-- **PP01** – Receipt day = today + 5 days, qty = 1, expiration date = today + 10 days
+- **PP01** – Receipt date = today + 5 days, qty = 1, expiration date = today + 10 days
 
-The result is shown in the following table and illustration.
+The following table summarize the result.
 <!-- KFM: Note that I changed the PO1 date to today +2 days (from 3 days). I *think* this is required in order for the example to work, and also matches the illustration. Please confirm. -->
-| Demand (sorted requirement date) | Pegging |
+| Demand | Pegging |
 |---|---|
-| **SO1** – Shipping date = today + 2 days, qty = 2 | **PO1** – Receipt date = today + 2 days, qty = 2, expiration date = today + 10 days |
-| **SO2** – Shipping date = today + 3 days, qty = 1 | **PO1** – Receipt date = today + 2 days, qty = 1, expiration date = today + 10 days |
-| **SO3** – Shipping date = today + 5 days, qty = 1 | **PPO1** – Receipt date = today + 5 days, qty = 1, expiration date = today + 10 days |
+| **SO1** – Delivery date = today + 2 days, qty = 2 | **PO1** – Receipt date = today + 2 days, qty = 2, expiration date = today + 10 days |
+| **SO2** – Delivery date = today + 3 days, qty = 1 | **PO1** – Receipt date = today + 2 days, qty = 1, expiration date = today + 10 days |
+| **SO3** – Delivery date = today + 5 days, qty = 1 | **PPO1** – Receipt date = today + 5 days, qty = 1, expiration date = today + 10 days |
+
+The following illustration shows the timeline for this example.
 
 ![Example 3: Simple FEFO, requirement, lead time 3 days, sellable days 5 days.](media/fefo-example-3.png "Example 3: Simple FEFO, requirement, lead time 3 days, sellable days 5 days")
 
@@ -258,103 +259,128 @@ The result is shown in the following table and illustration.
 
 ## Example 4: Simple FEFO, period, lead time depends on quantity
 
-This example illustrates that the main objective of the system is to minimize delays and in some cases, it may result it overordering.
+This example illustrates how the system seeks to minimize delays, which can sometimes result in overordering.
 
-Initial conditions:
+<!-- Isn't this the same as example 2? Intro should point out how this example is different from that one, if it is. -->
+
+The system has the following item and master plan settings:
 
 - **Replenishment strategy** – Period
-- **Period** – is equal to **Shelf life**
-- **Trade agreements:**
-  - If qty is 1, the lead time is 5
-  - If qty is 2, the lead time is 0
+- **Shelf life** – 10 days
+- **Period** – 10 days (equal to the shelf life)
+- **Sellable days** – 0 days
+- **Lead time** – Established by the following vendor trade agreements:
+  - **Trade agreement 1** – If qty = 1, then the lead time = 5
+  - **Trade agreement 2** – If qty = 2, then the lead time = 0
 - **Type of planned order** – Purchase order
 
-There are two Sales orders (SO):
+The following sales orders exist in the system:
 
-- SO1 Quantity (Qty) = 1 requested receipt date for today,
-- SO2 Quantity = 1 requested receipt date for today+6 days,
+- **SO1** – Qty = 1, requested delivery date = today
+- **SO2** – Qty = 1, requested delivery date = today + 6 days
 
-This demand may be covered by the existing supply with confirmed purchase orders:
+This demand can be partially covered by existing supply from the following confirmed purchase orders:
 
-- Purchase order PO1 with delivery date is Today+1 day, PO qty = 1 and Expiration date = Today + 2 days
-- Purchase order PO2 with delivery date is Today+3 days, PO qty = 1 and Expiration date = Today + 7 days
+- **PO1** – Receipt date = today + 1 days, qty = 1, expiration date = today + 2 days
+- **PO2** – Receipt date = today + 3 days, qty = 1, expiration date = today + 7 days
 
-Based on the trade agreement restrictions and to minimize a delay the system will create a Planned purchase order PPO with overordering Quantity = 2 and Expiration date = Today+10. The SO1 will be covered by Quantity =1 of the created Planned purchase order and SO2 will be covered by the existent PO1 with delivery date is Today+3 days, PO qty = 1 and Expiration date = Today + 7 days.
+The system has two trade agreements (the first one for qty = 1, lead time = 5 days; and the second one for qty = 2, lead time = 0 days), so the system will minimize delay by creating the following planned purchase order (PPO1), which meets the second trade agreement:
 
-As the result, after planning the system will have Purchase order PO1 with delivery date is Today+1 day, PO qty = 1 and Expiration date = Today + 2 days and Expiration date = Today+6 and the rest of the created Planned purchase order PPO with Quantity = 1 and Expiration date = Today+10.
+- **PP01** – Receipt date = today, qty = 2, expiration date = today + 10 days
 
-The result is shown on the picture below.
+SO1 will be covered by one unit from PPO1. SO2 will be covered by PO2.
 
-| Demand (sorted requirement date) | Pegging |
+The following table summarize the result.
+
+| Demand | Pegging |
 |---|---|
-| SO1 Today, 1 qty | PPO Today, 1 qty, Exp Today +10 |
-| SO2 Today + 6 , 1 qty | PO2 Today + 3, 1 qty, Exp Today + 7 |
-|  | Note: PO1 is not in use, PPO overorderdering qty 1 |
+| **SO1** – Delivery date = today, qty = 1 | **PPO1** – Receipt date = today, qty = 1, expiration date = today + 10 days |
+| **SO2** – Delivery date = today + 6 days, qty = 1 | **PO2** – Receipt date = today + 3 days, qty = 1, expiration date = today + 7 days |
+
+> [!NOTE]
+> PO1 isn't used (because it arrives too late for S01 and will expire before S02 is delivered). PPO1 has overodered by 1 unit to allow the lead time to be zero (according to trade agreement 2).
+
+The following illustration shows the timeline for this example.
 
 ![Example 4: Simple FEFO, period, lead time depends on quantity.](media/fefo-example-4.png "Example 4: Simple FEFO, period, lead time depends on quantity")
 
 ## Example 5: Simple FEFO, requirement, 10 negative days
 
-This example shows how shelf life works when adding a big number of negative days for the item.
+<!-- KFM: This is more of a negative days example than a shelf life example. We should point out more explicitly how shelf life affects this situation (or maybe remove this example). -->
 
-Negative days are the number of days that you're willing to wait before you order new replenishment when you have negative inventory. So that the system will not create supply if the number of negative days is not exceeded.
+This example shows how shelf life works when adding a large number of negative days for an item. Negative days are the number of days that you're willing to wait before ordering replenishment of an item with negative inventory. The system won't create supply unless the number of negative days is exceeded. <!-- KFM: How is negative inventory relevant for this example? -->
 
-Initial conditions:
+The system has the following item and master plan settings:
 
 - **Replenishment strategy** – Requirement
-- **Negative days** – 10
+- **Negative days** – 10 days
+- **Sellable days** – 0 days
+- **Lead time** – 0 days
 - **Type of planned order** – Purchase order
 
-The system has a Sales orders (SO):
+The following sales order exists in the system:
 
-- SO1 Quantity (Qty) = 1 requested receipt date for today,
+- **SO1** – Qty = 1, requested delivery date = today
 
-This demand may be covered by the supply:
+This demand can be covered by existing supply from the following confirmed purchase order:
 
-- Purchase order PO1 with delivery date is Today+3 days, PO qty = 1 and Expiration date = Today + 5 days
+- **PO1** – Receipt date = today + 3 days, qty = 1, expiration date = today + 5 days
 
-Since the user set up 10 negative days, the system will cover the demand of SO1 by using PO1 even with a delay of 3 days.
+Because the system is configured to allow 10 negative days, it will cover the demand of SO1 by using PO1 even through that will result in a delay of 3 days. No planned order is created even though lead time is 0 and creating a PPO would reduce delays.
 
-No planned order is created even though lead time is 0 and creating a PPO would reduce delays.
+The following table summarize the result.
 
-The result is shown on the picture below.
-
-As shown, the system will cover the demand with existing supply despite the delay in delivery.
-
-| Demand (sorted requirement date) | Pegging |
+| Demand | Pegging |
 |---|---|
-| SO1 Today, 1 qty | PO Today + 3, 1 qty, Exp Today + 5 |
+| **SO1** – Delivery date = today, qty = 1 | **PO1** – Receipt date = today + 3 days, qty = 1, expiration date = today + 5 days |
+
+The following illustration shows the timeline for this example.
 
 ![Example 5: Simple FEFO, requirement, 10 negative days.](media/fefo-example-5.png "Example 5: Simple FEFO, requirement, 10 negative days")
 
+<!-- KFM: Illustration notes:
+- Illustration shows SO1 shipping today, but it can't ship until PO1 arrives on day three. This may mean that we have three days of negative inventory, where we must wait for something to show up; if so, we should add some text to explain this.
+ -->
+
 ## Example 6: Simple FEFO, requirement, 5 negative days
 
-This example will illustrate that how shelf life works when a number of negative days for the item less than shelf-life period.
+This example shows how shelf life works when a number of negative days for an item less than the shelf-life period.
 
-Initial conditions:
+The system has the following item and master plan settings:
 
 - **Replenishment strategy** – Requirement
-- **Negative days** – 5
+- **Negative days** – 5 days
+- **Sellable days** – 0 days
+- **Lead time** – 0 days
 - **Type of planned order** – Purchase order
 
-The system has a Sales orders (SO):
+The following sales order exists in the system:
 
-- SO1 Quantity (Qty) = 2 requested receipt date for today,
+- **SO1** – Qty = 2, requested delivery date = today
 
-This demand may be covered by the supply:
+This demand could be covered by existing supply from the following confirmed purchase orders:
 
-- Purchase order PO1 with delivery date is Today, PO qty = 1 and Expiration date = Today + 1 day
-- Purchase order PO2 with delivery date is Today + 2 days, PO qty = 1 and Expiration date = Today + 3 days
+- **PO1** – Receipt date = today, qty = 1, expiration date = today + 1 day
+- **PO2** – Receipt date = today + 2 days, qty = 1, expiration date = today + 3 days
 
-We will respect the restriction that requires the shipped items do not have batch expires at the time of shipment. So, the system will create a new Planned purchase order PPO with Quantity = 1 and Expiration date = Today + 10 days. This PPO will cover Quantity = 1 of SO1 and the existent Purchase order PO2 will cover the rest of SO1 demand.
+However, the system must respect the restriction that shipped items can't be expired at the time of shipment, so PO1 can't be used for SO1. Therefore, the system will create the following planned purchase order to finish covering the demand for SO1:
 
-The PO1 will not be used in this planning exercise.
+- **PP01** – Receipt date = today, qty = 1, expiration date = today + 10 days
 
-The result is shown on the picture below.
+The system can take advantage of the five negative days to delay shipment of SO1 by two days, and will therefore use the existing supply from PO1 to cover the other unit for SO1. <!-- KFM: I added this. Please confirm -->
 
-| Demand (sorted requirement date) | Pegging |
+The following table summarize the result.
+
+| Demand | Pegging |
 |---|---|
-| SO1 Today, 2 qty | PO1 Today, 1 qty, Exp Today + 1 |
-|  | PPO Today, 1 qty, Exp Today + 10 |
+| **SO1** – Delivery date = today, qty = 2 | **PO2** – Receipt date = today, qty = 1, expiration date = today + 3 days<br>**PPO1** – Receipt date = today, qty = 1, expiration date = today + 10 days |
+
+The following illustration shows the timeline for this example.
 
 ![Example 6: Simple FEFO, requirement, 5 negative days.](media/fefo-example-6.png "Example 6: Simple FEFO, requirement, 5 negative days")
+
+<!-- KFM: Illustration notes:
+- Illustration doesn't match the text. Text says we don't use PO1 (because it expires before SO1 ships), so SO1 should instead use PO2 and ship at today+2 days (or text should point out that we allow two days of negative inventory). However, PO1 doesn't look like it actually does expire before SO1 ships (S01 ships today, PO1 expires tomorrow). I don't know what is going on here.
+ -->
+
+<!-- KFM: Note that I have edited to always use "delivery date" when talking about SOs and "receipt date" when talking about POs and PPOs. The original wasn't consistent. Are these the correct terms? -->
