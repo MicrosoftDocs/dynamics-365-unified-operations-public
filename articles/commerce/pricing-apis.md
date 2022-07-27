@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Application update 10.0.29
 Commerce pricing engine provides the following APIs that can be consumed by external applications to support various pricing scenarios.
 
 - **GetActivePrices** – Gets a product’s calculated price including simple discounts.
-- **CalculateSalesDocument** – Calculates prices and discounts for items with quantities as they were bought together.
+- **CalculateSalesDocument** – Calculates prices and discounts for items with quantities as if they were bought together.
 - **GetAvailablePromotions** – Gets applicable discounts for items in cart. 
 - **AddCoupons** – Adds coupons into a cart.
 - **RemoveCoupons** – Removes coupons from a cart.
