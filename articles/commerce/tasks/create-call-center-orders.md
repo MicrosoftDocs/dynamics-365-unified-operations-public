@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create call center orders
-description: This article describes how call center users can look up a customer, create a new order, search for a product, and collect payment from a customer in Microsoft Dynamics 365 Commerce. 
+description: This article walks through an example procedure where call center users can look up a customer, create a new order, search for a product, and collect payment from a customer in Microsoft Dynamics 365 Commerce. 
 author: josaw1
 ms.date: 07/27/2022
 ms.topic: business-process 
@@ -27,11 +27,11 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how call center users can look up a customer, create a new order, search for a product, and collect payment from a customer in Microsoft Dynamics 365 Commerce. The procedure below uses demo data company USRT and is intended for the sales order clerk. 
+This article walks through an example procedure where call center users can look up a customer, create a new order, search for a product, and collect payment from a customer in Microsoft Dynamics 365 Commerce. The procedure uses demo data company USRT and is intended for sales order clerks. 
 
 ## Prerequisites
 
-The user who completes the procedure is set up as a Call center user and optionally, Fabrikam Semi-Annual Catalog is published with at least one Source code on it. 
+The user who completes the procedure must be set up as a call center user. Optionally, the Fabrikam semi-annual aatalog can be published with at least one source code on it. 
 
 To add yourself as a call center user, in Commerce headquarters navigate to the **All call centers** form and add yourself as a user. Refer the images below:
 
@@ -50,11 +50,11 @@ Additionally, open the call center form where you are added as a user and ensure
  
 1. Go to **Retail and Commerce \> Customers \> Customer service**.
 2. For **SearchText**, enter the search criteria to look up the customer. For this example procedure, enter "Karen" and select **Tab**.  
-3. Select **Search**. Since there is only one customer named "Karen" in the demo data, the result will be automatically selected. If not selected, then press the "Select" button.  
+3. Select **Search**. Since there is only one customer named "Karen" in the demo data, the result will be automatically selected. If the result is not automatically selected, select **Select**.  
 4. Select **New sales order**.
-5. Expand or collapse the **Sales order** header section and choose "Mode of delivery" as 99 - Standard shipping.
+5. Expand or collapse the **Sales order** header section, and then for **Mode of delivery** select **99 - Standard shipping**.
 
-![Select a mode of delivery](../media/Select_Mode_of_Delivery.png)
+    ![Select a mode of delivery](../media/Select_Mode_of_Delivery.png)
   
 6. Additionally, select the source code for the catalog. If there are no active source codes you can skip this step.   
 7. Select the **Lines** tab to exit the **Header** tab, and then select **Add line**.
