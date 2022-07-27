@@ -4,7 +4,7 @@
 title: Set up direct integration of Italian FatturaPA with SDI
 description: This article provides information that will help you get started with Electronic invoicing for Italy and set up direct integration of Italian FatturaPA with the Exchange system (SDI).
 author: abaryshnikov
-ms.date: 01/15/2022
+ms.date: 07/27/2022
 ms.topic: article
 audience: Application User, Developer
 ms.reviewer: kfend
@@ -66,10 +66,13 @@ This section complements the [Country-specific configuration of application setu
     - For the **Sign document** action, in the **Certificate name** field, specify the Digital signature certificate.
     - For the **Submit** action, set the **URL address** and **Certificates** fields. The value of the **Certificates** field is a chain of certificates, the first of which is the root CA certificate (caentrate.cer), and the second of which is the Clients certificate.
 
-4. Select **Validate** to ensure that all required fields have been set.
-5. Save your changes, and close the page.
-6. On the **Setups** tab, select **Project invoices**, and then select **Edit**.
-7. Repeat steps 3 through 5 for project invoices.
+4. In the **Applicability rules** section, go through the clauses, and review or set the required fields:
+    - Review the **LegalEntityID** clause and update with the correct value from your legal entity.
+
+5. Select **Validate** to ensure that all required fields have been set.
+6. Save your changes, and close the page.
+7. On the **Setups** tab, select **Project invoices**, and then select **Edit**.
+8. Repeat steps 3 through 6 for project invoices.
 
 ### Configure the processing pipeline for import
 
