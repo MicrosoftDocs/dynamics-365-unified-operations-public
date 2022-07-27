@@ -1,6 +1,6 @@
 ---
 title: Default reporting experiences in IaaS environments
-description: This article provides information about paginated reporting in Finance and Operations apps.
+description: This article provides information about paginated reporting in finance and operations apps.
 author: RichdiMSFT
 ms.date: 05/13/2020
 ms.topic: article
