@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Employee competencies and development Power BI content
-description: This article describes the Employee competencies and development Power BI content. 
+description: This article describes the Employee competencies and development Power BI content.
 author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 263894
-ms.assetid: 7d375d8a-b2de-4bec-b575-93d1d4521b79
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 
+  - 263894
+ms.assetid: 7d375d8a-b2de-4bec-b575-93d1d4521b79
 ---
 
 # Employee competencies and development Power BI content

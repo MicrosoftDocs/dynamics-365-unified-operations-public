@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Purchase spend analysis Power BI content
 description: This article describes what is included in the Purchase spend analysis Power BI content.
 author: FrankDahl
@@ -8,23 +6,16 @@ ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: PurchaseSpendAnalysisPowerBI
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 265434
-ms.assetid: 3cd9dfce-2687-4303-bc78-349e7cb5ea75
+ms.reviewer: sericks
 ms.search.region: global
-# ms.search.industry: 
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 
+  - 265434
+ms.assetid: 3cd9dfce-2687-4303-bc78-349e7cb5ea75
+ms.search.form: PurchaseSpendAnalysisPowerBI
 ---
 
 # Purchase spend analysis Power BI content
