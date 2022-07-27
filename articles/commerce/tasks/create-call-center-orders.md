@@ -55,14 +55,16 @@ To step through the example call center procedure, follow these steps.
 1. On the **Customer search** tab, enter the search criteria to look up the customer. For this example procedure, enter "Karen".  
 1. Select **Search**. Since there is only one customer named "Karen" in the demo data, the result will be automatically selected. If the result is not automatically selected, select **Select**.  
 1. On the action pane, select **New sales order**.
-1. On the right, select the **Header** tab. Expand or collapse the **Sales order** header section, and then for *.
+1. On the right, select the **Header** tab.
+1. Select the **Delivery** FastTab.
 1. Under **Mode of delivery**, select **99 - Standard shipping** from the drop-down list.
 
     ![Select a mode of delivery](../media/Select_Mode_of_Delivery.png)
    
 1. On the right, select the **Lines** tab.
-1. Under **Source**, select the source code for the catalog. If there are no active source codes, you can skip this step.
+
 1. Under **Sales order lines**, select **Add line**.
+1. Under **Source code**, select the source code for the catalog. If there are no active source codes, you can skip this step.
 1. For **Item number**, enter the item number search term. For this example procedure, enter a item number of '813' and then press the tab key. This action brings up the item search window.  
 1. Select the product to add to the sales order. For this example, select the item **81327**.
 1. Under **Quantity**, enter the sales quantity.
