@@ -52,32 +52,33 @@ To add yourself as a call center user, follow these steps.
 To step through the example call center procedure, follow these steps.
 
 1. Go to **Retail and Commerce \> Customers \> Customer service**.
-2. For **SearchText**, enter the search criteria to look up the customer. For this example procedure, enter "Karen" and select **Tab**.  
-3. Select **Search**. Since there is only one customer named "Karen" in the demo data, the result will be automatically selected. If the result is not automatically selected, select **Select**.  
-4. Select **New sales order**.
-5. Expand or collapse the **Sales order** header section, and then for **Mode of delivery** select **99 - Standard shipping**.
+1. On the **Customer search** tab, enter the search criteria to look up the customer. For this example procedure, enter "Karen".  
+1. Select **Search**. Since there is only one customer named "Karen" in the demo data, the result will be automatically selected. If the result is not automatically selected, select **Select**.  
+1. On the action pane, select **New sales order**.
+1. On the right, select the **Header** tab. Expand or collapse the **Sales order** header section, and then for *.
+1. Under **Mode of delivery**, select **99 - Standard shipping** from the drop-down list.
 
     ![Select a mode of delivery](../media/Select_Mode_of_Delivery.png)
-  
-6. Additionally, select the source code for the catalog. If there are no active source codes you can skip this step.   
-7. Select the **Lines** tab to exit the **Header** tab, and then select **Add line**.
-8. For **Item number**, enter the item search term. For this sample procedure, enter a item number of '813' and press tab. This action will bring up the item search window.  
-9. Select the product to add to the sales order. For this task, select the item 81327
-10. Enter the sales quantity.
-11. Select **Complete** to capture the customer payment. Refer the image below:
+   
+1. On the right, select the **Lines** tab.
+1. Under **Source**, select the source code for the catalog. If there are no active source codes, you can skip this step.
+1. Under **Sales order lines**, select **Add line**.
+1. For **Item number**, enter the item number search term. For this example procedure, enter a item number of '813' and then press the tab key. This action brings up the item search window.  
+1. Select the product to add to the sales order. For this example, select the item **81327**.
+1. Under **Quantity**, enter the sales quantity.
+1. On the action pane, select **Complete** to capture the customer payment. This action opens the **Sales order summary** flyout menu that displays the total amount due. Selecting **Complete** also triggers the calculation for any charges such as shipping and handling and displays the charges on the order summary form.
 
     ![Press Complete button](../media/Complete_button.png)
 
-12. Clicking the Complete buttons opens the sales order summary which displays the total amount due. The Complete button also triggers the calculation for any charges such as shipping, handling etc. and they are displayed on the order summary form.
 
     ![View order summary](../media/order_summary.png)
     
-13. Under the **Payments** section, select **Add** to capture the payments. Expand the Payments tab if it is collapsed.   
-14. Select the payment method. For this example procedure, select the cash payment method.  
-15. Close the page.
-16. Enter the amount. For this procedure, enter an amount equal to the order balance that can be seen in the Sales order summary page to the left of the amount field. This action will allow you to complete the order as fully paid.  
-17. Select **OK**.
-18. Select **Submit**.
+1. On the **Sales order summary** flyout menu, under the **Payments** section, select **+Add** to capture the payments. Expand the **Payments** tab if it is collapsed.   
+1. Select the payment method. For this example procedure, select the cash payment method.  
+1. Close the the **Sales order summary** flyout menu.
+1. Enter the amount. For this procedure, enter an amount equal to the order balance that can be seen in the Sales order summary page to the left of the amount field. This action will allow you to complete the order as fully paid.  
+1. Select **OK**.
+1. Select **Submit**.
     
 ## Additional resources
 
