@@ -46,9 +46,12 @@ Pegging starts by including relevant marking, on-hand reservations, and on-order
 
 When you firm a planned order, the **Firming** dialog box provides an **Update marking** field that you use to set marking options for the orders that are created during firming. Select one of the following values:
 
-- **No** – No inventory marking is applied.
-- **Standard** – Inventory marking is updated according to the pegging. A requirement order (demand) is marked against a fulfillment order (supply). If some quantity remains on the fulfillment order, it isn't marked, and the reference information is left blank. For example, if a sales order for 100 ea is pegged against a purchase order for 150 ea, reference information will be assigned only to the sales order.
-- **Extended** – Both the requirement order (demand) and the fulfillment order (supply) are marked, regardless of any quantity that remains on the fulfillment order. For example, if a sales order for 100 ea is pegged against a purchase order for 150 ea, reference information will be assigned to both the sales order and the purchase order.
+- *No* – No inventory marking is applied.
+- *Standard* – Inventory marking is updated according to the pegging. A requirement order (demand) is marked against a fulfillment order (supply). If some quantity remains on the fulfillment order, it isn't marked, and the reference information is left blank. For example, if a sales order for 100 ea is pegged against a purchase order for 150 ea, reference information will be assigned only to the sales order.
+- *Extended* – Both the requirement order (demand) and the fulfillment order (supply) are marked, regardless of any quantity that remains on the fulfillment order. For example, if a sales order for 100 ea is pegged against a purchase order for 150 ea, reference information will be assigned to both the sales order and the purchase order.
+- *Single level standard* – Uses single-level marking, which lets you keep component assignment flexible for production orders after firming. Single-level marking enables the system to optimize for last-minute demand changes. With standard single-level marking, requirement orders are marked against their fulfillment orders, but fulfillment orders are not marked if they have remaining quantity.
+- *Single level extended* – Uses single-level marking, but with extended single-level marking, requirement orders are marked against their fulfillment orders and fulfillment orders are marked regardless of whether any quantity remains or not.
 
+To set the default marking option for your system, go to **Master planning \> Setup \> Master planning parameters**. Then open the Standard update tab and set **Update markting** to your preferred option. <!-- KFM: Confirm this. -->
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

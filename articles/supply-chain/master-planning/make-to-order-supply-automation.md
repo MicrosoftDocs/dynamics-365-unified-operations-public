@@ -1,21 +1,23 @@
 ﻿---
 title: Make-to-order supply automation
-description: XXXX
-author: XXXX
-ms.date: MM/DD/YYYY
+description: This article describes how to set up and use the various enhancements added by the Make-to-order supply automation feature
+author: t-benebo
+ms.date: 07/27/2022
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: XXXX
-ms.search.validFrom: YYYY-MM-DD
-ms.dyn365.ops.version: 10.0.XX
+ms.author: benebotg
+ms.search.validFrom: 2022-07-27
+ms.dyn365.ops.version: 10.0.29
 ---
 
 # Make-to-order supply automation
 
 [!include [banner](../includes/banner.md)]
+
+<!-- KFM: Does any part of this feature rely on Planning Optimization? I.e., where should this go in the TOC? -->
 
 The *Make-to-order supply automation* feature adds several enhancement to Dynamics 365 Supply Chain Management. It enables you to do the following:
 
@@ -35,21 +37,32 @@ Before you can use the features described in this topic, you must turn them on f
 - **Module:** *Master Planning*
 - **Feature name:** *Make-to-order supply automation*
 
-## Number of days filter on Capacity load page
+## Choose the number of days to show on Capacity load page
 
-The *Make-to-order supply automation* feature adds a **Number of days** field to the **Capacity load** page. Use the **Number of days** field to limit the number of days shown in the grid. If you return to the page later, it will remember the value you most recently entered here.
+The *Make-to-order supply automation* feature enhances the **Capacity load** page by adding a **Number of days** field, which lets you limit the number of days shown in the **Overview** grid. If you return to the page later, it will remember the value you last entered here.
 
-To open the **Capacity load** page, go to 
+<!-- KFM: Confirm the following two procedures. -->
 
-## Single level of inventory marking policy
+To open the **Capacity load** page so you can review the available capacity on a resource, follow these steps:
 
-There are options called *Single level standard* and*Single level extended* for inventory marking to keep component assignment flexible for production orders after firming, which enables the system to optimize for last-minute demand changes. In other words, limiting marking to only one level.
+1. Go to **Organization administration \> Resources \> Resources**.
+1. Select a resource to inspect.
+1. On the Action Pane, on the **Resource** tab, in the **View** group, select **Capacity load**.
 
-The difference between standard and extended is on the remaining quantity on fulfillment orders. Requirement orders are marked against their fulfillment orders, but fulfillment orders are not marked if they have remaining quantity when standard is selected. When extended is selected, fulfillment orders are marked regardless of whether any quantity remains or not.
+To open the **Capacity load** page so you can review the available capacity on a resource group, follow these steps:
 
-Please review <https://docs.microsoft.com/en-us/dynamics365/supply-chain/master-planning/planning-optimization/marking> for more information regarding to marking policy.
+1. Go to **Organization administration \> Resources \> Resource groups**.
+1. Select a resource group to inspect.
+1. On the Action Pane, on the **Resource group** tab, in the **View** group, select **Capacity load**.
 
-These new options are available while firming of planned orders, or **Firming/Update Marking** settings under **Master Planning Parameters**.
+## Apply a single level of marking when firming planned orders
+
+The *Make-to-order supply automation* feature adds the ability to limit inventory marking to a single level when firming planned orders. It adds the following new options to the **Update marking** drop-down list provided on the **Firming** dialog box when you are firming a planned order. It also adds these options to the **Standard update** tab of the **Master planning parameters** page, where you establish the default selection for the **Firming** dialog box. <!-- KFM: Confirm this. -->
+
+- *Single level standard* – Uses single-level marking, which lets you keep component assignment flexible for production orders after firming. Single-level marking enables the system to optimize for last-minute demand changes. With standard single-level marking, requirement orders are marked against their fulfillment orders, but fulfillment orders are not marked if they have remaining quantity.
+- *Single level extended* – Uses single-level marking, but with extended single-level marking, requirement orders are marked against their fulfillment orders and fulfillment orders are marked regardless of whether any quantity remains or not.
+
+For more information about how to use marking and where to find these settings, see [Inventory marking with Planning Optimization](planning-optimization/marking.md) <!-- KFM: Confirm the new texts added to the target of this link. -->
 
 ## Override negative days (delay tolerance) on Master Plan
 
