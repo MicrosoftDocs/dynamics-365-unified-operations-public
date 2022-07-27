@@ -72,11 +72,11 @@ The **Price override** operation allows POS users to override the sales price of
 
 ## Line discount amount
 
-The **Line discount amount** operation allows POS users to enter a discount amount for a line item in the transaction. This operation only applies to discountable items and respects the **Maximum line discount** amount specified in the POS permission group for the user.
+The **Line discount amount** operation allows POS users to enter a discount amount for a line item in the transaction. This operation only applies to discountable items and respects the **Maximum line discount amount** specified in the POS permission group for the user.
 
 ## Line discount percent
 
-The **Line discount percent** operation allows POS users to enter a discount percentage for a line item in the transaction. This operation only applies to discountable items and respects the **Maximum discount percentage** specified in the POS permission group for the user.
+The **Line discount percent** operation allows POS users to enter a discount percentage for a line item in the transaction. This operation only applies to discountable items and respects the **Maximum line discount percentage** specified in the POS permission group for the user.
 
 ## Total discount amount
 
