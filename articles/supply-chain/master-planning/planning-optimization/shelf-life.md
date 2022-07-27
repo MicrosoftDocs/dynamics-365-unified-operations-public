@@ -115,9 +115,9 @@ This example shows a basic example of shelf life, where pegging between the supp
 
 The system has the following item and master plan settings:
 
-- **Replenishment strategy (coverage code)** – Period
-- **Shelf life** – 10 days
-- **Period** – 10 days (equal to the shelf life)
+- **Replenishment strategy (coverage code)** – Period  <!--KFM: we never mention this again. Why does it matter? -->
+- **Shelf life** – 10 days  <!--KFM: we never mention this again, though we do see it in the diagram. Why does it matter? -->
+- **Period** – 10 days (equal to the shelf life) <!--KFM: we never mention this again. Why does it matter? -->
 - **Sellable days** – 0 days
 - **Lead time** – 0 days
 - **Type of planned order (default order settings of the item)** – Purchase order
@@ -288,7 +288,7 @@ The system has two trade agreements (the first one for qty = 1, lead time = 5 da
 
 - **PP01** – Receipt date = today, qty = 2, expiration date = today + 10 days
 
-SO1 will be covered by one unit from PPO1. SO2 will be covered by PO2.
+SO1 will be covered by one unit from PPO1. SO2 will be covered by PO2 <!-- KFM: Because PO2 expires sooner than PPO1? -->.
 
 The following table summarize the result.
 
