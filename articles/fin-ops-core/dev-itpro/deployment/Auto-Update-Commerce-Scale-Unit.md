@@ -1,7 +1,7 @@
 ---
 title: Auto-update for Commerce Scale Unit (cloud)
 description: This article describes auto-updates for Commerce Scale Unit (cloud).
-author: AamirAllaq
+author: jashanno
 ms.date: 05/03/2022
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: aamiral
+ms.author: jashanno
 ms.search.validFrom: 2020-07-13
 ms.dyn365.ops.version: 8
 manager: tonyafehr
