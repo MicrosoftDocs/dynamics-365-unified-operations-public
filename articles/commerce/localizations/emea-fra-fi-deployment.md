@@ -123,6 +123,9 @@ To enable Modern POS extension components, follow these steps.
             }, 
             {
                 "baseUrl": "Microsoft/FifAuditEvent.FR"
+            },
+            {
+                "baseUrl": "Microsoft/RestrictShiftDuration"
             }
         ]
     }
@@ -149,6 +152,9 @@ To enable Cloud POS extension components, follow these steps.
             }, 
             {
                 "baseUrl": "Microsoft/FifAuditEvent.FR"
+            },
+            {
+                "baseUrl": "Microsoft/RestrictShiftDuration"
             }
         ]
     }
@@ -183,6 +189,9 @@ To create deployable packages that contain Commerce components, and to apply tho
             }, 
             {
                 "baseUrl": "Microsoft/FifAuditEvent.FR"
+            },
+            {
+                "baseUrl": "Microsoft/RestrictShiftDuration"
             }
         ]
     }
