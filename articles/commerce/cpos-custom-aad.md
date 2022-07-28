@@ -106,4 +106,8 @@ Next, you need to update identity providers settings in Commerce headquarters. T
 
 You can now activate CPOS devices with your own Azure AD app.
 
+## Additional resources
+[Point of sale (POS) device activation](dev-itpro/retail-device-activation.md)
+[Manage activation accounts and validate devices](set-up-activation-accounts-validate-devices-hq.md)
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
