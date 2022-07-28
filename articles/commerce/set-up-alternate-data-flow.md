@@ -4,7 +4,7 @@
 title: Set up an alternate dataflow for recommendations
 description: This article describes how to configure an environment by using an alternate dataflow to provide data to the recommendations service. 
 author: bebeale
-ms.date: 07/26/2022
+ms.date: 07/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -64,15 +64,15 @@ To install the Export to Data Lake add-in, follow the instructions in [Install E
 
 ### Configure tables to export in Dynamics 365
 
-Table synchronization from Dynamics 365 to Azure Date Lake Storage is managed on the **Export to Data Lake** page. Because that page doesn't currently have a menu item, only users in the **System Administrator** security role can open it.
+Table synchronization from Dynamics 365 to Azure Data Lake Storage is managed on the **Export to Data Lake** page. Because that page doesn't currently have a menu item, only users in the **System Administrator** security role can open it.
 
 To configure tables to export in Dynamics 365, follow these steps.
 
-1. To open the form, add the string `?mi=DataFeedsDefinitionWorkspace` to the environment's base URL, as shown in the following example:
+1. To open the **Export to Data Lake** page, add the string `?mi=DataFeedsDefinitionWorkspace` to the environment's base URL, as shown in the following example:
 
     `https://<environment-URL>/?mi=DataFeedsDefinitionWorkspace`
 
-1. Open the **Export to Data Lake** page, and copy the tables that are listed in the [List of RetailSales cube tables](#list-of-retailsales-cube-tables) section of this article.
+1. On the **Export to Data Lake** page, and copy the tables that are listed in the [List of RetailSales cube tables](#list-of-retailsales-cube-tables) section of this article.
 1. In the **System Name** column, expand the list of filter options.
 1. For the filter type, select **is one of**. Then put the cursor in the text box, and paste the list of tables that you copied from the **Export to Data Lake** page.
 1. At the bottom of the list of filter options, select **Apply**.
@@ -108,7 +108,7 @@ To create a database in Synapse, follow these steps.
         1. At the top of the page, select **Show keys**.
         1. Select the copy button for one of the two key fields, and then paste the value between the double quotation marks in the configuration file.
 
-    1. Set the **ManifestURL** value to the URL of your **Tables.manifest.cdm.json** file in Data Lake Storage. To obtain the URL, browse to the file in the Azure portal, select the ellipsis (**...**) on the right side of the view, and then select **Properties**. The URL is the first property that is shown on the overview tab.
+    1. Set the **ManifestURL** value to the URL of your **Tables.manifest.cdm.json** file in Azure Data Lake Storage. To obtain the URL, browse to the file in the Azure portal, select the ellipsis (**...**) on the right side of the view, and then select **Properties**. The URL is the first property that is shown on the **Overview** tab.
     1. Set the **TargetDbConnectionString** value to the connection string for the built-in serverless SQL pool of your Synapse workspace.
 
         1. In the Synapse workspace, select the **Manage** tab.
@@ -156,7 +156,7 @@ To create a pipeline to copy the RetailSales cube data, follow these steps.
 1. Download and then select the [ExportRetailSalesCubeViews.zip file](https://aka.ms/reco-alternate-dataflow-files).
 1. Select your SQL database linked service.
 1. Select your storage account linked service.
-1. Open the **CopyData** task, and change the folder property to **\<environment_name\>/...**.
+1. Open the **Copy Data** tool, and change the **Folder path** property to **\<environment_name\>/...**.
 
 ### Test execution of the pipeline
 
