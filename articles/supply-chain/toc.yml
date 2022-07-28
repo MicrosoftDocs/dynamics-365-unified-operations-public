@@ -1795,6 +1795,8 @@
           href: master-planning/planning-optimization/coverage-time-fence.md
         - name: Net requirements and pegging information with Planning Optimization
           href: master-planning/planning-optimization/net-requirements.md
+        - name: Make-to-order supply automation
+          href: master-planning/planning-optimization/make-to-order-supply-automation.md
         - name: Approve planned orders
           href: master-planning/planning-optimization/approved-planned-order.md
         - name: Firm planned orders
