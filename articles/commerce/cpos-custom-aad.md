@@ -1,10 +1,10 @@
 ---
 # required metadata
 
-title: Configure Cloud POS to use custom Azure AD application
-description: This article explains how to configure Cloud POS to use custom AAD application.
+title: Configure Cloud POS to use custom Azure AD app
+description: This article explains how to configure Cloud POS (CPOS) to use a custom Azure Active Directory (Azure AD) app.
 author: boycez
-ms.date: 07/18/2022
+ms.date: 07/28/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -22,13 +22,13 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 10.0.21
 ---
 
-# Configure Cloud POS to use custom Azure AD application
+# Configure Cloud POS to use custom Azure AD app
 
 [!include [banner](includes/banner.md)]
 
-The out-of-the-box Cloud POS is pointing to the pre-registered Microsoft first party application in Azure Active Directory (AAD). This way anyone can just start using it without making any changes in AAD which is convenient. However, there could be circumstances which you might want to point your instance of CPOS to the custom AAD application you control. This article describes the required configuration steps to achieve that.
+By default, Cloud POS (CPOS) in Dynamics 365 Commerce points to a registered first party Microsoft app in Azure Active Directory (Azure AD) so that you can use CPOS without making any changes in Azure AD. However, you may want to point your instance of CPOS to a custom Azure AD app that you control. This article describes the steps to configure CPOS to use a custom Azure AD app.
 
-## Set up custom Retail Server application in AAD
+## Set up custom Retail Server app in Azure AD
 
 To create and configure a custom Retail Server application in AAD, follow these steps.
 
