@@ -29,10 +29,10 @@ ms.dyn365.ops.version: Human Resources
 
 # Provision Human Resources
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+_**Applies To:** Human Resources on the stand-alone infrastructure_ 
 
 > [!NOTE]
-> Starting June 2022, Human Resources environments can be deployed only on the finance and operations app infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](/hr-admin-setup-provision-fo.md).
+> Starting June 2022, Human Resources environments can be deployed only on the finance and operations app infrastructure. For more information, see [Provision Human Resources in the finance and operations infrastructure](hr-admin-setup-provision-fo.md).
 
 This article explains the process of provisioning a new production environment for Microsoft Dynamics 365 Human Resources. 
 
@@ -48,7 +48,6 @@ Before you begin provisioning a new production environment, the following prereq
 
 >[!NOTE]
 > Starting April 2022, the Human Resources trial environments will not be available on the stand-alone application. Potential customers who are interested in evaluating the Human Resources capabilities within finance and operations apps, can do so using the free 30-day trial along with the demo data. Dynamics 365 Finance will include the Human Resources capabilities brought to the Finance infrastructure through the merge of the stand-alone application. For more information, see [Merging of HR offerings brings capabilities together for customers](https://cloudblogs.microsoft.com/dynamics365/it/2021/09/15/merging-of-hr-offerings-brings-capabilities-together-for-customers). For more information about Dynamics 365 Finance trials, see the step-by-step [guide](../fin-ops-core/fin-ops/get-started/before-you-buy.md). 
-
 
 
 Prior to provisioning your first sandbox or production environment, you may want to provision a [Human Resources trial environment](https://go.microsoft.com/fwlink/p/?LinkId=2115962) to validate Human Resources functionality. Trial environments contain fictitious data that can be used to explore the program in a safe manner. Although a trial environment is owned by the user who requested it, other users can be invited through the system administration experience for Human Resources. 

@@ -63,20 +63,22 @@ Before you can enable add-in functionality, you must integrate with Microsoft Po
 
 For more information, see [Enable after environment deployment](../../fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration.md#enable-after-deploy).
 
-## <a name="install"></a>Install the add-in
+## <a name="install"></a>Install or update the add-in and solution
 
-Use the following procedure to install the Global Inventory Accounting add-in. The procedure you should follow depends on whether you are installing for the first time, or upgrading an existing installation.
+Use the following procedure to install or update the Global Inventory Accounting add-in and solution. The part of the procedure you should follow depends on whether you are installing for the first time or just need to update the solution for an existing installation.
 
-- If you have never installed the add-in before, follow the full procedure.
-- If you are upgrading an existing add-in installation for the purpose of adding the Global Inventory Accounting solution to your [Power Platform admin center](https://admin.powerplatform.microsoft.com), then only do steps 1 – 6 and then skip the rest of the procedure..
+- If you have never installed the add-in before, follow the full procedure to install both the add-in and the solution.
+- If you are already using Global Inventory Accounting but need to update the solution in the [Power Platform admin center](https://admin.powerplatform.microsoft.com), then do step 6 only and skip all of the other steps.
+
+To install or update the add-in and solution:
 
 1. Sign in to [LCS](https://lcs.dynamics.com/Logon/Index).
 1. Open the LCS environment where you want to add the service.
 1. Go to **Full details**.
 1. Go to **Power Platform Integration** and select **Setup**.
 1. In the **Power platform environment setup** dialog box, select the checkbox, and then select **Setup**. Typically, setup takes between 60 and 90 minutes.
-1. After the Microsoft Power Platform environment setup is complete, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then install the Global Inventory Accounting solution by doing the following steps:
-   1. Select the environment where you want to install the add-in.
+1. After the Microsoft Power Platform environment setup is complete, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then install or update the Global Inventory Accounting solution by doing the following steps:
+   1. Select the environment where you want to install or update the solution.
    1. Select **Dynamics 365 apps**.
    1. Select **Install App**.
    1. Select **Dynamics 365 Global Inventory Accounting**.
@@ -88,6 +90,7 @@ Use the following procedure to install the Global Inventory Accounting add-in. T
 1. On the **Environment add-ins** FastTab, you should see that Global Inventory Accounting is being installed. After a few minutes, the status should change from *Installing* to *Installed*. (You might have to refresh the page to see this change.) At that point, Global Inventory Accounting is ready to use.
 
 If the default language of your Dataverse installation isn't English, follow these steps:
+
 1. Go to **Advanced Setting \> Administration \> Languages**.
 1. Select *English* (*LanguageCode=1033*), and then select **Apply**.
 

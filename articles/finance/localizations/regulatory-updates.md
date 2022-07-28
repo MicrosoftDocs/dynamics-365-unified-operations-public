@@ -60,7 +60,6 @@ For the latest regulatory update plans, refer to the following table.
 |      Spain      |   March 2022| 10.0.27 | VAT declaration Model 303 changes January 1, 2022 in Dynamics 365 Finance|
 
 
-
 ## Additional resources
 - For more information about all planned and released country-specific regulatory updates, see [Search for country-specific regulatory updates](search-for-regulatory-updates.md). (Sign-in is required.)
 - For a list of the localizations that are supported, see the [International availability guide](https://aka.ms/dynamics_365_international_availability_deck).
