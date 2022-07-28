@@ -79,8 +79,8 @@ To create and configure a custom CPOS app in Azure AD, follow these steps.
 
 Open the CPOS config.json file and make the following updates in the file.
 
-1. Replace the **AADClientId** key value with the value for the **Application (client) ID** of the **Custom CPOS application** you created in  the [Set up custom CPOS app in Azure AD](#Set-up-custom-CPOS-app-in-Azure-AD) section.
-1. Replace the **AADRetailServerResourceId** key value with the **Application ID URI** of the **Custom Retail Server application** you created in the [Set up custom Retail Server app in Azure AD](#Set-up-custom-Retail-Server-app-in-Azure-AD) section.
+1. Replace the **AADClientId** key value with the value for the **Application (client) ID** of the **Custom CPOS application** you created in  the [Set up custom CPOS app in Azure AD](#set-up-custom-cpos-app-in-azure-ad) section.
+1. Replace the **AADRetailServerResourceId** key value with the **Application ID URI** of the **Custom Retail Server application** you created in the [Set up custom Retail Server app in Azure AD](#set-up-custom-retail-server-app-in-azure-ad) section.
 
 Both parameters will be used by CPOS when it sends a request to Azure AD to acquire a security token.
 
@@ -92,12 +92,12 @@ Next, you need to update identity providers settings in Commerce headquarters. T
 1. In the **Identity providers** section, select the row with **Type** as **Azure Active Directory** and **Issuer** pointing to your Azure AD tenant. This setting declares that you will work with child grids that contain the data related to the identity provider that corresponds to your Azure AD tenant.
 1. In the **Relying parties** section, select **Add** to add a new row. Enter the following values.
     
-    - In the **ClientId** field, enter the **Application (client) ID** of the **Custom CPOS application** you created in the [Set up custom CPOS app in Azure AD](#Set-up-custom-CPOS-app-in-Azure-AD) section. 
+    - In the **ClientId** field, enter the **Application (client) ID** of the **Custom CPOS application** you created in the [Set up custom CPOS app in Azure AD](#set-up-custom-cpos-app-in-azure-ad) section. 
     - In the **Type** field, select **Public**.
     - In the **UserType** field, select **Worker**.
 
 1. Select the row for the **Relying Parties** that you added. The **Server Resource IDs** section below **Relying Parties** contains the Retail Server app IDs that can be accessed by the app you selected in the **Relying Parties** grid.
-1. In the **Server Resource IDs**, select **Add** to add a new row. In the **Server Resource Id** field, enter the **Application ID URI** of the **Custom Retail Server application** you created in the [Set up custom Retail Server app in Azure AD](#Set-up-custom-Retail-Server-app-in-Azure-AD) section.
+1. In the **Server Resource IDs**, select **Add** to add a new row. In the **Server Resource Id** field, enter the **Application ID URI** of the **Custom Retail Server application** you created in the [Set up custom Retail Server app in Azure AD](#set-up-custom-retail-server-app-in-azure-ad) section.
 
     > [!NOTE]
     > The values in all of the fields mentioned in the steps above are case sensitive. The values you enter must match the exact values as configured in the Azure AD admin center.
@@ -107,7 +107,9 @@ Next, you need to update identity providers settings in Commerce headquarters. T
 You can now activate CPOS devices with your own Azure AD app.
 
 ## Additional resources
+
 [Point of sale (POS) device activation](dev-itpro/retail-device-activation.md)
+
 [Manage activation accounts and validate devices](set-up-activation-accounts-validate-devices-hq.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
