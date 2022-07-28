@@ -1,15 +1,15 @@
 ---
 title: Cost management Power BI content
 description: This article describes what is included in the Cost management Power BI content.
-author: ShylaThompson
+author: JennySong-SH
 ms.date: 03/16/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: kfend
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 
