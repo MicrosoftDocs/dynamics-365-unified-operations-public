@@ -88,19 +88,18 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
   
   ### Build the iOS Retail hybrid app
   
-1. In the [Retail SDK folder](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk), open **SampleExtensions\HybridApp\iOS\Sample.HybridApp.iOS.sln**.
-      After connecting to the Mac and building the application in Visual Studio, select the iOS device type and deploy the app on the selected device.
+1. In the [Retail SDK folder](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk), open **SampleExtensions\HybridApp\iOS\Sample.HybridApp.iOS.sln**. After connecting to the Mac and building the application in Visual Studio, select the iOS device type and deploy the app on the selected device.
       
-       ![POS iOS app VS setting for deployment.](./media/iOSSetting.png)
+    ![POS iOS app VS setting for deployment.](./media/iOSSetting.png)
        
-      > [!NOTE]
-      > If you want to add a custom Azure AD host URL for activation, in the solution edit the **PosActivity.cs** file, search for the string array variable named **AadHostUrls**, and then add your custom Azure AD host URL to the array. 
+    > [!NOTE]
+    > If you want to add a custom Azure AD host URL for activation, in the solution edit the **PosActivity.cs** file, search for the string array variable named **AadHostUrls**, and then add your custom Azure AD host URL to the array. 
    
 1. Using the Emulator, go to **Settings \> RetailMPOS**. Enter the Commerce Scale Unit URL.
       
-       ![POS iOS app setting.](./media/iOSApp.png)
+     ![POS iOS app setting.](./media/iOSApp.png)
       
-       ![POS iOS app setting for RS URL.](./media/iOSRSURL.png)
+     ![POS iOS app setting for RS URL.](./media/iOSRSURL.png)
       
 1. Launch the MPOS app. You should be able to sign in and activate the device.
 
