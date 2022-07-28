@@ -34,11 +34,9 @@ Occasionally, you must move environments that are managed by Microsoft to a diff
 - The project creators didn't do enough research to determine the best data center before the environments were originally deployed.
 - The customer moves the physical location of its operations, and the wide area network (WAN) connection is now closer to a data center that provides lower latency.
 
-Microsoft asks that you keep all your environments in the same data center. When you move environments to a different data center, you should plan to eventually have all environments deployed in the same data center.
-
 You can verify the data center that an environment is deployed to on the **Manage environments** page in Microsoft Dynamics Lifecycle Services (LCS).
 
-To change the data center, you must redeploy all environments. The process differs for sandbox environments (sandbox standard acceptance test environments, and sandbox develop and test environments) and production environments.
+To change the data center, you must redeploy the environment. The process differs for sandbox environments and production environments.
 
 ## Move sandbox environments
 
