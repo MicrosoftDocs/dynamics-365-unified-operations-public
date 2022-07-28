@@ -40,7 +40,7 @@ Detailed information about objects in finance and operations apps can be found i
 
 ## Feature deprecation effective August 2022
 
-### Tranport Layer Security (TLS) RSA cipher suites
+### Transport Layer Security (TLS) RSA cipher suites
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
