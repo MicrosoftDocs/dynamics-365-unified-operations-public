@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure Cloud POS to use custom Azure AD app
+title: Configure CPOS to use custom Azure AD app
 description: This article explains how to configure Cloud POS (CPOS) to use a custom Azure Active Directory (Azure AD) app.
 author: boycez
 ms.date: 07/28/2022
@@ -22,7 +22,7 @@ ms.search.validFrom:
 ms.dyn365.ops.version: 10.0.21
 ---
 
-# Configure Cloud POS to use custom Azure AD app
+# Configure CPOS to use custom Azure AD app
 
 [!include [banner](includes/banner.md)]
 
@@ -30,49 +30,49 @@ By default, Cloud POS (CPOS) in Dynamics 365 Commerce points to a registered fir
 
 ## Set up custom Retail Server app in Azure AD
 
-To create and configure a custom Retail Server application in AAD, follow these steps.
+To create and configure a custom Retail Server app in Azure AD, follow these steps.
 
-1. Login into [Azure Active Directory admin center](https://aad.portal.azure.com) with any AAD user account. The user doesn't have to be an administrator of any kind.
-1. Click **Azure Active Directory** on the navigation pane.
-1. Click **App registrations**, then click **New registration** to open the **Register an application** dialog. Provide values for the following fields.
+1. Sign in to the [Azure Active Directory admin center](https://aad.portal.azure.com) with any Azure AD user account. The user account doesn't need to have administrator permissions.
+1. Select **Azure Active Directory**.
+1. Select **App registrations**, then select **New registration** to open the **Register an application** dialog. Enter values for the following fields.
     
-    - **Name** – Enter a custom name for the application. For instance, “Custom Retail Server”.
+    - **Name** – Enter a custom name for the app. For instance, “Custom Retail Server”.
     - **Support account types** – Select the default option **Accounts in this organizational directory only (Microsoft only - Single tenant)**.
-    - **Redirect URI** - Optional field, leave it as blank.
-    - **Service Tree ID** - Optional field, leave it as blank.
+    - **Redirect URI** - This field is optional. Leave it empty.
+    - **Service Tree ID** - This field is optional. Leave it empty.
 	
-1. Click the **Register** button, which opens the configuration page for the newly registered application.
-1. Under **Overview \> Essentials** section, click the **Add an Application ID URI** link, then click **Set** besides the “Application ID URI”, take a note of the suggested value, and then click **Save** to accept the value. 
-1. Click **Add a scope** and provide values for the following fields:
+1. Select **Register**. The configuration page for the newly registered app opens.
+1. In the **Overview \> Essentials** section, select **Add an Application ID URI**, then select **Set** next to **Application ID URI**. Make a note of the suggested value, and then select **Save** to accept the value. 
+1. Select **Add a scope**, and then enter values for the following fields.
 
-    - **Scope name** – Enter a custom name for the scope. For instance, “Legacy.Access.Full”.
-    - **Who can consent** – Based on your organization’s security policies, decide if both admins and users can accept or only admins can, then make proper selection.
-    - **Admin consent display name** – Enter the display name of the consent. For instance, “Access Retail Server”.
-    - **Admin consent description** – Enter the description of the consent. For instance, “Gives access to Retail Server APIs”.
+    - **Scope name** – Enter a custom name for the scope. For example, “Legacy.Access.Full”.
+    - **Who can consent** – Determine whether both admins and users can accept or only admins, based on your organization’s security policies. Select the appropriate value.
+    - **Admin consent display name** – Enter a display name. For example, “Access Retail Server”.
+    - **Admin consent description** – Enter a description. For example, “Gives access to Retail Server APIs”.
 
-1. Click the **Add scope** button to complete the scope creation.
+1. Select **Add scope** to complete the scope creation process.
 
-## Set up custom CPOS application in AAD
+## Set up custom CPOS app in Azure AD
 
-To create and configure a custom CPOS application in AAD, follow these steps.
+To create and configure a custom CPOS app in Azure AD, follow these steps.
 
-1. Login into [Azure Active Directory admin center](https://aad.portal.azure.com) with any AAD user account. The user doesn't have to be an administrator of any kind.
-1. Click **Azure Active Directory** on the navigation pane.
-1. Click **App registrations**, then click **New registration** to open the **Register an application** dialog. Provide values for the following fields.
+1. Sign in to the [Azure Active Directory admin center](https://aad.portal.azure.com) with any Azure AD user account. The user account doesn't need to have administrator permissions.
+1. Select **Azure Active Directory**.
+1. Select **App registrations**, then select **New registration** to open the **Register an application** dialog. Enter values for the following fields.
     
-    - **Name** – Enter a custom name for the application. For instance, “Custom Cloud POS”.
+    - **Name** – Enter a name for the app. For example, “Custom Cloud POS”.
     - **Support account types** – Select the default option **Accounts in this organizational directory only (Microsoft only - Single tenant)**.
-    - **Redirect URI** - Select **Single-page application (SPA)** in the dropdown and enter your CPOS URI in the input box.
-    - **Service Tree ID** - Optional field, leave it as blank.
+    - **Redirect URI** - Select **Single-page application (SPA)** in the dropdown and then enter your CPOS URI.
+    - **Service Tree ID** - This field is optional. Leave it empty.
 
-1. Click the **Register** button, which opens the configuration page for the newly registered application.
-1. Under **Manifest** section, set **oauth2AllowIdTokenImplicitFlow** and **oauth2AllowImplicitFlow** parameters to **true** , and then click **Save** to save the changes. 
-1. Under **Token configuration** section, following the steps below to add two claims.
+1. Select**Register**.The configuration page for the newly registered app opens.
+1. In the **Manifest** section, set the **oauth2AllowIdTokenImplicitFlow** and **oauth2AllowImplicitFlow** parameters to **true** , and then select **Save**. 
+1. In the **Token configuration** section, follow the steps below to add two claims.
 
-    - Click **Add optional claim**. In the prompt dialog, set **Token type** to **ID**, and then select the **sid** claim. Click **Add** button.
-    - Click **Add optional claim**. In the prompt dialog, set **Token type** to **Access**, and then select the **sid** claim. Click **Add** button.
+    - Select **Add optional claim**. Set **Token type** to **ID**, and then select the **sid** claim. Select **Add**.
+    - Select **Add optional claim**. Set **Token type** to **Access**, and then select the **sid** claim. Select **Add**.
 
-1. Under **API permissions** section, click **Add a permission**. In the prompt dialog, select **APIs my organization uses** tab, then type and search the Retail Server application you created in the previous steps (“Customized Retail Server”), and click **Add permissions**.
+1. In the **API permissions** section, select **Add a permission**. Select the **APIs my organization uses** tab, and then search for the Retail Server app you created in the [Set up custom Retail Server app in Azure AD](#Set-up-custom-Retail-Server-app-in-Azure-AD) section. Select **Add permissions**.
 1. Under "Overview" section, take a note of the value from the field **Application (client) ID**.
 
 ## Update CPOS config file
