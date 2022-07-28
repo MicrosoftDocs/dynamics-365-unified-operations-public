@@ -1,37 +1,28 @@
 ---
-# required metadata
-
 title: Sales and profitability performance Power BI content
-description: This topic describes what's included in the Sales and profitability performance Power BI content.
-author: ShylaThompson
+description: This article describes what's included in the Sales and profitability performance Power BI content.
+author: Henrikan
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: SalesProfitabilityPerformancePowerBI 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 260674
-ms.assetid: ab457f02-929e-4d34-b813-335be3092287
+ms.reviewer: kamaybac
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kfend
+ms.author: henrikan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 
+  - 260674
+ms.assetid: ab457f02-929e-4d34-b813-335be3092287
+ms.search.form: SalesProfitabilityPerformancePowerBI
 ---
 
 # Sales and profitability performance Power BI content
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes what is included in the **Sales and profitability performance** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
+This article describes what is included in the **Sales and profitability performance** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 
 ## Overview
 

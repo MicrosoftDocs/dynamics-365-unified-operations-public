@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work with the Electronic document submission log
-description: This topic explains how to work with the Electronic document submission log.
+description: This article explains how to work with the Electronic document submission log.
 author: dkalyuzh
 ms.date: 12/15/2021
 ms.topic: article

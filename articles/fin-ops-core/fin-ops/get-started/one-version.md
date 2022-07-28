@@ -2,16 +2,16 @@
 # required metadata
 
 title: One Version service updates FAQ
-description: This topic provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
+description: This article provides clarity about the service updates, processes, and tools that you can use to stay current in a consistent, predictable, and seamless manner.
 author: laneswenka
-ms.date: 04/21/2022
+ms.date: 07/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 8.1
 
 [!include[banner](../includes/banner.md)]
 
-In July 2018, Microsoft announced a [change to the way that we deliver Dynamics 365 updates](https://cloudblogs.microsoft.com/dynamics365/2018/07/06/modernizing-the-way-we-update-dynamics-365/), to help you stay current in a consistent, predictable, and seamless manner. In June 2019, based on customer feedback, we announced [new flexible service updates that were being made available](https://cloudblogs.microsoft.com/dynamics365/bdm/2019/06/03/new-flexible-service-updates-for-dynamics-365-for-finance-and-operations/). This FAQ is intended to provide clarity about the service updates, processes, and tools that you can use to prepare for the change. We will continue to add information to this topic as required.
+This FAQ is intended to provide clarity about the service updates, processes, and tools that you can use to prepare for the change. We will continue to add information to this article as required.
 
 For more information about One Version service updates, see [One Version service updates overview](../../dev-itpro/lifecycle-services/oneversion-overview.md).
 
@@ -44,9 +44,9 @@ For information about how to pause an update, see [Pause service updates through
 
 ### If the release date is in early April, when will the general availability package become available?
 
-Production updates for a monthly release will be scheduled for the first, second, and third weeks of the month. Depending on the configuration that you set up in LCS, you will receive updates during that specific week.
- 
-For the April 10.0 release, Microsoft will perform updates during the weekends of April 6, April 13, or April 20, depending on the configuration that you set up in LCS. Sandbox updates will always be scheduled a week before the update. The configuration setup is available in LCS.
+Production updates for a release will be scheduled for the first, second, and third weeks of the month. Depending on the configuration that you set up in LCS, you will receive updates during that specific week. Sandbox updates will always be scheduled the week before the production update. The configuration setup is available in LCS.
+
+As an example, for the April 10.0.25 release, Microsoft performed updates during the weekends of April 1, April 8, or April 15, depending on the configuration that you set up in LCS. Sandbox updates will always be scheduled a week before the update.
 
 Customers can always choose to apply the update at an earlier time or at a time that is more convenient than the suggested times in LCS. If a customer is already on the latest version, the automatic update will be canceled.
 
@@ -68,7 +68,7 @@ A regulatory update is a new feature or an existing feature change that is requi
 
 ### What is the upcoming schedule of updates?
 
-Service updates are available. You have the option to apply them when it's convenient for you, or you can let Microsoft automatically apply them, based on the selected maintenance window. You are required to be on an update that is no more than three updates behind the current update.
+Each year, seven service updates are released. You have the option to apply them when it's convenient for you, or you can let Microsoft automatically apply them, based on the selected maintenance window. You are required to be on an update that is no more than three updates behind the current update.
 
 To view a targeted release schedule, see [Service update availability](public-preview-releases.md).
 
@@ -134,11 +134,11 @@ Yes, you can pause, delay, or opt out of an update via the update settings in LC
 
 No. Service updates will automatically be applied to the sandbox. Then, seven days later, the update will be applied to all additional sandbox and production environments, if those environments are more than three service updates old. A customer can pause only up to three consecutive updates in a row. For example, if a customer on version 10.0.22 chooses to pause updates 10.0.23, 10.0.24, and 10.0.25, service update 10.0.26 will automatically be applied first to the sandbox environment and later to all additional sandbox and production environments. 
 
-### What happens to an environment that is running a Finance and Operations app version that is no longer supported?
+### What happens to an environment that is running a finance and operations app version that is no longer supported?
 
-For environments that are running a Finance and Operations app version that is no longer supported, a warning message will appear at the top of the environment details page in LCS.
+For environments that are running a finance and operations app version that is no longer supported, a warning message will appear at the top of the environment details page in LCS.
 
-For all Microsoft-managed environments, and sandbox and production environments in on-premises implementation projects, some LCS functionality might not be available when an environment is running a Finance and Operations app version that is no longer supported. This functionality includes the ability to complete the following actions:
+For all Microsoft-managed environments, and sandbox and production environments in on-premises implementation projects, some LCS functionality might not be available when an environment is running a finance and operations app version that is no longer supported. This functionality includes the ability to complete the following actions:
 
 - Enable maintenance mode.
 - Use all capabilities that are provided for moving databases on an environment or across environments.
@@ -149,13 +149,13 @@ For all Microsoft-managed environments, and sandbox and production environments 
 After you apply a service update for a supported version, this functionality will be available in the affected environment.
 
 > [!NOTE]
-> In this topic, versions are noted in the following ways:
+> In this article, versions are noted in the following ways:
 >
 > - Version N is the latest version, such as 10.0.25
 > - Version N-1 is one version older than N, such as 10.0.24
 > - Version N-2 is two versions older than N, such as 10.0.23
 > - Version N-3 is three versions older than N, such as 10.0.22
-> - Version N-4 is four versions older than N, such as 10.0.22 (In this example, customers on version 10.0.22 **can't** pause updates.)
+> - Version N-4 is four versions older than N, such as 10.0.21 (In this example, customers on version 10.0.21 **can't** pause updates.)
 
 ### How do the automatic updates affect my Microsoft-managed additional sandbox environments in my LCS implementation project? 
 
@@ -165,13 +165,15 @@ All additional sandbox environments will be updated during the same update windo
 
 All environments will be updated to version N. 
 
-### What if the default sandbox environment is manually updated before the default sandbox environment email is sent? 
+### What if the default sandbox environment is manually updated to the exact same version or higher version than the automatic update version? 
 
-Automatic updates for the default sandbox environment, production environment, and all additional sandbox environments will be canceled.
+Automatic updates for the production environment and all additional sandbox environments will be updated to the current N version.  
+ 
+The default sandbox environment update will be canceled. 
 
-### What if the default sandbox environment is manually updated after the default sandbox email is sent? 
-
-Automatic updates for the default sandbox environment, production environment, and all additional sandbox environments will be canceled. 
+### What if the default sandbox environment is manually updated to an older version than the automatic update version? 
+ 
+The default sandbox environment, production environment, and all additional sandbox environments will be updated to the current N version.
 
 ### What if the production environment is manually updated before the production environment email is sent? 
 
@@ -226,12 +228,13 @@ For information about how to pause an update, see [Pause service updates through
 
 ### How can I get early access to non-released platform updates?
 
-You can join the [First release program](https://experience.dynamics.com/insider/). Microsoft will then always keep your system current with the latest updates. If you aren't already a member of the Dynamics 365 Insider Program, you must follow these steps.
+Beginning with version 10.0.26, the preview package for all service updates is made available to all customers through the Shared Asset Library in LCS, under **Software deployable package**. Preview packages can be deployed to development or test environments. They can't be used in production environments. You agree to the program terms at installation. Sign up for access to preview packages (formerly known as the Preview Early Access Program (PEAP)) is no longer required.
 
-1. Sign up for the Insider Program at <https://experience.dynamics.com>.
-2. Accept the terms and conditions for becoming a Dynamics 365 Insider.
-3. When your application has been approved (after approximately 24 hours), you can sign back in to the Insider Portal to find the different preview programs that are available for you to join. 
-4. Preview Early Access Program (PEAP) and First Release: You must accept additional terms and conditions to join the program. After your nomination is accepted, look for these programs in the Dynamics 365 Insider Program.
+You can join the [First release program](https://experience.dynamics.com/insider/), where Microsoft will keep your system always current with the latest updates. If you're not already a member of the Dynamics 365 Insider Program, you'll need to:
+
+1. Sign up for the Insider Program using this URL: https://experience.dynamics.com
+2. Accept the terms and conditions to become a Dynamics 365 Insider.
+3. After your application has been approved (approximately 24 hours), you can then sign back into the Insider Portal to find the different preview programs available for you to join.
 
 ### Is any tooling available to support testing of the latest release?
 
@@ -253,7 +256,7 @@ Deprecated features will be documented for each release. For more information, s
 
 ### How can I log an extensibility request?
 
-Extensibility requests can be logged in LCS. Details are available in the [Extensibility requests](../../dev-itpro/extensibility/extensibility-requests.md) topic. Note the following timelines for logging and using the available extensions.
+Extensibility requests can be logged in LCS. Details are available in the [Extensibility requests](../../dev-itpro/extensibility/extensibility-requests.md) article. Note the following timelines for logging and using the available extensions.
 
 | Date         | Extensibility requests |
 |--------------|------------------------|
@@ -309,3 +312,4 @@ Microsoft provides several mechanisms for progressively rolling out and enabling
 - **Modern POS and Commerce Scale Unit** – Because Modern POS and Commerce Scale Unit are self-hosted by the retailer, topologies that include either of these components enable updates to be rolled out at a separate (and slower) cadence and in a more granular fashion than cloud-only topologies.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Incorrect ledger account in the voucher
-description: This topic provides troubleshooting information that can help when the ledger account in the voucher is incorrect.
+description: This article provides troubleshooting information that can help when the ledger account in the voucher is incorrect.
 author: yungu
 ms.date: 06/08/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-If you find that the ledger account in the voucher is incorrect, follow the steps in the sections of this topic to try to fix the issue.
+If you find that the ledger account in the voucher is incorrect, follow the steps in the sections of this article to try to fix the issue.
 
-This topic uses the IGST interim recoverable amount as an example.
+This article uses the IGST interim recoverable amount as an example.
 
 ## Verify that the amount was posted correctly
 

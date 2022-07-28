@@ -2,7 +2,7 @@
 # required metadata
 
 title: Synchronize accounts directly from Sales to customers in Supply Chain Management 
-description: This topic discusses the templates and underlying tasks that are used to synchronize accounts from Dynamics 365 Sales to Supply Chain Management. 
+description: This article discusses the templates and underlying tasks that are used to synchronize accounts from Dynamics 365 Sales to Supply Chain Management. 
 author: Henrikan
 ms.date: 10/25/2018
 ms.topic: article
@@ -37,7 +37,7 @@ ms.search.validFrom: 2017-07-8
 > [!NOTE]
 > Before you can use the Prospect to cash solution, you should be familiar with [Integrate data into Microsoft Dataverse for Apps](/powerapps/administrator/data-integrator).
 
-This topic discusses the templates and underlying tasks that are used to synchronize accounts directly from Dynamics 365 Sales to Dynamics 365 Supply Chain Management.
+This article discusses the templates and underlying tasks that are used to synchronize accounts directly from Dynamics 365 Sales to Dynamics 365 Supply Chain Management.
 
 ## Data flow in Prospect to cash
 
@@ -106,7 +106,7 @@ The following illustrations show an example of a template mapping in Data integr
 
 ![Template mapping in Data integration.](./media/accounts-direct-template-mapping-data-integrator-1.png)
 
-## Related topics
+## Related articles
 
 
 [Prospect to cash](prospect-to-cash.md)

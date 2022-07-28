@@ -2,7 +2,7 @@
 # required metadata
 
 title: Revenue recognition reallocation - Scenario 4
-description: This topic goes through a reallocation scenario where a line is removed from an existing, partially invoiced sales order. This scenario produces the same result, regardless of whether the line is removed from the sales order or set to a canceled status.
+description: This article goes through a reallocation scenario where a line is removed from an existing, partially invoiced sales order. This scenario produces the same result, regardless of whether the line is removed from the sales order or set to a canceled status.
 author: kweekley
 ms.date: 12/21/2020
 ms.topic: index-page
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: Customer
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic goes through a reallocation scenario where a line is removed from an existing, partially invoiced sales order. This scenario produces the same result, regardless of whether the line is removed from the sales order or set to a canceled status.
+This article goes through a reallocation scenario where a line is removed from an existing, partially invoiced sales order. This scenario produces the same result, regardless of whether the line is removed from the sales order or set to a canceled status.
 
 For this scenario, the **Post invoice corrections to Accounts receivable** option is set to **No** on the **Revenue recognition** tab of the **General ledger parameters** page (**Revenue recognition \> Setup \> General ledger parameters**).
 

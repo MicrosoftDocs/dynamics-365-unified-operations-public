@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payment slip report for Europe
-description: This topic provides information about payment slip reports for Europe.
+description: This article provides information about payment slip reports for Europe.
 author: EvgenyPopovMBS
 ms.date: 06/20/2017
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about payment slip reports for Europe.
+This article provides information about payment slip reports for Europe.
 
 The functionality for payment slip reports is available for legal entities that have their primary address in Denmark, Belgium, Norway, Switzerland, or Finland. Businesses often attach printed payment slips to invoices to provide a payment reference for posting and settlement. The payment slip can be used for project or service invoices, collection letters, interest notes, and account statements, in addition to sales invoices and free text invoices.
 

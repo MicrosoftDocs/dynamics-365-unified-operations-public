@@ -2,7 +2,7 @@
 # required metadata
 
 title: Online invoicing system
-description: This topic describes how to set up Electronic reporting (ER) configurations, and how to set up and use electronic messaging (EM) functionality for RTIR.
+description: This article describes how to set up Electronic reporting (ER) configurations, and how to set up and use electronic messaging (EM) functionality for RTIR.
 author: anasyash
 ms.date: 09/20/2021
 ms.topic: article
@@ -33,9 +33,9 @@ The National Tax and Customs Administration of Hungary has announced that, start
 
 For more information, see <https://onlineszamla.nav.gov.hu>.
 
-This topic describes how to set up Electronic reporting (ER) configurations, and how to set up and use electronic messaging (EM) functionality for RTIR.
+This article describes how to set up Electronic reporting (ER) configurations, and how to set up and use electronic messaging (EM) functionality for RTIR.
 
-The topic includes information about how to complete the following tasks:
+The article includes information about how to complete the following tasks:
 
 - Import ER configurations, and set up application-specific parameters.
 - Set up EM functionality.
@@ -250,7 +250,7 @@ The following table describes the processing actions of **Online invoicing** pro
 | Reset EM item status           | User processing                     | This manual user action resets the status of the EM item from **Rejected** to **Created**. |
 | Reset EM status                | Message level user processing       | This manual user action resets the status of the electronic message from **Error invoice response importing**, **Error sending invoice request**, or **Error Token response importing** to **Generated** so that processing for the electronic message can continue. |
 
-For more information about the predefined setup that is included in the data entities in the package for RTIR, see [Appendix 1: Electronic messages setup for RTIR](#appendix-1-electronic-message-setup-for-rtir) later in this topic.
+For more information about the predefined setup that is included in the data entities in the package for RTIR, see [Appendix 1: Electronic messages setup for RTIR](#appendix-1-electronic-message-setup-for-rtir) later in this article.
 
 ## Set up EM for RTIR
 
@@ -353,7 +353,7 @@ All message items have additional fields that are required for processing. The s
 
 | Additional field           | Description |
 |----------------------------|-------------|
-| Operation                  | Values include **Create**, **Modify**, and **Storno**. Finance sets the value of this additional field during execution of the **Evaluate EM items** action. The value of the **Operation** additional field can be defined automatically or through a financial reason on the invoice. For more information, see the [Set up financial reasons for RTIR](#set-up-financial-reasons-for-rtir) section earlier in this topic. |
+| Operation                  | Values include **Create**, **Modify**, and **Storno**. Finance sets the value of this additional field during execution of the **Evaluate EM items** action. The value of the **Operation** additional field can be defined automatically or through a financial reason on the invoice. For more information, see the [Set up financial reasons for RTIR](#set-up-financial-reasons-for-rtir) section earlier in this article. |
 | Original message item      | If the **Operation** additional field is set to **Modify** or **Storno**, the **Original message item** additional field must be set. If the system can't set this field, it sets the status of the related message item to **Manual editing**, and you must manually set this field. |
 | Index                      | This additional field specifies the invoice position in the request (package of invoices). The value is reported in the **\<index\>** element in the **ManageInvoiceRequest.xml** file. This additional field is automatically filled in when the **Generate invoice request** action is run. |
 | Modification index         | This additional field specifies the unique sequence number referring to the original invoice (the modifying document sequential number). This value is reported in the **\<modificationIndex\>** element for message items of the **Modify** or **Storno** operation type. This additional field is automatically filled in when the **Evaluate EM items** action is run. |
@@ -412,7 +412,7 @@ Internet addresses are subject to change by the Hungarian Online invoicing syste
 
 ### Additional fields
 
-For a full description of the additional fields for **Online invoicing** processing, see the [Additional fields for message items](#additional-fields-for-message-items) section earlier in this topic.
+For a full description of the additional fields for **Online invoicing** processing, see the [Additional fields for message items](#additional-fields-for-message-items) section earlier in this article.
 
 > [!NOTE]
 > These fields can't be changed by the user.
@@ -473,7 +473,7 @@ The setup of electronic messages for **Online Invoicing** processing uses one ty
 
 ### Electronic message actions
 
-For a full description of the electronic message actions of **OnlineInvoicing** processing, see the [Import a package of data entities that includes a predefined EM setup](#import-a-package-of-data-entities-that-includes-a-predefined-em-setup) section earlier in this topic.
+For a full description of the electronic message actions of **OnlineInvoicing** processing, see the [Import a package of data entities that includes a predefined EM setup](#import-a-package-of-data-entities-that-includes-a-predefined-em-setup) section earlier in this article.
 
 ### Electronic processing actions
 

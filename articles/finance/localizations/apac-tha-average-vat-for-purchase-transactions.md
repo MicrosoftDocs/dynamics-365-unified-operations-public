@@ -2,7 +2,7 @@
 # required metadata
 
 title: Average VAT for purchase transactions
-description: This topic provides information about average value-added tax (VAT) for Thailand. It also explains how to settle transactions that have average VAT, and what reports can be generated.
+description: This article provides information about average value-added tax (VAT) for Thailand. It also explains how to settle transactions that have average VAT, and what reports can be generated.
 author: anasyash
 ms.date: 03/24/2021
 ms.topic: article

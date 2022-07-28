@@ -2,8 +2,8 @@
 # required metadata
 
 title: Post payroll distributions and generate vendor invoices
-description: This topic walks you through the process for posting payroll distributions and generating the required vendor invoices.
-author: andreabichsel
+description: This article walks you through the process for posting payroll distributions and generating the required vendor invoices.
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: PayrollPayStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 220964
 ms.assetid: c16043b0-ccdc-4d4d-bf18-67d4c7e3e5f0
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic walks you through the process for posting payroll distributions and generating the required vendor invoices.
+This article walks you through the process for posting payroll distributions and generating the required vendor invoices.
 
 When you post payroll, the accounting distributions that are specified on each pay statement line determine the offset accounts that are used. When each line has a balanced transaction, all transactions for the pay statement can be entered in the general ledger.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Enable customer payment predictions
-description: This topic explains how to turn on and configure the Customer payment predictions feature in Finance insights.
+description: This article explains how to turn on and configure the Customer payment predictions feature in Finance insights.
 author: ShivamPandey-msft
 ms.date: 02/11/2022
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 14151
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674
@@ -31,10 +31,10 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to turn on and configure the Customer payment predictions feature in Finance insights. You turn on the feature in the **Feature management** workspace and enter configuration settings on the **Finance insights configuration** page. This topic also includes information that can help you effectively use the feature.
+This article explains how to turn on and configure the Customer payment predictions feature in Finance insights. You turn on the feature in the **Feature management** workspace and enter configuration settings on the **Finance insights configuration** page. This article also includes information that can help you effectively use the feature.
 
 > [!NOTE]
-> Before you complete the following steps, be sure to complete the prerequisite steps in the [Configure for Finance insights](configure-for-fin-insites.md) topic.
+> Before you complete the following steps, be sure to complete the prerequisite steps in the [Configure for Finance insights](configure-for-fin-insites.md) article.
 
 1. Turn on the Customer payment predictions feature:
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up Configuration manager
-description: This topic provides information about how to set up the Configuration manager.
+description: This article provides information about how to set up the Configuration manager.
 author: RobinARH
 ms.date: 10/16/2019
 ms.topic: article

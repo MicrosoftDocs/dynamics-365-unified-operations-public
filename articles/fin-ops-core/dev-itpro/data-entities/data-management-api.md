@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data management package REST API
-description: This topic describes the Data management framework's package REST API.
+description: This article describes the Data management framework's package REST API.
 author: peakerbl
 ms.date: 08/16/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the Data management framework's package representational state transfer (REST) application programming interface (API). The package API lets you integrate by using data packages. The REST API can be used with both cloud deployments and on-premises deployments. 
+This article describes the Data management framework's package representational state transfer (REST) application programming interface (API). The package API lets you integrate by using data packages. The REST API can be used with both cloud deployments and on-premises deployments. 
 
 Although on-premises support has been added, API names haven't been changed. Therefore, Microsoft can keep a single API set for both cloud deployments and on-premises deployments.
 
@@ -39,13 +39,13 @@ Two APIs support file-based integration scenarios: the Data management framework
 
 | Decision point      | Recurring integrations API | Data management framework's package API |
 |---------------------|--------------------------------------|-----------------------------|
-| Scheduling          | Scheduling in Finance and Operations apps | Scheduling outside Finance and Operations apps |
+| Scheduling          | Scheduling in finance and operations apps | Scheduling outside finance and operations apps |
 | Format              | Files and data packages | Only data packages |
 | Transformation      | Support for Extensible Stylesheet Language Transformations (XSLT) if the data file is in XML format | Transformations that are external to the system |
 | Supported protocols | SOAP and REST | REST |
 | Service type        | Custom service | Open Data Protocol (OData) action |
 
-If you decide that the recurring integrations API meets your requirement better than the Data management framework's package API, see [Recurring integrations](recurring-integrations.md). The rest of this topic discusses the Data management framework's package API.
+If you decide that the recurring integrations API meets your requirement better than the Data management framework's package API, see [Recurring integrations](recurring-integrations.md). The rest of this article discusses the Data management framework's package API.
 
 ## Authorization
 
@@ -273,7 +273,7 @@ HTTP/1.1 200 OK
 
 | Parameter                | Description |
 |--------------------------|-------------|
-| string packageUrl        | The URL of the data package in the Blob storage that is associated with a Finance and Operations app. |
+| string packageUrl        | The URL of the data package in the Blob storage that is associated with a finance and operations app. |
 | string definitionGroupId | The name of the data project for import. |
 | string executionId       | The ID to use for the job. This is called as Job ID in the UI. If an empty ID is assigned, a new execution ID will be created. |
 | bool execute             | Set this parameter to **True** to run the target step. Otherwise, set it to **False**. |
@@ -460,3 +460,4 @@ A sample console application that showcases the data import and data export meth
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

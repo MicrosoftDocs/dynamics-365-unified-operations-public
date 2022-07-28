@@ -2,7 +2,7 @@
 # required metadata
 
 title: User interface development home page
-description: This topic contains links to topics about developing user interface elements.
+description: This article contains links to topics about developing user interface elements.
 author: RobinARH
 ms.date: 10/15/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic contains links to topics about developing user interface elements.
+This article contains links to topics about developing user interface elements.
 
 The user interface for Finance and Operation applications differs significantly from the interface for Microsoft Dynamics AX 2012. The client in Dynamics AX 2012 is a Microsoft Win32 application that has extensions that use ActiveX, WinForm, or WPF controls. The X++ application logic runs on the client for the form and table methods, and some logic occurs on the server. For controls, both the X++ logic application programming interface (API) and the physical Win32 control are tightly connected on the client. The client is an HTML web client that runs in all major browsers. These browsers include Microsoft Edge, Internet Explorer 11, Chrome, and Safari (see [System requirements](../../fin-ops/get-started/system-requirements.md)). The move to a web client has produced the following changes to client forms and controls:
 

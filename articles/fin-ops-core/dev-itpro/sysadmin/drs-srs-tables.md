@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tables supported for duplicate record data sharing  
-description: This topic describes the tables supported for duplicate record data sharing. This is a mechanism for sharing reference and group data among companies in a deployment.
+description: This article describes the tables supported for duplicate record data sharing. This is a mechanism for sharing reference and group data among companies in a deployment.
 author: ramasri
 ms.date: 02/15/2022
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Platform update 1
 ---
 
 # Tables supported for duplicate record data sharing
-This topic describes the tables supported for duplicate record data sharing. Duplicate record data sharing is a mechanism for sharing reference and group data among companies in a deployment. It might be possible to add additional tables to duplicate record data sharing policies, however, any table not listed in the following tables is not officially supported.
+This article describes the tables supported for duplicate record data sharing. Duplicate record data sharing is a mechanism for sharing reference and group data among companies in a deployment. It might be possible to add additional tables to duplicate record data sharing policies, however, any table not listed in the following tables is not officially supported.
 
 **Dynamics 365 Finance**
 

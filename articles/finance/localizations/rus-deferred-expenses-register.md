@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deferred expenses register
-description: This topic provides information about how to generate and set up deferrals.
+description: This article provides information about how to generate and set up deferrals.
 author: Akroshkina
 ms.date: 08/16/2021
 ms.topic: article
@@ -94,7 +94,7 @@ The register lines show the following information:
 
 ### Set up the deferrals register
 
-Set up the deferrals register by following the instructions in the topic, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register). In the **Register type** field, select **Deferrals**.
+Set up the deferrals register by following the instructions in the article, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register). In the **Register type** field, select **Deferrals**.
 
 ### Examples
 

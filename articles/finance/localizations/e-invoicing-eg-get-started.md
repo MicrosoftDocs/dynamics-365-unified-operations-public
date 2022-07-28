@@ -2,7 +2,7 @@
 # required metadata
 
 title: Electronic invoicing for Egypt
-description: This topic provides information that will help you get started with Electronic invoicing for Egypt in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+description: This article provides information that will help you get started with Electronic invoicing for Egypt in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 ms.date: 02/09/2022
 ms.topic: article
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you get started with Electronic invoicing for Egypt. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Service (RCS). These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md).
+This article provides information that will help you get started with Electronic invoicing for Egypt. It guides you through the configuration steps that are country-dependent in Regulatory Configuration Service (RCS). These steps complement the steps that are described in [Set up Electronic invoicing](e-invoicing-set-up-overview.md).
 
 ## Prerequisites
 
-Before you begin the procedures in this topic, complete the following prerequisites:
+Before you begin the procedures in this article, complete the following prerequisites:
 
 - Become familiar with Electronic invoicing as it's described in [Electronic invoicing overview](e-invoicing-service-overview.md).
 - Sign up for RCS, and set up Electronic invoicing. For more information, see the following topics:

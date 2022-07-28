@@ -2,7 +2,7 @@
 # required metadata
 
 title: Acquiring fixed assets and putting them into operation (Russia)
-description: This topic provides information about fixed asset acquisitions for Russia.
+description: This article provides information about fixed asset acquisitions for Russia.
 author: anasyash
 ms.date: 09/25/2018
 ms.topic: article

@@ -2,7 +2,7 @@
 title: Lookup type
 description: Lookup control type. A lookup is an input control that is used to select an input from a list of options.
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
 audience: Developer
 ms.reviewer: tfehr
 ms.search.region: Global
@@ -12,6 +12,7 @@ ms.author: tfehr
 # Lookup type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Lookup control type. A lookup is an input control that is used to select an input from a list of options.
 For example, a lookup could be used to lookup a customer when linking a customer to a new sales order.

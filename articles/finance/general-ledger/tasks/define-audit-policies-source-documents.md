@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Define audit policies for source documents
-description: This topic explains how to set up and run audit policy rules. 
+description: This article explains how to set up and run audit policy rules. 
 author: panolte
 ms.date: 08/20/2019
 ms.topic: business-process 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: SysPolicySourceDocumentRuleType, SysFieldLookUp, SysPolicyListPage, SysPolicy, AuditPolicyRule, SysQueryForm, SysQueryFieldLookUp, AuditPolicyDateSelection, AuditPolicyAdditionalOption, BatchJob, CaseDetail   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up and run audit policy rules. The example uses expense reports with the hotel expense type. This procedure uses the USMF demo company. The auditor role contains the correct permissions in order to perform these tasks.
+This article explains how to set up and run audit policy rules. The example uses expense reports with the hotel expense type. This procedure uses the USMF demo company. The auditor role contains the correct permissions in order to perform these tasks.
 
 1. In the navigation pane, go to **Modules > Audit workbench > Setup > Policy rule type**.
 2. Select **New**.

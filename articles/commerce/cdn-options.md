@@ -2,7 +2,7 @@
 # required metadata
 
 title: Content delivery network implementation options
-description: This topic reviews the different options for content delivery network (CDN) implementation that can be used with Microsoft Dynamics 365 Commerce environments. These options include native, Commerce-provided instances of Azure Front Door and customer-owned instances of Azure Front Door.
+description: This article reviews the different options for content delivery network (CDN) implementation that can be used with Microsoft Dynamics 365 Commerce environments. These options include native, Commerce-provided instances of Azure Front Door and customer-owned instances of Azure Front Door.
 author: BrianShook
 ms.date: 07/22/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-ms.search.scope: Core, Operations, Retail
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid:
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](includes/banner.md)]
 
-This topic reviews the different options for content delivery network (CDN) implementation that can be used with Microsoft Dynamics 365 Commerce environments. These options include native, Commerce-provided instances of Azure Front Door and customer-owned instances of Azure Front Door.
+This article reviews the different options for content delivery network (CDN) implementation that can be used with Microsoft Dynamics 365 Commerce environments. These options include native, Commerce-provided instances of Azure Front Door and customer-owned instances of Azure Front Door.
 
 Commerce customers have several options when they are considering which CDN service to use with their Commerce environment. Commerce is released with basic Azure Front Door support that covers basic hosting and custom domain requirements. For companies that want more control and more specific security abilities, such as a web application firewall (WAF), the best option might be to use either a customer-owned instance of Azure Front Door or an external CDN service.
 

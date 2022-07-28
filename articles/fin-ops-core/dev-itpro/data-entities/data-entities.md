@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data entities overview
-description: This topic describes data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
+description: This article describes data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
 author: peakerbl
 ms.date: 04/20/2020
 ms.topic: overview
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic defines and provides an overview of data entities. It includes information about the capabilities of data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
+This article defines and provides an overview of data entities. It includes information about the capabilities of data entities, the scenarios that they support, the categories that are used for them, and the methods for creating them.
 
 ## Overview
 

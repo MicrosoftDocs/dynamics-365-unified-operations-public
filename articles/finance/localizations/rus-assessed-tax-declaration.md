@@ -2,7 +2,7 @@
 # required metadata
 
 title: Assessed tax declaration (Russia)
-description: This topic explains how to set up and use assessed tax declarations for Russia.
+description: This article explains how to set up and use assessed tax declarations for Russia.
 author: ShylaThompson
 ms.date: 01/15/2020
 ms.topic: article
@@ -48,7 +48,7 @@ The annual average cost is calculated as the sum of residual values (net book va
 
 The cadastral cost is defined by cadastral authorities and should be specified by the user on the fixed asset card. Realty assets that are taxed at the cadastral cost are reported in section 3 of the assessed tax declaration.
 
-This topic explains how to perform the following tasks:
+This article explains how to perform the following tasks:
 
 1. [Set up assessed tax](#set-up-assessed-tax)
 2. [Create a realty asset and set up parameters for assessed tax calculation](#create-a-realty-asset-and-set-up-parameters-for-assessed-tax-calculation)
@@ -198,7 +198,7 @@ If the organization has realty objects that are located in territories that diff
 3. On the **General** FastTab, in the **Separate division ID** field, select the company division that you created in the previous procedure.
 
     > [!NOTE]
-    > For realty objects that are located in territories that differ from the organization's main location, the tax authority that assessed tax is reported to is defined as the tax authority that has an OKTMO code that matches the OKTMO code of the separate division that is associated with the realty location. For information about how to associate a fixed asset with a location, see the [Specify the location of the realty](#specify-the-location-of-the-realty) section later in this topic.
+    > For realty objects that are located in territories that differ from the organization's main location, the tax authority that assessed tax is reported to is defined as the tax authority that has an OKTMO code that matches the OKTMO code of the separate division that is associated with the realty location. For information about how to associate a fixed asset with a location, see the [Specify the location of the realty](#specify-the-location-of-the-realty) section later in this article.
 
 If the **Separate division ID** field is blank, the location is the same as the location of the organization's head office.
 

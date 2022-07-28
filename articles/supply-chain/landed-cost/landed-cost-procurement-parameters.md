@@ -2,7 +2,7 @@
 # required metadata
 
 title: Procurement and sourcing parameters for Landed cost
-description: This topic describes how to set up the relevant Procurement and sourcing parameters when you use the Landed cost module.
+description: This article describes how to set up the relevant Procurement and sourcing parameters when you use the Landed cost module.
 author: Weijiesa
 ms.date: 12/09/2020
 ms.topic: article
@@ -15,9 +15,9 @@ ms.search.form: SrmParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa

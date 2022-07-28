@@ -16,7 +16,7 @@ ms.search.form: HcmSkill, HcmSkillGapProfile, HcmSkillMapping, HcmSkillType, Hcm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 3361
 ms.assetid: c2ce94c0-933d-4edb-822c-7f0e7b49e4ee
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 # Configure skills
 
 > [!IMPORTANT]
-> The functionality noted in this topic is currently available for Human Resources customers on the Finance infrastructure.  
+> The functionality noted in this article is currently available for Human Resources customers on the Finance infrastructure.  
 
 
 You can track your worker's skills in Dynamics 365 Human Resources. You can also specify the skills that are required for a specific job.

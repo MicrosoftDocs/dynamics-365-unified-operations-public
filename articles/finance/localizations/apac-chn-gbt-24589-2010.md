@@ -2,7 +2,7 @@
 # required metadata
 
 title: GB/T 24589-2010 export
-description: This topic explains how to export accounting data to several XML files for a specific period.
+description: This article explains how to export accounting data to several XML files for a specific period.
 author: anasyash
 ms.date: 06/17/2021
 ms.topic: conceptual

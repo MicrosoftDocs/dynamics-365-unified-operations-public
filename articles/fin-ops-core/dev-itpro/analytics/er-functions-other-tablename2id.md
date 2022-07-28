@@ -2,7 +2,7 @@
 # required metadata
 
 title: TABLENAME2ID ER function
-description: This topic provides information about how the TABLENAME2ID Electronic reporting (ER) function is used.
+description: This article provides information about how the TABLENAME2ID Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 12/12/2019
 ms.prod: 

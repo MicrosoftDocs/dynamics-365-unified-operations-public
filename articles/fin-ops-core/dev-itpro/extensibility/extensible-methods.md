@@ -1,6 +1,6 @@
 ---
 title: Write extensible methods
-description: This topic provides information about how to write extensible methods.
+description: This article provides information about how to write extensible methods.
 author: smithanataraj
 ms.date: 09/09/2018
 ms.topic: article

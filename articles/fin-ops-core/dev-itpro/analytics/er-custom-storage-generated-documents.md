@@ -2,7 +2,7 @@
 # required metadata
 
 title: Specify a custom storage location for generated documents
-description: This topic explains how to extend the list of storage locations for documents that Electronic reporting (ER) formats generate.
+description: This article explains how to extend the list of storage locations for documents that Electronic reporting (ER) formats generate.
 author: NickSelin
 ms.date: 02/22/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0
 
 [!include[banner](../includes/banner.md)]
 
-The application programming interface (API) of the Electronic reporting (ER) framework lets you extend the list of storage locations for documents that ER formats generate. This topic includes an overview of the main tasks that you must complete to add a custom storage location.
+The application programming interface (API) of the Electronic reporting (ER) framework lets you extend the list of storage locations for documents that ER formats generate. This article includes an overview of the main tasks that you must complete to add a custom storage location.
 
 ## Prerequisites
 
@@ -126,7 +126,7 @@ The **AttachingFile()** event is raised when the following ER destinations are p
 ## Configure an ER destination
 
 1. Configure the archived destination for one of the previously mentioned elements (file, folder, merger, or attachment) of the ER format that you created or imported. For guidance, see [ER Configure destinations](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-destinations-2016-11).
-2. Use the document type that you added earlier for the configured destination. (For the example in this topic, the document type is **FileX**.)
+2. Use the document type that you added earlier for the configured destination. (For the example in this article, the document type is **FileX**.)
 
 ![Destination settings dialog box.](media/er-extend-file-storages-destination.png)
 

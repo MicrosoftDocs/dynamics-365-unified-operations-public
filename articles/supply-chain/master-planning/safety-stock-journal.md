@@ -1,6 +1,6 @@
 ---
 title: Use the safety stock journal to update minimum coverage for items
-description: This topic describes how to use safety stock journal to update safety stock quantity for items by calculating minimum coverage proposals based on historical transactions. 
+description: This article describes how to use safety stock journal to update safety stock quantity for items by calculating minimum coverage proposals based on historical transactions. 
 author: t-benebo
 ms.date: 10/28/2021
 ms.topic: article
@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.22
 
 Safety stock indicates an additional quantity of an item that is held in inventory to help reduce the risk that the item will go out of stock. Safety stock is used as a buffer in case sales orders come in, but the supplier can't meet the customer's requested ship date.
 
-This topic describes how to use the safety stock journal to calculate minimum coverage proposals based on historical transactions and then update the item coverage with the proposals.
+This article describes how to use the safety stock journal to calculate minimum coverage proposals based on historical transactions and then update the item coverage with the proposals.
 
 ## Overview of minimum coverage usage
 
@@ -38,7 +38,7 @@ The **Minimum** value can be set in three ways:
 
 Safety stock journals are used to calculate a proposed minimum quantity based on an item's historical usage, either for min/max purposes or for inventory plan purposes. Historical usage represents all issue transactions during a specified period. These issue transactions include sales order transactions and inventory adjustments. The calculations also identify the impact of the proposed minimum quantity on inventory value and the change in inventory value compared to the current minimum quantities.
 
-Each safety stock journal line represents an item and its coverage dimensions. These journal lines are created and shown on the **Safety stock journal lines** page (**Master planning \> Master planning \> Run \> Safety stock calculation**). The business process for using the safety stock journals to calculate the proposed minimum quantities is described later in this topic.
+Each safety stock journal line represents an item and its coverage dimensions. These journal lines are created and shown on the **Safety stock journal lines** page (**Master planning \> Master planning \> Run \> Safety stock calculation**). The business process for using the safety stock journals to calculate the proposed minimum quantities is described later in this article.
 
 The planner uses a safety stock journal to calculate proposed minimum quantities for selected items, based on historical usage during selected periods. The proposed minimums can be manually overridden as required, and you can review the potential impact of the proposed minimums on inventory value. When the journal is posted, the associated minimum quantities in the item coverage are automatically updated.
 
@@ -84,7 +84,7 @@ Follow these steps to automatically generate journal lines.
 
     - **From date** – Select the start date of the period that issues should be included in the calculation for.
     - **To date** – Select the end date of the period that issues should be included in this calculation for. There must be at least two months between the start and end dates.
-    - **Calculate standard deviation** – Set this option to *Yes* to calculate the standard deviation. You must set this option to *Yes* to use the **Use service level** option when you calculate the proposal (as described later in this topic).
+    - **Calculate standard deviation** – Set this option to *Yes* to calculate the standard deviation. You must set this option to *Yes* to use the **Use service level** option when you calculate the proposal (as described later in this article).
 
 1. On the **Records to include** FastTab, you can set up filters and constraints to define which items are included. (For example, you can filter by **Coverage group** value.) Select **Filter** to open a standard query editor dialog box, where you can define selection criteria, sorting criteria, and joins. The fields work just as they do for other types of queries in Microsoft Dynamics 365 Supply Chain Management.
 1. On the **Run in the background** FastTab, select whether to run the job in batch mode, and/or set up a recurrent schedule. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
@@ -105,7 +105,7 @@ This step calculates a proposed minimum for each journal line and the line's pot
 The calculations that are shown won't affect the actual minimum quantity values for each product until you select **Post** on the Action Pane. At that time, the **New minimum quantity** values will be applied to each product.
 
 1. Go to **Master planning \> Master planning \> Run \> Safety stock calculation**.
-1. Open the journal to calculate a proposal for. Alternatively, create a new journal as described earlier in this topic.
+1. Open the journal to calculate a proposal for. Alternatively, create a new journal as described earlier in this article.
 1. On the **Journal lines** FastTab, select **Calculate proposal** on the toolbar. (You don't have to select any lines.)
 1. In the **Calculate proposal for minimum inventory level** dialog box, set the following fields:
 

@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Deferrals counting (Russia)
-description: This topic explains how to do deferrals counting.
+description: This article explains how to do deferrals counting.
 author: anasyash
 ms.date: 06/28/2019
 ms.topic: article

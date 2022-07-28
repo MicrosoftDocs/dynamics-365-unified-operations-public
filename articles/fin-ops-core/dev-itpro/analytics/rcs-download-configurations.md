@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS)
-description: This topic provides information about how to import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS).
+description: This article provides information about how to import Electronic reporting (ER) configurations from Regulatory Configuration Services (RCS).
 author: NickSelin
 ms.date: 04/29/2021
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 
 You can use Regulatory Configuration Services (RCS) to design Electronic reporting (ER) configurations. The ER tool provides access to the list of configurations that have been configured in each instance of RCS that has been provisioned for your company. You can use this feature to import configurations that you configured in an RCS instance into the current instance. After configurations are imported, they can be used to handle incoming documents or generate outgoing electronic documents.
 
-To learn more about this feature, complete the example in this topic. Alternatively, download and play the [ER Import configurations from RCS](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) task guide, which is part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process. It walks you through the process of importing ER configurations from an RCS instance into the current instance.
+To learn more about this feature, complete the example in this article. Alternatively, download and play the [ER Import configurations from RCS](https://download.microsoft.com/download/0/4/e/04e13839-e423-442b-a6c2-dd35b1045c2d/Dynamics%20365%20for%20Finance%20and%20Operations%208.1%20Electronic%20reporting%20task%20guides.zip) task guide, which is part of the 7.5.4.3 Acquire/Develop IT service/solution components (10677) business process. It walks you through the process of importing ER configurations from an RCS instance into the current instance.
 
 ## Example: Import an ER configuration from RCS
 

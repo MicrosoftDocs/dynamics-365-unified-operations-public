@@ -1,6 +1,6 @@
 ---
 title: Operator precedence
-description: This topic describes operator precedence.
+description: This article describes operator precedence.
 author: pvillads
 ms.date: 07/01/2019
 audience: Developer
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes operator precedence.
+This article describes operator precedence.
 
 The order in which a compound expression is evaluated is important. If you do not explicitly tell the compiler the order that you want operations to be performed in, the order is based on operator precedence. You can use parentheses `( )` to explicitly tell the X++ compiler how you want an expression to be evaluated.
 

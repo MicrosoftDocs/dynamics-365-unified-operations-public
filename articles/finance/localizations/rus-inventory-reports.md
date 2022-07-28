@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Inventory reports
-description: This topic provides information about the Inventory reports available for Russia.
+description: This article provides information about the Inventory reports available for Russia.
 author: v-nadyuz
 ms.date: 03/23/2020
 ms.topic: article

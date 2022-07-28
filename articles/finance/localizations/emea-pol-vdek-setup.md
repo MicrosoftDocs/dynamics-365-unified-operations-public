@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prepare for JPK-V7M reporting
-description: This topic provides information about how to set up a VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland. 
+description: This article provides information about how to set up a VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland. 
 author: liza-golub
 ms.date: 10/15/2021
 ms.topic: article
@@ -89,7 +89,7 @@ The format includes the following lookup fields for setup.
 5. On the **Lookups** FastTab, select each lookup, and define appropriate conditions for it.
 6. On the **Conditions** FastTab, define which tax codes or other available criteria must correspond to a specific lookup result. 
 
-    If conditions are defined on one line, the system generally applies them to a source tax transaction by using the **AND** operator. If conditions must be applied by using the **OR** operator, define them on separate lines. When a tax transaction from the reporting period meets a condition in the list, the related marker from the lookup result will be reported for the related document. For more information about the setup of each lookup field, continue with this topic.
+    If conditions are defined on one line, the system generally applies them to a source tax transaction by using the **AND** operator. If conditions must be applied by using the **OR** operator, define them on separate lines. When a tax transaction from the reporting period meets a condition in the list, the related marker from the lookup result will be reported for the related document. For more information about the setup of each lookup field, continue with this article.
 
 7. When you've finished setting up conditions, in the **State** field, select **Completed**, and then save the configuration.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Electronic reporting sample vendor checks
-description: This topic provides general information about how to use the Electronic reporting sample check formats.
+description: This article provides general information about how to use the Electronic reporting sample check formats.
 author: sunfzam
 ms.date: 06/14/2017
 ms.topic: article
@@ -14,13 +14,13 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.assetid: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 
@@ -34,7 +34,7 @@ You can use Electronic reporting (ER) to format vendor checks. Many bank-specifi
 
 ## What check formats are currently supported?
 
-You should always go to the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS) and view the current list of available files that have an asset type of **GER configuration**. The next section, “What do I have to set up?,” includes a link to a topic that explains how to create an LCS repository so that you can review available configurations and import selected configurations.
+You should always go to the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS) and view the current list of available files that have an asset type of **GER configuration**. The next section, “What do I have to set up?,” includes a link to a article that explains how to create an LCS repository so that you can review available configurations and import selected configurations.
 
 Microsoft Dynamics 365 Finance includes a sample format where the check is on top, followed by two remittance sections. It also includes a sample format where the check is in the middle, between two remittance sections. These sample formats correspond to Deluxe business checks formats.
 

@@ -2,10 +2,10 @@
 # required metadata
 
 title: Cash register functionality for France
-description: This topic provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
+description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 09/14/2021
+ms.date: 05/17/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 7.3.2
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the cash register functionality that is available for France in Microsoft Dynamics 365 Commerce. It also provides guidelines for setting up the functionality.
+This article provides an overview of the cash register functionality that is available for France in Microsoft Dynamics 365 Commerce. It also provides guidelines for setting up the functionality.
 
 The cash register functionality for France consists of the following parts:
 
@@ -38,19 +38,14 @@ The cash register functionality for France consists of the following parts:
 
 ## Certification information
 
-This version of the cash register functionality for France has passed an audit according to the NF 525 certification requirements and is granted certificates of compliance that have the following categories and numbers: 
-
-- **Microsoft Dynamics 365 Finance, version 10**:
-
-    - Certificate category: B
-    - Certificate number: 0350
+This version of the cash register functionality for France has passed an audit according to the NF 525 certification requirements and is granted a certificate of compliance that has the following category and number: 
 
 - **Microsoft Dynamics 365 Commerce, version 10**:
 
     - Certificate category: B
     - Certificate number: 0203
 
-Up-to-date certificates can be found on the [portal of the certification body](https://certificates.infocert.org/).
+An up-to-date certificate can be found on the [portal of the certification body](https://certificates.infocert.org/).
 
 ## Common POS features
 
@@ -67,6 +62,7 @@ The following POS localization features that are available to customers in all c
     - Ending offline mode
     - Applying a manager override
     - Voiding a transaction 
+    - Voiding a transaction line
     - Cleanup of transactions from the channel database
     - Applying a major update of the software with compliance impact
 
@@ -78,7 +74,7 @@ The following France-specific POS features are enabled when the primary address 
 
 The following types of records (transactions and events) are digitally signed in POS:
 
-- Sales transactions
+- Sales and return transactions
 - Copies of receipts
 - Closed shifts/Z reports
 - Audit events
@@ -100,9 +96,9 @@ The signature is created and recorded in the channel database at the same time t
 >
 > You can use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing. Only certificates that have RSA-2048-bit or Elliptic Curve Digital Signature Algorithm (ECDSA) 224-bit minimum private keys are acceptable. Commerce supports only RSA-2048-bit or longer keys. If you want to use an ECDSA key, you must implement a customization.
 
-### Digital signing of sales transactions
+### Digital signing of sales and return transactions
 
-Only transactions for cash sales are signed. Here are some examples of transactions that are excluded from the signing process:
+Only transactions for cash sales and returns are signed. Here are some examples of transactions that are excluded from the signing process:
 
 - Prepayments (customer account deposits)
 - Quotations
@@ -110,16 +106,19 @@ Only transactions for cash sales are signed. Here are some examples of transacti
 - Issuing a gift card and adding funds to a gift card
 - Non-sales transactions (float entry, tender removal, and so on)
 
-The data that is signed for a sales transaction is a text string that consists of the following data fields:
+The data that is signed for a sales or return transaction is a text string that consists of the following data fields:
 
-- The total amount of sales, including tax per tax rate.
-- The total amount of sales, including tax.
+- The total amount of the sale or return, including tax per tax rate.
+- The total amount of the sale or return, including tax.
 - The date and time of the transaction, in YYYYMMDDHHMMSS format.
 - The register number.
-- The sequential number of the signed sales transaction for the register.
-- The type of sales transaction.
-- A value (Y/N) that indicates whether the transaction is the first signed sales transaction for the register.
-- The previous signature for the same register. A blank value is used for the first signed sales transaction.
+- The sequential number of the signed sales or return transaction for the register.
+- The type of sales or return transaction.
+- A value (Y/N) that indicates whether the transaction is the first signed sales or return transaction for the register.
+- The previous signature for the same register. A blank value is used for the first signed sales or return transaction.
+
+> [!NOTE]
+> For digital signing purposes, return transactions are considered regular sales transactions. Therefore, the signing process for return transactions is the same as the signing process for sales transactions, and return transactions are included in the same sequence of signatures as sales transactions. The total amount of a return is negative. In other words, it includes a minus sign when it's added to the text string that is signed.
 
 You can view the transaction signature and the transaction data that was used to generate it on the **Fiscal transactions** FastTab of the **Store transactions** page in Commerce headquarters. By selecting **Extended data**, you can view specific properties of the fiscal transaction, such as the signature, sequential number, certificate thumbprint, and hash algorithm identification. 
 
@@ -202,11 +201,36 @@ The information that is included on X and Z reports is based on French requireme
 
 - **Total sales** for the shift. This information includes amounts only for cash sales transactions. Prepayments and operations for issuing a gift card are excluded.
 - **Total returns** for the shift.
-- **Cumulative perpetual grand total**. This amount is calculated as the cumulative grand total amount of the previous shift, plus the total sales amount of this shift, minus the absolute value of the total return amount of this shift.
-- **Cumulative perpetual grand total (absolute value)**. This amount is calculated as the cumulative perpetual grand total amount of the previous shift, plus the total sales amount of this shift, plus the absolute value of the total return amount of this shift.
+- **Cumulative perpetual grand total**. This amount is calculated as the cumulative perpetual grand total amount of the previous shift, plus the total sales amount of this shift, minus the absolute value of the total return amount of this shift.
+- **Cumulative perpetual grand total (absolute value)**. This amount is calculated as the cumulative perpetual grand total (absolute value) amount of the previous shift, plus the total sales amount of this shift, plus the absolute value of the total return amount of this shift.
 - Value-added tax (VAT) amounts per tax rate.
 
 The totals are also stored in the closed shift record and transferred to Commerce headquarters.
+
+You can export a Z report from a closed shift in Commerce headquarters. An exported Z report is an XML file that includes the totals for the closed shift. Specifically, the file includes the data that is described in the following table.
+
+| Element/Node                     | Comment |
+|----------------------------------|---------|
+| RegisterNumber                   | The identification of the register that the shift was opened on. |
+| Date                             | The date of the shift. |
+| TotalCashSales                   | The total amount of sales, including tax, for the shift. |
+| TotalCashReturns                 | The absolute value of the total amount of returns, including tax, for the shift. |
+| GrandTotal                       | The total amount of sales, including tax, minus the absolute value of the total amount of returns, including tax, for the shift. |
+| PerpetualGrandTotal              | The cumulative perpetual grand total for the shift. In other words, the cumulative perpetual grand total for the previous shift of the same register, plus the total amount of sales, including tax, for the shift, minus the absolute value of the total amount of returns, including tax, for the shift. |
+| PerpetualGrandTotalAbsoluteValue | The cumulative perpetual grand total for the shift. In other words, the cumulative perpetual grand total for the previous shift of the same register, plus the total amount of sales, including tax, for the shift, plus the absolute value of the total amount of returns, including tax, for the shift. |
+| ShiftLines                       | A collection of grand total amounts per tax rate. |
+| ShiftLine                        | A node for the grand total amount for a tax rate. |
+| TotalInclTax                     | The grand total amount for the shift for the tax rate. |
+| TaxRate                          | The tax rate. |
+| TaxAmount                        | The grand total amount of tax for the tax rate. |
+| SequentialNumber                 | The sequential number of the signed shift for the register. |
+| DataToSign                       | The string that was [built from the elements of the shift record](#digital-signing-of-closed-shifts) and used for signing. |
+| DataToSignFormatVersion          | The internal version of the format of data that was used for signing. |
+| Signature                        | The digital signature of the shift record. |
+| HashAlgorithm                    | The hash algorithm that was used to hash the data before signing. |
+| CertificateThumbprint            | The thumbprint of the certificate that was used for signing. |
+
+The exported Z report file is digitally signed, and the signature is contained in a separate file.
 
 ### Period grand total journal
 
@@ -250,6 +274,13 @@ To use the France-specific functionality, you must complete these tasks:
 
 You must also specify the following settings for France. Note that you must run appropriate distribution jobs after you complete the setup.
 
+### Enable features for France
+
+You must enable the following features in the **Feature management** workspace:
+
+- (France) Enable additional audit events in POS
+- (France) Enable exporting Z-Report to file
+
 ### Set up the legal entity
 
 You must make the following changes on the **Legal entities** page. These settings are used in the archive format.
@@ -277,7 +308,7 @@ To enforce daily shift closing, you must make the following changes:
 
 You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
 
-On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet to your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or higher than 900001.
+On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or higher than 900001.
 
 | Language ID | Text ID | Text ID                   |
 |-------------|---------|---------------------------|
@@ -339,9 +370,9 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued per the NF 525 certification requirements.
 
         > [!NOTE]
-        > By default, the certificate category and number that are assigned to [Finance](#certification-information) are printed. If you're implementing Commerce, you must override the certificate category and number.
+        > The certificate category and number that are assigned to [Commerce](#certification-information) are printed.
 
-    - **Text** – Add a text field, and specify the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts (for example, **Microsoft Dynamics 365 Finance v.10** or **Microsoft Dynamics 365 Commerce v.10**).
+    - **Text** – Add a text field, and specify the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts (for example, **Microsoft Dynamics 365 Commerce v.10**).
 
         > [!NOTE]
         > If you customize the POS application, and your customizations affect the compliance of the application, you might have to request a new certificate of compliance from an accredited body. In this case, you must override the certificate category and number, and specify a corresponding software version number. Otherwise, the default values for the certificate category and number will be printed.
@@ -387,7 +418,7 @@ To enable the fiscal registration process for France in Commerce headquarters, f
 
 ### Configure the digital signature parameters
 
-You must configure certificates that will be used for digital signing of records on the Commerce channel side (sales transactions and audit events) and on the Commerce headquarters side (period grand total journals and fiscal archives). The signing is done by using a digital certificate that is stored in Azure Key Vault. For the offline mode of Modern POS, the signing can also be done by using a digital certificate that is stored in the local storage of the machine that Modern POS is installed on. The [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature enables configuration of certificates that are stored in Key Vault. It also supports failover to offline mode when Key Vault or Commerce headquarters isn't available. This feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
+You must configure certificates that will be used for digital signing of records on the Commerce channel side (sales transactions and audit events) and on the Commerce headquarters side (period grand total journals, Z reports, and fiscal archives). The signing is done by using a digital certificate that is stored in Azure Key Vault. For the offline mode of Modern POS, the signing can also be done by using a digital certificate that is stored in the local storage of the machine that Modern POS is installed on. The [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature enables configuration of certificates that are stored in Key Vault. It also supports failover to offline mode when Key Vault or Commerce headquarters isn't available. This feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
 
 > [!NOTE]
 > You can use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing. Only certificates that have RSA-2048-bit or Elliptic Curve Digital Signature Algorithm (ECDSA) 224-bit minimum private keys are acceptable. Commerce supports only RSA-2048-bit or longer keys. If you want to use an ECDSA key, you must implement a customization.
@@ -437,15 +468,19 @@ Finally, on the **Commerce parameters** page (**Retail and Commerce \> Headquart
 > [!NOTE]
 > The following hash functions aren't acceptable: CRC16, CRC32, SHA-1, and MD5. Commerce supports only the SHA256, SHA384, and SHA512 hash functions. If you want to use a different hash function, you must implement a customization.
 
-### Configure the archive export format
+### Configure the Z report and archive export formats
 
-You can download the ER configuration for the archive from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following versions, or later versions, of the configurations:
+You can download the ER configurations for the Z report and archive from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following versions, or later versions, of the configurations:
 
 - **Retail channel data.version.2** data model
 - **Archiving DMM.version.2.3** data model mapping
-- **Retail data archive FR .version.2.5** format
+- **Retail Z-Report (FR).version.24.23.3** format
+- **Retail data archive (FR).version.2.5** format
 
-After you import the configurations, in the **Retail data archive export format** field on the **Electronic documents** tab of the **Commerce parameters** page, select the **Retail data archive FR .version.2.5** format or the format that you downloaded earlier.
+After you import the configurations, select ER formats for the Z report and archive in the following fields on the **Electronic documents** tab of the **Commerce parameters** page:
+
+- **Z-Report export format** – Select the **Retail Z-Report (FR).version.24.23.3** format or the format that you downloaded earlier.
+- **Retail data archive export format** – Select the **Retail data archive (FR).version.2.5** format or the format that you downloaded earlier.
 
 ### Reinitialize Commerce components
 

@@ -1,7 +1,7 @@
 ---
 
 title: Add data sources to forms through extension
-description: This topic explains how you can add new data sources to existing forms by using extensions.
+description: This article explains how you can add new data sources to existing forms by using extensions.
 author: ivanv-microsoft
 ms.date: 07/10/2017
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Switzerland overview
-description: This topic provides links to documentation resources for Switzerland. 
+description: This article provides links to documentation resources for Switzerland. 
 author: ShylaThompson
 ms.date: 07/25/2019
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for Switzerland. 
+This article provides links to documentation resources for Switzerland. 
 
 - [ESR customer payments import](emea-che-esr-customer-payments-import.md)
 - [Swiss QR-bills](emea-che-swiss-qr-bills.md)

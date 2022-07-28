@@ -2,7 +2,7 @@
 # required metadata
 
 title: Credit management setup
-description: This topic describes the setup that is required for Credit management.
+description: This article describes the setup that is required for Credit management.
 author: JodiChristiansen
 ms.date: 02/15/2022
 ms.topic: article

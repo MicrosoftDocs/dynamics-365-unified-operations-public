@@ -34,7 +34,7 @@ You can associate service tasks with service agreements or service orders in ord
 
 ## Create a relation with a service agreement
 
-1.  Go to **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+1.  Go to **Service management** \> **Service agreements** \> **Service agreements**.
 
 2.  Select an existing service agreement, or create a new service agreement.
 
@@ -52,7 +52,7 @@ A service tasks relation that is created on a service agreement is available fro
 
 ## Create a relation with a service order
 
-1.  Go to **Service management** \> **Common** \> **Service orders** \> **Service orders**.
+1.  Go to **Service management** \> **Service orders** \> **Service orders**.
 
 2.  Select an existing service order, or create a new service order.
 

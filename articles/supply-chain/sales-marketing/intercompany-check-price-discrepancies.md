@@ -1,6 +1,6 @@
 ---
 title: Check intercompany order price discrepancies
-description: This topic explains how to check intercompany order price discrepancies
+description: This article explains how to check intercompany order price discrepancies
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article

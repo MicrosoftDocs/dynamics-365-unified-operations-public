@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -36,7 +36,7 @@ This article describes features that are either new or changed in Dynamics 365 H
 
 ## Platform update 32 
 
-Platform update 32 is now available. For more information, see [What's new or changed in Platform update 32 for Finance and Operations (February 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
+Platform update 32 is now available. For more information, see [What's new or changed in Platform update 32 for finance and operations (February 2020)](../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-32.md).
 
 ## Search values are remembered when changing view options in streamlined employee form (383833)
 

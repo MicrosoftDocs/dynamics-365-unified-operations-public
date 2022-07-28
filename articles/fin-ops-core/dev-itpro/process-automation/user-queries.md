@@ -1,6 +1,6 @@
 ---
 title: User-configurable queries
-description: This topic describes how to create configurable queries and use them with the process automation framework.
+description: This article describes how to create configurable queries and use them with the process automation framework.
 author: RyanCCarlson2
 ms.date: 09/10/2020
 ms.topic: article
@@ -13,7 +13,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.search.region: Global
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create configurable queries and use them with the process automation framework. If a process won't support user-configurable queries via the **SysQueryForm** form, you can skip this task.
+This article describes how to create configurable queries and use them with the process automation framework. If a process won't support user-configurable queries via the **SysQueryForm** form, you can skip this task.
 
 The process automation framework provides limited support for custom queries via the **SysQueryForm** form. A custom query lets a user add custom criteria to limit how a process runs. The framework has logic to extract user-provided custom criteria and tables to store those criteria. The custom query criteria are stored for each occurrence of a given series and can be modified individually. The framework also provides an API to apply the custom criteria to the query that is used to run the process for each occurrence.
 

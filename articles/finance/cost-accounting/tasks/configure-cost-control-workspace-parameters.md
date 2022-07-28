@@ -3,7 +3,7 @@
  
 title: Configure cost control workspace parameters
 description: Use this procedure to configure the Cost control workspace so that managers at various levels in an organization can gain insight into their cost objects, such as cost centers and product groups. 
-author: ShylaThompson
+author: kfend
 ms.date: 06/27/2017
 ms.topic: business-process 
 ms.prod:  
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: CAMCostControlWorkspaceConfigurationPerUser
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

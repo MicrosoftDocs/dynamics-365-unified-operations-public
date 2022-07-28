@@ -2,7 +2,7 @@
 # required metadata
 
 title: Master planning with demand forecasts
-description: This topic explains how to include demand forecasts during master planning with Planning Optimization.
+description: This article explains how to include demand forecasts during master planning with Planning Optimization.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -45,7 +45,7 @@ To configure a master plan so that it includes a demand forecast, follow these s
 
     - **Forecast model** – Select the forecast model to apply. This model will be considered when a supply suggestion is generated for the current master plan.
     - **Include demand forecast** – Set this option to *Yes* to include the demand forecast in the current master plan. If you set it to *No*, demand forecast transactions won't be included in the master plan.
-    - **Method used to reduce forecast requirements** – Select the method that should be used to reduce forecast requirements. For more information, see the [Forecast reduction keys](#reduction-keys) section later in this topic.
+    - **Method used to reduce forecast requirements** – Select the method that should be used to reduce forecast requirements. For more information, see the [Forecast reduction keys](#reduction-keys) section later in this article.
 
 1. On the **Time fence in days** FastTab, you can set the following fields to specify the period that the demand forecast is included during:
 
@@ -64,7 +64,7 @@ To configure a coverage group so that it includes a demand forecast, follow thes
 1. On the **Other** FastTab, set the following fields:
 
     - **Forecast plan time fence** – Enter the number of days (from today's date) that the demand forecast should be applied for. This value can be overridden by using the **Forecast plan** option on the master plan, as described in the previous section.
-    - **Reduction key** – Select the reduction key to apply. For more information, see the [Create and set up a forecast reduction key](#create-reduction-key) and [Use a reduction key](#use-reduction-key) sections later in this topic.
+    - **Reduction key** – Select the reduction key to apply. For more information, see the [Create and set up a forecast reduction key](#create-reduction-key) and [Use a reduction key](#use-reduction-key) sections later in this article.
     - **Reduce forecast by** – For master plans where the **Method used to reduce forecast requirements** field is set to *Transactions - reduction key* or *Transactions - dynamic period*, specify which transactions should reduce the forecast. Select one of the following values:
 
         - **All transactions** – All transactions should reduce the forecast.

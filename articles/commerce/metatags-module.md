@@ -2,9 +2,9 @@
 # required metadata
 
 title: Metatags module
-description: This topic covers metatags modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
+description: This article covers metatags modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 04/02/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic covers metatags modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
+This article covers metatags modules and describes how to add them to templates in Microsoft Dynamics 365 Commerce.
 
 The metatags module supports the entry of custom HTML meta tags that can help improve search engine optimization (SEO) rankings for site pages.
 
@@ -58,7 +58,7 @@ To add a metatags module to a template, follow these steps.
 
     ![Adding a new module.](media/metatags-module-2.png)
 
-1. In the **Add Module** dialog box, select the **Metatags** module, and then select **OK**.
+1. In the **Select modules** dialog box, select the **Metatags** module, and then select **OK**.
 
     ![Adding a metatags module.](media/metatags-module-3.png)
 

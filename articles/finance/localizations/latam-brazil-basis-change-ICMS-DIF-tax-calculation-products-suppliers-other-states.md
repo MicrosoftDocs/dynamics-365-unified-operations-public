@@ -2,7 +2,7 @@
 # required metadata
 
 title: Basis change in ICMS-DIF tax calculations for products from suppliers in other states
-description: This topic describes the configuration for calculations of the ICMS-DIF tax type when a fiscal document is received in the Brazilian state of Rio Grande do Sul (RS) or São Paulo (SP).
+description: This article describes the configuration for calculations of the ICMS-DIF tax type when a fiscal document is received in the Brazilian state of Rio Grande do Sul (RS) or São Paulo (SP).
 author: Kai-Cloud
 ms.date: 1/20/2022
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.26
 
 # Basis change in ICMS-DIF tax calculations for products from suppliers in other states
 
-This topic describes the configuration for calculations of the **ICMS-DIF** tax type when a fiscal document is received in the Brazilian state of Rio Grande do Sul (RS) or São Paulo (SP).
+This article describes the configuration for calculations of the **ICMS-DIF** tax type when a fiscal document is received in the Brazilian state of Rio Grande do Sul (RS) or São Paulo (SP).
 
 According to the definition in the state law, the Imposto sobre Circulação de Mercadorias e Serviços (ICMS) that is collected must follow this rule:
 

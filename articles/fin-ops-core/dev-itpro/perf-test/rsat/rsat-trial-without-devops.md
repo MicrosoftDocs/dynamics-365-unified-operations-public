@@ -1,6 +1,6 @@
 ---
 title: Trial mode without Azure DevOps
-description: This topic describes how to use the Regression suite automation tool (RSAT) in trial mode without Microsoft Azure DevOps.
+description: This article describes how to use the Regression suite automation tool (RSAT) in trial mode without Microsoft Azure DevOps.
 author: FrankDahl
 ms.date: 03/18/2022
 ms.topic: article
@@ -34,7 +34,7 @@ It's important to note that trial mode isn't time limited. If you find a long-te
 
 RSAT in trial mode is based on the RSAT in Normal mode that is known from earlier versions. In fact, the binary application is the same, but the name differs when it runs in the new trial mode. You can think of trial mode as a trimmed-down version of the functionality that is available in Normal mode to produce a simplified application that doesn't require Azure DevOps to run.
 
-RSAT in trial model is limited in some ways. For more information, see the [Differences when RSAT is run in trial mode instead of Normal mode](#differences) section later in this topic.
+RSAT in trial model is limited in some ways. For more information, see the [Differences when RSAT is run in trial mode instead of Normal mode](#differences) section later in this article.
 
 During the installation process, you select which of the RSAT modes you want to be available. Both modes will be installed, and each will have its own shortcut on the desktop. Both modes can be installed on the same machine, and they can be used interchangeably.
 

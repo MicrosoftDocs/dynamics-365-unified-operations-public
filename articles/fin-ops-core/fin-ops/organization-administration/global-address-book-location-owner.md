@@ -2,7 +2,7 @@
 # required metadata
 
 title: Global address book and location owners
-description: This topic describes location owners and explains how to change the owner in the global address book.
+description: This article describes location owners and explains how to change the owner in the global address book.
 author: jaredha
 ms.date: 08/16/2021
 ms.topic: article
@@ -31,6 +31,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Each address in the global address book has a location owner. The location owner determines whether the address can be edited on the party record. If the party is the location owner of the address, the party can be used to edit the address from either the global address book or the associated master record page (such as the customer, vendor, or worker). If the party isn't the location owner of the address, the record can't be edited.
 
+## Specify a location owner
+
+The **Specify location owner** feature lets system administrators specify the owner of a location (address). Typically, a party owns the locations that are associated with it. If a location doesn't have an owner, or if the owner is incorrectly set, the address can't be edited.
+
+Previously, there was no way to specify a location owner. However, the **Specify location owner** feature enables a location owner to be specified through the **Advanced** option on the party address and on a new list page. After the location owner is set, the address can be edited. By default, this feature is available only to system administrators.
+
 ## Assigning location ownership
 
 The location owner is determined when an address is created. When the address is created, the party that the address is created for is assigned as the location owner.
@@ -42,7 +48,7 @@ If locations are created through data entities, the location owner property (**I
 If the location owner isn't correct, the associated party can't be used to edit the address. In this case, you can update the location owner by either changing or confirming the location owner.
 
 > [!NOTE]
-> Before the location owner can be updated, the **Specify location owner** feature must be enabled in Feature management, and users must be assigned to a role that has the **Set location owner** privilege.
+> In Feature management, select **Check for updates** to update the **Enabled by default** status for the **Specify location owner** feature.
 
 ### Change the location owner
 

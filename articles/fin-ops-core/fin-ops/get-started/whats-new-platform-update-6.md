@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Operations platform update 6 (April 2017)
-description: This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 6. This version was released in April 2017 and has a build number of 7.0.4509.16180.
+description: This article describes features that are either new or changed in Dynamics 365 for Operations platform update 6. This version was released in April 2017 and has a build number of 7.0.4509.16180.
 author: tonyafehr
 ms.date: 04/21/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 6
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Operations platform update 6. This version was released in April 2017 and has a build number of 7.0.4509.16180.
+This article describes features that are either new or changed in Dynamics 365 for Operations platform update 6. This version was released in April 2017 and has a build number of 7.0.4509.16180.
 
 ## Browser framework – Power Apps Host control
 

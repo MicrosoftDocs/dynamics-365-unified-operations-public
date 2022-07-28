@@ -2,7 +2,7 @@
 # required metadata
 
 title: SUMIFS ER function
-description: This topic provides information about how the SUMIFS Electronic reporting (ER) function is used.
+description: This article provides information about how the SUMIFS Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 12/04/2019
 ms.prod: 

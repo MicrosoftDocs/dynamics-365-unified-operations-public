@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure the production floor execution interface
-description: This topic describes how to create one or more configurations for the production floor execution interface. When you open the production floor execution interface, it automatically loads a selected configuration and job filter that are specific to the browser and device. In the configuration, you set the policies that must be applicable for a specific usage.
+description: This article describes how to create one or more configurations for the production floor execution interface. When you open the production floor execution interface, it automatically loads a selected configuration and job filter that are specific to the browser and device. In the configuration, you set the policies that must be applicable for a specific usage.
 author: johanhoffmann
 ms.date: 10/05/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
@@ -35,15 +35,15 @@ When you open the production floor execution interface, it automatically loads a
 - On a device in the company hall, employees clock in when they come into the office, and they clock out when they leave for the day.
 - On a device on the shop floor, machine operators register when they start and complete jobs. They also register breaks and indirect activities.
 
-This topic describes the various options for configuring a production floor execution interface for each device in use at your site.
+This article describes the various options for configuring a production floor execution interface for each device in use at your site.
 
 ## Turn on the production floor execution interface and its related optional features
 
-The production floor execution interface itself, plus several of the optional settings that are described in this topic, must be turned on in your system before you can use them. Use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to turn on any or all of the features described in the following subsections as required.
+The production floor execution interface itself, plus several of the optional settings that are described in this article, must be turned on in your system before you can use them. Use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to turn on any or all of the features described in the following subsections as required.
 
 ### The production floor execution interface
 
-This is the primary feature described in this topic and is a prerequisite for all of the other features mentioned in this section. As of Supply Chain Management 10.0.25, it is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Production floor execution* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+This is the primary feature described in this article and is a prerequisite for all of the other features mentioned in this section. As of Supply Chain Management 10.0.25, it is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *Production floor execution* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Generate license plates
 
@@ -96,9 +96,9 @@ As of Supply Chain Management version 10.0.25, this feature is turned on by defa
 
 This feature enables workers to use the production floor execution interface to register material consumption, batch numbers, and serial numbers. Some manufacturers, especially those in the process industries, must explicitly register the amount of material that is consumed for each batch or production order. For example, workers might use a scale to weigh the amount of material that is consumed as they work. To ensure full material traceability, these organizations must also register the batch numbers that were consumed to produce each product.
 
-There are two versions of this feature. One supports items that *are not* enabled to use advanced warehouse processes (WMS). The other supports items that *are* enabled to use WMS. To use this functionality, turn on one or both of the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order), depending on whether you have items that are enabled for WMS:
+There are two versions of this feature. One supports items that *are not* enabled to use warehouse management processes (WMS). The other supports items that *are* enabled to use WMS. To use this functionality, turn on one or both of the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order), depending on whether you have items that are enabled for WMS:
 
-- *(Preview) Register material consumption on the production floor execution interface (non-WMS)*
+- *Register material consumption on the production floor execution interface (non-WMS)*
 - *(Preview) Register material consumption on the production floor execution interface (WMS-enabled)*
 
 > [!IMPORTANT]
@@ -117,9 +117,6 @@ To use this functionality, turn on the following feature in [Feature management]
 
 ### Enable the "My day" dialog
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 The **My day** dialog provides workers with an overview of their daily registrations and current balances for paid time, paid overtime, absence, and paid absence.
 
 To use this functionality, turn on the following feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
@@ -127,9 +124,6 @@ To use this functionality, turn on the following feature in [Feature management]
 - *"My day" view for the production floor execution interface*
 
 ### Enable teams
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 When multiple workers are assigned to the same production job, they can form a team. The team can nominate one worker as a pilot. The remaining workers then automatically become assistants of that pilot. For the resulting team, only the pilot must register job status. Time records apply to all team members.
 
@@ -139,9 +133,6 @@ To use this functionality, turn on the following feature in [Feature management]
 
 ### Enable additional configuration in the production floor execution interface
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 This feature adds settings for the following functionality to the **Configure production floor execution** page:
 
 - Automatically open the **Start job** dialog box when a search is completed.
@@ -150,7 +141,7 @@ This feature adds settings for the following functionality to the **Configure pr
 - Enable material consumption adjustments from the **Report progress** dialog box. (This functionality also requires the *Register material consumption on the production floor execution interface (non-WMS)* feature.)
 - Enable searches by project ID.
 
-Information about how to use the settings is provided later in this topic.
+Information about how to use the settings is provided later in this article.
 
 To use this functionality, turn on the following feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 

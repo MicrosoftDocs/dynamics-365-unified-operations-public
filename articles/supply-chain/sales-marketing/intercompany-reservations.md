@@ -1,6 +1,6 @@
 ---
 title: Intercompany reservations
-description: This topic explains the marking
+description: This article explains the marking
 author: Henrikan
 ms.date: 09/01/2021
 ms.topic: article

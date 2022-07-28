@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: HRMCompVarEnrollEmpl, HcmCompensationWorkspace 
 audience: Application User 
 # ms.devlang:  
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

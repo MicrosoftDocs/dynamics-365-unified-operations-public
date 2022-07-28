@@ -2,7 +2,7 @@
 # required metadata
 
 title: Include container weight and volume on load
-description: This topic describes how to set up and apply functionality to include container weight and volume on loads.
+description: This article describes how to set up and apply functionality to include container weight and volume on loads.
 author: Weijiesa
 ms.date: 05/26/2017
 ms.topic: article

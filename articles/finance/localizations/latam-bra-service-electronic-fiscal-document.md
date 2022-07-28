@@ -2,7 +2,7 @@
 # required metadata
 
 title: Service electronic fiscal document for Brazil
-description: This topic provides an overview of the service electronic fiscal document.
+description: This article provides an overview of the service electronic fiscal document.
 author: sndray
 ms.date: 10/31/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the service electronic fiscal document.
+This article provides an overview of the service electronic fiscal document.
 
 When a fiscal document is about service in Brazil, different rules apply than a regular electronic fiscal document. The model for a services fiscal document in Brazil is SE and includes ISS, PIS, and COFINS taxes.
 

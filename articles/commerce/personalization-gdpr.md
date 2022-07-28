@@ -2,7 +2,7 @@
 # required metadata
 
 title: Opt out of personalized recommendations
-description: This topic explains how you can let customers opt out of receiving personalized recommendations in Microsoft Dynamics 365 Commerce. 
+description: This article explains how you can let customers opt out of receiving personalized recommendations in Microsoft Dynamics 365 Commerce. 
 author: bebeale
 ms.date: 09/15/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how you can let customers opt out of receiving personalized recommendations in Microsoft Dynamics 365 Commerce.
+This article explains how you can let customers opt out of receiving personalized recommendations in Microsoft Dynamics 365 Commerce.
 
 During account creation, new customers are automatically set up to receive personalized recommendations. However, Dynamics 365 Commerce provides various ways for retailers to let users opt out of receiving these recommendations and restrict the processing of their personal data. Authenticated users who opt out of receiving personalized recommendations will immediately stop seeing personalized lists. Additionally, all personal data that is collected for personalization will be removed from personalized recommendations models.
 

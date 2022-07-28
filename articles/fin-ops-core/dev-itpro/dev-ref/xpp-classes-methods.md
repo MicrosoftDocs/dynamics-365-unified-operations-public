@@ -1,6 +1,6 @@
 ---
 title: Classes and methods
-description: This topic describes how to create and use classes in X++.
+description: This article describes how to create and use classes in X++.
 author: RobinARH
 ms.date: 08/27/2021
 audience: Developer
@@ -15,11 +15,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create and use classes in X++.
+This article describes how to create and use classes in X++.
 
-A *class* is a software construct that defines the data and methods of the instances that are later constructed from that class. The *class* is an abstraction of an *object* in the problem domain. The instances that are constructed from the *class* are known as *instances* or *objects*. This topic uses the term *instance*. The data represents the state of the object, whereas the methods represent the behavior of the object.
+A *class* is a software construct that defines the data and methods of the instances that are later constructed from that class. The *class* is an abstraction of an *object* in the problem domain. The instances that are constructed from the *class* are known as *instances* or *objects*. This article uses the term *instance*. The data represents the state of the object, whereas the methods represent the behavior of the object.
 
-*Variables* contain the data for the class, and are called *fields*. Every instance that is constructed from the class declaration has its own copy of the variables. These variables are known as *instance variables* or *instance fields*. This topic will use the term *field* in most cases.
+*Variables* contain the data for the class, and are called *fields*. Every instance that is constructed from the class declaration has its own copy of the variables. These variables are known as *instance variables* or *instance fields*. This article will use the term *field* in most cases.
 
 Methods define the behavior of a class. They are the sequences of statements that operate on the data (instance fields). By default, methods are declared to operate on the instance fields of the class. These methods are known as *instance methods* or *object methods*.
 

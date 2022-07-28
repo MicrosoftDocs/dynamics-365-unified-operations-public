@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer information management for Poland
-description: This topic describes how to handle customer information in Retail POS for Poland.
+description: This article describes how to handle customer information in Retail POS for Poland.
 author: sepism
 ms.date: 09/21/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.7
 
 ## Introduction
 
-This topic describes how you can handle customer information, such as the customer's value-added tax (VAT) number, in Retail point of sale (POS) for Poland.
+This article describes how you can handle customer information, such as the customer's value-added tax (VAT) number, in Retail point of sale (POS) for Poland.
 
 You can specify the customer's VAT number when you create or edit a customer master record in POS. You can also specify a VAT number for a sales transaction by copying it from the transaction customer or entering it manually. The customer information can then be printed on both regular and fiscal receipts, and it can be used for invoicing purposes.
 
@@ -90,7 +90,7 @@ In the Receipt format designer, add the custom field to the appropriate receipt 
 
 ### Configure channel components
 
-To make the functionality that is specific to Poland available, you must configure extensions for channel components. For more information, see the [Deployment guidelines](#deployment-guidelines) section later in this topic.
+To make the functionality that is specific to Poland available, you must configure extensions for channel components. For more information, see the [Deployment guidelines](#deployment-guidelines) section later in this article.
 
 ## Example scenarios
 

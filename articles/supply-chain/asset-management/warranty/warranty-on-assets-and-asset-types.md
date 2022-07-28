@@ -2,7 +2,7 @@
 # required metadata
 
 title: Warranties on assets and asset types
-description: This topic explains how to set up warranties on assets and asset types in Asset Management.
+description: This article explains how to set up warranties on assets and asset types in Asset Management.
 author: johanhoffmann
 ms.date: 08/30/2019
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: 10.0.5
  
 
 
-This topic explains how to set up warranties on assets and asset types in Asset Management.
+This article explains how to set up warranties on assets and asset types in Asset Management.
 
 ## Set up a warranty on an asset type
 
@@ -44,7 +44,7 @@ This topic explains how to set up warranties on assets and asset types in Asset 
 
 ## Set up a warranty on an asset
 
-1. Select **Asset management** \> **Common** \> **Assets** \> **All assets**.
+1. Select **Asset management** \> **Assets** \> **All assets**.
 2. Select the asset, and then select **Edit**.
 3. On the **Vendor** FastTab, in the **Vendor warranty** section, in the **Warranty** field, select the warranty agreement.
 4. In the **Warranty start** and **Warranty end** fields, select the start and end dates.

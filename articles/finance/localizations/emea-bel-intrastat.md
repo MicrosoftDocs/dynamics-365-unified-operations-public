@@ -2,14 +2,14 @@
 # required metadata
 
 title: Belgium Intrastat
-description: This topic contains information about the Belgium Intrastat report.
+description: This article contains information about the Belgium Intrastat report.
 author: andosip
 ms.date: 10/28/2021
 ms.topic: article
 audience: 
 ms.reviewer: kfend 
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: 
 ---
 # Belgium Intrastat

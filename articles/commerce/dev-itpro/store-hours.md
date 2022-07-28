@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create and update store hours
-description: This topic describes how to create and update store hours in Commerce Headquarters.
+description: This article describes how to create and update store hours in Commerce Headquarters.
 author: josaw1
 ms.date: 7/30/2019
 ms.topic: article

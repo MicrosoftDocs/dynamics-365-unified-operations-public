@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cloud-powered search overview
-description: This topic gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
+description: This article gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
 ms.date: 02/28/2022
 ms.topic: overview
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
+This article gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
 
 Product discoverability helps guarantee that customers can quickly and easily find products by browsing categories, searching, and filtering. Retailers consider product discovery a primary tool for customer interaction across channels powered by Cloud Scale Unit (CSU), such as e-commerce and point of sale (POS).
 

@@ -1,6 +1,6 @@
 ---
 title: Production planning
-description: This topic describes planning for production and explains how to modify planned production orders by using Planning Optimization.
+description: This article describes planning for production and explains how to modify planned production orders by using Planning Optimization.
 author: t-benebo
 ms.date: 06/01/2021
 ms.topic: article
@@ -19,11 +19,11 @@ ms.dyn365.ops.version: 10.0.13
 
 Planning Optimizations supports several production scenarios. If you're migrating from the existing, built-in master planning engine, it's important to be aware of some changed behavior.
 
-The following video gives a short introduction to some of the concepts discussed in this topic: [Dynamics 365 Supply Chain Management: Planning Optimization enhancements](https://youtu.be/u1pcmZuZBTw).
+The following video gives a short introduction to some of the concepts discussed in this article: [Dynamics 365 Supply Chain Management: Planning Optimization enhancements](https://youtu.be/u1pcmZuZBTw).
 
 ## Turn on this feature for your system
 
-If your system doesn't already include the features described in this topic, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Planned production orders for Planning Optimization* feature.
+If your system doesn't already include the features described in this article, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Planned production orders for Planning Optimization* feature.
 
 ## Planned production orders
 
@@ -60,7 +60,7 @@ If you want to change information on a planned order and see the impact on the r
 2. Approve the planned order.
 3. Run master planning.
 
-When you run master planning, you should not use filters if planned production orders are included. For more information, see the [Filters](#filters) section later in this topic.
+When you run master planning, you should not use filters if planned production orders are included. For more information, see the [Filters](#filters) section later in this article.
 
 > [!NOTE]
 > If the delivery date of the planned order is changed to a later date, the demand might be pegged against a new planned order. This behavior occurs when the new supply date causes a delay for the pegged demand but, according to the lead time settings, the delay can be avoided.

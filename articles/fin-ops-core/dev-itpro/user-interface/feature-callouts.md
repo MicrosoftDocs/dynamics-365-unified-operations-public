@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Platform update 26
 ## Introduction
 While documentation is helpful for explaining new features, it’s also important to raise awareness of these new capabilities as users encounter the feature while using the product. As a result, feature callouts are available in Platform update 26. You can use feature callouts to point out a new capability to a user and optionally provide a hyperlink for the user to learn more about the feature. 
 
-In this topic, the APIs that are used to construct feature callouts are discussed in detail.   
+In this article, the APIs that are used to construct feature callouts are discussed in detail.   
 
 ![Feature callout for Navigation Pane changes.](./media/cli_featureCallout_noLink.png "Feature callout for Navigation Pane changes released in Platform update 22")
   

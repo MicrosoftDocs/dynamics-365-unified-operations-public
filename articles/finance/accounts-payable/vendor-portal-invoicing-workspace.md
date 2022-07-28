@@ -2,7 +2,7 @@
 # required metadata
 
 title: Vendor collaboration invoicing workspace
-description: This topic explains how you can view vendor invoices and submit invoices from the vendor collaboration invoicing workspace.
+description: This article explains how you can view vendor invoices and submit invoices from the vendor collaboration invoicing workspace.
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how you can view vendor invoices and submit invoices from the **Vendor collaboration invoicing** workspace.
+This article explains how you can view vendor invoices and submit invoices from the **Vendor collaboration invoicing** workspace.
 
 The **Vendor collaboration invoicing** workspace can be used to view vendor invoice information and to submit invoices to the system using workflow capabilities.
 

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Promo banner module
-description: This topic covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This article covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-ms.date: 07/08/2021
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-This topic covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers promo banner modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 Promo banner modules are used to show inline informational messages on a page. They can be used to show site-wide promotions that appear on all pages of an e-Commerce site. 
 
@@ -73,7 +73,7 @@ The following image shows an example of a promo banner.
 To add a promo banner module to a page and set the required properties, follow these steps.
 
 1. Go to **Templates**, and select **New** to create a new template.
-1. In the **New Template** dialog box, under **Template Name**, enter **Promo banner template**, and then select **OK**.
+1. In the **New template** dialog box, under **Template Name**, enter **Promo banner template**, and then select **OK**.
 1. Under **Page Outline**, add a **Default page** module to the **Body** slot. 
 1. Select **Finish editing** to check in the template, and then select **Publish** to publish it. 
 1. Use the template that you just created to create a page that is named **Promo banner page**. 

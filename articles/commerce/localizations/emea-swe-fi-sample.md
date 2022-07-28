@@ -2,7 +2,7 @@
 # required metadata
 
 title: Control unit integration sample for Sweden
-description: This topic provides an overview of the fiscal integration sample for Sweden in Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of the fiscal integration sample for Sweden in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2019-10-08
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the fiscal integration sample for Sweden in Microsoft Dynamics 365 Commerce.
+This article provides an overview of the fiscal integration sample for Sweden in Microsoft Dynamics 365 Commerce.
 
 > [!NOTE]
 > This sample fiscal integration functionality replaces the earlier [sample for POS integration with control units for Sweden](retail-sdk-control-unit-sample.md). The earlier sample doesn't take advantage of the [fiscal integration framework](./fiscal-integration-for-retail-channel.md) and will become obsolete in later updates. For information about how to migrate from the earlier sample to the sample that corresponds to Dynamics 365 Commerce version **10.0.22 and earlier**, see [Migrating from the earlier integration sample](emea-swe-fi-sample-sdk.md#migrating-from-the-earlier-integration-sample).
@@ -80,7 +80,7 @@ On the **Custom fields** page, add the following records for the custom fields f
 
 For every receipt format that is required, change the value of the **Print behavior** field to **Always print**.
 
-In the Receipt format designer, add the following custom fields to the **Footer** section. Note that field names correspond to the language texts that you defined in the previous section of this topic.
+In the Receipt format designer, add the following custom fields to the **Footer** section. Note that field names correspond to the language texts that you defined in the previous section of this article.
 
 - **Register control code** – This field prints the control code.
 - **Register device** – This field prints the manufacturing number of the control unit.

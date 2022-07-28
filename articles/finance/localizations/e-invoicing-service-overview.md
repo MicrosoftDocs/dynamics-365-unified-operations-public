@@ -2,7 +2,7 @@
 # required metadata
 
 title: Electronic invoicing overview
-description: This topic provides an overview of Electronic invoicing in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
+description: This article provides an overview of Electronic invoicing in Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management.
 author: gionoder
 ms.date: 01/21/2022
 ms.topic: overview

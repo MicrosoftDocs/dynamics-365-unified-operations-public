@@ -2,7 +2,7 @@
 # required metadata
 
 title: Split invoice functionality
-description: This topic describes the setup and functionality for splitting invoices by delivery address and tax account number (TAN).
+description: This article describes the setup and functionality for splitting invoices by delivery address and tax account number (TAN).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -16,8 +16,8 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
+ms.reviewer: kfend
+# 
 # ms.tgt_pltfrm: 
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the setup and functionality for splitting invoices by delivery address and tax account number (TAN).
+This article describes the setup and functionality for splitting invoices by delivery address and tax account number (TAN).
 
 On the **Accounts payable parameters** page, on the **General** tab, select the **Product receipt** or **Invoice** checkbox to post and split a product receipt or invoice that has different delivery addresses and TANs on the **Purchase order** page. The posted invoice will then be split by delivery address and TAN.
 

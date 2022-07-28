@@ -2,7 +2,7 @@
 # required metadata
 
 title: Refund payment processing in call centers
-description: This topic explains how payment refunds are generated through call centers when returns are created, or when orders or order lines are canceled.
+description: This article explains how payment refunds are generated through call centers when returns are created, or when orders or order lines are canceled.
 author: hhainesms
 ms.date: 01/05/2020
 ms.topic: article
@@ -26,7 +26,7 @@ ms.dyn365.ops.version:
 
 # Refund payment processing in call centers
 
-This topic explains how payment refunds are generated through call centers when returns are created, or when orders or order lines are canceled.
+This article explains how payment refunds are generated through call centers when returns are created, or when orders or order lines are canceled.
 
 A user who creates a return order for a customer as a call center user in Microsoft Dynamics 365 Commerce headquarters uses the **Return order** page to create the initial return materials authorization (RMA). The RMA defines the products that the customer wants to return or exchange, and it creates a linked return sales order that has an order type of **Returned order**. This linked returned order is used to track the posting of the returned inventory and any credit notes or payment refunds that are posted.
 
@@ -97,7 +97,7 @@ A setting of **Yes** for the **Apply credit** option is applicable only when the
 
 ## Payment overrides for call center returns
 
-Although call center logic systematically determines the refund payment method in the manner that is described earlier in this topic, users might sometimes want to override those payments. For example, a user might edit or remove existing refund payment lines, and apply new payment lines. System-calculated refund payments can be changed only by users who have the correct override permissions. These permissions can be configured on the **Override permissions** page in Retail and Commerce. To do a refund payment override, the user must be linked to a security role where the **Allow alternate payment** option is set to **Yes** on the **Override permissions** page.
+Although call center logic systematically determines the refund payment method in the manner that is described earlier in this article, users might sometimes want to override those payments. For example, a user might edit or remove existing refund payment lines, and apply new payment lines. System-calculated refund payments can be changed only by users who have the correct override permissions. These permissions can be configured on the **Override permissions** page in Retail and Commerce. To do a refund payment override, the user must be linked to a security role where the **Allow alternate payment** option is set to **Yes** on the **Override permissions** page.
 
 ![Allow alternate payment option on the Override permissions page.](media/overridepermissions.png)
 

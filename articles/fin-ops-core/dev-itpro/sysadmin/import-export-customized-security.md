@@ -2,7 +2,7 @@
 # required metadata
 
 title: Import or export a customized security configuration by using Data management 
-description: The topic explains how a customized security configuration can be exported and imported across environments by using the Data management framework.
+description: The article explains how a customized security configuration can be exported and imported across environments by using the Data management framework.
 author: tonyafehr
 ms.date: 07/17/2020
 ms.topic: article
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.12
 
 [!include[banner](../includes/banner.md)]
 
-The topic explains how a customized security configuration can be exported and imported across environments by using the [Data management framework](../data-entities/data-entities-data-packages.md). This functionality can be used when, for example, a customized security configuration must be moved from a test environment to a production environment.
+The article explains how a customized security configuration can be exported and imported across environments by using the [Data management framework](../data-entities/data-entities-data-packages.md). This functionality can be used when, for example, a customized security configuration must be moved from a test environment to a production environment.
 
 The following entities hold the customized, role-based security (that is, privileges, duties, and roles) that has been added or modified by using security configuration:
 

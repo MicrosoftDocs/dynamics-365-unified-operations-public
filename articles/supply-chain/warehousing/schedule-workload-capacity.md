@@ -2,7 +2,7 @@
 # required metadata
 
 title: Schedule workload capacity
-description: This topic explains how to set up and schedule the workload capacity for workers in a warehouse or for an entire warehouse.
+description: This article explains how to set up and schedule the workload capacity for workers in a warehouse or for an entire warehouse.
 author: Mirzaab
 ms.date: 05/26/2017
 ms.topic: article

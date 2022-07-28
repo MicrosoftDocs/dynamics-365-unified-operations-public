@@ -2,7 +2,7 @@
 # required metadata
 
 title: VAT statement details for Lithuania
-description: This topic explains how to set up a VAT statement for legal entities in Lithuania.
+description: This article explains how to set up a VAT statement for legal entities in Lithuania.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up a VAT statement for legal entities in Lithuania.
+This article explains how to set up a VAT statement for legal entities in Lithuania.
 
-This topic includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Lithuania only. For more information about the setup of VAT statements, see [VAT reporting for Europe](emea-vat-reporting.md).
+This article includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Lithuania only. For more information about the setup of VAT statements, see [VAT reporting for Europe](emea-vat-reporting.md).
 
 ## Set up sales tax authorities
 To generate a VAT declaration in the required format for the appropriate tax authority, you must set up the report layout for sales tax authorities. On the **Sales tax authorities** page, in the **Report layout** field, select **Default**. Select the same sales tax authority for the sales tax settlement period that will be used for sales tax codes.

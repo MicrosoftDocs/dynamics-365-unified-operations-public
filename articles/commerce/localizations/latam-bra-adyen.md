@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Dynamics 365 Payment Connector for Adyen in Commerce POS for Brazil
-description: This topic provides an overview of Microsoft Dynamics 365 Payment Connector for Adyen functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
+description: This article provides an overview of Microsoft Dynamics 365 Payment Connector for Adyen functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
 author: akviklis
 ms.date: 03/04/2022
 ms.topic: article
@@ -14,7 +14,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: v-chgri
-#ms.search.scope: Retail
+#
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Brazil
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.22
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of Microsoft Dynamics 365 Payment Connector for Adyen functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
+This article provides an overview of Microsoft Dynamics 365 Payment Connector for Adyen functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
 
 The Dynamics 365 Payment Connector for Adyen is an out-of-box payment connector that supports various payment instruments globally.
 

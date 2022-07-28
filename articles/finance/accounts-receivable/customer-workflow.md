@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer workflow
-description: This topic provides information about the customer workflow. You change specific fields for a customer and then send those changes for approval by using the workflow before they are added to the customer.
+description: This article provides information about the customer workflow. You change specific fields for a customer and then send those changes for approval by using the workflow before they are added to the customer.
 author: abruer
 ms.date: 08/24/2018
 ms.topic: index-page
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form:  Customer
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 

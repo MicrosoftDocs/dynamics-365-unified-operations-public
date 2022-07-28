@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up fixed assets (Russia)
-description: This topic explains how to set up fixed assets for Russia.
+description: This article explains how to set up fixed assets for Russia.
 author: ShylaThompson
 ms.date: 02/20/2019
 ms.topic: article

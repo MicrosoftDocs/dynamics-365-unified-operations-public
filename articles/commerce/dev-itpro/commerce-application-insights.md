@@ -2,7 +2,7 @@
 # required metadata
 
 title: Log extension events to Application Insights
-description: This topic explains how to log events to Customer Application Insights from Commerce runtime (CRT) extensions.
+description: This article explains how to log events to Customer Application Insights from Commerce runtime (CRT) extensions.
 author: mugunthanm
 ms.date: 09/18/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.7
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to log events to [Customer Application Insights](/azure/azure-monitor/app/app-insights-overview) from Commerce runtime (CRT) and POS extensions.
+This article explains how to log events to [Customer Application Insights](/azure/azure-monitor/app/app-insights-overview) from Commerce runtime (CRT) and POS extensions.
 
 ## Log an event to Application Insights
 

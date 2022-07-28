@@ -1,6 +1,6 @@
 ---
 title: Set up the downloadable VHD for first use
-description: This topic describes how to set up the downloadable VHD for first use of the Application Object Server.
+description: This article describes how to set up the downloadable VHD for first use of the Application Object Server.
 author: jorisdg
 ms.date: 02/17/2022
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 > [!NOTE]
-> This topic applies to the virtual hard drive (VHD) that was released for versions 10.0.24 and later.
+> This article applies to the virtual hard drive (VHD) that was released for versions 10.0.24 and later.
 
 When you first sign in to the virtual machine, the **Application Object Server** will not be ready for use. A script needs to be run that will create self-signed certificates to be used on the virtual machine, and a customer-provided application registration ID for authentication. After successfully running the script, the environment will be ready for use.
 

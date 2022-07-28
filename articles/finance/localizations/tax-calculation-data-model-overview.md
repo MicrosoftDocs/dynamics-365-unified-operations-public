@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax calculation data model
-description: This topic provides information about the tax data model, and how the field values of each data model are determined by the context of tax calculation transactions.
+description: This article provides information about the tax data model, and how the field values of each data model are determined by the context of tax calculation transactions.
 author: kailiang
 ms.date: 10/15/2021
 ms.topic: overview
@@ -15,7 +15,7 @@ ms.search.form:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.search.region: Global
@@ -27,9 +27,9 @@ ms.dyn365.ops.version: 10.0.21
 ---
 # Tax calculation data model
 
-This topic provides information about how the field values in the tax data model are determined in tax calculation transactions.
+This article provides information about how the field values in the tax data model are determined in tax calculation transactions.
 
-The *tax data model* is made up of fields that are required for tax calculations. Microsoft provides the *tax calculation data model*, which includes the header fields and line fields of transaction documents in Finance and Operations apps. The fields that are defined in the tax calculation data model are the available columns of the applicability rules tables in the configuration of the tax calculation feature configuration.
+The *tax data model* is made up of fields that are required for tax calculations. Microsoft provides the *tax calculation data model*, which includes the header fields and line fields of transaction documents in finance and operations apps. The fields that are defined in the tax calculation data model are the available columns of the applicability rules tables in the configuration of the tax calculation feature configuration.
 
 > [!NOTE] 
 > Some nodes that are defined in the data model, such as **Record ID** and **Table ID**, are for technical purposes. They aren't available columns in the tax calculation feature configuration.
@@ -58,7 +58,7 @@ You can also view the tax calculation data model and the available columns in th
 
     [![Manage columns.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-The tax calculation data model is integrated with Finance and Operations apps. During each transaction that is related to tax calculation, the values of the fields that is defined in the applicability rules tables are collected and sent to the tax calculation service for calculation. In version 40.46, 57 predefined data models are available for the following transaction types: purchase orders, sales orders, transfer orders, purchase requisitions, requests for quotation, and sales quotations.
+The tax calculation data model is integrated with finance and operations apps. During each transaction that is related to tax calculation, the values of the fields that is defined in the applicability rules tables are collected and sent to the tax calculation service for calculation. In version 40.46, 57 predefined data models are available for the following transaction types: purchase orders, sales orders, transfer orders, purchase requisitions, requests for quotation, and sales quotations.
 
 ## Version updates and restrictions
 
@@ -103,7 +103,7 @@ Thirty-two data models can be included as fields on the header of a transaction.
 | Ship to province/state          | <ul><li>**Sales order:**<ol><li>Header &gt; Delivery address &gt; State</li></ol></li><li>**Purchase order:**<ol><li>Header &gt; Delivery address &gt; State</li></ol></li><li>**Transfer order - Ship:**<ol><li>Header &gt; To warehouse &gt; Primary address &gt; State</li><li>Header &gt; To site &gt; Primary address &gt; State</li></ol></li><li>**Transfer order - Receive:**<ol><li>Header &gt; To warehouse &gt; Primary address &gt; State</li><li>Header &gt; To site &gt; Primary address &gt; State</li></ol></li><li>**Request for quotation:**<ol><li>Header &gt; Delivery address &gt; State</li></ol></li><li>**Sales quotation:**<ol><li>Header &gt; Delivery address &gt; state</li></ol></li><li>**Free text invoice:**<ol><li>Header &gt; Customer account &gt; Default delivery address &gt; State</li><li>Header &gt; Customer account &gt; Primary address &gt; State</li></ol></li><li>**Journal (customer):**<ol><li>Customer account &gt; Default delivery address &gt; State</li><li>Customer account &gt; Primary address &gt; State</li></ol></li><li>**Journal (vendor):**<ol><li>Legal entity &gt; Default delivery address &gt; State</li><li>Legal entity &gt; Primary address &gt; State</li></ol></li></ul> |
 | Ship to zip code                 | <ul><li>**Sales order:**<ol><li>Header &gt; Delivery address &gt; ZIP/postal code</li></ol></li><li>**Purchase order:**<ol><li>Header &gt; Delivery address &gt; ZIP/postal code</li></ol></li><li>**Transfer order - Ship:**<ol><li>Header &gt; To warehouse &gt; Primary address &gt; ZIP/postal code</li><li>Header &gt; To site &gt; Primary address &gt; ZIP/postal code</li></ol></li><li>**Transfer order - Receive:**<ol><li>Header &gt; To warehouse &gt; Primary address &gt; ZIP/postal code</li><li>Header &gt; To site &gt; Primary address &gt; ZIP/postal code</li></ol></li><li>**Request for quotation:**<ol><li>Header &gt; Delivery address &gt; ZIP/postal code</li></ol></li><li>**Sales quotation:**<ol><li>Header &gt; Delivery address &gt; ZIP/postal code</li></ol></li><li>**Free text invoice:**<ol><li>Header &gt; Customer account &gt; Default delivery address &gt; ZIP/postal code</li><li>Header &gt; Customer account &gt; Primary address &gt; ZIP/postal code</li></ol></li><li>**Journal (customer):**<ol><li>Customer account &gt; Default delivery address &gt; ZIP/postal code</li><li>Customer account &gt; Primary address &gt; ZIP/postal code</li></ol></li><li>**Journal (vendor):**<ol><li>Legal entity &gt; Default delivery address &gt; ZIP/postal code</li><li>Legal entity &gt; Primary address &gt; ZIP/postal code</li></ol></li></ul> |
 | Site                             | <ul><li>**Sales order:** Site</li><li>**Purchase order:** Site</li><li>**Transfer order - Ship:** Site of the From warehouse</li><li>**Transfer order - Receive:** Site of the To warehouse</li><li>**Request for quotation:** Site</li><li>**Sales quotation:** Site</li></ul> |
-| Tax direction                    | <ul><li>**Sales order:** Output</li><li>**Purchase order:** Input</li><li>**Transfer order - Ship:** Output</li><li>**Transfer order - Receive:** Input</li><li>**Purchase requisition:** Input</li><li>**Request for quotation:** Input</li><li>**Sales quotation:** Output</li><li>**Free text invoice:** Output</li></ul> |
+| Tax direction                    | <ul><li>**Sales order:** Output</li><li>**Purchase order:** Input</li><li>**Transfer order - Ship:** Output</li><li>**Transfer order - Receive:** Input</li><li>**Purchase requisition:** Input</li><li>**Request for quotation:** Input</li><li>**Sales quotation:** Output</li><li>**Free text invoice:** Output</li><li>**Journal:** Output</li></ul> |
 | Vendor account                   | <ul><li>**Purchase order:** Vendor account</li><li>**Journal (vendor):** Vendor account</li></ul> |
 | Vendor invoice account           | <ul><li>**Purchase order:** Invoice account</li><li>**Journal (vendor):**<ol><li>Vendor master &gt; Invoice account</li><li>Vendor account</li></ol></li></ul> |
 | Warehouse                        | <ul><li>**Sales order:** Warehouse</li><li>**Purchase order:** Warehouse</li><li>**Transfer order - Ship:** From warehouse</li><li>**Transfer order - Receive:** To warehouse</li><li>**Request for quotation:** Warehouse</li><li>**Sales quotation:** Warehouse</li></ul> |
@@ -138,3 +138,4 @@ Twenty-six data models are included as fields on the lines of a transaction. As 
 | Unit                          | <ul><li>**Sales order:** Unit</li><li>**Purchase order:** Unit</li><li>**Transfer order - Ship:** Unit</li><li>**Transfer order - Receive:** Unit</li><li>**Purchase requisition:** Unit</li><li>**Request for quotation:** Unit</li><li>**Sales quotation:** Unit</li></ul> |
 | Variant number                | <ul><li>**Sales order:** Variant number</li><li>**Purchase order:** Variant number</li><li>**Sales quotation:** Variant number</li></ul> |
 | Warehouse                     | <ul><li>**Sales order:**<ol><li>Line &gt; Warehouse</li><li>Product &gt; Warehouse</li></ol></li><li>**Purchase order:**<ol><li>Line &gt; Warehouse</li><li>Product &gt; Warehouse</li></ol></li><li>**Transfer order - Ship:** From warehouse</li><li>**Transfer order - Receive:** To warehouse</li><li>**Purchase requisition:** Line &gt; Warehouse</li><li>**Request for quotation:** Line &gt; Warehouse</li><li>**Sales quotation:**<ol><li>Line &gt; Warehouse</li><li>Product &gt; Warehouse</li></ol></li></ul> |
+

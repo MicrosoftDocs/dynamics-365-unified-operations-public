@@ -2,8 +2,8 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Finance 10.0.10 (May 2020)
-description: This topic describes features that are either new or changed in Dynamics 365 Finance 10.0.10.
-author: roschlom
+description: This article describes features that are either new or changed in Dynamics 365 Finance 10.0.10.
+author: kfend
 ms.date: 04/08/2020
 ms.topic: article
 ms.prod: 
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2020-03-05 
 ms.dyn365.ops.version: 10.0.10
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Finance 10.0.10. This version has a build number of 10.0.420 and is available as follows:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Finance 10.0.10. This version has a build number of 10.0.420 and is available as follows:
 
 - **Preview release:** March 2020
 - **General availability (self-update):** April 2020
@@ -67,14 +67,14 @@ This feature will enable the ability to view and edit default accounting setup d
  
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
-Dynamics 365 Finance 10.0.10 includes platform updates. To learn more, see [Platform updates for version 10.0.10 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
+### Platform updates for finance and operations apps
+Dynamics 365 Finance 10.0.10 includes platform updates. To learn more, see [Platform updates for version 10.0.10 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
 
 ### Bug fixes 
 For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=424137&dbType=3&qc=bf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb).
 
 ### Regulatory updates
-For information about regulatory updates for Dynamics 365 Finance and Operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
+For information about regulatory updates for Dynamics 365 finance and operations apps, see [Regulatory updates](../localizations/regulatory-updates.md). Another way to learn about regulatory updates is to sign in to LCS and view the planned regulatory updates using the issue search tool. Issue search lets you search by country, type of feature, and release. 
 
 ### Dynamics 365: 2020 release wave 1 plan
 
@@ -84,14 +84,15 @@ Check out the [Dynamics 365: 2020 release wave 1 plan](/dynamics365-release-plan
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) topic describes features that have been removed or deprecated for Dynamics 365 for Finance and Operations.
+The [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) article describes features that have been removed or deprecated for Dynamics 365 Finance.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Finance](removed-deprecated-features-finance.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

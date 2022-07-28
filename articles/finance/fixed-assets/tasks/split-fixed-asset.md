@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Split a fixed asset
-description: This topic explains how to split a percentage of one asset book to a new asset book.
+description: This article explains how to split a percentage of one asset book to a new asset book.
 author: moaamer
 ms.date: 08/06/2019
 ms.topic: business-process 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: AssetTable, AssetBook, AssetSplit, AssetBookLookup, LedgerJournalTable, LedgerJournalTransAsset   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to split a percentage of one asset book to a new asset book. 
+This article explains how to split a percentage of one asset book to a new asset book. 
 
 ## Create a new fixed asset
 

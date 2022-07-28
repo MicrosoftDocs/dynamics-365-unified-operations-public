@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add new fields to a business document template in Microsoft Excel
-description: This topic provides information about how to add new fields to a business document template in Microsoft Excel by using Business document management feature.
+description: This article provides information about how to add new fields to a business document template in Microsoft Excel by using Business document management feature.
 author: NickSelin
 ms.date: 11/15/2019
 ms.topic: article
@@ -33,14 +33,14 @@ ms.dyn365.ops.version: 10.0.7
 
 You can add new fields to a template that is used to generate business documents in Microsoft Excel format. These fields can be added as placeholders that are used to fill generated documents with required information from the application. For every field that you add, you can also specify a binding to the data sources, to specify what application data will be entered in the field when the template is used to generate business documents.
 
-To learn more about this feature, complete the example in this topic. This example shows how to update a template to fill in the fields in free text invoice forms that are generated.
+To learn more about this feature, complete the example in this article. This example shows how to update a template to fill in the fields in free text invoice forms that are generated.
 
 ## Configure Business document management to edit templates
 
 Because Business document management (BDM) is built on top of the [Electronic reporting (ER) overview](general-electronic-reporting.md) framework, you must configure the required ER and BDM parameters before you can start to work with BDM.
 
 1.	Sign in to the instance of Microsoft Dynamics 365 Finance as the system administrator.
-2.	Complete the following steps of the example in the [Business document management overview](er-business-document-management.md) topic:
+2.	Complete the following steps of the example in the [Business document management overview](er-business-document-management.md) article:
 
     1.	Configure ER parameters.
     2.	Turn on BDM.

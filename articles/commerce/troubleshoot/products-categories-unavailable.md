@@ -2,7 +2,7 @@
 # required metadata
 
 title: Products and categories don't appear in Commerce site builder after a new site is mapped
-description: This topic provides troubleshooting guidance that can help when products and categories don't appear in Commerce site builder after a new site is mapped.
+description: This article provides troubleshooting guidance that can help when products and categories don't appear in Commerce site builder after a new site is mapped.
 author: Reza-Assadi
 ms.date: 03/11/2021
 ms.topic: Troubleshooting
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides troubleshooting guidance that can help when products and categories don't appear in Commerce site builder after a new site is mapped.
+This article provides troubleshooting guidance that can help when products and categories don't appear in Commerce site builder after a new site is mapped.
 
 ## Description
 

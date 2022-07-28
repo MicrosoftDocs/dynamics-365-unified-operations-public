@@ -2,7 +2,7 @@
 # required metadata
 
 title: Change module library static strings
-description: This topic describes how to change module library strings in Microsoft Dynamics 365 Commerce.
+description: This article describes how to change module library strings in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 03/16/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to change module library strings in Microsoft Dynamics 365 Commerce.
+This article describes how to change module library strings in Microsoft Dynamics 365 Commerce.
 
 In some cases, modules expose strings that are shown as configurations in a module that can be configured in Commerce site builder. However, other strings, such as the text that is shown for the sign-in button, might be hardcoded as module resource strings. 
 

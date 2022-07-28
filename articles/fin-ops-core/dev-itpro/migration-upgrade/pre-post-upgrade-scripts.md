@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot PreSync and PostSync upgrade scripts during upgrade to Dynamics 365 Finance + Operations
-description: This topic provides troubleshooting information for the PreSync and PostSync upgrade scripts that are run as part of the upgrade from Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises).
+description: This article provides troubleshooting information for the PreSync and PostSync upgrade scripts that are run as part of the upgrade from Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises).
 author: ttreen 
 ms.date: 04/26/2022
 ms.topic: article
@@ -19,7 +19,7 @@ ms.search.form: 2022-04-08
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides troubleshooting information for the PreSync and PostSync upgrade scripts that are run as part of the upgrade from Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises).
+This article provides troubleshooting information for the PreSync and PostSync upgrade scripts that are run as part of the upgrade from Microsoft Dynamics AX 2012 to Dynamics 365 Finance + Operations (on-premises).
 
 ## Scenario 1: You receive the following error: "Duplicate key was found for the object name 'dbo.INVENTDIM' and the index name 'I_XXXSHA1HASHIDX'."
 
@@ -124,7 +124,7 @@ The record already exists." }
 { ClassName: "ReleaseUpdateDB10\_CaseManagement", MethodName: "updateCaseCategoryTypeMajor", Company: "DAT", DataParition: "initial", ErrorCount: "1", ErrorMessage: " Cannot edit a record in Case category Security by Role (CaseCategoryRole). Category type: None.  
 The record already exists. Batch task failed: Cannot edit a record in Case category Security by Role (CaseCategoryRole). Category type: None.  
 The record already exists." }  
-_Stopped DBSync monitoring. Microsot.Dynamics.Ax.Xpp.ErrorException: Failed to create a session; confirm that the user has the proper privileges to log on to Microsoft Dynamics 365 for Finance and Operations._
+_Stopped DBSync monitoring. Microsot.Dynamics.Ax.Xpp.ErrorException: Failed to create a session; confirm that the user has the proper privileges to log on to Microsoft Dynamics 365 Finance._
 
 **Cause**
 
@@ -171,3 +171,4 @@ The SQL database has issued an error."
 1. Review the triggers on that table to check for custom triggers. Most standard triggers that are created in Dynamics 365 will be prefixed with, for example, **SysDbLog**, **SysEvenCud**, or **AIF**.
 1. To script the custom triggers that you think might be causing the issue, select and hold (or right-click) each trigger, and then select **Script Trigger as \> Create To \> New Query Editor Window**.
 1. After the script is completed, go to **Edit \> Find** to determine whether the field that is referenced in the error message exists in the script. If you find a match in the trigger, you must disable or drop the trigger.
+

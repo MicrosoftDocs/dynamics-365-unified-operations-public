@@ -2,7 +2,7 @@
 # required metadata
 
 title: Apply display settings for product dimensions
-description: This topic covers the display settings for product dimensions and describes how to apply them in Microsoft Dynamics 365 Commerce.
+description: This article covers the display settings for product dimensions and describes how to apply them in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 ms.date: 05/28/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 [!include [banner](includes/banner.md)]
 
 
-This topic covers the display settings for product dimensions and describes how to apply them in Microsoft Dynamics 365 Commerce.
+This article covers the display settings for product dimensions and describes how to apply them in Microsoft Dynamics 365 Commerce.
 
 Dynamics 365 Commerce supports size, style, and color dimensions to distinguish product variants. Dimensions are typically shown as text values, such as "Small," "Medium," and "Large" for sizes, and "Black" and "Brown" for colors. However, if a product supports many variations, it can be difficult to browse product variants, because multiple selections are required to view the image for each variant. To make it easier to browse product variants, the version 10.0.20 release of Commerce can use images and hexadecimal (hex) codes to show dimensions as swatches.
 
