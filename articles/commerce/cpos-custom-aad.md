@@ -72,7 +72,7 @@ To create and configure a custom CPOS app in Azure AD, follow these steps.
     - Select **Add optional claim**. Set **Token type** to **ID**, and then select the **sid** claim. Select **Add**.
     - Select **Add optional claim**. Set **Token type** to **Access**, and then select the **sid** claim. Select **Add**.
 
-1. In the **API permissions** section, select **Add a permission**. Select the **APIs my organization uses** tab, and then search for the Retail Server app you created in the [Set up custom Retail Server app in Azure AD](#Set-up-custom-Retail-Server-app-in-Azure-AD) section. Select **Add permissions**.
+1. In the **API permissions** section, select **Add a permission**. Select the **APIs my organization uses** tab, and then search for the Retail Server app you created in the [Set up custom Retail Server app in Azure AD](#set-up-custom-retail-server-app-in-azure-ad) section. Select **Add permissions**.
 1. In the **Overview** section, make a note of the value in the **Application (client) ID** field.
 
 ## Update CPOS configuration file
