@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Report Designer interface
 description: This article explains how to navigate through Report Designer and how to use the various options to meet your specific requirements.
-author: ShylaThompson
+author: aprilolson
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: FinancialReports
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 59041
-ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
+ms.reviewer: twheeloc
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 
+  - 59041
+ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
+ms.search.form: FinancialReports
 ---
 
 # Report Designer interface

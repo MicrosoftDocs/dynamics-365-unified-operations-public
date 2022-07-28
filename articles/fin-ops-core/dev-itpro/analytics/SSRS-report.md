@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: SQL Server Reporting Services (SSRS) reports that are available
 description: This article points you to a report that lists the SQL Server Reporting Services (SSRS) reports available.
 author: sericks007
@@ -8,22 +6,15 @@ ms.date: 02/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 203494
-ms.assetid: 99d70045-cde7-45ec-9817-bb6465723286
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-
+ms.custom: 
+  - 203494
+ms.assetid: 99d70045-cde7-45ec-9817-bb6465723286
 ---
 
 # SQL Server Reporting Services (SSRS) reports that are available

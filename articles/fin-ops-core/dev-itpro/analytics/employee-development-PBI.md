@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Employee development Power BI content
-description: This article describes the Employee development Power BI content. 
-author: jcart1106 
+description: This article describes the Employee development Power BI content.
+author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jcart
-ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.version: July 2017 update 
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
 ---
 
 # Employee development Power BI content
