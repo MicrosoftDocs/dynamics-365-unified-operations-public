@@ -9,7 +9,7 @@ ms.technology:
 audience: Developer, IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: saraschi
+ms.author: rcarlson
 ms.search.validFrom: 2017-06-26
 ms.dyn365.ops.version: Platform update 8
 ms.custom: 
