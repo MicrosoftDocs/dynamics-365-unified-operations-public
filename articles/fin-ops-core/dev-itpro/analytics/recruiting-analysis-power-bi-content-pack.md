@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Recruiting Power BI content
 description: This article describes the Recruiting Power BI content.
-author: jcart1106 
+author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: HcmRecruitmentWorkspace
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 263934
-ms.assetid: 38e6827b-0819-473c-bc47-821a1ec482b8
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 
+  - 263934
+ms.assetid: 38e6827b-0819-473c-bc47-821a1ec482b8
+ms.search.form: HcmRecruitmentWorkspace
 ---
 
 # Recruiting Power BI content

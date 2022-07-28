@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Default reporting experiences in IaaS environments
 description: This article provides information about paginated reporting in finance and operations apps.
 author: RichdiMSFT
@@ -8,23 +6,16 @@ ms.date: 05/13/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 27661
-ms.assetid: 
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: richdi
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 
+  - 27661
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Document Reporting Service in Dynamics 365 applications

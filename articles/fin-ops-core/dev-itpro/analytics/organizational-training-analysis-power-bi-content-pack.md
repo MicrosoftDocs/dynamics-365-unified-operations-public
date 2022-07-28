@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Organizational training Power BI content
 description: This article describes the finance and operations - Organizational training Power BI content.
 author: jcart1106
@@ -8,23 +6,15 @@ ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 263874
-ms.assetid: 45dbba14-aba6-4571-be0d-5d1aba3515d9
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 
+  - 263874
+ms.assetid: 45dbba14-aba6-4571-be0d-5d1aba3515d9
 ---
 
 # Organizational training Power BI content

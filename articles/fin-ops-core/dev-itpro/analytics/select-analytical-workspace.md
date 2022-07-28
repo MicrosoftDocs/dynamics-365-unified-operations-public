@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Select analytical workspaces from Power BI  (contains video)
 description: This article explains how to select a report that is hosted in Power BI and use it for an application workspace.
 author: RichdiMSFT
@@ -8,20 +6,11 @@ ms.date: 07/09/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry:
 ms.author: richdi
-ms.search.validFrom: 2019-07-08 
+ms.search.validFrom: 2019-07-08
 ms.dyn365.ops.version: Platform update 26
 ---
 

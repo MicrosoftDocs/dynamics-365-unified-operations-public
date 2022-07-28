@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Warehouse performance Power BI content
 description: This article describes what's included in the Warehouse performance Power BI content.
-author: Mirzaab 
+author: Mirzaab
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSWarehousePerformancePowerBI 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 272953
-ms.assetid: 4e4d4323-78cf-4ffa-8d5a-05e856c33db6
+ms.reviewer: kamaybac
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
-ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-
+ms.dyn365.ops.version: Version 1611
+ms.custom: 
+  - 272953
+ms.assetid: 4e4d4323-78cf-4ffa-8d5a-05e856c33db6
+ms.search.form: WHSWarehousePerformancePowerBI
 ---
 
 # Warehouse performance Power BI content
