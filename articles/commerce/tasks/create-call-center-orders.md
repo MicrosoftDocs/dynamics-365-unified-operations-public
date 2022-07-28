@@ -70,7 +70,7 @@ To step through the example call center procedure, follow these steps.
 1. For **Source code**, select the source code for the catalog. If there are no active source codes, you can skip this step.
 1. On the action pane, select **Complete** to capture the customer payment. This action opens the **Sales order summary** flyout menu that displays the total amount due. Selecting **Complete** also triggers the calculation for any charges such as shipping and handling and displays the charges on the order summary form.
 
-    ![Press Complete button](../media/Complete_button.png)
+    ![Select Complete](../media/Complete_button.png)
 
 1. On the **Sales order summary** flyout menu, under the **Payments** section, select **+Add** to capture the payments. Expand the **Payments** tab if it is collapsed. 
 
@@ -78,7 +78,7 @@ To step through the example call center procedure, follow these steps.
 
 1. Select the payment method. For this example procedure, select the cash payment method.  
 1. Close the the **Sales order summary** flyout menu.
-1. Enter the amount. For this procedure, enter an amount equal to the order balance that can be seen in the Sales order summary page to the left of the amount field. This action will allow you to complete the order as fully paid.  
+1. Enter the amount. For this example procedure, enter an amount equal to the order balance that can be seen in the Sales order summary page to the left of the amount field. This action will allow you to complete the order as fully paid.  
 1. Select **OK**.
 1. Select **Submit**.
     
