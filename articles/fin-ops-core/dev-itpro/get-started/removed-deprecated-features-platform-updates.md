@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: sericks007
-ms.date: 07/20/2022
+ms.date: 07/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,7 +38,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
-## Feature deprecation effective July 2022
+## Feature deprecation effective August 2022
 
 ### Tranport Layer Security (TLS) RSA cipher suites
 
