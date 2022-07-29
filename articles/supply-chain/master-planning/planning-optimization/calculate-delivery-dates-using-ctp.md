@@ -128,7 +128,11 @@ The **CTP for Planning Optimization status** field indicates whether confirmed d
 - To view the **CTP for Planning Optimization status** for a sales order line, open the sales order and select the sales line. Then expand the **Line details** FastTab and open the **Delivery** tab. The **Confirmed ship date** and **Confirmed receipt date** for the line are also shown here once they have been calculated.
 - To view the **CTP for Planning Optimization status** for an entire order, open the sales order and go to the **Header** view. Then expand the **Delivery** FastTab. The **Confirmed ship date** and **Confirmed receipt date** for the order are also shown here once they have been calculated.
 
-The sales orders that are *Ready* or *Not ready* are shown in the **All sales orders** list page. You can check the sales order that are *Ready* or *Not ready* from the sales order list page by filtering on this new status field.  <!-- KFM: Is this true? Where are these fields and controls? -->
+<!-- KFM: The following text may be untrue and needs to be reviewed with the PM for next revision:
+
+The sales orders that are *Ready* or *Not ready* are shown in the **All sales orders** list page. You can check the sales order that are *Ready* or *Not ready* from the sales order list page by filtering on this new status field.   
+
+-->
 
 > [!NOTE]
 >
@@ -142,7 +146,7 @@ You can change the **Delivery date control** option for any open order at any ti
 
 ### Change to use CTP at the order header level
 
-<!-- KFM: Explain how changing this setting on the header affects the individual lines. -->
+<!-- KFM: Would be nice to mention how changing this setting on the header affects the individual lines. -->
 
 Use the following procedure to change an order to use CTP at the order header level:
 
@@ -153,23 +157,12 @@ Use the following procedure to change an order to use CTP at the order header le
 1. Set **Delivery date control** to one of the following value, depending on which planning engine you are using:
     - *CTP* – Use the CTP calculation provided by the built-in master planning engine. If you are using Planning Optimization, then the *CTP* delivery date control method isn't allowed and, if selected, will result in an error when the calculation runs.
     - *CTP for Planning Optimization* – Use the CTP calculation provided by Planning Optimization. This setting has no effect if you are using the built-in master planning engine.
-1. The **Available ship and receipt dates** dialog opens showing the available ship and receipt dates. Make the following settings: <!-- KFM: It isn't clear how/when this dialog is needed. The original draft of this doc said it only opens when switching to CTP, but I found it opening all the time or at least arbitrarily.  -->
-    - At the top part of the dialog, you can see mostly read-only information that relates to order delivery. However, you can change the **Mode of delivery**, **Site**, and **Warehouse** if needed <!-- KFM: To what effect? How do these relate to the individual lines?  -->.
-    - At the bottom part of the dialog, select your preferred pair of ship and receipt dates from among those shown.
-1. Select one of the following buttons at the bottom of the dialog: <!-- KFM: Will this update all sales lines too? -->
-    - **Disable dlv. date control** – <!-- KFM: Description needed -->
-    - **Update confirmed ship date** – To update the **Confirmed ship date** and **Confirmed receipt date** for the sales order.
-    - **Update requested ship date** – <!-- KFM: Description needed -->
-    - **Cancel** – <!-- KFM: Description needed -->
-1. Select **Save** on the Action Pane. The **Update order lines** dialog opens. Make the following settings:
-    - **Update ship and receipt dates** – <!-- KFM: Description needed -->
-    - **Use current delivery dates and disable delivery date control** – <!-- KFM: Description needed -->
-    - **Recalculate delivery dates** – <!-- KFM: Description needed (this text is provided in the dialog, we should clarify it here: "If you recalculate delivery dates, all lines are recalculated except those that have the CTP type delivery date control.") -->
+<!-- KFM: Additional dialogs are shown here. Review these with the PM and expand this procedure at next revision. -->
 1. Select **OK** to apply your settings.
 
 ### Change to use CTP at the order line level
 
-If you created an order line using a different delivery date control method, you can change to CTP at any time. Any changes you make at the line level will not affect any of the other lines, but could result in moving the overall order delivery dates forward or backward, depending on how each updated line calculation changes. <!-- KFM: Please confirm this intro -->
+If you created an order line using a different delivery date control method, you can change to CTP at any time. Any changes you make at the line level will not affect any of the other lines, but could result in moving the overall order delivery dates forward or backward, depending on how each updated line calculation changes. <!-- KFM: Confirm this intro at next revision -->
 
 Use the following procedure to change an order to use CTP for built-in master planning at the line level:
 
