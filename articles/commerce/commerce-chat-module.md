@@ -75,7 +75,7 @@ Commerce Headquarters as an application tab for Omnichannel for Customer Service
 1. In **Customer Service admin center**,  navigate to **Agent experience \>  Workspaces**.
 1. Click **Manage** for  **Application tab templates**. 
 1. Create a new application tab of type **Third-party website** by following the documentation at [Manage application tab templates](/dynamics365/app-profile-manager/application-tab-templates?tabs=customerserviceadmincenter).
-1. Under **Parameters**  give **URL** as 'https://<YourOrganizationHeadquartersURL>/?mi=MCRCustomerService&cmp=<LegalEntityName>&embedded=true&customerId={AccountNumber}`.  Replace `<YourOrganizationHeadquartersURL>` and `<LegalEntityname>` with the appropriate values. Omnichannel customer service reads {AccountNumber} from the chat context, so leave {AccountNumber} as is.
+1. Under **Parameters**  give **URL** as `https://<YourOrganizationHeadquartersURL>/?mi=MCRCustomerService&cmp=<LegalEntityName>&embedded=true&customerId={AccountNumber}`.  Replace `<YourOrganizationHeadquartersURL>` and `<LegalEntityname>` with the appropriate values. Omnichannel customer service reads {AccountNumber} from the chat context, so leave {AccountNumber} as is.
 1. Give **data** as  empty.
 
 ## Steps to enable new application tab for customer agent in D365 Omnichannel for Customer Service.
