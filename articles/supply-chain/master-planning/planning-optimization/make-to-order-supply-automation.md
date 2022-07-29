@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.29
 
 # Make-to-order supply automation
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 <!-- KFM: Does any part of this feature rely on Planning Optimization? I.e., where should this go in the TOC? -->
 
