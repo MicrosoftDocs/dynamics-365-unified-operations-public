@@ -3,8 +3,8 @@
 
 title: Install the add-in for microservices in Lifecycle Services
 description: This article explains how to install the Electronic Invoicing add-in in Microsoft Dynamics Lifecycle Services (LCS).
-author: dkalyuzh
-ms.date: 02/11/2022
+author: gionoder
+ms.date: 07/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkalyuzh
+ms.author: gionoder
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
