@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: sericks007
-ms.date: 07/28/2022
+ms.date: 07/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,7 +47,7 @@ Detailed information about objects in finance and operations apps can be found i
 | **Reason for deprecation/removal** | We're removing the following list of cipher suites to comply with our current security protocols.<br><br>TLS_RSA_WITH_AES_256_GCM_SHA384<br>TLS_RSA_WITH_AES_128_GCM_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA256<br>TLS_RSA_WITH_AES_128_CBC_SHA256<br>TLS_RSA_WITH_AES_256_CBC_SHA<br>TLS_RSA_WITH_AES_256_CBC_SHA  |
 | **Replaced by another feature?**   | Beginning November 30, 2022, customers can only use our [standard cipher suites](/power-platform/admin/server-cipher-tls-requirements). This change impacts your clients and servers that communicate with our servers, for example, it may impact your third party integrations which are not adhering to our standard cipher suites.<br><br>This change impacts your clients and servers that communicate with our servers, for example, it may impact your third party integrations which are not adhering to our standard cipher suites.  |
 | **Product areas affected**         | Finance and operations apps |
-| **Deployment option**              | Does this effect cloud environments, on-premises environments, or both? |
+| **Deployment option**              | Cloud |
 | **Status**                         | Deprecated. Customers must upgrade their servers before November 30, 2022. For more information about configuring TLS Cipher Suite order, see [Manage Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls).  |
 
 
