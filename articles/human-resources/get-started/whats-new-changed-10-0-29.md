@@ -55,7 +55,7 @@ The following table lists the feature enhancements that are included in this rel
 | Feature name | More information |
 |--------------|------------------|
 |Task management| Additional entities have been created to support notification options via dataverse. HCMProcessTaskAssignment contains the assignment type, legal entity, assigned worker name, assigned worker personnel number, and assigned worker primary email address. All business process types are included in the single entity (Onboarding, Offboarding, and Transition). If the task has been assigned to a group, each member of the group will be a line in the entity. The demo data for the Task Management Calendar has been updated through 2030.|
-|Security configuration|The following self-service roles have been added to security configuration, which map to the stand-alone HR self-service roles: </p><ul><li>Self-service manager</li>Self-service employee</li>Self-service contractor 
+|Security configuration|The following self-service roles have been added to security configuration, which map to the stand-alone HR self-service roles: </p><ul><li>Self-service manager</li></li>Self-service employee</li></li>Self-service contractor 
 The self-service roles do NOT include time sheet entry or expense, as access to those areas requires Team Member licensing. The roles listed above should be used for the HR Self Service license. |
 |Life events | Multiple deliverables are built to enhance the life event experience within Benefits Management.| 
 
