@@ -46,7 +46,7 @@ article was initially published.
 | Feature name | Overview | Release status |
 |----|----|----|
 |Specify location owner| This feature allows system administrators to specify the owner of a location (address).|Default |
-|Benefits notification| This preview feature provides the ability to send email notifications and reminders to the employees in the new hire enrollment, open enrollment, and qualifying life event scenarios. It allows you to create and set multiple email templates, as needed for specific scenarios, and send the notifications via benefits workspace and the worker benefits form. You can also track the notifications/reminders history.| Preview|
+|Benefits notification| This preview feature provides the ability to send email notifications and reminders to the employees in the new hire enrollment, open enrollment, and qualifying life event scenarios. You can create and set multiple email templates, and send the notifications using the **Benefits** workspace and the **Worker benefits** page. You can also track the notifications and reminders history.| Preview|
 
 ## Feature enhancements included in this release
 
@@ -56,7 +56,7 @@ The following table lists the feature enhancements that are included in this rel
 |--------------|------------------|
 |Task management| Additional entities have been created to support notification options via dataverse. HCMProcessTaskAssignment contains the assignment type, legal entity, assigned worker name, assigned worker personnel number, and assigned worker primary email address. All business process types are included in the single entity (Onboarding, Offboarding, and Transition). If the task has been assigned to a group, each member of the group will be a line in the entity. The demo data for the Task Management Calendar has been updated through 2030.|
 |Security configuration|The following self-service roles have been added to security configuration, which map to the stand-alone HR self-service roles: </p><ul><li> Self-service manager </li><li> Self-service employee </li><li> Self-service contractor </p> The self-service roles do NOT include time sheet entry or expense, as access to those areas requires Team Member licensing. The roles listed above should be used for the HR Self Service license. |
-|Life events | Multiple deliverables are built to enhance the life event experience within Benefits Management.| 
+|Life events | Multiple updates to the life event experience within Benefits Management.| 
 
 ## Features on by default in this release
 
