@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Human Resources 10.0.29 (August 2022)
+title: What's new or changed in Dynamics 365 Human Resources 10.0.29 (Septemeber 2022)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.29 preview release.
 author: twheeloc
 ms.date: 08/01/2022
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.29
 
 ---
 
-# What's new or changed in Dynamics 365 Human Resources 10.0.29 (August 2022)
+# What's new or changed in Dynamics 365 Human Resources 10.0.29 (September 2022)
 
 [!include [banner](../../includes/preview-banner.md)]
 
