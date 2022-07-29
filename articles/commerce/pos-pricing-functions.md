@@ -64,7 +64,7 @@ Inside this operation, POS users can search discounts by discount name or discou
 
 ## View available discounts
 
-The **View available discounts** operation allows POS users to view all discounts that are applicable to a selected line in the transaction, or to the whole transaction. The applicable discounts to a selected line include the ones that are already applied, as well as ones not yet but could potentially be applied, for example, mix & match discounts that require additional items. If the applicable discount is linked to a coupon with **Apply without coupon code** parameter turned off, the POS user can also use the **Apply coupon** function inside this operation to directly redeem the coupon without having to enter or scan any coupon code or coupon bar code.
+The **View available discounts** operation allows POS users to view all discounts that are applicable to a selected line in the transaction, or to the whole transaction. The applicable discounts to a selected line include the ones that are already applied, as well as ones not yet but could potentially be applied, for example, mix & match discounts that require additional items. If the applicable discount is linked to a coupon with **Apply without coupon code** parameter turned on, the POS user can also use the **Apply coupon** function inside this operation to directly redeem the coupon without having to enter or scan any coupon code or coupon bar code.
 
 ## Price override
 
