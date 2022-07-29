@@ -45,8 +45,29 @@ The following table lists features that became mandatory or on by default starti
 
 The table also lists features that were previously in public preview, but have changed to become generally available in 10.0.29, which means they are now recommended for use on production environments. These features are turned off by default unless otherwise noted, so you must use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable them if you want to use them.
 
-| Module | Feature name | New feature state |
+| Feature | Title | New feature state |
 | --- | --- | --- |
+|BrazilRetailLocalizationFeature_BR	|(Brazil) Commerce functionality that is specific to Brazil|	On by default |
+| RetailAdvancedGTETaxAdjustmentFeature |	(India) Apply GST calculated for retail transactions in Retail POS to retail statements	|On by default |
+|RetailChronologicalInvoicePostingFeature_IT|	(Italy) Enable retail invoices posted without chronological order	| On by default |
+|RetailDiscountWithoutTaxAdjustingFeature_MX	|(Mexico) Discount adjusting in Retail CFDI Global  |	On by default |
+|RetailFiscalIntegrationConfigurationEnhancementFeature	 Fiscal integration technical profile overrides	|On by default |
+|RetailFiscalIntegrationConnectorLocationFeature	|Direct fiscal integration from POS registers	|On by default |
+|RetailFiscalIntegrationLocalStorageBackupEnableFeature	|Fiscal integration local storage backup	|On by default |
+|RetailFiscalIntegrationPostponeFiscalRegistrationFeature	| Postponed registration of documents	|On by default |
+|RetailFiscalIntegrationRegistrationProcessTerminalExceptionFeature	| Fiscal Registration State of POS Registers	| On by default |
+|RetailGSTInvoiceAddressTaxCalculationFeature_IN	|(India) Calculate GST based on invoice address for e-commerce orders	  |On by default |
+|RetailInvoicesDefaultSalesDocumentStatusFeature_PL	|(Poland) Default sales document status for retail invoices	| On by default |
+|RetailRecalculateRoundingOfTaxBaseAmountsFeature_MX	|(Mexico) Rounding recalculation for tax base amounts in Retail CFDI Global.	|On by default |
+|RetailSupplementaryInvoiceFeature	|Enable supplementary invoices for cash and carry transactions completed in retail stores	|On by default |
+|ConsumerEFDSyncProcessFeature_BR	|(Brazil) NFC-e synchronous processing|	On by default |
+|RetailFiscalIntegrationInternalAndExternalServicesEnableFeature|	Support for internal and external connectors in the fiscal integration framework|	Mandatory |
+|RetailTaxRegistrationIdEnableFeature_BR |	(Brazil) Search customers in Retail POS by tax registration numbers	|Mandatory |
+|RetailTaxRegistrationIdEnableFeature_IN |	(India) Search customers in Retail POS by tax registration numbers|	Mandatory |
+|RetailTaxRegistrationIdEnableFeature_IT|	(Italy) Customer information management in Retail POS	|  Mandatory |
+|RetailTaxRegistrationIdEnableFeature_PL	|(Poland) Customer information management in Retail POS	|  Mandatory |
+|RetailUpdateReturnOriginalTransactionIdGlobalEnableFeature_IN	|(Retail GST for India) Update credit notes with references to original invoices	| Mandatory |
+|RetailUserDefinedCertificateProfileFeature	| User-defined certificate profiles for retail stores	|Mandatory  |
 
 
 
