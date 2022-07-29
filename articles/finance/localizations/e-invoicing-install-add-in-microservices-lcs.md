@@ -3,8 +3,8 @@
 
 title: Install the add-in for microservices in Lifecycle Services
 description: This article explains how to install the Electronic Invoicing add-in in Microsoft Dynamics Lifecycle Services (LCS).
-author: dkalyuzh
-ms.date: 02/11/2022
+author: gionoder
+ms.date: 07/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: dkalyuzh
+ms.author: gionoder
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -40,7 +40,7 @@ To register an environment, follow these steps.
 2. In the project, on the **Environments** dashboard, select your deployed environment. The environment that you select must be running.
 3. On the **Power Platform Integration** tab, in the **Environment add-ins** section, select **Install a new add-in**.
 4. Select **Electronic Invoicing**.
-5. In the **AAD application ID** field, enter **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed value. Make sure that you enter only a globally unique identifier (GUID). Don't include any other symbols, such as spaces, commas, periods, or quotation marks.
+5. In the **AAD application ID** field, enter **091c98b0-a1c9-4b02-b62c-7753395ccabe**. This value is a fixed value. Make sure that you enter only a globally unique identifier (GUID). Don't include any other symbols, such as spaces, commas, periods, or quotation marks.
 6. In the **AAD tenant ID** field, enter the tenant ID of your Azure subscription account. The Azure Active Directory (Azure AD) tenant that you specify should be the same tenant that is used for Regulatory Configuration Service (RCS).
 7. Review the terms and conditions, and then select the checkbox.
 8. Select **Install**. After a few minutes, the status should change from **Installing** to **Installed**. You might have to refresh the page to see this change.
