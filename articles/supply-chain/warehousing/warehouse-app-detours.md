@@ -29,19 +29,9 @@ A detour is a separate menu item that can be opened from a step in a main task. 
 Before you can configure detours for steps in mobile device menu items, you must complete the following procedure to enable the required features and generate the required field names in the Warehouse Management mobile app.
 
 1. Go to **System administration \> Workspaces \> Feature management**.
-1. In the [**Feature management** workspace](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), enable the feature that is listed in the following way:
+1. Make sure the *Warehouse app step instructions* feature is turned on for your system. As of Supply Chain Management version 10.0.29, this feature is turned on by default. For more information about the *Warehouse app step instructions* feature, see [Customize step titles and instructions for the Warehouse Management mobile app](mobile-app-titles-instructions.md). This feature is a prerequisite for the *Warehouse management app detours* feature.
 
-    - **Module:** *Warehouse management*
-    - **Feature name:** *Warehouse app step instructions*
-
-    For more information about the *Warehouse app step instructions* feature, see [Customize step titles and instructions for the Warehouse Management mobile app](mobile-app-titles-instructions.md). This feature is a prerequisite for the *Warehouse management app detours* feature.
-
-1. Enable the feature that is listed in the following way:
-
-    - **Module:** *Warehouse management*
-    - **Feature name:** *Warehouse management app detours*
-
-    This feature is the feature that is described in this article.
+1. Turn on the *Warehouse management app detours* feature. This is the feature that is described in this article.
 
 1. Update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 1. Repeat the previous step for each legal entity (company) where you use the Warehouse Management mobile app.
