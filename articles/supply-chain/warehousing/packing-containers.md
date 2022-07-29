@@ -84,7 +84,7 @@ Each *location profile* establishes information and rules that apply to the asso
 Follow these steps to set up a location profile for a packing location.
 
 1. Go to **Warehouse management \> Setup \> Warehouse \> Location profiles**.
-1. On the Action Pane, select **New** to add a location profile.
+1. Either select an existing profile from the list pane or select **New** on the Action Pane to create a new one.
 1. On the header of the new or selected profile, set the following fields:
 
     - **Location profile ID** – Enter a unique ID for the profile.
@@ -122,10 +122,10 @@ This section describes how to configure settings that enable the packing process
 
 Each *container packing policy* defines how a container should be processed. Each time that you create a new container, you will also select a container packing policy to apply to it.
 
-Follow these steps to create a container packing policy.
+Follow these steps to set up a container packing policy.
 
 1. Go to **Warehouse management \> Setup \> Containers \> Container packing policies**.
-1. On the Action Pane, select **New** to add a container packing policy.
+1. Either select an existing policy from the list pane or select **New** on the Action Pane to create a new one.
 1. On the header of the new or selected policy, set the following fields:
 
     - **Container packing policy** – Enter a unique name for the policy.
@@ -218,10 +218,10 @@ Follow these steps to create a container type.
 
 *Packing profiles* are required for the packing process. They can be selected or set by default when you start a packing operation on the **Pack** page.
 
-Follow these steps to create a packing profile.
+Follow these steps to set up a packing profile.
 
 1. Go to **Warehouse management \> Setup \> Packing \> Packing profiles**.
-1. On the Action Pane, select **New** to add a packing profile.
+1. Either select an existing profile from the list pane or select **New** on the Action Pane to create a new one.
 1. On the header of the new or selected profile, set the following fields:
 
     - **Packing profile ID** – Enter a short ID for the profile.
