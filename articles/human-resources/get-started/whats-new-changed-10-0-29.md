@@ -54,6 +54,7 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature name | More information |
 |--------------|------------------|
+
 |Task management| Additional entities have been created to support notification options via dataverse.  HCMProcessTaskAssignment contains the assignment type, legal entity, assigned worker name, assigned worker personnel number, and assigned worker primary email address. All business process types are included in the single entity (Onboarding, Offboarding, and Transition).  If the task has been assigned to a group, each member of the group will be a line in the entity. The demo data for the Task Management Calendar has been updated through 2030. |
 |Security configuration|The following self-service roles have been added to security configuration, which map to the stand-alone HR self-service roles. 
 Self-service manager
@@ -69,7 +70,7 @@ The following table lists the features that are turned on by default in 10.0.29.
 | Feature name | Feature added | Feature state | Module |
 | :---- | :---- | :---- | :---- |
 |Task management|	3/31/2022|	On by default|	Human Resources|
-|Future-dated worker transfer with cross-company compensation|	08/31/2021|	On by default|	Human Resources|
+|Future-dated worker transfer with cross-company compensation|	08/31/2019|	On by default|	Human Resources|
 |Filter active positions|	01/06/2020|	On by default|	Human Resources|
 |Managers can view performance-related information for extended reports	|4/29/2021|	On by default|	Human Resources|
 |Human resources user experience enhancements	|03/31/2022|	On by default|	Human Resources|
