@@ -33,7 +33,7 @@ The following capabilities are available as part of this feature:
 
 ## Prerequisites within Omnichannel for Customer Service 
 
-As a pre-requisite, you need to [configure chat](../customer-service/set-up-chat-widget,md) in Omnichannel for Customer Service Administration module and obtain some of the parameters to configure the chat experience. 
+As a pre-requisite, you need to [configure chat](/dynamics365/customer-service/set-up-chat-widget) in Omnichannel for Customer Service Administration module and obtain some of the parameters to configure the chat experience. 
 
 Once chat has been configured within Omnichannel for Customer Service administration, you can obtain a script similar to below. Copy it to notepad as values from this are needed for configuration of Commerce Chat module. 
 
@@ -45,13 +45,13 @@ Starting from Dynamics 365 Commerce 10.0.29 release, a new module called **Comme
 
 To configure a site to show chat module, follow these steps.
 
-	1. In Site Builder, go to Home > Sites.
-	2. Select the name of your site.
-	3. Go to Fragments > Create a new fragment and module **Commerce chat with omnichannel for customer service**.
-	4. Fill the  mandatory properties using the information from prerequisites step above. 
-	5. **Publish** newly created fragment.
-	6. Open header fragment for your site. 
-	7. Edit header fragment and add the newly created fragment within the header fragment.
+1. In Site Builder, go to Home > Sites.
+1. Select the name of your site.
+1. Go to **Fragments \> Create a new fragment** and module **Commerce chat with omnichannel for customer service**.
+1. Fill the  mandatory properties using the information from prerequisites step above. 
+1. **Publish** newly created fragment.
+1. Open header fragment for your site. 
+1. Edit header fragment and add the newly created fragment within the header fragment.
 
 ## Chat module mandatory fields
 
@@ -62,8 +62,8 @@ To configure a site to show chat module, follow these steps.
 | Data organization id      | from the chat-widget script source locate **data-org-id** and use its value for this property|
 | Data organization url     | from the chat-widget script source locate **data-org-url** and use it's value for this property|
 
-![Dynamics 365 Commerce Site Builder - Commerce Chat module](media/Commerce-chat-creating-new-fragment.png)
-![Dynamics 365 Commerce Site Builder - Commerce Chat module](media/Commerce-chat-adding-fragment-to-header-fragment.png)
+![Creating a Commerce Chat module fragment in Commerce site builder](media/Commerce-chat-creating-new-fragment.png)
+![Adding a fragment to a header fragment in Commerce Site Builder](media/Commerce-chat-adding-fragment-to-header-fragment.png)
 
 ## Commerce Headquarters as an application tab for Omnichannel for Customer Service
 
@@ -74,8 +74,8 @@ Commerce Headquarters as an application tab for Omnichannel for Customer Service
 1. Go to Power Apps Make Portal and select **Apps** from the left-hand navigation bar.
 1. In **Customer Service admin center**,  navigate to **Agent experience \>  Workspaces**.
 1. Click **Manage** for  **Application tab templates**. 
-1. Create a new application tab of type **Third-party website** by following the documentation at [Manage application tab templates](../app-profile-manager/application-tab-templates.md?tabs=customerserviceadmincenter).
-1. Under **Parameters**  give **URL** as 'https://<YourOrganizationHeadquartersURL>/?mi=MCRCustomerService&cmp=<LegalEntityName>&embedded=true&customerId={AccountNumber}`.  Replace \<YourOrganizationHeadquartersURL\> and \<LegalEntityname\> with the appropriate values.  Omnichannel customer service reads {AccountNumber} from the chat context, so leave {AccountNumber} as is.
+1. Create a new application tab of type **Third-party website** by following the documentation at [Manage application tab templates](/dynamics365/app-profile-manager/application-tab-templates?tabs=customerserviceadmincenter).
+1. Under **Parameters**  give **URL** as 'https://<YourOrganizationHeadquartersURL>/?mi=MCRCustomerService&cmp=<LegalEntityName>&embedded=true&customerId={AccountNumber}`.  Replace `<YourOrganizationHeadquartersURL>` and `<LegalEntityname>` with the appropriate values. Omnichannel customer service reads {AccountNumber} from the chat context, so leave {AccountNumber} as is.
 1. Give **data** as  empty.
 
 ## Steps to enable new application tab for customer agent in D365 Omnichannel for Customer Service.
