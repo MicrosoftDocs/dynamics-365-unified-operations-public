@@ -51,5 +51,6 @@ You can schedule future life events in Dynamics 365 Human Resources.
 
 4. Select **Save**. 
 
+You can delete futur life events. If a processed future life event is deleted, the future record is also deleted. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
