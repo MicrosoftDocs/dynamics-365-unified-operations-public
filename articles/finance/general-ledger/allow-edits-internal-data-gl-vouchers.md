@@ -53,7 +53,7 @@ The editing process is allowed only from the Voucher transactions page.
 
     [![Voucher transactions page.](./media/voucher-transactions-page.png)](./media/voucher-transactions-page.png)
     
-On the Edit internal voucher data page, the following data is shown for each line that you selected:
+On the **Edit internal voucher data** page, the following data is shown for each line that you selected:
   
   - Ledger account
   - Account name
@@ -64,20 +64,20 @@ On the Edit internal voucher data page, the following data is shown for each lin
     [![Journal voucher.](./media/edit-internal-voucher-data.png)](./media/edit-internal-voucher-data.png)
     
 > [!NOTE]
-> Only the New description field can be edited. By default, the value matches the value of the Current description field, so that you can quickly fix minor mistakes in the description.
+> Only the **New description** field can be edited. By default, the value matches the value of the **Current description** field, so that you can quickly fix minor mistakes in the description.
 
-4. Modify the New description field on each row, or delete the description from each row.
+4. Modify the **New description** field on each row, or delete the description from each row.
 
-Alternatively, if multiple rows must be updated with the same value, follow these steps:
+   Alternatively, if multiple rows must be updated with the same value, follow these steps:
 
-  a. Select the rows to edit, and then select Bulk update selected records.
-  b. In the Field to edit field, select the field to edit. Currently, the lookup includes only the New description field.
-  c. In the New value field, enter a new description.
-  d. Select Update. All the selected records are updated with the new value.
-  
-   [![Bulk update selected records dialog box.](./media/bulk-update-selected-records.png)](./media/bulk-update-selected-records.png)
+      1. Select the rows to edit, and then select **Bulk update selected records**.
+      2. In the **Field to edit** field, select the field to edit. Currently, the lookup includes only the **New description** field.
+      3. In the **New value** field, enter a new description.
+      4. Select **Update**. All the selected records are updated with the new value.
+
+      [![Bulk update selected records dialog box.](./media/bulk-update-selected-records.png)](./media/bulk-update-selected-records.png)
     
-5. In the Reason for edit field, enter a note to explain why the edit was made. This note is shown on the Audit trail of voucher edits page.
+5. In the **Reason for edit** field, enter a note to explain why the edit was made. This note is shown on the **Audit trail of voucher edits** page.
 
    Multiple edits can be made to the same voucher, and each edit will be tracked.
 
@@ -99,8 +99,7 @@ The **Audit trail of edits** page shows the following information:
 - **Reason for edit** – The reason that the user entered for the edit.
 - **Created by** – The user who made the edit.
 
-To view the details of each audit trail, drill down on the **Created date and time** value. The View edited voucher properties page shows the same information as the original edit page, including the previous description and the updated description.
-
+To view the details of each audit trail, drill down on the **Created date and time** value. The **View edited voucher properties** page shows the same information as the original edit page, including the previous description and the updated description.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
