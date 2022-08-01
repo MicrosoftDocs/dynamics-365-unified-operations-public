@@ -4,7 +4,7 @@
 title: Migrate upgraded AX 2012 R3 sales cubes to the entity store
 description: In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in a finance and operations application. 
 author: MilindaV2
-ms.date: 06/20/2017
+ms.date: 08/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -62,7 +62,7 @@ As part of the code upgrade process, analysis services projects from the Applica
 4.  An aggregate measurement with the name **SalesCubeCopy** will be added to the project.
 5.  Rename this measurement. Select **SalesCubeCopy** in Solution Explorer. Right-click and select **Rename**. Enter **SalesCubeV2** as the new name.
 6.  Double-click **SalesCubeV2** to launch the Aggregate measurement designer. Notice the structure of the aggregate measurement that was migrated from Dynamics AX 2012.
-7.  The Sales cube in Dynamics AX 2012 encompassed a broad subject area related to Sales. In this case, let’s create a smaller, more focused Power BI model using the metadata that was upgraded. Expand the **Sales Order Lines** measure group and review the list of measures and dimension references.
+7.  The sales cube in Dynamics AX 2012 encompassed a broad subject area related to Sales. In this case, let’s create a smaller, more focused Power BI model using the metadata that was upgraded. Expand the **Sales Order Lines** measure group and review the list of measures and dimension references.
 
     > [!NOTE]
     > Leveraging the modeling capabilities you can quickly make a few enhancements to this model. Suggestions for improvements:
@@ -83,7 +83,7 @@ As part of the code upgrade process, analysis services projects from the Applica
 As an administrator you can configure the refresh of the aggregate measurement using the client.
 
 1.  Launch the Dynamics AX client and navigate to **System Administration** &gt; **Setup** &gt; **Entity Store**. The **Entity Store** form shows a list of aggregate measurements that are available for deployment to the entity store.
-2.  Notice that **Sales Cube** (which was upgraded from Dynamics AX 2012) is not available for deployment to the entity store. **SalesCubeV2**, which you created in the previous step, can be deployed to the entity store.
+2.  Notice that **sales cube** (which was upgraded from Dynamics AX 2012) is not available for deployment to the entity store. **SalesCubeV2**, which you created in the previous step, can be deployed to the entity store.
 3.  Select **SalesCubeV2** from the list, and click the **Refresh** button. The **Refresh** dialog box will display. Expand the **Run in the background** tab.
 4.  Provide a descriptive name in the **Task description** field. Optionally, you can select the **Recurrence** tab and create a recurring schedule instead of a one-time refresh. Click **OK**.
 5.  The system will create a batch job for refresh of the aggregate measurement in the entity store.
