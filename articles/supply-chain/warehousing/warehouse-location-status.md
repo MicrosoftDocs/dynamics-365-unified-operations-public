@@ -47,7 +47,7 @@ The following four fields on the **Locations** page track information about the 
 
 ## Turn on the Warehouse location status feature
 
-Before you can use this feature, it must be turned on in your system. As of Supply Chain Management version 10.0.29, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Warehouse location status* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+Before you can use this feature, it must be turned on in your system. As of Supply Chain Management version 10.0.29, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Warehouse location status* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up warehouse location status
 
