@@ -47,10 +47,7 @@ The following four fields on the **Locations** page track information about the 
 
 ## Turn on the Warehouse location status feature
 
-Before you can use the *Warehouse location status* feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Warehouse location status*
+Before you can use this feature, it must be turned on in your system. As of Supply Chain Management version 10.0.29, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Warehouse location status* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up warehouse location status
 
@@ -60,7 +57,7 @@ Before you start to work through the scenario, you must activate sample data and
 
 #### Use the USMF legal entity
 
-To work through the example scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
+To work through the example scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
 
 #### Set up location profiles
 

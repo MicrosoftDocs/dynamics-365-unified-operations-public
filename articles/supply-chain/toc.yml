@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.29 (October 2022)
+          href: get-started/whats-new-scm-10-0-29.md
         - name: Supply Chain Management 10.0.28 (August 2022)
           href: get-started/whats-new-scm-10-0-28.md
         - name: Supply Chain Management 10.0.27 (July 2022)
@@ -2945,6 +2947,8 @@
         href: sales-marketing/trade-allowance.md
       - name: Create a new trade agreement
         href: sales-marketing/tasks/create-new-trade-agreement.md
+      - name: Recalculate line net amounts on import
+        href: sales-marketing/calc-line-net-amounts-import.md
       - name: Schedule sales history data cleanup
         href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
     - name: Service management
@@ -3387,8 +3391,10 @@
             href: warehousing/piece-picking-confirmation.md
           - name: Packing materials and fees
             href: warehousing/pack-materials-packing-material-fees.md
-          - name: Set up manual packing (February & May 2016 only)
-            href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+          - name: Pack containers for shipment
+            href: warehousing/packing-containers.md
+          - name: Packing work for packing outbound containers and processing shipments
+            href: warehousing/packing-work.md
           - name: Set up short picking item reallocation
             href: warehousing/tasks/set-up-short-picking-item-reallocation.md
           - name: Cancel warehouse work for exception handling
@@ -3545,6 +3551,8 @@
             href: warehousing/warehouse-app-promoted-fields.md
           - name: Configure detours for steps in mobile device menu items
             href: warehousing/warehouse-app-detours.md
+          - name: Query data using Warehouse Management mobile app detours
+            href: warehousing/warehouse-app-data-inquiry.md
           - name: License plate receiving via the Warehouse Management mobile app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
           - name: Set up a mobile device menu item for completing work in a purchase order
