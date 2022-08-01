@@ -265,4 +265,4 @@ Follow these steps to test your new mobile app setup.
 > [!TIP]
 > Instead of running the receiving flow by doing a lookup from the **Purchase receive** menu item, you can start from an inquiry flow (**Main \> Inquire \> Look up POs by vendor**) and invoke a detour to run the desired flow by selecting one of the cards in the list. To use this approach, you can define a detour on the **Mobile device steps** page for the step that has a **Step ID** value of *GenericDataInquiryList*. Because this flow is a detour flow, you can't invoke more detours from it. Therefore, when you get to the item number entry screen, for example, the lookup won't be available on it, because the system currently supports only one level of detours.
 
-!INCLUDE[footer-include](../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
