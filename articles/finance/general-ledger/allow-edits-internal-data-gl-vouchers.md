@@ -75,7 +75,7 @@ Alternatively, if multiple rows must be updated with the same value, follow thes
   c. In the New value field, enter a new description.
   d. Select Update. All the selected records are updated with the new value.
   
-    [![Bulk update selected records dialog box.](./media/bulk-update-selected-records.png)](./media/bulk-update-selected-records.png)
+   [![Bulk update selected records dialog box.](./media/bulk-update-selected-records.png)](./media/bulk-update-selected-records.png)
     
 5. In the Reason for edit field, enter a note to explain why the edit was made. This note is shown on the Audit trail of voucher edits page.
 
