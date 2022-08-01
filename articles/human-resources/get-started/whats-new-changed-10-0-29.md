@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.29
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.29. This version has a build number of 10.0.xxxx and is 
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.29. This version has a build number of 10.0.1326 and is 
 available on the following schedule:
 
 - **Preview of release:** August 2022
@@ -72,6 +72,15 @@ The following table lists the features that are turned on by default in 10.0.29.
 |Configure multiple compensation levels per job|	03/31/2022|	Mandatory	|Human Resources|
 |Print performance reviews|	03/31/2022|	On by default|	Human Resources|
 
+## Additional resources
+
+### Platform updates for finance and operations apps
+
+Dynamics 365 Finance 10.0.29 includes platform updates. To learn more, see [Platform updates for version 10.0.29 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-29.md).
+
+### Bug fixes
+
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=xxxxx).
 
 
 
