@@ -15,9 +15,7 @@ ms.dyn365.ops.version: 10.0.29
 
 # Make-to-order supply automation
 
-[!include [banner](../../includes/banner.md)]
-
-<!-- KFM: Does any part of this feature rely on Planning Optimization? I.e., where should this go in the TOC? -->
+[!include [banner](../includes/banner.md)]
 
 The *Make-to-order supply automation* feature adds several enhancement to Dynamics 365 Supply Chain Management. It enables you to do the following:
 
@@ -30,9 +28,15 @@ The *Make-to-order supply automation* feature adds several enhancement to Dynami
 
 This article describes how to set up and use each of these enhancements.
 
+> [!NOTE]
+> All of the enhancements described in this article apply for systems using built-in master planning. The following two enhancements are also supported by the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management:
+>
+> - Delay tolerance on master plan
+> - Control the pegging sequence used during master planning
+
 ## Turn on the Make-to-order supply automation feature
 
-Before you can use the features described in this topic, you must turn them on for your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, where the feature is listed in the following way:
+Before you can use the features described in this topic, you must turn them on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, where the feature is listed in the following way:
 
 - **Module:** *Master Planning*
 - **Feature name:** *Make-to-order supply automation*
@@ -40,8 +44,6 @@ Before you can use the features described in this topic, you must turn them on f
 ## Choose the number of days to show on Capacity load page
 
 The **Capacity load** page lets you review a resources's available capacity. The *Make-to-order supply automation* feature enhances the **Capacity load** page by adding a **Number of days** field, which lets you limit the number of days shown in the **Overview** grid. If you return to the page later, it will remember the value you last entered here.
-
-<!-- KFM: Confirm the following two procedures. -->
 
 To open the **Capacity load** page so you can review the available capacity for an individual resource, follow these steps:
 
@@ -61,16 +63,16 @@ To open the **Capacity load** page so you can review the available capacity for 
 
 *Marking* is used to link supply and demand. It resembles *pegging*, which indicates how master planning expects to cover demand, but marking is more permanent than pegging. The *Make-to-order supply automation* feature adds the ability to limit inventory marking to a single level when firming planned orders. It adds the following new options to the **Update marking** drop-down list provided on the **Firming** dialog box when you are firming a planned order:
 
-- *Single level standard* – Uses single-level marking, which lets you keep component assignment flexible for production orders after firming. <!-- KFM: We should describe more clearly just what we mean by "single level". --> Single-level marking enables the system to optimize for last-minute demand changes. With standard single-level marking, requirement orders are marked against their fulfillment orders, but fulfillment orders are not marked if they have remaining quantity.
+- *Single level standard* – Uses single-level marking, which marks only the main item, not it's bill of material (BOM) components. This  lets you keep component assignment flexible for production orders after firming. Single-level marking enables the system to optimize for last-minute demand changes. With standard single-level marking, requirement orders are marked against their fulfillment orders, but fulfillment orders are not marked if they have remaining quantity.
 - *Single level extended* – Uses single-level marking, but with extended single-level marking, requirement orders are marked against their fulfillment orders and fulfillment orders are marked regardless of whether any quantity remains or not.
 
-These options are also available in the **Update marking** drop-down list on the **Standard update** tab of the **Master planning parameters** page, where you establish the default selection for the **Firming** dialog box. <!-- KFM: Confirm this. -->
+These options are also available in the **Update marking** drop-down list on the **Standard update** tab of the **Master planning parameters** page, where you establish the default selection for the **Firming** dialog box.
 
-For more information, see [Inventory marking with Planning Optimization](marking.md) <!-- KFM: Confirm the new texts added to the target of this link. -->
+For more information, see [Inventory marking with Planning Optimization](planning-optimization/marking.md).
 
 ## Set delay tolerance (negative days) at the master plan level
 
-The *Make-to-order supply automation* feature adds the ability to configure delay tolerance (negative days) at the mater plan level. The setting is also available at the item coverage and coverage group level. If negative days are assigned at more than one level, the system applies the following hierarchy to decide which setting to use:
+The *Make-to-order supply automation* feature adds the ability to configure delay tolerance (negative days) at the master plan level. The setting is also available at the item coverage and coverage group level. If negative days are assigned at more than one level, the system applies the following hierarchy to decide which setting to use:
 
 - If negative days are configured on the **Master plans** page, then that setting overrides all other negative days settings when that plan runs.
 - If negative days are configured on the **Item coverage** page, then that setting overrides the coverage group setting.
@@ -84,7 +86,7 @@ To set negative days for a master plan, follow these steps:
 1. Set **Negative days** to *Yes*.
 1. Enter the number of negative days to allow in the nearby field.
 
-For more information about how to use negative days, see [Delay tolerance (negative days)](delay-tolerance.md) <!-- KFM: Confirm the new texts added to the target of this link. -->
+For more information about how to use negative days, see [Delay tolerance (negative days)](planning-optimization/delay-tolerance.md).
 
 ## Control the pegging sequence used during master planning
 
@@ -149,7 +151,7 @@ Use the following procedure to view the default policy that applies to any order
 
 ## Set delivery mode and terms on individual purchase order lines
 
-All purchase orders include settings for **Delivery terms** and **Mode of delivery** on the order header. The *Make-to-order supply automation* feature adds the ability to also define **Delivery terms** and/or **Mode of delivery** overrides for any or all order lines. For lines where no override is defined, the value from the header is used. You can configure whether a change in one or both of these fields on the order header should also update all lines.
+All purchase orders include settings for **Delivery terms** and **Mode of delivery** on the order header. The *Make-to-order supply automation* feature adds these settings to each order line, which gives you the ability to also define **Delivery terms** and/or **Mode of delivery** overrides for any or all order lines as needed. For lines where no override is defined, the value from the header is used. You can configure whether a change in one or both of these fields on the order header should also update all lines.
 
 Use the following procedure to choose what should happen to the line settings if a user changes the **Delivery terms** and/or **Mode of delivery** on an order header:
 
@@ -179,7 +181,7 @@ Use the following procedure to set delivery information overrides for a purchase
 1. On the **Line details** FastTab, open the **Delivery** tab.
 1. Set value for the **Mode of delivery** and **Delivery terms** fields as needed. Clear one or both of these fields to use the matching settings in the header.
 
-For intercompany orders, values for the **Mode of delivery** and **Delivery terms** fields in each purchase order line will be synchronized between the purchase order and its related sales order. <!-- KFM: Please confirm this rephrasing. More info may be needed here, and maybe a link too -->
+For intercompany orders, values for the **Mode of delivery** and **Delivery terms** fields in each purchase order line will be synchronized between the purchase order and its related sales order.
 
 ## Synchronize external item IDs and descriptions for intercompany orders
 
@@ -210,6 +212,4 @@ Use the following procedure to specify external item IDs and text descriptions f
 1. In the **Order line** field group, edit the **Text** field to provide an external description of the item specified on the selected order line. This value will be synced with its related intercompany sales order line.
 1. In the **Reference** field group, edit the **External** field to provide an external item ID for the item specified on the selected order line. This value will be synced with its related intercompany sales order line.
 
-<!-- KFM: I suppose the intercompany order will eventually result in an external sales order. Are we also synchronizing these values there? Or are we only syncing between the intercompany purchase and sales orders? -->
-
-For more information, see [Create and invoice an intercompany sales order for an external customer](../../sales-marketing/intercompany-sales-order-for-external-customer.md). <!-- KFM: I think this topic describes the scenario we mean here, but I'm not sure. Please confirm. I could be that we should copy/adapt this section for that topic too. -->
+For more information, see [Create and invoice an intercompany sales order for an external customer](../sales-marketing/intercompany-sales-order-for-external-customer.md).
