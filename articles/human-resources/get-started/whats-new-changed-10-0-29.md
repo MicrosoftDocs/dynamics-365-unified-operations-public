@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Human Resources 10.0.29 (Septemeber 2022)
+title: What's new or changed in Dynamics 365 Human Resources 10.0.29 (September 2022)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.29 preview release.
 author: twheeloc
 ms.date: 08/01/2022
@@ -80,7 +80,7 @@ Dynamics 365 Finance 10.0.29 includes platform updates. To learn more, see [Plat
 
 ### Bug fixes
 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=xxxxx).
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=726559).
 
 
 
