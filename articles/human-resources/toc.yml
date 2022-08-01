@@ -10,6 +10,8 @@
         href: ../fin-ops-core/fin-ops/get-started/whats-new-changed.md?toc=/dynamics365/finance/toc.json
       - name: What's new or changed in Human Resources
         items:
+        - name: Human Resources 10.0.29 (merged infrastructure)
+          href: ./get-started/whats-new-changed-10-0-29.md
         - name: Human Resources 10.0.28 (merged infrastructure)
           href: ./get-started/whats-new-changed-10.0.28.md
         - name: Human Resources 10.0.27 (merged infrastructure)
