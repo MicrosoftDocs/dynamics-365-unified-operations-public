@@ -1567,9 +1567,9 @@
             - name: Get started with Electronic Invoicing for Brazil
               href: localizations/e-invoicing-bra-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for Egypt
-              href: localizations/e-invoicing-eg-get-started.md?toc=/dynamics365/context/finance
+              href: localizations/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for France
-              href: localizations/e-invoicing-fr-get-started.md?toc=/dynamics365/context/finance
+              href: localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
             - name: Get started with the Electronic Invoicing for Mexico
               href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic invoicing for Saudi Arabia
