@@ -203,9 +203,13 @@ The table also lists features that were previously in public preview but have ch
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.29 includes platform updates. To learn more, see [Platform updates for version 10.0.29 of Finance and Operations apps (June 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-29.md). <!--KFM: Confirm link -->
 
+<!-- KFM: Get new KB link
+
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.29, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=694438). <!-- KFM: Get new KB link -->
+For information about the bug fixes included in each of the updates that are part of version 10.0.29, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=694438). 
+
+ -->
 
 ### Dynamics 365 and industry clouds: 2022 release wave 1 plan
 
