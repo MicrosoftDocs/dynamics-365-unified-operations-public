@@ -22,20 +22,20 @@ The delay tolerance functionality enables Planning Optimization to consider the 
 
 To make the delay tolerance functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the following features:
 
-- *Negative days for Planning Optimization* – enables negative days settings for coverage groups and item coverage
-- *Make-to-order supply automation* – enables negative days settings for master plans (see also [Make-to-order supply automation](../make-to-order-supply-automation.md))
+- *Negative days for Planning Optimization* – This feature enables negative days settings for coverage groups and item coverage.
+- *Make-to-order supply automation* – This feature enables negative days settings for master plans. (For more information, see [Make-to-order supply automation](../make-to-order-supply-automation.md).)
 
 ## Delay tolerance in Planning Optimization
 
 Delay tolerance represents the number of days beyond the lead time that you're willing to wait before you order new replenishment when existing supply is already planned. Delay tolerance is defined by using calendar days, not business days.
 
-At the time of master planning, when the system calculates the delay tolerance, it considers the **Negative days** setting. You can set the **Negative days** value on either the **Coverage groups** page, **Item coverage** page, or **Master plans** page. If negative days are assigned at more than one level, the system applies the following hierarchy to decide which setting to use:
+At the time of master planning, when the system calculates the delay tolerance, it considers the **Negative days** setting. You can set the **Negative days** value on the **Coverage groups** page, the **Item coverage** page, or the **Master plans** page. If negative days are assigned at more than one level, the system applies the following hierarchy to decide which setting to use:
 
-- If negative days are enabled on the **Master plans** page, then that setting overrides all other negative days settings when that plan runs.
-- If negative days are configured on the **Item coverage** page, then that setting overrides the coverage group setting.
-- Negative days configured on the **Coverage groups** page only apply when negative days have not been configured for a relevant item or plan.
+- If negative days are enabled on the **Master plans** page, that setting overrides all other negative days settings when the plan runs.
+- If negative days are configured on the **Item coverage** page, that setting overrides the coverage group setting.
+- Negative days that are configured on the **Coverage groups** page apply only if negative days haven't been configured for a relevant item or plan.
 
-The system links the delay tolerance calculation to the *earliest replenishment date*, which equals today's date plus the lead time. The delay tolerance is calculated by using following formula, where *max()* finds the larger of two values:
+The system links the delay tolerance calculation to the *earliest replenishment date*, which equals today's date plus the lead time. The delay tolerance is calculated by using the following formula, where *max()* finds the larger of two values:
 
 *max(Earliest replenishment date, Demand due date)* – *Demand due date* + *Negative days*
 
