@@ -30,45 +30,41 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---------|------------------|----------------|--------------| 
-|B2B| [Enable support for sales agreement across channels](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-b2b-sales-agreement-contract-based-pricing) | This feature enables B2B seller organizations to use sales agreements in Commerce headquarters to define contract-based pricing for their buyers. When a B2B buyer shops on the e-commerce website, the contract-based pricing configured for the B2B buyer organization is automatically applied to the entire product discovery, purchase, and checkout experience.| Feature management<p>*Support for sales agreement across commerce channels* |  
-|Customer Service|[Enable Customer Service with Dynamics 365 Omnichannel for Customer Service](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/chat-dynamics-365-commerce-omnichannel-customer-service) |A first-class customer support experience is key to providing a personalized and delightful commerce experience for consumers. Multiple commerce touchpoints exist today, such as physical stores, online channels, and social channels. Consumers expect a personalized support experience in all of them. This feature helps you increase cart conversions to sales, increase personalized engagement with consumers, and enhance customer service by integrating with Dynamics 365 Omnichannel for Customer Service.|Enabled by admin/makers |
-| E-commerce   |  Support for product comparison in e-commerce  |  Enable shoppers to compare products across a wide range of categories in order to make the right purchase decision for themselves. This feature is available for both B2C and B2B sites.  |  Site builder  | 
-| Gift cards | Support for retail gift card tables for cross-company data sharing  |  Dynamics headquarters supports the ability to enable cross-company data sharing for specific tables within the Dynamics architecture. With this feature, Dynamics 365 Commerce adds support for the retail gift card tables for cross-company data sharing. Now, a gift card in one company can have its data duplicated to another company within the environment. Changes made to the originating company gift card table will be shared to the duplicated company gift card table. | Developers  |
-| Performance | Remove RTS dependency for "edit customer" scenarios   |  High availability and high performance are default expectations for point of sale (POS) and e-commerce channels. To help meet these expectations, Dynamics 365 Commerce channels no longer need to rely on real-time communication with Commerce headquarters when customer information is edited. The ability to edit customer information asynchronously for async and non-async customers can reduce real-time calls to Commerce headquarters.| Enabled by admin/makers  |
-
+| B2B | [Enable support for sales agreement across channels](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-b2b-sales-agreement-contract-based-pricing) | This feature enables business-to-business (B2B) seller organizations to use sales agreements in Commerce headquarters to define contract-based pricing for their buyers. When a B2B buyer shops on the e-commerce website, the contract-based pricing that is configured for the B2B buyer organization is automatically applied to the whole product discovery, purchase, and checkout experience. | Feature management<p>*Support for sales agreement across commerce channels* |
+| Customer Service | [Enable Customer Service with Dynamics 365 Omnichannel for Customer Service](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/chat-dynamics-365-commerce-omnichannel-customer-service) | A first-class customer support experience is key to providing a personalized and delightful commerce experience for consumers. Multiple commerce touchpoints currently exist, such as physical stores, online channels, and social channels. Consumers expect a personalized support experience in all these touchpoints. This feature helps you increase cart conversions to sales, increase personalized engagement with consumers, and enhance customer service by integrating with Dynamics 365 Omnichannel for Customer Service. | Enabled by admin/makers |
+| E-commerce | Support for product comparison in e-commerce | Enable shoppers to compare products across a wide range of categories so that they can make the correct purchase decision for themselves. This feature is available for both business-to-consumer (B2C) and B2B sites. | Site builder | 
+| Gift cards | Support for retail gift card tables for cross-company data sharing | Dynamics headquarters supports the ability to enable cross-company data sharing for specific tables in the Dynamics architecture. In this feature, Dynamics 365 Commerce adds support for cross-company data sharing for the retail gift card tables. Therefore, a gift card in one company can now have its data duplicated to another company in the environment. Changes that are made to the originating company gift card table will be shared to the duplicated company gift card table. | Developers |
+| Performance | Remove RTS dependency for "edit customer" scenarios | High availability and high performance are default expectations for point of sale (POS) and e-commerce channels. To help meet these expectations, Dynamics 365 Commerce channels no longer have to rely on real-time communication with Commerce headquarters when customer information is edited. The ability to edit customer information asynchronously for asynchronous and non-asynchronous customers can help reduce real-time calls to Commerce headquarters. | Enabled by admin/makers |
 
 ## Feature state changes in this release
 
-The following table lists features that became mandatory or on by default starting in 10.0.29. All of these features will automatically be turned on for your system as soon as you update to 10.0.29. Mandatory features can't be turned off, but features that are on by default can still be turned off using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+The following table lists features that became mandatory or on by default in version 10.0.29. All these features will automatically be turned on for your system as soon as you update to version 10.0.29. Mandatory features can't be turned off, but features that are on by default can still be turned off by using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-The table also lists features that were previously in public preview, but have changed to become generally available in 10.0.29, which means they are now recommended for use on production environments. These features are turned off by default unless otherwise noted, so you must use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable them if you want to use them.
+The table also lists features that were previously in public preview but have changed to become generally available in version 10.0.29. This change indicates that the features are now recommended for use in production environments. These features are turned off by default unless otherwise noted. Therefore, you must use [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to enable them if you want to use them.
 
 | Feature | Title | New feature state |
 | --- | --- | --- |
-|BrazilRetailLocalizationFeature_BR	|(Brazil) Commerce functionality that is specific to Brazil|	On by default |
-| RetailAdvancedGTETaxAdjustmentFeature |	(India) Apply GST calculated for retail transactions in Retail POS to retail statements	|On by default |
-|RetailChronologicalInvoicePostingFeature_IT|	(Italy) Enable retail invoices posted without chronological order	| On by default |
-|RetailDiscountWithoutTaxAdjustingFeature_MX	|(Mexico) Discount adjusting in Retail CFDI Global  |	On by default |
-|RetailFiscalIntegrationConfigurationEnhancementFeature	 Fiscal integration technical profile overrides	|On by default |
-|RetailFiscalIntegrationConnectorLocationFeature	|Direct fiscal integration from POS registers	|On by default |
-|RetailFiscalIntegrationLocalStorageBackupEnableFeature	|Fiscal integration local storage backup	|On by default |
-|RetailFiscalIntegrationPostponeFiscalRegistrationFeature	| Postponed registration of documents	|On by default |
-|RetailFiscalIntegrationRegistrationProcessTerminalExceptionFeature	| Fiscal Registration State of POS Registers	| On by default |
-|RetailGSTInvoiceAddressTaxCalculationFeature_IN	|(India) Calculate GST based on invoice address for e-commerce orders	  |On by default |
-|RetailInvoicesDefaultSalesDocumentStatusFeature_PL	|(Poland) Default sales document status for retail invoices	| On by default |
-|RetailRecalculateRoundingOfTaxBaseAmountsFeature_MX	|(Mexico) Rounding recalculation for tax base amounts in Retail CFDI Global.	|On by default |
-|RetailSupplementaryInvoiceFeature	|Enable supplementary invoices for cash and carry transactions completed in retail stores	|On by default |
-|ConsumerEFDSyncProcessFeature_BR	|(Brazil) NFC-e synchronous processing|	On by default |
-|RetailFiscalIntegrationInternalAndExternalServicesEnableFeature|	Support for internal and external connectors in the fiscal integration framework|	Mandatory |
-|RetailTaxRegistrationIdEnableFeature_BR |	(Brazil) Search customers in Retail POS by tax registration numbers	|Mandatory |
-|RetailTaxRegistrationIdEnableFeature_IN |	(India) Search customers in Retail POS by tax registration numbers|	Mandatory |
-|RetailTaxRegistrationIdEnableFeature_IT|	(Italy) Customer information management in Retail POS	|  Mandatory |
-|RetailTaxRegistrationIdEnableFeature_PL	|(Poland) Customer information management in Retail POS	|  Mandatory |
-|RetailUpdateReturnOriginalTransactionIdGlobalEnableFeature_IN	|(Retail GST for India) Update credit notes with references to original invoices	| Mandatory |
-|RetailUserDefinedCertificateProfileFeature	| User-defined certificate profiles for retail stores	|Mandatory  |
-
-
-
+| BrazilRetailLocalizationFeature_BR |(Brazil) Commerce functionality that is specific to Brazil | On by default |
+| RetailAdvancedGTETaxAdjustmentFeature | (India) Apply GST calculated for retail transactions in Retail POS to retail statements | On by default |
+| RetailChronologicalInvoicePostingFeature_IT | (Italy) Enable retail invoices posted without chronological order | On by default |
+| RetailDiscountWithoutTaxAdjustingFeature_MX | (Mexico) Discount adjusting in Retail CFDI Global | On by default |
+| RetailFiscalIntegrationConfigurationEnhancementFeature | Fiscal integration technical profile overrides | On by default |
+| RetailFiscalIntegrationConnectorLocationFeature | Direct fiscal integration from POS registers | On by default |
+| RetailFiscalIntegrationLocalStorageBackupEnableFeature | Fiscal integration local storage backup | On by default |
+| RetailFiscalIntegrationPostponeFiscalRegistrationFeature | Postponed registration of documents | On by default |
+| RetailFiscalIntegrationRegistrationProcessTerminalExceptionFeature | Fiscal Registration State of POS Registers | On by default |
+| RetailGSTInvoiceAddressTaxCalculationFeature_IN | (India) Calculate GST based on invoice address for e-commerce orders | On by default |
+| RetailInvoicesDefaultSalesDocumentStatusFeature_PL | (Poland) Default sales document status for retail invoices | On by default |
+| RetailRecalculateRoundingOfTaxBaseAmountsFeature_MX | (Mexico) Rounding recalculation for tax base amounts in Retail CFDI Global. | On by default |
+| RetailSupplementaryInvoiceFeature | Enable supplementary invoices for cash and carry transactions completed in retail stores | On by default |
+| ConsumerEFDSyncProcessFeature_BR | (Brazil) NFC-e synchronous processing | On by default |
+| RetailFiscalIntegrationInternalAndExternalServicesEnableFeature | Support for internal and external connectors in the fiscal integration framework | Mandatory |
+| RetailTaxRegistrationIdEnableFeature_BR | (Brazil) Search customers in Retail POS by tax registration numbers | Mandatory |
+| RetailTaxRegistrationIdEnableFeature_IN | (India) Search customers in Retail POS by tax registration numbers | Mandatory |
+| RetailTaxRegistrationIdEnableFeature_IT | (Italy) Customer information management in Retail POS | Mandatory |
+| RetailTaxRegistrationIdEnableFeature_PL | (Poland) Customer information management in Retail POS | Mandatory |
+| RetailUpdateReturnOriginalTransactionIdGlobalEnableFeature_IN | (Retail GST for India) Update credit notes with references to original invoices | Mandatory |
+| RetailUserDefinedCertificateProfileFeature | User-defined certificate profiles for retail stores | Mandatory |
 
 ## Additional resources
 
@@ -78,7 +74,7 @@ Microsoft Dynamics 365 Commerce 10.0.29 includes platform updates. To learn more
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of 10.0.29, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=694438). 
+For information about the bug fixes included in each of the updates that are part of version 10.0.29, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=694438). 
 
 ### Dynamics 365 and industry clouds: 2022 release wave 1 plan
 
