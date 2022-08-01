@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add a favicon
-description: This topic explains how to add a favicon to your site.
+description: This article explains how to add a favicon to your site.
 author: bicyclingfool
 ms.date: 08/31/2020
 ms.topic: article
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to add a favicon to your site.
+This article explains how to add a favicon to your site.
 
 A favicon is a small graphics file that is shown on a web browser tab, in the Address bar, in the browsing history, and in bookmarks or favorites, among other places. We recommend that you add a favicon to your site, because it represents and reinforces your brand, and helps distinguish your site from other sites that your customers visit.
 
-Although you can add multiple favicons of various sizes and file types to your site, this topic shows how to add a single favicon. However, the same process and location are used to add more favicons.
+Although you can add multiple favicons of various sizes and file types to your site, this article shows how to add a single favicon. However, the same process and location are used to add more favicons.
 
 ## Upload a favicon to your site's asset collection
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchase order approval mobile workspace
-description: This topic provides information about the Purchase order approval mobile workspace, which lets you view purchase orders and respond to them through actions. For example, you can approve or reject a purchase order.
+description: This article provides information about the Purchase order approval mobile workspace, which lets you view purchase orders and respond to them through actions. For example, you can approve or reject a purchase order.
 author: GalynaFedorova 
 ms.date: 05/24/2022
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Version 1611
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../../fin-ops-core/dev-itpro/includes/mobile-app-deprecation-banner.md)]
 
-This topic provides information about the **Purchase order approval** mobile workspace. This workspace lets you view purchase orders and respond to them through actions. For example, you can approve or reject a purchase order.
+This article provides information about the **Purchase order approval** mobile workspace. This workspace lets you view purchase orders and respond to them through actions. For example, you can approve or reject a purchase order.
  
 ## Overview 
 Purchase orders that requires approval go through an approval workflow. The workflow can include various steps that require that one or more people take action. For example, a person might have to complete a task or approve the purchase order. 
@@ -78,7 +78,7 @@ If Microsoft Dynamics 365 for Operations version 1611 with Platform update 3 or 
 </table>
 
 ## Download and install the mobile app
-Download and install the Finance and Operations mobile app:
+Download and install the finance and operations mobile app:
 
 - [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 - [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -121,3 +121,4 @@ After you've viewed the purchase order that is assigned to you and read the work
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

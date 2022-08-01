@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up exchange rates for currency transactions
-description: This topic explains how to set up exchange rates for currency transactions in Russia. 
+description: This article explains how to set up exchange rates for currency transactions in Russia. 
 author: ShylaThompson
 ms.date: 10/28/2018
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 8.1
 [!include [banner](../includes/banner.md)]
 
 > [!Important]
-> Exchange rates and amount difference settings are designed to correctly reflect exchange rate and amount differences in accounting and tax accounting. However, the amount difference has been canceled in accounting and tax accounting since 01.01.2007 - in accounting and since 01.01.2015 - in tax accounting. Nevertheless, the amount difference functionality still exists in Dynamics 365 Finance. This topic describes that functionality.   
+> Exchange rates and amount difference settings are designed to correctly reflect exchange rate and amount differences in accounting and tax accounting. However, the amount difference has been canceled in accounting and tax accounting since 01.01.2007 - in accounting and since 01.01.2015 - in tax accounting. Nevertheless, the amount difference functionality still exists in Dynamics 365 Finance. This article describes that functionality.   
 
 You use the **Currency revaluation accounts** page to set up the loss or gain calculation for currency exchange.
 

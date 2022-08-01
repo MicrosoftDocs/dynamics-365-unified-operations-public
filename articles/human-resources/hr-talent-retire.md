@@ -2,7 +2,7 @@
 # required metadata
 
 title: Retirement of Dynamics 365 Talent - Attract and Onboard apps
-description: This topic describes the retirement of the Dynamics 365 Talent - Attract and Onboard apps. 
+description: This article describes the retirement of the Dynamics 365 Talent - Attract and Onboard apps. 
 author: twheeloc
 ms.date: 01/27/2022
 ms.topic: article

@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: User preferences in financial report designer
-description: This topic describes how to set user preferences to customize your user interactions in financial report designer and control the initial sign-in experience.
+description: This article describes how to set user preferences to customize your user interactions in financial report designer and control the initial sign-in experience.
 author: aprilolson
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: FinancialReports
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 31161
-ms.assetid: 59da4854-0f8c-4021-acd1-b303c06f4a34
+ms.reviewer: twheeloc
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 
+  - 31161
+ms.assetid: 59da4854-0f8c-4021-acd1-b303c06f4a34
+ms.search.form: FinancialReports
 ---
 
 # User preferences in financial report designer

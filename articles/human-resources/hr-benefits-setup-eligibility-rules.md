@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure eligibility rules and options
-description: This topic describes how to set eligibility rules and options in Benefits management in Microsoft Dynamics 365 Human Resources.
+description: This article describes how to set eligibility rules and options in Benefits management in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/24/2021
 ms.topic: article

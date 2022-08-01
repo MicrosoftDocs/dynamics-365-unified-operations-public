@@ -2,7 +2,7 @@
 # required metadata
 
 title: Respond to GDPR data requests resources
-description: This topic provides links to information that can help you respond to a data rights request under the General Data Protection Regulation (GDPR).
+description: This article provides links to information that can help you respond to a data rights request under the General Data Protection Regulation (GDPR).
 author: rschloma
 ms.date: 07/23/2019
 ms.topic: article
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to information that can help you respond to a request for information under the General Data Protection Regulation (GDPR) as a customer using Dynamics 365 Finance, Supply Chain Management, Commerce, Human Resources, and Microsoft Dynamics AX 2012. 
+This article provides links to information that can help you respond to a request for information under the General Data Protection Regulation (GDPR) as a customer using Dynamics 365 Finance, Supply Chain Management, Commerce, Human Resources, and Microsoft Dynamics AX 2012. 
 
-Your first step in responding to a request for data will usually be to use the Person search report to locate the data that's requested. In some cases, you might need to use other reports, access specific pages in the product that you're using, or extend the Person search report. (The report is currently not available for Microsoft Dynamics AX 2012.) This topic points to content that will help you complete those tasks.
+Your first step in responding to a request for data will usually be to use the Person search report to locate the data that's requested. In some cases, you might need to use other reports, access specific pages in the product that you're using, or extend the Person search report. (The report is currently not available for Microsoft Dynamics AX 2012.) This article points to content that will help you complete those tasks.
 
 ## Overview
 

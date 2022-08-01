@@ -2,7 +2,7 @@
 # required metadata
 
 title: Batch business events
-description: This topic provides details about batch business events.
+description: This article provides details about batch business events.
 author: matapg007
 ms.date: 02/25/2021
 ms.topic: article

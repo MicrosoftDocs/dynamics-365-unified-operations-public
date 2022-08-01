@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payment module
-description: This topic covers the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
+description: This article covers the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 04/12/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.14
 
 [!include [banner](includes/banner.md)]
 
-This topic covers the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
+This article covers the payment module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 
 The payment module lets customers pay for orders by using credit or debit cards. Payment integration for this module is provided by the Dynamics 365 Payment Connector for Adyen. For more information about how to set up and configure the payment connector, see [Dynamics 365 Payment Connector for Adyen](dev-itpro/adyen-connector.md).  
 

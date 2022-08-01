@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Propose fixed asset acquisitions
-description: This topic describes how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal. 
+description: This article describes how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal. 
 author: moaamer
 ms.date: 03/17/2021
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal. It uses the accountant role and demo data for the USMF legal entity. To acquire a fixed asset through a fixed asset proposal journal, you must first create the fixed asset record, and then define the acquisition price in the asset book.
+This article describes how to acquire a fixed asset using the acquisition proposal in the Fixed assets journal. It uses the accountant role and demo data for the USMF legal entity. To acquire a fixed asset through a fixed asset proposal journal, you must first create the fixed asset record, and then define the acquisition price in the asset book.
 
 ## Create an asset acquisition proposal
 

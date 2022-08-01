@@ -1,8 +1,8 @@
 ---
 title: Migrate to the Commerce SDK
-description: This topic explains how to migrate to the Commerce software development kit (SDK).
+description: This article explains how to migrate to the Commerce software development kit (SDK).
 author: mugunthanm
-ms.date: 05/11/2022
+ms.date: 05/31/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -15,7 +15,6 @@ ms.dyn365.ops.version: AX 10.0.19
 # Migrate to the Commerce SDK
 
 [!include [banner](../../includes/banner.md)]
-[!include [banner](../../includes/preview-banner.md)]
 
 The Commerce software development kit (SDK) and sealed installers simplify the Commerce developer and upgrade experience. The new Commerce SDK minimizes the effort that is involved in upgrades, and helps reduce the time and effort that must be spent on the upgrade process. Additionally, integration with Git, Microsoft Azure DevOps, and Visual Studio Code brings the .NET development experience to the Commerce SDK.
 
@@ -185,12 +184,44 @@ cart = (await request.RequestContext.ExecuteAsync<SaveCartResponse>(saveCartRequ
 </td>
 </tr>
 <tr>
-<td> PricingEngine </td>
-<td> Extensions should not call PricingEngine directly and instead should use CalculatePricesServiceRequest, CalculateDiscountsServiceRequest. </td>
+<td> CartWorkflowHelper.ConvertToCart </td>
+<td>
+
+```C#
+ConvertSalesTransactionToCartServiceRequest serviceRequest = new ConvertSalesTransactionToCartServiceRequest(salesTransaction);
+return (await context.ExecuteAsync<UpdateCartServiceResponse>(serviceRequest).ConfigureAwait(false)).Cart;
+```    
+
+</td>
 </tr>
 <tr>
-<td> PriceEvents </td>
-<td> Telemetries should only be used for internal purposes, extensions should not use this. </td>
+<td> RuntimeReceiptLocalizer.GetLocalizedString </td>
+<td>
+
+```C#
+var request = new GetLocalizedTextsDataRequest(cultureName, textId, QueryResultSettings.SingleRecord);
+var response = isAsync ?
+                await requestContext.ExecuteAsync<EntityDataServiceResponse<LocalizedText>>(request).ConfigureAwait(false) :
+var result = response.PagedEntityCollection;
+if (!result.IsNullOrEmpty())
+{
+   LocalizedText text = result.FirstOrDefault();
+   return text.Text;
+}
+```    
+
+</td>
+</tr>
+<tr>
+<td> DataCacheAccessor </td>
+<td>
+
+DataCacheAccessor is internal. Use .NET memory cache or a similar approach.
+
+</td>
+<tr>
+<td> PricingEngine </td>
+<td> Extensions should not call PricingEngine directly and instead should use CalculatePricesServiceRequest, CalculateDiscountsServiceRequest. </td>
 </tr>
 <tr>
 <td> PricingDatabaseAccessor </td>
@@ -247,7 +278,7 @@ For more information, see [Generate a separate package for Commerce Cloud Scale 
 
 ### Do I have to migrate?
 
-The Commerce SDK provides several benefits that the Retail SDK doesn't provide, such as a simplified development and update experience, and improved performance. The Retail SDK and installers will be deprecated in April 2023, and all extensions must be migrated before then. After October 2023, the Retail SDK will no longer be released or supported.
+The Commerce SDK provides several benefits that the Retail SDK doesn't provide, such as a simplified development and update experience, and improved performance. The Retail SDK and installers will be deprecated in October 2023, and all extensions must be migrated before then. After October 2023, the Retail SDK will no longer be released or supported.
 
 ### When do I have to migrate?
 

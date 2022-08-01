@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fiscal calendars, fiscal years, and periods
-description: This topic discusses fiscal calendars, fiscal years and periods and how to utilize them for legal entities, fixed assets and budgeting.
+description: This article discusses fiscal calendars, fiscal years and periods and how to utilize them for legal entities, fixed assets and budgeting.
 author: aprilolson
 ms.date: 03/05/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic discusses fiscal calendars, fiscal years and periods and how to utilize them for legal entities, fixed assets and budgeting.
+This article discusses fiscal calendars, fiscal years and periods and how to utilize them for legal entities, fixed assets and budgeting.
 
 Fiscal calendars provide a framework for the financial activity of an organization. Each fiscal calendar contains one or more fiscal years, and each fiscal year contains multiple periods. Fiscal calendars can be based on a January 1 to December 31 calendar year, or on any dates that you select. For example, some organizations select a fiscal calendar that starts on July 1 of one year and ends on June 30 of the following year. 
 

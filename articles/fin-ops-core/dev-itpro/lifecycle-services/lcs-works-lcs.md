@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Lifecycle Services (LCS) for Finance and Operations apps customers
-description: This topic describes Lifecycle Services (LCS) for Finance and Operations apps customers.
+title: Lifecycle Services (LCS) for finance and operations apps customers
+description: This article describes Lifecycle Services (LCS) for finance and operations apps customers.
 author: angelmarshall
 ms.date: 10/23/2017
 ms.topic: overview
@@ -27,18 +27,18 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ---
 
-# Lifecycle Services (LCS) for Finance and Operations apps customers
+# Lifecycle Services (LCS) for finance and operations apps customers
 
 [!include [banner](../includes/banner.md)]
 
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic is intended for customers who have signed up for the current versions of Finance and Operations apps. Partners who are working with customers to help them move through the lifecycle of their Lifecycle Services (LCS) project will also find this information useful. 
+This article is intended for customers who have signed up for the current versions of finance and operations apps. Partners who are working with customers to help them move through the lifecycle of their Lifecycle Services (LCS) project will also find this information useful. 
 
-## LCS workspace for the current versions of the Finance and Operations apps
+## LCS workspace for the current versions of the finance and operations apps
 
-When you sign up for the current versions of Finance and Operations apps, your subscription includes an Implementation project workspace. After you activate the service, the tenant administrator must sign in at <https://lcs.dynamics.com> by using the tenant account. The project workspace is automatically created for your organization. The workspace includes the following elements:
+When you sign up for the current versions of finance and operations apps, your subscription includes an Implementation project workspace. After you activate the service, the tenant administrator must sign in at <https://lcs.dynamics.com> by using the tenant account. The project workspace is automatically created for your organization. The workspace includes the following elements:
 
 -   Enabled features, based on the offer that you selected
 -   Environments that are deployed and managed by Microsoft
@@ -69,7 +69,7 @@ When you've completed all the required tasks in a phase, you can click **Complet
 Descriptions can help you understand what is expected of you for a specific methodology task or phase. You can expand the methodology description to learn more about each task, and then collapse the description when you've finished. The task and phase history can tell you when a task or phase was completed or reopened. If you're a project manager, this information can help you stay on top of the high-level tasks that are required for your implementations. [![Expanded task history and methodology description.](./media/2.jpg)](./media/2.jpg)
 
 ## Subscription estimator
-You can use the Subscription estimator tool to evaluate your subscription requirements for the current versions of the Finance and Operations apps. To use Subscription estimator, download the usage profile, which is a Microsoft Excel workbook. Then, in the workbook, complete the following worksheets:
+You can use the Subscription estimator tool to evaluate your subscription requirements for the current versions of the finance and operations apps. To use Subscription estimator, download the usage profile, which is a Microsoft Excel workbook. Then, in the workbook, complete the following worksheets:
 
 -   Deployment details
 -   Instance Characteristics
@@ -88,3 +88,4 @@ Because the information that you enter determines your experience, carefully rev
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

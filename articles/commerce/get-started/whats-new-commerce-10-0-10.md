@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Commerce 10.0.10 (May 2020)
-description: This topic describes features that are either new or changed in Dynamics 365 Commerce 10.0.10. 
+description: This article describes features that are either new or changed in Dynamics 365 Commerce 10.0.10. 
 author: josaw1
 ms.date: 04/08/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.9
 [!include [banner](../includes/banner.md)]
 
 
-This topic lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.10. This version has a build number of 10.0.420 and is available as follows:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.10. This version has a build number of 10.0.420 and is available as follows:
 
 - **Preview release:** March 2020
 - **General availability (self-update):** April 2020
@@ -51,9 +51,9 @@ The following features are included in this release. The feature titles link to 
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Dynamics 365 Commerce 10.0.10 includes platform updates. To learn more, see [Platform updates for version 10.0.10 of Finance and Operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
+Dynamics 365 Commerce 10.0.10 includes platform updates. To learn more, see [Platform updates for version 10.0.10 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-update-34.md).
 
 ### Bug fixes 
 For information about the bug fixes that are included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Ffix.lcs.dynamics.com%2FIssue%2FDetails%3FbugId%3D424137%26dbType%3D3%26qc%3Dbf63d49dcc96e51eb42ac1dd66c6c5e5d7548f1e176f729e324ea3353b9860cb&data=02%7C01%7Cjosaw%40microsoft.com%7Cb0c34b69bc614f25c20108d7c115dae9%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637190171921345107&sdata=2BCd%2FgirasiXcbkuwDX%2Bn%2BhI9oVB9e16cYYOZYnyuPw%3D&reserved=0).
@@ -67,12 +67,12 @@ Check out the [Dynamics 365: 2020 release wave 1 plan](/dynamics365-release-plan
 
 ### Removed and deprecated features
 
-The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic describes features that have been removed or deprecated for Finance and Operations apps.
+The [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) article describes features that have been removed or deprecated for finance and operations apps.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features](../../fin-ops-core/dev-itpro/migration-upgrade/deprecated-features.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 

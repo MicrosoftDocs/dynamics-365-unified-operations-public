@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure Human resources parameters
-description: This topic explains how to set up company-specific parameters in Dynamics 365 Human Resources.
+description: This article explains how to set up company-specific parameters in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-The settings of some Human resources parameters are shared across companies, while the settings of other parameters are company-specific. This topic explains how to set up company-specific Human resources parameters.
+The settings of some Human resources parameters are shared across companies, while the settings of other parameters are company-specific. This article explains how to set up company-specific Human resources parameters.
 
-Two pages are used to set Human resources parameters. For parameters that are shared across companies, you use the **Human resources shared parameters** page. For parameters that are company-specific (in other words, the settings apply to a single company), you use the **Human resource parameters** page.
+Two pages are used to set Human resources parameters. For parameters that are shared across companies, you use the **Human resources shared parameters** page. For parameters that are company-specific, you use the **Human resource parameters** page.
 
 ![Go to Human resources parameters.](./media/hr-employee-self-service-human-resources-parameters.png)
 
@@ -80,9 +80,10 @@ In Dynamics 365 Finance, the settings on the **Compensation** tab define whether
 
 In Human Resources, you can use the **Compensation** tab to choose to restrict access to compensation plans and to set a default currency.
 
-For more information about compensation, see [Compensation plans overview](hr-compensation-overview.md).
+> [!NOTE]
+> In the merged infrastructure, the default **Currency** parameter on the **Compensation** tab of the **Human resources parameters** page has been removed. Moving forward, the currency will be handled by the **Ledger currency** parameter to ensure that there are no conflicts for existing finance and operations functionality and to prevent duplication. For more information about how to use ledger currency functionality, see [Configure ledgers](/general-ledger/configure-ledger#configuring-currencies-for-the-ledger.md). 
 
-![Compensation tab.](./media/hr-setup-parameters-compensation.png)
+For more information about compensation, see [Compensation plans overview](hr-compensation-overview.md).
 
 ## Number sequences
 
@@ -128,7 +129,7 @@ For more information about how to set up **Employee self service**, see [Employe
 The settings on the **Manager self service** tab affect what managers see in **Manager self service**. On this tab, you can configure the following options:
 
 - The range for expiring records
-- Information managers can view in expiring records
+- Information that managers can view in expiring records
 - Whether managers can view open positions for extended reports
 - Views of exiting workers
 - Useful links for managers

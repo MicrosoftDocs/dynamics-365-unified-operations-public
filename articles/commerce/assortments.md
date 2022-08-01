@@ -2,7 +2,7 @@
 # required metadata
 
 title: Assortment management
-description: This topic explains the basic concepts of assortment management in Dynamics 365 Commerce and provides implementation considerations for your project.
+description: This article explains the basic concepts of assortment management in Dynamics 365 Commerce and provides implementation considerations for your project.
 author: jblucher
 ms.date: 03/12/2018
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application user
 # ms.devlang: 
 ms.reviewer: josaw
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: retail
 ms.author: jeffbl

@@ -2,7 +2,7 @@
 # required metadata
 
 title: VAT statement details for Latvia
-description: This topic explains how to set up the VAT statement for legal entities in Latvia.
+description: This article explains how to set up the VAT statement for legal entities in Latvia.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -30,9 +30,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up the VAT statement for legal entities in Latvia.
+This article explains how to set up the VAT statement for legal entities in Latvia.
 
-This topic includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Latvia only. For more information about the implementation of VAT statements, see [VAT reporting for Europe](emea-vat-reporting.md).
+This article includes country/region-specific information about the setup of the value-added tax (VAT) statement for legal entities in Latvia only. For more information about the implementation of VAT statements, see [VAT reporting for Europe](emea-vat-reporting.md).
 
 ## Set up sales tax authorities
 To generate a VAT declaration in the required format for the appropriate tax authority, you must set up the report layout for sales tax authorities. On the **Sales tax authorities** page, set the **Report layout** field to **Default**. Select the same sales tax authority for the sales tax settlement period that will be used for the sales tax codes.

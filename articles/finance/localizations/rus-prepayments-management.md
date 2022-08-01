@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Prepayments management  
-description: This topic provides information about paying value-added tax (VAT) when prepayments are received from customers.
+description: This article provides information about paying value-added tax (VAT) when prepayments are received from customers.
 author: v-nadyuz
 ms.date: 10/07/2019
 ms.topic: article
@@ -56,7 +56,7 @@ The functionality for processing prepayments from customers lets you perform the
 ## Setup
 ### Set up a posting profile for prepayments
 
-To create a posting profile for prepayments, follow the procedure that is described in the topic, [Customer posting profiles](../accounts-receivable/customer-posting-profiles.md).
+To create a posting profile for prepayments, follow the procedure that is described in the article, [Customer posting profiles](../accounts-receivable/customer-posting-profiles.md).
 
 > [!NOTE]
 > To satisfy the requirements of the Russian legislation, the following settings should be used:

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Print checks by using the Spanish layout
-description: This topic provides information about how to print checks that follow the standards that are required in Spain.
+description: This article provides information about how to print checks that follow the standards that are required in Spain.
 author: anasyash
 ms.date: 05/31/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.search.validFrom: 2016-11-30
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to print checks that follow the standards that are required in Spain.
+This article provides information about how to print checks that follow the standards that are required in Spain.
 
 To use the checks functionality together with the Spanish layout, you should consider the following settings:
 
@@ -38,7 +38,7 @@ To use the checks functionality together with the Spanish layout, you should con
 -   For the method of payment, use the **Check** export file format.
 -   For the bank account, use **Spanish check layout** in the **Check layout** section of the **Bank account** page (**Setup** &gt; **Layout** &gt; **Check**). Additionally, set the **Other currencies** field to **Yes**.
 
-To generate the checks by using the Spanish layout, basic Payment journal (vendors) functionality is used. For more information, see [Vendor payment overview](../cash-bank-management/tasks/vendor-payment-overview.md). After you run the Generate payments function and select all required parameters as described in this topic, the checks are generated. If the currency on the payment journal line differs from the currency of the bank account, you can still generate a check if the check layout is set up to use other currencies.
+To generate the checks by using the Spanish layout, basic Payment journal (vendors) functionality is used. For more information, see [Vendor payment overview](../cash-bank-management/tasks/vendor-payment-overview.md). After you run the Generate payments function and select all required parameters as described in this article, the checks are generated. If the currency on the payment journal line differs from the currency of the bank account, you can still generate a check if the check layout is set up to use other currencies.
 
 
 

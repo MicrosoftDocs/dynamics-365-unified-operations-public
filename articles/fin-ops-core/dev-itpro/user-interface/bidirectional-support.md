@@ -2,7 +2,7 @@
 # required metadata
 
 title: Right-to-left language support and bidirectional text
-description: This topic discusses the issue of bidirectional text and how it's handled.
+description: This article discusses the issue of bidirectional text and how it's handled.
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-In the area of right-to-left (RTL) language support, one consideration is the combination of RTL text and left-to-right (LTR) text in the same string. This topic discusses the issue of bidirectional text and how it's handled.
+In the area of right-to-left (RTL) language support, one consideration is the combination of RTL text and left-to-right (LTR) text in the same string. This article discusses the issue of bidirectional text and how it's handled.
 
 ## A great example of right-to-left language support: Microsoft Word
 
@@ -42,9 +42,9 @@ To understand how Word “gets it right” and provides a great experience, you 
 Keeping track of character orientation in a financial program that might record billions of transactions and multi-billions of characters would produce significant transnational and spatial overhead if we stored contextual information for each character. Therefore, this behavior would be considered only for special conditions.
 
 ## Bidirectional text
-To support Arabic and Hebrew, both of which are RTL languages, there is an RTL orientation for the controls in each form, so that an RTL reader can interact with the form in a natural reading manner. For the most part, RTL orientation of the controls works as expected and provides RTL users with the experience that they expect. Finance and Operations apps and modern browsers support RTL orientation, and Finance and Operations app conform to that functionality. However, in some cases, extensible controls (custom controls) require special code to orient their elements correctly. 
+To support Arabic and Hebrew, both of which are RTL languages, there is an RTL orientation for the controls in each form, so that an RTL reader can interact with the form in a natural reading manner. For the most part, RTL orientation of the controls works as expected and provides RTL users with the experience that they expect. Finance and operations apps and modern browsers support RTL orientation, and the apps conform to that functionality. However, in some cases, extensible controls (custom controls) require special code to orient their elements correctly. 
 
-A point of reference in this article is the Win32 CEdit control, which is used primarily for standard text entry (account name, description, user name, and so on, in Microsoft Dynamics AX 2012). The behavior of the HTML Input control mimics the functionality of the CEdit control. Therefore, the same behavior applies to Finance and Operations. 
+A point of reference in this article is the Win32 CEdit control, which is used primarily for standard text entry (account name, description, user name, and so on, in Microsoft Dynamics AX 2012). The behavior of the HTML Input control mimics the functionality of the CEdit control. Therefore, the same behavior applies to finance and operations apps. 
 
 The CEdit control is a Win32 control that is governed by the rules for bidirectional text management that are defined by the Unicode standard. Bidirectional text occurs when the control hosts both RTL text (such as Arabic or Hebrew) and LTR text within the same string of characters. 
 

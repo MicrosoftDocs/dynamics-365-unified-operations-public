@@ -1,10 +1,10 @@
 ---
 title: Negative days and dynamic negative days
-description: This topic provides information about negative days and dynamic negative days, and how you can use them to help your business.
+description: This article provides information about negative days and dynamic negative days, and how you can use them to help your business.
 author: t-benebo
 ms.date: 05/25/2021
 ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -17,16 +17,16 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about negative days and dynamic negative days, and how you can use them to help your business. The *negative days time fence* represents the number of days that you're willing to wait before you order new replenishment when you have negative inventory.
+This article provides information about negative days and dynamic negative days, and how you can use them to help your business. The *negative days time fence* represents the number of days that you're willing to wait before you order new replenishment when you have negative inventory.
 
-In this topic, you will learn the following information:
+In this article, you will learn the following information:
 
 - How planned orders are created
 - The correlation between the negative days time fence and the item's lead time
 - How the dynamic negative days time fence is calculated, and how the item's lead time is factored into the calculation
 - How to interpret the [suggestions for improving the running time for material requirements planning (MRP) (master planning)](https://blogs.msdn.com/b/axmfg/archive/2015/01/02/checklist-for-improving-mrp-performance-part-2-how-to-setup-planning-parameters.aspx) that are related to negative days
 
-This topic uses three hypothetical scenarios to help you understand this information. The difference between the scenarios is the point at which you get demand: before, during, or after the item's lead time period.
+This article uses three hypothetical scenarios to help you understand this information. The difference between the scenarios is the point at which you get demand: before, during, or after the item's lead time period.
 
 ## Scenario 1: You get demand before the item's lead time period
 
@@ -89,7 +89,7 @@ The following illustration shows a graphical view of what occurs in this case.
 
 ### Case E: Use both negative days that are more than the item's lead time and the dynamic negative days time fence
 
-If you set the negative days to a number that is more than the item's lead time, and if you also use the dynamic negative days time fence, the dynamic negative days time fence is 6 + 6 + 0 = 12 days. This approach might produce a very long time fence that MRP must search for results in. For information about how case E is related to a situation where you set the negative days to a long time fence, see the [Conclusion](#conclusion) section of this topic.
+If you set the negative days to a number that is more than the item's lead time, and if you also use the dynamic negative days time fence, the dynamic negative days time fence is 6 + 6 + 0 = 12 days. This approach might produce a very long time fence that MRP must search for results in. For information about how case E is related to a situation where you set the negative days to a long time fence, see the [Conclusion](#conclusion) section of this article.
 
 ## Scenario 2: You get demand during the item's lead time period
 
@@ -138,7 +138,7 @@ If you set the negative days to **0** (zero) and use only the dynamic negative d
 
 ### Case E: Use both negative days that are more than the item's lead time and the dynamic negative days time fence
 
-If you set the negative days to a number that is more than the item's lead time, and if you also use the dynamic negative days time fence, the dynamic negative days time fence is 6 + 6 – 4 = 8 days. This approach might produce a very long time fence that MRP must search for results in. For information about how case E is related to a situation where you set the negative days to a long time fence, see the [Conclusion](#conclusion) section of this topic.
+If you set the negative days to a number that is more than the item's lead time, and if you also use the dynamic negative days time fence, the dynamic negative days time fence is 6 + 6 – 4 = 8 days. This approach might produce a very long time fence that MRP must search for results in. For information about how case E is related to a situation where you set the negative days to a long time fence, see the [Conclusion](#conclusion) section of this article.
 
 ## Scenario 3: You get demand after the item's lead time period
 
@@ -200,7 +200,7 @@ This case is the same as case E for scenarios 1 and 2. It has basically the same
 
 ## Conclusion
 
-As the three scenarios in this topic show, it's a good idea to set the negative days to a number that is more than the lead time of the items in the coverage group. It's also a good idea to use only dynamic negative days, and to set the negative days to the number of days that you're willing to wait before you order new replenishment when you have negative inventory (in other words, the number of days that you're willing to further delay demand). Additionally, items in the same coverage group should have similar lead times.
+As the three scenarios in this article show, it's a good idea to set the negative days to a number that is more than the lead time of the items in the coverage group. It's also a good idea to use only dynamic negative days, and to set the negative days to the number of days that you're willing to wait before you order new replenishment when you have negative inventory (in other words, the number of days that you're willing to further delay demand). Additionally, items in the same coverage group should have similar lead times.
 
 If you set the negative days to **0** (zero) and don't use dynamic negative days, MRP always creates a new planned order to fulfill demand. In this situation, it's important that you work with the action messages to make sure that you don't pile up inventory.
 

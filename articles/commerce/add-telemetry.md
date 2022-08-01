@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add script code to site pages to support telemetry
-description: This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry. 
+description: This article describes how to add client-side script code to your site pages to support the collection of client-side telemetry. 
 author: bicyclingfool
 ms.date: 09/29/2020
 ms.topic: article
@@ -29,12 +29,12 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to add client-side script code to your site pages to support the collection of client-side telemetry.
+This article describes how to add client-side script code to your site pages to support the collection of client-side telemetry.
 
 Web analytics are an essential tool when you want to understand how your customers interact with your site and make decisions that will help optimize the experience for maximum conversion. Many web analytics packages are available to help you achieve these goals, such as Google Analytics, Clicky, Moz Analytics, and KISSMetrics. Most web analytics packages require that you add client-side script code in the **\<head\>** element of the HTML for all pages of your site.
 
 > [!NOTE]
-> The instructions in this topic also apply to other custom client-side functionality that Microsoft Dynamics 365 Commerce doesn't natively offer.
+> The instructions in this article also apply to other custom client-side functionality that Microsoft Dynamics 365 Commerce doesn't natively offer.
 
 ## Create a reusable fragment for your script code
 

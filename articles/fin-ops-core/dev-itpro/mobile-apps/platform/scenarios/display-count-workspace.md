@@ -2,7 +2,7 @@
 # required metadata
 
 title: Show counts in fields
-description: This topic explains how to calculate a count that is correct and that appears quickly. 
+description: This article explains how to calculate a count that is correct and that appears quickly. 
 author: tonyafehr
 ms.date: 05/26/2022
 ms.topic: article

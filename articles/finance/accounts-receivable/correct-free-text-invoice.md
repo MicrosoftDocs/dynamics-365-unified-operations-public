@@ -2,7 +2,7 @@
 # required metadata
 
 title: Correct a free text invoice
-description: This topic explains how to correct a free text invoice that has been posted and reissue it as a corrected invoice.
+description: This article explains how to correct a free text invoice that has been posted and reissue it as a corrected invoice.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to correct a free text invoice that has been posted and reissue it as a corrected invoice.
+This article explains how to correct a free text invoice that has been posted and reissue it as a corrected invoice.
 
 To correct a free text invoice that has already been posted, open the posted free text invoice. On the **Invoice** page, select **Cancel**, and then select **Correct invoice**. Select a reason code, add comments, and select the date for new corrected invoice. You can modify the corrected invoice, and post it. 
 
@@ -49,7 +49,7 @@ You can identify canceling and correcting invoices in two ways:
 -   The header of the free text invoice shows a status of **Cancelling invoice '\[invoice number\]'** or **Corrected invoice '\[invoice number\]'**.
 
 > [!NOTE]
-> This feature is available only if the **Free text invoice correction** configuration key is selected. For more information on how to enable Configuration keys refer to the Enable (or disable) configuration keys section in the [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) topic. 
+> This feature is available only if the **Free text invoice correction** configuration key is selected. For more information on how to enable Configuration keys refer to the Enable (or disable) configuration keys section in the [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md) article. 
 
 
 

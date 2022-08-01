@@ -2,7 +2,7 @@
 # required metadata
 
 title: Inbound inventory operation in POS
-description: This topic describes capabilities of the point of sale (POS) inbound inventory operation.
+description: This article describes capabilities of the point of sale (POS) inbound inventory operation.
 author: hhaines
 
 ms.date: 09/17/2020
@@ -221,7 +221,7 @@ After the draft document is successfully submitted to Commerce Headquarters, it 
 
 After the document is in **Requested** status, it's visible on the **Active** tab. However, it can't yet be received by the inbound store or warehouse. After the outbound warehouse has shipped some or all of the transfer order, the inbound store or warehouse can post receipts in POS. When the outbound side processes the transfer order documents, their status is updated from **Requested** to **Shipped** or **Partially Shipped**. After the documents are in **Shipped** or **Partially Shipped** status, the inbound store or warehouse can post receipts against them using the inbound operation receiving process.
 
-## Related topics
+## Related articles
 
 [Outbound inventory operation in POS](pos-outbound-inventory-operation.md)
 

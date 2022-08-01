@@ -1,6 +1,6 @@
 ---
 title: Form design requirements
-description: This topic provides form design requirements for mobile apps.
+description: This article provides form design requirements for mobile apps.
 author: tonyafehr
 ms.date: 05/26/2022
 ms.topic: article

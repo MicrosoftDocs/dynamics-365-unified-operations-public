@@ -2,7 +2,7 @@
 # required metadata
 
 title: Unified printing forms for fixed assets (Russia)
-description: This topic includes information about fixed asset unified printing forms for Microsoft Dynamics 365 Finance in Russia.
+description: This article includes information about fixed asset unified printing forms for Microsoft Dynamics 365 Finance in Russia.
 author: v-oloski
 ms.date: 04/19/2019
 ms.topic: article
@@ -110,7 +110,7 @@ All pro forms can be printed from a fixed asset record, when the transaction tha
 
 You can print existing unified printing forms from different places, including:
 
-- Where the unified printing form was originally created. For more information, see the **Create unified printing forms** section earlier in this topic.
+- Where the unified printing form was originally created. For more information, see the **Create unified printing forms** section earlier in this article.
 - From a fixed asset record.
 - From the Inquiries page.
 

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Design ER expressions to call application class methods
-description: This topic describes how to reuse the existing application logic in Electronic reporting configurations by calling required methods of application classes. 
+description: This article describes how to reuse the existing application logic in Electronic reporting configurations by calling required methods of application classes. 
 author: NickSelin
 ms.date: 11/02/2021
 ms.topic: business-process 
@@ -28,19 +28,19 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to reuse the existing application logic in [Electronic reporting (ER)](../general-electronic-reporting.md) configurations by calling required methods of application classes in ER expressions. Values of arguments for calling classes can be dynamically defined at runtime. For example, values can be based on information in the parsing document, to ensure its correctness.
+This article describes how to reuse the existing application logic in [Electronic reporting (ER)](../general-electronic-reporting.md) configurations by calling required methods of application classes in ER expressions. Values of arguments for calling classes can be dynamically defined at runtime. For example, values can be based on information in the parsing document, to ensure its correctness.
 
-For the example in this topic, you will design a process that parses incoming bank statements for an application data update. You will receive the incoming bank statements as text (.txt) files that contain International Bank Account Number (IBAN) codes. As part of the process of importing the bank statements, you must validate the correctness of the IBAN code by using the logic that is already available.
+For the example in this article, you will design a process that parses incoming bank statements for an application data update. You will receive the incoming bank statements as text (.txt) files that contain International Bank Account Number (IBAN) codes. As part of the process of importing the bank statements, you must validate the correctness of the IBAN code by using the logic that is already available.
 
 ## Prerequisites
 
-The procedures in this topic are intended for users who have been assigned the **System administrator** or **Electronic reporting developer** role.
+The procedures in this article are intended for users who have been assigned the **System administrator** or **Electronic reporting developer** role.
 
 The procedures can be completed by using any data set.
 
 To complete them, you must download and save the following file: [SampleIncomingMessage.txt](https://download.microsoft.com/download/8/0/a/80adbc89-f23c-46d9-9241-e0f19125c04b/SampleIncomingMessage.txt).
 
-In this topic, you will create the required ER configurations for the Litware, Inc. sample company. Therefore, before you complete the procedures in this topic, you must follow these steps.
+In this article, you will create the required ER configurations for the Litware, Inc. sample company. Therefore, before you complete the procedures in this article, you must follow these steps.
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 2. On the **Localization configurations** page, verify that the configuration provider for the **Litware, Inc.** sample company is available and marked as active. If you don't see this configuration provider, you must first complete the steps in [Create configuration providers and mark them as active](er-configuration-provider-mark-it-active-2016-11.md).

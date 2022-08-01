@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchase order posting
-description: This topic describes the Purchase order tab of the Inventory posting profiles page.
+description: This article describes the Purchase order tab of the Inventory posting profiles page.
 author: rachelprofitt
 ms.date: 04/25/2022
 ms.topic: overview
@@ -96,10 +96,10 @@ The following table shows examples of the default posting types with sample main
 
 | Posting type | Main account example | Main account name example | Account type | Debit/ Credit? | Clearing account | P/F | Follow | Description |
 |--------------|---------------------|-------------------------|----------------|----------------|--------------------|----|----------|-----------|
-| Cost of purchased materials received | 140100</br>140101 | Materials inventory</br>Materials shipped not invoiced | Asset | Debit | Yes | P | Cost of purchased materials invoiced | Used when a purchase order product receipt is posted. The offset to the account is the Purchase expenditure, uninvoiced. The amount in this account is reversed when a purchase order invoice is posted. |
+| Cost of purchased materials received | 140100</br>140101 | Materials inventory</br>Materials shipped not invoiced | Asset | Debit | Yes | P | Cost of purchased materials invoiced | Used when a purchase order product receipt is posted, the offset to the account is Purchase expenditure, uninvoiced. The amount in this account is reversed when a purchase order invoice is posted. |
 | Purchase expenditure, uninvoiced | 600180 | Material receipts | Expense | Debit | Yes | P | |Used when a purchase order product receipt is posted. Two vouchers are created for the receipt to track purchase price variances when standard cost is used. The offset to the account on the first voucher is the Purchase accrual. The offset on the second voucher is the sum of the Cost of purchased materials received and Purchase price variance accounts. The amounts posted in this account are reversed when a purchase order invoice is posted. |
 | Cost of purchased materials invoiced | 140100 | Materials inventory | Asset | Debit | No | F  |Cost of purchased materials received | Used when a purchase order invoice is posted. The offset to this account is the Purchase expenditure for product. This account represents the inventory on your balance sheet. The account used is typically the same account used for Cost of units delivered and Cost of units invoiced for sales order. |
-| Purchase expenditure for product | 600180 | Materials receipt | Expense | Credit | No | F  | |Used when a purchase order invoice is posted. The offset to this account is the Cost of purchased materials purchased. This account represents the inventory on your balance sheet. |
+| Purchase expenditure for product | 600180 | Materials receipt | Expense | Credit | Yes | F  | |Used when a purchase order invoice is posted. Two vouchers are created for the invoice to track purchase price variances when standard cost is used. The offset to this account is the Purchase expenditure, uninvoiced account which is used on the receipt posting and reversed during the invoice posting. Represents costs for the inventory purchased at invoicing that is not reflected in inventory account on the balance sheet. This is a profit and loss posting for purchase price variance most commonly seen in standard cost item purchases.|
 | Fixed receipt price profit (Purchase, fixed receipt price profit*) | 510310 | Purchase price variance | Expense | Credit | No | F | Fixed receipt price loss | Used when a purchase order invoice is posted and there's a difference between the invoiced price and the default cost for the item. This account is used when the difference is higher. The offset to this account is the Fixed receipt price offset. |
 | Fixed receipt price loss (Purchase, fixed receipt price loss*) | 510310 | Purchase price variance | Expense | Debit | No | F | Fixed receipt price profit | Used when a purchase order invoice is posted and there's a difference between the invoiced price and the default cost for the item. This account is used when the difference is lower. The offset to this account is the Fixed receipt price offset. |
 | Fixed receipt price offset (Purchase, fixed receipt price offset*) | 140900 | Stock variation | Asset | Both | No | F  | |Used when a purchase order invoice is posted and there's a difference between the invoiced price and the default cost for the item. This account is the offset to the Fixed receipt price profit and loss accounts. |
@@ -112,7 +112,7 @@ The following table shows examples of the default posting types with sample main
 | Prepayment | 132190 | Prepaid expense | Asset | Debit | N | Both | | Used when processing a prepayment invoice on a purchase order. |
 
 
-\*Values shown in parentheses represent the value that is used in the**Posting type** field on the **Voucher transactions** page. You can view the **Posting type** on the **Voucher transactions** page on the **General** tab.
+\*Values shown in parentheses represent the value that is used in the **Posting type** field on the **Voucher transactions** page. You can view the **Posting type** on the **Voucher transactions** page on the **General** tab.
 
 ## Fixed asset posting with purchase orders
 
@@ -128,7 +128,7 @@ Purchase requisitions and purchase order confirmations can also be configured to
 
 ## Procurement category posting
 
-As an alternative to setting up the inventory posting for all items, a group of items, or a single item, you can set up categories and control the ledger posting by procurement categories. For more information about setting up categories and assigning them to products, go to [Sample posting profile configuration](#sample-posting-profile-configuration) earlier in this topic.
+As an alternative to setting up the inventory posting for all items, a group of items, or a single item, you can set up categories and control the ledger posting by procurement categories. For more information about setting up categories and assigning them to products, go to [Sample posting profile configuration](#sample-posting-profile-configuration) earlier in this article.
 
 When using categories with purchase orders or vendor invoices, the category hierarchy needs to be assigned to the **Procurement category hierarchy** type on the **Category hierarchy role assignments** page.
 

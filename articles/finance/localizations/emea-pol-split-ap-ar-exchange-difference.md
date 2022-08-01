@@ -2,7 +2,7 @@
 # required metadata
 
 title: Split the realized exchange difference amount into the difference of the invoice net value and the VAT amount
-description: This topic explains how to split the realized exchange difference amount into the difference of the invoice net value and the value-added tax (VAT) amount.
+description: This article explains how to split the realized exchange difference amount into the difference of the invoice net value and the value-added tax (VAT) amount.
 author: anasyash
 ms.date: 04/21/2022
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Font and background colors for input, table, and grid controls
-description: This topic provides information about the new color picker control that lets users select a color.
+description: This article provides information about the new color picker control that lets users select a color.
 author: RobinARH
 ms.date: 11/09/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the new color picker control that lets users select a color.
+This article provides information about the new color picker control that lets users select a color.
 
 Traditionally, color has been considered an ideal way to communicate with a user. For example, the color red is often used to draw the user's attention to information that is important. However, some users can't distinguish certain colors or shades, and some users are blind. Therefore, we don't recommend that you use color alone to communicate information to the user. Instead, you should use color together with a symbol or additional text to convey information to all users.
 

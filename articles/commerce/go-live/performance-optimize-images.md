@@ -2,7 +2,7 @@
 # required metadata
 
 title: Optimize images
-description: This topic explains how you can help improve website performance by optimizing image use in Microsoft Dynamics 365 Commerce.
+description: This article explains how you can help improve website performance by optimizing image use in Microsoft Dynamics 365 Commerce.
 author: mssle
 ms.date: 01/28/2022
 ms.topic: article
@@ -17,11 +17,11 @@ ms.search.validFrom: 2021-09-20
 
 [!include[banner](../includes/banner.md)]
 
-This topic explains how you can help improve website performance by optimizing image use in Microsoft Dynamics 365 Commerce during the upgrade or go-live process.
+This article explains how you can help improve website performance by optimizing image use in Microsoft Dynamics 365 Commerce during the upgrade or go-live process.
 
 ## Applies to
 
-This topic applies to the following configurations:
+This article applies to the following configurations:
 
 - **Version:** Commerce 10.0.16 or later
 - **Component:** Business to consumer (B2C) or business to business (B2B)

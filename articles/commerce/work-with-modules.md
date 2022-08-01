@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work with modules
-description: This topic describes how and when to use modules in Microsoft Dynamics 365 Commerce.
+description: This article describes how and when to use modules in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 09/15/2020
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how and when to use modules in Microsoft Dynamics 365 Commerce.
+This article describes how and when to use modules in Microsoft Dynamics 365 Commerce.
 
 Modules are logical building blocks that make up your page structure, and they have various purposes and scopes. Some modules are high-level containers, and their only purpose is to hold and organize other modules (child modules). Other modules, such as a simple image placement module, have a very specific purpose. Other modules, such as a carousel module, fall somewhere between those two categories.
 
@@ -155,7 +155,7 @@ To configure a container module on a page, follow these steps.
 
 1. Select a container module on your page (for example, a carousel or fluid container module).
 1. In the properties pane on the right, expand the nested controls by selecting the headers, and set any required control values.
-1. In the outline pane on the left, select the ellipsis button next to the name of either the container or any slots inside the container, and then select **Add Module**. Then, add child modules to the selected container. For more information, see the [Work with modules](#add-a-module) section earlier in this topic.
+1. In the outline pane on the left, select the ellipsis button next to the name of either the container or any slots inside the container, and then select **Add Module**. Then, add child modules to the selected container. For more information, see the [Work with modules](#add-a-module) section earlier in this article.
 1. If multiple child modules exist as siblings in a parent container, you can change their display order in the parent container. Select the ellipsis button for a module, and then use the up arrow and down arrow buttons.
 
 ## Additional resources

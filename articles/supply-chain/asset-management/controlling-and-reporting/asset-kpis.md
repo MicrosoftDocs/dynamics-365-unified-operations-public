@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset KPIs
-description: This topic explains asset KPIs in Asset Management.
+description: This article explains asset KPIs in Asset Management.
 author: johanhoffmann
 ms.date: 08/23/2019
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Use Barcode data sources to generate bar code images
-description: This topic explains how to use Barcode data sources to generate bar code images.
+description: This article explains how to use Barcode data sources to generate bar code images.
 author: NickSelin
 ms.date: 10/21/2020
 ms.topic: article
@@ -82,7 +82,7 @@ When you configure a **Barcode** data source, you can define specific rendering 
 >
 > When you bind a **Barcode** data source to a cell element in a format, and the cell element represents either a Word content control or an Excel picture, the data source is presented in that binding as a function that has a single parameter of the **String** type. You must use this parameter to specify the text that should be transformed into a bar code image and read when a generated bar code is scanned.
 
-For more information about this feature, complete the examples in this topic.
+For more information about this feature, complete the examples in this article.
 
 ## Example: Generate a payment check that contains a bar code that encodes the payable amount
 
@@ -117,7 +117,7 @@ To complete this example, you must have access to the USMF company in Finance fo
 - Electronic reporting functional consultant
 - System administrator
 
-If you haven't yet completed the example in the [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md) topic, download the following configurations of the sample ER solution.
+If you haven't yet completed the example in the [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md) article, download the following configurations of the sample ER solution.
 
 | Content description         | File name                   |
 |-----------------------------|-----------------------------|
@@ -133,7 +133,7 @@ Additionally, download the following Excel file that contains the modified templ
 ### <a name="ExampleProvider"></a>Activate a configuration provider
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
-2. On the **Localization configurations** page, in the **Configuration providers** section, make sure that the [configuration provider](general-electronic-reporting.md#Provider) for the **Litware, Inc.** sample company is listed, and that it's marked as active. If it isn't listed, or if it isn't marked as active, follow the steps in the [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) topic.
+2. On the **Localization configurations** page, in the **Configuration providers** section, make sure that the [configuration provider](general-electronic-reporting.md#Provider) for the **Litware, Inc.** sample company is listed, and that it's marked as active. If it isn't listed, or if it isn't marked as active, follow the steps in the [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) article.
 
 ![Setting the sample company to active on the Localization configurations page.](./media/er-barcode-data-source-active-provider.png)
 
@@ -289,7 +289,7 @@ The draft version of the selected format is marked as available for use when the
 
 ### <a name="ExampleConvertToPDF"></a>Convert the generated check to a PDF
 
-As described in the [Generate printable FTI forms](er-generate-printable-fti-forms.md#finland) topic, you can use a special font to produce bar codes in a generated document. In this case, additional transformations of the generated document might depend on the availability of that font in the transformation environment. For example, if you try to convert a document to PDF format or preview it in an environment where the font is missing, bar codes won't be rendered correctly.
+As described in the [Generate printable FTI forms](er-generate-printable-fti-forms.md#finland) article, you can use a special font to produce bar codes in a generated document. In this case, additional transformations of the generated document might depend on the availability of that font in the transformation environment. For example, if you try to convert a document to PDF format or preview it in an environment where the font is missing, bar codes won't be rendered correctly.
 
 However, when you use the **Barcode** data source to produce bar codes, the rendering of those bar codes doesn't depend on any font. Therefore, you can easily convert documents that contain the bar codes to PDF format. The following illustration shows the preview of a generated payment check that has been [converted](electronic-reporting-destinations.md#OutputConversionToPDF) to a PDF, based on the setting of the configured ER [destination](electronic-reporting-destinations.md).
 

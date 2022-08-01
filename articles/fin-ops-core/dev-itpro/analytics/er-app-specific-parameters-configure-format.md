@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure ER formats to use parameters that are specified per legal entity
-description: This topic explains how you can configure Electronic reporting (ER) formats to use parameters that are specified per legal entity.
+description: This article explains how you can configure Electronic reporting (ER) formats to use parameters that are specified per legal entity.
 author: NickSelin
 ms.date: 04/02/2021
 ms.topic: article
@@ -42,13 +42,13 @@ The ER application-specific parameters feature lets power users configure data f
 
 ## Prerequisites
 
-To complete the examples in this topic, you must have access to the instance of Regulatory Configuration Services (RCS) that has been provisioned for the same tenant as Finance for one of the following roles:
+To complete the examples in this article, you must have access to the instance of Regulatory Configuration Services (RCS) that has been provisioned for the same tenant as Finance for one of the following roles:
 
 - Electronic reporting developer
 - Electronic reporting functional consultant
 - System administrator
 
-We recommend that you complete the steps in the [Support parameterized calls of ER data sources of CALCULATED FIELD type](er-calculated-field-type.md) topic. If you've already completed those steps, you can skip the steps in the **Import ER configurations into RCS** section that follows.
+We recommend that you complete the steps in the [Support parameterized calls of ER data sources of CALCULATED FIELD type](er-calculated-field-type.md) article. If you've already completed those steps, you can skip the steps in the **Import ER configurations into RCS** section that follows.
 
 ## Import ER configurations into RCS
 
@@ -63,7 +63,7 @@ Download and locally store the following ER configurations.
 
 Next, sign in to your RCS instance.
 
-In this example, you will create a configuration for the Litware, Inc sample company. Before you can complete this procedure, you must complete the steps in the [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) topic in RCS.
+In this example, you will create a configuration for the Litware, Inc sample company. Before you can complete this procedure, you must complete the steps in the [Create a configuration provider and mark it as active](tasks/er-configuration-provider-mark-it-active-2016-11.md) article in RCS.
 
 1.	On the default dashboard, select **Electronic reporting**.
 2.	Select **Reporting configurations**.
@@ -305,7 +305,7 @@ Repeat steps in this section for parent items of the **Format to learn how to lo
 -	Mapping to learn parameterized calls.xml
 -	Model to learn parameterized calls.xml
 
-To learn how to use the configured **Format to learn how to look up LE data** ER format to set up legal entity–dependent sets of tax codes to filter tax transactions by different taxation levels, complete the steps in the [Set up the parameters of an ER format per legal entity](er-app-specific-parameters-set-up.md) topic.
+To learn how to use the configured **Format to learn how to look up LE data** ER format to set up legal entity–dependent sets of tax codes to filter tax transactions by different taxation levels, complete the steps in the [Set up the parameters of an ER format per legal entity](er-app-specific-parameters-set-up.md) article.
 
 ## Additional resources
 

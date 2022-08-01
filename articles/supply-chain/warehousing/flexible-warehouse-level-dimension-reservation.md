@@ -2,7 +2,7 @@
 # required metadata
 
 title: Flexible warehouse-level dimension reservation policy
-description: This topic describes the inventory reservation policy that lets businesses that sell batch-tracked products and run their logistics as WMS-enabled operations reserve specific batches for customer sales orders, even though the reservation hierarchy that is associated with the products disallows reservation of specific batches.
+description: This article describes the inventory reservation policy that lets businesses that sell batch-tracked products and run their logistics as WMS-enabled operations reserve specific batches for customer sales orders, even though the reservation hierarchy that is associated with the products disallows reservation of specific batches.
 author: perlynne
 ms.date: 07/31/2020
 ms.topic: article
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-When an inventory reservation hierarchy of the *Batch-below\[location\]* type is associated with products, businesses that sell batch-tracked products and run their logistics as operations that are enabled for the Microsoft Dynamics 365 Warehouse Management System (WMS) can't reserve specific batches of those products for customer sales orders.
+When an inventory reservation hierarchy of the *Batch-below\[location\]* type is associated with products, businesses that sell batch-tracked products and run their logistics as operations that are enabled for the warehouse management processes (WMS) can't reserve specific batches of those products for customer sales orders.
 
 In a similar way, specific license plates can't be reserved for products on sales orders when those products are associated with the default reservation hierarchy.
 
-This topic describes the inventory reservation policy that lets these businesses reserve specific batches or license plates, even when the products are associated with a *Batch-below\[location\]* reservation hierarchy.
+This article describes the inventory reservation policy that lets these businesses reserve specific batches or license plates, even when the products are associated with a *Batch-below\[location\]* reservation hierarchy.
 
 ## Inventory reservation hierarchy
 

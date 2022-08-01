@@ -1,6 +1,6 @@
 ---
 title: Application checker
-description: This topic describes the application checker tool.
+description: This article describes the application checker tool.
 author: AndreasHassing
 ms.date: 09/22/2020
 ms.topic: article

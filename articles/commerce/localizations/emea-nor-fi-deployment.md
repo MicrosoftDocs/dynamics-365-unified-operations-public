@@ -2,7 +2,7 @@
 # required metadata
 
 title: Deployment guidelines for cash registers for Norway
-description: This topic provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for Norway.
+description: This article provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for Norway.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2019-3-1
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for Norway. The localization consists of several extensions of components. These extensions let you perform actions such as printing custom fields on receipts, registering additional audit events, sales transactions, and payment transactions in point of sale (POS), digitally signing sales transactions, and printing reports in local formats. For more information about the localization for Norway, see [Cash register functionality for Norway](./emea-nor-cash-registers.md). For more information about how to configure Commerce for Norway, see [Set up Commerce for Norway](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
+This article provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for Norway. The localization consists of several extensions of components. These extensions let you perform actions such as printing custom fields on receipts, registering additional audit events, sales transactions, and payment transactions in point of sale (POS), digitally signing sales transactions, and printing reports in local formats. For more information about the localization for Norway, see [Cash register functionality for Norway](./emea-nor-cash-registers.md). For more information about how to configure Commerce for Norway, see [Set up Commerce for Norway](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
 
 > [!WARNING]
 > Because of limitations of the [new independent packaging and extension model](../dev-itpro/build-pipeline.md), it can't currently be used for this localization functionality. You must use the version of the digital signing sample for Norway in the previous version of the Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Deployment guidelines for cash registers for Norway (legacy)](./emea-nor-loc-deployment-guidelines.md).

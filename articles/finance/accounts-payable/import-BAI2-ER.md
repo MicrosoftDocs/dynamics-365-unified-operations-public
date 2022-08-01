@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up advanced bank reconciliation import by using Electronic reporting
-description: This topic explains how to use Electronic reporting to set up the advanced bank reconciliation import process.
+description: This article explains how to use Electronic reporting to set up the advanced bank reconciliation import process.
 author: panolte
 ms.date: 03/30/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 Finance. This topic explains how to set up the import functionality for your bank statements. The setup for bank statement import varies, depending on the format of your electronic bank statement. Microsoft Dynamics 365 Finance supports three bank statement formats: ISO20022, MT940 and BAI2. 
+The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 Finance. This article explains how to set up the import functionality for your bank statements. The setup for bank statement import varies, depending on the format of your electronic bank statement. Microsoft Dynamics 365 Finance supports three bank statement formats: ISO20022, MT940 and BAI2. 
 
 ## Set up the Electronic reporting configuration
 

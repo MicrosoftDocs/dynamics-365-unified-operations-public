@@ -2,7 +2,7 @@
 # required metadata
 
 title: Solve dependencies among models by using delegates during code migration
-description: This topic explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
+description: This article explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
 author: maertenm
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
+This article explains how delegate methods serve as a means for defining a contract between the delegate instance and the delegate handler.
 
 ## Overview
 
-Finance and Operations is split into several models, with each model in separate package. The principal 3 models are Application Platform, Application Foundation, and Application Suite. With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above. For example, in this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements. Application Foundation can access its own elements and those of Application Platform. Finally, Application Platform can only access its own elements. To learn about models and packages, see [Models and packages](../dev-tools/models.md).
+Finance and operations is split into several models, with each model in separate package. The principal 3 models are Application Platform, Application Foundation, and Application Suite. With the model split, a hierarchy has been created where a higher model can take dependencies and access elements in the models below, but not in models above. For example, in this setup, Application Suite has full access to its elements, Application Foundation’s elements, and Application Platform’s elements. Application Foundation can access its own elements and those of Application Platform. Finally, Application Platform can only access its own elements. To learn about models and packages, see [Models and packages](../dev-tools/models.md).
 
 [![Del1.](./media/del1.jpg)](./media/del1.jpg) 
 
@@ -62,7 +62,7 @@ In order for a delegate to be properly handled, the delegate method declaration,
 
 ![static delegate handler.](media/static-delegate-handler.png)
 
-Due to the fact that delegates do not have a return value, an EventHandlerResult is passed as a parameter to provide access to the needed result value after the delegate has returned. This topic focuses on static delegate handlers using the SubscribesTo. The delegate functionality from Dynamics AX 2012 remains. [How to use X++ Delegates in Dynamics AX 2012](https://blogs.msdn.com/b/x/archive/2011/08/02/how-to-use-x-delegates-in-dynamics-ax-2012.aspx) is a great blog post on MSDN by Microsoft developer Marcos Calderon on delegate concepts in Dynamics AX 2012. These concepts still apply.
+Due to the fact that delegates do not have a return value, an EventHandlerResult is passed as a parameter to provide access to the needed result value after the delegate has returned. This article focuses on static delegate handlers using the SubscribesTo. The delegate functionality from Dynamics AX 2012 remains. [How to use X++ Delegates in Dynamics AX 2012](https://blogs.msdn.com/b/x/archive/2011/08/02/how-to-use-x-delegates-in-dynamics-ax-2012.aspx) is a great blog post on MSDN by Microsoft developer Marcos Calderon on delegate concepts in Dynamics AX 2012. These concepts still apply.
 
 ## Example scenarios
 ### Overlaying an existing delegate
@@ -75,7 +75,7 @@ When comparing this overlay with the code from Dynamics AX 2012, this is a simpl
 
 [![5.](./media/51.png)](./media/51.png) 
 
-However, the section for Finance and Operations does not appear to resemble either of the Dynamics AX 2012 code snippets. 
+However, the section for finance and operations does not appear to resemble either of the Dynamics AX 2012 code snippets. 
 
 [![6.](./media/61.png)](./media/61.png) 
 

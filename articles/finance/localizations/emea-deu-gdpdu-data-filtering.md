@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add filters to an audit file configuration
-description: This topic explains how to add a data filter in the German audit file.
+description: This article explains how to add a data filter in the German audit file.
 author: liza-golub
 ms.date: 02/09/2021
 ms.topic: article
@@ -24,7 +24,7 @@ ms.author: elgolu
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to add a filter for data in the German audit file. For example, you can add a filter for the **Posting layer** field in the **General journal entry** table.
+This article explains how to add a filter for data in the German audit file. For example, you can add a filter for the **Posting layer** field in the **General journal entry** table.
 
 As explained in [German audit file (GDPdU/GoBD) overview](emea-deu-gdpdu-audit-data-export.md#sachkontobuchungen), the **SPEZIALBUCHUNG** (Posting layer) field of **Sachkontobuchungen** data set is collected from the **$GeneralJournalEntry/PostingLayer** electronic reporting data source path. To add the possibility of filtering data in the report by the **SPEZIALBUCHUNG** (Posting layer) field, complete the following steps:
 

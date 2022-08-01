@@ -2,7 +2,7 @@
 # required metadata
 
 title: Accounts for automatic transactions
-description: This topic explains how accounts for automatic transactions are used for posting through Microsoft Dynamics 365, and provides examples for key accounts for automatic transactions.
+description: This article explains how accounts for automatic transactions are used for posting through Microsoft Dynamics 365, and provides examples for key accounts for automatic transactions.
 author: rachel-profitt
 ms.date: 12/03/2021
 ms.topic: article

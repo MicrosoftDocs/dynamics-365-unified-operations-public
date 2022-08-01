@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data entity wizard rules
-description: This topic provides information about the natural key expansion of surrogate foreign key fields and the expansion of child/parent relations.
+description: This article provides information about the natural key expansion of surrogate foreign key fields and the expansion of child/parent relations.
 author: peakerbl
 ms.date: 10/26/2017
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic provides information about the natural key expansion of surrogate foreign key fields and the expansion of child/parent relations.
+This article provides information about the natural key expansion of surrogate foreign key fields and the expansion of child/parent relations.
 
 ## Natural key expansion of surrogate foreign keys
 

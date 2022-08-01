@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dual-use goods
-description: This topic explains how to keep track of products that are identified as dual-use goods, store certificate numbers for each relevant product and destination country, and print valid certificate numbers on relevant invoices, packing slips, and/or sales orders.
+description: This article explains how to keep track of products that are identified as dual-use goods, store certificate numbers for each relevant product and destination country, and print valid certificate numbers on relevant invoices, packing slips, and/or sales orders.
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
@@ -46,7 +46,7 @@ Consider the following scenario:
 
 6. The order includes product X-100, the product is being shipped to France, and a French certificate exists for the product. However, the certificate has expired. Therefore, you receive the following warning message: "Dual use certificates for one or more dual-use items in this sales order aren't valid. Do you want to proceed with the confirmation?"
 
-This topic explains how to configure all the settings that are required to set up dual-use goods and support this scenario.
+This article explains how to configure all the settings that are required to set up dual-use goods and support this scenario.
 
 ## Define dual-use requirements for each relevant country
 

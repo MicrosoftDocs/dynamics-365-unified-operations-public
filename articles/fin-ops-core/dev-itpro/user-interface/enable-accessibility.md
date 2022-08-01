@@ -2,7 +2,7 @@
 # required metadata
 
 title: Accessibility in forms, products, and controls
-description: This topic describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
+description: This article describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
 author: RobinARH
 ms.date: 08/13/2018
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
+This article describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
 
 Accessibility is about inclusion, that is, a person with a disability can perform the same task as a person without that disability. Making an accessible control or form should be as fundamental as making it secure, high-performing, or easy-to-understand.
 
@@ -161,7 +161,7 @@ Complex interactions can be learned, but current state isn’t always easy to de
 
 #### Describe applicable context menu
 
-Finance and Operations apps provide a context menu. When the application author has provided functionality to the current control or context, you can announce that functionality.
+Finance and operations apps provide a context menu. When the application author has provided functionality to the current control or context, you can announce that functionality.
 
 - *aria-haspopup* - Indicates that the element has a pop-up context menu or sub-level menu.
 

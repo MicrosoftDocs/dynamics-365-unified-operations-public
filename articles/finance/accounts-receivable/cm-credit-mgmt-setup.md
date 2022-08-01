@@ -2,7 +2,7 @@
 # required metadata
 
 title: Credit management parameters setup
-description: This topic describes the options that you can use to configure Credit management to meet your business's requirements.
+description: This article describes the options that you can use to configure Credit management to meet your business's requirements.
 author: JodiChristiansen
 ms.date: 12/10/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the options that you can use to configure Credit management to meet your business's requirements. To use Credit management features, set up the parameters on the **Credit and collections parameters** page (**Credit and collections \> Setup \> Credit and collections parameters**).
+This article describes the options that you can use to configure Credit management to meet your business's requirements. To use Credit management features, set up the parameters on the **Credit and collections parameters** page (**Credit and collections \> Setup \> Credit and collections parameters**).
 
 ## Credit parameters
 

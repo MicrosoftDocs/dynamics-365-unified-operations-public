@@ -1,10 +1,10 @@
 ---
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.23 (January 2022)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.23. 
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.23. 
 author: kamaybac
 ms.date: 10/15/2021
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.23. This version has a build number of 10.0.1037 and is available as follows:
+This article lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.23. This version has a build number of 10.0.1037 and is available as follows:
 
 - **Preview of release:** October 2021
 - **General availability of release (self-update):** December 2021
@@ -25,7 +25,7 @@ This topic lists features that are either new or changed in the Microsoft Dynami
 
 ## Features included in this release
 
-The following table lists the features that are included in this release. The *Feature* column provides links to the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), where you can see the official release dates for each feature. The *More information* column provides more details and/or links to related documentation. To determine how to turn on a feature, see the *Enabled by* column. For more information about how to use feature management, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). We might update this topic to include features that made it into the build after this topic was initially published.
+The following table lists the features that are included in this release. The *Feature* column provides links to the [release plan](/dynamics365-release-plan/2021wave2/finance-operations/dynamics365-supply-chain-management/planned-features), where you can see the official release dates for each feature. The *More information* column provides more details and/or links to related documentation. To determine how to turn on a feature, see the *Enabled by* column. For more information about how to use feature management, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). We might update this article to include features that made it into the build after this article was initially published.
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
@@ -51,7 +51,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Inventory and warehouse management | (Russia) Use translations to local language in country or region-specific primary forms in Inventory management | For Russian localizations of Supply Chain Management, this feature enables the use of Russian translations for product/item names and units of measure in the following Russian-specific inventory printouts: Counting list (INV-3), Counting list (INV-5), and Counting list (INV-6). |
 | Master planning | Azure Machine Learning Service for demand forecasting | This feature enables the Azure Machine Learning Service to generate demand forecasts based on historical data. For more information, see [Demand forecasting setup](../master-planning/demand-forecasting-setup.md). |
 | Procurement and sourcing | Clean up purchase-order update history | This feature lets you clean up temporary historical records related to purchase-order updates. It adds a new button called **Clean up purchase update history** to the Action Pane on the **All purchase orders** page. This feature is enabled by default. |
-| Production control | (Preview) Auto-picking of warehouse enabled materials for auto-posted picking lists | This feature lets you auto-pick and resolve inventory dimensions for auto-posted, derived, and backflushed picking list journals. |
+| Production control | Auto-picking of warehouse enabled materials for auto-posted picking lists | This feature lets you auto-pick and resolve inventory dimensions for auto-posted, derived, and backflushed picking list journals. |
 | Production control | Validate expiration of raw materials against planned consumption date | This feature changes how batch expiration dates are validated when reserving a batch of raw material to be used during production. When this feature is enabled, the batch expiration date is validated against the planned consumption date (the raw material date), as established on the production BOM line or batch order formula line. When this feature is disabled, the batch expiration date is validated against the planned delivery date of the production or batch order (as previously). |
 | Sales and marketing | Clean up sales update history based on age | This feature lets you set the maximum age of records to keep when running the **Sales update history cleanup** periodic task. Older records will be deleted. This is useful for when you set the task to run periodically because the age is always calculated relative to the date the task is run. Without this feature, you can only set a specific date for the oldest records to keep. For more information, see [Schedule sales history data cleanup](../sales-marketing/sales-update-history-cleanup-performance-improvements.md). |
 | Sales and marketing | Improve "Top 100" customers report performance | This feature improves the performance of the **Top 100** customers report by always running the report across all customers (which is its intended use) rather than by allowing custom queries. When this feature is enabled, all **Records to include** settings are disabled in the **Top 100** report dialog. |
@@ -59,9 +59,9 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 ## New and updated documentation resources
 
-We have recently added or significantly updated the following help topics. These topics aren't necessarily related to the new features that were added for this release, as listed in the previous section. However, they might help you to get more out of existing features.
+We have recently added or significantly updated the following help articles. These articles aren't necessarily related to the new features that were added for this release, as listed in the previous section. However, they might help you to get more out of existing features.
 
-| Feature area | New or updated topics |
+| Feature area | New or updated articles |
 |---|---|
 | Engineering change management | [Engineering attributes and engineering attribute search](../engineering-change-management/engineering-attributes-and-search.md) now describes how engineering attribute inheritance works. |
 | Master planning | [Master planning with demand forecasts](../master-planning/planning-optimization/demand-forecast.md) and [Forecast reduction keys](../master-planning/reduction-keys.md) now provide more information about how to work with reduction keys. |
@@ -70,16 +70,16 @@ We have recently added or significantly updated the following help topics. These
 | Master planning | [Supply schedule](../master-planning/supply-schedule.md) |
 | Warehouse management | [Global mobile device parameters](../warehousing/mobile-device-parameters.md) |
 | Warehouse management | [Anchoring](../warehousing/anchoring.md) |
-| Sales and marketing | Intercompany trade is now described in detail, starting with [Set up intercompany trade](../sales-marketing/intercompany-trade-set-up.md) and its related topics. |
+| Sales and marketing | Intercompany trade is now described in detail, starting with [Set up intercompany trade](../sales-marketing/intercompany-trade-set-up.md) and its related articles. |
 | Sales and marketing | [Sales history cleanup performance improvements](../sales-marketing/sales-update-history-cleanup-performance-improvements.md) |
-| Inventory management | Inventory Visibility documentation has been expanded and updated, starting with [Inventory Visibility Add-in overview](../inventory/inventory-visibility.md) and its related topics. |
+| Inventory management | Inventory Visibility documentation has been expanded and updated, starting with [Inventory Visibility Add-in overview](../inventory/inventory-visibility.md) and its related articles. |
 | Warehouse management | [Mobile device user accounts](../warehousing/mobile-device-work-users.md) |
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.23 includes platform updates. To learn more, see [Platform updates for version 10.0.23 of Finance and Operations apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.23 includes platform updates. To learn more, see [Platform updates for version 10.0.23 of finance and operations apps (November 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-23.md).
 
 ### Bug fixes
 
@@ -93,13 +93,14 @@ Check out the [Dynamics 365 and industry clouds: 2021 release wave 2 plan](/dyna
 
 ### Removed and deprecated Supply Chain Management features
 
-The [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic describes features that have been or are scheduled to be removed or deprecated for Supply Chain Management.
+The [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) article describes features that have been or are scheduled to be removed or deprecated for Supply Chain Management.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

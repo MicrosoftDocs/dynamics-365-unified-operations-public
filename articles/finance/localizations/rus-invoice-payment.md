@@ -2,7 +2,7 @@
 # required metadata
 
 title: Invoices for payment (Russia)
-description: This topic explains how to post and print invoices for payment in Microsoft Dynamics 365 Finance in Russia.
+description: This article explains how to post and print invoices for payment in Microsoft Dynamics 365 Finance in Russia.
 author: ShylaThompson
 ms.date: 10/08/2018
 ms.topic: article

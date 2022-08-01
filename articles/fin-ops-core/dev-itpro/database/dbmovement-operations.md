@@ -2,7 +2,7 @@
 # required metadata
 
 title: Database movement operations home page
-description: This topic provides links to quick start guides and tutorials available for Database Movement features in Lifecycle Services. 
+description: This article provides links to quick start guides and tutorials available for Database Movement features in Lifecycle Services. 
 author: laneswenka
 ms.date: 06/04/2021
 ms.topic: overview
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1
 
 Database movement operations are a suite of self-service actions that can be used as part of Data Application Lifecycle Management (also referred to as *DataALM*).  These actions provide structured processes for common implementation scenarios such as golden configuration promotion, debugging/diagnostics, destructive testing, and general refresh for training purposes.
 
-In this topic, you will learn how to use database movement operations to perform refresh, export, import, and various flavors of point-in-time restore.
+In this article, you will learn how to use database movement operations to perform refresh, export, import, and various flavors of point-in-time restore.
 
 ## Database movement scenarios and quick start guides
 The following table shows the various scenarios that are supported and a link to a quick start guide for each scenario. 

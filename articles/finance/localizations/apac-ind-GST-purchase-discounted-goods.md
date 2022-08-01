@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchases of discounted goods 
-description: This topic information about the purchase of goods where there is a discount.
+description: This article information about the purchase of goods where there is a discount.
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article

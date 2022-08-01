@@ -2,7 +2,7 @@
 # required metadata
 
 title: SEPA credit transfer overview
-description: This topic provides general information about ISO 20022 credit transfers, which include Single Euro Payments Area (SEPA) credit transfers and any other electronic payments for vendors. 
+description: This article provides general information about ISO 20022 credit transfers, which include Single Euro Payments Area (SEPA) credit transfers and any other electronic payments for vendors. 
 author: sunfzam
 ms.date: 06/20/2017
 ms.topic: overview
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides general information about ISO 20022 credit transfers, which include Single Euro Payments Area (SEPA) credit transfers and any other electronic payments for vendors. A SEPA credit transfer is a specific type of payment in euros from one company or individual to another company or individual. The topic also explains how to set up and transmit a credit transfer payment file.
+This article provides general information about ISO 20022 credit transfers, which include Single Euro Payments Area (SEPA) credit transfers and any other electronic payments for vendors. A SEPA credit transfer is a specific type of payment in euros from one company or individual to another company or individual. The article also explains how to set up and transmit a credit transfer payment file.
 
 ## What is a credit transfer message?
 The credit transfer message is a request that an initiating party (your company) sends to move funds from its own account to a creditor. There are many country/region-specific and bank-specific implementations of credit transfer messages. Some of them are used within one country/region, and some are becoming standards. One well-established global standard is ISO 20022 and its initiation messages, such as Credit transfer. The following illustration shows the relations and coverage for selected credit transfer messages. 
@@ -56,7 +56,7 @@ A SEPA credit transfer is a payment from one company or individual to another co
 The credit transfer payment format for European countries is implemented by using the Electronic reporting (ER) and Methods of payment functionality in Microsoft Dynamics 365 Finance. A few credit transfer formats that are used in other regions still use the legacy payment framework. Among many other formats, there are twelve ISO 20022 credit transfer file formats that are available. These export formats conform to the SEPA ISO 20022 XML standard. They are used to generate non-euro payment transfers for countries/regions where they are used and euro payments as specified in version 8.2 of the SEPA Credit Transfer Scheme Rulebook that the EPC releases. Before you can implement credit transfers, you must contact your bank to obtain the software that is required in order to upload electronic banking files. You will use that software to transfer the XML files that contain payment orders to your bank.
 
 ## What credit transfer formats are currently supported?
-You should always go to the Shared asset library on Microsoft Dynamics Lifecycle services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**. The next section, "What do I have to set up?", provides a link to the topic that explains how to create an LCS repository to review available configurations and import selected configurations.
+You should always go to the Shared asset library on Microsoft Dynamics Lifecycle services (LCS) and view the most up-to-date list of available files that have an asset type of **GER configuration**. The next section, "What do I have to set up?", provides a link to the article that explains how to create an LCS repository to review available configurations and import selected configurations.
 
 ## What do I have to set up?
 -   Before you can create credit transfer files, at least one active credit transfer configuration must be imported into your ER configurations. For instructions, see [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md).

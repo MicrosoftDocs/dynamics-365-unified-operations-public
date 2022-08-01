@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update the environment administrator
-description: This topic explains how to change the environment administrator for a Finance and Operations apps environment in Microsoft Dynamics Lifecycle Services (LCS).
+description: This article explains how to change the environment administrator for a finance and operations apps environment in Microsoft Dynamics Lifecycle Services (LCS).
 author: laneswenka
 ms.date: 05/10/2022
 ms.topic: article
@@ -19,7 +19,7 @@ ms.search.validFrom: 2018-03-05
 
 [!include [banner](../includes/banner.md)]
 
-When you create a Finance and Operations apps environment in Microsoft Dynamics Lifecycle Services (LCS), one of the configuration options requires that you select a user as the environment administrator. This user becomes the email account that is associated with the default **Admin** user record that the System Administrator role is assigned to in Finance and Operations apps.
+When you create a finance and operations apps environment in Microsoft Dynamics Lifecycle Services (LCS), one of the configuration options requires that you select a user as the environment administrator. This user becomes the email account that is associated with the default **Admin** user record that the System Administrator role is assigned to in finance and operations apps.
 
 The Admin user is critical in some situations in the apps, such as when system batch jobs are run. These jobs must run with administrator privileges. They should not be associated with a regular user from your company, because that user's Azure Active Directory (Azure AD) account will be disabled if they leave your organization.
 
@@ -35,6 +35,7 @@ To change the environment administrator, you must be a project owner in the LCS 
 4. Select **Save**.
 
 > [!IMPORTANT]
-> Changes to the environment administrator account cause downtime in the target Finance and Operations apps environment. Therefore, use this capability in the appropriate way and only after you schedule the downtime in your organization.
+> Changes to the environment administrator account cause downtime in the target finance and operations apps environment. Therefore, use this capability in the appropriate way and only after you schedule the downtime in your organization.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

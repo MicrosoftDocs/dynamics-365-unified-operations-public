@@ -2,7 +2,7 @@
 # required metadata
 
 title: GETLABELTEXT ER function
-description: This topic provides information about how the GETLABELTEXT Electronic reporting (ER) function is used.
+description: This article provides information about how the GETLABELTEXT Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 03/18/2022
 ms.prod: 

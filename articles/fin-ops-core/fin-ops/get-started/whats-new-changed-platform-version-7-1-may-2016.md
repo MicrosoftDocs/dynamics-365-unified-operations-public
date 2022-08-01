@@ -243,7 +243,7 @@ This article describes features that are either new or changed in Microsoft Dyna
 
 ## Additional resources
 
-[What's new or changed in Finance and Operations home page](whats-new-changed.md)
+[What's new or changed in finance and operations home page](whats-new-changed.md)
 
 [New or updated task guides (May 2016)](new-updated-task-guides-available-may-2016.md)
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Custom Help Toolkit - The HtmlFromRepoGenerator tool
-description: This topic describes the HtmlFromRepoGenerator tool that is included in the Custom Help Toolkit for Finance and Operations apps. 
+description: This article describes the HtmlFromRepoGenerator tool that is included in the Custom Help Toolkit for finance and operations apps. 
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: article
@@ -38,13 +38,13 @@ The **HtmlFromRepoGenerator** tool provides functionality that supports the crea
 - Clone a Microsoft documentation repository (repo).
 - Remove developer and admin content from your clone of the Microsoft repo.
 - Update links to files that are no longer present in the clone.
-- Update the value of the **ms.locale** property so that it matches the language options that are supported by the Finance and Operations client.
+- Update the value of the **ms.locale** property so that it matches the language options that are supported by the finance and operations client.
 
     The language descriptors that the client uses differ from the language descriptors that are used in the corresponding GitHub repos. Before localized custom Help can be called, the language descriptors in the source content must be changed so that they match the client's languages. For more information, see [Language and locale descriptors in the product and in Help](language-locale.md).
 
 - Generate HTML files that can be used to publish content.
 
-    The HTML files will be generated in the **d365F-O** subfolder. The files are generated based on style sheets and templates that are part of the tool. For more information, see the [Modifying the styling of the generated HTML files](#modifying-the-styling-of-the-generated-html-files) section of this topic.
+    The HTML files will be generated in the **d365F-O** subfolder. The files are generated based on style sheets and templates that are part of the tool. For more information, see the [Modifying the styling of the generated HTML files](#modifying-the-styling-of-the-generated-html-files) section of this article.
 
 - Compare a localized Microsoft repo to the en-US repo to identify differences and update links accordingly.
 
@@ -78,7 +78,7 @@ The following additional parameters are used when the tool is run against the lo
 |-----------|-------------|
 | EnRepo | Specify the URL of the en-US repo. This parameter is optional if you run the tool against a previously cloned repo. The URL of the Microsoft documentation repo for English (United States) is `https://github.com/MicrosoftDocs/Dynamics-365-Unified-Operations-public`. |
 | EnOut | Specify the folder where the en-US repo exists, or the folder to clone it to. If you run the tool against a previously cloned repo, this folder must not already exist. |
-| Lng | Specify the language value that should be used for **ms.locale** metadata in the generated HTML files. The value must correspond to the value that is specified in the language settings of the Finance and Operations client. If this parameter isn't set, the tool uses **en-US**. For more information, see [Language and locale descriptors in the product and in Help](language-locale.md). |
+| Lng | Specify the language value that should be used for **ms.locale** metadata in the generated HTML files. The value must correspond to the value that is specified in the language settings of the finance and operations client. If this parameter isn't set, the tool uses **en-US**. For more information, see [Language and locale descriptors in the product and in Help](language-locale.md). |
 | Rtl | Include this parameter if the language uses right-to-left (RTL) formatting. Examples of RTL languages include Arabic and Hebrew. |
 
 ## Examples

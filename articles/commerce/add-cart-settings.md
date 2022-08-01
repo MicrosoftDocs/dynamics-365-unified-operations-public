@@ -2,7 +2,7 @@
 # required metadata
 
 title: Apply add product to cart settings
-description: This topic covers "Add product to cart" settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
+description: This article covers "Add product to cart" settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
 ms.date: 07/08/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic covers **Add product to cart** settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
+This article covers **Add product to cart** settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 
 Different workflows are supported when a product is added to the cart on a Dynamics 365 Commerce e-commerce site. For example, the site user might be taken to the cart page. Alternatively, the user might remain on the current page but receive a notification that confirms that the product was added to the cart.
 

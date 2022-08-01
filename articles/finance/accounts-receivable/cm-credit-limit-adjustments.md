@@ -2,7 +2,7 @@
 # required metadata
 
 title: Credit limit adjustments
-description: This topic explains how to set up and add credit limit adjustments.
+description: This article explains how to set up and add credit limit adjustments.
 author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article

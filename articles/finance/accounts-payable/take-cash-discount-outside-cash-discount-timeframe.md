@@ -2,7 +2,7 @@
 # required metadata
 
 title: Take a cash discount outside the cash discount period
-description: This topic provides two scenarios that show how a cash discount can be taken even if the payment is made outside the cash discount period.
+description: This article provides two scenarios that show how a cash discount can be taken even if the payment is made outside the cash discount period.
 author: abruer
 ms.date: 08/22/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides two scenarios that show how a cash discount can be taken even if the payment is made outside the cash discount period.
+This article provides two scenarios that show how a cash discount can be taken even if the payment is made outside the cash discount period.
 
 On June 28, April creates an invoice for 2,000.00 for vendor 3052. The invoice has a cash discount of 1 percent if the invoice is paid in 14 days.
 

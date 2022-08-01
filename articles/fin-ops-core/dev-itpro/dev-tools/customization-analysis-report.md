@@ -1,6 +1,6 @@
 ---
 title: Customization Analysis Report (CAR)
-description: This topic describes how to generate a Customization Analysis Report for your model and describes some best practice rules that are included in the report. 
+description: This article describes how to generate a Customization Analysis Report for your model and describes some best practice rules that are included in the report. 
 author: RobinARH
 ms.date: 06/20/2017
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to generate a Customization Analysis Report for your model. It also describes some best practice rules that are included in the report, and provides suggestions for fixing errors and warnings that are associated with these rules. 
+This article describes how to generate a Customization Analysis Report for your model. It also describes some best practice rules that are included in the report, and provides suggestions for fixing errors and warnings that are associated with these rules. 
 
 ## What is the Customization Analysis Report?
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Distribute and schedule questionnaires
-description: This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
+description: This article explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
+This article explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them. 
 
 There are multiple ways to distribute a questionnaire:
 

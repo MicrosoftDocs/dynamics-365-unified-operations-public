@@ -2,7 +2,7 @@
 # required metadata
 
 title: Extensible control programming reference
-description: This topic provides reference content for extensible control programming.
+description: This article provides reference content for extensible control programming.
 author: TLeforMicrosoft
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides reference content for extensible control programming.
+This article provides reference content for extensible control programming.
 
 This document describes the API, HTML, and JavaScript support for creating extensible controls.
 

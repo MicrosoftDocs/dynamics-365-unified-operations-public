@@ -2,7 +2,7 @@
 # required metadata
 
 title: Review the status of an experiment
-description: This topic explains what status an experiment has in the experimentation lifecycle in Dynamics 365 Commerce. 
+description: This article explains what status an experiment has in the experimentation lifecycle in Dynamics 365 Commerce. 
 author:  sushma-rao 
 ms.date: 10/21/2020
 ms.topic: article

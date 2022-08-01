@@ -2,7 +2,7 @@
 # required metadata
 
 title: Publish mobile workspaces
-description: This topic describes the steps that system administrators must follow to publish a mobile workspace.
+description: This article describes the steps that system administrators must follow to publish a mobile workspace.
 author: sericks007
 ms.date: 05/26/2022
 ms.topic: article
@@ -32,7 +32,7 @@ ms.search.validFrom: 2017-02-28
 [!include [banner](../includes/banner.md)]
 [!include [mobile app deprecation](../includes/mobile-app-deprecation-banner.md)]
 
-This topic describes the steps that system administrators must follow to publish a mobile workspace. A mobile workspace must be published so that users can access it in the mobile app. 
+This article describes the steps that system administrators must follow to publish a mobile workspace. A mobile workspace must be published so that users can access it in the mobile app. 
 
 ## Publish a mobile workspace
 

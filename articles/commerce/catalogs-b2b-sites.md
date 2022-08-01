@@ -3,9 +3,9 @@
 # required metadata
 
 title: Create Commerce catalogs for B2B sites
-description: This topic describes how to create Commerce catalogs for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
+description: This article describes how to create Commerce catalogs for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites.
 author: ashishmsft
-ms.date: 05/18/2022
+ms.date: 07/11/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -17,17 +17,19 @@ ms.search.validFrom: 2022-02-28
 # Create Commerce catalogs for B2B sites
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
-This topic describes how to create Commerce product catalogs for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites. For answers to frequently asked questions about Commerce catalogs for B2B sites, see [Commerce catalogs for B2B FAQ](catalogs-b2b-sites-FAQ.md).
+This article describes how to create Commerce product catalogs for Microsoft Dynamics 365 Commerce business-to-business (B2B) sites. For answers to frequently asked questions about Commerce catalogs for B2B sites, see [Commerce catalogs for B2B FAQ](catalogs-b2b-sites-FAQ.md).
 
 > [!NOTE]
-> This topic applies to Dynamics 365 Commerce version 10.0.27 and later releases.
+> This article applies to Dynamics 365 Commerce version 10.0.27 and later releases.
 
-You can use Commerce catalogs to identify the products that you want to offer in your B2B online stores. When you create a catalog, you identify the online stores that the products are offered in, add the products that you want to include, and enhance the product offerings by adding merchandising details. You can create multiple catalogs for each B2B online store.
+You can use Commerce catalogs to identify the products that you want to offer in your B2B online stores. When you create a catalog, you identify the online stores that the products are offered in, add the products that you want to include, and enhance the product offerings by adding merchandising details. You can create multiple catalogs for each B2B online store, as shown in the following illustration.
+
+![Commerce product catalogs preview.](./media/Commerce_Catalogs.png)
 
 Commerce product catalogs let you define the following information:
 
+- **Catalog type** – Configure the value as **B2B**. You can define B2B catalog-specific properties such as a navigation hierarchy, a customer hierarchy, and attribute metadata for the catalog. 
 - **Catalog-specific navigation hierarchy** – Organizations can create a distinct category structure for their specific catalog.
 - **Catalog-specific attribute metadata** – Attributes contain details about a product. By assigning attributes to a category of the navigation hierarchy, you can define values for those attributes at the level of products that are assigned to that category. Organizations can then complete these tasks:
 
@@ -40,11 +42,15 @@ Commerce product catalogs let you define the following information:
 - **Price groups** – You can configure prices and promotions that are specific to a given catalog. This capability is a core reason for defining a catalog for a B2B channel. Price groups for catalogs enable organizations to make products available to their intended B2B organizations and apply their preferred pricing and discounts. B2B customers who order from a configured catalog can benefit from special prices and promotions after they sign in to a Commerce B2B site. To configure catalog-specific prices, select **Price groups** on the **Catalogs** tab to link one or more price groups to the catalog. All trade agreements, price adjustment journals, and advanced discounts that have been linked to the same price group will be applied when customers order from that catalog. (Advanced discounts include threshold, quantity, and mix and match discounts.) For more information about price groups, see [Price groups](price-management.md#price-groups).
 
 > [!NOTE]
-> This feature is available as of the Dynamics 365 Commerce version 10.0.27 release. To configure catalog-specific configurations such as the navigation hierarchy and customer hierarchy, in Commerce headquarters, open the **Feature management** workspace (**System administration \> Workspaces \> Feature management**), enable the **Enable use of multiple catalogs on retails channels** feature, and then run the **1110 CDX** job.
+> This feature is available starting with the Dynamics 365 Commerce version 10.0.27 release. To configure catalog-specific configurations such as navigation hierarchy and customer hierarchy in Commerce headquarters, go to the **Feature management** workspace (**System administration \> Workspaces \> Feature management**), enable the **Enable use of multiple catalogs on retails channels** feature, and then run the **1110 CDX** job. 
+> When you enable this feature, all the existing catalogs that are used for POS stores or a call center will be marked as **Catalog type = B2C** on the **Catalogs** page. Only existing and new catalogs that are marked as **Catalog type = B2C** are applicable to POS stores and a call center. 
 
-## Catalog process flow
+## B2B catalog process flow
 
 The process of creating and processing a catalog has four general steps. Each step is explained in detail in the next section.
+
+> [!NOTE]
+> Before you proceed, ensure that the catalog is marked as **Catalog type = B2B**.
 
 1. **[Configuration](#configure-the-catalog)**
 
@@ -72,7 +78,7 @@ Use the information in this section to set up your catalog.
 
 In Commerce headquarters, go to **Retail and Commerce \> Catalogs and assortments \> All catalogs** to configure your catalog.
 
-When you create a new catalog, you must first associate it with one or more channels. Only items that are linked to your selected channel [assortments](/dynamics365/unified-operations/retail/assortments) can be used when the catalog is created. To associate the catalog with one or more channels, select **Add** on the **Commerce channels** FastTab of the **Catalog setup** page.
+When you create a new catalog, you must first associate it with one or more channels. Only items that are linked to your selected channel [assortments](/dynamics365/unified-operations/retail/assortments) can be used when the catalog is created. To associate the catalog with one or more channels, select **Add** on the **Commerce channels** FastTab of the **Catalog setup** page. Ensure that the catalog is marked as **Catalog type = B2B**.
 
 #### Associate the navigation hierarchy
 
@@ -89,6 +95,17 @@ To configure products to add to the catalog, in Commerce headquarters, go to **R
 Alternatively, select a node in the navigation hierarchy. You will then be able to add products directly to a category in the catalog.
 
 #### Associate price groups
+
+To configure products to add to the catalog, in Commerce headquarters, go to **Retail and Commerce \> Catalogs and assortments \> All catalogs**. Then, on the **Catalogs** tab, select **Add products**. 
+
+Products that were added to a catalog from the root node of the navigation hierarchy by selecting **Add products** on the Action Pane will inherit their categories if the source navigation hierarchy is also associated with the catalog. Changes to categories that are made on the source navigation hierarchy will immediately be reflected in the catalogs. You must republish the catalogs to update the channels.
+
+Alternatively, you can select a node in the navigation hierarchy and add products directly to a selected category in the catalog. 
+
+When you add products, the **Automatically include all variants when only product master is selected** option will be available. To prevent the inclusion of all variants, select at least one variant for the product master. 
+
+> [!NOTE]
+> If you choose to automatically include all variants in a large product masters selection, you might experience longer processing times. For large selections, we recommend that you select **Include all variants** on the Action Pane of the catalogs page to run the operation in batch mode. If you included only the product master in the catalog and didn't include any variants, the variant picker might not be available when you navigate to a product details page. 
 
 To configure catalog-specific prices, you must link one or more price groups to the catalog. To associate price groups with a catalog, in Commerce headquarters, go to **Retail and Commerce \> Catalogs and assortments \> All catalogs**. Then, on the **Catalogs** tab, under **Pricing**, select **Price groups**. All trade agreements, price adjustment journals, and advanced discounts (threshold, quantity, and mix and match discounts) that have been linked to the same price group will be applied when customers order from the catalog.
 
@@ -121,6 +138,9 @@ To validate a catalog, follow these steps.
 1. On the **Catalogs** tab of the **All catalogs** page, under **Validate** select **Validate catalog** to run a validation. This step is required. It will validate that the required setup is accurate.
 1. Select **View results** to view the details of the validation. If errors are found, you must correct the data and then run the validation again until it passes.
 
+> [!NOTE]
+> If **Catalog type = B2B**, validation will fail if you added POS stores or a call center to the catalog. B2B catalogs must have only B2B online channels associated with them. Validation will also fail if no customer hierarchy is associated with a B2B catalog. 
+
 ### Approve the catalog
 
 After a catalog is validated, it must be approved.
@@ -142,3 +162,5 @@ After a catalog is in an **Approved** status, you can publish it by selecting **
 [Extensibility impact of Commerce catalogs for B2B customizations](catalogs-b2b-sites-dev.md)
 
 [Commerce catalogs for B2B FAQ](catalogs-b2b-sites-FAQ.md)
+
+[Catalog picker module](catalog-picker.md)

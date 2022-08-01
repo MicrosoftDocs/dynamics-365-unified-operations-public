@@ -2,9 +2,9 @@
 # required metadata
 
 title: Migrate upgraded AX 2012 R3 sales cubes to the entity store
-description: In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in a Finance and Operations application. 
+description: In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in a finance and operations application. 
 author: MilindaV2
-ms.date: 06/20/2017
+ms.date: 08/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in a Finance and Operations application. You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.
+In this tutorial, you'll migrate an upgraded Microsoft Dynamics AX 2012 R3 cube schema to the entity store in a finance and operations application. You'll use the sales cube that was included in Dynamics AX 2012 R3 as an example.
 
 The entity store will support near real-time Microsoft Power BI integration scenarios, as shown in the following diagram. For an overview of Power BI integration with entity store, see [Power BI integration with entity store](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update). [![Power BI Architecture diagram.](./media/powerbiarchitecture.png)](./media/powerbiarchitecture.png)
 
@@ -62,7 +62,7 @@ As part of the code upgrade process, analysis services projects from the Applica
 4.  An aggregate measurement with the name **SalesCubeCopy** will be added to the project.
 5.  Rename this measurement. Select **SalesCubeCopy** in Solution Explorer. Right-click and select **Rename**. Enter **SalesCubeV2** as the new name.
 6.  Double-click **SalesCubeV2** to launch the Aggregate measurement designer. Notice the structure of the aggregate measurement that was migrated from Dynamics AX 2012.
-7.  The Sales cube in Dynamics AX 2012 encompassed a broad subject area related to Sales. In this case, let’s create a smaller, more focused Power BI model using the metadata that was upgraded. Expand the **Sales Order Lines** measure group and review the list of measures and dimension references.
+7.  The sales cube in Dynamics AX 2012 encompassed a broad subject area related to Sales. In this case, let’s create a smaller, more focused Power BI model using the metadata that was upgraded. Expand the **Sales Order Lines** measure group and review the list of measures and dimension references.
 
     > [!NOTE]
     > Leveraging the modeling capabilities you can quickly make a few enhancements to this model. Suggestions for improvements:
@@ -83,7 +83,7 @@ As part of the code upgrade process, analysis services projects from the Applica
 As an administrator you can configure the refresh of the aggregate measurement using the client.
 
 1.  Launch the Dynamics AX client and navigate to **System Administration** &gt; **Setup** &gt; **Entity Store**. The **Entity Store** form shows a list of aggregate measurements that are available for deployment to the entity store.
-2.  Notice that **Sales Cube** (which was upgraded from Dynamics AX 2012) is not available for deployment to the entity store. **SalesCubeV2**, which you created in the previous step, can be deployed to the entity store.
+2.  Notice that **sales cube** (which was upgraded from Dynamics AX 2012) is not available for deployment to the entity store. **SalesCubeV2**, which you created in the previous step, can be deployed to the entity store.
 3.  Select **SalesCubeV2** from the list, and click the **Refresh** button. The **Refresh** dialog box will display. Expand the **Run in the background** tab.
 4.  Provide a descriptive name in the **Task description** field. Optionally, you can select the **Recurrence** tab and create a recurring schedule instead of a one-time refresh. Click **OK**.
 5.  The system will create a batch job for refresh of the aggregate measurement in the entity store.
@@ -179,7 +179,7 @@ Notice that the asset library enables adding **PowerBI report models** (PBIX fil
 
 ### Configure an LCS project
 
-If you haven’t already done so, associate your environment with an LCS project so that Finance and Operations apps can consume assets within the project.
+If you haven’t already done so, associate your environment with an LCS project so that finance and operations apps can consume assets within the project.
 
 1.  Launch the client from the instance that you want to use to deploy the Power BI reports. Typically this is the test or a production instance where you want to see a report with a different set of data than what you worked with as a report developer.
 2.  Open **System Administration** &gt; **Setup** &gt; **System parameters**. Select the **Help** tab. Using the **Lifecycle services help configuration** list box, select the LCS project that you uploaded the PBIX file to. Click **Save**.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a page URL
-description: This topic covers the basic concepts and procedures for creating a page URL on your site.
+description: This article covers the basic concepts and procedures for creating a page URL on your site.
 author: bicyclingfool
 ms.date: 10/01/2019
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic covers the basic concepts and procedures for creating a page URL on your site.
+This article covers the basic concepts and procedures for creating a page URL on your site.
 
 The full, or absolute, URL that points to a page on your site consists of distinct parts. For example, the URL `https://www.contoso.com/en-us/contactus` has the following parts:
 

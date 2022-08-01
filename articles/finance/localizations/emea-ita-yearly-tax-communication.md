@@ -2,7 +2,7 @@
 # required metadata
 
 title: Yearly tax communication
-description: This topic provides information about the yearly tax communication report in Italy. 
+description: This article provides information about the yearly tax communication report in Italy. 
 author: anasyash
 ms.date: 05/02/2022
 ms.topic: article
@@ -65,7 +65,7 @@ For more information, see [Download Electronic reporting configurations from Lif
     |-----------|-----------------------------------------|
     | Field ID                | Enter the identification number   of the field.   |
     | Description             | Enter   a description of the field. |
-    | Format                  | Select   the required format of the field. For more information about the available   formats, see the [Formats of the fields](#formats) section later in this   topic. |
+    | Format                  | Select   the required format of the field. For more information about the available   formats, see the [Formats of the fields](#formats) section later in this   article. |
     | Calculation             | Select a calculation method:   <br>- **Manual** - The value is manually entered. <br>- **Tax   transaction** - The value is collected from the tax transactions. <br>-   **Total** - The value is calculated by using a formula that consists fo the   values of other fields (but only fields where the **Calculation** field isn't   selected). |
     | Value                   | Enter   a value for the field. You can edit this value only when   the **Calculation** field is set to **Manual**.    |
     | Tax                     | Select one of the following   values: <br>- **Tax base** - The field should represent a tax base.   <br>- **Tax amount** - The field should represent a tax amount. <br> You can edit this value only when the **Calculation** field is set   to **Tax transactions**.  |

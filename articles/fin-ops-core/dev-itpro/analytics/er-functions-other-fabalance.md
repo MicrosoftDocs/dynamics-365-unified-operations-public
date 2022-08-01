@@ -2,7 +2,7 @@
 # required metadata
 
 title: FA_BALANCE ER function
-description: This topic provides information about how the FA_BALANCE Electronic reporting (ER) function is used.
+description: This article provides information about how the FA_BALANCE Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 12/17/2019
 ms.prod: 

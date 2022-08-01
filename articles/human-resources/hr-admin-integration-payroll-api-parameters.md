@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payroll integration parameters
-description: This topic describes the Dynamics 365 Human Resources Payroll integration parameters.
+description: This article describes the Dynamics 365 Human Resources Payroll integration parameters.
 author: marcelbf
 ms.date: 06/17/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Before using the Dynamics 365 Human Resources Payroll integration, you must set up the parameters described in this topic.
+Before using the Dynamics 365 Human Resources Payroll integration, you must set up the parameters described in this article.
 
 ## Enable payroll address
 

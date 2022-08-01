@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Design configurations to generate documents that have application data
-description: This topic describes how to design Electronic reporting (ER) configurations to generate an electronic document. (Part 1 - Import configurations). 
+description: This article describes how to design Electronic reporting (ER) configurations to generate an electronic document. (Part 1 - Import configurations). 
 author: NickSelin
 ms.date: 06/19/2017
 ms.topic: business-process 

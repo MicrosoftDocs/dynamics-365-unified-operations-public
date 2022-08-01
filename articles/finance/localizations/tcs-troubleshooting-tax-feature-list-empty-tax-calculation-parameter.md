@@ -2,7 +2,7 @@
 # required metadata
 
 title: Empty tax feature list in Tax calculation parameters
-description: This topic explains how to troubleshoot an issue where the list of tax features on the Tax calculation parameters page is empty.
+description: This article explains how to troubleshoot an issue where the list of tax features on the Tax calculation parameters page is empty.
 author: wangchen
 ms.date: 03/04/2022
 ms.topic: business-process
@@ -50,7 +50,7 @@ To find the tenant ID for your Finance environment, follow the same steps that y
 
 ## Resolution
 
-If the two tenants IDs differ, you're encountering the issue that is described in this topic. If they are the same, you're encountering an unrelated issue. In this case, we recommend that you contact Microsoft Support.
+If the two tenants IDs differ, you're encountering the issue that is described in this article. If they are the same, you're encountering an unrelated issue. In this case, we recommend that you contact Microsoft Support.
 
 ### Solution 1
 

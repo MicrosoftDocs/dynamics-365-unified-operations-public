@@ -2,7 +2,7 @@
 # required metadata
 
 title: Choose between Store Commerce and Cloud POS
-description: This topic explains the key differences between Store Commerce and Cloud POS, and describes various factors that retailers that implement Dynamics 365 Commerce should consider to help them make the best choice for their requirements.
+description: This article explains the key differences between Store Commerce and Cloud POS, and describes various factors that retailers that implement Dynamics 365 Commerce should consider to help them make the best choice for their requirements.
 author:  jblucher 
 ms.date: 04/21/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic explains the key differences between Store Commerce and Cloud POS, and describes various factors that retailers that implement Dynamics 365 Commerce should consider to help them make the best choice for their requirements. It also gives implementers additional background, tips, and guidance for factors that they should consider when they deploy Dynamics 365 Commerce. By reviewing and following this guidance as part of the deployment process, implementers can avoid issues that might affect user satisfaction or performance.
+This article explains the key differences between Store Commerce and Cloud POS, and describes various factors that retailers that implement Dynamics 365 Commerce should consider to help them make the best choice for their requirements. It also gives implementers additional background, tips, and guidance for factors that they should consider when they deploy Dynamics 365 Commerce. By reviewing and following this guidance as part of the deployment process, implementers can avoid issues that might affect user satisfaction or performance.
 
 ## Insights
 
@@ -48,7 +48,7 @@ Commerce supports the following POS options:
 In all cases, the POS (Store Commerce and CPOS) shares the same core application code. This point is important for the following reasons:
 
 - The user interface (UI) is consistent, regardless of the platform or form factor.
-- Most of the functional capabilities are the same, regardless of the platform or form factor. However, there are some important differences. These differences are noted in this topic.
+- Most of the functional capabilities are the same, regardless of the platform or form factor. However, there are some important differences. These differences are noted in this article.
 - In each store, the POS variations can be combined and can run concurrently. For example, for its main registers, a retailer can use Store Commerce on computers that run Windows. However, the retailer can supplement those registers with browser-based terminals or mobile devices.
 - Customizations and extensions can easily be used across platforms and form factors. Because the core application code is shared, most customizations can be implemented one time instead of multiple times.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies
-description: This topic provides information about the supported geographies and endpoints for Microsoft Dynamics 365 Commerce, Dynamics 365 Finance, and Dynamics 365 Supply Chain Management.
+description: This article provides information about the supported geographies and endpoints for Microsoft Dynamics 365 Commerce, Dynamics 365 Finance, and Dynamics 365 Supply Chain Management.
 author: Shailesh4all
 ms.date: 04/28/2022
 ms.topic: article
@@ -52,8 +52,9 @@ We continue to evaluate these services and capabilities for inclusion and update
 - Cloud scale unit for commerce and e-commerce is available only in the United States and the EU.
 - The Planning optimization service isn't available.
 - Local business data deployment is available only in the EU.
-- Code upgrade functionality, to upgrade from Dynamics AX 2012 to Finance and Operations apps, isn't available in any geography except LCS US (lcs.dynamics.com).
+- Code upgrade functionality, to upgrade from Dynamics AX 2012 to finance and operations apps, isn't available in any geography except LCS US (lcs.dynamics.com).
 
 For more information about these exceptions, or for questions about regional services, contact [Microsoft Dynamics 365 Support](https://dynamics.microsoft.com/support/).
 
 For information about product availability per country and workload, see [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/availability-reports/).
+

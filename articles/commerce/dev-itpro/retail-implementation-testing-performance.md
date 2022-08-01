@@ -2,7 +2,7 @@
 # required metadata
 
 title: Testing and performance issues
-description: This topic describes recommended practices for testing and performance for Microsoft Dynamics 365 Commerce implementation projects.
+description: This article describes recommended practices for testing and performance for Microsoft Dynamics 365 Commerce implementation projects.
 author: andreashofmann1
 ms.date: 07/09/2018
 ms.topic: article
@@ -16,7 +16,7 @@ audience: IT Pro
 # ms.devlang: 
 ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: andreash
@@ -55,7 +55,7 @@ In some cases, channel performance might not be as good as you expected. Poor pe
 - Additional channel database extensions. Make sure that your custom SQL is efficient and uses correct indexes.
 - Multiple runs of the same custom or built-in CRT SQL queries. If this approach is too expensive, caching in the CRT request handler can be applied, as appropriate.
 
-For more details, see the [Commerce for IT pros and developers](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page) topics.
+For more details, see the [Commerce for IT pros and developers](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page) articles.
 
 When you investigate store performance, follow the suggestions in [Retail Channel performance investigations](https://dynamicsnotes.com/retail-channel-performance-investigations/).
 
@@ -78,7 +78,7 @@ Here are some of the reasons why bottlenecks can occur:
 
 In general, default and non-real-time POS operations aren't considered bottlenecks because they have their own dedicated resource: the computer that the POS is installed or running on. Performance issues are typically caused by the business logic or "chatty" calls to Commerce Scale Unit.
 
-Ideally, performance testing should be done after some initial optimizations have already been completed by using the information earlier in this topic. If the system doesn't perform well for a single user or process, it won't perform well for concurrent users or processes. For more information, see [Retail Channel performance investigations](https://dynamicsnotes.com/retail-channel-performance-investigations/). Additionally, in the Finance documentation, search for "PerfSdk" or "Trace parser."
+Ideally, performance testing should be done after some initial optimizations have already been completed by using the information earlier in this article. If the system doesn't perform well for a single user or process, it won't perform well for concurrent users or processes. For more information, see [Retail Channel performance investigations](https://dynamicsnotes.com/retail-channel-performance-investigations/). Additionally, in the Finance documentation, search for "PerfSdk" or "Trace parser."
 
 Because every project is different, it's difficult to give a general answer about the exact performance tests that must be run. For example, if the count of transaction sales lines is low (less than 100,000 per day for all stores), and if no custom extension code has been added for statement posting, a performance test should not be required for posting. However, if the count of sales lines is substantially higher, or if major custom changes have been added, a performance test for posting is a good idea.
 

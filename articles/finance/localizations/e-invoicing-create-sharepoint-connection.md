@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure a SharePoint connection
-description: This topic explains how to configure a connection so that Electronic invoicing can access a Microsoft SharePoint site.
+description: This article explains how to configure a connection so that Electronic invoicing can access a Microsoft SharePoint site.
 author: dkalyuzh
 ms.date: 12/15/2021
 ms.topic: article

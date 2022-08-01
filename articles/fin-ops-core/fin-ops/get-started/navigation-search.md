@@ -2,7 +2,7 @@
 # required metadata
 
 title: Navigation search
-description: This topic explains how to use the search functionality to navigate to pages.
+description: This article explains how to use the search functionality to navigate to pages.
 author: aneesmsft
 ms.date: 08/11/2021
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic explains how to use the search functionality to navigate to pages.
+This article explains how to use the search functionality to navigate to pages.
 
 The application includes a number of areas and pages to help you perform various tasks. To quickly find the pages that you need to complete your tasks, use the navigation search feature.
 

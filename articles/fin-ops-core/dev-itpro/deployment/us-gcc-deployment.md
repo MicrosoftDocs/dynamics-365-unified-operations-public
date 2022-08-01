@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 Finance, Supply Chain Management, and Commerce in US Government Community Cloud (GCC)
-description: This topic provides information about Microsoft Dynamics 365 US Government products that are available to qualified government and private entities.
+description: This article provides information about Microsoft Dynamics 365 US Government products that are available to qualified government and private entities.
 author: hasaid
 ms.date: 11/12/2021
 ms.topic: article
@@ -35,9 +35,9 @@ After the initial onboarding is completed, follow the instructions in [Project o
 
 ## Environment deployment
 
-After you've completed project onboarding, you can review the additional capabilities of LCS that are described in [Lifecycle Services (LCS) for Finance and Operations apps customers](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Then move on to environment deployment.
+After you've completed project onboarding, you can review the additional capabilities of LCS that are described in [Lifecycle Services (LCS) for finance and operations apps customers](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md). Then move on to environment deployment.
 
-- To deploy Microsoft-managed environments via LCS, follow the instructions in [Lifecycle Services (LCS) for Finance and Operations apps customers](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
+- To deploy Microsoft-managed environments via LCS, follow the instructions in [Lifecycle Services (LCS) for finance and operations apps customers](../../../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md#new-deployment-experience).
 - For cloud-hosted environments, see [Deploy and access development environments](../../../fin-ops-core/dev-itpro/dev-tools/access-instances.md). You must also complete the Resource Manager onboarding process for your connectors, as described in [Complete the Azure Resource Manager onboarding process for US government Lifecycle Services projects](arm-onbarding-us-goverment.md).
 
 > [!NOTE]
@@ -81,3 +81,4 @@ Yes. However, if your partner uses a non-GCC identity, the support ticket will b
 - [Cloud deployment overview](../../../fin-ops-core/dev-itpro/deployment/cloud-deployment-overview.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

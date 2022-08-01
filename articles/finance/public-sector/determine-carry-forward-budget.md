@@ -1,6 +1,6 @@
 ---
 title: Update the carry-forward budget after reductions in purchase orders and invoices
-description: This topic describes how to control what happens to the carry-forward budget when purchase orders are canceled or reduced, and when invoices are reduced.
+description: This article describes how to control what happens to the carry-forward budget when purchase orders are canceled or reduced, and when invoices are reduced.
 author: TaylorVH 
 ms.date: 02/11/2022
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.validFrom: 2022-02-01
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes how to control what happens to the carry-forward budget when purchase orders are canceled or reduced, and when invoices are reduced.
+This article describes how to control what happens to the carry-forward budget when purchase orders are canceled or reduced, and when invoices are reduced.
 
 For information about how purchase orders are processed at year end, see [Process purchase orders at year end](/dynamicsax-2012/appuser-itpro/process-purchase-orders-at-year-end).
 

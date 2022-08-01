@@ -2,7 +2,7 @@
 # required metadata
 
 title: Work order pools
-description: This topic describes how to work with work order pools in Asset Management.
+description: This article describes how to work with work order pools in Asset Management.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -50,7 +50,7 @@ As you require, you can put one work order in multiple work order pools.
 
 On the **All work order pools** or **Active work order pools** list page, you can get an overview of your work order pools and create new pools.
 
-1. Select **Asset management** > **Common** > **Work order pools** > **All work order pools** or **Active work order pools**.
+1. Select **Asset management** > **Work order pools** > **All work order pools** or **Active work order pools**.
 
 2. Select **New**.
 

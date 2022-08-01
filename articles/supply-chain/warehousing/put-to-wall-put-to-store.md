@@ -2,7 +2,7 @@
 # required metadata
 
 title: Put to wall - put to store
-description: This topic provides information about the Put to wall - put to store functionality. This functionality lets you handle scenarios where you must consolidate a product to a prepack staging area, based on configurable criteria. It helps decrease picking time because it allows for picking to a single target license plate and can use more put positions than cluster picking.
+description: This article provides information about the Put to wall - put to store functionality. This functionality lets you handle scenarios where you must consolidate a product to a prepack staging area, based on configurable criteria. It helps decrease picking time because it allows for picking to a single target license plate and can use more put positions than cluster picking.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -15,7 +15,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab

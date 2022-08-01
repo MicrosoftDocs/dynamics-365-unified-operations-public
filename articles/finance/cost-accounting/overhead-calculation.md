@@ -2,7 +2,7 @@
 # required metadata
 
 title: Overhead calculation
-description: This topic describes the typical processes for calculating and allocating overhead costs.
+description: This article describes the typical processes for calculating and allocating overhead costs.
 author: AndersGirke
 ms.date: 10/04/2018
 ms.topic: article
@@ -31,7 +31,7 @@ ms.search.validFrom: 2016-11-30
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the typical processes for calculating and allocating overhead costs.
+This article describes the typical processes for calculating and allocating overhead costs.
 
 ## Term definition
 
@@ -1340,7 +1340,7 @@ Fixed cost | 0.00 | 0.00 | 0.00 | 0.00 | 0.00 |  |  | 776.36 | 223.64 | 1,000.00
 Variable cost | 000 | 0.00 | 0.00 | 0.00 | 0.00 | 30.00 | 10.00 | 6,994.21 | 1,965.79 | 9,000.00 |
 
 > [!NOTE]
-> This topic shows how a primary cost element, 10001 Electricity, flows through the cost objects. Therefore, this overhead cost is allocated to the lowest level in the organization. In other words, the cost objects at the lowest level bear the cost. If you require a visual flow of the cost between the cost objects, you can use the cost roll-up policy rules to visualize the flow of the cost. For more information, see [Cost rollup policy and overhead calculation](cost-rollup.md).
+> This article shows how a primary cost element, 10001 Electricity, flows through the cost objects. Therefore, this overhead cost is allocated to the lowest level in the organization. In other words, the cost objects at the lowest level bear the cost. If you require a visual flow of the cost between the cost objects, you can use the cost roll-up policy rules to visualize the flow of the cost. For more information, see [Cost rollup policy and overhead calculation](cost-rollup.md).
 
 
 

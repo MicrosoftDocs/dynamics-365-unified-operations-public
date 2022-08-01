@@ -2,7 +2,7 @@
 # required metadata
 
 title: Manage vendor collaboration users
-description: This topic describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts. 
+description: This article describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts. 
 author: GalynaFedorova
 ms.date: 06/20/2017
 ms.topic: article
@@ -32,9 +32,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts. 
+This article describes how you can request the provisioning of new vendor collaboration users, and how to add new vendor collaboration contacts. 
 
-The vendor collaboration interface in Dynamics 365 Supply Chain Management exposes information about purchase orders, invoices, and consignment stock to external vendors. You can create new vendor collaboration contacts and request that new users are provisioned if you're working as an external vendor with the **Vendor admin (external)** security role, or similar permissions. You can also perform these tasks if you're working as a procurement professional. In this topic, this role refers to a procurement professional who is working within the company that owns the instance of Supply Chain Management. For more information about how to use vendor collaboration if you're an external vendor, see [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md).  
+The vendor collaboration interface in Dynamics 365 Supply Chain Management exposes information about purchase orders, invoices, and consignment stock to external vendors. You can create new vendor collaboration contacts and request that new users are provisioned if you're working as an external vendor with the **Vendor admin (external)** security role, or similar permissions. You can also perform these tasks if you're working as a procurement professional. In this article, this role refers to a procurement professional who is working within the company that owns the instance of Supply Chain Management. For more information about how to use vendor collaboration if you're an external vendor, see [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
 For more information about how to use vendor collaboration if you're a procurement professional, see [Vendor collaboration with external vendors](vendor-collaboration-work-external-vendors.md).
 

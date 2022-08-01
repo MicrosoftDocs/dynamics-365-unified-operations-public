@@ -2,7 +2,7 @@
 # required metadata
 
 title: Sales tax for Saudi Arabia
-description: This topic provides information about sales taxes for Saudi Arabia.
+description: This article provides information about sales taxes for Saudi Arabia.
 author: ShylaThompson
 ms.date: 02/15/2018
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version:
 
 [!include[banner](../includes/banner.md)]
 
-This topic walks you through the process of setting up sales taxes for Saudi Arabia. Before you read this topic, you might find it helpful to read [Sales tax overview](../general-ledger/indirect-taxes-overview.md). For information about regulatory requirements for Saudi Arabia, see [VAT for Saudi Arabia (Government website)](https://www.vat.gov.sa/).
+This article walks you through the process of setting up sales taxes for Saudi Arabia. Before you read this article, you might find it helpful to read [Sales tax overview](../general-ledger/indirect-taxes-overview.md). For information about regulatory requirements for Saudi Arabia, see [VAT for Saudi Arabia (Government website)](https://www.vat.gov.sa/).
 
 ## Setting up sales tax for Saudi Arabia
 
@@ -41,9 +41,9 @@ The following table lists the typical tasks that are completed to set up sales t
 | Set up ledger posting groups for sales tax.                    | None | [Set up Ledger posting groups for sales tax](../general-ledger/tasks/set-up-ledger-posting-groups-sales-tax.md) |
 | Set up sales tax authorities.                                  | When you set up sales tax authorities, pay attention to the **Report layout** field. Sales tax codes use the same report layout as the sales tax authority that is associated with the sales tax settlement period that you selected for the sales tax code. | [Set up sales tax authorities](../general-ledger/tasks/set-up-sales-tax-authorities.md) |
 | Set up sales tax settlement periods.                           | When you set up sales tax settlement periods, consider the fact that, in Saudi Arabia Taxable, if you make an annual taxable supply above a specific amount, you might have to file monthly value-added tax (VAT) returns instead of quarterly VAT returns. For guidance, consult a tax professional. | [Set up sales tax settlement periods](../general-ledger/tasks/set-up-sales-tax-settlement-periods.md) |
-| Set up sales tax reporting codes.                              | See the [Sales tax reporting codes example for Saudi Arabia](#sales-tax-reporting-codes-example-for-saudi-arabia) section of this topic. | [Set up sales tax reporting codes](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md) |
-| Set up sales tax codes.                                        | See the [Sales tax codes, sales tax groups, and item sales tax groups](#sales-tax-codes-sales-tax-groups-and-item-sales-tax-groups) section of this topic. | [Set up sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md) |
-| Set up sales tax groups and item sales tax groups.             | See the [Sales tax codes, sales tax groups, and item sales tax groups](#sales-tax-codes-sales-tax-groups-and-item-sales-tax-groups) section of this topic. | [Set up sales tax groups and item sales tax groups](../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md) |
+| Set up sales tax reporting codes.                              | See the [Sales tax reporting codes example for Saudi Arabia](#sales-tax-reporting-codes-example-for-saudi-arabia) section of this article. | [Set up sales tax reporting codes](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md) |
+| Set up sales tax codes.                                        | See the [Sales tax codes, sales tax groups, and item sales tax groups](#sales-tax-codes-sales-tax-groups-and-item-sales-tax-groups) section of this article. | [Set up sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md) |
+| Set up sales tax groups and item sales tax groups.             | See the [Sales tax codes, sales tax groups, and item sales tax groups](#sales-tax-codes-sales-tax-groups-and-item-sales-tax-groups) section of this article. | [Set up sales tax groups and item sales tax groups](../general-ledger/tasks/set-up-sales-tax-groups-item-sales-tax-groups.md) |
 | Set up sales tax parameters on parameter pages in the program. | On the **General ledger parameters** page, turn on the reverse charge functionality. | [Reverse charge VAT](emea-reverse-charge.md) |
 
 ### Sales tax reporting codes example for Saudi Arabia

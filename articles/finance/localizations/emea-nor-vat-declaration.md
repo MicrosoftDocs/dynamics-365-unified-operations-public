@@ -2,7 +2,7 @@
 # required metadata
 
 title: Support for multiple VAT registration numbers in the VAT return of Norway
-description: This topic explains how to support multiple value-added tax (VAT) registration numbers in a VAT return of Norway.
+description: This article explains how to support multiple value-added tax (VAT) registration numbers in a VAT return of Norway.
 author: liza-golub
 ms.date: 01/04/2022
 ms.topic: article

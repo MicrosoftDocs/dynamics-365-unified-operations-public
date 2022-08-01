@@ -2,7 +2,7 @@
 # required metadata
 
 title: Benefit eligibility policies
-description: This topic provides information about benefit eligibility policies, which define who is eligible for specific benefits.
+description: This article provides information about benefit eligibility policies, which define who is eligible for specific benefits.
 author: twheeloc
 ms.date: 08/23/2021
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic provides information about benefit eligibility policies, which define who is eligible for specific benefits.
+This article provides information about benefit eligibility policies, which define who is eligible for specific benefits.
 
 When you create benefits, you decide which benefits will be available to which employees. The following table shows examples of benefits that you might make available to specific employees.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up alerts
-description: This topic explains how to set up alerts for batch jobs.
+description: This article explains how to set up alerts for batch jobs.
 author: hasaid
 ms.date: 03/12/2019
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 25
 
 [!include [banner](../includes/banner.md)]
 
-Alerts form a notification system for critical events in Finance and Operations. You can use alerts to stay informed about events that you want to track during the workday. You can set up a set of alert rules so that you're alerted when a batch job ends, ends in error, or is canceled. You can select whether the alerts are emailed to you or appear as notifications in the Action center. Alerts can be set up per batch job and per user.
+Alerts form a notification system for critical events in finance and operations. You can use alerts to stay informed about events that you want to track during the workday. You can set up a set of alert rules so that you're alerted when a batch job ends, ends in error, or is canceled. You can select whether the alerts are emailed to you or appear as notifications in the Action center. Alerts can be set up per batch job and per user.
 
 ## Set up alerts for batch enhanced forms
 

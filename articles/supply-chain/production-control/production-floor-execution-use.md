@@ -2,7 +2,7 @@
 # required metadata
 
 title: How workers use the production floor execution interface
-description: This topic describes how to use the production floor execution interface from a worker's point of view.
+description: This article describes how to use the production floor execution interface from a worker's point of view.
 author: johanhoffmann
 ms.date: 01/24/2022
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
@@ -38,7 +38,7 @@ After the device has been prepared, the sign-in page appears on it. This page sh
 
 ![Production floor execution interface sign-in page.](media/pfei-sign-in-page.png "Production floor execution interface sign-in page")
 
-The remaining sections of this topic describe how workers interact with the interface.
+The remaining sections of this article describe how workers interact with the interface.
 
 ## All jobs tab
 
@@ -221,7 +221,7 @@ Workers can adjust material consumption for catch weight items. This functionali
 
 In the **Adjust material** dialog box, a worker can make and adjust material reservations by selecting **Reserve material**. The **Reserve material** dialog box that appears shows the physically available inventory for the item for each storage and tracking dimension.
 
-If the material is enabled for the advanced warehouse processes, the list shows only the physically available inventory for the production input location for the material. The production input location is defined on the resource where the production job is planned. If the item number is batch or serial number controlled, the full list of physically available batch and serial numbers is shown. To specify a quantity to reserve, the worker can select **Reserve material**. To remove an existing reservation, the worker can select **Remove reservation**.
+If the material is enabled for warehouse management processes (WMS), the list shows only the physically available inventory for the production input location for the material. The production input location is defined on the resource where the production job is planned. If the item number is batch or serial number controlled, the full list of physically available batch and serial numbers is shown. To specify a quantity to reserve, the worker can select **Reserve material**. To remove an existing reservation, the worker can select **Remove reservation**.
 
 For more information about how to set up the production input location, see the following blog post: [Setting up the production input location](/archive/blogs/axmfg/deliver-picked-materials-to-the-locations-where-the-materials-are-consumed-by-operations-in-production).
 
@@ -267,9 +267,6 @@ A worker registers a break by selecting **Break** and then selecting the card th
 
 ## View the "My day" dialog
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
-
 The **My day** dialog provides workers with an overview of their registrations and balances. The dialog is divided into the following three sections:
 
 - The main section lists the registrations that the current worker made on a selected date. It opens showing registrations for the current day, and provides a date picker that lets the worker view other days.
@@ -279,9 +276,6 @@ The **My day** dialog provides workers with an overview of their registrations a
 Admins can add this feature to the interface by placing the **My day** button on a toolbar for each relevant tab as described in [Design the production floor execution interface](production-floor-execution-tabs.md).
 
 ## Working in teams
-
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until 10.0.27 GA -->
 
 When multiple workers are assigned to the same production job, they can form a team. The team can nominate one worker as a pilot. The remaining workers then automatically become assistants of that pilot. For the resulting team, only the pilot must register job status. Time records apply to all team members.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Validations, default values, and unmapped fields
-description: This topic describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values.
+description: This article describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values.
 author: peakerbl
 ms.date: 10/28/2019
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values, but instead contain virtual or computed data (unmapped fields).
+This article describes how data entity values are validated, how default values can be provided, and how to use fields that are not mapped to data source values, but instead contain virtual or computed data (unmapped fields).
 
 ## Validations
 Validations can be defined on the tables that back up entities, at both the field level and the record level. Validations can also be defined at the data entity level.

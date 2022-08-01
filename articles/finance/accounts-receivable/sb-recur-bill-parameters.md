@@ -2,7 +2,7 @@
 # required metadata
 
 title: Recurring contract billing parameters
-description: This topic explains how to set up the default values for billing schedules that are created in Recurring contract billing. It also explains how create billing schedule groups.
+description: This article explains how to set up the default values for billing schedules that are created in Recurring contract billing. It also explains how create billing schedule groups.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -33,7 +33,7 @@ Use the **Recurring contract billing parameters** page to set up the default val
 
 ## General tab
 
-1. On the **Recurring contract billing parameters** page, on the **General** tab, in the **Billing schedule group** field, select a billing schedule group. For information about how to set up billing schedule groups, see the [Billing schedule groups](#set-up-billing-schedule-groups) section later in this topic.
+1. On the **Recurring contract billing parameters** page, on the **General** tab, in the **Billing schedule group** field, select a billing schedule group. For information about how to set up billing schedule groups, see the [Billing schedule groups](#set-up-billing-schedule-groups) section later in this article.
 2. In the **Termination type** field, select how the final invoice is calculated when a billing schedule is terminated:
 
     - **Adjust schedule** – Cut off the billing schedule on the termination date, change the status of the schedule to **Last billing**, and adjust the associated deferral schedule by reversing the amount that no longer must be recognized. If the billing start date is after the termination date, the remaining billing periods are removed.

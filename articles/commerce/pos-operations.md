@@ -2,7 +2,7 @@
 # required metadata
 
 title: Online and offline point of sale (POS) operations
-description: This topic provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
+description: This article provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
 author: jblucher
 ms.date: 05/27/2022
 ms.topic: article
@@ -30,7 +30,6 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 # Online and offline point of sale (POS) operations
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 Most actions that users take in the point of sale (POS) are considered operations. Operations are configured and managed in the Dynamics 365 Commerce back office. Many operations can be added to buttons in the POS button grid. Users can then select the buttons to invoke the operations and perform their function. To make an operation available to be added to a button grid in button grid designer, it must first be marked as a user operation on the POS operations view in Commerce headquarters (**Retail and Commerce \> Channel Setup \> POS setup \> POS \> POS Operations**.)
 
@@ -277,7 +276,7 @@ The following columns specify where the operations can be invoked:
 | 1218 | Force unlock peripheral                           | The system uses this operation internally to unlock POS peripherals.                                                                                                                                           | Not applicable | Not applicable     | Not applicable | Not applicable    | No              |
 | 1219 | Open URL in POS                                   | Open an administrator-configured URL in POS.                                                                                                                                                                           | Yes            | Yes                | Yes            | Yes               | No              |
 | 1220 | Manage Safe                                       | Manage the Safe for different registers.                                                                                                                                                                       | Yes            | Yes                | Yes            | Yes               | No              |
-| 1221 | Void Suspended Transactions                       | Void suspended transactions.                                                                                                                                                                               | Yes            | Yes                | Yes            | Yes               | No              |
+| 1221 | Void Suspended Transactions                       | Void suspended transactions.                                                                                                                                                                               | Yes            | No                | No            | Yes               | No              |
 | 1300 | Skip fiscal registration                          | Skip fiscal registration.                                                                                                                                                                                       | No            | No                | No            | Yes               | No             |
 | 1301 | Mark fiscal event registered                      |  Mark fiscal event as registered.                                                                                                                                                                                  | No            | No                | No            | Yes               | No             |
 | 1302 | Complete fiscal registration process              | Complete the fiscal registration process.                                                                                                                                                                           | No            | No                | Yes            | Yes               | Yes             |

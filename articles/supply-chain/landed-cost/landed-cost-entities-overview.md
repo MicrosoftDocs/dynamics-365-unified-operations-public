@@ -1,6 +1,6 @@
 ---
 title: Landed cost entities overview
-description: This topic provides an overview of the data entities for Landed cost that enable external data sources to create voyages and costs, and update container tracking records.
+description: This article provides an overview of the data entities for Landed cost that enable external data sources to create voyages and costs, and update container tracking records.
 author: yufeihuang
 ms.date: 05/27/2022
 ms.topic: article
@@ -16,8 +16,6 @@ ms.dyn365.ops.version: 10.0.28
 # Landed cost entities overview
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until GA with 10.0.28 -->
 
 The **Landed cost** module helps businesses streamline inbound shipping operations by providing complete financial and logistical control over imported freight, from the manufacturer to the warehouse. Transaction data entities for Landed cost enable external data sources (such as freight forwarder services) to create voyages and costs, and update container tracking records.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prepare your environment to interoperate with ID-porten and Altinn web services
-description: This topic explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
+description: This article explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
 author: liza-golub
 ms.date: 05/27/2022
 ms.topic: article
@@ -108,7 +108,7 @@ Follow these steps to set up the application-specific parameters for the **VAT D
 5. On the **Lookups** FastTab, select each lookup, and define appropriate conditions for it.
 6. On the **Conditions** FastTab, define which tax codes or other available criteria must correspond to a specific lookup result.
 
-    If conditions are defined on one line, the system generally applies them to a source tax transaction by using the **AND** operator. If conditions must be applied by using the **OR** operator, define them on separate lines. When a tax transaction from the reporting period meets a condition in the list, the value that is specified in the related **Result** column will be reported for the related document. More information about the setup of each lookup field is provided later in this topic.
+    If conditions are defined on one line, the system generally applies them to a source tax transaction by using the **AND** operator. If conditions must be applied by using the **OR** operator, define them on separate lines. When a tax transaction from the reporting period meets a condition in the list, the value that is specified in the related **Result** column will be reported for the related document. More information about the setup of each lookup field is provided later in this article.
 
 7. When you've finished setting up conditions, in the **State** field, select **Completed**. Then save the configuration.
 
@@ -339,7 +339,7 @@ To prepare Finance to report a VAT return for a VAT group, make sure that your b
 - The **Settle and post sales tax** job is completed in each subsidiary legal entity.
 - Application-specific parameters for the VAT return format are set up for each subsidiary legal entity. The setup configurations are completed for both the **VAT Declaration XML (NO)** format and the **VAT Declaration Excel (NO)** format.
 - A VAT return in Excel format is correctly generated in each subsidiary legal entity.
-- One legal entity is set up for interoperation with Altinn according to the information in this topic.
+- One legal entity is set up for interoperation with Altinn according to the information in this article.
 - Sales tax settlement periods for the **NO VAT Collect sales tax payments** action are defined for each subsidiary legal entity.
 
 To enable Finance to report VAT returns from multiple legal entities in the same system database, you must enable the **Cross-company queries for the populate records actions** feature in the **Feature management** workspace. 
@@ -362,7 +362,7 @@ The **NO VAT return** processing lets you collect sales tax payment transactions
 
     If you don't set the **Settlement period** field, all tax transactions from the selected legal entity will be considered for reporting.
 
-If your company must report a VAT return as a VAT group, make sure that all the conditions that are described in the [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vat-group) section of this topic are met. Then follow these steps to set up the sales tax settlement period for all the legal entities that are included in the VAT group.
+If your company must report a VAT return as a VAT group, make sure that all the conditions that are described in the [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vat-group) section of this article are met. Then follow these steps to set up the sales tax settlement period for all the legal entities that are included in the VAT group.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records**.
 

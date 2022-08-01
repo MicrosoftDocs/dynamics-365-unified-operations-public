@@ -2,7 +2,7 @@
 # required metadata
 
 title: Localize a module
-description: This topic describes how to localize a module for rendering, and how to localize general module information, such as the module name, description, and configuration fields.
+description: This article describes how to localize a module for rendering, and how to localize general module information, such as the module name, description, and configuration fields.
 author: samjarawan
 ms.date: 03/08/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to localize a module for rendering. It also describes how to localize general module information, such as the module name, description, and configuration fields.
+This article describes how to localize a module for rendering. It also describes how to localize general module information, such as the module name, description, and configuration fields.
 
 ## Localize module-rendered strings
 

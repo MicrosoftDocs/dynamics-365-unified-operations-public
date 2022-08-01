@@ -2,7 +2,7 @@
 # required metadata
 
 title: Procurement and sourcing home page
-description: This topic provides a list of the help topics and other resources that are available for Procurement and sourcing.
+description: This article provides a list of the help articles and other resources that are available for Procurement and sourcing.
 author: GalynaFedorova
 ms.date: 09/27/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides a list of the help topics and other resources that are available for Procurement and sourcing.
+This article provides a list of the help articles and other resources that are available for Procurement and sourcing.
 
 Procurement and sourcing covers all steps from identifying a need for product and services, through procuring the product, receipt, invoice, and processing payment with vendors. Procurement processes can be configured toward specific business needs by defining purchasing policies and workflows. For general information, see [Procurement and sourcing overview](procurement-sourcing-overview.md). Additional resources are listed below.
 
@@ -58,10 +58,8 @@ Procurement and sourcing covers all steps from identifying a need for product an
 -   [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Manage vendor collaboration users](manage-vendor-collaboration-users.md)
 -   [Set up and maintain vendor collaboration](set-up-maintain-vendor-collaboration.md)
--   [Inbound consignment inventory demo script for Microsoft Dynamics 365 for Finance and Operations](https://www.microsoft.com/download/details.aspx?id=101945)(white paper)
+-   [Inbound consignment inventory demo script](https://www.microsoft.com/download/details.aspx?id=101945)(white paper)
 -   [Monitor consignment inventory using vendor collaboration](../inventory/tasks/monitor-consignment-inventory-vendor-collaboration.md)
--   [Collaborate with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md)  (February 2016 and May 2016 versions of Dynamics AX only)
--   [Vendor portal user security](configure-security-vendor-portal-users.md) (2016 and May 2016 versions of Finance and Operations only)
 -   [Vendor collaboration mobile workspace](vendor-collaboration-mobile-workspace.md)
 
 ## Procurement product management

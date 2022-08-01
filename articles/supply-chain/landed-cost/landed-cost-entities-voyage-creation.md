@@ -1,6 +1,6 @@
 ---
 title: Voyage creation entities
-description: This topic provides information about voyage creation data entities, which group the data entities that are required to create a working voyage.
+description: This article provides information about voyage creation data entities, which group the data entities that are required to create a working voyage.
 author: yufeihuang
 ms.date: 05/27/2022
 ms.topic: article
@@ -16,8 +16,6 @@ ms.dyn365.ops.version: 10.0.28
 # Voyage creation entities
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until GA with 10.0.28 -->
 
 The voyage creation data entities group together the data entities that are required to create a working voyage. You or your freight forwarder can use these data entities to create voyage, shipping container, folio, and voyage line records that reference existing purchaser order or transfer order lines.
 

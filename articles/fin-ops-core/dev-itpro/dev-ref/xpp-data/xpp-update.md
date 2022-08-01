@@ -1,6 +1,6 @@
 ---
 title: Update data
-description: This topic describes the update and doUpdate methods in the X++ language.
+description: This article describes the update and doUpdate methods in the X++ language.
 author: RobinARH
 ms.date: 06/16/2020
 audience: Developer

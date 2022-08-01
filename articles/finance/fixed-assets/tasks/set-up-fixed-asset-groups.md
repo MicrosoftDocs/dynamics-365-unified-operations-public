@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Set up fixed asset groups
-description: This topic explains how to create a new fixed asset group. 
+description: This article explains how to create a new fixed asset group. 
 author: moaamer
 ms.date: 08/02/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to create a new fixed asset group. It uses the Accountant role and demo data for the USMF legal entity.
+This article explains how to create a new fixed asset group. It uses the Accountant role and demo data for the USMF legal entity.
 
 1. In the navigation pane, go to **Modules > Fixed assets > Setup > Fixed asset groups**.
 2. Select **New**.

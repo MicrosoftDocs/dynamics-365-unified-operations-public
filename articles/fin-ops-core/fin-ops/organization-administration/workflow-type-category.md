@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create a workflow category
-description: This topic describes how to create a workflow category.
+description: This article describes how to create a workflow category.
 author: RobinARH
 ms.date: 06/19/2019
 ms.topic: article
@@ -37,7 +37,7 @@ When you create a workflow type, you must assign it to a workflow category. The 
 
 For example, a workflow type for a customer invoice should not be available in the **Master planning** module. To make the workflow type available only in the **Customer** module, select the **Customer** module when you create a workflow category.
 
-This topic describes how to create a workflow category.
+This article describes how to create a workflow category.
 
 ## Create a workflow category
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Shipping discount overview
-description: This topic describes the shipping discount capabilities within Dynamics 365 Commerce and the corresponding setup steps required to start using these discounts.
+description: This article describes the shipping discount capabilities within Dynamics 365 Commerce and the corresponding setup steps required to start using these discounts.
 author: ShalabhjainMSFT
 ms.date: 01/22/2020
 ms.topic: overview
@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of the shipping promotion capability available within Dynamics 365 Commerce. Free or discounted shipping is one of the highly influencing factors driving the customers' online purchase decisions. Many retailers also leverage the free shipping benefit to motivate the customers to increase their basket size, thus increasing the revenue per transaction. With the 10.0 release of Retail, retailers can use "Retail shipping threshold discount" to define the thresholds, which once met, will qualify the customers for discounted or free shipping. For example, spend $50 or more to get free 'Overnight shipping' or sign up for the loyalty program and get free 'Two-day shipping'. 
+This article provides an overview of the shipping promotion capability available within Dynamics 365 Commerce. Free or discounted shipping is one of the highly influencing factors driving the customers' online purchase decisions. Many retailers also leverage the free shipping benefit to motivate the customers to increase their basket size, thus increasing the revenue per transaction. With the 10.0 release of Retail, retailers can use "Retail shipping threshold discount" to define the thresholds, which once met, will qualify the customers for discounted or free shipping. For example, spend $50 or more to get free 'Overnight shipping' or sign up for the loyalty program and get free 'Two-day shipping'. 
 
 This feature leverages the advanced auto charges capability that was available in the call center and e-Commerce modules but has now been made available in POS. For more information, see [Omni-channel advanced auto charges](/dynamics365/unified-operations/retail/omni-auto-charges). These advanced auto charges need to be enabled for shipping promotion to work. These can be enabled by turning on the "Use advanced auto-charges" configuration on the **Commerce parameters** \> **Customer orders** tab. Retailers can use the advanced auto charges feature to set various types of charges such as handling, installation, and disposal, however, the shipping discount is only applied to the shipping charges. Thus, the retailer needs to specify which of the charges are shipping charges. To specify a shipping charge, go to **Retail and Commerce** \> **Retail and Commerce IT** \> **Channel setup** \> **Charges** \> **Charge codes**. Select the **Shipping charge** check box for the desired charges. This is the only prerequisite for using the shipping threshold discount. 
 

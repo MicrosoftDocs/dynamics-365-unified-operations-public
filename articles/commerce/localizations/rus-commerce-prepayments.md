@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prepayments in Dynamics 365 Commerce for Russia
-description: This topic provides an overview of processing for prepayment transactions in Microsoft Dynamics 365 Commerce for Russia.
+description: This article provides an overview of processing for prepayment transactions in Microsoft Dynamics 365 Commerce for Russia.
 author: akviklis
 ms.date: 08/02/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides an overview of processing for prepayment transactions in Microsoft Dynamics 365 Commerce for Russia.
+This article provides an overview of processing for prepayment transactions in Microsoft Dynamics 365 Commerce for Russia.
 
 Dynamics 365 Commerce processes prepayment transactions for the following payment types that are used in Russian retail:
 
