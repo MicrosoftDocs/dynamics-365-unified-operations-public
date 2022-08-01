@@ -4,7 +4,7 @@ description: This article describes how to configure detours for menu items so t
 author: Mirzaab
 ms.date: 10/15/2021
 ms.topic: article
-ms.search.form:
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
