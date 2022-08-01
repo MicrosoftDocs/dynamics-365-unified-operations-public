@@ -29,16 +29,14 @@ Several related outbound warehouse capabilities can be used with containers. For
 - [Confirm and transfer](confirm-and-transfer.md)
 - [Set different dimensions for packing and storage](packing-vs-storage-dimensions.md)
 - [Packing work for packing outbound containers and processing shipments](packing-work.md)
-<!-- KFM: When published, add link to [Manual packing on the Warehouse management mobile app](manual-packing-on-the-warehouse-management-mobile-app.md) -->
+<!-- KFM: Add link to upcoming topic when available (10.0.31): [Manual packing on the Warehouse management mobile app](manual-packing-on-the-warehouse-management-mobile-app.md) -->
 
 ## Set up your warehouse to use manual packing operations
 
 There are two basic ways to organize your outbound operations:
 
-<!-- KFM: Confirm the following terminology and concept with Per -->
-
 - **Wave creation and processing** – Workers pick items based on outbound warehouse work. They then put the items directly in an outbound shipping location, where they are ready for immediate shipment. For information about how to set up and use this process, see [Wave creation and processing](wave-processing.md).
-- **Manual packing at packing stations** – This process has an additional operation between the picking and shipping operations. Instead of putting the inventory in a *bay door shipping location*, workers put it in a *packing location*. They then manage the packing process at the packing station by using the **Pack** page in the web client and/or the *Packing* workflow in the Warehouse Management mobile app. To enable this process, you must configure your system as described in this section.
+- **Manual packing at packing stations** – This process has an additional operation between the picking and shipping operations. Instead of putting the inventory in a *bay door shipping location*, workers put it in a *packing location*. They then manage the packing process at the packing station by using the **Pack** page in the web client. To enable this process, you must configure your system as described in this section.
 
 ### Set up warehouse locations for packing
 
@@ -65,8 +63,6 @@ Follow these steps to set the location type that is used for packing operations.
 
 1. Go to **Warehouse management \> Setup \> Warehouse management parameters**
 2. On the **General** tab, on the **Location types** FastTab, set the **Packing location type** field to the location type that you will use to identify packing stations.
-
-<!-- KFM: The following note may be obsolete and should maybe be removed. -->
 
 > [!NOTE]
 > If you're upgrading from a version of Microsoft Dynamics AX, the *In packing* status has been removed from shipments and loads, because it didn't work consistently and caused redundant data. Therefore, the **In shipments** and **Loads in packing** list pages have been deprecated. Containers that must be packed are tracked at the location level.
