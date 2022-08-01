@@ -37,8 +37,6 @@ The following table lists the features that are included in this release. We mig
 | Performance | Remove RTS dependency for "edit customer" scenarios   |  High availability and high performance are default expectations for point of sale (POS) and e-commerce channels. To help meet these expectations, Dynamics 365 Commerce channels no longer need to rely on real-time communication with Commerce headquarters when customer information is edited. The ability to edit customer information asynchronously for async and non-async customers can reduce real-time calls to Commerce headquarters.| Enabled by admin/makers  |
 
 
-
-
 ## Feature state changes in this release
 
 The following table lists features that became mandatory or on by default starting in 10.0.29. All of these features will automatically be turned on for your system as soon as you update to 10.0.29. Mandatory features can't be turned off, but features that are on by default can still be turned off using [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
