@@ -60,7 +60,7 @@ This scenario shows how to configure a location inquiry as a detour in a worker-
 
 ### Enable sample data
 
-To use the specified sample records and values to work through this scenario, you must be using a system where the standard demo data is installed. You must also select the **USMF** legal entity before you begin.
+To use the specified sample records and values to work through this scenario, you must be using a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. You must also select the **USMF** legal entity before you begin.
 
 ### Create a menu-specific override and configure the detour for scenario 1
 
@@ -113,7 +113,7 @@ You can replace the location inquiry with a license plate inquiry or an item inq
 
 ### Enable sample data
 
-To use the specified sample records and values to work through this scenario, you must be using a system where the standard demo data is installed. You must also select the **USMF** legal entity before you begin.
+To use the specified sample records and values to work through this scenario, you must be using a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. You must also select the **USMF** legal entity before you begin.
 
 ### Create a menu-specific override and configure the detour for scenario 2
 

@@ -62,7 +62,7 @@ Use the following procedure to set up promoted fields.
 
 ### Enable sample data
 
-To use the specified sample records and values to work through this scenario, you must be using a system where the standard demo data is installed. You must also select the **USMF** legal entity before you begin.
+To use the specified sample records and values to work through this scenario, you must be using a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. You must also select the **USMF** legal entity before you begin.
 
 ### Configure sales picking with promoted steps on the license plate step
 
