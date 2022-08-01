@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.29 of finance and operations apps (October 2022)
 description: This topic lists the features that are included in the platform updates for version 10.0.29 of finance and operations apps.
 author: sericks007
-ms.date: 07/26/2022
+ms.date: 08/01/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -34,10 +34,9 @@ The following table lists the features that are included in this release.
 | Data integration | **User-based service protection API limits**<br><br>User-based service protection API limits provide protection against individual users or integrations harming system performance or availability. The limits are designed to protect the service when client applications make extraordinary demands on server resources through integrations with OData or custom service APIs. In this release, the feature is optional and disabled by default. In version 10.0.30, the user-based API limits will be enabled by default, but may optionally be disabled. The feature is targeted to be mandatory in version 10.0.33. | [Service protection API limits](../data-entities/service-protection-api-limits.md) | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)   |
 | Web client  | <p>**Extended grid aggregation capabilities**</p><p>This feature extends the current "totals" feature in the grid by allowing users to choose one of four aggregation functions for each numeric column. Besides showing a total, grid columns can now be configured to show the minimum value, maximum value, or averge value in the column. If grouping has been performed within the grid, the chosen aggregation function for that column will be shown for each group, as well.</p> | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md)  | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
 | Web client  | <p>**Saved views performance enhancement**</p><p>This feature improves the performance of loading the default view on page load by minimizing the number of times the query is executed. This is accomplished by modifying when certain parts of the default view are applied so that all query-related changes are in place when the form initially executes its query.</p> | [Build forms that fully utilize saved views](../user-interface/understanding-saved-views.md)  | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
-| Web client  | <p>**Evaluating math expressions in numeric cells outside the grid**</p><p>Numeric cells in the new grid have long allowed users to enter mathematical expressions directly in cells (e.g. "=15*4" followed by Enter will evaluate the expression and set a value of 60 in the cell) to boost user productivity. Starting with this release, this mathematical expression support has been extended to numeric controls outside the grid as well.</p> | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md#evaluating-math-expressions)  | Default |
-| Feature area  | [Name of feature](URL to feature description in the Release Plans)  | [Topic name](URL to topic with more information in core documentation)  | How do you turn this feature on? If you turn it on in Feature management, say: [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md)   |
+| Web client  | <p>**Evaluating math expressions in numeric cells outside the grid**</p><p>Numeric cells in the new grid have long allowed users to enter mathematical expressions directly in cells (for example, "=15*4" followed by **Enter** will evaluate the expression and set a value of 60 in the cell) to boost user productivity. Starting with this release, this mathematical expression support has been extended to numeric controls outside the grid, as well.</p> | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md#evaluating-math-expressions)  | Default |
 
-## Features that are mandatory or turned on by default in this release
+## Features that are mandatory or turned on by default with this release
 
 The following table lists features that are now mandatory or turned on by default with this release. For more details see [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
 
