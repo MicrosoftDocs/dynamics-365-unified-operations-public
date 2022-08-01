@@ -3,7 +3,7 @@
 
 title: Set up benefits
 description: This article describes how to set up benefits that workers and their dependents and beneficiaries can receive, and how to maintain payroll information for benefits.
-author: andreabichsel
+author: twheeloc
 ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollBenefitCalculationRat
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 221174
 ms.assetid: eb7d562e-075f-448a-b9c2-0a06e938805b

@@ -3,7 +3,7 @@
 
 title: Earnings and earnings generation FAQ
 description: This article answers some frequently asked questions about earnings and generating earnings.
-author: andreabichsel
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: HcmPosition, HcmWorker, PayrollEarningStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 220904
 ms.assetid: 8eef7aff-5d9a-47aa-b6a2-86958c3694cf

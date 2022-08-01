@@ -7,7 +7,7 @@ author: jaredha
 ms.date: 07/06/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: v-chgriffin
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: jaredha
 ms.search.validFrom: 2022-04-21

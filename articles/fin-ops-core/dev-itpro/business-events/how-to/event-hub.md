@@ -3,7 +3,7 @@
 
 title: Business events and Azure Event Hubs
 description: This tutorial describes the steps that you must follow to make business events work with Microsoft Azure Event Hubs.
-author: AXnU
+author: Sunil-Garg
 ms.date: 08/13/2019
 ms.topic: article
 ms.prod: 

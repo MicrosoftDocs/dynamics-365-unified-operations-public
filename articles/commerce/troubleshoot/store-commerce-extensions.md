@@ -17,7 +17,6 @@ ms.search.validFrom: 2017-06-20
 # Troubleshoot Store Commerce extension issues
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article explains how to troubleshoot extension issues in the Microsoft Dynamics 365 Commerce Store Commerce app.
 

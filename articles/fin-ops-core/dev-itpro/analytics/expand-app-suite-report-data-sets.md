@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Expand Application Suite report data sets
-description: This article shows how to expand an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. 
+description: This article shows how to expand an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class.
 author: RichdiMSFT
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 266594
-ms.assetid: 7810ee2c-e012-4a0f-992c-840e626bf437
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-
+ms.custom: 
+  - 266594
+ms.assetid: 7810ee2c-e012-4a0f-992c-840e626bf437
 ---
 
 # Expand Application Suite report data sets

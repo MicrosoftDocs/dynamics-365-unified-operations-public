@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
 ms.custom: 24211
 ms.search.region: Global

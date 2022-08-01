@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Column definitions in financial reports
-description: This article provides information about column definitions. A column definition is a report component that defines the contents of columns on a report. 
-author: ShylaThompson
+description: This article provides information about column definitions. A column definition is a report component that defines the contents of columns on a report.
+author: aprilolson
 ms.date: 10/10/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: FinancialReports
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 106601
-ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
+ms.reviewer: twheeloc
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 
+  - 106601
+ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
+ms.search.form: FinancialReports
 ---
 
 # Column definitions in financial reports

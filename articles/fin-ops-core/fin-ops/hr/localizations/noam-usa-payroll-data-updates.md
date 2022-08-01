@@ -3,7 +3,7 @@
 
 title: Payroll data updates FAQ
 description: This article lists questions and answers that address changes to payroll data.
-author: andreabichsel
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: HcmBenefit, HcmBenefitElementSetup, HcmWorkerEnrollment
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 221444
 ms.assetid: 27ccec84-8e9a-465e-9b2a-fbe88d974068

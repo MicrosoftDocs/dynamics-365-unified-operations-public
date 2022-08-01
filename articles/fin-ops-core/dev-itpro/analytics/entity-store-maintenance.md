@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Resolve issues after entity store maintenance
 description: This article describes procedures that must be completed after entity store maintenance.
 author: MilindaV2
@@ -8,19 +6,11 @@ ms.date: 04/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: [Global for most topics. Set Country/Region name for localizations]
-# ms.search.industry: [leave blank for most, retail, public sector]
+ms.reviewer: sericks
+ms.search.region: Global for most topics. Set Country/Region name for localizations
 ms.author: milindav
-ms.search.validFrom: 2018-3-30
+ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Platform update 15
 ---
 

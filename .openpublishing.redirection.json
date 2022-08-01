@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/commerce/commerce-analytics.md",
+      "redirect_url": "/dynamics365/commerce/get-started/removed-deprecated-features-commerce#feature-deprecation-effective-july-2022",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/finance/localizations/tasks/eur-00011-eu-sales-list-report.md",
       "redirect_url": "../emea-eu-sales-list-example",
       "redirect_document_id": "false"
@@ -19690,6 +19695,56 @@
     {
       "source_path": "articles/supply-chain/pim/tasks/release-product-product-master-legal-entities.md",
       "redirect_url": "/dynamics365/supply-chain/pim/product-information",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cloud-edge/cloud-edge-edge-scale-units-lbd.md",
+      "redirect_url": "/dynamics365/supply-chain/cloud-edge/cloud-edge-landing-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cloud-edge/cloud-edge-message-processor-messages.md",
+      "redirect_url": "/dynamics365/supply-chain/cloud-edge/cloud-edge-landing-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cloud-edge/cloud-edge-try-out.md",
+      "redirect_url": "/dynamics365/supply-chain/cloud-edge/cloud-edge-landing-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cloud-edge/cloud-edge-warehouse-inventory-adjustment.md",
+      "redirect_url": "/dynamics365/supply-chain/cloud-edge/cloud-edge-landing-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cloud-edge/cloud-edge-warehouse-order.md",
+      "redirect_url": "/dynamics365/supply-chain/cloud-edge/cloud-edge-landing-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cloud-edge/cloud-edge-workload-manufacturing.md",
+      "redirect_url": "/dynamics365/supply-chain/cloud-edge/cloud-edge-landing-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cloud-edge/cloud-edge-workload-setup-warehouse-app.md",
+      "redirect_url": "/dynamics365/supply-chain/cloud-edge/cloud-edge-landing-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/cloud-edge/cloud-edge-workload-warehousing.md",
+      "redirect_url": "/dynamics365/supply-chain/cloud-edge/cloud-edge-landing-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/install-configure-warehousing-app.md",
+      "redirect_url": "/dynamics365/supply-chain/get-started/removed-deprecated-features-scm-updates#wma",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/warehousing/tasks/set-up-manual-packing-2016-02-05.md",
+      "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/packing-containers",
       "redirect_document_id": "false"
     }
   ]
