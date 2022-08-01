@@ -15,9 +15,12 @@ ms.search.validFrom: 2022-07-31
 
 [!include [banner](../../includes/banner.md)]
 
-When you setup Power Platform integration for your Sandbox and Production environments from LCS, you will automatically see a 5-minute session timeout window for dual-write sessions. 
-However, you will get only a 2-minute session timeout window on developer boxes and customer hosted environments. In order to get 5-minute session timeout window, you need to follow the below steps.
-These steps are applicable for dual-write core solution version 10.0.36.0. and beyond.
+When you setup dual-write, you will get only a 2-minute session timeout window for dual-write sessions. In order to get a 5-minute session timeout window, please follow the below instructions. These steps are applicable for dual-write core solution version 10.0.36.0 and beyond.
+
+- For Sandbox and Production environments, please raise a support ticket with Microsoft support team with title "Enable 5-min transaction timeout for Dual Write DV to FinOps Transactions" along with Org Id or Tenant Id. We will enable it for you. 
+
+- For developer boxes and Customer Hosted Environments, please follow the steps detailed below. Once you complete these steps, please raise a support ticket with Microsoft Support team with the same title "Enable 5-min transaction timeout for Dual Write DV to FinOps Transactions" along with Org Id or Tenant Id. We will enable it for you. 
+
 
 ## Register the app in the Azure portal
 The following procedure explains how to create the Azure AD application.
