@@ -20,6 +20,12 @@ Dual-write is an out-of-box infrastructure that provides near-real-time interact
 
 ## July 2022 release 
 
+The Julye release of [Dual-write core solution 1.0.36.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following changes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Feature | [Ability to enable 5-minute session timeout window for developer box and customer hosted environments.](5-minute-mode.md) | General availability |
+
 The July release of Dual-write Global Address Book solution 3.5.1.6 contains the following bug fixes.
 
 | Feature | Description | Status |
