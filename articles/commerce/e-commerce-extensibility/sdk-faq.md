@@ -28,7 +28,6 @@ ms.dyn365.ops.version: Release 10.0.5
 # Dynamics 365 Commerce online SDK FAQ
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 

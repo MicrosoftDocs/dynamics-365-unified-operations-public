@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article explains how to create and delete multi-level assets. You can create assets and related sub-assets in a hierarchical tree structure. In this way, you can show relations and dependencies among assets. Maintenance jobs can be related to all levels of the tree structure. Statistics can also be created for an individual level or as a sum of all sub-asset levels.
 
-On the **All Assets** list page (**Asset management** \> **Common** \> **Assets** \> **All assets**), the **Asset** column lists assets in hierarchical order. The **Parent** column shows the related parent. Additionally, if assets and sub-assets have already been created, the **Asset tree** section in the **Related information** pane shows the assets in a tree structure.
+On the **All Assets** list page (**Asset management** \> **Assets** \> **All assets**), the **Asset** column lists assets in hierarchical order. The **Parent** column shows the related parent. Additionally, if assets and sub-assets have already been created, the **Asset tree** section in the **Related information** pane shows the assets in a tree structure.
 
 For information about how to create an asset, see [Create an asset](../objects/create-an-object.md). To create a sub-asset, select the parent asset in the **Parent** field on the **General** FastTab.
 
@@ -43,7 +43,7 @@ For information about how to create an asset, see [Create an asset](../objects/c
 
 If your company has several similar asset structures, you can use the Copy function in Asset Management to quickly create them.
 
-1. Select **Asset management** \> **Common** \> **Assets** \> **All assets**.
+1. Select **Asset management** \> **Assets** \> **All assets**.
 2. On the **All assets** list page, select the asset to copy. For example, if you want to copy the whole asset structure, including sub-assets, select a parent asset.
 3. Select **Copy asset**. In the **Copy from** section, the **Asset** field is set to the asset that you selected on the list page.
 4. In the **Copy to** section, in the **Asset** field, enter the name of the new asset.

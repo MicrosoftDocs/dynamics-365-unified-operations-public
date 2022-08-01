@@ -3,7 +3,7 @@
 
 title: Standard payroll reports
 description: This article describes the standard payroll reports that are provided to help you with payroll processing and government reporting. 
-author: andreabichsel
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 220994
 ms.assetid: 92b0da78-1c42-46f7-b1a2-334d75e625f3

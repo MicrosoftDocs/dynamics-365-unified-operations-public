@@ -48,18 +48,12 @@ The out-of-box Dynamics 365 Payment Connector for Adyen uses the standard paymen
 ### Supported versions
 
 #### Microsoft Dynamics 365 supported versions
-The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported in Microsoft Dynamics 365 for Finance and Operations version 8.1.3 (January 2019) or later, and in Microsoft Dynamics 365 Retail version 8.1.3 or later. However, third parties can still develop other payment connectors for Adyen for earlier versions of Microsoft Dynamics 365.
+The first-party out-of-box Dynamics 365 Payment Connector for Adyen is supported in Microsoft Dynamics 365 Finance version 8.1.3 (January 2019) or later, and in Microsoft Dynamics 365 Retail version 8.1.3 or later. However, third parties can still develop other payment connectors for Adyen for earlier versions of Microsoft Dynamics 365.
 
 #### Supported Adyen Firmware versions
 The list below describes the minimum and maximum Adyen firmware versions that are supported for each version of the Microsoft Dynamics 365 Retail POS.
 
 ---
-
-# [10.0.22](#tab/10-0-22)
-### Dynamics 365 Retail POS version 10.0.22
-| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
-| --- | --- |
-| adyen_v1_65p8 | adyen_v1_67p10 |
 
 # [10.0.23](#tab/10-0-23)
 ### Dynamics 365 Retail POS version 10.0.23
@@ -90,6 +84,12 @@ The list below describes the minimum and maximum Adyen firmware versions that ar
 | Minimum Adyen Firmware version | Maximum Adyen Firmware version |
 | --- | --- |
 | adyen_v1_73p6 | adyen_v1_75p13 |
+
+# [10.0.28](#tab/10-0-28)
+### Dynamics 365 Retail POS version 10.0.28
+| Minimum Adyen Firmware version | Maximum Adyen Firmware version |
+| --- | --- |
+| adyen_v1_73p6 | adyen_v1_75p22 |
 
 ---
 
@@ -194,10 +194,12 @@ The following countries have Commerce components available and card present supp
 | Iceland | ✔ |
 | Ireland | ✔ |
 | Italy | ✔ |
+| Japan | Future release |
 | Latvia | ✔ |
 | Lithuania | ✔ |
 | Malaysia | ✔ |
 | Netherlands | ✔ |
+| New Zealand | ✔ |
 | Norway | ✔ |
 | Poland | ✔ |
 | Singapore | ✔ |
@@ -301,6 +303,8 @@ The following table shows the set of features that the Dynamics 365 Payment Conn
 | [Dedicated payment terminals and prompts for a printer and cash drawer](../pos-multi-hws.md) | ✔<br>(Starting with 10.0.12) | |
 | [SDK-level tipping support through the Adyen connector](tipping.md) | ✔<br>(Starting with 10.0.14) | |
 | [Incremental capture for order invoicing](incremental-capture.md) |  | ✔<br>(Starting with 10.0.18) |
+| [Wallet Payments](./wallets.md) |  | ✔<br>(Starting with 10.0.20) |
+| [Google Pay with Adyen](google-pay-adyen.md) |  | ✔<br>(Starting with 10.0.27) |
 
 ## Next steps
 
@@ -317,3 +321,4 @@ For information on signing up for and configuring the Dynamics 365 Payment Conne
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
+

@@ -86,7 +86,7 @@ The demo data requires setup and inventory adjustments to support the scenarios.
 
 1. Select **OK** to apply your settings and close the query dialog box.
 1. Select **Save** to save your changes to the location directive.
-1. On a mobile device or in the *Dynamics 365 for Finance and Operations - Warehousing* app on your PC, follow these steps to remove existing inventory from the warehouse location to support the scenarios:
+1. On a mobile device or in the *Dynamics 365 Supply Chain Management - Warehousing* app on your PC, follow these steps to remove existing inventory from the warehouse location to support the scenarios:
 
     1. Sign in to warehouse *63* by using the appropriate user ID and password.
     1. On the main menu, select **Quality**.

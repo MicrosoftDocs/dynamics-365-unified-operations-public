@@ -65,7 +65,7 @@ For example, in the following illustration, because of the way that the **Truck 
 
 ![Figure 1.](media/01-integration-to-pma.png)
 
-The purpose of the project ID on the work order job, and the related activity number, is to track costs that are related to the work order job, and the asset that is selected on it, in the **Project management and accounting** module. (To view the project ID and activity number, select **Asset management** > **Common** > **Work orders** > **All work orders**, and then select the work order. On the **Line details** FastTab, the **Project ID** field shows the project ID, and the **Activity number** field shows the activity number.) For more information about cost control in Asset Management, see [Cost and date control](../controlling-and-reporting/cost-and-date-control.md).
+The purpose of the project ID on the work order job, and the related activity number, is to track costs that are related to the work order job, and the asset that is selected on it, in the **Project management and accounting** module. (To view the project ID and activity number, select **Asset management** > **Work orders** > **All work orders**, and then select the work order. On the **Line details** FastTab, the **Project ID** field shows the project ID, and the **Activity number** field shows the activity number.) For more information about cost control in Asset Management, see [Cost and date control](../controlling-and-reporting/cost-and-date-control.md).
 
 The following illustration shows a graphical overview of work order projects and related project activities.
 

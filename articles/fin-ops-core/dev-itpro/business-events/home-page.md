@@ -2,9 +2,9 @@
 # required metadata
 
 title: Business events overview
-description: This article provides information about business events, which allow external systems to receive notifications from Finance and Operations apps.
-author: Sunil-Garg
-ms.date: 04/22/2022
+description: This article provides information about business events, which allow external systems to receive notifications from finance and operations apps.
+author: jaredha
+ms.date: 07/15/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -18,7 +18,7 @@ ms.reviewer: sericks
 
 ms.search.region: Global for most topics. Set Country/Region name for localizations
 # ms.search.industry: 
-ms.author: sunilg
+ms.author: jaredha
 ms.search.validFrom: Platform update 24
 ms.dyn365.ops.version: 2019-02-28
 ---
@@ -26,9 +26,8 @@ ms.dyn365.ops.version: 2019-02-28
 # Business events overview
 
 [!include[banner](../includes/banner.md)]
-[!include[preview banner](../includes/preview-banner.md)]
 
-Business events provide a mechanism that lets external systems receive notifications from Finance and Operations applications. In this way, the systems can perform business actions in response to the business events.
+Business events provide a mechanism that lets external systems receive notifications from finance and operations applications. In this way, the systems can perform business actions in response to the business events.
 
 Business events occur when a business process is run. During a business process, users who participate in it perform business actions to complete the tasks that make up the business process. 
 
@@ -227,3 +226,4 @@ To ensure backward compatibility, the following behavior must be understood.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

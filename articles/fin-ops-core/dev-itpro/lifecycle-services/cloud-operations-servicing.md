@@ -32,10 +32,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 For customers, partners, and Microsoft to be successful in this endeavor, we must ensure that most of the actions are self-serve with the Microsoft Dynamics Service Engineering (DSE) team managing by exception. To attain this self-serve mode, the Microsoft Product team continues to add more automation around the various features needed to operate an environment.
 
-The Finance and Operations apps are managed services. This means that Microsoft is responsible for managing and operating the production environments. Microsoft’s Dynamics Service Engineering team is available 24 hours a day, 7 days a week, and 365 days a year to operate and manage our customers' production systems.
+The finance and operations apps are managed services. This means that Microsoft is responsible for managing and operating the production environments. Microsoft’s Dynamics Service Engineering team is available 24 hours a day, 7 days a week, and 365 days a year to operate and manage our customers' production systems.
 
 ## Monitor and troubleshoot the health of your environment
-A key tenant for a successful onboarding experience to the cloud service is knowing the health of your environments at all times and being able to troubleshoot health issues when necessary. Lifecycle Services (LCS), which is the admin center for Finance and Operations, contains a collection of monitoring and diagnostics tools which can help ensure that you have an accurate view of the environments that you manage. For more information, see [Monitoring and diagnostics tools in Lifecycle Services (LCS)](monitoring-diagnostics.md).
+A key tenant for a successful onboarding experience to the cloud service is knowing the health of your environments at all times and being able to troubleshoot health issues when necessary. Lifecycle Services (LCS), which is the admin center for finance and operations, contains a collection of monitoring and diagnostics tools which can help ensure that you have an accurate view of the environments that you manage. For more information, see [Monitoring and diagnostics tools in Lifecycle Services (LCS)](monitoring-diagnostics.md).
 
 ## Update your environment
 After go-live, the Production environment must be updated at regular intervals. Lifecycle Services (LCS) provides a self-serve experience to continuously update your environments.
@@ -87,7 +87,7 @@ Microsoft has introduced a new post-servicing step that lets you do index creati
 If any failure occurs during the post-processing step, the LCS dashboard will display **Post-servicing failed**. The environment will still be accessible so that users can perform regular activities, however performance might be degraded. If you experience that the issue is not resolved in 24 hours, then contact Microsoft Support. 
 
 ## Upgrade your environment
-For information about how to upgrade to the latest version, see [Process for moving to the latest update of Finance and Operations](../migration-upgrade/upgrade-latest-update.md) and [What's new or changed in Finance and Operations home page](../../fin-ops/get-started/whats-new-changed.md).
+For information about how to upgrade to the latest version, see [Process for moving to the latest update of finance and operations](../migration-upgrade/upgrade-latest-update.md) and [What's new or changed in finance and operations home page](../../fin-ops/get-started/whats-new-changed.md).
 
 ## Environment data management
 These are the options for managing databases, including the ability to copy a database from one environment to another or restore a database to a previous state. For more information, see [Database movement operations home page](../database/dbmovement-operations.md).
@@ -99,3 +99,4 @@ When the status of the package application is changed, LCS sends a notification 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

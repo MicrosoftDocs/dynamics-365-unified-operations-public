@@ -32,13 +32,13 @@ ms.dyn365.ops.version: AX 7.0.0, Operations
 
 New to Dynamics 365 Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce? We've put together step-by-step guidance whether you're still evaluating or ready to make a purchase.
 
-## Step one: Try out Finance and Operations free for 30 days
+## Step one: Try out finance and operations free for 30 days
 
-You can try Dynamics 365 for Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce for 30 days through a simple email signup. The trial version of Finance and Operations applications includes Getting started task guides that provide step-by-step instructions that allow you to view specific scenarios in action. The product is available to explore and exercise scenarios, but cannot be customized. Demo data is included to ease the use of the product and to make the experience more meaningful. A reminder email will be sent 3 days prior to the trial expiration. Get details at [Sign up for preview subscriptions](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
+You can try Dynamics 365 for Finance, Dynamics 365 Supply Chain Management, or Dynamics 365 Commerce for 30 days through a simple email signup. The trial version of finance and operations applications includes Getting started task guides that provide step-by-step instructions that allow you to view specific scenarios in action. The product is available to explore and exercise scenarios, but cannot be customized. Demo data is included to ease the use of the product and to make the experience more meaningful. A reminder email will be sent 3 days prior to the trial expiration. Get details at [Sign up for preview subscriptions](../../dev-itpro/dev-tools/sign-up-preview-subscription.md#subscribe).
 
 ## Step two: Choose a deployment option
 
-You can now deploy Finance and Operations applications in the cloud or on-premises. Cloud deployments offer an ERP service that is fully managed by Microsoft, while on-premises deployments are deployed locally within a customer's data center.
+You can now deploy finance and operations applications in the cloud or on-premises. Cloud deployments offer an ERP service that is fully managed by Microsoft, while on-premises deployments are deployed locally within a customer's data center.
 
 The following considerations must be taken when you choose on-premises as a deployment option:
 
@@ -68,13 +68,13 @@ A Microsoft Cloud Solution Provider can work closely with you to understand the 
 
 ### Buy through a Dynamics partner (on-premises)
 
-You must work with a partner to purchase Finance and Operations on-premises. For more information, see [Buy Finance + Operations (on-premises)](purchase-on-premises.md).
+You must work with a partner to purchase Finance + Operations (on-premises). For more information, see [Buy Finance + Operations (on-premises)](purchase-on-premises.md).
 
 ### Buy through volume licensing (cloud or on-premises)
 
 If your organization has 250 or more Dynamics 365 users, you may be interested in a [Volume licensing agreement](https://www.microsoft.com/Licensing/product-licensing/dynamics365).
 
-In volume licensing, Finance and Operations applications are available through:
+In volume licensing, finance and operations applications are available through:
 
 - Enterprise Agreement
 - Enterprise Agreement Subscription
@@ -100,3 +100,4 @@ If you are a customer who is upgrading from Microsoft Dynamics AX 2012 or migrat
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

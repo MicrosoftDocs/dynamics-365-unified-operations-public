@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-1.  Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.
+1.  Click **Service management** \> **Service subscriptions** \> **All service subscriptions**.
 
 2.  On the **All service subscriptions** list page, select the subscription for which you want to create a subscription fee transaction.
 

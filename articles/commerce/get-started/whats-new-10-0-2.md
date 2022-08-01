@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Release 10
 This article describes features that are new or changed in Microsoft Dynamics 365 for Retail. 
 
 
-To learn about the features in Microsoft Dynamics 365 for Finance and Operations, see [What's new and changed in Finance and Operations version 10.0.2 (May 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-2).
+To learn about the features in Microsoft Dynamics 365 Finance, see [What's new and changed in finance and operations version 10.0.2 (May 2019)](/dynamics365/unified-operations/fin-and-ops/get-started/whats-new-changed-10-0-2).
 
 
 ## Fiscal registration service integration sample for Czech Republic

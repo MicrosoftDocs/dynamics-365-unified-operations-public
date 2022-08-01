@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-To approve rebate deals, Rebate management uses the same workflow platform as other Finance and Operations apps. Two job processes are associated with every workflow:
+To approve rebate deals, Rebate management uses the same workflow platform as other finance and operations apps. Two job processes are associated with every workflow:
 
 - One element of the workflow approves the deal.
 - One element of the workflow activates the deal so that the user or workflow process can approve the transactions.
@@ -60,3 +60,4 @@ You can change the following settings for a deal after it has been activated:
 - To date
 
 In addition, rebate lines can be removed.
+

@@ -4,7 +4,7 @@
 title: Maintenance in self-service environments FAQ
 description: This article provides answers to frequently asked questions about the Microsoft planned maintenance in self-service environments.
 author: matapg007
-ms.date: 06/02/2022
+ms.date: 07/26/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -28,17 +28,24 @@ Some of the common planned maintenance activities performed by Microsoft are:
 - Microsoft quality updates
 
 ## What are the planned maintenance windows?
-A planned maintenance window is typically during the dark hours of the geographic region that your environment is deployed in. The following list shows the maintenance windows for each geography in Coordinated Universal Time (UTC).
+A planned maintenance window is typically during the dark hours of the geographic region that your environment is deployed in. The following table lists the maintenance windows for each geography in Coordinated Universal Time (UTC).
 
-- US, BR, CA: 4:00 AM to 10:00 AM UTC 
-- CH, FR, EU, GB: 10:00 PM to 4:00 AM UTC
-- AE, NO, ZA: 6:00 PM to 12:00 AM UTC
-- CN, JP: 4:00 PM to 10:00 PM UTC
-- AU: 1:00 PM to 7:00 PM UTC
-- IN: 6:30 PM to 00:30 AM UTC
-
-To view a list of the geographical regions, see [Country/Region hierarchy used by Azure Traffic Manager for geographic traffic routing method](/azure/traffic-manager/traffic-manager-geographic-regions).
-
+|Geo | Maintenance window |
+|----|--------------------|
+|Australia |1:00 PM to 7:00 PM UTC|
+|Brazil |4:00 AM to 10:00 AM UTC |
+|Canada	|4:00 AM to 10:00 AM UTC |
+|China	|4:00 PM to 10:00 PM UTC|
+|Europe	|10:00 PM to 4:00 AM UTC|
+|France	|10:00 PM to 4:00 AM UTC|
+|India	|6:30 PM to 00:30 AM UTC|
+|Japan	|4:00 PM to 10:00 PM UTC|
+|Norway	|10:00 PM to 4:00 AM UTC|
+|South Africa	|10:00 PM to 4:00 AM UTC|
+|Switzerland	|10:00 PM to 4:00 AM UTC|
+|United Arab Emirates	|6:00 PM to 12:00 AM UTC|
+|United Kingdom	|10:00 PM to 4:00 AM UTC|
+|United States	|4:00 AM to 10:00 AM UTC |
 
 ## What is the schedule for operating system maintenance?
 
@@ -55,8 +62,8 @@ To view a list of the geographical regions, see [Country/Region hierarchy used b
 > 
 > All the maintenance activity (operating system patching, security hotfixes, and quality updates) will be performed during the dark hour window to provide a near-zero-downtime experience. 
 
-## Can operating system updates be applied in zero downtime?
-Yes, Microsoft began to roll out near-zero-downtime infrastructure maintenance in May 2021.
+## Can operating system updates be applied in near-zero-downtime?
+Yes. Microsoft has provided near-zero-downtime infrastructure maintenance for operating system updates since May 2021.
 
 ## What does near-zero-downtime maintenance mean?
 Customers can continue to operate the system during the maintenance activity. They may experience brief interruptions or disconnects during this window, but will not need to take a full downtime.
@@ -80,7 +87,7 @@ Individual batch servers will not be available for up to 30 minutes.The followin
   - Check printing 
   - Statement posting
 
-For more information, see [Can I change the maximum number of retries and the retry interval?](../sysadmin/retryable-batch.md#can-i-change-the-maximum-number-of-retries-and-the-retry-interval) to leran more about batch retry.
+For more information, see [Can I change the maximum number of retries and the retry interval?](../sysadmin/retryable-batch.md#can-i-change-the-maximum-number-of-retries-and-the-retry-interval) to learn more about batch retry.
 
 ### Priority-based scheduling
 - If priority-based scheduling is enabled, users will experience reduced Application Object Server (AOS) capacity during the maintenance window. Batch jobs will be served by the available AOS instances. Therefore, there will eventually be no complete downtime during the servicing window.
@@ -90,5 +97,5 @@ For more information, see [Can I change the maximum number of retries and the re
 > We are working to reduce the downtime for batch service to be a few minutes. This will require customers to adopt priority-based scheduling of batch jobs.
 
 ## Is it possible to reschedule near-zero-downtime operating system maintenance?
-To meet regulatory and security compliance standards, Microsoft will perform the planned maintenance during the dark hours of the geographic region where your environment is deployed. The main objective of planned maintenance is to regularly patch environments to remediate security vulnerabilities and apply critical quality updates. If you delay updates, you will put data security, availability, and reliability at risk. 
+No. To meet regulatory and security compliance standards, Microsoft will perform the planned maintenance during the dark hours of the geographic region where your environment is deployed. The main objective of planned maintenance is to regularly patch environments to remediate security vulnerabilities and apply critical quality updates. If you delay updates, you will put data security, availability, and reliability at risk. 
 

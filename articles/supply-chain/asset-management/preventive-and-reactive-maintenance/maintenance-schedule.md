@@ -49,7 +49,7 @@ The four maintenance schedule views are slightly different, depending on which m
 
 To open a maintenance schedule:
 
-1. Click **Asset management** > **Common** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines** or **Open maintenance schedule pools**.
+1. Click **Asset management** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines** or **Open maintenance schedule pools**.
 
 2. To update the maintenance schedule, click **Maintenance plan** or **Maintenance rounds**. 
 

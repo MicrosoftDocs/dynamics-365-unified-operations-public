@@ -85,7 +85,7 @@ The selected field group displays the columns that are available in the template
 [![Add and insert column.](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> To define the formula, create the formula in the spreadsheet, and then copy it to the **Design** window. A Finance and Operations bound table will typically be named "AXTable1". For example, to summarize Request Q1 : Request Q4 columns in the spreadsheet, the formula = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
+> To define the formula, create the formula in the spreadsheet, and then copy it to the **Design** window. A finance and operations bound table will typically be named "AXTable1". For example, to summarize Request Q1 : Request Q4 columns in the spreadsheet, the formula = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].
 
 Repeat these steps to insert the **Adjustment** column. Use formula = AxTable1\[Total request\]\*$I$1 for this column. This will take the value in cell I1 and multiply the values in the **Total request** column to calculate adjustment amounts.
 
@@ -135,3 +135,4 @@ You can also create and use pivot tables and charts for additional groupings and
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

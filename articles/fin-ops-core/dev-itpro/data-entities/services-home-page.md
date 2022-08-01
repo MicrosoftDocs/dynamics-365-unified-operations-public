@@ -35,7 +35,7 @@ This article describes the service endpoints that are available in Microsoft Dy
 ## List of services
 The following table lists all the service endpoints, and compares the endpoints available for the application, and AX 2012.
 
-| Service endpoint            | AX 2012 | Finance and Operations         |
+| Service endpoint            | AX 2012 | Finance and operations         |
 |-----------------------------|---------|--------------------------------|
 | Document services (AXDs)    | Yes     | No – Replaced by data entities |
 | SOAP-based metadata service | Yes     | No – Replaced by REST metadata |
@@ -95,7 +95,7 @@ Under **Delegated permissions**, you must select, at a minimum, the following op
 
 ### Register your external application 
 
-1. In Finance and Operations apps, go to **System administration** \> **Setup** \> **Azure Active Directory applications**.
+1. In finance and operations apps, go to **System administration** \> **Setup** \> **Azure Active Directory applications**.
 2. Select **New**.
 3. Fill in the fields for the new record:
 
@@ -147,3 +147,4 @@ Currently, this endpoint provides metadata for the following elements:
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -42,7 +42,7 @@ The setup of Asset Management determines whether you can work with inbound and o
 
 ## Register assets as inbound
 
-1. Select **Asset management** \> **Common** \> **Maintenance requests** \> **Active maintenance requests**.
+1. Select **Asset management** \> **Maintenance requests** \> **Active maintenance requests**.
 2. Select the maintenance request.
 3. Select **Update maintenance request state**.
 4. Select **Inbound** (or another lifecycle state that you've created for inbound assets), and then select **OK**.
@@ -51,7 +51,7 @@ The setup of Asset Management determines whether you can work with inbound and o
 
 ## Register inbound assets as received
 
-1. Select **Asset management** \> **Common** \> **Inbound/outbound** \> **Inbound assets**.
+1. Select **Asset management** \> **Inbound/outbound** \> **Inbound assets**.
 2. Select the asset or maintenance request.
 3. Select **Receive assets**.
 4. In the **Received** field, enter the date and time. Then select **OK**. The record is removed from the **Inbound assets** list page.
@@ -62,14 +62,14 @@ The setup of Asset Management determines whether you can work with inbound and o
 
 When you've completed the maintenance or repair job, you can register the asset as returned.
 
-1. Select **Asset management** \> **Common** \> **Maintenance requests** \> **Active maintenance requests**.
+1. Select **Asset management** \> **Maintenance requests** \> **Active maintenance requests**.
 2. Select the maintenance request.
 3. Select **Update maintenance request state**.
 4. Select **Outbound** (or another lifecycle state that you've created for outbound assets), and then select **OK**.
 
 ## Register outbound assets as delivered
 
-1. Select **Asset management** \> **Common** \> **Inbound/outbound** \> **Outbound assets**.
+1. Select **Asset management** \> **Inbound/outbound** \> **Outbound assets**.
 2. Select the asset or maintenance request.
 3. Select **Deliver assets**.
 4. In the **Delivered** field, enter the date and time. Then select **OK**. The record is removed from the **Outbound assets** list page.

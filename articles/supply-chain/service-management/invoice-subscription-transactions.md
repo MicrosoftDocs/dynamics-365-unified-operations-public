@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 
 
-1.  Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.
+1.  Click **Service management** \> **Service subscriptions** \> **All service subscriptions**.
 
 2.  Select a service subscription and then click **Edit** or click **Subscription** to create a service subscription.
 

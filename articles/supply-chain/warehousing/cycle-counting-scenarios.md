@@ -122,7 +122,7 @@ Follow these steps to confirm that all the demo data that is required for the sc
 1. In the list pane, select warehouse *61*. If no existing record has this name, create it.
 1. On the **Warehouse** FastTab, set the following values:
 
-    - **Use warehouse management process:** *Yes* (This value enables the warehouse for warehouse management processes.)
+    - **Use warehouse management process:** *Yes* (This value enables the warehouse for warehouse management processes (WMS).)
     - **Allow license plate moves during cycle counting:** *Yes* (This value enables workers to move license plates during a cycle count.)
 
 ## Scenario 1: Guided cycle counting

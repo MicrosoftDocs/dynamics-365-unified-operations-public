@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 This article describes how to create an asset in Asset Management.
 
-1. Click **Asset management** > **Common** > **assets** > **All assets** or **Active assets**.
+1. Click **Asset management** > **Assets** > **All assets** or **Active assets**.
 2. Click the **New** button.
 3. In the **Create assets** dialog, insert data regarding **Asset** (the asset ID) and the asset name. Select date and time for the asset in the **Effective** field. From that date, you are able to install the asset on a functional location as well as move and replace the asset in an asset structure.
 4. In the **Asset type** field, select the asset type for the asset (mandatory field). If required, select **Asset manufacturer** and **Asset model** for the asset. If only one product has been set up, that product is automatically selected in the **Asset manufacturer** field. The selections available in the **Asset manufacturer** and **Asset model** fields depend on the setup in [Asset manufacturers and models](../setup-for-objects/product-and-model.md).

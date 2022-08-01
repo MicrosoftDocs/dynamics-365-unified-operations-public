@@ -150,5 +150,7 @@ You can rename a fragment after it is created by editing it and then selecting t
 
 [Work with publish groups](publish-groups.md)
 
+[View version history to revert pages and fragments](version-history-revert.md)
+
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

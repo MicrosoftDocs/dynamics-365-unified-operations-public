@@ -174,8 +174,7 @@ Use the **Customers** form to specify the credit limit amount for a specific
 customer. You must be a member of a security role that has the Maintain customer
 master (CustCustomersMaintain) duty assigned to it to make changes in this form.
 
-1.  Click **Accounts receivable** \> **Common** \> **Customers** \> **All
-    customers**. Double-click a customer account.
+1.  Click **Accounts receivable** \> **Customers** \> **All customers**. Double-click a customer account.
 
 2.  In the **Customers** form, on the Action Pane, click **Edit**.
 
@@ -197,8 +196,7 @@ credit limits. You must be a member of a security role that has the Maintain
 sales order (SalesOrderMaintain) duty assigned to it to make changes in this
 form.
 
-1.  Click **Sales and marketing** \> **Common** \> **Sales orders** \> **All
-    sales orders**. Double-click a sales order.
+1.  Click **Sales and marketing** \> **Sales orders** \> **All sales orders**. Double-click a sales order.
 
 2.  In the **Sales order** form, on the Action Pane, on the **Manage** tab,
     click **Check credit limit**.

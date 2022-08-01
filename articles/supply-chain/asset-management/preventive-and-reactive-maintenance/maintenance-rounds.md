@@ -92,7 +92,7 @@ The illustration below shows and example of a maintenance round containing three
 
 When you've set up a maintenance round, you run a schedule job to schedule all the jobs related to the maintenance round.
 
-1. Click **Asset management** > **Periodic** > **Preventive maintenance** > **Schedule maintenance rounds**, or **Asset management** > **Common** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines** or **Open maintenance schedule pools** > select maintenance schedule line in the list > **Maintenance rounds** button.
+1. Click **Asset management** > **Periodic** > **Preventive maintenance** > **Schedule maintenance rounds**, or **Asset management** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines** or **Open maintenance schedule pools** > select maintenance schedule line in the list > **Maintenance rounds** button.
 
 2. In the **Period** field, select the period type to be used for the scheduling job.
 
@@ -107,7 +107,7 @@ When you've set up a maintenance round, you run a schedule job to schedule all t
 
 6. Click **OK**.
 
-7. You are now able to see the maintenance rounds jobs in **Asset management** > **Common** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines**. If the scheduled rounds are connected to a work order pool, you also see maintenance schedule lines in **Open maintenance schedule pools**. Maintenance schedule lines created from a round have the reference type "Maintenance rounds".
+7. You are now able to see the maintenance rounds jobs in **Asset management** > **Maintenance schedule** > **All maintenance schedule** or **Open maintenance schedule lines**. If the scheduled rounds are connected to a work order pool, you also see maintenance schedule lines in **Open maintenance schedule pools**. Maintenance schedule lines created from a round have the reference type "Maintenance rounds".
 
 The two illustrations below show a schedule job in the **Schedule maintenance rounds** dialog, and the maintenance schedule lines created in **All maintenance schedule** based on that schedule job.
 

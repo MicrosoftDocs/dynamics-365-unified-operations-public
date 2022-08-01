@@ -313,8 +313,8 @@ The following table shows every standard step icon that is currently available, 
 <td><img src="media/step-icons-weight-to-consume.png" alt="Weight to consume step icon" title="Weight to consume step icon"><br>WeightToConsume</td>
 </tr>
 <tr>
-<td><img src="media/step-icons-whs-adjustment-type.png" alt="WHS adjustment type step icon" title="WHS adjustment type step icon"><br>WHSAdjustmentType</td>
-<td><img src="media/step-icons-whs-receiving-exception.png" alt="WHS receiving exception step icon" title="WHS receiving exception step icon"><br>WHSReceivingException</td>
+<td><img src="media/step-icons-whs-adjustment-type.png" alt="WMS adjustment type step icon" title="WMS adjustment type step icon"><br>WHSAdjustmentType</td>
+<td><img src="media/step-icons-whs-receiving-exception.png" alt="WMS receiving exception step icon" title="WMS receiving exception step icon"><br>WHSReceivingException</td>
 <td><img src="media/step-icons-wms-location-id.png" alt="WMS location ID step icon" title="WMS location ID step icon"><br>WMSLocationID</td>
 <td><img src="media/step-icons-work-id.png" alt="Work ID step icon" title="Work ID step icon"><br>WorkId</td>
 </tr>

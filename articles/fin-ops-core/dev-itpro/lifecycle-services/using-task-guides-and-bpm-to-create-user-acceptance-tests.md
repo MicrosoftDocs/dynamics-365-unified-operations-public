@@ -162,7 +162,7 @@ We recommend that you take advantage of Azure DevOps as it provides a rich set o
 
 ### Run automated test cases
 
-The platform for Finance and Operations provides developers with tools to author test cases based on task recordings and use Azure DevOps to manage the automated execution of these test cases. 
+The platform for finance and operations provides developers with tools to author test cases based on task recordings and use Azure DevOps to manage the automated execution of these test cases. 
 
 Developers can use the build and test automation capabilities of **build and test** environments. For details, see the [Continuous delivery home page](../dev-tools/continuous-delivery-home-page.md).
 
@@ -175,3 +175,4 @@ For more information on testing and test management in Azure DevOps, see the [Az
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

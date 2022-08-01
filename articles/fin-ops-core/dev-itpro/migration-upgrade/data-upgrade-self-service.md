@@ -33,7 +33,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 > [!NOTE]
 > Keep the following points in mind:
 > 
-> - The Microsoft Dynamics AX 2012 data upgrade process is for Finance and Operations self-service, sandbox (UAT) environments only. It can never be run against a production environment.
+> - The Microsoft Dynamics AX 2012 data upgrade process is for finance and operations self-service, sandbox (UAT) environments only. It can never be run against a production environment.
 > - Make sure you download the latest version of the **AX 2012 Database Upgrade Toolkit for Dynamics 365** from LCS.
 > - Do not deploy or use the linked Power Platform environment for the AX 2012 data upgrade. The Power Platform environemnt can be deployed and used after the data upgrade is completed.
 
@@ -305,4 +305,5 @@ After step 3 of the data upgrade process is completed, you should find the publi
 - On the **Snapshot** tab, you can view the status of the snapshot.
 - To view the detail log/transaction, double-tap (or double-click) a grid item.
 - To view the data replication to the target, on the **All Subscription** tab, double-tap (or double-click) the subscription from the grid item.
+
 

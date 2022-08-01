@@ -3,7 +3,7 @@
 
 title: Set up garnishments and tax levies
 description: This article explains how to set up garnishments and tax levies.
-author: andreabichsel
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: HcmBenefit, HcmBenefitElementSetup, PayrollDisposableIncome
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 221114
 ms.assetid: 6b3c8e46-96b2-4503-9f85-8408f9f97620

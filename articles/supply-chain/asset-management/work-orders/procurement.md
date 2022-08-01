@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.5
 
 In Asset Management, you can get an overview of purchase requisitions and purchase orders that are related to work orders. You can also create a purchase order or a purchase requisition from a work order.
 
-The **Work order purchase requisition** list page (**Asset management** > **Common** > **Procurement** > **Work order purchase requisition**) shows a list of purchase requisitions that are related to work orders. When you select a work order job on this page, you can use the buttons in the **Show** group on the **Work order purchase requisition** Action Pane tab to perform various actions:
+The **Work order purchase requisition** list page (**Asset management** > **Procurement** > **Work order purchase requisition**) shows a list of purchase requisitions that are related to work orders. When you select a work order job on this page, you can use the buttons in the **Show** group on the **Work order purchase requisition** Action Pane tab to perform various actions:
 
 - To open the related purchase requisition, select **Purchase requisition**. 
 - To open the related work order, select **Work order**.
@@ -44,7 +44,7 @@ The illustration below shows an example of the **Work order purchase requisition
 ![Figure 1.](media/08-work-orders.png)
 
 
-The **Work order purchase** list page (**Asset management** > **Common** > **Procurement** > **Work order purchase**) shows a list of purchase orders that are related to work orders. When you select a work order job on this page, you can use the buttons in the **Show** group on the **Work order purchase** tab of the Action Pane to perform various actions:
+The **Work order purchase** list page (**Asset management** > **Procurement** > **Work order purchase**) shows a list of purchase orders that are related to work orders. When you select a work order job on this page, you can use the buttons in the **Show** group on the **Work order purchase** tab of the Action Pane to perform various actions:
 
 - To open the related purchase order, select **Purchase order**. 
 - To open the related work order, select **Work order**.
@@ -74,7 +74,7 @@ For a purchase requisition, the date in the **Requested date** field on the **Pu
 
 On the **All work orders** list page, you can select a work order job, and then create a related purchase order or a related purchase requisition. In this way, you help guarantee that project relations exist between the purchase order or purchase requisition and the work order.
 
-1. Select **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
+1. Select **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
 
 2. Select the work order to create a purchase order for, and then select **Edit**.
 

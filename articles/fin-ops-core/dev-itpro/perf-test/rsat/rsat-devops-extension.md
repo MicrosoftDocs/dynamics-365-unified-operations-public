@@ -133,7 +133,7 @@ This procedure shows how to add RSAT tasks to an existing pipeline job. RSAT tas
 1. Enter a display name for the task.
 2. In the **Command** field group, select the **Build test cases** option to create a task that builds test suites. This task will generate test execution files and upload them to Azure DevOps test cases. This task is required after you make changes to your recordings or install a new version of RSAT.
 3. In the **RSAT location**, double-check the RSAT installation folder.
-4. Enter the location of the RSAT settings files. Settings files can be saved from the RSAT settings dialog box. They contain information such as the location of the test plan, the URL of the Finance and Operations test environment, and the preferred browser.
+4. Enter the location of the RSAT settings files. Settings files can be saved from the RSAT settings dialog box. They contain information such as the location of the test plan, the URL of the finance and operations test environment, and the preferred browser.
 5. Select the **Generate test execution files only** checkbox if you don't want to regenerate or overwrite existing Excel parameter files. This scenario is the most common, and the checkbox is selected by default.
 6. In the **Use test suite** field group, select whether you want to specify test suites by name or ID.
 7. Enter the name or ID of the test suite that you want to build. To specify multiple test suites, use commas to separate the values.
@@ -146,7 +146,7 @@ This procedure shows how to add RSAT tasks to an existing pipeline job. RSAT tas
 1. Enter a display name for the task.
 2. In the **Command** field group, select the **Execute test cases** option to create a task that runs test suites that are ready for execution.
 3. In the **RSAT location**, double-check the RSAT installation folder.
-4. Enter the location of the RSAT settings files. Settings files can be saved from the RSAT settings dialog box. They contain information such as the location of the test plan, the URL of the Finance and Operations test environment, and the preferred browser.
+4. Enter the location of the RSAT settings files. Settings files can be saved from the RSAT settings dialog box. They contain information such as the location of the test plan, the URL of the finance and operations test environment, and the preferred browser.
 5. Select the **Download** checkbox if you want to download attachments (test execution and parameter files) from the Azure DevOps test cases before execution starts. Clear the checkbox if files were downloaded from an earlier build task. In this case, the current files in the working directory will be used.
 6. In the **Use test suite** field group, select whether you want to specify test suites by name or ID.
 7. Enter the name or ID of the test suite that you want to execute.  To specify multiple test suites, use commas to separate the values.
@@ -214,3 +214,4 @@ Here are some examples:
 By default, the console app uses settings configured by the user account via the RSAT user interface. To specify a different settings file, use the `settings` parameter, as shown in the following example.
 
 `.\Microsoft.Dynamics.RegressionSuite.ConsoleApp.exe /settings "C:\Users\rob\Documents\RSAT\SettingFiles\Canaryenv.settings" playbacksuite "Acceptance Test Suite 1"`
+

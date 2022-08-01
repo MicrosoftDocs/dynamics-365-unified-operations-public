@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.28 (August 2022)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.28 (August 2022)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.28. 
 author: kamaybac
 ms.date: 05/27/2022
@@ -13,12 +13,11 @@ ms.search.validFrom: 2022-05-27
 ms.dyn365.ops.version: 10.0.28
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.28 (August 2022)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.28 (August 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.28. This version has a build number of 10.0.1264 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.28. This version has a build number of 10.0.1264 and is available on the following schedule:
 
 - **Preview of release:** May 2022
 - **General availability of release (self-update):** July 2022
@@ -31,7 +30,7 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Inventory and logistics | [Landed cost integration entities for third-party freight forwarders](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/landed-cost-integration-third-party-freight-forwarders) | [Landed cost entities overview](../landed-cost/landed-cost-entities-overview.md) | Enabled by default |
-| Planning | [Demand Driven Material Requirements Planning (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | Coming soon | Feature management:<br>*(Preview) DDMRP for Planning Optimization* |
+| Planning | [Demand Driven Material Requirements Planning (DDMRP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/demand-driven-material-requirements-planning-ddmrp) | [Demand Driven Material Requirements Planning overview](../master-planning/planning-optimization/ddmrp-overview.md) | Feature management:<br>*(Preview) DDMRP for Planning Optimization* |
 | Planning | [Planning Optimization support for capable-to-promise (CTP)](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-capable-to-promise-ctp) | Coming soon | Feature management:<br>*(Preview) CTP for Planning Optimization* |
 | Planning | [Planning Optimization support for shelf life](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planning-optimization-support-shelf-life) | Coming soon | Enabled by default |
 
@@ -62,9 +61,9 @@ We have recently added or significantly updated the following Help articles. The
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.28 includes platform updates. To learn more, see [Platform updates for version 10.0.28 of Finance and Operations apps (June 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.28 includes platform updates. To learn more, see [Platform updates for version 10.0.28 of finance and operations apps (June 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-28.md).
 
 ### Bug fixes
 
@@ -88,3 +87,4 @@ Before any feature is removed from the product, the deprecation notice will be a
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

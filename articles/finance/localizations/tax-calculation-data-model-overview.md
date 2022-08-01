@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.21
 
 This article provides information about how the field values in the tax data model are determined in tax calculation transactions.
 
-The *tax data model* is made up of fields that are required for tax calculations. Microsoft provides the *tax calculation data model*, which includes the header fields and line fields of transaction documents in Finance and Operations apps. The fields that are defined in the tax calculation data model are the available columns of the applicability rules tables in the configuration of the tax calculation feature configuration.
+The *tax data model* is made up of fields that are required for tax calculations. Microsoft provides the *tax calculation data model*, which includes the header fields and line fields of transaction documents in finance and operations apps. The fields that are defined in the tax calculation data model are the available columns of the applicability rules tables in the configuration of the tax calculation feature configuration.
 
 > [!NOTE] 
 > Some nodes that are defined in the data model, such as **Record ID** and **Table ID**, are for technical purposes. They aren't available columns in the tax calculation feature configuration.
@@ -58,7 +58,7 @@ You can also view the tax calculation data model and the available columns in th
 
     [![Manage columns.](./media/tax-calculation-model-mapping-3.png)](./media/tax-calculation-model-mapping-3.png)
 
-The tax calculation data model is integrated with Finance and Operations apps. During each transaction that is related to tax calculation, the values of the fields that is defined in the applicability rules tables are collected and sent to the tax calculation service for calculation. In version 40.46, 57 predefined data models are available for the following transaction types: purchase orders, sales orders, transfer orders, purchase requisitions, requests for quotation, and sales quotations.
+The tax calculation data model is integrated with finance and operations apps. During each transaction that is related to tax calculation, the values of the fields that is defined in the applicability rules tables are collected and sent to the tax calculation service for calculation. In version 40.46, 57 predefined data models are available for the following transaction types: purchase orders, sales orders, transfer orders, purchase requisitions, requests for quotation, and sales quotations.
 
 ## Version updates and restrictions
 
@@ -138,3 +138,4 @@ Twenty-six data models are included as fields on the lines of a transaction. As 
 | Unit                          | <ul><li>**Sales order:** Unit</li><li>**Purchase order:** Unit</li><li>**Transfer order - Ship:** Unit</li><li>**Transfer order - Receive:** Unit</li><li>**Purchase requisition:** Unit</li><li>**Request for quotation:** Unit</li><li>**Sales quotation:** Unit</li></ul> |
 | Variant number                | <ul><li>**Sales order:** Variant number</li><li>**Purchase order:** Variant number</li><li>**Sales quotation:** Variant number</li></ul> |
 | Warehouse                     | <ul><li>**Sales order:**<ol><li>Line &gt; Warehouse</li><li>Product &gt; Warehouse</li></ol></li><li>**Purchase order:**<ol><li>Line &gt; Warehouse</li><li>Product &gt; Warehouse</li></ol></li><li>**Transfer order - Ship:** From warehouse</li><li>**Transfer order - Receive:** To warehouse</li><li>**Purchase requisition:** Line &gt; Warehouse</li><li>**Request for quotation:** Line &gt; Warehouse</li><li>**Sales quotation:**<ol><li>Line &gt; Warehouse</li><li>Product &gt; Warehouse</li></ol></li></ul> |
+

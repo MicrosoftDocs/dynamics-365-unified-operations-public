@@ -89,7 +89,7 @@ If your vendors are using the vendor collaboration interface, they can use this 
 - **Products received from consignment inventory** - Shows information about the items and quantities that have product receipts updated during the ownership change process.
 - **On-hand consignment inventory** - Shows information about the consignment items that they are expected to deliver, and the items that are already physically available at the customer site.
 
-For more information about setting up vendors to use vendor collaboration, see [Vendor portal user security](../procurement/configure-security-vendor-portal-users.md).
+For more information about setting up vendors to use vendor collaboration, see [Manage vendor collaboration users](../procurement/manage-vendor-collaboration-users.md).
 
 ## Inventory owners
 

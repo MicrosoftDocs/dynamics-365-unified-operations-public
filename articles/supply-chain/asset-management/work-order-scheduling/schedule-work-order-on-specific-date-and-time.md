@@ -35,7 +35,7 @@ ms.dyn365.ops.version: 10.0.5
 
 If a work order must be scheduled on a specific date *and* time, you can override the standard scheduling process in Asset Management and create a specific schedule for a work order.
 
-1. Click **Asset management** > **Common** > **Work orders** > **All Work orders** or **Active work orders**.
+1. Click **Asset management** > **Work orders** > **All Work orders** or **Active work orders**.
 
 2. In the work order list, click on the Work order ID in the **Work order** column.
 

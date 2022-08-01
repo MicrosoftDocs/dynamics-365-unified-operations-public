@@ -67,9 +67,9 @@ We have recently added or significantly updated the following help articles. The
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.20 includes platform updates. To learn more, see [Platform updates for version 10.0.20 of Finance and Operations apps (July 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.20 includes platform updates. To learn more, see [Platform updates for version 10.0.20 of finance and operations apps (July 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
 
 ### Bug fixes
 
@@ -94,3 +94,4 @@ For breaking changes that only affect compilation time, but are binary compatibl
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

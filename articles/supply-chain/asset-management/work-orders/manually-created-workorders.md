@@ -40,7 +40,7 @@ You can create work orders manually in two ways:
 
 ## Create work order
 
-1. Selece **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
+1. Selece **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
 
 2. Select **New**.
 
@@ -88,7 +88,7 @@ Note the following points:
 
 You can create a work order that is related to an existing work order. This capability is useful if, for example, you want to work with primary and secondary work orders. A new work order is based on a work order job from an existing work order.
 
-1. Select **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
+1. Select **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
 
 2. Select the work order to create a related work order for.
 
@@ -126,7 +126,7 @@ The illustration below shows an example of the **Create related work order** dia
 
 You can quickly create a new work order from an existing work order. This way of working with work orders differs from the creation of work orders based on [maintenance plans](../preventive-and-reactive-maintenance/maintenance-plans.md). It's useful if, for example, a work order contains many work order jobs, and the various jobs should be completed on different assets at regular intervals.
 
-1. Select **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
+1. Select **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
 
 2. Select the work order to copy content from.
 
@@ -148,7 +148,7 @@ The illustration below shows an example of the **Copy work order** dialog.
 
 ## Create a work order based on a maintenance request
 
-1. Select **Asset management** > **Common** > **Maintenance requests** > **All maintenance requests** or **Active maintenance requests**.
+1. Select **Asset management** > **Maintenance requests** > **All maintenance requests** or **Active maintenance requests**.
 
 2. Select the maintenance request to create a work order for, and click **Edit**.
 

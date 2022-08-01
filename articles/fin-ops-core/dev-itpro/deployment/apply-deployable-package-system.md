@@ -127,7 +127,7 @@ If you're using components (such as Modern POS), after you've applied updates an
 
 Deployable packages, runbooks, and the AXUpdateInstaller are the tools you use to apply updates. 
 
-**Deployable package** – A deployable package is a unit of deployment that can be applied in an environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. Deployable packages downloaded from LCS or created in a development environment cannot be applied across product types. For example, a Finance deployable package cannot be applied in a Commerce app environment, and vice versa. If you have an existing customization for a Finance and Operations app that is compatible with the Commerce app, and you would like to apply it to a Commerce environment, you will need to re-package your source code in a Commerce development environment, and conversely if moving in the other direction.   
+**Deployable package** – A deployable package is a unit of deployment that can be applied in an environment. A deployable package can be a binary update to the platform or other runtime components, an updated application (AOT) package, or a new application (AOT) package. 
 
 [![Example of a deployable package.](./media/applypackage_deployablepackage.jpg)](./media/applypackage_deployablepackage.jpg)
 

@@ -58,7 +58,7 @@ As mentioned above, automatic counters can be updated from production registrati
 
 5. Select **OK**. 
 
-After the automatic asset counter update is done, you can view the counter registrations that are related to the asset on the **Asset counters** page. Select **Asset management** > **Common** > **Assets** > **All assets**, select the asset, and then, on the Action Pane, on the **Asset** tab, in the **Preventive** group, select **Counters**.
+After the automatic asset counter update is done, you can view the counter registrations that are related to the asset on the **Asset counters** page. Select **Asset management** > **Assets** > **All assets**, select the asset, and then, on the Action Pane, on the **Asset** tab, in the **Preventive** group, select **Counters**.
 
 On the **Asset aggregated value** page, you can get an overview of the latest registration that have been made on all counter types on all assets. Select **Asset management** > **Inquiries** > **Assets** > **Asset aggregated value**. This page resembles the **Asset counters** page, but you can't add or edit registrations. It's for overview only.
 

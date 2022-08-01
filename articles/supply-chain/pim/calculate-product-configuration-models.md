@@ -77,7 +77,7 @@ You can overwrite the value that is calculated for the target attribute, unless 
 ## How do I set a target attribute as hidden or read-only?
 To set an attribute as hidden or read-only, follow these steps.
 
-1.  Click **Product information management** &gt; **Common** &gt; **Product configuration models**.
+1.  Click **Product information management** &gt; **Products** &gt; **Product configuration models**.
 2.  Select a product configuration model, and then, on the Action Pane, click **Edit**.
 3.  On the **Constraint-based product configuration model details** page, select the attribute to use as a target attribute.
 4.  On the **Attributes** FastTab, select **Hidden** or **Read-only**.
@@ -100,7 +100,7 @@ This message is shown when a calculation includes an error, or when a contradict
 ## Why do I receive an error message even though I successfully validated my product model?
 Calculations aren't included in the validation. You must test the product configuration model to find errors in calculations. To test a product configuration model, follow these steps.
 
-1.  Click **Product information management** &gt; **Common** &gt; **Product configuration models**.
+1.  Click **Product information management** &gt; **Products** &gt; **Product configuration models**.
 2.  Select a product configuration model, and then, on the Action Pane, in the **Run** group, click **Test**.
 
 

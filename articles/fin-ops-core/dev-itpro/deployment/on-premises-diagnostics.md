@@ -67,7 +67,7 @@ To meet the diagnostic data guidelines that are listed in the previous section, 
 > [!NOTE]
 > By default, communication in an Elastic Stack cluster is **not** sent over HTTPS. Don't set up the Elastic Stack unless you've considered the risks, and prepared or implemented mitigations for those risks. The [paid version](https://www.elastic.co/subscriptions) of X-Pack can be used to encrypt communication in the Elastic Stack. For setup information, see [Setting up TLS on a cluster](https://www.elastic.co/guide/en/x-pack/current/ssl-tls.html). There is also an open source [Elasticsearch plug-in](https://github.com/floragunncom/search-guard-ssl). Although Microsoft hasn't tested this plug-in, according to the documentation, it can enable HTTPS.
 
-If you deploy the Elastic Stack, your experience might vary if you follow the steps that are described in this article. For its tests, Microsoft used version 6.2.3 of the Elastic Stack components and Microsoft Dynamics 365 for Finance and Operations 7.3 with platform update 12.
+If you deploy the Elastic Stack, your experience might vary if you follow the steps that are described in this article. For its tests, Microsoft used version 6.2.3 of the Elastic Stack components and Microsoft Dynamics 365 Finance 7.3 with platform update 12.
 
 This article describes how Microsoft handled the setup and configuration steps that are required for the Elastic Stack to work for an on-premises deployment. For guidance that isn't related to Finance + Operations (on-premises), see the documentation on Elastic.co.
 
@@ -254,3 +254,4 @@ If you don't receive any data in Kibana, review the logs from Winlogbeat to Logs
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

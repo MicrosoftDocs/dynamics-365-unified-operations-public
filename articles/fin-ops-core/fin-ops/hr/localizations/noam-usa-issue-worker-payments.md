@@ -3,7 +3,7 @@
 
 title: Issue worker payments
 description: This article explains how to submit pay statements, generate checks or electronic payments, generate a positive pay file for payroll, and post the payment journal.
-author: andreabichsel
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 222324
 ms.assetid: 64c9c810-23ff-4af6-a282-a4db4c60c0d5

@@ -37,9 +37,9 @@ Maintenance requests can be used if maintenance workers or production workers di
 
 **Example:** While a maintenance worker is making a repair, they discover that another asset at the same location must be serviced. However, the maintenance worker doesn't have the time or the required spare parts to do the repair job. Therefore, they create a maintenance request on the asset and enters a short description of the issue.
 
-The **Active maintenance requests** section of the **Related information** pane on the right side of the **All assets** or **Active assets** page (**Asset management** \> **Common** \> **Assets** \> **All assets** or **Active assets**) shows the active maintenance requests that are attached to the selected asset.
+The **Active maintenance requests** section of the **Related information** pane on the right side of the **All assets** or **Active assets** page (**Asset management** \> **Assets** \> **All assets** or **Active assets**) shows the active maintenance requests that are attached to the selected asset.
 
-1. Select **Asset management** \> **Common** \> **Maintenance requests** \> **All maintenance requests** or **Active maintenance requests**.
+1. Select **Asset management** \> **Maintenance requests** \> **All maintenance requests** or **Active maintenance requests**.
 2. Select **New**.
 3. In the **Create request** dialog box, in the **Maintenance request type** field, select the type of maintenance request. A default type is suggested.
 4. In the **Description** field, enter a name or title that briefly describes the maintenance request.

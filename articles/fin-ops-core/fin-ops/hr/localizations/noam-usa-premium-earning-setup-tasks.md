@@ -3,7 +3,7 @@
 
 title: Set up premium earnings
 description: This article provides information about premium earnings and how to set them up.
-author: andreabichsel
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: PayrollEarningCode, PayrollEarningCodeGroup, PayrollPremiumEarni
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 221084
 ms.assetid: 50a441e2-b5b4-4ff0-9fc3-472c3b85c46f

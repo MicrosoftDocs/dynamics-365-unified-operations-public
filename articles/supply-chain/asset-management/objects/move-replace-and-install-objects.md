@@ -49,7 +49,7 @@ Use the **Move asset** function to move an asset either to another asset structu
 > [!NOTE]
 > Don't use this function if assets are being repaired or temporarily replaced. Instead, use the **Replace asset** functionality that is described later in this article.
 
-1. Select **Asset management** \> **Common** \> **Assets** \> **All assets** or **Active assets**.
+1. Select **Asset management** \> **Assets** \> **All assets** or **Active assets**.
 2. In the list, select the asset to move. If the asset has child assets, you also move those assets.
 3. Select **Move asset**.
 4. To move the asset so that it becomes part of an asset structure, select the new parent asset in the **Parent asset** field. If you're moving a child asset, and you want to make it a standalone asset that has no structure relations, leave the **Parent asset** field blank.
@@ -63,7 +63,7 @@ Use the **Replace asset** function in connection with repairs, refurbishment, or
 > [!NOTE]
 > If a repair shop is related to your production department, you can create functional locations such as **Repair**, **Scrap**, and **Storage** to handle the repair and replacement of assets.
 
-1. Select **Asset management** \> **Common** \> **Assets** \> **All assets** or **Active assets**.
+1. Select **Asset management** \> **Assets** \> **All assets** or **Active assets**.
 2. In the list, select the child asset to replace. If the asset has child assets, you also replace those assets.
 3. Select **Replace asset**.
 
@@ -84,7 +84,7 @@ Use the **Install asset** function to install an asset structure on a functional
 > [!NOTE]
 > Always select a parent asset. The parent asset and related child assets will be moved to the selected functional location.
 
-1. Select **Asset management** \> **Common** \> **Assets** \> **All assets** or **Active assets**.
+1. Select **Asset management** \> **Assets** \> **All assets** or **Active assets**.
 2. In the list, select the parent asset to install on another functional location.
 3. Select **Install asset**.
 

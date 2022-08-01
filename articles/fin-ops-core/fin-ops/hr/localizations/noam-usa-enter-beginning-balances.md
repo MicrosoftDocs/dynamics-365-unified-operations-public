@@ -3,7 +3,7 @@
 
 title: Enter payroll beginning balances
 description: The article describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes.
-author: andreabichsel
+author: twheeloc
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe

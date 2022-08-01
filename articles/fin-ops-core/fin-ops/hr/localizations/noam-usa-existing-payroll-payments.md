@@ -3,7 +3,7 @@
 
 title: Process existing payroll payments
 description: This article describes tasks such as reprinting pay statements, and replacing paychecks that have been lost or damaged.
-author: andreabichsel
+author: twheeloc
 ms.date: 04/24/2019
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalTransPayrollDisbursement, PayrollPayStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 220934
 ms.assetid: b95ac219-fbea-48e6-b2c8-6f27853a7f6a

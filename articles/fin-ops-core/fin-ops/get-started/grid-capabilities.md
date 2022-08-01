@@ -39,10 +39,10 @@ The new grid control provides several useful and powerful capabilities that you 
 - Stretchable columns
 
 ## Calculating totals
-In Finance and Operations apps, users have the ability to see totals at the bottom of numeric columns in grids. A footer section at the bottom of the grid shows these totals. 
+In finance and operations apps, users have the ability to see totals at the bottom of numeric columns in grids. A footer section at the bottom of the grid shows these totals. 
 
 ### Showing the grid footer
-There is a footer area at the bottom of every tabular grid in Finance and Operations apps. The footer can show valuable information that is related to the data that appears in the grid. Here are some examples of this information:
+There is a footer area at the bottom of every tabular grid in finance and operations apps. The footer can show valuable information that is related to the data that appears in the grid. Here are some examples of this information:
 
 - The number of selected rows in the table (when you select more than one record)
 - Grand totals at the bottom of configured, numeric columns
@@ -90,7 +90,7 @@ To support this new behavior, a new column for the row status has been added to 
 When users are entering data ahead of the place where the server is processing, they can expect a few degradations in the data entry experience, such as a lack of lookups, control-level validation, and entry of default values. Users who need a drop-down list to find a value are encouraged to wait for the server to catch up to the current row. Control-level validation and entry of default values will also occur when the server processes that row.
 
 ### Pasting from Excel
-Users have always been able to export data from grids in Finance and Operations apps to Microsoft Excel by using the **Export to Excel** mechanism. However, the ability to enter data ahead of the system enables the new grid to support copying tables from Excel and pasting them directly into grids in Finance and Operations apps. The grid cell that the paste operation is initiated from determines where the copied table begins to be pasted in. The contents of the grid are overwritten by the contents of the copied table, except in two cases:
+Users have always been able to export data from grids in finance and operations apps to Microsoft Excel by using the **Export to Excel** mechanism. However, the ability to enter data ahead of the system enables the new grid to support copying tables from Excel and pasting them directly into grids in finance and operations apps. The grid cell that the paste operation is initiated from determines where the copied table begins to be pasted in. The contents of the grid are overwritten by the contents of the copied table, except in two cases:
 
 - If the number of columns in the copied table exceeds the number of columns that remain in the grid, starting from the paste location, the user is notified that the extra columns have been ignored. 
 - If the number of rows in the copied table exceeds the number of rows in the grid, starting from the paste location, the existing cells are overwritten by the pasted content, and any extra rows from the copied table are inserted as new rows at the bottom of the grid. 
@@ -101,7 +101,7 @@ As a productivity booster, users can enter mathematical formulas in numeric cell
 To make the system recognize a value as an expression, start the value with an equal sign (**=**). For more information about the supported operators and syntax, see [Supported math symbols](http://bugwheels94.github.io/math-expression-evaluator/#supported-maths-symbols).
 
 ## Grouping tabular data
-Business users often need to perform ad-hoc analysis of data. While this can be done by exporting data to Microsoft Excel and using pivot tables, the **Grouping in grids** feature, which is dependent on the new grid control feature, allows users to organize their tabular data in interesting ways within Finance and Operations apps. Because this feature extends the **Totals** feature, **Grouping** allows you to get meaningful insights into the data by providing subtotals at the group level.
+Business users often need to perform ad-hoc analysis of data. While this can be done by exporting data to Microsoft Excel and using pivot tables, the **Grouping in grids** feature, which is dependent on the new grid control feature, allows users to organize their tabular data in interesting ways within finance and operations apps. Because this feature extends the **Totals** feature, **Grouping** allows you to get meaningful insights into the data by providing subtotals at the group level.
 
 To use this feature, right-click the column that you want to group by, and select **Group by this column**. This action will sort the data by the selected column, add a new **Group by** column to the beginning of the grid, and insert "header rows" at the beginning of each group. These header rows provide the following information about each group:
 
@@ -172,7 +172,7 @@ If you have opted out an individual page from using the new grid, you might want
 ## [Developer] Opting individual grids out of the Typing ahead of the system capability
 Some scenarios have arisen that don't lend themselves to working well with the *Typing ahead of the system* capability of the grid. (For example, some code that is triggered when a row is validated causes a datasource research to be triggered, and the research can then corrupt uncommitted edits on existing rows.) If your organization discovers such a scenario, an API is available that lets a developer opt an individual grid out of asynchronous row validation and revert to the legacy behavior.
 
-When asynchronous row validation is disabled in a grid, users can't create a new row or move to a different existing row in the grid while there are validation issues on the current row. As a side effect of this action, tables can't be pasted from Excel into Finance and Operations grids.
+When asynchronous row validation is disabled in a grid, users can't create a new row or move to a different existing row in the grid while there are validation issues on the current row. As a side effect of this action, tables can't be pasted from Excel into finance and operations grids.
 
 To opt an individual grid out of asynchronous row validation, add the following call after `super()` in the `run()` method of the form.
 
@@ -204,3 +204,4 @@ This section maintains a list of known issues for the new grid control.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

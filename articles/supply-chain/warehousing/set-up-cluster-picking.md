@@ -104,13 +104,14 @@ the cluster picking process. The setup is based on the product bar code setup.
 
 ### Set up item verification with cluster picking
 
-1. On a mobile device menu item, open the setup form for work confirmation:
-    **Warehouse management** \> **Warehouse management** \> **Setup** \>
-    **Mobile device** \> **Mobile device menu items**.
+1. Go to **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.
+1. In the list pane, select the menu item you want to set up.
+1. On the Action Pane, select **Work confirmation setup**.
+1. Do one of the following action:
+    - If there already exists a line for the **Work type** you want to set up, select it and then select **Edit** on the Action Pane.
+    - If an appropriate line doesn't exist, select **New** on the Action Pane and then set the **Work type** to the appropriate type.
+1. Mark the **Product confirm** check box for your new or selected line. This will allow workers to verify each piece of inventory using the mobile device.
 
-1. From the mobile device menu item, open **Work confirmation setup**. The
-    **Product confirmation** option allows you to verify each piece of inventory
-    from the mobile device when scanned.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

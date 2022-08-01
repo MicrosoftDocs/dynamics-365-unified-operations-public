@@ -53,7 +53,7 @@ Before you can use the **Asset management** mobile workspace, your admin must se
 
 ## Download and install the mobile app
 
-Download and install the Finance and Operations (Dynamics 365) mobile app:
+Download and install the finance and operations (Dynamics 365) mobile app:
 
 - [For Android phones](https://go.microsoft.com/fwlink/?linkid=850662)
 - [For iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
@@ -248,3 +248,4 @@ Download and install the Finance and Operations (Dynamics 365) mobile app:
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

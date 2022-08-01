@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Reset the Financial reporting data mart
 description: This article describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance.
 author: aprilolson
@@ -8,22 +6,15 @@ ms.date: 04/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: FinancialReports
-# ROBOTS: 
 audience: IT Pro, Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261824
+ms.reviewer: twheeloc
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 
+  - 261824
+ms.search.form: FinancialReports
 ---
 
 # Reset the Financial reporting data mart
@@ -91,7 +82,7 @@ If you ever restore your database from a backup or copy the database from anothe
 
 ### Stop services
 
-The following Microsoft Windows services will have open connections to the Finance and Operations database. Therefore, you must use Microsoft Remote Desktop to connect to all the computers in the environment and then use services.msc to stop these services.
+The following Microsoft Windows services will have open connections to the finance and operations database. Therefore, you must use Microsoft Remote Desktop to connect to all the computers in the environment and then use services.msc to stop these services.
 
 - World wide web publishing service (on all Application Object Servers \[AOS\] computers)
 - Batch Management Service (on non-private AOS computers only)
@@ -679,7 +670,7 @@ First, follow these steps to export the report designs from Report designer.
 2. Select the building block group to export, and then select **Export**.
 
     > [!NOTE]
-    > For Finance and Operations, only one building block group is supported: **Default**.
+    > For finance and operations, only one building block group is supported: **Default**.
 
 3. Select the report definitions to export:
 
@@ -711,3 +702,4 @@ Next, import your report designs from Report designer by using the file that was
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

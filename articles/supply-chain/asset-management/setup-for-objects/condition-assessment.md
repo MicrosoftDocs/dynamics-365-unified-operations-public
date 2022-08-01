@@ -52,7 +52,7 @@ Condition assessment is created on assets. You set up a condition assessment tem
 
 ## Create condition assessment registration on an asset
 
-1. Select **Asset management** > **Common** > **Assets** > **All Assets**.
+1. Select **Asset management** > **Assets** > **All Assets**.
 2. In the list, select the asset for which you want to create a condition assessment registration.
 3. On the **General** tab, click **Condition assessment**.
 4. Click **New** to make a new registration.
@@ -67,7 +67,7 @@ Condition assessment is created on assets. You set up a condition assessment tem
 After you have made a condition assessment registration on an asset, you can print a condition assessment report.
 
 >[!NOTE]
->You can also register condition assessment on a work order (**Asset management** > **Common** > **Work orders** > **All Work orders** > **Condition assessment** button.)
+>You can also register condition assessment on a work order (**Asset management** > **Work orders** > **All Work orders** > **Condition assessment** button.)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

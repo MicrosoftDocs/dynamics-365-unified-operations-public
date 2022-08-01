@@ -50,7 +50,7 @@ The following table shows the steps and roles that are involved in the process.
 | Administrator            | | | Create a user in Supply Chain Management and Microsoft Azure. | | | |
 | Vendor contact person    | | | Send email to the contact person. | Register vendor information. | | |
 
-For a quick demonstration of the vendor onboarding process, watch this short YouTube video about [How to onboard a new vendor in Finance and Operations](https://www.youtube.com/watch?v=0KUc3AGaTKk).
+For a quick demonstration of the vendor onboarding process, watch this short YouTube video about [How to onboard a new vendor in finance and operations](https://www.youtube.com/watch?v=0KUc3AGaTKk).
 
 ## Importing the prospective vendor registration request
 

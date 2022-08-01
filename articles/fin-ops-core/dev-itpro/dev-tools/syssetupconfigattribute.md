@@ -18,7 +18,7 @@ X++ classes that implement the `SysSetup` interface are processed as part of dat
 
 Attributes provide a powerful way to associate metadata, or declarative information, with code such as assemblies, types, methods, and properties. After an attribute is associated with a program entity, it can be queried at runtime by using reflection.
 
-This article describes how to use the new `SysSetupConfigAttribute` attribute that the platform updates for [version 10.0.23 of Finance and Operations apps](../get-started/whats-new-platform-updates-10-0-23.md) introduce for X++ classes that implement the `SysSetup` interface.
+This article describes how to use the new `SysSetupConfigAttribute` attribute that the platform updates for [version 10.0.23 of finance and operations apps](../get-started/whats-new-platform-updates-10-0-23.md) introduce for X++ classes that implement the `SysSetup` interface.
 
 ## Usage
 
@@ -85,3 +85,4 @@ The version value **0.0** is dedicated to the execution of X++ classes on every 
 SysSetup classes should start to use the `_version` parameter in the `SysSetupConfigAttribute` attribute. Otherwise, the default behavior is used when the X++ class runs. In other words, the version value is **1.0**, and the class runs only once per version.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

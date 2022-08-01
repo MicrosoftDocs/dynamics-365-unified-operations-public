@@ -29,7 +29,6 @@ ms.dyn365.ops.version: 10.0.5
 # System requirements for cloud deployments of Dynamics 365 Commerce
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article lists the system requirements for cloud deployments of the current version of Dynamics 365 Commerce. If this step is appropriate, before you install Commerce, you should verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.
 

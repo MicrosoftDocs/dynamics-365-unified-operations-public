@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Data mart resets FAQ
 description: This article provides answers to some frequently asked questions about data mart resets.
 author: jinniew
@@ -8,23 +6,13 @@ ms.date: 03/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06
 ms.dyn365.ops.version: 10.0.15
-
+ms.search.form: 
 ---
 
 # Data mart resets FAQ

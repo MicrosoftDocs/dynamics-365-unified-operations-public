@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.27 (July 2022)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.27 (July 2022)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.27. 
 author: kamaybac
 ms.date: 04/22/2022
@@ -13,12 +13,11 @@ ms.search.validFrom: 2021-04-22
 ms.dyn365.ops.version: 10.0.27
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.27 (July 2022)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.27 (July 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.27. This version has a build number of 10.0.1227 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.27. This version has a build number of 10.0.1227 and is available on the following schedule:
 
 - **Preview of release:** April 2022
 - **General availability of release (self-update):** June 2022
@@ -63,9 +62,9 @@ We have recently added or significantly updated the following Help articles. The
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.27 includes platform updates. To learn more, see [Platform updates for version 10.0.27 of Finance and Operations apps (June 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.27 includes platform updates. To learn more, see [Platform updates for version 10.0.27 of finance and operations apps (June 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-27.md).
 
 ### Bug fixes
 
@@ -89,3 +88,4 @@ Before any feature is removed from the product, the deprecation notice will be a
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

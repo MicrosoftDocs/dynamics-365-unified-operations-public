@@ -4,7 +4,7 @@
 title: Move environments between data centers
 description: This article explains how to move environments that are managed by Microsoft to a different Microsoft Azure data center.
 author: ClaudiaBetz-Haubold 
-ms.date: 04/29/2022
+ms.date: 07/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,11 +34,9 @@ Occasionally, you must move environments that are managed by Microsoft to a diff
 - The project creators didn't do enough research to determine the best data center before the environments were originally deployed.
 - The customer moves the physical location of its operations, and the wide area network (WAN) connection is now closer to a data center that provides lower latency.
 
-Microsoft asks that you keep all your environments in the same data center. When you move environments to a different data center, you should plan to eventually have all environments deployed in the same data center.
-
 You can verify the data center that an environment is deployed to on the **Manage environments** page in Microsoft Dynamics Lifecycle Services (LCS).
 
-To change the data center, you must redeploy all environments. The process differs for sandbox environments (sandbox standard acceptance test environments, and sandbox develop and test environments) and production environments.
+To change the data center, you must redeploy the environment. The process differs for sandbox environments and production environments.
 
 ## Move sandbox environments
 
@@ -78,7 +76,7 @@ After you've saved your data, follow these steps.
 
 ## Move production environments
 
-If you already have a production environment deployed, you must open a Support request to move the production environment to another data center after you've finished moving all the sandbox environments. This scenario is rare, and there is no automated/self-service action to complete the move. In this scenario, files that are stored in Azure Blob Storage will also be moved. For information about the maintenance window and downtime that are required in order to move a production environment to a different data center, see [Service Description](https://go.microsoft.com/fwlink/?LinkId=867755&clcid=0x409) and the related service-level agreement (SLA) documents.
+If you already have a production environment deployed, you must open a Support request to move the production environment to another data center after you've finished moving all the sandbox environments. This scenario is rare, and there is no automated/self-service action to complete the move. In this scenario, files that are stored in Azure Blob Storage will also be moved. For information about the maintenance window and downtime that are required in order to move a production environment to a different data center, see [Service Description](service-description.md) and the related service-level agreement (SLA) documents.
 
 > [!NOTE]
 > There are several LCS instances available to enable the [Sovereign and local cloud deployment options](../../dev-itpro/deployment/deployment-options-geo.md). Movement of production environments between these different LCS instances is not supported. 

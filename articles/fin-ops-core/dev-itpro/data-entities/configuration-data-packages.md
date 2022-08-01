@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Configuration data packages
-description: This article provides an overview of the configuration data packages for the July 2017 release of Microsoft Dynamics 365 for Finance and Operations.
-author: saraschi2
+description: This article provides an overview of the configuration data packages for the July 2017 release of Microsoft Dynamics 365 Finance.
+author: rcarlson
 ms.date: 12/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: saraschi
+ms.author: rcarlson
 ms.search.validFrom: 2017-06-26
 ms.dyn365.ops.version: Platform update 8
+ms.custom: 
 ---
 
 # Configuration data packages
@@ -33,7 +23,7 @@ ms.dyn365.ops.version: Platform update 8
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
 > [!IMPORTANT]
-> This article applies only to the July 2017 release of Microsoft Dynamics 365 for Finance and Operations. If you are running a later release, refer to the article [Copy configuration data between companies or legal entities overview](copy-configuration.md). 
+> This article applies only to the July 2017 release of Microsoft Dynamics 365 Finance. If you are running a later release, refer to the article [Copy configuration data between companies or legal entities overview](copy-configuration.md). 
 
 Configuration data packages are available as process data packages from Microsoft Dynamics Lifecycle Services (LCS). These data packages can help improve the repeatability of implementations and accelerate the configuration.
 

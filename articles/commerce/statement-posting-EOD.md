@@ -17,11 +17,11 @@ ms.search.validFrom: 2018-04-30
 
 [!include [banner](includes/banner.md)]
 
-This article describes the first set of improvements that have been made to the statement posting feature. These improvements are available in Microsoft Dynamics 365 for Finance and Operations 7.3.2.
+This article describes the first set of improvements that have been made to the statement posting feature. These improvements are available in Microsoft Dynamics 365 Finance 7.3.2.
 
 ## Activation
 
-By default, during deployment of Finance and Operations 7.3.2, the program is set up to use the legacy feature for statement postings. To enable the improved statement posting feature, you must turn on the configuration key for it.
+By default, during deployment of finance and operations 7.3.2, the program is set up to use the legacy feature for statement postings. To enable the improved statement posting feature, you must turn on the configuration key for it.
 
 - Go to **System administration** \> **Setup** \> **License configuration**, and then, under the **Retail and Commerce** node, clear the **Statements (legacy)** check box, and select the **Statements** check box.
 
@@ -187,3 +187,4 @@ Other, back-end improvements that users can see have been made to the statement 
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
+

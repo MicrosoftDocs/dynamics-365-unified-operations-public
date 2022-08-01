@@ -3,7 +3,7 @@
 
 title: Process existing earnings
 description: This article describes tasks, such as releasing or holding earnings, that you can complete after you generate an earnings statement.
-author: andreabichsel
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: PayrollEarningStatement
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 233764
 ms.assetid: 233c40f6-3e9e-4ed4-b42c-4643a68946e1

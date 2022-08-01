@@ -51,9 +51,9 @@ User-based service protection API limits are implemented on a per-user basis. If
 
 ## Avoid large batches
 
-*Batching* refers to the process of sending multiple operations in a single request. Most scenarios will be fastest if single requests are sent and there is a high degree of parallelism. If you think that batch size might help improve performance, the best strategy is to start with a small batch size and then increase concurrency until you start to receive service protection API limit errors that indicate that the operation must be retried. In Finance and Operations apps, batch size is limited to 5,000 operations.
+*Batching* refers to the process of sending multiple operations in a single request. Most scenarios will be fastest if single requests are sent and there is a high degree of parallelism. If you think that batch size might help improve performance, the best strategy is to start with a small batch size and then increase concurrency until you start to receive service protection API limit errors that indicate that the operation must be retried. In finance and operations apps, batch size is limited to 5,000 operations.
 
-For more information about batch requests that have Finance and Operations apps service endpoints, see [Batch requests](../data-entities/odata.md#batch-requests).
+For more information about batch requests that have finance and operations apps service endpoints, see [Batch requests](../data-entities/odata.md#batch-requests).
 
 ## Remove the affinity cookie
 
@@ -90,3 +90,4 @@ System.Net.ServicePointManager.UseNagleAlgorithm = false;
 For more information, see [Managing connections](/dotnet/framework/network-programming/managing-connections).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

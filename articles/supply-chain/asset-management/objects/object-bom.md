@@ -62,7 +62,7 @@ The setup of spare parts history is based on item groups that are created in the
 
 After you post item consumption on a work order, you can view the registered item consumption on the **Asset BOM** page.
 
-1. Select **Asset management** \> **Common** \> **Assets** \> **Active assets**. Select the asset in the list, and then select **Asset BOM**.
+1. Select **Asset management** \> **Assets** \> **Active assets**. Select the asset in the list, and then select **Asset BOM**.
 
     > [!NOTE]
     > To view all item consumption registrations on all assets, select **Asset management** \> **Inquiries** \> **Assets** \> **Asset BOM**.

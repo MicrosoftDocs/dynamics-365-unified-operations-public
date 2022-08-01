@@ -3,7 +3,7 @@
 
 title: Set up earning codes and earning code groups
 description: This article explains how to set up earning codes and earning code groups.
-author: andreabichsel
+author: twheeloc
 ms.date: 08/21/2019
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: PayrollEarningCode, PayrollEarningCodeGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 221384
 ms.assetid: df18e3bb-bfad-45fb-8a6e-a3479e57b8df
