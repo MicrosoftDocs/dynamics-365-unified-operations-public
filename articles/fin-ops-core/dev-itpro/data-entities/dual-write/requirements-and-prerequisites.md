@@ -119,6 +119,10 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     *Before you can enable dual-write, you must grant access to the apps to connect to each other<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 00000015-0000-0000-c000-000000000000 exists<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
+    
+    > [!NOTE]
+    > When a record is created in Finance and Operations apps, the owner field will be set when the data is dual-written to Dataverse, even if the matched record exists in Dataverse. As dual-write uses App user with id **00000015-0000-0000-c000-000000000000** to communicates to Dataverse, the **Modified by** field will be set to the App user.
+    
 
 5. Provide app consent in the tenant.
    For dual-write core solution version 1.0.16.0 or above, this step is no longer needed.
