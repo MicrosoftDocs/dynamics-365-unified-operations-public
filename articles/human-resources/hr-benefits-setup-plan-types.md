@@ -79,6 +79,8 @@ A plan type may define coverage options. The coverage options are defined on the
    | **Auto cancel plan** | Specifies whether to automatically cancel the plan during the life event. |
    | **Auto reopen eligibility check** | Specifies whether to automatically reopen the benefits enrollment eligibility check during the life event. |
    | **Reporting window** | Specifies the reporting window, in days, of the life event. **Note**: If you don't enter an amount, the system assumes the reporting window to be zero and won't process the life event. |
+   | **Editable by administrators only** | Specifies if a plan can be canceled or edited by administator during a life event. No changes can be made by the employee in the **Employee self-service** workspace.|
+   | **Auto cancel plan** | Specifies whether to automatically cancel the plan during a life event. Once the life event changes are processed, the **Auto cancel plan** would retain the plan selection. Only **Confirmed** or **Checked out** status will be removed. The plan remains selected so that if an employee fails to make the plan selections during the life event enrollment period, they will not lose the plan selection. 
 
 5. Select **Save**. 
 
