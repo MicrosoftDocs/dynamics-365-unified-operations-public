@@ -34,14 +34,16 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-The email notification feature provides the ability to send email notifications and reminders to the employees in the new hire enrollment, open enrollment, and qualifying life 
-event scenarios. It allows the users (mostly admins) to create and set multiple email templates, as needed for specific scenarios, and send the notifications using the 
-**Benefits management** workspace and the **Worker benefits** page. You can also track the notifications/reminders history. 
+**Email notification** provides the ability to send email notifications and reminders to the employees in the following scenarios:
+ - new hire enrollment 
+ - open enrollment 
+ - qualifying life events 
+
+It allows users to create and set multiple email templates and send the notifications using the **Benefits management** workspace and the **Worker benefits** page. You can also track the notifications/reminders history. 
 
 ## Set up Human resources shared parameters
 
-You can find **Benefit email templates** on the **Human resources shared parameters** page. Here you can create and set the **Benefits email templates** for the different 
-types of communication to send to employees or employee groups. 
+You can create **Benefit email templates** on the **Human resources shared parameters** page for different types of communication to send to employees or employee groups. 
 
 ## Create a new email ID template
 
@@ -50,7 +52,7 @@ To create a new email ID template:
 2. Click **New** and enter a name in the **Email ID** field.
 3. Enter the other fields as needed.
 4. Click **Email message** to upload the template. 
-5. On the **Human resources shared parameters** page, select the newly created template from **System templates** and move it under **Templates for benfits**. 
+5. On the **Human resources shared parameters** page, select the newly created template from **System templates** and move it under **Templates for benefits**. 
 
 ## Send email to employees
 
@@ -63,9 +65,16 @@ To send an email to a new hire who hasn't started yet:
 6. Select the template that you want to use.
 7. Click **Ok** to send the email.
 
+You can check the email message and status through the employee’s **Worker benefit** page or using the **Benefits email history** button from the **Links** section. You can also send the email using the **Worker benefit plan** page.  
+ 
+To see the **Benefits email history**, go to **Benefits** workspace, click on **Links** > **Benefits email history**.   
+You can view the complete email history for **Benefits emails** sent. You can click on **Show message** on the task bar to review the content of the email.  
 
-
-
+8. Click **Worker**, 
+9. Go to the **Worker benefit plan** page. From this page, you can **Send email** and **Benefits email history**. You can send email to this specific worker and check the email history for them.  
+10. There are different tiles on the **Workspace**. You can send emails by selecting the related template. If the emails have been sent already, for example, if the new hire enrollment emails have been sent, select the **New hire not started** tile, and **Send reminder** link. Select a reminder template and set the title of the notification as a first, second or third reminder  
+11. Click on the action center, you will see the alert on the success/failure status on emails sent.  
+12. Click on **Benefits email history** from the **Benefit plan** page or **Links**. You can **Send emails** or reminders for **Life events** and **Open enrollment** through the **Workspace**. 
 
 
 
