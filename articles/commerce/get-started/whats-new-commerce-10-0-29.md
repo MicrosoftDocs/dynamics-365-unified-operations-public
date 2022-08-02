@@ -2,7 +2,7 @@
 title: Preview of Dynamics 365 Commerce 10.0.29 (October 2022)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.29. 
 author: josaw1
-ms.date: 08/01/2022
+ms.date: 08/02/2022
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
@@ -57,6 +57,14 @@ The table also lists features that were previously in public preview but have ch
 | RetailInvoicesDefaultSalesDocumentStatusFeature_PL | (Poland) Default sales document status for retail invoices | On by default |
 | RetailRecalculateRoundingOfTaxBaseAmountsFeature_MX | (Mexico) Rounding recalculation for tax base amounts in Retail CFDI Global. | On by default |
 | RetailSupplementaryInvoiceFeature | Enable supplementary invoices for cash and carry transactions completed in retail stores | On by default |
+| RetailInventoryBufferAndInventoryLevelEnableFeature	|  Enable inventory buffers and inventory levels	|  On by default|
+|RetailInboundOutboundInventoryValidationFeature|	Enable validation in POS inbound and outbound inventory operation	|   On by default   |
+|  RetailInventoryChannelCalculationConsolidationFeature	|  Enhanced e-Commerce channel-side inventory calculation logic	|   On by default   |
+|RetailInventoryAdjustmentsInPointOfSaleFeature| 	Inventory adjustments in point of sale	 |  On by default  |
+|  RetailProductAvailabilityOptimizationFeature	|   Optimized product availability calculation	|  Mandatory |
+|   RetailPricingDataManagerV2Feature	|   Improve performance for Commerce pricing engine	|   Mandatory |
+|  RetailPricingPreventUnintendedRecalculationFeature	| Prevent unintentional price calculation for commerce orders	 |  Mandatory  |
+| RetailTeamsIntegration 	|   Enable Microsoft Teams integration|	Mandatory   |  
 | ConsumerEFDSyncProcessFeature_BR | (Brazil) NFC-e synchronous processing | On by default |
 | RetailFiscalIntegrationInternalAndExternalServicesEnableFeature | Support for internal and external connectors in the fiscal integration framework | Mandatory |
 | RetailTaxRegistrationIdEnableFeature_BR | (Brazil) Search customers in Retail POS by tax registration numbers | Mandatory |
@@ -65,6 +73,7 @@ The table also lists features that were previously in public preview but have ch
 | RetailTaxRegistrationIdEnableFeature_PL | (Poland) Customer information management in Retail POS | Mandatory |
 | RetailUpdateReturnOriginalTransactionIdGlobalEnableFeature_IN | (Retail GST for India) Update credit notes with references to original invoices | Mandatory |
 | RetailUserDefinedCertificateProfileFeature | User-defined certificate profiles for retail stores | Mandatory |
+  
 
 ## Additional resources
 
