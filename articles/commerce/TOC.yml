@@ -424,6 +424,8 @@
             href: hide-non-carrier-modes.md
           - name: Task recorder and Help for MPOS and Cloud POS
             href: task-recorder-retail-pos.md
+          - name: Configure CPOS to use a custom Azure AD app
+            href: cpos-custom-aad.md
           - name: Hardware peripherals
             items:
             - name: Peripherals
