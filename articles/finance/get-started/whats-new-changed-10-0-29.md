@@ -161,7 +161,7 @@ The following table lists the features that have been removed from Feature manag
 |--------------|-------------|---------------|---------------|--------|
 | Workflow option when invoice and registered total do not equal | 8/01/2022 | 1/31/2022 | Parameter available on the **Accounts payable** parameters page | Accounts payable|
 | Workflow option when unallocated charges exist | 8/01/2022 | 1/31/2022 | Parameter available on the **Accounts payable** parameters page | Accounts payable|
-| Budget proprosal | | 8/01/2022 | 1/31/2022 | Enabled when you deploy the Finance Insights add-in in LCS> | Budgeting
+| Budget proprosal | 8/01/2022 | 1/31/2022 | Enabled when you deploy the Finance Insights add-in in LCS. | Budgeting
 | Cash flow forecasts | 8/01/2022 | 1/31/2022 | Enabled when you deploy the Finance Insights add-in in LCS. | Cash management |
 | Customer payment predictions | 8/01/2022 | 1/31/2022 | Enabled when you deploy the Finance Insights add-in in LCS. | Finance Insights |
 | Enable dual currency functionality in general ledger consolidation | 8/01/2022 | 1/31/2022 | Removed | General ledger |
