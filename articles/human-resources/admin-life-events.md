@@ -28,28 +28,27 @@ ms.dyn365.ops.version: Human Resources
 
 [!INCLUDE [PEAP](../includes/peap-2.md)]
 
-Administrators are permitted to make changes in the Life Event plan selections based on the configuration setting. Under Human Resource Parameters, 
-you can make configurations to allow the administrators to be completely unlimited in making changes in the plan selections and possible to restrict the admin fully, 
-if that is desired.  
+Administrators can update the **Life event options** based on configuration setting. On the **Human resource parameters** page, 
+you can configure parameters to allow administrators to make changes in plan selections. It is also possible to restrict the admin fully.   
 
-In the Human Recourse Parameters, you have the option to set up Plan Change Restrictions for the Confirmed Plans and Life events options.  
+On the **Human resources parameters** page, you have the option to set up **Plan change restrictions** for the **Confirmed plans** and **Life event options**.  
 
-If the ‘Confirmed Plans’ switch is enabled, admin cannot make changes unless an enrollment period (like open enrollment, new hire enrollment period, or life event 
-enrollment period) is active. If disabled, changes can be made at any time.  
+If the **Confirmed plans** option is selected, changes can't be made unless an enrollment period (like open enrollment, new hire enrollment period, or life event 
+enrollment period) is active. If this option is not selected, changes can be made at any time.  
 
-If the ‘Life Event Options’ switch is enabled, plan changes during a life event are restricted by the life event options defined on the plan type. If disabled, 
+If **Life event options** is selected, plan changes during a life event are restricted by the life event options defined on the plan type. If not selected, 
 changes are permitted to plan selections during a life event.  
 
 
 ## Set Plan change restrictions 
 
-Benefits management workspace --> Links -- > Human resource Parameters --> Benefits Management 
+On the **Human resource parameters** page, on the **Benefits management** tab, the following fields are available: 
 
 | Field |  Description|
 |-------|-------------|
-|**Confirmed Plans**| Select this option if changes to a plan are not allowed unless an enrollment period is active. If this option is not selected, changes can be 
+|**Confirmed plans**| Select this option if changes to a plan are not allowed unless an enrollment period is active. If this option is not selected, changes can be 
 made at any time.|
-|**Life Event options**|Select this option if the plan changes during a life event are restricted by the life event options defined on the plan type. If this option is 
+|**Life event options**|Select this option if the plan changes during a life event are restricted by the life event options defined on the plan type. If this option is 
 not selected, plan selections can be changed during a life event.| 
 
  
