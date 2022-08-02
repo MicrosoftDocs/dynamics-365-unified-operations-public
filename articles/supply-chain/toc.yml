@@ -1883,6 +1883,8 @@
           href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
         - name: Net requirements and pegging information with built-in master planning
           href: master-planning/net-requirements-built-in-master-planning.md
+        - name: Make-to-order supply automation
+          href: master-planning/make-to-order-supply-automation.md
       - name: Forecasting
         items:
         - name: Demand and supply forecasting
