@@ -1,14 +1,14 @@
 ---
 title: Dual-write home page
 description: This article provides links to information about dual-write.
-author: tonyafehr
+author: sericks007
 ms.date: 11/24/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.custom: "intro-internal"
 ms.search.region: Global
-ms.author: tfehr
+ms.author: sericks
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -40,6 +40,7 @@ These topics describe dual-write integration.
     + [System requirements and prerequisites](requirements-and-prerequisites.md)
     + [How to use the dual-write wizard to link your environments](link-your-environment.md)
     + [Enable table map for dual-write](enable-entity-map.md)
+ + [Enable 5-minute session timeout window for dual-write sessions](5-minute-mode.md)
  + [Separated Dual-write Application Orchestration package](separated-solutions.md)
 
 ## Managing dual-write after setup
