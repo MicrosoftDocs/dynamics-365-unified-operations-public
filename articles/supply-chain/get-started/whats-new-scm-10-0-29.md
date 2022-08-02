@@ -32,7 +32,7 @@ The following table lists the features that are included in this release. We mig
 |---|---|---|---|
 | Inventory and logistics | [Allocate and reserve WMS items in Inventory Visibility](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/allocate-reserve-whs-items-inventory-visibility) | Coming soon | Enabled by default |
 | Inventory and logistics | [Preload streamlined on-hand inventory lists](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | Coming soon | Enabled by default |
-| Make-to-order supply automation | [Make-to-order supply automation](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/make-to-order-supply-automation) | Coming soon | Feature management:<br>*Make-to-order supply automation* |
+| Make-to-order supply automation | [Make-to-order supply automation](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/make-to-order-supply-automation) | [Make-to-order supply automation](../master-planning/make-to-order-supply-automation.md) | Feature management:<br>*Make-to-order supply automation* |
 | Planning | [View and apply detailed insights for DDMRP](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/view-apply-detailed-insights-ddmrp) | [Demand Driven Material Requirements Planning overview](../master-planning/planning-optimization/ddmrp-overview.md) | Feature management:<br>*(Preview) DDMRP for Planning Optimization* |
 | Production control | [Make finished goods physically available before posting to journals](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-finished-goods-physically-before-posting) | Coming soon | Feature management:<br>*(Preview) Make finished goods physically available before posting to journals* |
 | Warehouse management | [Look up relevant data within the warehouse mobile app](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/look-up-relevant-data-within-warehouse-mobile-app) | [Query data using Warehouse Management mobile app detours](../warehousing/warehouse-app-data-inquiry.md) | Feature management:<br>*Warehouse management app data inquiry flow* |
@@ -203,13 +203,9 @@ The table also lists features that were previously in public preview but have ch
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.29 includes platform updates. To learn more, see [Platform updates for version 10.0.29 of Finance and Operations apps (June 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-29.md). <!--KFM: Confirm link -->
 
-<!-- KFM: Get new KB link
-
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.29, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=694438). 
-
- -->
+For information about the bug fixes included in each of the updates that are part of version 10.0.29, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=726559).
 
 ### Dynamics 365 and industry clouds: 2022 release wave 1 plan
 
