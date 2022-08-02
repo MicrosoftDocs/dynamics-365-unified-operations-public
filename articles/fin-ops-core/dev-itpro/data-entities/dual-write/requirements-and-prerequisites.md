@@ -2,10 +2,10 @@
 title: System requirements and prerequisites
 description: This article describes the system requirements and prerequisites that must be in place before you can enable dual-write for finance and operations apps.
 author: NHelgren
-ms.date: 02/09/2022
+ms.date: 08/02/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: nhelgren
 ms.search.validFrom: 2020-03-20
@@ -121,7 +121,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
     
     > [!NOTE]
-    > When a record is created in Finance and Operations apps, the owner field will be set when the data is dual-written to Dataverse, even if the matched record exists in Dataverse. As dual-write uses App user with id **00000015-0000-0000-c000-000000000000** to communicates to Dataverse, the **Modified by** field will be set to the App user.
+    > When a record is created in finance and operations apps, the **Owner** field will be set when the data is dual-written to Dataverse, even if the matched record exists in Dataverse. As dual-write uses app user with ID **00000015-0000-0000-c000-000000000000** to communicates to Dataverse, the **Modified by** field will be set to the app user.
     
 
 5. Provide app consent in the tenant.
