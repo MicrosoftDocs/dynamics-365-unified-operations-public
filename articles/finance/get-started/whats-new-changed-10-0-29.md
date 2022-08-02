@@ -106,9 +106,19 @@ The following table lists the features that are turned on by default in 10.0.29.
 | Update 1099 information for multiple vendors   |   8/1/2022  | 1/31/2022  |  On by default |  Accounts payable |
 | Prohibit submission to workflow when the invoice number already exists on a posted invoice, and your system is not set up to accept duplicate invoice numbers. | 8/1/2022 | 1/31/2022  |  On by default |  Accounts payable |
 | Let invoices be submitted to workflow with incomplete or incorrect accounting distributions |  8/1/2022 | 1/31/2022 | Mandatory |  Accounts payable |
+| (Eastern Europe) Allow to use common approach of settlement amount calculation for Eastern Europe uses |  7/18/2022 | 3/10/2021 | On by default |  Accounts payable/Accounts receivable |
+| Advanced notes management  |  7/18/2022 | 2/19/2020 | On by default |  Accounts payable/Accounts receivable |
+| ISO20022 payment functionalities for all countries |  7/13/2022 | 7/13/2020 | On by default |  Accounts payable/Accounts receivable |
 | Update payment journal with dispute performance feature | 8/1/2022  | 1/31/2022 | Mandatory | Accounts receivable |
 | Calculate a Free text invoice charge from line amount | 8/1/2022  | 1/31/2022 | Mandatory | Accounts receivable |
 | Use free text invoice language for expanded country description  |  8/1/2022   | 1/31/2022 | Mandatory  | Accounts receivable |
+| NF-e XML move as attachment  |  7/18/2022   | 11/11/2019 | On by default  | Accounts receivable |
+| (Mexico) Enable posting of CFDI invoices with zero total amount  |  7/18/2022   | 6/14/2020 | On by default  | Accounts receivable |
+| Forced electronic invoices generations  |  7/18/2022   | 2/20/2021 | On by default  | Accounts receivable |
+| Use FTI report layout defined at print management settings under AE country context  |  7/18/2022   | 11/11/2019 | On by default  | Accounts receivable |
+| (Italy) Intent letters - invoicing of usual exporters  |  7/18/2022   | 2/19/2020 | On by default  | Accounts receivable |
+| Invoice issue deadline availability  |  7/18/2022   | 6/24/2020 | On by default  | Accounts receivable |
+| Display referenced documents on the Accounts Receivable Electronic Invoices page   |  7/18/2022   | 2/19/2020 | On by default  | Accounts receivable |
 | Lease impairment posting with preview |   8/1/2022 |  1/31/2022  |  On by default  | Asset leasing |
 | Leasing adjustment wizard for asset leasing   | 8/1/2022  | 1/31/2022  |  On by default | Asset leasing |
 | Asset leasing |  8/1/2022  | 1/31/2022  |  On by default | Asset leasing |
@@ -152,7 +162,9 @@ The following table lists the features that are turned on by default in 10.0.29.
 | Add Vendor ID, Vendor name, Customer ID, and Customer name to the Voucher transaction list page   |  8/1/2022   |   9/1/2021  |  Off by default  | General ledger  |
 | Generate trial balance with pending type transactions  |  8/1/2022 | 1/31/2022 | Mandatory  | General ledger  |
 | General ledger year-end enhancements    |  8/1/2022  | 1/31/2022 | Mandatory | General ledger  |
-| (United Arab Emirates) Disable overriding project invoice print management form settings. |  8/1/2022    |  1/31/2022            |  On by default     | Print management | 
+| (Italy) Posting invoices with zero amount   |  7/18/2022  | 2/19/2020 | On by default | General ledger  |
+| (United Arab Emirates) Disable overriding project invoice print management form settings. |  8/1/2022  |  1/31/2022 |  On by default | Print management | 
+| (Italy) Tax plafond | 7/18/2022 | 4/1/2020 | On by default | Tax |
 
 ## Features removed from Feature management
 The following table lists the features that have been removed from Feature management in 10.0.29.
