@@ -1,5 +1,5 @@
 ---
-title: Ability to enable 5-minute session timeout window for dual-write sessions
+title: Enable 5-minute session timeout window for dual-write sessions
 description: This article explains how to enable a 5-minute session timeout window for dual-write sessions.
 author: RamaKrishnamoorthy 
 ms.date: 08/02/2022
