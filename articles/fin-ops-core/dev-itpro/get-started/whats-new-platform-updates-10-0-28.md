@@ -4,7 +4,7 @@
 title: Platform updates for version 10.0.28 of finance and operations apps (August 2022)
 description: This article lists the features that are included in the platform updates for version 10.0.28 of finance and operations apps.
 author: sericks007
-ms.date: 07/15/2022
+ms.date: 07/26/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -30,7 +30,7 @@ The following table lists the features that are included in this release.
 | Feature area | Feature | More information | Enabled by |
 |--------------|---------|------------------|------------|
 | Web client | <p>**Upgrade Highcharts from version 4 to version 9**</p><p>This feature upgrades the charting JavaScript library to version 9 for finance and operations apps. The new library enables a richer set of visualizations when charts and graphs are built, deployed, and used in an app. Before you enable this feature, you should test any extensible controls or custom JavaScript code that uses Highcharts application programming interfaces (APIs), to ensure that there are no issues with the upgrade. This feature is targeted to be required in the April 2023 release, but it's currently optional to allow time for the migration of affected APIs.</p> | Not applicable | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
-| Web client  | <p>**Enable system notification management**</p><p>This feature lets system administrators monitor and take action on high-volume notification rules that might be affecting the system. By default, rules that generate more than 100 notifications per hour will be flagged as high-volume, but the administrator can adjust this criterion. The administrator will then have the option to block any high-volume rule from continuing to generate notifications, and also the option to delete existing notifications that are associated with that rule.</p>  | Not applicable | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
+| Web client  | [Enable system notification management](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/enable-system-notification-management) | Not applicable | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
 
 ### Bug fixes
 
