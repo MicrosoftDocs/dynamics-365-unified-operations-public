@@ -2,7 +2,7 @@
 title: Party and global address book
 description: This article describes the Party and global address book functionality of dual-write.
 author: RamaKrishnamoorthy
-ms.date: 04/25/2022
+ms.date: 08/02/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: sericks
@@ -114,7 +114,7 @@ The grid includes the following columns:
 
 You can use the **New Address** button above the grid to create as many postal addresses as you want.
 
-In Customer Engagement apps, when a user enters the addresses in the **Summary** tab of Accounts form, the **Address 1** and **Address 2** fields correspond to the **Delivery** and **Invoice** addresses, respectively. But when a user creates it in Finance and Operations apps, the first 2 addresses of the customer record will appear in **Address1** and **Address2** and the user has the option to change the address purpose to **Delivery** and **Invoice**.
+In customer engagement apps, when a user enters the addresses in the **Summary** tab of the **Accounts** page, the **Address 1** and **Address 2** fields correspond to the **Delivery** and **Invoice** addresses, respectively. But when a user creates it in finance and operations apps, the first 2 addresses of the customer record will appear in **Address1** and **Address2** and the user has the option to change the address purpose to **Delivery** and **Invoice**.
 
 ![Summary tab for postal addresses.](media/party-gab-image5.png)
 
