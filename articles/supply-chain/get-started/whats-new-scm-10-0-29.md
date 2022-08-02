@@ -90,6 +90,7 @@ The table also lists features that were previously in public preview but have ch
 | Inventory and warehouse management | Create transfer order from sales line | Mandatory |
 | Inventory and warehouse management | Disable inventory journal line field in workflow | Mandatory |
 | Inventory and warehouse management | Enable inventory quality management parameters warning feature | Mandatory |
+| Inventory and warehouse management | (China) Exclude physical receipt and issue costs from monthly average cost | On by default |
 | Inventory and warehouse management | [Inventory journal approve workflow](../inventory/inventory-journal-workflow.md) | Mandatory |
 | Inventory and warehouse management | [Inventory on-hand report storage](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/inventory-on-hand-report-storage) | Mandatory |
 | Inventory and warehouse management | [Saved views for inventory management](saved-views-scm.md) | Mandatory |
