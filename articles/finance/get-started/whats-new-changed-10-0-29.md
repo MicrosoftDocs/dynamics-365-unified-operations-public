@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Finance 10.0.29 (September 2022)
+title: What's new or changed in Dynamics 365 Finance 10.0.29 (October 2022)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.29 preview release.
 author: kfend
 ms.date: 07/29/2022
@@ -27,13 +27,13 @@ ms.dyn365.ops.version: 10.0.29
 
 ---
 
-# What's new or changed in Dynamics 365 Finance 10.0.29 (September 2022)
+# What's new or changed in Dynamics 365 Finance 10.0.29 (October 2022)
 
 [!include [banner](../includes/banner.md)]
 
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.29. This version has a build number of 10.0.xxxx and is available on the following schedule:
+This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.29. This version has a build number of 10.0.1326 and is available on the following schedule:
 
 - **Preview of release:** August 2022
 - **General availability of release (self-update):** September 2022
@@ -90,6 +90,70 @@ The following table lists the feature enhancements that are included in this rel
 | General ledger | Dimension statement data limitation | The dimension statement is now limited to running for a maximum of 31 days. If transaction details are required for a larger date range, use the General journal account entry reporting entity. |
 | General ledger | Require year-end close to be run in fiscal year order | When you run the general ledger year-end close, the previous fiscal year must be closed before you can run the close for the selected fiscal year. This requirement ensures that the correct balances exist in the fiscal year that is being closed. |
 
+## Features turned on by default in this release
+
+The following table lists the features that are turned on by default in 10.0.29. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory.  This is to ensure that customers are using current functionality, so that as enhancements are added they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they are determined to be essential. 
+
+| Feature name | Enable date | Feature added | Feature state | Module |
+|--------------|-------------|---------------|---------------|--------|
+| Czech Republic / Hungary: Enable allocation terms in Subledger  |  8/1/2022  |   1/31/2022   |  Mandatory |  Accounts payable |
+| Enable translation for the Country/Region component of the Russian address format  |   8/1/2022  | 1/31/2022   |  On by default   |  Accounts payable |
+| Apply payment schedule to invoice journal  |   8/1/2022 | 1/31/2022 |  On by default |  Accounts payable |
+| Lock financial dimensions on invoice lines on vendor prepayment invoice  |   8/1/2022  | 1/31/2022  |  On by default  |  Accounts payable |
+| Create invoice lines based on the quantity option parameter  | 8/1/2022  | 1/31/2022  |  On by default |  Accounts payable |
+| Block posting and submission of vendor invoices to workflow  | 8/1/2022  | 1/31/2022  |  On by default |  Accounts payable |
+| Vendor invoice automation |   8/1/2022  | 1/31/2022  |  On by default |  Accounts payable |
+| Update 1099 information for multiple vendors   |   8/1/2022  | 1/31/2022  |  On by default |  Accounts payable |
+| Prohibit submission to workflow when the invoice number already exists on a posted invoice, and your system is not set up to accept duplicate invoice numbers. | 8/1/2022 | 1/31/2022  |  On by default |  Accounts payable |
+| Let invoices be submitted to workflow with incomplete or incorrect accounting distributions |  8/1/2022 | 1/31/2022 | Mandatory |  Accounts payable |
+| Update payment journal with dispute performance feature | 8/1/2022  | 1/31/2022 | Mandatory | Accounts receivable |
+| Calculate a Free text invoice charge from line amount | 8/1/2022  | 1/31/2022 | Mandatory | Accounts receivable |
+| Use free text invoice language for expanded country description  |  8/1/2022   | 1/31/2022 | Mandatory  | Accounts receivable |
+| Lease impairment posting with preview |   8/1/2022 |  1/31/2022  |  On by default  | Asset leasing |
+| Leasing adjustment wizard for asset leasing   | 8/1/2022  | 1/31/2022  |  On by default | Asset leasing |
+| Asset leasing |  8/1/2022  | 1/31/2022  |  On by default | Asset leasing |
+| Leasing convention for asset leasing  |   8/1/2022 | 1/31/2022  | On by default | Asset leasing |
+| Budget Control - performance enhancement for pending documents | 8/1/2022 | 1/31/2022  | On by default | Budget control |
+| Budget control statistics date range enhancements |  8/1/2022  |  1/31/2022  | On by default | Budget control |
+| Only track amounts in the budget funds available calculation   |  8/1/2022   |  1/31/2022  | On by default | Budget control |
+| Include narrative fields when copying a budget plan |  8/1/2022   | 1/31/2022  | On by default | Budget planning |
+| Budget plan narrative  |  8/1/2022  |  1/31/2022 | Mandatory | Budget planning |
+| Budget planning query optimization generation for large budget plans   |  8/1/2022 | 1/31/2022 | Mandatory | Budget planning |
+| Budget register entries for quantity only |  8/1/2022  | 1/31/2022  | On by default | Budgeting|
+| Open payment journal from Checks page   |  8/1/2022  | 1/31/2022 | Mandatory | Budgeting |
+| Open payment journal from Checks page   |   8/1/2022  | 1/31/2022 | Mandatory | Cash management |
+| Vendor details added to Bridged transactions and Checks pages   |  8/1/2022  | 1/31/2022 | Mandatory | Cash management |
+| Enable bank revaluation globally without a parameter |  8/1/2022 |  1/31/2022 | Mandatory | Cash management |
+| Reverse reconciled advanced bank reconciliation   |  8/1/2022  | 1/31/2022  | On by default  | Cash management |
+| Unmatch all bank statements and transactions   |  8/1/2022   |  1/31/2022 | Mandatory | Cash management |
+| Reverse posted bank statement |  8/1/2022 | 1/31/2022  | On by default | Cash management |
+| Enable batch processing for bank payment advice reports  |  8/1/2022 | 1/31/2022 | Mandatory | Cash management |
+| Revert to simple bank reconciliation from advanced bank reconciliation  |  8/1/2022  | 1/31/2022  | On by default | Cash management |
+| Enable remove open transactions of zero amount from settlement when marking transactions |  8/1/2022  | 1/31/2022  | On by default | Cash management |
+| Turn off set based updates for customer settlement cash discount date |  8/1/2022  |  1/31/2022 | On by default  | Cash management |
+| Enhance undo settlements process  |   8/1/2022  | 1/31/2022 | Mandatory | Cash management |
+| Enable inquiries on open transactions for customer or vendor payment journals |   8/1/2022  | 1/31/2022 | Mandatory | Cash management |
+| Cash flow forecast automation    |   8/1/2022  | 1/31/2022 | On by default  | Cash management |
+| Lock the main account type and validate the offset account type in payment journals for customers and vendors | 8/1/2022 | 1/31/2022 | On by default | Cash management |
+| Enable vendor transaction settlement for all remittance addresses  |  8/1/2022  | 1/31/2022 | Mandatory  | Cash management |
+| Marked transaction detail form  | 8/1/2022  | 1/31/2022 | Mandatory  | Cash management |
+| Vendor open transactions report  |   8/1/2022   | 1/31/2022 | On by default | Cash management |
+| Vendor payment proposal automation |   8/1/2022   | 1/31/2022 | On by default | Cash management |
+| Enable additional validation of data for documents using the source document accounting framework | 8/1/2022 | 1/31/2022 | On by default | Financial journal |
+| Prevent overriding the account on a vendor invoice when creating a fixed asset |   8/1/2022 | 1/31/2022 | Mandatory | Fixed assets  |
+| Prevent multiple depreciation in same period  |  8/1/2022  | 1/31/2022 | On by default | Fixed assets  |
+| Lock asset book in depreciation journal  |   8/1/2022  | 1/31/2022 | Mandatory  | Fixed assets  |
+| Create separate voucher number for journals line related to automatic depreciation adjustment, split transactions, split disposal  | 8/1/2022 | 1/31/2022 | On by default | Fixed assets  |
+| Write-up adjustment extends depreciation periods |   8/1/2022  | 1/31/2022 | Mandatory  | Fixed assets  |
+| Update processing of depreciation adjustment after split |  8/1/2022  | 1/31/2022 | Mandatory  | Fixed assets  |
+| Prevent validation of  fiscal period for fixed asset books  |   8/1/2022  | 1/31/2022 | Mandatory  | Fixed assets  |
+| Advanced ledger settlement: Settlement and reverse settlement changes   |  8/1/2022   | 1/31/2022 | Mandatory  | General ledger  |
+| Ledger settlement by user  |  8/1/2022   | 1/31/2022 | Mandatory  | General ledger  |
+| Add Vendor ID, Vendor name, Customer ID, and Customer name to the Voucher transaction list page   |  8/1/2022   |   9/1/2021  |  Off by default  | General ledger  |
+| Generate trial balance with pending type transactions  |  8/1/2022 | 1/31/2022 | Mandatory  | General ledger  |
+| General ledger year-end enhancements    |  8/1/2022  | 1/31/2022 | Mandatory | General ledger  |
+| (United Arab Emirates) Disable overriding project invoice print management form settings. |  8/1/2022    |  1/31/2022            |  On by default     | Print management | 
+
 ## Additional resources
 
 ### Platform updates for finance and operations apps
@@ -98,7 +162,7 @@ Dynamics 365 Finance 10.0.29 includes platform updates. To learn more, see [Plat
 
 ### Bug fixes
 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=xxxxx).
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=726559).
 
 ### Regulatory updates
 
@@ -108,7 +172,7 @@ For information about regulatory updates for finance and operations apps, see [R
 
 Wondering about upcoming and recently released capabilities in any of our business apps or platform?
 
-Check out [Dynamics 365 and industry clouds: 2022 release wave 1 plan](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
+Check out [Dynamics 365 and industry clouds: 2022 release wave 2 plan](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-finance). We've captured all the details, end to end, top to bottom, that you can use for planning.
 
 ### Removed and deprecated features
 
