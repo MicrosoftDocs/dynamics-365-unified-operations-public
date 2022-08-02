@@ -57,7 +57,7 @@ To create a new email ID template:
 ## Send email to employees
 
 To send an email to a new hire who hasn't started yet:
-1. Go to **Benefits** workspace.
+1. Go to **Benefits management** workspace.
 2. Select the tile for the group of employees to send email to.
 3. Click **Send email**.
 4. Select the employees that you want to email.
@@ -67,14 +67,14 @@ To send an email to a new hire who hasn't started yet:
 
 You can check the email message and status through the employee’s **Worker benefit** page or using the **Benefits email history** button from the **Links** section. You can also send the email using the **Worker benefit plan** page.  
  
-To see the **Benefits email history**, go to **Benefits** workspace, click on **Links** > **Benefits email history**.   
-View the complete email history for **Benefits emails** sent. Click on **Show message** on the task bar to review the content of the email.  
+8. To see the **Benefits email history**, go to **Benefits management** workspace, click on **Links** > **Benefits email history**.   
+9. View the complete email history for **Benefits emails** sent. Click on **Show message** on the task bar to review the content of the email.  
+10. Click **Worker**. From the **Worker benefit plan** page, you can **Send email** and see the **Benefits email history**. 
 
-8. Click **Worker**. 
-9. Go to the **Worker benefit plan** page. From this page, you can **Send email** and **Benefits email history**. You can send email to this specific worker and check the email history for them.  
-10. There are different tiles on the **Workspace**. You can send emails by selecting the related template. If the emails have been sent already, for example, if the new hire enrollment emails have been sent, select the **New hire not started** tile, and **Send reminder** link. Select a reminder template and set the title of the notification as a first, second or third reminder  
-11. Click on the action center, you will see the alert on the success/failure status on emails sent.  
-12. Click on **Benefits email history** from the **Benefit plan** page or **Links**. You can **Send emails** or reminders for **Life events** and **Open enrollment** through the **Workspace**. 
+There are different tiles on the **Benefits management** workspace. You can send emails by selecting the related template. If the new hire enrollment emails have been sent, select the **New hire not started** tile, and **Send reminder** link. You can select a reminder template and set the title of the notification as a first, second or third reminder  
+
+
+ 
 
 
 
