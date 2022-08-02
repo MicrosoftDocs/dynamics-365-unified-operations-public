@@ -58,8 +58,8 @@ Here are some considerations for additional optional environments:
 - **Integration** – Configure and test integrations, which might include native integrations or custom integrations, such as those for payroll, applicant tracking systems, or benefit systems and providers.
 - **Training** – You might need a separate environment that is configured with a set of training data, so that you can train your employees how to use the new system. 
 - **Multi-phase project** – You might need an additional environment to support configuration, data migration, testing, or other activities in a project phase that is planned after the initial go-live of the project.
-- **Development** – In the finance and operations infrastructure, you can now extend the solution and develop your own customizations. Each developer is required to use their own development environment. For more information, see [Deploy and access development environments](/fin-ops-core/dev-itpro/dev-tools/access-instances).
-- **GOLD** – For new deployments, a common practice is to use a separate GOLD environment that is kept pristine for configuration and data migration. This environment can be used throughout the implementation to refresh other environments. It will be used to create the new production environment that has the base configuration and data migration. You can't deploy a production environment on the finance and operations infrastructure until you've completed the go-live readiness process. For more information, see [Prepare for go-live](/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live).
+- **Development** – In the finance and operations infrastructure, you can now extend the solution and develop your own customizations. Each developer is required to use their own development environment. For more information, see [Deploy and access development environments](../fin-ops-core/dev-itpro/dev-tools/access-instances.md).
+- **GOLD** – For new deployments, a common practice is to use a separate GOLD environment that is kept pristine for configuration and data migration. This environment can be used throughout the implementation to refresh other environments. It will be used to create the new production environment that has the base configuration and data migration. You can't deploy a production environment on the finance and operations infrastructure until you've completed the go-live readiness process. For more information, see [Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md).
 
 <!--NOTE: Need to come back and verify Tier-1 can be used and if a customer cannot purchase tier 3-5 need specific documentation about this.-->
 
@@ -72,14 +72,14 @@ Here are some considerations for additional optional environments:
 
 ## Create an LCS project
 
-To use LCS to manage your Human Resources environments, you must first create an LCS project. If you're migrating your Human Resources environment to the finance and operations infrastructure, you must create a new LCS project for finance and operations apps. For more information, see [Migrating your Human Resources environment](hr-admin-migrate-overview). If you already have an LCS project for other finance and operations apps, you can enable the Human Resources features in the **Feature management** workspace. For more information, see [Feature management overview](/fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview).
+To use LCS to manage your Human Resources environments, you must first create an LCS project. If you're migrating your Human Resources environment to the finance and operations infrastructure, you must create a new LCS project for finance and operations apps. For more information, see [Migrating your Human Resources environment](/hr-admin-migrate-overview.md). If you already have an LCS project for other finance and operations apps, you can enable the Human Resources features in the **Feature management** workspace. For more information, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-When a new customer signs up for Human Resources, the subscription includes an Implementation project workspace. After the customer activates the service, the tenant administrator must sign in at <https://lcs.dynamics.com> by using the tenant account. The project workspace is automatically created for the organization. For more information, see [Lifecycle Services (LCS) for Finance and Operations apps customers](/fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs).
+When a new customer signs up for Human Resources, the subscription includes an Implementation project workspace. After the customer activates the service, the tenant administrator must sign in at <https://lcs.dynamics.com> by using the tenant account. The project workspace is automatically created for the organization. For more information, see [Lifecycle Services (LCS) for Finance and Operations apps customers](../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
 > [!NOTE]
 > To ensure successful provisioning, the account that you use to provision the Human Resources environment must be assigned to either the **System Administrator** role or the **System Customizer** role in the Power Apps environment that is associated with the Human Resources environment. For more information about how to assign security roles to users in Microsoft Power Platform, see [Configure user security to resources](/power-platform/admin/database-security).
 
-You must complete the LCS project onboarding process before you can start to deploy environments. For more information, see [Project onboarding](/fin-ops-core/dev-itpro/lifecycle-services/project-onboarding). For more information about how to use LCS, see [Lifecycle Services (LCS) user guide](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide).
+You must complete the LCS project onboarding process before you can start to deploy environments. For more information, see [Project onboarding](../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md). For more information about how to use LCS, see [Lifecycle Services (LCS) user guide](../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md).
 
 ## Deploy Human Resources environments
 
@@ -102,8 +102,8 @@ By default, the global administrator who created the environment has access to i
 ## Additional resources
 You can learn more about how to use and manage projects in LCS on the finance and operations app infrastructure by using the following resources:
 
-- [Lifecycle Services resources](/fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
-- [Lifecycle Services (LCS) user guide](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
+- [Lifecycle Services resources](../fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
+- [Lifecycle Services (LCS) user guide](../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
 - [Self-service deployment overview](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md)
 - [Database movement operations home page](../fin-ops-core/dev-itpro/database/dbmovement-operations.md)
 
