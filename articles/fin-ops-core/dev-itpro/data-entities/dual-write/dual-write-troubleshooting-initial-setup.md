@@ -2,10 +2,10 @@
 title: Troubleshoot issues during initial setup
 description: This article provides information that can help you fix issues that occur during the initial setup of dual-write integration.
 author: RamaKrishnamoorthy 
-ms.date: 08/10/2021
+ms.date: 08/02/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
@@ -14,8 +14,6 @@ ms.search.validFrom: 2020-03-16
 # Troubleshoot issues during initial setup
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 This article provides troubleshooting information for dual-write integration between finance and operations apps and Dataverse. Specifically, it provides information that can help you fix issues that might occur during the initial setup of dual-write integration.
 
@@ -90,7 +88,7 @@ There are two things that can cause an issue with environment not being discover
 
 ## 403 (Forbidden) error while creating connections
 
-As part of dual-write linking process, two PowerApps connections (a.k.a. Apihub connections) are created on behalf of the user in the linked Dataverse environment. If the customer does not have license for PowerApps environment, the ApiHub connection creation fails with 403 (Forbidden) error as shown below:
+As part of the dual-write linking process, two Power Apps connections (also known as *Apihub* connections) are created on behalf of the user in the linked Dataverse environment. If the customer does not have a license for the PowerApps environment, the ApiHub connection creation fails with a 403 (Forbidden) error, as shown below:
 
 *MSG=[Failed to setup dual write environment. Error Details:Response status code does not indicate success: 403 (Forbidden). - Response status code does not indicate success: 403 (Forbidden).] STACKTRACE=[   at Microsoft.Dynamics.Integrator.ProjectManagementService.DualWrite.DualWriteConnectionSetProcessor.<CreateDualWriteConnectionSetAsync>d__29.MoveNext() in X:\bt\1158727\repo\src\ProjectManagementService\DualWrite\DualWriteConnectionSetProcessor.cs:line 297
 --- End of stack trace from previous location where exception was thrown ---
@@ -98,11 +96,11 @@ As part of dual-write linking process, two PowerApps connections (a.k.a. Apihub 
    at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
    at Microsoft.Dynamics.Integrator.ProjectManagementService.Controllers.DualWriteEnvironmentManagementController.<SetupDualWriteEnvironmentAsync>d__34.MoveNext() in X:\bt\1158727\repo\src\ProjectManagementService\Controllers\DualWriteEnvironmentManagementController.cs:line 265]*
 
-This error occurs due to lack of PowerApps license. Assign a proper license (e.g. Power Apps Trial 2 Plan) to the user so that the user has permission to create the connection. To verify the license, the customer can go to [this link](https://portal.office.com/account/?ref=MeControl#subscriptions) to view the existing licenses assigned to the user.
+This error occurs because of the lack of a Power Apps license. Assign a proper license (for example, Power Apps Trial 2 Plan) to the user so that the user has permission to create the connection. To verify the license, the customer can go to the [My account](https://portal.office.com/account/?ref=MeControl#subscriptions) site to view the existing licenses assigned to the user.
 
-Additional information about power apps license:
-1. [Assign licenses to users](https://docs.microsoft.com/en-us/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) 
-2. [Purchase Power Apps for your organization](https://docs.microsoft.com/en-us/power-platform/admin/signup-for-powerapps-admin) 
+Additional information about Power Apps license:
+- [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) 
+- [Purchase Power Apps for your organization](/power-platform/admin/signup-for-powerapps-admin) 
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
 
