@@ -1,13 +1,13 @@
 ---
 title: Ability to enable 5-minute session timeout window for dual-write sessions
-description: This article explains how to enable 5-minute session timeout window for dual-write sessions.
+description: This article explains how to enable a 5-minute session timeout window for dual-write sessions.
 author: RamaKrishnamoorthy 
-ms.date: 07/31/2022
+ms.date: 08/02/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: ramasri
 ms.search.validFrom: 2022-07-31
 ---
 
@@ -15,20 +15,19 @@ ms.search.validFrom: 2022-07-31
 
 [!include [banner](../../includes/banner.md)]
 
-When you setup dual-write, you will get only a 2-minute session timeout window for dual-write sessions. In order to get a 5-minute session timeout window, please follow the below instructions. These steps are applicable for dual-write core solution version 10.0.36.0 and beyond.
+When you set up dual-write, you will get only a 2-minute session timeout window for dual-write sessions. In order to get a 5-minute session timeout window, please follow the instructions below. These steps are applicable for dual-write core solution version 10.0.36.0 and later.
 
-- For Sandbox and Production environments, please raise a support ticket with Microsoft support team with title "Enable 5-min transaction timeout for Dual Write DV to FinOps Transactions" along with Org Id or Tenant Id. We will enable it for you. 
+- For sandbox and production environments, please enter a support ticket with the Microsoft support team with a title of **Enable 5-min transaction timeout for Dual Write DV to FinOps Transactions** along with the Org ID or Tenant ID. We will enable it for you. 
 
-- For developer boxes and Customer Hosted Environments, please follow the steps detailed below. Once you complete these steps, please raise a support ticket with Microsoft Support team with the same title "Enable 5-min transaction timeout for Dual Write DV to FinOps Transactions" along with Org Id or Tenant Id. We will enable it for you. 
-
+- For developer environments and customer-hosted environments, please follow the steps detailed below. Once you complete these steps, enter a support ticket with the Microsoft support team with the same title, **Enable 5-min transaction timeout for Dual Write DV to FinOps Transactions** along with the Org ID or Tenant ID. We will enable it for you. 
 
 ## Register the app in the Azure portal
 The following procedure explains how to create the Azure AD application.
 
 > [!IMPORTANT]
-> The Azure AD application must be created on the same tenant as the finance and operations apps.
+> The Azure AD application must be created on the same tenant as finance and operations apps.
 
-1.  Go to <https://portal.azure.com> **\> Azure Active Directory \> App registrations**.
+1.  Go to <https://portal.azure.com> and select **Azure Active Directory \> App registrations**.
 
 2.  Select **New Registration**. Enter the following information:
 
@@ -56,7 +55,7 @@ The following procedure explains how to create the Azure AD application.
 
 The Azure AD application that you created will be used by Dataverse to call finance and operations apps. Therefore, it must be trusted by finance and operations apps and associated with a user account that has the appropriate rights. After you complete this step, any application that has the secret of the Azure AD application that you created will be able to call this finance and operations apps environment and access the dual-write functionality.
 
-1.  In finance and operations, go to **System Administration \> Users \> Users**.
+1.  In finance and operations apps, go to **System Administration \> Users \> Users**.
 
 2.  Select **New** to add a new user. Enter the following information:
 
@@ -72,21 +71,21 @@ The Azure AD application that you created will be used by Dataverse to call fina
 
     - Add a new row.
 
-    - **Client ID** - The **Application (client) ID** created above
+    - **Client ID** - The **Application (client) ID** created above.
 
     - **Name** - Enter **Dataverse Integration** (or a different name).
 
     - **User ID** - The user ID created above.
 
-4. Login to Finance and Operations apps and assign **System Administrator** security role to this user.
+4. Login to finance and operations apps and assign the **System Administrator** security role to this user.
 
 ## Configure the virtual entity data source 
 
-The next step in the process is to provide Dataverse with the finance and operations instance to connect to. You need virtual entity data source to complete the process. The following steps walk through this part of the process.
+The next step in the process is to provide Dataverse with the finance and operations instance to connect to. You'll need a virtual entity data source to complete the process. The following steps walk through this part of the process.
 
 1.  In Dataverse, go to **Advanced Settings \> Administration \> Virtual Entity Data Sources**.
 
-2.  Select the data source named "finance and operations".
+2.  Select the data source named **finance and operations**.
 
 3.  Fill in the information from the steps above.
 
@@ -100,14 +99,14 @@ The next step in the process is to provide Dataverse with the finance and operat
 
     - **AAD Application Secret** - The secret generated above.
 
-    - **AAD Resource** - Enter 00000015-0000-0000-c000-000000000000 (this is the Azure AD application representing finance and operations, and should always be this same value).
+    - **AAD Resource** - Enter **00000015-0000-0000-c000-000000000000** (this is the Azure AD application representing finance and operations, and should always be this same value).
 
 4.  Save the changes.
 
 ## Stop and re-run dual-write maps
 
-1. Login to Finance and Operations apps.
+1. Login to finance and operations apps.
 
 2. Go to dual-write administration page.
 
-3. Stop and Re-run the maps without Initial Sync.
+3. Stop and re-run the maps without Initial Sync.
