@@ -106,7 +106,7 @@ The following table lists the features that are turned on by default in 10.0.29.
 | Update 1099 information for multiple vendors   |   8/1/2022  | 1/31/2022  |  On by default |  Accounts payable |
 | Prohibit submission to workflow when the invoice number already exists on a posted invoice, and your system is not set up to accept duplicate invoice numbers. | 8/1/2022 | 1/31/2022  |  On by default |  Accounts payable |
 | Let invoices be submitted to workflow with incomplete or incorrect accounting distributions |  8/1/2022 | 1/31/2022 | Mandatory |  Accounts payable |
-| (Eastern Europe) Allow to use common approach of settlement amount calculation for Eastern Europe uses |  7/18/2022 | 3/10/2021 | On by default |  Accounts payable/Accounts receivable |
+| (Eastern Europe) Allow the use of common approach of settlement amount calculation for Eastern Europe uses |  7/18/2022 | 3/10/2021 | On by default |  Accounts payable/Accounts receivable |
 | Advanced notes management  |  7/18/2022 | 2/19/2020 | On by default |  Accounts payable/Accounts receivable |
 | ISO20022 payment functionalities for all countries |  7/13/2022 | 7/13/2020 | On by default |  Accounts payable/Accounts receivable |
 | Update payment journal with dispute performance feature | 8/1/2022  | 1/31/2022 | Mandatory | Accounts receivable |
@@ -151,7 +151,7 @@ The following table lists the features that are turned on by default in 10.0.29.
 | Vendor payment proposal automation |   8/1/2022   | 1/31/2022 | On by default | Cash management |
 | Enable additional validation of data for documents using the source document accounting framework | 8/1/2022 | 1/31/2022 | On by default | Financial journal |
 | Prevent overriding the account on a vendor invoice when creating a fixed asset |   8/1/2022 | 1/31/2022 | Mandatory | Fixed assets  |
-| Prevent multiple depreciation in same period  |  8/1/2022  | 1/31/2022 | On by default | Fixed assets  |
+| Prevent multiple depreciations in same period  |  8/1/2022  | 1/31/2022 | On by default | Fixed assets  |
 | Lock asset book in depreciation journal  |   8/1/2022  | 1/31/2022 | Mandatory  | Fixed assets  |
 | Create separate voucher number for journals line related to automatic depreciation adjustment, split transactions, split disposal  | 8/1/2022 | 1/31/2022 | On by default | Fixed assets  |
 | Write-up adjustment extends depreciation periods |   8/1/2022  | 1/31/2022 | Mandatory  | Fixed assets  |
@@ -173,7 +173,7 @@ The following table lists the features that have been removed from Feature manag
 |--------------|-------------|---------------|---------------|--------|
 | Workflow option when invoice and registered total do not equal | 8/01/2022 | 1/31/2022 | Parameter available on the **Accounts payable** parameters page | Accounts payable|
 | Workflow option when unallocated charges exist | 8/01/2022 | 1/31/2022 | Parameter available on the **Accounts payable** parameters page | Accounts payable|
-| Budget proprosal | 8/01/2022 | 1/31/2022 | Enabled when you deploy the Finance Insights add-in in LCS. | Budgeting
+| Budget proposal | 8/01/2022 | 1/31/2022 | Enabled when you deploy the Finance Insights add-in in LCS. | Budgeting
 | Cash flow forecasts | 8/01/2022 | 1/31/2022 | Enabled when you deploy the Finance Insights add-in in LCS. | Cash management |
 | Customer payment predictions | 8/01/2022 | 1/31/2022 | Enabled when you deploy the Finance Insights add-in in LCS. | Finance Insights |
 | Enable dual currency functionality in general ledger consolidation | 8/01/2022 | 1/31/2022 | Removed | General ledger |
