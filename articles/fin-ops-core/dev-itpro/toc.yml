@@ -1090,6 +1090,8 @@
                   href: data-entities/dual-write/link-your-environment.md
                 - name: Enable entity map for dual-write
                   href: data-entities/dual-write/enable-entity-map.md
+            - name: Enable 5-minute session timeout window for dual-write sessions
+              href: data-entities/dual-write/5-minute-mode.md
             - name: Separated dual-write application orchestration package
               href: data-entities/dual-write/separated-solutions.md
             - name: Currency data-type migration for dual-write
