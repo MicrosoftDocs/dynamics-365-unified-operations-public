@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Benefits management overview
+title: Benefits email notification
 description: This article provides an overview of the Benefits management email notification feature in Dynamics 365 Human Resources. 
 author: twheeloc  
 ms.date: 08/01/2022
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Email notification feature
+# Benefits email notification
 
 
 [!INCLUDE [PEAP](../includes/peap-2.md)]
