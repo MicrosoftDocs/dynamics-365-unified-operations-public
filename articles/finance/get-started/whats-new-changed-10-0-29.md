@@ -154,6 +154,18 @@ The following table lists the features that are turned on by default in 10.0.29.
 | General ledger year-end enhancements    |  8/1/2022  | 1/31/2022 | Mandatory | General ledger  |
 | (United Arab Emirates) Disable overriding project invoice print management form settings. |  8/1/2022    |  1/31/2022            |  On by default     | Print management | 
 
+## Features removed from Feature management
+The following table lists the features that have been removed from Feature management in 10.0.29.
+
+| Feature name | Enable date | Feature added | Feature state | Module |
+|--------------|-------------|---------------|---------------|--------|
+| Workflow option when invoice and registered total do not equal | 8/01/2022 | 1/31/2022 | Parameter available on the **Accounts payable** parameters page | Accounts payable|
+| Workflow option when unallocated charges exist | 8/01/2022 | 1/31/2022 | Parameter available on the **Accounts payable** parameters page | Accounts payable|
+| Budget proprosal | | 8/01/2022 | 1/31/2022 | Enabled when you deploy the Finance Insights add-in in LCS> | Budgeting
+| Cash flow forecasts | 8/01/2022 | 1/31/2022 | Enabled when you deploy the Finance Insights add-in in LCS. | Cash management |
+| Customer payment predictions | 8/01/2022 | 1/31/2022 | Enabled when you deploy the Finance Insights add-in in LCS. | Finance Insights |
+| Enable dual currency functionality in general ledger consolidation | 8/01/2022 | 1/31/2022 | Removed | General ledger |
+
 ## Additional resources
 
 ### Platform updates for finance and operations apps
