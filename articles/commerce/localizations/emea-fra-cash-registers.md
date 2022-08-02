@@ -509,7 +509,7 @@ To enable the digital signature in offline mode, you must follow these steps aft
 > [!WARNING]
 > You need to make specific steps to configure Commerce channel components for France only if you are using the Commerce version 10.0.28 or earlier. Starting from the version 10.0.29, all required channel components are enabled out-of-the-box.
 >
-> However, if you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later, you need to make the steps that are described in the [Migrate to version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-version-10-0-29-or-later) section.
+> However, if you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later, you need to make the steps that are described in the [Migrate to version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-version-10029-or-later) section.
 
 To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-fi-deployment.md).
 
