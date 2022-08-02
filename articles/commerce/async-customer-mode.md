@@ -4,7 +4,7 @@
 title: Asynchronous customer creation mode
 description: This article describes the asynchronous customer creation mode in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 12/10/2021
+ms.date: 08/02/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -21,7 +21,7 @@ ms.search.validFrom: 2021-12-17
 
 This article describes the asynchronous customer creation mode in Microsoft Dynamics 365 Commerce.
 
-In Commerce, there are two modes of customer creation: synchronous (or sync) and asynchronous (or async). By default, customers are created synchronously. In other words, they are created in Commerce headquarters in real time. The sync customer creation mode is beneficial because new customers are immediately searchable across channels. However, it also has a drawback. Because it generates [Commerce Data Exchange: Real-time Service](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) calls to Commerce headquarters, performance can be affected if many concurrent customer creation calls are made.
+In Commerce, there are two modes of customer creation: synchronous (or sync) and asynchronous (or async). By default, customers are created synchronously. In other words, they're created in Commerce headquarters in real time. The sync customer creation mode is beneficial because new customers are immediately searchable across channels. However, it also has a drawback. Because it generates [Commerce Data Exchange: Real-time Service](dev-itpro/define-retail-channel-communications-cdx.md#realtime-service) calls to Commerce headquarters, performance can be affected if many concurrent customer creation calls are made.
 
 If the **Create customer in async mode** option is set to **Yes** in the store's functionality profile (**Retail and Commerce \> Channel setup \> Online store setup \> Functionality profiles**), Real-time Service calls aren't used to create customer records in the channel database. The async customer creation mode doesn't affect the performance of Commerce headquarters. A temporary globally unique identifier (GUID) is assigned to every new async customer record and used as the customer account ID. This GUID isn't shown to point of sale (POS) users. Instead, those users will see **Pending sync** as the customer account ID.
 
@@ -42,7 +42,7 @@ To help organizations in using asynchronous mode of customer management and redu
 
 | Feature  Enhancement| Dynamics 365 Commerce Version   | Feature Details |
 | ------------- |:--------------:|--------------:|
-|Performance improvements in retrieving customer information from channel database.  | 10.0.20 onwards |Customer entity is split into light weight entities, and service retrieves only necessary information from channel database to improve performance.   |
+|Performance improvements in retrieving customer information from channel database.  | 10.0.20 onwards |Customer entity is split into lightweight entities, and service retrieves only necessary information from channel database to improve performance.   |
 |Ability to create address asynchronously during checkout.  |10.0.22 onwards  | **Feature Switch:** Enable asynchronous creation for customer addresses **Feature details:**
 	• Ability to add addresses without making real-time-service calls to HQ.
 	• Ability to identify addresses uniquely in Channel DB, without RECID.
@@ -56,11 +56,11 @@ To help organizations in using asynchronous mode of customer management and redu
 
 ### Feature switches hierarchy
 
-As described above, there are multiple feature management switch to enable complete set of enhancements related to async customer. However, one particular feature, i.e. **Enable editing customers in asynchronous mode** needs the following features to be enabled first: 
+As described above, there are multiple feature management switches to enable complete set of enhancements related to async customer. However, one particular feature, i.e. **Enable editing customers in asynchronous mode** needs the following features to be enabled first: 
 
-	• Performance improvements for customer orders and customer transactions. This feature has been made as mandatory since 10.0.28 release. 
-	• Enable enhanced async customer creation
-	• Enable asynchronous creation for customer addresses
+- Performance improvements for customer orders and customer transactions. This feature has been made as mandatory since 10.0.28 release. 
+- Enable enhanced async customer creation
+- Enable asynchronous creation for customer addresses
 
 Refer to **[Async mode frequently asked questions](/commerce/async-mode-faq.md)** for any questions related to troubleshooting. 
 
