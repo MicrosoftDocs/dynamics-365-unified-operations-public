@@ -4,7 +4,7 @@
 title: Create email templates for transactional events 
 description: This article describes how to create, upload, and configure email templates for transactional events in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 12/10/2021
+ms.date: 08/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -121,7 +121,29 @@ The *order cancellation* notification type is triggered when an order is cancele
 
 ### Customer created
 
-The *customer created* notification type is triggered when a new customer entity is created in Commerce headquarters.
+The *customer created* notification type is triggered when a new customer entity is created in Commerce headquarters. 
+
+To enable customer created notifications, in Commerce headquarters go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters \> General**. In the **Email notification profile** drop-down list, select an email notification profile that contains the customer created notification type. 
+
+By default, customer created events are uploaded to headquarters with the **Synchronize customers and channel requests** batch job. If you want to use a real-time service call to send these events, set the email ID of the customer created template to **newCust**. However, this is not recommended because real-time service calls are "fire and forget" calls and do not have the fallback or retry logic that batch jobs provide.
+
+> [!NOTE] 
+> When you enable customer created notifications, customers that are created in all channels within the legal entity will receive a customer created email. Currently, customer created notifications can't be limited to a single channel.  
+
+When invoked through the batch job, the customer created notification type supports the following placeholder.
+
+| Placeholder name | Description                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| customername     | The first and last name of the customer who created an account. |
+
+When invoked through a real time service call, the customer created notification type supports the following placeholders.
+
+| Placeholder name | Description                                                      |
+| ---------------- | ------------------------------------------------------------ |
+| Name             | The first and last name of the customer who created an account. |
+| Email            | The email address of the customer who created an account.    |
+| Phone            | The phone number of the customer who created an account.      |
+| Url              | The URL provided by the customer when they created the account. |
 
 ### B2B prospect approved
 
