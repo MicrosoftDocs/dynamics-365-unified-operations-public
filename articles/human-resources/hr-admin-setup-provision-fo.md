@@ -102,8 +102,8 @@ By default, the global administrator who created the environment has access to i
 ## Additional resources
 You can learn more about how to use and manage projects in LCS on the finance and operations app infrastructure by using the following resources:
 
-- [Lifecycle Services resources](/fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
-- [Lifecycle Services (LCS) user guide](/fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
+- [Lifecycle Services resources](../fin-ops-core/dev-itpro/lifecycle-services/lcs.md)
+- [Lifecycle Services (LCS) user guide](../fin-ops-core/dev-itpro/lifecycle-services/lcs-user-guide.md)
 - [Self-service deployment overview](../fin-ops-core/dev-itpro/deployment/infrastructure-stack.md)
 - [Database movement operations home page](../fin-ops-core/dev-itpro/database/dbmovement-operations.md)
 
