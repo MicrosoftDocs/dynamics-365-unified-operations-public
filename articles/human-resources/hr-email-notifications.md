@@ -58,7 +58,7 @@ To create a new email ID template:
 
 To send an email to a new hire who hasn't started yet:
 1. Go to **Benefits** workspace.
-2. Select the tile for the group of employees to send email.
+2. Select the tile for the group of employees to send email to.
 3. Click **Send email**.
 4. Select the employees that you want to email.
 5. Click **Send email**.
@@ -68,9 +68,9 @@ To send an email to a new hire who hasn't started yet:
 You can check the email message and status through the employee’s **Worker benefit** page or using the **Benefits email history** button from the **Links** section. You can also send the email using the **Worker benefit plan** page.  
  
 To see the **Benefits email history**, go to **Benefits** workspace, click on **Links** > **Benefits email history**.   
-You can view the complete email history for **Benefits emails** sent. You can click on **Show message** on the task bar to review the content of the email.  
+View the complete email history for **Benefits emails** sent. Click on **Show message** on the task bar to review the content of the email.  
 
-8. Click **Worker**, 
+8. Click **Worker**. 
 9. Go to the **Worker benefit plan** page. From this page, you can **Send email** and **Benefits email history**. You can send email to this specific worker and check the email history for them.  
 10. There are different tiles on the **Workspace**. You can send emails by selecting the related template. If the emails have been sent already, for example, if the new hire enrollment emails have been sent, select the **New hire not started** tile, and **Send reminder** link. Select a reminder template and set the title of the notification as a first, second or third reminder  
 11. Click on the action center, you will see the alert on the success/failure status on emails sent.  
