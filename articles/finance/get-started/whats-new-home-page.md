@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 
 description: This article points to topics that describe the new and changed features in each release of Dynamics 365 Finance
 author: kfend
-ms.date: 01/31/2022
+ms.date: 08/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -34,6 +34,7 @@ To see what's new or changed in each release of Dynamics 365 Finance, see the fo
 
 | Version | Build number | Auto-update availability | Learn more |
 |---------|--------------|---------------|-------------|
+| 10.0.29 |  10.0.1326   | October 2022  | [What's new and changed in Dynamics 365 Finance version 10.0.29](whats-new-changed-10-0-29.md) |
 | 10.0.28 |  10.0.1264   | July 2022     | [What's new and changed in Dynamics 365 Finance version 10.0.28](whats-new-changed-10-0-28.md) |
 | 10.0.27 |  10.0.1227   | July 2022     | [What's new and changed in Dynamics 365 Finance version 10.0.27](whats-new-changed-10-0-27.md) |
 | 10.0.26 |  10.0.1192   | May 2022      | [What's new and changed in Dynamics 365 Finance version 10.0.26](whats-new-changed-10-0-26.md) |
