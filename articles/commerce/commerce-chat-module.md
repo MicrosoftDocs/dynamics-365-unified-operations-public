@@ -4,7 +4,7 @@
 title: Commerce Chat for online shoppers with Dynamics 365 Omnichannel Customer Service
 description: This article describes the commerce chat feature for online shoppers by integrating Dynamics 365 Commerce with Dynamics 365 Omnichannel Customer Service.
 author: gvrmohanreddy
-ms.date: 07/29/2022
+ms.date: 08/02/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
