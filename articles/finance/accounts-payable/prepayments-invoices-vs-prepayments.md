@@ -84,7 +84,7 @@ To record the vendor’s prepayment invoice, go to the **Vendor invoice** page b
 
 When the prepayment invoice is posted, the vendor balance and prepayment account will be updated. The **Prepayment application** value on the prepayment definition contained on the purchase order will also be updated. The default financial dimension entries for the posted prepayment voucher will be taken from the header information on the purchase order.
 
-When a vendor prepayment is created, the financial dimensions of the prepayment invoice are copied from purchase order header. If the **Lock financial dimensions on invoice lines on vendor prepayment invoice** feature on the **Feature management** page is turned on, the dimensions in the prepayment header or lines will not be updated. 
+If the **Lock financial dimensions on invoice lines on vendor prepayment invoice** feature on the **Feature management** page is turned on, the dimensions in the prepayment header or lines can't be updated. 
 
 ## Post and settle payments for the prepayment invoice
 Next, the prepayment invoice will be paid from the **Payment journal** page. To access payment journals, click **Accounts payable \> Journals \> Payments \> Payment journal**. After posting the settlement of the payment to the prepayment invoice, the purchase order’s **Prepayment application remaining** value will be updated.
