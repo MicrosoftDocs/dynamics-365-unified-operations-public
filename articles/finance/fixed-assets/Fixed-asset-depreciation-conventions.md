@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fixed asset depreciation conventions
-description: This topic describes depreciation conventions for fixed assets.
+description: This article describes depreciation conventions for fixed assets.
 author: moaamer
 ms.date: 09/04/2020
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: AssetDepreciationProfile
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 13891
 ms.assetid: 36d1112d-921c-4fff-abe0-0ff2429848d3
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes depreciation conventions for fixed assets. Depreciation conventions are used to determine when and how depreciation is calculated for both the year when the fixed asset is acquired and the year when the fixed asset is disposed of.
+This article describes depreciation conventions for fixed assets. Depreciation conventions are used to determine when and how depreciation is calculated for both the year when the fixed asset is acquired and the year when the fixed asset is disposed of.
 
 Depreciation conventions can be assigned to the setup for a fixed asset group book. To view or assign the depreciation convention, in the setup area of fixed assets, select **Fixed asset** groups. Select the **Books** button. In this case, the depreciation conventions that are assigned are used as default values when fixed asset books are created. Depreciation conventions can also be set on an individual fixed asset book. To do this, select **Books** in the setup area of fixed assets, and then select the **Fixed assets groups** button.
 

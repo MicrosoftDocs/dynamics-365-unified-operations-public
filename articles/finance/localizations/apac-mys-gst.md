@@ -2,7 +2,7 @@
 # required metadata
 
 title: Malaysian Goods and Services Tax (GST)/Sales and Service Tax (SST)
-description: This topic provides information about how to set up Goods and Services Tax (GST) and Sales and Service Tax (SST) for a Malaysian company.
+description: This article provides information about how to set up Goods and Services Tax (GST) and Sales and Service Tax (SST) for a Malaysian company.
 author: mrolecki
 ms.date: 08/03/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information that will help you set up Goods and Services Tax (GST) and Sales and Service Tax (SST) for a Malaysian company. It also explains the functionality that is provided for GST/SST.
+This article provides information that will help you set up Goods and Services Tax (GST) and Sales and Service Tax (SST) for a Malaysian company. It also explains the functionality that is provided for GST/SST.
 
 GST is a multi-stage tax on domestic consumption. GST is charged on all taxable supplies of goods and services in Malaysia, except those goods and services that are explicitly exempted. GST is also charged on the importation of goods and services into Malaysia.
 

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Demo data overview
-description: This topic provides an overview of the demo data.
+description: This article provides an overview of the demo data.
 author: sericks007
-ms.date: 09/20/2019
+ms.date: 08/01/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the demo data that is available.
+This article provides an overview of the demo data that is available.
 
 Demo data is the base data set that is released for implementation support and demonstration purposes. The current demo data set supports the following verticals:
 
@@ -94,7 +94,7 @@ The vendor payments analytics can be viewed on the **Vendor payments** workspace
 
 The Purchase performance analytics can be viewed on the **Purchase spend analysis** page from the Procurement and sourcing module. To view the analytics, you need to refresh the Purchase cube aggregate measure on the **Entity Store** page.
 
-The Sales and profitability analytics can be viewed on the **Sales and profitability performance** page from the Sales and marketing module. To view the analytics, you need to refresh the Sales cube aggregate measure on the **Entity Store** page.
+The Sales and profitability analytics can be viewed on the **Sales and profitability performance** page from the Sales and marketing module. To view the analytics, you need to refresh the sales cube aggregate measure on the **Entity Store** page.
 
 The production performance analytics can be viewed on the **Production performance** page from the Production control module. To view the analytics, you need to refresh the Production cube aggregate measure on the **Entity Store** page.
 

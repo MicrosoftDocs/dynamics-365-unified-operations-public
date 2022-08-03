@@ -2,9 +2,9 @@
 # required metadata
 
 title: Electronic reporting (ER) destinations
-description: This topic provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
+description: This article provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
 author: nselin
-ms.date: 09/16/2021
+ms.date: 05/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-You can configure a destination for each Electronic reporting (ER) format configuration and its output component (a folder or a file). Users who have appropriate access rights can also modify destination settings at runtime. This topic explains ER destination management, the types of destinations that are supported, and security considerations.
+You can configure a destination for each Electronic reporting (ER) format configuration and its output component (a folder or a file). Users who have appropriate access rights can also modify destination settings at runtime. This article explains ER destination management, the types of destinations that are supported, and security considerations.
 
 ER format configurations usually contain at least one output component: a file. Typically, configurations contain multiple file output components of different types (for example, XML, TXT, XLSX, DOCX, or PDF) that are grouped into either a single folder or multiple folders. ER destination management lets you preconfigure what occurs when each component is run. By default, when a configuration is run, a dialog box appears that lets you save or open the file. The same behavior also occurs when you import an ER configuration and don't configure any specific destinations for it. After a destination is created for a main output component, that destination overrides the default behavior, and the folder or file is sent according to the destination's settings.
 
@@ -178,13 +178,23 @@ In versions of Finance **before version 10.0.18**, the PDF conversion option can
 
 ### Limitations
 
-The PDF conversion option is available only for cloud deployments.
+As of Finance **version 10.0.9**, the PDF conversion option is available only for cloud deployments. Starting in Finance version **10.0.27**, the PDF conversion option is available for any on-premises deployment that has [Internet connectivity](../user-interface/client-disconnected.md) enabled.
 
 The PDF document that is produced is limited to a maximum length of 300 pages.
 
-In Finance **version 10.0.9**, only landscape page orientation is supported in the PDF document that is produced from Excel output. In Finance **version 10.0.10 (May 2020) and later**, you can [specify the page orientation](#SelectPdfPageOrientation) of the PDF document that is produced from Excel output while you configure an ER destination.
+As of Finance **version 10.0.9**, only landscape page orientation is supported in the PDF document that is produced from Excel output. Starting in Finance **version 10.0.10**, you can [specify the page orientation](#SelectPdfPageOrientation) of the PDF document that is produced from Excel output while you configure an ER destination.
 
 Only the common system fonts of the Window operating system are used to convert output that contains no embedded fonts.
+
+### Resources
+
+Before Finance version 10.0.29, PDF conversion could be done only outside the current Finance instance. A generated file was sent out of Finance to the conversion service, and that service then returned the converted document. However, in version **10.0.29 and later**, in addition to the **Convert Electronic Reporting outbound documents from Microsoft Office formats to PDF** feature, you can enable the **Utilize application resources to perform CBD documents conversion from Word to PDF format** feature. This feature lets you convert generated Word documents to PDF format locally by using application server resources in the current Finance instance. 
+
+Here are the advantages of local PDF conversion when the **Utilize application resources to perform CBD documents conversion from Word to PDF format** feature is enabled:
+
+- The PDF document that is produced isn't [limited](#limitations) to a maximum number of pages.
+- The Word document that is converted can contain a [large number of content controls](https://fix.lcs.dynamics.com/Issue/Details?bugId=647877&dbType=3).
+- Internet connectivity isn't required in on-premises deployments.
 
 ### Use the PDF conversion option
 
@@ -235,7 +245,7 @@ On the **General** FastTab, in the **Send folder as** field, select one of the f
 - **Separate files** – Deliver every file of a generated zip file as an individual file.
 
     > [!NOTE]
-    > When you select **Separate files**, the generated output is collected in memory in a zipped state. Therefore, the maximum [file size limit](er-compress-outbound-files.md) is applied for zipped output when the real file size might exceed this limit. We recommend that you select this value when you expect the size of the generated output too be quite large.
+    > When you select **Separate files**, the generated output is collected in memory in a zipped state. Therefore, the maximum [file size limit](er-compress-outbound-files.md) is applied for zipped output when the real file size might exceed this limit. We recommend that you select this value when you expect the size of the generated output to be quite large.
 
 [![Configuring a destination for a Folder format component.](./media/er_destinations-set-unfolding-option.png)](./media/er_destinations-set-unfolding-option.png)
 

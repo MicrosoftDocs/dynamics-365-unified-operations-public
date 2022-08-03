@@ -2,7 +2,7 @@
 # required metadata
 
 title: Depreciation book upgrade overview
-description: This topic describes the current book functionality in Fixed assets. This functionality is based on the value model functionality that was available in earlier versions, but it also includes all the functionality that was previously provided only in depreciation books.
+description: This article describes the current book functionality in Fixed assets. This functionality is based on the value model functionality that was available in earlier versions, but it also includes all the functionality that was previously provided only in depreciation books.
 author: moaamer
 ms.date: 06/20/2017
 ms.topic: overview
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: ["221624", "intro-internal"]
 ms.assetid: cf434099-36f9-4b0f-a7c8-bed091e34f39
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the current book functionality in Fixed assets. This functionality is based on the value model functionality that was available in earlier versions, but it also includes all the functionality that was previously provided only in depreciation books. The value model functionality and depreciation book functionality have been merged into a single concept that is known as a book. Book functionality lets you use a single set of pages, inquiries, and reports for all your organization's fixed asset processes. This topic provides some things that you should consider before you upgrade. 
+This article describes the current book functionality in Fixed assets. This functionality is based on the value model functionality that was available in earlier versions, but it also includes all the functionality that was previously provided only in depreciation books. The value model functionality and depreciation book functionality have been merged into a single concept that is known as a book. Book functionality lets you use a single set of pages, inquiries, and reports for all your organization's fixed asset processes. This article provides some things that you should consider before you upgrade. 
 
 The upgrade process will move your existing setup and all existing transactions to the new book structure. Value models will remain as they currently are, as a book that posts to the general ledger. Depreciation books will be moved to a book that has the Post to general ledger option set to No. Depreciation book journal names will be moved to a general ledger journal name with the posting layer set to None. Depreciation book transactions will be moved to Fixed asset transactions.
 

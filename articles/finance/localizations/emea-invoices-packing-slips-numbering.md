@@ -2,7 +2,7 @@
 # required metadata
 
 title: Invoice and packing slip numbering for Latvia and Lithuania
-description: This topic explains how to set up number sequences for invoices and packing slips, and how to set up self-numbering ranges for documents.
+description: This article explains how to set up number sequences for invoices and packing slips, and how to set up self-numbering ranges for documents.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up number sequences for invoices and packing slips, and how to set up self-numbering ranges for documents.
+This article explains how to set up number sequences for invoices and packing slips, and how to set up self-numbering ranges for documents.
 
 For legal entities that have a primary address in Latvia or Lithuania, you can set up conditional numbering for invoices and packing slips that is based on the assigned user or user group.
 

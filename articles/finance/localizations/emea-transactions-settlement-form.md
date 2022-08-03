@@ -2,7 +2,7 @@
 # required metadata
 
 title: View transactions on settlement for Eastern Europe
-description: This topic provides information about the Transactions on settlement page for customers and vendors.
+description: This article provides information about the Transactions on settlement page for customers and vendors.
 author: EvgenyPopovMBS
 ms.date: 06/20/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the Transactions on settlement page for customers and vendors.
+This article provides information about the Transactions on settlement page for customers and vendors.
 
 Use the **Transactions on settlement** page to view information about complex settlement transactions for a customer or a vendor. This feature is available only for legal entities that have their primary address in Lithuania, Latvia, Estonia, Czech Republic, Hungary, or Poland. You can find the **Transactions on settlement** page at the following locations:
 

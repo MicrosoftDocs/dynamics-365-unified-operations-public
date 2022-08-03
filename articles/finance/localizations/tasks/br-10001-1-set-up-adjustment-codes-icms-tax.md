@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-In the Sistema Publico de Escrituração Digital (SPED) fiscal text file, record C197 includes information about any adjustments of Imposto sobre Circulação de Mercadorias e Serviços (ICMS) information on fiscal documents. These adjustments can occur because of deferral, suspension, differential of tax rates, anticipation, and other situations of exception in the ICMS tax. The adjustments require an adjustment code. Use this procedure to set up adjustment codes. This topic uses the BRMF demo company.
+In the Sistema Publico de Escrituração Digital (SPED) fiscal text file, record C197 includes information about any adjustments of Imposto sobre Circulação de Mercadorias e Serviços (ICMS) information on fiscal documents. These adjustments can occur because of deferral, suspension, differential of tax rates, anticipation, and other situations of exception in the ICMS tax. The adjustments require an adjustment code. Use this procedure to set up adjustment codes. This article uses the BRMF demo company.
 
 1. Go to **Fiscal books** > **Setup** > **Tax adjustment codes** > **ICMS, ICMS-ST, and ICMS-DIF adjustment codes**.
 2. Select **New**, and in the **Identification** field, type a value.

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Prepare your environment to interoperate with ID-porten and Altinn web services
-description: This topic explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
+description: This article explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
 author: liza-golub
-ms.date: 01/20/2022
+ms.date: 05/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -96,6 +96,9 @@ Application-specific parameters for the **VAT Declaration XML (NO)** and **VAT D
 | [VATSpecification_Lookup](#vat-specification) | The code list for further specification of VAT. | During the runtime of the report, this lookup field is used to find value from the enumerated list of values that the Norwegian Tax Administration requires, based on master data from Finance, and to report it in the `<spesifikasjon>` tag under the `<mvaSpesifikasjonslinje>` node. |
 | [StandardTaxCodes_Lookup](#standard-tax-code) | The VAT code that is provided by the Norwegian Tax Administration. | During the runtime of the report, this lookup field is used to find the standard tax code for the sales tax code that is used in sales tax posting in Finance, and to report it in the `<mvaKode>` tag of the report. |
 
+> [!NOTE]
+> We recommend that you enable the **Accelerate the ER labels storage** feature in the **Feature management** workspace. This feature helps improve network bandwidth utilization and overall system performance because, in most cases, ER labels of a single language are used when you work with a single ER configuration. The **Accelerate the ER labels storage** feature is available in the **Feature management** workspace as of Finance version 10.0.25. For more information about how to set up the parameters of an ER format for each legal entity, see [Performance](../../fin-ops-core/dev-itpro/analytics/er-design-multilingual-reports.md#performance).
+
 Follow these steps to set up the application-specific parameters for the **VAT Declaration XML (NO)** and **VAT Declaration Excel (NO)** ER formats.
 
 1. In the **Electronic reporting** workspace, select the **Reporting configurations** tile.
@@ -105,7 +108,7 @@ Follow these steps to set up the application-specific parameters for the **VAT D
 5. On the **Lookups** FastTab, select each lookup, and define appropriate conditions for it.
 6. On the **Conditions** FastTab, define which tax codes or other available criteria must correspond to a specific lookup result.
 
-    If conditions are defined on one line, the system generally applies them to a source tax transaction by using the **AND** operator. If conditions must be applied by using the **OR** operator, define them on separate lines. When a tax transaction from the reporting period meets a condition in the list, the value that is specified in the related **Result** column will be reported for the related document. More information about the setup of each lookup field is provided later in this topic.
+    If conditions are defined on one line, the system generally applies them to a source tax transaction by using the **AND** operator. If conditions must be applied by using the **OR** operator, define them on separate lines. When a tax transaction from the reporting period meets a condition in the list, the value that is specified in the related **Result** column will be reported for the related document. More information about the setup of each lookup field is provided later in this article.
 
 7. When you've finished setting up conditions, in the **State** field, select **Completed**. Then save the configuration.
 
@@ -203,8 +206,7 @@ The following table shows the lookup results for **VATSpecification_Lookup**.
 
 > [!IMPORTANT]
 > It's important that you add **Annet** (**Other**), which must collect data from other cases as the last item in the list. **Line value** must be the last value in your table. In all the other columns, select **\*Not blank\***. Because in some cases, the **Item sales tax group** and **Sales tax group** fields can be empty in tax transactions, add one more line with the **Annet** (**Other**) lookup result value, **\*Blank\*** in **Item sales tax group**, and **Sales tax group** columns and **\*Not blank\*** in all the other columns.
-
-> [!IMPORTANT]
+>
 > Values from *Specification* enumerated list of values must be used with specific *Standard tax codes* only. Make sure that your **VATSpecification_Lookup** setup is compatible with applicability rules defined by Norwegian Tax Administration provided in documentation on [Information models, XSD and encoding](https://skatteetaten.github.io/mva-meldingen/english/informasjonsmodell/#encoding).
 
 ### <a id="standard-tax-code"></a>Standard tax codes (StandardTaxCodes_Lookup)
@@ -259,6 +261,15 @@ The following table shows the lookup results for **StandardTaxCodes_Lookup**.
 > - **91** – Purchases of emission allowances and gold/Deductions on purchases of emission allowances and gold. 
 >
 > The reverse charge mechanism enables a document to be posted that has two tax transactions: one where the direction is **Sales tax payable**, and one where it's **Sales tax receivable**. Those transactions are then reported in the VAT return as two lines.
+>
+> Purchases of goods and services from abroad without deduction entitlements that are subject to the following `mvaKode` values must be reported in the VAT return by using one line where the direction is **Sales tax payable**. We recommend that you post these documents by using the [reverse charge mechanism for the VAT/GST scheme](emea-reverse-charge.md) where the sales tax code that is set up with a positive tax rate has a non-deductible percentage that equals 100.
+>
+> - **82** – Purchases of goods from abroad without deduction entitlement (standard rate).
+> - **84** – Purchases of goods from abroad without deduction entitlement (middle rate).
+> - **87** – Purchases of services from abroad without deduction entitlement (standard rate).
+> - **89** – Purchases of services from abroad without deduction entitlement (low rate). 
+>
+> The reverse charge mechanism enables a document to be posted with two tax transactions: one where the direction is **Sales tax payable**, and one where it's **Sales tax receivable**. The transaction where the direction is **Sales tax payable** is then reported in the VAT return. The transaction where the direction is **Sales tax receivable** isn't reported in the VAT return.
 
 ## <a id="em-setup"></a>Import a package of data entities that includes a predefined EM setup
 
@@ -328,7 +339,7 @@ To prepare Finance to report a VAT return for a VAT group, make sure that your b
 - The **Settle and post sales tax** job is completed in each subsidiary legal entity.
 - Application-specific parameters for the VAT return format are set up for each subsidiary legal entity. The setup configurations are completed for both the **VAT Declaration XML (NO)** format and the **VAT Declaration Excel (NO)** format.
 - A VAT return in Excel format is correctly generated in each subsidiary legal entity.
-- One legal entity is set up for interoperation with Altinn according to the information in this topic.
+- One legal entity is set up for interoperation with Altinn according to the information in this article.
 - Sales tax settlement periods for the **NO VAT Collect sales tax payments** action are defined for each subsidiary legal entity.
 
 To enable Finance to report VAT returns from multiple legal entities in the same system database, you must enable the **Cross-company queries for the populate records actions** feature in the **Feature management** workspace. 
@@ -351,7 +362,7 @@ The **NO VAT return** processing lets you collect sales tax payment transactions
 
     If you don't set the **Settlement period** field, all tax transactions from the selected legal entity will be considered for reporting.
 
-If your company must report a VAT return as a VAT group, make sure that all the conditions that are described in the [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vat-group) section of this topic are met. Then follow these steps to set up the sales tax settlement period for all the legal entities that are included in the VAT group.
+If your company must report a VAT return as a VAT group, make sure that all the conditions that are described in the [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vat-group) section of this article are met. Then follow these steps to set up the sales tax settlement period for all the legal entities that are included in the VAT group.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records**.
 
@@ -456,7 +467,7 @@ Follow these steps to set up a URL that is used in ID-porten.
 2. In the **Base URL** field, enter one of the following internet addresses:
 
     - `https://oidc-ver2.difi.no/idporten-oidc-provider` to interoperate with the *sandbox* endpoint of ID-porten
-    - `https://oidc.difi.no/idporten-oidc-provider/` to interoperate with the *production* endpoint of ID-porten
+    - `https://oidc.difi.no/idporten-oidc-provider` to interoperate with the *production* endpoint of ID-porten
 
     > [!IMPORTANT]
     > For actual internet addresses, go to <https://docs.digdir.no/oidc_func_wellknown.html>.
@@ -470,7 +481,14 @@ Follow these steps to set up a URL that is used in ID-porten.
 Follow these steps to set up an internet address that is used by Altinn web services.
 
 1. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web applications**, and select the **NO Altinn** web application in the list on the left.
-2. In the **Base URL** field, enter `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten`.
+2. In the **Base URL** field, enter one of the following internet addresses:
+
+    - `https://platform.tt02.altinn.no/authentication/api/v1/exchange/id-porten` to interoperate with the *sandbox* endpoint of Altinn
+    - `https://platform.altinn.no/authentication/api/v1/exchange/id-porten` to interoperate with the *production* endpoint of Altinn
+
+    > [!IMPORTANT]
+    > For actual internet addresses, go to <https://skatteetaten.github.io/mva-meldingen/english/test/#production-environment>.
+
 3. Go to **Tax** \> **Setup** \> **Parameters** \> **Electronic messages** \> **Web service settings**, and enter the following information to define the internet address for web services to interoperate with the *sandbox APIs* that the Norwegian Tax Administration provides.
 
     | Web service name | Internet address |
@@ -481,7 +499,7 @@ Follow these steps to set up an internet address that is used by Altinn web serv
     | NO Altinn PUT JSON | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
     | NO Altinn PUT XML | `https://skd.apps.tt02.altinn.no/skd/mva-melding-innsending-etm2/instances` |
     | NO Altinn GET attachments | Leave this field blank. |
-    | NO Validate VAT return | `https://mp-test.sits.no/api/mva/grensesnittstoette/mva-melding/valider` |
+    | NO Validate VAT return | `https://idporten-api-sbstest.sits.no/api/mva/grensesnittstoette/mva-melding/valider` |
 
 For *production* interoperation with web services that the Norwegian Tax Administration provides, use the following internet addresses.
 

@@ -53,7 +53,7 @@ Product dimension values for the size, color, and style dimensions can be create
 
 Product dimension values for the configuration dimension are typically created by using either the Product configurator or the Dimension-based configurator. 
 
-Product versions are usually created for specific versions as the product evolves during its lifecycle. Product versions are covered in detail later in this topic.
+Product versions are usually created for specific versions as the product evolves during its lifecycle. Product versions are covered in detail later in this article.
 
 Product dimensions can also be created and maintained on the **Product dimensions** page, which can be accessed from the following locations:
 

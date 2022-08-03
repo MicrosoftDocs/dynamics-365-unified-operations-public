@@ -2,7 +2,7 @@
 # required metadata
 
 title: Distributed order management (DOM)
-description: This topic describes the distributed order management (DOM) functionality in Dynamics 365 Commerce.
+description: This article describes the distributed order management (DOM) functionality in Dynamics 365 Commerce.
 author: josaw1
 ms.date: 02/08/2022
 ms.topic: index-page
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
+This article describes the distributed order management (DOM) functionality in Microsoft Dynamics 365 Commerce.
 
 DOM is an omnichannel order fulfillment optimization solution that helps maximize order fulfillment in a supply chain network. DOM helps you ensure that products are delivered to your customers in the correct quantities, from the correct sources, at the correct times. DOM can also help you maximize profits, minimize costs, and meet service-level requirements.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Device activation of a customized Modern POS
-description: This topic explains how to configure Microsoft Dynamics 365 Commerce Headquarters when a customized application is used.
+description: This article explains how to configure Microsoft Dynamics 365 Commerce Headquarters when a customized application is used.
 author: jashanno
 ms.date: 02/08/2021
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: tfehr
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global 
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jashanno
@@ -28,11 +28,11 @@ ms.dyn365.ops.version: Application update 3
 
 [!INCLUDE [banner](../includes/banner.md)]
 
-This topic explains how to configure Microsoft Dynamics 365 Commerce Headquarters so that device activation works correctly when a customized Modern POS application is used. It describes the steps that are required in order to obtain the customized reply address and enter that value in Headquarters.
+This article explains how to configure Microsoft Dynamics 365 Commerce Headquarters so that device activation works correctly when a customized Modern POS application is used. It describes the steps that are required in order to obtain the customized reply address and enter that value in Headquarters.
 
 Modern POS is a client-side component for Microsoft Dynamics 365 Commerce. To use the POS, you must perform device activation. Device activation uses Microsoft Azure Active Directory (Azure AD) to authenticate users. Enhanced functionality in this area has modified the device activation flow to take better advantage of the Web Account Manager service. As part of this enhancement, there is now enhanced security for the authentication approval process. This enhanced security requires additional configuration in Headquarters when the POS is customized, because a specific, unique value is now required for the callback URI. (The callback URI is also known as the redirect URI.)
 
-By default, Modern POS is already registered for this callback URI. However, when customized, the callback URI is changed. Therefore, it must be correctly configured so that it works again. This topic describes the steps that you must follow to complete this configuration. If this configuration isn't completed, you receive an error message when you try to perform device activation in the customized POS application. This error message resembles the following example:
+By default, Modern POS is already registered for this callback URI. However, when customized, the callback URI is changed. Therefore, it must be correctly configured so that it works again. This article describes the steps that you must follow to complete this configuration. If this configuration isn't completed, you receive an error message when you try to perform device activation in the customized POS application. This error message resembles the following example:
 
 > AADSTS50011: The reply address 'ms-appx-web://Microsoft.AAD.BrokerPlugin/[...]' does not match the reply addresses configured for the application.
 
@@ -74,7 +74,7 @@ The following steps are required so that device activation works correctly when 
 12. Select the **Overview** tab on the leftmost menu. Verify that the **Application ID URI** value matches what was copied back in step seven.
 
 > [!NOTE]
-> Do not close the web browser window because you will use it again later in this topic.
+> Do not close the web browser window because you will use it again later in this article.
 
 ### Update the Modern POS configuration
 
@@ -94,7 +94,7 @@ The following steps are required so that device activation works correctly when 
 
     - **Name:** Enter **Customized Retail Modern POS**. (You can enter any other unique value, but be sure to make a note of the name entered.)
     - **Supported account types:** Select the value **Accounts in this organization directory only** unless this application registration will be used across multiple tenants, which would require the next value **Accounts in any organizational directory**. Note that this selection is not typical.
-    - **Redirect URI:** The initial drop-down value should be changed to **Public client/native (mobile & desktop)**. The value to enter for this type of Redirect URI is the value shown at the beginning of this topic in the Modern POS error message received. Enter the reply address (redirect URI) that corresponds to that error message. The value will start with **ms-appx-web://Microsoft.AAD.BrokerPlugin/[...]**.
+    - **Redirect URI:** The initial drop-down value should be changed to **Public client/native (mobile & desktop)**. The value to enter for this type of Redirect URI is the value shown at the beginning of this article in the Modern POS error message received. Enter the reply address (redirect URI) that corresponds to that error message. The value will start with **ms-appx-web://Microsoft.AAD.BrokerPlugin/[...]**.
 
         > [!NOTE]
         > - You can also see the reply address (redirect URI) in Event Viewer in Windows, under **Microsoft-Dynamics-Commerce-ModernPos/Operational**. The event ID is 40619. The error message will start with the following text: "This UWP application was assigned the following callback URI to be used while interacting with Azure AD: ms-appx-web://Microsoft.AAD.BrokerPlugIn/S-1-15-2-[...]"

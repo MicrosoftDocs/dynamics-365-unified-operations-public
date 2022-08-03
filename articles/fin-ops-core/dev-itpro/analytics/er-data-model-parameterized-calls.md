@@ -2,7 +2,7 @@
 # required metadata
 
 title: Support parameterized calls of ER data models
-description: This topic explains how to implement parameterized calls of Electronic reporting (ER) data models.
+description: This article explains how to implement parameterized calls of Electronic reporting (ER) data models.
 author: NickSelin
 ms.date: 03/14/2022
 ms.topic: article
@@ -165,7 +165,7 @@ You can specify every parameter of a data model field for which the argument can
 > [!NOTE]
 > The default value for the parameter of a data model field isn't supported. If you add a parameter to a field in a data model, and the version of that data model has already been released and published, you must [rebase](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) all corresponding model mappings and formats to the new version of this model, because this data model change isn't backward compatible.
 
-You can configure parametrized data model fields to make model mapping calls format-specific. This approach can help you reduce the number of model mappings that must be configured for many formats of a single data model. You can also use this approach to improve the execution performance of your formats and reduce the time that is required to generate business documents. To learn more about this feature, complete the example in this topic.
+You can configure parametrized data model fields to make model mapping calls format-specific. This approach can help you reduce the number of model mappings that must be configured for many formats of a single data model. You can also use this approach to improve the execution performance of your formats and reduce the time that is required to generate business documents. To learn more about this feature, complete the example in this article.
 
 ## Example: Use parameterized calls of ER data models
 

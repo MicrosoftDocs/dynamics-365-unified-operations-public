@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial reason feature extension
-description: This topic provides information about the extension to the Financial reason feature.
+description: This article provides information about the extension to the Financial reason feature.
 author: liza-golub
 ms.date: 11/01/2021
 ms.topic: article
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the **Enable extended support of Financial reason code** feature that extends the **Financial reason** feature. This feature extension can be used globally in legal entities that have a primary address in any country or region.
+This article provides information about the **Enable extended support of Financial reason code** feature that extends the **Financial reason** feature. This feature extension can be used globally in legal entities that have a primary address in any country or region.
 
 In general, the **Financial reason** feature lets you set up a predefined list of financial reasons that can be used during document registration and posting in the system.
 

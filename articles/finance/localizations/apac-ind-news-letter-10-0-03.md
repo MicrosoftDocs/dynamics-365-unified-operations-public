@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed for India GST in 10.0.03 (June 2019)
-description: This topic describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.03.
+description: This article describes new or changed functionality for India GST features released in Dynamics 365 Finance version 10.0.03.
 author: prabhatb
 ms.date: 06/15/2020
 ms.topic: article
@@ -29,11 +29,11 @@ ms.dyn365.ops.version: 10.0.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.03 for India GST localization. 
+This article includes a summary of the new features and critical bug fixes released in Dynamics 365 Finance version 10.0.03 for India GST localization. 
 
 ## New features and updates
 ### GST solution document is updated 
-Updates have been made to the following topic, [India Goods and Services Tax (GST) overview](apac-ind-gst.md).
+Updates have been made to the following article, [India Goods and Services Tax (GST) overview](apac-ind-gst.md).
 
 ### GSTR report performance improvement
 **GSTR** report generation time reduced 30% because of the replacement of line-by-line data fetch with dataset operation.
@@ -42,7 +42,7 @@ Updates have been made to the following topic, [India Goods and Services Tax (GS
 In addition to deleting one or all records, you can now delete multiple selected records.
 
 ### Enable tax calculation based on the accounting currency for import and export orders
-For more information about calculating tax in the accounting currency for import and export orders, see [What's new or changed in Finance and Operations version 10.0.3 (June 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-3.md#calculate-tax-in-accounting-currency-for-importexport-order).
+For more information about calculating tax in the accounting currency for import and export orders, see [What's new or changed in finance and operations version 10.0.3 (June 2019)](../../fin-ops-core/fin-ops/get-started/whats-new-changed-10-0-3.md#calculate-tax-in-accounting-currency-for-importexport-order).
 
 ![Tax setup parameters, currency type.](media/GST-tax-based-accounting-currency-2-10-0-03.png	)
 

@@ -2,14 +2,14 @@
 # required metadata
 
 title: Local reports and primary forms in Accounts receivable and Accounts payable
-description: This topic explains how to work with the primary forms that are used in the Russian Federation and supported by Microsoft Dynamics 365.
+description: This article explains how to work with the primary forms that are used in the Russian Federation and supported by Microsoft Dynamics 365.
 author: andosip
 ms.date: 01/21/2022
 ms.topic: article
 audience: 
 ms.reviewer: kfend 
 ms.search.region: Global
-ms.author: v-aosipov
+ms.author: anasyash
 ms.search.validFrom: 
 ---
 
@@ -17,7 +17,7 @@ ms.search.validFrom:
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to work with the primary forms that are used in the Russian Federation and supported by Microsoft Dynamics 365. Here is a list of the supported primary forms:
+This article explains how to work with the primary forms that are used in the Russian Federation and supported by Microsoft Dynamics 365. Here is a list of the supported primary forms:
 
 - [Invoices](#invoices)
   - M-15

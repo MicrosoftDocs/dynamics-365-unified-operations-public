@@ -2,7 +2,7 @@
 # required metadata
 
 title: Business events and workflow approvals
-description: This topic explains how to use Microsoft Power Automate to configure and consume a workflow business event for purchase requisition approval.
+description: This article explains how to use Microsoft Power Automate to configure and consume a workflow business event for purchase requisition approval.
 author: Sunil-Garg
 ms.date: 11/13/2019
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -27,9 +27,9 @@ ms.dyn365.ops.version: 2019-6-30
 # Business events and workflow approvals
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to use Microsoft Power Automate to configure and consume a workflow business event for purchase requisition approval.
+This article explains how to use Microsoft Power Automate to configure and consume a workflow business event for purchase requisition approval.
 
-To complete this topic, you must be running Microsoft Dynamics 365 for Finance and Operations version 10.0.2 (May 2019) with platform update 26 or later.
+To complete this article, you must be running Microsoft Dynamics 365 Finance version 10.0.2 (May 2019) with platform update 26 or later.
 
 ## Scenario overview
 
@@ -49,7 +49,7 @@ The following illustration shows the high-level process that you must configure 
 1. Sign in to the Power Automate portal.
 2. Select an existing environment where you have the right to create a flow resource. The **(default)** environment is available to all companies.
 3. Select **New \> Create from blank**.
-4. Search for **Dynamics 365 for Finance and Operations**, and select the connector.
+4. Search for **Dynamics 365 Finance**, and select the connector.
 5. A new trigger is created. This trigger is named **When a Business Event occurs**. Select it.
 6. Select the environment instance that has these characteristics: 
 
@@ -94,7 +94,7 @@ Again, you can use your own email address in the **Assigned to** field for demo 
 
     <img alt="Microsoft Power Automate approval" src="../../media/BEF-Howto-workflow-12.png" width="70%">
 
-16. Next, you must complete the workflow approval by using the outcome of the approval step. Still in the **Yes** container, add a new **Finance and Operations Execute Action** step, and choose the **WorkflowWorkitem-complete** action and the **WorkflowWorkitemInstanceID** parameter. Then fill in the rest of the parameters from the approval outputs. As a minimum the outcome section with Approval outcome and the comment section with the approver's responses. Because the approval step can support multiple approvers, the response output is an array. Therefore, as soon as you select the output **Reponses** as an input for the comment section, Power Automate automatically embeds your action in an **Apply to each** container as shown below.
+16. Next, you must complete the workflow approval by using the outcome of the approval step. Still in the **Yes** container, add a new **finance and operations Execute Action** step, and choose the **WorkflowWorkitem-complete** action and the **WorkflowWorkitemInstanceID** parameter. Then fill in the rest of the parameters from the approval outputs. As a minimum the outcome section with Approval outcome and the comment section with the approver's responses. Because the approval step can support multiple approvers, the response output is an array. Therefore, as soon as you select the output **Reponses** as an input for the comment section, Power Automate automatically embeds your action in an **Apply to each** container as shown below.
 
     <img alt="workitem complete action" src="../../media/BEF-Howto-workflow-13.png" width="70%">
 

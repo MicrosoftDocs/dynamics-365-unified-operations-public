@@ -15,7 +15,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -44,7 +44,7 @@ Before you can use the *Wave template grouping* feature, it must be turned on in
 To make wave template grouping available, follow these steps to set up your [wave template](tasks/configure-wave-processing.md).
 
 1. Go to **Warehouse management \> Setup \> Waves \> Wave templates**.
-1. In the left pane, select the wave template to set up. If you're preparing to work through the scenario later in this topic by using demo data, select the **62 Shipping default** template.
+1. In the left pane, select the wave template to set up. If you're preparing to work through the scenario later in this article by using demo data, select the **62 Shipping default** template.
 1. Select **Edit** to put the page into edit mode.
 1. On the **General** FastTab, set the following values:
 
@@ -79,7 +79,7 @@ This section provides a script that you can work through to learn what this feat
 
 ### Make sample data available
 
-To work through this scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
+To work through this scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
 
 You can also use this scenario as guidance for using the feature when you work on a production system. However, in that case, you must substitute your own values, and you might be missing some types of required records that the standard demo data provides.
 
@@ -87,7 +87,7 @@ You can also use this scenario as guidance for using the feature when you work o
 
 This scenario shows how to use wave template grouping to automatically create multiple waves, based on grouping criteria that are defined in a wave template. In this scenario, the wave template is set up in the system to create one wave per carrier service.
 
-Before you begin, prepare your wave template as described in the [Set a wave template to use wave template grouping](#set-up-template) section earlier in this topic. If you will be working with demo data for this scenario, be sure to use the demo data values that are suggested in that procedure. This setup will group your waves according to the carrier service that is set for each sales order.
+Before you begin, prepare your wave template as described in the [Set a wave template to use wave template grouping](#set-up-template) section earlier in this article. If you will be working with demo data for this scenario, be sure to use the demo data values that are suggested in that procedure. This setup will group your waves according to the carrier service that is set for each sales order.
 
 #### Create sales order 1
 

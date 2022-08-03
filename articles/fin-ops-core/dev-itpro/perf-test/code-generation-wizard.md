@@ -1,6 +1,6 @@
 ---
 title: Acceptance test library Code generation wizard
-description: This topic provides information about the Code generation wizard for the Acceptance test library.
+description: This article provides information about the Code generation wizard for the Acceptance test library.
 author: MichaelFruergaardPontoppidan
 ms.date: 03/27/2019
 ms.topic: article
@@ -67,7 +67,7 @@ Follow these steps to create the `AtlQuery` class by using the **Code generation
 
 ### Additional optional steps
 
-When you create the `AtlQuery` class, you can also add a `query` method to the `AtlData` class that returns an instance of the `AtlQuery` class that you created earlier in this topic.
+When you create the `AtlQuery` class, you can also add a `query` method to the `AtlData` class that returns an instance of the `AtlQuery` class that you created earlier in this article.
 
 ## Create the AtlSpec class by using the wizard
 
@@ -81,7 +81,7 @@ Follow these steps to create the `AtlSpec` class by using the **Code generation*
 
 ### Additional optional steps
 
-Add a `spec` method to the data class that returns an instance of the `AtlSpec` class that you created earlier in this topic.
+Add a `spec` method to the data class that returns an instance of the `AtlSpec` class that you created earlier in this article.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

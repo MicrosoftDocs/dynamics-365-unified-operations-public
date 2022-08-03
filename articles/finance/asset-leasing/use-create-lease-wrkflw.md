@@ -2,7 +2,7 @@
 # required metadata
 
 title: Use lease approval workflows
-description: This topic explains how to use workflows to approve asset leases, and how to track the status and history of the workflows.
+description: This article explains how to use workflows to approve asset leases, and how to track the status and history of the workflows.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: WorkflowTableListPageRnr
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to use workflows to approve asset leases, and how to track the status and history of the workflows. Workflows help bring consistency to the management of lease approvals by providing a standard set of approval steps and assigning specific users who approve each step of the process. An approver can approve a lease, reject it, request a change to it, or assign it to another user for approval. Workflows can also bring more visibility into the approval process by letting you track their status and history. Additionally, you can view a centralized worklist that lists the tasks and approvals that are assigned to specific approvers.
+This article explains how to use workflows to approve asset leases, and how to track the status and history of the workflows. Workflows help bring consistency to the management of lease approvals by providing a standard set of approval steps and assigning specific users who approve each step of the process. An approver can approve a lease, reject it, request a change to it, or assign it to another user for approval. Workflows can also bring more visibility into the approval process by letting you track their status and history. Additionally, you can view a centralized worklist that lists the tasks and approvals that are assigned to specific approvers.
 
 Before you use this procedure, make sure that at least on lease approval workflow has been created. If no workflow exists, create one. For information about how to set up a workflow, see [Set up lease approval workflows](set-up-lease-wrkflw.md).
 

@@ -1,14 +1,14 @@
 ---
 title: Sealed bidding for RFQs
-description: This topic describes how to set up sealed bidding to keep vendor bid replies secret until they are unsealed by purchasing personnel.
-author: Henrikan
+description: This article describes how to set up sealed bidding to keep vendor bid replies secret until they are unsealed by purchasing personnel.
+author: GalynaFedorova
 ms.date: 08/02/2021
 ms.topic: article
 ms.search.form:
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
 ---
@@ -143,7 +143,7 @@ The process of creating an RFQ case for sealed bidding is almost the same as the
 RFQ cases for sealed bidding must have a **Bid type** value of *Sealed*. There are three ways to assign this value to an RFQ case:
 
 - Set the value directly on the RFQ case after you create it.
-- Define sealed bidding as the default bid type for all RFQ cases in Procurement and sourcing parameters. (See the [Set the default bid type](#set-default-bid-type) section earlier in this topic.)
+- Define sealed bidding as the default bid type for all RFQ cases in Procurement and sourcing parameters. (See the [Set the default bid type](#set-default-bid-type) section earlier in this article.)
 - When you create a new RFQ case, select a solicitation type that is set up for sealed bidding. (See the [Set the default bid type](#set-default-bid-type) section.)
 
 For sealed bidding, the RFQ case's **Expiration date and time** value establishes when the submitted bids can be unsealed. The **Expiration date and time** value on each line will match the value on the header.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: MICROSOFT PREVIEW SOFTWARE LICENSE TERMS
-description: Full description that appears in the search results. Often the first paragraph of your topic.
+description: Full description that appears in the search results. Often the first paragraph of your article.
 author: ShellyBakke
 ms.date: 04/18/2019
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ROBOTS: NOINDEX, NOFOLLOW 
 ms.reviewer: sericks
-ms.search.scope: Operations 
+
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -39,7 +39,7 @@ These license terms are an agreement between you and Microsoft Corporation (or o
 
 a)	General. You may install and use any number of copies of the software on your devices. You may not use the software in a live operating environment unless Microsoft permits you to do so under another agreement.
 
-b)	Microsoft Dynamics 365 for Finance and Operations Subscription.  Use of the software requires a valid subscription to the Microsoft Dynamics 365 for Finance and Operations online service (“Online Service”).  The Online Service is not licensed or authorized for use under this agreement. Your access to the Online Service through the software must comply with the existing terms for the service that apply to you through your or your organization's subscription. You may lose access to the Online service (i) if your or your organization’s subscription to the Online Service expires or is terminated, or (ii) your or your organization’s license to this software is terminated.
+b)	Microsoft Dynamics 365 for Finance and Operations Subscription. Use of the software requires a valid subscription to the Microsoft Dynamics 365 for Finance and Operations online service (“Online Service”). The Online Service is not licensed or authorized for use under this agreement. Your access to the Online Service through the software must comply with the existing terms for the service that apply to you through your or your organization's subscription. You may lose access to the Online service (i) if your or your organization’s subscription to the Online Service expires or is terminated, or (ii) your or your organization’s license to this software is terminated.
 c)	Third Party Software. The software may include third party applications that are licensed to you under this agreement or under their own terms. License terms, notices, and acknowledgements, if any, for the third party applications may be accessible online at https://aka.ms/thirdpartynotices or in an accompanying notices file. Even if such applications are governed by other agreements, the disclaimer, limitations on, and exclusions of damages below also apply to the extent allowed by applicable law.
 
 2.	TIME-SENSITIVE SOFTWARE.

@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Local specific posting of sales VAT
-description: This topic explains specific settings for posting value-added tax (VAT) payable transactions in accordance with Russian legislation.
+description: This article explains specific settings for posting value-added tax (VAT) payable transactions in accordance with Russian legislation.
 author: anasyash
 ms.date: 07/23/2019
 ms.topic: article
@@ -76,7 +76,7 @@ A posting group must be specified for each sales tax code. Use the standard meth
     tax payable.
 
 > [!NOTE] 
-> This Russia-specific field is used when the **Fixed offset posting** option is turned on (see the table earlier in this topic for a posting example).
+> This Russia-specific field is used when the **Fixed offset posting** option is turned on (see the table earlier in this article for a posting example).
 
 6. Specify the appropriate accounts in the usual way for the following fields:
 

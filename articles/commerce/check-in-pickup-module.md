@@ -2,7 +2,7 @@
 # required metadata
 
 title: Check-in for pickup module
-description: This topic covers the check-in for pickup module and explains how to configure it in Microsoft Dynamics 365 Commerce.
+description: This article covers the check-in for pickup module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 04/23/2021
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.19
 
 [!include [banner](includes/banner.md)]
 
-This topic covers the check-in for pickup module and explains how to configure it in Microsoft Dynamics 365 Commerce.
+This article covers the check-in for pickup module and explains how to configure it in Microsoft Dynamics 365 Commerce.
 
 The check-in for pickup module provides a confirmation page for customers who use the Dynamics 365 Commerce customer check-in capabilities to notify a store about their arrival. The check-in for pickup module also lets you configure a form that collects additional information from customers to facilitate order delivery. This information includes a customer's parking spot number, and the make and model of their vehicle. 
 

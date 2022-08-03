@@ -2,7 +2,7 @@
 # required metadata
 
 title: LISTJOIN ER function
-description: This topic provides information about how the LISTJOIN Electronic reporting (ER) function is used.
+description: This article provides information about how the LISTJOIN Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 04/01/2020
 ms.prod: 

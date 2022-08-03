@@ -2,7 +2,7 @@
 # required metadata
 
 title: Records and fields don't appear on the GSTR report
-description: This topic provides troubleshooting information that can help when records and fields don't appear on the GSTR report.
+description: This article provides troubleshooting information that can help when records and fields don't appear on the GSTR report.
 author: yungu
 ms.date: 06/08/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-Follow the steps in the sections of this topic if some records or fields don't appear on the GSTR report, or if the filter for registration numbers in government office tools isn't working.
+Follow the steps in the sections of this article if some records or fields don't appear on the GSTR report, or if the filter for registration numbers in government office tools isn't working.
 
 ## Determine whether the issue is related to Excel
 

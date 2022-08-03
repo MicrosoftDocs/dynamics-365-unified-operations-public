@@ -2,7 +2,7 @@
 # required metadata
 
 title: Product recommendations overview
-description: This topic provides general information about product recommendations. Product recommendations let customers easily and quickly find products that they want, and even products that they didn't originally intend to buy.
+description: This article provides general information about product recommendations. Product recommendations let customers easily and quickly find products that they want, and even products that they didn't originally intend to buy.
 author: Moonma
 ms.date: 05/26/2020
 ms.topic: overview

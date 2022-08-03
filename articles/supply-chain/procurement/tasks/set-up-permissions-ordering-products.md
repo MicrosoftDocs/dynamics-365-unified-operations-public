@@ -2,8 +2,8 @@
 # required metadata 
  
 title: Set up permissions for ordering products on behalf of someone else
-description: This topic explains how to grant workers permission to prepare purchase requisitions on behalf of other workers. 
-author: Henrikan
+description: This article explains how to grant workers permission to prepare purchase requisitions on behalf of other workers. 
+author: GalynaFedorova
 ms.date: 08/20/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to grant workers permission to prepare purchase requisitions on behalf of other workers. In other words, a purchase requisition "preparer" can create a requisition for another "requester." The procedure also shows how to grant a worker permission to order items and services in different legal entities or operating units. Typically, these tasks are performed by a purchasing manager. You can use this procedure either on data for the USMF demo company or on your own data.
+This article explains how to grant workers permission to prepare purchase requisitions on behalf of other workers. In other words, a purchase requisition "preparer" can create a requisition for another "requester." The procedure also shows how to grant a worker permission to order items and services in different legal entities or operating units. Typically, these tasks are performed by a purchasing manager. You can use this procedure either on data for the USMF demo company or on your own data.
 
 
 ## Grant permission to enter purchase requisitions on behalf of another worker

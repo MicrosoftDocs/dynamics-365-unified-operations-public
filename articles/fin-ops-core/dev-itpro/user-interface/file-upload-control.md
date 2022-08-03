@@ -2,7 +2,7 @@
 # required metadata
 
 title: File upload control
-description: This topic provides information about the file upload control. This control lets users upload files.
+description: This article provides information about the file upload control. This control lets users upload files.
 author: aneesmsft
 ms.date: 07/27/2020
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-This topic provides information about the file upload control. This control lets users upload files.
+This article provides information about the file upload control. This control lets users upload files.
 
 ## Overview
 
@@ -74,7 +74,7 @@ The file upload control accepts the file and upload strategy in the client, and 
 Before you upload a file into the system, you might want to scan it for viruses or malicious code. Therefore, in version 10.0.12 and later, an extension point is available so that customers can integrate the file scanning software of their choice into the file upload process. Similar extension points are also available for scanning attachments. For more information about those extension points, see [Configure document management](../../fin-ops/organization-administration/configure-document-management.md). 
 
 > [!IMPORTANT]
-> Out of the box, Finance and Operations apps don't scan files for viruses and malicious code, and we don't recommend specific software for file scanning. Instead, customers are responsible for choosing their own file scanning software, and for adding the appropriate code to the delegate handlers so that they can use the software or service of their choice to scan files.
+> Out of the box, finance and operations apps don't scan files for viruses and malicious code, and we don't recommend specific software for file scanning. Instead, customers are responsible for choosing their own file scanning software, and for adding the appropriate code to the delegate handlers so that they can use the software or service of their choice to scan files.
 
 In particular, the **FileUploadResultBase** class exposes the **delegateScanStream()** delegate. This delegate applies to any file upload scenario where the **Upload strategy class** has been specialized. The upload process will fail if the scanning service determines that the file is malicious.    
 

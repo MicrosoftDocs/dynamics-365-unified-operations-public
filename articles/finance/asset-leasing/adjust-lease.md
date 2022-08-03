@@ -2,9 +2,9 @@
 # required metadata
 
 title: Adjust leases
-description: The topic explains how to adjust a lease. Adjustment might be required if the lease terms are modified, the lease is extended, or other circumstances change.
+description: The article explains how to adjust a lease. Adjustment might be required if the lease terms are modified, the lease is extended, or other circumstances change.
 author: moaamer
-ms.date: 10/28/2020
+ms.date: 03/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,8 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
-
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
@@ -33,7 +32,7 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-The topic explains how to adjust a lease. Adjustment might be required if the lease terms are modified, the lease is extended, or other circumstances change. Asset leasing complies with the guidance that Accounting Standards Codification Topic 842 (ASC 842) and International Financial Reporting Standard 16 (IFRS 16) provide about lease modifications. ASC 842-20-15-1 defines a lease modification as any change to the terms and conditions of a contract that causes a change in the scope of, or the consideration for, a lease. Paragraph 39 of IFRS 16 states that a lessee must revalue the lease liability so that it reflects changes to the lease payments.
+The article explains how to adjust a lease. Adjustment might be required if the lease terms are modified, the lease is extended, or other circumstances change. Asset leasing complies with the guidance that Accounting Standards Codification Topic 842 (ASC 842) and International Financial Reporting Standard 16 (IFRS 16) provide about lease modifications. ASC 842-20-15-1 defines a lease modification as any change to the terms and conditions of a contract that causes a change in the scope of, or the consideration for, a lease. Paragraph 39 of IFRS 16 states that a lessee must revalue the lease liability so that it reflects changes to the lease payments.
 
 For organizations that adhere to ASC 842 or IFRS 16, a lease is remeasured to reflect a change in the present value of the future minimum lease payments (PVFMLP). If the PVFMLP increases, the journal entry that is created will be a debit to the right-of-use (ROU) asset account and a credit to the lease liability account for the difference between the new PVFMLP and the previous PVFMLP. If the PVFMLP decreases, the journal entry will be a debit to the lease liability account and a credit to the ROU asset account for the difference.
 
@@ -140,5 +139,19 @@ If a lease has been adjusted, you can view the different versions of it. You can
 2. To view historical schedules, open the modified lease from the **Lease summary** page, select the desired book, and then, on the Action Pane, select **Book version history**.
 3. On the **Book version** page, select a version and a schedule to view.
 
+## Adjust a lease book
+
+Follow these steps to adjust a lease book only.
+
+1. Go to **Asset leasing** \> **Leases** \> **Lease summary**.
+2. Select and open a lease.
+3. On the **Lease details** page, select **Books**.
+4. On the **Books details** page, on the Action Pane, in the **Maintain** group, select **Adjust book**. 
+5. Remove the payment schedule lines.
+6. In the **Lease modification date** field, enter the modification date. Then consider removing all additional asset/liability considerations (initial direct cost, lease incentive, lease prepayment, dismantling cost, and residual value guarantee), if there are any. 
+7. To help prevent inaccurate calculations for the lease adjustment, add new payment schedule lines for the new payment dates that match the modification date. 
+
+> [!NOTE] 
+> We recommend that you use the **Lease adjustment** wizard to adjust a lease. The wizard reduces the number of manual steps, provides a preview of balances after the adjustment, and lets you change amounts before posting.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

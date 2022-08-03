@@ -2,7 +2,7 @@
 # required metadata
 
 title: Task management overview
-description: This topic provides an overview of task management for managers and workers in Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of task management for managers and workers in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 02/10/2020
 ms.topic: overview
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: Release 10.0.9
 
 [!include [banner](includes/banner.md)]
 
-This topic provides an overview of task management for managers and workers in Microsoft Dynamics 365 Commerce.
+This article provides an overview of task management for managers and workers in Microsoft Dynamics 365 Commerce.
 
 In a retail environment, it's always difficult to make sure that tasks are performed by the right person at the right time. Retailers must be able to notify workers about upcoming tasks and provide related business context, so that the tasks can be completed correctly and on time.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up a B2B e-commerce site
-description: This topic describes how to set up a business-to-business (B2B) e-commerce site in Microsoft Dynamics 365 Commerce.
+description: This article describes how to set up a business-to-business (B2B) e-commerce site in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 12/03/2021
 ms.topic: article
@@ -13,7 +13,7 @@ ms.search.form: RetailOperations
 audience: Application User, IT Pro
 # ms.devlang: 
 ms.reviewer: v-chgri
-#ms.search.scope: Core, Operations, Retail
+#
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -28,13 +28,13 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../../includes/banner.md)]
 
-Business-to-business (B2B) e-commerce sites provide some key capabilities that optimize the workflow for a B2B user. This topic describes how to set up a B2B e-commerce site in Microsoft Dynamics 365 Commerce. It goes through the modules and site settings that must be configured to enable B2B-specific scenarios.
+Business-to-business (B2B) e-commerce sites provide some key capabilities that optimize the workflow for a B2B user. This article describes how to set up a B2B e-commerce site in Microsoft Dynamics 365 Commerce. It goes through the modules and site settings that must be configured to enable B2B-specific scenarios.
 
 ## Prerequisites
 
-- To setup a B2B e-commerce site, you must enable and configure specific features in Commerce headquarters, as described in this topic.
+- To setup a B2B e-commerce site, you must enable and configure specific features in Commerce headquarters, as described in this article.
 - Core experiences, such as product discovery, product details pages, the cart, and checkout are powered by the same modules that are used for business-to-consumer (B2C) e-commerce sites. Site authors should be familiar with all the modules that Dynamics 365 Commerce supports. For more information, see [Module library overview](../starter-kit-overview.md).
-- This topic assumes that site authors understand the basics of Commerce site builder, templates, fragments, and pages, so that they can enable the B2B features for e-commerce sites.
+- This article assumes that site authors understand the basics of Commerce site builder, templates, fragments, and pages, so that they can enable the B2B features for e-commerce sites.
 
 ## Site-level settings
 

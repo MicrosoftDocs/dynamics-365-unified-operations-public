@@ -2,7 +2,7 @@
 # required metadata
 
 title: Commerce Scale Unit (self-hosted)
-description: This topic describes Commerce Scale Unit (self-hosted) and when to use it.
+description: This article describes Commerce Scale Unit (self-hosted) and when to use it.
 author: athinesh99
 ms.date: 06/04/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes Commerce Scale Unit (self-hosted) and when to use it.
+This article describes Commerce Scale Unit (self-hosted) and when to use it.
 
 ## Overview
 
@@ -55,7 +55,7 @@ In scenarios where a stable internet connection is available and there is low la
 
 ## Get started with Commerce Scale Unit (self-hosted)
 
-To get started, review the following topic on configuring the Commerce Scale Unit (self-hosted), [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md).
+To get started, review the following article on configuring the Commerce Scale Unit (self-hosted), [Configure and install Commerce Scale Unit (self-hosted)](retail-store-scale-unit-configuration-installation.md).
 
 ## Additional resources
 

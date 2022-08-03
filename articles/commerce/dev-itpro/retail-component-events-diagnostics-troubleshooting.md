@@ -2,7 +2,7 @@
 # required metadata
 
 title: Commerce component events for diagnostics and troubleshooting
-description: This topic explains where to find events from Commerce-specific components.
+description: This article explains where to find events from Commerce-specific components.
 author: aamirallaqaband
 ms.date: 03/22/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains where to find events from Commerce-specific components. To enable diagnostics and troubleshooting, Commerce components, which include self-hosted components such as the Retail Modern POS and cloud-hosted components, such as Commerce Scale Unit and E-Commerce modules, log their events locally to Event Viewer (or to the browser developer tools console such as F12). Events are also logged in the Microsoft Dynamics Lifecycle Services (LCS) log search experience.
+This article explains where to find events from Commerce-specific components. To enable diagnostics and troubleshooting, Commerce components, which include self-hosted components such as the Retail Modern POS and cloud-hosted components, such as Commerce Scale Unit and E-Commerce modules, log their events locally to Event Viewer (or to the browser developer tools console such as F12). Events are also logged in the Microsoft Dynamics Lifecycle Services (LCS) log search experience.
 
 ## Viewing events in Event Viewer
 
@@ -40,7 +40,7 @@ You can use Event Viewer to view events for components that are installed on com
 - Development on a developer topology or on a downloadable virtual hard disk (VHD) that provides access to Event Viewer.
 - Client components, when you're running a conference room pilot and have access to Event Viewer for that computer.
 
-However, for most other cases, and especially when you don't have access to Event Viewer for the computer, you can use Log Search on LCS. For E-Commerce modules, events are currently available only in browser developer tools (such as F12). Log Search is discussed later in this topic. This section applies to the following components:
+However, for most other cases, and especially when you don't have access to Event Viewer for the computer, you can use Log Search on LCS. For E-Commerce modules, events are currently available only in browser developer tools (such as F12). Log Search is discussed later in this article. This section applies to the following components:
 
 - Commerce Scale Unit
 - Retail Modern POS
@@ -218,143 +218,6 @@ To disable diagnostic events in Application Insights in Commerce headquarters, f
 1. Repeat the preceding steps for each environment where you plan to turn off Application Insights.
 
 To disable diagnostic events for a single environment, delete the instrumentation key on the **Application Insights registry** tab of the **Operational Insights** page. Then complete steps 3 and 4 of the preceding procedure.
-
-### E-Commerce events
-
-The following events are logged by the E-Commerce website, and can be consumed for troubleshooting directly in the browser, or programmatically by partner extensions for analytics, experimentation, or other purposes.
-
-### Button and link clicks
-
-Button and link clicks for the following types of elements on an E-Commerce website are logged as telemetry events.
-
-- Header
-  - Navigation hierarchy
-  - Cart icon
-  - Sign-in
-  - Search icon
-  - Wishlist icon
-- Content block action links (This represents the hero, tile, and feature modules for marketing content.)
-- Video player
-- Product cards
-- Footer links
-- Breadcrumbs
-- Promo banner
-- Add to cart button
-- Checkout button
-- Place order button
-
-The schema for **Click** action is:
-
-```json
-Click
-IPayLoad = {
-        contentCategory: Name of element clicked on,
-        contentAction:  {
-            pgname: Name of page,
-            mname: name of module,
-            etext: Text of element clicked on,
-            recid: Product ID if a product was clicked on,
-            etype: ‘click’,
-        }
-    };
-```
-
-### Page views
-
-Page view events are logged for each page view operation.
-
-The schema for a **PageView** action is:
-
-```json
-PageView
-IPageViewInfo = {
-    title;
-}
-```
-
-### Cart operations
-
-The following **Cart** related events are logged.
-
-- Add item to cart.
-- Update item in cart.
-- Remove item from cart.
-- Checkout.
-- Product Page view.
-
-The schema for **Cart** events is:
-
-```json
-/***
- * Defines the telemetry properties to track for a Cart object
- * @property products       {IProductInfo[]}    - Array of product information
- * @property orderId        {string}            - ID for the order
- * @property cartId         {string}            - ID for the current cart object
- * @property cartVersion    {string}            - Version number for the current cart object
- */
-export interface ICartInfo {
-    products: IProductInfo[];
-    orderId: string;
-    cartId: string;
-    cartVersion: string;
-}
-```
-
-### Purchase
-
-When an order is submitted, a Purchase event is logged. The schema for a **Purchase** event is:
-
-```json
-/***
- * Defines the telemetry properties to track for a Purchase event
- * @property id            {string}         - Transaction ID
- * @property affiliation   {string}         - Origin of this transaction (e.g. Online Store)
- * @property revenue       {number}         - Revenue from this transaction
- * @property tax           {number}         - Tax amount
- * @property shippingCost  {number}         - Shipping cost
- * @property products      {IProductInfo[]} - List of products in this transaction
- */
-export interface IProductTransaction {
-    id: string;
-    affiliation?: string;
-    revenue?: number;
-    tax?: number;
-    shippingCost?: number;
-    products?: IProductInfo[];
-}
-```
-
-### Product details
-
-Product details are logged for **Cart** and **Purchase** operations. The schema for **Product** details is:
-
-```json
-/***
- * Defines the telemetry properties to track for a Product object
- * @property productChannelId       {string}   - Product channel ID
- * @property productChannelName     {string}   - Product channel name
- * @property productCategoryId      {string}   - Product category ID
- * @property productCategoryName    {string}   - Product category name
- * @property productId              {string}   - Product ID
- * @property productName            {string}   - Product name
- * @property productSku             {string}   - Product SKU
- * @property productPrice           {string}   - Product price
- * @property productQuantity        {string}   - Product quantity
- * @property productCurrency        {string}   - Product currency code
- */
-export interface IProductInfo {
-    productChannelId: string;
-    productChannelName: string;
-    productCategoryId: string;
-    productCategoryName: string;
-    productId: string;
-    productName: string;
-    productSku: string;
-    productPrice: string;
-    productQuantity: string;
-    productCurrency: string;
-}
-```
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

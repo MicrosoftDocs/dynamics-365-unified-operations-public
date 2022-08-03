@@ -2,7 +2,7 @@
 # required metadata
 
 title: EU sales list for Netherlands
-description: This topic provides information about how to generate the EU sales list for Netherlands.
+description: This article provides information about how to generate the EU sales list for Netherlands.
 author: anasyash
 ms.date: 09/20/2021
 ms.topic: article
@@ -49,8 +49,8 @@ To set up XML namespaces for the EU sales list in XML, follow these steps:
     | **Name**             | **Lookup result**                                                                 |
     |----------------------|-----------------------------------------------------------------------------------|
     | XSDSchema            | http://www.nltaxonomie.nl/nt15/bd/20201209/entrypoints/bd-rpt-icp-opgaaf-2021.xsd |
-    | SchemaInstanceData   | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data                     |
-    | SchemaInstanceTuples | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-tuples                   |
+    | SchemaInstanceData   | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data.xsd                  |
+    | SchemaInstanceTuples | http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-tuples.xsd                 |
 
 For more information about how to get the values from official documentation, see [How-to get XSD schema and namespaces for the Dutch taxonomy](#get-xsd-schema-and-namespaces-for-the-dutch-taxonomy).
 
@@ -105,9 +105,9 @@ To set up electronic tax declaration parameters, follow these steps:
 
 2. On the **System** tab, set the following fields:
 
-    - **Digipoort Delivery URL**: Enter the destination URL for the Digipoort service. For example, enter *https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/aanleverservice/1.2"*.
-    - **Digipoort Status URL**: Enter the URL for the message statuses. For example, enter *https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/statusinformatieservice/1.2*.
-    - **Authorization Address**: Enter the URL for authorization. For example, enter *http://geenausp.nl*.
+    - **Digipoort Delivery URL**: Enter the destination URL for the Digipoort service. For example, enter `https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/aanleverservice/1.2"`.
+    - **Digipoort Status URL**: Enter the URL for the message statuses. For example, enter `https://preprod-dgp2.procesinfrastructuur.nl/wus/2.0/statusinformatieservice/1.2`.
+    - **Authorization Address**: Enter the URL for authorization. For example, enter `http://geenausp.nl`.
     - **Server Certificate**: Select the line that you created for the Key Vault secret for the Digipoort server certificate.
     - **Client Certificate**: Select the line that you created for the Key Vault secret for the Digipoort client certificate.
 
@@ -194,14 +194,14 @@ To view the changes in EU sales list, complete the following steps.
 1. Open the file, Versioning_rpt-from_NT14_20191211_to_NT15_20201209-bd-rpt-icp-opgaaf-2021.html to view the changes in EU sales list.
 2. In the file, under *Schema referenties*, you can see xsd schema names for taxonomies NT14 and NT15. Take the value for entering to **XSDSchema** lookup result. Find more details about application specific parameters for EU sales list format in the section [Set up XML namespaces for the EU sales list in XML](#set-up-xml-namespaces-for-the-eu-sales-list-in-xml) above
 3. In the file, under the **Namespaces** table, you can see the line: bd-i=http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data. Take this value for entering to **SchemaInstanceData** lookup result.
-4. In the file, under the **Namespaces** table, you can see the line: bd-t= <http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-tuples>. Take this value for entering to **SchemaInstanceTuples** lookup result.
+4. In the file, under the **Namespaces** table, you can see the line: bd-t= <http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-tuples.xsd>. Take this value for entering to **SchemaInstanceTuples** lookup result.
 
 ### VAT declaration
 
 To view the changes in VAT declaration, follow these steps:
 
 1. Open the file, Versioning_rpt-from_NT14_20191211_to_NT15_20201209-bd-rpt-ob-aangifte-2021.html to see the changes in VAT declaration.
-2. In the file, under **Schema referenties,** you can see xsd schema names for taxonomies NT14 and NT15. Take the name of xsd schema for entering to **XSDSchema** lookup result. Find more details about application specific parameters for VAT declaration format in [VAT declaration for Netherlands](emea-nl-vat-declaration-netherlands.md) topic in **Set up XSD schema and namespaces** section.
+2. In the file, under **Schema referenties,** you can see xsd schema names for taxonomies NT14 and NT15. Take the name of xsd schema for entering to **XSDSchema** lookup result. Find more details about application specific parameters for VAT declaration format in [VAT declaration for Netherlands](emea-nl-vat-declaration-netherlands.md) article in **Set up XSD schema and namespaces** section.
 3. In the file, under the **Namespaces** table, you can see the line: bd-i=http://www.nltaxonomie.nl/nt15/bd/20201209/dictionary/bd-data. Take this value for entering to **SchemaInstanceData** lookup result.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Attach inventory items to service objects  
-description: This topic explains how to attach an inventory item to a service object.
-author: kamaybac
+description: This article explains how to attach an inventory item to a service object.
+author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-This topic explains how to attach an inventory item to a service object. When you attach an item to a service object, you can control and report the service activities that are performed for the item.
+This article explains how to attach an inventory item to a service object. When you attach an item to a service object, you can control and report the service activities that are performed for the item.
 
 Before you can attach items to service objects, you must create the items in the **Released product details** form. 
 

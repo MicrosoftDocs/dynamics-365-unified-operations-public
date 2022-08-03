@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up Electronic messages
-description: This topic provides information about how to set up Electronic messages (EM) functionality.
+description: This article provides information about how to set up Electronic messages (EM) functionality.
 author: liza-golub
 ms.date: 11/18/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: 
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
@@ -73,7 +73,7 @@ The following table describes the fields on the **Message statuses** page.
 |---------------------|-------------|
 | Message status      | Enter a unique name for the message status. Message statuses are used to characterize the state of an electronic message at every moment. The name that you enter is shown on the **Electronic messages** page and in a log that is related to electronic messages. |
 | Description         | Enter a description of the message status. |
-| Response type       | Select the response type for the message status. Some actions in a processing can produce more than one response type. For example, an action of the **Web service** type can produce responses of the **Successfully executed** type or the **Technical error** type, depending on the result of its execution. In this case, define message statuses for both response types. For more information about action types and the types of responses that are related to them, see the [Message processing action types](#action-types) section later in this topic. |
+| Response type       | Select the response type for the message status. Some actions in a processing can produce more than one response type. For example, an action of the **Web service** type can produce responses of the **Successfully executed** type or the **Technical error** type, depending on the result of its execution. In this case, define message statuses for both response types. For more information about action types and the types of responses that are related to them, see the [Message processing action types](#action-types) section later in this article. |
 | Message item status | Sometimes, the status of an electronic message must influence the status of related message items. Select a message item status in this field to associate it with the message status. |
 | Allow delete        | Select this checkbox if users should be able to delete electronic messages that have this status on the **Electronic messages** page. |
 
@@ -247,7 +247,7 @@ The following tables describe the fields on the **Message processing actions** p
 
 | Field                                     | Description |
 |-------------------------------------------|-------------|
-| Action type                               | Select the type of action. For information about the available options, see the [Message processing action types](#action-types) section later in this topic. |
+| Action type                               | Select the type of action. For information about the available options, see the [Message processing action types](#action-types) section later in this article. |
 | Format mapping                            | Select the ER format that should be called for the action. This field is available only for actions of the **Electronic reporting export**, **Electronic reporting import**, and **Electronic reporting export message** types. |
 | Format mapping for URL path               | Select the ER format that should be called for the action. This format is used to compose the path of the URL address that will be added to the base internet address that is specified for the selected web server. This field is available only for actions of the **Web service** type. |
 | Message item type                         | Select the type of records that the action should be evaluated for. This field is available for actions of the **Message item execution level**, **Electronic reporting export**, **Electronic reporting import**, and **Web service** types, and other types. If you leave this field blank, all the message item types that are defined for the message processing are evaluated. |

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Return orders
-description: This topic explains how to create a return order.
+description: This article explains how to create a return order.
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article

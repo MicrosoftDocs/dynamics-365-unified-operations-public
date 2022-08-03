@@ -2,16 +2,17 @@
 # required metadata
 
 title: On-premises disaster recovery configuration
-description: This topic describes how to configure Dynamics 365 Finance + Operations (on-premises) for disaster recovery.
+description: This article describes how to configure Dynamics 365 Finance + Operations (on-premises) for disaster recovery.
 author: faix
 ms.date: 09/11/2020
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365 
+ms.service:
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -32,13 +33,13 @@ The core concept of disaster recovery involves the use of a second datacenter in
 
 ### Limitations of this content
 
-This topic does not cover specific configuration details for disaster recovery of the following components:
+This article does not cover specific configuration details for disaster recovery of the following components:
   - Active Directory Federation Services (AD FS)
   - File storage
   - SQL Server
 
 > [!NOTE]
-> High availability configuration isn't covered in this topic. For more information about the minimum setup required for high availability, see [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md#minimum-infrastructure-requirements).
+> High availability configuration isn't covered in this article. For more information about the minimum setup required for high availability, see [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md#minimum-infrastructure-requirements).
 
 ### Recommendations
 
@@ -46,7 +47,7 @@ Remember to keep your disaster recovery environment updated with the latest Wind
 
 Ensure that you're applying new prerequisites that are specified by Microsoft. Also, keep your Service Fabric cluster updated and perform certificate rotations as required.
 
-After you've read through this topic, document the steps that need to be taken by your team. After you’ve done that, go through the steps multiple times to ensure that you don't encounter unexpected problems and you minimize the potential downtime.
+After you've read through this article, document the steps that need to be taken by your team. After you’ve done that, go through the steps multiple times to ensure that you don't encounter unexpected problems and you minimize the potential downtime.
 
 ## Overview
 
@@ -60,7 +61,7 @@ The following diagram illustrates the required setup, at a high level.
 
 In Lifecycle Services (LCS), the production environment should be deployed using the environment slot named **Production**. Your disaster recovery environment will not use an additional environment slot in LCS. It will instead reuse the slot for your production environment. 
 
-Finance and Operations AOS nodes and SQL Server must be co-located within the same datacenter. For more information, see [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md#network-requirements).
+Finance and operations AOS nodes and SQL Server must be co-located within the same datacenter. For more information, see [System requirements for on-premises deployments](../../fin-ops/get-started/system-requirements-on-prem.md#network-requirements).
 
 ## Deploying code packages to production
 
@@ -248,7 +249,7 @@ To deploy your environment, follow these instructions.
 
 ## Using your disaster recovery environment
 
-You can use your disaster recovery environment as you typically would, except that updates or hotfixes shouldn't be applied to the environment. If you must apply updates to your environment, your failback process will differ from the one described below. Failing back under this condition is not covered in this topic.
+You can use your disaster recovery environment as you typically would, except that updates or hotfixes shouldn't be applied to the environment. If you must apply updates to your environment, your failback process will differ from the one described below. Failing back under this condition is not covered in this article.
 
 ## Failing back to your production environment
 
@@ -277,3 +278,4 @@ Clean up your DR environment by manually unprovisioning all Dynamics Service Fab
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

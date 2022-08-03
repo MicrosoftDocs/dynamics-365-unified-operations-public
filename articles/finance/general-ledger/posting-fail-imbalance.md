@@ -2,7 +2,7 @@
 # required metadata
 
 title: Journal posting failure because of imbalance
-description: This topic explains why debits and credits might not be balanced in voucher transactions, so that the transactions can't be posted. The topic also includes steps for fixing the issue.
+description: This article explains why debits and credits might not be balanced in voucher transactions, so that the transactions can't be posted. The article also includes steps for fixing the issue.
 author: kweekley
 ms.date: 08/03/2021
 ms.topic: article
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains why debits and credits might not be balanced in voucher transactions, so that the transactions can't be posted. The topic also includes steps for fixing the issue.
+This article explains why debits and credits might not be balanced in voucher transactions, so that the transactions can't be posted. The article also includes steps for fixing the issue.
 
 ## Symptom
 

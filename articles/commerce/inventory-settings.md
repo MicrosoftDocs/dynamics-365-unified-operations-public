@@ -2,7 +2,7 @@
 # required metadata
 
 title: Apply inventory settings
-description: This topic covers inventory settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
+description: This article covers inventory settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
 ms.date: 10/15/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-This topic covers inventory settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
+This article covers inventory settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 
 Inventory settings specify whether inventory should be checked before products are added to the cart. They also define inventory-related merchandising messages, such as "In stock" and "Only a few left." These settings ensure that a product can't be purchased if it's out of stock.
 

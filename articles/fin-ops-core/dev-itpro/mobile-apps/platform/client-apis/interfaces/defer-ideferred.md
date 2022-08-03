@@ -2,7 +2,7 @@
 title: Deferred type<T>
 description: Deferred type
 author: tonyafehr
-ms.date: 08/01/2017
+ms.date: 05/24/2022
   
 audience: Developer
 ms.reviewer: tfehr
@@ -13,6 +13,7 @@ ms.author: tfehr
 # Deferred type&lt;T&gt;
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 ### Hierarchy
 

@@ -1,6 +1,6 @@
 ---
 title: X++ language reference
-description: This topic provides programming guidance for X++.
+description: This article provides programming guidance for X++.
 author: RobinARH
 ms.date: 08/27/2021
 audience: Developer

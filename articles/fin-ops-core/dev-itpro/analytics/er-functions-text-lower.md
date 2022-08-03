@@ -2,7 +2,7 @@
 # required metadata
 
 title: LOWER ER function
-description: This topic provides information about how the LOWER Electronic reporting (ER) function is used.
+description: This article provides information about how the LOWER Electronic reporting (ER) function is used.
 author: NickSelin
 ms.date: 12/11/2019
 ms.prod: 

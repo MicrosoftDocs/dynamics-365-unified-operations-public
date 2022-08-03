@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cash forecast
-description: This topic describes the Cash flow forecasting capability.
+description: This article describes the Cash flow forecasting capability.
 author: ShivamPandey-msft
 ms.date: 12/21/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: ["14151", "intro-internal"]
 ms.assetid: 3d43ba40-780c-459a-a66f-9a01d556e674

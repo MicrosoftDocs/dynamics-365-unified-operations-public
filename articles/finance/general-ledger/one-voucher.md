@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalSetup, LedgerParameters, AssetProposalDepreciation
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
@@ -42,7 +42,7 @@ The existing functionality for financial journals (the general journal, fixed as
     [![Single line.](./media/same-line.png)](./media/same-line.png)
 
     > [!IMPORTANT]
-    > The definition of One voucher does **not** cover cases where journal names are set up as **One voucher number only**, but the user then enters a voucher that includes only ledger account types. In this topic, One voucher means that there is a single voucher that contains more than one vendor, customer, bank, fixed asset, or project.
+    > The definition of One voucher does **not** cover cases where journal names are set up as **One voucher number only**, but the user then enters a voucher that includes only ledger account types. In this article, One voucher means that there is a single voucher that contains more than one vendor, customer, bank, fixed asset, or project.
 
 - Enter a multiline voucher where there is no offset account.
 
@@ -68,16 +68,16 @@ You then generate the **Expenses by vendor** report in the **Financial Insights*
 
 Because of the issues that can occur when One voucher is used, this functionality will eventually be deprecated. However, because there are functional gaps that depend on this functionality, the deprecation won't occur all at once. Instead, the following schedule will be used:
 
-- **Spring 2018 release** – This functionality was turned off by default through the **Allow multiple transactions within one voucher** parameter on the **General** tab of the **General ledger parameters** page. However, you can turn it back on if your organization has a scenario that falls into one of the functional gaps that are listed later in this topic.
+- **Spring 2018 release** – This functionality was turned off by default through the **Allow multiple transactions within one voucher** parameter on the **General** tab of the **General ledger parameters** page. However, you can turn it back on if your organization has a scenario that falls into one of the functional gaps that are listed later in this article.
 
-    - If your business scenario doesn't require One voucher, we recommend that you leave the functionality turned off. If you use it even though another solution exists, Microsoft won't fix "bugs" in the areas that are identified later in this topic.
+    - If your business scenario doesn't require One voucher, we recommend that you leave the functionality turned off. If you use it even though another solution exists, Microsoft won't fix "bugs" in the areas that are identified later in this article.
     - We recommend that you stop using One voucher for integrations, unless you require the functionality for one of the documented functional gaps.
 
 - **Later releases** – Several business requirements can be met only by using One voucher. Microsoft must ensure that all the identified business requirements can still be met in the system after the functionality is deprecated. Therefore, new features will probably have to be added to fill functional gaps. Microsoft can't provide a specific solution, because each feature gap is different and must be evaluated based on the business requirements. Some functional gaps will likely be replaced with features that help meet specific business requirements. However, other gaps might be filled by continuing to allow for entry in a journal, as when One voucher is used, but enhancing the system to track more detail as required.
 
 After all the functional gaps are filled, Microsoft will communicate that the feature will be deprecated. However, the deprecation won't be effective for least one year after that communication. Although Microsoft can't provide an estimate about when the One voucher functionality will be deprecated, it will likely be at least two years before the deprecation occurs. Microsoft policy is to leave at least 12 months between the announcement of deprecated functionality and the actual deprecation, so that customers and independent software vendors (ISVs) have time to react to the change. For example, an organization might have to update its business processes, entities, and integrations.
 
-The deprecation of One voucher is a significant change that will be widely communicated. As part of that communication, Microsoft will update this topic, post a blog post on the Microsoft Dynamics 365 Finance blog, update the "Removed or deprecated features" topic, communicate the change at appropriate Microsoft conferences, and so on.
+The deprecation of One voucher is a significant change that will be widely communicated. As part of that communication, Microsoft will update this article, post a blog post on the Microsoft Dynamics 365 Finance blog, update the "Removed or deprecated features" article, communicate the change at appropriate Microsoft conferences, and so on.
 
 ## Why use One voucher?
 

@@ -1,6 +1,6 @@
 ---
 title: Customize the user interface
-description: This topic describes how to customize the user interface by using the process automation framework.
+description: This article describes how to customize the user interface by using the process automation framework.
 author: RyanCCarlson2
 ms.date: 09/10/2020
 ms.topic: article
@@ -13,7 +13,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom:
 ms.search.region: Global
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The process automation framework supports some customizations of the user interface (UI). Most of this topic is optional, because the framework provides default values for everything. The only exception is the **ProcessScheduleSeries** form. If you intend to show the **ProcessScheduleSeries** form for a specific product area, customizations are required so that the framework can show data that is specific to that product area.
+The process automation framework supports some customizations of the user interface (UI). Most of this article is optional, because the framework provides default values for everything. The only exception is the **ProcessScheduleSeries** form. If you intend to show the **ProcessScheduleSeries** form for a specific product area, customizations are required so that the framework can show data that is specific to that product area.
 
 ## Weekly calendar view
 
@@ -99,7 +99,7 @@ For an example, see the **CustVendPaymProposalAutomationOccurrenceCardRenderer**
 |---|---|
 | `public ProcessScheduleOccurrence getOccurrenceBeingRendered()` | This method returns the occurrence that is being rendered on the occurrence card. |
 | `public ProcessExecutionExecutingInformation getOccurrenceExecutionInformation()` | This method returns the running information for the occurrence. This information typically includes the results of the batch job, the start time, and the end time. |
-| `public void makeCardSubHeaderInvisible()` | This method makes the card's subheader invisible. See the illustration earlier in this topic and the content below it to determine which line is the subheader. |
+| `public void makeCardSubHeaderInvisible()` | This method makes the card's subheader invisible. See the illustration earlier in this article and the content below it to determine which line is the subheader. |
 | `public void makeCardButtonsInvisible()` | This method specifies whether the **Disable** and **Edit** buttons on the occurrence card are invisible. |
 | `public void setColumnsOnOccurrenceCardDetailGroup(int _numberOfColumns)` | This method enables the number of columns on the occurrence card to be customized. By default, there are two columns. |
 | `public FormButtonControl addButtonControl(FormControlName _buttonControlName)` | This method enables a new button to be added to the occurrence card. |

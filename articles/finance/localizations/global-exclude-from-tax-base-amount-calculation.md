@@ -2,7 +2,7 @@
 # required metadata
 
 title: Calculate tax on prices when Prices include taxes is enabled
-description: This topic provides information about the functionality for calculating tax on prices when the Prices include taxes option is enabled.
+description: This article provides information about the functionality for calculating tax on prices when the Prices include taxes option is enabled.
 author: epodkolz
 ms.date: 07/28/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.technology:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region:
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 10.0.21
 [!include [banner](../includes/banner.md)]
 
 
-This topic provides information about how the **Exclude from base amount calculation** parameter of a tax code is used.
+This article provides information about how the **Exclude from base amount calculation** parameter of a tax code is used.
 
 You can use the **Exclude from base amount calculation** parameter to calculate tax amounts in a flexible way. When this parameter is enabled for a tax code, if prices include sales tax, the Tax calculation service calculates tax amounts for the marked sales tax code as if it wasn't included in the base amount.
 

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Report 340 for Spain
-description: This topic provides information about how to set up and generate Report 340 for Spain.
+description: This article provides information about how to set up and generate Report 340 for Spain.
 author: anasyash
-ms.date: 03/03/2022
+ms.date: 05/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Spain
 # ms.search.industry: 
-ms.author: epodkolz
+ms.author: anasyash
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -144,8 +144,8 @@ For more information, see [Download Electronic reporting configurations from Lif
 > [!NOTE]
 > For codes that have a negative tax percentage, the **Allow negative sales tax percentage** option on the **Calculation** FastTab must be set to **Yes**.
 
-2.  Set up sales tax. For instructions, see [Sales tax overview](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/general-ledger/indirect-taxes-overview.md).
-3.  Set up intra-community VAT for EU purchases. For instructions, see [Intra-community VAT for Spain](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/master/articles/finance/localizations/emea-esp-intra-community-vat.md).
+2.  Set up sales tax. For instructions, see [Sales tax overview](../general-ledger/indirect-taxes-overview.md).
+3.  Set up intra-community VAT for EU purchases. For instructions, see [Intra-community VAT for Spain](emea-esp-intra-community-vat.md).
 
 4.  Post the following transactions.
 

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Reconcile a bank account
-description: This topic describes how to reconcile a bank account.
-author: panolte
+description: This article describes how to reconcile a bank account.
+author: angelad116
 ms.date: 07/01/2019
 ms.topic: article
 ms.prod: 
@@ -11,15 +11,15 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: panolte
+ms.author: angelading
 ms.search.validFrom: [month/year of release that feature was introduced in, in format yyyy-mm-dd]
 ms.dyn365.ops.version: 10.0.5
 ---

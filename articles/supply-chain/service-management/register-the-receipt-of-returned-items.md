@@ -3,7 +3,7 @@
 
 title: Register the receipt of returned items
 description: You can register the receipt of returned items using the Arrival overview form or the Registration form.
-author: kamaybac
+author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -92,7 +92,7 @@ You can use the **Arrival overview** form to identify a return shipment by its R
 
 As an alternative to using the **Arrival overview** form, you can use the **Registration** form to register the arrival of returned items.
 
-1.  Click **Sales and marketing** \> **Common** \> **Return orders** \> **All return orders**. Create a new return order or open the return order from the list. On the **Lines** FastTab, select the return order line. Click **Update line**, and then click **Registration**.
+1.  Click **Sales and marketing** \> **Sales returns** \> **All return orders**. Create a new return order or open the return order from the list. On the **Lines** FastTab, select the return order line. Click **Update line**, and then click **Registration**.
 
 2.  Assign a disposition code in the **Disposition code** field, and then click **OK**.
     

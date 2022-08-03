@@ -2,7 +2,7 @@
 # required metadata
 
 title: Purchase return orders
-description: This topic provides information about return orders on purchases.
+description: This article provides information about return orders on purchases.
 author: EricWangChen
 ms.date: 06/04/2019
 ms.topic: article

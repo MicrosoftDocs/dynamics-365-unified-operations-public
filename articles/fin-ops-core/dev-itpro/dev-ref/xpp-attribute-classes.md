@@ -1,6 +1,6 @@
 ---
 title: X++ attribute classes
-description: This topic describes the use of attributes in X++.
+description: This article describes the use of attributes in X++.
 author: pvillads
 ms.date: 08/27/2021
 audience: Developer
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the use of attributes in X++.
+This article describes the use of attributes in X++.
 
 An attribute is a non-abstract class that extends (inherits from) the **SysAttribute** class. Attributes represent or store metadata about types and methods. An attribute can be attached to a class, a class field, a class method, an interface, or a table.
 

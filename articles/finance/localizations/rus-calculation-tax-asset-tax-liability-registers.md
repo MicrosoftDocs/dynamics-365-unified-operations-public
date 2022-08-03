@@ -2,7 +2,7 @@
 # required metadata
 
 title: Calculation of tax asset and tax liability registers
-description: This topic provides information about the two methods that tax registers use to calculate tax differences
+description: This article provides information about the two methods that tax registers use to calculate tax differences
 ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
@@ -35,7 +35,7 @@ According to Russian legislation, the accounting profit and the profit tax base 
 - **Constant tax**: Differences are based on income and expenses that form the accounting profit (loss) and are excluded from the calculation of the tax base for income tax. Constant tax differences generate constant tax income (CTI) and constant tax expense (CTE).
 - **Temporary tax**: Differences are based on deferred income tax. The tax is from when expenses or income that form the accounting profit are in one reporting period, and the tax base is in another reporting period or in other reporting periods. Temporary tax differences generate deferred tax asset (DTA) and deferred tax liability (DTL).
 
-This topic provides information about the two methods that tax registers use to calculate tax differences:
+This article provides information about the two methods that tax registers use to calculate tax differences:
 
 - Balance method:
     - **Calculation of temporary tax differences by balance method** tax register
@@ -151,7 +151,7 @@ Before you complete this procedure, you must create expense codes. For more info
 
 ### <a name="difference">Set up tax differences registers</a>
 
-Create the registers of temporary and constant tax differences for one of the calculation methods, as described in the topic, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
+Create the registers of temporary and constant tax differences for one of the calculation methods, as described in the article, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register).
 Follow these steps to set up the **Calculation of temporary tax differences by balance method** and **Calculation of temporary tax differences** tax registers.
 
 1. Go to **Tax** > **Setup** > **Profit tax** > **Registers**.

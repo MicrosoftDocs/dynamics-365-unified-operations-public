@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Configure wave processing example
-description: This topic provides an example of how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically.
+description: This article provides an example of how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically.
 author: Mirzaab
 ms.date: 03/17/2021
 ms.topic: business-process 
@@ -27,11 +27,11 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides an example of how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically. You specify the criteria by setting up wave templates and queries that match a wave with released lines in sales orders, production orders, or kanban orders.
+This article provides an example of how to set up the criteria that determine what work is generated for a warehouse when a wave is processed, and whether waves are processed manually or automatically. You specify the criteria by setting up wave templates and queries that match a wave with released lines in sales orders, production orders, or kanban orders.
 
 ## Enable sample data
 
-To work through this scenario using the sample records and values specified here, you must use a system where the standard demo data is installed. You must also select the **USMF** legal entity before you begin.
+To work through this scenario using the sample records and values specified here, you must use a system where the standard [demo data](../../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. You must also select the **USMF** legal entity before you begin.
 
 ## Example scenario: configure wave processing
 

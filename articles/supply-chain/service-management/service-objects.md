@@ -2,8 +2,8 @@
 # required metadata
 
 title: Service objects overview
-description: This topic provides an overview of how to work with service objects.
-author: kamaybac
+description: This article provides an overview of how to work with service objects.
+author: sorenva
 ms.date: 07/25/2019
 ms.topic: overview
 ms.prod: 
@@ -21,7 +21,7 @@ ms.reviewer: kamaybac
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -63,7 +63,7 @@ in the service agreement. There are two service agreement lines for the
 object. Line 1 is weekly bookkeeping with a weekly interval assigned to the
 line, and line 2 is the annual audit with a yearly interval assigned to it.
 
-## Related topics
+## Related articles
 
 [Create service objects](create-service-objects.md)
 

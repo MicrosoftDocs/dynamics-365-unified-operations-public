@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fixed asset counting (Russia)
-description: This topic provides information about fixed asset counting for Russia.
+description: This article provides information about fixed asset counting for Russia.
 author: ShylaThompson
 ms.date: 09/18/2018
 ms.topic: article
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Russia
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
 

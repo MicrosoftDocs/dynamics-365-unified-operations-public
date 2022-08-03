@@ -2,7 +2,7 @@
 # required metadata
 
 title: Set up general budget reservations and submit them to a workflow
-description: This topic explains how to set up  general budget reservations and submit them to a workflow for Public sector.
+description: This article explains how to set up general budget reservations and submit them to a workflow for Public sector.
 author: AlexRenney
 ms.date: 04/24/2019
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: BudgetReservation_PSN, BudgetReservationType_PSN
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 8.1
 
 When a general budget reservation is set up to use a workflow, the document must first be submitted and approved through the workflow system. After the workflow is completed and the reservation is approved, you can still edit the document. Although the option to post the document is available, no other controls and fields on the page are available unless you select the option to edit the document. Note that if you edit an approved reservation, its workflow status is reset to **Draft**, and the option to post the document is no longer available. However, the other controls and fields on the page are available. After you change a reservation, you must resubmit it to the workflow system for approval.
 
-The following illustration shows how to set up a workflow for general budget reservations. Each numbered step corresponds to a section of this topic.
+The following illustration shows how to set up a workflow for general budget reservations. Each numbered step corresponds to a section of this article.
 
 ![Setup of a general budget reservation workflow.](media/gbr-workflow-process.jpg "Setup of a general budget reservation workflow")
 

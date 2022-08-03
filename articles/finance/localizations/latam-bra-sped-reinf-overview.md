@@ -2,7 +2,7 @@
 # required metadata
 
 title: SPED-Reinf (Brazil)
-description: This topic provides information about how you can use Fiscal books and the electronic message framework to set up SPED-Reinf events.
+description: This article provides information about how you can use Fiscal books and the electronic message framework to set up SPED-Reinf events.
 author: sndray
 ms.date: 04/09/2021
 ms.topic: overview

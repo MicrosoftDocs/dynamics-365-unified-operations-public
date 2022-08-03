@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: Allocation of miscellaneous charges in proportion to weight and volume 
-description: This topic provides information about allocating miscellaneous charges.
+description: This article provides information about allocating miscellaneous charges.
 author: v-nadyuz
 ms.date: 10/28/2019
 ms.topic: article

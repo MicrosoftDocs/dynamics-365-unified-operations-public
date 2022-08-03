@@ -2,7 +2,7 @@
 # required metadata
 
 title: Complete, publish, and deploy a Globalization feature
-description: This topic provides information about the lifecycle of Globalization features.
+description: This article provides information about the lifecycle of Globalization features.
 author: dkalyuzh
 ms.date: 12/15/2021
 ms.topic: article
@@ -21,7 +21,6 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.custom: 
 ms.author: dkalyuzh
 ms.search.validFrom: 
 ms.dyn365.ops.version: 

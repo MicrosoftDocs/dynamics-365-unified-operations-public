@@ -11,10 +11,10 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application user
 ms.reviewer: margoc
-ms.search.scope: Operations
+
 ms.search.region: Global
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
@@ -28,7 +28,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 
 For functional consultants, our job-task analysis research showed that everyone must understand the core content set as well as a domain area.
 
-For training about features shared with other Finance and Operations apps, see the [Dynamics 365 Finance Learning Catalog](../../finance/get-started/learning-catalog-functional-consultant.md).
+For training about features shared with other finance and operations apps, see the [Dynamics 365 Finance Learning Catalog](../../finance/get-started/learning-catalog-functional-consultant.md).
 
 ## Get started<a name="get-started"></a>
 
@@ -57,3 +57,4 @@ For training about features shared with other Finance and Operations apps, see t
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

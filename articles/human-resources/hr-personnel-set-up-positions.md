@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Set up positions
-description: This topic describes how positions are an important element of the lower level of an organization hierarchy. 
+description: This article describes how positions are an important element of the lower level of an organization hierarchy. 
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: business-process 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: DefaultDashboard, HcmWorkforceWorkspace, HcmWorkerActivityChart, HcmAllWorkersListPart, HcmPosition, HcmPositionNewPosition, HcmJobLookup, HcmPositionReportsToDialog, HcmPositionLookup, FinancialDimensionDefaultTemplatesLookup, DimensionLookup, HcmPersonnelManagementWorkspace
 audience: Application User 
 # ms.devlang:  
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global

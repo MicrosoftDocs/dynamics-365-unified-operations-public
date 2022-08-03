@@ -2,27 +2,16 @@
 # required metadata
 
 title: Search engine optimization (SEO) considerations for your site
-description: This topic covers search engine optimization (SEO) considerations for your site from development to production.
+description: This article covers search engine optimization (SEO) considerations for your site from development to production.
 author: psimolin
-ms.date: 10/01/2019
+ms.date: 05/25/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-audience: Application user
+audience: Application User, Developer, IT Pro
 # ms.devlang: 
 ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: psimolin
 ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: Release 10.0.5
 
 ---
 
@@ -31,15 +20,19 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic covers earch engine optimization (SEO) considerations for your site from development to production.
+This article covers search engine optimization (SEO) considerations for your site from development to production.
 
 ## A site that is under development
 
-While a site is under development, all site pages should have the **NOINDEX** and **NOFOLLOW** meta tags, so that search engines don't index the pages and store development versions of your site in their cache. To do this configuration, you must add the default meta tags module to the site page template. The default meta tags properties will then be available in the SEO properties section in the page editor. You can use these properties to manage the meta tags.
+To ensure that search engines do not index a site under development, all site pages should have the **noindex** and **nofollow** meta tags. A good practice is to create a fragment based on the [MetaTags module](metatags-module.md) that contains the following meta tag entry and ensure that the fragment is added to the HTML \<head\> section of all templates used on your site.
+
+```html
+<meta name="robots" content="noindex,nofollow" /> 
+```
 
 ## Soft launch of a site
 
-During a "soft launch," a website is made available to a limited audience or market before the full launch occurs. If you do a soft launch of your website, you should consider leaving the **NOINDEX** meta tags in place. In this way, you help guarantee that the soft launch remains restricted to the limited audience that you want to reach.
+During a "soft launch," a website is made available to a limited audience or market before the full launch occurs. If you do a soft launch of your website, you should consider leaving the **noindex** meta tags in place. In this way, you help guarantee that the soft launch remains restricted to the limited audience that you want to reach.
 
 ## A site that is in production
 
@@ -49,7 +42,7 @@ To optimize search engine indexing, the rendering framework uses both informatio
 
 ### Page SEO settings for internal preview, limited audiences, and all audiences
 
-Because Dynamics 365 Commerce supports "what you see is what you get" (WYSIWYG) authenticated previews in visual page builder, authors can prepare their page content without having to worry that the information will become visible to site visitors. If a page must be published, but its exposure must be limited, it should have the **NOINDEX** meta tag, so that it won't be indexed by search engines. Then, when the page is ready for all audiences, all the basic SEO metadata should be present, to maximize the efficiency of search engine indexing. Additionally, the **NOLIMIT** meta tag should be removed.
+Because Dynamics 365 Commerce supports "what you see is what you get" (WYSIWYG) authenticated previews in visual page builder, authors can prepare their page content without having to worry that the information will become visible to site visitors. If a page must be published, but its exposure must be limited, it should have the **noindex** meta tag, so that it won't be indexed by search engines. Then, when the page is ready for all audiences, all the basic SEO metadata should be present, to maximize the efficiency of search engine indexing. Additionally, the **nolimit** meta tag should be removed.
 
 ## Additional resources
 

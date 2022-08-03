@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Enable license plate label printing
-description: This topic shows how to enable the automatic printing of a Serial shipping container code (SSCC) label after the last item is picked from inventory in a sales picking work process. 
+description: This article shows how to enable the automatic printing of a Serial shipping container code (SSCC) label after the last item is picked from inventory in a sales picking work process. 
 author: perlynne
 ms.date: 07/19/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic shows how to enable the automatic printing of a Serial shipping container code (SSCC) label after the last item is picked from inventory in a sales picking work process. You can run this procedure in demo data company USMF. If you're run it using your own data, you need to have a number sequence set up for license plates. You need to set up a label printer before you begin this task. Go to Organization administration > Setup > Network printers. On the Action Pane, click Options, and then click the Download document routing agent installer button. Run the installer and make sure that you have a working network printer set to Active before you continue with the procedure.
+This article shows how to enable the automatic printing of a Serial shipping container code (SSCC) label after the last item is picked from inventory in a sales picking work process. You can run this procedure in demo data company USMF. If you're run it using your own data, you need to have a number sequence set up for license plates. You need to set up a label printer before you begin this task. Go to Organization administration > Setup > Network printers. On the Action Pane, click Options, and then click the Download document routing agent installer button. Run the installer and make sure that you have a working network printer set to Active before you continue with the procedure.
 
 
 ## Set up the GS1 company prefix

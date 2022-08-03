@@ -2,26 +2,15 @@
 # required metadata
 
 title: Mass deployment of sealed Commerce self-service components
-description: This topic explains how to use the framework for self-service component installers to silently install and service deployments.
+description: This article explains how to use the framework for self-service component installers to silently install and service deployments.
 author: jashanno
-ms.date: 11/22/2021
+ms.date: 05/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
-audience: IT Pro
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global 
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jashanno
 ms.search.validFrom: 2021-04-30
-ms.dyn365.ops.version: 10.0.18
 
 ---
 
@@ -29,9 +18,9 @@ ms.dyn365.ops.version: 10.0.18
 
 [!include [banner](../includes/banner.md)]
 
-This topic applies to the sealed framework, component installers that are released every month, beginning with the 10.0.18 release, and that are made available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). Note that the first several releases of these new installers are designated as **(Preview)**. However, the only purpose of this designation is to differentiate the new installers while Microsoft determines whether there are any additional functional requirements to use them. It doesn't mean that the installers aren't valid for production. Based on the release of these new installers, Microsoft plans to deprecate the old (legacy) installers in or around October 2022. 
+This article applies to the sealed framework, component installers that are released every month, beginning with the 10.0.18 release, and that are made available in the Shared asset library in Microsoft Dynamics Lifecycle Services (LCS). Note that the first several releases of these new installers are designated as **(Preview)**. However, the only purpose of this designation is to differentiate the new installers while Microsoft determines whether there are any additional functional requirements to use them. It doesn't mean that the installers aren't valid for production. Based on the release of these new installers, Microsoft plans to deprecate the old (legacy) installers in or around October 2023. 
 
-This topic explains how to use the new installers to perform silent installation and servicing updates via command-line arguments. These arguments let you do mass deployment in several different ways.
+This article explains how to use the new installers to perform silent installation and servicing updates via command-line arguments. These arguments let you do mass deployment in several different ways.
 
 > [!NOTE]
 > The new self-service, sealed installers will not be made available in Headquarters and are only downloadable through LCS.
@@ -96,7 +85,7 @@ The installer requires the parameter **install** (or **uninstall** to remove the
 
 The sealed framework has been created to allow for the following alterations:
 - **Sealed** – The new installer framework completely separates Microsoft-distributed base component installers from the extensibility-based customizations. The customizations will be installed afterward but will then be untethered in regard to updates (so that updates will be allowed only for the Microsoft base component, only for the customizations, or for both).
-- **GUI-less** – There is no longer a user interface (UI). Instead, there is a completely command line–driven executable for each component installer. This change is one of several key changes or features that is used to focus the new installer framework for use with mass deployment.
+- **GUI-less** – There is no longer a user interface (UI). Instead, there is an entirely command line–driven executable for each component installer. This change is one of several key changes or features that are used to focus the new installer framework for use with mass deployment.
 - **Deeper logging** – Enhanced installer logs allow for better validation of installation completion or failure, the steps that were performed, and any warnings or errors that were generated.
 - **Clean-up** – In the new framework, the component installers work harder to maintain the cleanliness of installation directories, by clearing the full contents of the component folder before they install the newer components. This clean-up ensures that there are no leftover files that could cause issues and prevent successful installation.
 
@@ -117,7 +106,7 @@ Migration from the old self-service framework component installers to the new fr
 
 ### Before you begin
 
-It's critical that you remove the old, self-service Modern POS component. For more information, see the migration steps earlier in this topic.
+It's critical that you remove the old, self-service Modern POS component. For more information, see the migration steps earlier in this article.
 
 ### Examples of silent deployment
 
@@ -134,7 +123,7 @@ CommerceModernPOS.exe --help install
 ```
 
 > [!NOTE]
-> A configuration file isn't required for Modern POS. The installer now has parameters (shown earlier in this topic) for the various values that are used during device activation.
+> A configuration file isn't required for Modern POS. The installer now has parameters (shown earlier in this article) for the various values that are used during device activation.
 
 The following command specifies all the parameters that should be used during device activation after the Modern POS application is installed. This example uses the **Houston-3** register, which is a commonly used value in Dynamics 365 Commerce demo data.
 
@@ -154,7 +143,7 @@ You can mix and match these concepts to achieve the installation results that yo
 
 ### Before you begin
 
-It's critical that you remove the old self-service hardware station component. For more information, see the migration steps earlier in this topic. There is no longer a Merchant Account Information Tool. Instead, the merchant account information is installed when a POS terminal is paired with the hardware station. When testing this installer for the first time, it is highly recommended that you run the following command:
+It's critical that you remove the old self-service hardware station component. For more information, see the migration steps earlier in this article. There is no longer a Merchant Account Information Tool. Instead, the merchant account information is installed when a POS terminal is paired with the hardware station. When testing this installer for the first time, it is highly recommended that you run the following command:
 
 ```Console
 CommerceHardwareStation.exe --help install
@@ -175,7 +164,7 @@ HardwareStation.exe install --Port 443 --StoreSystemAOSURL "https://MyDynamics36
 ```
 
 > [!NOTE]
-> A configuration file isn't required for hardware station. The installer now has parameters (shown earlier in this topic) for the various values that are required.
+> A configuration file isn't required for hardware station. The installer now has parameters (shown earlier in this article) for the various values that are required.
 
 The following command specifies all the parameters that are required to skip the prerequisite checks during a standard installation. 
 
@@ -198,7 +187,7 @@ CommerceStoreScaleUnitSetup.exe --help install
 
 ### Before you begin
 
-It's critical that you remove the old self-service CSU (self-hosted) component. For more information, see the migration steps earlier in this topic.
+It's critical that you remove the old self-service CSU (self-hosted) component. For more information, see the migration steps earlier in this article.
 
 ### Examples of silent deployment
 

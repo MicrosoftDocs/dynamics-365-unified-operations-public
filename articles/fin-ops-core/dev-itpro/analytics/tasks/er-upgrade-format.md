@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Upgrade your format by adopting a new, base version of that format
-description: This topic describes how to maintain an Electronic reporting (ER) format configuration. 
+description: This article describes how to maintain an Electronic reporting (ER) format configuration. 
 author: NickSelin
 ms.date: 08/29/2018
 ms.topic: business-process 
@@ -122,7 +122,7 @@ Change the status of the designed format configuration from Draft to Completed t
     Note that the created configuration is saved as completed version 1.1.1. This means it is version 1 of the custom BACS (UK fictitious custom) format, which is based on version 1 of the BACS (UK fictitious) format, which is based on version 1 of the Payments (simplified model) data model.  
 
 ## Test the customized format to generate payment files
-Complete the steps in the "Use created format to generate electronic documents for payments" procedure in a parallel Finance and Operations session. Select the BACS (UK fictitious custom) format in electronic payment method parameters. Make sure that the created payment file contains the recently introduced XML node presenting IBAN code in accordance to regional requirements.  
+Complete the steps in the "Use created format to generate electronic documents for payments" procedure in a parallel finance and operations session. Select the BACS (UK fictitious custom) format in electronic payment method parameters. Make sure that the created payment file contains the recently introduced XML node presenting IBAN code in accordance to regional requirements.  
 
 ## Update the existing country-specific configuration
 Litware, Inc. needs to update the BACS (UK fictitious) configuration and adopt new country requirements for managing the format of the electronic document. Later, this will be enclosed in a new version of this configuration that will be offered for service subscribers, including Proseware, Inc.  
@@ -242,7 +242,7 @@ To do this, Proseware, Inc. needs to change the base configuration version for t
     Note that the created configuration is saved as completed version 1.2.2: version 2 of base BACS (UK fictitious custom) format, which is based on version 2 of base BACS (UK fictitious) format, which is based on version 1 of Payments (simplified model) data model.  
 
 ## Test the customized format for payment files generation
-Complete the steps in the "Use created format to generate electronic documents for payments" procedure in parallel Finance and Operations session. Select the created 'BACS (UK fictitious custom)' format in electronic payment method parameters. Make sure that the created payment file contains recently introduced by Proseware, Inc. XML node presenting IBAN account code in accordance to regional requirements. The file also should contain the recently introduced by Litware, Inc. XML node presenting SWIFT bank code in accordance to country requirements.  
+Complete the steps in the "Use created format to generate electronic documents for payments" procedure in parallel finance and operations session. Select the created 'BACS (UK fictitious custom)' format in electronic payment method parameters. Make sure that the created payment file contains recently introduced by Proseware, Inc. XML node presenting IBAN account code in accordance to regional requirements. The file also should contain the recently introduced by Litware, Inc. XML node presenting SWIFT bank code in accordance to country requirements.  
 
 
 

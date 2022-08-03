@@ -2,7 +2,7 @@
 # required metadata
 
 title: List of ER functions in the mathematical category
-description: This topic provides information about the mathematical functions that are supported in Electronic reporting (ER).
+description: This article provides information about the mathematical functions that are supported in Electronic reporting (ER).
 author: NickSelin
 ms.date: 12/17/2019
 ms.prod: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Electronic reporting (ER) mathematical functions can be used to do many common mathematical calculations. This topic provides a summary of these functions.
+Electronic reporting (ER) mathematical functions can be used to do many common mathematical calculations. This article provides a summary of these functions.
 
 ## List of supported functions
 

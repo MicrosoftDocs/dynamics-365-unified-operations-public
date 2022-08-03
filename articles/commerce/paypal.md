@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 Payment Connector for PayPal
-description: This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal.
+description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal.
 author: BrianShook
 ms.date: 05/18/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal (PayPal connector). It includes a list of supported features and functionality, a guide to setting up and configuring the connector, troubleshooting information, and descriptions of some common issues.
+This article provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal (PayPal connector). It includes a list of supported features and functionality, a guide to setting up and configuring the connector, troubleshooting information, and descriptions of some common issues.
 
 ## Key terms
 

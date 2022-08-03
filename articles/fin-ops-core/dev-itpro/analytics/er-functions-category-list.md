@@ -2,9 +2,9 @@
 # required metadata
 
 title: List of ER functions in the list category
-description: This topic provides information about the list functions that are supported in Electronic reporting (ER).
+description: This article provides information about the list functions that are supported in Electronic reporting (ER).
 author: NickSelin
-ms.date: 04/01/2020
+ms.date: 06/07/2022
 ms.prod: 
 ms.technology: 
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-Electronic reporting (ER) list functions can be used to extract information from, and perform operations on, data sources of the *Record list* and *Container (record)* data types. This topic provides a summary of these functions.
+Electronic reporting (ER) list functions can be used to extract information from, and perform operations on, data sources of the *Record list* and *Container (record)* data types. This article provides a summary of these functions.
 
 ## List of supported functions
 
@@ -52,6 +52,7 @@ Electronic reporting (ER) list functions can be used to extract information from
 | [ListOfFields](er-functions-list-listoffields.md)         | This function returns a *Record list* value that is created based on the structure of the specified argument of the *Enumeration* or *Container (record)* type. |
 | [ListOfFirstItem](er-functions-list-listoffirstitem.md)   | This function returns a *Record list* value that consists of only the first record of the specified list.|
 | [OrderBy](er-functions-list-orderby.md)                   | This function returns the specified list as a *Record list* value after it has been sorted according to the specified arguments. These arguments can be defined as expressions. |
+| [Repeat](er-functions-list-repeat.md)                     | This function builds a record that contains the field that has a value that matches the specified input. It then returns a new *Record list* of a record that is repeated a specified number of times. |
 | [Reverse](er-functions-list-reverse.md)                   | This function returns the specified list as a *Record list* value in reversed sort order. |
 | [Split](er-functions-list-split.md)                       | This function splits the specified input string into substrings and returns the result as a new *Record list* value. |
 | [SplitList](er-functions-list-splitlist.md)               | This function splits the specified list into sublists (or batches), each of which contains the specified number of records. It then returns the result as a new *Record list* value that consists of the batches. |

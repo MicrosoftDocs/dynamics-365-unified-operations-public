@@ -2,8 +2,8 @@
 # required metadata
 
 title: IoT Intelligence home page
-description: This topic provides links to information about IoT Intelligence.
-author: tonyafehr
+description: This article provides links to information about IoT Intelligence.
+author: johanhoffmann
 ms.date: 12/09/2020
 ms.topic: article
 ms.prod: 
@@ -15,12 +15,12 @@ ms.technology:
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
 ms.custom: "intro-internal"
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: tfehr
+ms.author: johanho
 ms.search.validFrom: 2020-04-25
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -42,13 +42,15 @@ IoT Intelligence is an add-in for Microsoft Dynamics 365 Supply Chain Management
 
 IoT Intelligence supports the following scenarios:
 
-+ **Production delays** – This scenario compares actual cycle time to planned cycle time. Supply Chain Management notifies you when production isn't on schedule, so that you can intervene to maximize operating efficiency and avoid order delays.
-+ **Equipment downtime** – This scenario compares measured uptime to user-defined parameters. Supply Chain Management notifies you when an outage threshold is exceeded, so that you can take actions such as rescheduling a production work order or creating a maintenance work order.
-+ **Product quality** – This scenario compares sensor readings, such as moisture and temperature, to user-defined quality metrics. Supply Chain Management notifies you when a deviation occurs, so that you can intervene to maintain quality standards and minimize waste.
+- **Production delays** – This scenario compares actual cycle time to planned cycle time. Supply Chain Management notifies you when production isn't on schedule, so that you can intervene to maximize operating efficiency and avoid order delays.
+- **Equipment downtime** – This scenario compares measured uptime to user-defined parameters. Supply Chain Management notifies you when an outage threshold is exceeded, so that you can take actions such as rescheduling a production work order or creating a maintenance work order.
+- **Product quality** – This scenario compares sensor readings, such as moisture and temperature, to user-defined quality metrics. Supply Chain Management notifies you when a deviation occurs, so that you can intervene to maintain quality standards and minimize waste.
 
 The following illustration shows the interaction of Azure IoT Hub, IoT Intelligence, and Supply Chain Management.
 
 ![IoT Hub, IoT Intelligence, and Supply Chain Management.](media/iot_intelligence.png)
+
+<!-- KFM: hide setup info for now
 
 ## Setup
 
@@ -61,13 +63,14 @@ You can set up and configure IoT Intelligence without writing any code. Here are
 5. [Set up metrics](iot-metrics-setup.md) – Set up metrics in Supply Chain Management.
 6. [Scenario setup](iot-scenario-setup.md) – Set up the scenarios in Supply Chain Management.
 
+-->
+
 ## Tracking and maintenance
 
-+ [Monitor scenarios in Dynamics 365 Supply Chain Management](iot-management.md#monitor-scenarios)
-+ [Disable a scenario](iot-scenario-setup.md#disable-a-scenario)
-+ [Uninstall the add-in](iot-lcs-setup.md#uninstall-addin)
-+ [Modify a running IoT Intelligence scenario](iot-management.md#modify-a-running-iot-intelligence-scenario)
-+ [Simulation options](iot-management.md#simulation-options)
+- [Monitor scenarios in Dynamics 365 Supply Chain Management](iot-management.md#monitor-scenarios)
+- [Disable a scenario](iot-scenario-setup.md#disable-a-scenario)
+- [Modify a running IoT Intelligence scenario](iot-management.md#modify-a-running-iot-intelligence-scenario)
+- [Simulation options](iot-management.md#simulation-options)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

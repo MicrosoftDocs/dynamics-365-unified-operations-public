@@ -1,7 +1,7 @@
 ---
 # required metadata
 title: CF-e fiscal documents and integration with SAT functionality in Commerce POS for Brazil
-description: This topic gives an overview of the generation of CF-e electronic fiscal documents for retail sales and their registration in the SAT fiscal device functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
+description: This article gives an overview of the generation of CF-e electronic fiscal documents for retail sales and their registration in the SAT fiscal device functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
 author: akviklis
 manager: annbe
 ms.date: 12/03/2021
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.20
 
 [!include[banner](../includes/banner.md)]
 
-This topic gives an overview of CF-e (Cupom Fiscal eletrônico) fiscal documents and their registration in the SAT (Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) fiscal device functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil. It also explains how to issue CF-e documents and print CF-e-SAT (Cupom Fiscal Eletrônico - SAT) fiscal receipts when retail sales of goods are completed in Commerce POS for Brazil.
+This article gives an overview of CF-e (Cupom Fiscal eletrônico) fiscal documents and their registration in the SAT (Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) fiscal device functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil. It also explains how to issue CF-e documents and print CF-e-SAT (Cupom Fiscal Eletrônico - SAT) fiscal receipts when retail sales of goods are completed in Commerce POS for Brazil.
 
 A CF-e is an electronic fiscal document that is generated to register the sale of goods to a customer in São Paulo state. It enables tax and fiscal control by tax authorities. It also lets customers verify the validity and authenticity of fiscal documents that they receive. Sales of services aren't supported.
 

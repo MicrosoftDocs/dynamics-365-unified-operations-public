@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate printable FTI forms 
-description: This topic explains how to use the Electronic reporting (ER) framework to generate printable free text invoice (FTI) forms as Microsoft Office documents.
+description: This article explains how to use the Electronic reporting (ER) framework to generate printable free text invoice (FTI) forms as Microsoft Office documents.
 author: NickSelin
 ms.date: 07/24/2018
 ms.topic: article
@@ -31,14 +31,14 @@ ms.dyn365.ops.version: Release 8.0
 
 [!include[banner](../includes/banner.md)]
 
-The Electronic reporting (ER) framework lets you generate printable free text invoice (FTI) forms as Microsoft Office documents. This topic provides information about how to build your own configurations as well as details of available configuration templates.
+The Electronic reporting (ER) framework lets you generate printable free text invoice (FTI) forms as Microsoft Office documents. This article provides information about how to build your own configurations as well as details of available configuration templates.
 
 ## Overview
 
 In addition to the existing capability of generating printable FTI forms by using Microsoft SQL Server Reporting Services (SSRS), you can now use the ER framework. You can manage printable FTI forms in Microsoft Office Excel and Word. You can also modify the layout, data flow, and formatting to meet specific requirements without making code changes.
 
 > [!NOTE]
-> If you want to start with an overview of existing ER configurations for this sample of the printable FTI forms solution, you can go directly to section **Download sample ER configurations to generate printable FTI forms** later in this topic.
+> If you want to start with an overview of existing ER configurations for this sample of the printable FTI forms solution, you can go directly to section **Download sample ER configurations to generate printable FTI forms** later in this article.
 
 ## Create customized configurations for FTI printable forms
 As part of your customized solution for printable FTI forms, you must create a set of ER configurations.

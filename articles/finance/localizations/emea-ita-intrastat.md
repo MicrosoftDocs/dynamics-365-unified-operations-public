@@ -2,7 +2,7 @@
 # required metadata
 
 title: Italian Intrastat
-description: This topic contains information about Intrastat reporting in Italy.
+description: This article contains information about Intrastat reporting in Italy.
 author: anasyash
 ms.date: 09/09/2021
 ms.topic: article
@@ -648,7 +648,7 @@ Follow these steps to set up Italian-specific options so that you can work with 
 6. On the **Statistical value** FastTab, set the **Print and export statistical data** option to **Yes** if necessary. This setting activates transfer of the statistical section. The statistical section consists of data about weights, additional units, statistical values, delivery terms, delivery schedules, transport modes, and regions of origin.
 
     > [!NOTE]
-    > For a quarterly declaration, the Intrastat report won't include the statistical section, or information about delivery terms and transport modes. For more information, see the table in the [Overview](#overview) section of this topic.
+    > For a quarterly declaration, the Intrastat report won't include the statistical section, or information about delivery terms and transport modes. For more information, see the table in the [Overview](#overview) section of this article.
 
 7. On the **Country/region properties** tab, list all the countries or regions that your organization does business with. For each country or region, set the following fields:
 

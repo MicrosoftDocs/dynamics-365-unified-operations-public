@@ -2,9 +2,9 @@
 # required metadata
 
 title: Breadcrumb module 
-description: This topic covers breadcrumb modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+description: This article covers breadcrumb modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author:  anupamar-ms
-ms.date: 10/20/2020
+ms.date: 05/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version:
 
 [!include [banner](includes/banner.md)]
 
-This topic covers breadcrumb modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
+This article covers breadcrumb modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 
 Breadcrumb modules are used to provide secondary navigation on site pages. They are typically shown at the top of a page, below the header. Although breadcrumb modules can be added to any page, they are most often used on product details pages (PDPs), to show the product category hierarchy and provide a quick way to move around a site. A breadcrumb module can also be used to show a "Back to results" link when users open a PDP from a search or list page. In this way, users can quickly return to their filtered list page to continue shopping.
 
@@ -67,12 +67,12 @@ To add a breadcrumb module to a PDP and set the required properties, follow thes
 
 1. Go to **Site Settings \> Extensions**, and then, for the **Breadcrumb display type on PDP** setting, select **Show category hierarchy**.
 1. Go to **Templates**, and select the PDP template.
-1. In the **Container** slot that contains the buy box module, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Breadcrumb** module, and then select **OK**.
+1. In the **Container** slot that contains the buy box module, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Breadcrumb** module, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the template, and then select **Publish** to publish it.
 1. Go to **Pages**, and open a PDP that uses the PDP template. If a PDP doesn't yet exist, create one.
-1. In the **Container** slot that contains the buy box module, select the ellipsis (**...**), and then select **Add Module**.
-1. In the **Add Module** dialog box, select the **Breadcrumb** module, and then select **OK**.
+1. In the **Container** slot that contains the buy box module, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Breadcrumb** module, and then select **OK**.
 1. In the properties pane of the **Breadcrumb** slot, under **Root**, select **Link text**.
 1. In the **Link text** dialog box, enter **Home**, and then, under **Link target**, select **Add a link**.
 1. In the **Add a link** dialog box, select a link for the breadcrumb root, and then select **OK**.

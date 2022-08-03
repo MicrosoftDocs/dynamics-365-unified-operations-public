@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set up dispatch teams   
-description: This topic describes how to create a dispatch team.
-author: kamaybac
+description: This article describes how to create a dispatch team.
+author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-This topic describes how to create a dispatch team. After you create a dispatch team, you can assign workers to the team. When you create a service order, you can then relate a member of a dispatch team to an activity in the service order.
+This article describes how to create a dispatch team. After you create a dispatch team, you can assign workers to the team. When you create a service order, you can then relate a member of a dispatch team to an activity in the service order.
 
 1.  Click **Service management** \> **Setup** \> **Dispatch teams**.
 

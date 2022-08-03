@@ -2,7 +2,7 @@
 # required metadata
 
 title: Accounts payable in the public sector overview
-description: This article introduces you to the public sector Accounts payable functionality that is integrated with Microsoft Dynamics 365 Finance. This functionality for public sector entities addresses vendor management, purchasing and reporting capabilities.
+description: This article explains the public sector Accounts payable functionality that is integrated with Microsoft Dynamics 365 Finance. T
 author: v-kiarnd
 ms.date: 07/25/2019
 ms.topic: overview
@@ -15,13 +15,13 @@ ms.search.form: BudgetParameters, CustParameters, LedgerJournalTable, OMLegalEnt
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: ["19661", "intro-internal"]
 ms.assetid: b4c903dd-5ec7-4ec5-9dc9-77ba4f00fab8
 ms.search.region: Global
 ms.search.industry: Public sector
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the public sector functionality for Accounts payable that's integrated with Dynamics 365 Finance. This functionality includes PO codes, posting definitions, one-time vendor invoicing, 1099 tax forms, cash discounts, vendor certification types, Project accounting activity summary, electronic payments, cover and signature pages for reports, PO line amounts, and vendor invoice journal pages. 
+This article describes the public sector functionality for Accounts payable that's integrated with Dynamics 365 Finance. This functionality includes PO codes, posting definitions, one-time vendor invoicing, 1099 tax forms, cash discounts, vendor certification types, Project accounting activity summary, electronic payments, cover and signature pages for reports, PO line amounts, and vendor invoice journal pages. 
 
 ## What are the prerequisites for setting up Accounts payable in the public sector?
 
@@ -45,21 +45,21 @@ After you’ve set up the prerequisites,  you might have to set up the following
 
 - [Purchase order codes in the public sector](purchase-order-codes-public-sector.md) –  You can create codes and special messages for confirming purchase orders. A confirming purchase order bypasses the typical purchasing process. For example, you authorize an unplanned order by using a purchase order number at the time of a purchase, instead of by using a document that is provided before the item is required. 
   > [!NOTE]
-  > This also applies to Procurement and sourcing.
+  > This also applies to **Procurement and sourcing**.
 
 - [Posting definitions in the public sector](posting-definitions-public-sector.md) – You can use posting definitions to create subledger journal lines for originating transactions that meet selected criteria. For example, you can use positing definitions to generate multiple balanced ledger entries, based on attributes such as transaction types and accounts. 
   > [!NOTE]
-  > This also applies to General ledger, Budgeting, and Accounts receivable.
+  > This also applies to **General ledger**, **Budgeting**, and **Accounts receivable**.
 
 
 - [One-time vendors in the public sector](one-time-vendors-public-sector.md) – When approval or a contract in the form of a purchase order isn't required, you can quickly create one or more invoices at the same time that you create a record for the vendor. For more information, see [Plan for one-time vendors in the public sector](plan-one-time-vendors-public-sector.md).
 - 1099 form overview in the public sector – If you do business with vendors that are subject to United States 1099 tax, you must track the amount that you pay to each vendor and report that information at the end of the calendar year. Public sector organizations use forms 1099-G and 1099-S.
 
 > [!NOTE]
-> This also applies to Procurement and sourcing.
+> This also applies to **Procurement and sourcing**.
 
 ## Additional public sector functionality
-The remaining sections in this article describe the Accounts payable functionality that is available for the public sector.
+The remaining sections describe the Accounts payable functionality that is available for the public sector.
 
 -   **Cash discounts** – Select the account to offset when cash discounts are applied to invoices.
 -   **Vendor certification types** – Define a certification type for any vendor requirement that you want to track.

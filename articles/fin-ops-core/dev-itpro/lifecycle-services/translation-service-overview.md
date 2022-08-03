@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dynamics 365 Translation Service overview
-description: This topic provides information about the Microsoft Dynamics 365 Translation Service (DTS).
+description: This article provides information about the Microsoft Dynamics 365 Translation Service (DTS).
 author: abmotgi
 ms.date: 10/25/2021
 ms.topic: overview
@@ -54,7 +54,7 @@ DTS currently supports the following product versions.
 | Product name | Versions | Supported format for user interface files | Supported format for documentation files | Notes |
 |--------------|----------|-------------------------------------------|------------------------------------------|-------|
 | Microsoft Dynamics AX 2012 | All versions | .ktd, .ald | .docx | |
-| Dynamics 365 Finance and Operations apps | All versions | .label.txt | .docx, .html | .txt is the specific label format and .html is the custom help solution format. |
+| Dynamics 365 finance and operations apps | All versions | .label.txt | .docx, .html | .txt is the specific label format and .html is the custom help solution format. |
 | Microsoft Dynamics 365 Commerce | All versions | .label.txt | .docx | |
 | Microsoft Dynamics CRM | All versions | .resx | .docx | |
 | Microsoft Dynamics NAV | All versions | .etx, .stx, .resx, .txt, .xml, .xlf | .docx | .txt and .xml are the NAV specific format, and .xlf is the Business Central extension resource format. |
@@ -101,3 +101,4 @@ For more information about how to use DTS, see [Translate user interface files](
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

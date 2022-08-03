@@ -2,8 +2,8 @@
 # required metadata
 
 title: Vendor collaboration with external vendors
-description: This topic explains how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
-author: Henrikan
+description: This article explains how purchasing agents can collaborate with external vendors to exchange information about purchase orders and consignment inventory.
+author: GalynaFedorova
 ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -31,12 +31,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-The **Vendor collaboration** module is targeted at vendors who don't have electronic data interchange (EDI) integration with Microsoft Dynamics 365 Supply Chain Management. It lets vendors work with purchase orders (POs), invoices, consignment inventory information, and requests for quotation (RFQs), and also lets them access parts of their vendor master data. This topic explains how you can collaborate with external vendors who use the vendor collaboration interface to work with POs, RFQs, and consignment inventory. It also explains how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors see when they respond to a PO.
+The **Vendor collaboration** module is targeted at vendors who don't have electronic data interchange (EDI) integration with Microsoft Dynamics 365 Supply Chain Management. It lets vendors work with purchase orders (POs), invoices, consignment inventory information, and requests for quotation (RFQs), and also lets them access parts of their vendor master data. This article explains how you can collaborate with external vendors who use the vendor collaboration interface to work with POs, RFQs, and consignment inventory. It also explains how to enable a specific vendor to use vendor collaboration, and how to define the information that all vendors see when they respond to a PO.
 
 For more information about what external vendors can do in the vendor collaboration interface, see [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md).
-
-> [!NOTE]
-> The information about vendor collaboration in this topic applies only to the current version of Supply Chain Management. In Microsoft Dynamics AX 7.0 (February 2016) and Microsoft Dynamics AX application version 7.0.1 (May 2016), you collaborate with vendors by using the **Vendor portal** module. For information about the **Vendor portal** module, see [Collaborate with vendors by using the Vendor portal](collaborate-vendors-vendor-portal.md).
 
 For more information about how vendors can use vendor collaboration in invoicing processes, see [Vendor collaboration invoicing workspace](../../finance/accounts-payable/vendor-portal-invoicing-workspace.md). For information about how to provision new vendor collaboration users, see [Manage vendor collaboration users](manage-vendor-collaboration-users.md).
 
@@ -62,8 +59,25 @@ An administrator configures the general settings for vendor collaboration, such 
 
 Before user accounts can be created for an external vendor, you must configure the vendor account so that vendor can use vendor collaboration. On the **Vendors** page, on the **General** tab, set the **Collaboration activation** field. The following options are available:
 
-- **Active (PO is auto-confirmed)** – POs are automatically confirmed if the vendor accepts them without changes.
+- **Active (PO is auto-confirmed)** – POs are automatically confirmed if the vendor accepts them without changes. If you use this option, be sure to schedule the *Confirm accepted purchase orders from vendor collaboration* batch job, which is responsible for processing the confirmations. For instructions, see the next section.
 - **Active (PO is not auto-confirmed)** – Your organization must manually confirm POs after the vendor has accepted them.
+
+### Scheduling the auto-confirmation batch job
+
+If you use the **Active (PO is auto-confirmed)** option for one or more of your vendors (as described in the previous section), you must schedule the *Confirm accepted purchase orders from vendor collaboration* batch job, which is responsible for processing and confirming your POs. Otherwise, auto-confirmations will never occur. Use the following procedure to schedule this job.
+
+1. Go to **Procurement and sourcing \> Purchase orders \> Purchase order confirmation \> Confirm accepted purchase orders from vendor collaboration**.
+1. In the **Confirm accepted purchase orders from vendor collaboration** dialog box, on the **Run in the background** FastTab, select **Recurrence**.
+1. In the **Define recurrence** dialog box, define the schedule that the job should run on. When you're choosing your schedule, consider the following issues:
+
+    - If your system processes a large volume of data and runs many batch jobs, performance might be an issue. In this case, you probably should not run this job more often than every 10 minutes (depending on your other requirements). If performance isn't an issue for you, you can run it as often as every 1 to 2 minutes if required.
+    - If your vendors tend to deliver goods quickly (within the day that they agreed to), the recurrence should be frequent (every 10 to 30 minutes or so). In this way, warehouse workers will be able to receive the goods against the confirmed PO after confirmation is done.
+    - If your vendors tend to have a long lead time (more than 24 hours), you can set this task to run just once a day or so.
+
+1. Select **OK** to apply your schedule and return to the **Confirm accepted purchase orders from vendor collaboration** dialog box.
+1. Set additional background options as needed. The dialog box provides the usual options for setting up batch jobs in Supply Chain Management.
+
+For more information about batch jobs, see [Batch processing overview](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md).
 
 ### Specifying whether the vendor should see price information
 
@@ -117,7 +131,7 @@ The PO that was sent to the vendor and that has a status of <strong>In External 
 <li>Substitute an item.</li>
 </ul>
 The vendor can&#39;t change price information and charges. However, the vendor can suggest these changes by using notes.</td>
-<td>The vendor response is recorded as <strong>Accepted with changes</strong>, and the status of the PO remains <strong>In External Review</strong>. The statuses show the types of changes that the vendor has suggested. For information about the automatic consumption of changes, see the &quot;Update the PO when a vendor suggests changes&quot; section later in this topic. </td>
+<td>The vendor response is recorded as <strong>Accepted with changes</strong>, and the status of the PO remains <strong>In External Review</strong>. The statuses show the types of changes that the vendor has suggested. For information about the automatic consumption of changes, see the &quot;Update the PO when a vendor suggests changes&quot; section later in this article. </td>
 </tr>
 </tbody>
 </table>

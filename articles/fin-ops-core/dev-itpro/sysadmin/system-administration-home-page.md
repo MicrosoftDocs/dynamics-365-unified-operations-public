@@ -2,7 +2,7 @@
 # required metadata
 
 title: System administration home page
-description: This topic lists resources that are available for system administrators.
+description: This article lists resources that are available for system administrators.
 author: sericks007
 ms.date: 11/20/2020
 ms.topic: article
@@ -31,10 +31,10 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic points to content for system administrators of Finance and Operations. This content will help you configure the system so that it works smoothly and effectively for your organization.
+This article points to content for system administrators of finance and operations. This content will help you configure the system so that it works smoothly and effectively for your organization.
 
 ## One Version
-In July 2018 we announced a change to the way we deliver Dynamics 365 updates that will help you stay current in a consistent, predictable, and seamless manner. The following topics are intended to provide clarity on the Finance and Operations service updates, processes, and tools you can use to stay current.
+In July 2018 we announced a change to the way we deliver Dynamics 365 updates that will help you stay current in a consistent, predictable, and seamless manner. The following topics are intended to provide clarity on the finance and operations service updates, processes, and tools you can use to stay current.
 
 - [One Version service updates overview](../lifecycle-services/oneversion-overview.md)
 - [One Version service updates FAQ](../../fin-ops/get-started/one-version.md)
@@ -45,7 +45,7 @@ In July 2018 we announced a change to the way we deliver Dynamics 365 updates th
 - [Get notified about service updates through Lifecycle Services (LCS)](../lifecycle-services/notifications-service-updates.md)
 
 ## Implementation management with Lifecycle Services
-Microsoft Dynamics Lifecycle Services (LCS) is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the lifecycle of your Finance and Operations implementations.
+Microsoft Dynamics Lifecycle Services (LCS) is a collaboration portal that provides an environment and a set of regularly updated services that can help you manage the lifecycle of your finance and operations implementations.
 
 The lifecycle of an implementation spans many phases from pre-sales through Analysis, Design and Development, Test, and Deployment to Operation, possibly in multiple iterative roll-outs. It can last a few months to multiple years, based on the scope and complexity of the project and the chosen deployment model, for example, in the managed cloud or on-premises. 
 
@@ -82,7 +82,7 @@ Because rules can be set up for automatic role assignment, the administrator doe
 
 - [Role-based security](role-based-security.md)
 - [Security architecture](security-architecture.md)
-- [Encryption in Finance and Operations apps](encryption.md)
+- [Encryption in finance and operations apps](encryption.md)
 
 ## Batch processing
 Many tasks can be run as part of batch jobs. For example, batch jobs can include tasks for printing reports, doing maintenance, or sending electronic documents. By using batch jobs, you can avoid slowing down your computer or the server during typical working hours.
@@ -108,7 +108,7 @@ The integration with Microsoft Office provides a set of productive, collaborativ
 - [Troubleshoot the Office integration](../office-integration/office-integration-troubleshooting.md)
 
 ## Mobile
-The Finance and Operations mobile app enables your organization to make its business processes available on mobile devices. After you enable the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices.
+The finance and operations mobile app enables your organization to make its business processes available on mobile devices. After you enable the mobile workspaces for your organization, users can sign in to the app and immediately begin to run business processes from their mobile devices.
 
 - [Mobile app home page](../mobile-apps/Mobile-app-home-page.md)
 - [Available mobile workspaces](../mobile-apps/mobile-workspaces-released.md)

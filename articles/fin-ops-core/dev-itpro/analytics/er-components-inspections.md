@@ -2,7 +2,7 @@
 # required metadata
 
 title: Inspect the configured ER component to prevent runtime issues
-description: This topic explains how to inspect the configured Electronic reporting (ER) components to prevent runtime issues that might occur.
+description: This article explains how to inspect the configured Electronic reporting (ER) components to prevent runtime issues that might occur.
 author: NickSelin
 ms.date: 01/03/2022
 ms.topic: article
@@ -85,7 +85,7 @@ ER uses the following categories to group consistency check inspections:
 
 ## List of inspections
 
-The following table provides an overview of the inspections that ER provides. For more information about these inspections, use the links in the first column to go to the relevant sections of this topic. Those sections explain the types of components that ER provides inspections for and how you can reconfigure ER components to help prevent issues.
+The following table provides an overview of the inspections that ER provides. For more information about these inspections, use the links in the first column to go to the relevant sections of this article. Those sections explain the types of components that ER provides inspections for and how you can reconfigure ER components to help prevent issues.
 
 <table>
 <thead>

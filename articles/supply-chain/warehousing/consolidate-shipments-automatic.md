@@ -2,8 +2,8 @@
 # required metadata
 
 title: Consolidate shipments released to the warehouse using automatic release of sales orders
-description: This topic presents a scenario where multiple orders are released to the warehouse in the same automated release-to-warehouse periodic procedure.
-author: GarmMSFT
+description: This article presents a scenario where multiple orders are released to the warehouse in the same automated release-to-warehouse periodic procedure.
+author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod:
@@ -30,13 +30,13 @@ ms.dyn365.ops.version: 10.0.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic presents a scenario where multiple orders are released to the warehouse in the same automated release-to-warehouse periodic procedure. The orders will automatically be consolidated into shipments, based on rules that are defined as shipment consolidation policies.
+This article presents a scenario where multiple orders are released to the warehouse in the same automated release-to-warehouse periodic procedure. The orders will automatically be consolidated into shipments, based on rules that are defined as shipment consolidation policies.
 
 During the scenario, you will create sets of sales orders and release each set to the warehouse. You will then review the shipments that are created or updated during shipment consolidation, based on the configured policies.
 
 ## Make demo data available
 
-The scenario in this topic references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management. If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to **USMF** before you begin.
+The scenario in this article references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management. If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to **USMF** before you begin.
 
 ## Set up shipment consolidation policies and product filters
 

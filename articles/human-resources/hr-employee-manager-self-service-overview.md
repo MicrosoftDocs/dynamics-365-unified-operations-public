@@ -15,7 +15,7 @@ ms.search.form: HRMParameters, EssWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: ["51941", "intro-internal"]
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec

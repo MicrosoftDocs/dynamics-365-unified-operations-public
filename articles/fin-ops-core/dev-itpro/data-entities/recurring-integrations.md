@@ -2,7 +2,7 @@
 # required metadata
 
 title: Recurring integrations
-description: This topic describes recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
+description: This article describes recurring integrations, including the process of data migration and the movement into and out of any enterprise system.
 author: peakerbl
 ms.date: 10/07/2021
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 Recurring integration does the following things:
 
 - It builds on data entities and the Data management framework.
-- It enables the exchange of documents or files between Finance and Operations and any third-party application or service.
+- It enables the exchange of documents or files between finance and operations and any third-party application or service.
 - It supports several document formats, source mapping, Extensible Stylesheet Language Transformations (XSLT), and filters.
 
     ![Document/file exchange in several document formats.](./media/recurring-integrations.png)
@@ -84,6 +84,8 @@ The integration REST API uses the same OAuth 2.0 authentication model as the ot
     > Currently, monitoring recurrence enables load monitoring only on the queue for your recurring data job. No additional policies are supported via this service. You can use this feature to fine-tune the processing recurrence as the load demand requires.
 
 7. Select **OK**, and then select **Yes** in the confirmation message box.
+
+For more information, see [Process and consume data packages in the finance and operations solutions](../lcs-solutions/process-data-packages-lcs-solutions.md).
 
 ## Manage recurring data jobs
 1. In the **System administration** workspace (not the **System administration** module), select the **Data Management IT** workspace.
@@ -211,7 +213,7 @@ You can set the **Prevent upload when zero records** option either when you conf
 Your implementation might include runs of recurring jobs where files or packages were uploaded. Your implementation might also include runs where no files or packages were uploaded, because there was nothing to upload. If you suspect that a file that should have been uploaded wasn't uploaded, or that a file that should not have been uploaded was uploaded, you can use the **Manage messages** page for the recurring export job to help with the debugging process.
 
 > [!NOTE]
-> These features were added in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition platform update 12. Jobs that were run before you upgraded to Platform update 12 won't have values in the following columns.
+> These features were added in Microsoft Dynamics 365 for finance and operations, Enterprise edition platform update 12. Jobs that were run before you upgraded to Platform update 12 won't have values in the following columns.
 
 The **Total records exported** column shows the total count of records that were exported. A value of **0** (zero) indicates that no records were exported to the file or included in the package.
 
@@ -224,3 +226,4 @@ The dequeue API returns HTTP instead of HTTPS. This behavior can be seen in appl
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

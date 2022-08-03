@@ -2,9 +2,9 @@
 # required metadata
 
 title: Extensible data security policies 
-description: This topic provides an overview of Extensible Data Security (XDS) policies in Finance and Operations apps.
+description: This article provides an overview of Extensible Data Security (XDS) policies in finance and operations apps.
 author: Peakerbl
-ms.date: 04/26/2021
+ms.date: 03/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,8 +29,8 @@ ms.dyn365.ops.version: 10.0.12
 # Extensible data security policies 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of Extensible Data Security (XDS) policies in
-Finance and Operations apps. XDS allows developers to supplement role-based security
+This article provides an overview of Extensible Data Security (XDS) policies in
+Finance and operations apps. XDS allows developers to supplement role-based security
 by restricting access to table records based on security policies. The query in
 the policy applies a filter and only records that satisfy the conditions of the filter will
 be accessible from the restricted tables.
@@ -90,6 +90,8 @@ the records that are included by each policy are the only records that can be
 accessed. This means that a record must satisfy all the applicable security
 policies before access to the record is allowed.
 
+XDS is not supported for financial dimensions and using XDS with financial dimension data will result in corruption of the data.
+
 ## Additional resources
 
 For information about how to debug policies, create more advanced policies, including
@@ -101,9 +103,6 @@ more please refer to these resources:
 - [Developing Extensible Data Security Policies (white paper) [AX
 2012]](/dynamicsax-2012/appuser-itpro/developing-extensible-data-security-policies-white-paper)
 
-- [Securing Data by Dimension Value by using Extensible Data Security (white
-paper) [AX 2012]](/dynamicsax-2012/appuser-itpro/securing-data-by-dimension-value-by-using-extensible-data-security-white-paper)
-
 - [Extensible Data Security examples – by Andre Arnaud De
 Calavon [blog]](https://dynamicspedia.com/tag/xds/)
 
@@ -112,3 +111,4 @@ Meyer [blog]](https://alexdmeyer.com/2019/02/20/extensible-data-security-xds-fra
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Make backing tables consumable as financial dimensions
-description: This topic provides the steps that you need to follow to make a backing table usable as a Financial dimension.
+description: This article provides the steps that you need to follow to make a backing table usable as a Financial dimension.
 author: RyanCCarlson2
 ms.date: 03/04/2019
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 191363
 ms.assetid: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides the steps that you need to follow if you want to make a backing table usable as a Financial dimension.
+This article provides the steps that you need to follow if you want to make a backing table usable as a Financial dimension.
 
 > [!IMPORTANT]
 > Do not create financial dimensions that have values that are not reusable or use one-to-one dimension value combinations. Views cannot be used as a source of dimension values for a DimAttribute. Although this may seem to work, it will cause MR to fall back to row-by-row processing in order to get the dimension fact data imported to the database. This results in extremely slow performance or broken reports. 
@@ -169,7 +169,7 @@ If a new Organization Model OMOperatingUnitType enumeration is added, the steps 
 1. Copy one of the existing DimAttributeOM[BackingTableName] views, rename it appropriately, and then adjust all associated labels and help text.
 1. Expand the Datasource\BackingEntity (OMOperatingUnit)\Ranges node on the copied view. Change the value property on the range to the new OMOperatingUnitType enumeration value that was just added.
 1. Build and synchronize the project.
-1. Follow the steps in this topic starting with Step 2, where you validate the data in SQL, and then continue through Step 5, where you validate that the dimension appears in the **Use Value From** lookup.
+1. Follow the steps in this article starting with Step 2, where you validate the data in SQL, and then continue through Step 5, where you validate that the dimension appears in the **Use Value From** lookup.
 
 Because the **OMOperatingUnitType** is backed by the **OMOperatingUnit** table, generic code already exists to handle the delete, update, and **renamePrimaryKey** methods. Therefore, you do not need to update these methods.
 

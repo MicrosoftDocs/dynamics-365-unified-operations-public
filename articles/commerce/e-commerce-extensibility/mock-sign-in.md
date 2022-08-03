@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mock the signed-in state during local development
-description: This topic describes how to mock a signed-in user in a Dynamics 365 Commerce online local development environment.
+description: This article describes how to mock a signed-in user in a Dynamics 365 Commerce online local development environment.
 author: samjarawan
 ms.date: 01/31/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Release 10.0.5
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes how to mock a signed-in user in a Dynamics 365 Commerce online local development environment.
+This article describes how to mock a signed-in user in a Dynamics 365 Commerce online local development environment.
 
 Over the course of developing your e-Commerce online site, it may become necessary to develop and test scenarios for signed-in users. Rather than publish these pages and test against live pages, you can instead mock the signed-in state when running in developer mode.
  

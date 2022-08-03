@@ -2,7 +2,7 @@
 # required metadata
 
 title: Consolidation and elimination overview
-description: This topic provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
+description: This article provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: overview
@@ -15,13 +15,13 @@ ms.search.form: LedgerConsolidate
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: ["13151", "intro-internal"]
 ms.assetid: 9d8f55cb-b2cf-4e01-89cf-0e21f5c8ae1f
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
+This article provides general information about the consolidation and elimination process. It includes answers to some frequently asked questions.
 
 When you consolidate data, the financial results for multiple subsidiary companies are combined into results for a single, consolidated company. Subsidiaries might be on different versions or systems, they might not be fully owned, and they might use different currencies. There are multiple options for consolidating data:
 

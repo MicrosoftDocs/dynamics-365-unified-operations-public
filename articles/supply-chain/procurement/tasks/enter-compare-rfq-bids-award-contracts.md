@@ -2,8 +2,8 @@
 # required metadata 
  
 title: Enter and compare RFQ bids and award contracts
-description: This topic explains how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors. 
-author: Henrikan
+description: This article explains how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors. 
+author: GalynaFedorova
 ms.date: 07/09/2019
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: henrikan
+ms.author: gfedorova
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors. You can use this procedure in the **USMF** demo data company.
+This article explains how to enter replies to a request for quotation (RFQ), score and compare bids, and then award the contract to one of the vendors. You can use this procedure in the **USMF** demo data company.
 
 Before you start this procedure, you must have an RFQ that has two lines, and that has been sent to at least two vendors. To create this RFQ, complete the [Create a request for quotation](create-request-quotation.md) procedure. Scoring criteria must also be set up before you can complete this procedure.
 

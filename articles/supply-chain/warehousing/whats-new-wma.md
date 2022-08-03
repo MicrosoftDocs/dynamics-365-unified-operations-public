@@ -1,10 +1,10 @@
 ---
 title: What's new or changed in the Warehouse Management mobile app
-description: This topic lists the new and changed features for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+description: This article lists the new and changed features for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 03/11/2022
+ms.date: 04/25/2022
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -17,7 +17,66 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
+
+## Version 2.0.30.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Improved stability.
+
+## Version 2.0.28.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Improved stability.
+- Introduced the ability to continue scanning even while an error dialog is shown on the screen.
+- Added support for ASCII 10 in barcodes.
+- Improved the usability of step instruction dialogs.
+- Fixed an issue where a blank screen could sometimes be shown.
+- Fixed an issue where work lists didn't scroll correctly when running on Microsoft Windows.
+
+## Version 2.0.25.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Increased performance.
+- Increased stability.
+- Improved the **Inquiry** page to support longer texts in subheaders.
+- Introduced the ability to immediately cancel a flow with a single tap or click (when **Cancel** is the only action available under **More actions**).
+- Fixed an issue where focus could sometimes be lost between entry controls on the **Edit connection** page and custom pages.
+- Fixed an issue where buttons could sometimes become irresponsive and remain shown as selected when included in a scrolling view.
+- Fixed an issue where the wrong layout could sometimes be used on the main page.
+
+## Version 2.0.24.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Improved scanner pages to enable the scan option on **Details** pages.
+- Improved gestures, such as touch/tap screen.
+- Improved performance issues for Android.
+- Fixed placement of multiple headers to allow more cards to display on the **Inquiry** page.
+- Improved scrolling so less distance for scrolling pagination is enabled.
+- Added long press to display additional text on the **Inquiry** page.
+- Fixed missing device ID information for Android.
+- Increased stability.
+- Optimized the login layout.
+- Added swipe-right gesture to close dialog pop-up pages on the number pad, **Details** page, and input pages.
+
+## Version 2.0.22.0
+
+This version introduces the following new features, fixes, and improvements:
+
+- Fixed several crashing issues.
+- Fixed an issue where some characters would not be recognized when scanning or typing on the default page.
+- Fixed an issue where typing a backspace on the default page would delete two characters at a time.
+- Fixed an issue where the **Sort by** field on the **Work list** page would display an incorrect value that didn't correspond to the actual sorting order of the cards.
+- Fixed an issue where an incorrect layout would be shown after resizing the app window while running on Microsoft Windows.
+- Fixed an issue where scrolling in a pop-up list could result in some list items remaining hidden or becoming distorted.
+- Redesigned the sign-in page to let it display the username and password fields on the same page when running on larger displays.
+- Improved the way controls react to fast tapping.
+- Added an in-app error log view.
+- Added several accessibility improvements (improved narration, fixed missing placeholders on Android, enabled keyboard input for slider controls, and more).
 
 ## Version 2.0.20.0
 

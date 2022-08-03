@@ -2,7 +2,7 @@
 # required metadata
 
 title: Split periods in periodic journals
-description: This topic provides information about split periods in periodic journals or recurring journals for legal entities in Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, and Russia.
+description: This article provides information about split periods in periodic journals or recurring journals for legal entities in Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, and Russia.
 author: ShylaThompson
 ms.date: 06/20/2017
 ms.topic: article

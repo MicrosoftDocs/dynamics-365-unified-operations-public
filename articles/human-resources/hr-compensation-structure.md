@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Develop a compensation structure
-description: This topic explains how to create a fixed compensation plan and enroll employees in the plan through eligibility rules. 
+description: This article explains how to create a fixed compensation plan and enroll employees in the plan through eligibility rules. 
 author: twheeloc
 ms.date: 08/25/2021
 ms.topic: business-process 
@@ -14,7 +14,7 @@ ms.technology:
 ms.search.form: DefaultDashboard, HcmCompensationWorkspace, HcmCompFixedPlansPart, HRMCompFixedPlanTable, HRMCompCreateGridDialog, HRCCompGridView, HRMCompEligibility,  HRCCompGrid   
 audience: Application User 
 # ms.devlang:  
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes creating a fixed compensation plan and enrolling employees in the plan through eligibility rules. This topic uses the USMF demo data and applies to compensation and benefits Managers.
+This article describes creating a fixed compensation plan and enrolling employees in the plan through eligibility rules. This article uses the USMF demo data and applies to compensation and benefits Managers.
 
 ## Create a fixed compensation plan
 

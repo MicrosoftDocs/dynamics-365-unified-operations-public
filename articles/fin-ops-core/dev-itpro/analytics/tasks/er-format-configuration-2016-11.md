@@ -2,7 +2,7 @@
 # required metadata 
  
 title: ER Create a format configuration (November 2016)
-description: This topic explains how to create a format configuration for Electronic reporting (ER). 
+description: This article explains how to create a format configuration for Electronic reporting (ER). 
 author: NickSelin
 ms.date: 08/02/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how a user in the System Administrator or Electronic Reporting Developer role can create a format configuration for Electronic reporting (ER). This format configuration will define the format of electronic documents that are used for processing payments. In this example, you will create a format configuration for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the "Map model to selected datasources" procedure.
+This article explains how a user in the System Administrator or Electronic Reporting Developer role can create a format configuration for Electronic reporting (ER). This format configuration will define the format of electronic documents that are used for processing payments. In this example, you will create a format configuration for sample company, Litware, Inc. To complete these steps, you must first complete the steps in the "Map model to selected datasources" procedure.
 
 
 ## Create a new format configuration

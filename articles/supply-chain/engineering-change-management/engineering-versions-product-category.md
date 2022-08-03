@@ -2,9 +2,9 @@
 # required metadata
 
 title: Engineering versions and engineering product categories
-description: This topic provides information about the concept of engineering versions. Engineering versions ensure that different states of a product and its data are kept current and clear, and that they can be visualized in the system.
+description: This article provides information about the concept of engineering versions. Engineering versions ensure that different states of a product and its data are kept current and clear, and that they can be visualized in the system.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 04/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
@@ -64,7 +64,7 @@ Note that an engineering product can be in only one engineering change order at 
 
 ## Track versions in transactions
 
-When you use engineering change management, your product master data always includes one or more engineering versions. In your setup of engineering products, you can choose whether the engineering version is also part of *logistical transactions*. (For more information, see the [Set up engineering product categories](#product-category) section later in this topic.) If the logistical impact is relevant, it differs per product and per company. Sometimes, only the latest version of a product is used. Therefore, when you introduce a new version, the previous version can no longer be used. In other cases, the previous version is required in logistical transactions to overcome the following challenges:
+When you use engineering change management, your product master data always includes one or more engineering versions. In your setup of engineering products, you can choose whether the engineering version is also part of *logistical transactions*. (For more information, see the [Set up engineering product categories](#product-category) section later in this article.) If the logistical impact is relevant, it differs per product and per company. Sometimes, only the latest version of a product is used. Therefore, when you introduce a new version, the previous version can no longer be used. In other cases, the previous version is required in logistical transactions to overcome the following challenges:
 
 - The Logistics department must ship two pieces of a product to a customer. In this case, you must decide whether you want or will allow two different versions to be shipped.
 - It's later discovered that a problem occurs, and that it's related to a specific change. In this case, it might be beneficial to determine exactly which version was shipped in each order.
@@ -122,7 +122,7 @@ Set the following fields on the **Details** FastTab of an engineering product ca
 | Product dimension group | The **Track versions in transactions** setting helps you select the product dimension group. If you specified that you want to track the version in transactions, the product dimension groups where the *version* dimension is used will be shown. Otherwise, only product dimension groups where the *version* dimension isn't used will be shown. |
 | Product lifecycle state at creation | Set up the default product lifecycle state that an engineering product should have when it's first created. For more information, see [Product lifecycle states and transactions](product-lifecycle-state-transactions.md). |
 | Version number rule | Select the version number rule that applies to the category:<ul><li>**Manual** – You choose the version number for each new version.</li><li>**Automatic** – The system sets the version number, based on a format that you define. When you set up the format, use a number sign (\#) to represent a digit and any other character to represent a constant value. For example, if you define the format as *V-\#\#*, the first version will be "V-01," the second version will be "V-02," and so on.</li><li>**List** – The system takes the next number from a predefined list of custom values that you define.</li></ul> |
-| Enforce effectivity | Select whether the effectivity dates of engineering versions must be contiguous, or whether there can be gaps and overlaps. This setting affects the way that you can use the **Effective from** and **Effective to** fields for each engineering version where the category applies.<ul><li>If this option is set to *Yes*, an **Effective from** value must be specified for each version, and neither overlaps nor gaps are allowed between versions. The date range for each engineering version is connected directly to the previous and next engineering versions, if they exist. In this scenario, the newest version is always used, and older versions are no longer used.</li><li>If this option is set to **No**, there are no restrictions on the effectivity date fields for engineering versions, and both overlaps and gaps are allowed. In this scenario, multiple versions can be active at the same time, and you can work with any active version.</li></ul><p>This option also affects BOMs and routes that are connected to a product version. For more information, see the [Connect BOMs and routes to engineering versions](#boms-routes) section later in this topic.</p> |
+| Enforce effectivity | Select whether the effectivity dates of engineering versions must be contiguous, or whether there can be gaps and overlaps. This setting affects the way that you can use the **Effective from** and **Effective to** fields for each engineering version where the category applies.<ul><li>If this option is set to *Yes*, an **Effective from** value must be specified for each version, and neither overlaps nor gaps are allowed between versions. The date range for each engineering version is connected directly to the previous and next engineering versions, if they exist. In this scenario, the newest version is always used, and older versions are no longer used.</li><li>If this option is set to **No**, there are no restrictions on the effectivity date fields for engineering versions, and both overlaps and gaps are allowed. In this scenario, multiple versions can be active at the same time, and you can work with any active version.</li></ul><p>This option also affects BOMs and routes that are connected to a product version. For more information, see the [Connect BOMs and routes to engineering versions](#boms-routes) section later in this article.</p> |
 | Use number rule nomenclature | Set this option to *Yes* to enable rules for defining a product number by using number sequences, engineering attribute names and values, and text constants as segments. To create or modify rules, select the **Edit** button. |
 | Use name rule nomenclature | Set this option to *Yes* to enable rules for defining a name by using the engineering attribute names, engineering attribute values, and text constants as segments. To create or modify rules, select the **Edit** button. |
 | Use description rule nomenclature | Set this option to *Yes* to enable rules for defining the description by using the engineering attribute names, engineering attribute values, and text constants as segments. To create or modify rules, select the **Edit** button. |
@@ -141,7 +141,7 @@ For each row that you add to the grid, set the following fields.
 |---|---|
 | Name | Select the attribute to add. |
 | Value | Select the default value for the attribute. |
-| Mandatory | For attributes of the *Boolean* type, if this option is set to *Yes*, users must set the attribute to *Yes*. If this option is set to *No*, users can set the attribute to either *Yes* or *No*. For other data types, the setting of this option is just informational. |
+| Mandatory | Choose whether the attribute is mandatory, which means users must specify a valid value for the attribute before they can save a product. The effect of this setting varies slightly based on the data type of the selected attribute, as defined in the following list.<ul><li>**Boolean** – Set this to *Yes* to require the attribute to have a value of *Yes* (the system will refuse to save a product where the attribute is set to *No*). Set this to *No* to accept a value of *Yes* or *No*. (Attributes of type *Boolean* can't have an empty value.)</li><li>**Integer or Decimal** – Set this to *Yes* to require users to enter a non-zero value for this attribute. Set this to *No* to allow users to save with a value of zero.  (Attributes of these types can't have an empty value.)</li><li>**List** – Lists have a data type of *Text*, but also include a predefined list of possible values. Therefore, it isn't possible to enter a blank value for attributes of this type, so this setting has no effect and is just informational.</li><li>**All other data types** – Set this to *Yes* to make the attribute mandatory. Set this to *No* to allow users to save a product without providing a value for this attribute.</li></ul> |
 | Batch attribute | Select whether the attribute should be propagated through the batch functionality. |
 
 ### Readiness policy FastTab

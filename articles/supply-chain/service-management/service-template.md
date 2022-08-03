@@ -3,7 +3,7 @@
 
 title: Service templates
 description: You can define a service agreement as a template and copy the lines of the template later into another service agreement or into a service order.
-author: kamaybac
+author: sorenva
 ms.date: 02/19/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -69,7 +69,7 @@ It is easier to determine the service-template lines that you want to copy if
 you have grouped the templates under names that reflect the use of the
 templates.
 
-## Related topics
+## Related articles
 
 [Copy service templates lines](copy-service-template-lines.md)
 

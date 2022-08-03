@@ -2,7 +2,7 @@
 # required metadata
 
 title: Commission settlement on payments
-description: This topic provides information about commission settlement on payments.
+description: This article provides information about commission settlement on payments.
 author: ilkond
 ms.date: 03/17/2020
 ms.topic: article

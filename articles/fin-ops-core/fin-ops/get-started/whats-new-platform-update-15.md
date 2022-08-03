@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 for Finance and Operations platform update 15 (March 2018)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 15. This version was released in March 2018. 
+description: This article describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 15. This version was released in March 2018. 
 author: tonyafehr
 ms.date: 06/08/2018
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Platform update 13, Platform update 14, Platform update 1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 15. This version was released in March 2018 and has a build number of 7.0.4841.
+This article describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 15. This version was released in March 2018 and has a build number of 7.0.4841.
 
 > [!NOTE]
 > This platform release is cumulative. It contains new or changed features from Platform update 13, Platform update 14, and Platform update 15, as well as all earlier updates.
@@ -51,7 +51,7 @@ The ability to color grid rows without overlayering is now possible via the OnDi
 
 ## Accessibility support for controls and forms developed using the cloud platform
 
-Reaffirming our commitment to providing accessible software, this update focuses on broadening our already rich accessibility feature set. These updates improve many platform components such as grids, tables, and forms to comply with Microsoft's Accessibility Standards. With additional support for performing tasks via the keyboard, there is richer integration with screen readers, high contrast theming and full label support, and applications built using the cloud platform which provide additional opportunities for users with disabilities.
+Reaffirming our commitment to providing accessible software, this update focuses on broadening our already rich accessibility feature set. These updates improve many platform components such as grids, tables, and forms to comply with Microsoft's Accessibility Standards. With additional support for performing tasks via the keyboard, there is richer integration with screen readers, high contrast theming and full label support, and applications built using the cloud platform which provides additional opportunities for users with disabilities.
 
 ## Client-based alerts
 
@@ -63,7 +63,7 @@ For more information about alerts, see [Alerts overview](alerts-overview.md).
 
 ## Data entity behavior with configuration keys
 
-Data management honors the configuration key settings on data entities, tables, and fields. Because of the hierarchial structure of these artifacts, data management will allow a child in the hierarchy to be used if the configuration key on itself and it's parent is enabled. If a parent's configuration key is disabled, none of the children will be made available for use in imports and exports. For a detailed explaination of this behavior, see [Configuration keys and data entities](../../dev-itpro/data-entities/config-key-entities.md)
+Data management honors the configuration key settings on data entities, tables, and fields. Because of the hierarchical structure of these artifacts, data management will allow a child in the hierarchy to be used if the configuration key on itself and its parent is enabled. If a parent's configuration key is disabled, none of the children will be made available for use in imports and exports. For a detailed explanation of this behavior, see [Configuration keys and data entities](../../dev-itpro/data-entities/config-key-entities.md)
 
 ## Embed Power Apps
 
@@ -88,11 +88,11 @@ The Message Center has been upgraded to the new Action Center. Not only have the
 
 Dynamics 365 Talent provides "getting started" workbooks so users can use Excel to interactively view, edit, and create data. These workbooks, powered by the Excel add-in, provide a productive environment configuration experience. With this enhancement, you can move data from one environment to another by reading data into Excel from one environment, change the environment address, and then publish the data into the new environment.
 
-For more information, see [Copy environment data](/../../dev-itpro/office-integration/use-excel-add-in.md#copy-environment-data).
+For more information, see [Copy environment data](../../dev-itpro/office-integration/use-excel-add-in.md#copy-environment-data).
 
 ## Power users can add custom fields to forms without developer customization
 
-Many application customizations involve adding one or more fields to existing tables and including them in application forms. Most of your customizations may be comprised of adding fields.
+Many application customizations involve adding one or more fields to existing tables and including them in application forms. Most of your customizations may be composed of adding fields.
 
 Customizations are expensive because they require developer intervention for development, test, and code life cycle management. Customizations also need to be managed and migrated from one environment to another.
 

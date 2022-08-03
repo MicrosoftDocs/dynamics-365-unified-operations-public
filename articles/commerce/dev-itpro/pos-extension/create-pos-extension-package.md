@@ -1,6 +1,6 @@
 ---
 title: Create a POS extension package project 
-description: This topic explains how to create a Point of Sale (POS) extension package project.
+description: This article explains how to create a Point of Sale (POS) extension package project.
 author: mugunthanm
 ms.date: 04/13/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.18
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to create a Point of Sale (POS) extension package project. A POS extension package project is a set of extensions that, when they are combined, enable a custom end-to-end POS scenario that uses Microsoft Visual Studio. POS extension package projects apply to extension scenarios for both Modern POS (MPOS) and Cloud POS (CPOS).
+This article explains how to create a Point of Sale (POS) extension package project. A POS extension package project is a set of extensions that, when they are combined, enable a custom end-to-end POS scenario that uses Microsoft Visual Studio. POS extension package projects apply to extension scenarios for both Modern POS (MPOS) and Cloud POS (CPOS).
 
 1. In Visual Studio, create a new .NET Standard class library project that uses .NET Standard 2.0, and name it **POS.Extensions**.
 2. Delete the class file that is created together with the project.

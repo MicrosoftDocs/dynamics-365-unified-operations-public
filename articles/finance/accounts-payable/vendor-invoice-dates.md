@@ -2,7 +2,7 @@
 # required metadata
 
 title: Vendor invoice dates
-description: This topic describes the dates that appear on vendor invoices. It also explains how to set up the system so that it automatically adjusts the posting date.
+description: This article describes the dates that appear on vendor invoices. It also explains how to set up the system so that it automatically adjusts the posting date.
 author: sunfzam
 ms.date: 2/09/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the dates that appear on vendor invoices. It also explains how to set up the system so that it automatically adjusts the posting date.
+This article describes the dates that appear on vendor invoices. It also explains how to set up the system so that it automatically adjusts the posting date.
 
 On the **Pending vendor invoice detailed** page, the invoice header shows four dates: the invoice received date, the invoice date, the posting date, and the due date. When a vendor invoice is created, the following dates are entered by default:
 
@@ -41,7 +41,7 @@ On the **Pending vendor invoice detailed** page, the invoice header shows four d
 
 Sometimes, a vendor invoice might be in a pending state for a long time after the period close. When it's ready for posting, the old posting date of the past posting period is still used. However, that period has now been closed. Therefore, an Accounts payable (AP) clerk must manually change all the posting dates to the new posting period for all pending invoices that were previously created.
 
-The feature that is described in this topic lets you set up the system so that it automatically adjusts the posting date according to business requirements.
+The feature that is described in this article lets you set up the system so that it automatically adjusts the posting date according to business requirements.
 
 ## Parameter for automatically adjusting the vendor invoice posting date
 

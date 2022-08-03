@@ -2,7 +2,7 @@
 # required metadata
 
 title: EU Sales list for Germany
-description: This topic provides information about the European Union (EU) sales list report for Germany.
+description: This article provides information about the European Union (EU) sales list report for Germany.
 author: AKroshkina
 ms.date: 03/02/2022
 ms.topic: article
@@ -29,7 +29,7 @@ ms.search.validFrom:
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the European Union (EU) sales list report. The German EU sales list report contains information about the sale of goods and services for reporting in text format.
+This article provides information about the European Union (EU) sales list report. The German EU sales list report contains information about the sale of goods and services for reporting in text format.
 The following fields are included on the German EU sales list report:
 
 - **EU sales list header:**

@@ -1,36 +1,27 @@
 ---
-# required metadata
-
 title: Install network printer devices in on-premises environments
-description: This topic explains how to connect an on-premises deployment of Microsoft Dynamics 365 Finance + Operations (on-premises), to existing network printer devices.
-author: RichdiMSFT
-ms.date: 04/21/2021
+description: This article explains how to connect an on-premises deployment of Microsoft Dynamics 365 Finance + Operations (on-premises), to existing network printer devices.
+author: faix
+ms.date: 04/07/2022
 ms.topic: article
-ms.prod: 
+ms.prod: dynamics-365
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysCorpNetPrinterList
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: richdi
+ms.author: osfaixat
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
-
+ms.custom: 
+ms.search.form: SysCorpNetPrinterList
+ms.service: 
 ---
 
 # Install network printer devices in on-premises environments
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to connect an on-premises deployment of Microsoft Dynamics 365 Finance + Operations (on-premises) to existing network printer devices. Network printing in the on-premises application is supported by the [Print and Document Services](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831468(v=ws.11)) feature in Microsoft Windows Server 2016. This feature lets you centralize tasks that are related to printer management. To install and configure Print and Document Services, you must have administrative access to the server that hosts the primary instance of Application Object Server (AOS).
+This article explains how to connect an on-premises deployment of Microsoft Dynamics 365 Finance + Operations (on-premises) to existing network printer devices. Network printing in the on-premises application is supported by the [Print and Document Services](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh831468(v=ws.11)) feature in Microsoft Windows Server 2016. This feature lets you centralize tasks that are related to printer management. To install and configure Print and Document Services, you must have administrative access to the server that hosts the primary instance of Application Object Server (AOS).
 
 Two roles are associated with the configuration of network printing services:
 
@@ -90,7 +81,7 @@ To install printers on nodes where AXService is executing under a gMSA, follow t
 # If Remoting, execute
 # .\Install-PrintersOnGmsa-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -SysInternalsFolderLocation \\networkshare\SysInternalsSuite -ForcePushLBDScripts
 
-.\Install-PrintersOnGmsa.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -SysInternalsFolderLocation \\networkshare\SysInternalsSuite
+.\Install-PrintersOnGmsa.ps1 -PrintersJsonFilePath .\Printers.json -SysInternalsFolderLocation \\networkshare\SysInternalsSuite
 ```
 
 ## Manage network printers

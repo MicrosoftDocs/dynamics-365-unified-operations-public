@@ -2,7 +2,7 @@
 # required metadata
 
 title: Mandatory default descriptions for posting of bank transactions
-description: This topic explains how to set up mandatory descriptions for bank account reconciliation transactions.
+description: This article explains how to set up mandatory descriptions for bank account reconciliation transactions.
 author: gionoder
 ms.date: 03/18/2022
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fiscal printer integration sample for Italy
-description: This topic provides an overview of the fiscal integration sample for Italy in Microsoft Dynamics 365 Commerce.
+description: This article provides an overview of the fiscal integration sample for Italy in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
 ms.date: 12/20/2021
 ms.topic: article
@@ -17,7 +17,7 @@ ms.search.validFrom: 2018-11-1
 
 [!include[banner](../includes/banner.md)]
 
-This topic provides an overview of the fiscal integration sample for Italy in Microsoft Dynamics 365 Commerce.
+This article provides an overview of the fiscal integration sample for Italy in Microsoft Dynamics 365 Commerce.
 
 The Commerce functionality for Italy includes a sample integration of the point of sale (POS) with a fiscal printer. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) so that it works with [Epson FP-90III Series](https://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) printers from Epson, and it enables communication with a fiscal printer in the web server mode via the EpsonFPMate web-service using Fiscal ePOS-Print API. The sample supports the Registratore Telematico (RT) mode only. The sample is provided in the form of source code and is part of the Retail software development kit (SDK).
 
