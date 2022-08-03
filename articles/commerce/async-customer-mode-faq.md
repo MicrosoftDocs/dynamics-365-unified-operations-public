@@ -4,7 +4,7 @@
 title: Asynchronous customer frequently asked questions. 
 description: This article answers frequently asked questions about asynchronous mode of customer management in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/02/2022
+ms.date: 08/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
