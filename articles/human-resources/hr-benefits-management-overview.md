@@ -156,16 +156,15 @@ Before you can process life events, you must have run open enrollment at least o
 - [Process life event changes](hr-benefits-process-life-event-changes.md)
 - [Process life event eligibility](hr-benefits-process-life-event-eligibility.md)
 
-Once the life event processing is completed, employees can make changes to the plan options impacted by the life event until the life event enrollment period is open. Admins can make the changes on behalf of employees. Once the enrollment period has ended and there are no unconfirmed plan types related to the transaction, life event 
-transaction is closed.  
+After the life event processing is completed and for as long as the life event enrollment period is open, employees can make changes to the plan options that are affected by the life event. Admins can make the changes on behalf of employees. After the enrollment period has ended and no unconfirmed plan types are related to the life event transaction, the transaction is closed.
 
-All the plans impacted by the life event must be either selected or waived and then confirmed. If a plan is not selected, not waived, and therefore not confirmed, then the life event transaction is not closed.  
+All the plans that are affected by the life event must be either selected or waived and then confirmed. If a plan isn't selected, isn't waived, and therefore isn't confirmed, the life event transaction isn't closed.
 
-A transaction can be closed manually by the admin, if needed. Admin can select the life event transaction and click **Close** to close the life event transaction. If there are unconfirmed plans in the transaction, and the admin wants to close it, closing the life event may restrict edits to those plans.  
+Admins can manually close a life event transaction as required, by selecting it and then selecting **Close**. If there are unconfirmed plans in the transaction, and an admin wants to close it, closure of the life event might restrict edits to those plans.
 
-A closed life event cannot be deleted.  
+Closed life events can't be deleted.
 
-The life event transactions can be reopened, if needed. Admin can select the life event transaction and click **Reopen** to reopen the life event transaction.  
+Admins can reopen a life event transaction as required, by selecting it and then selecting **Reopen**.
 
 ## Rate updates (optional)
 
