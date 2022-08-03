@@ -30,17 +30,15 @@ If the **Create customer in async mode** option is set to **Yes** in the store's
 
 ## Async customer limitations
 
-The async customer functionality currently has the following limitations:
+The async customer functionality currently has the following limitation:
 
 - Loyalty cards can't be issued to async customers unless the new customer account ID has been synced back to the channel.
 
 ## Async customer enhancements
 
-To help organizations in using asynchronous mode of customer management and reduce real-time communications with Headquarters, there have been numerous enhancements in bringing parity between synchronous and asynchronous mode of customer management in channels. 
+To help organizations manage customers using async mode and reduce real-time communications with Commerce headquarters, the following enhancements have been rolled out to bring parity between sync and async modes in channels. 
 
-To help organizations in using asynchronous mode of customer management and reduce real-time communications with Headquarters, there have been numerous enhancements in bringing parity between synchronous and asynchronous mode of customer management in channels. 
-
-| Feature  Enhancement | Dynamics 365 Commerce Version   | Feature Details |
+| Feature enhancement | Dynamics 365 Commerce version   | Feature details |
 | ------------- | -------------- | -------------- |
 |Performance improvements in retrieving customer information from channel database.  | 10.0.20 onwards |Customer entity is split into lightweight entities, and service retrieves only necessary information from channel database to improve performance.   |
 |Ability to create address asynchronously during checkout.  |10.0.22 onwards  | <p>**Feature switch**: Enable asynchronous creation for customer addresses.</br></br>**Feature details**:<ul><li>Ability to add addresses without making real-time-service calls to headquarters.</li><li>Ability to identify addresses uniquely in Channel DB, without RECID.</li><li>Tracking timestamps for address creation.</li><li>Synchronize addresses in headquarters.</li></ul>This feature affects both sync and async customers. In addition to create addresses asynchronously, to also edit addresses asynchronously Editing customers in asynchronous mode feature must be enabled.</p> |
@@ -50,13 +48,13 @@ To help organizations in using asynchronous mode of customer management and redu
 
 ### Feature switches hierarchy
 
-As described above, there are multiple feature management switches to enable complete set of enhancements related to async customer. However, one particular feature, i.e. **Enable editing customers in asynchronous mode** needs the following features to be enabled first: 
+Because of the hierarchy of feature switches, before enabling the **Enable editing customers in asynchronous mode** feature you must enable the following features first: 
 
-- Performance improvements for customer orders and customer transactions. This feature has been made as mandatory since 10.0.28 release. 
-- Enable enhanced async customer creation
-- Enable asynchronous creation for customer addresses
+- **Performance improvements for customer orders and customer transactions** - This feature has been mandatory since the Commerce version 10.0.28 release. 
+- **Enable enhanced async customer creation**
+- **Enable asynchronous creation for customer addresses**
 
-Refer to **[Async mode frequently asked questions](/commerce/async-mode-faq.md)** for any questions related to troubleshooting. 
+For answers to common troubleshooting questions, see [Async mode frequently asked questions](async-mode-faq.md). 
 
 After you enable the previously mentioned features, you must schedule a recurring batch job for the **P-job**, the **Synchronize customers and business partners from async mode** job, and the **1010** job, so that any async customers are converted to sync customers in Commerce headquarters.
 
