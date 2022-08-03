@@ -152,10 +152,10 @@ When running a query against a virtual entity you may get an error response with
 
 This error can be the result of the default integration applications being removed from the environment. Verify that the two following applications are listed in the **Azure Active Directory applications** page in the finance and operations apps environment. These applications are added to the environment by default. Dataverse virtual entities for finance and operations apps are unable to gain authorization to the finance and operations environment if these applications are removed from the list.
 
-    | Client Id | Name | User ID |
-    | --------- | ---- | ------- |
-    | 61a0518c-121a-421a-9ad6-f0955a88be43 | PowerPlatformApplication | PowerPlatformApp |
-    | f1752846-f0df-4766-96f5-c109adf67d7f | PowerPlatRuntimeApp | PowerPlatformApp |
+| Client ID | Name | User ID |
+| --------- | ---- | ------- |
+| 61a0518c-121a-421a-9ad6-f0955a88be43 | PowerPlatformApplication | PowerPlatformApp |
+| f1752846-f0df-4766-96f5-c109adf67d7f | PowerPlatRuntimeApp | PowerPlatformApp |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
