@@ -97,7 +97,10 @@ The following components are essential for a search results page:
     - Product name – \[Z-A\]
     - Ratings – low to high
     - Ratings – high to low
-    - Default (*if 'Display order' values are defined for the products in the navigation hierarchy, then when sorting by default on category page it would honor those 'Display order' values otherwise it shall sort by the 'Product number' for category-browsing*)
+    - Default 
+    
+    > [!NOTE]
+    > If **Display order** values are defined for the products in the navigation heirarchy, sorting by default on a category page honors the values defined in **Display order**. Otherwise, sorting will be done by the **Product number**.)
     
 - **Advanced Sorting options** are used by website visitors to sort the products using smarter criteria. By enabling [Product recommendations](product-recommendations.md), the following sorting options are available:
     - New
