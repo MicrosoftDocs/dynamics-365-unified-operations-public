@@ -4,7 +4,7 @@
 title: Cloud-powered search overview
 description: This article gives an overview of cloud-powered search in Microsoft Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 02/28/2022
+ms.date: 08/03/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -69,7 +69,7 @@ The following illustration shows an example where immersive autosuggest is being
 
 ## Sort
 
-Sorting support in Commerce solution lets customers sort, search, and browse category results, and refine them by criteria such as price, product name, and product number. Additionally, with [Product recommendations being enabled](product-recommendations.md) customers can also sort results based on advanced sorting criteria such as New, Best-selling and Trending.
+Sort functionality enables customers to sort, search, and browse category results, and refine them by criteria such as price, product name, and product number. If you enable [Product recommendations](product-recommendations.md)in your environment, customers can also sort results based on advanced sorting criteria such as **New**, **Best-selling**, and **Trending**.
 
 
 > [!NOTE]
