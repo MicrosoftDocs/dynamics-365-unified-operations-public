@@ -4,7 +4,7 @@
 title: Default category landing page and search results page overview
 description: This article provides an overview of the default category landing page and search results page in Dynamics 365 Commerce.
 author: ashishmsft
-ms.date: 06/30/2020
+ms.date: 08/03/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -52,13 +52,11 @@ The following components are essential for a category:
     - Ratings – low to high
     - Ratings – high to low
 
-- **Advanced Sorting options** are used by website visitors to sort the products using intelligent criteria. By enabling [Product recommendations](product-recommendations.md), the following sorting options are available:
+- **Advanced Sorting options** are used by website visitors to sort the products using intelligent criteria. By enabling [Product recommendations](product-recommendations.md), the following sorting options are available. For more information, refer to the [Types of product recommendations](product-recommendations.md#types-of-product-recommendations) article.
+
     - New
     - Best-selling
     - Trending
-
-Read more about [Types of product recommendations](product-recommendations.md#types-of-product-recommendations)
-
 
 - **Pagination** lets website visitors move from one page of categorized product results to another page.
 - **Total count** provides the total number of products that are defined in a category.
@@ -106,9 +104,7 @@ The following components are essential for a search results page:
     - Best-selling
     - Trending
 
-Read more about [Types of product recommendations](product-recommendations.md#types-of-product-recommendations)
-
-
+    Read more about [Types of product recommendations](product-recommendations.md#types-of-product-recommendations)
 
 
 - **Pagination** lets website visitors move from one page of categorized product results to another page.
