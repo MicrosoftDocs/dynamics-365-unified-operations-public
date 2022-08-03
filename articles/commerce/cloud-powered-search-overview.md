@@ -71,6 +71,7 @@ The following illustration shows an example where immersive autosuggest is being
 
 Sorting support in Commerce solution lets customers sort, search, and browse category results, and refine them by criteria such as price, product name, and product number. Additionally, with [Product recommendations being enabled](product-recommendations.md) customers can also sort results based on advanced sorting criteria such as New, Best-selling and Trending.
 
+
 > [!NOTE]
 > These cloud-powered search capabilities are available starting in version 10.0.8. Ensure that there is an entry for "ProductSearch.UseAzureSearch" set to 'true' in **Commerce Parameters > Configuration Parameters**. 
 ![Configuration parameters for cloud-powered search.](./media/CloudPoweredSearchConfigurationParameters.png)
