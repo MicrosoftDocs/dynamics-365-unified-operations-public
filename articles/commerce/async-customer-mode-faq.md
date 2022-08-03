@@ -27,7 +27,7 @@ Before enabling the **Enable editing customers in asynchronous mode** feature, y
 
 ### Why am I still observing real-time service calls being made to Commerce headquarters after the "Enable editing customers in asynchronous mode" feature is enabled?
 
-This happens when Commerce Data Exchange (CDX) jobs have not been executed to ensure that the feature state and other channel metadata are synchronized with the channel. Ensure that the following CDX jobs are executed in headquarters before reattempting the scenario:
+This issue occurs when Commerce Data Exchange (CDX) jobs haven't been executed to ensure that the feature state and other channel metadata are synchronized with the channel. Ensure that the following CDX jobs are executed in headquarters before reattempting the scenario:
 - 1110 (Global configuration)
 - 1010 (Customers)
 - 1070 (Channel configuration)
