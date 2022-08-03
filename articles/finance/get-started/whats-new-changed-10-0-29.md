@@ -94,89 +94,89 @@ The following table lists the feature enhancements that are included in this rel
 
 The following table lists the features that are turned on by default in 10.0.29. Most features that have been turned on atomically can be turned off in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory.  This is to ensure that customers are using current functionality, so that as enhancements are added they can build on the current functionality. Features will never be automatically enabled in less than one year, unless they are determined to be essential. 
 
-| Feature name | Enable date | Feature added | Feature state | Module |
-|--------------|-------------|---------------|---------------|--------|
-| Czech Republic / Hungary: Enable allocation terms in Subledger  |  8/1/2022  |   1/31/2022   |  Mandatory |  Accounts payable |
-| Enable translation for the Country/Region component of the Russian address format  |   8/1/2022  | 1/31/2022   |  On by default   |  Accounts payable |
-| Apply payment schedule to invoice journal  |   8/1/2022 | 1/31/2022 |  On by default |  Accounts payable |
-| Lock financial dimensions on invoice lines on vendor prepayment invoice  |   8/1/2022  | 1/31/2022  |  On by default  |  Accounts payable |
-| Create invoice lines based on the quantity option parameter  | 8/1/2022  | 1/31/2022  |  On by default |  Accounts payable |
-| Block posting and submission of vendor invoices to workflow  | 8/1/2022  | 1/31/2022  |  On by default |  Accounts payable |
-| Vendor invoice automation |   8/1/2022  | 1/31/2022  |  On by default |  Accounts payable |
-| Update 1099 information for multiple vendors   |   8/1/2022  | 1/31/2022  |  On by default |  Accounts payable |
-| Prohibit submission to workflow when the invoice number already exists on a posted invoice, and your system is not set up to accept duplicate invoice numbers. | 8/1/2022 | 1/31/2022  |  On by default |  Accounts payable |
-| Let invoices be submitted to workflow with incomplete or incorrect accounting distributions |  8/1/2022 | 1/31/2022 | Mandatory |  Accounts payable |
-| (Eastern Europe) Allow the use of common approach of settlement amount calculation for Eastern Europe uses |  7/18/2022 | 3/10/2021 | On by default |  Accounts payable/Accounts receivable |
-| Advanced notes management  |  7/18/2022 | 2/19/2020 | On by default |  Accounts payable/Accounts receivable |
-| ISO20022 payment functionalities for all countries |  7/13/2022 | 7/13/2020 | On by default |  Accounts payable/Accounts receivable |
-| Update payment journal with dispute performance feature | 8/1/2022  | 1/31/2022 | Mandatory | Accounts receivable |
-| Calculate a Free text invoice charge from line amount | 8/1/2022  | 1/31/2022 | Mandatory | Accounts receivable |
-| Use free text invoice language for expanded country description  |  8/1/2022   | 1/31/2022 | Mandatory  | Accounts receivable |
-| NF-e XML move as attachment  |  7/18/2022   | 11/11/2019 | On by default  | Accounts receivable |
-| (Mexico) Enable posting of CFDI invoices with zero total amount  |  7/18/2022   | 6/14/2020 | On by default  | Accounts receivable |
-| Forced electronic invoices generations  |  7/18/2022   | 2/20/2021 | On by default  | Accounts receivable |
-| Use FTI report layout defined at print management settings under AE country context  |  7/18/2022   | 11/11/2019 | On by default  | Accounts receivable |
-| (Italy) Intent letters - invoicing of usual exporters  |  7/18/2022   | 2/19/2020 | On by default  | Accounts receivable |
-| Invoice issue deadline availability  |  7/18/2022   | 6/24/2020 | On by default  | Accounts receivable |
-| Display referenced documents on the Accounts Receivable Electronic Invoices page   |  7/18/2022   | 2/19/2020 | On by default  | Accounts receivable |
-| Lease impairment posting with preview |   8/1/2022 |  1/31/2022  |  On by default  | Asset leasing |
-| Leasing adjustment wizard for asset leasing   | 8/1/2022  | 1/31/2022  |  On by default | Asset leasing |
-| Asset leasing |  8/1/2022  | 1/31/2022  |  On by default | Asset leasing |
-| Leasing convention for asset leasing  |   8/1/2022 | 1/31/2022  | On by default | Asset leasing |
-| Budget Control - performance enhancement for pending documents | 8/1/2022 | 1/31/2022  | On by default | Budget control |
-| Budget control statistics date range enhancements |  8/1/2022  |  1/31/2022  | On by default | Budget control |
-| Only track amounts in the budget funds available calculation   |  8/1/2022   |  1/31/2022  | On by default | Budget control |
-| Include narrative fields when copying a budget plan |  8/1/2022   | 1/31/2022  | On by default | Budget planning |
-| Budget plan narrative  |  8/1/2022  |  1/31/2022 | Mandatory | Budget planning |
-| Budget planning query optimization generation for large budget plans   |  8/1/2022 | 1/31/2022 | Mandatory | Budget planning |
-| Budget register entries for quantity only |  8/1/2022  | 1/31/2022  | On by default | Budgeting|
-| Open payment journal from Checks page   |  8/1/2022  | 1/31/2022 | Mandatory | Budgeting |
-| Open payment journal from Checks page   |   8/1/2022  | 1/31/2022 | Mandatory | Cash management |
-| Vendor details added to Bridged transactions and Checks pages   |  8/1/2022  | 1/31/2022 | Mandatory | Cash management |
-| Enable bank revaluation globally without a parameter |  8/1/2022 |  1/31/2022 | Mandatory | Cash management |
-| Reverse reconciled advanced bank reconciliation   |  8/1/2022  | 1/31/2022  | On by default  | Cash management |
-| Unmatch all bank statements and transactions   |  8/1/2022   |  1/31/2022 | Mandatory | Cash management |
-| Reverse posted bank statement |  8/1/2022 | 1/31/2022  | On by default | Cash management |
-| Enable batch processing for bank payment advice reports  |  8/1/2022 | 1/31/2022 | Mandatory | Cash management |
-| Revert to simple bank reconciliation from advanced bank reconciliation  |  8/1/2022  | 1/31/2022  | On by default | Cash management |
-| Enable remove open transactions of zero amount from settlement when marking transactions |  8/1/2022  | 1/31/2022  | On by default | Cash management |
-| Turn off set based updates for customer settlement cash discount date |  8/1/2022  |  1/31/2022 | On by default  | Cash management |
-| Enhance undo settlements process  |   8/1/2022  | 1/31/2022 | Mandatory | Cash management |
-| Enable inquiries on open transactions for customer or vendor payment journals |   8/1/2022  | 1/31/2022 | Mandatory | Cash management |
-| Cash flow forecast automation    |   8/1/2022  | 1/31/2022 | On by default  | Cash management |
-| Lock the main account type and validate the offset account type in payment journals for customers and vendors | 8/1/2022 | 1/31/2022 | On by default | Cash management |
-| Enable vendor transaction settlement for all remittance addresses  |  8/1/2022  | 1/31/2022 | Mandatory  | Cash management |
-| Marked transaction detail form  | 8/1/2022  | 1/31/2022 | Mandatory  | Cash management |
-| Vendor open transactions report  |   8/1/2022   | 1/31/2022 | On by default | Cash management |
-| Vendor payment proposal automation |   8/1/2022   | 1/31/2022 | On by default | Cash management |
-| Enable additional validation of data for documents using the source document accounting framework | 8/1/2022 | 1/31/2022 | On by default | Financial journal |
-| Prevent overriding the account on a vendor invoice when creating a fixed asset |   8/1/2022 | 1/31/2022 | Mandatory | Fixed assets  |
-| Prevent multiple depreciations in same period  |  8/1/2022  | 1/31/2022 | On by default | Fixed assets  |
-| Lock asset book in depreciation journal  |   8/1/2022  | 1/31/2022 | Mandatory  | Fixed assets  |
-| Create separate voucher number for journals line related to automatic depreciation adjustment, split transactions, split disposal  | 8/1/2022 | 1/31/2022 | On by default | Fixed assets  |
-| Write-up adjustment extends depreciation periods |   8/1/2022  | 1/31/2022 | Mandatory  | Fixed assets  |
-| Update processing of depreciation adjustment after split |  8/1/2022  | 1/31/2022 | Mandatory  | Fixed assets  |
-| Prevent validation of  fiscal period for fixed asset books  |   8/1/2022  | 1/31/2022 | Mandatory  | Fixed assets  |
-| Advanced ledger settlement: Settlement and reverse settlement changes   |  8/1/2022   | 1/31/2022 | Mandatory  | General ledger  |
-| Ledger settlement by user  |  8/1/2022   | 1/31/2022 | Mandatory  | General ledger  |
-| Add Vendor ID, Vendor name, Customer ID, and Customer name to the Voucher transaction list page   |  8/1/2022   |   9/1/2021  |  Off by default  | General ledger  |
-| Generate trial balance with pending type transactions  |  8/1/2022 | 1/31/2022 | Mandatory  | General ledger  |
-| General ledger year-end enhancements    |  8/1/2022  | 1/31/2022 | Mandatory | General ledger  |
-| (Italy) Posting invoices with zero amount   |  7/18/2022  | 2/19/2020 | On by default | General ledger  |
-| (United Arab Emirates) Disable overriding project invoice print management form settings. |  8/1/2022  |  1/31/2022 |  On by default | Print management | 
-| (Italy) Tax plafond | 7/18/2022 | 4/1/2020 | On by default | Tax |
+| Feature name | Enable date | Feature state | Module |
+|--------------|-------------|---------------|--------|
+| Czech Republic / Hungary: Enable allocation terms in Subledger  |  8/1/2022  | Mandatory |  Accounts payable |
+| Enable translation for the Country/Region component of the Russian address format  |   8/1/2022  |  On by default   |  Accounts payable |
+| Apply payment schedule to invoice journal  |   8/1/2022 | On by default |  Accounts payable |
+| Lock financial dimensions on invoice lines on vendor prepayment invoice  |   8/1/2022  | On by default  |  Accounts payable |
+| Create invoice lines based on the quantity option parameter  | 8/1/2022  | On by default |  Accounts payable |
+| Block posting and submission of vendor invoices to workflow  | 8/1/2022  | On by default |  Accounts payable |
+| Vendor invoice automation |   8/1/2022  | On by default |  Accounts payable |
+| Update 1099 information for multiple vendors   |   8/1/2022  | On by default |  Accounts payable |
+| Prohibit submission to workflow when the invoice number already exists on a posted invoice, and your system is not set up to accept duplicate invoice numbers. | 8/1/2022 | On by default |  Accounts payable |
+| Let invoices be submitted to workflow with incomplete or incorrect accounting distributions |  8/1/2022 | Mandatory |  Accounts payable |
+| (Eastern Europe) Allow the use of common approach of settlement amount calculation for Eastern Europe uses |  7/18/2022 | On by default |  Accounts payable/Accounts receivable |
+| Advanced notes management  |  7/18/2022 | On by default |  Accounts payable/Accounts receivable |
+| ISO20022 payment functionalities for all countries |  7/13/2022 | On by default |  Accounts payable/Accounts receivable |
+| Update payment journal with dispute performance feature | 8/1/2022  |Mandatory | Accounts receivable |
+| Calculate a Free text invoice charge from line amount | 8/1/2022  | Mandatory | Accounts receivable |
+| Use free text invoice language for expanded country description  |  8/1/2022   | Mandatory  | Accounts receivable |
+| NF-e XML move as attachment  |  7/18/2022   | On by default  | Accounts receivable |
+| (Mexico) Enable posting of CFDI invoices with zero total amount  |  7/18/2022   | On by default  | Accounts receivable |
+| Forced electronic invoices generations  |  7/18/2022   | On by default  | Accounts receivable |
+| Use FTI report layout defined at print management settings under AE country context  |  7/18/2022   | On by default  | Accounts receivable |
+| (Italy) Intent letters - invoicing of usual exporters  |  7/18/2022   | On by default  | Accounts receivable |
+| Invoice issue deadline availability  |  7/18/2022   | On by default  | Accounts receivable |
+| Display referenced documents on the Accounts Receivable Electronic Invoices page   |  7/18/2022   | On by default  | Accounts receivable |
+| Lease impairment posting with preview |   8/1/2022 |  On by default  | Asset leasing |
+| Leasing adjustment wizard for asset leasing   | 8/1/2022  | On by default | Asset leasing |
+| Asset leasing |  8/1/2022  | On by default | Asset leasing |
+| Leasing convention for asset leasing  |   8/1/2022 | On by default | Asset leasing |
+| Budget Control - performance enhancement for pending documents | 8/1/2022 | On by default | Budget control |
+| Budget control statistics date range enhancements |  8/1/2022 | On by default | Budget control |
+| Only track amounts in the budget funds available calculation   |  8/1/2022   |  On by default | Budget control |
+| Include narrative fields when copying a budget plan |  8/1/2022   | On by default | Budget planning |
+| Budget plan narrative  |  8/1/2022  |  Mandatory | Budget planning |
+| Budget planning query optimization generation for large budget plans  |  8/1/2022 | Mandatory | Budget planning |
+| Budget register entries for quantity only |  8/1/2022  | On by default | Budgeting|
+| Open payment journal from Checks page   |  8/1/2022  | Mandatory | Budgeting |
+| Open payment journal from Checks page   |   8/1/2022  | Mandatory | Cash management |
+| Vendor details added to Bridged transactions and Checks pages   |  8/1/2022  | Mandatory | Cash management |
+| Enable bank revaluation globally without a parameter |  8/1/2022 | Mandatory | Cash management |
+| Reverse reconciled advanced bank reconciliation   |  8/1/2022  | On by default  | Cash management |
+| Unmatch all bank statements and transactions   |  8/1/2022   | Mandatory | Cash management |
+| Reverse posted bank statement |  8/1/2022 | On by default | Cash management |
+| Enable batch processing for bank payment advice reports  |  8/1/2022 | Mandatory | Cash management |
+| Revert to simple bank reconciliation from advanced bank reconciliation  | 8/1/2022  | On by default | Cash management |
+| Enable remove open transactions of zero amount from settlement when marking transactions |  8/1/2022  | On by default | Cash management |
+| Turn off set based updates for customer settlement cash discount date |  8/1/2022  |  On by default  | Cash management |
+| Enhance undo settlements process  |   8/1/2022  | Mandatory | Cash management |
+| Enable inquiries on open transactions for customer or vendor payment journals |   8/1/2022  | Mandatory | Cash management |
+| Cash flow forecast automation    |   8/1/2022  | On by default  | Cash management |
+| Lock the main account type and validate the offset account type in payment journals for customers and vendors | 8/1/2022 | On by default | Cash management |
+| Enable vendor transaction settlement for all remittance addresses  |  8/1/2022  | Mandatory  | Cash management |
+| Marked transaction detail form  | 8/1/2022  | Mandatory  | Cash management |
+| Vendor open transactions report  |   8/1/2022  | On by default | Cash management |
+| Vendor payment proposal automation |   8/1/2022   | On by default | Cash management |
+| Enable additional validation of data for documents using the source document accounting framework | 8/1/2022 | On by default | Financial journal |
+| Prevent overriding the account on a vendor invoice when creating a fixed asset |   8/1/2022 | Mandatory | Fixed assets  |
+| Prevent multiple depreciations in same period  |  8/1/2022  | On by default | Fixed assets  |
+| Lock asset book in depreciation journal  |   8/1/2022  | Mandatory  | Fixed assets  |
+| Create separate voucher number for journals line related to automatic depreciation adjustment, split transactions, split disposal  | 8/1/2022 | On by default | Fixed assets  |
+| Write-up adjustment extends depreciation periods |   8/1/2022  | Mandatory  | Fixed assets  |
+| Update processing of depreciation adjustment after split |  8/1/2022  | Mandatory  | Fixed assets  |
+| Prevent validation of  fiscal period for fixed asset books  |   8/1/2022  | Mandatory  | Fixed assets  |
+| Advanced ledger settlement: Settlement and reverse settlement changes   |  8/1/2022   | Mandatory  | General ledger  |
+| Ledger settlement by user  |  8/1/2022   | Mandatory  | General ledger  |
+| Add Vendor ID, Vendor name, Customer ID, and Customer name to the Voucher transaction list page   |  8/1/2022 | Off by default  | General ledger  |
+| Generate trial balance with pending type transactions  |  8/1/2022 | Mandatory  | General ledger  |
+| General ledger year-end enhancements    |  8/1/2022  | Mandatory | General ledger  |
+| (Italy) Posting invoices with zero amount   |  7/18/2022  | On by default | General ledger  |
+| (United Arab Emirates) Disable overriding project invoice print management form settings. |  8/1/2022  | On by default | Print management | 
+| (Italy) Tax plafond | 7/18/2022 | On by default | Tax |
 
 ## Features removed from Feature management
 The following table lists the features that have been removed from Feature management in 10.0.29.
 
-| Feature name | Enable date | Feature added | Feature state | Module |
-|--------------|-------------|---------------|---------------|--------|
-| Workflow option when invoice and registered total do not equal | 8/01/2022 | 1/31/2022 | Parameter available on the **Accounts payable** parameters page | Accounts payable|
-| Workflow option when unallocated charges exist | 8/01/2022 | 1/31/2022 | Parameter available on the **Accounts payable** parameters page | Accounts payable|
-| Budget proposal | 8/01/2022 | 1/31/2022 | Enabled when you deploy the Finance Insights add-in in LCS. | Budgeting
-| Cash flow forecasts | 8/01/2022 | 1/31/2022 | Enabled when you deploy the Finance Insights add-in in LCS. | Cash management |
-| Customer payment predictions | 8/01/2022 | 1/31/2022 | Enabled when you deploy the Finance Insights add-in in LCS. | Finance Insights |
-| Enable dual currency functionality in general ledger consolidation | 8/01/2022 | 1/31/2022 | Removed | General ledger |
+| Feature name | Enable date | Feature state | Module |
+|--------------|-------------|---------------|--------|
+| Workflow option when invoice and registered total do not equal | 8/01/2022 | Parameter available on the **Accounts payable** parameters page. | Accounts payable|
+| Workflow option when unallocated charges exist | 8/01/2022 | Parameter available on the **Accounts payable** parameters page | Accounts payable|
+| Budget proposal | 8/01/2022 | Enabled when you deploy the Finance Insights add-in in LCS. | Budgeting
+| Cash flow forecasts | 8/01/2022 | Enabled when you deploy the Finance Insights add-in in LCS. | Cash management |
+| Customer payment predictions | 8/01/2022 | Enabled when you deploy the Finance Insights add-in in LCS. | Finance Insights |
+| Enable dual currency functionality in general ledger consolidation | 8/01/2022 | Parameter added to the **Consolidation online** page and the **Consolidation with import** page. | General ledger |
 
 ## Additional resources
 
