@@ -2,7 +2,7 @@
 title: Deploy and access development environments
 description: This topic describes how to access development instances, configure local development VMs, and find configuration settings for developers and administrators.
 author: laneswenka
-ms.date: 03/15/2022
+ms.date: 08/04/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -201,30 +201,32 @@ The software development kit (SDK) is available at C:\RetailSDK. For more inform
 - [Retail software development kit (SDK) architecture](../../../commerce/dev-itpro/retail-sdk/retail-sdk-overview.md)
 - [Point of sale (POS) device activation](../../../commerce/dev-itpro/retail-device-activation.md)
 
-#### Remove Pre-existing Encrypted data from Headquarters
-If while configuring they shared hardware station on a VHD image the following 'NoCertficateFoundException' error is viewed in the Event Viewer: "No certificate found for id <id value presented>...", the Commerce configuration for the VHD environment may require the manual removal of the merchant properties from the deployed environment. In AOS of your VHD enviornment, if preloaded values are set in the SECUREMERCHANTPROPERTIES, those values should be cleared from the following tables:
-- select SECUREMERCHANTPROPERTIES from dbo.RETAILHARDWAREPROFILE -- hardware profile form 
-- select SECUREMERCHANTPROPERTIES from dbo.RETAILCHANNELPAYMENTCONNECTORLINE -- online stores form
-- select SECUREMERCHANTPROPERTIES from dbo.CREDITCARDACCOUNTSETUP -- payment service form 
-- select CONNECTIONSTRING from dbo.RETAILCONNDATABASEPROFILE -- payment service connection string for CDX
+#### Remove preexisting encrypted data from headquarters
 
-If prelaoded values are found, set the SECUREMERCHANTPROPERTIES value to empty with similar script:
+If while configuring they shared hardware station on a VHD image the following 'NoCertficateFoundException' error is viewed in the Event Viewer: "No certificate found for id `<id value presented>...`, the Commerce configuration for the VHD environment may require the manual removal of the merchant properties from the deployed environment. In AOS of your VHD environment, if preloaded values are set in SECUREMERCHANTPROPERTIES, those values should be cleared from the following tables:
+- `select SECUREMERCHANTPROPERTIES from dbo.RETAILHARDWAREPROFILE` (hardware profile form) 
+- `select SECUREMERCHANTPROPERTIES from dbo.RETAILCHANNELPAYMENTCONNECTORLINE` (online stores form)
+- `select SECUREMERCHANTPROPERTIES from dbo.CREDITCARDACCOUNTSETUP` (payment service form) 
+- `select CONNECTIONSTRING from dbo.RETAILCONNDATABASEPROFILE` (payment service connection string for CDX)
+
+If preloaded values are found, set the SECUREMERCHANTPROPERTIES value to empty with similar script:
 
 > [!WARNING]
 > The UPDATE scripts below are illustrative for newly provisioned environments experiencing the noted certificate issue described above. Only update values for the table or rows intended to avoid disruptive or destructive data updates. Additional selectors may be required if updating specific rows for the table being applied.
 
- Example Scripts: 
-- UPDATE dbo.RETAILHARDWAREPROFILE SET SECUREMERCHANTPROPERTIES=";)
-- UPDATE dbo.RETAILCHANNELPAYMENTCONNECTORLINE SET SECUREMERCHANTPROPERTIES=";)
-- UPDATE dbo.CREDITCARDACCOUNTSETUP SET SECUREMERCHANTPROPERTIES=";)
-- UPDATE dbo.RETAILCONNDATABASEPROFILE SET CONNECTIONSTRING=";
+ Example scripts: 
+ 
+- `UPDATE dbo.RETAILHARDWAREPROFILE SET SECUREMERCHANTPROPERTIES=";)`
+- `UPDATE dbo.RETAILCHANNELPAYMENTCONNECTORLINE SET SECUREMERCHANTPROPERTIES=";)`
+- `UPDATE dbo.CREDITCARDACCOUNTSETUP SET SECUREMERCHANTPROPERTIES=";)`
+- `UPDATE dbo.RETAILCONNDATABASEPROFILE SET CONNECTIONSTRING=";`
 
-Once cleared, use the forms in Headquarters to set up your payment gateway merchant details in the hardware profile, online store channel, or the payments service forms appropriate for the environment. Use the set up instructions required for your payment options:
- - [Set up Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector-setup)
- - [Dynamics 365 Payment Connector for PayPal](https://docs.microsoft.com/en-us/dynamics365/commerce/paypal)
-
+Once cleared, use the forms in headquarters to set up your payment gateway merchant details in the hardware profile, online store channel, or the payments service forms appropriate for the environment. Use the setup instructions required for your payment options:
+ - [Set up Dynamics 365 Payment Connector for Adyen](../../../commerce/dev-itpro/adyen-connector-setup.md)
+ - [Dynamics 365 Payment Connector for PayPal](../../../dynamics365/commerce/paypal)
 
 ## Redeploying or restarting the runtime on the VM
+ 
 To restart the local runtime and redeploy all the packages, follow these steps.
 
 1. Open File Explorer, and go to C:\CustomerServiceUnit.
