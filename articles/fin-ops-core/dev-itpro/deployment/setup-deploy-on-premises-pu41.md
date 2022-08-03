@@ -1014,6 +1014,9 @@ You've now completed the setup of the infrastructure. The following sections des
     .\Get-AgentConfiguration.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
     ```
 
+    > [!NOTE]
+    > Ensure you select the correct SQL Server version for your installation - 2016 or 2019.
+
 10. Save the configuration, and then select **Download configurations** to download the **localagent-config.json** configuration file.
 11. Copy the **localagent-config.json** file to the machine where the agent installer package is located.
 12. The local agent has some additional, optional configurations that can be set to specify environment-specific setup/requirements. For information about the additional options, see [Deployment configurations for the local agent](./onprem-localagent-options.md). 
