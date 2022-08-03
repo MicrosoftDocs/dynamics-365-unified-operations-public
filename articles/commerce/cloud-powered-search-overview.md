@@ -69,13 +69,13 @@ The following illustration shows an example where immersive autosuggest is being
 
 ## Sort
 
-Sort functionality enables customers to sort, search, and browse category results, and refine them by criteria such as price, product name, and product number. If you enable [Product recommendations](product-recommendations.md)in your environment, customers can also sort results based on advanced sorting criteria such as **New**, **Best-selling**, and **Trending**.
+Sort functionality enables customers to sort, search, and browse category results, and refine them by criteria such as price, product name, and product number. If you enable [Product recommendations](product-recommendations.md)in your environment, customers can also sort results based on advanced sorting criteria such as new, best-selling, and trending.
 
 
 > [!NOTE]
 > These cloud-powered search capabilities are available starting in version 10.0.8. Ensure that there is an entry for "ProductSearch.UseAzureSearch" set to 'true' in **Commerce Parameters > Configuration Parameters**. 
 ![Configuration parameters for cloud-powered search.](./media/CloudPoweredSearchConfigurationParameters.png)
->Advanced sorting options like New, Best-selling and Trending are available with Commerce SSK version of 9.35+ and Dynamics 365 Commerce 10.0.20 release.  
+>Advanced sorting options like new, best-selling, and trending are available with Commerce SSK version of 9.35+ and Dynamics 365 Commerce 10.0.20 release.  
 
 
 ## Additional resources
