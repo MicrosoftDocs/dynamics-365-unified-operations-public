@@ -52,6 +52,14 @@ The following components are essential for a category:
     - Ratings – low to high
     - Ratings – high to low
 
+- **Advanced Sorting options** are used by website visitors to sort the products using intelligent criteria. By enabling [Product recommendations](product-recommendations.md), the following sorting options are available:
+    - New
+    - Best-selling
+    - Trending
+
+Read more about [Types of product recommendations](product-recommendations.md#types-of-product-recommendations)
+
+
 - **Pagination** lets website visitors move from one page of categorized product results to another page.
 - **Total count** provides the total number of products that are defined in a category.
 
@@ -83,7 +91,7 @@ The following components are essential for a search results page:
 
 - **Product placement tiles** show the products for the user's search. By default, these tiles are sorted by the cloud-powered search relevancy score for the user search.
 - **Refiners and choice summary** are filters that provide counts and that can be used to refine items. The merchandising manager configures them as part of the configuration of the "channel categories and product attributes" metadata.
-- **Sorting options** are used by website visitors to sort the products. By default, the following sorting options are available:
+- **Standard Sorting options** are used by website visitors to sort the products. By default, the following sorting options are available:
 
     - Price – low to high
     - Price – high to low
@@ -91,7 +99,17 @@ The following components are essential for a search results page:
     - Product name – \[Z-A\]
     - Ratings – low to high
     - Ratings – high to low
-    - Default
+    - Default (*if 'Display order' values are defined for the products in the navigation hierarchy, then when sorting by default on category page it would honor those 'Display order' values otherwise it shall sort by the 'Product number' for category-browsing*)
+    
+- **Advanced Sorting options** are used by website visitors to sort the products using smarter criteria. By enabling [Product recommendations](product-recommendations.md), the following sorting options are available:
+    - New
+    - Best-selling
+    - Trending
+
+Read more about [Types of product recommendations](product-recommendations.md#types-of-product-recommendations)
+
+
+
 
 - **Pagination** lets website visitors move from one page of categorized product results to another page.
 - **Total count** provides the total number of products that are defined in a category and that match the search criteria.
@@ -99,6 +117,8 @@ The following components are essential for a search results page:
 >[!NOTE]
 >These cloud-powered search capabilities are available starting in version 10.0.8. Ensure that under **Commerce Parameters > Configuration Parameters** there is an entry for "ProductSearch.UseAzureSearch set to 'true'". 
 ![Configuration parameters for cloud-powered search.](./media/CloudPoweredSearchConfigurationParameters.png)
+
+>Additionally, advanced sorting options like *New, Best-selling and Trending* require [Product recommendations](product-recommendations.md) being enabled for your environment and are available with Commerce SSK version of 9.35+ and Dynamics 365 Commerce 10.0.20 release.
 
 ## Additional resources
 
