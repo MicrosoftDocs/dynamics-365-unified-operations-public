@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 07/06/2022
+ms.date: 08/03/2022
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -1015,7 +1015,7 @@ You've now completed the setup of the infrastructure. The following sections des
     ```
 
     > [!NOTE]
-    > Ensure you select the correct SQL Server version for your installation - 2016 or 2019.
+    > Make sure that you select the correct SQL Server version for your installation, either version 2016 or 2019.
 
 10. Save the configuration, and then select **Download configurations** to download the **localagent-config.json** configuration file.
 11. Copy the **localagent-config.json** file to the machine where the agent installer package is located.
