@@ -72,7 +72,7 @@ Here are some considerations for additional optional environments:
 
 ## Create an LCS project
 
-To use LCS to manage your Human Resources environments, you must first create an LCS project. If you're migrating your Human Resources environment to the finance and operations infrastructure, you must create a new LCS project for finance and operations apps. For more information, see [Migrating your Human Resources environment](/hr-admin-migrate-overview.md). If you already have an LCS project for other finance and operations apps, you can enable the Human Resources features in the **Feature management** workspace. For more information, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+To use LCS to manage your Human Resources environments, you must first create an LCS project. If you're migrating your Human Resources environment to the finance and operations infrastructure, you must create a new LCS project for finance and operations apps. If you already have an LCS project for other finance and operations apps, you can enable the Human Resources features in the **Feature management** workspace. For more information, see [Feature management overview](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 When a new customer signs up for Human Resources, the subscription includes an Implementation project workspace. After the customer activates the service, the tenant administrator must sign in at <https://lcs.dynamics.com> by using the tenant account. The project workspace is automatically created for the organization. For more information, see [Lifecycle Services (LCS) for Finance and Operations apps customers](../fin-ops-core/dev-itpro/lifecycle-services/lcs-works-lcs.md).
 
@@ -85,11 +85,11 @@ You must complete the LCS project onboarding process before you can start to dep
 
 Deployment of finance and operations apps, including Human Resources, in the cloud requires that you understand the environment and subscription that you're deploying to, who can perform which tasks, and what data and customizations you must manage. We recommend that you use a service account instead of a named user when you deploy new environments. For more information about how to deploy environments on the finance and operations infrastructure, see [Cloud deployment overview](/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview).
 
-To deploy a production environment for Human Resources on the finance and operations infrastructure, you must complete the go-live readiness process. For more information, see [Prepare for go-live](/fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live). This process includes the subscription estimator in LCS. For more information, see [Subscription estimator](/fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator).
+To deploy a production environment for Human Resources on the finance and operations infrastructure, you must complete the go-live readiness process. For more information, see [Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md). This process includes the subscription estimator in LCS. For more information, see [Subscription estimator](../fin-ops-core/dev-itpro/lifecycle-services/subscription-estimator.md).
 
 ## Integrate Microsoft Power Platform with Human Resources
 
-Microsoft Power Platform provides a suite of capabilities for Dynamics 365 applications via the Power Platform admin center. You can integrate and extend the use of Human Resources data by using Microsoft Power Platform. For information about how to integrate Human Resources with Microsoft Power Platform, see [Microsoft Power Platform integration with Finance and Operations apps](/fin-ops-core/dev-itpro/power-platform/overview).
+Microsoft Power Platform provides a suite of capabilities for Dynamics 365 applications via the Power Platform admin center. You can integrate and extend the use of Human Resources data by using Microsoft Power Platform. For information about how to integrate Human Resources with Microsoft Power Platform, see [Microsoft Power Platform integration with Finance and Operations apps](../fin-ops-core/dev-itpro/power-platform/overview.md).
 
 ## Supported geographies
 
