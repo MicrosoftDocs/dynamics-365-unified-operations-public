@@ -4,7 +4,7 @@
 title: Finance and operations virtual entities FAQ
 description: This article is a list of frequently asked questions about finance and operations virtual entities.
 author: Sunil-Garg
-ms.date: 01/05/2022
+ms.date: 08/03/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -146,11 +146,11 @@ Disabled configuration keys may also cause this error. The default virtual entit
 
 For additional information about the impact of configuration keys on data entities, see [Configuration keys and data entities](../data-entities/config-key-entities.md).
 
-### I'm getting an error that the call was rejected by Finance and Operations as not authorized. How do I work around this?
+### I'm getting an error that the call was rejected by finance and operations apps as not authorized. How do I work around this?
 
 When running a query against a virtual entity you may get an error response with the message, "A token was obtained to call Finance and Operations, but the call was rejected by Finance and Operations as not authorized. Verify that the AAD application value is specified in the Azure Active Directory application for in Finance and Operations, and that the associated user account has privileges to call the CDSVirtualEntity web service."
 
-This error can be the result of the default integration applications being removed from the environment. Verify that the two following applications are listed in the **Azure Active Directory applications** page in the Finance and Operations apps environment. These applications are added to the environment by default. Dataverse virtual entities for Finance and Operations apps are unable to gain authorization to the Finance and Operations environment if these applications are removed from the list.
+This error can be the result of the default integration applications being removed from the environment. Verify that the two following applications are listed in the **Azure Active Directory applications** page in the finance and operations apps environment. These applications are added to the environment by default. Dataverse virtual entities for finance and operations apps are unable to gain authorization to the finance and operations environment if these applications are removed from the list.
 
     | Client Id | Name | User ID |
     | --------- | ---- | ------- |
