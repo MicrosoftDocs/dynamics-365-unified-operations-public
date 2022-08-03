@@ -102,13 +102,11 @@ The following components are essential for a search results page:
     > [!NOTE]
     > If **Display order** values are defined for the products in the navigation heirarchy, sorting by default on a category page honors the values defined in **Display order**. Otherwise, sorting will be done by the **Product number**.)
     
-- **Advanced Sorting options** are used by website visitors to sort the products using smarter criteria. By enabling [Product recommendations](product-recommendations.md), the following sorting options are available:
+- **Advanced Sorting options** are used by website visitors to sort the products using intelligent criteria. By enabling [Product recommendations](product-recommendations.md), the following sorting options are available. For more information, refer to the [Types of product recommendations](product-recommendations.md#types-of-product-recommendations) article.
+
     - New
     - Best-selling
     - Trending
-
-    Read more about [Types of product recommendations](product-recommendations.md#types-of-product-recommendations)
-
 
 - **Pagination** lets website visitors move from one page of categorized product results to another page.
 - **Total count** provides the total number of products that are defined in a category and that match the search criteria.
