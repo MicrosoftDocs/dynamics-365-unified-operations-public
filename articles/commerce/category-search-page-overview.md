@@ -115,7 +115,7 @@ The following components are essential for a search results page:
 >These cloud-powered search capabilities are available starting in version 10.0.8. Ensure that under **Commerce Parameters > Configuration Parameters** there is an entry for "ProductSearch.UseAzureSearch set to 'true'". 
 ![Configuration parameters for cloud-powered search.](./media/CloudPoweredSearchConfigurationParameters.png)
 
->Additionally, to use advanced sorting options such as **New**, **Best-selling** and **Trending**, you must enable [Product recommendations](product-recommendations.md) for your environment. Advanced sorting options are available with Commerce SDK version 9.35+ and Commerce version 10.0.20.
+>Additionally, to use advanced sorting options such as new, best-selling, and trending, you must enable [Product recommendations](product-recommendations.md) for your environment. Advanced sorting options are available with Commerce SDK version 9.35+ and Commerce version 10.0.20.
 
 ## Additional resources
 
