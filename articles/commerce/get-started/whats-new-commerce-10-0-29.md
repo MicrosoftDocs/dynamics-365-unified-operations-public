@@ -61,6 +61,7 @@ The table also lists features that were previously in public preview but have ch
 |RetailInboundOutboundInventoryValidationFeature|	Enable validation in POS inbound and outbound inventory operation	|   On by default   |
 |  RetailInventoryChannelCalculationConsolidationFeature	|  Enhanced e-Commerce channel-side inventory calculation logic	|   On by default   |
 |RetailInventoryAdjustmentsInPointOfSaleFeature| 	Inventory adjustments in point of sale	 |  On by default  |
+| RetailMultiplePickupDeliveryModeFeature |	 Support for multiple pickup delivery modes	    |   Mandatory    |
 |  RetailProductAvailabilityOptimizationFeature	|   Optimized product availability calculation	|  Mandatory |
 |   RetailPricingDataManagerV2Feature	|   Improve performance for Commerce pricing engine	|   Mandatory |
 |  RetailPricingPreventUnintendedRecalculationFeature	| Prevent unintentional price calculation for commerce orders	 |  Mandatory  |
