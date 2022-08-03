@@ -123,7 +123,7 @@ When you configure file destinations for a selected format, you configure them f
 
 [![Configuration link.](./media/ER_Destinations-ConfigurationLink.png)](./media/ER_Destinations-ConfigurationLink.png)
 
-At the same time, you might have multiple [versions](general-electronic-reporting.md#component-versioning) of the format that have been imported into the current Finance instance. You can view them if you select the **Configuration** link that is offered when you select the **Reference** field.
+At the same time, you might have multiple versions of the format that have been imported into the current Finance instance. You can view them if you select the **Configuration** link that is offered when you select the **Reference** field.
 
 [![Configuration versions.](./media/ER_Destinations-ConfigurationVersions.png)](./media/ER_Destinations-ConfigurationVersions.png)
 
