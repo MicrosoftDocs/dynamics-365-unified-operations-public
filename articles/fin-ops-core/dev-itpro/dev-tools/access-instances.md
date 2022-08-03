@@ -240,7 +240,7 @@ If preloaded values are found, set the SECUREMERCHANTPROPERTIES value to empty w
 
 Once cleared, use the forms in headquarters to set up your payment gateway merchant details in the hardware profile, online store channel, or the payments service forms appropriate for the environment. Use the setup instructions required for your payment options:
  - [Set up Dynamics 365 Payment Connector for Adyen](../../../commerce/dev-itpro/adyen-connector-setup.md)
- - [Dynamics 365 Payment Connector for PayPal](../../../dynamics365/commerce/paypal)
+ - [Dynamics 365 Payment Connector for PayPal](../../../commerce/paypal.md)
 
 ## Redeploying or restarting the runtime on the VM
  
