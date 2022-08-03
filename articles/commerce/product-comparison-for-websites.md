@@ -24,7 +24,7 @@ This article describes a feature that allows shoppers to do product comparisons 
 > [!NOTE]
 > The product comparison feature is available starting with the Dynamics 365 Commerce version 10.0.29 release and can be used for both business-to-consumer (B2C) and business-to-business (B2B) websites.
 
-Product comparision functionality enables shoppers to compare products across a wide range of categories in order to make the right purchase decision. On product list pages (PLPs) such as category results, search results, and product collections pages, you are now able to add a new button for product comparison that allows shoppers to add products to the comparison tray. This is done in Commerce site builder similar to how the "Quick view" button is implemented. Allowing shoppers to quickly add products for comparison by selecting them from product tiles brings up preview panel showing the total number of products that shopper may currently have in comparison and the preview of the product. Shoppers are also able to add products from product details pages (PDP), and can add specific product variants to compare with product masters.
+Product comparison functionality enables shoppers to compare products across a wide range of categories to help them make the right purchase decision. On product list pages (PLPs) such as category results, search results, and product collections pages, you're now able to add a new button for product comparison that allows shoppers to add products to the comparison tray. This is done in Commerce site builder similar to how the "Quick view" button is implemented. Allowing shoppers to quickly add products for comparison by selecting them from product tiles brings up preview panel showing the total number of products that shopper may currently have in comparison and the preview of the product. Shoppers are also able to add products from product details pages (PDP), and can add specific product variants to compare with product masters.
 
 Using the comparison tray panel, customers can add a few products to compare, select **Compare**, and then be redirected to a product comparison page. The product comparison page shows customers product details for each selected product so they can compare the images, prices, product dimensions (size, style, color), aggregated ratings information, and various other product attributes.
 
@@ -48,7 +48,7 @@ You can create a dedicated product comparison page by adding a product compariso
 
 The product comparison button lets users quickly add a product to the comparison tray when they browsing products on a list page. They can add one or more products to the comparison tray from the list page without having to go to a PDP. 
 
-The product comparison button is supported by the product collection and search results modules, as well as the PDP buy box module.
+The product comparison button is supported by the product collection and search results modules, and the PDP buy box module.
 
 The following example illustration from site builder shows how to place a product comparison button on a product list page.
 
