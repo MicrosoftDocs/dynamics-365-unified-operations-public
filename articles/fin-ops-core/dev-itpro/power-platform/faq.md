@@ -83,7 +83,7 @@ This approach isn't currently possible in Dataverse.
 
 ### How do I add subcomponents in the new Power Apps experience?
 
-As in the previous Power Apps user interface (UI), you must redo the **Add Existing** operation. After the solution is selected, and Customer Groups has already been added as an entity, follow these steps.
+As in the previous Power Apps user interface (UI), you must redo the **Add Existing** operation. After the solution is selected, and Customer Group has already been added as an entity, follow these steps.
 
 1. Select **Add existing** \> **Entity**.
 2. Select customer group entity, and then select **Next**.
@@ -108,7 +108,7 @@ Finance and operations business logic that resides on forms isn't invoked throug
 
 ### If I develop a new finance and operations entity and want to see it in Dataverse, do I have to select Refresh entity list in finance and operations? Do I have to do anything in Dataverse?
 
-In theory, no, you don't have to refresh the entity list. At most, you might have to either reset Internet Information Services (IIS) or restart IIS Express, depending on where Application Object Server (AOS) is running. The fact that the list of entities is accurate is cached in SysGlobalObjectCache, which is a per-process cache. Any time that this cache doesn't indicate that the list is accurate, the list is rebuilt. The rebuild process takes about five seconds. Therefore, when you restart your AOS process (w3wp.exe or iisexpress.exe), the list will be accurate the next time that you query it from Dataverse. Additionally, although recompilation *should* flush the SysGlobalObjectCache cache, it might not. In that case, an AOS restart will flush it.
+In theory, no, you don't have to refresh the entity list. At most, you might have to either reset Internet Information Services (IIS) or restart IIS Express, depending on where Application Object Server (AOS) is running. The fact that the list of entities is accurate is cached in SysGlobalObjectCache, which is a per-process cache. Anytime that this cache doesn't indicate that the list is accurate, the list is rebuilt. The rebuild process takes about five seconds. Therefore, when you restart your AOS process (w3wp.exe or iisexpress.exe), the list will be accurate the next time that you query it from Dataverse. Additionally, although recompilation *should* flush the SysGlobalObjectCache cache, it might not. In that case, an AOS restart will flush it.
 
 ### Is there guidance on when to use a virtual entity and when to use dual-write?
 
@@ -121,7 +121,7 @@ Yes, if the finance and operations entity can auto generate number sequences, th
 If there are no fields added in the quick find view for the entity, then the search box does nothing. The workaround is to add one or more fields of the entity to the quick find view.
 
 ### The virtual entity performance is slow when a virtual entity has relationships to other entities. Is there guidance on how to avoid these issues?
-There could be several reasons why performance is slow when a virtual entity has relationships to other entities. This section will be updated as new patterns are identified. The following  is  currently known patterns, which can be used as a guidance.
+There could be several reasons why performance is slow when a virtual entity has relationships to other entities. This section will be updated as new patterns are identified. The following  is  currently known patterns, which can be used as guidance.
 
 When virtual entities have relationships to other entities, the virtual entity framework needs to query the related entities if the field select list includes the foreign key values for the related entities. By default, queries against the entities return all fields unless the caller requests a specific set of fields. The best practice is to specify a narrow select list. This can help to prevent slow performance.
 
