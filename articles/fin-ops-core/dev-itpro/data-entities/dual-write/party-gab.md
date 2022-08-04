@@ -114,11 +114,11 @@ The grid includes the following columns:
 
 You can use the **New Address** button above the grid to create as many postal addresses as you want.
 
-In customer engagement apps, when a user enters the addresses in the **Summary** tab of the **Accounts** page, the **Address 1** and **Address 2** fields correspond to the **Delivery** and **Invoice** addresses, respectively. But when a user creates it in finance and operations apps, the first 2 addresses of the customer record will appear in **Address1** and **Address2** and the user has the option to change the address purpose to **Delivery** and **Invoice**.
+In customer engagement apps, when a user enters the addresses on the **Summary** tab of the **Accounts** page, the **Address 1** and **Address 2** fields correspond to the **Delivery** and **Invoice** addresses, respectively. However, when a user creates a postal address in finance and operations apps, the first two addresses of the customer record will appear in the **Address1** and **Address2** fields, and the user has the option to change the address purpose to **Delivery** and **Invoice**.
 
 ![Summary tab for postal addresses.](media/party-gab-image5.png)
 
-Similarly the **Address 1**, **Address 2**, and **Address 3** fields on the **Summary** tab of the **Contact** page correspond to the **Business**, **Delivery**, and **Invoice** addresses, respectively.
+Similarly, the **Address 1**, **Address 2**, and **Address 3** fields on the **Summary** tab of the **Contact** page correspond to the **Business**, **Delivery**, and **Invoice** addresses, respectively.
 
 ## Electronic addresses
 
