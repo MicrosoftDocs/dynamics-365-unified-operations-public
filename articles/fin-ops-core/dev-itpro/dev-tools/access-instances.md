@@ -345,7 +345,7 @@ If an existing environment can't be deleted and redeployed, its URL must be adde
 ### I have fixed my environment, but it is still in a failed state. How do I resolve this?
 Restart your environment from LCS by first performing **Stop** and then **Start** operations against your environment. If the environment configuration is found to be correct, then the environment URL will be restored automatically **within 2 hours** of the **Start** operation.
 
-### While running the Admin user provisioning tool on my local development environment, I get the error "The value's length for key 'password' exceeds it's limit of '128'."
+### While running the Admin user provisioning tool on my local development environment, I get the error "The value's length for key 'password' exceeds its limit of '128'."
 If you are using the virtual hard drive (VHD) that was released for versions 10.0.24 and later, the Generate Self-Signed Certificates tool needs to be run before the Admin user provisioning tool. See [Set up the downloadable VHD for first use](vhd-setup.md) for more information.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
