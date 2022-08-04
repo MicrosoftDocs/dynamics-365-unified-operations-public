@@ -14,7 +14,7 @@ ms.author: asharchw
 ms.search.validFrom: 2022-02-28
 ---
 
-# Product comparison on e-commerce websites
+# Product comparison module
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
@@ -53,7 +53,14 @@ To add the product comparison module to a new product comparison page, follow th
 1. In the **Select modules** dialog box, select the **Container** module, and then select **OK**.
 1. In the **Container** slot, select the ellipsis (**...**), and then select **Add module**.
 1. In the **Select modules** dialog box, select the **Product comparison** module, and then select **OK**.
-
+1. In the **Quick view button** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Product quick view** module, and then select **OK**.
+1. In the properties pane on the right, configure the **Product quick view** module properties. 
+1. In the **Empty comparison** slot, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Content block** module, and then select **OK**.
+1. In the properties pane on the right, configure the **Content block** module properties. 
+1. Select **Save**, and then select **Preview** to preview the page.
+1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 ![Product comparison module](./media/Product-comparison-module.png)
 
@@ -65,8 +72,14 @@ The product comparison button is supported by the product collection, search res
 
 To add a product comparison button on product tiles in search and category results pages, follow these steps.
 
-1. In site builder, go to **Pages** and open your site's category page.
-
+1. In site builder, go to **Pages** and open the category page you want to add product comparison button to.
+1. In the **Main slot**, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Search results** module, and then select **OK**.
+1. In the **Product comparison button** slot of the **Search results** module, select the ellipsis (**...**), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Product comparison button** module, and then select **OK**.
+1. In the properties pane on the right, configure the **Product comparison button** module properties.  
+1. Select **Save**, and then select **Preview** to preview the page.
+1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
 The following example illustration from Commerce site builder shows how to place a product comparison button on a product list page.
 
