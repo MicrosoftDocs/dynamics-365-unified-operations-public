@@ -1,6 +1,6 @@
 ---
-title: Enable 5-minute session timeout window for dual-write sessions
-description: This article explains how to enable a 5-minute session timeout window for dual-write sessions.
+title: Enable a five-minute session time-out window for dual-write sessions
+description: This article explains how to enable a five-minute session time-out window for dual-write sessions.
 author: RamaKrishnamoorthy 
 ms.date: 08/02/2022
 ms.topic: article
@@ -11,102 +11,85 @@ ms.author: ramasri
 ms.search.validFrom: 2022-07-31
 ---
 
-# Enable 5-minute session timeout window for dual-write sessions
+# Enable a five-minute session time-out window for dual-write sessions
 
 [!include [banner](../../includes/banner.md)]
 
-When you set up dual-write, you will get only a 2-minute session timeout window for dual-write sessions. In order to get a 5-minute session timeout window, please follow the instructions below. These steps are applicable for dual-write core solution version 10.0.36.0 and later.
+When you set up dual-write, you get only a two-minute session time-out window for dual-write sessions. This article explains how to get a five-minute session time-out window. This information is applicable to Dual-write core solution version 10.0.36.0 and later.
 
-- For sandbox and production environments, please enter a support ticket with the Microsoft support team with a title of **Enable 5-min transaction timeout for Dual Write DV to FinOps Transactions** along with the Org ID or Tenant ID. We will enable it for you. 
+The steps that you must complete vary, depending on the type of environment.
 
-- For developer environments and customer-hosted environments, please follow the steps detailed below. Once you complete these steps, enter a support ticket with the Microsoft support team with the same title, **Enable 5-min transaction timeout for Dual Write DV to FinOps Transactions** along with the Org ID or Tenant ID. We will enable it for you. 
+## Sandbox and production environments
 
-## Register the app in the Azure portal
-The following procedure explains how to create the Azure AD application.
+Open a support ticket with the Microsoft support team. Enter **Enable 5-min transaction timeout for Dual Write DV to FinOps Transactions** as the title, and provide the organization ID or tenant ID. Microsoft will enable the five-minute session time-out window for you.
+
+## Developer and customer-hosted environments
+
+Complete the procedures in this section. When you've finished, open a support ticket with the Microsoft support team. Enter **Enable 5-min transaction timeout for Dual Write DV to FinOps Transactions** as the title, and provide the organization ID or tenant ID. Microsoft will enable the five-minute session time-out window for you.
+
+### Register the app in the Azure portal
+
+Complete this procedure to create the Microsoft Azure Active Directory (Azure AD) application.
 
 > [!IMPORTANT]
-> The Azure AD application must be created on the same tenant as finance and operations apps.
+> The Azure AD application must be created in the same tenant as finance and operations apps.
 
-1.  Go to <https://portal.azure.com> and select **Azure Active Directory \> App registrations**.
+1. Open the [Azure portal](https://portal.azure.com/), and select **Azure Active Directory \> App registrations**.
+2. Select **New Registration**, and enter the following information:
 
-2.  Select **New Registration**. Enter the following information:
+    - **Name** – Enter a unique name.
+    - **Account type** – Enter **Any Azure AD directory** (single or multi-tenant).
+    - **Redirect URI** – Leave this field blank.
 
-    - **Name** - Enter a unique name.
+3. Select **Register**.
+4. Make a note of the **Application (client) ID** value, because you will need it later.
+5. Create a symmetric key for the application:
 
-    - **Account type** - Enter **Any Azure AD directory** (single or multi-tenant).
+    1. In the newly created application, select **Certificates & secrets**.
+    2. Select **New client secret**.
+    3. Enter a description, and specify an expiration date.
+    4. Select **Save**. A key is created and shown. Copy the value for later use.
 
-    - **Redirect URI** - Leave blank.
+### Grant app permissions in finance and operations apps
 
-    - Select **Register**.
+Dataverse will use the Azure AD application that you created to call finance and operations apps. Therefore, the application must be trusted by finance and operations apps and associated with a user account that has the appropriate rights. After you complete this procedure, any application that has the secret of the Azure AD application that you created will be able to call the finance and operations apps environment and access the dual-write functionality.
 
-    - Make a note of the **Application (client) ID** value, because you will need it later.
+1. In finance and operations apps, go to **System Administration \> Users \> Users**.
+2. Select **New** to add a new user, and enter the following information:
 
-3.  Create a symmetric key for the application.
+    - **User ID** – Enter **dataverseintegration** or a different value.
+    - **User name** – Enter **dataverse integration** or a different value.
+    - **Provider** – Set this field to **NonAAD**.
+    - **Email** – Enter **dataverseintegration** or a different value. (The value does **not** have to be a valid email account.)
 
-    - Select **Certificates & secrets** in the newly created application.
+3. Go to **System Administration \> Setup \> Azure Active Directory applications** to register Dataverse.
+4. Add a new row, and enter the following information:
 
-    - Select **New client secret**.
+    - **Client ID** – Enter the **Application (client) ID** value that you made a note of earlier.
+    - **Name** – Enter **Dataverse Integration** or a different value.
+    - **User ID** – Enter the user ID that you created earlier.
 
-    - Provide a description and an expiration date.
+5. Sign in to finance and operations apps, and assign the **System Administrator** security role to the user.
 
-    - Select **Save**. A key will be created and displayed. Copy this value for later use.
+### Configure the virtual entity data source
 
-## Grant app permissions in finance and operations apps
+The next step of the process is to provide Dataverse with the finance and operations instance to connect to. To complete this step, you need a virtual entity data source. The following procedure guides you through this step of the process.
 
-The Azure AD application that you created will be used by Dataverse to call finance and operations apps. Therefore, it must be trusted by finance and operations apps and associated with a user account that has the appropriate rights. After you complete this step, any application that has the secret of the Azure AD application that you created will be able to call this finance and operations apps environment and access the dual-write functionality.
+1. In Dataverse, go to **Advanced Settings \> Administration \> Virtual Entity Data Sources**.
+2. Select the data source that is named **finance and operations**.
+3. Enter the information from the previous procedures:
 
-1.  In finance and operations apps, go to **System Administration \> Users \> Users**.
+    - **Target URL** – Enter the URL where you can access finance and operations apps.
+    - **OAuth URL** – Enter `https://login.windows.net/`.
+    - **Tenant ID** – Enter your tenant, such as **contoso.com**.
+    - **AAD Application ID** – Enter the **Application (client) ID** value that you made a note of earlier.
+    - **AAD Application Secret** – Enter the secret that was generated earlier.
+    - **AAD Resource** – Enter **00000015-0000-0000-c000-000000000000**. (This value is the value for the Azure AD application that represents finance and operations. It should always be the same.)
 
-2.  Select **New** to add a new user. Enter the following information:
+4. Save your changes.
 
-    - **User ID** - Enter **dataverseintegration** (or a different value).
+### Stop and rerun dual-write maps
 
-    - **User name** - Enter **dataverse integration** (or a different value).
-
-    - **Provider** - Set to **NonAAD**.
-
-    - **Email** - Enter **dataverseintegration** (or a different value, does *not* need to be a valid email account).
-
-3.  Go to **System Administration \> Setup \> Azure Active Directory applications** to register Dataverse. 
-
-    - Add a new row.
-
-    - **Client ID** - The **Application (client) ID** created above.
-
-    - **Name** - Enter **Dataverse Integration** (or a different name).
-
-    - **User ID** - The user ID created above.
-
-4. Login to finance and operations apps and assign the **System Administrator** security role to this user.
-
-## Configure the virtual entity data source 
-
-The next step in the process is to provide Dataverse with the finance and operations instance to connect to. You'll need a virtual entity data source to complete the process. The following steps walk through this part of the process.
-
-1.  In Dataverse, go to **Advanced Settings \> Administration \> Virtual Entity Data Sources**.
-
-2.  Select the data source named **finance and operations**.
-
-3.  Fill in the information from the steps above.
-
-    - **Target URL** - The URL at which you can access finance and operations.
-
-    - **OAuth URL** - https://login.windows.net/
-
-    - **Tenant ID** - Your tenant, such as "contoso.com".
-
-    - **AAD Application ID** - The **Application (client) ID** created above.
-
-    - **AAD Application Secret** - The secret generated above.
-
-    - **AAD Resource** - Enter **00000015-0000-0000-c000-000000000000** (this is the Azure AD application representing finance and operations, and should always be this same value).
-
-4.  Save the changes.
-
-## Stop and re-run dual-write maps
-
-1. Login to finance and operations apps.
-
-2. Go to dual-write administration page.
-
-3. Stop and re-run the maps without Initial Sync.
+1. Sign in to finance and operations apps.
+2. Open the dual-write administration page.
+3. Stop the maps, and then rerun them without doing an initial synchronization.
