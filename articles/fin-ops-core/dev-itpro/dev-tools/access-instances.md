@@ -224,7 +224,7 @@ If while configuring the shared hardware station on a VHD image you see the foll
 
 `No certificate found for id <id value presented>...`
 
-In AOS of your VHD environment, if preloaded values are set in the **SECUREMERCHANTPROPERTIES** attribute, those values should be cleared from the following tables:
+In AOS of your VHD environment, if preloaded values are set in the **SECUREMERCHANTPROPERTIES** or **CONNECTIONSTRING** attributes, those values should be cleared from the following tables:
 
 ```SQL
 SELECT SECUREMERCHANTPROPERTIES FROM dbo.RETAILHARDWAREPROFILE -- hardware profile form
@@ -242,7 +242,7 @@ SELECT SECUREMERCHANTPROPERTIES FROM dbo.CREDITCARDACCOUNTSETUP -- payment servi
 SELECT CONNECTIONSTRING FROM dbo.RETAILCONNDATABASEPROFILE -- payment service connection string for CDX
 ```
  
-If preloaded values are found, set the **SECUREMERCHANTPROPERTIES** attribute value to empty with scripts similar to the following examples:
+If preloaded values are found, set the attribute values to empty with scripts similar to the following examples:
 
 ```SQL
 UPDATE dbo.RETAILHARDWAREPROFILE SET SECUREMERCHANTPROPERTIES=";)
