@@ -604,6 +604,10 @@
           href: hr-benefits-setup-parameters-per-company.md
         - name: Set Benefits management and Employee self-service parameters for all companies
           href: hr-benefits-setup-parameters.md
+        - name: Configure administrator rights for life events
+          href: admin-life-events.md
+        - name: Configure Benefits email notifications
+          href: hr-email-notifications.md
         - name: Configure eligibility rules and options
           href: hr-benefits-setup-eligibility-rules.md
         - name: Configure personal contact eligibility options
