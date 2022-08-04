@@ -153,7 +153,7 @@ A new internal system batch job, **System job to clean up expired batch heartbea
 ## Best practices
 - We recommend that you adjust the priority so that all batch jobs don't have the same priority. For example, don't set the priority for all batch jobs to **High** or **Critical**. The following table provides the distribution that you should consider when configuring batch priorities.
 
-    | Priority	| Possible distribution percentage of bat jobs, excluding **Reserved capacity** |
+    | Priority	| Possible distribution percentage of batch jobs, excluding **Reserved capacity** |
     |----------|--------|
     | Low | 10% to 50%
     | Normal |	15% to 35%
