@@ -30,6 +30,7 @@ ms.dyn365.ops.version: Human Resources
 # Configure future life events
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 You can schedule future life events in Dynamics 365 Human Resources.
 
