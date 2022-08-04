@@ -34,6 +34,8 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
+[!include [banner](../includes/preview-banner.md)]
+
 A plan type is a high-level grouping of specific types of benefits. Each plan type has a plan type code that determines rules for the plan type. For example, the **Basic life** plan type will have the **Life** plan type code, because it's a type of life insurance plan and must conform to rules that have been established for the **Life** plan type code. Another plan type might be **Supplemental life**. This plan type will also have the **Life** plan type code.
 
 Each plan type indicates whether an employee can enroll in one plan of its type or multiple. For example, an employee would likely be able to enroll in both the **Basic life** and the **Supplemental life** policies of plan type Life. An employee would likely be allowed to enroll in only one policy of type Medical.
