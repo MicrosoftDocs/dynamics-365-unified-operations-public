@@ -48,7 +48,7 @@ While linking the dual-write environment, the action fails with an error message
 
 *Saving connection set failed! An item with the same key has already been added.*
 
-Dual-write does not support multiple legal entities/companies with the same name. For example, If you have two companies with "DAT" name in the Dataverse then it will get this error message.
+Dual-write does not support multiple legal entities/companies with the same name. For example, if you have two companies with "DAT" name in the Dataverse then it will get this error message.
 
 To unblock the customer, remove duplicate records from **cdm_company** table in Dataverse. Also, if the **cdm_company** table has records with blank name, remove or correct those records.
 
@@ -72,7 +72,7 @@ This error occurs when the app consent step is not complete. You can validate if
     ![Initial sync setup troubleshooting.](media/Initial-sync-setup-troubleshooting-1.png)
 
 > [!NOTE]
-> If this doesn't work, launch the URL in private mode of Microsoft Edge or incognito mode of Chrome .
+> If this doesn't work, launch the URL in private mode of Microsoft Edge or incognito mode of Chrome.
 
 ## Finance and operations environment is not discoverable
 
@@ -85,22 +85,22 @@ There are two things that can cause an issue with environment not being discover
 + The user used for login is not in the same tenant as the finance and operations instance.
 + There are some legacy finance and operations instances that were Microsoft-hosted that had an issue with discovery. To fix this, update the finance and operations instance. The environment becomes discoverable with any update.
 
+## 403 (Forbidden) error while connections are being created
 
-## 403 (Forbidden) error while creating connections
+As part of the dual-write linking process, two Power Apps connections (also known as *Apihub* connections) are created on behalf of the user in the linked Dataverse environment. If the customer doesn't have a license for the Power Apps environment, creation of the ApiHub connections fails, and a 403 (Forbidden) error is shown. Here is an example of the error message:
 
-As part of the dual-write linking process, two Power Apps connections (also known as *Apihub* connections) are created on behalf of the user in the linked Dataverse environment. If the customer does not have a license for the PowerApps environment, the ApiHub connection creation fails with a 403 (Forbidden) error, as shown below:
-
-*MSG=[Failed to setup dual write environment. Error Details:Response status code does not indicate success: 403 (Forbidden). - Response status code does not indicate success: 403 (Forbidden).] STACKTRACE=[   at Microsoft.Dynamics.Integrator.ProjectManagementService.DualWrite.DualWriteConnectionSetProcessor.<CreateDualWriteConnectionSetAsync>d__29.MoveNext() in X:\bt\1158727\repo\src\ProjectManagementService\DualWrite\DualWriteConnectionSetProcessor.cs:line 297
+> MSG=\[Failed to setup dual write environment. Error Details:Response status code does not indicate success: 403 (Forbidden). - Response status code does not indicate success: 403 (Forbidden).\] STACKTRACE=\[   at Microsoft.Dynamics.Integrator.ProjectManagementService.DualWrite.DualWriteConnectionSetProcessor.\<CreateDualWriteConnectionSetAsync\>d\_\_29.MoveNext() in X:\\bt\\1158727\\repo\\src\\ProjectManagementService\\DualWrite\\DualWriteConnectionSetProcessor.cs:line 297
 --- End of stack trace from previous location where exception was thrown ---
    at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
    at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
-   at Microsoft.Dynamics.Integrator.ProjectManagementService.Controllers.DualWriteEnvironmentManagementController.<SetupDualWriteEnvironmentAsync>d__34.MoveNext() in X:\bt\1158727\repo\src\ProjectManagementService\Controllers\DualWriteEnvironmentManagementController.cs:line 265]*
+   at Microsoft.Dynamics.Integrator.ProjectManagementService.Controllers.DualWriteEnvironmentManagementController.\<SetupDualWriteEnvironmentAsync\>d\_\_34.MoveNext() in X:\\bt\\1158727\\repo\\src\\ProjectManagementService\\Controllers\\DualWriteEnvironmentManagementController.cs:line 265\]
 
-This error occurs because of the lack of a Power Apps license. Assign a proper license (for example, Power Apps Trial 2 Plan) to the user so that the user has permission to create the connection. To verify the license, the customer can go to the [My account](https://portal.office.com/account/?ref=MeControl#subscriptions) site to view the existing licenses assigned to the user.
+This error occurs because of the lack of a Power Apps license. Assign an appropriate license (for example, Power Apps Trial 2 Plan) to the user, so that the user has permission to create the connections. To verify the license, the customer can go to the [My account](https://portal.office.com/account/?ref=MeControl#subscriptions) site to view the licenses that are currently assigned to the user.
 
-Additional information about Power Apps license:
-- [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide) 
-- [Purchase Power Apps for your organization](/power-platform/admin/signup-for-powerapps-admin) 
+For more information about Power Apps license, see the following articles:
+
+- [Assign licenses to users](/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide)
+- [Purchase Power Apps for your organization](/power-platform/admin/signup-for-powerapps-admin)
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
 
