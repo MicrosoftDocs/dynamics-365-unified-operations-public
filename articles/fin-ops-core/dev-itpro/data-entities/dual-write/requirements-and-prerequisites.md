@@ -119,10 +119,9 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     *Before you can enable dual-write, you must grant access to the apps to connect to each other<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 00000015-0000-0000-c000-000000000000 exists<br>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;App user with id 2e49aa60-1bd3-43b6-8ab6-03ada3d9f08b exists*
-    
+
     > [!NOTE]
-    > When a record is created in finance and operations apps, the **Owner** field will be set when the data is dual-written to Dataverse, even if the matched record exists in Dataverse. As dual-write uses app user with ID **00000015-0000-0000-c000-000000000000** to communicates to Dataverse, the **Modified by** field will be set to the app user.
-    
+    > When a record is created in finance and operations apps, the **Owner** field will be set when the data is dual-written to Dataverse, even if the matched record exists in Dataverse. Because dual-write uses the app user that has the ID **00000015-0000-0000-c000-000000000000** to communicate with Dataverse, the **Modified by** field will be set to the app user.
 
 5. Provide app consent in the tenant.
    For dual-write core solution version 1.0.16.0 or above, this step is no longer needed.
@@ -167,7 +166,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     
     > [!NOTE]
     > You must select **Apply Solution** as part of the next steps, when you use the dual-write wizard to link your environments. 
-    > It may take few minutes for the solution packages to be created in Power Apps solutions section. Wait for it to appear before moving to the next step.
+    > It may take a few minutes for the solution packages to be created in Power Apps solutions section. Wait for it to appear before moving to the next step.
 
 8. Uninstall the Prospect to Cash (P2C) solution.
 
@@ -182,7 +181,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
 
 **For dual-write core solution lower than version 1.0.16.0 only**
 
-1. In step Step 3b above, create a new client ID row: **33976c19-1db5-4c02-810e-c243db79efde** (versus 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452).
+1. In step 3b above, create a new client ID row: **33976c19-1db5-4c02-810e-c243db79efde** (versus 6f7d0213-62b1-43a8-b7f4-ff2bb8b7b452).
 2. Add app consent in the tenant:
 
     1. Open the following URL, and sign in by using your admin credentials. You should be prompted for consent.
