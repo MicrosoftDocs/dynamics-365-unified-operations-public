@@ -25,8 +25,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Set administrator rights for life events
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 Administrators can update life event options, depending on configuration settings. On the **Human resource parameters** page, you can configure parameters that allow administrators to make changes to plan selections. You can also fully restrict administrators from making changes.
 
 On the **Human resources parameters** page, you can set up plan change restrictions for confirmed plans and life event options.
