@@ -58,9 +58,9 @@ We have recently added or significantly updated the following Help articles. The
 
 | Feature area | New or updated articles |
 |---|---|
+| Master planning, CTP | [Calculate sales order delivery dates using CTP](../master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md) |
 | Master planning, DDMRP | [Demand Driven Material Requirements Planning overview](../master-planning/planning-optimization/ddmrp-overview.md)<br>[Turn on the DDMRP feature for your system](../master-planning/planning-optimization/ddmrp-enable.md)<br>[Inventory positioning](../master-planning/planning-optimization/ddmrp-inventory-positioning.md)<br>[Buffer profile and levels](../master-planning/planning-optimization/ddmrp-buffer-profile-and-levels.md)<br>[Demand-driven planning](../master-planning/planning-optimization/ddmrp-planning.md)<br>[Visual and collaborative execution](../master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md) |
-| Warehouse management | [Pack containers for shipment](../warehousing/packing-containers.md) |
-| Warehouse management | [Packing work for packing outbound containers and processing shipments](../warehousing/packing-work.md) |
+| Warehouse management | [Pack containers for shipment](../warehousing/packing-containers.md)<br>[Packing work for packing outbound containers and processing shipments](../warehousing/packing-work.md) |
 
 ## Feature state changes in this release
 
