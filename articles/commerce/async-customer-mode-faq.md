@@ -22,24 +22,25 @@ This article provides answers to frequently asked questions about asynchronous (
 
 ### Why can't I enable the "Enable editing customers in asynchronous mode" feature?
 
-Before enabling the **Enable editing customers in asynchronous mode** feature, you must first enable the following features: 
+Before you enable the **Enable editing customers in asynchronous mode** feature, you must enable the following features:
 
-- **Performance improvements for customer orders and customer transactions**
-- **Enable enhanced async customer creation**
-- **Enable asynchronous creation for customer addresses**
+- Performance improvements for customer orders and customer transactions
+- Enable enhanced async customer creation
+- Enable asynchronous creation for customer addresses
 
-### Why am I still observing real-time service calls being made to Commerce headquarters after the "Enable editing customers in asynchronous mode" feature is enabled?
+### Why do I still see real-time service calls made to Commerce headquarters after the "Enable editing customers in asynchronous mode" feature is enabled?
 
-This issue occurs when Commerce Data Exchange (CDX) jobs haven't been executed to ensure that the feature state and other channel metadata are synchronized with the channel. Ensure that the following CDX jobs are executed in headquarters before reattempting the scenario:
+This issue occurs when Commerce Data Exchange (CDX) jobs haven't been run to ensure that the feature state and other channel metadata are synchronized with the channel. Before you retry the scenario, ensure that the following CDX jobs are run in Commerce headquarters:
+
 - 1110 (Global configuration)
 - 1010 (Customers)
 - 1070 (Channel configuration)
 
-Data cached in Commerce Scale Unit (CSU) may not be immediately reflected in headquarters after the CDX jobs have been executed.
+Data that is cached in Commerce Scale Unit (CSU) might not be immediately reflected in Commerce headquarters after the CDX jobs have been run.
 
 ### Why doesn't Commerce headquarters show customer creation or updates from the point of sale (POS) or e-commerce channel?
 
-Ensure that the following actions have been performed in the exact sequence below:
+Ensure that the following actions have been performed in the order that they are listed in here.
 
-1. Execute the CDX P-job in headquarters, which will ensure that async customer data stored in the **RETAILASYNCCUSTOMERV2**, **RETAILASYNCADDRESSV2**, **RETAILASYNCCUSTOMERCONTACT**, **RETAILASYNCCUSTOMERAFFILIATION**, and **RETAILASYNCCUSTOMERATTRIBUTEV2** tables are available in headquarters. 
-1. Execute the **Synchronize customers and channel requests** batch job in Commerce headquarters. After successful execution of the batch job, all records that have been successfully processed from the tables mentioned above will have the **OnlineOperationCompleted** field marked as **1**.
+1. Run the CDX P-job in Commerce headquarters to ensure that async customer data that is stored in the **RETAILASYNCCUSTOMERV2**, **RETAILASYNCADDRESSV2**, **RETAILASYNCCUSTOMERCONTACT**, **RETAILASYNCCUSTOMERAFFILIATION**, and **RETAILASYNCCUSTOMERATTRIBUTEV2** tables is available in Commerce headquarters.
+1. Run the **Synchronize customers and channel requests** batch job in Commerce headquarters. After successful execution of the batch job, all records that have been successfully processed from the previously mentioned tables will have the **OnlineOperationCompleted** field set to **1**.
