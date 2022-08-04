@@ -72,6 +72,9 @@ The **\<MODULE\_NAME\>.js** file is the entry file for creating the module CSS c
 import "./header.scss"
 ```
 
+> [!NOTE]
+> Release SDK 9.36 includes a new [optimize-module-css CLI command](cli-command-reference#optimize-module-css.md) to help create the needed file structure for an existing theme
+
 ## Configure assets in CSS for use with module CSS optimization
 
 By default, all the assets are stored in the root-level **public** directory (for example **public/images**). To be used in the module CSS optimization files, the assets must be stored in the **public/msdyn365-assets** directory (for example **public/msdyn365-assets/images**). The assets should then be imported from the **msdyn365-assets** directory into Sassy CSS (SCSS) files by using the relative path **../../../../../msdyn365-assets/**, as shown in the following example.
