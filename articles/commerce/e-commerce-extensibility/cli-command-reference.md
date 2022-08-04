@@ -225,8 +225,11 @@ yarn msdyn365 optimize-module-css <themeName> --requiredStyles=<requiredStylesFo
 This command optimizes styles for the module [CSS optimization](module-css-optimization.md) feature by creating the necessary file structure needed.  Styles will still need to be updated within the individual MODULE_NAME.scss files for specific modules.
 
 The **--requiredStyles** option is used to specify the folder names of required / abstract styles.
+
 The **--componentStyles** option is used to provide the folder names of component styles. 
+
 The **--assetFiles** option is used to provide the file names where style assets are being using. 
+
 The **--assetVar** option is used to provide the variable names describing the path to asset files without `$` sign.
 
 **Example**
