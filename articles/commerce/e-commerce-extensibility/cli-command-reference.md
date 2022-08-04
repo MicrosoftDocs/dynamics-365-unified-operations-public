@@ -214,6 +214,28 @@ The **--verbose** option is used to provide more verbose debugging output in the
 yarn msdyn365 create-request-hook --verbose
 ```
 
+## optimize-module-css
+
+**Usage**
+
+``` bash
+yarn msdyn365 optimize-module-css <themeName> --requiredStyles=<requiredStylesFolder> --componentStyles=<componentStylesFolder> --assetFiles=<assetFiles> --assetVar=<assetVar>
+```
+
+This command optimizes styles for the module CSS optimization feature by creating the necessary file structure needed styles will still need to be updated in the individual <ModuleName>.scss files for specific modules.
+
+
+The **--requiredStyles** option is used for the folder names of required / abstract styles.
+The **--componentStyles** option is used to provide the folder names of component styles. 
+The **--assetFiles** option is used to provide the file names where style assets are being using. 
+The **--assetVar** option is used to provide the variable names describing the path to asset files without `$` sign.
+
+**Example**
+
+``` bash
+yarn msdyn365 optimize-module-css adventureWorks --requiredStyles=00-settings,01-tools,02-generic --componentStyles=03-components --assetFiles=icons.scss --assetVar=msv-font-path
+```
+
 ## pack
 
 **Usage**
