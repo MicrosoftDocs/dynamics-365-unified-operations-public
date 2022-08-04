@@ -29,6 +29,7 @@ ms.dyn365.ops.version: 10.0.5
 # Set up Azure resources for IoT Intelligence
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [iot-sdi-announcement](../../includes/iot-sdi-announcement.md)]
 
 This article explains how to create and configure the Microsoft Azure resources that you require for IoT Intelligence.
 

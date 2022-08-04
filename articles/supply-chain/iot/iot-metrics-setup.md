@@ -28,6 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Set up metrics for IoT Intelligence
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [iot-sdi-announcement](../../includes/iot-sdi-announcement.md)]
 
 ## Configure metrics
 

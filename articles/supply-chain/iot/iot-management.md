@@ -29,6 +29,7 @@ ms.dyn365.ops.version: 10.0.5
 # Monitor and manage IoT Intelligence
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [iot-sdi-announcement](../../includes/iot-sdi-announcement.md)]
 
 This article explains how to monitor and manage IoT Intelligence.
 

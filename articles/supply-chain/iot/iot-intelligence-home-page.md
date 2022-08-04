@@ -28,6 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # IoT Intelligence home page
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [iot-sdi-announcement](../../includes/iot-sdi-announcement.md)]
 
 > [!IMPORTANT]
 > This feature is currently only available in the following countries/regions:

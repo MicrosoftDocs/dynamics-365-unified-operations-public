@@ -29,6 +29,7 @@ ms.dyn365.ops.version: 10.0.5
 # Scenario setup for IoT Intelligence
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [iot-sdi-announcement](../../includes/iot-sdi-announcement.md)]
 
 This article explains how to configure scenarios for IoT Intelligence in Microsoft Dynamics 365 Supply Chain Management. <!-- KFM: Hide setup info for now: Before you can set up the scenarios, you must [set up Microsoft Dynamics Lifecycle Services (LCS)](iot-lcs-setup.md). -->
 
