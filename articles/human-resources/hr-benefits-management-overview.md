@@ -156,6 +156,16 @@ Before you can process life events, you must have run open enrollment at least o
 - [Process life event changes](hr-benefits-process-life-event-changes.md)
 - [Process life event eligibility](hr-benefits-process-life-event-eligibility.md)
 
+After the life event processing is completed and for as long as the life event enrollment period is open, employees can make changes to the plan options that are affected by the life event. Admins can make the changes on behalf of employees. After the enrollment period has ended and no unconfirmed plan types are related to the life event transaction, the transaction is closed.
+
+All the plans that are affected by the life event must be either selected or waived and then confirmed. If a plan isn't selected, isn't waived, and therefore isn't confirmed, the life event transaction isn't closed.
+
+Admins can manually close a life event transaction as required, by selecting it and then selecting **Close**. If there are unconfirmed plans in the transaction, and an admin wants to close it, closure of the life event might restrict edits to those plans.
+
+Closed life events can't be deleted.
+
+Admins can reopen a life event transaction as required, by selecting it and then selecting **Reopen**.
+
 ## Rate updates (optional)
 
 Sometimes, the rate of a benefit changes during the plan period. To update the rates for employees who are already enrolled in the plan, you must process the rate changes. For more information, see [Process rate changes](hr-benefits-process-rate-changes.md).
