@@ -24,7 +24,7 @@ The July release of [Dual-write core solution 1.0.36.0](https://appsource.micros
 
 | Feature | Description | Status |
 |---|---|---|
-| Feature | [Enable 5-minute session timeout window for dual-write sessions](5-minute-mode.md) | General availability |
+| Feature | [Enable a five-minute session time-out window for dual-write sessions](5-minute-mode.md) | General availability |
 
 The July release of Dual-write Global Address Book solution 3.5.1.6 contains the following bug fixes.
 
