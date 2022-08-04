@@ -112,16 +112,16 @@ The message processor batch job is responsible for processing the journal postin
 1. On the **Parameters** FastTab, set  **Message queue** to *Production*.
 1. On the **Run in the background** FastTab, set **Batch processing** to *Yes*. Then set up a recurrent schedule and make other settings as needed. The settings work just as they work for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
 
-## Message processor messages
+## Track the progress of your deferred postings
 
-Deferred journal postings are queued as *message processor messages*, which wait to be executed by the *message processor*, which should be set to run as a scheduled batch job. You can view the messages that will be or have been processed by the message processor by going to **Production control \> Production orders \> Deferred production order posting**.
+Deferred journal postings are queued as *message processor messages*, which wait to be executed by the *message processor*, which should be set to run as a scheduled batch job. You can view the deferred posting messages that will be or have been processed by the message processor by going to **Production control \> Production orders \> Deferred production order posting**.
 
 ### Message grid columns and filters
 
-You can use the fields at the top of the **Message processor messages** page to help find any particular messages you are looking for. Most of these filters match the column headings in the message grid. The following filters and column headings are available:
+You can use the fields at the top of the **Deferred production order posting** page to help find any particular messages you are looking for. Most of these filters match the column headings in the message grid. The following filters and column headings are available:
 
-- **Message type** – Specifies the type of message.
-- **Message state** – Specifies the state of the message. The following states exists:
+- **Message type** – Specifies the type of messages shown in the grid.
+- **Message state** – Specifies the state of the messages shown in the grid. The following states exists:
   - *Queued* – The message is ready to be processed by the message processor.
   - *Processed* – The message was successfully processed by the message processor.
   - *Canceled* – The message was processed, but processing failed.
@@ -130,18 +130,18 @@ You can use the fields at the top of the **Message processor messages** page to 
 
 ### View the message log, message content, and details
 
-You can find detailed information about a message by selecting it in the grid and then opening the **Log** or **Message content** tabs under the message grid, where each processing event is shown.
+You can find detailed information about a message by selecting it in the grid and then opening the **Log** or **Raw content** tabs under the message grid, where each processing event is shown.
 
 The toolbar on the **Log** tab includes the following buttons:
 
 - **Log** – Displays the processing results. This is especially helpful for understanding the reasons for a processing failure for messages having a **Processing result** of *Failed*.
 - **Bundle** – Multiple message processing operations can run as part of the same batch process. Select this button to view this detailed data. For example, you can see whether dependencies exist that require the system to process certain messages in a specific sequence.
 
-## Manually process or cancel a message
+### Manually process or cancel a message
 
 If needed, you can manually process or cancel a message, depending on its current state. To do so, select the message in the grid and then select **Process** or **Cancel** on the Action Pane
 
-## Set up business events to deliver alerts for failed processing results
+### Set up business events to deliver alerts for failed processing results
 
 You can set up [Business events](../../fin-ops-core/dev-itpro/business-events/home-page.md) to alert you to failed processing results. To do so, activate the business event named *Message processor message processed*  on the **Business events catalog** page (**System administration > Setup > Business events > Business events catalog**).
 
