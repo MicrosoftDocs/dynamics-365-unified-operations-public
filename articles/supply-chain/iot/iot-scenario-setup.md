@@ -4,7 +4,7 @@
 title: Scenario setup for IoT Intelligence
 description: This article explains how to configure scenarios for IoT Intelligence in Microsoft Dynamics 365 Supply Chain Management.
 author: johanhoffmann
-ms.date: 08/16/2019
+ms.date: 08/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 

@@ -4,7 +4,7 @@
 title: Set up Azure resources for IoT Intelligence
 description: This article explains how to create and configure the Microsoft Azure resources that you require for IoT Intelligence.
 author: johanhoffmann
-ms.date: 08/16/2019
+ms.date: 08/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
