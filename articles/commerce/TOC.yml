@@ -876,6 +876,8 @@
         href: async-customer-mode.md
       - name: Convert asynchronous customers to synchronous customers
         href: convert-async-to-sync.md
+      - name: Asynchronous customer creation mode FAQ
+        href: async-customer-mode-faq.md
       - name: Clienteling
         items:
         - name: Clienteling overview
