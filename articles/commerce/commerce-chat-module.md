@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce Chat feature for online shoppers
+title: Commerce Chat with Omnichannel for Customer Service module
 description: This article describes the Commerce Chat feature for online shoppers in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 08/03/2022
@@ -13,7 +13,7 @@ ms.author: gmohanv
 ms.search.validFrom: 2022-07-20
 ---
 
-# Commerce Chat feature for online shoppers 
+# Commerce Chat with Omnichannel for Customer Service module
 
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
@@ -56,9 +56,9 @@ To add the chat module to your site's header fragment in Commerce site builder, 
 1. Open header fragment for your site. 
 1. Edit header fragment and add the newly created fragment within the header fragment.
 
-## Chat module mandatory fields
+## Commerce Chat with Omnichannel for Customer Service mandatory fields
 
-| Chat module property| Description  |
+| Module property| Description  |
 | ------------- |--------------|
 | Script source | From the chat-widget script source, locate **src** and use its value for this property. |
 | Data application id      | From the chat-widget script source, locate **data-app-id** and use its value for this property. |
@@ -68,33 +68,39 @@ To add the chat module to your site's header fragment in Commerce site builder, 
 ![Creating a Commerce Chat module fragment in Commerce site builder](media/Commerce-chat-creating-new-fragment.png)
 ![Adding a fragment to a header fragment in Commerce Site Builder](media/Commerce-chat-adding-fragment-to-header-fragment.png)
 
-## Commerce Headquarters as an application tab for Omnichannel for Customer Service
+## Commerce headquarters as an application tab for Omnichannel for Customer Service
 
 Commerce Headquarters as an application tab for Omnichannel for Customer Service enables live agents using Omnichannel for Customer Service agent experience user interface to easily access Dynamics 365 Commerce Customer Service module with contextual information for the customer along with their sales orders information. It also enables customer service agents to place new orders, perform returns and verify order status information. 
 
-## Steps to create a new application tab that loads Commerce Headquarters in iFrame. 
+## Create a new application tab that loads Commerce headquarters in an iFrame module 
+
+To create a new application tab that loads Commerce headquarters in an iFrame module, follow these steps.
 
 1. Go to Power Apps Make Portal and select **Apps** from the left-hand navigation bar.
-1. In **Customer Service admin center**,  navigate to **Agent experience \>  Workspaces**.
-1. Click **Manage** for  **Application tab templates**. 
+1. In **Customer Service admin center**, go to **Agent experience \>  Workspaces**.
+1. Select **Manage** for **Application tab templates**. 
 1. Create a new application tab of type **Third-party website** by following the documentation at [Manage application tab templates](/dynamics365/app-profile-manager/application-tab-templates?tabs=customerserviceadmincenter).
 1. Under **Parameters**  give **URL** as `https://<YourOrganizationHeadquartersURL>/?mi=MCRCustomerService&cmp=<LegalEntityName>&embedded=true&customerId={AccountNumber}`.  Replace `<YourOrganizationHeadquartersURL>` and `<LegalEntityname>` with the appropriate values. Omnichannel customer service reads {AccountNumber} from the chat context, so leave {AccountNumber} as is.
 1. Give **data** as  empty.
 
-## Steps to enable new application tab for customer agent in D365 Omnichannel for Customer Service.
+## Enable a new application tab for customer agents in Dynamics 365 Omnichannel for Customer Service
+
+To enable a new application tab for customer agents in Dynamics 365 Omnichannel for Customer Service, follow these steps.
 	
 1. Go to Power Apps Make Portal.
-1. In **Customer Service admin center**  Navigate to **Customer support** >  **Workstreams**.
-1. Open the workstream you've created for your agents, then under **Advanced settings** then click on sessions default. 
-1. Under Application Tabs, click **Add Existing Application Tab** then add the new application tab you've created above.
+1. In the **Customer Service admin center**, go to **Customer support \> Workstreams**.
+1. Open the workstream you've created for your agents, then under **Advanced settings** then select sessions default. 
+1. Under **Application Tabs**, select **Add Existing Application Tab** then add the new application tab you've created above.
 1. This will ensure that an application tab appear and loads Dynamics 365 Commerce Headquarter in iFrame, when agent receives incoming chat call from e-Commerce website.  
 
-## Steps to add context variables in D365 Omnichannel for Customer Service.
+## Add context variables in Dynamics 365 Omnichannel for Customer Service
+
+To add context variables in Dynamics 365 Omnichannel for Customer Service, follow these steps.
 
 1. Go to Power Apps Make Portal.
-1. In **Customer Service admin center**  Navigate to **Customer support** >  **Workstreams**.
+1. In **Customer Service admin center**, go to **Customer support \>  Workstreams**.
 1. Open the workstream you've created for your agents, then under **Advanced settings** go to **Context variable** section. 
-1. Click **Edit** to add **AccountNumber** as context variable of type **text**.  This will help Commerce Headquarters loading customer information with matching AccountNumber. 
+1. Select **Edit**, and then add **AccountNumber** as a context variable of type **text**. This will help Commerce headquarters load customer information with matching account numbers. 
 
 > [!NOTE] 
 > In addition to AccountNumber, If you want to read the Email and Name from e-Commerce channel, for signed-in users, you can add Email and Name as context variables with text type. 
