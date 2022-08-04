@@ -220,7 +220,7 @@ The software development kit (SDK) is available at C:\RetailSDK. For more inform
 
 #### Remove preexisting encrypted data from headquarters
 
-If while configuring the shared hardware station on a VHD image you see the following "NoCertficateFoundException" error in the Event Viewer, the Commerce configuration for the VHD environment may require the manual removal of the merchant properties from the deployed environment. 
+If while configuring the shared hardware station on a VHD image you see the following "NoCertificateFoundException" error in the Event Viewer, the Commerce configuration for the VHD environment may require the manual removal of the merchant properties from the deployed environment. 
 
 `No certificate found for id <id value presented>...`
 
