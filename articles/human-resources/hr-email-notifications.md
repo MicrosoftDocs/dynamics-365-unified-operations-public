@@ -29,9 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Benefits email notification
 
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 The email notification feature enables email notifications and reminders to be sent to employees in the following scenarios:
 
