@@ -2562,6 +2562,8 @@
             href: localizations/apac-ind-news-letter-10-0-00.md
         - name: Audit trail and edit logs for accounting software
           href: localizations/apac-ind-audit-trail-edit-logs-accounting-software.md
+        - name: Electronic invoices in India
+          href: localizations/apac-ind-e-invoices.md
         - name: Indirect taxes
           items: 
           - name: India GST
