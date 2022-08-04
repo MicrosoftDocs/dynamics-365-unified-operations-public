@@ -222,7 +222,7 @@ The software development kit (SDK) is available at C:\RetailSDK. For more inform
 
 If while configuring the shared hardware station on a VHD image you see the following "NoCertficateFoundException" error in the Event Viewer, the Commerce configuration for the VHD environment may require the manual removal of the merchant properties from the deployed environment. 
 
-'No certificate found for id <id value presented>...`
+`No certificate found for id <id value presented>...`
 
 In AOS of your VHD environment, if preloaded values are set in the **SECUREMERCHANTPROPERTIES** attribute, those values should be cleared from the following tables:
 
