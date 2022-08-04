@@ -220,25 +220,39 @@ The software development kit (SDK) is available at C:\RetailSDK. For more inform
 
 #### Remove preexisting encrypted data from headquarters
 
-If while configuring they shared hardware station on a VHD image the following 'NoCertficateFoundException' error is viewed in the Event Viewer: "No certificate found for id `<id value presented>...`, the Commerce configuration for the VHD environment may require the manual removal of the merchant properties from the deployed environment. In AOS of your VHD environment, if preloaded values are set in SECUREMERCHANTPROPERTIES attribute, those values should be cleared from the following tables:
+If while configuring the shared hardware station on a VHD image you see the following "NoCertficateFoundException" error in the Event Viewer, the Commerce configuration for the VHD environment may require the manual removal of the merchant properties from the deployed environment. 
+
+'No certificate found for id <id value presented>...`
+
+In AOS of your VHD environment, if preloaded values are set in the **SECUREMERCHANTPROPERTIES** attribute, those values should be cleared from the following tables:
+ 
 - `select SECUREMERCHANTPROPERTIES from dbo.RETAILHARDWAREPROFILE -- hardware profile form`
 - `select SECUREMERCHANTPROPERTIES from dbo.RETAILCHANNELPAYMENTCONNECTORLINE -- online stores form`
 - `select SECUREMERCHANTPROPERTIES from dbo.CREDITCARDACCOUNTSETUP -- payment service form` 
 - `select CONNECTIONSTRING from dbo.RETAILCONNDATABASEPROFILE -- payment service connection string for CDX`
 
-If preloaded values are found, set the SECUREMERCHANTPROPERTIES value to empty with similar script:
+If preloaded values are found, set the **SECUREMERCHANTPROPERTIES** attribute value to empty with scripts similar to the following examples:
+
+```SQL
+UPDATE dbo.RETAILHARDWAREPROFILE SET SECUREMERCHANTPROPERTIES=";)
+```
+
+```SQL
+UPDATE dbo.RETAILCHANNELPAYMENTCONNECTORLINE SET SECUREMERCHANTPROPERTIES=";)
+```
+
+```SQL
+UPDATE dbo.CREDITCARDACCOUNTSETUP SET SECUREMERCHANTPROPERTIES=";)
+```
+
+```SQL
+UPDATE dbo.RETAILCONNDATABASEPROFILE SET CONNECTIONSTRING=";
+```
 
 > [!WARNING]
-> The UPDATE scripts below are illustrative for newly provisioned environments experiencing the noted certificate issue described above. Only update values for the table or rows intended to avoid disruptive or destructive data updates. Additional selectors may be required if updating specific rows for the table being applied.
-
- Example scripts: 
+> The example UPDATE scripts provided above are illustrative for newly provisioned environments experiencing the certificate issue described above. Only update values for the intended table or rows to avoid disruptive or destructive data updates. Additional selectors may be required if updating specific rows for the table being applied.
  
-- `UPDATE dbo.RETAILHARDWAREPROFILE SET SECUREMERCHANTPROPERTIES=";)`
-- `UPDATE dbo.RETAILCHANNELPAYMENTCONNECTORLINE SET SECUREMERCHANTPROPERTIES=";)`
-- `UPDATE dbo.CREDITCARDACCOUNTSETUP SET SECUREMERCHANTPROPERTIES=";)`
-- `UPDATE dbo.RETAILCONNDATABASEPROFILE SET CONNECTIONSTRING=";`
-
-Once cleared, use the forms in headquarters to set up your payment gateway merchant details in the hardware profile, online store channel, or the payments service forms appropriate for the environment. Use the setup instructions required for your payment options:
+Once cleared, use the forms in headquarters to set up your payment gateway merchant details in the hardware profile, online store channel, or the payments service forms appropriate for the environment. For the setup instructions required for your payment options, see the appropriate article:
  - [Set up Dynamics 365 Payment Connector for Adyen](../../../commerce/dev-itpro/adyen-connector-setup.md)
  - [Dynamics 365 Payment Connector for PayPal](../../../commerce/paypal.md)
 
