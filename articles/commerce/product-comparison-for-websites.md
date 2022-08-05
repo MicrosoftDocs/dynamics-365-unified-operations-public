@@ -2,10 +2,10 @@
 
 # required metadata
 
-title: Product comparison module
-description: This article describes the product comparison module and how to implement it so that site users can do product comparisons on Microsoft Dynamics 365 Commerce websites.
+title: Product comparison modules
+description: This article describes product comparison modules and how to implement them so that site users can do product comparisons on Microsoft Dynamics 365 Commerce websites.
 author: ashishmsft
-ms.date: 08/04/2022
+ms.date: 08/05/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -14,15 +14,15 @@ ms.author: asharchw
 ms.search.validFrom: 2022-02-28
 ---
 
-# Product comparison module
+# Product comparison modules
 
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article describes the product comparison module and how to implement it so that site users can do product comparisons on Microsoft Dynamics 365 Commerce websites.
+This article describes product comparison modules and how to implement it so that site users can do product comparisons on Microsoft Dynamics 365 Commerce websites.
 
 > [!NOTE]
-> The product comparison module is available starting with the Dynamics 365 Commerce version 10.0.29 release and can be used for both business-to-consumer (B2C) and business-to-business (B2B) websites.
+> The product comparison and product comaprison button modules are available starting with the Dynamics 365 Commerce version 10.0.29 release and can be used for both business-to-consumer (B2C) and business-to-business (B2B) websites.
 
 Product comparison functionality enables shoppers to compare products across a wide range of categories to help them make the right purchase decision. On product list pages (PLPs) such as category results, search results, and product collections pages, you can add a button for product comparison that allows shoppers to add products to a comparison tray. This is done in Commerce site builder using the product comparison module, which functions similar to the [Quick view module](quick-view-module.md). When site users add products for comparison by selecting them from product tiles, a comparison tray appears at the bottom of the page that shows the total number of products the shopper is currently comparing along with short previews of the products. Site users are also able to add products from product details pages (PDPs), and can add specific product variants to compare with product masters.
 
