@@ -133,7 +133,7 @@ yarn msdyn365 add-data-action getMyData --verbose
 yarn msdyn365 add-module <module-name> <--verbose>
 ```
 
-This command adds a module to the root/src/modules folder. Note that module names are case-insensitive. 
+This command adds a module to the root/src/modules folder. Module names are case-insensitive. 
 
 The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
 
@@ -205,7 +205,7 @@ yarn msdyn365 clone content-block super-content-block --verbose
 yarn msdyn365 create-request-hook <--verbose>
 ```
 
-This command creates a request pipeline plug-in hook file (**src/requestHooks/initialRequest.hook.ts**). That file provides the ability to intercept the rendering request that is sent to the root/src/modules folder on the Node server.
+This command creates a request pipeline plug-in hook file (**src/requestHooks/initialRequest.hook.ts**). The request pipeline plug-in hook file provides the ability to intercept the rendering request that is sent to the **root/src/modules** folder on the Node server.
 
 The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
 
