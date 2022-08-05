@@ -1576,14 +1576,16 @@
               href: localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
             - name: Get started with the Electronic Invoicing for Mexico
               href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
+            - name: Get started with Electronic invoicing for Poland
+              href: localizations/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic invoicing for Saudi Arabia
-              href: localizations/e-invoicing-sa-get-started.md
+              href: localizations/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
             - name: Electronic invoicing onboarding in Saudi Arabia
-              href: localizations/e-invoicing-sa-onboarding.md
+              href: localizations/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
             - name: Setup direct integration of Italian FatturaPA with SDI
-              href: localizations/e-invoicing-ita-fatturapa-get-started.md
+              href: localizations/e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/finance
             - name: Use the electronic invoicing service to import vendor invoices
-              href: localizations/e-invoicing-get-started-import-vendor-invoices.md
+              href: localizations/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/finance
           - name: Electronic Invoicing FAQ
             href: localizations/e-invoicing-faq.md?context=/dynamics365/context/finance
         - name: Tax Calculation
