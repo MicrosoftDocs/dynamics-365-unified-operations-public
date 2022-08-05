@@ -23,29 +23,11 @@ Businesses that ship large items or have large packing areas will benefit from t
 Traditionally, warehouse workers have performed packing activities at a specific packing station configured in Dynamics 365 Supply Chain Management, using a process optimized for shipments of small to medium sized parcels. To improve efficiency when working in larger packing areas, and to better support the packing and shipment of larger items, the Dynamics 365 Warehouse Management mobile app provides a mobile packing experience that gives workers the freedom to move around while performing packing activities.
 This section will describe how to use the shipment container packing process on the Warehouse Management mobile app which can be used in combination with the rich client **Pack** page process. You can read more about how to enable the general warehouse management packing process [here]( packing-containers.md).
 
-
 ## Turn on the Pack containers using the Warehouse Management mobile app feature and its prerequisites
 
 Before you can use the functionality that is described in this article, you must complete the following procedure to turn on the required features.
 
 1. Go to **System administration \> Workspaces \> Feature management**. (For more information about how to use the **Feature management** workspace, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
-
- 
-
-1. If not already on, turn on the feature that is listed in the following way:
-
-    - **Module:** *Warehouse management*
-    - **Feature name:** *Warehouse app step instructions*
-
-    This feature is a prerequisite for the *Warehouse management app data inquiry flow* feature. For more information about the *Warehouse app step instructions* feature, see [Customize step titles and instructions for the Warehouse Management mobile app](mobile-app-titles-instructions.md).
-
-1. If not already on, turn on the feature that is listed in the following way:
-
-    - **Module:** *Warehouse management*
-    - **Feature name:** *Warehouse management app detours*
-
-    This feature is a prerequisite for the *Warehouse management app data inquiry flow* feature. For more information about the *Warehouse management app detours* feature, see [Configure detours for steps in mobile device menu items](warehouse-app-detours.md).
-
 
 1. If not already on, turn on the feature that is listed in the following way:
 
@@ -71,8 +53,8 @@ Before you can use the functionality that is described in this article, you must
       This feature is the one that is described in this article.
 
 ## Warehouse Management mobile app packing process
-As soon as the shipment inventory items have been brought forward to the packing area you can start processing the **Pack inventory into containers** on the Warehouse Management mobile app. 
- ![Warehouse app packing flow](media/wma-packing-flow.png "Warehouse app packing flow")
+As soon as the shipment inventory items have been brought forward to the packing area you can start processing the **Pack inventory into containers** on the Warehouse Management mobile app.
+![Warehouse app packing flow](media/wma-packing-flow.png "Warehouse app packing flow")
 
 To leverage all the supported packing processes on the Warehouse Management mobile app you must enable three mobile device menu items:
 -	**Pack inventory into containers** - Used for the main process to pack items into containers
@@ -103,13 +85,19 @@ For the **Container closing** process which can get triggered directly from the 
 -	**Container ID** to get closed
 -	**Weight** of the container which will get defaulted based on the item master weight definition
 
+## <a name="scenario"></a>Example scenario
+This section provides an example scenario that shows how to setup a *Warehouse Management mobile app packing flow* and process an simple outbound sales order by packing a container and closing it via the *Warehouse Management mobile app*.
+The setup will leverage the [Detour](warehouse-app-detours.md) including [Data inquiry](warehouse-app-data-inquiry.md) capabilities and running with eight mobile device menu items. But of cause this will not be a mandatory setup process.
 
-# Example scenario
-In the following example you lean how to setup a *Warehouse Management mobile app packing flow* and process an simple outbound sales order flow in the [Contoso demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) company **USMF** by packing a container and closing it via the *Warehouse Management mobile app*. 
-
-
+<!-- PICTURE FOR DEMO TO GET UPDATED WITH APP SCREENS -->
+ ![Warehouse app packing demo](media/wma-packing-demo.png "Warehouse app packing demo")
  
+### Make sample data available
+To work through this scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
 The example will be running with the demo data associated with the *Worker*/*Person* 'Julia Funderburk'.
+
+You can also use this scenario as guidance for using the feature on a production system. However, in that case, you must substitute your own values for each setting that is described here.
+
 ## Define Worker set up for container packing
 You must set up the **Container packing policy** and **Packing profile ID** for the workers using the Warehouse Management mobile app container packing process.
 
@@ -117,118 +105,211 @@ You must set up the **Container packing policy** and **Packing profile ID** for 
 2.	Select **Edit**
 3.	Select worker *Julia Funderburk* in the list.
 4.	Make the following settings for the worker in the **Profile** section:
-    - **Container packing policy** - Select *WH62Close* which will move container the *Baydoor* location when closing a container.
+    - **Container packing policy** - Select *WH62Close* which will move containers to the *Baydoor* location when closing a container.
 - **Packing profile ID** - Select * WH62* which will not create warehouse work after the closing of a container.
 5.	Make the following settings for the worker in the **Default packing station** section:
 -	**Site** - Select *6*, released to the warehouse we are going to use
 -	**Warehouse** - Select *62*, a warehouse already enabled for the packing process in the demo data.
--	**Location** - Select *Pack*. Note that the Warehouse Management mobile app will always prompt for confirmation for the assigned value, which can get overwritten. In case you do not provide a default packing location value the warehouse worker must always scan or look up the packing location in the app.
-## Create a new mobile device menu item -- + Container create and close?
+-	**Location** - Select *Pack*. Note that the Warehouse Management mobile app will always prompt for confirmation for the assigned value, which can get overwritten. In case you do not provide a default packing location value the warehouse worker must always scan or look up the packing location in the app, which can get acheived by using the [Data inquiry](warehouse-app-data-inquiry.md) capability.
+
+## Create a new *Pack inventory into containers* mobile device menu item
 You must create a new mobile device menu item to pack inventory into containers via the Warehouse Management mobile app.
 1.	Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**
 2.	Select **New** on the Action Pane to add a new mobile device menu item
 3.	Make the following settings for the new menu item:
-    - **Menu item name** - Enter *Container packing* as the name for the new menu item
-    - **Title** - Enter *Container packing*, this will get displayed on the Warehouse app
+    - **Menu item name** - Enter *Packing* as the name for the new menu item
+    - **Title** - Enter *Packing*, this will get displayed on the Warehouse app
    - **Mode** - Select *Indirect*
    - **Activity code** - Select *Pack inventory into containers*
        4. Close the page
 
-## Add the new mobile device menu items to a menu
-With now having the mobile device menu item, we are ready to get it added to the **Mobile device menu**. This is required to use it for the container packing process.
+## Create a new *Container creation* mobile device menu item
+You must create a new mobile device menu item to pack inventory into containers via the Warehouse Management mobile app.
+1.	Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**
+2.	Select **New** on the Action Pane to add a new mobile device menu item
+3.	Make the following settings for the new menu item:
+    - **Menu item name** - Enter *Create container* as the name for the new menu item
+    - **Title** - Enter *Create container*, this will get displayed on the Warehouse app
+   - **Mode** - Select *Indirect*
+   - **Activity code** - Select *Container creation*
+       4. Close the page
+
+## Create a new *Container closing* mobile device menu item
+You must create a new mobile device menu item to pack inventory into containers via the Warehouse Management mobile app.
+1.	Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**
+2.	Select **New** on the Action Pane to add a new mobile device menu item
+3.	Make the following settings for the new menu item:
+    - **Menu item name** - Enter *Close container* as the name for the new menu item
+    - **Title** - Enter *Close container*, this will get displayed on the Warehouse app
+   - **Mode** - Select *Indirect*
+   - **Activity code** - Select *Container closing*
+       4. Close the page
+
+## Add the three new mobile device menu items to the menu
+With now having the mobile device menu items, we are ready to get it added to the **Mobile device menu**. This is required to use it for the container packing process.
 In this example we will add it to the existing *Outbound** mobile device menu.
 1. Open **Warehouse management > Setup > Mobile device > Mobile device menu**.
 1. Select **Edit**.
 1. Select **Outbound** menu in the list
-1. Select the new **Container packing** mobile device menu items in the **Available menus and menu items** list.
+1. Select the new **Packing** mobile device menu items in the **Available menus and menu items** list.
 1. Select the arrow-bottom to move this menu item into the **Menu structure** list in the select **Outbound** menu.
+1. Do the same for *Create container* and *Close container*
 1. Close the page
-## Container create
-## Container close
-## Create sales orders
-We will create a single sales order line to quickly showcase the capability: 
-<!-- Copy from existing doc. When reviewed--> 
-….
-1. Make a note about the *Shipment ID*
+
+With this current setup you can process the packing of shipment items into containers via the Warehouse Management mobile app, but you will need to use the *Create container* and *Close container* processes directly from the menu. To ease the use of the supported packing processes follow the enablement of [Detour](warehouse-app-detours.md).
+
+## Add a *detour* for the *Container creation*
+To easy the container creation process while being in a container packing flow you can add a [Detour](warehouse-app-detours.md) process.
+In this example added as part of the page where the Warehouse Management mobile app page prompts for *Scan container to pack*.
+
+1. Go to **Warehouse management \> Setup > Mobile device \> Mobile device steps**.
+1. In the **Filter** field, enter *ContainerIdToPack*. Then select *Step ID: "ContainerIdToPack"* in the drop-down list with no *Menu item name*.
+1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Pack*. Then select **OK** to close the dialog box.
+1. On the details page for the new step configuration (**Pack : ContainerIdToPack**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
+1. In the **Add detour** dialog box, find and select the **Create container** menu item that you previously created.
+1. Select **OK** to close the dialog box and add the selected menu item to the detours list.
+1. Select the new detour, and then select **Select fields to send** on the toolbar.
+1. In the **Select fields to send** section, set the following values for the empty row that has already been added there:
+    - **Copy from Pack:** *Location*
+    - **Paste in Create container:** *Location*
+    - <!-- AUTO CONFIRM MISSING --> We don't want to confirm the value
+1. Select **Add** to add one more row and set the following values:
+    - **Copy from Pack:** *Shipment*
+    - **Paste in Create container:** *Shipment*
+    - <!-- AUTO CONFIRM MISSING --> We don't want to confirm the value
+1. In the **Bring back from create container** section, set the following values for the empty row that has already been added there:
+
+    - **Copy from Create container:** *Container ID*
+    - **Paste in Pack:** *Container ID* <!-- MISSING -->
+    - <!-- AUTO CONFIRM DISABLED !!! -->   We would like to rescan the container ID as confirmation
+1. Select **OK** to close the dialog box.
+1. Close the page.
 
 
-## Process container packing using the Warehouse app
-(Copy from review page) The inventory items have now been brought forward to the packing area and are ready to get packed into containers via the Warehouse Management mobile app.
-1.	Open the Warehouse Management mobile app and login with User ID *62*, Password *1*
-2.	Select menu *Outbound*
-3.	Select mobile device menu item *Container packing*
-4.	Confirm the *Pack* packing location in the **Packing location Id** page
-5.	Enter the *Shipment ID* from previous section in the **Shipment ID** page
-6.	Enter *A0001* in the **Item Id** page
-7.	
-8.	Confirm to pack the two pcs … create container
-In case you only want to pack 1 out the two you can click on the quantity and thereby go to the a page where the quantity can get updated.
+## Add a *detour* for the *Container closing*
+To easy the container closing process while being in a container packing flow you can add a [Detour](warehouse-app-detours.md) process.
+In this example added as part of the page where the Warehouse Management mobile app page prompts for *Scan item*.
 
-TIP!
-You can enable detours to look up packing locations, shipments, container types, and containers to close in case barcodes cannot get read or non-existing. Please refer to the [Query data using Warehouse Management mobile app detours](????.md) for more information regarding this capability. 
-
-
-
-## Rich client **Pack** vs Warehouse Management mobile app
-List of “scenarios” - like C&E documentation
-The following table shows which functionalities are supported when using the Warehouse Management mobile app.
-
-|Function                 |  Warehouse app processing |
-|------------------------| -------------------------------------| 
-|License plate or shipment| Only **Shipment id** identification is supported|
-|New container                                         | Yes - via **Container creation**|
-|Close container                                       |Yes - via **Container closing**  |
-|Release container                                    |Only via container closing policy |
-|Reopen container                                    | No |
-|Change container packing policy           | No - it is only possible to use the Container packing policy defined on Worker|
-|Release shipment                                    | No |
-|Work details                                            |View via Data inquire detour (link) |
-|Containers for shipment (Open/Closed) | View via Data inquire detour (link) |
-|Shipment details                                      | View via Data inquire detour (link) |
-|Display dimensions  | No - Capturing of tracking dimensions are not possible |
-|Manifest containers | No - Only automatic manifesting setup is supported |
-|Unmanifest containers | No |
-|Manifest container group | No - Only automatic manifesting setup is supported |
-|Unmanifest container group | No |
-|Manifest shipment|  No - Only automatic manifesting setup is supported |
-|Unmanifest shipment | No |
-|Transport route rate details
-|Transport shipment accessorial charges
-|Transport status
-|Print packing slip |  No - Only automatic printing setup is supported |
-|Print container content |  No - Only automatic printing setup is supported |
-|Print shipping label |  No - Only automatic printing setup is supported |
-
-|Pack (all shipment items) |  No - Each item number must be identified |
-|Pack items (based on defined quantity) |  Only AFTER the item number has been identified by updating the quantity as part of the **Pack inventory into containers** process |
-|Container group license plate ID with delayed work creation|   No |
-
-
-Catch weight, product variants, and tracking dimension capturing are not supported.
-Closing container ….
-
-
-Container closing policy (Automatic release/Delayed release/Optional)
-Container release policy (
-
-|Close (auto release) container without work creation
-|Close container with packing slip processing
-
-Unsupported
-
-Deliverable 703573: [RF Packing][Container closing] Support for "Container closing policy" Optional (visualstudio.com)
-Container packing policy
-Container closing policy = Optional will not prompt the worker to select if the container will get released or not.
+1. Go to **Warehouse management \> Setup > Mobile device \> Mobile device steps**.
+1. In the **Filter** field, enter *ItemId*. Then select *Step ID: "ItemId"* in the drop-down list with no *Menu item name*.
+1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Pack*. Then select **OK** to close the dialog box.
+1. On the details page for the new step configuration (**Pack : ItemId**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
+1. In the **Add detour** dialog box, find and select the **Close container** menu item that you previously created.
+1. Select **OK** to close the dialog box and add the selected menu item to the detours list.
+1. Select the new detour, and then select **Select fields to send** on the toolbar.
+1. In the **Select fields to send** section, you can add data to send which can be used for further look up filtering capabilities:
+    - **Copy from Pack:** *Location*
+    - **Paste in Close container:** *Location*
+    - <!-- AUTO CONFIRM MISSING --> We don't want to confirm the value
+1. Select **Add** to add one more row and set the following values:
+    - **Copy from Pack:** *Shipment*
+    - **Paste in Close container:** *Shipment*
+    - <!-- AUTO CONFIRM MISSING --> We don't want to confirm the value
+1. In the **Bring back from create container** section don't add anything because you don't want to pass any values back from the detour menu item.
+1. Select **OK** to close the dialog box.
+1. Close the page.
 
 
 
 
-## Example scenarios
-
-This article uses example scenarios to show how you can use the *Pack containers using the Warehouse Management mobile app* feature.
+## Look up container
 
 
 
+
+----
+
+
+### Create a sales order and complete the work
+
+Follow these steps to create a sales order and complete the work of moving the ordered items to the packing area.
+
+1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
+1. On the Action Pane, select **New**.
+1. In the **Create sales order** dialog box, in the **Customer account** field, select *US-005*.
+1. Select **OK** to close the dialog box.
+1. The new sales order is opened and includes a single, empty line on the **Sales order lines** FastTab. Set the following values for the new order line:
+
+    - **Item number:** *A0001*
+    - **Quantity:** *2*
+    - **Site:** *6*
+    - **Warehouse:** *62*
+
+1. While the order line is still selected, select **Inventory \> Reservation** on the toolbar of the **Sales order lines** FastTab.
+1. On the **Reservation** page, on the Action Pane, select **Reserve lot** to reserve the full quantity of the selected line in the warehouse.
+1. Close the **Reservation** page to return to the sales order.
+1. On the Action Pane, on the **Warehouse** tab, select **Release to warehouse**.
+
+    A message shows the shipment and wave IDs for the order.
+
+1. While the order line is still selected, select **Warehouse** \> **Work details** on the toolbar of the **Sales order lines** FastTab. If you use batch processing to run your waves, you might have to wait a short time for the work to be created.
+1. On the **Work** page, on the Action Pane, on the **Work** tab, select **Complete work**.
+1. On the **Work completion** page, set the **User ID** field to *62*.
+1. On the Action Pane, select **Validate work**.
+1. When you receive a message that indicates that your work is valid, select **Complete work** to complete the process of picking the inventory items and putting them in the *Pack* location.
+1. Make a note of the **Shipment ID** value that is shown for the work in the upper grid.
+
+### Pack the ordered items into a container
+
+The inventory items have now been brought to the packing area and are ready to be packed into containers. Follow these steps to create a new container in the system and pack and close the container.
+
+1. Open the *Warehouse Management mobile app* and login as User ID **62**.
+1. Open the previously created *Pack* menu item.
+1. Confirm the *Packing location* **Pack**.
+1. Enter/scan the *Shipment ID** from previously.
+1. Enter/scan *Item* **A0001**.
+1. Use the **Create container** detour button to jump to the *Container creation* process.
+1. Enter/scan *Container type* **Box-Large**.
+1. Enter/scan new container ID **1234** and confirm. This will create a new container for the shipment and return to the main packing flow.
+1. Enter/scan the *Container ID* **1234** to pack the 2 pcs of item A0001 into the container. In case quantity needs to get updated you can click on the *Quantity* and edit the value before.confirming the *Container ID*.
+1. Use the **Close container** detour button to jump to the *Container closing** process.
+1. Enter/scan **1234** to select the container to close.
+1. Confirm the system weight for the two items packed into the box. To update the weight manually you can click on the weight value and modify it before confirming.
+
+1. On the Action Pane, select **Close container**.
+1. In the **Close container** dialog box, select **Get system weight** to fill in the default **Gross weight** value.
+1. Select **OK** to close the container.
+
+> [!NOTE]
+> The different field values getting displayed on the Warehouse Management mobile app pages can get sorted and highlighted by using the [Promoted fields](warehouse-app-promoted-fields.md) capability.
+
+
+## Supported/Unsupported processes
+In the following table you can see which processes are supported when using the Warehouse Management mobile app container packing process compared with the rich client **Pack** page.
+
+|Logic                                                        | Supported | Comment                                                                                                                               |
+|-------------------------------------------------------------|-----------|---------------------------------------------------------------------------------------------------------------------------------------| 
+|Items enabled for **Catch weight**                           | No        |                                                                                                                                       |
+|Identification of License plate                              | No        | Only **Shipment id** identification is supported (the from license plate will automatically get selected)                             |
+|Identification of Tracking dimensions                        | No        | Tracking dimensions will automatically get selected                                                                                   |
+|Identification of Product variant dimensions                 | No        | Product variant dimensions will automatically get selected                                                                            |
+|Identification via GS1 barcode scanning                      | No        |                                                                                                                                       |
+|Identification via Piece-by-Piece scanning                   | No        |                                                                                                                                       |
+|New container                                                | Yes       | Via **Container creation** mobile device menu item incl. container type capturing                                                     |
+|Close container                                              | Yes       | Via **Container closing** mobile device menu item incl. capturing of weight                                                           |
+|Release container                                            | No        | Only via container closing policy (Not as menu option) - User cannot reply yes or not as optional                                     |
+|Reopen container                                             | No        |                                                                                                                                       |
+|Change container packing policy                              | No        | It is only possible to use the Container packing policy defined on Worker                                                             |
+|Release shipment                                             | No        |                                                                                                                                       |
+|Work details                                                 | (Yes)     | You can use view via [Data inquire detour](warehouse-app-data-inquiry.md)                                                             |
+|Containers for shipment (Open/Closed)                        | Yes       | View via [Data inquire detour](warehouse-app-data-inquiry.md)                                                                         |
+|Shipment details                                             | Yes       | View via [Data inquire detour](warehouse-app-data-inquiry.md)                                                                         |
+|Display dimensions                                           | (no)      | But view via [Data inquire detour](warehouse-app-data-inquiry.md) - capturing of dimensions are not supported                         |
+|Manifest containers                                          | No        | Only automatic manifesting setup is supported                                                                                         |
+|Unmanifest containers                                        | No        |                                                                                                                                       |
+|Manifest container group                                     | No        | No weight capturing process supported                                                                                                 |
+|Unmanifest container group                                   | No        |                                                                                                                                       |
+|Manifest shipment                                            | No        | No weight capturing process supported                                                                                                 |
+|Unmanifest shipment                                          | No        |                                                                                                                                       |
+|Transport route rate details                                 | No        | Only view via [Data inquire detour](warehouse-app-data-inquiry.md)                                                                    |
+|Transport shipment accessorial charges                       | No        | Only view via [Data inquire detour](warehouse-app-data-inquiry.md)                                                                    |
+|Transport status                                             | No        | Only View via [Data inquire detour](warehouse-app-data-inquiry.md)                                                                    |
+|Print packing slip                                           | No        | Only automatic printing setup is supported                                                                                            |
+|Print container content                                      | No        | Only automatic printing setup is supported                                                                                            |
+|Print shipping label                                         | No        | Only automatic printing setup is supported                                                                                            |
+|Pack (all shipment items)                                    | No        | Each item number must be identified and packed individually                                                                           |
+|Pack items (based on defined quantity)                       | (Yes)     | But only AFTER the item number has been identified by updating the quantity as part of the **Pack inventory into containers** process |
+|Container group license plate ID with delayed work creation  | No        | It is not possible to specify a grouping license plate ID                                                                             |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
