@@ -245,7 +245,7 @@ SELECT CONNECTIONSTRING FROM dbo.RETAILCONNDATABASEPROFILE -- payment service co
 If preloaded values are found, set the attribute values to empty with scripts similar to the following examples.
 
 > [!WARNING]
-> The example UPDATE scripts provided above are illustrative for newly provisioned environments experiencing the certificate issue described above. Only update values for the intended table or rows to avoid disruptive or destructive data updates. Additional selectors may be required if updating specific rows for the table being applied.
+> The example UPDATE scripts provided below are illustrative for newly provisioned environments experiencing the certificate issue described above. You should only update values for the intended table or rows to avoid disruptive or destructive data updates. Additional selectors may be required if updating specific rows for the tables being updated.
 
 ```SQL
 UPDATE dbo.RETAILHARDWAREPROFILE SET SECUREMERCHANTPROPERTIES=";)
