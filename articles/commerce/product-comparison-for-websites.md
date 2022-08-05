@@ -3,7 +3,7 @@
 # required metadata
 
 title: Product comparison modules
-description: This article describes product comparison modules and how to implement them so that site users can do product comparisons on Microsoft Dynamics 365 Commerce websites.
+description: This article describes product comparison modules and how to implement them so that customers can do product comparisons on Microsoft Dynamics 365 Commerce e-commerce websites.
 author: ashishmsft
 ms.date: 08/05/2022
 ms.topic: article
@@ -19,12 +19,12 @@ ms.search.validFrom: 2022-02-28
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article describes product comparison modules and how to implement it so that site users can do product comparisons on Microsoft Dynamics 365 Commerce websites.
+This article describes product comparison modules and how to implement them so that customers can do product comparisons on Microsoft Dynamics 365 Commerce e-commerce websites.
 
 > [!NOTE]
 > The product comparison and product comaprison button modules are available starting with the Dynamics 365 Commerce version 10.0.29 release and can be used for both business-to-consumer (B2C) and business-to-business (B2B) websites.
 
-Product comparison functionality enables shoppers to compare products across a wide range of categories to help them make the right purchase decision. On product list pages (PLPs) such as category results, search results, and product collections pages, you can add a button for product comparison that allows shoppers to add products to a comparison tray. This is done in Commerce site builder using the product comparison module, which functions similar to the [Quick view module](quick-view-module.md). When site users add products for comparison by selecting them from product tiles, a comparison tray appears at the bottom of the page that shows the total number of products the shopper is currently comparing along with short previews of the products. Site users are also able to add products from product details pages (PDPs), and can add specific product variants to compare with product masters.
+Product comparison functionality enables shoppers to compare products across a wide range of categories on a product comparision page to help them make better purchase decisions. This functionality is configured in Commerce site builder using the the product comparison module. On product list pages (PLPs) such as category results, search results, and product collections pages, you can add a button for product comparison that allows shoppers to add products to a comparison tray. This is done in site builder using the product comparison button module, which functions similar to the [Quick view module](quick-view-module.md). When site users add products for comparison by selecting them from product tiles, a comparison tray appears at the bottom of the page that shows the total number of products the shopper is currently comparing along with short previews of the products. Site users are also able to add products from product details pages (PDPs), and can add specific product variants to compare with product masters.
 
 When using the comparison tray, customers can add a few products to compare and then select **Compare** to be redirected to a product comparison page. The product comparison page shows customers product details for each selected product so they can compare images, prices, product dimensions (size, style, color), aggregated ratings information, and various other product attributes.
 
@@ -42,7 +42,7 @@ When using the comparison tray, customers can add a few products to compare and 
 
 You can create a dedicated product comparison page by adding a product comparison module to the body of a page under the **Main slot** of the page structure. In addition to allowing customers to compare product details of different products, you can configure the product comparison module to also give customers the option to quickly complete their purchase after comparing products. The product comparison module also contains an **Empty comparison** slot to add a content block module that describes the empty state, for example "Your product comparison is empty".
 
-To add the product comparison module to a new product comparison page, follow these steps.
+To add a product comparison module to a new product comparison page, follow these steps.
 
 1. Go to **Pages**, and select **New** to create a new page.
 1. In the **Create a new page** dialog box, under **Page name**, enter an appropriate page name (for example, **Product comparison**), and then select **Next**.
