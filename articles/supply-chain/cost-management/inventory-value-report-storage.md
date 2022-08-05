@@ -2,7 +2,7 @@
 title: Inventory value reports
 description: This article explains how to set up, generate, and use inventory value reports. These reports provide details about your inventory physical and financial quantities and amounts.
 author: JennySong-SH
-ms.date: 10/19/2021
+ms.date: 08/05/2022
 ms.topic: article
 ms.search.form: InventValueProcess, InventValueReportSetup
 audience: Application User
@@ -50,7 +50,7 @@ The **Inventory value report storage** report is helpful when the output contain
 
 ## Turn the Inventory value report storage feature on or off
 
-As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Inventory value report storage* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be turned on in your system. As of Supply Chain Management version 10.0.25, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Inventory value report storage* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## <a name="report-configuration"></a>Define inventory value report configurations
 

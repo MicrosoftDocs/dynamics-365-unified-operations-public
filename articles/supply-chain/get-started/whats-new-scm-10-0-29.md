@@ -130,6 +130,7 @@ The table also lists features that were previously in public preview but have ch
 | Procurement and sourcing | [Enable resetting procurement related workflows](whats-new-scm-10-0-20.md) | On by default |
 | Procurement and sourcing | [Limit the number of purchase order lines per batch task](whats-new-scm-10-0-27.md) | On by default |
 | Procurement and sourcing | [Merge financial dimensions from the vendor with active dimension link financial dimension on the purchase order](whats-new-scm-10-0-25.md) | Mandatory |
+| Procurement and sourcing | [Post registered quantities of stocked products and remainders of not-stocked products for receipts and vendor invoices](whats-new-scm-10-0-26.md) | Generally available |
 | Procurement and sourcing | [Prevent overconsumption of general budget reservations when multiple purchase requisitions are in workflow](whats-new-scm-10-0-21.md) | On by default |
 | Procurement and sourcing | [Purchase agreement responsible party](../procurement/purchase-agreements.md) | Mandatory |
 | Procurement and sourcing | [Saved views for purchase orders](saved-views-scm.md) | Mandatory |
@@ -170,13 +171,16 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | Deferred put processing – enable for audit template feature with trigger event set to Prior | Mandatory |
 | Warehouse management | [Disable expected receipts from quality orders that sample blocked inventory](../inventory/inventory-blocking.md) | On by default |
 | Warehouse management | Enable fast validation for warehouse mobile devices | Mandatory |
+| Warehouse management | [Enhanced parser for GS1 barcodes](../warehousing/gs1-barcodes.md) | Generally available |
 | Warehouse management | [Flexible warehouse-level dimension reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md) | On by default |
 | Warehouse management | [Flexible order-committed license plate reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md) | On by default |
 | Warehouse management | [Outbound workload visualization](../warehousing/outbound-workload-visualization.md) | Mandatory |
 | Warehouse management | [Item consolidation location utilization](../warehousing/item-consolidation-location-utilization.md) | On by default |
 | Warehouse management | License plate receiving history | On by default |
 | Warehouse management | [Manual shipment consolidation](../warehousing/consolidate-shipments-manual-workbench.md) | On by default |
+| Warehouse management | [Manual transfer line picking service for admin or similar trusted users](whats-new-scm-10-0-28.md) | Generally available |
 | Warehouse management | [Material handling equipment interface](../warehousing/mhax.md) | Mandatory |
+| Warehouse management | [New load planning workbench pages](whats-new-scm-10-0-24.md) | Generally available |
 | Warehouse management | [Planned cross docking](../warehousing/planned-cross-docking.md) | On by default |
 | Warehouse management | [Process warehouse app events](../warehousing/warehouse-app-events.md) | Mandatory |
 | Warehouse management | Query enhancement for the co-product and by-product put away work template | Mandatory |
@@ -186,6 +190,7 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | [Saved view for wave processing](saved-views-scm.md) | Mandatory |
 | Warehouse management | [Saved views for load processing](saved-views-scm.md) | Mandatory |
 | Warehouse management | [Saved views for shipment processing](saved-views-scm.md) | Mandatory |
+| Warehouse management | [Scan GS1 barcodes](../warehousing/gs1-barcodes.md) | Generally available |
 | Warehouse management | Shipment wave label details | On by default |
 | Warehouse management | [Slot mixed units](whats-new-scm-10-0-21.md) | Mandatory |
 | Warehouse management | [Use faster API for containers closing/reopening on packing station](whats-new-scm-10-0-21.md) | On by default |

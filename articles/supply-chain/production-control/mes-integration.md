@@ -2,7 +2,7 @@
 title: Integrate with third-party manufacturing execution systems
 description: This article explains how you can integrate Microsoft Dynamics 365 Supply Chain Management with a third-party manufacturing execution system (MES).
 author: johanhoffmann
-ms.date: 10/01/2021
+ms.date: 08/05/2022
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -40,9 +40,7 @@ Before you can use this feature, an administrator must turn it on in your system
     1. On the **License configuration** page, select the **Time and attendance** check box.
     1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)
 1. Go to the **System administration \> Workspaces \> Feature management**.
-1. Turn on the feature that is listed in the following way (see also [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)):
-    - **Module:** *Production control*
-    - **Feature name:** *Manufacturing execution system integration*
+1. Use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on the *Manufacturing execution system integration* feature. (As of Supply Chain Management version 10.0.29, this feature is on by default.)
 
 ## Processes available for MES integration
 

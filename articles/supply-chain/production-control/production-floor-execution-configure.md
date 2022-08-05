@@ -4,7 +4,7 @@
 title: Configure the production floor execution interface
 description: This article describes how to create one or more configurations for the production floor execution interface. When you open the production floor execution interface, it automatically loads a selected configuration and job filter that are specific to the browser and device. In the configuration, you set the policies that must be applicable for a specific usage.
 author: johanhoffmann
-ms.date: 10/05/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -67,29 +67,32 @@ As of Supply Chain Management version 10.0.21, this feature is turned on by defa
 
 ### Asset management functionality for the production floor execution interface
 
-This feature adds an asset management tab to the production floor execution interface. Workers can use this tab to select an asset that is connected to a machine resource that is within the selected filter of the job list. For the selected machine asset, the worker can view the state and health of the asset from counter values for up to four selected counters. If you'd like to use this feature, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+This feature adds an asset management tab to the production floor execution interface. Workers can use this tab to select an asset that is connected to a machine resource that is within the selected filter of the job list. For the selected machine asset, the worker can view the state and health of the asset from counter values for up to four selected counters.
 
-- *Asset management functionality for the production floor execution interface*<br>(As of Supply Chain Management version 10.0.25, this feature is on by default.)
+As of Supply Chain Management version 10.0.25, this feature is turned on by default. As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Asset management functionality for the production floor execution interface* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
-### Enable job search
+### Job search
 
-This feature makes it possible to add a search field to the jobs list. Workers can find a specific job by entering the job ID or find all jobs for a specific order by entering the order ID. Workers can enter the ID by using a keypad or by scanning a bar code. If you'd like to use it, turn on the following feature in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+This feature makes it possible to add a search field to the jobs list. Workers can find a specific job by entering the job ID or find all jobs for a specific order by entering the order ID. Workers can enter the ID by using a keypad or by scanning a bar code.
 
-- *Job search for the production floor execution interface*<br>(As of Supply Chain Management version 10.0.25, this feature is on by default.)
+As of Supply Chain Management version 10.0.25, this feature is turned on by default. As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Job search for the production floor execution interface* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
-### Enable reporting on co-products and by-products
+### Report on co-products and by-products
 
-This feature lets workers use the production floor execution interface to report progress on batch orders. This reporting includes reporting on co-products and by-products. To use this functionality, turn on the following feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+This feature lets workers use the production floor execution interface to report progress on batch orders. This reporting includes reporting on co-products and by-products.
 
-- *Report on co- and by-products from the production floor execution interface*
+To use this feature, it must be turned on in your system. As of Supply Chain Management version 10.0.29, the feature is turned on by default. Admins can turn this functionality on or off by searching for the *Report on co- and by-products from the production floor execution interface* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
-### Enable the display of full serial, batch, and license plate numbers
+### Display full serial, batch, and license plate numbers
 
 This feature provides an improved experience for viewing lists of serial, batch, and license plate numbers in the production floor execution interface. The display changes from a card view that shows a limited number of characters to a list view that provides enough space to show the full values. The list also provides the ability to search for specific numbers.
 
+To use this feature, it must be turned on in your system. As of Supply Chain Management version 10.0.25, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Show full serial, batch, and license plate numbers in the production floor execution interface* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+
+
 As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Show full serial, batch, and license plate numbers in the production floor execution interface* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
-### Enable registering of material consumption
+### Register material consumption
 
 This feature enables workers to use the production floor execution interface to register material consumption, batch numbers, and serial numbers. Some manufacturers, especially those in the process industries, must explicitly register the amount of material that is consumed for each batch or production order. For example, workers might use a scale to weigh the amount of material that is consumed as they work. To ensure full material traceability, these organizations must also register the batch numbers that were consumed to produce each product.
 
@@ -101,7 +104,7 @@ There are two versions of this feature. One supports items that *are not* enable
 > [!IMPORTANT]
 > You can use the non-WMS feature alone. However, if you use WMS, you must enable both features.
 
-### Enable reporting on catch weight items
+### Report on catch weight items
 
 Workers can use the production floor execution interface to report progress on batch orders for catch weight items. Batch orders are created from formulas, which can be defined to have catch weight items as formula items, co-products, and by-products. A formula can also be defined to have formula lines for ingredients that are defined for catch weight. Catch weight items use two units of measure to track inventory: catch weight quantity and inventory quantity. For example, in the food industry, boxed meat can be defined as a catch weight item, where the catch weight quantity is used to track the number of boxes and the inventory quantity is used to track the weight of the boxes.
 
@@ -109,15 +112,13 @@ To use this functionality, turn on the following feature in [Feature management]
 
 - *Report on catch weight items from the production floor execution interface*
 
-### Enable the "My day" dialog
+### The "My day" dialog
 
 The **My day** dialog provides workers with an overview of their daily registrations and current balances for paid time, paid overtime, absence, and paid absence.
 
-To use this functionality, turn on the following feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
+To use this feature, it must be turned on in your system. As of Supply Chain Management version 10.0.29, the feature is turned on by default. Admins can turn this functionality on or off by searching for the *"My day" view for the production floor execution interface* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
-- *"My day" view for the production floor execution interface*
-
-### Enable teams
+### Teams
 
 When multiple workers are assigned to the same production job, they can form a team. The team can nominate one worker as a pilot. The remaining workers then automatically become assistants of that pilot. For the resulting team, only the pilot must register job status. Time records apply to all team members.
 
@@ -125,7 +126,7 @@ To use this functionality, turn on the following feature in [Feature management]
 
 - *Production teams in the production floor execution interface*
 
-### Enable additional configuration in the production floor execution interface
+### Additional configuration in the production floor execution interface
 
 This feature adds settings for the following functionality to the **Configure production floor execution** page:
 
@@ -140,7 +141,6 @@ Information about how to use the settings is provided later in this article.
 To use this functionality, turn on the following feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
 - *Additional configuration on the production floor execution interface*
-
 
 ## Work with production floor execution configurations
 
