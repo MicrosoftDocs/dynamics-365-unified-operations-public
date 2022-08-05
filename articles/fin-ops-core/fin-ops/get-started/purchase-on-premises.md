@@ -3,8 +3,8 @@
 
 title: Buy Finance + Operations (on-premises)
 description: This article explains how to purchase and deploy Microsoft Dynamics 365 Finance + Operations (on-premises).
-author: cabeln 
-ms.date: 11/30/2021
+author: faix 
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service:
@@ -20,7 +20,7 @@ ms.reviewer: sericks
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: cabeln
+ms.author: osfaixat
 ms.search.validFrom: 2017-06-30 
 ms.dyn365.ops.version: Platform update 8 
 ---
@@ -63,7 +63,7 @@ To purchase Finance + Operations (on-premises) you must have a Microsoft Online 
 
 The Microsoft Online Services ID is required to provision and register Finance + Operations (on-premises) into entity-owned hardware and environment. See the Provisioning guide (linked to below) to complete the provisioning and registration process. If a Microsoft Online Services ID already exists, the process must be completed by the Global Administrator. If creating a Microsoft Online Services ID for the first time, the person initiating the process will be the Global Administrator.
 
-If you have an existing Microsoft Online Services trial or paid subscription, you already have a Microsoft Online Services ID that was created at the time of sign-up. Choose to sign in with this account if you want to use this same Azure Active Directory (AAD) tenant for the on-premises environment. For details, see the [Provisioning guide](https://mbs2.microsoft.com/fileexchange/?fileID=b5aec84e-28e9-491f-ba91-9f662acd4e70).
+If you have an existing Microsoft Online Services trial or paid subscription, you already have a Microsoft Online Services ID that was created at the time of sign-up. Choose to sign in with this account if you want to use this same Azure Active Directory (AAD) tenant for the on-premises environment. For details, see the [Provisioning guide](https://mbs2.microsoft.com/fileexchange/?fileID=7ddd6ddf-aa22-402a-baa1-5405ce0b1076).
 
 After you have logged into LCS, a project will be automatically provisioned for you. The LCS project will allow you to deploy an on-premises environment. For more details on getting started with your LCS project, see [Set up on-premises projects in Lifecycle Services (LCS)](../../dev-itpro/lifecycle-services/lbd-create-lcs-on-prem-project.md).
 
