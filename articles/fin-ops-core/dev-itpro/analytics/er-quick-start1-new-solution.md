@@ -292,7 +292,7 @@ The status of version 1 of this configuration is changed from **Draft** to **Com
 
 ![Versions of the editable configuration on the Configurations page.](./media/er-quick-start1-model-configuration.png)
 
-For more information about versioning for ER configurations, see [Electronic reporting (ER) overview](general-electronic-reporting.md#component-versioning).
+For more information about versioning for ER configurations, see [Electronic reporting (ER) overview](general-electronic-reporting.md).
 
 > [!NOTE]
 > The configured data model is your abstract representation of the **Questionnaire** business domain and contains no relations to artefacts that are specific to Microsoft Dynamics 365 Finance.
