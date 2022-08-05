@@ -74,7 +74,7 @@ import "./header.scss"
 ```
 
 > [!NOTE]
-> SDK Release 1.39 includes an [optimize-module-css CLI command](cli-command-reference#optimize-module-css.md) to help create the required file structure for an existing theme.
+> SDK Release 1.39 includes an [optimize-module-css CLI command](cli-command-reference.md#optimize-module-css) to help create the required file structure for an existing theme.
 
 ## Configure assets in CSS for use with module CSS optimization
 
