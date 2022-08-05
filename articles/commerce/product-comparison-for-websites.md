@@ -40,7 +40,7 @@ When using the comparison tray, customers can add a few products to compare and 
 
 ## Add the product comparison module to a new product comparison page 
 
-You can create a dedicated product comparison page by adding a product comparison module to the body of a page under the **Main slot** of the page structure. In addition to allowing customers to compare product details of different products, you can configure the product comparison module to also give customers the option to quickly complete their purchase after comparing products. The product comparison module also contains an **Empty comparison** slot to add a content block module that describes the empty state, for example "Your product comparison is empty".
+You can create a dedicated product comparison page by adding a product comparison module to the body of a page. In addition to allowing customers to compare product details of different products, you can configure the product comparison module to also give customers the option to quickly complete their purchase after comparing products. The product comparison module also contains an **Empty comparison** slot to add a content block module that describes the empty state, for example "Your product comparison is empty".
 
 To add a product comparison module to a new product comparison page, follow these steps.
 
