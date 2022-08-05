@@ -4,7 +4,7 @@
 title: CLI command reference
 description: This article covers the command-line interface (CLI) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 03/11/2022
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,6 +28,7 @@ ms.dyn365.ops.version: Release 10.0.5
 # CLI command reference
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article covers the command-line interface ([CLI](https://en.wikipedia.org/wiki/Command-line_interface)) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 
@@ -222,15 +223,12 @@ yarn msdyn365 create-request-hook --verbose
 yarn msdyn365 optimize-module-css <themeName> --requiredStyles=<requiredStylesFolder> --componentStyles=<componentStylesFolder> --assetFiles=<assetFiles> --assetVar=<assetVar>
 ```
 
-This command optimizes styles for the module [CSS optimization](module-css-optimization.md) feature by creating the necessary file structure needed.  Styles will still need to be updated within the individual MODULE_NAME.scss files for specific modules.
+This command optimizes styles for the [module CSS optimization](module-css-optimization.md) feature by creating the necessary file structure.  Styles still must be updated within the individual **\<MODULE_NAME\>.scss** files for specific modules.
 
-The **--requiredStyles** option is used to specify the folder names of required / abstract styles.
-
-The **--componentStyles** option is used to provide the folder names of component styles. 
-
-The **--assetFiles** option is used to provide the file names where style assets are being using. 
-
-The **--assetVar** option is used to provide the variable names describing the path to asset files without `$` sign.
+- The **--requiredStyles** option is used to specify the folder names of required/abstract styles.
+- The **--componentStyles** option is used to provide the folder names of component styles. 
+- The **--assetFiles** option is used to provide the file names where style assets are being used. 
+- The **--assetVar** option is used to provide variable names that describe the path to asset files without using the `$` character.
 
 **Example**
 
