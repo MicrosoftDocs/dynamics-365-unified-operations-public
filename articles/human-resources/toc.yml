@@ -608,7 +608,7 @@
           href: hr-benefits-setup-parameters.md
         - name: Configure administrator rights for life events
           href: admin-life-events.md
-        - name: Configure Benefits email notifications
+        - name: Configure email notifications for Benefits
           href: hr-email-notifications.md
         - name: Configure eligibility rules and options
           href: hr-benefits-setup-eligibility-rules.md
