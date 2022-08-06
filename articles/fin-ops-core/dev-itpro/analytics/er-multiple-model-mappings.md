@@ -110,7 +110,7 @@ This section explains how to [customize](er-quick-start3-customize-report.md#cus
 3. In the **Create configuration** drop-down dialog box, in the **New** field, select **Derive from Name: Invoice model mapping, Microsoft**.
 4. In the **Name** field, enter **Invoice model mapping Litware**.
 5. Select **Create configuration**.
-6. [Mark](er-quick-start2-customize-report.md#MarkFormatRunnable) the [draft](general-electronic-reporting.md#component-versioning) version of the derived mapping as available for use at runtime:
+6. [Mark](er-quick-start2-customize-report.md#MarkFormatRunnable) the [draft](general-electronic-reporting.md) version of the derived mapping as available for use at runtime:
 
     1. On the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
     2. In the **User parameters** dialog box, set the **Run settings** option to **Yes**, and then select **OK**.

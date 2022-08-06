@@ -3,7 +3,7 @@
 
 title: Design an ER format to generate a report in Excel format with embedded images in page headers or footers
 description: This article explains how to use Electronic reporting (ER) to generate business documents that have images and shapes embedded in page headers or footers.
-author: NickSelin
+author: kfend
 ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: EROperationDesigner, ERParameters
 # ROBOTS: 
 audience: Application User, Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: filatovm
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid:
@@ -201,7 +201,7 @@ In this case, as the representative of Litware, Inc., you must create (derive) a
 
 ![Creating a configuration for a custom payment format in the Create configuration drop-down dialog box.](./media/er-embed-images-header-footer-excel-reports-add-derived-format.png)
 
-Version 240.112.1 of the **Free text invoice (Excel) custom** ER format configuration is created. This version has a [status](general-electronic-reporting.md#component-versioning) of **Draft** and can be edited. The current content of your custom ER format matches the content of the format that is provided by Microsoft.
+Version 240.112.1 of the **Free text invoice (Excel) custom** ER format configuration is created. This version has a status of **Draft** and can be edited. The current content of your custom ER format matches the content of the format that is provided by Microsoft.
 
 ![New version of the ER format configuration created on the Configurations page.](./media/er-embed-images-header-footer-excel-reports-derived-format-configuration1.png)
 
@@ -249,7 +249,7 @@ Configure your custom format so that a company logo image is put in the footer o
 
 ### <a id="MarkFormatRunnable"></a>Mark the custom format as runnable
 
-Because the first version of the custom format has been created and has a status of **Draft**, you can run the format for testing purposes. To run the report, process a vendor payment by using the payment method that refers to your custom ER format. By default, when you call an ER format from the application, only versions that have a status of **Completed** or **Shared** are [considered](general-electronic-reporting.md#component-versioning). This behavior helps prevent ER formats that have unfinished designs from being used. However, for your test runs, you can force the application to use the version of your ER format that has a status of **Draft**. In this way, you can adjust the current format version if any modifications are required. For more information, see [Applicability](electronic-reporting-destinations.md#applicability).
+Because the first version of the custom format has been created and has a status of **Draft**, you can run the format for testing purposes. To run the report, process a vendor payment by using the payment method that refers to your custom ER format. By default, when you call an ER format from the application, only versions that have a status of **Completed** or **Shared** are considered. This behavior helps prevent ER formats that have unfinished designs from being used. However, for your test runs, you can force the application to use the version of your ER format that has a status of **Draft**. In this way, you can adjust the current format version if any modifications are required. For more information, see [Applicability](electronic-reporting-destinations.md#applicability).
 
 To use the draft version of an ER format, you must explicitly mark the ER format.
 

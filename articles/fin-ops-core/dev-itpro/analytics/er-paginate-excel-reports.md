@@ -3,7 +3,7 @@
 
 title: Design an ER format to paginate generated documents in Excel
 description: This article explains how to design an Electronic reporting (ER) format that paginates a generated document in Microsoft Excel.
-author: NickSelin
+author: kfend
 ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 220314
 ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: Version 10.0.22
 
@@ -63,11 +63,11 @@ In this scenario, you're the representative of Litware, Inc., which is currently
 5. In the **Name** field, enter **Intrastat report Litware**.
 6. Select **Create configuration** to create the new format.
 
-Version 1.9.1 of the **Intrastat report Litware** ER format configuration is created. This version has a [status](general-electronic-reporting.md#component-versioning) of **Draft** and can be edited. The current content of your custom ER format matches the content of the format that is provided by Microsoft.
+Version 1.9.1 of the **Intrastat report Litware** ER format configuration is created. This version has a status of **Draft** and can be edited. The current content of your custom ER format matches the content of the format that is provided by Microsoft.
 
 ### Make the custom format runnable
 
-Now that the first version of your custom format has been created and has a status of **Draft**, you can run the format for testing purposes. To run the report, process a vendor payment by using the payment method that refers to your custom ER format. By default, when you call an ER format from the application, only versions that have a status of **Completed** or **Shared** are [considered](general-electronic-reporting.md#component-versioning). This behavior helps prevent ER formats that have unfinished designs from being used. However, for your test runs, you can force the application to use the version of your ER format that has a status of **Draft**. In this way, you can adjust the current format version if any modifications are required. For more information, see [Applicability](electronic-reporting-destinations.md#applicability).
+Now that the first version of your custom format has been created and has a status of **Draft**, you can run the format for testing purposes. To run the report, process a vendor payment by using the payment method that refers to your custom ER format. By default, when you call an ER format from the application, only versions that have a status of **Completed** or **Shared** are considered. This behavior helps prevent ER formats that have unfinished designs from being used. However, for your test runs, you can force the application to use the version of your ER format that has a status of **Draft**. In this way, you can adjust the current format version if any modifications are required. For more information, see [Applicability](electronic-reporting-destinations.md#applicability).
 
 To use the draft version of an ER format, you must explicitly mark the ER format.
 
