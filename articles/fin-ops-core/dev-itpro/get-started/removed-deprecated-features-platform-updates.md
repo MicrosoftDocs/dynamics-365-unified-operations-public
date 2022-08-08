@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: sericks007
-ms.date: 08/01/2022
+ms.date: 08/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -39,6 +39,17 @@ This list is intended to help you consider these removals and deprecations for y
 Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
 ## Feature deprecation effective August 2022
+
+### Lifecycle Services (LCS) features deprecated in August 2022
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | As part of [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/finance-operations/finance-operations-crossapp-capabilities/one-dynamics-one-platform) workstream, the following LCS features are depreacted:<br>Crash dump analysis<br>Feedback and bugs<br>My subscription<br>Office 365 users<br>Impact analysis report<br>Total economic impact estimator<br>Environment snapshots<br>Service requests<br>Service Health dashboard<br>Environment upgrade  |
+| **Replaced by another feature?**   | Yes or No|
+| **Product areas affected**         | LCS |
+| **Deployment option**              | Does this affect cloud deployments, on-premises deployments, or both? |
+| **Status**                         | Deprecated  |
+
 
 ### Transport Layer Security (TLS) RSA cipher suites
 
