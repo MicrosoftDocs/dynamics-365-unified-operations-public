@@ -178,13 +178,11 @@ In this example added as part of the page where the Warehouse Management mobile 
     - **Paste in Create container:** *Shipment*
     - <!-- AUTO CONFIRM MISSING --> We don't want to confirm the value
 1. In the **Bring back from create container** section, set the following values for the empty row that has already been added there:
-
     - **Copy from Create container:** *Container ID*
     - **Paste in Pack:** *Container ID* <!-- MISSING -->
     - <!-- AUTO CONFIRM DISABLED !!! -->   We would like to rescan the container ID as confirmation
 1. Select **OK** to close the dialog box.
 1. Close the page.
-
 
 ## Add a *detour* for the *Container closing*
 To easy the container closing process while being in a container packing flow you can add a [Detour](warehouse-app-detours.md) process.
@@ -209,7 +207,13 @@ In this example added as part of the page where the Warehouse Management mobile 
 1. Select **OK** to close the dialog box.
 1. Close the page.
 
-
+Now you will be able to use the Warehouse Management mobile app t**Pack inventory into containers**, but you can as well add more look up logic by levering the [Data inquiry](warehouse-app-data-inquiry.md) capabilities as part of the process. In the following example you can add the following look up mobile device menu items:
+for: 
+- **Look up location** - Used to inquire for packing locations from where inventory should get packed
+- **Look up shipment** - Used to inquire for shipments going to get packed
+- **Look up item** - Used to inquire for item numbers going to get packed
+- **Look up container type** -  Used to inquire for container types for the container creation process
+- **Look up container** - Used to inquire for containers to close
 
 
 ## Look up container
