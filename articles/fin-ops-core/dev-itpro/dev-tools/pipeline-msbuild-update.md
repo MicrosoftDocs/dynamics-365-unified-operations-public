@@ -2,7 +2,7 @@
 title: Update a legacy pipeline in Azure Pipelines
 description: This article explains how to update a legacy pipeline in Azure Pipelines to use a newer version of Visual Studio.
 author: jorisdg
-ms.date: 09/23/2020
+ms.date: 08/08/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: tfehr
@@ -24,7 +24,7 @@ An **Azure Pipelines** pipeline explicitly specifies the versions of **Visual St
 
 ## Determine if your pipeline needs to be updated
 
-Build and development virtual machines deployed with version 10.0.13 upto 10.0.20 include **Visual Studio 2017** and those deployed with 10.0.21 and later include **Visual Studio 2019**. Support for [Visual Studio 2015 was deprecated](../get-started/removed-deprecated-features-platform-updates.md#platform-updates-for-version-10011-of-finance-and-operations-apps) in the April 2021 release. Support for [Visual Studio 2017 was deprecated](https://docs.microsoft.com/en-us/lifecycle/products/visual-studio-2017) in April 2022. If your build virtual machine does not include **Visual Studio 2019** you must plan to deploy a new build virtual machine with version 10.0.21 or later, or consider using the new [hosted build pipeline](hosted-build-automation.md).
+Build and development virtual machines deployed with version 10.0.13 through version 10.0.20 include **Visual Studio 2017**. Those deployed with version 10.0.21 and later include **Visual Studio 2019**. Support for [Visual Studio 2015 was deprecated](../get-started/removed-deprecated-features-platform-updates.md#platform-updates-for-version-10011-of-finance-and-operations-apps) in April 2021 and support for [Visual Studio 2017 was deprecated](/lifecycle/products/visual-studio-2017) in April 2022. If your build virtual machine does not include **Visual Studio 2019** you must plan to deploy a new build virtual machine with version 10.0.21 or later, or consider using the new [hosted build pipeline](hosted-build-automation.md).
 
 If your build virtual machine has Visual Studio 2019 installed, you can use the newer versions of **MSBuild** and **VS Test**. If your pipeline was created by a virtual machine deployment prior to version 10.0.21, you will have to manually update the pipeline.
 
@@ -39,7 +39,7 @@ Finally, you can check your build pipeline on the **Build the solution** step. T
 ## Updating the Azure Pipelines pipeline
 
 > [!NOTE]
-> To update an **Azure Pipelines** pipeline to use **Visual Studio 2019**, ensure your build virtual machine has been updated to version 10.0.21 or newer.
+> To update an **Azure Pipelines** pipeline to use **Visual Studio 2019**, ensure your build virtual machine has been updated to version 10.0.21 or later.
 
 The following four properties, in three tasks in the pipeline, need to be updated.
 
