@@ -44,7 +44,7 @@ Detailed information about objects in finance and operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | As part of [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/finance-operations/finance-operations-crossapp-capabilities/one-dynamics-one-platform) workstream, the following LCS features are depreacted:<br><br>- Crash dump analysis<br>- Feedback and bugs<br>- My subscription<br>- Office 365 users<br>- Impact analysis report<br>- Total economic impact estimator<br>- Environment snapshots<br>- Service requests<br>- Service Health dashboard<br>- Environment upgrade  |
+| **Reason for deprecation/removal** | As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/finance-operations/finance-operations-crossapp-capabilities/one-dynamics-one-platform) work effort, the following LCS features are depreacted:<br><br>- Crash dump analysis<br>- Feedback and bugs<br>- My subscription<br>- Office 365 users<br>- Impact analysis report<br>- Total economic impact estimator<br>- Environment snapshots<br>- Service requests<br>- Service Health dashboard<br>- Environment upgrade  |
 | **Replaced by another feature?**   | Yes or No?|
 | **Product areas affected**         | LCS |
 | **Deployment option**              | Does this affect cloud deployments, on-premises deployments, or both? |
