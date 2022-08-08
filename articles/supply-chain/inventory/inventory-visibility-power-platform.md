@@ -70,9 +70,23 @@ To post a reservation request, you must enter a value in the request body. Use t
 > [!NOTE]
 > The *OnHandMostSpecificBackgroundService* feature only tracks product on-hand changes that occurred after you turned on the feature. Data for products that haven't changed since you turned on the feature won't be synced from the inventory service cache to the Dataverse environment. If your **Inventory summary** page doesn't show all of the on-hand information you are expecting, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job and reenable it. This will do the initial push, and all data will sync to the *Inventory OnHand Sum* entity in next 15 minutes. If you want to use this feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
 
+## <a name="preload-the-inventory-visibility-summary"></a>Preload the Inventory Visibility Summary
+
+**Preload the Inventory Visibility Summary** is a customized view for the *On-hand Index Query Preload Results* entity. Different from *Inventory summary*, it provides an inventory onhand list for products together with specified dimensions.  Preload the Inventory Visibility Summary data is synced periodically from Inventory Visibility every 15 minutes. To view data on the **Preload the Inventory Visibility Summary** tab, you must turn on the *OnHandIndexQueryPreloadBackgroundService* feature on the **Feature Management** tab and select **Update configuration**.
+
+<u>(note: current preview version only allows preload result with site and location. Soon we will release a version which allows user to pre-define other dimensions for loading the results).
+</u>
+
+> [!NOTE]
+> Similar to *OnhandMostSpecificBackgroudService*, the *OnHandIndexQueryPreloadBackgroundService* feature only tracks product on-hand changes that occurred after you turned on the feature.Data for products that haven't changed since you turned on the feature won't be synced from the inventory service cache to the Dataverse environment. If your **Inventory summary** page doesn't show all of the on-hand information you are expecting, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job and reenable it. This will do the initial push, and all data will sync to the *On-hand Index Query Preload Results* entity in next 15 minutes. If you want to use this feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
+
+## <a name="additional-tip-for-viewing-data"></a> Additional Tip (for viewing Inventory summary and Preload the Inventory Visibility Summary)
+
 By using the **Advanced filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters. To learn more about how to use the **Advanced filter**, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced).
 
-The top of the customized view provides three fields: **Default dimension**, **Custom dimension**, and **Measure**. You can use these fields to control which columns are visible.
+In **Inventory summary**, the top of the customized view provides three fields: **Default dimension**, **Custom dimension**, and **Measure**. You can use these fields to control which columns are visible.
+
+In **Preload the Inventory Visibility Summary**, since you have predefined the dimensions used for loading summary data, the dimension-related columns will be displayed correspondingly in the page. 
 
 You can select the column header to filter or sort the current result.
 
