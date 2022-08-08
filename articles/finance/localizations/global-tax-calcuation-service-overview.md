@@ -60,10 +60,15 @@ Tax Calculation is deployed in the following Azure geographies. More Azure geogr
 
 - Asia Pacific
 - Australia
+- Brazil
 - Canada
 - Europe
+- France
+- India
 - Japan
+- South Africa
 - Switzerland
+- United ArabEemirates
 - United Kingdom
 - United States
 
@@ -155,11 +160,15 @@ The following transactions are supported in version 10.0.28:
 - Vendor payment journal
 - Customer payment journal
 
+The following transactions are supported in version 10.0.29: 
+
+- Periodical journal
+
 ## Supported countries/regions
 
-Tax Calculation can be enabled by legal entity. 
+Tax Calculation can be run with the supported localization features in following countries/regions for a legal entity's primary address: 
 
-The following countries/regions for a legal entity's primary address are supported in version 10.0.21:
+Supported in version 10.0.21:
 
 - Austria
 - Belgium
@@ -182,7 +191,7 @@ The following countries/regions for a legal entity's primary address are support
 - United Kingdom
 - United States
 
-The following countries/regions for a legal entity's primary address are supported in version 10.0.22:
+Supported in version 10.0.22:
 
 - Australia
 - Bahrain
@@ -197,22 +206,24 @@ The following countries/regions for a legal entity's primary address are support
 - South Africa
 - United Arab Emirates
 
-The following countries/regions for a legal entity's primary address are supported in version 10.0.23:
+Supported in version 10.0.23:
 
 - Thailand
 - Japan
 - Malaysia
 - Singapore
 
-The following countries/regions for a legal entity's primary address are supported in version 10.0.24:
+Supported in version 10.0.24:
 
 - Mexico
 
-The following countries/regions for a legal entity's primary address are supported in version 10.0.26:
+Supported in version 10.0.26:
 
 - China
 - Czech Republic
 - Spain
+
+For any country/region not localized by Microsoft, Tax Calculation can also be enabled and run with other global features.
 
 ## Related resources
 
