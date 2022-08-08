@@ -41,7 +41,7 @@ Peak season is one example of a situation where the *Maximum location capacity* 
 
 ## Turn on the Replenish to max based on stocking limits feature
 
-Before you can use this feature, it must be turned on in your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of this feature and turn it on if it's required. There, the feature is listed in the following way:
+Before you can use this feature, it must be turned on for your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of this feature and turn it on if it's required. There, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Replenish to max based on stocking limits*

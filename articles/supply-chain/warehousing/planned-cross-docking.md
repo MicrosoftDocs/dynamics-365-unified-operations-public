@@ -42,8 +42,8 @@ At the time of inbound order receiving, the cross-docking setup automatically id
 
 If your system doesn't already include the features described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the following features in the following order:
 
-1. *Planned cross docking*
-1. *Cross docking templates with location directives*
+1. *Planned cross docking*<br>(As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off.)
+1. *Cross docking templates with location directives*<br>(As of Supply Chain Management version 10.0.29, this feature is turned on by default.)
     > [!NOTE]
     > This feature enables the **Directive code** field to be specified on the cross-docking template, similar to the way you set up replenishment templates. Enabling this feature prevents you from adding a directive code on the cross-docking work template lines for the final *Put* line. This ensures that the final put location can be determined during work creation before considering work templates.
 
@@ -95,7 +95,7 @@ Planned cross-docking is implemented as a load posting method. After you turn on
 
     - **Directive code:** Leave this field blank
 
-        This option is enabled by the *Cross docking templates with location directives* feature. The system uses location directives to help determine the best location to move cross-docking inventory to. You can set it up by assigning a directive code to each relevant cross-docking template. If a directive code is set, the system will search location directives by directive code when work is generated. In this way, you can limit location directives that are used for a particular cross-docking template.
+        This option is enabled by the *Cross docking templates with location directives* feature (as of Supply Chain Management version 10.0.29, the feature is turned on by default). The system uses location directives to help determine the best location to move cross-docking inventory to. You can set it up by assigning a directive code to each relevant cross-docking template. If a directive code is set, the system will search location directives by directive code when work is generated. In this way, you can limit location directives that are used for a particular cross-docking template.
 
     - **Validate time window:** *Yes*
 

@@ -25,7 +25,7 @@ To get a quick overview of this feature, see the following video: [Planning opti
 
 ## Turn on priority-based planning in your system
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+Before you can use this feature, it must be turned on for your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Master planning*
 - **Feature name:** *Priority driven MRP support for Planning Optimization*

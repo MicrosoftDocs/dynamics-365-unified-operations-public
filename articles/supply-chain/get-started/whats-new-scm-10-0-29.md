@@ -98,7 +98,7 @@ The table also lists features that were previously in public preview but have ch
 | Inventory and warehouse management | Using unit of measure and unit quantity in inventory journals | Mandatory |
 | Inventory and warehouse management | Unlock inventory journal | Mandatory |
 | Manufacturing | [Auto-picking of warehouse enabled materials for auto-posted picking lists](whats-new-scm-10-0-23.md) | Generally available |
-| Manufacturing | Enable display of inventory dimensions in the materials list for production route operations | On by default |
+| Manufacturing | Enable display of inventory dimensions in the materials list for production route operations | Mandatory |
 | Manufacturing | [Enable to enter batch and serial numbers while reporting as finished from the Job Card Device](../production-control/report-finished-job-device.md) | On by default |
 | Manufacturing | Improved production catch weight quantity picking | On by default |
 | Manufacturing | [Job search for the production floor execution interface](../production-control/production-floor-execution-configure.md) | Mandatory |
@@ -158,15 +158,15 @@ The table also lists features that were previously in public preview but have ch
 | Sales and marketing | [Single click sales order confirmation](/dynamics365-release-plan/2021wave1/finance-operations/dynamics365-supply-chain-management/single-click-sales-order-confirmation) | Mandatory |
 | Transportation management | Allow unmatching of freight bills from freight invoice lines without a posted vendor invoice journal | On by default |
 | Transportation management | [Enable creation of a vendor invoice journal when discarding a freight bill](whats-new-scm-10-0-20.md) | On by default |
-| Transportation management | [Small Parcel Shipping](../warehousing/small-parcel-shipping.md) | On by default |
+| Transportation management | [Small Parcel Shipping](../warehousing/small-parcel-shipping.md) | Mandatory |
 | Transportation management | [USMCA certification of origin document](../transportation/usmca-certification-of-origin.md) | On by default |
 | Warehouse management | [Additional location zone](../warehousing/additional-location-zones.md) | Mandatory |
 | Warehouse management | [Cancel work](../warehousing/cancel-warehouse-work.md) | Mandatory |
-| Warehouse management | [Consolidate shipment](../warehousing/configure-shipment-consolidation-policies.md) | On by default |
+| Warehouse management | [Consolidate shipment](../warehousing/configure-shipment-consolidation-policies.md) | Mandatory |
 | Warehouse management | [Create and process transfer orders from the warehouse app](../warehousing/create-transfer-order-from-warehouse-app.md) | Mandatory |
-| Warehouse management | Cross-docking templates with location directives | On by default |
-| Warehouse management | [Decouple putaway work from ASNs](whats-new-scm-10-0-21.md) | On by default |
-| Warehouse management | [Deferred put operations](../warehousing/deferred-processing-manual-inventory-movement.md) | On by default |
+| Warehouse management | Cross docking templates with location directives | On by default |
+| Warehouse management | [Decouple putaway work from ASNs](whats-new-scm-10-0-21.md) | Mandatory |
+| Warehouse management | [Deferred put operations](../warehousing/deferred-processing-manual-inventory-movement.md) | Mandatory |
 | Warehouse management | Deferred put - container | On by default |
 | Warehouse management | Deferred put processing – enable for audit template feature with trigger event set to Prior | Mandatory |
 | Warehouse management | [Disable expected receipts from quality orders that sample blocked inventory](../inventory/inventory-blocking.md) | On by default |
@@ -181,7 +181,7 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | [Manual transfer line picking service for admin or similar trusted users](whats-new-scm-10-0-28.md) | Generally available |
 | Warehouse management | [Material handling equipment interface](../warehousing/mhax.md) | Mandatory |
 | Warehouse management | [New load planning workbench pages](whats-new-scm-10-0-24.md) | Generally available |
-| Warehouse management | [Planned cross docking](../warehousing/planned-cross-docking.md) | On by default |
+| Warehouse management | [Planned cross docking](../warehousing/planned-cross-docking.md) | Mandatory |
 | Warehouse management | [Process warehouse app events](../warehousing/warehouse-app-events.md) | Mandatory |
 | Warehouse management | Query enhancement for the co-product and by-product put away work template | Mandatory |
 | Warehouse management | [Round quantities down to nearest sales unit on release to warehouse](whats-new-scm-10-0-19.md) | Mandatory |

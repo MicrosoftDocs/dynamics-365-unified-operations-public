@@ -18,11 +18,11 @@ ms.dyn365.ops.version: 10.0.21
 
 The delay tolerance functionality enables Planning Optimization to consider the **Negative days** value that is set for coverage groups, item coverage, and/or master plans. It's used to extend the delay tolerance period that is applied during master planning. In this way, you can avoid creating new supply orders if existing supply will be able to cover the demand after a short delay. The purpose of the functionality is to determine whether it makes sense to create a new supply order for a given demand.
 
-## Turn on the feature in your system
+## Turn delay tolerance features on or off
 
 To make the delay tolerance functionality available in your system, go to [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), and turn on the following features:
 
-- *Negative days for Planning Optimization* – This feature enables negative days settings for coverage groups and item coverage.
+- *Negative days for Planning Optimization* – This feature enables negative days settings for coverage groups and item coverage. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off.
 - *Make-to-order supply automation* – This feature enables negative days settings for master plans. (For more information, see [Make-to-order supply automation](../make-to-order-supply-automation.md).)
 
 ## Delay tolerance in Planning Optimization

@@ -39,7 +39,7 @@ This article describes the various options for configuring a production floor ex
 
 ## Turn on the production floor execution interface and its related optional features
 
-The production floor execution interface itself, plus several of the optional settings that are described in this article, must be turned on in your system before you can use them. Use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to turn on any or all of the features described in the following subsections as required.
+The production floor execution interface itself, plus several of the optional settings that are described in this article, must be turned on for your system before you can use them. Use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to turn on any or all of the features described in the following subsections as required.
 
 ### The production floor execution interface
 
@@ -81,13 +81,13 @@ As of Supply Chain Management version 10.0.25, this feature is turned on by defa
 
 This feature lets workers use the production floor execution interface to report progress on batch orders. This reporting includes reporting on co-products and by-products.
 
-To use this feature, it must be turned on in your system. As of Supply Chain Management version 10.0.29, the feature is turned on by default. Admins can turn this functionality on or off by searching for the *Report on co- and by-products from the production floor execution interface* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is turned on by default. Admins can turn this functionality on or off by searching for the *Report on co- and by-products from the production floor execution interface* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Display full serial, batch, and license plate numbers
 
 This feature provides an improved experience for viewing lists of serial, batch, and license plate numbers in the production floor execution interface. The display changes from a card view that shows a limited number of characters to a list view that provides enough space to show the full values. The list also provides the ability to search for specific numbers.
 
-To use this feature, it must be turned on in your system. As of Supply Chain Management version 10.0.25, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Show full serial, batch, and license plate numbers in the production floor execution interface* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.25, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Show full serial, batch, and license plate numbers in the production floor execution interface* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 
 As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Show full serial, batch, and license plate numbers in the production floor execution interface* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
@@ -116,7 +116,7 @@ To use this functionality, turn on the following feature in [Feature management]
 
 The **My day** dialog provides workers with an overview of their daily registrations and current balances for paid time, paid overtime, absence, and paid absence.
 
-To use this feature, it must be turned on in your system. As of Supply Chain Management version 10.0.29, the feature is turned on by default. Admins can turn this functionality on or off by searching for the *"My day" view for the production floor execution interface* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is turned on by default. Admins can turn this functionality on or off by searching for the *"My day" view for the production floor execution interface* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Teams
 

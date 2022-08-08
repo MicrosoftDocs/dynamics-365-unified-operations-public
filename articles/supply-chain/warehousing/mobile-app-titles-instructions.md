@@ -25,7 +25,7 @@ This article describes how to create and show custom instructions for every step
 
 ## Turn on the Warehouse app step instructions feature
 
-Before you can use this feature, it must be turned on in your system. As of Supply Chain Management version 10.0.29, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Warehouse app step instructions* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+Before you can use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Warehouse app step instructions* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Step titles and step instructions in the app
 

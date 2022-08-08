@@ -32,12 +32,9 @@ ms.dyn365.ops.version: AX 10.0.12
 
 This article describes how Planning Optimization can find the vendor and/or lead time for a planned order, based on the best price or lead time that is found among all purchase trade agreements that have been specified for a given product.
 
-## Turn on the Purchase trade agreements for Planning Optimization feature
+## Turn the Purchase trade agreements for Planning Optimization feature on or off
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
-
-- **Module:** *Master planning*
-- **Feature name:** *Purchase trade agreements for Planning Optimization*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Purchase trade agreements for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Prepare your system to evaluate purchase trade agreements during master planning
 

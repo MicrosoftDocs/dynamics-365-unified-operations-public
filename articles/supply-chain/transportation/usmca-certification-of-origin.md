@@ -38,12 +38,9 @@ The document is only accessible when the country on the primary address for the 
 
 Depending on the document print selection, the document can be pre-filled with data from your system. It is possible to change or add data to the printed document by exporting the printed document to an editable format, such as Microsoft Word. After export, you can apply any required changes before a declaration is made.
 
-## Turn on the USMCA feature
+## Turn the USMCA feature on or off
 
-Before you can use the USMCA feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Transportation management*
-- **Feature name:** *USMCA certification of origin document*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is turned on by default. Admins can turn this functionality on or off by searching for the *USMCA certification of origin document* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Document content
 

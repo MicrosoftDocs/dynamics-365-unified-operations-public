@@ -47,7 +47,7 @@ Before you can use the *Manual shipment consolidation* feature, you must turn it
 - **Module:** *Warehouse management*
 - **Feature name:** *Manual shipment consolidation*
 
-You must also turn on the *Consolidate shipment* feature before you can create policies. For more information, see [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md).
+You must also turn on the *Consolidate shipment* feature before you can create policies (as of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off). For more information, see [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md).
 
 ## Create the sales orders for this scenario
 

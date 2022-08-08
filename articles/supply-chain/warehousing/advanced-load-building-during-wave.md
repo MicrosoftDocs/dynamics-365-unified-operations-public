@@ -40,7 +40,7 @@ To use the feature, you must set up the system in the following way:
 
 ## Turn on advanced wave load building in your system
 
-Before you can use advanced wave load building, two features must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of these features and turn them on if they are required. In the **Feature management** workspace, the features are listed in the following way:
+Before you can use advanced wave load building, two features must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of these features and turn them on if they are required. In the **Feature management** workspace, the features are listed in the following way:
 
 - Wave load building feature:
 

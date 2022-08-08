@@ -205,7 +205,7 @@ In this scenario, a company uses warehouse management and work processing, and h
 
 ### Turn on flexible license plate reservation
 
-Before you can use flexible license plate reservation, two features must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on if they are required. You must turn on the features in the following order:
+Before you can use flexible license plate reservation, two features must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on if they are required. You must turn on the features in the following order:
 
 1. **Feature name:** *Flexible warehouse-level dimension reservation*
 1. **Feature name:** *Flexible order-committed license plate reservation*
