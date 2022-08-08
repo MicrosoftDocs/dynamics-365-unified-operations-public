@@ -4,7 +4,7 @@
 title: Adjust sales tax via general journals
 description: This article explains how to adjust sales tax by using general journals.
 author: kailiang
-ms.date: 08/05/2022
+ms.date: 08/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: 
 # ms.search.industry: 
-ms.author: 
+ms.author: kailiang
 ms.search.validFrom: 2022-08-03
 ms.dyn365.ops.version:
 
