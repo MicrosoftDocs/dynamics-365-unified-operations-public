@@ -42,7 +42,7 @@ Dynamics 365 Commerce point of sale (POS) application provides rich capabilities
 | Override prices                	| [Price override](#price-override)                                                                                                                                                           	|
 | Apply or remove discounts      	| [Line discount amount](#line-discount-amount)<br>[Line discount percent](#line-discount-percent)<br>[Total discount amount](#total-discount-amount)<br>[Total discount percent](#total-discount-percent)<br>[Remove system discounts from transaction](#remove-system-discounts-from-transaction)<br>[Reapply system discounts](#reapply-system-discounts) 	|
 | Apply or remove coupons        	| [Add coupon code](#add-coupon-code)<br>[Remove coupon code](#remove-coupon-code)                                                                                                                                    	|
-| Calculate prices and discounts 	| [Calculate total](#calculate-total)                                                                                                                                                          	|
+| Calculate prices and discounts 	| [Recalculate](#recalculate)                                                                                                                                                          	|
 
 For more details about how those operations can be configured in the application and whether they support offline mode, please check [Online and offline point of sale (POS) operations](https://docs.microsoft.com/dynamics365/commerce/pos-operations).
 
@@ -102,8 +102,8 @@ The **Add coupon code** operation allows POS users to add a coupon to the transa
 
 The **Remove coupon code** operation allows POS users to select and remove one or more coupons that are currently applied to the transaction.
 
-## Calculate total
+## Recalculate
 
-The **Calculate total** operation allows POS users to trigger on-demand pricing calculation. This operation is needed when price lock and/or delayed price calculation is enabled, and the POS user wants to recalculate prices and discounts after cart / order changes.
+The **Recalculate** operation allows POS users to trigger on-demand pricing calculation. This operation is needed when price lock and/or delayed price calculation is enabled, and the POS user wants to recalculate prices and discounts after cart / order changes. This operation recalculates the entire order and cannot be used to recalculate selected sales lines. To apply manual discounts to a locked sales line in POS, the POS user needs to use this operation to unlock all sales lines first.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
