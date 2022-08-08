@@ -85,20 +85,20 @@ For the **Container closing** process which can get triggered directly from the 
 -	**Container ID** to get closed
 -	**Weight** of the container which will get defaulted based on the item master weight definition
 
-## <a name="scenario"></a>Example scenario
+# <a name="scenario"></a>Example scenario
 This section provides an example scenario that shows how to setup a *Warehouse Management mobile app packing flow* and process an simple outbound sales order by packing a container and closing it via the *Warehouse Management mobile app*.
 The setup will leverage the [Detour](warehouse-app-detours.md) including [Data inquiry](warehouse-app-data-inquiry.md) capabilities and running with eight mobile device menu items. But of cause this will not be a mandatory setup process.
 
 <!-- PICTURE FOR DEMO TO GET UPDATED WITH APP SCREENS -->
  ![Warehouse app packing demo](media/wma-packing-demo.png "Warehouse app packing demo")
  
-### Make sample data available
+## Make sample data available
 To work through this scenario by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
 The example will be running with the demo data associated with the *Worker*/*Person* 'Julia Funderburk'.
 
 You can also use this scenario as guidance for using the feature on a production system. However, in that case, you must substitute your own values for each setting that is described here.
 
-## Define Worker set up for container packing
+### Define Worker set up for container packing
 You must set up the **Container packing policy** and **Packing profile ID** for the workers using the Warehouse Management mobile app container packing process.
 
 1.	Go to **Warehouse management > Setup > Worker**
@@ -112,7 +112,7 @@ You must set up the **Container packing policy** and **Packing profile ID** for 
 -	**Warehouse** - Select *62*, a warehouse already enabled for the packing process in the demo data.
 -	**Location** - Select *Pack*. Note that the Warehouse Management mobile app will always prompt for confirmation for the assigned value, which can get overwritten. In case you do not provide a default packing location value the warehouse worker must always scan or look up the packing location in the app, which can get acheived by using the [Data inquiry](warehouse-app-data-inquiry.md) capability.
 
-## Create a new *Pack inventory into containers* mobile device menu item
+### Create a new *Pack inventory into containers* mobile device menu item
 You must create a new mobile device menu item to pack inventory into containers via the Warehouse Management mobile app.
 1.	Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**
 2.	Select **New** on the Action Pane to add a new mobile device menu item
@@ -123,7 +123,7 @@ You must create a new mobile device menu item to pack inventory into containers 
    - **Activity code** - Select *Pack inventory into containers*
        4. Close the page
 
-## Create a new *Container creation* mobile device menu item
+### Create a new *Container creation* mobile device menu item
 You must create a new mobile device menu item to pack inventory into containers via the Warehouse Management mobile app.
 1.	Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**
 2.	Select **New** on the Action Pane to add a new mobile device menu item
@@ -134,7 +134,7 @@ You must create a new mobile device menu item to pack inventory into containers 
    - **Activity code** - Select *Container creation*
        4. Close the page
 
-## Create a new *Container closing* mobile device menu item
+### Create a new *Container closing* mobile device menu item
 You must create a new mobile device menu item to pack inventory into containers via the Warehouse Management mobile app.
 1.	Go to **Warehouse management > Setup > Mobile device > Mobile device menu items**
 2.	Select **New** on the Action Pane to add a new mobile device menu item
@@ -145,7 +145,7 @@ You must create a new mobile device menu item to pack inventory into containers 
    - **Activity code** - Select *Container closing*
        4. Close the page
 
-## Add the three new mobile device menu items to the menu
+### Add the three new mobile device menu items to the menu
 With now having the mobile device menu items, we are ready to get it added to the **Mobile device menu**. This is required to use it for the container packing process.
 In this example we will add it to the existing *Outbound** mobile device menu.
 1. Open **Warehouse management > Setup > Mobile device > Mobile device menu**.
@@ -158,7 +158,7 @@ In this example we will add it to the existing *Outbound** mobile device menu.
 
 With this current setup you can process the packing of shipment items into containers via the Warehouse Management mobile app, but you will need to use the *Create container* and *Close container* processes directly from the menu. To ease the use of the supported packing processes follow the enablement of [Detour](warehouse-app-detours.md).
 
-## Add a *detour* for the *Container creation*
+### Add a *detour* for the *Container creation*
 To easy the container creation process while being in a container packing flow you can add a [Detour](warehouse-app-detours.md) process.
 In this example added as part of the page where the Warehouse Management mobile app page prompts for *Scan container to pack*.
 
@@ -184,7 +184,7 @@ In this example added as part of the page where the Warehouse Management mobile 
 1. Select **OK** to close the dialog box.
 1. Close the page.
 
-## Add a *detour* for the *Container closing*
+### Add *detour* for *Container closing*
 To easy the container closing process while being in a container packing flow you can add a [Detour](warehouse-app-detours.md) process.
 In this example added as part of the page where the Warehouse Management mobile app page prompts for *Scan item*.
 
@@ -207,7 +207,7 @@ In this example added as part of the page where the Warehouse Management mobile 
 1. Select **OK** to close the dialog box.
 1. Close the page.
 
-Now you will be able to use the Warehouse Management mobile app t**Pack inventory into containers**, but you can as well add more look up logic by levering the [Data inquiry](warehouse-app-data-inquiry.md) capabilities as part of the process. In the following example you can add the following look up mobile device menu items:
+Now you will be able to use the Warehouse Management mobile app **Pack inventory into containers**, but you can as well add more look up logic by using the [Data inquiry](warehouse-app-data-inquiry.md) capabilities as part of the process. In the following example it will be shown how to add the following look up mobile device menu items:
 for: 
 - **Look up location** - Used to inquire for packing locations from where inventory should get packed
 - **Look up shipment** - Used to inquire for shipments going to get packed
@@ -215,17 +215,278 @@ for:
 - **Look up container type** -  Used to inquire for container types for the container creation process
 - **Look up container** - Used to inquire for containers to close
 
+### Create the five "look up" menu items
+To create the different "Look up" menu items follow these steps.
 
-## Look up container
+#### **Look up location**
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. On the Action Pane, select **New** to add a mobile device menu item.
+1. Set the following values for the new item:
+
+    - **Menu item name:** *Look up location*
+    - **Title:** *Look up location*
+    - **Mode:** *Indirect*
+
+1. On the **General** FastTab, set the following values:
+
+    - **Activity code:** *Data inquiry*
+    - **Use process guide:** *Yes* (This value is automatically selected.)
+    - **Table name:** *WMSLocation* (You want to look up warehouse locations based on eg. location profile ID.)
+
+1. On the Action Pane, select **Edit query** to define a query that is based on the selected base table (in this case, the location table. Note that you can join to related tables when needed).
+1. In the query editor, on the **Range** tab, add the following lines to the grid.
+
+    | Table | Derived table | Field | Criteria |
+    |---|---|---|---|
+    | Locations | Locations | Warehouse |  |
+    | Locations | Locations | Location profile ID | PACK |
+    
+1. Select **OK**.
+
+    In this example, the new menu item is configured to find locations used for packing operations.
+
+    In the query, the **Warehouse** field will automatically get assigned based on the workers current warehouse.
+
+    If you want to specify how the list will be sorted, you can set up the sorting on the **Sorting** tab.
+
+1. In addition to defining the query, you must select which fields will be shown on the cards on the inquiry list page. Therefore, on the Action Pane, select **Field list**.
+1. On the **Field list** page, set the following values:
+
+    - **Display field 1:** *wMSLocationId* (This field value will be used as the header for each card.)
+    - **Display field 2:** *inventLocationId*
+    - **Display field 3:** *LocProfileId*
+    - **Display field 4:** *whsDisplayQty()*
+    - **Display field 5:** *whsDisplayItemId()*
+
+1. On the Action Pane, select **Save**. Then close the page.
+
+
+#### Look up shipment
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. On the Action Pane, select **New** to add a mobile device menu item.
+1. Set the following values for the new item:
+
+    - **Menu item name:** *Look up shipment*
+    - **Title:** *Look up shipment*
+    - **Mode:** *Indirect*
+
+1. On the **General** FastTab, set the following values:
+
+    - **Activity code:** *Data inquiry*
+    - **Use process guide:** *Yes* (This value is automatically selected.)
+    - **Table name:** *WHSShipmentTable*
+
+1. On the Action Pane, select **Edit query** to define a query that is based on the selected base table (in this case, the location table. Note that you can join to related tables when needed).
+1. In the query editor, on the **Range** tab, add the following lines to the grid.
+
+    | Table | Derived table | Field | Criteria |
+    |---|---|---|---|
+    | Shipments | Shipments | Warehouse |  |
+    | Shipments | Shipments | Shipment status | Open, Waved, "In process" |
+    
+1. Select **OK**.
+
+    In this example, the new menu item is configured to find active shipments.
+
+    In the query, the **Warehouse** field will automatically get assigned based on the workers current warehouse.
+
+    If you want to specify how the list will be sorted, you can set up the sorting on the **Sorting** tab.
+
+1. In addition to defining the query, you must select which fields will be shown on the cards on the inquiry list page. Therefore, on the Action Pane, select **Field list**.
+1. On the **Field list** page, set the following values:
+
+    - **Display field 1:** *shipmentID* (This field value will be used as the header for each card.)
+    - **Display field 2:** *ShipmentStatus*
+    - **Display field 3:** *displayDeliveryName....* <!-- end ???-->
+    - **Display field 4:** *displayNumberOfC...* <!-- end ???-->
+    - **Display field 5:** *displayNumberOfL...* <!-- end ???-->
+    - **Display field 6:** *displayTotalVolume()*
+    - **Display field 7:** *displayTotalWeight()*
+    - **Display field 8:** *displayShipmentID...*  <!-- end ???-->
+
+1. On the Action Pane, select **Save**. Then close the page.
+
+#### Look up item
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. On the Action Pane, select **New** to add a mobile device menu item.
+1. Set the following values for the new item:
+
+    - **Menu item name:** *Look up item*
+    - **Title:** *Look up item*
+    - **Mode:** *Indirect*
+
+1. On the **General** FastTab, set the following values:
+
+    - **Activity code:** *Data inquiry*
+    - **Use process guide:** *Yes* (This value is automatically selected.)
+    - **Table name:** *WHSShipmentLine* <!-- ??? -->
+
+1. On the Action Pane, select **Edit query** to define a query that is based on the selected base table (in this case, the location table. Note that you can join to related tables when needed).
+1. In the query editor, on the **Range** tab, add the following lines to the grid.
+
+    | Table | Derived table | Field | Criteria |
+    |---|---|---|---|
+    | Shipment lines | Shipment lines | Warehouse |  | <!-- ??? -->
+    
+1. Select **OK**.
+
+    In this example, the new menu item is configured to find active shipments.
+
+    In the query, the **Warehouse** field will automatically get assigned based on the workers current warehouse.
+
+    If you want to specify how the list will be sorted, you can set up the sorting on the **Sorting** tab.
+
+1. In addition to defining the query, you must select which fields will be shown on the cards on the inquiry list page. Therefore, on the Action Pane, select **Field list**.
+1. On the **Field list** page, set the following values:
+<!--- MISSING-->
+    - **Display field 1:** *Item number* (This field value will be used as the header for each card.)
+    - **Display field 2:** *ShipmentStatus*
+    - **Display field 3:** *displayDeliveryName....* <!-- end ???-->
+    - **Display field 4:** *displayNumberOfC...* <!-- end ???-->
+    - **Display field 5:** *displayNumberOfL...* <!-- end ???-->
+    - **Display field 6:** *displayTotalVolume()*
+    - **Display field 7:** *displayTotalWeight()*
+    - **Display field 8:** *displayShipmentID...*  <!-- end ???-->
+
+1. On the Action Pane, select **Save**. Then close the page.
+
+#### Look up container type
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. On the Action Pane, select **New** to add a mobile device menu item.
+1. Set the following values for the new item:
+
+    - **Menu item name:** *Look up container type*
+    - **Title:** *Look up container type*
+    - **Mode:** *Indirect*
+
+1. On the **General** FastTab, set the following values:
+
+    - **Activity code:** *Data inquiry*
+    - **Use process guide:** *Yes* (This value is automatically selected.)
+    - **Table name:** *WHSContainerType*
+
+    In this example, the new menu item is configured to find all container types (no need to *Edit query*), but it might make sense to filter based on *Container group ID* or other field values.
+    If you want to specify how the list will be sorted, you can set up the sorting on the **Sorting** tab. In this example the *Maximum volume* field could be a candidate.
+
+1. You must select which fields will be shown on the cards on the inquiry list page. Therefore, on the Action Pane, select **Field list**.
+1. On the **Field list** page, set the following values:
+<!--- MISSING-->
+    - **Display field 1:** *ContainerTypeCode* (This field value will be used as the header for each card.)
+    - **Display field 2:** *Description*
+    - **Display field 3:** *MaxVolume*
+    - **Display field 4:** *MaxWeight*
+    - **Display field 5:** *Height*
+    - **Display field 6:** *Lenght*
+    - **Display field 7:** *Width*
+    - **Display field 8:** *FlexibleVolumeDi...*  <!-- end ???-->
+
+1. On the Action Pane, select **Save**. Then close the page.
+
+
+#### Look up container
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
+1. On the Action Pane, select **New** to add a mobile device menu item.
+1. Set the following values for the new item:
+
+    - **Menu item name:** *Look up container*
+    - **Title:** *Look up container*
+    - **Mode:** *Indirect*
+
+1. On the **General** FastTab, set the following values:
+
+    - **Activity code:** *Data inquiry*
+    - **Use process guide:** *Yes* (This value is automatically selected.)
+    - **Table name:** *WHSContainerWarehouseLocationView* - By using this view it will be possible to limit the look up to only show containers for a specific packing location releated to a specific shipment.
+
+1. On the Action Pane, select **Edit query** to define a query that is based on the selected base table (in this case, the location table. Note that you can join to related tables when needed).
+1. In the query editor, on the **Range** tab, add the following lines to the grid.
+
+    | Table | Derived table | Field | Criteria |
+    |---|---|---|---|
+    | WHSContainerWarehouseLocationView | WHSContainerWarehouseLocationView | Warehouse |  |
+    | WHSContainerWarehouseLocationView | WHSContainerWarehouseLocationView | Location |  |    
+    | WHSContainerWarehouseLocationView | WHSContainerWarehouseLocationView | Shipment ID |  |
+    | WHSContainerWarehouseLocationView | WHSContainerWarehouseLocationView | Container status |!Closed |
+    
+1. Select **OK**.
+
+    In this example, the new menu item is configured to find active containers on the current packing location related to the current shipment getting packed.
+    In the query, the **Warehouse**, **Location**, and **Shipment ID** fields will automatically get assigned based on following detour setup.
+
+    If you want to specify how the list will be sorted, you can set up the sorting on the **Sorting** tab.
+
+1. In addition to defining the query, you must select which fields will be shown on the cards on the inquiry list page. Therefore, on the Action Pane, select **Field list**.
+1. On the **Field list** page, set the following values:
+
+    - **Display field 1:** *ContainerId* (This field value will be used as the header for each card.)
+    - **Display field 2:** *ContainerStatus*
+    - **Display field 3:** *Weight*
+    - **Display field 4:** *WeightUOM*
+    - **Display field 5:** *ContainerNum*
+    - **Display field 6:** *ContainerReleased*
+    - **Display field 7:** *ContainerTypeCode*
+
+1. On the Action Pane, select **Save**. Then close the page.
+
+
+### Add the new mobile device menu items to a menu
+
+Your new mobile device menu items are now ready to be added to the mobile device menu. This task must be completed before the menu items can be used as part of a detour process. In this example, you will create a new submenu and add the new menu items to it.
+
+1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu**.
+1. On the Action Pane, select **New**.
+1. Set the following values on the header of the new record:
+
+    - **Name:** *Inquire*
+    - **Description:** *Inquire*
+
+1. In the **Available menus and menu items** list, select the first of the five "look up" mobile device menu items that you just created. Then select the right arrow button to move that item into the **Menu structure** list.
+1. Repeat the previous step for the other four new menu items.
+1. In the list pane on the left, select the **Main** menu.
+1. In the **Available menus and menu items** list, scroll down to the **Menus** section, and select your new **Inquire** menu. Then select the right arrow button to move that item into the **Menu structure** list.
+
+
+### Configure detours in your mobile device steps
+
+To complete the setup, you must now use the detour configuration on the **Mobile device steps** page to add the five new mobile device menu items to existing menu item flows.
+In this example you perform the following setup:
+
+- Add **Look up location** into the **Pack - Scan packing location** step
+- Add **Look up shipment** into the **Pack - Scan shipment** step
+- Add **Look up item** into the **Pack - Scan item** step
+- Add **Look up container type** into the **Create container - Scan container type** step
+- Add **Look up container** into the **Cloase container - Scan container** step
+
+
+#### Add **Look up location** as detour <!-- MISSING -->
+1. Go to **Warehouse management \> Setup > Mobile device \> Mobile device steps**.
+1. In the **Filter** field, enter *PONum*. Then select *Step ID: "PONum"* in the drop-down list.
+1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Pack*. Then select **OK** to close the dialog box.
+1. On the details page for the new step configuration (**Purchase Receive : PONum**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
+1. In the **Add detour** dialog box, find and select the **Look up POs by vendor** menu item that you previously created.
+1. Select **OK** to close the dialog box and add the selected menu item to the detours list.
+1. Select the new detour, and then select **Select fields to send** on the toolbar.
+1. In the **Select fields to send** dialog box, don't add anything to the **Send from purchase receive** section, because you don't want to pass any values to the detour menu item. However, in the **Bring back from look up POs by vendor** section, set the following value for the empty row that has already been added there:
+
+    - **Copy from Look up POs by vendor:** *Purchase order*
+    - **Paste in Purchase Receive:** *Purchase order*
+
+1. Select **OK** to close the dialog box.
+1. Repeat steps 4 through 9 for the other two new menu items (**Look up POs for today** and **Look up POs by item**). As for the **Look up POs by vendor** menu item, you don't want to send any data to these detours, but you do want to return a purchase order number.
+1. Close the page.
 
 
 
+#### Add **Look up shipment** as detour <!-- MISSING -->
 
-----
+<!-- MISSING -->
+
+#### Add **Look up item** as detour
+#### Add **Look up container type** as detour
+#### Add **Look up container** as detour
 
 
-### Create a sales order and complete the work
-
+## Create a sales order and complete the work
 Follow these steps to create a sales order and complete the work of moving the ordered items to the packing area.
 
 1. Go to **Sales and marketing \> Sales orders \> All sales orders**.
@@ -278,7 +539,11 @@ The inventory items have now been brought to the packing area and are ready to b
 > The different field values getting displayed on the Warehouse Management mobile app pages can get sorted and highlighted by using the [Promoted fields](warehouse-app-promoted-fields.md) capability.
 
 
-## Supported/Unsupported processes
+> [!INFORMATION]
+> Consider using the [Packing work for packing outbound containers and processing shipments](packing-work.md) as part of the process including adding different kind of [Data inquiry](warehouse-app-data-inquiry.md) menu items for this data.
+
+
+# Supported/Unsupported processes
 In the following table you can see which processes are supported when using the Warehouse Management mobile app container packing process compared with the rich client **Pack** page.
 
 |Logic                                                        | Supported | Comment                                                                                                                               |
