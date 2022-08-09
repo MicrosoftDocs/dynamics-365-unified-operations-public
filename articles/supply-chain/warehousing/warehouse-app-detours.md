@@ -30,7 +30,7 @@ Before you can configure detours for steps in mobile device menu items, you must
 
 1. Go to **System administration \> Workspaces \> Feature management**.
 1. Make sure that the *Warehouse app step instructions* feature is turned on for your system. As of Supply Chain Management version 10.0.29, this feature is turned on by default. For more information about the *Warehouse app step instructions* feature, see [Customize step titles and instructions for the Warehouse Management mobile app](mobile-app-titles-instructions.md). This feature is a prerequisite for the *Warehouse management app detours* feature.
-1. Turn on the *Warehouse management app detours* feature. This feature is the one that is described in this article.
+1. Turn on the **Warehouse management app detours** and **Multi-level detours for the Warehouse Management mobile app** features which are described in this article.
 1. Update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 1. Repeat the previous step for each legal entity (company) where you use the Warehouse Management mobile app.
 
@@ -143,3 +143,6 @@ In this procedure, you will do a location inquiry by using the Warehouse Managem
 1. Notice that the license plate has been copied from the card that you selected. Confirm the value.
 1. You can now follow the standard task flow to complete the movement. After the work is completed, open the actions menu, and select **Cancel**.
 1. You're returned to the **Location inquiry** page. Note that the values aren't automatically updated. Therefore, you must manually refresh the page to see the changes from the movement detour.
+
+> [!NOTE]
+> Using the **Multi-level detours for the Warehouse Management mobile app** enables you to define multi-level detours (detours within detours) and thereby allowing warehouse workers stepping through a mobile device flow to temporarily jump to another flow in two levels. This can if needed gets customized with adding further levels by creating code extensions on the WHSWorkUserSessionState table.
