@@ -40,7 +40,7 @@ At the time of inbound order receiving, the cross-docking setup automatically id
 
 ## Turn on the planned cross docking features
 
-If your system doesn't already include the features described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the following features in the following order:
+If you are running Supply Chain Management version 10.0.28 or earlier, you may need to enable planned cross docking before you can use it. Go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the following features in the following order:
 
 1. *Planned cross docking*<br>(As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off.)
 1. *Cross docking templates with location directives*<br>(As of Supply Chain Management version 10.0.29, this feature is turned on by default.)

@@ -172,15 +172,15 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | [Disable expected receipts from quality orders that sample blocked inventory](../inventory/inventory-blocking.md) | On by default |
 | Warehouse management | Enable fast validation for warehouse mobile devices | Mandatory |
 | Warehouse management | [Enhanced parser for GS1 barcodes](../warehousing/gs1-barcodes.md) | Generally available |
-| Warehouse management | [Flexible warehouse-level dimension reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md) | On by default |
-| Warehouse management | [Flexible order-committed license plate reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md) | On by default |
-| Warehouse management | [Outbound workload visualization](../warehousing/outbound-workload-visualization.md) | Mandatory |
+| Warehouse management | [Flexible order-committed license plate reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Mandatory |
+| Warehouse management | [Flexible warehouse-level dimension reservation](../warehousing/flexible-warehouse-level-dimension-reservation.md) | Mandatory |
 | Warehouse management | [Item consolidation location utilization](../warehousing/item-consolidation-location-utilization.md) | On by default |
 | Warehouse management | License plate receiving history | On by default |
 | Warehouse management | [Manual shipment consolidation](../warehousing/consolidate-shipments-manual-workbench.md) | On by default |
 | Warehouse management | [Manual transfer line picking service for admin or similar trusted users](whats-new-scm-10-0-28.md) | Generally available |
 | Warehouse management | [Material handling equipment interface](../warehousing/mhax.md) | Mandatory |
 | Warehouse management | [New load planning workbench pages](whats-new-scm-10-0-24.md) | Generally available |
+| Warehouse management | [Outbound workload visualization](../warehousing/outbound-workload-visualization.md) | Mandatory |
 | Warehouse management | [Planned cross docking](../warehousing/planned-cross-docking.md) | Mandatory |
 | Warehouse management | [Process warehouse app events](../warehousing/warehouse-app-events.md) | Mandatory |
 | Warehouse management | Query enhancement for the co-product and by-product put away work template | Mandatory |
@@ -191,13 +191,13 @@ The table also lists features that were previously in public preview but have ch
 | Warehouse management | [Saved views for load processing](saved-views-scm.md) | Mandatory |
 | Warehouse management | [Saved views for shipment processing](saved-views-scm.md) | Mandatory |
 | Warehouse management | [Scan GS1 barcodes](../warehousing/gs1-barcodes.md) | Generally available |
-| Warehouse management | Shipment wave label details | On by default |
+| Warehouse management | Shipment wave label details | Mandatory |
 | Warehouse management | [Slot mixed units](whats-new-scm-10-0-21.md) | Mandatory |
 | Warehouse management | [Use faster API for containers closing/reopening on packing station](whats-new-scm-10-0-21.md) | On by default |
 | Warehouse management | [Validate templates selected for replenishment jobs](whats-new-scm-10-0-20.md) | On by default |
-| Warehouse management | [Warehouse app promoted fields](../warehousing/warehouse-app-promoted-fields.md) | On by default |
-| Warehouse management | [Warehouse app step instructions](../warehousing/mobile-app-titles-instructions.md) | On by default |
-| Warehouse management | [Warehouse location status](../warehousing/warehouse-location-status.md) | On by default |
+| Warehouse management | [Warehouse app promoted fields](../warehousing/warehouse-app-promoted-fields.md) | Mandatory |
+| Warehouse management | [Warehouse app step instructions](../warehousing/mobile-app-titles-instructions.md) | Mandatory |
+| Warehouse management | [Warehouse location status](../warehousing/warehouse-location-status.md) | Mandatory |
 | Warehouse management | [Warehouse management app detours](../warehousing/warehouse-app-detours.md) | On by default |
 | Warehouse management | [Wave batch job details](../warehousing/wave-processing.md) | Mandatory |
 | Warehouse management | [Wave execution notifications](../warehousing/wave-execution-notifications.md) | Mandatory |

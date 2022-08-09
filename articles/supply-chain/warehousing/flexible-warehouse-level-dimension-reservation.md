@@ -203,12 +203,12 @@ In this scenario, a company uses warehouse management and work processing, and h
 - A license plate can be recorded and reserved when the order is taken by the sales processor, and it can't be taken by other demands. This behavior helps guarantee that the license plate that was planned is shipped to the customer.
 - If the license plate isn't already assigned to a sales order line, warehouse personnel can select a license plate during picking work, after sales order registration and reservation are completed.
 
-### Turn on flexible license plate reservation
+### Turn flexible license plate reservation on or off
 
 Before you can use flexible license plate reservation, two features must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on if they are required. You must turn on the features in the following order:
 
-1. **Feature name:** *Flexible warehouse-level dimension reservation*
-1. **Feature name:** *Flexible order-committed license plate reservation*
+1. *Flexible warehouse-level dimension reservation*<br>(As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off.)
+1. *Flexible order-committed license plate reservation*<br>(As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off.)
 
 ### Reserve a specific license plate on the sales order
 

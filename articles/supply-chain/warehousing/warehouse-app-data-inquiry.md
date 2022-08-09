@@ -30,19 +30,19 @@ For example, in the purchase order receiving flow, a purchase order number is re
 Before you can use the functionality that is described in this article, you must complete the following procedure to turn on the required features.
 
 1. Go to **System administration \> Workspaces \> Feature management**. (For more information about how to use the **Feature management** workspace, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
-1. Turn on the feature that is listed in the following way:
+1. If you are running Supply Chain Management version 10.0.28 or earlier, turn on the feature that is listed in the following way:
 
     - **Module:** *Warehouse management*
     - **Feature name:** *Warehouse app step instructions*
 
-    This feature is a prerequisite for the *Warehouse management app data inquiry flow* feature. For more information about the *Warehouse app step instructions* feature, see [Customize step titles and instructions for the Warehouse Management mobile app](mobile-app-titles-instructions.md).
+    This feature is a prerequisite for the *Warehouse management app data inquiry flow* feature. As of Supply Chain Management version 10.0.29, it's mandatory and can't be turned off. For more information about the *Warehouse app step instructions* feature, see [Customize step titles and instructions for the Warehouse Management mobile app](mobile-app-titles-instructions.md).
 
 1. Turn on the feature that is listed in the following way:
 
     - **Module:** *Warehouse management*
     - **Feature name:** *Warehouse management app detours*
 
-    This feature is a prerequisite for the *Warehouse management app data inquiry flow* feature. For more information about the *Warehouse management app detours* feature, see [Configure detours for steps in mobile device menu items](warehouse-app-detours.md).
+    This feature is a prerequisite for the *Warehouse management app data inquiry flow* feature. As of Supply Chain Management version 10.0.29, it's turned on by default. For more information about the *Warehouse management app detours* feature, see [Configure detours for steps in mobile device menu items](warehouse-app-detours.md).
 
 1. If the *Warehouse management app detours* feature wasn't already turned on, update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 1. Turn on the feature that is listed in the following way:

@@ -122,13 +122,13 @@ The following table describes the saved views available for the Warehouse manage
 
 | Page | View name | View description | Feature name |
 |---|---|---|---|
-| All loads | Inbound processing | This simplified view includes only the fields that are most often used to process inbound loads. | Saved views for load processing<br><br>(On by default as of version 10.0.25) |
-| All loads | Outbound processing | This simplified view includes only the fields that are most often used to process outbound loads. | Saved views for load processing<br><br>(On by default as of version 10.0.25) |
-| All shipments | Inbound processing | This simplified view includes only the fields that are most often used to process inbound shipments. | Saved views for shipment processing<br><br>(On by default as of version 10.0.25) |
-| All shipments | Outbound processing | This simplified view includes only the fields that are most often used to process outbound shipments. | Saved views for shipment processing<br><br>(On by default as of version 10.0.25) |
-| All waves | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved view for wave processing<br><br>(On by default as of version 10.0.25) |
-| Load planning workbench | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved view for the load planning workbench<br><br>(On by default as of version 10.0.25) |
-| Work details | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved view for the work details page<br><br>(On by default as of version 10.0.25) |
+| All loads | Inbound processing | This simplified view includes only the fields that are most often used to process inbound loads. | Saved views for load processing<br><br>(On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
+| All loads | Outbound processing | This simplified view includes only the fields that are most often used to process outbound loads. | Saved views for load processing<br><br>(On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
+| All shipments | Inbound processing | This simplified view includes only the fields that are most often used to process inbound shipments. | Saved views for shipment processing<br><br>(On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
+| All shipments | Outbound processing | This simplified view includes only the fields that are most often used to process outbound shipments. | Saved views for shipment processing<br><br>(On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
+| All waves | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved view for wave processing<br><br>(On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
+| Load planning workbench | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved view for the load planning workbench<br><br>(On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
+| Work details | Simplified | This simplified view includes only the fields that are most often used. In this way, it provides a quicker overview and a streamlined work process. | Saved view for the work details page<br><br>(On by default as of version 10.0.25. Mandatory as of version 10.0.29.) |
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

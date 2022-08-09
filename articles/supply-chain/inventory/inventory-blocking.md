@@ -100,7 +100,7 @@ When **Reserve ordered items** is disabled, the expected receipts can't be reser
 
 Note the difference in transaction status and dimensions between the two cases. For this reason, we recommend enabling the **Reserve ordered items** option.
 
-### Use the Disable expected receipts from quality orders that sample blocked inventory feature
+## Disable expected receipts from quality orders that sample blocked inventory
 
 To simplify the inventory transactions in the case of quality orders that sample inventory blocked as a consequence of inventory status, the system provides a feature that disables expected receipts from such quality orders. Because the expected receipt is immediately blocked by inventory status blocking, there is no reduction of on-hand inventory because of this change.
 
