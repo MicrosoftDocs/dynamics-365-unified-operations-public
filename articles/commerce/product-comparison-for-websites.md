@@ -5,7 +5,7 @@
 title: Product comparison modules
 description: This article describes product comparison modules and how to implement them so that customers can do product comparisons on Microsoft Dynamics 365 Commerce e-commerce websites.
 author: ashishmsft
-ms.date: 08/05/2022
+ms.date: 08/09/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -33,8 +33,10 @@ When using the comparison tray, customers can add a few products to compare and 
 > [!NOTE]
 > - The product comparison page compares a default set of product properties as well as all attributes that are viewable on a PDP for a given product. 
 > - Properties like delivery mode, on-hand inventory, and unit of measure are not viewable on a product comparison page. 
-> - Customers are able to add products from different categories as long as they're from same catalog. 
+> - Customers are able to add products from different categories to the comaprision tray as long as they're from same catalog. 
 > - Product comparison is currently limited to an individual catalog. In other words, shoppers aren't allowed to do cross-catalog comparisons. 
+> - You should deselect the "Render module client side" property for all product comparison modules. 
+> - You should have page level caching disabled for all pages where the product comparison module is used, including PDPs, PLPs, and product comparison pages.
 
 ![Product comparison page](./media/Product-Comparison-Page.png)
 
@@ -88,6 +90,9 @@ The following example illustration from Commerce site builder shows how to place
 ## Specify the maximum number of products to be displayed in the comparison tray 
 
 You can specify the maximum number of products to be displayed in the comparison tray in site builder at **Site settings \> Extensions**. You can configure separate maximum limits for desktop and mobile/tablet views. If no maximum limit is defined, no limit will be enforced by default.
+
+> [!NOTE]
+> For an optimal browsing experience, it is recommended that you should set the maximum number of products in the comparision tray to two (2) for the mobile viewport and four (4) for the desktop viewport to reduce the horizontal scrolling.
 
 To specify the maximum number of products in the comparison tray, follow these steps.
 
