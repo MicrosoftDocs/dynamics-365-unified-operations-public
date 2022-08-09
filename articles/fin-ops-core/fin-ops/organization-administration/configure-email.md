@@ -4,7 +4,7 @@
 title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: jasongre
-ms.date: 07/13/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -49,7 +49,7 @@ The **Email history** section serves two purposes. First, it provides an entry p
 The **Email throttling** section enables non-interactive email providers (such as the batch email provider) to adhere to a per-minute sending limit. This can help prevent some errors if the system tries to send more emails than the provider allows. Specifically, if an email can't be originally sent because the per-minute sending limit has been reached, the send attempt for the email will be deferred for up to one minute. After ten deferrals, the system will try to send the email regardless. You can remove the per-minute sending limit from a provider by resetting the **per-minute email sending limit** field to **0**. The sending limits for the Office 365 SMTP email provider is automatically set according to the [Exchange Online sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits). Manual configuration is required for all other email providers. 
 
 > [!NOTE]
-> Use of the **Email throttling** feature is not recommended for the Exchange email provider since it has its own throttling mechanism. As such, if you are using Exchange, you should ensure that the **per-minute email sending limit** for Exchange is set to 0
+> Use of the **Email throttling** feature is not recommended for the Exchange email provider since it has its own throttling mechanism. As such, if you are using Exchange, you should ensure that the **per-minute email sending limit** for Exchange is set to 0.
 
 ### SMTP settings tab
 On the **Email parameters** page, note the following settings on the **SMTP settings** tab.
@@ -112,7 +112,7 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 </table>
 
 > [!NOTE]
-> Finance and operations apps do not support multi-factor authentication (MFA) or Modern auth (OAuth 2.0) for SMTP. Administrators may need to re-enable Basic authentication to allow SMTP AUTH; see [Enable or disable SMTP AUTH](https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission) for more details. The Exchange mail provider can be used if a more modern integration is desired. Note that the [deprecation of Basic authentication for Exchange online]((https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online#pop-imap-and-smtp-auth)) does not impact SMTP use in the finance and operations apps as "SMTP AUTH will still be available when when Basic authentication is permanently disabled."
+> Finance and operations apps do not support multi-factor authentication or Modern auth (OAuth 2.0) for SMTP. Administrators may need to re-enable Basic authentication to allow SMTP AUTH; see [Enable or disable SMTP AUTH](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission) for more details. The Exchange mail provider can be used if a more modern integration is desired. Note that the [deprecation of Basic authentication for Exchange online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online#pop-imap-and-smtp-auth) does not impact SMTP use in the finance and operations apps as "SMTP AUTH will still be available when when Basic authentication is permanently disabled."
 
 ## [Administrator] Email distributor batch process
 
