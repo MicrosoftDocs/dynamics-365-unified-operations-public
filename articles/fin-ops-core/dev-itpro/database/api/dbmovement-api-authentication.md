@@ -60,7 +60,7 @@ To enable, visit the **Manage - Authentication** tab.  Under the **Advanced Sett
 To request a bearer token for username and password, follow these instructions.  
 
 ### Username and password flow
-Be sure to read the Public Client section above.  Then, send a POST request via HTTP to Azure AD with a username and password payload.
+Be sure to read the [public client](dbmovement-api-authentication.md#step-3-configure-public-client) section above.  Then, send a POST request via HTTP to Azure AD with a username and password payload.
 
 ```HTTP
 Content-Type: application/x-www-form-urlencoded
@@ -85,7 +85,6 @@ The above example contains placeholders that you can retrieve from your client a
 Use the **access_token** value in subsequent calls to the Lifecycle Services API or Database Movement API with the **Authorization** HTTP header.
 
 > [!NOTE]
-> The scope parameter might require a different URL format if you are in a local instance of Lifecycle Services or a sovereign cloud.  For example, if you are accessing the EU instance of LCS, you can use https://lcsapi.eu.lcs.dynamics.com//.default as your scope parameter.  This would also apply for subsequent calls to the API for the hostname.
->
+> The scope parameter might require a different URL format if you are in a local instance of Lifecycle Services or a sovereign cloud.  For example, if you are accessing the EU instance of LCS, you can use `https://lcsapi.eu.lcs.dynamics.com//.default` as your scope parameter.  This would also apply for subsequent calls to the API for the hostname.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
