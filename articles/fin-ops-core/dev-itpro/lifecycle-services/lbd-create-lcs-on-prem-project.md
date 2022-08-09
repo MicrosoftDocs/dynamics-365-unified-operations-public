@@ -51,5 +51,14 @@ The on-premises project has all the tools that you require in order to implement
 
 To start your on-premises implementation, you must follow the steps in the methodology to correctly set up the project, deploy the developer and build environments, and then deploy sandbox and production environments. To help you with deployments, two environment slots are pre-allocated to the on-premises project. One slot is for a sandbox environment, and the other slot is for a production environment. These slots will be used during the Servicing flow to help guarantee that packages are tested in the sandbox environment before they are applied in the production environment.
 
+## Environment limits
+Customers and partners are limited in the number of specific environment types they can deploy in a given on-premise project.  These are outlined in the below table.
+
+|Organization type|Production environments|Sandbox environments|
+|-----------------|-----------------------|--------------------|
+| Customer | 1 | 1 or more |
+| Partner (with on-premise license) | 1 | 1 or more |
+| Partner (without on-premise license) | 0 | 1 |
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

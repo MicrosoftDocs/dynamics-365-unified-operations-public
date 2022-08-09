@@ -115,7 +115,7 @@ Follow these steps to configure the **Power Platform Integration** section.
 > [!IMPORTANT]
 > The **language** and **currency** values of the Dataverse instance that is created and linked to your finance and operations apps environment are automatically determined, based on the physical address of your Azure AD tenant. For example, if the address is in Redmond, Washington, USA, the language will be English by default, and the currency will be US dollars (USD).
 >
-> If you require values that differ from the default values, contact Microsoft support. We can help link an existing Dataverse instance that you manually provision to the finance and operations apps environment. Eventually, fields for the language and currency will be added as setup options, so that you can manually set them or accept the default values.
+> If you require values that differ from the default values, you can create the Power Platform environment with Dataverse to your own specifications.  And then, you can link to that existing environment from your Finance and Operations environment in LCS as long as you do not enable Power Platform integration during the creation of your Finance and Operations environment.  Linking to an existing Dataverse is only possible from an existing Finance and Operations apps environment that has not been previously associated with any other Dataverse instance.
 
 ## <a name="enable-after-deploy"></a>Enable integration after environment deployment
 
