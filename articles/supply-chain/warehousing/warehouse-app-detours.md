@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
-ms.dyn365.ops.version: 10.0.23
+ms.dyn365.ops.version: 10.0.23     Multi-level detour 10.0.30
 ---
 
 # Configure detours for steps in mobile device menu items
