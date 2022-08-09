@@ -4,7 +4,7 @@
 title: Install Export to Azure Data Lake add-in
 description: This article provides information about configuring the export to Azure Data Lake.
 author: MilindaV2
-ms.date: 11/22/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -110,7 +110,7 @@ The steps, which take place in the Azure portal, are as follows:
     - **Supported Account types**: Choose the appropriate option.
 
 3. After the application is created, select it, and then copy and save the <a name="appid"></a>Application (client) ID at the top of the page. You will need this later.
-4. On the left navigation pane, select **Certificates & secrets**, and then select **New client secret**. 
+4. In the left navigation pane, select **Certificates & secrets**, and then select **New client secret**. 
 5. In the **Description** field, enter a name.
 6. In the **Expires** field, select an option, and then select **Add**. The system will generate a secret and display it under the grid. 
 7. Copy the secret **Value** to the clipboard. This is the <a name="secret"></a>value you will need to provide when you set up the key vault later.
@@ -203,7 +203,7 @@ You will notice the secret created in the list of secrets.
 
 ## <a name="powerplatformintegration"></a>Power Platform integration
 
-If this is the first time you are installing add-ins in this environment, you may need to enable the **Power Platform integration** for this environment. For details see [Microsoft Power Platform integration with finance and operations apps](../power-platform/overview.md).
+If this is the first time you are installing add-ins in this environment, you may need to enable the **Power Platform integration** for this environment. For more information, see [Microsoft Power Platform integration with finance and operations apps](../power-platform/overview.md).
 
 ## <a name="installaddin"></a>Install the Export to Data Lake add-in in LCS 
 
