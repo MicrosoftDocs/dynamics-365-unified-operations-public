@@ -4,7 +4,7 @@
 title: Removed or deprecated platform features
 description: This article describes features that have been removed, or that are planned for removal in platform updates of finance and operations apps.
 author: sericks007
-ms.date: 08/08/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,11 +44,40 @@ Detailed information about objects in finance and operations apps can be found i
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/finance-operations/finance-operations-crossapp-capabilities/one-dynamics-one-platform) work effort, the following LCS features are deprecated:<br><br>- Crash dump analysis<br>- Feedback and bugs<br>- My subscription<br>- Office 365 users<br>- Impact analysis report<br>- Total economic impact estimator<br>- Environment snapshots<br>- Service requests<br>- Service Health dashboard<br>- Environment upgrade  |
+| **Reason for deprecation/removal** | As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/finance-operations/finance-operations-crossapp-capabilities/one-dynamics-one-platform) work effort, the following LCS features are deprecated:<br><br>- Announcements<br>- Configuration manager<br>- Crash and dump analysis<br>- Feedback and bugs<br>- My subscription<br>Office 365<br>- Impact analysis<br>- Total economic impact estimater<br>- Service requests<br>- SharePoint integration<br>- Configuration and data manager<br>- Process data packages<br>- Environment upgrade<br>-Infrastructure estimator<br>- License sizing<br>- Usage profiler<br>- Customization analysis<br>- Upgrade analysis |
 | **Replaced by another feature?**   | Yes or No?|
 | **Product areas affected**         | LCS |
 | **Deployment option**              | Does this affect cloud deployments, on-premises deployments, or both? |
 | **Status**                         | Deprecated  |
+
+As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/finance-operations/finance-operations-crossapp-capabilities/one-dynamics-one-platform) work effort, the following LCS features are deprecated.
+
+| Feature name | Used with AX 2012? | Used with finance and operations apps? | Replaced by another feature? |
+| Announcements | Yes | Yes | ? |
+| Configuration manager | Yes | No | ? |
+| Crash and dump analysis | Yes | No | ? |
+| Feedback and bugs | Yes | Yes | ? |
+| My subscription | Yes | Yes | ? |
+| Office 365 | Yes | Yes | ? |
+| Impact analyis | No | Yes | ? |
+| Total economic impact estimator | No | Yes | ? |
+| Service requests | No | Yes | ? |
+| Sharepoint integration | Yes | Yes | ? |
+| Configuration and data manager | No | Yes | ? |
+| Process data packages | No | Yes | ? |
+| Envrionment udpate | No | Yes | ? |
+| Infrastructure estimator | Yes | No | ? |
+| License sizing | Yes | No | ? |
+| Usage profiler | Yes | No | ? |
+| Customization analysis | Yes | No | ? |
+| Upgrade analysis | Yes | No | ? |
+| System diagnostics | Yes | Yes | ? |
+| Business process modeler Visio management | Yes | Yes | ? |
+| AX 2012 cloud environment management | Yes | No | ? |
+| RDFE Azure connectors | Yes | Yes | ? |
+| AX 2012 versions | Yes | No | ? |
+| Work items stored in LCS storage | Yes | Yes | ? |
+| Hotfix requests | Yes | Yes | ? |
 
 
 ### Transport Layer Security (TLS) RSA cipher suites
