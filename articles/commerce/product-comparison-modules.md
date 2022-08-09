@@ -94,14 +94,15 @@ To add a product comparison button on product tiles in search and category resul
 You can specify the maximum number of products to be displayed in the comparison tray in site builder at **Site settings \> Extensions**. You can configure separate maximum limits for desktop and mobile/tablet views. If no maximum limit is defined, no limit will be enforced by default.
 
 > [!NOTE]
-> For an optimal browsing experience, it is recommended that you should set the maximum number of products in the comparision tray to two (2) for the mobile viewport and four (4) for the desktop viewport to reduce the horizontal scrolling.
+> For an optimal browsing experience, it is recommended that you set the maximum number of products in the comparision tray to two (2) for the mobile viewport and four (4) for the desktop viewport to reduce the horizontal scrolling.
 
 To specify the maximum number of products in the comparison tray, follow these steps.
 
 1. In site builder, go to **Site settings \> Extensions**.
 1. For the **Products in the comparison limit - desktop devices** property, enter the maximum number of products that should be displayed in the comparison tray for desktop viewports.
 1. For the **Products in the comparison limit - mobile and tablet devices** property, enter the maximum number of products that should be displayed in the comparison tray for mobile and tablet viewports.
- 
+1. On the command bar, select **Save and publish**.
+
 ![Site settings to limit products in comparison tray](./media/Site-settings-to-limit-products-in-comparison-tray.png)
 
 
