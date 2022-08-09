@@ -45,26 +45,26 @@ By default, master plans don't consider shelf life. Use the following procedure 
 
 To track the shelf life of an item, that item must be tracked at the batch dimension, which means that the batch reference and the required dates are recorded upon receipt or manufacture and through every inventory transaction of the item. You manage this option by setting up one or more tracking dimension groups to do the required tracking and then assigning the relevant items to these groups as needed.
 
-Use the following procedure to set up a tracking dimension groups to track the batch dimension:
+Use the following procedure to set up a tracking dimension group to track the batch dimension:
 
 1. Go to **Product information management \> Setup \> Dimension and variant groups \> Tracking dimension groups**.
 1. Do one of the following to create or select the tracking dimension group you want to set to track the batch dimension:
     - Create a new group by selecting **New** on the Action Pane. Give the new group a **Name** and **Description** and then select **Save** on the Action Pane.
     - Select an existing group form the list pane.
-1. Expand the **Tracking dimension** FastTab. In the **Batch number** row, select the check box in the **Active** and **Physical inventory** columns.
+1. Expand the **Tracking dimension** FastTab. In the **Batch number** row, select the check boxes in the **Active** and **Physical inventory** columns.
 
 ### Set up shelf life for a product
 
 Use the following procedure to set up shelf life for a product:
 
 1. Go to **Product information management \> Products \> Released products**.
-1. Open the product you want to set up.
+1. Create or open the product you want to set up.
 1. Expand the **General** FastTab and make the following setting:
-    - **Tracking dimension group** – Select a tracking dimension group that is set up to track the batch dimension, as described in the previous section. <!-- KFM: Appears to be read only, as are all the parameters below. More info may be needed. Maybe tracking dimension can only be specified when creating a product?  -->
+    - **Tracking dimension group** – Select a tracking dimension group that is set up to track the batch dimension. <!-- KFM: Appears to be read only, as are all the parameters below. More info may be needed. Maybe tracking dimension can only be specified when creating a product?  -->
 1. Expand the **Manage inventory** FastTab and make the following settings:
     - **Shelf advice period in days** – Specify the period (in days) by which to check a batch of this product to ensure it is suitable for consumption or resale. This value is added to a batch's *manufacturing date* to determine its *shelf advice date*. You can configure the system to generate quality orders when a batch approaches its shelf advice date.
-    - **Shelf life in days** – Specify the number of days before a batch of this product expires. This value is added to the date of manufacture to get the *expiration date*. The batch is considered unusable after this date.
-    - **Best before in days** – Specify the period (in days) after which a batch of this product is still deemed sellable but may no longer retain some of its original properties. This is subtracted from the expiry date to calculate the *best before date*. <!--KFM: Is it correct that we SUBTRACT the best before in days from the expiry date to get the best before date? Seems like we should ADD it to the manufacture date. -->You can run reports to identify inventory that is past its *sell-by date*. <!-- KFM: are best-before and sell-by date the same? Where are these values shown?  -->
+    - **Shelf life period in days** – Specify the number of days before a batch of this product expires. This value is added to the date of manufacture to get the *expiration date*. The batch is considered unusable after this date.
+    - **Best before period in days** – Specify the period (in days) after which a batch of this product is still deemed sellable but may no longer retain some of its original properties. This is subtracted from the expiration date to calculate the *best before date*. <!--KFM: Is it correct that we SUBTRACT the best before in days from the expiry date to get the best before date? Seems like we should ADD it to the manufacture date. -->You can run reports to identify inventory that is past its *sell-by date*. <!-- KFM: are best-before and sell-by date the same? Where are these values shown?  -->
 
 ### Set sellable days rule for each customer
 
@@ -115,9 +115,9 @@ This example shows a basic example of shelf life, where pegging between the supp
 
 The system has the following item and master plan settings:
 
-- **Replenishment strategy (coverage code)** – Period  <!--KFM: we never mention this again. Why does it matter? -->
+- **Replenishment strategy (Coverage code)** – Period <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
 - **Shelf life** – 10 days  <!--KFM: we never mention this again, though we do see it in the diagram. Why does it matter? -->
-- **Period** – 10 days (equal to the shelf life) <!--KFM: we never mention this again. Why does it matter? -->
+- **Period** – 10 days (equal to the shelf life) <!--KFM: we never mention this again. Why does it matter? what period is this, the coverage period? -->
 - **Sellable days** – 0 days
 - **Lead time** – 0 days
 - **Type of planned order (default order settings of the item)** – Purchase order
@@ -139,7 +139,7 @@ The system will create a list of supply that can cover this demand, and it will 
 
 Master planning will create the needed pegging between supply and demand. It will also create any needed demand based on the supply list (using FEFO) and consider availability date.
 
-- SO1 can be fulfilled by on-hand quantity, but can't be fulfilled by PO1 because the availability date for PO1 is one day later than SO1 requires. As a result, SO1 generates a demand for one unit of goods. <!--KFM: Seems like PO1 actually comes one day *before* S01 is required. Right? -->
+- SO1 can be fulfilled by on-hand quantity, but can't be fulfilled by PO1 because the availability date for PO1 is one day later than SO1 requires. As a result, SO1 generates a demand for one unit of goods. <!--KFM: Seems like PO1 actually comes one day *before* S01 is required. Seems like we should *prefer* PO1 because it expires before the others. Right? Maybe SO1 should be Today + 1 day? -->
 - SO2 can be covered by PO1 because PO1 will arrive by the requested time and the expiration date will still be valid. Therefore, the SO2 requirement is fully covered by PO1.
 - SO3 isn't covered because resources aren't available. As a result, SO3 generates a demand for one unit of goods.
 
@@ -151,20 +151,18 @@ The following table shows the final result:
 
 | Demand | Pegging |
 |---|---|
-| **SO1** – Delivery date = today + 3 days, qty = 2 | **On-hand** – Qty = 1, expiration date = today + 5 days</br>**PPO** – Receipt date = today, qty = 1, expiration date = today + 10 days|
+| **SO1** – Delivery date = today + 3 days, qty = 2 | **On-hand** – Qty = 1, expiration date = today + 5 days</br>**PPO1** – Receipt date = today, qty = 1, expiration date = today + 10 days|
 | **SO2** – Delivery date = today + 4 days, qty = 1 | **PO1** – Receipt date = today + 2 days, 1 qty, expiration date = today + 4 days |
-| **SO3** – Delivery date = today + 5 days, qty = 1 | **PPO** – Receipt date = today, qty = 2, expiration date = today + 10 days |
+| **SO3** – Delivery date = today + 5 days, qty = 1 | **PPO1** – Receipt date = today, qty = 2, expiration date = today + 10 days |
 
 The following illustration shows the timeline for this example.
 
-<!-- KFM: Illustration notes:
-- The illustration doesn't match the text. Shows PPO for just 1 qty; shows S01 covered by PO1 and on-hand; shows S02 covered by on-hand; shows on-hand qty 2. None of this matches. 
-- Meaning of period and shelf life bar at the bottom is not clear. 
-- Add numbers for PO1 and PPO1
-- Clean up capitalization and notation
- -->
-
 ![Example 1: Simple FEFO, period 10 days, lead time 0 days.](media/fefo-example-1.png "Example 1: Simple FEFO, period 10 days, lead time 0 days")
+
+<!-- KFM: Illustration notes:
+- The illustration didn't match the text, so I "fixed" it. Confirm this version. 
+- Meaning of period and shelf life bar at the bottom is not clear. 
+ -->
 
 ## Example 2: Simple FEFO, requirement, lead time 3 days
 
@@ -172,7 +170,7 @@ This example illustrates how the system seeks to minimize delays, which can some
 
 The system has the following item and master plan settings:
 
-- **Replenishment strategy** – Requirement
+- **Replenishment strategy** – Requirement <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
 - **Shelf life** – 10 days
 - **Sellable days** – 0 days
 - **Lead time** – Established by the following vendor trade agreements:
@@ -195,18 +193,9 @@ The system has two trade agreements (the first one for qty = 1, lead time = 4 da
 
 | Demand | Pegging |
 |---|---|
-| **SO1** – Delivery date = today + 3 days, qty = 2 | **PO1** – Receipt date = today + 3 days, qty = 1, expiration date = today + 4 days</br>**PPO1** – Receipt date = today + 3 days, qty = 1, expiration date = today + 10 days</br>**Net requirement** – 0 qty |
-
-<!--KFM: Is the "Net requirement" line really needed above? -->
+| **SO1** – Delivery date = today + 3 days, qty = 2 | **PO1** – Receipt date = today + 3 days, qty = 1, expiration date = today + 4 days</br>**PPO1** – Receipt date = today + 3 days, qty = 1, expiration date = today + 10 days |
 
 The following illustration shows the timeline for this example.
-
-<!-- KFM: Illustration notes:
-- Minimazing (typo). 
-- Add numbers for PO1 and PPO1
-- Clean up capitalization and notation
-- Meaning of shelf life bar at the bottom is not clear. 
- -->
 
 ![Example 2: Simple FEFO, requirement, lead time 3 days.](media/fefo-example-2.png "Example 2: Simple FEFO, requirement, lead time 3 days")
 
@@ -216,10 +205,10 @@ This example shows how shelf life works when adding sellable days for an item.
 
 The system has the following item and master plan settings:
 
-- **Replenishment strategy** – Requirement
+- **Replenishment strategy (Coverage code)** – Requirement <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
 - **Shelf life** – 10 days
 - **Sellable days** – 5 days
-- **Lead time** – 3 days <!--KFM: PO1 appears to use lead time of just 2 days -->
+- **Lead time** – 3 days
 - **Sellable days** – 5 days
 - **Type of planned order** – Purchase order
 
@@ -239,7 +228,7 @@ The system creates a list of pegging candidates based on the supply (FEFO) list 
 - **PP01** – Receipt date = today + 5 days, qty = 1, expiration date = today + 10 days
 
 The following table summarize the result.
-<!-- KFM: Note that I changed the PO1 date to today +2 days (from 3 days). I *think* this is required in order for the example to work, and also matches the illustration. Please confirm. -->
+
 | Demand | Pegging |
 |---|---|
 | **SO1** – Delivery date = today + 2 days, qty = 2 | **PO1** – Receipt date = today + 2 days, qty = 2, expiration date = today + 10 days |
@@ -250,13 +239,6 @@ The following illustration shows the timeline for this example.
 
 ![Example 3: Simple FEFO, requirement, lead time 3 days, sellable days 5 days.](media/fefo-example-3.png "Example 3: Simple FEFO, requirement, lead time 3 days, sellable days 5 days")
 
-<!-- KFM: Illustration notes:
-- Text for PO1 is incorrect (Should be Exp = today + 10)
-- Add numbers for PO1 and PPO1
-- Clean up capitalization and notation
-- Meaning of shelf life bar at the bottom is not clear. 
- -->
-
 ## Example 4: Simple FEFO, period, lead time depends on quantity
 
 This example illustrates how the system seeks to minimize delays, which can sometimes result in overordering.
@@ -265,9 +247,9 @@ This example illustrates how the system seeks to minimize delays, which can some
 
 The system has the following item and master plan settings:
 
-- **Replenishment strategy** – Period
+- **Replenishment strategy (Coverage code)** – Period <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
 - **Shelf life** – 10 days
-- **Period** – 10 days (equal to the shelf life)
+- **Period** – 10 days (equal to the shelf life)  <!--KFM: we never mention this again. Why does it matter? what period is this, the coverage period? -->
 - **Sellable days** – 0 days
 - **Lead time** – Established by the following vendor trade agreements:
   - **Trade agreement 1** – If qty = 1, then the lead time = 5
@@ -288,7 +270,7 @@ The system has two trade agreements (the first one for qty = 1, lead time = 5 da
 
 - **PP01** – Receipt date = today, qty = 2, expiration date = today + 10 days
 
-SO1 will be covered by one unit from PPO1. SO2 will be covered by PO2 <!-- KFM: Because PO2 expires sooner than PPO1? -->.
+SO1 will be covered by one unit from PPO1. SO2 will be covered by PO2 because PO2 expires sooner than PPO1.
 
 The following table summarize the result.
 
@@ -308,11 +290,11 @@ The following illustration shows the timeline for this example.
 
 <!-- KFM: This is more of a negative days example than a shelf life example. We should point out more explicitly how shelf life affects this situation (or maybe remove this example). -->
 
-This example shows how shelf life works when adding a large number of negative days for an item. Negative days are the number of days that you're willing to wait before ordering replenishment of an item with negative inventory. The system won't create supply unless the number of negative days is exceeded. <!-- KFM: How is negative inventory relevant for this example? -->
+This example shows how shelf life works when adding a large number of negative days for an item. Negative days are the number of days that you're willing to wait before ordering replenishment of an item with negative inventory. The system won't create supply unless the number of negative days is exceeded.
 
 The system has the following item and master plan settings:
 
-- **Replenishment strategy** – Requirement
+- **Replenishment strategy (Coverage code)** – Requirement <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
 - **Negative days** – 10 days
 - **Sellable days** – 0 days
 - **Lead time** – 0 days
@@ -326,7 +308,7 @@ This demand can be covered by existing supply from the following confirmed purch
 
 - **PO1** – Receipt date = today + 3 days, qty = 1, expiration date = today + 5 days
 
-Because the system is configured to allow 10 negative days, it will cover the demand of SO1 by using PO1 even through that will result in a delay of 3 days. No planned order is created even though lead time is 0 and creating a PPO would reduce delays.
+Because the system is configured to allow 10 negative days, it will cover the demand of SO1 by using PO1 even through that will result in a delay of 3 days due to SO1 creating negative inventory until PO1 arrives. No planned order is created even though lead time is 0 and creating a PPO would reduce delays.
 
 The following table summarize the result.
 
@@ -338,17 +320,13 @@ The following illustration shows the timeline for this example.
 
 ![Example 5: Simple FEFO, requirement, 10 negative days.](media/fefo-example-5.png "Example 5: Simple FEFO, requirement, 10 negative days")
 
-<!-- KFM: Illustration notes:
-- Illustration shows SO1 shipping today, but it can't ship until PO1 arrives on day three. This may mean that we have three days of negative inventory, where we must wait for something to show up; if so, we should add some text to explain this.
- -->
-
 ## Example 6: Simple FEFO, requirement, 5 negative days
 
 This example shows how shelf life works when a number of negative days for an item less than the shelf-life period.
 
 The system has the following item and master plan settings:
 
-- **Replenishment strategy** – Requirement
+- **Replenishment strategy (Coverage code)** – Requirement <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
 - **Negative days** – 5 days
 - **Sellable days** – 0 days
 - **Lead time** – 0 days
@@ -380,7 +358,7 @@ The following illustration shows the timeline for this example.
 ![Example 6: Simple FEFO, requirement, 5 negative days.](media/fefo-example-6.png "Example 6: Simple FEFO, requirement, 5 negative days")
 
 <!-- KFM: Illustration notes:
-- Illustration doesn't match the text. Text says we don't use PO1 (because it expires before SO1 ships), so SO1 should instead use PO2 and ship at today+2 days (or text should point out that we allow two days of negative inventory). However, PO1 doesn't look like it actually does expire before SO1 ships (S01 ships today, PO1 expires tomorrow). I don't know what is going on here.
+- Text says we don't use PO1 (because it expires before SO1 ships), so SO1 should instead use PO2 and ship at today+2 days. However, PO1 doesn't look like it actually does expire before SO1 ships (S01 ships today, PO1 expires tomorrow). Figure shows using PO1 pegged to SO1. I don't know what is going on here.
  -->
 
 <!-- KFM: Note that I have edited to always use "delivery date" when talking about SOs and "receipt date" when talking about POs and PPOs. The original wasn't consistent. Are these the correct terms? -->
