@@ -111,6 +111,9 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 
 </table>
 
+> [!NOTE]
+> Finance and operations apps do not support multi-factor authentication (MFA) or Modern auth (OAuth 2.0) for SMTP. Administrators may need to re-enable Basic authentication, however. The Exchange mail provider can be used if a more modern integration is desired. Note that the [deprecation of Basic authentication for Exchange online]((https://docs.microsoft.com/en-us/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online#pop-imap-and-smtp-auth)) does not impact SMTP use in the finance and operations apps as "SMTP AUTH will still be available when when Basic authentication is permanently disabled."
+
 ## [Administrator] Email distributor batch process
 
 Email that is sent directly from the server, without user interaction, via SMTP is sent by the **Email distributor batch** process. That batch process must be started to process the email queue. To start the process, open the **Email distributor batch** pane (**System administration** &gt; **Periodic tasks** &gt; **Email processing** &gt; **Batch**) and turn on **Batch processing**.
@@ -273,7 +276,7 @@ If troubleshooting is needed, ensure that it's possible to sign in to the curren
 > [!IMPORTANT]
 > The Exchange mail provider is: 
 > -  Not supported for external users, as those users will not have Exchange accounts on the system tenant.
-> -  Only available in Microsoft-managed environments.
+> -  Only available in Microsoft-managed environments. 
 
 ## Troubleshooting
 
