@@ -57,19 +57,18 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | Service requests | No | Yes | Yes: [Self-service deployments](../deployment/infrastructure-stack.md) |
 | Sharepoint integration | Yes | Yes | No |
 | Configuration and data manager | No | Yes | No |
-| Process data packages | No | Yes | ? |
+| Process data packages | No | Yes | DIXF |
 | Envrionment upgrade | No | Yes | Yes: [One Version](../lifecycle-services/oneversion-overview.md) service updates are available. |
 | Infrastructure estimator | Yes | No | No |
 | License sizing | Yes | No | No |
 | Usage profiler | Yes | No | No |
 | Customization analysis | Yes | No | No |
-| Upgrade analysis report | Yes | No | No |
 | System diagnostics | Yes | Yes | No |
 | Business process modeler Visio management | Yes | Yes | No |
 | AX 2012 cloud environment management | Yes | No | No |
 | RDFE Azure connectors | Yes | Yes | No |
 | AX 2012 versions | Yes | No | No |
-| Work items stored in LCS storage | Yes | Yes | N0 |
+| Work items stored in LCS storage | Yes | Yes | No |
 | Hotfix requests | Yes | Yes | No |
 
 
