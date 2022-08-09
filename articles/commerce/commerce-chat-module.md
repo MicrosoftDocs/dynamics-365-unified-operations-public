@@ -4,7 +4,7 @@
 title: Commerce Chat with Omnichannel for Customer Service module
 description: This article describes the Commerce Chat feature for online shoppers in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/03/2022
+ms.date: 08/09/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -76,7 +76,8 @@ Commerce Headquarters as an application tab for Omnichannel for Customer Service
 
 To create a new application tab that loads Commerce headquarters in an iFrame module, follow these steps.
 
-1. Go to Power Apps Make Portal and select **Apps** from the left-hand navigation bar.
+1. Go to the [Power Apps Maker Portal](https://make.powerapps.com). 
+1. Select **Apps** from the left-hand navigation bar.
 1. In **Customer Service admin center**, go to **Agent experience \>  Workspaces**.
 1. Select **Manage** for **Application tab templates**. 
 1. Create a new application tab of type **Third-party website** by following the documentation at [Manage application tab templates](/dynamics365/app-profile-manager/application-tab-templates?tabs=customerserviceadmincenter).
@@ -87,7 +88,7 @@ To create a new application tab that loads Commerce headquarters in an iFrame mo
 
 To enable a new application tab for customer agents in Dynamics 365 Omnichannel for Customer Service, follow these steps.
 	
-1. Go to Power Apps Make Portal.
+1. Go to the [Power Apps Maker Portal](https://make.powerapps.com).
 1. In the **Customer Service admin center**, go to **Customer support \> Workstreams**.
 1. Open the workstream you've created for your agents, then under **Advanced settings** then select sessions default. 
 1. Under **Application Tabs**, select **Add Existing Application Tab** then add the new application tab you've created above.
@@ -97,7 +98,7 @@ To enable a new application tab for customer agents in Dynamics 365 Omnichannel 
 
 To add context variables in Dynamics 365 Omnichannel for Customer Service, follow these steps.
 
-1. Go to Power Apps Make Portal.
+1. Go to the [Power Apps Maker Portal](https://make.powerapps.com).
 1. In **Customer Service admin center**, go to **Customer support \>  Workstreams**.
 1. Open the workstream you've created for your agents, then under **Advanced settings** go to **Context variable** section. 
 1. Select **Edit**, and then add **AccountNumber** as a context variable of type **text**. This will help Commerce headquarters load customer information with matching account numbers. 
