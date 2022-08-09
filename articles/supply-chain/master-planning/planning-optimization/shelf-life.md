@@ -60,11 +60,11 @@ Use the following procedure to set up shelf life for a product:
 1. Go to **Product information management \> Products \> Released products**.
 1. Create or open the product you want to set up.
 1. Expand the **General** FastTab and make the following setting:
-    - **Tracking dimension group** – Select a tracking dimension group that is set up to track the batch dimension. <!-- KFM: Appears to be read only, as are all the parameters below. More info may be needed. Maybe tracking dimension can only be specified when creating a product?  -->
+    - **Tracking dimension group** – To use the shelf life settings, this must be set to a tracking dimension group that is set up to track the batch dimension. This can only be edited when first creating a product, you can't change it for existing products. <!-- KFM: I assumed this. Please confirm  -->
 1. Expand the **Manage inventory** FastTab and make the following settings:
     - **Shelf advice period in days** – Specify the period (in days) by which to check a batch of this product to ensure it is suitable for consumption or resale. This value is added to a batch's *manufacturing date* to determine its *shelf advice date*. You can configure the system to generate quality orders when a batch approaches its shelf advice date.
     - **Shelf life period in days** – Specify the number of days before a batch of this product expires. This value is added to the date of manufacture to get the *expiration date*. The batch is considered unusable after this date.
-    - **Best before period in days** – Specify the period (in days) after which a batch of this product is still deemed sellable but may no longer retain some of its original properties. This is subtracted from the expiration date to calculate the *best before date*. <!--KFM: Is it correct that we SUBTRACT the best before in days from the expiry date to get the best before date? Seems like we should ADD it to the manufacture date. -->You can run reports to identify inventory that is past its *sell-by date*. <!-- KFM: are best-before and sell-by date the same? Where are these values shown?  -->
+    - **Best before period in days** – Specify the period (in days) after which a batch of this product is still deemed sellable but may no longer retain some of its original properties. This is subtracted from the expiration date to calculate the *best before date*. <!--KFM: Is it correct that we SUBTRACT the best before period in days from the expiration date to get the best before date? Seems like we should ADD it to the manufacture date, as with the shelf life. -->You can run reports to identify inventory that is past its *sell-by date*. <!-- KFM: are best-before and sell-by date the same? If so, we should use the same term. If not, we should explain how they are different.  -->
 
 ### Set sellable days rule for each customer
 
@@ -115,12 +115,13 @@ This example shows a basic example of shelf life, where pegging between the supp
 
 The system has the following item and master plan settings:
 
-- **Replenishment strategy (Coverage code)** – Period <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
+- **Coverage code (replenishment strategy)** – Period <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
+- **Coverage period** – 10 days (equal to the shelf life) <!--KFM: we never mention this again. Why does it matter? what period is this, the coverage period? -->
 - **Shelf life** – 10 days  <!--KFM: we never mention this again, though we do see it in the diagram. Why does it matter? -->
-- **Period** – 10 days (equal to the shelf life) <!--KFM: we never mention this again. Why does it matter? what period is this, the coverage period? -->
 - **Sellable days** – 0 days
 - **Lead time** – 0 days
-- **Type of planned order (default order settings of the item)** – Purchase order
+- **Negative days** – 0 days
+- **Type of planned order (default order settings of the item)** – Purchase order <!--KFM: we never mention this again, and it's always the same. Why mention it here? -->
 
 There are three sales orders (SO) for the item:
 
@@ -170,13 +171,14 @@ This example illustrates how the system seeks to minimize delays, which can some
 
 The system has the following item and master plan settings:
 
-- **Replenishment strategy** – Requirement <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
+- **Coverage code (replenishment strategy)** – Requirement <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
 - **Shelf life** – 10 days
 - **Sellable days** – 0 days
 - **Lead time** – Established by the following vendor trade agreements:
   - **Trade agreement 1** – If qty = 1, then the lead time = 4
   - **Trade agreement 2** – If qty = 2, then the lead time = 3
-- **Type of planned order** – Purchase order
+- **Negative days** – 0 days
+- **Type of planned order (default order settings of the item)** – Purchase order
 
 The system has one sales order (SO1):
 
@@ -205,12 +207,12 @@ This example shows how shelf life works when adding sellable days for an item.
 
 The system has the following item and master plan settings:
 
-- **Replenishment strategy (Coverage code)** – Requirement <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
+- **Coverage code (replenishment strategy)** – Requirement <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
 - **Shelf life** – 10 days
 - **Sellable days** – 5 days
-- **Lead time** – 3 days
-- **Sellable days** – 5 days
-- **Type of planned order** – Purchase order
+- **Lead time** – 3 days <!--KFM: should maybe be  5 days? (to match PPO1 date?)-->
+- **Negative days** – 0 days
+- **Type of planned order (default order settings of the item)** – Purchase order
 
 The following sales orders exist in the system:
 
@@ -243,18 +245,19 @@ The following illustration shows the timeline for this example.
 
 This example illustrates how the system seeks to minimize delays, which can sometimes result in overordering.
 
-<!-- Isn't this the same as example 2? Intro should point out how this example is different from that one, if it is. -->
+<!-- Seems the same as example 2, except that coverage code is period. We should explain how that makes this example different. -->
 
 The system has the following item and master plan settings:
 
-- **Replenishment strategy (Coverage code)** – Period <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
+- **Coverage code (replenishment strategy)** – Period <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
+- **Coverage period** – 10 days (equal to the shelf life)  <!--KFM: we never mention this again. Why does it matter? what period is this, the coverage period? -->
 - **Shelf life** – 10 days
-- **Period** – 10 days (equal to the shelf life)  <!--KFM: we never mention this again. Why does it matter? what period is this, the coverage period? -->
 - **Sellable days** – 0 days
 - **Lead time** – Established by the following vendor trade agreements:
   - **Trade agreement 1** – If qty = 1, then the lead time = 5
   - **Trade agreement 2** – If qty = 2, then the lead time = 0
-- **Type of planned order** – Purchase order
+- **Negative days** – 0 days
+- **Type of planned order (default order settings of the item)** – Purchase order
 
 The following sales orders exist in the system:
 
@@ -288,17 +291,19 @@ The following illustration shows the timeline for this example.
 
 ## Example 5: Simple FEFO, requirement, 10 negative days
 
-<!-- KFM: This is more of a negative days example than a shelf life example. We should point out more explicitly how shelf life affects this situation (or maybe remove this example). -->
+<!-- KFM: This is more of a negative days example than a shelf life example. We should point out more explicitly how shelf life affects this situation (or maybe otherwise remove this example). -->
 
 This example shows how shelf life works when adding a large number of negative days for an item. Negative days are the number of days that you're willing to wait before ordering replenishment of an item with negative inventory. The system won't create supply unless the number of negative days is exceeded.
 
 The system has the following item and master plan settings:
 
-- **Replenishment strategy (Coverage code)** – Requirement <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
-- **Negative days** – 10 days
+- **Coverage code (replenishment strategy)** – Requirement <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
 - **Sellable days** – 0 days
 - **Lead time** – 0 days
-- **Type of planned order** – Purchase order
+- **Negative days** – 10 days
+- **Type of planned order (default order settings of the item)** – Purchase order
+
+<!--KFM: No shelf life? -->
 
 The following sales order exists in the system:
 
@@ -326,11 +331,13 @@ This example shows how shelf life works when a number of negative days for an it
 
 The system has the following item and master plan settings:
 
-- **Replenishment strategy (Coverage code)** – Requirement <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
-- **Negative days** – 5 days
+- **Coverage code (replenishment strategy)** – Requirement <!--KFM: we never mention this again. Why does it matter? What does it mean? -->
 - **Sellable days** – 0 days
 - **Lead time** – 0 days
-- **Type of planned order** – Purchase order
+- **Negative days** – 5 days
+- **Type of planned order (default order settings of the item)** – Purchase order
+
+<!--KFM: No shelf life? -->
 
 The following sales order exists in the system:
 
