@@ -32,33 +32,34 @@ ms.dyn365.ops.version: 10.0.0
 This article provides an overview of the Azure Active Directory (Azure AD) setup for calling Lifecycle Services APIs including Database Movement API.  To access resources available via API, you must get a bearer token from Azure AD and send it as a header along with each request.  The steps to obtain this token are below.
 
 The following steps are required to obtain a bearer token with the correct permissions:
-1. Create an application registration in your Azure AD tenant
-2. Configure API permissions
-3. Configure Public Client 
-4. Request an access token 
+
+1. Create an application registration in your Azure AD tenant.
+2. Configure API permissions.
+3. Configure public client. 
+4. Request an access token. 
 
 ## Step 1. Create an application registration
-Navigate to the [Azure AD app registration](https://go.microsoft.com/fwlink/?linkid=2083908) page and create a new registration.  Give the application a name, and ensure the **Single tenant** option is selected.  You can skip the redirect URI setup.
+Navigate to the [Azure AD app registration](https://go.microsoft.com/fwlink/?linkid=2083908) page and create a new registration.  Give the application a name and ensure the **Single tenant** option is selected.  You can skip the redirect URI setup.
 
 ## Step 2. Configure API permissions
-Within your new app registration, navigate to the **Manage - API Permissions** tab.  Under the **Configure permissions** section, select **Add a Permission**.  On the dialog window that opens, select the **APIs my organization uses** tab, and then search for **Dynamics Lifecycle services**.  You might see several entries with a name similar to this, so ensure you use the one with the GUID **913c6de4-2a4a-4a61-a9ce-945d2b2ce2e0**.  
+Within your new app registration, navigate to the **Manage - API Permissions** tab.  Under the **Configure permissions** section, select **Add a Permission**.  On the dialog window that opens, select the **APIs my organization uses** tab, and then search for **Dynamics Lifecycle services**.  You might see several entries with a name similar to this, so be sure you use the one with the GUID, **913c6de4-2a4a-4a61-a9ce-945d2b2ce2e0**.  
 
 > [!NOTE]
-> These APIs makes use of delegated permissions only at this time.  For applications that run with a user context, you request delegated permissions using the **scope** parameter of **user_impersonation**.  These permissions delegate the privileges of the signed-in user to your application, allowing it to act as the user when calling the API endpoints.
+> These APIs make use of delegated permissions only at this time.  For applications that run with a user context, you request delegated permissions using the **scope** parameter of **user_impersonation**.  These permissions delegate the privileges of the signed-in user to your application, allowing it to act as the user when calling the API endpoints.
 >
->Service Principal authentication, where the application calls the API using its own identity or a managed identity is not supported.  
+> Service Principal authentication, where the application calls the API using its own identity or a managed identity, is not supported.  
 
-After the required permissions are added to the application, select **Grant admin consent** to complete the setup.  This is necessary for instances where you want to allow users to access your app right away, instead of requiring an interactive consent experience.  If you can support interactive consent, we recommend following the [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+After the required permissions are added to the application, select **Grant admin consent** to complete the setup.  This is necessary when you want to allow users to access your app right away, instead of requiring an interactive consent experience. If you can support interactive consent, we recommend following the [Microsoft identity platform and OAuth 2.0 authorization code flow](/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 
-## Step 3. Configure Public Client
-To begin reading and writing resources on behalf of a user, you will need to enable the Public Client setting.  This is the only way that Azure AD will accept username and password properties in the body of your token request.  Also note, that if you plan to use this feature it will not work for accounts that have multi-factor authentication enabled.  
+## Step 3. Configure public client
+To begin reading and writing resources on behalf of a user, you will need to enable the **Public Client** setting.  This is the only way that Azure AD will accept username and password properties in the body of your token request.  Note that if you plan to use this feature, it will not work for accounts that have multi-factor authentication enabled.  
 
 To enable, visit the **Manage - Authentication** tab.  Under the **Advanced Settings** section, set the **Public Client** switch to **Yes**. 
 
 ## Step 4. Request an access token
-Below is the means to request a bearer token for username and password.  
+To request a bearer token for username and password, follow these instructions.  
 
-#### Username and password flow
+### Username and password flow
 Be sure to read the Public Client section above.  Then, send a POST request via HTTP to Azure AD with a username and password payload.
 
 ```HTTP
