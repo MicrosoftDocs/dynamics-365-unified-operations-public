@@ -4,7 +4,7 @@
 title: Install Export to Azure Data Lake add-in
 description: This article provides information about configuring the export to Azure Data Lake.
 author: MilindaV2
-ms.date: 11/22/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -110,13 +110,10 @@ The steps, which take place in the Azure portal, are as follows:
     - **Supported Account types**: Choose the appropriate option.
 
 3. After the application is created, select it, and then copy and save the <a name="appid"></a>Application (client) ID at the top of the page. You will need this later.
-4. On the left navigation pane, select **API permissions**.
-5. Select **Add a permission**, and in the **Request API permissions** dialog box, select **Azure Key vault**.
-6. Select **Delegated permissions**, select **user_impersonation**, and then select **Add permissions**.
-7. On the left navigation pane, select **Certificates & secrets**, and then select **New client secret**. 
-8. In the **Description** field, enter a name.
-9. In the **Expires** field, select an option, and then select **Add**. The system will generate a secret and display it under the grid. 
-10. Copy the secret **Value** to the clipboard. This is the <a name="secret"></a>value you will need to provide when you set up the key vault later.
+4. In the left navigation pane, select **Certificates & secrets**, and then select **New client secret**. 
+5. In the **Description** field, enter a name.
+6. In the **Expires** field, select an option, and then select **Add**. The system will generate a secret and display it under the grid. 
+7. Copy the secret **Value** to the clipboard. This is the <a name="secret"></a>value you will need to provide when you set up the key vault later.
 
 ## <a name="createsubscription"></a>Create a Data Lake Storage (Gen2) account in your subscription
 
@@ -148,13 +145,11 @@ You need to grant your application permissions to read and write to the storage 
     > Don't make any changes to the fields, **Assign access to** and **Azure AD user, group, or service principal**.
 
 7. Select **Save**.
-8. Repeat steps 4-7 to add the **Storage blob data reader** role, as shown.
-9. Validate the storage account role assignment for [the application](#appid) you created earlier. 
+8. Validate the storage account role assignment for [the application](#appid) you created earlier. 
 
     | Application                                   | Role |
     |-----------------------------------------------|------|
     | [The application](#appid) you created earlier | Storage blob data contributor |
-    | [The application](#appid) you created earlier | Storage blob data reader |
 
 ## <a name="createkeyvault"></a>Create a key vault
 
@@ -208,23 +203,7 @@ You will notice the secret created in the list of secrets.
 
 ## <a name="powerplatformintegration"></a>Power Platform integration
 
-If this is the first time you are installing add-ins in this environment, you may need to enable the **Power Platform integration** for this environment. There are two options to set up Power Platform integration in finance and operations app environments.
-
-### Option 1: Set up Power Platform integration using LCS
-
-To set up Power Platform integration from LCS, see [Add-ins overview](../power-platform/add-ins-overview.md).
-
-### Option 2: Set up Power Platform integration using the Dual-write wizard
-
-Another way to set up **Power Platform integration** is to create a Power Platform environment with a database and then use the Dual-write setup. Complete the following steps to create the Power Platform environment and complete the integration. 
-
-1. [Create an environment with database](/power-platform/admin/create-environment#create-an-environment-with-a-database.md).
-2. [Complete the requirement and prerequisite](dual-write/requirements-and-prerequisites.md).
-3. Use the [dual-write wizard to link your environment](dual-write/link-your-environment.md).
-4. Validate that the Power Platform integration is set up and added in the LCS environment page.
-
-> [!NOTE]
-> If you use this approach, you must select a Power Platform environment that is in the same region as your finance and operations environment. If you select a Power Platform environment that is in a different region, installation of the add-in might fail.
+If this is the first time you are installing add-ins in this environment, you may need to enable the **Power Platform integration** for this environment. For more information, see [Microsoft Power Platform integration with finance and operations apps](../power-platform/overview.md).
 
 ## <a name="installaddin"></a>Install the Export to Data Lake add-in in LCS 
 
