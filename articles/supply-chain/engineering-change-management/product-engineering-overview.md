@@ -4,7 +4,7 @@
 title: Engineering change management overview (contains video)
 description: This article provides an overview of engineering change management, which helps you plan and manage product versioning, and manage product lifecycles and engineering changes.
 author: t-benebo
-ms.date: 01/11/2022
+ms.date: 08/09/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 

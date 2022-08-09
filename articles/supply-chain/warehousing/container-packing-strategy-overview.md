@@ -2,7 +2,7 @@
 title: Container packing strategies
 description: This article describes the differences between container packing strategies and provides examples.
 author: GalynaFedorova
-ms.date: 06/11/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak, WHSContainerStructure, WHSContainerTable
 audience: Application User

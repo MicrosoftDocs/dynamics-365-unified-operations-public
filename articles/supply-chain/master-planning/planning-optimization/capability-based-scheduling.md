@@ -2,7 +2,7 @@
 title: Scheduling with resource selection based on capability
 description: This article describes resource selection during infinite capacity scheduling when you specify capabilities as resource requirements for an operation.
 author: t-benebo
-ms.date: 9/3/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: RouteInventProd, WrkCtrTable, WrkCtrCapability
 audience: Application User

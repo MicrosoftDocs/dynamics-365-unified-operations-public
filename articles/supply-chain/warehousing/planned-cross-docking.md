@@ -4,7 +4,7 @@
 title: Planned cross docking
 description: This article describes advanced planned cross-docking, where the inventory quantity that is required for an order is directed straight from receipt or creation to the correct outbound dock or staging area. All remaining inventory from the inbound source is directed to the correct storage location through the regular put-away process.
 author: Mirzaab
-ms.date: 07/01/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 

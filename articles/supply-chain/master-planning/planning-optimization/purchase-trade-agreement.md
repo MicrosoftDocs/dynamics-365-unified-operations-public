@@ -4,7 +4,7 @@
 title: Master planning with purchase trade agreements
 description: This article describes how Planning Optimization can find the vendor and/or lead time for a planned order, based on the best price or lead time that is found in purchase trade agreements.
 author: t-benebo
-ms.date: 06/29/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 

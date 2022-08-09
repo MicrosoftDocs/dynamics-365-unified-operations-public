@@ -4,7 +4,7 @@
 title: Warehouse location status
 description: This article provides an overview of the Warehouse location status feature.
 author: Mirzaab
-ms.date: 07/01/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 

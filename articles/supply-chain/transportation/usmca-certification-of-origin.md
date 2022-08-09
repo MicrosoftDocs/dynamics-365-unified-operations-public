@@ -4,7 +4,7 @@
 title: USMCA certification of origin
 description: This feature lets you print the certification of origin documents required by the United States-Mexico-Canada Agreement (USMCA).
 author: Weijiesa
-ms.date: 10/23/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 

@@ -4,7 +4,7 @@
 title: Outbound workload visualization
 description: This article provides information about outbound workload visualization. This functionality lets warehouse managers and supervisors create custom workload charts that can be used to monitor the progress of current work and the amount of it that remains. Warehouse managers can create multiple views and set up automatic refresh as they require.
 author: Mirzaab
-ms.date: 08/28/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 

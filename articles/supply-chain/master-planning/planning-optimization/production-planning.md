@@ -2,7 +2,7 @@
 title: Production planning
 description: This article describes planning for production and explains how to modify planned production orders by using Planning Optimization.
 author: t-benebo
-ms.date: 06/01/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: ReqCreatePlanWorkspace
 audience: Application User

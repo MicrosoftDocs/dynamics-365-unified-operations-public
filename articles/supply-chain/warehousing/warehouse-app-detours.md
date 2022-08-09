@@ -2,7 +2,7 @@
 title: Configure detours for steps in mobile device menu items
 description: This article describes how to configure detours for menu items so that workers can park the current task, perform another task, and then return to the original task without losing any information.
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User

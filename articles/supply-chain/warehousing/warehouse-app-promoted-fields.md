@@ -2,7 +2,7 @@
 title: Configure promoted fields for steps in the Warehouse Management mobile app
 description: This article describes how to promote and highlight specific information for any step in the task flows for the Warehouse Management mobile app.
 author: Mirzaab
-ms.date: 10/15/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form:
 audience: Application User

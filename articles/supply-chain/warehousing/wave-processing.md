@@ -4,7 +4,7 @@
 title: Wave creation and processing
 description: This article describes how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order.
 author: Mirzaab
-ms.date: 03/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 

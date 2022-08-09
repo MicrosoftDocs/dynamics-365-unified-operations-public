@@ -2,7 +2,7 @@
 title: Firm planned orders
 description: This article explains how to firm planned orders. When planned orders are firmed, they become actual purchase orders, transfer orders, or production orders.
 author: t-benebo
-ms.date: 04/22/2021
+ms.date: 08/09/2022
 ms.search.form: ReqTransPo, ReqTransFirmLog
 audience: Application User
 ms.reviewer: kamaybac

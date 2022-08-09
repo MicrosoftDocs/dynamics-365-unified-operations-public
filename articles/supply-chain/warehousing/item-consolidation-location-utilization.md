@@ -4,7 +4,7 @@
 title: Item consolidation - location utilization
 description: This article provides information about functionality that makes it easy for warehouse managers to view and filter the volumetric utilization of locations across the warehouse. Managers can select locations and create inventory movement work directly from the Item Consolidation page to consolidate items and therefore make better use of warehouse space.
 author: Mirzaab
-ms.date: 07/16/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 

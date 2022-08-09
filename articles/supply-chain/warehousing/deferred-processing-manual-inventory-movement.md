@@ -2,7 +2,7 @@
 title: Deferred processing of manual inventory movement
 description: This article describes how to use deferred processing of manual inventory movement in Microsoft Dynamics 365 Supply Chain Management.
 author: Mirzaab
-ms.date: 04/27/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSWorkProcessingPolicy, WHSWorkDeferredPutProcessingTask
 audience: Application User

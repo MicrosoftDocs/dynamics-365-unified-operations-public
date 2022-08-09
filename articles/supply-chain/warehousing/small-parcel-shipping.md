@@ -4,7 +4,7 @@
 title: Small parcel shipping
 description: This article provides information about the small parcel shipping (SPS) feature. This feature enables Microsoft Dynamics 365 Supply Chain Management to submit details about a packed container to the carrier, and then receive a shipping label, shipping rate, and tracking number back from that carrier.
 author: Mirzaab
-ms.date: 01/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 

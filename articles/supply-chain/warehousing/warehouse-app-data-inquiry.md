@@ -2,7 +2,7 @@
 title: Query data using Warehouse Management mobile app detours
 description: This article describes how to configure data inquiry mobile device menu items and use them as part of detours.
 author: perlynne
-ms.date: 08/01/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User

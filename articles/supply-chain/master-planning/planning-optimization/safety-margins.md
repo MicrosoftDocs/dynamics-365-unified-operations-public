@@ -4,7 +4,7 @@
 title: Safety margins
 description: This article describes how safety margins can be used with the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
-ms.date: 09/14/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
