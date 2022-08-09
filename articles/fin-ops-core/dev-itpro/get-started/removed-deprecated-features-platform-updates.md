@@ -57,7 +57,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | Service requests | No | Yes | Yes: [Self-service deployments](../deployment/infrastructure-stack.md) |
 | Sharepoint integration | Yes | Yes | No |
 | Configuration and data manager | No | Yes | No |
-| Process data packages | No | Yes | DIXF |
+| Process data packages | No | Yes | Yes: Data Import Export Framework (DIXF) |
 | Envrionment upgrade | No | Yes | Yes: [One Version](../lifecycle-services/oneversion-overview.md) service updates are available. |
 | Infrastructure estimator | Yes | No | No |
 | License sizing | Yes | No | No |
