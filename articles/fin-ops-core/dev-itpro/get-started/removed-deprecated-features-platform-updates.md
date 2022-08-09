@@ -53,6 +53,7 @@ Detailed information about objects in finance and operations apps can be found i
 As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/finance-operations/finance-operations-crossapp-capabilities/one-dynamics-one-platform) work effort, the following LCS features are deprecated.
 
 | Feature name | Used with AX 2012? | Used with finance and operations apps? | Replaced by another feature? |
+|--------------|--------------------|----------------------------------------|------------------------------|
 | Announcements | Yes | Yes | ? |
 | Configuration manager | Yes | No | ? |
 | Crash and dump analysis | Yes | No | ? |
