@@ -33,10 +33,10 @@ This article provides an overview of the Azure Active Directory (Azure AD) setup
 
 The following steps are required to obtain a bearer token with the correct permissions:
 
-1. Create an application registration in your Azure AD tenant.
-2. Configure API permissions.
-3. Configure public client. 
-4. Request an access token. 
+1. Create an application registration in your Azure AD tenant
+2. Configure API permissions
+3. Configure public client 
+4. Request an access token
 
 ## Step 1. Create an application registration
 Navigate to the [Azure AD app registration](https://go.microsoft.com/fwlink/?linkid=2083908) page and create a new registration.  Give the application a name and ensure the **Single tenant** option is selected.  You can skip the redirect URI setup.
