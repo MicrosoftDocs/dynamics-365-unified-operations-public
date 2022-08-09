@@ -219,6 +219,8 @@ for:
 To create the different "Look up" menu items follow these steps.
 
 #### **Look up location**
+Many different look up capabilities exists to look up packing locations. In this example a simple look up for locations related to a specific *Location profile* will be used to filter locations used for packing operations.
+
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 1. On the Action Pane, select **New** to add a mobile device menu item.
 1. Set the following values for the new item:
@@ -243,12 +245,10 @@ To create the different "Look up" menu items follow these steps.
     
 1. Select **OK**.
 
-    In this example, the new menu item is configured to find locations used for packing operations.
+   In the query, the **Warehouse** field will automatically get assigned based on the workers current warehouse.
+   If you want to specify how the list will be sorted, you can set up the sorting on the **Sorting** tab.
 
-    In the query, the **Warehouse** field will automatically get assigned based on the workers current warehouse.
-
-    If you want to specify how the list will be sorted, you can set up the sorting on the **Sorting** tab.
-
+ 
 1. In addition to defining the query, you must select which fields will be shown on the cards on the inquiry list page. Therefore, on the Action Pane, select **Field list**.
 1. On the **Field list** page, set the following values:
 
@@ -262,6 +262,8 @@ To create the different "Look up" menu items follow these steps.
 
 
 #### Look up shipment
+Many different look up capabilities exists to look up shipments. In this example a simple look up for active shipments will be used.
+
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 1. On the Action Pane, select **New** to add a mobile device menu item.
 1. Set the following values for the new item:
@@ -286,10 +288,7 @@ To create the different "Look up" menu items follow these steps.
     
 1. Select **OK**.
 
-    In this example, the new menu item is configured to find active shipments.
-
     In the query, the **Warehouse** field will automatically get assigned based on the workers current warehouse.
-
     If you want to specify how the list will be sorted, you can set up the sorting on the **Sorting** tab.
 
 1. In addition to defining the query, you must select which fields will be shown on the cards on the inquiry list page. Therefore, on the Action Pane, select **Field list**.
@@ -297,16 +296,19 @@ To create the different "Look up" menu items follow these steps.
 
     - **Display field 1:** *shipmentID* (This field value will be used as the header for each card.)
     - **Display field 2:** *ShipmentStatus*
-    - **Display field 3:** *displayDeliveryName....* <!-- end ???-->
-    - **Display field 4:** *displayNumberOfC...* <!-- end ???-->
-    - **Display field 5:** *displayNumberOfL...* <!-- end ???-->
+    - **Display field 3:** *displayDeliveryName()*
+    - **Display field 4:** *displayNumberOfContainers()*
+    - **Display field 5:** *displayNumberOfLoadLines()*
     - **Display field 6:** *displayTotalVolume()*
     - **Display field 7:** *displayTotalWeight()*
-    - **Display field 8:** *displayShipmentID...*  <!-- end ???-->
+    - **Display field 8:** *displayShipmentDateTime()*
 
 1. On the Action Pane, select **Save**. Then close the page.
 
 #### Look up item
+Many different look up capabilities exists to look up item information. You might find it relevant to filter on data related to current shipment and packing location. This can for example be done by using the [**Packing work**](packing-work.md) feature - or by joining to the closed put work linies for the work bring the inventory to packing areas.
+
+In this example a simple look up enabling wildcard search via the *Search name* field will be used.
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 1. On the Action Pane, select **New** to add a mobile device menu item.
 1. Set the following values for the new item:
@@ -319,21 +321,18 @@ To create the different "Look up" menu items follow these steps.
 
     - **Activity code:** *Data inquiry*
     - **Use process guide:** *Yes* (This value is automatically selected.)
-    - **Table name:** *WHSShipmentLine* <!-- ??? -->
+    - **Table name:** *InventTablee*
 
 1. On the Action Pane, select **Edit query** to define a query that is based on the selected base table (in this case, the location table. Note that you can join to related tables when needed).
 1. In the query editor, on the **Range** tab, add the following lines to the grid.
 
     | Table | Derived table | Field | Criteria |
     |---|---|---|---|
-    | Shipment lines | Shipment lines | Warehouse |  | <!-- ??? -->
+    | Items | Items | Search name |  |
     
 1. Select **OK**.
 
-    In this example, the new menu item is configured to find active shipments.
-
     In the query, the **Warehouse** field will automatically get assigned based on the workers current warehouse.
-
     If you want to specify how the list will be sorted, you can set up the sorting on the **Sorting** tab.
 
 1. In addition to defining the query, you must select which fields will be shown on the cards on the inquiry list page. Therefore, on the Action Pane, select **Field list**.
@@ -351,6 +350,8 @@ To create the different "Look up" menu items follow these steps.
 1. On the Action Pane, select **Save**. Then close the page.
 
 #### Look up container type
+Many different look up capabilities exists to look up container types. In this example all container types will get included, but it might make sense to filter based on *Container group ID* or other field values.
+
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 1. On the Action Pane, select **New** to add a mobile device menu item.
 1. Set the following values for the new item:
@@ -364,10 +365,7 @@ To create the different "Look up" menu items follow these steps.
     - **Activity code:** *Data inquiry*
     - **Use process guide:** *Yes* (This value is automatically selected.)
     - **Table name:** *WHSContainerType*
-
-    In this example, the new menu item is configured to find all container types (no need to *Edit query*), but it might make sense to filter based on *Container group ID* or other field values.
-    If you want to specify how the list will be sorted, you can set up the sorting on the **Sorting** tab. In this example the *Maximum volume* field could be a candidate.
-
+    
 1. You must select which fields will be shown on the cards on the inquiry list page. Therefore, on the Action Pane, select **Field list**.
 1. On the **Field list** page, set the following values:
 <!--- MISSING-->
@@ -382,8 +380,12 @@ To create the different "Look up" menu items follow these steps.
 
 1. On the Action Pane, select **Save**. Then close the page.
 
+If you want to specify how the list will be sorted, you can set up the sorting on the **Sorting** tab. In this example the *Maximum volume* field could be a candidate.
+
 
 #### Look up container
+Many different look up capabilities exists to look up containers. In this example, the new menu item is configured to find active containers on the current packing location related to the current shipment getting packed.
+
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 1. On the Action Pane, select **New** to add a mobile device menu item.
 1. Set the following values for the new item:
@@ -410,10 +412,8 @@ To create the different "Look up" menu items follow these steps.
     
 1. Select **OK**.
 
-    In this example, the new menu item is configured to find active containers on the current packing location related to the current shipment getting packed.
-    In the query, the **Warehouse**, **Location**, and **Shipment ID** fields will automatically get assigned based on following detour setup.
-
-    If you want to specify how the list will be sorted, you can set up the sorting on the **Sorting** tab.
+In the query, the **Warehouse**, **Location**, and **Shipment ID** fields will automatically get assigned based on following detour setup.
+If you want to specify how the list will be sorted, you can set up the sorting on the **Sorting** tab.
 
 1. In addition to defining the query, you must select which fields will be shown on the cards on the inquiry list page. Therefore, on the Action Pane, select **Field list**.
 1. On the **Field list** page, set the following values:
