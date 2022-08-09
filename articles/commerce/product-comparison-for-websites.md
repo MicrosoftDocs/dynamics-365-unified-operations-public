@@ -22,21 +22,25 @@ ms.search.validFrom: 2022-02-28
 This article describes product comparison modules and how to implement them so that customers can do product comparisons on Microsoft Dynamics 365 Commerce e-commerce websites.
 
 > [!NOTE]
-> The product comparison and product comaprison button modules are available starting with the Dynamics 365 Commerce version 10.0.29 release and can be used for both business-to-consumer (B2C) and business-to-business (B2B) websites.
+> The product comparison and product comparison button modules are available starting with the Dynamics 365 Commerce version 10.0.29 release and can be used for both business-to-consumer (B2C) and business-to-business (B2B) websites.
 
-Product comparison functionality enables shoppers to compare product details on a product comparison page to help them make better purchase decisions. This functionality is configured in Commerce site builder using the product comparison module. On product list pages (PLPs) such as category results, search results, and product collections pages, you can add a button for product comparison that allows shoppers to add products to a comparison tray. This is done in site builder using the product comparison button module, which functions similar to the [Quick view module](quick-view-module.md). When site users add products for comparison by selecting them from product tiles, a comparison tray appears at the bottom of the page that shows the products the shopper is currently comparing, along with short previews of the products. Site users are also able to add products from product details pages (PDPs), and can add specific product variants to compare with product masters.
+Product comparison functionality enables shoppers to compare product details on a product comparison page to help them make better purchase decisions. This functionality is configured in Commerce site builder using the product comparison module. On product list pages (PLPs) such as category results, search results, and product collections pages, you can configure a button for product comparison that allows shoppers to add products to a comparison tray. This is done in site builder using the product comparison button module, which functions similar to the [Quick view module](quick-view-module.md). When site users add products for comparison by selecting them from product tiles, a comparison tray appears at the bottom of the page that shows the products the shopper is currently comparing, along with short previews of the products. Site users are also able to add products from product details pages (PDPs), and can add specific product variants to compare with product masters.
 
 When using the comparison tray, customers can add a few products to compare and then select **Compare** to be redirected to a product comparison page. The product comparison page shows customers product details for each selected product so they can compare images, prices, product dimensions (size, style, color), aggregated ratings information, and various other product attributes.
+
+The following illustration shows examples of the compare product button, the remove from comparison button, the comparison tray, and the product comparison page.
 
 ![Product comparison overview showing the compare product button, the remove from comparison button, the comparison tray panel, and the product comparison page ](./media/Product-Comparison-Overview.png)
 
 > [!NOTE]
 > - The product comparison page compares a default set of product properties as well as all attributes that are viewable on a PDP for a given product. 
 > - Properties like delivery mode, on-hand inventory, and unit of measure are not viewable on a product comparison page. 
-> - Customers are able to add products from different categories to the comaprision tray as long as they're from same catalog. 
-> - Product comparison is currently limited to an individual catalog. In other words, shoppers aren't allowed to do cross-catalog comparisons. 
-> - You should deselect the "Render module client side" property for all product comparison modules. 
-> - You should have page level caching disabled for all pages where the product comparison module is used, including PDPs, PLPs, and product comparison pages.
+> - Customers are able to add products from different categories to the comparison tray as long as they're from same catalog. 
+> - Product comparison functionality is currently limited to comparing products within an individual catalog. Site users aren't allowed to do cross-catalog comparisons. 
+> - You should ensure that the **Render module client side** property is deselected for all product comparison modules. 
+> - You should ensure that page-level caching is disabled for all pages where the product comparison module is used, including PDPs, PLPs, and product comparison pages. For more inofmation, see [Configure page caching](e-commerce-extensibility/page-caching.md).
+
+The following illustration shows an example of a product comparison page.
 
 ![Product comparison page](./media/Product-Comparison-Page.png)
 
@@ -64,6 +68,8 @@ To add a product comparison module to a new product comparison page, follow thes
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
+The following illustration shows an example of an empty comparison page in site builder.
+
 ![Product comparison module](./media/Product-comparison-module.png)
 
 ## Add a product comparison button to product tiles on search and category results pages
@@ -83,10 +89,6 @@ To add a product comparison button on product tiles in search and category resul
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
-The following example illustration from Commerce site builder shows how to place a product comparison button on a product list page.
-
-![Product comparison button](./media/Product-comparison-button-and-preview-panel-for-search-results.png)
-
 ## Specify the maximum number of products to be displayed in the comparison tray 
 
 You can specify the maximum number of products to be displayed in the comparison tray in site builder at **Site settings \> Extensions**. You can configure separate maximum limits for desktop and mobile/tablet views. If no maximum limit is defined, no limit will be enforced by default.
@@ -97,10 +99,8 @@ You can specify the maximum number of products to be displayed in the comparison
 To specify the maximum number of products in the comparison tray, follow these steps.
 
 1. In site builder, go to **Site settings \> Extensions**.
-1. Scroll down to find the following settings:
-    - **Products in the comparison limit - desktop devices**
-    - **Products in the comparison limit - mobile and tablet devices**
-1. For each of these settings, enter the maximum number of products that should be displayed for those viewports in the comparison tray. 
+1. For the **Products in the comparison limit - desktop devices** property, enter the maximum number of products that should be displayed in the comparison tray for desktop viewports.
+1. For the **Products in the comparison limit - mobile and tablet devices** property, enter the maximum number of products that should be displayed in the comparison tray for mobile and tablet viewports.
  
 ![Site settings to limit products in comparison tray](./media/Site-settings-to-limit-products-in-comparison-tray.png)
 
