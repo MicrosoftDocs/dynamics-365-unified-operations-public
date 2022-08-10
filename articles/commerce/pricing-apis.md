@@ -21,8 +21,8 @@ ms.search.validFrom: 2022-07-15
 Commerce pricing engine provides the following APIs that can be consumed by external applications to support various pricing scenarios.
 
 - **GetActivePrices** – Gets a product’s calculated price including simple discounts.
-- **CalculateSalesDocument** – Calculates prices and discounts for items with quantities as if they were bought together.
-- **GetAvailablePromotions** – Gets applicable discounts for items in cart. 
+- **CalculateSalesDocument** – Calculates prices and discounts for products with quantities as if they were bought together.
+- **GetAvailablePromotions** – Gets applicable discounts for products in cart. 
 - **AddCoupons** – Adds coupons into a cart.
 - **RemoveCoupons** – Removes coupons from a cart.
 
@@ -105,7 +105,7 @@ Sample response body:
 
 ## CalculateSalesDocument
 
-Introduced in **10.0.25** release, this API calculates prices and discounts for items with given quantities as they were bought together in an order. The pricing calculation behind this API considers both single-line and multi-lines discounts. 
+Introduced in **10.0.25** release, this API calculates prices and discounts for products with given quantities as they were bought together in an order. The pricing calculation behind this API considers both single-line and multi-lines discounts. 
 
 The mainline use case of this API is pricing calculation for scenarios where full cart context doesn't persist (such as sales quote). There are also scenarios in POS and e-commerce that could benefit from this capability to further entice customers to add products to cart as the price could be lowered when calculated as a set (like discrete bundles, linked or recommended products, products that have already been added to the cart, etc.)    
 
@@ -122,8 +122,8 @@ The input parameters inside the object named salesDocument are listed below.
 |                  	| ProductId            	| long                          	| Required in the scope of CartLine               	| Product record ID.                                                                                                                                                                                                    	|
 |                  	| ItemId               	| string                        	| Optional                                        	| Item identifier. Once provided, it must match the ProductId.                                                                                                                                                          	|
 |                  	| InventoryDimensionId 	| string                        	| Optional                                        	| Inventory dimension identifier. Once provided, the combination of ItemId and InventoryDimensionId must match the ProductId.                                                                                           	|
-|                  	| Quantity             	| decimal                       	| Required in the scope of CartLine               	| Quantity of the item.                                                                                                                                                                                                 	|
-|                  	| UnitOfMeasureSymbol  	| string                        	| Optional                                        	| Unit of the item. If not provided, the API by default uses the sale unit of the item.                                                                                                                                 	|
+|                  	| Quantity             	| decimal                       	| Required in the scope of CartLine               	| Quantity of the product.                                                                                                                                                                                                 	|
+|                  	| UnitOfMeasureSymbol  	| string                        	| Optional                                        	| Unit of the product. If not provided, the API by default uses the sale unit of the product.                                                                                                                                 	|
 | CustomerId       	|                      	| string                        	| Optional                                        	| Customer account number.                                                                                                                                                                                              	|
 | LoyaltyCardId    	|                      	| string                        	| Optional                                        	| Loyalty card identifier. The customer account of the loyalty card (if any) must match the CustomerId field value (if provided). The loyalty card won't be considered if it isn't found, or its status is blocked. 	|
 | AffiliationLines 	|                      	| IList\<AffiliationLoyaltyTier\> 	| Optional                                        	| Affiliation loyalty tier lines. If CustomerId and/or LoyaltyCardId values are provided, their corresponding affiliation loyalty tier lines will be merged with those provided in AffiliationLines.                    	|
@@ -191,7 +191,7 @@ The entire cart object is returned as the response body. To check prices and dis
 | DiscountAmount 	|                	| decimal             	| Total discount amount of the entire sales document.                                                               	|
 | TotalAmount    	|                	| decimal             	| Total amount of the entire sales document.                                                                        	|
 | CartLines      	|                	| IList\<CartLine\>     	| Calculated lines with price and discount details.                                                                 	|
-|                	| Price          	| decimal             	| Unit price of the item.                                                                                           	|
+|                	| Price          	| decimal             	| Unit price of the product.                                                                                           	|
 |                	| NetPrice       	| decimal             	| Price * Quantity, net price of the line before applying discounts.                                                	|
 |                	| DiscountAmount 	| decimal             	| Discount amount.                                                                                                  	|
 |                	| TotalAmount    	| decimal             	| The final total pricing result of the line.                                                                       	|
