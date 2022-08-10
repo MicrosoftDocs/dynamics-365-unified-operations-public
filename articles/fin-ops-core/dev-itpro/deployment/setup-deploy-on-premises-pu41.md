@@ -4,7 +4,7 @@
 title: Set up and deploy on-premises environments (Platform update 41 and later)
 description: This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
 author: faix
-ms.date: 08/03/2022
+ms.date: 08/10/2022
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -258,10 +258,10 @@ Self-signed certificates can be used only for testing purposes. For the sake of 
 
 | Setting                  | Value           | Requirement |
 |--------------------------|-----------------|-------------|
-| Signature algorithm      | sha256RSA       | recommended |
-| Signature hash algorithm | sha256          | recommended |
-| Public key               | RSA (2048 bits) | mandatory   |
-| Thumbprint algorithm     | sha1            | recommended |
+| Signature algorithm      | sha256RSA       | Recommended |
+| Signature hash algorithm | sha256          | Recommended |
+| Public key               | RSA (2048 bits) | Mandatory   |
+| Thumbprint algorithm     | sha1            | Recommended |
 
 #### Overview of required certificates
 
