@@ -1786,6 +1786,8 @@
               href: general-ledger/global-withholding-tax-overview.md
             - name: Set up global withholding tax
               href: general-ledger/set-up-global-withholding-tax.md
+            - name: Enable the global withholding tax currency exchange rate type and date type setup
+              href: general-ledger/global-withholding-tax-currency-exchange-rate-date-type-setup.md
             - name: Withholding tax in purchase transactions
               href: general-ledger/withholding-tax-in-purchase-transactions.md
             - name: Withholding tax in sales transactions
