@@ -54,7 +54,7 @@ For information about how to write custom test code or generate automated test c
 The first step is to [choose an Azure DevOps plan](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) for your organization.
 
 > [!NOTE]
-> TFVC is the only source control repository that is supported. Git isn't supported.
+> LCS is designed to work with TFVC repositories, and currently does not work with Git repositories.
 
 ### Set up Azure DevOps
 
@@ -81,7 +81,7 @@ If you have not already done so, you need to first setup your LCS project to con
 4. Select **Azure DevOps** and enter the Azure DevOps URL where the source code for your module project is located.
 5. Specify the Azure DevOps link, authorize, and then click **Choose default project**.
    > [!NOTE]
-   > We currently support VSTF as source control and do not support Git. 
+   > LCS is designed to work with TFVC repositories, and currently does not work with Git repositories.
 
 ### Check-in migrated or new module code into Azure DevOps
 
