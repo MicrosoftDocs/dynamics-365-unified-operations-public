@@ -18,7 +18,7 @@ ms.dyn365.ops.version: AX 10.0.5
 With Planning Optimization, you can set up various filters to limit the set of items to include in a planning run so that not all items are planned. There are two ways to limit the set of items that are planned:
 
 - Plan filters, which are set up on the master plan itself.
-- Runtime filters, where you use runtime options in the Planning Optimization run dialog the select a set of items and BOM levels to include in the run.
+- Runtime filters, where you use options in the Planning Optimization run dialog to select items and BOM levels to include in the run.
 
 <!-- KFM: Do we now have a third way? (Select manufactured items) -->
 
@@ -26,9 +26,7 @@ With Planning Optimization, you can set up various filters to limit the set of i
 
 [!include [banner](../../includes/banner.md)]
 
-*Plan filters* are useful when you want to limit a plan to a specific group of items and make sure that no other items are included as part of the resulting master planning. When defined, the plan filter is always be applied during a master planning run.
-
-If you apply both a plan filter and a runtime filter during a master planning run, then only the intersection of the two filters will be included in the run.
+*Plan filters* are useful when you want to limit a plan to a specific group of items and make sure that no other items are included as part of the resulting master planning. When defined, the plan filter is always applied during a master planning run that uses that plan.
 
 You access the plan filter from the **Master plans** page when you are using Planning Optimization.
 
@@ -38,7 +36,9 @@ You access the plan filter from the **Master plans** page when you are using Pla
 
 <!-- KFM: How do I set the runtime filter? Instructions needed. -->
 
-## Example of combining plan and runtime filters
+## Combine plan and runtime filters
+
+If you apply both a plan filter and a runtime filter during a master planning run, then only the intersection of the two filters will be included in the run.
 
 To see how the plan and runtime filters combine, consider this example. You have a plan with a plan filter is set up to include items A, B, and C. You then run master planning run several times using the same plan, but with a different runtime filter each time. The results are as follows:
 
@@ -50,11 +50,11 @@ To see how the plan and runtime filters combine, consider this example. You have
 > [!NOTE]
 > If you set a plan filter on the plan that is selected as the **Current dynamic master plan** on the **Master planning parameters** page, then that filter will apply each time the dynamic plan runs. For example, if the net requirements are updated for an item that isn't part of the plan filter, no result will be generated.
 
-## Run planning for select manufactured items
+## Run planning for selected manufactured items
 
 For manufactured items that have a bill of material (BOM), it's often convenient to plan all BOM components together with the main item to ensure that all the required components are available when production begins.
 
-Use options on the Planning Optimization run dialog <!-- KFM: How do I open this dialog? What is its name? How is this different from the built-in engine run dialog? Does this work only with PO? What are the options called? --> to select which items should be added <!--KFM: Is this referring to the runtime filter? --> and choose whether the BOM components should be included in the plan.
+Use options on the Planning Optimization run dialog <!-- KFM: How do I open this dialog? What is its name? Does this work only with PO? What are the options called? --> to select which items should be added <!--KFM: Is this referring to the runtime filter? --> and choose whether the BOM components should be included in the plan.
 
 - To include all components, set **Include all BOM levels** to *Yes*.
 - To limit the set of components to plan, set **Include all BOM levels** to *No* and then use the **BOM levels to include** setting to specify the maximum number of BOM levels to include (in addition to items included in the filters). For example:
