@@ -20,7 +20,7 @@ ms.search.validFrom: 2022-07-15
 
 This article describes various pricing APIs provided by the Microsoft Dynamics 365 Commerce pricing engine.
 
-The Dynamics 365 Commerce pricing engine provides the following APIs that can be consumed by external applications to support various pricing scenarios.
+The Dynamics 365 Commerce pricing engine provides the following Retail Server APIs that can be consumed by external applications to support various pricing scenarios.
 
 - **GetActivePrices** – Gets a product’s calculated price, including simple discounts.
 - **CalculateSalesDocument** – Calculates prices and discounts for products with quantities as if they were bought together.
@@ -32,7 +32,7 @@ For more information about how to consume Retail Server APIs in external applica
 
 ## GetActivePrices
 
-Introduced in the Commerce version 10.0.4 release, the *GetActivePrices* API gets a product's calculated price, including simple discounts. The API can also take a list of products as input and query the price of individual product in bulk. This API doesn't calculate multiline discounts and assumes that each product in an API request has quantity of one (1). This API supports the Employee, Customer, Anonymous, and Application Commerce roles.
+Introduced in the Commerce version 10.0.4 release, the *GetActivePrices* API gets a product's calculated price, including simple discounts. The API can also take a list of products as input and query the price of individual products in bulk. The GetActivePrices API doesn't calculate multiline discounts and assumes that each product in an API request has quantity of one (1). This API supports the Employee, Customer, Anonymous, and Application Commerce roles.
 
 The main use case scenario of the GetActivePrices API is the product details page (PDP), where retailers want to showcase the best price for a product including any effective discounts.
 
