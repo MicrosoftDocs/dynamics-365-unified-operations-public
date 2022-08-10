@@ -4,7 +4,7 @@
 title: Pricing functions in POS 
 description: This article explains various price and discount functions in Commerce point of sale application.
 author: boycez
-ms.date: 07/14/2022
+ms.date: 08/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -44,7 +44,7 @@ Dynamics 365 Commerce point of sale (POS) application provides rich capabilities
 | Apply or remove coupons        	| [Add coupon code](#add-coupon-code)<br>[Remove coupon code](#remove-coupon-code)                                                                                                                                    	|
 | Calculate prices and discounts 	| [Recalculate](#recalculate)                                                                                                                                                          	|
 
-For more details about how those operations can be configured in the application and whether they support offline mode, please check [Online and offline point of sale (POS) operations](https://docs.microsoft.com/dynamics365/commerce/pos-operations).
+For more details about how those operations can be configured in the application and whether they support offline mode, please check [Online and offline point of sale (POS) operations](pos-operations.md).
 
 ## Price check
 
