@@ -111,11 +111,11 @@ Introduced in the Commerce version 10.0.25 release, the *CalculateSalesDocument*
 
 The mainline use case of the CalculateSalesDocument API is pricing calculation for scenarios where full cart context doesn't persist (such as sales quote). There are also scenarios in point of sale (POS) and e-commerce that could benefit from this capability to further entice customers to add products to cart as the price could be lowered when calculated as a set (for example, discrete bundles, linked or recommended products, or products that have already been added to the cart).    
 
-The data model for both request and response of this API is **Cart** (in the context of this API, we name it **SalesDocument**). Since most of the properties are optional, and only a few of them impact the pricing calculation, in order to avoid confusion, only those pricing related fields are listed below, and we recommend not to involve any other fields in the API request.
+The data model for both request and response of this API is **Cart**, but in the context of the CalculateSalesDocument API it is named **SalesDocument**. Since most of the properties are optional and only a few of them impact the pricing calculation, only pricing related fields are listed in the following table. It is not recommended to involve any other fields in the API request.
 
-The scope of the API is to calculate prices and discounts only, taxes or charges aren't involved.
+The scope of the CalculateSalesDocument API is to calculate prices and discounts only, taxes or charges aren't involved.
 
-The input parameters inside the object named salesDocument are listed below.
+The input parameters inside the object named **salesDocument** are listed below.
 
 | Name             	| Sub name             	| Type                          	| Required / Optional                             	| Description                                                                                                                                                                                                           	|
 |------------------	|----------------------	|-------------------------------	|-------------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
@@ -197,17 +197,17 @@ The entire cart object is returned as the response body. To check prices and dis
 |                	| NetPrice       	| decimal             	| Price * Quantity, net price of the line before applying discounts.                                                	|
 |                	| DiscountAmount 	| decimal             	| Discount amount.                                                                                                  	|
 |                	| TotalAmount    	| decimal             	| The final total pricing result of the line.                                                                       	|
-|                	| PriceLines     	| IList\<PriceLine\>    	| Price details, including the source of the price (base price, price adjustment, trade agreement), and the amount. 	|
+|                	| PriceLines     	| IList\<PriceLine\>    	| Price details, including the source of the price (base price, price adjustment, trade agreement) and the amount. 	|
 |                	| DiscountLines  	| IList\<DiscountLine\> 	| Discount details.                                                                                                 	|
 
 
 ## GetAvailablePromotions 
 
-Given a cart with several cart lines, this API returns all applicable discounts for the cart lines. 
+Given a cart with several cart lines, the *GetAvailablePromotions* API returns all applicable discounts for the cart lines. 
 
-The main use case scenario of this API is the cart page where the retailer wants to showcase applied discounts or available coupons for the current cart.
+The main use case scenario of the GetAvailablePromotions API is on the cart page, where retailers want to showcase applied discounts or available coupons for the current cart.
 
-The input parameters are listed below.
+The input parameters for the GetAvailablePromotions API are listed below.
 
 | Name        	| Type                	| Required / Optional 	| Description                                                      	|
 |-------------	|---------------------	|---------------------	|------------------------------------------------------------------	|
@@ -242,21 +242,21 @@ Sample response body:
 
 ## AddCoupons
 
-This API supports adding a list of coupons into a cart, and returns the cart object after coupons are added.
+The *AddCoupons* API supports adding a list of coupons to a cart, and returns the cart object after the coupons are added.
 
-The input parameters are listed below.
+The input parameters of the AddCoupons API are listed in the following table.
 
 | Name                 	| Type                	| Required / Optional 	| Description                                                                  	|
 |----------------------	|---------------------	|---------------------	|------------------------------------------------------------------------------	|
 | key                  	| string              	| Required            	| Cart ID.                                                                     	|
 | couponCodes          	| IEnumerable\<string\> 	| Required            	| Coupon codes to be added to the cart.                                        	|
-| isLegacyDiscountCode 	| bool                	| Optional            	| Set true to indicate the coupon is a legacy discount code. Default is false. 	|
+| isLegacyDiscountCode 	| bool                	| Optional            	| Set to **true** to indicate the coupon is a legacy discount code. Default value is **false**. 	|
 
 ## RemoveCoupons
 
-This API supports removing a list of coupons from a cart, and returns the cart object after coupons are removed.
+The *RemoveCoupons* API supports removing a list of coupons from a cart, and returns the cart object after coupons are removed.
 
-The input parameters are listed below.
+The input parameters of rhe RemoveCoupons API are listed in the following table.
 
 | Name                 	| Type                	| Required / Optional 	| Description                                                                  	|
 |----------------------	|---------------------	|---------------------	|------------------------------------------------------------------------------	|
