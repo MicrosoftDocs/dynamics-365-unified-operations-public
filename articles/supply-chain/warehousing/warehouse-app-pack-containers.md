@@ -173,15 +173,15 @@ In this example added as part of the page where the Warehouse Management mobile 
 1. In the **Select fields to send** section, set the following values for the empty row that has already been added there:
     - **Copy from Pack:** *Location*
     - **Paste in Create container:** *Location*
-    - **Auto submit** *Selected* - You don't want to confirm the value
+    - **Auto submit** *Selected* - You don't want to confirm the value in the Warehouse management mobile app
 1. Select **Add** to add one more row and set the following values:
     - **Copy from Pack:** *Shipment*
     - **Paste in Create container:** *Shipment*
-    - **Auto submit** *Selected* - You don't want to confirm the value
+    - **Auto submit** *Selected* - You don't want to confirm the value in the Warehouse management mobile app
 1. In the **Bring back from create container** section, set the following values for the empty row that has already been added there:
     - **Copy from Create container:** *Container ID*
     - **Paste in Pack:** *Container ID* 
-     - **Auto submit** *Selected* - You don't want to confirm the value <!-- Planned for 10.0.31 -->
+     - **Auto submit** *Selected* - You don't want to confirm the value in the Warehouse management mobile app <!-- Planned for 10.0.31 -->
    1. Select **OK** to close the dialog box.
 1. Close the page.
 
@@ -199,11 +199,11 @@ In this example added as part of the page where the Warehouse Management mobile 
 1. In the **Select fields to send** section, you can add data to send which can be used for further look up filtering capabilities:
     - **Copy from Pack:** *Location*
     - **Paste in Close container:** *Location*
-    - **Auto submit** *Cleared* - You do need to manually identify a container ID
+    - **Auto submit** *Cleared* - You do need to manually identify a container ID in the Warehouse management mobile app
 1. Select **Add** to add one more row and set the following values:
     - **Copy from Pack:** *Shipment*
     - **Paste in Close container:** *Shipment*
-    - **Auto submit** *Cleared* - You do need to manually identify a container ID
+    - **Auto submit** *Cleared* - You do need to manually identify a container ID in the Warehouse management mobile app
 1. In the **Bring back from create container** section don't add anything because you don't want to pass any values back from the detour menu item.
 1. Select **OK** to close the dialog box.
 1. Close the page.
@@ -219,7 +219,7 @@ for:
 ### Create the five "look up" menu items
 To create the different "Look up" menu items follow these steps.
 
-#### **Look up location**
+#### Create mobile device menu item **Look up location**
 Many different look up capabilities exists to look up packing locations. In this example a simple look up for locations related to a specific *Location profile* will be used to filter locations used for packing operations.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
@@ -495,7 +495,7 @@ In this example you perform the following setup:
 1. In the **Select fields to send** dialog box, in the **Send from Pack** section,  set the following value for the empty row that has already been added there:
     - **Copy from Pack** *Shipment*
     - **Paste in Look up item** *Shipment ID*
-    - **Auto submit** *Selected* - You don't want to confirm the value
+    - **Auto submit** *Selected* - You don't want to confirm the value in the Warehouse management mobile app
 1. In the **Bring back from Look up item** section, set the following value for the empty row that has already been added there:
     - **Copy from Look up item** *Item number*
     - **Paste in Pack** *Item*
