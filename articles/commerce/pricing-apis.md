@@ -4,30 +4,19 @@
 title: Commerce pricing APIs
 description: This article explains various pricing APIs provided by Commerce pricing engine.
 author: boycez
-ms.date: 07/14/2022
+ms.date: 08/10/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: global
-ms.search.industry: Retail, Commerce
 ms.author: boycez
 ms.search.validFrom: 2022-07-15
-ms.dyn365.ops.version: Application update 10.0.29
 
 ---
 
 # Commerce pricing APIs
+
+[!include [banner](../includes/banner.md)]
 
 Commerce pricing engine provides the following APIs that can be consumed by external applications to support various pricing scenarios.
 
@@ -37,7 +26,7 @@ Commerce pricing engine provides the following APIs that can be consumed by exte
 - **AddCoupons** – Adds coupons into a cart.
 - **RemoveCoupons** – Removes coupons from a cart.
 
-For more information about how to consume Retail Server APIs in external applications, please check [Consume Retail Server APIs in external applications](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/consume-retail-server-api).
+For more information about how to consume Retail Server APIs in external applications, please check [Consume Retail Server APIs in external applications](dev-itpro/consume-retail-server-api.md).
 
 ## GetActivePrices
 
@@ -45,17 +34,17 @@ Introduced in **10.0.4** release, this API gets a product’s calculated price i
 
 The main use case scenario of this API is the product details page where the retailer wants to showcase the best price including any effective discounts for a product.
 
-The input paramaters are listed below.
+The input parameters are listed below.
 
 | Name                                    	| Sub name      	| Type                                	| Required / Optional 	| Description                                                                                            	|
 |-----------------------------------------	|---------------	|-------------------------------------	|---------------------	|--------------------------------------------------------------------------------------------------------	|
 | projectDomain                           	|               	| ProjectionDomain                    	| Required            	|                                                                                                        	|
 |                                         	| ChannelId     	| long                                	| Required            	|                                                                                                        	|
 |                                         	| CatalogId     	| long                                	| Required            	|                                                                                                        	|
-| productIds                              	|               	| IEnumerable<long>                   	| Required            	| List of products to calculate prices.                                                                  	|
+| productIds                              	|               	| IEnumerable\<long\>                   	| Required            	| List of products to calculate prices.                                                                  	|
 | activeDate                              	|               	| DateTimeOffset                      	| Required            	| Date for calculating price.                                                                            	|
 | customerId                              	|               	| string                              	| Optional            	| Customer account number.                                                                               	|
-| affiliationLoyaltyTiers                 	|               	| IEnumerable<AffiliationLoyaltyTier> 	| Optional            	| Affiliation and loyalty tiers.                                                                         	|
+| affiliationLoyaltyTiers                 	|               	| IEnumerable\<AffiliationLoyaltyTier\> 	| Optional            	| Affiliation and loyalty tiers.                                                                         	|
 |                                         	| AffiliationId 	| long                                	| Required            	| Affiliation Id.                                                                                        	|
 |                                         	| LoyaltyTierId 	| long                                	| Optional            	| Loyalty tier Id.                                                                                       	|
 | includeSimpleDiscountsInContextualPrice 	|               	| bool                                	| Optional            	| Set true to include simple discounts in the pricing calculation. Default is false.                     	|
@@ -118,32 +107,32 @@ Sample response body:
 
 Introduced in **10.0.25** release, this API calculates prices and discounts for items with given quantities as they were bought together in an order. The pricing calculation behind this API considers both single-line and multi-lines discounts. 
 
-The mainline use case of this API is pricing calculation for scenarios where full cart context does not persist (such as sales quote). There are also scenarios in POS and e-commerce that could benefit from this capability to further entice customers to add products to cart as the price could be lowered when calculated as a set (like discrete bundles, linked or recommended products, products that have already been added to the cart, etc.)    
+The mainline use case of this API is pricing calculation for scenarios where full cart context doesn't persist (such as sales quote). There are also scenarios in POS and e-commerce that could benefit from this capability to further entice customers to add products to cart as the price could be lowered when calculated as a set (like discrete bundles, linked or recommended products, products that have already been added to the cart, etc.)    
 
 The data model for both request and response of this API is **Cart** (in the context of this API, we name it **SalesDocument**). Since most of the properties are optional, and only a few of them impact the pricing calculation, in order to avoid confusion, only those pricing related fields are listed below, and we recommend not to involve any other fields in the API request.
 
-The scope of the API is to calculate prices and discounts only, taxes or charges are not involved.
+The scope of the API is to calculate prices and discounts only, taxes or charges aren't involved.
 
 The input parameters inside the object named salesDocument are listed below.
 
 | Name             	| Sub name             	| Type                          	| Required / Optional                             	| Description                                                                                                                                                                                                           	|
 |------------------	|----------------------	|-------------------------------	|-------------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
 | Id               	|                      	| string                        	| Required                                        	| Identifier of the sales document.                                                                                                                                                                                     	|
-| CartLines        	|                      	| IList<CartLine>               	| Optional                                        	| List of lines to calculate prices and discounts.                                                                                                                                                                      	|
+| CartLines        	|                      	| IList\<CartLine\>               	| Optional                                        	| List of lines to calculate prices and discounts.                                                                                                                                                                      	|
 |                  	| ProductId            	| long                          	| Required in the scope of CartLine               	| Product record ID.                                                                                                                                                                                                    	|
 |                  	| ItemId               	| string                        	| Optional                                        	| Item identifier. Once provided, it must match the ProductId.                                                                                                                                                          	|
 |                  	| InventoryDimensionId 	| string                        	| Optional                                        	| Inventory dimension identifier. Once provided, the combination of ItemId and InventoryDimensionId must match the ProductId.                                                                                           	|
 |                  	| Quantity             	| decimal                       	| Required in the scope of CartLine               	| Quantity of the item.                                                                                                                                                                                                 	|
 |                  	| UnitOfMeasureSymbol  	| string                        	| Optional                                        	| Unit of the item. If not provided, the API by default uses the sale unit of the item.                                                                                                                                 	|
 | CustomerId       	|                      	| string                        	| Optional                                        	| Customer account number.                                                                                                                                                                                              	|
-| LoyaltyCardId    	|                      	| string                        	| Optional                                        	| Loyalty card identifier. The customer account of the loyalty card (if any) must match the CustomerId field value (if provided). The loyalty card will not be considered if it is not found, or its status is blocked. 	|
-| AffiliationLines 	|                      	| IList<AffiliationLoyaltyTier> 	| Optional                                        	| Affiliation loyalty tier lines. If CustomerId and/or LoyaltyCardId values are provided, their corresponding affiliation loyalty tier lines will be merged with those provided in AffiliationLines.                    	|
+| LoyaltyCardId    	|                      	| string                        	| Optional                                        	| Loyalty card identifier. The customer account of the loyalty card (if any) must match the CustomerId field value (if provided). The loyalty card won't be considered if it isn't found, or its status is blocked. 	|
+| AffiliationLines 	|                      	| IList\<AffiliationLoyaltyTier\> 	| Optional                                        	| Affiliation loyalty tier lines. If CustomerId and/or LoyaltyCardId values are provided, their corresponding affiliation loyalty tier lines will be merged with those provided in AffiliationLines.                    	|
 |                  	| AffiliationId        	| long                          	| Required in the scope of AffiliationLoyaltyTier 	| Affiliation record ID.                                                                                                                                                                                                	|
 |                  	| LoyaltyTierId        	| long                          	| Required in the scope of AffiliationLoyaltyTier 	| Loyalty tier record ID.                                                                                                                                                                                               	|
 |                  	| AffiliationTypeValue 	| int                           	| Required in the scope of AffiliationLoyaltyTier 	| The value that indicates whether the affiliation line is General type (0) or Loyalty type (1). If 0, the API takes AffiliationId as the identifier and ignores LoyaltyTierId. If 1, vice versa.                       	|
-|                  	| ReasonCodeLines      	| Collection<ReasonCodeLine>    	| Required in the scope of AffiliationLoyaltyTier 	| Reason code lines. No impact on pricing calculation but is required as part of AffiliationLoyaltyTier object.                                                                                                         	|
+|                  	| ReasonCodeLines      	| Collection\<ReasonCodeLine\>    	| Required in the scope of AffiliationLoyaltyTier 	| Reason code lines. No impact on pricing calculation but is required as part of AffiliationLoyaltyTier object.                                                                                                         	|
 |                  	| CustomerId           	| string                        	| Required in the scope of AffiliationLoyaltyTier 	| Customer account number.                                                                                                                                                                                              	|
-| Coupons          	|                      	| IList<Coupon>                 	| Optional                                        	| Coupons that are not applicable (e.g. inactive, expired, not found) will not be considered in pricing calculation.                                                                                                    	|
+| Coupons          	|                      	| IList\<Coupon\>                 	| Optional                                        	| Coupons that aren't applicable (e.g. inactive, expired, not found) won't be considered in pricing calculation.                                                                                                    	|
 |                  	| Code                 	| string                        	| Required in the scope of Coupon                 	| Coupon code.                                                                                                                                                                                                          	|
 |                  	| CodeId               	| string                        	| Optional                                        	| Coupon code identifier. Once provided, it must match Code.                                                                                                                                                            	|
 |                  	| DiscountOfferId      	| string                        	| Optional                                        	| Discount identifier. Once provided, it must match Code.                                                                                                                                                               	|
@@ -201,13 +190,13 @@ The entire cart object is returned as the response body. To check prices and dis
 | NetPrice       	|                	| decimal             	| Net price of the entire sales document before applying discounts.                                                 	|
 | DiscountAmount 	|                	| decimal             	| Total discount amount of the entire sales document.                                                               	|
 | TotalAmount    	|                	| decimal             	| Total amount of the entire sales document.                                                                        	|
-| CartLines      	|                	| IList<CartLine>     	| Calculated lines with price and discount details.                                                                 	|
+| CartLines      	|                	| IList\<CartLine\>     	| Calculated lines with price and discount details.                                                                 	|
 |                	| Price          	| decimal             	| Unit price of the item.                                                                                           	|
 |                	| NetPrice       	| decimal             	| Price * Quantity, net price of the line before applying discounts.                                                	|
 |                	| DiscountAmount 	| decimal             	| Discount amount.                                                                                                  	|
 |                	| TotalAmount    	| decimal             	| The final total pricing result of the line.                                                                       	|
-|                	| PriceLines     	| IList<PriceLine>    	| Price details, including the source of the price (base price, price adjustment, trade agreement), and the amount. 	|
-|                	| DiscountLines  	| IList<DiscountLine> 	| Discount details.                                                                                                 	|
+|                	| PriceLines     	| IList\<PriceLine\>    	| Price details, including the source of the price (base price, price adjustment, trade agreement), and the amount. 	|
+|                	| DiscountLines  	| IList\<DiscountLine\> 	| Discount details.                                                                                                 	|
 
 
 ## GetAvailablePromotions 
@@ -221,7 +210,7 @@ The input parameters are listed below.
 | Name        	| Type                	| Required / Optional 	| Description                                                      	|
 |-------------	|---------------------	|---------------------	|------------------------------------------------------------------	|
 | key         	| string              	| Required            	| Cart ID.                                                         	|
-| cartLineIds 	| IEnumerable<string> 	| Optional            	| Set this field to only return discounts for selected cart lines. 	|
+| cartLineIds 	| IEnumerable\<string\> 	| Optional            	| Set this field to only return discounts for selected cart lines. 	|
 
 Sample response body:
 
@@ -253,23 +242,23 @@ Sample response body:
 
 This API supports adding a list of coupons into a cart, and returns the cart object after coupons are added.
 
-The input paramaters are listed below.
+The input parameters are listed below.
 
 | Name                 	| Type                	| Required / Optional 	| Description                                                                  	|
 |----------------------	|---------------------	|---------------------	|------------------------------------------------------------------------------	|
 | key                  	| string              	| Required            	| Cart ID.                                                                     	|
-| couponCodes          	| IEnumerable<string> 	| Required            	| Coupon codes to be added to the cart.                                        	|
+| couponCodes          	| IEnumerable\<string\> 	| Required            	| Coupon codes to be added to the cart.                                        	|
 | isLegacyDiscountCode 	| bool                	| Optional            	| Set true to indicate the coupon is a legacy discount code. Default is false. 	|
 
 ## RemoveCoupons
 
 This API supports removing a list of coupons from a cart, and returns the cart object after coupons are removed.
 
-The input paramaters are listed below.
+The input parameters are listed below.
 
 | Name                 	| Type                	| Required / Optional 	| Description                                                                  	|
 |----------------------	|---------------------	|---------------------	|------------------------------------------------------------------------------	|
 | key                  	| string              	| Required            	| Cart ID.                                                                     	|
-| couponCodes          	| IEnumerable<string> 	| Required            	| Coupon codes to be removed from the cart.                                     |
+| couponCodes          	| IEnumerable\<string\> 	| Required            	| Coupon codes to be removed from the cart.                                     |
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
