@@ -305,9 +305,10 @@ Many different look up capabilities exists to look up shipments. In this example
 1. On the Action Pane, select **Save**. Then close the page.
 
 #### Look up item
-Many different look up capabilities exists to look up item information. You might find it relevant to filter on data related to current shipment and packing location. This can for example be done by using the [**Packing work**](packing-work.md) feature - or by joining to the closed put work linies for the work bring the inventory to packing areas.
+Many different look up capabilities exists to inquire item information. You might find it relevant to be able to filter based on wildcard search rather than this example using load lines.
+It might be beneficial uto use the [**Packing work**](packing-work.md) feature for look up- or joining to the closed put work lines for the work bringing the inventory to packing areas.
 
-In this example a simple look up enabling wildcard search via the *Search name* field will be used.
+In this example a simple look up will be filtered based on the already captured *Shipment ID* as part of the packing process.
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
 1. On the Action Pane, select **New** to add a mobile device menu item.
 1. Set the following values for the new item:
@@ -320,14 +321,14 @@ In this example a simple look up enabling wildcard search via the *Search name* 
 
     - **Activity code:** *Data inquiry*
     - **Use process guide:** *Yes* (This value is automatically selected.)
-    - **Table name:** *InventTable*
+    - **Table name:** *WHSLoadLine*
 
 1. On the Action Pane, select **Edit query** to define a query that is based on the selected base table (in this case, the location table. Note that you can join to related tables when needed).
-1. In the query editor, on the **Range** tab, add the following lines to the grid.
+1. In the query editor, on the **Range** tab, make sure only having the following line in the grid.
 
     | Table | Derived table | Field | Criteria |
     |---|---|---|---|
-    | Items | Items | Search name |  |
+    | Load details | Load details | Shipment ID |  |
     
 1. Select **OK**.
 
@@ -337,11 +338,10 @@ In this example a simple look up enabling wildcard search via the *Search name* 
 1. In addition to defining the query, you must select which fields will be shown on the cards on the inquiry list page. Therefore, on the Action Pane, select **Field list**.
 1. On the **Field list** page, set the following values:
     - **Display field 1:** *ItemId* (This field value will be used as the header for each card.)
-    - **Display field 2:** *itemName()*
-    - **Display field 3:** *grossWeight()*
-    - **Display field 4:** *inventUnitId()* 
-    - **Display field 5:** *ItemType*
-    - **Display field 6:** *NameAlias*
+    - **Display field 2:** *displayItemName()*
+    - **Display field 3:** *displayCustName()*
+    - **Display field 4:** *displayInventQty()* 
+    - **Display field 5:** *displayInventUOM()*
    
 1. On the Action Pane, select **Save**. Then close the page.
 
@@ -479,7 +479,7 @@ In this example you perform the following setup:
 1. In the **Add detour** dialog box, find and select the **Look up shipment** menu item that you previously created.
 1. Select **OK** to close the dialog box and add the selected menu item to the detours list.
 1. Select the new detour, and then select **Select fields to send** on the toolbar.
-1. In the **Select fields to send** dialog box, don't add anything to the **Send from Pack** section, because you don't want to pass any values to the detour menu item. However, in the **Bring back from Look up shipment** section, set the following value for the empty row that has already been added there:
+1. In the **Select fields to send** dialog box, don't add anything to the **Send from Pack** section, because you don't want to pass any values to the detour menu item. However, 1. In the **Bring back from Look up shipment** section, set the following value for the empty row that has already been added there:
     - **Copy from Look up shipment** *Shipment ID*
     - **Paste in Pack** *Shipment*
 1. Select **OK** to close the dialog box.
@@ -492,7 +492,11 @@ In this example you perform the following setup:
 1. In the **Add detour** dialog box, find and select the **Look up item** menu item that you previously created.
 1. Select **OK** to close the dialog box and add the selected menu item to the detours list.
 1. Select the new detour, and then select **Select fields to send** on the toolbar.
-1. In the **Select fields to send** dialog box, don't add anything to the **Send from Pack** section, because you don't want to pass any values to the detour menu item. However, in the **Bring back from Look up item** section, set the following value for the empty row that has already been added there:
+1. In the **Select fields to send** dialog box, in the **Send from Pack** section,  set the following value for the empty row that has already been added there:
+    - **Copy from Pack** *Shipment*
+    - **Paste in Look up item** *Shipment ID*
+    - **Auto submit** *Selected* - You don't want to confirm the value
+1. In the **Bring back from Look up item** section, set the following value for the empty row that has already been added there:
     - **Copy from Look up item** *Item number*
     - **Paste in Pack** *Item*
 1. Select **OK** to close the dialog box.
@@ -512,8 +516,29 @@ In this example you perform the following setup:
 1. Select **OK** to close the dialog box.
 1. Close the page.
 
- 
-#### Add **Look up container** as detour
+#### Add **Look up container** as detour for packing
+1. Go to **Warehouse management \> Setup > Mobile device \> Mobile device steps**.
+1. In the **Filter** field, enter *ContainerIdToPack*. Then select *Step ID: "ContainerIdToPack"* in the drop-down list.
+1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Pack*. Then select **OK** to close the dialog box.
+1. On the details page for the new step configuration (**Pack : ContainerIdToPack**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
+1. In the **Add detour** dialog box, find and select the **Look up container** menu item that you previously created.
+1. Select **OK** to close the dialog box and add the selected menu item to the detours list.
+1. Select the new detour, and then select **Select fields to send** on the toolbar.
+1. In the **Select fields to send** dialog box, in the **Send from Create container** section,  set the following value for the empty row that has already been added there:
+    - **Copy from Pack** *Location*
+    - **Paste in Look up container** *Location*
+    - **Auto submit** *Selected* - You don't want to confirm the value
+1.  Add a new record with:
+     - **Copy from Pack** *Shipment*
+    - **Paste in Look up container** *Shipment ID*
+    - **Auto submit** *Selected* - You don't want to confirm the value
+1. In the **Bring back from Look up container** section, set the following value for the empty row that has already been added there:
+    - **Copy from Look up container** *Container ID*
+    - **Paste in Pack** *Container ID*
+1. Select **OK** to close the dialog box.
+1. Close the page.
+
+#### Add **Look up container** as detour for container creation
 1. Go to **Warehouse management \> Setup > Mobile device \> Mobile device steps**.
 1. In the **Filter** field, enter *ContainerId*. Then select *Step ID: "ContainerId"* in the drop-down list.
 1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Close container*. Then select **OK** to close the dialog box.
