@@ -1728,6 +1728,8 @@
             href: general-ledger/sales-tax-calculation-on-general-journal.md          
           - name: Calculate and adjust sales tax on a vendor invoice
             href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+          - name: Adjust sales tax via general journals
+            href: general-ledger/adjust-sales-tax-via-general-journals.md
           - name: Enable delayed tax calculation on journal
             href: general-ledger/enable-delayed-tax-calculation.md         
           - name: Create a sales tax payment
@@ -1784,6 +1786,8 @@
               href: general-ledger/global-withholding-tax-overview.md
             - name: Set up global withholding tax
               href: general-ledger/set-up-global-withholding-tax.md
+            - name: Enable the global withholding tax currency exchange rate type and date type setup
+              href: general-ledger/global-withholding-tax-currency-exchange-rate-date-type-setup.md
             - name: Withholding tax in purchase transactions
               href: general-ledger/withholding-tax-in-purchase-transactions.md
             - name: Withholding tax in sales transactions
