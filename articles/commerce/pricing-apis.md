@@ -2,7 +2,7 @@
 # required metadata
 
 title: Commerce pricing APIs
-description: This article explains various pricing APIs provided by Commerce pricing engine.
+description: This article describes various pricing APIs provided by the Microsoft Dynamics 365 Commerce pricing engine.
 author: boycez
 ms.date: 08/10/2022
 ms.topic: article
@@ -18,23 +18,25 @@ ms.search.validFrom: 2022-07-15
 
 [!include [banner](../includes/banner.md)]
 
-Commerce pricing engine provides the following APIs that can be consumed by external applications to support various pricing scenarios.
+This article describes various pricing APIs provided by the Microsoft Dynamics 365 Commerce pricing engine.
 
-- **GetActivePrices** – Gets a product’s calculated price including simple discounts.
+The Dynamics 365 Commerce pricing engine provides the following APIs that can be consumed by external applications to support various pricing scenarios.
+
+- **GetActivePrices** – Gets a product’s calculated price, including simple discounts.
 - **CalculateSalesDocument** – Calculates prices and discounts for products with quantities as if they were bought together.
-- **GetAvailablePromotions** – Gets applicable discounts for products in cart. 
-- **AddCoupons** – Adds coupons into a cart.
+- **GetAvailablePromotions** – Gets applicable discounts for products in the cart. 
+- **AddCoupons** – Adds coupons to a cart.
 - **RemoveCoupons** – Removes coupons from a cart.
 
-For more information about how to consume Retail Server APIs in external applications, please check [Consume Retail Server APIs in external applications](dev-itpro/consume-retail-server-api.md).
+For more information about how to consume Retail Server APIs in external applications, see [Consume Retail Server APIs in external applications](dev-itpro/consume-retail-server-api.md).
 
 ## GetActivePrices
 
-Introduced in **10.0.4** release, this API gets a product’s calculated price including simple discounts. The API can also take a list of products as input and query the price of **individual product** in bulk. This API doesn’t calculate multi-line discounts and assumes each product in the API request has quantity of one (1). This API supports Employee, Customer, Anonymous and Application Commerce roles.
+Introduced in the Commerce version 10.0.4 release, the *GetActivePrices* API gets a product's calculated price, including simple discounts. The API can also take a list of products as input and query the price of individual product in bulk. This API doesn't calculate multiline discounts and assumes that each product in an API request has quantity of one (1). This API supports the Employee, Customer, Anonymous, and Application Commerce roles.
 
-The main use case scenario of this API is the product details page where the retailer wants to showcase the best price including any effective discounts for a product.
+The main use case scenario of the GetActivePrices API is the product details page (PDP), where retailers wants to showcase the best price for a product including any effective discounts.
 
-The input parameters are listed below.
+The input parameters for the the GetActivePrices API are listed in the following table.
 
 | Name                                    	| Sub name      	| Type                                	| Required / Optional 	| Description                                                                                            	|
 |-----------------------------------------	|---------------	|-------------------------------------	|---------------------	|--------------------------------------------------------------------------------------------------------	|
@@ -105,9 +107,9 @@ Sample response body:
 
 ## CalculateSalesDocument
 
-Introduced in **10.0.25** release, this API calculates prices and discounts for products with given quantities as they were bought together in an order. The pricing calculation behind this API considers both single-line and multi-lines discounts. 
+Introduced in the Commerce version 10.0.25 release, the *CalculateSalesDocument* API calculates prices and discounts for products with given quantities as they were bought together in an order. The pricing calculation behind the CalculateSalesDocument API considers both single-line and multi-lines discounts. 
 
-The mainline use case of this API is pricing calculation for scenarios where full cart context doesn't persist (such as sales quote). There are also scenarios in POS and e-commerce that could benefit from this capability to further entice customers to add products to cart as the price could be lowered when calculated as a set (like discrete bundles, linked or recommended products, products that have already been added to the cart, etc.)    
+The mainline use case of the CalculateSalesDocument API is pricing calculation for scenarios where full cart context doesn't persist (such as sales quote). There are also scenarios in point of sale (POS) and e-commerce that could benefit from this capability to further entice customers to add products to cart as the price could be lowered when calculated as a set (for example, discrete bundles, linked or recommended products, or products that have already been added to the cart).    
 
 The data model for both request and response of this API is **Cart** (in the context of this API, we name it **SalesDocument**). Since most of the properties are optional, and only a few of them impact the pricing calculation, in order to avoid confusion, only those pricing related fields are listed below, and we recommend not to involve any other fields in the API request.
 
