@@ -35,7 +35,7 @@ This article assumes that you have a working knowledge of [Azure Pipelines](/azu
 Starting with version 0.2.1239020 of the **Dynamics 365 finance and operations tools** extension, it is possible to deploy packages to local business data environments on-premises. You should use at least version 3.\* of the  **Dynamics Lifecycle Services (LCS) Asset Deployment** task. You will then be able to select **Software deployable package for on-premises environments** under the **Type of asset** field.
 
 > [!NOTE]
-> As with cloud environments, it is not possible to use this task to deploy to production environments.
+> The entire pipeline run will take more than 1 hour, so you shouldn't use the free Microsoft-Hosted agents as they will timeout.
 
 ## Dynamics 365 Commerce Cloud Scale Unit (CSU) extension and e-Commerce package deployment
 

@@ -254,12 +254,16 @@ Self-signed certificates can be used only for testing purposes. For the sake of 
 > [!IMPORTANT]
 > Microsoft plans to discontinue support for the generation of self-signed certificates through the setup scripts, in favor of automatic certificate creation through AD CS.
 
-Here are the recommended settings for certificates:
+#### General certificate settings
 
-- **Signature algorithm:** sha256RSA
-- **Signature hash algorithm:** sha256
-- **Public key:** RSA (2048 bits)
-- **Thumbprint algorithm:** sha1
+| Setting                  | Value           | Requirement |
+|--------------------------|-----------------|-------------|
+| Signature algorithm      | sha256RSA       | recommended |
+| Signature hash algorithm | sha256          | recommended |
+| Public key               | RSA (2048 bits) | mandatory   |
+| Thumbprint algorithm     | sha1            | recommended |
+
+#### Overview of required certificates
 
 | Purpose                                      | Explanation | Additional requirements |
 |----------------------------------------------|-------------|-------------------------|
@@ -420,6 +424,7 @@ For each Service Fabric node type, the infrastructure\\D365FO-OP\\NodeTopologyDe
 - Which permissions an account requires for a machine
 - Whether the .NET Framework should be configured to use the operating system's default Transport Layer Security (TLS) protocol.
 - Whether insecure TLS and SSL protocols should be disabled.
+- Whether insecure TLS ciphers should be disabled.
 
 For each database, the infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml configuration file describes the following details:
 
@@ -803,6 +808,10 @@ You can verify that everything has been configured correctly by running the foll
 
     | Release | Database |
     |---------|----------|
+    | Version 10.0.26 (with Platform update 50) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.26 Demo Data |
+    | Version 10.0.26 (with Platform update 50) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.26 Empty Data |
+    | Version 10.0.23 (with Platform update 47) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.23 Demo Data |
+    | Version 10.0.23 (with Platform update 47) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.23 Empty Data |
     | Version 10.0.21 (with Platform update 45) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.21 Demo Data |
     | Version 10.0.21 (with Platform update 45) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.21 Empty Data |
     | Version 10.0.20 (with Platform update 44) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.20 Demo Data |
@@ -970,6 +979,8 @@ Finance + Operations requires additional configuration of AD FS, beyond the defa
 
     > [!NOTE]
     > These commands can only be run on an AD FS server running Windows Server 2019 or later. AD FS on Windows Server 2016 has been deprecated. For more information see [Microsoft Dynamics 365 Finance + Operations (on-premises) supported software](onprem-compatibility.md#active-directory-federation-services-ad-fs).
+
+5. Restart the AD FS service so that the settings are applied correctly.
 
 Before AD FS can trust Finance + Operations for the exchange of authentication, various application entries must be registered under an AD FS application group in AD FS. To speed up the setup process and help reduce errors, you can use the Publish-ADFSApplicationGroup.ps1 script for registration. Run the script by using a user account that has enough permissions to administer AD FS. (For example, use an administrator account.)
 
