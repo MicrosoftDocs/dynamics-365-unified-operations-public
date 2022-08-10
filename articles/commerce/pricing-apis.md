@@ -34,9 +34,9 @@ For more information about how to consume Retail Server APIs in external applica
 
 Introduced in the Commerce version 10.0.4 release, the *GetActivePrices* API gets a product's calculated price, including simple discounts. The API can also take a list of products as input and query the price of individual product in bulk. This API doesn't calculate multiline discounts and assumes that each product in an API request has quantity of one (1). This API supports the Employee, Customer, Anonymous, and Application Commerce roles.
 
-The main use case scenario of the GetActivePrices API is the product details page (PDP), where retailers wants to showcase the best price for a product including any effective discounts.
+The main use case scenario of the GetActivePrices API is the product details page (PDP), where retailers want to showcase the best price for a product including any effective discounts.
 
-The input parameters for the the GetActivePrices API are listed in the following table.
+The input parameters for the GetActivePrices API are listed in the following table.
 
 | Name                                    	| Sub name      	| Type                                	| Required / Optional 	| Description                                                                                            	|
 |-----------------------------------------	|---------------	|-------------------------------------	|---------------------	|--------------------------------------------------------------------------------------------------------	|
@@ -256,7 +256,7 @@ The input parameters of the AddCoupons API are listed in the following table.
 
 The *RemoveCoupons* API supports removing a list of coupons from a cart, and returns the cart object after coupons are removed.
 
-The input parameters of rhe RemoveCoupons API are listed in the following table.
+The input parameters of the RemoveCoupons API are listed in the following table.
 
 | Name                 	| Type                	| Required / Optional 	| Description                                                                  	|
 |----------------------	|---------------------	|---------------------	|------------------------------------------------------------------------------	|
