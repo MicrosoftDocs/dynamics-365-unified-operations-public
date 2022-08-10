@@ -84,7 +84,7 @@ The **Total discount amount** operation allows POS users to enter a discount amo
 
 ## Total discount percent
 
-The **Total discount percent** operation allows POS users to enter a discount percentage for a transaction. This operation only applies to discountable items and respects the **Maximum discount total percentage** specified in the POS permission group for the user. When the entered value exceeds the limit, the operation is blocked, and no permission override flow is triggered. Applying a total discount percentage to a cart mixed of sales and return items is not yet supported.
+The **Total discount percent** operation allows POS users to enter a discount percentage for a transaction. This operation only applies to discountable items and respects the **Maximum total discount percentage** specified in the POS permission group for the user. When the entered value exceeds the limit, the operation is blocked, and no permission override flow is triggered. Applying a total discount percentage to a cart mixed of sales and return items is not yet supported.
 
 ## Remove system discounts from transaction
 
