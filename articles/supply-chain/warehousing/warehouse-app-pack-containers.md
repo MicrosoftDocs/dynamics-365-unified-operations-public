@@ -261,7 +261,7 @@ Many different look up capabilities exists to look up packing locations. In this
 1. On the Action Pane, select **Save**. Then close the page.
 
 
-#### Look up shipment
+#### Create mobile device menu item Look up shipment
 Many different look up capabilities exists to look up shipments. In this example a simple look up for active shipments will be used.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
@@ -304,7 +304,7 @@ Many different look up capabilities exists to look up shipments. In this example
 
 1. On the Action Pane, select **Save**. Then close the page.
 
-#### Look up item
+#### Create mobile device menu item Look up item
 Many different look up capabilities exists to inquire item information. You might find it relevant to be able to filter based on wildcard search rather than this example using load lines.
 It might be beneficial uto use the [**Packing work**](packing-work.md) feature for look up- or joining to the closed put work lines for the work bringing the inventory to packing areas.
 
@@ -345,7 +345,7 @@ In this example a simple look up will be filtered based on the already captured 
    
 1. On the Action Pane, select **Save**. Then close the page.
 
-#### Look up container type
+#### Create mobile device menu item Look up container type
 Many different look up capabilities exists to look up container types. In this example all container types will get included, but it might make sense to filter based on *Container group ID* by joining to *Container group details*. <!--check--> or other entities.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
@@ -386,7 +386,7 @@ The "*" indicates that all container types will get displayed.
 If you want to specify how the list will be sorted, you can set up the sorting on the **Sorting** tab. In this example the *Maximum volume* field could be a candidate.
 
 
-#### Look up container
+#### Create mobile device menu item Look up container
 Many different look up capabilities exists to look up containers. In this example, the new menu item is configured to find active containers on the current packing location related to the current shipment getting packed.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device menu items**.
@@ -431,7 +431,6 @@ If you want to specify how the list will be sorted, you can set up the sorting o
 
 1. On the Action Pane, select **Save**. Then close the page.
 
-
 ### Add the new mobile device menu items to a menu
 Your new mobile device menu items are now ready to be added to the mobile device menu. This task must be completed before the menu items can be used as part of a detour process. In this example, you will create a new submenu and add the new menu items to it.
 
@@ -454,6 +453,7 @@ In this example you perform the following setup:
 - Add **Look up location** into the **Pack - Scan packing location** step
 - Add **Look up shipment** into the **Pack - Scan shipment** step
 - Add **Look up item** into the **Pack - Scan item** step
+- Add **Look up container** into the **Pack - Scan container to pack** step
 - Add **Look up container type** into the **Create container - Scan container type** step
 - Add **Look up container** into the **Close container - Scan container** step
 
@@ -502,20 +502,6 @@ In this example you perform the following setup:
 1. Select **OK** to close the dialog box.
 1. Close the page.
 
-#### Add **Look up container type** as detour
-1. Go to **Warehouse management \> Setup > Mobile device \> Mobile device steps**.
-1. In the **Filter** field, enter *ContainerTypeToCreateContainer*. Then select *Step ID: "ContainerTypeToCreateContainer"* in the drop-down list.
-1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Create container*. Then select **OK** to close the dialog box.
-1. On the details page for the new step configuration (**Create container : ContainerTypeToCreateContainer**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
-1. In the **Add detour** dialog box, find and select the **Look up container type** menu item that you previously created.
-1. Select **OK** to close the dialog box and add the selected menu item to the detours list.
-1. Select the new detour, and then select **Select fields to send** on the toolbar.
-1. In the **Select fields to send** dialog box, don't add anything to the **Send from Create container** section, because you don't want to pass any values to the detour menu item. However, in the **Bring back from Look up container type** section, set the following value for the empty row that has already been added there:
-    - **Copy from Look up container type** *Container type code*
-    - **Paste in Create container** *Container type code*
-1. Select **OK** to close the dialog box.
-1. Close the page.
-
 #### Add **Look up container** as detour for packing
 1. Go to **Warehouse management \> Setup > Mobile device \> Mobile device steps**.
 1. In the **Filter** field, enter *ContainerIdToPack*. Then select *Step ID: "ContainerIdToPack"* in the drop-down list.
@@ -535,6 +521,20 @@ In this example you perform the following setup:
 1. In the **Bring back from Look up container** section, set the following value for the empty row that has already been added there:
     - **Copy from Look up container** *Container ID*
     - **Paste in Pack** *Container ID*
+1. Select **OK** to close the dialog box.
+1. Close the page.
+
+#### Add **Look up container type** as detour
+1. Go to **Warehouse management \> Setup > Mobile device \> Mobile device steps**.
+1. In the **Filter** field, enter *ContainerTypeToCreateContainer*. Then select *Step ID: "ContainerTypeToCreateContainer"* in the drop-down list.
+1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Create container*. Then select **OK** to close the dialog box.
+1. On the details page for the new step configuration (**Create container : ContainerTypeToCreateContainer**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
+1. In the **Add detour** dialog box, find and select the **Look up container type** menu item that you previously created.
+1. Select **OK** to close the dialog box and add the selected menu item to the detours list.
+1. Select the new detour, and then select **Select fields to send** on the toolbar.
+1. In the **Select fields to send** dialog box, don't add anything to the **Send from Create container** section, because you don't want to pass any values to the detour menu item. However, in the **Bring back from Look up container type** section, set the following value for the empty row that has already been added there:
+    - **Copy from Look up container type** *Container type code*
+    - **Paste in Create container** *Container type code*
 1. Select **OK** to close the dialog box.
 1. Close the page.
 
