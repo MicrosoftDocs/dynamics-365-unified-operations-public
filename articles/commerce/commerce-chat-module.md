@@ -4,7 +4,7 @@
 title: Commerce Chat with Omnichannel for Customer Service module
 description: This article describes the Commerce Chat with Omnichannel for Customer Service module in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/10/2022
+ms.date: 08/12/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -69,10 +69,10 @@ To add the chat module to your site's header fragment in Commerce site builder, 
 
 | Module property| Description  |
 | ------------- |--------------|
-| Script source | From the chat-widget script source, locate **src** and use its value for this property. |
-| Data application id      | From the chat-widget script source, locate **data-app-id** and use its value for this property. |
-| Data organization id      | From the chat-widget script source, locate **data-org-id** and use its value for this property. |
-| Data organization url     | From the chat-widget script source, locate **data-org-url** and use its value for this property. |
+| Script source | From the chat widget script source, locate **src** and use its value for this property. |
+| Data application ID      | From the chat widget script source, locate **data-app-id** and use its value for this property. |
+| Data organization ID      | From the chat widget script source, locate **data-org-id** and use its value for this property. |
+| Data organization URL     | From the chat widget script source, locate **data-org-url** and use its value for this property. |
 
 ![Creating a Commerce Chat module fragment in Commerce site builder](media/Commerce-chat-creating-new-fragment.png)
 ![Adding a fragment to a header fragment in Commerce Site Builder](media/Commerce-chat-adding-fragment-to-header-fragment.png)
