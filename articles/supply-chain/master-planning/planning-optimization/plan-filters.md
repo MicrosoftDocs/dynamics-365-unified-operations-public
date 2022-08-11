@@ -18,9 +18,7 @@ ms.dyn365.ops.version: AX 10.0.5
 With Planning Optimization, you can set up various filters to limit the set of items to include in a planning run so that not all items are planned. There are two ways to limit the set of items that are planned:
 
 - Plan filters, which are set up on the master plan itself.
-- Runtime filters, where you use options in the Planning Optimization run dialog to select items and BOM levels to include in the run.
-
-<!-- KFM: Do we now have a third way? (Select manufactured items) -->
+- Runtime filters, where you use options in the **Planning Optimization** run dialog to select items and BOM levels to include in the run.
 
 ## Apply a plan filter
 
@@ -28,17 +26,38 @@ With Planning Optimization, you can set up various filters to limit the set of i
 
 *Plan filters* are useful when you want to limit a plan to a specific group of items and make sure that no other items are included as part of the resulting master planning. When defined, the plan filter is always applied during a master planning run that uses that plan.
 
-You access the plan filter from the **Master plans** page when you are using Planning Optimization.
+You access the plan filter from the **Master plans** page when you are using Planning Optimization. 
 
 <!-- KFM: How can I set a plan filter? Instructions needed. -->
 
-## Apply a runtime filter
+> [!NOTE]
+> If you set a plan filter on the plan that is selected as the **Current dynamic master plan** on the **Master planning parameters** page, then that filter will apply each time the dynamic plan runs. For example, if the net requirements are updated for an item that isn't part of the plan filter, no result will be generated.
 
-<!-- KFM: How do I set the runtime filter? Instructions needed. -->
+## Apply a runtime filter and set BOM levels to include
 
-## Combine plan and runtime filters
+You set up the *runtime filter* for a job from the **Planning Optimization** run dialog. The runtime filter applies just to the job that you launch or schedule from the dialog and is combined with the plan filter using intersection logic (see examples later in this article). You also use the **Planning Optimization** run dialog to control the number levels of BOM components and subcomponents to include for manufactured items that pass the combined filters. For recurring jobs, the runtime filter and BOM levels defined when you set up the job are applied each time it runs.
 
-If you apply both a plan filter and a runtime filter during a master planning run, then only the intersection of the two filters will be included in the run.
+Use the following procedure to set up the runtime filter and BOM levels for a master planning batch job.
+
+1. Go to **Master planning \> Master planning \> Run**.
+1. The **Planning Optimization** dialog opens.
+1. Expand the **Parameters** FastTab and make the following settings:
+    - **Master plan** – Select the master plan you want to run.
+    - **Track processing time** – Choose wether to record the processing time required to complete each task.
+    - **Number of threads** – Enter the number of child threads to use to parallelize and speed up master planning. Numbers greater than 0 are only allowed when running with batch processing.
+    - **Comment** – Add a comment to describe the purpose of this job.
+1. Expand the **Records to include** FastTab and make the following settings:
+    - **Filter** – Select this link to open the standard query editor, where you can add filters that limit the set of products to include in the current planning job. This is the *runtime filter* mentioned elsewhere in this topic.
+    - **Include all BOM levels** – For manufactured items that have a bill of material (BOM), it's often convenient to plan all BOM components together with the main item to ensure that all the required components are available when production begins. Set this to *Yes* to include all BOM levels for items that pass both the runtime filter and plan filter. Set this to *No* to limit the number of BOM levels to include and then use the **BOM levels to include** setting to specify the maximum number of BOM levels to include.
+    - **BOM levels to include** – When **Include all BOM levels** is set to *No*, use this setting to establish the number of BOM levels to include. For example:
+        - Set this field to zero to ignore all BOM components.
+        - Set this field to one to include supply for BOM components.
+        - Set this field to two to include supply for BOM components and their derived BOM components.
+1. Expand the **Run in the background** FastTab and set recurrence and other batch options as usual. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management.
+
+## Combine plan filters and runtime filters
+
+If you apply both a plan filter and a runtime filter during a master planning run, then only the intersection of the two filters will be included in the run. 
 
 To see how the plan and runtime filters combine, consider this example. You have a plan with a plan filter is set up to include items A, B, and C. You then run master planning run several times using the same plan, but with a different runtime filter each time. The results are as follows:
 
@@ -47,24 +66,7 @@ To see how the plan and runtime filters combine, consider this example. You have
 - **Run 3: Runtime filter includes item B** – Only item B is included and the previous planning output for item A is kept.
 - **Run 4: Runtime filter includes all items (blank filter)** – Items A, B, and C are included and the previous planning output for items A and B is overwritten.
 
-> [!NOTE]
-> If you set a plan filter on the plan that is selected as the **Current dynamic master plan** on the **Master planning parameters** page, then that filter will apply each time the dynamic plan runs. For example, if the net requirements are updated for an item that isn't part of the plan filter, no result will be generated.
-
-## Run planning for selected manufactured items
-
-For manufactured items that have a bill of material (BOM), it's often convenient to plan all BOM components together with the main item to ensure that all the required components are available when production begins.
-
-Use options on the Planning Optimization run dialog <!-- KFM: How do I open this dialog? What is its name? Does this work only with PO? What are the options called? --> to select which items should be added <!--KFM: Is this referring to the runtime filter? --> and choose whether the BOM components should be included in the plan.
-
-- To include all components, set **Include all BOM levels** to *Yes*.
-- To limit the set of components to plan, set **Include all BOM levels** to *No* and then use the **BOM levels to include** setting to specify the maximum number of BOM levels to include (in addition to items included in the filters). For example:
-  - Set **BOM levels to include** to zero to ignore all BOM components that are not part of the filter;
-  - Set **BOM levels to include** to one to include supply for BOM components
-  - Set **BOM levels to include** to two to include supply for BOM components and their derived BOM components.
-
-## Use plan filters in combination with selected manufactured items
-
-When a plan filter has been defined on the plan and a set of items has been added on the Planning Optimization run dialog, Planning Optimization will create supply for the combination of both sets of items. In other words, planning will be done both for the items specified in the plan filter and the items specified in the run filter. <!-- KFM: So, unlike with the runtime filter, the "selected manufacturing items" add to the plan (we have union rather than intersection). Is that right? Can we have a runtime filter too? -->
+The system will also include all the relevant BOM components and subcomponents for the manufactured products found by the combined filters, as specified by the BOM level settings made in the **Planning Optimization** run dialog when you set up the job.
 
 ## Related resources
 
