@@ -71,7 +71,7 @@ Before you can complete this procedure, demo data must be installed in your envi
 6. In the **Display order** field, enter a number.
 7. In the tree, select **Fashion \> Womenswear \> Tops**.
 
-    Likewise, you can define the sort order for the sub-categories.
+Likewise, you can define the sort order for the sub-categories.
 
 8. In the tree, select **Fashion \> Menswear \> Casual Shirts**.
 9. In the **Display order** field, enter a number.
@@ -88,7 +88,11 @@ The display order for the channel navigation hierarchy is reflected in HQ, catal
 ![POS with custom sorted categories.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> By default the custom sort order feature is turned off. To learn how to turn on this feature and other features, see [Feature management](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+> By default the 'Enable display order for merchandising entities' is turned off, ensure to turn it on. To learn how to turn on this feature and other features, see [Feature management](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
+> Upon turning on the feature 'Enable display order for merchandising entities', ensure to run 'Global configuration -1110' CDX job from distribution schedule. 
+> Additionally, if you may notice that your categories order is not getting updated in POS, try re-activating the device as the category information is fetched at time of device activation and thus, it needs to re-fetch the category information with updated display orders. 
+
+ 1. Add the actual feature name in the Doc and 2. mention the job that needs to be run and 3 a note that device activation would be required to change the category display order or wait for cache to expire
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
