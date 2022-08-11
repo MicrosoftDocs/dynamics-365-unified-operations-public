@@ -59,7 +59,7 @@ To see the Planning Optimization fit analysis result, go to **Master planning** 
 The following table shows the various results that can be shown after a fit analysis. Number signs (*\#*) will be replaced with a number that indicates the number of records that have the listed issue.
 
 > [!IMPORTANT]
-> For features that are not yet supported, the following table provides expected availability dates that are estimated based on our current roadmap. These dates are uncommitted and are subject to change without notice.
+> For features that are not yet supported, the following table provides expected availability information that is estimated based on our current roadmap. These estimates are subject to change without notice.
 
 | Feature | Listed issue | Explanation | Expected availability |
 | --- | --- | --- | --- |
