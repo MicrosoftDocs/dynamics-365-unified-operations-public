@@ -31,15 +31,15 @@ ms.dyn365.ops.version: Version 1611
 
 [!Include [banner](includes/banner.md)]
 
-Retailers consider product discovery a primary tool for customer interaction across all channels. Various functionality can help customers easily discover products. For example, they can browse categories, search, and filter.
+Retailers consider product discovery a primary tool for customer interaction across all channels. There are several features that can help customers easily discover products. For example, customers can browse categories, search, and filter.
 
 This article explains the concepts that are related to controlling the display order for various merchandising-related entities. It also explains how to change the sort order.
 
 ## Overview
 
-The support for sorting various merchandising-related entities has been enhanced. This support is now better aligned with existing customer scenarios that previously required extensions from implementation partners.
+In Commerce, sorting various merchadising-relating entities is aligned with existing customer scenarios and no longer requires extensions from implementation partners.
 
-In versions of Retail that are earlier than version 10.0.5, the sort order for categories in the navigation hierarchy was alphabetical. The new custom sort order functionality lets merchandising managers configure the sort order for various merchandising-related entities across all end-user clients. These clients include headquarters (HQ) and call centers.
+In Commerce versions 10.0.5 and earlier, the sort order for categories in the navigation hierarchy was alphabetical. The current custom sort order functionality enbles merchandising managers to configure the sort order for various merchandising-related entities across all end-user clients. These clients include headquarters (HQ) and call centers.
 
 ## Configure the display order for categories in the product hierarchy
 
@@ -67,11 +67,11 @@ Before you can complete this procedure, demo data must be installed in your envi
 2. In the list, select the **Fashion navigation** hierarchy.
 3. Click **Edit category hierarchy**.
 4. Click **Edit**.
-5. In the tree, select **Fashion \> Womenswear \> Womens Shoes**.
+5. In the tree, select **Fashion \> Womenswear \> Women's Shoes**.
 6. In the **Display order** field, enter a number.
 7. In the tree, select **Fashion \> Womenswear \> Tops**.
 
-Likewise, you can define the sort order for the sub-categories.
+Likewise, you can define the sort order for the subcategories.
 
 8. In the tree, select **Fashion \> Menswear \> Casual Shirts**.
 9. In the **Display order** field, enter a number.
