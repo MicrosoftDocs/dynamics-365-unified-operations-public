@@ -375,7 +375,7 @@ The "*" indicates that all container types will get displayed.
     - **Display field 1:** *ContainerTypeCode* (This field value will be used as the header for each card.)
     - **Display field 2:** *Description*
     - **Display field 3:** *MaxVolume*
-    - **Display field 4:** *MaxVolume*
+    - **Display field 4:** *MaxWeight*
     - **Display field 5:** *Height*
     - **Display field 6:** *Length*
     - **Display field 7:** *Width*
@@ -653,6 +653,6 @@ In the following table you can see which processes are supported when using the 
 |Pack (all shipment items)                                    | No        | Each item number must be identified and packed individually                                                                           |
 |Pack items (based on defined quantity)                       | (Yes)     | But only AFTER the item number has been identified by updating the quantity as part of the **Pack inventory into containers** process |
 |Container group license plate ID with delayed work creation  | No        | It is not possible to specify a grouping license plate ID                                                                             |
-
+|Container type creation                                      | No        |                                                                                                                                       |
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
