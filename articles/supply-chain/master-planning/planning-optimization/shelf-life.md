@@ -109,7 +109,7 @@ Use the following procedure to view or set the item model group that a product b
 1. Open the product that you want to inspect or edit.
 1. On the **General** FastTab, set the **Item model group** field to a group where the **FEFO date-controlled** checkbox is selected.
 
-## Example 1: Simple FEFO, 10-day period, 0 days of lead time
+## Example 1: Simple FEFO, 10-day period, zero days of lead time
 
 This example shows a basic example of shelf life, where pegging between the supply orders and the demand is done to satisfy the following goals of the system:
 
@@ -162,7 +162,7 @@ The following table summarizes the result.
 
 The following illustration shows the timeline for this example.
 
-![Example 1: Simple FEFO, 10-day period, 0 days of lead time.](media/fefo-example-1.png "Example 1: Simple FEFO, 10-day period, 0 days of lead time")
+![Example 1: Simple FEFO, 10-day period, zero days of lead time.](media/fefo-example-1.png "Example 1: Simple FEFO, 10-day period, zero days of lead time")
 
 ## Example 2: Simple FEFO, requirement, three days of lead time
 
