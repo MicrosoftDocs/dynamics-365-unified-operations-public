@@ -39,7 +39,7 @@ This article explains the concepts that are related to controlling the display o
 
 In Commerce, sorting various merchadising-relating entities is aligned with existing customer scenarios and no longer requires extensions from implementation partners.
 
-In Commerce versions 10.0.5 and earlier, the sort order for categories in the navigation hierarchy was alphabetical. The current custom sort order functionality enbles merchandising managers to configure the sort order for various merchandising-related entities across all end-user clients. These clients include headquarters (HQ) and call centers.
+In Commerce versions 10.0.5 and earlier, the sort order for categories in the navigation hierarchy was alphabetical. The current custom sort order functionality enables merchandising managers to configure the sort order for various merchandising-related entities across all end-user clients. These clients include headquarters (HQ) and call centers.
 
 ## Configure the display order for categories in the product hierarchy
 
