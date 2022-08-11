@@ -4,7 +4,7 @@
 title: Change the sort order for merchandising entities
 description: This article explains the concepts that are related to controlling the display order for various merchandising-related entities in Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/05/2019
+ms.date: 08/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -88,11 +88,7 @@ The display order for the channel navigation hierarchy is reflected in HQ, catal
 ![POS with custom sorted categories.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> By default the 'Enable display order for merchandising entities' is turned off, ensure to turn it on. To learn how to turn on this feature and other features, see [Feature management](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
-> Upon turning on the feature 'Enable display order for merchandising entities', ensure to run 'Global configuration -1110' CDX job from distribution schedule. 
-> Additionally, if you may notice that your categories order is not getting updated in POS, try re-activating the device as the category information is fetched at time of device activation and thus, it needs to re-fetch the category information with updated display orders. 
-
- 1. Add the actual feature name in the Doc and 2. mention the job that needs to be run and 3 a note that device activation would be required to change the category display order or wait for cache to expire
-
+> By default, the **Enable display order for merchandising entities** feature is turned off. Use [Feature management](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn it on. After you tun the feature on, run **Global configuration -1110** CDX job from the distribution schedule.
+> If your categories order in POS aren't updated, reactivate the device. Category information is fetched when device activation occurs, so the device may need to refetch the category information with updated display orders. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
