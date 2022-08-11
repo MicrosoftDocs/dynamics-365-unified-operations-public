@@ -67,15 +67,15 @@ The **Line discount percent** operation allows POS users to enter a discount per
 
 ## Total discount amount
 
-The **Total discount amount** operation allows POS users to enter a discount amount for a transaction. This operation only applies to discountable items and respects the **Maximum total discount amount** value specified in the POS permission group for the user. When the entered value exceeds the limit, the operation is blocked and no permission override flow is triggered. Applying a total discount amount to a cart with a mix of sales and return items is not currently supported.
+The **Total discount amount** operation allows POS users to enter a discount amount for a transaction. This operation only applies to discountable items and respects the **Maximum total discount amount** value specified in the POS permission group for the user. When the entered value exceeds the limit, the operation is blocked, and no permission override flow is triggered. Applying a total discount amount to a cart with a mix of sales and return items isn't currently supported.
 
 ## Total discount percent
 
-The **Total discount percent** operation allows POS users to enter a discount percentage for a transaction. This operation only applies to discountable items and respects the **Maximum total discount percentage** value specified in the POS permission group for the user. When the entered value exceeds the limit, the operation is blocked and no permission override flow is triggered. Applying a total discount percentage to a cart with a mix of sales and return items is not currently supported.
+The **Total discount percent** operation allows POS users to enter a discount percentage for a transaction. This operation only applies to discountable items and respects the **Maximum total discount percentage** value specified in the POS permission group for the user. When the entered value exceeds the limit, the operation is blocked, and no permission override flow is triggered. Applying a total discount percentage to a cart with a mix of sales and return items isn't currently supported.
 
 ## Remove system discounts from transaction
 
-The **Remove system discounts from transaction** operation allows POS users to clear all applied system discounts (including coupon-based discounts) from a transaction. After performing this operation, the pricing engine starts excluding system discounts from the discount calculation scope. The **Remove system discounts from transaction** operation does not remove manual discounts.
+The **Remove system discounts from transaction** operation allows POS users to clear all applied system discounts (including coupon-based discounts) from a transaction. After performing this operation, the pricing engine starts excluding system discounts from the discount calculation scope. The **Remove system discounts from transaction** operation doesn't remove manual discounts.
 
 ## Reapply system discounts
 
@@ -91,6 +91,6 @@ The **Remove coupon code** operation allows POS users to select and remove one o
 
 ## Recalculate
 
-The **Recalculate** operation allows POS users to trigger on-demand pricing calculation. This operation is needed when price lock and/or delayed price calculation is enabled and the POS user wants to recalculate prices and discounts after cart or order changes. The **Recalculate** operation recalculates the entire order and cannot be used to recalculate selected sales lines. To apply manual discounts to a locked sales line in POS, the POS user needs to use the **Recalculate** operation to unlock all sales lines first.
+The **Recalculate** operation allows POS users to trigger on-demand pricing calculation. This operation is needed when price lock and/or delayed price calculation is enabled and the POS user wants to recalculate prices and discounts after cart or order changes. The **Recalculate** operation recalculates the entire order and can't be used to recalculate selected sales lines. To apply manual discounts to a locked sales line in POS, the POS user needs to use the **Recalculate** operation to unlock all sales lines first.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
