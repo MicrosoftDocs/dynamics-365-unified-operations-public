@@ -89,9 +89,10 @@ To create a new application tab that loads Commerce headquarters in an iFrame mo
 1. In the navigation pane on the left, select **Apps**.
 1. In **Customer Service admin center**, go to **Agent experience \>  Workspaces**.
 1. Select **Manage** for **Application tab templates**. 
-1. Create a new application tab of type **Third-party website** by following the documentation at [Manage application tab templates](/dynamics365/app-profile-manager/application-tab-templates?tabs=customerserviceadmincenter).
-1. Under **Parameters**  give **URL** as `https://<YourOrganizationHeadquartersURL>/?mi=MCRCustomerService&cmp=<LegalEntityName>&embedded=true&customerId={AccountNumber}`.  Replace `<YourOrganizationHeadquartersURL>` and `<LegalEntityname>` with the appropriate values. Omnichannel customer service reads {AccountNumber} from the chat context, so leave {AccountNumber} as is.
-1. Give **data** as empty.
+1. Create a new application tab of type **Third-party website** by following the instructions at [Manage application tab templates](/dynamics365/app-profile-manager/application-tab-templates?tabs=customerserviceadmincenter).
+1. Under **Parameters**,  for **URL** enter the following URL, where `<YourOrganizationHeadquartersURL>` and `<LegalEntityname>` are replaced with the appropriate values. Omnichannel customer service reads {AccountNumber} from the chat context, so leave {AccountNumber} as is.
+    `https://<YourOrganizationHeadquartersURL>/?mi=MCRCustomerService&cmp=<LegalEntityName>&embedded=true&customerId={AccountNumber}`
+1. Leave the **data** field empty.
 
 ## Enable a new application tab for customer agents in Dynamics 365 Omnichannel for Customer Service
 
@@ -99,9 +100,8 @@ To enable a new application tab for customer agents in Dynamics 365 Omnichannel 
 	
 1. Go to the [Power Apps Maker Portal](https://make.powerapps.com).
 1. In the **Customer Service admin center**, go to **Customer support \> Workstreams**.
-1. Open the workstream you've created for your agents, then under **Advanced settings** then select sessions default. 
-1. Under **Application Tabs**, select **Add Existing Application Tab** then add the new application tab you've created above.
-1. This will ensure that an application tab appears and loads Dynamics 365 Commerce Headquarter in iFrame, when agent receives incoming chat call from e-Commerce website.  
+1. Open the workstream you've created for your agents, and then under **Advanced settings**, select **Sessions default**. 
+1. Under **Application Tabs**, select **Add Existing Application Tab**, and then add the new application tab you've created above. This step will ensure that when agent receives an incoming chat call from your e-commerce website, an application tab that loads Commerce headquarters will appear in an iFrame module.  
 
 ## Add context variables in Dynamics 365 Omnichannel for Customer Service
 
@@ -109,11 +109,11 @@ To add context variables in Dynamics 365 Omnichannel for Customer Service, follo
 
 1. Go to the [Power Apps Maker Portal](https://make.powerapps.com).
 1. In **Customer Service admin center**, go to **Customer support \>  Workstreams**.
-1. Open the workstream you've created for your agents, then under **Advanced settings** go to **Context variable** section. 
+1. Open the workstream you've created for your agents, and then under **Advanced settings**, go to the **Context variable** section. 
 1. Select **Edit**, and then add **AccountNumber** as a context variable of type **text**. This variable will help Commerce headquarters load customer information with matching account numbers. 
 
 > [!NOTE] 
-> In addition to AccountNumber, If you want to read the Email and Name from e-Commerce channel, for signed-in users, you can add Email and Name as context variables with text type. 
+> In addition to AccountNumber, if you want to read the email and name of signed-in userfrom an e-commerce channel you can add Email and Name as context variables with text type. 
 
 ![Dynamics 365 Omnichannel Customer Service - Application tab creation](media/OC-CS-Admin-Application-Tab-Parameters.png)
 
