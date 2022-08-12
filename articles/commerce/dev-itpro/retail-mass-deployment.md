@@ -1,24 +1,14 @@
 ---
-# required metadata
-
 title: Mass deployment of legacy self-service components
-description: This article explains how you can use self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment. 
+description: This article explains how you can use self-service to do silent servicing updates and initial deployments. It also explains some aspects of special deployment.
 author: jashanno
 ms.date: 08/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global 
-# ms.search.industry: [leave blank for most, retail, public sector]
+ms.reviewer: josaw
+ms.search.region: Global
 ms.author: jashanno
 ms.search.validFrom: 2017-09-30
 ms.dyn365.ops.version: Application update 3

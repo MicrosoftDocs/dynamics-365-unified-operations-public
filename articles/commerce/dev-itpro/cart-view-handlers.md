@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: POS Cart view events and handlers
 description: This article explains how extensions can consume the point of sale (POS) view events and handlers for custom scenarios.
-author: mugunthanm
+author: josaw1
 ms.date: 02/13/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom:
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # POS Cart view events and handlers

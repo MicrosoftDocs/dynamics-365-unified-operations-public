@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Linked refunds of previously approved and confirmed transactions
 description: This article describes how to enable and use Linked refunds.
 author: josaw1
@@ -8,22 +6,14 @@ ms.date: 06/30/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: rapraj
+ms.author: anupamar
 ms.search.validFrom: 2019-03-28
 ms.dyn365.ops.version: Retail 10.0.1 update
-
+ms.custom: 
+ms.search.industry: Retail
 ---
 
 # Linked refunds of previously approved and confirmed transactions

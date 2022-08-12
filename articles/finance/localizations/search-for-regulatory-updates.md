@@ -1,27 +1,16 @@
 ---
-# required metadata
-
 title: Search for country-specific regulatory updates
 description: This article provides links to planned and released country-specific regulatory updates for Microsoft Dynamics 365 Finance.
-author: AKroshkina
+author: AdamTrukawka
 ms.date: 01/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: kfend
-ms.dyn365.ops.version: 10.0
-
+ms.dyn365.ops.version: 10
 ---
 
 # Search for country-specific regulatory updates

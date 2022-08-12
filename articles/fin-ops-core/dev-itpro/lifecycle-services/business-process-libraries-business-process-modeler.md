@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Business process libraries in Business process modeler (BPM)
 description: This article explains how to view a business process library, how to copy and modify it, and how to export information about the library to Microsoft Word.
-author: RobinARH
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 13301
-ms.assetid: 94c88919-39de-4a7b-9d1a-359b99500abe
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
-
+ms.custom: 13301
+ms.assetid: 94c88919-39de-4a7b-9d1a-359b99500abe
 ---
 
 # Business process libraries in Business process modeler (BPM)

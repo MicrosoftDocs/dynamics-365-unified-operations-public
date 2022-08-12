@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: User interface development home page
 description: This article contains links to topics about developing user interface elements.
-author: RobinARH
+author: jasongre
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
-ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: "intro-internal"
+ms.assetid: aea345a3-2302-4b72-9887-f23f72b911f1
 ---
 
 # User interface development home page

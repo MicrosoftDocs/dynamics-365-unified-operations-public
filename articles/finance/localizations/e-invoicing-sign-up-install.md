@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Sign up for and install the Electronic Invoicing service
 description: This article provides information about how to sign up for and install the Electronic Invoicing service.
-author: dkalyuzh
+author: gionoder
 ms.date: 02/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: dkalyuzh
+ms.author: gionoder
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Sign up for and install the Electronic Invoicing service

@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Create a workflow document class
 description: This article describes how to create a workflow document class.
-author: RobinARH
+author: josaw1
 ms.date: 06/19/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 202694
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: tfehr
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-
+ms.custom: 202694
+ms.assetid: 
 ---
 
 # Create a workflow document class

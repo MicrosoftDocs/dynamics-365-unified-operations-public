@@ -1,17 +1,17 @@
 ---
 title: Sign up for preview subscriptions
 description: This article explains how to subscribe to the preview/partner offer and deploy an environment.
-author: RobinARH
+author: gianugo
 ms.date: 12/16/2020
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom: 13211
-ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 13211
+ms.assetid: bd976311-f6e3-418b-a6c6-49bb568de130
 ---
 
 # Sign up for preview subscriptions

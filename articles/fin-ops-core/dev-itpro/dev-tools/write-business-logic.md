@@ -1,16 +1,16 @@
 ---
 title: Write business logic by using C# and X++ source code
-description: This tutorial illustrates the interoperability between C# and X++. In this tutorial, you’ll write business logic in C# source code and in X++ source code. 
+description: This tutorial illustrates the interoperability between C# and X++. In this tutorial, you’ll write business logic in C# source code and in X++ source code.
 author: pvillads
 ms.date: 02/07/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 26821
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 26821
 ---
 
 # Write business logic by using C# and X++ source code

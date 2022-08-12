@@ -1,27 +1,19 @@
 ---
-# required metadata
-
 title: Invoice management for B2B e-commerce websites
 description: This article describes the invoice management capabilities of Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites.
-author: shajain
+author: ShalabhjainMSFT
 ms.date: 02/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-# optional metadata
-ms.search.form: RetailOperations
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: v-chgriffin
-#
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-
+ms.search.industry: retail
+ms.search.form: RetailOperations
 ---
 
 # Invoice management for B2B e-commerce websites

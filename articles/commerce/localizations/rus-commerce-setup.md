@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Set up the Dynamics 365 Commerce localization for Russia
 description: This article explains how to set up the Microsoft Dynamics 365 Commerce localization for Russia.
-author: akviklis
+author: EvgenyPopovMBS
 ms.date: 09/21/2021
 ms.topic: article
 ms.prod: 
-
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Russia
-ms.search.industry: Retail
-ms.author: akviklis
-ms.search.validFrom: 07/01/2021
+ms.author: josaw
+ms.search.validFrom: 2021-07-01
 ms.dyn365.ops.version: 
-
+ms.search.industry: Retail
 ---
 # Set up the Dynamics 365 Commerce localization for Russia
 

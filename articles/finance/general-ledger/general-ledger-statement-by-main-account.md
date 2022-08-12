@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: General ledger statement by main account
 description: This article explains how to generate general ledger statements by main account in Microsoft Excel format.
-author: liza-golub
-ms.author: elgolu
+author: AdamTrukawka
 ms.date: 06/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.search.industry: 
+ms.author: atrukawk
 ms.search.validFrom: 2022-06-01
-
 ---
 
 # General ledger statement by main account

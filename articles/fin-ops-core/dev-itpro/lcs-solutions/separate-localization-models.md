@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Separation of localization models
 description: This article describes how to split the solution into separate models for each feature type.
-author: ShylaThompson
+author: kfend
 ms.date: 06/17/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 27561
-ms.assetid: 49b634ab-d7f7-4e34-a7e9-7350548bf1a0
+ms.reviewer: kfend
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 27561
+ms.assetid: 49b634ab-d7f7-4e34-a7e9-7350548bf1a0
 ---
 
 # Separation of localization models

@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Design a configuration for generating documents in Excel format
 description: This article describes how to design an Electronic reporting (ER) format to fill in an Excel template, and then generate outbound Excel format documents.
-author: NickSelin
+author: kfend
 ms.date: 05/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: EROperationDesigner, ERParameters
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.search.form: EROperationDesigner, ERParameters
 ---
 
 # Design a configuration for generating documents in Excel format

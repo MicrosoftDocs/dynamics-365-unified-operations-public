@@ -1,31 +1,21 @@
 ---
-# required metadata
-
 title: Loyalty overview
 description: This article describes the loyalty capabilities within Dynamics 365 Commerce and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
-author: scott-tucker
+author: josaw1
 ms.date: 07/21/2020
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: ["16201", "intro-internal"]
-ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: scotttuc
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
+ms.custom: 16201,  ""intro-internal
+ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
+ms.search.industry: Retail
+ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
 ---
 
 # Loyalty overview

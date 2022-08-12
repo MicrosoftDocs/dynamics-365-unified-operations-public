@@ -1,13 +1,13 @@
 ---
 title: Commerce Scale Unit customer and consumer APIs
 description: This article provides an overview of the APIs that are available across various roles, and that can be used by various clients.
-author: mugunthanm
+author: josaw1
 ms.date: 06/02/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ---

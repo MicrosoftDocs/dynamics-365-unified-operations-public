@@ -1,12 +1,12 @@
 ---
 title: Services module
 description: Various services that are available to the application in client runtime.
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ---
 
 # Services module

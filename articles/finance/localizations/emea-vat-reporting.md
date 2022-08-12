@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: VAT reporting for Europe
 description: This article provides general information about setting up and generating the value-added tax (VAT) statement for some European countries.
-author: ShylaThompson
+author: mrolecki
 ms.date: 03/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 266844
 ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, Latvia, Lithuania, Netherlands, Sweden
-# ms.search.industry: 
-ms.author: kfend
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 266844
+ms.search.form: TaxAuthority, TaxReportCollection, TaxTable
 ---
 
 # VAT reporting for Europe

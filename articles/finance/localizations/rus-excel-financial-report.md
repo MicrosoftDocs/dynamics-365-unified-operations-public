@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Configure financial reports in Excel (Russia)
-description: This article walks you through the process of creating an Electronic reporting (ER) configuration that contains a template for generating a financial report in an Excel format. 
-author: Anasyash
+description: This article walks you through the process of creating an Electronic reporting (ER) configuration that contains a template for generating a financial report in an Excel format.
+author: AdamTrukawka
 ms.date: 07/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 10.0.1
-
 ---
 
 # Configure financial reports in Excel (Russia)

@@ -1,12 +1,12 @@
 ---
 title: X++ variables
 description: This article describes variables in X++.
-author: RobinARH
+author: josaw1
 ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

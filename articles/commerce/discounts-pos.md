@@ -1,30 +1,21 @@
 ---
-# required metadata
-
-title: Show discounts in POS 
+title: Show discounts in POS
 description: This article explains how Microsoft Dynamics 365 Commerce helps sales associates learn about promotions and how they can be used for cross-sell and upsell motions.
 author: ShalabhjainMSFT
 ms.date: 07/29/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: Retail, Commerce
-ms.author: asharchw
+ms.author: shajain
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: Application update 10.0.10
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: Retail, Commerce
+ms.search.form: 
 ---
 
 # Show discounts in POS

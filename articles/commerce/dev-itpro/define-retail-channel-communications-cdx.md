@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Commerce Data Exchange and commerce channel communications
 description: This article provides an overview of Commerce Data Exchange and its components.
-author: athinesh99
+author: josaw1
 ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 27021
-ms.assetid: 179b1629-ac90-4cfb-b46a-5bda56c4f451
+ms.reviewer: josaw
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: athinesh
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 27021
+ms.assetid: 179b1629-ac90-4cfb-b46a-5bda56c4f451
+ms.search.industry: Retail
 ---
 
 # Commerce Data Exchange and commerce channel communications

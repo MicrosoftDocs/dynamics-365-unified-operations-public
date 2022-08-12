@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Set up Retail SDK build pipeline
 description: This article shows how to set up the Azure DevOps build pipeline for the Retail SDK.
-author: mugunthanm 
+author: josaw1
 ms.date: 04/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2020-06-10
 ms.dyn365.ops.version: 10.0.11
+ms.custom: 
+ms.assetid: 
+ms.search.industry: Retail
 ---
 
 # Set up Retail SDK build pipeline

@@ -6,22 +6,14 @@ ms.date: 12/18/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-
-# ms.search.form: 
-# ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: fdahl
 ms.search.validFrom: 2018-11-02
 ms.dyn365.ops.version: App 8.1.2
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Extensibility changes in Dynamics 365 for Finance and Operations version 8.1.2

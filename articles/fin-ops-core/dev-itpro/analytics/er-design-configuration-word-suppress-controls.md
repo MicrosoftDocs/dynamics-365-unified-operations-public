@@ -1,27 +1,20 @@
---- 
-# required metadata 
- 
+---
 title: Suppress Word content controls in generated reports
-description: This article explains how to configure an Electronic reporting (ER) format to generate reports as Microsoft Word files where content controls are suppressed. 
+description: This article explains how to configure an Electronic reporting (ER) format to generate reports as Microsoft Word files where content controls are suppressed.
 author: kfend
 ms.date: 02/11/2021
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: filatovm
-ms.search.validFrom: 2020-01-01 
-ms.dyn365.ops.version: Version 10.0.6 
+ms.search.validFrom: 2020-01-01
+ms.dyn365.ops.version: Version 10.0.6
+ms.search.form: 
+  - ERWorkspace, ERSolutionTable, EROperationDesigner
+  - LedgerJournalTable, LedgerJournalTransVendPaym
 ---
 
 # Suppress Word content controls in generated reports

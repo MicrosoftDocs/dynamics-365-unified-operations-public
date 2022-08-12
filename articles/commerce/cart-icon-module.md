@@ -1,7 +1,4 @@
 ---
-
-# required metadata
-
 title: Cart icon module
 description: This article covers the cart icon module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
@@ -9,22 +6,14 @@ ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Cart icon module

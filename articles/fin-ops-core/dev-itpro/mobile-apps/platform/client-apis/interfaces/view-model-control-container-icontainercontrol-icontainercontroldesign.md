@@ -1,12 +1,12 @@
 ---
 title: ContainerControlDesign type
 description: Container control design object has properties specific to all container controls.
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ---
 
 # ContainerControlDesign type

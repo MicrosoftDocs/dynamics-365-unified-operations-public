@@ -1,21 +1,15 @@
 ---
 title: Learning catalog for business and technical decision makers considering Dynamics 365 Commerce
 description: Find all the training options for BDMs and TDMs considering Dynamics 365 Commerce.
-author: margoc
+author: josaw1
 ms.date: 07/27/2020
 ms.topic: article
-ms.author: margoc
-
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
+ms.prod: 
+ms.technology: 
 audience: Application user
-ms.reviewer: margoc
-
+ms.reviewer: josaw
 ms.search.region: Global
+ms.author: josaw
 ms.search.validFrom: 2020-07-27
 ms.dyn365.ops.version: 8.1
 ---

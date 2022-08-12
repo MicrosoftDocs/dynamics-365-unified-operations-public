@@ -1,26 +1,19 @@
 ---
 title: Test projects in Visual Studio
 description: This article describes the options for testing in Visual Studio.
-author: RobinARH
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 24161
-ms.assetid: d94f46f0-cde2-47c3-8994-c79e609eabce
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 24161
+ms.assetid: d94f46f0-cde2-47c3-8994-c79e609eabce
 ---
 
 # Test projects in Visual Studio

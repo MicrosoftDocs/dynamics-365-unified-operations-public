@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Inspect the configured ER component to prevent runtime issues
 description: This article explains how to inspect the configured Electronic reporting (ER) components to prevent runtime issues that might occur.
-author: NickSelin
+author: kfend
 ms.date: 01/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-
+ms.custom: 220314
+ms.assetid: 
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 ---
 
 # Inspect the configured ER component to prevent runtime issues

@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Customize field descriptions
 description: This article describes how you can customize existing field descriptions and add your own descriptions.
-author: ShylaThompson
+author: josaw1
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 92013
-ms.assetid: 94d555d7-28f3-4d94-91b4-6038e2be5047
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sericks
+ms.author: josaw
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 92013
+ms.assetid: 94d555d7-28f3-4d94-91b4-6038e2be5047
 ---
 
 # Customize field descriptions

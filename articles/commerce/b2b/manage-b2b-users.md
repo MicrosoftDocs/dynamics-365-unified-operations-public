@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Manage business partner users on B2B e-commerce websites
 description: This article describes how to add, delete, and edit business partner users on Microsoft Dynamics 365 Commerce business-to-business (B2B) e-commerce websites and in Commerce headquarters.
 author: josaw1
 ms.date: 04/19/2022
 ms.topic: article
 ms.prod: 
-ms.technology:
-
-# optional metadata
-
-ms.search.form:
+ms.technology: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: v-chgri
-#
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: brshoo
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-
+ms.search.industry: retail
+ms.search.form: 
 ---
 
 # Manage business partner users on B2B e-commerce websites

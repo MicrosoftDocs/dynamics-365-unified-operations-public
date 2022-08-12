@@ -1,31 +1,21 @@
 ---
-# required metadata
-
 title: Point of sale (POS) application and user language settings
 description: This article describes how to change language settings in Modern POS (MPOS) and Cloud POS.
-author: jblucher
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: HcmWorker, RetailStoreTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 78891
-ms.assetid: 0030940c-e0a5-4345-9511-8c3bd1f487ad
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
+ms.custom: 78891
+ms.assetid: 0030940c-e0a5-4345-9511-8c3bd1f487ad
+ms.search.industry: Retail
+ms.search.form: HcmWorker, RetailStoreTable
 ---
 
 # Point of sale (POS) application and user language settings

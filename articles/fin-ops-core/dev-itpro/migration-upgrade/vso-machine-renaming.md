@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Rename a local development (VHD) environment
 description: This article explains how to rename a local environment so that you can access a Microsoft Azure DevOps project and install One Version service updates.
-author: MargoC
+author: josaw1
 ms.date: 07/24/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 25911
-ms.assetid: 4f5ff29b-9ae5-4ba2-8b6e-1e5d94e004b3
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
+ms.author: josw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 25911
+ms.assetid: 4f5ff29b-9ae5-4ba2-8b6e-1e5d94e004b3
 ---
 
 # Rename a local development (VHD) environment

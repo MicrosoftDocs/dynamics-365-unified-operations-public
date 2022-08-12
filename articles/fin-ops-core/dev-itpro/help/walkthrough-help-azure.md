@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Deploy custom Help to Azure
-description: This article walks you through an example that shows how you can deploy Microsoft Dynamics 365 Help content to an Azure web app. 
+description: This article walks you through an example that shows how you can deploy Microsoft Dynamics 365 Help content to an Azure web app.
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-
 ---
 
 # Deploy custom Help to Azure

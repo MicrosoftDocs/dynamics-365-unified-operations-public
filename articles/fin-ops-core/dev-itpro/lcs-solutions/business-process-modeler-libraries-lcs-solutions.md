@@ -1,28 +1,17 @@
 ---
-# required metadata
-
-title: Set up Business process modeler libraries 
+title: Set up Business process modeler libraries
 description: This article explains how to create and work with Business process modeler (BPM) libraries.
-author: kfend
+author: sericks007
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+ms.search.region: Global
+ms.author: sericks
 ms.custom: 196953
 ms.assetid: 6e6d6896-edef-4739-98ad-c4ea19180972
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: omarc
-
 ---
 
 # Set up Business process modeler libraries

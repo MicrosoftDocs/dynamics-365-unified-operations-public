@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Australia overview
 description: This article provides an overview of Dynamics 365 Finance functionality that is specific to Australia.
 author: kfend
@@ -8,21 +6,12 @@ ms.date: 04/13/2021
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
 ms.search.region: Australia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
 ---
 
 # Australia overview

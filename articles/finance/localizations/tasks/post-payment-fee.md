@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: Generate and post payment fee
-description: This task walks you through generating and posting a payment fee for Japan. 
-author: ShylaThompson
+description: This task walks you through generating and posting a payment fee for Japan.
+author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, VendTableLookup   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Japan
-# ms.search.industry: 
-ms.author: roschlom
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: kfend
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym, VendTableLookup
 ---
 # Generate and post payment fee
 
