@@ -43,7 +43,7 @@ The following LCS features will not be implemented in self-service deployment.
 ### Known issues in this release
 Know issues are bugs that will be addressed in upcoming releases. Every 2 weeks there is a new release of LCS.
 
-## finance and operations apps 
+## Finance and operations apps 
 
 > [!NOTE]
 > Dynamics 365 Commerce is implemented in the modern deployment experience with the 10.0.10 release. For more information, see [Create payment packaging for Application Explorer for self-service deployment](../../../commerce/dev-itpro/payment-connector-package.md).
