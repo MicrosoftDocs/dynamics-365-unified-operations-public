@@ -20,9 +20,7 @@ manager: annbe
 [!include [banner](../includes/banner.md)]
 
 > [!WARNING]
-> You need to make the steps that are described in this article only if you are using the Commerce version 10.0.28 or earlier. Starting from the version 10.0.29, all required Commerce channel components for France are enabled out-of-the-box.
->
-> However, if you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later, you need to make the steps that are described in the [Migrate to version 10.0.29 or later](#migrate-to-version-10029-or-later) section.
+> You must implement the steps that are described in this article only if you are using the Commerce version 10.0.28 release or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out-of-the-box. If you are using the Commerce version 10.0.28 release or earlier and are migrating to the version 10.0.29 or later, you must follow the steps that are described in [Migrate to version 10.0.29 or later](#migrate-to-version-10029-or-later).
 
 This article provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. These extensions let you perform actions such as printing custom fields on receipts, registering additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally signing sales transactions, and printing X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](./emea-fra-cash-registers.md). For more information about how to configure Commerce for France, see [Set up Commerce for France](./emea-fra-cash-registers.md#set-up-commerce-for-france).
 
@@ -191,13 +189,13 @@ To create deployable packages that contain Commerce components, and to apply tho
 1. Open the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 1. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
-## Migrate to version 10.0.29 or later
+## Migrate to Commerce version 10.0.29 or later
 
-The steps described in this section are required if you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later. You need to follow the below procedure to correctly update your Commerce environment:
+The steps described in this section are required if you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later. You must follow the steps below to correctly update your Commerce environment.
 
 1. Update Commerce headquarters.
 1. Enable [France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) in the **Feature management** workspace and distribute the changes to channels.
-1. Update Commerce runtime, Cloud POS, and Modern POS, and exclude legacy France-specific extensions:
+1. Update Commerce runtime, Cloud POS, and Modern POS, and exclude the following legacy France-specific extensions:
     1. Commerce runtime extensions in the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** files:
         - Microsoft.Dynamics.Commerce.Runtime.ReceiptsFrance
         - Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventFrance
