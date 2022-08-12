@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Configure Lifecycle Services (LCS) security
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
 Security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level. Not all members of an organization have access to all projects. Additionally, the members of a project might not all be members of the same organization. <br>
 
