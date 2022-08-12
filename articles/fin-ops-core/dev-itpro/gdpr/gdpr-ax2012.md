@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Respond to requests for personal data in AX 2012
-description: This article can help businesses that use Microsoft Dynamics AX 2012, implementation partners, and independent software vendors (ISVs) comply with requests from a data subject concerning their personal data under the European Union’s General Data Protection Regulation (GDPR). 
+description: This article can help businesses that use Microsoft Dynamics AX 2012, implementation partners, and independent software vendors (ISVs) comply with requests from a data subject concerning their personal data under the European Union’s General Data Protection Regulation (GDPR).
 author: ryanc
 ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 10031
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: ryanc
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 10031
 ---
 
 

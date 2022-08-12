@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: DIOT declaration statement
 description: This article provides information about the DIOT declaration statement for Mexico.
-author: sndray
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: DIOTDeclarationConcept_MX, DIOTDeclarationTaxCode_MX, VendTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 79334
-ms.assetid: 0cdb4da3-dca8-4e31-8fd5-8a1f785b5104
 ms.search.region: Mexico
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 79334
+ms.assetid: 0cdb4da3-dca8-4e31-8fd5-8a1f785b5104
+ms.search.form: DIOTDeclarationConcept_MX, DIOTDeclarationTaxCode_MX, VendTable
 ---
 
 # DIOT declaration statement

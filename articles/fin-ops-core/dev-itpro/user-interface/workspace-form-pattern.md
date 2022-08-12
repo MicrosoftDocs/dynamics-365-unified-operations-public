@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Workspace form pattern
 description: This article discusses workspace form patterns. Workspaces are the primary way that users navigate to tasks and specific pages.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 03/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 29151
-ms.assetid: 4ca77c08-1c8f-4b0c-af55-ca89a7e8982b
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 29151
+ms.assetid: 4ca77c08-1c8f-4b0c-af55-ca89a7e8982b
 ---
 
 # Workspace form pattern

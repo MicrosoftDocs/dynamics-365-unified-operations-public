@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: Prepare application metadata to be used in RCS
 description: This article describes how to create a new reporting configuration that contains application metadata.
-author: NickSelin
+author: kfend
 ms.date: 06/28/2019
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: 
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2019-06-28 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: filatovm
+ms.search.validFrom: 2019-06-28
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: 
 ---
 # Prepare application metadata to be used in RCS
 [!include [banner](../../includes/banner.md)]

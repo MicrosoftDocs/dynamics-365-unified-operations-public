@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Deploy payment connectors
 description: This article describes how to deploy a payment connector package to the appropriate components.
-author: aamirallaqaband
+author: ShalabhjainMSFT
 ms.date: 05/07/2018
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: IT Pro
-# ms.devlang:
-ms.reviewer: tfehr
-# ms.tgt_pltfrm:
-ms.custom: 141393
-ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: aamiral
+ms.author: shajain
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 141393
+ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.search.industry: Retail
 ---
 
 # Deploy payment connectors

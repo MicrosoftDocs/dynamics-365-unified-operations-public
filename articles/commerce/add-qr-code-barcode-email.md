@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Add a QR code or bar code to transactional and receipt emails
 description: This article explains how to insert QR codes and bar codes that represent order IDs into transactional and receipt emails in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
@@ -8,23 +6,14 @@ ms.date: 03/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: stuharg
 ms.search.validFrom: 2021-02-16
 ms.dyn365.ops.version: Release 10.0.18
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Add a QR code or bar code to transactional and receipt emails

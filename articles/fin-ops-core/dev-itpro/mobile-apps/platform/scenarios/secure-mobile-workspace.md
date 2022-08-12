@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Help secure mobile workspaces
 description: This article describes how to limit a user's access to a workspace.
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 255544
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: Platform update 3
-
+ms.custom: 255544
+ms.assetid: 
 ---
 
 # Help secure mobile workspaces

@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Security best practices for Cloud POS in shared environments
 description: This article provides recommendations that can help secure Retail Cloud POS in a shared environment.
-author: pdp1207
+author: josaw1
 ms.date: 06/17/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 257674
-ms.assetid: bd618e4b-ad09-483e-9440-f5d8d5e5af8a
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: prabhup
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 257674
+ms.assetid: bd618e4b-ad09-483e-9440-f5d8d5e5af8a
 ---
 
 # Security best practices for Cloud POS in shared environments

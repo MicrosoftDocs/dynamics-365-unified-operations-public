@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Configure product dimension values to appear as swatches
 description: This article describes how to configure product dimension values as swatches in Microsoft Dynamics 365 Commerce headquarters.
 author: anupamar-ms
@@ -8,22 +6,14 @@ ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: rapraj
+ms.author: anupamar
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-
+ms.custom: 
+ms.search.industry: Retail
 ---
 
 # Configure product dimension values to appear as swatches

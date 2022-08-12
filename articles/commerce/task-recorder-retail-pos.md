@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Task recorder and Help for Retail Modern POS (MPOS) and Cloud POS
 description: This article describes how to use Task recorder in Retail Modern POS and Cloud POS.
-author: mugunthanm
+author: josaw1
 ms.date: 06/19/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  RetailTerminalTable, SystemParameters
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 1205393
-ms.assetid: 2f13e9cf-55b5-458b-8c32-3f8cd98c9ecf
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 1205393
+ms.assetid: 2f13e9cf-55b5-458b-8c32-3f8cd98c9ecf
+ms.search.industry: Retail
+ms.search.form: RetailTerminalTable, SystemParameters
 ---
 
 # Task recorder and Help for Retail Modern POS (MPOS) and Cloud POS

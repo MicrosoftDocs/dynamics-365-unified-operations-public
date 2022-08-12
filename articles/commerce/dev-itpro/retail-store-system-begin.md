@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Commerce Scale Unit (self-hosted)
 description: This article describes Commerce Scale Unit (self-hosted) and when to use it.
-author: athinesh99
+author: josaw1
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 219714
-ms.assetid: 773fb32d-14c1-4dc8-8330-0332c6a037a2
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: athinesh
+ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 219714
+ms.assetid: 773fb32d-14c1-4dc8-8330-0332c6a037a2
+ms.search.industry: Retail
 ---
 
 # Commerce Scale Unit (self-hosted)

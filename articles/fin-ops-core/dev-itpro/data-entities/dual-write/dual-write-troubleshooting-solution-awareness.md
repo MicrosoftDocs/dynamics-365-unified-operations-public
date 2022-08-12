@@ -1,11 +1,11 @@
 ---
 title: Troubleshoot issues related to solution awareness
 description: This article provides troubleshooting information that can help you fix issues that are related to solution awareness.
-author: RamaKrishnamoorthy 
+author: RamaKrishnamoorthy
 ms.date: 03/16/2020
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06

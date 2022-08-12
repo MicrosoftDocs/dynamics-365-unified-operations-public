@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: General Data Protection Regulation overview
 description: This article provides information about the user log functionality in finance and operations.
 author: ToddLefor
@@ -8,22 +6,13 @@ ms.date: 07/23/2019
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: ["10031", "intro-internal"]
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: tlefor
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 10031,  ""intro-internal
 ---
 
 # General Data Protection Regulation overview

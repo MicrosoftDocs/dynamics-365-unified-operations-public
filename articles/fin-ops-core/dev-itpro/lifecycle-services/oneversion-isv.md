@@ -6,21 +6,12 @@ ms.date: 05/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
-ms.search.validFrom: 2019-4-12 
-ms.dyn365.ops.version: Platform update 24 
+ms.author: fdahl
+ms.search.validFrom: 2019-04-12
+ms.dyn365.ops.version: Platform update 24
 ---
 
 # Delivering ISV solutions using One Version

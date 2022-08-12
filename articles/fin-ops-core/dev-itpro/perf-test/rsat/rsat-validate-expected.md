@@ -1,25 +1,18 @@
 ---
 title: Validate expected values
-description: This article shows how to use the Regression suite automation for validation of expected values. 
+description: This article shows how to use the Regression suite automation for validation of expected values.
 author: FrankDahl
 ms.date: 01/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 21631
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 21631
 ---
 
 # Validate expected values

@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Configure tax integration for China
 description: This article describes the process for configuring tax integration for China.
-author: ShylaThompson
+author: mrolecki
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustParameters, VATInvoiceDescTable_CN, TaxProfileTable_CN
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 265264
-ms.assetid: e5dbbbe1-935f-4fb4-a014-447916051628
 ms.search.region: China (PRC)
-# ms.search.industry: 
-ms.author: leguo
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 265264
+ms.assetid: e5dbbbe1-935f-4fb4-a014-447916051628
+ms.search.form: CustParameters, VATInvoiceDescTable_CN, TaxProfileTable_CN
 ---
 
 # Configure tax integration for China

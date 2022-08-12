@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Connect a custom Help website to the Help pane
-description: This article explains how you can extend the in-product Help pane with custom Help content. 
+description: This article explains how you can extend the in-product Help pane with custom Help content.
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-
 ---
 
 # Connect a custom Help website to the Help pane

@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: User-defined certificate profiles for retail stores
 description: This article provides an overview about how certificates are used in retail stores.
-author: josaw
+author: josaw1
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailFormLayout, RetailParameters
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
-
+ms.search.industry: Retail
+ms.search.form: RetailFormLayout, RetailParameters
 ---
 # User-defined certificate profiles for retail stores
 

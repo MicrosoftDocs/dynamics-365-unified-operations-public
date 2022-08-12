@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: IRAS Audit File (IAF) for Singapore
 description: This article explains how to set up and generate the IRAS Audit File (IAF) for Singapore for legal entities that have a primary address in Singapore.
-author: liza-golub
-ms.author: elgolu
+author: AdamTrukawka
 ms.date: 06/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Singapore
-# ms.search.industry: 
+ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
 ---
 
 # IRAS Audit File (IAF) for Singapore

@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Messaging APIs - Action center, message bar, and message details
 description: This article describes the messaging system.
 author: jasongre
@@ -8,22 +6,14 @@ ms.date: 10/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 64153
-ms.assetid: b69ec992-9bde-469e-99bb-773feb9489ff
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 64153
+ms.assetid: b69ec992-9bde-469e-99bb-773feb9489ff
 ---
 
 # Messaging APIs - Action center, message bar, and message details

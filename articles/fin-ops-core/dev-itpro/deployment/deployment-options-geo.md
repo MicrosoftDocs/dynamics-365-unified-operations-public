@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies
 description: This article provides information about the supported geographies and endpoints for Microsoft Dynamics 365 Commerce, Dynamics 365 Finance, and Dynamics 365 Supply Chain Management.
 author: Shailesh4all
@@ -9,7 +7,7 @@ ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: hasaid
+ms.author: shailesn
 ms.search.validFrom: 2022-04-28
 ---
 

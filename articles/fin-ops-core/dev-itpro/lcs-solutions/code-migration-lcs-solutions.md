@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Migrate code for finance and operations apps solutions
 description: This article describes how to upgrade and analyze your code in Microsoft Dynamics Lifecycle Services (LCS).
-author: kfend
+author: sericks007
 ms.date: 06/13/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+ms.search.region: Global
+ms.author: sericks
 ms.custom: 196993
 ms.assetid: aa01254e-4c18-43e4-81a1-0ef42a27871d
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: omarc
-
 ---
 
 # Migrate code for finance and operations apps solutions

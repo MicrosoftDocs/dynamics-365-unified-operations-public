@@ -7,13 +7,12 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.custom: 
-  - 27661
+ms.custom: 27661
 ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
 ms.search.form: AutomatedEntityStoreRefresh
 ---

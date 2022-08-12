@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Set up and use the extended logon capability
 description: This article describes how to set up and use the extended logon capability of the Microsoft Dynamics 365 Commerce point of sale (POS) application.
-author: boycez
+author: boycezhu
 ms.date: 03/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailFunctionalityProfile
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 92353
-ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: boycez
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 92353
+ms.assetid: 7473e237-fbc8-41d5-8ba0-920242747488
+ms.search.industry: Retail
+ms.search.form: RetailFunctionalityProfile
 ---
 
 # Set up and use the extended logon capability

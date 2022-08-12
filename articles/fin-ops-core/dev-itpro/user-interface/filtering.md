@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Filtering options
 description: This article explains the filtering options that are available.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 03/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 28721
-ms.assetid: f5501319-dcaa-4912-9456-97a0ef2c2452
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 28721
+ms.assetid: f5501319-dcaa-4912-9456-97a0ef2c2452
 ---
 
 # Filtering options

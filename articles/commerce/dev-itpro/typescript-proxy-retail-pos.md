@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: TypeScript and C# proxies for Retail point of sale (POS)
 description: This article provides information about the Commerce proxy and explains how to generate it.
-author: mugunthanm
+author: josaw1
 ms.date: 08/26/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 83892
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-10-20
 ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
-
+ms.custom: 83892
 ---
 
 # TypeScript and C# proxies for Retail point of sale (POS)
