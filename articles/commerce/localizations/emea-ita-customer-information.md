@@ -164,47 +164,11 @@ The following example scenarios show how to work with customer information in PO
 This section provides deployment guidance for enabling customer information management in the localization of Commerce for Italy.
 
 > [!NOTE]
-> Some steps in these procedures vary, depending on the version of Commerce that you're using. For more information, see [What's new or changed in Dynamics 365 for Retail](../get-started/whats-new.md).
->
 > If you want to enable the integration of POS with fiscal printers for Italy, and specifically if you want to print customer lottery codes on fiscal receipts, you must deploy the [fiscal printer integration sample for Italy](emea-ita-fpi-sample.md).
 
 ### Update customizations
 
-Follow these steps to update customizations.
-
-# [Retail 10.0.7 and later](#tab/retail-10-0-7)
-
-If any of your customizations include request handlers for the `SaveCartRequest` or `CreateSalesOrderServiceRequest` requests:
-
-1. Find the request handler for `SaveCartRequest`.
-1. Find the line of code that runs the original request handler.
-1. Add the following lines before calling the original request handler:
-
-    ```cs
-    using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdItaly.Services;
-
-    ...
-
-    new TaxRegistrationIdFiscalCustomerService().Execute(request);
-    ```
-
-1. Find the request handler for `CreateSalesOrderServiceRequest`.
-1. Find the line of code that runs the original request handler.
-1. Replace it with the following code:
-
-    ```cs
-    using Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdItaly.Services;
-
-    ...
-
-    return new TaxRegistrationIdFiscalCustomerService().Execute(request);
-    ```
-
-# [Retail 10.0.12 and later](#tab/retail-10-0-12)
-
-If customizations have references to the `TaxRegistrationIdFiscalCustomerService` service, they must be removed.
-
----
+If your customizations have references to the `TaxRegistrationIdFiscalCustomerService` service, they must be removed.
 
 ### Update a development environment
 
@@ -296,16 +260,11 @@ Follow these steps to create deployable packages that contain Commerce component
 The steps described in this section are required if you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later. You need to follow the below procedure to correctly update your Commerce environment:
 
 1. Update Commerce headquarters.
-1. Enable [France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) in the **Feature management** workspace and distribute the changes to channels.
-1. Update Commerce runtime, Cloud POS, and Modern POS, and exclude legacy France-specific extensions:
+1. Enable [Italy-specific features](#enable-the-customer-information-management-feature-for-italy) in the **Feature management** workspace and distribute the changes to channels.
+1. Update Commerce runtime, Cloud POS, and Modern POS, and exclude legacy Italy-specific extensions:
     1. Commerce runtime extensions in the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** files:
-        - Microsoft.Dynamics.Commerce.Runtime.ReceiptsFrance
-        - Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventFrance
-        - Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration
-        - Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance
+        - Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdItaly
     1. POS extensions in the **extensions.json** file:
-        - Microsoft/Receipts.FR
-        - Microsoft/FifAuditEvent.FR
-        - Microsoft/RestrictShiftDuration
+        - Microsoft/TaxRegistrationId.IT
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
