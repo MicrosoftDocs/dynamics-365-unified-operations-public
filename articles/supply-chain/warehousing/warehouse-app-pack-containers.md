@@ -52,6 +52,9 @@ Before you can use the functionality that is described in this article, you must
 1. Make sure to update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 
 1. Make sure to run **Create default setup** for the [*Mobile device steps*](warehouse-app-detours.md) in the **Warehouse management \> Setup \> Mobile device \> Mobile device steps**. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app.
+ 
+> [!NOTE]
+> To be able to see new icons and have all the user experience enhancements related to the Warehouse Management mobile app packing process, please make to to use the Warehouse Management mobile app version 2.0.31.0 or newer.
 
 ## Warehouse Management mobile app packing process
 As soon as the shipment inventory items have been brought forward to the packing area you can start processing the **Pack inventory into containers** on the Warehouse Management mobile app.
@@ -634,19 +637,19 @@ In the following table you can see which processes are supported when using the 
 |Reopen container                                             | No        |                                                                                                                                       |
 |Change container packing policy                              | No        | It is only possible to use the Container packing policy defined on Worker                                                             |
 |Release shipment                                             | No        |                                                                                                                                       |
-|Work details                                                 | (Yes)     | You can use view via [Data inquire detour](warehouse-app-data-inquiry.md)                                                             |
-|Containers for shipment (Open/Closed)                        | Yes       | View via [Data inquire detour](warehouse-app-data-inquiry.md)                                                                         |
-|Shipment details                                             | Yes       | View via [Data inquire detour](warehouse-app-data-inquiry.md)                                                                         |
-|Display dimensions                                           | (no)      | But view via [Data inquire detour](warehouse-app-data-inquiry.md) - capturing of dimensions are not supported                         |
+|Work details                                                 | (Yes)     | You can use view via [Data inquiry detour](warehouse-app-data-inquiry.md)                                                             |
+|Containers for shipment (Open/Closed)                        | Yes       | View via [Data inquiry detour](warehouse-app-data-inquiry.md)                                                                         |
+|Shipment details                                             | Yes       | View via [Data inquiry detour](warehouse-app-data-inquiry.md)                                                                         |
+|Display dimensions                                           | (no)      | But view via [DData inquiry detour](warehouse-app-data-inquiry.md) - capturing of dimensions are not supported                         |
 |Manifest containers                                          | No        | Only automatic manifesting setup is supported                                                                                         |
 |Unmanifest containers                                        | No        |                                                                                                                                       |
 |Manifest container group                                     | No        | No weight capturing process supported                                                                                                 |
 |Unmanifest container group                                   | No        |                                                                                                                                       |
 |Manifest shipment                                            | No        | No weight capturing process supported                                                                                                 |
 |Unmanifest shipment                                          | No        |                                                                                                                                       |
-|Transport route rate details                                 | No        | Only view via [Data inquire detour](warehouse-app-data-inquiry.md)                                                                    |
-|Transport shipment accessorial charges                       | No        | Only view via [Data inquire detour](warehouse-app-data-inquiry.md)                                                                    |
-|Transport status                                             | No        | Only View via [Data inquire detour](warehouse-app-data-inquiry.md)                                                                    |
+|Transport route rate details                                 | No        | Only view via [Data inquiry detour](warehouse-app-data-inquiry.md)                                                                    |
+|Transport shipment accessorial charges                       | No        | Only view via [Data inquiry detour](warehouse-app-data-inquiry.md)                                                                    |
+|Transport status                                             | No        | Only View via [Data inquiry detour](warehouse-app-data-inquiry.md)                                                                    |
 |Print packing slip                                           | No        | Only automatic printing setup is supported                                                                                            |
 |Print container content                                      | No        | Only automatic printing setup is supported                                                                                            |
 |Print shipping label                                         | No        | Only automatic printing setup is supported                                                                                            |
