@@ -57,7 +57,7 @@ The Omnichannel for Customer Service Administration module script values listed 
 
 ## Configure the Commerce chat experience for your e-commerce site 
 
-One of the recommended approaches to implementing the chat experience for your e-commerce site is to add the module to the shared header fragment that is used on all of your e-commerce site pages. 
+One of the recommended approaches to implementing the chat experience for your e-commerce site is to add the chat module to the shared header fragment that is used on your e-commerce site pages. 
 
 To add the chat module to your site's header fragment in Commerce site builder, follow these steps.
 
@@ -79,7 +79,7 @@ To add the chat module to your site's header fragment in Commerce site builder, 
 
 ## Add Commerce headquarters as an application tab for Omnichannel for Customer Service
 
-Adding Commerce headquarters as an application tab for Omnichannel for Customer Service enables live agents using the Omnichannel for Customer Service agent experience user interface to easily access Dynamics 365 Commerce Customer Service module with contextual information for the customer along with their sales orders information. It also enables customer service agents to place new orders, perform returns and verify order status information. 
+Adding Commerce headquarters as an application tab for Omnichannel for Customer Service enables live agents using the Omnichannel for Customer Service agent experience user interface to easily access the Dynamics 365 Commerce Customer Service module with contextual information for the customer along with their sales orders information. It also enables customer service agents to place new orders, initiate returns, and verify order status information. 
 
 ### Create a new application tab that loads Commerce headquarters in an iFrame module 
 
@@ -90,9 +90,13 @@ To create a new application tab that loads Commerce headquarters in an iFrame mo
 1. In **Customer Service admin center**, go to **Agent experience \>  Workspaces**.
 1. Select **Manage** for **Application tab templates**. 
 1. Create a new application tab of type **Third-party website** by following the instructions at [Manage application tab templates](/dynamics365/app-profile-manager/application-tab-templates?tabs=customerserviceadmincenter).
-1. Under **Parameters**,  for **URL** enter the following URL, where `<YourOrganizationHeadquartersURL>` and `<LegalEntityname>` are replaced with the appropriate values. Omnichannel customer service reads {AccountNumber} from the chat context, so leave {AccountNumber} as is.
+1. Under **Parameters**,  for the **Value** field of the **url** parameter, enter the following URL, where `<YourOrganizationHeadquartersURL>` and `<LegalEntityname>` are replaced with the appropriate values. Omnichannel customer service reads **{AccountNumber}** from the chat context, so leave **{AccountNumber}** as is.
+
     `https://<YourOrganizationHeadquartersURL>/?mi=MCRCustomerService&cmp=<LegalEntityName>&embedded=true&customerId={AccountNumber}`
-1. Leave the **data** field empty.
+
+1. Leave the **Value** field of the **data** parameter empty.
+
+![Dynamics 365 Omnichannel Customer Service - Application tab creation](media/OC-CS-Admin-Application-Tab-Parameters.png)
 
 ## Enable a new application tab for customer agents in Dynamics 365 Omnichannel for Customer Service
 
@@ -113,9 +117,8 @@ To add context variables in Dynamics 365 Omnichannel for Customer Service, follo
 1. Select **Edit**, and then add **AccountNumber** as a context variable of type **text**. This variable will help Commerce headquarters load customer information with matching account numbers. 
 
 > [!NOTE] 
-> In addition to AccountNumber, if you want to read the email and name of signed-in userfrom an e-commerce channel you can add Email and Name as context variables with text type. 
+> In addition to the **AccountNumber** context variable, if you want to read the emails and names of signed-in users from an e-commerce channel you can add **Email** and **Name** as context variables of type **text**. 
 
-![Dynamics 365 Omnichannel Customer Service - Application tab creation](media/OC-CS-Admin-Application-Tab-Parameters.png)
 
 
 
