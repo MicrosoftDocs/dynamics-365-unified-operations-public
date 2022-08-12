@@ -19,13 +19,13 @@ ms.dyn365.ops.version: 10.0.21
 
 This article describes how to use the Inventory Visibility app.
 
-Inventory Visibility provides a model-driven app for visualization. The app contains three pages: **Configuration**, **Operational visibility**, and **Inventory summary**. It has the following features: <!-- KFM: Do we have another now page now for **Preload the Inventory Visibility Summary**? -->
+Inventory Visibility provides a model-driven app for visualization. The app contains three pages: **Configuration**, **Operational visibility**, and **Inventory summary**. It has the following features: <!-- KFM: Do we have another new page now for **Preload the Inventory Visibility Summary**? -->
 
 - It provides a user interface (UI) for on-hand configuration and soft reservation configuration.
 - It supports real-time on-hand inventory queries on various dimension combinations.
 - It provides a UI for posting reservation requests.
 - It provides a customized view of the inventory on-hand for products together with all dimensions.
-<!-- KFM: Should we add another feature to this list for the on-hand summary? -->
+<!-- KFM: Should we add another feature to this list for **Preload the Inventory Visibility Summary**? -->
 
 ## Prerequisites
 
@@ -65,7 +65,7 @@ To post a reservation request, you must enter a value in the request body. Use t
 
 ## <a name="inventory-summary"></a>Inventory summary
 
-The **Inventory summary** page provides a customized view for the *Inventory OnHand Sum* entity. It shows an inventory summary for products together with all dimensions. Inventory summary data is synced periodically from Inventory Visibility every 15 minutes.
+The **Inventory summary** page provides a customized view for the *Inventory OnHand Sum* entity. It shows an inventory summary for products together with all dimensions. Inventory summary data is synced with the Inventory Visibility service every 15 minutes.
 
 To see data on the **Inventory summary** page, you must turn on the *OnHandMostSpecificBackgroundService* feature on the **Feature Management** tab of the **Configuration** page and then select **Update configuration** (see also [Configure Inventory Visibility](inventory-visibility-configuration.md)).
 
@@ -74,14 +74,15 @@ To see data on the **Inventory summary** page, you must turn on the *OnHandMostS
 
 ### <a name="preload-the-inventory-visibility-onhand-query"></a>Preload a streamlined on-hand query
 
-<!-- KFM: I have assumed this should be a subsection to the Inventory summary section. Please confirm. We may need one more subsection that describes the "standard" way of using this page without preloading, but I'm not sure. -->
+<!-- KFM: I have assumed this should be a subsection to the **Inventory summary** section. Please confirm. We may need one more subsection that describes the "standard" way of using this page without preloading, but I'm not sure. -->
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
+<!-- KFM: Preview until further notice -->
 
-Supply Chain Management stores a great deal of information about your current on-hand inventory and makes it available for a wide variety of purposes. However, many everyday operations and third-party integrations require just a small subset of these details, and querying the system for all of them can result in large data sets that take time to assemble and transfer. Therefore, the Inventory Visibility service can periodically fetch and store a streamlined set of on-hand inventory data, and to make that optimized information continuously available. The stored on-hand inventory details are filtered based on configurable business criteria to ensure that only the most relevant information is included. Because the filtered on-hand inventory lists are stored locally in the Inventory Visibility service and are regularly updated, they support quick access, on-demand data exports, and streamlined integration with external systems.
+Supply Chain Management stores a great deal of information about your current on-hand inventory and makes it available for a wide variety of purposes. However, many everyday operations and third-party integrations require just a small subset of these details, and querying the system for all of them can result in large data sets that take time to assemble and transfer. Therefore, the Inventory Visibility service can periodically fetch and store a streamlined set of on-hand inventory data to make that optimized information continuously available. The stored on-hand inventory details are filtered based on configurable business criteria to ensure that only the most relevant information is included. Because the filtered on-hand inventory lists are stored locally in the Inventory Visibility service and are regularly updated, they support quick access, on-demand data exports, and streamlined integration with external systems.
 
 > [!NOTE]
-> The current preview version of this feature only allows preloaded results that include site and location. The final version of the feature is expected to allow you to select other dimensions to preload with the results.
+> The current preview version of this feature can only provide preloaded results that include site and location. The final version of the feature is expected to let you select other dimensions to preload with the results.
 
 **Preload the Inventory Visibility Summary** <!-- KFM: What is **Preload the Inventory Visibility Summary**? Is this a new page or a new tab on an existing page, or something else? We should describe how to open it. --> is a customized view for the *On-hand Index Query Preload Results* entity. Unlike the *Inventory summary* entity, the *On-hand Index Query Preload Results* entity provides an on-hand inventory list for products together with selected dimensions. Inventory Visibility syncs the preloaded summary data every 15 minutes.
 
@@ -96,12 +97,10 @@ By using the **Advanced filter** that Dataverse provides, you can create a perso
 
 The **Inventory summary** page provides three fields above the grid (**Default dimension**, **Custom dimension**, and **Measure**) that you can use to control which columns are visible.
 
-In **Preload the Inventory Visibility Summary** <!-- KFM: Again, what is **Preload the Inventory Visibility Summary**? A page, a tab, or something else? -->, because you will have predefined the dimensions used for loading summary data, the dimension-related columns are displayed correspondingly in the page. <!-- KFM: How do we predefine these dimensions? We should provide instructions or a link. -->
+In **Preload the Inventory Visibility Summary** <!-- KFM: Again, what is **Preload the Inventory Visibility Summary**? A page, a tab, or something else? -->, because you will have predefined the dimensions used for loading summary data, the dimension-related columns are displayed correspondingly in the page. <!-- KFM: How do we predefine these dimensions? We should provide instructions or a link (or maybe this isn't yet available in the current preview...). -->
 
-You can select any column header to filter or sort the current result by tht column.
+You can select any column header to filter or sort the current result by that column.
 
-The bottom of the customized view shows information such as "50 records (29 selected)" or "50 records". This information refers to the currently loaded records from the **Advanced filter** result. The text "29 selected" refers to the number of records that have been selected by using the column header filter for the loaded records.
-
-At the bottom of the **Inventory summary** page is a **Load more** button that you can use to load more records from Dataverse. The default number of records that is loaded is 50. When you select **Load more**, the next 1,000 available records are loaded into the view. The number on the **Load more** button indicates the currently loaded records and the total number of records for the **Advanced Filter** result.
+The bottom of the **Inventory summary** page shows information such as "50 records (29 selected)" or "50 records". This information refers to the currently loaded records from the **Advanced filter** result. The text "29 selected" refers to the number of records that have been selected by using the column header filter for the loaded records. There is also a **Load more** button that you can use to load more records from Dataverse. The default number of records that is loaded is 50. When you select **Load more**, the next 1,000 available records are loaded into the view. The number on the **Load more** button indicates the currently loaded records and the total number of records for the **Advanced Filter** result.
 
 ![Inventory Summary](media/inventory-visibility-onhand-list.png "Inventory Summary")
