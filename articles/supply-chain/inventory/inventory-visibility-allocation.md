@@ -97,6 +97,10 @@ To use allocation, you must set up the available-to-allocate calculated measure 
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
 
+> [!NOTE]
+> datasource `@iv` is a predefined datasource, physical measures defined in the datasource `@iv` with prefix `@` are also predefined measures, they are predefined configuration for allocation feature, please not change or delete them, otherwise you're likely to cause an unexpected error when you use allocation feature.
+> For predefined calculated measure `@iv.@available_to_allocate`, you only need to add other physical meausres in it, change the calculdated measure name is not allowed.
+
 ### Change the allocation group name
 
 A maximum of eight allocation group names can be set. The groups have a hierarchy.
@@ -131,7 +135,7 @@ Call the `Allocate` API to allocate a product that has specific dimensions. Here
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -152,7 +156,7 @@ For example, you want to allocate a quantity of 10 for product *Bike*, site *1*,
 {
     "id": "???",
     "productId": "Bike",
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -187,7 +191,7 @@ Use the `Reallocate` API to move some allocated quantity to another group combin
         "groupB": "string",
         "groupC": "string"
     },
-    "targetGroups": {
+    "groups": {
         "groupD": "string",
         "groupE": "string",
         "groupF": "string"
@@ -213,7 +217,7 @@ For example, you can move two bikes that have the dimensions \[site=1, location=
         "customerGroup": "VIP",
         "region": "US"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "EU"
@@ -237,7 +241,7 @@ Use the `Consume` API to post the consumption quantity against allocation. For e
     "id": "string",
     "productId": "string",
     "dimensionDataSource": "string",
-    "targetGroups": {
+    "groups": {
         "groupA": "string",
         "groupB": "string",
         "groupC": "string"
@@ -275,7 +279,7 @@ Now, three bikes are sold, and they're taken from the allocation pool. To regist
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
@@ -321,7 +325,7 @@ When you want to consume a quantity of 3 and directly reserve this quantity, you
         "locationId": "11",
         "colorId": "red"
     },
-    "targetGroups": {
+    "groups": {
         "channel": "Online",
         "customerGroup": "VIP",
         "region": "US"
