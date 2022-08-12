@@ -720,6 +720,8 @@
           href: delayed-price-calculation.md
         - name: Pricing functions in POS
           href: pos-pricing-functions.md
+        - name: Commerce pricing APIs
+          href: pricing-apis.md
       - name: Recommendations 
         items:
         - name: Product recommendations overview 
