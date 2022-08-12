@@ -44,28 +44,9 @@ Once you've configured chat within the Omnichannel for Customer Service Administ
 
 Copy the script you obtained for later use because the script values are required to configure the chat module.
 
-## Configure the Commerce chat experience for your e-commerce site 
+### Commerce Chat with Omnichannel for Customer Service mandatory fields
 
-One of the recommended approaches to implementing the chat experience for your e-commerce site is to add the module to the shared header fragment that is used on all of your e-commerce site pages. 
-
-To add the chat module to your site's header fragment in Commerce site builder, follow these steps.
-
-1. In site builder for your site, go to **Fragments** and module **Commerce Chat with Omnichannel for Customer Service**.
-1. Select **+New**.
-1. In the **Select a fragment** dialog box, select the **Commerce Chat with Omnichannel for Customer Service** module, enter a name for the fragment, and then select **OK**.
-1. In the outline view, select the **Msdyn365 cs chat connector** slot. 
-1. In the **Chat properties** properties pane on the right, do the following:
-    1. For **Script source**, enter the script **src** value from the Omnichannel for Customer Service script you obtained above.
-    1. For **Data application id**, enter the **data-app-id** value from the Omnichannel for Customer Service script you obtained above.
-    1. For **Script source**, enter the **data-org-id** value from the Omnichannel for Customer Service script you obtained above.
-    1. For **Script source**, enter the **data-org-url** value from the Omnichannel for Customer Service script you obtained above.
-1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
-1. Go to **Fragments** and open the header fragment for your site. 
-1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add fragment**.
-1. In the **Select modules** dialog box, select the chat fragment you created above, and then select **OK**.
-1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
-
-## Commerce Chat with Omnichannel for Customer Service mandatory fields
+The Omnichannel for Customer Service Administration module script values listed in the following table are required to configure the Commerce Chat with Omnichannel for Customer Service module.
 
 | Module property| Description  |
 | ------------- |--------------|
@@ -74,14 +55,33 @@ To add the chat module to your site's header fragment in Commerce site builder, 
 | Data organization ID      | From the chat widget script source, locate **data-org-id** and use its value for this property. |
 | Data organization URL     | From the chat widget script source, locate **data-org-url** and use its value for this property. |
 
-![Creating a Commerce Chat module fragment in Commerce site builder](media/Commerce-chat-creating-new-fragment.png)
-![Adding a fragment to a header fragment in Commerce Site Builder](media/Commerce-chat-adding-fragment-to-header-fragment.png)
+## Configure the Commerce chat experience for your e-commerce site 
 
-## Commerce headquarters as an application tab for Omnichannel for Customer Service
+One of the recommended approaches to implementing the chat experience for your e-commerce site is to add the module to the shared header fragment that is used on all of your e-commerce site pages. 
 
-Commerce headquarters as an application tab for Omnichannel for Customer Service enables live agents using Omnichannel for Customer Service agent experience user interface to easily access Dynamics 365 Commerce Customer Service module with contextual information for the customer along with their sales orders information. It also enables customer service agents to place new orders, perform returns and verify order status information. 
+To add the chat module to your site's header fragment in Commerce site builder, follow these steps.
 
-## Create a new application tab that loads Commerce headquarters in an iFrame module 
+1. In site builder for your site, go to **Fragments**.
+1. Select **+New**.
+1. In the **Select a fragment** dialog box, select the **Commerce Chat with Omnichannel for Customer Service** module, enter a name for the fragment, and then select **OK**.
+1. In the outline view, select the **Msdyn365 cs chat connector** slot. 
+1. In the **Chat properties** properties pane on the right, do the following:
+    1. For **Script source**, enter the script **src** value from the Omnichannel for Customer Service script you obtained above.
+    1. For **Data application id**, enter the **data-app-id** value from the Omnichannel for Customer Service script you obtained above.
+    1. For **Script source**, enter the **data-org-id** value from the Omnichannel for Customer Service script you obtained above.
+    1. For **Script source**, enter the **data-org-url** value from the Omnichannel for Customer Service script you obtained above.
+    ![Creating a Commerce Chat module fragment in Commerce site builder](media/Commerce-chat-creating-new-fragment.png)
+1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
+1. Go to **Fragments** and open the header fragment for your site. 
+1. In the **Default container** slot, select the ellipsis (**...**), and then select **Add fragment**.
+1. In the **Select modules** dialog box, select the chat fragment you created above, and then select **OK**.
+1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
+
+## Add Commerce headquarters as an application tab for Omnichannel for Customer Service
+
+Adding Commerce headquarters as an application tab for Omnichannel for Customer Service enables live agents using the Omnichannel for Customer Service agent experience user interface to easily access Dynamics 365 Commerce Customer Service module with contextual information for the customer along with their sales orders information. It also enables customer service agents to place new orders, perform returns and verify order status information. 
+
+### Create a new application tab that loads Commerce headquarters in an iFrame module 
 
 To create a new application tab that loads Commerce headquarters in an iFrame module, follow these steps.
 
