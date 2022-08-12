@@ -1,31 +1,19 @@
 ---
-# required metadata
-
 title: Development and administration for finance and operations apps
 description: This page helps developers and IT Pros get started with finance and operations.
-author: josaw
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# keywords: 
-# ROBOTS: 
 audience: IT Pro, Developer
-# ms.devlang: 
 ms.reviewer: josaw
-
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
-ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: "intro-internal"
+ms.assetid: 3d7dfc2a-4be2-4fdc-ac35-cc96868f56ab
 ---
 
 # Development and administration for finance and operations apps

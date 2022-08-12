@@ -1,25 +1,17 @@
 ---
-# required metadata
 title: Set up and process payment orders for Russia
 description: This article explains how to set up and process payment orders for Russia.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 10/28/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Russia # ms.search.industry: 
-ms.author: roschlom
+ms.search.region: Russia
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Set up and process payment orders for Russia

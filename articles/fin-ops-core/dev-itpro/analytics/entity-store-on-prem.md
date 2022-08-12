@@ -1,31 +1,21 @@
 ---
-# required metadata
-
 title: PowerBI.com integration with on-premises environments
 description: This article provides information about how to enable Entity Store for on-premises deployments.
 author: MilindaV
 ms.date: 05/27/2021
 ms.topic: article
 ms.prod: dynamics-365
-ms.service:
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntityStoreOnPrem
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 27661
-ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: milindav
 ms.search.validFrom: 2019-06-17
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 27661
+ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
+ms.search.form: EntityStoreOnPrem
+ms.service: 
 ---
 
 # PowerBI.com integration with on-premises environments

@@ -1,31 +1,20 @@
 ---
-
-# required metadata
-
 title: What's new or changed in finance and operations apps home page
 description: This page points you to topics that can help you learn about the new features in the latest finance and operations applications.
-author: josaw1
+author: sericks007
 ms.date: 02/14/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: DefaultDashboard
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: ["27141", "intro-internal"]
-ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: josaw
+ms.author: sericks
 ms.search.validFrom: 2016-09-30
 ms.dyn365.ops.version: Platform update 2
-
+ms.custom: 27141,  ""intro-internal
+ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
+ms.search.form: DefaultDashboard
 ---
 
 # What's new or changed in finance and operations apps home page

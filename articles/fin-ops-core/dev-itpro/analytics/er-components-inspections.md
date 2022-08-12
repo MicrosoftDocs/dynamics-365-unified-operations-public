@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Inspect the configured ER component to prevent runtime issues
 description: This article explains how to inspect the configured Electronic reporting (ER) components to prevent runtime issues that might occur.
-author: NickSelin
+author: kfend
 ms.date: 01/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-
+ms.custom: 220314
+ms.assetid: 
+ms.search.form: ERSolutionTable, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner
 ---
 
 # Inspect the configured ER component to prevent runtime issues
@@ -35,8 +25,8 @@ Every configured [Electronic reporting (ER)](general-electronic-reporting.md) [f
 
 By default, the validation is automatically applied in the following cases for an ER configuration that contains the previously mentioned ER components:
 
-- You [import](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) a new [version](general-electronic-reporting.md#component-versioning) of an ER configuration into your instance of Microsoft Dynamics 365 Finance.
-- You change the [status](general-electronic-reporting.md#component-versioning) of the editable ER configuration from **Draft** to **Completed**.
+- You [import](general-electronic-reporting.md#importing-an-er-component-from-lcs-to-use-it-internally) a new version of an ER configuration into your instance of Microsoft Dynamics 365 Finance.
+- You change the status of the editable ER configuration from **Draft** to **Completed**.
 - You [rebase](general-electronic-reporting.md#upgrading-a-format-selecting-a-new-version-of-base-format-rebase) an editable ER configuration by applying a new base version.
 
 You can explicitly run this validation. Select one of the following three options, and follow the steps that are provided:
@@ -775,7 +765,7 @@ Modify the configured format by removing the binding for the **Statement\\Party\
 
 ## <a id="i12"></a>Not linked template
 
-When you [manually](er-fillable-excel.md#manual-entry) configure an ER format component to use a template to generate an outbound document, you must manually add the **Excel\\File** element, add the required template as an attachment of the editable component, and select that attachment in the added **Excel\\File** element. In this way, you indicate that the added element will fill the selected template at runtime. When you configure a format component version in **Draft** [status](general-electronic-reporting.md#component-versioning), you might add several templates to the editable component and then select each template in the **Excel\\File** element to run the ER format. In this way, you can see how different templates are filled at runtime. If you have templates that aren't selected in any **Excel\\File** elements, the ER format designer warns you that those templates will be deleted from the editable ER format component version when its status is changed from **Draft** to **Completed**.
+When you [manually](er-fillable-excel.md#manual-entry) configure an ER format component to use a template to generate an outbound document, you must manually add the **Excel\\File** element, add the required template as an attachment of the editable component, and select that attachment in the added **Excel\\File** element. In this way, you indicate that the added element will fill the selected template at runtime. When you configure a format component version in **Draft** status, you might add several templates to the editable component and then select each template in the **Excel\\File** element to run the ER format. In this way, you can see how different templates are filled at runtime. If you have templates that aren't selected in any **Excel\\File** elements, the ER format designer warns you that those templates will be deleted from the editable ER format component version when its status is changed from **Draft** to **Completed**.
 
 The following steps show how this issue might occur.
 

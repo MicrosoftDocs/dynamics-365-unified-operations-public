@@ -1,16 +1,16 @@
 ---
 title: Independent software vendor (ISV) development home page
 description: This article provides links to topics about development by independent software vendors (ISVs).
-author: RobinARH
+author: josaw1
 ms.date: 08/27/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: "intro-internal"
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: "intro-internal"
 ---
 
 # Independent software vendor (ISV) development home page

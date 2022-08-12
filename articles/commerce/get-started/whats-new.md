@@ -1,25 +1,18 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Retail
 description: This page points you to resources that can help you learn about the new features in the latest releases of Microsoft Dynamics 365 Retail.
-author: sericks007
+author: josaw1
 ms.date: 10/20/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-audience: Application User, IT Pro, Developer 
-# ms.devlang: 
+audience: Application User, IT Pro, Developer
 ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: jeffbl
-ms.search.validFrom: 2017-07-31  
+ms.author: josaw
+ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
+ms.search.industry: retail
 ---
 
 # What's new and changed in Dynamics 365 Retail

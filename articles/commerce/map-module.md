@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Map module
 description: This article covers map modules and describes how to configure them in Microsoft Dynamics 365 Commerce.
-author:  anupamar-ms
+author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Application User
-# ms.devlang:
-ms.reviewer: v-chgri
-# ms.tgt\_pltfrm:
-ms.custom:
-ms.assetid:
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry:
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: 
 ---
 
 # Map module

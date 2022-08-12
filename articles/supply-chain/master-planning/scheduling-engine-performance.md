@@ -298,7 +298,9 @@ An alternative to using parallel operations is either to model the pairs as "vir
 
 ### Route with quantity of resources higher than 1
 
-If setting the quantity of resources needed for an operation higher than one, then it results effectively the same as using primary/secondary operations because multiple parallel jobs are sent to the engine. However, for this case there is not an option of using specific resource assignments, because a quantity higher than one requires that more than one resource is applicable for the operation.
+If the quantity of resources needed for an operation is greater than one, then the result is effectively the same as using primary/secondary operations because multiple parallel jobs will be sent to the engine. However, for this case, it isn't possible to use specific resource assignments because a quantity higher than one requires more than one resource to be applicable for the operation.
+
+A secondary operation that has a resource load quantity greater than one means that the specified quantity of secondary resources is needed for each resource of the primary operation. For example, if a primary operation has its quantity of resources set to two and its secondary operation has its resource quantity set to three, then a total of six resources is needed for the secondary operation.
 
 ### Excessive use of finite capacity
 

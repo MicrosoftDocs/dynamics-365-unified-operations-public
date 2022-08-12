@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Calculate inventory availability for retail channels
 description: This article describes how a company can use Microsoft Dynamics 365 Commerce to view estimated on-hand availability for products in the online and store channels.
 author: hhainesms
@@ -8,22 +6,14 @@ ms.date: 09/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: hhaines
 ms.search.validFrom: 2020-02-11
 ms.dyn365.ops.version: Release 10.0.10
-
+ms.custom: 
+ms.assetid: 
 ---
 # Calculate inventory availability for retail channels
 

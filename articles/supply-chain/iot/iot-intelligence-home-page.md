@@ -4,7 +4,7 @@
 title: IoT Intelligence home page
 description: This article provides links to information about IoT Intelligence.
 author: johanhoffmann
-ms.date: 12/09/2020
+ms.date: 08/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -28,6 +28,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # IoT Intelligence home page
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [iot-sdi-announcement](../../includes/iot-sdi-announcement.md)]
 
 > [!IMPORTANT]
 > This feature is currently only available in the following countries/regions:

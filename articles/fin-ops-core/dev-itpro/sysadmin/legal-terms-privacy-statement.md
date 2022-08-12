@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Add links to your organization's legal terms and privacy statement
 description: This article explains how administrators can add links to their organization's legal terms and privacy statement in the About pane.
-author: aneesmsft
+author: jasongre
 ms.date: 10/02/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: SystemParameters, SysAbout
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 267894
-ms.assetid: b74f8d8b-e20b-4ffd-8fd6-c64c2fe31c8a
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: aneesa
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Application update 4
-
+ms.custom: 267894
+ms.assetid: b74f8d8b-e20b-4ffd-8fd6-c64c2fe31c8a
+ms.search.form: SystemParameters, SysAbout
 ---
 
 # Add links to your organization's legal terms and privacy statement

@@ -1,17 +1,17 @@
 ---
 title: Independent software vendor (ISV) licensing
-description: This article describes the independent software vendor (ISV) licensing feature. 
+description: This article describes the independent software vendor (ISV) licensing feature.
 author: peakerbl
 ms.date: 05/08/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 70381
-ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 70381
+ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
 ---
 
 # Independent software vendor (ISV) licensing

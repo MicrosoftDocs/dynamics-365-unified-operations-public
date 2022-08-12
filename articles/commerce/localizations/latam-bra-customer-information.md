@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Manage customer information in POS for Brazil
 description: This article describes how to manage customer information in Commerce point of sale (POS) for Brazil.
-author: akviklis
-manager: annbe
+author: EvgenyPopovMBS
 ms.date: 12/01/2021
 ms.topic: article
-ms.prod:
-
-ms.technology:
-
-# optional metadata
-
-ms.search.form:
+ms.prod: 
+ms.technology: 
 audience: Application User
-# ms.devlang:
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm:
-# ms.custom:
+ms.reviewer: v-chgriffin
 ms.search.region: Brazil
-ms.search.industry: Retail
-ms.author: sepism
+ms.author: josaw
 ms.search.validFrom: 2021-01-01
 ms.dyn365.ops.version: 10.0.18
-
+ms.search.industry: Retail
+ms.search.form: 
+manager: annbe
 ---
 # Manage customer information in POS for Brazil
 

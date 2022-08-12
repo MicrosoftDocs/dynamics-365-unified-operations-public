@@ -1,27 +1,16 @@
 ---
-# required metadata
-
-title: Document reporting preview options 
+title: Document reporting preview options
 description: This article provides information about the options available in the embedded document reporting previewer.
 author: RichdiMSFT
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry:
 ms.author: richdi
-ms.search.validFrom: 2020-06-21 
+ms.search.validFrom: 2020-06-21
 ms.dyn365.ops.version: Platform update 34
 ---
 

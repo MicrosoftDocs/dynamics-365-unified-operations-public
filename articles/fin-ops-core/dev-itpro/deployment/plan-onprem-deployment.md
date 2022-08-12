@@ -1,31 +1,20 @@
 ---
-# required metadata
-
 title: Plan and prepare for on-premises deployments
 description: This article will help you plan and prepare for your on-premises deployment.
-author: PeterRFriis
+author: faix
 ms.date: 01/26/2022
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.prod: dynamics-365
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 60373
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peterfriis
+ms.author: osfaixat
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform Update 8
-
+ms.custom: 60373
+ms.assetid: 
+ms.service: 
 ---
 
 # Plan and prepare for on-premises deployments

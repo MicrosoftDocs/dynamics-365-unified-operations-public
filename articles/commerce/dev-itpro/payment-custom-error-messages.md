@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Create custom localized error messages for payment terminal extensions
 description: This article explains how to create custom error messages for payment terminal extensions.
 author: Reza-Assadi
@@ -8,22 +6,14 @@ ms.date: 07/20/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-07-20
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 
+ms.search.industry: Retail
 ---
 
 # Create custom localized error messages for payment terminal extensions

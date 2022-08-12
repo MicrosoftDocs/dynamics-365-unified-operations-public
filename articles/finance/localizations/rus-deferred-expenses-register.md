@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Deferred expenses register
 description: This article provides information about how to generate and set up deferrals.
-author: Akroshkina
+author: AdamTrukawka
 ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2020-09-11
 ms.dyn365.ops.version: 10.0.0
-
+ms.search.form: 
 ---
 
 # Deferrals register

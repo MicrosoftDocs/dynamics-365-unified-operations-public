@@ -1,29 +1,17 @@
 ---
-# required metadata
-
-title: Process and consume data packages in finance and operations apps 
+title: Process and consume data packages in finance and operations apps
 description: This article explains how to process and consume data packages in a solution.
-author: kfend
+author: sericks007
 ms.date: 02/28/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+ms.search.region: Global
+ms.author: sericks
 ms.custom: 197113
 ms.assetid: ff06961e-2d11-4e4c-addf-5e4b9528a924
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: omarc
-
-
 ---
 
 # Process and consume data packages in finance and operations apps 

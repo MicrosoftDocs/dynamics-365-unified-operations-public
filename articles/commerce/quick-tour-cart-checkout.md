@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Cart and checkout pages overview
 description: This article provides an overview of the cart and checkout pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
@@ -8,20 +6,14 @@ ms.date: 09/15/2020
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.search.industry: 
+ms.search.form: 
 ---
 
 # Cart and checkout pages overview

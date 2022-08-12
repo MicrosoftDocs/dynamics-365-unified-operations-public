@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Create and apply branding to the Retail Experience app
-description: This article explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store. 
+description: This article explains how you can apply your branding to the Retail Experience app, and release it to Google Play and the Apple App Store.
 author: josaw1
 ms.date: 06/09/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 251594
-ms.assetid: 922881a2-f12a-41b4-8ef9-a5b31b464ef1
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 251594
+ms.assetid: 922881a2-f12a-41b4-8ef9-a5b31b464ef1
+ms.search.industry: Retail
 ---
 
 # Create and apply branding to the Retail Experience app

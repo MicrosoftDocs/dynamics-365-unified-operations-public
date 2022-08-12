@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Advance invoices for Commerce for Eastern Europe
-description: This article explains how to set up advance notices for Commerce for Eastern Europe. 
-author: epopov
+description: This article explains how to set up advance notices for Commerce for Eastern Europe.
+author: EvgenyPopovMBS
 ms.date: 10/23/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application user
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia 
-ms.search.industry: Retail
-ms.author: epopov
+ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
+ms.author: josaw
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.1
-
+ms.search.industry: Retail
 ---
 
 # Advance invoices for Commerce for Eastern Europe

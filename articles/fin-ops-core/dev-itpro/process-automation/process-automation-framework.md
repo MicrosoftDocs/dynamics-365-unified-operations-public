@@ -6,21 +6,13 @@ ms.date: 05/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom:
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: rcarlson
 ms.search.validFrom: 2020-09-10
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
 ---
 
 # Process automation framework development

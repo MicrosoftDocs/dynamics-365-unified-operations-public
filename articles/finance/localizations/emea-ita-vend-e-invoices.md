@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Vendor electronic invoices
 description: This article explains how to configure and submit vendor electronic invoices in Italy.
-author: ikondo
+author: mrolecki
 ms.date: 12/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.custom: 3984823
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2021-12-01
 ms.dyn365.ops.version: 10.0.21
-
+ms.custom: 3984823
+ms.search.form: 
 ---
 
 # Vendor electronic invoices

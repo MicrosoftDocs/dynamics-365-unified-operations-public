@@ -1,29 +1,21 @@
 ---
-# required metadata
-
 title: Support for external gift cards
 description: This article provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Commerce.
-author: BrianShook 
+author: BrianShook
 ms.date: 04/05/2022
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
- # ROBOTS: 
 audience: Developer
-ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: retail
-ms.author: ivanv
+ms.author: brshoo
 ms.search.validFrom: 2017-10-02
 ms.dyn365.ops.version: Application update 4
+ms.custom: 
+ms.assetid: 
+ms.search.industry: retail
+ms.devlang: 
 ---
 
 # Support for external gift cards

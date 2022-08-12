@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Add languages to your site
 description: This article explains how to add support for additional languages to a Microsoft Dynamics 365 Commerce site.
 author: bicyclingfool
@@ -8,21 +6,14 @@ ms.date: 12/12/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: StuHarg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.custom: 
+ms.assetid: 
 ---
 # Add languages to your site
 

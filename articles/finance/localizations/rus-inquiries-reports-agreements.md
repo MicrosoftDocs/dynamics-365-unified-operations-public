@@ -1,27 +1,17 @@
 ---
-# required metadata
-title: Inquiries and reports with agreements  
+title: Inquiries and reports with agreements
 description: This article provides information about restoring previously deducted VAT amounts for fixed assets.
-author: v-nadyuz
+author: AdamTrukawka
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Inquiries and reports with agreements

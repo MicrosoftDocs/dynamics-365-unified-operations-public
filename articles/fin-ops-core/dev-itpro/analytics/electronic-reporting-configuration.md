@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Create Electronic reporting (ER) configurations
-description: This article provides background information that will help you start to use Electronic reporting to create configurations. 
-author: nselin
+description: This article provides background information that will help you start to use Electronic reporting to create configurations.
+author: kfend
 ms.date: 02/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 27621
-ms.assetid: e3f7960d-2e01-46a7-9ac8-c355ac933cd6
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 27621
+ms.assetid: e3f7960d-2e01-46a7-9ac8-c355ac933cd6
+ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 ---
 
 # Create Electronic reporting (ER) configurations

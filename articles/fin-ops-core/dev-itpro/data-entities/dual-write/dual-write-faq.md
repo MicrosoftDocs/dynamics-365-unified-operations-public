@@ -1,13 +1,13 @@
 ---
 title: Dual-write FAQ
 description: This article answers frequently asked questions about dual-write.
-author: tonyafehr
+author: sericks007
 ms.date: 05/20/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: ramasri
 ms.search.validFrom: 2020-07-21
 ms.dyn365.ops.version: AX 7.0.0
 ---

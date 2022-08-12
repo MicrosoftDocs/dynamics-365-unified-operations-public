@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Use event-based data actions
-description: This article describes how to use event-based data actions. 
+description: This article describes how to use event-based data actions.
 author: samjarawan
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
-
+ms.custom: 
+ms.assetid: 
 ---
 # Use event-based data actions
 

@@ -4,7 +4,7 @@
 title: Enable the Microsoft Power Platform integration
 description: This article explains how to enable the Microsoft Power Platform integration by using Microsoft Dynamics Lifecycle Services (LCS) for finance and operations apps and Dataverse.
 author: jaredha
-ms.date: 05/16/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -115,7 +115,7 @@ Follow these steps to configure the **Power Platform Integration** section.
 > [!IMPORTANT]
 > The **language** and **currency** values of the Dataverse instance that is created and linked to your finance and operations apps environment are automatically determined, based on the physical address of your Azure AD tenant. For example, if the address is in Redmond, Washington, USA, the language will be English by default, and the currency will be US dollars (USD).
 >
-> If you require values that differ from the default values, contact Microsoft support. We can help link an existing Dataverse instance that you manually provision to the finance and operations apps environment. Eventually, fields for the language and currency will be added as setup options, so that you can manually set them or accept the default values.
+> If you require values that differ from the default values, you can create the Power Platform environment with Dataverse to your own specifications.  You can then link to that existing environment from your finance and operations environment in LCS as long as you do not enable Power Platform integration during the creation of your finance and operations environment.  Linking to an existing Dataverse instance is only possible from an existing finance and operations apps environment that has not been previously associated with any other Dataverse instance.
 
 ## <a name="enable-after-deploy"></a>Enable integration after environment deployment
 

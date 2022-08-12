@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Business document management overview
 description: This article provides information about how to use the Business document management feature of the ER framework.
-author: NickSelin
+author: kfend
 ms.date: 04/23/2021
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: 10.0.5
-
+ms.assetid: 
+ms.search.form: ERBDWorkspace, ERBDParameters, ERSecurityAccessEditor
 ---
 
 # Business document management overview

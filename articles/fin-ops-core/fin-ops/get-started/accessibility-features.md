@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Accessibility features
 description: This article describes the functionality that is designed to help users who have various disabilities.
-author: TLeforMicrosoft
+author: jasongre
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tlefor
-ms.search.validFrom: 2017-12-31 
+ms.author: jasongre
+ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ---
 

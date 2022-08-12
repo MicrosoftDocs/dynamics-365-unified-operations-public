@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Standard Audit File for Tax (SAF-T) electronic report
 description: This article explains how to generate the Standard Audit File for Tax (SAF-T) electronic report in Microsoft Dynamics 365 Finance.
-author: liza-golub
-ms.author: elgolu
+author: AdamTrukawka
 ms.date: 06/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.search.industry: 
+ms.author: atrukawk
 ms.search.validFrom: 2022-06-17
-
 ---
 
 # Standard Audit File for Tax (SAF-T) electronic report

@@ -1,13 +1,11 @@
 ---
-# required metadata
-
 title: Public JavaScript APIs for extensible controls
-description: This article shows where to find documentation about the public JavaScript APIs that can be used by extensible controls. 
+description: This article shows where to find documentation about the public JavaScript APIs that can be used by extensible controls.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-08-30

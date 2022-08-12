@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Consume Retail Server APIs in external applications
 description: This article describes how to consume the Retail Server APIs in external applications.
-author: mugunthanm
+author: josaw1
 ms.date: 01/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 28021
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.12
-
+ms.custom: 28021
+ms.assetid: 
 ---
 
 # Consume Retail Server APIs in external applications

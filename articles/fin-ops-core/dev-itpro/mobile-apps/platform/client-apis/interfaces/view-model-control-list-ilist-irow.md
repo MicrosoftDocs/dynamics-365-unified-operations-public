@@ -1,12 +1,12 @@
 ---
 title: Row type
 description: Row controls are what make up a list. A list contains any number of row controls.
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ---
 
 # Row type

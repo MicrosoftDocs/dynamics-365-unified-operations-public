@@ -4,7 +4,7 @@
 title: Priority-based batch scheduling
 description: This article provides information about the functionality for priority-based batch scheduling.
 author: matapg007
-ms.date: 06/21/2022
+ms.date: 07/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -153,7 +153,7 @@ A new internal system batch job, **System job to clean up expired batch heartbea
 ## Best practices
 - We recommend that you adjust the priority so that all batch jobs don't have the same priority. For example, don't set the priority for all batch jobs to **High** or **Critical**. The following table provides the distribution that you should consider when configuring batch priorities.
 
-    | Priority	| Possible distribution percentage of bat jobs, excluding **Reserved capacity** |
+    | Priority	| Possible distribution percentage of batch jobs, excluding **Reserved capacity** |
     |----------|--------|
     | Low | 10% to 50%
     | Normal |	15% to 35%
@@ -169,6 +169,14 @@ A new internal system batch job, **System job to clean up expired batch heartbea
 - If there are larger workloads, we recommend breaking them down into smaller workloads or tasks so that they execute and complete in ten minutes or less.
 - SQL Server transactions in batch tasks should be as small as possible in duration so that it doesn't cause SQL Server blocking that may impact performance of other batch jobs and user activity.
 - We recommend having more than one batch group to take advantage of priority-based batch scheduling, and use different priorities at a batch-group level.
+- When debugging batches in UAT by connecting to a development machine, you will have to disable the reset of the batch server by running the following script to ensure that all the batches are running on the development machine. 
+
+    ```
+    UPDATE ssc
+    SET ssc.enablebatch = 0
+    FROM dbo.sysserverconfig ssc
+    WHERE ssc.serverid = '<servername Tier2 batch server>'   
+    ```
 
 ## Automatic batch group migration for batch jobs
 

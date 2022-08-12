@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Cash register functionality for France
 description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-manager: annbe
 ms.date: 08/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: France
-ms.search.industry: Retail
-ms.author: epopov
-ms.search.validFrom: 2018-2-28
+ms.author: josaw
+ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: 7.3.2
-
+ms.search.industry: Retail
+ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
+manager: annbe
 ---
 # Cash register functionality for France
 

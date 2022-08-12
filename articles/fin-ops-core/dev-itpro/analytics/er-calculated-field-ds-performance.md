@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Improve the performance of ER solutions by adding parameterized CALCULATED FIELD data sources
 description: This article explains how you can help improve the performance of Electronic reporting (ER) solutions by adding parameterized CALCULATED FIELD data sources.
-author: NickSelin
+author: kfend
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 
 ms.dyn365.ops.version: 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Improve the performance of ER solutions by adding parameterized CALCULATED FIELD data sources
