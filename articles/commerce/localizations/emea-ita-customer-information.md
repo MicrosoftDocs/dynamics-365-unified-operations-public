@@ -4,7 +4,7 @@
 title: Customer information management for Italy
 description: This article describes how to handle customer information in POS for Italy.
 author: sepism
-ms.date: 09/21/2021
+ms.date: 08/12/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -35,19 +35,24 @@ This article describes how you can handle customer information, such as the cust
 
 You can specify the customer information, such as the fiscal code or lottery code, when you create or edit a customer master record in POS. You can also specify the lottery code for a sales transaction by copying it from the transaction customer or entering it manually. The lottery code can then be printed on both regular and fiscal receipts, and it can be used for the national lottery. Personal fiscal codes can also be used to search for a customer in POS.
 
-> [!NOTE]
+> [!WARNING]
 > It isn't possible to specify a lottery code for a customer in POS when **Create customer in async mode** is enabled in the POS functionality profile. Support for the async customer creation mode may be added in future updates.
 
 ## Setup
 
 You must complete the following configuration to use this functionality:
 
+- Enable the customer information management feature for Italy
 - Set up a registration type for the lottery code.
 - Add the **Add customer information** operation to screen layouts.
 - Activate the inquiry for customer information.
 - Set up receipt formats.
 - Add a customer search criterion.
 - Configure channel components.
+
+### Enable the customer information management feature for Italy
+
+You must enable the following feature in the **Feature management** workspace: **(Italy) Customer information management in Retail POS**.
 
 ### Set up a registration type for the lottery code
 
@@ -66,7 +71,7 @@ On the **Button grids** page, select the button grid where the operation should 
 
 If the customer information isn't specified for a sales transaction, an inquiry for that information can be triggered automatically after the transaction is finalized. This approach is an alternative to the **Add customer information** operation.
 
-To activate the inquiry for customer information, enable the **(Italy) Customer information management in Retail POS** feature in the **Feature management** workspace, and set the **Enable inquiry of customer information in sales transactions** option to **Yes** in the **Tax parameters** section on the **Functions** FastTab of the **POS functionality profiles** page.
+To activate the inquiry for customer information, set the **Enable inquiry of customer information in sales transactions** option to **Yes** in the **Tax parameters** section on the **Functions** FastTab of the **POS functionality profiles** page.
 
 ### Set up receipt formats
 
@@ -98,6 +103,11 @@ You can add a customer search criterion so that customers can be searched for in
 On the **Commerce parameters** page, on the **POS search criteria** tab, add a new customer search criterion. In the **Customer search criteria** field, select **Tax registration number**. Select the **Display as shortcut** check box, but leave the **Can be refined** check box cleared. Then, on the **Distribution schedules** page, run the **1110** job.
 
 ### Configure channel components
+
+> [!WARNING]
+> You need to make specific steps to configure Commerce channel components for Italy to enable customer information management only if you are using the Commerce version 10.0.28 or earlier. Starting from the version 10.0.29, all required channel components are enabled out-of-the-box.
+>
+> However, if you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later, you need to make the steps that are described in the [Migrate to version 10.0.29 or later](#migrate-to-version-10029-or-later) section.
 
 To make the functionality that is specific to Italy available, you must configure extensions for commerce channel components. For more information, see the [Deployment guidelines](#deployment-guidelines) section later in this article.
 
@@ -145,6 +155,11 @@ The following example scenarios show how to work with customer information in PO
 1. Verify that the printed receipt contains the customer's lottery code.
 
 ## Deployment guidelines
+
+> [!WARNING]
+> You need to make specific steps to configure Commerce channel components for Italy to enable customer information management only if you are using the Commerce version 10.0.28 or earlier. Starting from the version 10.0.29, all required channel components are enabled out-of-the-box.
+>
+> However, if you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later, you need to make the steps that are described in the [Migrate to version 10.0.29 or later](#migrate-to-version-10029-or-later) section.
 
 This section provides deployment guidance for enabling customer information management in the localization of Commerce for Italy.
 
@@ -276,5 +291,21 @@ Follow these steps to create deployable packages that contain Commerce component
 1. Run **msbuild** for the whole Retail software development kit (SDK) to create deployable packages.
 1. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
+## Migrate to version 10.0.29 or later
+
+The steps described in this section are required if you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later. You need to follow the below procedure to correctly update your Commerce environment:
+
+1. Update Commerce headquarters.
+1. Enable [France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) in the **Feature management** workspace and distribute the changes to channels.
+1. Update Commerce runtime, Cloud POS, and Modern POS, and exclude legacy France-specific extensions:
+    1. Commerce runtime extensions in the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** files:
+        - Microsoft.Dynamics.Commerce.Runtime.ReceiptsFrance
+        - Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventFrance
+        - Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration
+        - Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance
+    1. POS extensions in the **extensions.json** file:
+        - Microsoft/Receipts.FR
+        - Microsoft/FifAuditEvent.FR
+        - Microsoft/RestrictShiftDuration
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
