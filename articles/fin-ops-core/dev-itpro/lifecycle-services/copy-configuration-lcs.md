@@ -30,6 +30,7 @@ ms.dyn365.ops.version: 2012
 # Copy configurations by using Configuration manager
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
 Before you begin, you must set up Configuration manager (beta). For more information, see [Set up Configuration manager](set-up-configuration-manager-lcs.md).
 
