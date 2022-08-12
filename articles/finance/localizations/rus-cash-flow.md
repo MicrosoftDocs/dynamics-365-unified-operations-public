@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Cash flow management (Russia)
 description: This article walks you through an example that shows how to set up and use cash flow management in Microsoft Dynamics 365 Finance.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 11/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
 ---
 
 # Cash flow management (Russia)

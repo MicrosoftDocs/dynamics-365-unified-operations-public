@@ -1,15 +1,15 @@
 ---
 title: Comments, using, and print statements
 description: This article describes statements in X++.
-author: tonyafehr
+author: josaw1
 ms.date: 08/27/2021
 audience: Developer
-ms.devlang: xpp
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.devlang: xpp
 ---
 
 # Comments, using, and print statements

@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: JPK-V7M reporting
-description: This article explains how to run a VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland. 
-author: liza-golub
+description: This article explains how to run a VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland.
+author: AdamTrukawka
 ms.date: 03/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
 ms.search.region: Poland
-# ms.search.industry: 
-ms.author: elgolu
-
+ms.author: atrukawk
+ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 ---
 
 # JPK-V7M reporting

@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Navigation search
 description: This article explains how to use the search functionality to navigate to pages.
-author: aneesmsft
+author: jasongre
 ms.date: 08/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 25991
-ms.assetid: eef0676f-c4b1-490e-a032-e9c8580f3fea
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: aneesa
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 25991
+ms.assetid: eef0676f-c4b1-490e-a032-e9c8580f3fea
 ---
 
 # Navigation search

@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: VAT declaration (Finland)
-description: This article describes how to set up and generate a value-added tax (VAT) declaration for Finland. 
-author: liza-golub
+description: This article describes how to set up and generate a value-added tax (VAT) declaration for Finland.
+author: AdamTrukawka
 ms.date: 03/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Finland
-ms.author: elgolu
-# ms.search.industry: 
+ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
 ---
 
 # VAT declaration (Finland)

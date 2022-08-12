@@ -6,20 +6,14 @@ ms.date: 09/24/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 89563
-ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: mfp
 ms.search.validFrom: 2018-10-10
 ms.dyn365.ops.version: Platform update 21
+ms.custom: 89563
+ms.assetid: 8DA4DA85-0C2D-4CAF-B350-DAC9C1BE4DF9
 ---
 
 # Extending number of decimals for selected data types

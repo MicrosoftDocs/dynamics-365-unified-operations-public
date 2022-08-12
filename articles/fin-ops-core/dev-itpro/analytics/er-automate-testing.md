@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Automate testing with Electronic reporting
-description: This article explains how you can use the baseline feature of Electronic reporting (ER) framework to automate testing of functionality. 
-author: NickSelin
+description: This article explains how you can use the baseline feature of Electronic reporting (ER) framework to automate testing of functionality.
+author: kfend
 ms.date: 07/02/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERFormatBaselineTable, ERFormatMappingRunLogTable, ERParameters
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-
+ms.search.form: ERSolutionTable, ERFormatBaselineTable, ERFormatMappingRunLogTable, ERParameters
 ---
 
 # Automate testing with Electronic reporting

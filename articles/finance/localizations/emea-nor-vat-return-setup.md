@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Prepare your environment to interoperate with ID-porten and Altinn web services
 description: This article explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
-author: liza-golub
+author: AdamTrukawka
 ms.date: 05/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Norway
-# ms.search.industry: 
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
-
 ---
 
 # Prepare your environment to interoperate with ID-porten and Altinn web services

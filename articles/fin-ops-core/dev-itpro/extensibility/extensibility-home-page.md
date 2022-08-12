@@ -6,21 +6,14 @@ ms.date: 05/14/2019
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: fdahl
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-
+ms.custom: "intro-internal"
+ms.assetid: 
 ---
 # Extensibility home page
 

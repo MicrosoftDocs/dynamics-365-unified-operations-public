@@ -6,20 +6,14 @@ ms.date: 09/20/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form:
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 21761, NotInToc
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: tfehr
 ms.search.validFrom: 2019-05-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
-
+ms.custom: 21761, NotInToc
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # Set up and install Regression suite automation tool tutorial

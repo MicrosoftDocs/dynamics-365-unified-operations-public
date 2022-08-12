@@ -4,9 +4,9 @@ description: This article describes the use of attributes in X++.
 author: pvillads
 ms.date: 08/27/2021
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

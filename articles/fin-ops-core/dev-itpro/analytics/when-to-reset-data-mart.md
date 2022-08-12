@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: sericks
+ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: jiwo
 ms.search.validFrom: 2021-05-06

@@ -5,9 +5,9 @@ author: laneswenka
 ms.date: 05/16/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
-ms.author: ramasri
+ms.author: laswenka
 ms.search.validFrom: 2020-01-06
 ---
 

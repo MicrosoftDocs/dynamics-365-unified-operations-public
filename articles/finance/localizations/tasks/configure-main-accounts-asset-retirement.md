@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: Configure main accounts for asset retirement obligation posting and market discount rates
-description: For Japan, asset retirement obligation needs to be assessed and posted when acquiring a fixed asset with legal obligations at retirement. 
-author: ShylaThompson
+description: For Japan, asset retirement obligation needs to be assessed and posted when acquiring a fixed asset with legal obligations at retirement.
+author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: AssetPosting, AssetDiscountRateSchedule_JP   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Japan
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: AssetPosting, AssetDiscountRateSchedule_JP
 ---
 # Configure main accounts for asset retirement obligation posting and market discount rates
 

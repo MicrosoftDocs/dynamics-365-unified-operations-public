@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Generate fiscal documents for a load
 description: This article explains how to generate fiscal documents for a load for Brazil.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 06/05/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
-
 ---
 
 # Generate fiscal documents for a load 

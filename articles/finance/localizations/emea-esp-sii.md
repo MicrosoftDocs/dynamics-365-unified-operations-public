@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
 description: This article describes how to set up and use Dynamics 365 Finance to interoperate with the SII system of Spain.
-author: liza-golub
+author: AdamTrukawka
 ms.date: 11/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Spain
-# ms.search.industry: 
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
-
 ---
 
 # Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)

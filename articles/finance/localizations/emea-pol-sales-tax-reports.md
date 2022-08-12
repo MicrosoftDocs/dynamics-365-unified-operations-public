@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Sales tax reports for Poland
 description: This article provides information about Polish VAT reporting and the information that is legally required in VAT registers for Poland.
 author: mrolecki
@@ -8,21 +6,13 @@ ms.date: 12/06/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 274063
 ms.search.region: Poland
-# ms.search.industry: 
-ms.author: roschlom
-ms.dyn365.ops.version: AX 7.0.1
+ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
-
+ms.dyn365.ops.version: AX 7.0.1
+ms.custom: 274063
 ---
 
 # Sales tax reports for Poland

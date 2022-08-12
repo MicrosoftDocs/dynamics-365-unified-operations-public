@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Power Apps Host control
 description: By using the Power Apps Host control, you can embed an app from Power Apps into one of the finance and operations apps.
-author: TLeforMicrosoft
+author: jasongre
 ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 16061
-ms.assetid: 80c93e91-1952-44ce-af93-a17965ee476a
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2017-04-26
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 16061
+ms.assetid: 80c93e91-1952-44ce-af93-a17965ee476a
 ---
 
 # Power Apps Host control

@@ -1,8 +1,8 @@
 ---
 title: Troubleshoot issues during initial setup
 description: This article provides information that can help you fix issues that occur during the initial setup of dual-write integration.
-author: RamaKrishnamoorthy 
-ms.date: 08/02/2022
+author: RamaKrishnamoorthy
+ms.date: 08/10/2021
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: sericks

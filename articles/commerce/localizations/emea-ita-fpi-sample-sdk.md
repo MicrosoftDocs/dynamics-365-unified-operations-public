@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Deployment guidelines for the fiscal printer integration sample for Italy (legacy)
 description: This article provides guidelines for deploying the fiscal printer integration sample for Italy from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK).
 author: EvgenyPopovMBS
@@ -9,9 +7,8 @@ ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: epopov
-ms.search.validFrom: 2019-3-1
-
+ms.author: josaw
+ms.search.validFrom: 2019-03-01
 ---
 # Deployment guidelines for the fiscal printer integration sample for Italy (legacy)
 

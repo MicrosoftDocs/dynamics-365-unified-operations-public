@@ -1,12 +1,12 @@
 ---
 title: X++ class library
 description: This article describes the library of classes in X++.
-author: RobinARH
+author: josaw1
 ms.date: 06/18/2019
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
