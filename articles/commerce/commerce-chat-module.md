@@ -117,7 +117,7 @@ To add context variables in Dynamics 365 Omnichannel for Customer Service, follo
 1. Select **Edit**, and then add **AccountNumber** as a context variable of type **text**. This variable will help Commerce headquarters load customer information with matching account numbers. 
 
 > [!NOTE] 
-> In addition to the **AccountNumber** context variable, if you want to read the emails and names of signed-in users from an e-commerce channel you can add **Email** and **Name** as context variables of type **text**. 
+> In addition to the **AccountNumber** context variable, if you want to read the emails and names of signed-in users from an e-commerce channel, you can add **Email** and **Name** as context variables of type **text**. 
 
 
 
