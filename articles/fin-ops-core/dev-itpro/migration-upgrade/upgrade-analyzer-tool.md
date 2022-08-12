@@ -32,6 +32,8 @@ ms.dyn365.ops.version: Platform update 8
 [!include [banner](../includes/banner.md)]
 
 [!include [upgrade banner](../includes/upgrade-banner.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
+
 
 This article explains how to use the Upgrade analyzer tool to plan your upgrade from Microsoft Dynamics AX 2012. This tool is run against an AX 2012 environment and identifies data that you should clean up in AX 2012 to help reduce the subscription cost for finance and operations apps. The tool also suggests SQL configuration optimizations that can help speed up the upgrade processes. Additionally, the tool warns you if any features that you use in AX 2012 are obsolete in the current version. Therefore, you can plan ways to replace or work around those features.
 
