@@ -72,7 +72,7 @@ To post a reservation request, you must enter a value in the request body. Use t
 
 ## <a name="preload-the-inventory-visibility-onhand-query"></a>Preload the Inventory Visibility Onhand Query
 
-# Business Value
+### Business Value
 Loading full inventory onhand list summary records with most specific inventory details are not necessary for all organizations to run their daily business and can take relatively longer time to load. To allow you to obtain the data quickly and easily, we offer the *Preload the Inventory Visibility Onhand Query* feature allowing you to obtain a leaner version of onhand list. This lean onhand list is generated from the query result that is preloaded from your pre-configured query.  You can then view and export the onhand list that only contains information your care, apply additional filters, share with your partners or inject into other systems.
 
 **Preload the Inventory Visibility Summary** is a customized view for the *On-hand Index Query Preload Results* entity. Different from *Inventory summary*, it provides an inventory onhand list for products together with specified dimensions.  Preload the Inventory Visibility Summary data is synced periodically from Inventory Visibility every 15 minutes. To view data on the **Preload the Inventory Visibility Summary** tab, you must turn on the *OnHandIndexQueryPreloadBackgroundService* feature on the **Feature Management** tab and select **Update configuration**.
