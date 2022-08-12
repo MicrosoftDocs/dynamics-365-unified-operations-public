@@ -17,15 +17,15 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
-
 This article describes how to use the Inventory Visibility app.
 
-Inventory Visibility provides a model-driven app for visualization. The app contains three pages: **Configuration**, **Operational visibility**, and **Inventory summary**. It has the following features:
+Inventory Visibility provides a model-driven app for visualization. The app contains three pages: **Configuration**, **Operational visibility**, and **Inventory summary**. It has the following features: <!-- KFM: Do we have another now page now for **Preload the Inventory Visibility Summary**? -->
 
 - It provides a user interface (UI) for on-hand configuration and soft reservation configuration.
 - It supports real-time on-hand inventory queries on various dimension combinations.
 - It provides a UI for posting reservation requests.
 - It provides a customized view of the inventory on-hand for products together with all dimensions.
+<!-- KFM: Should we add another feature to this list for the on-hand summary? -->
 
 ## Prerequisites
 
@@ -49,7 +49,7 @@ The **Operational Visibility** page provides the results of a real-time on-hand 
 
 The **Onhand Query** tab shows the results of a real-time on-hand inventory query.
 
-When you select the **Onhand Query** tab, the system requests your credentials so that it can get the bearer token that is required to query the Inventory Visibility service. You can just paste the bearer token into the **BearerToken** field and close the dialog box. You can then post an on-hand query request.
+When you open the **Onhand Query** tab of the **Operational Visibility** page, the system requests your credentials so that it can get the bearer token that is required to query the Inventory Visibility service. You can just paste the bearer token into the **BearerToken** field and close the dialog box. You can then post an on-hand query request.
 
 If the bearer token isn't valid, or if it has expired, you must paste a new one into the **BearerToken** field. Enter the correct **Client ID**, **Tenant ID**, **Client Secret** values, and then select **Refresh**. The system will automatically get a new, valid bearer token.
 
@@ -59,42 +59,49 @@ To post an on-hand query, enter the query in the request body. Use the pattern t
 
 ### Reservation posting
 
-Use the **Reservation Posting** tab to post a reservation request. Before you can post a reservation request, you must turn on the *OnHandReservation* feature. For more information about this feature, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
+Use the **Reservation Posting** tab of the **Operational Visibility** page to post a reservation request. Before you can post a reservation request, you must turn on the *OnHandReservation* feature. For more information about this feature and how to turn it on, see [Inventory Visibility reservations](inventory-visibility-reservations.md).
 
 To post a reservation request, you must enter a value in the request body. Use the pattern that is described in [Create one reservation event](inventory-visibility-api.md#create-one-reservation-event). Then select **Post**. To view the request response details, select **Show details**. You can also get the `reservationId` value from the response details.
 
 ## <a name="inventory-summary"></a>Inventory summary
 
-**Inventory summary** is a customized view for the *Inventory OnHand Sum* entity. It provides an inventory summary for products together with all dimensions. Inventory summary data is synced periodically from Inventory Visibility every 15 minutes. To see data on the **Inventory summary** tab, you must turn on the *OnHandMostSpecificBackgroundService* feature on the **Feature Management** tab and select **Update configuration**.
+The **Inventory summary** page provides a customized view for the *Inventory OnHand Sum* entity. It shows an inventory summary for products together with all dimensions. Inventory summary data is synced periodically from Inventory Visibility every 15 minutes.
+
+To see data on the **Inventory summary** page, you must turn on the *OnHandMostSpecificBackgroundService* feature on the **Feature Management** tab of the **Configuration** page and then select **Update configuration** (see also [Configure Inventory Visibility](inventory-visibility-configuration.md)).
 
 > [!NOTE]
-> The *OnHandMostSpecificBackgroundService* feature only tracks product on-hand changes that occurred after you turned on the feature. Data for products that haven't changed since you turned on the feature won't be synced from the inventory service cache to the Dataverse environment. If your **Inventory summary** page doesn't show all of the on-hand information you are expecting, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job and reenable it. This will do the initial push, and all data will sync to the *Inventory OnHand Sum* entity in next 15 minutes. If you want to use this feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
+> The *OnHandMostSpecificBackgroundService* feature only tracks on-hand inventory changes that occurred after you turned on the feature. Data for products that haven't changed since you turned on the feature won't be synced from the inventory service cache to the Dataverse environment. If your **Inventory summary** page doesn't show all of the on-hand information you are expecting, open Supply Chain Management, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job and reenable it. This will do the initial push, and all data will sync to the *Inventory OnHand Sum* entity in the next 15 minutes. If you want to use the *OnHandMostSpecificBackgroundService* feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
 
-## <a name="preload-the-inventory-visibility-onhand-query"></a>Preload the Inventory Visibility Onhand Query
+### <a name="preload-the-inventory-visibility-onhand-query"></a>Preload a streamlined on-hand query
 
-### Business Value
-Loading full inventory onhand list summary records with most specific inventory details are not necessary for all organizations to run their daily business and can take relatively longer time to load. To allow you to obtain the data quickly and easily, we offer the *Preload the Inventory Visibility Onhand Query* feature allowing you to obtain a leaner version of onhand list. This lean onhand list is generated from the query result that is preloaded from your pre-configured query.  You can then view and export the onhand list that only contains information your care, apply additional filters, share with your partners or inject into other systems.
+<!-- KFM: I have assumed this should be a subsection to the Inventory summary section. Please confirm. We may need one more subsection that describes the "standard" way of using this page without preloading, but I'm not sure. -->
 
-**Preload the Inventory Visibility Summary** is a customized view for the *On-hand Index Query Preload Results* entity. Different from *Inventory summary*, it provides an inventory onhand list for products together with specified dimensions.  Preload the Inventory Visibility Summary data is synced periodically from Inventory Visibility every 15 minutes. To view data on the **Preload the Inventory Visibility Summary** tab, you must turn on the *OnHandIndexQueryPreloadBackgroundService* feature on the **Feature Management** tab and select **Update configuration**.
+[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 
-<u>(note: current preview version only allows preload result with site and location. Soon we will release a version which allows user to pre-define other dimensions for loading the results).
-</u>
+Supply Chain Management stores a great deal of information about your current on-hand inventory and makes it available for a wide variety of purposes. However, many everyday operations and third-party integrations require just a small subset of these details, and querying the system for all of them can result in large data sets that take time to assemble and transfer. Therefore, the Inventory Visibility service can periodically fetch and store a streamlined set of on-hand inventory data, and to make that optimized information continuously available. The stored on-hand inventory details are filtered based on configurable business criteria to ensure that only the most relevant information is included. Because the filtered on-hand inventory lists are stored locally in the Inventory Visibility service and are regularly updated, they support quick access, on-demand data exports, and streamlined integration with external systems.
 
 > [!NOTE]
-> Similar to *OnhandMostSpecificBackgroudService*, the *OnHandIndexQueryPreloadBackgroundService* feature only tracks product on-hand changes that occurred after you turned on the feature.Data for products that haven't changed since you turned on the feature won't be synced from the inventory service cache to the Dataverse environment. If your **Inventory summary** page doesn't show all of the on-hand information you are expecting, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job and reenable it. This will do the initial push, and all data will sync to the *On-hand Index Query Preload Results* entity in next 15 minutes. If you want to use this feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
+> The current preview version of this feature only allows preloaded results that include site and location. The final version of the feature is expected to allow you to select other dimensions to preload with the results.
 
-## <a name="additional-tip-for-viewing-data"></a> Additional Tip (for viewing Inventory summary and Preload the Inventory Visibility Summary)
+**Preload the Inventory Visibility Summary** <!-- KFM: What is **Preload the Inventory Visibility Summary**? Is this a new page or a new tab on an existing page, or something else? We should describe how to open it. --> is a customized view for the *On-hand Index Query Preload Results* entity. Unlike the *Inventory summary* entity, the *On-hand Index Query Preload Results* entity provides an on-hand inventory list for products together with selected dimensions. Inventory Visibility syncs the preloaded summary data every 15 minutes.
 
-By using the **Advanced filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters. To learn more about how to use the **Advanced filter**, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced).
+To view data on the **Preload the Inventory Visibility Summary** tab, you must turn on the *OnHandIndexQueryPreloadBackgroundService* feature on the **Feature Management** tab of the **Configuration** page and then select **Update configuration** (see also [Configure Inventory Visibility](inventory-visibility-configuration.md)).
 
-In **Inventory summary**, the top of the customized view provides three fields: **Default dimension**, **Custom dimension**, and **Measure**. You can use these fields to control which columns are visible.
+> [!NOTE]
+> As with the *OnhandMostSpecificBackgroudService* feature, the *OnHandIndexQueryPreloadBackgroundService* feature only tracks on-hand inventory changes that occurred after you turned on the feature. Data for products that haven't changed since you turned on the feature won't be synced from the inventory service cache to the Dataverse environment. If your **Inventory summary** page doesn't show all of the on-hand information you are expecting, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job and reenable it. This will do the initial push, and all data will sync to the *On-hand Index Query Preload Results* entity in next 15 minutes. If you want to use this feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
 
-In **Preload the Inventory Visibility Summary**, since you have predefined the dimensions used for loading summary data, the dimension-related columns will be displayed correspondingly in the page. 
+### <a name="additional-tip-for-viewing-data"></a>Filter and browse the Inventory summary page
 
-You can select the column header to filter or sort the current result.
+By using the **Advanced filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters. To learn more about how to use the advanced filter, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced).
 
-The bottom of the customized view shows information such as "50 records (29 selected)" or "50 records." This information refers to the currently loaded records from the **Advanced filter** result. The text "29 selected" refers to the number of records that have been selected by using the column header filter for the loaded records.
+The **Inventory summary** page provides three fields above the grid (**Default dimension**, **Custom dimension**, and **Measure**) that you can use to control which columns are visible.
 
-At the bottom of the view is a **Load more** button that you can use to load more records from Dataverse. The default number of records that is loaded is 50. When you select **Load more**, the next 1,000 available records are loaded into the view. The number on the **Load more** button indicates the currently loaded records and the total number of records for the **Advanced Filter** result.
+In **Preload the Inventory Visibility Summary** <!-- KFM: Again, what is **Preload the Inventory Visibility Summary**? A page, a tab, or something else? -->, because you will have predefined the dimensions used for loading summary data, the dimension-related columns are displayed correspondingly in the page. <!-- KFM: How do we predefine these dimensions? We should provide instructions or a link. -->
+
+You can select any column header to filter or sort the current result by tht column.
+
+The bottom of the customized view shows information such as "50 records (29 selected)" or "50 records". This information refers to the currently loaded records from the **Advanced filter** result. The text "29 selected" refers to the number of records that have been selected by using the column header filter for the loaded records.
+
+At the bottom of the **Inventory summary** page is a **Load more** button that you can use to load more records from Dataverse. The default number of records that is loaded is 50. When you select **Load more**, the next 1,000 available records are loaded into the view. The number on the **Load more** button indicates the currently loaded records and the total number of records for the **Advanced Filter** result.
 
 ![Inventory Summary](media/inventory-visibility-onhand-list.png "Inventory Summary")
