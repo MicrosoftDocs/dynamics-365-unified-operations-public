@@ -196,12 +196,12 @@ The steps described in this section are required if you are using Commerce versi
 1. Update Commerce headquarters.
 1. Enable [France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) in the **Feature management** workspace and distribute the changes to channels.
 1. Update Commerce runtime, Cloud POS, and Modern POS, and exclude the following legacy France-specific extensions:
-    1. Commerce runtime extensions in the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** files:
+    - Commerce runtime extensions in the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** files:
         - Microsoft.Dynamics.Commerce.Runtime.ReceiptsFrance
         - Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventFrance
         - Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration
         - Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance
-    1. POS extensions in the **extensions.json** file:
+    - POS extensions in the **extensions.json** file:
         - Microsoft/Receipts.FR
         - Microsoft/FifAuditEvent.FR
         - Microsoft/RestrictShiftDuration
