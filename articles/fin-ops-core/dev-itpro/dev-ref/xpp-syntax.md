@@ -1,12 +1,12 @@
 ---
 title: X++ syntax
-description: This article contains the syntax reference for X++. 
-author: RobinARH
+description: This article contains the syntax reference for X++.
+author: josaw1
 ms.date: 07/22/2019
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

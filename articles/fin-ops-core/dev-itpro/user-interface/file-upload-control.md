@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: File upload control
 description: This article provides information about the file upload control. This control lets users upload files.
-author: aneesmsft
+author: jasongre
 ms.date: 07/27/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 54311
-ms.assetid: 82f47d4d-912c-4f85-81f9-b09c723f72fc
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: aneesa
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 54311
+ms.assetid: 82f47d4d-912c-4f85-81f9-b09c723f72fc
 ---
 
 # File upload control

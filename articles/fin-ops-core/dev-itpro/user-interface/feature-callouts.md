@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Feature callouts
 description: Trigger feature callouts raise awareness of new capabilities to users.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 05/16/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid:
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
-ms.search.validFrom: 2019-5-31
+ms.search.validFrom: 2019-05-31
 ms.dyn365.ops.version: Platform update 26
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Feature callouts

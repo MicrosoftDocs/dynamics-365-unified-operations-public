@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: What's new or changed in finance and operations apps version 10.0.5 (October 2019)
 description: This article describes features that are either new or changed in finance and operations apps version 10.0.5. This version releases in October.
-author: tonyafehr
+author: sericks007
 ms.date: 10/01/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-ROBOTS: NOINDEX, NOFOLLOW
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
+ms.reviewer: sericks
+ms.search.region: Global
+ms.author: sericks
+ms.search.validFrom: 
+ms.dyn365.ops.version: Release 10.0.5
 ms.custom: 
 ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
-ms.search.validFrom:  
-ms.dyn365.ops.version: Release 10.0.5
-
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 # What's new or changed in finance and operations apps version 10.0.5 (October 2019)
 

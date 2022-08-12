@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Egypt overview
-description: This article provides an overview of functionality specific to Egypt. 
-author: ilkond
+description: This article provides an overview of functionality specific to Egypt.
+author: mrolecki
 ms.date: 09/15/2021
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-
 ms.search.region: Egypt
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-
 ---
 
 # Egypt overview

@@ -5,12 +5,12 @@ author: FrankDahl
 ms.date: 03/09/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom:
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-03-09
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
 ---
 
 # Configure non-administrator users to use RSAT

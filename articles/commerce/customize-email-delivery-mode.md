@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Customize transactional emails by mode of delivery
 description: This article describes how to set up custom email templates for specific notification types and modes of delivery in Microsoft Dynamics 365 Commerce.
-author: stuharg
+author: bicyclingfool
 ms.date: 11/16/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: stuharg
 ms.search.validFrom: 2020-10-26
 ms.dyn365.ops.version: Release 10.0.16
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Customize transactional emails by mode of delivery

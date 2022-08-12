@@ -6,22 +6,14 @@ ms.date: 04/10/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 268724
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: fdahl
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: Platform update 4
-
+ms.custom: 268724
+ms.assetid: 
 ---
 
 # Extensibility changes in Finance and Operations, Enterprise edition 7.3

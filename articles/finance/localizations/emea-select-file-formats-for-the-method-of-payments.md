@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: File formats for methods of payment
 description: This article describes the two methods for getting file formats that you can use for methods of payment.
-author: anasyash
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustPaymMode, VendPaymMode
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 262514
 ms.search.region: Belgium, France, Germany, Norway, Spain, Sweden, Switzerland
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 262514
+ms.search.form: CustPaymMode, VendPaymMode
 ---
 
 # File formats for methods of payment

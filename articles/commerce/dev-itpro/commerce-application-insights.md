@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Log extension events to Application Insights
 description: This article explains how to log events to Customer Application Insights from Commerce runtime (CRT) extensions.
-author: mugunthanm
+author: josaw1
 ms.date: 09/18/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 28021
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.7
-
+ms.custom: 28021
+ms.assetid: 
 ---
 
 # Log extension events to Application Insights

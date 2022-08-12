@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Pre-extended columns in the channel database
 description: This article explains how the pre-extended columns in the channel database are consumed for extensions.
-author: mugunthanm
-ms.date: 08/01/2022
+author: josaw1
+ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom:
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Pre-extended columns in the channel database

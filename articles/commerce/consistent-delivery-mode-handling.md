@@ -1,13 +1,11 @@
 ---
-# required metadata
-
 title: Enable consistent delivery mode handling in e-commerce channels
 description: This article describes how to enable consistent delivery mode handling to address possible issues that are related to charges flows in Microsoft Dynamics 365 Commerce e-commerce channels.
 author: gvrmohanreddy
 ms.date: 02/24/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
-ms.reviewer: v-chgri
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2022-02-10

@@ -1,17 +1,14 @@
 ---
-# required metadata
-
 title: Set up the fiscal integration for Commerce channels
-description: This article provides guidelines for setting up the fiscal integration functionality for Commerce channels. 
+description: This article provides guidelines for setting up the fiscal integration functionality for Commerce channels.
 author: EvgenyPopovMBS
 ms.date: 04/28/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 2017-06-20
-
 ---
 # Set up the fiscal integration for Commerce channels
 

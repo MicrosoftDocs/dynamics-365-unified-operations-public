@@ -1,29 +1,21 @@
 ---
-# required metadata
-
 title: Configure and install Commerce Scale Unit (self-hosted)
 description: This article explains how to use self-service to configure and install Commerce Scale Unit (self-hosted) on computers in a brick-and-mortar store.
 author: jashanno
 ms.date: 11/22/2021
 ms.topic: article
-ms.prod:
-ms.technology:
-# optional metadata
-
-ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, RetailChannelProfile, RetailSharedParameters, RetailStoreTable
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: IT Pro
-# ms.devlang:
-ms.reviewer: tfehr
-# ms.tgt_pltfrm:
-ms.custom: 219744
-ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 219744
+ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
+ms.search.industry: Retail
+ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, RetailChannelProfile, RetailSharedParameters, RetailStoreTable
 ---
 
 # Configure and install Commerce Scale Unit (self-hosted)

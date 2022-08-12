@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: Finnish Intrastat
 description: This article contains information about the Finnish Intrastat report.
-author: andosip
+author: AdamTrukawka
 ms.date: 12/14/2021
 ms.topic: article
 audience: 
-ms.reviewer: kfend 
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ---
 # Finnish Intrastat

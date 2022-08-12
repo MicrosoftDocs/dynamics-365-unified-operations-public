@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Design multilingual reports in Electronic reporting
 description: This article explains how you can use Electronic reporting (ER) labels to design and generate multilingual reports.
-author: NickSelin
+author: kfend
 ms.date: 05/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERDataModelDesigner, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: ERDataModelDesigner, ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula
 ---
 
 # Design multilingual reports in Electronic reporting

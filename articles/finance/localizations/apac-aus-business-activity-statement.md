@@ -1,28 +1,18 @@
 ---
-# required metadata
-
-title: Business activity statement 
+title: Business activity statement
 description: This article provides information about the business activity statement (BAS) for Australia. The BAS is a form that all businesses submit to the Australian Taxation Office to report their taxation obligations.
-author: anasyash
+author: AdamTrukawka
 ms.date: 01/19/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 12641
 ms.search.region: Australia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
-ms.dyn365.ops.version:
-
+ms.dyn365.ops.version: 
+ms.custom: 12641
 ---
 
 # Business activity statement (BAS)

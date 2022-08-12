@@ -2,7 +2,7 @@
 title: System requirements and prerequisites
 description: This article describes the system requirements and prerequisites that must be in place before you can enable dual-write for finance and operations apps.
 author: NHelgren
-ms.date: 08/02/2022
+ms.date: 02/09/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: sericks

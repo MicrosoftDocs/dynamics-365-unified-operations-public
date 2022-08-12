@@ -1,13 +1,13 @@
 ---
 title: Integrated ledger
 description: This article describes the integration of ledger data between finance and operations and other Dynamics 365 applications using the Dataverse.
-author:  tonyafehr
+author: RamaKrishnamoorthy
 ms.date: 09/06/2019
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
-ms.author: tfehr
+ms.author: ramasri
 ms.search.validFrom: 2020-01-06
 ---
 

@@ -1,28 +1,17 @@
---- 
-# required metadata 
- 
+---
 title: Design ER expressions to call application class methods
-description: This article describes how to reuse the existing application logic in Electronic reporting configurations by calling required methods of application classes. 
-author: NickSelin
+description: This article describes how to reuse the existing application logic in Electronic reporting configurations by calling required methods of application classes.
+author: kfend
 ms.date: 11/02/2021
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
-
+ms.author: filatovm
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
 ---
 # Design ER expressions to call application class methods
 

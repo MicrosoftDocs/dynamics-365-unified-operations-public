@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Chinese vouchers
 description: This article describes Chinese vouchers and how they are used in Microsoft Dynamics 365 Finance.
-author: anasyash
+author: AdamTrukawka
 ms.date: 03/13/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerVoucherType_CN, VoucherTypeWizard_CN
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261454
 ms.search.region: China (PRC)
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 261454
+ms.search.form: LedgerVoucherType_CN, VoucherTypeWizard_CN
 ---
 
 # Chinese vouchers

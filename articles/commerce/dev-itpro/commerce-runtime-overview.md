@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Commerce runtime (CRT) architecture and configuration
 description: This article provides information about the architecture and configuration of the Commerce Runtime (CRT).
-author: AamirAllaq
+author: ShalabhjainMSFT
 ms.date: 06/20/2017
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: ["218654", "intro-internal"]
-ms.assetid: ac422f7e-bc71-4b42-b8c1-4702c6c18421
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: yabinl
+ms.author: shajain
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 218654,  ""intro-internal
+ms.assetid: ac422f7e-bc71-4b42-b8c1-4702c6c18421
 ---
 
 # Commerce runtime (CRT) architecture and configuration

@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition 7.3
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations, Enterprise edition 7.3. This version was released in December 2017.
-author: tonyafehr
+author: sericks007
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global 
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: tfehr
+ms.reviewer: sericks
+ms.search.region: Global
+ms.author: sericks
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3 
+ms.dyn365.ops.version: 7.3
 ---
 
 # What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition 7.3

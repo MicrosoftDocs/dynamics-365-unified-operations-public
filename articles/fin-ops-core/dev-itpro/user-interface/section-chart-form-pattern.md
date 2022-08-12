@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Section Chart form pattern
 description: This article provides information about the Section Chart form pattern.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 29271
-ms.assetid: 049887b5-6277-4902-96ec-a81a3d2348c3
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 29271
+ms.assetid: 049887b5-6277-4902-96ec-a81a3d2348c3
 ---
 
 # Section Chart form pattern

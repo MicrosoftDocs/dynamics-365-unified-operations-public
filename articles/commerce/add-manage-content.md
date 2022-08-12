@@ -1,28 +1,19 @@
 ---
-# required metadata
-
-title: Ways to add content 
+title: Ways to add content
 description: This article provides an overview and select links for where and how to begin managing content using the Microsoft Dynamics 365 Commerce site builder web authoring tool set.
 author: phinneyridge
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.search.industry: 
+ms.search.form: 
 ---
 # Ways to add content
 

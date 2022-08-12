@@ -1,30 +1,21 @@
 ---
-# required metadata
-
-title: Reset receipt numbers 
+title: Reset receipt numbers
 description: This article describes how to reset the receipt numbers that are used for various actions on a desired date (for example, the fiscal year or calendar year).
 author: ShalabhjainMSFT
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: Retail, Commerce
-ms.author: asharchw
+ms.author: shajain
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: Application update 10.0.9
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: Retail, Commerce
+ms.search.form: 
 ---
 
 # Reset receipt numbers 

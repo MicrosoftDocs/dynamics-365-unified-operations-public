@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Open URL in POS
-description: This article provides an overview of improvements that have been made to product and customer search functionality in  Dynamics 365 Commerce. 
-author: AamirAllaq
+description: This article provides an overview of improvements that have been made to product and customer search functionality in  Dynamics 365 Commerce.
+author: ShalabhjainMSFT
 ms.date: 01/28/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application user
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 141393
-ms.assetid: 
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-30
 ms.dyn365.ops.version: 8.1.1
-
+ms.custom: 141393
+ms.assetid: 
+ms.search.industry: Retail
 ---
 
 # Open URL in POS

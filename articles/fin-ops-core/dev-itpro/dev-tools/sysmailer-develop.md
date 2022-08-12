@@ -5,12 +5,12 @@ author: ChrisGarty
 ms.date: 05/23/2018
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: tfehr
-ms.custom: 270774
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Platform update 4
+ms.custom: 270774
 ---
 
 # Develop email experiences by using the SysMailer framework

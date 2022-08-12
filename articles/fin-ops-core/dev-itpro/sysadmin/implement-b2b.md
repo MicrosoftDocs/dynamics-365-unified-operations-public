@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Export business-to-business (B2B) users to Azure Active Directory
 description: This article provides information about implementing the business-to-business transaction functionality.
-author: sarvanisathish
+author: paulliew
 ms.date: 04/09/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: B2BInvitationConfiguration
-# ROBOTS: 
 audience: developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sarvanis
+ms.author: paulliew
 ms.search.validFrom: 2017-10-31
 ms.dyn365.ops.version: Platform update 12
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: B2BInvitationConfiguration
 ---
 
 # Export business-to-business (B2B) users to Azure Active Directory

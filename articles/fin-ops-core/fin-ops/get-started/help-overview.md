@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Help system (contains video)
 description: This article provides an overview of the Help system for finance and operations apps.
 author: edupont04
@@ -8,23 +6,15 @@ ms.date: 07/20/2021
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: SystemParameters
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: ["16381", "intro-internal"]
-ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
+ms.reviewer: edupont
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 16381,  ""intro-internal
+ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
+ms.search.form: SystemParameters
 ---
 
 # Help system

@@ -1,17 +1,17 @@
 ---
 title: Fleet Management sample application
 description: This article is an overview of the Fleet Management sample application.
-author: RobinARH
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: "intro-internal"
-ms.assetid: 999b43b2-f149-4145-9d85-e2a62cd8da1e
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: "intro-internal"
+ms.assetid: 999b43b2-f149-4145-9d85-e2a62cd8da1e
 ---
 
 # Fleet Management sample application

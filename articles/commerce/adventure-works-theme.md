@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Adventure Works theme overview
 description: This article gives an overview of the Adventure Works theme and describes how to apply it to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
@@ -8,21 +6,14 @@ ms.date: 12/03/2021
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.8
-
+ms.search.industry: 
+ms.search.form: 
 ---
 
 # Adventure Works theme overview

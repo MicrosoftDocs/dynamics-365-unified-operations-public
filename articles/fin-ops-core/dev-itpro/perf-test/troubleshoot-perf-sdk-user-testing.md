@@ -1,26 +1,19 @@
 ---
 title: Troubleshooting guide for testing with the Performance SDK
 description: This article provides troubleshooting information for issues that you might encounter during single-user or multi-user testing that uses the Performance SDK.
-author: hasaid
+author: josaw1
 ms.date: 05/28/2020
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Developer
-# ms.devlang:
-ms.reviewer: tfehr
-# ms.tgt_pltfrm:
-ms.custom: 9954
-ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry:
-ms.author: jujoh
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 9954
+ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 ---
 
 # Troubleshooting guide for testing with the Performance SDK
