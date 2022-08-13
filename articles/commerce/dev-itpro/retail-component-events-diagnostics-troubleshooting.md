@@ -192,6 +192,12 @@ To enable diagnostic events in Application Insights in Commerce headquarters, fo
 1. Restart each Commerce Scale Unit. In LCS, go to **Environment details \> Commerce \> Manage**, select a Commerce Scale Unit instance, and then select **Restart**.
 1. Repeat the preceding steps for each environment where you plan to use Application Insights.
 
+>[!NOTE]
+>Starting 10.0.29, these above steps would also enable streaming of Point-of-sale (POS) operational insights events to your 'Application Insights account
+>To control the POS operational insights events through the config file the customer can follow the steps below.
+>1.	Open the DLLHost.exe.config file that is located at “C:\Program Files (x86)\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker” in a text editor
+>2.	Remove the sink XML Element from the “diagnosticsSection” that has the class name “Microsoft.Dynamics.Retail.Diagnostics.OperationalInsights.OperationalInsightsLogger”
+
 #### Disable diagnostic events in Application Insights
 
 If you no longer want to send diagnostic events to Application Insights, you must disable the feature.
@@ -209,5 +215,7 @@ To disable diagnostic events in Application Insights in Commerce headquarters, f
 
 To disable diagnostic events for a single environment, delete the instrumentation key on the **Application Insights registry** tab of the **Operational Insights** page. Then complete steps 3 and 4 of the preceding procedure.
 
+>[!NOTE]
+>Starting 10.0.29, these above steps would also disable streaming of Point-of-sale (POS) operational insights events to your 'Application Insights account' 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
