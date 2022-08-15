@@ -168,22 +168,22 @@ In this example added as part of the page where the Warehouse Management mobile 
 
 1. Go to **Warehouse management \> Setup > Mobile device \> Mobile device steps**.
 1. In the **Filter** field, enter *ContainerIdToPack*. Then select *Step ID: "ContainerIdToPack"* in the drop-down list with no *Menu item name*.
-1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Pack*. Then select **OK** to close the dialog box.
-1. On the details page for the new step configuration (**Pack : ContainerIdToPack**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
+1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Packing*. Then select **OK** to close the dialog box.
+1. On the details page for the new step configuration (**Packing : ContainerIdToPack**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
 1. In the **Add detour** dialog box, find and select the **Create container** menu item that you previously created.
 1. Select **OK** to close the dialog box and add the selected menu item to the detours list.
 1. Select the new detour, and then select **Select fields to send** on the toolbar.
 1. In the **Select fields to send** section, set the following values for the empty row that has already been added there:
-    - **Copy from Pack:** *Location*
+    - **Copy from Packing:** *Location*
     - **Paste in Create container:** *Location*
     - **Auto submit** *Selected* - You don't want to confirm the value in the Warehouse management mobile app
 1. Select **Add** to add one more row and set the following values:
-    - **Copy from Pack:** *Shipment*
+    - **Copy from Packing:** *Shipment*
     - **Paste in Create container:** *Shipment*
     - **Auto submit** *Selected* - You don't want to confirm the value in the Warehouse management mobile app
 1. In the **Bring back from create container** section, set the following values for the empty row that has already been added there:
     - **Copy from Create container:** *Container ID*
-    - **Paste in Pack:** *Container ID* 
+    - **Paste in Packing:** *Container ID* 
      - **Auto submit** *Selected* - You don't want to confirm the value in the Warehouse management mobile app <!-- Planned for 10.0.31 -->
    1. Select **OK** to close the dialog box.
 1. Close the page.
@@ -194,17 +194,17 @@ In this example added as part of the page where the Warehouse Management mobile 
 
 1. Go to **Warehouse management \> Setup > Mobile device \> Mobile device steps**.
 1. In the **Filter** field, enter *ItemId*. Then select *Step ID: "ItemId"* in the drop-down list with no *Menu item name*.
-1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Pack*. Then select **OK** to close the dialog box.
-1. On the details page for the new step configuration (**Pack : ItemId**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
+1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Packing*. Then select **OK** to close the dialog box.
+1. On the details page for the new step configuration (**Packing : ItemId**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
 1. In the **Add detour** dialog box, find and select the **Close container** menu item that you previously created.
 1. Select **OK** to close the dialog box and add the selected menu item to the detours list.
 1. Select the new detour, and then select **Select fields to send** on the toolbar.
 1. In the **Select fields to send** section, you can add data to send which can be used for further look up filtering capabilities:
-    - **Copy from Pack:** *Location*
+    - **Copy from Packing:** *Location*
     - **Paste in Close container:** *Location*
     - **Auto submit** *Cleared* - You do need to manually identify a container ID in the Warehouse management mobile app
 1. Select **Add** to add one more row and set the following values:
-    - **Copy from Pack:** *Shipment*
+    - **Copy from Packing:** *Shipment*
     - **Paste in Close container:** *Shipment*
     - **Auto submit** *Cleared* - You do need to manually identify a container ID in the Warehouse management mobile app
 1. In the **Bring back from create container** section don't add anything because you don't want to pass any values back from the detour menu item.
@@ -453,77 +453,77 @@ Your new mobile device menu items are now ready to be added to the mobile device
 To complete the setup, you must now use the detour configuration on the **Mobile device steps** page to add the five new mobile device menu items to existing menu item flows.
 In this example you perform the following setup:
 
-- Add **Look up location** into the **Pack - Scan packing location** step
-- Add **Look up shipment** into the **Pack - Scan shipment** step
-- Add **Look up item** into the **Pack - Scan item** step
-- Add **Look up container** into the **Pack - Scan container to pack** step
+- Add **Look up location** into the **Packing - Scan packing location** step
+- Add **Look up shipment** into the **Packing - Scan shipment** step
+- Add **Look up item** into the **Packing - Scan item** step
+- Add **Look up container** into the **Packing - Scan container to pack** step
 - Add **Look up container type** into the **Create container - Scan container type** step
 - Add **Look up container** into the **Close container - Scan container** step
 
 #### Add **Look up location** as detour
 1. Go to **Warehouse management \> Setup > Mobile device \> Mobile device steps**.
 1. In the **Filter** field, enter *PackingLocationId*. Then select *Step ID: "PackingLocationId"* in the drop-down list.
-1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Pack*. Then select **OK** to close the dialog box.
-1. On the details page for the new step configuration (**Pack : PackingLocationId**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
+1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Packing*. Then select **OK** to close the dialog box.
+1. On the details page for the new step configuration (**Packing : PackingLocationId**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
 1. In the **Add detour** dialog box, find and select the **Look up location** menu item that you previously created.
 1. Select **OK** to close the dialog box and add the selected menu item to the detours list.
 1. Select the new detour, and then select **Select fields to send** on the toolbar.
-1. In the **Select fields to send** dialog box, don't add anything to the **Send from Pack** section, because you don't want to pass any values to the detour menu item. However, in the **Bring back from look up location** section, set the following value for the empty row that has already been added there:
+1. In the **Select fields to send** dialog box, don't add anything to the **Send from Packing** section, because you don't want to pass any values to the detour menu item. However, in the **Bring back from look up location** section, set the following value for the empty row that has already been added there:
     - **Copy from Look up location** *Location*
-    - **Paste in Pack** *Location*
+    - **Paste in Packing** *Location*
 1. Select **OK** to close the dialog box.
 1. Close the page.
 
 #### Add **Look up shipment** as detour
 1. Go to **Warehouse management \> Setup > Mobile device \> Mobile device steps**.
 1. In the **Filter** field, enter *ShipmentId*. Then select *Step ID: "ShipmentId"* in the drop-down list.
-1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Pack*. Then select **OK** to close the dialog box.
-1. On the details page for the new step configuration (**Pack : ShipmentId**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
+1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Packing*. Then select **OK** to close the dialog box.
+1. On the details page for the new step configuration (**Packing : ShipmentId**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
 1. In the **Add detour** dialog box, find and select the **Look up shipment** menu item that you previously created.
 1. Select **OK** to close the dialog box and add the selected menu item to the detours list.
 1. Select the new detour, and then select **Select fields to send** on the toolbar.
-1. In the **Select fields to send** dialog box, don't add anything to the **Send from Pack** section, because you don't want to pass any values to the detour menu item. However, 1. In the **Bring back from Look up shipment** section, set the following value for the empty row that has already been added there:
+1. In the **Select fields to send** dialog box, don't add anything to the **Send from Packing** section, because you don't want to pass any values to the detour menu item. However, 1. In the **Bring back from Look up shipment** section, set the following value for the empty row that has already been added there:
     - **Copy from Look up shipment** *Shipment ID*
-    - **Paste in Pack** *Shipment*
+    - **Paste in Packing** *Shipment*
 1. Select **OK** to close the dialog box.
 1. Close the page.
 
 #### Add **Look up item** as detour
 1. Go to **Warehouse management \> Setup > Mobile device \> Mobile device steps**.
-1. In the **Filter** field, enter *ItemId*. Then select *Step ID: "ItemID"* for the record that is found for the previously created for Menu item name **Pack**
-1. On the details page for the new step configuration (**Pack : ItemId**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
+1. In the **Filter** field, enter *ItemId*. Then select *Step ID: "ItemID"* for the record that is found for the previously created for Menu item name **Packing**
+1. On the details page for the new step configuration (**Packing : ItemId**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
 1. In the **Add detour** dialog box, find and select the **Look up item** menu item that you previously created.
 1. Select **OK** to close the dialog box and add the selected menu item to the detours list.
 1. Select the new detour, and then select **Select fields to send** on the toolbar.
-1. In the **Select fields to send** dialog box, in the **Send from Pack** section,  set the following value for the empty row that has already been added there:
-    - **Copy from Pack** *Shipment*
+1. In the **Select fields to send** dialog box, in the **Send from Packing** section,  set the following value for the empty row that has already been added there:
+    - **Copy from Packing** *Shipment*
     - **Paste in Look up item** *Shipment ID*
     - **Auto submit** *Selected* - You don't want to confirm the value in the Warehouse management mobile app
 1. In the **Bring back from Look up item** section, set the following value for the empty row that has already been added there:
     - **Copy from Look up item** *Item number*
-    - **Paste in Pack** *Item*
+    - **Paste in Packing** *Item*
 1. Select **OK** to close the dialog box.
 1. Close the page.
 
 #### Add **Look up container** as detour for packing
 1. Go to **Warehouse management \> Setup > Mobile device \> Mobile device steps**.
 1. In the **Filter** field, enter *ContainerIdToPack*. Then select *Step ID: "ContainerIdToPack"* in the drop-down list.
-1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Pack*. Then select **OK** to close the dialog box.
-1. On the details page for the new step configuration (**Pack : ContainerIdToPack**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
+1. While the record that is found is selected in the grid, select **Add step configuration** on the Action Pane. In the drop-down dialog box that appears, set the **Menu item** field to *Packing*. Then select **OK** to close the dialog box.
+1. On the details page for the new step configuration (**Packing : ContainerIdToPack**), on the **Available detours (menu items)** FastTab, select **Add** on the toolbar.
 1. In the **Add detour** dialog box, find and select the **Look up container** menu item that you previously created.
 1. Select **OK** to close the dialog box and add the selected menu item to the detours list.
 1. Select the new detour, and then select **Select fields to send** on the toolbar.
 1. In the **Select fields to send** dialog box, in the **Send from Create container** section,  set the following value for the empty row that has already been added there:
-    - **Copy from Pack** *Location*
+    - **Copy from Packing** *Location*
     - **Paste in Look up container** *Location*
     - **Auto submit** *Selected* - You don't want to confirm the value
 1.  Add a new record with:
-     - **Copy from Pack** *Shipment*
+     - **Copy from Packing** *Shipment*
     - **Paste in Look up container** *Shipment ID*
     - **Auto submit** *Selected* - You don't want to confirm the value
 1. In the **Bring back from Look up container** section, set the following value for the empty row that has already been added there:
     - **Copy from Look up container** *Container ID*
-    - **Paste in Pack** *Container ID*
+    - **Paste in Packing** *Container ID*
 1. Select **OK** to close the dialog box.
 1. Close the page.
 
@@ -596,7 +596,7 @@ Follow these steps to create a sales order and complete the work of moving the o
 The inventory items have now been brought to the packing area and are ready to be packed into containers. Follow these steps to create a new container in the system and pack and close the container.
 
 1. Open the *Warehouse Management mobile app* and login as User ID **62**.
-1. Open the previously created *Pack* menu item.
+1. Open the previously created *Packing* menu item.
 1. Confirm the *Packing location* **Pack**.
 1. Enter/scan the *Shipment ID** from previously.
 1. Enter/scan *Item* **A0001**.
@@ -650,7 +650,7 @@ In the following table you can see which processes are supported when using the 
 |Transport route rate details                                 | No        | Only view via [Data inquiry detour](warehouse-app-data-inquiry.md)                                                                    |
 |Transport shipment accessorial charges                       | No        | Only view via [Data inquiry detour](warehouse-app-data-inquiry.md)                                                                    |
 |Transport status                                             | No        | Only View via [Data inquiry detour](warehouse-app-data-inquiry.md)                                                                    |
-|Print packing slip                                           | No        | Only automatic printing setup is supported                                                                                            |
+|Print packing slip                                           | No        | It is planned to have the automatic (Container packing polisales packing slip posting incl. printing supported in 10.0.31                                                                                       |
 |Print container content                                      | No        | Only automatic printing setup is supported                                                                                            |
 |Print shipping label                                         | No        | Only automatic printing setup is supported                                                                                            |
 |Pack (all shipment items)                                    | No        | Each item number must be identified and packed individually                                                                           |
