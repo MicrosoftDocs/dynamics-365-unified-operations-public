@@ -255,11 +255,11 @@ Follow these steps to create deployable packages that contain Commerce component
 
 ## Migrate to version 10.0.29 or later
 
-The steps described in this section are required if you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later. You need to follow the below procedure to correctly update your Commerce environment:
+The steps described in this section are required if you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later. You must follow the steps below to correctly update your Commerce environment.
 
 1. Update Commerce headquarters.
 1. Enable [Italy-specific features](#enable-the-customer-information-management-feature-for-italy) in the **Feature management** workspace and distribute the changes to channels.
-1. Update Commerce runtime, Cloud POS, and Modern POS, and exclude legacy Italy-specific extensions:
+1. Update Commerce runtime, Cloud POS, and Modern POS, and exclude the following legacy Italy-specific extensions:
     1. Commerce runtime extensions in the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** files:
         - Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdItaly
     1. POS extensions in the **extensions.json** file:
