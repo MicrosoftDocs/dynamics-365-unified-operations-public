@@ -2,13 +2,14 @@
 title: Prepare your environment to interoperate with ID-porten and Altinn web services
 description: This article explains how to prepare your environment to interoperate with ID-porten and Altinn web services.
 author: AdamTrukawka
-ms.date: 05/27/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Norway
+# ms.search.industry: 
 ms.author: atrukawk
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
@@ -142,11 +143,24 @@ The following table shows the lookup results for **NoteForTaxCode_Lookup**.
 | sesongvariasjon | Seasonal variation |
 | kreditnota | Credit note |
 | Annet | Other |
+| utenfor rekkevidde | Out of scope (introduced in [699358](https://fix.lcs.dynamics.com/Issue/Details?bugId=699358&dbType=3&qc=b53d15d28a992c61827bf70302fa9b5c176337520030077a14cedb1131994315)) |
 
 > [!IMPORTANT]
-> It's important that you add **Annet** (**Other**), which must collect data from other cases as the last item in the list. **Line value** must be the last value in your table. In all the other columns, select **\*Not blank\***. Because **Reasom** is not a mandatory field in tax transactions, add one more line with the **Annet** (**Other**) lookup result value, **\*Blank\*** in the **Reason** column, and **\*Not blank\*** in all the other columns.
+> It's important that you add **Annet** (**Other**), which must collect data from other cases as the last item in the list. **Line value** must be the last value in your table. In all the other columns, select **\*Not blank\***. Because **Reason** is not a mandatory field in tax transactions, add one more line with the **Annet** (**Other**) lookup result value, **\*Blank\*** in the **Reason** column, and **\*Not blank\*** in all the other columns.
+>
+> If you select a financial reason code for a document that isn't associated with any lookup result from the previous table (so that the **Annet** value will be applied), the system won't be able to report that reason as one of the values from the enumerated list that the Norwegian Tax Administration requires. In this case, the reason code and comment will be reported in the `<merknad/beskrivelse>` tag under the `<mvaSpesifikasjonslinje>` node. The comment will be reported as-is in the related **Reason comment** field of the original document.
 
-If you select a financial reason code for a document that isn't associated with any lookup result from the previous table (this means that **Annet** value will be applied), the system won't be able to report that reason as one of the values from the enumerated list that the Norwegian Tax Administration requires. In this case, the reason code and comment will be reported in the `<merknad/beskrivelse>` tag under the `<mvaSpesifikasjonslinje>` node, and the comment will be reported \"as-is\" in the related **Reason comment** field of the original document'
+Hotfix [699358](https://fix.lcs.dynamics.com/Issue/Details?bugId=699358&dbType=3&qc=b53d15d28a992c61827bf70302fa9b5c176337520030077a14cedb1131994315) introduces a new **utenfor rekkevidde** (out of scope) value for the lookup result of the **NoteForTaxCode_Lookup** lookup field. Use this value to map all the financial reasons that should be omitted in your VAT return. Specifically, you can use this value to map **\*Blank\*** and **\*Not blank\*** values.
+
+The following illustration shows an example of the setup for the **NoteForTaxCode_Lookup** lookup field.
+
+![Setup of an "out of scope" value of NoteForTaxCode_Lookup.](media/emea-nor-vat-return-outofscope.png)
+
+Finance will interpret this setup in the following way:
+
+- All tax transactions that are posted with the **ERROR** reason code will be grouped and reported with the *feil i regnskapsprogram* value in the `<merknad/utvalgtMerknad>` tag under the `<mvaSpesifikasjonslinje>` node.
+- All tax transactions that are posted with the **MISC** reason code will be reported with their financial reason comment in the `<merknad/beskrivelse>` tag under the `<mvaSpesifikasjonslinje>` node. The financial reason comment will be reported as-is in the related **Reason comment** field of the original document.
+- All other tax transactions that have a **\*Blank\*** or not **\*Not blank\*** value for the reason code will be grouped, and the `<merknad>` tag under the `<mvaSpesifikasjonslinje>` node will be omitted.
 
 #### <a id="tax-transaction-classifier"></a>Detailed description of the tax transaction classifier
 
