@@ -4,7 +4,7 @@
 title: Customer information management for Italy
 description: This article describes how to handle customer information in POS for Italy.
 author: sepism
-ms.date: 08/12/2022
+ms.date: 08/15/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -157,9 +157,7 @@ The following example scenarios show how to work with customer information in PO
 ## Deployment guidelines
 
 > [!WARNING]
-> You need to make specific steps to configure Commerce channel components for Italy to enable customer information management only if you are using the Commerce version 10.0.28 or earlier. Starting from the version 10.0.29, all required channel components are enabled out-of-the-box.
->
-> However, if you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later, you need to make the steps that are described in the [Migrate to version 10.0.29 or later](#migrate-to-version-10029-or-later) section.
+> You must implement the steps that are described in this section only if you are using the Commerce version 10.0.28 release or earlier. Starting with the version 10.0.29, all Commerce channel components that are required to activate customer information management for Italy are enabled out-of-the-box. If you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later, you must follow the steps in [Migrate to version 10.0.29 or later](#migrate-to-commerce-version-10029-or-later).
 
 This section provides deployment guidance for enabling customer information management in the localization of Commerce for Italy.
 
