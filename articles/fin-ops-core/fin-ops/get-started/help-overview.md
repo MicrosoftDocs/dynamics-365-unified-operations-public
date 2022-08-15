@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Help system (contains video)
-description: This article provides an overview of the Help system for Finance and Operations apps.
+description: This article provides an overview of the Help system for finance and operations apps.
 author: edupont04
 ms.date: 07/20/2021
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: SystemParameters
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: ["16381", "intro-internal"]
-ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
+ms.reviewer: edupont
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 16381,  ""intro-internal
+ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
+ms.search.form: SystemParameters
 ---
 
 # Help system
@@ -56,7 +46,7 @@ You can find content on docs.microsoft.com by using any search engine. For the b
 
 ## Get notified about changes through an RSS feed
 
-To subscribe to an RSS feed of all updates made to the content on docs.microsoft.com across the Finance and Operations apps, use the following link:
+To subscribe to an RSS feed of all updates made to the content on docs.microsoft.com across the finance and operations apps, use the following link:
 
 [RSS feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
@@ -101,7 +91,7 @@ For more information, see the [Docs contributor guide](/contribute), which is pu
 
 A task guide is a controlled, guided, interactive experience that leads you through the steps of a task, or business process. You can open (play) a task guide from the **Help** pane. When you first select a task guide, the **Help** pane will show the step-by-step instructions for the task. Localized task guides are available.
 
-Microsoft released task guide libraries for product versions through the December 2017 release of Dynamics 365 for Finance and Operations. The [Accessing task guides from the Help pane](#accessing-task-guides-from-the-help-pane) section of this article explains how to find the correct task guides for your product.
+Microsoft released task guide libraries for product versions through the December 2017 release of Dynamics 365 Finance and Operations. The [Accessing task guides from the Help pane](#accessing-task-guides-from-the-help-pane) section of this article explains how to find the correct task guides for your product.
 
 ![Task guide reading view.](./media/task-guide-ops.png)
 
@@ -185,3 +175,4 @@ The following table lists our websites. Sites that have an asterisk (\*) next to
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

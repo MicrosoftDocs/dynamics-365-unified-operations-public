@@ -1,31 +1,20 @@
 ---
-# required metadata
-
 title: Redeploy on-premises environments
 description: This article provides information about redeploying an on-premises environment.
-author: PeterRFriis
+author: faix
 ms.date: 10/14/2020
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.prod: dynamics-365
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peterfriis
+ms.author: osfaixat
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 12
-
+ms.custom: 
+ms.assetid: 
+ms.service: 
 ---
 # Redeploy on-premises environments
 

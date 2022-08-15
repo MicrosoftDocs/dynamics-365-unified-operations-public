@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Get started with the mobile platform
 description: This article describes how to develop on the mobile platform.
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: ["255544", "intro-internal"]
-ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 9
-
+ms.custom: 255544,  ""intro-internal
+ms.assetid: f5aa0c60-25cc-4453-8df9-efab19b7e272
 ---
 
 # Get started with the mobile platform

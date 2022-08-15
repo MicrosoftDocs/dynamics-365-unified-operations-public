@@ -4,22 +4,14 @@ description: The Regression suite automation tool (RSAT) lets you record busines
 author: FrankDahl
 ms.date: 03/29/2022
 ms.topic: overview
-ms.prod:
-ms.technology:
-
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Developer
-# ms.devlang:
-ms.reviewer: tfehr
-# ms.tgt_pltfrm:
-
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry:
 ms.author: fdahl
 ms.search.validFrom: 2019-08-01
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Regression suite automation tool (RSAT)

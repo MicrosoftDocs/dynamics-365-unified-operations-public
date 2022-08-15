@@ -42,7 +42,7 @@ If you want to turn any of these features on or off, you must do that in [featur
 | Module | Feature name in feature management | More information |
 |---|---|---|
 | Production control | On-demand material availability check for production orders | This feature makes it faster to open the **Production orders to release** page, which is available from the **Production floor management** workspace. Without this feature, the system automatically checks whether materials are available for all listed production orders as soon as you open the page, which can take significant time if you have a large number of orders. When this feature is enabled, the system instead provides a toolbar button, which you can use to initiate the materials check only for selected orders and when needed. |
-| Production control | (Preview) Register material consumption on the production floor execution interface (non-WMS) | This feature enables workers to use the production floor execution interface to register material consumption, batch numbers, and serial numbers. This feature only supports items that are not enabled to use warehouse management processes (WMS). Support for WMS-enabled items is scheduled for a future release.<p>Some manufacturers, especially those within the process industries, need to explicitly register the amount of material consumed for each batch or production order. For example, workers might use a scale to weigh the amount of material consumed as they work. To ensure full material traceability, these organizations also need to register which batch numbers were consumed when producing each product. |
+| Production control | Register material consumption on the production floor execution interface (non-WMS) | This feature enables workers to use the production floor execution interface to register material consumption, batch numbers, and serial numbers. This feature only supports items that are not enabled to use warehouse management processes (WMS). Support for WMS-enabled items is scheduled for a future release.<p>Some manufacturers, especially those within the process industries, need to explicitly register the amount of material consumed for each batch or production order. For example, workers might use a scale to weigh the amount of material consumed as they work. To ensure full material traceability, these organizations also need to register which batch numbers were consumed when producing each product. |
 | Production control | Report as finished on warehouse management workload for the cloud and edge scale unit | This feature lets workers use the Warehouse Management mobile app to report a production or batch order as finished when the app is running against a warehouse management workload on a cloud or edge scale unit. For more information, see [Report as finished and putaway on a scale unit](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
 | Warehouse management | New load planning workbench pages | Enables two new load planning workbench pages: **Inbound load planning workbench** and **Outbound load planning workbench**. |
 
@@ -64,9 +64,9 @@ We have recently added or significantly updated the following help articles. The
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.24 includes platform updates. To learn more, see [Platform updates for version 10.0.24 of Finance and Operations apps (February 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.24 includes platform updates. To learn more, see [Platform updates for version 10.0.24 of finance and operations apps (February 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### Bug fixes
 
@@ -90,3 +90,4 @@ Before any feature is removed from the product, the deprecation notice will be a
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -4,7 +4,7 @@
 title: Maintenance in self-service environments FAQ
 description: This article provides answers to frequently asked questions about the Microsoft planned maintenance in self-service environments.
 author: matapg007
-ms.date: 06/17/2022
+ms.date: 08/08/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -33,6 +33,7 @@ A planned maintenance window is typically during the dark hours of the geographi
 |Geo | Maintenance window |
 |----|--------------------|
 |Australia |1:00 PM to 7:00 PM UTC|
+|Asia   |4:00 PM to 10:00 PM UTC|
 |Brazil |4:00 AM to 10:00 AM UTC |
 |Canada	|4:00 AM to 10:00 AM UTC |
 |China	|4:00 PM to 10:00 PM UTC|
@@ -58,12 +59,12 @@ A planned maintenance window is typically during the dark hours of the geographi
 | September 2022 | September 25, 2022 | September 24, 2022 | September 24, 2022 |
 
 > [!NOTE] 
-> Effective July 2022 through September 2022, Microsoft will start to roll out updates to the production environment during any weekend, and outside of normal business hours, to help minimize any potential impact on your environments. All sandbox environment will be updated during any night, outside of business hours.
+> Effective August 2022 through October 2022, Microsoft will start to roll out updates to the production environment during any weekend, and outside of normal business hours, to help minimize any potential impact on your environments. All sandbox environment will be updated during any night, outside of business hours.
 > 
 > All the maintenance activity (operating system patching, security hotfixes, and quality updates) will be performed during the dark hour window to provide a near-zero-downtime experience. 
 
-## Can operating system updates be applied in zero downtime?
-Yes, Microsoft began to roll out near-zero-downtime infrastructure maintenance in May 2021.
+## Can operating system updates be applied in near-zero-downtime?
+Yes. Microsoft has provided near-zero-downtime infrastructure maintenance for operating system updates since May 2021.
 
 ## What does near-zero-downtime maintenance mean?
 Customers can continue to operate the system during the maintenance activity. They may experience brief interruptions or disconnects during this window, but will not need to take a full downtime.

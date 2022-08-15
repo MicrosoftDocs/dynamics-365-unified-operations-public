@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Post inventory main accounts by site for China
 description: This article provides information about the posting of inventory main accounts by site for China.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 03/21/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: InventPostingParameters
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 262754
-ms.assetid: f8e0b34d-006a-4baf-86ae-60625ba4b442
 ms.search.region: China (PRC)
-# ms.search.industry: 
-ms.author: leguo
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 262754
+ms.assetid: f8e0b34d-006a-4baf-86ae-60625ba4b442
+ms.search.form: InventPostingParameters
 ---
 
 # Post inventory main accounts by site for China

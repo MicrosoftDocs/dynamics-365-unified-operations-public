@@ -5,11 +5,11 @@ author: RamaKrishnamoorthy
 ms.date: 04/07/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: ramasri
 ms.search.validFrom: 2021-04-07
-ms.dyn365.ops.version:
+ms.dyn365.ops.version: 
 ---
 
 # Unlink and relink dual-write environments

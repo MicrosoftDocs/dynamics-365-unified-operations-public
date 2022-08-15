@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Intra-community VAT for Spain
 description: This article provides information about the functionality for intra-community value-added tax (VAT).
-author: Anasyash
+author: AdamTrukawka
 ms.date: 07/09/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: VendFormletterParameters, VendParameters, TaxTrans
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 271523
 ms.search.region: Spain
-# ms.search.industry: 
-ms.author: anasyash
-ms.dyn365.ops.version: Version 1611
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
-
+ms.dyn365.ops.version: Version 1611
+ms.custom: 271523
+ms.search.form: VendFormletterParameters, VendParameters, TaxTrans
 ---
 
 # Intra-community VAT for Spain

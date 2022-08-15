@@ -3,7 +3,7 @@
 
 title: Set up pay cycles and pay periods
 description: This article explains setup variations in pay cycles, how to generate periods for a pay cycle, and how to assign periods to a worker's position. 
-author: andreabichsel
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: PayrollPayCycle
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 222624
 ms.assetid: d635184b-0905-43ab-841d-9f6cc95ab861

@@ -110,7 +110,7 @@ Before you can use this feature, it must be turned on in your system. Admins can
 
 ### Turn on the Enhanced parser for GS1 barcodes feature
 
-If you use GS1 bar codes, we recommend that you also enable the *Enhanced parser for GS1 barcodes* feature. This feature provides an improved implementation of the GS1 bar code parser. It adds the following improvements:
+If you use GS1 bar codes, we recommend that you also turn on the *Enhanced parser for GS1 barcodes* feature. This feature provides an improved implementation of the GS1 bar code parser. It adds the following improvements:
 
 - It follows the GS1 General Specification algorithm for symbol data parsing and validates that the data in the symbol is valid according to the specification.
 - It doesn't require that you to set up a **Maximum length of identifier** value and uses longest prefix matching from configured application identifiers.

@@ -1423,3 +1423,4 @@ The Windows 8 tablet app provided functionality for expense entry and approval.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -127,9 +127,9 @@ This article describes the filtering and query options that are available when y
 <td>Two consecutive double quotes (<strong>""</strong>) finds rows with no value for the current column.</td>
 </tr>
 <tr>
-<td>(<span class="code">Finance and Operations query</span>) (Finance and Operations query between parentheses)</td>
+<td>(<span class="code">Finance and operations query</span>) (finance and operations query between parentheses)</td>
 <td>Matching a defined query</td>
-<td>Type a query as an SQL statement between parentheses using the Finance and Operations query language.</td>
+<td>Type a query as an SQL statement between parentheses using the finance and operations query language.</td>
   <td><strong><span class="code">((AccountNum LIKE "US*") && (DirPartyTable.Name LIKE "Cont*"))</span></strong><br><br> 
        as an example of syntax for a filter condition on a field from the root datasource as well as a field from a different datasource (for the All customers page)</td>
 </tr>

@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Netherlands overview
-description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for the Netherlands. 
-author: ShylaThompson
+description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for the Netherlands.
+author: kfend
 ms.date: 05/06/2020
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
 ms.search.region: Netherlands
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Netherlands overview

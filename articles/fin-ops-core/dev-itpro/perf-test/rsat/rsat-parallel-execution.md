@@ -5,12 +5,11 @@ author: FrankDahl
 ms.date: 12/16/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom:
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-12-16
-
+ms.custom: 
 ---
 
 # Run the Regression suite automation tool (RSAT) with parallel execution

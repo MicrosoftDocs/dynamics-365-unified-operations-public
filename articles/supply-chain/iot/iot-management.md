@@ -4,7 +4,7 @@
 title: Monitor and manage IoT Intelligence
 description: This article explains how to monitor and manage IoT Intelligence.
 author: johanhoffmann
-ms.date: 08/16/2019
+ms.date: 08/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -29,6 +29,7 @@ ms.dyn365.ops.version: 10.0.5
 # Monitor and manage IoT Intelligence
 
 [!include [banner](../../includes/banner.md)]
+[!INCLUDE [iot-sdi-announcement](../../includes/iot-sdi-announcement.md)]
 
 This article explains how to monitor and manage IoT Intelligence.
 

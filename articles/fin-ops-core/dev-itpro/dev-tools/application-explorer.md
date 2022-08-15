@@ -1,17 +1,17 @@
 ---
 title: Application Explorer
 description: This article reviews Application Explorer, and the views and filtering methods in it. The article also describes how to work with elements in Application Explorer.
-author: RobinARH
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 74934
-ms.assetid: cf2154eb-56a9-4867-b1ef-85690440b177
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 74934
+ms.assetid: cf2154eb-56a9-4867-b1ef-85690440b177
 ---
 
 # Application Explorer

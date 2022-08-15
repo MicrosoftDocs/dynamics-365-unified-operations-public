@@ -45,7 +45,7 @@ The following table lists the feature enhancements included in this release. Eac
 | Module | Feature&nbsp;name&nbsp;in feature&nbsp;management | More information |
 |---|---|---|
 | Master planning | Parallel authorizing of adjusted demand forecast | This feature allows parallel authorizing of adjusted demand forecast from the **Adjusted demand forecast** page. The intent of this feature is to increase performance when a high number of forecasts are being authorized. When authorizing, the user can specify the **Number of threads** in the authorizing dialog. |
-| Master planning | (Preview) Batchable firming and consolidation for planned bulk and pack batch orders | This feature lets you use batch jobs to firm and consolidate planned bulk and pack orders. |
+| Master planning | Batchable firming and consolidation for planned bulk and pack batch orders | This feature lets you use batch jobs to firm and consolidate planned bulk and pack orders. |
 | Production control | Copy generic routes | This feature enhances the copy route function to allow users to copy routes that aren't item specific. It enables the system to update all relevant information (such as site, route group, resource requirements, and various times) after the copy route function has been used to overwrite a route that is not yet assigned to an item. |
 | Production control | Update related resource requirements when a route operation is changed | This feature enables the system to update the related resource requirements after a user changes the operation of an existing route step. |
 | Product information management | Bill of materials report pre-processing to prevent timeout | This feature causes the bill of materials report to be pre-processed. This will avoid timeout issues when having a large data load for the report. |
@@ -67,9 +67,9 @@ We have recently added or significantly updated the following help articles. The
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.20 includes platform updates. To learn more, see [Platform updates for version 10.0.20 of Finance and Operations apps (July 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.20 includes platform updates. To learn more, see [Platform updates for version 10.0.20 of finance and operations apps (July 2021)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-20.md).
 
 ### Bug fixes
 
@@ -94,3 +94,4 @@ For breaking changes that only affect compilation time, but are binary compatibl
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

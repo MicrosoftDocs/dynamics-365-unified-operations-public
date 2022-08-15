@@ -3,7 +3,7 @@
 
 title: Tax codes, tax groups, and posting definitions FAQ
 description: This article answers frequently asked questions about tax and posting definitions.
-author: andreabichsel
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: JournalizingDefinition, JournalizingDefinitionTrans, PayrollTaxC
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 221414
 ms.assetid: cd8cceb4-0ea3-4770-930b-0869e9bfa3c4

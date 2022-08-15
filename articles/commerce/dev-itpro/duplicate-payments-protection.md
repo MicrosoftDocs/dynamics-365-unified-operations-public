@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Enable duplicate payment protection for payment connector
 description: This article describes how to enable duplicate payment protection for a given payment connector.
 author: Reza-Assadi
@@ -8,22 +6,14 @@ ms.date: 03/16/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 
+ms.search.industry: Retail
 ---
 
 # Enable duplicate payment protection for payment connector

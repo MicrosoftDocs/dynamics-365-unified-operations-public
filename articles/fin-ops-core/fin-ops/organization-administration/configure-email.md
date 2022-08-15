@@ -4,7 +4,7 @@
 title: Configure and send email
 description: The behavior of the email subsystem is influenced by a combination of administrator configuration, user configuration, and user choices. 
 author: jasongre
-ms.date: 06/17/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,7 +46,10 @@ On the **Email parameters** page, note the following settings on the **Configura
 
 The **Email history** section serves two purposes. First, it provides an entry point to the **Email history** page, where administrators can review all sent emails and also any errors that prevented an email from being sent. Second, it lets you configure how long email history is maintained. By default, the last 30 days of email history are retained. You can adjust this period by changing the value of the **Number of days to retain email history** field to a non-zero number. If you set the value to **0** (zero), the default number and behavior are used.
 
-In version 10.0.16, an **Email throttling** section is visible if the **Email throttling** feature has been turned on for your environment in Feature management. This feature enables non-interactive email providers (such as the batch email provider) to adhere to a per-minute sending limit. Therefore, it can help prevent some errors if the system tries to send more emails than the provider allows. Specifically, if an email can't be originally sent because the per-minute sending limit has been reached, the send attempt for the email will be deferred for up to one minute. After ten deferrals, the system will try to send the email even if the per-minute sending limit has been reached. The sending limits for Microsoft 365 email providers are automatically set according to [Exchange Online sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits). Manual configuration is required for all other email providers. You can remove the per-minute sending limit from a provider by resetting the **per-minute email sending limit** field to **0**.
+The **Email throttling** section enables non-interactive email providers (such as the batch email provider) to adhere to a per-minute sending limit. This feature can help prevent some errors if the system tries to send more emails than the provider allows. Specifically, if an email can't originally be sent because the per-minute sending limit has been reached, the send attempt for the email will be deferred for up to one minute. After ten deferrals, the system will try to send the email regardless. You can remove the per-minute sending limit from a provider by resetting the **per-minute email sending limit** field to **0**. The sending limits for the Office 365 SMTP email provider is automatically set according to the [Exchange Online sending limits](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits). Manual configuration is required for all other email providers. 
+
+> [!NOTE]
+> Use of the **Email throttling** feature isn't recommended for the Exchange email provider, because it has its own throttling mechanism. Therefore, if you're using Exchange, you should ensure that the **per-minute email sending limit** field for it is set to **0**.
 
 ### SMTP settings tab
 On the **Email parameters** page, note the following settings on the **SMTP settings** tab.
@@ -107,6 +110,9 @@ On the **Email parameters** page, note the following settings on the **SMTP sett
 </tbody>
 
 </table>
+
+> [!NOTE]
+> Finance and operations apps don't support multifactor authentication or Modern auth (OAuth 2.0) for SMTP. Administrators might have to re-enable Basic authentication to allow for SMTP AUTH. For more information, see [Enable or disable SMTP AUTH](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission). The Exchange mail provider can be used if a more modern integration is desired. Note that the [deprecation of Basic authentication for Exchange online](/exchange/clients-and-mobile-in-exchange-online/deprecation-of-basic-authentication-exchange-online#pop-imap-and-smtp-auth) doesn't affect the use of SMTP in finance and operations apps, because "SMTP AUTH will still be available when Basic authentication is permanently disabled."
 
 ## [Administrator] Email distributor batch process
 
@@ -270,7 +276,7 @@ If troubleshooting is needed, ensure that it's possible to sign in to the curren
 > [!IMPORTANT]
 > The Exchange mail provider is: 
 > -  Not supported for external users, as those users will not have Exchange accounts on the system tenant.
-> -  Only available in Microsoft-managed environments.
+> -  Only available in Microsoft-managed environments. 
 
 ## Troubleshooting
 
@@ -280,7 +286,7 @@ There are some standard processes that can help you troubleshoot the configurati
 
 <table>
   <tr>
-    <th>Verify email settings, and send a test email.</th>
+    <th id="verify-email-settings">Verify email settings, and send a test email.</th>
     <td>
       <ol>
         <li>Go to <b>System administration &gt; Setup &gt; Email &gt; Email parameters</b>.</li>
@@ -292,7 +298,7 @@ There are some standard processes that can help you troubleshoot the configurati
     </td>
   </tr>
   <tr>
-    <th>Verify that the email batch process is running.</th>
+    <th id="verify-email-batch-process">Verify that the email batch process is running.</th>
     <td>
       <ol>
         <li>Go to <b>System administration &gt; Periodic tasks &gt; Email processing &gt; Batch</b>.</li>
@@ -307,19 +313,19 @@ There are some standard processes that can help you troubleshoot the configurati
     </td>
   </tr>
   <tr>
-    <th>Review the status of batch emails.</th>
+    <th id="review-status">Review the status of batch emails.</th>
     <td>
       <ol>
         <li>Go to <b>System administration &gt; Periodic tasks &gt; Email processing &gt; Batch email sending status</b>.</li>
         <li>Verify that emails are being sent from the correct account.
           <p>If the account is incorrect, you must adjust settings such as user options, system templates, or organization templates, as needed.</p>
         </li>
-        <li>Verify that all email user accounts have been granted <b>Send As</b> permission for the configured SMTP account (see <a href="#saveas_permissions">Verify that all email accounts have appropriate Send As permissions</a> later in this table).</li>
+        <li>Verify that all email user accounts have been granted <b>Send As</b> permission for the configured SMTP account (see <a href="#sendas_permissions">Verify that all email accounts have appropriate Send As permissions</a> later in this table).</li>
       </ol>
     </td>
   </tr>
   <tr>
-    <th>Review any errors on the Email history page.</th>
+    <th id="review-errors">Review any errors on the Email history page.</th>
     <td>
       <ol>        
         <li>Go to <b>System administration &gt; Setup &gt; Email &gt; Email history</b>.
@@ -330,20 +336,18 @@ There are some standard processes that can help you troubleshoot the configurati
     </td>
   </tr>
   <tr>
-    <th id="saveas_permissions">Verify that all email accounts have appropriate Send as permissions.</th>
+    <th id="sendas_permissions">Verify that all email accounts have appropriate Send as permissions.</th>
     <td>In the Microsoft 365 admin center, verify that all user mail accounts that will be used to send emails have <b>Send As</b> and <b>Send On Behalf Of</b> permissions for the configured SMTP account. For more information, see <a href="/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user">Give mailbox permissions to another user in Microsoft 365</a>.</td>
   </tr>
   <tr>
-    <th>Verify user mailboxes.</th>
+    <th id="verify-user-mailboxes">Verify user mailboxes.</th>
     <td>Consider signing in to the affected (or all) user mailboxes to verify that they are valid and can be accessed by using sign-in.</td>
   </tr>
 </table>
- 
- 
 
  ### Specific Exchange email issues
 
--  **"(401) Unauthorized" or "(403) Forbidden" error when email is sent via Exchange**
+-  **<span id="unauthorized-forbidden-error">"(401) Unauthorized" or "(403) Forbidden" error when email is sent via Exchange</span>**
 
     <table>
       <tr>
@@ -363,7 +367,7 @@ There are some standard processes that can help you troubleshoot the configurati
       </tr>
     </table>
 
--  **"(404) Not found" error when email is sent via Exchange**
+-  **<span id="404-not-found">"(404) Not found" error when email is sent via Exchange</span>**
 
     <table>
       <tr>
@@ -387,7 +391,7 @@ There are some standard processes that can help you troubleshoot the configurati
 
 If you continue to experience issues when email is sent via SMTP, you may be running into one of the specific errors below. If not, consider entering the SMTP account information in a tool such as [SMTPer.net](https://www.smtper.net/) to verify that the SMTP server and account are valid and working correctly.
 
--  **SMTP emails fail to be sent with "Recipient addresses in single label domains not accepted"**
+-  **<span id="single-label-domain-not-accepted-error">SMTP emails fail to be sent with "Recipient addresses in single label domains not accepted"</span>**
 
     <table>
       <tr>
@@ -400,7 +404,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
--  **SMTP emails fail to be sent with "Mailbox full"**
+-  **<span id="mailbox-full-error">SMTP emails fail to be sent with "Mailbox full"</span>**
 
     <table>
       <tr>
@@ -413,7 +417,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
--  **SMTP emails fail to be sent with "Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully"**
+-  **<span id="authentication-unsuccessful-error">SMTP emails fail to be sent with "Authentication unsuccessful, the request did not meet the criteria to be authenticated successfully"</span>**
 
     <table>
       <tr>
@@ -426,7 +430,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
--  **SMTP emails fail to be sent with "Authentication unsuccessful, SmtpClientAuthentication is disabled for the Mailbox"**
+-  **<span id="smtpclientauthentication-disabled-error">SMTP emails fail to be sent with "Authentication unsuccessful, SmtpClientAuthentication is disabled for the Mailbox"</span>**
 
     <table>
       <tr>
@@ -439,7 +443,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
-- **SMTP emails fail to be sent with "If your SMTP server doesn't support authentication, please clear the SMTP user name and password"**
+- **<span id="smtp-emails-fail-to-send-with-if-your-smtp-server-doesnt-support-authentication-please-clear-the-smtp-user-name-and-password">SMTP emails fail to be sent with "If your SMTP server doesn't support authentication, please clear the SMTP user name and password"</span>**
 
     <table>
       <tr>
@@ -452,7 +456,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
-- **SMTP emails fail to be sent with an "5.7.57 SMTP" error, or an indication that either you aren't authenticated or authentication is required**
+-  **<span id="smtp-emails-fail-to-send-with-5757-smtp-error-or-an-indication-that-youre-not-authenticated-or-authentication-is-required">SMTP emails fail to be sent with an "5.7.57 SMTP" error, or an indication that either you aren't authenticated or authentication is required</span>**
 
     <table>
       <tr>
@@ -465,7 +469,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
-- **SMTP emails fail to be sent with "Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occurred with exception"**
+- **<span id="smtp-emails-fail-to-send-with-microsoftdynamicsaxxppsecuritycryptoencryptionexception-encryption-error-occurred-with-exception">SMTP emails fail to be sent with "Microsoft.Dynamics.Ax.Xpp.Security.CryptoEncryptionException: Encryption error occurred with exception"</span>**
 
     <table>
       <tr>
@@ -478,7 +482,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
     </table>
 
--  **SMTP emails fail to be sent with "Client does not have permissions to send as this sender"**
+-  **<span id="smtp-emails-fail-to-send-with-client-does-not-have-permissions-to-send-as-this-sender">SMTP emails fail to be sent with "Client does not have permissions to send as this sender"</span>**
 
     <table>
       <tr>
@@ -487,7 +491,7 @@ If you continue to experience issues when email is sent via SMTP, you may be run
       </tr>
       <tr>
         <th>Fix</th>
-        <td>Ensure that the email account has appropriate <b>Send As</b> permissions. For more information, see <a href="#saveas_permissions">Verify that all email accounts have appropriate Send As permissions</a> earlier in this article.
+        <td>Ensure that the email account has appropriate <b>Send As</b> permissions. For more information, see <a href="#sendas_permissions">Verify that all email accounts have appropriate Send As permissions</a> earlier in this article.
       </tr>
     </table>
 

@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Create deployable packages of models
 description: This article describes the workflow for creating and applying a deployable package.
-author: jorisdg
+author: gianugo
 ms.date: 05/07/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 24211
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 24211
 ---
 
 # Create deployable packages of models

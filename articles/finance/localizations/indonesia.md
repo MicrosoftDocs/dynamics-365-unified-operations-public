@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Indonesia overview
 description: This article provides an overview of functionality that is specific to Indonesia.
-author: sndray
+author: AdamTrukawka
 ms.date: 12/09/2021
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-
 ms.search.region: Indonesia
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2021-09-30
 ms.dyn365.ops.version: 10.0.20
-
 ---
 
 # Indonesia overview

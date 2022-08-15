@@ -91,29 +91,23 @@ As of Supply Chain Management version 10.0.25, this feature is turned on by defa
 
 ### Enable registering of material consumption
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
 This feature enables workers to use the production floor execution interface to register material consumption, batch numbers, and serial numbers. Some manufacturers, especially those in the process industries, must explicitly register the amount of material that is consumed for each batch or production order. For example, workers might use a scale to weigh the amount of material that is consumed as they work. To ensure full material traceability, these organizations must also register the batch numbers that were consumed to produce each product.
 
 There are two versions of this feature. One supports items that *are not* enabled to use warehouse management processes (WMS). The other supports items that *are* enabled to use WMS. To use this functionality, turn on one or both of the following features in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) (in this order), depending on whether you have items that are enabled for WMS:
 
-- *(Preview) Register material consumption on the production floor execution interface (non-WMS)*
-- *(Preview) Register material consumption on the production floor execution interface (WMS-enabled)*
+- *Register material consumption on the production floor execution interface (non-WMS)*
+- *Register material consumption on the production floor execution interface (WMS-enabled)*
 
 > [!IMPORTANT]
 > You can use the non-WMS feature alone. However, if you use WMS, you must enable both features.
 
 ### Enable reporting on catch weight items
 
-[!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: preview until further notice -->
-
 Workers can use the production floor execution interface to report progress on batch orders for catch weight items. Batch orders are created from formulas, which can be defined to have catch weight items as formula items, co-products, and by-products. A formula can also be defined to have formula lines for ingredients that are defined for catch weight. Catch weight items use two units of measure to track inventory: catch weight quantity and inventory quantity. For example, in the food industry, boxed meat can be defined as a catch weight item, where the catch weight quantity is used to track the number of boxes and the inventory quantity is used to track the weight of the boxes.
 
 To use this functionality, turn on the following feature in [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md):
 
-- *(Preview) Report on catch weight items from the production floor execution interface*
+- *Report on catch weight items from the production floor execution interface*
 
 ### Enable the "My day" dialog
 

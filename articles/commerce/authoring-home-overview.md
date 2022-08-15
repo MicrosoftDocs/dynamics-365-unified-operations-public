@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Authoring page overview
 description: This article provides an overview of the authoring page in Microsoft Dynamics 365 Commerce.
-author: brendans
+author: bicyclingfool
 ms.date: 10/31/2019
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application USer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: brendans
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.assetid: 
 ---
 # Authoring page overview
 

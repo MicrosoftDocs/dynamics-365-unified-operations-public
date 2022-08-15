@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: VAT declaration (Czech Republic)
-description: This article provides information about the value-added tax (VAT) declaration for the Czech Republic. 
-author: anasyash
+description: This article provides information about the value-added tax (VAT) declaration for the Czech Republic.
+author: AdamTrukawka
 ms.date: 01/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.assetid: 
 ms.search.region: Czech Republic
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2017-07-20
 ms.dyn365.ops.version: 10.0.13
-
+ms.assetid: 
+ms.search.form: 
 ---
 
 # VAT declaration (Czech Republic)

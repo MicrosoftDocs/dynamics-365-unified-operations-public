@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Payment times reporting schema
 description: This article explains how to set up, create, and generate the Payment times reporting schema for Australia.
-author: sndray
+author: AdamTrukawka
 ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 12641
 ms.search.region: Australia
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 
-ms.dyn365.ops.version:
-
+ms.dyn365.ops.version: 
+ms.custom: 12641
 ---
 
 # Payment times reporting schema

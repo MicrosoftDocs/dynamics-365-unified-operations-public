@@ -3,7 +3,7 @@
 
 title: Configure settlement
 description: How and when transactions are settled can be complex subjects, so it's essential that you understand and correctly define the parameters to meet your business requirements. This article describes the parameters that are used for settlement for both Accounts payable and Accounts receivable. 
-author: kweekley
+author: angelad116
 ms.date: 05/16/2018
 ms.topic: article
 ms.prod: 
@@ -20,7 +20,7 @@ ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Prepare content for use with the Help pane
-description: This article describes how you can prepare content so that it can be used with the Help pane. 
+description: This article describes how you can prepare content so that it can be used with the Help pane.
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-
 ---
 
 # Prepare content for use with the Help pane

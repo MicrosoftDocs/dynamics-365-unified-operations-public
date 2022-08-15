@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Procurement and sourcing in the public sector in France
-description: This article explains how the standard features that are related to procurement and sourcing are augmented for French entities in the public sector. These features are used to help meet the requirements of the Code des Marchés Publics. 
-author: rschloma
+description: This article explains how the standard features that are related to procurement and sourcing are augmented for French entities in the public sector. These features are used to help meet the requirements of the Code des Marchés Publics.
+author: brpotter
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: AgreementClassification, PurchAgreement, SysPolicy
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 19891
 ms.search.region: France
-ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 19891
+ms.search.industry: Public sector
+ms.search.form: AgreementClassification, PurchAgreement, SysPolicy
 ---
 
 # Procurement and sourcing in the public sector in France

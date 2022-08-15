@@ -1,27 +1,17 @@
 ---
-# required metadata
 title: Fixed assets and intangible assets registers
 description: This article provides information about fixed assets and intangible assets registers.
-author: anasyash
+author: AdamTrukawka
 ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Fixed assets and intangible assets registers

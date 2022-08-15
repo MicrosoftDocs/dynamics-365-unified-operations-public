@@ -3,7 +3,7 @@
 
 title: Create checks that have Blank status 
 description: This article explains how to create blank checks for a bank account. 
-author: abruer
+author: angelad116
 ms.date: 10/26/2017
 ms.topic: index-page
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 21941
 ms.assetid: d7e22bd8-fd0d-47e1-843f-45ab0193ff8d
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: abruer
+ms.author: angelading
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 10.0.5
 

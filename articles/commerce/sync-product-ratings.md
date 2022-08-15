@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Sync product ratings in Dynamics 365 Commerce
 description: This article describes how to sync product ratings in Microsoft Dynamics 365 Commerce.
-author:  gvrmohanreddy 
+author: gvrmohanreddy
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
-ms.technology:
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.technology: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: gmohanv
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.custom: 
+ms.assetid: 
+ms.search.industry: 
 ---
 
 # Sync product ratings in Dynamics 365 Commerce

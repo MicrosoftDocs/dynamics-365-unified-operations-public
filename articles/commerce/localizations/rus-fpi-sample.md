@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Fiscal printer integration sample for Russia
 description: This article provides an overview of the fiscal integration sample for Russia in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-manager: annbe
 ms.date: 09/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Russia
-ms.search.industry: Retail
-ms.author: epopov
-ms.search.validFrom: 2021-8-2
+ms.author: josaw
+ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-
+ms.search.industry: Retail
+ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
+manager: annbe
 ---
 # Fiscal printer integration sample for Russia
 

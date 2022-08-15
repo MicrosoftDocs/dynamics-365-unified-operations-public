@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Tax plafond
 description: This article explains how to set up and work with tax plafond, which is a tax exemption process.
-author: ilkond
+author: mrolecki
 ms.date: 02/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: 10.0.9
-
+ms.search.form: 
 ---
 
 # Tax plafond

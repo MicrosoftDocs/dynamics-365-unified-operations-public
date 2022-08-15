@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Online and offline point of sale (POS) operations
 description: This article provides details about the point of sale (POS) operations in Dynamics 365 Commerce. It specifies where in the application the operations can be invoked, and whether they are available in offline mode.
-author: jblucher
+author: josaw1
 ms.date: 05/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom:
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: josaw
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: Retail
 ---
 
 # Online and offline point of sale (POS) operations
@@ -276,7 +266,7 @@ The following columns specify where the operations can be invoked:
 | 1218 | Force unlock peripheral                           | The system uses this operation internally to unlock POS peripherals.                                                                                                                                           | Not applicable | Not applicable     | Not applicable | Not applicable    | No              |
 | 1219 | Open URL in POS                                   | Open an administrator-configured URL in POS.                                                                                                                                                                           | Yes            | Yes                | Yes            | Yes               | No              |
 | 1220 | Manage Safe                                       | Manage the Safe for different registers.                                                                                                                                                                       | Yes            | Yes                | Yes            | Yes               | No              |
-| 1221 | Void Suspended Transactions                       | Void suspended transactions.                                                                                                                                                                               | Yes            | Yes                | Yes            | Yes               | No              |
+| 1221 | Void Suspended Transactions                       | Void suspended transactions.                                                                                                                                                                               | Yes            | No                | No            | Yes               | No              |
 | 1300 | Skip fiscal registration                          | Skip fiscal registration.                                                                                                                                                                                       | No            | No                | No            | Yes               | No             |
 | 1301 | Mark fiscal event registered                      |  Mark fiscal event as registered.                                                                                                                                                                                  | No            | No                | No            | Yes               | No             |
 | 1302 | Complete fiscal registration process              | Complete the fiscal registration process.                                                                                                                                                                           | No            | No                | Yes            | Yes               | Yes             |

@@ -1,28 +1,19 @@
 ---
-# required metadata
 title: CF-e fiscal documents and integration with SAT functionality in Commerce POS for Brazil
 description: This article gives an overview of the generation of CF-e electronic fiscal documents for retail sales and their registration in the SAT fiscal device functionality in Microsoft Dynamics 365 Commerce point of sale (POS) for Brazil.
-author: akviklis
-manager: annbe
+author: EvgenyPopovMBS
 ms.date: 12/03/2021
 ms.topic: article
 ms.prod: 
-
 ms.technology: 
-
-# optional metadata
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Brazil
-ms.search.industry: Retail
-ms.author: akviklis
+ms.author: josaw
 ms.search.validFrom: 2021-09-01
 ms.dyn365.ops.version: 10.0.20
-
+ms.search.industry: Retail
+manager: annbe
 ---
 
 # CF-e fiscal documents and integration with SAT functionality in Commerce POS for Brazil

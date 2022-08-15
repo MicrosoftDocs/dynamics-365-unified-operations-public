@@ -16,8 +16,6 @@ ms.dyn365.ops.version: 10.0.28
 # Vendor invoice entities
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!-- KFM: Preview until GA with 10.0.28 -->
 
 The **Landed cost** module enables cost type codes to be configured for internal costs or externally derived costs. If a cost is external to a business, an invoice is expected from the service provider. This invoice is processed as an invoice journal that can be associated with a voyage, and the value of the invoice can be distributed across one or more costs of the voyage.
 

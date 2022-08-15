@@ -1,17 +1,17 @@
 ---
 title: Development system requirements
 description: This article lists the system requirements for development.
-author: RobinARH
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 33221
-ms.assetid: f39dbe39-7dc3-463c-923e-f22af231b979
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 33221
+ms.assetid: f39dbe39-7dc3-463c-923e-f22af231b979
 ---
 
 # Development system requirements

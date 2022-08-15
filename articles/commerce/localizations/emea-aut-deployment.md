@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Deployment guidelines for cash registers for Austria
 description: This article is a deployment guide for the Commerce localization for Austria.
-author: AlexChern0v
+author: josaw1
 ms.date: 01/31/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Developer
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Austria
-ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.search.industry: Retail
 ---
 # Deployment guidelines for cash registers for Austria
 

@@ -1,14 +1,14 @@
 ---
 title: Store Commerce app
 description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app.
-author: mugunthanm
+author: josaw1
 ms.date: 06/10/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 03-01-2022
+ms.author: josaw
+ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: AX 10.0.25
 ---
 
@@ -139,7 +139,7 @@ We recommend that you use Store Commerce or CPOS for all new deployments. Existi
 
 ### Prerequisites
 
-- Windows 10 version 17763.0 or later, Windows 11, or Windows Server 2019
+- Windows 10 version 17763.0 or later, Windows 11 (Pro, Enterprise, LTSC, and IOT Enterprise editions), or Windows Server 2019 (Standard, Essentials)
 - [Microsoft Edge WebView2](https://developer.microsoft.com/microsoft-edge/webview2/) (Use the Evergreen Standalone Installer.)
 - SQL Server Express, SQL Server Standard, or SQL Server Enterprise (required only for offline mode). For information on which SQL Server edition to use, see [Commerce offline implementation and troubleshooting](implementation-considerations-offline.md).
 - Dynamics 365 Commerce (Commerce headquarters and Cloud Scale Unit)

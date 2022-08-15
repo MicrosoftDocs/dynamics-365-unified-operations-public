@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Tax Calculation overview
 description: This article explains the overall scope and features of the Tax Calculation capability.
-author: wangchen
+author: EricWangChen
 ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
-# ms.devlang: 
 ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-
+ms.search.form: TaxIntegrationTaxServiceParameters
 ---
 
 # Tax Calculation overview
@@ -35,7 +24,7 @@ Tax Calculation is a hyper-scalable multitenant service that enables the global 
 Tax Calculation integrates with Dynamics 365 Finance and Dynamics 365 Supply Chain Management. Eventually, it will also integrate with Dynamics 365 Project Operations, Dynamics 365 Commerce, and other first-party and third-party applications.
 
 > [!IMPORTANT]
-> When you enable Tax Calculation, some operations on related data might be performed in a data center other than the data center that maintains your service data. Review the [Terms and Conditions](../../fin-ops-core/fin-ops/get-started/public-preview-terms.md) before you enable Tax Calculation. Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
+> When you enable Tax Calculation, some operations on related data might be performed in a data center other than the data center that maintains your service data. Review the [Terms and Conditions](https://go.microsoft.com/fwlink/?linkid=2156043) before you enable Tax Calculation. Your privacy is important to us. To learn more, read our [Privacy Statement](https://go.microsoft.com/fwlink/?LinkId=521839).
 
 Tax Calculation is a microservice-based tax engine that offers exponential scalability and can help you perform the following tasks:
 
@@ -60,10 +49,15 @@ Tax Calculation is deployed in the following Azure geographies. More Azure geogr
 
 - Asia Pacific
 - Australia
+- Brazil
 - Canada
 - Europe
+- France
+- India
 - Japan
+- South Africa
 - Switzerland
+- United Arab Emirates
 - United Kingdom
 - United States
 
@@ -155,11 +149,15 @@ The following transactions are supported in version 10.0.28:
 - Vendor payment journal
 - Customer payment journal
 
+The following transactions are supported in version 10.0.29: 
+
+- Periodical journal
+
 ## Supported countries/regions
 
-Tax Calculation can be enabled by legal entity. 
+Tax Calculation can be run with the supported localization features in following countries/regions for a legal entity's primary address: 
 
-The following countries/regions for a legal entity's primary address are supported in version 10.0.21:
+Supported in version 10.0.21:
 
 - Austria
 - Belgium
@@ -182,7 +180,7 @@ The following countries/regions for a legal entity's primary address are support
 - United Kingdom
 - United States
 
-The following countries/regions for a legal entity's primary address are supported in version 10.0.22:
+Supported in version 10.0.22:
 
 - Australia
 - Bahrain
@@ -197,22 +195,24 @@ The following countries/regions for a legal entity's primary address are support
 - South Africa
 - United Arab Emirates
 
-The following countries/regions for a legal entity's primary address are supported in version 10.0.23:
+Supported in version 10.0.23:
 
 - Thailand
 - Japan
 - Malaysia
 - Singapore
 
-The following countries/regions for a legal entity's primary address are supported in version 10.0.24:
+Supported in version 10.0.24:
 
 - Mexico
 
-The following countries/regions for a legal entity's primary address are supported in version 10.0.26:
+Supported in version 10.0.26:
 
 - China
 - Czech Republic
 - Spain
+
+For any country/region not localized by Microsoft, Tax Calculation can also be enabled and run with other global features.
 
 ## Related resources
 

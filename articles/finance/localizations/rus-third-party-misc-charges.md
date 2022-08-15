@@ -1,27 +1,17 @@
 ---
-# required metadata
-title: Third party miscellaneous charges  
+title: Third party miscellaneous charges
 description: This article explains how to handle services that are purchased though a separate invoice as miscellaneous charges.
-author: v-nadyuz
+author: AdamTrukawka
 ms.date: 11/18/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Third party miscellaneous charges
