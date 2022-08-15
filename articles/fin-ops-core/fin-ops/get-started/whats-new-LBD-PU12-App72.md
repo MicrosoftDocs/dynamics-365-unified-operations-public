@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: What's new or changed in on-premises deployments of Dynamics 365 Finance and Operations, Enterprise edition 7.2 with platform update 12 (March 2018)
 description: This article describes features that are either new or changed in on-premises deployments of Microsoft Dynamics 365 Finance and Operations, Enterprise edition 7.2 with platform update 12. This deployment option became available in March 2018.
 author: sericks007
 ms.date: 03/14/2018
 ms.topic: article
 ms.prod: dynamics-365
-ms.service:
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
-ms.search.validFrom: 2017-11-30 
-ms.dyn365.ops.version: Platform update 12 
-
+ms.search.validFrom: 2017-11-30
+ms.dyn365.ops.version: Platform update 12
+ms.custom: 
+ms.service: 
 ---
 
 # What's new or changed in on-premises deployments of Dynamics 365 Finance and Operations, Enterprise edition 7.2 with platform update 12 (March 2018)

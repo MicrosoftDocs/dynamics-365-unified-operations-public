@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Set up Electronic messages
 description: This article provides information about how to set up Electronic messages (EM) functionality.
-author: liza-golub
+author: AdamTrukawka
 ms.date: 11/18/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: 2021-06-23
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Set up Electronic messages

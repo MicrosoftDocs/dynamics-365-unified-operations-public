@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: Dispose of a fixed asset with reduction entry
-description: Use this task to learn how to dispose of a fixed asset with reduction entry for Japan. 
-author: ShylaThompson
+description: Use this task to learn how to dispose of a fixed asset with reduction entry for Japan.
+author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Japan
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 ---
 # Dispose of a fixed asset with reduction entry
 

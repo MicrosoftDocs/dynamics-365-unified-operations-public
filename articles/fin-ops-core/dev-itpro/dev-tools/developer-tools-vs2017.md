@@ -1,12 +1,12 @@
 ---
 title: Visual Studio requirements for X++
 description: This article lists the Visual Studio components that are required to run the Visual Studio extension for X++.
-author: jorisdg
+author: gianugo
 ms.date: 10/26/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.author: jorisde
+ms.reviewer: josaw
+ms.author: gianura
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 7.0.0
 ---

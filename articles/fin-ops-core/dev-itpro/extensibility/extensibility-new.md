@@ -1,26 +1,19 @@
 ---
 title: What's new or changed for extensibility
 description: This article provides links to topics about extensibility updates.
-author: RobinARH
+author: josaw1
 ms.date: 05/14/2019
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 268724
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2019-05-14
 ms.dyn365.ops.version: Platform update 4
-
+ms.custom: 268724
+ms.assetid: 
 ---
 # What's new or changed for extensibility
 

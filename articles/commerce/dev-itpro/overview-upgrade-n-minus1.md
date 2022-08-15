@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Upgrade and N-1 support for Commerce
 description: Upgrade support and N-1 support have been enabled in the release of Dynamics 365 Commerce.
-author: athinesh99
+author: josaw1
 ms.date: 11/14/2017
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: ["44351", "intro-internal"]
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: athinesh
+ms.author: josaw
 ms.search.validFrom: 2017-07-31
 ms.dyn365.ops.version: Retail July 2017 update
-
+ms.custom: 44351,  ""intro-internal
 ---
 
 # Upgrade and N-1 support for Commerce

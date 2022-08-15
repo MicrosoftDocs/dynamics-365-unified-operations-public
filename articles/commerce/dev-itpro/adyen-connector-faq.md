@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Dynamics 365 Payment Connector for Adyen FAQ
 description: This article provides answers to frequently asked questions regarding the Microsoft Dynamics 365 Payment Connector for Adyen.
-author: rassadi
+author: Reza-Assadi
 ms.date: 03/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 141393
-ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: rassadi
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 141393
+ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.search.industry: Retail
 ---
 
 # Dynamics 365 Payment Connector for Adyen FAQ

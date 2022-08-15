@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Block transactions by using triggers
 description: This article shows how you can use a trigger to block an invoice or credit transaction.
-author: mugunthanm
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 65893
-ms.assetid: 605f5986-f84f-4b18-b94e-b0912cb367a1
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 65893
+ms.assetid: 605f5986-f84f-4b18-b94e-b0912cb367a1
 ---
 
 # Block transactions by using triggers

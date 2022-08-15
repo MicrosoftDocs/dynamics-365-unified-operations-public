@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: CLI command reference
 description: This article covers the command-line interface (CLI) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
@@ -8,26 +6,19 @@ ms.date: 03/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 # CLI command reference
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article covers the command-line interface ([CLI](https://en.wikipedia.org/wiki/Command-line_interface)) commands that are available in the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 
@@ -132,7 +123,7 @@ yarn msdyn365 add-data-action getMyData --verbose
 yarn msdyn365 add-module <module-name> <--verbose>
 ```
 
-This command adds a module to the root/src/modules folder. Note that module names are case-insensitive. 
+This command adds a module to the root/src/modules folder. Module names are case-insensitive. 
 
 The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
 
@@ -204,7 +195,7 @@ yarn msdyn365 clone content-block super-content-block --verbose
 yarn msdyn365 create-request-hook <--verbose>
 ```
 
-This command creates a request pipeline plug-in hook file (**src/requestHooks/initialRequest.hook.ts**). That file provides the ability to intercept the rendering request that is sent to the root/src/modules folder on the Node server.
+This command creates a request pipeline plug-in hook file (**src/requestHooks/initialRequest.hook.ts**). The request pipeline plug-in hook file provides the ability to intercept the rendering request that is sent to the **root/src/modules** folder on the Node server.
 
 The **--verbose** option is used to provide more verbose debugging output in the command prompt window.
 
@@ -212,6 +203,27 @@ The **--verbose** option is used to provide more verbose debugging output in the
 
 ``` bash
 yarn msdyn365 create-request-hook --verbose
+```
+
+## optimize-module-css
+
+**Usage**
+
+``` bash
+yarn msdyn365 optimize-module-css <themeName> --requiredStyles=<requiredStylesFolder> --componentStyles=<componentStylesFolder> --assetFiles=<assetFiles> --assetVar=<assetVar>
+```
+
+This command optimizes styles for the [module CSS optimization](module-css-optimization.md) feature by creating the necessary file structure.  Styles still must be updated within the individual **\<MODULE_NAME\>.scss** files for specific modules.
+
+- The **--requiredStyles** option is used to specify the folder names of required/abstract styles.
+- The **--componentStyles** option is used to provide the folder names of component styles. 
+- The **--assetFiles** option is used to provide the file names where style assets are being used. 
+- The **--assetVar** option is used to provide variable names that describe the path to asset files without using the `$` character.
+
+**Example**
+
+``` bash
+yarn msdyn365 optimize-module-css adventureWorks --requiredStyles=00-settings,01-tools,02-generic --componentStyles=03-components --assetFiles=icons.scss --assetVar=msv-font-path
 ```
 
 ## pack

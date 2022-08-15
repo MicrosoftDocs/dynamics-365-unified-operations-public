@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Cost management Power BI content
-description: This article describes what is included in the Cost management Power BI content. 
+description: This article describes what is included in the Cost management Power BI content.
 author: JennySong-SH
 ms.date: 03/16/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 270314
-ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
+ms.reviewer: kamaybac
 ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 270314
+ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
+ms.search.industry: Manufacturing
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 ---
 
 # Cost management Power BI content

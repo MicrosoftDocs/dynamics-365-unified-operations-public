@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Run the Document Routing Agent as a Windows service
-description: This article provides information that will help you select the execution mode that is used by the Document Routing Agent. 
+description: This article provides information that will help you select the execution mode that is used by the Document Routing Agent.
 author: RichdiMSFT
 ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 191133
-ms.assetid: 7adc7228-4360-4a54-8a3e-4d916e727dd2
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: richdi
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-
+ms.custom: 191133
+ms.assetid: 7adc7228-4360-4a54-8a3e-4d916e727dd2
 ---
 
 # Run the Document Routing Agent as a Windows service

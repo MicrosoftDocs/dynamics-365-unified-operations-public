@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Test modules by using page mocks
 description: This article describes how to test modules by using page mocks.
 author: samjarawan
@@ -8,22 +6,14 @@ ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 # Test modules by using page mocks
 

@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Configure registration numbers in Egypt
-description: This article explains how to configure and use registration numbers in Egypt. 
-author: ilkond
+description: This article explains how to configure and use registration numbers in Egypt.
+author: mrolecki
 ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# 
-# ms.tgt_pltfrm: 
-ms.custom: 
 ms.search.region: Egypt
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-
+ms.custom: 
 ---
 
 # Configure registration numbers in Egypt

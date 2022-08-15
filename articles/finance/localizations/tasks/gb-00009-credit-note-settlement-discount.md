@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: GB-00009 Create a credit note on the settlement discount
-description: This walkthrough was created using the demo company DEMF with country context switched for the United Kingdom (Country/region GBR). 
-author: epodkolz
+description: This walkthrough was created using the demo company DEMF with country context switched for the United Kingdom (Country/region GBR).
+author: EricWangChen
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, LedgerJournalTable, LedgerJournalTransCustPaym, CustOpenTrans, CustTable, CustInvoiceJournal   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: United Kingdom
-# ms.search.industry: 
-ms.author: epodkolz
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: wangchen
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: CustFreeInvoice, CustTableLookup, CustPostInvoiceJob, LedgerJournalTable, LedgerJournalTransCustPaym, CustOpenTrans, CustTable, CustInvoiceJournal
 ---
 # GB-00009 Create a credit note on the settlement discount
 

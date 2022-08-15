@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Section Power BI subpattern
 description: This article provides information about the Section PowerBI subpattern.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 29431
-ms.assetid: 3e760372-e5ee-49d6-b715-c638294345de
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 29431
+ms.assetid: 3e760372-e5ee-49d6-b715-c638294345de
 ---
 
 # Section Power BI subpattern

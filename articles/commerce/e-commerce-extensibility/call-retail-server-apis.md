@@ -1,7 +1,4 @@
 ---
-# required metadata
-
-
 title: Call Commerce Scale Unit APIs
 description: This article explains how to call application programming interfaces (APIs) for Microsoft Dynamics 365 Commerce Scale Unit from a data action or directly from module code.
 author: samjarawan
@@ -9,22 +6,14 @@ ms.date: 09/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 # Call Commerce Scale Unit APIs
 

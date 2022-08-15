@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Font and background colors for input, table, and grid controls
 description: This article provides information about the new color picker control that lets users select a color.
-author: RobinARH
+author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 90513
-ms.assetid: 84e06ee2-be1c-443b-b595-9309eaea84c5
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 90513
+ms.assetid: 84e06ee2-be1c-443b-b595-9309eaea84c5
 ---
 
 # Font and background colors for input, table, and grid controls

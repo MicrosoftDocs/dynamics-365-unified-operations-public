@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Reset the Financial reporting data mart
 description: This article describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance.
 author: aprilolson
@@ -8,22 +6,14 @@ ms.date: 04/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: FinancialReports
-# ROBOTS: 
 audience: IT Pro, Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261824
+ms.reviewer: twheeloc
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 261824
+ms.search.form: FinancialReports
 ---
 
 # Reset the Financial reporting data mart

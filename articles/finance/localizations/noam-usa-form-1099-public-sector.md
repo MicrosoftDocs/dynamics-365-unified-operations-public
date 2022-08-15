@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Form 1099 in the public sector
 description: This article provides tips and information about how to set up Form 1099 functionality for Accounts payable in the public sector.
-author: rschloma
+author: brpotter
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableListPage
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 26181
-ms.assetid: 10f56dea-ea2d-48ea-9622-4ef715eb1179
 ms.search.region: USA
-ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 26181
+ms.assetid: 10f56dea-ea2d-48ea-9622-4ef715eb1179
+ms.search.industry: Public sector
+ms.search.form: LedgerTransVoucher, SysConfiguration, Tax1099Summary, VendTableListPage
 ---
 
 # Form 1099 in the public sector

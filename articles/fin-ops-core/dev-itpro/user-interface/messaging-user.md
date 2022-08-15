@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Messaging system for finance and operations apps
 description: This article describes the rich, powerful messaging system in finance and operations apps.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 03/05/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 50401
-ms.assetid: ce9d2312-c02e-4649-a7e4-33c3a06dfbd4
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 50401
+ms.assetid: ce9d2312-c02e-4649-a7e4-33c3a06dfbd4
 ---
 
 # Messaging system for finance and operations apps

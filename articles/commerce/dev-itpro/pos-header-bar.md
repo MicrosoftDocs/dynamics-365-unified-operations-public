@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Add custom buttons to the POS header bar
-description: This article explains how to add a new custom button to the POS header bar. 
-author: mugunthanm
+description: This article explains how to add a new custom button to the POS header bar.
+author: josaw1
 ms.date: 09/16/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
+ms.reviewer: josaw
+ms.search.region: Global
+ms.author: josaw
+ms.search.validFrom: 2020-09-16
+ms.dyn365.ops.version: AX 10.0.14
 ms.custom: 28021
 ms.assetid: 
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
-ms.search.validFrom: 09-16-2020
-ms.dyn365.ops.version: AX 10.0.14
-
 ---
 
 # Add custom buttons to the POS header bar

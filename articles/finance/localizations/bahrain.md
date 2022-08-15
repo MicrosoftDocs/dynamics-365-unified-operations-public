@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Bahrain overview
-description: This article provides an overview of functionality specific to Bahrain. 
-author: ilkond
+description: This article provides an overview of functionality specific to Bahrain.
+author: mrolecki
 ms.date: 09/15/2021
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
 ms.search.region: Bahrain
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2020-06-04
 ms.dyn365.ops.version: 10.0.13
-
 ---
 
 # Bahrain overview

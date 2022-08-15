@@ -55,7 +55,7 @@ This section provides a three-part demo that shows how to work with work line de
 
 ### Make sample data available
 
-To work through this demo by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
+To work through this demo by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
 
 You can also use this demo as guidance when you work on a production system. However, you must substitute your own values, and you might be missing some types of required records that the standard demo data provides.
 

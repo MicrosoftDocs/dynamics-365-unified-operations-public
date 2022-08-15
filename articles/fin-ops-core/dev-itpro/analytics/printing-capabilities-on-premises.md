@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Document generation, publishing, and printing in on-premises deployments
 description: This article describes the capabilities for generating, publishing, and printing documents in on-premises deployments.
 author: RichdiMSFT
 ms.date: 06/16/2017
 ms.topic: article
 ms.prod: dynamics-365
-ms.service:
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  SysCorpNetPrinterList
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: richdi
-ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.version: Platform update 8 
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: Platform update 8
+ms.search.form: SysCorpNetPrinterList
+ms.service: 
 ---
 
 # Document generation, publishing, and printing in on-premises deployments

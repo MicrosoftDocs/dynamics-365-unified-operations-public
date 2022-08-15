@@ -1,27 +1,17 @@
---- 
-# required metadata 
- 
+---
 title: Original invoice reference (Eastern Europe)
-description: This task walks you through creating corrective lines in a credit note for a sales order. 
-author: sndray
+description: This task walks you through creating corrective lines in a credit note for a sales order.
+author: AdamTrukawka
 ms.date: 02/09/2016
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Estonia
-# ms.search.industry: 
-ms.author: sndray
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.author: atrukawk
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Original invoice reference (Eastern Europe)
 

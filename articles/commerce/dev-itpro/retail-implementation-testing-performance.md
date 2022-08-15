@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Testing and performance issues
 description: This article describes recommended practices for testing and performance for Microsoft Dynamics 365 Commerce implementation projects.
 author: andreashofmann1
@@ -8,21 +6,14 @@ ms.date: 07/09/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: andreash
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: Retail 7.3
-
+ms.search.industry: Retail
+ms.search.form: 
 ---
 
 

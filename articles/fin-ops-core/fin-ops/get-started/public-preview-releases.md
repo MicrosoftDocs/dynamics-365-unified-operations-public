@@ -4,7 +4,7 @@
 title: Service update availability
 description: This article provides information about the different release options.
 author: hmahl
-ms.date: 06/21/2022
+ms.date: 08/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -69,7 +69,7 @@ Customers will be able to take up to 7 service updates per year and are required
 > Beginning in 2022, we are making adjustments to end-of-year service update availability. Servicing for the major October release will be extended into January.  Similarly, servicing for the November release will be extended into March. The January release has been cancelled.
 
 > [!Note]
-> The name of the month given to a release doesn't always indidicate when the auto-update may occur.  For example, you'll notice in the table above that the auto-update schedule for the "October" release in 2022 actually starts on September 30, 2022.
+> The name of the month given to a release doesn't always indicate when the auto-update may occur.  For example, you'll notice in the table above that the auto-update schedule for the "October" release in 2022 actually starts on September 30, 2022.
 
 Previews are made available as a deployable package via the Shared Asset Library in Lifecycle Services. For more details, see [One Version service updates FAQ](one-version.md). 
 

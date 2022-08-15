@@ -1,14 +1,13 @@
 ---
-# required metadata
 title: Manage finance and operations updates and your custom code lifecycle
 description: This article describes how to manage finance and operations updates and your custom code lifecycle.
-author: rbadawy
+author: josaw1
 ms.date: 11/08/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: robadawy
+ms.author: josaw
 ms.search.validFrom: 2020-10-22
 ms.dyn365.ops.version: Platform update 10
 ---

@@ -1,26 +1,19 @@
 ---
 title: Customize model elements through extension
 description: This article describes the Fleet Management Extension model. This model contains elements that extend the functionality of the Fleet Management application.
-author: jorisdg
+author: gianugo
 ms.date: 11/08/2017
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Developer
-# ms.devlang:
-ms.reviewer: tfehr
-# ms.tgt_pltfrm:
-ms.custom: 11184
-ms.assetid: 3190f6e2-698a-4cfa-9a2d-a6c57354920a
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry:
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 11184
+ms.assetid: 3190f6e2-698a-4cfa-9a2d-a6c57354920a
 ---
 
 # Customize model elements through extension

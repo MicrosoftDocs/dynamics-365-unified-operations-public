@@ -66,7 +66,6 @@ Follow these steps to set up default shipment consolidation policies in an envir
 1. On the **Warehouse** FastTab, set the **Consolidate shipment at release to warehouse** option to *Yes*.
 1. Repeat steps 2 through 4 for all other warehouses where consolidation is required.
 1. Close the page.
-1. Use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the *Shipment consolidation policies* feature. In the **Feature management** workspace, the feature is named *Consolidate shipment*.
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**. You might have to refresh your browser to see the new **Shipment consolidation policies** menu item after you turn on the feature.
 1. On the Action Pane, select **Create default setup** to create the following policies:
 
@@ -86,7 +85,6 @@ Follow these steps to set up default shipment consolidation policies in an envir
 
 Follow these steps to set up default shipment consolidation policies in a brand-new environment.
 
-1. Use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the *Shipment consolidation policies* feature, if you haven't already turned it on. In the **Feature management** workspace, the feature is named *Consolidate shipment*.
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 1. On the Action Pane, select **Create default setup** to create the following policies:
 

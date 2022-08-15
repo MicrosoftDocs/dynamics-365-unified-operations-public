@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Yearly tax communication
-description: This article provides information about the yearly tax communication report in Italy. 
-author: anasyash
+description: This article provides information about the yearly tax communication report in Italy.
+author: AdamTrukawka
 ms.date: 05/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 264294
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 264294
+ms.search.form: 
 ---
 
 # Yearly tax communication

@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: Post arrivals and dispatches for Intrastat
 description: This article provides an example that shows how to post arrivals and dispatches for Intrastat.
-author: anasyash
-ms.date: 8/23/2021
+author: AdamTrukawka
+ms.date: 08/23/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ---
 

@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Support for upgrade and N-1 for India
 description: This article provides an overview N-1 support for Commerce customers in India.
-author: kfend 
+author: josaw1
 ms.date: 10/03/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: India
-ms.search.industry: Retail
-ms.author: kfend
+ms.author: josaw
 ms.search.validFrom: 2018-10-01
 ms.dyn365.ops.version: 8.1
+ms.search.industry: Retail
 ---
 
 # Support for upgrade and N-1 for India
