@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Turnover and balances statement for Poland
 description: This article provides information about the Turnover and balances statement for Poland.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 264354
 ms.search.region: Poland
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 264354
 ---
 
 # Turnover and balances statement for Poland

@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition (July 2017)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations, Enterprise edition (July 2017). This version was released in July 2017 and has a build number of 7.2.11792.56024.
-author: tonyafehr
+author: sericks007
 ms.date: 11/20/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
-ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
-ms.search.region: Global 
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: tfehr
-ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.version: July 2017 update 
+ms.reviewer: sericks
+ms.search.region: Global
+ms.author: sericks
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition (July 2017)

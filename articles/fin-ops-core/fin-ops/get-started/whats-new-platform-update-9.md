@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9 (July 2017)
 description: This article describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9. This version was released in July 2017.
-author: tonyafehr
+author: sericks007
 ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
-ms.search.validFrom: 2017-06-30 
+ms.author: sericks
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Platform update 9
-
+ms.custom: 
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 9 (July 2017)

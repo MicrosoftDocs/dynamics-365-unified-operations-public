@@ -1,31 +1,21 @@
 ---
-
-# required metadata
-
 title: Create rules for Optimization advisor
-description: This article discusses how to add new rules to Optimization advisor. 
-author: roxanadiaconu
+description: This article discusses how to add new rules to Optimization advisor.
+author: kamaybac
 ms.date: 02/04/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: SelfHealingWorkspace
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+ms.reviewer: kamaybac
+ms.search.region: global
+ms.author: kamaybac
+ms.search.validFrom: 2017-12-01
+ms.dyn365.ops.version: 7.3
 ms.custom: 
 ms.assetid: 
-ms.search.region: global
 ms.search.industry: 
-ms.author: sericks
-ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3 
-
+ms.search.form: SelfHealingWorkspace
 ---
 
 # Create rules for Optimization advisor

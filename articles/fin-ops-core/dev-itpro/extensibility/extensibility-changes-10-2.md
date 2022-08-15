@@ -6,22 +6,14 @@ ms.date: 05/10/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: fdahl
 ms.search.validFrom: 2019-05-10
 ms.dyn365.ops.version: App 10.0
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Extensibility changes in Dynamics 365 for Finance and Operations version 10.0.2

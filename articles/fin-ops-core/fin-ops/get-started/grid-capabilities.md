@@ -4,7 +4,7 @@
 title: Grid capabilities
 description: This article describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
 author: jasongre
-ms.date: 07/26/2022
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -90,7 +90,7 @@ If the calculation takes a long time to be completed, you can cancel the operati
 Calculated values will be automatically updated as you update, delete, or create rows in the dataset.
 
 ## Typing ahead of the system
-In many business scenarios, the ability to quickly enter data into the system is very important. Before the new grid control was introduced, users could change data only in the current row. Before they could create a new row or switch to a different row, they were forced to wait for the system to successfully validate any changes. In an attempt to reduce the amount of time that users wait for these validations to be completed, and to improve user productivity, the new grid adjusts these validations so that they are asynchronous. Therefore, the user can move to other rows to make changes while previous row validations are pending. 
+In many business scenarios, the ability to quickly enter data into the system is very important. Before the introduction of the new grid control, users could change data only in the current row. Therefore, after they made changes in a row, users could not switch to a different row or create a new row until the system successfully validated the changes in the current row and (in the case of row creation) ran all the logic that is associated with the creation of a new row. To help reduce the time that users spend waiting for these operations to be completed, and to help improve user productivity, the new grid adjusts these actions so that they are asynchronous. Users can create new rows or move to other rows to make changes while previous row validations and row creation logic are pending. 
 
 [![Typing ahead of the system.](./media/gridFastEntry-07-25-2022.gif)](./media/gridFastEntry-07-25-2022.gif)
 
@@ -101,8 +101,11 @@ To support this new behavior, a new column for the row status has been added to 
 - **Invalid state** – This status indicates that some warning or message was triggered during the processing of the row, and it might have prevented the system from saving the changes in that row. In the old grid, if the save operation was unsuccessful, you were forced back into the row to fix the issue immediately. However, in the new grid, you're notified that a validation issue was encountered, but you can decide when you want to fix any issues in the row. When you're ready to fix an issue, you can manually move focus back to the row. Alternatively, you can select the **Fix this issue** action. This action immediately moves focus back to the row that has the issue, and lets you make edits inside or outside the grid. Note that the processing of subsequent pending rows is stopped until this validation warning is resolved. 
 - **Paused** – This status indicates that processing by the server is paused because validation of the row triggered a pop-up dialog box that requires user input. Because the user might be entering data in some other row, the pop-up dialog box isn't immediately presented to that user. Instead, it will be presented when the user chooses to resume processing. This status is accompanied by a notification that informs the user about the situation. The notification includes a **Resume processing** action that will trigger the pop-up dialog box.
 
-> [!NOTE]
-> When users are entering data ahead of the place where the server is processing, they can expect a few degradations in the data entry experience, such as a lack of lookups, control-level validation, and entry of default values. Users who need a drop-down list to find a value are encouraged to wait for the server to catch up to the current row. Control-level validation and entry of default values will also occur when the server processes that row.
+### Differences when entering data ahead of the system
+When you enter data ahead of the place where the system is processing, you can expect a few changes in the data entry experience:
+
+- You will notice that there are no lookup drop-down lists, field values aren't validated after you move to a different column in the same row, and columns don't initially show default values. This behavior occurs when you create or update ahead of the system. However, after the system catches up to the place where you're currently editing, the standard experience will resume. If you made changes to a field that typically receives a default value, your changes override the default field value when the server starts to process the row.
+- If you create a new row by using the **Down arrow** key, all columns in the grid will appear as editable. By default, the focus will be put in the first column in the new row. This column might not be the same column that received the initial focus in the legacy grid, or the same column that receives focus after you select a **New** button. Your organization can customize the system and change the column that receives the initial focus when the **Down arrow** key is selected. For more information, see the [Specifying the column that receives the initial focus when new rows are created by using the Down arrow key](#developer-specifying-the-column-that-receives-the-initial-focus-when-new-rows-are-created-by-using-the-down-arrow-key) section. Regardless, you can use personalization to optimize each grid for data entry. Specifically, you can reorder fields so that the first column is the column that you want to start to enter data in. You might also want to reorder fields in general for data entry, to reduce tab stops and hide any fields that aren't required for data entry in this particular view.
 
 ### Pasting from Excel
 Users have always been able to export data from grids in finance and operations apps to Microsoft Excel by using the **Export to Excel** mechanism. However, the ability to enter data ahead of the system enables the new grid to support copying tables from Excel and pasting them directly into grids in finance and operations apps. The grid cell that the paste operation is initiated from determines where the copied table begins to be pasted in. The contents of the grid are overwritten by the contents of the copied table, except in two cases:
@@ -207,6 +210,11 @@ To opt an individual grid out of asynchronous row validation, add the following 
 
 ## [Developer] Size-to-available-width columns
 If a developer sets the **WidthMode** property to **SizeToAvailable** for columns inside the new grid, those columns initially have the same width that they would have if the property were set to **SizeToContent**. However, they stretch to use any extra available width inside the grid. If the property is set to **SizeToAvailable** for multiple columns, all those columns share any extra available width inside the grid. However, if a user manually resizes one of those columns, the column becomes static. It will remain at that width and will no longer stretch to take up extra available grid width.
+
+## [Developer] Specifying the column that receives the initial focus when new rows are created by using the Down arrow key
+As was discussed in the [Differences when entering data ahead of the system](#differences-when-entering-data-ahead-of-the-system) section, if the "Typing ahead of the system" capability is enabled, and a user creates a new row by using the **Down arrow** key, the default behavior is to put the focus in the first column in the new row. This experience might differ from the experience in the legacy grid or when a **New** button is selected.
+
+Users and organizations can create saved views that are optimized for data entry. (For example, you can reorder columns so that the first column is the one that you want to start to enter data in.) In addition, as of version 10.0.29, organizations can adjust this behavior by using the **selectedControlOnCreate()** method. This method lets a developer specify the column that should receive the initial focus when a new row is created by using the **Down arrow** key. As input, this API takes the control ID that corresponds to the column that should receive the initial focus.
 
 ## Known issues
 This section maintains a list of known issues for the new grid control.

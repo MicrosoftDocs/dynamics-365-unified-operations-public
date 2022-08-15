@@ -1,23 +1,15 @@
 ---
-# required metadata
-
 title: Add filters to an audit file configuration
 description: This article explains how to add a data filter in the German audit file.
-author: liza-golub
+author: AdamTrukawka
 ms.date: 02/09/2021
 ms.topic: article
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
 ms.search.region: Austria, Germany
-# ms.search.industry: 
-ms.author: elgolu
-
+ms.author: atrukawk
+ms.search.form: ERWorkspace
 ---
 
 # Add filters to an audit file configuration

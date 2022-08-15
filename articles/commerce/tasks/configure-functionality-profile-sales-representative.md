@@ -1,27 +1,19 @@
---- 
-# required metadata 
- 
+---
 title: Configure the functionality profile for a sales representative
-description: This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives. 
-author: jblucher
+description: This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives.
+author: josaw1
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: RetailFunctionalityProfile   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: josaw
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
+ms.author: josaw
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
 ms.search.industry: Retail
-ms.author: jeffbl
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.search.form: RetailFunctionalityProfile
 ---
 # Configure the functionality profile for a sales representative
 

@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Gantt control development guide
 description: This article describes how to create new forms by using the Gantt control.
-author: ShylaThompson
+author: josaw1
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 17311
-ms.assetid: e5cd372c-6ac2-4995-bb3c-ff863b40fedb
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sericks
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 17311
+ms.assetid: e5cd372c-6ac2-4995-bb3c-ff863b40fedb
 ---
 
 # Gantt control development guide

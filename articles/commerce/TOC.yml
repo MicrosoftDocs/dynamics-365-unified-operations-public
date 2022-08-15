@@ -718,6 +718,10 @@
           href: tasks/category-pricing-rules-trade-agreements.md
         - name: Delay exact price and discount calculation
           href: delayed-price-calculation.md
+        - name: Pricing functions in POS
+          href: pos-pricing-functions.md
+        - name: Commerce pricing APIs
+          href: pricing-apis.md
       - name: Recommendations 
         items:
         - name: Product recommendations overview 
@@ -1258,6 +1262,10 @@
             href: product-collection-module-overview.md
           - name: Quick view module
             href: quick-view-module.md
+        - name: Product comparison modules
+          items:
+          - name: Product comparison modules
+            href: product-comparison-modules.md
         - name: Navigation modules
           items:
           - name: Breadcrumb module

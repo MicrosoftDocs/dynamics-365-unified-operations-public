@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Retail software development kit (SDK)
 description: The Retail SDK includes code, code samples, templates, and tools that you can use to customize commerce functionality.
-author: tonyafehr
+author: josaw1
 ms.date: 09/27/2021
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: ["17771", "intro-internal"]
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sijoshi
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 10.0.11, Retail July 2017 update
-
+ms.custom: 17771,  ""intro-internal
 ---
 
 # Retail software development kit (SDK)

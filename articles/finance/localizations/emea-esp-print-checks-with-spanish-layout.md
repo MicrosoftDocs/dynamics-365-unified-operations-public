@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Print checks by using the Spanish layout
 description: This article provides information about how to print checks that follow the standards that are required in Spain.
-author: anasyash
+author: AdamTrukawka
 ms.date: 05/31/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: BankChequeLayout, LedgerJournalTransVendPaym
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 274753
 ms.search.region: Spain
-# ms.search.industry: 
-ms.author: anasyash
-ms.dyn365.ops.version: Version 1611
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
-
+ms.dyn365.ops.version: Version 1611
+ms.custom: 274753
+ms.search.form: BankChequeLayout, LedgerJournalTransVendPaym
 ---
 
 # Print checks by using the Spanish layout

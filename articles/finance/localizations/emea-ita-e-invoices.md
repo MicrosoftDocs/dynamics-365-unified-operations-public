@@ -1,26 +1,15 @@
 ---
-# required metadata
-
 title: Customer electronic invoices
 description: This article provides information about the management of customer electronic invoices for Italy.
-author: v-oloski
+author: AdamTrukawka
 ms.date: 05/06/2021
 ms.topic: article
-ms.: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
 ms.reviewer: 
-# ms.tgt_pltfrm: 
-# ms.custom
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: v-oloski
-
+ms.author: atrukawk
+ms.: 
 ---
 
 # Customer electronic invoices

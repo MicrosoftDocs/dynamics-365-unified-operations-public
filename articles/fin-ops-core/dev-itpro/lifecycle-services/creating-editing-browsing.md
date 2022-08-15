@@ -1,28 +1,19 @@
 ---
 title: Create, edit, and browse Business process modeler (BPM) libraries
 description: This article provides information about how to create or edit a BPM library and how to browse an existing library.
-author: kfend
+author: sericks007
 ms.date: 04/03/2018
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Developer, IT Pro
-# ms.devlang:
 ms.reviewer: sericks
-# ms.tgt_pltfrm:
-ms.custom: 13301
-ms.assetid:
 ms.search.region: Global
-# ms.search.industry:
 ms.author: sericks
-ms.search.validFrom:
+ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
-
+ms.custom: 13301
+ms.assetid: 
 ---
 
 # Create, edit, and browse Business process modeler (BPM) libraries

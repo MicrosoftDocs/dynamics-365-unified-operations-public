@@ -1,13 +1,13 @@
 ---
 title: Publish an online store catalog
 description: This article contains conceptual information to understand how catalogs are published from the Commerce module to an online store.
-author: mugunthanm
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2020-02-28
 ms.dyn365.ops.version: AX 10.0.10
 ---

@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Adjust an ER format to generate a custom electronic document
 description: This article explains how to adjust a Microsoft-provided Electronic reporting (ER) format so that it generates a custom electronic document.
 author: kfend
@@ -8,23 +6,15 @@ ms.date: 06/22/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: ["220314", "intro-internal"]
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: filatovm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-
+ms.custom: 220314,  ""intro-internal
+ms.assetid: 
+ms.search.form: ERWorkspace, ERSolutionTable, ERParameters, ERDataModelDesigner, ERModelMappingTable, ERModelMappingDesigner, EROperationDesigner, ERVendorTable
 ---
 
 # Adjust an ER format to generate a custom electronic document

@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: MX-00020 Set up the chart of accounts for a legal entity in Mexico
-description: Set up specific parameters in the chart of accounts to allow the generation of electronic ledger accounting reports for a Mexican legal entity. 
-author: sndray
+description: Set up specific parameters in the chart of accounts to allow the generation of electronic ledger accounting reports for a Mexican legal entity.
+author: AdamTrukawka
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: MainAccount, LedgerConsolidateAccountGroup, MainAccountConsolidateAccount   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Mexico
-# ms.search.industry: 
-ms.author: sndray
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: atrukawk
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: MainAccount, LedgerConsolidateAccountGroup, MainAccountConsolidateAccount
 ---
 # MX-00020 Set up the chart of accounts for a legal entity in Mexico
 

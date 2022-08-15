@@ -1,12 +1,12 @@
 ---
 title: CacheService type
 description: Provides ability to access data from the device cache and update data into the device cache.
-author: tonyafehr
+author: jasongre
 ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ---
 
 # CacheService type

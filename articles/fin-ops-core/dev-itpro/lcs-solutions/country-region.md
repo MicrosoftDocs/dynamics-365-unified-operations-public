@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Globalization resources
-description: This article includes lists of resources that can help you learn more about country/region-specific functionality and offerings.  
-author: kfend
+description: This article includes lists of resources that can help you learn more about country/region-specific functionality and offerings.
+author: sericks007
 ms.date: 02/19/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERWorkspace 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 104173
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kfend
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 104173
+ms.search.form: ERWorkspace
 ---
 
 # Globalization resources

@@ -4,9 +4,9 @@ description: This article explains how to mitigate SQL injection attacks in X++.
 author: pvillads
 ms.date: 12/01/2020
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: pvillads
 ms.search.validFrom: 2020-12-01
 ms.dyn365.ops.version: AX 7.0.0
 ---

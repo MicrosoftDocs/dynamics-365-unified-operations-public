@@ -1,26 +1,18 @@
 ---
-# required metadata
-title: Fixed assets overview 
+title: Fixed assets overview
 description: This article provides information about the Fixed assets module for Russia.
-author: v-oloski
+author: AdamTrukawka
 ms.date: 12/02/2019
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2019-01-04
 ms.dyn365.ops.version: 10.0.1
-
+ms.search.form: 
 ---
 
 # Fixed assets overview

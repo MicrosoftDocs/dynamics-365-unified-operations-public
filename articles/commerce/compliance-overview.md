@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Compliance overview
 description: This article is an overview of the compliance guidance that is provided with Microsoft Dynamics 365 Commerce to help you make your company's sites compliant.
 author: BrianShook
@@ -8,22 +6,13 @@ ms.date: 01/08/2020
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.assetid: 
 ---
 
 # Compliance overview

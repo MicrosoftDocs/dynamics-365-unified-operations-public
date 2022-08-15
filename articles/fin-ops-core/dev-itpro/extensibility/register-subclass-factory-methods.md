@@ -1,5 +1,4 @@
 ---
-
 title: Register subclasses for factory methods
 description: This article describes how to register your own variations for the factories.
 author: MichaelFruergaardPontoppidan
@@ -7,21 +6,14 @@ ms.date: 07/10/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 89563
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: mfp
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-
+ms.custom: 89563
+ms.assetid: 
 ---
 
 # Register subclasses for factory methods

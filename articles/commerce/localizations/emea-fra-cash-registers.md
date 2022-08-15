@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Cash register functionality for France
 description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-manager: annbe
-ms.date: 05/17/2022
+ms.date: 08/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: France
-ms.search.industry: Retail
-ms.author: epopov
-ms.search.validFrom: 2018-2-28
+ms.author: josaw
+ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: 7.3.2
-
+ms.search.industry: Retail
+ms.search.form: RetailFunctionalityProfile, RetailFormLayout, RetailParameters
+manager: annbe
 ---
 # Cash register functionality for France
 
@@ -286,7 +277,7 @@ You must enable the following features in the **Feature management** workspace:
 You must make the following changes on the **Legal entities** page. These settings are used in the archive format.
 
 - On the **Bank account information** FastTab, in the **Routing number** field, specify the VAT identifier of the organization.
-- On the **Statutory reporting** FastTab, in the **NAF code** field, specify the Nomenclature des Activités Françaises (NAF) code of the organization.
+- On the **Registration numbers** FastTab, in the **NAF code** field, specify the Nomenclature des Activités Françaises (NAF) code of the organization.
 - On the **Tax registration** FastTab, in the **Tax registration number** field, specify the Système d'identification du répertoire des établissements (SIRET) number of the organization.
 
 ### Set up VAT per French requirements
@@ -401,10 +392,10 @@ To enable the fiscal registration process for France in Commerce headquarters, f
 1. Download configuration files for the fiscal document provider and the fiscal connector from the Commerce SDK:
 
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
-    2. Open the last available release branch (for example, **[release/9.30](https://github.com/microsoft/Dynamics365Commerce.Solutions/tree/release/9.30)**).
+    2. Open the last available release branch.
     3. Open **src \> FiscalIntegration \> SequentialSignatureFrance \> Configurations**.
-    4. Download the fiscal connector configuration file at **Connector \> ConnectorMicrosoftSequentialSignatureFRA.xml** (for example, [the file for release/9.30](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.30/src/FiscalIntegration/SequentialSignatureFrance/Configurations/Connector/ConnectorMicrosoftSequentialSignatureFRA.xml)).
-    5. Download the fiscal document provider configuration file at **DocumentProvider \> DocumentProviderMicrosoftSequentialSignatureFRA.xml** (for example, [the file for release/9.30](https://github.com/microsoft/Dynamics365Commerce.Solutions/blob/release/9.30/src/FiscalIntegration/SequentialSignatureFrance/Configurations/DocumentProvider/DocumentProviderMicrosoftSequentialSignatureFRA.xml)).
+    4. Download the fiscal connector configuration file at **Connector \> ConnectorMicrosoftSequentialSignatureFRA.xml**.
+    5. Download the fiscal document provider configuration file at **DocumentProvider \> DocumentProviderMicrosoftSequentialSignatureFRA.xml**.
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
 1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration file that you downloaded earlier.
@@ -492,7 +483,22 @@ To enable audit events, you must reinitialize the Commerce extensible enumeratio
 1. On the **Commerce parameters** page, on the **General** FastTab, select **Initialize**. For more information, see [Initialize seed data in new Retail environments](../enable-configure-retail-functionality.md).
 1. There is an option to separately configure the scheduler. Go to **Commerce scheduler** \> **Initialize Commerce scheduler**. In the **Initialize Commerce scheduler** dialog box, select **OK**.
 
+### Enable the digital signature in offline mode
+
+To enable the digital signature in offline mode, you must follow these steps after you activate POS on a new device.
+
+1. Sign in to POS.
+1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending downloads** field is **0** (zero), the database is fully synchronized.
+1. Sign out of POS.
+1. Wait for the offline database to be fully synchronized.
+1. Sign in to POS.
+1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending transactions in offline database** field is **0** (zero), the database is fully synchronized.
+1. Restart POS.
+
 ### Configure channel components
+
+> [!WARNING]
+>  If you are using the Commerce version 10.0.28 release or earlier, you must follow specific steps to configure Commerce channel components for France only. Starting with version 10.0.29, all required channel components are enabled out-of-the-box. If you are using Commerce version 10.0.28 or earlier and are migrating to version 10.0.29 or later, you must follow the steps in [Migrate to version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
 
 To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-fi-deployment.md).
 

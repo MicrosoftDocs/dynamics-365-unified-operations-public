@@ -1,15 +1,15 @@
 ---
 title: Supported composite data types for Electronic reporting formulas
 description: This article provides information about the composite data types that are supported in Electronic reporting (ER) formulas.
-author: NickSelin
+author: kfend
 ms.date: 06/02/2021
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # Supported composite data types for Electronic reporting formulas

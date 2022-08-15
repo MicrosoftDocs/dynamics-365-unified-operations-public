@@ -1,27 +1,17 @@
 ---
-# required metadata
-title: Prepayments management  
+title: Prepayments management
 description: This article provides information about paying value-added tax (VAT) when prepayments are received from customers.
-author: v-nadyuz
+author: AdamTrukawka
 ms.date: 10/07/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Prepayments management

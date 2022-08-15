@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Set up the Azure Key Vault client
 description: This article provides information about storing advanced certificates and defining the certificate storage type.
-author: anasyash
+author: AdamTrukawka
 ms.date: 04/01/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: 
-# ms.search.industry: 
 ms.author: kfend
 ms.search.validFrom: 2019-06-01
 ms.dyn365.ops.version: 10.0.10
-
 ---
 
 # Set up the Azure Key Vault client

@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: Lithuanian Intrastat
 description: This article contains information about the Lithuanian Intrastat report.
-author: andosip
+author: AdamTrukawka
 ms.date: 05/19/2022
 ms.topic: article
 audience: 
-ms.reviewer: kfend 
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ---
 

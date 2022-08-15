@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Scope of Mexican localization
-description: This article describes the strategy and scope for tax, finance, and accounting laws and regulations in Mexico. 
-author: sndray
+description: This article describes the strategy and scope for tax, finance, and accounting laws and regulations in Mexico.
+author: AdamTrukawka
 ms.date: 04/11/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Mexico
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.search.form: 
 ---
 
 # Scope of Mexican localization

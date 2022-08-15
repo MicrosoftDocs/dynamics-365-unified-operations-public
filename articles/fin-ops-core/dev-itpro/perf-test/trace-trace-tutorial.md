@@ -1,26 +1,19 @@
 ---
 title: Take traces by using Trace parser
 description: This tutorial provides guidelines on how to take traces.
-author: RobinARH
+author: josaw1
 ms.date: 10/19/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 25471
-ms.assetid: 607c1810-f872-4b23-a2c7-ee01522d90e3
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: chwolf
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 25471
+ms.assetid: 607c1810-f872-4b23-a2c7-ee01522d90e3
 ---
 
 # Take traces by using Trace parser

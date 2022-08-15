@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Accounts payable debt tax registers and debt write-offs
-description: This article provides information about accounts payable debt tax registers and debt write-offs. 
-author: anasyash
+description: This article provides information about accounts payable debt tax registers and debt write-offs.
+author: AdamTrukawka
 ms.date: 04/08/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 10.0.1
-
 ---
 
 # Accounts payable debt tax registers and debt write-offs

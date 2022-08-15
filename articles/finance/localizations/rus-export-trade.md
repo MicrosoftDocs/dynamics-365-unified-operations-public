@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Process invoice factures for export trade
 description: This article provides information about invoice factures for export sales in Russia.
 author: v-nadyuz
@@ -8,22 +6,13 @@ ms.date: 05/14/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
+ms.search.industry: 
 ---
 
 # Process invoice factures for export trade

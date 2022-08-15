@@ -1,31 +1,21 @@
 ---
-# required metadata
-
 title: Prorate header charges to matching sales lines
 description: This article describes additional capabilities for calculating and applying auto-charges to Commerce channel orders by using the advanced auto-charges feature.
-author: hhaines
+author: hhainesms
 ms.date: 03/30/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: 
 ms.dyn365.ops.version: 10.0.1
-
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: Retail
+ms.search.form: 
 ---
 
 # Prorate header charges to matching sales lines

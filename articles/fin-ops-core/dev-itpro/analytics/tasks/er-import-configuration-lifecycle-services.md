@@ -1,28 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: Import a configuration from Lifecycle Services
-description: This article describes how to import a new version of an Electronic reporting (ER) configuration from Microsoft Dynamics Lifecycle Services (LCS). 
-author: NickSelin
+description: This article describes how to import a new version of an Electronic reporting (ER) configuration from Microsoft Dynamics Lifecycle Services (LCS).
+author: kfend
 ms.date: 06/17/2021
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
-
-# optional metadata 
-
-ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolutionImport
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2016-06-30 
+ms.author: filatovm
+ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
-
+ms.search.form: ERWorkspace, ERSolutionTable, ERSolutionRepositoryTable, ERSolutionImport
 ---
 
 # Import a configuration from Lifecycle Services

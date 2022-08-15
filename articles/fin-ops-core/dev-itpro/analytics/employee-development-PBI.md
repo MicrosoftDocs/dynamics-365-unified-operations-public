@@ -7,7 +7,7 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2017-06-30

@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Peripheral simulator for Commerce
 description: This article describes the peripheral simulator tool that is provided with Dynamics 365 Commerce.
 author: BrianShook
@@ -8,23 +6,16 @@ ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetailsExtended, RetailCDXSchedule, RetailStoreTable 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 266544
-ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5
+ms.reviewer: josaw
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: July 2017 update
-
+ms.custom: 266544
+ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5
+ms.search.industry: Retail
+ms.search.form: RetailHardwareProfile, RetailTerminalTable, EcoResProductDetailsExtended, RetailCDXSchedule, RetailStoreTable
 ---
 
 # Peripheral simulator for Commerce

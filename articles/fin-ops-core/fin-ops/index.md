@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Finance and operations application documentation
-description: Documentation for finance and operations apps. 
-author: tonyafehr
+description: Documentation for finance and operations apps.
+author: josaw1
 ms.date: 04/13/2021
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: DefaultDashboard
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: "intro-internal"
+ms.search.form: DefaultDashboard
 ---
 
 # Finance and operations application documentation
