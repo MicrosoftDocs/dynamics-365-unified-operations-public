@@ -80,6 +80,7 @@ We recommend that you import and set up your Tax Calculation configuration with 
 | 10.0.26         | Tax Calculation Configuration 40.54.234 |
 | 10.0.27         | Tax Calculation Configuration 40.54.234 |
 | 10.0.28         | Tax Calculation Configuration 40.54.234 |
+| 10.0.29         | Tax Calculation Configuration 40.55.236 |
 
 
 ## Data flow
@@ -151,7 +152,8 @@ The following transactions are supported in version 10.0.28:
 
 The following transactions are supported in version 10.0.29: 
 
-- Periodical journal
+
+- Periodic journals
 
 ## Supported countries/regions
 
