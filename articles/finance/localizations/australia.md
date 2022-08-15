@@ -42,7 +42,6 @@ Australia uses a low-value pool depreciation method. This method allows the allo
 
 - [Electronic reporting overview](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)
 - [Download Electronic reporting configurations from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
-- [Microsoft Dynamics Localization Portal: Australia report (requires CustomerSource account)](https://mbs.microsoft.com/files/customer/AX/Support/supportnews/Australia.html)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
