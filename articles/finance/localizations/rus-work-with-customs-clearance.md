@@ -3,8 +3,8 @@
 
 title: Work with customs clearance
 description: This article explains how to work with customs clearance of products that are transported across the border of the Russian Federation.
-author: akroshkina
-ms.date: 06/27/2022
+author: AdamTrukawka
+ms.date: 08/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -20,7 +20,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: 
 # ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.dyn365.ops.version: 
 ms.search.validFrom: 
 ---
