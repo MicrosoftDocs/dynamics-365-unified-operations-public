@@ -250,7 +250,9 @@ The following settings are included in the fiscal connector configuration that i
 ### Configure channel components
 
 > [!NOTE]
-> The fiscal printer integration sample for Italy is available in the Commerce SDK starting with the Commerce version 10.0.29. In the version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal printer integration sample for Italy (legacy)](emea-ita-fpi-sample-sdk.md).
+> - The fiscal printer integration sample for Italy is available in the Commerce SDK starting with the Commerce version 10.0.29. In the version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal printer integration sample for Italy (legacy)](emea-ita-fpi-sample-sdk.md).
+> 
+> - Commerce samples that are deployed in your environment are not updated automatically when applying service or quality updates to Commerce components. You must make necessary steps to update required samples manually.
 
 #### Set up the development environment
 
