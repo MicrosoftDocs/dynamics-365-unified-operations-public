@@ -70,7 +70,7 @@ Beginning in Commerce version 10.0.30, the PayPal Payment Connector configuratio
 
 In headquarters when configuring the PayPal Payment Connector, the field **OrderIntent** can have two values:
 - "Authorize": this configuration is the default (if the field is left blank, 'Authorize' will act as default). Configuring **OrderIntent** to "Authorize" correlates to the PayPal 'processing_instruction' value of "NO_INSTRUCTION".  The order will be authorized with PayPal and the authorization cannot be modified when this value is utilized.
-- "Save": when the **OrderIntent** value is set "Save", this correlates to the PayPal 'processing_instruction' value of "ORDER_SAVED_EXPLICITLY". Order references will be saved in teh PayPal Service when this value is utilized.
+- "Save": when the **OrderIntent** value is set "Save", this correlates to the PayPal 'processing_instruction' value of "ORDER_SAVED_EXPLICITLY". Order references will be saved in the PayPal Service when this value is utilized.
 
 ## Testing the PayPal Payment Connector
 
