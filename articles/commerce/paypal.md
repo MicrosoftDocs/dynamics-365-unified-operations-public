@@ -4,7 +4,7 @@
 title: Dynamics 365 Payment Connector for PayPal
 description: This article provides an overview of the Microsoft Dynamics 365 Payment Connector for PayPal.
 author: BrianShook
-ms.date: 05/18/2021
+ms.date: 09/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -65,9 +65,10 @@ Fulfillment for PayPal orders supports incremental capture. This means that if a
 Orders made using the PayPal Payment Connector should be fulfilled within 30 days. If an order cannot be fulfilled or invoiced within 30 days, the original authorization will expire. The PayPal Connector does not currently support billing agreements. Recurring billing agreements, similar to recurring card references/tokens are required to automatically generate new authorizations after original authorization expiration. This means that if an authorization expires, the order will fall into a "do not process" state and the customer must be contacted to arrange for an alternate form of payment. 
 
 ### Order Intent
-Beginning in 10.0.30, the PayPal Payment Connector configuration in Headquarters will include a field titled **OrderIntent**. This field will allow the configuration of the PayPal Connector to operate with a saved order with the PayPal service for the online channel. After a payer approves the order, the connector will send the save command for the PayPal order which will allow for future references against the order within PayPal. For Commerce, this means a specific PayPal order reference can be re-authorized if a void is previously called. Merchants can also work with PayPal to configure the order expiry duration, and customize to re-authorize against the PayPal order if the original authorization has not expired.
 
-In Headquarters when configuring the PayPal Payment Connector, the field **OrderIntent** can have two values:
+Beginning in Commerce version 10.0.30, the PayPal Payment Connector configuration in headquarters includes the **OrderIntent** field, which allows the configuration of the PayPal connector to operate with a saved order with the PayPal service for the online channel. After a payer approves an order, the connector sends the save command for the PayPal order which will allow for future references against the order within PayPal. For Commerce, this means a specific PayPal order reference can be reauthorized if a void was previously called. Merchants can also work with PayPal to configure the order expiry duration, and customize to reauthorize against the PayPal order if the original authorization has not expired.
+
+In headquarters when configuring the PayPal Payment Connector, the field **OrderIntent** can have two values:
 - "Authorize": this configuration is the default (if the field is left blank, 'Authorize' will act as default). Configuring **OrderIntent** to "Authorize" correlates to the PayPal 'processing_instruction' value of "NO_INSTRUCTION".  The order will be authorized with PayPal and the authorization cannot be modified when this value is utilized.
 - "Save": when the **OrderIntent** value is set "Save", this correlates to the PayPal 'processing_instruction' value of "ORDER_SAVED_EXPLICITLY". Order references will be saved in teh PayPal Service when this value is utilized.
 
