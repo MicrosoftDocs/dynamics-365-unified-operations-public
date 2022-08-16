@@ -19,6 +19,7 @@ ms.assetid: fab3f6cf-03db-47c7-90fb-f8bc03dacf49
 # Configuration in Lifecycle Services overview
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
 You can use the Configuration manager to copy from and to Dynamics AX 2012 R3 environments that meet the following criteria:
 -   Managed as part of a Lifecycle Services project

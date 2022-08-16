@@ -19,6 +19,7 @@ ms.assetid: 54283db7-6f1a-46e8-b74d-c67d54e6e5fb
 # Copy configurations by using Configuration manager
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
 Before you begin, you must set up Configuration manager (beta). For more information, see [Set up Configuration manager](set-up-configuration-manager-lcs.md).
 
