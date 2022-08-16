@@ -19,6 +19,7 @@ ms.assetid: 0845ab95-9597-4813-9967-e4f3815849ba
 # Set up Configuration manager
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
 > [!IMPORTANT]
 > This feature is **not** supported for production use. Configuration manager (beta) relies on entities from the Data Import/Export Framework in your environment. Because these entities do not currently include all the functionality in AX 2012 R3, some configuration data is not copied between environments.
