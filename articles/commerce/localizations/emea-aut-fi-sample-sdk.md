@@ -18,7 +18,7 @@ ms.search.validFrom: 2019-3-1
 [!include [banner](../includes/banner.md)]
 
 >[!WARNING]
-> You must follow the guidelines in this article only if you are using the Commerce version 10.0.28 or earlier. Starting with the Commerce version 10.0.29, the fiscal registration service integration sample for Austria is available in the Commerce SDK. For more information, see [Configure channel components](./emea-aut-fi-sample.md#configure-channel-components))
+> You must follow the guidelines in this article only if you are using Commerce version 10.0.28 or earlier. Starting with Commerce version 10.0.29, the fiscal registration service integration sample for Austria is available in the Commerce software development kit (SDK). For more information, see [Configure channel components](./emea-aut-fi-sample.md#configure-channel-components))
 
 This article provides guidelines for deploying the fiscal registration service integration sample for Austria from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Fiscal registration service integration sample for Austria](emea-aut-fi-sample.md). 
 
