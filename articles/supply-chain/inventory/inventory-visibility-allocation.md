@@ -58,12 +58,11 @@ The inventory allocation feature consists of the following components:
 - The predefined, allocation-related data source, physical measures, and calculated measures.
 - Customizable allocation groups that have a maximum of eight levels.
 - A set of allocation application programming interfaces (APIs):
-
-    - allocate
-    - reallocate
-    - unallocate
-    - consume
-    - query
+  - allocate
+  - reallocate
+  - unallocate
+  - consume
+  - query
 
 The process of configuring the allocation feature has two steps:
 
@@ -79,17 +78,15 @@ The data source is named `@iv`.
 Here are the initial physical measures:
 
 - `@iv`
-
-    - `@allocated`
-    - `@cumulative_allocated`
-    - `@consumed`
-    - `@cumulative_consumed`
+  - `@allocated`
+  - `@cumulative_allocated`
+  - `@consumed`
+  - `@cumulative_consumed`
 
 Here are the initial calculated measures:
 
 - `@iv`
-
-    - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
+  - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
 
 ### Add other physical measures to the available-to-allocate calculated measure
 
@@ -98,8 +95,9 @@ To use allocation, you must set up the available-to-allocate calculated measure 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
 
 > [!NOTE]
-> datasource `@iv` is a predefined datasource, physical measures defined in the datasource `@iv` with prefix `@` are also predefined measures, they are predefined configuration for allocation feature, please not change or delete them, otherwise you're likely to cause an unexpected error when you use allocation feature.
-> For predefined calculated measure `@iv.@available_to_allocate`, you only need to add other physical meausres in it, change the calculdated measure name is not allowed.
+> Data source `@iv` is a predefined data source and the physical measures defined in `@iv` with prefix `@` are predefined measures. These measures are a predefined configuration for the allocation feature, so don't change or delete them or you're likely to encounter unexpected errors when using the allocation feature.
+>
+> You can add new physical measures to the predefined calculated measure `@iv.@available_to_allocate`, but you must not change its name.
 
 ### Change the allocation group name
 

@@ -65,12 +65,24 @@ To post a reservation request, you must enter a value in the request body. Use t
 
 ## <a name="inventory-summary"></a>Inventory summary
 
-**Inventory summary** is a customized view for the *Inventory OnHand Sum* entity. It provides an inventory summary for products together with all dimensions. Inventory summary data is synced periodically from Inventory Visibility every set-amount minutes. To see data on the **Inventory summary** tab, you must turn on the *OnHandMostSpecificBackgroundService* feature on the **Feature Management & Settings** tab. Once *OnHandMostSpecificBackgroundService* feature is enabled, **Service Configuration** section will appear, in which you can change *OnHandMostSpecificBackgroundService* synchronization frequency. Use the "Up/Down" buttons to change the value, it can be set to as low as 5, then click **Save**. Finally, select **Update configuration** to save all the changes.
+The **Inventory summary** page provides an inventory summary for products together with all dimensions. It is a customized view for the *Inventory OnHand Sum* entity. Inventory summary data is synced periodically from Inventory Visibility.
+
+### Enable the inventory summary and set the synchronization frequency
+
+To enable the **Inventory summary** page and set the synchronization frequency, follow these steps:
+
+1. Open the **Configuration** page.
+1. Open the **Feature Management & Settings** tab.
+1. Set the toggle switch for the **OnHandMostSpecificBackgroundService** feature to *Yes*.
+1. When the feature is enabled, the **Service Configuration** section becomes available and includes a row for configuring the **OnHandMostSpecificBackgroundService** feature. This setting lets you choose the frequency at which inventory summary data is synced. Use the **Up** and **Down** buttons in the **Value** column to change the time between syncs (which can be as low as 5 minutes). Then select **Save**.
+1. Select **Update configuration** to save all the changes.
 
 ![OnHandMostSpecificBackgroundService  Setting](media/inventory-visibility-ohms-freq.PNG "OnHandMostSpecificBackgroundService Setting")
 
 > [!NOTE]
 > The *OnHandMostSpecificBackgroundService* feature only tracks product on-hand changes that occurred after you turned on the feature. Data for products that haven't changed since you turned on the feature won't be synced from the inventory service cache to the Dataverse environment. If your **Inventory summary** page doesn't show all of the on-hand information you are expecting, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job and reenable it. This will do the initial push, and all data will sync to the *Inventory OnHand Sum* entity in next 15 minutes. If you want to use this feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
+
+### Work with the inventory summary
 
 By using the **Advanced filter** that Dataverse provides, you can create a personal view that shows the rows that are important to you. The advanced filter options let you create a wide range of views, from simple to complex. They also let you add grouped and nested conditions to the filters. To learn more about how to use the **Advanced filter**, see [Edit or create personal views using advanced grid filters](/powerapps/user/grid-filters-advanced).
 
