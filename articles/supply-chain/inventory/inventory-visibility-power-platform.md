@@ -106,9 +106,10 @@ Since **Preload the Inventory Visibility Summary** and  **Inventory summary**  h
 
 The bottom of the **Inventory summary** page shows information such as "50 records (29 selected)" or "50 records". This information refers to the currently loaded records from the **Advanced filter** result. The text "29 selected" refers to the number of records that have been selected by using the column header filter for the loaded records. There is also a **Load more** button that you can use to load more records from Dataverse. The default number of records that is loaded is 50. When you select **Load more**, the next 1,000 available records are loaded into the view. The number on the **Load more** button indicates the currently loaded records and the total number of records for the **Advanced Filter** result.
 
-**Inventory summary**
+#### **Inventory summary**
+
 ![Inventory Summary](media/inventory-visibility-onhand-list.png "Inventory Summary")
 
 
-**Preload the Inventory Visibility Summary** 
+#### **Preload the Inventory Visibility Summary** 
 ![Inventory Preload](media/inventory-visibility-preload-onhand-list.png "Inventory Preload")
