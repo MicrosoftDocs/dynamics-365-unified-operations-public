@@ -16,7 +16,8 @@ ms.dyn365.ops.version: 10.0.2
 ---
 # Fiscal registration service integration sample for the Czech Republic
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article provides an overview of the fiscal integration sample for the Czech Republic in Microsoft Dynamics 365 Commerce.
 
