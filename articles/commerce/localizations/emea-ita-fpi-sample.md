@@ -19,7 +19,7 @@ ms.search.validFrom: 2018-11-1
 
 This article provides an overview of the fiscal integration sample for Italy in Microsoft Dynamics 365 Commerce.
 
-The Commerce functionality for Italy includes a sample integration of the point of sale (POS) with a fiscal printer. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) so that it works with [Epson FP-90III Series](https://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) printers from Epson, and it enables communication with a fiscal printer in the web server mode via the EpsonFPMate web-service using Fiscal ePOS-Print API. The sample supports the Registratore Telematico (RT) mode only. The sample is provided in the form of source code and is part of the Commerce software development kit (SDK).
+The Commerce functionality for Italy includes a sample integration of the point of sale (POS) with a fiscal printer. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) so that it works with [Epson FP-90III Series](https://www.epson.it/products/sd/pos-printer/epson-fp-90iii-series) printers from Epson, and enables communication with a fiscal printer in the web server mode via the EpsonFPMate web-service using Fiscal ePOS-Print API. The sample supports the Registratore Telematico (RT) mode only. The sample is provided in the form of source code and is part of the Commerce software development kit (SDK).
 
 Microsoft doesn't release any hardware, software, or documentation from Epson. For information about how to get the fiscal printer and operate it, contact [Epson Italia S.p.A](https://www.epson.it).
 
@@ -96,10 +96,10 @@ The fiscal printer integration sample implements the following rules that are re
 
 ## Set up fiscal integration for Italy
 
-The fiscal printer integration sample for Italy is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Commerce SDK. The sample is located in the **src\\FiscalIntegration\\EpsonFP90IIISample** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Commerce SDK, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
+The fiscal printer integration sample for Italy is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Commerce SDK. The sample is located in the **src\\FiscalIntegration\\EpsonFP90IIISample** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The [sample](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) consists of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Commerce SDK, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
 
 > [!NOTE]
-> The fiscal printer integration sample for Italy is available in the Commerce SDK starting with the Commerce version 10.0.29. In the version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Deployment guidelines for the fiscal printer integration sample for Italy (legacy)](emea-ita-fpi-sample-sdk.md).
+> The fiscal printer integration sample for Italy is available in the Commerce SDK starting with Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Deployment guidelines for the fiscal printer integration sample for Italy (legacy)](emea-ita-fpi-sample-sdk.md).
 
 Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md).
 
@@ -124,7 +124,7 @@ To enable the registration process, follow these steps to set up Commerce headqu
     1. Download the fiscal connector configuration file at **HardwareStation \> EpsonFP90IIIFiscalDeviceSample \> Configuration \> ConnectorEpsonFP90IIISample.xml**.
 
     > [!NOTE]
-    > In the Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. The configuration files for this fiscal integration sample are located in the following folders of the Retail SDK on a developer VM in LCS:
+    > For Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. The configuration files for this fiscal integration sample are located in the following folders of the Retail SDK on a developer VM in LCS:
     >
     > - **Fiscal document provider configuration file:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extension.DocumentProvider.EpsonFP90IIISample\\Configuration\\DocumentProviderEpsonFP90IIISample.xml
     > - **Fiscal connector configuration file:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EpsonFP90IIIFiscalDeviceSample\\Configuration\\ConnectorEpsonFP90IIISample.xml
@@ -250,9 +250,8 @@ The following settings are included in the fiscal connector configuration that i
 ### Configure channel components
 
 > [!NOTE]
-> - The fiscal printer integration sample for Italy is available in the Commerce SDK starting with the Commerce version 10.0.29. In the version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal printer integration sample for Italy (legacy)](emea-ita-fpi-sample-sdk.md).
-> 
-> - Commerce samples that are deployed in your environment are not updated automatically when applying service or quality updates to Commerce components. You must make necessary steps to update required samples manually.
+> - The fiscal printer integration sample for Italy is available in the Commerce SDK starting with Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal printer integration sample for Italy (legacy)](emea-ita-fpi-sample-sdk.md).
+> - Commerce samples that are deployed in your environment are not updated automatically when applying service or quality updates to Commerce components. You must take the necessary steps to manually update the required samples.
 
 #### Set up the development environment
 
@@ -296,10 +295,10 @@ Follow the steps in [Set up a build pipeline for a fiscal integration sample](fi
 
 ## Design of extensions
 
-The fiscal printer integration sample for Italy is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Commerce SDK. The sample is located in the **src\\FiscalIntegration\\EpsonFP90IIISample** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Commerce SDK, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
+The fiscal printer integration sample for Italy is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Commerce SDK. The sample is located in the **src\\FiscalIntegration\\EpsonFP90IIISample** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The [sample](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) consists of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Commerce SDK, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
 
 > [!NOTE]
-> The fiscal printer integration sample for Italy is available in the Commerce SDK starting with the Commerce version 10.0.29. In the version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal printer integration sample for Italy (legacy)](emea-ita-fpi-sample-sdk.md).
+> The fiscal printer integration sample for Italy is available in the Commerce SDK starting with Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal printer integration sample for Italy (legacy)](emea-ita-fpi-sample-sdk.md).
 
 ### Commerce runtime extension design
 
