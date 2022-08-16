@@ -4,7 +4,7 @@
 title: Deployment guidelines for the fiscal printer integration sample for Poland (legacy)
 description: This article provides guidelines for deploying the fiscal printer integration sample for Poland from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK).
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/16/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -16,6 +16,9 @@ ms.search.validFrom: 2019-3-1
 # Deployment guidelines for the fiscal printer integration sample for Poland (legacy)
 
 [!include[banner](../includes/banner.md)]
+
+>[!WARNING]
+> You must follow the guidelines in this article only if you are using the Commerce version 10.0.28 or earlier. Starting with the Commerce version 10.0.29, the fiscal printer integration sample for Poland is available in the Commerce SDK. For more information, see [Configure channel components](./emea-pol-fpi-sample.md#configure-channel-components)
 
 This article provides guidelines for deploying the fiscal printer integration sample for Poland from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Fiscal printer integration sample for Poland](emea-pol-fpi-sample.md). 
 
