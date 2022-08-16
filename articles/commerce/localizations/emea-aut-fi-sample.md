@@ -104,8 +104,8 @@ You must also specify the following settings for Austria. Note that you must run
 
 You must enable the following features in the **Feature management** workspace:
 
-- (Austria) Enable additional audit events in POS
-- (Austria) Enable additional information in end-of-day statements in POS
+- **(Austria) Enable additional audit events in POS**
+- **(Austria) Enable additional information in end-of-day statements in POS**
 
 ### Set up VAT per Austrian requirements
 
@@ -208,10 +208,10 @@ For more information about how to work with receipt formats, see [Set up and des
 
 ## Set up fiscal integration for Austria
 
-The fiscal registration service integration sample for Austria is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Commerce SDK. The sample is located in the **src\\FiscalIntegration\\Efr** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Commerce SDK, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
+The fiscal registration service integration sample for Austria is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Commerce SDK. The sample is located in the **src\\FiscalIntegration\\Efr** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The [sample](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) consists of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Commerce SDK, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
 
 > [!NOTE]
-> The fiscal registration service integration sample for Austria is available in the Commerce SDK starting with the Commerce version 10.0.29. In the version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Deployment guidelines for the fiscal integration sample for Austria (legacy)](emea-aut-fi-sample-sdk.md).
+> The fiscal registration service integration sample for Austria is available in the Commerce SDK starting with Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Deployment guidelines for the fiscal integration sample for Austria (legacy)](emea-aut-fi-sample-sdk.md).
 
 Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md):
 
@@ -229,12 +229,14 @@ To enable the registration process, follow these steps to set up Commerce headqu
     1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
     1. Select a correct release branch version according to your SDK/application version.
     1. Open **src \> FiscalIntegration \> Efr**.
-    1. Open **Configurations \> DocumentProviders**, and download the fiscal document provider configuration files: **DocumentProviderFiscalEFRSampleAustria.xml** and **DocumentProviderNonFiscalEFRSampleAustria.xml**.
+    1. Open **Configurations \> DocumentProviders**, and download the fiscal document provider configuration files: 
+        - **DocumentProviderFiscalEFRSampleAustria.xml**
+        - **DocumentProviderNonFiscalEFRSampleAustria.xml**
     1. Download the fiscal connector configuration file at **Configurations \> Connectors \> ConnectorEFRSample.xml**.
 
+
     > [!NOTE]
-    > In the Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. The configuration files for this fiscal integration sample are located in the following folders of the Retail SDK on a developer VM in LCS:
-    >
+    > In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. The configuration files for this fiscal integration sample are located in the following folders of the Retail SDK on a developer VM in LCS:
     > - **Fiscal document provider configuration files:** RetailSdk\\SampleExtensions\\CommerceRuntime\\Extensions.DocumentProvider.EFRSample\\Configuration
     > - **Fiscal connector configuration file:** RetailSdk\\SampleExtensions\\HardwareStation\\Extension.EFRSample\\Configuration
 
@@ -272,9 +274,8 @@ The following settings are included in the fiscal connector configuration that i
 ### Configure channel components
 
 > [!NOTE]
-> - The fiscal registration service integration sample for Austria is available in the Commerce SDK starting with the Commerce version 10.0.29. In the version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal integration sample for Austria (legacy)](emea-aut-fi-sample-sdk.md).
-> 
-> - Commerce samples that are deployed in your environment are not updated automatically when applying service or quality updates to Commerce components. You must make necessary steps to update required samples manually.
+> - The fiscal registration service integration sample for Austria is available in the Commerce SDK starting with Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal integration sample for Austria (legacy)](emea-aut-fi-sample-sdk.md).
+> - Commerce samples that are deployed in your environment are not updated automatically when applying service or quality updates to Commerce components. You must take the necessary steps to manually update the required samples.
 
 
 #### Set up the development environment
@@ -336,7 +337,7 @@ Follow the steps in [Set up a build pipeline for a fiscal integration sample](fi
 The fiscal registration service integration sample for Austria is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Commerce SDK. The sample is located in the **src\\FiscalIntegration\\Efr** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The sample [consists](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) of a fiscal document provider, which is an extension of CRT, and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Commerce SDK, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
 
 > [!NOTE]
-> The fiscal registration service integration sample for Austria is available in the Commerce SDK starting with the Commerce version 10.0.29. In the version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal integration sample for Austria (legacy)](emea-aut-fi-sample-sdk.md).
+> The fiscal registration service integration sample for Austria is available in the Commerce SDK starting with Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal integration sample for Austria (legacy)](emea-aut-fi-sample-sdk.md).
 
 ### Commerce runtime extension design 
 
