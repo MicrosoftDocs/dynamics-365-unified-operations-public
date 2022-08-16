@@ -15,7 +15,8 @@ ms.search.validFrom: 2019-3-1
 ---
 # Deployment guidelines for the fiscal printer integration sample for Italy (legacy)
 
-[!include[banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 >[!WARNING]
 > You should only follow the guidelines in this article if you are using Commerce version 10.0.28 or earlier. Starting with Commerce version 10.0.29, the fiscal printer integration sample for Italy is available in the Commerce software development kit (SDK). For more information, see [Configure channel components](./emea-ita-fpi-sample.md#configure-channel-components).
