@@ -2,7 +2,7 @@
 title: Cash register functionality for France
 description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 08/12/2022
+ms.date: 08/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -498,7 +498,7 @@ To enable the digital signature in offline mode, you must follow these steps aft
 ### Configure channel components
 
 > [!WARNING]
->  If you are using the Commerce version 10.0.28 release or earlier, you must follow specific steps to configure Commerce channel components for France only. Starting with version 10.0.29, all required channel components are enabled out-of-the-box. If you are using Commerce version 10.0.28 or earlier and are migrating to version 10.0.29 or later, you must follow the steps in [Migrate to version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
+> You should only implement the steps that are described in this section if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
 
 To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-fi-deployment.md).
 
