@@ -4,7 +4,7 @@
 title: Deployment guidelines for the fiscal printer integration sample for Italy (legacy)
 description: This article provides guidelines for deploying the fiscal printer integration sample for Italy from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK).
 author: EvgenyPopovMBS
-ms.date: 08/15/2022
+ms.date: 08/16/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -18,7 +18,7 @@ ms.search.validFrom: 2019-3-1
 [!include[banner](../includes/banner.md)]
 
 >[!WARNING]
-> You must follow the guidelines in this article only if you are using the Commerce version 10.0.28 or earlier. Starting with the Commerce version 10.0.29, the fiscal printer integration sample for Italy is available in the Commerce SDK. For more information, see [Configure channel components](./emea-ita-fpi-sample.md#configure-channel-components)
+> You should only follow the guidelines in this article if you are using Commerce version 10.0.28 or earlier. Starting with Commerce version 10.0.29, the fiscal printer integration sample for Italy is available in the Commerce software development kit (SDK). For more information, see [Configure channel components](./emea-ita-fpi-sample.md#configure-channel-components).
 
 This article provides guidelines for deploying the fiscal printer integration sample for Italy from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information about this fiscal integration sample, see [Fiscal printer integration sample for Italy](emea-ita-fpi-sample.md). 
 
