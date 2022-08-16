@@ -1,17 +1,17 @@
 ---
 title: Update the Visual Studio development tools
 description: This article explains how to update the development tools.
-author: RobinARH
+author: gianugo
 ms.date: 07/18/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 33571
-ms.assetid: bd24d864-6915-4d17-9ebb-d1619b7d4311
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 33571
+ms.assetid: bd24d864-6915-4d17-9ebb-d1619b7d4311
 ---
 
 # Update the Visual Studio development tools

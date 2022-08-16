@@ -11,7 +11,7 @@ ms.reviewer: sericks
 ms.search.region: Global
 ms.author: milindav
 ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: Platform update 8 for Finance and Operations
+ms.dyn365.ops.version: Platform update 8 for finance and operations
 ms.assetid: c04e0a7b-1747-4b88-b729-fd820f8ab600
 ---
 

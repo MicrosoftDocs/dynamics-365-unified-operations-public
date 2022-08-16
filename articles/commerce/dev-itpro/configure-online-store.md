@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Configure online stores
 description: This article provides links to articles that will help you centrally configure and manage an online store.
-author: kfend
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 31541
-ms.assetid: 7a25f9b4-a0bb-4e8c-95c0-c0799ec0620d
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kfend
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 31541
+ms.assetid: 7a25f9b4-a0bb-4e8c-95c0-c0799ec0620d
 ---
 
 # Configure online stores

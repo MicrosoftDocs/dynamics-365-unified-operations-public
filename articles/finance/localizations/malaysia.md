@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Malaysia overview
-description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Malaysia. 
-author: ShylaThompson
+description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Malaysia.
+author: kfend
 ms.date: 07/25/2019
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
 ms.search.region: Malaysia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
-
 ---
 
 # Malaysia overview

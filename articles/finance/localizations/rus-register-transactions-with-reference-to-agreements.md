@@ -1,27 +1,17 @@
 ---
-# required metadata
-title: Register transactions with reference to agreements 
+title: Register transactions with reference to agreements
 description: This article provides information about registering agreements transactions.
-author: v-nadyuz
+author: AdamTrukawka
 ms.date: 02/06/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Register transactions with reference to agreements

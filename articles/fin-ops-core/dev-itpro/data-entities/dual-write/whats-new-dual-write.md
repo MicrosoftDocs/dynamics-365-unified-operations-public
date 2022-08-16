@@ -2,7 +2,7 @@
 title: What's new or changed in dual-write
 description: This article provides links to the release plans, major announcements, and documentation for dual-write.
 author: RamaKrishnamoorthy
-ms.date: 06/24/2022
+ms.date: 08/02/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -19,6 +19,12 @@ ms.dyn365.ops.version: 10.0.8
 Dual-write is an out-of-box infrastructure that provides near-real-time interaction between customer engagement apps in Microsoft Dynamics 365 and finance and operations apps. To get started with dual-write, see the [Dual-write home page](dual-write-home-page.md).
 
 ## July 2022 release 
+
+The July release of [Dual-write core solution 1.0.36.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following changes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Feature | [Enable a five-minute session time-out window for dual-write sessions](5-minute-mode.md) | General availability |
 
 The July release of Dual-write Global Address Book solution 3.5.1.6 contains the following bug fixes.
 

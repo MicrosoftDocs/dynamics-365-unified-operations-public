@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Support parameterized calls of ER data models
 description: This article explains how to implement parameterized calls of Electronic reporting (ER) data models.
-author: NickSelin
+author: kfend
 ms.date: 03/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula, ERDataModelDesigner
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-10-01
 ms.dyn365.ops.version: 10.0.15
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: ERModelMappingDesigner, EROperationDesigner, ERExpressionDesignerFormula, ERDataModelDesigner
 ---
 
 # Support parameterized calls of ER data models
@@ -283,7 +273,7 @@ You can implement the modifications when a running format collects, in memory, t
 
 1. Go to **Organization administration** \> **Electronic reporting** \> **Configurations**.
 2. On the **Configurations** page, in the configurations tree in the left pane, select **Sample audit model**.
-3. On the **Versions** FastTab, select version **2** that has a status of **[Draft](general-electronic-reporting.md#component-versioning)**.
+3. On the **Versions** FastTab, select version **2** that has a status of **Draft**.
 4. Select the **Configuration components** FastTab.
 5. Select **Designer** to open the data model for editing.
 6. On the **Data model** page, make sure that the `Root` field is selected, and then select **New**.

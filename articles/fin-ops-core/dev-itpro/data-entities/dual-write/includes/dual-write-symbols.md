@@ -1,8 +1,8 @@
 ---
-author: tonyafehr
+author: josaw
+ms.date: 06/28/2021
 ms.topic: include
-ms.date: 6/28/2021
-ms.author: tfehr
+ms.author: josaw
 ---
 
 ## Mapping tables

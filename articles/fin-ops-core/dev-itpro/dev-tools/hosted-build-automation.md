@@ -1,17 +1,17 @@
 ---
 title: Build automation that uses Microsoft-hosted agents and Azure Pipelines
 description: The article explains how you can automate the process of building X++ on any agents in Microsoft Azure DevOps.
-author: jorisdg
+author: gianugo
 ms.date: 03/05/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 26731
-ms.assetid:
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2020-03-05
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 26731
+ms.assetid: 
 ---
 
 # Build automation that uses Microsoft-hosted agents and Azure Pipelines

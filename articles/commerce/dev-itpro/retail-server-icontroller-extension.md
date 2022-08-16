@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Create a Retail Server extension API (Retail SDK version 10.0.11 and later)
 description: This article explains how to create a new Retail Server API with Retail SDK version 10.0.11 and later.
-author: mugunthanm
+author: josaw1
 ms.date: 04/27/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 28021
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2019-08-2019
 ms.dyn365.ops.version: AX 10.0.11
-
+ms.custom: 28021
+ms.assetid: 
 ---
 
 # Create a Retail Server extension API (Retail SDK version 10.0.11 and later)

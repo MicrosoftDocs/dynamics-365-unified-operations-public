@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: French Intrastat
 description: This article contains information about Intrastat declaration in France.
-author: anasyash
-ms.date: 07/9/2021
+author: AdamTrukawka
+ms.date: 07/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ---
 

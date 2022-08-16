@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Add custom controls to non-screen designer-based POS views
 description: This article demonstrates how to add a custom control to a non-screen layout designer-based view.
-author: mugunthanm
+author: josaw1
 ms.date: 12/08/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 83892
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-
+ms.custom: 83892
 ---
 
 

@@ -1,27 +1,17 @@
 ---
-# required metadata
 title: Inventory cost structure
 description: This article provides information about the inventory cost structure of miscellaneous charges in inventory transactions.
-author: v-nadyuz
+author: AdamTrukawka
 ms.date: 02/05/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Inventory cost structure

@@ -1,17 +1,17 @@
 ---
 title: Finance and operations project type in Visual Studio
-description: The finance and operations project type is part of the development tools. 
-author: RobinARH
+description: The finance and operations project type is part of the development tools.
+author: gianugo
 ms.date: 09/12/2018
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 31781
-ms.assetid: d0d12e0e-a417-41b1-b2eb-7c69eee5ac61
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 31781
+ms.assetid: d0d12e0e-a417-41b1-b2eb-7c69eee5ac61
 ---
 
 # Finance and operations project type in Visual Studio

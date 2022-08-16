@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Account management pages and modules
 description: This article covers account management pages and modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
@@ -8,22 +6,15 @@ ms.date: 03/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
+ms.custom: 
+ms.assetid: 
+ms.search.industry: 
 ---
 
 # Account management pages and modules

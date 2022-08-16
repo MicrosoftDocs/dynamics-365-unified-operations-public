@@ -50,7 +50,7 @@ Before you try to do any of the exercises in the rest of this article, follow th
 
 ### Make standard demo data available
 
-Work on a system where the [standard demo data is installed](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md). The standard demo data adds data for several demo legal entities (companies and organizations). As you work through the exercises, you will use the company picker on the right side of the navigation bar to switch between one company (*DEMF*) that is set up as an *engineering organization* and another company (*USMF*) that is set up as an *operational organization*.
+Work on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. The standard demo data adds data for several demo legal entities (companies and organizations). As you work through the exercises, you will use the company picker on the right side of the navigation bar to switch between one company (*DEMF*) that is set up as an *engineering organization* and another company (*USMF*) that is set up as an *operational organization*.
 
 ### Set up an engineering organization
 

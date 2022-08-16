@@ -1,17 +1,17 @@
 ---
 title: Element designers
 description: This article reviews the element designers and explains how to use them.
-author: RobinARH
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 79871
-ms.assetid: 636a4e41-f772-477f-bde8-538a09a79f6e
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 79871
+ms.assetid: 636a4e41-f772-477f-bde8-538a09a79f6e
 ---
 
 # Element designers

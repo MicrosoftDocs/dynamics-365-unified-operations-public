@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Regulatory watch and communication of regulatory updates
 description: Localization ISV solution providers must undertake their regulatory watch by taking advantage of localization tools in Microsoft Dynamics Lifecycle Services.
-author: ShylaThompson
+author: kfend
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 27831
-ms.assetid: 32723600-2e9c-4517-b582-78dca3c166cc
+ms.reviewer: kfend
 ms.search.region: global
-# ms.search.industry: 
-ms.author: janeaug
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 27831
+ms.assetid: 32723600-2e9c-4517-b582-78dca3c166cc
 ---
 
 # Regulatory watch and communication of regulatory updates

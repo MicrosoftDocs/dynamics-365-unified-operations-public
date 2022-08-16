@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Finance home page
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.29 (October)
+          href: get-started/whats-new-changed-10-0-29.md
         - name: Finance 10.0.28 (August)
           href: get-started/whats-new-changed-10-0-28.md
         - name: Finance 10.0.27 (July)
@@ -1114,6 +1116,8 @@
             href: general-ledger/tasks/process-ledger-allocation-journal.md
           - name: View journal entries or transactions
             href: general-ledger/tasks/view-journal-entries-or-transactions.md
+          - name: Allow edits to internal data on general ledger vouchers
+            href: general-ledger/allow-edits-internal-data-gl-vouchers.md
           - name: View a related intercompany voucher from a journal
             href: general-ledger/tasks/view-related-intercompany-voucher-journal.md
           - name: Publish journal lines and documents from Excel
@@ -1568,14 +1572,20 @@
               href: localizations/e-invoicing-bra-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic Invoicing for Egypt
               href: localizations/e-invoicing-eg-get-started.md?context=/dynamics365/context/finance
+            - name: Get started with Electronic Invoicing for France
+              href: localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/finance
             - name: Get started with the Electronic Invoicing for Mexico
               href: localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/finance
+            - name: Get started with Electronic invoicing for Poland
+              href: localizations/e-invoicing-pol-get-started.md?context=/dynamics365/context/finance
             - name: Get started with Electronic invoicing for Saudi Arabia
-              href: localizations/e-invoicing-sa-get-started.md
+              href: localizations/e-invoicing-sa-get-started.md?context=/dynamics365/context/finance
+            - name: Electronic invoicing onboarding in Saudi Arabia
+              href: localizations/e-invoicing-sa-onboarding.md?context=/dynamics365/context/finance
             - name: Setup direct integration of Italian FatturaPA with SDI
-              href: localizations/e-invoicing-ita-fatturapa-get-started.md
+              href: localizations/e-invoicing-ita-fatturapa-get-started.md?context=/dynamics365/context/finance
             - name: Use the electronic invoicing service to import vendor invoices
-              href: localizations/e-invoicing-get-started-import-vendor-invoices.md
+              href: localizations/e-invoicing-get-started-import-vendor-invoices.md?context=/dynamics365/context/finance
           - name: Electronic Invoicing FAQ
             href: localizations/e-invoicing-faq.md?context=/dynamics365/context/finance
         - name: Tax Calculation
@@ -1648,6 +1658,10 @@
               items:
               - name: VAT declaration
                 href: localizations/emea-nor-vat-declaration.md
+            - name: Poland reporting
+              items:
+              - name: VAT declaration
+                href: localizations/emea-pol-vat-declaration.md
             - name: Spain reporting
               items:
               - name: Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII)
@@ -1714,6 +1728,8 @@
             href: general-ledger/sales-tax-calculation-on-general-journal.md          
           - name: Calculate and adjust sales tax on a vendor invoice
             href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+          - name: Adjust sales tax via general journals
+            href: general-ledger/adjust-sales-tax-via-general-journals.md
           - name: Enable delayed tax calculation on journal
             href: general-ledger/enable-delayed-tax-calculation.md         
           - name: Create a sales tax payment
@@ -1770,6 +1786,8 @@
               href: general-ledger/global-withholding-tax-overview.md
             - name: Set up global withholding tax
               href: general-ledger/set-up-global-withholding-tax.md
+            - name: Enable the global withholding tax currency exchange rate type and date type setup
+              href: general-ledger/global-withholding-tax-currency-exchange-rate-date-type-setup.md
             - name: Withholding tax in purchase transactions
               href: general-ledger/withholding-tax-in-purchase-transactions.md
             - name: Withholding tax in sales transactions
@@ -2552,6 +2570,8 @@
             href: localizations/apac-ind-news-letter-10-0-00.md
         - name: Audit trail and edit logs for accounting software
           href: localizations/apac-ind-audit-trail-edit-logs-accounting-software.md
+        - name: Electronic invoices in India
+          href: localizations/apac-ind-e-invoices.md
         - name: Indirect taxes
           items: 
           - name: India GST
@@ -3576,6 +3596,8 @@
             href: localizations/rus-company-divisions.md
           - name: Russian address formats and import from FIAS
             href: localizations/rus-russian-address-format-and-import-from-FIAS.md
+          - name: Import from State Address Register (GAR)
+            href: localizations/rus-russian-address-format-import-gar.md           
         - name: Deferrals
           items:
           - name: Set up deferrals

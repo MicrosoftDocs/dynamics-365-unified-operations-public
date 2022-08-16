@@ -1,16 +1,16 @@
 ---
 title: Create an LCS connection in Azure Pipelines
 description: This article explains how to set up a connection to Microsoft Dynamics Lifecycle Services (LCS) from Azure DevOps.
-author: jorisdg
+author: gianugo
 ms.date: 03/05/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom:
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
 ---
 
 # Create an LCS connection in Azure Pipelines

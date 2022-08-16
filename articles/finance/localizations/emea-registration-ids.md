@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Registration IDs
 description: This article provides information about setting up and using registration IDs.
-author: ShylaThompson
+author: kfend
 ms.date: 11/08/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 264824
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: vlru
+ms.author: kfend
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 264824
+ms.search.form: DirPartTaxRegistrationSearch, LogisticsPostalAddress, TaxRegistrationLegislationTypes, TaxRegistrationType
 ---
 
 # Registration IDs

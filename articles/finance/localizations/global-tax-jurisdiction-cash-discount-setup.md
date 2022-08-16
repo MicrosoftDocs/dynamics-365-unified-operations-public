@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Tax jurisdiction parameters for cash discount calculation setup
 description: This article provides information about the setup of cash discount calculation options.
-author: epodkolz
+author: EricWangChen
 ms.date: 04/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region:
-# ms.search.industry: 
-ms.author: epodkolz
-ms.search.validFrom:
+ms.search.region: 
+ms.author: wangchen
+ms.search.validFrom: 
 ms.dyn365.ops.version: AX 10.0.23
 ---
 

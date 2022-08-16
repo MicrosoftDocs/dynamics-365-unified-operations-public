@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Refund payment processing in call centers
 description: This article explains how payment refunds are generated through call centers when returns are created, or when orders or order lines are canceled.
 author: hhainesms
 ms.date: 01/05/2020
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: v-chgriffin
 ms.search.region: global
-# ms.search.industry:
 ms.author: hhaines
-ms.search.validFrom:
+ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ---
 

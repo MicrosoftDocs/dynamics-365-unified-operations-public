@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: EU sales list for Netherlands
 description: This article provides information about how to generate the EU sales list for Netherlands.
-author: anasyash
+author: AdamTrukawka
 ms.date: 09/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261354
 ms.search.region: 
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 261354
+ms.search.form: 
 ---
 
 # EU sales list for Netherlands

@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Chronological invoice and voucher numbers
-description: This article explains how to set up and use chronological numbers for invoices and vouchers in Accounts receivable.  
-author: ShylaThompson
+description: This article explains how to set up and use chronological numbers for invoices and vouchers in Accounts receivable.
+author: mrolecki
 ms.date: 01/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustParameters, NumberSequenceGroup
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 264514
 ms.search.region: France
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 264514
+ms.search.form: CustParameters, NumberSequenceGroup
 ---
 
 # Chronological invoice and voucher numbers

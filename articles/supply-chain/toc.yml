@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.29 (October 2022)
+          href: get-started/whats-new-scm-10-0-29.md
         - name: Supply Chain Management 10.0.28 (August 2022)
           href: get-started/whats-new-scm-10-0-28.md
         - name: Supply Chain Management 10.0.27 (July 2022)
@@ -330,6 +332,8 @@
               href: ../finance/localizations/e-invoicing-bra-get-started.md?context=/dynamics365/context/supply-chain
             - name: Get started with Electronic Invoicing for Egypt
               href: ../finance/localizations/e-invoicing-eg-get-started.md?context=/dynamics365/context/supply-chain
+            - name: Get started with Electronic Invoicing for France
+              href: ../finance/localizations/e-invoicing-fr-get-started.md?context=/dynamics365/context/supply-chain
             - name: Get started with the Electronic Invoicing for Mexico
               href: ../finance/localizations/e-invoicing-mex-get-started.md?context=/dynamics365/context/supply-chain
             - name: Get started with Electronic invoicing for Saudi Arabia
@@ -1809,6 +1813,8 @@
           href: master-planning/planning-optimization/cancel-planning-job.md
         - name: Action messages
           href: master-planning/action-messages.md
+        - name: Calculate sales order delivery dates using CTP
+          href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
         - name: Troubleshoot Planning Optimization
           href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
         - name: Planning Optimization extensibility
@@ -1879,6 +1885,8 @@
           href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
         - name: Net requirements and pegging information with built-in master planning
           href: master-planning/net-requirements-built-in-master-planning.md
+        - name: Make-to-order supply automation
+          href: master-planning/make-to-order-supply-automation.md
       - name: Forecasting
         items:
         - name: Demand and supply forecasting
@@ -2467,6 +2475,8 @@
         href: production-control/mixed-mode-plan.md
       - name: Manage subcontracting work in production
         href: production-control/manage-subcontract-work-production.md  
+      - name: Make finished goods physically available before posting to journals
+        href: production-control/deferred-posting.md
       - name: Unified number sequence for job IDs
         href: production-control/unified-job-ids.md
       - name: Invoke process automation flows to create quality orders
@@ -2809,6 +2819,8 @@
         items:
         - name: Order promising
           href: sales-marketing/delivery-dates-available-promise-calculations.md
+        - name: Calculate sales order delivery dates using CTP
+          href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
         - name: Order entry deadlines
           href: sales-marketing/order-entry-deadlines.md
         - name: Delivery alternatives
@@ -2945,6 +2957,8 @@
         href: sales-marketing/trade-allowance.md
       - name: Create a new trade agreement
         href: sales-marketing/tasks/create-new-trade-agreement.md
+      - name: Recalculate line net amounts on import
+        href: sales-marketing/calc-line-net-amounts-import.md
       - name: Schedule sales history data cleanup
         href: sales-marketing/sales-update-history-cleanup-performance-improvements.md
     - name: Service management
@@ -3387,8 +3401,10 @@
             href: warehousing/piece-picking-confirmation.md
           - name: Packing materials and fees
             href: warehousing/pack-materials-packing-material-fees.md
-          - name: Set up manual packing (February & May 2016 only)
-            href: warehousing/tasks/set-up-manual-packing-2016-02-05.md
+          - name: Pack containers for shipment
+            href: warehousing/packing-containers.md
+          - name: Packing work for packing outbound containers and processing shipments
+            href: warehousing/packing-work.md
           - name: Set up short picking item reallocation
             href: warehousing/tasks/set-up-short-picking-item-reallocation.md
           - name: Cancel warehouse work for exception handling
@@ -3545,6 +3561,8 @@
             href: warehousing/warehouse-app-promoted-fields.md
           - name: Configure detours for steps in mobile device menu items
             href: warehousing/warehouse-app-detours.md
+          - name: Query data using Warehouse Management mobile app detours
+            href: warehousing/warehouse-app-data-inquiry.md
           - name: License plate receiving via the Warehouse Management mobile app
             href: warehousing/warehousing-mobile-device-app-license-plate-receiving.md
           - name: Set up a mobile device menu item for completing work in a purchase order

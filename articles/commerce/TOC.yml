@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.29 (October 2022)
+          href: get-started/whats-new-commerce-10-0-29.md
         - name: Commerce 10.0.28 (July 2022)
           href: get-started/whats-new-commerce-10-0-28.md
         - name: Commerce 10.0.27 (July 2022)
@@ -422,6 +424,8 @@
             href: hide-non-carrier-modes.md
           - name: Task recorder and Help for MPOS and Cloud POS
             href: task-recorder-retail-pos.md
+          - name: Configure CPOS to use a custom Azure AD app
+            href: cpos-custom-aad.md
           - name: Hardware peripherals
             items:
             - name: Peripherals
@@ -714,6 +718,10 @@
           href: tasks/category-pricing-rules-trade-agreements.md
         - name: Delay exact price and discount calculation
           href: delayed-price-calculation.md
+        - name: Pricing functions in POS
+          href: pos-pricing-functions.md
+        - name: Commerce pricing APIs
+          href: pricing-apis.md
       - name: Recommendations 
         items:
         - name: Product recommendations overview 
@@ -872,6 +880,8 @@
         href: async-customer-mode.md
       - name: Convert asynchronous customers to synchronous customers
         href: convert-async-to-sync.md
+      - name: Asynchronous customer creation mode FAQ
+        href: async-customer-mode-faq.md
       - name: Clienteling
         items:
         - name: Clienteling overview
@@ -1252,6 +1262,10 @@
             href: product-collection-module-overview.md
           - name: Quick view module
             href: quick-view-module.md
+        - name: Product comparison modules
+          items:
+          - name: Product comparison modules
+            href: product-comparison-modules.md
         - name: Navigation modules
           items:
           - name: Breadcrumb module
@@ -2482,7 +2496,7 @@
         items:
         - name: Commerce SDK overview
           items:
-          - name: Samples and reference packages
+          - name: Download Commerce SDK samples and reference packages
             href: dev-itpro/retail-sdk/sdk-github.md
           - name: Legacy Retail SDK migration
             href: dev-itpro/retail-sdk/migrate-commerce-sdk.md

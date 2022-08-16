@@ -41,7 +41,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 8. Close the page.
 
 ## Define a location format
-1. Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse >Location formats**. Location formats are a naming-system used to create unique and consistent names for the different location bin positions used within a warehouse. It can be useful to use separators as part of the location format to make it easier to identify components of the location such as the aisle number. In this example, we'll create a name with four components. For example, these could be aisle, rack, shelf, and bin.
+1. Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse >Location formats**. Location formats are a naming system used to create unique and consistent names for the different location bin positions used within a warehouse. It can be useful to use separators as part of the location format to make it easier to identify components of the location such as the aisle number. In this example, we'll create a name with four components. For example, these could be aisle, rack, shelf, and bin.
 2. Click **New**.
 3. In the **Location format** field, type a value.
 4. In the **Name** field, type a value.

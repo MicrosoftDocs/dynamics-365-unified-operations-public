@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Advance holder transactions
 description: Learn how to work with advance holder transactions in Microsoft Dynamics 365 Finance.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: HcmWorkerAdvHolderTableListPage_RU
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 262554
 ms.search.region: Czech Republic, Estonia, Hungary, Latvia, Lithuania, Poland, Russia
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 262554
+ms.search.form: HcmWorkerAdvHolderTableListPage_RU
 ---
 
 # Advance holder transactions

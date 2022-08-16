@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Defer the execution of XML elements in ER formats
 description: This article explains how to defer the execution of an XML element in an Electronic reporting (ER) format.
-author: NickSelin
+author: kfend
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: EROperationDesigner
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 58771
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 10.0.9
-
+ms.custom: 58771
+ms.assetid: 
+ms.search.form: EROperationDesigner
 ---
 
 # Defer the execution of XML elements in ER formats
