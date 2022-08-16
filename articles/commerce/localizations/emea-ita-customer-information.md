@@ -71,7 +71,7 @@ On the **Button grids** page, select the button grid where the operation should 
 
 If the customer information isn't specified for a sales transaction, an inquiry for that information can be triggered automatically after the transaction is finalized. This approach is an alternative to the **Add customer information** operation.
 
-To activate the inquiry for customer information, set the **Enable inquiry of customer information in sales transactions** option to **Yes** in the **Tax parameters** section of the **Functions** FastTab of the **POS functionality profiles** page.
+To activate the inquiry for customer information in Commerce headquarters, in the **Tax parameters** section of the **Functions** FastTab on the **POS functionality profiles** page, set the **Enable inquiry of customer information in sales transactions** option to **Yes** .
 
 ### Set up receipt formats
 
