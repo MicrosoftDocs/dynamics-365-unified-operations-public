@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.7
 # Customer information management for Poland
 
 [!include [banner](../includes/banner.md)]
-
+[!include [banner](../includes/preview-banner.md)]
 
 ## Introduction
 
