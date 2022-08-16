@@ -64,7 +64,12 @@ Fulfillment for PayPal orders supports incremental capture. This means that if a
 
 Orders made using the PayPal Payment Connector should be fulfilled within 30 days. If an order cannot be fulfilled or invoiced within 30 days, the original authorization will expire. The PayPal Connector does not currently support billing agreements. Recurring billing agreements, similar to recurring card references/tokens are required to automatically generate new authorizations after original authorization expiration. This means that if an authorization expires, the order will fall into a "do not process" state and the customer must be contacted to arrange for an alternate form of payment. 
 
-Billing agreement support, which allows for creation of new authorizations upon expiration of the original authorization, will be added in a future release. 
+### Order Intent
+Beginning in 10.0.30, the PayPal Payment Connector configuration in Headquarters will include a field titled **OrderIntent**. This field will allow the configuration of the PayPal Connector to operate with a saved order with the PayPal service for the online channel. After a payer approves the order, the connector will send the save command for the PayPal order which will allow for future references against the order within PayPal. For Commerce, this means a specific PayPal order reference can be re-authorized if a void is previously called. Merchants can also work with PayPal to configure the order expiry duration, and customize to re-authorize against the PayPal order if the original authorization has not expired.
+
+In Headquarters when configuring the PayPal Payment Connector, the field **OrderIntent** can have two values:
+- "Authorize": this configuration is the default (if the field is left blank, 'Authorize' will act as default). Configuring **OrderIntent** to "Authorize" correlates to the PayPal 'processing_instruction' value of "NO_INSTRUCTION".  The order will be authorized with PayPal and the authorization cannot be modified when this value is utilized.
+- "Save": when the **OrderIntent** value is set "Save", this correlates to the PayPal 'processing_instruction' value of "ORDER_SAVED_EXPLICITLY". Order references will be saved in teh PayPal Service when this value is utilized.
 
 ## Testing the PayPal Payment Connector
 
@@ -138,6 +143,7 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
     | Supported tender types | Other payment connectors may support multiple tender types. For PayPal, the only payment method will be **PayPal**. | Yes | Yes | PayPal |
     | Supported payment method variants | Other payment connectors may return multiple payment method variants. For PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
     | Environment | This field is used to specify whether transactions should be sent to Sandbox or Live environments. | Yes | Yes | *Sandbox* or *Live* |
+    | OrderIntent | This field is used to specify whether the order reference is saved in the PayPal service. | No | No | *Authorize* (default behavior if left blank) or *Save* |
     
 > [!NOTE]
 > When testing payments in a Sandbox environment, the **Environment** field should never be set to live and live environment. **Merchant client ID** and **Merchant API keys** must never be used. Sandbox environments are for Sandbox testing only.
@@ -160,6 +166,7 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
     | Supported tender types | Other payment connectors may support multiple tender types. For PayPal, the only payment method will be **PayPal**. | Yes | Yes | PayPal |
     | Supported payment method variants | Other payment connectors may return multiple payment method variants. For PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
     | Environment | This field is used to specify whether transactions should be sent to Sandbox or Live environments. | Yes | Yes | *Sandbox* or *Live* |
+    | OrderIntent | This field is used to specify whether the order reference is saved in the PayPal service. | No | No | *Authorize* (default behavior if left blank) or *Save* |
 
 ### Set up the PayPal payment method for the online store
 
