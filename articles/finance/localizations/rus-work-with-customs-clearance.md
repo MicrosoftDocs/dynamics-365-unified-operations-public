@@ -309,7 +309,7 @@ The amount of duty for the section can be adjusted only for a customs journal th
     - **Declaration date** – The date of declaration.
     - **Delivery terms** –The delivery terms.
     - **Section** – The number of the section.
-    - **Currency of statistical value** – The statistical value currency. For more information, see [Set up the statistical value currency and number sequences](rus-set-up-customs-clearance.md#set-up-the-statistical-value-currency-and-number-sequences).
+    - **Currency of statistical value** – The statistical value currency.
     - **Exchange rate** – The currency exchange rate for the statistical value on the date of declaration.
 
     The first grid is a total table that has the following columns:
