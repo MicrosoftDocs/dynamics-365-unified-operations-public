@@ -16,6 +16,7 @@ ms.search.validFrom: 2019-3-1
 # Deployment guidelines for the fiscal registration service integration sample for Austria (legacy)
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 >[!WARNING]
 > You must follow the guidelines in this article only if you are using Commerce version 10.0.28 or earlier. Starting with Commerce version 10.0.29, the fiscal registration service integration sample for Austria is available in the Commerce software development kit (SDK). For more information, see [Configure channel components](./emea-aut-fi-sample.md#configure-channel-components))
