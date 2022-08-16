@@ -40,9 +40,9 @@ You can specify the customer's VAT number when you create or edit a customer mas
 
 ## Setup
 
-You must complete the following configuration to use this functionality:
+You must complete the following configuration steps to use this functionality:
 
-- Enable the customer information management feature for Poland
+- Enable the customer information management feature for Poland.
 - Set up a registration type for the VAT number.
 - Add the **Add customer information** operation to screen layouts.
 - Activate the inquiry for customer information.
@@ -70,7 +70,7 @@ On the **Button grids** page, select the button grid where the operation should 
 
 If the customer information isn't specified for a sales transaction, an inquiry for that information can be triggered automatically after the transaction is finalized. This approach is an alternative to the **Add customer information** operation.
 
-To activate the inquiry for customer information, set the **Enable inquiry of customer information in sales transactions** option to **Yes** in the **Tax parameters** section on the **Functions** FastTab of the **POS functionality profiles** page.
+To activate the inquiry for customer information in Commerce headquarters, in the **Tax parameters** section of the **Functions** FastTab on the **POS functionality profiles** page, set the **Enable inquiry of customer information in sales transactions** option to **Yes**.
 
 ### Set up receipt formats
 
@@ -96,7 +96,7 @@ In the Receipt format designer, add the custom field to the appropriate receipt 
 ### Configure channel components
 
 > [!WARNING]
-> You must implement the steps that are described in this section only if you are using the Commerce version 10.0.28 release or earlier. Starting with the version 10.0.29, all Commerce channel components that are required to activate customer information management for Poland are enabled out-of-the-box. If you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later, you must follow the steps in [Migrate to version 10.0.29 or later](#migrate-to-commerce-version-10029-or-later).
+> You should only implement the steps that are described in this section if you are using Commerce version 10.0.28 or earlier. Starting with Commerce version 10.0.29, all Commerce channel components that are required to activate customer information management for Poland are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to version 10.0.29 or later](#migrate-to-commerce-version-10029-or-later).
 
 To make the functionality that is specific to Poland available, you must configure extensions for channel components. For more information, see the [Deployment guidelines](#deployment-guidelines) section later in this article.
 
@@ -146,7 +146,7 @@ The following example scenarios show how to work with customer information in PO
 ## Deployment guidelines
 
 > [!WARNING]
-> You must implement the steps that are described in this section only if you are using the Commerce version 10.0.28 release or earlier. Starting with the version 10.0.29, all Commerce channel components that are required to activate customer information management for Poland are enabled out-of-the-box. If you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later, you must follow the steps in [Migrate to version 10.0.29 or later](#migrate-to-commerce-version-10029-or-later).
+> You should only implement the steps that are described in this section if you are using Commerce version 10.0.28 or earlier. Starting with Commerce version 10.0.29, all Commerce channel components that are required to activate customer information management for Poland are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to the Commerce version 10.0.29 or later, you must follow the steps in [Migrate to version 10.0.29 or later](#migrate-to-commerce-version-10029-or-later).
 
 This section provides deployment guidance for enabling customer information management in the localization of Dynamics 365 Commerce for Poland.
 
@@ -244,7 +244,7 @@ Follow these steps to create deployable packages that contain Commerce component
 
 ## Migrate to version 10.0.29 or later
 
-The steps described in this section are required if you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later. You must follow the steps below to correctly update your Commerce environment.
+The steps described in this section are required if you are using Commerce version 10.0.28 or earlier and are migrating to version 10.0.29 or later. You must follow the steps below to correctly update your Commerce environment.
 
 1. Update Commerce headquarters.
 1. Enable [Poland-specific features](#enable-the-customer-information-management-feature-for-poland) in the **Feature management** workspace and distribute the changes to channels.
