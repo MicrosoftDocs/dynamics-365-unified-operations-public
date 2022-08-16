@@ -4,7 +4,7 @@
 title: Customer information management for Italy
 description: This article describes how to handle customer information in POS for Italy.
 author: sepism
-ms.date: 08/15/2022
+ms.date: 08/16/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -71,7 +71,7 @@ On the **Button grids** page, select the button grid where the operation should 
 
 If the customer information isn't specified for a sales transaction, an inquiry for that information can be triggered automatically after the transaction is finalized. This approach is an alternative to the **Add customer information** operation.
 
-To activate the inquiry for customer information, set the **Enable inquiry of customer information in sales transactions** option to **Yes** in the **Tax parameters** section on the **Functions** FastTab of the **POS functionality profiles** page.
+To activate the inquiry for customer information, set the **Enable inquiry of customer information in sales transactions** option to **Yes** in the **Tax parameters** section of the **Functions** FastTab of the **POS functionality profiles** page.
 
 ### Set up receipt formats
 
@@ -105,7 +105,7 @@ On the **Commerce parameters** page, on the **POS search criteria** tab, add a n
 ### Configure channel components
 
 > [!WARNING]
-> You must implement the steps that are described in this section only if you are using the Commerce version 10.0.28 release or earlier. Starting with the version 10.0.29, all Commerce channel components that are required to activate customer information management for Italy are enabled out-of-the-box. If you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later, you must follow the steps in [Migrate to version 10.0.29 or later](#migrate-to-commerce-version-10029-or-later).
+> You should only implement the steps that are described in this section if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for Italy are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
 
 To make the functionality that is specific to Italy available, you must configure extensions for commerce channel components. For more information, see the [Deployment guidelines](#deployment-guidelines) section later in this article.
 
@@ -155,7 +155,7 @@ The following example scenarios show how to work with customer information in PO
 ## Deployment guidelines
 
 > [!WARNING]
-> You must implement the steps that are described in this section only if you are using the Commerce version 10.0.28 release or earlier. Starting with the version 10.0.29, all Commerce channel components that are required to activate customer information management for Italy are enabled out-of-the-box. If you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later, you must follow the steps in [Migrate to version 10.0.29 or later](#migrate-to-commerce-version-10029-or-later).
+> You should only implement the steps that are described in this section if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for Italy are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
 
 This section provides deployment guidance for enabling customer information management in the localization of Commerce for Italy.
 
@@ -253,7 +253,7 @@ Follow these steps to create deployable packages that contain Commerce component
 
 ## Migrate to version 10.0.29 or later
 
-The steps described in this section are required if you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later. You must follow the steps below to correctly update your Commerce environment.
+The steps described in this section are required if you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later. You must follow the steps below to correctly update your Commerce environment.
 
 1. Update Commerce headquarters.
 1. Enable [Italy-specific features](#enable-the-customer-information-management-feature-for-italy) in the **Feature management** workspace and distribute the changes to channels.
