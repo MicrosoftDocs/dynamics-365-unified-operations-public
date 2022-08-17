@@ -61,7 +61,7 @@ This list is intended to help you consider these removals and deprecations for y
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: XSLT functionality for importing and exporting files will no longer receive support with bug fixes and security fixes. Customers will be asked to use the improved functionality: [Set up positive pay files by using Electronic reporting](../finance/accounts-payable/set-up-positive-pay-er.md) and [Set up advanced bank reconciliation import by using Electronic reporting](../finance/accounts-payable/import-bai2-er.md). After September 2022, the XSLT functionality will be no longer available, and customers will be asked to move to the improved functionality.|
+| **Status**                         | Deprecated: XSLT functionality for importing and exporting files will no longer receive support with bug fixes and security fixes. Customers will be asked to use the improved functionality: [Set up positive pay files by using Electronic reporting](../../finance/accounts-payable/set-up-positive-pay-er.md) and [Set up advanced bank reconciliation import by using Electronic reporting](../../finance/accounts-payable/import-bai2-er.md). After September 2022, the XSLT functionality will be no longer available, and customers will be asked to move to the improved functionality.|
 
 
 ## Features removed or deprecated in the Finance 10.0.26 release
