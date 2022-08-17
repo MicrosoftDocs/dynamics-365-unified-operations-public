@@ -5,13 +5,11 @@ author: laneswenka
 ms.date: 05/20/2021
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: sericks
-# ms.custom: 
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: 10.0.9
-
 ---
 # All-in-one deployable packages
 

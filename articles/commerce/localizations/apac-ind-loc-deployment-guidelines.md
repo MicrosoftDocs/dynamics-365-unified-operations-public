@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Deployment guidelines for cash registers for India
 description: This article is a deployment guide for the Commerce localization for India.
-author: AlexChern0v
+author: josaw1
 ms.date: 04/21/2022
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
+ms.prod: 
+ms.technology: 
 audience: Developer
-# ms.devlang:
 ms.reviewer: josaw
-# ms.tgt_pltfrm:
-# ms.custom:
 ms.search.region: India
-ms.search.industry: Retail
-ms.author: jiaqia
-ms.search.validFrom: 2018-1-31
+ms.author: josaw
+ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: 7.3.1
-
+ms.search.industry: Retail
 ---
 # Deployment guidelines for cash registers for India
 

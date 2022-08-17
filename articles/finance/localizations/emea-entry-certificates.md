@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: EU Entry certificates
 description: This article provides information about European Union (EU) entry certificates.
-author: ShylaThompson
+author: mrolecki
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustEntryCertificateJour_W, CustParameters, CustTable, SalesTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 11464
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-# ms.search.industry: 
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 11464
+ms.search.form: CustEntryCertificateJour_W, CustParameters, CustTable, SalesTable
 ---
 
 # EU entry certificates

@@ -1,26 +1,18 @@
 ---
-# required metadata
-
 title: Extend the point of sale (POS) Dual display view
-description: This article explains how to extend the POS Dual display view so that it shows custom information. 
-author: mugunthanm
+description: This article explains how to extend the POS Dual display view so that it shows custom information.
+author: josaw1
 ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.search.region: Global 
-ms.search.industry: retail
-ms.author: mumani
-ms.search.validFrom: 2018-5-31
+ms.reviewer: josaw
+ms.search.region: Global
+ms.author: josaw
+ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: 8.0.1
+ms.search.industry: retail
 ---
 
 # Extend the point of sale (POS) Dual display view

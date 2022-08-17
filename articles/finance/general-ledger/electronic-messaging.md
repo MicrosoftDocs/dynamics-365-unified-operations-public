@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Electronic messaging
 description: This article provides overview and setup information for electronic messaging in Microsoft Dynamics 365 Finance.
-author: liza-golub
+author: AdamTrukawka
 ms.date: 01/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Electronic messaging

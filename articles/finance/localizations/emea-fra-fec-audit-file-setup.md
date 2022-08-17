@@ -1,25 +1,15 @@
 ---
-# required metadata
-
 title: Prepare your environment to generate an FEC
 description: This article explains how to prepare your Microsoft Dynamics 365 Finance environment to generate a Fichier des écritures comptables (FEC) audit file.
-author: liza-golub
+author: AdamTrukawka
 ms.date: 06/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.author: elgolu
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: France
-
+ms.author: atrukawk
 ---
 
 # Prepare your environment to generate an FEC

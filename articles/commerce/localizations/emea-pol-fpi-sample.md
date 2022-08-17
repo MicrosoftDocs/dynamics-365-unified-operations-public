@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Fiscal printer integration sample for Poland
 description: This article provides an overview of the fiscal integration sample for Poland in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
@@ -9,9 +7,8 @@ ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: epopov
-ms.search.validFrom: 2019-2-1
-
+ms.author: josaw
+ms.search.validFrom: 2019-02-01
 ---
 # Fiscal printer integration sample for Poland
 

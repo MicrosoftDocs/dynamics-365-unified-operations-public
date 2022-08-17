@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Channel database extensions
 description: This article explains how to extend the channel database.
-author: mugunthanm
+author: josaw1
 ms.date: 12/08/2020
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Developer
-# ms.devlang:
-ms.reviewer: tfehr
-# ms.tgt_pltfrm:
-ms.custom: 83892
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry:
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-
+ms.custom: 83892
 ---
 
 # Channel database extensions

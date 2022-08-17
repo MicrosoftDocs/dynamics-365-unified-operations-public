@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: Add custom fields to the point of sale (POS) Totals panel
 description: This article explains how to add a new custom field to the Totals panel on the POS transaction screen by using the screen layout designer.
-author: mugunthanm
+author: josaw1
 ms.date: 05/23/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for articles migrated from the wiki]
-ms.search.region: Global 
-# ms.search.industry: retail
-ms.author: mumani
-ms.search.validFrom: 2018-5-31 
+ms.reviewer: josaw
+ms.search.region: Global
+ms.author: josaw
+ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: 8.0.1
 ---
 

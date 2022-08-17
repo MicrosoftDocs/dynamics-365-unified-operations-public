@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Design ER configurations to fill in PDF templates
 description: This article provides information about how to design an Electronic reporting (ER) format to fill in a PDF template.
-author: NickSelin
+author: kfend
 ms.date: 03/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: EROperationDesigner, ERParameters
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 
 ms.dyn365.ops.version: 10.0.1
-
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ---
 
 # Design ER configurations to fill in PDF templates

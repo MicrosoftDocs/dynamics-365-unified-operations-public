@@ -1,27 +1,17 @@
 ---
-# required metadata
 title: Goods movement tax registers
 description: This article provides information about goods movement tax registers.
-author: akroshkina
+author: AdamTrukawka
 ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: 
-
 ---
 
 # Goods movement tax registers

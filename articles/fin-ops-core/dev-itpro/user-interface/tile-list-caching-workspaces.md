@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Tile and list caching for workspaces
 description: This article discusses framework support for caching data that is used for tiles and lists, so that workspaces perform well and are responsive.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 01/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 16341
-ms.assetid: c84d7929-4662-4abb-b345-ccc539d809d0
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 16341
+ms.assetid: c84d7929-4662-4abb-b345-ccc539d809d0
 ---
 
 # Tile and list caching for workspaces

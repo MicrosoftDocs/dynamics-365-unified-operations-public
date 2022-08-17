@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Build the Rental Charge Type form
 description: In this lab you’ll create a Simple List form. A Simple List form can show reference or secondary data that has six or fewer fields.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 13671
-ms.assetid: 9b4f244c-f058-416c-b3c2-6f4ca29c8db8
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 13671
+ms.assetid: 9b4f244c-f058-416c-b3c2-6f4ca29c8db8
 ---
 
 # Build the Rental Charge Type form

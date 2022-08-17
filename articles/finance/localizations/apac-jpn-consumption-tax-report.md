@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Japan consumption tax report
 description: This article explains how to set up and generate the Japan consumption tax report for legal entities in Japan.
-author: anasyash
+author: AdamTrukawka
 ms.date: 06/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVendor
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 28791
 ms.search.region: Japan
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 28791
+ms.search.form: CustBillOfExchangeEndorseListPage, CustBillOfExchangeEndorseToVendor
 ---
 
 # Japan consumption tax report

@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Product collection modules
 description: This article provides an overview of product collection modules in Microsoft Dynamics 365 Commerce.
 author: v-chgri
@@ -8,21 +6,13 @@ ms.date: 05/18/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: asharchw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
+ms.assetid: 
 ---
 
 # Product collection modules

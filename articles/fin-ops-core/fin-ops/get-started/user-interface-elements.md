@@ -1,26 +1,16 @@
 ---
-# required metadata
-
 title: User interface elements
 description: This article describes the user interface (UI) elements in the app.
-author: tlefor
+author: jasongre
 ms.date: 08/09/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tlefor
-ms.search.validFrom:  
+ms.author: jasongre
+ms.search.validFrom: 
 ms.dyn365.ops.version: 7.3
 ---
 

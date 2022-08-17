@@ -55,7 +55,7 @@ As part of the [One Dynamics One Platform](/dynamics365-release-plan/2022wave2/f
 | Impact analyis | No | Yes | No |
 | Total economic impact estimator | No | Yes | No |
 | Service requests | No | Yes | Yes: [Self-service deployments](../deployment/infrastructure-stack.md) |
-| Sharepoint integration | Yes | Yes | No |
+| SharePoint integration | Yes | Yes | No |
 | Configuration and data manager | No | Yes | No |
 | Process data packages | No | Yes | Yes: Data Import Export Framework (DIXF) |
 | Envrionment upgrade | No | Yes | Yes: [One Version](../lifecycle-services/oneversion-overview.md) service updates are available. |

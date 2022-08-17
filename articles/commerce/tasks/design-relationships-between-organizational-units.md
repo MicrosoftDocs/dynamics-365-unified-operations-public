@@ -1,27 +1,21 @@
---- 
-# required metadata 
- 
+---
 title: Design the relationships between organizational units
-description: This procedure walks through how to design the relationship between organizational units. 
-author: mugunthanm
+description: This procedure walks through how to design the relationship between organizational units.
+author: josaw1
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: OMHierarchyManager, OMHierarchyPurposeAssociation, OMHierarchySelection, HierarchyDesigner, OMNodeSelection,  HierarchyPublishAndCloseForm   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: josaw
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
+ms.author: josaw
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
 ms.search.industry: Retail
-ms.author: mumani
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.search.form: 
+  - OMHierarchyManager, OMHierarchyPurposeAssociation, OMHierarchySelection, HierarchyDesigner, OMNodeSelection
+  - HierarchyPublishAndCloseForm
 ---
 # Design the relationships between organizational units
 

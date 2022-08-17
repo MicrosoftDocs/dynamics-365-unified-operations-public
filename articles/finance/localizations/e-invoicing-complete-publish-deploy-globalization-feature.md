@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Complete, publish, and deploy a Globalization feature
 description: This article provides information about the lifecycle of Globalization features.
-author: dkalyuzh
+author: gionoder
 ms.date: 12/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: dkalyuzh
+ms.author: gionoder
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Complete, publish, and deploy a Globalization feature

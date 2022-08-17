@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Get support for finance and operations apps or Lifecycle Services (LCS)
-description: This article explains how to get help with finance and operations apps or Microsoft Dynamics Lifecycle Services (LCS). 
+description: This article explains how to get help with finance and operations apps or Microsoft Dynamics Lifecycle Services (LCS).
 author: EricMoos
 ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro, Developer, Application user
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 254844
-ms.assetid: 0e9471f9-4c2b-42f0-9b10-6578211f01d5
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: anupams
+ms.author: emoos
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 254844
+ms.assetid: 0e9471f9-4c2b-42f0-9b10-6578211f01d5
 ---
 
 # Get support for finance and operations apps or Lifecycle Services (LCS)

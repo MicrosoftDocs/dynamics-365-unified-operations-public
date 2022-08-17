@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Get started with Electronic invoicing for Brazil
 description: This article provides information that will help you get started with Electronic invoicing for Brazil in Finance and Supply Chain Management.
 author: gionoder
@@ -8,23 +6,15 @@ ms.date: 03/29/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: ["97423", "intro-internal"]
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: janeaug
+ms.author: gionoder
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.12
-
+ms.custom: 97423,  ""intro-internal
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Get started with Electronic invoicing for Brazil 

@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Development in cloud-hosted environments without admin access
 description: This article demonstrates the configuration steps for Commerce developers working on cloud-hosted development machines.
-author: mugunthanm 
+author: josaw1
 ms.date: 07/28/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-12-08
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: Retail
 ---
 # Development in cloud-hosted environments without admin access
 

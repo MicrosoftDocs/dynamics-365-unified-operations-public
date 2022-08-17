@@ -1,26 +1,19 @@
 ---
-# required metadata
 title: Place B2B website orders quickly
 description: This article describes the capabilities of Microsoft Dynamics 365 Commerce that let business-to-business (B2B) site users quickly place bulk and repeat orders.
-author: shajain
+author: ShalabhjainMSFT
 ms.date: 02/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-# optional metadata
-ms.search.form: RetailOperations
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: v-chgriffin
-#
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2022-01-31
 ms.dyn365.ops.version: 10.0.23
-
+ms.search.industry: retail
+ms.search.form: RetailOperations
 ---
 
 # Place B2B website orders quickly

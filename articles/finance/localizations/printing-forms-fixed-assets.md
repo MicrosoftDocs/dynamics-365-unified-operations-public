@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Unified printing forms for fixed assets (Russia)
 description: This article includes information about fixed asset unified printing forms for Microsoft Dynamics 365 Finance in Russia.
-author: v-oloski
+author: AdamTrukawka
 ms.date: 04/19/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: v-oloski
+ms.author: atrukawk
 ms.search.validFrom: 2019-04-01
-ms.dyn365.ops.version: 10.0
+ms.dyn365.ops.version: 10
 ---
 # Unified printing forms for fixed assets (Russia)
 

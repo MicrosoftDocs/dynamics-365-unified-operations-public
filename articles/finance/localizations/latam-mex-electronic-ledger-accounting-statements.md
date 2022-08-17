@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Electronic ledger accounting statements
 description: This article explains how to set up and generate the general ledger XML files that all companies in Mexico are required to report to the Mexican tax authorities (SAT) on a monthly basis.
-author: sndray
+author: AdamTrukawka
 ms.date: 12/07/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, LedgerConsolidateAccountGroup, LedgerJournalTable, LedgerJournalTransVendInvoice, LedgerParameters, MainAccount, MainAccountConsolidateAccount, VendEditInvoice, VendPaymMode, VendTransInvoicePool
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 265314
-ms.assetid: b4a95c26-a49d-4a1d-bf70-90f457df2ddf
 ms.search.region: Mexico
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 265314
+ms.assetid: b4a95c26-a49d-4a1d-bf70-90f457df2ddf
+ms.search.form: ERSolutionTable, LedgerConsolidateAccountGroup, LedgerJournalTable, LedgerJournalTransVendInvoice, LedgerParameters, MainAccount, MainAccountConsolidateAccount, VendEditInvoice, VendPaymMode, VendTransInvoicePool
 ---
 
 # Electronic ledger accounting statements

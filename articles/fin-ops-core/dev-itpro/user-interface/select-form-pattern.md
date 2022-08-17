@@ -1,11 +1,11 @@
 ---
 title: Form patterns for migrated forms
-description: This article provides information that will help you select the best form pattern for the forms that you migrate. 
+description: This article provides information that will help you select the best form pattern for the forms that you migrate.
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28

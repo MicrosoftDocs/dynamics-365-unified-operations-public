@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Set up technical support for finance and operations apps
 description: This article provides information about the support experience for cloud and on-premises deployments.
-author: kfend
+author: sericks007
 ms.date: 10/13/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 29531
-ms.assetid: 3734bd06-6d4c-42f5-8f2b-30a451189002
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: anupams
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 29531
+ms.assetid: 3734bd06-6d4c-42f5-8f2b-30a451189002
 ---
 
 # Set up technical support for finance and operations apps 

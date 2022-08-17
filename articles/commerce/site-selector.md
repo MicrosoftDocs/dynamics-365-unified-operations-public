@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Site picker module
 description: This article covers the site picker module and describes how to add it to site pages in Microsoft Dynamics 365 Commerce.
-author:  anupamar-ms
+author: anupamar-ms
 ms.date: 05/04/2022
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Application User
-# ms.devlang:
-ms.reviewer: v-chgri
-# ms.tgt\_pltfrm:
-ms.custom:
-ms.assetid:
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry:
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: 
 ---
 
 # Site picker module
