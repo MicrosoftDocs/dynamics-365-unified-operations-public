@@ -231,7 +231,7 @@ Follow these steps to create deployable packages that contain Commerce component
 1. Run **msbuild** for the whole Retail software development kit (SDK) to create deployable packages.
 1. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Retail SDK packaging](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
-## Migrate to version 10.0.29 or later
+## Migrate to Commerce version 10.0.29 or later
 
 The steps described in this section are required if you are using Commerce version 10.0.28 or earlier and are migrating to version 10.0.29 or later. You must follow the steps below to correctly update your Commerce environment.
 
