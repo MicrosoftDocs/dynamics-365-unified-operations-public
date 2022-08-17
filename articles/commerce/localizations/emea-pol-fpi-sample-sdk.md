@@ -2,13 +2,14 @@
 title: Deployment guidelines for the fiscal printer integration sample for Poland (legacy)
 description: This article provides guidelines for deploying the fiscal printer integration sample for Poland from the Microsoft Dynamics 365 Commerce Retail software development kit (SDK).
 author: EvgenyPopovMBS
-ms.date: 08/16/2022
+ms.date: 08/17/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2019-03-01
+
 ---
 # Deployment guidelines for the fiscal printer integration sample for Poland (legacy)
 
