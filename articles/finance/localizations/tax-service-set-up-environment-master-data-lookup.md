@@ -215,7 +215,7 @@ For more information, see [Enable Microsoft Dataverse virtual entities](../../fi
     - **Tenant** – Enter your tenant.
     - **Custom URL** – Enter your Dataverse URL, and append **/api/data/v9.1** to it.
 
-3. Select **Check connection**, and then, in the dialog box that appears, select **Click here to connect to selected remote application**.
+3. Select **Check connection**, and then, in the dialog box, select **Click here to connect to selected remote application**.
 
     [![Checking the connection.](./media/tcs-dataverse-master-data-lookup-13.png)](./media/tcs-dataverse-master-data-lookup-13.png)
 4. Make sure that you receive a "Success!" message that indicates that the connection was successfully established.
