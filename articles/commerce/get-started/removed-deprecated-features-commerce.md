@@ -34,17 +34,17 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We had this setting to control whether price adjustment function allows increasing product price. When this parameter is turned off, using price adjustment function, organizations can only set a product’s unit price lower than its base price and trade agreement sales price. We deprecate this setting because the price adjustment function has been updated to support two-way adjustments (increase or decrease) out-of-the-box. |
+| **Reason for deprecation/removal** | We had this setting to control whether the price adjustment function allows increasing the product price. When this parameter is turned off, when using the price adjustment function organizations can only set a product's unit price lower than its base price and trade agreement sales price. We deprecate this setting because the price adjustment function has been updated to support two-way adjustments (increase or decrease) out of the box. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Pricing and discounts |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: This setting is by default turned on since Commerce version 10.0.29 and will be removed in October 2023. |
+| **Status**                         | Deprecated: This setting is turned on by default since Commerce version 10.0.29 and will be removed in October 2023. |
 
 ### Commerce parameters setting - Enable price report for retail store
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | We had this setting to control whether the **Price report** function is available for use in store configuration form. We deprecate this setting because the store configuration form has been updated to always provide “Price report” as standard function. |
+| **Reason for deprecation/removal** | We had this setting to control whether the price report function is available for use on the store configuration form. We deprecate this setting because the store configuration form has been updated to always provide the price report function as standard function. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Pricing and discounts |
 | **Deployment option**              | All |
@@ -54,11 +54,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | SCM pricing engine supports pricing calculation based on requested ship date or requested receipt date along with today's date, Commerce pricing engine only supports pricing calculation based on today's date. For customers who use both SCM and Commerce capabilities, we provided this setting and recommended customers to always set it to **Yes** so the two pricing engines can co-work. We deprecate this setting because fundamentally it doesn't change the calculation behavior thus is redundant. |
+| **Reason for deprecation/removal** | The supply chain management (SCM) pricing engine supports pricing calculation based on the requested ship date or requested receipt date, along with today's date. TheCommerce pricing engine only supports pricing calculation based on today's date. For customers who use both SCM and Commerce capabilities, we provided this setting and recommended that customers always set it to **Yes** so that the two pricing engines can work together. We deprecate this setting because it doesn't change the calculation behavior and therefore is redundant. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Pricing and discounts |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: This setting is by default turned on since Commerce version 10.0.29 and will be removed in October 2023. |
+| **Status**                         | Deprecated: This setting is turned on by default since Commerce version 10.0.29 and will be removed in October 2023. |
 
 ## Feature deprecation effective July 2022
 
