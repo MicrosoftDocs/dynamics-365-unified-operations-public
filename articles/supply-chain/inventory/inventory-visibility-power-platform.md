@@ -108,8 +108,8 @@ The bottom of the **Inventory summary** page shows information such as "50 recor
 
 #### **Inventory summary**
 
-![Inventory Summary](media/inventory-visibility-onhand-list.png "Inventory Summary")
-
+[<img src="media/inventory-visibility-onhand-list.png" width="500"/>](inventory-visibility-onhand-list.png)
 
 #### **Preload the Inventory Visibility Summary** 
-![Inventory Preload](media/inventory-visibility-preload-onhand-list.png "Inventory Preload")
+
+[<img src="media/inventory-visibility-preload-onhand-list.png" width="500"/>](inventory-visibility-preload-onhand-list.png)
