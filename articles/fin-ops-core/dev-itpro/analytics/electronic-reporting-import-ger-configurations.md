@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Import Electronic reporting (ER) configurations
 description: This article explains how to import Electronic reporting (ER) configurations from Lifecycle Services (LCS) to a local business data application.
-author: NickSelin
+author: kfend
 ms.date: 06/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 27621
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-
+ms.custom: 27621
+ms.assetid: 
+ms.search.form: ERSolutionTable, ERWorkspace, ERSolutionRepositoryTable, ERSolutionImport
 ---
 
 # Import Electronic reporting (ER) configurations

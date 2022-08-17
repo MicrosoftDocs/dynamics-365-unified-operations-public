@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Help system (contains video)
 description: This article provides an overview of the Help system for finance and operations apps.
 author: edupont04
-ms.date: 07/20/2021
+ms.date: 08/16/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: SystemParameters
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: ["16381", "intro-internal"]
-ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
+ms.reviewer: edupont
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 16381,  ""intro-internal
+ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
+ms.search.form: SystemParameters
 ---
 
 # Help system
@@ -61,7 +51,7 @@ To subscribe to an RSS feed of all updates made to the content on docs.microsoft
 [RSS feed](/api/search/rss?$filter=scopes%2fany(t%3A%20t%20eq%20%27dynamics365-finops%27)&locale=en-us)
 
 > [!NOTE]
-> The RSS feed returns a list of the 100 topics most recently updated. The list is not sorted by date.  
+> The RSS feed returns a list of the 100 topics most recently updated. The list is sorted by date, but it can take up to a week before the most recently updated articles make it to the list.  
 
 Alternatively, you can subscribe to an RSS feed by app:
 

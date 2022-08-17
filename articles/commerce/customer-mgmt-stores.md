@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Customer management in stores
 description: This article explains how retailers can enable customer management capabilities at the point of sale (POS) in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
@@ -8,20 +6,14 @@ ms.date: 12/10/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-# optional metadata
-ms.search.form: RetailOperations
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: v-chgri
-#
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: shajain
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.14
-
+ms.search.industry: retail
+ms.search.form: RetailOperations
 ---
 
 # Customer management in stores

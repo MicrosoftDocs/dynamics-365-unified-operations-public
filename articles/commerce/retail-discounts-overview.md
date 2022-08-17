@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Retail discounts
 description: This article provides an overview of the discount functionality in Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management.
-author: shajain
+author: ShalabhjainMSFT
 ms.date: 10/15/2020
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: ["16181", "intro-internal"]
-ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
+ms.reviewer: v-chgriffin
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-23
 ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
-
+ms.custom: 16181,  ""intro-internal
+ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
+ms.search.industry: Retail
+ms.search.form: 
 ---
 
 # Retail discounts

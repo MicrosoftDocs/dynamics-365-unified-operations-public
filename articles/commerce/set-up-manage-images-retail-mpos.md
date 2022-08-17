@@ -1,31 +1,21 @@
 ---
-# required metadata
-
 title: Set up and manage images for Modern POS (MPOS)
 description: This article explains the steps that are involved in setting up and managing images for the various entities that appear in Modern POS (MPOS).
-author: athinesh99
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages, 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 52851
-ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: athinesh
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
+ms.custom: 52851
+ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
+ms.search.industry: Retail
+ms.search.form: RetailChannelProfile, RetailMediaGallery, RetailImages,
 ---
 
 # Set up and manage images for Modern POS (MPOS)

@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Configure invoice layout for Bahrain
 description: This article explains how to configure the invoice layout for Bahrain.
-author: ilkond
+author: mrolecki
 ms.date: 09/08/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Bahrain
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2020-06-03
 ms.dyn365.ops.version: 10.0.13
-
+ms.search.form: 
 ---
 
 # Configure invoice layout for Bahrain (BH-00003)

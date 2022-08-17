@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Respond to requests for personal data in Human Resources
 description: This article describes how you, as a data controller, can use Microsoft Dynamics 365 Human Resources as a data processor to help you respond to a request for data under the European Union's General Data Protection Regulation (GDPR).
 author: shielasogge
@@ -8,22 +6,13 @@ ms.date: 01/31/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 10031
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: shielas
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 10031
 ---
 
 

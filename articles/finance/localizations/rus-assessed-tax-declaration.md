@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Assessed tax declaration (Russia)
 description: This article explains how to set up and use assessed tax declarations for Russia.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 01/15/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2019-05-01
 ms.dyn365.ops.version: 10.0.1
-
+ms.search.industry: 
 ---
 
 # Assessed tax declaration (Russia)

@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Cash register functionality for Norway
 description: This article provides an overview of the cash register functionality that is available for Norway in Microsoft Dynamics 365 Commerce, and provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
@@ -9,9 +7,8 @@ ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 2017-10-31
-
 ---
 # Cash register functionality for Norway
 

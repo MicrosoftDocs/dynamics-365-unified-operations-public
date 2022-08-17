@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: Italian Intrastat
 description: This article contains information about Intrastat reporting in Italy.
-author: anasyash
+author: AdamTrukawka
 ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ---
 

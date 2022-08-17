@@ -1057,6 +1057,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/supply-chain
             - name: OrderBy
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/supply-chain
+            - name: Repeat
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/supply-chain
             - name: Reverse
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/supply-chain
             - name: Split
@@ -2475,6 +2477,8 @@
         href: production-control/mixed-mode-plan.md
       - name: Manage subcontracting work in production
         href: production-control/manage-subcontract-work-production.md  
+      - name: Make finished goods physically available before posting to journals
+        href: production-control/deferred-posting.md
       - name: Unified number sequence for job IDs
         href: production-control/unified-job-ids.md
       - name: Invoke process automation flows to create quality orders

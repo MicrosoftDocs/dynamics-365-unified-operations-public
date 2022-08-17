@@ -1,27 +1,19 @@
---- 
-# required metadata 
- 
+---
 title: Posting of online sales and payments
-description: This procedure walks through configuring and running a recurrent batch job to create sales orders and payments for online store transactions. 
-author: psimolin
+description: This procedure walks through configuring and running a recurrent batch job to create sales orders and payments for online store transactions.
+author: jashanno
 ms.date: 08/06/2019
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: RetailChannelOperationsWorkspace, RetailOperatingUnitPicker, SysRecurrence   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: josaw
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: jashanno
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.industry: Retail
+ms.search.form: RetailChannelOperationsWorkspace, RetailOperatingUnitPicker, SysRecurrence
 ---
 # Posting of online sales and payments
 

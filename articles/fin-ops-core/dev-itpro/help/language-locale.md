@@ -1,28 +1,15 @@
 ---
-# required metadata
-
 title: Language and locale descriptors in the product and in Help
-description: This article maps the language names between the finance and operations client and the GitHub repos that contain translated Microsoft Help content. 
+description: This article maps the language names between the finance and operations client and the GitHub repos that contain translated Microsoft Help content.
 author: edupont04
-ms.topic: article
 ms.date: 05/11/2020
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
+ms.topic: article
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-
 ---
 
 # Language and locale descriptors in the product and in Help

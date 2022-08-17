@@ -3568,6 +3568,10 @@
               href: localizations/rus-set-up-inventory-profile.md
             - name: Use an inventory profile in documents and queries
               href: localizations/rus-use-inventory-profile-documents-queries.md
+          - name: Customs clearance
+            items:   
+            - name: Work with customs clearance
+              href: localizations/rus-work-with-customs-clearance.md
         - name: Reporting
           items:
           - name: Financial reporting
@@ -4091,6 +4095,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/finance
             - name: OrderBy
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/finance
+            - name: Repeat
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/finance
             - name: Reverse
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/finance
             - name: Split

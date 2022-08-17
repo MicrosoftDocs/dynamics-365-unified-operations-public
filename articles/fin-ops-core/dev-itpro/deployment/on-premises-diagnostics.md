@@ -1,31 +1,20 @@
 ---
-# required metadata
-
 title: On-premises diagnostics
-description: This article provides information about how to expose the diagnostic data for Dynamics 365 Finance + Operations (on-premises) deployments. 
-author: PeterRFriis
+description: This article provides information about how to expose the diagnostic data for Dynamics 365 Finance + Operations (on-premises) deployments.
+author: faix
 ms.date: 04/05/2021
 ms.topic: article
-ms.prod: dynamics-365 
-ms.service:
+ms.prod: dynamics-365
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 60373
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: peterfriis
+ms.author: osfaixat
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: Platform Update 12
-
+ms.custom: 60373
+ms.assetid: 
+ms.service: 
 ---
 # On-premises diagnostics
 

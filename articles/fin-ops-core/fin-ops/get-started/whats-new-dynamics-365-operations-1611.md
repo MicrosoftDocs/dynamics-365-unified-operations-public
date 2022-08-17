@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 for Operations version 1611 (November 2016)
 description: This article describes features that are either new or changed in Dynamics 365 for Operations version 1611.
 author: sericks007
@@ -8,23 +6,15 @@ ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-ROBOTS: NOINDEX, NOFOLLOW 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 221294
-ms.assetid: 357931ed-f843-4bf5-bc85-0da3de0619ec
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 221294
+ms.assetid: 357931ed-f843-4bf5-bc85-0da3de0619ec
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
 # What's new or changed in Dynamics 365 for Operations version 1611 (November 2016)

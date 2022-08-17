@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Thailand unrealized and realized VAT
-description: This article provides information about unrealized and realized value-added tax (VAT) for Thailand. 
-author: anasyash
+description: This article provides information about unrealized and realized value-added tax (VAT) for Thailand.
+author: AdamTrukawka
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxTable, VendParameters, CustParameters
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.custom: 265924
-ms.assetid: 829a101f-e329-48b9-baf8-e36670ff43c8
 ms.search.region: Thailand
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 265924
+ms.assetid: 829a101f-e329-48b9-baf8-e36670ff43c8
+ms.search.form: TaxTable, VendParameters, CustParameters
 ---
 
 # Thailand unrealized and realized VAT

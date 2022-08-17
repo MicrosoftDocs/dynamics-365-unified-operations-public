@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: Estonian Intrastat
 description: This article contains information about the Estonian Intrastat report.
-author: andosip
+author: AdamTrukawka
 ms.date: 01/11/2022
 ms.topic: article
 audience: 
-ms.reviewer: kfend 
+ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ---
 

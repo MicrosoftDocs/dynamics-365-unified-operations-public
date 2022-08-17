@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Data action hooks
 description: This article describes how to hook into pre- and post- data action events to further process data if needed.
 author: samjarawan
@@ -8,22 +6,14 @@ ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: Release 10.0.10
-
+ms.custom: 
+ms.assetid: 
 ---
 # Data action hooks
 

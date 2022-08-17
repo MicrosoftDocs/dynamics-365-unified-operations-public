@@ -1,28 +1,18 @@
 ---
-# required metadata
 title: Enable manual publishing of ratings and reviews by a moderator
 description: This article describes how to enable manual publishing of ratings and reviews by a moderator in Microsoft Dynamics 365 Commerce, and how to manually publish ratings and reviews.
 author: gvrmohanreddy
-manager: annbe
 ms.date: 09/03/2021
 ms.topic: article
 ms.prod: 
-
 ms.technology: 
-# optional metadata
-# ms.search.form: 
-#ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: gmohanv
 ms.search.validFrom: 2021-09-03
 ms.dyn365.ops.version: 10.0.22
+manager: annbe
 ---
 
 # Enable manual publishing of ratings and reviews by a moderator

@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Upgrade the Retail channel extension to the latest Retail SDK
-description: This article explains how to upgrade the commerce channel extension from earlier releases to the latest update of the Retail SDK. 
-author: mugunthanm
+description: This article explains how to upgrade the commerce channel extension from earlier releases to the latest update of the Retail SDK.
+author: josaw1
 ms.date: 11/21/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 68673
-ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 209/07/2018
 ms.dyn365.ops.version: AX 7.3.5
-
+ms.custom: 68673
+ms.assetid: 72a63836-2908-45fa-b1a6-3b1c499a19a2
 ---
 
 # Upgrade the Retail channel extension to the latest Retail SDK

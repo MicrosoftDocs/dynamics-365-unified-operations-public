@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Withholding tax declaration for Egypt
 description: This article explains how to configure and generate the withholding tax declarations for Egypt.
-author: sndray
+author: AdamTrukawka
 ms.date: 03/08/2021
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope:
-# ms.tgt_pltfrm: 
-# ms.custom: NotInTOC
 ms.search.region: Global
-# ms.search.industry:
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2017-06-20
 ms.dyn365.ops.version: 10.0.18
+ms.search.scope: 
 ---
 
 #  Withholding tax declaration for Egypt (EG-00005)

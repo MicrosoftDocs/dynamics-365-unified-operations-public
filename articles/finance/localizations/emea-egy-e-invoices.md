@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Customer electronic invoices in Egypt
 description: This article explains how to configure and submit customer electronic invoices in Egypt.
-author: ikondo
+author: mrolecki
 ms.date: 02/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-ms.custom: 547940
 ms.search.region: Egypt
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2021-02-01
 ms.dyn365.ops.version: 10.0.17
-
+ms.custom: 547940
+ms.search.form: 
 ---
 
 # Customer electronic invoices in Egypt

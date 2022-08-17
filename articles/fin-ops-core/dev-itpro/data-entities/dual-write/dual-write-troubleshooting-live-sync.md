@@ -1,11 +1,11 @@
 ---
 title: Troubleshoot live synchronization issues
 description: This article provides troubleshooting information that can help you fix issues with live synchronization.
-author: RamaKrishnamoorthy 
+author: RamaKrishnamoorthy
 ms.date: 08/19/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16

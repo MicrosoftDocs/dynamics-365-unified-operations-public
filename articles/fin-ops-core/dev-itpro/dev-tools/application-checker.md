@@ -5,13 +5,11 @@ author: AndreasHassing
 ms.date: 09/22/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-# ms.custom: 
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: anniels
 ms.search.validFrom: 2020-09-22
 ms.dyn365.ops.version: Platform update 25
-
 ---
 
 # Application checker

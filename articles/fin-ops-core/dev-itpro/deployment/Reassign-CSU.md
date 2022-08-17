@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Migrate channels to a different Commerce Scale Unit
 description: This article explains how to migrate a Microsoft Dynamics 365 Commerce channel to a different Commerce Scale Unit.
-author: AamirAllaq
+author: jashanno
 ms.date: 11/17/2020
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form: [Operations AOT form name to tie this article to]
+ms.prod: 
+ms.technology: 
 audience: IT Pro
-# ms.devlang:
-ms.reviewer: sericks
-# ms.tgt_pltfrm:
-# ms.custom: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: retail
-ms.author: aamiral
-ms.search.validFrom: 2018-4-30
-ms.dyn365.ops.version: 8.0
+ms.author: jashanno
+ms.search.validFrom: 2018-04-30
+ms.dyn365.ops.version: 8
 ---
 
 # Migrate channels to a different Commerce Scale Unit

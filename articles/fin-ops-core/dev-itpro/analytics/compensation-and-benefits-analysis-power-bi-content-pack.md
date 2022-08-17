@@ -7,13 +7,12 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 
-  - 263914
+ms.custom: 263914
 ms.assetid: 18634bb5-3341-42f2-9cc9-7b04708b506b
 ---
 

@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: VAT declaration for Oman (OM-00003)
 description: This article explains how to configure and generate the value-added tax (VAT) return form for Oman.
-author: sndray
+author: AdamTrukawka
 ms.date: 09/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Oman
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2021-06-10
 ms.dyn365.ops.version: 10.0.22
-
+ms.search.form: 
 ---
 
 # VAT declaration for Oman (OM-00003)

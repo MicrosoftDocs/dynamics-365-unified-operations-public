@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Control unit integration sample for Sweden
 description: This article provides an overview of the fiscal integration sample for Sweden in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
@@ -9,9 +7,8 @@ ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 2019-10-08
-
 ---
 # Control unit integration sample for Sweden
 

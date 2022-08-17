@@ -1,27 +1,19 @@
---- 
-# required metadata 
- 
+---
 title: Using continuity program
-description: This procedure walks through selling a continuity program and processing related sales orders. 
-author: scott-tucker
+description: This procedure walks through selling a continuity program and processing related sales orders.
+author: josaw1
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: MCRCustomerService, MCRCustSearch, SalesTable, MCRContinuityCustInfo, MCRCustPaymLookup, CreditCardTokenization, CreditCardLookup, MCRSalesOrderRecap   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: josaw
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
+ms.author: josaw
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
 ms.search.industry: Retail
-ms.author: scotttuc
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.search.form: MCRCustomerService, MCRCustSearch, SalesTable, MCRContinuityCustInfo, MCRCustPaymLookup, CreditCardTokenization, CreditCardLookup, MCRSalesOrderRecap
 ---
 # Using continuity program
 
