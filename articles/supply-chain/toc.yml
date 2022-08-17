@@ -1722,7 +1722,7 @@
         - name: Turn on Sensor Data Intelligence for your system
           href: sensor-data-intelligence/sdi-enable-feature.md
         - name: Deploy an IoT solution on Azure
-          href: sensor-data-intelligence/deploy-iot-solution-on-azure.md
+          href: sensor-data-intelligence/sdi-deploy-iot-solution-on-azure.md
         - name: Set up a simulated sensor for testing
           href: sensor-data-intelligence/set-up-simulated-sensor.md
         - name: The equipment downtime scenario
