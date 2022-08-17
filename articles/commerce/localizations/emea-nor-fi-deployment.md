@@ -18,12 +18,9 @@ ms.search.validFrom: 2019-3-1
 [!include[banner](../includes/banner.md)]
 
 > [!WARNING]
-> You must implement the steps that are described in this article only if you are using the Commerce version 10.0.29 or later. In the version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Deployment guidelines for cash registers for Norway (legacy)](./emea-nor-loc-deployment-guidelines.md).
+> You must implement the steps that are described in this article only if you are using the Commerce version 10.0.29 or later. In the version 10.0.28 or earlier, you must use the previous version of the Retail Software development kit (SDK) on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Deployment guidelines for cash registers for Norway (legacy)](./emea-nor-loc-deployment-guidelines.md). If you are using the Commerce version 10.0.28 or earlier and are migrating to the version 10.0.29 or later, you must follow the steps in [Migrate from legacy Commerce functionality for Norway](./emea-nor-fi-migration.md)
 
 This article provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for Norway. The localization consists of several extensions of components. These extensions let you perform actions such as printing custom fields on receipts, registering additional audit events, sales transactions, and payment transactions in point of sale (POS), digitally signing sales transactions, and printing reports in local formats. For more information about the localization for Norway, see [Cash register functionality for Norway](./emea-nor-cash-registers.md). For more information about how to configure Commerce for Norway, see [Set up Commerce for Norway](./emea-nor-cash-registers.md#setting-up-commerce-for-norway).
-
-> [!NOTE]
-> This version of the Commerce cash register functionality for Norway is based on the [fiscal integration framework](./fiscal-integration-for-retail-channel.md). For information about the legacy digital signing sample for Norway, see [Deployment guidelines for cash registers for Norway (legacy)](./emea-nor-loc-deployment-guidelines.md). For guidelines about how to enable the fiscal integration functionality for Norway in existing environments that use the legacy digital signing sample, see [Migrate from legacy Commerce functionality for Norway](./emea-nor-fi-migration.md).
 
 ## Set up fiscal registration for Norway
 
