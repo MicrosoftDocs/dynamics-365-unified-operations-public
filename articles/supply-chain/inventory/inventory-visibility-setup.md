@@ -130,7 +130,7 @@ To uninstall the Inventory Visibility Add-in, follow these steps:
 1. Go to **Inventory Management \> Periodic \> Inventory Visibility Integration** and disable the job.
 1. Go to LCS and open the page for the environment where you want to uninstall the add-in  (see also [Install the Inventory Visibility Add-in](#install-add-in)).
 1. Select **Uninstall**.
-1. The uninstallation process now terminates the Inventory Visibility Add-in, unregisters the add-in from LCS, and deletes any temporary data that is stored in the Inventory Visibility Add-in data cache. However,  primary inventory data that was synced to your Dataverse subscription is still stored there. To delete this data, continue to the next step.
+1. The uninstallation process now terminates the Inventory Visibility Add-in, unregisters the add-in from LCS, and deletes any temporary data that is stored in the Inventory Visibility Add-in data cache. However,  primary inventory data that was synced to your Dataverse subscription is still stored there. To delete this data, complete the rest of this procedure.
 1. Open [Power Apps](https://make.powerapps.com).
 1. Select **Environment** on the navigation bar
 1. Select the Dataverse environment that is bonded with your LCS environment.
@@ -148,7 +148,7 @@ To uninstall the Inventory Visibility Add-in, follow these steps:
 
 ## <a name="restore-environment-database"></a>Clean Inventory Visibility data from Dataverse before restoring the Supply Chain Management database
 
-If you restore a Supply Chain Management database, then your restored database may contain data that is no longer consistent with data previously synced by Inventory Visibility to Dataverse. This data inconsistency can cause system errors and other issues. Therefore, it's important that you always clean all related Inventory Visibility data from Dataverse before your restore a Supply Chain Management database.
+If you have been using Inventory Visibility and then restore your Supply Chain Management database, then your restored database may contain data that is no longer consistent with data previously synced by Inventory Visibility to Dataverse. This data inconsistency can cause system errors and other issues. Therefore, it's important that you always clean all Inventory Visibility data from Dataverse before your restore a Supply Chain Management database.
 
 If you need to restore a Supply Chain Management database, use the following procedure:
 
