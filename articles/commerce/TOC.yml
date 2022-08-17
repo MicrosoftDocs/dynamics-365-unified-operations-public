@@ -1512,6 +1512,8 @@
           href: localizations/emea-nor-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/emea-nor-fi-deployment.md
+        - name: Migrating from legacy functionality for Norway
+          href: localizations/emea-nor-fi-migration.md
         - name: Deployment guidelines for cash registers (legacy)
           href: localizations/emea-nor-loc-deployment-guidelines.md
       - name: Russia
