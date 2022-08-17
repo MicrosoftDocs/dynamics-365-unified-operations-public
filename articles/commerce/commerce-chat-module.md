@@ -87,10 +87,11 @@ To create a new application tab that loads Commerce headquarters in an iFrame mo
 
 1. Go to the [Power Apps Maker Portal](https://make.powerapps.com). 
 1. In the navigation pane on the left, select **Apps**.
-1. In **Customer Service admin center**, go to **Agent experience \>  Workspaces**.
-1. Select **Manage** for **Application tab templates**. 
-1. Create a new application tab of type **Third-party website** by following the instructions at [Manage application tab templates](/dynamics365/app-profile-manager/application-tab-templates?tabs=customerserviceadmincenter).
-1. Under **Parameters**,  for the **Value** field of the **url** parameter, enter the following URL, where `<YourOrganizationHeadquartersURL>` and `<LegalEntityname>` are replaced with the appropriate values. Omnichannel customer service reads **{AccountNumber}** from the chat context, so leave **{AccountNumber}** as is.
+1. Select **Customer Service admin center**. 
+1. Go to **Agent experience \>  Workspaces**.
+1. For **Application tab templates**, select **Manage**. 
+1. Create a new application tab of type **Third-party website** by following the instructions in [Manage application tab templates](/dynamics365/app-profile-manager/application-tab-templates?tabs=customerserviceadmincenter).
+1. Under **Parameters**, for the **Value** field of the **url** parameter, enter the following URL, where `<YourOrganizationHeadquartersURL>` and `<LegalEntityname>` are replaced with the appropriate values. Omnichannel customer service reads **{AccountNumber}** from the chat context, so leave **{AccountNumber}** as is.
 
     `https://<YourOrganizationHeadquartersURL>/?mi=MCRCustomerService&cmp=<LegalEntityName>&embedded=true&customerId={AccountNumber}`
 
@@ -103,16 +104,20 @@ To create a new application tab that loads Commerce headquarters in an iFrame mo
 To enable a new application tab for customer agents in Dynamics 365 Omnichannel for Customer Service, follow these steps.
 	
 1. Go to the [Power Apps Maker Portal](https://make.powerapps.com).
-1. In the **Customer Service admin center**, go to **Customer support \> Workstreams**.
+1. In the navigation pane on the left, select **Apps**.
+1. Select **Customer Service admin center**.
+1. Go to **Customer support \> Workstreams**.
 1. Open the workstream you've created for your agents, and then under **Advanced settings**, select **Sessions default**. 
-1. Under **Application Tabs**, select **Add Existing Application Tab**, and then add the new application tab you've created above. This step will ensure that when agent receives an incoming chat call from your e-commerce website, an application tab that loads Commerce headquarters will appear in an iFrame module.  
+1. Under **Application Tabs**, select **Add Existing Application Tab**, and then add the new application tab you've created above. This step ensures that when an agent receives an incoming chat call from your e-commerce website, an application tab that loads Commerce headquarters will appear in an iFrame module.  
 
 ## Add context variables in Dynamics 365 Omnichannel for Customer Service
 
 To add context variables in Dynamics 365 Omnichannel for Customer Service, follow these steps.
 
 1. Go to the [Power Apps Maker Portal](https://make.powerapps.com).
-1. In **Customer Service admin center**, go to **Customer support \>  Workstreams**.
+1. In the navigation pane on the left, select **Apps**.
+1. Select **Customer Service admin center**.
+1. Go to **Customer support \>  Workstreams**.
 1. Open the workstream you've created for your agents, and then under **Advanced settings**, go to the **Context variable** section. 
 1. Select **Edit**, and then add **AccountNumber** as a context variable of type **text**. This variable will help Commerce headquarters load customer information with matching account numbers. 
 
