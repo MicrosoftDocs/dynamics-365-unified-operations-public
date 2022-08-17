@@ -4,26 +4,13 @@
 title: Tender-based discounts
 description: This article provides an overview of functionality that lets retailers configure discounts for specific tender types.
 author: bebeale
-ms.date: 10/30/2019
+ms.date: 08/17/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailTenderDiscount
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: Retail
+ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2018-10-31
-ms.dyn365.ops.version: Version 10.0.7
 
 ---
 
