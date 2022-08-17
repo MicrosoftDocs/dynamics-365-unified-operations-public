@@ -1715,6 +1715,24 @@
           href: inventory/inventory-visibility-api.md
         - name: Inventory Visibility tips
           href: inventory/inventory-visibility-tips.md
+    - name: Sensor Data Intelligence
+      items:
+        - name: Sensor Data Intelligence home page
+          href: sensor-data-intelligence/sdi-home-page.md
+        - name: Turn on Sensor Data Intelligence for your system
+          href: sensor-data-intelligence/sdi-enable-feature.md
+        - name: Deploy an IoT solution on Azure
+          href: sensor-data-intelligence/deploy-iot-solution-on-azure.md
+        - name: Set up a simulated sensor for testing
+          href: sensor-data-intelligence/set-up-simulated-sensor.md
+        - name: The equipment downtime scenario
+          href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
+        - name: The product quality scenario
+          href: sensor-data-intelligence/sdi-scenario-product-quality.md
+        - name: The asset maintenance scenario
+          href: sensor-data-intelligence/sdi-scenario-asset-maintenance.md
+        - name: The production delays scenario
+          href: sensor-data-intelligence/sdi-scenario-production-delays.md
     - name: IoT Intelligence
       items:
         - name: IoT Intelligence home page

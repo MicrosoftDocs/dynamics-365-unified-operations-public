@@ -1,4 +1,22 @@
-﻿# Sensor Data Intelligence overview
+﻿---
+title: Sensor Data Intelligence home page
+description: Sensor Data Intelligence enables organizations to drive business processes in Supply Chain Management based on IoT signals from machines and equipment on the production floor.
+author: johanhoffmann
+ms.date: 09/02/2022
+ms.topic: article
+ms.search.form:
+audience: Application User
+ms.reviewer: kamaybac
+ms.search.region: Global
+ms.author: johanho
+ms.search.validFrom: 2022-09-02
+ms.dyn365.ops.version: 10.0.30
+---
+
+# Sensor Data Intelligence home page
+
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 The Sensor Data Intelligence Add-in for Dynamics 365 Supply Chain Management enables organizations to drive business processes in Supply Chain Management based on internet of things (IoT) signals from machines and equipment on the production floor. *Sensor Data Intelligence* is an updated, renamed version of the *IoT Intelligence* add-in previously available for Supply Chain Management. The new version of Sensor Data Intelligence enables you to:
 
