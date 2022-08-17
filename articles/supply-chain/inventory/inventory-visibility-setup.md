@@ -38,7 +38,7 @@ If you have any questions about these prerequisites, contact the Inventory Visib
 
 ## <a name="install-add-in"></a>Install the Inventory Visibility Add-in
 
-Before you install the add-in, register an application and add a client secret to Azure Active Directory (Azure AD) under your Azure subscription. For instructions, see [Register an application](/azure/active-directory/develop/quickstart-register-app) and [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Be sure to make a note of the **Application (client) ID**, **Client secret**, and **Tenant ID** values, because you will need them later.
+Before you install the add-in, register an application and add a client secret to Azure Active Directory (Azure AD) under your Azure subscription. For instructions, see [Register an application](/azure/active-directory/develop/quickstart-register-app) and [Add a client secret](/azure/active-directory/develop/quickstart-register-app#add-a-certificate). Be sure to make a note of the **Application (client) ID**, **Client secret**, and **Tenant ID** values, because you'll need them later.
 
 > [!IMPORTANT]
 > If you have more than one LCS environment, create a different Azure AD application for each of them. If you use same application ID and tenant ID to install the Inventory Visibility Add-in for different environments, a token issue will occur for older environments. As a result, only the last installation will be valid.
@@ -94,7 +94,7 @@ If you're running Supply Chain Management version 10.0.17 or earlier, contact th
 >
 > The code is included with Supply Chain Management version 10.0.18. If you're running that version or later, deployment isn't required.
 
-Make sure that the following features are turned on in your Supply Chain Management environment. (By default, they are turned on.)
+Make sure that the following features are turned on in your Supply Chain Management environment. (By default, they're turned on.)
 
 | Feature description | Code version | Toggle class |
 |---|---|---|
@@ -103,7 +103,7 @@ Make sure that the following features are turned on in your Supply Chain Managem
 
 ### <a name="setup-inventory-visibility-integration"></a>Set up Inventory Visibility integration
 
-Once you have installed the add-in, prepare your Supply Chain Management system to work with it by doing the following steps.
+Once you've installed the add-in, prepare your Supply Chain Management system to work with it by doing the following steps.
 
 1. In Supply Chain Management, open the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, and turn on the following features:
     - *Inventory Visibility Integration* – Required.
@@ -116,7 +116,7 @@ Once you have installed the add-in, prepare your Supply Chain Management system 
 
 1. If you enabled the optional *Inventory Visibility integration with reservation offset* feature, open the **Reservation offset** tab and make the following settings:
     - **Enable reservation offset** – Set to *Yes* to enable this functionality.
-    - **Reservation offset modifier** – Select the inventory transaction status that will offset reservations made on Inventory Visibility. This setting determines the order processing stage that triggers offsets. The stage is traced by the order's inventory transaction status. Choose one of the following:
+    - **Reservation offset modifier** – Select the inventory transaction status that will offset reservations made on Inventory Visibility. This setting determines the order processing stage that triggers offsets. The stage is traced by the order's inventory transaction status. Choose one of the following options:
         - *On order* – For the *On transaction* status, an order will send an offset request when it's created. The offset quantity will be the quantity of the created order.
         - *Reserve* – For the *Reserve ordered transaction* status, an order will send an offset request when it's reserved, picked, packing-slip posted, or invoiced. The request will be triggered only once, for the first step when the mentioned process occurs. The offset quantity will be the quantity where the inventory transaction status changed from *On order* to *Reserved ordered* (or later status) on the corresponding order line.
 
@@ -130,9 +130,7 @@ To uninstall the Inventory Visibility Add-in, follow these steps:
 1. Go to **Inventory Management \> Periodic \> Inventory Visibility Integration** and disable the job.
 1. Go to LCS and open the page for the environment where you want to uninstall the add-in  (see also [Install the Inventory Visibility Add-in](#install-add-in)).
 1. Select **Uninstall**.
-
-The uninstallation process terminates the Inventory Visibility Add-in, unregisters the add-in from LCS, and deletes any temporary data that is stored in the Inventory Visibility Add-in data cache. However, the primary inventory data that is stored in your Dataverse subscription isn't deleted. To delete Inventory Visibility data that is stored in your Dataverse subscription, follow these steps:
-
+1. The uninstallation process now terminates the Inventory Visibility Add-in, unregisters the add-in from LCS, and deletes any temporary data that is stored in the Inventory Visibility Add-in data cache. However,  primary inventory data that was synced to your Dataverse subscription is still stored there. To delete this data, continue to the next step.
 1. Open [Power Apps](https://make.powerapps.com).
 1. Select **Environment** on the navigation bar
 1. Select the Dataverse environment that is bonded with your LCS environment.
@@ -143,23 +141,20 @@ The uninstallation process terminates the Inventory Visibility Add-in, unregiste
     1. Inventory Visibility Standalone
     1. Dynamics 365 FNO SCM Inventory Visibility Base Solution
 
-After you delete these solutions, the data that is stored in tables will also be deleted.
+    After you delete these solutions, the data that is stored in tables will also be deleted.
 
 > [!NOTE]
-> If you later want to reinstall the Inventory Visibility Add-in for the same environment, you must make sure that you haven't restored the Supply Chain Management environment database in the meantime because this will cause a data inconsistency issue. If your Supply Chain Management environment database has been restored, then follow the instructions provided in [clean data after restoring environment database](#restore-environment-database).
+> If you later want to reinstall the Inventory Visibility Add-in for the same environment, first make sure that you have deleted Inventory Visibility data that is stored in your Dataverse subscription, as described in the previous procedure. This will prevent data consistency issues that could otherwise occur due to changes made in Supply Chain Management (such as a database restore) not being synced to Dataverse while the add-in wasn't installed.
 
-## <a name="restore-environment-database"></a> Clean data after restoring environment database
+## <a name="restore-environment-database"></a>Clean Inventory Visibility data from Dataverse before restoring the Supply Chain Management database
 
-If you want to restore Supply Chain Management database, you need to make sure you have uninstalled Inventory Visibility Add-in and deleted inventory data that is stored in your Dataverse subscription.
+If you restore a Supply Chain Management database, then your restored database may contain data that is no longer consistent with data previously synced by Inventory Visibility to Dataverse. This data inconsistency can cause system errors and other issues. Therefore, it's important that you always clean all related Inventory Visibility data from Dataverse before your restore a Supply Chain Management database.
 
-To delete inventory visibility data that is stored in your Dataverse subscription, open [Power Apps](https://make.powerapps.com), select **Environment** on the navigation bar, and select the Dataverse environment that is bonded with your LCS environment. Then go to **Solutions**, and delete the following five solutions in this order:
+If you need to restore a Supply Chain Management database, use the following procedure:
 
-1. Anchor solution for Inventory Visibility application in Dynamics 365 solutions
-1. Dynamics 365 FNO SCM Inventory Visibility Applications Solution
-1. Inventory Service Configuration
-1. Inventory Visibility Standalone
-1. Dynamics 365 FNO SCM Inventory Visibility Base Solution
+1. Uninstall the Inventory Visibility Add-in and remove all related data in Dataverse, as described in [Uninstall the Inventory Visibility Add-in](#uninstall-add-in)
+1. Restore your Supply Chain Management database, for example as described in [Database point-in-time restore (PITR)](../../fin-ops-core/dev-itpro/database/database-point-in-time-restore.md) or [Point-in-time restore of the production database to a sandbox environment](../../fin-ops-core/dev-itpro/database/database-pitr-prod-sandbox.md).
+1. If you still want to use it, then reinstall and set up the Inventory Visibility Add-in as described in [Install the Inventory Visibility Add-in](#install-add-in) and [Set up Inventory Visibility integration](#setup-inventory-visibility-integration)
 
-After you delete these solutions, all inventory visibility data is deleted now, and then you can resotre Supply Chain Management database, and reinstall Inventory Visibility Add-in.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
