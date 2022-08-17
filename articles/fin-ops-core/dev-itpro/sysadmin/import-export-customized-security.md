@@ -1,24 +1,14 @@
 ---
-# required metadata
-
-title: Import or export a customized security configuration by using Data management 
+title: Import or export a customized security configuration by using Data management
 description: The article explains how a customized security configuration can be exported and imported across environments by using the Data management framework.
-author: tonyafehr
+author: peakerbl
 ms.date: 07/17/2020
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: NotInToc
 ms.search.region: Global
-# ms.search.industry:
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12

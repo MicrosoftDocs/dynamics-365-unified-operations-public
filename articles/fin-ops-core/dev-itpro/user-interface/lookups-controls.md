@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Lookup controls
 description: This article discusses how to enable lookup behavior on controls.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 17464
-ms.assetid: 1c71ebac-47c3-4c7e-bb48-a1c45619c95e
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 17464
+ms.assetid: 1c71ebac-47c3-4c7e-bb48-a1c45619c95e
 ---
 
 # Lookup controls

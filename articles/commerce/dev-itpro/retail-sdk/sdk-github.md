@@ -1,16 +1,16 @@
 ---
-title: Download Commerce SDK samples and reference packages from GitHub and NuGet
-description: This article describes to how to download Microsoft Dynamics 365 Commerce software development kit (SDK) samples from GitHub and reference packages.
-author: mugunthanm
-ms.date: 08/01/2022
+title: Download Retail SDK samples and reference packages from GitHub and NuGet
+description: This article explains to how to download Retail software development kit (SDK) samples from GitHub and reference packages from a public feed.
+author: josaw1
+ms.date: 05/03/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2020-11-10
 ms.dyn365.ops.version: 10.0.16
+ms.search.industry: Retail
 ---
 
 # Download Commerce SDK samples and reference packages from GitHub and NuGet

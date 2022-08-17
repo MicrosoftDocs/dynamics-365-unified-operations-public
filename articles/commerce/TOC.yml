@@ -718,6 +718,10 @@
           href: tasks/category-pricing-rules-trade-agreements.md
         - name: Delay exact price and discount calculation
           href: delayed-price-calculation.md
+        - name: Pricing functions in POS
+          href: pos-pricing-functions.md
+        - name: Commerce pricing APIs
+          href: pricing-apis.md
       - name: Recommendations 
         items:
         - name: Product recommendations overview 
@@ -1774,6 +1778,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/commerce
             - name: OrderBy
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/commerce
+            - name: Repeat
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/commerce
             - name: Reverse
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/commerce
             - name: Split

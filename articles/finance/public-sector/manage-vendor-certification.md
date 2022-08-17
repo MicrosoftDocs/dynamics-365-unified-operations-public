@@ -1,14 +1,13 @@
 ---
 title: Maintain vendor certification
-description: This article describes the steps that vendors can use to  maintain their certifications using the Vendor collaboration workspace. 
+description: This article describes the steps that vendors can use to  maintain their certifications using the Vendor collaboration workspace.
 author: v-kiarnd
 ms.date: 04/27/2021
 ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: twheeloc
+ms.author: v-kiarnd
 ms.search.validFrom: 2021-02-09
 ms.dyn365.ops.version: 10.0.18
 ---

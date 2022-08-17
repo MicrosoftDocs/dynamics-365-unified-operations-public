@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: E-invoicing CFDI
-description: This article walks you through creating and posting a customer invoice as an electronic invoice by using the CFDI method. 
-author: sndray
+description: This article walks you through creating and posting a customer invoice as an electronic invoice by using the CFDI method.
+author: AdamTrukawka
 ms.date: 08/03/2021
-ms.topic: business-process 
+ms.topic: business-process
 ms.prod: 
 ms.technology: 
- 
-# optional metadata 
- 
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxGroupLookup, InventLocationIdLookup, SalesEditLines, EInvoiceCFDIJournal_AR
-audience: Application User 
-# ms.devlang: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Mexico
-# ms.search.industry: 
-ms.author: sndray
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: atrukawk
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxGroupLookup, InventLocationIdLookup, SalesEditLines, EInvoiceCFDIJournal_AR
 ---
 # E-invoicing CFDI
 

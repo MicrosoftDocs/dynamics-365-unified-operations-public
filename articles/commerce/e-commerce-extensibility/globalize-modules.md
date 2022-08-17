@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Globalize modules by using the CultureInfoFormatter class
 description: This article describes how to globalize modules by using the CultureInfoFormatter class.
 author: samjarawan
@@ -8,22 +6,14 @@ ms.date: 12/04/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 # Globalize modules by using the CultureInfoFormatter class
 

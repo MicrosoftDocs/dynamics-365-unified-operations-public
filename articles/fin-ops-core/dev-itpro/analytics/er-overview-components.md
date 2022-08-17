@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Electronic reporting components
 description: This article describes the Electronic reporting (ER) components.
-author: nselin
-ms.date: 06/13/2022
+author: kfend
+ms.date: 09/28/2021
+ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERWorkspace
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 58941
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
-# ms.search.industry: 
-ms.topic: overview
-ms.author: nselin 
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 58941
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+ms.search.form: ERWorkspace
 ---
 
 # Electronic reporting components

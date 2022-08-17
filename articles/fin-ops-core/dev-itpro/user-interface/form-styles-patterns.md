@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Form styles and patterns
 description: This article describes the concept of form patterns and discusses the process for applying and removing patterns.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 28891
-ms.assetid: 9cf9949a-7787-4b2c-b248-fff7d038cda5
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 28891
+ms.assetid: 9cf9949a-7787-4b2c-b248-fff7d038cda5
 ---
 
 # Form styles and patterns

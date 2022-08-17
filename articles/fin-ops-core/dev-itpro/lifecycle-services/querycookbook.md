@@ -1,30 +1,19 @@
 ---
-# required metadata
-
-title: Query cookbook 
-description: This article describes queries in the SQL Insights tab and how they should be used when troubleshooting performance issues. 
-author: meeramahabala
+title: Query cookbook
+description: This article describes queries in the SQL Insights tab and how they should be used when troubleshooting performance issues.
+author: sericks007
 ms.date: 11/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 267184
-ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: meeram
+ms.author: gned
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 267184
+ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ---
 
 # Query cookbook 

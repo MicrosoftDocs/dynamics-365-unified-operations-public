@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Commerce runtime (CRT) extensibility
 description: This article describes various ways that you can extend the commerce runtime (CRT) and Retail Server.
-author: mugunthanm
+author: josaw1
 ms.date: 06/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 104593
-ms.assetid: 1397e679-8cd5-49f3-859a-83d342fdd275
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 104593
+ms.assetid: 1397e679-8cd5-49f3-859a-83d342fdd275
 ---
 
 # Commerce runtime (CRT) extensibility

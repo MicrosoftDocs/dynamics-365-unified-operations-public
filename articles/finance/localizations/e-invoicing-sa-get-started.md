@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Get started with Electronic invoicing for Saudi Arabia
 description: This article provides information that will help you get started with Electronic invoicing for Saudi Arabia.
-author: ikondo
+author: mrolecki
 ms.date: 06/30/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 
 ms.search.region: Saudi Arabia
-# ms.search.industry: 
-ms.custom: intro-internal
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: AX 10.0.21
-
+ms.custom: intro-internal
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Get started with Electronic invoicing for Saudi Arabia

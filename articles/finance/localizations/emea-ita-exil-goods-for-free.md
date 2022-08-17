@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Tax invoice for goods delivered for free
 description: This article provides information about tax invoices for goods that were delivered for free.
-author: ilkond
+author: mrolecki
 ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2019-11-01
 ms.dyn365.ops.version: 10.0.8
-
+ms.search.form: 
 ---
 
 # Tax invoice for goods delivered for free

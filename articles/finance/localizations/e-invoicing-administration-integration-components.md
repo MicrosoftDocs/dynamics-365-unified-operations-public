@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Electronic invoicing administration and integration components
 description: This article provides an overview of the Electronic invoicing administration and integration components.
-author: dkalyuzh
+author: gionoder
 ms.date: 01/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: 
-# ms.search.industry: 
-ms.author: kfend
+ms.author: gionoder
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
 ---
 
 # Electronic invoicing administration and integration components

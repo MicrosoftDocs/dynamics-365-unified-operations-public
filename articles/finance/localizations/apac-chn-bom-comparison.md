@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Bill of materials comparison for China
 description: This article provides information about BOM comparison for China.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: InventBOMComparison_CN
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 268584
-ms.assetid: e399ab34-4bfa-4b6d-a956-d425c1395ea3
 ms.search.region: China (PRC)
-# ms.search.industry: 
-ms.author: leguo
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 268584
+ms.assetid: e399ab34-4bfa-4b6d-a956-d425c1395ea3
+ms.search.form: InventBOMComparison_CN
 ---
 
 # Bill of materials comparison for China

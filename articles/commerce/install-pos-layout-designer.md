@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Install the POS layout designer
 description: You can use the one-click designer to design different Modern POS (MPOS) and Cloud POS layouts, in either Landscape mode or Portrait mode, for stores, registers, cashiers, and managers.
-author: athinesh99
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailTillLayout
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 219684
-ms.assetid: 2e2c4eea-c6e2-4912-9832-a6b22416e39f
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: athinesh
+ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 219684
+ms.assetid: 2e2c4eea-c6e2-4912-9832-a6b22416e39f
+ms.search.industry: Retail
+ms.search.form: RetailTillLayout
 ---
 
 # Install the POS layout designer

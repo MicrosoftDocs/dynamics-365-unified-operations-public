@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Reference original invoices in credit notes (vendor invoices)
 description: This article describes how to create a reference to an original invoice when you create a credit note.
-author: v-oloski
+author: AdamTrukawka
 ms.date: 09/28/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: v-oloski
+ms.author: atrukawk
 ms.search.validFrom: 2021-09-23
 ms.dyn365.ops.version: 10.0.20
-
+ms.search.form: 
 ---
 
 # Reference original invoices in credit notes (vendor invoices)

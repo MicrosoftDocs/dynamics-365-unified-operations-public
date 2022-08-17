@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Email ER destination type
 description: This article explains how to configure an email destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
-author: NickSelin
+author: kfend
 ms.date: 08/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 97423
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 97423
+ms.assetid: 
+ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 ---
 
 # Email ER destination type

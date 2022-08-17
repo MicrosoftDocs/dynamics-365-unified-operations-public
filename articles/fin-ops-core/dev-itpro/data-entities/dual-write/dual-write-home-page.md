@@ -6,11 +6,11 @@ ms.date: 11/24/2021
 ms.topic: article
 audience: Developer
 ms.reviewer: sericks
-ms.custom: "intro-internal"
 ms.search.region: Global
-ms.author: sericks
+ms.author: ramasri
 ms.search.validFrom: 2020-01-08
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: "intro-internal"
 ---
 
 # Dual-write home page

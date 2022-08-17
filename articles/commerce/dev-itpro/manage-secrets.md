@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Manage secrets for retail channels
 description: This article explains how to manage secrets when you're using an extension with channels that require access to secrets.
-author: AamirAllaq
+author: ShalabhjainMSFT
 ms.date: 04/21/2022
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Developer
-# ms.devlang:
-ms.reviewer: tfehr
-# ms.tgt_pltfrm:
-ms.custom: 83892
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry:
-ms.author: aamiral
+ms.author: shajain
 ms.search.validFrom: 2019-09-17
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-
+ms.custom: 83892
 ---
 
 # Manage secrets for retail channels

@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Tax Calculation overview
 description: This article explains the overall scope and features of the Tax Calculation capability.
-author: wangchen
+author: EricWangChen
 ms.date: 03/02/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxIntegrationTaxServiceParameters
 audience: Application user
-# ms.devlang: 
 ms.reviewer: kfend
-
-# ms.tgt_pltfrm: 
-
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: wangchen
 ms.search.validFrom: 2021-04-01
 ms.dyn365.ops.version: 10.0.18
-
+ms.search.form: TaxIntegrationTaxServiceParameters
 ---
 
 # Tax Calculation overview
@@ -91,6 +80,7 @@ We recommend that you import and set up your Tax Calculation configuration with 
 | 10.0.26         | Tax Calculation Configuration 40.54.234 |
 | 10.0.27         | Tax Calculation Configuration 40.54.234 |
 | 10.0.28         | Tax Calculation Configuration 40.54.234 |
+| 10.0.29         | Tax Calculation Configuration 40.55.236 |
 
 
 ## Data flow
@@ -162,7 +152,8 @@ The following transactions are supported in version 10.0.28:
 
 The following transactions are supported in version 10.0.29: 
 
-- Periodical journal
+
+- Periodic journals
 
 ## Supported countries/regions
 

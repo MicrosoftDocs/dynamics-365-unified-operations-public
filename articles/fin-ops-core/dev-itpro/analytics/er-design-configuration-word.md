@@ -1,27 +1,20 @@
---- 
-# required metadata 
- 
+---
 title: Design a new ER configuration to generate reports in Word format
-description: This article explains how users can configure a new Electronic reporting (ER) format to generate reports as Microsoft Word documents. 
-author: NickSelin
+description: This article explains how users can configure a new Electronic reporting (ER) format to generate reports as Microsoft Word documents.
+author: kfend
 ms.date: 12/17/2020
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: filatovm
-ms.search.validFrom: 2020-01-01 
-ms.dyn365.ops.version: Version 10.0.6 
+ms.search.validFrom: 2020-01-01
+ms.dyn365.ops.version: Version 10.0.6
+ms.search.form: 
+  - ERWorkspace, ERSolutionTable, EROperationDesigner
+  - LedgerJournalTable, LedgerJournalTransVendPaym
 ---
 
 # Design a new ER configuration to generate reports in Word format

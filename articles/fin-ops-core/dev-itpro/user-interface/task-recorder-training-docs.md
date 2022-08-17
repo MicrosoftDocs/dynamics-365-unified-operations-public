@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Create documentation or training with Task Recorder
 description: This article explains what Task recorder and task guides are, how to create recordings, and how to customize Microsoft task guides and include them in your Help.
-author: josaw1
+author: jasongre
 ms.date: 03/24/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysHelpSetup
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 25391
-ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: josaw
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 25391
+ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
+ms.search.form: SysHelpSetup
 ---
 
 # Create documentation or training with Task Recorder

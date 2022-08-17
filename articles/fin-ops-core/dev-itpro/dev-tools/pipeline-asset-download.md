@@ -1,16 +1,16 @@
 ---
 title: Download assets by using Azure Pipelines
 description: This article explains how you can download assets from the Asset library in Microsoft Dynamics Lifecycle Services (LCS) by using Azure Pipelines.
-author: jorisdg
+author: gianugo
 ms.date: 03/05/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom:
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2020-08-19
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
 ---
 
 # Download assets by using Azure Pipelines

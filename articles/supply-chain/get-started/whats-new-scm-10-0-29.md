@@ -2,7 +2,7 @@
 title: Preview of Dynamics 365 Supply Chain Management 10.0.29 (October 2022)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.29. 
 author: kamaybac
-ms.date: 08/01/2022
+ms.date: 08/12/2022
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
@@ -34,7 +34,7 @@ The following table lists the features that are included in this release. We mig
 | Inventory and logistics | [Preload streamlined on-hand inventory lists](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/query-inventory-visibility-summary-entity) | Coming soon | Enabled by default |
 | Make-to-order supply automation | [Make-to-order supply automation](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-to-order-supply-automation) | [Make-to-order supply automation](../master-planning/make-to-order-supply-automation.md) | Feature management:<br>*Make-to-order supply automation* |
 | Planning | [View and apply detailed insights for DDMRP](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/view-apply-detailed-insights-ddmrp) | [Demand Driven Material Requirements Planning overview](../master-planning/planning-optimization/ddmrp-overview.md) | Feature management:<br>*(Preview) DDMRP for Planning Optimization* |
-| Production control | [Make finished goods physically available before posting to journals](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-finished-goods-physically-before-posting) | Coming soon | Feature management:<br>*(Preview) Make finished goods physically available before posting to journals* |
+| Production control | [Make finished goods physically available before posting to journals](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/make-finished-goods-physically-before-posting) | [Make finished goods physically available before posting to journals](../production-control/deferred-posting.md) | Feature management:<br>*(Preview) Make finished goods physically available before posting to journals* |
 | Warehouse management | [Look up relevant data within the warehouse mobile app](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/look-up-relevant-data-within-warehouse-mobile-app) | [Query data using Warehouse Management mobile app detours](../warehousing/warehouse-app-data-inquiry.md) | Feature management:<br>*Warehouse management app data inquiry flow* |
 
 ## Feature enhancements included in this release

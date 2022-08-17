@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: ESR customer payments import
 description: This article provides information about importing customer payments in the ESR format.
-author: anasyash
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustPaymMode, LedgerJournalTransCustPaym
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 264584
 ms.search.region: Switzerland
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 264584
+ms.search.form: CustPaymMode, LedgerJournalTransCustPaym
 ---
 
 # ESR customer payments import

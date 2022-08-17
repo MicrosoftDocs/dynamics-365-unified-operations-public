@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Rated expenses registers
 description: This article provides information about some expense types of which only a part within the established standard is accepted for tax accounting in the current period.
+author: AdamTrukawka
 ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
-author: akroshkina
 ms.technology: 
-manager: anayash
-
-# optional metadata
-
-#ms.search.form:
 audience: IT Pro, Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.suite: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: 
-# ms.search.industry: 
-ms.author: anasyash
-ms.dyn365.ops.version: 
+ms.author: atrukawk
 ms.search.validFrom: 
+ms.dyn365.ops.version: 
+manager: anayash
 ---
 
 # Rated expenses registers
