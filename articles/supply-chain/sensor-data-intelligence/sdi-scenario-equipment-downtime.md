@@ -103,7 +103,7 @@ Follow these steps to set up the *equipment downtime* scenario in Supply Chain M
 1. Repeat the previous step for each sensor you want to add for now. You can come back and add more sensors at any time.
 1. Select **Next**.
 1. The **Business record mapping** page opens. In the **Sensors** section, select the record for the sensor you defined in the previous step.
-1. In the **Business record mapping** section**,** select **New** to add a row to the grid.
+1. In the **Business record mapping** section, select **New** to add a row to the grid.
 1. On the new row, set **Business record** to the resource you are monitoring with the selected sensor. (If you are using the sample data created earlier in this article, set it to *3118, Foam cutting machine*.)
 1. Select **Next**.
 1. The **Equipment downtime threshold** page opens. Use this page to establish how much time may pass after the last *part-out* signal before the system should send an equipment-down notification. There are two ways to define the threshold:
