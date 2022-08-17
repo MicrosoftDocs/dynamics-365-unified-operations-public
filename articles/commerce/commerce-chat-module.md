@@ -20,23 +20,23 @@ ms.search.validFrom: 2022-07-20
 
 This article describes the Commerce Chat with Omnichannel for Customer Service module in Microsoft Dynamics 365 Commerce.
 
-Starting with the Commerce version 10.0.29 release, a new *Commerce Chat with Omnichannel for Customer Service* module has been added to the Commerce module library. With this chat module, Dynamics 365 Commerce empowers e-commerce customers with the chat capabilities of Dynamics 365 Omnichannel for Customer Service. Omnichannel for Customer Service includes live agent support to help address customer queries, provide customer service, and facilitate sales for Commerce customers. 
+Starting with the Commerce version 10.0.29 release, a new *Commerce Chat with Omnichannel for Customer Service* module has been added to the Commerce module library. The Commerce chat feature provides e-commerce customers with the chat capabilities of Dynamics 365 Omnichannel for Customer Service, which includes live agent support to help address customer queries, provide customer service, and facilitate sales for Commerce customers. 
 
-The Commerce Chat feature enables retailers to:
+The Commerce chat feature enables retailers to:
 
 - Increase personalized engagement with their customers that can result in improved customer retention.
 - Augment customer service with integration of human agent and self-service chatbots.
 - Garner agent experience with real-time customer profile, order, and purchasing data that drives operational improvements and engagement.
 - Improve overall customer satisfaction which can lead to an increase in sales.
  
-The following capabilities are available as part of the Commerce Chat feature:
+The following capabilities are available as part of the Commerce chat feature:
 
  - Commerce Chat with Omnichannel for Customer Service
  - Addition of Commerce Call Center as an application tab to the agent experience in Dynamics 365 Omnichannel for Customer Service.
 
 ## Prerequisites for Omnichannel for Customer Service 
 
-As a prerequisite, you must configure chat in the Omnichannel for Customer Service Administration module and obtain some of the parameters to configure the Commerce chat experience. For instructions, see [Configure a chat channel](/dynamics365/customer-service/set-up-chat-widget).
+As a prerequisite, you must first configure chat in the Omnichannel for Customer Service Administration widget and obtain some of the parameters to configure the Commerce chat experience. For instructions, see [Configure a chat channel](/dynamics365/customer-service/set-up-chat-widget).
 
 Once you've configured chat within the Omnichannel for Customer Service Administration module, you'll obtain a script similar to that in the example shown below.  
 
@@ -46,9 +46,9 @@ Copy the script you obtained for later use because the script values are require
 
 ### Commerce Chat with Omnichannel for Customer Service mandatory fields
 
-The Omnichannel for Customer Service Administration module script values listed in the following table are required to configure the Commerce Chat with Omnichannel for Customer Service module.
+The Omnichannel for Customer Service Administration widget script values listed in the following table are required to configure the Commerce Chat with Omnichannel for Customer Service module.
 
-| Module property| Description  |
+| Widget property| Description  |
 | ------------- |--------------|
 | Script source | From the chat widget script source, locate **src** and use its value for this property. |
 | Data application ID      | From the chat widget script source, locate **data-app-id** and use its value for this property. |
@@ -57,7 +57,7 @@ The Omnichannel for Customer Service Administration module script values listed 
 
 ## Configure the Commerce chat experience for your e-commerce site 
 
-One of the recommended approaches to implementing the chat experience for your e-commerce site is to add the chat module to the shared header fragment that is used on your e-commerce site pages. 
+One of the recommended approaches to implementing the chat experience for your e-commerce site is to add the Commerce Chat with Omnichannel for Customer Service module to the shared header fragment that is used on your e-commerce site pages. 
 
 To add the chat module to your site's header fragment in Commerce site builder, follow these steps.
 
