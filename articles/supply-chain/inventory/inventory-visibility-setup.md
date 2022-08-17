@@ -144,7 +144,7 @@ To uninstall the Inventory Visibility Add-in, follow these steps:
     After you delete these solutions, the data that is stored in tables will also be deleted.
 
 > [!NOTE]
-> If you later want to reinstall the Inventory Visibility Add-in for the same environment, first make sure that you have deleted Inventory Visibility data that is stored in your Dataverse subscription, as described in the previous procedure. This will prevent data consistency issues that could otherwise occur due to changes made in Supply Chain Management (such as a database restore) not being synced to Dataverse while the add-in wasn't installed.
+> If you restore a Supply Chain Management database after uninstalling the Inventory Visibility Add-in, and then want to reinstall the add-in, make sure that you have deleted the old Inventory Visibility data that is stored in your Dataverse subscription (as described in the previous procedure) before you reinstall the add-in. This will prevent data inconsistency issues that could otherwise occur.
 
 ## <a name="restore-environment-database"></a>Clean Inventory Visibility data from Dataverse before restoring the Supply Chain Management database
 
