@@ -54,7 +54,7 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | The supply chain management (SCM) pricing engine supports pricing calculation based on the requested ship date or requested receipt date, along with today's date. TheCommerce pricing engine only supports pricing calculation based on today's date. For customers who use both SCM and Commerce capabilities, we provided this setting and recommended that customers always set it to **Yes** so that the two pricing engines can work together. We deprecate this setting because it doesn't change the calculation behavior and therefore is redundant. |
+| **Reason for deprecation/removal** | The supply chain management (SCM) pricing engine supports pricing calculation based on the requested ship date or requested receipt date, along with today's date. TheCommerce pricing engine only supports pricing calculation based on today's date. For customers who use both SCM and Commerce capabilities, we provided this setting and recommended that customers always set it to **Yes** so that the two pricing engines can work together. We deprecate this setting because it doesn't change the calculation behavior and is redundant. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Pricing and discounts |
 | **Deployment option**              | All |
