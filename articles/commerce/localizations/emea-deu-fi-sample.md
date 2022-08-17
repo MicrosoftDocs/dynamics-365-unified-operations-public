@@ -20,7 +20,7 @@ ms.search.validFrom: 2020-5-29
 
 This article provides an overview of the fiscal integration sample for Germany in Microsoft Dynamics 365 Commerce.
 
-To meet local fiscal requirements for cash registers in Germany, the Microsoft Dynamics 365 Commerce functionality for Germany includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](https://www.efsta.eu/de/fiskalloesungen/deutschland) solution from [EFSTA](https://www.efsta.eu/de/) and enables communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on either the Retail Hardware station or a separate computer that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Commerce software development kit (SDK).
+To meet local fiscal requirements for cash registers in Germany, the Dynamics 365 Commerce functionality for Germany includes a sample integration of the point of sale (POS) with an external fiscal registration service. The sample extends the [fiscal integration functionality](fiscal-integration-for-retail-channel.md). It's based on the [EFR (Electronic Fiscal Register)](https://www.efsta.eu/de/fiskalloesungen/deutschland) solution from [EFSTA](https://www.efsta.eu/de/) and enables communication with the EFR service via the HTTPS protocol. The EFR service should be hosted on either the Retail Hardware station or a separate computer that can be connected to from the Hardware station. The sample is provided in the form of source code and is part of the Commerce software development kit (SDK).
 
 Microsoft doesn't release any hardware, software, or documentation from EFSTA. For information about how to get the EFR solution and operate it, contact [EFSTA](https://www.efsta.eu/de/kontakt/kontakt).
 
@@ -44,7 +44,7 @@ The following scenarios are covered by the fiscal registration service integrati
 
     3. Capturing a response from the fiscal registration service
 
-        Security data is received from a TSE as a part of a response and is saved in the transaction in the channel database. The security data consist of the following information:
+        Security data is received from a TSE as a part of a response and is saved in the transaction in the channel database. The security data consists of the following information:
 
         - TID
         - Date and time of the transaction start
@@ -161,7 +161,7 @@ Set up POS functionality profiles. On the **Receipt numbering** FastTab, set up 
 
 You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
 
-On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet to your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or more than 900001.
+On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or more than 900001.
 
 Add the following POS labels to the **POS** section of the **Language text** page.
 
@@ -249,7 +249,7 @@ For more information about how to work with receipt formats, see [Set up and des
 The fiscal registration service integration sample for Germany is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Commerce SDK. The sample is located in the **src\\FiscalIntegration\\Efr** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The [sample](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) consists of a fiscal document provider, which is an extension of the Commerce runtime (CRT), and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Commerce SDK, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/sdk-github.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
 
 > [!NOTE]
-> The fiscal registration service integration sample for Germany is available in the Commerce SDK starting with Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Deployment guidelines for the fiscal integration sample for Germany (legacy)](emea-deu-fi-sample-sdk.md).
+> The fiscal registration service integration sample for Germany is available in the Commerce SDK as of Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer virtual machine (VM) in Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Deployment guidelines for the fiscal integration sample for Germany (legacy)](emea-deu-fi-sample-sdk.md).
 
 Complete the fiscal integration setup steps as described in [Set up the fiscal integration for Commerce channels](setting-up-fiscal-integration-for-retail-channel.md):
 
@@ -257,7 +257,7 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 1. [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
     > [!WARNING]
-    > The error handling capabilities of the fiscal integration framework might be not fully aligned with local fiscal regulations.
+    > The error handling capabilities of the fiscal integration framework might not be fully aligned with local fiscal regulations.
     >
     > - We recommend that you leave the **Continue on error** option on the **Fiscal registration process** page turned off, because all transactions must be correctly registered, even if the first attempt at fiscal registration wasn't successful.
     > - Before you turn on the **Skip** or **Mark as registered** option on the **Fiscal registration process** page, you should discuss these changes to the fiscal registration process with your tax consultant or the local tax office.
@@ -359,8 +359,8 @@ The following settings are included in the fiscal connector configuration that i
 ### Configure channel components
 
 > [!NOTE]
-> - The fiscal registration service integration sample for Germany is available in the Commerce SDK starting with Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal integration sample for Germany (legacy)](emea-deu-fi-sample-sdk.md).
-> - Commerce samples that are deployed in your environment are not automatically updated when applying service or quality updates to Commerce components. You must take the necessary steps to manually update the required samples.
+> - The fiscal registration service integration sample for Germany is available in the Commerce SDK as of Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal integration sample for Germany (legacy)](emea-deu-fi-sample-sdk.md).
+> - Commerce samples that are deployed in your environment aren't automatically updated when you apply service or quality updates to Commerce components. You must manually update the required samples.
 
 #### Set up the development environment
 
@@ -421,7 +421,7 @@ Follow the steps in [Set up a build pipeline for a fiscal integration sample](fi
 The fiscal registration service integration sample for Germany is based on the [fiscal integration functionality](fiscal-integration-for-retail-channel.md) and is part of the Commerce SDK. The sample is located in the **src\\FiscalIntegration\\Efr** folder of the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository. The [sample](fiscal-integration-for-retail-channel.md#fiscal-registration-process-and-fiscal-integration-samples-for-fiscal-devices-and-services) consists of a fiscal document provider, which is an extension of CRT, and a fiscal connector, which is an extension of Commerce Hardware Station. For more information about how to use the Commerce SDK, see [Download Commerce SDK samples and reference packages from GitHub and NuGet](../dev-itpro/retail-sdk/retail-sdk-overview.md) and [Set up a build pipeline for the independent-packaging SDK](../dev-itpro/build-pipeline.md).
 
 > [!NOTE]
-> The fiscal registration service integration sample for Germany is available in the Commerce SDK starting with Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal integration sample for Germany (legacy)](emea-deu-fi-sample-sdk.md).
+> The fiscal registration service integration sample for Germany is available in the Commerce SDK as of Commerce version 10.0.29. In Commerce version 10.0.28 or earlier, you must use the previous version of the Retail SDK on a developer VM in LCS. For more information, see [Deployment guidelines for the fiscal integration sample for Germany (legacy)](emea-deu-fi-sample-sdk.md).
 
 ### CRT extension design
 
