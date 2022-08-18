@@ -84,7 +84,7 @@ After adding the new table to the switch statement in the delegate handler, the 
 
 In this scenario, we will modify an existing tax calculation method that resides in the Application Foundation to account for discounts created in the Application Suite. The following class in the Foundation layer calculates the tax based on the gross total. 
 
-![SimpleTax class.](media/simple-tax.png)
+![The following class in the Foundation layer calculates the tax based on the gross total. ](media/simple-tax.png)
 
 In the Application Suite, we have introduced the notion of discounts by adding a ProductDiscount class that contains the current discount. 
 
@@ -116,7 +116,7 @@ Using the SubscribesTo keyword, we tie the applyDiscountDelegateHandler method a
 
 ##### SimpleTax class in the Application Foundation Layer
 
-![SimpleTax class.](media/simple-tax-full-code.png)
+![SimpleTax class in the Application Foundation Layer](media/simple-tax-full-code.png)
 
 ##### ProductDiscount class in the Application Suite layer
 
