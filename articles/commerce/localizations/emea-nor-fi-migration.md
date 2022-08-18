@@ -176,68 +176,14 @@ To disable the earlier Cloud POS extension, follow these steps.
 
 ### Update CRT (production)
 
-> [!NOTE]
-> You need to enable the CRT extensions only if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for Norway are enabled out of the box. However, you need to [enable Norway-specific features](./emea-nor-cash-registers.md#enable-features-for-Norway) instead.
-
 To update CRT, follow these steps.
 
 1. In the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder, remove the earlier CRT extension, as shown in the following example.
 
     ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
     <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
-    ```
-
-1. In the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder, make the following changes to enable the current sample CRT extensions.
-
-    ``` xml	
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsNorway" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsNorway" />
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
-    ```
-
-### Update Modern POS (production)
-
-> [!NOTE]
-> You need to enable the POS extensions only if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for Norway are enabled out of the box. However, you need to [enable Norway-specific features](./emea-nor-cash-registers.md#enable-features-for-Norway) instead.
-
-To update Modern POS, follow these steps.
-
-1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
-1. In the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder, add the following lines to enable the current sample POS extension.
-
-    ``` json
-    {
-        "baseUrl": "Microsoft/Receipts.FR"
-    }, 
-    {
-        "baseUrl": "Microsoft/FifAuditEvent.FR"
-    }, 
-    {
-        "baseUrl": "Microsoft/RestrictShiftDuration"
-    }
-    ```
-
-### Update Cloud POS (production)
-
-> [!NOTE]
-> You need to enable the POS extensions only if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for Norway are enabled out of the box. However, you need to [enable Norway-specific features](./emea-nor-cash-registers.md#enable-features-for-Norway) instead.
-
-To update Cloud POS, follow these steps.
-
-1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
-1. In the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder, add the following lines to enable the current sample POS extension.
-
-    ``` json
-    {
-        "baseUrl": "Microsoft/Receipts.FR"
-    }, 
-    {
-        "baseUrl": "Microsoft/FifAuditEvent.FR"
-    }, 
-    {
-        "baseUrl": "Microsoft/RestrictShiftDuration"
-    }
     ```
 
 ### Create deployable packages (production)
@@ -258,28 +204,23 @@ After a future update, you can remove the obsolete Retail Server and POS customi
 1. In the **CommerceRuntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** configuration files under the **RetailSdk\\Assets** folder, remove the earlier CRT extension.
 
     ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.CommonNorway" />
-    <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
-    <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureNorway" />
     <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
-    <add source="assembly" value="Contoso.Commerce.Runtime.DataSignatureKeyVaultSample" />
+    <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
     ```
 
 2. In the **Customization.settings** package customization configuration file under the **BuildTools** folder, remove the following lines to exclude the earlier sample CRT extension from the deployable packages.
 
     ``` xml
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.CommonNorway.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.ReceiptsNorway.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExt.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesPaymentTransExtNorway.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureNorway.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll" />
+    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SalesTransactionSignatureNorway.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.dll.config" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.SequentialSignatureRegister.Contracts.dll" />
     <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.XZReportsNorway.dll" />
-    <ISV_CommerceRuntime_CustomizableFile Include="$(SdkReferencesPath)\Contoso.Commerce.Runtime.DataSignatureKeyVaultSample.dll" />
     ```
 
 3. In the **ItemGroup** section, remove the following lines to exclude the Retail Server extension from the deployable packages.
@@ -302,27 +243,23 @@ After a future update, you can remove the obsolete Retail Server and POS customi
     - In the **tsconfig.json** file, add the following folders to the exclude list:
 
         - SalesTransactionSignatureSample
+        - SalesTransactionSignatureNorway
         - SequentialSignature
-        - AuditEventSignatureSample
-        - SalesTransBuildNumberSample
 
     - In the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder, remove the following lines.
 
         ``` json
         {
-            "baseUrl": "Microsoft/AuditEvent.FR"
+            "baseUrl": "Microsoft/AuditEvent.NO"
         },
         {
             "baseUrl": "SalesTransactionSignatureSample"
         },
         {
+            "baseUrl": "SalesTransactionSignatureNorway"
+        },
+        {
             "baseUrl": "SequentialSignature"
-        },
-        {
-            "baseUrl": "AuditEventSignatureSample"
-        },
-        {
-            "baseUrl": "SalesTransBuildNumberSample"
         }
         ```
 
@@ -334,27 +271,23 @@ After a future update, you can remove the obsolete Retail Server and POS customi
     - In the **tsconfig.json** file, add the following folders to the exclude list:
 
         - SalesTransactionSignatureSample
+        - SalesTransactionSignatureNorway
         - SequentialSignature
-        - AuditEventSignatureSample
-        - SalesTransBuildNumberSample
 
     - In the **extensions.json** file under the **RetailSDK\\POS\\Extensions** folder, remove the following lines.
 
         ``` json
         {
-            "baseUrl": "Microsoft/AuditEvent.FR"
+            "baseUrl": "Microsoft/AuditEvent.NO"
         },
         {
             "baseUrl": "SalesTransactionSignatureSample"
         },
         {
+            "baseUrl": "SalesTransactionSignatureNorway"
+        },
+        {
             "baseUrl": "SequentialSignature"
-        },
-        {
-            "baseUrl": "AuditEventSignatureSample"
-        },
-        {
-            "baseUrl": "SalesTransBuildNumberSample"
         }
         ```
 
