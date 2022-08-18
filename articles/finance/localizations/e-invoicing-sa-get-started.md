@@ -116,7 +116,7 @@ Some parameters must be configured directly in Finance. When tax invoices are cl
 
 For more information about business data configuration and processing in Finance, see [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md).
 
-# <a id="onboarding"></a>Electronic invoicing onboarding in Saudi Arabia
+## <a id="onboarding"></a>Electronic invoicing onboarding in Saudi Arabia
 Onboarding is mandatory for all taxpayers who are subject to electronic invoicing in Saudi Arabia. Taxpayers and their software for e-invoicing must be onboarded ZATCA. As a result of the onboarding process, taxpayers obtain CSIDs, which are required for integration with the electronic invoicing portal that is managed by ZATCA and for further submission of electronic invoices.
 
 Onboarding is an essential part of the Electronic invoicing configuration. For more information about the onboarding process, see [Electronic invoicing onboarding in Saudi Arabia](e-invoicing-sa-onboarding.md).
