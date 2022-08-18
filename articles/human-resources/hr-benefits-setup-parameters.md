@@ -28,7 +28,6 @@ ms.dyn365.ops.version: Human Resources
 
 [!INCLUDE [PEAP](../includes/peap-2.md)]
 
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Before you can set up benefit plans in Microsoft Dynamics 365 Human Resources, you must configure Benefits management parameters. These parameters set default values, reason codes, and other options. 
 
