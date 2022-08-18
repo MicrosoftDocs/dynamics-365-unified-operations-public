@@ -18,9 +18,9 @@ ms.search.validFrom: 2022-8-1
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to migrate from the [legacy digital signing solution](emea-nor-deployment.md) in the Microsoft Dynamics 365 Commerce localization for Norway to the solution that is based on the [Commerce fiscal integration framework](emea-nor-fi-deployment.md).
+This article explains how to migrate from the [legacy digital signing solution](./emea-nor-loc-deployment-guidelines.md) in the Microsoft Dynamics 365 Commerce localization for Norway to the solution that is based on the [Commerce fiscal integration framework](./emea-nor-fi-deployment.md).
 
-If you're using the [legacy digital signing solution for Norway](emea-nor-deployment.md), you must migrate to the [current Commerce fiscal integration solution](./emea-nor-fi-deployment.md) to uptake the changes and receive timely updates for Norway-specific features in the future. No major changes are required in the extension logic that you created. However, because this update is a major update, some of your customizations will stop working unless changes are made on your side. Therefore, you should plan, prepare for, and complete the uptake for your environment.
+If you're using the [legacy digital signing solution for Norway](./emea-nor-loc-deployment-guidelines.md) in Commerce version 10.0.28 or earlier, you must migrate to the [current Commerce fiscal integration solution](./emea-nor-fi-deployment.md) in version 10.0.29 or later to uptake the changes and receive timely updates for Norway-specific features in the future. No major changes are required in the extension logic that you created. However, because this update is a major update, some of your customizations will stop working unless changes are made on your side. Therefore, you should plan, prepare for, and complete the uptake for your environment.
 
 ## Migration process
 
@@ -31,9 +31,9 @@ To help prevent scenarios where an event or transaction is signed twice (by both
 To complete the migration process, follow these steps.
 
 1. Update the Commerce headquarters components.
-1. Update the Commerce Scale Unit components, and enable the extensions of the current solution.
-1. Update the POS components, and enable the extensions of the current solution.
-1. In Commerce headquarters, configure the fiscal integration functionality for Norway.
+1. Update the Commerce Scale Unit components, and disable the extensions of the legacy solution.
+1. Update the POS components, and disable the extensions of the legacy solution.
+1. In Commerce headquarters, [enable Norway-specific features](./emea-nor-cash-registers.md#enable-features-for-norway) and configure the fiscal integration functionality for Norway.
 1. Make sure that all offline transactions are uploaded from offline-enabled Modern POS devices to the channel database.
 1. Close shifts, and sign out of all POS devices.
 1. Adjust receipt formats so that they use updated custom fields.
@@ -45,7 +45,7 @@ To complete the migration process, follow these steps.
 
 ## Configure fiscal integration
 
-To configure the fiscal integration functionality for Norway, follow the steps in [Set up fiscal registration](./emea-nor-cash-registers.md#set-up-fiscal-registration) and [Configure the digital signature parameters](./emea-nor-cash-registers.md#configure-the-digital-signature-parameters).
+To configure the fiscal integration functionality for Norway, follow the steps in [Set up fiscal registration](./emea-nor-fi-deployment.md#set-up-fiscal-registration-for-norway)) and [Configure the digital signature parameters](./emea-nor-fi-deployment.md#configure-the-digital-signature-parameters).
 
 > [!IMPORTANT]
 > Don't enable fiscal integration on the **Commerce shared parameters** page at this point.
@@ -84,57 +84,12 @@ To update the Commerce runtime (CRT), follow these steps.
     > [!WARNING]
     > Do **not** edit the CommerceRuntime.config and CommerceRuntime.MPOSOffline.config files. These files aren't intended for any customizations.
 
-1. In the extension configuration file, find and remove the earlier CRT extension, as shown in the following example.
+1. In the extension configuration file, find and remove the legacy CRT extensions, as shown in the following example.
 
     ``` xml
+    <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
     <add source="assembly" value="Contoso.Commerce.Runtime.XZReportsNorway" />
-    ```
-
-1. In the extension configuration file, add the following lines to register the current sample CRT extensions.
-
-    ``` xml
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsNorway" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventNorway" />
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsNorway" />
-    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
-    ```
-
-### Update Modern POS (development)
-
-To update Modern POS, follow these steps.
-
-1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
-1. In the **extensions.json** file, add the following lines to enable the current sample POS extension.
-
-    ``` json
-    {
-        "baseUrl": "Microsoft/Receipts.FR"
-    }, 
-    {
-        "baseUrl": "Microsoft/FifAuditEvent.FR"
-    }, 
-    {
-        "baseUrl": "Microsoft/RestrictShiftDuration"
-    }
-    ```
-
-### Update Cloud POS (development)
-
-To update Cloud POS, follow these steps.
-
-1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
-1. In the **extensions.json** file, add the following lines to enable the current sample POS extension.
-
-    ``` json
-    {
-        "baseUrl": "Microsoft/Receipts.FR"
-    }, 
-    {
-        "baseUrl": "Microsoft/FifAuditEvent.FR"
-    }, 
-    {
-        "baseUrl": "Microsoft/RestrictShiftDuration"
-    }
     ```
 
 ### Remove obsolete customizations from the development environment after future updates
@@ -156,13 +111,10 @@ To remove the earlier CRT extensions, follow these steps.
 1. In the extension configuration file, find and remove the earlier CRT extensions, as shown in the following example.
 
     ``` xml
-    <add source="assembly" value="Contoso.Commerce.Runtime.CommonNorway" />
-    <add source="assembly" value="Contoso.Commerce.Runtime.ReceiptsNorway" />
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExt" />
     <add source="assembly" value="Contoso.Commerce.Runtime.SalesPaymentTransExtNorway" />
-    <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureNorway" />
     <add source="assembly" value="Contoso.Commerce.Runtime.SequentialSignatureRegister" />
-    <add source="assembly" value="Contoso.Commerce.Runtime.DataSignatureKeyVaultSample" />
+    <add source="assembly" value="Contoso.Commerce.Runtime.SalesTransactionSignatureNorway" />
     ```
 
 #### Remove the earlier Retail Server extension (development)
@@ -185,19 +137,16 @@ To disable the earlier Modern POS extension, follow these steps.
 
     ``` json
     {
-        "baseUrl": "Microsoft/AuditEvent.FR"
+        "baseUrl": "Microsoft/AuditEvent.NO"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
     },
     {
+        "baseUrl": "SalesTransactionSignatureNorway"
+    },
+    {
         "baseUrl": "SequentialSignature"
-    },
-    {
-        "baseUrl": "AuditEventSignatureSample"
-    },
-    {
-        "baseUrl": "SalesTransBuildNumberSample"
     }
     ```
 
@@ -210,25 +159,25 @@ To disable the earlier Cloud POS extension, follow these steps.
 
     ``` json
     {
-        "baseUrl": "Microsoft/AuditEvent.FR"
+        "baseUrl": "Microsoft/AuditEvent.NO"
     },
     {
         "baseUrl": "SalesTransactionSignatureSample"
     },
     {
+        "baseUrl": "SalesTransactionSignatureNorway"
+    },
+    {
         "baseUrl": "SequentialSignature"
-    },
-    {
-        "baseUrl": "AuditEventSignatureSample"
-    },
-    {
-        "baseUrl": "SalesTransBuildNumberSample"
     }
     ```
 
 ## Migration in a production environment
 
 ### Update CRT (production)
+
+> [!NOTE]
+> You need to enable the CRT extensions only if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for Norway are enabled out of the box. However, you need to [enable Norway-specific features](./emea-nor-cash-registers.md#enable-features-for-Norway) instead.
 
 To update CRT, follow these steps.
 
@@ -249,6 +198,9 @@ To update CRT, follow these steps.
 
 ### Update Modern POS (production)
 
+> [!NOTE]
+> You need to enable the POS extensions only if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for Norway are enabled out of the box. However, you need to [enable Norway-specific features](./emea-nor-cash-registers.md#enable-features-for-Norway) instead.
+
 To update Modern POS, follow these steps.
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
@@ -267,6 +219,9 @@ To update Modern POS, follow these steps.
     ```
 
 ### Update Cloud POS (production)
+
+> [!NOTE]
+> You need to enable the POS extensions only if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for Norway are enabled out of the box. However, you need to [enable Norway-specific features](./emea-nor-cash-registers.md#enable-features-for-Norway) instead.
 
 To update Cloud POS, follow these steps.
 
