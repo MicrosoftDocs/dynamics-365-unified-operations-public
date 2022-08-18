@@ -2,12 +2,12 @@
 # required metadata
 
 title: Tender-based discounts
-description: This article provides an overview of functionality that lets retailers configure discounts for specific tender types.
+description: This article describes tender-based discount functionality that lets retailers configure discounts for specific tender types in Microsoft Dynamics 365 Commerce.
 author: bebeale
 ms.date: 08/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: shajain
 ms.search.validFrom: 2018-10-31
@@ -18,6 +18,8 @@ ms.search.validFrom: 2018-10-31
 
 [!include [banner](includes/banner.md)]
 
+This article describes tender-based discount functionality that lets retailers configure discounts for specific tender types in Microsoft Dynamics 365 Commerce.
+
 It's a common practice among retailers to release private, branded credit cards. The retailers benefit because they get preferred rates from the banks. Additionally, because these credits cards can encourage customers to visit the store more often, they help improve the retailer's bottom line. Therefore, retailers have an incentive to increase customer use of their branded credit cards. To achieve this goal, they often provide additional discounts to customers who use these credit cards.
 
 Alternatively, retailers who don't provide branded credit cards might want to encourage customers to pay by using other tender types, such as cash, gift cards, or loyalty points. In this way, they can help reduce the expense of credit card processing fees. Therefore, retailers might provide discounts to customers who use these alternative tender types.
@@ -26,7 +28,7 @@ Alternatively, retailers who don't provide branded credit cards might want to en
 
 Commerce supports a *tender-based discount* that lets retailers configure a discount percentage that is applied to a transaction if the transaction total exceeds a certain amount and the customer pays by using the preferred payment type. The tender-based discount is tier-based so that different discount percentages can be associated with different amount thresholds. The customer can decide whether to do a partial payment or a full payment, and the pricing engine determines the appropriate discount amount. The tender-based discount is always given on the pre-tax amount of the sales lines.
 
-The tender-based discount can only be applied to sales lines where the prices aren't locked, and it is proportionally distributed to the qualified lines. If new sales lines are added to an order, the tender-based discount is only applied to the new sales lines during payment. When a customer order for pickup or delivery is being placed, the tender-based discount is only applied to the deposit amount. After the order is placed, during fulfillment the prices of the sales lines are locked. No tender-based discount is applied to any balance that is paid during pickup or authorized during shipment. The tender-based discount can only be applied to the whole amount of a customer order if the retailer collects the whole amount as a deposit while the order is being placed.
+The tender-based discount can only be applied to sales lines where the prices aren't locked, and it's proportionally distributed to the qualified lines. If new sales lines are added to an order, the tender-based discount is only applied to the new sales lines during payment. When a customer order for pickup or delivery is being placed, the tender-based discount is only applied to the deposit amount. After the order is placed, during fulfillment the prices of the sales lines are locked. No tender-based discount is applied to any balance that is paid during pickup or authorized during shipment. The tender-based discount can only be applied to the whole amount of a customer order if the retailer collects the whole amount as a deposit while the order is being placed.
 
 Tender-based discounts don't compete with item-based discounts such as simple discounts, quantity discounts, threshold discounts, mix and match discounts, or manual discounts. Tender-based discounts are always compounded over the item-based discounts, so even if an exclusive discount is applied to an item, the tender-based discount can still be applied on top of the exclusive discount. Likewise, if a threshold discount is applied to the transaction and the tender-based discount reduces the total below the threshold, the threshold discount is still applied to the transaction.
 
