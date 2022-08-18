@@ -104,6 +104,10 @@ The `<e-commerce tenant name>.dynamics365commerce.ms` endpoint does not support 
 To set up custom domains using a front door service or CDN, you have two options:
 
 - Set up a front door service like Azure Front Door to handle front-end traffic and connect to your Commerce environment. This provides greater control over domain and certificate management and more granular security policies.
+
+>[!NOTE]
+>If using an external CDN/frontdoor, please make sure the request is landing at the Commerce platform with the commerce provided hostname, but with X-Forwarded-Host: <custom-domain>. For example, if your Commerce endpoint is xyz.dynamics365commerce.ms and custom domain is www.fabrikam.com, the host header of the forwarded request should be xyz.dynamics365commerce.ms and header X-Forwarded-Host: www.fabrikam.com.
+
 - Use the Commerce-supplied Azure Front Door instance. This requires coordinating action with the Dynamics 365 Commerce team for domain verification and obtaining SSL certificates for your production domain.
 
 For information about how to set up a CDN service directly, see [Add support for a content delivery network (CDN)](add-cdn-support.md).
@@ -136,14 +140,18 @@ For existing/active domains:
 
 ## Apex domains
 
-The Commerce-supplied Azure Front Door instance does not support apex domains (root domains that do not contain subdomains). Apex domains require an IP address to resolve, and the Commerce Azure Front Door instance exists with virtual endpoints only. To use an apex domain, you have two options:
+The Commerce-supplied Azure Front Door instance does not support apex domains (root domains that do not contain subdomains). Apex domains require an IP address to resolve, and the Commerce Azure Front Door instance exists with virtual endpoints only. To use an apex domain, you have the following options:
 
 - **Option 1** - Use your DNS provider to redirect the apex domain to a "www" domain. For example, fabrikam.com redirects to `www.fabrikam.com` where `www.fabrikam.com` is the CNAME record that points to the Commerce-hosted Azure Front Door instance.
 
-- **Option 2** - Set up a CDN/front door instance on your own to host the apex domain.
+- **Option 2** - If your DNS provider supports alias record, then you can point the apex domain to the front door endpoint. This will make sure the IP change by front door gets reflected.
+  
+- **Option 3** - If your DNS provider doesn't support alias record, then you need to set up a CDN/front door instance on your own to host the apex domain.
 
 > [!NOTE]
 > If you are using Azure Front Door, you must also set up an Azure DNS in the same subscription. The apex domain hosted on Azure DNS can point to your Azure Front Door as an alias record. This is the only work around, as apex domains must always point to an IP address.
+  
+If you have any questions regarding Apex domains, please reach out to Microsoft Support.
 
   ## Additional resources
 
