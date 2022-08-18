@@ -45,7 +45,7 @@ To complete the migration process, follow these steps.
 
 ## Configure fiscal integration
 
-To configure the fiscal integration functionality for Norway, follow the steps in [Set up fiscal registration](./emea-nor-fi-deployment.md#set-up-fiscal-registration-for-norway)) and [Configure the digital signature parameters](./emea-nor-fi-deployment.md#configure-the-digital-signature-parameters).
+To configure the fiscal integration functionality for Norway, follow the steps in [Set up fiscal registration](./emea-nor-fi-deployment.md#set-up-fiscal-registration-for-norway) and [Configure the digital signature parameters](./emea-nor-fi-deployment.md#configure-the-digital-signature-parameters).
 
 > [!IMPORTANT]
 > Don't enable fiscal integration on the **Commerce shared parameters** page at this point.
