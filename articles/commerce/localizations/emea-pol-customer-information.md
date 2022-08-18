@@ -24,7 +24,7 @@ This article describes how you can handle customer information, such as the cust
 
 You can specify the customer's VAT number when you create or edit a customer master record in POS. You can also specify a VAT number for a sales transaction by copying it from the transaction customer or entering it manually. The customer information can then be printed on both regular and fiscal receipts, and it can be used for invoicing purposes.
 
-> [!WARNING]
+> [!IMPORTANT]
 > It isn't possible to specify a VAT number for a customer in POS when **Create customer in async mode** is enabled in the POS functionality profile. Support for the async customer creation mode may be added in future updates.
 
 ## Setup
@@ -40,7 +40,7 @@ You must complete the following configuration steps to use this functionality:
 
 ### Enable the customer information management feature for Poland
 
-You must enable the following feature in the **Feature management** workspace: **(Poland) Customer information management in Retail POS**.
+You must enable the **(Poland) Customer information management in Retail POS** feature in the **Feature management** workspace.
 
 ### Set up a registration type for the VAT number
 
@@ -59,7 +59,7 @@ On the **Button grids** page, select the button grid where the operation should 
 
 If the customer information isn't specified for a sales transaction, an inquiry for that information can be triggered automatically after the transaction is finalized. This approach is an alternative to the **Add customer information** operation.
 
-To activate the inquiry for customer information in Commerce headquarters, in the **Tax parameters** section of the **Functions** FastTab on the **POS functionality profiles** page, set the **Enable inquiry of customer information in sales transactions** option to **Yes**.
+To activate the inquiry for customer information in Commerce headquarters, on the **POS functionality profiles** page, on the **Functions** FastTab, in the **Tax parameters** section, set the **Enable inquiry of customer information in sales transactions** option to **Yes**.
 
 ### Set up receipt formats
 
@@ -84,8 +84,8 @@ In the Receipt format designer, add the custom field to the appropriate receipt 
 
 ### Configure channel components
 
-> [!WARNING]
-> You should only implement the steps that are described in this section if you are using Commerce version 10.0.28 or earlier. Starting with Commerce version 10.0.29, all Commerce channel components that are required to activate customer information management for Poland are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to version 10.0.29 or later](#migrate-to-commerce-version-10029-or-later).
+> [!IMPORTANT]
+> You should implement the steps that are described in this section only if you're using Microsoft Dynamics 365 Commerce version 10.0.28 or earlier. As of Commerce version 10.0.29, all Commerce channel components that are required to activate customer information management for Poland are enabled out of the box. If you're using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to version 10.0.29 or later](#migrate-to-commerce-version-10029-or-later).
 
 To make the functionality that is specific to Poland available, you must configure extensions for channel components. For more information, see the [Deployment guidelines](#deployment-guidelines) section later in this article.
 
@@ -134,8 +134,8 @@ The following example scenarios show how to work with customer information in PO
 
 ## Deployment guidelines
 
-> [!WARNING]
-> You should only implement the steps that are described in this section if you are using Commerce version 10.0.28 or earlier. Starting with Commerce version 10.0.29, all Commerce channel components that are required to activate customer information management for Poland are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to the Commerce version 10.0.29 or later, you must follow the steps in [Migrate to version 10.0.29 or later](#migrate-to-commerce-version-10029-or-later).
+> [!IMPORTANT]
+> You should implement the steps that are described in this section only if you're using Commerce version 10.0.28 or earlier. As of Commerce version 10.0.29, all Commerce channel components that are required to activate customer information management for Poland are enabled out of the box. If you're using Commerce version 10.0.28 or earlier and are migrating to the Commerce version 10.0.29 or later, you must follow the steps in [Migrate to version 10.0.29 or later](#migrate-to-commerce-version-10029-or-later).
 
 This section provides deployment guidance for enabling customer information management in the localization of Dynamics 365 Commerce for Poland.
 
@@ -171,7 +171,7 @@ Follow these steps to update a development environment.
 Follow these steps to make the TaxRegistrationId.PL extension available.
 
 1. Open the solution at **RetailSdk\\POS\\ModernPOS.sln**.
-1. In **POS.Extensions\\extensions.json**, turn on the extension.
+1. In the **POS.Extensions\\extensions.json** file, turn on the extension.
 
     ``` json
     {
@@ -191,7 +191,7 @@ Follow these steps to make the TaxRegistrationId.PL extension available.
 Follow these steps to make the TaxRegistrationId.PL extension available.
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
-1. In **POS.Extensions\\extensions.json**, turn on the extension.
+1. In the **POS.Extensions\\extensions.json** file, turn on the extension.
 
     ``` json
     {
@@ -233,14 +233,13 @@ Follow these steps to create deployable packages that contain Commerce component
 
 ## Migrate to Commerce version 10.0.29 or later
 
-The steps described in this section are required if you are using Commerce version 10.0.28 or earlier and are migrating to version 10.0.29 or later. You must follow the steps below to correctly update your Commerce environment.
+The steps described in this section are required if you're using Commerce version 10.0.28 or earlier and are migrating to version 10.0.29 or later. You must follow these steps to correctly update your Commerce environment.
 
 1. Update Commerce headquarters.
-1. Enable [Poland-specific features](#enable-the-customer-information-management-feature-for-poland) in the **Feature management** workspace and distribute the changes to channels.
-1. Update Commerce runtime, Cloud POS, and Modern POS, and exclude the following legacy Poland-specific extensions:
-    1. Commerce runtime extensions in the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** files:
-        - Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdPoland
-    1. POS extensions in the **extensions.json** file:
-        - Microsoft/TaxRegistrationId.PL
+1. Enable [Poland-specific features](#enable-the-customer-information-management-feature-for-poland) in the **Feature management** workspace, and distribute the changes to channels.
+1. Update CRT, Cloud POS, and Modern POS, and exclude the following legacy Poland-specific extensions:
+
+    1. In the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** files, exclude the **Microsoft.Dynamics.Commerce.Runtime.TaxRegistrationIdPoland** CRT extension.
+    1. In the **extensions.json** file, exclude the **Microsoft/TaxRegistrationId.PL** POS extension.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
