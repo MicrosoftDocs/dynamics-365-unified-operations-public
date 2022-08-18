@@ -36,7 +36,7 @@ This article provides an overview of the shipping discount capability available 
 
 Free or discounted shipping is one of the highly influencing factors driving the customers' online purchase decisions. Many retailers also leverage the free shipping benefit to motivate the customers to increase their basket size, thus increasing the revenue per transaction. 
 
-Commerce supports shipping discount that lets retailers configure a discount percentage that is applied to the shipping charge for specific shipping method when qualified items in the transaction meet certain amount threshold. For example, spend $50 or more to get free "Overnight shipping".
+Commerce supports shipping discount that lets retailers configure discount percentage on shipping charge for specific shipping method when the total sales amount of qualified items in the transaction meet certain criteria. For example, spend $50 or more to get free "Overnight shipping".
 
 ## Prerequisite
 
@@ -46,9 +46,7 @@ Shipping discount leverages the [Omni-channel advanced auto charges](/dynamics36
 
 ## Configuration
 
-Shipping discount only supports **Percentage off** calculation type, and is tier-based. To set up a shipping discount, in Commerce headquarters, go to **Pricing and discounts \> Shipping threshold discount**, and **New** a discount there. You can specify the mode of delivery (such as "Standard overnight" or "Two-day shipping") for which this discount applies, define one or more amount thresholds, and set the discount percentage for each threshold. You can also configure a list of categories or products as qualified items, so that only sales amount against those items in a transaction are counted when the pricing engine evaluates whether the transaction total meets the threshold.
-
-Like other discount types, shipping discount honors all the existing standard discount capabilities, such as allowing the retailer to restrict the discounts with coupons so that only the customers with coupons can get the discounts. Also, these discounts leverage the Price groups capability to determine the eligibility of the discount. For example, the retailer can choose to run these promotions only in the online channels and/or across channels for certain customer groups such as loyalty customers. Lastly, to view the charges applied on the sales lines and the applied promotion, you need to add **Manage charges** on the POS screen. Run the **1020**, **1040**, **1090**, and **1110** distribution schedules to send the charges, shipping discount, and screen layout information to the channels. 
+Shipping discount only supports **Percentage off** calculation type, and is tier-based. To set up a shipping discount, go to **Pricing and discounts \> Shipping threshold discount** in Commerce headquarters. You can specify the mode of delivery for which this discount applies, define one or more amount thresholds, and set the discount percentage for each threshold. You can also configure a list of categories or products as qualified items, so that only sales amount against those items in a transaction are counted when the pricing engine evaluates whether the transaction total meets the threshold.
 
 > [!NOTE]
 > Unlike other discount types, the shipping discount does not create discount lines. Instead, the shipping discount edits the shipping charge directly and appends the name of the discount to the charge description. 
