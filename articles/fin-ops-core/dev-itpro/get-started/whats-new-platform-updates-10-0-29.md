@@ -63,6 +63,11 @@ The following table lists features that are now mandatory or turned on by defaul
 | System administration | Streamline tabbing behavior in full-page forms | On by default |
 | System administration | Optimize loading of Action center notifications | On by default |
 
+### New table metadata property
+
+A new **Allow row version change tracking** metadata property has been added for the table. Default value is No, and at this time no Out-Of-Box tables are set to Yes.
+The property is currently only used for private preview for a new capability. We ask you to not set value to Yes for any table now. 
+
 ### Bug fixes
 
 For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=726559&dbType=3&qc=ec3e3846199f5d3a27a0c4949e3902ffdbc87560f0cf928c4838b3bdd421633c).
