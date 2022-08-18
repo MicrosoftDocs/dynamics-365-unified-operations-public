@@ -1,7 +1,7 @@
 ---
 title: Trial balance with transactional detail report
 description: This article describes the default report for trial balances. It also describes the building blocks that are associated with this report and how you can modify the report to fit your business requirements.
-author: v-kiarnd
+author: TaylorVH
 ms.date: 10/24/2019
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: v-kiarnd
+ms.author: TaylorVH
 ms.search.validFrom: 2019-10-24
 ms.dyn365.ops.version: 10.0.13
 ms.search.industry: public sector
