@@ -108,6 +108,7 @@ To update the Commerce runtime (CRT), follow these steps.
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsFrance" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventFrance" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
     ```
 
 ### Update Modern POS (development)
@@ -123,6 +124,9 @@ To update Modern POS, follow these steps.
     }, 
     {
         "baseUrl": "Microsoft/FifAuditEvent.FR"
+    }, 
+    {
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     }
     ```
 
@@ -139,6 +143,9 @@ To update Cloud POS, follow these steps.
     }, 
     {
         "baseUrl": "Microsoft/FifAuditEvent.FR"
+    }, 
+    {
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     }
     ```
 
@@ -249,6 +256,7 @@ To update CRT, follow these steps.
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.ReceiptsFrance" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventFrance" />
     <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance" />
+    <add source="assembly" value="Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration" />
     ```
 
 ### Update Modern POS (production)
@@ -264,6 +272,9 @@ To update Modern POS, follow these steps.
     }, 
     {
         "baseUrl": "Microsoft/FifAuditEvent.FR"
+    }, 
+    {
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     }
     ```
 
@@ -280,6 +291,9 @@ To update Cloud POS, follow these steps.
     }, 
     {
         "baseUrl": "Microsoft/FifAuditEvent.FR"
+    }, 
+    {
+        "baseUrl": "Microsoft/RestrictShiftDuration"
     }
     ```
 
