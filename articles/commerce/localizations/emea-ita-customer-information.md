@@ -94,7 +94,7 @@ On the **Commerce parameters** page, on the **POS search criteria** tab, add a n
 ### Configure channel components
 
 > [!IMPORTANT]
-> You should implement the steps that are described in this section only if you're using Microsoft Dynamics 365 Commerce version 10.0.28 or earlier. As of version 10.0.29, all required Commerce channel components for Italy are enabled out of the box. If you're using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](#migrate-to-commerce-version-10029-or-later).
+> You should implement the steps that are described in this section only if you're using Microsoft Dynamics 365 Commerce version 10.0.28 or earlier. As of version 10.0.29, all required Commerce channel components for Italy are enabled out of the box. If you're using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](#migrate-to-version-10029-or-later).
 
 To make the functionality that is specific to Italy available, you must configure extensions for commerce channel components. For more information, see the [Deployment guidelines](#deployment-guidelines) section later in this article.
 
@@ -144,7 +144,7 @@ The following example scenarios show how to work with customer information in PO
 ## Deployment guidelines
 
 > [!IMPORTANT]
-> You should implement the steps that are described in this section only if you're using Commerce version 10.0.28 or earlier. As of version 10.0.29, all required Commerce channel components for Italy are enabled out of the box. If you're using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](#migrate-to-commerce-version-10029-or-later).
+> You should implement the steps that are described in this section only if you're using Commerce version 10.0.28 or earlier. As of version 10.0.29, all required Commerce channel components for Italy are enabled out of the box. If you're using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](#migrate-to-version-10029-or-later).
 
 This section provides deployment guidance for enabling customer information management in the localization of Commerce for Italy.
 
