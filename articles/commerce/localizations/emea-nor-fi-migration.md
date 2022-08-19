@@ -9,7 +9,7 @@ ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Norway
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 2022-8-1
 
 ---
