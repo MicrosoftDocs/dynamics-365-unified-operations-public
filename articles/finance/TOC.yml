@@ -1966,6 +1966,8 @@
             href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
           - name: Move NF-e XML files as attachments
             href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
+          - name: NT2021.004 – Layout and validation updates in the electronic fiscal document (NF-e)
+            href: localizations/latam-bra-nfe-nt2021.004.md
           - name: NT2020.005 – Layout and validation updates in the electronic fiscal document (NF-e)
             href: localizations/latam-bra-nfe-nt2020.005.md
           - name: NT2020.006 – Intermediary sales digital platform for NF-e
