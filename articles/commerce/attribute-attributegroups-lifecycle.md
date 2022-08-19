@@ -71,8 +71,8 @@ Attributes are based on *attribute types*. The attribute type identifies the typ
 
 1. Sign in to the back-office client as a merchandising manager.
 2. Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attributes**.
-3. Create an attribute that is named **Lens**.
-4. Set the **Attribute type** field to **Lens shape**.
+3. Create an attribute that is named **Bag type**.
+4. Set the **Attribute type** field to **Bag type**.
 
 ![Attributes](media/Attribute_2022Series.png)
 
@@ -265,29 +265,48 @@ The default values of attributes can be overridden for individual products at th
     - Channel media
     - Channel product attributes
 
-### Override the attribute values for specific product variants in a channel
+### Define variant specific attribute values and define multiple values for product attributes
 
 1. Sign in to the back-office client as a merchandising manager.
 2. Go to **Retail and Commerce** &gt; **Channel setup** &gt; **Channel categories and product attributes**.
 3. Select the **Houston** channel.
-4. On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.
+4. On the **Products** FastTab, select the required product variant, and then select **Attributes** above the product grid.
 5. If no products are available, add products by selecting **Add** on the **Products** FastTab and then selecting the required product variants in the **Add products** dialog box.
 6. On the following FastTabs, update the values of the required attributes:
     - Shared product media
     - Shared product attributes
     - Channel media
     - Channel product attributes
-7. 	Example – 
+    
+7. Example – 
 		
-    P001 is a ‘Basic Geometric Shape Printed Shirt’ and it has 3 variants – S, M, L. And for each variant you want to define ‘Print’ attribute value uniquely – which can be done through ‘Channel categories and product attributes’ form, from 'Products' fast-tab for your channel and 
+    P001 is a ‘Multi-activity Shoe’ and it has 3 variants – _Running, Walking, Trekking_. And for each variant you want to define ‘Activity’ attribute value uniquely – which can be done through ‘Channel categories and product attributes’ form, from 'Products' fast-tab for your channel and 
 
-    - P001-Master : Print – Geometry
-    - P001-S : Print - Square
-    - P001-M: Print – Circle 
-    - P001-L : Print – Triangle
+    - P001-Master : Activity – Sports 
+    - P001-1 : Activity - Running
+    - P001-2 : Activity – Walking 
+    - P001-3 : Activity – Trekking
 
-> [!NOTE]
-> When a user were to search for ‘Shirt’ – it would certainly list P001 among search results and if you had chosen ‘Print’ to be refinable as well then ‘Print’ refiner would ONLY list ‘Geometry’ as a refinable value, considering that’s defined for ‘Print’ attribute at ‘P001-Master’
+Now, when a user were to search for ‘Shoe’ – it would certainly list P001 among search results and if you had chosen ‘Activity’ to be refinable as well then ‘Activity’ refiner would ONLY list ‘Sports’ as a refinable value, considering that’s defined for ‘Activity’ attribute at ‘P001-Master’
+
+Then, what about the attributes that are defined at a variant level? How can those values show up among refiners? 
+
+Default experience – variant-level attribute are only intended for PDP (Product details page) – as you select a specific variant, product specifications are updated for that specific product variant. 
+ 
+But, for refiners to show values defined at a product variant level – You would need to define an attribute at a product master level with **‘Allow multiple values’** checked on attribute definition of type ‘TEXT’. 
+ 
+Next, you would need to determine all possible values for your product variants. To continue with the example of ‘Activity’ – there shall be following possible values for the attribute : Running, Walking, Hiking, Trekking, Camping, Watersports, Snowsports, etc. 
+ 
+Once you have determined those values – you can define that on a Product master level with a pipe-separated-value.  In the above example – ‘Activity’ on product master would have to be defined as following – ‘Running|Walking|Hiking|Trekking|Camping|Watersports|Snowsports’
+
+Mark this attribute as refinable 
+
+And now on each variant you can either define values for this attribute to be either pipe-separated or single values. In the above example – ‘Activity’ on individual product variant could be – ‘Running|Walking|Hiking’ or ‘Running’ or ‘Running|Hiking|Watersports’ etc. 
+ 
+‘Publish channel updates’ from ‘Channel categories and product attributes’ and run 1150, 1040 and 1070 jobs. 
+
+Upon successful completion of the job and updates to the ‘search index’ – all expected values will show among the search results and category browsing results. 
+
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
