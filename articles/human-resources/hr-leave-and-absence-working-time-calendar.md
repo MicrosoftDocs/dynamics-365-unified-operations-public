@@ -30,9 +30,6 @@ ms.dyn365.ops.version: Human Resources
 # Create a working time calendar
 
 
-> [!Important]
-> The functionality noted in this article is currently available for customers on the stand-alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.26.
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 A working time calendar in Dynamics 365 Human Resources shows the days and hours that employees work in your organization. When an employee submits a time-off request, they don't have to worry about holidays and closures.
