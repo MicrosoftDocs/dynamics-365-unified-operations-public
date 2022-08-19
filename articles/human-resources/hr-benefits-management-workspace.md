@@ -29,9 +29,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Benefits management workspace
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 [!include [preview feature](./includes/preview-feature.md)]
 
 This article describes the **Benefits management** workspace in Dynamics 365 Human Resources.

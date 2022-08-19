@@ -29,9 +29,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure employee self service
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 In Microsoft Dynamics 365 Human Resources, you can configure tiles for top-level navigation in **Employee self service**. Benefit plan tiles direct users to benefit plans that they're eligible for.

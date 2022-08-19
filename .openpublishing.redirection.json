@@ -19746,6 +19746,11 @@
       "source_path": "articles/supply-chain/warehousing/tasks/set-up-manual-packing-2016-02-05.md",
       "redirect_url": "/dynamics365/supply-chain/troubleshooting/warehousing/packing-containers",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/tender_based_discounts.md",
+      "redirect_url": "/dynamics365/commerce/tender-based-discounts",
+      "redirect_document_id": "false"
     }
   ]
 }
