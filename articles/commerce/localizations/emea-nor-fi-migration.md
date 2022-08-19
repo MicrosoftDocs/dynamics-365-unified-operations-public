@@ -20,19 +20,19 @@ ms.search.validFrom: 2022-8-1
 
 This article explains how to migrate from the [legacy digital signing solution](./emea-nor-loc-deployment-guidelines.md) in the Microsoft Dynamics 365 Commerce localization for Norway to the solution that is based on the [Commerce fiscal integration framework](./emea-nor-fi-deployment.md).
 
-If you're using the [legacy digital signing solution for Norway](./emea-nor-loc-deployment-guidelines.md) in the Commerce version 10.0.28 or earlier, you must migrate to the [current Commerce fiscal integration solution](./emea-nor-fi-deployment.md) in the version 10.0.29 or later to uptake the changes and receive timely updates for Norway-specific features in the future. No major changes are required in the extension logic that you created. However, because this update is a major update, some of your customizations will stop working unless changes are made on your side. Therefore, you should plan, prepare for, and complete the uptake for your environment.
+If you're using the [legacy digital signing solution for Norway](./emea-nor-loc-deployment-guidelines.md) in Commerce version 10.0.28 or earlier, you must migrate to the [current Commerce fiscal integration solution](./emea-nor-fi-deployment.md) in Commerce version 10.0.29 or later to uptake the changes and receive timely updates for future Norway-specific features. No major changes are required in the extension logic that you created. However, because this update is a major update, some of your customizations will stop working unless changes are made on your side. Therefore, you should plan, prepare for, and complete the uptake for your environment.
 
 ## Migration process
 
-The migration process from the legacy digital signing solution to the current fiscal integration solution is based on the concept of a gradual update. In other words, all Commerce headquarters and Commerce Scale Unit components should already be updated before you start to update the point of sale (POS).
+The migration process from the legacy digital signing solution to the current fiscal integration solution is based on the concept of a gradual update. In other words, all Commerce headquarters and Commerce Scale Unit (CSU) components should already be updated before you start to update the point of sale (POS).
 
-To help prevent scenarios where an event or transaction is signed twice (by both the legacy extension and the current extension), or where an event or transaction can't be signed because of incorrect or incomplete configuration, we recommend that you turn off all POS devices that use the legacy solution and then update all of them simultaneously. For example, you can do this simultaneous update on a store-by-store basis, by updating each store's functionality profile.
+To help prevent scenarios where an event or transaction is signed twice (by both the legacy extension and the current extension), or where an event or transaction can't be signed because of an incorrect or incomplete configuration, it is recommended that you turn off all POS devices that use the legacy solution and then update all of them simultaneously. For example, you can do this simultaneous update on a store-by-store basis, by updating each store's functionality profile.
 
 To complete the migration process, follow these steps.
 
 1. Update the Commerce headquarters components.
 1. In Commerce headquarters, [configure the fiscal integration functionality for Norway](#configure-fiscal-integration).
-1. Make sure that all offline transactions are uploaded from offline-enabled Modern POS devices to the channel database.
+1. Ensure that all offline transactions are uploaded from offline-enabled Modern POS devices to the channel database.
 1. Close shifts, and sign out of all POS devices.
 1. Update the Commerce Scale Unit components.
 1. Update the POS components.
@@ -47,7 +47,7 @@ To complete the migration process, follow these steps.
 To configure the fiscal integration functionality for Norway, follow the steps in [Set up fiscal registration](./emea-nor-fi-deployment.md#set-up-fiscal-registration-for-norway) and [Configure the digital signature parameters](./emea-nor-fi-deployment.md#configure-the-digital-signature-parameters).
 
 > [!IMPORTANT]
-> Don't enable fiscal integration on the **Commerce shared parameters** page at this point.
+>  At this point don't enable fiscal integration on the **Commerce shared parameters** page.
 
 ### Adjust receipt formats
 
