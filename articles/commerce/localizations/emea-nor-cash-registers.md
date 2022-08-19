@@ -4,7 +4,7 @@
 title: Cash register functionality for Norway
 description: This article provides an overview of the cash register functionality that is available for Norway in Microsoft Dynamics 365 Commerce, and provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 08/16/2022
+ms.date: 08/19/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -116,10 +116,10 @@ You must also specify the following settings for Norway.
 
 ### Enable features for Norway
 
-You must enable the following features in the **Feature management** workspace:
+You must enable the following features in the **Feature management** workspace of Commerce headquarters:
 
-- (Norway) Enable additional audit events in POS
-- (Norway) Enable additional information in end-of-day statements in POS
+- **(Norway) Enable additional audit events in POS**
+- **(Norway) Enable additional information in end-of-day statements in POS**
 
 ### Set up the legal entity
 
