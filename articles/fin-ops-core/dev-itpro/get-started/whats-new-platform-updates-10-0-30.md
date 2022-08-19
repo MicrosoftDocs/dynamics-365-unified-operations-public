@@ -31,39 +31,12 @@ The following table lists the features that are included in this release.
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 | Module or feature area | [Name of feature](URL to feature description in the Release Plans)  | [Article name](URL to article with more information in core documentation) | How do you turn this feature on? If you turn it on in Feature management, say: [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
-| Module or feature area | <p>**User-based service protection API limits**</p><p>User-based service protection API limits help protect system performance and availability from harm by individual users or integrations. The limits are designed to protect the service when client applications make extraordinary demands on server resources through integrations with Open Data Protocol (OData) or custom service APIs.</p><p>In this release, the feature is optional and is disabled by default. In version 10.0.30, the user-based API limits will be enabled by default but can optionally be disabled. The feature is targeted to become mandatory in version 10.0.33.</p> | [Service protection API limits](../data-entities/service-protection-api-limits.md) | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
-| Module or feature area | <p>**Extended grid aggregation capabilities**</p><p>This feature extends the current "totals" feature in the grid by letting users select one of four aggregation functions for each numeric column. Grid columns can now be configured to show the minimum value, maximum value, or average value in addition to a total. If grouping has been done in the grid, the selected aggregation function for the column will also be shown for each group.</p> | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md) | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
-
-## Features that are mandatory or turned on by default with this release
-
-The following table lists features that are now mandatory or turned on by default in this release. For more details see [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md).
-
-| Module or feature area | Feature name | Feature state |
-| --- | --- | --- |
-| Data management | Execution history cleanup | On by default | 
-| System administration | Customer and vendor master data sharing | Mandatory |
-| System administration | Saved views | Mandatory |
-| System administration | Designate fields as required using personalization | Mandatory |
-| System administration | Translation support for organization views | Mandatory |
-| System administration | Improved legal entity support for saved views | Mandatory |
-| System administration | Saved views support for dialogs | On by default |
-| System administration | Allow queries to be saved to views on Task Single and Task Double pages | On by default |
-| System administration | Full pages apps | Mandatory |
-| System administration | Allow users to select and change tile sizes | On by default |
-| System administration | New grid control | Mandatory |
-| System administration | Grouping in grids | Mandatory |
-| System administration | Freezing columns in grids | Mandatory |
-| System administration | Align combo box interactions with lookup controls | Mandatory |
-| System administration | Allow admins to select default document types | Mandatory |
-| System administration | Allow configuration of the publish batch size in the Excel add-in | Mandatory |
-| System administration | Visual update for wizards | Mandatory |
-| System administration | Upgrade to jQuery UI 1.13.0 | Mandatory |
-| System administration | Streamline tabbing behavior in full-page forms | On by default |
-| System administration | Optimize loading of Action center notifications | On by default |
+| Module or feature area | [Name of feature](URL to feature description in the Release Plans)  | [Article name](URL to article with more information in core documentation) | How do you turn this feature on? If you turn it on in Feature management, say: [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
+| Module or feature area | [Name of feature](URL to feature description in the Release Plans)  | [Article name](URL to article with more information in core documentation) | How do you turn this feature on? If you turn it on in Feature management, say: [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=726559&dbType=3&qc=ec3e3846199f5d3a27a0c4949e3902ffdbc87560f0cf928c4838b3bdd421633c).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://lcs.dynamics.com/).
 
 ### Dynamics 365: 2022 release wave 2 plan
 
