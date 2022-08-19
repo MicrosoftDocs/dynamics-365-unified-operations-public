@@ -43,6 +43,9 @@ To help prevent scenarios where an event or transaction is signed twice (by both
 To complete the migration process, follow these steps.
 
 1. Update the Commerce headquarters components.
+1. In Commerce headquarters, [configure the fiscal integration functionality for France](#configure-fiscal-integration).
+1. Make sure that all offline transactions are uploaded from offline-enabled Modern POS devices to the channel database.
+1. Close shifts, and sign out of all POS devices.
 1. Update the Commerce Scale Unit components, and enable the extensions of the current solution.
 1. Update the POS components, and enable the extensions of the current solution.
 
@@ -51,9 +54,6 @@ To complete the migration process, follow these steps.
     >
     > - Depending on the type of environment, you can find more technical details about the migration process in either the [Migration in a development environment](#migration-in-a-development-environment) section of this article or the [Migration in a production environment](#migration-in-a-production-environment) section.
 
-1. In Commerce headquarters, [configure the fiscal integration functionality for France](#configure-fiscal-integration).
-1. Make sure that all offline transactions are uploaded from offline-enabled Modern POS devices to the channel database.
-1. Close shifts, and sign out of all POS devices.
 1. [Adjust receipt formats](#adjust-receipt-formats) so that they use updated custom fields.
 1. [Enable the fiscal integration functionality](#enable-fiscal-integration).
 1. Restart the POS.
