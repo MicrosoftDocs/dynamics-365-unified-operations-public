@@ -29,9 +29,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure leave and absence types
 
-> [!Important]
-> The functionality noted in this article is currently available for customers on the stand-alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.26.
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Leave types in Dynamics 365 Human Resources define the types of absences that employees can report. You can tailor leave types according to the needs of your organization. Examples of leave types include:
