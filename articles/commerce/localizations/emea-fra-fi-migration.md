@@ -5,7 +5,7 @@ title: Migrate from legacy Commerce functionality for France
 description: This article explains how to migrate from the legacy digital signing solution in the Microsoft Dynamics 365 Commerce localization for France to the solution that is based on the Commerce fiscal integration framework.
 author: EvgenyPopovMBS
 manager: annbe
-ms.date: 08/18/2022
+ms.date: 08/19/2022
 ms.topic: article
 ms.prod:
 
@@ -47,17 +47,16 @@ To complete the migration process, follow these steps.
 1. Update the POS components, and enable the extensions of the current solution.
 
     > [!NOTE]
-    > You need to enable the Commerce runtime (CRT) and POS extensions only if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. However, you need to [enable France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) instead.
+    > - You need to enable the Commerce runtime (CRT) and POS extensions only if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. However, you need to [enable France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) instead.
+    >
+    > - Depending on the type of environment, you can find more technical details about the migration process in either the [Migration in a development environment](#migration-in-a-development-environment) section of this article or the [Migration in a production environment](#migration-in-a-production-environment) section.
 
-1. In Commerce headquarters, configure the fiscal integration functionality for France.
+1. In Commerce headquarters, [configure the fiscal integration functionality for France](#configure-fiscal-integration).
 1. Make sure that all offline transactions are uploaded from offline-enabled Modern POS devices to the channel database.
 1. Close shifts, and sign out of all POS devices.
-1. Adjust receipt formats so that they use updated custom fields.
-1. Enable the fiscal integration functionality.
+1. [Adjust receipt formats](#adjust-receipt-formats) so that they use updated custom fields.
+1. [Enable the fiscal integration functionality](#enable-fiscal-integration).
 1. Restart the POS.
-
-> [!NOTE]
-> Depending on the type of environment, you can find more technical details about the migration process in either the [Migration in a development environment](#migration-in-a-development-environment) section of this article or the [Migration in a production environment](#migration-in-a-production-environment) section.
 
 ## Configure fiscal integration
 
@@ -88,10 +87,10 @@ When you're ready to enable the fiscal integration functionality in Commerce hea
 
 ## Migration in a development environment
 
-### Update the Commerce runtime (development)
-
 > [!NOTE]
-> You need to enable the CRT extensions only if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. However, you need to [enable France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) instead.
+> You should only implement the steps that are described in this section if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. However, you need to [enable France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) instead.
+
+### Update the Commerce runtime (development)
 
 To update the Commerce runtime (CRT), follow these steps.
 
@@ -120,9 +119,6 @@ To update the Commerce runtime (CRT), follow these steps.
 
 ### Update Modern POS (development)
 
-> [!NOTE]
-> You need to enable the POS extensions only if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. However, you need to [enable France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) instead.
-
 To update Modern POS, follow these steps.
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
@@ -141,9 +137,6 @@ To update Modern POS, follow these steps.
     ```
 
 ### Update Cloud POS (development)
-
-> [!NOTE]
-> You need to enable the POS extensions only if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. However, you need to [enable France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) instead.
 
 To update Cloud POS, follow these steps.
 
@@ -253,10 +246,10 @@ To disable the earlier Cloud POS extension, follow these steps.
 
 ## Migration in a production environment
 
-### Update CRT (production)
-
 > [!NOTE]
-> You need to enable the CRT extensions only if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. However, you need to [enable France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) instead.
+> You should only implement the steps that are described in this section if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. However, you need to [enable France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) instead.
+
+### Update CRT (production)
 
 To update CRT, follow these steps.
 
@@ -277,9 +270,6 @@ To update CRT, follow these steps.
 
 ### Update Modern POS (production)
 
-> [!NOTE]
-> You need to enable the POS extensions only if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. However, you need to [enable France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) instead.
-
 To update Modern POS, follow these steps.
 
 1. Open the solution at **RetailSdk\\POS\\CloudPOS.sln**.
@@ -298,9 +288,6 @@ To update Modern POS, follow these steps.
     ```
 
 ### Update Cloud POS (production)
-
-> [!NOTE]
-> You need to enable the POS extensions only if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. However, you need to [enable France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) instead.
 
 To update Cloud POS, follow these steps.
 
