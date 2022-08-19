@@ -20,7 +20,7 @@ ms.search.validFrom: 2022-8-1
 
 This article explains how to migrate from the [legacy digital signing solution](./emea-nor-loc-deployment-guidelines.md) in the Microsoft Dynamics 365 Commerce localization for Norway to the solution that is based on the [Commerce fiscal integration framework](./emea-nor-fi-deployment.md).
 
-If you're using the [legacy digital signing solution for Norway](./emea-nor-loc-deployment-guidelines.md) in Commerce version 10.0.28 or earlier, you must migrate to the [current Commerce fiscal integration solution](./emea-nor-fi-deployment.md) in version 10.0.29 or later to uptake the changes and receive timely updates for Norway-specific features in the future. No major changes are required in the extension logic that you created. However, because this update is a major update, some of your customizations will stop working unless changes are made on your side. Therefore, you should plan, prepare for, and complete the uptake for your environment.
+If you're using the [legacy digital signing solution for Norway](./emea-nor-loc-deployment-guidelines.md) in the Commerce version 10.0.28 or earlier, you must migrate to the [current Commerce fiscal integration solution](./emea-nor-fi-deployment.md) in the version 10.0.29 or later to uptake the changes and receive timely updates for Norway-specific features in the future. No major changes are required in the extension logic that you created. However, because this update is a major update, some of your customizations will stop working unless changes are made on your side. Therefore, you should plan, prepare for, and complete the uptake for your environment.
 
 ## Migration process
 
