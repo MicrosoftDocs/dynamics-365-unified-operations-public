@@ -88,7 +88,7 @@ To create a new application tab that loads Commerce headquarters in an iFrame mo
 1. Go to the [Power Apps Maker Portal](https://make.powerapps.com). 
 1. In the navigation pane on the left, select **Apps**.
 1. Select **Customer Service admin center**. 
-1. Go to **Agent experience \>  Workspaces**.
+1. Go to **Agent experience**.
 1. For **Application tab templates**, select **Manage**. 
 1. Create a new application tab of type **Third-party website** by following the instructions in [Manage application tab templates](/dynamics365/app-profile-manager/application-tab-templates?tabs=customerserviceadmincenter).
 1. Under **Parameters**, for the **Value** field of the **url** parameter, enter the following URL, where `<YourOrganizationHeadquartersURL>` and `<LegalEntityname>` are replaced with the appropriate values. Omnichannel customer service reads **{AccountNumber}** from the chat context, so leave **{AccountNumber}** as is.
