@@ -1,27 +1,17 @@
---- 
-# required metadata 
- 
+---
 title: Define the dependency of ER configurations on other components
 description: This article describes how to design an Electronic reporting (ER) configuration and specify its dependency from other software components.
-author: NickSelin
+author: kfend
 ms.date: 07/23/2021
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.author: filatovm
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Define the dependency of ER configurations on other components
 

@@ -1,11 +1,11 @@
 ---
 title: Note integration
 description: This article describes the integration of note data in dual-write.
-author: RamaKrishnamoorthy 
+author: RamaKrishnamoorthy
 ms.date: 02/22/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06

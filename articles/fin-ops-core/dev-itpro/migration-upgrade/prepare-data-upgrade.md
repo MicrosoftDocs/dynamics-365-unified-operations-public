@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade
 description: This article describes each task in the Microsoft Dynamics AX 2012 checklist that is associated with data upgrade to finance and operations apps.
-author: jorisdg
+author: gianugo
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 106163
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2017-05-31
 ms.dyn365.ops.version: Platform update 8
-
+ms.custom: 106163
+ms.assetid: 
 ---
 
 # Upgrade from AX 2012 - Pre-upgrade checklist for data upgrade

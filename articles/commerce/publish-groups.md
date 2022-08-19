@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Work with publish groups
 description: This article describes the publish groups feature in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
@@ -8,21 +6,14 @@ ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry:
 ms.author: niholman
 ms.search.validFrom: 2019-12-12
 ms.dyn365.ops.version: Release 10.0.8
-
+ms.search.industry: 
+ms.search.form: 
 ---
 # Work with publish groups
 

@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Make the chart of accounts delimiter unique
-description: This article explains how you cannot have the same delimiter for the chart of accounts and dimension values. You must change delimiter values after upgrade. 
-author: panolte
+description: This article explains how you cannot have the same delimiter for the chart of accounts and dimension values. You must change delimiter values after upgrade.
+author: RyanCCarlson2
 ms.date: 04/13/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+ms.search.region: Global
+ms.author: RCarlson
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: 8
 ms.custom: 265364
 ms.assetid: c61391e4-c4bf-4f09-bd18-8107a1bf055e
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: saraschi
-ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: 8.0
-
 ---
 
 # Make the chart of accounts delimiter unique

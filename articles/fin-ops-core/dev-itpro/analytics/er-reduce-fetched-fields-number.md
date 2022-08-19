@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Improve performance of ER solutions by reducing the number of table fields that are fetched at runtime
 description: This article explains how you can help improve performance by reducing the number of table fields that are fetched at runtime.
-author: NickSelin
+author: kfend
 ms.date: 05/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERModelMappingDesigner, EROperationDesigner
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 
 ms.dyn365.ops.version: 10.0.28
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: ERModelMappingDesigner, EROperationDesigner
 ---
 
 # Improve performance of ER solutions by reducing the number of table fields that are fetched at runtime

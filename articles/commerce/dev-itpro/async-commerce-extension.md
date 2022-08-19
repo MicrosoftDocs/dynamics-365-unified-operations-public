@@ -1,13 +1,13 @@
 ---
 title: Create asynchronous Commerce (CRT) APIs in your business logic
 description: This article explains how to create Commerce (CRT) application programming interfaces (APIs) (that is, requests) that run asynchronously.
-author: mugunthanm
+author: josaw1
 ms.date: 03/16/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2020-02-02
 ms.dyn365.ops.version: 10.0.10
 ---

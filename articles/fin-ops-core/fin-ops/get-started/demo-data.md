@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Demo data overview
 description: This article provides an overview of the demo data.
 author: sericks007
-ms.date: 08/01/2022
+ms.date: 09/20/2019
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: ["56551", "intro-internal"]
-ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: pmantha
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 56551,  ""intro-internal
+ms.assetid: d876e8de-d547-43e5-9259-f095821dc758
 ---
 
 # Demo data overview

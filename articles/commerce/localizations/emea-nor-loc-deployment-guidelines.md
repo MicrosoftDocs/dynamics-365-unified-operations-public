@@ -9,7 +9,7 @@ ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 2018-2-28
 
 ---
@@ -54,9 +54,9 @@ To apply this functionality in the CRT extension, follow these steps.
 
 5. Build the CRT extension project.
 
-6. Copy the output class library and paste it into ...\RetailServer\webroot\bin\Ext for manual testing.
+6. Copy the output class library and paste it into ...\RetailServer\webroot\bin\Ext for manual testing.
 
-7. In the CommerceRuntime.Ext.config file, update the extension composition section with the custom library information.
+7. In the CommerceRuntime.Ext.config file, update the extension composition section with the custom library information.
 
 ## Development environment
 

@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Apply multiple Retail discounts to a product
-description: This article reviews all the factors considered when multiple discounts can be applied to a product. 
-author: shajain
+description: This article reviews all the factors considered when multiple discounts can be applied to a product.
+author: ShalabhjainMSFT
 ms.date: 12/31/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 16181
-ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2018-10-23
 ms.dyn365.ops.version: AX 8.1.0, Retail October 2018 update
-
+ms.custom: 16181
+ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
+ms.search.industry: Retail
+ms.search.form: 
 ---
 
 # Apply multiple Retail discounts to a product

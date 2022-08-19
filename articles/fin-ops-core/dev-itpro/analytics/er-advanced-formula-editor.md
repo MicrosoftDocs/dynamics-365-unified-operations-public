@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Electronic reporting advanced formula editor
 description: This article describes how the advanced formula editor can be used to configure expressions in Electronic reporting (ER) model mapping and format components.
-author: NickSelin
+author: kfend
 ms.date: 06/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERExpressionDesignerFormula
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 97423
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-
+ms.custom: 97423
+ms.assetid: 
+ms.search.form: ERSolutionTable, ERExpressionDesignerFormula
 ---
 
 # Electronic reporting advanced formula editor

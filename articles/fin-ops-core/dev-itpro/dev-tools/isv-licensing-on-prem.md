@@ -1,20 +1,19 @@
 ---
 title: Independent software vendor (ISV) licensing (on-premises)
 description: This article describes the independent software vendor (ISV) licensing feature for on-premises environments.
-author: jorisdg
+author: gianugo
 ms.date: 11/29/2021
 ms.topic: article
-audience: Developer
 ms.prod: dynamics-365
-ms.service: 
-ms.reviewer: tfehr
-ms.custom: 70381
-ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
+audience: Developer
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2018-03-07
 ms.dyn365.ops.version: AX 7.3.0
-
+ms.custom: 70381
+ms.assetid: 90ae4ae6-f19a-4ea5-8bd9-1d45729b0636
+ms.service: 
 ---
 
 # Independent software vendor (ISV) licensing (on-premises)

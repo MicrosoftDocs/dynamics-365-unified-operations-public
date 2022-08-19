@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Payment terms in commercial transactions report (PL-00053)
 description: This article provides information about the Payment terms report, and explains how to configure and generate it.
-author: sndray
+author: AdamTrukawka
 ms.date: 05/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Poland
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 10.0.24
-
+ms.search.form: 
 ---
 
 # Payment terms in commercial transactions report

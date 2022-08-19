@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Regulatory Configuration Service (RCS) - Lifecycle Services (LCS) storage deprecation
 description: This article provides information about the deprecation of Microsoft Dynamics Lifecycle Services (LCS) storage that is planned as part of the rollout of the Regulatory Configuration Service (RCS) Global repository.
-author: JaneA07
+author: kfend
 ms.date: 10/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RCS, Regulatory Configuration Services, Localization, LCS storage, LCS storage deprecation
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 97423
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: janeaug
+ms.author: filatovm
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.19
-
+ms.custom: 97423
+ms.assetid: 
+ms.search.form: RCS, Regulatory Configuration Services, Localization, LCS storage, LCS storage deprecation
 ---
 # Regulatory Configuration Service (RCS) – Lifecycle Services (LCS) storage deprecation
 

@@ -33,6 +33,8 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The primary posting profile for the **Accounts receivable** module is the customer posting profile. This posting profile determines the summary account that is used when customer balances are posted to the general ledger. A summary account is a main account. It's also referred to as the Accounts receivable trade account.
 
+The **Customer to ledger reconciliation** report can be used after posting to help reconcile the balances of customer and ledger accounts. The report uses the information that is found in the summary account for the customer posting profile. It doesn't use the summary account from the accounting that is created for the document. If you make changes to the customer posting profile or the customer group that is assigned to the customer after you have posted transactions, the report may display differences between the customer and ledger account balance. To view only the lines that have differences, and any lines for which the customer accounts and ledger account are both zero, select the **Differences only** parameter when printing the report.
+
 For more information, see [Customer posting profiles](../accounts-receivable/customer-posting-profiles.md).
 
 Several posting configurations beside the customer posting profile are available in Accounts receivable. The following sections provide more information about these other posting configurations.

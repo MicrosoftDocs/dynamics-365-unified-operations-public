@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Build navigation
 description: In this tutorial, you will add navigational elements to a workspace and the navigation pane.
-author: aneesmsft
+author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 26031
-ms.assetid: ad8ba47b-becb-4d13-a5af-8aca46075e82
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: aneesa
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 26031
+ms.assetid: ad8ba47b-becb-4d13-a5af-8aca46075e82
 ---
 
 # Build navigation

@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Document states and lifecycle
 description: This article covers the various document states of page elements in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
@@ -8,21 +6,15 @@ ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: "intro-internal"
+ms.search.industry: 
+ms.search.form: 
 ---
 # Document states and lifecycle
 

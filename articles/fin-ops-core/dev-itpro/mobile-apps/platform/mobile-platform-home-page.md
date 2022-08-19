@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Mobile platform resources
 description: The mobile platform lets you create mobile apps for your workspaces.
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-
+ms.custom: "intro-internal"
+ms.assetid: 
 ---
 
 # Mobile platform resources

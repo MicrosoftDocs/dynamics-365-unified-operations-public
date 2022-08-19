@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Implement a custom ER source of inbound documents
 description: This article explains how to extend the list of Electronic reporting (ER) sources to access inbound documents for data import.
-author: NickSelin
+author: kfend
 ms.date: 10/05/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERFormatDestinationTable, ERParameters
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-
+ms.search.form: ERFormatDestinationTable, ERParameters
 ---
 
 # Implement a custom ER source of inbound documents

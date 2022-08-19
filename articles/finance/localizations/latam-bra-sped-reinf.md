@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: SPED-Reinf events
 description: This article explains how to set up SPED-Reinf events by using Fiscal books and the SII reporting register framework.
-author: sndray
+author: AdamTrukawka
 ms.date: 05/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8.1
-
+ms.search.form: 
 ---
 
 # SPED-Reinf events

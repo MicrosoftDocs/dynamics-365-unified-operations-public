@@ -1,25 +1,16 @@
 ---
-# required metadata
-
 title: VAT declaration with registers (JPK-V7M, VDEK)
 description: This article provides information about the VAT declaration with registers (also known as a JPK-V7M, VDEK) in Poland.
-author: liza-golub
-ms.date: 06/21/2022
+author: AdamTrukawka
+ms.date: 07/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
 ms.search.region: Poland
-# ms.search.industry: 
-ms.author: elgolu
-
+ms.author: atrukawk
+ms.search.form: LedgerParameters, TaxAuthority, TaxReportCollection, TaxTable
 ---
 
 # VAT declaration with registers (JPK-V7M, VDEK)

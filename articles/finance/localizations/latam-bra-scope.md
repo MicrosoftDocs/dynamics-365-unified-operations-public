@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Scope of the Brazilian localization
-description: This article describes the strategy and scope for tax, finance, and accounting laws and regulations in Brazil. 
-author: sndray
+description: This article describes the strategy and scope for tax, finance, and accounting laws and regulations in Brazil.
+author: AdamTrukawka
 ms.date: 11/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: sndray
-ms.search.validFrom: 2018-4-30
-ms.dyn365.ops.version: 8.0
-
+ms.author: atrukawk
+ms.search.validFrom: 2018-04-30
+ms.dyn365.ops.version: 8
 ---
 
 # Scope of the Brazilian localization

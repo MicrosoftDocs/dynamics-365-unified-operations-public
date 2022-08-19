@@ -7,13 +7,12 @@ ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User, IT Pro
-ms.reviewer: sericks
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.custom: 
-  - 264084
+ms.custom: 264084
 ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
 ms.search.form: HcmWorkforceWorkspace
 ---

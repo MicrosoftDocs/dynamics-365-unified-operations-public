@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Export financial information for auditors in Sweden
 description: This article provides information about the SIE standard report for Sweden.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 04/05/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom
 ms.search.region: Sweden
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
 ---
 
 # Export financial information for auditors in Sweden

@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Images on a page or in a grid
 description: This article describes the steps for displaying images on a page or in a grid.
-author: RobinARH
+author: jasongre
 ms.date: 07/09/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 55871
-ms.assetid: 58e6476b-c29f-46c4-8866-78ca4ab3c0bc
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 55871
+ms.assetid: 58e6476b-c29f-46c4-8866-78ca4ab3c0bc
 ---
 
 # Images on a page or in a grid

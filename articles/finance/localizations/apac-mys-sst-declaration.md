@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: SST-02 declaration for Malaysia
 description: This article explains how to configure and generate the SST-02 return form for Malaysia.
-author: sndray
+author: AdamTrukawka
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Bahrain
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2020-06-03
 ms.dyn365.ops.version: 10.0.13
-
+ms.search.form: 
 ---
 
 # SST-02 declaration for Malaysia

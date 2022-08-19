@@ -701,7 +701,7 @@
         - name: Options for preventing discounts for retail products 
           href: prevent-discounts.md
         - name: Tender-based discounts 
-          href: tender_based_discounts.md
+          href: tender-based-discounts.md
         - name: Shipping discount overview 
           href: retail-shipping-discount.md
         - name: Configure gift with purchase promotions
@@ -718,6 +718,10 @@
           href: tasks/category-pricing-rules-trade-agreements.md
         - name: Delay exact price and discount calculation
           href: delayed-price-calculation.md
+        - name: Pricing functions in POS
+          href: pos-pricing-functions.md
+        - name: Commerce pricing APIs
+          href: pricing-apis.md
       - name: Recommendations 
         items:
         - name: Product recommendations overview 
@@ -1414,8 +1418,6 @@
         items:
         - name: Fiscal registration service integration sample for Austria
           href: localizations/emea-aut-fi-sample.md
-        - name: Deployment guidelines for cash registers for Austria
-          href: localizations/emea-aut-deployment.md   
         - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
           href: localizations/emea-aut-fi-sample-sdk.md
       - name: Brazil
@@ -1776,6 +1778,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/commerce
             - name: OrderBy
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/commerce
+            - name: Repeat
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/commerce
             - name: Reverse
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/commerce
             - name: Split

@@ -1,34 +1,25 @@
---- 
-# required metadata 
- 
+---
 title: Design ER configurations to suppress BOM characters in generated files
 description: This article explains how to configure an Electronic reporting (ER) format to generate reports that suppress byte order mark (BOM) characters.
-author: NickSelin
+author: kfend
 ms.date: 01/04/2021
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: EROperationDesigner   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2018-01-01 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: filatovm
+ms.search.validFrom: 2018-01-01
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: EROperationDesigner
 ---
 
 # Design ER configurations to suppress BOM characters in generated files
 
 [!include [banner](../includes/banner.md)]
 
-You can design an [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md) to generate outgoing documents. To generate the documents as text or XML files, the solution must include an ER [configuration](general-electronic-reporting.md#Configuration) that contains an ER format component. To specify the [character encoding](/windows/win32/intl/character-sets) that represents the set of characters in generated files, the ER format must contain the **Common\\File** format element. To configure the ER format component, open the [draft](general-electronic-reporting.md#component-versioning) version of the ER configuration in the ER format designer, and add the **Common\\File** element. In the **Encoding** field, specify the encoding of outbound files that are generated at runtime by using this component.
+You can design an [Electronic reporting (ER)](general-electronic-reporting.md) [solution](er-quick-start1-new-solution.md) to generate outgoing documents. To generate the documents as text or XML files, the solution must include an ER [configuration](general-electronic-reporting.md#Configuration) that contains an ER format component. To specify the [character encoding](/windows/win32/intl/character-sets) that represents the set of characters in generated files, the ER format must contain the **Common\\File** format element. To configure the ER format component, open the draft version of the ER configuration in the ER format designer, and add the **Common\\File** element. In the **Encoding** field, specify the encoding of outbound files that are generated at runtime by using this component.
 
 > [!NOTE]
 > If the format contains an incorrect encoding name, an error is thrown when you save your changes to the format's settings.

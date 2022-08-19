@@ -2,24 +2,14 @@
 title: Extend, customize, and collaborate on the Help (contains video)
 description: This article provides tips and tricks for working with the GitHub repos and Markdown files for finance and operations apps.
 author: edupont04
+ms.date: 05/11/2020
 ms.topic: article
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
+ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-ms.date: 05/11/2020
-ms.author: edupont
 ---
 
 # Extend, customize, and collaborate on the Help

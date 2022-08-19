@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Configure Electronic reporting (ER) to pull data into Power BI
-description: This article explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance to Power BI services. 
-author: NickSelin
+description: This article explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance to Power BI services.
+author: kfend
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ---
 
 # Configure Electronic reporting (ER) to pull data into Power BI

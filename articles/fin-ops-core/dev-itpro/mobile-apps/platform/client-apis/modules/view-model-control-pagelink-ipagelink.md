@@ -1,12 +1,12 @@
 ---
 title: Pagelink module
 description: A pagelink is a control that navigates to another page.
-author: tonyafehr
+author: jasongre
 ms.date: 05/26/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ---
 
 # Pagelink module

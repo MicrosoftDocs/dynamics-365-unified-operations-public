@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Mobile app home page
 description: This article describes the finance and operations (Dynamics 365) mobile app and provides links to resources that can help you implement it in your organization.
-author: ChrisGarty
+author: sericks007
 ms.date: 05/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+ms.search.region: Global
+ms.author: sericks
+ms.search.validFrom: 2017-02-28
+ms.dyn365.ops.version: Platform update 4
 ms.custom: "intro-internal"
 ms.assetid: c99f818f-27b3-4e45-92b4-74272dad0e17
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: cgarty
-ms.dyn365.ops.version: Platform update 4
-ms.search.validFrom: 2017-02-28
-
 ---
 
 # Mobile app home page

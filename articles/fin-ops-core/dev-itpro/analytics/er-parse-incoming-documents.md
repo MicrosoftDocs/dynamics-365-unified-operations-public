@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Parse incoming documents
-description: This article provides information about how to set up Electronic reporting formats that can be used to parse incoming documents. 
-author: nickselin
+description: This article provides information about how to set up Electronic reporting formats that can be used to parse incoming documents.
+author: kfend
 ms.date: 11/24/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2017-11-10
 ms.dyn365.ops.version: 7.3
-
+ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 ---
 
 

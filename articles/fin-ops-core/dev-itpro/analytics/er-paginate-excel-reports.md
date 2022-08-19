@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Design an ER format to paginate generated documents in Excel
 description: This article explains how to design an Electronic reporting (ER) format that paginates a generated document in Microsoft Excel.
 author: kfend
@@ -8,23 +6,15 @@ ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: EROperationDesigner
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: filatovm
 ms.search.validFrom: 2021-08-01
 ms.dyn365.ops.version: Version 10.0.22
-
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
+ms.search.form: EROperationDesigner
 ---
 
 # Design an ER format to paginate generated documents in Excel

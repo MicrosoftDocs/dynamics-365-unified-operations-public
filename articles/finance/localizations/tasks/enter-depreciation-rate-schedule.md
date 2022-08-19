@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: Enter depreciation rate schedule and associate to depreciation profile
-description: In Japan, the fixed asset depreciation rate is released by a government agency. 
-author: ShylaThompson
+description: In Japan, the fixed asset depreciation rate is released by a government agency.
+author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: AssetDepRate_JP, AssetDepreciationProfile   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Japan
-# ms.search.industry: 
-ms.author: roschlom
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: kfend
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: AssetDepRate_JP, AssetDepreciationProfile
 ---
 # Enter depreciation rate schedule and associate to depreciation profile
 

@@ -1,5 +1,4 @@
 ---
-
 title: Add new inventory dimensions through extension
 description: This article describes how to add new inventory dimensions through extensions.
 author: MichaelFruergaardPontoppidan
@@ -7,20 +6,14 @@ ms.date: 02/01/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 89563
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: mfp
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
+ms.custom: 89563
+ms.assetid: 
 ---
 
 # Add new inventory dimensions through extension
