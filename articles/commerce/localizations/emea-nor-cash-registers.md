@@ -115,8 +115,8 @@ You must also specify the following settings for Norway.
 
 You must enable the following features in the **Feature management** workspace of Commerce headquarters:
 
-- **(Norway) Enable additional audit events in POS**
-- **(Norway) Enable additional information in end-of-day statements in POS**
+- (Norway) Enable additional audit events in POS
+- (Norway) Enable additional information in end-of-day statements in POS
 
 ### Set up the legal entity
 
@@ -146,7 +146,7 @@ Set the **Allow printing receipt copy** permission to an appropriate value:
 
 ### Configure custom fields so that they can be used in receipt formats for sales receipts
 
-On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet to your requirements.
+On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet your requirements.
 
 | Language ID | Text                   | Text ID |
 |-------------|------------------------|---------|
