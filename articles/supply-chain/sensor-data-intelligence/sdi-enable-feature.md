@@ -23,5 +23,5 @@ Before you can use Sensor Data Intelligence, it must be turned on for your syste
 1. Go to **System administration \> Workspaces \> Feature management**. (See also [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 1. Select the **All** tab.
 1. Use the **Filter** field to search for the feature called *Sensor Data Intelligence*.
-1. If the *Sensor Data Intelligence* feature is enabled on your system, select it in the list and then select **Disable** to disable it. (You can't use this older version of the feature together with the new preview version that you will enable in the next step.)
+1. If the *Sensor Data Intelligence* feature is enabled on your system, select it in the list and then select **Disable** to disable it. You can't use this older version of the feature together with the new preview version that you will enable in the next step.
 1. Use the **Filter** field to search for the feature called *(Preview) Sensor Data Intelligence*. Select the feature and then select **Enable now** to enable it.

@@ -31,10 +31,10 @@ Sensor Data Intelligence enables several types of functionality, each of which i
 
 | Scenario | Description |
 |---|---|---|
+| [Equipment downtime](sdi-scenario-equipment-downtime.md) | Secure operation efficiency by using sensor readings to notify planners about machine outages and provide options to mitigate potential delays. |
 | [Product quality](sdi-scenario-product-quality.md) | Secure the quality of product batches by comparing sensor readings for actual properties of each product batch, such as moisture, temperature, or custom-defined quality metrics. The system will notify users when deviations occur.
 | [Production delays](sdi-scenario-production-delays.md) | Use sensor readings to compare actual cycle time to planned cycle time and notify supervisors when production is not on schedule. Supervisors can then intervene when needed to secure maximum operation efficiency.
-| [Predictive maintenance](sdi-scenario-asset-maintenance.md) | Minimize maintenance cost and extend asset life by improving maintenance plans based on sensor readings of critical control points for machine assets.
-| [Asset downtime](sdi-scenario-equipment-downtime.md) | Accurately track the efficiency of machine assets by using sensor data to track machine downtime.
+| [Asset maintenance](sdi-scenario-asset-maintenance.md) | Minimize maintenance cost and extend asset life by improving maintenance plans based on sensor readings of critical control points for machine assets.
 
 ## Architecture
 

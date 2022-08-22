@@ -18,14 +18,14 @@ ms.dyn365.ops.version: 10.0.30
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-If you want to test Sensor Data Intelligence without installing any actual physical sensors, you can use the *Raspberry PI Azure IoT Online Simulator* service to emulate sensor signals and send them to your system. For more information about the simulator, see [Connect Raspberry Pi online simulator to Azure IoT Hub (Node.js)](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started).
+If you want to test Sensor Data Intelligence without installing any actual physical sensors, you can use the *Raspberry PI Azure IoT Online Simulator* service to emulate sensor signals and send them to your IoT solution on Azure. For more information about the simulator, see [Connect Raspberry Pi online simulator to Azure IoT Hub (Node.js)](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started).
 
 ## Create a device in Azure IoT Hub
 
 You must start by setting up a device to authenticate the sensor signals to the Azure IoT Hub. To create the device, use the following steps:
 
-1. In Azure, go back to the resource list for the resource group you created for use with Sensor Data Intelligence.
-1. In the list of resources, find the record with **Type** *IoT Hub* and select its name in the**Name** column to open the details page for that resource.
+1. In Azure, go to the resource list for the resource group you created for use with Sensor Data Intelligence (see also [Deploy an IoT solution on Azure](sdi-deploy-iot-solution-on-azure.md)).
+1. In the list of resources, find the record with **Type** *IoT Hub* and select its name in the **Name** column to open the details page for that resource.
 1. On the left navigation pane, select **Devices** to open the **Devices** page.
 1. Select **Add device** to open the **Create a device** page.
 1. Make the following settings:
@@ -42,7 +42,7 @@ You must start by setting up a device to authenticate the sensor signals to the 
 
 Follow these steps to add the connection string from the device in Azure IoT Hub to the script in the Raspberry service.
 
-1. Open the Raspberry Pi IoT simulator by going to <https://azure-samples.github.io/raspberry-pi-web-simulator/>
+1. Open the [Raspberry Pi IoT simulator](https://azure-samples.github.io/raspberry-pi-web-simulator/).
 1. In the code editor pane find the line with the following command:
 
     `const connectionString = '[Your IoT hub device connection string]';`
@@ -50,7 +50,6 @@ Follow these steps to add the connection string from the device in Azure IoT Hub
 1. Remove the help text from the line (including the square brackets) and replace it with the **Primary connection string** you copied in the previous section. The result should resemble the following example:
 
     `const connectionString = 'HostName=XXX;DeviceId=YYY;SharedAccessKey=ZZZ';`
-
 
 ## Add sensor IDs and values to the payload in the Raspberry Pi IoT simulator
 
@@ -76,7 +75,7 @@ function getMessage(cb) {
 ```
 
 > [!IMPORTANT]
-> The sensors IDs defined here in the code editor for the Raspberry Pi IoT simulator must be identical to the sensor IDs you will specify later for the scenarios in Supply Chain Management. The example provided here uses human-readable IDs, but in an actual scenario, these will be GUID values provided by the sensor manufacturer.
+> The sensors IDs defined here in the code editor for the Raspberry Pi IoT simulator must be identical to the sensor IDs you will specify later for the scenarios in Supply Chain Management. The example provided here uses human-readable IDs, but in an actual scenario, these will be GUID values provided by the sensor manufacturer. The human-readable IDs suggested in the sample code shown here are also used in the example scenarios provided in [The product quality scenario](sdi-scenario-product-quality.md), [The asset maintenance scenario](sdi-scenario-asset-maintenance.md), [The production delays scenario](sdi-scenario-production-delays.md), and [The equipment downtime scenario](sdi-scenario-equipment-downtime.md)). If you will work through those scenarios, then use this code.
 
 ## Edit the time interval for sending sensor signals
 

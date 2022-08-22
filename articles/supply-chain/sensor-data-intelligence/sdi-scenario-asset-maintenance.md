@@ -4,7 +4,7 @@ description: The asset maintenance scenario lets you use sensor data to create c
 author: johanhoffmann
 ms.date: 09/02/2022
 ms.topic: article
-ms.search.form:
+ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreScenarioConfigurationWizardV2
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -20,11 +20,15 @@ ms.dyn365.ops.version: 10.0.30
 
 The *asset maintenance* scenario lets you use sensor data to create counter records. Counter records track the usage of a machine asset and are used as input for generating the maintenance schedule for machine assets.
 
-## Prepare sample data for the product quality scenario
+## Prepare demo data for the product quality scenario
 
-If you would like to use a demo system to test the *asset maintenance* scenario, then use a system that has the demo data installed and select the *USMF* legal entity (company). If you are using your own data, then you can skip this section.
+If you would like to use a demo system to test the *asset maintenance* scenario, then use a system that has the [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) installed, select the *USMF* legal entity (company) and prepare the additional demo data as described in this section. If you are using your own sensors and data, then you can skip this section.
 
 In this section, you will set up the *AK-101, Air knife* asset in demo data as an example of how upcoming maintenance work can be predicted based on sensor signals that measure the number of hours the air knife has been running. You will also set up a maintenance plan in which the air knife must be maintained every 10,000 hours.
+
+### Set up sensor simulator
+
+If you'd like to try this scenario without using a physical sensor, then you can set up a simulator to generate the required signals as described in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md).
 
 ### Create a new asset counter for tracking production hours
 
@@ -70,15 +74,15 @@ Follow these steps to set up the *asset maintenance* scenario in Supply Chain Ma
 1. Go to **Asset management \> Setup \> Sensor Data Intelligence \> Scenarios** to open the **Scenarios** page.
 1. In the **Asset maintenance** scenario box, select **Configure** to launch the setup wizard for this scenario.
 1. The wizard starts with the **Sensors** page. Select **New** to add a new sensor to the grid and set the following values for it:
-    - **Sensor ID** - Enter the ID of the sensor you are using. (If you are using the Raspberry PI Azure IoT Online Simulator and have set it up as described previously in this article, then enter *AssetMaintenance*.)
+    - **Sensor ID** - Enter the ID of the sensor you are using. (If you are using the Raspberry PI Azure IoT Online Simulator and have set it up as described in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md), then enter *AssetMaintenance*.)
     - **Sensor description** - Enter a description of the sensor.
 
 1. Repeat the previous step for each sensor you want to add for now. You can come back and add more sensors at any time.
 1. Select **Next**.
 1. The **Business record mapping** page opens. In the **Sensors** section, select the record for the sensor you defined in the previous step.
 1. In the **Business record mapping** section, select **New** to add a new row to the grid.
-1. The new row should automatically show a **Business record type** of *Assets(EntAssetObjectTable)*. For this row, set **Business record** to the resource you are monitoring with the selected sensor. (If you are using the sample data created earlier in this article, set it to *AK-101, AK-101 Air Knife for Line 1*.)
-1. Right after you select a business record type for the previous row, a second row is automatically added to the grid, this time with a **Business record type** of *Counters(EntAssetCounterType)*. For this row, set **Business record** to asset counter you are updating based on signals from the selected sensor. (If you are using the sample data created earlier in this article, set it to *ProductionHr, Production hours*.)
+1. The new row should automatically show a **Business record type** of *Assets(EntAssetObjectTable)*. For this row, set **Business record** to the resource you are monitoring with the selected sensor. (If you are using the demo data created earlier in this article, set it to *AK-101, AK-101 Air Knife for Line 1*.)
+1. Right after you select a business record type for the previous row, a second row is automatically added to the grid, this time with a **Business record type** of *Counters(EntAssetCounterType)*. For this row, set **Business record** to asset counter you are updating based on signals from the selected sensor. (If you are using the demo data created earlier in this article, set it to *ProductionHr, Production hours*.)
 1. Select **Next**.
 1. The **Activate sensors** page opens. In the grid, select the sensor you just added and then select **Activate**. Each activated sensor in the grid shows a check in its **Active** column.
 1. Select **Finish**.
@@ -90,7 +94,7 @@ Follow these steps to set up the *asset maintenance* scenario in Supply Chain Ma
 Once the data is prepared and the *asset maintenance* scenario is configured and activated, you can see how records for an asset counter are inserted based on sensor data by using the following steps:
 
 1. Go to **Asset management \> Assets \> All assets**.
-1. Find and select the asset you want to inspect. (If you are using the sample data created earlier in this article, look for *AK-101*.)
+1. Find and select the asset you want to inspect. (If you are using the demo data created earlier in this article, look for *AK-101*.)
 1. In the Action Pane, open the **Asset** tab and, in the **Preventive** group, select **Counters** to open the page for counter records for asset *AK-101*.
 
 ### Generate maintenance work orders
