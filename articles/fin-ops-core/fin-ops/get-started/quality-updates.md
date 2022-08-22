@@ -25,7 +25,7 @@ We see the results that confirm this with lower incident counts across our produ
 
 ## Focus on quality updates
 
-Today, we provide seven service updates per year. For example, version 10.0.29 is a service update. This is a recent adjustment from eight per year, with one update dropped in response to customer feedback around the desire to avoid changes around calendar year-end.    
+Today, we provide seven [service updates](public-preview-releases.md) per year. For example, version 10.0.29 is a service update. This is a recent adjustment from eight per year, with one update dropped in response to customer feedback around the desire to avoid changes around calendar year-end.    
 
 We are not changing the cadence of the service updates – instead, our next step forward on One Version focuses on *quality updates*. Quality updates are cumulative builds of hotfixes: they do not include new features. At any given time, our entire community of customers is spread between the three or four most recent service updates. Within the group, on any one given service update, however, there can be dozens of different quality update versions in use dependent on the dates people deployed. Our next step in the One Version journey will broadcast quality updates proactively. This follows the model we already use for our Dataverse-based applications where we see the expected results of improved quality and decreased support incidents. 
 
