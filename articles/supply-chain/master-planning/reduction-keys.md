@@ -137,7 +137,7 @@ When this option is used, the following behavior occurs:
 - Reduction keys aren't required or used. 
 - If the forecast is completely reduced, the forecast requirements for the current forecast become 0 (zero).
 - If there is no future forecast, forecast requirements from the last forecast that was entered are reduced.
-- Demand forecast reduction time fence is not included in the forecast reduction calculation. Coverage group time fence is used for forecast reduction.
+- The demand forecast reduction time fence isn't included in the forecast reduction calculation. Instead, the coverage group time fence is used for forecast reduction.
 - Positive days are included in the forecast reduction calculation.
 - If actual order transactions exceed the forecasted requirements, the remaining transactions aren't forwarded to the next forecast period.
 
