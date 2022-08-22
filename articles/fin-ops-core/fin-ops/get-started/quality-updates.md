@@ -4,7 +4,7 @@
 title: Quality updates
 description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
 author: rashmansur
-ms.date: 08/19/2022
+ms.date: 08/22/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -37,7 +37,7 @@ Multiple advances have already been deployed that enable proactive delivery of q
 
 - **Near-zero downtime updating** – In order to push more frequent environments, it is essential that the impact to environment availability be reduced to preserve Dynamics 365 Service Level Agreements (SLAs). Near-zero downtime updating was originally introduced to improve monthly operating system patching, leveraging a cluster failover to activate the updated image with minimal disruption. The mechanism for applying updates is being enhanced to be even less disruptive and will cover both operating system patching and quality update deployment. 
 
- For interactive users, an active session might be interrupted and the retry will go to the now updated environment. With the introduction of [priority-based batch scheduling](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md), now available on an opt-in basis, batch scheduling and processing recovers and resumes immediately after the update. Priority-based batch scheduling will be in place for customers before they begin participating in proactive quality update distribution for their production environments. 
+  For interactive users, an active session might be interrupted and the retry will go to the now updated environment. With the introduction of [priority-based batch scheduling](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md), now available on an opt-in basis, batch scheduling and processing recovers and resumes immediately after the update. Priority-based batch scheduling will be in place for customers before they begin participating in proactive quality update distribution for their production environments. 
 
 - **Dark hours** – Dark hours are defined for each Azure region and near-zero downtime updates will occur during the dark hour period. 
 
