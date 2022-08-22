@@ -54,7 +54,7 @@ To copy an instance, keep the following tips in mind:
 ## Effects of copying a Human Resources database
 
 > [!Note]
-> Starting August 2022, Documents in Microsoft Azure Blob storage are included when copying production to sandbox environment. Any documents and templates that are attached will be copied over from the source environment to the target environment.
+> Starting August 2022, Documents in Microsoft Azure Blob storage are included when copying a production environment to a sandbox environment. Any documents and templates that are attached will be copied over from the source environment to the target environment.
 
 The following events occur when you copy a Human Resources database:
 
