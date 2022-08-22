@@ -170,7 +170,12 @@ Receipts for France can include additional information that was implemented by u
 - **Transaction type** – You can add a field to a receipt format layout to identify the type of transaction. For example, a sales receipt will include the text "Sales."
 - **Sequential number of signed sales transaction** – A receipt can include the sequential number of a signed sales transaction. This number is used to associate the printed receipt with a digital signature in the database.
 - **Extract from digital signature** – A receipt can include an extract from the digital signature. This extract is used to confirm that the transaction is signed. It consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
-- **Reprint number** – An original receipt or a receipt copy can include the number of the receipt copy. For an original receipt, the value is **0** (zero).
+- Information about a receipt copy:
+    - **Reprint message** - A receipt copy can include a **Copy** caption.
+    - **Reprint number** – An original receipt or a receipt copy can include the number of the receipt copy. For an original receipt, the value is **0** (zero).
+    - **Reprint date** - A receipt copy can include the date of the copy.
+    - **Reprint time** - A receipt copy can include the time of the copy in either the 12H or 24H format.
+    - **Reprint signature** - A receipt copy can include an extract from the digital signature of the copy.
 - **Line count** – A receipt can include the number of printed item lines on the receipt.
 - **Sales totals** – Custom fields for receipt totals exclude non-sales amounts from the total transaction amounts. Non-sales amounts include amounts for the following operations:
 
@@ -301,7 +306,7 @@ You can configure the language text and custom fields that are used in the POS r
 
 On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or higher than 900001.
 
-| Language ID | Text ID | Text ID                   |
+| Language ID | Text ID | Text                      |
 |-------------|---------|---------------------------|
 | en-US       | 900001  | Transaction type          |
 | en-US       | 900002  | Sequential number         |
@@ -314,6 +319,10 @@ On the **Language text** page, add the following records for the labels of the c
 | en-US       | 900009  | Sales total including tax |
 | en-US       | 900010  | NF 525 Certificate        |
 | en-US       | 900011  | Line count                |
+| en-US       | 900012  | Reprint date              |
+| en-US       | 900013  | Reprint time 12H          |
+| en-US       | 900014  | Reprint time 24H          |
+| en-US       | 900015  | Reprint digital signature |
 
 On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
 
@@ -330,6 +339,10 @@ On the **Custom fields** page, add the following records for the custom fields f
 | SALESTOTALINCLUDETAX_FR         | Receipt | 900009          |
 | CERTIFICATENUMBERANDCATEGORY_FR | Receipt | 900010          |
 | LINECOUNT_FR                    | Receipt | 900011          |
+| REPRINTDATE_FR                  | Receipt | 900012          |
+| REPRINTTIME12H_FR               | Receipt | 900013          |
+| REPRINTTIME24H_FR               | Receipt | 900014          |
+| REPRINTDIGITALSIGNATURE_FR      | Receipt | 900015          |
 
 ### Configure receipt formats
 
@@ -340,6 +353,7 @@ In the Receipt format designer, add the following custom fields to the appropria
 - **Header:** Add the following field:
 
     - **Transaction type** – This field identifies the type of receipt.
+    - **Reprint message** - This standard field prints a **Copy** caption in a receipt copy.
 
 - **Lines:** We recommend that you add the following standard fields:
 
@@ -357,7 +371,10 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Sales tax amount** – This field prints the receipt's tax amount for cash sales per sales tax code. Prepayments and gift card operations are excluded. The field must be added to the same line as the **Tax ID** field.
     - **Sequential number** – This field prints the sequential number of a signed sales transaction.
     - **Digital signature** – This field prints the extract from the digital signature.
-    - **Reprint number** – This field prints the number of a receipt copy.
+    - **Reprint number** – This field prints the number of a receipt copy. For an original receipt, the value is **0** (zero).
+    - **Reprint date** - This field prints the date of a receipt copy.
+    - **Reprint time 12H** or **Reprint time 24H** - This field prints the time of a receipt copy in the selected format.
+    - **Reprint digital signature** - This field prints an extract from the digital signature of a receipt copy.
     - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued per the NF 525 certification requirements.
 
         > [!NOTE]
