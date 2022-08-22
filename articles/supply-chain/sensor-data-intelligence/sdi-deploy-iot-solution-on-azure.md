@@ -42,7 +42,7 @@ Follow these steps to deploy the required resources on Azure:
 1. The **Custom deployment** page opens. Verify that the validation has passed and then select **Create**.
 1. The **Deployment is in progress** page opens, which tracks the progress of your deployment. The deployment process can take up to 30 minutes to complete.
 1. When the **Deployment is in progress** page indicates that the deployment is complete, select the link for the **Resource group** name to open a page that shows resources deployed in the group.
-1. In the list of resources, find the record with **Type** *Manage Identity* and select its name in the **Name** column to open the details page for that resource.
+1. In the list of resources, find the record with **Type** *Managed Identity* and select its name in the **Name** column to open the details page for that resource.
 1. On the details page for the resource, copy the identification number in the field **Client ID** (for example, by selecting the **Copy to clipboard** button).
 1. Go back to the browser tab where Supply Chain Management is running with the **Deploy the sample IoT solution to Azure** page still open. Be sure to keep the Azure tab open.
 1. Select **Next** to open the **Connect Azure resources** page.

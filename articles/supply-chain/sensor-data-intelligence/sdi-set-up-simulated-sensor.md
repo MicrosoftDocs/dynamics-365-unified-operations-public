@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.30
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-If you want to test Sensor Data Intelligence without installing any actual physical sensors, you can use the *Raspberry PI Azure IoT Online Simulator* service to emulate sensor signals and send them to your IoT solution on Azure. For more information about the simulator, see [Connect Raspberry Pi online simulator to Azure IoT Hub (Node.js)](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started).
+If you want to test Sensor Data Intelligence without installing any actual physical sensors, you can use the *Raspberry PI Azure IoT Online Simulator* service to emulate sensor signals and send them to your IoT solution on Azure. For more information about the simulator, see [Connect Raspberry Pi online simulator to Azure IoT Hub (Node.js)](/azure/iot-hub/iot-hub-raspberry-pi-web-simulator-get-started).
 
 ## Create a device in Azure IoT Hub
 

@@ -1,6 +1,6 @@
 ---
 title: Sensor Data Intelligence parameters
-description: The product quality scenario uses a sensor to measure the quality of a product batch and generates an alert if a measurement falls outside a defined threshold.
+description: The Sensor Data Intelligence parameters page lets you view and edit your Azure connection parameters and set the lifetime of alert messages.
 author: johanhoffmann
 ms.date: 09/02/2022
 ms.topic: article
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.30
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
  
-The **Sensor Data Intelligence parameters** page provides a few settings for configuring the feature, including the connection to Azure and the lifetime of alert messages sent to users in response to sensor measurements.
+The **Sensor Data Intelligence parameters** page provides a few settings for configuring the feature, including the Azure connection parameters and the lifetime of alert messages sent to users in response to sensor measurements.
 
 ## Read and change connection details for your Azure IoT solution
 

@@ -1,5 +1,5 @@
 ﻿---
-title: The equipment downtime scenario
+title: The product quality scenario
 description: The product quality scenario uses a sensor to measure the quality of a product batch and generates an alert if a measurement falls outside a defined threshold.
 author: johanhoffmann
 ms.date: 09/02/2022

@@ -99,6 +99,4 @@ Once the data is prepared and the *asset maintenance* scenario is configured and
 
 ### Generate maintenance work orders
 
-When you have enabled the *asset maintenance* scenario and set up the maintenance plan, you can run the maintenance schedule to generate maintenance work order. You can read more about working with preventive maintenance in the official Microsoft documentation here:
-
-[Preventive maintenance overview - Supply Chain Management \| Dynamics 365 \| Microsoft Docs](https://docs.microsoft.com/en-us/dynamics365/supply-chain/asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview)
+When you have enabled the *asset maintenance* scenario and set up the maintenance plan, you can run the maintenance schedule to generate maintenance work order. For more information about how to work with preventive maintenance, see [Preventive maintenance overview](../asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md)
