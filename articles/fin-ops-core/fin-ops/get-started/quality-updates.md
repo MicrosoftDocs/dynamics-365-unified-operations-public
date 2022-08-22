@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Quality updates
+title: Proactive quality updates
 description: This template contains examples of Markdown syntax, as well as guidance on setting the metadata.
 author: rashmansur
 ms.date: 08/22/2022
@@ -15,7 +15,7 @@ ms.search.form:
 ms.dyn365.ops.version: 10.0.29
 ---
 
-# Quality updates 
+# Proactive quality updates
 
 [!include[banner](../includes/banner.md)]
 
