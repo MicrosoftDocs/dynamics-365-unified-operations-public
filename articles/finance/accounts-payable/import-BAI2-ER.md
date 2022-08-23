@@ -3,7 +3,7 @@
 
 title: Set up advanced bank reconciliation import by using Electronic reporting
 description: This article explains how to use Electronic reporting to set up the advanced bank reconciliation import process.
-author: panolte
+author: angelad116
 ms.date: 03/30/2022
 ms.topic: article
 ms.prod: 
