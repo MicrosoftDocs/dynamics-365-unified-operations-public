@@ -4,7 +4,7 @@
 title: Proactive quality updates
 description: This article provides information about proactive delivery of quality updates.
 author: rashmansur
-ms.date: 08/22/2022
+ms.date: 08/23/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -53,10 +53,10 @@ A set of process changes is being implemented ahead of the activation of proacti
 
 - **Schema** – Tooling will ensure that quality update builds include only schema changes that can be applied while the service is online. This approach will help preserve the ability to apply the update with near-zero downtime.
 - **Increased change scrutiny** – Currently, there is already an extra process step to approve changes for inclusion in a quality update. The scrutiny in the extra step will be increased to help reduce the potential for regressions. Breaking changes aren't allowed in quality updates, and the increased change scrutiny will help ensure that we meet this target.
-- **Visibility** – The Admin Center will include notification when a quality update is proactively delivered. It will also show the expected schedule for upcoming updates. In addition, support teams and incident leads will have visibility into where quality updates have been proactively deployed.
+- **Visibility** – We will send notifications through email and Lifecycle Services (LCS) for upcoming proactive quality updates. In addition, support teams and incident leads will have visibility into where quality updates have been proactively deployed.
 - **Version fallback** – Flighting will be used to group all changes in a proactive quality update. If fallback is required after a proactive deployment, it can be done through the flighting system.
-- **Sandbox sync designation** – Many customers who have multiple sandboxes keep one sandbox deployed where the version matches production, to help with troubleshooting. Customers who have multiple sandboxes will be able to specify, via the Admin Center, that a sandbox environment should not receive the proactive update deployment together with other sandboxes but should instead receive it later, together with their production environment. Note that if a customer is using a sandbox to test a newer version than their production, that sandbox will receive quality updates to the newer version.
-
+- **Sandbox sync designation** – Less than 20 percent of customers today have multiple sandboxes and keep one sandbox deployed where the version matches production, to help with troubleshooting. In the near future, we will introduce the ability for customers to specify a sandbox environment that should not receive the proactive quality update deployment together with other sandboxes but that should instead receive it later, together with the production environment. Note that if a customer is using a sandbox to test a newer version than their production, that sandbox will receive quality updates to the newer version.
+- 
 ## When will proactive quality updates start?
 
 Distribution of proactive quality updates for sandbox environments is expected to begin in late September or October 2022 for Azure public cloud customers. Trial environments will also start to receive proactive update deployment at that time. In September, a notification will be sent to each customer to inform them about the expected schedule for their environments. Exceptions to the proactive updated distribution process will be allowed only for FDA-regulated customers. We're still working out how regulated environments and sovereign and government cloud customers will be managed.
