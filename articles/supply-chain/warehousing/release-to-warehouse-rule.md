@@ -34,14 +34,14 @@ The *Release to warehouse rule* feature provides flexibility during release to t
 
 ### Turn on the feature
 
-Before you can use the *Warehouse release rule* feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
+Before you can use the *Warehouse release rule* feature, it must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on if it's required. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Warehouse release rule*
 
 ### Initialize the feature
 
-After the feature is turned on in your system, you must initialize it to set the rule to the correct initial state for all warehouses.
+After the feature is turned on for your system, you must initialize it to set the rule to the correct initial state for all warehouses.
 
 - For warehouses that aren't enabled for warehouse management, the rule is initially set to **Not applicable**.
 - For warehouses that are enabled for warehouse management, the rule is initially set to **Allow partial reservation**
