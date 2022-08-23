@@ -4,7 +4,7 @@
 title: Manage attributes and attribute groups
 description: This article describes how to use attributes to provide a way to describe a product and its characteristics through user-defined fields. 
 author: ashishmsft
-ms.date: 04/28/2018
+ms.date: 08/23/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Application pdate 5, AX 8.0
 
 [!include [banner](includes/banner.md)]
 
-*Attributes* provide a way to further describe a product and its characteristics through user-defined fields (such as **Memory size**, **Hard disk capacity**, **Is Energy star compliant**, and so on). Attributes can be associated with various Commerce entities, such as product categories and channels, and default values can be set for them. Products then inherit the attributes and their default values, when they are associated with the product categories or channels. The default values can be overridden at the individual product level, at the channel level, or in a catalog.
+*Attributes* provide a way to further describe a product and its characteristics through user-defined fields (for example, memory size, hard disk capacity, energy star compliance, etc.). Attributes can be associated with various Commerce entities, such as product categories and channels, and default values can be set for attributes. When attributes are associated with product categories or channels, products then inherit the attributes and their default values. Attribute default values can be overridden at the individual product level, at the channel level, or in a catalog.
 
 For example, a typical television product might have the following attributes.
 
@@ -59,7 +59,7 @@ Attributes are based on *attribute types*. The attribute type identifies the typ
 ### Set up attribute types
 
 1. Sign in to the back-office client as a merchandising manager.
-2. Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attribute types**.
+2. Go to **Product information management \> Setup \> Categories and attributes \> Attribute types**.
 3. Create two attribute types of the **Text** type, set the **Fixed list** option to **Yes**, and then add a list of values:
 
     - Name one attribute type **Bag type**, and add the following values: **Satchel, Clutch, Purse, Backpack, Messenger, Wallet**.
@@ -70,7 +70,7 @@ Attributes are based on *attribute types*. The attribute type identifies the typ
 ### Set up an attribute
 
 1. Sign in to the back-office client as a merchandising manager.
-2. Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attributes**.
+2. Go to **Product information management \> Setup \> Categories and attributes \> Attributes**.
 3. Create an attribute that is named **Bag type**.
 4. Set the **Attribute type** field to **Bag type**.
 
@@ -82,7 +82,7 @@ Attributes are based on *attribute types*. The attribute type identifies the typ
 
 For products, the attribute metadata settings can be overridden at the channel level. This capability will be discussed later in this article.
 
-As you might notice, the **Attributes** page includes several options that are related to attribute metadata. Under **Attribute metadata for Commerce Channels**, one option that is named **Can be refined** and only attributes for which you may set the **Can be refined** option to **Yes**, will show up for refinement or filtering of products in the search results and category browsing. Also, you may notice that system doesn't allow you to mark the attributes refinable, until you actually confirm the 'Filter settings' for it. 
+The **Attributes** page includes several options that are related to attribute metadata. Under **Attribute metadata for Commerce Channels**, one option that is named **Can be refined** and only attributes for which you may set the **Can be refined** option to **Yes**, will show up for refinement or filtering of products in the search results and category browsing. Also, you may notice that system doesn't allow you to mark the attributes refinable, until you actually confirm the 'Filter settings' for it. 
 
 ## Filter settings for attributes
 
@@ -161,7 +161,7 @@ An *attribute group* is used to group the individual attributes for a component 
 ### Create an attribute group
 
 1. Sign in to the back-office client as a merchandising manager.
-2. Go to **Product information management** &gt; **Setup** &gt; **Categories and attributes** &gt; **Attribute groups**.
+2. Go to **Product information management \> Setup \> Categories and attributes \> Attribute groups**.
 3. Create an attribute group that is named **Fashion Sunglasses**.
 4. Add the following attributes: **Lens shape** and **Sunglass brand**.
 
@@ -174,7 +174,7 @@ One or more attribute groups can be associated with category nodes in the follow
 Follow these steps to assign attribute groups to categories in the Commerce product hierarchy.
 
 1. Sign in to the back-office client as a merchandising manager.
-2. Go to **Retail and Commerce** &gt; **Category and product management** &gt; **Commerce product hierarchy**.
+2. Go to **Retail and Commerce \> Category and product management \> Commerce product hierarchy**.
 3. Select **Fashion navigation hierarchy**.
 4. Under **Menswear**, select the **Pants** category, and then, on the **Product attribute groups** FastTab, add an attribute group that is named **Men's belt**. 
 5. Select the **Fashion sunglasses** category, and verify the new attributes in the **Fashion Sunglasses** attribute group by selecting **View attributes**. The attribute group should show the new **Lens shape** and **Sunglass brand** attributes.
@@ -236,8 +236,8 @@ The default values of attributes can be overridden for individual products at th
 ### Override the attribute values of an individual product
 
 1. Sign in to the back-office client as a merchandising manager.
-2. Go to **Retail and Commerce** &gt; **Category and product management** &gt; **Released products by category**.
-3. Select the **Fashion** &gt; **Fashion Accessories** &gt; **Fashion Sunglasses** category node.
+2. Go to **Retail and Commerce \> Category and product management \> Released products by category**.
+3. Select the **Fashion \> Fashion Accessories \> Fashion Sunglasses** category node.
 4. Select the required product in the grid. Then, on the Action Pane, on the **Product** tab, in the **Set up** group, select **Product attributes**.
 5. Select an attribute in the left pane, and then update its value in the right pane.
 
@@ -246,16 +246,16 @@ The default values of attributes can be overridden for individual products at th
 ### Override the attribute values of products in a catalog
 
 1. Sign in to the back-office client as a merchandising manager.
-2. Go to **Retail and Commerce** &gt; **Catalog management** &gt; **All catalogs**.
+2. Go to **Retail and Commerce \> Catalog management \> All catalogs**.
 3. Select the **Fabrikam Base Catalog** catalog.
-4. Select the **Fashion** &gt; **Fashion Accessories** &gt; **Fashion Sunglasses** category node.
+4. Select the **Fashion \> Fashion Accessories \> Fashion Sunglasses** category node.
 5. On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.
 6. On the following FastTabs, update the values of the required attributes
 
 ### Override the attribute values of products in a channel
 
 1. Sign in to the back-office client as a merchandising manager.
-2. Go to **Retail and Commerce** &gt; **Channel setup** &gt; **Channel categories and product attributes**.
+2. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
 3. Select the **Houston** channel.
 4. On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.
 5. If no products are available, add products by selecting **Add** on the **Products** FastTab and then selecting the required products in the **Add products** dialog box.
@@ -268,7 +268,7 @@ The default values of attributes can be overridden for individual products at th
 ### Define variant specific attribute values and define multiple values for product attributes
 
 1. Sign in to the back-office client as a merchandising manager.
-2. Go to **Retail and Commerce** &gt; **Channel setup** &gt; **Channel categories and product attributes**.
+2. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
 3. Select the **Houston** channel.
 4. On the **Products** FastTab, select the required product variant, and then select **Attributes** above the product grid.
 5. If no products are available, add products by selecting **Add** on the **Products** FastTab and then selecting the required product variants in the **Add products** dialog box.
