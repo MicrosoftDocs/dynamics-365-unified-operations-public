@@ -178,20 +178,20 @@ Follow these steps to assign attribute groups to categories in the Commerce prod
 > [!NOTE]
 > This procedure can also be used to assign attribute groups to categories in the Channel navigation category hierarchy and the Supplemental product category hierarchy. In step 2, use the following navigation paths:
 >
-> - Retail and Commerce &gt; Category and product management &gt; Channel navigation categories
-> - Retail and Commerce &gt; Category and product management &gt; Supplemental product categories
+> - **Retail and Commerce \> Category and product management \> Channel navigation categories**
+> - **Retail and Commerce \> Category and product management \> Supplemental product categories**
 > 
-> Additionally, you must ensure that you are only associating attribute groups in category hierarchy to **Product attribute groups** fast-tab and *not **Category attribute groups***. If you see attributes showing up in fast-tab **Category attribute values**, please switch the view to category management - where you are able to add or remove category nodes by selecting **Edit category hierarchy** from the top-ribbon (Note : There are two edit options on the category page, please select 'Edit category hierarchy' only) and then locate fast-tab **Category attribute groups** and remove it. There's no support available to fetch attributes by category through Cloud-scale unit.  
+> Additionally, you must ensure that you are only associating attribute groups in category hierarchy to **Product attribute groups** FastTab and *not **Category attribute groups***. If you see attributes showing up in fast-tab **Category attribute values**, please switch the view to category management - where you are able to add or remove category nodes by selecting **Edit category hierarchy** from the top-ribbon (Note : There are two edit options on the category page, please select 'Edit category hierarchy' only) and then locate fast-tab **Category attribute groups** and remove it. There's no support available to fetch attributes by category through Cloud-scale unit.  
 
 ## Identify viewable and refinable attributes for Commerce channels for default product collection
 
-As you have associated various attribute groups to categories in various hierarchies (Commerce product hierarchy or Channel navigation categories) and defined those attribute values for each product based on the category association. For those attributes to be viewable in a specific channel, you will have to set "Show attribute on Channel" flag. 
+As you have associated various attribute groups to categories in various hierarchies (Commerce product hierarchy or channel navigation categories) and defined those attribute values for each product based on the category association. For those attributes to be viewable in a specific channel, you will have to set "Show attribute on Channel" flag. 
 
-This flag can be located at *Channel categories and product attributes > Set attribute metadata > Select your category from Navigation hierarchy > Channel **Product** attributes (not **Category attributes**) and mark the flag for 'Show attribute on channel' as 'Yes'* for the attribute you intend to be viewable only. And if you intend to have this attribute be 'refinable' as well then you must also check **'Can be refined'**.     
+This flag can be located at **Channel categories and product attributes \> Set attribute metadata \> Select your category from Navigation hierarchy \> Channel Product attributes** (not **Category attributes**) and set the **Show attribute on channel** option to **Yes** for the attribute you intend to be viewable only. If you want the attribute be refinable, you must also set the **'Can be refined'** option to**Yes**.     
 
 ### Control visibility of dimension-based refiners Size, Style and Color
 
-As you may know, there are product dimensions like Size, Style and Color and that they are the most commonly used refiner(s). To make these product dimensions available as refiners, you would be expected to associate an Attribute group at channel level, which is supposed to be composed of reference attribute type inheriting values automatically from product dimension values. 
+Product dimensions like size, style and color are the most commonly used refiners. To make these product dimensions available as refiners, you would be expected to associate an Attribute group at channel level, which is supposed to be composed of reference attribute type inheriting values automatically from product dimension values. 
 
 Next, you would identify intended product dimensions to be viewable and refinable by updating flags located at *Channel categories and product attributes > Set attribute metadata > Select **root-node** from Navigation hierarchy > Channel **Product** attributes (not **Category attributes**) and mark the flag for 'Show attribute on channel' as 'Yes'* for the associated attributes to *Size, Style, Color* dimensions if you intend to make them viewable only. And if you intend to have this attribute be 'refinable' as well then you must also check **'Can be refined'**. 
 
