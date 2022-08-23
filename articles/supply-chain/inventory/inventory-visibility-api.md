@@ -36,6 +36,8 @@ The following table lists the APIs that are currently available:
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Post | [Set/override on-hand quantities](#set-onhand-quantities) |
 | /api/environment/{environmentId}/onhand/reserve | Post | [Create one reservation event](#create-one-reservation-event) |
 | /api/environment/{environmentId}/onhand/reserve/bulk | Post | [Create multiple reservation events](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/onhand/unreserve | Post | [Reverse one reservation event](#reverse-one-reservation-event) |
+| /api/environment/{environmentId}/onhand/unreserve/bulk | Post | [Reverse multiple reservation events](#reverse-multiple-reservation-events) |
 | /api/environment/{environmentId}/onhand/changeschedule | Post | [Create one scheduled on-hand change](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | Post | [Create multiple scheduled on-hand changes](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the post method](#query-with-post-method) |
@@ -384,7 +386,7 @@ A reservation can be made against different data source settings. To configure t
 
 When you call the reservation API, you can control the reservation validation by specifying the Boolean `ifCheckAvailForReserv` parameter in the request body. A value of `True` means that the validation is required, whereas a value of `False` means that the validation isn't required. The default value is `True`.
 
-If you want to cancel a reservation or unreserve specified inventory quantities, set the quantity to a negative value, and set the `ifCheckAvailForReserv` parameter to `False` to skip the validation. There is also a dedicated unreserve API to do the same. For more on that, see the [_Unreserve one reservation event_](#a-namereverse-one-reservation-eventareverse-one-reservation-event) section.
+If you want to cancel a reservation or unreserve specified inventory quantities, set the quantity to a negative value, and set the `ifCheckAvailForReserv` parameter to `False` to skip the validation. There is also a dedicated unreserve API to do the same. For more on that, see the [_Unreserve one reservation event_](#reverse-reservation-events) section.
 
 ```txt
 Path:
@@ -555,7 +557,7 @@ A exmaple of a successful response body
 
 ### <a name="reverse-multiple-reservation-events"></a>Reverse multiple reservation events
 
-This API is a bulk version of the [single-event API](#a-namereverse-one-reservation-eventareverse-one-reservation-event).
+This API is a bulk version of the [single-event API](#reverse-one-reservation-event).
 
 ```txt
 Path:
