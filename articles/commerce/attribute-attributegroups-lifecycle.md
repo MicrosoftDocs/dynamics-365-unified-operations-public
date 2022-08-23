@@ -82,7 +82,7 @@ Attributes are based on *attribute types*. The attribute type identifies the typ
 
 For products, the attribute metadata settings can be overridden at the channel level. This capability will be discussed later in this article.
 
-The **Attributes** page includes several options that are related to attribute metadata. Under **Attribute metadata for Commerce Channels**, one option that is named **Can be refined** and only attributes for which you may set the **Can be refined** option to **Yes**, will show up for refinement or filtering of products in the search results and category browsing. Also, you may notice that system doesn't allow you to mark the attributes refinable, until you actually confirm the 'Filter settings' for it. 
+An attribute's **Attributes** page includes several options that are related to attribute metadata. For example, under **ATTRIBUTE METADATA FOR COMMERCE CHANNELS**, if you set the **Can be refined** option to **Yes**, that attribute will be displayed for refinement or filtering of products on search results and category browsing pages. The system doesn't allow you to configure an attribute as refinable until you select **Filter settings** on the command bar and confirm the filter settings for the attribute. 
 
 ## Filter settings for attributes
 
@@ -95,7 +95,7 @@ The **Filter display preferences** page includes the following fields:
 
     - **Single value** – 
         - This option is available for the following attribute types: **Boolean**, **Currency**, **Decimal**, **Integer**, and **Text**. 
-        - This option allows only single value selection for refiners in product list pages like category browsing and product search results.
+        - This option only allows single value selection for refiners on product list pages such as category browsing and product search results.
     
     - **Multi value** – 
         - This option is available for the following attribute types: **Currency**, **Decimal**, **Integer**, and **Text**. 
@@ -124,30 +124,25 @@ The **Filter display preferences** page includes the following fields:
 
 
 > [!NOTE]
-> 1. Filter settings for attributes are only applicable for 'Product attributes' and can be used for refining product search and category browsing results. These filter settings do not apply to Customer search or Order search, although same attributes could be used for enriching customer or order information. 
-> 
-> 1. Among default eCommerce modules, there is no out-of-box support available for filter settings with 'Display control' as 'Range' or 'Slider' or 'Slider with bars'. 'Range' and 'Slider' continue to be supported for Point-of-sale solution, whereas 'Slider with Bars' was applicable for legacy 'SharePoint' online storefront and continues to be available for 3rd party integration and custom scenarios. 
-> 
-> 1. It is ideally recommended for refinable attributes to have an attribute of type 'fixed-list', but along with that our recommendations is to keep the list manageable and have upto 100-200 unique values and certainly not consider 'fixed-list' type if the unique values for the refiner are going to be in 1000s to 10000s unique values. In that case, best-suited attribute type is 'Text' and not 'Fixed-list'
-> 
-> 1. Translations are critical for attribute names and their values. For attribute of type fixed-list, you can define translations on 'attribute-type' for its values whereas for every other attribute you are able to define translations on the forms where you may define the values for attributes. e.g., For attribute of type 'text' one can define translations for 'default' value on the 'attribute', whereas if you were to override default value at a product level, then you can define translations for it on the 'product attributes' form for the product. 
-> 
-> 1. Once an attribute has been marked as refinable for a channel, then you should not update the 'Attribute type' as it would impact the publishing of product data to search index. It is recommended to create a new attribute for new type of refiner and retire previous attribute by removing from other attribute groups. 
-> 
-> 1. Search by attributes is supported, whereas it only fetches result for exact match of search words. e.g., if you were to have an attribute 'Fabric' with value as 'Cashmere cotton' then if a shopper were to search for 'Cash' then product with 'Fabric = Cashmere cotton' shall not be retrieved, whereas if user were to search for 'Cashmere' or 'Cotton' or 'Cashmere Cotton' then this product will be retrieved among the search results. 
-
+> - Filter settings for attributes are only applicable for 'Product attributes' and can be used for refining product search and category browsing results. These filter settings do not apply to Customer search or Order search, although same attributes could be used for enriching customer or order information. 
+> - Among default eCommerce modules, there is no out-of-box support available for filter settings with 'Display control' as 'Range' or 'Slider' or 'Slider with bars'. 'Range' and 'Slider' continue to be supported for Point-of-sale solution, whereas 'Slider with Bars' was applicable for legacy 'SharePoint' online storefront and continues to be available for 3rd party integration and custom scenarios. 
+> - It is ideally recommended for refinable attributes to have an attribute of type 'fixed-list', but along with that our recommendations is to keep the list manageable and have upto 100-200 unique values and certainly not consider 'fixed-list' type if the unique values for the refiner are going to be in 1000s to 10000s unique values. In that case, best-suited attribute type is 'Text' and not 'Fixed-list'
+> - Translations are critical for attribute names and their values. For attribute of type fixed-list, you can define translations on 'attribute-type' for its values whereas for every other attribute you are able to define translations on the forms where you may define the values for attributes. e.g., For attribute of type 'text' one can define translations for 'default' value on the 'attribute', whereas if you were to override default value at a product level, then you can define translations for it on the 'product attributes' form for the product. 
+> - Once an attribute has been marked as refinable for a channel, then you should not update the 'Attribute type' as it would impact the publishing of product data to search index. It is recommended to create a new attribute for new type of refiner and retire previous attribute by removing from other attribute groups. 
+> - Search by attributes is supported, whereas it only fetches result for exact match of search words. e.g., if you were to have an attribute 'Fabric' with value as 'Cashmere cotton' then if a shopper were to search for 'Cash' then product with 'Fabric = Cashmere cotton' shall not be retrieved, whereas if user were to search for 'Cashmere' or 'Cotton' or 'Cashmere Cotton' then this product will be retrieved among the search results. 
 
 ### Additional options for attribute *(applicable for legacy SharePoint online storefront and external integrations)*
-Here are the remaining attribute metadata options on the **Attributes** page:
 
-- Searchable
-- Retrievable
-- Can be queried
-- Sortable
-- Ignore case and format
-- Complete match
+These are the remaining attribute metadata options on the **Attributes** page:
 
-These options were originally intended to improve the search functionality for the *legacy* online storefront that was SharePoint based and do not necessarily apply to Dynamics 365 Commerce version of eCommerce website or Point-of-sale (POS). We continue to support headless integration and thus, these properties continue to be available to export this metadata for attributes using eCommerce Publishing Software Development Kit (SDK). Customers can use this SDK to put products into an external search index of their choice. In that way, they can build an optimal index to make sure that they index only attributes that, *in their opinion*, should be indexed.
+- **Searchable**
+- **Retrievable**
+- **Can be queried**
+- **Sortable**
+- **Ignore case and format**
+- **Complete match**
+
+These options were originally intended to improve the search functionality for the legacy online storefront that was SharePoint based and do not necessarily apply to Dynamics 365 Commerce e-commerce websites or point-of-sale (POS). We continue to support headless integration and thus, these properties continue to be available to export this metadata for attributes using the Commerce software development kit (SDK). Customers can use the Commerce SDK to put products into an external search index of their choice. In that way, they can build an optimal index to make sure that they index only attributes that, *in their opinion*, should be indexed.
 
 > [!NOTE]
 > For information about the purpose of these remaining options, see [Overview of the search schema in SharePoint Server 2013](/SharePoint/search/search-schema-overview).
