@@ -3427,6 +3427,8 @@
             href: warehousing/put-to-wall-put-to-store.md
           - name: Outbound workload visualization
             href: warehousing/outbound-workload-visualization.md
+          - name: Manually handle sales and transfer line picking exceptions
+            href: warehousing/manual-order-line-picking-exception-handling.md
         - name: Replenishment
           items:
           - name: Replenishment overview
