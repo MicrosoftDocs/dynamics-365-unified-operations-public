@@ -62,6 +62,8 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/commerce
         - name: Get notified about service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/commerce
+        - name: Proactive quality updates
+          href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
         - name: Data task automation
           href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
         - name: Delivering ISV solutions using One Version
@@ -701,7 +703,7 @@
         - name: Options for preventing discounts for retail products 
           href: prevent-discounts.md
         - name: Tender-based discounts 
-          href: tender_based_discounts.md
+          href: tender-based-discounts.md
         - name: Shipping discount overview 
           href: retail-shipping-discount.md
         - name: Configure gift with purchase promotions
@@ -1418,8 +1420,6 @@
         items:
         - name: Fiscal registration service integration sample for Austria
           href: localizations/emea-aut-fi-sample.md
-        - name: Deployment guidelines for cash registers for Austria
-          href: localizations/emea-aut-deployment.md   
         - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
           href: localizations/emea-aut-fi-sample-sdk.md
       - name: Brazil
@@ -1778,6 +1778,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/commerce
             - name: OrderBy
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/commerce
+            - name: Repeat
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/commerce
             - name: Reverse
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/commerce
             - name: Split

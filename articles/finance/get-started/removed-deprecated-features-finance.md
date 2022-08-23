@@ -53,6 +53,17 @@ This list is intended to help you consider these removals and deprecations for y
 | **Deployment option** | All |
 | **Status** | Deprecated: After April 2023, the **Stock transfer orders that have tax on the transfer price** functionality will no longer receive support with bug fixes and security fixes. Customers will be asked to use the improved functionality, [Stock transfer orders for India](../../finance/localizations/apac-ind-stock-transfer.md). After October 2023, the **Stock transfer orders that have tax on the transfer price** functionality will be no longer available, and customers will be asked to move to the improved functionality. |
 
+### Bank statement import and export of positive pay file
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** |Replaced by improved functionality, import bank statements and export positive pay files.| 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: XSLT functionality for importing and exporting files will no longer receive support with bug fixes and security fixes. Customers will be asked to use the improved functionality: [Set up positive pay files by using Electronic reporting](../../finance/accounts-payable/set-up-positive-pay-er.md) and [Set up advanced bank reconciliation import by using Electronic reporting](../../finance/accounts-payable/import-bai2-er.md). After September 2022, the XSLT functionality will be no longer available, and customers will be asked to move to the improved functionality.|
+
+
 ## Features removed or deprecated in the Finance 10.0.26 release
 
 ### Sales tax report for Finland (design based on reporting codes)

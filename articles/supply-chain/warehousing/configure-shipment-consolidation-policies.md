@@ -4,7 +4,7 @@
 title: Configure shipment consolidation policies
 description: This article explains how to set up default and custom shipment consolidation policies.
 author: Mirzaab
-ms.date: 05/12/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -38,10 +38,7 @@ The scenarios that are presented in this article show how to set up default and 
 > [!IMPORTANT]
 > In the [first scenario](#scenario-1) that is described in this article, you will first set up a warehouse so that it uses the earlier shipment consolidation feature. You will then make shipment consolidation policies available. In this way, you can experience how the upgrade scenario works. If you plan to use a demo data environment to go through the first scenario, don't turn on the feature before you do the scenario.
 
-Before you can use the *Shipment consolidation policies* feature, you must turn it on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Warehouse management*
-- **Feature name:** *Consolidate shipment*
+To use the *Shipment consolidation policies* feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Shipment consolidation policies* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Make demo data available
 

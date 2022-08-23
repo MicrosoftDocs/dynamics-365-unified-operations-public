@@ -29,9 +29,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Configure leave and absence types
 
-> [!Important]
-> The functionality noted in this article is currently available for customers on the stand-alone Dynamics 365 Human Resources. Some or all of the functionality will be available as part of a future release on the Finance infrastructure after Finance release 10.0.26.
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Leave types in Dynamics 365 Human Resources define the types of absences that employees can report. You can tailor leave types according to the needs of your organization. Examples of leave types include:
@@ -47,31 +44,21 @@ Leave types in Dynamics 365 Human Resources define the types of absences that em
 
 ## Add a leave type
 
-1. On the **Leave and absence** page, select the **Links** tab.
-
+1. On the **Leave and absence** workspace, select the **Links** tab.
 2. Under **Setup**, select **Leave and absence types**.
-
 3. Select **New**.
-
 4. Enter a name for the leave type under **Type**, select a workflow from **Workflow ID**, and enter a description under **Description**.
-
 5. In **General**, select **None**, **Scheduled**, or **Unscheduled** from the **Category** dropdown.
-
 6. Select an earning code from the **Earning code** dropdown.
-
 7. Under **Reason code required**, choose whether you want to require a reason code. If you want to require reason codes, you might need to add them. Under **Reason codes**, select **Add**, select a reason code, and then select the **Enabled** checkbox next to it.
-
 8. Under **Restrict access to selected roles**, choose whether you want to restrict access. Then select the security roles under **Security roles for this leave type**. The security roles are defined in the workflow you selected under **Workflow ID** earlier in this procedure.
-
 9. Under **Calendar color**, choose what color to display on leave and absence calendars for this leave type. 
-
 10. Under **Suspension relations**, choose if you want to have this leave type either suspend another leave type or be suspended by another leave type. When a leave of absence request is submitted for the suspending leave type, a leave suspension will automatically be created for the suspended leave type. 
-
-10. Select **Save**.
+11. Select **Save**.
 
 ## Configure leave type rules
 
-1. Set rounding options for the leave type. Options include **None**, **Up**, **Down**, and **Nearest**. You can also set rounding precision for the leave type.
+1. Set rounding options for the **Leave and absence** type. Options include **None**, **Up**, **Down**, and **Nearest**. You can also set rounding precision for the leave type.
 
 2. Set **Holiday correction** for the leave type. When you select this option, the number of holidays that fall on a work day will be used to determine how to accrue time off for the leave type. For example, if Christmas Day falls on a Monday, Human Resources will subtract one day from the leave type when processing accruals.
 

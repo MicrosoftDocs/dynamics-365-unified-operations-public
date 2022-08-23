@@ -2,7 +2,7 @@
 title: Recalculate line net amounts when importing sales orders, quotations, and returns
 description: This article describes whether and how the system recalculates line net amounts when sales orders, quotations, and returns are imported. It also explains how you can control the behavior in different versions of Microsoft Dynamics 365 Supply Chain Management.
 author: Henrikan
-ms.date: 06/08/2022
+ms.date: 08/05/2022
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -31,7 +31,7 @@ In these specific scenarios, the effect of the trade agreement evaluation policy
 
 ## Control calculations of line net amounts in versions 10.0.29 and later
 
-Supply Chain Management 10.0.29 introduced a feature that is named *Calculate line net amount on import*. This feature adds an option that is named **Calculate line net amount** to the **Accounts receivable parameters** page. This option lets you select between the new and legacy behaviors for calculating line net amounts on import.
+Supply Chain Management version 10.0.29 introduced a feature that is named *Calculate line net amount on import*. This feature adds an option that is named **Calculate line net amount** to the **Accounts receivable parameters** page. This option lets you select between the new and legacy behaviors for calculating line net amounts on import.
 
 ### Turn the Calculate line net amount on import feature on or off
 
