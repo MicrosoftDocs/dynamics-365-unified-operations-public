@@ -106,11 +106,11 @@ To generate and print this report, go to **Warehouse management \> Shipments \> 
 
 ## bill of lading report
 
-When the hazardous materials feature is turned on in your system, the **bill of lading** report includes a **Hazardous materials** column that indicates whether a load includes hazardous materials. This report is available from the **All loads** page, as usual.
+When the hazardous materials feature is turned on for your system, the **bill of lading** report includes a **Hazardous materials** column that indicates whether a load includes hazardous materials. This report is available from the **All loads** page, as usual.
 
 ## Packing list report
 
-When the hazardous materials feature is turned on in your system, packing lists include additional information that is related to the shipping print text for an item. This report is available from the **All loads** page, as usual.
+When the hazardous materials feature is turned on for your system, packing lists include additional information that is related to the shipping print text for an item. This report is available from the **All loads** page, as usual.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

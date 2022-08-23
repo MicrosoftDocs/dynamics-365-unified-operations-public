@@ -64,6 +64,8 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/finance
         - name: Get notified about service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/finance
+        - name: Proactive quality updates
+          href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/finance
         - name: Data task automation
           href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/finance
         - name: Delivering ISV solutions using One Version
@@ -1966,6 +1968,8 @@
             href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
           - name: Move NF-e XML files as attachments
             href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
+          - name: NT2021.004 – Layout and validation updates in the electronic fiscal document (NF-e)
+            href: localizations/latam-bra-nfe-nt2021.004.md
           - name: NT2020.005 – Layout and validation updates in the electronic fiscal document (NF-e)
             href: localizations/latam-bra-nfe-nt2020.005.md
           - name: NT2020.006 – Intermediary sales digital platform for NF-e

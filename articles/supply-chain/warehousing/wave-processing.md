@@ -4,7 +4,7 @@
 title: Wave creation and processing
 description: This article describes how to create, process, and release a wave to create picking work for a load, shipment, production order, or kanban order.
 author: Mirzaab
-ms.date: 03/08/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -196,7 +196,7 @@ Use the **Wave batch job details** page to inspect the batch jobs and related ta
 
 ### Turn the Wave batch job details page on or off
 
-As of Supply Chain Management version 10.0.25, the **Wave batch job details** page is turned on by default. Admins can turn this functionality on or off by searching for the *Wave batch job details* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.25, the feature is turned on by default. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Wave batch job details* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Use the Wave batch job details page
 

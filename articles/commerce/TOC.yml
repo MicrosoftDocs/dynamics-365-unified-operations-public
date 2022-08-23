@@ -62,6 +62,8 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/commerce
         - name: Get notified about service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/commerce
+        - name: Proactive quality updates
+          href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
         - name: Data task automation
           href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
         - name: Delivering ISV solutions using One Version
@@ -702,6 +704,8 @@
           href: prevent-discounts.md
         - name: Tender-based discounts 
           href: tender_based_discounts.md
+        - name: Shipping discount 
+          href: shipping-discount.md
         - name: Configure gift with purchase promotions
           href: gift-with-purchase.md
         - name: Set up coupons  
@@ -1284,6 +1288,10 @@
           items:
           - name: Cookie consent module
             href: cookie-consent-module.md
+        - name: Chat modules
+          items:
+          - name: Commerce chat module
+            href: commerce-chat-module.md
       - name: Search
         items:
         - name: Default category landing page and search results page overview

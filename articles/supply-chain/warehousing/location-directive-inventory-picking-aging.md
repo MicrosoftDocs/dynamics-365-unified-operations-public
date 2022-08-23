@@ -4,7 +4,7 @@
 title: Location directive inventory picking aging
 description: This article explains how to use first in, first out (FIFO) and last in, first out (LIFO) location directive strategies during picking.
 author: Mirzaab
-ms.date: 07/15/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,7 +38,7 @@ When inventory is first received or created in the warehouse, the system updates
 
 To make this feature available, turn on the following features in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md), in this order:
 
-1. *Warehouse location status*  (As of version 10.0.29, this feature is turned on by default. For more information, see [Warehouse location status](warehouse-location-status.md).)
+1. *Warehouse location status*  (As of version 10.0.29, this feature is mandatory and can't be turned off. For more information, see [Warehouse location status](warehouse-location-status.md).)
 1. *Location directive inventory picking aging*
 
 ## Feature requirements

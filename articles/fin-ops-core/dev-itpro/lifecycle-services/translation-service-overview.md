@@ -3,7 +3,7 @@
 
 title: Dynamics 365 Translation Service overview
 description: This article provides information about the Microsoft Dynamics 365 Translation Service (DTS).
-author: abmotgi
+author: arianapadilla
 ms.date: 10/25/2021
 ms.topic: overview
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: ["6154", "intro-internal"]
 ms.assetid: ejchoGIT
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: abmotgi
+ms.author: arianap
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

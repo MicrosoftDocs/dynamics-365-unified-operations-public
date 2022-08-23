@@ -29,9 +29,6 @@ ms.dyn365.ops.version: Human Resources
 
 # Set up employment types
 
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Set up employment types in Dynamics 365 Human Resources to match your workers.
