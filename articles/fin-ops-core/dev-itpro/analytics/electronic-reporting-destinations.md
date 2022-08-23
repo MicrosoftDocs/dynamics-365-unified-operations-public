@@ -243,6 +243,52 @@ On the **General** FastTab, in the **Send folder as** field, select one of the f
 
 If you set the **Send folder as** field to **Separate files** for a **Folder** component that contains other nested **Folder** components, the setting isn't recursively applied to the nested **Folder** components.
 
+## <a name="change-page-layout-properties-of-a-template"></a> Change page layout properties of a template
+
+You can configure an ER destination for an ER format component that is designed to use a template in Microsoft Office (Excel or Word) format for reports generation. If you are not the owner of this format and you need to change page layout properties of its template, in versions of Finance before version 10.0.29, you have to create a derived format and modify such properties of its template. Then, you have to spend time maintaining the derived format configuration. However, in version 10.0.29 and later, you can change page layout properties of such a template at runtime avoiding creation and further maintenance of a derived format configuration. To achieve this, you can set up the desired properties as part of settings of the configured ER destination. So, when you run an ER format and execute an ER destination that is configured to use certain page layout properties, the values of page layout properties of the executed destination will be applied to the using template replacing the original template's properties. You can configure different destinations for the same format's component configuring different page layout properties for the using template.
+
+The following properties can be configured in an ER destination for a format component that is designed to use a template in Microsoft Office (Excel or Word) format:
+
+- Page orientation
+    - Portrait
+    - Landscape
+- Paper size
+    - A3
+    - A4
+    - A5
+    - B4
+    - B5
+    - Executive
+    - Legal
+    - Letter
+    - Statement
+    - Tabloid
+- Page margins
+    - Top
+        - Header
+    - Bottom
+        - Footer
+    - Left
+    - Right
+
+> [!NOTE]
+> Be aware that the configured in this way template's page orientation must be aligned with the [page orientation for PDF conversion](#select-a-page-orientation-for-pdf-conversion) in case the PDF conversion is configured.
+
+You must select the length unit for setting page margins:
+
+- Inches
+- Centimeters
+- Millimeters
+
+![Set up page layout properties on the Electronic reporting destination page.](./media/er_destinations-set-page-layout-properties.png)
+
+> [!TIP]
+> When a margin value is nominated in centimeters and specified with multiple decimals, it will be rounded at runtime to the nearest value with 1 decimal point.
+>
+> When a margin value is nominated in millimeters and specified with decimals, it will be rounded at runtime for Excel to the nearest integer value with no decimal point.
+>
+> When a margin value is nominated in millimeters and specified with multiple decimals, it will be rounded at runtime for Word to the nearest value with one decimal point.
+
 ## Security considerations
 
 Two types of privileges and duties are used for ER destinations. One type controls a user's overall ability to maintain the destinations that are configured for a legal entity (that is, it controls access to the **Electronic reporting destinations** page). The other type controls an application user's ability to override, at runtime, the destination settings that an ER developer or ER functional consultant has configured.
