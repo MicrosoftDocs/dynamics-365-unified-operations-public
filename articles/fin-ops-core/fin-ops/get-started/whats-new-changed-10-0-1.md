@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: What's new or changed in Finance and Operations version 10.0.1 (April 2019)
 description: This article describes features that are either new or changed in Dynamics 365 Finance and Operations version 10.0.1. This version will be released in April.
-author: tonyafehr
+author: sericks007
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: sericks
+ms.search.region: Global
+ms.author: sericks
+ms.search.validFrom: 
+ms.dyn365.ops.version: Release 10.0.1
 ms.custom: 
 ms.assetid: a362a31d-44df-45c5-b698-64c5264c592e
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
-ms.search.validFrom:  
-ms.dyn365.ops.version: Release 10.0.1
-
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 # What's new or changed in Finance and Operations version 10.0.1 (April 2019)
 

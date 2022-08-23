@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: Import files in XML format with optional attributes
 description: This article provides information about designing ER formats which specify XML attributes to parse incoming electronic documents in XML format.
-author: NickSelin
+author: kfend
 ms.date: 07/03/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: EROperationDesigner
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
 ms.search.region: global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.search.form: EROperationDesigner
 ---
 
 # Import files in XML format with optional attributes

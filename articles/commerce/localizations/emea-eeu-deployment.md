@@ -1,27 +1,18 @@
 ---
-# required metadata
 title: Deployment guidelines for Advance Invoice report printing for Czech Republic, Hungary, and Poland
 description: This article describes how to build extensions of the Commerce components to enable printing advance invoices from POS in Czech Republic, Hungary, and Poland.
-author: anmukh
+author: josaw1
 ms.date: 11/01/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Eastern Europe
-ms.search.industry: Retail
-ms.author: anmukh
+ms.author: josaw
 ms.search.validFrom: 2018-11-30
 ms.dyn365.ops.version: 8.1.1
-
+ms.search.industry: Retail
 ---
 # Deployment guidelines for Advance Invoice report printing for Czech Republic, Hungary, and Poland
 

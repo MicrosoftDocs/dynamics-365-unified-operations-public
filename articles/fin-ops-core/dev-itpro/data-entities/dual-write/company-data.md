@@ -1,11 +1,11 @@
 ---
 title: Company concept in Dataverse
 description: This article describes the integration of company data between finance and operations and Dataverse.
-author: RamaKrishnamoorthy 
+author: RamaKrishnamoorthy
 ms.date: 08/04/2020
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-06
@@ -25,8 +25,10 @@ Dataverse doesn't have an equivalent concept. The closest concept is *business u
 Because business unit and company aren't equivalent concepts, it isn't possible to force a one-to-one (1:1) mapping between them for the purpose of Dataverse integration. However, because users must, by default, be able to see the same rows in the application and Dataverse, Microsoft has introduced a new table in Dataverse that is named cdm\_Company. This table is equivalent to the Company table in the application. To help guarantee that visibility of rows is equivalent between the application and Dataverse out of the box, we recommend the following setup for data in Dataverse:
 
 + For each finance and operations Company row that is enabled for dual-write, an associated cdm\_Company row is created.
-+ When a cdm\_Company row is created and enabled for dual-write, a default business unit is created that has the same name. Although a default team is automatically created for that business unit, the business unit isn't used.
-+ A separate owner team is created that has the same name. It's also associated with the business unit.
+
++ When a cdm\_Company row is created and enabled for dual-write, a default business unit is created that has the same name. Although a default owner team is automatically created for that business unit, the business unit isn't used.
++ A separate owner team is created that has the same name with a Dual Write suffix. It's also associated with the business unit.
+
 + By default, the owner of any row that is created and dual-written to Dataverse is set to the "DW Owner" team that is linked to the associated business unit.
 
 The following illustration shows an example of this data setup in Dataverse.

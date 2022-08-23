@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Fiscal archive for France
 description: This article provides information about the fiscal archive and the Fiscal archive integrity verification tool that are available in the Microsoft Dynamics 365 Commerce localization for France.
 author: EvgenyPopovMBS
-manager: annbe
 ms.date: 05/17/2022
 ms.topic: article
 ms.prod: 
-
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailGrandTotalJournalTable
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: France
-ms.search.industry: Retail
-ms.author: epopov
-ms.search.validFrom: 2021-2-19
+ms.author: josaw
+ms.search.validFrom: 2021-02-19
 ms.dyn365.ops.version: 10.0.17
-
+ms.search.industry: Retail
+ms.search.form: RetailGrandTotalJournalTable
+manager: annbe
 ---
 # Fiscal archive for France
 

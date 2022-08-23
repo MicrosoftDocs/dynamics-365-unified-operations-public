@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Page layout in the web client
-description: This article discusses layout in the web client. Layout is a design process that specifies how controls appear on a page. 
+description: This article discusses layout in the web client. Layout is a design process that specifies how controls appear on a page.
 author: jasongre
 ms.date: 01/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 28251
-ms.assetid: 1cfa479c-71fa-4eb6-8d12-ad4d65c8ecf3
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 28251
+ms.assetid: 1cfa479c-71fa-4eb6-8d12-ad4d65c8ecf3
 ---
 
 # Page layout in the web client

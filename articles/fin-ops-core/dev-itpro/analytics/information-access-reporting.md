@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Information access and reporting
 description: This article explains the various reporting options available as part of the platform.
 author: RichdiMSFT
@@ -8,23 +6,14 @@ ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 266104
-ms.assetid: dbc1ac2d-7079-411c-b768-5f820859e29e
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: richdi
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-
+ms.custom: 266104
+ms.assetid: dbc1ac2d-7079-411c-b768-5f820859e29e
 ---
 
 # Information access and reporting

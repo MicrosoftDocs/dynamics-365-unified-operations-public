@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Design an ER format to keep rows together on the same Excel page
 description: This article explains how to design an Electronic reporting (ER) format that keeps rows together on the same Microsoft Excel page.
-author: NickSelin
+author: kfend
 ms.date: 02/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: EROperationDesigner
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2022-03-01
 ms.dyn365.ops.version: Version 10.0.26
-
+ms.custom: 220314
+ms.assetid: 
+ms.search.form: EROperationDesigner
 ---
 
 # Design an ER format to keep rows together on the same Excel page

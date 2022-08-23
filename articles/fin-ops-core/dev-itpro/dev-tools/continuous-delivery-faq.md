@@ -5,12 +5,11 @@ author: laneswenka
 ms.date: 01/21/2020
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: laswenka
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-
 ---
 
 # Development and continuous delivery FAQ

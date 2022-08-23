@@ -269,7 +269,7 @@ This section describes the setup that is required before you run the Party posta
 
     ![Importing the Dataverse Party records.](media/data-factory-import-party.png)
 
-9. In the data factory, run the Party postal address and Party electronic address templates, one after the other.
+9. In the data factory, run the Party electronic address and then the Party postal address templates, one after the other.
 
     + The Party postal address template upserts all postal address records in the customer engagement app, and associates them with corresponding **Account**, **Contact**, and **Vendor** records. It also generates three .csv files: ImportFONewPostalAddressLocation.csv, ImportFONewPartyPostalAddress.csv, and ImportFONewPostalAddress.csv.
     + The Party electronic address template upserts all electronic addresses in the customer engagement app, and associates them with corresponding **Account**, **Contact**, and **Vendor** records. It also generates one .csv file: ImportFONewElectronicAddress.csv.

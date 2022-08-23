@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Validate applications for finance and operations apps
 description: This article provides information about the requirements that are used to verify that custom code meets Microsoft guidelines.
-author: kfend
+author: sericks007
 ms.date: 04/13/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+ms.search.region: Global
+ms.author: sericks
 ms.custom: 196913
 ms.assetid: 5f9729e3-ff67-4526-b2aa-d7f9f3062a41
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: omarc
-
-
 ---
 
 # Validate applications for finance and operations apps

@@ -1,17 +1,17 @@
 ---
 title: End-to-end scenario for the Fleet Management sample application
 description: This tutorial walks you through an end-to-end scenario that the Fleet Management sample application is designed to support.
-author: RobinARH
+author: gianugo
 ms.date: 07/08/2019
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 10254
-ms.assetid: e289504e-a1d9-44b7-8f84-f99f330321d6
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 10254
+ms.assetid: e289504e-a1d9-44b7-8f84-f99f330321d6
 ---
 
 # End-to-end scenario for the Fleet Management sample application

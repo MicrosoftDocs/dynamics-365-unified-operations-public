@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Channels overview
 description: This article presents an overview of channels in Microsoft Dynamics 365 Commerce.
 author: samjarawan
@@ -8,22 +6,13 @@ ms.date: 01/27/2020
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-
+ms.assetid: 
 ---
 # Channels overview
 

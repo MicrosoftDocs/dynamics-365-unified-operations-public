@@ -303,7 +303,7 @@ The following table shows the set of features that the Dynamics 365 Payment Conn
 | [Dedicated payment terminals and prompts for a printer and cash drawer](../pos-multi-hws.md) | ✔<br>(Starting with 10.0.12) | |
 | [SDK-level tipping support through the Adyen connector](tipping.md) | ✔<br>(Starting with 10.0.14) | |
 | [Incremental capture for order invoicing](incremental-capture.md) |  | ✔<br>(Starting with 10.0.18) |
-| [Wallet Payments](./wallets.md) |  | ✔<br>(Starting with 10.0.20) |
+| [Wallet Payments](../wallets.md) |  | ✔<br>(Starting with 10.0.20) |
 | [Google Pay with Adyen](google-pay-adyen.md) |  | ✔<br>(Starting with 10.0.27) |
 
 ## Next steps
@@ -321,4 +321,3 @@ For information on signing up for and configuring the Dynamics 365 Payment Conne
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
 
 [!INCLUDE [footer-include](../../includes/footer-banner.md)]
-

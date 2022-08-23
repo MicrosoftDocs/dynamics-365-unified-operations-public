@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Help secure analytical workspaces and reports by using Power BI Embedded
 description: This article describes the recommended strategies for securing access to both the reports that are delivered by using Power BI Embedded and the data set.
 author: RichdiMSFT
@@ -8,23 +6,14 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 21551
-ms.assetid: 
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: richdi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 21551
+ms.assetid: 
 ---
 
 # Help secure analytical workspaces and reports by using Power BI Embedded

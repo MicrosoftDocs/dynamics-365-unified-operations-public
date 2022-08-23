@@ -1,31 +1,20 @@
 ---
-# required metadata
-
 title: On-premises deployment overview
-description: Dynamics 365 Finance + Operations (on-premises) supports running business processes in customer data centers. 
-author: cabeln
+description: Dynamics 365 Finance + Operations (on-premises) supports running business processes in customer data centers.
+author: faix
 ms.date: 11/30/2021
 ms.topic: overview
-ms.prod: dynamics-365 
-ms.service:
+ms.prod: dynamics-365
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: ["23401", "intro-internal"]
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: cabeln
+ms.author: osfaixat
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Platform Update 8
-
+ms.custom: 23401,  ""intro-internal
+ms.assetid: 
+ms.service: 
 ---
 # On-premises deployment overview
 

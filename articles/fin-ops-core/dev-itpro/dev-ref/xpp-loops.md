@@ -1,15 +1,15 @@
 ---
 title: X++ loop statements
 description: This article describes loop statements in X++.
-author: RobinARH
+author: josaw1
 ms.date: 06/17/2019
 audience: Developer
-ms.devlang: xpp
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.devlang: xpp
 ---
 
 # X++ loop statements

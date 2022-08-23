@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Regulatory Configuration Services (RCS) - Globalization features
-description: This article explains how to use Microsoft Regulatory Configuration Services (RCS) and the Global repository to create and use Globalization features. 
-author: JaneA07
+description: This article explains how to use Microsoft Regulatory Configuration Services (RCS) and the Global repository to create and use Globalization features.
+author: kfend
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RCS, RCSWorkspace, e-Invoicing service
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 97423
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: leguo
+ms.author: filatovm
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-
+ms.custom: 97423
+ms.assetid: 
+ms.search.form: RCS, RCSWorkspace, e-Invoicing service
 ---
 
 # Regulatory Configuration Services (RCS) - Globalization features

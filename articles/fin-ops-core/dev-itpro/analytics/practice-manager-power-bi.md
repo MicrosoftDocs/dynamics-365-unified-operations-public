@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Practice manager Power BI content
 description: This article describes what is included in the Practice manager Power BI content.
 author: sericks007
@@ -8,22 +6,14 @@ ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ProjManagementWorkspace 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: sericks
-ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.version: July 2017 update 
-
+ms.author: kfend
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
+ms.assetid: 
+ms.search.form: ProjManagementWorkspace
 ---
 
 # Practice manager Power BI content

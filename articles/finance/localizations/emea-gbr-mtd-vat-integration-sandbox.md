@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Test interoperation with the MTD VAT sandbox
 description: This article explains how to test the interoperation of Microsoft Dynamics 365 Finance with the Making Tax Digital for value-added tax (MTD VAT) application programming interface (API) of Her Majesty's Revenue and Customs (HMRC).
-author: liza-golub
+author: AdamTrukawka
 ms.date: 08/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: United Kingdom
-# ms.search.industry: 
-ms.author: elgolu
-ms.search.validFrom: 08/06/2021
-
+ms.author: atrukawk
+ms.search.validFrom: 2021-08-06
 ---
 
 # Test interoperation with the MTD VAT sandbox

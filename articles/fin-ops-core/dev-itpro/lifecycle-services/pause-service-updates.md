@@ -4,7 +4,7 @@
 title: Pause service updates through Lifecycle Services (LCS)
 description: This article explains how to pause service updates to your environments.
 author: laneswenka 
-ms.date: 04/21/2022
+ms.date: 08/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -62,7 +62,7 @@ If you decide to pause updates, you have these options:
 > - Version N-1 is one version older than N, such as 10.0.24
 > - Version N-2 is two versions older than N, such as 10.0.23
 > - Version N-3 is three versions older than N, such as 10.0.22
-> - Version N-4 is four versions older than N, such as 10.0.22 (In this example, customers on version 10.0.22 **can't** pause updates.)
+> - Version N-4 is four versions older than N, such as 10.0.21 (In this example, customers on version 10.0.21 **can't** pause updates.)
 
 You can pause a maximum of three continuous updates at a time. For example, if you're using version 10.0.22, you can pause updates to version 10.0.23, 10.0.24, and 10.0.25. However, you can't pause the update to version 10.0.26. We require that you take at least two updates in a year.
 

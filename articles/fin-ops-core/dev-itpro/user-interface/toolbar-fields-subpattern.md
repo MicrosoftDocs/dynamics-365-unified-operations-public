@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Toolbar and Fields subpattern
 description: This article provides information about the Toolbar and Fields subpattern. This container pattern is used to show actions above a subpattern of data fields.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer 
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 15911
-ms.assetid: c5d6aa38-1f5f-41e5-9d90-11766d34a947
+audience: Developer
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 15911
+ms.assetid: c5d6aa38-1f5f-41e5-9d90-11766d34a947
 ---
 
 # Toolbar and Fields subpattern

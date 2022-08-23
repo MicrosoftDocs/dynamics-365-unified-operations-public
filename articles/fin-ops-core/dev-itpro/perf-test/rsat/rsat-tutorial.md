@@ -5,7 +5,7 @@ author: FrankDahl
 ms.date: 09/23/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2017-06-30

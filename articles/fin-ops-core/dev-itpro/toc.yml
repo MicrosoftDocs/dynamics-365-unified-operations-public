@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.29 (October 2022)
+          href: get-started/whats-new-platform-updates-10-0-29.md
         - name: Platform updates for version 10.0.28 (August 2022)
           href: get-started/whats-new-platform-updates-10-0-28.md
         - name: Platform updates for version 10.0.27 (July 2022)
@@ -1090,6 +1092,8 @@
                   href: data-entities/dual-write/link-your-environment.md
                 - name: Enable entity map for dual-write
                   href: data-entities/dual-write/enable-entity-map.md
+            - name: Enable a five-minute session time-out window for dual-write sessions
+              href: data-entities/dual-write/5-minute-mode.md
             - name: Separated dual-write application orchestration package
               href: data-entities/dual-write/separated-solutions.md
             - name: Currency data-type migration for dual-write

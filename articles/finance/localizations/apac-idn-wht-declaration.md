@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Withholding tax report for Indonesia
 description: This article explains how to configure and generate the withholding tax report for Indonesia.
-author: sndray
+author: AdamTrukawka
 ms.date: 12/15/2021
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope:
-# ms.tgt_pltfrm: 
-# ms.custom: NotInTOC
 ms.search.region: Global
-# ms.search.industry:
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2021-12-02
 ms.dyn365.ops.version: 10.0.20
+ms.search.scope: 
 ---
 
 # Withholding tax report for Indonesia (ID-00005)

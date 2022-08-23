@@ -4,7 +4,7 @@
 title: Service update availability
 description: This article provides information about the different release options.
 author: hmahl
-ms.date: 06/21/2022
+ms.date: 08/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -69,7 +69,7 @@ Customers will be able to take up to 7 service updates per year and are required
 > Beginning in 2022, we are making adjustments to end-of-year service update availability. Servicing for the major October release will be extended into January.  Similarly, servicing for the November release will be extended into March. The January release has been cancelled.
 
 > [!Note]
-> The name of the month given to a release doesn't always indidicate when the auto-update may occur.  For example, you'll notice in the table above that the auto-update schedule for the "October" release in 2022 actually starts on September 30, 2022.
+> The name of the month given to a release doesn't always indicate when the auto-update may occur.  For example, you'll notice in the table above that the auto-update schedule for the "October" release in 2022 actually starts on September 30, 2022.
 
 Previews are made available as a deployable package via the Shared Asset Library in Lifecycle Services. For more details, see [One Version service updates FAQ](one-version.md). 
 
@@ -82,7 +82,7 @@ Service updates contain both application and platform changes that are critical 
 
 ## Release processes
 
-Each new release is designed and developed by the Dynamics 365 team. Any new release is first validated by the feature team, then by the finance and operations teams. During this time, extensive testing is done on various test topologies. A compatibility checker also runs tests to ensure backward compatibility. In addition, a [Release Validation Program](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR56j8lZs0FdAvwT75_WNFyxUQVdKVkVORjVDNloxTEkwS1JUSUxWN1pSWi4u) is available for customers to join. This program allows customers to share artifacts, such as databases and code, that is used for benchmarking and tested with automation to provide an additional layer of quality assurance.
+Each new release is designed and developed by the Dynamics 365 team. Any new release is first validated by the feature team, then by the finance and operations teams. During this time, extensive testing is done on various test topologies. A compatibility checker also runs tests to ensure backward compatibility.
 
 Early access to the upcoming service update is available to all customers by taking advantage of its preview. The preview service update is used to validate customizations, learn about new features, and provide feedback to Microsoft.  During this phase, the service update must be deployed on a Dev/Test environment.  This release cannot be used in production. Once released, the package can be downloaded from the Shared Asset Library in LCS. You agree to the program terms at install time. Sign up for access to preview (formerly known as the Preview Early Access Program (PEAP)) is no longer required.
 

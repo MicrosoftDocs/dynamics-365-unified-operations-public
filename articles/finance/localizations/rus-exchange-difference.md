@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Set up exchange rates for currency transactions
-description: This article explains how to set up exchange rates for currency transactions in Russia. 
-author: ShylaThompson
+description: This article explains how to set up exchange rates for currency transactions in Russia.
+author: AdamTrukawka
 ms.date: 10/28/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
 ms.author: kfend
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Set up exchange rates for currency transactions

@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: SDK and module library kit updates
 description: This article covers regular updates that will be released as part of the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
@@ -8,22 +6,14 @@ ms.date: 04/13/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 # SDK and module library updates
 

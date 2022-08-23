@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: VAT declaration (Germany)
 description: This article describes how to set up and generate an advance value-added tax (VAT) declaration for Germany in the official XML format.
-author: anasyash
+author: AdamTrukawka
 ms.date: 03/10/2022
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ---
 

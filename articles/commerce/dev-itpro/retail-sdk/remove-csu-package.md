@@ -1,16 +1,16 @@
 ---
 title: Remove Cloud Scale Unit extensions
 description: This article explains how to remove extensions from the Cloud Scale Unit (CSU).
-author: mugunthanm 
+author: josaw1
 ms.date: 06/29/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2020-06-29
 ms.dyn365.ops.version: 10.0.18
+ms.search.industry: Retail
 ---
 
 # Remove Cloud Scale Unit extensions

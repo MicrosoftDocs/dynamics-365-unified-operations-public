@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Germany overview
 description: This article provides an overview of Dynamics 365 Finance functionality that is specific to Germany.
-author: anasyash
+author: AdamTrukawka
 ms.date: 05/09/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
 ms.search.region: Germany
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
 ---
 
 # Germany overview

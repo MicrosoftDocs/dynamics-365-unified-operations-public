@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Use Barcode data sources to generate bar code images
 description: This article explains how to use Barcode data sources to generate bar code images.
-author: NickSelin
+author: kfend
 ms.date: 10/21/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERWorkspace, ERSolutionTable, ERModelMappingDesigner, EROperationDesigner
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: Version 10.0.13
-
+ms.custom: 220314
+ms.assetid: 
+ms.search.form: ERWorkspace, ERSolutionTable, ERModelMappingDesigner, EROperationDesigner
 ---
 
 # Use Barcode data sources to generate bar code images

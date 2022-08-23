@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Code migration and upgrade home page
 description: This article provides links to topics about code migration.
-author: RobinARH
+author: jasongre
 ms.date: 03/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: "intro-internal"
 ---
 
 

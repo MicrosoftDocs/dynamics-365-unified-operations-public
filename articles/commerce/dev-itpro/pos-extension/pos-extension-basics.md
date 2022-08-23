@@ -1,14 +1,14 @@
 ---
 title: POS extension basics
 description: This article describes the basic concepts of Point of Sale (POS) extension.
-author: mugunthanm
+author: josaw1
 ms.date: 04/13/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 04-13-2020
+ms.author: josaw
+ms.search.validFrom: 2020-04-13
 ms.dyn365.ops.version: AX 10.0.18
 ---
 

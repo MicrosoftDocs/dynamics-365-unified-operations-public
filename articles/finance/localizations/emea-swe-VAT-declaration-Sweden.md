@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: VAT declaration (Sweden)
 description: This article describes how to set up and generate a value-added tax (VAT) declaration for Sweden.
-author: anasyash
+author: AdamTrukawka
 ms.date: 09/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Sweden
-ms.author: anasyash
-# ms.search.industry: 
+ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
 ---
 
 # VAT declaration (Sweden)

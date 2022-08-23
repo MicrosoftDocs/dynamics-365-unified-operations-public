@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Use JOIN data sources in ER model mappings to get data from multiple application tables
 description: This article explains how you can use JOIN type data sources in Electronic reporting (ER).
-author: NickSelin
+author: kfend
 ms.date: 04/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERModelMappingDesigner, EROperationDesigner
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: Release 10.0.1
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: ERModelMappingDesigner, EROperationDesigner
 ---
 
 # Use JOIN data sources to get data from multiple application tables in Electronic reporting (ER) model mappings

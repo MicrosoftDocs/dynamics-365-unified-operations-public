@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: VAT declaration (Netherlands)
 description: This article provides information about VAT declaration for Netherlands.
-author: anasyash
+author: AdamTrukawka
 ms.date: 02/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261354
-ms.search.region:
-# ms.search.industry: 
-ms.author: anasyash
+ms.search.region: 
+ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 261354
+ms.search.form: 
 ---
 
 # VAT declaration for Netherlands
