@@ -88,7 +88,7 @@ Use the following procedure to set up sellable days for each product for each cu
         - *Group* – The row applies to a specific item group.
         - *All* – The row applies to all items.
 
-    - **Item relation** – If you set the **Item code** field to *Table*, select a specific item. If you set the **Item code** field to *Group*, select an item group. If you set the **Item code** field to *All*, this
+    - **Item relation** – If you set the **Item code** field to *Table*, select a specific item. If you set the **Item code** field to *Group*, select an item group. If you set the **Item code** field to *All*, this field in unavailable.
     - **Sellable days** – Enter the minimum number of days that the customer must have to sell matching products before the batch expires. The sellable days value is based on the requested receipt date (or the confirmed receipt date, if it's defined) for the matching products on the sales order.
     - *(Other product dimensions)* – To further limit the scope of a row, specify other dimension values (such as **Size** and **Color**) as required. To control which dimensions are shown in the grid, select **Display dimensions** on the Action Pane.
 
