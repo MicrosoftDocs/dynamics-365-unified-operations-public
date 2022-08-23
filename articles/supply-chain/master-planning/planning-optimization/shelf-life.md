@@ -4,7 +4,7 @@ description: This article describes how to set up and use planning features that
 author: t-benebo
 ms.date: 08/10/2022
 ms.topic: article
-ms.search.form:
+ms.search.form: ReqPlanSched, CustTable, EcoResProductDetailsExtended, InventModelGroup
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
