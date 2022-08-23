@@ -376,7 +376,7 @@ The following example shows sample body content. The behavior of this API differ
 
 ## Create reservation events
 
-To use the *Reserve* API, you must open the reservation feature and complete the reservation configuration. For more information, see [Reservation configuration (optional)](inventory-visibility-configuration.md#reservation-configuration).
+To use the *Reserve* API, you must turn on the reservation feature and complete the reservation configuration. For more information, see [Reservation configuration (optional)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a>Create one reservation event
 
@@ -384,7 +384,7 @@ A reservation can be made against different data source settings. To configure t
 
 When you call the reservation API, you can control the reservation validation by specifying the Boolean `ifCheckAvailForReserv` parameter in the request body. A value of `True` means that the validation is required, whereas a value of `False` means that the validation isn't required. The default value is `True`.
 
-If you want to cancel a reservation or unreserve specified inventory quantities, set the quantity to a negative value, and set the `ifCheckAvailForReserv` parameter to `False` to skip the validation.
+If you want to cancel a reservation or unreserve specified inventory quantities, set the quantity to a negative value, and set the `ifCheckAvailForReserv` parameter to `False` to skip the validation. There is also a dedicated unreserve API to do the same. For more on that, see the [_Unreserve one reservation event_](#a-namereverse-one-reservation-eventareverse-one-reservation-event) section.
 
 ```txt
 Path:
@@ -429,17 +429,28 @@ The following example shows sample body content.
     "modifier": "softReservOrdered",
     "ifCheckAvailForReserv": true,
     "dimensions": {
-        "siteId": ["iv_postman_site"],
-        "locationId": ["iv_postman_location"],
+        "siteId": "iv_postman_site",
+        "locationId": "iv_postman_location",
         "colorId": "red",
         "sizeId": "small"
     }
 }
 ```
 
+An example of a successful response
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "id": "ohre~id-822-232959-524",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+``` 
+
 ### <a name="create-multiple-reservation-events"></a>Create multiple reservation events
 
-This API is a bulk version of the [single-event API](#create-one-reservation-event).
+This API is a bulk version of the [single-event API](#create-reservation-events).
 
 ```txt
 Path:
@@ -471,6 +482,102 @@ Body:
             quantity: number,
             ifCheckAvailForReserv: boolean,
         },
+        ...
+    ]
+```
+## Reverse reservation events
+
+*Unreserve* API serves as the reverse opeartion for [*Reservation*](#create-reservation-events) events. 
+
+### <a name="reverse-one-reservation-event"></a>Reverse one reservation event
+
+ When a reservation is successfully made, a `reservationId` will be included in the response body. The exact same `reservationId` is required to cancel the reservation. Then, fill in the same `organizationId` and `dimensions` used for the reservation call. Last but not least, specify `OffsetQty` that represents the amount of items to be cancelled from the previous reservation. A reservation can either be fully or partially reversed depending on specified `OFfsetQty`. For example, if *100* units of items were reserved, you can specify `OffsetQty: 10` to unreserve *10* of the initiallt reserved amount.
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        id: string,
+        organizationId: string,
+        reservationId: string,
+        dimensions: {
+            [key:string]: string,
+        },
+        OffsetQty: number
+    }
+```
+
+The following example shows sample body content.
+
+```json
+{
+    "id": "unreserve-0",V
+    "organizationId": "SCM_IV",
+    "reservationId": "RESERVATION_ID",
+    "dimensions": {
+        "siteid":"iv_postman_site",
+        "locationid":"iv_postman_location",
+        "ColorId": "red",
+        "SizeId": "small"
+    },
+    "OffsetQty": 1
+}
+```
+
+A exmaple of a successful response body
+
+```json
+{
+    "reservationId": "RESERVATION_ID",
+    "totalInvalidOffsetQtyByReservId": 0,
+    "id": "ohoe~id-823-11744-883",
+    "processingStatus": "success",
+    "message": "",
+    "statusCode": 200
+}
+```
+
+> [!NOTE]
+> In the response body, when `OffsetQty` is less or equals to the reservation quantity, `processingStatus` will be "*success*" and `totalInvalidOffsetQtyByReservId` will be *0*.
+>
+> If `OffsetQty` is greater than the reserved amount, `processingStatus` will be "*partialSuccess*" and `totalInvalidOffsetQtyByReservId` will be the difference between `OffsetQty` and the reserved amount. 
+>
+>E.g, if the reservation has a quantity of *10*, and `OffsetQty` were to be *12*, `totalInvalidOffsetQtyByReservId` would be *2*.
+
+
+### <a name="reverse-multiple-reservation-events"></a>Reverse multiple reservation events
+
+This API is a bulk version of the [single-event API](#a-namereverse-one-reservation-eventareverse-one-reservation-event).
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/unreserve/bulk
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    [      
+        {
+            id: string,
+            organizationId: string,
+            reservationId: string,
+            dimensions: {
+                [key:string]: string,
+            },
+            OffsetQty: number
+        }
         ...
     ]
 ```
