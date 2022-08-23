@@ -4,7 +4,7 @@
 title: Create transfer orders from the warehouse app
 description: This article describes how to create and process transfer orders from the Warehouse Management mobile app 
 author: perlynne
-ms.date: 09/02/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,14 +33,14 @@ ms.dyn365.ops.version: 10.0.15
 
 This feature lets warehouse workers create and process transfer orders directly from the Warehouse Management mobile app. The worker starts by selecting the destination warehouse and then they can scan one or more license plates using the app to add license plates to the transfer order. When the warehouse worker selects **Complete order**, a batch job will create the required transfer order and order lines based on the on-hand inventory registered for those license plates.
 
-## <a name="enable-create-transfer-order-from-warehouse-app"></a>Turn this feature on or off
+## <a name="enable-create-transfer-order-from-warehouse-app"></a>Turn on this feature and its prerequisites
 
 Before you can use this feature, both it and its prerequisites must be enabled on your system. Administrators can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) page to check the feature status and enable it if needed.
 
 1. Enable the following two features (in order) in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace. As of Supply Chain Management version 10.0.25, both of these features are turned on by default.
-    1. *Process warehouse app events*
-    1. *Create and process transfer orders from the warehouse app*
-1. To automate the processing of outbound shipments, you must also enable the [Confirm outbound shipments from batch jobs](confirm-outbound-shipments-from-batch-jobs.md) feature.
+    1. *Process warehouse app events*<br>(As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off.)
+    1. *Create and process transfer orders from the warehouse app*<br>(As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off.)
+1. To automate the processing of outbound shipments, you must also enable the [*Confirm outbound shipments from batch jobs*](confirm-outbound-shipments-from-batch-jobs.md) feature. (As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off.)
 
 ## <a name="setup-warehouse-app-menu"></a>Set up a mobile device menu item to create transfer orders
 

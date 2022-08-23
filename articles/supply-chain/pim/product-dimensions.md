@@ -114,7 +114,7 @@ When you're testing your solutions for compatibility with the version dimension,
 
 #### Turn on the version dimension
 
-Before you can use the version dimension, it must be turned on in your system. This task requires admin permissions.
+Before you can use the version dimension, it must be turned on for your system. This task requires admin permissions.
 
 1. Go to **System administration \> Workspaces \> Feature management**.
 1. Turn on the feature that is named *Product dimension version*. (For more information, see [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
