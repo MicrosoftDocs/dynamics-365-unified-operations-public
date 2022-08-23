@@ -4,7 +4,7 @@
 title: Shipping discount
 description: This article describes the shipping discount capabilities in Microsoft Dynamics 365 Commerce and the setup that is required to use them.
 author: ShalabhjainMSFT
-ms.date: 08/19/2020
+ms.date: 09/02/2020
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -17,6 +17,7 @@ ms.search.validFrom: 2019-01-31
 # Shipping discount
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes the shipping discount capabilities in Microsoft Dynamics 365 Commerce and the setup that is required to use them.
 
