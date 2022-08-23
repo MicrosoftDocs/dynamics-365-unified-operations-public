@@ -62,7 +62,7 @@ function getMessage(cb) {
     messageId++;
     sensor.readSensorData()
     .then(function (data) {
-        cb(JSON.stringify({ value: 1, sensorId: 'EquipmentDowntime' }), false);
+        cb(JSON.stringify({ value: 1, sensorId: 'MachineStatus' }), false);
         cb(JSON.stringify({ value: 70, sensorId: 'Quality' }), false);
         cb(JSON.stringify({ value: 1, sensorId: 'AssetMaintenance' }), false);
         cb(JSON.stringify({ value: 1, sensorId: 'ProductionDelay' }), false);
@@ -75,7 +75,7 @@ function getMessage(cb) {
 ```
 
 > [!IMPORTANT]
-> The sensors IDs defined here in the code editor for the Raspberry Pi IoT simulator must be identical to the sensor IDs you will specify later for the scenarios in Supply Chain Management. The example provided here uses human-readable IDs, but in an actual scenario, these will be GUID values provided by the sensor manufacturer. The human-readable IDs suggested in the sample code shown here are also used in the example scenarios provided in [The product quality scenario](sdi-scenario-product-quality.md), [The asset maintenance scenario](sdi-scenario-asset-maintenance.md), [The production delays scenario](sdi-scenario-production-delays.md), and [The equipment downtime scenario](sdi-scenario-equipment-downtime.md)). If you will work through those scenarios, then use this code.
+> The sensors IDs defined here in the code editor for the Raspberry Pi IoT simulator must be identical to the sensor IDs you will specify later for the scenarios in Supply Chain Management. The example provided here uses human-readable IDs, but in an actual scenario, these will be GUID values provided by the sensor manufacturer. The human-readable IDs suggested in the sample code shown here are also used in the example scenarios provided in [The product quality scenario](sdi-scenario-product-quality.md), [The asset maintenance scenario](sdi-scenario-asset-maintenance.md), [The production delays scenario](sdi-scenario-production-delays.md), and [The machine status scenario](sdi-scenario-equipment-downtime.md)). If you will work through those scenarios, then use this code.
 
 ## Edit the time interval for sending sensor signals
 

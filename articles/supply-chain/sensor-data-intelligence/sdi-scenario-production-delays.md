@@ -4,7 +4,7 @@ description: The production delays scenario generates a notification if produc
 author: johanhoffmann
 ms.date: 09/02/2022
 ms.topic: article
-ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreScenarioConfigurationWizardV2
+ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreScenarioConfigurationWizardV2, IoTIntMfgResourceStatusConfiguration, IoTIntMfgResourceStatus
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -88,7 +88,7 @@ Follow these steps to start the first job in the batch order:
 Follow these steps to set up the *production delays* scenario in Supply Chain Management:
 
 1. Go to **Production control \> Setup \> Sensor Data Intelligence \> Scenarios** to open the **Scenarios** page.
-1. In the **Equipment downtime** scenario box, select **Configure** to launch the setup wizard for this scenario.
+1. In the **Production delays** scenario box, select **Configure** to launch the setup wizard for this scenario.
 1. The wizard starts with the **Sensors** page. Select **New** to add a new sensor to the grid and set the following values for it:
     - **Sensor ID** - Enter the ID of the sensor you are using. (If you are using the Raspberry PI Azure IoT Online Simulator and have set it up as described in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md), then enter *ProductionDelay*.)
     - **Sensor description** - Enter a description of the sensor.

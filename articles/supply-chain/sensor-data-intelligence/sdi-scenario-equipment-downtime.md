@@ -1,10 +1,10 @@
 ﻿---
-title: The equipment downtime scenario
-description: The equipment downtime scenario lets you use sensor data to monitor the availability of your equipment.
+title: The machine status scenario
+description: The machine status scenario lets you use sensor data to monitor the availability of your equipment.
 author: johanhoffmann
 ms.date: 09/02/2022
 ms.topic: article
-ms.search.form: IoTIntCoreScenarioManagement
+ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreNotification, IoTIntMfgResourceStatusConfiguration, IoTIntMfgResourceStatus
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -13,23 +13,23 @@ ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version: 10.0.30
 ---
 
-# The equipment downtime scenario
+# The machine status scenario
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-The *equipment downtime* scenario lets you use sensor data to monitor the availability of your equipment. If you have set up a sensor that sends a signal when a production job on a machine resource produces an output, and no sensor signal is received within a specified time interval, then a notification is shown on the supervisor's dashboard.
+The *machine status* scenario lets you use sensor data to monitor the availability of your equipment. If you have set up a sensor that sends a signal when a production job on a machine resource produces an output, and no sensor signal is received within a specified time interval, then a notification is shown on the supervisor's dashboard.
 
 ## Scenario dependencies
 
-The *equipment downtime* scenario has the following dependencies:
+The *machine status* scenario has the following dependencies:
 
 - For a notification to be triggered, a production job must be in progress on a mapped machine.
 - A signal that represents a part-out signal must be sent to the IoT hub.
 
-## Prepare demo data for the equipment downtime scenario
+## Prepare demo data for the machine status scenario
 
-If you would like to use a demo system to test the *equipment downtime* scenario, then use a system that has the [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) installed, select the *USMF* legal entity (company) and prepare the additional demo data as described in this section. If you are using your own sensors and data, then you can skip this section.
+If you would like to use a demo system to test the *machine status* scenario, then use a system that has the [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) installed, select the *USMF* legal entity (company) and prepare the additional demo data as described in this section. If you are using your own sensors and data, then you can skip this section.
 
 ### Set up sensor simulator
 
@@ -96,14 +96,14 @@ Start the job scheduled on *Resource 3118* by following these steps:
 1. Select the order and then select **Start job**.
 1. The **Start job** dialog opens. Select **Start**.
 
-## Set up the Equipment downtime scenario
+## Set up the machine status scenario
 
-Follow these steps to set up the *equipment downtime* scenario in Supply Chain Management:
+Follow these steps to set up the *machine status* scenario in Supply Chain Management:
 
 1. Go to **Production control \> Setup \> Sensor Data Intelligence \> Scenarios** to open the **Scenarios** page.
-1. In the **Equipment downtime** scenario box, select **Configure** to launch the setup wizard for this scenario.
+1. In the **Machine status** scenario box, select **Configure** to launch the setup wizard for this scenario.
 1. The wizard starts with the **Sensors** page. Select **New** to add a new sensor to the grid and set the following values for it:
-    - **Sensor ID** - Enter the ID of the sensor you are using. (If you are using the Raspberry PI Azure IoT Online Simulator and have set it up as described in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md), then enter *EquipmentDowntime*.)
+    - **Sensor ID** - Enter the ID of the sensor you are using. (If you are using the Raspberry PI Azure IoT Online Simulator and have set it up as described in [Set up a simulated sensor for testing](sdi-set-up-simulated-sensor.md), then enter *MachineStatus*.)
     - **Sensor description** - Enter a description of the sensor.
 
 1. Repeat the previous step for each sensor you want to add for now. You can come back and add more sensors at any time.
@@ -112,22 +112,22 @@ Follow these steps to set up the *equipment downtime* scenario in Supply Chain M
 1. In the **Business record mapping** section, select **New** to add a row to the grid.
 1. On the new row, set **Business record** to the resource you are monitoring with the selected sensor. (If you are using the demo data created earlier in this article, set it to *3118, Foam cutting machine*.)
 1. Select **Next**.
-1. The **Equipment downtime threshold** page opens. Use this page to establish how much time may pass after the last *part-out* signal before the system should send an equipment-down notification. There are two ways to define the threshold:
+1. The **Machine status threshold** page opens. Use this page to establish how much time may pass after the last *part-out* signal before the system should send a machine-status notification. There are two ways to define the threshold:
     - **Default threshold (minutes)** – Set this value to establish the default time interval. This value will apply to all resources that have **Threshold to determine machine not responding (minutes)** set to 2 minutes or less. The minimum value is 2 minutes.
     - **Threshold to determine machine not responding (minutes)** – For each resource in the grid where you don't want to use the default threshold, enter an override value here. Resources set to use 2 minutes or less will use the **Default threshold (minutes)** setting instead.
 
     > [!NOTE]
-    > Usually, you'll use a *part-out* signal to monitor equipment downtime. Therefore, you should verify that the threshold for each machine resource is greater than the time is takes that machine to produce each part.
+    > Usually, you'll use a *part-out* signal to monitor machine status. Therefore, you should verify that the threshold for each machine resource is greater than the time is takes that machine to produce each part.
 
 1. Select **Next**.
 1. The **Activate sensors** page opens. In the grid, select the sensor you just added and then select **Activate**. Each activated sensor in the grid shows a check in its **Active** column.
 1. Select **Finish**.
 
-## Work with the Equipment downtime scenario
+## Work with the machine status scenario
 
-After you have installed your sensors and configured the scenario, you will be able to view equipment downtime events in Supply Chain Management. This section describes where and how to view this information.
+After you have installed your sensors and configured the scenario, you will be able to view machine status events in Supply Chain Management. This section describes where and how to view this information.
 
-### View equipment downtime data on the Resource status page
+### View machine status data on the Resource status page
 
 On the **Resource status** page, supervisors can monitor a timeline of the parts-out signal received from the sensors mapped to each machine resource. Follow these steps to configure the timeline:
 
@@ -137,18 +137,18 @@ On the **Resource status** page, supervisors can monitor a timeline of the parts
     - **Time series 1** - Select the record (metric key) with the following name format: *MachineReportingStatus:&lt;Sensor&gt;*
     - **Display name** – Enter *Parts out signal*.
 
-The following screenshots provide some examples of how equipment downtime data looks on the **Resource status** page.
+The following screenshots provide some examples of how machine status data looks on the **Resource status** page.
 
-![Equipment downtime data on the Resource status page, standard operation.](media/sdi-resource-status-downtime-up.png "Equipment downtime data on the Resource status page, standard operation")
+![Machine status data on the Resource status page, standard operation.](media/sdi-resource-status-downtime-up.png "Machine status data on the Resource status page, standard operation")
 
-![Equipment downtime data on the Resource status page, downtime detected.](media/sdi-resource-status-downtime-down.png "Equipment downtime data on the Resource status page, downtime detected")
+![Machine status data on the Resource status page, downtime detected.](media/sdi-resource-status-downtime-down.png "Machine status data on the Resource status page, downtime detected")
 
-### View equipment downtime on the Notifications page
+### View machine status on the Notifications page
 
 On the **Notifications** page, supervisors can see the notifications generated when too much time has passed since the sensor last delivered a parts-out signal. Each notification provides an overview of which production job is impacted by the outage and provides the option to reassign the affected job to another resource.
 
 To open the **Notification** page, go to **Production control \> Inquiries and reports \> Sensor Data Intelligence \> Notifications**.
 
-The following screenshot shows an example of an equipment downtime notification.
+The following screenshot shows an example of a machine status notification.
 
-![Example of an equipment downtime notification.](media/sdi-resource-status-downtime-notification.png "Example of an equipment downtime notification")
+![Example of a machine status notification.](media/sdi-resource-status-downtime-notification.png "Example of a machine status notification")

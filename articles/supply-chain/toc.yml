@@ -1727,7 +1727,7 @@
           href: sensor-data-intelligence/sdi-parameters.md
         - name: Set up a simulated sensor for testing
           href: sensor-data-intelligence/sdi-set-up-simulated-sensor.md
-        - name: The equipment downtime scenario
+        - name: The machine status scenario
           href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
         - name: The product quality scenario
           href: sensor-data-intelligence/sdi-scenario-product-quality.md

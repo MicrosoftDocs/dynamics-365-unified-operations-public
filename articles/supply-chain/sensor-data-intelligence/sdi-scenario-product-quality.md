@@ -4,7 +4,7 @@ description: The product quality scenario uses a sensor to measure the quality o
 author: johanhoffmann
 ms.date: 09/02/2022
 ms.topic: article
-ms.search.form: IoTIntCoreScenarioManagement
+ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreNotification, IoTIntMfgResourceStatusConfiguration, IoTIntMfgResourceStatus
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global

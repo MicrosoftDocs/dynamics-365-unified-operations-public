@@ -4,7 +4,7 @@ description: The asset maintenance scenario lets you use sensor data to create c
 author: johanhoffmann
 ms.date: 09/02/2022
 ms.topic: article
-ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreScenarioConfigurationWizardV2
+ms.search.form: IoTIntCoreScenarioManagement, IoTIntCoreScenarioConfigurationWizardV2, EntAssetCounter
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
