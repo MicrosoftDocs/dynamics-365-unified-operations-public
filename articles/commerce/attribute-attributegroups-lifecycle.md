@@ -6,24 +6,12 @@ description: This article describes how to use attributes to provide a way to de
 author: ashishmsft
 ms.date: 08/23/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: EcoResCategoryAttribute, EcoResProductEntityAttributeTableFieldAssociation, EcoResCategorySearchList, EcoResAttribute, COODualUseCategories, EcoResAttributeType, EcoResAttributeValue, EcoResCategoryAttributeGroup, EcoResCategoryFriendlyName
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
+ms.search.region: Global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2018-03-30
-ms.dyn365.ops.version: Application pdate 5, AX 8.0
 
 ---
 
@@ -149,13 +137,15 @@ These options were originally intended to improve the search functionality for t
 
 ## Attribute groups
 
-An *attribute group* is used to group the individual attributes for a component or subcomponent in a product configuration model. An attribute can be included in more than one attribute group. Attribute groups can help users configure products, because the various selections are arranged in a specific context. Attribute groups can be assigned to categories or channels.You can also set default values for attributes that are included in an attribute group. 
+An *attribute group* is used to group the individual attributes for a component or subcomponent in a product configuration model. An attribute can be included in more than one attribute group. Attribute groups can help users configure products because the various selections are arranged in a specific context. Attribute groups can be assigned to categories or channels. You can also set default values for attributes that are included in an attribute group. 
 
 ![Attribute groups.](media/AttributeGroup_2022Series.png)
 
 ### Create an attribute group
 
-1. Sign in to the back-office client as a merchandising manager.
+To create an attribute group, follow these steps.
+
+1. Sign in to Commerce headquarters as a merchandising manager.
 2. Go to **Product information management \> Setup \> Categories and attributes \> Attribute groups**.
 3. Create an attribute group that is named **Fashion Sunglasses**.
 4. Add the following attributes: **Lens shape** and **Sunglass brand**.
@@ -166,22 +156,21 @@ One or more attribute groups can be associated with category nodes in the follow
 
 ![Product hierarchy – Product attribute groups.](media/AGRetailProdHierarchy_2022Series.png)
 
-Follow these steps to assign attribute groups to categories in the Commerce product hierarchy.
+To assign attribute groups to categories in the Commerce product hierarchy, follow these steps.
 
-1. Sign in to the back-office client as a merchandising manager.
-2. Go to **Retail and Commerce \> Category and product management \> Commerce product hierarchy**.
+1. Sign in to Commerce headquarters as a merchandising manager.
+2. Go to **Retail and Commerce \> Products and categories \> Commerce product hierarchy**.
 3. Select **Fashion navigation hierarchy**.
 4. Under **Menswear**, select the **Pants** category, and then, on the **Product attribute groups** FastTab, add an attribute group that is named **Men's belt**. 
 5. Select the **Fashion sunglasses** category, and verify the new attributes in the **Fashion Sunglasses** attribute group by selecting **View attributes**. The attribute group should show the new **Lens shape** and **Sunglass brand** attributes.
 6. Under **Menswear**, select the **Pants** category, and verify the attributes for the **Men's belt** attribute group by selecting **View attributes**. The attribute group should show the **Men's belt brand**, **Belt fabric**, and **Belt size** attributes.
 
-> [!NOTE]
-> This procedure can also be used to assign attribute groups to categories in the Channel navigation category hierarchy and the Supplemental product category hierarchy. In step 2, use the following navigation paths:
->
-> - **Retail and Commerce \> Category and product management \> Channel navigation categories**
-> - **Retail and Commerce \> Category and product management \> Supplemental product categories**
-> 
-> Additionally, you must ensure that you are only associating attribute groups in category hierarchy to **Product attribute groups** FastTab and *not **Category attribute groups***. If you see attributes showing up in fast-tab **Category attribute values**, please switch the view to category management - where you are able to add or remove category nodes by selecting **Edit category hierarchy** from the top-ribbon (Note : There are two edit options on the category page, please select 'Edit category hierarchy' only) and then locate fast-tab **Category attribute groups** and remove it. There's no support available to fetch attributes by category through Cloud-scale unit.  
+This procedure can also be used to assign attribute groups to categories in the channel navigation category hierarchy and the supplemental product category hierarchy. To do this, for step 2 above substitte the following navigation paths, respectively:
+
+- **Retail and Commerce \> Category and product management \> Channel navigation categories**
+- **Retail and Commerce \> Category and product management \> Supplemental product categories**
+
+Ensure that you are only associating attribute groups in a category hierarchy to the **Product attribute groups** FastTab and not the **Category attribute values** FastTab. If you see attributes appearing in the **Category attribute values** FastTab, select **Edit category hierarchy** on the action pane, and then on the **Category attribute groups** FastTab, select category nodes and then select **Remove**. There's no support available to fetch attributes by category through Commerce Scale Unit.  
 
 ## Identify viewable and refinable attributes for Commerce channels for default product collection
 
