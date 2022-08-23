@@ -70,10 +70,7 @@ The table also lists features that were previously in public preview but have ch
 
 | Module | Feature name | New feature state |
 | --- | --- | --- |
-| Asset management | [Apply rules for grouping work orders while running a maintenance plan](../asset-management/preventive-and-reactive-maintenance/creating-work-orders.md) | Mandatory |
 | Asset management | [Asset management functionality for the production floor execution interface](../production-control/production-floor-execution-configure.md) | Mandatory |
-| Asset management | [Counter-based maintenance enhancements](../asset-management/preventive-and-reactive-maintenance/maintenance-plans.md) | On by default |
-| Asset management | [Work order billing](../asset-management/integration-to-project-management-and-accounting/customer-billing.md) | Mandatory |
 | Cost management | [Change the label of Cancellation in Closing and adjustment to Reverse](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/change-terminology-inventory-closing-cancellation-inventory-closing-reverse) | Mandatory |
 | Cost management | Clean up BOM calculation details cross costing versions | Mandatory |
 | Cost management | [Compare item prices storage](../cost-management/compare-item-price.md) | Mandatory |
@@ -123,7 +120,6 @@ The table also lists features that were previously in public preview but have ch
 | Master planning | [Planned order firming with filtering](../master-planning/planning-optimization/planned-order-firming.md) | Mandatory |
 | Master planning | [Planned production orders for Planning Optimization](../master-planning/planning-optimization/production-planning.md) | Mandatory |
 | Master planning | [Purchase trade agreements for Planning Optimization](../master-planning/planning-optimization/purchase-trade-agreement.md) | Mandatory |
-| Master planning | Resource planning with maintenance | Mandatory |
 | Master planning | [Saved views for planned orders](saved-views-scm.md) | Mandatory |
 | Procurement and sourcing | Charges from and to amounts on purchase orders | Mandatory |
 | Procurement and sourcing | Disable purchase requisition distribution Reset button | On by default |
@@ -137,7 +133,6 @@ The table also lists features that were previously in public preview but have ch
 | Product information management | Bill of materials report pre-processing to avoid timeout | Mandatory |
 | Product information management | Default financial dimensions separately when using item templates | Mandatory |
 | Product information management | Enable product dimension groups for item templates | Mandatory |
-| Product information management | [Improved attribute inheritance for Engineering Change Management](../engineering-change-management/engineering-attributes-and-search.md) | Mandatory |
 | Product information management | Item - barcode entity improvements | Mandatory |
 | Product information management | Regenerate product variant names based on nomenclature | Mandatory |
 | Product information management | [Saved views for released products](saved-views-scm.md) | Mandatory |
