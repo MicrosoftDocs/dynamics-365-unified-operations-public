@@ -386,7 +386,7 @@ A reservation can be made against different data source settings. To configure t
 
 When you call the reservation API, you can control the reservation validation by specifying the Boolean `ifCheckAvailForReserv` parameter in the request body. A value of `True` means that the validation is required, whereas a value of `False` means that the validation isn't required. The default value is `True`.
 
-If you want to cancel a reservation or unreserve specified inventory quantities, set the quantity to a negative value, and set the `ifCheckAvailForReserv` parameter to `False` to skip the validation. There is also a dedicated unreserve API to do the same. For more on that, see the [_Unreserve one reservation event_](#reverse-reservation-events) section.
+If you want to reverse a reservation or unreserve specified inventory quantities, set the quantity to a negative value, and set the `ifCheckAvailForReserv` parameter to `False` to skip the validation. There is also a dedicated unreserve API to do the same. The difference is only in the way the two APIs are called. It is easier to reverse a specific reservation event by using `reservationId` with *unreserve* API. For more on that, see the [_Unreserve one reservation event_](#reverse-reservation-events) section.
 
 ```txt
 Path:
@@ -489,11 +489,11 @@ Body:
 ```
 ## Reverse reservation events
 
-*Unreserve* API serves as the reverse opeartion for [*Reservation*](#create-reservation-events) events. 
+*Unreserve* API serves as the reverse opeartion for [*Reservation*](#create-reservation-events) events. It provides a way to reverse a reveration event specified by `reservationId`, or a way to decrease reservation quantity. 
 
 ### <a name="reverse-one-reservation-event"></a>Reverse one reservation event
 
- When a reservation is successfully made, a `reservationId` will be included in the response body. The exact same `reservationId` is required to cancel the reservation. Then, fill in the same `organizationId` and `dimensions` used for the reservation call. Last but not least, specify `OffsetQty` that represents the amount of items to be cancelled from the previous reservation. A reservation can either be fully or partially reversed depending on specified `OFfsetQty`. For example, if *100* units of items were reserved, you can specify `OffsetQty: 10` to unreserve *10* of the initiallt reserved amount.
+When a reservation is created, a `reservationId` will be included in the response body. The exact same `reservationId` is required to cancel the reservation. Next, fill in the same `organizationId` and `dimensions` used for the reservation API call. Last but not least, specify `OffsetQty` that represents the amount of items to be freed from the previous reservation. A reservation can either be fully or partially reversed depending on specified `OffsetQty`. For example, if *100* units of items were reserved, you can specify `OffsetQty: 10` to unreserve *10* of the initiallt reserved amount.
 
 ```txt
 Path:
@@ -521,7 +521,7 @@ The following example shows sample body content.
 
 ```json
 {
-    "id": "unreserve-0",V
+    "id": "unreserve-0",
     "organizationId": "SCM_IV",
     "reservationId": "RESERVATION_ID",
     "dimensions": {
@@ -534,7 +534,7 @@ The following example shows sample body content.
 }
 ```
 
-A exmaple of a successful response body
+An exmaple of a successful response body
 
 ```json
 {
