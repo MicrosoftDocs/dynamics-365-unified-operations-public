@@ -704,8 +704,8 @@
           href: prevent-discounts.md
         - name: Tender-based discounts 
           href: tender-based-discounts.md
-        - name: Shipping discount overview 
-          href: retail-shipping-discount.md
+        - name: Shipping discount 
+          href: shipping-discount.md
         - name: Configure gift with purchase promotions
           href: gift-with-purchase.md
         - name: Set up coupons  
