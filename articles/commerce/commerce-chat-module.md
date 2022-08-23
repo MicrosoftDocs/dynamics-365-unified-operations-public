@@ -26,7 +26,7 @@ The Commerce chat feature enables retailers to achieve these goals:
 
 - Increase personalized engagement with customers to help improve customer retention.
 - Improve customer service through the integration of human agent and self-service chatbots.
-- Garner agent experience through real-time customer profile, order, and purchasing data that drives operational improvements and engagement.
+- Help agents gain experience through real-time customer profile, order, and purchasing data that drives operational improvements and engagement.
 - Improve overall customer satisfaction to help increase sales.
 
 The following capabilities are available as part of the Commerce chat feature:
@@ -38,7 +38,7 @@ The following capabilities are available as part of the Commerce chat feature:
 
 As a prerequisite, you must configure chat in the Omnichannel for Customer Service Administration widget and obtain some of the parameters to configure the Commerce chat experience. For instructions, see [Configure a chat channel](/dynamics365/customer-service/set-up-chat-widget).
 
-After you configure chat in the Omnichannel for Customer Service Administration module, you will get a script that resembles the following example.
+After you configure chat in the Omnichannel for Customer Service Administration widget, you will get a script that resembles the following example.
 
 `<script id="Microsoft_Omnichannel_LCWidget" src="https://oc-cdn-ocprod.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js" data-app-id="xxxx-xxx-4be7-bcd5-1d118ecffe1f" data-org-id="5a0e73c0-xxxx-xxxxx-xxx- 76df135f375d" data-org-url="https://xxsxxxxssdb348f-crm.omnichannelengagementhub.com"></script>`
 
