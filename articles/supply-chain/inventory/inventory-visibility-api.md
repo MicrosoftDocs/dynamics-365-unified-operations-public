@@ -167,7 +167,7 @@ The following table summarizes the meaning of each field in the JSON body.
 
 | Field ID | Description |
 |---|---|
-| `id` | A unique ID for the specific change event. This ID is used to ensure that, if communication with the service fails during posting, the same event won't be counted twice in the system if it's resubmitted. |
+| `id` | A unique ID for the specific change event. In case of resubmission due to service failure, this ID is used to ensure the same event won't be counted twice in the system. |
 | `organizationId` | The identifier of the organization that is linked to the event. This value is mapped to an organization or data area ID in Supply Chain Management. |
 | `productId` | The identifier of the product. |
 | `quantities` | The quantity that the on-hand quantity must be changed by. For example, if 10 new books are added to a shelf, this value will be `quantities:{ shelf:{ received: 10 }}`. If three books are removed from the shelf or sold, this value will be `quantities:{ shelf:{ sold: 3 }}`. |
@@ -489,11 +489,11 @@ Body:
 ```
 ## Reverse reservation events
 
-*Unreserve* API serves as the reverse opeartion for [*Reservation*](#create-reservation-events) events. It provides a way to reverse a reveration event specified by `reservationId`, or a way to decrease reservation quantity. 
+*Unreserve* API serves as the reverse operation for [*Reservation*](#create-reservation-events) events. It provides a way to reverse a reservation event specified by `reservationId`, or a way to decrease reservation quantity. 
 
 ### <a name="reverse-one-reservation-event"></a>Reverse one reservation event
 
-When a reservation is created, a `reservationId` will be included in the response body. The exact same `reservationId` is required to cancel the reservation. Next, fill in the same `organizationId` and `dimensions` used for the reservation API call. Last but not least, specify `OffsetQty` that represents the amount of items to be freed from the previous reservation. A reservation can either be fully or partially reversed depending on specified `OffsetQty`. For example, if *100* units of items were reserved, you can specify `OffsetQty: 10` to unreserve *10* of the initiallt reserved amount.
+When a reservation is created, a `reservationId` will be included in the response body. The exact same `reservationId` is required to cancel the reservation. Next, fill in the same `organizationId` and `dimensions` used for the reservation API call. Last but not least, specify `OffsetQty` that represents the number of items to be freed from the previous reservation. A reservation can either be fully or partially reversed depending on specified `OffsetQty`. For example, if *100* units of items were reserved, you can specify `OffsetQty: 10` to unreserve *10* of the initial reserved amount.
 
 ```txt
 Path:
@@ -617,8 +617,8 @@ Body:
 
 In the body part of this request, `dimensionDataSource` is still an optional parameter. If it isn't set, `filters` will be treated as *base dimensions*. There are four required fields for `filters`: `organizationId`, `productId`, `siteId`, and `locationId`.
 
-- `organizationId` should contains only one value, but it's still an array.
-- `productId` can contains one or more values. If it's an empty array, all products will be returned.
+- `organizationId` should contain only one value, but it's still an array.
+- `productId` could contain one or more values. If it's an empty array, all products will be returned.
 - `siteId` and `locationId` are used for partitioning in Inventory Visibility. You can specify more than one `siteId` and `locationId` value in a *Query on-hand* request. In the current release, you must specify both `siteId` and `locationId` values.
 
 The `groupByValues` parameter should follow your configuration for indexing. For more information, see [Product index hierarchy configuration](./inventory-visibility-configuration.md#index-configuration).
@@ -690,6 +690,6 @@ You can set up Inventory Visibility to let you schedule future on-hand changes a
 
 ## Allocation
 
-Allocattion related APIs are located in [Inventory Visibility allocation](inventory-visibility-allocation.md#using-allocation-api).
+Allocation related APIs are located in [Inventory Visibility allocation](inventory-visibility-allocation.md#using-allocation-api).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
