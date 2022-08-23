@@ -205,7 +205,7 @@ Example of steps to enable the attributes so that they are available in the demo
 >
 > 1. An inherit option lets you specify that this channel should inherit the attribute groups from its parent channel in the hierarchy. If you set the **Inherit** option to **Yes**, the child channel node inherits all the attribute groups and all the attributes in those attribute groups.
 > 
-> 1. If you notice that 'Set attribute metadata' is greyed-out, then you must ensure that 'Navigation hierarchy' is associated with your channel under 'General' fast-tab. 
+> 1. If **Set attribute metadata** is grayed out, then you must ensure that 'Navigation hierarchy' is associated with your channel under the **General** FastTab. 
 > 
 > You must not associate any other attribute groups at a channel level ('Attribute groups' on 'Channel categories and product attributes' form) other than dimension based attribute group. (e.g. with Demo Data, you would see there's an attribute group named 'Default dimensions group for refiners' is only valid attribute group to associate in this place). 
 > 
@@ -264,7 +264,7 @@ The default values of attributes can be overridden for individual products at th
     
 7. Example – 
 		
-    P001 is a ‘Multi-activity Shoe’ and it has 3 variants – _Running, Walking, Trekking_. And for each variant you want to define ‘Activity’ attribute value uniquely – which can be done through ‘Channel categories and product attributes’ form, from 'Products' fast-tab for your channel and 
+    P001 is a ‘Multi-activity Shoe’ and it has 3 variants – "Running", "Walking", and "Trekking". And for each variant you want to define ‘Activity’ attribute value uniquely – which can be done through ‘Channel categories and product attributes’ form, from 'Products' FastTab for your channel and 
 
     - P001-Master : Activity – Sports 
     - P001-1 : Activity - Running
