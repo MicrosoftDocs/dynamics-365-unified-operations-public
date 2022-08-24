@@ -4,32 +4,21 @@
 title: Cross-company data sharing for gift cards
 description: This topic reviews the capability to use data sharing functionality in Finance and Operations for syncing gift card data between two Data Areas.
 author: BrianShook
-ms.date: 07/12/2022
+ms.date: 08/23/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: brshoo
-ms.search.validFrom:
-ms.dyn365.ops.version: AX 7.0.1
+ms.search.validFrom: 2022-06-20
 
 ---
 
 # Cross-Company data sharing for gift cards
 
-This topic provides an overview of the Microsoft Dynamics 365 Commerce usage of the Finance and Operations (F&O) data sharing functionality across Data Areas for gift cards. Data Record Sharing can be used to share data between two data areas, also referred to as cross-company, to enable the Commerce (Internal) gift table to share data between two company entities. More information about F&O cross-company data sharing can be found at [this article](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing).
+This topic provides an overview of the Microsoft Dynamics 365 Commerce usage of the Finance and Operations (F&O) data sharing functionality across Data Areas for gift cards. Data Record Sharing can be used to share data between two data areas, also referred to as cross-company, to enable the Commerce (Internal) gift table to share data between two company entities. More information about F&O cross-company data sharing can be found at [this article](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing).
 
 ## Key terms
 
@@ -41,9 +30,9 @@ This topic provides an overview of the Microsoft Dynamics 365 Commerce usage of 
 
 
 ## Prerequisites
-Users must configure their environment for cross-company data sharing as described in the F&O [cross-company data sharing article](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing).
+Users must configure their environment for cross-company data sharing as described in the F&O [cross-company data sharing article](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing).
 
-The RetailGiftCardTable will need the 'DataSharingType' set to "Duplicate". This will enable Duplicate Record Sharing (DRS) for the Gift Card Table. Additional details can be found in the following [cross-company data sharing for developers](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/sysadmin/drs-srs-dev) article.
+The RetailGiftCardTable will need the 'DataSharingType' set to "Duplicate". This will enable Duplicate Record Sharing (DRS) for the Gift Card Table. Additional details can be found in the following [cross-company data sharing for developers](/dynamics365/fin-ops-core/dev-itpro/sysadmin/drs-srs-dev) article.
 
 ## Configure cross-company data sharing for Gift Cards
 In Headquarters, navigate to **Navigation pane > Modules > System administration > Setup > Configure cross-company data sharing**.
@@ -74,6 +63,8 @@ Once verifying, the tables will begin to copy data across the configured compani
 
 ## Additional resources
 
-- [Payments FAQ](dev-itpro/payments-retail.md)
-- [Checkout module](add-checkout-module.md)
-- [Payment module](payment-module.md)
+[Payments FAQ](payments-retail.md)
+
+[Checkout module]../(add-checkout-module.md)
+
+[Payment module](../payment-module.md)
