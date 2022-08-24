@@ -4,7 +4,7 @@
 title: Manage attributes and attribute groups
 description: This article describes how to use attributes to provide a way to describe a product and its characteristics through user-defined fields. 
 author: ashishmsft
-ms.date: 08/23/2022
+ms.date: 08/24/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -112,10 +112,10 @@ The **Filter display preferences** page includes the following fields:
 
 
 > [!NOTE]
-> - Filter settings for attributes are only applicable for 'Product attributes' and can be used for refining product search and category browsing results. These filter settings do not apply to Customer search or Order search, although same attributes could be used for enriching customer or order information. 
+> - Filter settings for attributes are only applicable for 'Product attributes' and can be used for refining product search and category browsing results. These filter settings don't apply to Customer search or Order search, although same attributes could be used for enriching customer or order information. 
 > - Among default eCommerce modules, there is no out-of-box support available for filter settings with 'Display control' as 'Range' or 'Slider' or 'Slider with bars'. 'Range' and 'Slider' continue to be supported for Point-of-sale solution, whereas 'Slider with Bars' was applicable for legacy 'SharePoint' online storefront and continues to be available for 3rd party integration and custom scenarios. 
 > - It is ideally recommended for refinable attributes to have an attribute of type 'fixed-list', but along with that our recommendations is to keep the list manageable and have upto 100-200 unique values and certainly not consider 'fixed-list' type if the unique values for the refiner are going to be in 1000s to 10000s unique values. In that case, best-suited attribute type is 'Text' and not 'Fixed-list'
-> - Translations are critical for attribute names and their values. For attribute of type fixed-list, you can define translations on 'attribute-type' for its values whereas for every other attribute you are able to define translations on the forms where you may define the values for attributes. e.g., For attribute of type 'text' one can define translations for 'default' value on the 'attribute', whereas if you were to override default value at a product level, then you can define translations for it on the 'product attributes' form for the product. 
+> - Translations are critical for attribute names and their values. For attribute of type fixed-list, you can define translations on 'attribute-type' for its values whereas for every other attribute you're able to define translations on the forms where you may define the values for attributes. e.g., For attribute of type 'text' one can define translations for 'default' value on the 'attribute', whereas if you were to override default value at a product level, then you can define translations for it on the 'product attributes' form for the product. 
 > - Once an attribute has been marked as refinable for a channel, then you should not update the 'Attribute type' as it would impact the publishing of product data to search index. It is recommended to create a new attribute for new type of refiner and retire previous attribute by removing from other attribute groups. 
 > - Search by attributes is supported, whereas it only fetches result for exact match of search words. e.g., if you were to have an attribute 'Fabric' with value as 'Cashmere cotton' then if a shopper were to search for 'Cash' then product with 'Fabric = Cashmere cotton' shall not be retrieved, whereas if user were to search for 'Cashmere' or 'Cotton' or 'Cashmere Cotton' then this product will be retrieved among the search results. 
 
@@ -165,7 +165,7 @@ To assign attribute groups to categories in the Commerce product hierarchy, foll
 5. Select the **Fashion sunglasses** category, and verify the new attributes in the **Fashion Sunglasses** attribute group by selecting **View attributes**. The attribute group should show the new **Lens shape** and **Sunglass brand** attributes.
 6. Under **Menswear**, select the **Pants** category, and verify the attributes for the **Men's belt** attribute group by selecting **View attributes**. The attribute group should show the **Men's belt brand**, **Belt fabric**, and **Belt size** attributes.
 
-This procedure can also be used to assign attribute groups to categories in the channel navigation category hierarchy and the supplemental product category hierarchy. To do this, for step 2 above substitte the following navigation paths, respectively:
+This procedure can also be used to assign attribute groups to categories in the channel navigation category hierarchy and the supplemental product category hierarchy. To do this, for step 2 above substitute the following navigation paths, respectively:
 
 - **Retail and Commerce \> Category and product management \> Channel navigation categories**
 - **Retail and Commerce \> Category and product management \> Supplemental product categories**
@@ -174,7 +174,7 @@ Ensure that you are only associating attribute groups in a category hierarchy to
 
 ## Identify viewable and refinable attributes for Commerce channels for default product collection
 
-As you have associated various attribute groups to categories in various hierarchies (Commerce product hierarchy or channel navigation categories) and defined those attribute values for each product based on the category association. For those attributes to be viewable in a specific channel, you will have to set "Show attribute on Channel" flag. 
+As you have associated various attribute groups to categories in various hierarchies (Commerce product hierarchy or channel navigation categories) and defined those attribute values for each product based on the category association. For those attributes to be viewable in a specific channel, you'll have to set "Show attribute on Channel" flag. 
 
 This flag can be located at **Channel categories and product attributes \> Set attribute metadata \> Select your category from Navigation hierarchy \> Channel Product attributes** (not **Category attributes**) and set the **Show attribute on channel** option to **Yes** for the attribute you intend to be viewable only. If you want the attribute be refinable, you must also set the **'Can be refined'** option to**Yes**.     
 
@@ -190,7 +190,7 @@ Next, you would identify intended product dimensions to be viewable and refinabl
 
 ![Example of product dimension based attribute setup](./media/ProductDimensionRefinersAttributeSetup_2022Series.png)
 
-Example of steps to enable the attributes so that they are available in the demo-data based Houston channel:
+Example of steps to enable the attributes so that they're available in the demo-data based Houston channel:
 
 1. Navigate to **Channel categories and product attributes form**
 2. Select **Houston**
@@ -281,7 +281,7 @@ But, for refiners to show values defined at a product variant level – You woul
  
 Next, you would need to determine all possible values for your product variants. To continue with the example of ‘Activity’ – there shall be following possible values for the attribute : Running, Walking, Hiking, Trekking, Camping, Watersports, Snowsports, etc. 
  
-Once you have determined those values – you can define that on a Product master level with a pipe-separated-value.  In the above example – ‘Activity’ on product master would have to be defined as following – ‘Running|Walking|Hiking|Trekking|Camping|Watersports|Snowsports’
+Once you've determined those values – you can define that on a Product master level with a pipe-separated-value.  In the above example – ‘Activity’ on product master would have to be defined as following – ‘Running|Walking|Hiking|Trekking|Camping|Watersports|Snowsports’
 
 Mark this attribute as refinable 
 
