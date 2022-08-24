@@ -81,11 +81,11 @@ The **Filter display preferences** page includes the following fields:
 - **Name** – By default, this field is set to the name of the attribute. However, you can change the value.
 - **Display option** – The following options are available:
 
-    - **Single value** – 
+    - **Single value**: 
         - This option is available for the following attribute types: **Boolean**, **Currency**, **Decimal**, **Integer**, and **Text**. 
         - This option only allows single value selection for refiners on product list pages such as category browsing and product search results.
     
-    - **Multi value** – 
+    - **Multi value**: 
         - This option is available for the following attribute types: **Currency**, **Decimal**, **Integer**, and **Text**. 
         - This option enables multi-value selection for this attribute in the client for refinement.
       
@@ -110,12 +110,11 @@ The **Filter display preferences** page includes the following fields:
 
 ![Attribute filter settings](media/AttributeFilterSettings_2022Series.png)
 
-
 > [!NOTE]
-> - Filter settings for attributes are only applicable for 'Product attributes' and can be used for refining product search and category browsing results. These filter settings don't apply to Customer search or Order search, although same attributes could be used for enriching customer or order information. 
-> - Among default eCommerce modules, there is no out-of-box support available for filter settings with 'Display control' as 'Range' or 'Slider' or 'Slider with bars'. 'Range' and 'Slider' continue to be supported for Point-of-sale solution, whereas 'Slider with Bars' was applicable for legacy 'SharePoint' online storefront and continues to be available for 3rd party integration and custom scenarios. 
-> - It is ideally recommended for refinable attributes to have an attribute of type 'fixed-list', but along with that our recommendations is to keep the list manageable and have upto 100-200 unique values and certainly not consider 'fixed-list' type if the unique values for the refiner are going to be in 1000s to 10000s unique values. In that case, best-suited attribute type is 'Text' and not 'Fixed-list'
-> - Translations are critical for attribute names and their values. For attribute of type fixed-list, you can define translations on 'attribute-type' for its values whereas for every other attribute you're able to define translations on the forms where you may define the values for attributes. e.g., For attribute of type 'text' one can define translations for 'default' value on the 'attribute', whereas if you were to override default value at a product level, then you can define translations for it on the 'product attributes' form for the product. 
+> - Filter settings for attributes are only applicable for product attributes and can be used for refining product search and category browsing results. These filter settings don't apply to customer search or order search, although same attributes can be used for enriching customer or order information. 
+> - Among default Commerce modules, there is no out-of-the-box support available for **Display control** filter settings such as **Range**, **Slider**, or **Slider with bars**. **Range** and **Slider** settings continue to be supported for point-of-sale solutions, whereas the **Slider with bars** setting is applicable for legacy Microsoft SharePoint online storefronts and continues to be available for third-party integration and custom scenarios. 
+> - It is recommended that refinable attributes have an attribute of type **Fixed-list**, and to keep the list manageable with up to 100-200 unique values. If the refiner is going to have 1000 or more unique values, the best-suited attribute type is **Text** and not **Fixed-list**.
+> - Translations are critical for attribute names and their values. For attributes of type **Fixed-list**, you can define translations on 'attribute-type' for its values whereas for every other attribute you're able to define translations on the forms where you may define the values for attributes. e.g., For attribute of type 'text' one can define translations for 'default' value on the 'attribute', whereas if you were to override default value at a product level, then you can define translations for it on the 'product attributes' form for the product. 
 > - Once an attribute has been marked as refinable for a channel, then you should not update the 'Attribute type' as it would impact the publishing of product data to search index. It is recommended to create a new attribute for new type of refiner and retire previous attribute by removing from other attribute groups. 
 > - Search by attributes is supported, whereas it only fetches result for exact match of search words. e.g., if you were to have an attribute 'Fabric' with value as 'Cashmere cotton' then if a shopper were to search for 'Cash' then product with 'Fabric = Cashmere cotton' shall not be retrieved, whereas if user were to search for 'Cashmere' or 'Cotton' or 'Cashmere Cotton' then this product will be retrieved among the search results. 
 
