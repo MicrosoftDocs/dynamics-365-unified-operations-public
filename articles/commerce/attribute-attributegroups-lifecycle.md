@@ -176,7 +176,7 @@ Ensure that you are only associating attribute groups in a category hierarchy to
 
 As you have associated various attribute groups to categories in various hierarchies (Commerce product hierarchy or channel navigation categories) and defined those attribute values for each product based on the category association. For those attributes to be viewable in a specific channel, you'll have to set "Show attribute on Channel" flag. 
 
-This flag can be located at **Channel categories and product attributes \> Set attribute metadata \> Select your category from Navigation hierarchy \> Channel Product attributes** (not **Category attributes**) and set the **Show attribute on channel** option to **Yes** for the attribute you intend to be viewable only. If you want the attribute be refinable, you must also set the **'Can be refined'** option to**Yes**.     
+This flag can be located at **Channel categories and product attributes \> Set attribute metadata \> Select your category from Navigation hierarchy \> Channel Product attributes** (not **Category attributes**) and set the **Show attribute on channel** option to **Yes** for the attribute you intend to be viewable only. If you want the attribute to be refinable, you must also set the **'Can be refined'** option to **Yes**.     
 
 ### Control visibility of dimension-based refiners Size, Style and Color
 
