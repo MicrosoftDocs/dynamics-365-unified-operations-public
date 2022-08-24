@@ -160,7 +160,7 @@ To assign attribute groups to categories in the Commerce product hierarchy, foll
 1. Sign in to Commerce headquarters as a merchandising manager.
 2. Go to **Retail and Commerce \> Products and categories \> Commerce product hierarchy**.
 3. Select **Fashion navigation hierarchy**.
-4. Under **Menswear**, select the **Pants** category, and then, on the **Product attribute groups** FastTab, add an attribute group that is named **Men's belt**. 
+4. Under **Menswear**, select the **Pants** category, and then on the **Product attribute groups** FastTab, add an attribute group that is named **Men's belt**. 
 5. Select the **Fashion sunglasses** category, and verify the new attributes in the **Fashion Sunglasses** attribute group by selecting **View attributes**. The attribute group should show the new **Lens shape** and **Sunglass brand** attributes.
 6. Under **Menswear**, select the **Pants** category, and verify the attributes for the **Men's belt** attribute group by selecting **View attributes**. The attribute group should show the **Men's belt brand**, **Belt fabric**, and **Belt size** attributes.
 
@@ -173,15 +173,15 @@ Ensure that you are only associating attribute groups in a category hierarchy to
 
 ## Identify viewable and refinable attributes for Commerce channels for default product collection
 
-As you have associated various attribute groups to categories in various hierarchies (Commerce product hierarchy or channel navigation categories) and defined those attribute values for each product based on the category association. For those attributes to be viewable in a specific channel, you'll have to set "Show attribute on Channel" flag. 
+As you have associated various attribute groups to categories in various hierarchies (Commerce product hierarchy or channel navigation categories) and defined those attribute values for each product based on the category association, for those attributes to be viewable in a specific channel, you'll have to enable the **Show attribute on Channel** flag. 
 
-This flag can be located at **Channel categories and product attributes \> Set attribute metadata \> Select your category from Navigation hierarchy \> Channel Product attributes** (not **Category attributes**) and set the **Show attribute on channel** option to **Yes** for the attribute you intend to be viewable only. If you want the attribute to be refinable, you must also set the **'Can be refined'** option to **Yes**.     
+This flag can be located at **Retail and Commerce \> Channel setup \> Channel categories and product attributes**. Select **Set attribute metadata**, and then select an attribute from the left navigation pane. Under **Channel Product attributes** (not **Category attributes**), set the **Show attribute on channel** option to **Yes** to make the attribute viewable. If you want the attribute to be refinable, you must also set the **'Can be refined'** option to **Yes**.     
 
-### Control visibility of dimension-based refiners Size, Style and Color
+### Control visibility of dimension-based refiners such as size, style, and color
 
-Product dimensions like size, style and color are the most commonly used refiners. To make these product dimensions available as refiners, you would be expected to associate an Attribute group at channel level, which is supposed to be composed of reference attribute type inheriting values automatically from product dimension values. 
+Product dimensions like size, style, and color are the most commonly used refiners. To make these product dimensions available as refiners, you should associate an attribute group at the channel level that contains reference attribute type inheriting values automatically from product dimension values. 
 
-Next, you would identify intended product dimensions to be viewable and refinable by updating flags located at *Channel categories and product attributes > Set attribute metadata > Select **root-node** from Navigation hierarchy > Channel **Product** attributes (not **Category attributes**) and mark the flag for 'Show attribute on channel' as 'Yes'* for the associated attributes to *Size, Style, Color* dimensions if you intend to make them viewable only. And if you intend to have this attribute be 'refinable' as well then you must also check **'Can be refined'**. 
+Next, you should identify intended product dimensions to be viewable and refinable by updating flags located at **Channel categories and product attributes**. Select  the root node from the navigation pane> Set attribute metadata > Channel **Product** attributes (not **Category attributes**) and mark the flag for 'Show attribute on channel' as 'Yes'* for the associated attributes to *Size, Style, Color* dimensions if you intend to make them viewable only. And if you intend to have this attribute be 'refinable' as well then you must also check **'Can be refined'**. 
 
 ![Associate product dimension refiners based attribute group to channel](./media/ProductDimensionRefinersAttributeGroup_2022Series.png)
 
