@@ -37,7 +37,7 @@ The following table lists the features that are included in this release.
 | Web client | <p>**Evaluating math expressions in numeric cells outside the grid**</p><p>To help improve user productivity, numeric cells in the new grid have long enabled users to enter mathematical expressions directly in them. (For example, if a user enters **=15\*4** and then selects **Enter**, the expression is evaluated, and a value of **60** is entered in the cell.) As of this release, this support for mathematical expressions has been extended to numeric controls outside the grid.</p> | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md#evaluating-math-expressions) | Default |
 
 > [!Important]
-> A new **Allow row version change tracking** metadata property has been added for tables. The default value of this property is set to **No**. This property is reserved for future use. At this time, do not set the value to **Yes**.
+> A new **Allow row version change tracking** metadata property has been added for tables. The default value of this property is set to **No**.  Do not set the value to **Yes**, as this property is reserved for future use.
 
 ## Features that are mandatory or turned on by default with this release
 
