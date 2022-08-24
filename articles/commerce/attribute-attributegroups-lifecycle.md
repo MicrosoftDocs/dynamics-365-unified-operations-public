@@ -129,7 +129,7 @@ These are the remaining attribute metadata options on the **Attributes** page:
 - **Ignore case and format**
 - **Complete match**
 
-These options were originally intended to improve the search functionality for the legacy online storefront that was SharePoint based and do not necessarily apply to Dynamics 365 Commerce e-commerce websites or point-of-sale (POS). We continue to support headless integration and thus, these properties continue to be available to export this metadata for attributes using the Commerce software development kit (SDK). Customers can use the Commerce SDK to put products into an external search index of their choice. In that way, they can build an optimal index to make sure that they index only attributes that, *in their opinion*, should be indexed.
+The options listed above were originally intended to improve the search functionality for the legacy SharePoint-based online storefront and don't necessarily apply to Commerce e-commerce websites or point-of-sale (POS) terminals. Headless integration continues to be supported, so these options are available to export attribute metadata using the Commerce software development kit (SDK). You can use the Commerce SDK to put products into an external search index of your choice to build an optimal index to ensure that index only attributes that should be indexed are indexed.
 
 > [!NOTE]
 > For information about the purpose of these remaining options, see [Overview of the search schema in SharePoint Server 2013](/SharePoint/search/search-schema-overview).
