@@ -296,10 +296,10 @@ To define variant-specific attribute values and define multiple values for produ
 		
 The P001 master product is a multiple activity shoe that has three variants: **Running**, **Walking**, and **Trekking**. For each variant, you want to uniquely define the **Activity** attribute value, which can be done through ‘Channel categories and product attributes’ form, from 'Products' FastTab for your channel and 
 
-    - P001-Master : Activity – Sports 
-    - P001-1 : Activity - Running
-    - P001-2 : Activity – Walking 
-    - P001-3 : Activity – Trekking
+- P001-Master : Activity – Sports 
+- P001-1 : Activity - Running
+- P001-2 : Activity – Walking 
+- P001-3 : Activity – Trekking
 
 If a user searches for "shoe", master product P001 would be among search results. If you had chosen the **Activity** attribute to be refinable as well then ‘Activity’ refiner would ONLY list ‘Sports’ as a refinable value, considering that’s defined for ‘Activity’ attribute at ‘P001-Master’
 
