@@ -1,6 +1,6 @@
-﻿---
+---
 title: Deploy an IoT solution on Azure
-description: Sensor Data Intelligence uses data from sensors that are connected to Azure. This article describes how to deploy an IoT solution to your own Azure subscription. 
+description: Sensor Data Intelligence uses data from sensors that are connected to Microsoft Azure. This article explains how to deploy an Internet of Things (IoT) solution on your Azure subscription. 
 author: johanhoffmann
 ms.date: 09/02/2022
 ms.topic: article
@@ -18,44 +18,45 @@ ms.dyn365.ops.version: 10.0.30
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-Sensor Data Intelligence uses data from sensors that are connected to Azure. To enable Azure to retrieve data from your sensors and share it with Supply Chain Management, you must deploy an IoT solution to your own Azure subscription. The following architectural diagram provides an overview of the solution and its components.
+Sensor Data Intelligence uses data from sensors that are connected to Microsoft Azure. To enable Azure to retrieve data from your sensors and share it with Dynamics 365 Supply Chain Management, you must deploy an Internet of Things (IoT) solution on your Azure subscription. The following architectural diagram provides an overview of the solution and its components.
 
-![Sensor Data Intelligence architectural diagram](media/sdi-architecture.png "Sensor Data Intelligence architectural diagram")
+![Sensor Data Intelligence architectural diagram.](media/sdi-architecture.png "Sensor Data Intelligence architectural diagram")
 
-Follow these steps to deploy the required resources on Azure:
+Follow these steps to deploy the required resources on Azure.
 
 1. Sign in to Supply Chain Management as an admin.
 1. Go to **System administration \> Setup \> Sensor Data Intelligence \> Deploy and connect Azure resources** to open the deployment wizard.
-1. Read the information on the **Welcome** page and select **Next**.
-1. Read the information on the **Deploy the sample IoT solution to Azure** page and then, in the **Instructions** section, select **Deploy**.
-1. You are now forwarded to Azure Portal for deploying the Azure resources, which opens in a new browser tab. If asked, sign in using your credentials for your Azure subscription.
-1. The **Custom deployment** page opens. Select your subscription in the **Subscription** field.
-1. Under the **Resource group** field, select **Create new** to create a new resource group for the Azure components you are going to deploy.
-1. A drop-down dialog opens. Enter a **Name** (for example, *IoT-demo*) and then select **OK**.
-1. Make the following settings:
+1. On the **Welcome** page, read the information, and then select **Next**.
+1. On the **Deploy the sample IoT solution to Azure** page, read the information, and then, in the **Instructions** section, select **Deploy**.
+1. A new browser tab is opened, and you're taken to the Azure portal so that you can deploy the Azure resources. If you're prompted, sign in by using your credentials for your Azure subscription.
+1. On the **Custom deployment** page, in the **Subscription** field, select your subscription.
+1. Under the **Resource group** field, select **Create new** to create a resource group for the Azure components that you will deploy.
+1. In the drop-down dialog box that appears, in the **Name** field, enter a name for the new resource group (for example, *IoT-demo*). Then select **OK**.
+1. Set the following fields:
+
     - **Resource group** – Select the resource group that you just created.
-    - **Region** – Select a region, ideally the region where your Supply Chain Management environment is deployed. Keep in mind that Azure regions have different pricing. You can see estimated costs for your region by using the [Sensor Data Intelligence price calculator](https://azure.com/e/c36c4947ebff4215b2e62590c2a24c68).
+    - **Region** – Select a region, ideally the region where your Supply Chain Management environment is deployed. Keep in mind that Azure regions have different pricing. You can view estimated costs for your region by using the [Sensor Data Intelligence price calculator](https://azure.com/e/c36c4947ebff4215b2e62590c2a24c68).
     - **Supply Chain Management environment URL** – Enter the URL for your Supply Chain Management environment.
-    - **Reuse existing Azure IoT Hub** – Leave unchecked.
+    - **Reuse existing Azure IoT Hub** – Leave this checkbox cleared.
 
 1. Select **Next: Review + Create**.
-1. The **Custom deployment** page opens. Verify that the validation has passed and then select **Create**.
-1. The **Deployment is in progress** page opens, which tracks the progress of your deployment. The deployment process can take up to 30 minutes to complete.
-1. When the **Deployment is in progress** page indicates that the deployment is complete, select the link for the **Resource group** name to open a page that shows resources deployed in the group.
-1. In the list of resources, find the record with **Type** *Managed Identity* and select its name in the **Name** column to open the details page for that resource.
-1. On the details page for the resource, copy the identification number in the field **Client ID** (for example, by selecting the **Copy to clipboard** button).
-1. Go back to the browser tab where Supply Chain Management is running with the **Deploy the sample IoT solution to Azure** page still open. Be sure to keep the Azure tab open.
-1. Select **Next** to open the **Connect Azure resources** page.
-1. In the field **Azure AD Application client ID**, paste the **Client ID** value that you copied.
-1. Go back to the browser tab where Azure is open, showing the resource details you were looking at previously (but keep your Supply Chain Management tab open). Then select the **Back** button in your browser to return to the list of resources in your new resource group.
-1. In the list of resources, find the record with **Type** *Azure Cache for Redis* and select its name in the **Name** column to open the details page for that resource.
-1. On the left navigation pane, select **Access keys** to open the **Access keys** page.
-1. Copy the value shown for **Primary connection string (StackExchange.Redis)** (for example, by selecting the **Copy to clipboard** button).
-1. Go back to the browser tab where Supply Chain Management is running with the **Connect Azure resources** page still open.
-1. Paste the **Primary connection string (StackExchange.Redis)** value that you copied into the **Redis metric store connection string** field.
+1. On the **Custom deployment** page, verify that the validation has passed, and then select **Create**.
+1. The **Deployment is in progress** page tracks the progress of your deployment. The deployment process can take up to 30 minutes. When the **Deployment is in progress** page indicates that the deployment is completed, select the link for the resource group name to open a page that shows the list of resources that are deployed in the group.
+1. In the resource list, find the record where the **Type** field is set to *Managed Identity*. In the **Name** column, select the name to open the details page for the resource.
+1. Copy the value in the **Client ID** field (for example, by selecting the **Copy to clipboard** button).
+1. Go back to the browser tab where Supply Chain Management is running, *but don't close the tab for the Azure portal*. The **Deploy the sample IoT solution to Azure** wizard page should still be open. 
+1. Select **Next**.
+1. On the **Connect Azure resources** page, in the **Azure AD Application client ID** field, paste the **Client ID** value that you copied.
+1. Go back to the browser tab where the Azure portal is open, *but don't close the tab for Supply Chain Management*. The details page for the resource should still be open.
+1. Select the browser's **Back** button to return to the list of resources in the new resource group.
+1. In the resource list, find the record where the **Type** field is set to *Azure Cache for Redis*. In the **Name** column, select the name to open the details page for the resource.
+1. In the left navigation pane, select **Access keys**.
+1. On the **Access keys** page, copy the value that is shown for **Primary connection string (StackExchange.Redis)** (for example, by selecting the **Copy to clipboard** button).
+1. Go back to the browser tab where Supply Chain Management is running. The **Connect Azure resources** page should still be open.
+1. In the **Redis metric store connection string** field, paste the **Primary connection string (StackExchange.Redis)** value that you copied.
 1. Select **Finish**.
 
 Azure resources for Sensor Data Intelligence are now deployed on your Azure subscription.
 
 > [!NOTE]
-> You can view or edit the connection information saved in Supply Chain Management at any time by going to the **Sensor Data Intelligence parameters** page. For more information, see [Sensor Data Intelligence parameters](sdi-parameters.md).
+> At any time, you can view or edit the connection information that is saved in Supply Chain Management by opening the **Sensor Data Intelligence parameters** page. For more information, see [Sensor Data Intelligence parameters](sdi-parameters.md).
