@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Platform update 52
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about the tools that are available to monitor usage of application programming interfaces (APIs). This includes queries that display information on API requests that have been throttled when [service protection limits](./service-protection-api-limits) have been reached, as well as general API usage to help administrators understand when integrations may be nearing the API limits.
+This article provides information about the tools that are available to monitor usage of application programming interfaces (APIs). This includes queries that display information on API requests that have been throttled when [service protection limits](service-protection-api-limits.md) have been reached, as well as general API usage to help administrators understand when integrations may be nearing the API limits.
 
 To have a successful onboarding experience that includes the throttling capability, you must be able to monitor your Open Data Protocol (OData) and custom service integration patterns. Microsoft Dynamics Lifecycle Services (LCS), which is the administration center for finance and operations apps, contains a collection of monitoring and diagnostics tools that can help ensure that you have an accurate view of the environments that you manage. For more information, see [Monitoring and diagnostics tools in Lifecycle Services (LCS)](../lifecycle-services/monitoring-diagnostics.md).
 
@@ -56,7 +56,7 @@ The **Summarized API requests by application and user** query provides a summari
 - The total number of API requests in the selected date/time range.
 - The total execution time of the API requests in the selected date/time range.
 
-The results are summarized in five-minute intervals, similar to the five-minute sliding window of [user-based service protection API limits](./service-protection-api-limits#user-based-service-protection-api-limits).
+The results are summarized in five-minute intervals, similar to the five-minute sliding window of [user-based service protection API limits](service-protection-api-limits.md#user-based-service-protection-api-limits).
 
 To view the summarized data:
 
