@@ -95,7 +95,7 @@ An attribute's **Attributes** page includes several options that are related to 
 
 ## Filter settings for attributes
 
-Filter settings for attributes allow you to define how the filters for attributes are shown in point of sale (POS). To access the filter settings for an attribute, on the attribute's **Attributes** page, select the attribute, and then on the action pane select **Filter settings**.
+Filter settings for attributes allow you to define how the attribute filters are shown in point of sale (POS). To access the filter settings for an attribute, on the attribute's **Attributes** page, select the attribute, and then on the action pane select **Filter settings**.
 
 The **Filter settings** page includes the following fields:
 
@@ -112,27 +112,32 @@ The **Filter settings** page includes the following fields:
 
     For example, for the filter like **Bag Volume**, a threshold value can be **10; 20; 50; 100; 200; 500; 1000; 5000**. In this case, the POS will show the following ranges. Any ranges that don't have any products in the result set will appear dimmed.
 
-    - Less than 10
-    - 10 – 20
-    - 20 – 50
-    - 50 – 100
-    - 100 – 200
-    - 200 – 500
-    - 500 or more
+    - **Less than 10**
+    - **10 – 20**
+    - **20 – 50**
+    - **50 – 100**
+    - **100 – 200**
+    - **200 – 500**
+    - **500 or more**
 
 ![Attribute filter settings](media/AttributeFilterSettings_2022Series.png)
 
-> [!NOTE]
-> - Filter settings for attributes are only applicable for product attributes and can be used for refining product search and category browsing results. These filter settings don't apply to customer search or order search, although same attributes can be used for enriching customer or order information. 
-> - Among default Commerce modules, there is no out-of-the-box support available for **Display control** filter settings such as **Range**, **Slider**, or **Slider with bars**. **Range** and **Slider** settings continue to be supported for point-of-sale solutions, whereas the **Slider with bars** setting is applicable for legacy Microsoft SharePoint online storefronts and continues to be available for third-party integration and custom scenarios. 
-> - It is recommended that refinable attributes have an attribute of type **Fixed-list**, and to keep the list manageable with up to 100-200 unique values. If the refiner is going to have 1000 or more unique values, the best-suited attribute type is **Text** and not **Fixed-list**.
-> - Translations are critical for attribute names and their values. For attributes of type **Fixed-list**, you can define translations on 'attribute-type' for its values whereas for every other attribute you're able to define translations on the forms where you may define the values for attributes. For example, for an attribute of type **Text** you can define translations for the default value on the attribute, but if you override the default value at the product level you can define translations for it on a  product's **Product attributes** form. 
-> - Once an attribute has been marked as refinable for a channel, you should not update the attribute type because that would impact the publishing of product data to the search index. It is recommended to create a new attribute for a new type of refiner and retire the previous attribute by removing it from other attribute groups. 
-> - Search by attributes is supported, but it only fetches results for exact matches of search words. For example, for a **'Fabric** attribute with a value of "Cashmere cotton", if a customer searches for "Cash" then no products where the fabric is "cashmere cotton" will be retrieved, whereas if a site user searches for "Cashmere", "Cotton", or "Cashmere Cotton" then products with a fabric of cashmere cotton will be retrieved. 
+
+Filter settings for attributes are only applicable for product attributes and can be used for refining product search and category browsing results. These filter settings don't apply to customer search or order search, although same attributes can be used for enriching customer or order information. 
+
+Among default Commerce modules, there is no out-of-the-box support available for **Display control** filter settings such as **Range**, **Slider**, or **Slider with bars**. **Range** and **Slider** settings continue to be supported for point-of-sale solutions, whereas the **Slider with bars** setting is applicable for legacy Microsoft SharePoint online storefronts and continues to be available for third-party integration and custom scenarios. 
+
+It is recommended that refinable attributes have an attribute of type **Fixed-list**, and to keep the list manageable with up to 100-200 unique values. If the refiner is going to have 1000 or more unique values, the best-suited attribute type is **Text** and not **Fixed-list**.
+
+Translations are critical for attribute names and their values. For attributes of type **Fixed-list**, you can define translations on 'attribute-type' for its values whereas for every other attribute you're able to define translations on the forms where you may define the values for attributes. For example, for an attribute of type **Text** you can define translations for the default value on the attribute, but if you override the default value at the product level you can define translations for it on a  product's **Product attributes** form. 
+
+Once an attribute has been marked as refinable for a channel, you should not update the attribute type because that would impact the publishing of product data to the search index. It is recommended to create a new attribute for a new type of refiner and retire the previous attribute by removing it from other attribute groups. 
+
+Search by attributes is supported, but it only fetches results for exact matches of search words. For example, for a **'Fabric** attribute with a value of "Cashmere cotton", if a customer searches for "Cash" then no products where the fabric is "cashmere cotton" will be retrieved, whereas if a site user searches for "Cashmere", "Cotton", or "Cashmere Cotton" then products with a fabric of cashmere cotton will be retrieved. 
 
 ### Additional options for attribute *(applicable for legacy SharePoint online storefront and external integrations)*
 
-These are the remaining attribute metadata options on the **Attributes** page:
+The following are the remaining attribute metadata options on the **Attributes** page:
 
 - **Searchable**
 - **Retrievable**
@@ -141,14 +146,14 @@ These are the remaining attribute metadata options on the **Attributes** page:
 - **Ignore case and format**
 - **Complete match**
 
-The options listed above were originally intended to improve the search functionality for the legacy SharePoint-based online storefront and don't necessarily apply to Commerce e-commerce websites or point-of-sale (POS) terminals. Headless integration continues to be supported, so these options are available to export attribute metadata using the Commerce software development kit (SDK). You can use the Commerce SDK to put products into an external search index of your choice to build an optimal index to ensure that index only attributes that should be indexed are indexed.
+These options were originally intended to improve the search functionality for legacy SharePoint-based online storefronts and don't necessarily apply to Commerce e-commerce websites or point-of-sale (POS) terminals. Headless integration continues to be supported, so these options are available to export attribute metadata using the Commerce software development kit (SDK). You can use the Commerce SDK to put products into a custom, optimized external search index that ensures that only attributes that should be indexed are indexed.
 
 > [!NOTE]
-> For information about the purpose of these remaining options, see [Overview of the search schema in SharePoint Server 2013](/SharePoint/search/search-schema-overview).
+> For more information about these remaining options, see [Overview of the search schema in SharePoint Server 2013](/SharePoint/search/search-schema-overview).
 
 ## Attribute groups
 
-An *attribute group* is used to group the individual attributes for a component or subcomponent in a product configuration model. An attribute can be included in more than one attribute group. Attribute groups can help users configure products because the various selections are arranged in a specific context. Attribute groups can be assigned to categories or channels. You can also set default values for attributes that are included in an attribute group. 
+An *attribute group* is used to group the individual attributes for a component or subcomponent in a product configuration model. An attribute can be included in more than one attribute group. Attribute groups can help users configure products because the various selections are arranged in a specific context. Attribute groups can be assigned to categories or channels. You can also set default values for attributes in an attribute group. 
 
 ![Attribute groups.](media/AttributeGroup_2022Series.png)
 
@@ -163,7 +168,13 @@ To create an attribute group, follow these steps.
 
 ### Assign attribute groups to categories
 
-One or more attribute groups can be associated with category nodes in the following types of category hierarchies: Commerce product hierarchy, Channel navigation category hierarchy, and Supplemental product category hierarchy. Then, when products are categorized, they inherit the attributes that are included in the attribute groups.
+One or more attribute groups can be associated with category nodes in the following types of category hierarchies: 
+
+- Commerce product hierarchy
+- Channel navigation category hierarchy
+- Supplemental product category hierarchy 
+ 
+When products are categorized to categories associated with attribute groups, they inherit the attributes included in the attribute groups.
 
 ![Product hierarchy – Product attribute groups.](media/AGRetailProdHierarchy_2022Series.png)
 
@@ -181,7 +192,7 @@ This procedure can also be used to assign attribute groups to categories in the 
 - **Retail and Commerce \> Category and product management \> Channel navigation categories**
 - **Retail and Commerce \> Category and product management \> Supplemental product categories**
 
-Ensure that you are only associating attribute groups in a category hierarchy to the **Product attribute groups** FastTab and not the **Category attribute values** FastTab. If you see attributes appearing in the **Category attribute values** FastTab, select **Edit category hierarchy** on the action pane, and then on the **Category attribute groups** FastTab, select category nodes and then select **Remove**. There's no support available to fetch attributes by category through Commerce Scale Unit.  
+Ensure that you are only associating attribute groups in a category hierarchy to the **Product attribute groups** FastTab and not the **Category attribute values** FastTab. If you see attributes appearing on the **Category attribute values** FastTab, select **Edit category hierarchy** on the action pane, and then on the **Category attribute groups** FastTab, select the category nodes and then select **Remove**. There's no support available to fetch attributes by category through Commerce Scale Unit.  
 
 ## Identify viewable and refinable attributes for Commerce channels for default product collection
 
