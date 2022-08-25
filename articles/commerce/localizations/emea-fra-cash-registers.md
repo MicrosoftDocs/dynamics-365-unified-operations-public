@@ -439,6 +439,8 @@ The following steps must be completed before you can use a digital certificate t
 
 For more information about how to work with Key Vault, see [Get started with Azure Key Vault](/azure/key-vault/key-vault-get-started).
 
+Next, you need to enable Commerce to use certificates stored in Key Vault. On the **System parameters** page, set the **Use advanced certificate store** parameter to **Yes**.
+
 Next, on the **Key Vault parameters** page, you must specify the parameters for accessing the Key Vault storage:
 
 - **Name** and **Description** – The name and description of the Key Vault storage.
