@@ -84,6 +84,19 @@ When you select an entity, you must select the format of the data that will be e
 > [!NOTE]
 > For XML-based file formats, make sure to only use legal characters. For more details about valid characters, see [Valid Characters in XML 1.0](https://www.w3.org/TR/2006/REC-xml-20060816/Overview.html#charsets/). XML 1.0 does not allow any control characters except for tabs, carriage returns, and line feeds. Examples of illegal characters are square brackets, curly brackets, and backslashes. 
 
+Use Unicode instead of a specific code page to import or export data. This will secure the most consistent result and eliminate data management jobs to fail because they include Unicode characters. The system defined Source data formats that use Unicode all have **Unicode** in the source name. The Unicode format is applied by selecting a Unicode encoding ANSI code page as **Code page** in the **Regional settings** tab. Select one of the following code pages for Unicode:
+
+| Code page	| Display name                |
+|-----------|-----------------------------|
+| 1200	    | Unicode                     |
+| 12000     | Unicode (UTF-32)            |
+| 12001	    | Unicode (UTF-32 Big-Endian) |
+| 1201	    | Unicode (Big-Endian)        |
+| 65000	    | Unicode (UTF-7)             |
+| 65001     | Unicode (UTF-8)             |
+
+For more details about Code pages, see [Code Page Identifiers](https://docs.microsoft.com/en-us/windows/win32/intl/code-page-identifiers/).
+
 ### Sequence the entities
 Entities can be sequenced in a data template, or in import and export jobs. When you run a job that contains more than one data entity, you must make sure that the data entities are correctly sequenced. You sequence entities primarily so that you can address any functional dependencies among entities. If entities don’t have any functional dependencies, they can be scheduled for parallel import or export. 
 
