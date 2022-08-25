@@ -431,46 +431,13 @@ You must configure certificates that will be used for digital signing of records
 > [!NOTE]
 > You can use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing. Only certificates that have RSA-2048-bit or Elliptic Curve Digital Signature Algorithm (ECDSA) 224-bit minimum private keys are acceptable. Commerce supports only RSA-2048-bit or longer keys. If you want to use an ECDSA key, you must implement a customization.
 
-The following steps must be completed before you can use a digital certificate that is stored in Key Vault storage:
+Follow the steps that are described in [Set up certificate profiles](./certificate-profiles-for-retail-stores.mdset-up-certificate-profiles) to configure certificates and certificate profiles to be used for digital signing.
 
-1. The Key Vault storage must be created. We recommend that you deploy the storage in the same geographical region as the Commerce Scale Unit.
-1. The certificate must be uploaded to the Key Vault storage.
-1. The Application Object Server (AOS) application must be authorized to read secrets from the Key Vault storage.
+After you set up certificate profiles, go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**, select the connector technical profie that you created earlier, and specify the following parameters for digital signatures on the **Settings** FastTab:
 
-For more information about how to work with Key Vault, see [Get started with Azure Key Vault](/azure/key-vault/key-vault-get-started).
-
-Next, you need to enable Commerce to use certificates stored in Key Vault:
-
-- On the **System parameters** page, set the **Use advanced certificate store** parameter to **Yes**.
-- In the **Feature management** workspace, turn on the **User-defined certificate profiles for retail stores** feature.
-
-Next, on the **Key Vault parameters** page, you must specify the parameters for accessing the Key Vault storage:
-
-- **Name** and **Description** – The name and description of the Key Vault storage.
-- **Key Vault URL** – The URL of the Key Vault storage.
-- **Key Vault client** – An interactive client ID of the Azure Active Directory (Azure AD) application that is associated with the Key Vault storage for authentication purposes. This client should have access to read secrets from the storage.
-- **Key Vault secret key** – A secret key that is associated with the Azure AD application that is used for authentication in the Key Vault storage.
-- **Name**, **Description**, and **Secret reference** – The name, description, and secret reference of the certificate.
-
-Next, you must configure a certificate profile for your certificates that are stored in Key Vault or local certificate storage. The certificate profile is used for signing on the channel side.
-
-To configure a certificate profile for your certificates in Commerce headquarters, follow these steps.
-
-1. Go to **System administration \> Setup \> Certificate profiles**. 
-1. Create a new certificate profile.
-1. On the **Legal entities** FastTab, add the required legal entities.
-1. Select **Settings**.
-1. Add a new certificate. Both certificates that are stored in Key Vault and local certificates are supported. You can add as many certificates as you require and set priorities for the certificates. If a certificate that has a higher priority isn't available, the next certificate will be used, based on priority.
-
-    - For a certificate that is stored in Key Vault, you must select the certificate in the drop-down list.
-    - For a certificate that is stored locally, you must specify the thumbprint of the certificate.
-
-1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**.
-1. On the **Settings** FastTab, specify the following parameters for digital signatures:
-
-    - **Certificate profile** – Select the certificate profile that you configured earlier.
-    - **Hash algorithm** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA256**.
-    - **Activate health check** – For more information about the health check feature, see [Fiscal registration health check](./fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
+- **Certificate profile** – Select the certificate profile that you configured earlier.
+- **Hash algorithm** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA256**.
+- **Activate health check** – For more information about the health check feature, see [Fiscal registration health check](./fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
 
 Finally, on the **Commerce parameters** page (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**), you must specify the following parameters for digital signing on the Commerce headquarters side:
 
