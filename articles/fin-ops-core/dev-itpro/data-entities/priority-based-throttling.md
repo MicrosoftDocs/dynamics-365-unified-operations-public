@@ -45,8 +45,8 @@ For resource-based service protection API limits, you can set the relative prior
 The **Throttling Priority Mapping** page is used to assign priorities for integrations so that priorities can be honored when requests are throttled. Setting appropriate priorities ensures that low-priority integrations will be throttled before high-priority integrations. For more information about how to set up integration, see [Enable connectivity with external services](/learn/modules/integrate-azure-finance-operations/7-connect-external). 
 
 The following are the authentication types supported in Azure Active Directory (AAD). For more information, see [Authentication](services-home-page.md).
-- **User based** – This flow uses a username and password for authentication and authorization. 
-- **AAD application based** – A confidential client is an application that can keep a client password confidential. The authorization server assigned this client password to the client application. 
+- **User based**: This flow uses a username and password for authentication and authorization. 
+- **AAD application based**: This flow uses an application registered in AAD and an associated secret for authentication. 
 
 When setting the priority mapping, you will select the authentication type that is used for the integration, either for a specific application (client ID) or a specific user.
 - If the priority mapping is set for an application, then the priority mapping is applied to any API request from the selected AAD application ID.
