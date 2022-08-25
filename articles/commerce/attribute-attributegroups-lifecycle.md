@@ -224,13 +224,15 @@ Example of steps to enable the attributes so that they're available in the demo-
 > ![Catalog – Product attribute and refiner settings - step 1](media/CatalogAttributeRefinerSetup1_2022Series.png)
 > ![Catalog – Product attribute and refiner settings - step 2](media/CatalogAttributeRefinerSetup2_2022Series.png)
 
-## Overriding attribute values
+## Override attribute values
 
 The default values of attributes can be overridden for individual products at the product level. Default values can also be overridden for individual products in specific catalogs that are targeted at specific channels.
 
 ### Override the attribute values of an individual product
 
-1. Sign in to the back-office client as a merchandising manager.
+To override the attribute values of an individual product, follow these steps.
+
+1. Sign in to Commerce headquarters as a merchandising manager.
 2. Go to **Retail and Commerce \> Category and product management \> Released products by category**.
 3. Select the **Fashion \> Fashion Accessories \> Fashion Sunglasses** category node.
 4. Select the required product in the grid. Then, on the Action Pane, on the **Product** tab, in the **Set up** group, select **Product attributes**.
@@ -238,9 +240,11 @@ The default values of attributes can be overridden for individual products at th
 
 ![Product details page – Product attribute groups.](media/ProdDetailsProdAttrValues_2022Series.png)
 
-### Override the attribute values of products in a catalog
+### Override the attribute values of all products in a catalog
 
-1. Sign in to the back-office client as a merchandising manager.
+To override the attribute values of all products in a catalog, follow these steps.
+
+1. Sign in to Commerce headquarters as a merchandising manager.
 2. Go to **Retail and Commerce \> Catalog management \> All catalogs**.
 3. Select the **Fabrikam Base Catalog** catalog.
 4. Select the **Fashion \> Fashion Accessories \> Fashion Sunglasses** category node.
@@ -249,7 +253,9 @@ The default values of attributes can be overridden for individual products at th
 
 ### Override the attribute values of products in a channel
 
-1. Sign in to the back-office client as a merchandising manager.
+To override the attribute values of all products in a channel, follow these steps.
+
+1. Sign in to Commerce headquarters as a merchandising manager.
 2. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
 3. Select the **Houston** channel.
 4. On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.
@@ -262,7 +268,9 @@ The default values of attributes can be overridden for individual products at th
 
 ### Define variant specific attribute values and define multiple values for product attributes
 
-1. Sign in to the back-office client as a merchandising manager.
+To define variant specific attribute values and define multiple values for product attributes, follow these steps.
+
+1. Sign in to Commerce headquarters as a merchandising manager.
 2. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
 3. Select the **Houston** channel.
 4. On the **Products** FastTab, select the required product variant, and then select **Attributes** above the product grid.
