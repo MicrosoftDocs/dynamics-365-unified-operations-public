@@ -4,7 +4,7 @@
 title: Cross-company data sharing for gift cards
 description: This topic describes how to configure Microsoft Dynamics 365 Commerce to use Microsoft Dynamics 365 Finance data sharing functionality across data areas for syncing gift card data.
 author: BrianShook
-ms.date: 08/23/2022
+ms.date: 08/25/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -51,12 +51,11 @@ To configure cross-company data sharing for gift cards, follow these steps.
 1. In the row under **Company**, select a company from the drop-down list.
 1. Under **Name**, enter the company name.
 1. To add additional company rows, repeat steps 8-10.
-1. When finished adding company rows, on the action pane select **Enable**. The following two warning dialog boxes will appear that need to be agreed to:
+1. When finished adding company rows, on the action pane select **Enable**. Two warning dialog boxes with questions will appear:
+    1. For the **It is recommended to only perform this action during non-business hours. Any concurrent transaction operations will fail for tables in the policy. Do you want to continue?** dialog box, select **Yes**.
+    1. For the **Would you like to copy all existing data across all shared companies now?** dialog box, select **Yes**.
 
-    - "It is recommended to only perform this action during non-business hours. Any concurrent transaction operations will fail for tables in the policy. Do you want to continue?"
-    - "Would you like to copy all existing data across all shared companies now?"
-
-1. After agreeing to both questions, tables will begin to copy data across the configured companies. Balances occurring against one company gift card will then be visible to the other company.
+After agreeing to both questions, tables will begin to copy data across the configured companies. Balances occurring against one company gift card will then be visible to the other company.
 
 ## Additional resources
 
