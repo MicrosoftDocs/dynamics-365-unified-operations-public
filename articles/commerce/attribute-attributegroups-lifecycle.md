@@ -2,9 +2,9 @@
 # required metadata
 
 title: Manage attributes and attribute groups
-description: This article describes how to use attributes to provide a way to describe a product and its characteristics through user-defined fields. 
+description: This article describes how to manage attributes and attribute groups to describe products and their characteristics in Microsoft Dynamics 365 Commerce. 
 author: ashishmsft
-ms.date: 08/24/2022
+ms.date: 08/25/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -18,6 +18,8 @@ ms.search.validFrom: 2018-03-30
 # Manage attributes and attribute groups
 
 [!include [banner](includes/banner.md)]
+
+This article describes how to manage attributes and attribute groups to describe products and their characteristics in Microsoft Dynamics 365 Commerce.
 
 *Attributes* provide a way to further describe a product and its characteristics through user-defined fields (for example, memory size, hard disk capacity, energy star compliance, etc.). Attributes can be associated with various Commerce entities, such as product categories and channels, and default values can be set for attributes. When attributes are associated with product categories or channels, products then inherit the attributes and their default values. Attribute default values can be overridden at the individual product level, at the channel level, or in a catalog.
 
