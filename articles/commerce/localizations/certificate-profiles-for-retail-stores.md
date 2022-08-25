@@ -2,7 +2,7 @@
 title: User-defined certificate profiles for retail stores
 description: This article provides an overview about how certificates are used in retail stores.
 author: josaw1
-ms.date: 10/09/2020
+ms.date: 08/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -51,8 +51,9 @@ The certificate profiles functionality supports the following scenarios in the C
 The following procedure explains how to set up certificate profiles. Before you use certificate profiles in the Commerce channels, follow these steps to configure the settings.
 
 1. In the **Feature management** workspace, turn on the **User-defined certificate profiles for retail stores** feature.
-2. Go to **System administration \> Setup \> Certificate profiles**.
-3. Create a record, and set the **Certificate profile**, **Name**, and **Description** fields for it.
+2. On the **System parameters** page, set the **Use advanced certificate store** parameter to **Yes**.
+3. Go to **System administration \> Setup \> Certificate profiles**.
+4. Create a record, and set the **Certificate profile**, **Name**, and **Description** fields for it.
 
     > [!NOTE]
     > The certificate profile is a unique identifier of a certificate across all companies and Commerce components.
