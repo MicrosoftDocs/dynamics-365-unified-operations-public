@@ -34,7 +34,7 @@ This topic describes how to configure Microsoft Dynamics 365 Commerce to use Mic
 
 Users must configure their environment for cross-company data sharing as described in [Cross-company data sharing](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing).
 
-The **RetailGiftCardTable** must have the **DataSharingType** set to "Duplicate", which enables duplicate record sharing (DRS) for the gift card table. For more information, see [Cross-company data sharing for developers](/dynamics365/fin-ops-core/dev-itpro/sysadmin/drs-srs-dev).
+The **RetailGiftCardTable** must have the **DataSharingType** set to **Duplicate**, which enables duplicate record sharing (DRS) for the gift card table. For more information, see [Cross-company data sharing for developers](/dynamics365/fin-ops-core/dev-itpro/sysadmin/drs-srs-dev).
 
 ## Configure cross-company data sharing for gift cards
 
@@ -45,9 +45,9 @@ To configure cross-company data sharing for gift cards, follow these steps.
 1. Under **Name**, enter a name for the data sharing record (for example, "Gift Cards").
 1. In the **TABLES AND FIELDS TO SHARE** section, select **+Add**.
 1. In the **Share new table** dialog box, under **Table name**, enter "RETAILGIFTCARDTABLE" (the table for retail gift cards). The value of **Table label** should now be **Gift card table**.
-1. Ensure that the **Save data per company**, **Has unique index**, and **Not shared yet** checkboxes are all selected. These are validations that will occur with the data sharing functionality.
-1. Select **Add table**. The **Gift card table (RetailGiftCardTable)** record should now appear under **TABLES AND FIELDS TO SHARE**. Selecting the caret symbol will display all the table fields automatically associated with the table for sharing.
-1. In the **COMPANIES WHICH SHARE THE RECORDS IN THESE TABLES** section, select **+Add** to add a company to share data across.
+1. Ensure that the **Save data per company**, **Has unique index**, and **Not shared yet** checkboxes are all selected. Enabling these checkboxes trigger validations related to the data sharing functionality.
+1. Select **Add table**. The **Gift card table (RetailGiftCardTable)** record should now appear under **TABLES AND FIELDS TO SHARE**. Selecting the caret symbol shows all the table fields automatically associated with the table for sharing.
+1. In the **COMPANIES WHICH SHARE THE RECORDS IN THESE TABLES** section, select **+Add** to add a company to share data with.
 1. In the row under **Company**, select a company from the drop-down list.
 1. Under **Name**, enter the company name.
 1. To add additional company rows, repeat steps 8-10.
