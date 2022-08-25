@@ -4,7 +4,7 @@
 title: Throttling prioritization
 description: This article provides information about priority-based throttling for OData and custom service-based integrations.
 author: jaredha
-ms.date: 05/04/2022
+ms.date: 08/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
