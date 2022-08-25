@@ -90,7 +90,7 @@ Follow these steps to configure a certificate profile:
     > The certificate profile is a unique identifier of a certificate across all companies and Commerce components.
 
 1. On the **Legal entities** tab, add a line, and select the legal entity (company) that the current certificate profile should be used for. If the certificate profile should be used for multiple legal entities, repeat this step to add a line for each additional legal entity.
-1. Select **Settings** to open the **Certificate profile settings** page, where you can enter company-specific settings for the certificate profile. You can specify which certificates can be used when the current certificate profile is called in the Commerce channels. You can also specify the order that certificates should be searched in.
+1. Select **Settings** to open the **Certificate profile settings** page, where you can enter company-specific settings for the certificate profile. You can specify which certificates can be used when the current certificate profile is called in the Commerce channels. You can add as many certificates as you require, and set priorities for the certificates. If a certificate that has a higher priority isn't available, the next certificate will be used, based on priority. For more information, see [Workflow: Searching certificates in the Commerce runtime](#workflow-searching-certificates-in-the-commerce-runtime).
 
     > [!NOTE]
     > The **Priority** field is automatically set. A value of **1** represents the highest priority. When a new line is added on the **Certificate profile settings** page, its priority is set to a number that is one more than the priority of the previous line. To change the priority of a specific line, select the line, and then select either **Move up** to increase the priority or **Move down** to decrease the priority.
@@ -106,6 +106,10 @@ Follow these steps to configure a certificate profile:
         > The default store name and store location are added to simplify the process of searching local certificates in the Commerce runtime. X509StoreProvider has a list of folders where certificates are stored. If the default store name and the default store location aren't specified, X509StoreProvider tries to find a certificate in the other folders on its list. For more information about available values for the store name and store location, see [StoreName Enum](/dotnet/api/system.security.cryptography.x509certificates.storename) and [StoreLocation Enum](//dotnet/api/system.security.cryptography.x509certificates.storelocation).
 
     - **Thumbprint** – This field is required and available only if you set the **Location type** field to **Local certificate**. Use it to specify the certificate thumbprint.
+ 
+        > [!IMPORTANT]
+        > You must make sure that the user that runs the application that needs to use the local certificate (e.g., Modern POS in the Offline mode) has at least a Read-only access to the private key of the certificate.
+
     - **Comments** – This field is optional and lets users enter notes.
 
 ## Workflow: Searching certificates in the Commerce runtime
