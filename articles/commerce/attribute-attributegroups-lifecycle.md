@@ -262,7 +262,7 @@ To override the attribute values of all products in a catalog, follow these step
 5. On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.
 6. On the following FastTabs, update the values of the required attributes
 
-### Override the attribute values of products in a channel
+### Override the attribute values of all products in a channel
 
 To override the attribute values of all products in a channel, follow these steps.
 
@@ -277,9 +277,9 @@ To override the attribute values of all products in a channel, follow these step
     - Channel media
     - Channel product attributes
 
-### Define variant specific attribute values and define multiple values for product attributes
+### Define variant-specific attribute values and define multiple values for product attributes
 
-To define variant specific attribute values and define multiple values for product attributes, follow these steps.
+To define variant-specific attribute values and define multiple values for product attributes, follow these steps.
 
 1. Sign in to Commerce headquarters as a merchandising manager.
 2. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
@@ -287,27 +287,27 @@ To define variant specific attribute values and define multiple values for produ
 4. On the **Products** FastTab, select the required product variant, and then select **Attributes** above the product grid.
 5. If no products are available, add products by selecting **Add** on the **Products** FastTab and then selecting the required product variants in the **Add products** dialog box.
 6. On the following FastTabs, update the values of the required attributes:
-    - Shared product media
-    - Shared product attributes
-    - Channel media
-    - Channel product attributes
+    - **Shared product media**
+    - **Shared product attributes**
+    - **Channel media**
+    - **Channel product attributes**
     
-7. Example – 
+#### Example 
 		
-    P001 is a ‘Multi-activity Shoe’ and it has 3 variants – "Running", "Walking", and "Trekking". And for each variant you want to define ‘Activity’ attribute value uniquely – which can be done through ‘Channel categories and product attributes’ form, from 'Products' FastTab for your channel and 
+The P001 master product is a multiple activity shoe that has three variants: **Running**, **Walking**, and **Trekking**. For each variant, you want to uniquely define the **Activity** attribute value, which can be done through ‘Channel categories and product attributes’ form, from 'Products' FastTab for your channel and 
 
     - P001-Master : Activity – Sports 
     - P001-1 : Activity - Running
     - P001-2 : Activity – Walking 
     - P001-3 : Activity – Trekking
 
-Now, when a user were to search for ‘Shoe’ – it would certainly list P001 among search results and if you had chosen ‘Activity’ to be refinable as well then ‘Activity’ refiner would ONLY list ‘Sports’ as a refinable value, considering that’s defined for ‘Activity’ attribute at ‘P001-Master’
+If a user searches for "shoe", master product P001 would be among search results. If you had chosen the **Activity** attribute to be refinable as well then ‘Activity’ refiner would ONLY list ‘Sports’ as a refinable value, considering that’s defined for ‘Activity’ attribute at ‘P001-Master’
 
 Then, what about the attributes that are defined at a variant level? How can those values show up among refiners? 
 
-Default experience – variant-level attribute are only intended for PDP (Product details page) – as you select a specific variant, product specifications are updated for that specific product variant. 
+The default experience is that variant-level attributes are only intended for use on product details pages (PDPs). When you select a specific variant on a PDP, the product specifications on the PDP are updated for that specific product variant. 
  
-But, for refiners to show values defined at a product variant level – You would need to define an attribute at a product master level with **‘Allow multiple values’** checked on attribute definition of type ‘TEXT’. 
+For refiners to show values defined at a product variant level, you would need to define an attribute at the product master level with **‘Allow multiple values’** checked, with an attribute definition of type **Text**. 
  
 Next, you would need to determine all possible values for your product variants. To continue with the example of ‘Activity’ – there shall be following possible values for the attribute : Running, Walking, Hiking, Trekking, Camping, Watersports, Snowsports, etc. 
  
