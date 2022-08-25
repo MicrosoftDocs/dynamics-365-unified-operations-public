@@ -4,7 +4,7 @@
 title: Monitor API throttling
 description: This article provides information about the tools that are available to monitor application programming interface (API) throttling when service protection limits are reached.
 author: jaredha
-ms.date: 05/04/2022
+ms.date: 08/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
