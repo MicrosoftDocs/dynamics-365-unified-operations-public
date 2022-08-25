@@ -50,7 +50,7 @@ To configure cross-company data sharing for gift cards, follow these steps.
 1. In the **COMPANIES WHICH SHARE THE RECORDS IN THESE TABLES** section, select **+Add** to add a company to share data with.
 1. In the row under **Company**, select a company from the drop-down list.
 1. Under **Name**, enter the company name.
-1. To add additional company rows, repeat steps 8-10.
+1. To add more company rows, repeat steps 8-10 for each company.
 1. When finished adding company rows, on the action pane select **Enable**. Two warning dialog boxes with questions will appear:
     1. For the **It is recommended to only perform this action during non-business hours. Any concurrent transaction operations will fail for tables in the policy. Do you want to continue?** dialog box, select **Yes**.
     1. For the **Would you like to copy all existing data across all shared companies now?** dialog box, select **Yes**.
