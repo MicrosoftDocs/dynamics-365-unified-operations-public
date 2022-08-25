@@ -21,7 +21,7 @@ ms.search.validFrom: 2018-03-30
 
 This article describes how to manage attributes and attribute groups to describe products and their characteristics in Microsoft Dynamics 365 Commerce.
 
-*Attributes* provide a way to further describe a product and its characteristics through user-defined fields (for example, memory size, hard disk capacity, energy star compliance, etc.). Attributes can be associated with various Commerce entities, such as product categories and channels, and default values can be set for attributes. When attributes are associated with product categories or channels, products then inherit the attributes and their default values. Attribute default values can be overridden at the individual product level, at the channel level, or in a catalog.
+*Attributes* provide a way to describe products and their characteristics through user-defined fields (for example, memory size, hard disk capacity, energy star compliance, etc.). Attributes can be associated with various Commerce entities, such as product categories and channels, and default values can be set for attributes. When attributes are associated with product categories or channels, products inherit those attributes and their default values. Attribute default values can be overridden at the individual product level, at the channel level, or in a catalog.
 
 For example, a typical television product might have the following attributes.
 
@@ -36,7 +36,7 @@ For example, a typical television product might have the following attributes.
 
 ## Attributes and attribute types
 
-Attributes are based on *attribute types*. The attribute type identifies the type of data that can be entered for a specific attribute. The following attribute types are supported:
+Attributes are based on *attribute types*. An attribute type identifies the type of data that can be entered for a specific attribute. The following attribute types are supported in Commerce:
 
 - **Currency** – This type supports a currency value. It can be bounded (that is, it can support a range of values), or it can be left open.
 - **DateTime** – This type supports a date and time value. It can be bounded or left open.
@@ -48,21 +48,40 @@ Attributes are based on *attribute types*. The attribute type identifies the typ
 
 ### Set up attribute types
 
-1. Sign in to the back-office client as a merchandising manager.
-2. Go to **Product information management \> Setup \> Categories and attributes \> Attribute types**.
-3. Create two attribute types of the **Text** type, set the **Fixed list** option to **Yes**, and then add a list of values:
+To set up attribute types, follow the steps in this example procedure.
 
-    - Name one attribute type **Bag type**, and add the following values: **Satchel, Clutch, Purse, Backpack, Messenger, Wallet**.
-    - Name the other attribute type **Sunglass brand**, and add the following values: **Ray ban**, **Aviator**, and **Oakley**.
+1. Sign in to Commerce headquarters as a merchandising manager.
+1. Go to **Product information management \> Setup \> Categories and attributes \> Attribute types**.
+1. On the action pane, select **+New**.
+1. On the **Attribute types** page, under **Attribute type name**, enter "Bag type".
+1. For **Type**, select **Text** from the drop-down list.
+1. Set the **Fixed list** option to **Yes**.
+1. Under **Values**, select **+Add**.
+1. In the new row under **Value**, enter **Satchel**.
+1. Add five more rows with **Clutch**, **Purse**, **Backpack**, **Messenger**, and **Wallet** values.
+1. On the action pane, select **Save**.
+1. On the action pane, select **+New**.
+1. On the **Attribute types** page, under **Attribute type name**, enter "Sunglass brand".
+1. For **Type**, select **Text** from the drop-down list.
+1. Set the **Fixed list** option to **Yes**.
+1. Under **Values**, select **+Add**.
+1. In the new row under **Value**, enter **Ray ban**.
+1. Add two more rows with **Aviator** and **Oakley** values.
+1. Create two attribute types of the **Text** type, set the **Fixed list** option to **Yes**, and then add a list of values:
+1. On the action pane, select **Save**.
 
 ![Attribute types](media/AttributeType_2022Series.png)
 
 ### Set up an attribute
 
-1. Sign in to the back-office client as a merchandising manager.
+To set up an attribute, follow the steps in this example procedure.
+
+1. Sign in to Commerce headquarters as a merchandising manager.
 2. Go to **Product information management \> Setup \> Categories and attributes \> Attributes**.
-3. Create an attribute that is named **Bag type**.
-4. Set the **Attribute type** field to **Bag type**.
+1. On the action pane, select **+New**.
+1. On the **Attributes** page, under **Name**, enter "Bag type".
+1. For **Attribute type**, select **Bag type** from the drop-down list.
+1. On the action pane, select **Save**.
 
 ![Attributes](media/Attribute_2022Series.png)
 
