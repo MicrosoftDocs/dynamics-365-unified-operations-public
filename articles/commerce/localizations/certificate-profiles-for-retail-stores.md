@@ -50,16 +50,16 @@ The certificate profiles functionality supports the following scenarios in the C
 
 The following procedure explains how to set up certificate profiles. Before you use certificate profiles in the Commerce channels, follow these steps to configure the settings.
 
+1. On the **System parameters** page, set the **Use advanced certificate store** parameter to **Yes**.
 1. In the **Feature management** workspace, turn on the **User-defined certificate profiles for retail stores** feature.
-2. On the **System parameters** page, set the **Use advanced certificate store** parameter to **Yes**.
-3. Go to **System administration \> Setup \> Certificate profiles**.
-4. Create a record, and set the **Certificate profile**, **Name**, and **Description** fields for it.
+1. Go to **System administration \> Setup \> Certificate profiles**.
+1. Create a record, and set the **Certificate profile**, **Name**, and **Description** fields for it.
 
     > [!NOTE]
     > The certificate profile is a unique identifier of a certificate across all companies and Commerce components.
 
-3. On the **Legal entities** tab, add a line, and select the legal entity (company) that the current certificate profile should be used for. If the certificate profile should be used for multiple legal entities, repeat this step to add a line for each additional legal entity.
-4. Select **Settings** to open the **Certificate profile settings** page, where you can enter company-specific settings for the certificate profile.
+1. On the **Legal entities** tab, add a line, and select the legal entity (company) that the current certificate profile should be used for. If the certificate profile should be used for multiple legal entities, repeat this step to add a line for each additional legal entity.
+1. Select **Settings** to open the **Certificate profile settings** page, where you can enter company-specific settings for the certificate profile.
 
 ### Certificate profile settings
 
