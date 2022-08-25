@@ -87,36 +87,27 @@ To set up an attribute, follow the steps in this example procedure.
 
 ## Attribute metadata
 
-*Attribute metadata* lets you select options to specify how the attributes for each product should behave. For example, you can specify whether attributes are required, whether they can be used for searches, and whether they can be used as a filter.
+*Attribute metadata* allows you to select options to specify how the attributes for each product should behave. For example, you can specify whether attributes are required, whether they can be used for searches, and whether they can be used as a filter.
 
 For products, the attribute metadata settings can be overridden at the channel level. This capability will be discussed later in this article.
 
-An attribute's **Attributes** page includes several options that are related to attribute metadata. For example, under **ATTRIBUTE METADATA FOR COMMERCE CHANNELS**, if you set the **Can be refined** option to **Yes**, that attribute will be displayed for refinement or filtering of products on search results and category browsing pages. The system doesn't allow you to configure an attribute as refinable until you select **Filter settings** on the command bar and confirm the filter settings for the attribute. 
+An attribute's **Attributes** page includes several options that are related to attribute metadata. For example, under **ATTRIBUTE METADATA FOR COMMERCE CHANNELS**, if you set the **Can be refined** option to **Yes**, the attribute will be displayed for refinement or filtering of products on search results and category browsing pages. The system doesn't allow you to configure an attribute as refinable until you select **Filter settings** on the action pane and confirm the filter settings for the attribute. 
 
 ## Filter settings for attributes
 
-Filter settings for attributes let you define how the filters for attributes are shown in the POS. To access the filter settings for an attribute, on the **Attributes** page, select the attribute, and then, on the Action Pane, select **Filter settings**.
+Filter settings for attributes allow you to define how the filters for attributes are shown in point of sale (POS). To access the filter settings for an attribute, on the attribute's **Attributes** page, select the attribute, and then on the action pane select **Filter settings**.
 
-The **Filter display preferences** page includes the following fields:
+The **Filter settings** page includes the following fields:
 
 - **Name** – By default, this field is set to the name of the attribute. However, you can change the value.
 - **Display option** – The following options are available:
-
-    - **Single value**: 
-        - This option is available for the following attribute types: **Boolean**, **Currency**, **Decimal**, **Integer**, and **Text**. 
-        - This option only allows single value selection for refiners on product list pages such as category browsing and product search results.
-    
-    - **Multi value**: 
-        - This option is available for the following attribute types: **Currency**, **Decimal**, **Integer**, and **Text**. 
-        - This option enables multi-value selection for this attribute in the client for refinement.
-      
+    - **Single value** - This option is available for the following attribute types: **Boolean**, **Currency**, **Decimal**, **Integer**, and **Text**. It only allows single value selection for refiners on product list pages such as category browsing and product search results.    
+    - **Multi value** - This option is available for the following attribute types: **Currency**, **Decimal**, **Integer**, and **Text**. It enables multi-value selection for this attribute in the client for refinement.      
 - **Display control** – The following options are available:
-
     - **List** – This option is available for the all attribute types.
     - **Range** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**.
     - **Slider** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**.
     - **Slider with bars** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**.
-
 - **Threshold value** – This setting is required if you selected **Range** as the display control type. You can define values by using a semicolon (;) as a delimiter.
 
     For example, for the filter like **Bag Volume**, a threshold value can be **10; 20; 50; 100; 200; 500; 1000; 5000**. In this case, the POS will show the following ranges. Any ranges that don't have any products in the result set will appear dimmed.
