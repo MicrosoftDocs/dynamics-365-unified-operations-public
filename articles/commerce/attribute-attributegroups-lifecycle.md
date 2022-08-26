@@ -214,9 +214,9 @@ Next, you should identify intended product dimensions to be viewable and refinab
 
 Example of steps to enable the attributes so that they're available in the demo-data based Houston channel:
 
-1. Navigate to **Channel categories and product attributes form**
+1. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
 2. Select **Houston**
-3. On the Action Pane, select **Set attribute metadata**.
+3. On the action pane, select **Set attribute metadata**.
 4. Select the **Fashion** category node, and then, on the **Channel product attributes** FastTab, select **Include attribute** for each attribute.
 5. Select the **Fashion Accessories** category node, select the **Fashion Sunglasses** category, and then, on the **Channel product attributes** FastTab, select **Include attribute** for each attribute.
 6. Select the **Menswear** category node, select the **Pants** category, and then, on the **Channel product attributes** FastTab, select **Include attribute** for each attribute.
@@ -294,32 +294,28 @@ To define variant-specific attribute values and define multiple values for produ
     
 #### Example 
 		
-The P001 master product is a multiple activity shoe that has three variants: **Running**, **Walking**, and **Trekking**. For each variant, you want to uniquely define the **Activity** attribute value, which can be done through ‘Channel categories and product attributes’ form, from 'Products' FastTab for your channel and 
+For this example, the P001 master product is a multiple activity shoe that has three variants: **Running**, **Walking**, and **Trekking**. For each variant, you want to uniquely define the **Activity** attribute value, which can be done on the **Products** FastTab of the **Channel categories and product attributes** form for your channel. We can define the **Activity** attribute values for each variant as follows:
 
-- P001-Master : Activity – Sports 
-- P001-1 : Activity - Running
-- P001-2 : Activity – Walking 
-- P001-3 : Activity – Trekking
+- **P001-Master** - Activity: Sports 
+- **P001-1** - Activity: Running
+- **P001-2** - Activity: Walking 
+- **P001-3** - Activity: Trekking
 
-If a user searches for "shoe", master product P001 would be among search results. If you had chosen the **Activity** attribute to be refinable as well, then ‘Activity’ refiner would ONLY list ‘Sports’ as a refinable value, considering that’s defined for ‘Activity’ attribute at ‘P001-Master’
+If a user searches for "shoe", the P001-Master product would appear in the search results. If you had chosen the **Activity** attribute to be refinable as well, then the **Activity** refiner would only list **Sports** as a refinable value because that's what was defined for the **Activity** attribute at the **P001-Master** product level.
 
-Then, what about the attributes that are defined at a variant level? How can those values show up among refiners? 
+For refiners to pick up attribute values defined at a product variant level, you must define an attribute at the product master level with **Allow multiple values’** checked, with an attribute definition of type **Text**. 
+
+Next, you would need to determine all possible values for your product variants. Continuing with the example of the **Activity** attribute, possible values for the attribute could include **Running**, **Walking**, **Hiking**, **Trekking**, **Camping**, **Watersports**, and **Snowsports** 
+ 
+Once you've determined what the variant attribute values should be, you can define them at the product master level with a pipe-separated-value. For the **Activity** attribute example, on the product master you would define the attribute value as **Running|Walking|Hiking|Trekking|Camping|Watersports|Snowsports**.
+
+Then, on each variant you can define attribute values by entering either pipe-separated or single values. Using the **Activity** attribute example, an individual product variant could be configured as **Running|Walking|Hiking**, **Running**, **Running|Hiking|Watersports**, etc. 
 
 The default experience is that variant-level attributes are only intended for use on product details pages (PDPs). When you select a specific variant on a PDP, the product specifications on the PDP are updated for that specific product variant. 
  
-For refiners to show values defined at a product variant level, you would need to define an attribute at the product master level with **‘Allow multiple values’** checked, with an attribute definition of type **Text**. 
- 
-Next, you would need to determine all possible values for your product variants. To continue with the example of ‘Activity’ – there shall be following possible values for the attribute : Running, Walking, Hiking, Trekking, Camping, Watersports, Snowsports, etc. 
- 
-Once you've determined those values – you can define that on a Product master level with a pipe-separated-value.  In the above example – ‘Activity’ on product master would have to be defined as following – ‘Running|Walking|Hiking|Trekking|Camping|Watersports|Snowsports’
+On the **Channel categories and product attributes** form, on the action pane, select **Publish channel updates** and run the **1150**, **1040**, and **1070** jobs. 
 
-Mark this attribute as refinable 
-
-And now on each variant you can either define values for this attribute to be either pipe-separated or single values. In the above example – ‘Activity’ on individual product variant could be – ‘Running|Walking|Hiking’ or ‘Running’ or ‘Running|Hiking|Watersports’ etc. 
- 
-‘Publish channel updates’ from ‘Channel categories and product attributes’ and run 1150, 1040 and 1070 jobs. 
-
-Upon successful completion of the job and updates to the ‘search index’ – all expected values will show among the search results and category browsing results. 
+After successful completion of the jobs and updates to the search index, all expected values should appear in search results and category browsing results. 
 
 
 
