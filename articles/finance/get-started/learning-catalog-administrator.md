@@ -1,10 +1,10 @@
 ---
 title: Administrator learning catalog for Dynamics 365 Finance
 description: Find all the training options for Dynamics 365 Finance administrators.
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/23/2020
-ms.author: margoc
+ms.author: cstorega
 
 ms.prod:
 ms.technology:
