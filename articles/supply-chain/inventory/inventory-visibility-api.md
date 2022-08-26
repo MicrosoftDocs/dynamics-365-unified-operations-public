@@ -93,16 +93,16 @@ To get a security service token, follow these steps.
 1. Sign in to the Azure portal, and use it to find the `clientId` and `clientSecret` values for your Dynamics 365 Supply Chain Management app.
 1. Fetch an Azure AD token (`aadToken`) by submitting an HTTP request that has the following properties:
 
-   - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/token`
+   - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/v2.0/token`
    - **Method:** `GET`
    - **Body content (form data):**
 
-     | Key           | Value                                |
-     | ------------- | ------------------------------------ |
-     | client_id     | ${aadAppId}                          |
-     | client_secret | ${aadAppSecret}                      |
-     | grant_type    | client_credentials                   |
-     | resource      | 0cdb527f-a8d1-4bf8-9436-b352c68682b2 |
+     | Key           | Value                                            |
+     | ------------- | -------------------------------------------------|
+     | client_id     | ${aadAppId}                                      |
+     | client_secret | ${aadAppSecret}                                  |
+     | grant_type    | client_credentials                               |
+     | scope         | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default    |
 
    You should receive an Azure AD token (`aadToken`) in response. It should resemble the following example.
 
@@ -111,9 +111,6 @@ To get a security service token, follow these steps.
        "token_type": "Bearer",
        "expires_in": "3599",
        "ext_expires_in": "3599",
-       "expires_on": "1610466645",
-       "not_before": "1610462745",
-       "resource": "0cdb527f-a8d1-4bf8-9436-b352c68682b2",
        "access_token": "eyJ0eX...8WQ"
    }
    ```
@@ -126,7 +123,7 @@ To get a security service token, follow these steps.
        "client_assertion_type": "aad_app",
        "client_assertion": "{Your_AADToken}",
        "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-       "context": "5dbf6cc8-255e-4de2-8a25-2101cd5649b4",
+       "context": "{$LCS_environment_id}",
        "context_type": "finops-env"
    }
    ```
@@ -511,8 +508,8 @@ Body:
 
 In the body part of this request, `dimensionDataSource` is still an optional parameter. If it isn't set, `filters` will be treated as *base dimensions*. There are four required fields for `filters`: `organizationId`, `productId`, `siteId`, and `locationId`.
 
-- `organizationId` should contains only one value, but it's still an array.
-- `productId` can contains one or more values. If it's an empty array, all products will be returned.
+- `organizationId` should contain only one value, but it's still an array.
+- `productId` could contain one or more values. If it's an empty array, all products will be returned.
 - `siteId` and `locationId` are used for partitioning in Inventory Visibility. You can specify more than one `siteId` and `locationId` value in a *Query on-hand* request. In the current release, you must specify both `siteId` and `locationId` values.
 
 The `groupByValues` parameter should follow your configuration for indexing. For more information, see [Product index hierarchy configuration](./inventory-visibility-configuration.md#index-configuration).
@@ -584,6 +581,6 @@ You can set up Inventory Visibility to let you schedule future on-hand changes a
 
 ## Allocation
 
-Allocattion related APIs are located in [Inventory Visibility allocation](inventory-visibility-allocation.md#using-allocation-api).
+Allocation related APIs are located in [Inventory Visibility allocation](inventory-visibility-allocation.md#using-allocation-api).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
