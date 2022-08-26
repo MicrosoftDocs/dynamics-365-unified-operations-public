@@ -21,7 +21,7 @@ ms.search.validFrom: 2018-03-30
 
 This article describes how to manage attributes and attribute groups to describe products and their characteristics in Microsoft Dynamics 365 Commerce.
 
-*Attributes* provide a way to describe products and their characteristics through user-defined fields (for example, memory size, hard disk capacity, energy star compliance, etc.). Attributes can be associated with various Commerce entities, such as product categories and channels, and default values can be set for attributes. When attributes are associated with product categories or channels, products inherit those attributes and their default values. Attribute default values can be overridden at the individual product level, at the channel level, or in a catalog.
+*Attributes* provide a way to describe products and their characteristics through user-defined fields (for example, memory size, hard disk capacity, or energy star compliance). Attributes can be associated with various Commerce entities such as product categories and channels, and default values can be set for attributes. When attributes are associated with product categories or channels, products inherit those attributes and their default values. Attribute default values can be overridden at the individual product level, at the channel level, or in a catalog.
 
 For example, a typical television product might have the following attributes.
 
@@ -42,7 +42,7 @@ Attributes are based on *attribute types*. An attribute type identifies the type
 - **DateTime** – This type supports a date and time value. It can be bounded or left open.
 - **Decimal** – This type supports a numerical value that includes decimal places. It also supports a unit of measure. It can be bounded or left open.
 - **Integer** – This type supports a numerical value. It also supports a unit of measure. It can be bounded or left open.
-- **Text** – This type supports a text value. It also supports a predefined set of possible values (that is, an *enumeration*).
+- **Text** – This type supports a text value. It also supports a predefined set of possible values when the **Fixed list** setting is enabled.
 - **Boolean** – This type supports a binary value (**true** or **false**).
 - **Reference** – This type references other attributes.
 
@@ -53,7 +53,7 @@ To set up attribute types, follow the steps in this example procedure.
 1. Sign in to Commerce headquarters as a merchandising manager.
 1. Go to **Product information management \> Setup \> Categories and attributes \> Attribute types**.
 1. On the action pane, select **+New**.
-1. On the **Attribute types** page, under **Attribute type name**, enter "Bag type".
+1. On the **Attribute types** form, under **Attribute type name**, enter "Bag type".
 1. For **Type**, select **Text** from the drop-down list.
 1. Set the **Fixed list** option to **Yes**.
 1. Under **Values**, select **+Add**.
@@ -61,7 +61,7 @@ To set up attribute types, follow the steps in this example procedure.
 1. Add five more rows with **Clutch**, **Purse**, **Backpack**, **Messenger**, and **Wallet** values.
 1. On the action pane, select **Save**.
 1. On the action pane, select **+New**.
-1. On the **Attribute types** page, under **Attribute type name**, enter "Sunglass brand".
+1. On the **Attribute types** form, under **Attribute type name**, enter "Sunglass brand".
 1. For **Type**, select **Text** from the drop-down list.
 1. Set the **Fixed list** option to **Yes**.
 1. Under **Values**, select **+Add**.
@@ -79,7 +79,7 @@ To set up an attribute, follow the steps in this example procedure.
 1. Sign in to Commerce headquarters as a merchandising manager.
 2. Go to **Product information management \> Setup \> Categories and attributes \> Attributes**.
 1. On the action pane, select **+New**.
-1. On the **Attributes** page, under **Name**, enter "Bag type".
+1. On the **Attributes** form, under **Name**, enter "Bag type".
 1. For **Attribute type**, select **Bag type** from the drop-down list.
 1. On the action pane, select **Save**.
 
@@ -89,15 +89,15 @@ To set up an attribute, follow the steps in this example procedure.
 
 *Attribute metadata* allows you to select options to specify how the attributes for each product should behave. For example, you can specify whether attributes are required, whether they can be used for searches, and whether they can be used as a filter.
 
-For products, the attribute metadata settings can be overridden at the channel level. This capability will be discussed later in this article.
+For products, the attribute metadata settings can be overridden at the channel level.
 
-An attribute's **Attributes** page includes several options that are related to attribute metadata. For example, under **ATTRIBUTE METADATA FOR COMMERCE CHANNELS**, if you set the **Can be refined** option to **Yes**, the attribute will be displayed for refinement or filtering of products on search results and category browsing pages. The system doesn't allow you to configure an attribute as refinable until you select **Filter settings** on the action pane and confirm the filter settings for the attribute. 
+An attribute's **Attributes** form includes several options that are related to attribute metadata. For example, under **ATTRIBUTE METADATA FOR COMMERCE CHANNELS**, if you set the **Can be refined** option to **Yes**, the attribute will be displayed for refinement or filtering of products on search results and category browsing pages. The system doesn't allow you to configure an attribute as refinable until you select **Filter settings** on the action pane and confirm the filter settings for the attribute. 
 
 ## Filter settings for attributes
 
-Filter settings for attributes allow you to define how the attribute filters are shown in point of sale (POS). To access the filter settings for an attribute, on the attribute's **Attributes** page, select the attribute, and then on the action pane select **Filter settings**.
+Filter settings for attributes allow you to define how the attribute filters are shown in point of sale (POS). To access the filter settings for an attribute, on the attribute's **Attributes** form, select the attribute, and then on the action pane select **Filter settings**.
 
-The **Filter settings** page includes the following fields:
+The **Filter settings** form includes the following fields:
 
 - **Name** – By default, this field is set to the name of the attribute. However, you can change the value.
 - **Display option** – The following options are available:
@@ -123,13 +123,13 @@ The **Filter settings** page includes the following fields:
 ![Attribute filter settings](media/AttributeFilterSettings_2022Series.png)
 
 
-Filter settings for attributes are only applicable for product attributes and can be used for refining product search and category browsing results. These filter settings don't apply to customer search or order search, although same attributes can be used for enriching customer or order information. 
+Filter settings for attributes are only applicable for product attributes and can be used for refining product search and category browsing results. These filter settings don't apply to customer search or order search, although the same attributes can be used for enriching customer or order information. 
 
 Among default Commerce modules, there's no out-of-the-box support available for **Display control** filter settings such as **Range**, **Slider**, or **Slider with bars**. **Range** and **Slider** settings continue to be supported for point-of-sale solutions, whereas the **Slider with bars** setting is applicable for legacy Microsoft SharePoint online storefronts and continues to be available for third-party integration and custom scenarios. 
 
-It's recommended that refinable attributes have an attribute of type **Fixed-list**, and to keep the list manageable with up to 100-200 unique values. If the refiner is going to have 1000 or more unique values, the best-suited attribute type is **Text** and not **Fixed-list**.
+It's recommended that refinable attributes have an attribute of type **Text** with **Fixed-list** enabled, and that you keep the list manageable with up to 100-200 unique values. If the refiner is going to have 1000 or more unique values, the best-suited attribute type is **Text** with **Fixed-list** disabled.
 
-Translations are critical for attribute names and their values. For attributes of type **Fixed-list**, you can define translations on 'attribute-type' for its values whereas for every other attribute you're able to define translations on the forms where you may define the values for attributes. For example, for an attribute of type **Text** you can define translations for the default value on the attribute, but if you override the default value at the product level you can define translations for it on a  product's **Product attributes** form. 
+Translations are critical for attribute names and their values. For attributes of type **Text** with **Fixed-list** enabled, you can define translations in the **Attribute type** fields for its values, whereas for every other attribute you're able to define translations on the forms where you define the attribute values. For example, for an attribute of type **Text** you can define translations for the default value on the attribute, but if you override the default value at the product level you can define translations for it on the product's **Product attributes** form. 
 
 Once an attribute has been marked as refinable for a channel, you shouldn't update the attribute type because that would impact the publishing of product data to the search index. It's recommended to create a new attribute for a new type of refiner and retire the previous attribute by removing it from other attribute groups. 
 
@@ -137,7 +137,7 @@ Search by attributes is supported, but it only fetches results for exact matches
 
 ### Additional options for attribute *(applicable for legacy SharePoint online storefront and external integrations)*
 
-The following are the remaining attribute metadata options on the **Attributes** page:
+The following are the remaining attribute metadata options on the **Attributes** form:
 
 - **Searchable**
 - **Retrievable**
