@@ -95,7 +95,7 @@ Use Unicode instead of a specific code page to import or export data. This will 
 | 65000	    | Unicode (UTF-7)             |
 | 65001     | Unicode (UTF-8)             |
 
-For more details about Code pages, see [Code Page Identifiers](https://docs.microsoft.com/en-us/windows/win32/intl/code-page-identifiers/).
+For more details about Code pages, see [Code Page Identifiers](/windows/win32/intl/code-page-identifiers/).
 
 ### Sequence the entities
 Entities can be sequenced in a data template, or in import and export jobs. When you run a job that contains more than one data entity, you must make sure that the data entities are correctly sequenced. You sequence entities primarily so that you can address any functional dependencies among entities. If entities don’t have any functional dependencies, they can be scheduled for parallel import or export. 
