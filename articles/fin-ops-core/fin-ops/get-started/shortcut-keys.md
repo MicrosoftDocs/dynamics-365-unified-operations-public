@@ -93,6 +93,8 @@ Users can discover currently available shortcuts directly from the user interfac
 | Open the Filter pane (or switch focus between the Filter pane and the main form if the Filter pane is already open) | Alt+M,F or Ctrl+F3       |
 | Close the Filter pane (with focus in the Filter pane)                                                               | Esc                      |
 | Open advanced filtering/sort                                                                                        | Ctrl+Shift+F3            |
+| Apply the Quick Filter (when focus is in Quick Filter)                                                              | Enter                    |
+| Apply the grid filter (when focus is in the column header filter field)                                             | Enter                    |
 
 ## Form shortcuts
 
@@ -166,9 +168,10 @@ Users can discover currently available shortcuts directly from the user interfac
 | To do this                                                                   | Press                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Open the hyperlink                                                           | Ctrl+Enter                    |
+| Open the hyperlink (when focus is on a read-only control)<blockquote>[!NOTE] This shortcut only applies when the "Standardize keyboard interaction for combo box and lookup controls" feature is enabled</blockquote>                    | Enter    |
 | Enter the session date in a date field                                       | D                             |
 | Enter the current date in a date field                                       | T                             |
-| Open lookup, combo box, date picker, drop dialog box                         | Alt+Down arrow                |
+| Open lookup, combo box, date picker, drop dialog box                         | Alt+Down arrow<br>Enter (when the **Standardize keyboard interaction for combo box and lookup controls** feature is enabled)                |
 | Close lookup, combo box, date picker, drop dialog box                        | Esc                           |
 | Move focus into a lookup (when the lookup is already open)                   | Alt+Down arrow                |
 | Open the control's enhanced preview                                          | Alt+Up arrow                  |
