@@ -141,10 +141,10 @@ Users can discover currently available shortcuts directly from the user interfac
 | Horizontal scrolling                                                                                                   | Shift + Mouse wheel             |
 | Move to the next/previous column                                                                                       | Tab / Shift+Tab                 |
 | Move to the next/previous row                                                                                          | Down arrow / Up arrow           |
-| Move to the next/previous row without selecting<br><br>**NOTE:** This shortcut applies to multi-select scenarios only. | Ctrl+Up arrow / Ctrl+Down arrow |
-| Select/clear the current row<br><br>**NOTE:** This shortcut applies to multi-select scenarios only.                   | Ctrl+Space / Ctrl+Click         |
-| Add the next/previous row to the selected set<br><br>**NOTE:** This shortcut applies to multi-select scenarios only.  | Shift+Space                     |
-| Add a range of rows to the selected set<br><br>**NOTE:**  This shortcut applies to multi-select scenarios only.         | Shift+Click                     |
+| Move to the next/previous row without selecting<br><br>**Note:** This shortcut applies to multi-select scenarios only. | Ctrl+Up arrow / Ctrl+Down arrow |
+| Select/clear the current row<br><br>**Note:** This shortcut applies to multi-select scenarios only.                   | Ctrl+Space / Ctrl+Click         |
+| Add the next/previous row to the selected set<br><br>**Note:** This shortcut applies to multi-select scenarios only.  | Shift+Space                     |
+| Add a range of rows to the selected set<br><br>**Note:**  This shortcut applies to multi-select scenarios only.         | Shift+Click                     |
 | Go to the next/previous page of data                                                                                   | Page up / Page down             |
 | Create a new row at the bottom of the grid                                                                             | Down arrow (from the last row)  |
 | Move to the first record                                                                                               | Ctrl+Home                       |
