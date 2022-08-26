@@ -1,10 +1,10 @@
 ---
 title: Learning catalog for Dynamics 365 Finance developers
 description: Find all the training options for Dynamics 365 Finance developers.
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: cstorega
 
 ms.prod:
 ms.technology:
