@@ -67,7 +67,6 @@ To set up attribute types, follow the steps in this example procedure.
 1. Under **Values**, select **+Add**.
 1. In the new row under **Value**, enter **Ray ban**.
 1. Add two more rows with **Aviator** and **Oakley** values.
-1. Create two attribute types of the **Text** type, set the **Fixed list** option to **Yes**, and then add a list of values:
 1. On the action pane, select **Save**.
 
 ![Attribute types](media/AttributeType_2022Series.png)
@@ -95,7 +94,7 @@ An attribute's **Attributes** form includes several options that are related to 
 
 ## Filter settings for attributes
 
-Filter settings for attributes allow you to define how the attribute filters are shown in point of sale (POS). To access the filter settings for an attribute, on the attribute's **Attributes** form, select the attribute, and then on the action pane select **Filter settings**.
+Filter settings for attributes allow you to define how the attribute filters are shown in point of sale (POS). To access the filter settings for an attribute, go to the attribute's **Attributes** form, and then on the action pane select **Filter settings**.
 
 The **Filter settings** form includes the following fields:
 
@@ -110,7 +109,7 @@ The **Filter settings** form includes the following fields:
     - **Slider with bars** – This option is available for the following attribute types: **Currency**, **Decimal**, and **Integer**.
 - **Threshold value** – This setting is required if you selected **Range** as the display control type. You can define values by using a semicolon (;) as a delimiter.
 
-    For example, for the filter like **Bag Volume**, a threshold value can be **10; 20; 50; 100; 200; 500; 1000; 5000**. In this case, the POS will show the following ranges. Any ranges that don't have any products in the result set will appear dimmed.
+    For example, for an attribute like **Bag Volume** with an attribute type of **Integer**, the threshold value could be **10; 20; 50; 100; 200; 500; 1000; 5000**. In this case, the POS will show the following ranges. Any ranges that don't have any products in the result set will appear dimmed.
 
     - **Less than 10**
     - **10 – 20**
@@ -120,20 +119,19 @@ The **Filter settings** form includes the following fields:
     - **200 – 500**
     - **500 or more**
 
-![Attribute filter settings](media/AttributeFilterSettings_2022Series.png)
-
+<!--![Attribute filter settings](media/AttributeFilterSettings_2022Series.png)-->
 
 Filter settings for attributes are only applicable for product attributes and can be used for refining product search and category browsing results. These filter settings don't apply to customer search or order search, although the same attributes can be used for enriching customer or order information. 
 
 Among default Commerce modules, there's no out-of-the-box support available for **Display control** filter settings such as **Range**, **Slider**, or **Slider with bars**. **Range** and **Slider** settings continue to be supported for point-of-sale solutions, whereas the **Slider with bars** setting is applicable for legacy Microsoft SharePoint online storefronts and continues to be available for third-party integration and custom scenarios. 
 
-It's recommended that refinable attributes have an attribute of type **Text** with **Fixed-list** enabled, and that you keep the list manageable with up to 100-200 unique values. If the refiner is going to have 1000 or more unique values, the best-suited attribute type is **Text** with **Fixed-list** disabled.
+It's recommended that refinable attributes have an attribute of type **Text** with the **Fixed-list** option enabled, and that you keep the list manageable with up to 100-200 unique values. If a refiner is going to have 1000 or more unique values, the most appropriate attribute type would be **Text** with **Fixed-list** disabled.
 
-Translations are critical for attribute names and their values. For attributes of type **Text** with **Fixed-list** enabled, you can define translations in the **Attribute type** fields for its values, whereas for every other attribute you're able to define translations on the forms where you define the attribute values. For example, for an attribute of type **Text** you can define translations for the default value on the attribute, but if you override the default value at the product level you can define translations for it on the product's **Product attributes** form. 
+Translations are critical for attribute names and their values. For attributes of type **Text** with the **Fixed-list** option enabled, you can define translations for the attribute values under **Attribute type**. For every other attribute type, you're able to define translations on the forms where you define the attribute values. For example, for an attribute of type **Text** you can define translations for the default value on the attribute's **Attribute** form, but if you override the default value at the product level you can define translations for the attribute on the product's **Product attributes** form. 
 
 Once an attribute has been marked as refinable for a channel, you shouldn't update the attribute type because that would impact the publishing of product data to the search index. It's recommended to create a new attribute for a new type of refiner and retire the previous attribute by removing it from other attribute groups. 
 
-Search by attributes is supported, but it only fetches results for exact matches of search words. For example, for a **'Fabric** attribute with a value of "Cashmere cotton", if a customer searches for "Cash" then no products where the fabric is "cashmere cotton" will be retrieved, whereas if a site user searches for "Cashmere", "Cotton", or "Cashmere Cotton" then products with a fabric of cashmere cotton will be retrieved. 
+Search by attributes is supported, but it only fetches results for exact matches of search words. For example, for a **'Fabric** attribute with a value of "Cashmere cotton", if a customer searches for "Cash" then no products with "cashmere cotton" as the fabric will be retrieved, whereas if a site user searches for "Cashmere", "Cotton", or "Cashmere Cotton", then products with "cashmere cotton" as the fabric will be retrieved. 
 
 ### Additional options for attribute *(applicable for legacy SharePoint online storefront and external integrations)*
 
@@ -159,7 +157,7 @@ An *attribute group* is used to group the individual attributes for a component 
 
 ### Create an attribute group
 
-To create an attribute group, follow these steps.
+To create an attribute group, follow the steps in this example procedure.
 
 1. Sign in to Commerce headquarters as a merchandising manager.
 2. Go to **Product information management \> Setup \> Categories and attributes \> Attribute groups**.
@@ -178,7 +176,7 @@ When products are categorized to categories associated with attribute groups, th
 
 ![Product hierarchy – Product attribute groups.](media/AGRetailProdHierarchy_2022Series.png)
 
-To assign attribute groups to categories in the Commerce product hierarchy, follow these steps.
+To assign attribute groups to categories in the Commerce product hierarchy, follow the steps in this example procedure.
 
 1. Sign in to Commerce headquarters as a merchandising manager.
 2. Go to **Retail and Commerce \> Products and categories \> Commerce product hierarchy**.
@@ -212,7 +210,7 @@ Next, you should identify intended product dimensions to be viewable and refinab
 
 ![Example of product dimension based attribute setup](./media/ProductDimensionRefinersAttributeSetup_2022Series.png)
 
-To enable the attributes so that they're available in the demo-data based Houston channel, follow these steps.
+To enable the attributes so that they're available in the demo-data based Houston channel, follow the steps in this example procedure.
 
 1. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
 2. Select **Houston**
@@ -239,7 +237,7 @@ The default values of attributes can be overridden for individual products at th
 
 ### Override the attribute values of an individual product
 
-To override the attribute values of an individual product, follow these steps.
+To override the attribute values of an individual product, follow the steps in this example procedure.
 
 1. Sign in to Commerce headquarters as a merchandising manager.
 2. Go to **Retail and Commerce \> Category and product management \> Released products by category**.
@@ -251,7 +249,7 @@ To override the attribute values of an individual product, follow these steps.
 
 ### Override the attribute values of all products in a catalog
 
-To override the attribute values of all products in a catalog, follow these steps.
+To override the attribute values of all products in a catalog, follow the steps in this example procedure.
 
 1. Sign in to Commerce headquarters as a merchandising manager.
 2. Go to **Retail and Commerce \> Catalog management \> All catalogs**.
@@ -262,7 +260,7 @@ To override the attribute values of all products in a catalog, follow these step
 
 ### Override the attribute values of all products in a channel
 
-To override the attribute values of all products in a channel, follow these steps.
+To override the attribute values of all products in a channel, follow the steps in this example procedure.
 
 1. Sign in to Commerce headquarters as a merchandising manager.
 2. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
@@ -277,7 +275,7 @@ To override the attribute values of all products in a channel, follow these step
 
 ### Define variant-specific attribute values and define multiple values for product attributes
 
-To define variant-specific attribute values and define multiple values for product attributes, follow these steps.
+To define variant-specific attribute values and define multiple values for product attributes, follow the steps in this example procedure.
 
 1. Sign in to Commerce headquarters as a merchandising manager.
 2. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
@@ -292,29 +290,28 @@ To define variant-specific attribute values and define multiple values for produ
     
 #### Example 
 		
-For this example, the P001 master product is a multiple activity shoe that has three variants: **Running**, **Walking**, and **Trekking**. For each variant, you want to uniquely define the **Activity** attribute value, which can be done on the **Products** FastTab of the **Channel categories and product attributes** form for your channel. We can define the **Activity** attribute values for each variant as follows:
+In this example, the **P001-Master** product is a multiple activity shoe that has three variants: **Running**, **Walking**, and **Trekking**. For each variant, you want to uniquely define the **Activity** attribute value, which can be done on the **Products** FastTab of the **Channel categories and product attributes** form for your channel. We can define the **Activity** attribute values for each variant as follows:
 
 - **P001-Master** - Activity: Sports 
 - **P001-1** - Activity: Running
 - **P001-2** - Activity: Walking 
 - **P001-3** - Activity: Trekking
 
-If a user searches for "shoe", the P001-Master product would appear in the search results. If you had chosen the **Activity** attribute to be refinable as well, then the **Activity** refiner would only list **Sports** as a refinable value because that's what was defined for the **Activity** attribute at the **P001-Master** product level.
+If a user searches for "shoe", the **P001-Master** product would appear in the search results. If you configured the **Activity** attribute to be refinable as well, then the **Activity** refiner would only list **Sports** as a refinable value because that's what was defined for the **Activity** attribute at the **P001-Master** product level.
 
-For refiners to pick up attribute values defined at a product variant level, you must define an attribute at the product master level with **Allow multiple values’** checked, with an attribute definition of type **Text**. 
+By default, variant-level attributes are only intended for use on product details pages (PDPs). When you select a specific variant on a PDP, the product specifications on the PDP are updated for that specific product variant. 
+
+For refiners to pick up attribute values defined at the product variant level, you must define an attribute at the product master level with **Allow multiple values’** checked, with an attribute definition of type **Text**. 
 
 Next, you would need to determine all possible values for your product variants. Continuing with the example of the **Activity** attribute, possible values for the attribute could include **Running**, **Walking**, **Hiking**, **Trekking**, **Camping**, **Watersports**, and **Snowsports** 
  
-Once you've determined what the variant attribute values should be, you can define them at the product master level with a pipe-separated-value. For the **Activity** attribute example, on the product master you would define the attribute value as **Running|Walking|Hiking|Trekking|Camping|Watersports|Snowsports**.
+Once you've determined what the variant attribute values should be, you can define them at the product master level with pipe-separated-values. For the **Activity** attribute example, on the product master you would define the attribute value as **Running|Walking|Hiking|Trekking|Camping|Watersports|Snowsports**.
 
 Then, on each variant you can define attribute values by entering either pipe-separated or single values. Using the **Activity** attribute example, an individual product variant could be configured as **Running|Walking|Hiking**, **Running**, **Running|Hiking|Watersports**, etc. 
 
-The default experience is that variant-level attributes are only intended for use on product details pages (PDPs). When you select a specific variant on a PDP, the product specifications on the PDP are updated for that specific product variant. 
- 
-On the **Channel categories and product attributes** form, on the action pane, select **Publish channel updates** and run the **1150**, **1040**, and **1070** jobs. 
+Once you've defined the variant attribut valuesx, go to **Channel categories and product attributes**, on the action pane select **Publish channel updates**, and then run the **1150**, **1040**, and **1070** jobs. 
 
 After successful completion of the jobs and updates to the search index, all expected values should appear in search results and category browsing results. 
-
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
