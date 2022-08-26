@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cross-company data sharing for gift cards
-description: This topic describes how to configure Microsoft Dynamics 365 Commerce to use Microsoft Dynamics 365 Finance data sharing functionality across data areas for syncing gift card data.
+description: This article describes how to configure Microsoft Dynamics 365 Commerce to use Dynamics 365 Finance data sharing functionality across data areas to sync gift card data.
 author: BrianShook
 ms.date: 08/25/2022
 ms.topic: article
@@ -21,46 +21,46 @@ ms.search.validFrom: 2022-06-20
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes how to configure Microsoft Dynamics 365 Commerce to use Microsoft Dynamics 365 Finance data sharing functionality to synchronize gift card data. The data record sharing functionality can then be used to share data cross-company between two data areas, which enables the Commerce internal gift table to share data between two company entities. For more information about Dynamics 365 Finance cross-company data sharing, see [Cross-company data sharing](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing).
+This article describes how to configure Microsoft Dynamics 365 Commerce so that it uses Dynamics 365 Finance data sharing functionality to sync gift card data. The data record sharing functionality can then be used to share data cross-company between two data areas. In this way, the Commerce internal gift table can share data between two company entities. For more information about Dynamics 365 Finance cross-company data sharing, see [Cross-company data sharing](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing).
 
 ## Key terms
 
 | Term | Description |
 |---|---|
-| Company | The legal entity within the Dynamics 365 Finance environment. |
+| Company | The legal entity in the Dynamics 365 Finance environment. |
 | Gift card | The Dynamics 365 Commerce internal gift card product. |
 
 ## Prerequisites
 
 Users must configure their environment for cross-company data sharing as described in [Cross-company data sharing](/dynamics365/fin-ops-core/dev-itpro/sysadmin/cross-company-data-sharing).
 
-The **RetailGiftCardTable** must have the **DataSharingType** set to **Duplicate**, which enables duplicate record sharing (DRS) for the gift card table. For more information, see [Cross-company data sharing for developers](/dynamics365/fin-ops-core/dev-itpro/sysadmin/drs-srs-dev).
+**RetailGiftCardTable** must have the **DataSharingType** field set to **Duplicate** to enable duplicate record sharing (DRS) for the gift card table. For more information, see [Cross-company data sharing for developers](/dynamics365/fin-ops-core/dev-itpro/sysadmin/drs-srs-dev).
 
 ## Configure cross-company data sharing for gift cards
 
 To configure cross-company data sharing for gift cards, follow these steps.
 
-1. In headquarters, go to **System administration \> Setup \> Configure cross-company data sharing**.
-1. On the action pane, select **+New** to add a new data sharing record.
-1. Under **Name**, enter a name for the data sharing record (for example, "Gift Cards").
-1. In the **TABLES AND FIELDS TO SHARE** section, select **+Add**.
-1. In the **Share new table** dialog box, under **Table name**, enter "RETAILGIFTCARDTABLE" (the table for retail gift cards). The value of **Table label** should now be **Gift card table**.
-1. Ensure that the **Save data per company**, **Has unique index**, and **Not shared yet** checkboxes are all selected. Enabling these checkboxes trigger validations related to the data sharing functionality.
-1. Select **Add table**. The **Gift card table (RetailGiftCardTable)** record should now appear under **TABLES AND FIELDS TO SHARE**. Selecting the caret symbol shows all the table fields automatically associated with the table for sharing.
-1. In the **COMPANIES WHICH SHARE THE RECORDS IN THESE TABLES** section, select **+Add** to add a company to share data with.
-1. In the row under **Company**, select a company from the drop-down list.
-1. Under **Name**, enter the company name.
-1. To add more company rows, repeat steps 8-10 for each company.
-1. When finished adding company rows, on the action pane select **Enable**. Two warning dialog boxes with questions will appear:
-    1. For the **It is recommended to only perform this action during non-business hours. Any concurrent transaction operations will fail for tables in the policy. Do you want to continue?** dialog box, select **Yes**.
-    1. For the **Would you like to copy all existing data across all shared companies now?** dialog box, select **Yes**.
+1. In Commerce headquarters, go to **System administration \> Setup \> Configure cross-company data sharing**.
+1. On the Action Pane, select **New** to add a data sharing record.
+1. In the **Name** field, enter a name for the data sharing record (for example, **Gift Cards**).
+1. In the **Tables and fields to share** section, select **Add**.
+1. In the **Share new table** dialog box, in the **Table name** field, enter **RETAILGIFTCARDTABLE** (the table for retail gift cards). The **Table label** field should automatically be set to **Gift card table**.
+1. Ensure that the **Save data per company**, **Has unique index**, and **Not shared yet** checkboxes are all selected. Selection of these checkboxes triggers validations that are related to the data sharing functionality.
+1. Select **Add table**. The **Gift card table (RetailGiftCardTable)** record should now appear under **Tables and fields to share**. Select the caret (^) symbol to view all the table fields that are automatically associated with the table for sharing.
+1. In the **Companies which share the records in these tables** section, select **Add** to add a company to share data with.
+1. In the row under **Company**, select a company in the drop-down list.
+1. In the **Name** field, enter the company name.
+1. Repeat steps 8 through 10 to add more company rows.
+1. When you've finished adding company rows, on the Action Pane, select **Enable**.
+1. You receive a warning message that states, "It is recommended to only perform this action during non-business hours. Any concurrent transaction operations will fail for tables in the policy. Do you want to continue?" Select **Yes** to agree.
+1. You receive a warning message that states, "Would you like to copy all existing data across all shared companies now?" Select **Yes** to agree.
 
-After agreeing to both questions, tables will begin to copy data across the configured companies. Balances occurring against one company gift card will then be visible to the other company.
+After you agree to both messages, tables will start to copy data across the configured companies. Balances that occur against one company gift card will then be visible to the other company.
 
 ## Additional resources
 
 [Payments FAQ](payments-retail.md)
 
-[Checkout module]../(add-checkout-module.md)
+[Checkout module](../add-checkout-module.md)
 
 [Payment module](../payment-module.md)
