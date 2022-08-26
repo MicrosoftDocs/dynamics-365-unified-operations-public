@@ -1,10 +1,10 @@
 ---
 title: Learning catalog for business decision makers considering Dynamics 365 Finance
 description: Find all the training options for BDMs and TDMs considering Dynamics 365 Finance.
-author: margoc
+author: cstorega
 ms.date: 07/27/2020
 ms.topic: article
-ms.author: margoc
+ms.author: cstorega
 
 ms.prod:
 ms.technology:
