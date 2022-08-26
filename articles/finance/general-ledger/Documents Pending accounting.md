@@ -29,11 +29,11 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include [banner](../includes/banner.md)]
 
-This article provides information about the documents pending accounting page and actions to be taken when data appears in this page.  
+This article provides information about the documents pending accounting page and actions to be taken from this page.  
 
 There is a new feature released in 10.0.30 titled **Enhanced performance for source document accounting framework**. This feature helps improve the posting processes for source document enabled document postings starting with the Free Text Invoice posting process for 10.0.30. Future releases will add additional source document enabled posting processes. 
 
-When this feature is enabled, the posting of the subledger document is performed seperately from the accounting generation or *journalization* process that creates the full accounting detail to be transferred to the general ledger. 
+When this feature is enabled, the posting of the subledger document is performed seperately from the accounting generation or *journalization* process that creates the full accounting detail to be transferred to the general ledger. For example in the Free Text invoice posting process, the customer invoice in the accounts receivable module will be recorded prior to the full accounting being generated. This enhanced performance feature will allow faster recording of the customer invoices while the accounting generation is delayed*. 
 
 The following options are available from the **Documents Pending Accounting** page. 
 
@@ -41,8 +41,6 @@ The following options are available from the **Documents Pending Accounting** pa
 - View distributions - Use the view distributions button to view the accounting distributions for a selected document in the list. 
 - view error log - Use the view error log button to view the detailed error message details if they exist for a document with the accounting state in error.  You may also click the Error log link directly on the document line to view the same error message details. 
 
+*Accounting generation is accomplished by a process automation background process called **Accounting framework processor**.  The documenataion about [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) will provide more information about the setup and configuration of all process automations. 
 
-
-## Header 2 font
-
-### Header 3
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
