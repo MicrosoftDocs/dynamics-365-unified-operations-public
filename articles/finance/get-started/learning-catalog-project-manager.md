@@ -1,10 +1,10 @@
 ---
 title: Learning catalog for implementation project managers working with Dynamics 365 Finance
 description: Find all the training options for people working as implementation project managers with Dynamics 365 Finance.
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: cstorega
 
 ms.prod:
 ms.technology:
