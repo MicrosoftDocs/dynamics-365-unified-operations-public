@@ -286,7 +286,7 @@ To define variant-specific attribute values and define multiple values for produ
     - **Channel media**
     - **Channel product attributes**
     
-#### Example of variant-specific attribute configurtion
+#### Example of variant-specific attribute configuration
 		
 In this example, the **P001-Master** product is a multiple activity shoe that has three variants: **Running**, **Walking**, and **Trekking**. For each variant, you want to uniquely define the **Activity** attribute value, which can be done on the **Products** FastTab of the **Channel categories and product attributes** form for your channel. We can define the **Activity** attribute values for each variant as follows:
 
