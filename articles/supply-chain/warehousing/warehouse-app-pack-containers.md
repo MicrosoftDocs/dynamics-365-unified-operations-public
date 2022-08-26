@@ -602,10 +602,10 @@ The inventory items have now been brought to the packing area and are ready to b
 1. Enter/scan *Item* **A0001**.
 1. Use the **Create container** detour button to jump to the *Container creation* process.
 1. Enter/scan *Container type* **Box-Large**.
-1. Enter/scan new container ID **1234** and confirm. This will create a new container for the shipment and return to the main packing flow.
-1. Enter/scan the *Container ID* **1234** to pack the 2 pcs of item A0001 into the container. In case quantity needs to get updated you can click on the *Quantity* and edit the value before.confirming the *Container ID*.
+1. Confirm the number sequence container ID based on the *Container ID mode* setup. This will create a new container for the shipment and return to the main packing flow.
+1. Enter/scan the new *Container ID* to pack the 2 pcs of item A0001 into the container. In case quantity needs to get updated you can click on the *Quantity* and edit the value before.confirming the *Container ID*.
 1. Use the **Close container** detour button to jump to the *Container closing** process.
-1. Enter/scan **1234** to select the container to close.
+1. Enter/scan the *Container ID* to select the container to close.
 1. Confirm the system weight for the two items packed into the box. To update the weight manually you can click on the weight value and modify it before confirming.
 
 1. On the Action Pane, select **Close container**.
