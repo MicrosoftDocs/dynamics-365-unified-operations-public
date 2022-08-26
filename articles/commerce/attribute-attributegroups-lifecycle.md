@@ -185,30 +185,28 @@ To assign attribute groups to categories in the Commerce product hierarchy, foll
 5. Select the **Fashion sunglasses** category, and verify the new attributes in the **Fashion Sunglasses** attribute group by selecting **View attributes**. The attribute group should show the new **Lens shape** and **Sunglass brand** attributes.
 6. Under **Menswear**, select the **Pants** category, and verify the attributes for the **Men's belt** attribute group by selecting **View attributes**. The attribute group should show the **Men's belt brand**, **Belt fabric**, and **Belt size** attributes.
 
-This procedure can also be used to assign attribute groups to categories in the channel navigation category hierarchy and the supplemental product category hierarchy. To do this, for step 2 above substitute the following navigation paths, respectively:
+This procedure can also be used to assign attribute groups to categories in the channel navigation category hierarchy and the supplemental product category hierarchy. To use this procedure for these other hierarchies, for step 2 above substitute the following navigation paths, respectively:
 
 - **Retail and Commerce \> Category and product management \> Channel navigation categories**
 - **Retail and Commerce \> Category and product management \> Supplemental product categories**
 
-Ensure that you're only associating attribute groups in a category hierarchy to the **Product attribute groups** FastTab and not the **Category attribute values** FastTab. If you see attributes appearing on the **Category attribute values** FastTab, select **Edit category hierarchy** on the action pane, and then on the **Category attribute groups** FastTab, select the category nodes and then select **Remove**. There's no support available to fetch attributes by category through Commerce Scale Unit.  
+Ensure that you're only associating attribute groups in a category hierarchy on the **Product attribute groups** FastTab and not the **Category attribute values** FastTab. If you see attributes appearing on the **Category attribute values** FastTab, select **Edit category hierarchy** on the action pane, and then on the **Category attribute groups** FastTab, select the category nodes and then select **Remove**. There's no support available to fetch attributes by category through Commerce Scale Unit.  
 
 ## Identify viewable and refinable attributes for Commerce channels for default product collection
 
 As you have associated various attribute groups to categories in various hierarchies (Commerce product hierarchy or channel navigation categories) and defined those attribute values for each product based on the category association, for those attributes to be viewable in a specific channel, you'll have to enable the **Show attribute on Channel** flag. 
 
-This flag can be located at **Retail and Commerce \> Channel setup \> Channel categories and product attributes**. Select **Set attribute metadata**, and then select an attribute from the left navigation pane. Under **Channel Product attributes** (not **Category attributes**), set the **Show attribute on channel** option to **Yes** to make the attribute viewable. If you want the attribute to be refinable, you must also set the **'Can be refined'** option to **Yes**.     
+This flag can be located at **Retail and Commerce \> Channel setup \> Channel categories and product attributes**. Select **Set attribute metadata**, and then select an attribute from the left navigation pane. Under **Channel Product attributes** (not **Category attributes**), set the **Show attribute on channel** option to **Yes** to make the attribute viewable. If you want the attribute to be refinable, you must also set the **Can be refined** option to **Yes**.     
 
 ### Control visibility of dimension-based refiners such as size, style, and color
 
 Product dimensions like size, style, and color are the most commonly used refiners. To make these product dimensions available as refiners, you should associate an attribute group at the channel level that contains reference attribute type inheriting values automatically from product dimension values. 
 
-Next, you should identify intended product dimensions to be viewable and refinable by updating flags located at **Channel categories and product attributes**. Select  the root node from the navigation pane> Set attribute metadata > Channel **Product** attributes (not **Category attributes**) and mark the flag for 'Show attribute on channel' as 'Yes'* for the associated attributes to *Size, Style, Color* dimensions if you intend to make them viewable only. And if you intend to have this attribute be 'refinable' as well then you must also check **'Can be refined'**. 
+You can specify that product dimensions are viewable and refinable by updating flags on the **Channel categories and product attributes** form. Select the root node from the navigation pane, and then on **Channel product attributes** FastTab, set the **Show attribute on channel** option to **Yes** for the **Size**, **Style**, and **Color** attributes. If you want these attributes to also be refinable, set the **Can be refined** option to **Yes** for each attribute. 
 
-![Associate product dimension refiners based attribute group to channel](./media/ProductDimensionRefinersAttributeGroup_2022Series.png)
-
+<!--![Associate product dimension refiners based attribute group to channel](./media/ProductDimensionRefinersAttributeGroup_2022Series.png)-->
 ![Set attribute metadata for dimension refiners](./media/ProductDimensionRefinersMetadataSetup_2022Series.png)
-
-![Example of product dimension based attribute setup](./media/ProductDimensionRefinersAttributeSetup_2022Series.png)
+<!--![Example of product dimension based attribute setup](./media/ProductDimensionRefinersAttributeSetup_2022Series.png)-->
 
 To enable the attributes so that they're available in the demo-data based Houston channel, follow the steps in this example procedure.
 
@@ -221,15 +219,15 @@ To enable the attributes so that they're available in the demo-data based Housto
 7. Ensure upon updating the attribute metadata for your intended attributes and refiners, ensure that you save and 'Publish channel updates' and following to publishing you must run following jobs - 1070 (Channel configuration), 1040 (Products), and 1150 (Catalog). 
 
 > [!NOTE]
-> - If your business requires to frequently add or remove products in the navigation hierarchy (including updating display orders or adding new categories or adding new attribute groups to categories in navigation hierarchy) or refiner setup. It's recommended to have 'Publish channel updates' configured as a batch job to run frequently or manually trigger 'Publish channel updates' followed by CDX jobs - 1070 (Channel configuration), 1040 (Products), and 1150 (Catalog). 
+> - If your business requires you to frequently add or remove products in the navigation hierarchy (including updating display orders, adding new categories, and adding new attribute groups to categories), it's recommended that you configure the **Publish channel updates** job to run as a frequent batch job, or to manually trigger **Publish channel updates** followed by CDX jobs **1070 (Channel configuration)**, **1040 (Products)**, and **1150 (Catalog)**. 
 > - An inherit option lets you specify that this channel should inherit the attribute groups from its parent channel in the hierarchy. If you set the **Inherit** option to **Yes**, the child channel node inherits all the attribute groups and all the attributes in those attribute groups.
-> - If **Set attribute metadata** is grayed out, then you must ensure that 'Navigation hierarchy' is associated with your channel under the **General** FastTab. 
-> - You must not associate any other attribute groups at a channel level ('Attribute groups' on 'Channel categories and product attributes' form) other than dimension based attribute group. (e.g. with Demo Data, you would see there's an attribute group named 'Default dimensions group for refiners' is only valid attribute group to associate in this place). 
-> - Starting 10.0.27, with introduction of support for 'Customer specific catalogs' (aka B2B catalogs), you are expected to identify the 'refiner' and 'attribute' setup for each B2B catalog in the same manner as described here. 
+> - If **Set attribute metadata** is grayed out, then you must ensure that **Navigation hierarchy** is associated with your channel under the **General** FastTab. 
+> - You must not associate any attribute groups other than dimension-based attribute groups at a channel level (for example, under **Attribute groups** on the **Channel categories and product attributes** form). 
+> - Starting with introduction of support for customer-specific B2B catalogs in Commerce version 10.0.27, you are expected to identify the refiner and attribute setups for each B2B catalog in the same manner described in this article. 
 
-![Catalog – Product attribute and refiner settings - step 1](media/CatalogAttributeRefinerSetup1_2022Series.png)
+<!--![Catalog – Product attribute and refiner settings - step 1](media/CatalogAttributeRefinerSetup1_2022Series.png)-->
 
-![Catalog – Product attribute and refiner settings - step 2](media/CatalogAttributeRefinerSetup2_2022Series.png)
+<!--![Catalog – Product attribute and refiner settings - step 2](media/CatalogAttributeRefinerSetup2_2022Series.png)-->
 
 ## Override attribute values
 
@@ -288,7 +286,7 @@ To define variant-specific attribute values and define multiple values for produ
     - **Channel media**
     - **Channel product attributes**
     
-#### Example 
+#### Example of variant-specific attribute configurtion
 		
 In this example, the **P001-Master** product is a multiple activity shoe that has three variants: **Running**, **Walking**, and **Trekking**. For each variant, you want to uniquely define the **Activity** attribute value, which can be done on the **Products** FastTab of the **Channel categories and product attributes** form for your channel. We can define the **Activity** attribute values for each variant as follows:
 
@@ -309,7 +307,7 @@ Once you've determined what the variant attribute values should be, you can defi
 
 Then, on each variant you can define attribute values by entering either pipe-separated or single values. Using the **Activity** attribute example, an individual product variant could be configured as **Running|Walking|Hiking**, **Running**, **Running|Hiking|Watersports**, etc. 
 
-Once you've defined the variant attribut valuesx, go to **Channel categories and product attributes**, on the action pane select **Publish channel updates**, and then run the **1150**, **1040**, and **1070** jobs. 
+Once you've defined the variant attribute values, go to **Channel categories and product attributes**, on the action pane select **Publish channel updates**, and then run the **1150**, **1040**, and **1070** jobs. 
 
 After successful completion of the jobs and updates to the search index, all expected values should appear in search results and category browsing results. 
 
