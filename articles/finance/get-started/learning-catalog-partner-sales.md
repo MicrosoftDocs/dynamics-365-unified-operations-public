@@ -1,10 +1,10 @@
 ---
 title: Learning catalog for Microsoft Partner sales and marketing roles for Dynamics 365 Finance
 description: Find all the training options for people in Microsoft Partner sales and marketing roles who work with Dynamics 365 Finance.
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/27/2020
-ms.author: margoc
+ms.author: cstorega
 
 ms.prod:
 ms.technology:
