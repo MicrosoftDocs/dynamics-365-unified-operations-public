@@ -21,7 +21,7 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: RyanCCarlson2
 ms.search.validFrom: 2022-08-28
-ms.dyn365.ops.version: 10.0.31
+ms.dyn365.ops.version: 10.0.30
 
 ---
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.31
 
 This article provides information about the documents pending accounting page and actions to be taken when data appears in this page.  
 
-There is a new feature released in 10.0.30 titled **Enhanced performance for source document accounting framework**. This feature helps improve the posting processes for source document enabled document postings starting with the Free Text Invoice posting process for 10.0.31. Future releases will add additional source document enabled posting processes. 
+There is a new feature released in 10.0.30 titled **Enhanced performance for source document accounting framework**. This feature helps improve the posting processes for source document enabled document postings starting with the Free Text Invoice posting process for 10.0.30. Future releases will add additional source document enabled posting processes. 
 
 When this feature is enabled, the posting of the subledger document is performed seperately from the accounting generation or *journalization* process that creates the full accounting detail to be transferred to the general ledger. 
 
