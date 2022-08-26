@@ -212,7 +212,7 @@ Next, you should identify intended product dimensions to be viewable and refinab
 
 ![Example of product dimension based attribute setup](./media/ProductDimensionRefinersAttributeSetup_2022Series.png)
 
-Example of steps to enable the attributes so that they're available in the demo-data based Houston channel:
+To enable the attributes so that they're available in the demo-data based Houston channel, follow these steps.
 
 1. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
 2. Select **Houston**
@@ -223,17 +223,15 @@ Example of steps to enable the attributes so that they're available in the demo-
 7. Ensure upon updating the attribute metadata for your intended attributes and refiners, ensure that you save and 'Publish channel updates' and following to publishing you must run following jobs - 1070 (Channel configuration), 1040 (Products), and 1150 (Catalog). 
 
 > [!NOTE]
-> 1. If your business requires to frequently add or remove products in the navigation hierarchy (including updating display orders or adding new categories or adding new attribute groups to categories in navigation hierarchy) or refiner setup. It's recommended to have 'Publish channel updates' configured as a batch job to run frequently or manually trigger 'Publish channel updates' followed by CDX jobs - 1070 (Channel configuration), 1040 (Products), and 1150 (Catalog). 
->
-> 1. An inherit option lets you specify that this channel should inherit the attribute groups from its parent channel in the hierarchy. If you set the **Inherit** option to **Yes**, the child channel node inherits all the attribute groups and all the attributes in those attribute groups.
-> 
-> 1. If **Set attribute metadata** is grayed out, then you must ensure that 'Navigation hierarchy' is associated with your channel under the **General** FastTab. 
-> 
-> You must not associate any other attribute groups at a channel level ('Attribute groups' on 'Channel categories and product attributes' form) other than dimension based attribute group. (e.g. with Demo Data, you would see there's an attribute group named 'Default dimensions group for refiners' is only valid attribute group to associate in this place). 
-> 
-> Starting 10.0.27, with introduction of support for 'Customer specific catalogs' (aka B2B catalogs), you are expected to identify the 'refiner' and 'attribute' setup for each B2B catalog in the same manner as described here. 
-> ![Catalog – Product attribute and refiner settings - step 1](media/CatalogAttributeRefinerSetup1_2022Series.png)
-> ![Catalog – Product attribute and refiner settings - step 2](media/CatalogAttributeRefinerSetup2_2022Series.png)
+> - If your business requires to frequently add or remove products in the navigation hierarchy (including updating display orders or adding new categories or adding new attribute groups to categories in navigation hierarchy) or refiner setup. It's recommended to have 'Publish channel updates' configured as a batch job to run frequently or manually trigger 'Publish channel updates' followed by CDX jobs - 1070 (Channel configuration), 1040 (Products), and 1150 (Catalog). 
+> - An inherit option lets you specify that this channel should inherit the attribute groups from its parent channel in the hierarchy. If you set the **Inherit** option to **Yes**, the child channel node inherits all the attribute groups and all the attributes in those attribute groups.
+> - If **Set attribute metadata** is grayed out, then you must ensure that 'Navigation hierarchy' is associated with your channel under the **General** FastTab. 
+> - You must not associate any other attribute groups at a channel level ('Attribute groups' on 'Channel categories and product attributes' form) other than dimension based attribute group. (e.g. with Demo Data, you would see there's an attribute group named 'Default dimensions group for refiners' is only valid attribute group to associate in this place). 
+> - Starting 10.0.27, with introduction of support for 'Customer specific catalogs' (aka B2B catalogs), you are expected to identify the 'refiner' and 'attribute' setup for each B2B catalog in the same manner as described here. 
+
+![Catalog – Product attribute and refiner settings - step 1](media/CatalogAttributeRefinerSetup1_2022Series.png)
+
+![Catalog – Product attribute and refiner settings - step 2](media/CatalogAttributeRefinerSetup2_2022Series.png)
 
 ## Override attribute values
 
