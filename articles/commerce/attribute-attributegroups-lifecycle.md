@@ -4,7 +4,7 @@
 title: Manage attributes and attribute groups
 description: This article describes how to manage attributes and attribute groups to describe products and their characteristics in Microsoft Dynamics 365 Commerce. 
 author: ashishmsft
-ms.date: 08/25/2022
+ms.date: 08/26/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -131,7 +131,7 @@ It's recommended that refinable attributes have an attribute of type **Fixed-lis
 
 Translations are critical for attribute names and their values. For attributes of type **Fixed-list**, you can define translations on 'attribute-type' for its values whereas for every other attribute you're able to define translations on the forms where you may define the values for attributes. For example, for an attribute of type **Text** you can define translations for the default value on the attribute, but if you override the default value at the product level you can define translations for it on a  product's **Product attributes** form. 
 
-Once an attribute has been marked as refinable for a channel, you should not update the attribute type because that would impact the publishing of product data to the search index. It's recommended to create a new attribute for a new type of refiner and retire the previous attribute by removing it from other attribute groups. 
+Once an attribute has been marked as refinable for a channel, you shouldn't update the attribute type because that would impact the publishing of product data to the search index. It's recommended to create a new attribute for a new type of refiner and retire the previous attribute by removing it from other attribute groups. 
 
 Search by attributes is supported, but it only fetches results for exact matches of search words. For example, for a **'Fabric** attribute with a value of "Cashmere cotton", if a customer searches for "Cash" then no products where the fabric is "cashmere cotton" will be retrieved, whereas if a site user searches for "Cashmere", "Cotton", or "Cashmere Cotton" then products with a fabric of cashmere cotton will be retrieved. 
 
@@ -146,7 +146,7 @@ The following are the remaining attribute metadata options on the **Attributes**
 - **Ignore case and format**
 - **Complete match**
 
-These options were originally intended to improve the search functionality for legacy SharePoint-based online storefronts and don't necessarily apply to Commerce e-commerce websites or point-of-sale (POS) terminals. Headless integration continues to be supported, so these options are available to export attribute metadata using the Commerce software development kit (SDK). You can use the Commerce SDK to put products into a custom, optimized external search index that ensures that only attributes that should be indexed are indexed.
+These options were originally intended to improve the search functionality for legacy SharePoint-based online storefronts and don't necessarily apply to Commerce e-commerce websites or point-of-sale (POS) terminals. Headless integration continues to be supported, so these options are available to export attribute metadata using the Commerce software development kit (SDK). You can use the Commerce SDK to put products into a custom, optimized external search index that ensures only attributes that should be indexed are indexed.
 
 > [!NOTE]
 > For more information about these remaining options, see [Overview of the search schema in SharePoint Server 2013](/SharePoint/search/search-schema-overview).
@@ -192,7 +192,7 @@ This procedure can also be used to assign attribute groups to categories in the 
 - **Retail and Commerce \> Category and product management \> Channel navigation categories**
 - **Retail and Commerce \> Category and product management \> Supplemental product categories**
 
-Ensure that you are only associating attribute groups in a category hierarchy to the **Product attribute groups** FastTab and not the **Category attribute values** FastTab. If you see attributes appearing on the **Category attribute values** FastTab, select **Edit category hierarchy** on the action pane, and then on the **Category attribute groups** FastTab, select the category nodes and then select **Remove**. There's no support available to fetch attributes by category through Commerce Scale Unit.  
+Ensure that you're only associating attribute groups in a category hierarchy to the **Product attribute groups** FastTab and not the **Category attribute values** FastTab. If you see attributes appearing on the **Category attribute values** FastTab, select **Edit category hierarchy** on the action pane, and then on the **Category attribute groups** FastTab, select the category nodes and then select **Remove**. There's no support available to fetch attributes by category through Commerce Scale Unit.  
 
 ## Identify viewable and refinable attributes for Commerce channels for default product collection
 
@@ -301,7 +301,7 @@ The P001 master product is a multiple activity shoe that has three variants: **R
 - P001-2 : Activity – Walking 
 - P001-3 : Activity – Trekking
 
-If a user searches for "shoe", master product P001 would be among search results. If you had chosen the **Activity** attribute to be refinable as well then ‘Activity’ refiner would ONLY list ‘Sports’ as a refinable value, considering that’s defined for ‘Activity’ attribute at ‘P001-Master’
+If a user searches for "shoe", master product P001 would be among search results. If you had chosen the **Activity** attribute to be refinable as well, then ‘Activity’ refiner would ONLY list ‘Sports’ as a refinable value, considering that’s defined for ‘Activity’ attribute at ‘P001-Master’
 
 Then, what about the attributes that are defined at a variant level? How can those values show up among refiners? 
 
