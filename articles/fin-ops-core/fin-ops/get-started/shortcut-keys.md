@@ -154,7 +154,7 @@ Users can discover currently available shortcuts directly from the user interfac
 | Move to the next marked row                                                                                            | Alt+Shift+M, L                  |
 | Move to the previous marked row                                                                                        | Alt+Shift+M, P                  |
 | Moved to the last marked row                                                                                           | Alt+Shift+M, N                  |
-| Execute the default action in a grid<blockquote>[!NOTE] This shortcut is enabled when focus is on a cell containing a hyperlink and all cells in that column have hyperlinks.</blockquote> | Enter                           |
+| Execute the default action in a grid<br><br>[!NOTE] This shortcut is enabled when focus is on a cell containing a hyperlink and all cells in that column have hyperlinks. | Enter                           |
 | Toggle focus between the selected row and the header row                                                               | Alt+Shift+H                     |
 | Make the current column larger/smaller (with focus in the header row)                                                  | Right arrow / Left arrow        |
 | Move the current column to the next/previous position (with focus in the header row)                                   | Ctrl+Shift+Right arrow / Ctrl+Shift+Left arrow |
