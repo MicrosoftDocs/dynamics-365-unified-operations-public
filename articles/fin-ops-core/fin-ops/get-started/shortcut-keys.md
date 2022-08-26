@@ -4,7 +4,7 @@
 title: Keyboard shortcuts
 description: This article provides an overview of the shortcut key combinations that you can use when you're working with finance and operations apps.
 author: jasongre
-ms.date: 07/12/2022
+ms.date: 08/26/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -141,10 +141,10 @@ Users can discover currently available shortcuts directly from the user interfac
 | Horizontal scrolling                                                                                                   | Shift + Mouse wheel             |
 | Move to the next/previous column                                                                                       | Tab / Shift+Tab                 |
 | Move to the next/previous row                                                                                          | Down arrow / Up arrow           |
-| Move to the next/previous row without selecting<blockquote>[!NOTE] This shortcut applies to multi-select scenarios only.</blockquote> | Ctrl+Up arrow / Ctrl+Down arrow |
-| Select/clear the current row<blockquote>[!NOTE] This shortcut applies to multi-select scenarios only.</blockquote>                    | Ctrl+Space / Ctrl+Click         |
-| Add the next/previous row to the selected set<blockquote>[!NOTE] This shortcut applies to multi-select scenarios only.</blockquote>   | Shift+Space                     |
-| Add a range of rows to the selected set<blockquote>[!NOTE] This shortcut applies to multi-select scenarios only.</blockquote>         | Shift+Click                     |
+| Move to the next/previous row without selecting<br><br>**NOTE:** This shortcut applies to multi-select scenarios only. | Ctrl+Up arrow / Ctrl+Down arrow |
+| Select/clear the current row<br><br>**NOTE:** This shortcut applies to multi-select scenarios only.                   | Ctrl+Space / Ctrl+Click         |
+| Add the next/previous row to the selected set<br><br>**NOTE:** This shortcut applies to multi-select scenarios only.  | Shift+Space                     |
+| Add a range of rows to the selected set<br><br>**NOTE:**  This shortcut applies to multi-select scenarios only.         | Shift+Click                     |
 | Go to the next/previous page of data                                                                                   | Page up / Page down             |
 | Create a new row at the bottom of the grid                                                                             | Down arrow (from the last row)  |
 | Move to the first record                                                                                               | Ctrl+Home                       |
