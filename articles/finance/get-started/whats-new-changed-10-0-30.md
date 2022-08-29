@@ -56,11 +56,10 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
-|              |              |                  |
+| Credit and collections  | Display the **Known as** field on the **All customers** page | This feature provides a way view all fields on the **General** FastTab without having to select the **Show more fields** button. The **Known as** and **Phonetic name** fields will always be displayed. These fields can now be added to the **All customers list view** page and remain on the list view. |
 |              |              |                  | 
 |              |              |                  |
 |              |              |                  | 
-
 
 ## Additional resources
 
