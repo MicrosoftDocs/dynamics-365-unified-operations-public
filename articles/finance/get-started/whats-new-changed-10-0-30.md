@@ -45,7 +45,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |----|----|----|----|
-|    |    |    |    |
+| Accounts receivable  | Free text invoice posting improvement for totals calculation | We’ve added performance improvements to the free text invoice posting to allow it to run more efficiently. This enhancement works by saving calculated totals, instead of recalculating the totals multiple times during the posting process. This will shorten the posting process.  | Feature management |
 |    |    |    |    |
 |    |    |    |    | 
 
