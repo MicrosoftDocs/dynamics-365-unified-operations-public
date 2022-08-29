@@ -3,7 +3,7 @@
 
 title: Documents Pending Accounting
 description: This article describes the use of the form documents pending accounting. 
-author: RyanCCarlson2
+author: ryanCCarlson2
 ms.date: 08/28/2022
 ms.topic: index-page
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: RyanCCarlson2
+ms.author: rcarlson
 ms.search.validFrom: 2022-08-28
 ms.dyn365.ops.version: 10.0.30
 
