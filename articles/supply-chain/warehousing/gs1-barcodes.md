@@ -103,10 +103,10 @@ After the data has been parsed from the bar code, it will be fed into the mobile
 
 ## Turn on the GS1 feature
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+Before you can use this feature, it must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
-- **Feature name:** *Scan GS1 bar codes*
+- **Feature name:** *Scan GS1 barcodes*
 
 ### Turn on the Enhanced parser for GS1 barcodes feature
 
@@ -129,7 +129,7 @@ To set up global GS1 options, follow these steps.
 
     - **FNC1 Character**, **Datamatrix character**, and **QR code character** – Specify characters that should be interpreted as a prefix for each type of GS1 bar code.
     - **Group separator** – Specify the character that replaces the ASCII group separator character.
-    - **Maximum length of identifier** – Specify the maximum number of characters that is permitted for the application identifier. This field isn't required if the *Enhanced GS1 Parser* feature is turned on in your system.
+    - **Maximum length of identifier** – Specify the maximum number of characters that is permitted for the application identifier. This field isn't required if the *Enhanced GS1 Parser* feature is turned on for your system.
 
 > [!NOTE]
 > Prefixes tell the system that a bar code is encoded according to the GS1 standard. Up to three prefixes (**FNC1 Character**, **Datamatrix character**, and **QR code character**) can be used simultaneously and for various purposes.

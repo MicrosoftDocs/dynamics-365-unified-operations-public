@@ -64,6 +64,8 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/supply-chain
         - name: Get notified about service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/supply-chain
+        - name: Proactive quality updates
+          href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/supply-chain
         - name: Data task automation
           href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/supply-chain
         - name: Delivering ISV solutions using One Version
@@ -1769,6 +1771,8 @@
           href: master-planning/planning-optimization/purchase-requisitions.md
         - name: Production planning
           href: master-planning/planning-optimization/production-planning.md
+        - name: Master planning for products with limited shelf life
+          href: master-planning/planning-optimization/shelf-life.md
         - name: Scheduling with infinite capacity
           href: master-planning/planning-optimization/infinite-capacity-planning.md
         - name: Scheduling with resource selection based on capability

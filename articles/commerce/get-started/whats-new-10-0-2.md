@@ -48,7 +48,7 @@ For more information, see [Fiscal registration service integration sample for Cz
 
 You can now set up shipping promotions to enable free or discounted shipping across channels.
 
-For more information, see [Shipping discount overview](../retail-shipping-discount.md).
+For more information, see [Shipping discount overview](../shipping-discount.md).
 
 ## Additional resources
 

@@ -19751,6 +19751,11 @@
       "source_path": "articles/commerce/tender_based_discounts.md",
       "redirect_url": "/dynamics365/commerce/tender-based-discounts",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/commerce/retail-shipping-discount.md",
+      "redirect_url": "/dynamics365/commerce/shipping-discount",
+      "redirect_document_id": "false"
     }
   ]
 }

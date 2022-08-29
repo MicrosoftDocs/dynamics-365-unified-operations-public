@@ -4,7 +4,7 @@
 title: Safety margins
 description: This article describes how safety margins can be used with the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management.
 author: t-benebo
-ms.date: 09/14/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -82,12 +82,9 @@ Notice that when an issue margin is applied, related supply and demand requireme
 
 ## Set up safety margins
 
-### Turn on safety margins in Feature management
+### Turn safety margins on or off
 
-Before you can use this feature with Planning Optimization, it must be turned on in your system. Admins can use the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
-
-- **Module:** _Master planning_
-- **Feature name:** _Margins for Planning Optimization_
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Margins for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### Define safety margins
 

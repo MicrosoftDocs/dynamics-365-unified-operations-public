@@ -35,7 +35,7 @@ This warehousing functionality is also referred to by other names, such as put-t
 
 ## Turn on the Outbound sorting feature
 
-Before you can use the *Put to wall - put to store* functionality, the *Outbound sorting* feature must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+Before you can use the *Put to wall - put to store* functionality, the *Outbound sorting* feature must be turned on for your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Outbound sorting*
