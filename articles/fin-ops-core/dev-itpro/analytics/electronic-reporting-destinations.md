@@ -2,7 +2,7 @@
 title: Electronic reporting (ER) destinations
 description: This article provides information about the management of Electronic reporting destinations, the types of supported destinations, and security considerations.
 author: kfend
-ms.date: 05/18/2022
+ms.date: 08/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -245,9 +245,9 @@ If you set the **Send folder as** field to **Separate files** for a **Folder** c
 
 ## <a name="change-page-layout-properties-of-a-template"></a> Change page layout properties of a template
 
-You can configure an ER destination for an ER format component that is designed to use a template in Microsoft Office (Excel or Word) format for reports generation. If you are not the owner of this format and you need to change page layout properties of its template, in versions of Finance before version 10.0.29, you have to create a derived format and modify such properties of its template. Then, you have to spend time maintaining the derived format configuration. However, in version 10.0.29 and later, you can change page layout properties of such a template at runtime avoiding creation and further maintenance of a derived format configuration. To achieve this, you can set up the desired properties as part of settings of the configured ER destination. So, when you run an ER format and execute an ER destination that is configured to use certain page layout properties, the values of page layout properties of the executed destination will be applied to the using template replacing the original template's properties. You can configure different destinations for the same format's component configuring different page layout properties for the using template.
+You can configure an ER destination for an ER format component that's designed to use a template in a Microsoft Office (Excel or Word) format for report generation. If you aren't the owner of this format and you need to change page layout properties of the format's template, in versions of Finance before version 10.0.29, you have to create a derived format and modify the template properties. Then, you have to maintain the derived format configuration. However, in version 10.0.29 and later, you can change the page layout properties of the template at runtime to avoid creating and maintaining the derived format configuration. To do this, set up the desired properties as part of the settings of the configured ER destination. When you run an ER format and execute an ER destination that's configured to use certain page layout properties, the values of page layout properties of the executed destination are applied to the template you're using, replacing the original template's properties. You can configure different destinations for the same format's component configuring different page layout properties for the template in use.
 
-The following properties can be configured in an ER destination for a format component that is designed to use a template in Microsoft Office (Excel or Word) format:
+The following properties can be configured in an ER destination for a format component that's designed to use a template in Excel or Word format:
 
 - Page orientation
     - Portrait
@@ -272,7 +272,7 @@ The following properties can be configured in an ER destination for a format com
     - Right
 
 > [!NOTE]
-> Be aware that the configured in this way template's page orientation must be aligned with the [page orientation for PDF conversion](#select-a-page-orientation-for-pdf-conversion) in case the PDF conversion is configured.
+> The page orientation of the template that's configured in this way must be aligned with the [page orientation for PDF conversion](#select-a-page-orientation-for-pdf-conversion) if the PDF conversion is configured.
 
 You must select the length unit for setting page margins:
 
@@ -283,11 +283,11 @@ You must select the length unit for setting page margins:
 ![Set up page layout properties on the Electronic reporting destination page.](./media/er_destinations-set-page-layout-properties.png)
 
 > [!TIP]
-> When a margin value is nominated in centimeters and specified with multiple decimals, it will be rounded at runtime to the nearest value with 1 decimal point.
+> When a margin value is nominated in centimeters and specified with multiple decimals, it's rounded at runtime to the nearest value with 1 decimal point.
 >
-> When a margin value is nominated in millimeters and specified with decimals, it will be rounded at runtime for Excel to the nearest integer value with no decimal point.
+> When a margin value is nominated in millimeters and specified with decimals, it's rounded at runtime for Excel to the nearest integer value with no decimal point.
 >
-> When a margin value is nominated in millimeters and specified with multiple decimals, it will be rounded at runtime for Word to the nearest value with one decimal point.
+> When a margin value is nominated in millimeters and specified with multiple decimals, it's rounded at runtime for Word to the nearest value with one decimal point.
 
 ## Security considerations
 
