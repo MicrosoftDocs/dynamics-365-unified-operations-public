@@ -46,7 +46,7 @@ To extend Commerce Data Exchange - Real-time Service, you create a new method in
    -   **Model display name** - Contoso
 
 4. Click **Next**.
-5. In the dialog box, select **Select existing package**, and then select **Application Suite** in the list.
+5. In the dialog box, select **Create new package --> Next**, and then select **Select referenced packages** to check **Application Suite** and **Application Platform** in the list.
 6. Click **Next**.
 7. Click **Finish**.
 8. In the **New project** dialog box, enter **ContosoRetailTransactionServiceEx** as the project name.
@@ -98,7 +98,7 @@ To extend Commerce Data Exchange - Real-time Service, you create a new method in
             catch (Exception::Error)
             {
                 ttsAbort;
-                error = RetailTransactionServiceUtilities::getInfologMessages(fromLine);
+                errorMessage = RetailTransactionServiceUtilities::getInfologMessages(fromLine);
             }
 
             // Return sanitized error code.
