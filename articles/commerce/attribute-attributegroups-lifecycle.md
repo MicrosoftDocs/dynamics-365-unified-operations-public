@@ -4,7 +4,7 @@
 title: Manage attributes and attribute groups
 description: This article describes how to manage attributes and attribute groups to describe products and their characteristics in Microsoft Dynamics 365 Commerce. 
 author: ashishmsft
-ms.date: 08/26/2022
+ms.date: 08/30/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -45,6 +45,9 @@ Attributes are based on *attribute types*. An attribute type identifies the type
 - **Text** – This type supports a text value. It also supports a predefined set of possible values when the **Fixed list** setting is enabled.
 - **Boolean** – This type supports a binary value (**true** or **false**).
 - **Reference** – This type references other attributes.
+
+> [!NOTE]
+> The **Decimal** attribute type is not supported for cloud-powered search experiences due to [limitations of the Azure search index](/rest/api/searchservice/data-type-map-for-indexers-in-azure-search). Azure Cognitive Search doesn't support converting decimal attribute types into Edm.Double target index field types because doing so would lessen precision.
 
 ### Set up attribute types
 
@@ -161,8 +164,11 @@ To create an attribute group, follow the steps in this example procedure.
 
 1. Sign in to Commerce headquarters as a merchandising manager.
 2. Go to **Product information management \> Setup \> Categories and attributes \> Attribute groups**.
-3. Create an attribute group that is named **Fashion Sunglasses**.
-4. Add the following attributes: **Lens shape** and **Sunglass brand**.
+3. Create an attribute group that is named **Dress Shirts**.
+4. Add the following attributes: **CleaningMethod**, **CollarType**, **Collection**, and **Design**.
+
+> [!NOTE]
+> Display order for attributes in the attribute group doesn't influence or apply to ordering of the refiners on the search and category browse results. Display order values for the attributes are applicable only to the "order attributes" scenario. 
 
 ### Assign attribute groups to categories
 
@@ -190,7 +196,8 @@ This procedure can also be used to assign attribute groups to categories in the 
 - **Retail and Commerce \> Category and product management \> Channel navigation categories**
 - **Retail and Commerce \> Category and product management \> Supplemental product categories**
 
-Ensure that you're only associating attribute groups in a category hierarchy on the **Product attribute groups** FastTab and not the **Category attribute values** FastTab. If you see attributes appearing on the **Category attribute values** FastTab, select **Edit category hierarchy** on the action pane, and then on the **Category attribute groups** FastTab, select the category nodes and then select **Remove**. There's no support available to fetch attributes by category through Commerce Scale Unit.  
+> [!NOTE]
+> Ensure that you're only associating attribute groups in a category hierarchy on the **Product attribute groups** FastTab and not the **Category attribute values** FastTab. If you see attributes appearing on the **Category attribute values** FastTab, select **Edit category hierarchy** on the action pane, and then on the **Category attribute groups** FastTab, select the category nodes and then select **Remove**. There's no support available to fetch attributes by category through Commerce Scale Unit.  
 
 ## Identify viewable and refinable attributes for Commerce channels for default product collection
 
