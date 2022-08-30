@@ -134,7 +134,10 @@ Once an attribute has been marked as refinable for a channel, you shouldn't upda
 
 Search by attributes is supported, but it only fetches results for exact matches of search words. For example, for a **'Fabric** attribute with a value of "Cashmere cotton", if a customer searches for "Cash" then no products with "cashmere cotton" as the fabric will be retrieved, whereas if a site user searches for "Cashmere", "Cotton", or "Cashmere Cotton", then products with "cashmere cotton" as the fabric will be retrieved. 
 
-### Additional options for attribute *(applicable for legacy SharePoint online storefront and external integrations)*
+### Additional attribute metadata options
+
+> [!NOTE]
+> These attribute metadata options are only applicable to legacy SharePoint online storefront and external integrations. For more information about these attribute metadata options, see [Overview of the search schema in SharePoint Server 2013](/SharePoint/search/search-schema-overview).
 
 The following are the remaining attribute metadata options on the **Attributes** form:
 
@@ -146,9 +149,6 @@ The following are the remaining attribute metadata options on the **Attributes**
 - **Complete match**
 
 These options were originally intended to improve the search functionality for legacy SharePoint-based online storefronts and don't necessarily apply to Commerce e-commerce websites or point-of-sale (POS) terminals. Headless integration continues to be supported, so these options are available to export attribute metadata using the Commerce software development kit (SDK). You can use the Commerce SDK to put products into a custom, optimized external search index that ensures only attributes that should be indexed are indexed.
-
-> [!NOTE]
-> For more information about these remaining options, see [Overview of the search schema in SharePoint Server 2013](/SharePoint/search/search-schema-overview).
 
 ## Attribute groups
 
