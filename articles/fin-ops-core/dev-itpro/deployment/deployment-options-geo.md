@@ -28,7 +28,7 @@ The following table lists the local geographies and endpoints that Commerce, Fin
 | Geography | LCS endpoint |
 |-----------|--------------|
 | France | [https://fr.lcs.dynamics.com/](https://fr.lcs.dynamics.com/) |
-| United Arab Emeritus | [https://uae.lcs.dynamics.com/](https://uae.lcs.dynamics.com/) |
+| United Arab Emirates | [https://uae.lcs.dynamics.com/](https://uae.lcs.dynamics.com/) |
 | South Africa | [https://sa.lcs.dynamics.com/](https://sa.lcs.dynamics.com/) |
 | Switzerland | [https://ch.lcs.dynamics.com/](https://ch.lcs.dynamics.com/) |
 | Europe | [https://eu.lcs.dynamics.com/](https://eu.lcs.dynamics.com/) |
