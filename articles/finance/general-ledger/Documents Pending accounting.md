@@ -43,4 +43,4 @@ The following options are available from the **Documents Pending Accounting** pa
 
 *Accounting generation is accomplished by a process automation background process called **Accounting framework processor**.  The documenataion about [process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md) will provide more information about the setup and configuration of all process automations. 
 
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
