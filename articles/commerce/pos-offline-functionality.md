@@ -52,7 +52,7 @@ You can add a button to Modern POS to manually switch between online and offline
 
 ## Setup
 
-To enable offline support for a POS device (register), set the **Support offline** option to **Yes** on the **Register** page. A new channel database entity is created and added to the store's channel data group. Then run all the required distribution schedules to generate the data packages for the offline database. Next, install the offline version of Modern POS. The installation process creates the offline database. Additionally, install Microsoft SQL Server 2014 Express if it is required. Offline data synchronization starts after the first sign-in to Modern POS.
+To enable offline support for a POS device (register), set the **Support offline** option to **Yes** on the **Register** page. A new channel database entity is created and added to the store's channel data group. Then run all the required distribution schedules to generate the data packages for the offline database. Next, install the offline version of Modern POS. The installation process creates the offline database. Additionally, install a currently supported version of Microsoft SQL Server Express if it is required (At the time of updating this document, SQL 2019 is the most up to date version available). Offline data synchronization starts after the first sign-in to Modern POS.
 
 ## Data synchronization
 
