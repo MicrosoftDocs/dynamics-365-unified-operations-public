@@ -122,8 +122,6 @@ The **Filter settings** form includes the following fields:
     - **200 – 500**
     - **500 or more**
 
-<!--![Attribute filter settings](media/AttributeFilterSettings_2022Series.png)-->
-
 Filter settings for attributes are only applicable for product attributes and can be used for refining product search and category browsing results. These filter settings don't apply to customer search or order search, although the same attributes can be used for enriching customer or order information. 
 
 Among default Commerce modules, there's no out-of-the-box support available for **Display control** filter settings such as **Range**, **Slider**, or **Slider with bars**. **Range** and **Slider** settings continue to be supported for point-of-sale solutions, whereas the **Slider with bars** setting is applicable for legacy Microsoft SharePoint online storefronts and continues to be available for third-party integration and custom scenarios. 
@@ -211,9 +209,7 @@ Product dimensions like size, style, and color are the most commonly used refine
 
 You can specify that product dimensions are viewable and refinable by updating flags on the **Channel categories and product attributes** form. Select the root node from the navigation pane, and then on **Channel product attributes** FastTab, set the **Show attribute on channel** option to **Yes** for the **Size**, **Style**, and **Color** attributes. If you want these attributes to also be refinable, set the **Can be refined** option to **Yes** for each attribute. 
 
-<!--![Associate product dimension refiners based attribute group to channel](./media/ProductDimensionRefinersAttributeGroup_2022Series.png)-->
 ![Set attribute metadata for dimension refiners](./media/ProductDimensionRefinersMetadataSetup_2022Series.png)
-<!--![Example of product dimension based attribute setup](./media/ProductDimensionRefinersAttributeSetup_2022Series.png)-->
 
 To enable the attributes so that they're available in the demo-data based Houston channel, follow the steps in this example procedure.
 
@@ -231,10 +227,6 @@ To enable the attributes so that they're available in the demo-data based Housto
 > - If **Set attribute metadata** is grayed out, then you must ensure that **Navigation hierarchy** is associated with your channel under the **General** FastTab. 
 > - You must not associate any attribute groups other than dimension-based attribute groups at a channel level (for example, under **Attribute groups** on the **Channel categories and product attributes** form). 
 > - Starting with introduction of support for customer-specific B2B catalogs in Commerce version 10.0.27, you are expected to identify the refiner and attribute setups for each B2B catalog in the same manner described in this article. 
-
-<!--![Catalog – Product attribute and refiner settings - step 1](media/CatalogAttributeRefinerSetup1_2022Series.png)-->
-
-<!--![Catalog – Product attribute and refiner settings - step 2](media/CatalogAttributeRefinerSetup2_2022Series.png)-->
 
 ## Override attribute values
 
