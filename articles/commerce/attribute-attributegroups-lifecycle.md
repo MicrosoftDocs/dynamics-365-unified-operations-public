@@ -263,6 +263,11 @@ To override the attribute values of all products in a catalog, follow the steps 
 1. On the **Products** FastTab, select the required product, and then select **Attributes** above the product grid.
 1. On the following FastTabs, update the values of the required attributes:
 
+    - Shared product media
+    - Shared product attributes
+    - Channel media
+    - Channel product attributes
+
 ### Override the attribute values of all products in a channel
 
 To override the attribute values of all products in a channel, follow the steps in this example procedure.
