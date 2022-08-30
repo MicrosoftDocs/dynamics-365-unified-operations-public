@@ -59,7 +59,7 @@ Before you can start installation of channel components, you must first complete
     > - The steps above apply to version 10.0 and later.
     >
     > ```powershell
-    > .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:/selfservicepackages**>' -SendProductSupportTelemetryToMicrosoft
+    > .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:/RetailSelfService**>' -SendProductSupportTelemetryToMicrosoft
     > ```
     > - The parameter **-envName** should be known based on creation when the environment is generated.
     > - The legacy parameters **-DatabaseServer** and **-DatabaseName** should be known based on the environment setup.
