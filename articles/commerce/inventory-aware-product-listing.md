@@ -33,7 +33,7 @@ This article explains how organizations could configure their e-commerce website
 
 ## Overview
 
-Shoppers generally expect product discovery throughout the e-commerce website to be inventory aware, so that they can decide what to do if a product is out-of-stock. In our [e-commerce module library](starter-kit-overview), the **category** and **search results** modules can be configured to incorporate inventory data and provide the following experiences:
+Shoppers generally expect product discovery throughout the e-commerce website to be inventory aware, so that they can decide what to do if a product is out-of-stock. In our [e-commerce module library](starter-kit-overview.md), the **category** and **search results** modules can be configured to incorporate inventory data and provide the following experiences:
 
 - Display inventory level labels alongside products.
 - Hide out-of-stock products from the product list.
@@ -74,8 +74,8 @@ After the dedicated product attribute is created, the next step is to configure 
 
 After all the preceding configuration steps are completed, the refiners on category and search results page would have an inventory-based filter option, and each product tile displayed on the page would have an inventory level label displayed together with it. 
 
-The category and search results page displays products at **master** level not variant level. Thus, the inventory level displayed alongside each product is an **aggregated** inventory level by considering the inventory level of all its variants. The inventory level of a variant is calculated based on the on-hand inventory of that variant in the **default warehouse** of the online channel in Commerce headquarters. The inventory level of a master product has two possible values that represent in-stock and out-of-stock. A master product is considered out-of-stock when all its variants are out-of-stock. Otherwise, it's considered in-stock. The actual label for the value is retrieved from the [inventory level](inventory-buffers-levels) definition. If no inventory level is defined, the default labels are **Available** and **Out of stock** in English language.
+The category and search results page displays products at **master** level not variant level. Thus, the inventory level displayed alongside each product is an **aggregated** inventory level by considering the inventory level of all its variants. The inventory level of a variant is calculated based on the on-hand inventory of that variant in the **default warehouse** of the online channel in Commerce headquarters. The inventory level of a master product has two possible values that represent in-stock and out-of-stock. A master product is considered out-of-stock when all its variants are out-of-stock. Otherwise, it's considered in-stock. The actual label for the value is retrieved from the [inventory level](inventory-buffers-levels.md) definition. If no inventory level is defined, the default labels are **Available** and **Out of stock** in English language.
 
-You can configure the **Inventory settings for product list pages** setting in Commerce site builder to control how the category and search results page displays out-of-stock products. For more information, see [Apply inventory settings](inventory-settings).
+You can configure the **Inventory settings for product list pages** setting in Commerce site builder to control how the category and search results page displays out-of-stock products. For more information, see [Apply inventory settings](inventory-settings.md).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
