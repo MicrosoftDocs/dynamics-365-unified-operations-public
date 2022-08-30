@@ -46,7 +46,7 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |----|----|----|----|
 | Accounts receivable  | Free text invoice posting improvement for totals calculation | We’ve added performance improvements to the free text invoice posting to allow it to run more efficiently. This enhancement works by saving calculated totals, instead of recalculating the totals multiple times during the posting process. This will shorten the posting process.  | Feature management |
-|    |    |    |    |
+| General ledger  | Enhanced performance for source document accounting framework  | We've added performance improvements to batch postings of source documents in order to run more efficiently. This feature initially will only affect free text invoice batch posting with more source documents to be supported in future releases. When this feature is enabled, batch posting is split into smaller units of work preventing system degradation and lessening the chance of issues due to database disconnections. | Feature management |
 |    |    |    |    | 
 
 
