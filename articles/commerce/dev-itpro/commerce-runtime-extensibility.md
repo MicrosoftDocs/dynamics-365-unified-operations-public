@@ -209,7 +209,7 @@ For serialization to work, the new request type must implement the **\[DataContr
 > [!NOTE]
 > - We recommend that for the extension code, you use **ConfigureAwait(false)** when executing the request.
 > - Using Microsoft Distributed Transaction Coordinator (MSDTC) in a CRT database extension is not supported.
-> - Avoid wrapping the existing CRT request and response with a TransactionScope because doing so may cause a database exception due to multiple database connections being opened within a same transaction. Also, to improve performance, avoid using TransactionScope for read scenarios.
+> - Avoid wrapping the existing CRT request and response with a TransactionScope because doing so may cause a database exception due to multiple database connections being opened within a same transaction. Also, to improve performance, avoid using TransactionScope for read scenarios. Instead, specify **TransactionScopeAsyncFlowOption.Enabled** to allow for correctly asynchronous calls.
 
 
 ### Request class
