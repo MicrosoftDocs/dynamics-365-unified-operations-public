@@ -70,12 +70,12 @@ Beginning in Commerce version 10.0.30, the PayPal payment connector configuratio
 
 When configuring the PayPal payment connector in Commerce headquarters, the **OrderIntent** field can have two values:
 
-- **Authorize**: This configuration value is the default value. If the field is left blank, the **Authorize** value will become the default value. Configuring the **OrderIntent** field with the **Authorize** value correlates to the PayPal **processing_instruction** value of **NO_INSTRUCTION**. The order will be authorized with PayPal and the authorization cannot be modified when this value is used.
-- **Save**: Configuring the **OrderIntent** field with the **Save** value correlates to the PayPal **processing_instruction** value of **ORDER_SAVED_EXPLICITLY**. Order references will be saved in the PayPal service when this value is used.
+- **Authorize**: This configuration value is the default value. If the field is left blank, **Authorize** will become the default value. Configuring the **OrderIntent** field with the **Authorize** value correlates to the PayPal processing instruction value of **NO_INSTRUCTION**. The order will be authorized with PayPal and the authorization cannot be modified when this value is used.
+- **Save**: Configuring the **OrderIntent** field with the **Save** value correlates to the PayPal processing instruction value of **ORDER_SAVED_EXPLICITLY**. When this value is used, order references will be saved in the PayPal service.
 
-## Testing the PayPal payment connector
+## Test the PayPal payment connector
 
-### Creating a PayPal developer account
+### Create a PayPal developer account
 
 To test the PayPal payment connector, you must first create PayPal developer credentials and a PayPal sandbox environment. 
 
@@ -94,7 +94,7 @@ To test the PayPal payment connector, you must first create PayPal developer cre
 9. Next, go to the [PayPal Developer page](https://developer.paypal.com/developer/applications) and select **Log in to Dashboard**.
 10. Sign in using the credentials used when creating your PayPal account.
 11. In the developer dashboard, select the **Default Application** in the list of RestAPI apps.
-12. Note the **Client ID** and **Secret** for your Sandbox account. These will be used to set up the PayPal payment connector in Dynamics 365 Commerce.
+12. Note the **Client ID** and **Secret** for your sandbox account. These will be used to set up the PayPal payment connector in Dynamics 365 Commerce.
 
     > [!NOTE]
     > To collect **Client ID** and **Secret** for a live environment, select the **Live** tab for the selected RestAPI app.
@@ -139,16 +139,16 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
     |---|---|:-:|:-:|---|
     | Assembly Name | Auto-populated name of the assembly for the PayPal payment connector. | Yes | Yes | *Binary name* |
     | Service account ID | Auto-populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes should use (such as invoicing). | Yes | Yes | *Guid* |
-    | Merchant client ID | Enter the Sandbox **Client ID** collected from the PayPal developer dashboard under **Default application**.  | Yes | Yes | *String* |
-    | Merchant API key | Enter the Sandbox **Secret** collected from the PayPal developer dashboard under **Default application**. | Yes | Yes | *String* |
+    | Merchant client ID | Enter the sandbox **Client ID** collected from the PayPal developer dashboard under **Default application**.  | Yes | Yes | *String* |
+    | Merchant API key | Enter the sandbox **Secret** collected from the PayPal developer dashboard under **Default application**. | Yes | Yes | *String* |
     | Supported currencies | Enter the supported currencies, semicolon separated, to be supported for the PayPal payment connector. The default is **USD**. | Yes | Yes, but can be edited. | USD; CAD |
     | Supported tender types | Other payment connectors may support multiple tender types. For PayPal, the only payment method will be **PayPal**. | Yes | Yes | PayPal |
     | Supported payment method variants | Other payment connectors may return multiple payment method variants. For PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
-    | Environment | This field is used to specify whether transactions should be sent to Sandbox or Live environments. | Yes | Yes | *Sandbox* or *Live* |
+    | Environment | This field is used to specify whether transactions should be sent to sandbox or live environments. | Yes | Yes | *Sandbox* or *Live* |
     | OrderIntent | This field is used to specify whether the order reference is saved in the PayPal service. | No | No | *Authorize* (default behavior if left blank) or *Save* |
     
 > [!NOTE]
-> When testing payments in a Sandbox environment, the **Environment** field should never be set to live and live environment. **Merchant client ID** and **Merchant API keys** must never be used. Sandbox environments are for Sandbox testing only.
+> When testing payments in a sandbox environment, the **Environment** field should never be set to live and live environment. **Merchant client ID** and **Merchant API keys** must never be used. Sandbox environments are for sandbox testing only.
 
 ### Set up the PayPal payment connector for the online store
 
@@ -162,12 +162,12 @@ Follow these steps to configure the PayPal payment connector in **Payment Servic
     |---|---|:-:|:-:|---|
     | Assembly Name | Auto-populated name of the assembly for the PayPal payment connector. | Yes | Yes | *Binary name* |
     | Service account ID | Auto-populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes should use (such as invoicing). | Yes | Yes | *Guid* |
-    | Merchant client ID | Enter the Sandbox **Client ID** collected from the PayPal developer dashboard under **Default application**.  | Yes | Yes | *String* |
-    | Merchant API key | Enter the Sandbox **Secret** collected from the PayPal developer dashboard under **Default application**. | Yes | Yes | *String* |
+    | Merchant client ID | Enter the sandbox **Client ID** collected from the PayPal developer dashboard under **Default application**.  | Yes | Yes | *String* |
+    | Merchant API key | Enter the sandbox **Secret** collected from the PayPal developer dashboard under **Default application**. | Yes | Yes | *String* |
     | Supported currencies | Enter the supported currencies, semicolon separated, to be supported for the PayPal payment connector. The default is **USD**. | Yes | Yes, but can be edited. | USD; CAD |
     | Supported tender types | Other payment connectors may support multiple tender types. For PayPal, the only payment method will be **PayPal**. | Yes | Yes | PayPal |
     | Supported payment method variants | Other payment connectors may return multiple payment method variants. For PayPal, the only variant will be **PayPal**. | Yes | Yes | PayPal |
-    | Environment | This field is used to specify whether transactions should be sent to Sandbox or Live environments. | Yes | Yes | *Sandbox* or *Live* |
+    | Environment | This field is used to specify whether transactions should be sent to sandbox or Live environments. | Yes | Yes | *Sandbox* or *Live* |
     | OrderIntent | This field is used to specify whether the order reference is saved in the PayPal service. | No | No | *Authorize* (default behavior if left blank) or *Save* |
 
 ### Set up the PayPal payment method for the online store
@@ -184,24 +184,25 @@ To set up the PayPal payment method for the online store, follow these steps.
 1. Select **Save**, and then close the **Electronic payment types** and **Online stores** pages. 
 
 > [!NOTE]
-> When testing payments in a Sandbox environment, the **Environment** field should never be set to live and live environment. **Merchant client ID** and **Merchant API key**s must never be used. Sandbox environments are for Sandbox testing only.
+> When testing payments in a sandbox environment, the **Environment** field should never be set to live and live environment. **Merchant client ID** and **Merchant API key**s must never be used. Sandbox environments are for sandbox testing only.
 
 After the above changes have been made in Commerce headquarters, synchronize the changes using the **1070** distribution schedule.
 
-### Configure PayPal for the Storefront checkout module
+### Configure PayPal for the storefront checkout module
 
 For details related to configuring storefront to use PayPal in the checkout module, see [Payment module](payment-module.md).  
 
-## Entering a merchant relationship with PayPal
+## Enter a merchant relationship with PayPal
 
 To create a **Live** merchant account with PayPal, visit the [PayPal Checkout page](https://www.paypal.com/merchantapps/appcenter/acceptpayments/checkout) for self-service or [connect with a sales representative](https://www.paypal.com/business/contact-sales) to discuss custom rates. 
  
-
 ## Additional resources
 
-- [Payments FAQ](dev-itpro/payments-retail.md)
-- [Checkout module](add-checkout-module.md)
-- [Payment module](payment-module.md)
+[Payments FAQ](dev-itpro/payments-retail.md)
+
+[Checkout module](add-checkout-module.md)
+
+[Payment module](payment-module.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
