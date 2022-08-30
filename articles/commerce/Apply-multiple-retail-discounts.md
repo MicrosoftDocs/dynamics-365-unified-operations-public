@@ -18,7 +18,7 @@ ms.search.industry: Retail
 ms.search.form: 
 ---
 
-# Apply multiple Retail discounts to a product
+# Apply multiple Retail discounts to a product - test PR
 
 [!include [banner](includes/banner.md)]
 
