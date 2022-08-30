@@ -4,34 +4,22 @@
 title: Inventory-aware product listing
 description: This article explains how organizations could configure their e-commerce website product listing pages to be inventory aware.
 author: boycez
-ms.date: 08/23/2022
+ms.date: 08/30/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
-ms.search.region: global
-ms.search.industry: Retail, Commerce
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
+ms.search.region: Global
 ms.author: boycez
 ms.search.validFrom: 2022-08-23
-ms.dyn365.ops.version: Application update 10.0.29
 
 ---
 
 # Inventory-aware product listing
 
-This article explains how organizations could configure their e-commerce website product listing pages (such as category landing page, search results page) to be inventory aware.
+[!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-## Overview
+This article explains how organizations could configure their e-commerce website product listing pages (such as category landing page, search results page) to be inventory aware.
 
 Shoppers generally expect product discovery throughout the e-commerce website to be inventory aware, so that they can decide what to do if a product is out-of-stock. In our [e-commerce module library](starter-kit-overview.md), the **category** and **search results** modules can be configured to incorporate inventory data and provide the following experiences:
 
@@ -47,7 +35,9 @@ To enable these experiences, you must first enable the **Enhanced e-Commerce pro
 
 ## Set up product attribute for inventory availability
 
-Inventory-aware product listing leverages product attributes framework. As prerequisite, a dedicated product attribute needs to be created to capture inventory availability data. To do so, follow these steps in Commerce headquarters.
+Inventory-aware product listing leverages product attributes framework. As prerequisite, a dedicated product attribute needs to be created to capture inventory availability data. 
+
+To set up product attribute for inventory availability in Commerce headquarters, follow these steps.
 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Products and inventory**.
 1. Select **Populate product attributes with inventory level**.
@@ -67,8 +57,7 @@ After the dedicated product attribute is created, the next step is to configure 
 1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**, and run the **1150 (Catalog)** job. We recommend that you schedule the 1150 job as a batch process that runs at the same frequency as the **Populate product attributes with inventory level** job.
 
 > [!NOTE]
-> In Commerce version **10.0.26** and earlier, after adding the inventory availability product attribute to an attribute group, you need to additionally select **Set attribute metadata**, and then turn on the **Show attribute on channel**, **Retrievable**, **Can be refined**, and **Can be queried** options on the newly added product attribute.
-
+> In Commerce version 10.0.26 and earlier, after adding the inventory availability product attribute to an attribute group, you need to additionally select **Set attribute metadata**, and then turn on the **Show attribute on channel**, **Retrievable**, **Can be refined**, and **Can be queried** options on the newly-added product attribute.
 
 ## Configure out-of-stock product display behavior in product listing pages
 
