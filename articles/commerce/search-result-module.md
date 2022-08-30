@@ -90,7 +90,7 @@ The search results module can be configured to incorporate inventory data and pr
 - Display out-of-stock products at the end of the product list.
 - Support inventory-based product filtering.
 
-To enable these experiences, you must first enable the **Enhanced e-Commerce product discovery to be inventory-aware** feature and then configure some prerequisite settings in Commerce headquarters. For more information, see [Inventory-aware product listing](inventory-aware-product-listing).
+To enable these experiences, you must first enable the **Enhanced e-Commerce product discovery to be inventory-aware** feature and then configure some prerequisite settings in Commerce headquarters. For more information, see [Inventory-aware product listing](inventory-aware-product-listing.md).
 
 ## Additional resources
 
