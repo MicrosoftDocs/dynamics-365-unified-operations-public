@@ -98,13 +98,12 @@ Before you can start installation of channel components, you must first complete
      >
      > It is critical to keep this secret safe. This secret should only be copied once and never stored on the system.  The Client ID and Secret generated will be used during the Commerce Scale Unit installer, so it is required to be used at a later time.  You can always reset the secret again, but it must then be updated on any Commerce Scale Unit that used the previous secret.
 
+     > [!NOTE]
+     > For the following, it is possible that steps 11 through 17 will already be complete and have values and be fully configured. If this occurs, skip those steps and continue on step 18. What is important is to have a selectable profile title (default in this case).
+    
 11.  Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Connector for Microsoft Dynamics AX**.
 12.  Select **Edit** on the Action pane.
 13.  In the **Profile** field, enter the value **Default**.  If needed, enter a description in the **Description** field.
-
-     > [!NOTE]
-     > It is possible for the following fields in steps 12 through 14 to already have values. If this occurs, skip those steps and continue from there. What is important is to have a selectable profile title (default in this case).
-
 14.  In the  **Web application name** field, enter **RetailCDXRealTimeService**.
 15.  In the **Protocol** field, select **https**.
 16.  In the **Common name** field, enter **AXServiceUser@contoso.com**.
