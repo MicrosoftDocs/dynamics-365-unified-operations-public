@@ -4,7 +4,7 @@
 title: Configure, install, and activate Modern POS (MPOS)
 description: This article describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
-ms.date: 09/01/2021
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -359,7 +359,7 @@ The device should now be activated and ready to use.
 
 On a single-computer system, such as a developer topology or a demo environment, or when Commerce Scale Unit and Modern POS are installed on the same computer, Modern POS can't complete device activation.
 
-**Solution:** This issue occurs because Modern POS can't make network calls to the same computer (that is, calls to itself). To mitigate this issue, you must enable an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enabling this loopback for Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)).
+**Solution:** This issue occurs because Modern POS can't make network calls to the same computer (that is, calls to itself). While this should never be a scenario in a production setting, the issue can be mitigated by enabling an AppContainer loopback exception so that communications can occur to the same computer. Various applications will help enabling this loopback for Modern POS. For more information about loopback, see [How to enable loopback and troubleshoot network isolation](/previous-versions/windows/apps/hh780593(v=win.10)). It is important to understand that a loopback can be a security risk, so it is not recommended that you use a loopback unless absolutely necessary.
 
 ## Additional resources
 
