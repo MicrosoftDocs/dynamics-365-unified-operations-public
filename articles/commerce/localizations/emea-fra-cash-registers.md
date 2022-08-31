@@ -44,8 +44,10 @@ The following is the Dynamics 365 Commerce documentation related to the NF 525 c
 
 | Document | Description | Links |
 |----------|-------------|-------|
-| High-level design document | The documentation that describes the software product, its components, and data flows. | [Commerce home page](../index.md) and nested links, specifically [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)<p><p>[Design of the NF 525 solution](#design-of-the-nf-525-solution) |
+| High-level design document | The documentation that describes the software product, its components, and data flows. | [Commerce home page](../index.md) and nested links |
 | Functional specification | The documentation that describes the functions of the software. | [Commerce home page](../index.md) and nested links<p><p>[France-specific POS features](#france-specific-pos-features) |
+| Technical architecture document | The documentation that describes the technical design of the product. | [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)<p><p>[Design of the NF 525 solution](#design-of-the-nf-525-solution) |
+| Organizational document | The documentation that describes the process that is established to control the software product compliance | [Globalization resources](../../fin-ops-core/dev-itpro/lcs-solutions/country-region.md) | 
 
 ## Design of the NF 525 solution
 
@@ -438,7 +440,7 @@ You must configure certificates that will be used for digital signing of records
 > [!NOTE]
 > You can use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing. Only certificates that have RSA-2048-bit or Elliptic Curve Digital Signature Algorithm (ECDSA) 224-bit minimum private keys are acceptable. Commerce supports only RSA-2048-bit or longer keys. If you want to use an ECDSA key, you must implement a customization.
 
-Follow the steps that are described in [Set up certificate profiles](./certificate-profiles-for-retail-stores.mdset-up-certificate-profiles) to configure certificates and certificate profiles to be used for digital signing.
+Follow the steps that are described in [Set up certificate profiles](./certificate-profiles-for-retail-stores.md#set-up-certificate-profiles) to configure certificates and certificate profiles to be used for digital signing.
 
 After you set up certificate profiles, go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**, select the connector technical profie that you created earlier, and specify the following parameters for digital signatures on the **Settings** FastTab:
 
