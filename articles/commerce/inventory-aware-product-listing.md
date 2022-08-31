@@ -54,8 +54,8 @@ To configure the attribute for online channel in Commerce headquarters, follow t
 
 1. Go to **Retail and Commerce \> Channel setup \> Channel categories and product attributes**.
 1. Select an online channel for which you want to enable the inventory-aware product listing experience.
-1. Select and open an associated attribute group, and then add the newly-created product attribute to it.
-1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**, and run the **1150 (Catalog)** job. It is recommended that you schedule the 1150 job as a batch process that runs at the same frequency as the **Populate product attributes with inventory level** job.
+1. Select and open an associated attribute group, and then add the newly created product attribute to it.
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**, and run the **1150 (Catalog)** job. It's recommended that you schedule the 1150 job as a batch process that runs at the same frequency as the **Populate product attributes with inventory level** job.
 
 > [!NOTE]
 > In Commerce version 10.0.26 and earlier, after adding the inventory availability product attribute to an attribute group, you must also select **Set attribute metadata** and then turn on the **Show attribute on channel**, **Retrievable**, **Can be refined**, and **Can be queried** options on the newly-added product attribute.
