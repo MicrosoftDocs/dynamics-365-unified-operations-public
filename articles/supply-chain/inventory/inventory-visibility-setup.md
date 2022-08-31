@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.21
 
 This article describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
 
-You must use Microsoft Dynamics Lifecycle Services (LCS) to install the Inventory Visibility Add-in. LCS is a collaboration portal that provides an environment and a set of regularly updated services that help you manage the application lifecycle of your finance and operations apps. For more information, see [Lifecycle Services resources](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
+You must use Microsoft Dynamics Lifecycle Services (LCS) to install the Inventory Visibility Add-in. LCS is a collaboration portal that provides an environment and a set of regularly updated services that help you manage the application lifecycle of your finance and operations apps. For more information, see [Lifecycle Services resources](fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
 > [!TIP]
 > We recommend that you join the Inventory Visibility Add-in user group, where you can find useful guides, get our latest updates, and post any questions you may have about using Inventory Visibility. To join, please send email to the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) and include your Supply Chain Management environment ID.
@@ -52,7 +52,7 @@ After you register an application and add a client secret to Azure AD, follow th
 
     > [!NOTE]
     > Currently, only Dataverse environments that were created by using LCS are supported. If your Dataverse environment was created in some other way (for example, by using the PowerApps Admin Center), and if it's linked to your Supply Chain Management environment, you must first fix the mapping issue before installing Inventory Visibility Add-in. 
-    > It is possible that your Dual-Write environment is linked to a Dataverse instance while LCS is not set up for Power Platform integration. This linking mismatch can cause unexpected behavior. It is recommended that LCS environment details match what you are connected to in Dual-Write so that the same connection can be used by business events, virtual tables, and add-ins. Please refer to [_Linking Mismatch_ section of Dual-Write setup](../../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup#linking-mismatch) to fix the mapping issue. Once the mapping issue is resolved, you can then proceed to install Inventory Visibility.
+    > It is possible that your Dual-Write environment is linked to a Dataverse instance while LCS is not set up for Power Platform integration. This linking mismatch can cause unexpected behavior. It is recommended that LCS environment details match what you are connected to in Dual-Write so that the same connection can be used by business events, virtual tables, and add-ins. Please refer to [_Linking Mismatch_ section of Dual-Write setup](fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup#linking-mismatch) to fix the mapping issue. Once the mapping issue is resolved, you can then proceed to install Inventory Visibility.
 
 
 1. In the **Environment add-ins** section, select **Install a new add-in**.
