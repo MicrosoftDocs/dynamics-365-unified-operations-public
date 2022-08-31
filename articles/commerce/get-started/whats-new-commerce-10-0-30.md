@@ -30,8 +30,9 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---------|------------------|----------------|--------------| 
-|  |  |  |  |
-
+| Insights  |  Stream point of sale (POS) operational insights events to your Application Insights account. | [Access logs in Application Insights](../dev-itpro/retail-component-events-diagnostics-troubleshooting.md#enable-diagnostic-events-in-application-insights)   |  IT Pro/developer opt-in   |
+| Support   | Chat on an e-commerce site using a Power Virtual Agents bot. | This feature will give e-commerce site users a choice to use a Power Virtual Agents chat bot for support requests. | Enabled by admin/makers for end users |
+| Support  | [Enable self-serve diagnosis capabilities for POS sign-in](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-self-serve-diagnosis-capabilities-pos-sign-in)  |  XXX  | On by default |
 
 
 ## Additional resources
