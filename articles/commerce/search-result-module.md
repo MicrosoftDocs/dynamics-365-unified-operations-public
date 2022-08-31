@@ -2,7 +2,7 @@
 title: Search results module
 description: This article covers search results modules and describes how to add them to site pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 05/18/2022
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -90,7 +90,7 @@ The search results module can be configured to incorporate inventory data and pr
 - Display out-of-stock products at the end of the product list.
 - Support inventory-based product filtering.
 
-To enable these experiences, you must first enable the **Enhanced e-Commerce product discovery to be inventory-aware** feature and then configure some prerequisite settings in Commerce headquarters. For more information, see [Inventory-aware product listing](inventory-aware-product-listing.md).
+To enable these experiences, you must first enable the **Enhanced e-Commerce product discovery to be inventory-aware** feature, and then configure some prerequisite settings in Commerce headquarters. For more information, see [Inventory-aware product listing](inventory-aware-product-listing.md).
 
 ## Additional resources
 
