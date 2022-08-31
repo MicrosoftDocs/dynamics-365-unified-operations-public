@@ -4,7 +4,7 @@
 title: Inventory-aware product listing
 description: This article describes how organizations can configure their Microsoft Dynamics 365 Commerce e-commerce website product listing pages to be inventory aware.
 author: boycez
-ms.date: 08/30/2022
+ms.date: 08/31/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -39,12 +39,11 @@ Inventory-aware product listing uses the product attributes framework. As a prer
 
 To set up product attribute for inventory availability in Commerce headquarters, follow these steps.
 
-1. Go to **Retail and Commerce \> Retail and Commerce IT \> Products and inventory**.
-1. Select **Populate product attributes with inventory level**.
-1. In the dialog box, enter the following information:
-    1. For **Product attribute and type name**, specify a custom name for the dedicated product attribute that will be created to capture inventory data.
-    1. For **Inventory availability based on** field, select a quantity type (**Available physical** or **Total available**) that the inventory level calculation should be based on.
-    1. Run the job as a **batch process**.
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Products and inventory \> Populate product attributes with inventory level**.
+1. In the **Populate product attributes with inventory level** dialog box, for **Product attribute and type name**, enter a custom name for the dedicated product attribute that will be created to capture inventory data.
+1. For **Inventory availability based on** field, select a quantity type (either **Available physical** or **Total available**) that the inventory level calculation should be based on.
+1. Set the **Batch processing** option to **Yes**.
+1. Select **OK**.
 
 > [!NOTE]
 > For a consistent inventory level calculation across the pages of your e-commerce website, be sure to select the same quantity type for both the **Inventory availability based on** setting in **Populate product attributes with inventory level** job and the **Inventory level based on** setting in Commerce site builder.
