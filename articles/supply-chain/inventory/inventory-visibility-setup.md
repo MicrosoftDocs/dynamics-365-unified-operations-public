@@ -51,7 +51,9 @@ After you register an application and add a client secret to Azure AD, follow th
 1. On the environment page, scroll down until you find the **Environment add-ins** section in the **Power Platform integration** section. There, you can find the Dataverse environment name. Confirm that the Dataverse environment name is the one that you want to use for Inventory Visibility.
 
     > [!NOTE]
-    > Currently, only Dataverse environments that were created by using LCS are supported. If your Dataverse environment was created in some other way (for example, by using the Power Apps admin center), and if it's linked to your Supply Chain Management environment, you must first contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) to fix the mapping issue. You can then install Inventory Visibility.
+    > Currently, only Dataverse environments that were created by using LCS are supported. If your Dataverse environment was created in some other way (for example, by using the PowerApps Admin Center), and if it's linked to your Supply Chain Management environment, you must first fix the mapping issue before installing Inventory Visibility Add-in. 
+    > It is possible that your Dual-Write environment is linked to a Dataverse instance while LCS is not set up for Power Platform integration. This linking mismatch can cause unexpected behavior. It is recommended that LCS environment details match what you are connected to in Dual-Write so that the same connection can be used by business events, virtual tables, and add-ins. Please refer to [_Linking Mismatch_ section of Dual-Write setup](https://docs.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup#linking-mismatch) to fix the mapping issue. Once the mapping issue is resolved, you can then proceed to install Inventory Visibility.
+
 
 1. In the **Environment add-ins** section, select **Install a new add-in**.
 
@@ -135,11 +137,11 @@ To uninstall the Inventory Visibility Add-in, follow these steps:
 1. Select **Environment** on the navigation bar
 1. Select the Dataverse environment that is bonded with your LCS environment.
 1. Go to **Solutions** and delete the following solutions in the following order:
-    1. Anchor solution for Inventory Visibility application in Dynamics 365 solutions
-    1. Dynamics 365 FNO SCM Inventory Visibility Applications Solution
-    1. Inventory Service Configuration
-    1. Inventory Visibility Standalone
-    1. Dynamics 365 FNO SCM Inventory Visibility Base Solution
+    1. Dynamics 365 Inventory Visibility - Anchor
+    1. Dynamics 365 Inventory Visibility - Application
+    1. Dynamics 365 Inventory Visibility - Controls
+    1. Dynamics 365 Inventory Visibility - Plugins
+    1. Dynamics 365 Inventory Visibility - Base
 
     After you delete these solutions, the data that is stored in tables will also be deleted.
 
