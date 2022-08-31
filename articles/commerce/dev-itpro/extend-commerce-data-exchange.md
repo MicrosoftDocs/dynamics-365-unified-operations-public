@@ -37,7 +37,7 @@ To extend Commerce Data Exchange - Real-time Service, you create a new method in
 
 ## Create and call a new extension method
 1. Start Microsoft Visual Studio.
-2. On the **Dynamics 365** menu, click **Model management > Create model**.
+2. On the **Dynamics 365** menu, select **Model management > Create model**.
 3. In the **Create model** dialog box, enter the following details.
    -   **Model name** - Contoso
    -   **Model publisher** - Contoso
@@ -45,12 +45,12 @@ To extend Commerce Data Exchange - Real-time Service, you create a new method in
    -   **Version** - 1.0.0.0
    -   **Model display name** - Contoso
 
-4. Click **Next**.
-5. In the dialog box, select **Create new package \> Next**, select **Select referenced packages**, and then check **Application Suite** and **Application Platform** in the list.
-6. Click **Next**.
-7. Click **Finish**.
+4. Select **Next**.
+5. In the dialog box, select **Create new package \> Next**, select **Select referenced packages**, and then in the list select the **Application Suite** and **Application Platform** checkboxes.
+6. Select **Next**.
+7. Select **Finish**.
 8. In the **New project** dialog box, enter **ContosoRetailTransactionServiceEx** as the project name.
-9. Click **OK**.
+9. Select **OK**.
 10. Right-click the project and select **Add > New item**. In the **Add New Item** window, select **Class** and enter the name of the class as **ContosoRetailTransactionServiceSample**.
 
     To consume the CDX method in Commerce runtime (CRT) you must add the ExtensionOf attribute to your class, such as ExtensionOf(classStr(RetailTransactionServiceEx). This addition means that the class is extending from the RetailTransactionServiceEx.
