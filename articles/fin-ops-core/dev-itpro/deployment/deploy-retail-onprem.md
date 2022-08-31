@@ -4,7 +4,7 @@
 title: Installation steps for Retail channel components in an on-premises environment
 description: This article covers the installation steps for Commerce channel components in an on-premises environment. 
 author: jashanno
-ms.date: 11/22/2021
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: dynamics-365 
 ms.service:
@@ -94,16 +94,13 @@ Before you can start installation of channel components, you must first complete
 10.  Edit the newly generated Server application and select **Reset the Secret**.
 
      > [!NOTE]
-     > It is an important security measure to run this script for each Commerce Scale Unit.  This maximizes security and minimizes the workload in case of a security breach. 
-     >
-     > It is critical to keep this secret safe. This secret should only be copied once and never stored on the system.  The Client ID and Secret generated will be used during the Commerce Scale Unit installer, so it is required to be used at a later time.  You can always reset the secret again, but it must then be updated on any Commerce Scale Unit that used the previous secret.
-
-     > [!NOTE]
-     > For the following, it is possible that steps 11 through 17 will already be complete and have values and be fully configured. If this occurs, skip those steps and continue on step 18. What is important is to have a selectable profile title (default in this case).
+     > - It is an important security measure to run this script for each Commerce Scale Unit.  This maximizes security and minimizes the workload in case of a security breach. 
+     > - It is critical to keep this secret safe. This secret should only be copied once and never stored on the system.  The Client ID and Secret generated will be used during the Commerce Scale Unit installer, so it is required to be used at a later time.  You can always reset the secret again, but it must then be updated on any Commerce Scale Unit that used the previous secret.
+     > - It is possible that steps 11 through 17 below will already have been completed, with values added and the connector fully configured. If this is the case, skip steps 11 through 17 and continue on to step 18. What is important is to have a selectable profile title ("Default" in this case).
     
 11.  Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Connector for Microsoft Dynamics AX**.
 12.  Select **Edit** on the Action pane.
-13.  In the **Profile** field, enter the value **Default**.  If needed, enter a description in the **Description** field.
+13.  In the **Profile** field, enter the value "Default".  If needed, enter a description in the **Description** field.
 14.  In the  **Web application name** field, enter **RetailCDXRealTimeService**.
 15.  In the **Protocol** field, select **https**.
 16.  In the **Common name** field, enter **AXServiceUser@contoso.com**.
