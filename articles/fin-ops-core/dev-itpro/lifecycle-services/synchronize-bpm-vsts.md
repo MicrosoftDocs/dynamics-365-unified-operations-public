@@ -62,7 +62,11 @@ To connect to a Azure DevOps project, LCS is authenticated by using a personal a
 2. Select **Azure DevOps**, and then select **Setup Azure DevOps**. This configuration is required by many LCS tools. If you've already configured LCS to connect to your Azure DevOps project, you can either skip this procedure or select **Change** to change the existing configuration.
 3. Enter the root URL for your Azure DevOps account, and the personal access token that you created earlier, and then select **Continue**.
 4. Select your Azure DevOps project.
-5. Specify the mapping between LCS/BPM items and the associated Azure DevOps work item types.
+
+[!NOTE]
+> LCS requires entering the Azure DevOps root URL in the legacy format. The legacy format is `https://ACCOUNT.visualstudio.com` and `https://contoso.visualstudio.com` is an example.
+
+6. Specify the mapping between LCS/BPM items and the associated Azure DevOps work item types.
 
     ![Work item type mappings.](./media/newbpm_BlogPost24.png)
 
