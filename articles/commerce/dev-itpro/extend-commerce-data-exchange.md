@@ -2,7 +2,7 @@
 title: Extend Commerce Data Exchange - Real-time Service
 description: This article explains how you can extend Commerce Data Exchange - Real-time service by adding extension methods to the RetailTransactionServiceEx class.
 author: josaw1
-ms.date: 11/30/2020
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -46,7 +46,7 @@ To extend Commerce Data Exchange - Real-time Service, you create a new method in
    -   **Model display name** - Contoso
 
 4. Click **Next**.
-5. In the dialog box, select **Create new package --> Next**, and then select **Select referenced packages** to check **Application Suite** and **Application Platform** in the list.
+5. In the dialog box, select **Create new package \> Next**, select **Select referenced packages**, and then check **Application Suite** and **Application Platform** in the list.
 6. Click **Next**.
 7. Click **Finish**.
 8. In the **New project** dialog box, enter **ContosoRetailTransactionServiceEx** as the project name.
