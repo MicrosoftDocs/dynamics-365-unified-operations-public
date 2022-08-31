@@ -4,7 +4,7 @@
 title: Pricing settings
 description: This article describes the various settings available in Microsoft Dynamics 365 Commerce headquarters for pricing and discount management.
 author: boycez
-ms.date: 08/30/2022
+ms.date: 08/31/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
