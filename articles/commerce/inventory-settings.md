@@ -2,7 +2,7 @@
 title: Apply inventory settings
 description: This article covers inventory settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/15/2021
+ms.date: 08/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -23,7 +23,7 @@ ms.search.industry:
 
 This article covers inventory settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 
-Inventory settings specify whether inventory should be checked before products are added to the cart. They also define inventory-related merchandising messages, such as "In stock" and "Only a few left." These settings ensure that a product can't be purchased if it's out of stock.
+Inventory settings specify whether inventory should be checked before products are added to the cart. They also define inventory-related merchandising messages, such as "In stock" and "Only a few left." These settings ensure a product can't be purchased if it's out of stock.
 
 Dynamics 365 Commerce provides estimates of on-hand availability for products. For information about how estimated on-hand availability is calculated, see [Calculate inventory availability for retail channels](calculated-inventory-retail-channels.md).
 
@@ -51,7 +51,7 @@ In Commerce, inventory settings are defined at **Site Settings \> Extensions \> 
     > [!IMPORTANT] 
     > The **Inventory settings for product list pages** setting is available as of the Commerce version 10.0.20 release. If you're updating from an older version of Commerce, you must manually update the appsettings.json file. For instructions, see [SDK and module library updates](e-commerce-extensibility/sdk-updates.md#update-the-appsettingsjson-file).
 
-- **Inventory ranges** – This setting defines the inventory ranges that message are shown for on site modules. It's applicable only if either the **Total Available** value or the **Physical Available** value is selected for the **Inventory level based on** setting. The available values are **All**, **Low and out of stock**, and **Out of stock**.
+- **Inventory ranges** – This setting defines the inventory range messages are shown on site modules. It's only applicable if either the **Total Available** value or the **Physical Available** value is selected for the **Inventory level based on** setting. The available values are **All**, **Low and out of stock**, and **Out of stock**.
 
     - When **All** is selected, messages for all inventory ranges, from in stock ("Available" message) to out of stock ("Out of stock" message), will be shown.
     - When **Low and out of stock** is selected, messages for all inventory ranges except in stock ("Available" message) will be shown.
