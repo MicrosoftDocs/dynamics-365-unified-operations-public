@@ -126,7 +126,7 @@ After you've finished building your new extension methods, the project will be d
     ```
 
 3.  From the results object, you can read the response values from Real-time Service.
-4.  The CRT framework code will check the success/failure state and provide an error message based on the values returned form the CDX methods. If required, the extension code can catch this and provide more logic.  
+4.  The CRT framework code will check the success/failure state and provide an error message based on the values returned from the CDX methods. If required, the extension code can catch this and provide more logic.  
 
     > [!NOTE]
     > The **InvokeExtensionMethodRealtimeRequest** method takes two parameters. One parameter is the Real-time Service method name, and the other is the list of parameters that should be used. The method name that is passed should be the same as the method name that you created in the **ContosoRetailTransactionServiceSample** class.
