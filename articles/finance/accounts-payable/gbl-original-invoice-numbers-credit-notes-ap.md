@@ -19,7 +19,7 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to create a reference to an original invoice when you create a credit note.
+In some countries and regions, there is a legal requirement that printed credit notes include, or reporting routinous require to indicate references to the original invoices. This article describes how to create a reference to an original invoice when you create a credit note.
 
 ## Prerequisites
 
@@ -38,6 +38,13 @@ The functionality that is described in this article applies to the following bus
 - General journal
 
 ## Define a reference to an original invoice
+
+The high-level steps in the process:
+- Create a vendor invoice.
+- Post a vendor invoice.
+- Create a vendor credit note.
+- Use Credit Invoicing fucntion to link the previously created invoice with a credit note.
+- Post the credit note.
 
 Use the following procedures to define a reference to an original invoice in the specified business document types.
 
