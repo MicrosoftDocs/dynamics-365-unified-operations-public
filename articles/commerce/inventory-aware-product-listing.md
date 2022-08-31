@@ -21,7 +21,7 @@ ms.search.validFrom: 2022-08-23
 
 This article describes how organizations can configure their Microsoft Dynamics 365 Commerce e-commerce website product listing pages (such as category landing and search results pages) to be inventory aware.
 
-Shoppers generally expect product discovery throughout an e-commerce website to be inventory aware, so that they can decide what to do if a product is out of stock. In the [Commerce module library](starter-kit-overview.md), the category and search results modules can be configured to incorporate inventory data to allow the following experiences:
+Shoppers generally expect product discovery throughout an e-commerce website to be inventory aware so they can decide what to do if a product is out of stock. The [Commerce module library](starter-kit-overview.md) category and search results modules can be configured to incorporate inventory data to provide the following experiences:
 
 - Display inventory level labels alongside products.
 - Hide out-of-stock products from the product list.
@@ -46,7 +46,7 @@ To set up product attribute for inventory availability in Commerce headquarters,
 1. Select **OK**.
 
 > [!NOTE]
-> For a consistent inventory level calculation across the pages of your e-commerce website, be sure to select the same quantity type for both the **Inventory availability based on** setting in **Populate product attributes with inventory level** job and the **Inventory level based on** setting in Commerce site builder.
+> For consistent inventory level calculation across the pages of your e-commerce website, ensure that you select the same quantity type for both the **Inventory availability based on** setting in the **Populate product attributes with inventory level** job, and the **Inventory level based on** setting in Commerce site builder.
 
 After the dedicated product attribute is created, the next step is to configure the attribute for online channel. 
 
@@ -64,7 +64,7 @@ To configure the attribute for online channel in Commerce headquarters, follow t
 
 After all of the preceding configuration steps are completed, the refiners on category and search results pages will have an inventory-based filter option, and each product tile displayed on the page will have an inventory level label displayed with it. 
 
-The category and search results page displays products at the master level and not the product variant level. The inventory level displayed alongside each product is an aggregated inventory level determined by the inventory level of all a product's variants. The inventory level of a variant is calculated based on the on-hand inventory of that variant in the default warehouse of the online channel in Commerce headquarters. The inventory level of a master product has two possible values that represent in-stock and out-of-stock states. A master product is considered to be out of stock when all of its variants are out of stock. Otherwise, the product is considered to be in stock. The actual label for the value is retrieved from the [inventory level](inventory-buffers-levels.md) definition. If no inventory level is defined, the default labels are **Available** and **Out of stock** (in English).
+The category and search results page displays products at the master level and not the product variant level. The inventory level displayed alongside each product is an aggregated inventory level determined by the inventory level of all of a product's variants. The inventory level of a variant is calculated based on the on-hand inventory of that variant in the default warehouse of the online channel in Commerce headquarters. The inventory level of a master product has two possible values that represent in-stock and out-of-stock states. A master product is considered to be out of stock when all of its variants are out of stock. Otherwise, the product is considered to be in stock. The label for the value is retrieved from the [inventory level](inventory-buffers-levels.md) definition. If no inventory level is defined, the default labels are **Available** and **Out of stock** (in English).
 
 You can configure the **Inventory settings for product list pages** setting in Commerce site builder to control how the category and search results page displays out-of-stock products. For more information, see [Apply inventory settings](inventory-settings.md).
 
