@@ -38,28 +38,35 @@ This version of the cash register functionality for France has passed an audit a
 
 An up-to-date certificate can be found on the [portal of the certification body](https://certificates.infocert.org/).
 
-## Common POS features
+### Compliance documentation
 
-To learn about POS features that are available to customers in all countries or regions, see [Commerce home page](../index.md).
+The following is the Dynamics 365 Commerce documentation related to the NF 525 certification:
 
-The following POS localization features that are available to customers in all countries or regions can now be used specifically for France:
+| Document | Description | Links |
+|----------|-------------|-------|
+| High-level design document | The documentation that describes the software product, its components, and data flows. | [Commerce home page](../index.md) and nested links, specifically [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)<p><p>[Design of the NF 525 solution](#design-of-the-nf-525-solution) |
+| Functional specification | The documentation that describes the functions of the software. | [Commerce home page](../index.md) and nested links<p><p>[France-specific POS features](#france-specific-pos-features) |
 
-- **Register additional events in the POS audit event log.** If the **Audit** option in the POS functionality profile is set to **Yes**, the following events are registered in the POS audit event log:
-
-    - Sign-in
-    - Sign-out
-    - Printing a copy of a receipt
-    - Starting offline mode
-    - Ending offline mode
-    - Applying a manager override
-    - Voiding a transaction 
-    - Voiding a transaction line
-    - Cleanup of transactions from the channel database
-    - Applying a major update of the software with compliance impact
+## Design of the NF 525 solution
 
 ## France-specific POS features
 
 The following France-specific POS features are enabled when the primary address of the legal entity that the store belongs to is in France.
+
+### Registration of audit events
+    
+If the **Audit** option in the POS functionality profile is set to **Yes**, the following events are registered in the POS audit event log:
+
+- Sign-in
+- Sign-out
+- Printing a copy of a receipt
+- Starting offline mode
+- Ending offline mode
+- Applying a manager override
+- Voiding a transaction 
+- Voiding a transaction line
+- Cleanup of transactions from the channel database
+- Applying a major update of the software with compliance impact
 
 ### Digital signing overview
 
