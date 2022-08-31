@@ -111,6 +111,9 @@ There is a cleanup batch job for document routing history that is enabled by def
 
 As part of the Document Routing Agent polling, a query is executed against this table. This query should execute quickly, but if there are a lot of records in this table, a large print job can be very slow. Ensure that this batch job is running daily, and configure this to reduce how much print history you retain. 
 
+## Excluding printers with stuck print jobs
+A setting "Enable Excluded Printers Setting" has been added to handle problematic printers and drivers. When this setting is enablled if a printer job has been sent to the printer spool and hasn't returned with "pending" state DRA will add the printer to an excluded list after the "About a stuck print jobe at" time (default 5 mintues). The "rest this printer every x minutes" (default 30 minutes) setting add back the printer after the specified time and attempt sending print jobs. 
+
 ## Frequently asked questions
 ### Does the Document Routing Agent have to be installed on each computer where a user connects by using a browser?
 
