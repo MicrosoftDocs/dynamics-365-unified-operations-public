@@ -114,7 +114,7 @@ As part of the Document Routing Agent polling, a query is executed against this 
 ## Excluding printers with stuck print jobs
 The **Enable excluded printers** setting has been added to handle problematic printers and drivers. When this setting is enabled, if a printer job has been sent to the printer spool and hasn't returned with a **Pending** status, the Document Rourting Agent will add the printer to an excluded list after the time specified in the **Abort a stuck print job at** field. (The default time is five mintues). The **Reset this printer every x minutes** field, which has a default value of 30 minutes, adds the printer back after the specified time and attempts sending print jobs. 
 
-The administrator can also see any excluded status in the network printers section in the Spooler Status column. Any excluded printer can be reset by clicking "Reset" icon in the reset column. In addition, test page can be sent to the print using the "Print Test Page" button. 
+The administrator can also see any excluded printers in the **Network printers** section in the **Spooler status** column. Any excluded printer can be reset by selecting the **Reset** icon in the **Reset** column. In addition, a test page can be sent to the printer using the **Print test page** button. 
 
 ## Frequently asked questions
 ### Does the Document Routing Agent have to be installed on each computer where a user connects by using a browser?
