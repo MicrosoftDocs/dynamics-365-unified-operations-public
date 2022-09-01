@@ -284,6 +284,7 @@ You must also specify the following settings for France. Note that you must run 
 You must enable the following features in the **Feature management** workspace:
 
 - (France) Enable additional audit events in POS
+- (France) Enable additional information in end-of-day statements in POS
 - (France) Enable exporting Z-Report to file
 
 ### Set up the legal entity
@@ -384,11 +385,7 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Reprint date** - This field prints the date of a receipt copy.
     - **Reprint time 12H** or **Reprint time 24H** - This field prints the time of a receipt copy in the selected format.
     - **Reprint digital signature** - This field prints an extract from the digital signature of a receipt copy.
-    - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued per the NF 525 certification requirements.
-
-        > [!NOTE]
-        > The certificate category and number that are assigned to [Commerce](#certification-information) are printed.
-
+    - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued to Microsoft Dynamics 365 Commerce version 10 per the NF 525 certification requirements.
     - **Text** – Add a text field, and specify the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts (for example, **Microsoft Dynamics 365 Commerce v.10**).
 
         > [!NOTE]
