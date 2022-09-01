@@ -29,9 +29,9 @@ ms.dyn365.ops.version: 2012
 
 [!include [banner](../includes/banner.md)]
 
-You start the implementation stage of a project by synchronizing a Business process modeler (BPM) library with your project in Microsoft Azure DevOps. In this way, you can review processes and associate requirements with business processes. By synchronizing a BPM library with a Azure DevOps project, you can also track the progress of your implementation project in Azure DevOps, and can associate various work items with requirements and business processes. These work items include bugs, tasks, backlog items, tests, and documents.
+You start the implementation stage of a project by synchronizing a Business process modeler (BPM) library with your project in Microsoft Azure DevOps. In this way, you can review processes and associate requirements with business processes. By synchronizing a BPM library with an Azure DevOps project, you can also track the progress of your implementation project in Azure DevOps, and can associate various work items with requirements and business processes. These work items include bugs, tasks, backlog items, tests, and documents.
 
-Currently, BPM-Azure DevOps synchronization doesn't support custom work item types or synchronizing business processes with custom work item types. If you try either of these, you will receive a warning. If you choose to ignore the warning and attempt a Azure DevOps sync with a custom template, you can avoid synchronization issues by verifying the following for the template:
+Currently, BPM-Azure DevOps synchronization doesn't support custom work item types or synchronizing business processes with custom work item types. If you try either of these, you will receive a warning. If you choose to ignore the warning and attempt an Azure DevOps sync with a custom template, you can avoid synchronization issues by verifying the following for the template:
 - Does not delete any work item type
 - Does not delete any state of a work item type
 - Does not add any required fields to a work item type
@@ -44,7 +44,7 @@ If you've already set up Azure DevOps from Microsoft Dynamics Lifecycle Services
 
 ### Create a personal access token
 
-To connect to a Azure DevOps project, LCS is authenticated by using a personal access token. Follow these steps to create a personal access token in Azure DevOps.
+To connect to an Azure DevOps project, LCS is authenticated by using a personal access token. Follow these steps to create a personal access token in Azure DevOps.
 
 1. Go to <https://www.visualstudio.com>, sign in, and find your Azure DevOps project.
 2. In the upper-right corner, hold the pointer over your name, and then, on the menu that appears, select **Security**.
@@ -72,9 +72,9 @@ To connect to a Azure DevOps project, LCS is authenticated by using a personal a
 
 6. Select **Continue**, review your changes, and then select **Save**.
 
-## Synchronize a BPM library with a Azure DevOps project
+## Synchronize a BPM library with an Azure DevOps project
 
-After you've set up the connection between the LCS project and a Azure DevOps project, you can synchronize a BPM library with the Azure DevOps project. When you synchronize a BPM library with a Azure DevOps project, a Azure DevOps work item is created for each business process line in the BPM library. In addition, the hierarchy of business processes in BPM is reflected in the hierarchy of work items in Azure DevOps. The type of work items that are created in Azure DevOps depends on the settings of your LCS project.
+After you've set up the connection between the LCS project and an Azure DevOps project, you can synchronize a BPM library with the Azure DevOps project. When you synchronize a BPM library with an Azure DevOps project, an Azure DevOps work item is created for each business process line in the BPM library. In addition, the hierarchy of business processes in BPM is reflected in the hierarchy of work items in Azure DevOps. The type of work items that are created in Azure DevOps depends on the settings of your LCS project.
 
 This synchronization is a one-way synchronization. Changes in LCS are reflected in Azure DevOps, but changes in Azure DevOps aren't reflected in LCS.
 
@@ -86,7 +86,7 @@ The following information is synchronized:
 - Countries or regions (as tags)
 - Industries (as tags)
 
-To synchronize a BPM library with a Azure DevOps project, on the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **Azure DevOps sync**.
+To synchronize a BPM library with an Azure DevOps project, on the **Business process libraries** page, on the tile for the library that you want to synchronize, select the ellipsis button (…), and then select **Azure DevOps sync**.
 
 ![Starting Azure DevOps synchronization from the tile for a library.](./media/newbpm_BlogPost25.png)
 
@@ -105,14 +105,14 @@ To turn off synchronization, on the **Business process libraries** page, select 
 
 During the project phase where you're gathering requirements, you can use the BPM library to review business processes and tasks, and to identify requirements. In BPM, you can mark business processes as reviewed to track the review process.
 
-To mark a process or one of its child processes as reviewed, select the process in BPM, and then, in the right pane, on the **Overview** tab, select **Mark as reviewed**.
+To mark a process or one of its children processes as reviewed, select the process in BPM, and then, in the right pane, on the **Overview** tab, select **Mark as reviewed**.
 
 When a business process is marked as reviewed, the **Reviewed** column is updated. This column shows the following information:
 
 - A fraction indicates how many direct child processes have been reviewed.
 - A symbol indicates how completely the process and its child processes have been reviewed:
 
-   - **Green check mark** – The process and all its child processes have been fully reviewed.
+   - **Green check mark** – The process and all its childr processes have been fully reviewed.
    - **Yellow circle** – The process and its child processes have been partially reviewed.
    - **Red dash** – The process and its child processes haven't been reviewed.
 
