@@ -2,7 +2,7 @@
 title: Install the Document Routing Agent to enable network printing
 description: This article describes how to install and configure the Document Routing Agent for deployments of Microsoft Dynamics 365 Finance.
 author: RichdiMSFT
-ms.date: 06/20/2022
+ms.date: 09/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -112,7 +112,7 @@ There is a cleanup batch job for document routing history that is enabled by def
 As part of the Document Routing Agent polling, a query is executed against this table. This query should execute quickly, but if there are a lot of records in this table, a large print job can be very slow. Ensure that this batch job is running daily, and configure this to reduce how much print history you retain. 
 
 ## Excluding printers with stuck print jobs
-A setting "Enable Excluded Printers Setting" has been added to handle problematic printers and drivers. When this setting is enablled if a printer job has been sent to the printer spool and hasn't returned with "pending" state DRA will add the printer to an excluded list after the time specified in the "Abort a stuck print jobe at" time (default 5 mintues) setting. The "reset this printer every x minutes" (default 30 minutes) setting add back the printer after the specified time and attempt sending print jobs. 
+The **Enable excluded printers** setting has been added to handle problematic printers and drivers. When this setting is enabled, if a printer job has been sent to the printer spool and hasn't returned with a **Pending** status, the Document Rourting Agent will add the printer to an excluded list after the time specified in the **Abort a stuck print job at** field. (The default time is five mintues). The **Reset this printer every x minutes** field, which has a default value of 30 minutes, adds the printer back after the specified time and attempts sending print jobs. 
 
 The administrator can also see any excluded status in the network printers section in the Spooler Status column. Any excluded printer can be reset by clicking "Reset" icon in the reset column. In addition, test page can be sent to the print using the "Print Test Page" button. 
 
