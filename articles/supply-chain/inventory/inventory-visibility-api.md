@@ -80,7 +80,7 @@ The region short name can be found in the Microsoft Dynamics Lifecycle Services 
 | South Brazil        | sbr               |
 | South Central US    | scus              |
 
-The island number is where your LCS environment is deployed on Service Fabric. There is currently no way to get this information from the user side.
+The island number is where your LCS environment is deployed on Service Fabric. There's currently no way to get this information from the user side.
 
 Microsoft has built a user interface (UI) in Power Apps so that you can get the complete endpoint of the microservice. For more information, see [Find the service endpoint](inventory-visibility-configuration.md#get-service-endpoint).
 
@@ -143,7 +143,7 @@ To get a security service token, follow these steps.
    - **HTTP header:** Include the API version. (The key is `Api-Version`, and the value is `1.0`.)
    - **Body content:** Include the JSON request that you created in the previous step.
 
-   You should receive an access token (`access_token`) in response. You must use this token as a bearer token to call the Inventory Visibility API. Here is an example.
+   You should receive an access token (`access_token`) in response. You must use this token as a bearer token to call the Inventory Visibility API. Here's an example.
 
    ```json
    {
@@ -167,7 +167,7 @@ The following table summarizes the meaning of each field in the JSON body.
 
 | Field ID | Description |
 |---|---|
-| `id` | A unique ID for the specific change event. In case of resubmission due to service failure, this ID is used to ensure the same event won't be counted twice in the system. |
+| `id` | A unique ID for the specific change event. If a resubmission occurs due to a service failure, this ID is used to ensure the same event won't be counted twice in the system. |
 | `organizationId` | The identifier of the organization that is linked to the event. This value is mapped to an organization or data area ID in Supply Chain Management. |
 | `productId` | The identifier of the product. |
 | `quantities` | The quantity that the on-hand quantity must be changed by. For example, if 10 new books are added to a shelf, this value will be `quantities:{ shelf:{ received: 10 }}`. If three books are removed from the shelf or sold, this value will be `quantities:{ shelf:{ sold: 3 }}`. |
@@ -386,7 +386,7 @@ A reservation can be made against different data source settings. To configure t
 
 When you call the reservation API, you can control the reservation validation by specifying the Boolean `ifCheckAvailForReserv` parameter in the request body. A value of `True` means that the validation is required, whereas a value of `False` means that the validation isn't required. The default value is `True`.
 
-If you want to reverse a reservation or unreserve specified inventory quantities, set the quantity to a negative value, and set the `ifCheckAvailForReserv` parameter to `False` to skip the validation. There is also a dedicated unreserve API to do the same. The difference is only in the way the two APIs are called. It is easier to reverse a specific reservation event by using `reservationId` with *unreserve* API. For more on that, see the [_Unreserve one reservation event_](#reverse-reservation-events) section.
+If you want to reverse a reservation or unreserve specified inventory quantities, set the quantity to a negative value, and set the `ifCheckAvailForReserv` parameter to `False` to skip the validation. There's also a dedicated unreserve API to do the same. The difference is only in the way the two APIs are called. It's easier to reverse a specific reservation event by using `reservationId` with the *unreserve* API. For more information, see the [_Unreserve one reservation event_](#reverse-reservation-events) section.
 
 ```txt
 Path:
@@ -439,7 +439,8 @@ The following example shows sample body content.
 }
 ```
 
-An example of a successful response
+The following example shows a successful response.
+
 ```json
 {
     "reservationId": "RESERVATION_ID",
@@ -487,13 +488,14 @@ Body:
         ...
     ]
 ```
+
 ## Reverse reservation events
 
-*Unreserve* API serves as the reverse operation for [*Reservation*](#create-reservation-events) events. It provides a way to reverse a reservation event specified by `reservationId`, or a way to decrease reservation quantity. 
+The *Unreserve* API serves as the reverse operation for [*Reservation*](#create-reservation-events) events. It provides a way to reverse a reservation event specified by `reservationId` or to decrease the reservation quantity.
 
 ### <a name="reverse-one-reservation-event"></a>Reverse one reservation event
 
-When a reservation is created, a `reservationId` will be included in the response body. The exact same `reservationId` is required to cancel the reservation. Next, fill in the same `organizationId` and `dimensions` used for the reservation API call. Last but not least, specify `OffsetQty` that represents the number of items to be freed from the previous reservation. A reservation can either be fully or partially reversed depending on specified `OffsetQty`. For example, if *100* units of items were reserved, you can specify `OffsetQty: 10` to unreserve *10* of the initial reserved amount.
+When a reservation is created, a `reservationId` will be included in the response body. You must provide the same `reservationId` to cancel the reservation, and include the same `organizationId` and `dimensions` used for the reservation API call. Finally, specify an `OffsetQty` value that represents the number of items to be freed from the previous reservation. A reservation can either be fully or partially reversed depending on the specified `OffsetQty`. For example, if *100* units of items were reserved, you can specify `OffsetQty: 10` to unreserve *10* of the initial reserved amount.
 
 ```txt
 Path:
@@ -517,7 +519,7 @@ Body:
     }
 ```
 
-The following example shows sample body content.
+The following code shows an example of body content.
 
 ```json
 {
@@ -534,7 +536,7 @@ The following example shows sample body content.
 }
 ```
 
-An exmaple of a successful response body
+The following code shows an example of a successful response body.
 
 ```json
 {
@@ -548,12 +550,11 @@ An exmaple of a successful response body
 ```
 
 > [!NOTE]
-> In the response body, when `OffsetQty` is less or equals to the reservation quantity, `processingStatus` will be "*success*" and `totalInvalidOffsetQtyByReservId` will be *0*.
+> In the response body, when `OffsetQty` is less than or equal to the reservation quantity, `processingStatus` will be "*success*" and `totalInvalidOffsetQtyByReservId` will be *0*.
 >
-> If `OffsetQty` is greater than the reserved amount, `processingStatus` will be "*partialSuccess*" and `totalInvalidOffsetQtyByReservId` will be the difference between `OffsetQty` and the reserved amount. 
+> If `OffsetQty` is greater than the reserved amount, `processingStatus` will be "*partialSuccess*" and `totalInvalidOffsetQtyByReservId` will be the difference between `OffsetQty` and the reserved amount.
 >
->E.g, if the reservation has a quantity of *10*, and `OffsetQty` were to be *12*, `totalInvalidOffsetQtyByReservId` would be *2*.
-
+>For example, if the reservation has a quantity of *10*, and `OffsetQty` has a value of *12*, `totalInvalidOffsetQtyByReservId` would be *2*.
 
 ### <a name="reverse-multiple-reservation-events"></a>Reverse multiple reservation events
 
@@ -586,7 +587,9 @@ Body:
 
 ## Query on-hand
 
-Use the _Query on-hand_ API to fetch current on-hand inventory data for your products. The API currently supports querying up to 100 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. The maximum limit is defined as `NumOf(SiteID) * NumOf(LocationID) <= 100`.
+Use the *Query on-hand* API to fetch current on-hand inventory data for your products. The API currently supports querying up to 100 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. The maximum limit is defined by the following equation:
+
+*NumOf(SiteID) \* NumOf(LocationID) <= 100*.
 
 ### <a name="query-with-post-method"></a>Query by using the post method
 
@@ -678,7 +681,7 @@ Query(Url Parameters):
     [Filters]
 ```
 
-Here is a sample get URL. This get request is exactly the same as the post sample that was provided earlier.
+Here's a sample get URL. This get request is exactly the same as the post sample that was provided earlier.
 
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
