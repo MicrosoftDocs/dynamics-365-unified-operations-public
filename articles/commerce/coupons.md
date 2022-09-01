@@ -21,9 +21,9 @@ ms.search.validFrom: 2017-06-30
 
 This article provides an overview of coupon-related capabilities in Microsoft Dynamics 365 Commerce.
 
-Coupons are codes and barcodes that are used to add discounts to transactions. Retailers distribute coupons to prospective or existing customers to help improve their brand recognition, drive conversion, retain their customer base, boost sales, and eventually increase revenue. Coupons have became one of the most popular marketing tools, and are a new norm in e-commerce sales. 
+Coupons are codes and barcodes that are used to add discounts to transactions. Retailers distribute coupons to prospective or existing customers to help improve their brand recognition, drive conversion, retain their customer base, boost sales, and eventually increase revenue. Coupons have become one of the most popular marketing tools, and are a new norm in e-commerce sales. 
 
-In Dynamics 365 Commerce, coupons are linked to discounts and essentially considered as additional validation on top of discounts. Each coupon is related to one discount, and the linked discount defines the set of products that the coupon is valid for. Price groups that are associated with a discount define the eligible conditions (such as customer groups and selling channels) for which a coupon can be used. Coupons also provide **Usage limit** and **Customer required** properties to configure optional usage restrictions. Each coupon can have multiple coupon codes and coupon barcodes, and each code can have its own effective date range and status. If the status of a code is set to **Inactive**, the code can't be used in any channel.
+In Dynamics 365 Commerce, coupons are linked to discounts and are considered as additional validation on top of discounts. Each coupon is related to one discount, and the linked discount defines the set of products that the coupon is valid for. Price groups that are associated with a discount define the eligible conditions (such as customer groups and selling channels) for which a coupon can be used. Coupons also provide **Usage limit** and **Customer required** properties to configure optional usage restrictions. Each coupon can have multiple coupon codes and coupon barcodes, and each code can have its own effective date range and status. If the status of a code is set to **Inactive**, the code can't be used in any channel.
 
 ## Set up a coupon
 
@@ -36,7 +36,7 @@ To set up a coupon in Commerce headquarters, follow these steps.
 1. Go to **Retail and Commerce \> Inventory management \> Bar codes and labels \> Bar code mask setup**.
 1. Select **+New** to create a new bar code mask of type **Coupon**.
 1. Go to **Retail and Commerce \> Inventory management \> Bar codes and labels \> Bar code setup**.
-1. Select **+New** to create a new bar code that uses the bar code mask that you just created.
+1. Select **+New** to create a new bar code that uses the bar code mask that you created.
 1. Go to **Organization administration \> Number sequences**.
 1. Create two new number sequences: 
     1. One sequence for the **Coupon number**, which is the unique identifier of coupon.
@@ -51,7 +51,7 @@ To set up a coupon, you must create the discount and the coupon separately, and 
 
 To add a coupon to a sales transaction in Commerce point of sale (POS), you can use a coupon code or coupon bar code. To use a coupon code, select the **Add coupon code** operation, and then enter the code. To use a coupon barcode, you can scan the barcode using a scanner device or enter the barcode using the numeric keyboard on the **Transaction** screen.
 
-Retailers sometimes want to give cashiers the authority to apply fixed-amount discounts to customers for appeasement or product defect reasons, but don't want to print coupon codes and distribute them to the cashiers. To achieve this, you can set the **Apply without coupon code** option on coupon to **Yes**. POS cashiers can then use the **Apply coupon** function inside the **View available discounts** operation to add a coupon to a transaction without manually entering the code. If multiple coupon codes exist for a coupon, the system automatically selects the first active code and applies it to the transaction.
+Retailers sometimes want to give cashiers the authority to apply fixed-amount discounts to customers for appeasement or product defect reasons, but don't want to print coupon codes and distribute them to the cashiers. To achieve this objective, you can set the **Apply without coupon code** option on coupon to **Yes**. POS cashiers can then use the **Apply coupon** function inside the **View available discounts** operation to add a coupon to a transaction without manually entering the code. If multiple coupon codes exist for a coupon, the system automatically selects the first active code and applies it to the transaction.
 
 To add a coupon to a call center sales order, a call center user needs to use the **Coupons** function (located at **Manage \> Coupons**) on action pane of the sales order form.
 
