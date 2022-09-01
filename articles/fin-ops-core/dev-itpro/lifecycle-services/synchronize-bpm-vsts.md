@@ -2,7 +2,7 @@
 title: Synchronize BPM libraries with Azure DevOps
 description: This article provides information about how to synchronize a BPM library in LCS with Azure DevOps.
 author: amarshall
-ms.date: 05/13/2019
+ms.date: 09/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -63,10 +63,10 @@ To connect to a Azure DevOps project, LCS is authenticated by using a personal a
 3. Enter the root URL for your Azure DevOps account, and the personal access token that you created earlier, and then select **Continue**.
 4. Select your Azure DevOps project.
 
-[!NOTE]
-> LCS requires entering the Azure DevOps root URL in the legacy format. The legacy format is `https://ACCOUNT.visualstudio.com` and `https://contoso.visualstudio.com` is an example.
+    > [!NOTE]
+    > LCS requires entering the Azure DevOps root URL in the legacy format. The legacy format is `https://ACCOUNT.visualstudio.com` and `https://contoso.visualstudio.com`.
 
-6. Specify the mapping between LCS/BPM items and the associated Azure DevOps work item types.
+5. Specify the mapping between LCS/BPM items and the associated Azure DevOps work item types.
 
     ![Work item type mappings.](./media/newbpm_BlogPost24.png)
 
