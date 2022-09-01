@@ -28,6 +28,7 @@ ms.dyn365.ops.version: 2012
 # Work with activity diagrams in Business process modeler libraries
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
 You can associate an activity diagram with a business process. Activity diagrams are used to describe how a business process or task is completed in a proposed software solution.
 

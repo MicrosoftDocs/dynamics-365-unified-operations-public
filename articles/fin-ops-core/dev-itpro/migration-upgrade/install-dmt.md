@@ -1,25 +1,15 @@
 ---
-# required metadata
-
-title: AX 2009 migration - Install the Data migration tool 
+title: AX 2009 migration - Install the Data migration tool
 description: This article explains how to set up the Data migration tool (DMT) so that you can migrate your data from Microsoft Dynamics AX 2009.
-author: kfend
+author: Peakerbl
 ms.date: 09/13/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry:
-ms.author: kfend
+ms.author: peakerbl
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
 ---

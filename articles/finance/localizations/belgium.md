@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Belgium overview
 description: This article provides an overview of functionality specific to Belgium.
-author: anasyash
+author: AdamTrukawka
 ms.date: 05/27/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-
 ms.search.region: belgium
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
 ---
 
 # Belgium overview

@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Manage the Electronic reporting (ER) configuration lifecycle
 description: This article describes how to manage the lifecycle of Electronic reporting (ER) configurations for Dynamics 365 Finance.
-author: NickSelin
-ms.date: 05/31/2022
+author: kfend
+ms.date: 07/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 58801
-ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 58801
+ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
+ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 ---
 
 # Manage the Electronic reporting (ER) configuration lifecycle
@@ -89,7 +79,7 @@ ER configurations that are designed in the development environment can be [uploa
 
 ## Data persistence consideration
 
-You can individually [import](tasks/er-import-configuration-lifecycle-services.md) different [versions](general-electronic-reporting.md#component-versioning) of an ER [configuration](general-electronic-reporting.md#Configuration) to your Finance instance. When a new version of an ER configuration is imported, the system controls the content of the draft version of this configuration:
+You can individually [import](tasks/er-import-configuration-lifecycle-services.md) different versions of an ER [configuration](general-electronic-reporting.md#Configuration) to your Finance instance. When a new version of an ER configuration is imported, the system controls the content of the draft version of this configuration:
 
 - When the imported version is lower than the highest version of this configuration in the current Finance instance, the content of the draft version of this configuration remains unchanged.
 - When the imported version is higher than any other version of this configuration in the current Finance instance, the content of the imported version is copied to the draft version of this configuration to let you continue editing the last completed version.
@@ -117,7 +107,7 @@ ER configurations can be configured as [dependent](er-download-configurations-gl
 
 ![Derived ER format configuration on the Configurations page.](./media/ger-configuration-lifecycle-img1.png)
 
-When you've finish designing the format, you can change the status of your initial [version](general-electronic-reporting.md#component-versioning) of the ER format configuration from **Draft** to **Completed**. You can then share the completed version of the ER format configuration by [publishing](../../../finance/localizations/rcs-global-repo-upload.md) it to the Global repository. Next, you can access the Global repository from any RCS or Finance cloud instance. You can then import any ER configuration version that is applicable to the application from the Global repository into that application.
+When you've finish designing the format, you can change the status of your initial version of the ER format configuration from **Draft** to **Completed**. You can then share the completed version of the ER format configuration by [publishing](../../../finance/localizations/rcs-global-repo-upload.md) it to the Global repository. Next, you can access the Global repository from any RCS or Finance cloud instance. You can then import any ER configuration version that is applicable to the application from the Global repository into that application.
 
 ![Published ER format configuration on the Configuration repository page.](./media/ger-configuration-lifecycle-img2.png)
 

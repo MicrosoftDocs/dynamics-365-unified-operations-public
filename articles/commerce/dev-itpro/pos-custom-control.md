@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Add custom controls to POS views
-description: This article explains how you can enhance the information that appears in the Dynamics 365 Commerce POS views by adding custom controls. 
-author: mugunthanm
+description: This article explains how you can enhance the information that appears in the Dynamics 365 Commerce POS views by adding custom controls.
+author: josaw1
 ms.date: 09/15/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 83892
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-09-15
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-
+ms.custom: 83892
 ---
 
 

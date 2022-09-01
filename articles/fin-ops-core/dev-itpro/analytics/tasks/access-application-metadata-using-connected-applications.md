@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: Access application metadata by using connected applications
 description: The steps in this article explain how a Regulatory configuration service user can design a new Electronic reporting model mapping by using metadata.
-author: NickSelin
+author: kfend
 ms.date: 06/29/2019
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: 
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2019-06-28 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: filatovm
+ms.search.validFrom: 2019-06-28
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: 
 ---
 # Access application metadata by using connected applications
 

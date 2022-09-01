@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Person search report
 description: This article provides information about the Personal data report for finance and operations apps.
-author: rschloma
+author: josaw1
 ms.date: 10/02/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-# ms.custom:
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: josaw
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: AX 7.0.0
-
 ---
 
 # Person search report

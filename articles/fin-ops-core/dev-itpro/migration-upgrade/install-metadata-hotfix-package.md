@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Install metadata hotfixes in development environments
 description: This article will guide you through installing an Application Metadata hotfix on your development environment.
-author: RobinARH
+author: gianugo
 ms.date: 09/18/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 79822
-ms.assetid: 9b132253-1748-4b71-b128-c4b9d3a311ae
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 79822
+ms.assetid: 9b132253-1748-4b71-b128-c4b9d3a311ae
 ---
 
 # Install metadata hotfixes in development environments

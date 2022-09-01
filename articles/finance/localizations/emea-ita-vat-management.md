@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: VAT management and reporting by tax point date (Date of VAT register)
 description: This article provides information about the changes to value-added tax (VAT) management in Italy.
-author: liza-golub
+author: AdamTrukawka
 ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: elgolu
-ms.search.validFrom: 2019-07-01 
-ms.dyn365.ops.version:  
+ms.author: atrukawk
+ms.search.validFrom: 2019-07-01
+ms.dyn365.ops.version: 
 ---
 
 # VAT management and reporting by tax point date (Date of VAT register)

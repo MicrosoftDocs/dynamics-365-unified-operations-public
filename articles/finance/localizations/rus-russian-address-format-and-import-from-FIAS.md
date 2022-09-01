@@ -1,27 +1,17 @@
 ---
-# required metadata
 title: Russian address formats
 description: This article provides information about Russian address formats and importing from the FIAS.
-author: v-nadyuz
-ms.date: 06/29/2022
+author: AdamTrukawka
+ms.date: 11/05/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Russian address formats

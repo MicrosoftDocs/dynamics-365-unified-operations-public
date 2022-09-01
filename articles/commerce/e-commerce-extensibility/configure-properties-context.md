@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Configure module properties to be shown based on context
 description: This article describes how to configure module properties so that they are shown or hidden based on the contextual values of other configuration properties.
 author: samjarawan
@@ -8,23 +6,14 @@ ms.date: 09/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-#
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.17
-
+ms.custom: 
+ms.assetid: 
 ---
 # Configure module properties to be shown based on context
 

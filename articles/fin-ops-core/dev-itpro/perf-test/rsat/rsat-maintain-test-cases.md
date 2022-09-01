@@ -5,12 +5,12 @@ author: FrankDahl
 ms.date: 04/12/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom:
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-04-12
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
 ---
 
 # Maintain test cases in Regression suite automation tool (RSAT)

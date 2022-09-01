@@ -1,16 +1,16 @@
 ---
 title: Set up the downloadable VHD for first use
 description: This article describes how to set up the downloadable VHD for first use of the Application Object Server.
-author: jorisdg
+author: gianugo
 ms.date: 02/17/2022
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom:
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2022-02-09
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 
 ---
 
 # Set up the downloadable VHD for first use

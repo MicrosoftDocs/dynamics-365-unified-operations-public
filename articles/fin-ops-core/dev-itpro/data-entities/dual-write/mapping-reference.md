@@ -1,13 +1,13 @@
 ---
 title: Dual-write mapping reference
 description: This article lists the column mappings for each dual-write mapping.
-author: tonyafehr
+author: josaw
 ms.date: 12/22/2020
 ms.topic: reference
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2020-12-22
 ms.dyn365.ops.version: AX 7.0.0
 ---

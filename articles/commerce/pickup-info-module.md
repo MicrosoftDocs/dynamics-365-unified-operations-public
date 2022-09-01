@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Pickup information module
 description: This article covers the pickup information module and describes how to add it to checkout pages in Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
@@ -8,21 +6,14 @@ ms.date: 11/06/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2020-09021
 ms.dyn365.ops.version: Release 10.0.15
-
+ms.search.industry: 
+ms.search.form: 
 ---
 
 # Pickup information module

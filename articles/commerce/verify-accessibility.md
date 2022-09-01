@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Verify page content accessibility
 description: This article describes how to verify the accessibility of page content in Microsoft Dynamics 365 Commerce.
 author: josaw1
@@ -8,21 +6,14 @@ ms.date: 01/08/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: josaw
 ms.search.validFrom: 2019-12-19
 ms.dyn365.ops.version: Release 10.0.8
-
+ms.search.industry: retail
+ms.search.form: 
 ---
 
 # Verify page content accessibility

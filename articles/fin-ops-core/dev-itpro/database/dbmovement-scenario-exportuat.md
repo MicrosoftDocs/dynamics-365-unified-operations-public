@@ -100,14 +100,10 @@ EXEC sp_addrolemember 'db_datareader', 'axmrruntimeuser'
 EXEC sp_addrolemember 'db_datawriter', 'axmrruntimeuser'
 
 CREATE USER axretaildatasyncuser FROM LOGIN axretaildatasyncuser
-EXEC sp_addrolemember 'DataSyncUsersRole', 'axretaildatasyncuser'
 
 CREATE USER axretailruntimeuser FROM LOGIN axretailruntimeuser
-EXEC sp_addrolemember 'UsersRole', 'axretailruntimeuser'
-EXEC sp_addrolemember 'ReportUsersRole', 'axretailruntimeuser'
 
 CREATE USER axdeployextuser FROM LOGIN axdeployextuser
-EXEC sp_addrolemember 'DeployExtensibilityRole', 'axdeployextuser'
 
 CREATE USER [NT AUTHORITY\NETWORK SERVICE] FROM LOGIN [NT AUTHORITY\NETWORK SERVICE]
 EXEC sp_addrolemember 'db_owner', 'NT AUTHORITY\NETWORK SERVICE'

@@ -112,7 +112,7 @@ Dataverse uses the Azure AD application that you created to call finance and ope
     - **Provider** – Set this field to **NonAAD**.
     - **Email** – Enter **dataverseintegration** or another value. (The value doesn't have to be a valid email account.)
 
-3. Assign the **CDS virtual entity application** security role to the user.
+3. Assign the **Dataverse Virtual entity integration app** security role to the user.
 4. Remove all other roles, including **System user**.
 5. Go to **System Administration** \> **Setup** \> **Azure Active Directory applications** to register Dataverse. 
 6. Add a row, and then, in the **Client ID** field, enter the **Application (client) ID** value that you made a note of earlier.
@@ -203,17 +203,11 @@ For more information, see [Enable Microsoft Dataverse virtual entities](../../fi
 
 ## <a name='set-up'></a>Set up the connected application for Tax Calculation
 
-1. In RCS, open the **Feature management** workspace, and enable the following features:
-
-    - Electronic reporting Dataverse datasources support
-    - Tax Service Dataverse datasources support
-    - Globalization features
-
-2. Go to **Electronic reporting**, and then, in the **Related links** section, select **Connected applications**.
+1. Go to **Electronic reporting**, and then, in the **Related links** section, select **Connected applications**.
 
     [![Connected applications.](./media/tcs-dataverse-master-data-lookup-12.png)](./media/tcs-dataverse-master-data-lookup-12.png)
 
-3. Select **New** to add a record, and enter the following information.
+2. Select **New** to add a record, and enter the following information.
 
     - **Name** – Enter a name.
     - **Type** – Select **Dataverse**.
@@ -221,12 +215,18 @@ For more information, see [Enable Microsoft Dataverse virtual entities](../../fi
     - **Tenant** – Enter your tenant.
     - **Custom URL** – Enter your Dataverse URL, and append **/api/data/v9.1** to it.
 
-4. Select **Check connection**, and then, in the dialog box that appears, select **Click here to connect to selected remote application**.
+3. Select **Check connection**, and then, in the dialog box, select **Click here to connect to selected remote application**.
 
     [![Checking the connection.](./media/tcs-dataverse-master-data-lookup-13.png)](./media/tcs-dataverse-master-data-lookup-13.png)
-5. Make sure that you receive a "Success!" message that indicates that the connection was successfully established.
+4. Make sure that you receive a "Success!" message that indicates that the connection was successfully established.
 
     [![Success message.](./media/tcs-dataverse-master-data-lookup-14.png)](./media/tcs-dataverse-master-data-lookup-14.png)
+    
+5. In RCS, open the **Feature management** workspace, and enable the following features:
+
+    - Globalization features
+    - Electronic reporting Dataverse datasources support
+    - Tax Service Dataverse datasources support
 
 ## <a name='import'></a>Import and set up the Dataverse Model Mapping configuration
 

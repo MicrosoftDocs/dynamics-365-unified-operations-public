@@ -1,29 +1,21 @@
 ---
-# required metadata
-
 title: Configure and install Commerce Scale Unit (self-hosted)
 description: This article explains how to use self-service to configure and install Commerce Scale Unit (self-hosted) on computers in a brick-and-mortar store.
 author: jashanno
-ms.date: 11/22/2021
+ms.date: 08/31/2022
 ms.topic: article
-ms.prod:
-ms.technology:
-# optional metadata
-
-ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, RetailChannelProfile, RetailSharedParameters, RetailStoreTable
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: IT Pro
-# ms.devlang:
-ms.reviewer: tfehr
-# ms.tgt_pltfrm:
-ms.custom: 219744
-ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 219744
+ms.assetid: 5e28948f-d40a-40e8-843b-8c2747916546
+ms.search.industry: Retail
+ms.search.form: SysAADClientTable, RetailCDXDataStore, RetailCDXDataGroup, RetailChannelProfile, RetailSharedParameters, RetailStoreTable
 ---
 
 # Configure and install Commerce Scale Unit (self-hosted)
@@ -156,6 +148,7 @@ To create a functioning Commerce Scale Unit, complete the procedures in all sect
 ### Run the Commerce Scale Unit installer
 
 > [!NOTE]
+> - If the CSU (Self-hosted) installer is being run to update a current installation, verify that the version is the same or newer. If an earlier version is required to be installed for any reason, it is critical to uninstall the current CSU (Self-hosted) and delete the CSU SQL database. If you do not delete the database in the scenario where an earlier version is required, the database schema and data will be of a newer version than the CSU installation and errors and issues will occur.
 > - Do not install a CSU on a developer environment, which typically already has a configured Retail Server and Channel database.
 > - Before running the Commerce Scale Unit (self-hosted) installer, verify that the configuration file is named the same as the installer executable. This would look like **ExecutableInstallerName.xml** and put both files in the same folder. Alternatively, there is a command line delimiter to specify the configuration file manually.
 > - If you plan to install and use Retail Cloud POS, you must initialize the configuration the first time that you run the installer, as described in the following procedure.

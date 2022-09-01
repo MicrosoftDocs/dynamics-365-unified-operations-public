@@ -1,5 +1,4 @@
 ---
-# required metadata
 title: Ratings and reviews modules
 description: This article covers ratings and reviews modules used on product details pages in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
@@ -7,21 +6,14 @@ ms.date: 09/15/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: gmohanv
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: Release 10.0.6
+ms.custom: 
+ms.assetid: 
 ---
 
 # Ratings and reviews modules

@@ -62,6 +62,8 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/commerce
         - name: Get notified about service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/commerce
+        - name: Proactive quality updates
+          href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
         - name: Data task automation
           href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
         - name: Delivering ISV solutions using One Version
@@ -464,6 +466,8 @@
               items:
               - name: Support for external gift cards
                 href: dev-itpro/gift-card.md
+              - name: Cross-company data sharing for gift cards
+                href: dev-itpro/data-sharing-gift-cards.md
           - name: RSAT
             items:
             - name: Test recorder and Regression suite automation tool for Cloud POS
@@ -702,8 +706,8 @@
           href: prevent-discounts.md
         - name: Tender-based discounts 
           href: tender_based_discounts.md
-        - name: Shipping discount overview 
-          href: retail-shipping-discount.md
+        - name: Shipping discount 
+          href: shipping-discount.md
         - name: Configure gift with purchase promotions
           href: gift-with-purchase.md
         - name: Set up coupons  
@@ -718,6 +722,10 @@
           href: tasks/category-pricing-rules-trade-agreements.md
         - name: Delay exact price and discount calculation
           href: delayed-price-calculation.md
+        - name: Pricing functions in POS
+          href: pos-pricing-functions.md
+        - name: Commerce pricing APIs
+          href: pricing-apis.md
       - name: Recommendations 
         items:
         - name: Product recommendations overview 
@@ -1258,6 +1266,10 @@
             href: product-collection-module-overview.md
           - name: Quick view module
             href: quick-view-module.md
+        - name: Product comparison modules
+          items:
+          - name: Product comparison modules
+            href: product-comparison-modules.md
         - name: Navigation modules
           items:
           - name: Breadcrumb module
@@ -1278,6 +1290,10 @@
           items:
           - name: Cookie consent module
             href: cookie-consent-module.md
+        - name: Chat modules
+          items:
+          - name: Commerce chat module
+            href: commerce-chat-module.md
       - name: Search
         items:
         - name: Default category landing page and search results page overview
@@ -1410,8 +1426,6 @@
         items:
         - name: Fiscal registration service integration sample for Austria
           href: localizations/emea-aut-fi-sample.md
-        - name: Deployment guidelines for cash registers for Austria
-          href: localizations/emea-aut-deployment.md   
         - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
           href: localizations/emea-aut-fi-sample-sdk.md
       - name: Brazil
@@ -1468,7 +1482,7 @@
           href: localizations/emea-fra-fi-deployment.md
         - name: Fiscal archive and data integrity verification
           href: localizations/emea-fra-fiscal-archive.md
-        - name: Migrating from legacy functionality for France
+        - name: Migrate from legacy functionality for France
           href: localizations/emea-fra-fi-migration.md
         - name: Deployment guidelines for cash registers (legacy)
           href: localizations/emea-fra-deployment.md
@@ -1508,6 +1522,8 @@
           href: localizations/emea-nor-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/emea-nor-fi-deployment.md
+        - name: Migrate from legacy functionality for Norway
+          href: localizations/emea-nor-fi-migration.md
         - name: Deployment guidelines for cash registers (legacy)
           href: localizations/emea-nor-loc-deployment-guidelines.md
       - name: Russia
@@ -1770,6 +1786,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/commerce
             - name: OrderBy
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/commerce
+            - name: Repeat
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/commerce
             - name: Reverse
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/commerce
             - name: Split

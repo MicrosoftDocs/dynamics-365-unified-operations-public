@@ -4,18 +4,21 @@
 title: Deployment guidelines for cash registers for Norway (legacy)
 description: This article is a deployment guide that shows how to enable the Microsoft Dynamics 365 Commerce localization for Norway.
 author: EvgenyPopovMBS
-ms.date: 12/20/2021
+ms.date: 08/23/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 2018-2-28
 
 ---
 # Deployment guidelines for cash registers for Norway (legacy)
 
 [!include [banner](../includes/banner.md)]
+
+> [!WARNING]
+> This sample fiscal integration functionality doesn't take advantage of the [fiscal integration framework](./fiscal-integration-for-retail-channel.md) and will be deprecated in later updates. You should instead use the [functionality that is based on the fiscal integration framework](./emea-nor-fi-deployment.md).
 
 This article is a deployment guide that shows how to enable the Microsoft Dynamics 365 Commerce localization for Norway. The localization consists of several extensions of Commerce components. For example, the extensions let you print custom fields on receipts, register additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally sign sales transactions, and print X and Z reports in local formats. For more information about the localization for Norway, see [Cash register functionality for Norway](./emea-nor-cash-registers.md).
 
@@ -51,9 +54,9 @@ To apply this functionality in the CRT extension, follow these steps.
 
 5. Build the CRT extension project.
 
-6. Copy the output class library and paste it into ...\RetailServer\webroot\bin\Ext for manual testing.
+6. Copy the output class library and paste it into ...\RetailServer\webroot\bin\Ext for manual testing.
 
-7. In the CommerceRuntime.Ext.config file, update the extension composition section with the custom library information.
+7. In the CommerceRuntime.Ext.config file, update the extension composition section with the custom library information.
 
 ## Development environment
 

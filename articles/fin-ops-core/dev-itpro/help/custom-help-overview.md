@@ -1,30 +1,17 @@
 ---
-# required metadata
-
 title: Custom Help overview
-description: This article explains how you can extend the Microsoft Help system so that it reflects your solution and then connect your content to the Help pane. 
+description: This article explains how you can extend the Microsoft Help system so that it reflects your solution and then connect your content to the Help pane.
 author: edupont04
 ms.date: 05/11/2020
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-
-# ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: edupont
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Operations
-
 ---
 
 # Custom Help overview

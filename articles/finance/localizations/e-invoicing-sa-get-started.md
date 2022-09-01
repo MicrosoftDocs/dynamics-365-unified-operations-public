@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Get started with Electronic invoicing for Saudi Arabia
 description: This article provides information that will help you get started with Electronic invoicing for Saudi Arabia.
-author: ikondo
+author: mrolecki
 ms.date: 06/30/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.assetid: 
 ms.search.region: Saudi Arabia
-# ms.search.industry: 
-ms.custom: intro-internal
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2021-10-15
 ms.dyn365.ops.version: AX 10.0.21
-
+ms.custom: intro-internal
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Get started with Electronic invoicing for Saudi Arabia
@@ -126,7 +116,7 @@ Some parameters must be configured directly in Finance. When tax invoices are cl
 
 For more information about business data configuration and processing in Finance, see [Customer electronic invoices in Saudi Arabia](emea-sau-e-invoices.md).
 
-# <a id="onboarding"></a>Electronic invoicing onboarding in Saudi Arabia
+## <a id="onboarding"></a>Electronic invoicing onboarding in Saudi Arabia
 Onboarding is mandatory for all taxpayers who are subject to electronic invoicing in Saudi Arabia. Taxpayers and their software for e-invoicing must be onboarded ZATCA. As a result of the onboarding process, taxpayers obtain CSIDs, which are required for integration with the electronic invoicing portal that is managed by ZATCA and for further submission of electronic invoices.
 
 Onboarding is an essential part of the Electronic invoicing configuration. For more information about the onboarding process, see [Electronic invoicing onboarding in Saudi Arabia](e-invoicing-sa-onboarding.md).

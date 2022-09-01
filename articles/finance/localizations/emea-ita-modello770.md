@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Modello 770 report
 description: This article provides information about the Modello 770 report for Italy.
-author: ilkond
+author: mrolecki
 ms.date: 07/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: Taxreport770Table_IT
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
-
+ms.search.form: Taxreport770Table_IT
 ---
 
 # Modello 770 report

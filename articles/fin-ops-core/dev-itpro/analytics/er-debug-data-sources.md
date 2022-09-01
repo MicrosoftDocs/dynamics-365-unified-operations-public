@@ -1,29 +1,20 @@
 ---
-# required metadata
 title: Debug data sources of an executed ER format to analyze data flow and transformation
 description: This article explains how you can debug the data sources of an executed ER format to better understand the configured data flow and transformation.
-author: NickSelin
+author: kfend
 ms.date: 04/22/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, EROperationDesigner
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: Release 10.0.11
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: ERSolutionTable, EROperationDesigner
 ---
 
 # Debug data sources of an executed ER format to analyze data flow and transformation

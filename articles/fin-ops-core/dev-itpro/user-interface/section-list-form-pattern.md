@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Form Part Section List form patterns
 description: This article provides information about the Form Part Section List form patterns, which were developed to show filtered lists inside workspaces.
 author: jasongre
@@ -8,23 +6,14 @@ ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 29211
-ms.assetid: 05e02e22-6b71-45f2-bacd-5e3f8ea898fb
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 29211
+ms.assetid: 05e02e22-6b71-45f2-bacd-5e3f8ea898fb
 ---
 
 # Form Part Section List form patterns

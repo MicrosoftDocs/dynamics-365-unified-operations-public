@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Support for multiple VAT registration numbers in Immediate Supply of Information on VAT (SII) of Spain
 description: This article describes the scope of the Immediate Supply of Information on VAT (Suministro Inmediato de Información del IVA, SII) feature of Spain to support multiple VAT registration numbers.
-author: liza-golub
+author: AdamTrukawka
 ms.date: 10/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Spain
-# ms.search.industry: 
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: 2021-01-11
 ms.dyn365.ops.version: 10.0.24
-
 ---
 
 # Support for multiple VAT registration numbers in Immediate Supply of Information on VAT (SII) of Spain

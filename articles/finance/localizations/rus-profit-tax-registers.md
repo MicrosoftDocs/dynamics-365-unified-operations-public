@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Create tax registers and the tax register journal
-description: This article provides information about creating tax registers and the tax register journal.  
-author: akroshkina
+description: This article provides information about creating tax registers and the tax register journal.
+author: AdamTrukawka
 ms.date: 08/05/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
+ms.search.region: Russia
+ms.author: atrukawk
+ms.search.validFrom: 
+ms.dyn365.ops.version: 
 ms.custom: 
 ms.assetid: 
-ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
-ms.dyn365.ops.version: 
-ms.search.validFrom: 
-
+ms.search.form: 
 ---
 
 # Create tax registers and the tax register journal

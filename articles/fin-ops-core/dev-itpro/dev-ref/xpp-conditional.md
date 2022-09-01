@@ -1,12 +1,12 @@
 ---
 title: X++ conditional statements
 description: This article describes conditional statements in X++.
-author: RobinARH
+author: josaw1
 ms.date: 06/17/2019
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---

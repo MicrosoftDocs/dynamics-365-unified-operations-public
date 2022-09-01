@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Customer information management for Russia
 description: This article describes scenarios for handling customer information in Microsoft Dynamics 365 Commerce point of sale (POS) for Russia.
 author: EvgenyPopovMBS
 ms.date: 09/21/2021
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-ms.search.form: RetailFunctionalityProfile, RetailParameters
+ms.prod: 
+ms.technology: 
 audience: Application User
-# ms.devlang:
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm:
-# ms.custom:
+ms.reviewer: v-chgriffin
 ms.search.region: Russia
-ms.search.industry: Retail
-ms.author: epopov
-ms.search.validFrom: 2021-8-2
+ms.author: josaw
+ms.search.validFrom: 2021-08-02
 ms.dyn365.ops.version: 10.0.21
-
+ms.search.industry: Retail
+ms.search.form: RetailFunctionalityProfile, RetailParameters
 ---
 # Customer information management for Russia
 

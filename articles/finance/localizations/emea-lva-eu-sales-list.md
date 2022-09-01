@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: EU Sales list for Latvia
 description: This article provides information about the European Union (EU) sales list report for Latvia.
-author: AKroshkina
+author: AdamTrukawka
 ms.date: 05/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-#ms.search.form:
 audience: IT Pro, Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.suite: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: 
-# ms.search.industry: 
-ms.author: anasyash
-ms.dyn365.ops.version: 
+ms.author: atrukawk
 ms.search.validFrom: 
+ms.dyn365.ops.version: 
 ---
 
 # EU Sales list for Latvia
