@@ -34,7 +34,7 @@ This version of the cash register functionality for France has passed an audit a
 - **Microsoft Dynamics 365 Commerce, version 10**:
 
     - Certificate category: B
-    - Certificate number: 0203
+    - Certificate number: 0498
 
 An up-to-date certificate can be found on the [portal of the certification body](https://certificates.infocert.org/).
 
