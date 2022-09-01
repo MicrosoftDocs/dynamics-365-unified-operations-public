@@ -84,7 +84,7 @@ You must now set the interval at which the Raspberry Pi IoT simulator should sen
 
 1. In the code editor of the Raspberry Pi IoT simulator, find the following function invocation.
 
-    `setInterval(sendMessage, **2000**);`
+    `setInterval(sendMessage, 2000);`
 
 2. By default, the Raspberry Pi IoT simulator sends a sensor signal every 2,000 milliseconds (two seconds). You can adjust the value as you require.
 
