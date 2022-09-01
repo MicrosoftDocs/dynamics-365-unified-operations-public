@@ -39,18 +39,17 @@ The functionality that is described in this article applies to the following bus
 
 ## Define a reference to an original invoice
 
-The high-level steps in the process:
-- Create a vendor invoice.
-- Post a vendor invoice.
-- Create a vendor credit note.
-- Use Credit Invoicing fucntion to link the previously created invoice with a credit note.
-- Post the credit note.
+Defining a reference to an original invoice includes the following high-level steps:
+1. Create and post a vendor invoice.
+2. Create a vendor credit note.
+3. Use the Credit Invoicing fucntion to link the invoice with a credit note.
+4. Post the credit note.
 
 Use the following procedures to define a reference to an original invoice in the specified business document types.
 
 ### Vendor credit note (purchase order)
 
-1. Go to **Accounts payable** \> **Purchase orders** \> **All purchase orders**.
+1. Go to **Accounts payable** > **Purchase orders** > **All purchase orders**.
 2. Create a new purchase order, or use existing one to create a credit note.
 3. On the Action Pane, on the **Invoice** tab, in the **Introduce** group, select **Credit invoicing**.
 4. Enter the reason for the correction and the reference to the original invoice.
