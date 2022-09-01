@@ -77,7 +77,7 @@ The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps t
 5.  In the **Azure DevOps site URL** field, enter the URL of the Azure DevOps project that you created in the previous section.
 
     > [!NOTE]
-    > LCS requires entering the Azure DevOps root URL in the legacy format. The legacy format is 'https://ACCOUNT.visualstudio.com' and 'https://contoso.visualstudio.com'.
+    > LCS requires entering the Azure DevOps root URL in the legacy format. The legacy format is `https://ACCOUNT.visualstudio.com` and `https://contoso.visualstudio.com`.
 
 6.  In the **Personal access token** field, enter the personal access token that you created in the previous section. 
 
