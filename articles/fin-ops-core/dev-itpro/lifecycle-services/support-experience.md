@@ -2,7 +2,7 @@
 title: Set up technical support for finance and operations apps
 description: This article provides information about the support experience for cloud and on-premises deployments.
 author: sericks007
-ms.date: 10/13/2020
+ms.date: 09/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -76,10 +76,10 @@ The **Support** tile in a Lifecycle Services (LCS) project uses Azure DevOps t
 4.  Click **Setup Azure DevOps**.
 5.  In the **Azure DevOps site URL** field, enter the URL of the Azure DevOps project that you created in the previous section.
 
-> [!NOTE]
-> LCS requires entering the Azure DevOps root URL in the legacy format. The legacy format is 'https://ACCOUNT.visualstudio.com' and 'https://contoso.visualstudio.com' is an example.
+    > [!NOTE]
+    > LCS requires entering the Azure DevOps root URL in the legacy format. The legacy format is 'https://ACCOUNT.visualstudio.com' and 'https://contoso.visualstudio.com'.
 
-7.  In the **Personal access token** field, enter the personal access token that you created in the previous section. 
+6.  In the **Personal access token** field, enter the personal access token that you created in the previous section. 
 
     [![Enter the personal access token that you created in the previous section.](./media/lcs-project-settings-vso-setup-1.png)](./media/lcs-project-settings-vso-setup-1.png)
 
