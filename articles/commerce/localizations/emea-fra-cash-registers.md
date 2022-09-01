@@ -38,16 +38,18 @@ This version of the cash register functionality for France has passed an audit a
 
 An up-to-date certificate can be found on the [portal of the certification body](https://certificates.infocert.org/).
 
-### Compliance documentation
+### NF 525 compliance documentation
 
 The following is the Dynamics 365 Commerce documentation related to the NF 525 certification:
 
 | Document | Description | Links |
 |----------|-------------|-------|
-| High-level design document | The documentation that describes the software product, its components, and data flows. | [Commerce home page](../index.md) and nested links |
+| High-level design document | The documentation that describes the software product, its components, and data flows. | [Commerce home page](../index.md) and nested links<p><p>[Dynamics 365 Commerce architecture overview](../commerce-architecture.md) |
 | Functional specification | The documentation that describes the functions of the software. | [Commerce home page](../index.md) and nested links<p><p>[France-specific POS features](#france-specific-pos-features) |
 | Technical architecture document | The documentation that describes the technical design of the product. | [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)<p><p>[Design of the NF 525 solution](#design-of-the-nf-525-solution) |
-| Organizational document | The documentation that describes the process that is established to control the software product compliance | [Globalization resources](../../fin-ops-core/dev-itpro/lcs-solutions/country-region.md) | 
+| Organizational document | The documentation that describes the process that is established to control the software product compliance | [Globalization resources](../../fin-ops-core/dev-itpro/lcs-solutions/country-region.md) |
+| Maintenance documentation | The documentation that describes the implementation and maintenance of the software solution | [Service description](../../fin-ops-core/fin-ops/get-started/service-description.md)<p><p>[Before you buy](../../fin-ops-core/fin-ops/get-started/before-you-buy.md)<p><p>[Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/grid/Microsoft-Dynamics-365)<p><p>[Implementation lifecycle management home page](../../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md) |
+| Versioning strategy | The documentation that describes the versioning approach and the version management procedure for the software product | |
 
 ## Design of the NF 525 solution
 
