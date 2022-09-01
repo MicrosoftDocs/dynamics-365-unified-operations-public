@@ -25,11 +25,7 @@ The functionality that is described here should be used only in cases where the 
 
 Before you can use the features described in this article, they must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the features and turn them on. In the **Feature management** workspace, the features are listed by using the following names:
 
-- *Manual sales line picking service for admin or similar trusted users*
-
-    > [!NOTE]
-    > As of Microsoft Dynamics 365 Supply Chain Management version 10.0.25, this feature is mandatory and can't be turned off.
-
+- *Manual sales line picking service for admin or similar trusted users*<br>(As of Supply Chain Management version 10.0.25, this feature is mandatory and can't be turned off.)
 - *Manual transfer line picking service for admin or similar trusted users*
 
 ## Correct transactions related to sales or transfer order lines
