@@ -116,7 +116,7 @@ When a business process is marked as reviewed, the **Reviewed** column is update
    - **Yellow circle** – The process and its child processes have been partially reviewed.
    - **Red dash** – The process and its child processes haven't been reviewed.
 
-        ![Example of a Review column.](./media/newbpm_BlogPost28.png)
+       ![Example of a Review column.](./media/newbpm_BlogPost28.png)
 
 While you're reviewing a business process that is connected to Azure DevOps, you can add a requirement directly to your Azure DevOps project.
 
