@@ -33,7 +33,7 @@ Before you can configure detours for steps in mobile device menu items, you must
 1. Turn on the following features, which provide the functionality described in this article:
     - *Warehouse management app detours*
     - *Multi-level detours for the Warehouse Management mobile app*
-1. Update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
+1. If the *Warehouse management app detours* feature wasn't already turned on, update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 1. Repeat the previous step for each legal entity (company) where you use the Warehouse Management mobile app.
 
 ## Configure a detour from a menu-specific override
