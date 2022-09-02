@@ -30,7 +30,6 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-| Inventory and logistics | [Track soft reserved quantities within allocations](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/track-soft-reserved-quantities-within-allocations) | Coming soon | Enabled by default |
 | Manufacturing | [Monitor equipment with Sensor Data Intelligence](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/monitor-equipment-sensor-data-intelligence) | [Sensor Data Intelligence home page](../sensor-data-intelligence/sdi-home-page.md) | Feature management:<br>*(Preview) Sensor Data Intelligence* |
 | Warehouse management | Multi-level detours for the Warehouse Management mobile app <!-- KFM: Add link when RP updates --> | [Configure detours for steps in mobile device menu items](../warehousing/warehouse-app-detours.md) | Feature management:<br>*Multi-level detours for the Warehouse Management mobile app* |
 
