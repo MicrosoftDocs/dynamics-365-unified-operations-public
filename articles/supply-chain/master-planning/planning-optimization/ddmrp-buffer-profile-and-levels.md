@@ -72,12 +72,13 @@ In the previous illustration, if today is the morning of June 11, the ADU for th
 
 - **ADU (past)** = (29 + 11 + 23) ÷ 3 = 21
 
-The transactions that are taken into account for the average daily usage (past) are any which are:
-- diminishing the quantity of the item (in inventtrans table qty <0)
-- status is On order, Reserved Ordered, Reserved Physical, Picked, Deducted or Sold
-- date must be within the chosen backwared period length (average daily usage past period)
-- transaction is not Warehouse work or quarantine, sales quotation or statement (WHSWork, WHSQuarantine, SalesQuotation or Statement)
-- It is not a transfer journal within the same coverage dimension
+The following transactions are taken into account for the average daily usage (past) calculation:
+
+- Transactions that diminish the quantity of the item (in the `inventtrans` table where quantity is less than zero)
+- Transactions with a status of *On order*, *Reserved ordered*, *Reserved physical*, *Picked*, *Deducted*, or *Sold*
+- Transactions dated within the chosen backwards period (the average daily usage past period)
+- Transactions other than warehouse work, quarantine, sales quotations, or statements (`WHSWork`, `WHSQuarantine`, `SalesQuotation`, or `Statement`)
+- Transactions other than transfer journals that are within the same coverage dimension
 
 ### Average daily usage (forward)
 
@@ -89,9 +90,10 @@ In the previous illustration, if today is the morning of June 11, the ADU for th
 
 - **ADU (forward)** = (18 + 18 + 29) ÷ 3 = 21.66
 
-The transactions that are taken into account for the average daily usage (forward) calculation are:
-- forecast entries for the item, with the forecast being the selected on the maste plan
-- entries whose date is within the chosen forward period (average daily usage forward perid)
+The following transactions are taken into account for the average daily usage (forward) calculation:
+
+- Forecast transactions for the item where the forecast is selected on the master plan
+- Transactions dated within the chosen forward period (the average daily usage forward period)
 
 ### Average daily usage (blended)
 
