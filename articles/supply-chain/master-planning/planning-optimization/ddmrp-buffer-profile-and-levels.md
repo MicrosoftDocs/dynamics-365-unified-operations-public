@@ -72,6 +72,13 @@ In the previous illustration, if today is the morning of June 11, the ADU for th
 
 - **ADU (past)** = (29 + 11 + 23) ÷ 3 = 21
 
+The transactions that are taken into account for the average daily usage (past) are any which are:
+- diminishing the quantity of the item (in inventtrans table qty <0)
+- status is On order, Reserved Ordered, Reserved Physical, Picked, Deducted or Sold
+- date must be within the chosen backwared period length (average daily usage past period)
+- transaction is not Warehouse work or quarantine, sales quotation or statement (WHSWork, WHSQuarantine, SalesQuotation or Statement)
+- It is not a transfer journal within the same coverage dimension
+
 ### Average daily usage (forward)
 
 For a new product, you might not have any past usage data. Therefore, you might instead use the projected ADU going forward (for example, based on forecasted demand). The following illustration shows how this approach works when the calculation looks three days into the future (including today).
@@ -81,6 +88,10 @@ For a new product, you might not have any past usage data. Therefore, you might 
 In the previous illustration, if today is the morning of June 11, the ADU for the next three days (June 11, 12, and 13) is 21.66.
 
 - **ADU (forward)** = (18 + 18 + 29) ÷ 3 = 21.66
+
+The transactions that are taken into account for the average daily usage (forward) calculation are:
+- forecast entries for the item, with the forecast being the selected on the maste plan
+- entries whose date is within the chosen forward period (average daily usage forward perid)
 
 ### Average daily usage (blended)
 
