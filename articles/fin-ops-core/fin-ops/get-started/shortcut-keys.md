@@ -4,7 +4,7 @@
 title: Keyboard shortcuts
 description: This article provides an overview of the shortcut key combinations that you can use when you're working with finance and operations apps.
 author: jasongre
-ms.date: 08/26/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Keyboard shortcuts
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -93,6 +94,8 @@ Users can discover currently available shortcuts directly from the user interfac
 | Open the Filter pane (or switch focus between the Filter pane and the main form if the Filter pane is already open) | Alt+M,F or Ctrl+F3       |
 | Close the Filter pane (with focus in the Filter pane)                                                               | Esc                      |
 | Open advanced filtering/sort                                                                                        | Ctrl+Shift+F3            |
+| Apply the Quick Filter (when focus is in Quick Filter)                                                              | Enter                    |
+| Apply the grid filter (when focus is in the filter field of the column header)                                             | Enter                    |
 
 ## Form shortcuts
 
@@ -166,9 +169,10 @@ Users can discover currently available shortcuts directly from the user interfac
 | To do this                                                                   | Press                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Open the hyperlink                                                           | Ctrl+Enter                    |
+| Open the hyperlink (when focus is on a read-only control)<br><br>**Note:** This shortcut only applies when the **Standardize keyboard interaction for combo box and lookup controls** feature is enabled                   | Enter    |
 | Enter the session date in a date field                                       | D                             |
 | Enter the current date in a date field                                       | T                             |
-| Open lookup, combo box, date picker, drop dialog box                         | Alt+Down arrow                |
+| Open lookup, combo box, date picker, drop dialog box                         | Alt+Down arrow<br><br>Enter (when the **Standardize keyboard interaction for combo box and lookup controls** feature is enabled)                |
 | Close lookup, combo box, date picker, drop dialog box                        | Esc                           |
 | Move focus into a lookup (when the lookup is already open)                   | Alt+Down arrow                |
 | Open the control's enhanced preview                                          | Alt+Up arrow                  |
