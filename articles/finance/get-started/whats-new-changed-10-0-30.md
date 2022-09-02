@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.30 (November 2022)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.30 preview release.
 author: kfend
-ms.date: 08/29/2022
+ms.date: 09/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -47,7 +47,6 @@ The following table lists the features that are included in this release. We mig
 |----|----|----|----|
 | Accounts receivable  | Free text invoice posting improvement for totals calculation | We’ve added performance improvements to the free text invoice posting to allow it to run more efficiently. This enhancement works by saving calculated totals, instead of recalculating the totals multiple times during the posting process. This will shorten the posting process.  | Feature management |
 | General ledger  | Enhanced performance for source document accounting framework  | We've added performance improvements to batch postings of source documents in order to run more efficiently. This feature initially will only affect free text invoice batch posting with more source documents to be supported in future releases. When this feature is enabled, batch posting is split into smaller units of work preventing system degradation and lessening the chance of issues due to database disconnections. | Feature management |
-|    |    |    |    | 
 
 
 ## Feature enhancements included in this release
@@ -60,9 +59,7 @@ The following table lists the feature enhancements that are included in this rel
 | Globalization | ([ER](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting.md)) Embed images in Excel documents | ER configurations can be designed to produce business documents in Excel format based on an Excel template that may contain an embedded image with a custom scaling and aspect ratio. This image is used at runtime as a placeholder of a picture in a generated business document. This improvement lets you [consider](../../fin-ops-core/dev-itpro/analytics/er-fillable-excel.md#cell-component) the actual scaling and aspect ratio of using at runtime images when they are placed to a generated document. | 
 | Globalization | (ER) Inspect configured components | You can [validate](../../fin-ops-core/dev-itpro/analytics/er-components-inspections.md) every configured ER format and model mapping component at design time. During this validation, a consistency check runs to help prevent runtime issues that might occur. This improvement lets you detect any application artefacts like tables, classes, methods, etc. that are referred to in the evaluated ER component when this artefact has been marked in application code as obsolete. This information allows you to revise the design of the evaluated ER component and to remove references to obsolete artefacts before those artefacts will be removed from the application code preventing issues at runtime. |
 | Globalization | (ER) Formula designer | You can use the ER formula [editor](../../fin-ops-core/dev-itpro/analytics/general-electronic-reporting-formula-designer.md) to describe data binding, control process flow, specify data formatting, etc. by using various data sources. This editor can use the [relative path](../../fin-ops-core/dev-itpro/analytics/er-formula-language.md#relative-path) to describe the location of any formula of a structured data source. This improvement lets you reveal the editable formula on the data source panel among all available data sources within one click. It allows you to quickly visualize the base element of the editable formula, observe its sibling elements, and use all of this in the formula if needed. | 
-|              |              |                  | 
-|              |              |                  | 
-|              |              |                  | 
+
 
 ## Additional resources
 
