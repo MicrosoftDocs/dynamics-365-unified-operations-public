@@ -31,8 +31,7 @@ The following table lists the features that are included in this release.
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
 | Web client | [Standardize keyboard interaction for combo box and lookup controls](/dynamics365-release-plan/2022wave1/finance-operations/finance-operations-crossapp-capabilities/standardize-keyboard-interaction-combo-box-lookup-controls) transitioning from preview to generally available | [Keyboard shortcuts](../../fin-ops/get-started/shortcut-keys.md) | [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
-| Web client | <p>**New grid control support for grouped card lists and multi-column card lists**</p><p>Pages with these types of card lists are no longer automatically reverting to use the legacy grid control. In addition, any usages of the `forceLegacyGrid()` API because of a grouped or multi-column card list should be safe to remove.</p> | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md) |  |
-| Module or feature area | [Name of feature](URL to feature description in the Release Plans)  | [Article name](URL to article with more information in core documentation) | How do you turn this feature on? If you turn it on in Feature management, say: [Feature management](../../fin-ops/get-started/feature-management/feature-management-overview.md) |
+| Web client | <p>**New grid control support for grouped card lists and multi-column card lists**</p><p>Pages with these types of card lists are no longer automatically reverting to use the legacy grid control. In addition, any usages of the `forceLegacyGrid()` API because of a grouped or multi-column card list should be safe to remove.</p> | [Grid capabilities](../../fin-ops/get-started/grid-capabilities.md) | On by default  |
 
 ### Bug fixes
 
