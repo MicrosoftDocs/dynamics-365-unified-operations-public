@@ -18,7 +18,7 @@ ms.search.validFrom: 2022-08-19
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists the features that are included in the platform updates for version 10.0.30 of finance and operations apps. This version has a build number of 7.0.XXXX and is available on the following schedule:
+This article lists the features that are included in the platform updates for version 10.0.30 of finance and operations apps. This version has a build number of 7.0.6592 and is available on the following schedule:
 
 - **Preview of release:** September 2022
 - **General availability of release (self-update):** October 2022
@@ -35,7 +35,7 @@ The following table lists the features that are included in this release.
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://lcs.dynamics.com/).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=745468).
 
 ### Dynamics 365: 2022 release wave 2 plan
 
