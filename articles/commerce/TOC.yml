@@ -800,6 +800,8 @@
             href: calculated-inventory-retail-channels.md
           - name: Inventory lookup operation in POS
             href: pos-inventory-lookup-operation.md
+          - name: Inventory-aware product listing
+            href: inventory-aware-product-listing.md
         - name: Purchase orders   
           items:
           - name: Purchase order overview
