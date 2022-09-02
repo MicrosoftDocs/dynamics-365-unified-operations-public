@@ -33,7 +33,7 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.30. This version has a build number of 10.0.xxxx and is available on the following schedule:
+This article lists features that are new or changed for Microsoft Dynamics 365 Finance version 10.0.30. This version has a build number of 10.0.1362 and is available on the following schedule:
 
 - **Preview of release:** September 2022
 - **General availability of release (self-update):** October 2022
@@ -67,7 +67,7 @@ Dynamics 365 Finance 10.0.30 includes platform updates. To learn more, see [Plat
 
 ### Bug fixes
 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=XXX).
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=745468).
 
 ### Regulatory updates
 
