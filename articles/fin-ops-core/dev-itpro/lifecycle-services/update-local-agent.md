@@ -4,7 +4,7 @@
 title: Update the local agent
 description: This article explains how to update the local agent.
 author: faix
-ms.date: 06/08/2022
+ms.date: 09/02/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service:
@@ -38,7 +38,7 @@ This article explains how to update the local agent. The latest version of the l
 
 | Local agent version | Capability | 
 |---------------------|------------|
-| 3.1.0               | This version upgrades the Service Fabric SDK, and adds a new deployment option. |
+| 3.1.0               | This version upgrades the Service Fabric SDK and adds a new deployment option. |
 | 3.0.0               | This version includes support for Edge Scale Unit Application Lifecycle Management. |
 | 2.7.2               | This version includes a fix for deploying older application versions. | 
 | 2.7.1               | This version introduces a new deployment option and fixes a bug with a deployment option. |
