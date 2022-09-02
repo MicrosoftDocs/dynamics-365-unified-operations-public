@@ -21,8 +21,6 @@ ms.dyn365.ops.version: 8.1
 
 # Learning catalog for Dynamics 365 Supply Chain Management developers
 
-
-
 Do you need to write code to integrate with other data sources, extend core system functionality, or build a complex application?
 
 The following catalog is organized from core knowledge to specific domains, and from most basic to most advanced. If content exists in multiple formats, we'll let you know, so that you can choose the training format that best meets your needs.
@@ -54,7 +52,7 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [Copy Into Legal Entity (DYN383PAL)](https://community.dynamics.com/365/b/techtalks/posts/copy-into-legal-entity-october-24-2017) | In this session, we will discuss a new feature in the data management framework, Copy into legal entity. We will first briefly review the new features added to the data management framework in platform 8 for the workspace, templates, and data projects and then discuss the additional functionality added for Copy into legal entity. | Free recording of a web conference | 54 minutes |
 | [How To Extend or Build New Analytical Workspaces (DYN321PAL)](https://community.dynamics.com/365/b/techtalks/posts/how-to-extend-or-build-new-analytical-workspaces-september-18-2017) | This Tech Talk will provide a walk through on how to extend or build new Analytical Workspaces. | Free recording of a web conference | 59 minutes |
 | [Mobile Framework (VIR824PAL)](https://community.dynamics.com/365/b/techtalks/posts/mobile-framework-april-11-2017) | This tech talk will walk through the mobile framework capabilities for building apps in finance and operations apps. The session will also demonstrate some recently built apps. | Free recording of a web conference | 58 minutes |
-
+| [Course MB-320T00: Microsoft Dynamics 365 Supply Chain Management, Manufacturing](/training/courses/mb-320t00) | This course will introduce you to the configuration needed for Dynamics 365 Supply Chain Management, Manufacturing. It will get deeper into managing the different types of manufacturing processes. It will help you to address master planning for production, and tackle how to implement several manufacturing features. Finally, it will cover subcontracting for product manufacturing. | Instructor-led training, cost varies by region and partner | 4 days |
 
 ## Servicing<a name="servicing"></a>
 
@@ -63,19 +61,14 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [Finance and operations apps: Servicing, Supporting and Maintaining Production (DYN651PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-servicing-supporting-and-maintaining-production-june-27-2019) | Tech Talk on how to efficiently support, maintain and service your finance and operations apps production environments. | Free recording of a web conference | 53 minutes |
 | [Finance and operations apps: Feature Management (DYN641PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | Tech Talk on the Feature management experience. It provides a workspace where you can view, enable, disable, and schedule features that have been delivered in each release. By default, new features are turned off. You can use the workspace to turn them on and view the documentation for them. Attend this meeting to see what is delivered in 10.0.3 and our plans for future releases. | Free recording of a web conference | 47 minutes |
 | [Finance and operations apps: Microsoft Managed Continuous Updates (DYN610PAL)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-microsoft-managed-continuous-updates-april-2-2019) | The Continuous Update cadence for finance and operations has started! Please join us during this hour to discuss Microsoft Managed Continuous updates, the user experience already available in Lifecycle Services, and forthcoming updates. | Free recording of a web conference | 61 minutes |
-| [Microsoft Managed Continuous Updates: What's new (DYN543PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-what-39-s-new-12-13-18) | During this hour we will explain what is new since our initial announcements about Microsoft Managed Continuous updates. We will discuss the cadence of updates, how we have responded to your valuable feedback on the process, and take a look at the forthcoming Lifecycle Services user experience, through which you will be able to manage your updates. | Free recording of a web conference | 56 minutes |
-| [Microsoft Managed Continuous Updates (DYN474PAL2)](https://community.dynamics.com/365/b/techtalks/posts/microsoft-managed-continuous-updates-september-5-2018) | We will discuss Microsoft’s plans for keeping your system up-to-date with the latest release. We will cover timelines, the cadence for major and minor updates, the planned procedures, the implications, and what you should do for optimal results. | Free recording of a web conference | 62 minutes |
-
 
 ## Migration and upgrade<a name="migration-and-upgrade"></a>
 
 | Content  | Description    | Format  | Length    |
 |----------|----------------|---------|-----------|
 | [Upgrade Dynamics AX 2012 to finance and operations apps](/learn/paths/upgrade-ax-2012-finance-operations/) | Learn the most important elements and best practices for successfully upgrading your Dynamics AX 2012 solution to finance and operations apps. From the first steps of discovering key architectural differences, getting started with the upgrade process, and code and data upgrade tools, to the best ways of redesigning your integrations, analytics, and reporting based on the latest capabilities. | Free, self-paced online learning path | 7 hours |
-| [Finance and Operations: Upgrading from 7.x to 8+ (DYN519PAL2)](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-upgrading-from-7-x-to-8-10-30-18) | Please join us for our next TechTalk, during which we will cover the 7.X to 8.X upgrade process. We will discuss various scenarios and steps to execute for code upgrade and data upgrade. We will also cover extensibility request scenarios and how to raise them where appropriate. Part 1 of 2. | Free recording of a web conference | 61 minutes |
-| [AX2012 to Dynamics 365 for Supply Chain Management Upgrade (VIR817PAL2)](https://community.dynamics.com/365/b/techtalks/posts/ax2012-to-dynamics-365-for-operations-upgrade-april-20-2017) | This Tech Talk will provide an overview on how to upgrade code and data from Dynamics AX 2012 to Dynamics 365 Supply Chain Management. | Free recording of a web conference | 45 minutes |
+| [AX2012 to Finance and Operations Apps Upgrade (DYN865PAL)](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/tax2012-to-finance-and-operations-apps-upgrade-september-3-2020) | This Tech Talk will provide an overview on how to upgrade code and data from Dynamics AX 2012 to Finance and Operations Apps. | Tech Talk (recorded webinar) | 66 minutes |
 | [AX2009 to Dynamics 365 Supply Chain Management Migration Tools (VIR809PAL)](https://community.dynamics.com/365/b/techtalks/posts/ax2009-to-dynamics-365-for-operations-migration-tools-march-2-2017) | This session will cover tooling available to assist you with migrating from AX2009 to D365 Supply Chain Management. | Free recording of a web conference | 55 minutes |
-
 
 ## Testing<a name="testing"></a>
 
@@ -90,12 +83,10 @@ The following catalog is organized from core knowledge to specific domains, and 
 | [Task Automation Framework for Data Management (DYN447PAL2)](https://community.dynamics.com/365/b/techtalks/posts/task-automation-framework-for-data-management-march-3-2018) | Please join us for this tech talk on the new Task Automation Framework for Data Management. Learn how the framework facilitates testing of data entities & integrations, validation of the resulting data, and automation of other tasks in the Data Management Framework. | Free recording of a web conference | 55 minutes |
 | [Finance and operations: Warehouse App Task Validation Framework](https://community.dynamics.com/365/b/techtalks/posts/finance-and-operations-warehouse-app-task-validation-framework-october-23-2019) | This talk will introduce and explain the new Warehouse App Task Validation Framework, which is designed to allow for the automation of warehouse tasks within the standard Dynamics 365 Warehousing application. This new framework bridges the gap between the Regression Suite Automation Tool (RSAT) and the warehouse functionality so that end-to-end regression tests can be built, including both core Dynamics workflows as well as distribution scenarios utilizing the advanced warehousing module. The talk will walk through the setup and configuration of the framework and show how it can be utilized to automate a warehouse process through RSAT. | Free recording of a web conference | 66 minutes |
 
-
 ## Exam<a name="exam"></a>
 
 | Content  | Description  | Format  |
 |----------|--------------|---------|
 | [Exam MB-500: Microsoft Dynamics 365: Finance and operations Apps Developer](/learn/certifications/exams/mb-500) | This exam measures your ability to accomplish the following technical tasks: plan architecture and solution design; apply developer tools; design and develop AOT elements; develop and test code; implement reporting; integrate and manage data solutions; and implement security and optimize performance. | Exam, cost varies by region |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
