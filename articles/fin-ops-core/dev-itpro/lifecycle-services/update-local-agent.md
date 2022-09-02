@@ -38,7 +38,7 @@ This article explains how to update the local agent. The latest version of the l
 
 | Local agent version | Capability | 
 |---------------------|------------|
-| 3.1.0               | This version adds a new deployment option. |
+| 3.1.0               | This version upgrades the Service Fabric SDK, and adds a new deployment option. |
 | 3.0.0               | This version includes support for Edge Scale Unit Application Lifecycle Management. |
 | 2.7.2               | This version includes a fix for deploying older application versions. | 
 | 2.7.1               | This version introduces a new deployment option and fixes a bug with a deployment option. |
@@ -59,7 +59,11 @@ This article explains how to update the local agent. The latest version of the l
 
 ## What's new in local agent 3.1.0
 
-- Local agent 3.1.0 introduces a new deployment option to [specify that an environment should be configured to work with the Regression suite automation tool (RSAT)](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-an-environment-should-be-configured-to-work-with-the-regression-suite-automation-tool).
+- Local agent 3.1.0 uptakes a new Service Fabric SDK and runtime.
+- This releases introduces a new deployment option to [specify that an environment should be configured to work with the Regression suite automation tool (RSAT)](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-an-environment-should-be-configured-to-work-with-the-regression-suite-automation-tool).
+
+> [!IMPORTANT]
+> This release is only compatible with 8.1+ Service Fabric clusters.
 
 ## What's new in local agent 3.0.0
 
