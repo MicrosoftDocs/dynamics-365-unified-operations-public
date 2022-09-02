@@ -3,7 +3,7 @@
 
 title: Prepare for go-live
 description: This article provides guidance about how to prepare for the go-live for finance and operations apps.
-author: ClaudiaBetz-Haubold
+author: alejandra-cabrales
 ms.date: 07/07/2022
 ms.topic: article
 ms.prod: 
@@ -14,12 +14,12 @@ ms.technology:
 # ms.search.form:  
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: sericks
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: chaubold
+ms.author: alcabral
 ms.search.validFrom: 2018-01-31
 ms.dyn365.ops.version: July 2017 update
 ---
