@@ -4,7 +4,7 @@
 title: Grid capabilities
 description: This article describes several powerful features of the grid control. You must enable the new grid feature to have access to these capabilities. 
 author: jasongre
-ms.date: 08/09/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -182,20 +182,22 @@ The **New grid control** feature is available directly in Feature management in 
 
 This feature began to be enabled by default in version 10.0.21. It's targeted to become mandatory in October 2022.
 
-## [Developer] Opting out individual pages from using the new grid 
+## Developer topics
+
+### [Developer] Opting out individual pages from using the new grid 
 If your organization discovers a page that has some issues utilizing the new grid, an API is available to allow an individual form to use the legacy grid control while still permitting the rest of the system to utilize the new grid control. To opt out an individual page from the new grid, add the following call post `super()` in the `run()` method for the form.
 
 ```this.forceLegacyGrid();```
 
 This API will eventually be deprecated to allow for removal of the legacy grid control. However, it will remain available for at least 12 months after its deprecation is announced. If any issues require that this API be used, report them to Microsoft.
 
-### Forcing a page to use the new grid after previously opting out the grid
+#### Forcing a page to use the new grid after previously opting out the grid
 If you have opted out an individual page from using the new grid, you might want to later re-enable the new grid after the underlying issues were solved. To do this, you simply need to remove the call to `forceLegacyGrid()`. The change will not take effect until one of the following occurs:
 
 - **Environment redeployment**: When an environment is updated and redeployed, the table that stores the pages that have opted out of the new grid (FormControlReactGridState) is automatically cleared.
 - **Manual clearing of the table**: For development scenarios, you will need to use SQL to clear the FormControlReactGridState table and then restart the AOS. This combination of actions will reset the caching of pages that have opted out of the new grid.
 
-## [Developer] Opting individual grids out of the Typing ahead of the system capability
+### [Developer] Opting individual grids out of the Typing ahead of the system capability
 Some scenarios have arisen that don't lend themselves to working well with the *Typing ahead of the system* capability of the grid. (For example, some code that is triggered when a row is validated causes a datasource research to be triggered, and the research can then corrupt uncommitted edits on existing rows.) If your organization discovers such a scenario, an API is available that lets a developer opt an individual grid out of asynchronous row validation and revert to the legacy behavior.
 
 When asynchronous row validation is disabled in a grid, users can't create a new row or move to a different existing row in the grid while there are validation issues on the current row. As a side effect of this action, tables can't be pasted from Excel into finance and operations grids.
@@ -208,13 +210,18 @@ To opt an individual grid out of asynchronous row validation, add the following 
 > - This call should be invoked only in exceptional cases and should not be the norm for all grids.
 > - We don't recommend that you toggle this API at runtime after the form loads.
 
-## [Developer] Size-to-available-width columns
+### [Developer] Size-to-available-width columns
 If a developer sets the **WidthMode** property to **SizeToAvailable** for columns inside the new grid, those columns initially have the same width that they would have if the property were set to **SizeToContent**. However, they stretch to use any extra available width inside the grid. If the property is set to **SizeToAvailable** for multiple columns, all those columns share any extra available width inside the grid. However, if a user manually resizes one of those columns, the column becomes static. It will remain at that width and will no longer stretch to take up extra available grid width.
 
-## [Developer] Specifying the column that receives the initial focus when new rows are created by using the Down arrow key
+### [Developer] Specifying the column that receives the initial focus when new rows are created by using the Down arrow key
 As was discussed in the [Differences when entering data ahead of the system](#differences-when-entering-data-ahead-of-the-system) section, if the "Typing ahead of the system" capability is enabled, and a user creates a new row by using the **Down arrow** key, the default behavior is to put the focus in the first column in the new row. This experience might differ from the experience in the legacy grid or when a **New** button is selected.
 
 Users and organizations can create saved views that are optimized for data entry. (For example, you can reorder columns so that the first column is the one that you want to start to enter data in.) In addition, as of version 10.0.29, organizations can adjust this behavior by using the **selectedControlOnCreate()** method. This method lets a developer specify the column that should receive the initial focus when a new row is created by using the **Down arrow** key. As input, this API takes the control ID that corresponds to the column that should receive the initial focus.
+
+### [Developer] Handling grids with non-React extensible controls
+When a grid is loading, if the system encounters an extensible control that is not React based, the system will force the legacy grid to render instead. When a user first encounters this situation, a message will be shown indicating the page needs to be refreshed. Afterwards, this page will load the legacy grid automatically without any further notifications to users until the next system update. 
+
+To overcome this situation permanently, extensible control authors can create a React version of the control for use in the grid.  Once developed, the X++ class for the control can be decorated with the **FormReactControlAttribute** attribute to specify the location of the React bundle to load for that control. See the `SegmentedEntryControl` class as an example.  
 
 ## Known issues
 This section maintains a list of known issues for the new grid control.
@@ -222,9 +229,12 @@ This section maintains a list of known issues for the new grid control.
 ### Open issues
 - After enabling the **New grid control** feature, some pages will continue to utilize the existing grid control. This will happen in the following situations:
  
-    - A card list exists on the page that is rendered in multiple columns.
-    - A grouped card list exists on the page.
-    - A grid column with a non-react extensible control.
+    - [Resolved] A card list exists on the page that is rendered in multiple columns.
+        - This type of card list is supported by the **New grid control** starting in version 10.0.30. Any usages of forceLegacyGrid() for this purpose can be removed. 
+    - [Resolved] A grouped card list exists on the page.
+        - Grouped card lists are supported by the **New grid control** starting in version 10.0.30. Any usages of forceLegacyGrid() for this purpose can be removed. 
+    - [Resolved] A grid column with a non-react extensible control.
+        - Extensible controls can provide a React version of their control that will be loaded when placed in the grid and adjust their control definition to load this control when used in the grid. See the corresponding developer section for more details. 
 
     When a user first encounters one of these situations, a message will display about refreshing the page. After this message appears, the page will continue to utilize the existing grid for all users until the next product version update. Better handling of these scenarios, so that the new grid can be utilized, will be considered for a future update.
 
