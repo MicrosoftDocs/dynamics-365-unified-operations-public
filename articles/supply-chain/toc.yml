@@ -3413,8 +3413,6 @@
             href: warehousing/packing-work.md
           - name: Set up short picking item reallocation
             href: warehousing/tasks/set-up-short-picking-item-reallocation.md
-          - name: Cancel warehouse work for exception handling
-            href: warehousing/cancel-warehouse-work.md
           - name: System-directed work sequencing
             href: warehousing/system-directed-work-sequencing.md
           - name: Pick line grouping
@@ -3431,6 +3429,10 @@
             href: warehousing/put-to-wall-put-to-store.md
           - name: Outbound workload visualization
             href: warehousing/outbound-workload-visualization.md
+          - name: Manually handle sales and transfer line picking exceptions
+            href: warehousing/manual-order-line-picking-exception-handling.md
+          - name: Cancel warehouse work for exception handling
+            href: warehousing/cancel-warehouse-work.md
         - name: Replenishment
           items:
           - name: Replenishment overview

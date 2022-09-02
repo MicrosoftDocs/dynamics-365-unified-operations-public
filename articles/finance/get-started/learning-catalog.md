@@ -1,10 +1,10 @@
 ---
 title: Learning catalog for Dynamics 365 Finance
 description: Find all the training options for Dynamics 365 Finance.
-author: margoc
+author: cstorega
 ms.topic: article
 ms.date: 07/23/2020
-ms.author: margoc
+ms.author: cstorega
 
 ms.prod:
 ms.technology:
@@ -13,7 +13,7 @@ ms.technology:
 
 # ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application user
-ms.reviewer: margoc
+ms.reviewer: twheeloc
 ms.search.region: Global
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.1
