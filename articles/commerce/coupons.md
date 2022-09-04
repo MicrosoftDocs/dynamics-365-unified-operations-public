@@ -53,14 +53,12 @@ To add a coupon to a sales transaction in Commerce point of sale (POS), you can 
 
 Retailers sometimes want to give cashiers the authority to apply fixed-amount discounts to customers for appeasement or product defect reasons, but don't want to print coupon codes and distribute them to the cashiers. To achieve this objective, you can set the **Apply without coupon code** option on coupon to **Yes**. POS cashiers can then use the **Apply coupon** function inside the **View available discounts** operation to add a coupon to a transaction without manually entering the code. If multiple coupon codes exist for a coupon, the system automatically selects the first active code and applies it to the transaction.
 
-To add a coupon to a call center sales order, a call center user needs to use the **Coupons** function (located at **Manage \> Coupons**) on action pane of the sales order form.
+To add a coupon to a call center sales order, a call center user needs to use the **Coupons** function (located at **Manage \> Coupons**) on action pane of the sales order form. After a coupon is added, the user can choose whether to proceed with recalculation of the entire order.
 
-To add a coupon to an e-commerce order, the shopper can enter the coupon code in the **promo code** input box in the shopping cart.
-
-After a coupon is added to a sales order, the pricing engine immediately triggers recalculation for the entire order, regardless of whether delayed calculation is enabled.
+To add a coupon to an e-commerce order, the shopper can enter the coupon code in the **promo code** input box in the shopping cart. After a coupon is added, the pricing engine immediately triggers recalculation for the entire order.
 
 > [!NOTE] 
-> In Commerce version 10.0.30 and earlier, after adding coupons to a call center sales order, a call center user must select **Recalculate** on action pane at **Sell \> Calculate \> Recalculate** for the discount associated with the coupon to be applied.
+> In Commerce version **10.0.30** and earlier, after adding coupons to a call center sales order, a call center user must select **Recalculate** on action pane at **Sell \> Calculate \> Recalculate** for the discount associated with the coupon to be applied.
 
 ## Coupon usage limit
 
