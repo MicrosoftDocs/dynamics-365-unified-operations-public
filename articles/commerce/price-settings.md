@@ -66,16 +66,21 @@ For mix and match discounts using the "least expensive" calculation type, the **
 The **Manually calculate multi-line prices and discounts** setting controls whether the pricing engine should use delayed price and discount calculation for the POS application and call center channel. When this parameter is set to **Yes**, the pricing engine doesn't immediately calculate multiline discounts (such as quantity discounts, threshold discounts, and mix and match discounts) whenever a sales order is being created or edited in the POS application or call center channel.
 
 > [!NOTE]
-> In Commerce version 10.0.30 and earlier, th **Manually calculate multi-line prices and discounts** setting only controls the call center channel. There's another setting named **Manually calculate multiple item discounts** in the functionality profile that controls POS price calcualtion behavior. The two settings are consolidated into one company-level setting in Commerce version 10.0.31.
+> In Commerce version 10.0.30 and earlier, the **Manually calculate multi-line prices and discounts** setting only controls the call center channel. There's another setting named **Manually calculate multiple item discounts** in the functionality profile that controls POS price calcualtion behavior. The two settings are consolidated into one company-level setting in Commerce version 10.0.31.
+
 ### Retention period in days
 
 The number specified in the **Retention period in days** setting indicates how many days after the expiration date (if set) or disabled date (if an expiration date isn't set) that a discount should be systematically deleted. Zero (0) implies no automatic deletion.
 
 > [!NOTE]
 > In Commerce version 10.0.30 and earlier, this setting is called **Number of days after which the expired disocunts should be deleted**.
+
 ### Coupon bar code
 
 The **Coupon bar code** parameter determines which specific barcode should be used for generating coupon barcodes. Users can select one of the predefined barcodes as configured on the **Bar code setup** form. For more information about barcodes and barcode masks, see [Set up bar codes](set-up-bar-codes.md) and [Set up bar code masks](set-up-bar-code-masks.md).
+
+> [!NOTE]
+> In Commerce version 10.0.30 and earlier, this setting is called **Coupon bar code mask**.
 
 ### Coupon code must be manually applied to return transactions
 
