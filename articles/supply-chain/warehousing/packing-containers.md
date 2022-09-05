@@ -29,7 +29,8 @@ Several related outbound warehouse capabilities can be used with containers. For
 - [Confirm and transfer](confirm-and-transfer.md)
 - [Set different dimensions for packing and storage](packing-vs-storage-dimensions.md)
 - [Packing work for packing outbound containers and processing shipments](packing-work.md)
-<!-- KFM: Add link to upcoming topic when available (10.0.31): [Manual packing on the Warehouse management mobile app](manual-packing-on-the-warehouse-management-mobile-app.md) -->
+- [Pack containers using the Warehouse management mobile app](warehouse-app-pack-containers.md)
+- [Container label printing](configure-container-label-printing.md)
 
 ## Set up your warehouse to use manual packing operations
 

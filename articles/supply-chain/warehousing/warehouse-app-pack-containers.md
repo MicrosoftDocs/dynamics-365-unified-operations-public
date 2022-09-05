@@ -114,7 +114,9 @@ You must set up the **Container packing policy** and **Packing profile ID** for 
 5.	Make the following settings for the worker in the **Default packing station** section:
 -	**Site** - Select *6*, released to the warehouse we are going to use
 -	**Warehouse** - Select *62*, a warehouse already enabled for the packing process in the demo data.
--	**Location** - Select *Pack*. Note that the Warehouse Management mobile app will always prompt for confirmation for the assigned value, which can get overwritten. In case you do not provide a default packing location value the warehouse worker must always scan or look up the packing location in the app, which can get acheived by using the [Data inquiry](warehouse-app-data-inquiry.md) capability.
+-	**Location** - Select *Pack*. Note that the Warehouse Management mobile app will always prompt for confirmation for the assigned value, which can get overwritten. In case you do not provide a default packing location value the warehouse worker must always scan or look up the packing location in the app, which can get achieved by using the [Data inquiry](warehouse-app-data-inquiry.md) capability.
+> [!NOTE]
+> To automatically print container labels when creating a new container record, please go to: [**Print container label**](configure-container-label-printing.md).
 
 ### Create a new *Pack inventory into containers* mobile device menu item
 You must create a new mobile device menu item to pack inventory into containers via the Warehouse Management mobile app.
