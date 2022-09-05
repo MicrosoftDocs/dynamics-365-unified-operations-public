@@ -2,7 +2,7 @@
 # required metadata
 
 title: Documents pending accounting
-description: This article describes how to use the Documents pending accounting page. 
+description: This article describes how to use the functionality on the Documents pending accounting page.
 author: ryanCCarlson2
 ms.date: 09/02/2022
 ms.topic: index-page
@@ -31,18 +31,18 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include [banner](../includes/preview-banner.md)]
 
-This article provides information about the how to use the functionality on the **Documents pending accounting** page.  
+This article describes how to use the functionality on the **Documents pending accounting** page.
 
-With the release of Dynamics 365 Finance 10.0.30, the feature **Enhanced performance for source document accounting framework** is available. Starting with the Free text invoice posting process, this feature improves the posting processes for source document enabled document postings 
+In Microsoft Dynamics 365 Finance 10.0.30, the **Enhanced performance for source document accounting framework** feature is available. This feature improves the posting processes for source document–enabled document postings, starting with the posting process for free text invoices.
 
-When this feature is enabled, posting the subledger document is performed seperately from the accounting generation or *journalization* process that creates the full accounting detail that's transferred to the general ledger. For example, in the Free text invoice posting process, the customer invoice in the **Accounts receivable** module is recorded prior to the full accounting being generated. This enhanced performance feature allows for faster recording of the customer invoices while the accounting generation is delayed. 
+When this feature is enabled, posting of the subledger document is done separately from the accounting generation or *journalization* process that creates the full accounting detail that is transferred to the general ledger. For example, in the free text invoice posting process, the customer invoice in the **Accounts receivable** module is recorded before the full accounting is generated. This enhanced performance feature enables customer invoices to be recorded more quickly while accounting generation is delayed.
 
-The following options are available from the **Documents pending accounting** page. 
+The following buttons are available on the **Documents pending accounting** page.
 
-- **Generate accounting** - Select this button to sumbmit a document that's currently pending account generation for journalization. 
-- **View distributions** - Select this button to view the accounting distributions for a selected document in the list. 
-- **View error log** - Select this button to view the detailed error message details if they exist for a document with the accounting state in error. Or, select the **Error log** link directly on the document line to view the same error message details. 
+- **Generate accounting** – Submit a document that is currently pending account generation for journalization.
+- **View distributions** – View the accounting distributions for a selected document in the list.
+- **View error log** – View any error message details that exist for a document where the accounting state indicates errors. You can view the same error message details by selecting the **Error log** link on the document line.
 
-Accounting generation is accomplished by a process automation background process called **Accounting framework processor**. For more details about the setup and configuration of all process automations, see [Process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md). 
+Accounting generation is done by a process automation background process that is named **Accounting framework processor**. For more information about the setup and configuration of all process automations, see [Process automation](../../fin-ops-core/dev-itpro/sysadmin/process-automation.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
