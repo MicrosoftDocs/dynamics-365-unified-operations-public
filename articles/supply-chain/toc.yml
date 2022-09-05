@@ -1727,12 +1727,14 @@
           href: sensor-data-intelligence/sdi-parameters.md
         - name: Set up a simulated sensor for testing
           href: sensor-data-intelligence/sdi-set-up-simulated-sensor.md
+        - name: The asset downtime scenario
+          href: sensor-data-intelligence/sdi-scenario-asset-downtime.md
+        - name: The asset maintenance scenario
+          href: sensor-data-intelligence/sdi-scenario-asset-maintenance.md
         - name: The machine status scenario
           href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
         - name: The product quality scenario
           href: sensor-data-intelligence/sdi-scenario-product-quality.md
-        - name: The asset maintenance scenario
-          href: sensor-data-intelligence/sdi-scenario-asset-maintenance.md
         - name: The production delays scenario
           href: sensor-data-intelligence/sdi-scenario-production-delays.md
     - name: IoT Intelligence
