@@ -51,4 +51,4 @@ If no sensor signal is received from an asset within the threshold defined in th
 
 1. Go to **Asset management > Assets > All assets**.
 2. Find and select the asset you want to inspect. (If you're using the demo data, select *AK-101*.)
-3. In the Action Pane, open the **Asset** tab and, from the **Work order** group, select **Maintenance downtime** to open the page for maintenance downtime records for the selected asset.
+3. On the Action Pane, open the **Asset** tab and, from the **Work order** group, select **Maintenance downtime** to open the page for maintenance downtime records for the selected asset.
