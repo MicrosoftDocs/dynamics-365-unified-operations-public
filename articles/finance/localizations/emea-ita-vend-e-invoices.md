@@ -40,9 +40,17 @@ Follow these steps to set up the electronic invoice configuration in Accounts pa
    > Configurations must be imported before they can be selected. For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
    >
    > The parent model configuration, **Invoice model**, and the related model mapping configuration, **Vendor invoice model mapping (IT)**, will automatically be imported or updated.
-   > After importing configuration aplication-specific parameters should be set up (In **Electronic reporting** workspace, for Vandor invoice (IT) format, On Action pane open Configuration /> Application specific parameters /> Setup:).
+   > 
+   > After importing the configurations, aplication-specific parameters should be set up (In **Electronic reporting** workspace, for Vandor invoice (IT) format, On Action pane open Configuration /> Application specific parameters /> Setup:).
+   > 
    > It is necessary to set up at list two lines for Blank and Not blank values: 
    > ![Application-specific parameters](media/emea-ita-vendor-einvoice-asp.png)
+   >_These default settings are required for all scenarios, even if Reverse charge is not applicable_
+   >
+   >In the **Conditions** section, in the **Name** column add the other required Reverse charge item groups and associate them with the related values in **Lookup result** column.
+
+
+
 
 ## Enable electronic invoice generation
 
