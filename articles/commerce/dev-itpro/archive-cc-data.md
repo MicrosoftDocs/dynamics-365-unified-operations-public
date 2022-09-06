@@ -72,6 +72,9 @@ After you confirm the parameters for data that must be archived, you're prompted
 
 After you select **Yes**, the archival job becomes active, and all XML data about credit card authorizations that is older than the **Minimum transaction age in days** value will be subject to archiving.
 
+# Further storage management with Token Compression
+Tokens can also be compressed using the Token Compression feature management flag. In Headquarters, go to **Workspaces > Feature management** and search under the **All** section for the feature flag **Compress payment tokens**. Enable this feature to utilize compression on the stored payment property tokens, which will further promote a lower footprint on underlying storage tables.
+
 ## Additional resources
 
 [Payments FAQ](/dynamics365/unified-operations/retail/dev-itpro/payments-retail)
