@@ -298,13 +298,13 @@ The solution includes this partition configuration by default. Therefore, *you d
 
 Most of the time, the inventory on-hand query won't be only at the highest "total" level. Instead, you might also want to see results that are aggregated based on the inventory dimensions.
 
-Inventory Visibility provides flexibility by letting you set up the _indexes_. These indexes are based on a dimension or a combination of dimensions. An index consists of a *set number*, a *dimension*, and a *hierarchy*, as defined in the following table.
+Inventory Visibility provides flexibility by letting you set up the _indexes_ to speed up query. These indexes are based on a dimension or a combination of dimensions. An index consists of a *set number*, a *dimension*, and a *hierarchy*, as defined in the following table.
 
 | Name | Description |
 |---|---|
 | Set number | Dimensions that belong to the same set (index) will be grouped together, and the same set number will be allocated to them. |
 | Dimension | Base dimensions that the query result is aggregated on. |
-| Hierarchy | The hierarchy is used to define the supported dimension combinations that can be queried. For example, you set up a dimension set that has a hierarchy sequence of `(ColorId, SizeId, StyleId)`. In this case, the system supports queries on four dimension combinations. The first combination is empty, the second is `(ColorId)`, the third is `(ColorId, SizeId)`, and the fourth is `(ColorId, SizeId, StyleId)`. The other combinations aren't supported. For more information, see the example that follows. |
+| Hierarchy | The hierarchy is used to define the supported dimension combinations in filter&groupby query parameters that can be speeded up. For example, you set up a dimension set that has a hierarchy sequence of `(ColorId, SizeId, StyleId)`. In this case, the system can speed up queries regarding four dimension combinations in groupby. The first combination is empty, the second is `(ColorId)`, the third is `(ColorId, SizeId)`, and the fourth is `(ColorId, SizeId, StyleId)`. The other combinations won't be speeded up. Filters has no restriction of order but should be inside these dimensions if you want it speeded up. For more information, see the example that follows. |
 
 To set up your product hierarchy index, follow these steps.
 
@@ -314,14 +314,13 @@ To set up your product hierarchy index, follow these steps.
 1. By default, a list of indexes is provided. To modify an existing index, select **Edit** or **Add** in the section for the relevant index. To create a new index set, select **New index set**. For each row in every index set, in the **Dimension** field, select from the list of base dimensions. Values for the following fields are automatically generated:
 
     - **Set number** – Dimensions that belong to the same group (index) will be grouped together, and the same set number will be allocated to them.
-    - **Hierarchy** – The hierarchy is used to define the supported dimension combinations that can be queried in a dimension group (index). For example, if you set up a dimension group that has a hierarchy sequence of *Style*, *Color*, and *Size*, the system supports the result of three query groups. The first group is style only. The second group is a combination of style and color. And the third group is a combination of style, color, and size. The other combinations aren't supported.
+    - **Hierarchy** – The hierarchy is used to define the supported dimension combinations in filter&groupby query parameters that can be speeded up. For example, you set up a dimension set that has a hierarchy sequence of `(ColorId, SizeId, StyleId)`. In this case, the system can speed up queries regarding four dimension combinations in groupby. The first combination is empty, the second is `(ColorId)`, the third is `(ColorId, SizeId)`, and the fourth is `(ColorId, SizeId, StyleId)`. The other combinations won't be speeded up. Filters has no restriction of order but should be inside these dimensions if you want it speeded up. For more information, see the example that follows.
 
 > [!TIP]
 > Here are a few tips to keep in mind when setting up your index hierarchy:
 >
 > - Base dimensions that are defined in the partition configuration shouldn't be defined in index configurations. If a base dimension is defined again in the index configuration, you won't be able to query by this index.
 > - If you only need to query inventory that is aggregated by all dimension combinations, then set up a single index that contains the base dimension `Empty`.
-> - You must have at least one index hierarchy (for example, containing the base dimension `Empty`), otherwise queries will fail with the error "No index hierarchy has been set."
 
 ### Example
 
