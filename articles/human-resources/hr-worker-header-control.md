@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-## Worker header control
+# Worker header control
 Dynamics 365 Human Resources provides a personalizable header control in **Employee self service**, **People** hub and the streamlined **Worker** page. The header 
 contains key information about the worker, as well as one-click actions such as email, calling, or messaging. The header can also be modified to add or remove fields 
 to show additional information including, custom fields. To utilize the new header control, go to **Feature management** and enable the **Worker header control** 
