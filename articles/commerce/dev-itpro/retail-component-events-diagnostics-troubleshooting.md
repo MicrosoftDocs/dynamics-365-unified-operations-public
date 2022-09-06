@@ -193,6 +193,9 @@ To enable diagnostic events in Application Insights in Commerce headquarters, fo
 1. Repeat the preceding steps for each environment where you plan to use Application Insights.
 
 > [!NOTE]
+> 
+> The telemetry events in Operational Insights are subject to change. We recommend customers and partners that they should mainly use Operational Insights events to perform preliminary analysis and troubleshooting of the issues on their own, and not necessarily use for defining dashboards/alerts (But if you choose to consume events beyond self-serviceable troubleshooting, we recommend you to validate and update your queries with each CSU/POS release, as a mandatory process.)
+> 
 > In Commerce version 10.0.29 and later, the procedures in this section also enable the streaming of point of sale (POS) operational insights events to your Application Insights account.
 >
 > To use the config file to control the POS operational insights events, complete the following steps.
