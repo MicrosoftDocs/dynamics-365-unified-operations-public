@@ -4,7 +4,7 @@
 title: Task management
 description: This article explains the task management functionality that is available in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 12/20/2021
+ms.date: 09/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -22,7 +22,7 @@ ms.assetid:
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2021-29-11
+ms.search.validFrom: 2022-06-09
 ms.dyn365.ops.version: Human Resources
 
 ---
@@ -75,7 +75,14 @@ On all three tabs, HR assistants and managers can complete the following activit
 
 You can create tasks individually and then reuse them in multiple checklists. To create a task, on the **Onboarding setup** page, on the **Tasks** tab, select **New**.
 
+You can select a created task and assign it to multiple checklists by selecting **Apply to checklists** from the menu.
+
 Alternatively, you can add tasks directly to a checklist. To add a task to a checklist, on the **Onboarding setup** page, on the **Checklist** tab, either create a new checklist to add the task to, or add the task to an existing checklist.
+
+To edit a library task, select Edit from the task library menu. If the task is associated to any checklists, those checklists will display in the **Edit task** page.  If you would like the tasks in the checklists to be updated with the edits, select the checklists where the task should be updated in the **Apply to checklists** section.
+
+To delete tasks from the library select the **Delete** option. If the task is in an associated checklist, this action will not delete the task from the checklist. The task must be removed from the checklist in a separate action.
+
 
 > [!NOTE]
 > If you add a task directly to a checklist, you can't reuse it in other checklists.
@@ -139,7 +146,16 @@ Complex tasks might require multiple steps, or the person who is performing the 
 
 ## Setting up checklists
 
-A checklist is a group of tasks. You can create as many checklists as you require, and you can assign the same tasks to multiple checklists. When you create a checklist, you specify an owner and a calendar.
+A checklist is a group of tasks. You can create as many checklists as you require, and you can assign the same tasks to multiple checklists.
+
+To create a new task within a checklist, select **New** from the **Tasks** menu bar. When creating a new task, you can optionally select to add the task to the task library so that it can be shared across multiple checklists. To add the task to the library the **Apply task to library** option must be set to **Yes**. If you choose not to add the task to the library, it will exist only in the checklist in which you are creating it in. Additionally, if you choose to add the task to the task library, you can also choose to add the task to other checklists at the same time by selecting the checklists in the **Apply to checklists** section.
+
+
+To edit a task in the checklist, select **Edit**. If the task is associated to any checklists, those checklists will display in the **Edit task** page. If you would like the tasks in the other checklists to be updated with the edits, select the checklists where the task should be updated in the **Apply to checklists** section.
+
+To remove tasks from the checklist, select **Remove**. This will remove the task from the checklist. This action will not delete the task from the task library. To delete a task from the library, go to the task **Library** page and select **Delete**.
+
+When you create a checklist, you specify an owner and a calendar.
 
 If the **Assignment type** field for a task is set to **Position**, **Manager**, or **Group**, but no specific individual can be derived from the assignment type, the task will be assigned to the checklist owner. Here are some examples of situations where tasks will be assigned to the checklist owner:
 
