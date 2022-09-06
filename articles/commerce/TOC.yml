@@ -704,8 +704,6 @@
           href: optimal-combination-overlapping-discounts.md
         - name: Define channel-specific discounts 
           href: define-channel-specific-discounts.md
-        - name: Options for preventing discounts for retail products 
-          href: prevent-discounts.md
         - name: Tender-based discounts 
           href: tender_based_discounts.md
         - name: Shipping discount 
@@ -713,9 +711,9 @@
         - name: Configure gift with purchase promotions
           href: gift-with-purchase.md
         - name: Set up coupons  
-          href: retail-coupons.md
-        - name: Show discounts in POS
-          href: discounts-pos.md
+          href: coupons.md
+        - name: Pricing settings
+          href: price-settings.md
         - name: Price reports 
           href: price-report.md
         - name: Create channel-specific trade agreements 
