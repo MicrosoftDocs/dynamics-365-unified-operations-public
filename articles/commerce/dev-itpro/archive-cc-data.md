@@ -72,11 +72,11 @@ After you confirm the parameters for data that must be archived, you're prompted
 
 After you select **Yes**, the archival job becomes active, and all XML data about credit card authorizations that is older than the **Minimum transaction age in days** value will be subject to archiving.
 
-# Further storage management with token compression
+## Further storage management with token compression
 
 To decrease the footprint of underlying storage tables, you can compress tokens by enabling the **Compress payment tokens** feature. Enabling this feature flag will allow the system to use compression on stored payment property tokens. 
 
-To enable the feature in headquarters, follow these steps.
+To enable the **Compress payment tokens** feature in headquarters, follow these steps.
 
 1. Go to **Workspaces \> Feature management**. 
 1. Under **All**, search for the **Compress payment tokens** feature.
