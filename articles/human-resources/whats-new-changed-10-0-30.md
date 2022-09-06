@@ -29,10 +29,9 @@ ms.dyn365.ops.version: 10.0.30
 
 # What's new or changed in Dynamics 365 Human Resources 10.0.30 (November 2022)
 
-[!include [banner](../../includes/preview-banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.30. This version has a build number of 10.0.XXX and is 
-available on the following schedule:
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.30. This version has a build number of 10.0.1362 and is available on the following schedule:
 
 - **Preview of release:** September 2022
 - **General availability of release (self-update):** October 2022
@@ -45,7 +44,7 @@ article was initially published.
 
 | Feature name | Overview | Release status |
 |----|----|----|
-
+|Worker header control| Dynamics 365 Human Resources provides a personalizable header control in **Employee self service**, People hub and the streamlined **Worker** page. The header contains key information about the worker, as well as one-click actions such as email, calling, or messaging. The header can also be modified to add or remove fields to show additional information including, custom fields.| Preview|
 
 ## Feature enhancements included in this release
 
@@ -54,24 +53,21 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 
 | Feature name | More information |
 |--------------|------------------|
+|Task Management |Edits to library task can be applied to multiple checklists at one time.|
 
-## Features on by default in this release
+## Known issues
 
-The following table lists the features that are turned on by default in version 10.0.30. Most features that have been turned on automatically can be turned off in 
-Feature management. In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory to ensure
-that customers are using current functionality. In this way, enhancements can build on the current functionality as they are added. Features will never be automatically
-enabled in less than one year unless they are determined to be essential. 
-
-| Feature name | Feature added | Feature state | Module |
-| ---- | ---- | ---- | ---- |
+| Issue summary | More information|
+| ---- | ---- | 
+|Tasks management upgrade|Changes in the 10.0.30 release added the option to apply edits to library tasks to multiple checklists at one time. In order for those edits to be rolled down, a relationship must already exist between the task in the task library and the task in the checklist. Prior to the 10.0.30 release, when a library task was added to a checklist, a relationship wasn't created. An upgrade is needed to create the relationship between the task library and the checklist task. This will be released shortly. Issue #732960 |
 
 
 ## Additional resources
 
 ### Platform updates for finance and operations apps
 
-Dynamics 365 Human Resources 10.0.30 includes platform updates. To learn more, see [Platform updates for version 10.0.30 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-29.md).
+Dynamics 365 Human Resources 10.0.30 includes platform updates. To learn more, see [Platform updates for version 10.0.30 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md).
 
 ### Bug fixes
 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=726559).
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=745468).
