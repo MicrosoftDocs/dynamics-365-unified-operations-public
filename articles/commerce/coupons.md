@@ -4,7 +4,7 @@
 title: Coupons
 description: This article provides an overview of coupon-related capabilities in Microsoft Dynamics 365 Commerce.
 author: boycez
-ms.date: 09/01/2022
+ms.date: 09/06/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
