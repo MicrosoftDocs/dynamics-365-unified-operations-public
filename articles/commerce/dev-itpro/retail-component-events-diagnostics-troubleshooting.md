@@ -2,7 +2,7 @@
 title: Commerce component events for diagnostics and troubleshooting
 description: This article explains where to find events from Commerce-specific components.
 author: ShalabhjainMSFT
-ms.date: 08/15/2022
+ms.date: 09/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -193,16 +193,15 @@ To enable diagnostic events in Application Insights in Commerce headquarters, fo
 1. Repeat the preceding steps for each environment where you plan to use Application Insights.
 
 > [!NOTE]
+> The telemetry events in Operational Insights are subject to change. We recommend that you use Operational Insights events to perform preliminary analysis and troubleshooting on your own, and not to define dashboards or alerts. If you choose to use events beyond self-service troubleshooting, we recommend that you validate and update your queries with each Commerce Scale Unit/POS release.
 > 
-> The telemetry events in Operational Insights are subject to change. We recommend customers and partners that they should mainly use Operational Insights events to perform preliminary analysis and troubleshooting of the issues on their own, and not necessarily use for defining dashboards/alerts (But if you choose to consume events beyond self-serviceable troubleshooting, we recommend you to validate and update your queries with each CSU/POS release, as a mandatory process.)
-> 
-> In Commerce version 10.0.29 and later, the procedures in this section also enable the streaming of point of sale (POS) operational insights events to your Application Insights account.
+> In Commerce version 10.0.29 and later, the procedures in this section also enable streaming of POS Operational Insights events to your Application Insights account.
 >
-> To use the config file to control the POS operational insights events, complete the following steps.
+> To use the config file to control POS Operational Insights events, complete the following steps.
 >
->1.	Using a text editor, open the "DLLHost.exe.config" file that is located at “C:\Program Files (x86)\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker”.
+> 1. With a text editor, open the "DLLHost.exe.config" file that is located at “C:\Program Files (x86)\Microsoft Dynamics 365\70\Retail Modern POS\ClientBroker”.
 >
->1.	Remove the sink XML element with the class name “Microsoft.Dynamics.Retail.Diagnostics.OperationalInsights.OperationalInsightsLogger” from the “diagnosticsSection”. 
+> 1. Remove the sink XML element with the class name “Microsoft.Dynamics.Retail.Diagnostics.OperationalInsights.OperationalInsightsLogger” from the “diagnosticsSection”. 
 
 #### Disable diagnostic events in Application Insights
 
