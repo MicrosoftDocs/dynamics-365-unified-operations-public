@@ -84,55 +84,10 @@ The worker header in the streamlined **Employee** page contains the following in
   
   The table below shows the data that is displayed in the header based on the employee state:
 
-   | Worker state | Data displayed | Additional information |
-   | --- | --- | --- |
-   | Pending |	•	Name
-•	Personnel number
-•	Position title
-•	Department 
-•	Worker type
-•	Legal entity
-•	Pending badge
-•	Start date
-•	Reports to
-•	Position type	|    |
-|Recent hire |•	Name
-•	Personnel number
-•	Position title
-•	Department 
-•	Worker type
-•	Legal entity
-•	Recent hire badge
-•	Years of service
-•	Reports to  
-• Position type |	By default, the **Recent hire** badge will display for employees who have been hired in the last seven days. To change this setting, on the **Human 
-resources parameters** page, on the **General** tab, in the **Recent hires date range** section, enter a time frame. For example, to view the **Recent hire** badge for 
-employees who were hired in the last 14 days, set the **Period** field to **14** and the **Unit** field to **Days**. |
-|Active employee|	•	Name
-•	Personnel number
-•	Position title
-•	Department 
-•	Worker type
-•	Legal entity
-•	Start date
-•	Reports to
-•	Position type	|   |
-|Exiting| 	•	Name
-•	Personnel number
-•	Position title
-•	Department 
-•	Worker type
-•	Legal entity
-•	Exiting badge
-•	Years of service
-•	Reports to
-•	Position type	| By default, the **Exiting** badge will display for employees who will be leaving in the next seven days. To change this setting, on the **Human 
-resources parameters** page, on the **General** tab, in the **Exiting worker date range** section, enter a time frame. For example, to view the **Exiting** badge for 
-employees who are leaving in the next 14 days, set the **Period** field to **14** and the **Unit** field to **Days**.|
-|Exited	|•	Exited badge
-•	Personnel number
-•	Employment end date
-•	Reason code|	By default, the **Exited** badge will display for employees who have left in the last seven days. To change this setting, on the **Human resources 
-parameters** page, on the **General** tab, in the **Exited workers date range** section, enter a time frame. For example, to view the **Exited** badge for employees 
-who have left in the last 14 days, set the **Period** field to **14** and the **Unit** field to **Days**.
-
+| Worker state | Data displayed | Note |
+|-------------------------|-------------------------|-------------------------|
+| Pending | <ul></br><li>Name</li></br><li>Personnel number</li></br><li>Position title</li></br><li>Department</li></br><li>Worker type</li></br><li>Legal entity</li></br><li>Pending badge</li></br><li>Start date</li></br><li>Reports to</li></br><li>Position type</li></br></ul> |  |
+| Recent hire | <ul></br><li>Name</li></br><li>Personnel number</li></br><li>Position title</li></br><li>Department</li></br><li>Worker type</li></br><li>Legal entity</li></br><li>Recent hire badge</li></br><li>Years of service</li></br><li>Reports to</li></br><li>Position type</li></br></ul> | By default, the **recent hire** badge will display for employees who have been hired in the last seven days. To change this setting, on the **Human resources parameters** page, on the **General** tab, in the **Recent hires** date range section, enter a time frame. For example, to view the Recent hire badge for employees who were hired in the last 14 days, set the **Period** field to **14** and the **Unit** field to **Days**. |
+| Active employee | <ul></br><li>Name</li></br><li>Personnel number</li></br><li>Position title</li></br><li>Department</li></br><li>Worker type</li></br><li>Legal entity</li></br><li>Start date</li></br><li>Reports to</li></br><li>Position type</li></br></ul> |  |
+| Exiting | <ul></br><li>Name</li></br><li>Personnel number</li></br><li>Position title</li></br><li>Department</li></br><li>Worker type</li></br><li>Legal entity</li></br><li>Exiting badge</li></br><li>Years of service</li></br><li>Reports to</li></br><li>Position type</li></br></ul> | By default, the **Exiting** badge will display for employees who will be leaving in the next seven days. To change this setting, on the **Human resources parameters** page, on the **General** tab, in the **Exiting worker date range** section**,** enter a time frame. For example, to view the Exiting badge for employees who are leaving in the next 14 days, set the **Period** field to **14** and the **Unit** field to **Days**. |
+| Exited | <ul></br><li>Exited badge</li></br><li>Personnel number</li></br><li>Employment end date</li></br><li>Reason code</li></br></ul> | By default, the Exited badge will display for employees who have left in the last seven days. To change this setting, on the **Human resources parameters** page, on the **General** tab, in the **Exited workers date range** section**,** enter a time frame. For example, to view the Exited badge for employees who have left in the last 14 days, set the **Period** field to **14** and the **Unit** field to **Days**. |
