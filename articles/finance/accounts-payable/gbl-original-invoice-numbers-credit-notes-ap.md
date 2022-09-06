@@ -19,7 +19,7 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-In some countries and regions, there is a legal requirement that printed credit notes include, or reporting routinous require to indicate references to the original invoices. This article describes how to create a reference to an original invoice when you create a credit note.
+In some countries and regions, there's a legal requirement that printed credit notes or reporting routines include references to the original invoices. This article describes how to create a reference to an original invoice when you create a credit note.
 
 ## Prerequisites
 
