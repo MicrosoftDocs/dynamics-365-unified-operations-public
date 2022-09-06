@@ -27,7 +27,7 @@ For more information about Store Commerce app, see [Store Commerce app](../store
 | Features | Store Commerce | MPOS |
 | ------ | ------ |------ |
 | System requirements | Windows 11, Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise editions) with the latest available updates, or Windows Server 2019 | Windows 11, Windows 10 (Pro, Enterprise, Enterprise LTSC, and IoT Enterprise editions) with the latest available updates, or Windows Server 2019 |
-| GitHub | Yes. SQL Express, SQL Standard, and SQL Enterprise are supported. | Yes. SQL Express, SQL Standard, and SQL Enterprise are supported. |
+| Offline | Yes. SQL Express, SQL Standard, and SQL Enterprise are supported. | Yes. SQL Express, SQL Standard, and SQL Enterprise are supported. |
 | Local or Dedicated HWS support | Yes | Yes | 
 | Device setup in Dynamics 365 Commerce headquarters | On the **Devices** page in Commerce headquarters, use the application as Store Commerce. | On the **Devices** page in Commerce headquarters, use the application as Retail Modern POS. |
 | Device activation | Required | Required |
