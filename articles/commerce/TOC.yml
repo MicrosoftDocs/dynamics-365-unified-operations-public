@@ -713,7 +713,7 @@
         - name: Configure gift with purchase promotions
           href: gift-with-purchase.md
         - name: Set up coupons  
-          href: retail-coupons.md
+          href: coupons.md
         - name: Show discounts in POS
           href: discounts-pos.md
         - name: Price reports 
