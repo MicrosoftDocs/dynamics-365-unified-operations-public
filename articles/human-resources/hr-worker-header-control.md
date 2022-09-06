@@ -104,7 +104,7 @@ The worker header in the streamlined **Employee** page contains the following in
 •	Legal entity
 •	Recent hire badge
 •	Years of service
-•	Reports to | 
+•	Reports to  
 • Position type |	By default, the **Recent hire** badge will display for employees who have been hired in the last seven days. To change this setting, on the **Human 
 resources parameters** page, on the **General** tab, in the **Recent hires date range** section, enter a time frame. For example, to view the **Recent hire** badge for 
 employees who were hired in the last 14 days, set the **Period** field to **14** and the **Unit** field to **Days**. |
