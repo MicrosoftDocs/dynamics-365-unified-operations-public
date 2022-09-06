@@ -19764,12 +19764,12 @@
     },
     {
       "source_path": "articles/commerce/discounts-pos.md",
-      "redirect_url": "/dynamics365/commerce/pricing-settings",
+      "redirect_url": "/dynamics365/commerce/price-settings",
       "redirect_document_id": "false"
     },
     {
       "source_path": "articles/commerce/prevent-discounts.md",
-      "redirect_url": "/dynamics365/commerce/pricing-settings",
+      "redirect_url": "/dynamics365/commerce/price-settings",
       "redirect_document_id": "false"
     }
   ]
