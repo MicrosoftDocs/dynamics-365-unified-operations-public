@@ -29,7 +29,7 @@ A *load* is a group of sales order or transfer order lines that are grouped toge
 
 Warehouse *work* is any warehouse operation that is performed by a warehouse worker. Typically, warehouse work operations consist of at least two consecutive actions: a warehouse worker picks up on-hand inventory in one location and then puts it away in another location.
 
-When orders are released to the warehouse, the system creates *load lines* and groups them into shipments. The shipment consolidation process allows for automated shipment consolidation during the release to warehouse process. For more information, see [Shipment consolidation policies](about-shipment-consolidation-policies.md).
+When orders are released to the warehouse, the system creates *load lines* and groups them into shipments. The shipment consolidation process allows for automated shipment consolidation during the release to warehouse process. For more information, see [Shipment consolidation policies overview](about-shipment-consolidation-policies.md).
 
 The system uses *waves* to create picking work and loads for shipment. A *wave template* must be available for the type of wave that you want to create and for the warehouse of the order line. Wave templates of the *Shipping* type are used to ship items for sales orders and transfer orders.
 

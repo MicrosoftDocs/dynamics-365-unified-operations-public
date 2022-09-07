@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Shipment consolidation policies
+title: Shipment consolidation policies overview
 description: This article provides an overview of the functionality that provides flexible configuration of shipment consolidation policies.
 author: Mirzaab
 ms.date: 05/12/2020
@@ -26,11 +26,11 @@ ms.dyn365.ops.version: 10.0.3
 
 ---
 
-# Shipment consolidation policies
+# Shipment consolidation policies overview
 
 [!include [banner](../includes/banner.md)]
 
-The shipment consolidation process that uses shipment consolidation policies allows for automated shipment consolidation during automated and manual release to the warehouse. The automated consolidation that was available before this feature was introduced had hard-coded fields and was based on the **Consolidate shipment at release to warehouse** field that was set for a warehouse.
+The shipment consolidation process that uses shipment consolidation policies allows for automated shipment consolidation during automated and manual release to the warehouse. The automated consolidation that was available before this feature was introduced had hard-coded fields and was based on the **Consolidate shipment at release to warehouse** field that was set for a warehouse. (For details about how to configure the system to maintain your previous consolidation behavior after enabling the *Shipment consolidation policies* feature, see [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md).)
 
 Shipment consolidation policies are used for the following functionality:
 
@@ -43,12 +43,6 @@ Shipment consolidation policies are used for the following functionality:
 Before shipment consolidation policies were introduced, the consolidation function existed as a setting at the warehouse level. All orders for all customers from a single warehouse were treated as though they had the same consolidation requirements. Shipment consolidation policies add support for scenarios where different organizations have different requirements for shipment consolidation.
 
 Queries are used to identify the shipment consolidation policy that applies, and then an editable set of fields determines how the load lines are grouped at the shipment level. (This pattern resembles the pattern that wave templates follow.) In addition, a **Consolidate with existing shipments** option has been added to each policy. When this option is turned on, the *Release to warehouse* procedure finds shipments for consolidation by searching among existing shipments that were created based on the same consolidation policy. In this case, the system will select an existing shipment or load instead of creating a new one. However, the system will only consolidate with existing shipments that have a status of *Open*; shipments that belong to a wave release with a status of *Released* or higher won't be considered as targets for consolidation.
-
-> [!WARNING]
-> In previous versions the shipment consolidation process was enabled by setting the parameter **Consolidate shipment at release to warehouse** on the individual warehouses. This setting is now replaced with the **Shipment consolidation policies**, but if no policies are configured (default setup) the system falls back to this legacy behavior.
-> In case of just having one *Shipment consolidation policy* defined, the system will evaluate this setup and only use it when applicable based on the defined query. In case none of the defined queries returns a result, then each order line will generate a separate shipment that has a single load line. Therefore, it can be a good idea to create the default setup (grouped by order number) as a fallback policy with the highest *Policy sequence* number.
-> 
-> To enable the legacy setup **Consolidate shipment at release to warehouse** on the individual warehouses via the **Shipment consolidation policies** you must create a policy without grouping per **Order number** and including all the warehouses in the *Warehouse Criteria* field in the query related to the policy. Be aware that it might make sense to negate the selection deepening on the business need.
 
 You can use the **Release to warehouse** page to manually override the applicable consolidation policy in the same way that you can override fulfillment policies.
 
