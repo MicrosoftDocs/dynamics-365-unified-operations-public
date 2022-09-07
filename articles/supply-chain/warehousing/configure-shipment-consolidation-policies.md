@@ -53,10 +53,10 @@ If you are working with a new system, or with a system where you have just turne
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 1. On the Action Pane, select **Create default setup** to create the following policies:
 
-    - A *Default* policy for the *Sales orders* policy type
-    - A *Default* policy for the *Transfer issue* policy type
-    - A *CrossOrder* policy for the *Transfer issue* policy type (only if you had at least one warehouse where the **Consolidate shipment at release to warehouse** setting was enabled)
-    - A *CrossOrder* policy for the *Sales orders* policy type (only if you had at least one warehouse where the **Consolidate shipment at release to warehouse** setting was enabled)
+    - A policy named *Default* for the *Sales orders* policy type
+    - A policy named *Default* for the *Transfer issue* policy type
+    - A policy named *CrossOrder* for the *Transfer issue* policy type (only created if you had at least one warehouse where the legacy **Consolidate shipment at release to warehouse** setting was enabled)
+    - A policy named *CrossOrder* for the *Sales orders* policy type (only created if you had at least one warehouse where the legacy **Consolidate shipment at release to warehouse** setting was enabled)
 
     > [!NOTE]
     >
