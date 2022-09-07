@@ -59,7 +59,7 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 
 | Issue summary | More information|
 | ---- | ---- | 
-|Tasks management upgrade|Changes in the 10.0.30 release added the option to apply edits to library tasks to multiple checklists at one time. In order for those edits to be rolled down, a relationship must already exist between the task in the task library and the task in the checklist. Prior to the 10.0.30 release, when a library task was added to a checklist, a relationship wasn't created. An upgrade is needed to create the relationship between the task library and the checklist task. This will be released shortly. Issue #732960  |
+|Tasks management upgrade|Changes in the 10.0.30 release added the option to apply edits to library tasks to multiple checklists at one time. In order for those edits to be rolled down, a relationship must already exist between the task in the task library and the task in the checklist. Prior to the 10.0.30 release, when a library task was added to a checklist, a relationship wasn't created. An upgrade is needed to create the relationship between the task library and the checklist task. This will be released shortly. Issue #732960 |
 
 
 ## Additional resources
