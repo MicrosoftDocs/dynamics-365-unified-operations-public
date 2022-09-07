@@ -4,7 +4,7 @@
 title: Peripherals
 description: This topic explains the concepts that are related to Commerce peripherals. 
 author: BrianShook
-ms.date: 03/01/2022
+ms.date: 09/07/2022
 ms.topic: article
 audience: Application User, IT Pro
 ms.reviewer: josaw
@@ -139,8 +139,7 @@ Modern POS supports UWP MSRs and scanners. Therefore, when Modern POS is ready f
 Additional classes of POS peripherals are being added to Windows, such as classes for cash drawers and receipt printers. Support for these new device classes in Modern POS is pending.
 
 > [NOTE] 
->
-> Certain USB devices may become unresponsive or unreliable when managed by a Windows 10 power management feature called [USB Selective Suspend](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-selective-suspend). If a USB peripheral becomes unresponsive, it may be necessary to disable the slective suspend feature for that device. See the [Enabling Selective Suspend](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-selective-suspend#enabling-selective-suspend) section of the [USB Selective Suspend](https://docs.microsoft.com/en-us/windows-hardware/drivers/usbcon/usb-selective-suspend) article for more information. 
+> Certain USB devices may become unresponsive or unreliable when managed by a Windows 10 power management feature called [USB Selective Suspend](/windows-hardware/drivers/usbcon/usb-selective-suspend). If a USB peripheral becomes unresponsive, it may be necessary to disable the selective suspend feature for that device. For more information, see [Enabling Selective Suspend](/windows-hardware/drivers/usbcon/usb-selective-suspend#enabling-selective-suspend). 
 
 ### Keyboard wedge
 
