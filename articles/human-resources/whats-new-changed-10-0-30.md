@@ -44,7 +44,7 @@ article was initially published.
 
 | Feature name | Overview | Release status |
 |----|----|----|
-|Worker header control| Dynamics 365 Human Resources provides a personalizable header control in **Employee self service**, the **People hub** and the streamlined **Worker** page. The header contains key information about the worker, as well as one-click actions such as email, calling, or messaging. The header can also be modified to add or remove fields to show additional information including, custom fields.| Preview|
+| Worker header control | Dynamics 365 Human Resources provides a personalizable header control in **Employee self service**, **People** hub, and the streamlined **Worker** page. The header contains key information about the worker, and also single-click actions such as emailing, calling, or messaging. The header can be modified by removing fields or adding fields, including custom fields, to show additional information. | Preview |
 
 ## Feature enhancements included in this release
 
@@ -53,14 +53,14 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 
 | Feature name | More information |
 |--------------|------------------|
-|Task Management |Edits to library task can be applied to multiple checklists at one time.|
+| Task Management | Edits to library tasks can be applied to multiple checklists at the same time. |
 
 ## Known issues
 
-| Issue summary | More information|
+| Issue summary | More information |
 | ---- | ---- | 
-|Tasks management upgrade|Changes in the 10.0.30 release added the option to apply edits to library tasks to multiple checklists at one time. In order for those edits to be rolled down, a relationship must already exist between the task in the task library and the task in the checklist. Prior to the 10.0.30 release, when a library task was added to a checklist, a relationship wasn't created. An upgrade is needed to create the relationship between the task library and the checklist task. This will be released shortly. Issue #732960 |
-|Changes to Employee’s payment method through **Employee self service** not reflected correctly| When an employee changes the payment method via ESS, this change is was not reflected to the currently logged in user. This has been resolved. |
+| Tasks management upgrade | Changes in the 10.0.30 release added the option to apply edits to library tasks to multiple checklists at the same time. Those edits can be rolled down only if a relationship already exists between the task in the task library and the task in the checklist. Before the 10.0.30 release, when a library task was added to a checklist, no relationship was created. An upgrade is required to create the relationship between the task library and the checklist task. This upgrade will be released soon. Issue #732960. |
+| Changes to the employee's payment method through **Employee self service** wasn't correctly reflected. | When an employee changes the payment method via **Employee self service**, this change wasn't reflected for the currently signed-in user. This issue has been fixed. |
 
 ## Additional resources
 
