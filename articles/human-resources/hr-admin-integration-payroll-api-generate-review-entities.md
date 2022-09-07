@@ -34,7 +34,7 @@ Use this OData function to generate the entities needed for payroll integration.
 **Request**
 
 ```http
-GET [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
+POST [Organizaton URI]/api/data/v9.1/RefreshHumanResourcesVirtualEntities
 ```
 
 **body**
