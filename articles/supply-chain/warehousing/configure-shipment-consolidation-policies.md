@@ -63,8 +63,7 @@ If you are working with a new system, or with a system where you have just turne
     > - Both *CrossOrder* policies consider the same set of fields as the earlier logic, except it also includes the order number field. (That field is used to consolidate lines into shipments, based on factors such as the warehouse, transportation mode of delivery, and address.)
     > - Both *Default* policies consider the same set of fields as the earlier logic, except it also includes the order number field. (That field is used to consolidate lines into shipments, based on factors such as the order number, warehouse, transportation mode of delivery, and address.)
 
-1. Select the **CrossOrder** policy for the *Sales orders* policy type, and then, on the Action Pane, select **Edit query**.
-1. In the query editor dialog box, notice that warehouses where the **Consolidate shipment at release to warehouse** option is set to *Yes* are listed. Therefore, they are included in the query to reproduce your previous settings.
+1. If the system generated a policy named *CrossOrder* for the *Sales orders* policy type, then select it and, on the Action Pane, select **Edit query**. The query editor opens, where you'll be able to see which of your warehouses previously had the **Consolidate shipment at release to warehouse** setting enabled. This policy therefore reproduces your previous settings for these warehouses.
 
 ## Scenario: Configure custom shipment consolidation policies
 
