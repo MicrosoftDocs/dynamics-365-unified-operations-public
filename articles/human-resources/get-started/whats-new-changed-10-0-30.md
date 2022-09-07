@@ -57,7 +57,7 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 
 ## Known issues
 
-| Issue summary | More information |
+| Issue summary | More information  |
 | ---- | ---- | 
 | Tasks management upgrade | Changes in the 10.0.30 release added the option to apply edits to library tasks to multiple checklists at the same time. Those edits can be rolled down only if a relationship already exists between the task in the task library and the task in the checklist. Before the 10.0.30 release, when a library task was added to a checklist, no relationship was created. An upgrade is required to create the relationship between the task library and the checklist task. This upgrade will be released soon. Issue #732960. |
 | Changes to the employee's payment method through **Employee self service** wasn't correctly reflected. | When an employee changes the payment method via **Employee self service**, this change wasn't reflected for the currently signed-in user. This issue has been fixed. |
