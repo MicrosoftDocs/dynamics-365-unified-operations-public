@@ -624,7 +624,7 @@ In the body part of this request, `dimensionDataSource` is still an optional par
 - `productId` could contain one or more values. If it's an empty array, all products will be returned.
 - `siteId` and `locationId` are used for partitioning in Inventory Visibility. You can specify more than one `siteId` and `locationId` value in a *Query on-hand* request. In the current release, you must specify both `siteId` and `locationId` values.
 
-The `groupByValues` parameter is suggested to follow your configuration for indexing. For more information, see [Product index hierarchy configuration](./inventory-visibility-configuration.md#index-configuration).
+We suggest that you use the `groupByValues` parameter to follow your configuration for indexing. For more information, see [Product index hierarchy configuration](./inventory-visibility-configuration.md#index-configuration).
 
 The `returnNegative` parameter controls whether the results contain negative entries.
 
