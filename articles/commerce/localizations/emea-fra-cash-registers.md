@@ -53,6 +53,8 @@ The following is the Dynamics 365 Commerce documentation related to the NF 525 c
 
 ## Design of the NF 525 solution
 
+![High-level design of the fiscal solution for France](media/emea-fra-fiscal-solution.png)
+ 
 ## France-specific POS features
 
 The following France-specific POS features are enabled when the primary address of the legal entity that the store belongs to is in France.
