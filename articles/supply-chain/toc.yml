@@ -3463,7 +3463,7 @@
             href: warehousing/small-parcel-shipping.md
         - name: Shipment consolidation policies
           items:
-          - name: Shipment consolidation policies
+          - name: Shipment consolidation policies overview
             href: warehousing/about-shipment-consolidation-policies.md
           - name: Configure shipment consolidation policies
             href: warehousing/configure-shipment-consolidation-policies.md
