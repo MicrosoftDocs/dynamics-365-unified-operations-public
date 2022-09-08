@@ -4,7 +4,7 @@
 title: Create recommendations with demo data
 description: This topic provides guidance on how to leverage omni-channel product recommendations in Tier-1 single box environments using pre-populated, customizable demo data.
 author: bebeale
-ms.date: 07/26/2022
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
