@@ -36,7 +36,8 @@ Before a user can use a website, a contact record must be created for that user.
 When users self-register, contact records are automatically created for them. Therefore, you can't ensure that a user selects the correct customer account and legal entity. On the other hand, the invitation process lets an admin assign the correct customer account and legal entity to the contact record before an invitation is sent. If you're thinking about customizing the solution so that users can self-register, be sure to consider the possible consequences.
 
 ## Video
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4ADkI]
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ADkI]
 
 The [Invite customers to register and use your customer portal](https://youtu.be/drGUYHX9QIQ) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
@@ -99,6 +100,5 @@ The following table shows which sales orders the users in each web role can see 
 
 > [!NOTE]
 > Even though both Sam and Jane are contacts who work for customer X, they can see only the orders that they themselves have placed and nothing else. Although May has an order in the system, she can't see that order in the Customer portal, because she is an unauthorized user. (Additionally, she must have placed the order through some channel other than the Customer portal.)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
