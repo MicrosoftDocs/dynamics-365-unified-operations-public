@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.30 (November 2022)
+          href: get-started/whats-new-scm-10-0-30.md
         - name: Supply Chain Management 10.0.29 (October 2022)
           href: get-started/whats-new-scm-10-0-29.md
         - name: Supply Chain Management 10.0.28 (August 2022)
@@ -1719,6 +1721,28 @@
           href: inventory/inventory-visibility-api.md
         - name: Inventory Visibility tips
           href: inventory/inventory-visibility-tips.md
+    - name: Sensor Data Intelligence
+      items:
+        - name: Sensor Data Intelligence home page
+          href: sensor-data-intelligence/sdi-home-page.md
+        - name: Turn on Sensor Data Intelligence for your system
+          href: sensor-data-intelligence/sdi-enable-feature.md
+        - name: Deploy an IoT solution on Azure
+          href: sensor-data-intelligence/sdi-deploy-iot-solution-on-azure.md
+        - name: Sensor Data Intelligence parameters
+          href: sensor-data-intelligence/sdi-parameters.md
+        - name: Set up a simulated sensor for testing
+          href: sensor-data-intelligence/sdi-set-up-simulated-sensor.md
+        - name: The asset downtime scenario
+          href: sensor-data-intelligence/sdi-scenario-asset-downtime.md
+        - name: The asset maintenance scenario
+          href: sensor-data-intelligence/sdi-scenario-asset-maintenance.md
+        - name: The machine status scenario
+          href: sensor-data-intelligence/sdi-scenario-equipment-downtime.md
+        - name: The product quality scenario
+          href: sensor-data-intelligence/sdi-scenario-product-quality.md
+        - name: The production delays scenario
+          href: sensor-data-intelligence/sdi-scenario-production-delays.md
     - name: IoT Intelligence
       items:
         - name: IoT Intelligence home page
@@ -3463,7 +3487,7 @@
             href: warehousing/small-parcel-shipping.md
         - name: Shipment consolidation policies
           items:
-          - name: Shipment consolidation policies
+          - name: Shipment consolidation policies overview
             href: warehousing/about-shipment-consolidation-policies.md
           - name: Configure shipment consolidation policies
             href: warehousing/configure-shipment-consolidation-policies.md

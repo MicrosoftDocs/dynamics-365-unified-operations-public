@@ -294,8 +294,6 @@ The following illustration shows the timeline for this example.
 
 ## Example 5: Simple FEFO, requirement, 10 negative days
 
-<!-- KFM: This is more of a negative days example than a shelf life example. We should point out more explicitly how shelf life affects this situation (or maybe otherwise remove this example). -->
-
 This example shows how shelf life works when a large number of negative days is added for an item. Negative days are the number of days that you're willing to wait before you order replenishment of an item that has negative inventory. The system doesn't create supply unless the number of negative days is exceeded.
 
 The system has the following item and master plan settings:
