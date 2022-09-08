@@ -7,7 +7,7 @@ In this topic you'll find the basic process for adding or updating content for:
 - Dynamics 365 Commerce
 - Dynamics 365 Talent
 
-This documentation is published [here](https://docs.microsoft.com/en-us/dynamics365/unified-operations/fin-and-ops/index).
+This documentation is published [here](https://docs.microsoft.com/dynamics365/unified-operations/fin-and-ops/index).
 
 ## Table of contents 
 
