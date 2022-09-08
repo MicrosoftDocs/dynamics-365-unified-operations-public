@@ -67,7 +67,7 @@ The following image shows the **Open in Microsoft Office** menu on the **Fleet C
 When an entity has the same root datasource (table) as a form, it will be added as an option in the Open in Excel section of the Open in Microsoft Office menu. This is referred to as a “generated” option.
 
 > [!NOTE]
-> The user must have security access to the underyling entity for that option to appear in the Open in Excel menu. See [Security and entities] for more details.
+> The user must have security access to the underyling entity for that option to appear in the Open in Excel menu. See [Security and data entities](../data-entities/security-data-entities.md) for more details.
 
 ## What fields will be shown in the workbook?
 The default fields that will be added into the workbook are the key and mandatory fields of the entity. If a different set of fields should be provided by default, then those fields can be added into the **AutoReport field group** on the entity. The following image shows the Visual Studio view of the AutoReport field group for the FMCustomerEntity.
