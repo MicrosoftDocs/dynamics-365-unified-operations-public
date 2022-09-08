@@ -4,7 +4,7 @@
 title: Set up an alternate dataflow for recommendations
 description: This article describes how to configure an environment by using an alternate dataflow to provide data to the recommendations service. 
 author: bebeale
-ms.date: 08/18/2022
+ms.date: 09/08/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -20,9 +20,13 @@ ms.search.validFrom: 2019-10-31
 
 This article describes how to configure an environment by using an alternate dataflow to provide data to the recommendations service.
 
-The following illustration compares out-of-band (OOB) and alternate dataflows in an environment.
+The following illustration shows the out-of-the-box dataflow in an environment.
 
-![Overview of how the alternate dataflow will fit into an environment.](media/alternate-flow.png)
+![Out-of-the-box dataflow in an environment](media/reco-out-of-the-box-dataflow.png)
+
+The following illustration shows the alternate dataflow in an environment.
+
+![Alternate dataflow in an environment](media/reco-alternate-dataflow.png)
 
 ## Assumptions
 
