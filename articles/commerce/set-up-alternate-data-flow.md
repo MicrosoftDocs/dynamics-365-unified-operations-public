@@ -20,11 +20,13 @@ ms.search.validFrom: 2019-10-31
 
 This article describes how to configure an environment by using an alternate dataflow to provide data to the recommendations service.
 
-The following illustration shows the out-of-the-box dataflow in an environment.
+## Comparison of out-of-the-box dataflow with alternate dataflow
+
+The following illustration depicts the out-of-the-box dataflow in an environment.
 
 ![Out-of-the-box dataflow in an environment](media/reco-out-of-the-box-dataflow-2.png)
 
-The following illustration shows the alternate dataflow in an environment.
+The following illustration depicts an alternate dataflow, where the entity store sync batch job is replaced with alternate dataflow steps.
 
 ![Alternate dataflow in an environment](media/reco-alternate-dataflow-2.png)
 
