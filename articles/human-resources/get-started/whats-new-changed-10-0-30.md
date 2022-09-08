@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.30
 
 # What's new or changed in Dynamics 365 Human Resources 10.0.30 (November 2022)
 
-[!include [banner](../includes/preview-banner.md)]
+[!include [banner](../../includes/preview-banner.md)]
 
 This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.30. This version has a build number of 10.0.1362 and is available on the following schedule:
 
