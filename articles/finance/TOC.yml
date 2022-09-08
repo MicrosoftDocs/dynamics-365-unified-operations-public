@@ -1136,10 +1136,12 @@
           items:
           - name: Accounting distributions
             href: accounts-payable/accounting-distributions.md
-          - name: Subledger  transfer to the General ledger
+          - name: Subledger transfer to the General ledger
             href: general-ledger/subledger-transfer.md
           - name: Accounting source explorer
             href: accounts-payable/accounting-source-explorer.md
+          - name: Documents pending accounting
+            href: general-ledger/documents-pending-accounting.md
       - name: Reports and inquiries
         items:
         - name: View journal entries and transactions
