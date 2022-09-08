@@ -60,21 +60,25 @@ A planned maintenance window is typically during the dark hours of the geographi
 
 ## What is the schedule for proactive quality updates?
 
-> [!Important] 
-> Microsoft will send email notification(s) to the pod(s) of environments that are scheduled to receive [proactive quality updates](../../fin-ops/get-started/quality-updates.md), at least 5 business days in advance. The schedule below is only applicable to such environments that have been communicated of an upcoming update. Quality updates will always happen in a rolling fashion which enables us to target a pod of environments on the scheduled start date and complete all the pods by the end of the third day for a set of regions. This does not mean an environment update will span across 3 days; the update will definitively end within the dark hour window of the given region. It simply means we cannot pre-determine which pod will get updated on a given day within the 3 day-range. All updates will be done in dark hour(s) with near-zero downtime. The schedule below shows the starting and ending dates for each region group, which we also refer to as a *Station*, where currently a quality update is scheduled to roll out. Quality updates will start with only sandbox environments at the beginning, and as the percentage of successfully deployed sandboxes increases, deployment to production environments will commence with advance notifications to customers.
+> [!IMPORTANT] 
+> At least five business days in advance, Microsoft will send email notifications to the pods of environments that are scheduled to receive [proactive quality updates](../../fin-ops/get-started/quality-updates.md). The following schedule is applicable only to environments that have been notified about an upcoming update.
+>
+> Quality updates will always occur in a rolling manner that enables us to target a pod of environments on the scheduled start date and complete all the pods by the end of the third day for a set of regions. However, this doesn't mean that an environment update will span three days. It just means that we can't pre-determine which pod will be updated on a given day within the three-day range. All updates will be done during dark hours, with near-zero downtime. Updates will definitively end within the dark-hour window of a given region.
+>
+> The following schedule shows the start and end dates for each region group, or *station*, where a quality update is currently scheduled to be rolled out. Quality updates will start with only sandbox environments. Then, as the percentage of successfully deployed sandboxes increases, deployment to production environments will begin with advance notifications to customers.
 
 
-|Station|   Region|Current version | Scheduled start date | Scheduled end date
-| :--- | :---   | :---   |:---   |  :---   | 
-|<strong>Station 1</strong> |<i>Central Canada, East Canada, Central France, Central India, West Switzerland, East Norway</i>|Service Update 10.0.28|September 14, 2022|September 17, 2022
-|<strong>Station 2</strong> |<i>Japan East, South East Asia, UK South, South France, North Switzerland, North Norway, South India, Australia East, Australia South, South Africa North, UAE North</i>|||
-|<strong>Station 3</strong> |<i>North Europe, Central Us, West US</i>|||
-|<strong>Station 4</strong> |<i>DoD, Government Community Cloud, China</i>|||
+| Station | Region | Current version | Scheduled start date | Scheduled end date |
+|---|---|---|---|---| 
+| Station 1 | Central Canada, East Canada, Central France, Central India, West Switzerland, East Norway | Service Update 10.0.28 | September 14, 2022 | September 17, 2022 |
+| Station 2 | Japan East, South East Asia, UK South, South France, North Switzerland, North Norway, South India, Australia East, Australia South, South Africa North, UAE North | | | |
+| Station 3 | North Europe, Central US, West US | | | |
+| Station 4 | DoD, Government Community Cloud, China | | | |
 
 > [!NOTE] 
 > Effective August 2022 through October 2022, Microsoft will start to roll out updates to the production environment during any weekend, and outside of normal business hours, to help minimize any potential impact on your environments. All sandbox environment will be updated during any night, outside of business hours.
 > 
-> All the maintenance activity (operating system patching, security hotfixes, and quality updates) will be performed during the dark hour window to provide a near-zero-downtime experience.
+> All the maintenance activity (operating system patching, security hotfixes, and quality updates) will be performed during the dark-hour window to provide a near-zero-downtime experience.
 
 ## Can operating system updates be applied in near-zero-downtime?
 Yes. Microsoft has provided near-zero-downtime infrastructure maintenance for operating system updates since May 2021.
@@ -94,7 +98,7 @@ Users who are connected to the environment might experience a brief disconnectio
 For example, the user may be working on a sales order creating lines or posting. After the interruption, the user might return to the Sales workspace, but the new order and lines should still be available. We recommend that users go back to the main form and check their work. 
 
 ### Batch service
-Individual batch servers will not be available for up to 30 minutes.The following activities will occur: 
+Individual batch servers will not be available for up to 30 minutes. The following activities will occur: 
 
 - Any executing batch jobs will be terminated.
 - Jobs that were terminated will be automatically restarted when the batch service recovers. Set the maximum number of retries to zero for any jobs that should not be restarted automatically.
@@ -108,7 +112,7 @@ For more information, see [Can I change the maximum number of retries and the re
 - If priority-based scheduling isn't enabled, any batch groups that are configured with AOS instances will experience downtime until the associated AOS instance is updated and back in rotation.
 
 > [!NOTE] 
-> We are working to reduce the downtime for batch service to be a few minutes. This will require customers to adopt priority-based scheduling of batch jobs.
+> We are working to reduce the downtime for batch service to a few minutes. This will require customers to adopt priority-based scheduling of batch jobs.
 
 ## Is it possible to reschedule near-zero-downtime operating system maintenance?
 No. To meet regulatory and security compliance standards, Microsoft will perform the planned maintenance during the dark hours of the geographic region where your environment is deployed. The main objective of planned maintenance is to regularly patch environments to remediate security vulnerabilities and apply critical quality updates. If you delay updates, you will put data security, availability, and reliability at risk. 
