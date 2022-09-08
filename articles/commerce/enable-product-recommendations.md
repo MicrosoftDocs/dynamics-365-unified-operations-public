@@ -4,7 +4,7 @@
 title: Enable product recommendations
 description: This article explains how to make product recommendations that are based on artificial intelligence-machine learning (AI-ML) available for Microsoft Dynamics 365 Commerce customers. 
 author: bebeale
-ms.date: 08/31/2021
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -40,12 +40,19 @@ This article explains how to make product recommendations that are based on arti
 1. Confirm that Azure AD Identity configuration contains an entry for Recommendations. More information on how to do this action is below.
 1. Ensure that the Entity store daily refresh to Azure Data Lake Storage Gen2 has been scheduled. For more information, see [Ensure that the Entity store refresh has been automated](../fin-ops-core/dev-itpro/data-entities/entity-store-data-lake.md).
 1. Enable RetailSale measurements for Entity store. For more information about setting up this process, see [Work with measures](/dynamics365/ai/customer-insights/pm-measures).
+1. Ensure that your environment has configured the serving and cooking regions in the currently supported regions, as follows:
+
+    - **Supported cooking regions:** EU/US/CA/AU.
+    - **Supported serving regions:** US/CA/AU. If the serving region doesn't match one of the existing supported regions, the recommendations service will select the closest supported serving region.
 
 After the steps above have been completed, you will be ready to enable recommendations.
 
+> [!NOTE]
+> There is a known issue where recommendations don't appear after the following steps are completed. This issue is caused by data flow issues in the environment. If your environment doesn't show recommendation results, configure the alternative data for the recommendations service by following the steps in [Set up an alternate dataflow for recommendations](set-up-alternate-data-flow.md). You must have Azure administrator permissions to complete these steps. If you need assistance, contact your FastTrack representative.
+
 ## Azure AD Identity configuration
 
-This step is only required for customers running an infrastructure as a service (IaaS) configuration. Azure AD Identity configuration is automatic for customers running on Azure Service Fabric, but it is recommended that you verify that the setting is configured as expected.
+This step is required only for customers who run an infrastructure as a service (IaaS) configuration. Azure AD identity configuration is automatic for customers who run on Azure Service Fabric, but we recommend that you verify that the setting is configured as expected.
 
 ### Setup
 
@@ -98,6 +105,8 @@ To learn more about personalized recommendations, see [Enable personalized recom
 
 [Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment](enable-adls-environment.md)
 
+[Set up alternate data flow for recommendations](set-up-alternate-data-flow.md)
+
 [Enable personalized recommendations](personalized-recommendations.md)
 
 [Enable "shop similar looks" recommendations](shop-similar-looks.md)
@@ -115,6 +124,7 @@ To learn more about personalized recommendations, see [Enable personalized recom
 [Create recommendations with demo data](product-recommendations-demo-data.md)
 
 [Product recommendations FAQ](faq-recommendations.md)
+
 
 
 
