@@ -46,7 +46,7 @@ The scenarios that are presented in this article show how to set up default and 
 
 To use the *Shipment consolidation policies* feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off. If you are running a version older than 10.0.29, then admins can turn this functionality on or off by searching for the *Shipment consolidation policies* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
-## Set up your initial consolidation policies
+## <a name="initial-policies"></a>Set up your initial consolidation policies
 
 If you're working with a new system or a system where you've just turned on the *Shipment consolidation policies* feature for the first time, follow these steps to set up your initial shipment consolidation policies.
 
@@ -279,7 +279,7 @@ In this example, you will create a *Warehouses allowing consolidation* policy th
 - Consolidation with open shipments is turned off.
 - Consolidation is done across orders using the fields selected by default CrossOrder policy (to replicate the previous **Consolidate shipment at release to warehouse** check box).
 
-Typically, this business case can be addressed by using the default policies that you created in [scenario 1](#scenario-1). However, you can also manually create similar policies by following these steps.
+Typically, this business case can be addressed by using the default policies that you created in [Set up your initial consolidation policies](#initial-policies). However, you can also manually create similar policies by following these steps.
 
 1. Go to **Warehouse management \> Setup \> Release to warehouse \> Shipment consolidation policies**.
 1. Set the **Policy type** field to *Sales orders*.
