@@ -2,7 +2,7 @@
 title: Configure detours for steps in mobile device menu items
 description: This article describes how to configure detours for menu items so that workers can park the current task, perform another task, and then return to the original task without losing any information.
 author: Mirzaab
-ms.date: 08/09/2022
+ms.date: 09/01/2022
 ms.topic: article
 ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
 audience: Application User
@@ -10,7 +10,7 @@ ms.reviewer: kamaybac
 ms.search.region: Global
 ms.author: mirzaab
 ms.search.validFrom: 2021-10-15
-ms.dyn365.ops.version: 10.0.23
+ms.dyn365.ops.version: 10.0.30
 ---
 
 # Configure detours for steps in mobile device menu items
@@ -30,8 +30,11 @@ Before you can configure detours for steps in mobile device menu items, you must
 
 1. Go to **System administration \> Workspaces \> Feature management**.
 1. Make sure that the *Warehouse app step instructions* feature is turned on for your system. As of Supply Chain Management version 10.0.29, this feature is turned on by default. For more information about the *Warehouse app step instructions* feature, see [Customize step titles and instructions for the Warehouse Management mobile app](mobile-app-titles-instructions.md). This feature is a prerequisite for the *Warehouse management app detours* feature.
-1. Turn on the *Warehouse management app detours* feature. This feature is the one that is described in this article. As of Supply Chain Management version 10.0.29, it's turned on by default.
-1. If the *Warehouse management app detours* feature wasn't already turned on, update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
+1. Turn on the following features, which provide the functionality described in this article:
+    - *Warehouse management app detours*<br>(As of Supply Chain Management version 10.0.29, this feature is turned on by default.)
+    - *Multi-level detours for the Warehouse Management mobile app*
+1. If the *Warehouse management app detours* and/or *Multi-level detours for the Warehouse Management mobile app* features were't already turned on, update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
+1. Repeat the previous step for each legal entity (company) where you use the Warehouse Management mobile app.
 
 ## Configure a detour from a menu-specific override
 
@@ -142,3 +145,6 @@ In this procedure, you will do a location inquiry by using the Warehouse Managem
 1. Notice that the license plate has been copied from the card that you selected. Confirm the value.
 1. You can now follow the standard task flow to complete the movement. After the work is completed, open the actions menu, and select **Cancel**.
 1. You're returned to the **Location inquiry** page. Note that the values aren't automatically updated. Therefore, you must manually refresh the page to see the changes from the movement detour.
+
+> [!NOTE]
+> The *Multi-level detours for the Warehouse Management mobile app* feature enables you to define multi-level detours (detours within detours), which will allow workers to jump from an existing detour two a second one and then back again. The feature supports two levels of detours out of the box and, if necessary, you can customize your system to support three or more levels of detours by creating code extensions on the `WHSWorkUserSessionState` table.
