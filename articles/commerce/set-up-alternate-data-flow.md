@@ -22,11 +22,11 @@ This article describes how to configure an environment by using an alternate dat
 
 The following illustration shows the out-of-the-box dataflow in an environment.
 
-![Out-of-the-box dataflow in an environment](media/reco-out-of-the-box-dataflow.png)
+![Out-of-the-box dataflow in an environment](media/reco-out-of-the-box-dataflow-2.png)
 
 The following illustration shows the alternate dataflow in an environment.
 
-![Alternate dataflow in an environment](media/reco-alternate-dataflow.png)
+![Alternate dataflow in an environment](media/reco-alternate-dataflow-2.png)
 
 ## Assumptions
 
