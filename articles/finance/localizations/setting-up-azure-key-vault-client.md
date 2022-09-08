@@ -26,7 +26,7 @@ The functionality provides two options for storing certificates: local storage a
 
 ![System parameters page, General tab.](media/1_System_parameters.jpg)
 
-Some setup is required before you can work with certificates that are stored in Key Vault. For information about the required settings, see the following Microsoft Knowledge Base (KB) article: [4040294 - Maintaining Azure Key Vault storage](https://support.microsoft.com/en-us/help/4040294/maintaining-azure-key-vault-storage). After you set up the Key Vault storage, you should link to the certificates in finance and operations apps.
+Some setup is required before you can work with certificates that are stored in Key Vault. For information about the required settings, see the following Microsoft Knowledge Base (KB) article: [4040294 - Maintaining Azure Key Vault storage](https://support.microsoft.com/help/4040294/maintaining-azure-key-vault-storage). After you set up the Key Vault storage, you should link to the certificates in finance and operations apps.
 
 After the certificate is installed in Key Vault, it must be set up in the application.
 

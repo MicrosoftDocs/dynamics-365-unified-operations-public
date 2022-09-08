@@ -44,25 +44,25 @@ These videos will help introduce RSAT and get you started.
 
 ### Use task recorder to create a test case for RSAT
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4uM5U]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4uM5U]
 
 The [How to use task recorder to create a test case for the Regression suite automation tool (RSAT)](https://youtu.be/bBr4BXAxTNI) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ### Create a test plan in Azure DevOps to use with RSAT
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vx0I]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vx0I]
 
 The [How to create a test plan in Azure DevOps to use with the Regression suite automation tool (RSAT)](https://youtu.be/3jIuBleAnQk) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ### How to use RSAT
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4vl8Z]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4vl8Z]
 
 The [How to use the Regression suite automation tool (RSAT)](https://youtu.be/uhN9JItzGAk) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
 ### The improved Excel experience in RSAT 2.0
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Gi0V]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Gi0V]
 
 The [Improved Excel experience in RSAT 2.0](https://youtu.be/fcEkSIVQ1Bg) video (shown above) is included in the [finance and operations playlist](https://www.youtube.com/playlist?list=PLcakwueIHoT_SYfIaPGoOhloFoCXiUSyW) available on YouTube.
 
