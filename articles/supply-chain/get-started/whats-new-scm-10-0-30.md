@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.30
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.30. This version has a build number of 10.0.xxxx <!-- KFM: Get new build number --> and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.30. This version has a build number of 10.0.1362 and is available on the following schedule:
 
 - **Preview of release:** September 2022
 - **General availability of release (self-update):** October 2022
@@ -50,9 +50,13 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.30 includes platform updates. To learn more, see [Platform updates for version 10.0.30 of Finance and Operations apps (November 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md). <!--KFM: Confirm link -->
 
+<!-- KFM: Get new KB link
+
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.30, sign in to Lifecycle Services (LCS) and view the [KB article](#). <!-- KFM: Get new KB link -->
+For information about the bug fixes included in each of the updates that are part of version 10.0.30, sign in to Lifecycle Services (LCS) and view the [KB article](#).  
+
+-->
 
 ### Dynamics 365 and industry clouds: 2022 release wave 1 plan
 
