@@ -4,7 +4,7 @@
 title: Maintenance in self-service environments FAQ
 description: This article provides answers to frequently asked questions about the Microsoft planned maintenance in self-service environments.
 author: matapg007
-ms.date: 08/08/2022
+ms.date: 09/08/2022
 ms.topic: article
 audience: Developer, IT Pro
 ms.reviewer: sericks
@@ -61,12 +61,12 @@ A planned maintenance window is typically during the dark hours of the geographi
 ## What is the schedule for proactive quality updates?
 
 > [!Important] 
-> Microsoft will send email notification(s) to the pod(s) of environments that will be scheduled to receive proactive quality updates, atleast 5 business days in advance. The schedule below is only applicable to such environments that have been communicated of an upcoming update. Quality updates will always happen in a rolling fashion which enables us to target a pod of environments on the scheduled start date and complete all the pods by the end of the third day for a set of regions. This does not mean an environment update will span across 3 days; the update will definitively end within the dark hour window of the given region. It simply means we cannot pre-determine which pod will get updated on a given day within the 3 day-range. All updates will be done in dark hour(s) with nZDT. The schedule below shows the begin and end date(s) for each region group which we also refer to as a Station, where currently a quality update is scheduled to rollout. Quality updates will start with only sandboxes at the beginning and as the percentage of successfully deployed sandboxes increases, deployment to production environments will commence with advance notifications to customers.
+> Microsoft will send email notification(s) to the pod(s) of environments that are scheduled to receive [proactive quality updates](../../fin-ops/get-started/quality-updates.md), at least 5 business days in advance. The schedule below is only applicable to such environments that have been communicated of an upcoming update. Quality updates will always happen in a rolling fashion which enables us to target a pod of environments on the scheduled start date and complete all the pods by the end of the third day for a set of regions. This does not mean an environment update will span across 3 days; the update will definitively end within the dark hour window of the given region. It simply means we cannot pre-determine which pod will get updated on a given day within the 3 day-range. All updates will be done in dark hour(s) with near-zero downtime. The schedule below shows the starting and ending dates for each region group, which we also refer to as a *Station*, where currently a quality update is scheduled to roll out. Quality updates will start with only sandbox environments at the beginning, and as the percentage of successfully deployed sandboxes increases, deployment to production environments will commence with advance notifications to customers.
 
 
-|Station|   Region|Current Version | Scheduled Start Date | Scheduled End Date
+|Station|   Region|Current version | Scheduled start date | Scheduled end date
 | :--- | :---   | :---   |:---   |  :---   | 
-|<strong>Station 1</strong> |<i>Central Canada, East Canada, Central France, Central India, West Switzerland, East Norway</i>|Service Update 10.0.28|September 14th, 2022|September 17th, 2022
+|<strong>Station 1</strong> |<i>Central Canada, East Canada, Central France, Central India, West Switzerland, East Norway</i>|Service Update 10.0.28|September 14, 2022|September 17, 2022
 |<strong>Station 2</strong> |<i>Japan East, South East Asia, UK South, South France, North Switzerland, North Norway, South India, Australia East, Australia South, South Africa North, UAE North</i>|||
 |<strong>Station 3</strong> |<i>North Europe, Central Us, West US</i>|||
 |<strong>Station 4</strong> |<i>DoD, Government Community Cloud, China</i>|||
