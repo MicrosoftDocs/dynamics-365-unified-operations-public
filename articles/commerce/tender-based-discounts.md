@@ -17,7 +17,6 @@ ms.search.validFrom: 2018-10-31
 # Tender-based discount
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes tender-based discount functionality that lets retailers configure discounts for specific tender types in Microsoft Dynamics 365 Commerce.
 
