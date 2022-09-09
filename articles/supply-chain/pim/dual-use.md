@@ -89,7 +89,13 @@ To identify a product as a dual-use good and apply a dual-use category to it, fo
 1. On the **Foreign trade** FastTab, set the **Dual use products** option to **Yes** to identify the current product as a dual-use good.
 1. Set the **Dual use code** field to the code that applies to the current product. (You defined this code on the **Dual use categories** page.)
 
-This setup is checked when you create a sales order.
+> [!Note] 
+> 
+> This setup is checked only when the sales confirmation is generated.
+>
+> The validation upon sales confirmation is performed as the below:
+>
+> Does the order include any products that are dual-use goods; if so, does the destination country require dual-use certificates; if so, do certificates exist for each dual-use good for the destination country that are valid within the confirmed ship dates; if not, then a warning is thrown informing the user that dual use certificates for one or more dual-use goods in the sales order aren’t valid. The user will be able to overrule the warning and proceed with the sales confirmation if desired. 
 
 ## Set up dual-use certificates
 
