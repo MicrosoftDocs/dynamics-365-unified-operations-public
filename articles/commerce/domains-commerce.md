@@ -141,9 +141,9 @@ The Commerce-supplied Azure Front Door instance does not support apex domains (r
 
 - **Option 1** - Use your DNS provider to redirect the apex domain to a "www" domain. For example, fabrikam.com redirects to `www.fabrikam.com` where `www.fabrikam.com` is the CNAME record that points to the Commerce-hosted Azure Front Door instance.
 
-- **Option 2** - If your DNS provider supports ALIAS records, you can point the apex domain to the front door endpoint. This ensures that the IP change by the front door endpoint is reflected.
+- **Option 2** - If your DNS provider supports ALIAS records, you can point the apex domain to the front door endpoint. This ensures that the IP change by the front door endpoint is reflected. But this Frontdoor must be hosted by you.
   
-- **Option 3** - If your DNS provider doesn't support ALIAS records, then you must set up a CDN or front door instance on your own to host the apex domain.
+- **Option 3** - If your DNS provider doesn't support ALIAS records, then you must move DNS to Azure DNS and host both DNS and Frontdoor yourself.
 
 > [!NOTE]
 > If you are using Azure Front Door, you must also set up an Azure DNS in the same subscription. The apex domain hosted on Azure DNS can point to your Azure Front Door as an alias record. This is the only work around, as apex domains must always point to an IP address.
