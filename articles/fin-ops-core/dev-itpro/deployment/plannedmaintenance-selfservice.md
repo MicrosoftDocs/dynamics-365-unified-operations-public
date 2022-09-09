@@ -60,28 +60,24 @@ A planned maintenance window is typically during the dark hours of the geographi
 
 ## What is the schedule for proactive quality updates?
 
+| Station | Regions | Current major version | Schedule |
+|---|---|---|---|
+| Station 1 | Central Canada, East Canada, Central France, Central India, West Switzerland, East Norway | Service Update 10.0.28 | September 15 to September 18, 2022 |
+| Station 2 | Japan East, South East Asia, UK South, South France, North Switzerland, North Norway, South India, Australia East, Australia South, South Africa North, UAE North | | |
+| Station 3 | North Europe, Central US, West US | | |
+| Station 4 | DoD, Government Community Cloud, China | | |
+
 > [!IMPORTANT] 
-> At least five business days in advance, Microsoft will send email notifications to the pods of environments that are scheduled to receive [proactive quality updates](../../fin-ops/get-started/quality-updates.md). The following schedule is applicable only to environments that have been notified about an upcoming update.
+> Five business days in advance, Microsoft will send email notifications to the set of environments that are scheduled to receive [proactive quality updates](../../fin-ops/get-started/quality-updates.md). The preceding schedule is applicable only to environments that have been notified about an upcoming update.
 >
-> Quality updates will always occur in a rolling manner that enables us to target a pod of environments on the scheduled start date and complete all the pods by the end of the third day for a set of regions. However, this doesn't mean that an environment update will span three days. It just means that we can't pre-determine which pod will be updated on a given day within the three-day range. All updates will be done during dark hours, with near-zero downtime. Updates will definitively end within the dark-hour window of a given region.
->
-> The following schedule shows the start and end dates for each region group, or *station*, where a quality update is currently scheduled to be rolled out. Quality updates will start with only sandbox environments. Then, as the percentage of successfully deployed sandboxes increases, deployment to production environments will begin with advance notifications to customers.
-
-
-| Station | Region | Current version | Scheduled start date | Scheduled end date |
-|---|---|---|---|---| 
-| Station 1 | Central Canada, East Canada, Central France, Central India, West Switzerland, East Norway | Service Update 10.0.28 | September 14, 2022 | September 17, 2022 |
-| Station 2 | Japan East, South East Asia, UK South, South France, North Switzerland, North Norway, South India, Australia East, Australia South, South Africa North, UAE North | | | |
-| Station 3 | North Europe, Central US, West US | | | |
-| Station 4 | DoD, Government Community Cloud, China | | | |
+> For each region group, or *station*, where a quality update is currently scheduled to be rolled out, the schedule shows a range of three days. Quality updates will start with only sandbox environments. Then, as the percentage of successfully deployed sandboxes increases, deployment to production environments will begin with advance notifications to customers.
+> 
+> Quality updates will always occur in a rolling manner that enables us to target a set of environments per schedule and complete all the sets by the end of the third day for a station. However, this doesn't mean that an environment update will span three days. It just means that we can't pre-determine which set of environments will be updated on a given day within the three-day range. All updates will be done during dark hours, with near-zero downtime. Updates will definitively end within the dark-hour window of a given region.
 
 > [!NOTE] 
-> Effective August 2022 through October 2022, Microsoft will start to roll out updates to the production environment during any weekend, and outside of normal business hours, to help minimize any potential impact on your environments. All sandbox environment will be updated during any night, outside of business hours.
+> Effective August 2022 through October 2022, Microsoft will start to roll out updates to the production environment during any weekend, and outside of normal business hours, to help minimize any potential impact on your environments. All sandbox environments will be updated during any night, outside of business hours.
 > 
-> All the maintenance activity (operating system patching, security hotfixes, and quality updates) will be performed during the dark-hour window to provide a near-zero-downtime experience.
-
-## Can operating system updates be applied in near-zero-downtime?
-Yes. Microsoft has provided near-zero-downtime infrastructure maintenance for operating system updates since May 2021.
+> All the maintenance activity (system updates, security hotfixes, and quality updates) will be performed during the dark-hour window to provide a near-zero-downtime experience.
 
 ## What does near-zero-downtime maintenance mean?
 Customers can continue to operate the system during the maintenance activity. They may experience brief interruptions or disconnects during this window, but will not need to take a full downtime.

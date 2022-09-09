@@ -734,6 +734,8 @@
           href: enable-ADLS-environment.md 
         - name: Enable product recommendations
           href: enable-product-recommendations.md
+        - name: Set up an alternate dataflow
+          href: set-up-alternate-data-flow.md
         - name: Personalized recommendations
           items:
           - name: Enable personalized recommendations
