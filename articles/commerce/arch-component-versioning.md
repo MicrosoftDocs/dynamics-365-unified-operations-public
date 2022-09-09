@@ -36,15 +36,15 @@ To ensure compatibility between all Commerce components that are serviced and de
 
 - **Commerce headquarters and finance and operations apps must be on the same version as, or a newer version than, Commerce Scale Unit (both cloud and self-hosted).**
 
-    For example, if Commerce headquarters and finance and operations apps are on version 10.0.28, Commerce Scale Unit must be on version 10.0.28 or earlier (for example, 10.0.27 or 10.0.26).
+    For example, if Commerce headquarters and finance and operations apps are on version 10.0.29, Commerce Scale Unit must be on version 10.0.29 or earlier (for example, 10.0.28 or 10.0.27).
 
 - **Commerce Scale Unit must be on the same version as, or a newer version than, Modern Point of Sale (POS), Hardware Station, and the Commerce software development kit (SDK) and associated local site configurations (such as modules, data actions, and themes).**
 
-    For example, if Commerce Scale Unit is on version 10.0.28, Modern POS, Hardware Station, and the Commerce storefront must be on version 10.0.28 or earlier (for example, 10.0.27 or 10.0.26).
+    For example, if Commerce Scale Unit is on version 10.0.29, Modern POS, Hardware Station, and the Commerce storefront must be on version 10.0.29 or earlier (for example, 10.0.28 or 10.0.27).
 
 - **Extension packages must be compiled against the same version as, or a newer version than, the target component that the extension applies to.**
 
-    For example, if the deployed Commerce Scale Unit is on version 10.0.28, the corresponding extension packages must be compiled against version 10.0.28 or earlier (for example, 10.0.27 or 10.0.26).
+    For example, if the deployed Commerce Scale Unit is on version 10.0.29, the corresponding extension packages must be compiled against version 10.0.29 or earlier (for example, 10.0.28 or 10.0.27).
 
 ### Quality updates
 
@@ -56,12 +56,12 @@ The following table describes the current supported versions of various Commerce
 
 | Component | Latest available release (first release available in Sandbox) | Latest available component version number (first release available in Sandbox) | Earliest supported release | Earliest supported component version number |
 |---|---|---|---|---|
-| Finance and operations apps | 10.0.28 | 10.0.28 | 10.0.24 | 10.0.24 |
-| Commerce Scale Unit (cloud-hosted) | 10.0.28 | 9.38 | 10.0.24 | 9.34 |
-| Commerce module library | 10.0.28 | 9.38 | 10.0.24 | 9.34 |
-| Commerce Scale Unit (self-hosted) | 10.0.28 | 9.38 | 10.0.20 | 9.30 |
-| Modern POS | 10.0.28 | 9.38 | 10.0.20 | 9.30 |
-| Hardware Station | 10.0.28 | 9.38 | 10.0.20 | 9.30 |
+| Finance and operations apps | 10.0.29 | 10.0.29 | 10.0.25 | 10.0.25 |
+| Commerce Scale Unit (cloud-hosted) | 10.0.29 | 9.39 | 10.0.29 | 9.35 |
+| Commerce module library | 10.0.29 | 9.39 | 10.0.25 | 9.35 |
+| Commerce Scale Unit (self-hosted) | 10.0.29 | 9.39 | 10.0.21 | 9.31 |
+| Modern POS | 10.0.29 | 9.39 | 10.0.21 | 9.31 |
+| Hardware Station | 10.0.29 | 9.39 | 10.0.21 | 9.31 |
 
 ## One Version requirements
 
