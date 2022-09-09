@@ -33,11 +33,6 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The Lifecycle Services (LCS) project migration manager utility allows customers to move their project data from one geography to another that LCS supports.  In this article, we will describe the terminology, the supported scenarios, and also cover some frequently asked questions around this functionality.
 
-> [!IMPORTANT]
-> Copying production data during business hours or peak hours could have an impact on the production system. It's highly recommended to do the refresh database operation during off-peak hours and limit only one refresh operation at a time.
->
-> Copying production data to your sandbox environment for the purpose of production reporting is not supported.
-
 ## Why move geographies?
 First and foremost, is understanding why you might want to move your LCS project from one "geo" or geography to another.  Originally, LCS only supported a single instance - https://lcs.dynamics.com/ - which was the global endpoint for all customers.  With the recent regulatory requirement trend across the industry for customers and software vendors to keep data within a geographic boundary, LCS has started to deploy geographic-specific instances of LCS so that customers can have all of their data in a desired location.
 
