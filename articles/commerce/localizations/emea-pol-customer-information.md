@@ -16,7 +16,6 @@ ms.search.validFrom: 2019-11-11
 # Customer information management for Poland
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 ## Introduction
 
