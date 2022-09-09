@@ -74,14 +74,7 @@ We recommend that you import and set up your Tax Calculation configuration with 
 | 10.0.28         | Tax Calculation Configuration 40.54.234 |
 | 10.0.27         | Tax Calculation Configuration 40.54.234 |
 | 10.0.26         | Tax Calculation Configuration 40.54.234 |
-| 10.0.25         | Tax Calculation Configuration 40.50.225 |
-| 10.0.24         | Tax Calculation Configuration 40.50.225 |
-| 10.0.23         | Tax Calculation Configuration 40.50.221 |
-| 10.0.22         | Tax Calculation Configuration 40.48.215 |
-| 10.0.21         | Tax Calculation Configuration 40.48.215 |
-| 10.0.20         | Tax Calculation Configuration 40.43.208 |
-| 10.0.19         | Tax Calculation Configuration 36.38.193 |
-| 10.0.18         | Tax Configuration - Europe 30.12.82     |
+
 
 ## Data flow
 
