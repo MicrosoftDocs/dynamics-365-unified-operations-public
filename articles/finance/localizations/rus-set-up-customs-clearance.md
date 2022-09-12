@@ -59,7 +59,7 @@ This article explains how to set up the registration information that reflects t
 
 4. On the Action Pane, select **Save**.
 
-![Tracking dimensions lines on the Tracking dimension groups page.](media/set-up-customs-clearance-02.png)
+    ![Tracking dimensions lines on the Tracking dimension groups page.](media/set-up-customs-clearance-02.png)
 
 ## Set up ledger posting groups
 
@@ -101,7 +101,7 @@ To calculate customs payments for the **Weight** or **Volume** calculation metho
 4. In the **Roles** section, set the **System unit** option to **Yes**.
 5. On the Action Pane, select **Save**.
 
-![Units page.](media/set-up-customs-clearance-03.png)
+    ![Units page.](media/set-up-customs-clearance-03.png)
 
 ### Set up sales tax codes
 
@@ -123,7 +123,7 @@ Follow these steps to set up a sales tax code that can be used to automatically 
     4. Optional: For the **Escort** and **Storage** fee types, on the Action Pane, select **Sales tax code** \> **Limits**, and configure limits for the escort or volume of stored products.
     5. On the Action Pane, select **Save**. Then close the page.
 
-    ![Settings on the General FastTab of the Sales tax codes page for a sales tax code of the Customs fee tax type.](media/set-up-customs-clearance-04.png)
+       ![Settings on the General FastTab of the Sales tax codes page for a sales tax code of the Customs fee tax type.](media/set-up-customs-clearance-04.png)
 
     –or–
 
@@ -153,7 +153,7 @@ Follow these steps to set up a sales tax code that can be used to automatically 
 3. On the **Setup** FastTab, in the **Kind of activity** field, select **Basic**.
 4. On the Action Pane, select **Save**.
 
-![Inventory profiles page.](media/set-up-customs-clearance-05.png)
+    ![Inventory profiles page.](media/set-up-customs-clearance-05.png)
 
 ## Set up the terms of delivery for customs clearance of products
 
@@ -182,7 +182,7 @@ Follow these steps to set up the terms of delivery for the customs clearance of 
 
 5. On the Action Pane, select **Save**.
 
-![Terms of delivery page.](media/set-up-customs-clearance-06.png)
+    ![Terms of delivery page.](media/set-up-customs-clearance-06.png)
 
 ## Set up a charges code for customs payments
 
@@ -209,7 +209,7 @@ Follow these steps to set up a charges code that is used to calculate customs pa
 
 6. On the Action Pane, select **Save**.
 
-![Charges codes page.](media/set-up-customs-clearance-07.png)
+    ![Charges codes page.](media/set-up-customs-clearance-07.png)
 
 ## Assign a charges code to terms of delivery
 
@@ -283,7 +283,7 @@ The following buttons are available on the Action Pane:
 - **Item relation with TN VED** – Assign a product to a TN VED code.
 - **Customs payments relation with TN VED** – Assign a TN VED code to a customs payment.
 
-![TN VED codes page.](media/set-up-customs-clearance-08.png)
+    ![TN VED codes page.](media/set-up-customs-clearance-08.png)
 
 ## Set up an item relation with a TN VED code
 
@@ -301,7 +301,7 @@ To make customs declarations reflect the product details when a TN VED code is u
 
     If the **Customs code** field is set (that is, it isn't blank), the **Customs name** field is automatically set to the name of the counteragent.
 
-![Item relation with TN VED page.](media/set-up-customs-clearance-09.png)
+    ![Item relation with TN VED page.](media/set-up-customs-clearance-09.png)
 
 ## Set up indicative prices
 
@@ -328,7 +328,7 @@ Follow these steps to set up indicative prices that are determined by customs au
     2. In the **Change of settings** dialog box, you can change the following fields: **From date**, **Price for import**, **Price for export**, **Currency**, **Quantity**, **Unit**.
     3. Select **OK**. The changes that you made are applied to all selected lines.
 
-![Indicative prices of TN VED.](media/set-up-customs-clearance-10.png)
+    ![Indicative prices of TN VED.](media/set-up-customs-clearance-10.png)
 
 ## Set up a customs payment relation with a TN VED code
 
@@ -347,7 +347,7 @@ Follow these steps to set up indicative prices that are determined by customs au
 9. Optional: In the **Country/region** field, enter the code for the payment's country or region of origin.
 10. On the Action Pane, select **Save**.
 
-![TN VED code relation with customs payment page.](media/set-up-customs-clearance-11.png)
+    ![TN VED code relation with customs payment page.](media/set-up-customs-clearance-11.png)
 
 ## Set up a vendor as a foreign counteragent
 
@@ -382,4 +382,4 @@ For import deliveries of products, the transfer of ownership might occur before 
 3. On the **General** FastTab, in the **Customs** section, in the **Customs code** field, select the code of the customs counteragent for the customs office that the warehouse is associated with.
 4. On the Action Pane, select **Save**.
 
-![General FastTab on the Warehouses page.](media/set-up-customs-clearance-12.png)
+    ![General FastTab on the Warehouses page.](media/set-up-customs-clearance-12.png)
