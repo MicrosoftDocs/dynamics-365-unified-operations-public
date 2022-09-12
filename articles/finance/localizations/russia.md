@@ -4,7 +4,7 @@
 title: Russia overview
 description: This article provides an overview of functionality that is specific to Russia.
 author: kfend
-ms.date: 02/02/2022
+ms.date: 09/12/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -135,6 +135,9 @@ This article provides information about functionality that supports Russian regu
   - [Use an inventory profile in documents and queries](rus-use-inventory-profile-documents-queries.md)
 - Customs clearance  
   - [Work with customs clearance](rus-work-with-customs-clearance.md)
+
+## Customs
+- [Set up customs clearance](rus-set-up-customs-clearance.md)
 
 ## Reporting
 
