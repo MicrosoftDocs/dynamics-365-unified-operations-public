@@ -371,7 +371,7 @@ The following table describes these options.
 </tr>
 <tr class="odd">
 <td>Pick and pack</td>
-<td>Select this option to let workers combine work for a sales order or load into a single work unit. A worker can perform work only for the sales order or load. This option is useful when, for example, you must increase a quantity for a sales order after the load, shipment, and work have been created for the sales order. This option is available when the menu item uses existing work, and the work is directed by the user or system.</td>
+<td>Select this option to let workers combine work for a sales order or load into a single work unit. A worker can perform work only for the sales order or load. This option is useful when, for example, you must increase a quantity for a sales order after the load, shipment, and work have been created for the sales order. This option is available when the menu item uses existing work, and the work is directed by the user or system. <br>Note that only work headers container a single initial pick work line can get combined using this "group picking concept".</br></td>
 </tr>
 <tr class="even">
 <td>Pick oldest batch</td>
