@@ -138,6 +138,7 @@ This article provides information about functionality that supports Russian regu
 
 ## Customs
 - [Set up customs clearance](rus-set-up-customs-clearance.md)
+- [Work with customs clearance](rus-work-with-customs-clearance.md)
 
 ## Reporting
 
