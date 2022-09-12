@@ -17,13 +17,13 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-ms.custom: 29941
-ms.assetid: 6dff6313-dc6e-4f06-9c0c-dab24eefe4da
-ms.search.region: Global
+#ms.custom: 29941
+#ms.assetid: 6dff6313-dc6e-4f06-9c0c-dab24eefe4da
+# ms.search.region: Global
 # ms.search.industry: 
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2022-10-01
+ms.dyn365.ops.version: 10.0.31
 
 ---
 
