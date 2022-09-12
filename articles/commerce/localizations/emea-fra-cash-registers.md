@@ -2,7 +2,7 @@
 title: Cash register functionality for France
 description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 08/22/2022
+ms.date: 09/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -52,21 +52,26 @@ The following picture demonstrates a high-level design of the Commerce solution 
 
 ![High-level design of the fiscal solution for France](media/emea-fra-fiscal-solution.png)
 
-The following is a high level end-to-end process flow for France:
+The following is a high-level end-to-end process flow for France:
 
-1. When the check-out process is completed for a sales transaction in POS, it sends a digital signing request to Commerce runtime (CRT) in Commerce scale unit. Digital signing of transactions and audit events is implemented using the [Fiscal registration framework](./fiscal-integration-for-retail-channel.md) and an [internal](./fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-internally-in-the-crt) connector.
+1. When the check-out process is completed for a sales transaction in POS, it sends a digital signing request to Commerce runtime (CRT) in Commerce scale unit (CSU). Digital signing of transactions and audit events is implemented using the [Fiscal registration framework](./fiscal-integration-for-retail-channel.md) and an [internal](./fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-internally-in-the-crt) connector.
 
     > [!NOTE]
     > If POS is in the Offline mode, the digital signing occurs in the local copy of CRT on the POS machine.
     
-1. CRT prepares the transaction data to be signed. You can find more information about digital signing in the [Digital signing overview](#digital-signing-overview) section.
-1. CRT requests Commerce headquartes (HQ) to provide a digital certificate.
+1. CRT prepares the transaction data to be signed. You can find more information about digital signatures in the [Digital signing overview](#digital-signing-overview) section.
+1. CRT requests Commerce headquarters (HQ) to provide a digital certificate.
 1. HQ extracts the digital certificate from Azure Key Vault and sends it back to CRT. You can find more information about how Commerce handles digital certificates in the [Configure the digital signature parameters](#configure-the-digital-signature-parameters) section.
     
     > [!NOTE]
     > If POS is in the Offline mode, the local copy of CRT uses a digital certificate installed locally on the POS machine.
     
-1. 
+1. CRT digitally signs the transaction data. The signature, together with the signed data and other information, is saved in the Channel database (DB) in a fiscal transaction that is linked to the sales transaction. The signature is returned to POS.
+1. POS requests a sales receipt from CRT. CRT builds the receipt, including an extract from the digital signature of the transaction, and sends it back to POS. POS send the receipt to the receipt printer.
+1. When any of the audit events that must be digitally signed occurs, the above steps, except for the receipt, are repeated for the audit event. The signature of the audit event is saved in the Channel DB in a fiscal transaction that is linked to the audit event.
+1. When the shift is closed, a shift closing audit event is registered and also digitally signed. The Z-report is printed on the receipt printer.
+1. HQ downloads the transaction and audit event data together with fiscal transactions from CSU via Commerce Data Exchange (CDX).
+1. As part of the fiscal period closing procedure, a fiscal archive is produced in HQ. It includes sales totals for a store for the fiscal period, and details and signatures of all shifts, sales transactions, and audit events during the fiscal period. You can find more details about fiscal archives in [Fiscal archive for France](./emea-fra-fiscal-archive.md).
 
 ## France-specific POS features
 
