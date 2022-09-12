@@ -70,8 +70,8 @@ The following is a high-level end-to-end process flow for France:
 1. POS requests a sales receipt from CRT. CRT builds the receipt, including an extract from the digital signature of the transaction, and sends it back to POS. POS send the receipt to the receipt printer.
 1. When any of the audit events that must be digitally signed occurs, the above steps, except for the receipt, are repeated for the audit event. The signature of the audit event is saved in the Channel DB in a fiscal transaction that is linked to the audit event.
 1. When the shift is closed, a shift closing audit event is registered and also digitally signed. The Z-report is printed on the receipt printer.
-1. HQ downloads the transaction and audit event data together with fiscal transactions from CSU via Commerce Data Exchange (CDX).
-1. As part of the fiscal period closing procedure, a fiscal archive is produced in HQ. It includes sales totals for a store for the fiscal period, and details and signatures of all shifts, sales transactions, and audit events during the fiscal period. You can find more details about fiscal archives in [Fiscal archive for France](./emea-fra-fiscal-archive.md).
+1. HQ downloads the transaction and audit event data together with fiscal transactions from CSU via Commerce Data Exchange (CDX). The data is stored in the HQ DB throughout the period of life of your production environment.
+1. As part of the fiscal period closing procedure, a fiscal archive is produced from the HQ DB. It includes sales totals for a store for the fiscal period, and details and signatures of all shifts, sales transactions, and audit events during the fiscal period. You can find more details about fiscal archives in [Fiscal archive for France](./emea-fra-fiscal-archive.md).
 
 ## France-specific POS features
 
