@@ -53,8 +53,8 @@ Commerce Scale Unit is available for deployment in the following regions.
 | AMERICAS        | Central US          | Generally available |  No comments.                            |
 | AMERICAS        | West US             | Generally available |  No comments.                            |
 | AMERICAS        | West US 2           | Generally available |  No comments.                            |
-| AMERICAS        | Canada Central      | Limited capacity    |  No comments.                            |
-| AMERICAS        | Canada East         | Limited capacity    |   No comments.                           |
+| AMERICAS        | Canada Central      | Generally available |  No comments.                            |
+| AMERICAS        | Canada East         | Generally available |  No comments.                           |
 | AMERICAS        | West Central US     | Limited capacity    |   No comments.                           |
 | APAC            | Australia East      | Generally available |   No comments.                           |
 | APAC            | Southeast Asia      | Capacity restricted | No deployments allowed.    |
