@@ -22,11 +22,6 @@ manager: annbe
 
 This article provides an overview of the cash register functionality that is available for France in Microsoft Dynamics 365 Commerce. It also provides guidelines for setting up the functionality.
 
-The cash register functionality for France consists of the following parts:
-
-- Common point of sale (POS) features that are available to customers in all countries or regions, such as the option to register various events in the POS audit log.
-- France-specific features, such as digital signatures for sales transactions.
-
 ## Certification information
 
 This version of the cash register functionality for France has passed an audit according to the NF 525 certification requirements and is granted a certificate of compliance that has the following category and number: 
@@ -46,7 +41,7 @@ The following is the Dynamics 365 Commerce documentation related to the NF 525 c
 |----------|-------------|-------|
 | High-level design <p><p>Technical architecture | The documentation that describes the software product, its components, and data flows, as well as the technical design of the product. | [Commerce home page](../index.md) and nested links<p><p>[Dynamics 365 Commerce architecture overview](../commerce-architecture.md)<p><p>[Design of the Commerce solution for France](#design-of-the-commerce-solution-for-france) |
 | Functional specification<p><p>User documentation | The documentation that describes the functions of the software. | [Commerce home page](../index.md) and nested links<p><p>[France-specific POS features](#france-specific-pos-features) |
-| Versioning strategy | The documentation that describes the versioning approach and the version management procedure for the software product.<p><p>Current major Dynamics 365 Commerce version is **10.0**. Service updates that are provided for this version are marked by the consecutive number after the version number: **10.0.X**. You can find more information about the software lifecycle policy and service updates using the links in this table.  | [One Version service updates overview](../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)<p><p>[Software lifecycle policy and cloud releases](../../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)<p><p>[Service update availability](../../fin-ops-core/fin-ops/get-started/public-preview-releases.md)<p><p>[Dynamics 365 release plans](https://docs.microsoft.com/dynamics365/release-plans/)<p><p>[What's new or changed in Dynamics 365 Commerce](../get-started/whats-new-home-page.md)<p><p>[Dynamics 365 Commerce component versioning requirements](../arch-component-versioning.md) |
+| Versioning strategy | The documentation that describes the versioning approach and the version management procedure for the software product.<p><p>Current major Dynamics 365 Commerce version is **10.0**. Service updates that are provided for this version are marked by the consecutive number after the version number: **10.0.X**. You can find more information about the software lifecycle policy and service updates using the links in this table. | [One Version service updates overview](../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)<p><p>[Software lifecycle policy and cloud releases](../../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)<p><p>[Service update availability](../../fin-ops-core/fin-ops/get-started/public-preview-releases.md)<p><p>[Dynamics 365 release plans](https://docs.microsoft.com/dynamics365/release-plans/)<p><p>[What's new or changed in Dynamics 365 Commerce](../get-started/whats-new-home-page.md)<p><p>[Dynamics 365 Commerce component versioning requirements](../arch-component-versioning.md) |
 | Organizational documentation | The documentation that describes the process that is established to control the software product compliance. | [Globalization resources](../../fin-ops-core/dev-itpro/lcs-solutions/country-region.md) |
 | Maintenance documentation | The documentation that describes the implementation and maintenance of the software solution. | [Service description](../../fin-ops-core/fin-ops/get-started/service-description.md)<p><p>[Before you buy](../../fin-ops-core/fin-ops/get-started/before-you-buy.md)<p><p>[Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/grid/Microsoft-Dynamics-365)<p><p>[Implementation lifecycle management home page](../../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md)<p><p>[Synchronize self-service installers in Dynamics 365 Commerce](../dev-itpro/Synchronize-installers.md)<p><p>[Set up Commerce for France](#set-up-commerce-for-france)<p><p>[Dynamics 365 Support](https://dynamics.microsoft.com/en-us/support/)<p><p>[Submit service requests](../../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md)<p><p>[One Version service updates overview](../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md) |
 | Auditor documentation | The documentation that describs how to access the data, the files and the process by the Authorities | [Fiscal archive for France](./emea-fra-fiscal-archive.md) |
@@ -59,6 +54,19 @@ The following picture demonstrates a high-level design of the Commerce solution 
 
 The following is a high level end-to-end process flow for France:
 
+1. When the check-out process is completed for a sales transaction in POS, it sends a digital signing request to Commerce runtime (CRT) in Commerce scale unit. Digital signing of transactions and audit events is implemented using the [Fiscal registration framework](./fiscal-integration-for-retail-channel.md) and an [internal](./fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-internally-in-the-crt) connector.
+
+    > [!NOTE]
+    > If POS is in the Offline mode, the digital signing occurs in the local copy of CRT on the POS machine.
+    
+1. CRT prepares the transaction data to be signed. You can find more information about digital signing in the [Digital signing overview](#digital-signing-overview) section.
+1. CRT requests Commerce headquartes (HQ) to provide a digital certificate.
+1. HQ extracts the digital certificate from Azure Key Vault and sends it back to CRT. You can find more information about how Commerce handles digital certificates in the [Configure the digital signature parameters](#configure-the-digital-signature-parameters) section.
+    
+    > [!NOTE]
+    > If POS is in the Offline mode, the local copy of CRT uses a digital certificate installed locally on the POS machine.
+    
+1. 
 
 ## France-specific POS features
 
