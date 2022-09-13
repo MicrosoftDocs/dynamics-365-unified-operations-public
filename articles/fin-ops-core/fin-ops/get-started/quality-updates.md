@@ -69,7 +69,7 @@ Because customers will regularly receive smaller payloads, we expect the process
 At this time, quality updates are only targeting sandboxes. Updates to production environments will begin after November 2022.
 
 ## What is the schedule for sandbox quality updates?
-For information on the dark hours for each region, see [What is the schedule for proactive quality updates?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md/#what-is-the-schedule-for-proactive-quality-updates).
+For information on the dark hours for each region, see [What is the schedule for proactive quality updates?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates).
 
 ## How are the dark hours handled for customers that have one finance and operations apps instance but are active in multiple time zones? 
 There are no special schedules outside of the dark hours where a finance and operations apps instance exists, as we plan to roll out quality updates in a minimally disruptive manner with [nZDT](../../dev-itpro/deployment/plannedmaintenance-selfservice.md/#what-does-near-zero-downtime-maintenance-mean).
