@@ -734,7 +734,7 @@ Specifically, the **Project time entry** mobile workspace provides these feature
 - Record the time as billable or non-billable for the project.
 - Optionally enter any external or internal comments.
 
-To implement the **Project time entry** mobile workspace, see the related documentation for Microsoft Dynamics 365 for Operations on docs.microsoft.com. For more information, see [Project time entry mobile workspace](/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace).
+To implement the **Project time entry** mobile workspace, see the related documentation for Microsoft Dynamics 365 for Operations. For more information, see [Project time entry mobile workspace](/dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace).
 
 ### Rename project stages
 
