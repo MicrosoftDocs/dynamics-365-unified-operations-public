@@ -16,7 +16,6 @@ ms.search.validFrom: 2019-10-08
 # Customer information management for Italy
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 ## Introduction
 

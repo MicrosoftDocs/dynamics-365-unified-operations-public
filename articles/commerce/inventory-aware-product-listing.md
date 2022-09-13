@@ -17,7 +17,6 @@ ms.search.validFrom: 2022-08-23
 # Inventory-aware product listing
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article describes how organizations can configure product listing pages on their Microsoft Dynamics 365 Commerce e-commerce website so that they are inventory aware. Product listing pages include category landing pages and search results pages.
 

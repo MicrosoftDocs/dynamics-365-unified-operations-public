@@ -15,7 +15,6 @@ ms.search.validFrom: 2019-03-01
 # Fiscal registration service integration sample for Austria
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article provides an overview of the fiscal integration sample for Austria in Microsoft Dynamics 365 Commerce.
 
