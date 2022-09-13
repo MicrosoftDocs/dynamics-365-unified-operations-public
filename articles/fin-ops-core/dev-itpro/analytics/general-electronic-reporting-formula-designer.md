@@ -136,20 +136,20 @@ The following illustration shows expressions of this type. (Version 11.12.11 of 
 
 ### Data sources navigator
 
-You can select for editing a formula that represents an element of a structured data source. When you configured your ER parameters to present the path to an element of a structured data source as the [relative path](relative-path-data-bindings-er-models-format.md), the "at" (@) sign is [shown](er-formula-language.md#relative-path) in the formula instead of the remaining part of the absolute path of the hierarchical tree structure that is used. This remaining part of the absolute path is pointed to a parent element of the editable one. In Finance version **10.0.30 and later**, on the **Formula designer** page, in the **Data sources** pane, you can select the **Go to @** option to position the cursor of the data sources tree to an element that is the parent of the editable one. The structure of all collapsed ascending elements will be automatically and recursively expanded when required. This can help you to quickly visualize the base element of the editable one, observe siblings of the editable element in the data sources tree, and use each of them in the editable formula if needed.
+You can edit a formula that represents an element of a structured data source. When you configured your ER parameters to present the path to an element of a structured data source as the [relative path](relative-path-data-bindings-er-models-format.md), the "at" (@) sign is [shown](er-formula-language.md#relative-path) in the formula instead of the remaining part of the absolute path of the hierarchical tree structure that is used. This remaining part of the absolute path is pointed to a parent element of the editable one. In Finance version **10.0.30 and later**, on the **Formula designer** page, in the **Data sources** pane, you can select the **Go to @** option to position the cursor of the data sources tree to an element that is the parent of the editable one. The structure of all collapsed ascending elements will be automatically and recursively expanded when required. This expansion can help you to quickly visualize the base element of the editable one, observe siblings of the editable element in the data sources tree, and use each of them in the editable formula if needed.
 
 ![Use the "Go to @" option to position the cursor of the data sources tree to an element that is the parent of the editable one on the Formula designer page.](./media/er_formula-designer-data-sources-navigator.gif)
 
 ### Data sources picker
 
-On the **Formula designer** page, in the **Data sources** pane in the left, select an element of a data source that you want to bring in to the editable formula. Then, select **Add data source**. Notice that the selected element is added to the text of the editable formula.
+On the **Formula designer** page, in the **Data sources** pane on the left, select an element of a data source that you want to bring in to the editable formula. Then select **Add data source**. Notice that the selected element is added to the text of the editable formula.
 
 > [!TIP]
 > When you use the **Add data source** option in the default formula editor, the selected element is always added to the end of the formula text. When you do the same in the [Advanced formula editor](er-advanced-formula-editor.md), the selected element is inserted to the formula text at the current cursor position.
 
-### Built-in functions pucker
+### Built-in functions picker
 
-On the **Formula designer** page, in the **Functions** pane in the right, select an ER built-in function that you want to bring in to the editable formula. Then, select **Add function**. Notice that the selected function is added to the text of the editable formula.
+On the **Formula designer** page, in the **Functions** pane on the right, select an ER built-in function that you want to bring in to the editable formula. Then, select **Add function**. Notice that the selected function is added to the text of the editable formula.
 
 > [!TIP]
 > When you use the **Add function** option in the default formula editor, the selected function is always added to the end of the formula text. When you do the same in the [Advanced formula editor](er-advanced-formula-editor.md), the selected function is inserted to the formula text at the current cursor position.
