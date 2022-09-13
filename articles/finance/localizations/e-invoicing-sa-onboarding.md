@@ -121,6 +121,7 @@ Once compliance checks are successfully completed, the PowerShell script can be 
 > 1. Simplified Tax Invoice
 > 2. Simplified Debit Note
 > 3. Simplified Credit Note
+> 
 > If is set to "1100", then all 6 sample invoices need to be submitted for the compliance check.
 
 ### Obtain a PCSID
