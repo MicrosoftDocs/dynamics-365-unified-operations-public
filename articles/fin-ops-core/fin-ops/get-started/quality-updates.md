@@ -69,10 +69,10 @@ Because customers will regularly receive smaller payloads, we expect the process
 At this time, quality updates are only targeting sandboxes. Updates to production environments will begin after November 2022.
 
 ## What is the schedule for sandbox quality updates?
-RFor information on the dark hours for each region, see [What is the schedule for proactive quality updates?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md/#What-is-the-schedule-for-proactive-quality-updates?).
+For information on the dark hours for each region, see [What is the schedule for proactive quality updates?](../dev-itpro/deployment/plannedmaintenance-selfservice.md/#what-is-the-schedule-for-proactive-quality-updates?).
 
 ## How are the dark hours handled for customers that have one finance and operations apps instance but are active in multiple time zones? 
-There are no special schedules outside of the dark hours where a finance and operations apps instance exists, as we plan to roll out quality updates in a minimally disruptive manner with [nZDT](../../dev-itpro/deployment/plannedmaintenance-selfservice.md/#what-does-near-zero-downtime-maintenance-mean?).
+There are no special schedules outside of the dark hours where a finance and operations apps instance exists, as we plan to roll out quality updates in a minimally disruptive manner with [nZDT](../dev-itpro/deployment/plannedmaintenance-selfservice.md/#what-does-near-zero-downtime-maintenance-mean?).
 
 ## What is the expectation from customers in terms of testing quality updates?
 Testing is optional as Microsoft strives to keep the release pipeline efficient enough to deliver small payloads to keep the validation cost low. Every fix in a quality update goes through a rigorous and safe deployment process which helps improve quality and reliability, thereby reducing customer impact. Deployment will happen in stages on sandbox environments first, followed by production. Staged deployments allow for proper monitoring to determine if further deployment is safe. We will stop the rollout if issues are detected with each group of customers deployed and ensure that each step in the rollout has enough time for issues to surface. For every upcoming quality update, we will provide visibility into the schedule through updates to public documentation and emails, so customers can plan ahead.
