@@ -14,7 +14,6 @@ ms.search.validFrom: 2019-03-01
 # Deployment guidelines for the fiscal registration service integration sample for the Czech Republic (legacy)
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 > [!IMPORTANT]
 > You must follow the guidelines in this article only if you're using Microsoft Dynamics 365 Commerce version 10.0.28 or earlier. As of Commerce version 10.0.29, the fiscal registration service integration sample for the Czech Republic is available in the Commerce software development kit (SDK). For more information, see [Configure channel components](./emea-cze-fi-sample.md#configure-channel-components).

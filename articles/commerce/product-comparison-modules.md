@@ -17,7 +17,6 @@ ms.search.validFrom: 2022-02-28
 # Product comparison modules
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 This article describes product comparison modules and how to implement them so that customers can do product comparisons on Microsoft Dynamics 365 Commerce e-commerce websites.
 
