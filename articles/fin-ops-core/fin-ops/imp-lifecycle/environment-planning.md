@@ -145,9 +145,7 @@ The following table compares the deployment options.
 
 ### Selecting the correct Tier-2 or higher environment
 
-It's important that you select the correct Tier-2 or higher environment, depending on the purpose of the environment. The guidance that is provided in the following illustration is a *baseline*. You must work with your implementation partner to adjust this guidance, based on your specific business scenarios and factors such as type of users, complexity, and volumes.
-
-![Environment tiers.](./media/environment-planning-3-environment-tiers.png)
+It's important that you select the correct Tier-2 or higher environment, depending on the purpose of the environment. You must work with your implementation partner to adjust this guidance, based on your specific business scenarios and factors such as type of users, complexity, and volumes.
 
 After a subscription estimate is activated, you can view transaction lines per hour in LCS, as shown in the following illustration.
 
