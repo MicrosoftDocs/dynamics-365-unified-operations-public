@@ -39,6 +39,7 @@ This article describes the process for upgrading Microsoft Dynamics AX 2012 data
 
 Two upgrade methods are currently supported:
 
+- **Upgrade from your existing Dynamics 365 Finance + Operations (on-premises) environment** - This is only available from version 10.0.31 and later. This is the recommended method to use when testing the upgrade end-to-end.
 - **Upgrade from inside the VHD** – This method involves copying your database into the virtual hard disk (VHD) and running the upgrade from inside the VHD. Overall, this method is easier.
 - **Upgrade where the VHD points to your database** – This method involves pointing the VHD upgrade process to your database. The upgrade process is still run from inside the VHD.
 
@@ -52,6 +53,11 @@ Two upgrade methods are currently supported:
 1. Install the pre-upgrade checklist. For more information, see [Installation](prepare-data-upgrade.md#installation).
 1. Go through the data upgrade preparation steps. You can skip the "Set up user mapping" step. This step is relevant only for cloud-hosted upgrades.
 1. Make a backup of your database (MicrosoftDynamicsAX). For more information, see [Create a Full Database Backup](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).
+
+#### VHD prerequisites
+
+If you will use a VHD to carry out the data upgrade process you also need to be aware of these prerequisites:
+
 1. In LCS, go to the Shared asset library by selecting the tile on the right side of the page. Then, under **Select asset type**, select **Downloadable VHD**, and download all parts of the VHD package that most closely matches the version that you will upgrade to in your on-premises environment. The image requires a large amount of disk space. Therefore, be sure to download and extract the package on a drive that has enough free space. 
 1. The files that you downloaded are a self-extracting zip file. Extract the VHD to a location that has a good amount of free space.
 1. Use Hyper-V to start a virtual machine (VM) and attach the VHD. (Note that the VM must be Generation 1.)
@@ -62,6 +68,46 @@ Two upgrade methods are currently supported:
     > In any case, make sure that you've applied the most recent quality update to your VHD, to ensure that it contains the most recent fixes for doing data upgrades. 
 
 1. If you have any extensions or customizations, install them on the VHD now. Otherwise, the upgrade process will remove any data that is related to customizations. If you must prepare your environment before the upgrade, check with your independent software vendor (ISV) or value-added reseller (VAR).
+
+#### Dynamics 365 Finance + Operations (on-premises) prerequisites
+
+If you will use a Dynamics 365 environment to carry out the data upgrade process you need to meet these prerequisites:
+
+1. Have a Dynamics 365 Finance + Operations (on-premises) environment deployed using a demo data backup.
+1. Ensure you have applied the latest quality update to your environment.
+1. If you have any extensions or customizations, apply them to your environment now. Otherwise, the upgrade process will remove any data that is related to customizations. If you must prepare your environment before the upgrade, check with your independent software vendor (ISV) or value-added reseller (VAR).
+
+### Upgrade from a Dynamics 365 Finance + Operations (on-premises) environment
+
+1. Disable all AOS and MR nodes using Service Fabric explorer.
+    > [!TIP]
+    > Disable nodes one at a time. Once you have disabled the last node, Service Fabric will not successfully disable it as it is trying to ensure the services assigned to that node type can be placed in another node. Since there will not be another node available we need to force this operation. Simply restart the last node from Service Fabric explorer and after the restart the node will be disabled.
+
+1. Delete your existing demo data database.
+1. Restore the backup that you created with the same name as your existing demo database. For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
+1. Open Windows PowerShell in elevated mode, and navigate to the Infrastructure folder in your file share and run the following commands.
+    
+    ```Powershell
+    .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName AOS
+    .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName AOS
+    ```
+
+1. Execute the following SQL command against your restored database:
+
+    ```SQL
+    MERGE [dbo].[SQLSYSTEMVARIABLES] AS VARIABLES
+    USING (values('RUNDATAUPGRADE', '1', 20, NULL)) as NEWVALUE (PARM, VALUE, IPARM, IVALUE)
+    ON (VARIABLES.PARM = NEWVALUE.PARM)
+    WHEN NOT MATCHED THEN
+        INSERT (PARM, VALUE, IPARM, IVALUE)
+        VALUES (NEWVALUE.PARM, NEWVALUE.VALUE, NEWVALUE.IPARM, NEWVALUE.IVALUE);
+    ```
+
+1. Activate one of your AOS nodes using Service Fabric explorer.
+1. Once the AOS node is activated and the service starts, the data upgrade process will trigger automatically. You can monitor the data upgrade process using the guidance in [Monitoring the data upgrade](#monitoring-the-data-upgrade).
+1. If the data upgrade fails you can find the data upgrade logs in the service log folder. The path will look similar to this: `C:\ProgramData\SF\<nodename>\Fabric\work\Applications\AXSFType_App95\log`.
+1. If the data upgrade succeeds, and if you have customizations from ISVs or VARs, check whether you must run some post–data upgrade scripts.
+1. Re-enable the remaining AOS nodes as well as the MR nodes.
 
 ### Upgrade from inside the VHD
 
