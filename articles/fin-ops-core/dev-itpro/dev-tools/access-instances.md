@@ -105,7 +105,7 @@ If LCS wasn't able to successfully complete the delete operation, the operation 
 
 You can easily identify the environment’s resource group in the Azure subscription, as it will have the same name as the environment in LCS.
 
-## Download and run a virtual hard disk locally
+## VM that is running locally
 
 A virtual hard disk (VHD) is made available for download from LCS, so that you can set it up on a local machine. This system is intended to be accessed by a developer and is a preconfigured one-box development environment of finance and operations apps. The VHD is available in the Shared Asset library of LCS under the asset type **Downloadable VHD**.
 
@@ -123,7 +123,7 @@ To use the downloadable VHD for POS customizations, you must also follow this st
 
 - On the host computer, enable Nested VM support. For more information, see [Run Hyper-V in a Virtual Machine with Nested Virtualization](/virtualization/hyper-v-on-windows/user-guide/nested-virtualization).
 
-### Run the virtual machine locally
+### Running the virtual machine locally
 
 Follow these steps to run the VM from Hyper-V Manager.
 
