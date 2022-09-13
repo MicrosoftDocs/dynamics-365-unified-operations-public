@@ -4,7 +4,7 @@
 title: Proactive quality updates
 description: This article provides information about proactive delivery of quality updates.
 author: rashmansur
-ms.date: 08/23/2022
+ms.date: 09/12/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -55,12 +55,67 @@ A set of process changes is being implemented ahead of the activation of proacti
 - **Increased change scrutiny** – Currently, there is already an extra process step to approve changes for inclusion in a quality update. The scrutiny in the extra step will be increased to help reduce the potential for regressions. Breaking changes aren't allowed in quality updates, and the increased change scrutiny will help ensure that we meet this target.
 - **Visibility** – We will send notifications through email and Lifecycle Services (LCS) for upcoming proactive quality updates. In addition, support teams and incident leads will have visibility into where quality updates have been proactively deployed.
 - **Version fallback** – Flighting will be used to group all changes in a proactive quality update. If fallback is required after a proactive deployment, it can be done through the flighting system.
-- **Sandbox sync designation** – Less than 20 percent of customers today have multiple sandboxes and keep one sandbox deployed where the version matches production, to help with troubleshooting. In the near future, we will introduce the ability for customers to specify a sandbox environment that should not receive the proactive quality update deployment together with other sandboxes but that should instead receive it later, together with the production environment. Note that if a customer is using a sandbox to test a newer version than their production, that sandbox will receive quality updates to the newer version.
-- 
-## When will proactive quality updates start?
+- **Sandbox sync designation** – Less than 20 percent of customers today have multiple sandboxes and keep one sandbox deployed where the version matches production, to help with troubleshooting. If a customer is using a sandbox to test a newer version than their production, that sandbox will receive quality updates to the newer version.
+
+## What is the rollout roadmap for quality updates?
 
 Distribution of proactive quality updates for sandbox environments is expected to begin in late September or October 2022 for Azure public cloud customers. Trial environments will also start to receive proactive update deployment at that time. In September, a notification will be sent to each customer to inform them about the expected schedule for their environments. Exceptions to the proactive updated distribution process will be allowed only for FDA-regulated customers. We're still working out how regulated environments and sovereign and government cloud customers will be managed.
 
 Over the next six-month period, we will gradually increase the percentage of sandbox environments that receive proactive updates, until all designated environments are included and progress to updating production environments. Throughout the period, we will monitor to ensure that the deployment process is seamless and that we're hitting our target of non-disruptive payloads.
 
 Because customers will regularly receive smaller payloads, we expect the process of staying current to become simpler. We will adjust the frequency of update deployment as we demonstrate the ability to run the process without disruption. This process is already working effectively for our Dataverse platform and applications, and is delivering the anticipated improvements in service quality. We're anxious to take the same step forward for finance and operations applications.
+
+## When will quality updates start for production environments?
+At this time, quality updates are only targeting sandboxes. Updates to production environments will begin after November 2022.
+
+## What is the schedule for sandbox quality updates?
+For information on the dark hours for each region, see [What is the schedule for proactive quality updates?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md/#what-is-the-schedule-for-proactive-quality-updates).
+
+## How are the dark hours handled for customers that have one finance and operations apps instance but are active in multiple time zones? 
+There are no special schedules outside of the dark hours where a finance and operations apps instance exists, as we plan to roll out quality updates in a minimally disruptive manner with [nZDT](../../dev-itpro/deployment/plannedmaintenance-selfservice.md/#what-does-near-zero-downtime-maintenance-mean).
+
+## What is the expectation from customers in terms of testing quality updates?
+Testing is optional as Microsoft strives to keep the release pipeline efficient enough to deliver small payloads to keep the validation cost low. Every fix in a quality update goes through a rigorous and safe deployment process which helps improve quality and reliability, thereby reducing customer impact. Deployment will happen in stages on sandbox environments first, followed by production. Staged deployments allow for proper monitoring to determine if further deployment is safe. We will stop the rollout if issues are detected with each group of customers deployed and ensure that each step in the rollout has enough time for issues to surface. For every upcoming quality update, we will provide visibility into the schedule through updates to public documentation and emails, so customers can plan ahead.
+
+## Can customers delay, reschedule, or pause a quality update?
+No. The main objective of quality updates is to ensure fundamentals like security, privacy, reliability, availability, and performance are continuously improving for our customers. By delaying or pausing an update, security, availability, and reliability will be at risk.
+
+## How can one know the set of changes that went into a quality update payload?
+You will be able to look at all the KB articles in a quality update build on the **Environment details** page in LCS, by navigating to the **Quality Update** section. 
+
+## What is the process if a critical issue is found after a quality update?
+A critical issue or regression is one or more events that typically cause multiple customers to have a degraded experience with one or more of our services. These issues can cause unplanned downtime including unavailability, performance degradation, and interference with service management. If there is a broad customer impact due to such regressions, we will stop the rollout of a quality update until we can communicate and fix the issue. Typically, the next quality update will have the necessary fix to resume rollout.
+
+If a single customer environment is affected, contact Microsoft support to open a ticket. Based on the justification, we will stop the quality update rollout to all other environments in that project until the issue is mitigated.
+
+## Can customers still manually apply hotfix updates from LCS?
+Yes. To ensure ongoing parity with how hotfixes work, hotfix updates can still be applied to customer environments in LCS. However, it's important to note that hotfixes that are deployed as part of a quality update go through the standard SDP before the update is deployed. This reduces the risk of regressions due to higher quality. We recommend that you choose a quality update over manually applying hotfixes for increased reliability.
+
+## Can customers self-install a quality update build by themselves ahead of the schedule?
+Yes. You can install a quality update proactively. Microsoft will skip the update if the environment’s current build version is equal or higher than the quality update in question.
+
+## If an environment has an upcoming scheduled monthly service update within a week, will it still receive quality updates?
+- Quality updates aren't applied if there is an impending service update scheduled within a week from when the quality update is scheduled to happen.
+- If a sandbox environment has the same or higher build version than the impending quality update, it will be skipped.
+- If a production environment has the same or higher build version than the impending quality update, it will be skipped.
+- If a sandbox has the same or higher build version because of a quality update or a manual update to the production, the production will still get the scheduled version of the monthly service update. If you don't want the scheduled production environment to be updated to the service update version, you can pause the service update from LCS. 
+- We recommend you utilize the latest quality update build to test your changes for an upcoming service update for better stability and results.
+
+## Can an environment be brought back to its previous state if there are issues after a quality update is applied?
+After a quality update is applied, there is no rollback under any circumstances. There are only patch forward options available to mitigate issues.
+
+## What about FDA regulation and GPX?
+The plan for customers subject to FDA validation and regulation is still evolving. Expect more updates in this space soon. For now, all such customers are exempt from quality updates.
+
+## What versions of service updates are supported for these quality updates?
+Customers on versions lower than N-2 will not receive quality updates. 
+
+## Finance and operations apps deployments with retail components typically require additional work in addition to having to redeploy MPOS. How will these quality updates impact the RetailSDK? 
+As the nature of the hotfixes itself doesn’t change in the quality updates payload, we don’t anticipate any additional impact at this time specifically related to retail components.
+
+## Is there any impact to Cloud Hosted Environments (CHE)? ? 
+No.
+
+## Are there any integration issues with Microsoft Dataverse? 
+No.
+
