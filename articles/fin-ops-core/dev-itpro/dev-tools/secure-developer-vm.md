@@ -64,21 +64,21 @@ Microsoft Defender and Azure Well-Architected security assessments provide gener
 
 When considering if such recommendations are right for you and your organization's policies, it is important to follow the guidance above. For example, management ports are required to be accessible for LCS to manage your environment, even though security assessments recommend closing access to these ports. In another example, recommendations may include restricting network access to the environment's storage account, even though such restrictions would break some integration scenarios like exporting to Microsoft Excel that rely on files being externally accessible for download. Lastly, some recommendations around diagnostic and telemetry logging may incur additional costs that the resource owner will need to consider if applicable to their needs.
 
-# Frequently asked questions
+## Frequently asked questions
 
-##  Why does my newly provisioned one-box developer environment have security recommendations from Microsoft Defender and other security assessments?
+####  Why does my newly provisioned one-box developer environment have security recommendations from Microsoft Defender and other security assessments?
 
 Many recommendations from such assessments require engagement from the resource owner to determine if they will incur any additional costs. The guidance in this article should be taken into consideration when evaluating the implementation of any security recommendations.
 
-## I want network access restricted to my one-box developer environment to limit my security exposure. How can I block network access? 
+#### I want network access restricted to my one-box developer environment to limit my security exposure. How can I block network access? 
 
 - VM access can be restricted using the network security group in the environment's resource group. The WinRM management port (5986) is already restricted to only be accessible by LCS. The network security group rules for RDP (3389) and https (443) ports are not limited by default, but can be restricted down to the client IPs of your choosing.
 - Outbound internet access must remain available for finance and operations apps to function.
 - The environment's Azure storage account can have access restricted but must remain accessible by the VM's public IP address and the IP address(es) of any authorized client. Failure to properly allow access will result in the failure of finance and operations features that rely on the storage functionality.
 
-## My deployment fails when I try to provision with my custom virtual network. Can Microsoft tell me what is wrong?
+#### My deployment fails when I try to provision with my custom virtual network. Can Microsoft tell me what is wrong?
 
-This document lists out the network access requirements for the Azure resources for your environment in the [Deploy to a custom virtual network](deploy-to-a-custom-virtual-network) section. Unfortunately, Microsoft Support cannot help troubleshoot custom networking configurations due to the wide variety of possible configurations. The recommendation for troubleshooting is to use the default configuration as a known-good configuration and then incrementally apply your additional restrictions to isolate issues with the desired custom configuration.
+This document lists out the network access requirements for the Azure resources for your environment in the [Deploy to a custom virtual network](#deploy-to-a-custom-virtual-network) section. Unfortunately, Microsoft Support cannot help troubleshoot custom networking configurations due to the wide variety of possible configurations. The recommendation for troubleshooting is to use the default configuration as a known-good configuration and then incrementally apply your additional restrictions to isolate issues with the desired custom configuration.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
