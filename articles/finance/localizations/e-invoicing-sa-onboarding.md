@@ -2,7 +2,7 @@
 title: Electronic invoicing onboarding in Saudi Arabia
 description: This article explains how to onboard taxpayers and their electronic invoicing software with Saudi Arabian tax authorities.
 author: mrolecki
-ms.date: 06/30/2022
+ms.date: 09/13/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -103,26 +103,26 @@ The onboarding process consists of two steps:
 
 ### Compliance check
 
-After obtaining Compliance CSID using the PowerShell script, ZATCA requires completion of certain compliance checks by submitting sample invoices. This step is a prerequisite for requesting a Production CSID.
+After you obtain Compliance CSID using the PowerShell script, ZATCA requires you to complete certain compliance checks by submitting sample invoices. This step is a prerequisite to request a Production CSID.
 
-Ensure that all types of sample invoices that were configured in the Certificate Signing Request (CSR) configuration file, are successfully submitted to ZATCA (refer Note for more information). Use the standard process for issuing electronic invoices. For more information, see [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
+Ensure that all types of sample invoices that were configured in the Certificate Signing Request (CSR) configuration file are successfully submitted to ZATCA. Use the standard process for issuing electronic invoices. For more details, see [Issue electronic invoices in Finance and Supply Chain Management](e-invoicing-issuing-electronic-invoices-finance-supply-chain-management.md).
 
-To do so, use the **"Saudi Arabian ZATCA compliance check (SA)"** feature in RCS and follow the steps mentioned under the Country Specific Configuration section of [Get Started with Electronic invoicing for Saudi Arabia](e-invoicing-sa-get-started.md) along with using of the obtained Compliance CSID.
+Use the feature, **"Saudi Arabian ZATCA compliance check (SA)"** in RCS and follow the [Country-specific Configuration section](e-invoicing-sa-get-started.md#country-specific-configuration-for-the-saudi-arabian-electronic-invoice-sa-electronic-invoicing-feature) steps using the Compliance CSID you obtained.
 
-Once compliance checks are successfully completed, the PowerShell script can be used to obtain Production CSID (refer on-boarding script).
+After the compliance checks are successfully complete, use the PowerShell script to obtain Production CSID (refer on-boarding script).
 
 > [!NOTE]
-> If the document type (field: title) in the configuration file is set to "1000", then 3 sample invoices need to be submitted for the compliance check:
-> 1. Standard Tax Invoice
-> 2. Standard Debit Note
-> 3. Standard Credit Note
+> In the **Title** field, if the document type in the configuration file is set to **1000**, three sample invoices must be submitted for the compliance check:
+> - Standard Tax Invoice
+> - Standard Debit Note
+> - Standard Credit Note
 > 
-> If the document type (field: title) in the configuration file is set to "0100", then 3 sample invoices need to be submitted for the compliance check:
-> 1. Simplified Tax Invoice
-> 2. Simplified Debit Note
-> 3. Simplified Credit Note
+> In the **Title** field, if the document type in the configuration file is set to **0100**, three sample invoices must be submitted for the compliance check:
+> - Simplified Tax Invoice
+> - Simplified Debit Note
+> - Simplified Credit Note
 > 
-> If is set to "1100", then all 6 sample invoices need to be submitted for the compliance check.
+> If the document type is set to **1100**, all six sample invoices must be submitted for the compliance check.
 
 ### Obtain a PCSID
 
