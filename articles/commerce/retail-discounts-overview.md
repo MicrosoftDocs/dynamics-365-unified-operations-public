@@ -37,6 +37,9 @@ All discounts have a header and one or more lines. All discount types have prope
 
 When you create discounts, we recommend that you always avoid or minimize overlapping discount lines. Overlapping discount lines occur when two or more discount lines in the same discount can be applied to the same product. In this case, the pricing engine must treat the discount as two or more independent discounts that must then be evaluated against each other to find the best discount amount. In addition, it can be difficult for a user to know what the discount will be just by looking at the discount definition.
 
+> [!NOTE]
+> When the number of discount lines is more than a thousand, you may see slowness in several price & discount scenarios, include but not limited to discount settings at Headquarters, sales order operations at call center or Point of Sale. We recommend to split a huge discount into several small discounts with a few hundreds of discount lines for each.
+
 ## Managing discounts
 
 ### Settings and options that are common to all discounts
