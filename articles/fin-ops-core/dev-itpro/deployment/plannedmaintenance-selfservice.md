@@ -64,7 +64,7 @@ A planned maintenance window is typically during the dark hours of the geographi
 |---|---|---|---|
 | Station 1 | Central Canada, Canada East, Central France, Central India, West Switzerland, East Norway | Service Update 10.0.28 | September 15 to September 18, 2022 |
 | Station 2 | Japan East, Japan West, South East Asia, UK South, South France, North Switzerland, North Norway, South India, Australia East, Australia South, South Africa North, UAE North | | |
-| Station 3 | North Europe, Central US, West US | | |
+| Station 3 | North Europe, Central US, East US, West US | | |
 | Station 4 | DoD, Government Community Cloud, China | | |
 
 > [!IMPORTANT] 
