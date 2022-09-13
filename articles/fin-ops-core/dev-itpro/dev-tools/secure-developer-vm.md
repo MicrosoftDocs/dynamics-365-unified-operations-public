@@ -24,6 +24,7 @@ This article describes security considerations of your one-box developer environ
 
 One-box developer environments are comprised of Azure resources which are deployed into your own Azure subscription.
 
+> [!NOTE]
 > When you deploy a one-box developer environment, you can expect the following Azure resources to be deployed:
 > + 1 Virtual machine
 > + 5 Disks
@@ -63,7 +64,8 @@ Life-Cycle Services allows a custom virtual network to be chosen at deployment t
 
 Deploying to a custom virtual network is an advanced configuration. The guidance above is provided to outline the requirements for you to be successful in using a custom virtual network. An incorrect virtual network conifguration can prevent deployment or management operations from LCS and care must be taken to understand how the customizations may impact external integrations.
 
->Note:  Microsoft Support is unable to trouble-shoot problems with custom configurations due to the wide variety of possible customizations. The recommendation for troubleshooting is to leverage the default configuration as a known-good configuration and apply your additional restrictions incrementally to narrow down problems with the desired custom configuration.
+>[!NOTE]
+>Microsoft Support is unable to trouble-shoot problems with custom configurations due to the wide variety of possible customizations. The recommendation for troubleshooting is to leverage the default configuration as a known-good configuration and apply your additional restrictions incrementally to narrow down problems with the desired custom configuration.
 
 ## Security architecture recommendations
 
