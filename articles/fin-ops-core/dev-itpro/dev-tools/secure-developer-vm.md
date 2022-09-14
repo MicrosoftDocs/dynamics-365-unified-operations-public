@@ -57,7 +57,7 @@ Life-Cycle Services allows a custom virtual network to be chosen at deployment t
 
 1. IP addresses from Life-Cycle Services must be allowed to access port 5986 on the Virtual Machine. These ports are required to both deploy and management the environment from LCS. 
 
-> ### <u>Life-Cycle Services regional instances and IPs</u>
+> ### Life-Cycle Services regional instances and IPs
 >
 >Important: The regional instance of LCS shown here corresponds to the LCS Portal where you log in to manage your project and environments. This can be different than the region where you intend to deploy your development environment.
 >
