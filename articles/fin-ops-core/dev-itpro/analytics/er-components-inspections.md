@@ -962,7 +962,7 @@ Enable the **Validate obsolete elements of Electronic Reporting data sources** f
 > [!NOTE]
 > A warning occurs during the inspection of the editable ER component for a data source that refers to an obsolete artifact only when this data source is used in at least one binding of this ER component.
 
-> [TIP]
+> [!TIP]
 > When the [SysObsoleteAttribute](../dev-ref/xpp-attribute-classes.md#sysobsoleteattribute) class is used to notify the compiler to issue warning messages instead of errors, the inspection warning presents the specified in source code warning at design time in the **Details** FastTab on the **Model mapping designer** or **Format designer** page.
 
 The following illustration shows the validation warning that occurs when the obsolete `DEL_Email` field of the `CompanyInfo` application table is bound to a data model field by using the configured `company` data source.
