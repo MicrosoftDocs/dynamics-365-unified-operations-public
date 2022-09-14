@@ -82,7 +82,7 @@ To process payments across point of sale (POS) terminals, a call center, or Comm
     | Authorization stale period (days) | (*POS only*) Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
     | Origin Key ("V002") or Client Key ("V003") | An origin key value is required when "V002" is the designated version. For instructions on obtaining this key, see [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key). A client key value is required when "V003" is the designated version. For instructions on obtaining this key, see [Migrate to Client key](https://docs.adyen.com/development-resources/client-side-authentication/migrate-from-origin-key-to-client-key#switch-to-using-the-client-key).| Yes | No | *The full Origin or Client key* |
     | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
-    | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
+    | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that don't support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 
 1. On the **Card verification value** tab, leave **Prompt for card verification value** and **Allow blank card verification value** set to **No**. 
 
@@ -93,12 +93,12 @@ To process payments across point of sale (POS) terminals, a call center, or Comm
 > [!NOTE]
 > These instructions assume that you have access to an Adyen payment terminal.
 
-Go to the [Point of sale](https://docs.adyen.com/developers/point-of-sale) page on the Adyen website and follow the instructions to onboard your Adyen payment terminal. Skip any steps that instruct you to download Adyen-specific apps. During the onboarding process, make a note of the following information for each payment terminal. You will need this information in the [Configure the payment terminal IP address and EFT POS register number](#configure-the-payment-terminal-ip-address-and-eft-pos-register-number) section later in this article.
+Go to the [Point of sale](https://docs.adyen.com/developers/point-of-sale) page on the Adyen website and follow the instructions to onboard your Adyen payment terminal. Skip any steps that instruct you to download Adyen-specific apps. During the onboarding process, make a note of the following information for each payment terminal. You'll need this information in the [Configure the payment terminal IP address and EFT POS register number](#configure-the-payment-terminal-ip-address-and-eft-pos-register-number) section later in this article.
 
 - IP address of the payment terminal
-- POIID (POIID is composed of the serial number and model number of the device. It is used to uniquely identify the device.)
+- POIID (POIID is composed of the serial number and model number of the device. It's used to uniquely identify the device.)
 
-After the payment terminal is onboarded, sign in to the [Adyen Customer Area](https://ca-test.adyen.com/ca/ca/login.shtml), go to the terminal that you want to configure, and make a note of the following information for each payment terminal. You will need this information in the [EFT service for local network communication](#eft-service-for-local-network-communication) section later in this article.
+After the payment terminal is onboarded, sign in to the [Adyen Customer Area](https://ca-test.adyen.com/ca/ca/login.shtml), go to the terminal that you want to configure, and make a note of the following information for each payment terminal. You'll need this information in the [EFT service for local network communication](#eft-service-for-local-network-communication) section later in this article.
 
 - Key identifier
 - Key passphrase
@@ -142,7 +142,7 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Authorization stale period (days) | (*POS only*) Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
     | Origin Key | (*Card not present only*)  |
     | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
-    | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
+    | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that don't support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 
 1. On the Action Pane, select **Save**.
 
@@ -174,7 +174,7 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Authorization stale period (days) | (*POS only*) Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
     | Origin Key | (*Card not present only*) |
     | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
-    | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
+    | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that don't support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 
 1. On the Action Pane, select **Save**.
 
@@ -198,8 +198,8 @@ Payment terminals may not be used by multiple hardware stations. If a payment te
 1. In the **Profiles** section, in the **Hardware profile** field, select the hardware profile that you configured earlier.
 1. Save your changes.
 1. On the Action Pane, on the **Register** tab, in the **Hardware** group, select **Configure IP addresses**.
-    1. **If using the "Local" architecture:** On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the IP address of the terminal in the following format: `https://<IP address>:8443/nexo/<POIID>`. Here, **\<IP address\>** and **\<POIID\>** are the values that you made a note of when you onboarded the Adyen payment terminal. Here is an example: `https://192.168.1.3:8443/nexo/MX925-123456789`. The values in this URL are case-sensitive.
-    1. **If using the "Cloud" architecture:** On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the **POIID** value that you made a note of when you onboarded the Adyen payment terminal. Here is an example: `MX925-123456789`. The values in this field are case-sensitive.
+    1. **If using the "Local" architecture:** On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the IP address of the terminal in the following format: `https://<IP address>:8443/nexo/<POIID>`. **\<IP address\>** and **\<POIID\>** are the values that you made a note of when you onboarded the Adyen payment terminal (for example, `https://192.168.1.3:8443/nexo/MX925-123456789`). The values in this URL are case-sensitive.
+    1. **If using the "Cloud" architecture:** On the **IP address configuration** page, on the **PIN pad** FastTab, in the **IP address** field, enter the **POIID** value that you made a note of when you onboarded the Adyen payment terminal (for example, `MX925-123456789`). The values in this field are case-sensitive.
 1. If the payment terminal includes an onboard printer and you want to print receipts from the processor using that printer, enter **123** in the **Port** field that is separate from the **IP address** field in the **PIN pad** FastTab.
 
 #### Update the Modern POS or IIS Hardware Station configuration
@@ -257,7 +257,7 @@ To configure additional information for the connector in Commerce headquarters, 
     | Authorization stale period (days) | (*POS only*) Number of days before an authorization is considered stale and should decline before going to the processor for capture. | Yes | Yes | "7" |
     | Origin Key ("V002") or Client key ("V003") | (*E-commerce only*) 'An origin key value is required when "V002" is the designated version. For instructions on obtaining this key, see [How to get an origin key](https://docs.adyen.com/user-management/how-to-get-an-origin-key). A client key value is required when "V003" is the designated version. For instructions on obtaining this key, see [Migrate to Client key](https://docs.adyen.com/development-resources/client-side-authentication/migrate-from-origin-key-to-client-key#switch-to-using-the-client-key). | Yes | No | *The full Origin or Client key* |
     | EnableRequestProtection | Adds retry logic to "card not present" payment calls, reducing potential for duplicate calls using a correlation ID. When "True", a correlation ID is added to provider requests to prevent duplicates. If "False", calls are sent to the provider without the correlation ID or duplicate protection logic. | No | No | True/False |
-    | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that do not support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
+    | Non-incremental capture payment methods | Names of the payment method variant or card types used by Adyen to identify card types in authorization responses that don't support incremental capture. Value entered should match the payment method variant/card type string used in Adyen to reference, as noted in [Adyen PaymentMethodVariant](https://docs.adyen.com/development-resources/paymentmethodvariant).  | No | No | "amexcommercial" |
 
 1. On the Action Pane, select **Save**.
 
