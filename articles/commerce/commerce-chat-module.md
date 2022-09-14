@@ -80,6 +80,10 @@ To add the chat module to your site's header fragment in Commerce site builder, 
 1. In the **Select modules** dialog box, select the chat fragment that you created earlier, and then select **OK**.
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
+> [!NOTE]
+> Refer to  **[Commerce Chat with Omnichannel  for Customer Service additional parameters](/omnichannel-chat-module-properties.md)** for complete list of configuration parameters.
+
+
 ## Add Commerce headquarters as an application tab for Omnichannel for Customer Service
 
 You can add an application tab for Commerce headquarters in Omnichannel for Customer Service. Live agents can then use the user interface for the Omnichannel for Customer Service agent experience to easily access the Dynamics 365 Commerce Customer Service module that contains contextual information for the customer together with their sales orders information. In addition, customer service agents can place new orders, initiate returns, and verify order status information.
@@ -112,6 +116,9 @@ To enable a new application tab for customer agents in Dynamics 365 Omnichannel 
 1. Go to **Customer support \> Workstreams**.
 1. Open the workstream that you've created for your agents, and then, under **Advanced settings**, select **Sessions default**.
 1. Under **Application Tabs**, select **Add Existing Application Tab**, and then add the new application tab that you created earlier. This step ensures that an application tab that loads Commerce headquarters in an iFrame module will appear when an agent receives an incoming chat call from your e-commerce website.
+
+> [!NOTE]
+> In the workstream, the default chat session template cannot be modified. So, you may want to create a new template or duplicate the existing one to update. Refer to **[Associate templates with workstream](https://docs.microsoft.com/en-us/dynamics365/app-profile-manager/associate-templates)** for more details.
 
 ## Add context variables in Dynamics 365 Omnichannel for Customer Service
 
