@@ -55,7 +55,24 @@ The WinRM management port (5986) is utilized by Life-Cycle Services to both init
 ## Deploying to a custom virtual network
 Life-Cycle Services allows a custom virtual network to be chosen at deployment time. This capability makes it possible to deploy the one-box environment's Virtual Machine directly into a pre-configured virtual network. However, several considerations must be taken when using a custom virtual network to ensure Life-Cycle Services capabilities continue to function and environment deployment can succeed.
 
-1. IP addresses from Life-Cycle Services must be allowed to access port 5986 on the Virtual Machine. These ports are required to both deploy and management the environment from LCS. The latest list of IPs allowed for port 5986 can be found in the default configured Network Security Group when using a non-custom vNet.
+1. IP addresses from Life-Cycle Services must be allowed to access port 5986 on the Virtual Machine. These ports are required to both deploy and management the environment from LCS. 
+
+> ### <u>Life-Cycle Services regional instances and IPs</u>
+>
+>Important: The regional instance of LCS shown here corresponds to the LCS Portal where you log in to manage your project and environments. This can be different than the region where you intend to deploy your development environment.
+>
+>| Geography | LCS Url | LCS IP addresses
+>|---|---|---|
+>| United States / Public | lcs.dynamics.com | 191.239.20.104<br/>40.76.5.241<br/>40.112.209.123<br/>40.121.208.21<br/>40.118.145.241 |
+>| Azure Government | gov.lcs.microsoftdynamics.us | 52.227.70.23<br/>13.72.15.62<br/>23.97.12.187<br/>13.72.20.213 |
+>| China | lcs.dynamics.cn | 40.73.5.94<br/>40.73.64.218<br/>40.112.209.123<br/>40.121.208.21 |
+>| Europe | eu.lcs.dynamics.com | 40.114.140.114<br/>40.115.104.173 |
+>| France | fr.lcs.dynamics.com | 40.89.132.81<br/>40.89.155.166<br/>40.89.130.72<br/>52.136.130.60<br/>52.136.130.76 |
+>| South Africa | sa.lcs.dynamics.com | 102.133.165.35<br/>102.133.67.149<br/>40.127.1.92<br/>102.133.67.146<br/>40.127.4.34 |
+>| Switzerland | ch.lcs.dynamics.com | 51.103.133.142<br/>51.103.146.43<br/>51.103.138.255<br/>51.107.226.123<br/>51.107.224.152<br/>51.107.224.175 |
+>| United Arab Emirates | uae.lcs.dynamics.com | 20.45.79.158<br/>40.123.207.67<br/>20.45.64.174<br/>40.123.217.56<br/>20.45.79.195 |
+
+> [!NOTE]
 > If you are using a higher-level firewall, outside of the vNet's Network Security Group, you will need to allow a broader range of in-bound ports from the LCS source IP addresses. This is because the Load-Balancer is configured to map a randomized port in the range of 50,000-65535 to the well-known ports (such as WinRM and RDP). Deployment from LCS will require these port ranges to be accessible.
 
 2. Port 443 (Https) is not required to be exposed externally and is not used during deployment or management operations.
