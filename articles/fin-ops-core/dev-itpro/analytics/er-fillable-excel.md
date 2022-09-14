@@ -182,6 +182,9 @@ When a **Cell** component is configured to enter a value in an Excel picture, it
 > [!NOTE]
 > Every Excel picture and shape is considered to be anchored by its upper-left corner to a specific Excel cell or range. If you want to replicate an Excel picture or shape, you must configure the cell or range that it's anchored to as a replicated cell or range.
 
+> [!TIP]
+> If you plan to use an image with custom scaling and aspect ratio at runtime, we recommend you set the option **Respect pictures scaling** of the parent [Excel file component](#excel-file-component) to **Yes** to apply the scaling and aspect ratio as a placeholder of that image in the Excel template you are using.
+
 To learn more about how to embed images and shapes, see [Embed images and shapes in documents that you generate by using ER](electronic-reporting-embed-images-shapes.md).
 
 ## Page break component
