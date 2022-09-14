@@ -2553,41 +2553,106 @@ The following procedure applies to the electronic message processing example tha
 
 5.Optional: On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier are added to the message. For more information, see the [Settle and post sales tax](#_Settle_and_post) section earlier in this topic. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration** version field in the **Declaration** dialog box.
 
-6.Optional: On the Message items FastTab, review the sales tax payments that are transferred for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.
+6.Optional: On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.
 
-7.Optional: Select Original document to review the sales tax payments, or select Delete to exclude sales tax payments from processing. If you skip this step, you can still generate a VAT declaration by using the Tax declaration version field in the Declaration dialog box.
+7.Optional: Select **Original document** to review the sales tax payments, or select **Delete** to exclude sales tax payments from processing. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
 
-8.On the Messages FastTab, select Update status. In the Update status dialog box, select Ready to generate, and then select OK. Verify that the message status is changed to Ready to generate.
+8.On the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select **Ready to generate**, and then select **OK**. Verify that the message status is changed to **Ready to generate**.
 
-9.Select Generate report. To preview the VAT declaration amounts, in the Run processing dialog box, select Preview report, and then select OK.
+9.Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **Preview report**, and then select **OK**.
 
-10.In the Electronic reporting parameters dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#_Preview_VAT_declaration) section earlier in this topic, and then select OK.
+10.In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#_Preview_VAT_declaration) section earlier in this topic, and then select **OK**.
 
-11.Select the Attachments button in the upper-right corner of the page, and then select Open to open the file. Review the amounts in the Excel documents.
+11.Select the **Attachments** button in the upper-right corner of the page, and then select **Open** to open the file. Review the amounts in the Excel documents.
 
-12.Select Generate report.
+12.Select **Generate report**.
 
-13.To generate a report in XML format, in the Run processing dialog box, select Generate report, and then select OK.
+13.To generate a report in XML format, in the **Run processing** dialog box, select **Generate report**, and then select **OK**.
 
 14.Set the following fields.
 
-| Field| Description |
-| - |
-| Report periodicity| Select Monthly, Quarterly, or Yearly. |
-| Tax representative| Select a tax representative, if applicable. |
-| Contact person| Select the employee who is a contact for the declaration. |
-| Signatory person| Select the employee who signs the declaration. |
-| Power of attorney| If you selected a tax representative, select the type of power of attorney: Add-hoc or Permanent. |
-| Threshold exceeded| Select Yes if you exceeded the threshold. |
-| Tax base - Deductible amount moved from previous period
+<table>
+<tbody>
+<tr>
+<td width="231">
+<p><strong>Field</strong></p>
+</td>
+<td width="464">
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td width="231">
+<p>Report periodicity</p>
+</td>
+<td width="464">
+<p>Select <strong>Monthly</strong>, <strong>Quarterly</strong>, or <strong>Yearly</strong>.</p>
+</td>
+</tr>
+<tr>
+<td width="231">
+<p>Tax representative</p>
+</td>
+<td width="464">
+<p>Select a tax representative, if applicable.</p>
+</td>
+</tr>
+<tr>
+<td width="231">
+<p>Contact person</p>
+</td>
+<td width="464">
+<p>Select the employee who is a contact for the declaration.</p>
+</td>
+</tr>
+<tr>
+<td width="231">
+<p>Signatory person</p>
+</td>
+<td width="464">
+<p>Select the employee who signs the declaration.</p>
+</td>
+</tr>
+<tr>
+<td width="231">
+<p>Power of attorney</p>
+</td>
+<td width="464">
+<p>If you selected a tax representative, select the type of power of attorney: <strong>Add-hoc</strong> or <strong>Permanent</strong>.</p>
+</td>
+</tr>
+<tr>
+<td width="231">
+<p>Threshold exceeded</p>
+</td>
+<td width="464">
+<p>Select <strong>Yes</strong> if you exceeded the threshold.</p>
+</td>
+</tr>
+<tr>
+<td width="231">
+<p>Tax base - Deductible amount moved from previous period</p>
+<p>Tax amount - Deductible amount moved from previous period</p>
+</td>
+<td width="464">
+<p>Enter the amounts that have been moved from the previous period. These amounts are shown on line 82.</p>
+</td>
+</tr>
+<tr>
+<td width="231">
+<p>Tax base - Receivable amount carried forward</p>
+<p>Tax amount - Receivable amount carried forward</p>
+</td>
+<td width="464">
+<p>Enter the amounts to move to the next period. These amounts are shown on line 86.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
 
-Tax amount - Deductible amount moved from previous period| Enter the amounts that have been moved from the previous period. These amounts are shown on line 82. |
-| Tax base - Receivable amount carried forward
 
-Tax amount - Receivable amount carried forward| Enter the amounts to move to the next period. These amounts are shown on line 86. |
-
-
-15.Select the Attachments button in the upper-right corner of the page, and download the electronic file that was generated. You should then manually upload this file to the tax authority tool or portal.
+15.Select the **Attachments** button in the upper-right corner of the page, and download the electronic file that was generated. You should then manually upload this file to the tax authority tool or portal.
 
 ## Run a VAT declaration for multiple legal entities
 
@@ -2597,31 +2662,108 @@ To use the formats to report the VAT declaration for a group of legal entities, 
 
 Follow these steps to set up electronic messages to collect data from multiple legal entities.
 
-1.Go to Workspaces > Feature management.
+1.Go to **Workspaces** > **Feature management**.
 
-2.Find and select the Cross-company queries for the populate records actions feature in the list, and then select Enable now.
+2.Find and select the **Cross-company queries for the populate records actions** feature in the list, and then select **Enable now**.
 
-3.Go to Tax > Setup > Electronic messages > Populate records actions.
+3.Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**.
 
-4.On the Populate records action page, select the line for HU Populate VAT return records.
+4.On the **Populate records action** page, select the line for **HU Populate VAT return records**.
 
-In the Datasources setup grid, a new Company field is available. For existing records, this field shows the identifier of the current legal entity.
+In the **Datasources setup** grid, a new **Company** field is available. For existing records, this field shows the identifier of the current legal entity.
 
-5.In the Datasources setup grid, add a line for each additional legal entity that must be included in reporting. For each new line, set the following fields.
+5.In the **Datasources setup** grid, add a line for each additional legal entity that must be included in reporting. For each new line, set the following fields.
 
-| Field| Description |
-| - |
-| Name| Enter a value that will help you understand where this record comes from. For example, enter VAT payment of Subsidiary 1. |
-| Message item type| Select VAT return. This value is the only value that is available for all the records. |
-| Account type| Select All. |
-| Master table name| Specify TaxReportVoucher for all the records. |
-| Document number field| Specify Voucher for all the records. |
-| Document date field| Specify TransDate for all the records. |
-| Document account field| Specify TaxPeriod for all the records. |
-| Company| Select the ID of the legal entity. |
-| User query| This checkbox is automatically selected when you define criteria by selecting Edit query. |
+<table>
+<tbody>
+<tr>
+<td>
+<p><strong>Field</strong></p>
+</td>
+<td>
+<p><strong>Description</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Name</p>
+</td>
+<td>
+<p>Enter a value that will help you understand where this record comes from. For example, enter <strong>VAT payment of Subsidiary 1</strong>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Message item type</p>
+</td>
+<td>
+<p>Select <strong>VAT return</strong>. This value is the only value that is available for all the records.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Account type</p>
+</td>
+<td>
+<p>Select <strong>All</strong>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Master table name</p>
+</td>
+<td>
+<p>Specify <strong>TaxReportVoucher</strong> for all the records.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Document number field</p>
+</td>
+<td>
+<p>Specify <strong>Voucher</strong> for all the records.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Document date field</p>
+</td>
+<td>
+<p>Specify <strong>TransDate</strong> for all the records.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Document account field</p>
+</td>
+<td>
+<p>Specify <strong>TaxPeriod</strong> for all the records.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>Company</p>
+</td>
+<td>
+<p>Select the ID of the legal entity.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p>User query</p>
+</td>
+<td>
+<p>This checkbox is automatically selected when you define criteria by selecting <strong>Edit query</strong>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
 
 
-6.For each new line, select Edit query, and specify a related settlement period for the legal entity that is specified in the Company field on the line.
+6.For each new line, select **Edit query**, and specify a related settlement period for the legal entity that is specified in the **Company** field on the line.
 
-When the setup is completed, the Collect data function on the Electronic messages page collects sales tax payments from all the legal entities that you defined.
+When the setup is completed, the **Collect data** function on the **Electronic messages** page collects sales tax payments from all the legal entities that you defined.
+
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
