@@ -31,7 +31,7 @@ For more information about how to set up application-specific parameters, see th
 
 In the following table, the "Lookup result" column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the row of the VAT declaration.
 
-## VAT declaration overview
+## <a name="VAT_declaration_overview"></a>VAT declaration overview
 
 The VAT declaration 65A in Hungary contains the following sections:
 
@@ -2148,7 +2148,7 @@ For more information about how to set up registration categories and registratio
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
-### Set up application-specific parameters for VAT declaration fields
+### <a name="Set_up_application-specific"></a>Set up application-specific parameters for VAT declaration fields
 
 > [!NOTE]
 > 
@@ -2387,7 +2387,7 @@ The data package contains electronic message settings that are used to preview t
 
 4.If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
 
-## Preview the VAT declaration, incoming transactions, and outgoing transactions in Excel
+## <a name="Preview_VAT_declaration"></a>Preview the VAT declaration, incoming transactions, and outgoing transactions in Excel
 
 ### Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task
 
@@ -2472,7 +2472,7 @@ The data package contains electronic message settings that are used to preview t
 
 4.Select **OK**, and review the Excel report.
 
-### Settle and post sales tax
+### <a name="Settle_and_post"></a>Settle and post sales tax
 
 1.Go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Settle and post sales tax**.
 
@@ -2654,7 +2654,7 @@ The following procedure applies to the electronic message processing example tha
 
 15.Select the **Attachments** button in the upper-right corner of the page, and download the electronic file that was generated. You should then manually upload this file to the tax authority tool or portal.
 
-## Run a VAT declaration for multiple legal entities
+## <a name="Run_a_VAT"></a>Run a VAT declaration for multiple legal entities
 
 To use the formats to report the VAT declaration for a group of legal entities, you must first set up the application-specific parameters of the ER formats for sales tax codes from all required legal entities.
 
