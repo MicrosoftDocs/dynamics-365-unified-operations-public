@@ -27,7 +27,7 @@ For Hungary, you must configure the following elements:
 * Assets lookup
 * In-kind operations lookup
 
-For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#_Set_up_application-specific_1) section later in this topic.
+For more information about how to set up application-specific parameters, see the [Set up application-specific parameters for VAT declaration fields](#Set_up_application-specific) section later in this topic.
 
 In the following table, the "Lookup result" column shows the lookup result that is preconfigured for a specific VAT declaration row in the VAT declaration format. Use this information to correctly associate sales tax codes with the lookup result and then with the row of the VAT declaration.
 
@@ -2183,7 +2183,7 @@ Follow these steps to define which sales tax codes generate which lines on the V
 <p>Lookup result</p>
 </td>
 <td>
-<p>Select the value of the report field. For more information about the values and their assignment to VAT declaration lines, see the <a href="#_VAT_declaration_overview_1">VAT declaration overview</a> section earlier in this topic.</p>
+<p>Select the value of the report field. For more information about the values and their assignment to VAT declaration lines, see the <a href="#VAT_declaration_overview">VAT declaration overview</a> section earlier in this topic.</p>
 </td>
 </tr>
 <tr>
@@ -2535,7 +2535,7 @@ The data package contains electronic message settings that are used to preview t
 
 ## Generate a VAT declaration from electronic messages
 
-When you use electronic messages to generate the report, you can collect tax data from multiple legal entities. For more information, see the [Run a VAT declaration for multiple legal entities](#_Run_a_VAT) section later in this topic.
+When you use electronic messages to generate the report, you can collect tax data from multiple legal entities. For more information, see the [Run a VAT declaration for multiple legal entities](#Run_a_VAT) section later in this topic.
 
 The following procedure applies to the electronic message processing example that you imported earlier from the LCS Shared asset library.
 
@@ -2551,7 +2551,7 @@ The following procedure applies to the electronic message processing example tha
 > 
 > Steps 5 through 7 are optional.
 
-5.Optional: On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier are added to the message. For more information, see the [Settle and post sales tax](#_Settle_and_post) section earlier in this topic. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration** version field in the **Declaration** dialog box.
+5.Optional: On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier are added to the message. For more information, see the [Settle and post sales tax](#Settle_and_post) section earlier in this topic. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration** version field in the **Declaration** dialog box.
 
 6.Optional: On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.
 
@@ -2561,7 +2561,7 @@ The following procedure applies to the electronic message processing example tha
 
 9.Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **Preview report**, and then select **OK**.
 
-10.In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#_Preview_VAT_declaration) section earlier in this topic, and then select **OK**.
+10.In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#Preview_VAT_declaration) section earlier in this topic, and then select **OK**.
 
 11.Select the **Attachments** button in the upper-right corner of the page, and then select **Open** to open the file. Review the amounts in the Excel documents.
 
