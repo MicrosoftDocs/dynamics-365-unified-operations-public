@@ -2,7 +2,7 @@
 title: Inventory Visibility app
 description: This article describes how to use the Inventory Visibility app.
 author: yufeihuang
-ms.date: 05/27/2022
+ms.date: 09/15/2022
 ms.topic: article
 ms.search.form:
 audience: Application User
