@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Document routing layout for license plate labels
+title: Document routing label layouts
 description: This article describes how to use formatting methods to print values on labels.
 author: perlynne
 ms.date: 04/01/2020
@@ -24,7 +24,7 @@ ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
 ---
 
-# Document routing layout for license plate labels
+# Document routing label layout
 
 [!include [banner](../includes/banner.md)]
 
@@ -53,13 +53,16 @@ As part of the label printing process, the text `$LicensePlateId$` in this examp
 
 To see the values that will be printed, go to **Warehouse management \> Inquiries and reports \> License plate labels**.
 
+## Label layout formats
+The following information applies for all the **Document routing label layouts**, incl. [container labels](configure-container-label-printing.md) and [wave labels](configure-wave-label-printing.md).
+
 Several widely available label generation tools can help you format the text for the label layout. Many of these tools support the `$FieldName$` format. In addition, Microsoft Dynamics 365 Supply Chain Management uses special formatting logic as part of the field mapping for the document routing layout.
 
-## Turn on this feature for your system
+### Turn on this feature for your system
 
 If your system doesn't already include the features described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Enhanced license plate label layouts* feature. (As of Supply Chain Management version 10.0.21, this feature is turned on by default. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off.)
 
-## Custom number formats
+### Custom number formats
 
 You can customize the formatting of numerical field values that are printed by using codes that have the following format.
 
@@ -79,7 +82,7 @@ The following examples show how you can customize the work quantity (**Qty**) fi
 
 For a complete list of the available number format strings, see [Custom numeric format strings](/dotnet/standard/base-types/custom-numeric-format-strings).
 
-## Custom string formats
+### Custom string formats
 
 You can remove the first characters of a string by using the following field and format code.
 
@@ -89,7 +92,7 @@ $FieldName:#..$
 
 Here, `#` specifies the number of characters to skip. For example, to print a Serial Shipping Container Code (SSCC) license plate number that doesn't include the first two characters, use `$LicensePlateId:2..$`. In this case, the license plate number 0011111111111222221 will be printed as "11111111111222221."
 
-## Custom date/time formats
+### Custom date/time formats
 
 The following example shows how you can control the format that is used to print dates.
 
@@ -101,7 +104,7 @@ In this example, the date April 30, 2020, will be printed as "30-04-2020."
 
 For a complete list of the available date/time formats, see [Custom date and time format strings](/dotnet/standard/base-types/custom-date-and-time-format-strings).
 
-## Print individual lines from multiline data
+### Print individual lines from multiline data
 
 If a data field contains multiple lines (that is, lines that are separated by line breaks), you can print an individual line by using the following format.
 
@@ -125,7 +128,7 @@ You can print this address, one line at a time, by using the following codes.
 | `$AdditionalAddress[2]$` | 123 Street Name |
 | `$AdditionalAddress[3]$` | Some City, Some State |
 
-## Print and format from a display method
+### Print and format from a display method
 
 You can print from a display method by using the following format.
 
@@ -139,9 +142,11 @@ You can combine this format with other types that were described earlier in this
 $DisplayListOfItemsNumbers()[1]$
 ```
 
-## More information about how to print labels
+### More information about how to print labels
 
-For more information about how to set up and print labels, see [Enable license plate label printing](tasks/license-plate-label-printing.md).
-
+For more information about how to set up and print labels, see:
+   - [License plate label printing](tasks/license-plate-label-printing.md)
+   - [container label printing](configure-container-label-printing.md)
+   - [Wave label printing](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

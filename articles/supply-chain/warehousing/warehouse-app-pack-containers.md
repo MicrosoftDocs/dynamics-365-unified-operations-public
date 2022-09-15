@@ -116,7 +116,7 @@ You must set up the **Container packing policy** and **Packing profile ID** for 
 -	**Warehouse** - Select *62*, a warehouse already enabled for the packing process in the demo data.
 -	**Location** - Select *Pack*. Note that the Warehouse Management mobile app will always prompt for confirmation for the assigned value, which can get overwritten. In case you do not provide a default packing location value the warehouse worker must always scan or look up the packing location in the app, which can get achieved by using the [Data inquiry](warehouse-app-data-inquiry.md) capability.
 > [!NOTE]
-> To automatically print container labels when creating a new container record, please go to: [**Print container label**](configure-container-label-printing.md).
+> To automatically print container labels when creating a new container record, please go to: [**Container label printing**](configure-container-label-printing.md).
 
 ### Create a new *Pack inventory into containers* mobile device menu item
 You must create a new mobile device menu item to pack inventory into containers via the Warehouse Management mobile app.
@@ -634,7 +634,7 @@ In the following table you can see which processes are supported when using the 
 |Identification via GS1 barcode scanning                      | No        |                                                                                                                                       |
 |Identification item via barcode setup                        | (Yes)     | But quantity and unit (piece-by-piece) scanning is not supported                                                                      |
 |New container                                                | Yes       | Both via **Container creation** mobile device menu item incl. container type capturing and number sequence defaulting when having *Container ID mode* as **Auto**. But as well container ID creation when using the *Autocreate container at container close* process |
-|Print container label                                        | Yes       | Both automatically at **Container creation** process and as manual print via mobile device menu item                                  |
+|Print container label                                        | Yes       | Both automatically at **Container creation** process and as manual print via **Print container label** mobile device menu item                                  |
 |Close container                                              | Yes       | Via **Container closing** mobile device menu item incl. capturing of weight                                                           |
 |Release container                                            | No        | Only via container closing policy (Not as menu option) - User cannot reply yes or no as optional                                      |
 |Reopen container                                             | No        |                                                                                                                                       |
@@ -653,7 +653,7 @@ In the following table you can see which processes are supported when using the 
 |Transport route rate details                                 | (No)      | Only view via [Data inquiry detour](warehouse-app-data-inquiry.md)                                                                    |
 |Transport shipment accessorial charges                       | (No)      | Only view via [Data inquiry detour](warehouse-app-data-inquiry.md)                                                                    |
 |Transport status                                             | (No)      | Only View via [Data inquiry detour](warehouse-app-data-inquiry.md)                                                                    |
-|Print packing slip                                           | No        | <!-- UPDATE -->It is planned to have the automatic (Container packing polisales packing slip posting incl. printing supported in 10.0.31  |
+|Print packing slip                                           | No        | The setting to process sales packing slip processing as part of closing the last container for a shipment will not apply when using the Warehouse Management mobile app  |
 |Print container content                                      | (No)      | Only automatic printing setup is supported as part of closing container                                                               |
 |Print shipping label                                         | (No)      | Only automatic printing setup is supported as part of closing container                                                               |
 |Pack (all shipment items)                                    | No        | Each item number must be identified and packed individually                                                                           |

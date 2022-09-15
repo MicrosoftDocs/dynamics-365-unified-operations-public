@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.31
 # Container label printing
 [!include [banner](../includes/banner.md)]
 
-Container label printing can be used to print labels containing information about a container and the related shipment data. A typical scenario for this type of label would be as part of a container creation process when using the [Pack containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md) where a *Container label* barcode of the created **Container ID** can get printed and applied on the physical container.
+Container label printing can be used to print labels containing information about a container and the related shipment data. A typical scenario for this type of label would be as part of a container creation process when using the [Pack containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md) where a *Container label* barcode of the created **Container ID** can get printed and applied on a physical container.
 Like the [*License plate label*](document-routing-layout-for-license-plates.md) the *Container label* uses the Zebra Programming Language (ZPL) to create label layouts.
 
 ## Turn on the Container label printing capability
@@ -49,10 +49,12 @@ You can also use this scenario as guidance for using the feature on a production
 The label layout controls what information is printed on the label and how it's laid out. Here, you enter the ZPL code that is sent to the printer (typically copied from a label designer program).
 During the label generation process the system can replace field and method names used in the label layout with actual values. You can easily see the text which will get replaced by looking after the *$* character.
 
-1. Go to **Warehouse management \> Setup \> Document routing \> Container label layouts**.
+1. Go to **Warehouse management \> Setup \> Document routing \>Label layout**.
 1. Create a record that has the following settings:
-    - **Label layout ID:** *Container*
+    - **Label layout type:** *Container label*
+    - - **Label layout ID:** *Container*
     - **Description:** *Container ID barcode*
+    - **Label layout data source ID:** - Leave blank (only container data will be used)
 1. Copy from the below *ZPL container label example* and insert the text into the **Printer text Layout**
     ```ZPL container label example
     CT~~CD,~CC^~CT~
@@ -67,23 +69,32 @@ During the label generation process the system can replace field and method name
     ^FT233,53^A0N,28,28^FH\^FDContainer ID^FS
     ^PQ1,0,1,Y^XZ
     ```
+    > [!NOTE]
+    > You can easily find the correct field/method names by selecting the table in the **Tables** list followed by either a field name in **Fields** list or a method name in the **Methods** list and then use the **Insert at end of text** button.
 1. Close the page
 
 > [!NOTE]
-> In the above label layout only the *Container ID* barcode will get printed, but in case you want to include additional related data information to a label, like for example the delivery name related to the related shipment, you can select a **Date source label** including the setup for the additional tables.
-> From the **Container label layout** select **Date source label** in the *Action Pane* to open the **Data source label** page.
-> In the **Data source label** page create a new record with a *ID* and *Name* and select **Edit query** in the *Action Pane*. Now use the *Joins* option to add the needed tables.
+> In the above label layout only the *Container ID* ($WHSContainerTable.ContainerId$) barcode will get printed, but in case you want to include additional related data information to a label, like for example the delivery name related to a shipment, you can create a **Label layout data source** (**Warehouse > Setup > Document routing > Label layout data source**) including a join to the *Shipment* table.
+> In the **Label layout data source** select *New** in the *Action Pane* and specify a **Label layout data source ID** **Description**, and **Label layout type**.
+> Select **Edit query** in the *Action Pane*. Now use the *Joins* option to add the needed table(s).
 > Please do note, that in case you remove tables from a existing query you might risk removing field/method names already used in existing label layouts.
+> In the **Label layout** you can now select the created **Label layout data source ID**
 
 ### Create a container label rounting
 To define which container label layouts to use and where to print you need to define a **Container label routing**.
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Container label routing**.
 1. Create a record that has the following settings:
+    - **Sequence number:** *1* - The sequence number must be unique and the evaluated will happen ascending
     - **Container layout routing:** *Container packing*
-    - **Description:** *Used for container labels printed at packing locations*
-1. <!-- Setup filter + layout + printer --> ... ,this could for example be a scenario where the label layout depends on the type of container
-1. Printer name: Select an appropriate ZPL printer. You can read more about how to install a printer here: [Install the Document Routing Agent to enable network printing](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md)
+    - **Description:** *Used for container labels printed at Pack location*
+    - **Warehouse:** *62*
+    - **Location:** *Pack* - In this example the used printer will physically be placed at the *Pack* location.
+>[!NOTE]
+> When printing a container label from the Warehouse Management mobile app the current user warehouse, location, and work user ID gets passed as possible filter values for the selection of printer and layout. To use additional selection criteria you can select the **Run query** option and use the **Edit query** on the Action Pane.
+1. Select **New** in the *Container label rounting printer* section and provide:
+    - **Name:**  Select an appropriate ZPL printer. You can read more about how to install a printer here: [Install the Document Routing Agent to enable network printing](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md)
+    - **Label layout ID:** *Container label*
 
 ### Define automatic container label printing when creating a new container 
 The trigger setting whether a container label must automatically get printed when a new container gets created can be defined in the **Packing profiles**.
@@ -117,6 +128,11 @@ With now having the mobile device menu item created, we are ready to get it adde
 
 ### Run a scenario to print a container label
 To try out a full scenario please follow the [Pack containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md) making sure the above setup gets included.
+
+When selecting the **Print container label** mobile device menu item from the *Outbound* menu the application automatically applies the **User ID** and the **Warehouse** values.
+In case you would like to record a *Location* you can edit the details. The *Location* value can as well get auto assigned in case of calling the **Print container label** from the **Pack inventory into containers** menu item via a [detour]( warehouse-app-detours.md).
+> [!NOTE]
+> You can use the [**Query data using Warehouse Management mobile app detours**](warehouse-app-data-inquiry.md) capability to look up a container ID instead of entering a value.
 
 
 ## Additional resources
