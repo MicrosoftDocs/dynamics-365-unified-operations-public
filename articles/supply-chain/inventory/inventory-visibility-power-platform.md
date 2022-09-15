@@ -66,7 +66,7 @@ To post a reservation request, you must enter a value in the request body. Use t
 
 ## <a name="inventory-summary"></a>Inventory summary
 
-The **Inventory summary** page provides a customized view for the *Inventory OnHand Sum* entity. It shows an inventory summary for products together with all dimensions. Inventory summary data is synced with the Inventory Visibility service every 15 minutes.
+The **Inventory summary** page provides a view for the *Inventory OnHand Sum* entity. It shows an inventory summary for products together with all dimensions. Inventory summary data is synced with the Inventory Visibility service every 15 minutes.
 
 To see data on the **Inventory summary** page, you must turn on the *OnHandMostSpecificBackgroundService* feature on the **Feature Management** tab of the **Configuration** page and then select **Update configuration** (see also [Configure Inventory Visibility](inventory-visibility-configuration.md)).
 
@@ -85,7 +85,7 @@ Supply Chain Management stores a great deal of information about your current on
 > [!NOTE]
 > The current preview version of this feature can only provide preloaded results that include site and location. The final version of the feature is expected to let you select other dimensions to preload with the results.
 
-**Preload the Inventory Visibility Summary** <!-- KFM: What is **Preload the Inventory Visibility Summary**? Is this a new page or a new tab on an existing page, or something else? We should describe how to open it. Yuhui: similar to Inventory summary, it is a seperate page  --> is a customized view for the *On-hand Index Query Preload Results* entity. Unlike the *Inventory summary* entity, the *On-hand Index Query Preload Results* entity provides an on-hand inventory list for products together with selected dimensions. Inventory Visibility syncs the preloaded summary data every 15 minutes.
+**Preload the Inventory Visibility Summary** <!-- KFM: What is **Preload the Inventory Visibility Summary**? Is this a new page or a new tab on an existing page, or something else? We should describe how to open it. Yuhui: similar to Inventory summary, it is a seperate page  --> is a view for the *On-hand Index Query Preload Results* entity. Unlike the *Inventory summary* entity, the *On-hand Index Query Preload Results* entity provides an on-hand inventory list for products together with selected dimensions. Inventory Visibility syncs the preloaded summary data every 15 minutes.
 
 To view data on the **Preload the Inventory Visibility Summary** tab, you must turn on the *OnHandIndexQueryPreloadBackgroundService* feature on the **Feature Management** tab of the **Configuration** page and then select **Update configuration** (see also [Configure Inventory Visibility](inventory-visibility-configuration.md)).
 
