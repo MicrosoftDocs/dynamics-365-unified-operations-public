@@ -21,7 +21,7 @@ Planning Optimization results might differ from results from the built-in master
 | Feature | Current behavior in Planning Optimization |
 |---|---|
 | Catch weight products | Catch-weight products are considered usual products.|
-| Extensible dimensions | Extensible dimensions are empty on planned orders, even when the **Coverage plan by dimension** checkbox is selected on the **Storage dimension groups** or **Tracking dimension groups** page. |
+| Extensible dimensions | Extensible dimensions are not supported by Planning Optimization. When you use Planning Optimization, extensible dimensions are empty on planned orders, even when the **Coverage plan by dimension** checkbox is selected on the **Storage dimension groups** or **Tracking dimension groups** page. |
 | Filtered production runs | For details, see [Production planning - Filters](production-planning.md#filters). |
 | Forecast planning | Forecast planning isn't supported. We recommend that you use master planning where a forecast model is assigned to the master plan. |
 | Number sequences for planned orders | Number sequences for planned orders aren't supported. Planned order numbers are generated on the service side. The planned order number is normally shown with 10 digits, but the sequence is actually built on 20 characters, with 10 digits allocated for the planning run count and the other 10 digits for the planned orders count. |
