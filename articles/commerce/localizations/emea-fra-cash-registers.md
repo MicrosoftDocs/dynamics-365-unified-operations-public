@@ -313,7 +313,8 @@ You must also specify the following settings for France. Note that you must run 
 1. [Configure channel components](#configure-channel-components) to enable France-specific extensions of the components.
     > [!WARNING]
     > You should only do this if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
-1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode). 
+1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode).
+1. [Validate your configuration](#compliance-check-list).
 
 ### Enable features for France
 
@@ -538,16 +539,21 @@ To enable the digital signature in offline mode, you must follow these steps aft
 
 ## Compliance check-list
 
-This section describes basic scenarios that you can execute to validate that your environment is configured properly to comply with the cash register requirements for France. The scenarios can be executed in a series, so that they constitute a comprehensive end-to-end compliance check-list. 
+This section describes basic scenarios that you can execute to validate that your environment is configured properly to comply with the cash register requirements for France. The scenarios can be executed in a series, so that they constitute a comprehensive end-to-end compliance check-list. It is recommended that you start the validation with a clean database so that you can easily validate sequential numbers and amounts.
 
+1. Preparation
 1. Basic sale
 1. Basic return
 1. Issue gift card
 1. Customer order
+1. Customer order return
+1. Sale in Offline mode
 1. Non-sale operation (expense)
 1. Audit events
 1. Print receipt copy
-1. Close shift
-1. 
+1. Validate shift duration restriction
+1. Close shift and print Z-report
+1. Process period grand total journal
+1. Export and verify fiscal archive
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
