@@ -2,7 +2,7 @@
 title: Cash register functionality for France
 description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 09/12/2022
+ms.date: 09/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -292,7 +292,7 @@ Commerce also includes a tool that can be used to verify the integrity of a fisc
 
 ## Set up Commerce for France
 
-This section describes the Commerce settings that are specific to and recommended for France. For more information, see [Commerce home page](../index.md).
+This section describes the Commerce settings that are specific to and recommended for France. For more information on common Commerce features and settings, see [Commerce home page](../index.md).
 
 To use the France-specific functionality, you must complete these tasks:
 
@@ -300,6 +300,19 @@ To use the France-specific functionality, you must complete these tasks:
 - Set the **ISO code** field to **FR** (France) in the POS functionality profile of every store that is located in France.
 
 You must also specify the following settings for France. Note that you must run appropriate distribution jobs after you complete the setup.
+
+1. [Enable Commerce features](#enable-features-for-france) for France in the **Feature management** workspace.
+1. [Specify various registration numbers](#set-up-the-legal-entity) of the organization, such as the VAT identifier, on the **Legal entities** page. These registration numbers will be used when exporting the fiscal archive.
+1. [Set up VAT](#set-up-vat-per-french-requirements) per the French VAT regulations.
+1. [Set up POS functionality profiles](#set-up-functionality-profiles) to enable features and options required for France.
+1. [Configure custom fields](#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts) and [receipt formats](#configure-receipt-formats) to comply with the local regulatory requirements.
+1. [Configure the fiscal registration functionality](#set-up-fiscal-registration) for France to enable digital signing of sales transactions and audit events.
+1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing.
+1. [Specify Electronic reporting formats](#configure-the-z-report-and-archive-export-formats) that should be used to export Z-reports and fiscal archives from HQ.
+1. [Reinitialize Commerce components](#reinitialize-commerce-components) to enable France-specific audit events and transmission of France-specific data from POS to HQ.
+1. [Configure channel components](#configure-channel-components) to enable France-specific extensions of the components.
+    > [!WARNING]
+    > You should only do this if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
 
 ### Enable features for France
 
@@ -500,6 +513,16 @@ To enable audit events, you must reinitialize the Commerce extensible enumeratio
 1. On the **Commerce parameters** page, on the **General** FastTab, select **Initialize**. For more information, see [Initialize seed data in new Retail environments](../enable-configure-retail-functionality.md).
 1. There is an option to separately configure the scheduler. Go to **Commerce scheduler** \> **Initialize Commerce scheduler**. In the **Initialize Commerce scheduler** dialog box, select **OK**.
 
+### Configure channel components
+
+> [!WARNING]
+> You should only implement the steps that are described in this section if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
+
+To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-fi-deployment.md).
+
+> [!NOTE]
+> This version of the Commerce functionality for France is based on the [fiscal integration framework](./fiscal-integration-for-retail-channel.md). For information about the legacy digital signing sample for France, see [Deployment guidelines for cash registers for France (legacy)](./emea-fra-deployment.md).  For guidelines about how to enable the fiscal integration functionality for France in existing environments that use the legacy digital signing sample, see [Migrate from legacy Commerce functionality for France](./emea-fra-fi-migration.md).
+
 ### Enable the digital signature in offline mode
 
 To enable the digital signature in offline mode, you must follow these steps after you activate POS on a new device.
@@ -511,15 +534,5 @@ To enable the digital signature in offline mode, you must follow these steps aft
 1. Sign in to POS.
 1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending transactions in offline database** field is **0** (zero), the database is fully synchronized.
 1. Restart POS.
-
-### Configure channel components
-
-> [!WARNING]
-> You should only implement the steps that are described in this section if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
-
-To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-fi-deployment.md).
-
-> [!NOTE]
-> This version of the Commerce functionality for France is based on the [fiscal integration framework](./fiscal-integration-for-retail-channel.md). For information about the legacy digital signing sample for France, see [Deployment guidelines for cash registers for France (legacy)](./emea-fra-deployment.md).  For guidelines about how to enable the fiscal integration functionality for France in existing environments that use the legacy digital signing sample, see [Migrate from legacy Commerce functionality for France](./emea-fra-fi-migration.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
