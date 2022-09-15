@@ -314,7 +314,7 @@ You must also specify the following settings for France. Note that you must run 
     > [!WARNING]
     > You should only do this if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
 1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode).
-1. [Validate your configuration](#compliance-check-list).
+1. [Validate your configuration](#compliance-check-list) to make sure all France-specific features work properly.
 
 ### Enable features for France
 
@@ -555,5 +555,23 @@ This section describes basic scenarios that you can execute to validate that you
 1. Close shift and print Z-report
 1. Process period grand total journal
 1. Export and verify fiscal archive
+    
+### 1. Preparation
+
+1. In HQ:
+
+    1. [Set up Commerce for France](#set-up-commerce-for-france).
+    1. Execute appropriate distribution jobs or the **9999** "All jobs" job.
+
+1. In POS:
+    
+    1. Log in to POS and open a new shift.
+    1. On the **Current transaction** page, add several items and pay exact amount.
+    1. On the **Transaction journal** page, select the previous sales transaction and return one item from it. Pay exact amount.
+    1. Close the shift.
+    
+### 2. Basic sale
+    
+
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
