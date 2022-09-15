@@ -74,9 +74,11 @@ To enable the **Inventory summary** page and set the synchronization frequency, 
 1. Open the **Feature Management & Settings** tab.
 1. Set the toggle switch for the **OnHandMostSpecificBackgroundService** feature to *Yes*.
 1. When the feature is enabled, the **Service Configuration** section becomes available and includes a row for configuring the **OnHandMostSpecificBackgroundService** feature. This setting lets you choose the frequency at which inventory summary data is synced. Use the **Up** and **Down** buttons in the **Value** column to change the time between syncs (which can be as low as 5 minutes). Then select **Save**.
+
+    ![The OnHandMostSpecificBackgroundService Setting](media/inventory-visibility-ohms-freq.png "The OnHandMostSpecificBackgroundService Setting")
+
 1. Select **Update configuration** to save all the changes.
 
-![OnHandMostSpecificBackgroundService  Setting](media/inventory-visibility-ohms-freq.PNG "OnHandMostSpecificBackgroundService Setting")
 
 > [!NOTE]
 > The *OnHandMostSpecificBackgroundService* feature only tracks on-hand inventory changes that occurred after you turned on the feature. Data for products that haven't changed since you turned on the feature won't be synced from the inventory service cache to the Dataverse environment. If your **Inventory summary** page doesn't show all of the on-hand information you are expecting, open Supply Chain Management, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job and reenable it. This will do the initial push, and all data will sync to the *Inventory OnHand Sum* entity in the next 15 minutes. If you want to use the *OnHandMostSpecificBackgroundService* feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
