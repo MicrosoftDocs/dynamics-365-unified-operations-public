@@ -55,13 +55,16 @@ Verify that the following setup is completed:
 
 - You have **System administrator** and **System Customizer** access in the Power Portal admin center.
 - A Dynamics 365 Finance or equivalent license is applied to the user who is installing the Finance insights add-in.
+- The following Azure AD apps are registered in Azure AD.
 
-The following Azure AD apps are registered in Azure AD.
+    |  Application                             | App ID                               |
+    |------------------------------------------|--------------------------------------|
+    | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
 
-|  Application                             | App ID                               |
-|------------------------------------------|--------------------------------------|
-| Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
-    
+    To verify if the above-mentioned application is registered in Azure AD, you can check the ‘All Applications’ list by referencing <view enterprise applications link     : https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/view-applications-portal>
+
+    If the application is not registered in Azure AD, please contact support.
+  
 ## Configure Dataverse
 
 Follow these steps to configure Dataverse for Finance insights.
