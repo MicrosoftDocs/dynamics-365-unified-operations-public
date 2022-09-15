@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.30 (November 2022)
+          href: get-started/whats-new-commerce-10-0-30.md
         - name: Commerce 10.0.29 (October 2022)
           href: get-started/whats-new-commerce-10-0-29.md
         - name: Commerce 10.0.28 (July 2022)
@@ -62,6 +64,8 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/commerce
         - name: Get notified about service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/commerce
+        - name: Proactive quality updates
+          href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/commerce
         - name: Data task automation
           href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/commerce
         - name: Delivering ISV solutions using One Version
@@ -464,6 +468,8 @@
               items:
               - name: Support for external gift cards
                 href: dev-itpro/gift-card.md
+              - name: Cross-company data sharing for gift cards
+                href: dev-itpro/data-sharing-gift-cards.md
           - name: RSAT
             items:
             - name: Test recorder and Regression suite automation tool for Cloud POS
@@ -698,18 +704,16 @@
           href: optimal-combination-overlapping-discounts.md
         - name: Define channel-specific discounts 
           href: define-channel-specific-discounts.md
-        - name: Options for preventing discounts for retail products 
-          href: prevent-discounts.md
         - name: Tender-based discounts 
           href: tender_based_discounts.md
-        - name: Shipping discount overview 
-          href: retail-shipping-discount.md
+        - name: Shipping discount 
+          href: shipping-discount.md
         - name: Configure gift with purchase promotions
           href: gift-with-purchase.md
-        - name: Set up coupons  
-          href: retail-coupons.md
-        - name: Show discounts in POS
-          href: discounts-pos.md
+        - name: Coupons  
+          href: coupons.md
+        - name: Pricing settings
+          href: price-settings.md
         - name: Price reports 
           href: price-report.md
         - name: Create channel-specific trade agreements 
@@ -730,6 +734,8 @@
           href: enable-ADLS-environment.md 
         - name: Enable product recommendations
           href: enable-product-recommendations.md
+        - name: Set up an alternate dataflow
+          href: set-up-alternate-data-flow.md
         - name: Personalized recommendations
           items:
           - name: Enable personalized recommendations
@@ -796,6 +802,8 @@
             href: calculated-inventory-retail-channels.md
           - name: Inventory lookup operation in POS
             href: pos-inventory-lookup-operation.md
+          - name: Inventory-aware product listing
+            href: inventory-aware-product-listing.md
         - name: Purchase orders   
           items:
           - name: Purchase order overview
@@ -1286,6 +1294,10 @@
           items:
           - name: Cookie consent module
             href: cookie-consent-module.md
+        - name: Chat modules
+          items:
+          - name: Commerce chat module
+            href: commerce-chat-module.md
       - name: Search
         items:
         - name: Default category landing page and search results page overview
@@ -1418,8 +1430,6 @@
         items:
         - name: Fiscal registration service integration sample for Austria
           href: localizations/emea-aut-fi-sample.md
-        - name: Deployment guidelines for cash registers for Austria
-          href: localizations/emea-aut-deployment.md   
         - name: Deployment guidelines for fiscal integration sample for Austria (legacy)
           href: localizations/emea-aut-fi-sample-sdk.md
       - name: Brazil
@@ -1476,7 +1486,7 @@
           href: localizations/emea-fra-fi-deployment.md
         - name: Fiscal archive and data integrity verification
           href: localizations/emea-fra-fiscal-archive.md
-        - name: Migrating from legacy functionality for France
+        - name: Migrate from legacy functionality for France
           href: localizations/emea-fra-fi-migration.md
         - name: Deployment guidelines for cash registers (legacy)
           href: localizations/emea-fra-deployment.md
@@ -1516,6 +1526,8 @@
           href: localizations/emea-nor-cash-registers.md
         - name: Deployment guidelines for cash registers
           href: localizations/emea-nor-fi-deployment.md
+        - name: Migrate from legacy functionality for Norway
+          href: localizations/emea-nor-fi-migration.md
         - name: Deployment guidelines for cash registers (legacy)
           href: localizations/emea-nor-loc-deployment-guidelines.md
       - name: Russia
@@ -1778,6 +1790,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/commerce
             - name: OrderBy
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/commerce
+            - name: Repeat
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/commerce
             - name: Reverse
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/commerce
             - name: Split
@@ -2307,7 +2321,7 @@
         - name: Cost controlling
           href: ../finance/cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/commerce
         - name: Expense management
-          href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2fcommerce%2ftoc.json
+          href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/commerce/toc.json
         - name: Inventory on-hand
           href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/commerce
         - name: Invoice approvals
@@ -2315,11 +2329,11 @@
         - name: My team
           href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/commerce
         - name: Project mobile applications overview
-          href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2fcommerce%2ftoc.json
+          href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/commerce/toc.json
         - name: Project time entry
-          href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2fcommerce%2ftoc.json
+          href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/commerce/toc.json
         - name: Project timesheet
-          href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2fcommerce%2ftoc.json
+          href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/commerce/toc.json
         - name: Purchase order approval
           href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/commerce
         - name: Sales orders
@@ -3008,4 +3022,3 @@
     href: ../finance/index.md
   - name: Dynamics 365 Supply Chain Management 
     href: ../supply-chain/index.md
-

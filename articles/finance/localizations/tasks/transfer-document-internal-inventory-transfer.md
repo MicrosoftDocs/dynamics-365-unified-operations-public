@@ -1,7 +1,7 @@
 ---
 title: Generate a transfer document for an internal inventory transfer
 description: This procedure shows how to create transfer documents for goods movement inside a company.
-author: EvgenyPopovMBS
+author: AdamTrukawka
 ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: epopov
+ms.author: atrukawk
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.search.form: InventTransferOrders, InventLocationIdLookup, TransportationDocument, HcmWorkerLookUp, SrsReportViewerForm, InventTransferParmShip

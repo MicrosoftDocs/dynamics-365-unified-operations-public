@@ -141,7 +141,7 @@ For forms that follow the **Operational workspace** form pattern and its related
 
 2. After the BP fixer tool has finished running, a small number of properties must currently be set manually.
 
-    - For any **Group** control in the link sections of the workspace, set the **FrameOptionButton** property to **Hide** to suppress the ability to collapse the section. This setting also removes the visual line under that section.
+    - For any **Group** control in the link sections of the workspace, set the **FrameOptionButton** property to **None** to suppress the ability to collapse the section. This setting also removes the visual line under that section.
     - For any **FormPartControl** control in the list sections of the workspace, set the **Width mode** property to **SizeToAvailable**. This setting enables the subform to span the full width of the page.
 
 3. Perform a [fit and finish review](#fit-and-finish-reviews) of the workspace to optimize it for a vertical orientation.

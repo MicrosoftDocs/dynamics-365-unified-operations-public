@@ -1,19 +1,16 @@
 ---
+
 title: Domains in Dynamics 365 Commerce
 description: This article describes how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 05/10/2022
+ms.date: 09/09/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: BrShoo
-ms.search.validFrom: 
-ms.dyn365.ops.version: Release 10.0.12
-ms.search.industry: retail
-ms.search.form: 
+ms.search.validFrom: 2017-06-20
+
 ---
 
 # Domains in Dynamics 365 Commerce
@@ -104,7 +101,11 @@ The `<e-commerce tenant name>.dynamics365commerce.ms` endpoint does not support 
 To set up custom domains using a front door service or CDN, you have two options:
 
 - Set up a front door service like Azure Front Door to handle front-end traffic and connect to your Commerce environment. This provides greater control over domain and certificate management and more granular security policies.
+
 - Use the Commerce-supplied Azure Front Door instance. This requires coordinating action with the Dynamics 365 Commerce team for domain verification and obtaining SSL certificates for your production domain.
+
+> [!NOTE]
+> If you are using an external CDN or front door service, ensure that the request is landing at the Commerce platform with the Commerce-provided hostname, but with the X-Forwarded-Host (XFH) header \<custom-domain\>. For example, if your Commerce endpoint is `xyz.dynamics365commerce.ms` and the custom domain is `www.fabrikam.com`, the host header of the forwarded request should be `xyz.dynamics365commerce.ms` and the XFH header should be `www.fabrikam.com`.
 
 For information about how to set up a CDN service directly, see [Add support for a content delivery network (CDN)](add-cdn-support.md).
 
@@ -136,14 +137,18 @@ For existing/active domains:
 
 ## Apex domains
 
-The Commerce-supplied Azure Front Door instance does not support apex domains (root domains that do not contain subdomains). Apex domains require an IP address to resolve, and the Commerce Azure Front Door instance exists with virtual endpoints only. To use an apex domain, you have two options:
+The Commerce-supplied Azure Front Door instance does not support apex domains (root domains that do not contain subdomains). Apex domains require an IP address to resolve, and the Commerce Azure Front Door instance only exists with virtual endpoints. To use an apex domain, you have the following options:
 
 - **Option 1** - Use your DNS provider to redirect the apex domain to a "www" domain. For example, fabrikam.com redirects to `www.fabrikam.com` where `www.fabrikam.com` is the CNAME record that points to the Commerce-hosted Azure Front Door instance.
 
-- **Option 2** - Set up a CDN/front door instance on your own to host the apex domain.
+- **Option 2** - If your DNS provider supports ALIAS records, you can point the apex domain to the Azure Front Door endpoint, which ensures that the IP change by the endpoint is reflected. You must host the Azure Front Door instance yourself.
+  
+- **Option 3** - If your DNS provider doesn't support ALIAS records, then you must change your DNS provider to Azure DNS and host both Azure DNS and the Azure Front Door instance yourself.
 
 > [!NOTE]
 > If you are using Azure Front Door, you must also set up an Azure DNS in the same subscription. The apex domain hosted on Azure DNS can point to your Azure Front Door as an alias record. This is the only work around, as apex domains must always point to an IP address.
+  
+If you have any questions regarding Apex domains, please reach out to [Microsoft Support](https://support.microsoft.com/).
 
   ## Additional resources
 

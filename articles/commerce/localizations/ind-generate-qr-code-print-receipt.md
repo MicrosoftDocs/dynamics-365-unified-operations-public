@@ -1,36 +1,37 @@
-# Generate QR codes and print them on receipts for India
 ---
 
 title: Generate QR codes and print them on receipts for India
-[!include [banner](../includes/banner.md)]
 description: This article explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India.
-
-author: EvgenyPopovMBS
-This article provides customization guidelines and explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India.
+author: prabhatb2011
 ms.date: 01/31/2022
-
 ms.topic: article
-## Prerequisites
-ms.prod: 
-
-ms.technology: 
-Functionality for generating QR codes in the Commerce runtime (CRT) was introduced in Microsoft Dynamics 365 Commerce version 10.0.13. Therefore, the information in this article is valid only for version 10.0.13 and later.
+ms.prod:
+ms.technology:
 audience: IT Pro
-
 ms.reviewer: josaw
-Commerce versions 10.0.17 and later support printing QR codes on receipts using Retail Hardware Station. In versions 10.0.16 and earlier, QR codes can only be printed from Modern POS (MPOS).
 ms.search.region: India
-
+ms.search.industry: Retail
 ms.author: josaw
-## Data schema changes
 ms.search.validFrom: 
 
-ms.dyn365.ops.version: 10.0.17
+---
+# Generate QR codes and print them on receipts for India
+
+[!include [banner](../includes/banner.md)]
+
+This article provides customization guidelines and explains how to generate Unified Payments Interface (UPI) Quick Response (QR) codes and print them on receipts for India.
+
+## Prerequisites
+
+Functionality for generating QR codes in the Commerce runtime (CRT) was introduced in Microsoft Dynamics 365 Commerce version 10.0.13. Therefore, the information in this article is valid only for version 10.0.13 and later.
+
+Commerce versions 10.0.17 and later support printing QR codes on receipts using Retail Hardware Station. In versions 10.0.16 and earlier, QR codes can only be printed from Modern POS (MPOS).
+
+## Data schema changes
+
 Because invoice printing isn't supported in Dynamics 365 Commerce, there are no UPI-related fields in Point of sale (POS). Therefore, the fields should be added in the scope of code customization. We recommend that you extend the RetailStoreTenderTypeTable table by adding two string fields: **UPIId** and **UPIName**. As part of this customization, you should extend the **RetailStoreTenderTypeTable** form to edit the fields in the user interface (UI). You should also extend the channel data schema and download jobs. For more information, see [Channel database extensions](../dev-itpro/channel-db-extensions.md).
-ms.search.industry: Retail
 
 ## Set up receipts in Commerce headquarters
----
 
 1. Create a new language text that will be used for a new custom receipt field for a QR code:
 
@@ -1163,5 +1164,3 @@ namespace Contoso
     }
 }
 ```     
-
----

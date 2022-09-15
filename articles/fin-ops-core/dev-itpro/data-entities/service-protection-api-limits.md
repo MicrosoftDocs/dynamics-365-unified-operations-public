@@ -4,7 +4,7 @@
 title: Service protection API limits
 description: This article provides information about limits for service protection application programming interfaces (APIs) for the finance and operations apps service.
 author: jaredha
-ms.date: 07/06/2022
+ms.date: 08/25/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: sericks
@@ -81,7 +81,9 @@ The following table describes the default user-based service protection API limi
 
 ### Resource-based service protection API limits
 
-Whereas user-based service protection API limits are specified per user per web server, resource-based service protection API limits are enforced based on environment resource utilization thresholds. The resource limits will throttle service requests when the aggregate consumption of web server resources reaches levels that threaten service performance and availability. Resource-based service protection API limits work together with user-based limits as protective settings that help prevent the over-utilization of resources. In this way, they help preserve the system's responsiveness and ensure consistent availability and performance for environments that run finance and operations apps.
+Whereas user-based service protection API limits are specified per user per web server, resource-based service protection API limits are enforced based on environment resource utilization thresholds. The resource limits will throttle service requests when the aggregate consumption of web server resources reaches levels that threaten service performance and availability. The thresholds are based on percentage utilization of resources such as memory and CPU on the environment web servers. If the utilization of the server resources exceed defined thresholds when the API request is made, then the request is throttled and will receive a "Too Many Requests" response.
+
+Resource-based service protection API limits work together with user-based limits as protective settings that help prevent the over-utilization of resources. In this way, they help preserve the system's responsiveness and ensure consistent availability and performance for environments that run finance and operations apps.
 
 For resource-based service protection API limits, you can define the prioritized order that integrations are throttled in when resource thresholds are reached. For more information, see [Throttling prioritization](priority-based-throttling.md).
 

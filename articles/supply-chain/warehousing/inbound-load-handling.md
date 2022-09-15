@@ -263,7 +263,7 @@ Companies that use loads to plan and manage transportation and warehouse handlin
 
 ### Prepare your system to run the sample scenarios
 
-To work through the sample scenarios that are described in this section, you must first make sure that all the required features are turned on in your system. The required demo data must also be available in the system.
+To work through the sample scenarios that are described in this section, you must first make sure that all the required features are turned on for your system. The required demo data must also be available in the system.
 
 #### Turn on the required features
 

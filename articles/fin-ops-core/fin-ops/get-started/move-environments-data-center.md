@@ -3,7 +3,7 @@
 
 title: Move environments between data centers
 description: This article explains how to move environments that are managed by Microsoft to a different Microsoft Azure data center.
-author: ClaudiaBetz-Haubold 
+author: dvliegen 
 ms.date: 07/29/2022
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: sericks
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: chaubold
+ms.author: dvliegen
 ms.search.validFrom: 2018-05-30 
 ms.dyn365.ops.version: AX 7.0
 ---

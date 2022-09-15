@@ -4,7 +4,7 @@
 title: Keyboard shortcuts
 description: This article provides an overview of the shortcut key combinations that you can use when you're working with finance and operations apps.
 author: jasongre
-ms.date: 07/12/2022
+ms.date: 08/29/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Keyboard shortcuts
 
 [!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
@@ -93,6 +94,8 @@ Users can discover currently available shortcuts directly from the user interfac
 | Open the Filter pane (or switch focus between the Filter pane and the main form if the Filter pane is already open) | Alt+M,F or Ctrl+F3       |
 | Close the Filter pane (with focus in the Filter pane)                                                               | Esc                      |
 | Open advanced filtering/sort                                                                                        | Ctrl+Shift+F3            |
+| Apply the Quick Filter (when focus is in Quick Filter)                                                              | Enter                    |
+| Apply the grid filter (when focus is in the filter field of the column header)                                             | Enter                    |
 
 ## Form shortcuts
 
@@ -141,10 +144,10 @@ Users can discover currently available shortcuts directly from the user interfac
 | Horizontal scrolling                                                                                                   | Shift + Mouse wheel             |
 | Move to the next/previous column                                                                                       | Tab / Shift+Tab                 |
 | Move to the next/previous row                                                                                          | Down arrow / Up arrow           |
-| Move to the next/previous row without selecting<blockquote>[!NOTE] This shortcut applies to multi-select scenarios only.</blockquote> | Ctrl+Up arrow / Ctrl+Down arrow |
-| Select/clear the current row<blockquote>[!NOTE] This shortcut applies to multi-select scenarios only.</blockquote>                    | Ctrl+Space / Ctrl+Click         |
-| Add the next/previous row to the selected set<blockquote>[!NOTE] This shortcut applies to multi-select scenarios only.</blockquote>   | Shift+Space                     |
-| Add a range of rows to the selected set<blockquote>[!NOTE] This shortcut applies to multi-select scenarios only.</blockquote>         | Shift+Click                     |
+| Move to the next/previous row without selecting<br><br>**Note:** This shortcut applies to multi-select scenarios only. | Ctrl+Up arrow / Ctrl+Down arrow |
+| Select/clear the current row<br><br>**Note:** This shortcut applies to multi-select scenarios only.                   | Ctrl+Space / Ctrl+Click         |
+| Add the next/previous row to the selected set<br><br>**Note:** This shortcut applies to multi-select scenarios only.  | Shift+Space                     |
+| Add a range of rows to the selected set<br><br>**Note:**  This shortcut applies to multi-select scenarios only.         | Shift+Click                     |
 | Go to the next/previous page of data                                                                                   | Page up / Page down             |
 | Create a new row at the bottom of the grid                                                                             | Down arrow (from the last row)  |
 | Move to the first record                                                                                               | Ctrl+Home                       |
@@ -154,7 +157,7 @@ Users can discover currently available shortcuts directly from the user interfac
 | Move to the next marked row                                                                                            | Alt+Shift+M, L                  |
 | Move to the previous marked row                                                                                        | Alt+Shift+M, P                  |
 | Moved to the last marked row                                                                                           | Alt+Shift+M, N                  |
-| Execute the default action in a grid<blockquote>[!NOTE] This shortcut is enabled when focus is on a cell containing a hyperlink and all cells in that column have hyperlinks.</blockquote> | Enter                           |
+| Execute the default action in a grid<br><br>**Note:** This shortcut is enabled when focus is on a cell containing a hyperlink and all cells in that column have hyperlinks. | Enter                           |
 | Toggle focus between the selected row and the header row                                                               | Alt+Shift+H                     |
 | Make the current column larger/smaller (with focus in the header row)                                                  | Right arrow / Left arrow        |
 | Move the current column to the next/previous position (with focus in the header row)                                   | Ctrl+Shift+Right arrow / Ctrl+Shift+Left arrow |
@@ -166,9 +169,10 @@ Users can discover currently available shortcuts directly from the user interfac
 | To do this                                                                   | Press                         |
 |------------------------------------------------------------------------------|-------------------------------|
 | Open the hyperlink                                                           | Ctrl+Enter                    |
+| Open the hyperlink (when focus is on a read-only control)<br><br>**Note:** This shortcut only applies when the **Standardize keyboard interaction for combo box and lookup controls** feature is enabled                   | Enter    |
 | Enter the session date in a date field                                       | D                             |
 | Enter the current date in a date field                                       | T                             |
-| Open lookup, combo box, date picker, drop dialog box                         | Alt+Down arrow                |
+| Open lookup, combo box, date picker, drop dialog box                         | Alt+Down arrow<br><br>Enter (when the **Standardize keyboard interaction for combo box and lookup controls** feature is enabled)                |
 | Close lookup, combo box, date picker, drop dialog box                        | Esc                           |
 | Move focus into a lookup (when the lookup is already open)                   | Alt+Down arrow                |
 | Open the control's enhanced preview                                          | Alt+Up arrow                  |

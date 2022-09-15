@@ -2,7 +2,7 @@
 title: Archive credit card transaction data
 description: This article describes an archival job in Microsoft Dynamics 365 Commerce that can help free up space in the database by archiving credit card transactions.
 author: BrianShook
-ms.date: 01/28/2021
+ms.date: 09/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -71,6 +71,16 @@ After you confirm the parameters for data that must be archived, you're prompted
 ![Confirmation message box.](media/PAYMENTS/Batch3.png)
 
 After you select **Yes**, the archival job becomes active, and all XML data about credit card authorizations that is older than the **Minimum transaction age in days** value will be subject to archiving.
+
+## Further storage management with token compression
+
+To decrease the footprint of underlying storage tables, you can compress tokens by enabling the **Compress payment tokens** feature. Enabling this feature flag will allow the system to use compression on stored payment property tokens. 
+
+To enable the **Compress payment tokens** feature in headquarters, follow these steps.
+
+1. Go to **Workspaces \> Feature management**. 
+1. Under **All**, search for the **Compress payment tokens** feature.
+1. Select the feature, and then select **Enable now** in the properties pane.
 
 ## Additional resources
 

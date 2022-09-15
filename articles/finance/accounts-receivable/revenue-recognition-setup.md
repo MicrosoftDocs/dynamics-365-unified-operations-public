@@ -3,7 +3,7 @@
 
 title: Revenue recognition setup 
 description: This article describes the setup options for Revenue recognition, and their implications.
-author: kweekley
+author: bking
 ms.date: 04/28/2022
 ms.topic: index-page
 ms.prod: 
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: Customer
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: kweekley
+ms.author: bking
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 

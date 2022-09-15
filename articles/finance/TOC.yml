@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Finance home page
           href: get-started/whats-new-home-page.md
+        - name: Finance 10.0.30 (November)
+          href: get-started/whats-new-changed-10-0-30.md
         - name: Finance 10.0.29 (October)
           href: get-started/whats-new-changed-10-0-29.md
         - name: Finance 10.0.28 (August)
@@ -64,6 +66,8 @@
           href: ../fin-ops-core/dev-itpro/lifecycle-services/pause-service-updates.md?context=/dynamics365/context/finance
         - name: Get notified about service updates
           href: ../fin-ops-core/dev-itpro/lifecycle-services/notifications-service-updates.md?context=/dynamics365/context/finance
+        - name: Proactive quality updates
+          href: ../fin-ops-core/fin-ops/get-started/quality-updates.md?context=/dynamics365/context/finance
         - name: Data task automation
           href: ../fin-ops-core/dev-itpro/data-entities/data-task-automation.md?context=/dynamics365/context/finance
         - name: Delivering ISV solutions using One Version
@@ -1132,10 +1136,12 @@
           items:
           - name: Accounting distributions
             href: accounts-payable/accounting-distributions.md
-          - name: Subledger  transfer to the General ledger
+          - name: Subledger transfer to the General ledger
             href: general-ledger/subledger-transfer.md
           - name: Accounting source explorer
             href: accounts-payable/accounting-source-explorer.md
+          - name: Documents pending accounting
+            href: general-ledger/documents-pending-accounting.md
       - name: Reports and inquiries
         items:
         - name: View journal entries and transactions
@@ -1966,6 +1972,8 @@
             href: localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
           - name: Move NF-e XML files as attachments
             href: localizations/latam-bra-nf-e-move-xml-as-attachment.md
+          - name: NT2021.004 – Layout and validation updates in the electronic fiscal document (NF-e)
+            href: localizations/latam-bra-nfe-nt2021.004.md
           - name: NT2020.005 – Layout and validation updates in the electronic fiscal document (NF-e)
             href: localizations/latam-bra-nfe-nt2020.005.md
           - name: NT2020.006 – Intermediary sales digital platform for NF-e
@@ -3568,6 +3576,12 @@
               href: localizations/rus-set-up-inventory-profile.md
             - name: Use an inventory profile in documents and queries
               href: localizations/rus-use-inventory-profile-documents-queries.md
+          - name: Customs clearance
+            items:   
+            - name: Set up customs clearance
+              href: localizations/rus-set-up-customs-clearance.md
+            - name: Work with customs clearance
+              href: localizations/rus-work-with-customs-clearance.md
         - name: Reporting
           items:
           - name: Financial reporting
@@ -4091,6 +4105,8 @@
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-listoffirstitem.md?context=/dynamics365/context/finance
             - name: OrderBy
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-orderby.md?context=/dynamics365/context/finance
+            - name: Repeat
+              href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-repeat.md?context=/dynamics365/context/finance
             - name: Reverse
               href: ../fin-ops-core/dev-itpro/analytics/er-functions-list-reverse.md?context=/dynamics365/context/finance
             - name: Split
@@ -4628,7 +4644,7 @@
         - name: Cost controlling
           href: cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/finance
         - name: Expense management
-          href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2ffinance%2ftoc.json
+          href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/finance/toc.json
         - name: Inventory on-hand
           href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/finance
         - name: Invoice approvals
@@ -4636,11 +4652,11 @@
         - name: My team
           href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/finance
         - name: Project mobile applications overview
-          href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2ffinance%2ftoc.json
+          href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/finance/toc.json
         - name: Project time entry
-          href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2ffinance%2ftoc.json
+          href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/finance/toc.json
         - name: Project timesheet
-          href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2ffinance%2ftoc.json
+          href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/finance/toc.json
         - name: Purchase order approval
           href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/finance
         - name: Sales orders
@@ -4937,5 +4953,3 @@
     href: ../commerce/index.md
   - name: Dynamics 365 Human Resources
     href: ../human-resources/index.md
-     
-

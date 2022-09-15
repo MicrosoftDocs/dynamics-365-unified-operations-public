@@ -99,7 +99,7 @@ Follow these steps to release each sales order that you created for this scenari
 
 ## Additional resources
 
-- [Shipment consolidation policies](about-shipment-consolidation-policies.md)
+- [Shipment consolidation policies overview](about-shipment-consolidation-policies.md)
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

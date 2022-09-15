@@ -53,13 +53,14 @@ To copy an instance, keep the following tips in mind:
 
 ## Effects of copying a Human Resources database
 
+> [!Note]
+> Starting August 2022, Documents in Microsoft Azure Blob storage are included when copying a production environment to a sandbox environment. Any documents and templates that are attached will be copied over from the source environment to the target environment.
+
 The following events occur when you copy a Human Resources database:
 
 - The copy process erases the existing database in the target environment. After the copy process is completed, you can't recover the existing database.
 
 - The target environment will be unavailable until the copy process is completed.
-
-- Documents in Microsoft Azure Blob storage aren't copied from one environment to another. As a result, any documents and templates that are attached won't be copied and will remain in the source environment.
 
 - All users except the except those with the "System Administrator" security role and other internal service user accounts will be unavailable. The Admin user can delete data before other users are allowed back into the system.
 

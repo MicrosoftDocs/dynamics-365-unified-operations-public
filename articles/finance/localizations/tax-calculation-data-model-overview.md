@@ -68,6 +68,7 @@ The tax calculation data model is integrated with finance and operations apps. D
     *Restriction:* [One voucher](../general-ledger/one-voucher.md#issues-with-one-voucher) and payment fee aren't supported.
 
 - **Vendor invoice journal:** Supported as of version 40.54.234 and Finance version 10.0.26.
+- **Periodic journals:** Supported as of version 40.55.236 and Finance version 10.0.29.
 
 ## Field mapping
 
