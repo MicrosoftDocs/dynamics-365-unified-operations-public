@@ -43,7 +43,7 @@ The following is the Dynamics 365 Commerce documentation related to the NF 525 c
 | Functional specification<p><p>User documentation | The documentation that describes the functions of the software. | [Commerce home page](../index.md) and nested links<p><p>[France-specific POS features](#france-specific-pos-features) |
 | Versioning strategy | The documentation that describes the versioning approach and the version management procedure for the software product.<p><p>Current major Dynamics 365 Commerce version is **10.0**. Service updates that are provided for this version are marked by the consecutive number after the version number: **10.0.X**. You can find more information about the software lifecycle policy and service updates using the links in this table. | [One Version service updates overview](../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)<p><p>[Software lifecycle policy and cloud releases](../../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)<p><p>[Service update availability](../../fin-ops-core/fin-ops/get-started/public-preview-releases.md)<p><p>[Dynamics 365 release plans](https://docs.microsoft.com/dynamics365/release-plans/)<p><p>[What's new or changed in Dynamics 365 Commerce](../get-started/whats-new-home-page.md)<p><p>[Dynamics 365 Commerce component versioning requirements](../arch-component-versioning.md) |
 | Organizational documentation | The documentation that describes the process that is established to control the software product compliance. | [Globalization resources](../../fin-ops-core/dev-itpro/lcs-solutions/country-region.md) |
-| Maintenance documentation | The documentation that describes the implementation and maintenance of the software solution. | [Service description](../../fin-ops-core/fin-ops/get-started/service-description.md)<p><p>[Before you buy](../../fin-ops-core/fin-ops/get-started/before-you-buy.md)<p><p>[Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/grid/Microsoft-Dynamics-365)<p><p>[Implementation lifecycle management home page](../../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md)<p><p>[Synchronize self-service installers in Dynamics 365 Commerce](../dev-itpro/Synchronize-installers.md)<p><p>[Set up Commerce for France](#set-up-commerce-for-france)<p><p>[Dynamics 365 Support](https://dynamics.microsoft.com/en-us/support/)<p><p>[Submit service requests](../../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md)<p><p>[One Version service updates overview](../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md) |
+| Maintenance documentation | The documentation that describes the implementation and maintenance of the software solution. | [Service description](../../fin-ops-core/fin-ops/get-started/service-description.md)<p><p>[Before you buy](../../fin-ops-core/fin-ops/get-started/before-you-buy.md)<p><p>[Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/grid/Microsoft-Dynamics-365)<p><p>[Implementation lifecycle management home page](../../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md)<p><p>[Synchronize self-service installers in Dynamics 365 Commerce](../dev-itpro/Synchronize-installers.md)<p><p>[Set up Commerce for France](#set-up-commerce-for-france)<p><p>[Compliance check-list](#compliance-check-list)<p><p>[Dynamics 365 Support](https://dynamics.microsoft.com/en-us/support/)<p><p>[Submit service requests](../../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md)<p><p>[One Version service updates overview](../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md) |
 | Auditor documentation | The documentation that describs how to access the data, the files and the process by the Authorities | [Fiscal archive for France](./emea-fra-fiscal-archive.md) |
 
 ## Design of the Commerce solution for France
@@ -392,7 +392,7 @@ On the **Custom fields** page, add the following records for the custom fields f
 
 ### Configure receipt formats
 
-For every required receipt format, change the value of the **Print behavior** field to **Always print**.
+For every required receipt format, change the value of the **Print behavior** field to **Always print**. You also need to configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../retail-peripherals-overview.md). 
 
 In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
 
@@ -538,6 +538,16 @@ To enable the digital signature in offline mode, you must follow these steps aft
 
 ## Compliance check-list
 
-This section describes basic scenarios that you can execute to validate that your environment is configured properly to comply with the cash register requirements for France.
+This section describes basic scenarios that you can execute to validate that your environment is configured properly to comply with the cash register requirements for France. The scenarios can be executed in a series, so that they constitute a comprehensive end-to-end compliance check-list. 
+
+1. Basic sale
+1. Basic return
+1. Issue gift card
+1. Customer order
+1. Non-sale operation (expense)
+1. Audit events
+1. Print receipt copy
+1. Close shift
+1. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
