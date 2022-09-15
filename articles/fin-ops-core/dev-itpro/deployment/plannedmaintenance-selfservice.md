@@ -60,19 +60,19 @@ A planned maintenance window is typically during the dark hours of the geographi
 
 ## What is the schedule for proactive quality updates?
 
-| Station | Regions | Current major version | Sandbox Schedule |
-|---|---|---|---|
-| Station 1 | Central Canada, Canada East, Central France, Central India, West Switzerland, East Norway | Service Update 10.0.28 | September 15 to September 18, 2022 |
-| Station 2 | Japan East, Japan West, South East Asia, UK South, South France, North Switzerland, North Norway, South India, Australia East, Australia South, South Africa North, UAE North | | |
-| Station 3 | North Europe, Central US, East US, West US | | |
-| Station 4 | DoD, Government Community Cloud, China | | |
+| Station | Regions | Current major version | Sandbox Schedule 1 | Sandbox Schedule 2 |
+|---|---|---|---|---|
+| Station 1 | Central Canada, Canada East, Central France, Central India, West Switzerland, East Norway | Service Update 10.0.28 | September 15 to September 18, 2022 | September 19 to September 22, 2022 |
+| Station 2 | Japan East, Japan West, South East Asia, UK South, South France, North Switzerland, North Norway, South India, Australia East, Australia South, South Africa North, UAE North | | | |
+| Station 3 | North Europe, Central US, East US, West US | | | |
+| Station 4 | DoD, Government Community Cloud, China | | | |
 
 > [!IMPORTANT] 
 > Five business days in advance, Microsoft will update the preceding schedule and send email notifications to the set of environments that are scheduled to receive [proactive quality updates](../../fin-ops/get-started/quality-updates.md). The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information about the dark hours for every region, see the [What are the planned maintenance windows?](#windows) section.
 >
-> For each region group, or *station*, where a quality update is currently scheduled to be rolled out, the schedule shows a range of four days. Quality updates will start with only sandbox environments. Then, as the percentage of successfully deployed sandboxes increases, deployment to production environments will begin with advance notifications to customers. Currently, quality updates for production environments aren't planned to start until November 2022.
+> For each region group, or *station*, where a quality update is currently scheduled to be rolled out, the schedule shows a range of four days. Quality updates will start with only sandbox environments. Then, as the percentage of successfully deployed sandboxes increases, deployment to production environments will begin with advance notifications to customers.
 > 
-> Quality updates will always occur in a rolling manner that enables us to target a set of environments per schedule and complete all the sets by the end of the third day for a station. However, this doesn't mean that an environment update will span three days. It just means that we can't pre-determine which set of environments will be updated on a given day within the three-day range. All updates will be done during dark hours, with near-zero downtime. Updates will definitively end within the dark-hour window of a given region.
+> Quality updates will always occur in a rolling manner that enables us to target a set of environments per schedule and complete all the sets by the end of the fourth day for a station. However, this doesn't mean that an environment update will span four days. It just means that we can't pre-determine which set of environments will be updated on a given day within the four-day range. All updates will be done during dark hours, with near-zero downtime. Updates will definitively end within the dark-hour window of a given region.
 
 > [!NOTE] 
 > Effective August 2022 through October 2022, Microsoft will start to roll out updates to the production environment during any weekend, and outside of normal business hours, to help minimize any potential impact on your environments. All sandbox environments will be updated during any night, outside of business hours.
