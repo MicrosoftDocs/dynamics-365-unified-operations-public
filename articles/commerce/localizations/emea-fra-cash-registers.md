@@ -313,6 +313,7 @@ You must also specify the following settings for France. Note that you must run 
 1. [Configure channel components](#configure-channel-components) to enable France-specific extensions of the components.
     > [!WARNING]
     > You should only do this if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
+1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode). 
 
 ### Enable features for France
 
@@ -534,5 +535,9 @@ To enable the digital signature in offline mode, you must follow these steps aft
 1. Sign in to POS.
 1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending transactions in offline database** field is **0** (zero), the database is fully synchronized.
 1. Restart POS.
+
+## Compliance check-list
+
+This section describes basic scenarios that you can execute to validate that your environment is configured properly to comply with the cash register requirements for France.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
