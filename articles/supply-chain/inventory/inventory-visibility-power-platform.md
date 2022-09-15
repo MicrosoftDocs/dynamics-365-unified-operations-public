@@ -24,8 +24,8 @@ Inventory Visibility provides a model-driven app for visualization. The app cont
 - It provides a user interface (UI) for on-hand configuration and soft reservation configuration.
 - It supports real-time on-hand inventory queries on various dimension combinations.
 - It provides a UI for posting reservation requests.
-- It provides a customized view of the inventory on-hand for products together with all dimensions.
-- It provides a customized view of an on-hand inventory list for products together with pre-defined dimensions.
+- It provides a view of the inventory on-hand for products together with all dimensions.
+- It provides a view of an on-hand inventory list for products together with pre-defined dimensions.
 <!-- KFM: Should we add another feature to this list for **Preload the Inventory Visibility Summary**? Yuhui: done-->
 
 ## Prerequisites
