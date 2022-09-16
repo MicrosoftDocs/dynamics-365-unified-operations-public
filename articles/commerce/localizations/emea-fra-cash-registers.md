@@ -244,7 +244,7 @@ You can export a Z report from a closed shift in Commerce headquarters. An expor
 | TotalCashReturns                 | The absolute value of the total amount of returns, including tax, for the shift. |
 | GrandTotal                       | The total amount of sales, including tax, minus the absolute value of the total amount of returns, including tax, for the shift. |
 | PerpetualGrandTotal              | The cumulative perpetual grand total for the shift. In other words, the cumulative perpetual grand total for the previous shift of the same register, plus the total amount of sales, including tax, for the shift, minus the absolute value of the total amount of returns, including tax, for the shift. |
-| PerpetualGrandTotalAbsoluteValue | The cumulative perpetual grand total for the shift. In other words, the cumulative perpetual grand total for the previous shift of the same register, plus the total amount of sales, including tax, for the shift, plus the absolute value of the total amount of returns, including tax, for the shift. |
+| PerpetualGrandTotalAbsoluteValue | The cumulative perpetual grand total (absolute value) for the shift. In other words, the cumulative perpetual grand total (absolute value) for the previous shift of the same register, plus the total amount of sales, including tax, for the shift, plus the absolute value of the total amount of returns, including tax, for the shift. |
 | ShiftLines                       | A collection of grand total amounts per tax rate. |
 | ShiftLine                        | A node for the grand total amount for a tax rate. |
 | TotalInclTax                     | The grand total amount for the shift for the tax rate. |
@@ -576,6 +576,10 @@ Follow these steps to validate a digitally signed sales transaction after it is 
     1. Check that the **Digital signature** field of the receipt contains an extract from the digital signature of the transaction and consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
     1. Note the sequential number of the signed transaction and its digital signature to use them for further validation of the next transaction.
 
+### How to validate a shift
+    
+
+    
 ### 1. Preparation
 
 1. In HQ:
@@ -589,6 +593,8 @@ Follow these steps to validate a digitally signed sales transaction after it is 
     1. On the **Current transaction** page, add several items and pay exact amount.
     1. On the **Transaction journal** page, select the previous sales transaction and return one item from it. Pay exact amount.
     1. Close the shift.
+    1. [Validate the transactions](#how-to-validate-a-sales-transaction) and note the sequential number of the last signed transaction (i.e. the return transaction) and its digital signature to use them for further validation of following scenarios.
+    1. [Validate the shift](#how-to-validate-a-shift) and note the sequential number of the signed shift, its digital signature, its cumulative perpetual grand total, and the cumulative perpetual grand total of absolute values of sales and returns to use them for further validation of following scenarios.
     
 ### 2. Basic sale
 
