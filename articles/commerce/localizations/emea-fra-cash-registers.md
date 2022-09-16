@@ -338,7 +338,9 @@ You must create sales tax codes, sales tax groups, and item sales tax groups. Yo
 
 You must also specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in France.
 
-### Set up functionality profiles
+### Set up POS functionality profiles
+
+You must enable printing of Z-reports by setting the **Print X/Z report on POS** option to **Yes**.
 
 You must enable auditing by setting the **Audit** option to **Yes**.
 
@@ -569,16 +571,33 @@ Follow these steps to validate a digitally signed sales transaction after it is 
     1. Run the P-job to download retail transaction data to HQ.
     1. Open the **Store transactions** page and select the recently completed transaction.
     1. Expand the **Fiscal transaction** fast-tab and check that there is a fiscal transaction with the successful registration status.
-    1. The text in the **Fiscal register response** field is in the JSON format and contains the digital signature of the transaction, the string that is used for digital signing of the transaction, the signed transaction sequential number, as well as the thumbprint of the certificate that is used for digital signing, the hash algorithm, and the version of the digital signing algorithm, which can later be used to verify the digital signature.
+    1. The text in the **Fiscal register response** field is in the JSON format and contains the digital signature of the transaction, the string that was used for digital signing of the transaction, the signed transaction sequential number, as well as the thumbprint of the certificate that is used for digital signing, the hash algorithm, and the version of the digital signing algorithm, which can later be used to verify the digital signature.
     1. You can also click Extended data and view specific properties of the fiscal transaction, such as the signature, sequential number, certificate thumbprint, and hash algorithm identification.
     1. Check that the signed transaction sequential number is equal to the sequential number of the previous transaction on the same register, if any, plus one. This sequential number should also be printed in the **Sequential number** field of the receipt. 
-    1. Check the string that is used for [digital signing of the transaction](#digital-signing-of-sales-and-return-transactions). Validate the amounts of the transaction, the register number, and other data. Check the previous signature for the same register.
+    1. Check the string that was used for [digital signing of the transaction](#digital-signing-of-sales-and-return-transactions). Validate the amounts of the transaction, the register number, and other data. Check the previous signature for the same register.
     1. Check that the **Digital signature** field of the receipt contains an extract from the digital signature of the transaction and consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
     1. Note the sequential number of the signed transaction and its digital signature to use them for further validation of the next transaction.
 
 ### How to validate a shift
     
+Follow these steps to validate a digitally signed shift after it is closed:
 
+1. In POS:
+    
+    1. Check that all [France-specific fields](#x-and-z-reports) of the Z-report are printed and have correct values. To check some of the fields, you need to follow the below steps in HQ. 
+    
+1. In HQ:
+
+    1. Run the P-job to download retail transaction data to HQ.
+    1. Open the **Shifts** page and select the recently closed shift.
+    1. Compare France-specific fields (that is, Total sales, Total returns, Grand total, Cumulative perpetual grand total, and Cumulative perpetual grand total (absolute value)) with those printed in the Z-report.
+    1. Click **Shift tax transactions** and compare the VAT amounts per tax rate with those printed in the Z-report. Close the **Shift tax transactions** page.
+    1. On the **Shifts** page, click **Audit events**. The audit event that was registered when the shift was closed should be displayed. The **Log string** field should contain the shift number.
+    1. Open the **Fiscal transaction** tab and check that there is a fiscal transaction with the successful registration status.
+    1. The text in the **Fiscal register response** field is in the JSON format and contains the digital signature of the shift, the string that was used for digital signing of the shift, the signed shift sequential number, as well as the thumbprint of the certificate that is used for digital signing, the hash algorithm, and the version of the digital signing algorithm, which can later be used to verify the digital signature.
+    1. Check that the signed shift sequential number is equal to the sequential number of the previous shift on the same register, if any, plus one.
+    1. Check the string that was used for [digital signing of the shift](#digital-signing-of-closed-shifts). Validate the amounts of the shift and other data. Check the previous signature for the same register.
+    1. Note the sequential number of the signed shift and its digital signature to use them for further validation of the next shift.
     
 ### 1. Preparation
 
