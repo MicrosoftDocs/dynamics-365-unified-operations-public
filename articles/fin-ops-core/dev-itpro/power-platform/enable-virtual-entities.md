@@ -58,6 +58,14 @@ The virtual entity is generated and will appear on all the appropriate menus. Fo
 
 You can force a refresh of a virtual entity's metadata when you expect that the entity metadata in finance and operations apps has changed. To force a refresh, select the **Refresh** checkbox, and then save your change. The latest entity definition from finance and operations apps is synchronized to Dataverse, and the virtual entity is updated.
 
+## Disable virtual entities
+
+Virtual entities for finance and operations are in a managed solution, and cannot be deleted directly from the maker portal. To disable a virtual entity and remove the virtual entity metadata from the Dataverse environment:
+
+1. Find and open the entity following steps 1 to 8 in the [Generate virtual entities](enable-virtual-entities#generate-virtual-entities) section above.
+2. Unmark the **Visible** check box.
+3. Save your change.
+
 ## Reference virtual entities
 
 All virtual entities are generated in the **MicrosoftOperationsERPVE** solution, which is API managed. Items in the solution change as you make entities visible or hidden. Nevertheless, the solution is still a managed solution that you can take dependencies on. 
