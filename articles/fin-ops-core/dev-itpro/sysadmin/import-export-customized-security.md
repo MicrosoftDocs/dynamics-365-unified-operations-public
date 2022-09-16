@@ -45,8 +45,10 @@ The following entities hold the customized, role-based security (that is, privil
 8. Select the applicable security customization entities.
 9. Select **Add selected**.
 
- > Note: Ignore warning message **"The data entity x has public field XmlObjectFileName that is not defined on the staging table"**. Those messages aren't applicable, because the security entities use containers in the data package to store the security XML object.
-    ![image](https://user-images.githubusercontent.com/28597769/190197998-3f22ad9b-8dc7-47f9-9882-86f775616035.png)
+    > [!NOTE]
+    > Ignore any warning messages that have the following format: "The data entity \<Entity name\> has public field XmlObjectFileName that is not defined on the staging table." These messages aren't applicable, because the security entities use containers in the data package to store the security XML object.
+    >
+    > ![Warning messages about an undefined XmlObjectFileName public field.](https://user-images.githubusercontent.com/28597769/190197998-3f22ad9b-8dc7-47f9-9882-86f775616035.png)
 
 10. Select **Close**.
 11. Make sure that the **Sequence** field is set in the order of the entity dependencies. Privileges should be first, then duties, and finally roles.
@@ -65,7 +67,8 @@ The following entities hold the customized, role-based security (that is, privil
 5. Select **Upload and add**.
 6. Find the exported package, and then select **Open**.
 
- > Note: Ignore warning message **"The data entity x has public field XmlObjectFileName that is not defined on the staging table"**. Those messages aren't applicable, because the security entities use containers in the data package to store the security XML object.
+    > [!NOTE]
+    > Ignore any warning messages that have the following format: "The data entity \<Entity name\> has public field XmlObjectFileName that is not defined on the staging table." These messages aren't applicable, because the security entities use containers in the data package to store the security XML object.
 
 7. Select **Close**.
 8. Select **Import**.
