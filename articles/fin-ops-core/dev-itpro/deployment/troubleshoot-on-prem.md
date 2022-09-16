@@ -1655,7 +1655,7 @@ Newtonsoft.Json.JsonReaderException: Unexpected character encountered while pars
 
 **Reason:** The configuration generation method was changed in version 10.0.21.
 
-**Resolution:**  To be able to generate the new configuration, you must upgrade to local agent 2.7.0 or later. We recommended that you upgrade to the latest version available.
+**Resolution:**  To be able to generate the new configuration, you must upgrade to local agent 2.7.0 or later. We recommend that you upgrade to the latest version available.
 
 ## Add-CertToServicePrincipal fails
 
