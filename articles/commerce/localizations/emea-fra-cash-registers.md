@@ -556,19 +556,25 @@ This section describes basic scenarios that you can execute to validate that you
 1. Process period grand total journal
 1. Export and verify fiscal archive
 
-### How to validate a transaction
+### How to validate a sales transaction
 
 Follow these steps to validate a digitally signed sales transaction after it is completed:
 
 1. In POS:
     
-    1. Check that all [France-specific fields](#configure-receipt-formats) of the receipt, except for the fields related to receipt copy, are printed and have correct values.
+    1. Check that all [France-specific fields](#configure-receipt-formats) of the receipt, except for the fields related to receipt copy, are printed and have correct values. To check some of the fields, you need to follow the below steps in HQ. 
     
 1. In HQ:
     
     1. Run the P-job to download retail transaction data to HQ.
-    1. Open the **Store transactions** page and find the recently completed transaction.
-    1. Expand the **Fiscal transaction** fast-tab.
+    1. Open the **Store transactions** page and select the recently completed transaction.
+    1. Expand the **Fiscal transaction** fast-tab and check that there is a fiscal transaction with the successful registration status.
+    1. The text in the **Fiscal register response** field is in the JSON format and contains the digital signature of the transaction, the string that was used for digital signing of the transaction, the signed transaction sequential number, as well as the thumbprint of the certificate that was used for digital signing, the hash algorithm, and the version of the digital signing algorithm, which can later be used to verify the digital signature.
+    1. You can also click Extended data and view specific properties of the fiscal transaction, such as the signature, sequential number, certificate thumbprint, and hash algorithm identification.
+    1. Check that the signed transaction sequential number is equal to the sequential number of the previous transaction on the same register, if any, plus one. This sequential number should also be printed in the Sequential number field of the receipt. 
+    1. Check the string that was used for [digital signing of the transaction](#digital-signing-of-sales-and-return-transactions). Validate the amounts of the transaction, the register number, and other data. Check the previous signature for the same register.
+    1. Check that the Digital signature field of the receipt contains an extract from the digital signature of the transaction and consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
+    1. Note the sequential number of the signed transaction and its digital signature to use them for further validation of the next transaction.
 
 ### 1. Preparation
 
@@ -585,7 +591,10 @@ Follow these steps to validate a digitally signed sales transaction after it is 
     1. Close the shift.
     
 ### 2. Basic sale
-    
+
+1. Log in to POS and open a new shift, if it's not open yet.
+1. On the **Current transaction** page, add several items and pay exact amount.
+1. [Validate the transaction].
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
