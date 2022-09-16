@@ -2,11 +2,11 @@
 title: Independent software vendor (ISV) licensing (on-premises)
 description: This article describes the independent software vendor (ISV) licensing feature for on-premises environments.
 author: faix
-ms.date: 11/29/2021
+ms.date: 09/16/2022
 ms.topic: article
 ms.prod: dynamics-365
 audience: Developer
-ms.reviewer: josaw
+ms.reviewer: johnmichalak
 ms.search.region: Global
 ms.author: osfaixat
 ms.search.validFrom: 2018-03-07
@@ -61,7 +61,7 @@ For general information about the benefits of ISV licensing, information about h
 - Your deployable package contains the license files as mentioned in [Independent software vendor (ISV) licensing for production environments](isv-licensing.md#production-environments)
 
 ### Import licenses
-If your environment and deployable package meet the prerequisites above, then when you service your environment the licenses will be automatically imported. The import license step will be performed prior to database synchronization, so there will no longer be additional downtime required for this operation.
+If your environment and deployable package meet the prerequisites above, then when you service your environment, the licenses will be automatically imported. The import license step will be performed prior to database synchronization, so there will no longer be additional downtime required for this operation.
 
 ## Manual import
 
@@ -90,7 +90,7 @@ The following procedure can be used for a sandbox environment or a production en
      After the command is run, log files are generated for each license file that is processed. The names of the log files are in the format {license\_file\_name}.output.log and {license\_file\_name}.error.log. The logs that are generated during database synchronization are located in files that are structured like dbsync.output.log and dbsync.error.log.
 
 > [!NOTE]
-> The Import-LicensePackage.ps1 script is deprecated starting with Infrastructure Scripts 2.17.0 in favour of using the automated flow. The script will be removed in a future release.
+> The Import-LicensePackage.ps1 script is deprecated starting with Infrastructure Scripts 2.17.0 in favor of using the automated flow. The script will be removed in a future release.
 
 1. When the script has been run successfully, validate that the configuration key has been imported and enabled. In the product, the corresponding configuration key will be available and enabled on the **License configuration** page. By default, the configuration is enabled. For example, if you added a configuration key that is named ISVConfigurationKey1, it will appear in the list of configuration keys.
 
