@@ -808,6 +808,8 @@ You can verify that everything has been configured correctly by running the foll
 
     | Release | Database |
     |---------|----------|
+    | Version 10.0.29 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.29 Demo Data |
+    | Version 10.0.29 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.29 Empty Data |
     | Version 10.0.26 (with Platform update 50) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.26 Demo Data |
     | Version 10.0.26 (with Platform update 50) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.26 Empty Data |
     | Version 10.0.23 (with Platform update 47) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.23 Demo Data |
