@@ -307,7 +307,7 @@ You must also specify the following settings for France. Note that you must run 
 1. [Set up POS functionality profiles](#set-up-functionality-profiles) to enable features and options required for France.
 1. [Configure custom fields](#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts) and [receipt formats](#configure-receipt-formats) to comply with the local regulatory requirements.
 1. [Configure the fiscal registration functionality](#set-up-fiscal-registration) for France to enable digital signing of sales transactions and audit events.
-1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing.
+1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the POS and HQ sides.
 1. [Specify Electronic reporting formats](#configure-the-z-report-and-archive-export-formats) that should be used to export Z-reports and fiscal archives from HQ.
 1. [Reinitialize Commerce components](#reinitialize-commerce-components) to enable France-specific audit events and transmission of France-specific data from POS to HQ.
 1. [Configure channel components](#configure-channel-components) to enable France-specific extensions of the components.
@@ -555,7 +555,21 @@ This section describes basic scenarios that you can execute to validate that you
 1. Close shift and print Z-report
 1. Process period grand total journal
 1. Export and verify fiscal archive
+
+### How to validate a transaction
+
+Follow these steps to validate a digitally signed sales transaction after it is completed:
+
+1. In POS:
     
+    1. Check that all [France-specific fields](#configure-receipt-formats) of the receipt, except for the fields related to receipt copy, are printed and have correct values.
+    
+1. In HQ:
+    
+    1. Run the P-job to download retail transaction data to HQ.
+    1. Open the **Store transactions** page and find the recently completed transaction.
+    1. Expand the **Fiscal transaction** fast-tab.
+
 ### 1. Preparation
 
 1. In HQ:
