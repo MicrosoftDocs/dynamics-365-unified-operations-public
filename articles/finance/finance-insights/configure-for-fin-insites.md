@@ -4,7 +4,7 @@
 title: Configuration for Finance insights
 description: This article explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
 author: ShivamPandey-msft
-ms.date: 01/27/2022
+ms.date: 09/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -61,7 +61,7 @@ Verify that the following setup is completed:
     |------------------------------------------|--------------------------------------|
     | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
 
-    To verify if the above-mentioned application is registered in Azure AD, you can check the ‘All Applications’ list by referencing <view enterprise applications link     : https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/view-applications-portal>
+    To verify if the above-mentioned application is registered in Azure AD, you can check the ‘All Applications’ list by referencing [View enterprise applications link](../../azure/active-directory/manage-apps/view-applications-portal.md)
 
     If the application is not registered in Azure AD, please contact support.
   
