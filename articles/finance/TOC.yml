@@ -18,8 +18,6 @@
           href: get-started/whats-new-changed-10-0-29.md
         - name: Finance 10.0.28 (August)
           href: get-started/whats-new-changed-10-0-28.md
-        - name: Finance 10.0.27 (July)
-          href: get-started/whats-new-changed-10-0-27.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -1734,6 +1732,8 @@
             href: general-ledger/sales-tax-calculation-on-general-journal.md          
           - name: Calculate and adjust sales tax on a vendor invoice
             href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+          - name: Resolve sales tax differences
+            href: general-ledger/resolve-sales-tax-differences-purchase-orders-invoices.md
           - name: Adjust sales tax via general journals
             href: general-ledger/adjust-sales-tax-via-general-journals.md
           - name: Enable delayed tax calculation on journal
