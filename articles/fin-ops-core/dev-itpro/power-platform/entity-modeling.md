@@ -103,6 +103,9 @@ Based on this use of the primary field in Dataverse, the primary field for a vir
 
 Because the primary field in Dataverse is expected to have only one field of the string type, whereas the entity key in finance and operations can have multiple fields of various data types, the entity key fields are converted to strings. The strings are concatenated and separated by a pipe (\|), to a maximum length of 255 characters. Any value that exceeds 255 is truncated. This virtual entity field that represents the primary field is named **mserp\_primaryfield**.
 
+> [!NOTE]
+> Once a virtual entity for finance and operations is generated in the associated Dataverse environment, the primary key and primary field cannot be modified. To change a primary field, you must remove the entity from the Dataverse environment. See [Disable virtual entities](enable-virtual-entities#disable-virtual-entities) for more information on disabling virtual entities and removing the entity metadata from the Dataverse environment. Once the primary fields are changed in the finance and operations app, you can then re-enable the entity (see [Generate virtual entities](enable-virtual-entities#generate-virtual-entities)).
+
 ## Relations
 
 > [!IMPORTANT]
