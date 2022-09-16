@@ -1730,6 +1730,8 @@
             href: general-ledger/sales-tax-calculation-on-general-journal.md          
           - name: Calculate and adjust sales tax on a vendor invoice
             href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+          - name: Resolve sales tax differences
+            href: general-ledger/resolve-sales-tax-differences-purchase-orders-invoices.md
           - name: Adjust sales tax via general journals
             href: general-ledger/adjust-sales-tax-via-general-journals.md
           - name: Enable delayed tax calculation on journal
