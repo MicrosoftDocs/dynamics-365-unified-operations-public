@@ -548,7 +548,7 @@ This section describes basic scenarios that you can execute to validate that you
 1. Basic return
 1. Issue gift card
 1. Customer order
-1. Customer order return
+1. Hybrid customer order
 1. Sale in Offline mode
 1. Non-sale operation (expense)
 1. Audit events
@@ -632,14 +632,54 @@ Follow these steps to validate a digitally signed audit event:
 ### 2. Basic sale
 
 1. Log in to POS and open a new shift, if it's not open yet.
-1. On the **Current transaction** page, add several items and pay exact amount.
+1. On the **Current transaction** page, add several items and pay the exact amount.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction).
 
 ### 3. Basic return
 
 1. Log in to POS and open a new shift, if it's not open yet.
-1. On the **Current transaction** page, add an item and and click Return product. Select or specify a reason code, if needed. Pay exact amouint,
+1. On the **Current transaction** page, add an item and and click Return product. Select or specify a reason code, if needed.
+1. Pay the exact amouint,
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the amounts in the string that is used for digital signing of the transaction are negative, but the type of the transaction is still **Sales**. This is because for digital signing purposes, return transactions are considered regular sales transactions. Similarly, the **Transaction type** field of the receipt should read **Sales**.
 
+### 4. Issue gift card
+
+1. Log in to POS and open a new shift, if it's not open yet.
+1. On the **Current transaction** page, Click **Issue gift card** and specify the number of a new gift card and the amount to add to it.
+1. Pay the exact amount.
+1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is not digitally signed. No signature is printed in the receipt.
+1. In POS, on the **Current transaction** page, add several items.
+1. Click **Issue gift card** ans specify the number of a new gift card and the amount to add to it.
+1. Pay the exact amount.
+1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the gift card amount is excluded from the total amount of the sales transaction in both the receipt and the transaction data that was used to digitally sign it.
+
+### 5. Customer order
+
+1. Log in to POS and open a new shift, if it's not open yet.
+1. On the **Current transaction** page, add several items.
+1. Add a customer to the transaction.
+1. Click **Create customer order**.
+1. Click **Pick up all**, select a store and date, and confirm the operation.
+1. Pay the exact amount, that is, the deposit.
+1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is not digitally signed. No signature is printed in the receipt.
+1. In POS, click **Recall order** and find the previousely created order.
+1. Click **Pick up**, specify the pick-up quantities, and confirm the operation.
+1. Pay the exact amount.
+1. [Validate the transaction](#how-to-validate-a-sales-transaction). Validate that the total amount of the sales transaction includes picked-up items only. The amount of the applied deposit is not excluded from the total amount.
+
+### 6. Hybrid customer order
+
+1. Log in to POS and open a new shift, if it's not open yet.
+1. On the **Current transaction** page, add several items.
+1. Add a customer to the transaction.
+1. Click **Create customer order**.
+1. Click **Pick up all**, select a store and date, and confirm the operation.
+1. Add an item and click **Carry out selected**.
+1. Pay the exact amount, that is, the deposit plus the amount of the item that is marked as **Carry out**.
+1. [Validate the transaction](#how-to-validate-a-sales-transaction). Validate that the receipt contains a digital signature, and the total amount of the sales transaction includes the carry-out item only.
+1. In POS, click **Recall order** and find the previousely created order.
+1. Click **Pick up**, specify the pick-up quantities, and confirm the operation.
+1. Pay the exact amount.
+1. [Validate the transaction](#how-to-validate-a-sales-transaction). Validate that the total amount of the sales transaction includes picked-up items only. The amount of the applied deposit is not excluded from the total amount.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
