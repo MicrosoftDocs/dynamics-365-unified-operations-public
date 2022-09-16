@@ -593,11 +593,25 @@ Follow these steps to validate a digitally signed shift after it is closed:
     1. Compare France-specific fields (that is, Total sales, Total returns, Grand total, Cumulative perpetual grand total, and Cumulative perpetual grand total (absolute value)) with those printed in the Z-report.
     1. Click **Shift tax transactions** and compare the VAT amounts per tax rate with those printed in the Z-report. Close the **Shift tax transactions** page.
     1. On the **Shifts** page, click **Audit events**. The audit event that was registered when the shift was closed should be displayed. The **Log string** field should contain the shift number.
-    1. Open the **Fiscal transaction** tab and check that there is a fiscal transaction with the successful registration status.
+    1. Open the **Fiscal transactions** tab and check that there is a fiscal transaction with the successful registration status.
     1. The text in the **Fiscal register response** field is in the JSON format and contains the digital signature of the shift, the string that was used for digital signing of the shift, the signed shift sequential number, as well as the thumbprint of the certificate that is used for digital signing, the hash algorithm, and the version of the digital signing algorithm, which can later be used to verify the digital signature.
     1. Check that the signed shift sequential number is equal to the sequential number of the previous shift on the same register, if any, plus one.
     1. Check the string that was used for [digital signing of the shift](#digital-signing-of-closed-shifts). Validate the amounts of the shift and other data. Check the previous signature for the same register.
     1. Note the sequential number of the signed shift and its digital signature to use them for further validation of the next shift.
+    
+### How to validate an audit event
+    
+Follow these steps to validate a digitally signed audit event:
+
+1. In HQ:
+
+    1. Run the P-job to download audit event data to HQ.
+    1. Open the **Audit events** page and select an audit event. You can use the **Store number**, **Register number**, **Event type**, **Date** and **Time** fields to find the event. The **Log string** field contains the description of the event.
+    1. Open the **Fiscal transactions** tab and check that there is a fiscal transaction with the successful registration status.
+    1. The text in the **Fiscal register response** field is in the JSON format and contains the digital signature of the event, the string that was used for digital signing of the event, the signed event sequential number, as well as the thumbprint of the certificate that is used for digital signing, the hash algorithm, and the version of the digital signing algorithm, which can later be used to verify the digital signature.
+    1. Check that the signed event sequential number is equal to the sequential number of the previous event on the same register, if any, plus one.
+    1. Check the string that was used for [digital signing of the event](#digital-signing-of-events). Validate the predefined event code, description of the event, and other data. Check the previous signature for the same register.
+    1. Note the sequential number of the signed event and its digital signature to use them for further validation of the next event.
     
 ### 1. Preparation
 
