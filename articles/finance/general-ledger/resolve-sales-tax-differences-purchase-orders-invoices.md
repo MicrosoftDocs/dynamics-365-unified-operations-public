@@ -4,7 +4,7 @@
 title: Resolve sales tax differences
 description: This article explains how to resolve sales tax differences between purchase orders and invoices.
 author: kailiang
-ms.date: 09/09/2022
+ms.date: 09/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: 
 # ms.search.industry: 
-ms.author: 
+ms.author: kailiang
 ms.search.validFrom: 2022-09-02
 ms.dyn365.ops.version:
 
