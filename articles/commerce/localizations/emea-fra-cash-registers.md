@@ -682,4 +682,13 @@ Follow these steps to validate a digitally signed audit event:
 1. Pay the exact amount.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Validate that the total amount of the sales transaction includes picked-up items only. The amount of the applied deposit is not excluded from the total amount.
 
+### 7. Sale in Offline mode
+
+1. Log in to POS and open a new shift, if it's not open yet.
+1. Use the **Database connection status** operation to manually disconnect POS from the Commerce Scale Unit and switch POS to the Offline mode.
+1. On the **Current transaction** page, add several items and pay the exact amount.
+1. Use the **Database connection status** operation to manually connect POS to the Commerce Scale Unit and switch POS to the Online mode.
+1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is digitally signed and the sequence of digital signtures is not broken.
+
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
