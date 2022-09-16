@@ -304,7 +304,7 @@ You must also specify the following settings for France. Note that you must run 
 1. [Enable Commerce features](#enable-features-for-france) for France in the **Feature management** workspace.
 1. [Specify various registration numbers](#set-up-the-legal-entity) of the organization, such as the VAT identifier, on the **Legal entities** page. These registration numbers will be used when exporting the fiscal archive.
 1. [Set up VAT](#set-up-vat-per-french-requirements) per the French VAT regulations.
-1. [Set up POS functionality profiles](#set-up-functionality-profiles) to enable features and options required for France.
+1. [Set up POS functionality profiles](#set-up-pos-functionality-profiles) to enable features and options required for France.
 1. [Configure custom fields](#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts) and [receipt formats](#configure-receipt-formats) to comply with the local regulatory requirements.
 1. [Configure the fiscal registration functionality](#set-up-fiscal-registration) for France to enable digital signing of sales transactions and audit events.
 1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the POS and HQ sides.
@@ -645,7 +645,7 @@ Follow these steps to validate a digitally signed audit event:
 ### 4. Issue gift card
 
 1. Log in to POS and open a new shift, if it's not open yet.
-1. On the **Current transaction** page, Click **Issue gift card** and specify the number of a new gift card and the amount to add to it.
+1. On the **Current transaction** page, click **Issue gift card** and specify the number of a new gift card and the amount to add to it.
 1. Pay the exact amount.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is not digitally signed. No signature is printed in the receipt.
 1. In POS, on the **Current transaction** page, add several items.
@@ -661,7 +661,7 @@ Follow these steps to validate a digitally signed audit event:
 1. Click **Create customer order**.
 1. Click **Pick up all**, select a store and date, and confirm the operation.
 1. Pay the exact amount, that is, the deposit.
-1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is not digitally signed. No signature is printed in the receipt.
+1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is not digitally signed. No signature is printed on the receipt.
 1. In POS, click **Recall order** and find the previousely created order.
 1. Click **Pick up**, specify the pick-up quantities, and confirm the operation.
 1. Pay the exact amount.
@@ -690,5 +690,11 @@ Follow these steps to validate a digitally signed audit event:
 1. Use the **Database connection status** operation to manually connect POS to the Commerce Scale Unit and switch POS to the Online mode.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is digitally signed and the sequence of digital signtures is not broken.
 
+### 8. Non-sale operation (expense)
+
+1. Log in to POS and open a new shift, if it's not open yet.
+1. Execute the **Expense accounts** operation, select an expense account, specify the expense amount, and confirm the operation.
+1. Pay the exact amount.
+1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is not digitally signed. No signature is printed on the receipt.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
