@@ -4,7 +4,7 @@
 title: Data upgrade process for AX 2012 to Dynamics 365 Finance + Operations (on-premises)
 description: This article describes the process for upgrading Microsoft Dynamics AX 2012 databases to Dynamics 365 Finance + Operations (on-premises) version 10.0.x.
 author: faix
-ms.date: 07/13/2022
+ms.date: 9/16/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service:
@@ -15,7 +15,7 @@ ms.technology:
 # ms.search.form: [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -71,28 +71,28 @@ If you will use a VHD to carry out the data upgrade process you also need to be 
 
 #### Dynamics 365 Finance + Operations (on-premises) prerequisites
 
-If you will use a Dynamics 365 environment to carry out the data upgrade process you need to meet these prerequisites:
+If you will use a Dynamics 365 environment to carry out the data upgrade process, you need to meet these prerequisites:
 
-1. Have a Dynamics 365 Finance + Operations (on-premises) environment deployed using a demo data backup.
-1. Ensure you have applied the latest quality update to your environment.
+1. A Dynamics 365 Finance + Operations (on-premises) environment deployed using a demo data backup.
+1. Ensure that you have applied the latest quality update to your environment.
 1. If you have any extensions or customizations, apply them to your environment now. Otherwise, the upgrade process will remove any data that is related to customizations. If you must prepare your environment before the upgrade, check with your independent software vendor (ISV) or value-added reseller (VAR).
 
 ### Upgrade from a Dynamics 365 Finance + Operations (on-premises) environment
 
 1. Disable all AOS and MR nodes using Service Fabric explorer.
     > [!TIP]
-    > Disable nodes one at a time. Once you have disabled the last node, Service Fabric will not successfully disable it as it is trying to ensure the services assigned to that node type can be placed in another node. Since there will not be another node available we need to force this operation. Simply restart the last node from Service Fabric explorer and after the restart the node will be disabled.
+    > Disable nodes one at a time. After you have disabled the last node, **Service Fabric** will not successfully disable it, as it is trying to ensure the services assigned to that node type can be placed in another node. Because there won't be another node available, you need to force this operation. To do this, restart the last node from **Service Fabric explorer**. After the restart, the node will be disabled.
 
 1. Delete your existing demo data database.
 1. Restore the backup that you created with the same name as your existing demo database. For more information, see [Restore a Database Backup Using SSMS](/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms).
-1. Open Windows PowerShell in elevated mode, and navigate to the Infrastructure folder in your file share and run the following commands.
+1. Open Microsoft Windows PowerShell in **elevated mode**, navigate to the **Infrastructure** folder in your file share, and then run the following commands.
     
     ```Powershell
     .\Initialize-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName AOS
     .\Configure-Database.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ComponentName AOS
     ```
 
-1. Execute the following SQL command against your restored database:
+1. Run the following SQL command against your restored database:
 
     ```SQL
     MERGE [dbo].[SQLSYSTEMVARIABLES] AS VARIABLES
@@ -103,8 +103,8 @@ If you will use a Dynamics 365 environment to carry out the data upgrade process
         VALUES (NEWVALUE.PARM, NEWVALUE.VALUE, NEWVALUE.IPARM, NEWVALUE.IVALUE);
     ```
 
-1. Activate one of your AOS nodes using Service Fabric explorer.
-1. Once the AOS node is activated and the service starts, the data upgrade process will trigger automatically. You can monitor the data upgrade process using the guidance in [Monitoring the data upgrade](#monitoring-the-data-upgrade).
+1. Activate one of your AOS nodes using **Service Fabric explorer**.
+1. After the AOS node is activated and the service starts, the data upgrade process will trigger automatically. You can monitor the data upgrade process using the guidance in [Monitoring the data upgrade](#monitoring-the-data-upgrade).
 1. If the data upgrade fails you can find the data upgrade logs in the service log folder. The path will look similar to this: `C:\ProgramData\SF\<nodename>\Fabric\work\Applications\AXSFType_App95\log`.
 1. If the data upgrade succeeds, and if you have customizations from ISVs or VARs, check whether you must run some post–data upgrade scripts.
 1. Re-enable the remaining AOS nodes as well as the MR nodes.
