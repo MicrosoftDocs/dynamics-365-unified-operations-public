@@ -158,6 +158,8 @@ The following script removes and unprovisions all Service Fabric applications ex
 $applicationNamesToIgnore = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring', 'fabric:/Agent-LBDTelemetry', 'fabric:/LBDTelemetry-Agent')
 $applicationTypeNamesToIgnore = @('MonitoringAgentAppType-Agent', 'LocalAgentType', 'LBDTelemetryType-Agent')
 
+Connect-ServiceFabricCluster
+
 Get-ServiceFabricApplication | `
     Where-Object { $_.ApplicationName -notin $applicationNamesToIgnore } | `
     Remove-ServiceFabricApplication -Force
