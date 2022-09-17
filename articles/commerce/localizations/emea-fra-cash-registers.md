@@ -2,7 +2,7 @@
 title: Cash register functionality for France
 description: This article provides an overview of the cash register functionality that is available for France. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
-ms.date: 09/15/2022
+ms.date: 09/19/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -89,6 +89,7 @@ If the **Audit** option in the POS functionality profile is set to **Yes**, the 
 - Applying a manager override
 - Voiding a transaction 
 - Voiding a transaction line
+- Closing a shift
 - Cleanup of transactions from the channel database
 - Applying a major update of the software with compliance impact
 
@@ -181,6 +182,14 @@ You can view the signature of a closed shift, together with the shift data that 
 
 ### Digital signing of events
 
+Only the [France-specific](#registration-of-audit-events) audit events are signed. Three separate sequences of digitally signed audit events are maintained per register:
+
+- Sequence of **Shift closed** audit events that are registered when shifts are closed.
+- Sequence of **Receipt copy printed** audit events that are registered when receipt copies are printed.
+- Sequence of other signed audit events.
+
+Audit events that are not digitally signed are excluded from these sequences.
+    
 The data that is signed for an event other than a receipt copy or shift closing event is a text string that consists of the following data fields:
 
 - The sequential number of the signed event for the register.
@@ -550,9 +559,9 @@ This section describes basic scenarios that you can execute to validate that you
 1. Customer order
 1. Hybrid customer order
 1. Sale in Offline mode
-1. Non-sale operation (expense)
-1. Audit events
+1. Non-sale transaction (expense)
 1. Print receipt copy
+1. Audit events
 1. Validate shift duration restriction
 1. Close shift and print Z-report
 1. Process period grand total journal
@@ -573,7 +582,7 @@ Follow these steps to validate a digitally signed sales transaction after it is 
     1. Expand the **Fiscal transaction** fast-tab and check that there is a fiscal transaction with the successful registration status.
     1. The text in the **Fiscal register response** field is in the JSON format and contains the digital signature of the transaction, the string that was used for digital signing of the transaction, the signed transaction sequential number, as well as the thumbprint of the certificate that is used for digital signing, the hash algorithm, and the version of the digital signing algorithm, which can later be used to verify the digital signature.
     1. You can also click Extended data and view specific properties of the fiscal transaction, such as the signature, sequential number, certificate thumbprint, and hash algorithm identification.
-    1. Check that the signed transaction sequential number is equal to the sequential number of the previous transaction on the same register, if any, plus one. This sequential number should also be printed in the **Sequential number** field of the receipt. 
+    1. Check that the signed transaction sequential number is equal to the sequential number of the previous transaction on the same register, if any, plus 1. This sequential number should also be printed in the **Sequential number** field of the receipt. 
     1. Check the string that was used for [digital signing of the transaction](#digital-signing-of-sales-and-return-transactions). Validate the amounts of the transaction, the register number, and other data. Check the previous signature for the same register.
     1. Check that the **Digital signature** field of the receipt contains an extract from the digital signature of the transaction and consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
     1. Note the sequential number of the signed transaction and its digital signature to use them for further validation of the next transaction.
@@ -595,7 +604,7 @@ Follow these steps to validate a digitally signed shift after it is closed:
     1. On the **Shifts** page, click **Audit events**. The audit event that was registered when the shift was closed should be displayed. The **Log string** field should contain the shift number.
     1. Open the **Fiscal transactions** tab and check that there is a fiscal transaction with the successful registration status.
     1. The text in the **Fiscal register response** field is in the JSON format and contains the digital signature of the shift, the string that was used for digital signing of the shift, the signed shift sequential number, as well as the thumbprint of the certificate that is used for digital signing, the hash algorithm, and the version of the digital signing algorithm, which can later be used to verify the digital signature.
-    1. Check that the signed shift sequential number is equal to the sequential number of the previous shift on the same register, if any, plus one.
+    1. Check that the signed shift sequential number is equal to the sequential number of the previous shift on the same register, if any, plus 1.
     1. Check the string that was used for [digital signing of the shift](#digital-signing-of-closed-shifts). Validate the amounts of the shift and other data. Check the previous signature for the same register.
     1. Note the sequential number of the signed shift and its digital signature to use them for further validation of the next shift.
     
@@ -609,8 +618,16 @@ Follow these steps to validate a digitally signed audit event:
     1. Open the **Audit events** page and select an audit event. You can use the **Store number**, **Register number**, **Event type**, **Date** and **Time** fields to find the event. The **Log string** field contains the description of the event.
     1. Open the **Fiscal transactions** tab and check that there is a fiscal transaction with the successful registration status.
     1. The text in the **Fiscal register response** field is in the JSON format and contains the digital signature of the event, the string that was used for digital signing of the event, the signed event sequential number, as well as the thumbprint of the certificate that is used for digital signing, the hash algorithm, and the version of the digital signing algorithm, which can later be used to verify the digital signature.
-    1. Check that the signed event sequential number is equal to the sequential number of the previous event on the same register, if any, plus one.
-    1. Check the string that was used for [digital signing of the event](#digital-signing-of-events). Validate the predefined event code, description of the event, and other data. Check the previous signature for the same register.
+    1. Check that the signed event sequential number is equal to the sequential number of the previous event of the same event sequence type on the same register, if any, plus 1.
+    
+    > [!NOTE]
+    > Only the [France-specific](#registration-of-audit-events) audit events are signed. Three separate sequences of digitally signed audit events are maintained per register:
+    > - Sequence of **Shift closed** audit events that are registered when shifts are closed.
+    > - Sequence of **Receipt copy printed** audit events that are registered when receipt copies are printed.
+    > - Sequence of other signed audit events.
+    > Audit events that are not digitally signed are excluded from these sequences.
+    
+    1. Check the string that was used for [digital signing of the event](#digital-signing-of-events). Validate the predefined event code, description of the event, and other data. Check the previous signature of the event of the same event sequence type for the same register.
     1. Note the sequential number of the signed event and its digital signature to use them for further validation of the next event.
     
 ### 1. Preparation
@@ -690,11 +707,29 @@ Follow these steps to validate a digitally signed audit event:
 1. Use the **Database connection status** operation to manually connect POS to the Commerce Scale Unit and switch POS to the Online mode.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is digitally signed and the sequence of digital signtures is not broken.
 
-### 8. Non-sale operation (expense)
+### 8. Non-sale transaction (expense)
 
 1. Log in to POS and open a new shift, if it's not open yet.
 1. Execute the **Expense accounts** operation, select an expense account, specify the expense amount, and confirm the operation.
 1. Pay the exact amount.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is not digitally signed. No signature is printed on the receipt.
 
+### 9. Print receipt copy
+
+1. Log in to POS and open a new shift, if it's not open yet.
+1. On the **Current transaction** page, add several items and pay the exact amount.
+1. Return to **Home**, click **Show journal**, and select the recently completed sales transaction.
+1. Click **Show receipt** and in the receipt preview click **Print > Print this**.
+1. Review the printed receipt copy. Note the **Copy** caption in the receipt. Check the data of the copy, such as the **Reprint number** (it should be equal to 1), **Reprint date**, **Reprint time**, and the extract from the digital signature of the copy.
+1. Close the receipt preview.
+1. [Validate the receipt copy audit event](#how-to-validate-an-audit-event). The audit event has the **Receipt copy printed** type. Check that the **Reprint digital signature** field of the receipt copy contains an extract from the digital signature of the audit event and consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
+1. In POS, on the **Transaction journal** page, select the recently completed sales transaction, click **Show receipt**, and in the receipt preview click **Print > Print this**, thus printing the second copy of the same receipt.
+1. Review the printed receipt copy. Check that **Reprint number** has been increased to 2.
+1. [Validate the receipt copy audit event](#how-to-validate-an-audit-event). The audit event has the **Receipt copy printed** type. Check that the signed event sequential number is equal to the sequential number of the previous receipt copy event plus 1. Check that the string that was used for [digital signing of the receipt copy event](#digital-signing-of-receipt-copies) contains the signature of the previous receipt copy event.
+
+### 10. Audit events
+    
+1. Log in to POS and open a new shift, if it's not open yet.
+1. 
+    
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
