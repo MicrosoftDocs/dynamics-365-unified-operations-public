@@ -562,7 +562,7 @@ This section describes basic scenarios that you can execute to validate that you
 1. Non-sale transaction (expense)
 1. Print receipt copy
 1. Audit events
-1. Validate shift duration restriction
+1. Shift duration restriction
 1. Close shift and print Z-report
 1. Process period grand total journal
 1. Export and verify fiscal archive
@@ -730,6 +730,11 @@ Follow these steps to validate a digitally signed audit event:
 ### 10. Audit events
     
 1. Log in to POS and open a new shift, if it's not open yet.
-1. 
+1. On the **Current transaction** page, add several items.
+1. Select a transaction line and click **Void line**.
+1. Pay the exact amount.
+1. Add several items to a new transaction.
+1. Click **Void transaction** and confirm the operation.
+1. [Validate the audit events](#how-to-validate-an-audit-event). The audit events have the **Item voided** and **Transaction voided** types, correspondingly.
     
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
