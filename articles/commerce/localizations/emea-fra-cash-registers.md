@@ -33,6 +33,8 @@ This version of the cash register functionality for France has passed an audit a
 
 An up-to-date certificate can be found on the [portal of the certification body](https://certificates.infocert.org/).
 
+You can also view the certification information in the point-of-sale (POS) in the **NF 525 certification** dialog that can be invoked by clicking the **View details** button in the **NF 525 certification** field group under the **France** section of the **Settings** page. The dialog displays the certified software name and version, as well as the certification category and the NF 525 certificate number, provided that France-specific features are [enabled](#enable-features-for-france) in the **Feature management** workspace and the fiscal registration functionality for France is [enabled and configured](#set-up-fiscal-registration) properly. 
+
 ### NF 525 compliance documentation
 
 The following is the Dynamics 365 Commerce documentation related to the NF 525 certification:
@@ -640,7 +642,11 @@ Follow these steps to validate a digitally signed audit event:
 1. In POS:
     
     1. Log in to POS and open a new shift.
-    1. On the **Current transaction** page, add several items and pay exact amount.
+    1. Go to the **Settings page**.
+    1. Click the **View details** button in the **NF 525 certification** field group under the **France** section**.
+    1. In the **NF 525 certification** dialog, review the software name and version, as well as the certification category and the NF 525 certificate number.
+    1. Go to the **Current transaction** page, add several items and pay exact amount.
+    1. Return to **Home** and click **Show journal**
     1. On the **Transaction journal** page, select the previous sales transaction and return one item from it. Pay exact amount.
     1. Close the shift.
     1. [Validate the transactions](#how-to-validate-a-sales-transaction) and note the sequential number of the last signed transaction (i.e. the return transaction) and its digital signature to use them for further validation of following scenarios.
@@ -768,6 +774,9 @@ Follow these steps to validate a digitally signed audit event:
 
 ### 13. Process period grand total journal
 
+Execute the following scenario in HQ:
+
+1. Run the P-job to download retail sales data to HQ.
 1. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
