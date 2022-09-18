@@ -748,7 +748,7 @@ Follow these steps to validate a digitally signed audit event:
 1. Log in to POS and open a new shift, if it's not open yet.
 1. On the **Current transaction** page, add several items and pay the exact amount.
 1. Return to **Home** and click **Close shift**.
-1. [Validate the shift](#how-to-validate-an-shift).
+1. [Validate the shift](#how-to-validate-a-shift).
 
 ### 12. Shift duration restriction
 
@@ -762,11 +762,11 @@ Follow these steps to validate a digitally signed audit event:
     1. Log in to POS and open a new shift, if it's not open yet. You shoud start the shift more than 10 minutes before the specified shift closing time.
     1. On the **Current transaction** page, add several items and pay the exact amount. No error or warning should occur.
     1. Wait until the current time is the specified shift closing time minus 5 minutes.
-    1. On the **Current transaction** page, add an item. The following warning should occur: "You must close the shift by <specified shift closing time>." but the line should be added successfully.
+    1. On the **Current transaction** page, add an item. The following warning should occur: *You must close the shift by <specified shift closing time>.* but the line should be added successfully.
     1. Pay the exact amount. The same warning shoud occur.
     1. On the **Current transaction** page, add an item. The same warning should occur.
     1. Wait until the current time later than the specified shift closing time.
-    1. Try to pay the exact amount. The following error should be raised: "Shift duration exceeds the limit. Suspend the transaction, close the shift and open a new shift." and the payment should not be successful.
+    1. Try to pay the exact amount. The following error should be raised: *Shift duration exceeds the limit. Suspend the transaction, close the shift and open a new shift.* and the payment should not be successful.
     1. Suspend the transaction.
     1. Close the shift.
     1. Recall the transaction.
@@ -777,6 +777,15 @@ Follow these steps to validate a digitally signed audit event:
 Execute the following scenario in HQ:
 
 1. Run the P-job to download retail sales data to HQ.
-1. 
+1. Open the **Period grand total journal** page.
+1. Create a new journal.
+1. Specify the **Journal** number, if it's not set automatically.
+1. Select the **Store number**.
+1. If this is the first journal for the selected store, you must select the **To date**. You can select any date from the current fiscal period, and the **From date** and **To date** will be populated automatically as the first and the last day, correspondingly, of the fiscal period that the selected date belongs to. Otherwise, if this is not the first journal for the store, the **From date** and the **To date** will be populated automatically as the first and the last day, correspondingly, of the fiscal period that is next to the latest fiscal period that a closed journal exists for.
+1. Click **Functions > Calculate journal**. The **Status** of the journal should change to **Calculated**.
+1. Click **Shifts** and verify that proper shifts are included in the journal, that is, all shifts that were closed during the period of the journal. Close the **Shifts** page.
+1. Verify the journal totals on the **Amounts** tab. Check the **Total sales amount**, **Total returns amount**, and **Grand total** fields. Check that the **Perpetual grand total** and **Perpetual grand total (absolut value)** amounts are equal to the ones of the last closed shift included in the journal.
+1. Click **Tax totals** and verify the period totals per tax rate.
+1. Click **Functions > Close journal**. The **Status** of the journal should change to **Closed**, and the jounal should be digitally signed. Check the digital signature details on the **Signature details** tab. The **Signed data** field contains the string that was used for [digital signing of the journal](#period-grand-total-journal). Validate the amounts of the journal and other data. Check the previous journal signature for the same store.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
