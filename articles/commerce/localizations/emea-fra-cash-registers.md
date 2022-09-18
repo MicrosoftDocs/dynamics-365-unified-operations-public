@@ -562,8 +562,8 @@ This section describes basic scenarios that you can execute to validate that you
 1. Non-sale transaction (expense)
 1. Print receipt copy
 1. Audit events
-1. Shift duration restriction
 1. Close shift and print Z-report
+1. Shift duration restriction
 1. Process period grand total journal
 1. Export and verify fiscal archive
 
@@ -656,7 +656,7 @@ Follow these steps to validate a digitally signed audit event:
 
 1. Log in to POS and open a new shift, if it's not open yet.
 1. On the **Current transaction** page, add an item and and click Return product. Select or specify a reason code, if needed.
-1. Pay the exact amouint,
+1. Pay the exact amount.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the amounts in the string that is used for digital signing of the transaction are negative, but the type of the transaction is still **Sales**. This is because for digital signing purposes, return transactions are considered regular sales transactions. Similarly, the **Transaction type** field of the receipt should read **Sales**.
 
 ### 4. Issue gift card
@@ -736,5 +736,38 @@ Follow these steps to validate a digitally signed audit event:
 1. Add several items to a new transaction.
 1. Click **Void transaction** and confirm the operation.
 1. [Validate the audit events](#how-to-validate-an-audit-event). The audit events have the **Item voided** and **Transaction voided** types, correspondingly.
-    
+
+### 11. Close shift and print Z-report
+
+1. Log in to POS and open a new shift, if it's not open yet.
+1. On the **Current transaction** page, add several items and pay the exact amount.
+1. Return to **Home** and click **Close shift**.
+1. [Validate the shift](#how-to-validate-an-shift).
+
+### 12. Shift duration restriction
+
+1. In HQ:
+    1. Open the **POS functionality profiles** page.
+    1. Make sure the **Enforce daily shift closing** checkbox is set to **Yes**.
+    1. Set **Shift closing time** to a time that is 20 minutes after the current time.
+    1. Set shift closing interval to 10 minutes and save the record.
+    1. Run the **1070** distribution job.
+1. In POS:
+    1. Log in to POS and open a new shift, if it's not open yet. You shoud start the shift more than 10 minutes before the specified shift closing time.
+    1. On the **Current transaction** page, add several items and pay the exact amount. No error or warning should occur.
+    1. Wait until the current time is the specified shift closing time minus 5 minutes.
+    1. On the **Current transaction** page, add an item. The following warning should occur: "You must close the shift by <specified shift closing time>." but the line should be added successfully.
+    1. Pay the exact amount. The same warning shoud occur.
+    1. On the **Current transaction** page, add an item. The same warning should occur.
+    1. Wait until the current time later than the specified shift closing time.
+    1. Try to pay the exact amount. The following error should be raised: "Shift duration exceeds the limit. Suspend the transaction, close the shift and open a new shift." and the payment should not be successful.
+    1. Suspend the transaction.
+    1. Close the shift.
+    1. Recall the transaction.
+    1. Pay the exact amount. No error or warning should occur.
+
+### 13. Process period grand total journal
+
+1. 
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
