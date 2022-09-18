@@ -325,7 +325,7 @@ You must also specify the following settings for France. Note that you must run 
     > [!WARNING]
     > You should only do this if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
 1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode).
-1. [Validate your configuration](#compliance-check-list) to make sure all France-specific features work properly.
+1. [Validate your configuration](#compliance-checklist) to make sure all France-specific features work properly.
 
 ### Enable features for France
 
@@ -710,7 +710,7 @@ Follow these steps to validate a digitally signed audit event:
 1. Log in to POS and open a new shift, if it's not open yet.
 1. Use the **Database connection status** operation to manually disconnect POS from the Commerce Scale Unit and switch POS to the Offline mode.
 1. On the **Current transaction** page, add several items and pay the exact amount.
-1. Use the **Database connection status** operation to manually connect POS to the Commerce Scale Unit and switch POS to the Online mode.
+1. Use the **Database connection status** operation to manually connect POS to the Commerce Scale Unit and switch POS to the Online mode, and wait until the synchronization between the Offline DB and Channel DB is completed.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is digitally signed and the sequence of digital signtaures is not broken.
 
 ### 8. Non-sale transaction (expense)
@@ -730,7 +730,7 @@ Follow these steps to validate a digitally signed audit event:
 1. Close the receipt preview.
 1. [Validate the receipt copy audit event](#how-to-validate-an-audit-event). The audit event has the **Receipt copy printed** type. Check that the **Reprint digital signature** field of the receipt copy contains an extract from the digital signature of the audit event and consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
 1. In POS, on the **Transaction journal** page, select the recently completed sales transaction, click **Show receipt**, and in the receipt preview click **Print > Print this**, thus printing the second copy of the same receipt.
-1. Review the printed receipt copy. Check that **Reprint number** has been increased to 2.
+1. Review the printed receipt copy. Check that **Reprint number** is now increased to 2.
 1. [Validate the receipt copy audit event](#how-to-validate-an-audit-event). The audit event has the **Receipt copy printed** type. Check that the signed event sequential number is equal to the sequential number of the previous receipt copy event plus 1. Check that the string that was used for [digital signing of the receipt copy event](#digital-signing-of-receipt-copies) contains the signature of the previous receipt copy event.
 
 ### 10. Audit events
@@ -747,6 +747,8 @@ Follow these steps to validate a digitally signed audit event:
 
 1. Log in to POS and open a new shift, if it's not open yet.
 1. On the **Current transaction** page, add several items and pay the exact amount.
+1. Return to **Home** and click **Show journal**
+1. On the **Transaction journal** page, select the previous sales transaction and return one item from it. Pay exact amount.
 1. Return to **Home** and click **Close shift**.
 1. [Validate the shift](#how-to-validate-a-shift).
 
@@ -794,6 +796,6 @@ Execute the following scenario in HQ:
     1. Open the **Period grand total journal** page and select a closed period grand total journal.
     1. Click **Archive > Export archive**, specify the name of the export file, and confirm the operation. You also need to disable the pop-up blocker of the browser, so that that export could complete.
     1. Verify that the exported file is a ZIP archive that contains XML and SIGN files.
-1. Follow the steps that are described in [Fiscal archive for France](./emea-fra-fiscal-archive#fiscal-archive-integrity-verification-tool) to verify the exported fiscal archive.
+1. Follow the steps that are described in [Fiscal archive for France](./emea-fra-fiscal-archive.md#fiscal-archive-integrity-verification-tool) to verify the exported fiscal archive.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
