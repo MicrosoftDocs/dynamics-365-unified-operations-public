@@ -788,4 +788,12 @@ Execute the following scenario in HQ:
 1. Click **Tax totals** and verify the period totals per tax rate.
 1. Click **Functions > Close journal**. The **Status** of the journal should change to **Closed**, and the jounal should be digitally signed. Check the digital signature details on the **Signature details** tab. The **Signed data** field contains the string that was used for [digital signing of the journal](#period-grand-total-journal). Validate the amounts of the journal and other data. Check the previous journal signature for the same store.
 
+### 14. Export and verify fiscal archive
+
+1. In HQ:
+    1. Open the **Period grand total journal** page and select a closed period grand total journal.
+    1. Click **Archive > Export archive**, specify the name of the export file, and confirm the operation. You also need to disable the pop-up blocker of the browser, so that that export could complete.
+    1. Verify that the exported file is a ZIP archive that contains XML and SIGN files.
+1. Follow the steps that are described in [Fiscal archive for France](./emea-fra-fiscal-archive#fiscal-archive-integrity-verification-tool) to verify the exported fiscal archive.
+
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
