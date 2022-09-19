@@ -20,8 +20,6 @@
           href: get-started/whats-new-platform-updates-10-0-29.md
         - name: Platform updates for version 10.0.28 (August 2022)
           href: get-started/whats-new-platform-updates-10-0-28.md
-        - name: Platform updates for version 10.0.27 (July 2022)
-          href: get-started/whats-new-platform-updates-10-0-27.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -510,6 +508,8 @@
           href: dev-tools/access-instances.md
         - name: Configure one-box development environments
           href: dev-tools/configure-developer-vm.md
+        - name: Secure one-box development environments
+          href: dev-tools/secure-developer-vm.md
         - name: Development and build VMs that don't allow admin access FAQ
           href: sysadmin/VMs-no-admin-access.md
         - name: Set up the downloadable VHD for first use

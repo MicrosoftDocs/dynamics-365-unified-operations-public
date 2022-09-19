@@ -68,5 +68,4 @@ The Microsoft Office integration capabilities provide users with a productive en
 ## eLearning courses
 For online courses and training, check out [Dynamics 365 finance and operations](/training/browse/?expanded=dynamics-365&products=dynamics-finance-operations&roles=administrator%2cdeveloper).
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

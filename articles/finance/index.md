@@ -44,7 +44,7 @@ Select a feature area to learn more about it.
         - [Cost accounting](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [Financial reporting](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
+        - [Financial reporting](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Fixed assets](fixed-assets/fixed-assets.md)
         - [Finance insights](finance-insights/finance-insights-home-page.md)
         - [General ledger and Financial reporting](general-ledger/general-ledger.md) 
@@ -67,7 +67,7 @@ Check out the how-to videos that are now available on the [Microsoft Dynamics 36
 
 ### Country/region functionality
 
-Country/region regulations affect tax setup and other areas of financial management. To learn about country/region-specific functionality, see [Localization and regulatory features](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json).
+Country/region regulations affect tax setup and other areas of financial management. To learn about country/region-specific functionality, see [Localization and regulatory features](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json).
 
 ### Additional content
 

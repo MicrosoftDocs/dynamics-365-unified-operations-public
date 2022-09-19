@@ -21,13 +21,20 @@ ms.search.form:
 
 [!include [banner](../includes/banner.md)]
 
-Before you can activate and set up integration with Electronic invoicing, you must have a Microsoft Dynamics Lifecycle Services (LCS) project that includes version 10.0.17 or later of Dynamics 365 Finance or Dynamics 365 Supply Chain Management. Additionally, those apps must be deployed in one of the following Azure geographies:
+Before you can activate and set up integration with Electronic invoicing, you must have a Microsoft Dynamics Lifecycle Services (LCS) project that includes Dynamics 365 Finance or Dynamics 365 Supply Chain Management. Additionally, those apps must be deployed in one of the following Azure geographies:
 
 - United States
 - Europe
 - United Kingdom
 - Asia
 - Japan
+- Switzerland
+- Brazil
+- United Arab Emirates
+- Australia
+- Canada
+- France
+- India
 
 ## Enable the Electronic invoicing integration feature
 
