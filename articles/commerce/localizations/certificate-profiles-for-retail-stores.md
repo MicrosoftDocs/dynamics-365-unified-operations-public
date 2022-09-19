@@ -1,6 +1,6 @@
 ---
 title: User-defined certificate profiles for retail stores
-description: This article provides an overview about how certificates are used in retail stores.
+description: This article provides an overview of the certificate profiles that are available in Microsoft Dynamics 365 Commerce.
 author: josaw1
 ms.date: 09/19/2022
 ms.topic: article
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: josaw
 ms.search.region: Global
-ms.author: josaw
+ms.author: v-chgriffin
 ms.search.validFrom: 2020-10-09
 ms.dyn365.ops.version: 10.0.15
 ms.search.industry: Retail
@@ -19,12 +19,9 @@ ms.search.form: RetailFormLayout, RetailParameters
 
 [!include [banner](../includes/banner.md)]
 
-
-## Overview
-
 This article provides an overview of the certificate profiles that are available in Microsoft Dynamics 365 Commerce. This functionality extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature by adding support for local certificates.
 
-While the point of sale (POS) is running in offline mode, it can't access the certificates that are stored in Azure Key Vault. The local certificate should be used instead. The following capabilities are supported:
+While the point of sale (POS) is running in offline mode, it can't access the certificates that are stored in Microsoft Azure Key Vault. The local certificate should be used instead. The following capabilities are supported:
 
 - Using local certificates in Key Vault fallback scenarios
 - Using local certificates without Key Vault (for example in an on-premises installation)
@@ -52,50 +49,54 @@ The following procedure explains how to set up certificate profiles.
 
 ### Set up Key Vault
 
-The following steps must be completed before you can use a digital certificate that is stored in Key Vault:
+The following steps must be completed before you can use a digital certificate that is stored in Key Vault.
 
-1. The Key Vault storage must be created. We recommend that you deploy the storage in the same geographical region as the Commerce Scale Unit.
-1. The certificate must be uploaded to the Key Vault storage.
-1. The Application Object Server (AOS) application must be authorized to read secrets from the Key Vault storage.
+1. Create a Key Vault storage account. It is recommended that you deploy the storage account in the same geographical region as the Commerce Scale Unit.
+1. Upload the digital certificate to the Key Vault storage account.
+1. Authorize the Application Object Server (AOS) application to read secrets from the Key Vault storage account.
 
 For more information about how to work with Key Vault, see [Get started with Azure Key Vault](/azure/key-vault/key-vault-get-started).
 
 ### Set up system parameters
 
-Before you configure certificate profiles in the Commerce channels, you need to enable Commerce to use certificates that are stored in Key Vault, and certificate profiles:
+Before you configure certificate profiles in the Commerce channels, you must enable Commerce to use both certificates that are stored in Key Vault and certificate profiles.
+
+To set up system parameters in Commerce headquarters, follow these steps.
 
 1. On the **System parameters** page, set the **Use advanced certificate store** parameter to **Yes**.
 1. In the **Feature management** workspace, turn on the **User-defined certificate profiles for retail stores** feature.
 
 ### Set up Key Vault parameters
 
-On the **Key Vault parameters** page, you must specify the parameters for accessing the Key Vault storage:
+On the **Key Vault parameters** page, you must specify the following parameters for accessing the Key Vault storage:
 
-- **Name** and **Description** – The name and description of the Key Vault storage.
-- **Key Vault URL** – The URL of the Key Vault storage.
-- **Key Vault client** – An interactive client ID of the Azure Active Directory (Azure AD) application that is associated with the Key Vault storage for authentication purposes. This client should have access to read secrets from the storage.
-- **Key Vault secret key** – A secret key that is associated with the Azure AD application that is used for authentication in the Key Vault storage.
+- **Name** and **Description** – The name and description of the Key Vault storage account.
+- **Key Vault URL** – The URL of the Key Vault storage account.
+- **Key Vault client** – An interactive client ID of the Azure Active Directory (Azure AD) application that is associated with the Key Vault storage account for authentication purposes. This client should have access to read secrets from the storage account.
+- **Key Vault secret key** – A secret key that is associated with the Azure AD application that is used for authentication in the Key Vault storage account.
 - **Name**, **Description**, and **Secret reference** – The name, description, and secret reference of the certificate.
 
 For more information, see [Set up the Azure Key Vault client](../../finance/localizations/setting-up-azure-key-vault-client.md).
 
 ### Configure a certificate profile
 
-Follow these steps to configure a certificate profile:
+Tto configure a certificate profile in Commerce headquarters, follow these steps.
 
 1. Go to **System administration \> Setup \> Certificate profiles**.
-1. Create a record, and set the **Certificate profile**, **Name**, and **Description** fields for it.
+1. On the action pane, select **+New** to create a record. 
+1. Enter values for **Certificate profile**, **Name**, and **Description**.
 
     > [!NOTE]
     > The certificate profile is a unique identifier of a certificate across all companies and Commerce components.
 
-1. On the **Legal entities** tab, add a line, and select the legal entity (company) that the current certificate profile should be used for. If the certificate profile should be used for multiple legal entities, repeat this step to add a line for each additional legal entity.
-1. Select **Settings** to open the **Certificate profile settings** page, where you can enter company-specific settings for the certificate profile. You can specify which certificates can be used when the current certificate profile is called in the Commerce channels. You can add as many certificates as you require, and set priorities for the certificates. If a certificate that has a higher priority isn't available, the next certificate will be used, based on priority. For more information, see [Workflow: Searching certificates in the Commerce runtime](#workflow-searching-certificates-in-the-commerce-runtime).
+1. On the **Legal entities** FastTab, select **+Add** to add a line.
+1. Under **Legal entity**, select the legal entity (company) that the current certificate profile should be used for. If the certificate profile should be used for multiple legal entities, repeat this step to add a line for each additional legal entity.
+1. Select **Settings** to open the **Certificate profile settings** page, where you can enter company-specific settings for the certificate profile. Specify which certificates can be used when the current certificate profile is called in the Commerce channels. Add as many certificates as you require, and set priorities for the certificates. If a certificate that has a higher priority isn't available, the next certificate will be used, based on priority. For more information, see [Workflow: Searching certificates in the Commerce runtime](#workflow-searching-certificates-in-the-commerce-runtime).
 
     > [!NOTE]
-    > The **Priority** field is automatically set. A value of **1** represents the highest priority. When a new line is added on the **Certificate profile settings** page, its priority is set to a number that is one more than the priority of the previous line. To change the priority of a specific line, select the line, and then select either **Move up** to increase the priority or **Move down** to decrease the priority.
+    > The **Priority** field is automatically set. A value of **1** represents the highest priority. When a new line is added on the **Certificate profile settings** page, its priority is set to a number that is one more than the priority of the previous line. To change the priority of a specific line, select the line, and then select either **Move up** to increase the priority, or **Move down** to decrease the priority.
 
-1. When you add a new line to the **Certificate profile settings** page, set the following fields:
+1. When you add a new line to the **Certificate profile settings** page, set values for the following fields:
 
     - **Location type** – Select the location where the certificate is stored. This field has two possible values: **Local certificate** and **Key Vault**.
     - **Key Vault certificate** – This field is required if you set the **Location type** field to **Key Vault**. Use it to specify a Key Vault certificate secret.
@@ -105,12 +106,12 @@ Follow these steps to configure a certificate profile:
         > [!NOTE]
         > The default store name and store location are added to simplify the process of searching local certificates in the Commerce runtime. X509StoreProvider has a list of folders where certificates are stored. If the default store name and the default store location aren't specified, X509StoreProvider tries to find a certificate in the other folders on its list. For more information about available values for the store name and store location, see [StoreName Enum](/dotnet/api/system.security.cryptography.x509certificates.storename) and [StoreLocation Enum](//dotnet/api/system.security.cryptography.x509certificates.storelocation).
 
-    - **Thumbprint** – This field is required and available only if you set the **Location type** field to **Local certificate**. Use it to specify the certificate thumbprint.
+    - **Thumbprint** – This field is required and only available if you set the **Location type** field to **Local certificate**. Use it to specify the certificate thumbprint.
  
         > [!IMPORTANT]
-        > You must make sure that the user that runs the application that needs to use the local certificate (e.g., Modern POS in the Offline mode) has at least a Read-only access to the private key of the certificate.
+        > You must ensure that the user that runs the application that needs to use the local certificate (for example, Modern POS in the offline mode) has at least read-only access to the private key of the certificate.
 
-    - **Comments** – This field is optional and lets users enter notes.
+    - **Comments** – This field is optional and allows users to enter notes.
 
 ## Workflow: Searching certificates in the Commerce runtime
 
@@ -138,7 +139,6 @@ If a new version of the certificate is introduced, but it can't be updated in al
 1. Find a certificate profile and the line that should be updated, and then select **Settings**.
 1. Add a line, and specify settings that are related to the latest version of the certificate.
 1. Increase the **Priority** value of the new line. Use the **Move up** button to move the line so that it's above the line for the previous version of the same certificate.
-
 > [!NOTE]
 > In the Commerce runtime, the new version of the certificate will be called first. If the certificate hasn't yet been updated in a specific store or on a specific terminal, the previous version will be called.
 
