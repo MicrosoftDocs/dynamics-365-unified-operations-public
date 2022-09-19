@@ -17,7 +17,6 @@ ms.search.validFrom: 2019-01-31
 # Shipping discount
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes the shipping discount capabilities in Microsoft Dynamics 365 Commerce and the setup that is required to use them.
 

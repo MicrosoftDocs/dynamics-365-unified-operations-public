@@ -115,7 +115,7 @@ You may need to rotate the certificates used by your Dynamics 365 Finance + Oper
 
         ```powershell
         # If remoting, only execute
-        # .\Configure-PreReqs-AllVMs.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
+        # .\Configure-PreReqs-AllVMs.ps1 -MSIFilePath <share folder path of the MSIs> -ConfigurationFilePath .\ConfigTemplate.xml -ForcePushLBDScripts
 
         .\Configure-PreReqs.ps1
         ```

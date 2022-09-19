@@ -32,7 +32,7 @@ Finance and operations apps include conceptual overviews and other topics that a
 
 [![Help architecture.](./media/help-architecture.png)](./media/help-architecture.png)
 
-The in-product Help system pulls articles from learn.microsoft.com and other connected websites. It also pulls in task guides that are stored in Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS).
+The in-product Help system pulls articles from Microsoft Learn and other connected websites. It also pulls in task guides that are stored in Business process modeler (BPM) in Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Adding task guides
 
