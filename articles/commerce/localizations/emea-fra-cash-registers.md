@@ -73,7 +73,7 @@ The following is a high-level end-to-end process flow for France:
 1. When any of the audit events that must be digitally signed occurs, the above steps, except for the receipt, are repeated for the audit event. The signature of the audit event is saved in the Channel DB in a fiscal transaction that is linked to the audit event.
 1. When the shift is closed, a shift closing audit event is registered and also digitally signed. The Z-report is printed on the receipt printer.
 1. HQ downloads the transaction and audit event data together with fiscal transactions from CSU via Commerce Data Exchange (CDX). The data is stored in the HQ DB throughout the period of life of your production environment.
-1. As part of the fiscal period closing procedure, a fiscal archive is produced from the HQ DB. It includes sales totals for a store for the fiscal period, and details and signatures of all shifts, sales transactions, and audit events during the fiscal period. You can find more details about fiscal archives in [Fiscal archive for France](./emea-fra-fiscal-archive.md).
+1. As part of the fiscal period closing procedure, a period grand total journal is processed in HQ and a fiscal archive is produced from the HQ DB. The archive includes sales totals for a store for the fiscal period, and details and signatures of all shifts, sales transactions, and audit events during the fiscal period. The period grand total journal and fiscal archive are digitally signed. You can find more details about period grand total journals in [Period grand total journal](#period-grand-total-journal) and about fiscal archives in [Fiscal archive for France](./emea-fra-fiscal-archive.md).
 
 ## France-specific POS features
 
@@ -231,7 +231,7 @@ Receipts for France can include additional information that was implemented by u
 
 ### Restricting the duration of shifts
 
-There is an option to enforce daily shift closing in POS. A shift can't last longer than the time that is specified in the **Shift closing time** field. Several minutes before that time, the operator will start to receive warnings that the shift must be closed. The number of minutes is determined by the value of the **Shift closing interval (minutes)** field.
+There is an option to enforce daily shift closing in POS. A shift can't last longer than the time that is specified in the **Shift closing time** field (note that the time of the machine that POS is installed on is used). Several minutes before that time, the operator will start to receive warnings that the shift must be closed. The number of minutes is determined by the value of the **Shift closing interval (minutes)** field. If the shift is closed within the warning interval, it will be possible to continue selling after the shift closing time. Otherwise, completing the sales transaction will be blocked, and the operator will have to either void or suspend the transaction, close the shift, open a new shift, and then recall and complete the transaction.
 
 ### X and Z reports
 
@@ -272,13 +272,15 @@ The exported Z report file is digitally signed, and the signature is contained i
 
 ### Period grand total journal
 
-Period grand total journals summarize sales totals per store and fiscal period (for example, per month). In addition, an annual journal summarizes sales totals per store and fiscal year.
+Period grand total journals summarize sales totals per store and fiscal period (for example, per month) and should be used as part of the fiscal period closing procedure. In addition, an annual journal summarizes sales totals per store and fiscal year and should be used as part of the year closing procedure.
+    
+Before creating a period grand total journal, you must make sure that retail sales data for the store and the fiscal period is uploaded to Commerce HQ and processed in retail statements.
 
-Period grand total journals are maintained on the **Period grand total journal** page. To create a new journal, you must specify a store. If previous journals exist for the store, the next fiscal period after the last closed journal for the store is automatically used as the new journal period. If previous journals do not exist, you can specify the end date of the journal. In this case, the fiscal period that includes the specified date is used as the journal period.
+Period grand total journals are maintained on the **Period grand total journal** page:
 
-The journal can then be calculated. Shifts that were closed during the journal period are selected, and totals are calculated for those shifts. You can view the journal's tax totals per sales tax code. You can also view the shifts that are included in the journal.
-
-After the journal is calculated, it can be closed. A closed journal can't be modified, and another journal can't be created for a previous fiscal period, the same period, or an intersecting period. However, the last closed journal for a store can be canceled. In that case, another journal can be created for the same store and fiscal period.
+1. To create a new journal, you must specify a store. If previous journals exist for the store, the next fiscal period after the last closed journal for the store is automatically used as the new journal period. If previous journals do not exist, you can specify the end date of the journal. In this case, the fiscal period that includes the specified date is used as the journal period.
+1. The journal can then be calculated. Shifts that were closed during the journal period are selected, and totals are calculated for those shifts. You can view the journal's tax totals per sales tax code and the shifts that are included in the journal. You can also use **Functions > Clear journal** to clear the calculation results and return the journal back to the **New** status.
+1. After the journal is calculated, it can be closed. A closed journal can't be modified, and another journal can't be created for a previous fiscal period, the same period, or an intersecting period. However, the last closed journal for a store can be canceled. In that case, another journal can be created for the same store and fiscal period. 
 
 A closed journal is digitally signed. The data that is signed for a closed journal is a text string that consists of the following data fields:
 
@@ -293,6 +295,11 @@ A closed journal is digitally signed. The data that is signed for a closed journ
 
 You can view the journal signature, together with the journal data that was used to generate it, on the **Signature details** tab of the **Period grand total journal** page in Commerce headquarters.
 
+You need to create and close period grand total journals for all stores each fiscal period.  Journal maintenance can be automated by using the following two periodic procedures that can be run in batch:
+
+- **Create period grand total journals**. This procedure creates and optionally calculates journals for selected stores for a given period. It’s required to select a specific period for the procedure, thus you would need to manually create a batch job for each period, and it is not possible to use recurrence. The procedure does not close the journals, because it is expected that each journal is validated manually before closing it.
+- **Export archive**. This procedure exports archives for selected stores for a given period. It’s required to select a specific period for the procedure, and it is not possible to use recurrence.
+    
 A period grand total journal can also be marked as **Annual** when it's created. An annual journal summarizes period grand total journals for the fiscal periods of a fiscal year. An annual journal can be created for a fiscal year only if a journal for the last fiscal period of the fiscal year has been created, calculated, and closed. However, journals don't have to exist for *all* fiscal periods of the fiscal year. For example, if a new store is opened in the middle of the year, the first journal will correspond to the fiscal period that the store is opened during. In this case, the first annual journal will summarize journals for fiscal periods from the fiscal period that the store is opened during to the last fiscal period of the fiscal year.
 
 ### Fiscal archive
@@ -318,7 +325,7 @@ You must also specify the following settings for France. Note that you must run 
 1. [Set up POS functionality profiles](#set-up-pos-functionality-profiles) to enable features and options required for France.
 1. [Configure custom fields](#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts) and [receipt formats](#configure-receipt-formats) to comply with the local regulatory requirements.
 1. [Configure the fiscal registration functionality](#set-up-fiscal-registration) for France to enable digital signing of sales transactions and audit events.
-1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the POS and HQ sides.
+1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the Commerce channel and HQ sides.
 1. [Specify Electronic reporting formats](#configure-the-z-report-and-archive-export-formats) that should be used to export Z-reports and fiscal archives from HQ.
 1. [Reinitialize Commerce components](#reinitialize-commerce-components) to enable France-specific audit events and transmission of France-specific data from POS to HQ.
 1. [Configure channel components](#configure-channel-components) to enable France-specific extensions of the components.
@@ -500,6 +507,7 @@ Finally, on the **Commerce parameters** page (**Retail and Commerce \> Headquart
 - **Certificate** – Select a certificate that is stored in Key Vault.
 - **Hash function** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA256**.
 - **Encoding** – Specify the encoding of the signed data, such as **UTF-8**.
+- You can also specify a number sequence to be used for automatic numbering of period grand total journals. On the **Number sequences** tab, select a receord with **Reference** = **Period grand total journal** and select a number sequence code in it.
 
 > [!NOTE]
 > The following hash functions aren't acceptable: CRC16, CRC32, SHA-1, and MD5. Commerce supports only the SHA256, SHA384, and SHA512 hash functions. If you want to use a different hash function, you must implement a customization.
@@ -779,11 +787,12 @@ Follow these steps to validate a digitally signed audit event:
 Execute the following scenario in HQ:
 
 1. Run the P-job to download retail sales data to HQ.
+1. Create and post all retail statements for the fiscal period.
 1. Open the **Period grand total journal** page.
 1. Create a new journal.
 1. Specify the **Journal** number, if it's not set automatically.
 1. Select the **Store number**.
-1. If this is the first journal for the selected store, you must select the **To date**. You can select any date from the current fiscal period, and the **From date** and **To date** will be populated automatically as the first and the last day, correspondingly, of the fiscal period that the selected date belongs to. Otherwise, if this is not the first journal for the store, the **From date** and the **To date** will be populated automatically as the first and the last day, correspondingly, of the fiscal period that is next to the latest fiscal period that a closed journal exists for.
+1. If this is the first journal for the selected store, you must select the **To date**. You can select any date from a fiscal period, and the **From date** and **To date** will be populated automatically as the first and the last day, correspondingly, of the fiscal period that the selected date belongs to. Otherwise, if this is not the first journal for the store, the **From date** and the **To date** will be populated automatically as the first and the last day, correspondingly, of the fiscal period that is next to the latest fiscal period that a closed journal exists for.
 1. Click **Functions > Calculate journal**. The **Status** of the journal should change to **Calculated**.
 1. Click **Shifts** and verify that proper shifts are included in the journal, that is, all shifts that were closed during the period of the journal. Close the **Shifts** page.
 1. Verify the journal totals on the **Amounts** tab. Check the **Total sales amount**, **Total returns amount**, and **Grand total** fields. Check that the **Perpetual grand total** and **Perpetual grand total (absolute value)** amounts are equal to the ones of the last closed shift included in the journal.
