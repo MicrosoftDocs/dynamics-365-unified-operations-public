@@ -52,21 +52,21 @@ During the label generation process the system can replace field and method name
 1. Go to **Warehouse management \> Setup \> Document routing \>Label layout**.
 1. Create a record that has the following settings:
     - **Label layout type:** *Container label*
-    - - **Label layout ID:** *Container*
+    - **Label layout ID:** *Container*
     - **Description:** *Container ID barcode*
     - **Label layout data source ID:** - Leave blank (only container data will be used)
 1. Copy from the below *ZPL container label example* and insert the text into the **Printer text Layout**
     ```ZPL container label example
     CT~~CD,~CC^~CT~
-    ^XA~TA000~JSN^LT0^MNW^MTT^PON^PMN^LH0,0^JMA^PR4,4~SD15^JUS^LRN^CI0^XZ
+    ^XA~TA000~JSN^LT0^MNW^MTT^PON^PMN^LH0,0^JMA^PR8,8~SD15^JUS^LRN^CI0^XZ
     ^XA
     ^MMT
-    ^PW609
-    ^LL0406
+    ^PW812
+    ^LL0609
     ^LS0
-    ^BY3,3,219^FT148,304^BCN,,Y,N
+    ^BY5,3,369^FT656,137^BCI,,Y,N
     ^FD>;$WHSContainerTable.ContainerId$^FS
-    ^FT233,53^A0N,28,28^FH\^FDContainer ID^FS
+    ^FT513,525^A0I,39,38^FH\^FDContainer ID^FS
     ^PQ1,0,1,Y^XZ
     ```
     > [!NOTE]
@@ -74,10 +74,10 @@ During the label generation process the system can replace field and method name
 1. Close the page
 
 > [!NOTE]
-> In the above label layout only the *Container ID* ($WHSContainerTable.ContainerId$) barcode will get printed, but in case you want to include additional related data information to a label, like for example the delivery name related to a shipment, you can create a **Label layout data source** (**Warehouse > Setup > Document routing > Label layout data source**) including a join to the *Shipment* table.
-> In the **Label layout data source** select *New** in the *Action Pane* and specify a **Label layout data source ID** **Description**, and **Label layout type**.
+> In the above label layout only the *Container ID* ($WHSContainerTable.ContainerId$) barcode will get printed, but in case you want to include additional related data information to a label, like for example the delivery name related to a shipment, you can create a **Label layout data source** (*Warehouse > Setup > Document routing > Label layout data source*) including a join to the *Shipment* table.
+> In the **Label layout data source** select **New** in the *Action Pane* and specify a **Label layout data source ID**, **Description**, and **Label layout type**.
 > Select **Edit query** in the *Action Pane*. Now use the *Joins* option to add the needed table(s).
-> Please do note, that in case you remove tables from a existing query you might risk removing field/method names already used in existing label layouts.
+> Note, that in case you remove tables from a existing query you might risk removing field/method names already used in existing label layouts.
 > In the **Label layout** you can now select the created **Label layout data source ID**
 
 ### Create a container label rounting
@@ -85,13 +85,13 @@ To define which container label layouts to use and where to print you need to de
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Container label routing**.
 1. Create a record that has the following settings:
-    - **Sequence number:** *1* - The sequence number must be unique and the evaluated will happen ascending
-    - **Container layout routing:** *Container packing*
-    - **Description:** *Used for container labels printed at Pack location*
-    - **Warehouse:** *62*
-    - **Location:** *Pack* - In this example the used printer will physically be placed at the *Pack* location.
->[!NOTE]
-> When printing a container label from the Warehouse Management mobile app the current user warehouse, location, and work user ID gets passed as possible filter values for the selection of printer and layout. To use additional selection criteria you can select the **Run query** option and use the **Edit query** on the Action Pane.
+    - **Sequence number:** *1* - The sequence number must be unique and it will get evaluated in ascending order
+    - **Name:** *Container packing*
+    - **Warehouse:** *62* - Warehouse where printing will happen
+    - **Location:** *Pack* - In this example the used printer will physically be placed at the *Pack* location
+> [!NOTE]
+> When printing a container label from the Warehouse Management mobile app the current user warehouse, location, worker, and user ID gets passed as possible filter values for the selection of printer and layout.
+> To use additional selection criteria you can select the **Run query** option and use the **Edit query** on the Action Pane.
 1. Select **New** in the *Container label rounting printer* section and provide:
     - **Name:**  Select an appropriate ZPL printer. You can read more about how to install a printer here: [Install the Document Routing Agent to enable network printing](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md)
     - **Label layout ID:** *Container label*
