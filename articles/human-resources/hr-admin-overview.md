@@ -108,7 +108,7 @@ This article provides a list of the help topics and other resources to set up, m
 
 ### eLearning courses
 
-For online courses and training, check out [Dynamics 365 Human Resources learning paths](/learn/browse/?products=dynamics-human-resources&resource_type=learning%20path).
+For online courses and training, check out [Dynamics 365 Human Resources learning paths](/training/browse/?products=dynamics-human-resources&resource_type=learning%20path).
 
 ### Videos
 
