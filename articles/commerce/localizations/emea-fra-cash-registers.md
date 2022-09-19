@@ -567,20 +567,20 @@ To enable the digital signature in offline mode, you must follow these steps aft
 
 This section describes basic scenarios that you can execute to validate that your environment is configured properly to comply with the cash register requirements for France. The following scenarios can be executed in a series, so that they constitute a comprehensive end-to-end compliance checklist. It is recommended that you start the validation with a clean database so that you can easily validate sequential numbers and perpetual amounts.
 
-1. [Preparation](#preparation)
-1. [Basic sale](#basic-sale)
-1. [Basic return](#basic-return)
-1. [Issue gift card](#issue-gift-card)
-1. [Customer order](#customer-order)
-1. [Hybrid customer order](#hybrid-customer-order)
-1. [Sale in offline mode](#sale-in-offline-mode)
-1. [Non-sale transaction (expense)](#non-sale-transaction-(expense))
-1. [Print receipt copy](#print-receipt-copy)
-1. [Audit events](#audit-events)
-1. [Close shift and print Z-report](#close-shift-and-print-Z--report)
-1. [Shift duration restriction](#shift-duration-restriction)
-1. [Process period grand total journal](#process-period-grand-total-journal)
-1. [Export and verify fiscal archive](#export-and-verify-fiscal-archive)
+1. [Preparation](#1-preparation)
+1. [Basic sale](#2-basic-sale)
+1. [Basic return](#3-basic-return)
+1. [Issue gift card](#4-issue-gift-card)
+1. [Customer order](#5-customer-order)
+1. [Hybrid customer order](#6-hybrid-customer-order)
+1. [Sale in offline mode](#7-sale-in-offline-mode)
+1. [Non-sale transaction (expense)](#8-non-sale-transaction-expense)
+1. [Print receipt copy](#9-print-receipt-copy)
+1. [Audit events](#10-audit-events)
+1. [Close shift and print Z-report](#11-close-shift-and-print-Z-report)
+1. [Shift duration restriction](#12-shift-duration-restriction)
+1. [Process period grand total journal](#13-process-period-grand-total-journal)
+1. [Export and verify fiscal archive](#14-export-and-verify-fiscal-archive)
 
 #### How to validate a sales transaction
 
