@@ -514,7 +514,12 @@ Finally, on the **Commerce parameters** page (**Retail and Commerce \> Headquart
 
 ### Configure the Z report and archive export formats
 
-You can download the ER configurations for the Z report and archive from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import electronic reporting configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-import-ger-configurations.md). You must download the following versions, or later versions, of the configurations:
+Depending on your purposes, you can download the Electronic Reporting (ER) configurations for the Z report and archive from the following sources:
+
+- If you do not need to customize ER configurations provided by Microsoft or create your own ER configurations, you can import the configurations provided by Microsoft from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import a configuration from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Alternatively, you can [download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+- If you need to customize ER configurations provided by Microsoft or create your own ER configurations, you need to provision a Regulatory Configuration Services (RCS) environment. For more information about working with RCS, see [Import ER configurations from RCS](../../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md).
+
+You must download the following versions, or later versions, of the configurations:
 
 - **Retail channel data.version.2** data model
 - **Archiving DMM.version.2.3** data model mapping
