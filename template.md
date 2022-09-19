@@ -284,5 +284,3 @@ It's important to use the following alert styles so they render with the proper 
 
 And they'll render like this:
 ![Alert styles.](../images/alerts.png)
-
-
