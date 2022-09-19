@@ -206,8 +206,10 @@
           href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/supply-chain
     - name: Troubleshooting and FAQs
       href: supply-chain-management-troubleshooting.md
-    - name: Globalization
+    - name: Globalization Studio
       items:
+      - name: Globalization Studio overview
+        href: ../finance/localizations/globalization-studio-overview.md?context=/dynamics365/context/supply-chai
       - name: Globalization resources
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?context=/dynamics365/context/supply-chain
       - name: Globalization services
