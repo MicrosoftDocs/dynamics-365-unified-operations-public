@@ -1,6 +1,6 @@
 ---
 title: API, class, and table resources
-description: This article describes where to find API documentation in Visual Studio and in Microsoft Learn.
+description: This article describes where to find API documentation in Visual Studio and Microsoft Learn.
 author: josaw1
 ms.date: 07/23/2019
 audience: Developer
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes where to find API documentation in Visual Studio and in Microsoft Learn.
+This article describes where to find API documentation in Visual Studio and Microsoft Learn.
 
 ## Application classes and tables
 
