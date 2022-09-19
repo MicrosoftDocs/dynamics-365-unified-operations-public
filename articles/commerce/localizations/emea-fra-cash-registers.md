@@ -577,7 +577,7 @@ This section describes basic scenarios that you can execute to validate that you
 1. [Non-sale transaction (expense)](#8-non-sale-transaction-expense)
 1. [Print receipt copy](#9-print-receipt-copy)
 1. [Audit events](#10-audit-events)
-1. [Close shift and print Z-report](#11-close-shift-and-print-Z-report)
+1. [Close shift and print Z-report](#11-close-shift-and-print-z-report)
 1. [Shift duration restriction](#12-shift-duration-restriction)
 1. [Process period grand total journal](#13-process-period-grand-total-journal)
 1. [Export and verify fiscal archive](#14-export-and-verify-fiscal-archive)
