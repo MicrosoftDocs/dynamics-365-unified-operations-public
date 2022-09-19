@@ -28,7 +28,7 @@ The Globalization Studio addresses these challenges by providing the following f
 
 Together, these features let you operate the solution in over 200 countries and regions, and help you meet multiple requirements for tax compliance and local business practices. 
 
-![Globalization Studio breakdown.](media/globalization-studio-update.png)
+![Globalization Studio breakdown.](media/globalization-studio-breakdown.png)
 
 The Globalization Studio consists of the following tools and services:
 
