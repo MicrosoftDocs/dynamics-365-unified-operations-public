@@ -2,7 +2,7 @@
 title: User-defined certificate profiles for retail stores
 description: This article provides an overview about how certificates are used in retail stores.
 author: josaw1
-ms.date: 08/25/2022
+ms.date: 09/19/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
