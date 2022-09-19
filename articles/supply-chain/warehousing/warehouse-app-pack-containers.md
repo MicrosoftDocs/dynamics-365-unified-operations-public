@@ -110,13 +110,13 @@ You must set up the **Container packing policy** and **Packing profile ID** for 
 3.	Select worker *Julia Funderburk* in the list.
 4.	Make the following settings for the worker in the **Profile** section:
     - **Container packing policy** - Select *WH62Close* which will move containers to the *Baydoor* location when closing a container.
-- **Packing profile ID** - Select * WH62* which will not create warehouse work after the closing of a container.
+    - **Packing profile ID** - Select *WH62* which will not create warehouse work after the closing of a container.
 5.	Make the following settings for the worker in the **Default packing station** section:
--	**Site** - Select *6*, released to the warehouse we are going to use
--	**Warehouse** - Select *62*, a warehouse already enabled for the packing process in the demo data.
--	**Location** - Select *Pack*. Note that the Warehouse Management mobile app will always prompt for confirmation for the assigned value, which can get overwritten. In case you do not provide a default packing location value the warehouse worker must always scan or look up the packing location in the app, which can get achieved by using the [Data inquiry](warehouse-app-data-inquiry.md) capability.
+    -	**Site** - Select *6*, released to the warehouse we are going to use
+    -	**Warehouse** - Select *62*, a warehouse already enabled for the packing process in the demo data.
+    -	**Location** - Select *Pack*. Note that the Warehouse Management mobile app will always prompt for confirmation for the assigned value, which can get overwritten. In case you do not provide a default packing location value the warehouse worker must always scan or look up the packing location in the app, which can get achieved by using the [Data inquiry](warehouse-app-data-inquiry.md) capability.
 > [!NOTE]
-> To automatically print container labels when creating a new container record, please go to: [**Container label printing**](configure-container-label-printing.md).
+> You can automatically print container labels when creating a new container record, go to: [**Container label printing**](configure-container-label-printing.md) to read more.
 
 ### Create a new *Pack inventory into containers* mobile device menu item
 You must create a new mobile device menu item to pack inventory into containers via the Warehouse Management mobile app.
@@ -125,9 +125,9 @@ You must create a new mobile device menu item to pack inventory into containers 
 3.	Make the following settings for the new menu item:
     - **Menu item name** - Enter *Packing* as the name for the new menu item
     - **Title** - Enter *Packing*, this will get displayed on the Warehouse app
-   - **Mode** - Select *Indirect*
-   - **Activity code** - Select *Pack inventory into containers*
-       4. Close the page
+    - **Mode** - Select *Indirect*
+    - **Activity code** - Select *Pack inventory into containers*
+4. Close the page
 
 ### Create a new *Container creation* mobile device menu item
 You must create a new mobile device menu item to pack inventory into containers via the Warehouse Management mobile app.
@@ -136,9 +136,9 @@ You must create a new mobile device menu item to pack inventory into containers 
 3.	Make the following settings for the new menu item:
     - **Menu item name** - Enter *Create container* as the name for the new menu item
     - **Title** - Enter *Create container*, this will get displayed on the Warehouse app
-   - **Mode** - Select *Indirect*
-   - **Activity code** - Select *Container creation*
-       4. Close the page
+    - **Mode** - Select *Indirect*
+    - **Activity code** - Select *Container creation*
+4. Close the page
 
 ### Create a new *Container closing* mobile device menu item
 You must create a new mobile device menu item to pack inventory into containers via the Warehouse Management mobile app.
@@ -147,9 +147,9 @@ You must create a new mobile device menu item to pack inventory into containers 
 3.	Make the following settings for the new menu item:
     - **Menu item name** - Enter *Close container* as the name for the new menu item
     - **Title** - Enter *Close container*, this will get displayed on the Warehouse app
-   - **Mode** - Select *Indirect*
-   - **Activity code** - Select *Container closing*
-       4. Close the page
+    - **Mode** - Select *Indirect*
+    - **Activity code** - Select *Container closing*
+4. Close the page
 
 ### Add the three new mobile device menu items to the menu
 With now having the mobile device menu items, we are ready to get it added to the **Mobile device menu**. This is required to use it for the container packing process.
@@ -634,7 +634,7 @@ In the following table you can see which processes are supported when using the 
 |Identification via GS1 barcode scanning                      | No        |                                                                                                                                       |
 |Identification item via barcode setup                        | (Yes)     | But quantity and unit (piece-by-piece) scanning is not supported                                                                      |
 |New container                                                | Yes       | Both via **Container creation** mobile device menu item incl. container type capturing and number sequence defaulting when having *Container ID mode* as **Auto**. But as well container ID creation when using the *Autocreate container at container close* process |
-|Print container label                                        | Yes       | Both automatically at **Container creation** process and as manual print via **Print container label** mobile device menu item                                  |
+|Print container label                                        | Yes       | Both automatically at **Container creation** process and as manual print via **Print container label** mobile device menu item. You can read more about the required setup [here](configure-container-label-printing.md).                                  |
 |Close container                                              | Yes       | Via **Container closing** mobile device menu item incl. capturing of weight                                                           |
 |Release container                                            | No        | Only via container closing policy (Not as menu option) - User cannot reply yes or no as optional                                      |
 |Reopen container                                             | No        |                                                                                                                                       |

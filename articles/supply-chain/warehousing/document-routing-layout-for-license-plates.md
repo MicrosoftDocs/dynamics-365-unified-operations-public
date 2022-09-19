@@ -28,12 +28,13 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../includes/banner.md)]
 
-
-The document routing layout defines the layout of license plate labels, and the data that is printed on them. You configure the printing trigger points when you set up mobile device menu items and work templates.
+This article describes the layout for **License plate labels**, but as well some general use of Zebra Programming Language (ZPL).
+ 
+The **Document routing layouts** defines the layouts of license plate labels, and the data that is printed on them. You configure the printing trigger points when you set up mobile device menu items and work templates.
 
 In a typical scenario, warehouse receiving clerks print license plate labels immediately after they record the contents of pallets that arrive in the receiving area. The physical labels are applied to the pallets. They can then be used for validation as part of the put-away process that follows and future outbound picking operations.
 
-You can print highly complex labels, provided that the printing device can interpret the text that is sent to it. For example, a Zebra Programming Language (ZPL) layout that includes a bar code might resemble the following example.
+You can print highly complex labels, provided that the printing device can interpret the text that is sent to it. For example, a ZPL layout that includes a bar code might resemble the following example.
 
 ```dos
 ^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD15^JUS^LRN^CI0^XZ

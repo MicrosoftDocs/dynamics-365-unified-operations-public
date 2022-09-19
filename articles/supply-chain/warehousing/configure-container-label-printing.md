@@ -118,7 +118,7 @@ To manually print a container label you must create a new mobile device menu ite
 4. Close the page
 
 ### Add the new mobile device menu item to the menu
-With now having the mobile device menu item created, we are ready to get it added to the **Mobile device menu**. In this example we will add it to the existing *Outbound** mobile device menu.
+With now having the mobile device menu item created, we are ready to get it added to the **Mobile device menu**. In this example we will add it to the existing *Outbound* mobile device menu.
 1. Open **Warehouse management > Setup > Mobile device > Mobile device menu**.
 1. Select **Edit**.
 1. Select **Outbound** menu in the list
@@ -130,9 +130,9 @@ With now having the mobile device menu item created, we are ready to get it adde
 To try out a full scenario please follow the [Pack containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md) making sure the above setup gets included.
 
 When selecting the **Print container label** mobile device menu item from the *Outbound* menu the application automatically applies the **User ID** and the **Warehouse** values.
-In case you would like to record a *Location* you can edit the details. The *Location* value can as well get auto assigned in case of calling the **Print container label** from the **Pack inventory into containers** menu item via a [detour]( warehouse-app-detours.md).
+In case you would like to record a *Location* you can edit the details. The *Location* value can as well get auto assigned when opening the **Print container label** from the **Pack inventory into containers** menu item via a [detour]( warehouse-app-detours.md).
 > [!NOTE]
-> You can use the [**Query data using Warehouse Management mobile app detours**](warehouse-app-data-inquiry.md) capability to look up a container ID instead of entering a value.
+> You can use the [**Query data using Warehouse Management mobile app detours**](warehouse-app-data-inquiry.md) capability to look up a container ID instead of entering a value manually.
 
 
 ## Additional resources
