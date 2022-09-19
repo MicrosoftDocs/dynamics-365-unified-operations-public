@@ -1386,8 +1386,10 @@
         href: set-up-rfm-analysis.md
       - name: Set up Microsoft Clarity in Dynamics 36 Commerce
         href: set-up-clarity.md
-    - name: Globalization
+    - name: Globalization Studio
       items:
+      - name: Globalization Studio overview
+        href: ../finance/localizations/globalization-studio-overview.md?context=/dynamics365/context/commerce
       - name: Fiscal integration overview for Commerce channel
         href: localizations/fiscal-integration-for-retail-channel.md
       - name: Set up fiscal integration for Commerce channel
