@@ -565,7 +565,7 @@ To enable the digital signature in offline mode, you must follow these steps aft
 
 ## Compliance checklist
 
-This section describes basic scenarios that you can execute to validate that your environment is configured properly to comply with the cash register requirements for France. The scenarios can be executed in a series, so that they constitute a comprehensive end-to-end compliance checklist. It is recommended that you start the validation with a clean database so that you can easily validate sequential numbers and perpetual amounts.
+This section describes basic scenarios that you can execute to validate that your environment is configured properly to comply with the cash register requirements for France. The following scenarios can be executed in a series, so that they constitute a comprehensive end-to-end compliance checklist. It is recommended that you start the validation with a clean database so that you can easily validate sequential numbers and perpetual amounts.
 
 1. Preparation
 1. Basic sale
@@ -573,7 +573,7 @@ This section describes basic scenarios that you can execute to validate that you
 1. Issue gift card
 1. Customer order
 1. Hybrid customer order
-1. Sale in Offline mode
+1. Sale in offline mode
 1. Non-sale transaction (expense)
 1. Print receipt copy
 1. Audit events
@@ -584,86 +584,103 @@ This section describes basic scenarios that you can execute to validate that you
 
 ### How to validate a sales transaction
 
-Follow these steps to validate a digitally signed sales transaction after it is completed:
+To validate a digitally signed sales transaction after it is completed, follow these steps.
 
 1. In POS:
     
-    1. Check that all [France-specific fields](#configure-receipt-formats) of the receipt, except for the fields related to receipt copy, are printed and have correct values. To check some of the fields, you need to follow the below steps in HQ. 
+    - Check that all [France-specific fields](#configure-receipt-formats) of the receipt, except for the fields related to receipt copy, are printed and have correct values. To check some of the fields, you need to follow the steps below in Commerce headquarters. 
     
-1. In HQ:
+1. In Commerce headquarters:
     
-    1. Run the P-job to download retail transaction data to HQ.
+    1. Run the P-job to download retail transaction data to headquarters.
     1. Open the **Store transactions** page and select the recently completed transaction.
-    1. Expand the **Fiscal transactions** fast-tab and check that there is a fiscal transaction with the successful registration status.
-    1. The text in the **Fiscal register response** field is in the JSON format and contains the digital signature of the transaction, the string that was used for digital signing of the transaction, the signed transaction sequential number, as well as the thumbprint of the certificate that is used for digital signing, the hash algorithm, and the version of the digital signing algorithm, which can later be used to verify the digital signature.
-    1. You can also click **Extended data** and view specific properties of the fiscal transaction, such as the signature, sequential number, certificate thumbprint, and hash algorithm identification.
-    1. Check that the signed transaction sequential number is equal to the sequential number of the previous signed sales transaction on the same register, if any, plus 1. This sequential number should also be printed in the **Sequential number** field of the receipt. 
+    1. Expand the **Fiscal transactions** FastTab and check that there is a fiscal transaction with a successful registration status.
+    1. The text in the **Fiscal register response** field is in the JSON format and contains the following: 
+        - Digital signature of the transaction
+        - The string that was used for digital signing of the transaction
+        - The signed transaction sequential number
+        - The thumbprint of the certificate used for digital signing
+        - The hash algorithm
+        - The version of the digital signing algorithm, which can later be used to verify the digital signature.
+    1. You can also select **Extended data** and view specific properties of the fiscal transaction, such as the signature, sequential number, certificate thumbprint, and hash algorithm identification.
+    1. Check that the signed transaction sequential number is equal to the sequential number of the previous signed sales transaction on the same register (if any) plus 1. This sequential number should also be printed in the **Sequential number** field of the receipt. 
     1. Check the string that was used for [digital signing of the transaction](#digital-signing-of-sales-and-return-transactions). Validate the amounts of the transaction, the register number, and other data. Check the previous signature for the same register.
     1. Check that the **Digital signature** field of the receipt contains an extract from the digital signature of the transaction and consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
-    1. Note the sequential number of the signed transaction and its digital signature to use them for further validation of the next transaction.
+    1. Note the sequential number of the signed transaction and its digital signature to use for further validation of the next transaction.
 
 ### How to validate a shift
     
-Follow these steps to validate a digitally signed shift after it is closed:
+To validate a digitally signed shift after it is closed, follow these steps.
 
 1. In POS:
     
-    1. Check that all [France-specific fields](#x-and-z-reports) of the Z-report are printed and have correct values. To check some of the fields, you need to follow the below steps in HQ. 
+    1. Check that all [France-specific fields](#x-and-z-reports) of the Z-report are printed and have correct values. To check some of the fields, you need to follow the steps below in headquarters. 
     
-1. In HQ:
+1. In Commerce headquarters:
 
-    1. Run the P-job to download retail transaction data to HQ.
+    1. Run the P-job to download retail transaction data to headquarters.
     1. Open the **Shifts** page and select the recently closed shift.
-    1. Compare France-specific fields (that is, Total sales, Total returns, Grand total, Cumulative perpetual grand total, and Cumulative perpetual grand total (absolute value)) with those printed in the Z-report.
-    1. Click **Shift tax transactions** and compare the VAT amounts per tax rate with those printed in the Z-report. Close the **Shift tax transactions** page.
-    1. On the **Shifts** page, click **Audit events**. The audit event that was registered when the shift was closed should be displayed. The **Log string** field should contain the shift number.
-    1. Open the **Fiscal registration results** tab and check that there is a fiscal transaction with the successful registration status.
-    1. The text in the **Fiscal register response** field is in the JSON format and contains the digital signature of the shift, the string that was used for digital signing of the shift, the signed shift sequential number, as well as the thumbprint of the certificate that is used for digital signing, the hash algorithm, and the version of the digital signing algorithm, which can later be used to verify the digital signature.
-    1. Check that the signed shift sequential number is equal to the sequential number of the previous signed closed shift on the same register, if any, plus 1.
+    1. Compare France-specific fields (that is, **Total sales**, **Total returns**, **Grand total**, **Cumulative perpetual grand total**, and **Cumulative perpetual grand total (absolute value)**) with those printed in the Z-report.
+    1. Select **Shift tax transactions**, compare the VAT amounts per tax rate with those printed in the Z-report, and then close the **Shift tax transactions** page.
+    1. On the **Shifts** page, select **Audit events**. The audit event that was registered when the shift was closed should be displayed, and the **Log string** field should contain the shift number.
+    1. Open the **Fiscal registration results** FastTab and check that there's a fiscal transaction with the successful registration status.
+    1. The text in the **Fiscal register response** field is in the JSON format and contains the following:
+        - The digital signature of the shift
+        - The string that was used for digital signing of the shift
+        - The signed shift sequential number
+        - The thumbprint of the certificate that is used for digital signing
+        - The hash algorithm
+        - The version of the digital signing algorithm, which can later be used to verify the digital signature.
+    1. Check that the signed shift sequential number is equal to the sequential number of the previous signed closed shift on the same register (if any) plus 1.
     1. Check the string that was used for [digital signing of the shift](#digital-signing-of-closed-shifts). Validate the amounts of the shift and other data. Check the previous signature for the same register.
-    1. Note the sequential number of the signed shift and its digital signature to use them for further validation of the next shift.
+    1. Note the sequential number of the signed shift and its digital signature to use for further validation of the next shift.
     
 ### How to validate an audit event
     
-Follow these steps to validate a digitally signed audit event:
+To validate a digitally signed audit even, follow these steps:
 
-1. In HQ:
+1. In Commerce headquarters:
 
-    1. Run the P-job to download audit event data to HQ.
-    1. Open the **Audit events** page and select an audit event. You can use the **Store number**, **Register number**, **Event type**, **Date** and **Time** fields to find the event. The **Log string** field contains the description of the event.
-    1. Open the **Fiscal registration results** tab and check that there is a fiscal transaction with the successful registration status.
-    1. The text in the **Fiscal register response** field is in the JSON format and contains the digital signature of the event, the string that was used for digital signing of the event, the signed event sequential number, as well as the thumbprint of the certificate that is used for digital signing, the hash algorithm, and the version of the digital signing algorithm, which can later be used to verify the digital signature.
-    1. Check that the signed event sequential number is equal to the sequential number of the previous signed event of the same event sequence type on the same register, if any, plus 1.
+    1. Run the P-job to download audit event data to headquarters.
+    1. Open the **Audit events** page and select an audit event. You can use the **Store number**, **Register number**, **Event type**, **Date**, and **Time** fields to find the event. The **Log string** field contains the description of the event.
+    1. Open the **Fiscal registration results** FastTab and check that there is a fiscal transaction with a successful registration status.
+    1. The text in the **Fiscal register response** field is in the JSON format and contains the following:
+        - The digital signature of the event
+        - The string that was used for digital signing of the event
+        - The signed event sequential number
+        - The thumbprint of the certificate that is used for digital signing
+        - The hash algorithm
+        - The version of the digital signing algorithm, which can later be used to verify the digital signature.
+    1. Check that the signed event sequential number is equal to the sequential number of the previous signed event of the same event sequence type on the same register (if any) plus 1.
     
     > [!NOTE]
-    > Only the [France-specific](#registration-of-audit-events) audit events are signed. Three separate sequences of digitally signed audit events are maintained per register:
+    > Only the [France-specific](#registration-of-audit-events) audit events are signed. The following three separate sequences of digitally signed audit events are maintained per register. Audit events that are not digitally signed are excluded from these sequences.
     > - Sequence of **Shift closed** audit events that are registered when shifts are closed.
     > - Sequence of **Receipt copy printed** audit events that are registered when receipt copies are printed.
     > - Sequence of other signed audit events.
-    > Audit events that are not digitally signed are excluded from these sequences.
     
     1. Check the string that was used for [digital signing of the event](#digital-signing-of-events). Validate the predefined event code, description of the event, and other data. Check the previous signature of the event of the same event sequence type for the same register.
     1. Note the sequential number of the signed event and its digital signature to use them for further validation of the next event.
     
 ### 1. Preparation
 
-1. In HQ:
+1. In Commerce headquarters:
 
     1. [Set up Commerce for France](#set-up-commerce-for-france).
     1. Execute appropriate distribution jobs or the **9999** "All jobs" job.
 
 1. In POS:
     
-    1. Log in to POS and open a new shift.
-    1. Go to the **Settings page**.
-    1. Click the **View details** button in the **NF 525 certification** field group under the **France** section**.
-    1. In the **NF 525 certification** dialog, review the software name and version, as well as the certification category and the NF 525 certificate number.
+    1. Sign in to POS and open a new shift.
+    1. Go to the **Settings** page.
+    1. Select **View details** in the **NF 525 certification** field group under the **France** section**.
+    1. In the **NF 525 certification** dialog box, review the software name and version, as well as the certification category and the NF 525 certificate number.
     1. Go to the **Current transaction** page, add several items, and pay the exact amount.
-    1. Return to **Home** and click **Show journal**
-    1. On the **Transaction journal** page, select the previous sales transaction and return one item from it. Pay exact amount.
+    1. Return to **Home** and select **Show journal**
+    1. On the **Transaction journal** page, select the previous sales transaction and return one item from it. Pay the exact amount.
     1. Close the shift.
-    1. [Validate the transactions](#how-to-validate-a-sales-transaction) and note the sequential number of the last signed transaction (i.e., the return transaction) and its digital signature to use them for further validation of following scenarios.
-    1. [Validate the shift](#how-to-validate-a-shift) and note the sequential number of the signed shift, its digital signature, its cumulative perpetual grand total, and the cumulative perpetual grand total of absolute values of sales and returns to use them for further validation of following scenarios.
+    1. [Validate the transactions](#how-to-validate-a-sales-transaction) and note the sequential number of the last signed transaction (that is, the return transaction) and its digital signature to use them for further validation of the following scenarios.
+    1. [Validate the shift](#how-to-validate-a-shift) and note the sequential number of the signed shift, its digital signature, its cumulative perpetual grand total, and the cumulative perpetual grand total of absolute values of sales and returns to use them for further validation of the following scenarios.
     
 ### 2. Basic sale
 
