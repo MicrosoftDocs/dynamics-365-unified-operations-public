@@ -567,22 +567,22 @@ To enable the digital signature in offline mode, you must follow these steps aft
 
 This section describes basic scenarios that you can execute to validate that your environment is configured properly to comply with the cash register requirements for France. The following scenarios can be executed in a series, so that they constitute a comprehensive end-to-end compliance checklist. It is recommended that you start the validation with a clean database so that you can easily validate sequential numbers and perpetual amounts.
 
-1. Preparation
-1. Basic sale
-1. Basic return
-1. Issue gift card
-1. Customer order
-1. Hybrid customer order
-1. Sale in offline mode
-1. Non-sale transaction (expense)
-1. Print receipt copy
-1. Audit events
-1. Close shift and print Z-report
-1. Shift duration restriction
-1. Process period grand total journal
-1. Export and verify fiscal archive
+1. [Preparation](#preparation)
+1. [Basic sale](#basic-sale)
+1. [Basic return](#basic-return)
+1. [Issue gift card](#issue-gift-card)
+1. [Customer order](#customer-order)
+1. [Hybrid customer order](#hybrid-customer-order)
+1. [Sale in offline mode](#sale-in-offline-mode)
+1. [Non-sale transaction (expense)](#non-sale-transaction-(expense))
+1. [Print receipt copy](#print-receipt-copy)
+1. [Audit events](#audit-events)
+1. [Close shift and print Z-report](#close-shift-and-print-Z--report)
+1. [Shift duration restriction](#shift-duration-restriction)
+1. [Process period grand total journal](#process-period-grand-total-journal)
+1. [Export and verify fiscal archive](#export-and-verify-fiscal-archive)
 
-### How to validate a sales transaction
+#### How to validate a sales transaction
 
 To validate a digitally signed sales transaction after it is completed, follow these steps.
 
@@ -608,7 +608,7 @@ To validate a digitally signed sales transaction after it is completed, follow t
     1. Check that the **Digital signature** field of the receipt contains an extract from the digital signature of the transaction and consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
     1. Note the sequential number of the signed transaction and its digital signature to use for further validation of the next transaction.
 
-### How to validate a shift
+#### How to validate a shift
     
 To validate a digitally signed shift after it is closed, follow these steps.
 
@@ -635,7 +635,7 @@ To validate a digitally signed shift after it is closed, follow these steps.
     1. Check the string that was used for [digital signing of the shift](#digital-signing-of-closed-shifts). Validate the amounts of the shift and other data. Check the previous signature for the same register.
     1. Note the sequential number of the signed shift and its digital signature to use for further validation of the next shift.
     
-### How to validate an audit event
+#### How to validate an audit event
     
 To validate a digitally signed audit even, follow these steps:
 
