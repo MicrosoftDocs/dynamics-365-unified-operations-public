@@ -56,7 +56,7 @@ For information about Dynamics 365 Finance, see [Finance home page](../finance/i
 
 ### eLearning courses
 
-For online courses and training, check out [Dynamics 365 Human Resources](/learn/browse/?products=dynamics-human-resources&expanded=dynamics-365).
+For online courses and training, check out [Dynamics 365 Human Resources](/training/browse/?products=dynamics-human-resources&expanded=dynamics-365).
 
 ### Videos
 

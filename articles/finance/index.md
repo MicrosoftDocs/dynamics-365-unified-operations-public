@@ -83,6 +83,6 @@ For information about the capabilities for managing purchases, inventory, and ma
 
 ## eLearning courses
 
-For online courses and training, check out [Dynamics 365 Finance learning paths](/learn/browse/?products=dynamics-finance&resource_type=learning+path).
+For online courses and training, check out [Dynamics 365 Finance learning paths](/training/browse/?products=dynamics-finance&resource_type=learning+path).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
