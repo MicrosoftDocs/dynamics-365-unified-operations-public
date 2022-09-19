@@ -690,115 +690,115 @@ To validate a digitally signed audit even, follow these steps:
 
 ### 3. Basic return
 
-1. Log in to POS and open a new shift, if it's not open yet.
-1. On the **Current transaction** page, add an item and click **Return product**. Select or specify a reason code, if needed.
+1. Sign in to POS and open a new shift, if it's not open yet.
+1. On the **Current transaction** page, add an item and then select **Return product**. Select or specify a reason code, if needed.
 1. Pay the exact amount.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the amounts in the string that is used for digital signing of the transaction are negative, but the type of the transaction is still **Sales**. This is because for digital signing purposes, return transactions are considered regular sales transactions. Similarly, the **Transaction type** field of the receipt should read **Sales**.
 
 ### 4. Issue gift card
 
-1. Log in to POS and open a new shift, if it's not open yet.
-1. On the **Current transaction** page, click **Issue gift card** and specify the number of a new gift card and the amount to add to it.
+1. Sign in to POS and open a new shift, if it's not open yet.
+1. On the **Current transaction** page, select **Issue gift card** and then specify the number of a new gift card and the amount to add to it.
 1. Pay the exact amount.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is not digitally signed. No signature is printed in the receipt.
 1. In POS, on the **Current transaction** page, add several items.
-1. Click **Issue gift card** and specify the number of a new gift card and the amount to add to it.
+1. Select **Issue gift card** and specify the number of a new gift card and the amount to add to it.
 1. Pay the exact amount.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the gift card amount is excluded from the total amount of the sales transaction in both the receipt and the transaction data that was used to digitally sign it.
 
 ### 5. Customer order
 
-1. Log in to POS and open a new shift, if it's not open yet.
+1. Sign in to POS and open a new shift, if it's not open yet.
 1. On the **Current transaction** page, add several items.
 1. Add a customer to the transaction.
-1. Click **Create customer order**.
-1. Click **Pick up all**, select a store and date, and confirm the operation.
-1. Pay the exact amount, that is, the deposit.
+1. Select **Create customer order**.
+1. Select **Pick up all**, select a store and date, and then confirm the operation.
+1. Pay the exact amount (that is, the deposit).
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is not digitally signed. No signature is printed on the receipt.
-1. In POS, click **Recall order** and find the previously created order.
-1. Click **Pick up**, specify the pick-up quantities, and confirm the operation.
+1. In POS, select **Recall order** and find the previously created order.
+1. Select **Pick up**, specify the pick-up quantities, and then confirm the operation.
 1. Pay the exact amount.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Validate that the total amount of the sales transaction includes picked-up items only. The amount of the applied deposit is not excluded from the total amount.
 
 ### 6. Hybrid customer order
 
-1. Log in to POS and open a new shift, if it's not open yet.
+1. Sign in to POS and open a new shift, if it's not open yet.
 1. On the **Current transaction** page, add several items.
 1. Add a customer to the transaction.
-1. Click **Create customer order**.
-1. Click **Pick up all**, select a store and date, and confirm the operation.
-1. Add an item and click **Carry out selected**.
-1. Pay the exact amount, that is, the deposit plus the amount of the item that is marked as **Carry out**.
+1. Select **Create customer order**.
+1. Select **Pick up all**, select a store and date, and confirm the operation.
+1. Add an item and select **Carry out selected**.
+1. Pay the exact amount (that is, the deposit), plus the amount of the item that is marked as **Carry out**.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Validate that the receipt contains a digital signature, and the total amount of the sales transaction includes the carry-out item only.
-1. In POS, click **Recall order** and find the previously created order.
-1. Click **Pick up**, specify the pick-up quantities, and confirm the operation.
+1. In POS, select **Recall order** and find the previously created order.
+1. Select **Pick up**, specify the pick-up quantities, and confirm the operation.
 1. Pay the exact amount.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Validate that the total amount of the sales transaction includes picked-up items only. The amount of the applied deposit is not excluded from the total amount.
 
-### 7. Sale in Offline mode
+### 7. Sale in offline mode
 
-1. Log in to POS and open a new shift, if it's not open yet.
-1. Use the **Database connection status** operation to manually disconnect POS from the Commerce Scale Unit and switch POS to the Offline mode.
+1. Sign in to POS and open a new shift, if it's not open yet.
+1. Use the **Database connection status** operation to manually disconnect POS from the Commerce Scale Unit and switch POS to offline mode.
 1. On the **Current transaction** page, add several items and pay the exact amount.
-1. Use the **Database connection status** operation to manually connect POS to the Commerce Scale Unit and switch POS to the Online mode, and wait until the synchronization between the Offline DB and Channel DB is completed.
+1. Use the **Database connection status** operation to manually connect POS to the Commerce Scale Unit and switch POS to the online mode, and wait until the synchronization between the offline DB and channel DB is completed.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is digitally signed and the sequence of digital signatures is not broken.
 
 ### 8. Non-sale transaction (expense)
 
-1. Log in to POS and open a new shift, if it's not open yet.
+1. Sign in to POS and open a new shift, if it's not open yet.
 1. Execute the **Expense accounts** operation, select an expense account, specify the expense amount, and confirm the operation.
 1. Pay the exact amount.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is not digitally signed. No signature is printed on the receipt.
 
 ### 9. Print receipt copy
 
-1. Log in to POS and open a new shift, if it's not open yet.
+1. Sign in to POS and open a new shift, if it's not open yet.
 1. On the **Current transaction** page, add several items and pay the exact amount.
-1. Return to **Home**, click **Show journal**, and select the recently completed sales transaction.
-1. Click **Show receipt** and in the receipt preview click **Print > Print this**.
+1. Return to **Home**, select **Show journal**, and select the recently completed sales transaction.
+1. Select **Show receipt** and in the receipt preview, select **Print \> Print this**.
 1. Review the printed receipt copy. Note the **Copy** caption in the receipt. Check the data of the copy, such as the **Reprint number** (it should be equal to 1), **Reprint date**, **Reprint time**, and the extract from the digital signature of the copy.
 1. Close the receipt preview.
 1. [Validate the receipt copy audit event](#how-to-validate-an-audit-event). The audit event has the **Receipt copy printed** type. Check that the **Reprint digital signature** field of the receipt copy contains an extract from the digital signature of the audit event and consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
-1. In POS, on the **Transaction journal** page, select the recently completed sales transaction, click **Show receipt**, and in the receipt preview click **Print > Print this**, thus printing the second copy of the same receipt.
+1. In POS, on the **Transaction journal** page, select the recently completed sales transaction, select **Show receipt**, and in the receipt preview, select **Print \> Print this**. This action prints the second copy of the same receipt.
 1. Review the printed receipt copy. Check that **Reprint number** is now increased to 2.
 1. [Validate the receipt copy audit event](#how-to-validate-an-audit-event). The audit event has the **Receipt copy printed** type. Check that the signed event sequential number is equal to the sequential number of the previous receipt copy event plus 1. Check that the string that was used for [digital signing of the receipt copy event](#digital-signing-of-receipt-copies) contains the signature of the previous receipt copy event.
 
 ### 10. Audit events
     
-1. Log in to POS and open a new shift, if it's not open yet.
+1. Sign in to POS and open a new shift, if it's not open yet.
 1. On the **Current transaction** page, add several items.
-1. Select a transaction line and click **Void line**.
+1. Select a transaction line and select **Void line**.
 1. Pay the exact amount.
 1. Add several items to a new transaction.
-1. Click **Void transaction** and confirm the operation.
-1. [Validate the audit events](#how-to-validate-an-audit-event). The audit events have the **Item voided** and **Transaction voided** types, correspondingly.
+1. Select **Void transaction** and confirm the operation.
+1. [Validate the audit events](#how-to-validate-an-audit-event). The audit events have the **Item voided** and **Transaction voided** types, respectively.
 
 ### 11. Close shift and print Z-report
 
-1. Log in to POS and open a new shift, if it's not open yet.
+1. Sign in to POS and open a new shift, if it's not open yet.
 1. On the **Current transaction** page, add several items and pay the exact amount.
-1. Return to **Home** and click **Show journal**
+1. Return to **Home** and select **Show journal**
 1. On the **Transaction journal** page, select the previous sales transaction and return one item from it. Pay exact amount.
-1. Return to **Home** and click **Close shift**.
+1. Return to **Home** and select **Close shift**.
 1. [Validate the shift](#how-to-validate-a-shift).
 
 ### 12. Shift duration restriction
 
-1. In HQ:
+1. In Commerce headquarters:
     1. Open the **POS functionality profiles** page.
     1. Make sure the **Enforce daily shift closing** checkbox is set to **Yes**.
     1. Set **Shift closing time** to a time that is 20 minutes after the current time.
     1. Set shift closing interval to 10 minutes and save the record.
     1. Run the **1070** distribution job.
 1. In POS:
-    1. Log in to POS and open a new shift, if it's not open yet. You should start the shift more than 10 minutes before the specified shift closing time.
+    1. Sign in to POS and open a new shift, if it's not open yet. You should start the shift more than 10 minutes before the specified shift closing time.
     1. On the **Current transaction** page, add several items and pay the exact amount. No error or warning should occur.
-    1. Wait until the current time is the specified shift closing time minus 5 minutes.
-    1. On the **Current transaction** page, add an item. The following warning should occur: *You must close the shift by \<specified shift closing time\>.* but the line should be added successfully.
+    1. Wait until the current time is the specified shift closing time minus five (5) minutes.
+    1. On the **Current transaction** page, add an item. The following warning should appear: *You must close the shift by \<specified shift closing time\>.* However,  the line should be added successfully.
     1. Pay the exact amount. The same warning should occur but the sale should be completed successfully.
     1. On the **Current transaction** page, add an item. The same warning should occur.
     1. Wait until the current time is later than the specified shift closing time.
-    1. Try to pay the exact amount. The following error should be raised: *Shift duration exceeds the limit. Suspend the transaction, close the shift and open a new shift.* and the payment should not be successful.
+    1. Try to pay the exact amount. The following error should be raised: *Shift duration exceeds the limit. Suspend the transaction, close the shift and open a new shift.* and the payment shouldn't be successful.
     1. Suspend the transaction.
     1. Close the shift.
     1. Recall the transaction.
@@ -806,27 +806,27 @@ To validate a digitally signed audit even, follow these steps:
 
 ### 13. Process period grand total journal
 
-Execute the following scenario in HQ:
+Execute the following scenario in Commerce headquarters:
 
-1. Run the P-job to download retail sales data to HQ.
+1. Run the P-job to download retail sales data to headquarters.
 1. Create and post all retail statements for the fiscal period.
 1. Open the **Period grand total journal** page.
 1. Create a new journal.
 1. Specify the **Journal** number, if it's not set automatically.
 1. Select the **Store number**.
-1. If this is the first journal for the selected store, you must select the **To date**. You can select any date from a fiscal period, and the **From date** and **To date** will be populated automatically as the first and the last day, correspondingly, of the fiscal period that the selected date belongs to. Otherwise, if this is not the first journal for the store, the **From date** and the **To date** will be populated automatically as the first and the last day, correspondingly, of the fiscal period that is next to the latest fiscal period that a closed journal exists for.
-1. Click **Functions > Calculate journal**. The **Status** of the journal should change to **Calculated**.
-1. Click **Shifts** and verify that proper shifts are included in the journal, that is, all shifts that were closed during the period of the journal. Close the **Shifts** page.
+1. If this is the first journal for the selected store, you must select the **To date**. You can select any date from a fiscal period, and the **From date** and **To date** will be populated automatically as the first and the last day, correspondingly, of the fiscal period that the selected date belongs to. Otherwise, if this is not the first journal for the store, the **From date** and the **To date** will be populated automatically as the first and the last day, correspondingly, of the fiscal period that is next to the latest fiscal period for which a closed journal exists.
+1. Select **Functions \> Calculate journal**. The **Status** of the journal should change to **Calculated**.
+1. Select **Shifts** and verify that proper shifts are included in the journal, that is, all shifts that were closed during the period of the journal. Close the **Shifts** page.
 1. Verify the journal totals on the **Amounts** tab. Check the **Total sales amount**, **Total returns amount**, and **Grand total** fields. Check that the **Perpetual grand total** and **Perpetual grand total (absolute value)** amounts are equal to the ones of the last closed shift included in the journal.
-1. Click **Tax totals** and verify the period totals per tax rate.
-1. Click **Functions > Close journal**. The **Status** of the journal should change to **Closed**, and the journal should be digitally signed. Check the digital signature details on the **Signature details** tab. The **Signed data** field contains the string that was used for [digital signing of the journal](#period-grand-total-journal). Validate the amounts of the journal and other data. Check the previous journal signature for the same store.
+1. Select **Tax totals** and verify the period totals per tax rate.
+1. Select **Functions \> Close journal**. The **Status** of the journal should change to **Closed**, and the journal should be digitally signed. Check the digital signature details on the **Signature details** FastTab. The **Signed data** field contains the string that was used for [digital signing of the journal](#period-grand-total-journal). Validate the amounts of the journal and other data. Check the previous journal signature for the same store.
 
 ### 14. Export and verify fiscal archive
 
-1. In HQ:
+1. In Commerce headquarters:
     1. Open the **Period grand total journal** page and select a closed period grand total journal.
-    1. Click **Archive > Export archive**, specify the name of the export file, and confirm the operation. You also need to disable the pop-up blocker of the browser, so that that export could complete.
+    1. Select **Archive \> Export archive**, specify the name of the export file, and confirm the operation. You must also disable the pop-up blocker of the browser, so that that export can complete.
     1. Verify that the exported file is a ZIP archive that contains XML and SIGN files.
-1. Follow the steps that are described in [Fiscal archive for France](./emea-fra-fiscal-archive.md#fiscal-archive-integrity-verification-tool) to verify the exported fiscal archive.
+1. To verify the exported fiscal archive, follow the steps that are described in [Fiscal archive for France](./emea-fra-fiscal-archive.md#fiscal-archive-integrity-verification-tool).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
