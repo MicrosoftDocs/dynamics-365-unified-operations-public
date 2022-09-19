@@ -18,8 +18,6 @@
           href: get-started/whats-new-changed-10-0-29.md
         - name: Finance 10.0.28 (August)
           href: get-started/whats-new-changed-10-0-28.md
-        - name: Finance 10.0.27 (July)
-          href: get-started/whats-new-changed-10-0-27.md
       - name: Removed or deprecated features
         items:
           - name: Removed or deprecated features home page
@@ -1734,6 +1732,8 @@
             href: general-ledger/sales-tax-calculation-on-general-journal.md          
           - name: Calculate and adjust sales tax on a vendor invoice
             href: general-ledger/tasks/calculate-adjust-sales-tax-vendor-invoice.md
+          - name: Resolve sales tax differences
+            href: general-ledger/resolve-sales-tax-differences-purchase-orders-invoices.md
           - name: Adjust sales tax via general journals
             href: general-ledger/adjust-sales-tax-via-general-journals.md
           - name: Enable delayed tax calculation on journal
@@ -3578,6 +3578,8 @@
               href: localizations/rus-use-inventory-profile-documents-queries.md
           - name: Customs clearance
             items:   
+            - name: Set up customs clearance
+              href: localizations/rus-set-up-customs-clearance.md
             - name: Work with customs clearance
               href: localizations/rus-work-with-customs-clearance.md
         - name: Reporting
@@ -4642,7 +4644,7 @@
         - name: Cost controlling
           href: cost-accounting/cost-controlling-mobile-workspace.md?context=/dynamics365/context/finance
         - name: Expense management
-          href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=%2fdynamics365%2ffinance%2ftoc.json
+          href: /dynamics365/project-operations/prod-exp/expense-management-mobile-workspace?toc=/dynamics365/finance/toc.json
         - name: Inventory on-hand
           href: ../supply-chain/inventory/inventory-on-hand-mobile-workspace.md?context=/dynamics365/context/finance
         - name: Invoice approvals
@@ -4650,11 +4652,11 @@
         - name: My team
           href: ../fin-ops-core/dev-itpro/mobile-apps/manager-self-service-mobile-workspace.md?context=/dynamics365/context/finance
         - name: Project mobile applications overview
-          href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=%2fdynamics365%2ffinance%2ftoc.json
+          href: /dynamics365/project-operations/prod-pma/project-mobile-application-overview?toc=/dynamics365/finance/toc.json
         - name: Project time entry
-          href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=%2fdynamics365%2ffinance%2ftoc.json
+          href: /dynamics365/project-operations/prod-pma/project-time-entry-mobile-workspace?toc=/dynamics365/finance/toc.json
         - name: Project timesheet
-          href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=%2fdynamics365%2ffinance%2ftoc.json
+          href: /dynamics365/project-operations/prod-pma/project-timesheet?toc=/dynamics365/finance/toc.json
         - name: Purchase order approval
           href: ../supply-chain/procurement/purchase-order-mobile-workspace.md?context=/dynamics365/context/finance
         - name: Sales orders
@@ -4951,5 +4953,3 @@
     href: ../commerce/index.md
   - name: Dynamics 365 Human Resources
     href: ../human-resources/index.md
-     
-
