@@ -48,7 +48,7 @@ The following diagram shows the end-to-end upgrade process, and the activities t
 
 ![Upgrade process.](./media/upgrade-process.png)
 
-To learn the most important elements and best practices for successfully upgrading your Dynamics AX 2012 solution to finance and operations apps, see [Upgrade Dynamics AX 2012 to finance and operations apps](/learn/paths/upgrade-ax-2012-finance-operations/).
+To learn the most important elements and best practices for successfully upgrading your Dynamics AX 2012 solution to finance and operations apps, see [Upgrade Dynamics AX 2012 to finance and operations apps](/training/paths/upgrade-ax-2012-finance-operations/).
 
 ## Analyze
 
@@ -205,4 +205,3 @@ Upgrade to the cloud version of finance and operations apps is supported from AX
 Upgrade from Dynamics AX 2012 RTM isn't currently supported. Upgrade to the on-premises version is supported, as documented in [Data upgrade process for AX 2012 to Dynamics 365 Finance + Operations (on-premises)](on-prem-upgrade-2012.md). 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

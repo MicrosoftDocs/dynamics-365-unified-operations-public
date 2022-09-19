@@ -42,7 +42,7 @@ For resource-based service protection API limits, you can set the relative prior
 
 ## Determine prioritization
 
-The **Throttling Priority Mapping** page is used to assign priorities for integrations so that priorities can be honored when requests are throttled. Setting appropriate priorities ensures that low-priority integrations will be throttled before high-priority integrations. For more information about how to set up integration, see [Enable connectivity with external services](/learn/modules/integrate-azure-finance-operations/7-connect-external). 
+The **Throttling Priority Mapping** page is used to assign priorities for integrations so that priorities can be honored when requests are throttled. Setting appropriate priorities ensures that low-priority integrations will be throttled before high-priority integrations. For more information about how to set up integration, see [Enable connectivity with external services](/training/modules/integrate-azure-finance-operations/7-connect-external). 
 
 The following are the authentication types supported in Azure Active Directory (AAD). For more information, see [Authentication](services-home-page.md).
 - **User based**: This flow uses a username and password for authentication and authorization. 
@@ -74,4 +74,3 @@ After you have registered your service in AAD and in your finance and operations
 6. Assign the appropriate priority and then select **Save**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

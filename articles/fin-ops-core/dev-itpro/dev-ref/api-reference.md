@@ -38,9 +38,9 @@ All application classes are under Application Explorer &gt; Classes. Every appli
 
 ## System classes and tables
 
-### System API, class, and table documentation on Microsoft Learn
+### System API, class, and table documentation in Microsoft Learn
 
-Documentation for the classes and functions that are listed under **System Documentation** in Application Explorer is available at [Microsoft Learn documentation](/docs).
+Documentation for the classes and functions that are listed under **System Documentation** in Application Explorer is available in [Microsoft Learn documentation](/docs/).
 
 ## X++ compile-time functions
 
