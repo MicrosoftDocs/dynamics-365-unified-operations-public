@@ -1,6 +1,6 @@
 ---
 title: API, class, and table resources
-description: This article describes where to find API documentation in Visual Studio and in Microsoft Docs.
+description: This article describes where to find API documentation in Visual Studio and Microsoft Learn.
 author: josaw1
 ms.date: 07/23/2019
 audience: Developer
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes where to find API documentation in Visual Studio and in Microsoft Docs.
+This article describes where to find API documentation in Visual Studio and Microsoft Learn.
 
 ## Application classes and tables
 
@@ -38,9 +38,9 @@ All application classes are under Application Explorer &gt; Classes. Every appli
 
 ## System classes and tables
 
-### System API, class, and table documentation in Microsoft Docs
+### System API, class, and table documentation on Microsoft Learn
 
-Documentation for the classes and functions that are listed under **System Documentation** in Application Explorer is available in [Microsoft Docs](/).
+Documentation for the classes and functions that are listed under **System Documentation** in Application Explorer is available at [Microsoft Learn documentation](/docs).
 
 ## X++ compile-time functions
 
