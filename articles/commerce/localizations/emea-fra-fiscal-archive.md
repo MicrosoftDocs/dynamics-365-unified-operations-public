@@ -217,7 +217,7 @@ To obtain the Fiscal archive integrity verification tool and run it against a fi
     1. Review the license terms for the tool.
     1. Download the contents of the folder to your local machine.
 
-1. Export public key files for all digital certificates that are used for digital signing of transactions and audit events on the Commerce channel side or period grand total journals and fiscal archives on the Commerce headquarters (HQ) side.
+1. Export public key files for all digital certificates that are used for digital signing of transactions and audit events on the Commerce channel side, or period grand total journals and fiscal archives on the Commerce headquarters side.
 1. Put the fiscal archive file, its signature file, and all public key files into one folder.
 1. Run Windows PowerShell.
 1. Run the **verify.ps1** script of the tool, and specify the name of the fiscal archive file. Include the full path of the file.
