@@ -33,7 +33,7 @@ This version of the cash register functionality for France has passed an audit a
 
 An up-to-date certificate can be found on the [portal of the certification body](https://certificates.infocert.org/).
 
-You can also view the certification information in the point-of-sale (POS) in the **NF 525 certification** dialog that can be invoked by clicking the **View details** button in the **NF 525 certification** field group under the **France** section of the **Settings** page. The dialog displays the certified software name and version, as well as the certification category and the NF 525 certificate number, provided that France-specific features are [enabled](#enable-features-for-france) in the **Feature management** workspace and the fiscal registration functionality for France is [enabled and configured](#set-up-fiscal-registration) properly. 
+You can also view the certification information in the point-of-sale (POS) in the **NF 525 certification** dialog box, which can be invoked by selecting **View details** in the **NF 525 certification** field group under the **France** section of the **Settings** page. If France-specific features are [enabled](#enable-features-for-france) in the **Feature management** workspace and the fiscal registration functionality for France is [enabled and configured](#set-up-fiscal-registration) properly, the **NF 525 certification** dialog box displays the certified software name and version, as well as the certification category and the NF 525 certificate number,
 
 ### NF 525 compliance documentation
 
@@ -43,37 +43,37 @@ The following is the Dynamics 365 Commerce documentation related to the NF 525 c
 |----------|-------------|-------|
 | High-level design <p><p>Technical architecture | The documentation that describes the software product, its components, and data flows, as well as the technical design of the product. | [Commerce home page](../index.md) and nested links<p><p>[Dynamics 365 Commerce architecture overview](../commerce-architecture.md)<p><p>[Design of the Commerce solution for France](#design-of-the-commerce-solution-for-france) |
 | Functional specification<p><p>User documentation | The documentation that describes the functions of the software. | [Commerce home page](../index.md) and nested links<p><p>[France-specific POS features](#france-specific-pos-features) |
-| Versioning strategy | The documentation that describes the versioning approach and the version management procedure for the software product.<p><p>Current major Dynamics 365 Commerce version is **10.0**. Service updates that are provided for this version are marked by the consecutive number after the version number: **10.0.X**. You can find more information about the software lifecycle policy and service updates using the links in this table. | [One Version service updates overview](../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)<p><p>[Software lifecycle policy and cloud releases](../../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)<p><p>[Service update availability](../../fin-ops-core/fin-ops/get-started/public-preview-releases.md)<p><p>[Dynamics 365 release plans](https://docs.microsoft.com/dynamics365/release-plans/)<p><p>[What's new or changed in Dynamics 365 Commerce](../get-started/whats-new-home-page.md)<p><p>[Dynamics 365 Commerce component versioning requirements](../arch-component-versioning.md) |
+| Versioning strategy | The documentation that describes the versioning approach and the version management procedure for the software product.<p><p>Current major Dynamics 365 Commerce version is **10.0**. Service updates that are provided for this version are marked by the consecutive number after the version number: **10.0.X**. You can find more information about the software lifecycle policy and service updates using the links in this table. | [One Version service updates overview](../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)<p><p>[Software lifecycle policy and cloud releases](../../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)<p><p>[Service update availability](../../fin-ops-core/fin-ops/get-started/public-preview-releases.md)<p><p>[Dynamics 365 release plans](/dynamics365/release-plans/)<p><p>[What's new or changed in Dynamics 365 Commerce](../get-started/whats-new-home-page.md)<p><p>[Dynamics 365 Commerce component versioning requirements](../arch-component-versioning.md) |
 | Organizational documentation | The documentation that describes the process that is established to control the software product compliance. | [Globalization resources](../../fin-ops-core/dev-itpro/lcs-solutions/country-region.md) |
 | Maintenance documentation | The documentation that describes the implementation and maintenance of the software solution. | [Service description](../../fin-ops-core/fin-ops/get-started/service-description.md)<p><p>[Before you buy](../../fin-ops-core/fin-ops/get-started/before-you-buy.md)<p><p>[Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/grid/Microsoft-Dynamics-365)<p><p>[Implementation lifecycle management home page](../../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md)<p><p>[Synchronize self-service installers in Dynamics 365 Commerce](../dev-itpro/Synchronize-installers.md)<p><p>[Set up Commerce for France](#set-up-commerce-for-france)<p><p>[Compliance checklist](#compliance-checklist)<p><p>[Dynamics 365 Support](https://dynamics.microsoft.com/en-us/support/)<p><p>[Submit service requests](../../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md)<p><p>[One Version service updates overview](../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md) |
-| Auditor documentation | The documentation that describes how to access the data, the files and the process by the Authorities | [Fiscal archive for France](./emea-fra-fiscal-archive.md) |
+| Auditor documentation | The documentation that describes how to access the data, the files, and the process used by the authorities. | [Fiscal archive for France](./emea-fra-fiscal-archive.md) |
 
 ## Design of the Commerce solution for France
 
-The following picture demonstrates a high-level design of the Commerce solution for France. You can find more information about the Dynamics 365 Commerce components in [Dynamics 365 Commerce architecture overview](../commerce-architecture.md).
+The following illustration shows the high-level design of the Commerce solution for France. For more information about Dynamics 365 Commerce components, see [Dynamics 365 Commerce architecture overview](../commerce-architecture.md).
 
 ![High-level design of the fiscal solution for France](media/emea-fra-fiscal-solution.png)
 
-The following is a high-level end-to-end process flow for France:
+The high-level, end-to-end process flow for France is as follows:
 
-1. When the check-out process is completed for a sales transaction in POS, it sends a digital signing request to Commerce runtime (CRT) in Commerce scale unit (CSU). Digital signing of transactions and audit events is implemented using the [Fiscal registration framework](./fiscal-integration-for-retail-channel.md) and an [internal](./fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-internally-in-the-crt) connector.
+1. When the checkout process is completed for a sales transaction in POS, it sends a digital signing request to Commerce runtime (CRT) via Commerce Scale Unit (CSU). Digital signing of transactions and audit events is implemented using the [Fiscal registration framework](./fiscal-integration-for-retail-channel.md) and an [internal](./fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-internally-in-the-crt) connector.
 
     > [!NOTE]
-    > If POS is in the Offline mode, the digital signing occurs in the local copy of CRT on the POS machine.
+    > If POS is in the offline mode, the digital signing occurs in the local copy of CRT on the POS machine.
     
 1. CRT prepares the transaction data to be signed. You can find more information about digital signatures in the [Digital signing overview](#digital-signing-overview) section.
-1. CRT requests Commerce headquarters (HQ) to provide a digital certificate.
-1. HQ extracts the digital certificate from Azure Key Vault and sends it back to CRT. You can find more information about how Commerce handles digital certificates in the [Configure the digital signature parameters](#configure-the-digital-signature-parameters) section.
+1. CRT sends a request to Commerce headquarters to provide a digital certificate.
+1. Headquarters extracts the digital certificate from Microsoft Azure Key Vault and sends it back to CRT. You can find more information about how Commerce handles digital certificates in the [Configure the digital signature parameters](#configure-the-digital-signature-parameters) section.
     
     > [!NOTE]
-    > If POS is in the Offline mode, the local copy of CRT uses a digital certificate installed locally on the POS machine.
+    > If POS is in the offline mode, the local copy of CRT uses a digital certificate installed locally on the POS machine.
     
-1. CRT digitally signs the transaction data. The signature, together with the signed data and other information, is saved in the Channel database (DB) in a fiscal transaction that is linked to the sales transaction. The signature is returned to POS.
+1. CRT digitally signs the transaction data. The signature, together with the signed data and other information, is saved in the channel database (DB) in a fiscal transaction that is linked to the sales transaction. The signature is returned to POS.
 1. POS requests a sales receipt from CRT. CRT builds the receipt, including an extract from the digital signature of the transaction, and sends it back to POS. POS send the receipt to the receipt printer.
-1. When any of the audit events that must be digitally signed occurs, the above steps, except for the receipt, are repeated for the audit event. The signature of the audit event is saved in the Channel DB in a fiscal transaction that is linked to the audit event.
+1. When any of the audit events that must be digitally signed occur, the above steps, except for the receipt, are repeated for the audit event. The signature of the audit event is saved in the channel DB in a fiscal transaction that is linked to the audit event.
 1. When the shift is closed, a shift closing audit event is registered and also digitally signed. The Z-report is printed on the receipt printer.
-1. HQ downloads the transaction and audit event data together with fiscal transactions from CSU via Commerce Data Exchange (CDX). The data is stored in the HQ DB throughout the period of life of your production environment.
-1. As part of the fiscal period closing procedure, a period grand total journal is processed in HQ and a fiscal archive is produced from the HQ DB. The archive includes sales totals for a store for the fiscal period, and details and signatures of all shifts, sales transactions, and audit events during the fiscal period. The period grand total journal and fiscal archive are digitally signed. You can find more details about period grand total journals in [Period grand total journal](#period-grand-total-journal) and about fiscal archives in [Fiscal archive for France](./emea-fra-fiscal-archive.md).
+1. Headquarters downloads the transaction and audit event data together with fiscal transactions from CSU via Commerce Data Exchange (CDX). The data is stored in the headquarters DB throughout the period of life of your production environment.
+1. As part of the fiscal period closing procedure, a period grand total journal is processed in headquarters and a fiscal archive is produced from the headquarters DB. The archive includes sales totals for a store for the fiscal period, along with details and signatures of all shifts, sales transactions, and audit events during the fiscal period. The period grand total journal and fiscal archive are digitally signed. For more information about period grand total journals, see [Period grand total journal](#period-grand-total-journal). For more information about fiscal archives, see [Fiscal archive for France](./emea-fra-fiscal-archive.md).
 
 ## France-specific POS features
 
@@ -231,7 +231,7 @@ Receipts for France can include additional information that was implemented by u
 
 ### Restricting the duration of shifts
 
-There is an option to enforce daily shift closing in POS. A shift can't last longer than the time that is specified in the **Shift closing time** field (note that the time of the machine that POS is installed on is used). Several minutes before that time, the operator will start to receive warnings that the shift must be closed. The number of minutes is determined by the value of the **Shift closing interval (minutes)** field. If the shift is closed and re-started within the warning interval, it will be possible to continue selling after the shift closing time. Otherwise, completing the sales transaction will be blocked, and the operator will have to either void or suspend the transaction, close the shift, open a new shift, and then recall and complete the transaction.
+There is an option to enforce daily shift closing in POS. A shift can't last longer than the time that is specified in the **Shift closing time** field. (The time of the machine that POS is installed on is used,) Several minutes before that time, the operator will start to receive warnings that the shift must be closed. The number of minutes is determined by the value of the **Shift closing interval (minutes)** field. If the shift is closed and restarted within the warning interval, it will be possible to continue selling after the shift closing time. Otherwise, completing the sales transaction will be blocked, and the operator will have to either void or suspend the transaction, close the shift, open a new shift, and then recall and complete the transaction.
 
 ### X and Z reports
 
@@ -274,12 +274,12 @@ The exported Z report file is digitally signed, and the signature is contained i
 
 Period grand total journals summarize sales totals per store and fiscal period (for example, per month) and should be used as part of the fiscal period closing procedure. In addition, an annual journal summarizes sales totals per store and fiscal year and should be used as part of the year closing procedure.
     
-Before creating a period grand total journal, you must make sure that retail sales data for the store and the fiscal period is uploaded to Commerce HQ and processed in retail statements.
+Before creating a period grand total journal, you must ensure that retail sales data for the store and the fiscal period is uploaded to Commerce headquarters and processed in retail statements.
 
 Period grand total journals are maintained on the **Period grand total journal** page:
 
 1. To create a new journal, you must specify a store. If previous journals exist for the store, the next fiscal period after the last closed journal for the store is automatically used as the new journal period. If previous journals do not exist, you can specify the end date of the journal. In this case, the fiscal period that includes the specified date is used as the journal period.
-1. The journal can then be calculated. Shifts that were closed during the journal period are selected, and totals are calculated for those shifts. You can view the journal's tax totals per sales tax code and the shifts that are included in the journal. You can also use **Functions > Clear journal** to clear the calculation results and return the journal back to the **New** status.
+1. The journal can then be calculated. Shifts that were closed during the journal period are selected, and totals are calculated for those shifts. You can view the journal's tax totals per sales tax code and the shifts that are included in the journal. You can also use **Functions \> Clear journal** to clear the calculation results and return the journal back to **New** status.
 1. After the journal is calculated, it can be closed. A closed journal can't be modified, and another journal can't be created for a previous fiscal period, the same period, or an intersecting period. However, the last closed journal for a store can be canceled. In that case, another journal can be created for the same store and fiscal period. 
 
 A closed journal is digitally signed. The data that is signed for a closed journal is a text string that consists of the following data fields:
@@ -295,9 +295,9 @@ A closed journal is digitally signed. The data that is signed for a closed journ
 
 You can view the journal signature, together with the journal data that was used to generate it, on the **Signature details** tab of the **Period grand total journal** page in Commerce headquarters.
 
-You need to create and close period grand total journals for all stores each fiscal period.  Journal maintenance can be automated by using the following two periodic procedures that can be run in batch:
+You must create and close period grand total journals for all stores each fiscal period. Journal maintenance can be automated using the following two periodic procedures that can be run in batch:
 
-- **Create period grand total journals**. This procedure creates and optionally calculates journals for selected stores for a given period. It’s required to select a specific period for the procedure, thus you would need to manually create a batch job for each period, and it is not possible to use recurrence. The procedure does not close the journals, because it is expected that each journal is validated manually before closing it.
+- **Create period grand total journals**. This procedure creates and optionally calculates journals for selected stores for a given period. It's required that you select a specific period for the procedure, so you must manually create a batch job for each period, and it is not possible to use recurrence. The procedure does not close the journals because it is expected that each journal is validated manually before closing it.
 - **Export archive**. This procedure exports archives for selected stores for a given period. It’s required to select a specific period for the procedure, and it is not possible to use recurrence.
     
 A period grand total journal can also be marked as **Annual** when it's created. An annual journal summarizes period grand total journals for the fiscal periods of a fiscal year. An annual journal can be created for a fiscal year only if a journal for the last fiscal period of the fiscal year has been created, calculated, and closed. However, journals don't have to exist for *all* fiscal periods of the fiscal year. For example, if a new store is opened in the middle of the year, the first journal will correspond to the fiscal period that the store is opened during. In this case, the first annual journal will summarize journals for fiscal periods from the fiscal period that the store is opened during to the last fiscal period of the fiscal year.
@@ -325,12 +325,12 @@ You must also specify the following settings for France. Note that you must run 
 1. [Set up POS functionality profiles](#set-up-pos-functionality-profiles) to enable features and options required for France.
 1. [Configure custom fields](#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts) and [receipt formats](#configure-receipt-formats) to comply with the local regulatory requirements.
 1. [Configure the fiscal registration functionality](#set-up-fiscal-registration) for France to enable digital signing of sales transactions and audit events.
-1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the Commerce channel and HQ sides.
-1. [Specify Electronic reporting formats](#configure-the-z-report-and-archive-export-formats) that should be used to export Z-reports and fiscal archives from HQ.
-1. [Reinitialize Commerce components](#reinitialize-commerce-components) to enable France-specific audit events and transmission of France-specific data from POS to HQ.
+1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the Commerce channel and Commerce headquarters sides.
+1. [Specify electronic reporting formats](#configure-the-z-report-and-archive-export-formats) that should be used to export Z-reports and fiscal archives from Commerce headquarters.
+1. [Reinitialize Commerce components](#reinitialize-commerce-components) to enable France-specific audit events and transmission of France-specific data from POS to  headquarters.
 1. [Configure channel components](#configure-channel-components) to enable France-specific extensions of the components.
     > [!WARNING]
-    > You should only do this if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
+    > You should only configure channel components if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out-of-the-box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
 1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode).
 1. [Validate your configuration](#compliance-checklist) to make sure all France-specific features work properly.
 
@@ -413,7 +413,7 @@ On the **Custom fields** page, add the following records for the custom fields f
 
 ### Configure receipt formats
 
-For every required receipt format, change the value of the **Print behavior** field to **Always print**. You also need to configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../retail-peripherals-overview.md). 
+For every required receipt format, change the value of the **Print behavior** field to **Always print**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../retail-peripherals-overview.md). 
 
 In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
 
@@ -494,12 +494,12 @@ You must configure certificates that will be used for digital signing of records
 > [!NOTE]
 > You can use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing. Only certificates that have RSA-2048-bit or Elliptic Curve Digital Signature Algorithm (ECDSA) 224-bit minimum private keys are acceptable. Commerce supports only RSA-2048-bit or longer keys. If you want to use an ECDSA key, you must implement a customization.
 
-Follow the steps that are described in [Set up certificate profiles](./certificate-profiles-for-retail-stores.md#set-up-certificate-profiles) to configure certificates and certificate profiles to be used for digital signing.
+To configure certificates and certificate profiles to be used for digital signing, follow the steps that are described in [Set up certificate profiles](./certificate-profiles-for-retail-stores.md#set-up-certificate-profiles).
 
-After you configure certificate profiles, go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**, select the connector technical profile that you created earlier, and specify the following parameters for digital signatures on the **Settings** FastTab:
+After you configure certificate profiles, go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**, select the connector technical profile that you created earlier, and on the **Settings** FastTab, specify the following parameters for digital signatures:
 
 - **Certificate profile** – Select the certificate profile that you configured earlier.
-- **Hash algorithm** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA256**.
+- **Hash algorithm** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, for example **SHA256**.
 - **Activate health check** – For more information about the health check feature, see [Fiscal registration health check](./fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
 
 Finally, on the **Commerce parameters** page (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**), you must specify the following parameters for digital signing on the Commerce headquarters side:
@@ -507,19 +507,19 @@ Finally, on the **Commerce parameters** page (**Retail and Commerce \> Headquart
 - **Certificate** – Select a certificate that is stored in Key Vault.
 - **Hash function** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA256**.
 - **Encoding** – Specify the encoding of the signed data, such as **UTF-8**.
-- You can also specify a number sequence to be used for automatic numbering of period grand total journals. On the **Number sequences** tab, select a record with **Reference** = **Period grand total journal**, and select a number sequence code in it.
+- You can also specify a number sequence to be used for automatic numbering of period grand total journals. On the **Number sequences** tab, select a record with **Reference** = **Period grand total journal**, and then select a number sequence code in it.
 
 > [!NOTE]
 > The following hash functions aren't acceptable: CRC16, CRC32, SHA-1, and MD5. Commerce supports only the SHA256, SHA384, and SHA512 hash functions. If you want to use a different hash function, you must implement a customization.
 
 ### Configure the Z report and archive export formats
 
-Depending on your purposes, you can download the Electronic Reporting (ER) configurations for the Z report and archive from the following sources:
+Depending on your purposes, you can download the electronic reporting (ER) configurations for the Z report and archive from the following sources:
 
 - If you do not need to customize ER configurations provided by Microsoft or create your own ER configurations, you can import the configurations provided by Microsoft from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import a configuration from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Alternatively, you can [download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
-- If you need to customize ER configurations provided by Microsoft or create your own ER configurations, you need to provision a Regulatory Configuration Services (RCS) environment. For more information about working with RCS, see [Import ER configurations from RCS](../../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md).
+- If you need to customize ER configurations provided by Microsoft or create your own ER configurations, you must provision a Regulatory Configuration Services (RCS) environment. For more information about working with RCS, see [Import ER configurations from RCS](../../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md).
 
-You must download the following versions, or later versions, of the configurations:
+You must download the following versions (or later versions) of the configurations:
 
 - **Retail channel data.version.2** data model
 - **Archiving DMM.version.2.3** data model mapping
@@ -544,12 +544,12 @@ To enable audit events, you must reinitialize the Commerce extensible enumeratio
 ### Configure channel components
 
 > [!WARNING]
-> You should only implement the steps that are described in this section if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
+> You should only implement the steps that are described in this section if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out-of-the-box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
 
 To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-fi-deployment.md).
 
 > [!NOTE]
-> This version of the Commerce functionality for France is based on the [fiscal integration framework](./fiscal-integration-for-retail-channel.md). For information about the legacy digital signing sample for France, see [Deployment guidelines for cash registers for France (legacy)](./emea-fra-deployment.md).  For guidelines about how to enable the fiscal integration functionality for France in existing environments that use the legacy digital signing sample, see [Migrate from legacy Commerce functionality for France](./emea-fra-fi-migration.md).
+> This version of the Commerce functionality for France is based on the [fiscal integration framework](./fiscal-integration-for-retail-channel.md). For information about the legacy digital signing sample for France, see [Deployment guidelines for cash registers for France (legacy)](./emea-fra-deployment.md). For guidelines about how to enable the fiscal integration functionality for France in existing environments that use the legacy digital signing sample, see [Migrate from legacy Commerce functionality for France](./emea-fra-fi-migration.md).
 
 ### Enable the digital signature in offline mode
 
