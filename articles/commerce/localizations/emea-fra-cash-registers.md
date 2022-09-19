@@ -507,7 +507,7 @@ Finally, on the **Commerce parameters** page (**Retail and Commerce \> Headquart
 - **Certificate** – Select a certificate that is stored in Key Vault.
 - **Hash function** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA256**.
 - **Encoding** – Specify the encoding of the signed data, such as **UTF-8**.
-- You can also specify a number sequence to be used for automatic numbering of period grand total journals. On the **Number sequences** tab, select a receord with **Reference** = **Period grand total journal** and select a number sequence code in it.
+- You can also specify a number sequence to be used for automatic numbering of period grand total journals. On the **Number sequences** tab, select a record with **Reference** = **Period grand total journal**, and select a number sequence code in it.
 
 > [!NOTE]
 > The following hash functions aren't acceptable: CRC16, CRC32, SHA-1, and MD5. Commerce supports only the SHA256, SHA384, and SHA512 hash functions. If you want to use a different hash function, you must implement a customization.
@@ -713,7 +713,7 @@ Follow these steps to validate a digitally signed audit event:
 1. Add an item and click **Carry out selected**.
 1. Pay the exact amount, that is, the deposit plus the amount of the item that is marked as **Carry out**.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Validate that the receipt contains a digital signature, and the total amount of the sales transaction includes the carry-out item only.
-1. In POS, click **Recall order** and find the previousely created order.
+1. In POS, click **Recall order** and find the previously created order.
 1. Click **Pick up**, specify the pick-up quantities, and confirm the operation.
 1. Pay the exact amount.
 1. [Validate the transaction](#how-to-validate-a-sales-transaction). Validate that the total amount of the sales transaction includes picked-up items only. The amount of the applied deposit is not excluded from the total amount.
@@ -724,7 +724,7 @@ Follow these steps to validate a digitally signed audit event:
 1. Use the **Database connection status** operation to manually disconnect POS from the Commerce Scale Unit and switch POS to the Offline mode.
 1. On the **Current transaction** page, add several items and pay the exact amount.
 1. Use the **Database connection status** operation to manually connect POS to the Commerce Scale Unit and switch POS to the Online mode, and wait until the synchronization between the Offline DB and Channel DB is completed.
-1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is digitally signed and the sequence of digital signtaures is not broken.
+1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is digitally signed and the sequence of digital signatures is not broken.
 
 ### 8. Non-sale transaction (expense)
 
