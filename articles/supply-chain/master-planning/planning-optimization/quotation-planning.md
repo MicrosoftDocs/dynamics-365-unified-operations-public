@@ -15,7 +15,7 @@ ms.dyn365.ops.version: 10.0.30
 
 # Plan based on quotations
 
-[!include [banner](../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Sales quotations and requests for quotations (RFQs) represent possible or even likely future sales orders. Therefore, it makes sense to take these into consideration during master planning to plan extra supply based on how likely each quotation or RFQ is to become an actual order. This topic describes how to set up master planning to take sales quotations and RFQs into consideration when generating planned orders.
 
@@ -37,7 +37,7 @@ Use the following procedure to set up master planning to consider sales quotatio
 
 This example shows a typical scenario where a sales person sets up an opportunity and converts it to a sales quotation, which the system is set up to then consider during master planning.
 
-1. To work through this scenario using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
+1. To work through this scenario using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
 1. Go to **Master Planning \> Setup \> Plans \> Master plans**.
 1. Create or edit a master plan so that includes the following options:
 
