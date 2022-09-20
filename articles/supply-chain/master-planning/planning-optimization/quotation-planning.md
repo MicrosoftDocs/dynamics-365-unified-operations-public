@@ -45,12 +45,14 @@ This example shows a typical scenario where a sales person sets up an opportunit
     - **Probability %:** *50*
     - **Include requests for quotations:** *Yes* <!-- KFM: Is this needed for this example? -->
 
-1. Go to **Sales and marketing \> Relationships \> Opportunities**.
-1. Create a new opportunity <!-- KFM: continue here. -->
+1. Go to **Sales and marketing \> Relationships \> Opportunities \> All opportunities**. <!--KFM: Why are we suddenly talking about opportunities now? How are they related to sales quotations and RFQs? Is this the usual way to create a quotation? If so, we should mention this sooner. Is this the only way to apply a probability to a sales quotation? -->
+1. Select **New** on the Action Pane to create a new opportunity.
+1. Fill out the opportunity page however you like to identify the opportunity, but be sure to set **Probably** to *75*. <!-- KFM: We should comment on how this affects the planning, and how we can see this value after we've created a quotation.-->
+1. Select **Save** on the Action Pane.
+1. Now create a sales quotation from the opportunity. On the Action Pane, open the **Opportunity** tab and, from the **New** group, select **Sales quotation**.
+1. The **Create quotation** dialog opens. Select **OK**.
 
-Create an opportunity on the **All opportunities** page (Sales and marketing \> Relationships \> Opportunities). Fill in the opportunity related fields. Fill in the **Probability** field to 75. <!--KFM: Why are we talking about opportunities now? How are they related to sales quotations and RFQs? Is this the usual way to create a quotation? If so, we should mention this sooner.  -->
-
-To create a sales quotation from the opportunity, click on Opportunity \> New \> Sales quotation on the upper pane. Click OK.
+<!-- KFM: Continue here. -->
 
 On the created sales quotation, fill in the desired lines – which products will be part of the quotation. The probability associated with the sales quotation is the probability from the related opportunity. It is possible to view the opportunity associated with the quotation by adding the field Opportunity ID on the **All quotations** page. For example, add a line for item D0001 site 1 warehouse 11 quantity 100.
 
