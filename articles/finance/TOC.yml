@@ -1451,7 +1451,7 @@
     - name: Globalization Studio
       items:
       - name: Globalization Studio overview
-        href: localizations/globalization-studio-overview.md
+        href: localizations/globalization-studio-overview.md?context=/dynamics365/context/finance
       - name: Globalization resources
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?context=/dynamics365/context/finance
       - name: Globalization services
