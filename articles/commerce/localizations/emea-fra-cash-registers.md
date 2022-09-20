@@ -33,43 +33,43 @@ This version of the cash register functionality for France has passed an audit a
 
 An up-to-date certificate can be found on the [portal of the certification body](https://certificates.infocert.org/).
 
-You can also view the certification information in the point-of-sale (POS) in the **NF 525 certification** dialog box, which can be invoked by selecting **View details** in the **NF 525 certification** field group under the **France** section of the **Settings** page. If France-specific features are [enabled](#enable-features-for-france) in the **Feature management** workspace and the fiscal registration functionality for France is [enabled and configured](#set-up-fiscal-registration) properly, the **NF 525 certification** dialog box displays the certified software name and version, as well as the certification category and the NF 525 certificate number,
+You can also view the certification information in the point of sale (POS) in the **NF 525 certification** dialog box. You can open this dialog box by selecting **View details** in the **NF 525 certification** section under **France** on the **Settings** page. If France-specific features are [enabled](#enable-features-for-france) in the **Feature management** workspace, and the fiscal registration functionality for France is correctly [enabled and configured](#set-up-fiscal-registration), the **NF 525 certification** dialog box shows the certified software name and version, the certification category, and the NF 525 certificate number.
 
 ### NF 525 compliance documentation
 
-The following is the Dynamics 365 Commerce documentation related to the NF 525 certification:
+The following table shows the Dynamics 365 Commerce documentation that is related to the NF 525 certification.
 
 | Document | Description | Links |
 |----------|-------------|-------|
-| High-level design <p><p>Technical architecture | The documentation that describes the software product, its components, and data flows, as well as the technical design of the product. | [Commerce home page](../index.md) and nested links<p><p>[Dynamics 365 Commerce architecture overview](../commerce-architecture.md)<p><p>[Design of the Commerce solution for France](#design-of-the-commerce-solution-for-france) |
-| Functional specification<p><p>User documentation | The documentation that describes the functions of the software. | [Commerce home page](../index.md) and nested links<p><p>[France-specific POS features](#france-specific-pos-features) |
-| Versioning strategy | The documentation that describes the versioning approach and the version management procedure for the software product.<p><p>Current major Dynamics 365 Commerce version is **10.0**. Service updates that are provided for this version are marked by the consecutive number after the version number: **10.0.X**. You can find more information about the software lifecycle policy and service updates using the links in this table. | [One Version service updates overview](../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)<p><p>[Software lifecycle policy and cloud releases](../../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)<p><p>[Service update availability](../../fin-ops-core/fin-ops/get-started/public-preview-releases.md)<p><p>[Dynamics 365 release plans](/dynamics365/release-plans/)<p><p>[What's new or changed in Dynamics 365 Commerce](../get-started/whats-new-home-page.md)<p><p>[Dynamics 365 Commerce component versioning requirements](../arch-component-versioning.md) |
-| Organizational documentation | The documentation that describes the process that is established to control the software product compliance. | [Globalization resources](../../fin-ops-core/dev-itpro/lcs-solutions/country-region.md) |
-| Maintenance documentation | The documentation that describes the implementation and maintenance of the software solution. | [Service description](../../fin-ops-core/fin-ops/get-started/service-description.md)<p><p>[Before you buy](../../fin-ops-core/fin-ops/get-started/before-you-buy.md)<p><p>[Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/grid/Microsoft-Dynamics-365)<p><p>[Implementation lifecycle management home page](../../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md)<p><p>[Synchronize self-service installers in Dynamics 365 Commerce](../dev-itpro/Synchronize-installers.md)<p><p>[Set up Commerce for France](#set-up-commerce-for-france)<p><p>[Compliance checklist](#compliance-checklist)<p><p>[Dynamics 365 Support](https://dynamics.microsoft.com/en-us/support/)<p><p>[Submit service requests](../../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md)<p><p>[One Version service updates overview](../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md) |
-| Auditor documentation | The documentation that describes how to access the data, the files, and the process used by the authorities. | [Fiscal archive for France](./emea-fra-fiscal-archive.md) |
+| <p>High-level design</p><p>Technical architecture</p> | This documentation describes the software product, its components, and data flows, and also the technical design of the product. | <p>[Commerce home page](../index.md) and nested links</p><p>[Dynamics 365 Commerce architecture overview](../commerce-architecture.md)</p><p>[Design of the Commerce solution for France](#design-of-the-commerce-solution-for-france)</p> |
+| <p>Functional specification</p><p>User documentation</p> | This documentation describes the functions of the software. | <p>[Commerce home page](../index.md) and nested links</p><p>[France-specific POS features](#france-specific-pos-features)</p> |
+| Versioning strategy | <p>This documentation describes the versioning approach and the version management procedure for the software product.</p><p>The current major Dynamics 365 Commerce version is **10.0**. Service updates for this version are indicated by a consecutive number after the version number: **10.0.X**. For more information about the software lifecycle policy and service updates, use the links in this table.</p> | <p>[One Version service updates overview](../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)</p><p>[Software lifecycle policy and cloud releases](../../fin-ops-core/dev-itpro/migration-upgrade/versions-update-policy.md)</p><p>[Service update availability](../../fin-ops-core/fin-ops/get-started/public-preview-releases.md)</p><p>[Dynamics 365 release plans](/dynamics365/release-plans/)</p><p>[What's new or changed in Dynamics 365 Commerce](../get-started/whats-new-home-page.md)</p><p>[Dynamics 365 Commerce component versioning requirements](../arch-component-versioning.md)</p> |
+| Organizational documentation | This documentation describes the process that is established to control software product compliance. | [Globalization resources](../../fin-ops-core/dev-itpro/lcs-solutions/country-region.md) |
+| Maintenance documentation | This documentation describes implementation and maintenance of the software solution. | <p>[Service description](../../fin-ops-core/fin-ops/get-started/service-description.md)</p><p>[Before you buy](../../fin-ops-core/fin-ops/get-started/before-you-buy.md)</p><p>[Dynamics 365 Licensing Guide](https://www.microsoft.com/licensing/docs/grid/Microsoft-Dynamics-365)</p><p>[Implementation lifecycle management home page](../../fin-ops-core/fin-ops/imp-lifecycle/implementation-lifecycle.md)</p><p>[Synchronize self-service installers in Dynamics 365 Commerce](../dev-itpro/Synchronize-installers.md)</p><p>[Set up Commerce for France](#set-up-commerce-for-france)</p><p>[Compliance checklist](#compliance-checklist)</p><p>[Dynamics 365 Support](https://dynamics.microsoft.com/support/)</p><p>[Submit service requests](../../fin-ops-core/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md)</p><p>[One Version service updates overview](../../fin-ops-core/dev-itpro/lifecycle-services/oneversion-overview.md)</p> |
+| Auditor documentation | This documentation describes how to access the data, the files, and the process that are used by the authorities. | [Fiscal archive for France](./emea-fra-fiscal-archive.md) |
 
 ## Design of the Commerce solution for France
 
 The following illustration shows the high-level design of the Commerce solution for France. For more information about Dynamics 365 Commerce components, see [Dynamics 365 Commerce architecture overview](../commerce-architecture.md).
 
-![High-level design of the fiscal solution for France](media/emea-fra-fiscal-solution.png)
+![High-level design of the fiscal solution for France.](media/emea-fra-fiscal-solution.png)
 
 The high-level, end-to-end process flow for France is as follows:
 
-1. When the checkout process is completed for a sales transaction in POS, it sends a digital signing request to Commerce runtime (CRT) via Commerce Scale Unit (CSU). Digital signing of transactions and audit events is implemented using the [Fiscal registration framework](./fiscal-integration-for-retail-channel.md) and an [internal](./fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-internally-in-the-crt) connector.
+1. When the checkout process is completed for a sales transaction in POS, POS sends a digital signing request to the Commerce runtime (CRT) via Commerce Scale Unit (CSU). Digital signing of transactions and audit events is implemented by using the [Fiscal registration framework](./fiscal-integration-for-retail-channel.md) and an [internal](./fiscal-integration-for-retail-channel.md#fiscal-registration-is-done-internally-in-the-crt) connector.
 
     > [!NOTE]
     > If POS is in the offline mode, the digital signing occurs in the local copy of CRT on the POS machine.
-    
-1. CRT prepares the transaction data to be signed. You can find more information about digital signatures in the [Digital signing overview](#digital-signing-overview) section.
+
+1. CRT prepares the transaction data to be signed. For more information about digital signatures, see the [Digital signing overview](#digital-signing-overview) section.
 1. CRT sends a request to Commerce headquarters to provide a digital certificate.
-1. Headquarters extracts the digital certificate from Microsoft Azure Key Vault and sends it back to CRT. You can find more information about how Commerce handles digital certificates in the [Configure the digital signature parameters](#configure-the-digital-signature-parameters) section.
-    
+1. Commerce headquarters extracts the digital certificate from Azure Key Vault and sends it back to CRT. For more information about how Commerce handles digital certificates, see the [Configure the digital signature parameters](#configure-the-digital-signature-parameters) section.
+
     > [!NOTE]
     > If POS is in the offline mode, the local copy of CRT uses a digital certificate installed locally on the POS machine.
-    
+
 1. CRT digitally signs the transaction data. The signature, together with the signed data and other information, is saved in the channel database (DB) in a fiscal transaction that is linked to the sales transaction. The signature is returned to POS.
-1. POS requests a sales receipt from CRT. CRT builds the receipt, including an extract from the digital signature of the transaction, and sends it back to POS. POS send the receipt to the receipt printer.
+1. POS requests a sales receipt from CRT. CRT builds the receipt, including an extract from the digital signature of the transaction, and sends it back to POS. POS sends the receipt to the receipt printer.
 1. When any of the audit events that must be digitally signed occur, the above steps, except for the receipt, are repeated for the audit event. The signature of the audit event is saved in the channel DB in a fiscal transaction that is linked to the audit event.
 1. When the shift is closed, a shift closing audit event is registered and also digitally signed. The Z-report is printed on the receipt printer.
 1. Headquarters downloads the transaction and audit event data together with fiscal transactions from CSU via Commerce Data Exchange (CDX). The data is stored in the headquarters DB throughout the period of life of your production environment.
@@ -80,7 +80,7 @@ The high-level, end-to-end process flow for France is as follows:
 The following France-specific POS features are enabled when the primary address of the legal entity that the store belongs to is in France.
 
 ### Registration of audit events
-    
+
 If the **Audit** option in the POS functionality profile is set to **Yes**, the following events are registered in the POS audit event log:
 
 - Sign-in
@@ -186,12 +186,12 @@ You can view the signature of a closed shift, together with the shift data that 
 
 Only the [France-specific](#registration-of-audit-events) audit events are signed. Three separate sequences of digitally signed audit events are maintained per register:
 
-- Sequence of **Shift closed** audit events that are registered when shifts are closed.
-- Sequence of **Receipt copy printed** audit events that are registered when receipt copies are printed.
-- Sequence of other signed audit events.
+- The sequence of **Shift closed** audit events that are registered when shifts are closed
+- The sequence of **Receipt copy printed** audit events that are registered when receipt copies are printed
+- The sequence of other signed audit events
 
-Audit events that are not digitally signed are excluded from these sequences.
-    
+Audit events that aren't digitally signed are excluded from these sequences.
+
 The data that is signed for an event other than a receipt copy or shift closing event is a text string that consists of the following data fields:
 
 - The sequential number of the signed event for the register.
@@ -213,11 +213,13 @@ Receipts for France can include additional information that was implemented by u
 - **Sequential number of signed sales transaction** – A receipt can include the sequential number of a signed sales transaction. This number is used to associate the printed receipt with a digital signature in the database.
 - **Extract from digital signature** – A receipt can include an extract from the digital signature. This extract is used to confirm that the transaction is signed. It consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
 - Information about a receipt copy:
-    - **Reprint message** - A receipt copy can include a **Copy** caption.
+
+    - **Reprint message** – A receipt copy can include a "Copy" caption.
     - **Reprint number** – An original receipt or a receipt copy can include the number of the receipt copy. For an original receipt, the value is **0** (zero).
-    - **Reprint date** - A receipt copy can include the date of the copy.
-    - **Reprint time** - A receipt copy can include the time of the copy in either the 12H or 24H format.
-    - **Reprint signature** - A receipt copy can include an extract from the digital signature of the copy.
+    - **Reprint date** – A receipt copy can include the date of the copy.
+    - **Reprint time** – A receipt copy can include the time of the copy in either the 12-hour format or the 24-hour format.
+    - **Reprint signature** – A receipt copy can include an extract from the digital signature of the copy.
+
 - **Line count** – A receipt can include the number of printed item lines on the receipt.
 - **Sales totals** – Custom fields for receipt totals exclude non-sales amounts from the total transaction amounts. Non-sales amounts include amounts for the following operations:
 
@@ -231,7 +233,7 @@ Receipts for France can include additional information that was implemented by u
 
 ### Restricting the duration of shifts
 
-There is an option to enforce daily shift closing in POS. A shift can't last longer than the time that is specified in the **Shift closing time** field. (The time of the machine that POS is installed on is used,) Several minutes before that time, the operator will start to receive warnings that the shift must be closed. The number of minutes is determined by the value of the **Shift closing interval (minutes)** field. If the shift is closed and restarted within the warning interval, it will be possible to continue selling after the shift closing time. Otherwise, completing the sales transaction will be blocked, and the operator will have to either void or suspend the transaction, close the shift, open a new shift, and then recall and complete the transaction.
+There is an option to enforce daily shift closing in POS. A shift can't last longer than the time that is specified in the **Shift closing time** field. (The time of the machine that POS is installed on is used.) Several minutes before that time, the operator will start to receive warnings that the shift must be closed. The number of minutes is determined by the value of the **Shift closing interval (minutes)** field. If the shift is closed and restarted within the warning interval, selling can continue after the shift closing time. Otherwise, completion of the sales transaction will be blocked, and the operator will have to either void or suspend the transaction, close the shift, open a new shift, and then recall and complete the transaction.
 
 ### X and Z reports
 
@@ -272,15 +274,15 @@ The exported Z report file is digitally signed, and the signature is contained i
 
 ### Period grand total journal
 
-Period grand total journals summarize sales totals per store and fiscal period (for example, per month) and should be used as part of the fiscal period closing procedure. In addition, an annual journal summarizes sales totals per store and fiscal year and should be used as part of the year closing procedure.
-    
-Before creating a period grand total journal, you must ensure that retail sales data for the store and the fiscal period is uploaded to Commerce headquarters and processed in retail statements.
+Period grand total journals summarize sales totals per store and fiscal period (for example, per month), and should be used as part of the fiscal period closing procedure. In addition, an annual journal summarizes sales totals per store and fiscal year, and should be used as part of the year closing procedure.
 
-Period grand total journals are maintained on the **Period grand total journal** page:
+Before you create a period grand total journal, you must ensure that retail sales data for the store and the fiscal period is uploaded to Commerce headquarters and processed in retail statements.
 
-1. To create a new journal, you must specify a store. If previous journals exist for the store, the next fiscal period after the last closed journal for the store is automatically used as the new journal period. If previous journals do not exist, you can specify the end date of the journal. In this case, the fiscal period that includes the specified date is used as the journal period.
-1. The journal can then be calculated. Shifts that were closed during the journal period are selected, and totals are calculated for those shifts. You can view the journal's tax totals per sales tax code and the shifts that are included in the journal. You can also use **Functions \> Clear journal** to clear the calculation results and return the journal back to **New** status.
-1. After the journal is calculated, it can be closed. A closed journal can't be modified, and another journal can't be created for a previous fiscal period, the same period, or an intersecting period. However, the last closed journal for a store can be canceled. In that case, another journal can be created for the same store and fiscal period. 
+Period grand total journals are maintained on the **Period grand total journal** page.
+
+1. To create a new journal, you must specify a store. If previous journals exist for the store, the next fiscal period after the last closed journal for the store is automatically used as the new journal period. If previous journals don't exist, you can specify the end date of the journal. In this case, the fiscal period that includes the specified date is used as the journal period.
+1. The journal can then be calculated. Shifts that were closed during the journal period are selected, and totals are calculated for those shifts. You can view the journal's tax totals per sales tax code and the shifts that are included in the journal. You can also select **Functions \> Clear journal** to clear the calculation results and return the journal to **New** status.
+1. After the journal is calculated, it can be closed. A closed journal can't be modified, and another journal can't be created for a previous fiscal period, the same period, or an intersecting period. However, the last closed journal for a store can be canceled. In that case, another journal can be created for the same store and fiscal period.
 
 A closed journal is digitally signed. The data that is signed for a closed journal is a text string that consists of the following data fields:
 
@@ -295,11 +297,11 @@ A closed journal is digitally signed. The data that is signed for a closed journ
 
 You can view the journal signature, together with the journal data that was used to generate it, on the **Signature details** tab of the **Period grand total journal** page in Commerce headquarters.
 
-You must create and close period grand total journals for all stores each fiscal period. Journal maintenance can be automated using the following two periodic procedures that can be run in batch:
+You must create and close period grand total journals for all stores every fiscal period. Journal maintenance can be automated by using the following two periodic procedures that can be run in batch mode:
 
-- **Create period grand total journals**. This procedure creates and optionally calculates journals for selected stores for a given period. It's required that you select a specific period for the procedure, so you must manually create a batch job for each period, and it is not possible to use recurrence. The procedure does not close the journals because it is expected that each journal is validated manually before closing it.
-- **Export archive**. This procedure exports archives for selected stores for a given period. It’s required to select a specific period for the procedure, and it is not possible to use recurrence.
-    
+- **Create period grand total journals** – This procedure creates and optionally calculates journals for selected stores for a given period. You must select a specific period for the procedure. Therefore, you must manually create a batch job for each period and can't use recurrence. The procedure doesn't close the journals, because it's expected that each journal will be manually validated before it's closed.
+- **Export archive** – This procedure exports archives for selected stores for a given period. You must select a specific period for the procedure and can't use recurrence.
+
 A period grand total journal can also be marked as **Annual** when it's created. An annual journal summarizes period grand total journals for the fiscal periods of a fiscal year. An annual journal can be created for a fiscal year only if a journal for the last fiscal period of the fiscal year has been created, calculated, and closed. However, journals don't have to exist for *all* fiscal periods of the fiscal year. For example, if a new store is opened in the middle of the year, the first journal will correspond to the fiscal period that the store is opened during. In this case, the first annual journal will summarize journals for fiscal periods from the fiscal period that the store is opened during to the last fiscal period of the fiscal year.
 
 ### Fiscal archive
@@ -310,7 +312,7 @@ Commerce also includes a tool that can be used to verify the integrity of a fisc
 
 ## Set up Commerce for France
 
-This section describes the Commerce settings that are specific to and recommended for France. For more information on common Commerce features and settings, see [Commerce home page](../index.md).
+This section describes the Commerce settings that are specific to and recommended for France. For more information about common Commerce features and settings, see [Commerce home page](../index.md).
 
 To use the France-specific functionality, you must complete these tasks:
 
@@ -320,17 +322,19 @@ To use the France-specific functionality, you must complete these tasks:
 You must also specify the following settings for France. Note that you must run appropriate distribution jobs after you complete the setup.
 
 1. [Enable Commerce features](#enable-features-for-france) for France in the **Feature management** workspace.
-1. [Specify various registration numbers](#set-up-the-legal-entity) of the organization, such as the VAT identifier, on the **Legal entities** page. These registration numbers will be used when exporting the fiscal archive.
+1. [Specify various registration numbers](#set-up-the-legal-entity) of the organization, such as the VAT identifier, on the **Legal entities** page. These registration numbers will be used when the fiscal archive is exported.
 1. [Set up VAT](#set-up-vat-per-french-requirements) per the French VAT regulations.
-1. [Set up POS functionality profiles](#set-up-pos-functionality-profiles) to enable features and options required for France.
+1. [Set up POS functionality profiles](#set-up-pos-functionality-profiles) to enable features and options that are required for France.
 1. [Configure custom fields](#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts) and [receipt formats](#configure-receipt-formats) to comply with the local regulatory requirements.
 1. [Configure the fiscal registration functionality](#set-up-fiscal-registration) for France to enable digital signing of sales transactions and audit events.
 1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the Commerce channel and Commerce headquarters sides.
-1. [Specify electronic reporting formats](#configure-the-z-report-and-archive-export-formats) that should be used to export Z-reports and fiscal archives from Commerce headquarters.
-1. [Reinitialize Commerce components](#reinitialize-commerce-components) to enable France-specific audit events and transmission of France-specific data from POS to  headquarters.
+1. [Specify Electronic reporting (ER) formats](#configure-the-z-report-and-archive-export-formats) that should be used to export Z-reports and fiscal archives from Commerce headquarters.
+1. [Reinitialize Commerce components](#reinitialize-commerce-components) to enable France-specific audit events and transmission of France-specific data from POS to Commerce headquarters.
 1. [Configure channel components](#configure-channel-components) to enable France-specific extensions of the components.
-    > [!WARNING]
-    > You should only configure channel components if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out-of-the-box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
+
+    > [!IMPORTANT]
+    > You should configure channel components only if you're using Commerce version 10.0.28 or earlier. As of version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you're using Commerce version 10.0.28 or earlier, and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
+
 1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode).
 1. [Validate your configuration](#compliance-checklist) to make sure all France-specific features work properly.
 
@@ -413,14 +417,14 @@ On the **Custom fields** page, add the following records for the custom fields f
 
 ### Configure receipt formats
 
-For every required receipt format, change the value of the **Print behavior** field to **Always print**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../retail-peripherals-overview.md). 
+For every required receipt format, change the value of the **Print behavior** field to **Always print**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../retail-peripherals-overview.md).
 
 In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
 
 - **Header:** Add the following field:
 
     - **Transaction type** – This field identifies the type of receipt.
-    - **Reprint message** - This standard field prints a **Copy** caption in a receipt copy.
+    - **Reprint message** – This standard field prints a "Copy" caption on a receipt copy.
 
 - **Lines:** We recommend that you add the following standard fields:
 
@@ -439,10 +443,10 @@ In the Receipt format designer, add the following custom fields to the appropria
     - **Sequential number** – This field prints the sequential number of a signed sales transaction.
     - **Digital signature** – This field prints the extract from the digital signature.
     - **Reprint number** – This field prints the number of a receipt copy. For an original receipt, the value is **0** (zero).
-    - **Reprint date** - This field prints the date of a receipt copy.
-    - **Reprint time 12H** or **Reprint time 24H** - This field prints the time of a receipt copy in the selected format.
-    - **Reprint digital signature** - This field prints an extract from the digital signature of a receipt copy.
-    - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued to Microsoft Dynamics 365 Commerce version 10 per the NF 525 certification requirements.
+    - **Reprint date** – This field prints the date of a receipt copy.
+    - **Reprint time 12H** or **Reprint time 24H** – This field prints the time of a receipt copy in the selected format.
+    - **Reprint digital signature** – This field prints an extract from the digital signature of a receipt copy.
+    - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued to Dynamics 365 Commerce version 10 per the NF 525 certification requirements.
     - **Text** – Add a text field, and specify the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts (for example, **Microsoft Dynamics 365 Commerce v.10**).
 
         > [!NOTE]
@@ -494,12 +498,12 @@ You must configure certificates that will be used for digital signing of records
 > [!NOTE]
 > You can use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing. Only certificates that have RSA-2048-bit or Elliptic Curve Digital Signature Algorithm (ECDSA) 224-bit minimum private keys are acceptable. Commerce supports only RSA-2048-bit or longer keys. If you want to use an ECDSA key, you must implement a customization.
 
-To configure certificates and certificate profiles to be used for digital signing, follow the steps that are described in [Set up certificate profiles](./certificate-profiles-for-retail-stores.md#set-up-certificate-profiles).
+To configure certificates and certificate profiles that can be used for digital signing, follow the steps in [Set up certificate profiles](./certificate-profiles-for-retail-stores.md#set-up-certificate-profiles).
 
-After you configure certificate profiles, go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**, select the connector technical profile that you created earlier, and on the **Settings** FastTab, specify the following parameters for digital signatures:
+After you configure certificate profiles, go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**, select the connector technical profile that you created earlier, and then, on the **Settings** FastTab, set the following parameters for digital signatures:
 
 - **Certificate profile** – Select the certificate profile that you configured earlier.
-- **Hash algorithm** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, for example **SHA256**.
+- **Hash algorithm** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET (for example, **SHA256**).
 - **Activate health check** – For more information about the health check feature, see [Fiscal registration health check](./fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
 
 Finally, on the **Commerce parameters** page (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**), you must specify the following parameters for digital signing on the Commerce headquarters side:
@@ -507,17 +511,17 @@ Finally, on the **Commerce parameters** page (**Retail and Commerce \> Headquart
 - **Certificate** – Select a certificate that is stored in Key Vault.
 - **Hash function** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA256**.
 - **Encoding** – Specify the encoding of the signed data, such as **UTF-8**.
-- You can also specify a number sequence to be used for automatic numbering of period grand total journals. On the **Number sequences** tab, select a record with **Reference** = **Period grand total journal**, and then select a number sequence code in it.
+- You can also specify a number sequence to use for automatic numbering of period grand total journals. On the **Number sequences** tab, select a record where the **Reference** field is set to **Period grand total journal**, and then select a number sequence code in it.
 
 > [!NOTE]
 > The following hash functions aren't acceptable: CRC16, CRC32, SHA-1, and MD5. Commerce supports only the SHA256, SHA384, and SHA512 hash functions. If you want to use a different hash function, you must implement a customization.
 
 ### Configure the Z report and archive export formats
 
-Depending on your purposes, you can download the electronic reporting (ER) configurations for the Z report and archive from the following sources:
+Depending on your purposes, you can download the ER configurations for the Z report and archive from the following sources:
 
-- If you do not need to customize ER configurations provided by Microsoft or create your own ER configurations, you can import the configurations provided by Microsoft from Microsoft Dynamics Lifecycle Services (LCS). For more information, see [Import a configuration from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Alternatively, you can [download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
-- If you need to customize ER configurations provided by Microsoft or create your own ER configurations, you must provision a Regulatory Configuration Services (RCS) environment. For more information about working with RCS, see [Import ER configurations from RCS](../../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md).
+- If you don't have to customize the ER configurations that are provided by Microsoft or create your own ER configurations, you can import the Microsoft-provided configurations from Microsoft Dynamics Lifecycle Services. For more information, see [Import a configuration from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Alternatively, you can [download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+- If you must customize the ER configurations that are provided by Microsoft or create your own ER configurations, you must provision a Regulatory Configuration Services (RCS) environment. For more information about how to work with RCS, see [Import ER configurations from RCS](../../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md).
 
 You must download the following versions (or later versions) of the configurations:
 
@@ -543,13 +547,13 @@ To enable audit events, you must reinitialize the Commerce extensible enumeratio
 
 ### Configure channel components
 
-> [!WARNING]
-> You should only implement the steps that are described in this section if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out-of-the-box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
+> [!IMPORTANT]
+> You should configure channel components only if you're using Commerce version 10.0.28 or earlier. As of version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you're using Commerce version 10.0.28 or earlier, and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
 
 To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-fi-deployment.md).
 
 > [!NOTE]
-> This version of the Commerce functionality for France is based on the [fiscal integration framework](./fiscal-integration-for-retail-channel.md). For information about the legacy digital signing sample for France, see [Deployment guidelines for cash registers for France (legacy)](./emea-fra-deployment.md). For guidelines about how to enable the fiscal integration functionality for France in existing environments that use the legacy digital signing sample, see [Migrate from legacy Commerce functionality for France](./emea-fra-fi-migration.md).
+> This version of the Commerce functionality for France is based on the [Fiscal integration framework](./fiscal-integration-for-retail-channel.md). For information about the legacy digital signing sample for France, see [Deployment guidelines for cash registers for France (legacy)](./emea-fra-deployment.md). For guidance about how to enable the fiscal integration functionality for France in existing environments that use the legacy digital signing sample, see [Migrate from legacy Commerce functionality for France](./emea-fra-fi-migration.md).
 
 ### Enable the digital signature in offline mode
 
@@ -565,7 +569,7 @@ To enable the digital signature in offline mode, you must follow these steps aft
 
 ## Compliance checklist
 
-This section describes basic scenarios that you can execute to validate that your environment is configured properly to comply with the cash register requirements for France. The following scenarios can be executed in a series, so that they constitute a comprehensive end-to-end compliance checklist. It is recommended that you start the validation with a clean database so that you can easily validate sequential numbers and perpetual amounts.
+This section describes basic scenarios that you can complete to validate that your environment is correctly configured so that it complies with the cash register requirements for France. These scenarios can be completed in a series, so that they constitute a comprehensive end-to-end compliance checklist. We recommend that you start the validation with a clean database, so that you can easily validate sequential numbers and perpetual amounts.
 
 1. [Preparation](#1-preparation)
 1. [Basic sale](#2-basic-sale)
@@ -582,251 +586,255 @@ This section describes basic scenarios that you can execute to validate that you
 1. [Process period grand total journal](#13-process-period-grand-total-journal)
 1. [Export and verify fiscal archive](#14-export-and-verify-fiscal-archive)
 
-#### How to validate a sales transaction
+### Validation
 
-To validate a digitally signed sales transaction after it is completed, follow these steps.
+#### Validate a sales transaction
 
-1. In POS:
-    
-    - Check that all [France-specific fields](#configure-receipt-formats) of the receipt, except for the fields related to receipt copy, are printed and have correct values. To check some of the fields, you need to follow the steps below in Commerce headquarters. 
-    
-1. In Commerce headquarters:
-    
-    1. Run the P-job to download retail transaction data to headquarters.
-    1. Open the **Store transactions** page and select the recently completed transaction.
-    1. Expand the **Fiscal transactions** FastTab and check that there is a fiscal transaction with a successful registration status.
-    1. The text in the **Fiscal register response** field is in the JSON format and contains the following: 
-        - Digital signature of the transaction
+To validate a digitally signed sales transaction after it's completed, follow these steps.
+
+1. In POS, verify that all [France-specific fields](#configure-receipt-formats) of the receipt, except the fields that are related to a receipt copy, are printed and have correct values. To check some of the fields, you must complete the next step.
+1. In Commerce headquarters, follow these steps:
+
+    1. Run the P-job to download retail transaction data to Commerce headquarters.
+    1. Open the **Store transactions** page, and select the recently completed transaction.
+    1. On the **Fiscal transactions** FastTab, verify that there is a fiscal transaction that has a successful registration status.
+    1. Verify that the text in the **Fiscal register response** field is in JavaScript Object Notation (JSON) format and contains the following information:
+
+        - The digital signature of the transaction
         - The string that was used for digital signing of the transaction
         - The signed transaction sequential number
-        - The thumbprint of the certificate used for digital signing
+        - The thumbprint of the certificate that is used for digital signing
         - The hash algorithm
-        - The version of the digital signing algorithm, which can later be used to verify the digital signature.
-    1. You can also select **Extended data** and view specific properties of the fiscal transaction, such as the signature, sequential number, certificate thumbprint, and hash algorithm identification.
-    1. Check that the signed transaction sequential number is equal to the sequential number of the previous signed sales transaction on the same register (if any) plus 1. This sequential number should also be printed in the **Sequential number** field of the receipt. 
+        - The version of the digital signing algorithm, which can be used later to verify the digital signature
+
+    1. You can also select **Extended data** and view specific properties of the fiscal transaction, such as the signature, sequential number, certificate thumbprint, and hash algorithm identifier.
+    1. Verify that the signed transaction sequential number equals the sequential number of the previous signed sales transaction on the same register (if there is any previous signed sales transaction) plus 1. This sequential number should also be printed in the **Sequential number** field of the receipt.
     1. Check the string that was used for [digital signing of the transaction](#digital-signing-of-sales-and-return-transactions). Validate the amounts of the transaction, the register number, and other data. Check the previous signature for the same register.
-    1. Check that the **Digital signature** field of the receipt contains an extract from the digital signature of the transaction and consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
-    1. Note the sequential number of the signed transaction and its digital signature to use for further validation of the next transaction.
+    1. Verify that the **Digital signature** field of the receipt contains an extract from the digital signature of the transaction, and that it consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
+    1. Note the sequential number of the signed transaction and its digital signature, so that you can use this information for further validation of the next transaction.
 
-#### How to validate a shift
-    
-To validate a digitally signed shift after it is closed, follow these steps.
+#### Validate a shift
 
-1. In POS:
-    
-    1. Check that all [France-specific fields](#x-and-z-reports) of the Z-report are printed and have correct values. To check some of the fields, you need to follow the steps below in headquarters. 
-    
-1. In Commerce headquarters:
+To validate a digitally signed shift after it's closed, follow these steps.
 
-    1. Run the P-job to download retail transaction data to headquarters.
-    1. Open the **Shifts** page and select the recently closed shift.
-    1. Compare France-specific fields (that is, **Total sales**, **Total returns**, **Grand total**, **Cumulative perpetual grand total**, and **Cumulative perpetual grand total (absolute value)**) with those printed in the Z-report.
-    1. Select **Shift tax transactions**, compare the VAT amounts per tax rate with those printed in the Z-report, and then close the **Shift tax transactions** page.
-    1. On the **Shifts** page, select **Audit events**. The audit event that was registered when the shift was closed should be displayed, and the **Log string** field should contain the shift number.
-    1. Open the **Fiscal registration results** FastTab and check that there's a fiscal transaction with the successful registration status.
-    1. The text in the **Fiscal register response** field is in the JSON format and contains the following:
+1. In POS, verify that all [France-specific fields](#x-and-z-reports) of the Z-report are printed and have correct values. To check some of the fields, you must complete the next step.
+1. In Commerce headquarters, follow these steps:
+
+    1. Run the P-job to download retail transaction data to Commerce headquarters.
+    1. Open the **Shifts** page, and select the recently closed shift.
+    1. Compare France-specific fields (that is, **Total sales**, **Total returns**, **Grand total**, **Cumulative perpetual grand total**, and **Cumulative perpetual grand total (absolute value)**) with the fields that are printed on the Z-report.
+    1. Select **Shift tax transactions**, compare the VAT amounts per tax rate with the VAT amounts that are printed on the Z-report, and then close the **Shift tax transactions** page.
+    1. On the **Shifts** page, select **Audit events**. The audit event that was registered when the shift was closed should be shown, and the **Log string** field should contain the shift number.
+    1. On the **Fiscal registration results** FastTab, verify that there is a fiscal transaction that has a successful registration status.
+    1. Verify that the text in the **Fiscal register response** field is in JSON format and contains the following information:
+
         - The digital signature of the shift
         - The string that was used for digital signing of the shift
         - The signed shift sequential number
         - The thumbprint of the certificate that is used for digital signing
         - The hash algorithm
-        - The version of the digital signing algorithm, which can later be used to verify the digital signature.
-    1. Check that the signed shift sequential number is equal to the sequential number of the previous signed closed shift on the same register (if any) plus 1.
+        - The version of the digital signing algorithm, which can be used later to verify the digital signature
+
+    1. Verify that the signed shift sequential number equals to the sequential number of the previous signed closed shift on the same register (if there is any previous signed closed shift) plus 1.
     1. Check the string that was used for [digital signing of the shift](#digital-signing-of-closed-shifts). Validate the amounts of the shift and other data. Check the previous signature for the same register.
-    1. Note the sequential number of the signed shift and its digital signature to use for further validation of the next shift.
-    
-#### How to validate an audit event
-    
-To validate a digitally signed audit even, follow these steps:
+    1. Note the sequential number of the signed shift and its digital signature, so that you can use this information for further validation of the next shift.
 
-1. In Commerce headquarters:
+#### Validate an audit event
 
-    1. Run the P-job to download audit event data to headquarters.
-    1. Open the **Audit events** page and select an audit event. You can use the **Store number**, **Register number**, **Event type**, **Date**, and **Time** fields to find the event. The **Log string** field contains the description of the event.
-    1. Open the **Fiscal registration results** FastTab and check that there is a fiscal transaction with a successful registration status.
-    1. The text in the **Fiscal register response** field is in the JSON format and contains the following:
-        - The digital signature of the event
-        - The string that was used for digital signing of the event
-        - The signed event sequential number
-        - The thumbprint of the certificate that is used for digital signing
-        - The hash algorithm
-        - The version of the digital signing algorithm, which can later be used to verify the digital signature.
-    1. Check that the signed event sequential number is equal to the sequential number of the previous signed event of the same event sequence type on the same register (if any) plus 1.
-    
+To validate a digitally signed audit event, follow these steps.
+
+1. In Commerce headquarters, run the P-job to download audit event data to Commerce headquarters.
+1. Open the **Audit events** page, and select an audit event. You can use the **Store number**, **Register number**, **Event type**, **Date**, and **Time** fields to find the event. The **Log string** field contains the description of the event.
+1. On the **Fiscal registration results** FastTab, verify that there is a fiscal transaction that has a successful registration status.
+1. Verify that the text in the **Fiscal register response** field is in JSON format and contains the following information:
+
+    - The digital signature of the event
+    - The string that was used for digital signing of the event
+    - The signed event sequential number
+    - The thumbprint of the certificate that is used for digital signing
+    - The hash algorithm
+    - The version of the digital signing algorithm, which can be used later to verify the digital signature
+
+1. Verify that the signed event sequential number equals the sequential number of the previous signed event of the same event sequence type on the same register (if there is any previous signed event) plus 1.
+
     > [!NOTE]
-    > Only the [France-specific](#registration-of-audit-events) audit events are signed. The following three separate sequences of digitally signed audit events are maintained per register. Audit events that are not digitally signed are excluded from these sequences.
-    > - Sequence of **Shift closed** audit events that are registered when shifts are closed.
-    > - Sequence of **Receipt copy printed** audit events that are registered when receipt copies are printed.
-    > - Sequence of other signed audit events.
-    
-    1. Check the string that was used for [digital signing of the event](#digital-signing-of-events). Validate the predefined event code, description of the event, and other data. Check the previous signature of the event of the same event sequence type for the same register.
-    1. Note the sequential number of the signed event and its digital signature to use them for further validation of the next event.
-    
+    > Only the [France-specific audit events](#registration-of-audit-events) are signed. The following three sequences of digitally signed audit events are maintained per register. Audit events that aren't digitally signed are excluded from these sequences.
+    >
+    > - The sequence of **Shift closed** audit events that are registered when shifts are closed
+    > - The sequence of **Receipt copy printed** audit events that are registered when receipt copies are printed
+    > - The sequence of other signed audit events
+
+1. Check the string that was used for [digital signing of the event](#digital-signing-of-events). Validate the predefined event code, the description of the event, and other data. Check the previous signature of the event of the same event sequence type for the same register.
+1. Note the sequential number of the signed event and its digital signature, so that you can use this information for further validation of the next event.
+
 ### 1. Preparation
 
-1. In Commerce headquarters:
+1. In Commerce headquarters, follow these steps:
 
     1. [Set up Commerce for France](#set-up-commerce-for-france).
-    1. Execute appropriate distribution jobs or the **9999** "All jobs" job.
+    1. Run appropriate distribution jobs or the **9999** (**All jobs**) job.
 
-1. In POS:
-    
-    1. Sign in to POS and open a new shift.
-    1. Go to the **Settings** page.
-    1. Select **View details** in the **NF 525 certification** field group under the **France** section**.
-    1. In the **NF 525 certification** dialog box, review the software name and version, as well as the certification category and the NF 525 certificate number.
-    1. Go to the **Current transaction** page, add several items, and pay the exact amount.
-    1. Return to **Home** and select **Show journal**
-    1. On the **Transaction journal** page, select the previous sales transaction and return one item from it. Pay the exact amount.
+1. In POS, follow these steps:
+
+    1. Sign in to POS, and open a new shift.
+    1. Open the **Settings** page.
+    1. Under **France**, in the **NF 525 certification** section, select **View details**.
+    1. In the **NF 525 certification** dialog box, review the software name and version, the certification category, and the NF 525 certificate number.
+    1. On the **Current transaction** page, add several items, and pay the exact amount.
+    1. Return to **Home**, and select **Show journal**.
+    1. On the **Transaction journal** page, select the previous sales transaction, and return one item from it. Pay the exact amount.
     1. Close the shift.
-    1. [Validate the transactions](#how-to-validate-a-sales-transaction) and note the sequential number of the last signed transaction (that is, the return transaction) and its digital signature to use them for further validation of the following scenarios.
-    1. [Validate the shift](#how-to-validate-a-shift) and note the sequential number of the signed shift, its digital signature, its cumulative perpetual grand total, and the cumulative perpetual grand total of absolute values of sales and returns to use them for further validation of the following scenarios.
-    
+    1. [Validate the transactions](#validate-a-sales-transaction). Note the sequential number of the last signed transaction (that is, the return transaction) and its digital signature, so that you can use this information for further validation in later scenarios.
+    1. [Validate the shift](#validate-a-shift). Note the sequential number of the signed shift, its digital signature, its cumulative perpetual grand total, and the cumulative perpetual grand total of absolute values of sales and returns, so that you can use this information for further validation in later scenarios.
+
 ### 2. Basic sale
 
-1. Log in to POS and open a new shift, if it's not open yet.
-1. On the **Current transaction** page, add several items and pay the exact amount.
-1. [Validate the transaction](#how-to-validate-a-sales-transaction).
+1. Sign in to POS, and open a new shift if it isn't open yet.
+1. On the **Current transaction** page, add several items, and pay the exact amount.
+1. [Validate the transaction](#validate-a-sales-transaction).
 
 ### 3. Basic return
 
-1. Sign in to POS and open a new shift, if it's not open yet.
-1. On the **Current transaction** page, add an item and then select **Return product**. Select or specify a reason code, if needed.
+1. Sign in to POS, and open a new shift if it isn't open yet.
+1. On the **Current transaction** page, add an item, and then select **Return product**. Select or specify a reason code as required.
 1. Pay the exact amount.
-1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the amounts in the string that is used for digital signing of the transaction are negative, but the type of the transaction is still **Sales**. This is because for digital signing purposes, return transactions are considered regular sales transactions. Similarly, the **Transaction type** field of the receipt should read **Sales**.
+1. [Validate the transaction](#validate-a-sales-transaction). Note that the amounts in the string that is used for digital signing of the transaction are negative, but the type of the transaction is still **Sales**. For digital signing purposes, return transactions are considered regular sales transactions. Likewise, the **Transaction type** field of the receipt should specify **Sales**.
 
 ### 4. Issue gift card
 
-1. Sign in to POS and open a new shift, if it's not open yet.
-1. On the **Current transaction** page, select **Issue gift card** and then specify the number of a new gift card and the amount to add to it.
+1. Sign in to POS, and open a new shift if it isn't open yet.
+1. On the **Current transaction** page, select **Issue gift card**, and then specify the number of the new gift card and the amount to add to it.
 1. Pay the exact amount.
-1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is not digitally signed. No signature is printed in the receipt.
+1. [Validate the transaction](#validate-a-sales-transaction). Note that the transaction isn't digitally signed. No signature is printed on the receipt.
 1. In POS, on the **Current transaction** page, add several items.
-1. Select **Issue gift card** and specify the number of a new gift card and the amount to add to it.
+1. Select **Issue gift card**, and specify the number of the new gift card and the amount to add to it.
 1. Pay the exact amount.
-1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the gift card amount is excluded from the total amount of the sales transaction in both the receipt and the transaction data that was used to digitally sign it.
+1. [Validate the transaction](#validate-a-sales-transaction). Note that the gift card amount is excluded from the total amount of the sales transaction, both on the receipt and in the transaction data that was used to digitally sign it.
 
 ### 5. Customer order
 
-1. Sign in to POS and open a new shift, if it's not open yet.
+1. Sign in to POS, and open a new shift if it isn't open yet.
 1. On the **Current transaction** page, add several items.
 1. Add a customer to the transaction.
 1. Select **Create customer order**.
 1. Select **Pick up all**, select a store and date, and then confirm the operation.
 1. Pay the exact amount (that is, the deposit).
-1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is not digitally signed. No signature is printed on the receipt.
-1. In POS, select **Recall order** and find the previously created order.
+1. [Validate the transaction](#validate-a-sales-transaction). Note that the transaction isn't digitally signed. No signature is printed on the receipt.
+1. In POS, select **Recall order**, and find the previously created order.
 1. Select **Pick up**, specify the pick-up quantities, and then confirm the operation.
 1. Pay the exact amount.
-1. [Validate the transaction](#how-to-validate-a-sales-transaction). Validate that the total amount of the sales transaction includes picked-up items only. The amount of the applied deposit is not excluded from the total amount.
+1. [Validate the transaction](#validate-a-sales-transaction). Validate that the total amount of the sales transaction includes only picked-up items. The amount of the applied deposit isn't excluded from the total amount.
 
 ### 6. Hybrid customer order
 
-1. Sign in to POS and open a new shift, if it's not open yet.
+1. Sign in to POS, and open a new shift if it isn't open yet.
 1. On the **Current transaction** page, add several items.
 1. Add a customer to the transaction.
 1. Select **Create customer order**.
 1. Select **Pick up all**, select a store and date, and confirm the operation.
-1. Add an item and select **Carry out selected**.
+1. Add an item, and select **Carry out selected**.
 1. Pay the exact amount (that is, the deposit), plus the amount of the item that is marked as **Carry out**.
-1. [Validate the transaction](#how-to-validate-a-sales-transaction). Validate that the receipt contains a digital signature, and the total amount of the sales transaction includes the carry-out item only.
-1. In POS, select **Recall order** and find the previously created order.
+1. [Validate the transaction](#validate-a-sales-transaction). Validate that the receipt contains a digital signature, and that the total amount of the sales transaction includes only the carry-out item.
+1. In POS, select **Recall order**, and find the previously created order.
 1. Select **Pick up**, specify the pick-up quantities, and confirm the operation.
 1. Pay the exact amount.
-1. [Validate the transaction](#how-to-validate-a-sales-transaction). Validate that the total amount of the sales transaction includes picked-up items only. The amount of the applied deposit is not excluded from the total amount.
+1. [Validate the transaction](#validate-a-sales-transaction). Validate that the total amount of the sales transaction includes only picked-up items. The amount of the applied deposit isn't excluded from the total amount.
 
 ### 7. Sale in offline mode
 
-1. Sign in to POS and open a new shift, if it's not open yet.
+1. Sign in to POS, and open a new shift if it isn't open yet.
 1. Use the **Database connection status** operation to manually disconnect POS from the Commerce Scale Unit and switch POS to offline mode.
-1. On the **Current transaction** page, add several items and pay the exact amount.
-1. Use the **Database connection status** operation to manually connect POS to the Commerce Scale Unit and switch POS to the online mode, and wait until the synchronization between the offline DB and channel DB is completed.
-1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is digitally signed and the sequence of digital signatures is not broken.
+1. On the **Current transaction** page, add several items, and pay the exact amount.
+1. Use the **Database connection status** operation to manually connect POS to the Commerce Scale Unit and switch POS to the online mode. Wait until the synchronization between the offline database and the channel database is completed.
+1. [Validate the transaction](#validate-a-sales-transaction). Note that the transaction is digitally signed, and the sequence of digital signatures isn't broken.
 
 ### 8. Non-sale transaction (expense)
 
-1. Sign in to POS and open a new shift, if it's not open yet.
-1. Execute the **Expense accounts** operation, select an expense account, specify the expense amount, and confirm the operation.
+1. Sign in to POS, and open a new shift if it isn't open yet.
+1. Run the **Expense accounts** operation, select an expense account, specify the expense amount, and confirm the operation.
 1. Pay the exact amount.
-1. [Validate the transaction](#how-to-validate-a-sales-transaction). Note that the transaction is not digitally signed. No signature is printed on the receipt.
+1. [Validate the transaction](#validate-a-sales-transaction). Note that the transaction isn't digitally signed. No signature is printed on the receipt.
 
 ### 9. Print receipt copy
 
-1. Sign in to POS and open a new shift, if it's not open yet.
-1. On the **Current transaction** page, add several items and pay the exact amount.
+1. Sign in to POS, and open a new shift if it isn't open yet.
+1. On the **Current transaction** page, add several items, and pay the exact amount.
 1. Return to **Home**, select **Show journal**, and select the recently completed sales transaction.
-1. Select **Show receipt** and in the receipt preview, select **Print \> Print this**.
-1. Review the printed receipt copy. Note the **Copy** caption in the receipt. Check the data of the copy, such as the **Reprint number** (it should be equal to 1), **Reprint date**, **Reprint time**, and the extract from the digital signature of the copy.
+1. Select **Show receipt**, and then, in the receipt preview, select **Print \> Print this**.
+1. Review the printed receipt copy. Note the "Copy" caption on the receipt. Check the data of the copy, such as the **Reprint number** value (it should be **1**), the **Reprint date** and **Reprint time** values, and the extract from the digital signature of the copy.
 1. Close the receipt preview.
-1. [Validate the receipt copy audit event](#how-to-validate-an-audit-event). The audit event has the **Receipt copy printed** type. Check that the **Reprint digital signature** field of the receipt copy contains an extract from the digital signature of the audit event and consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
-1. In POS, on the **Transaction journal** page, select the recently completed sales transaction, select **Show receipt**, and in the receipt preview, select **Print \> Print this**. This action prints the second copy of the same receipt.
-1. Review the printed receipt copy. Check that **Reprint number** is now increased to 2.
-1. [Validate the receipt copy audit event](#how-to-validate-an-audit-event). The audit event has the **Receipt copy printed** type. Check that the signed event sequential number is equal to the sequential number of the previous receipt copy event plus 1. Check that the string that was used for [digital signing of the receipt copy event](#digital-signing-of-receipt-copies) contains the signature of the previous receipt copy event.
+1. [Validate the receipt copy audit event](#validate-an-audit-event). The audit event has the **Receipt copy printed** type. Verify that the **Reprint digital signature** field of the receipt copy contains an extract from the digital signature of the audit event, and that it consists of a concatenation of the third, seventh, thirteenth, and nineteenth symbols of the signature.
+1. In POS, on the **Transaction journal** page, select the recently completed sales transaction. Select **Show receipt**, and then, in the receipt preview, select **Print \> Print this**. A second copy of the same receipt is printed.
+1. Review the printed receipt copy. Verify that **Reprint number** value is now increased to **2**.
+1. [Validate the receipt copy audit event](#validate-an-audit-event). The audit event has the **Receipt copy printed** type. Verify that the signed event sequential number equals the sequential number of the previous receipt copy event plus 1. Verify that the string that was used for [digital signing of the receipt copy event](#digital-signing-of-receipt-copies) contains the signature of the previous receipt copy event.
 
 ### 10. Audit events
-    
-1. Sign in to POS and open a new shift, if it's not open yet.
+
+1. Sign in to POS, and open a new shift if it isn't open yet.
 1. On the **Current transaction** page, add several items.
-1. Select a transaction line and select **Void line**.
+1. Select a transaction line, and select **Void line**.
 1. Pay the exact amount.
 1. Add several items to a new transaction.
-1. Select **Void transaction** and confirm the operation.
-1. [Validate the audit events](#how-to-validate-an-audit-event). The audit events have the **Item voided** and **Transaction voided** types, respectively.
+1. Select **Void transaction**, and confirm the operation.
+1. [Validate the audit events](#validate-an-audit-event). One has the **Item voided** type, and the other has the **Transaction voided** type.
 
 ### 11. Close shift and print Z-report
 
-1. Sign in to POS and open a new shift, if it's not open yet.
-1. On the **Current transaction** page, add several items and pay the exact amount.
-1. Return to **Home** and select **Show journal**
-1. On the **Transaction journal** page, select the previous sales transaction and return one item from it. Pay exact amount.
-1. Return to **Home** and select **Close shift**.
-1. [Validate the shift](#how-to-validate-a-shift).
+1. Sign in to POS, and open a new shift if it isn't open yet.
+1. On the **Current transaction** page, add several items, and pay the exact amount.
+1. Return to **Home**, and select **Show journal**
+1. On the **Transaction journal** page, select the previous sales transaction, and return one item from it. Pay the exact amount.
+1. Return to **Home**, and select **Close shift**.
+1. [Validate the shift](#validate-a-shift).
 
 ### 12. Shift duration restriction
 
-1. In Commerce headquarters:
+1. In Commerce headquarters, follow these steps:
+
     1. Open the **POS functionality profiles** page.
-    1. Make sure the **Enforce daily shift closing** checkbox is set to **Yes**.
-    1. Set **Shift closing time** to a time that is 20 minutes after the current time.
-    1. Set shift closing interval to 10 minutes and save the record.
+    1. Make sure that the **Enforce daily shift closing** option is set to **Yes**.
+    1. Set the **Shift closing time** field to a time that is 20 minutes after the current time.
+    1. Set the shift closing interval to 10 minutes, and save the record.
     1. Run the **1070** distribution job.
-1. In POS:
-    1. Sign in to POS and open a new shift, if it's not open yet. You should start the shift more than 10 minutes before the specified shift closing time.
-    1. On the **Current transaction** page, add several items and pay the exact amount. No error or warning should occur.
-    1. Wait until the current time is the specified shift closing time minus five (5) minutes.
-    1. On the **Current transaction** page, add an item. The following warning should appear: *You must close the shift by \<specified shift closing time\>.* However,  the line should be added successfully.
-    1. Pay the exact amount. The same warning should occur but the sale should be completed successfully.
-    1. On the **Current transaction** page, add an item. The same warning should occur.
+
+1. In POS, follow these steps:
+
+    1. Sign in to POS, and open a new shift if it isn't open yet. You should start the shift more than 10 minutes before the specified shift closing time.
+    1. On the **Current transaction** page, add several items, and pay the exact amount. You should not receive any error or warning.
+    1. Wait until the current time is the specified shift closing time minus five minutes.
+    1. On the **Current transaction** page, add an item. You should receive the following warning: "You must close the shift by \<specified shift closing time\>." However, the line should be successfully added.
+    1. Pay the exact amount. You should receive the same warning, but the sale should be successfully completed.
+    1. On the **Current transaction** page, add an item. You should receive the same warning.
     1. Wait until the current time is later than the specified shift closing time.
-    1. Try to pay the exact amount. The following error should be raised: *Shift duration exceeds the limit. Suspend the transaction, close the shift and open a new shift.* and the payment shouldn't be successful.
+    1. Try to pay the exact amount. You should receive the following error: "Shift duration exceeds the limit. Suspend the transaction, close the shift and open a new shift." The payment should not be successful.
     1. Suspend the transaction.
     1. Close the shift.
     1. Recall the transaction.
-    1. Pay the exact amount. No error or warning should occur.
+    1. Pay the exact amount. You should not receive any error or warning.
 
 ### 13. Process period grand total journal
 
-Execute the following scenario in Commerce headquarters:
-
-1. Run the P-job to download retail sales data to headquarters.
+1. In Commerce headquarters, run the P-job to download retail sales data to Commerce headquarters.
 1. Create and post all retail statements for the fiscal period.
 1. Open the **Period grand total journal** page.
 1. Create a new journal.
-1. Specify the **Journal** number, if it's not set automatically.
-1. Select the **Store number**.
-1. If this is the first journal for the selected store, you must select the **To date**. You can select any date from a fiscal period, and the **From date** and **To date** will be populated automatically as the first and the last day, correspondingly, of the fiscal period that the selected date belongs to. Otherwise, if this is not the first journal for the store, the **From date** and the **To date** will be populated automatically as the first and the last day, correspondingly, of the fiscal period that is next to the latest fiscal period for which a closed journal exists.
-1. Select **Functions \> Calculate journal**. The **Status** of the journal should change to **Calculated**.
-1. Select **Shifts** and verify that proper shifts are included in the journal, that is, all shifts that were closed during the period of the journal. Close the **Shifts** page.
-1. Verify the journal totals on the **Amounts** tab. Check the **Total sales amount**, **Total returns amount**, and **Grand total** fields. Check that the **Perpetual grand total** and **Perpetual grand total (absolute value)** amounts are equal to the ones of the last closed shift included in the journal.
-1. Select **Tax totals** and verify the period totals per tax rate.
-1. Select **Functions \> Close journal**. The **Status** of the journal should change to **Closed**, and the journal should be digitally signed. Check the digital signature details on the **Signature details** FastTab. The **Signed data** field contains the string that was used for [digital signing of the journal](#period-grand-total-journal). Validate the amounts of the journal and other data. Check the previous journal signature for the same store.
+1. In the **Journal** field specify the journal number, if it isn't automatically set.
+1. In the **Store number** field, select the store number.
+1. If the journal is the first journal for the selected store, you must select the "to" date in the **To date** field. You can select any date in a fiscal period, and the **From date** and **To date** fields will automatically be set to the first and the last day of the fiscal period that the selected date belongs to.
+
+    If the journal isn't the first journal for the store, the **From date** and the **To date** fields are automatically set to the first and the last day of the fiscal period that is next to the latest fiscal period that a closed journal exists for.
+
+1. Select **Functions \> Calculate journal**. The **Status** value of the journal should change to **Calculated**.
+1. Select **Shifts**, and verify that correct shifts are included in the journal. In other words, verify that all shifts that were closed during the period of the journal are included. Close the **Shifts** page.
+1. On the **Amounts** tab, verify the journal totals. Check the **Total sales amount**, **Total returns amount**, and **Grand total** fields. Verify that the **Perpetual grand total** and **Perpetual grand total (absolute value)** amounts equal the amounts of the last closed shift that is included in the journal.
+1. Select **Tax totals**, and verify the period totals per tax rate.
+1. Select **Functions \> Close journal**. The **Status** value of the journal should change to **Closed**, and the journal should be digitally signed. Check the digital signature details on the **Signature details** FastTab. The **Signed data** field contains the string that was used for [digital signing of the journal](#period-grand-total-journal). Validate the amounts of the journal and other data. Check the previous journal signature for the same store.
 
 ### 14. Export and verify fiscal archive
 
-1. In Commerce headquarters:
-    1. Open the **Period grand total journal** page and select a closed period grand total journal.
-    1. Select **Archive \> Export archive**, specify the name of the export file, and confirm the operation. You must also disable the pop-up blocker of the browser, so that that export can complete.
-    1. Verify that the exported file is a ZIP archive that contains XML and SIGN files.
-1. To verify the exported fiscal archive, follow the steps that are described in [Fiscal archive for France](./emea-fra-fiscal-archive.md#fiscal-archive-integrity-verification-tool).
+1. In Commerce headquarters, open the **Period grand total journal** page, and select a closed period grand total journal.
+1. Select **Archive \> Export archive**, specify the name of the export file, and confirm the operation. You must also disable the pop-up blocker of the browser, so that that export can be completed.
+1. Verify that the exported file is a zip archive that contains XML and SIGN files.
+1. To verify the exported fiscal archive, follow the steps in [Fiscal archive for France](./emea-fra-fiscal-archive.md#fiscal-archive-integrity-verification-tool).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
