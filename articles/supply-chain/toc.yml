@@ -1637,6 +1637,8 @@
           href: inventory/inventory-locations.md
         - name: Inventory statuses
           href: inventory/inventory-statuses.md
+        - name: Use batch disposition codes to mark batches as available or unavailable
+          href: inventory/batch-disposition-codes.md
         - name: Create a new warehouse layout
           href: inventory/tasks/create-new-warehouse-layout.md
         - name: Maintain bar code types
