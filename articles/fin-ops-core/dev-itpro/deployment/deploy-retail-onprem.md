@@ -48,7 +48,7 @@ Before you can start installation of channel components, you must first complete
 ## Installation steps
 
 1. On the previously created [Application share](setup-deploy-on-premises-pu41.md#setupfile), (not the **LocalAgent** share folder), create a new folder called **selfservicepackages** in the root directory of the share location.  
-2. On each AOS node, create an easily accessible directory, such as **C:\selfservicepackages**.
+2. On each AOS node, create an easily accessible directory, such as **C:\RetailSelfService**.
 3. On one AOS node (doesn't matter which one), run the RetailUpdateDatabase.ps1 script. If you used the remoting scripts, this script will be available in each AOS node in this path `C:\D365FFO-LBD`.
 
      If your commerce headquarters is on version 10.0.0 or later execute
@@ -58,7 +58,7 @@ Before you can start installation of channel components, you must first complete
 
      If your commerce headquarters is on a version prior to 10.0.0 execute
      ```powershell
-     .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:\selfservicepackages**>' -SendProductSupportTelemetryToMicrosoft
+     .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:\RetailSelfService**>' -SendProductSupportTelemetryToMicrosoft
      ```
 
      - The parameter **-envName** is the name assigned to the environment in Lifecycle Services when it was originally deployed.
@@ -71,14 +71,14 @@ Before you can start installation of channel components, you must first complete
 4. On each AOS node, run the following PowerShell script.
 
      ```powershell
-     .\RetailUpdateDatabase.ps1 -RetailSelfServicePackages 'C:\selfservicepackages'
+     .\RetailUpdateDatabase.ps1 -RetailSelfServicePackages 'C:\RetailSelfService\Packages'
      ```
 
     > [!NOTE]
-    > The parameter **-RetailSelfServicePackages** is the full path location created in the beginning of this step (**C:\selfservicepackages**).
+    > The parameter **-RetailSelfServicePackages** is the full path location created in the beginning of this step (**C:\RetailSelfService**).
 
 5. Download the appropriate binary update from LCS to have the Commerce installers. For instructions, see [Download updates from Lifecycle Services (LCS)](../migration-upgrade/download-hotfix-lcs.md).
-6. Extract the zip file and copy all self-service installers into the folder **C:\selfservicepackages** defined and created in step 2 in each of the AOS machines. The six self-service installers include: 
+6. Extract the zip file and copy all self-service installers into the folder **C:\RetailSelfService** defined and created in step 2 in each of the AOS machines. The six self-service installers include: 
     - AsyncServerConnectorServiceSetup.exe
     - RealtimeServiceAX63Setup.exe
     - HardwareStationSetup.exe
