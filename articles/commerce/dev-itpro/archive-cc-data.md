@@ -75,7 +75,7 @@ After you select **Yes**, the archival job becomes active, and all XML data abou
 ## Further storage management with token compression
 
 > [!IMPORTANT]
-> To utilize the below **compress payment tokens** feature, your system, including the Point-of-Sale versions, must be updated to **10.0.25 or later**.
+> To utilize the below **compress payment tokens** feature, your system, including the Point-of-Sale versions, must be updated to **10.0.25 or later** (with POS Version 9.35 or later).
 
 To decrease the footprint of underlying storage tables, you can compress tokens by enabling the **Compress payment tokens** feature. Enabling this feature flag will allow the system to use compression on stored payment property tokens. 
 
