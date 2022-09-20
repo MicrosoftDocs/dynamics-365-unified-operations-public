@@ -102,24 +102,16 @@ Before you can start installation of channel components, you must first complete
 
      > [!NOTE]
      > It is critical to keep this secret safe. This secret should only be copied once and never stored on the system. The Client ID and Secret generated will be used during the Commerce Scale Unit installer, so it is required to be used at a later time. You can always reset the secret again, but it must then be updated on any Commerce Scale Unit that used the previous secret.
-     > It is possible that steps 11 through 17 below will already have been completed, with values added and the connector fully configured. If this is the case, skip steps 10 through 16 and continue on to step 17. What is important is to have a selectable profile title ("Default" in this case).
-    
-10.  Go to **Retail and Commerce \> Headquarters setup \> Commerce scheduler \> Connector for Microsoft Dynamics AX**.
-11.  Select **Edit** on the Action pane.
-12.  In the **Profile** field, enter the value "Default".  If needed, enter a description in the **Description** field.
-13.  In the  **Web application name** field, enter **RetailCDXRealTimeService**.
-14.  In the **Protocol** field, select **https**.
-15.  In the **Common name** field, enter **AXServiceUser@contoso.com**.
-16.  Select **Save** on the Action Pane.
-17.  In Headquarters, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
-18.  Select the **Security** tab.
-19.  Under the sub-heading **Transaction service legacy properties**, select the **Real-time Service profile** field, and then select the newly created **Default** value.
-20.  Select the **Identity providers** tab.
-21.  On the **Identity providers** FastTab, select **Add**.
-22.  In the new **Issuer** row, enter the new Identity provider value **https://sts.windows.net/** in the field.
-23.  Select **Save** on the Action Pane.
-24.  Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
-25.  On the **General** tab, select the **Initialize** link to configure seed data for Commerce functionality.
+
+10. In Headquarters, go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce shared parameters**.
+11. Select the **Security** tab.
+12. Under the sub-heading **Transaction service legacy properties**, select the **Real-time Service profile** field, and then select the newly created **Default** value.
+13. Select the **Identity providers** tab.
+14. On the **Identity providers** FastTab, select **Add**.
+15. In the new **Issuer** row, enter the new Identity provider value **https://sts.windows.net/** in the field.
+16. Select **Save** on the Action Pane.
+17. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
+18. On the **General** tab, select the **Initialize** link to configure seed data for Commerce functionality.
 
      > [!NOTE]
      > - Read the important message at the beginning of this article regarding a known issue with installers no longer functioning through headquarters for download.
@@ -130,7 +122,7 @@ Before you can start installation of channel components, you must first complete
      > .\RetailUpdateDatabase.ps1 -envName '<Environment name>' -UpdateRetailHardwareProfileSelfServicePackage
      > ```
 
-26.	Follow the installation steps for installing the Commerce Scale Unit. For instructions, see [Configure and install Commerce Scale Unit (self-hosted)](../../../commerce/dev-itpro/retail-store-scale-unit-configuration-installation.md).  At multiple locations in this document there will be notes referencing changes to the instructions for an on-premises deployment. It is important to note each of these changes. 
+19. Follow the installation steps for installing the Commerce Scale Unit. For instructions, see [Configure and install Commerce Scale Unit (self-hosted)](../../../commerce/dev-itpro/retail-store-scale-unit-configuration-installation.md).  At multiple locations in this document there will be notes referencing changes to the instructions for an on-premises deployment. It is important to note each of these changes. 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
