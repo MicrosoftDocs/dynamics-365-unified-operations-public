@@ -4,7 +4,7 @@ description: Finite capacity planning and scheduling let you understand how much
 author: t-benebo
 ms.date: 09/19/2022
 ms.topic: article
-ms.search.form:
+ms.search.form: ReqParameters, ReqPlanSched, WrkCtrTable
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -61,15 +61,15 @@ You must enable finite capacity planning and scheduling for each resource where 
 
 This section provides the following examples of how to work with both infinite and finite capacity planning and scheduling:
 
-- Example 1 – Infinite capacity
-- Example 2 – Finite capacity with time fence 1 day
-- Example 3 – Finite capacity with time fence 2 days
+- Example 1 – Infinite capacity planning
+- Example 2 – Finite capacity planning with a time fence of one day
+- Example 3 – Finite capacity planning with a time fence of two days
 
 ### Preconditions
 
 Each of the examples assumes the preconditions described in this section.
 
-There is a product *Product-1* with route that contains the operations listed in the following table.
+There is a product *Product1* with route that contains the operations listed in the following table.
 
 | Operation no. | Operation name | Resource        | Run time | Process qty. | Next |
 |---------------|----------------|-----------------|----------|--------------|------|
@@ -78,81 +78,76 @@ There is a product *Product-1* with route that contains the operations listed in
 
 Workers at your company work in one shift for 8 hours (8:00 – 16:00).
 
-There is a scheduled production order for *24 pcs* of *Product-1* with delivery date of *Today + 3 days*.
+There is a scheduled production order for *24 pcs* of *Product1* with delivery date of *Today + 3 days*.
 
 As a result of planning, the system loads the resources as follows:
 
-- **Welding line** – Loaded from *Today at 8:00* until *Today + 1 day at 12:00*
-- **Assembling line** – Loaded from *Today + 1 day at 12:00* until *Today + 2 days at 10:00*.
+- **Welding line** – Loaded from *Today at 8:00* until *Today + 1 at 12:00*
+- **Assembling line** – Loaded from *Today + 1 at 12:00* until *Today + 2 at 10:00*.
 
 The following image shows the resulting Gantt chart (select to enlarge).
 
 [![Gantt chart showing preconditions.](media/finite-examples-conditions-small.png "Gantt chart showing preconditions")](media/finite-examples-conditions.png)
 
-### Example 1 – Infinite capacity
+### Example 1 – Infinite capacity planning
 
 This example shows planning results when you use infinite capacity planning instead of finite capacity planning.
 
-The master plan as the following relevant setting:
+The master plan as the following relevant setting, which disables finite capacity planning for this plan:
 
-- **Finite capacity:** *No* <!-- KFM: Continue here. -->
+- **Finite capacity:** *No*
 
-Resource:
+Both relevant resources are likewise disabled for finite capacity planning due to the following settings:
 
-Welding line: **Finite capacity** = *No*
+- Welding line  – **Finite capacity:** *No*
+- Assembling line  – **Finite capacity:** *No*
 
-Assembling line: **Finite capacity** = *No*
+Now you add a new sales order for *8 pcs* of *Product1* and run the plan. Therefore, the system will load the welding line from *today at 8:00* until *today at 12:00*. After finishing operations on the welding line, the assembling line will be loaded from *today at 12:00* until *today at 14:00*.
 
-A new Sales order for 8 pcs for *Product-1* is added
+The following image shows the resulting Gantt chart (select to enlarge).
 
-As the result of planning the system will load Welding line starting from Today 8:00 till Today 12:00 and after finishing operations on Welding line, Assembling line will be load from Today 12:00 till 14:00.
+[![Gantt chart showing an infinite capacity planning example.](media/finite-examples-example1-small.png "Gantt chart showing an infinite capacity planning example")](media/finite-examples-example1.png)
 
-The Gantt diagram you can find on the picture below:
+### Example 2 – Finite capacity planning with a time fence of one day
 
-![](media/image2.emf)
+This example shows planning results when you use finite capacity planning with a time fence of one day.
 
-### Example 2 – Finite capacity with time fence 1 day
+The master plan as the following relevant settings, which enable finite capacity planning and set a time fence for this plan:
 
-Master plan:
+- **Finite capacity:** *Yes*
+- **Finite capacity time fence:** *1*
 
-**Finite capacity** = *Yes*
+Both relevant resources are likewise enabled for finite capacity planning due to the following settings::
 
-**Finite capacity time fence** = 1
+- Welding line  – **Finite capacity:** *Yes*
+- Assembling line  – **Finite capacity:** *Yes*
 
-Resource:
+Now you add a new sales order for *8 pcs* of *Product1* and run the plan. Therefore, the system will load the welding line from *today + 1 at 8:00* until *today + 1 at 12:00*. After finishing operations on the welding line, the assembling line will be loaded from *today + 1 at 12:00* until *today + 1 at 14:00*. The system considers the finite capacity only for one day.
 
-Welding line: **Finite capacity** = *Yes*
+The following image shows the resulting Gantt chart (select to enlarge).
 
-Assembling line: **Finite capacity** = *Yes*
+[![Gantt chart showing finite capacity planning with a time fence of one day.](media/finite-examples-example2-small.png "Gantt chart showing finite capacity planning with a time fence of one day")](media/finite-examples-example2.png)
 
-A new Sales order for 8 pcs for *Product-1* is added
+### Example 3 – Finite capacity planning with a time fence of two days
 
-Considering added Sales order and as the result of planning the system will load Welding line starting from Today+1 8:00 till Today+1 12:00 and after finishing operations on Welding line, Assembling line will be load from Today+1 12:00 till 14:00. The system considers the Finite capacity only for 1 day.
+This example shows planning results when you use finite capacity planning with a time fence of two days.
 
-The Gantt diagram you can find on the picture below:
+The master plan as the following relevant settings, which enable finite capacity planning and set a time fence for this plan:
 
-![](media/image3.emf)
+- **Finite capacity:** *Yes*
+- **Finite capacity time fence:** *2*
 
-### Example 3 – Finite capacity with time fence 2 days
 
-Master plan:
+Both relevant resources are likewise enabled for finite capacity planning due to the following settings::
 
-**Finite capacity** = *Yes*
+- Welding line  – **Finite capacity:** *Yes*
+- Assembling line  – **Finite capacity:** *Yes*
 
-**Finite capacity time fence** = 2
+Now you add a new sales order for *8 pcs* of *Product1* and run the plan. Therefore, the system will load the welding line from *today + 1 at 12:00* until *today + 1 at 16:00*. After finishing operations on the welding line, the assembling line will be loaded from *today + 2 at 8:00* until *today + 2 at 10:00*. The system considers the finite capacity only for two days.
 
-Resource:
+The following image shows the resulting Gantt chart (select to enlarge).
 
-Welding line: **Finite capacity** = *Yes*
+[![Gantt chart showing finite capacity planning with a time fence of two days.](media/finite-examples-example3-small.png "Gantt chart showing finite capacity planning with a time fence of two days")](media/finite-examples-example3.png)
 
-Assembling line: **Finite capacity** = *Yes*
-
-A new Sales order for 8 pcs for *Product-1* is added
-
-Considering added Sales order and as the result of planning the system will load Welding line starting from Today+1 12:00 till Today+1 16:00 and after finishing operations on Welding line, Assembling line will be load from Today+2 8:00 till 10:00. The system considers the Finite capacity for 2 days.
-
-The Gantt diagram you can find on the picture below:
-
-![](media/image4.emf)
-
-It is always recommended to set the time fence for finite capacity to fit your business needs, the above examples are to showcase the functionality and a day of finite capacity would be too low for most manufacturers.
+> [!NOTE]
+> You should always set the finite-capacity time fence as required to fit your business needs. The examples provided in this article simply illustrate the functionality. In reality, a single-day time fence would probably be too low for most manufacturers using finite capacity planning.
