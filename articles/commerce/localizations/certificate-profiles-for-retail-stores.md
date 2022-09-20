@@ -51,7 +51,7 @@ The following procedure explains how to set up certificate profiles.
 
 The following steps must be completed before you can use a digital certificate that is stored in Key Vault.
 
-1. Create a Key Vault storage account. It is recommended that you deploy the storage account in the same geographical region as the Commerce Scale Unit.
+1. Create a Key Vault storage account. We recommend that you deploy the storage account in the same geographical region as the Commerce Scale Unit.
 1. Upload the digital certificate to the Key Vault storage account.
 1. Authorize the Application Object Server (AOS) application to read secrets from the Key Vault storage account.
 
@@ -63,7 +63,7 @@ Before you configure certificate profiles in the Commerce channels, you must ena
 
 To set up system parameters in Commerce headquarters, follow these steps.
 
-1. On the **System parameters** page, set the **Use advanced certificate store** parameter to **Yes**.
+1. On the **System parameters** page, set the **Use advanced certificate store** option to **Yes**.
 1. In the **Feature management** workspace, turn on the **User-defined certificate profiles for retail stores** feature.
 
 ### Set up Key Vault parameters
@@ -80,23 +80,26 @@ For more information, see [Set up the Azure Key Vault client](../../finance/loca
 
 ### Configure a certificate profile
 
-Tto configure a certificate profile in Commerce headquarters, follow these steps.
+To configure a certificate profile in Commerce headquarters, follow these steps.
 
 1. Go to **System administration \> Setup \> Certificate profiles**.
-1. On the action pane, select **+New** to create a record. 
-1. Enter values for **Certificate profile**, **Name**, and **Description**.
+1. On the Action Pane, select **New** to create a record.
+1. Enter values in the **Certificate profile**, **Name**, and **Description** fields.
 
     > [!NOTE]
     > The certificate profile is a unique identifier of a certificate across all companies and Commerce components.
 
-1. On the **Legal entities** FastTab, select **+Add** to add a line.
-1. Under **Legal entity**, select the legal entity (company) that the current certificate profile should be used for. If the certificate profile should be used for multiple legal entities, repeat this step to add a line for each additional legal entity.
-1. Select **Settings** to open the **Certificate profile settings** page, where you can enter company-specific settings for the certificate profile. Specify which certificates can be used when the current certificate profile is called in the Commerce channels. Add as many certificates as you require, and set priorities for the certificates. If a certificate that has a higher priority isn't available, the next certificate will be used, based on priority. For more information, see [Workflow: Searching certificates in the Commerce runtime](#workflow-searching-certificates-in-the-commerce-runtime).
+1. On the **Legal entities** FastTab, select **Add** to add a line.
+1. Under **Legal entity**, select the legal entity (company) that the current certificate profile should be used for.
+
+    If the certificate profile should be used for multiple legal entities, repeat steps 4 and 5 to add a line for each additional legal entity.
+
+1. Select **Settings** to open the **Certificate profile settings** page, where you can enter company-specific settings for the certificate profile. Specify which certificates can be used when the current certificate profile is called in the Commerce channels. Add as many certificates as you require, and set priorities for them. If a certificate that has a higher priority isn't available, the next certificate will be used, based on priority. For more information, see the [Workflow: Searching certificates in the Commerce runtime](#workflow-searching-certificates-in-the-commerce-runtime) section.
 
     > [!NOTE]
-    > The **Priority** field is automatically set. A value of **1** represents the highest priority. When a new line is added on the **Certificate profile settings** page, its priority is set to a number that is one more than the priority of the previous line. To change the priority of a specific line, select the line, and then select either **Move up** to increase the priority, or **Move down** to decrease the priority.
+    > The **Priority** field is automatically set. A value of **1** represents the highest priority. When a new line is added on the **Certificate profile settings** page, its priority is set to a number that is one more than the priority of the previous line. To change the priority of a specific line, select the line, and then select either **Move up** to increase the priority or **Move down** to decrease the priority.
 
-1. When you add a new line to the **Certificate profile settings** page, set values for the following fields:
+1. When you add a new line on the **Certificate profile settings** page, set the following fields:
 
     - **Location type** – Select the location where the certificate is stored. This field has two possible values: **Local certificate** and **Key Vault**.
     - **Key Vault certificate** – This field is required if you set the **Location type** field to **Key Vault**. Use it to specify a Key Vault certificate secret.
@@ -104,14 +107,14 @@ Tto configure a certificate profile in Commerce headquarters, follow these steps
     - **Store location** – This field is optional and is available only if you set the **Location type** field to **Local certificate**. Use it to specify a default store location that should be used to search local certificates.
 
         > [!NOTE]
-        > The default store name and store location are added to simplify the process of searching local certificates in the Commerce runtime. X509StoreProvider has a list of folders where certificates are stored. If the default store name and the default store location aren't specified, X509StoreProvider tries to find a certificate in the other folders on its list. For more information about available values for the store name and store location, see [StoreName Enum](/dotnet/api/system.security.cryptography.x509certificates.storename) and [StoreLocation Enum](//dotnet/api/system.security.cryptography.x509certificates.storelocation).
+        > The default store name and store location are added to simplify the process of searching local certificates in the Commerce runtime. X509StoreProvider has a list of folders where certificates are stored. If the default store name and the default store location aren't specified, X509StoreProvider tries to find a certificate in the other folders in its list. For more information about available values for the store name and store location, see [StoreName Enum](/dotnet/api/system.security.cryptography.x509certificates.storename) and [StoreLocation Enum](//dotnet/api/system.security.cryptography.x509certificates.storelocation).
 
-    - **Thumbprint** – This field is required and only available if you set the **Location type** field to **Local certificate**. Use it to specify the certificate thumbprint.
- 
+    - **Thumbprint** – This field is required and is available only if you set the **Location type** field to **Local certificate**. Use it to specify the certificate thumbprint.
+
         > [!IMPORTANT]
-        > You must ensure that the user that runs the application that needs to use the local certificate (for example, Modern POS in the offline mode) has at least read-only access to the private key of the certificate.
+        > You must ensure that the user who runs the application that has to use the local certificate (for example, Modern POS in the offline mode) has at least read-only access to the private key of the certificate.
 
-    - **Comments** – This field is optional and allows users to enter notes.
+    - **Comments** – This field is optional and lets users enter notes.
 
 ## Workflow: Searching certificates in the Commerce runtime
 
