@@ -68,7 +68,7 @@ Follow these steps to set up the tax that is involved in a transfer order. In th
         7. Select **Save**.
         
         Create the tax code **BE-RC+21**.
-        1. Select **Add**, enter **BE-RC-21** in the **Tax code** field.
+        1. Select **Add**, enter **BE-RC+21** in the **Tax code** field.
         2. Select **By Net Amount** in the **Tax component** field.
         3. Select **Save**.
         4. Select **Add** in the **Rate** table.
