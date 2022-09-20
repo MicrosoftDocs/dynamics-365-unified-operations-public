@@ -143,6 +143,37 @@ You can combine this format with other types that were described earlier in this
 $DisplayListOfItemsNumbers()[1]$
 ```
 
+<!-- Moved out of 10.0.31 to 10.0.32
+
+### Print with header, row, and footer layout
+You can format your label layout into a header, row, and footer format by using the **Header**, **Row**, and **Footer** commands.
+The below is an example of a label containing data about the packed inventory in a container.
+
+```dos
+{{Header
+^XA
+    ... ZPL commands which will get printed on every label
+}}
+    ... this part goes on the first label ...
+    ... Container Id: $WHSContainerTable.ContainerId$ ...
+    ... Shipment: $WHSShipmentTable.ShipmentId$ ...
+{{Row Table=WHSContainerLine RowsPerLabel=10 StartY=500 IncY=100
+    ... ZPL commands to format the row ...
+    ... Use the *$position.YPos$* to position the location of the text fields, and use fields like $WHSContainerLine.ItemId$ etc. ... 
+}}
+    ... this part goes on the last label ... 
+{{Footer
+    ... Label: $position.labelNumber$/$position.labelCount$
+    ... some of the ZPL that closes every label ... 
+^XZ
+}}
+```
+
+> [!NOTE]
+    > This setup will loop over container lines and spit out a label per 10 container lines. By using *RowsPerLabel=1* you will generate a label per line.
+    >  
+    > This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the container), set the **n** value for the **\^PQn** section in the footer to the required number of copies. For example, to print two copies of each label, specify **\^PQ2**.
+-->
 ### More information about how to print labels
 
 For more information about how to set up and print labels, see:
