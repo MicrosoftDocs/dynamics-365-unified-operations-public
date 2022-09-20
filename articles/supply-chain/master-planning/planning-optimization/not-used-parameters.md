@@ -110,8 +110,8 @@ Planning Optimization doesn't use the following parameters or options on the **M
   - **Override on hand** – Pending *Consumption of on-hand inventory* support.
   - **Consume on-hand inventory** – Pending *Consumption of on-hand inventory* support.
   - **Include inventory transactions** – Pending *Consumption of on-hand inventory* support.
-  - **Include sales quotations** – Pending *Sales quotations* support.
-  - **Include request for quotations** – Pending *Request for quotations* support.
+  - **Include sales quotations** – Pending *Sales quotations* support. <!-- KFM: @beatriz: remove? -->
+  - **Include request for quotations** – Pending *Request for quotations* support. <!-- KFM: @beatriz: remove? -->
   - **Use shelf life dates** – Pending *Shelf life* support.
   - **Include continuity plan** – Pending *Continuity scheduling* support.
   - **Scheduling method** – Pending *Scheduling* support.
