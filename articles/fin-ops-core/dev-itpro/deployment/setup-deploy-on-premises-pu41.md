@@ -948,7 +948,7 @@ Finance + Operations requires additional configuration of AD FS, beyond the defa
     ```
 
     > [!WARNING]
-    > If your AD FS is set up to work with Microsoft 365 (formerly Office 365) for single sign-on, this step will break that scenario.
+    > If your AD FS is set up to work with Microsoft 365 (formerly Office 365) for single sign-on, this step will break that scenario. Do not run the command above if you will use the AD FS Microsoft 365 compatibility deployment option.
     >
     > To ensure that the scenario continues to work, you can specify a deployment option to adapt your Dynamics 365 for Finance + Operations installation to that requirement. For more information, see [AD FS Microsoft 365 compatibility](./onprem-adfscompatibility.md).
 
