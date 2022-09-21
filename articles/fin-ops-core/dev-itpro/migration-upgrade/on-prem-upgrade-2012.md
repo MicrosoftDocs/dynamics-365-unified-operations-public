@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 10.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This article describes the process for upgrading Microsoft Dynamics AX 2012 databases to Dynamics 365 Finance + Operations (on-premises) version 10.0.x. Currently, upgrade is supported only from either Dynamics AX 2012 R2 or Dynamics AX 2012 R3. 
-
 > [!IMPORTANT]
+> Upgrade is currently only supported from either Dynamics AX 2012 R2 or Dynamics AX 2012 R3. For each release, please update to the latest available cumulative update before upgrading to latest finance and operations application release.
+>
 > This article explains the process for doing a data upgrade only. For information about how to do a code upgrade, see the upgrade guides that are available for cloud versions. The code upgrade tooling is available only through Microsoft Dynamics Lifecycle Services (LCS).
 
 ## AX 2012 upgrade to Dynamics 365 Finance + Operations (on-premises)
@@ -49,7 +49,6 @@ Two upgrade methods are currently supported:
 ### Prerequisites
 
 1. [Sign up for a preview subscription](upgrade-overview-2012.md#sign-up-for-a-preview-subscription).
-1. For each AX 2012 release, update to the most recent cumulative update that is available before you upgrade to the most recent Finance + Operations application release.
 1. Install the pre-upgrade checklist. For more information, see [Installation](prepare-data-upgrade.md#installation).
 1. Go through the data upgrade preparation steps. You can skip the "Set up user mapping" step. This step is relevant only for cloud-hosted upgrades.
 1. Make a backup of your database (MicrosoftDynamicsAX). For more information, see [Create a Full Database Backup](/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server).
@@ -73,7 +72,7 @@ If you will use a VHD to perform the data upgrade, you must also be aware of the
 
 If you will use a Dynamics 365 environment to perform the data upgrade, the following prerequisites must be in place:
 
-1. A Dynamics 365 Finance + Operations (on-premises) environment has been deployed by using a demo data backup.
+1. A Dynamics 365 Finance + Operations (on-premises) environment with version 10.0.31 or later has been deployed using a demo data backup.
 1. The latest quality update has been applied to your environment.
 1. If you have any extensions or customizations, apply them to your environment now. Otherwise, the upgrade process will remove any data that is related to customizations. If you must prepare your environment before the upgrade, check with your independent software vendor (ISV) or value-added reseller (VAR).
 
