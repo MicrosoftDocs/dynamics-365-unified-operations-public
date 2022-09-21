@@ -81,7 +81,7 @@ If you're using a SQL Server database, follow the instructions in [Upgrading to 
 
 1. If your new farm/instance endpoint differs from the old farm/instance endpoint, be sure to update the endpoint in Microsoft Dynamics Lifecycle Services (LCS) by selecting the **Update Settings** option and setting the **ADFS OpenID metadata endpoint** field to the new value.
 
-1. If your new farm/instance identifier differs from the old farm/instance identifier you will need to update the user info table so it reflects the new configuration. Starting with version 2.17.0 of the infrastructure scripts you can run the following command from one of your AOS nodes to automatically update and regenerate the configuration of each user.
+1. If your new farm/instance identifier differs from the old farm/instance identifier, you must update the user info table so that it reflects the new configuration. As of version 2.17.0 of the infrastructure scripts, you can run the following command from one of your AOS nodes to automatically update and regenerate the configuration of each user.
 
     ```powershell
     .\Reset-SID.ps1 -AxsfCodePath 'C:\ProgramData\SF\AOS_13\Fabric\work\Applications\AXSFType_App184\AXSF.Code.1.0.20190902'
