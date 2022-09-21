@@ -49,24 +49,24 @@ Before you can start installation of channel components, you must first complete
 
 1. On the previously created [Application share](setup-deploy-on-premises-pu41.md#setupfile), (not the **LocalAgent** share folder), create a new folder called **selfservicepackages** in the root directory of the share location.  
 2. On each AOS node, create an easily accessible directory, such as **C:\RetailSelfService**.
-3. On one AOS node (doesn't matter which one), run the RetailUpdateDatabase.ps1 script. If you used the remoting scripts, this script will be available in each AOS node in this path `C:\D365FFO-LBD`.
+3. On one AOS node (it doesn't matter which node), run the RetailUpdateDatabase.ps1 script. If you used the remoting scripts, this script will be available in each AOS node in this path `C:\D365FFO-LBD`.
 
-     If your commerce headquarters is on version 10.0.0 or later execute
+     If your commerce headquarters is on version 10.0.0 or later, run the following PowerShell script.
      ```powershell
      .\RetailUpdateDatabase.ps1 -envName '<Environment name>' -AosUrl 'https://ax.d365ffo.onprem.contoso.com/namespaces/AXSF/' -SendProductSupportTelemetryToMicrosoft
      ```
 
-     If your commerce headquarters is on a version prior to 10.0.0 execute
+     If your commerce headquarters is on a version prior to 10.0.0, run the following PowerShell script.
      ```powershell
      .\RetailUpdateDatabase.ps1 -DatabaseServer '<Database server name for AOS database>' -DatabaseName '<Database name for AOS database>' -envName '<Environment name>' -RetailSelfServicePackages '<Local path of Retail self-service packages, such as **C:\RetailSelfService**>' -SendProductSupportTelemetryToMicrosoft
      ```
 
-     - The parameter **-envName** is the name assigned to the environment in Lifecycle Services when it was originally deployed.
-     - The parameter **-SendProductSupportTelemetryToMicrosoft** is a required value to enable telemetry to Microsoft.  This is critical to maximize support from Microsoft.
-     - This script will perform a variety of actions, including updating the Service user and role and updating registry keys.
+     - The parameter **-envName** is the name assigned to the environment in Microsoft Dynamics 365 Lifecycle Services (LCS) when it was originally deployed.
+     - The parameter **-SendProductSupportTelemetryToMicrosoft** is required to enable telemetry to Microsoft. This is critical to maximize support from Microsoft.
+     - This script performs a variety of actions, including updating the Service user and role, and updating registry keys.
 
     > [!IMPORTANT]
-    > There is currently a known issue where self-service packages will not correctly apply to on-premises environments. For that reason it is recommended to pull the installers directly from Microsoft Dynamics Lifecycle Services (LCS) and use them as needed. Commerce headquarters would thereby no longer be used to download the installers but only the configuration files as needed.
+    > There is currently a known issue where self-service packages don't correctly apply to on-premises environments. For that reason it is recommended you pull the installers directly from LCS and use them as needed. Commerce headquarters would thereby no longer be used to download the installers but only the configuration files as needed.
 
 4. On each AOS node, run the following PowerShell script.
 
