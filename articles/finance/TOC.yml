@@ -2516,6 +2516,8 @@
           href: localizations/emea-cze-hun-year-end.md
         - name: Online invoicing system
           href: localizations/emea-hun-online-invoicing.md
+        - name: VAT declaration (Hungary)
+          Href: localizations/emea-hun-vat-declaration-hungary.md
         - name: Sales tax reports for Hungary
           href: localizations/emea-hun-sales-tax-reports.md
         - name: Hungarian Intrastat
