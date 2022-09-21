@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.12
 
 > [!IMPORTANT]
 > This functionality requires version 10.0.12 for finance and operations apps, while service update 189 is required for Microsoft Dataverse. The release information for Dataverse is published on the [latest version availability page](/business-applications-release-notes/dynamics/released-versions/dynamics-365ce#all-version-availability).
-
+>
 > The public entity name that is exposed in Dataverse metadata for the finance and operations virtual entity uses the physical name of the finance and operations entity. This could be different from the public name of the entity as exposed by the OData metadata.
 
 Building an app requires capabilities to perform relational modeling between entities that are being used in the app. In the context of virtual entities, there will be scenarios where virtual entities and native entities in Dataverse must work together to enable the desired user experience. This article explains concepts of relational modeling that can be implemented using virtual entities for finance and operations.
@@ -55,7 +55,7 @@ The rest of this section describes supported and unsupported data types. For mor
 | String (non-memo), String (memo)    | String – single line of text, String – multiple lines of text |
 | UtcDateTime                         | DateTime (DateTimeFormat.DateAndTime, DateTimeBehavior.TimeZoneIndependent)<br><br>An empty date (January 1, 1900) in finance and operations is surfaced as a null value in Dataverse. |
 | Date                                | DateTime - (DateTimeFormat.DateOnly, DateTimeBehavior.TimeZoneIndependent)<br><br>An empty date (January 1, 1900) in finance and operations is surfaced as an empty value in Dataverse. |
-| Enum                                | Picklist<br><br>finance and operations enumerations (enums) are generated as global OptionSets in Dataverse. Matching between the systems is done by using the **External Name** property of values. Enum integer values in Dataverse aren't guaranteed to be stable between the systems. Therefore, you should not rely on them, especially in the case of extensible enums, because these enums don't have a stable ID either. OptionSet metadata is updated when an entity that uses the OptionSet is updated. |
+| Enum                                | Picklist<br><br>Finance and operations enumerations (enums) are generated as global OptionSets in Dataverse. Matching between the systems is done by using the **External Name** property of values. Enum integer values in Dataverse aren't guaranteed to be stable between the systems. Therefore, you should not rely on them, especially in the case of extensible enums, because these enums don't have a stable ID either. OptionSet metadata is updated when an entity that uses the OptionSet is updated. |
 
 Fields of the *real* and *long* data types in finance and operations apps are modeled as the *decimal* data type in Dataverse. Because of the mismatch in precision and scale between the two data types, the following behavior must be considered.
 
