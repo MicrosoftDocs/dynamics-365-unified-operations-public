@@ -4,7 +4,7 @@
 title: Entity modeling
 description: This article explains relational modeling concepts using virtual entities for finance and operations entities.
 author: Sunil-Garg
-ms.date: 07/21/2020
+ms.date: 09/16/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form:
 audience: Developer, IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 # ms.custom: NotInToc
 ms.search.region: Global
@@ -45,7 +45,7 @@ By default, virtual entities for finance and operations apps don't exist in Data
 
 When a virtual entity is generated for a finance and operations entity, the system tries to create each field in the finance and operations entity in the corresponding virtual entity in Dataverse. In an ideal case, the total number of fields will be the same in both entities, unless there is a mismatch in supported data types between finance and operations and Dataverse. For data types that are supported, the field properties in Dataverse are set based on the properties in finance and operations.
 
-This rest of this section describes supported and unsupported data types. For more information about fields in Dataverse, see [Fields overview](/powerapps/maker/common-data-service/fields-overview).
+The rest of this section describes supported and unsupported data types. For more information about fields in Dataverse, see [Fields overview](/powerapps/maker/common-data-service/fields-overview).
 
 | Data type in finance and operations | Modeled data type in Dataverse |
 |-------------------------------------|------------------------------------------|
@@ -102,6 +102,9 @@ In Dataverse, each entity must have a primary field. This field must be a single
 Based on this use of the primary field in Dataverse, the primary field for a virtual entity for finance and operations is designed to use the entity key of the corresponding entity in finance and operations.
 
 Because the primary field in Dataverse is expected to have only one field of the string type, whereas the entity key in finance and operations can have multiple fields of various data types, the entity key fields are converted to strings. The strings are concatenated and separated by a pipe (\|), to a maximum length of 255 characters. Any value that exceeds 255 is truncated. This virtual entity field that represents the primary field is named **mserp\_primaryfield**.
+
+> [!NOTE]
+> After a virtual entity for finance and operations apps is generated in the associated Dataverse environment, the primary key and primary field can't be modified. To change a primary field, you must remove the entity from the Dataverse environment. For information about how to disable virtual entities and remove the entity metadata from the Dataverse environment, see [Disable virtual entities](enable-virtual-entities.md#disable-virtual-entities). After the primary fields are changed in the finance and operations app, you can then re-enable the entity. For information, see [Generate virtual entities](enable-virtual-entities.md#generate-virtual-entities).
 
 ## Relations
 
@@ -173,7 +176,7 @@ This relationship looks like a typical GUID-based relationship, but has extra me
 
 ### Native entity–to–virtual entity relationships
 
-<!--HERE-->Native entity–to–virtual entity relationships works much like native entity–to–native entity relationships. Users associate native records with virtual records in finance and operations, and the GUID of the virtual entity is saved on the native entity record. As was explained earlier, the entities that participate in a relationship will have the GUID field of the related entity on them. Therefore, when a quotation in Dataverse is associated with a customer in a finance and operations virtual entity, the GUID of the customer virtual entity will be saved in the quotation entity. This behavior enables records to be retrieved as expected, by using standard Dataverse functionality.
+Native entity–to–virtual entity relationships work much like native entity–to–native entity relationships. Users associate native records with virtual records in finance and operations, and the GUID of the virtual entity is saved on the native entity record. As was explained earlier, the entities that participate in a relationship will have the GUID field of the related entity on them. Therefore, when a quotation in Dataverse is associated with a customer in a finance and operations virtual entity, the GUID of the customer virtual entity will be saved in the quotation entity. This behavior enables records to be retrieved as expected, by using standard Dataverse functionality.
 
 ## Enums
 

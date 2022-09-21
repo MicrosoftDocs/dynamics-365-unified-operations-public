@@ -92,6 +92,9 @@ To view the data for the query:
 6. Enter the following in the query options:
     - **Start date**: The date and time of the beginning of the range for which you want to see the API usage data.
     - **End date**: The date and time of the end of the range for which you want to see the API usage data.
+      > [!NOTE]
+      > The maximum range of time allowed for the query is 20 minutes. Do not set the **End date** value more than 20 minutes from the **Start date** value.
+      
     - **User object ID**: The Azure Active Directory (AAD) user object ID of the user.
     - **Application ID**: The AAD application ID of the integrating application using the APIs.
 7. Select **Search**.
