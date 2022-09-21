@@ -43,7 +43,7 @@ By default, virtual entities for finance and operations apps don't exist in Data
 
 ## Entity fields
 
-When a virtual entity is generated for a finance and operations entity, the system tries to create each field in the finance and operations entity in the corresponding virtual entity in Dataverse. In an ideal case, the total number of fields will be the same in both entities, unless there is a mismatch in supported data types between the finance and operations apps and Dataverse. For data types that are supported, the field properties in Dataverse are set based on the properties in finance and operations.
+When a virtual entity is generated for a finance and operations entity, the system tries to create each field in the finance and operations entity in the corresponding virtual entity in Dataverse. In an ideal case, the total number of fields will be the same in both entities, unless there is a mismatch in supported data types between the finance and operations apps and Dataverse. For data types that are supported, the field properties in Dataverse are set based on the properties in the finance and operations app.
 
 The rest of this section describes supported and unsupported data types. For more information about fields in Dataverse, see [Fields overview](/powerapps/maker/common-data-service/fields-overview).
 
