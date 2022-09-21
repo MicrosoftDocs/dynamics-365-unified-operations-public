@@ -80,6 +80,39 @@ During the label generation process the system can replace field and method name
 > Note, that in case you remove tables from a existing query you might risk removing field/method names already used in existing label layouts.
 > In the **Label layout** you can now select the created **Label layout data source ID**
 
+<!-- 10.0.32?
+#### Print with header, row, and footer layout
+When making more advanced label layouts you can benefit from using some of the widely available label generation tools described in [Document routing label layout](document-routing-layout-for-license-plates.md).
+Additionally you can select the **???** setting for the label layout which will enable formatting your label layout into a header, row, and footer format by using the **Header**, **Row**, and **Footer** commands.
+The below is an example of a label containing data about packed items in a container.
+
+```dos
+{{Header
+^XA
+    ... ZPL commands which will get printed on every label ...
+}}
+    ... This part goes on the first label ...
+    ... Example - Container Id: $WHSContainerTable.ContainerId$ ...
+    ... Example - Shipment Id: $WHSShipmentTable.ShipmentId$ ...
+{{Row Table=WHSContainerLine RowsPerLabel=10 StartY=500 IncY=100
+    ... ZPL commands to format the row ...
+    ... Use the *$position.YPos$* to position the location of the text fields ...
+    ... and use fields like $WHSContainerLine.ItemId$ etc. ... 
+}}
+    ... This part goes on the last label ... 
+{{Footer
+    ... Label: $position.labelNumber$/$position.labelCount$
+    ... Here goes the ZPL commands that closes every label ... 
+^XZ
+}}
+```
+
+> [!NOTE]
+    > This setup will loop over container lines and spit out a label per 10 container lines. By using *RowsPerLabel=1* you will generate a label per line.
+    >  
+    > This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the container), set the **n** value for the **\^PQn** section in the footer to the required number of copies. For example, to print two copies of each label, specify **\^PQ2**.
+-->
+
 ### Create a container label rounting
 To define which container label layouts to use and where to print you need to define a **Container label routing**.
 
