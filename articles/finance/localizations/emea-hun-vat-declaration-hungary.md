@@ -1626,49 +1626,35 @@ For more information about how to configure reverse charge VAT, see [Reverse cha
 
 In Hungary, you can generate a report 65M that contains the following information for each vendor:
 
--The number of purchase invoices, and their total tax base and tax amount
-
--The number of corrective invoices, and their total tax base and tax amount
-
--The list of all purchase invoices in section 65M-02, regardless of the threshold
-
--The list of corrective invoices in section 65M-02-K, regardless of the threshold
+- The number of purchase invoices, and their total tax base and tax amount
+- The number of corrective invoices, and their total tax base and tax amount
+- The list of all purchase invoices in section 65M-02, regardless of the threshold
+- The list of corrective invoices in section 65M-02-K, regardless of the threshold
 
 A list of purchase invoices 65M-02 lists all the purchase invoices for the period. For each invoice, it contains the following information:
 
--The invoice number.
-
--The fulfillment date. The fulfillment date is the date when the goods are sold or the services are performed. If an invoice doesn't have a fulfillment date, the invoice date is used.
-
--The tax base in 1,000 Hungarian forints (HUF).
-
--The tax amount in 1,000 HUF.
-
--The marking of the final invoice that is received after receipt of the advance invoice.
+- The invoice number.
+- The fulfillment date. The fulfillment date is the date when the goods are sold or the services are performed. If an invoice doesn't have a fulfillment date, the invoice date is used.
+- The tax base in 1,000 Hungarian forints (HUF).
+- The tax amount in 1,000 HUF.
+- The marking of the final invoice that is received after receipt of the advance invoice.
 
 A list of corrective invoices 65M-02-K lists all the corrective invoices. For each corrective invoice and its original invoice, it contains the following information:
 
--The invoice or corrective invoice number
-
--The line type "E" for original invoice or "KT" for corrective invoice
-
--The original invoice number for the line for a corrective invoice
-
--The original invoice fulfillment date for the line for a corrective invoice
-
--The invoice or corrective invoice fulfillment date
-
--The tax base in 1,000 HUF
-
--The tax amount in 1,000 HUF
+- The invoice or corrective invoice number
+- The line type "E" for original invoice or "KT" for corrective invoice
+- The original invoice number for the line for a corrective invoice
+- The original invoice fulfillment date for the line for a corrective invoice
+- The invoice or corrective invoice fulfillment date
+- The tax base in 1,000 HUF
+- The tax amount in 1,000 HUF
 
 The following are examples show how report 65M is filled in.
 
 ### Example 1: Corrective invoice
 
-* **August 1, 2022 (01.08.2022)**: Purchase invoice Inv1 for a 1,000,000 HUF tax base and a 270,000 HUF tax amount.
-
-* **August 20, 2022 (20.08.2022)**: Corrective invoice CN1 for a -100,000 HUF tax base and a -27,000 HUF tax amount.
+- **August 1, 2022 (01.08.2022)**: Purchase invoice Inv1 for a 1,000,000 HUF tax base and a 270,000 HUF tax amount.
+- **August 20, 2022 (20.08.2022)**: Corrective invoice CN1 for a -100,000 HUF tax base and a -27,000 HUF tax amount.
 
 **Report for August 2022**
 
@@ -1795,11 +1781,9 @@ _65M-02-K_
 
 ### Example 2: Corrective invoice to multiple original invoices
 
-* **August 2, 2022 (02.08.2022)**: Purchase invoice Inv2 for a 1,000,000 HUF tax base and a 270,000 HUF tax amount.
-
-* **August 3, 2022 (03.08.2022)**: Purchase invoice Inv3 for a 1,000,000 HUF tax base and a 270,000 HUF tax amount.
-
-* **August 22, 2022 (22.08.2022)**: Corrective invoice CN2 for a -200,000 HUF tax base and a -54,000 HUF tax amount, where -100,000 HUF are correcting Inv2, and -100,000 HUF are correcting Inv3.
+- **August 2, 2022 (02.08.2022)**: Purchase invoice Inv2 for a 1,000,000 HUF tax base and a 270,000 HUF tax amount.
+- **August 3, 2022 (03.08.2022)**: Purchase invoice Inv3 for a 1,000,000 HUF tax base and a 270,000 HUF tax amount.
+- **August 22, 2022 (22.08.2022)**: Corrective invoice CN2 for a -200,000 HUF tax base and a -54,000 HUF tax amount, where -100,000 HUF are correcting Inv2, and -100,000 HUF are correcting Inv3.
 
 **Report for August 2022**
 
@@ -1989,9 +1973,8 @@ _65M-02-K_
 
 ### Example 3: Advance invoice for partial amount
 
-* **August 3, 2022 (03.08.2022)**: Invoice for prepayment Inv4 for a 1,000,000 HUF tax base and a 270,000 HUF tax amount.
-
-* **August 23, 2022 (23.08.2022)**: Final invoice (minus the invoice for the prepayment) Inv 5 for a 2,000,000 HUF tax base (= 3,000,000 – 1,000,000) and a 54 000 HUF tax amount (= 81,000 – 27,000).
+- **August 3, 2022 (03.08.2022)**: Invoice for prepayment Inv4 for a 1,000,000 HUF tax base and a 270,000 HUF tax amount.
+- **August 23, 2022 (23.08.2022)**: Final invoice (minus the invoice for the prepayment) Inv 5 for a 2,000,000 HUF tax base (= 3,000,000 – 1,000,000) and a 54 000 HUF tax amount (= 81,000 – 27,000).
 
 _65M-02_
 
@@ -2072,9 +2055,8 @@ _65M-02_
 
 ### Example 4: Advance invoice for full amount
 
-* **August 4, 2022 (04.08.2022)**: Invoice for 100-percent prepayment Inv6 for a 1,000,000 HUF tax base and a 270,000 HUF tax amount.
-
-* **August 24, 2022 (24.08.2022)**: Goods are shipped.
+- **August 4, 2022 (04.08.2022)**: Invoice for 100-percent prepayment Inv6 for a 1,000,000 HUF tax base and a 270,000 HUF tax amount.
+- **August 24, 2022 (24.08.2022)**: Goods are shipped.
 
 _65M-02_
 <table>
@@ -2122,17 +2104,12 @@ _65M-02_
 
 To generate a VAT declaration, you must configure the VAT number.
 
-1.Go to **Organization administration** > **Organizations** > **Legal entities**.
-
-2.Select the legal entity, and then select **Registration IDs**.
-
-3.Select or create the address in Hungary, and then, on the **Registration ID** FastTab, select **Add**.
-
-4.In the **Registration type** field, select the registration type that is dedicated to Hungary, and that uses the **VAT Id** registration category.
-
-5.In the **Registration number** field, enter the tax number.
-
-6.On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
+1. Go to **Organization administration** > **Organizations** > **Legal entities**.
+2. Select the legal entity, and then select **Registration IDs**.
+3. Select or create the address in Hungary, and then, on the **Registration ID** FastTab, select **Add**.
+4. In the **Registration type** field, select the registration type that is dedicated to Hungary, and that uses the **VAT Id** registration category.
+5. In the **Registration number** field, enter the tax number.
+6. On the **General** tab, in the **Effective** field, enter the date when the number becomes effective.
 
 For more information about how to set up registration categories and registration types, see [Registration IDs](emea-registration-ids.md).
 
@@ -2140,11 +2117,10 @@ For more information about how to set up registration categories and registratio
 
 ### Import ER configurations
 
-* Open the **Electronic reporting** workspace, and import the following ER formats:
+- Open the **Electronic reporting** workspace, and import the following ER formats:
 
-* VAT declaration XML (HU)
-
-* VAT declaration Excel (HU)
+  - VAT declaration XML (HU)
+  - VAT declaration Excel (HU)
 
 For more information, see [Download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 
@@ -2160,13 +2136,10 @@ To automatically generate a VAT declaration, associate sales tax codes in the ap
 
 Follow these steps to define which sales tax codes generate which lines on the VAT declaration (for lines 01–35 and 63–75).
 
-1.Go to **Workspaces** > **Electronic reporting**, and select **Reporting configurations**.
-
-2.Select the **VAT declaration XML (HU)** configuration, and then select **Configurations** > **Application specific parameters setup**.
-
-3.On the **Application specific parameters** page, on the **Lookups** FastTab, select **Report field lookup**.
-
-4.On the **Conditions** FastTab, set the following fields to associate the sales tax codes and report fields.
+1. Go to **Workspaces** > **Electronic reporting**, and select **Reporting configurations**.
+2. Select the **VAT declaration XML (HU)** configuration, and then select **Configurations** > **Application specific parameters setup**.
+3. On the **Application specific parameters** page, on the **Lookups** FastTab, select **Report field lookup**.
+4. On the **Conditions** FastTab, set the following fields to associate the sales tax codes and report fields.
 
 <table>
 <tbody>
@@ -2222,11 +2195,9 @@ Follow these steps to define which sales tax codes generate which lines on the V
 
 #### Set up application-specific parameters for Details
 
-1.On the **Application specific parameters** page, on the **Lookups** FastTab, select **Details lookup**.
-
-2.On the **Conditions** FastTab, define which sales tax codes generate which lines on the VAT declaration (for lines 37–42, 45–62, 79, and 88–95, which are details of lines 01–35 and 63–75 that are defined in **Report field lookup**).
-
-3.Create the last line, and associate all other sales tax codes with the **Other** lookup result.
+1. On the **Application specific parameters** page, on the **Lookups** FastTab, select **Details lookup**.
+2. On the **Conditions** FastTab, define which sales tax codes generate which lines on the VAT declaration (for lines 37–42, 45–62, 79, and 88–95, which are details of lines 01–35 and 63–75 that are defined in **Report field lookup**).
+3. Create the last line, and associate all other sales tax codes with the **Other** lookup result.
 
 <table>
 <tbody>
@@ -2259,27 +2230,17 @@ Follow these steps to define which sales tax codes generate which lines on the V
 
 #### Set up application-specific parameters for In-kind contributions, Assets, and Annex I
 
-1.On the **Application specific parameters** page, on the **Lookups** FastTab, select **In-kind** lookup.
-
-2.On the **Conditions** FastTab, define which sales tax codes are for in-kind contributions and generate values on lines 44 and 78.
-
-3.Create the last line, and associate all other sales tax codes with the **Other** lookup result as shown in the last step of the previous procedure.
-
-4.On the **Lookups** FastTab, select **Assets lookup**.
-
-5.On the **Conditions** FastTab, define which sales tax codes are for assets (property, plant, and equipment), sales, and purchases, and generate values on lines 43 and 77.
-
-6.Create the last line, and associate all other sales tax codes with the **Other** lookup result as before.
-
-7.On the **Lookups** FastTab, select **AnnexI lookup**.
-
-8.On the **Conditions** FastTab, define which sales tax codes generate values in section 65A-01-05 (lines 100 and 101) of the VAT declaration.
-
-9.Create the last line, and associate all other sales tax codes to the **Other** lookup result, as before.
-
-10.On the **Lookups** FastTab, select **Summary report lookup**.
-
-11.On the **Conditions** FastTab, define which invoice sales tax groups and sales tax codes should be included in the 65M summary report when they are used in vendor invoices. If all vendor invoices should be included on the Summary report, regardless of sales tax groups and sales tax codes, create the following lines.
+1. On the **Application specific parameters** page, on the **Lookups** FastTab, select **In-kind** lookup.
+2. On the **Conditions** FastTab, define which sales tax codes are for in-kind contributions and generate values on lines 44 and 78.
+3. Create the last line, and associate all other sales tax codes with the **Other** lookup result as shown in the last step of the previous procedure.
+4. On the **Lookups** FastTab, select **Assets lookup**.
+5. On the **Conditions** FastTab, define which sales tax codes are for assets (property, plant, and equipment), sales, and purchases, and generate values on lines 43 and 77.
+6. Create the last line, and associate all other sales tax codes with the **Other** lookup result as before.
+7. On the **Lookups** FastTab, select **AnnexI lookup**.
+8. On the **Conditions** FastTab, define which sales tax codes generate values in section 65A-01-05 (lines 100 and 101) of the VAT declaration.
+9. Create the last line, and associate all other sales tax codes to the **Other** lookup result, as before.
+10. On the **Lookups** FastTab, select **Summary report lookup**.
+11. On the **Conditions** FastTab, define which invoice sales tax groups and sales tax codes should be included in the 65M summary report when they are used in vendor invoices. If all vendor invoices should be included on the Summary report, regardless of sales tax groups and sales tax codes, create the following lines.
 
 <table>
 <tbody>
@@ -2323,37 +2284,30 @@ Follow these steps to define which sales tax codes generate which lines on the V
 
 #### Set up application-specific parameter for the XML file format version
 
-1.On the **Application specific parameters** page, on the **Lookups** FastTab, select **XML values lookup**.
+1. On the **Application specific parameters** page, on the **Lookups** FastTab, select **XML values lookup**.
+2. On the **Conditions** FastTab, define values for some constant XML elements:
 
-2.On the **Conditions** FastTab, define values for some constant XML elements:
+  - In the **Element** column, select **FormatVersion**.
+  - In the **Lookup result** column, enter the value of the format version. For example, for the XML file 2265 applicable for the year 2022, enter **2.0**.
 
--In the **Element** column, select **FormatVersion**.
-
--In the **Lookup result** column, enter the value of the format version. For example, for the XML file 2265 applicable for the year 2022, enter **2.0**.
-
-5.On the Action Pane, select **Export** to export the settings in an XML file. Then close the page.
-
-3.Select the **VAT declaration Excel (HU)** configuration, and then select **Configurations** > **Application specific parameters setup**.
-
-4.Select **Import**, and select the file that you exported earlier.
+3. On the Action Pane, select **Export** to export the settings in an XML file. Then close the page.
+4. Select the **VAT declaration Excel (HU)** configuration, and then select **Configurations** > **Application specific parameters setup**.
+5. Select **Import**, and select the file that you exported earlier.
 
 ### Set up the VAT reporting format for preview amounts in Excel
 
-1.In the **Feature management** workspace, find and select the **VAT statement format reports** feature in the list, and then select **Enable now**.
-
-2.Go to **General ledger** > **Setup** > **General ledger parameters**.
-
-3.On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (HU)** ER format.
+1. In the **Feature management** workspace, find and select the **VAT statement format reports** feature in the list, and then select **Enable now**.
+2. Go to **General ledger** > **Setup** > **General ledger parameters**.
+3. On the **Sales tax** tab, on the **Tax options** FastTab, in the **VAT statement format mapping** field, select the **VAT declaration Excel (HU)** ER format.
 
 This format is printed when you run the **Report sales tax for settlement period** report. It's also printed when you select **Print** on the **Sales tax payments** page.
 
-4.On the **Tax authorities** page, select the tax authority, and then, in the **Report layout** field, select **Default**.
+4. On the **Tax authorities** page, select the tax authority, and then, in the **Report layout** field, select **Default**.
 
 If you're configuring the VAT declaration in a legal entity that has [multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md), follow these steps.
 
-1.Go to **General ledger** > **Setup** > **General ledger parameters**.
-
-2.On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, on the line for **HUN**, select the **VAT Declaration Excel (HU)** ER format.
+1. Go to **General ledger** > **Setup** > **General ledger parameters**.
+2. On the **Sales tax** tab, on the **Electronic reporting for countries/regions** FastTab, on the line for **HUN**, select the **VAT Declaration Excel (HU)** ER format.
 
 ## Set up electronic messages
 
@@ -2361,39 +2315,29 @@ If you're configuring the VAT declaration in a legal entity that has [multiple V
 
 The data package contains electronic message settings that are used to preview the VAT declaration in Excel. You can extend these settings or create your own. For more information about how to work with electronic messaging and create your own settings, see [Electronic messaging](../general-ledger/electronic-messaging.md).
 
-1.In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **HU VAT declaration package**. The downloaded file is named **HU VAT declaration package.zip**.
-
-2.In Finance, in the **Data management** workspace, select **Import**.
-
-3.On the **Import** FastTab, in the **Group name** field, enter a name for the job.
-
-4.On the **Selected entities** FastTab, select **Add file**.
-
-5.In the **Add file** dialog box, verify that the **Source data format** field is set to **Package**, select **Upload and add**, and then select the zip file that you downloaded earlier.
-
-6.Select **Close**.
-
-7.After the data entities are uploaded, on the Action Pane, select **Import**.
-
-8.Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**, and validate the electronic message processing that you imported **(HU VAT declaration)**.
+1. In [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2), in the Shared asset library, select **Data package** as the asset type, and then download **HU VAT declaration package**. The downloaded file is named **HU VAT declaration package.zip**.
+2. In Finance, in the **Data management** workspace, select **Import**.
+3. On the **Import** FastTab, in the **Group name** field, enter a name for the job.
+4. On the **Selected entities** FastTab, select **Add file**.
+5. In the **Add file** dialog box, verify that the **Source data format** field is set to **Package**, select **Upload and add**, and then select the zip file that you downloaded earlier.
+6. Select **Close**.
+7. After the data entities are uploaded, on the Action Pane, select **Import**.
+8. Go to **Tax** > **Inquiries and reports** > **Electronic messages** > **Electronic messages**, and validate the electronic message processing that you imported **(HU VAT declaration)**.
 
 ### Configure electronic messages
 
-1.Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**.
-
-2.Select the line for **HU Populate VAT return records**, and then select **Edit query**.
-
-3.Use the filter to specify the settlement periods to include on the report.
-
-4.If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
+1. Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**.
+2. Select the line for **HU Populate VAT return records**, and then select **Edit query**.
+3. Use the filter to specify the settlement periods to include on the report.
+4. If you must report tax transactions from other settlement periods in a different declaration, create a new **Populate records** action, and select the appropriate settlement periods.
 
 ## <a name="preview-vat"></a>Preview the VAT declaration, incoming transactions, and outgoing transactions in Excel
 
 ### Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task
 
-1.Go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Report sales tax for settlement period**.
+1. Go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Report sales tax for settlement period**.
+2. Set the following fields.
 
-2.Set the following fields.
 <table>
 <tbody>
 <tr>
@@ -2435,7 +2379,7 @@ The data package contains electronic message settings that are used to preview t
 </table>
 
 
-3.Select **OK**, and then, in the **Electronic report parameters** dialog box, set the following fields.
+3. Select **OK**, and then, in the **Electronic report parameters** dialog box, set the following fields.
 
 <table>
 <tbody>
@@ -2470,13 +2414,12 @@ The data package contains electronic message settings that are used to preview t
 <p>&nbsp;</p>
 
 
-4.Select **OK**, and review the Excel report.
+4. Select **OK**, and review the Excel report.
 
 ### <a name="settle"></a>Settle and post sales tax
 
-1.Go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Settle and post sales tax**.
-
-2.Set the following fields.
+1. Go to **Tax** > **Periodic tasks** > **Declarations** > **Sales tax** > **Settle and post sales tax**.
+2. Set the following fields.
 
 <table>
 <tbody>
@@ -2519,15 +2462,13 @@ The data package contains electronic message settings that are used to preview t
 <p>&nbsp;</p>
 
 
-3.Select **OK**.
+3. Select **OK**.
 
 ### Preview the VAT declaration in Excel from a sales tax payment
 
-1.Go to **Tax** > **Inquiries and reports** > **Sales tax inquiries** > **Sales tax payments**, and select a sales tax payment line.
-
-2.Select Print report, and then select **OK**.
-
-3.Review the Excel file that is generated for the selected sales tax payment line.
+1. Go to **Tax** > **Inquiries and reports** > **Sales tax inquiries** > **Sales tax payments**, and select a sales tax payment line.
+2. Select Print report, and then select **OK**.
+3. Review the Excel file that is generated for the selected sales tax payment line.
 
 > [!NOTE]
 > 
@@ -2539,37 +2480,25 @@ When you use electronic messages to generate the report, you can collect tax dat
 
 The following procedure applies to the electronic message processing example that you imported earlier from the LCS Shared asset library.
 
-1.Go to **Tax** > **Inquiries and reports** >** Electronic messages** > **Electronic messages**.
-
-2.In the left pane, select **HU VAT declaration**.
-
-3.On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **OK**.
-
-4.Select the message line that is created, enter a description, and then specify the start date and end date for the declaration.
+1. Go to **Tax** > **Inquiries and reports** >** Electronic messages** > **Electronic messages**.
+2. In the left pane, select **HU VAT declaration**.
+3. On the **Messages** FastTab, select **New**, and then, in the **Run processing** dialog box, select **OK**.
+4. Select the message line that is created, enter a description, and then specify the start date and end date for the declaration.
 
 > [!NOTE]
 > 
 > Steps 5 through 7 are optional.
 
-5.Optional: On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier are added to the message. For more information, see the [Settle and post sales tax](#settle) section earlier in this topic. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration** version field in the **Declaration** dialog box.
-
-6.Optional: On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.
-
-7.Optional: Select **Original document** to review the sales tax payments, or select **Delete** to exclude sales tax payments from processing. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
-
-8.On the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select **Ready to generate**, and then select **OK**. Verify that the message status is changed to **Ready to generate**.
-
-9.Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **Preview report**, and then select **OK**.
-
-10.In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#preview-vat) section earlier in this topic, and then select **OK**.
-
-11.Select the **Attachments** button in the upper-right corner of the page, and then select **Open** to open the file. Review the amounts in the Excel documents.
-
-12.Select **Generate report**.
-
-13.To generate a report in XML format, in the **Run processing** dialog box, select **Generate report**, and then select **OK**.
-
-14.Set the following fields.
+5. Optional: On the **Messages** FastTab, select **Collect data**, and then select **OK**. The sales tax payments that were generated earlier are added to the message. For more information, see the [Settle and post sales tax](#settle) section earlier in this topic. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration** version field in the **Declaration** dialog box.
+6. Optional: On the **Message items** FastTab, review the sales tax payments that are transferred for processing. By default, all sales tax payments of the selected period that weren't included in any other message of the same processing are included.
+7. Optional: Select **Original document** to review the sales tax payments, or select **Delete** to exclude sales tax payments from processing. If you skip this step, you can still generate a VAT declaration by using the **Tax declaration version** field in the **Declaration** dialog box.
+8. On the **Messages** FastTab, select **Update status**. In the **Update status** dialog box, select **Ready to generate**, and then select **OK**. Verify that the message status is changed to **Ready to generate**.
+9. Select **Generate report**. To preview the VAT declaration amounts, in the **Run processing** dialog box, select **Preview report**, and then select **OK**.
+10. In the **Electronic reporting parameters** dialog box, set the fields as described in the [Preview the VAT declaration in Excel from the Report sales tax for settlement period periodic task](#preview-vat) section earlier in this topic, and then select **OK**.
+11. Select the **Attachments** button in the upper-right corner of the page, and then select **Open** to open the file. Review the amounts in the Excel documents.
+12. Select **Generate report**.
+13. To generate a report in XML format, in the **Run processing** dialog box, select **Generate report**, and then select **OK**.
+14. Set the following fields.
 
 <table>
 <tbody>
@@ -2652,7 +2581,7 @@ The following procedure applies to the electronic message processing example tha
 <p>&nbsp;</p>
 
 
-15.Select the **Attachments** button in the upper-right corner of the page, and download the electronic file that was generated. You should then manually upload this file to the tax authority tool or portal.
+15. Select the **Attachments** button in the upper-right corner of the page, and download the electronic file that was generated. You should then manually upload this file to the tax authority tool or portal.
 
 ## <a name="run-a-vat"></a>Run a VAT declaration for multiple legal entities
 
@@ -2662,17 +2591,14 @@ To use the formats to report the VAT declaration for a group of legal entities, 
 
 Follow these steps to set up electronic messages to collect data from multiple legal entities.
 
-1.Go to **Workspaces** > **Feature management**.
+1. Go to **Workspaces** > **Feature management**.
+2. Find and select the **Cross-company queries for the populate records actions** feature in the list, and then select **Enable now**.
+3. Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**.
+4. On the **Populate records action** page, select the line for **HU Populate VAT return records**.
 
-2.Find and select the **Cross-company queries for the populate records actions** feature in the list, and then select **Enable now**.
+   In the **Datasources setup** grid, a new **Company** field is available. For existing records, this field shows the identifier of the current legal entity.
 
-3.Go to **Tax** > **Setup** > **Electronic messages** > **Populate records actions**.
-
-4.On the **Populate records action** page, select the line for **HU Populate VAT return records**.
-
-In the **Datasources setup** grid, a new **Company** field is available. For existing records, this field shows the identifier of the current legal entity.
-
-5.In the **Datasources setup** grid, add a line for each additional legal entity that must be included in reporting. For each new line, set the following fields.
+5. In the **Datasources setup** grid, add a line for each additional legal entity that must be included in reporting. For each new line, set the following fields.
 
 <table>
 <tbody>
@@ -2761,9 +2687,9 @@ In the **Datasources setup** grid, a new **Company** field is available. For exi
 <p>&nbsp;</p>
 
 
-6.For each new line, select **Edit query**, and specify a related settlement period for the legal entity that is specified in the **Company** field on the line.
+6. For each new line, select **Edit query**, and specify a related settlement period for the legal entity that is specified in the **Company** field on the line.
 
-When the setup is completed, the **Collect data** function on the **Electronic messages** page collects sales tax payments from all the legal entities that you defined.
+  When the setup is completed, the **Collect data** function on the **Electronic messages** page collects sales tax payments from all the legal entities that you defined.
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
