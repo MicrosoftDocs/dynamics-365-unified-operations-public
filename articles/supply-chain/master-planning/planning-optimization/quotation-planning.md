@@ -29,13 +29,13 @@ Use the following procedure to set up master planning to consider sales quotatio
 1. Select an existing plan from the list pane or select **New** on the Action Pane to create a new one.
 1. Expand the **General** FastTab, and make the following settings:
     - **Include sales quotations** – Set to *Yes* to consider sales quotations when running the current plan. Set to *No* to ignore them.
-    - **Probability %** – Set the minimum level of confidence required for a quotation to be included in master planning. The master planning calculation will include all quotations that were created from opportunities that have this probability percentage or higher (see also the following section).
+    - **Probability %** – Set the minimum level of confidence required for a quotation to be included in master planning. The master planning calculation will include all quotations that were created from opportunities that have this probability percentage or higher (see also the following section). <!-- KFM: Set to zero to plan for all quotations (including those with no opportunity?) -->
     - **Include requests for quotations** – Set to *Yes* to consider RFQs when running the current plan. Set to *No* to ignore them. <!--KFM: What does it mean to consider RFQs? Do we generate planned orders to cover all of them? Does the Probability % apply for these too?  -->
 1. Continue setting up your master plan as usual.
 
 ## Assign and view probabilities for quotations
 
-As mentioned in the previous section, a master plan will only consider quotations that meet or exceed the probability threshold established for the plan. However, the probability isn't set directly on each quotation. Instead, it is inherited from the opportunity used to generate the quotation. That means that quotations created directly on the **All quotations** page won't have a probability associated with them, and therefore won't ever be considered by master planning. For a quotation to be considered by master planning, it must be generated from an opportunity that has a qualifying probability value. <!-- KFM: Is there really no way to assign an opportunity to an existing quotation? -->
+As mentioned in the previous section, a master plan will only consider quotations that meet or exceed the probability threshold established for the plan. However, the probability isn't set directly on each quotation. Instead, it is inherited from the opportunity used to generate the quotation. That means that quotations created directly on the **All quotations** page won't have a probability associated with them, and therefore won't ever be considered by master planning <!-- KFM: What about plans set to 0%? -->. For a quotation to be considered by master planning, it must be generated from an opportunity that has a qualifying probability value. <!-- KFM: Is there really no way to assign an opportunity to an existing quotation? -->
 
 ### Create a quotation from an opportunity
 
