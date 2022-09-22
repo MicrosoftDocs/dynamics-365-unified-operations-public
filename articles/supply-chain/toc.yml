@@ -1799,6 +1799,8 @@
           href: master-planning/planning-optimization/shelf-life.md
         - name: Scheduling with infinite capacity
           href: master-planning/planning-optimization/infinite-capacity-planning.md
+        - name: Finite capacity planning and scheduling
+          href: master-planning/planning-optimization/finite-capacity.md
         - name: Scheduling with resource selection based on capability
           href: master-planning/planning-optimization/capability-based-scheduling.md
         - name: Priority-based planning
