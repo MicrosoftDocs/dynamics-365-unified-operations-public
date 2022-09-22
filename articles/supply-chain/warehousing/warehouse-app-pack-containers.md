@@ -178,7 +178,7 @@ In this example added as part of the page where the Warehouse Management mobile 
 1. In the **Select fields to send** section, set the following values for the empty row that has already been added there:
     - **Copy from Packing:** *Location*
     - **Paste in Create container:** *Location*
-    - **Auto submit** *Selected* - You don't want to confirm the value in the Warehouse management mobile app
+    - **Auto submit** *Selected* - You don't want to confirm the value
 1. Select **Add** to add one more row and set the following values:
     - **Copy from Packing:** *Shipment*
     - **Paste in Create container:** *Shipment*
@@ -186,9 +186,15 @@ In this example added as part of the page where the Warehouse Management mobile 
 1. In the **Bring back from create container** section, set the following values for the empty row that has already been added there:
     - **Copy from Create container:** *Container ID*
     - **Paste in Packing:** *Container ID* 
-     - **Auto submit** *Selected* - You don't want to confirm the value in the Warehouse management mobile app <!-- Planned for 10.0.31 -->
+    - **Auto submit** *Cleared* - You want to confirm the value
+1. Select **Add** to add one more row and set the following values:
+    - **Copy from Create container:** *Refresh* - This is used to automatically update the page when returning from detour
+    - **Paste in Packing:** *Refresh* - You must specify *Refresh* to trigger the update logic
+    - **Auto submit** *Selected* - Will automatically update the page e.g. the *Available open containers* field.
    1. Select **OK** to close the dialog box.
 1. Close the page.
+> [!NOTE]
+> Only Warehouse Management mobile app pages containing the *Refresh* option can be used to trigger an automatic page refresh as part of a detour process. Make sure to select **Refresh** in both the *Copy from* and *Paste in* fields and select the *Auto submit* option.
 
 ### Add *detour* for *Container closing*
 To easy the container closing process while being in a container packing flow you can add a [Detour](warehouse-app-detours.md) process.
@@ -204,11 +210,11 @@ In this example added as part of the page where the Warehouse Management mobile 
 1. In the **Select fields to send** section, you can add data to send which can be used for further look up filtering capabilities:
     - **Copy from Packing:** *Location*
     - **Paste in Close container:** *Location*
-    - **Auto submit** *Cleared* - You do need to manually identify a container ID in the Warehouse management mobile app
+    - **Auto submit** *Cleared* - Location is only pasted in case of needing to look up a container ID
 1. Select **Add** to add one more row and set the following values:
     - **Copy from Packing:** *Shipment*
     - **Paste in Close container:** *Shipment*
-    - **Auto submit** *Cleared* - You do need to manually identify a container ID in the Warehouse management mobile app
+    - **Auto submit** *Cleared* - Shipment is only pasted in case of needing to look up a container ID
 1. In the **Bring back from create container** section don't add anything because you don't want to pass any values back from the detour menu item.
 1. Select **OK** to close the dialog box.
 1. Close the page.
@@ -473,6 +479,7 @@ In this example you perform the following setup:
 1. In the **Select fields to send** dialog box, don't add anything to the **Send from Packing** section, because you don't want to pass any values to the detour menu item. However, in the **Bring back from look up location** section, set the following value for the empty row that has already been added there:
     - **Copy from Look up location** *Location*
     - **Paste in Packing** *Location*
+    - **Auto submit** *Cleared* - You want to confirm the value
 1. Select **OK** to close the dialog box.
 1. Close the page.
 
@@ -487,6 +494,7 @@ In this example you perform the following setup:
 1. In the **Select fields to send** dialog box, don't add anything to the **Send from Packing** section, because you don't want to pass any values to the detour menu item. However, 1. In the **Bring back from Look up shipment** section, set the following value for the empty row that has already been added there:
     - **Copy from Look up shipment** *Shipment ID*
     - **Paste in Packing** *Shipment*
+    - **Auto submit** *Cleared* - You want to confirm the value
 1. Select **OK** to close the dialog box.
 1. Close the page.
 
@@ -504,6 +512,7 @@ In this example you perform the following setup:
 1. In the **Bring back from Look up item** section, set the following value for the empty row that has already been added there:
     - **Copy from Look up item** *Item number*
     - **Paste in Packing** *Item*
+    - **Auto submit** *Cleared* - You want to confirm the value
 1. Select **OK** to close the dialog box.
 1. Close the page.
 
@@ -522,10 +531,11 @@ In this example you perform the following setup:
 1.  Add a new record with:
      - **Copy from Packing** *Shipment*
     - **Paste in Look up container** *Shipment ID*
-    - **Auto submit** *Selected* - You don't want to confirm the value
+    - **Auto submit** *Cleared* - You want to confirm the value
 1. In the **Bring back from Look up container** section, set the following value for the empty row that has already been added there:
     - **Copy from Look up container** *Container ID*
     - **Paste in Packing** *Container ID*
+    - **Auto submit** *Cleared* - You want to confirm the value
 1. Select **OK** to close the dialog box.
 1. Close the page.
 
@@ -540,6 +550,7 @@ In this example you perform the following setup:
 1. In the **Select fields to send** dialog box, don't add anything to the **Send from Create container** section, because you don't want to pass any values to the detour menu item. However, in the **Bring back from Look up container type** section, set the following value for the empty row that has already been added there:
     - **Copy from Look up container type** *Container type code*
     - **Paste in Create container** *Container type code*
+    - **Auto submit** *Cleared* - You want to confirm the value
 1. Select **OK** to close the dialog box.
 1. Close the page.
 
@@ -562,6 +573,7 @@ In this example you perform the following setup:
 1. In the **Bring back from Look up container** section, set the following value for the empty row that has already been added there:
     - **Copy from Look up container** *Container ID*
     - **Paste in Close container** *Container ID*
+    - **Auto submit** *Cleared* - You want to confirm the value
 1. Select **OK** to close the dialog box.
 1. Close the page.
 
