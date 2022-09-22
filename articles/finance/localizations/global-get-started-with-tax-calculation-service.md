@@ -182,9 +182,9 @@ The steps in this section aren't related to a specific legal entity. You must co
 
     | Tax group    | Tax codes           |
     | ------------ | ------------------- |
-    | DEU_Domestic | DEU_VAT19; DEU_VAT7 |
+    | DEU_Dom | DEU_VAT19; DEU_VAT7 |
     | DEU_EU       | DEU_Exempt          |
-    | BEL_Domestic | BEL_VAT21; BEL_VAT6 |
+    | BEL_Dom | BEL_VAT21; BEL_VAT6 |
     | BEL_EU       | BEL_Exempt          |
 
 20. On the **Item tax group** tab, select **Item tax group** column, add it to the matrix as the input condition, and then add lines to maintain the item tax group master data.
@@ -202,9 +202,9 @@ The steps in this section aren't related to a specific legal entity. You must co
 
     | Business process | Ship from | Ship to | Tax group    |
     | ---------------- | --------- | ------- | ------------ |
-    | Sales            | DEU       | DEU     | DEU_Domestic |
+    | Sales            | DEU       | DEU     | DEU_Dom |
     | Sales            | DEU       | FRA     | DEU_EU       |
-    | Sales            | BEL       | BEL     | BEL_Domestic |
+    | Sales            | BEL       | BEL     | BEL_Dom |
     | Sales            | BEL       | FRA     | BEL_EU       |
     
     > [!NOTE]
