@@ -71,7 +71,7 @@ The following table lists the fields that are common to all work order types.
 | Location directives | Site |
 | Location directives | Warehouse |
 | Location directives | Directive code |
-| Location directives | Multiple SKU |
+| Location directives | Scope *or* Multiple SKU |
 | Lines | Sequence number |
 | Lines | From quantity |
 | Lines | To quantity |
@@ -120,7 +120,9 @@ The Action Pane on the **Location directives** page contains buttons that you ca
 
 - **Move up** – Move the selected location directive up in the sequence. For example, you can move it from sequence number 4 to sequence number 3.
 - **Move down** – Move the selected location directive down in the sequence. For example, you can move it from sequence number 4 to sequence number 5.
+- **Copy** – Open a dialog box where you can create an exact copy of the current location directive. 
 - **Edit query** – Open a dialog box where you can define the conditions that the selected location directive should be processed under. For example, you might want it to apply only to a specific warehouse.
+- **Acceptance tests** – Allows you to specify a set of automated tests verifying how you expect location directives to behave given various conditions. For example, you can use this to more quickly validate your configuration as you create it and maintain it.
 
 ## Location directives header
 
@@ -148,6 +150,33 @@ The fields on the **Location directives** FastTab are specific to the work order
     > [!TIP]
     > If a directive code is set, the system won't search location directives by sequence number when work must be generated. Instead, it will search by directive code. In this way, you can be more specific about the location directive that is used for a particular step in a work template, such as the step for staging the materials.
 
+- **Scope** – Ues this option to specify in which scenarios the location directive will be applied.
+
+| Scope | Single order with one item | Multiple orders with same item | Single order with multiple item | Multiple orders with multiple items |
+|---|---|---|---|---|
+| Single item | Yes | Yes | No | No |
+| Multiple items | No | No | Yes | Yes |
+| Single item or order | Yes | Yes | Yes | No |
+| All | Yes | Yes | Yes | Yes |
+
+The following table describes when the scopes are available, and whether they allow **Edit query**.
+
+| Scope | Supported work type | Supported work order types | Allow edit query |
+|---|---|---|---|
+| Single item | All | All | No |
+| Multiple items | All | All | No |
+| Single item or order | Puts | Co-product and by-product put away, Finished goods put away, Kanban put away, Purchase orders, Quality order, Replenishment, Return orders, Sales orders, Transfer issue and Transfer receipt | Yes |
+| All | Puts | All | No | 
+
+> [!NOTE]
+    > This option replace **Multiple SKU** when the feature **Location Directive Scopes** is enabled. It superseeds the Multiple SKU option, and is 100% compatible with existing configurations. 
+
+    > [!IMPORTANT]
+    > To be able to do puts for both multi-item puts and single item, you must ensure location directives exists to cover both scenarios. For example by first having one or more **Single item or order** location directives to cover the scenarios allowing most fine tuning, for example by editing the query, followed by one or more **All** location directives to cover the remaining scenarios.   
+
+> [!NOTE]
+    > **Single item** and **Multiple items** can be used for puts, but it typically leads to redundant configurations. Consider using **Single item or order** and **All** instead. This will give a cleaner setup.
+
 - **Multiple SKU** – Set this option to *Yes* to enable multiple stockkeeping units (SKUs) to be used on a location. For example, multiple SKUs must be enabled for the bay door location. If you enable multiple SKUs, your put location will be specified in work, as expected. However, the put location will be able to handle only a multi-item put (if work includes different SKUs that must be picked and put). It won't be able to handle a single-SKU put. If you set this option to *No*, your put location will be specified only if your put has just one kind of SKU.
 
     > [!IMPORTANT]
@@ -160,7 +189,7 @@ The fields on the **Location directives** FastTab are specific to the work order
     > [!NOTE]
     > If the **Multiple SKU** option is set to *Yes*, you can't select **Edit query** on the Action Pane, because the query can't evaluate at the item level when there are multiple items. To ensure that the desired location directive is selected, use the **Directive code** field to guide the selection of the location directive that is related to the put lines where that directive code is assigned in the work template.
 
-    Unless you always work with either single-item or mixed-item operations, it's important that you define two location directives for the *Put* work type: one where the **Multiple SKU** option is set to *Yes* and one where it's set to *No*.
+    Unless you always work with either single-item or mixed-item operations, it's important that you define two location directives for the *Put* work type: one where the **Multiple SKU** option is set to *Yes* and one where it's set to *No*. 
 
 - **Applicable disposition code** – Specify whether the disposition code of the location directive must match the disposition code that is applied when the item is received, or whether the location directive can be selected based on any disposition code. If you select *Exact match*, and the **Disposition code** field is blank, only blank disposition codes will be considered for this location directive.
 
