@@ -2,7 +2,7 @@
 title: Vendor electronic invoices
 description: This article explains how to configure and submit vendor electronic invoices in Italy.
 author: mrolecki
-ms.date: 12/01/2021
+ms.date: 09/22/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,15 +41,13 @@ Follow these steps to set up the electronic invoice configuration in Accounts pa
    >
    > The parent model configuration, **Invoice model**, and the related model mapping configuration, **Vendor invoice model mapping (IT)**, will automatically be imported or updated.
    > 
-   > After importing the configurations, aplication-specific parameters should be set up (In **Electronic reporting** workspace, for Vandor invoice (IT) format, On Action pane open Configuration /> Application specific parameters /> Setup:).
+   > 1. After importing the configurations, set up aplication-specific parameters in the **Electronic reporting** workspace, for the Vendor invoice (IT) format. On the Action Pane, select **Configuration** > **Application specific parameters** > **Setup**. You must set up at least two lines for **Blank** and **Not blank** values.
+   >  
+   >     ![Application-specific parameters](media/emea-ita-vendor-einvoice-asp.png)
    > 
-   > It is necessary to set up at list two lines for Blank and Not blank values: 
-   > ![Application-specific parameters](media/emea-ita-vendor-einvoice-asp.png)
-   > 
-   >_These default settings are required for all scenarios, even if Reverse charge is not applicable_
+   >     These default settings are required for all scenarios, even if **Reverse charge** isn't applicable.
    >
-   >In the **Conditions** section, in the **Name** column add the other required Reverse charge item groups and associate them with the related values in **Lookup result** column.
-   > How to set up Reverese charge item groups see ![Customer electronic invoices](emea-ita-e-invoices.md)
+   > 2. In the **Conditions** section, in the **Name** column, add the other required Reverse charge item groups and associate them with the related values in the **Lookup result** column. For more details about how to set up Reverese charge item groups, see ![Customer electronic invoices](emea-ita-e-invoices.md)
 
 
 
