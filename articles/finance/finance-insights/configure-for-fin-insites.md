@@ -4,7 +4,7 @@
 title: Configuration for Finance insights
 description: This article explains the configuration steps that will enable your system to use the capabilities that are available in Finance insights.
 author: ShivamPandey-msft
-ms.date: 01/27/2022
+ms.date: 09/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -43,7 +43,7 @@ Follow these steps to deploy the environments.
 1. In LCS, create or update a Dynamics 365 Finance environment. The environment requires app version 10.0.21 or later.
 
     > [!NOTE]
-    > The environment must be a high-availability (HA) environment. (This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](../../fin-ops-core/fin-ops/imp-lifecycle/environment-planning.md).
+    > The environment must be a high-availability (HA) environment. (This type of environment is also known as a Tier-2 environment.) For more information, see [Environment planning](/fin-ops-core/fin-ops/imp-lifecycle/environment-planning).
 
 2. If you're configuring Finance insights in a sandbox environment, you might have to copy production data to that environment before predictions will work. The prediction model uses multiple years of data to build predictions. The Contoso demo data doesn't contain enough historical data to adequately train the prediction model. 
 
@@ -55,13 +55,16 @@ Verify that the following setup is completed:
 
 - You have **System administrator** and **System Customizer** access in the Power Portal admin center.
 - A Dynamics 365 Finance or equivalent license is applied to the user who is installing the Finance insights add-in.
+- The following Azure AD apps are registered in Azure AD.
 
-The following Azure AD apps are registered in Azure AD.
+    |  Application                             | App ID                               |
+    |------------------------------------------|--------------------------------------|
+    | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
 
-|  Application                             | App ID                               |
-|------------------------------------------|--------------------------------------|
-| Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
-    
+    To verify the application is registered in Azure AD, check the **All Applications** list. For more details, see [View enterprise applications](/azure/active-directory/manage-apps/view-applications-portal).
+  
+    If the application isn't registered in Azure AD, contact support.
+  
 ## Configure Dataverse
 
 Follow these steps to configure Dataverse for Finance insights.
