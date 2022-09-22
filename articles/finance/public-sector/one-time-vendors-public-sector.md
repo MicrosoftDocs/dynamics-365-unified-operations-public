@@ -1,7 +1,7 @@
 ---
 title: One-time vendors in the public sector
 description: This article provides information about how to create a one-time vendor and invoice, and how to import and create multiple one-time vendors and invoices.
-author: v-kiarnd
+author: TaylorVH
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: v-kiarnd
+ms.author: TaylorVH
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 19801
