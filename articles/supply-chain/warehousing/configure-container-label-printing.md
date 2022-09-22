@@ -55,6 +55,8 @@ During the label generation process the system can replace field and method name
     - **Label layout ID:** *Container*
     - **Description:** *Container ID barcode*
     - **Label layout data source ID:** - Leave blank (only container data will be used)
+    - **Enable label template support** - Leave cleared (used for header, row, footer layouts)
+    - **Date, time, and number format** - Leave cleared (used for field value formatting tools)
 1. Copy from the below *ZPL container label example* and insert the text into the **Printer text Layout**
     ```ZPL container label example
     CT~~CD,~CC^~CT~
@@ -74,16 +76,16 @@ During the label generation process the system can replace field and method name
 1. Close the page
 
 > [!NOTE]
-> In the above label layout only the *Container ID* ($WHSContainerTable.ContainerId$) barcode will get printed, but in case you want to include additional related data information to a label, like for example the delivery name related to a shipment, you can create a **Label layout data source** (*Warehouse > Setup > Document routing > Label layout data source*) including a join to the *Shipment* table.
+> In the above label layout only the *Container ID* ($WHSContainerTable.ContainerId$) barcode will get printed, but in case you want to include additional related data information to a label, like *delivery name* related to a shipment, you can create a **Label layout data source** (*Warehouse > Setup > Document routing > Label layout data source*) including a join to the *Shipment* table.
 > In the **Label layout data source** select **New** in the *Action Pane* and specify a **Label layout data source ID**, **Description**, and **Label layout type**.
 > Select **Edit query** in the *Action Pane*. Now use the *Joins* option to add the needed table(s).
 > Note, that in case you remove tables from a existing query you might risk removing field/method names already used in existing label layouts.
 > In the **Label layout** you can now select the created **Label layout data source ID**
 
-<!-- 10.0.32?
-#### Print with header, row, and footer layout
+
+#### Label template support - header, row, and footer layout
 When making more advanced label layouts you can benefit from using some of the widely available label generation tools described in [Document routing label layout](document-routing-layout-for-license-plates.md).
-Additionally you can select the **???** setting for the label layout which will enable formatting your label layout into a header, row, and footer format by using the **Header**, **Row**, and **Footer** commands.
+Additionally you can select the **Enable label template support** setting for the label layout which will enable formatting your label layout into a header, row, and footer format by using the **Header**, **Row**, and **Footer** commands.
 The below is an example of a label containing data about packed items in a container.
 
 ```dos
@@ -111,7 +113,6 @@ The below is an example of a label containing data about packed items in a conta
     > This setup will loop over container lines and spit out a label per 10 container lines. By using *RowsPerLabel=1* you will generate a label per line.
     >  
     > This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the container), set the **n** value for the **\^PQn** section in the footer to the required number of copies. For example, to print two copies of each label, specify **\^PQ2**.
--->
 
 ### Create a container label rounting
 To define which container label layouts to use and where to print you need to define a **Container label routing**.
