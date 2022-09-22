@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: v-kiarnd
+ms.author: velofog
 ms.search.validFrom: 2019-09-03
 ms.dyn365.ops.version: 10.0.7
 ms.search.industry: public sector
