@@ -61,9 +61,9 @@ Verify that the following setup is completed:
     |------------------------------------------|--------------------------------------|
     | Microsoft Dynamics ERP Microservices CDS | 703e2651-d3fc-48f5-942c-74274233dba8 |
 
-    To verify if the above-mentioned application is registered in Azure AD, you can check the ‘All Applications’ list by referencing [View enterprise applications](../../azure/active-directory/manage-apps/view-applications-portal.md)
-
-    If the application is not registered in Azure AD, please contact support.
+    To verify the application is registered in Azure AD, check the **All Applications** list. For more details, see [View enterprise applications](/azure/active-directory/manage-apps/view-applications-portal).
+  
+    If the application isn't registered in Azure AD, contact support.
   
 ## Configure Dataverse
 
