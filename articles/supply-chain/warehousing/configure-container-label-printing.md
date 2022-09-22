@@ -110,7 +110,7 @@ The below is an example of a label containing data about packed items in a conta
 ```
 
 > [!NOTE]
-    > This setup will loop over container lines and spit out a label per 10 container lines. By using *RowsPerLabel=1* you will generate a label per line.
+    > This setup will loop over container lines and split out a label per 10 container lines. By using *RowsPerLabel=1* you will generate a label per line.
     >  
     > This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the container), set the **n** value for the **\^PQn** section in the footer to the required number of copies. For example, to print two copies of each label, specify **\^PQ2**.
 
