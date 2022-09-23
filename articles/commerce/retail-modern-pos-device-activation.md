@@ -73,7 +73,7 @@ Before you start the steps that are outlined in this article, follow these steps
 5. On the page for the register, under **General**, verify that the **Support offline** option is set to **No**. To use offline support, on the Action Pane, select **Edit**, and then set **Support offline** option to **Yes**.
 
     > [!NOTE]
-    > When using Azure Active Directory authentication, POS offline will not function as online connectivity is always required.
+    > When using Azure Active Directory (Azure AD) authentication, POS offline will not function, as online connectivity is always required.
 
 ### Download the Modern POS installer
 
