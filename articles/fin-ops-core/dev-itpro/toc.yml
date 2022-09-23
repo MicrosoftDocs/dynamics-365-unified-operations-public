@@ -1624,8 +1624,6 @@
           href: sysadmin/security-reports.md
         - name: Create new users
           href: sysadmin/tasks/create-new-users.md
-        - name: User session management
-          href: sysadmin/user-session-management.md
         - name: Block access by location with Azure AD Conditional Access
           href: /power-platform/admin/restrict-access-online-trusted-ip-rules?toc=/dynamics365/fin-ops-core/dev-itpro/toc.json&bc=/dynamics365/breadcrumb/toc.json
         - name: Import users in bulk
