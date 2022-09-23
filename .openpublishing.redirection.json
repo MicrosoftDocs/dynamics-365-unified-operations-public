@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/user-session-management.md",
+      "redirect_url": "/dynamics365/finance",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/commerce/commerce-analytics.md",
       "redirect_url": "/dynamics365/commerce/get-started/removed-deprecated-features-commerce#feature-deprecation-effective-july-2022",
       "redirect_document_id": "false"
