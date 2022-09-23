@@ -54,7 +54,7 @@ A set of process changes is being implemented ahead of the activation of proacti
 - **Schema** – Tooling will ensure that quality update builds include only schema changes that can be applied while the service is online. This approach will help preserve the ability to apply the update with near-zero downtime.
 - **Increased change scrutiny** – Currently, there is already an extra process step to approve changes for inclusion in a quality update. The scrutiny in the extra step will be increased to help reduce the potential for regressions. Breaking changes aren't allowed in quality updates, and the increased change scrutiny will help ensure that we meet this target.
 - **Visibility** – We will send notifications through email and Lifecycle Services (LCS) for upcoming proactive quality updates. In addition, support teams and incident leads will have visibility into where quality updates have been proactively deployed.
-- **Version fallback** – Flighting will be used to group all changes in a proactive quality update. If fallback is required after a proactive deployment, it can be done through the flighting system.
+- **Fail Safe via flighting** – Flighting will be used to guard code changes wherever applicable in a quality update bug fix or use the existing feature flighting relevant to the fix. If fallback/ turn off a change is required after a proactive deployment, it can be done through the flighting system to avoid further failures.
 - **Sandbox sync designation** – Less than 20 percent of customers today have multiple sandboxes and keep one sandbox deployed where the version matches production, to help with troubleshooting. If a customer is using a sandbox to test a newer version than their production, that sandbox will receive quality updates to the newer version.
 
 ## What is the rollout roadmap for quality updates?
@@ -66,7 +66,7 @@ Over the next six-month period, we will gradually increase the percentage of san
 Because customers will regularly receive smaller payloads, we expect the process of staying current to become simpler. We will adjust the frequency of update deployment as we demonstrate the ability to run the process without disruption. This process is already working effectively for our Dataverse platform and applications, and is delivering the anticipated improvements in service quality. We're anxious to take the same step forward for finance and operations applications.
 
 ## When will quality updates start for production environments?
-At this time, quality updates are only targeting sandboxes. Updates to production environments will begin after November 2022.
+At this time, quality updates are only targeting sandboxes. We will update this space with a start date for production environments when we have more concrete data and metrics from proactive updates for sandboxes to gauge readiness for prod.
 
 ## What is the schedule for sandbox quality updates?
 For information on the dark hours for each region, see [What is the schedule for proactive quality updates?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates).
