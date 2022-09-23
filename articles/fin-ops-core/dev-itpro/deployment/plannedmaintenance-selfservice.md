@@ -27,7 +27,7 @@ Some of the common planned maintenance activities performed by Microsoft are:
 - Security hotfixes
 - Microsoft quality updates
 
-## <a name="windows"></name>What are the planned maintenance windows?
+## What are the planned maintenance windows?
 A planned maintenance window is typically during the dark hours of the geographic region that your environment is deployed in. The following table lists the maintenance windows for each geography in Coordinated Universal Time (UTC).
 
 |Geo | Maintenance window |
@@ -57,6 +57,7 @@ A planned maintenance window is typically during the dark hours of the geographi
 | July 2022 | July 24, 2022 | July 23, 2022 | July 23, 2022 |
 | August 2022 | August 21, 2022 | August 20, 2022 | August 20, 2022 |
 | September 2022 | September 25, 2022 | September 24, 2022 | September 24, 2022 |
+| October 2022 | October 23, 2022 | October 22, 2022 | October 22, 2022 |
 
 ## What is the schedule for proactive quality updates?
 
