@@ -194,6 +194,8 @@ The following table lists the columns that are pre-extended.
 | RETAILTRANSACTIONSALESTRANS   | ITEMID                                                                 | nvarchar(100)  |                       |                                     |
 | RETAILTRANSACTIONSALESTRANS   | INVENTLOCATIONID                                                                | nvarchar(25)  |                       |                                     |
 | RETAILTRANSACTIONSALESTRANS   | UNIT                                                             | nvarchar(20)  |                       |                                     |
+| RETAILTRANSACTIONSALESTRANS   | ORIGINALTAXITEMGROUP                                                             | nvarchar(100)  |                       |                                     |
+| RETAILTRANSACTIONSALESTRANS   | TAXITEMGROUP                                                             | nvarchar(100)  |                       |                                     |
 | RETAILDLVMODEADDRESSEXPLODED   | STATE                                                                        | nvarchar(60)  |                       |                                     |
 | INVENTDIM                     | INVENTBATCHID                                                                 | nvarchar(50)  |                       |                                     |
 | INVENTDIM                     | INVENTSERIALID                                                                | nvarchar(50)  |                       |                                     |
@@ -252,6 +254,7 @@ The following table lists the columns that are pre-extended.
 | INVENTITEMGTIN               | GLOBALTRADEITEMNUMBER                                                         | nvarchar(16)  |                       |                                     |
 | INVENTITEMGROUPITEM               | ITEMID                                                         | nvarchar(100)  |                       |                                     |
 | INVENTDIMCOMBINATION               | ITEMID                                                         | nvarchar(100)  |                       |                                     |
+| INVENTDIMCOMBINATION               | RETAILVARIANTID                                                         | nvarchar(20)  |                       |                                     |
 | TMPASSORTEDPRODUCTS               | ITEMID                                                         | nvarchar(100)  |                       |                                     |
 | INVENTORYINBOUNDOUTBOUNDSOURCEDOCUMENTLINE               | ITEMID                                                         | nvarchar(100)  |                       |                                     |
 | INVENTITEMSALESSETUP               | ITEMID                                                         | nvarchar(100)  |                       |                                     |
@@ -414,6 +417,8 @@ The following table lists the columns that are pre-extended.
 | GUPITEMBASEPRICE		    | ITEMID | nvarchar(100)      |          |          |  
 | AGREEMENTLINE		    | ITEMID | nvarchar(100)      |          |          |  
 | MARKUPAUTOTABLE		    | ITEMRELATION | nvarchar(100)      |          |          |  
+| MARKUPAUTOLINE		    | TAXITEMGROUP | nvarchar(100)      |          |          |
+| MARKUPTABLE		    | TAXITEMGROUP | nvarchar(100)      |          |          |
 
 
 
