@@ -72,6 +72,9 @@ Before you start the steps that are outlined in this article, follow these steps
 4. Select a register by selecting the register number in the **Register number** column. In the Houston store, register Houston-3 is well defined and is therefore useful as an example.
 5. On the page for the register, under **General**, verify that the **Support offline** option is set to **No**. To use offline support, on the Action Pane, select **Edit**, and then set **Support offline** option to **Yes**.
 
+    > [!NOTE]
+    > When using Azure Active Directory authentication, POS offline will not function as online connectivity is always required.
+
 ### Download the Modern POS installer
 
 1. On the **Welcome** page, use the menu in the upper left to go to **Retail and Commerce** &gt; **Channels** &gt; **Channel deployment**.
@@ -107,6 +110,9 @@ Before you start the steps that are outlined in this article, follow these steps
     - **Value:** 1
 
 - If offline is used (an offline database created), then a default SQL Server instance must exist. If SQL Server instances exist, but none are set as the default, then the installer will fail to install the offline database.
+
+> [!NOTE]
+    > When using Azure Active Directory authentication, POS offline will not function as online connectivity is always required.
 
 If you are installing Modern POS for use with an on-premises environment, you must start the installer from a command line as follows:
 
