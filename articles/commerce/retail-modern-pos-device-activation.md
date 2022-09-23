@@ -112,7 +112,7 @@ Before you start the steps that are outlined in this article, follow these steps
 - If offline is used (an offline database created), then a default SQL Server instance must exist. If SQL Server instances exist, but none are set as the default, then the installer will fail to install the offline database.
 
 > [!NOTE]
-    > When using Azure Active Directory authentication, POS offline will not function as online connectivity is always required.
+> When using Azure Active Directory authentication, POS offline will not function as online connectivity is always required.
 
 If you are installing Modern POS for use with an on-premises environment, you must start the installer from a command line as follows:
 
