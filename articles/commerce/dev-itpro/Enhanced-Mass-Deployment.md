@@ -45,7 +45,7 @@ The following table shows the delimiters that can be used in the command line ex
 | -EnvironmentId | The environment ID. |
 | -HardwareStationAppInsightsInstrumentationKey | The Hardware Station AppInsights instrumentation key. |
 | Install | A parameter that specifies whether the component that this installer provides should be installed. This parameter is required to perform an installation and does not have a leading dash character. |
-| -InstallOffline | For Modern POS, this parameter specifies that the offline database should also be installed and configured. Use the **-SQLServerName** parameter too. Otherwise, the installer will try to find a default instance that meets the prerequisites. Note that when using Azure Active Directory authentication, POS offline will not function as online connectivity is always required. |
+| -InstallOffline | For Modern POS, this parameter specifies that the offline database should also be installed and configured. Use the **-SQLServerName** parameter too. Otherwise, the installer will try to find a default instance that meets the prerequisites. When using Azure Active Directory (Azure AD) authentication, POS offline will not function, as online connectivity is always required. |
 | -Port | The port that should be associated with and used by the Retail Server virtual directory. If no port is set, the default port, 443, will be used. |
 | -Register | The register ID, as shown on the **Registers** page in Headquarters. |
 | -RetailServerAadClientId | The Azure AD client ID that Retail Server should use during communications with Headquarters. |
