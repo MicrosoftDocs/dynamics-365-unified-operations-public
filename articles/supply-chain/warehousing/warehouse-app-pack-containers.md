@@ -4,7 +4,7 @@ description: This article describes how to configure and use Pack containers usi
 author: perlynne
 ms.date: 09/01/2022
 ms.topic: article
-ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields, WHSRFMenuItem, WHSPackProfile, WHSWorker, WHSPack
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
