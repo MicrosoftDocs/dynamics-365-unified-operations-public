@@ -70,12 +70,13 @@ In this procedure, you will configure a detour for the **Sales picking** menu it
 
     - **Copy from Sales Picking:** *Location*
     - **Paste in Location Inquiry:** *Location*
-    - **Auto submit:** *Selected*
+    - **Auto submit:** *Selected* - Page will get refreshed with the pasted *Location* value
 
 1. Because the detour in this scenario is configured on the license plate step, it will be useful if workers can bring the license plate from the inquiry back to the main flow. Therefore, in the **Bring back from location inquiry** section, select **Add** on the toolbar to add a row to the grid. Then set the following values for the new row:
 
     - **Copy from Location Inquiry:** *License plate*
     - **Paste in Sales Picking:** *License plate*
+    - **Auto submit:** *Cleared* - No auto update process when returning from detour with a *License plate* value
 
 1. Select **OK**.
 
@@ -128,6 +129,7 @@ In this procedure, you will configure a detour for the **Sales picking** menu it
 
     - **Copy from Location Inquiry:** *Location*
     - **Paste in Movement:** *Loc / LP*
+    - **Auto submit:** *Cleared* - No auto update process
 
     In this detour, you aren't expecting any information to be copied back, because the main flow was an inquiry where no additional steps are required.
 
