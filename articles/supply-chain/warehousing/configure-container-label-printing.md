@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-ms.search.form: WHSDocumentRouting, WHSContainerTable
+ms.search.form: WHSContainerLabelRouting, WHSLabelLayout, WHSLabelLayoutDataSource, SysCorpNetPrinterList, WHSDocumentRouting, WHSPackProfile, WHSContainerTable, WHSRFMenuItem
 # ROBOTS:
 audience: Application User
 # ms.devlang:
@@ -50,14 +50,14 @@ The label layout controls what information is printed on the label and how it's 
 During the label generation process the system can replace field and method names used in the label layout with actual values. You can easily see the text which will get replaced by looking after the *$* character.
 
 1. Go to **Warehouse management \> Setup \> Document routing \>Label layout**.
-1. Create a record that has the following settings:
+2. Create a record that has the following settings:
     - **Label layout type:** *Container label*
     - **Label layout ID:** *Container*
     - **Description:** *Container ID barcode*
     - **Label layout data source ID:** - Leave blank (only container data will be used)
     - **Enable label template support** - Leave cleared (used for header, row, footer layouts)
     - **Date, time, and number format** - Leave cleared (used for field value formatting tools)
-1. Copy from the below *ZPL container label example* and insert the text into the **Printer text Layout**
+3. Copy from the below *ZPL container label example* and insert the text into the **Printer text Layout**
     ```ZPL container label example
     CT~~CD,~CC^~CT~
     ^XA~TA000~JSN^LT0^MNW^MTT^PON^PMN^LH0,0^JMA^PR8,8~SD15^JUS^LRN^CI0^XZ
@@ -70,12 +70,12 @@ During the label generation process the system can replace field and method name
     ^FD>;$WHSContainerTable.ContainerId$^FS
     ^FT513,525^A0I,39,38^FH\^FDContainer ID^FS
     ^PQ1,0,1,Y^XZ
-    ```
-    > [!NOTE]
-    > You can easily find the correct field/method names by selecting the table in the **Tables** list followed by either a field name in **Fields** list or a method name in the **Methods** list and then use the **Insert at end of text** button.
-1. Close the page
+     ```
+4. Close the page
 
 > [!NOTE]
+> You can easily find the correct field/method names by selecting the table in the **Tables** list followed by either a field name in **Fields** list or a method name in the **Methods** list and then use the **Insert at end of text** button.
+>
 > In the above label layout only the *Container ID* ($WHSContainerTable.ContainerId$) barcode will get printed, but in case you want to include additional related data information to a label, like *delivery name* related to a shipment, you can create a **Label layout data source** (*Warehouse > Setup > Document routing > Label layout data source*) including a join to the *Shipment* table.
 > In the **Label layout data source** select **New** in the *Action Pane* and specify a **Label layout data source ID**, **Description**, and **Label layout type**.
 > Select **Edit query** in the *Action Pane*. Now use the *Joins* option to add the needed table(s).
