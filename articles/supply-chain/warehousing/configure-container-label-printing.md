@@ -78,8 +78,7 @@ During the label generation process the system can replace field and method name
 >
 > In the above label layout only the *Container ID* ($WHSContainerTable.ContainerId$) barcode will get printed, but in case you want to include additional related data information to a label, like *delivery name* related to a shipment, you can create a **Label layout data source** (*Warehouse > Setup > Document routing > Label layout data source*) including a join to the *Shipment* table.
 > In the **Label layout data source** select **New** in the *Action Pane* and specify a **Label layout data source ID**, **Description**, and **Label layout type**.
-> Select **Edit query** in the *Action Pane*. Now use the *Joins* option to add the needed table(s).
-> Note, that in case you remove tables from a existing query you might risk removing field/method names already used in existing label layouts.
+> Select **Edit query** in the *Action Pane*. Now use the *Joins* option to add the needed table(s). When including additional tables to the query it is important the reference the correct joined *table.field-names* in the ZPL text. The additional tables will include a number *_#* as a suffix. In case you remove tables from a existing query you might risk removing field/method names already used in existing label layouts.
 > In the **Label layout** you can now select the created **Label layout data source ID**
 
 
@@ -113,6 +112,9 @@ The below is an example of a label containing data about packed items in a conta
     > This setup will loop over container lines and split out a label per 10 container lines. By using *RowsPerLabel=1* you will generate a label per line.
     >  
     > This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the container), set the **n** value for the **\^PQn** section in the footer to the required number of copies. For example, to print two copies of each label, specify **\^PQ2**.
+
+#### Date, time, and number format
+The **Date, time, and number format** setting enables formatting of *date*, *time*, and *number* fields according to the assigned *languages* settings.
 
 ### Create a container label rounting
 To define which container label layouts to use and where to print you need to define a **Container label routing**.
