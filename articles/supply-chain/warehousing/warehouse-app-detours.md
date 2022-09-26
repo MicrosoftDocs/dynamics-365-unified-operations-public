@@ -4,7 +4,7 @@ description: This article describes how to configure detours for menu items so t
 author: Mirzaab
 ms.date: 09/01/2022
 ms.topic: article
-ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour, WHSMobileAppFlowStepDetourSelectFields, WHSMobileAppFlowStepSelectPromotedFields
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -45,7 +45,7 @@ Use the following procedure to set up a detour from a menu-specific override.
 1. Find the combination of **Step ID** and **Menu item name** values that you want to edit, and then select the value in the **Step ID** column.
 1. On the page that appears, on the **Available detours (menu items)** FastTab, you can specify the menu item that should act as a detour. You can also select which field values from the main task should automatically be copied to and from the detour. For examples that show how to use these settings, see the scenarios later in this article.
 
-## Sample scenario 1: Sales picking where a location inquiry acts as a detour
+## <a name="scenario-1"></a>Sample scenario 1: Sales picking where a location inquiry acts as a detour
 
 This scenario shows how to configure a location inquiry as a detour in a worker-directed sales picking task flow. This detour will enable workers to look up all the license plates in the location that they are picking from and pick the license plate that they want to use to complete the pick. This type of detour might be useful if the bar code is damaged and therefore unreadable by the scanner device. Alternatively, it might be useful if a worker must learn what is actually on hand in the system. Note that this scenario works only if you're picking from license plate–controlled locations.
 
@@ -153,4 +153,4 @@ In this procedure, you will do a location inquiry by using the Warehouse Managem
 > [!NOTE]
 > The *Multi-level detours for the Warehouse Management mobile app* feature enables you to define multi-level detours (detours within detours), which will allow workers to jump from an existing detour two a second one and then back again. The feature supports two levels of detours out of the box and, if necessary, you can customize your system to support three or more levels of detours by creating code extensions on the `WHSWorkUserSessionState` table.
 >
-> The *Auto-submit detour steps for the Warehouse Management mobile app* feature can make it faster and easier for workers to complete detour flows in the Warehouse Management mobile app. It enables some flow steps to be skipped by letting the app populate detour data on the back end and then move automatically to the next step, like in the above *Scenario 1*.
+> The *Auto-submit detour steps for the Warehouse Management mobile app* feature can make it faster and easier for workers to complete detour flows in the Warehouse Management mobile app. It enables some flow steps to be skipped by letting the app populate detour data on the back end and then move automatically to the next step by auto submitting the page step, like in the above [*Scenario 1*](#scenario-1).
