@@ -151,7 +151,7 @@ To make the certificate rotation process easier, Microsoft highly recommends tha
 
 #### Service Fabric with certificates that aren't expired
 
-No further action is required. Service Fabric will automatically detect the new certificates. 
+No further action is required on the Service Fabric cluster. Service Fabric will automatically detect the new certificates. You should proceed with [Update the LocalAgent certificates](#update-the-localagent-certificates). 
 
 If you've changed the certificate common name, you must upgrade your Service Fabric cluster configuration.
 
@@ -229,7 +229,7 @@ If you have to update the list of issuers, you must do the update while the exis
 
 Continue this process following the steps in [Troubleshoot on-premises deployments](troubleshoot-on-prem.md#clean-up-an-existing-environment-and-redeploy).
 
-## Update the LocalAgent certificate
+## Update the LocalAgent certificates
 
 You must reinstall the LocalAgent in the following situations:
 
