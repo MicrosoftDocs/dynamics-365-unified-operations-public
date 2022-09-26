@@ -155,8 +155,10 @@ You can also remove MonitoringAgentAppType-Agent by selecting the ellipsis butto
 The following script removes and unprovisions all Service Fabric applications except LocalAgent and the monitoring agent for LocalAgent. You must run this script on an orchestrator virtual machine (VM).
 
 ```powershell
-$applicationNamesToIgnore = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring', 'fabric:/Agent-LBDTelemetry')
+$applicationNamesToIgnore = @('fabric:/LocalAgent', 'fabric:/Agent-Monitoring', 'fabric:/Agent-LBDTelemetry', 'fabric:/LBDTelemetry-Agent')
 $applicationTypeNamesToIgnore = @('MonitoringAgentAppType-Agent', 'LocalAgentType', 'LBDTelemetryType-Agent')
+
+Connect-ServiceFabricCluster
 
 Get-ServiceFabricApplication | `
     Where-Object { $_.ApplicationName -notin $applicationNamesToIgnore } | `
@@ -1653,7 +1655,7 @@ Newtonsoft.Json.JsonReaderException: Unexpected character encountered while pars
 
 **Reason:** The configuration generation method was changed in version 10.0.21.
 
-**Resolution:**  To be able to generate the new configuration, you must upgrade to local agent 2.7.0 or later. We recommended that you upgrade to the latest version available.
+**Resolution:**  To be able to generate the new configuration, you must upgrade to local agent 2.7.0 or later. We recommend that you upgrade to the latest version available.
 
 ## Add-CertToServicePrincipal fails
 
