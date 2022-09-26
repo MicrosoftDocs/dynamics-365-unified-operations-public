@@ -45,19 +45,14 @@ For the latest regulatory update plans, refer to the following table.
 
 |Country|Release date|Release version|Regulatory update|
 |--------------------|---------------|-------|-------| 
-|      Brazil         |   March 2022    | 10.0.27        |    ICMS-DIFAL collection in operations aimed at non-tax taxpayers (Complementary Law No. 190/22)  |
-|      Brazil         |   March 2022         | 10.0.27         |    NF-e NT2021.004  v1.00 - Layout and validation rules updates  |
-|      Brazil         |   March 2022         | 10.0.27         |    NF-e NT2021.004  v1.00 - Layout and validation rules updates - Retail  |
-|      Brazil         |   April 2022         | 10.0.27HF, 10.0.28         |    SPED ECF - LAYOUT 8  |
-|      Eastern Europe         |   July 2022         | 10.0.27HF, 10.0.28HF, 10.0.29         |    General ledger statement by main account  |
-|      Lithuania|   February 2022 | 10.0.27 | i.SAF changes from 2022-01-01 in Dynamics 365 Finance  |
-|      Mexico         |   March 2022      | 10.0.27      |   CFDI formats version 4.0 (invoices and payments)  |
-|      Mexico         |   February 2022      | 10.0.27      |   As of January 1, 2022, version 4.0 of the CFDI comes into force, with a coexistence period between version 3.3 and version 4.0, which runs from January 1 to June 30, 2022.  |
-|      Mexico         |   March 2022      | 10.0.27      |   CFDI formats version 4.0 (withholding)  |
-|      Poland          |   April 2022     | 10.0.27HF, 10.0.28     |   JPK_FA version 4 starting from April 1, 2022JPK_V7M - new schema version from January 2022 |
-|      Russia          |   June 2022     | 10.0.27    |  Report about operations with traceable products (in scope of writing off purchased traceable goods like monitors, refrigerators and office furniture for own usage)|
-|      Singapore      |   July 2022| 10.0.27HF, 10.0.28HF, 10.0.29 | IRAS Audit File (IAF) in TXT format|
-|      Spain      |   March 2022| 10.0.27 | VAT declaration Model 303 changes January 1, 2022 in Dynamics 365 Finance|
+|      Brazil         |   April 2022         | 10.0.28         |    SPED ECF - LAYOUT 8  |
+|      Brazil         |   June 2022         | 10.0.30HF         |    EFD ICMS IPI - version 3.0.9  |
+|      Brazil         |   August 2022         | 10.0.30         |    NF-e NT2021.004  v1.31 - Layout and validation rules updates  |
+|      Eastern Europe         |   July 2022         | 10.0.28HF, 10.0.29         |    General ledger statement by main account  |
+|      Hungary         |   July 2022         | 10.0.30         |    VAT declaration in XML (2065A) and preview in Excel. Purchase invoices appendix in XML (2065M)  |
+|      Poland          |   April 2022     | 10.0.28     |   JPK_FA version 4 starting from April 1, 2022 |
+|      Russia          |   June 2022     | 10.0.29    |  Import address data from the State Address Register (GAR)|
+|      Singapore      |   July 2022| 10.0.28HF, 10.0.29 | IRAS Audit File (IAF) in TXT format|
 
 
 ## Additional resources
