@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 # Checkout Module Error Codes
 
-Dynamics 365 Commerce is introducing standardized error references to be included in online channel checkout errors presented to online shoppers. Error messages include an error reference that will be detailed in this article. These error references allow for referencing conditions of the error through this article without displaying unnecessary information to the online shopper. Depending upon the error encountered, the table below will:
+Dynamics 365 Commerce is introducing standardized error references to be included in online channel checkout errors presented to online shoppers. Available in 10.0.31 and higher, error messages in the checkout module will now include an error reference that will be detailed in this article. These error references allow for referencing conditions of the error through this article without displaying unnecessary information to the online shopper. Depending upon the error encountered, the table below will:
 
 - Describe the condition that caused the error or provide additional details
 - Provide information for consideration in the environment or payment connector configurations
