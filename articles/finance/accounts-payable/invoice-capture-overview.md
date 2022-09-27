@@ -51,6 +51,6 @@ Microsoft provides world-class infrastructure that contains lots of fundamental 
   | Roles                 | Actions | Systems| Role name | 
   |----------------------|----------|--------|------------|
   |Administrator|<ul><li>Set up environment in power platform</li><li>Deploy solutions in power platform</li><li>Set up connection between Dynamics 365 and AI builder</li><li>Set up Azure data lake storage location</li></ul>|<ul><li>Dynamics 365</li><li>Power Platform</li><li>Azure Data Lake</li></ul>|<ul><li>Dynamics 365 administrator</li><li>Power Platform administrator</li><li>Storage Blob data owner</li></ul>|
-  |AI maker |<ul><li>Maintain flow</li><li>Create custom AI model</li></ul>|Power Platform| Citizen makers|
+  |AI maker |<ul><li>Maintain flow</li><li>Create custom AI model</li></ul>|<ul><li>Power Platform</li></ul>| <ul><li>Citizen makers</li></ul>|
   |AP clerk |<ul><li>Review and take actions in Vendor invoice staging area</li><ul>|Power Platform|New AP clerk role in Power Platform|
-  |AP clerk |<ul><li>Daily operation as AP clerk</li><li>Navigate to Vendor invoice staging</li></ul>|Dynamics 365/Accounts payable clerk|
+  |AP clerk |<ul><li>Daily operation as AP clerk</li><li>Navigate to Vendor invoice staging</li></ul>|Dynamics 365|Accounts payable clerk|
