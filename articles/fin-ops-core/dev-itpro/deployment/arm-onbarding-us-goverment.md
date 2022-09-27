@@ -24,7 +24,10 @@ To deploy Azure Resource Manager topologies, you must complete the Resource Mana
 - The Azure subscription ID that you're deploying to
 
     > [!NOTE]
-    > For US government Microsoft Dynamics Lifecycle Services (LCS) projects, only Azure US government–specific Azure subscriptions are supported.
+    > For US government Microsoft Dynamics Lifecycle Services (LCS) projects, 
+    > 1. Only Azure Government–specific Azure subscriptions are supported.
+    > 2. Azure Government Subscriptions where management certificate support is not available, for example CSP Azure subscriptions are **not** supported currently.
+
 
 - Ownership of the Azure subscription, or access to the subscription owner, so that you can add contributor workflows and upload the management certificate
 - The tenant administrator, so that you can work through the admin consent workflow
