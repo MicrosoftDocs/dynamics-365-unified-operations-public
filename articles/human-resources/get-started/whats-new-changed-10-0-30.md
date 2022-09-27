@@ -62,6 +62,14 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 | Tasks management upgrade | Changes in the 10.0.30 release added the option to apply edits to library tasks to multiple checklists at the same time. Those edits can be rolled down only if a relationship already exists between the task in the task library and the task in the checklist. Before the 10.0.30 release, when a library task was added to a checklist, no relationship was created. An upgrade is required to create the relationship between the task library and the checklist task. This upgrade will be released soon. Issue #732960. |
 | Changes to the employee's payment method through **Employee self service** wasn't correctly reflected. | When an employee changes the payment method via **Employee self service**, this change wasn't reflected for the currently signed-in user. This issue has been fixed. |
 
+## Features on by default in this release
+
+The following table lists the features that are turned on by default in version 10.0.30. Most features that have been turned on automatically can be turned off in Feature management. In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory to ensure that customers are using current functionality. In this way, enhancements can build on the current functionality as they are added. Features will never be automatically enabled in less than one year unless they are determined to be essential. 
+
+| Feature name | Feature added | Feature state | Module |
+| ---- | ---- | ---- | ---- |
+|Streamlined Employee Entry|March 31, 2022|On by default|Human Resources|
+
 ## Additional resources
 
 ### Platform updates for finance and operations apps
