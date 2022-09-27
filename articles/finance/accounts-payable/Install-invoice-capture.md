@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Install the invoice capature service 
-description: This article provides information about installing the invoice capture service. 
+title: Install the invoice capture service 
+description: This article provides information about installing the Invoice capture service. 
 author: sunfzam
 ms.date: 09/25/2022
 ms.topic: overview
@@ -39,10 +39,11 @@ We target at an out-of-box usage experience for the solution deployment. User ju
 > If you have installed the solution in private preview, there were major changes on underlying tables and logics and backwards compatibility can't be guarenteed. 
 > You will need to uninstall the old solution before you continue. 
 
-### Setup connection for Dynamics 365 finance and operations
+### Set up connection for Dynamics 365 finance and operations
 
-You will need to register an azure App with AAD in your azure portal and register the same in your Dynamics 365 finance and operations. 
-Note that you must have an Azure subscription and admin access to Azure Active Directory (Azure AD). 
+You'll need to register an Azure App with AAD in your Azure portal and register the same in your Dynamics 365 finance and operations. 
+>[!NOTE:]
+> You must have an Azure subscription and admin access to Azure Active Directory (Azure AD). 
 
 ### Register an Azure app in the Azure portal
 
@@ -50,7 +51,7 @@ Note that you must have an Azure subscription and admin access to Azure Active D
 2. If you have access to multiple tenants, use the **Directories and subscriptions** filter to switch to the tenant that is the same with financial operation environment. 
 3. Select Azure Active Directory. 
 4. **Manage** > **App registrations > New registration**.
-5. Enter a display name for your application. The app registration's automatically generated Application (client) ID,uniquely identifies your app within the identity 
+5. Enter a display name for your application. The app registration's automatically generated Application (client) ID, uniquely identifies your app within the identity 
 platform. Note the client ID. 
 6. Specify who can use the application. Select **Accounts in this organizational directory only**. 
 7. Select **Register** to complete the app registration. 
@@ -105,9 +106,9 @@ Follow these steps to enable the service:
 7. Wait for the installation to be completed. Once completed, the solutions have been installed in your environment in Power Apps.
 
 
-### Initalize setup with additional solution package
+### Initialize setup with an additional solution package
 
-Before the solution can be used, complete the following: 
+Before the solution can be used, complete the following steps: 
 - Set up communication between Power Platform and the finance and operations environment 
 - Set up connection reference for Dataverse and Office 365 Outlook that will be used by the channel
 
@@ -128,9 +129,9 @@ the dropdown.
 9. The cloud flow will need to be ran to set up the connection between **Invoice Capture** in Power Platform and Dynamics 365 finance and operations. 
 10. Click **Run** and enter the parameters: 
 **Fno Url**: URL for the Dynamics 365 finance and operations environment to integrate with. 
-**Tenant Id**: The tenant Id for the Dynamics 365 finance and operations environment. 
-**Client Id**: The Azure application Id that was registered earlier. 
-**Client secret**: The client secret that was generated for the azure application.
+**Tenant Id**: The tenant ID for the Dynamics 365 finance and operations environment. 
+**Client Id**: The Azure application ID that was registered earlier. 
+**Client secret**: The client secret that was generated for the Azure application.
 
 >[!NOTE:] Dataverse will manage identity for secrets. The client secret won’t be saved into dataverse tables. 
  
