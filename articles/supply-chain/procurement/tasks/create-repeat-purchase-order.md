@@ -43,7 +43,30 @@ This article shows you how to create a repeat purchase order (PO) by copying lin
     - The **Invert sign** field also supports changing the ordered quantity by changing the sign of the quantity for order lines that are added. This may be useful if you need to reverse a transaction, by creating order lines that negate the transaction. This option is automatically selected when the page is opened from the **Create credit note** action.  
     - The **Copy charges** option allows you to copy charges to your new order from the document that you're copying the order lines from.  
     - The **Recalculate prices** option uses the current prices and discounts rather than copying these from the document that you're copying other information from.  
-    - The **Copy precisely** option creates an exact copy of the values in all the fields on the order document header and lines. If this option is not selected, default values are used for many of the fields relating to the vendor and products just as if you were creating the new order manually. For example, if the order that you're copying from had overridden the default Invoice account for the vendor, that same Invoice account would be copied to your order. If you didn't select the **Copy precisely** option, the default Invoice account for the vendor would be used on your order instead.  
+    - The **Copy precisely** option creates an exact copy of the values for the fields mentioned below on the order document header and lines. If this option is not selected, default values are used for many of the fields relating to the vendor and products just as if you were creating the new order manually. For example, if the order that you're copying from had overridden the default Invoice account for the vendor, that same Invoice account would be copied to your order. If you didn't select the **Copy precisely** option, the default Invoice account for the vendor would be used on your order instead.
+    The fields that gets copied over by "Copy precisely" if following:
+        1.	Language
+        2.	Terms of payment
+        3.	Method of payment
+        4.	Payment specification
+        5.	Number sequence group
+        6.	Cash discount
+        7.	Discount percentage
+        8.	Currency
+        9.	Delivery terms
+        10.	Mode of delivery
+        11.	Dimension
+        12.	Sales tax group
+        13.	Override sales tax
+        14.	Prices include sales tax
+        15.	Transport
+        16.	Port
+        17.	Statistics procedure
+        18.	Template ID
+        19.	Delivery name
+        20.	Postal address
+        21.	Reference
+        22.	Reference Table ID
     - The **Delete purchase lines** option deletes all purchase order lines that already exist on the purchase order that you're copying to, before applying the new lines. Use this option with caution, as it deletes all existing lines without further warning.  
     - If you use the **Copy order header** option, you don't need to manually create the header information on your new order. Note that this option will result in default values being used for the fields associated with the vendor. If the document that you're copying from has non-default values that you want to copy, use the **Copy precisely** option as well.   
     - There are different document sources that you can copy from, and each has a separate section on this page. For example, the **Purchase orders** section allows you to copy from existing purchase orders.  
