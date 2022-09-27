@@ -111,8 +111,8 @@ Before the solution can be used, complete the following:
 - Set up communication between Power Platform and the finance and operations environment 
 - Set up connection reference for Dataverse and Office 365 Outlook that will be used by the channel
 
->[!NOTE] The setup is not part of the solution and could be performed manually. To make the setup easier, we have enclosed below solution package to help the 
-> initialize setup. 
+> [!NOTE] 
+> The setup is not part of the solution and could be performed manually. To make the setup easier, we have enclosed below solution package to help initialize setup. 
 
 Follow these steps to finish the setup:
 
