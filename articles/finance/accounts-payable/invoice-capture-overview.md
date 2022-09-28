@@ -32,21 +32,21 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This article provides information about installing and configuring the (Optical Character Recognition) OCR service that will automatically create vendor invoices from 
-invoice images.
+This article provides information about installing and configuring the Invoice capture service that will automatically create vendor invoices from invoice images.
 
 
 ## Invoice capture service overview 
-The Accounts payable (AP) department manages and processes invoices for goods and services received. The AP accountant verifies the vendor invoice data to avoid extra 
-effort for adjustment or correction during period close. So, vendor invoices can be paid in a timely manner to prevent financial loss due to error or fraud. 
+The Accounts payable (AP) department manages and processes invoices for goods and services received. The AP accountant verifies the vendor invoice data to avoid the extra effort for adjustment or correction during period close, vendor invoices can be paid in a timely manner to prevent financial loss due to error or fraud. 
 Optical Character Recognition (OCR) has been widely used by various industries in past years. It's a common method to digitizing printed texts so that they can be electronically edited, searched, stored more compactly, displayed on-line, and used in machine processes such as cognitive computing, machine translation, (extracted) text-to-speech, key data and text mining.
-With evolvement of AI technology, modern OCR solution can read different invoice formats from various vendors with little human intervention. More companies are recognizing the fact that it can save lots of effort and improve accuracy by processing invoices via automation than manual processing.
+With evolvement of AI technology, modern OCR solutions can read different invoice formats from various vendors with little human intervention. More companies are recognizing the fact that it can save effort and improve accuracy by processing invoices via automation than manual processing.
 
  
 ## System landscape 
-Microsoft provides world-class infrastructure that contains lots of fundamental services. Our vision is to design a seamlessly integrated solution regardless of whether the services are from different Microsoft platforms. Below are the major components and steps contained in this solution.
+The major components and steps contained in the Invoice capture service are displayed in the diagram below:
 
-## Required roles
+## Required roles for Invoice capture service
+
+The following roles are required to set up and use the Invoice capture service:
 
   | Roles                 | Actions | Systems| Role name | 
   |----------------------|----------|--------|------------|
