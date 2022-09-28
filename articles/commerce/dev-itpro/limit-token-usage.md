@@ -84,12 +84,19 @@ The following forms in Headquarters will have the payments forms enforced when t
 - The Sales Order > Payments > Enter customer payment information
 - 
 
-### Managing payment tokens
+### Managing payment tokens (Archive or Removal)
+Payment tokens created prior to the **Restrict Payment Token usage to Order context** feature flag being enabled (or created while the feature is disabled) will remain 'unscoped' in the system and be referencable in the Headquarters Payment Form selection lists. These tokens can be removed regularly in two ways:
 
-Archiving
+- Utilize the **Archive credit card transaction data** page to set a job to regularly purge or archive the payment tokens. The **Delete data without archiving** setting to "Yes" will delete the tokens that meet the **Minimum transaction age (in days)** setting.  More information can be found in the [Archive credit card transaction data](archive-cc-data) article.
 
-Batch Job
-
+- Use the new **Account receivable > Inquiries and reports > Clean up > Purge credit card tokens** form. This form allows to run or set a batch job to delete payment tokens. Set the parameters:
+  - **Minimum token age in days** must be 90 days or more.
+  - **Run in the background** settings can be used to set **Recurrence** or **Alerts** settings.
+  - A **Batch group** can be assigned to run this task with a specific group as created.
+  - Marking **Private** to "Yes" will only allow the user who creates the job run it.
+  - Setting **Critical Job** to "Yes" will ensure the system actively tracks its status. 
+ 
+Deleted tokens are not retrievable. Use the **Minimum token age in days** setting to an age that suites the longer-running transactional lifespan (from authorization to capture or refund) for your environment.
 
 
 ## Additional resources
