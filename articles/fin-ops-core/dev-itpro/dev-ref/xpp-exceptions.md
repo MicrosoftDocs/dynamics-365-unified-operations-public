@@ -515,5 +515,6 @@ The following table shows the exception literals that are the values of the **Ex
 | UpdateConflictNotRecovered        | An error occurred in a transaction that is using Optimistic Concurrency Control. The code won't be retried. This exception can't be caught within a transaction.    |
 | Warning                           | An exceptional event has occurred. Although the user might have to take action, the event isn't fatal. Don't throw a **warning** exception. |
 | [SQL connection error X++ exception](sql-connection-error.md)       | An error occurred when during the query execution. The transaction will be canceled. This exception can't be caught within a transaction. |
+| Timeout       | SQL query execution timed out. The exception can’t be caught within a transaction. The exception can be retried (use a retry statement in the catch block). |
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
