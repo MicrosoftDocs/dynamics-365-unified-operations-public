@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Install the Invoice capture service 
-description: This article provides information about installing the Invoice capture service. 
+title: Install the Invoice capture solution 
+description: This article provides information about installing the Invoice capture solution. 
 author: sunfzam
 ms.date: 09/25/2022
 ms.topic: overview
@@ -37,9 +37,9 @@ ms.dyn365.ops.version:
 >[!Note:]  
 > If you have installed the solution in private preview, you will need to uninstall the old solution before you continue. 
 
-### Set up connection for Dynamics 365 finance 
+### Set up connection for Dynamics 365 Finance 
 
-You'll need to register an Azure App with AAD in your Azure portal and register the same in your Dynamics 365 finance.
+You'll need to register an Azure App with AAD in your Azure portal and register the same in your Dynamics 365 Finance.
 
 >[!NOTE:]
 > You must have an Azure subscription and admin access to Azure Active Directory (Azure AD). 
@@ -47,7 +47,7 @@ You'll need to register an Azure App with AAD in your Azure portal and register 
 ### Register an Azure app in the Azure portal
 
 1. Sign into the Azure portal.
-2. If you have access to multiple tenants, use the **Directories and subscriptions** filter to switch to the tenant that is the same with financial operation environment. 
+2. If you have access to multiple tenants, use the **Directories and subscriptions** filter to switch to the tenant that is the same with Finance environment. 
 3. Select Azure Active Directory. 
 4. **Manage** > **App registrations > New registration**.
 5. Enter a display name for your application. The app registration's automatically generated Application (client) ID, uniquely identifies your app within the identity 
@@ -67,7 +67,7 @@ When registration is complete, the Azure portal will display the app registratio
 >[!Note] 
 > You will want to note the **Secret value**. The **Secret value** won’t be seen after the page is closed and you need the value later.  
 
-### Assign API permission for Dynamics 365 finance and operations
+### Assign API permission for Dynamics 365 Finance 
 1. On the **Overview** page of registered app in previous step, go to **Manage > API permissions**.
 2. Select **Add a permission**.
 3. In the **Request API permissions** pane, select **Dynamics ERP**.
@@ -75,14 +75,15 @@ When registration is complete, the Azure portal will display the app registratio
 5. Select the permissions below: 
 
 
-This will allow the regitered app to access the Dynamics 365 finance and operations environment with Odata protocol.
+
+This will allow the regitered app to access the Dynamics 365 Finance environment with Odata protocol.
 6. Select **Add permissions** to finish.
 
 
-### Register Azure application in the Dynamics 365 finance and operations environment
+### Register Azure application in the Dynamics 365 Finance environment
 
-Follow these step to register the external application in the Dynamics 365 finance and operations environment:
-1. In the Dynamics 365 finance and operations, go to **System administration > Setup > Azure Active Directory applications**. 
+Follow these step to register the external application in the Dynamics 365 Finance environment:
+1. In Dynamics 365 Finance, go to **System administration > Setup > Azure Active Directory applications**. 
 2. Select **New** and for the new record enter: 
 o In the **Client Id** field, enter the application ID that you registered in Azure AD. 
 o In the **Name** field, enter a name for the application. 
@@ -102,22 +103,22 @@ Follow these steps to enable the service:
 4. Select **Get it now** again.
 5. The power platform admin page within the same login tenant will open. Users can select the environment.  
 6. The solution will be installed in the background.
-7. Wait for the installation to be completed. Once completed, the solution has been installed in your environment in Power Apps.
+7. Once completed, the solution has been installed in your environment in Power Apps.
 
 
 ### Complete set up for Power Platform, Dataverse, and Outlook 
 
 Before the solution can be used, complete the following steps: 
-- Set up communication between Power Platform and Dynamics 365 finance environment 
+- Set up communication between Power Platform and Dynamics 365 Finance environment 
 - Set up connection reference for Dataverse and Office 365 Outlook that will be used by the channel
 
 > [!NOTE] 
-> The setup is not part of the solution and could be performed manually. To make the setup easier, we have enclosed below solution package to help initialize setup. 
+> The setup is not part of the solution and could be performed manually. To make the setup easier, there is a solution package on AppSource to initialize setup. 
 
 Follow these steps to finish the setup:
 
-1. Save the above solution package into your local storage (Don’t unzip). 
-2. Go to Solutions in your environment in Power Apps, and select **Import solution**.
+1. Save the solution package into your local storage (Don’t unzip). 
+2. Go to **Solutions** in your environment in Power Apps, and select **Import solution**.
 3. Select **Browse** and choose the solution package provided and click **Next**.
 4. Click **Next**.   
 5. Two connections need to be created and assigned. If connections already exist, you can assign it. If there are no connections, select **New connection** in 
@@ -125,7 +126,7 @@ the dropdown.
 6. Follow the wizards to create the connection to the Dataverse and Office 365 Outlook.
 7. Once the connections are created, click **Refresh**. Select the connection and complete the assignment. **Import** will be enabled and click **Import** to continue.
 8. After the import completes, open the **Dynamics 365 Invoice capture – Installation Tools**, click **Cloud flows** in the left pane. 
-9. The Cloud flow will need to be ran to set up the connection between **Invoice capture** in Power Platform and Dynamics 365 finance. 
+9. The Cloud flow will need to be ran to set up the connection between **Invoice capture** in Power Platform and Dynamics 365 Finance. 
 10. Click **Run** and enter the parameters: 
 **Fno Url**: URL for the Dynamics 365 Finance environment to integrate with. 
 **Tenant Id**: The tenant ID for the Dynamics 365 Finance environment. 
