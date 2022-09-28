@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Invoice capture service configuration groups
-description: This article provides general information about configuration groups in the Invoice capture service. 
+title: Invoice capture solution configuration groups
+description: This article provides general information about configuration groups in the Invoice capture solution. 
 author: sunfzam
 ms.date: 09/28/2022
 ms.topic: overview
