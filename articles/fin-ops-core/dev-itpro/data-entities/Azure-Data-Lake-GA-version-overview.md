@@ -58,9 +58,9 @@ The following sections describe the preview features that are available.
 >
 > By enabling preview features, you agree to the [Supplemental Terms of Use](../../fin-ops/get-started/public-preview-terms.md).
 
-## Enhanced Metadata (preview)
+## Enhanced Metadata 
 
-Besides data, the data lake contains metadata that describes the name, data type, and size of data. In the lake, you will notice, in addition to data files, metadata files at a folder level that corresponds to the data files. When you install the Export to Data Lake feature and select data to add to the data lake, the system writes metadata files in addition to data. If you select the **Enhanced metadata (preview)** option when you install Export to Data Lake, the system adds even more metadata. For more information about metadata and the Enhanced Metadata (preview) feature, see [Data and metadata stored in Azure Data Lake](Azure-Data-Lake-Enhanced-Metadata.md).
+Besides data, the data lake contains metadata that describes the name, data type, and size of data. In the lake, you will notice, in addition to data files, metadata files at a folder level that corresponds to the data files. When you install the Export to Data Lake feature and select data to add to the data lake, the system writes metadata files in addition to data. If you select the **Enhanced metadata** option when you install Export to Data Lake, the system adds even more metadata. For more information about metadata and the Enhanced Metadata feature, see [Data and metadata stored in Azure Data Lake](Azure-Data-Lake-Enhanced-Metadata.md).
 
 ## Frequently asked questions
 
