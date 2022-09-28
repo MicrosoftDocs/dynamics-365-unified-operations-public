@@ -104,7 +104,7 @@ When a related data source record is deleted, the column values in the view row 
 
 There is a system batch job **Delete tracking history clean-up** that cleans up records in the **AifChangeTrackingDeletedObject** table that has exceeded the retention period. Records is deleted in batches until the timeout criteria is reached. This system job is singleton. The job runs every day at 1 AM. The recurrence and frequency of the job is configurable in **System Administration>Batch Jobs**. The retention period, delete batch size and timeout is configurable using **SysGlobalConfiguration settings**.
 
-##Retrive row version entity changes##
+##Retrive row version entity changes
 
 For details for how to use the **RetrieveEntityChanges** API, see TBA
  
