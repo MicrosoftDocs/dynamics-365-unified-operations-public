@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Install the invoice capture service 
+title: Install the Invoice capture service 
 description: This article provides information about installing the Invoice capture service. 
 author: sunfzam
 ms.date: 09/25/2022
@@ -33,7 +33,6 @@ ms.dyn365.ops.version:
 [!include [preview banner](../includes/preview-banner.md)]
 
 ## Install the invoice capture service
-We target at an out-of-box usage experience for the solution deployment. User just needs several clicks, then the whole solutions can be deployed and usable. 
 
 >[!Note:]  
 > If you have installed the solution in private preview, there were major changes on underlying tables and logics and backwards compatibility can't be guarenteed. 
