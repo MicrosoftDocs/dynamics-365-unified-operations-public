@@ -39,6 +39,18 @@ This list is intended to help you consider these removals and deprecations for y
 > [!NOTE]
 > Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/global/axtechrefrep_61). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
+## Features removed or deprecated in the Finance 10.0.31 release
+
+### EDIFACT PAYMUL (AT) configuration under Payment model
+
+| &nbsp;  | &nbsp;  |
+|---|---|
+| **Reason for deprecation/removal** | Replaced with new format based on ISO 20022 pain.001.001.09.| 
+| **Replaced by another feature?**   | Yes |
+| **Product areas affected**         | Application |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: Banks in Austria will deprecate EDICFACT-PAYMUL for cross border payments by November 2022 and will replace it by XML version pain.001.001.09N. A new configuration under Global Configuration repository has been added to allow users to complete the cross border payment request.|
+
 ## Features removed or deprecated in the Finance 10.0.30 release
 
 ### Revenue recognition
