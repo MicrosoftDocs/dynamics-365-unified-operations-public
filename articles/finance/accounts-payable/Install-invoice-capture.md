@@ -35,12 +35,12 @@ ms.dyn365.ops.version:
 ## Install the invoice capture service
 
 >[!Note:]  
-> If you have installed the solution in private preview, there were major changes on underlying tables and logics and backwards compatibility can't be guarenteed. 
-> You will need to uninstall the old solution before you continue. 
+> If you have installed the solution in private preview, you will need to uninstall the old solution before you continue. 
 
-### Set up connection for Dynamics 365 finance and operations
+### Set up connection for Dynamics 365 finance 
 
-You'll need to register an Azure App with AAD in your Azure portal and register the same in your Dynamics 365 finance and operations. 
+You'll need to register an Azure App with AAD in your Azure portal and register the same in your Dynamics 365 finance.
+
 >[!NOTE:]
 > You must have an Azure subscription and admin access to Azure Active Directory (Azure AD). 
 
@@ -90,25 +90,25 @@ o In the **User ID** field, select the service account user ID. For this example
 correct permissions for the operations that must be performed. 
 3. Select **Save**.
 
-### Install the Invoice capture service
+### Install the Invoice capture solution
 
-The Invoice capture service is in public preview, the user will need to confirm the preview usage via flight code from AppSource. 
+The Invoice capture solution is in public preview, the user will need to confirm the preview usage via flight code from AppSource. 
 
 Follow these steps to enable the service:
 
-1. Open the link for preview version of Dynamics 365 Invoice capture service in AppSource.
+1. Open the link for preview version of Dynamics 365 Invoice capture solution in AppSource.
 2. Sign in and select **Free trial**.
 3. Check and confirm the terms of use and private policy for public preview usage. 
 4. Select **Get it now** again.
 5. The power platform admin page within the same login tenant will open. Users can select the environment.  
-6. The solution packages will be installed in the background.
-7. Wait for the installation to be completed. Once completed, the solutions have been installed in your environment in Power Apps.
+6. The solution will be installed in the background.
+7. Wait for the installation to be completed. Once completed, the solution has been installed in your environment in Power Apps.
 
 
-### Initialize setup with an additional solution package
+### Complete set up for Power Platform, Dataverse, and Outlook 
 
 Before the solution can be used, complete the following steps: 
-- Set up communication between Power Platform and the finance and operations environment 
+- Set up communication between Power Platform and Dynamics 365 finance environment 
 - Set up connection reference for Dataverse and Office 365 Outlook that will be used by the channel
 
 > [!NOTE] 
@@ -122,17 +122,17 @@ Follow these steps to finish the setup:
 4. Click **Next**.   
 5. Two connections need to be created and assigned. If connections already exist, you can assign it. If there are no connections, select **New connection** in 
 the dropdown.
-6. Follow the wizards to create the connection to the Dataverse and Office 365 outlook.
+6. Follow the wizards to create the connection to the Dataverse and Office 365 Outlook.
 7. Once the connections are created, click **Refresh**. Select the connection and complete the assignment. **Import** will be enabled and click **Import** to continue.
-8. After the import completes, open the **Dynamics 365 Invoice Capture – Installation Tools**, click **Cloud flows** in the left pane. 
-9. The cloud flow will need to be ran to set up the connection between **Invoice Capture** in Power Platform and Dynamics 365 finance and operations. 
+8. After the import completes, open the **Dynamics 365 Invoice capture – Installation Tools**, click **Cloud flows** in the left pane. 
+9. The Cloud flow will need to be ran to set up the connection between **Invoice capture** in Power Platform and Dynamics 365 finance. 
 10. Click **Run** and enter the parameters: 
-**Fno Url**: URL for the Dynamics 365 finance and operations environment to integrate with. 
-**Tenant Id**: The tenant ID for the Dynamics 365 finance and operations environment. 
+**Fno Url**: URL for the Dynamics 365 Finance environment to integrate with. 
+**Tenant Id**: The tenant ID for the Dynamics 365 Finance environment. 
 **Client Id**: The Azure application ID that was registered earlier. 
 **Client secret**: The client secret that was generated for the Azure application.
 
->[!NOTE:] Dataverse will manage identity for secrets. The client secret won’t be saved into dataverse tables. 
+>[!NOTE:] Dataverse will manage identity for secrets. The client secret won’t be saved in the Dataverse tables. 
  
 
 
