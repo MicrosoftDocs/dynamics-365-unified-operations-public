@@ -21,7 +21,7 @@ The steps that you must complete vary, depending on the type of environment.
 
 ## Sandbox and production environments
 
-Open a support ticket with the Microsoft support team. Enter **Enable 5-min transaction timeout for Dual Write DV to FinOps Transactions** as the title, and provide the organization ID or tenant ID. Microsoft will enable the five-minute session time-out window for you.
+When you have setup dual-write from [LCS](/fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md) and your power platform integrated dataverse environment is the same as the dual-write linked dataverse environment, open a support ticket with the Microsoft support team. Enter **Enable 5-min transaction timeout for Dual Write DV to FinOps Transactions** as the title, and provide the organization ID or tenant ID. Microsoft will enable the five-minute session time-out window for you. 
 
 ## Developer and customer-hosted environments
 
