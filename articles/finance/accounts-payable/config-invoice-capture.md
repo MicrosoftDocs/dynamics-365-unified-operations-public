@@ -33,7 +33,7 @@ ms.dyn365.ops.version:
 [!include [preview banner](../includes/preview-banner.md)]
 
 After the Invoice capture service is installed, there is some configuration in the environment: 
-1. [Mandatory] Syncronize the legal entities from Dynamics 365 Finance environment. This configuration is used to set up the organization structure in 
+1. [Mandatory] Syncronize the legal entities from the Dynamics 365 Finance environment. This configuration is used to set up the organization structure in 
 Power Platform. 
 2. [Mandatory] Configure the importing channels for invoice images. 
 The solution supports the following channels: 
@@ -54,7 +54,7 @@ Dynamics 365 Finance define legal entities as organizations that are identified 
 To sync legal entities, go to **Setup > System setup > Manage legal entities**. 
 Click **Sync legal entities > OK** in the confirmation dialog. 
 
-A message will show the number of new legal entities after the sync is complete. The new legal entities will display in the list view. 
+The number of new legal entities will be displayed after the sync is complete. The new legal entities will display in the list view. 
 The default configuration group is applied to new legal entities. You can't create legal entities directly but you can sync legal entities from Dynamics 365 Finance. 
 
 #### Invoice import channel
