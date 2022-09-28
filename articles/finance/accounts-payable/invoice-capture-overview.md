@@ -42,11 +42,11 @@ With evolvement of AI technology, modern OCR solutions can read different invoic
 
  
 ## System landscape 
-The major components and steps contained in the Invoice capture service are displayed in the diagram below:
+The major components and steps contained in the Invoice capture solution are displayed in the diagram below:
 
 ## Required roles for Invoice capture service
 
-The following roles are required to set up and use the Invoice capture service:
+The following roles are required to set up and use the Invoice capture solution:
 
   | Roles                 | Actions | Systems| Role name | 
   |----------------------|----------|--------|------------|
