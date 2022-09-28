@@ -60,6 +60,6 @@ All of the SQL statements listed above have a timeout set per statement, dependi
 - **Interactive** session - 30 minutes.
 - **Non-interactive (batch, services, OData)** - 3 hours. 
 
-When a statement times out due to blocking or a larger than anticipated data volume or query plan issue, an exception of type **Exception::Timeout** will be thrown with the message *A time-out occurred in the database while the query was executing.* X++ allows a handle timeout exception and retry based on this exception. You can override the default timeout by calling [queryTimeout API](/dotnet/api/microsoft.dynamics.ax.xpp.common.querytimeout.md).
+When a statement times out due to blocking or a larger than anticipated data volume or query plan issue, an exception of type **Exception::Timeout** will be thrown with the message *A time-out occurred in the database while the query was executing.* X++ allows a handle timeout exception and retry based on this exception. You can override the default timeout by calling [queryTimeout API](/dotnet/api/microsoft.dynamics.ax.xpp.common.querytimeout).
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
