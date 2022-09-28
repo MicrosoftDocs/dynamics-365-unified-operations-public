@@ -53,4 +53,13 @@ The **executeQueryWithParameters** API can help [mitigate a SQL injection attack
 
 For information about using joins, see [Common misconception about Exists and Notexists joins](https://community.dynamics.com/365/financeandoperations/b/peter-s-x-developer-blog/posts/common-misconception-about-exists-and-notexists-joins).
 
+## SQL statement timeout
+
+All SQL statements listed above, have a timeout set per statement depending on the session type that issues them: 
+
+- **Interactive** - 30 minutes.
+- **Non-interactive (Batch, services, OData)** - 3 hours. 
+
+When a statement times out, due to blocking or larger than anticipated data volume or query plan issue, an exception of type **Exception::Timeout** will be thrown with a **“A time-out occurred in the database while the query was executing.”** message. X++ allows to handle timeout exception and retry based on this exception. You can override default timeout by calling [queryTimeout API](/dotnet/api/microsoft.dynamics.ax.xpp.common.querytimeout).
+
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
