@@ -66,9 +66,10 @@ During the label generation process the system can replace field and method name
     ^PW812
     ^LL0609
     ^LS0
-    ^BY5,3,369^FT656,137^BCI,,Y,N
-    ^FD>;$WHSContainerTable.ContainerId$^FS
-    ^FT513,525^A0I,39,38^FH\^FDContainer ID^FS
+    ^BY3,3,262^FT658,186^BAI,,Y,N
+    ^FD$WHSContainerTable.ContainerId$^FS
+    ^FT660,457^A0I,39,38^FH\^FDContainer ID^FS
+    ^FT660,515^A0I,39,38^FH\^FDShipment: $WHSContainerTable.ShipmentId$^FS
     ^PQ1,0,1,Y^XZ
      ```
 4. Close the page
@@ -87,23 +88,50 @@ When making more advanced label layouts you can benefit from using some of the w
 Additionally you can select the **Enable label template support** setting for the label layout which will enable formatting your label layout into a header, row, and footer format by using the **Header**, **Row**, and **Footer** commands.
 The below is an example of a label containing data about packed items in a container.
 
-```dos
+```Header, row, and footer
 {{Header
+^FX ... ZPL commands which will get printed on every label ...
+CT~~CD,~CC^~CT~
 ^XA
-    ... ZPL commands which will get printed on every label ...
+~TA000
+~JSN
+^LT0
+^MNW
+^MTT
+^PON
+^PMN
+^LH0,0
+^JMA
+^PR6,6
+~SD15
+^JUS
+^LRN
+^CI27
+^PA0,1,1,0
+^XZ
+^XA
+^MMT
+^PW1276
+^LL900
+^LS0
+^FT80,150^A0N,58,58^FH\^CI28^FDShipment: $WHSContainerTable.ShipmentId$^FS^CI27
+^FT80,250^A0N,33,33^FH\^CI28^FDItem^FS^CI27
+^FT579,250^A0N,33,33^FH\^CI28^FDQuantity^FS^CI27
+^FT720,250^A0N,33,33^FH\^CI28^FDUnit^FS^CI27
 }}
-    ... This part goes on the first label ...
-    ... Example - Container Id: $WHSContainerTable.ContainerId$ ...
-    ... Example - Shipment Id: $WHSShipmentTable.ShipmentId$ ...
-{{Row Table=WHSContainerLine RowsPerLabel=10 StartY=500 IncY=100
-    ... ZPL commands to format the row ...
-    ... Use the *$position.YPos$* to position the location of the text fields ...
-    ... and use fields like $WHSContainerLine.ItemId$ etc. ... 
+^FX ... This section goes on the first label only...
+^FT85,51^A0N,17,18^FH\^CI28^FDFIRST CONTAINER LABEL^FS^CI27
+{{Row Table=WHSContainerLine_1 RowsPerLabel=10 StartY=300 IncY=50
+^FX... ZPL commands to format the row using *$position.YPos$* to position the location of the text fields ...
+^FT80,$position.YPos$^A0N,33,33^FH\^CI28^FD$WHSContainerLine_1.ItemId$^FS^CI27
+^FT579,$position.YPos$^A0N,33,33^FH\^CI28^FD$WHSContainerLine_1.Qty$^FS^CI27
+^FT720,$position.YPos$^A0N,33,33^FH\^CI28^FD$WHSContainerLine_1.UnitId$^FS^CI27
 }}
-    ... This part goes on the last label ... 
+^FX ... This part goes on the last label only ... 
+^FT100,750^A0N,17,18^FH\^CI28^FDLast container label^FS^CI27
 {{Footer
-    ... Label: $position.labelNumber$/$position.labelCount$
-    ... Here goes the ZPL commands that closes every label ... 
+^FX ... Here goes the ZPL commands that closes every label ...
+^FT600,750^A0N,58,58^FH\^CI28^FDLabel: $position.labelNumber$/$position.labelCount$^FS^CI27
 ^XZ
 }}
 ```
