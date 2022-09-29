@@ -48,8 +48,7 @@ To manage mapping rules using the app, select **Setup**. On the **Mapping rule s
 
 ### Legal entity mapping rule example
 
-Let's use the **Legal entity mapping rules** as an example to see how the mapping rules work. The legal entity code will identified using the company name, address and 
-tax registration number. For a rule with rule name “LE-USPM”, if company name contains “Contoso Robotics USA”, the legal entity code would be USPM. 
+Let's use the **Legal entity mapping rules** as an example to see how the mapping rules work. The legal entity code will be identified using the company name, address and tax registration number. For a rule with rule name “LE-USPM”, if company name contains “Contoso Robotics USA”, the legal entity code would be USPM. 
 
 The page displays all the active mapping rules. If you want to see all the inactive mapping rules, click **Active Mapping Legal Entity Rules** and select **Inactive 
 Mapping Legal Entity Rules**. 
@@ -71,7 +70,7 @@ After you select a mapping rule, **Duplicate** will display. Click **OK** when t
 
 ### Edit a mapping rule 
 
-To edit a mapping rule, click the field and modify it. The updated value is will be saved when the field loses focus.  
+To edit a mapping rule, click the field and modify it. The updated value will be saved when the field loses focus.  
 
 ### Activate / Deactivate mapping rules 
 
@@ -112,7 +111,7 @@ You can export in two ways: **Open in Excel Online** or **Download worksheet**.
 
 #### Open in Excel Online 
 
-Click **Open in Excel Online** to open excel and you can edit the file online. After the editing is completed, click **Save** and the modification will be reflected 
+Click **Open in Excel Online** to open excel and you can edit the file online. After the editing is completed, click **Save**, and the modification will be reflected 
 on the mapping rule page. 
 
 #### Download worksheet 
@@ -122,7 +121,7 @@ spreadsheet.
 
 ### Import from Excel 
 
-Click **Import from Excel** to import data from a .xlsx file. You can also import from CSV or XML files. Before you import, you will want to decide if duplicates are 
+Click **Import from Excel** to import data from an .xlsx file. You can also import from CSV or XML files. Before you import, you will want to decide if duplicates are 
 allowed or not.  
 
 Click **Review Mapping** to review if the attributes mapping is correct. You can modify the mapping relationship. Click **Finish Import** to start importing. 
