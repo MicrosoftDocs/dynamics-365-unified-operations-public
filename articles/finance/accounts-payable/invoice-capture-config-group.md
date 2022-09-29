@@ -66,10 +66,7 @@ To change the manual review setting, click **Need manual review** option and sel
 **For errors**: Select this option to manually review the invoices that contains error messages. 
 
  - Change confidence score setting 
-Confidence score is metadata provided by the OCR service to report the accuracy of recognized invoice data. The higher the score is, the more accurate the recognized 
-data will potentially be. It doesn’t mean that the recognized invoice data with a low confidence score is wrong, the OCR service is not confident about the accuracy. 
-The configuration provides flexibility to let users define when manual review is needed according to confidence score. The user can change the confidence score 
-threshold for invoices. To update the confidence score setting, click **Confidence score** field and update.
+Confidence score is metadata provided by the Invoice capture solution to report the accuracy of recognized invoice data. The higher the score is, the more accurate the recognized data will potentially be. It doesn’t mean that the recognized invoice data with a low confidence score is wrong, the OCR service is not confident about the accuracy. The configuration provides flexibility to let users define when manual review is needed according to confidence score. The user can change the confidence score threshold for invoices. To update the confidence score setting, click **Confidence score** field and update.
 
  - **Warning** alert type: Invoice fields that have confidence scores over the warning threshold are considered as correct. The warning threshold must be greater than 
  the error threshold and less than 100. 
@@ -83,5 +80,27 @@ The user can manage the invoice fields list to be displayed in the **Side-by-sid
 select the invoice fields to be added in the side bar and click **Save** and the selected fields will be added to the list. 
 To remove the added invoice field from the list, click **Remove** on the field. 
 
+### Manage file filters (optional step) 
 
+Manage file filters allow user to define additional filters to the incoming invoice files, unlike the filters defined in channel where the file won’t be received at all, the filters defined here will cause the file received and exists in the Received files list, but with file validation error. In this case, you have chance to review the incoming file and decide whether it’s invalid invoice and you can choose to obsolete the file or you can manually include the file to that the file will be recognized and send to captured invoices. 
+
+After the solution installed, there'll be a default file filter defined. Currently, the file filter is global wise, if you want to have different filter settings, you may directly change the default one. 
+
+### Accepted file size 
+
+You may choose the accepted file size.   currently we don’t s
+
+>[!NOTE] 
+> Files with size over than 20.480KB aren't supported. 
+
+### Accepted file types 
+
+The file types that are currently supported are:  
+
+ - PDF
+ - PNG
+ - JPG
+ - JPEG
+ - TIF
+ - TIFF 
 
