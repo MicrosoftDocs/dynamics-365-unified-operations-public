@@ -45,11 +45,11 @@ This list is intended to help you consider these removals and deprecations for y
 
 | &nbsp;  | &nbsp;  |
 |---|---|
-| **Reason for deprecation/removal** | Replaced with new format based on ISO 20022 pain.001.001.09.| 
+| **Reason for deprecation/removal** | Replaced with a new format that is based on ISO 20022 pain.001.001.09. | 
 | **Replaced by another feature?**   | Yes |
 | **Product areas affected**         | Application |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: Banks in Austria will deprecate EDICFACT-PAYMUL for cross border payments by November 2022 and will replace it by XML version pain.001.001.09N. A new configuration under Global Configuration repository has been added to allow users to complete the cross border payment request.|
+| **Status**                         | Deprecated: Banks in Austria will deprecate EDICFACT-PAYMUL for cross-border payments by November 2022 and will replace it with XML version pain.001.001.09N. A new configuration that has been added under the Global Configuration repository enables users to complete the cross-border payment request. |
 
 ## Features removed or deprecated in the Finance 10.0.30 release
 
