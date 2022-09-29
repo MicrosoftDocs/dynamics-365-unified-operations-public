@@ -59,16 +59,16 @@ When this metadata property is set to **Yes** for a table in, the AOT automatica
 
 Following are the various validations associated with the field. These validations exist while editing in AOT. These validations are also performed during build time by metadata validator.
 
-- Field name SysRowVersionNumber cannot be re-used by any other OOB field or custom field.
-- Only table field with field name SysRowVersionNumber can have SysRowVersionNumber edt.
-- SysRowVersionNumber field can only be added to the base table in the table hierarchy.
-- SysRowVersionNumber field cannot be added to temp table or in-memory table.
-- SysRowVersionNumber field with correct property values is present on the table when Allow Row Version Change Tracking property of the table is set to Yes and vice versa.
-- SysRowVersionNumber field cannot be added to the table with TableGroup == TableGroup.Staging. Also the StagingTableGenerator skips adding SysRowVersionNumber column to the DIXF staging table. Currently SysRowVersionNumber is not in scope for staging tables.
+- The field name **SysRowVersionNumber** cannot be re-used by any other OOB field or custom field.
+- Only table field with field name **SysRowVersionNumber** can have **SysRowVersionNumber** EDT.
+- The **SysRowVersionNumber** field can only be added to the base table in the table hierarchy.
+- The **SysRowVersionNumber** field cannot be added to temp table or in-memory table.
+- The **SysRowVersionNumber** field with correct property values is present on the table when **Allow Row Version Change Tracking** property of the table is set to **Yes** and vice versa.
+- Yhe **SysRowVersionNumber** field cannot be added to the table with **TableGroup == TableGroup.Staging**. Also the **StagingTableGenerator** skips adding the **SysRowVersionNumber** column to the Data management/DIXF staging table. 
 
 **Adding SQL row version column to SQL table**
 
-DB Sync creates a column of data type SQL row version when the extended data type of an AxEdtInt64 field is set to SysRowVersionNumber. Normally adding a row version column to a large table can take a significant amount of time because SQL server tries to populate row version values to existing records. The SQL server team has provided a solution for Finance and Operations apps to not populate row version values to existing records. The value will be NULL for rows that existed before adding SQL row version field. This will not impact data synchronization since full sync is always performed first. Any incremental changes will have SQL row version populated. 
+DB Sync creates a column of data type SQL row version when the extended data type of an AxEdtInt64 field is set to **SysRowVersionNumber**. Normally adding a row version column to a large table can take a significant amount of time because SQL server tries to populate row version values to existing records. The SQL server team has provided a solution for Finance and Operations apps to not populate row version values to existing records. The value will be NULL for rows that existed before the SQL row version field was added. This will not impact data synchronization since full sync is always performed first. Any incremental changes will have SQL row version populated. 
 
 **Index to SQL row version column**
 
@@ -76,17 +76,17 @@ An **OPTMIZIE_FOR_SEQUENTIAL_KEY** index hint is automatically added to the SQL 
 
 **Preventing row version value update in DML**
 
-The SQL row version column is read only in SQL. Hence validation has been added in X++ validator to generate a compilation error if SysRowVersionNumber field is specified in X++ insert or update statements. Also, Defensive fixes have been added in both managed and native Kernel to make sure SysRowVersionNumber field does not get added to kernel generated DML statements. This defensive fix will not guard against any direct raw SQL executed by X++ code using ADO.NET command object or X++ raw SQL statement object.
+The SQL row version column is read only in SQL. Validation has been added in X++ validator to generate a compilation error if the **SysRowVersionNumber** field is specified in X++ insert or update statements. Also, Defensive fixes have been added in both managed and native Kernel to make sure that the **SysRowVersionNumber** field does not get added to kernel generated DML statements. This defensive fix will not guard against any direct raw SQL executed by X++ code using ADO.NET command object or X++ raw SQL statement object.
 
 ## Allow Row version change tracking on Data entities
 
 A new metadata property **Allow Row Version Change Tracking** of type **No/Yes** has been added to the **AxDataEntityView** metadata. Not all exisiting data entities are configured to support Row version chnage tracking, this is mainly due to the complexity of the entity configuration. Examples of characteristics that prevents an entity from being used for Row version change tracking:
 
-- Non-table data source(s).
+- Non-table data source.
 - Tables used as source have **Allow row version change tracking** set to No.
-- One-to-many cardinality. One-to-many cardinality would produce duplicate primary key values for Dataverse F&O virtual entity. This is because currently GUID constructed from RecId of primary table is used as a primary key for Dataverse F&O virtual entity records.
-- Group By conditions
-- Range or date filters 
+- One-to-many cardinality. One-to-many cardinality would produce duplicate primary key values for a Dataverse Finance and Operations virtual table. 
+- Group By conditions.
+- Range or date filters, 
 - Custom change tracking query
 - Joins other than left outer joins. Non-left outer joins and filter conditions will cause records to disappear from the view, which cannot be change tracked with SQL row version change tracking mechanism.
 - Type is Composite.
@@ -96,7 +96,7 @@ Build time metadata validator has been added to validate AxDataEntityView with A
 
 **Tracking deletes from primary data source**
 
-When record is deleted from primary data source, the corresponding row gets removed from the data entity view. For the Dataverse F&O VE this is surfaced as a delete change. Data entity row deletions are change tracked using a delete trigger on the primary data source table. The trigger stores TableId and RecId of the deleted row in a delete tracking tbale **AifChangeTrackingDeletedObject**.
+When record is deleted from primary data source, the corresponding row gets removed from the data entity view. For the Dataverse Finance and Operation virtual table this is surfaced as a delete change. Data entity row deletions are change tracked using a delete trigger on the primary data source table. The trigger stores TableId and RecId of the deleted row in a delete tracking table **AifChangeTrackingDeletedObject**.
 
 **Tracking deletes from related data source**
 
@@ -104,7 +104,7 @@ When a related data source record is deleted, the column values in the view row 
 
 There is a system batch job **Delete tracking history clean-up** that cleans up records in the **AifChangeTrackingDeletedObject** table that has exceeded the retention period. Records is deleted in batches until the timeout criteria is reached. This system job is singleton. The job runs every day at 1 AM. The recurrence and frequency of the job is configurable in **System Administration>Batch Jobs**. The retention period, delete batch size and timeout is configurable using **SysGlobalConfiguration settings**.
 
-##Retrive row version entity changes
+## Retrive row version entity changes
 
 For details for how to use the **RetrieveEntityChanges** API, see TBA
  
