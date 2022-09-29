@@ -79,10 +79,12 @@ Additionally, a **Save for future use** checkbox will be presented at the end of
 
 ### Headquarters Forms the Recurring Token Restrictions are Enforced
 
-The following forms in Headquarters will have the payments forms enforced when the feature is enabled:
+The token restriction scoping affects the following areas in Headquarters when the feature is enabled:
 
 - The Sales Order > Payments > Enter customer payment information
-- 
+- Continuity Orders
+- Installment Payments
+- Accounts Receivable Credit Card payments
 
 ### Managing payment tokens (Archive or Removal)
 Payment tokens created prior to the **Restrict Payment Token usage to Order context** feature flag being enabled (or created while the feature is disabled) will remain 'unscoped' in the system and be referencable in the Headquarters Payment Form selection lists. These tokens can be removed regularly in two ways:
