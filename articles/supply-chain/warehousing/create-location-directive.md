@@ -53,7 +53,7 @@ Before you can create a location directive, you must follow these steps to make 
 ## <a name="scopes-feature"></a>Turn the Location directive scopes feature on or off
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
-<!-- KFM: How long with this be in preview? Feature name should probably start with "(Preview)"-->
+<!-- KFM: Preview until 10.0.31 GA -->
 
 The *Location directive scopes* feature gives more freedom when designing location directives and makes it possible to reduce redundant configurations. It adds a **Scopes** option, which replaces the previous **Multiple SKU** option. The **Multiple SKU** option can only be set to *Yes* or *No*, while the **Scopes** option includes both of those settings (*Single item* and *Multiple items*) plus two more (*Single item or order* and *All*). For more information about these settings, see [Location directives FastTab](#location-directives-tab).
 
@@ -177,7 +177,7 @@ The fields on the **Location directives** FastTab are specific to the work order
 
     | Scope | Supported work type | Supported work order types | Allow edit query |
     |---|---|---|---|
-    | *Single item* | All | All | No |
+    | *Single item* | All | All | Yes |
     | *Multiple items* | All | All | No |
     | *Single item or order* | Puts | Co-product and by-product put away, finished goods put away, kanban put away, purchase orders, quality orders, replenishment, return orders, sales orders, transfer issue, and transfer receipt | Yes |
     | *All* | Puts | All | No |
