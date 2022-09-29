@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.31
 
 ## SQL Row version change tracking
 
-A new change tracking option has been added to Finance and Operations to enable incremental synchronization of data using the Dataverse. The new change tracking is a prerequisute for several features such as Data archival, Synapse integration, Mobile offline and Relevance search. The new change tracking is enabled for Public preview from 10.0.31. The goal is to over time unify all existing Fainance and Operations data synchronization frameworks into one that is based on Dataverse synchronization services. This topic covers what is required for Track chnages to be selected in PowerApps for Finance and Operations Virtual tables. To actually enable Track changes for a Virtual table, see   
+A new change tracking option has been added to Finance and Operations to enable incremental synchronization of data using the Dataverse. The new change tracking is a prerequisute for several features such as Data archival, Synapse integration, Mobile offline and Relevance search. The goal is to over time unify all existing Fainance and Operations data synchronization frameworks into one that is based on Dataverse synchronization services. This topic covers what is required for Track chnages to be selected in PowerApps for Finance and Operations Virtual tables. For how to actually enable Track changes for a Virtual table, see [Track changes for Finance and operations virtual tables in Dataverse (Preview)](../track-changes-fin-ops-virtual-table.md).  
 
 ## Source tables must have a SQL row version column
 
@@ -43,7 +43,6 @@ A new column named **SQL row version** must be added to all tables used as sourc
 - Row version value is unique across tables in a database.
 
 Changes to a table row can be detected by comparing the current value in row version column with the previous value. Also, it now becomes easy to determine all rows that have changed since a particular point in time by querying for rows whose row version is greater than a particular valu
-
 
 ## Allow Row version change tracking on tables
 
