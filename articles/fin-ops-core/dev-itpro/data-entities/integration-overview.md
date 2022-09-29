@@ -238,7 +238,7 @@ In finance and operations:
 
 In the on-premises system:
 
-- Use the REST batch data API to import files.
+- Use the REST batch data API to export files.
 
 ### Export large volumes of purchase orders
 
