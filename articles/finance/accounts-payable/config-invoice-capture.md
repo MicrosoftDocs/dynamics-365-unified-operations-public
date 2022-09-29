@@ -78,7 +78,7 @@ Fill in the following fields:
  
 Only emails or files that match the criteria can be imported into the solution. 
 
-2) Active the channel 
+2) Activate the channel 
 When a flow is saved, fields will be displayed to show the status of the channel and created time. Initially, the **Status** will be **Inactive**. 
 The **Status reason** field displays that the channel is initialized and ready to be activated.
 
@@ -99,7 +99,7 @@ There are some cases of exception handling that are shown in the **Status reason
  - **Not found**: This displays when the flow linked to the channel has been deleted in flow management. The channel should be saved again to create a new channel. 
  - **Deactivated in flow management**: This displays when the flow has been deactivated in flow management and the status of channel is different than the flow. 
  - **Activated in flow management**: The displays when the flow has been activated in flow management and the status of channel is different than the flow.
-
+ - **An unexpected error occurred**: ed to make sure the site is a “Communication site”, the folder is “Document library”. Create a site and select “Communication site”. Name it as “D365 Files” as an example. Create a “Document library” as “Folder”. Name it as “OCR_invoices” as an example. 
 
 
 
