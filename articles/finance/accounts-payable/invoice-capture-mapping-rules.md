@@ -84,7 +84,7 @@ Select several mapping rules and click **Delete** to remove the mapping rules.
 ### Check conflict 
 
 If two mapping rules have same values in the **Legal Entity**, **Vendor Account**, **Item Name** fields but a different value in the **Item Number** fields, 
-a conflict will be detected and the mapping rule is not created or updated due to duplication. 
+a conflict will be detected and the mapping rule isn't created or updated due to duplication. 
 
 ## Import/Export mapping rules from Excel 
 
@@ -121,7 +121,7 @@ spreadsheet.
 
 ### Import from Excel 
 
-Click **Import from Excel** to import data from an .xlsx file. You can also import from CSV or XML files. Before you import, you will want to decide if duplicates are 
+Click **Import from Excel** to import data from an .xlsx file. You can also import from CSV or XML files. Before you import, you'll want to decide if duplicates are 
 allowed or not.  
 
 Click **Review Mapping** to review if the attributes mapping is correct. You can modify the mapping relationship. Click **Finish Import** to start importing. 
