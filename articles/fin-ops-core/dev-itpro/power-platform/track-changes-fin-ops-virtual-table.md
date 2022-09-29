@@ -35,8 +35,8 @@ ms.dyn365.ops.version: 10.0.31
 A new change tracking option has been added to Finance and Operations to enable incremental synchronization of data using the Dataverse. The new change tracking is a prerequisute for several features such as Data archival, Synapse integration, Mobile offline and Relevance search. The goal is to over time unify all existing Fainance and Operations data synchronization frameworks into one that is based on Dataverse synchronization services.
 
 ## Prerequisite to track changes for Finance and Operations virtual tables in Dataverse 
-
-- The **Allow Row Version Change Tracking** metadata property, must be set to **Yes** for the data entity, see ....TBA
+track-changes-fin-ops-virtual-table.md)
+- The **Allow Row Version Change Tracking** metadata property, must be set to **Yes** for the data entity, see [Allow Row version change tracking for Data entities](../track-changes-fin-ops-virtual-table.md)
 - Finance and Operations entities must be visible in Dataverse, see [Enable Microsoft Dataverse virtual entities](/enable-virtual-entities.md)
  
 If these prerequistes are met, then the final step is to enable change tracking by selecting **Track changes** for the Virtual table in the Powerapps, see [Enable change tracking to control data synchronization](/power-platform/admin/enable-change-tracking-control-data-synchronization.md)
