@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Invoice capture service overview
-description: This article provides general information about the invoice capture service. 
+title: Invoice capture solution overview
+description: This article provides general information about the invoice capture solution. 
 author: sunfzam
 ms.date: 09/25/2022
 ms.topic: overview
@@ -27,7 +27,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Invoice capture service
+# Invoice capture solution
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -35,7 +35,7 @@ ms.dyn365.ops.version:
 This article provides information about installing and configuring the Invoice capture service that will automatically create vendor invoices from invoice images.
 
 
-## Invoice capture service overview 
+## Invoice capture solution overview 
 The Accounts payable (AP) department manages and processes invoices for goods and services received. The AP accountant verifies the vendor invoice data to avoid the extra effort for adjustment or correction during period close, vendor invoices can be paid in a timely manner to prevent financial loss due to error or fraud. 
 Optical Character Recognition (OCR) has been widely used by various industries in past years. It's a common method to digitizing printed texts so that they can be electronically edited, searched, stored more compactly, displayed on-line, and used in machine processes such as cognitive computing, machine translation, (extracted) text-to-speech, key data and text mining.
 With evolvement of AI technology, modern OCR solutions can read different invoice formats from various vendors with little human intervention. More companies are recognizing the fact that it can save effort and improve accuracy by processing invoices via automation than manual processing.
