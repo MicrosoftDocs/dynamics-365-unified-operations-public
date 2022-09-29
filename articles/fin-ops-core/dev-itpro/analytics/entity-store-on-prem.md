@@ -71,27 +71,25 @@ If you want to create a database that can be used for Entity Store, you must fir
     - GRANT VIEW SERVER STATE TO axdwadmin.
     - GRANT VIEW SERVER STATE TO axdwruntimeuser.
 
-### [15. Encrypt credentials](../deployment/setup-deploy-on-premises-pu12.md#encryptcred)
 
-Create a Credentials.json file as shown here. The **AosDWAuth** category is optional and is used only if Entity Store is enabled.
+### [15. Encrypt credentials](../deployment/setup-deploy-on-premises-pu41#encryptcred)
 
-```json
-{
-    "AosPrincipal": {
-        "AccountPassword": "<encryptedDomainUserPassword>"
-    },
-    "AosSqlAuth": {
-        "SqlUser": "<encryptedSqlUser>",
-        "SqlPwd": "<encryptedSqlPassword>"
-    },
-    "AosDWAuth": {
-        "DWUser": "<encryptedDWUser>",
-        "DWPwd": "<encryptedDWPassword>",
-        "DWRuntimeUser": "<encryptedDWRuntimeUser>",
-        "DWRuntimePwd": "<encryptedDWRuntimePassword>"
-    }
-}
-```
+1. Copy your infrastructure folder to an AOS node.
+2. Create a new **Credentials.json** file by running the following command.
+
+    ```powershell
+    .\Configure-CredentialsJson.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -Action Create
+    ```
+If the file already exist, it will prompt
+>A Credentials.json already exists in
+
+You can overwrite the existing with option "Y"
+
+The script will prompt you to enter name and credentials of the AOS SQL DB admin account
+Then the script will prompt 
+> Do you want to create the credentials to enable the Entity Store functionality ? [Y/N]:
+ 
+ With option "Y" the script will request the credentials that are required for the Entity Store feature
 
 Here is an explanation of the preceding code lines:
 
