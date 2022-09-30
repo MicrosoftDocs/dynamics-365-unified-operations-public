@@ -59,11 +59,10 @@ exceed 20 characters. The **Group ID** field can only be updated once.
 To edit the configuration group description, click the **Description** field and update.
 
  - Change manual review setting 
-The user can decide if an invoice needs to be manually reviewed. 
-To change the manual review setting, click **Need manual review** option and select from the following options:
+The user can decide if an invoice needs to be manually reviewed. To change the manual review setting, click **Need manual review** option and select from the following options:
 **Always manual review**: Select this option if invoices in this configuration group always need manual review. 
 **For errors and warnings**: Select this option if invoices that contain an error or warning messages need manual review. 
-**For errors**: Select this option to manually review the invoices that contains error messages. 
+**For errors**: Select this option to manually review the invoices that contain error messages. 
 
  - Change confidence score setting 
 Confidence score is metadata provided by the Invoice capture solution to report the accuracy of recognized invoice data. The higher the score is, the more accurate the recognized data will potentially be. It doesn’t mean that the recognized invoice data with a low confidence score is wrong, the OCR service is not confident about the accuracy. The configuration provides flexibility to let users define when manual review is needed according to confidence score. The user can change the confidence score threshold for invoices. To update the confidence score setting, click **Confidence score** field and update.
@@ -71,7 +70,7 @@ Confidence score is metadata provided by the Invoice capture solution to report 
  - **Warning** alert type: Invoice fields that have confidence scores over the warning threshold are considered as correct. The warning threshold must be greater than 
  the error threshold and less than 100. 
 
- - **Error** alert type: Invoice fields that have confidence scores under the error threshold are considered as failed. Error messages will be dispalyed to 
+ - **Error** alert type: Invoice fields that have confidence scores under the error threshold are considered as failed. Error messages will be displayed to 
  inform the user. The error threshold must be greater than zero and less than the warning threshold. The warning messages will be displayed for invoice fields that 
  have confidence scores between the warning threshold and error threshold.
 
@@ -82,9 +81,9 @@ To remove the added invoice field from the list, click **Remove** on the field.
 
 ### Manage file filters (optional step) 
 
-Manage file filters allow user to define additional filters to the incoming invoice files, unlike the filters defined in channel where the file won’t be received at all, the filters defined here will cause the file received and exists in the Received files list, but with file validation error. In this case, you have chance to review the incoming file and decide whether it’s invalid invoice and you can choose to obsolete the file or you can manually include the file to that the file will be recognized and send to captured invoices. 
+Manage file filters allow user to define additional filters to the incoming invoice files. Unlike the filters defined in channel where the file won’t be received at all, the filters defined here will cause the file received and exists in the **Received files** list, but with file validation error. In this case, you have chance to review the incoming file and decide whether its invalid invoice and you can choose to obsolete the file or you can manually include the file to that the file will be recognized and send to captured invoices. 
 
-After the solution installed, there'll be a default file filter defined. Currently, the file filter is global wise, if you want to have different filter settings, you may directly change the default one. 
+After the solution installed, there will be a default file filter defined. Currently, the file filter is global wise, if you want to have different filter settings, you may directly change the default one. 
 
 ### Accepted file size 
 
