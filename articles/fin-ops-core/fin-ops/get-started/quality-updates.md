@@ -113,8 +113,8 @@ Customers on versions lower than N-2 will not receive quality updates.
 ## Finance and operations apps deployments with retail components typically require additional work in addition to having to redeploy MPOS. How will these quality updates impact the RetailSDK? 
 As the nature of the hotfixes itself doesn’t change in the quality updates payload, we don’t anticipate any additional impact at this time specifically related to retail components.
 
-## Is there any impact to Cloud Hosted Environments (CHE)? ? 
-No.
+## Will proactive quality updates be applied to cloud hosted environments (CHE)? 
+No. Proactive quality updates will not be applied on Cloud hosted environments. These update packages will be part of the project asset library and needs to be manually applied to CHE's.
 
 ## Are there any integration issues with Microsoft Dataverse? 
 No.
