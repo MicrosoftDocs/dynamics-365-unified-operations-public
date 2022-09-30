@@ -1749,18 +1749,8 @@
           href: sensor-data-intelligence/sdi-scenario-production-delays.md
     - name: IoT Intelligence
       items:
-        - name: IoT Intelligence home page
+        - name: IoT Intelligence now replaced by Sensor Data Intelligence
           href: iot/iot-intelligence-home-page.md
-        - name: Set up Azure resources
-          href: iot/iot-azure-setup.md
-        - name: Message schema formats for IoT Hub
-          href: iot/iot-schema-format.md
-        - name: Set up metrics
-          href: iot/iot-metrics-setup.md
-        - name: Scenario setup
-          href: iot/iot-scenario-setup.md
-        - name: Monitor and manage
-          href: iot/iot-management.md   
     - name: Master planning
       items:
       - name: Master planning home page
