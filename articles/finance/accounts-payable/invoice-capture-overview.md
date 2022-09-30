@@ -2,7 +2,7 @@
 # required metadata
 
 title: Invoice capture solution overview
-description: This article provides general information about the invoice capture solution. 
+description: This article provides information about the Invoice capture solution. 
 author: sunfzam
 ms.date: 09/25/2022
 ms.topic: overview
@@ -32,15 +32,17 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This article provides information about installing and configuring the Invoice capture service that will automatically create vendor invoices from invoice images.
+This article provides information about the Invoice capture service that automatically creates vendor invoices from invoice images.
 
 
 ## Invoice capture solution overview 
-The Accounts payable (AP) department manages and processes invoices for goods and services received. The AP accountant verifies the vendor invoice data to avoid the extra effort for adjustment or correction during period close, vendor invoices can be paid in a timely manner to prevent financial loss due to error or fraud. 
+The Accounts payable (AP) department manages and processes invoices for goods and services received. The AP accountant verifies data on vendor invoices:
+ - to avoid extra effort if adjustments or corrections are needed during period close 
+ - pay vendor invoices in a timely manner to prevent financial loss due to error or fraud
 
-Optical Character Recognition (OCR) has been widely used by various industries in past years. It's a common method to digitizing printed texts so that they can be electronically edited, searched, stored more compactly, displayed on-line, and used in machine processes such as cognitive computing, machine translation, (extracted) text-to-speech, key data and text mining.
+Optical Character Recognition (OCR) has been widely used by various industries in past years. It's common to digitizing printed texts so that they can be electronically edited, searched, stored more compactly, and displayed on-line. The digital text can be used in machine processes such as cognitive computing, machine translation, text-to-speech, key data and text mining.
 
-With evolvement of AI technology, modern OCR solutions can read different invoice formats from various vendors with little human intervention. More companies are recognizing the fact that it can save effort and improve accuracy by processing invoices via automation than manual processing.
+With evolvement of artificial intelligence (AI) technology, modern OCR solutions can read different invoice formats from various vendors with little human intervention. More companies are recognizing the fact that it can save effort and improve accuracy by processing invoices via automation than manual processing.
 
  
 ## System landscape 
