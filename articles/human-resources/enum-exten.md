@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Gender base Eenum extensibility
+title: Gender base enum extensibility
 description: This article provides an overview of extensibility of the Gender base enumeration (enum).
 author: twheeloc
 ms.date: 05/23/2022
