@@ -45,7 +45,8 @@ With evolvement of AI technology, modern OCR solutions can read different invoic
  
 ## System landscape 
 The major components and steps contained in the Invoice capture solution are displayed in the diagram below:
-[![Dynamics 365 Finance Invoice capture](./media/invoice-capture.png)](.media/invoice-capture.png)
+
+[![Dynamics 365 Finance Invoice capture.](./media/Invoice-capture.png)](./media/Invoice-capture.png)
 
 
 ## Required roles for Invoice capture service
