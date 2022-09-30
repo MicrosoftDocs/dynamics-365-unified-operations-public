@@ -50,7 +50,7 @@ This article shows how to set up benefit plans in Dynamics 365 Human Resources.
    | **Master** | Specifies whether the plan is the master plan within the bundle it is assigned to. |
    | **Required** | Indicates that the plan is required to be selected to check out any other plan in the bundle. More than one plans can be marked as **Required**. In that case, all the plans that are marked as **Required** will need to be selected to check out any of the plans in the bundle.|
    | **Valid from date and time** | The date and time the plan starts. The default value is the current system date. |
-   | **Valid to date and time** | The date and time the plan ends. The default value is 12/31/2154, which signifies never. |
+   | **Valid to date and time** | The date and time the plan ends. The default value is 12/31/2154, which signifies never.  |
 
 4. On the **Configuration** tab, specify values for the following fields, depending on the type of plan you're creating:
 
