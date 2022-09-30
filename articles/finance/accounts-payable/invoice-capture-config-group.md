@@ -27,7 +27,7 @@ ms.dyn365.ops.version:
 
 ---
 
-# Invoice capture service configuration groups
+# Invoice capture solution configuration groups
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
@@ -37,7 +37,7 @@ configurations for different legal entities in groups. Different legal entities 
 
 ## Manage configuration groups 
 
-To manage configuration groups using the app, users go to **Setup** and go to **System setup > Define configuration groups component**.
+To manage configuration groups using the app, go to **Setup** and then **System setup > Define configuration groups component**.
 
 On the **Define configuration groups** page: 
 
@@ -45,7 +45,7 @@ The main tab displays the list of the configuration groups that are defined and 
 The following options are available for configuration groups: 
 
  - Duplicate a configuration group 
-Select this option if new configuration groups need duplicate an existing configuration group. Once a configuration group is duplicated, select **OK**.
+Select this option to duplicate an existing confirmation group to create a new configuration group. Once a configuration group is duplicated, select **OK**.
 A duplicate configuration group is created with all the fields same as the chosen configuration group except **Group name** and **Group description**. 
 
  - Delete configuration groups 
@@ -59,18 +59,19 @@ exceed 20 characters. The **Group ID** field can only be updated once.
 To edit the configuration group description, click the **Description** field and update.
 
  - Change manual review setting 
-The user can decide if an invoice needs to be manually reviewed. To change the manual review setting, click **Need manual review** option and select from the following options:
+The user can decide if an invoice needs to be manually reviewed. To change the manual review setting, click **Need manual review** option. 
+Select from the following options:
 **Always manual review**: Select this option if invoices in this configuration group always need manual review. 
 **For errors and warnings**: Select this option if invoices that contain an error or warning messages need manual review. 
 **For errors**: Select this option to manually review the invoices that contain error messages. 
 
  - Change confidence score setting 
-Confidence score is metadata provided by the Invoice capture solution to report the accuracy of recognized invoice data. The higher the score is, the more accurate the recognized data will potentially be. It doesn’t mean that the recognized invoice data with a low confidence score is wrong, the OCR service is not confident about the accuracy. The configuration provides flexibility to let users define when manual review is needed according to confidence score. The user can change the confidence score threshold for invoices. To update the confidence score setting, click **Confidence score** field and update.
+The **Confidence score** is metadata provided by the Invoice capture solution to report the accuracy of recognized invoice data. The higher the score is, the more accurate the recognized data will potentially be. The configuration lets users define when manual review is needed according to the confidence score. The user can change the confidence score threshold for invoices. To update the confidence score setting, click **Confidence score** field and update.
 
- - **Warning** alert type: Invoice fields that have confidence scores over the warning threshold are considered as correct. The warning threshold must be greater than 
+ - **Warning** alert type: Invoice fields that have confidence scores over the warning threshold are considered correct. The warning threshold must be greater than 
  the error threshold and less than 100. 
 
- - **Error** alert type: Invoice fields that have confidence scores under the error threshold are considered as failed. Error messages will be displayed to 
+ - **Error** alert type: Invoice fields that have confidence scores under the error threshold are considered failed. Error messages will be displayed to 
  inform the user. The error threshold must be greater than zero and less than the warning threshold. The warning messages will be displayed for invoice fields that 
  have confidence scores between the warning threshold and error threshold.
 
@@ -79,15 +80,15 @@ The user can manage the invoice fields list to be displayed in the **Side-by-sid
 select the invoice fields to be added in the side bar and click **Save** and the selected fields will be added to the list. 
 To remove the added invoice field from the list, click **Remove** on the field. 
 
-### Manage file filters (optional step) 
+### Manage file filters (optional) 
 
-Manage file filters allow user to define additional filters to the incoming invoice files. Unlike the filters defined in channel where the file won’t be received at all, the filters defined here will cause the file received and exists in the **Received files** list, but with file validation error. In this case, you have chance to review the incoming file and decide whether its invalid invoice and you can choose to obsolete the file or you can manually include the file to that the file will be recognized and send to captured invoices. 
+Manage file filters allows users to define additional filters to incoming invoice files. Unlike the filters defined in channel where the file won’t be received at all, the filters defined here will display the received files in the **Received files** list, but with file validation errors. Users can review the incoming files and decide if its an invalid invoice and obsolete the file or manually include the file to be recognized and included in captured invoices. 
 
-After the solution installed, there will be a default file filter defined. Currently, the file filter is global wise, if you want to have different filter settings, you may directly change the default one. 
+After the Invoice capture solution installed, a default file filter is defined. The file filter is global wise, if you want to have different filter settings, you can update the default one. 
 
 ### Accepted file size 
 
-You may choose the accepted file size.   currently we don’t s
+You may choose the accepted file size. 
 
 >[!NOTE] 
 > Files with size over than 20.480KB aren't supported. 
