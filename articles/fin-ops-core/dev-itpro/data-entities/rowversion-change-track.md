@@ -48,11 +48,20 @@ A new metadata property **Allow Row Version Change Tracking** of type **No/Yes**
 
 | Rule | Comments | Error message |
 |----------|--------|--------|
-| Data entity with custom change tracking query is not supported.  | Entities that use custom query for change tracking. Entities supply custom query by adding a static method called defaultCTQuery to the entity.  | Change tracking cannot be enabled since F&O entity %1 uses a custom query. |
+| Data entity with custom change tracking query is not supported.  |   | Change tracking cannot be enabled since F&O entity %1 uses a custom query. |
 | Data entity with range filters is not supported. | Range filters can cause records to get filtered out from the view which will not be change tracked as delete. |  Change tracking cannot be enabled since the F&O entity %1 contains Ranges. |
-| High | 15% |
-| Critical | 30% |
-| Reserved capacity | 40% + Dedicated X threads |
+| Data entity with data source(s) having group by condition is not supported  | | Change tracking cannot be enabled since the data source %1 in the F&O entity %2 contains  Group By conditions. |
+| Count of data source(s) in a data entity must be below threshold. | Max limit is controlled bu Microsoft and is currenlty set to 10. | Change tracking cannot be enabled since the F&O entity %1 contains more than %2 data sources. |
+| Data entity with data source having range filters is not supported. |  | Change tracking cannot be enabled since the data source %1 in the F&O entity %2 contains Ranges. |
+| Data entity with non-table data source is not supported. | Nested data entities or data entities containing view(s) as data source is not supported. | Change tracking cannot be enabled since the data source %2 in the F&O entity %1 is not a table. |
+| All tables in the data entity must allow row version change tracking. | | Change tracking cannot be enabled since the Allow Row Version Change Tracking property is not set to Yes for the table related to data source %2 for the F&O entity %1. |
+| Data sources in the data entity must be joined using an outer join. | Inner join and exists join is not supported. Non outer join can cause records to get filtered out from the view which will not be change tracked as delete. | Change tracking cannot be enabled  since the Join Mode between the data source %1 and the data source %2 in the F&O entity %3 is not %4. | 
+| Relationship between data sources must be many-to-one. | One-to-many relationship is not supported. One-to-many  relationship will generate duplicate Virtual table entityids. |  Change tracking cannot be enabled  since the Relation %1 between the data source %2 and the data source %3 in the F&O entity %4 is one-to-many. |
+| Only normal relation constraint is supported for data sources in a data entity. | | Change tracking cannot be enabled   since the Relation %1 between the data source %2 and the data source %3 in the F&O entity %4 is not set to Normal. |
+| Rule to validate entities containing time state enabled tables. | Root table with **Apply Date** filter is not supported, it can cause record disappearance. Time state tables not supported for related data sources since it can cause either record disappearance or one-to-many relationships. |  Change tracking cannot be enabled since the data source %3 in the F&O entity %1 has a time state enabled table %2. |
+
+ 
+
 
 
 
