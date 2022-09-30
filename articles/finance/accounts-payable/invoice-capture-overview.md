@@ -37,12 +37,16 @@ This article provides information about installing and configuring the Invoice c
 
 ## Invoice capture solution overview 
 The Accounts payable (AP) department manages and processes invoices for goods and services received. The AP accountant verifies the vendor invoice data to avoid the extra effort for adjustment or correction during period close, vendor invoices can be paid in a timely manner to prevent financial loss due to error or fraud. 
+
 Optical Character Recognition (OCR) has been widely used by various industries in past years. It's a common method to digitizing printed texts so that they can be electronically edited, searched, stored more compactly, displayed on-line, and used in machine processes such as cognitive computing, machine translation, (extracted) text-to-speech, key data and text mining.
+
 With evolvement of AI technology, modern OCR solutions can read different invoice formats from various vendors with little human intervention. More companies are recognizing the fact that it can save effort and improve accuracy by processing invoices via automation than manual processing.
 
  
 ## System landscape 
 The major components and steps contained in the Invoice capture solution are displayed in the diagram below:
+[![Dynamics 365 Finance Invoice capture](./media/invoice-capture.png)](.media/invoice-capture.png)
+
 
 ## Required roles for Invoice capture service
 
