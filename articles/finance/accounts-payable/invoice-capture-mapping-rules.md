@@ -32,12 +32,11 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Mapping rules bring basic master data from ERP system. Once mapping rules are set up, the information needed for vendor invoice creation in Dynamics 365 Finance is 
-imported. With mapping rules, the AP clerk only needs to check the status, instead of filling out all the missing fields manually. 
+Mapping rules bring basic master data from Dynamics 365 Finance or the ERP system. Once mapping rules are set up, the information needed for vendor invoice creation in Dynamics 365 Finance is imported. With mapping rules, the AP clerk will check the status, instead of filling out all the missing fields manually. 
 There are three types of mapping rules: 
- - legal entity 
- - vendor account
- - item   
+ - **Legal entity** 
+ - **Vendor account**
+ - **Item**   
 
 ## Manage mapping rules via App 
 
@@ -48,7 +47,7 @@ To manage mapping rules using the app, select **Setup**. On the **Mapping rule s
 
 ### Legal entity mapping rule example
 
-Let's use the **Legal entity mapping rules** as an example to see how the mapping rules work. The legal entity code will be identified using the company name, address and tax registration number. For a rule with rule name “LE-USPM”, if company name contains “Contoso Robotics USA”, the legal entity code would be USPM. 
+Let's use the **Legal entity mapping rules** as an example. The legal entity code will be identified using the company name, address and tax registration number. For a rule with rule name “LE-USPM”, if company name contains “Contoso Robotics USA”, the legal entity code would be USPM. 
 
 The page displays all the active mapping rules. If you want to see all the inactive mapping rules, click **Active Mapping Legal Entity Rules** and select **Inactive 
 Mapping Legal Entity Rules**. 
@@ -70,7 +69,7 @@ After you select a mapping rule, **Duplicate** will display. Click **OK** when t
 
 ### Edit a mapping rule 
 
-To edit a mapping rule, click the field and modify it. The updated value will be saved when the field loses focus.  
+To edit a mapping rule, click the field and modify it. 
 
 ### Activate / Deactivate mapping rules 
 
@@ -107,7 +106,7 @@ By default, the template includes the following fields:
 
 ### Export to Excel 
 
-You can export in two ways: **Open in Excel Online** or **Download worksheet**. 
+You can export two ways: **Open in Excel Online** or **Download worksheet**. 
 
 #### Open in Excel Online 
 
