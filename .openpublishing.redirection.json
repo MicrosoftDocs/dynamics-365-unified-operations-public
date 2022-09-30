@@ -19776,6 +19776,36 @@
       "source_path": "articles/commerce/prevent-discounts.md",
       "redirect_url": "/dynamics365/commerce/price-settings",
       "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/iot/iot-azure-setup.md",
+      "redirect_url": "/dynamics365/supply-chain/iot/iot-intelligence-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/iot/iot-lcs-setup.md",
+      "redirect_url": "/dynamics365/supply-chain/iot/iot-intelligence-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/iot/iot-management.md",
+      "redirect_url": "/dynamics365/supply-chain/iot/iot-intelligence-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/iot/iot-metrics-setup.md",
+      "redirect_url": "/dynamics365/supply-chain/iot/iot-intelligence-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/iot/iot-scenario-setup.md",
+      "redirect_url": "/dynamics365/supply-chain/iot/iot-intelligence-home-page",
+      "redirect_document_id": "false"
+    },
+    {
+      "source_path": "articles/supply-chain/iot/iot-schema-format.md",
+      "redirect_url": "/dynamics365/supply-chain/iot/iot-intelligence-home-page",
+      "redirect_document_id": "false"
     }
   ]
 }
