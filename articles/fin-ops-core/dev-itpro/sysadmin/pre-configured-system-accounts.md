@@ -39,7 +39,7 @@ Pre-configured system accounts are included on deployed environments so that Mic
 | Account | Purpose/use case |
 |---|---|
 | Axrunner | <p>Monitoring the health of the environment, and providing alerts as required.</p><p>**Note:** This account is deprecated for self-service environments and is no longer used.</p> |
-| DataSyncFrameworkApp | Purpose/use case needed here. |
+| DataSyncFrameworkApp | Used by Power Platform Apps provided by Microsoft to synchronize data from Finance and Operations Virtual tables in Dataverse based on row version change tracking. |
 | DynamicsMaintAppUser | Purpose/use case needed here. |
 | FRServiceUser | The Financial Reporting service user account. The Management Reporter application uses this account for integrations with finance and operations apps. |
 | MonitoringAppUser | Purpose/use case needed here. |
