@@ -90,6 +90,18 @@ To add a product comparison button to product tiles on search and category resul
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
+## Add product comparison preview panel to pages like Home page, Product details page and other pages on your website
+
+Product comparison preview panel provides an option to review products that are added or removed from the comparison. Also the preview panel provides an option to navigate to the comparison page directly or clean the whole list. We recommend to enable preview panel on all pages that have product comparison button configuration enabled. This module can be added to the comparison button as a slot (reminding the customer that they need to manually add preview panel to the page), or can be used as a standalone module as well to be configured on any other page even if it has no functionality to add/remove products.
+
+The module works as a singleton module. There can be only 1 module configured on the page. If a customer specifies multiple modules of preview panel, the first one of them will be rendered, and the rest will be ignored.
+
+![Product comparison preview panel](./media/product-comparison-preview-panel-2.png)
+
+If a customer specifies the product comparison limit, there is an option to enable grey placeholders for the preview panel. This configuration is located in global website configuration and it is applied to preview panels configured for all pages. Grey placeholder provides the user a hint of how many more products they can add to the comparison by showing empty grey rectangles in the preview panel that would be replaced with the product information once the user adds a product to the comparison.
+
+![grey-placeholder-product-comparison-preview-panel](./media/product-comparison-preview-panel.png)
+
 ## Specify the maximum number of products to show in the comparison tray
 
 You can specify the maximum number of products to show in the comparison tray by going to **Site settings \> Extensions** in site builder. You can configure separate maximum limits for desktop and mobile/tablet views. By default, no limit will be enforced if no maximum limit is defined.
