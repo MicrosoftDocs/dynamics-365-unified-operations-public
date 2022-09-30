@@ -39,19 +39,21 @@ ms.dyn365.ops.version:
 
 ### Set up connection for Dynamics 365 Finance 
 
-You'll need to register an Azure App with AAD in your Azure portal and register the same in your Dynamics 365 Finance.
+You'll need to register an Azure App with Azure Active Directory (Azure AD) in your Azure portal and register the same in your Dynamics 365 Finance.
 
 >[!NOTE:]
-> You must have an Azure subscription and admin access to Azure Active Directory (Azure AD). 
+> You must have an Azure subscription and admin access to Azure AD. 
+
+Listed below are the major installation steps. For additional information, see [Service endpoints overview](../../dev-itpro/data-entities/services-home-page.md).
 
 ### Register an Azure app in the Azure portal
 
 1. Sign into the Azure portal.
-2. If you have access to multiple tenants, use the **Directories and subscriptions** filter to switch to the tenant that is the same with Finance environment. 
-3. Select Azure Active Directory. 
+2. If you have access to multiple tenants, use the **Directories and subscriptions** filter to switch to the tenant that is the same as the Finance environment. 
+3. Select **Azure Active Directory**. 
 4. **Manage** > **App registrations > New registration**.
-5. Enter a display name for your application. The app registration's automatically generated Application (client) ID, uniquely identifies your app within the identity 
-platform. Note the client ID. 
+5. Enter a display name for your application. The app registration's automatically generated Application (client) ID, identifies your app within the identity 
+platform. You will want to note the **Client ID**. 
 6. Specify who can use the application. Select **Accounts in this organizational directory only**. 
 7. Select **Register** to complete the app registration. 
 
@@ -59,57 +61,55 @@ When registration is complete, the Azure portal will display the app registratio
 
 ### Create a client secret
 
-1. In the **Overview** page of registered app, go to **Manage > Certificates and secrets**.
+1. In the **Overview** page of the registered app, go to **Manage > Certificates and secrets**.
 2. Open the **Client secrets** tab, select **New client secret**.
 3. Enter a description and choose **Expires** in the side pane > **Add a client secret**. 
 4. The client secret is created. 
 
->[!Note] 
-> You will want to note the **Secret value**. The **Secret value** won’t be seen after the page is closed and you need the value later.  
+> [!IMPORTANT]
+> Make sure that you copy the key, because you won't see it again. You will be required to know this secret key to complete your OAuth authentication and receive an Azure AD token. 
 
 ### Assign API permission for Dynamics 365 Finance 
-1. On the **Overview** page of registered app in previous step, go to **Manage > API permissions**.
+1. On the **Overview** page of the registered app in the previous step, go to **Manage > API permissions**.
 2. Select **Add a permission**.
 3. In the **Request API permissions** pane, select **Dynamics ERP**.
 4. Continue to choose the **Delegated permissions**.
 5. Select the permissions below: 
 
+![Permissions.](./media/permissions.png)
 
-
-This will allow the regitered app to access the Dynamics 365 Finance environment with Odata protocol.
+This will allow the registered app to access the Dynamics 365 Finance environment with Odata protocol.
 6. Select **Add permissions** to finish.
-
 
 ### Register Azure application in the Dynamics 365 Finance environment
 
-Follow these step to register the external application in the Dynamics 365 Finance environment:
+Follow these steps to register the external application in Dynamics 365 Finance:
 1. In Dynamics 365 Finance, go to **System administration > Setup > Azure Active Directory applications**. 
-2. Select **New** and for the new record enter: 
+2. Select **New**. 
+3. For the new record, enter the following: 
 o In the **Client Id** field, enter the application ID that you registered in Azure AD. 
 o In the **Name** field, enter a name for the application. 
 o In the **User ID** field, select the service account user ID. For this example, select the Admin user. You could provision a dedicated service account that has the
 correct permissions for the operations that must be performed. 
-3. Select **Save**.
+4. Select **Save**.
 
 ### Install the Invoice capture solution
 
 The Invoice capture solution is in public preview, the user will need to confirm the preview usage via flight code from AppSource. 
 
-Follow these steps to enable the service:
+Follow these steps to install the solution:
 
 1. Open the link for preview version of Dynamics 365 Invoice capture solution in AppSource.
 2. Sign in and select **Free trial**.
 3. Check and confirm the terms of use and private policy for public preview usage. 
 4. Select **Get it now** again.
-5. The power platform admin page within the same login tenant will open. Users can select the environment.  
-6. The solution will be installed in the background.
-7. Once completed, the solution has been installed in your environment in Power Apps.
-
+5. The power platform admin page within the same login tenant will open and users can select the environment.  
+6. The solution will be installed in your environment in Power Apps.
 
 ### Complete set up for Power Platform, Dataverse, and Outlook 
 
 Before the solution can be used, complete the following steps: 
-- Set up communication between Power Platform and Dynamics 365 Finance environment 
+- Set up communication between Power Platform and the Dynamics 365 Finance environment 
 - Set up connection reference for Dataverse and Office 365 Outlook that will be used by the channel
 
 > [!NOTE] 
