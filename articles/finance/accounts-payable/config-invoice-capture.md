@@ -84,9 +84,9 @@ Only emails or files that match the criteria can be imported into the solution.
 
  | Type                 | Configuration | More information | 
  |----------------------|----------|------------------|
- | Office 365 Outlook  | <ul><li>Folder </li><li> | Email folder must be under root directory, default: Inbox (Subfolder is not supported)| 
- |                          | Subject filter|
- |                          | From |  
+ | Office 365 Outlook  | Folder  | Email folder must be under root directory, default: Inbox (Subfolder is not supported)| 
+ |                          | Subject filter|(Optional) Substring that should be contained in the subject |
+ |                          | From |  (Optional) Email address of senders, use “;” to separate between multiple accounts |
 |SharePoint          | Site address|         URL of site address|
 |                    |  Folder     |   Folder in the site address | 
 
