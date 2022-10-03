@@ -62,6 +62,8 @@ A planned maintenance window is typically during the dark hours of the geographi
 ## What is the schedule for proactive quality updates?
 
 ### PQU Release: 10.0.28
+##### App Version: 10.0.1265.89
+##### Corresponding Latest KB Article: 745340
 | Station | Regions | Current major version | Sandbox Schedule 1 | Sandbox Schedule 2
 |---|---|---|---|---|
 | Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | Service Update 10.0.28 | September 15 to September 18, 2022, and September 19 to September 22, 2022 | October 7 to October 10, 2022 |
