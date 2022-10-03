@@ -51,7 +51,7 @@ The major components and steps contained in the Invoice capture solution are dis
 [![Dynamics 365 Finance Invoice capture.](./media/Invoice-capture.png)](./media/Invoice-capture.png)
 
 
-## Required roles for Invoice capture service
+## Required roles for Invoice capture solution
 
 The following roles are required to set up and use the Invoice capture solution:
 
