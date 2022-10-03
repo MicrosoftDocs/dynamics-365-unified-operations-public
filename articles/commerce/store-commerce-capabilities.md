@@ -20,3 +20,5 @@ ms.search.industry: Retail
 # Store Commerce app capabilities
 
 [!include [banner](includes/banner.md)]
+
+The Store Commerce app is the retail point of sale (POS) experience for Microsoft Dynamics 365 Commerce. It delivers feature-rich and comprehensive POS capabilities that help sales associates, cashiers, and managers provide superior customer service. This document provides an overview of the Store Commerce app capabilities. 
