@@ -5,7 +5,7 @@
 title: Product comparison modules
 description: This article describes product comparison modules and how to implement them so that customers can do product comparisons on Microsoft Dynamics 365 Commerce e-commerce websites.
 author: ashishmsft
-ms.date: 08/09/2022
+ms.date: 10/03/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -90,15 +90,15 @@ To add a product comparison button to product tiles on search and category resul
 1. Select **Save**, and then select **Preview** to preview the page.
 1. Select **Finish editing** to check in the page, and then select **Publish** to publish it.
 
-## Add product comparison preview panel to pages like Home page, Product details page and other pages on your website
+## Add a product comparison preview panel module to pages on your website
 
-Product comparison preview panel provides an option to review products that are added or removed from the comparison. Also the preview panel provides an option to navigate to the comparison page directly or clean the whole list. We recommend to enable preview panel on all pages that have product comparison button configuration enabled. This module can be added to the comparison button as a slot (reminding the customer that they need to manually add preview panel to the page), or can be used as a standalone module as well to be configured on any other page even if it has no functionality to add/remove products.
+A product comparison preview panel module provides your customers with the option to review products that they add to or remove from the comparison. The preview panel also provides the options to navigate to the comparison page directly or clear the entire list of products. We recommend that you enable the preview panel on all pages that have the **Product comparison button** enabled. The module can be added to the **Product comparison button** as a slot, or it can be used as a standalone module that you can configure on any page, even when there is no functionality to add or remove products to compare. 
 
-The module works as a singleton module. There can be only 1 module configured on the page. If a customer specifies multiple modules of preview panel, the first one of them will be rendered, and the rest will be ignored.
+You must manually add the product comparison preview panel module to a page. You should only add one preview panel module on a page. If you add multiple instances of the module to a page, the first module will be rendered and the rest will be ignored.
 
 ![Product comparison preview panel](./media/product-comparison-preview-panel-2.png)
 
-If a customer specifies the product comparison limit, there is an option to enable grey placeholders for the preview panel. This configuration is located in global website configuration and it is applied to preview panels configured for all pages. Grey placeholder provides the user a hint of how many more products they can add to the comparison by showing empty grey rectangles in the preview panel that would be replaced with the product information once the user adds a product to the comparison.
+If you specify a product comparison limit, you have an option to enable grey placeholders on the preview panel that indicate how many more products can be added to the comparison. The grey placeholders are replaced with products as they are added to the comparison. You can configure this functionality on the global website configuration page. The configuration will be applied to all preview panels for all pages. 
 
 ![grey-placeholder-product-comparison-preview-panel](./media/product-comparison-preview-panel.png)
 
