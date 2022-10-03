@@ -89,13 +89,12 @@ the edited field to indicate that this field has been manually updated. When the
 
 #### Check an invoice to get up-to-date messages 
 
-Editing field will update field values but won't generate new validation messages. To get the most 
+Editing a field will update the field values but won't generate new validation messages. To get the most 
 up-to-date validation messages, click **Check**. The messages in both the message panel and the invoice header / lines will be updated. 
-refreshed. 
 
 #### Completing review 
 
-To complete review, click the check button. 
+To complete review, click **Complete review**. 
 
 Invoices will be validated, if errors are found, the document status will remain in **In review** and a message bar will be displayed. All messages in the message 
 panel and the invoice header / lines are all automatically refreshed and will provide information about causes of the failed validation. 
@@ -115,21 +114,20 @@ To voice an invoice, click **Void**. The Voided invoices won't be able to be rev
 ### Validation logic  
 
 From the side-by-side viewer, there are key fields like **Legal Entity**, **Vendor Account** and **Item Number**. Sometimes those fields don't exist in the 
-invoice staging data, but they are mandatory to generate pending invoices in Dynamics 365 Finance. The fields are derived from the current invoice staging data 
+invoice staging data, but are mandatory to generate pending invoices in Dynamics 365 Finance. The fields are derived from the current invoice staging data 
 combined with master data from Dynamics 365 Finance. 
 
-The fields that need to be derived include **Legal Entity**, **Vendor Account** and **Item Number**. The derivation order is listed below and during each step, if the 
+The fields that need to be derived are **Legal Entity**, **Vendor Account** and **Item Number**. The derivation order is listed below and during each step, if the 
 derivation fails, it will not go the next step. 
  1. **Legal entity** - The legal entity is derived in the first step. When an active mapping rule is found for the legal entity,  the legal entity will be derived 
 based on the company name and company address.  
- 2. **Vendor account** - After the legal entity is derived, a **Vendor account** will be derived using an active mapping rule and from the legal entity that was derived from the first step 
-combined with the vendor's name and vendor address. 
+ 2. **Vendor account** - After the legal entity is derived, a **Vendor account** will be derived using an active mapping rule and from the legal entity that was derived from the first step combined with the vendor's name and vendor address. 
  3. **Item number** -   The **Item name** will be derived from staging based on the below three types of information: 
   - A configured mapping rule 
   - The legal entity from the previous step
   - The vendor account from the previous step 
 
-On the side-by-side viewer, there is **Check** button. When the user clicks **Check**, a validation check will be ran. Currently, the validation checks for:
+On the side-by-side viewer, click **Check** and a validation check will be ran. Currently, the validation checks for:
  - **Mandatory check** 
  - **Confidence score** 
  - **Legal entity** 
@@ -139,15 +137,12 @@ On the side-by-side viewer, there is **Check** button. When the user clicks **Ch
 **Confidence score**: Users can set the warning threshold and error threshold for the confidence score. The **Confidence score** check focuses on the confidence score 
 from OCR that below those thresholds. The error or warning messages will be shown based on the validation result.  
 
-**Legal entity check**: This is a check if a legal entity is in Dynamics 365 Finance. If the legal entity doesn't exist in the Dynamics 365 Finance environment, then 
-the validation will fail. 
+**Legal entity check**: This is a check if a legal entity is in Dynamics 365 Finance. If the legal entity doesn't exist in the Dynamics 365 Finance environment, the validation will fail. 
 
-When the side-by-side viewer is used the first time, the derivation and validation process will run. After user clicks **Check**, it will run the derivation and 
-validation processes. If the invoices are accurate, the user can click **Complete review** and will trigger the validation process. When the user clicks **Generate 
-vendor invoice** it will trigger the validation process. 
+When the side-by-side viewer is used the first time, and the user clicks **Check**, the derivation and validation processes are ran. If the invoices are accurate, the user clicks **Complete review** and the validation process will run. When the user clicks **Generate vendor invoice**, the validation process is ran. 
 
-The derivation process will happen before validation process and all the warnings or errors come from validation process. Those warnings and errors will also be logged 
-into our Dynamics 365 Finance.   
+The derivation process will happen before validation process and all the warnings or errors come from validation process. The warnings and errors will be logged 
+into Dynamics 365 Finance.   
 
  
 
