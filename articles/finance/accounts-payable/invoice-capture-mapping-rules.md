@@ -110,8 +110,8 @@ You can export two ways: **Open in Excel Online** or **Download worksheet**.
 
 #### Open in Excel Online 
 
-Click **Open in Excel Online** to open excel and you can edit the file online. After the editing is completed, click **Save**, and the modification will be reflected 
-on the mapping rule page. 
+Click **Open in Excel Online** to open excel and you can edit the file online. After the editing is completed, click **Save**, and the modification will be saved 
+on the **Mapping rule** page. 
 
 #### Download worksheet 
 
