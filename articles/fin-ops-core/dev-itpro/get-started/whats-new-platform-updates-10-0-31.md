@@ -30,8 +30,8 @@ The following table lists the features that are included in this release.
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-|   |   |   |   |
-|   |   |   |   |
+|  Data management | <p>**Allow Row version change tracking for tables and Data entities.**</p>  | [Allow Row version change tracking for tables and Data entities](/fin-ops-core/dev-itpro/data-entities/rowversion-change-track.md] | Default  |
+|  Power platform | <p>**Track changes for Finance and operations virtual tables in Dataverse (Preview).**</p>  | [Track changes for Finance and operations virtual tables in Dataverse](/fin-ops-core/dev-itpro/power-platform/track-changes-fin-ops-virtual-table.md | Power platform preview  |
 |   |   |   |   |
 
 ### Bug fixes
