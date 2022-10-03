@@ -42,7 +42,7 @@ Pre-configured system accounts are included on deployed environments so that Mic
 | DataSyncFrameworkApp | Used by Power Platform Apps provided by Microsoft to synchronize data from Finance and Operations Virtual tables in Dataverse based on row version change tracking. |
 | DynamicsMaintAppUser | To perform deployment and service operations in finance and operations apps. |
 | FRServiceUser | The Financial Reporting service user account. The Management Reporter application uses this account for integrations with finance and operations apps. |
-| MonitoringAppUser | Purpose/use case needed here. |
+| MonitoringAppUser | Used as part of **Geneva Synthetics Monitoring in FnO** to help identify availability or functionality loss issues in customer environments and contribute to CRI reduction. |
 | PowerPlatformApp | Connecting dual-write and virtual tables for finance and operations apps to Microsoft Dataverse.|
 | RetailServiceAccount | Connecting Retail services to the finance and operations environment. |
 | ScaleUnitManagement | Communication with the Scale Unit Manager portal. This account is automatically added when you upgrade to version 10.0.23. |
