@@ -60,7 +60,7 @@ To edit the configuration group description, click the **Description** field and
 
  - Change manual review setting 
 The user can decide if an invoice needs to be manually reviewed. To change the manual review setting, click **Need manual review** option. 
-Select from the following options:
+Select from the following:
 **Always manual review**: Select this option if invoices in this configuration group always need manual review. 
 **For errors and warnings**: Select this option if invoices that contain an error or warning messages need manual review. 
 **For errors**: Select this option to manually review the invoices that contain error messages. 
