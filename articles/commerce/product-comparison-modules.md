@@ -1,5 +1,4 @@
 ---
-
 # required metadata
 
 title: Product comparison modules
@@ -98,7 +97,7 @@ You must manually add the product comparison preview panel module to a page. You
 
 ![Product comparison preview panel](./media/product-comparison-preview-panel-2.png)
 
-If you specify a product comparison limit, you have an option to enable grey placeholders on the preview panel that indicate how many more products can be added to the comparison. The grey placeholders are replaced with products as they are added to the comparison. You can configure this functionality on the global website configuration page. The configuration will be applied to all preview panels for all pages. 
+If you specify a product comparison limit, you have an option to enable grey placeholders on the preview panel that indicate how many more products can be added to the comparison. The grey placeholders are replaced with products as they are added to the comparison. To configure a product comparison limit and enable grey placeholders, in site builder, go to **Site settings > Extensions**, and make your changes in the **Product comparisons** section. The configuration will be applied to all preview panels for all pages. 
 
 ![grey-placeholder-product-comparison-preview-panel](./media/product-comparison-preview-panel.png)
 
