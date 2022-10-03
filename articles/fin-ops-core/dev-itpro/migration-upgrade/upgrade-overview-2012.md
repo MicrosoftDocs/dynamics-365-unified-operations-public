@@ -51,7 +51,7 @@ The following diagram shows the end-to-end upgrade process, and the activities t
 To learn the most important elements and best practices for successfully upgrading your Dynamics AX 2012 solution to finance and operations apps, see [Upgrade Dynamics AX 2012 to finance and operations apps](/training/paths/upgrade-ax-2012-finance-operations/).
 
 > [!IMPORTANT]
-> Upgrades from Microsoft Dynamics AX 2012 are complex, and it should not be assumed that the process will run end-to-end without some level of effort, data clean-up, tuning and customization. The tools and code for the upgrade should be seen as a framework rather than a completed solution. There are so many variables in the AX 2012 database and metadata (code) that make it impossible for all potential issues to be handled by the upgrade process. 
+> Upgrades from Microsoft Dynamics AX 2012 are complex. It shouldn't be assumed that the process will run end-to-end without some level of effort, data clean-up, tuning and customization. The tools and code for the upgrade should be seen as a framework rather than a complete solution. There are many variables in the AX 2012 database and metadata (code) that make it impossible for all potential issues to be handled by the upgrade process. 
 
 
 ## Analyze
