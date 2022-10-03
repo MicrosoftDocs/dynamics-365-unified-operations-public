@@ -38,9 +38,9 @@ ms.dyn365.ops.version:
 Entering invoices into the system has been a long process. Clerks usually need to navigate through multiple attachment files and windows to
 collect the right piece of information, which can be time consuming and error prone. With the document side by side viewer, this process becomes easier. 
 
-The document side by side viewer, allows users to have the original document and the invoice displayed side by side in the same window. The invoice form is now 
-filled with information that comes from the original invoice document. The viewer builds the connection between the form fields and original invoice document. 
-The viewer also helps users find possible errors that exist on the form. This viewer will improve your experience working on the invoices by introducing simplicity, 
+The document side by side viewer, allows users to have the original document and the invoice displayed side by side in the same window. The invoice page is now 
+filled with information that comes from the original invoice document. The viewer builds the connection between the page fields and original invoice document. 
+The viewer also helps users find possible errors that exist on the page. This viewer will improve your experience working on the invoices by introducing simplicity, 
 efficiency, and accuracy. 
 
 ### How to open the side-by-side viewer 
@@ -52,7 +52,7 @@ or single click the invoice number.
 
 #### When an invoice needs manual review 
 
-An invoice document has just been imported and it needs manual review due to errors or warnings. In the side-by-side viewer, the document header will show a status 
+An invoice document has been imported and needs manual review due to errors or warnings. In the side-by-side viewer, the document header will show a status 
 of **Imported** and the current version is **Original Version**. 
 
 To start reviewing the invoice, click **Start review**. When the review starts, all fields become editable. The **Status** and **Current version** will be updated to 
@@ -62,35 +62,32 @@ To start reviewing the invoice, click **Start review**. When the review starts, 
 
 Users should start the review process from the message panel. Error messages are displayed with a red X, warning messages are displayed with triangle, information 
 messages are displayed with a circle. Confidence score-related messages can be either classified as warning or error. This is based on the threshold set by the 
-configuration group. For more information, see Invoice capature solution configuration group.  
+configuration group. For more information, see Invoice capture solution configuration group.  
 
 Warning and error messages can be ignored from the message panel, the invoice header or invoice lines. When ignored, the message will no longer be displayed as 
-error or warning and won't fail validation.  
+error or warning, and won't fail validation.  
 
 To ignore messages from the message panel, click **Ignore**. Messages that are ignored can be reset by clicking **Ignore** and its type will be changed from error or 
 warning to information. 
 
-To ignore message from the invoice header or the invoice line, click **Ignore** on the field. The message icon will disappear after ignoring and will come back if 
-if the message is reset from the message panel. 
+To ignore message from the invoice header or the invoice line, click **Ignore** on the field. The message icon will disappear after ignoring and will come back if the message is reset from the message panel. 
 
 For messages related to invoice header fields, click the message in the message panel will move the cursor to the corresponding field in the header section. 
  
 #### Proofreading and editing fields 
 
 An icon will show on the field if the field’s content is read from the original invoice through OCR. Click the icon and the document viewer will zoom in and highlight
-where the field value is taken from to help with verifing invoice data.  
+where the field value is taken from to help with verifying invoice data.  
 
 To reset the document viewer to its original display ratio, you can: 
  - Click on the same icon that was previously clicked.
  - Click on the button on the upper right corner of the document viewer. 
 
-Edit the fields as needed, the edited field will be automatically saved when the cursor leaves the field. An icon will be displayed to the right of 
-the edited field to indicate that this field has been manually updated. When the page is refreshed, the icon will be removed.
+Edit the fields as needed, the edited field will be automatically saved when the cursor leaves the field. An icon will be displayed to the right of the edited field to indicate that this field has been manually updated. When the page is refreshed, the icon will be removed.
 
 #### Check an invoice to get up-to-date messages 
 
-Editing a field will update the field values but won't generate new validation messages. To get the most 
-up-to-date validation messages, click **Check**. The messages in both the message panel and the invoice header / lines will be updated. 
+Editing a field will update the field values but won't generate new validation messages. To get the most up-to-date validation messages, click **Check**. The messages in both the message panel and the invoice header / lines will be updated. 
 
 #### Completing review 
 
