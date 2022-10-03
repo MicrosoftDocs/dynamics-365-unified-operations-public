@@ -82,6 +82,15 @@ Fill in the following fields:
  
 Only emails or files that match the criteria can be imported into the solution. 
 
+ | Type                 | Configuration | More information | 
+ |----------------------|----------|------------------|
+ | Office 365 Outlook  | <ul><li>Folder </li><li> | Email folder must be under root directory, default: Inbox (Subfolder is not supported)| 
+ |                          | Subject filter|
+ |                          | From |  
+|SharePoint          | Site address|         URL of site address|
+|                    |  Folder     |   Folder in the site address | 
+
+
 2) Activate the channel 
 When a flow is saved, fields will be displayed to show the status of the channel and created time. Initially, the **Status** will be **Inactive**. 
 The **Status reason** field displays that the channel is initialized and ready to be activated.
