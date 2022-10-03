@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 10.0.21
 This article explains how to enable the debug mode in the Tax Calculation service to investigate issues.
 
 1. Add **&debug=vs%2CconfirmExit&** to the URL of Application Object Server (AOS), and then refresh the page.
-2. When you select **Sales tax** to calculate the sale tax, a text file that is named **TaxServiceTroubleshootingLog.txt** is opened. The **TaxServiceTroubleshootingLog.txt** file contains **TaxableDocument** and the calculation parameter. These results are returned from tax service and exception information for troubleshooting.
+2. When you select **Sales tax** to calculate the sale tax, a text file that is named **TaxServiceTroubleshootingLog.txt** will be captured on the server under **C:\AXWeb_SMBShare\temporary-file\\{%session%}\\**. The **TaxServiceTroubleshootingLog.txt** file contains **TaxableDocument** and the calculation parameter. These results are returned from tax service and exception information for troubleshooting.
 
 ## Sample
 
