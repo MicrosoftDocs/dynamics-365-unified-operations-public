@@ -83,7 +83,7 @@ The currency of a discount defines the currency of all amount and price fields o
 
 This determines which discounts compete on a transaction, and which discounts are compounded together. The three values for this option are **Exclusive**, **Best price**, and **Compound**.
 
-When the value is **Exclusive** or **Best price**, only one discount can be applied to a transaction line. The only difference between **Exclusive** and **Best price** is the order that the discounts are considered and applied in. **Exclusive** discounts are always evaluated and applied before **Best price** and **Compound** discounts, if all other settings are the same. Therefore, **Exclusive** and **Best price** discount never compete for the best price. Two or more **Exclusive** discounts will compete for the best price, as will two or more **Best price** discounts.
+When the value is **Exclusive** or **Best price**, only one discount can be applied to a transaction line. The only difference between **Exclusive** and **Best price** is the order that the discounts are considered and applied in. **Exclusive** discounts are always evaluated and applied before **Best price** and **Compound** discounts, if all other settings are the same. Therefore, **Exclusive** and **Best price** discounts never compete for the best price. Two or more **Exclusive** discounts will compete for the best price, as will two or more **Best price** discounts.
 
 When the value is **Compound**, the discount can be compounded with any other discount that is also set to **Compound**. Therefore, two or more **Compound** discounts will all be applied to a transaction line. When multiple **Compound** discounts are applied to a transaction line, they are applied in the following order:
 
@@ -159,7 +159,7 @@ When you select a variant on a discount line, the discount will be applied to ju
 
 #### Dimensions
 
-Starting with the Retail 8.1.1 release, we have added the capability to set up discounts at a dimension level for a product. This provides the flexibility to choose one or more dimensions of a product as discount lines. This saves the merchandizing manager from individually adding the variants on which the discounts apply. For example, you can specify a discount on all variants with a specific style or you can specify a discount on all variants that are of a specific color and style.
+Starting with the Retail 8.1.1 release, we have added the capability to set up discounts at a dimension level for a product. This provides the flexibility to choose one or more dimensions of a product as discount lines. This saves the merchandising manager from individually adding the variants on which the discounts apply. For example, you can specify a discount on all variants with a specific style or you can specify a discount on all variants that are of a specific color and style.
 
 > [!NOTE]
 > The capability to set up promotions based on dimensions is not supported for price adjustments. The specific interface for defining the dimensions is removed in Retail versions 10.0.4 and later.
