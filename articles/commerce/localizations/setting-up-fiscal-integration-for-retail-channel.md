@@ -281,16 +281,15 @@ To enable fiscal X/Z reports to be run from the POS, you should add new buttons 
     1. Add a new button, and set the **Print fiscal Z** button property.
     1. On the **Distribution schedule** page, run the **1090** job to transfer changes to the channel database.
 
-## Enable manual execution of postponed fiscal registration
+## Enable manual execution of deferred fiscal registration
 
-To enable manual execution of a postponed fiscal registration, you should add a new button to a POS layout.
+To enable manual execution of a deferred fiscal registration, you should add a new button to a POS layout.
 
 - On the **Button grids** page, follow the instructions in [Add POS operations to POS layouts by using Button grid designer](../dev-itpro/add-pos-operations.md#add-a-custom-operation-button-to-the-pos-layout-in-retail-headquarters) to install the designer and update a POS layout.
 
     1. Select the layout to update.
     1. Add a new button, and set the **Complete fiscal registration process** button property.
     1. On the **Distribution schedule** page, run the **1090** job to transfer your changes to the channel database.
-
 
 ## View connection parameters and other information in POS
 
