@@ -2,7 +2,7 @@
 title: Fiscal integration overview for Commerce channels
 description: This article provides an overview of the fiscal integration capabilities that are available in Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 03/04/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -89,11 +89,11 @@ This configuration is used when a physical fiscal device or fiscal service is pr
 
 The fiscal integration framework provides the following options to handle failures during fiscal registration:
 
-- **Retry** – Operators can use this option when the failure can be resolved quickly, and the fiscal registration can be rerun. For example, this option can be used when the fiscal device isn't connected, the fiscal printer is out of paper, or there is a paper jam in the fiscal printer.
-- **Cancel** – This option lets operators postpone the fiscal registration of the current transaction or event if it fails. After the registration is postponed, the operator can continue to work on the POS and can complete any operation that the fiscal registration isn't required for. When any event that requires the fiscal registration occurs in the POS (for example, a new transaction is opened), the error handling dialog box automatically appears to notify the operator that the previous transaction wasn't correctly registered and to provide the error handling options.
-- **Skip** – Operators can use this option when the fiscal registration can be omitted under specific conditions and regular operations can be continued on the POS. For example, this option can be used when a sales transaction that the fiscal registration failed for can be registered in a special paper journal.
-- **Mark as registered** – Operators can use this option when the transaction was actually registered in the fiscal device (for example, a fiscal receipt was printed), but a failure occurred when the fiscal response was being saved to the channel database.
-- **Postpone** – Operators can use this option when the transaction wasn't registered because the registration service was unavailable. 
+- **Retry** – The operator can use this option when the failure can be resolved quickly, and the fiscal registration can be rerun. For example, this option can be used when the fiscal device isn't connected, the fiscal printer is out of paper, or there is a paper jam in the fiscal printer.
+- **Cancel** – This option lets the operator defer the fiscal registration of the current transaction or event if it fails. After the registration is deferred, the operator can continue to work on the POS and can complete any operation that the fiscal registration isn't required for. When any event that requires the fiscal registration occurs in the POS (for example, a new transaction is opened), the error handling dialog box automatically appears to notify the operator that the previous transaction wasn't correctly registered and to provide the error handling options.
+- **Skip** – The operator can use this option when it is not possible to complete the fiscal regisration of the current transaction or event (for example, the fiscal printer is out of order) **and** the fiscal registration can be omitted under specific conditions. For example, this option can be used when a sales transaction that the fiscal registration failed for can be registered in a special paper journal. After skipping the fiscal registration, regular operations can be continued on the POS. 
+- **Mark as registered** – The operator can use this option when the current transaction or event was actually registered in the fiscal device (for example, a fiscal receipt was printed), but a failure occurred when the fiscal response was being saved to the channel database. After marking the current transaction or event as registered, regular operations can be continued on the POS.
+- **Postpone** – The operator can use this option when the transaction wasn't registered because the registration device or service was unavailable **and** the fiscal registration can be done later by other means. For example, postponed transactions can later be fiscally registered in a batch by a [separate functionality](./latam-bra-nfce-contingency-mode.md).  
 
 > [!NOTE]
 > The **Skip**, **Mark as registered**, and **Postpone** options must be activated in the fiscal registration process before they are used. In addition, corresponding permissions must be granted to operators.
