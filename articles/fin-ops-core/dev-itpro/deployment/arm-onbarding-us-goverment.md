@@ -112,23 +112,25 @@ Complete the following procedures to enable the Azure subscription to deploy Res
 
 Follow these steps to enable the Azure connector and, as required, add an LCS user.
 
-1. In LCS, on the **Project** page, in the **Environments** section, select **Microsoft Azure settings**.
-2. On the **Project settings** page, on the **Azure connectors** tab, under **Azure connectors**, select **Add**.
+1. In LCS, on the **Project** page, at the top of the page, select the hamburger icon, and then select **Project settings**.
+2. On the **Project settings** page, select the **Azure connectors** tab.
+3. On the **Project settings** page, on the **Azure connectors** tab, under **Azure connectors**, select **Add**.
 
     > [!NOTE]
     > If you're enabling Resource Manager for an existing connector, select **Edit** instead of **Add**.
 
-3. Enter the connector name, enter the Azure subscription ID to deploy to, and set the **Configure to use Azure Resource manager** option to **Yes**.
-4. In the **Azure subscription AAD Tenant domain** field, enter the domain name of the Azure subscription account admin, and then select **Next**.
-5. On the **Microsoft Azure setup** page, select **Download**. Make a note of the location of the certificate file that is downloaded. You will use this information to upload the certificate to the Azure subscription.
-6. In the [Azure Government portal](https://portal.azure.us), go to your subscription. In the left pane, select **Management Certificates**.
-7. Filter to the Azure subscription that is used, and then, on the **Management certificates** tab, select **Upload**.
-8. Select the Management certificate that you downloaded in step 5, and then select **OK**.
+4. Enter the connector name, enter the Azure subscription ID to deploy to, and set the **Configure to use Azure Resource manager (ARM)** option to **Yes**.
+5. In the **Azure subscription AAD Tenant domain** field, enter the domain name of the Azure subscription account admin, and then select **Next**.
+6. On the **Microsoft Azure setup** page, select **Download**. Make a note of the location of the certificate file that is downloaded. You will use this information to upload the certificate to the Azure subscription.
+7. In the [Azure Government portal](https://portal.azure.us), go to your subscription. In the left pane, select **Management Certificates**.
+8. Filter to the Azure subscription that is used, and then, on the **Management certificates** tab, select **Upload**.
+9. Select the Management certificate that you downloaded in step 5, and then select **OK**.
 
 #### Configure deployment settings
 
-1. In LCS, on the **Project** page, in the **Environments** section, select **Microsoft Azure settings**.
-2. The **Prject settings** page appears. In the **Azure connetors** area, click **Add**.
-3. On the **Microsoft Azure setup** page, select the region to deploy to, and then select **Connect**. The Resource Manager onboarding flow is now completed. You should now see that the subscription has been added to the **Azure connectors** list. Additionally, a check mark should appear under **ARM Enabled**.
+1. In LCS, on the **Project** page, at the top of the page, select the hamburger icon, and then select **Project settings**.
+2. On the **Project settings** page, select the **Azure connectors** tab.
+3. On the **Project settings** page, on the **Azure connectors** tab, under **Azure connectors**, select **Add**.
+4. On the **Microsoft Azure setup** page, select the region to deploy to, and then select **Connect**. The Resource Manager onboarding flow is now completed. You should now see that the subscription has been added to the **Azure connectors** list. Additionally, a check mark should appear under **ARM Enabled**.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
