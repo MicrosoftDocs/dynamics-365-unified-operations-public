@@ -2,7 +2,7 @@
 title: Retail discounts
 description: This article provides an overview of the discount functionality in Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management.
 author: ShalabhjainMSFT
-ms.date: 10/15/2020
+ms.date: 10/14/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -38,7 +38,7 @@ All discounts have a header and one or more lines. All discount types have prope
 When you create discounts, we recommend that you always avoid or minimize overlapping discount lines. Overlapping discount lines occur when two or more discount lines in the same discount can be applied to the same product. In this case, the pricing engine must treat the discount as two or more independent discounts that must then be evaluated against each other to find the best discount amount. In addition, it can be difficult for a user to know what the discount will be just by looking at the discount definition.
 
 > [!NOTE]
-> When the number of lines in a single discount reaches a few thousand, user may experience perf issues when enabling discounts with quantity limit or discounts with both include and exclude lines. User may see perf degradation to a much less degree in pricing calculation in call center orders and POS orders. In this case, user is recommended to create a category containing the products and create discount line with the category, rather than creating thousands of lines for the products.
+> When the number of lines in a single discount reaches a few thousand, users may experience performance issues when enabling discounts with quantity limits, or enabling discounts with both include and exclude lines. Users may also see performance degradation to a much lesser degree in pricing calculation for call center and POS orders. To avoid these performance issues, you can instead create a single category that contains all of the discounted products, and then create a discount line using the category.
 
 ## Managing discounts
 
