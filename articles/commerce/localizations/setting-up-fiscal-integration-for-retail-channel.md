@@ -2,7 +2,7 @@
 title: Set up the fiscal integration for Commerce channels
 description: This article provides guidelines for setting up the fiscal integration functionality for Commerce channels.
 author: EvgenyPopovMBS
-ms.date: 04/28/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -27,6 +27,7 @@ To enable features that are related to fiscal integration functionality for Comm
     - **Fiscal integration technical profile overrides** – This feature enables the configuration of fiscal integration to be expanded and adds the capability to check connection parameters on the settings page of a POS register. When this feature is enabled, you can override the parameters of a technical profile.
     - **Fiscal Registration State of POS Registers** – When this feature is enabled, you can disable the fiscal registration process for specific POS registers. If fiscal registration is disabled for a POS register, sales transactions can't be completed on that register.
     - **Fiscal integration local storage backup** – This feature extends the error handling capabilities of the fiscal integration framework. It also enables automatic backup of fiscal registration data in the event of data loss, so that the data in local storage is restored while a device is being activated.
+    - **Postponed registration of documents** - This feature extends the error handling capabilities of the fiscal integration framework. It enables the option to postpone the fiscal registration in case of a fiscal registration failure and either use a backup fiscal registration option or complete the fiscal registration later by means other than the fiscal integration framework.
 
 ## Set up Commerce parameters
 
