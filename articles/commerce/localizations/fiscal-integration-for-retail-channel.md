@@ -102,7 +102,7 @@ The fiscal integration framework provides the following options to handle failur
 > [!WARNING]
 > The **Skip**, **Mark as registered**, and **Postpone** options should be considered emergency options and used only in exceptional cases. You should discuss these error handling options with your legal or tax advisor and apply good judgment before enabling them. The options must be activated in the fiscal registration process before they are used. To make sure operators do not use them on a regular basis, corresponding permissions must be granted to operators.
 
-A [fiscal transaction](#storing-fiscal-response-in-fiscal-transaction) is created when the **Skip**, **Mark as registered**, or **Postpone** option is selected, but the fiscal transaction does not contain a fiscal response. This allows to capture the event of fiscal registration failure. These options also enable info codes to capture some specific information about a failure, such as the reason for the failure, or a justification for skipping the fiscal registration or marking the transaction as registered. For more details about how to set up error handling parameters, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+A [fiscal transaction](#storing-fiscal-response-in-fiscal-transaction) is created when the **Skip**, **Mark as registered**, or **Postpone** option is selected, but this fiscal transaction does not contain a fiscal response. This allows to capture the event of fiscal registration failure. These options also enable info codes to capture some specific information about a failure, such as the reason for the failure, or a justification for skipping the fiscal registration or marking the transaction as registered. For more details about how to set up error handling parameters, see [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
 
 ### Optional fiscal registration
 
@@ -110,11 +110,7 @@ Fiscal registration might be mandatory for some operations but optional for othe
 
 ### Manually rerun fiscal registration
 
-If the fiscal registration of a transaction or event has been postponed after a failure (for example, if the operator selected **Cancel** in the error handling dialog box), you can manually rerun the fiscal registration by invoking a corresponding operation. For more details, see [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
-
-### Postpone option
-
-The **Postpone** option lets you continue the fiscal registration process if the current step fails. It can be used when there is a fiscal registration backup option.
+If the fiscal registration of a transaction or event has been deferred after a failure (for example, if the operator selected **Cancel** in the error handling dialog box), you can manually rerun the fiscal registration by invoking a corresponding operation. For more details, see [Enable manual execution of deferred fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 
 ### Fiscal registration health check
 
@@ -136,7 +132,7 @@ If the health check fails, the POS shows the health check dialog box. This dialo
 
 ## Storing fiscal response in fiscal transaction
 
-When fiscal registration of a transaction or event is successful, a fiscal transaction is created in the channel database and linked to the original transaction or event. Similarly, if the **Skip** or **Mark as registered** option is selected for a failed fiscal registration, this information is stored in a fiscal transaction. A fiscal transaction holds the fiscal response of the fiscal device or service. If the fiscal registration process consists of several steps, a fiscal transaction is created for each step of the process that resulted in a successful or failed registration.
+When fiscal registration of a transaction or event is successful, a fiscal transaction is created in the channel database and linked to the original transaction or event. Similarly, if the **Skip**, **Mark as registered**, or **Postpone** option is selected for a failed fiscal registration, this information is stored in a fiscal transaction. A fiscal transaction holds the fiscal response of the fiscal device or service. If the fiscal registration process consists of several steps, a fiscal transaction is created for each step of the process that resulted in a successful or failed registration.
 
 Fiscal transactions are transferred to Headquarters by the *P-job*, together with transactions. On the **Fiscal transactions** FastTab of the **Store transactions** page, you can view the fiscal transactions that are linked to transactions.
 
