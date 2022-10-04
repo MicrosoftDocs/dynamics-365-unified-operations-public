@@ -76,9 +76,9 @@ A planned maintenance window is typically during the dark hours of the geographi
 | Station | Regions | Current major version | Sandbox Schedule 1 |
 |---|---|---|---|
 | Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | Service Update 10.0.29 | October 14 to October 17, 2022 |
-| Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | Service Update 10.0.29 | October 14 to October 17, 2022 |
-| Station 3 | East Asia, UK West, Japan West, Brazil South, West Europe, East US, UAE Central | Service Update 10.0.29 | October 14 to October 17, 2022 |
-| Station 4 | North Europe, Central US, West US | Service Update 10.0.29 |October 14 to October 17, 2022 |
+| Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | Service Update 10.0.29 | October 15 to October 18, 2022 |
+| Station 3 | East Asia, UK West, Japan West, Brazil South, West Europe, East US, UAE Central | Service Update 10.0.29 | October 16 to October 19, 2022 |
+| Station 4 | North Europe, Central US, West US | Service Update 10.0.29 |October 17 to October 20, 2022 |
 | Station 5 | DoD, Government Community Cloud, China | Service Update 10.0.29 | Not Scheduled |
 
 > [!IMPORTANT] 
