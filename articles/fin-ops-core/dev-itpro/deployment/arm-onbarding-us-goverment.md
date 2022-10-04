@@ -90,7 +90,7 @@ Follow these steps to authorize the app IDs on the tenant. Complete this procedu
 
 Follow these steps to assign the **Contributor** role to the **Dynamics Deployment Services \[wsfed-enabled\]** application.
 
-1. In the [Azure portal](https://portal.azure.com), on the **Subscription** tab, select the Azure subscription, and then select the **Access Control (IAM)** item on the navigation menu.
+1. In the [Azure Government portal](https://portal.azure.us), on the **Subscription** tab, select the Azure subscription, and then select the **Access Control (IAM)** item on the navigation menu.
 2. Select **Add**, and then select **Add role assignment**.
 3. In the **Add role assignment** dialog box, set the **Role** field to **Contributor**, and set the **Assign access to** field to **Azure AD user, group, or service principal**. In the **Select** field, search for and select **Dynamics Deployment Services \[wsfed-enabled\]**. Then select **Save**.
 
@@ -121,7 +121,7 @@ Follow these steps to enable the Azure connector and, as required, add an LCS us
 3. Enter the connector name, enter the Azure subscription ID to deploy to, and set the **Configure to use Azure Resource manager** option to **Yes**.
 4. In the **Azure subscription AAD Tenant domain** field, enter the domain name of the Azure subscription account admin, and then select **Next**.
 5. On the **Microsoft Azure setup** page, select **Download**. Make a note of the location of the certificate file that is downloaded. You will use this information to upload the certificate to the Azure subscription.
-6. In the [Azure  portal](https://portal.azure.com), go to your subscription. In the left pane, select **Management Certificates**.
+6. In the [Azure Government portal](https://portal.azure.us), go to your subscription. In the left pane, select **Management Certificates**.
 7. Filter to the Azure subscription that is used, and then, on the **Management certificates** tab, select **Upload**.
 8. Select the Management certificate that you downloaded in step 5, and then select **OK**.
 
