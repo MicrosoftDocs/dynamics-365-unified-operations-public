@@ -63,7 +63,8 @@ After the migration is scheduled, you may cancel it by highlighting it from the 
 There are several validations that take place with the Project migration manager.  These are listed below.
 
 - All migrations must be scheduled in the future.
-- Migrations are only allowed for Self-service cloud implementation projects.  Presales, Migrate and Learn, and On-premises implementation projects are not supported at this time.
+- Migrations are only allowed for certain project types.  Please see the table above for what is allowed under Automated migration.
+- Deleting or cancelling a migration can only be done on a migration that is not yet started.
 
 ### During migration
 When the migration is in progress, a banner will be shown across the source and target projects that indicates it is participating in a migration.  The projects will be locked for changes until the migration completes successfully or fails and is rolled back.  
@@ -71,10 +72,15 @@ When the migration is in progress, a banner will be shown across the source and 
 ## Frequently asked questions (FAQ)
 Below are several common questions that we would like to answer.  
 
-### Question 1
-Answer 1
+### My Sandbox and Production environments are already in my desired geography (Europe for example).  Why is there downtime when I move my LCS project to EU?
+Finance and Operations apps have metadata stored that includes their connection to the LCS project from which they were created.  When we migrate your project to a new geography, such as LCS Europe, it will need to update this connection information in those environments.  This requires at minimum an environment restart which can take up to an hour.
 
-### Question 2
-Answer 2
+### What geographies are available for me to choose from?
+For more information on different geographies available, visit [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo).
+
+### What happens to the source project after migration is completed?
+We will keep the source project available for up to one year, in read-only mode.  You will be able to download assets, but you will not be able to make any other changes nor manage the environments from the source project.  After one year, we will delete all of the source project and its data.
+
+You are always welcome to delete the project earlier than one year, if you have moved all of your required data to the target project and wish to no longer have data residing in the source geography.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
