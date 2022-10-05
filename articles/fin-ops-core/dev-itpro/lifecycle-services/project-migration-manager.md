@@ -4,7 +4,7 @@
 title: Project migration manager
 description: This article explains how to use the Project Migration Manager to move your project from one Lifecycle Services geography to another.
 author: LaneSwenka
-ms.date: 09/08/2022
+ms.date: 10/05/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -43,7 +43,7 @@ The following data is transferreable between instances, using the actions below.
 
 |Migration method| Project types| Capabilities|
 |----------------|--------------|-------------|
-|Automated| Cloud implementation project, on-premise implementation project, partner projects| Business process modeler<br/>Methodologies<br/>Project onboarding<br/>Project settings<br/>Support</br>Work Items<br/>|
+|Automated| Cloud implementation project, on-premise implementation project, partner project| Business process modeler<br/>Methodologies<br/>Project onboarding<br/>Project settings<br/>Support</br>Work Items<br/>|
 |Manual migration| Cloud implementation project, on-premise project, partner project| Asset library<br/>Commerce<br/>Self-service environments(support ticket)<br/>Cloud-hosted environments (CHE)<br/>|
 |Not supported| All | Configuration and Data Manager (CDM)<br/>Sharepoint Online integration<br/>System diagnostics<br/>Upgrade analysis<br/>Globalization<br/>Code upgrade<br/>Translation service<br/>Non-project features|
 
@@ -52,7 +52,7 @@ Data that is manual migration must be done by the customer.  You are not require
 ## Start your project migration
 To start your project migration, use the navigation menu and select **Project migration manager**.  *Note, you must be a Project owner to perform a migration.*
 
-1. Use the **Add** button to start a new migration request.
+1. Use the **New** button to start a new migration request.
 2. In the Schedule Migration slider, choose a **target geo** that meets your specifications.
 3. Choose a **migration start time** which is in the future. This will begin the migration for your project and several aspects of the project will become read-only.
 4. Click the checkbox to agree to the terms and continue.
