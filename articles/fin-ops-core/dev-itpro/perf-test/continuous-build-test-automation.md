@@ -63,7 +63,7 @@ If you're deploying a build environment on an existing Azure DevOps project that
 
 LCS provides an option to deploy Development and Build/Test environments. With this option, you can deploy developer and build VMs in the cloud that are connected to your Azure DevOps project.
 
-Alternatively, you can make use of [Microsoft-hosted agents](../dev-tools/osted-build-automation.md) to build and deploy your X++ code.
+Alternatively, you can make use of [Microsoft-hosted agents](../dev-tools/hosted-build-automation.md) to build and deploy your X++ code.
 
 ### Azure DevOps credential setup and linking to LCS project
 
