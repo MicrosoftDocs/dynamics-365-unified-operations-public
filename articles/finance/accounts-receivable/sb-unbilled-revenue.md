@@ -137,9 +137,7 @@ If you want to use unbilled revenue, leave the **Item group setup** page blank, 
 
 As of version 10.0.29, a new parameter is added to Recurring contract billing parameters. When set to Yes, the **Use unbilled offset accounts** parameter enables two new accounts in **Unbilled revenue setup**. The Unbilled revenue offset and Unbilled discount offset accounts become available and are best used when billing schedules are created in a currency other than the accounting currency. Using the offset accounts ensures that the unbilled revenue and unbilled discount accounts are reversed out using the same exchange rates as their initial entries. The initial **Create journal entry** process is the same with the debit to unbilled revenue and credit to revenue. If using a discount the initial journal entry is the same with a debit to Discount and credit to unbilled discount. 
 
-The **Unbilled revenue offset** If exchange rate or rounding differences occur, the amounts that are calculated during the **Generate invoice** process might be different. This behavior ensures that the net amount of the accounts is 0 (zero).
-
-This example shows how to use unbilled revenue to recognize the whole amount of a contract on the balance sheet as unbilled revenue. The other side of the entry is the unbilled revenue offset. When you invoice the customer, the unbilled revenue and unbilled revenue offset are reversed. Revenue recognition will occur either at the time of invoicing or according to the deferral recognition schedule that was set up.
+This example shows how to use unbilled revenue to recognize the whole amount of a contract on the balance sheet as unbilled revenue. The other side of the entry is the revenue or deferred revenue. When you invoice the customer, the unbilled revenue is reversed. Revenue recognition will occur either at the time of invoicing or according to the deferral recognition schedule that was set up.
 
 #### Assumptions
 
@@ -159,47 +157,38 @@ This example shows how to use unbilled revenue to recognize the whole amount of 
 
     | Item | Start date | End date | Amount | Billing frequency | Deferral item | Unbilled revenue | Description |
     |---|---|---|---|---|---|---|---|
-    | License | January 01, CY | December 31 CY+2 | $100.00 | Annually | No | Yes | The customer will be invoiced $100.00 each year. The $300.00 total will be recorded up front as unbilled revenue on the balance sheet, and as revenue on the profit and loss. Each invoice will reduce the unbilled amount. |
-    | Maintenance | January 01, CY | December 31 CY+2 | $30.00 | Annually | Yes | Yes | The customer will be invoiced $30.00 each year. The $90.00 total will be recorded up front as unbilled revenue and deferred revenue on the balance sheet. Each invoice will reduce the unbilled amount. The deferred revenue will be recognized monthly over 36 months. |
+    | License | January 01, 2022 | December 31, 2024 | $100.00 | Annually | No | Yes | The customer will be invoiced $100.00 each year. The $300.00 total will be recorded up front as unbilled revenue on the balance sheet, and as revenue on the profit and loss. Each invoice will reduce the unbilled amount. |
+    | Maintenance | January 01, 2022 | December 31, 2024 | $30.00 | Annually | Yes | Yes | The customer will be invoiced $30.00 each year. The $90.00 total will be recorded up front as unbilled revenue and deferred revenue on the balance sheet. Each invoice will reduce the unbilled amount. The deferred revenue will be recognized monthly over 36 months. |
 
 6. On the **All billing schedules** page, use the **Create journal entry** process to post the contract value to the balance sheet as unbilled revenue.
 
 Two journal entries are created, one for each line on the billing schedule.
 
-| Unbilled revenue account | Unbilled revenue offset account | Debit amount | Credit amount |
-|---|---|---|---|
-| Unbilled revenue account | | $300.00 | |
-| | Unbilled revenue offset account | | $300.00 |
+| Account | Debit amount | Credit amount |
+|---|---|---|
+| Unbilled revenue account | $300.00 | |
+| Revenue account | | $300.00 |
 
-| Unbilled revenue account | Deferred revenue | Debit amount | Credit amount |
-|---|---|---|---|
-| Unbilled revenue account | | $90.00 | |
-| |Deferred maintenance revenue | | $90.00 |
+| Account | Debit amount | Credit amount |
+|---|---|---|
+| Unbilled revenue account | $90.00 | |
+| Deferred revenue | | $90.00 |
 
-The first journal entry is posted to an unbilled revenue offset account, and the second is posted to a deferred revenue account. If the billing line has both unbilled revenue and deferred revenue, the deferred revenue account is used, not the unbilled revenue offset. The contract requires that the invoice for the customer be created at the beginning of each year. Use the **Generate invoice** process to create the invoice. When the invoice is created, the following journal entries are created.
+The contract requires that the invoice for the customer be created at the beginning of each year. Use the **Generate invoice** process to create the invoice. When the invoice is created, the following invoice voucher is posted.
 
-| Main account | Unbilled revenue account | Debit amount | Credit amount |
-|---|---|---|---|
-| Unbilled revenue offset | | $100.00 | |
-| | Unbilled revenue account | | $100.00 |
-| Accounts receivable | | $100.00 | |
-| | Revenue account | | $100.00 |
+| Account| Debit amount | Credit amount |
+|---|---|---|
+| Unbilled revenue account | | $130.00 |
+| Accounts receivable | $130.00 | |
 
-| Main account | Unbilled revenue account | Debit amount | Credit amount |
-|---|---|---|---|
-| Deferred maintenance revenue account | | $30.00 | |
-| | Unbilled revenue account | | $30.00 |
-| Accounts receivable | | $30.00 | |
-| | Deferred maintenance revenue account | | $30.00 |
+This same journal entry will be created by invoices that are posted at the beginning of the next two years. The Unbilled revenue account is reduced each year during the **Generate invoice** process. The Unbilled revenue offset account is used to balance the unbilled revenue account when different exchange rates are used. 
 
-This same journal entry will be created by invoices that are posted at the beginning of the next two years. The net amount of the deferred revenue account will be 0 (zero), because there are no rounding or exchange rate differences. The deferred revenue must be reversed out exactly as it was credited during the **Create journal entry** process. Because revenue is still deferred and will be recognized later, the credit to the deferred revenue account occurs again.
+In the last step, the recognition journal entry is created each month to recognize the deferred revenue from the maintenance fee. The journal entry can be created by using the **Recognition processing** page. Alternatively, it can be created by selecting **Recognize** for the lines on the **Deferral schedule** pages.
 
-In the last step, the recognition journal entry is created each month to recognize the deferred maintenance fee revenue. The journal entry can be created by using the **Recognition processing** page. Alternatively, it can be created by selecting **Recognize** for the lines on the **Deferral schedule** pages.
-
-| Deferred revenue account | Revenue account | Debit amount | Credit amount |
-|---|---|---|---|
-| Deferred Maintenance Revenue | | $2.50 | |
-| | Maintenance Revenue | | $2.50 |
+| Main account | Debit amount | Credit amount |
+|---|---|---|
+| Deferred revenue | $2.50 | |
+| Revenue | | $2.50 |
 
 This journal entry will be created each time that the recognition process is run for this deferred item (a total of 36 times).
 
@@ -277,18 +266,18 @@ Because both items use unbilled revenue and revenue allocation, the total contra
 
 The following table shows the initial journal entry for the items and the invoice.
 
-| Unbilled revenue account | Deferred revenue account | Debit amount | Credit amount |
-|---|---|---|---|
+| Main account | Debit amount | Credit amount |
+|---|---|---|
 | **Item 1000 journal entry** | | | |
-| Debit unbilled revenue account (401250) | | $1,465.26 | |
-| | Credit deferred revenue account (250600) | | $1,465.26 |
+| Unbilled revenue account (401250) | $1,465.26 | |
+| Deferred revenue account (250600) | | $1,465.26 |
 | **Item 0021 Journal entry** | | | |
-| Debit unbilled revenue account (401250) | | $274.74 | |
-| | Credit deferred revenue account (250600) | | $274.74 |
-| **Invoice** | | | |
-| | Credit unbilled revenue account | | $1,465.26 |
-| | Credit unbilled revenue account | | $274.74 |
-| Debit AR account (130100) | | $1,488.16 | |
+| Unbilled revenue account (401250) | $274.74 | |
+| Deferred revenue account (250600) | | $274.74 |
+| **Invoice** | | |
+| Unbilled revenue account | | $1,465.26 |
+| Unbilled revenue account | | $274.74 |
+| AR account (130100) | $1,488.16 | |
 
 #### Changes to the billing schedule line, billing detail line, or revenue allocation
 
