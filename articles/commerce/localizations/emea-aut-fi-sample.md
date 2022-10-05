@@ -2,7 +2,7 @@
 title: Fiscal registration service integration sample for Austria
 description: This article provides an overview of the fiscal integration sample for Austria in Microsoft Dynamics 365 Commerce.
 author: EvgenyPopovMBS
-ms.date: 08/17/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -61,7 +61,7 @@ The following scenarios are covered by the fiscal registration service integrati
 - Error handling, such as the following options:
 
     - Retry fiscal registration if a retry is possible, such as if the fiscal registration service isn't available, isn't ready, or isn't responding.
-    - Postpone fiscal registration.
+    - Defer fiscal registration.
     - Skip fiscal registration, or mark the transaction as registered, and include info codes to capture the reason for the failure and additional information.
     - Check the availability of the fiscal registration service before a new sales transaction is opened or a sales transaction is finalized.
 
@@ -216,7 +216,7 @@ Complete the fiscal integration setup steps as described in [Set up the fiscal i
 
 1. [Set up a fiscal registration process](setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Also, make a note of the settings for the fiscal registration process that are [specific to this fiscal registration service integration sample](#set-up-the-registration-process).
 1. [Set error handling settings](setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Enable manual execution of postponed fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Enable manual execution of deferred fiscal registration](setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Configure channel components](#configure-channel-components).
 
 ### Set up the registration process
