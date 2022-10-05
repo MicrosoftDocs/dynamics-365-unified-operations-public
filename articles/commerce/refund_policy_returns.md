@@ -31,12 +31,11 @@ The scope of the policy is currently limited to setting the payment tenders that
 
 ## Enable return policy
 
-To enable the channel return policy functionality in Commerce headquarters, follow these steps.
+This feature is turned on by default and can be found in the Feature Mangement Workspace under the following:
 
 1. Go to the **Feature Management** workspace in Dynamics 365 Commerce.
 1. Search for the **Enable channel return policies** feature in the list of feature names.
-1. Select **Enable now**.
-1. On the **Distribution schedule** page, run the **1110** (Global configuration) job to distribute the feature change.
+
 
 ## Configure return policy
 
