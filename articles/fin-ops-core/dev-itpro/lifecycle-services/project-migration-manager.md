@@ -50,7 +50,7 @@ The following data is transferreable between instances, using the actions below.
 Data that is manual migration must be done by the customer.  You are not required to migrate any or all of this data, and you may elect to migrate your most recent assets from the asset library, or re-create developer cloud-hosted environments for example in the target project.
 
 ## Start your project migration
-To start your project migration, use the navigation menu and select **Project migration manager**.
+To start your project migration, use the navigation menu and select **Project migration manager**.  *Note, you must be a Project owner to perform a migration.*
 
 1. Use the **Add** button to start a new migration request.
 2. In the Schedule Migration slider, choose a **target geo** that meets your specifications.
