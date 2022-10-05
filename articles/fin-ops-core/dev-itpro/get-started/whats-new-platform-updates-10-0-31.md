@@ -30,9 +30,10 @@ The following table lists the features that are included in this release.
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-|  Data management | <p>**Allow Row version change tracking for tables and Data entities.**</p>  | [Allow Row version change tracking for tables and Data entities](/fin-ops-core/dev-itpro/data-entities/rowversion-change-track.md] | Default  |
-|  Power platform | <p>**Track changes for Finance and operations virtual tables in Dataverse (Preview).**</p>  | [Track changes for Finance and operations virtual tables in Dataverse](/fin-ops-core/dev-itpro/power-platform/track-changes-fin-ops-virtual-table.md | Power platform preview  |
-|   |   |   |   |
+|  Data management | <p>**Allow Row version change tracking for tables and Data entities.**</p>  | [Allow Row version change tracking for tables and Data entities](./dev-itpro/data-entities/rowversion-change-track.md] | Default  |
+|  Power platform | <p>**Track changes for Finance and operations virtual tables in Dataverse (Preview).**</p>  | [Track changes for Finance and operations virtual tables in Dataverse](./dev-itpro/power-platform/track-changes-fin-ops-virtual-table.md | [Power platform preview](https://learn.microsoft.com/en-us/power-platform/admin/what-are-preview-features-how-do-i-enable-them)  |
+|  System administration | <p>**New SecurityRole metadata property.**</p>  | The new SecurityRole metadata property, **Can Be Deleted From UI**, has been added to protect system roles from being deleted using the Finance and Operations apps. Default value is **Yes**. If set to **No**, a delete action will result in an error message being displayed: "'NN' is a system role that can not be removed.". [![Can Be Deleted From UI.](./devitpro/media/CanBeDeletedFromUI.jpg)](./dev-itpro/media/CanBeDeletedFromUI.jpg) |  Default |  
+|  System administration | <p>**New Table metadata property for database logging.**</p>  | A new table metadata property, **DisableDatabaseLog**, makes it possible to exclude applicable tables from being added to the database log. Default value is **No**. If set to **Yes**, it will not be possible to add the table during database log setup. ". [![Disable Database Logging.](./dev-itpro/media/DisableDatabaseLogging.jpg)](./dev-itpro/media/DisableDatabaseLogging.jpg) | Default | 
 
 ### Bug fixes
 
