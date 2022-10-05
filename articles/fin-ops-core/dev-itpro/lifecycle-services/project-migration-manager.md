@@ -31,12 +31,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-The Lifecycle Services (LCS) project migration manager utility allows customers to move their project data from one geography to another that LCS supports.  In this article, we will describe the terminology, the supported scenarios, and also cover some frequently asked questions around this functionality.
+The Lifecycle Services (LCS) project migration manager utility allows customers to move their project data from one geography to another geography that LCS supports.  In this article, we will describe the terminology, the supported scenarios, and also cover some frequently asked questions around this functionality.
 
 ## Why move geographies?
-First and foremost, is understanding why you might want to move your LCS project from one "geo" or geography to another.  Originally, LCS only supported a single instance - https://lcs.dynamics.com/ - which was the global endpoint for all customers.  With the recent regulatory requirement trend across the industry for customers and software vendors to keep data within a geographic boundary, LCS has started to deploy geographic-specific instances of LCS so that customers can have all of their data in a desired location.
+First and foremost is understanding why you might want to move your LCS project from one "geo" or geography to another.  Originally, LCS only supported a single instance - https://lcs.dynamics.com/ - which was the global endpoint for all customers.  With the recent regulatory requirement trend across the industry for customers and software vendors to keep data within a geographic boundary, LCS has started to deploy geographic-specific instances of LCS so that customers can have all of their project data in a desired location.
 
-With this capability, you can now move your project from one geographic location to another.  There are some limitations in terms of all of the data that is automatically transferred which we will cover below.  
+With this capability, you can now move your project from one geographic location to another that meets your requirements.  There are some limitations in terms of all of the data that is automatically transferred which we will cover below.  
 
 ## What data is transferrable and how?
 The following data is transferreable between instances, using the actions below.
