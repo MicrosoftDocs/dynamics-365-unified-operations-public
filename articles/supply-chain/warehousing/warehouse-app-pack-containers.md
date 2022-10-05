@@ -1,16 +1,14 @@
 ---
 title: Pack containers using the Warehouse Management mobile app
-description: This article describes how to configure and use Pack containers using the Warehouse Management mobile app.
+description: This article describes how to configure and use the ability to pack containers using the Warehouse Management mobile app.
 author: perlynne
-ms.date: 09/01/2022
-ms.topic: article
-ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields, WHSRFMenuItem, WHSPackProfile, WHSWorker, WHSPack
-audience: Application User
-ms.reviewer: kamaybac
-ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2022-09-01
-ms.dyn365.ops.version: 10.0.31
+ms.reviewer: kamaybac
+ms.search.form: WHSMobileAppFlowStepListPage, WHSMobileAppFlowStepAddDetour,WHSMobileAppFlowStepDetourSelectFields, WHSRFMenuItem, WHSPackProfile, WHSWorker, WHSPack
+ms.service: dynamics-365
+ms.topic: how-to
+ms.date: 10/14/2022
+ms.custom: bap-template
 ---
 
 # Pack containers using the Warehouse Management mobile app
@@ -20,6 +18,7 @@ ms.dyn365.ops.version: 10.0.31
 ## Feature introduction
 
 Businesses that ship large items or have large packing areas will benefit from this mobile packing experience. The Dynamics 365 Warehouse Management mobile app provides warehouse workers with the freedom to move around while performing their packing activities.
+
 Traditionally, warehouse workers have performed packing activities at a specific packing station configured in Dynamics 365 Supply Chain Management, using a process optimized for shipments of small to medium sized parcels. To improve efficiency when working in larger packing areas, and to better support the packing and shipment of larger items, the Dynamics 365 Warehouse Management mobile app provides a mobile packing experience that gives workers the freedom to move around while performing packing activities.
 This section will describe how to use the shipment container packing process on the Warehouse Management mobile app which can be used in combination with the rich client **Pack** page process. You can read more about how to enable the general warehouse management packing process [here]( packing-containers.md).
 
@@ -29,43 +28,31 @@ Before you can use the functionality that is described in this article, you must
 
 1. Go to **System administration \> Workspaces \> Feature management**. (For more information about how to use the **Feature management** workspace, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)
 
-1. If not already on, turn on the feature that is listed in the following way:
-    - **Module:** *Warehouse management*
-    - **Feature name:** *Multi-level detours for the Warehouse Management mobile app*
-   See [Multi-level detours for the Warehouse Management mobile app](warehouse-app-detours.md).
+1. If not already on, turn on each of the following features in the following order (all are listed as part of the *Warehouse management* module):
+    1. *Multi-level detours for the Warehouse Management mobile app*<br>See also [Multi-level detours for the Warehouse Management mobile app](warehouse-app-detours.md).
+    1. *Auto-submit detour steps for the Warehouse Management mobile app*<br>See also [Auto-submit detour steps for the Warehouse Management mobile app](warehouse-app-detours.md).
+    1. *Warehouse management app data inquiry flow*<br>See [Query data using Warehouse Management mobile app detours](warehouse-app-data-inquiry.md).
+    1. *Pack containers using the Warehouse Management mobile app*<br>This is teh feature described in this article.
 
-1. If not already on, turn on the feature that is listed in the following way:
-    - **Module:** *Warehouse management*
-    - **Feature name:** *Auto-submit detour steps for the Warehouse Management mobile app*
-    See [Auto-submit detour steps for the Warehouse Management mobile app](warehouse-app-detours.md).
+1. Update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
 
-1. If not already on, turn on the feature that is listed in the following way:
-    - **Module:** *Warehouse management*
-    - **Feature name:** *Warehouse management app data inquiry flow*
-   See [Query data using Warehouse Management mobile app detours](warehouse-app-data-inquiry.md).
-
-1. If not already on, turn on the feature that is listed in the following way:
-    - **Module:** *Warehouse management*
-    - **Feature name:** *Pack containers using the Warehouse Management mobile app*
-      This feature is the one that is described in this article.
-
-1. Make sure to update the field names in the Warehouse Management mobile app by going to **Warehouse management \> Setup \> Mobile device \> Warehouse app field names** and selecting **Create default setup**. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app. For more information, see [Configure fields for the Warehouse Management mobile app](configure-app-field-names-priorities-warehouse.md).
-
-1. Make sure to run **Create default setup** for the [*Mobile device steps*](warehouse-app-detours.md) in the **Warehouse management \> Setup \> Mobile device \> Mobile device steps**. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app.
+1. Run **Create default setup** for the [mobile device steps](warehouse-app-detours.md) in the **Warehouse management \> Setup \> Mobile device \> Mobile device steps**. Repeat this step for each legal entity (company) where you use the Warehouse Management mobile app.
  
 > [!NOTE]
-> To be able to see new icons and have all the user experience enhancements related to the Warehouse Management mobile app packing process, please make to to use the Warehouse Management mobile app version 2.0.31.0 or newer.
+> To see the newest icons and user experience enhancements related to the mobile app packing process, you must use the Warehouse Management mobile app version 2.0.31.0 or newer.
 
-## Warehouse Management mobile app packing process
+## The Warehouse Management mobile app packing process
 As soon as the shipment inventory items have been brought forward to the packing area you can start processing the **Pack inventory into containers** on the Warehouse Management mobile app.
-![Warehouse app packing flow](media/wma-packing-flow.png "Warehouse app packing flow")
+
+![Warehouse app packing flow.](media/wma-packing-flow.png "Warehouse app packing flow")
 
 To leverage all the supported packing processes on the Warehouse Management mobile app you must enable three mobile device menu items:
+
 -	**Pack inventory into containers** - Used for the main process to pack items into containers
 -	**Container creation** - Used to create containers going to be used to pack shipment items into
 -	**Container closing** -  Used to close the shipment containers
 
-It is recommended to use the [Detour]( warehouse-app-detours.md) functionality to ease the Warehouse Management mobile app operations by having the **Container creation** and **Container closing** embedded into the **Pack inventory into containers** menu item by using the [Detour](warehouse-app-detours.md) option. It is as well recommended to add several look up options as part of the Warehouse Management mobile app to easy and fasten the packing operation by using the [Data inquiry](warehouse-app-data-inquiry.md) in combination with the [Detour]( warehouse-app-detours.md) functionalities. This is especially effective in cases of having unreadable or missing barcodes.
+We recommend that you use the [detour]( warehouse-app-detours.md) functionality to ease the Warehouse Management mobile app operations by having the **Container creation** and **Container closing** embedded into the **Pack inventory into containers** menu item by using the [Detour](warehouse-app-detours.md) option. It is as well recommended to add several look up options as part of the Warehouse Management mobile app to easy and fasten the packing operation by using the [Data inquiry](warehouse-app-data-inquiry.md) in combination with the [Detour]( warehouse-app-detours.md) functionalities. This is especially effective in cases of having unreadable or missing barcodes.
 
 ### Pack inventory into containers
 During the **Pack inventory into containers** process the workers must identify and confirm the following information:
