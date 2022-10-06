@@ -69,7 +69,7 @@ Because customers will regularly receive smaller payloads, we expect the process
 At this time, quality updates are only targeting sandboxes. We will update this space with a start date for production environments when we have more concrete data and metrics from proactive updates for sandboxes to gauge readiness for prod.
 
 ## What is the schedule for sandbox quality updates?
-For information on the dark hours for each region, see [What is the schedule for proactive quality updates?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates).
+For quality updates schedule and information on the dark hours for each region, see [What is the schedule for proactive quality updates?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates).
 
 ## How are the dark hours handled for customers that have one finance and operations apps instance but are active in multiple time zones? 
 There are no special schedules outside of the dark hours where a finance and operations apps instance exists, as we plan to roll out quality updates in a minimally disruptive manner with [nZDT](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean).
@@ -81,7 +81,13 @@ Microsoft strives to keep the release pipeline efficient enough to deliver small
 No. The main objective of quality updates is to ensure fundamentals like security, privacy, reliability, availability, and performance are continuously improving for our customers. By delaying or pausing an update, security, availability, and reliability will be at risk.
 
 ## How can one know the set of changes that went into a quality update payload?
-You will be able to look at all the KB articles in a quality update build on the **Environment details** page in LCS, by navigating to the **Quality Update** section. 
+This is a temporary solution as we continue to work on providing a better solution to identify the list of changes that go into a quality update payload. 
+- Step 1 : The latest KB for the 10.0.28 Quality Update train is KB# = 745340 and App version = 10.0.1265.89
+- Step 2: Navigate to the environment details page; in the **Available Updates** section, click **View Update** for the latest Quality Update build. Export into a CSV or excel file
+- Step 3: In the resultant file from step 2, you can sort based on time (oldest first) and search for the above KB number under **Update Id** column. You should now be able to see the delta list of KBs.
+- **Please note**: The Export to Excel, or CSV needs to happen before the environment is updated or you can take an environment with similar configuration where the update is not installed and follow the instructions above
+
+[![Example of environment with quality update.](./media/how-to-get-kb-list-pqu.png)](./media/how-to-get-kb-list-pqu.png)
 
 ## What is the process if a critical issue is found after a quality update?
 A critical issue or regression is one or more events that typically cause multiple customers to have a degraded experience with one or more of our services. These issues can cause unplanned downtime including unavailability, performance degradation, and interference with service management. If there is a broad customer impact due to such regressions, we will stop the rollout of a quality update until we can communicate and fix the issue. Typically, the next quality update will have the necessary fix to resume rollout.
@@ -91,7 +97,7 @@ If a single customer environment is affected, contact Microsoft support to open 
 ## Can customers still manually apply hotfix updates from LCS?
 Yes. To ensure ongoing parity with how hotfixes work, hotfix updates can still be applied to customer environments in LCS. However, it's important to note that hotfixes that are deployed as part of a quality update go through the standard SDP before the update is deployed. This reduces the risk of regressions due to higher quality. We recommend that you choose a quality update over manually applying hotfixes for increased reliability.
 
-## Can customers self-install a quality update build by themselves ahead of the schedule?
+## Can customers self-install a quality update build ahead of the schedule?
 Yes. You can install a quality update proactively. Microsoft will skip the update if the environment’s current build version is equal or higher than the quality update in question.
 
 ## If an environment has an upcoming scheduled monthly service update within a week, will it still receive quality updates?
@@ -101,21 +107,24 @@ Yes. You can install a quality update proactively. Microsoft will skip the updat
 - If a sandbox has the same or higher build version because of a quality update or a manual update to the production, the production will still get the scheduled version of the monthly service update. If you don't want the scheduled production environment to be updated to the service update version, you can pause the service update from LCS. 
 - We recommend you utilize the latest quality update build to test your changes for an upcoming service update for better stability and results.
 
+## If an environment has an upcoming scheduled action and a scheduled quality update in the same maintenance window, will it still receive the quality update?
+- If there is any contention with a pre-scheduled action, for example - Point In Time Restore (PITR), a quality update will be rescheduled to the next available maintenance window within the 3 day-window. For more details on the schedule please visit [What is the schedule for proactive quality updates?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates)
+
 ## Can an environment be brought back to its previous state if there are issues after a quality update is applied?
 After a quality update is applied, there is no rollback under any circumstances. There are only patch forward options available to mitigate issues.
 
 ## What about FDA regulation and GPX?
-The plan for customers subject to FDA validation and regulation is still evolving. Expect more updates in this space soon. For now, all such customers are exempt from quality updates.
+The plan for customers subject to FDA validation and regulation is still evolving. Expect more updates in this space soon. For now, all such customers are exempt from quality updates. To ensure a customer falls under FDA regulations, please visit [Microsoft Azure GPX Offering](https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-gxp).
 
 ## What versions of service updates are supported for these quality updates?
-Customers on versions lower than N-2 will not receive quality updates. 
+Customers on all supported version of service updates qualify for quality updates. 
 
 ## Finance and operations apps deployments with retail components typically require additional work in addition to having to redeploy MPOS. How will these quality updates impact the RetailSDK? 
 As the nature of the hotfixes itself doesn’t change in the quality updates payload, we don’t anticipate any additional impact at this time specifically related to retail components.
 
-## Is there any impact to Cloud Hosted Environments (CHE)? ? 
-No.
+## Is there any impact to Cloud Hosted Environments (CHE)? 
+CHE environments are out of scope for quality updates since they fall outside the purview of microsoft as we dont maintain them.
 
 ## Are there any integration issues with Microsoft Dataverse? 
-No.
+There are no known integration issues for quality updates with dataverse.
 
