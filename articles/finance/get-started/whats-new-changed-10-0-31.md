@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.30
 
 ---
 
-# What's new or changed in Dynamics 365 Finance 10.0.3 (January 2023)
+# What's new or changed in Dynamics 365 Finance 10.0.31 (January 2023)
 
 [!include [banner](../includes/banner.md)]
 
