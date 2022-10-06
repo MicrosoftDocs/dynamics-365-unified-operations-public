@@ -47,7 +47,6 @@ If the above prerequisites are met, then the final step is to enable change trac
 > [!IMPORTANT]
 > - This is a preview feature.
 > - [!INCLUDE [cc-preview-features-definition](../../../includes/cc-preview-features-definition.md)]
-> - This preview feature is available from release 10.0.31 where the Microsoft Power Platform integration has been enabled with Dataverse database, see [Enable the Microsoft Power Platform integration](../dev-itpro/power-platform/enable-power-platform-integration). 
-To enable see [What are Preview features, and how do I enable them?](/power-platform/edit/main/power-platform/admin/what-are-preview-features-how-do-i-enable-them.md).
+> - This preview feature is available from release 10.0.31 where the Microsoft Power Platform integration has been enabled with Dataverse database, see [Enable the Microsoft Power Platform integration](../dev-itpro/power-platform/enable-power-platform-integration). To enable see [What are Preview features, and how do I enable them?](/power-platform/edit/main/power-platform/admin/what-are-preview-features-how-do-i-enable-them.md).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
