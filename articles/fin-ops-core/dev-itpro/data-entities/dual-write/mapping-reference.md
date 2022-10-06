@@ -2,21 +2,19 @@
 title: Dual-write mapping reference
 description: This article lists the column mappings for each dual-write mapping.
 author: josaw
-ms.date: 12/22/2020
+ms.date: 10/06/2022
 ms.topic: reference
 audience: Developer
 ms.reviewer: sericks
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2020-12-22
-ms.dyn365.ops.version: AX 7.0.0
+
 ---
 
 # Dual-write mapping reference
 
 [!include [banner](../../includes/banner.md)]
-
-
 
 [!include [banner](includes/dual-write-symbols.md)]
 
@@ -31,7 +29,7 @@ ms.dyn365.ops.version: AX 7.0.0
 |**Finance and operations field** | **Map type** | **Customer engagement column** | **Default value** |
 |------------------------------------|-------------|----------------------------------|-----------------|
 |SHIPPINGADDRESSNAME | > | msdyn_shippingaddressname |
-|FORMATTEDSHIPPINGADDRESS > | msdyn_formattedshippingaddress |
+|FORMATTEDSHIPPINGADDRESS | > | msdyn_formattedshippingaddress |
 |SHIPPINGADDRESSCITY | > | msdyn_shippingaddresscity |
 |SHIPPINGADDRESSCOUNTRYREGIONID | > | msdyn_shippingaddresscountryregionid |
 |SHIPPINGADDRESSCOUNTYID | > | msdyn_shippingaddresscountyid |
