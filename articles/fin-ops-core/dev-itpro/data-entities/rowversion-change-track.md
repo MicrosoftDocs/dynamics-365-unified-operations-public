@@ -70,11 +70,11 @@ The **SysRowVersionNumber** column of the primary table is added to the data ent
 
 Data entity row deletions are change tracked using the **AifChangeTrackingDeletedObject** table.
 
-There is a system batch job **Delete tracking history clean-up** that cleans up records in the **AifChangeTrackingDeletedObject** table that has exceeded the retention period. Records is deleted in batches until the timeout criteria is reached. By default the job runs every day at 1 AM. The recurrence and frequency of the job is configurable in **System Administration>Batch Jobs**. The retention period, delete batch size and timeout is configurable using **SysGlobalConfiguration settings**.
+There is a system batch job **Delete tracking history clean-up** that cleans up records in the **AifChangeTrackingDeletedObject** table that has exceeded the retention period. Records is deleted in batches until the timeout criteria is reached. By default the job runs every day at 1 AM. The recurrence and frequency of the job is configurable in **System Administration>Batch Jobs**. The retention period is currently 10 days.
 
 ## Retrieve row version entity changes
 
-This new Finance and Operations change tracking feature in fully compatible with the Dataverse change tracking, see [Use change tracking to synchronize data with external systems](../power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) There are some differences:
+This new finance and operations change tracking feature in fully compatible with the Dataverse change tracking, see [Use change tracking to synchronize data with external systems](../power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems) There are some differences:
 
 - Changes for finance and operations will be returned if the last token is within a default value of 10 days instead of 90 days for Dataverse tables. 
  
