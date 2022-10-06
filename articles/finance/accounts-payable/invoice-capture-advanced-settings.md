@@ -2,7 +2,7 @@
 # required metadata
 
 title: Invoice capture solution advanced settings
-description: This article provides information about the advanced settings in the Invoice capture solution. 
+description: This article provides information about advanced settings in the Invoice capture solution.
 author: sunfzam
 ms.date: 09/25/2022
 ms.topic: overview
@@ -32,39 +32,35 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This article provides information about advanced settings in the Invoice capture solution. 
+This article provides information about advanced settings in the Invoice capture solution.
 
-## Create additional connections for channels  
+## Create additional connections for channels
 
-The connections to email or file storage need to be created for monitoring incoming invoices from different channels. It is necessary to register connections at the 
-beginning to grant access for automated flows used in the solution.  
+You must create connections to email or file storage to enable monitoring of incoming invoices from different channels. You must register connections at the beginning to grant access for automated flows that are used in the solution.
 
-To import invoices, the following connection types are used:  
- - Office 365 Outlook 
- - Outlook.com
- - OneDrive
- - SharePoint 
+The following connection types are used to import invoices:
 
-The **Channel for invoice importing** will utilize the connections in further configuration steps. Before creating a channel of a specific connection, the user needs to
-be granted the security role of admin and create connections below.  
+- Office 365 Outlook
+- Outlook.com
+- OneDrive
+- SharePoint
 
-1. To create a connection to Microsoft Dataverse, go to **Admin system > Default solution**, click **New** and select **Connection Reference**. 
-2. Enter information in the **Display name** field 
-3. Select **Microsoft Dataverse** as the connector. The first time setting up the connection, click **New connection**. 
-4. The new popup page will let the user create a Microsoft Dataverse connection, click **Create**.
-5. Enter the Dataverse account and password. 
-6. After validation, go to the connection page, click **Refresh**, select the account, then **Create**. 
+The **Channel for invoice importing** will use the connections in further configuration steps. Before users can create a channel of a specific connection, the **Administrator** security role must be granted to them, and they must create connections.
 
+To create a connection to Microsoft Dataverse, follow these steps.
 
-To create an email/file storage connection, follow these steps:
-1. Go to the **Connection creation** page, select the **Connection type** as “Office 365 Outlook” instead.
-2. The email connection can be **Outlook.com** or **Office 365 Outlook** as the connector. 
-3. The file storage connections contain either **OneDrive** or **SharePoint**. 
+1. Go to **Admin system \> Default solution**.
+2. Select **New**, and then select **Connection Reference**.
+3. In the **Display name** field, enter a name.
+4. Select **Microsoft Dataverse** as the connector.
+5. If you're setting up the connection for the first time, select **New connection**.
+6. In the dialog box that appears, create a Dataverse connection, and then select **Create**.
+7. Enter the Dataverse account and password.
+8. After validation is passed, go to the connection page, select **Refresh**, select the account, and then select **Create**.
 
-Existing connections can be checked in **Default solution > Objects > Connection References**. The user that creates channels should have at least one Microsoft 
-Dataverse connection and the specific email/file connections. The owner of the connection should be the same as the creator of the new channel. 
+To create an email or file storage connection, follow these steps.
 
+1. On the **Connection creation** page, in the **Connection type** field, select **Office 365 Outlook**.
+2. For an email connection, you can select **Outlook.com** or **Office 365 Outlook** as the connector. For a file storage connection, you can select either **OneDrive** or **SharePoint**.
 
-
-
-
+To review existing connections, go to **Default solution \> Objects \> Connection References**. The user who creates channels should have at least one Dataverse connection in addition to specific email or file storage connections. The creator of the new channel should be the owner of the connection.
