@@ -30,7 +30,7 @@ Several related outbound warehouse capabilities can be used with containers. For
 - [Set different dimensions for packing and storage](packing-vs-storage-dimensions.md)
 - [Packing work for packing outbound containers and processing shipments](packing-work.md)
 - [Pack containers using the Warehouse management mobile app](warehouse-app-pack-containers.md)
-- [Container label printing](configure-container-label-printing.md)
+- [Print container labels](print-continer-labels.md)
 
 ## Set up your warehouse to use manual packing operations
 

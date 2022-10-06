@@ -55,7 +55,7 @@ As part of the label printing process, the text `$LicensePlateId$` in this examp
 To see the values that will be printed, go to **Warehouse management \> Inquiries and reports \> License plate labels**.
 
 ## Label layout formats
-The following information applies for all the **Document routing label layouts**, incl. [container labels](configure-container-label-printing.md) and [wave labels](configure-wave-label-printing.md).
+The following information applies for all the **Document routing label layouts**, incl. [container labels](print-container-labels.md) and [wave labels](configure-wave-label-printing.md).
 
 Several widely available label generation tools can help you format the text for the label layout. Many of these tools support the `$FieldName$` format. In addition, Microsoft Dynamics 365 Supply Chain Management uses special formatting logic as part of the field mapping for the document routing layout.
 
@@ -147,7 +147,7 @@ $DisplayListOfItemsNumbers()[1]$
 
 For more information about how to set up and print labels, see:
    - [License plate label printing](tasks/license-plate-label-printing.md)
-   - [container label printing](configure-container-label-printing.md)
+   - [Print container labels](print-continer-labels.md)
    - [Wave label printing](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

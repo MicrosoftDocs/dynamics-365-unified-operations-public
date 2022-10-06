@@ -5,7 +5,6 @@ author: perlynne
 ms.author: perlynne
 ms.reviewer: kamaybac
 ms.search.form: WHSContainerLabelRouting, WHSLabelLayout, WHSLabelLayoutDataSource, SysCorpNetPrinterList, WHSDocumentRouting, WHSPackProfile, WHSContainerTable, WHSRFMenuItem
-ms.service: dynamics-365
 ms.topic: how-to
 ms.date: 10/14/2022
 ms.custom: bap-template
@@ -14,10 +13,9 @@ ms.custom: bap-template
 # Print container labels
 
 [!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-<!-- KFM: What is the status of this feature? New for 10.0.31? Or has it been out for a while, but not documented? -->
-
-Container labels provide information about a container and the related shipment data. A typical scenario that could include this type of label is when you're [creating and packing containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md), where you could print a container label with a barcode of the container ID and apply it to the physical container.
+Container labels provide information about a container and the related shipment data. A typical scenario that could include this type of label is when a worker is [creating and packing containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md), where the worker could print a container label with a barcode of the container ID and apply it to the physical container.
 
 As with [*license plate labels*](document-routing-layout-for-license-plates.md), *container labels* use the Zebra Programming Language (ZPL) to create label layouts.
 
@@ -56,8 +54,6 @@ Follow these steps to create a container label layout:
     - **Enable label template support** – Leave set to *No* for now (when set you *Yes*, you'll be able to add header, row, and footer elements to your layout, as described later in this article).
     - **Date, time, and number format** – Leave blank (used to set formats of the *date*, *time*, and *number* values shown in a label layout, as described later in this article).
 1. Expand the **Printer text Layout** FastTab and copy the following ZPL container label example and paste the text into the large field there:
-
-    <!--KFM: I removed the text "ZPL container label example" from the following example (it was in the space reserved for identifying the code language). Should this text be in the body? -->
 
     ``` plaintext
     CT~~CD,~CC^~CT~
@@ -102,8 +98,6 @@ Follow these steps to create a container label layout:
 When making more advanced label layouts, you can benefit from using some of the widely available label generation tools described in [Document routing label layout](document-routing-layout-for-license-plates.md).
 
 To format a label using header, row, and footer elements, go to the **Label layout** page, select or create a layout, and set **Enable label template support** to *Yes* for your new or selected layout. Then use the elements `{{Header ... }}`, `{{Row ... }}`, and `{{Footer ... }}` in your code. The following code shows an example of a label that includes each of these elements. It prints data about items packed in a container.
-
-<!--KFM: I removed the text "Header, row, and footer" from the following example (it was in the space reserved for identifying the code language). Should this text be in the body? -->
 
 ``` plaintext
 {{Header
@@ -156,7 +150,7 @@ CT~~CD,~CC^~CT~
 > [!NOTE]
 > This setup will loop over container lines and split out a label for each set of 10 container lines (because of the `RowsPerLabel=10` attribute). If you changed this to `RowsPerLabel=1`, you would generate a label for each line.
 >  
-> This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the container), set the `n` value for the `\^PQn` section in the footer to the required number of copies. For example, to print two copies of each label, specify `\^PQ2`. <!--KFM: This code appears not to have a `\^PQn` section. Shouldn't we show an example? -->
+> This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the container), set the `n` value for the `\^PQn` section in the footer to the required number of copies. For example, to print two copies of each label, specify `\^PQ2`. <!--KFM: @per Let's add a `\^PQn` section in the sample code so we can see where it goes. -->
 
 #### Specify the date, time, and number format
 
@@ -168,10 +162,10 @@ To define which container label layouts to use and where to print them, you must
 
 1. Go to **Warehouse management \> Setup \> Document routing \> Container label routing**.
 1. Select **New** on the Action Pane to create a new routing record.
-1. Make the following settings in the header of you new routing record: 
+1. Make the following settings in the header of you new routing record:
     - **Sequence number** – Enter an integer to establish the order in which this routing record should be evaluated. Each routing must have a unique sequence number. The system evaluates routings in ascending order according to their sequence number and will use the first one whose criteria are met. If you're using demo data, enter  *1*.
     - **Name** –  Enter a name for the routing record, for example *Container packing*.
-1. Expand the **Overview** FastTab and use the settings here to establish the criteria by which the current label routing should be selected. The following fields are available: <!-- KFM: I added this description and described the remaining fields. Please confirm these. -->
+1. Expand the **Overview** FastTab and use the settings here to establish the criteria by which the current label routing should be selected. The following fields are available:
     - **Warehouse** – Specify the warehouse where this routing should be used. If you're using demo data, enter *62*.
     - **Location** – Specify the location where this routing should be used. If you're using demo data, assume the target printer is physically placed at the packing location, so select *Pack*.
     - **Worker** – Specify the worker for whom this routing should be used. Leave this blank to use this routing for any worker.
@@ -182,7 +176,7 @@ To define which container label layouts to use and where to print them, you must
     - **Run query** – To add custom selection criteria to a routing record, set **Run query** to *Yes* and then select **Edit query** on the Action Pane. This opens a standard query editor dialog where you can add more selection criteria.
 
     > [!NOTE]
-    > When printing a container label from the Warehouse Management mobile app, the current user's warehouse, location, worker ID, and user ID are passed as possible filter values for selecting the printer and layout. <!-- KFM: What about the other values? -->
+    > When printing a container label from the Warehouse Management mobile app, the current user's warehouse, location, worker ID, and user ID are passed as possible filter values for selecting the printer and layout. Other values will be found based on the selected shipment.
 
 1. Expand the **Container label routing printer** FastTab. Use the settings here to assign the printer and label layout to use when the criteria for this routing record are met. Select **New** on the toolbar to add a new line to the grid. Make the following settings for the new line.
     - **Name** – Select an appropriate ZPL printer. See also [Install the Document Routing Agent to enable network printing](../../fin-ops-core/dev-itpro/analytics/install-document-routing-agent.md).
@@ -225,18 +219,14 @@ Now that you've created the mobile device menu item you're ready to add it to th
 1. Select the **Add** button (right-arrow) to move this menu item into the **Menu structure** column.
 1. Close the page
 
-### Run a scenario to print a container label
+### Run a scenario to print container labels
 
-To try out this scenario, follow the instructions given in [Pack containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md) and confirm that the scenario describe in this article is also supported.
+For an example of how to print bar codes manually, follow the instructions given in [Pack containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md) and confirm that the scenario describe in this article is also supported.
 
-### Automate additional steps when printing labels
-
-<!--KFM: I created this section to hold this extra info. Please confirm this new structure. -->
-
-Here are a few suggestions for how to customize and fine-tune this functionality to reduce the number of steps workers must perform when printing container labels.
+Here are a few suggestions for how to customize and fine-tune this scenario to reduce the number of steps workers must perform when printing container labels.
 
 - You can [query data using Warehouse Management mobile app detours](warehouse-app-data-inquiry.md) to look up a container ID instead of asking the worker to enter it manually.
-- When a worker selects the **Print container label** mobile device menu item from the **Outbound** menu, the application automatically submits the current **User ID** and the **Warehouse** values. If you'd like to record a **Location**, you can edit the details. <!--KFM: It's not clear which details you are referring to here. -->
+- When a worker selects the **Print container label** mobile device menu item from the **Outbound** menu, the application automatically submits the current **User ID** and the **Warehouse** values. If the worker wants to specify a **Location**, they can choose to do so within the app.
 - If you'd like the **Location** value to be assigned automatically when a worker selects **Print container label** from the **Pack inventory into containers** menu item, then you could set up a [detour]( warehouse-app-detours.md).
 
 ## Additional resources

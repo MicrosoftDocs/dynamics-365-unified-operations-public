@@ -3397,8 +3397,14 @@
             href: warehousing/pack-materials-packing-material-fees.md
           - name: Pack containers for shipment
             href: warehousing/packing-containers.md
+          - name: Print container labels
+            href: warehousing/print-container-labels.md
           - name: Packing work for packing outbound containers and processing shipments
             href: warehousing/packing-work.md
+          - name: Packing containers with the Warehouse Management mobile app
+            href: warehousing/warehouse-app-packing-containers.md
+          - name: Scenario – Pack containers with the Warehouse Management mobile app
+            href: warehousing/warehouse-app-pack-containers-scenario.md
           - name: Set up short picking item reallocation
             href: warehousing/tasks/set-up-short-picking-item-reallocation.md
           - name: Cancel warehouse work for exception handling

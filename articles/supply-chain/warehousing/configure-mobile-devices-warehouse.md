@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Set up mobile devices for warehouse work
 description: This article describes how to configure the menu items that warehouse workers use to perform work on a mobile device.
 author: Mirzaab
-ms.date: 03/23/2020
-ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-#ms.custom: 29941
-#ms.assetid: 6dff6313-dc6e-4f06-9c0c-dab24eefe4da
-# ms.search.region: Global
-# ms.search.industry: 
 ms.author: mirzaab
-ms.search.validFrom: 2022-10-01
-ms.dyn365.ops.version: 10.0.31
-
+ms.reviewer: kamaybac
+ms.search.form: WHSRFMenuItem, WHSRFSysDirSort, WHSWorkUserDisplaySettings
+ms.topic: how-to
+ms.date: 10/14/2022
+ms.custom: bap-template
 ---
 
 # Set up mobile devices for warehouse work
@@ -40,7 +23,7 @@ This article describes how to configure the menu items that warehouse workers us
 - Create work that will be performed through another process. For example, receiving an item for a purchase order can create put-away work for another worker.
 - Perform work that was created by another process (existing work), such as put-away work that was created when an item was received for a purchase order.
 
-To create a menu item for an activity or inquiry, set the **Mode** field to **Indirect**. A list of **Activity code** options then becomes available, so that you can select the type of inquiry or activity that the menu item is for. To create a menu item to generate warehouse work, set the **Mode** field to **Work**. A list of **Work creation process** options then becomes available. To create a menu item to process existing warehouse work, set the **Mode** field to **Work**, and then set the **Use existing work** option to **Yes**. 
+To create a menu item for an activity or inquiry, set the **Mode** field to **Indirect**. A list of **Activity code** options then becomes available, so that you can select the type of inquiry or activity that the menu item is for. To create a menu item to generate warehouse work, set the **Mode** field to **Work**. A list of **Work creation process** options then becomes available. To create a menu item to process existing warehouse work, set the **Mode** field to **Work**, and then set the **Use existing work** option to **Yes**.
 
 > [!NOTE]
 > Additional fields might be available for menu items, depending on the mode that you select for the menu item, and whether the menu item is used to perform existing work. For information about the additional field selections, see the “Additional menu item options” section later in this article.
@@ -68,12 +51,12 @@ If the **Mode** field for a menu item is set to **Indirect**, you can create a m
 | Flush number sequence cache | Delete number sequence numbers from the number sequence cache. This activity is typically performed by a system administrator to resolve caching issues when mobile devices are used. |
 | Change batch disposition | Allow a worker to specify a batch disposition code for an item and batch. This selection updates the disposition code that is specified for the batch. |
 | Display open work list | Show a list of available work to a particular user. The user can then select work to perform and will be directed to it. This list is intended to be viewed on tablet devices that have a screen size of 7 inches or more. When you select this option, the **Edit query** and **Field list** menu items become available. The **Edit query** page lets you set up criteria for the work that appears in the list. The **Field list** page lets you select what fields appear in the work list. For example, you can reduce the number of fields that appear, so that the user can more quickly select the most appropriate work item. On the **General** FastTab, in the **Records per page** field, you can also select how many work records are shown per page. If the **Allow users to filter work by transaction type** option is selected, the work list will include a **Filter work** control that the user can use to filter by transaction type. In the work list, users will see only work that they have permission to access. You must make sure that users have permission for one or more user-directed menu items that support the specific work class types that they should be able to access. Permissions are verified when a user tries to perform work from the list.|
-| Create transfer order from license plates | Allows warehouse workers create and process transfer orders directly from the Warehouse Management mobile app. The warehouse workers start by selecting the destination warehouse and can then scan one or more license plates using the app. When the warehouse worker selects **Complete order**, a batch job will create the required transfer order and order lines based on the on-hand inventory registered for those license plates. For more information, see [Create transfer orders from the warehouse app](create-transfer-order-from-warehouse-app.md)|
-| Data inquiry | Enables creation of warehouse app menu items for looking up data from the mobile device as an inquiry list, see [Warehouse app data inquiry](warehouse-app-data-inquiry.md) process.|
-| Pack inventory into containers | Enables support for warehouse workers as they pack inventory items into containers. A worker starts by scanning a shipment to identify the inventory items to be packed. The worker then identifies the destination shipping container by entering its ID or scanning its barcode. Finally, when the container is fully packed, the worker registers it as closed, which makes the container ready for further processing by Dynamics 365 Supply Chain Management, see [Pack containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md)|
-| Container creation | Enables the container creation process - typically part of the [Pack containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md) process.|
-| Container closing | Enables the container closing process - typically part of the [Pack containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md) process.|
-| Print container label | Enables container label printing - typically part of the [Pack containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md) process, see [Configure container label printing](configure-container-label-printing.md).|
+| Create transfer order from license plates | Allows warehouse workers to create and process transfer orders directly from the Warehouse Management mobile app. The worker starts by selecting the destination warehouse and can then scan one or more license plates using the app. After the warehouse worker selects **Complete order**, a batch job will create the required transfer order and order lines based on the on-hand inventory registered for those license plates. For more information, see [Create transfer orders from the warehouse app](create-transfer-order-from-warehouse-app.md) |
+| Data inquiry | Enables creation of warehouse app menu items for looking up data from the mobile device as an inquiry list. See also [Warehouse app data inquiry](warehouse-app-data-inquiry.md) process. |
+| Pack inventory into containers | Enables support for warehouse workers as they pack inventory items into containers. A worker starts by scanning a shipment to identify the inventory items to be packed. The worker then identifies the destination shipping container by entering its ID or scanning its barcode. Finally, when the container is fully packed, the worker registers it as closed, which makes the container ready for further processing by Dynamics 365 Supply Chain Management. See also [Pack containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md)|
+| Container creation | Enables the container creation process, which is typically part of the [pack containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md) process. |
+| Container closing | Enables the container closing process, which is typically part of the [pack containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md) process. |
+| Print container label | Enables container label printing, which is typically part of the [pack containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md) process. See also [Print container labels](print-continer-labels.md). |
 
 ## Configure menu items to create work for another worker or process
 
@@ -371,7 +354,7 @@ The following table describes these options.
 </tr>
 <tr class="odd">
 <td>Pick and pack</td>
-<td>Select this option to let workers combine work for a sales order or load into a single work unit. A worker can perform work only for the sales order or load. This option is useful when, for example, you must increase a quantity for a sales order after the load, shipment, and work have been created for the sales order. This option is available when the menu item uses existing work, and the work is directed by the user or system. <br>Note that only work headers container a single initial pick work line can get combined using this "group picking concept".</br></td>
+<td>Select this option to let workers combine work for a sales order or load into a single work unit. A worker can perform work only for the sales order or load. This option is useful when, for example, you must increase a quantity for a sales order after the load, shipment, and work have been created for a sales order. This option is available when the menu item uses existing work, and the work is directed by the user or system. <br><br>Note that only work headers that contain a single initial pick work line can be combined using this group picking concept.</td>
 </tr>
 <tr class="even">
 <td>Pick oldest batch</td>
