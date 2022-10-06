@@ -61,7 +61,7 @@ A planned maintenance window is typically during the dark hours of the geographi
 
 ## What is the schedule for proactive quality updates?
 
-Please see [proactive quality updates](../fin-ops/get-started/quality-updates.md#what-is-the-schedule-for-sandbox-proactive-quality-updates) for information on the upcoming proactive quality update schedule.
+Please see [proactive quality updates](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates) for information on the upcoming proactive quality update schedule.
 
 > [!NOTE] 
 > Effective August 2022 through October 2022, Microsoft will start to roll out updates to the production environment during any weekend, and outside of normal business hours, to help minimize any potential impact on your environments. All sandbox environments will be updated during any night, outside of business hours.
