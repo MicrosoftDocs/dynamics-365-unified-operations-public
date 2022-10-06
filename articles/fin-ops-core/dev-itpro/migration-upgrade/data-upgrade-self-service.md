@@ -4,7 +4,7 @@
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
 description: This article explains how to do a data upgrade from Microsoft Dynamics AX 2012 in self-service environments.
 author: veeravendhan-s 
-ms.date: 05/05/2022
+ms.date: 10/06/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -145,7 +145,7 @@ After the validation is successful, the application presents a set of menu optio
 
     > [!IMPORTANT]
     > 
-    > The user must use SQL Server authentication, it cannot be a domain login. 
+    > You must use SQL Server authentication, it cannot be a domain login. 
     > 
     > The specified distribution database and replication snapshot paths should have enough space. We recommend that the amount of space be at least the size of the source database. If you have used compression in your AX 2012 database, then the space needed will be larger as the snapshot is uncompressed. The paths should be in the local disk of the machine. Avoid using shared paths.
     > 
