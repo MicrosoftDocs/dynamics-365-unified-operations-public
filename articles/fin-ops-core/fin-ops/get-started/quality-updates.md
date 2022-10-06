@@ -75,8 +75,8 @@ For information on the dark hours for each region, see [What are the planned mai
 **App version: 10.0.1265.89**
 **Corresponding latest KB article: 745340**
 
-| Station | Regions | Upcoming Sandbox Schedule
-|---|---|---|
+| Station | Regions | Completed Schedule| Upcoming Sandbox Schedule
+|---|---|---|---|
 | Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | September 15 to September 18, 2022, and September 19 to September 22, 2022 | October 7 to October 10, 2022 |
 | Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | September 25 to September 28, 2022 | October 7 to October 10, 2022 |
 | Station 3 | East Asia, UK West, Japan West, Brazil South, West Europe, East US, UAE Central | September 26 to September 29, 2022 | October 7 to October 10, 2022 |
@@ -93,7 +93,7 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 5 | DoD, Government Community Cloud, China | Not Scheduled |
 
 > [!IMPORTANT] 
-> Five business days in advance, Microsoft will update the preceding schedule and send email notifications to the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information about the dark hours for every region, see the [What are the planned maintenance windows?](#windows) section.
+> Five business days in advance, Microsoft will update the preceding schedule and send email notifications to the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#What-are-the-planned-maintenance-windows)
 >
 > For each region group, or *station*, where a quality update is currently scheduled to be rolled out, the schedule shows a range of four days. Quality updates will start with only sandbox environments. Then, as the percentage of successfully deployed sandboxes increases, deployment to production environments will begin with advance notifications to customers.
 > 
@@ -114,8 +114,8 @@ No. The main objective of quality updates is to ensure fundamentals like securit
 ## How do I know what set of changes went into a quality update payload?
 The following steps are a temporary solution as we continue to work on providing a better solution to identify the list of changes that go into a quality update payload. 
 
-1. The latest KB for the 10.0.28 Quality Update train is KB# = 745340 and App version = 10.0.1265.89
-2. Navigate to the environment details page; in the **Available Updates** section, click **View Update** for the latest Quality Update build. Export into a CSV or excel file
+1. Use the latest KB for the 10.0.28 Quality Update train which is KB# = 745340 and the related App version = 10.0.1265.89
+2. In LCS, navigate to the environment details page for your sandbox; in the **Available Updates** section, click **View Update** for the latest Quality Update build. Export into a CSV or excel file
 3. In the resultant file from step 2, you can sort based on time (oldest first) and search for the above KB number under **Update Id** column. You should now be able to see the delta list of KBs.
  
  > [!NOTE]
