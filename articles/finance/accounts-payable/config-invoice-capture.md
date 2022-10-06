@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Configure the Invoice capture solution 
-description: This article provides information about configuring the Invoice capture solution. 
+title: Configure the Invoice capture solution
+description: This article provides information about how to configure the Invoice capture solution.
 author: sunfzam
 ms.date: 09/25/2022
 ms.topic: overview
@@ -32,87 +32,94 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-After the Invoice capture solution is installed, you want to configure the environment: 
-1. **Required**: Synchronize the legal entities from Dynamics 365 Finance. This configuration is used to set up the organization structure in 
-Power Platform. 
-2. **Required**: Configure the channels for importing invoice images. 
-The solution supports the following channels: 
- - Office 365 Outlook (Default) 
- - Outlook.com
- - OneDrive
- - SharePoint 
-3. **Optional**: Define additional configuration groups for the OCR service. 
-4. **Optional**: Define mapping rules for the legal entity, vendor account, item and procurement type. 
+After the Invoice capture solution is installed, you must configure the environment. The process consists of the following basic steps.
 
-### Manage legal entity
+1. **Required:** Synchronize the legal entities from Microsoft Dynamics 365 Finance. This step is used to set up the organization structure in Microsoft Power Platform.
+2. **Required:** Configure the channels for the import of invoice images. The solution supports the following channels:
 
-Dynamics 365 Finance defines legal entities as organizations that are identified through registration with legal authorities. Business activities are performed and recorded in separate legal entities. In Power Platform, business units, security roles, and users are linked together that conforms to the role-based security model. 
+    - Office 365 Outlook (default)
+    - Outlook.com
+    - OneDrive
+    - SharePoint
 
-Business units are used together with security roles to control data access, users will see the information they need to do their jobs. The Invoice capture solution provides a configuration space to load basic information from existing legal entities in Dynamics 365 Finance and managing those created manually. The legal entities are used in vendor invoices and security control. 
+3. **Optional:** Define additional configuration groups for the optical character recognition (OCR) service.
+4. **Optional:** Define mapping rules for the legal entity, vendor account, item, and procurement type.
 
-When a legal entity is created and shown in the list view, the default business unit and team with the same name will be created automatically. The team will be granted the security role of “AP Clerk”. When legal entities are imported, basic master data from Dynamics 365 Finance is imported. It identifies the nonexistent items by legal entity and adds them into the Invoice capture solution. New legal entities will be assigned with the default configuration group. 
+This article is focused on the two required steps of the process. For more information about configuration groups, see [Invoice capture solution configuration groups](invoice-capture-config-group.md). For more information about mapping rules, see [Invoice capture solution mapping rules](invoice-capture-mapping-rules.md).
 
+## Manage legal entities
 
-#### Sync legal entities
+Finance defines legal entities as organizations that are identified through registration with legal authorities. Business activities are performed and recorded in separate legal entities. In Microsoft Power Platform, business units, security roles, and users are linked together in a manner that conforms to the role-based security model.
 
-To sync legal entities, go to **Setup > System setup > Manage legal entities**. 
-Click **Sync legal entities > OK** in the confirmation dialog. 
+Business units are used together with security roles to control data access. Users see only the information that they require to do their jobs. The Invoice capture solution provides a configuration space where you can load basic information from existing legal entities in Finance and manage those entities that are created manually. The legal entities are used on vendor invoices and in security control.
 
-The number of new legal entities will be displayed after the sync is complete. The new legal entities will display in the list view. 
-The default configuration group is applied to new legal entities. You can't create legal entities directly but you can sync legal entities from Dynamics 365 Finance. 
+When a legal entity is created and shown in the list view, a default business unit and team that have the same name are automatically created. The team is granted the **AP clerk** security role. When legal entities are imported, basic master data from Finance is imported. It identifies the nonexistent items by legal entity and adds them to the Invoice capture solution. The default configuration group is assigned to new legal entities.
 
-#### Invoice import channel
-Invoices are sent from different channels (email, file workspace, invoice portal) via different formats (paper, image) by vendors. The Invoice capture solution can handle different channels and formats. The following types are supported: 
- - Office 365 Outlook 
- - Outlook.com 
- - SharePoint 
- - OneDrive 
+### Sync legal entities
 
-Upon creating a channel for a specific account, an automated flow with pre-defined template will be constructed to monitor the coming emails/files in the inbox/space. Any file with a valid invoice can be recognized and sent to the invoice area, waiting for the AP clerk to process. The format of the attachment should be PDF or image.  Invoices can be loaded into the Invoice capture solution according to channel configuration. 
+You can't create legal entities directly. However, you can sync legal entities from Finance. To sync legal entities, follow these steps.
 
-1) Create a channel 
-If you've imported the addition solution package (Invoice capture installation tools), the default connection for Office 365 Outlook is ready to use. If you want to create more connections for different email account or other channel types, see how to define connections in Create connections for channels. 
-To create a channel, go to **Setup > System setup > Config channels**, click **New**. 
+1. Go to **Setup \> System setup \> Manage legal entities**.
+2. Select **Sync legal entities**, and then select **OK** in the confirmation dialog box.
 
-Fill in the following fields:
- - **Channel name** 
- - **Description** 
- - **Type** 
- - **Connection** 
- 
-Only emails or files that match the criteria can be imported into the solution. 
+After synchronization is completed, the number of new legal entities is shown. The new legal entities are shown in the list view. The default configuration group is assigned to the new legal entities.
 
- | Type                 | Configuration | More information | 
- |----------------------|----------|------------------|
- | Office 365 Outlook  | Folder  | Email folder must be under root directory, default: Inbox (Subfolder is not supported)| 
- |                          | Subject filter|(Optional) Substring that should be contained in the subject |
- |                          | From |  (Optional) Email address of senders, use “;” to separate between multiple accounts  |
-|SharePoint          | Site address|         URL of site address|
-|                    |  Folder     |   Folder in the site address | 
+## Configure invoice import channels
 
+Vendors send invoices from different channels (email, file workspace, or invoice portal) via different formats (paper or image). The Invoice capture solution can handle different channels and formats. The following types are supported:
 
-2) Activate the channel 
-When a flow is saved, fields will be displayed to show the status of the channel and created time. Initially, the **Status** will be **Inactive**. 
-The **Status reason** field displays that the channel is initialized and ready to be activated.
+- Office 365 Outlook
+- Outlook.com
+- SharePoint
+- OneDrive
 
-Click **Activate**, the **Status** and **Status reason** fields will be updated.
+When a channel is created for a specific account, an automated flow that has a predefined template is constructed to monitor the incoming emails or files in the inbox or space. Any file that has a valid invoice can be recognized and sent to the invoice area to await processing by the Accounts payable (AP) clerk. The attachment should be in PDF or image format. Invoices can be loaded into the Invoice capture solution according to the channel configuration.
 
-A channel can be deactivated if it is not needed. Click **Deactivate**, the channel will be disabled. The **Status** and **Status reason** fields will be updated. 
+### Create a channel
 
-### Manage flow in flow management
+If you've imported the additional solution package (Invoice capture installation tools), the default connection for Office 365 Outlook is ready to use. If you want to create more connections for different email accounts or other channel types, see [Create additional connections for channels](invoice-capture-advanced-settings.md#create-additional-connections-for-channels).
 
-The channel can be viewed on **Config channels**, or in flow management. To see more details, go to **Admin system > Default solution > Cloud flows**.
+To create a channel, follow these steps.
 
-Select the target flow to see more details, such as linked connections, owners, and run histories.
+1. Go to **Setup \> System setup \> Config channels**.
+2. Select **New**.
+3. Set the following fields:
 
-To sync the status, select **Check** to confirm the status of the channel is the same status as in the flow. 
+    - Channel name
+    - Description
+    - Type
+    - Connection
 
-There are some cases of exception handling that are shown in the **Status reason** field: 
- - **Missing Dataverse connection**: This displays when current user doesn't create at least one connection reference of **Microsoft Dataverse**.  
- - **Not found**: This displays when the flow linked to the channel has been deleted in flow management. The channel should be saved again to create a new channel. 
- - **Deactivated in flow management**: This displays when the flow has been deactivated in flow management and the status of channel is different than the flow. 
- - **Activated in flow management**: This displays when the flow has been activated in flow management and the status of channel is different than the flow.
- - **An unexpected error occurred**: This displays when theh user needs to confirm that the site is a “Communication site”, the folder is “Document library”. 
+Only emails or files that match the following criteria can be imported into the solution.
 
+| Type               | Configuration  | More information |
+|--------------------|----------------|------------------|
+| Office 365 Outlook | Folder         | The email folder must be under the root directory. By default, the Inbox folder is used. A subfolder isn't supported. |
+|                    | Subject filter | (Optional) A substring that should be included in the subject. |
+|                    | From           | (Optional) The email address of the sender or senders. If you specify multiple addresses, use a semicolon (;) as the separator. |
+| SharePoint         | Site address   | The URL of the site address. |
+|                    | Folder         | The folder in the site address. |
 
+### Activate the channel
 
+When a flow is saved, fields show the status of the channel and the time when it was created. Initially, the **Status** field is set to **Inactive**. The **Status reason** field indicates that the channel has been initialized and is ready to be activated.
+
+To activate the channel, select **Activate**. The **Status** and **Status reason** fields are updated.
+
+If a channel isn't required, you can deactivate it. To deactivate a channel, select **Deactivate**. The **Status** and **Status reason** fields are updated.
+
+### Manage flows in flow management
+
+You can view a channel on the **Config channels** page or in flow management.
+
+To view more details, go to **Admin system \> Default solution \> Cloud flows**, and select the target flow. The details that are shown include linked connections, owners, and run histories.
+
+To sync the status, select **Check** to confirm that the status of the channel matches the status of the flow.
+
+Some cases of exception handling are shown in the **Status reason** field:
+
+- **Missing Dataverse connection** – The current user hasn't created at least one **Microsoft Dataverse** connection reference.
+- **Not found** – The flow that is linked to the channel has been deleted in flow management. The channel should be saved again to create a new channel.
+- **Deactivated in flow management** – The flow has been deactivated in flow management, and the status of the channel differs from the status of the flow.
+- **Activated in flow management** – The flow has been activated in flow management, and the status of the channel differs from the status of the flow.
+- **An unexpected error occurred** – The user must confirm that the site is a "Communication site," and that the folder is "Document library."
