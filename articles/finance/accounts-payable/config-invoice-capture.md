@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure the Invoice capture solution
-description: This article provides information about how to configure the Invoice capture solution.
+description: This article explains how to configure the Invoice capture solution.
 author: sunfzam
 ms.date: 09/25/2022
 ms.topic: overview
@@ -77,7 +77,7 @@ When a channel is created for a specific account, an automated flow that has a p
 
 ### Create a channel
 
-If you've imported the additional solution package (Invoice capture installation tools), the default connection for Office 365 Outlook is ready to use. If you want to create more connections for different email accounts or other channel types, see [Create additional connections for channels](invoice-capture-advanced-settings.md#create-additional-connections-for-channels).
+If you've imported the additional solution package (Dynamics 365 Invoice capture – Installation Tools), the default connection for Office 365 Outlook is ready to use. If you want to create more connections for different email accounts or other channel types, see [Create additional connections for channels](invoice-capture-advanced-settings.md#create-additional-connections-for-channels).
 
 To create a channel, follow these steps.
 
