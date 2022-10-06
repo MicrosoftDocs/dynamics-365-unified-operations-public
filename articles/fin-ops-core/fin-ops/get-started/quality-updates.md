@@ -68,8 +68,35 @@ Because customers will regularly receive smaller payloads, we expect the process
 ## When will quality updates start for production environments?
 At this time, quality updates are only targeting sandboxes. We will update this space with a start date for production environments when we have more concrete data and metrics from proactive updates for sandboxes to gauge readiness for prod.
 
-## What is the schedule for sandbox quality updates?
-For quality updates schedule and information on the dark hours for each region, see [What is the schedule for proactive quality updates?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-is-the-schedule-for-proactive-quality-updates).
+## What is the schedule for sandbox proactive quality updates?
+For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#What-are-the-planned-maintenance-windows)
+
+### Proactive quality update release: 10.0.28
+##### App version: 10.0.1265.89
+##### Corresponding Latest KB article: 745340
+| Station | Regions | Current major version | Completed schedule | Upcoming Sandbox Schedule
+|---|---|---|---|---|
+| Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | Service Update 10.0.28 | September 15 to September 18, 2022, and September 19 to September 22, 2022 | October 7 to October 10, 2022 |
+| Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | Service Update 10.0.28 | September 25 to September 28, 2022 | October 7 to October 10, 2022 |
+| Station 3 | East Asia, UK West, Japan West, Brazil South, West Europe, East US, UAE Central | Service Update 10.0.28 | September 26 to September 29, 2022 | October 7 to October 10, 2022 |
+| Station 4 | North Europe, Central US, West US | Service Update 10.0.28 | September 28 to October 1, 2022 | October 7 to October 10, 2022 |
+| Station 5 | DoD, Government Community Cloud, China | Service Update 10.0.28 | Not Scheduled | Not Scheduled |
+
+### Proactive quality update release: 10.0.29
+| Station | Regions | Current major version | Upcoming Sandbox Schedule |
+|---|---|---|---|
+| Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | Service Update 10.0.29 | October 14 to October 17, 2022 |
+| Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | Service Update 10.0.29 | October 15 to October 18, 2022 |
+| Station 3 | East Asia, UK West, Japan West, Brazil South, West Europe, East US, UAE Central | Service Update 10.0.29 | October 16 to October 19, 2022 |
+| Station 4 | North Europe, Central US, West US | Service Update 10.0.29 |October 17 to October 20, 2022 |
+| Station 5 | DoD, Government Community Cloud, China | Service Update 10.0.29 | Not Scheduled |
+
+> [!IMPORTANT] 
+> Five business days in advance, Microsoft will update the preceding schedule and send email notifications to the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information about the dark hours for every region, see the [What are the planned maintenance windows?](#windows) section.
+>
+> For each region group, or *station*, where a quality update is currently scheduled to be rolled out, the schedule shows a range of four days. Quality updates will start with only sandbox environments. Then, as the percentage of successfully deployed sandboxes increases, deployment to production environments will begin with advance notifications to customers.
+> 
+> Quality updates will always occur in a rolling manner that enables us to target a set of environments per schedule and complete all the sets by the end of the fourth day for a station. However, this doesn't mean that an environment update will span four days. It just means that we can't pre-determine which set of environments will be updated on a given day within the four-day range. All updates will be done during dark hours, with near-zero downtime. Updates will definitively end within the dark-hour window of a given region.
 
 ## How are the dark hours handled for customers that have one finance and operations apps instance but are active in multiple time zones? 
 There are no special schedules outside of the dark hours where a finance and operations apps instance exists, as we plan to roll out quality updates in a minimally disruptive manner with [nZDT](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#what-does-near-zero-downtime-maintenance-mean).
