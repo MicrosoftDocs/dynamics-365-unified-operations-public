@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Invoice capture solution mapping rules overview
-description: This article provides information about setting up mapping rules in the Invoice capture solution. 
+title: Invoice capture solution mapping rules
+description: This article provides information about the setup of mapping rules in the Invoice capture solution.
 author: sunfzam
 ms.date: 09/25/2022
 ms.topic: overview
@@ -32,102 +32,86 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Mapping rules bring basic master data from Dynamics 365 Finance or the ERP system. Once mapping rules are set up, the information needed for vendor invoice creation in Dynamics 365 Finance is imported. With mapping rules, the AP clerk will check the status, instead of filling out all the missing fields manually. 
-There are three types of mapping rules: 
- - **Legal entity** 
- - **Vendor account**
- - **Item**   
+Mapping rules bring basic master data from Microsoft Dynamics 365 Finance or the enterprise resource planning (ERP) system. After mapping rules are set up, the information that is required to create vendor invoices in Finance is imported. When mapping rules are used, the Accounts payable (AP) clerk will check the status instead of manually filling in all the missing field values.
 
-## Manage mapping rules via App 
+There are three types of mapping rules:
 
-To manage mapping rules using the app, select **Setup**. On the **Mapping rule setup** tab, there are three options: 
- - **Legal entity mapping rules** 
- - **Vendor account mapping rules** 
- - **Item mapping rules** 
+- Legal entity
+- Vendor account
+- Item
 
-### Legal entity mapping rule example
+## Manage mapping rules by using the app
 
-Let's use the **Legal entity mapping rules** as an example. The legal entity code will be identified using the company name, address and tax registration number. For a rule with rule name “LE-USPM”, if company name contains “Contoso Robotics USA”, the legal entity code would be USPM. 
+To manage mapping rules using the app, select **Setup**. The **Mapping rule setup** tab provides three options:
 
-The page displays all the active mapping rules. If you want to see all the inactive mapping rules, click **Active Mapping Legal Entity Rules** and select **Inactive 
-Mapping Legal Entity Rules**. 
+- Legal entity mapping rules
+- Vendor account mapping rules
+- Item mapping rules
 
+For example, you select the **Legal entity mapping rules** option. The legal entity code will be identified by using the company name, address, and tax registration number. For a rule that is named **LE-USPM**, if the company name contains the text "Contoso Robotics USA," the legal entity code will be **USPM**.
 
-The following are available for mapping rules: 
+The page shows all the active mapping rules. If you want to view the inactive mapping rules, select **Active Mapping Legal Entity Rules**, and then select **Inactive Mapping Legal Entity Rules**.
 
-### Create a mapping rule 
+The following actions are available for mapping rules.
 
-You can use two methods to create a mapping rule: **New** or **Duplicate**. 
+### Create a mapping rule
 
-### New 
+You can use two methods to create a mapping rule:
 
-Click **New** to create a new mapping rule. Enter the information of mapping rule, **Rule Name** should be unique for each type of mapping rules. 
+- Select **New** to create a new mapping rule. Then enter the information for the mapping rule. The **Rule Name** value should be unique for each type of mapping rule.
+- If you select an existing mapping rule, the **Duplicate** button becomes available. Select it, and then select **OK** in the dialog box that appears. A mapping rule is created by duplicating the selected rule.
 
-### Duplicate 
+### Edit a mapping rule
 
-After you select a mapping rule, **Duplicate** will display. Click **OK** when the dialog pops up and a duplicate mapping rule is created. 
+To edit a mapping rule, select a field, and change the value.
 
-### Edit a mapping rule 
+### Activate/deactivate mapping rules
 
-To edit a mapping rule, click the field and modify it. 
+To deactivate one or more mapping rules, select them on the **Active Mapping Rules** page, and then select **Deactivate**. The rules are moved from the **Active Mapping Rules** page to the **Inactive Mapping Rules** page.
 
-### Activate / Deactivate mapping rules 
+Likewise, to activate mapping rules, select them on the **Inactive Mapping Rules** page, and then select **Activate**.
 
-Choose one or several mapping rules on **Active Mapping Rules** page, click **Deactivate** to inactivate these rules. These rules will be moved from the **Active 
-Mapping Rules** page to the **Inactive Mapping Rules** page. Similarly, click **Activate** on the **Inactive Mapping Rules** page to activate the selected rules. 
+### Remove mapping rules
 
-### Remove mapping rules 
+To remove mapping rules, select them, and then select **Delete**.
 
-Select several mapping rules and click **Delete** to remove the mapping rules. 
+### Check for conflicts
 
-### Check conflict 
+If two mapping rules have the same **Legal Entity** and **Vendor Account** values, but different **Item Name** values, a conflict will be detected, and the mapping rule won't be created or updated.
 
-If two mapping rules have same values in the **Legal Entity**, **Vendor Account**, **Item Name** fields but a different value in the **Item Number** fields, 
-a conflict will be detected and the mapping rule isn't created or updated due to duplication. 
+## Import/export mapping rules from Excel
 
-## Import/Export mapping rules from Excel 
+An Excel add-in can be used to manage rules in a batch. The following options are available:
 
-An Excel add-in can be used to manage rules in batch. Excel options include: 
-**Excel Templates**
-**Export to Excel** 
-**Import from Excel** 
+- Download an Excel template.
+- Export to Excel.
+- Import from Excel.
 
-### Excel Templates 
+### Download an Excel template
 
-Click **Download template** to download excel templates and select the fields to be included in the template. 
-By default, the template includes the following fields:
- - **Description**
- - **Item number would be**
- - **Legal entity**
- - **Rule name**
- - **Status**
- - **Vendor account**
+To download an Excel template, select **Download template**. Then select the fields to include in the template. By default, the template includes the following fields:
 
+- Description
+- Item number would be
+- Legal entity
+- Rule name
+- Status
+- Vendor account
 
-### Export to Excel 
+### Export to Excel
 
-You can export two ways: **Open in Excel Online** or **Download worksheet**. 
+You can export in two ways:
 
-#### Open in Excel Online 
+- Select **Open in Excel Online** to open the file in Excel. You can then edit the file online. When you've finished, select **Save**. All your changes will be saved on the **Mapping rule** page.
+- Select **Download worksheet** to download an Excel file that contains mapping rules. You can then edit the file. When you've finished, select **Import from Excel** to upload the updated worksheet.
 
-Click **Open in Excel Online** to open excel and you can edit the file online. After the editing is completed, click **Save**, and the modification will be saved 
-on the **Mapping rule** page. 
+### Import from Excel
 
-#### Download worksheet 
+1. Select **Import from Excel** to import data from an XLSX file. You can also import from comma-separated values (CSV) or XML files. Before you import, you should decide whether duplicates are allowed.
+2. Select **Review Mapping** to review the attributes mapping and determine whether it's correct. You can modify the mapping relationship.
+3. When you've finished, select **Finish Import** to start the import.
+4. You can select **Track Process** to track the progress of the import process.
 
-If you choose download a worksheet, an excel file containing mapping rules will be downloaded. After editing is done, click **Import from Excel** to upload the updated
-spreadsheet. 
+    The import status is updated from **Finish** to **Parsing**, then to **Transforming**, and finally to **Completed**.
 
-### Import from Excel 
-
-Click **Import from Excel** to import data from an .xlsx file. You can also import from CSV or XML files. Before you import, you'll want to decide if duplicates are 
-allowed or not.  
-
-Click **Review Mapping** to review if the attributes mapping is correct. You can modify the mapping relationship. Click **Finish Import** to start importing. 
-
-After the import process starts, click **Track Process** to track process of the import process.
-The import status changes from **Finish** to **Parsing**, then to **Transforming** and finally **Completed**. 
-Once the importing process completes, it will display the statistics of successes, partial failures, errors and total processed. 
-
-
-
+When the import process is completed, statistics for successes, partial failures, errors, and total processed are shown.
