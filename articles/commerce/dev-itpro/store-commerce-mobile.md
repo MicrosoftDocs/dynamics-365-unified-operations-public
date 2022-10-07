@@ -106,6 +106,6 @@ For more information about device activation, see [Point of sale (POS) device ac
 
 [Store Commerce app](store-commerce.md)
 
-[Choose between Store Commerce and Cloud POS](..mpos-or-cpos.md)
+[Choose between Store Commerce and Cloud POS](../mpos-or-cpos.md)
 
 [Troubleshoot Store Commerce setup and installation issues](../troubleshoot/store-commerce-setup-installation.md)
