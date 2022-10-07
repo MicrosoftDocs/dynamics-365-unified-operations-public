@@ -41,7 +41,7 @@ The Store Commerce apps for Windows, Android and iOS are the next generation of 
 
 The Store Commerce mobile apps use the same topology as the Store Commerce app for Windows when it is deployed in hybrid mode. The Store Commerce mobile apps are shell applications that render Cloud Point of Sale (CPOS) directly from the CSU, as well as connecting to Headless Commerce and Commerce Headquarters through the CSU. The shell application model allows Store Commerce to support a dedicated hardware station for direct integration with a payment terminal, printer, cash drawer, and other peripherals. You don't have to set up a shared hardware station to use hardware devices. 
 
-To update the Store Commerce mobile apps, simply update the CSU - all new POS functionality and features will automatically be picked up by the apps. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-it-pro/deployment/update-retail-channel.md).
+To update the Store Commerce mobile apps, simply update the CSU - all new POS functionality and features will automatically be picked up by the apps. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-itpro/deployment/update-retail-channel.md).
 
 The shell apps are serviced through app store updates. When minor versions reach general availability (GA), Microsoft will publish that version to the app stores. We may also publish patches between minor version updates to release high priority bug fixes.
 
