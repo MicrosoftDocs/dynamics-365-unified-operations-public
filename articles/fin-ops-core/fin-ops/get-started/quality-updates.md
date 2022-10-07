@@ -69,7 +69,7 @@ Because customers will regularly receive smaller payloads, we expect the process
 At this time, quality updates are only targeting sandboxes. We will update this space with a start date for production environments when we have more concrete data and metrics from proactive updates for sandboxes to gauge readiness for prod.
 
 ## What is the schedule for sandbox proactive quality updates?
-For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#What-are-the-planned-maintenance-windows)
+For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#What-are-the-planned-maintenance-windows).
 
 ### Proactive quality update release: 10.0.28
 **App version: 10.0.1265.89**
@@ -93,7 +93,7 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 5 | DoD, Government Community Cloud, China | Not Scheduled |
 
 > [!IMPORTANT] 
-> Five business days in advance, Microsoft will update the preceding schedule and send email notifications to the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#What-are-the-planned-maintenance-windows)
+> Five business days in advance, Microsoft will update the preceding schedule and send email notifications to the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#What-are-the-planned-maintenance-windows).
 >
 > For each region group, or *station*, where a quality update is currently scheduled to be rolled out, the schedule shows a range of four days. Quality updates will start with only sandbox environments. Then, as the percentage of successfully deployed sandboxes increases, deployment to production environments will begin with advance notifications to customers.
 > 
@@ -114,12 +114,15 @@ No. The main objective of quality updates is to ensure fundamentals like securit
 ## How do I know what set of changes went into a quality update payload?
 The following steps are a temporary solution as we continue to work on providing a better solution to identify the list of changes that go into a quality update payload. 
 
-1. Use the latest KB for the 10.0.28 Quality Update train which is KB# = 745340 and the related App version = 10.0.1265.89
-2. In LCS, navigate to the environment details page for your sandbox; in the **Available Updates** section, click **View Update** for the latest Quality Update build. Export into a CSV or excel file
-3. In the resultant file from step 2, you can sort based on time (oldest first) and search for the above KB number under **Update Id** column. You should now be able to see the delta list of KBs.
+Use KB# 745340 for the 10.0.28 Quality Update train and the related App version 10.0.1265.89.
+
+1. In LCS, open the **Environment details** page for your sandbox. 
+2. In the **Available Updates** section, select **View Update** for the latest Quality Update build. 
+3. Export the build into a CSV or Microsoft Excel file.
+4. In the exported file, sort the information based on time (oldest first) and then search for the KB number 745340 in the **Update Id** column. You should now be able to see the delta list of KBs.
  
  > [!NOTE]
- > The export to a Microsoft Excel or CSV file must happen before the environment is updated. Otherwise, you can use an environment with a similar configuration that doesn't have the update installed and follow the steps above.
+ > The export to a CSV or Excel file must happen before the environment is updated. Otherwise, you can use an environment with a similar configuration that doesn't have the update installed and follow the steps above.
 
 [![Example of environment with quality update.](./media/how-to-get-kb-list-pqu.png)](./media/how-to-get-kb-list-pqu.png)
 
