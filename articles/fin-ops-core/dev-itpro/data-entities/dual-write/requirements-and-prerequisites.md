@@ -160,7 +160,7 @@ You must set **Enable Dynamics 365 apps** to **Yes** when you set up the environ
     + On-demand functions like pricing, inventory, ATP dates.
     + Reference data for ledger, tax, payment terms, and schedules etc.
 
-Please follow the [pre-requisites instructions](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/data-entities/dual-write/separated-solutions) to find the solution you are looking for. Select the solution, and follow the prompts to import it. 
+Please follow the [pre-requisites instructions](/dev-itpro/data-entities/dual-write/separated-solutions) to find the solution you are looking for. Select the solution, and follow the prompts to import it. 
      
 Dual-write framework is extensible and accommodates customer-centric business data exchange through a few additional clicks.
     
