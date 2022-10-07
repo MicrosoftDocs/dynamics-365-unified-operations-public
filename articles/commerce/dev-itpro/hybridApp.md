@@ -35,6 +35,8 @@ This topic shows how to build and run the Retail POS hybrid app on Android and i
 
 Retail hybrid app is shell built using [Xamarin](/xamarin/). Inside the shell is a Web view controller that loads the cloud POS, which is based on the Commerce Scale Unit URL specified in the settings of this app. This is a Retail hybrid app shell for Android and iOS which will internally load the Cloud POS. For more information, see [Cloud POS](/dynamics365/unified-operations/retail/mpos-or-cpos).
 
+The [Store Commerce app for Windows](store-commerce) and [mobile platforms](store-commerce.mobile.md) are the next generation of point of sale applications for Dynamics 365 Commerce. As such, MPOS and the Retail hybrid app will be deprecated in October of 2023. We recommend that you use Store Commerce or CPOS for all new deployments. Existing customers should plan to migrate MPOS and Retail hybrid app to Store Commerce. 
+
 ## Development tools
 The Retail hybrid app supports the Android and iOS phone platforms. The app is built by using Xamarin, which means that you must install Xamarin on your development computer. To build the iOS app, you must have a Mac that has Xamarin installed. Although you can do development for both Android and iOS on a computer that runs Microsoft Windows, you must use a Mac to complete the build for the iOS platform. If your Mac is a shared team resource, you might want to use a Mac just for the build process. You must copy the Retail software development kit (Retail SDK) on all the computers that you use for development. The Retail SDK is available in all developer VMs that are provisioned for using [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/).
 
@@ -60,7 +62,7 @@ After you've installed Xamarin, you must update it to the latest stable version 
 > We recommend that you use Visual Studio 2019 or later to build the Android app.
 
 1. When installation is complete, launch Visual Studio and sign in with your Microsoft account (this is the same account that you use with Windows). Check for Xamarin updates by clicking **Tools > Options > Xamarin** or **Tools > Options > Xamarin > Other**. Here you'll find a **Check Now** link. If you do not see an option for Xamarin in **Tools > Options**, review your installation, or try restarting Visual Studio. You can also search for Xamarin in the **Options** dialog box. If needed, download and install the latest version.
-      
+   
 2.  In the [Retail SDK folder](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk), open SampleExtensions\HybridApp\Android\solution. Build and deploy using the emulator and verify that everything appears as it should.
   
 3.  Using the [Visual Studio Emulator for Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/ "Visual Studio Emulator for Android") or any emulator for Android, launch the POS hybrid app and enter the Commerce Scale Unit URL and save.
@@ -82,9 +84,9 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
   2.  Download and install Xamarin by following the instructions in [Installing and configuring Xamarin.iOS](https://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com).
   
   3.  When you have completed installing Xamarin on both the Windows and Mac computers, follow the instructions in [Connecting to the Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/) (xamarin.com). After you do this, you can work with iOS and Mac from Visual Studio on the Windows computer.
-  
+
   ### Build the iOS Retail hybrid app
-  
+
   1.  In the [Retail SDK folder](/retail-sdk/retail-sdk-overview#download-the-retail-sdk), open SampleExtensions\HybridApp\iOS\solution.
       After connecting to the Mac and building the application in Visual Studio, select the iOS device type and deploy the app on the selected device.
       
@@ -112,9 +114,9 @@ To sign and distribute the Android and iOS app, refer to the following options:
 - [iOS app distribution](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution)
 
 
-  
+
 ## Dedicated hardware station support for the hybrid Android app
-  
+
 Starting in release 8.1.3, dedicated hardware station support has been added to the hybrid Android app. In the same way that the Retail Modern POS has built-in support for peripheral devices, the Android app can also use the dedicated hardware station to connect to peripherals without needing to deploy an IIS-based hardware station.
 Out of the box, the hybrid Android app supports using payment terminals and receipt printers over network connections. Communicating with devices over a network typically requires adherence to a proprietary communication protocol specified by the manufacturer. For the hybrid Android app, out-of-the- box integrations are provided for the Dynamics 365 Payment Connector for Adyen and Epson receipt printers. 
 
