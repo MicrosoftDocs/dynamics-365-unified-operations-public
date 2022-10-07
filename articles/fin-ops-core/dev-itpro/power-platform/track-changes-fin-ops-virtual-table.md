@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.31
 
 ## Row version change tracking for finance and operations
 
-A new change tracking option has been added to finance and operations to enable incremental synchronization of data using the Dataverse. The new change tracking is a prerequisute for several features such as Data archival, Synapse integration, Mobile offline and Relevance search. The goal is to over time unify all existing finance and operations data synchronization frameworks into one that is based on Dataverse synchronization services.
+A new change tracking option has been added to finance and operations apps to enable incremental synchronization of data using the Microsoft Dataverse. The new change tracking is a prerequisute for several features such as Data archival, Synapse integration, Mobile offline and Relevance search. The goal, over time, is to unify all existing finance and operations data synchronization frameworks into one that is based on Dataverse synchronization services.
 
 ## Prerequisite to track changes for finance and operations virtual tables in Dataverse 
 
