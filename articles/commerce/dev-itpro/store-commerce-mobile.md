@@ -2,28 +2,15 @@
 # required metadata
 
 title: Store Commerce app for mobile platforms
-description: This topic provides all the information you need to get started with the Store Commerce app for Android and iOS.
+description: This article describes how to get started using the Microsoft Dynamics 365 Commerce Store Commerce app for Android and iOS.
 author: stuharg 
-ms.date: 10/6/2022
+ms.date: 10/07/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer
-# ms.devlang: 
-ms.reviewer: 
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+audience: Application User, Developer, IT Pro
+ms.reviewer: v-chgriffin
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: stuharg
 ms.search.validFrom: 2018-10-29
-ms.dyn365.ops.version: AX 8.0, AX 8.1
 
 ---
 
@@ -31,11 +18,13 @@ ms.dyn365.ops.version: AX 8.0, AX 8.1
 
 [!include [banner](../includes/banner.md)]
 
-Deploying full-featured mobile point of sale devices for your retail environment is straight forward and simple with the Dynamics 365 Commerce mobile apps for Android and iOS. The Store Commerce mobile apps deliver the same capabilities and advantages of the [Store Commerce app for Windows](store-commerce.md) on phone and tablet form factors. The mobile apps can be installed directly from the Apple and Google Play app stores and no longer require a developer to create a new application package to deploy or update the apps. 
+This article describes how to get started using the Microsoft Dynamics 365 Commerce Store Commerce app for Android and iOS.
 
-The Store Commerce mobile apps retain full functional parity with current Retail hybrid apps. In addition, Store Commerce for iOS includes support for dedicated hardware station. Now iOS devices can communicate with networked payment terminals, receipt printers and cash drawers without requiring a shared hardware station to be deployed. 
+Deploying a full-featured mobile point of sale devices for your retail environment is straightforward and simple with the Dynamics 365 Commerce mobile apps for Android and iOS. The Store Commerce mobile app delivers the same capabilities and advantages of the [Store Commerce app for Windows](store-commerce.md) on phone and tablet form factors. The Store Commerce mobile app can be installed directly from the Apple and Google Play app stores and don't require a developer to create a new application package to deploy or update the apps. 
 
-The Store Commerce apps for Windows, Android and iOS are the next generation of point of sale applications for Dynamics 365 Commerce. The current Modern point of sale (MPOS) application and the [Retail hybrid apps](hybridapp.md) for mobile will be deprecated in October of 2023. We recommend you use Store Commerce or CPOS for all new POS deployments. Existing customers should plan to migrate from the Retail hybrid app to Store Commerce. For more information about the deprecation schedule for MPOS and the Retail hybrid apps, see the [Modernizing the Dynamics 365 Commerce in-store technology stack](https://www.microsoft.com/en-au/download/details.aspx?id=103896) white paper. 
+The Store Commerce mobile app retains full functional parity with current Retail hybrid apps. In addition, Store Commerce for iOS includes support for a dedicated Hardware Station so that iOS devices can communicate with networked payment terminals, receipt printers, and cash drawers without requiring a shared Hardware Station to be deployed. 
+
+The Store Commerce apps for Windows, Android, and iOS are the next generation of point of sale applications for Dynamics 365 Commerce. The current Modern point of sale (MPOS) application and the [Retail hybrid apps](hybridapp.md) for mobile will be deprecated in October of 2023. It is recommended that you use Store Commerce or Cloud point of sale (CPOS) for all new POS deployments. Existing customers should plan to migrate from the Retail hybrid app to Store Commerce. For more information about the deprecation schedule for MPOS and the Retail hybrid apps, see [Modernizing the Dynamics 365 Commerce in-store technology stack](https://www.microsoft.com/download/details.aspx?id=103896). 
 
 ## App architecture
 
