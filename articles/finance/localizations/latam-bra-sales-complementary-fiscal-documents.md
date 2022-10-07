@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Sales complementary fiscal documents for Brazil
-description: This topic describes sales complementary invoice for the Brazilian localization.
-author: sndray
+description: This article describes sales complementary invoice for the Brazilian localization.
+author: AdamTrukawka
 ms.date: 08/08/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: BrazilParameters, FBFiscalDocument_BR, SalesComplementaryInvoice, SalesComplementaryInvoiceCancel_BR, SalesComplementaryInvoiceListPage
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 269194
-ms.assetid: 0c52b508-1044-48c1-9dfc-a590bbda5696
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 269194
+ms.assetid: 0c52b508-1044-48c1-9dfc-a590bbda5696
+ms.search.form: BrazilParameters, FBFiscalDocument_BR, SalesComplementaryInvoice, SalesComplementaryInvoiceCancel_BR, SalesComplementaryInvoiceListPage
 ---
 
 # Sales complementary fiscal documents for Brazil
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes sales complementary invoice for the Brazilian localization.
+This article describes sales complementary invoice for the Brazilian localization.
 
 ## Overview
 

@@ -1,11 +1,11 @@
 ---
 title: Unified product experience
-description: This topic describes the integration of product data between Finance and Operations apps and Dataverse.
+description: This article describes the integration of product data between finance and operations apps and Dataverse.
 author: t-benebo
-ms.date: 12/12/2019
+ms.date: 06/23/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2019-07-15
@@ -17,29 +17,29 @@ ms.search.validFrom: 2019-07-15
 
 
 
-When a business ecosystem is made up of Dynamics 365 applications, such as Finance, Supply Chain Management, and Sales, businesses often use these applications to source product data. This is because these apps provide a robust product infrastructure complemented with sophisticated pricing concepts and accurate on-hand inventory data. Businesses who use an external Product Lifecycle Management (PLM) system for sourcing the product data can channelize products from Finance and Operations apps to other Dynamics 365 apps. The unified product experience brings the integrated product data model in to Dataverse, so that all application users, including Power Platform users, can take advantage of the rich product data coming from Finance and Operations apps.
+When a business ecosystem is made up of Dynamics 365 applications, such as Finance, Supply Chain Management, and Sales, businesses often use these applications to source product data. This is because these apps provide a robust product infrastructure complemented with sophisticated pricing concepts and accurate on-hand inventory data. Businesses who use an external Product Lifecycle Management (PLM) system for sourcing the product data can channelize products from finance and operations apps to other Dynamics 365 apps. The unified product experience brings the integrated product data model in to Dataverse, so that all application users, including Power Platform users, can take advantage of the rich product data coming from finance and operations apps.
 
 Here is the product data model from Sales.
 
 ![Data model for products in CE.](media/dual-write-product-4.jpg)
 
-Here is the product data model from Finance and Operations apps.
+Here is the product data model from finance and operations apps.
 
-![Data model for products in Finance and Operations.](media/dual-write-products-5.jpg)
+![Data model for products in finance and operations.](media/dual-write-products-5.jpg)
 
 These two product data models have been integrated in Dataverse as shown below.
 
 ![Data model for products in Dynamics 365 apps.](media/dual-write-products-6.jpg)
 
-The dual-write table maps for products have been designed to flow data one-way only, in near-real time from Finance and Operations apps to Dataverse. However, the product infrastructure has been made open to make it bi-directional if required. Although you can customize it, it's at your own risk, as Microsoft does not recommend this approach.
+The dual-write table maps for products have been designed to flow data one-way only, in near-real time from finance and operations apps to Dataverse. However, the product infrastructure has been made open to make it bi-directional if required. Although you can customize it, it's at your own risk, as Microsoft does not recommend this approach.
 
 ## Templates
 
 Product information contains all the information related to the product and its definition, such as the product dimensions or the tracking and storage dimensions. As the following table shows, a collection of table maps is created to sync products and related information.
 
-Finance and Operations apps | Other Dynamics 365 apps | Description
+Finance and operations apps | Other Dynamics 365 apps | Description
 -----------------------|--------------------------------|---
-[All products](mapping-reference.md#138) | msdyn_globalproducts | The all products table contains all the products available in Finance and Operations apps, both the released products and the non-released products.
+[All products](mapping-reference.md#138) | msdyn_globalproducts | The all products table contains all the products available in finance and operations apps, both the released products and the non-released products.
 [CDS released distinct products](mapping-reference.md#213) | Product | The **Product** table contains the columns that define the product. It includes individual products (products with subtype product) and the product variants. The following table shows the mappings.
 [Colors](mapping-reference.md#170) | msdyn\_productcolors
 [Configurations](mapping-reference.md#171) | msdyn\_productconfigurations
@@ -47,7 +47,7 @@ Finance and Operations apps | Other Dynamics 365 apps | Description
 [Product categories](mapping-reference.md#166) | msdyn_productcategories | Each of the product categories and information about its structure and characteristics are contained in the product category table.
 [Product category assignments](mapping-reference.md#167) | msdyn_productcategoryassignments | To assign a product to a category the product category assignments table can be used.
 [Product category hierarchies](mapping-reference.md#168) | msdyn_productcategoryhierarchies | You use product hierarchies to categorize or group products. The category hierarchies are available in Dataverse using the Product category hierarchy table.
-[Product category hierarchy roles](mapping-reference.md#169) | msdyn_productcategoryhierarchyroles | Product hierarchies can be used for different roles in D365 Finance and Operations. They specify which category is used in each role the product category role table is used.
+[Product category hierarchy roles](mapping-reference.md#169) | msdyn_productcategoryhierarchyroles | Product hierarchies can be used for different roles in D365 finance and operations. They specify which category is used in each role the product category role table is used.
 [Product default order settings V2](mapping-reference.md#175) | msdyn_productspecificdefaultordersettings |
 [Product dimension groups](mapping-reference.md#173) | msdyn\_productdimensiongroups | The product dimension group defined which product dimensions define the product.
 [Product master colors](mapping-reference.md#187) | msdyn_sharedproductcolors | The **Shared product color** table indicates the colors that a specific product master can have. This concept is migrated to Dataverse to keep data consistent.
@@ -56,10 +56,10 @@ Finance and Operations apps | Other Dynamics 365 apps | Description
 [Product master styles](mapping-reference.md#191) | msdyn_sharedproductstyles | The **Shared product style** table indicates the styles that a specific product master can have. This concept is migrated to Dataverse to keep data consistent.
 [Product Number Identified Barcode](mapping-reference.md#164) | msdyn\_productbarcodes | Product bar codes are used to uniquely identify products.
 [Product specific unit conversions](mapping-reference.md#176) | msdyn_productspecificunitofmeasureconversions |
-[Released products V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | The **msdyn\_sharedproductdetails** table contains the columns from Finance and Operations apps that define the product, and that contain the product's financial and management information.
+[Released products V2](mapping-reference.md#189) | msdyn\_sharedproductdetails | The **msdyn\_sharedproductdetails** table contains the columns from finance and operations apps that define the product, and that contain the product's financial and management information.
 [Sizes](mapping-reference.md#174) | msdyn\_productsizes
 [Storage dimension groups](mapping-reference.md#177) | msdyn_productstoragedimensiongroups | The product storage dimension group represents the method used to define the placement the product in the warehouse.
-[Styles](mapping-reference.md#178) | msdyn\_productsytles
+[Styles](mapping-reference.md#178) | msdyn\_productstyles
 [Tracking dimension groups](mapping-reference.md#179) | msdyn_producttrackingdimensiongroups | The product tracking dimension group represents the method used to track the product in inventory.
 [Units](mapping-reference.md#219) | uoms
 [Unit conversions](mapping-reference.md#199) | msdyn_ unitofmeasureconversions
@@ -76,17 +76,17 @@ Because the product is represented as a SKU, the concepts of distinct products, 
 
 ![Data model for products.](media/dual-write-product.png)
 
-With the dual-write functionality enabled, the products from Finance and Operations will be synchronized in other Dynamics 365 products in **Draft** state. They are added to the first price list with the same currency used in the customer engagement app and using alphabetical sort on the price list name. In other words, they are added to the first price list in a Dynamics 365 app that matches the currency of your legal table where the product is released in a Finance and Operations app. If there is no price list for the given currency, a price list will automatically be created and the product will be assigned to it.
+With the dual-write functionality enabled, the products from finance and operations will be synchronized in other Dynamics 365 products in **Draft** state. They are added to the first price list with the same currency used in the customer engagement app and using alphabetical sort on the price list name. In other words, they are added to the first price list in a Dynamics 365 app that matches the currency of your legal table where the product is released in a finance and operations app. If there is no price list for the given currency, a price list will automatically be created and the product will be assigned to it.
 
-The current implementation of the dual-write plugins that associate the default price list to the unit look up the currency associated with the Finance and Operations app and find the first price list in the customer engagement app using alphabetical sort on the price list name. To set a default price list for a specific currency when you have multiple price lists for that currency, you must update the price list name to a name that is earlier in alphabetical order than any other price lists for that same currency. If it does not have any price list for the given currency, a new one is created.
+The current implementation of the dual-write plugins that associate the default price list to the unit look up the currency associated with the finance and operations app and find the first price list in the customer engagement app using alphabetical sort on the price list name. To set a default price list for a specific currency when you have multiple price lists for that currency, you must update the price list name to a name that is earlier in alphabetical order than any other price lists for that same currency. If it does not have any price list for the given currency, a new one is created.
 
-By default products from Finance and Operations apps are synchronized to other Dynamics 365 apps in **Draft** state. To synchronize the product with **Active** state so that you can directly use it in sales order quotations, for example, the following setting needs to be chosen: **System> Adminstration > System administration > System settings > Sales** tab and select **Create products in active state = yes**.
+By default products from finance and operations apps are synchronized to other Dynamics 365 apps in **Draft** state. To synchronize the product with **Active** state so that you can directly use it in sales order quotations, for example, the following setting needs to be chosen: **System> Adminstration > System administration > System settings > Sales** tab and select **Create products in active state = yes**.
 
-When products are synchronized, you must enter a value for the **Sales unit** field in the Finance and Operations app, because it is a mandatory field in Sales.
+When products are synchronized, you must enter a value for the **Sales unit** field in the finance and operations app, because it is a mandatory field in Sales.
 
 The creation of product families from Dynamics 365 Sales is not supported with the dual-write synchronization of products.
 
-The synchronization of products happens from the Finance and Operations app to Dataverse. This means that the values of the product table columns can be changed in Dataverse, but when the synchronization is triggered (when a product column is modified in a Finance and Operations app), this will overwrite the values in Dataverse.
+The synchronization of products happens from the finance and operations app to Dataverse. This means that the values of the product table columns can be changed in Dataverse, but when the synchronization is triggered (when a product column is modified in a finance and operations app), this will overwrite the values in Dataverse.
 
 Finance and operations apps | Customer engagement apps |
 ---|---
@@ -104,7 +104,7 @@ Finance and operations apps | Customer engagement apps |
 ---|---
 [Colors](mapping-reference.md#170) | msdyn\_productcolors
 [Sizes](mapping-reference.md#174) | msdyn\_productsizes
-[Styles](mapping-reference.md#178) | msdyn\_productsytles
+[Styles](mapping-reference.md#178) | msdyn\_productstyles
 [Configurations](mapping-reference.md#171) | msdyn\_productconfigurations
 
 When a product has different product dimensions (for example, a product master has Size and Color as product dimensions), each distinct product (that is, each product variant) is defined as a combination of those product dimensions. For example, product number B0001 is an extra-small black T-shirt, and product number B0002 is a small black T-shirt. In this case, the existing combinations of product dimensions are defined. For example, the T-shirt from the preceding example can be extra-small and black, small and black, medium and black, or large and black, but it can't be extra-large and black. In other words, the product dimensions that a product master can take are specified, and variants can be released based on these values.
@@ -121,7 +121,7 @@ Finance and operations apps | Customer engagement apps |
 
 ## Default order settings and product-specific default order settings
 
-Default order settings define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. This information is available in Dataverse using the default order settings and product-specific default order settings entity. You can read more information about the functionality in the [Default order settings topic](../../../../supply-chain/production-control/default-order-settings.md).
+Default order settings define the site and warehouse where items will be sourced from or stored, the minimum, maximum, multiple and standard quantities that will be used for trading or inventory management, the lead times, the stop flag, and the order promising method. This information is available in Dataverse using the default order settings and product-specific default order settings entity. You can read more information about the functionality in the [Default order settings article](../../../../supply-chain/production-control/default-order-settings.md).
 
 Finance and operations apps | Customer engagement apps |
 ---|---
@@ -134,7 +134,7 @@ The units of measure and its respective conversion are available in the Datavers
 
 ![Data model for unit of measure.](media/dual-write-product-three.png)
 
-The unit of measure concept is integrated between Finance and Operations apps and other Dynamics 365 apps. For each unit class in a Finance and Operations app, a unit group is created in a Dynamics 365 app, which contains the units belonging to the unit class. A default base unit is also created for every unit group.
+The unit of measure concept is integrated between finance and operations apps and other Dynamics 365 apps. For each unit class in a finance and operations app, a unit group is created in a Dynamics 365 app, which contains the units belonging to the unit class. A default base unit is also created for every unit group.
 
 Finance and operations apps | Customer engagement apps |
 ---|---
@@ -142,28 +142,28 @@ Finance and operations apps | Customer engagement apps |
 [Units](mapping-reference.md#219) | uoms
 [Unit conversions](mapping-reference.md#199) | msdyn_ unitofmeasureconversions
 
-## Initial synchronization of units data matching between Finance and Operations and Dataverse
+## Initial synchronization of units data matching between finance and operations and Dataverse
 
 ### Initial synchronization of units
 
-When dual write is enabled, units from Finance and Operations apps are synchronized to other Dynamics 365 apps. The unit groups synchronized from Finance and Operations apps in Dataverse have a flag set that indicates they are "Externally maintained".
+When dual write is enabled, units from finance and operations apps are synchronized to other Dynamics 365 apps. The unit groups synchronized from finance and operations apps in Dataverse have a flag set that indicates they are "Externally maintained".
 
-### Matching units and unit classes/groups data from Finance and Operations and other Dynamics 365 apps
+### Matching units and unit classes/groups data from finance and operations and other Dynamics 365 apps
 
-First, it's important to note that the integration key for unit is msdyn_symbol. Therefore, this value must be unique in Dataverse or other Dynamics 365 apps. Because in other Dynamics 365 apps it is the pair "Unit group ID" and "Name" that define the uniqueness of a unit, you need to consider different scenarios for matching unit data between Finance and Operations apps and Dataverse.
+First, it's important to note that the integration key for unit is msdyn_symbol. Therefore, this value must be unique in Dataverse or other Dynamics 365 apps. Because in other Dynamics 365 apps it is the pair "Unit group ID" and "Name" that define the uniqueness of a unit, you need to consider different scenarios for matching unit data between finance and operations apps and Dataverse.
 
-For units matching/overlapping in Finance and Operations apps and other Dynamics 365 apps:
+For units matching/overlapping in finance and operations apps and other Dynamics 365 apps:
 
-+ **The unit belongs to a unit group in other Dynamics 365 apps that corresponds to the associated unit class in Finance and Operations apps**. In this case, the column msdyn_symbol in other Dynamics 365 apps must be filled in with the unit symbol from Finance and Operations apps. Therefore, when the data will be matched, and the unit group will be set as "Externally maintained" in other Dynamics 365 apps.
-+ **The unit belongs to a unit group in other Dynamics 365 apps that does not correspond to the associated unit class in Finance and Operations apps (no existing unit class in Finance and Operations apps for the unit class in other Dynamics 365 apps).** In this case, the msdyn_symbol must be filled in with a random string. Note that this value must be unique in other Dynamics 365 apps.
++ **The unit belongs to a unit group in other Dynamics 365 apps that corresponds to the associated unit class in finance and operations apps**. In this case, the column msdyn_symbol in other Dynamics 365 apps must be filled in with the unit symbol from finance and operations apps. Therefore, when the data will be matched, and the unit group will be set as "Externally maintained" in other Dynamics 365 apps.
++ **The unit belongs to a unit group in other Dynamics 365 apps that does not correspond to the associated unit class in finance and operations apps (no existing unit class in finance and operations apps for the unit class in other Dynamics 365 apps).** In this case, the msdyn_symbol must be filled in with a random string. Note that this value must be unique in other Dynamics 365 apps.
 
-For units and unit classes in Finance and Operations not existing in other Dynamics 365 apps:
+For units and unit classes in finance and operations not existing in other Dynamics 365 apps:
 
-As part of dual-write the unit groups from Finance and Operations apps and its corresponding units are created and synchronized in other Dynamics 365 apps and Dataverse and the unit group will be set as "Externally maintained". No extra bootstrapping effort is required.
+As part of dual-write the unit groups from finance and operations apps and its corresponding units are created and synchronized in other Dynamics 365 apps and Dataverse and the unit group will be set as "Externally maintained". No extra bootstrapping effort is required.
 
-For units in other Dynamics 365 apps that do not exist in Finance and Operations apps:
+For units in other Dynamics 365 apps that do not exist in finance and operations apps:
 
-The column msdyn_symbol must be filled in for all units. The units can always be created in Finance and Operations apps in the corresponding unit class (if it exists). If the unit class doesn't exist, first the unit class must be created (note that you cannot create a unit class in Finance and Operations apps except through extension if you are extending the enum) matching the other Dynamics 365 apps unit group. Then you can create the unit. Note that the unit symbol in Finance and Operations apps must be the msdyn_symbol previously specified in other Dynamics 365 apps for the unit.
+The column msdyn_symbol must be filled in for all units. The units can always be created in finance and operations apps in the corresponding unit class (if it exists). If the unit class doesn't exist, first the unit class must be created (note that you cannot create a unit class in finance and operations apps except through extension if you are extending the enum) matching the other Dynamics 365 apps unit group. Then you can create the unit. Note that the unit symbol in finance and operations apps must be the msdyn_symbol previously specified in other Dynamics 365 apps for the unit.
 
 ## Product policies: dimension, tracking and storage groups
 
@@ -185,28 +185,29 @@ Finance and operations apps | Customer engagement apps |
 
 ## Integration key for products
 
-To uniquely identify products between Dynamics 365 for Finance and Operations and products in Dataverse the integration keys are used.
-For products, the **(productnumber)** is the unique key that identifies a product in Dataverse. It's composed by the concatenation of: **(company, msdyn_productnumber)**. The **company** indicates the legal entity in Finance and Operations and **msdyn_productnumber** indicates the product number for the specific product in Finance and Operations.
+To uniquely identify products between Dynamics 365 Finance and products in Dataverse the integration keys are used.
+For products, the **(productnumber)** is the unique key that identifies a product in Dataverse. It's composed by the concatenation of: **(company, msdyn_productnumber)**. The **company** indicates the legal entity in finance and operations and **msdyn_productnumber** indicates the product number for the specific product in finance and operations.
 
 For users of other Dynamics 365 apps, the product is identified in the UI with the **msdyn_productnumber** (note that the label of the column is **Product number**). In the product form both the company and the msydn_productnumber are shown. However, the (productnumber) column, the unique key for a product, is not shown.
 
 If you build apps on Dataverse, you should pay attention to using the **productnumber** (the unique product ID) as the integration key. Do not use **msdyn_productnumber**, because it's not unique.
 
-## Initial synchronization of products and migration of data from Dataverse to Finance and Operations
+## Initial synchronization of products and migration of data from Dataverse to finance and operations
 
 ### Initial synchronization of products
 
-When dual-write is enabled, products from Finance and Operations apps are synchronized to Dataverse and customer engagement apps. Products created in Dataverse and other Dynamics 365 apps before dual-write was released will not be updated or matched with product data from Finance and Operations apps.
+When dual-write is enabled, products from finance and operations apps are synchronized to Dataverse and customer engagement apps. Products created in Dataverse and other Dynamics 365 apps before dual-write was released will not be updated or matched with product data from finance and operations apps.
 
-### Matching product data from Finance and Operations and other Dynamics 365 apps
+### Matching product data from finance and operations and other Dynamics 365 apps
 
-If the same products are kept (overlapping/matching) in Finance and Operations and in Dataverse and other Dynamics 365 apps, when enabling dual-write the synchronization of products from Finance and Operations will take place, and duplicate rows will appear in Dataverse for the same product.
-To avoid the previous situation, if other Dynamics 365 apps have products that are overlapping/matching with Finance and Operations, then the administrator enabling dual write must bootstrap the columns **Company** (example: "USMF") and **msdyn_productnumber** (example: "1234:Black:S") before the synchronization of products takes place. In other words, these two columns in the product in Dataverse must be filled in with the respective company in Finance and Operations to which the product needs to be matched with and with its product number.
+If the same products are kept (overlapping/matching) in finance and operations and in Dataverse and other Dynamics 365 apps, when enabling dual-write the synchronization of products from finance and operations will take place, and duplicate rows will appear in Dataverse for the same product.
+To avoid the previous situation, if other Dynamics 365 apps have products that are overlapping/matching with finance and operations, then the administrator enabling dual write must bootstrap the columns **Company** (example: "USMF") and **msdyn_productnumber** (example: "1234:Black:S") before the synchronization of products takes place. In other words, these two columns in the product in Dataverse must be filled in with the respective company in finance and operations to which the product needs to be matched with and with its product number.
 
-Then, when the synchronization is enabled and takes place, the products from Finance and Operations will be synchronized with the matched products in Dataverse and other Dynamics 365 apps. This is applicable for both distinct products and product variants.
+Then, when the synchronization is enabled and takes place, the products from finance and operations will be synchronized with the matched products in Dataverse and other Dynamics 365 apps. This is applicable for both distinct products and product variants.
 
-### Migration of product data from other Dynamics 365 apps to Finance and Operations
+### Migration of product data from other Dynamics 365 apps to finance and operations
 
-If other Dynamics 365 apps have products that aren't present in Finance and Operations, the administrator can first use the **EcoResReleasedProductCreationV2Entity** for importing those products in Finance and Operations. And secondly, match the product data from Finance and Operations and other Dynamics 365 apps as described above.
+If other Dynamics 365 apps have products that aren't present in finance and operations, the administrator can first use the **EcoResReleasedProductCreationV2Entity** for importing those products in finance and operations. And secondly, match the product data from finance and operations and other Dynamics 365 apps as described above.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

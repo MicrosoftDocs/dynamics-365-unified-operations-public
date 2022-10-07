@@ -1,31 +1,21 @@
 ---
-# required metadata
-
 title: Restrict payment methods for returns without a receipt
-description: This topic describes how certain payment types can be restricted for refund if the returns are made without a receipt.
-author: rapraj
+description: This article describes how certain payment types can be restricted for refund if the returns are made without a receipt.
+author: josaw1
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailTenderTypeTable
-# ROBOTS: NOINDEX, NOFOLLOW
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 15831
-ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: yabinl
+ms.author: josaw
 ms.search.validFrom: 2019-02-01
 ms.dyn365.ops.version: AX 10.0.0, Retail Feb 2019 update
-
-
+ms.custom: 15831
+ms.assetid: 465893a5-6b4f-4c5f-b305-db071df2d33f
+ms.search.industry: Retail
+ms.search.form: RetailTenderTypeTable
 ---
 
 # Restrict payment methods for returns without a receipt
@@ -33,7 +23,7 @@ ms.dyn365.ops.version: AX 10.0.0, Retail Feb 2019 update
 
 [!include [banner](includes/banner.md)]
 
-Each payment type that a retailer accepts must be configured when the system is set up. This topic describes how certain payment types can be restricted for refund if the returns are made without a receipt.
+Each payment type that a retailer accepts must be configured when the system is set up. This article describes how certain payment types can be restricted for refund if the returns are made without a receipt.
 
 ## Set up payment methods
 

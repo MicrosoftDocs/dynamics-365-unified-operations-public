@@ -1,37 +1,28 @@
 ---
-# required metadata
-
 title: Omni-channel advanced auto charges
-description: This topic describes capabilities for managing other order charges for Commerce channel orders using advanced auto charges features.
-author: hhaines
+description: This article describes capabilities for managing other order charges for Commerce channel orders using advanced auto charges features.
+author: hhainesms
 ms.date: 03/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: hhaines
 ms.search.validFrom: 
-ms.dyn365.ops.version: 10.0
-
+ms.dyn365.ops.version: 10
+ms.custom: 
+ms.assetid: 
+ms.search.industry: Retail
+ms.search.form: 
 ---
 
 # Omni-channel advanced auto charges
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information on configuration and deployment of the advanced auto charges features that are available in Dynamics 365 for Retail version 10.0.
+This article provides information on configuration and deployment of the advanced auto charges features that are available in Dynamics 365 for Retail version 10.0.
 
 When the advanced auto charges features are enabled, orders created in any supported Commerce channel (point of sale (POS), call center, and online), can take advantage of the [auto charges](/dynamics365/unified-operations/retail/configure-call-center-delivery#define-charges-for-delivery-services) configurations defined in the ERP application for both header and line-level related charges.
 

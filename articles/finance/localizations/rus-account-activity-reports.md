@@ -1,27 +1,17 @@
 ---
-# required metadata
 title: Account activity reports
-description: This topic provides information about account activity reports including the Turnover sheet with correspondence.
-author: v-nadyuz
+description: This article provides information about account activity reports including the Turnover sheet with correspondence.
+author: AdamTrukawka
 ms.date: 02/07/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Account activity reports

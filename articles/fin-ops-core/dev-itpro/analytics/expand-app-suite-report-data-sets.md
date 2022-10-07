@@ -1,39 +1,28 @@
 ---
-# required metadata
-
 title: Expand Application Suite report data sets
-description: This topic shows how to expand an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. 
+description: This article shows how to expand an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class.
 author: RichdiMSFT
 ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 266594
-ms.assetid: 7810ee2c-e012-4a0f-992c-840e626bf437
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: richdi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Platform update 3
-
+ms.custom: 266594
+ms.assetid: 7810ee2c-e012-4a0f-992c-840e626bf437
 ---
 
 # Expand Application Suite report data sets
 
 [!include [banner](../includes/banner.md)]
 
-This topic shows how to expand an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class.
+This article shows how to expand an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class.
 
-This topic focuses on the expansion of an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. You use custom delegate handlers and table extensions to include additional field data and/or calculations. You don't have to over-layer the Application Suite. You then create custom designs that replace the standard application solutions and present the data to users. The following illustration shows a typical application customization, as described in this topic.
+This article focuses on the expansion of an existing report data set that is produced by using X++ business logic in a report data provider (RDP) class. You use custom delegate handlers and table extensions to include additional field data and/or calculations. You don't have to over-layer the Application Suite. You then create custom designs that replace the standard application solutions and present the data to users. The following illustration shows a typical application customization, as described in this article.
 
 [![extendingdatasets.](./media/extendingdatasets.png)](./media/extendingdatasets.png)
 

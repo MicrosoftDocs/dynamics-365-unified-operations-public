@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Fixed assets disposal for Poland
-description: This topic provides information about fixed asset disposal functionality for users in legal entities in Poland. 
-author: ShylaThompson
+description: This article provides information about fixed asset disposal functionality for users in legal entities in Poland.
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 266964
 ms.search.region: Poland
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 266964
+ms.search.form: AssetParameters, AssetPosting, CustFreeInvoice, LedgerJournalTable
 ---
 
 # Fixed assets disposal for Poland
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about fixed asset disposal functionality for users in legal entities in Poland. 
+This article provides information about fixed asset disposal functionality for users in legal entities in Poland. 
 
 Fixed assets can be sold using disposal functionality through a free text invoice, fixed asset journal, or general journal in General ledger. For more information about fixed asset disposal, see [Fixed asset disposal posting accounts](../fixed-assets/fixed-asset-disposal-posting-accounts.md). For users in legal entities in Poland, the fixed assets disposal functionality extension includes:
 

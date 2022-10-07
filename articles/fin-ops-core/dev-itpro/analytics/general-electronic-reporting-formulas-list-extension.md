@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Extend the list of Electronic reporting (ER) functions
 description: This article includes an overview of key tasks that you must complete to introduce a new function.
-author: NickSelin
+author: kfend
 ms.date: 10/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERExpressionDesignerFormula
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 58911
-ms.assetid: 62c740dc-6a88-4ded-9c41-6857b82b335e
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 58911
+ms.assetid: 62c740dc-6a88-4ded-9c41-6857b82b335e
+ms.search.form: ERExpressionDesignerFormula
 ---
 
 # Extend the list of Electronic reporting (ER) functions
@@ -34,7 +24,7 @@ ms.dyn365.ops.version: AX 7.0.0
 Various types of functions are supported in Electronic reporting (ER) expressions for data transformation – text, date and time, mathematical logical, information, data type conversion, and other (business domain–specific functions). In addition to built-in functions, ER lets you extend the list of available functions. This article includes an overview of key tasks that you must complete to introduce a new function.
 
 > [!IMPORTANT]
-> In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3, use of extensions of the **ERExpression** class is being deprecated. Instead of using extensions of the **ERExpression** class to add custom built-in ER functions, you can now implement your custom logic as public methods of your custom classes. You can then call those methods from ER formats and ER model mappings that configure the required ER data sources of either the [*Class*](er-formula-supported-data-types-composite.md#class) type or the [*Object*](er-formula-supported-data-types-composite.md#object) type. For more information, see [Design ER expressions to call application class methods](tasks/design-expressions-app-class-er.md).
+> In Microsoft Dynamics 365 Finance, Enterprise edition 7.3, use of extensions of the **ERExpression** class is being deprecated. Instead of using extensions of the **ERExpression** class to add custom built-in ER functions, you can now implement your custom logic as public methods of your custom classes. You can then call those methods from ER formats and ER model mappings that configure the required ER data sources of either the [*Class*](er-formula-supported-data-types-composite.md#class) type or the [*Object*](er-formula-supported-data-types-composite.md#object) type. For more information, see [Design ER expressions to call application class methods](tasks/design-expressions-app-class-er.md).
 
 All ER functions in application code are represented as classes that extend the **ERExpression** class. Two types of functions are recognized:
 
@@ -122,3 +112,4 @@ The following guidance is intended to help you design your custom ER functions:
 [Formula designer in Electronic reporting (ER)](general-electronic-reporting-formula-designer.md)
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Quality orders
-description: This topic describes how to manually or automatically create quality orders, and how to work with them to perform inspections and record test results in Microsoft Dynamics 365 Supply Chain Management.
+description: This article describes how to manually or automatically create quality orders, and how to work with them to perform inspections and record test results in Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to manually or automatically create quality orders, and how to work with them to perform inspections and record test results in Microsoft Dynamics 365 Supply Chain Management.
+This article describes how to manually or automatically create quality orders, and how to work with them to perform inspections and record test results in Microsoft Dynamics 365 Supply Chain Management.
 
 ## Automatically created quality orders
 
@@ -43,7 +43,7 @@ To manually create a quality order, follow these steps.
 
 1. Go to **Inventory management \> Periodic tasks \> Quality management \> Quality orders**.
 1. Select **New**.
-1. In the **Quality orders** dialog box, in the **Reference type** field, select the inventory reference that your quality order will be related to. For a description of the reference types that are available for selection, see the [Quality order reference types](#ref-types) section later in this topic.
+1. In the **Quality orders** dialog box, in the **Reference type** field, select the inventory reference that your quality order will be related to. For a description of the reference types that are available for selection, see the [Quality order reference types](#ref-types) section later in this article.
 
     > [!NOTE]
     > Inventory that is related to the selected reference must be available. If no inventory is available for the combination of the reference type, quantity, and inventory dimensions that you select, you will receive an error message.
@@ -92,7 +92,7 @@ You can use the quality order page to manually create a new quality order or vie
 
 ### From the Quality orders page
 
-To manually create quality orders and view all existing quality orders, go to **Inventory management \> Periodic tasks \> Quality management \> Quality orders**. The remaining sections of this topic provide more information about how to work with the **Quality orders** page.
+To manually create quality orders and view all existing quality orders, go to **Inventory management \> Periodic tasks \> Quality management \> Quality orders**. The remaining sections of this article provide more information about how to work with the **Quality orders** page.
 
 ### From sales orders
 

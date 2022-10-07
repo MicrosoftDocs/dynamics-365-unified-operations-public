@@ -2,7 +2,7 @@
 # required metadata
 
 title: Unbilled revenue
-description: This topic explains how to set up items and accounts to use the unbilled revenue feature in Subscription billing.
+description: This article explains how to set up items and accounts to use the unbilled revenue feature in Subscription billing.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 539093
 ms.search.region: Global
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.24
 
 # Unbilled revenue
 
-This topic describes the unbilled revenue feature that lets you include the amounts for entire billing schedules on the balance sheet. These amounts are included in an unbilled revenue account and an unbilled revenue offset account, and the contract is billed through installments.
+This article describes the unbilled revenue feature that lets you include the amounts for entire billing schedules on the balance sheet. These amounts are included in an unbilled revenue account and an unbilled revenue offset account, and the contract is billed through installments.
 
 ## Set up unbilled revenue
 

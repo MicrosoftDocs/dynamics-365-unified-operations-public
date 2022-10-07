@@ -1,39 +1,28 @@
 ---
-# required metadata
-
 title: Configure data import from SharePoint
-description: This topic explains how to import data from Microsoft SharePoint.
-author: NickSelin
+description: This article explains how to import data from Microsoft SharePoint.
+author: kfend
 ms.date: 01/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: ERSolutionTable, ERImportFormatSourceTable, ERWorkspace
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 220314
-ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
-
+ms.custom: 220314
+ms.assetid: 2685df16-5ec8-4fd7-9495-c0f653e82567
 ---
 # Configure data import from SharePoint
 
 [!include[banner](../includes/banner.md)]
 
-To import data from an incoming file by using the Electronic reporting (ER) framework, you must configure an ER format that supports the import and then run a model mapping of the **To destination** type that uses that format as a data source. To import data, you must navigate to the file that you want to import. The incoming file can be manually selected by user. With the new ER capability to support importing data from Microsoft SharePoint, this process can be configured as unattended. You can use ER configurations to perform data import from files that are stored in Microsoft SharePoint folders. This topic explains how to complete the import from SharePoint. The examples use vendor transactions as business data.
+To import data from an incoming file by using the Electronic reporting (ER) framework, you must configure an ER format that supports the import and then run a model mapping of the **To destination** type that uses that format as a data source. To import data, you must navigate to the file that you want to import. The incoming file can be manually selected by user. With the new ER capability to support importing data from Microsoft SharePoint, this process can be configured as unattended. You can use ER configurations to perform data import from files that are stored in Microsoft SharePoint folders. This article explains how to complete the import from SharePoint. The examples use vendor transactions as business data.
 
 ## Prerequisites
-To complete the examples in this topic, you must have the following access:
+To complete the examples in this article, you must have the following access:
 
 - Access one of the following roles:
 

@@ -1,33 +1,25 @@
---- 
-# required metadata 
- 
+---
 title: Create POS permission groups
-description: This topic explains how to create a POS permission group. 
-author: scott-tucker
+description: This article explains how to create a POS permission group.
+author: josaw1
 ms.date: 08/20/2019
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: RetailPosPermissionGroup, HcmJob   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: josaw
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
+ms.author: josaw
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
 ms.search.industry: Retail
-ms.author: scotttuc
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.search.form: RetailPosPermissionGroup, HcmJob
 ---
 # Create POS permission groups
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to create a POS permission group. The demo data company used to create this task is USRT. This task is intended for the Commerce operations manager role.
+This article explains how to create a POS permission group. The demo data company used to create this task is USRT. This task is intended for the Commerce operations manager role.
 
 1. In the navigation pane, go to **Modules > Retail and Commerce > Employees > Permission groups**.
 2. Select **New**.

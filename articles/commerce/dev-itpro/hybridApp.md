@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Set up POS hybrid app on Android and iOS
-description: This topic shows how to set up the POS hybrid app on Android and iOS.
-author: mugunthanm 
+description: This article shows how to set up the POS hybrid app on Android and iOS.
+author: josaw1
 ms.date: 09/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: Retail
 ---
 # Set up POS hybrid app on Android and iOS
 [!include [banner](../includes/banner.md)]
 
-This topic shows how to build and run the Retail POS hybrid app on Android and iOS devices. 
+This article shows how to build and run the Retail POS hybrid app on Android and iOS devices. 
 
 ## Overview
 
@@ -61,13 +51,16 @@ After you've installed Xamarin, you must update it to the latest stable version 
 > [!NOTE]
 > We recommend that you use Visual Studio 2019 or later to build the Android app.
 
-1. When installation is complete, launch Visual Studio and sign in with your Microsoft account (this is the same account that you use with Windows). Check for Xamarin updates by clicking **Tools > Options > Xamarin** or **Tools > Options > Xamarin > Other**. Here you'll find a **Check Now** link. If you do not see an option for Xamarin in **Tools > Options**, review your installation, or try restarting Visual Studio. You can also search for Xamarin in the **Options** dialog box. If needed, download and install the latest version.
-   
-2.  In the [Retail SDK folder](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk), open SampleExtensions\HybridApp\Android\solution. Build and deploy using the emulator and verify that everything appears as it should.
+1. When installation is complete, launch Visual Studio and sign in with your Microsoft account (this is the same account that you use with Windows). Check for Xamarin updates by clicking **Tools \> Options \> Xamarin** or **Tools \> Options \> Xamarin \> Other**. Here you'll find a **Check Now** link. If you do not see an option for Xamarin in **Tools \> Options**, review your installation, or try restarting Visual Studio. You can also search for Xamarin in the **Options** dialog box. If needed, download and install the latest version.
+      
+1. In the [Retail SDK folder](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk), open **SampleExtensions\HybridApp\Android\Sample.HybridApp.Android.sln**. Build and deploy using the emulator and verify that everything appears as it should.
+
+    > [!NOTE]
+    > If you want to add a custom Azure Active Directory (Azure AD) host URL for activation, in the solution edit the **PosActivity.cs** file, search for the string array variable named **AadHostUrls**, and then add your custom Azure AD host URL to the array. 
   
-3.  Using the [Visual Studio Emulator for Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/ "Visual Studio Emulator for Android") or any emulator for Android, launch the POS hybrid app and enter the Commerce Scale Unit URL and save.
+1. Using the [Visual Studio Emulator for Android](https://visualstudio.microsoft.com/vs/msft-android-emulator/ "Visual Studio Emulator for Android") or any emulator for Android, launch the POS hybrid app and enter the Commerce Scale Unit URL and save.
   
-4.  You should be able to sign in and activate the device.
+1. You should be able to sign in and activate the device.
 
 ### Build the iOS Retail hybrid app
 
@@ -91,15 +84,17 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
       After connecting to the Mac and building the application in Visual Studio, select the iOS device type and deploy the app on the selected device.
       
        ![POS iOS app VS setting for deployment.](./media/iOSSetting.png)
+       
+    > [!NOTE]
+    > If you want to add a custom Azure AD host URL for activation, in the solution edit the **PosActivity.cs** file, search for the string array variable named **AadHostUrls**, and then add your custom Azure AD host URL to the array. 
+   
+1. Using the Emulator, go to **Settings \> RetailMPOS**. Enter the Commerce Scale Unit URL.
       
-  2.  Using the Emulator, go to **Settings > RetailMPOS**. Enter the Commerce Scale Unit URL.
+     ![POS iOS app setting.](./media/iOSApp.png)
       
-       ![POS iOS app setting.](./media/iOSApp.png)
+     ![POS iOS app setting for RS URL.](./media/iOSRSURL.png)
       
-       ![POS iOS app setting for RS URL.](./media/iOSRSURL.png)
-      
-  3.  Launch the MPOS app. You should be able to sign in and activate the device.
-
+1. Launch the MPOS app. You should be able to sign in and activate the device.
 
 ## Hybrid app signing and distribution
 
@@ -112,7 +107,6 @@ To sign and distribute the Android and iOS app, refer to the following options:
 **iOS**
 - [iOS Code Signing](https://developer.apple.com/support/code-signing/)
 - [iOS app distribution](https://developer.apple.com/documentation/xcode/preparing-your-app-for-distribution)
-
 
 
 ## Dedicated hardware station support for the hybrid Android app

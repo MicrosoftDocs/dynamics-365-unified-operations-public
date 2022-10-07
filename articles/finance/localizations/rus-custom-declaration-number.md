@@ -1,27 +1,17 @@
 ---
-# required metadata
 title: Customs declaration numbers
-description: This topic provides information about how to set up and track customs declaration numbers.
-author: v-nadyuz
+description: This article provides information about how to set up and track customs declaration numbers.
+author: AdamTrukawka
 ms.date: 11/05/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2019-03-01
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Customs declaration numbers
@@ -89,7 +79,7 @@ Before you can register customs declaration numbers for newly received goods, yo
 
 ## Ship goods that have customs declaration numbers
 
-1. Create a sales order, and on the sales order line, select the same item number that you used in the previous procedures in this topic.
+1. Create a sales order, and on the sales order line, select the same item number that you used in the previous procedures in this article.
 2. On the **Line details** FastTab, on the **Setup** tab, in the **Reservation** field, select **Automatic**, so that the item is automatically reserved from existing receipts when you create a sales order line.
 3. On the **Product** tab, in the **Tracking dimensions** section, in the **GTD number** field, select the customs declaration number that you created earlier.
 

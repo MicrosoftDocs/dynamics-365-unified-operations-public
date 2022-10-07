@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Tax invoices
-description: This topic explains how to set up tax invoices and when they are generated.
-author: anasyash
+description: This article explains how to set up tax invoices and when they are generated.
+author: AdamTrukawka
 ms.date: 04/07/2021
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: 
-# ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope:
-# ms.tgt_pltfrm: 
-# ms.custom: NotInTOC
 ms.search.region: 
-# ms.search.industry:
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
-ms.dyn365.ops.version:
+ms.dyn365.ops.version: 
+ms.search.scope: 
 ---
 
 # Tax invoices
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up tax invoices and when they are generated.
+This article explains how to set up tax invoices and when they are generated.
 
 ## Preliminary setup
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate financial reports
-description: This topic provides information about generating a financial report.
+description: This article provides information about generating a financial report.
 author: jinniew
 ms.date: 02/08/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about generating a financial report.
+This article provides information about generating a financial report.
 
 To generate a report, open the report definition and on the toolbar, select **Generate**. The **Report Queue Status** page opens and indicates the location of your report in the queue.
 

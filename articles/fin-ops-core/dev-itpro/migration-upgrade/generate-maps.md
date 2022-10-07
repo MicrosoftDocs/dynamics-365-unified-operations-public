@@ -1,25 +1,15 @@
 ---
-# required metadata
-
-title: AX 2009 migration - Generate maps 
-description: This topic explains how to generate data maps to migrate data from Microsoft Dynamics AX 2009 to Finance and Operations.
-author: kfend
+title: AX 2009 migration - Generate maps
+description: This article explains how to generate data maps to migrate data from Microsoft Dynamics AX 2009 to finance and operations.
+author: Peakerbl
 ms.date: 06/30/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry:
-ms.author: kfend
+ms.author: peakerbl
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
 ---
@@ -28,7 +18,7 @@ ms.dyn365.ops.version: Platform update 17
 
 [!include [banner](../includes/banner.md)]
 
-Before you can migrate your data from Microsoft Dynamics AX 2009 to Finance and Operations, you must align your source data with your target environment. This topic explains how to generate source-to-target mappings.
+Before you can migrate your data from Microsoft Dynamics AX 2009 to finance and operations, you must align your source data with your target environment. This article explains how to generate source-to-target mappings.
 
 Before you can generate maps, you must provide the target URL, tenant URL, and service app ID to validate the connection.
 

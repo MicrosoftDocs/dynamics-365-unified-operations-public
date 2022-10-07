@@ -1,38 +1,27 @@
 ---
-# required metadata
-
-title: What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 12 (November 2017)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 12. This version was released in November 2017.
-author: tonyafehr
+title: What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition platform update 12 (November 2017)
+description: This article describes features that are either new or changed in Dynamics 365 Finance and Operations, Enterprise edition platform update 12. This version was released in November 2017.
+author: sericks007
 ms.date: 01/17/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-ROBOTS: NOINDEX, NOFOLLOW 
-
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: sericks
+ms.search.region: Global
+ms.author: sericks
+ms.search.validFrom: 2017-09-30
+ms.dyn365.ops.version: Platform update 12
 ms.custom: 
 ms.assetid: e577d51d-42d2-47c5-b388-93c8219c692a
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
-ms.search.validFrom: 2017-09-30 
-ms.dyn365.ops.version: Platform update 12 
-
+ROBOTS: NOINDEX, NOFOLLOW
 ---
 
-# What's new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 12 (November 2017)
+# What's new or changed in Dynamics 365 Finance and Operations, Enterprise edition platform update 12 (November 2017)
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations, Enterprise edition platform update 12. This version was released in November 2017 and has a build number of 7.0.4709.
+This article describes features that are either new or changed in Dynamics 365 Finance and Operations, Enterprise edition platform update 12. This version was released in November 2017 and has a build number of 7.0.4709.
 
 Go to the [Dynamics 365 Roadmap](https://roadmap.dynamics.com/) to find supplemental information about new features and learn more about what new features are in development. For information about the bug fixes included in Platform update 12, log in to Lifecycle Services (LCS) and view this [KB article](https://go.microsoft.com/fwlink/?linkid=863949).
 
@@ -48,11 +37,11 @@ If you're a customer operating or implementing Finance and Operations, you are p
 
 Development and application management tasks performed by developers can be done without requiring local administrator rights on the development virtual machine (VM). Customers will not have access to the VM admin account of development and build environments running in the Microsoft subscription.
 
-For more information, refer to this LCS blog topic, [Restricted Admin Access](https://blogs.msdn.microsoft.com/lcs/2017/10/31/restricted-admin-access-with-platform-12-updates/).
+For more information, refer to this LCS blog article, [Restricted Admin Access](https://blogs.msdn.microsoft.com/lcs/2017/10/31/restricted-admin-access-with-platform-12-updates/).
 
 ## Enabling SQL triggers in 'bring your own database' (BYOD)
 
-The 'bring your own database' feature, also called BYOD, enables incrementally exporting data entities from Dynamics 365 for Finance and Operations into your own SQL Azure database. If your destination database contains SQL database triggers, at present, the BYOD process bypasses triggers to enable efficient bulk data transfer.
+The 'bring your own database' feature, also called BYOD, enables incrementally exporting data entities from Dynamics 365 Finance and Operations into your own SQL Azure database. If your destination database contains SQL database triggers, at present, the BYOD process bypasses triggers to enable efficient bulk data transfer.
 
 You can now use SQL database triggers in your own database, for data that is exported or BYOD. This allows for downstream processes to easily integrate with the BYOD processes.
 
@@ -67,7 +56,7 @@ To enable the automatic export feature, a one-time setup and configuration proce
 The one-time set up and configuration means that you'll need to:
 
 - Set up a B2B invitation service application in Azure AD.
-- Configure the B2B invitation service settings in Finance and Operations.
+- Configure the B2B invitation service settings in finance and Operations.
 
 For more information, see [Export business-to-business (B2B) users to Azure Active Directory](../../dev-itpro/sysadmin/implement-b2b.md).
 

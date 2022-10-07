@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Section Chart form pattern
-description: This topic provides information about the Section Chart form pattern.
+description: This article provides information about the Section Chart form pattern.
 author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 29271
-ms.assetid: 049887b5-6277-4902-96ec-a81a3d2348c3
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 29271
+ms.assetid: 049887b5-6277-4902-96ec-a81a3d2348c3
 ---
 
 # Section Chart form pattern
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the Section Chart form pattern. This pattern is primarily used in conjunction with the Operational Workspace pattern, and specifically on forms that contain a chart control.
+This article provides information about the Section Chart form pattern. This pattern is primarily used in conjunction with the Operational Workspace pattern, and specifically on forms that contain a chart control.
 
 ## Usage
 
@@ -40,7 +29,7 @@ The Section Chart form pattern is intended to be used primarily in conjunction w
 ## Wireframe
 [![Wireframe for Section Chart form pattern.](./media/sectionchartwireframe1.png)](./media/sectionchartwireframe1.png)
 
-## Pattern changes for Finance and Operations
+## Pattern changes for finance and operations apps
 This pattern didn't exist for Microsoft Dynamics AX 2012.
 
 ## Model

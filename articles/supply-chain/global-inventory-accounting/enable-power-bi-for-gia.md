@@ -1,10 +1,10 @@
 ---
 title: Enable Power BI for Global Inventory Accounting
-description: This topic describes how to enable Microsoft Power BI for Global Inventory Accounting.
+description: This article describes how to enable Microsoft Power BI for Global Inventory Accounting.
 author: JennySong-SH
 ms.date: 06/18/2021
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -16,8 +16,6 @@ ms.dyn365.ops.version: 10.0.20
 # Enable Power BI for Global Inventory Accounting
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
-<!--KFM: Preview until 4/30/2022 -->
 
 You can pin tiles, dashboards, and reports from your [PowerBI.com](https://powerbi.com/) account to your Microsoft Dynamics 365 application workspace.
 

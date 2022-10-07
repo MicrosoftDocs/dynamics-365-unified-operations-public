@@ -1,12 +1,12 @@
 ---
 title: X++ inheritance
-description: This topic describes inheritance in X++.
-author: tonyafehr
+description: This article describes inheritance in X++.
+author: josaw1
 ms.date: 06/18/2019
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -15,7 +15,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes inheritance in X++, including how to create a subclass and override a method.
+This article describes inheritance in X++, including how to create a subclass and override a method.
 
 ## Creating a subclass
 *Subclasses* are classes that extend or inherit from other classes. A class can extend only one other class. Multiple inheritance isn't supported. If you extend a class, the subclass inherits all the methods and variables in the parent class (the *superclass*). Subclasses let you reuse existing code for a more specific purpose. Therefore, they help save you time during design, development, and testing. To customize the behavior of a superclass, override the methods in a subclass. A superclass is often known as a *base class*, and a subclass is often known as a *derived class*.

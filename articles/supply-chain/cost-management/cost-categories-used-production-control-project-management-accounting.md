@@ -35,7 +35,7 @@ Some types of production work can apply to project time estimates and reporting.
 
 Some types of production work can apply to project time estimates and reporting. In this case, a cost category is required for production and project purposes. When a cost category is used in production and projects, additional project-related information must be defined. For example, the hourly costs that are associated with projects can differ from the hourly costs that are associated with production. You can use the **Cost categories** page to define a cost category that is used in Production control and Project management accounting. 
 
-**Note:** Cost accounting has a **Project categories** page, but this page has no relationship to the functionality that is described in this topic. When you use a cost category in projects, the **Cost categories** page has additional tabs that show additional project-related information. This information includes the category group, a line property, and ledger accounts that are assigned to the cost category.
+**Note:** Cost accounting has a **Project categories** page, but this page has no relationship to the functionality that is described in this article. When you use a cost category in projects, the **Cost categories** page has additional tabs that show additional project-related information. This information includes the category group, a line property, and ledger accounts that are assigned to the cost category.
 
 -   The cost category must be assigned to a category group that supports a transaction type of **Hours**.
 -   The line property indicates default information about how reported time can be charged to a project.

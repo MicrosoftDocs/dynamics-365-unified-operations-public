@@ -1,6 +1,6 @@
 ---
 title: Planning Optimization release process and release history
-description: This topic provides information about the release process and release history for Planning Optimization.
+description: This article provides information about the release process and release history for Planning Optimization.
 author: t-benebo
 ms.date: 09/21/2021
 ms.topic: article
@@ -26,8 +26,12 @@ Environments that use Planning Optimization automatically receive the latest rel
 
 Because notifications aren't shown when Planning Optimization is updated in your environment, you can review the release notes in the following table to determine when changes were released and what functionality they introduced. This table shows the changes that were released for Planning Optimization, whether those changes are associated with a feature from feature management, and the date of the release.
 
+<!-- KFM: Add this? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> 
+
 | Changes | Feature management details | Release dates |
 |---|---|---|
+| <p> Support for resource scheduling with finite capacity. <p>General performance, quality, and stability improvements. | No feature management is required. | September 19-23, 2022 |
+| <p>General performance, quality, and stability improvements. | No feature management is required. | August 29 - September 3, 2022 |
 | <p>General performance, quality, and stability improvements.<p>[Planning Optimization centralized calendar maintenance](../supply-chain-calendars-master-planning.md)<p>[Planning Optimization suggestions to optimize existing supply](../action-messages.md)<p>[Planning Optimization support for subcontracting](../../production-control/manage-subcontract-work-production.md) | No feature management is required. | March 7-11, 2022 |
 | <p>Added planning priority support for production orders. | Available with version 10.0.25 as part of the feature named *Priority driven MRP support for Planning Optimization*. | November 12-18, 2021 |
 | <p>General performance, quality, and stability improvements. | No feature management is required. | November 12-18, 2021 |

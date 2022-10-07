@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Select page layouts
-description: This topic explains how to create and select page layouts in Microsoft Dynamics 365 Commerce.
-author: psimolin
+description: This article explains how to create and select page layouts in Microsoft Dynamics 365 Commerce.
+author: josaw1
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: psimolin
+ms.author: josaw
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Select page layouts
@@ -32,7 +21,7 @@ ms.dyn365.ops.version: Release 10.0.5
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to create and select page layouts in Microsoft Dynamics 365 Commerce.
+This article explains how to create and select page layouts in Microsoft Dynamics 365 Commerce.
 
 ## Create layouts for an existing page
 

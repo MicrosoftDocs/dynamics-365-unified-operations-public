@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add credit management information for customers
-description: This topic explains how to add credit management information for a customer.
+description: This article explains how to add credit management information for a customer.
 author: JodiChristiansen
 ms.date: 09/04/2019
 ms.topic: article
@@ -15,13 +15,13 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschloma
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: 
 # ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 
@@ -40,7 +40,7 @@ You can add the customer details on the **Credit and collections** FastTab of th
 1. Set the **Unlimited credit limit** option to **Yes** if the customer should not be limited by any credit limit tests.
 2. Set the **Exclude from credit management** option to **Yes** to exclude the customer from any actions that usually occur during credit management processes.
 3. Select the credit management group for the customer.
-4. To calculate the credit limit in the customer's currency, in the **Credit limit in customer's currency** field, enter the customer's credit limit. The credit limit in the company currency will be converted by using the exchange rates that are defined by the credit limit exchange rate type that is selected in the Credit management parameters.
+4. To calculate the credit limit in the customer's currency, in the **Credit limit in customer's currency** field, enter the customer's credit limit. The credit limit in the company currency will be converted by using the exchange rates that are defined by the credit limit exchange rate type that is selected in the **Credit management parameters**.
 5. In the **Last review date** field, enter the date when the customer's credit limit was last reviewed by a credit manager.
 6. In the **Next scheduled review date** field, enter the date when the customer is scheduled for credit review and update.
 7. In the **Eligible credit limit** field, enter the highest credit limit that can be assigned to the customer, based on your review of that customer's credit history. The eligible credit limit can differ from the credit limit that is shown on the **Credit and collections** FastTab.
@@ -54,7 +54,8 @@ You can add the customer details on the **Credit and collections** FastTab of th
 15. In the **Customer since** field, enter the date when the first transactions were processed for the customer. This information is used when risk scores are created.
 16. Enter notes that the credit team can use to further evaluate the customer's credit worthiness.
 
-Note that some of the information that is shown on the **Customer** page is created by another process:
+> [!Note] 
+> Some of the information that is shown on the **Customer** page is created by another process:
 
 - The **Credit limit expiration date** field shows the date when the credit limit will expire. If you don't set this field, the customer's credit limit won't expire.
 - The **Credit limit date** field shows the date when the credit limit was created. This field is updated whenever the credit limit is adjusted.

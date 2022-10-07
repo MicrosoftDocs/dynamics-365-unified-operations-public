@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install, set up, and update the Customer portal
-description: This topic provides licensing details and setup instructions for the Customer portal.
+description: This article provides licensing details and setup instructions for the Customer portal.
 author: Henrikan
 ms.date: 06/08/2020
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: henrikan

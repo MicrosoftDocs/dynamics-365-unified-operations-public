@@ -2,7 +2,7 @@
 # required metadata
 
 title: Setoff rule error when a tax settlement is run
-description: This topic provides troubleshooting information that can help fix the setoff rule error that might occur during tax settlement.
+description: This article provides troubleshooting information that can help fix the setoff rule error that might occur during tax settlement.
 author: yungu
 manager: beya
 ms.date: 06/08/2021
@@ -17,7 +17,7 @@ ms.technology:
 audience: Application user
 # ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 # ms.custom: 
 ms.search.region: India
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.1
 
 [!include [banner](../includes/banner.md)]
 
-When you run a tax settlement, you might receive an error message. Follow the steps in the sections of this topic to fix the error.
+When you run a tax settlement, you might receive an error message. Follow the steps in the sections of this article to fix the error.
 
 ## Find the version of the setoff rule that is currently used
 

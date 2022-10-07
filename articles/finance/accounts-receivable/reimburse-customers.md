@@ -2,7 +2,7 @@
 # required metadata
 
 title: Reimburse customers
-description: This article explains how to create reimbursement transactions for a group of customers. If a customer has a credit balance, you can reimburse the customer for the amount of the balance. 
+description: This article explains how to create reimbursement transactions for a group of customers.  
 author: JodiChristiansen
 ms.date: 09/09/2020
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalTransCustPaym, LedgerJournalTransVendPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 14191
 ms.assetid: 53533ee3-470e-458a-ac8b-3815aa4cb502

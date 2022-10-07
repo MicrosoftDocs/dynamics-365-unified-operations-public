@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure integration with Finance
-description: This topic describes the integration between Dynamics 365 Human Resources and Dynamics 365 Finance.
+description: This article describes the integration between Dynamics 365 Human Resources and Dynamics 365 Finance.
 author: twheeloc  
 ms.date: 08/19/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: SystemAdministrationWorkspaceForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 

@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Configure product dimension values to appear as swatches
-description: This topic describes how to configure product dimension values as swatches in Microsoft Dynamics 365 Commerce headquarters.
+description: This article describes how to configure product dimension values as swatches in Microsoft Dynamics 365 Commerce headquarters.
 author: anupamar-ms
 ms.date: 08/02/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: rapraj
+ms.author: anupamar
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.20 update
-
+ms.custom: 
+ms.search.industry: Retail
 ---
 
 # Configure product dimension values to appear as swatches
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to configure product dimension values as swatches in Microsoft Dynamics 365 Commerce headquarters. For information about product dimensions, see [Product dimensions](../../supply-chain/pim/product-dimensions.md).
+This article describes how to configure product dimension values as swatches in Microsoft Dynamics 365 Commerce headquarters. For information about product dimensions, see [Product dimensions](../../supply-chain/pim/product-dimensions.md).
 
 Dynamics 365 Commerce supports the use of size, style, and color dimensions to represent product variants. Product dimensions have friendly names that are shown on product details pages (PDPs) so that product variants can be selected. Examples of these friendly names include "Small," "Medium," and "Large" for sizes, and "Black" and "Brown" for colors. However, if a product supports many variations, multiple selections are required to view the image for each product variant. Therefore, it can be slow and tedious for customers to browse and select product variants.
 

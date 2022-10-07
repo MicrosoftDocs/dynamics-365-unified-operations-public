@@ -1,43 +1,33 @@
 ---
-# required metadata
-
 title: Reset the Financial reporting data mart
-description: This topic describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance.
+description: This article describes how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance.
 author: aprilolson
 ms.date: 04/01/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: FinancialReports
-# ROBOTS: 
 audience: IT Pro, Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261824
+ms.reviewer: twheeloc
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 261824
+ms.search.form: FinancialReports
 ---
 
 # Reset the Financial reporting data mart
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance. The data mart can be reset in multiple ways, depending on the user's role and access to the client or infrastructure.
+This article explains how to reset the Financial reporting data mart for Microsoft Dynamics 365 Finance. The data mart can be reset in multiple ways, depending on the user's role and access to the client or infrastructure.
 
 You should reset the data mart only when a small amount of processing is occurring on the database. Financial reporting will be unavailable during the reset process.
 
 > [!NOTE]
 > To confirm that it's necessary to reset your data mart, see [When to reset a data mart](when-to-reset-data-mart.md).
 
-> A reset of the data mart doesn't affect any report definitions that define the structure of reports. Nevertheless, it's always a good idea to have a backup of your reports, which you accomplish by exporting them. The steps for exporting report definitions are included at the end of this topic in the section titled, Export and import report definitions, later in this topic.
+> A reset of the data mart doesn't affect any report definitions that define the structure of reports. Nevertheless, it's always a good idea to have a backup of your reports, which you accomplish by exporting them. The steps for exporting report definitions are included at the end of this article in the section titled, Export and import report definitions, later in this article.
 
 ### Reset the Financial reporting data mart from Report designer
 
@@ -91,7 +81,7 @@ If you ever restore your database from a backup or copy the database from anothe
 
 ### Stop services
 
-The following Microsoft Windows services will have open connections to the Finance and Operations database. Therefore, you must use Microsoft Remote Desktop to connect to all the computers in the environment and then use services.msc to stop these services.
+The following Microsoft Windows services will have open connections to the finance and operations database. Therefore, you must use Microsoft Remote Desktop to connect to all the computers in the environment and then use services.msc to stop these services.
 
 - World wide web publishing service (on all Application Object Servers \[AOS\] computers)
 - Batch Management Service (on non-private AOS computers only)
@@ -101,9 +91,9 @@ The following Microsoft Windows services will have open connections to the Finan
 
 #### Download the latest MinorVersionDataUpgrade.zip package
 
-Download the latest MinorVersionDataUpgrade.zip package. For instructions about how to find and download the correct version of the data upgrade package, see the section [Upgrade data in development or demo environments](../migration-upgrade/upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) in the Upgrade data in development, demo, or sandbox environments topic.
+Download the latest MinorVersionDataUpgrade.zip package. For instructions about how to find and download the correct version of the data upgrade package, see the section [Upgrade data in development or demo environments](../migration-upgrade/upgrade-data-to-latest-update.md#select-the-correct-data-upgrade-deployable-package) in the Upgrade data in development, demo, or sandbox environments article.
 
-An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip package. Therefore, you just have to follow the steps in the "Download the latest data upgrade deployable package" section of that topic. You can skip all the other steps in the topic.
+An upgrade isn't required in order to download the MinorVersionDataUpgrade.zip package. Therefore, you just have to follow the steps in the "Download the latest data upgrade deployable package" section of that article. You can skip all the other steps in the article.
 
 #### Run prerequisite SQL scripts against the database
 
@@ -679,7 +669,7 @@ First, follow these steps to export the report designs from Report designer.
 2. Select the building block group to export, and then select **Export**.
 
     > [!NOTE]
-    > For Finance and Operations, only one building block group is supported: **Default**.
+    > For finance and operations, only one building block group is supported: **Default**.
 
 3. Select the report definitions to export:
 
@@ -711,3 +701,4 @@ Next, import your report designs from Report designer by using the file that was
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Consolidation account groups and additional consolidation accounts
-description: This topic provides information about consolidation account groups and additional consolidation accounts, and explains how they're used.
+description: This article provides information about consolidation account groups and additional consolidation accounts, and explains how they're used.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: article
@@ -15,13 +15,13 @@ ms.search.form: LedgerConsolidateAccountGroup
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 265544
 ms.assetid: 71c31df7-b655-46a8-8844-4f92a8bd71b0
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: panolte
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about consolidation account groups and additional consolidation accounts, and explains how they're used.
+This article provides information about consolidation account groups and additional consolidation accounts, and explains how they're used.
 
 ## Consolidation account groups
 

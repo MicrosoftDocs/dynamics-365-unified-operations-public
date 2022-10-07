@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Create an Azure key vault in the Azure portal
-description: This topic explains how to create a Microsoft Azure key vault for Electronic invoicing.
-author: dkalyuzh
+description: This article explains how to create a Microsoft Azure key vault for Electronic invoicing.
+author: gionoder
 ms.date: 02/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: 
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: 
-# ms.search.industry: 
-ms.author: kfend
+ms.author: gionoder
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Create an Azure key vault in the Azure portal

@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Configure gift with purchase promotions
-description: This topic describes how to configure "gift with purchase" promotions in Microsoft Dynamics 365 Commerce.
-author: shalabh
+description: This article describes how to configure ""gift with purchase"" promotions in Microsoft Dynamics 365 Commerce.
+author: ShalabhjainMSFT
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 141393
-ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: shajain
 ms.search.validFrom: 2020-10-31
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 141393
+ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.search.industry: Retail
 ---
 
 # Configure gift with purchase promotions
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to configure "gift with purchase" promotions in Microsoft Dynamics 365 Commerce.
+This article describes how to configure "gift with purchase" promotions in Microsoft Dynamics 365 Commerce.
 
 It's a common practice among retailers to run "gift with purchase" promotions. The goal is to persuade customers to buy a product at full price by offering a bonus of an additional item for free or at a discount. These promotions can help sell slow-moving products and (if they are run correctly) can also help improve the overall customer experience. As of the Dynamics 365 Commerce version 10.0.19 release, retailers can use the "Threshold discount" feature to configure these promotions.
 

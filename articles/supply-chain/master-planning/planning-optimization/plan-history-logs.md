@@ -2,9 +2,9 @@
 # required metadata
 
 title: View plan history and planning logs
-description: This topic explains how to view the history of planning jobs that are triggered by the Planning Optimization functionality.
+description: This article explains how to view the history of planning jobs that are triggered by the Planning Optimization functionality.
 author: t-benebo
-ms.date: 10/30/2019
+ms.date: 06/01/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: AX 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to view the history of planning jobs that are triggered by the Planning Optimization functionality in Microsoft Dynamics 365 Supply Chain Management.
+This article explains how to view the history of planning jobs that are triggered by the Planning Optimization functionality in Microsoft Dynamics 365 Supply Chain Management.
 
 To view the history for a plan, open the plan by going to **Master planning** \> **Setup** \> **Plans** \> **Master plans** and selecting **History**. The history lists all the jobs for the selected plan. The list includes completed and active jobs.
 
-The history of jobs for Planning Optimization master planning runs keeps only up to 60 records per master plan. Whenever you run a new master planning calculation, that plan's earliest history record is deleted.
+The system keeps a maximum of 60 history records per master plan and deletes records older than 30 days. Each time you run a new master planning calculation, the system adds a new history record and then cleans up the oldest records as needed.
 
 In addition to seeing the start time and status of jobs, you can view the log for a specific job. The log includes additional information and warnings. Not all jobs have a log. To view the log for a job, select **Log**. Log entries are only stored for 30 days after the date the job finished, after that they are automatically deleted.
 

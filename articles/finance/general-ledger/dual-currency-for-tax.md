@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dual currency support for tax
-description: This topic explains how to extend dual currency accounting feature in tax domain and the impact for tax calculation and posting
+description: This article explains how to extend dual currency accounting feature in tax domain and the impact for tax calculation and posting
 author: EricWang
 ms.date: 12/11/2020
 ms.topic: article
@@ -15,14 +15,14 @@ ms.search.form: TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: wangchen
 ms.search.validFrom: 2020-01-14
 ms.dyn365.ops.version: 10.0.9
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.9
 # Dual currency support for sales tax
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to extend dual currency accounting for sales taxes and the impact for sales tax calculations, posting and settlements.
+This article explains how to extend dual currency accounting for sales taxes and the impact for sales tax calculations, posting and settlements.
 
 The Dual currency feature for Dynamics 365 Finance was introduced in version 8.1 (October 2018). It changes the way that accounting entries in the reporting currency are calculated.
 
@@ -95,7 +95,7 @@ This feature will only apply for new transactions. For tax transaction already s
 
 To prevent preceding scenario, we recommend changing this parameter value in a new (clean) tax settlement period that doesn't contain any unsettled tax transactions. To change this value in the middle of a tax settlement period, please run "Settle and post sales tax" program for current tax settlement period before changing this parameter value.
 
-This feature will add accounting entries that clarify gains and losses from currency exchanges. The entries will be made in the realized currency adjustment profit and loss accounts when revaluation is done during sales tax settlement. For more information, see the [Tax settlement auto-balance in reporting currency](#tax-settlement-auto-balance-in-reporting-currency) section later in this topic.
+This feature will add accounting entries that clarify gains and losses from currency exchanges. The entries will be made in the realized currency adjustment profit and loss accounts when revaluation is done during sales tax settlement. For more information, see the [Tax settlement auto-balance in reporting currency](#tax-settlement-auto-balance-in-reporting-currency) section later in this article.
 
 > [!NOTE]
 > During settlement, information for financial dimensions is taken from sales tax accounts, which are balance sheet accounts, and entered in currency adjustment profit and loss accounts, which are profit and loss statement accounts. Because restrictions on the value of financial dimensions differ between balance sheet accounts and profit and loss statement accounts, an error can occur during the Settle and post sales tax process. To avoid having to modify account structures, you can turn on the "Populate financial dimensions to the realized currency adjustment profits/loss accounts for sales tax settlement" feature. This feature will force the derivation of financial dimensions to currency adjustment profits/loss accounts. 

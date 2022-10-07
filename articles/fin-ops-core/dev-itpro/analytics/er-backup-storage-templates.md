@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Backup storage of ER templates
-description: This topic explains how to use the Electronic reporting (ER) backup storage for recovery of templates.
-author: NickSelin
+description: This article explains how to use the Electronic reporting (ER) backup storage for recovery of templates.
+author: kfend
 ms.date: 04/29/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERWorkspace, ERSolutionTable
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 27621
-ms.assetid:
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2019-08-13
 ms.dyn365.ops.version: 10.0.5
-
+ms.custom: 27621
+ms.assetid: 
+ms.search.form: ERWorkspace, ERSolutionTable
 ---
 
 # Backup storage of ER templates
@@ -33,11 +23,11 @@ ms.dyn365.ops.version: 10.0.5
 
 The [Electronic reporting (ER) overview](general-electronic-reporting.md) lets business users configure formats for outbound documents according to the legal requirements of various countries and regions. Configured ER formats can use predefined templates to generate outbound documents in various formats, such as Microsoft Excel workbooks, Microsoft Word documents, or PDF documents. The templates are filled with data that the configured dataflow for generated documents requires.
 
-Each configured format can be published as part of an ER solution. Each ER solution can be exported from one instance of Finance and Operations and imported into another instance.
+Each configured format can be published as part of an ER solution. Each ER solution can be exported from one instance of finance and operations and imported into another instance.
 
-The ER framework uses the [Configure document management](../../fin-ops/organization-administration/configure-document-management.md) to keep the required templates for the current Finance and Operations instance. Depending on the settings of the ER framework, Microsoft Azure Blob storage or a Microsoft SharePoint folder can be selected as the physical primary storage location for templates. (For more information, see [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md).) The DocuValue table holds an individual record for each template. In each record, the **AccessInformation** field stores the path of a template file that is located in the configured storage location.
+The ER framework uses the [Configure document management](../../fin-ops/organization-administration/configure-document-management.md) to keep the required templates for the current finance and operations instance. Depending on the settings of the ER framework, Microsoft Azure Blob storage or a Microsoft SharePoint folder can be selected as the physical primary storage location for templates. (For more information, see [Configure the Electronic reporting (ER) framework](electronic-reporting-er-configure-parameters.md).) The DocuValue table holds an individual record for each template. In each record, the **AccessInformation** field stores the path of a template file that is located in the configured storage location.
 
-When you manage your Finance and Operations instances, you might decide to migrate the current instance to another location. For example, you might migrate your production instance to a new sandbox environment. If you configured the ER framework to store templates in Blob storage, the DocuValue table in the new sandbox environment refers to the instance of Blob storage in the production environment. However, this instance can't be accessed from the sandbox environment, because the migration process doesn't support the migration of artifacts in Blob storage. Therefore, if you try to run an ER format that uses a template to generate business documents, an exception occurs, and you're notified about the missing template. You're also guided to use the ER cleanup tool to delete and then re-import the ER format configuration that contains the template. Because you might have several ER format configurations, this process can be time consuming.
+When you manage your finance and operations instances, you might decide to migrate the current instance to another location. For example, you might migrate your production instance to a new sandbox environment. If you configured the ER framework to store templates in Blob storage, the DocuValue table in the new sandbox environment refers to the instance of Blob storage in the production environment. However, this instance can't be accessed from the sandbox environment, because the migration process doesn't support the migration of artifacts in Blob storage. Therefore, if you try to run an ER format that uses a template to generate business documents, an exception occurs, and you're notified about the missing template. You're also guided to use the ER cleanup tool to delete and then re-import the ER format configuration that contains the template. Because you might have several ER format configurations, this process can be time consuming.
 
 The Backup storage of ER templates feature can help you make your templates so that they are always available to generate business documents.
 
@@ -51,7 +41,7 @@ For this feature, every template of a new ER format configuration in the current
 - You import a new ER format configuration that contains a template.
 - You complete the draft version of an ER format configuration that contains a template.
 
-Backup copies of templates are migrated to a new instance of Finance and Operations as part of the application database.
+Backup copies of templates are migrated to a new instance of finance and operations as part of the application database.
 
 If a template of an ER format is required for generation of outbound documents, to process vendor payments including generation of payment advice and control reports, for example, but the required template isn't found in the primary storage location, the following events occur:
 
@@ -63,7 +53,7 @@ If a template of an ER format is required for generation of outbound documents, 
 
 To set up the **Automatically run the procedure of restoring the broken templates in batch** parameter, complete the following steps:
 
-1. In Finance and Operations, open the **Organization administration \> Electronic reporting \> Configurations page**.
+1. In finance and operations, open the **Organization administration \> Electronic reporting \> Configurations page**.
 2. On the **Configurations** page, on the Action Pane, on the **Configurations** tab, in the **Advanced settings** group, select **User parameters**.
 3. In the **User parameters** dialog box, set the required value for the **Automatically run the procedure of restoring the broken templates in batch** parameter.
 
@@ -88,7 +78,7 @@ By default, the process of automatically creating backup copies of templates tha
 
 If you set the **Stop making backup copies of templates** option to **Yes** and don't want to keep the backup copies that were previously made of templates, select **Clean up backup storage** on the **Electronic reporting parameters** page.
 
-If you upgraded your environment to Finance and Operations version 10.0.5 (October 2019) and want to migrate to a new environment that includes ER format configurations that can be run, select **Fill in backup storage** on the **Electronic reporting parameters** page before the migration occurs. This button starts the process of making backup copies of all available templates, so that they can be stored in the ER backup storage location for templates.
+If you upgraded your environment to finance and operations version 10.0.5 (October 2019) and want to migrate to a new environment that includes ER format configurations that can be run, select **Fill in backup storage** on the **Electronic reporting parameters** page before the migration occurs. This button starts the process of making backup copies of all available templates, so that they can be stored in the ER backup storage location for templates.
 
 ![Electronic reporting parameters page.](./media/GER-BackupTemplates-5.png)
 
@@ -98,7 +88,7 @@ Go to **Organization administration** \> **Electronic reporting** \> **Restore b
 
 ## Supported deployments
 
-In Finance and Operations version 10.0.5, the Backup storage of ER templates feature is available only in cloud deployments.
+In finance and operations version 10.0.5, the Backup storage of ER templates feature is available only in cloud deployments.
 
 ## Additional resources
 

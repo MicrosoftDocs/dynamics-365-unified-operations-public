@@ -1,27 +1,17 @@
---- 
-# required metadata 
- 
+---
 title: Design configurations to generate documents that have application data
-description: This topic describes how to design Electronic reporting (ER) configurations to generate an electronic document. (Part 1 - Import configurations). 
-author: NickSelin
+description: This article describes how to design Electronic reporting (ER) configurations to generate an electronic document. (Part 1 - Import configurations).
+author: kfend
 ms.date: 06/19/2017
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-# ms.search.form:   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: AX 7.0.0 
+ms.author: filatovm
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: AX 7.0.0
 ---
 # Design configurations to generate documents that have application data
 

@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Group records and aggregate calculations by using GROUPBY data sources
-description: This topic explains how you can use GROUPBY type data sources in Electronic reporting (ER).
-author: NickSelin
+description: This article explains how you can use GROUPBY type data sources in Electronic reporting (ER).
+author: kfend
 ms.date: 03/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERModelMappingDesigner, EROperationDesigner
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: ERModelMappingDesigner, EROperationDesigner
 ---
 
 # Group records and aggregate calculations by using GROUPBY data sources

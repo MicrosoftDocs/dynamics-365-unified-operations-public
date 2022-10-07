@@ -2,8 +2,8 @@
 # required metadata
 
 title: Set up taxes, tax regions, tax codes, and tax groups
-description: This topic describes the configuration of tax data and employer tax regions, including how to create tax regions, and then set up tax codes and tax groups.
-author: andreabichsel
+description: This article describes the configuration of tax data and employer tax regions, including how to create tax regions, and then set up tax codes and tax groups.
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.search.form: PayrollTaxCode, PayrollTaxGroup, PayrollWorkerTaxCode, PayrollWo
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 222684
 ms.assetid: 5fc7b03b-0a18-4dd5-a717-85e40fbbf357
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes the configuration of tax data and employer tax regions. It also explains how to create tax regions, and then set up tax codes and tax groups.
+This article describes the configuration of tax data and employer tax regions. It also explains how to create tax regions, and then set up tax codes and tax groups.
 
-Payroll taxes are set up in two parts. The first part, which is described in this topic, covers the settings that are used throughout the organization, such as the states where you have a nexus or the rates for unemployment taxes. The second part, which is described in [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md), covers the additional tax information that must be provided for each worker. For more information about payroll taxes, see [Tax codes, tax groups, and posting definitions FAQ](noam-usa-tax-codes-tax-groups-definitions.md) and [Payroll data updates FAQ](noam-usa-payroll-data-updates.md).
+Payroll taxes are set up in two parts. The first part, which is described in this article, covers the settings that are used throughout the organization, such as the states where you have a nexus or the rates for unemployment taxes. The second part, which is described in [Set up payroll for workers](noam-usa-worker-position-payroll-tasks.md), covers the additional tax information that must be provided for each worker. For more information about payroll taxes, see [Tax codes, tax groups, and posting definitions FAQ](noam-usa-tax-codes-tax-groups-definitions.md) and [Payroll data updates FAQ](noam-usa-payroll-data-updates.md).
 
 ## Prerequisites
 

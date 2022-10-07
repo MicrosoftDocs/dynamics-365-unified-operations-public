@@ -2,7 +2,7 @@
 # required metadata
 
 title: Poland overview
-description: This topic provides links to Microsoft Dynamics 365 Finance documentation resources for Poland. 
+description: This article provides links to Microsoft Dynamics 365 Finance documentation resources for Poland. 
 author: kfend
 ms.date: 01/07/2022
 ms.topic: overview
@@ -29,11 +29,12 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides links to documentation resources for Poland. 
+This article provides links to documentation resources for Poland. 
 
 - [Calculate line discounts from the unit price](emea-pol-line-discount-calculation-from-unit-price.md)
 - [Correction notes](emea-pol-correction-notes.md)
 - [Duplicate sales invoice numbering](emea-pol-sales-invoice-duplicates-numbering.md)
+- [EU sales list for Poland](emea-pol-eu-sales-list.md)
 - [Fixed asset depreciation](emea-pol-fixed-assets-depreciation.md)
 - [Fixed asset disposal](emea-pol-fixed-asset-disposal-functionality-extension.md)
 - [Foreign currency revaluation for bank accounts](emea-foreign-currency-revaluation.md)

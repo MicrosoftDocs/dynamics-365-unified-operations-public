@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Set up and run processing to call a simple exporting ER format to generate an Excel report
-description: This topic provides an example that shows how to set up and use electronic messages.
-author: liza-golub
+description: This article provides an example that shows how to set up and use electronic messages.
+author: AdamTrukawka
 ms.date: 07/06/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: 
-# ms.tgt_pltfrm: 
-ms.custom: 
+ms.reviewer: kfend
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: 2021-06-24
 ms.dyn365.ops.version: 10.0.21
-
+ms.custom: 
+ms.search.form: 
 ---
 
 # Set up and run processing to call a simple exporting ER format to generate an Excel report

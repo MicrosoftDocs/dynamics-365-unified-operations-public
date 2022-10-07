@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Electronic invoicing FAQ
-description: This topic provides information about frequently asked questions regarding Electronic invoicing.
+description: This article provides information about frequently asked questions regarding Electronic invoicing.
 author: gionoder
 ms.date: 04/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 97423
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: janeaug
+ms.author: gionoder
 ms.search.validFrom: 2020-07-08
 ms.dyn365.ops.version: AX 10.0.17
-
+ms.custom: 97423
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Electronic Invoicing FAQ
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides answers to frequently asked questions about Electronic Invoicing service. Electronic invoicing extends the electronic invoicing capabilities that exist in Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Project Operations. 
+This article provides answers to frequently asked questions about Electronic Invoicing service. Electronic invoicing extends the electronic invoicing capabilities that exist in Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Project Operations. 
 
 ## What is important about electronic invoicing and why should it matter to my organization?
 

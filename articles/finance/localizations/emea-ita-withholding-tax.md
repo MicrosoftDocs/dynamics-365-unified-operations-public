@@ -1,39 +1,28 @@
 ---
-# required metadata
-
 title: Withholding tax for Italy
-description: This topic explains how to configure up Italy-specific settings for withholding tax and Italian withholding tax reports.
-author: Anasyash
+description: This article explains how to configure up Italy-specific settings for withholding tax and Italian withholding tax reports.
+author: AdamTrukawka
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
+ms.search.region: Italy
+ms.author: atrukawk
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.custom: 272733
 ms.assetid: a5628f89-2ebb-4df2-a8a5-522649fb66da
-ms.search.region: Italy
-# ms.search.industry: 
-ms.author: anasyash
-ms.dyn365.ops.version: Version 1611
-ms.search.validFrom: 2016-11-30
-
 ---
 
 # Withholding tax for Italy
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to configure up Italy-specific settings for withholding tax and Italian withholding tax reports.
+This article explains how to configure up Italy-specific settings for withholding tax and Italian withholding tax reports.
 
-For Italy, there is a country-specific legal requirement that a buyer withhold a tax amount from some types of vendor payments, such as payments to self-employed vendors. The company must then remit the tax to the tax authority. Withholding tax is a tax that is withheld from the payment amount for vendor invoices. This topic describes Italy-specific settings for withholding tax and the following Italian reports: **Withholding tax - certification**, **Withholding tax - monthly**, and **Withholding tax - yearly**. Set up withholding tax codes at **Tax** &gt; **Indirect taxes** &gt; **Withholding tax** &gt; **Withholding tax codes**. Define standard settings on the **General** and **Calculation** FastTabs. On the **Italian reporting** FastTab, define the following settings.
+For Italy, there is a country-specific legal requirement that a buyer withhold a tax amount from some types of vendor payments, such as payments to self-employed vendors. The company must then remit the tax to the tax authority. Withholding tax is a tax that is withheld from the payment amount for vendor invoices. This article describes Italy-specific settings for withholding tax and the following Italian reports: **Withholding tax - certification**, **Withholding tax - monthly**, and **Withholding tax - yearly**. Set up withholding tax codes at **Tax** &gt; **Indirect taxes** &gt; **Withholding tax** &gt; **Withholding tax codes**. Define standard settings on the **General** and **Calculation** FastTabs. On the **Italian reporting** FastTab, define the following settings.
 
 |Field group|Field|Description|
 |------------|----------------|----------------|

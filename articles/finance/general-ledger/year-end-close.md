@@ -2,7 +2,7 @@
 # required metadata
 
 title: Year-end close
-description: This topic describes the required setup and steps for running the general ledger year-end close process. 
+description: This article describes the required setup and steps for running the general ledger year-end close process. 
 author: kweekley
 ms.date: 12/06/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: LedgerClosingSheet
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 14091
 ms.assetid: c64eed1d-df17-448e-8bb6-d94d63b14607
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the required setup and steps for running the general ledger year-end close process.
+This article describes the required setup and steps for running the general ledger year-end close process.
 
 At the end of a fiscal year, you must run the year-end close process to transfer opening balances to the new year. Most organizations will run the year-end close process multiple times. The first run moves the balances into the new fiscal year. The process can then be rerun as many times as required to move the balances from adjusting entries into the new fiscal year.
 

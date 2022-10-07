@@ -1,6 +1,6 @@
 ---
 title: Supply schedule
-description: This topic provides information about the Supply schedule page and its capabilities.
+description: This article provides information about the Supply schedule page and its capabilities.
 author: t-benebo
 ms.date: 9/3/2021
 ms.topic: article
@@ -23,7 +23,7 @@ The **Supply schedule** page shows a comprehensive overview of supply and demand
 
 You can open the **Supply schedule** page in any of the following ways:
 
-- Go to **Master planning \> Master planning \> Supply schedule**. In the **Modify filter** dialog box, specify the plan and product that you're looking for by entering filter values in the fields that are provided. (In the rest of this topic, the collection of filter values that you enter is referred to as "the filter" or "the current filter.") When you've finished, select **OK**.
+- Go to **Master planning \> Master planning \> Supply schedule**. In the **Modify filter** dialog box, specify the plan and product that you're looking for by entering filter values in the fields that are provided. (In the rest of this article, the collection of filter values that you enter is referred to as "the filter" or "the current filter.") When you've finished, select **OK**.
 - Go to **Product information management \> Products \> Released products**. Select or open a product. Then, on the Action Pane, on the **Plan** tab, in the **View** group, select **Supply schedule**.
 - Go to **Master planning \> Setup \> Demand forecasting \> Item allocation keys**. Select an item allocation key that is used as a product family. Then, on the Action Pane, select **Supply schedule**.
 - Go to **Master planning \> Master planning \> Planned orders**. Select or open a planned order. Then, on the Action Pane, on the **View** tab, in the **View** group, select **Supply schedule**.

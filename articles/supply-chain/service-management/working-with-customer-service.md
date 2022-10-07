@@ -46,7 +46,7 @@ Customer service includes the following functionality:
 
   - Service-level agreements that support a differentiated customer base
 
-The topics in this section provide an overview of the Customer service business process and each business process component. They also list the forms that are associated with each business process component, and they discuss the tasks that are associated with each business process component.
+The articles in this section provide an overview of the Customer service business process and each business process component. They also list the forms that are associated with each business process component, and they discuss the tasks that are associated with each business process component.
 
 
 

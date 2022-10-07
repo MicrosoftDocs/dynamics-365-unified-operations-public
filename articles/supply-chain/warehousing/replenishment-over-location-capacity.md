@@ -2,7 +2,7 @@
 # required metadata
 
 title: Replenishment over location capacity
-description: This topic provides information about the Replenishment over location capacity feature. This feature enables all replenishment work that will be required for the day to be created and manages availability of that replenishment work to ensure that the picking location neither runs out of inventory nor goes above capacity. 
+description: This article provides information about the Replenishment over location capacity feature. This feature enables all replenishment work that will be required for the day to be created and manages availability of that replenishment work to ensure that the picking location neither runs out of inventory nor goes above capacity. 
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -41,11 +41,11 @@ To make this feature available, turn on the following features in [feature manag
 
 ## Set up the feature for the example scenario
 
-This section provides guidelines and an example that shows how to set up this feature and prepare sample data for the example scenario that is provided later in this topic.
+This section provides guidelines and an example that shows how to set up this feature and prepare sample data for the example scenario that is provided later in this article.
 
 ### Enable sample data
 
-To work through the [example scenario](#example-scenario) by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
+To work through the [example scenario](#example-scenario) by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
 
 ### Location profile
 
@@ -149,7 +149,7 @@ Replenishment templates are a set of rules that control when and how a location 
 
 ## Example scenario
 
-After you've made all the previously described sample data available and set it up, you can work through this scenario to try out the *Replenishment over location capacity* feature. The values that are shown in this scenario assume that you're working with the standard demo data, that you selected the **USMF** legal entity, and that you prepared the sample records that are described earlier in this topic. This scenario also serves as an example that shows how the feature can be used in a production setting.
+After you've made all the previously described sample data available and set it up, you can work through this scenario to try out the *Replenishment over location capacity* feature. The values that are shown in this scenario assume that you're working with the standard demo data, that you selected the **USMF** legal entity, and that you prepared the sample records that are described earlier in this article. This scenario also serves as an example that shows how the feature can be used in a production setting.
 
 ### Create replenishment work
 

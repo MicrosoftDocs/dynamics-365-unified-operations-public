@@ -1,14 +1,14 @@
 ---
 title: Set up a local development environment
-description: This topic explains how to set up a local development environment for Microsoft Dynamics 365 Commerce Cloud scale unit (CSU) and Point of Sale (POS) development.
-author: mugunthanm
+description: This article explains how to set up a local development environment for Microsoft Dynamics 365 Commerce Cloud scale unit (CSU) and Point of Sale (POS) development.
+author: josaw1
 ms.date: 09/16/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 09-16-2021
+ms.author: josaw
+ms.search.validFrom: 2021-09-16
 ms.dyn365.ops.version: AX 10.0.22
 ---
 
@@ -16,10 +16,10 @@ ms.dyn365.ops.version: AX 10.0.22
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up a local development environment for Microsoft Dynamics 365 Commerce Cloud scale unit (CSU) and Point of Sale (POS) development. It applies to Dynamics 365 Commerce application version 10.0.22 and later.
+This article explains how to set up a local development environment for Microsoft Dynamics 365 Commerce Cloud scale unit (CSU) and Point of Sale (POS) development. It applies to Dynamics 365 Commerce application version 10.0.22 and later.
 
 > [!IMPORTANT]
-> The environment setup that is described in this topic can be used only for extension development. It can't be used for testing, user acceptance testing (UAT), or production.
+> The environment setup that is described in this article can be used only for extension development. It can't be used for testing, user acceptance testing (UAT), or production.
 
 ## Supported development environment types
 
@@ -33,7 +33,7 @@ Commerce supports both cloud-based environments and local environments.
 
 ## Hardware requirements
 
-We recommend that you use a Windows machine with 16 GB of RAM and a minimum of two CPU cores. If you are running Finance and Operations apps, Retail Server, e-Commerce development, and other concurrent process, then we recommend 24 GB of RAM with four CPU cores.
+We recommend that you use a Windows machine with 16 GB of RAM and a minimum of two CPU cores. If you are running finance and operations apps, Retail Server, e-Commerce development, and other concurrent process, then we recommend 24 GB of RAM with four CPU cores.
 
 ## Local self-hosted CSU
 
@@ -92,7 +92,7 @@ Before you set up the self-hosted or IIS-hosted environment, complete the follow
     + To verify that the **PATH** variable is set correctly, run the command `msbuild/version` from a regular command prompt. Don't use Developer Command Prompt. The command should print a version number of at least 15. After you've finished setting up MSBuild, restart Visual Studio Code.
 
 5. Install Microsoft.NET.Sdk by using the previously downloaded Visual Studio tools. Go to **Individual components**, enter **.NET SDK**, select the checkbox for the .NET SDK, and then select **Install**.
-6. Install the 64-bit version of Node.JS from [Download and Install Node](https://nodejs.org/en/download/). Make sure that the **PATH** environment variable point to the location. If you're prompted, select the **Automatically install the necessary tools** checkbox.
+6. Install the 64-bit version of Node.js from [Download and Install Node](https://nodejs.org/en/download/). Make sure that the **PATH** environment variable point to the location. If you're prompted, select the **Automatically install the necessary tools** checkbox.
 7. Install the 64-bit version of Visual Studio Code for Windows from [Download Visual Studio Code](https://code.visualstudio.com/download).
 8. Install the C# for Visual Studio Code (powered by OmniSharp) extension for Visual Studio Code by following the instructions in [Extension Marketplace](https://code.visualstudio.com/docs/editor/extension-marketplace).
 9. Clone or download the [Scale Unit GitHub repository (repo)](https://github.com/microsoft/Dynamics365Commerce.ScaleUnit).
@@ -231,3 +231,4 @@ If the setup doesn't work as expected, or if you need help, use the following li
 + [Retail Interest Group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=1585934)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Expression constraints and table constraints in product configuration models
-description: This topic describes the use of expression constraints and table constraints. Constraints control the attribute values that you can select when you configure products for a sales order, sales quotation, purchase order, or production order. You can use expression constraints or table constraints, depending on how you prefer to build the constraints. 
+description: This article describes the use of expression constraints and table constraints. Constraints control the attribute values that you can select when you configure products for a sales order, sales quotation, purchase order, or production order. You can use expression constraints or table constraints, depending on how you prefer to build the constraints. 
 author: t-benebo
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the use of expression constraints and table constraints. Constraints control the attribute values that you can select when you configure products for a sales order, sales quotation, purchase order, or production order. You can use expression constraints or table constraints, depending on how you prefer to build the constraints. 
+This article describes the use of expression constraints and table constraints. Constraints control the attribute values that you can select when you configure products for a sales order, sales quotation, purchase order, or production order. You can use expression constraints or table constraints, depending on how you prefer to build the constraints. 
 
 Constraints are used to control the attribute values that you can select when you configure products for a sales order, sales quotation, purchase order, or production order. You can use expression constraints or table constraints, depending on how you prefer to build the constraints.
 
@@ -110,7 +110,7 @@ The following tables list the operators and infix notation that you can use when
 <tbody>
 <tr class="odd">
 <td>Implies</td>
-<td>This is true if the first condition is false, the second condition is true, or both.</td>
+<td>If condition a is true, then apply the contraint b.</td>
 <td>Implies[a, b], infix: a -: b</td>
 <td><ul>
 <li><strong>Operator:</strong> Implies[x != 0, y &gt;= 0]</li>

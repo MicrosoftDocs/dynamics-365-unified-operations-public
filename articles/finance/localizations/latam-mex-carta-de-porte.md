@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Waybill (Carta de Porte) complement
-description: This topic explains how to set up and submit packing slips and transfer orders that include the Waybill (Carta de Porte) complement.
-author: v-oloski
+description: This article explains how to set up and submit packing slips and transfer orders that include the Waybill (Carta de Porte) complement.
+author: AdamTrukawka
 ms.date: 03/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Mexico
-# ms.search.industry: 
-ms.author: v-olgaoskina
+ms.author: atrukawk
 ms.search.validFrom: 2021-08-31
 ms.dyn365.ops.version: 10.0.23
-
+ms.search.form: 
 ---
 
 # Waybill (Carta de Porte) complement
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about how to set up and submit packing slips and transfer orders that include the Waybill (Carta de Porte) complement. As of October 1, 2021, the Waybill (Carta de Porte) complement is mandatory for taxpayers who transport goods and merchandise in the national territory.
+This article provides information about how to set up and submit packing slips and transfer orders that include the Waybill (Carta de Porte) complement. As of October 1, 2021, the Waybill (Carta de Porte) complement is mandatory for taxpayers who transport goods and merchandise in the national territory.
 
 To generate the Waybill (Carta de Porte) complement in electronic invoice (CFDI) documents, enter transportation information on the **Transportation details** page. You can open this page from any of the following business documents:
 

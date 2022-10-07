@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: List of ER functions in the business domain–specific category
-description: This topic provides information about the business domain–specific functions that are supported in Electronic reporting (ER).
-author: NickSelin
+description: This article provides information about the business domain–specific functions that are supported in Electronic reporting (ER).
+author: kfend
 ms.date: 12/12/2019
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 58771
-ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 58771
+ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # List of ER functions in the business domain–specific category
 
 [!include [banner](../includes/banner.md)]
 
-Electronic reporting (ER) domain-specific functions can be used to perform calculations and data access requests that are specific to the implementation of Microsoft Dynamics 365 Finance. This topic provides a summary of these functions.
+Electronic reporting (ER) domain-specific functions can be used to perform calculations and data access requests that are specific to the implementation of Microsoft Dynamics 365 Finance. This article provides a summary of these functions.
 
 ## List of supported functions
 

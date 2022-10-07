@@ -1,6 +1,6 @@
 ---
 title: Cycle counting example scenarios
-description: This topic provides a collection of scenarios that explore the cycle counting features of Microsoft Dynamics 365 Supply Chain Management.
+description: This article provides a collection of scenarios that explore the cycle counting features of Microsoft Dynamics 365 Supply Chain Management.
 author: GalynaFedorova
 ms.date: 06/08/2021
 ms.topic: article
@@ -17,17 +17,17 @@ ms.dyn365.ops.version: 10.0.20
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides a collection of scenarios that explore the cycle counting features of Microsoft Dynamics 365 Supply Chain Management. It first describes the requirements for your existing Supply Chain Management environment. It then explains how to configure cycle counting and describes all the cycle counting stages. When you've finished, you should have a good understanding of cycle counting, including guided cycle counting, blind cycle counting, spot cycle counting, cycle count thresholds, and cycle count plans.
+This article provides a collection of scenarios that explore the cycle counting features of Microsoft Dynamics 365 Supply Chain Management. It first describes the requirements for your existing Supply Chain Management environment. It then explains how to configure cycle counting and describes all the cycle counting stages. When you've finished, you should have a good understanding of cycle counting, including guided cycle counting, blind cycle counting, spot cycle counting, cycle count thresholds, and cycle count plans.
 
 ## Prerequisites
 
 ### Make demo data available
 
-Each scenario in this topic references values and records that are included in the standard demo data that is provided for Supply Chain Management. If you want to use the values that are provided here as you work through the scenarios, be sure to work in an environment where the demo data is installed, and set the legal entity (company) to **USMF** before you begin.
+Each scenario in this article references values and records that are included in the standard demo data that is provided for Supply Chain Management. If you want to use the values that are provided here as you work through the scenarios, be sure to work in an environment where the demo data is installed, and set the legal entity (company) to **USMF** before you begin.
 
 ### Turn on support for the Warehouse Management mobile app
 
-To use the Warehouse Management mobile app, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on in your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *User settings, icons, and step titles for the new warehouse app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+To use the Warehouse Management mobile app, the *User settings, icons, and step titles for the new warehouse app* feature must be turned on for your system. As of Supply Chain Management 10.0.25, this feature is mandatory and can't be turned off. If you are running a version older than 10.0.25, then admins can turn this functionality on or off by searching for the *User settings, icons, and step titles for the new warehouse app* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ### <a name= "prepare-demo-data"></a>Prepare demo data for the scenarios
 
@@ -122,7 +122,7 @@ Follow these steps to confirm that all the demo data that is required for the sc
 1. In the list pane, select warehouse *61*. If no existing record has this name, create it.
 1. On the **Warehouse** FastTab, set the following values:
 
-    - **Use warehouse management process:** *Yes* (This value enables the warehouse for warehouse management processes.)
+    - **Use warehouse management process:** *Yes* (This value enables the warehouse for warehouse management processes (WMS).)
     - **Allow license plate moves during cycle counting:** *Yes* (This value enables workers to move license plates during a cycle count.)
 
 ## Scenario 1: Guided cycle counting
@@ -153,7 +153,7 @@ Follow these steps to create cycle counting work for item location *01A02R2S2B* 
 
 After you've created the cycle counting work, you do the work by counting items in a warehouse location and then using a mobile device to enter the results in Supply Chain Management. Follow these steps to do the cycle counting work in the Warehouse Management mobile app.
 
-1. Sign in to the Warehouse Management mobile app as the work user that you set up in the [Prepare demo data for the scenarios](#prepare-demo-data) section earlier in this topic. For the example in this topic, the user is named *Julia Funderburk* and is set up for warehouse *61*. (The USMF demo data should let you sign in as this work user by entering *61* as the user ID and *1* as the password.)
+1. Sign in to the Warehouse Management mobile app as the work user that you set up in the [Prepare demo data for the scenarios](#prepare-demo-data) section earlier in this article. For the example in this article, the user is named *Julia Funderburk* and is set up for warehouse *61*. (The USMF demo data should let you sign in as this work user by entering *61* as the user ID and *1* as the password.)
 1. On the main menu, select **Inventory**.
 1. On the **Inventory** menu, select **Cycle Count Guided**.
 1. Select the **Qty** field, enter *9* by using the number pad, and then select **OK** (the check mark button).
@@ -222,7 +222,7 @@ Before blind cycle counting can occur, you must create some work. Follow these s
 
 After you've created the cycle counting work, following these steps to do the work in the Warehouse Management mobile app.
 
-1. Sign in to the Warehouse Management mobile app as the work user that you set up in the [Prepare demo data for the scenarios](#prepare-demo-data) section earlier in this topic. For the example in this topic, the user is named *Julia Funderburk* and is set up for warehouse *61*. (The USMF demo data should let you sign in as this work user by entering *61* as the user ID and *1* as the password.)
+1. Sign in to the Warehouse Management mobile app as the work user that you set up in the [Prepare demo data for the scenarios](#prepare-demo-data) section earlier in this article. For the example in this article, the user is named *Julia Funderburk* and is set up for warehouse *61*. (The USMF demo data should let you sign in as this work user by entering *61* as the user ID and *1* as the password.)
 1. On the main menu, select **Inventory**.
 1. On the **Inventory** menu, select **Cycle Count Blind**.
 1. Select the **Zone ID** field, enter *BULK06*, and then select **OK** (the check mark button).
@@ -254,7 +254,7 @@ The on-hand record states that there is an on-hand quantity of item *L0101* at l
 
 Follow these steps to do the cycle counting work in the Warehouse Management mobile app.
 
-1. Sign in to the Warehouse Management mobile app as the work user that you set up in the [Prepare demo data for the scenarios](#prepare-demo-data) section earlier in this topic. For the example in this topic, the user is named *Julia Funderburk* and is set up for warehouse *61*. (The USMF demo data should let you sign in as this work user by entering *61* as the user ID and *1* as the password.)
+1. Sign in to the Warehouse Management mobile app as the work user that you set up in the [Prepare demo data for the scenarios](#prepare-demo-data) section earlier in this article. For the example in this article, the user is named *Julia Funderburk* and is set up for warehouse *61*. (The USMF demo data should let you sign in as this work user by entering *61* as the user ID and *1* as the password.)
 1. On the main menu, select **Inventory**.
 1. On the **Inventory** menu, select **Spot counting**.
 1. Select the **Location** field, enter *01A02R2S1B*, and then select **OK** (the check mark button).

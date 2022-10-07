@@ -1,36 +1,28 @@
 ---
-# required metadata
-
 title: Deployment guidelines for cash registers for France
-description: This topic provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for France.
+description: This article provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for France.
 author: EvgenyPopovMBS
-manager: annbe
-ms.date: 08/10/2021
+ms.date: 08/16/2022
 ms.topic: article
 ms.prod: 
-
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: France
-ms.search.industry: Retail
 ms.author: josaw
-ms.search.validFrom: 2021-4-30
+ms.search.validFrom: 2021-04-30
 ms.dyn365.ops.version: 10.0.18
-
+ms.search.industry: Retail
+manager: annbe
 ---
 # Deployment guidelines for cash registers for France
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. These extensions let you perform actions such as printing custom fields on receipts, registering additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally signing sales transactions, and printing X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](./emea-fra-cash-registers.md). For more information about how to configure Commerce for France, see [Set up Commerce for France](./emea-fra-cash-registers.md#set-up-commerce-for-france).
+> [!WARNING]
+> You should only implement the steps that are described in this article if you are using Commerce version 10.0.28 or earlier. Starting with version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you are using Commerce version 10.0.28 or earlier and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](#migrate-to-commerce-version-10029-or-later).
+
+This article provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for France. The localization consists of several extensions of components. These extensions let you perform actions such as printing custom fields on receipts, registering additional audit events, sales transactions, and payment transactions in Point of Sale (POS), digitally signing sales transactions, and printing X and Z reports in local formats. For more information about the localization for France, see [Cash register functionality for France](./emea-fra-cash-registers.md). For more information about how to configure Commerce for France, see [Set up Commerce for France](./emea-fra-cash-registers.md#set-up-commerce-for-france).
 
 > [!NOTE]
 > This version of the Commerce cash register functionality for France is based on the [fiscal integration framework](./fiscal-integration-for-retail-channel.md). For information about the legacy digital signing sample for France, see [Deployment guidelines for cash registers for France (legacy)](./emea-fra-deployment.md). For guidelines about how to enable the fiscal integration functionality for France in existing environments that use the legacy digital signing sample, see [Migrate from legacy Commerce functionality for France](./emea-fra-fi-migration.md).
@@ -120,6 +112,9 @@ To enable Modern POS extension components, follow these steps.
             }, 
             {
                 "baseUrl": "Microsoft/FifAuditEvent.FR"
+            },
+            {
+                "baseUrl": "Microsoft/RestrictShiftDuration"
             }
         ]
     }
@@ -146,6 +141,9 @@ To enable Cloud POS extension components, follow these steps.
             }, 
             {
                 "baseUrl": "Microsoft/FifAuditEvent.FR"
+            },
+            {
+                "baseUrl": "Microsoft/RestrictShiftDuration"
             }
         ]
     }
@@ -180,6 +178,9 @@ To create deployable packages that contain Commerce components, and to apply tho
             }, 
             {
                 "baseUrl": "Microsoft/FifAuditEvent.FR"
+            },
+            {
+                "baseUrl": "Microsoft/RestrictShiftDuration"
             }
         ]
     }
@@ -188,14 +189,20 @@ To create deployable packages that contain Commerce components, and to apply tho
 1. Open the MSBuild Command Prompt for Visual Studio utility, and run **msbuild** under the Retail SDK folder to create deployable packages.
 1. Apply the packages via Microsoft Dynamics Lifecycle Services (LCS) or manually. For more information, see [Create deployable packages](../dev-itpro/retail-sdk/retail-sdk-packaging.md).
 
-## Enable the digital signature in offline mode for Modern POS
+## Migrate to Commerce version 10.0.29 or later
 
-To enable the digital signature in offline mode for Modern POS, you must follow these steps after you activate Modern POS on a new device.
+The steps described in this section are required if you are using Commerce version 10.0.28 or earlier and are migrating to version 10.0.29 or later. You must follow the steps below to correctly update your Commerce environment.
 
-1. Sign in to POS.
-1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending downloads** field is **0** (zero), the database is fully synchronized.
-1. Sign out of POS.
-1. Wait for the offline database to be fully synchronized.
-1. Sign in to POS.
-1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending transactions in offline database** field is **0** (zero), the database is fully synchronized.
-1. Restart Modern POS.
+1. Update Commerce headquarters.
+1. Enable [France-specific features](./emea-fra-cash-registers.md#enable-features-for-france) in the **Feature management** workspace and distribute the changes to channels.
+1. Update Commerce runtime, Cloud POS, and Modern POS, and exclude the following legacy France-specific extensions:
+    - Commerce runtime extensions in the **commerceruntime.ext.config** and **CommerceRuntime.MPOSOffline.Ext.config** files:
+        - Microsoft.Dynamics.Commerce.Runtime.ReceiptsFrance
+        - Microsoft.Dynamics.Commerce.Runtime.RegisterAuditEventFrance
+        - Microsoft.Dynamics.Commerce.Runtime.RestrictShiftDuration
+        - Microsoft.Dynamics.Commerce.Runtime.XZReportsFrance
+    - POS extensions in the **extensions.json** file:
+        - Microsoft/Receipts.FR
+        - Microsoft/FifAuditEvent.FR
+        - Microsoft/RestrictShiftDuration
+        

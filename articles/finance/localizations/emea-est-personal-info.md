@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Personal information requests for Estonia
-description: This topic provides information about personal information requests for Estonia.
-author: ShylaThompson
+description: This article provides information about personal information requests for Estonia.
+author: AdamTrukawka
 ms.date: 03/26/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Estonia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
-
 ---
 
 # Personal information requests for Estonia

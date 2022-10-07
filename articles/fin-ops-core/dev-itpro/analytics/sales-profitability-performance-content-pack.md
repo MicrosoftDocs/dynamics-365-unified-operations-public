@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Sales and profitability performance Power BI content
-description: This topic describes what's included in the Sales and profitability performance Power BI content.
-author: ShylaThompson
+description: This article describes what's included in the Sales and profitability performance Power BI content.
+author: Henrikan
 ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: SalesProfitabilityPerformancePowerBI 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 260674
-ms.assetid: ab457f02-929e-4d34-b813-335be3092287
+ms.reviewer: kamaybac
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: kfend
+ms.author: henrikan
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 260674
+ms.assetid: ab457f02-929e-4d34-b813-335be3092287
+ms.search.form: SalesProfitabilityPerformancePowerBI
 ---
 
 # Sales and profitability performance Power BI content
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes what is included in the **Sales and profitability performance** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
+This article describes what is included in the **Sales and profitability performance** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.
 
 ## Overview
 
@@ -81,7 +71,7 @@ The **Sales and profitability performance** Power BI content includes a report t
 ## Understanding the data model and entities
 The following data is used to fill the report in the **Sales and profitability performance** Power BI content. This data is represented as aggregate measurements that are staged in the Entity store. The Entity store is a Microsoft SQL Server database that is optimized for analytics. For more information, see [Power BI integration with Entity store](power-bi-integration-entity-store.md).
 
-The aggregate measurements in this content are the subset of aggregate measurements that were available in the Sales Cube in Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 R3. To stage the cube's aggregate measurements in the Entity store, you must make them deployable. For more information, see the procedure for staging aggregate measurements in the Entity store in the [Power BI integration with Entity Store in Dynamics](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update) blog post.
+The aggregate measurements in this content are the subset of aggregate measurements that were available in the sales cube in Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 R3. To stage the cube's aggregate measurements in the Entity store, you must make them deployable. For more information, see the procedure for staging aggregate measurements in the Entity store in the [Power BI integration with Entity Store in Dynamics](/archive/blogs/dynamicsaxbi/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update) blog post.
 
 The following key aggregate measurements of the Invoice lines entity are used as the basis of the content.
 
@@ -99,7 +89,7 @@ The following table shows the key aggregate measurements of the Invoice lines en
 | Gross margin      | SUM(Gross profit / (Revenue - Sales tax (included in customer invoice line amount)))             |
 | Revenue last year | Revenue last year = CALCULATE(SUM('Invoice lines'\[Revenue\]), SAMEPERIODLASTYEAR(Dates\[Date\]) |
 
-The following key dimensions in the Sales Cube are used as filters to slice the aggregate measurements, so that you can achieve greater granularity and gain deeper analytical insights.
+The following key dimensions in the sales cube are used as filters to slice the aggregate measurements, so that you can achieve greater granularity and gain deeper analytical insights.
 
 | Entity           | Examples of attributes                               |
 |------------------|------------------------------------------------------|

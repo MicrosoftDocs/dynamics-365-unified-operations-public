@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Commerce data residency
-description: This topic provides information about data residency considerations when deploying the Commerce Scale Unit (cloud).
-author: AamirAllaq
+description: This article provides information about data residency considerations when deploying the Commerce Scale Unit (cloud).
+author: jashanno
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: retail
-ms.author: aamiral
-ms.search.validFrom: 2018-4-30 
-ms.dyn365.ops.version: 8.0 
+ms.author: jashanno
+ms.search.validFrom: 2018-04-30
+ms.dyn365.ops.version: 8
 ---
 
 

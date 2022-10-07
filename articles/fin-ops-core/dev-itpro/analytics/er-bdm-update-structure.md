@@ -1,30 +1,20 @@
 ---
-# required metadata
-
-title: Update the structure of a business document template 
-description: This topic explains how to update the structure of a business document template by using the Business document management feature.
-author: NickSelin
+title: Update the structure of a business document template
+description: This article explains how to update the structure of a business document template by using the Business document management feature.
+author: kfend
 ms.date: 11/19/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2019-12-01
 ms.dyn365.ops.version: 10.0.9
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: ERBDWorkspace, ERBDParameters, ERBDTemplateEditor
 ---
 
 # Update the structure of a business document template 

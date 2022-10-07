@@ -2,8 +2,8 @@
 # required metadata
 
 title: Move licenses between agreement types
-description: This topic explains how to move licenses between agreement types.
-author: ClaudiaBetz-Haubold 
+description: This article explains how to move licenses between agreement types.
+author: markusotte08
 ms.date: 01/26/2022
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: sericks
 # ms.custom: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: chaubold
+ms.author: maotte
 ms.search.validFrom: 2018-05-30 
 ms.dyn365.ops.version: AX 7.0
 ---

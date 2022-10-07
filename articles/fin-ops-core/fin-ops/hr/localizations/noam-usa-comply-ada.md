@@ -2,7 +2,7 @@
 # required metadata
 
 title: Comply with the Americans with Disabilities Act (ADA)
-description: This topic describes features that can help your organization comply with the Americans with Disabilities Act (ADA).
+description: This article describes features that can help your organization comply with the Americans with Disabilities Act (ADA).
 author: twheeloc
 ms.date: 01/10/2022
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../../includes/peap-1.md)]
 
-This topic describes features that can help your organization comply with the Americans with Disabilities Act (ADA). This information applies only to legal entities that do business in the United States.
+This article describes features that can help your organization comply with the Americans with Disabilities Act (ADA). This information applies only to legal entities that do business in the United States.
 
 You can use the following features to manage information that can help you comply with the ADA.
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dual-use goods
-description: This topic explains how to keep track of products that are identified as dual-use goods, store certificate numbers for each relevant product and destination country, and print valid certificate numbers on relevant invoices, packing slips, and/or sales orders.
+description: This article explains how to keep track of products that are identified as dual-use goods, store certificate numbers for each relevant product and destination country, and print valid certificate numbers on relevant invoices, packing slips, and/or sales orders.
 author: t-benebo
 ms.date: 07/15/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
@@ -38,7 +38,7 @@ Consider the following scenario:
 2. The **Released product details** page for product X-100 indicates that it's a dual-use good. Together, the code, category, group, and regime indicate the export control classification that the product belongs to.
 3. The **Dual use certificates** page includes a certificate for product X-100 when it's shipped to France. This certificate expires January 1, 2020.
 4. On June 17, 2020, you create a sales order for a customer company that is based in France, and the order includes product X-100.
-5. When you save the sales order, the system determines the following information:
+5. When you confirm the sales order, the system determines the following information:
 
     1. Does the order include any products that are dual-use goods?
     2. If the order includes dual-use goods, does the destination country require dual-use certificates?
@@ -46,7 +46,7 @@ Consider the following scenario:
 
 6. The order includes product X-100, the product is being shipped to France, and a French certificate exists for the product. However, the certificate has expired. Therefore, you receive the following warning message: "Dual use certificates for one or more dual-use items in this sales order aren't valid. Do you want to proceed with the confirmation?"
 
-This topic explains how to configure all the settings that are required to set up dual-use goods and support this scenario.
+This article explains how to configure all the settings that are required to set up dual-use goods and support this scenario.
 
 ## Define dual-use requirements for each relevant country
 
@@ -89,7 +89,14 @@ To identify a product as a dual-use good and apply a dual-use category to it, fo
 1. On the **Foreign trade** FastTab, set the **Dual use products** option to **Yes** to identify the current product as a dual-use good.
 1. Set the **Dual use code** field to the code that applies to the current product. (You defined this code on the **Dual use categories** page.)
 
-This setup is checked when you create a sales order.
+> [!NOTE]
+>
+> The system makes the following dual-use checks when it generates a sales confirmation:
+>
+> 1. Does the order include any dual-use goods?
+> 1. If so, does the destination country require dual-use certificates?
+> 1. If so, do certificates exist for each dual-use good for the destination country, and are those certificates valid for the confirmed ship dates?
+> 1. If the answers to questions 1 and 2 are "Yes" and the answer to question 3 is "No", then the system shows a warning to inform the user that dual-use certificates are missing for one or more dual-use goods in the sales order. The user should probably obtain the required certificates and try again, but could instead overrule the warning and proceed with the sales confirmation if they wish.
 
 ## Set up dual-use certificates
 

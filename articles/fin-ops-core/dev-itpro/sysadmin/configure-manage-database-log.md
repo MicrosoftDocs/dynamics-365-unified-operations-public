@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Configure database logging
-description: This topic describes how to set up database logging, how to manage security and performance, and how to clean up database logs.
-author: hasaid
+description: This article describes how to set up database logging, how to manage security and performance, and how to clean up database logs.
+author: Peakerbl
 ms.date: 03/11/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 57201
-ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 57201
+ms.assetid: 22a56b7d-4e07-4161-8416-0cac4a0b65a2
 ---
 
 # Configure database logging

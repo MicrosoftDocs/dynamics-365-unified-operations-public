@@ -2,7 +2,7 @@
 # required metadata
 
 title: Maintenance checklists
-description: This topic describes maintenance checklists in Asset Management.
+description: This article describes maintenance checklists in Asset Management.
 author: johanhoffmann
 ms.date: 10/15/2019
 ms.topic: article
@@ -41,7 +41,7 @@ When you work with maintenance checklists on a work order, you can fill in the p
 
 ## Fill in a maintenance checklist
 
-1. Click **Asset management** > **Common** > **Work orders** > **All work orders** or **Active work orders**.
+1. Click **Asset management** > **Work orders** > **All work orders** or **Active work orders**.
 
 2. Select the work order and then, on the Action Pane, on the **Work order** tab, in the **Lines** group, select **Maintenance checklist**.
 

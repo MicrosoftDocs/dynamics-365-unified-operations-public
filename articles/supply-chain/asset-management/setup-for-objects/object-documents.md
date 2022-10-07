@@ -2,7 +2,7 @@
 # required metadata
 
 title: Asset documents
-description: This topic explains asset documents in Asset Management.
+description: This article explains asset documents in Asset Management.
 author: johanhoffmann
 ms.date: 06/26/2019
 ms.topic: article
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
  
 
-This topic explains asset documents in Asset Management.
+This article explains asset documents in Asset Management.
 
 In Asset Management, you can set up documents so that they are automatically related to job types, asset manufacturers, asset types, or assets, for example. This functionality is useful when updated document versions are released. In that case, you just have to put the updated document in the standard location that you use for your Supply Chain Management documents, and attach the document to the asset document record that you've created. The updated document can then be accessed from the **All assets**, **Active assets**, **My active assets**, **All work orders**, and **Active work order jobs** menu items. The process for attaching documents to an asset document record uses the standard document handling system.
 

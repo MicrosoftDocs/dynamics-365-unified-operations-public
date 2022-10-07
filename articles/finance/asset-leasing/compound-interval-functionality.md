@@ -2,7 +2,7 @@
 # required metadata
 
 title: Compounding interval functionality
-description: This topic provides information that will help you choose among monthly, quarterly, semiannual, and annual compounding intervals.
+description: This article provides information that will help you choose among monthly, quarterly, semiannual, and annual compounding intervals.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: AssetLeaseDetail
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -32,12 +32,12 @@ ms.dyn365.ops.version: 10.0.14
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic provides information that will help you choose among monthly, quarterly, semiannual, and annual compounding intervals. The compounding interval functionality is used to determine the number of compounding periods per year in a lease's payment schedule. Each of the four examples in this topic shows what a lease's payment schedule will look like for a different interval.
+This article provides information that will help you choose among monthly, quarterly, semiannual, and annual compounding intervals. The compounding interval functionality is used to determine the number of compounding periods per year in a lease's payment schedule. Each of the four examples in this article shows what a lease's payment schedule will look like for a different interval.
 
 You can't select a compounding interval that is less frequent than the lease's payment frequency. For example, a quarterly compounding interval can't be used with a monthly payment frequency, and an annual compounding interval can't be used with a semiannual payment frequency. If you try to select a compounding interval that is less frequent than the lease's payment frequency, you receive an error message.
 
 > [!NOTE]
-> In all four examples in this topic, the compounding interval matches the payment frequency.
+> In all four examples in this article, the compounding interval matches the payment frequency.
 
 ## Examples
 

@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Script injectors
-description: This topic covers script injectors that can be used to add scripts to online pages in Microsoft Dynamics 365 Commerce.
+description: This article covers script injectors that can be used to add scripts to online pages in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 05/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 # Script injectors
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers script injectors that can be used to add scripts to online pages in Microsoft Dynamics 365 Commerce.
+This article covers script injectors that can be used to add scripts to online pages in Microsoft Dynamics 365 Commerce.
 
 The Dynamics 365 Commerce module library provides two prebuilt script injector modules: **external script** and **inline script**. You can add these modules to a page or page template to inject inline or external scripts into the HTML head, body begin, or body end of a page as needed. For example, you can add a script for integration with third-party analytics, or other service scripts.
 

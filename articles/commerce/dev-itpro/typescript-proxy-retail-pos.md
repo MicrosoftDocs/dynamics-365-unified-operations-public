@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: TypeScript and C# proxies for Retail point of sale (POS)
-description: This topic provides information about the Commerce proxy and explains how to generate it.
-author: mugunthanm
+description: This article provides information about the Commerce proxy and explains how to generate it.
+author: josaw1
 ms.date: 08/26/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 83892
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-10-20
 ms.dyn365.ops.version: AX 7.0.0, Retail October 2017 update
-
+ms.custom: 83892
 ---
 
 # TypeScript and C# proxies for Retail point of sale (POS)
@@ -45,7 +34,7 @@ There two types of proxy to support cross-platform scenarios:
 - **TypeScript proxy** – The POS uses the TypeScript proxy to access the Retail Server APIs and CRT entities. If the POS uses Retail Server, it requires the TypeScript proxy. Otherwise, the POS can't communicate with the Retail Server for any operations or workflows.
 - **C# proxy** – The POS uses the C# proxy when it's offline. (When the POS is offline, it communicates directly with CRT, without using Retail Server.) The POS also uses this proxy for the Dynamics e-Commerce platform. If you want your customization to work when the POS is offline, and you want your e-Commerce client to access the Retail Server APIs, you must generate the C# proxy.
 
-The steps to generate the TypeScript proxy and the C# proxy differ. The rest of this topic explains how to generate each type of proxy.
+The steps to generate the TypeScript proxy and the C# proxy differ. The rest of this article explains how to generate each type of proxy.
 
 ## Generate the TypeScript proxy (10.0.11 or lower) Retail Server
 

@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Run the Document Routing Agent as a Windows service
-description: This topic provides information that will help you select the execution mode that is used by the Document Routing Agent. 
+description: This article provides information that will help you select the execution mode that is used by the Document Routing Agent.
 author: RichdiMSFT
 ms.date: 02/11/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 191133
-ms.assetid: 7adc7228-4360-4a54-8a3e-4d916e727dd2
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: richdi
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-
+ms.custom: 191133
+ms.assetid: 7adc7228-4360-4a54-8a3e-4d916e727dd2
 ---
 
 # Run the Document Routing Agent as a Windows service
@@ -33,7 +22,7 @@ ms.dyn365.ops.version: Platform update 2
 
 The Document Routing Agent includes an option that lets you select the mode of execution. The process can run as either a desktop application or a Microsoft Windows service. When the application runs as a Windows service, it can be started automatically after a computer restart. It can also be configured to run under the security context of a specific user account. This enhancement lets customers host the Document Routing Agent on secured domain resources such as network print servers.
 
-This topic provides important information that will help you select the correct execution mode.
+This article provides important information that will help you select the correct execution mode.
 
 ## Service applications
 An application is a program that a user interacts with on the desktop. A service is a process that runs in the background and doesn't have an active window. The Document Routing Agent now supports both execution modes. It's important that you understand why you might select one mode instead of the other and the steps that are involved in running the process as a service. For more information about Windows services, see [Introduction to Windows Service Applications](/dotnet/framework/windows-services/introduction-to-windows-service-applications). Here are some of the main benefits of running the Document Routing Agent as a background service:
@@ -47,19 +36,19 @@ Although there are many benefits of running the Document Routing Agent as a Wind
 ## Documents that require custom margins
 When the Document Routing Agent runs as a Windows service, document reports, such as checks, that require custom margins can't be printed directly to network printers. Instead, the Document Routing Agent automatically routes those document to a target folder. New configuration properties in the application's **Settings** dialog box let you define the target location for document reports that require custom margins.
 
-When the Document Routing Agent runs as a desktop application, it continues to take advantage of Adobe Reader to spool the document to the shared printer device that is selected in Finance and Operations. To handle scenarios where documents that have custom margins must be printed, we recommend that you install the Document Routing Agent in multiple locations. Then install the printers that will handle those documents only on the Document Routing Agents that will run in desktop application mode. Alternatively, use a post-execution process to pick up the files in the target directory and direct them in the appropriate manner.
+When the Document Routing Agent runs as a desktop application, it continues to take advantage of Adobe Reader to spool the document to the shared printer device that is selected in finance and operations. To handle scenarios where documents that have custom margins must be printed, we recommend that you install the Document Routing Agent in multiple locations. Then install the printers that will handle those documents only on the Document Routing Agents that will run in desktop application mode. Alternatively, use a post-execution process to pick up the files in the target directory and direct them in the appropriate manner.
 
 ## Install the latest build
-1. Save a copy of the current Document Routing Agent configuration file. This file is located at C:\\Users\\&lt;UserID&gt;\\AppData\\Local\\Microsoft\\Microsoft Dynamics 365 for Finance and Operations Document Routing\\Microsoft.Dynamics.AX.Framework.DocumentRouting.config. In this path, &lt;UserID&gt; is the Active Directory Domain Services (AD DS) user name that the Document Routing Agent was installed under.
+1. Save a copy of the current Document Routing Agent configuration file. This file is located at C:\\Users\\&lt;UserID&gt;\\AppData\\Local\\Microsoft\\Microsoft Dynamics 365 Finance Document Routing\\Microsoft.Dynamics.AX.Framework.DocumentRouting.config. In this path, &lt;UserID&gt; is the Active Directory Domain Services (AD DS) user name that the Document Routing Agent was installed under.
 2. Uninstall the current version of the Document Routing Agent.
 3. Install the latest version of the Document Routing Agent by following the instructions in [Install the Document Routing Agent to enable network printing](install-document-routing-agent.md).
 
     > [!NOTE]
     > Although you install the application at this point, don't run it yet.
 
-4. Copy the configuration file from step 1, and paste it into the following directory: C:\\ProgramData\\Microsoft\\Microsoft Dynamics 365 for Finance and Operations Document Routing. This step helps guarantee that all your previous configuration settings are used for the new version of the Document Routing Agent application.
+4. Copy the configuration file from step 1, and paste it into the following directory: C:\\ProgramData\\Microsoft\\Microsoft Dynamics 365 Finance Document Routing. This step helps guarantee that all your previous configuration settings are used for the new version of the Document Routing Agent application.
 5. Run the Document Routing Agent.
-6. Sign in by using your Microsoft Azure Active Directory (Azure AD) or your credentials for your Finance and Operations apps.
+6. Sign in by using your Microsoft Azure Active Directory (Azure AD) or your credentials for your finance and operations apps.
 7. View and verify your settings and printers by clicking the appropriate menu items.
 
 The next section provides detailed instructions for selecting the Windows service execution mode.
@@ -77,7 +66,7 @@ By default, the Document Routing Agent runs as a desktop application. To run the
 
 ### Configure and start the Windows service
 1. In Windows, start Service Manager.
-2. In the list, select **Microsoft Dynamics 365 for Finance and Operations Document Routing Service**.
+2. In the list, select **Microsoft Dynamics 365 Finance Document Routing Service**.
 3. Right-click the name, and then select **Properties**.
 4. On the **Log On** tab, select the **This account** option, and then supply the AD DS credentials that are used to run the service.
 

@@ -1,22 +1,22 @@
 ---
 title: Supported primitive data types for Electronic reporting formulas
-description: This topic provides information about the primitive data types that are supported in Electronic reporting (ER) formulas.
-author: NickSelin
+description: This article provides information about the primitive data types that are supported in Electronic reporting (ER) formulas.
+author: kfend
 ms.date: 06/02/2021
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # Supported primitive data types for Electronic reporting formulas
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the primitive data types that are supported in [Electronic reporting (ER)](general-electronic-reporting.md) expressions. Here is a list of the primitive data types:
+This article provides information about the primitive data types that are supported in [Electronic reporting (ER)](general-electronic-reporting.md) expressions. Here is a list of the primitive data types:
 
 - [boolean](#boolean)
 - [date](#date)

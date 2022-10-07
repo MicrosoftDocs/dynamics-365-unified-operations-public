@@ -2,7 +2,7 @@
 # required metadata
 
 title: Client disconnects
-description: This topic explains what to do if the customer is disconnected from the environment.
+description: This article explains what to do if the customer is disconnected from the environment.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

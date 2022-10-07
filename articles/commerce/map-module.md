@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Map module
-description: This topic covers map modules and describes how to configure them in Microsoft Dynamics 365 Commerce.
-author:  anupamar-ms
+description: This article covers map modules and describes how to configure them in Microsoft Dynamics 365 Commerce.
+author: anupamar-ms
 ms.date: 09/15/2020
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Application User
-# ms.devlang:
-ms.reviewer: v-chgri
-# ms.tgt\_pltfrm:
-ms.custom:
-ms.assetid:
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry:
 ms.author: anupamar
 ms.search.validFrom: 2020-02-10
 ms.dyn365.ops.version: Release 10.0.13
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: 
 ---
 
 # Map module
@@ -31,7 +22,7 @@ ms.dyn365.ops.version: Release 10.0.13
 [!include [banner](includes/banner.md)]
 
 
-This topic covers map modules and describes how to configure them in Microsoft Dynamics 365 Commerce.
+This article covers map modules and describes how to configure them in Microsoft Dynamics 365 Commerce.
 
 A map module shows the locations of stores on an interactive map that is rendered by using the [Bing Maps V8 Web Control](/bingmaps/v8-web-control/). A Bing Maps API key is required and must be added to the shared parameters page in Commerce headquarters. Map modules provide different views, such as Road, Aerial, and Streetside, that users can select to view map locations. They also allow for interactions such as zooming and using the user's location.
 

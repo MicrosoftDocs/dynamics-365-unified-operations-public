@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Set up Electronic invoicing parameters
-description: This topic explains how to set up the Electronic invoicing parameters.
-author: dkalyuzh
-ms.date: 12/15/2021
+description: This article explains how to set up the Electronic invoicing parameters.
+author: gionoder
+ms.date: 06/30/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: 
-# ms.search.industry: 
-ms.author: leguo
+ms.author: gionoder
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Set up Electronic invoicing parameters 
@@ -39,7 +30,7 @@ Before you can submit documents to Electronic invoicing and process responses, y
 These steps are optional if you set up your connected application directly from Regulatory Configuration Service (RCS) by completing the procedures in the following topics:
 
 - [Set up Regulatory Configuration Service (RCS)](e-invoicing-set-up-rcs.md)
-- [Complete!!:(TBC) Work with Application setup] - note to PM to see about this topic.
+- [Connected applications](e-invoicing-connected-applications.md)
 
 To set up, adjust, or review electronic documents directly in your Finance or Supply Chain Management environment, complete the following procedures.
 
@@ -56,9 +47,14 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
     - **Customer invoice context model**
     - **Invoice model**
     - **Fiscal documents** (for Brazilian scenarios, if required)
+    - **Retail channel data** (for Saudi Arabian Retail-specific scenarios, if required)
     - **Response message model**
 
-5. Verify that **Invoice model mapping** and **Fiscal documents mapping** (for Brazilian scenarios, if required) were automatically imported. If they weren't, import them, and then close the page.
+5. Verify that the following mapping configurations were automatically imported. If they weren't, import them, and then close the page.
+    - **Invoice model mapping**
+    - **Fiscal documents mapping** (for Brazilian scenarios, if required)
+    - **Advance invoice model mapping** (for Polish scenarios, if required) 
+    - **Retail fiscal document mapping** (for Saudi Arabian Retail-specific scenarios, if required)
 
 ## Set up Electronic document parameters
 
@@ -68,15 +64,17 @@ To set up, adjust, or review electronic documents directly in your Finance or Su
 
     | Table name | Document context | Electronic document model mapping | Features that it's required for |
     |------------|------------------|-----------------------------------|-----------------------|
-    | CustInvoiceJour | <p>**Mapping name:** Customer invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Customer Invoice</p><p>**Configuration:** Invoice model mapping</p> | <ul><li>Austrian electronic invoices (AT)</li><li>Belgian electronic invoice (BE)</li><li>Danish electronic invoice (DK)</li><li>Egyptian electronic invoice (EG)</li><li>Estonian electronic invoice (EE)</li><li>Finish electronic invoice (FI)</li><li>French electronic invoice (FR)</li><li>German electronic invoice (DE)</li><li>FatturaPA (IT)</li><li>Dutch electronic invoice (NL)</li><li>Norwegian electronic invoice (NO)</li><li>Spanish electronic invoice (ES)</li><li>PEPPOL electronic invoice</li><li>Saudi Arabian electronic invoice (SA)</li></ul> |
-    | ProjInvoiceJour | <p>**Mapping name:** Customer invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Project Invoice</p><p>**Configuration:** Invoice model mapping</p> | <ul><li>Austrian electronic invoices (AT)</li><li>Belgian electronic invoice (BE)</li><li>Danish electronic invoice (DK)</li><li>Egyptian electronic invoice (EG)</li><li>Estonian electronic invoice (EE)</li><li>Finish electronic invoice (FI)</li><li>French electronic invoice (FR)</li><li>German electronic invoice (DE)</li><li>FatturaPA (IT)</li><li>Dutch electronic invoice (NL)</li><li>Norwegian electronic invoice (NO)</li><li>Spanish electronic invoice (ES)</li><li>PEPPOL electronic invoice</li><li>Saudi Arabian electronic invoice (SA)</li></ul> |
+    | CustInvoiceJour | <p>**Mapping name:** Customer invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Customer Invoice</p><p>**Configuration:** Invoice model mapping</p> | <ul><li>Austrian electronic invoices (AT)</li><li>Belgian electronic invoice (BE)</li><li>Danish electronic invoice (DK)</li><li>Egyptian electronic invoice (EG)</li><li>Estonian electronic invoice (EE)</li><li>Finish electronic invoice (FI)</li><li>French electronic invoice (FR)</li><li>German electronic invoice (DE)</li><li>FatturaPA (IT)</li><li>Dutch electronic invoice (NL)</li><li>Norwegian electronic invoice (NO)</li><li>Polish electronic invoice (PL)</li><li>Spanish electronic invoice (ES)</li><li>PEPPOL electronic invoice</li><li>Saudi Arabian electronic invoice (SA)</li></ul> |
+    | ProjInvoiceJour | <p>**Mapping name:** Project invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Project Invoice</p><p>**Configuration:** Invoice model mapping</p> | <ul><li>Austrian electronic invoices (AT)</li><li>Belgian electronic invoice (BE)</li><li>Danish electronic invoice (DK)</li><li>Egyptian electronic invoice (EG)</li><li>Estonian electronic invoice (EE)</li><li>Finish electronic invoice (FI)</li><li>French electronic invoice (FR)</li><li>German electronic invoice (DE)</li><li>FatturaPA (IT)</li><li>Dutch electronic invoice (NL)</li><li>Norwegian electronic invoice (NO)</li><li>Polish electronic invoice (PL)</li><li>Spanish electronic invoice (ES)</li><li>PEPPOL electronic invoice</li><li>Saudi Arabian electronic invoice (SA)</li></ul> |
+    | CzCustAdvanceInvoiceTable | <p>**Mapping name:** Advance invoice context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Advance invoice model mapping</p><p>**Configuration:** Advance invoice model mapping</p> | Polish electronic invoice (PL) |
+    | RetailTransactionFiscalTransDocumentView | <p>**Mapping name:** Retail fiscal document context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Retail fiscal document</p><p>**Configuration:** Retail fiscal document mapping</p> | Saudi Arabian electronic invoice (SA) |
     | FiscalDocument_BR | <p>**Mapping name:** Fiscal document context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Fiscal documents mapping</p><p>**Configuration:** Fiscal documents mapping</p> | Brazilian NF-e (BR) |
     | Correction letter | <p>**Mapping name:** FD correction letter context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Correction letter mapping</p><p>**Configuration:** Fiscal documents mapping</p> | Brazilian NF-e (BR) |
     | Service Fiscal document | <p>**Mapping name:** Fiscal document context</p><p>**Configuration:** Customer invoice context model</p> | <p>**Mapping name:** Fiscal documents mapping</p><p>**Configuration:** Fiscal documents mapping</p> | Brazilian NFS-e ABRASF Curitiba (BR) |
 
 If you derive a configuration from the configuration that is mentioned in the preceding table, define the new configuration.
 
-To set up the rules to process responses from the Electronic invoicing service, and to update Finance and Supply Chain Management data based on invoices that are processed by the service, set up response types. In most scenarios, this setup is country/region-specific. Therefore, we recommend that you to follow the country/region-specific instructions. For more information, see [Availability of Electronic invoicing features by country or region](e-invoicing-country-specific-availability.md)
+To set up the rules to process responses from the Electronic invoicing service, and to update Finance and Supply Chain Management data based on invoices that are processed by the service, set up response types. In most scenarios, this setup is country/region-specific. Therefore, we recommend that you follow the country/region-specific instructions. For more information, see [Availability of Electronic invoicing features by country or region](e-invoicing-country-specific-availability.md)
  
 To inactivate old (legacy) ER functionality for some features and activate additional functionality in Finance and Supply Chain Management for some country/region-specific scenarios, enable the corresponding feature on the **Features** tab of the **Electronic document parameters** page.
 

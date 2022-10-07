@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Cross-border services report
-description: This topic explains how to use the Cross-border services report.
-author: anasyash
+description: This article explains how to use the Cross-border services report.
+author: AdamTrukawka
 ms.date: 04/08/2021
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: 
-# ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope:
-# ms.tgt_pltfrm: 
-# ms.custom: NotInTOC
 ms.search.region: 
-# ms.search.industry:
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
-ms.dyn365.ops.version:
+ms.dyn365.ops.version: 
+ms.search.scope: 
 ---
 
 # Cross-border services report

@@ -1,26 +1,19 @@
 ---
 title: Troubleshooting guide for testing with the Performance SDK
-description: This topic provides troubleshooting information for issues that you might encounter during single-user or multi-user testing that uses the Performance SDK.
-author: hasaid
+description: This article provides troubleshooting information for issues that you might encounter during single-user or multi-user testing that uses the Performance SDK.
+author: josaw1
 ms.date: 05/28/2020
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Developer
-# ms.devlang:
-ms.reviewer: tfehr
-# ms.tgt_pltfrm:
-ms.custom: 9954
-ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry:
-ms.author: jujoh
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 9954
+ms.assetid: 7b605810-e4da-4eb8-9a26-5389f99befcf
 ---
 
 # Troubleshooting guide for testing with the Performance SDK
@@ -37,7 +30,7 @@ This issue affects only single-user tests. When the test is running, a web clien
 
 ### Solution
 
-See [Multi-user testing using the Performance SDK](perfsdk-multi-user-testing.md). That topic explains how to create a correct certificate for this type of test. It also explains how to add the thumbprint of the certificate to the wif.config file.
+See [Multi-user testing using the Performance SDK](perfsdk-multi-user-testing.md). That article explains how to create a correct certificate for this type of test. It also explains how to add the thumbprint of the certificate to the wif.config file.
 
 ## Zoom factor
 
@@ -127,7 +120,7 @@ Three scenarios can cause this error:
 
 - The user who is specified as **SelfMintingAdminUser** in the CloudEnvironment.config file has a provider other than `https://sts.windows-ppe.net/` or `https://sts.windows.net/`. Sometimes, a company-specific domain is included in the **Provider** field for the admin user.
 
-- If your Finance and Operations apps were deployed in 21Vianet, make sure that you have specified **NetworkDomain="https://sts.chinacloudapi.cn/"** in **SelfMintingSysUser** and **SelfMintingAdminUser**.
+- If your finance and operations apps were deployed in 21Vianet, make sure that you have specified **NetworkDomain="https://sts.chinacloudapi.cn/"** in **SelfMintingSysUser** and **SelfMintingAdminUser**.
 
 To work around this issue, create a user who has any name and email address. Assign the **System Administrator** role to the new user. You don't have to link the user to a real Microsoft Azure Active Directory (Azure AD) user. Specify this new admin user as **SelfMintingAdminUser** in the CloudEnvironment.config file.
 
@@ -151,7 +144,7 @@ Three known scenarios can cause this error:
 
     [![CloudEnvironment.Config file.](./media/troubleshoot-perf-sdk-05.jpg)](./media/troubleshoot-perf-sdk-05.jpg)
 
-- If your Finance and Operations apps were deployed in 21Vianet, make sure that your development and performance testing environments are in Platform Update for 10.0.11 or above.
+- If your finance and operations apps were deployed in 21Vianet, make sure that your development and performance testing environments are in Platform Update for 10.0.11 or above.
 
 ## At least one security token in the message could not be validated
 
@@ -340,3 +333,4 @@ Change the **Target framework** property in the properties window of PerfSDKSamp
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

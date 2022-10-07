@@ -1,36 +1,24 @@
 ---
-# required metadata
-
 title: Retrieve information about VAT payments and liabilities from HMRC
-description: This topic explains how to retrieve information about value-added tax (VAT) payments and liabilities from the Making Tax Digital for VAT (MTD VAT) application programming interface (API) of Her Majesty's Revenue and Customs (HMRC).
-author: liza-golub
+description: This article explains how to retrieve information about value-added tax (VAT) payments and liabilities from the Making Tax Digital for VAT (MTD VAT) application programming interface (API) of Her Majesty's Revenue and Customs (HMRC).
+author: AdamTrukawka
 ms.date: 08/17/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: United Kingdom
-# ms.search.industry: 
-ms.author: elgolu
-ms.search.validFrom: 08/06/2021
+ms.author: atrukawk
+ms.search.validFrom: 2021-08-06
 ms.dyn365.ops.version: AX 10.0.22
-
 ---
 
 # Retrieve information about VAT payments and liabilities from HMRC
 
 [!include [banner](../includes/banner.md)]
 
-Her Majesty's Revenue and Customs (HMRC) lets you retrieve information about value-added tax (VAT) payments and VAT liabilities. Therefore, the **UK MTD VAT returns** processing includes actions that let you use the **Dynamics 365 for Finance and Operations** web application to retrieve this information from HMRC.
+Her Majesty's Revenue and Customs (HMRC) lets you retrieve information about value-added tax (VAT) payments and VAT liabilities. Therefore, the **UK MTD VAT returns** processing includes actions that let you use the **Dynamics 365 Finance** web application to retrieve this information from HMRC.
 
 ## Retrieve information about VAT payments
 
@@ -67,3 +55,4 @@ The following illustration shows a simplified representation of the processing f
 ![Retrieving information about VAT liabilities.](media/uk-mtd-liabilities-schema.png)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

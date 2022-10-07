@@ -2,7 +2,7 @@
 # required metadata 
  
 title: FR-00003 NAF codes and Siret numbers
-description: This topic explains how to create and enter NAF codes for legal entities, customers, vendors, and prospects. 
+description: This article explains how to create and enter NAF codes for legal entities, customers, vendors, and prospects. 
 author: EvgenyPopovMBS
 ms.date: 09/10/2021
 ms.topic: business-process 
@@ -27,9 +27,9 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to create NAF codes and then enter the codes for legal entities, customers, vendors, and prospects. NAF codes are used to identify the business of an enterprise. For example, if your legal entity manufactures computers, the NAF code for your legal entity may be 300C, which is the NAF code for manufacturing computers and other computer hardware. If your legal entity is involved in building houses, your NAF code may be 452A.
+This article explains how to create NAF codes and then enter the codes for legal entities, customers, vendors, and prospects. NAF codes are used to identify the business of an enterprise. For example, if your legal entity manufactures computers, the NAF code for your legal entity may be 300C, which is the NAF code for manufacturing computers and other computer hardware. If your legal entity is involved in building houses, your NAF code may be 452A.
 
-This topic also shows how to enter siret numbers for customers, vendors, and prospects. The siret is a 14-digit number that identifies a business, a branch of the business, and a person who is associated with the business activity. You can use the siret number to verify that an enterprise is correctly registered and authorized to do business with you.
+This article also shows how to enter siret numbers for customers, vendors, and prospects. The siret is a 14-digit number that identifies a business, a branch of the business, and a person who is associated with the business activity. You can use the siret number to verify that an enterprise is correctly registered and authorized to do business with you.
 
 This procedure was created using the demo data company FRSI. This functionality is available for legal entities whose primary address is in France.
 

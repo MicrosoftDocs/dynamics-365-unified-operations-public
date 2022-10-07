@@ -2,7 +2,7 @@
 # required metadata
 
 title: Data maintenance
-description: This topic provides details about how to use simple scheduling processes to find and correct data inconsistencies in your environment.
+description: This article provides details about how to use simple scheduling processes to find and correct data inconsistencies in your environment.
 author: RyanCCarlson2
 ms.date: 03/02/2021
 ms.topic: article

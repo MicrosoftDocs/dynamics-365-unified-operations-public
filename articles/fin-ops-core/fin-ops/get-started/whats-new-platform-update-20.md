@@ -1,36 +1,25 @@
 ---
-# required metadata
-
 title: What's new or changed in Dynamics 365 for Finance and Operations platform update 20 (September 2018)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 20. This version was released in September 2018.
-author: tonyafehr
+description: This article describes features that are either new or changed in Dynamics 365 for Finance and Operation platform update 20. This version was released in September 2018.
+author: sericks007
 ms.date: 01/22/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: sericks
+ms.search.region: Global
+ms.author: sericks
+ms.search.validFrom: 2017-09-30
+ms.dyn365.ops.version: Platform update 16, Platform update 17, Platform update 18, Platform update 19, Platform 20
 ms.custom: 
 ms.assetid: a765a61c-52a3-45c5-b578-68b9249c592a
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
-ms.search.validFrom: 2017-09-30 
-ms.dyn365.ops.version: Platform update 16, Platform update 17, Platform update 18, Platform update 19, Platform 20
-
 ---
 # What's new or changed in Dynamics 365 for Finance and Operations platform update 20 (September 2018)
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 20. This version was released in September 2018 has a build number of 7.0.5030.
+This article describes features that are either new or changed in Dynamics 365 for Finance and Operations platform update 20. This version was released in September 2018 has a build number of 7.0.5030.
 
 > [!NOTE]
 > This platform release is cumulative. It contains new or changed features from Platform update 16, Platform update 17, Platform update 18, Platform update 19, and Platform update 20, as well as all earlier updates.

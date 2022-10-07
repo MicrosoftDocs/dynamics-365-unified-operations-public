@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure approval steps in a workflow
-description: This topic explains how to configure the properties of an approval step.
+description: This article explains how to configure the properties of an approval step.
 author: ChrisGarty
 ms.date: 08/23/2017
 ms.topic: article
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic explains how to configure the properties of an approval step.
+This article explains how to configure the properties of an approval step.
 
 To configure an approval step in the workflow editor, right-click the approval step, and then click **Properties** to open the **Properties** page. Then use the following procedures to configure the properties of the approval step.
 

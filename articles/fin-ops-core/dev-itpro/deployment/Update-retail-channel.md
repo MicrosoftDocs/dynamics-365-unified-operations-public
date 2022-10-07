@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Apply updates and extensions to Commerce Scale Unit (cloud)
-description: This topic shows how to apply updates and extensions to cloud-hosted Commerce channel components.
-author: AamirAllaq
+description: This article shows how to apply updates and extensions to cloud-hosted Commerce channel components.
+author: jashanno
 ms.date: 12/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: retail
-ms.author: aamiral
-ms.search.validFrom: 2018-4-30 
-ms.dyn365.ops.version: 8.0 
+ms.author: jashanno
+ms.search.validFrom: 2018-04-30
+ms.dyn365.ops.version: 8
 ---
 
 
@@ -29,7 +19,7 @@ ms.dyn365.ops.version: 8.0
 
 [!include[banner](../includes/banner.md)]
 
-If you are updating a Tier-2 sandbox or production environment on application version 8.1.2 or newer and have initialized Commerce Scale Unit (CSU), you will also need to update channel components. This topic shows how to apply updates and extensions to CSU.
+If you are updating a Tier-2 sandbox or production environment on application version 8.1.2 or newer and have initialized Commerce Scale Unit (CSU), you will also need to update channel components. This article shows how to apply updates and extensions to CSU.
 
 Updates to CSU are cumulative. This means that any update that you apply will include all previously released changes. Applying a Dynamics 365 Commerce deployable package for extensions is also a cumulative process and will replace the previously deployed version of the extension.
 

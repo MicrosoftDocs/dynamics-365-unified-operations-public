@@ -1,34 +1,24 @@
 ---
-# required metadata
-
 title: Enable Electronic reporting (ER) destinations to store Russian accounting documents
-description: This topic explains how to configure Electronic reporting (ER) destinations for post-processing Russian accounting documents that are generated in Microsoft Excel and Word.
-author: anasyash
+description: This article explains how to configure Electronic reporting (ER) destinations for post-processing Russian accounting documents that are generated in Microsoft Excel and Word.
+author: AdamTrukawka
 ms.date: 02/02/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2022-01-27
 ms.dyn365.ops.version: 10.0.25
-
 ---
 
 # Enable Electronic reporting (ER) destinations to store Russian accounting documents
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to configure Electronic reporting (ER) destinations for post-processing of Russian accounting documents that are generated in Microsoft Excel and Word formats. You can set up the configuration to show a preview of the document on the screen, send the document to the printer, or save the file to SharePoint or Power BI. For information about Federal Accounting Standard 27-2021 in Russia and Dynamics 365 Finance, see the white paper [Dynamics 365 Finance and Supply Chain Management-Federal Accounting Standard 27-2021 in Russia](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=cc7a904b-d553-43b3-94fd-58fa02e4f702&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_Compliance_Guides).
+This article explains how to configure Electronic reporting (ER) destinations for post-processing of Russian accounting documents that are generated in Microsoft Excel and Word formats. You can set up the configuration to show a preview of the document on the screen, send the document to the printer, or save the file to SharePoint or Power BI. For information about Federal Accounting Standard 27-2021 in Russia and Dynamics 365 Finance, see the white paper [Dynamics 365 Finance and Supply Chain Management-Federal Accounting Standard 27-2021 in Russia](https://servicetrust.microsoft.com/ViewPage/TrustDocumentsV3?command=Download&downloadType=Document&downloadId=cc7a904b-d553-43b3-94fd-58fa02e4f702&tab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913&docTab=7f51cb60-3d6c-11e9-b2af-7bb9f5d2d913_Compliance_Guides).
 
 To use this functionality, you must enable the **Allow using the ER framework for post-processing of reports in Excel and Word formats** feature in the **Feature management** workspace. This feature changes the behavior of several reports in the Russian localization that generate accounting documents in Microsoft Office formats (Excel and Word). When the feature is enabled, the ER framework is used for post-processing of generated documents, so that you can show the file, store the file in a configured destination, or show the report on the screen.
 
@@ -36,7 +26,7 @@ For several reports that you configure the **File** destination for in the Print
 
 For several other reports that can't be configured in the Print management framework, the post-processing is activated when you print the report.
 
-The tables in the [Accounting documents](#accounting-documents) section of this topic list the reports that this feature is applicable to. The tables show the name of the file component that must configure for each report in ER destinations. They also indicate whether the **File** destination can be configured for the report in Print management.
+The tables in the [Accounting documents](#accounting-documents) section of this article list the reports that this feature is applicable to. The tables show the name of the file component that must configure for each report in ER destinations. They also indicate whether the **File** destination can be configured for the report in Print management.
 
 Follow these steps to configure ER destinations for accounting documents.
 

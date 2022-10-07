@@ -1,40 +1,30 @@
 ---
-# required metadata
-
-title: AX 2009 upgrade - Use the Data migration tool to migrate from Dynamics AX 2009 to Finance and Operations 
-description: This topic describes how to use the Data migration tool (DMT) to migrate data from Microsoft Dynamics AX 2009 to Finance and Operations.
-author: kfend
+title: AX 2009 upgrade - Use the Data migration tool to migrate from Dynamics AX 2009 to finance and operations
+description: This article describes how to use the Data migration tool (DMT) to migrate data from Microsoft Dynamics AX 2009 to finance and operations.
+author: peakerbl
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Global
-# ms.search.industry:
-ms.author: kfend
+ms.author: peakerbl
 ms.search.validFrom: 2018-06-21
 ms.dyn365.ops.version: Platform update 17
 ---
 
-# AX 2009 upgrade - Use the Data migration tool to migrate from Dynamics AX 2009 to Finance and Operations 
+# AX 2009 upgrade - Use the Data migration tool to migrate from Dynamics AX 2009 to finance and operations 
 
 [!include [banner](../includes/banner.md)]
 
-You can use the Microsoft Dynamics AX 2009 Data migration tool (DMT) to migrate your data from AX 2009 to Finance and Operations. Using the DMT is the only supported upgrade path from AX 2009. The DMT helps you find and fill gaps between the table schemas for each version, as well as helping you move your data. 
+You can use the Microsoft Dynamics AX 2009 Data migration tool (DMT) to migrate your data from AX 2009 to finance and operations. Using the DMT is the only supported upgrade path from AX 2009. The DMT helps you find and fill gaps between the table schemas for each version, as well as helping you move your data. 
 
 > [!NOTE]
 > Start your cloud migration journey with a no-charge, no-obligation migration assessment though the [Dynamics 365 Migration Program](https://dynamics.microsoft.com/migration-program/).
 
 ## Architecture
-The following illustration describes the architecture of the DMT, and how data from the source system (AX 2009) is processed and moved to the target system (Finance and Operations).
+The following illustration describes the architecture of the DMT, and how data from the source system (AX 2009) is processed and moved to the target system (finance and operations).
 
 ![Data migration technical flow.](media/dmt_technical_flow.png)
 

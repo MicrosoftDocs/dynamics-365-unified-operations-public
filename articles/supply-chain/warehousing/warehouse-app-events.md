@@ -2,7 +2,7 @@
 # required metadata
 
 title: Warehouse app events
-description: This topic describes the warehouse app event processing used to process warehouse app event messages as part of a batch job.
+description: This article describes the warehouse app event processing used to process warehouse app event messages as part of a batch job.
 author: perlynne
 ms.date: 09/02/2020
 ms.topic: article
@@ -35,7 +35,7 @@ Batch jobs running in Supply Chain Management can use data from a queue for proc
 
 ## Turn the Process warehouse app events feature on or off
 
-As of Supply Chain Management version 10.0.25, this feature is turned on by default. Admins can turn this functionality on or off by searching for the *Process warehouse app events* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
+As of Supply Chain Management version 10.0.25, this feature is turned on by default. As of Supply Chain Management version 10.0.29, this feature is mandatory. Therefore, it's turned on by default and can't be turned off again. If you're running a version that is older than 10.0.29, admins can turn this functionality on or off by searching for the *Process warehouse app events* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 ## Set up a batch job to process warehouse app events
 

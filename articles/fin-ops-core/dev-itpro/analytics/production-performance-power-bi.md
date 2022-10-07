@@ -1,34 +1,25 @@
 ---
-# required metadata
-
 title: Production performance Power BI content
-description: This topic describes what is included in the Production performance Power BI content.
+description: This article describes what is included in the Production performance Power BI content.
 author: AndersGirke
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  ProductionPerformancePowerBI
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: kamaybac
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: aevengir
-ms.search.validFrom: 2016-11-30 
-ms.dyn365.ops.version: Version 1611 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
+ms.search.form: ProductionPerformancePowerBI
 ---
 
 # Production performance Power BI content
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes what is included in the **Production performance** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
+This article describes what is included in the **Production performance** Microsoft Power BI content. It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.
 
 ## Overview
 
@@ -67,7 +58,7 @@ The following data is used for the report pages in the **Production performance*
 
 The following table shows the key aggregate measurements that are used as the basis of the Power BI content.
 
-| Entity                   | Key aggregate measurements  | Data source for Finance and Operations apps | Field              |
+| Entity                   | Key aggregate measurements  | Data source for finance and operations apps | Field              |
 |--------------------------|-----------------------------|----------------------------------------|--------------------|
 | CostCalculation          | CostAmount                  | ProdCalcTransExpanded                  | CostAmount         |
 | CostCalculation          | CostMarkup                  | ProdCalcTransExpanded                  | CostMarkup         |

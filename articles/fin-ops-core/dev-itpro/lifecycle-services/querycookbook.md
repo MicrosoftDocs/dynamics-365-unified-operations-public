@@ -1,37 +1,26 @@
 ---
-# required metadata
-
-title: Query cookbook 
-description: This topic describes queries in the SQL Insights tab and how they should be used when troubleshooting performance issues. 
-author: meeramahabala
+title: Query cookbook
+description: This article describes queries in the SQL Insights tab and how they should be used when troubleshooting performance issues.
+author: sericks007
 ms.date: 11/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 267184
-ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: meeram
+ms.author: gned
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 267184
+ms.assetid: eb056816-ccf4-43a5-aed3-cf72543353de
 ---
 
 # Query cookbook 
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides details on each query under the **SQL Insights** tab on the **Environment Monitoring** page in Lifecycle Services (LCS) and how they should be used when troubleshooting performance issues. For details about this feature, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](performancetroubleshooting.md).
+This article provides details on each query under the **SQL Insights** tab on the **Environment Monitoring** page in Lifecycle Services (LCS) and how they should be used when troubleshooting performance issues. For details about this feature, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](performancetroubleshooting.md).
 
 ## Current blocking
 
@@ -101,7 +90,7 @@ The following action have been removed from the **Actions** tab of **SQL Insight
 | Name | Removed | Notes |
 |-------------------------|-------------------------|-------------------------|
 | Create index | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>Manual index creation is no longer needed as this is handled by a background platform processes.</li></br></ul></br>**Details**</br><ul></br><li>A system background process will handle this as required.</li></br></ul> |
-| Drop index | Yes | No longer applicable. </br><br>**Reason**</br><ul></br><li>Not included in Data Administration and Management Service (DAMS) because of the periodic nature of Finance and Operations workloads.</li></br></ul></br>**Details**</br><ul></br><li>The system will automatically tune as required.</li></br></ul> |
+| Drop index | Yes | No longer applicable. </br><br>**Reason**</br><ul></br><li>Not included in Data Administration and Management Service (DAMS) because of the periodic nature of finance and operations workloads.</li></br></ul></br>**Details**</br><ul></br><li>The system will automatically tune as required.</li></br></ul> |
 | Rebuilt index | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>Manual index creation is no longer needed as this is handled by background platform processes.</li></br></ul></br>**Details**</br><ul></br><li>A system background process will handle this as required.</li></br></ul> |
 | Update statistics | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>A platform background process handles index and statistics maintenance.</li></br></ul></br>**Details**</br><ul></br><li>The platform is responsible for index and statistics maintenance.</li></br></ul> |
 | Query hint optimization | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>The platform handles query hint optimization so customers don't have to do manual tuning.</li></br></ul></br>**Details**</br><ul></br><li>The platform automatically detects the correct hint and applies it to the queries that need optimization.</li></br></ul> |
@@ -120,3 +109,4 @@ The following live views have been removed from the **Live views** tab of **SQL 
 | Common metrics (DTU) | Yes | No longer applicable.</br><br>**Reason**</br><ul></br><li>Current DTU has been removed from queries.</li></br></ul></br>**Details**</br><ul></br><li>See **Current DTU** under **Queries** above.</li></br></ul> |
 | Currently executing statements | No | Remains available in LCS. |
 | Blocking statements | No | Remains available in LCS. | -->
+

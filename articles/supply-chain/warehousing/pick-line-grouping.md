@@ -2,7 +2,7 @@
 # required metadata
 
 title: Pick line grouping
-description: This topic provides an overview of pick line grouping.
+description: This article provides an overview of pick line grouping.
 author: Mirzaab
 ms.date: 12/15/2019
 ms.topic: article
@@ -35,7 +35,7 @@ Pick line grouping enables multiple work lines that have the same item and locat
 
 ## Turn on the pick line grouping feature
 
-Before you can use this feature, it must be turned on in your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+Before you can use this feature, it must be turned on for your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Pick line grouping*

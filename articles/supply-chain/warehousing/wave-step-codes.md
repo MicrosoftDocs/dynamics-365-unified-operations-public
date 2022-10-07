@@ -2,7 +2,7 @@
 # required metadata
 
 title: Wave step codes
-description: This topic provides an overview of wave step codes and how they are used.
+description: This article provides an overview of wave step codes and how they are used.
 author: Mirzaab
 ms.date: 09/06/2019
 ms.topic: article

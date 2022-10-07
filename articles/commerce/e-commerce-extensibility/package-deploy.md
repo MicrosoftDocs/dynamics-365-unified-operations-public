@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Package configurations and deploy them to an online environment
-description: This topic describes how to package configurations and deploy them to your Microsoft Dynamics 365 Commerce online environment.
+description: This article describes how to package configurations and deploy them to your Microsoft Dynamics 365 Commerce online environment.
 author: samjarawan
 ms.date: 02/20/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Package configurations and deploy them to an online environment
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to package configurations and deploy them to your Microsoft Dynamics 365 Commerce online environment.
+This article describes how to package configurations and deploy them to your Microsoft Dynamics 365 Commerce online environment.
 
 When your local site configurations (modules, data actions, and themes) are ready to be deployed to your online environment, you must package and deploy them by using Microsoft Dynamics Lifecycle Services (LCS).
 

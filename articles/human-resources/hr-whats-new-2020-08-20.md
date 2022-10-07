@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources (August 20, 2020)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for August 20, 2020.
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Human Resources for August 20, 2020.
 author: andreabichsel
 ms.date: 08/20/2020
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: Human Resources
 
 
 
-This topic describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3478. The numbers in parentheses in some headings refer to Lifecycle Services (LCS) support numbers for reference.
+This article describes features that are either new or changed in Dynamics 365 Human Resources. Changes apply to build number 8.1.3478. The numbers in parentheses in some headings refer to Lifecycle Services (LCS) support numbers for reference.
 
 ## Show upcoming and pending leave of absence information to cards in People workspace
 

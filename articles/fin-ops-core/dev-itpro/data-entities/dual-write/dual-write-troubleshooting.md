@@ -1,11 +1,11 @@
 ---
 title: General troubleshooting
-description: This topic provides general troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse.
-author: RamaKrishnamoorthy 
+description: This article provides general troubleshooting information for dual-write integration between finance and operations apps and Dataverse.
+author: RamaKrishnamoorthy
 ms.date: 04/18/2022
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-03-16
@@ -17,10 +17,10 @@ ms.search.validFrom: 2020-03-16
 
 
 
-This topic provides general troubleshooting information for dual-write integration between Finance and Operations apps and Dataverse.
+This article provides general troubleshooting information for dual-write integration between finance and operations apps and Dataverse.
 
 > [!IMPORTANT]
-> Some of the issues that this topic addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
+> Some of the issues that this article addresses might require either the system admin role or Microsoft Azure Active Directory (Azure AD) tenant admin credentials. The section for each issue explains whether a specific role or credentials are required.
 
 ## <a id="enable-view-trace"></a>Enable and view the plug-in trace log in Dataverse to view error details
 
@@ -56,28 +56,28 @@ If available, exception details will also be provided.
 You can copy the contents of the trace logs and paste them into another application like Notepad or other tools to view logs or text files 
 to more easily see all the content. 
 
-## Enable debug mode to troubleshoot live synchronization issues in Finance and Operations apps
+## Enable debug mode to troubleshoot live synchronization issues in finance and operations apps
 
 **Required role to view the errors:** System admin
 
-Dual-write errors that originate in Dataverse can appear in the Finance and Operations app. To enable verbose logging for the errors, following these steps:
+Dual-write errors that originate in Dataverse can appear in the finance and operations app. To enable verbose logging for the errors, following these steps:
 
-1. For all project configurations in Finance and Operations app there is a flag **IsDebugMode** on the **DualWriteProjectConfiguration** table.
-2. Open the **DualWriteProjectConfiguration** using the Excel addin. To use the addin, enable design mode in the Finance and Operations Excel addin and add the **DualWriteProjectConfiguration** to the sheet. For more information, see [View and update entity data with Excel](../../office-integration/use-excel-add-in.md).
+1. For all project configurations in finance and operations app there is a flag **IsDebugMode** on the **DualWriteProjectConfiguration** table.
+2. Open the **DualWriteProjectConfiguration** using the Excel addin. To use the addin, enable design mode in the finance and operations Excel addin and add the **DualWriteProjectConfiguration** to the sheet. For more information, see [View and update entity data with Excel](../../office-integration/use-excel-add-in.md).
 3. Set **IsDebugMode** to **Yes** on the project.
 4. Run the scenario that is generating errors.
 5. The verbose logs are stored in the **DualWriteErrorLog** table.
 6. To lookup data on table browser use the following link: `https://999aos.cloudax.dynamics.com/?mi=SysTableBrowser&tableName=DualWriteErrorLog`, replacing `999` as needed.
 7. Update again after [KB 4595434](https://fix.lcs.dynamics.com/Issue/Details?kb=4595434&bugId=527820&dbType=3&qc=98e5dc124ac125c57ad633d885ac612aea3ddb8f4abf9d71ab3aa354f2e06cbe), which is available for platform updates 37 and later. If you have this fix installed then the debug mode will capture more logs.  
 
-## Check synchronization errors on the virtual machine for the Finance and Operations app
+## Check synchronization errors on the virtual machine for the finance and operations app
 
 **Required role to view the errors:** System administrator
 
 1. Sign in to Microsoft Dynamics Lifecycle Services (LCS).
 2. Open the LCS project that you chose to do the dual-write testing for.
 3. Select the **Cloud-hosted environments** tile.
-4. Use Remote Desktop to sign in to the virtual machine (VM) for the Finance and Operations app. Use the local account that is shown in LCS.
+4. Use Remote Desktop to sign in to the virtual machine (VM) for the finance and operations app. Use the local account that is shown in LCS.
 5. Open Event viewer.
 6. Select **Applications and Services Logs \> Microsoft \> Dynamics \> AX-DualWriteSync \> Operational**.
 7. Review the list of recent errors.
@@ -123,11 +123,11 @@ Third-party cookies need to be allowed in browser settings.
 1.	Navigate to Settings -> Site permissions -> Cookies and site data.
 2.	Turn off 'Block third-party cookies'.  
 
-## Unlink and link another Dataverse environment from a Finance and Operations app
+## Unlink and link another Dataverse environment from a finance and operations app
 
-**Required role to unlink the environment:** System administrator for either Finance and Operations app or Dataverse.
+**Required role to unlink the environment:** System administrator for either finance and operations app or Dataverse.
 
-1. Sign in to the Finance and Operations app.
+1. Sign in to the finance and operations app.
 2. Go to **Workspaces \> Data management**, and select the **Dual Write** tile.
 3. Select all running mappings, and then select **Stop**.
 4. Select **Unlink environment**.
@@ -146,25 +146,25 @@ To re-enable the **Information** form option, follow these steps:
 3. Select the **Information** form and click **Enable security roles**.
 4. Change the security setting to **Display to everyone**.
 
-## How to ensure data integration is using the most current Finance and Operations schema
+## How to ensure data integration is using the most current finance and operations schema
 
-You may face data issues in your data integration if the most up-to-date schema is not being used. The following steps will help you refresh the entity list in Finance and Operations apps and the entities in the Data integrator.
+You may face data issues in your data integration if the most up-to-date schema is not being used. The following steps will help you refresh the entity list in finance and operations apps and the entities in the Data integrator.
 
-### Refresh entity list in Finance and Operations environment
-1.	Log on to your Finance and Operations environment.
+### Refresh entity list in finance and operations environment
+1.	Log on to your finance and operations environment.
 2.	Select **Data management**.
 3.	Inside Data management, select **Framework parameters**.
 4.	On the **Data import/export framework parameters** page, select the **Entity settings** tab, and select **Refresh entity list**. This may 
 take more than 30 minutes to refresh, depending on the number of entities involved.
 5.	Navigate to **Data management** and select **Data entities** to validate that the expected entities are listed. If the expected entities 
-are not listed, validate that the entities appear in your Finance and Operations environment and restore the missing entities, as needed.
+are not listed, validate that the entities appear in your finance and operations environment and restore the missing entities, as needed.
 
 #### If the refresh fails to resolve the issue, delete and re-add the entities
 
 > [!NOTE]
 > You may need to stop any processing groups that are actively using the entities before deletion.
 
-1.	Select **Data management** in your Finance and Operations environment and select **Data entities**.
+1.	Select **Data management** in your finance and operations environment and select **Data entities**.
 2.	Search for entities having issues, and make a note of the target entity, staging table, entity name, and other settings. Delete the entity or entities from the list.
 3.	Select **New** and re-add the entity or entities using the data from step 2. 
 
@@ -190,3 +190,4 @@ The support team might need to review network traces to troubleshoot some issues
 4. Select **save** to export the results as HAR.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

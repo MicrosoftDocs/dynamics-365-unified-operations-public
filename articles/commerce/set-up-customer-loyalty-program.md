@@ -1,38 +1,28 @@
 ---
-# required metadata
-
 title: Loyalty overview
-description: This topic describes the loyalty capabilities within Dynamics 365 Commerce and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
-author: scott-tucker
+description: This article describes the loyalty capabilities within Dynamics 365 Commerce and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
+author: josaw1
 ms.date: 07/21/2020
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: ["16201", "intro-internal"]
-ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: scotttuc
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
+ms.custom: 16201,  ""intro-internal
+ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
+ms.search.industry: Retail
+ms.search.form: RetailLoyaltyPrograms, RetailPriceDiscGroup
 ---
 
 # Loyalty overview
 
 [!include [banner](includes/banner.md)]
 
-Loyalty programs can help increase customer loyalty by rewarding customers for their interactions with the retailer's brand. In Dynamics 365 Commerce, you can set up simple or complex loyalty programs that apply across your legal entities in any commerce channel. This topic describes the loyalty capabilities within Commerce and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
+Loyalty programs can help increase customer loyalty by rewarding customers for their interactions with the retailer's brand. In Dynamics 365 Commerce, you can set up simple or complex loyalty programs that apply across your legal entities in any commerce channel. This article describes the loyalty capabilities within Commerce and the corresponding setup steps to help the retailer easily get started with their loyalty programs.
 
 You can set up your loyalty program so that they include the following options.
 

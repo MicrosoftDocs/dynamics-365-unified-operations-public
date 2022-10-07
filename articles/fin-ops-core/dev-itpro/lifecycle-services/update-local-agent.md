@@ -2,9 +2,9 @@
 # required metadata
 
 title: Update the local agent
-description: This topic explains how to update the local agent.
+description: This article explains how to update the local agent.
 author: faix
-ms.date: 02/22/2022
+ms.date: 09/02/2022
 ms.topic: article
 ms.prod: dynamics-365
 ms.service:
@@ -31,13 +31,14 @@ ms.dyn365.ops.version: 7.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to update the local agent. The latest version of the local agent is version 3.0.0, which was released in November 2021.
+This article explains how to update the local agent. The latest version of the local agent is version 3.1.0, which was released in June 2022.
 
 > [!IMPORTANT]
 > Do not update the local agent during a servicing operation, even if the preparation phase has completed. 
 
 | Local agent version | Capability | 
 |---------------------|------------|
+| 3.1.0               | This version upgrades the Service Fabric SDK and adds a new deployment option. |
 | 3.0.0               | This version includes support for Edge Scale Unit Application Lifecycle Management. |
 | 2.7.2               | This version includes a fix for deploying older application versions. | 
 | 2.7.1               | This version introduces a new deployment option and fixes a bug with a deployment option. |
@@ -55,6 +56,14 @@ This topic explains how to update the local agent. The latest version of the loc
 | 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md)  for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | 
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. |
 | Null                | This initial version deploys Platform update 8. |
+
+## What's new in local agent 3.1.0
+
+- Local agent 3.1.0 uptakes a new Service Fabric SDK and runtime.
+- This releases introduces a new deployment option to [specify that an environment should be configured to work with the Regression suite automation tool (RSAT)](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-an-environment-should-be-configured-to-work-with-the-regression-suite-automation-tool).
+
+> [!IMPORTANT]
+> This release is only compatible with 8.1+ Service Fabric clusters.
 
 ## What's new in local agent 3.0.0
 
@@ -107,7 +116,7 @@ This topic explains how to update the local agent. The latest version of the loc
 - This release removes the monitoring agent and introduces a new service called LBDTelemetry, which will be used to install the ETWManifests.
 
 > [!IMPORTANT]
-> This release requires that a new local agent configuration file be downloaded from LCS. Refer to the [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md) topic if you encounter problems. 
+> This release requires that a new local agent configuration file be downloaded from LCS. Refer to the [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md) article if you encounter problems. 
 
 ## What's new in local agent 2.1.0
 - Local agent 2.1.0 enables the two-phased servicing where **Environment preparation** and **Environment update** are two distinct steps and explicit actions. This reduces the total downtime customers must take when applying updates to their on-premises environments by preparing upfront and allowing users to use the environment during preparation and then communicating the downtime when the actual update environment action is triggered.
@@ -123,7 +132,7 @@ This topic explains how to update the local agent. The latest version of the loc
 ## Download the latest local agent and configuration from LCS
 
 > [!NOTE]
-> If you require an older version of the local agent for your current deployments, download it from the Asset library in Microsoft Dynamics Lifecycle Services (LCS). To download Local agent version 1.1.0, go to **Shared Asset Library -> Model** and click on Dynamics 365 for Finance and Operations on-premises - Local agent v1.1.0**.
+> If you require an older version of the local agent for your current deployments, download it from the Asset library in Microsoft Dynamics Lifecycle Services (LCS). To download Local agent version 1.1.0, go to **Shared Asset Library -> Model** and click on Dynamics 365 Finance and Operations (on-premises) - Local agent v1.1.0**.
 >
 > You must have version 2.0.0 or later to deploy Platform update 12 and complete update flows.
 
@@ -164,3 +173,4 @@ This topic explains how to update the local agent. The latest version of the loc
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -1,6 +1,6 @@
 ---
 title: Scripts for resolving issues in on-premises environments
-description: This topic will serve as a central repository for scripts that you can use to fix issues in on-premises environments.
+description: This article will serve as a central repository for scripts that you can use to fix issues in on-premises environments.
 author: faix
 ms.date: 07/01/2021
 ms.topic: article
@@ -10,7 +10,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Developer
 # ms.devlang: 
 ms.reviewer: sericks
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Platform update 30
 # Scripts for resolving issues in on-premises environments
 [!include [banner](../includes/banner.md)]
 
-This topic will serve as a central repository for scripts that you can use to fix issues in on-premises environments. These scripts must usually be run as pre-deployment or post-deployment scripts.
+This article will serve as a central repository for scripts that you can use to fix issues in on-premises environments. These scripts must usually be run as pre-deployment or post-deployment scripts.
 
 For more information about how to resolve issues in on-premises environments, see [Troubleshoot on-premises deployments](troubleshoot-on-prem.md).
 
@@ -58,7 +58,7 @@ For more information about how to resolve issues in on-premises environments, se
     #& $agentShare\scripts\TSG_EnableGMSAForAOS.ps1 -agentShare $agentShare -gmsaAccount contoso\svc-AXSF$
     ```
 
-3. From the relevant section of this topic, copy the code that you require to fix your issue, and paste it into a new file. Save this file in the same folder where your Predeployment.ps1 script is stored. The file name must match the title of the section that you copied the code from. Repeat this step for other issues that you must fix.
+3. From the relevant section of this article, copy the code that you require to fix your issue, and paste it into a new file. Save this file in the same folder where your Predeployment.ps1 script is stored. The file name must match the title of the section that you copied the code from. Repeat this step for other issues that you must fix.
 4. In the Predeployment.ps1 script, in the code that you added earlier, uncomment the lines that invoke the scripts that you want to use.
 
 ## <a name="sysclassrunner"></a>TSG\_SysClassRunner.ps1

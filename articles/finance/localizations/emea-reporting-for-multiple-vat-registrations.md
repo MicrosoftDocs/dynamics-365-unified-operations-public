@@ -1,35 +1,26 @@
 ---
-# required metadata
-
 title: Reporting for multiple VAT registrations
-description: This topic provides information about reporting for multiple value-added tax (VAT) registrations.
-author: anasyash
+description: This article provides information about reporting for multiple value-added tax (VAT) registrations.
+author: AdamTrukawka
 ms.date: 02/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261354
 ms.search.region: 
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 261354
+ms.search.form: 
 ---
 
 # Reporting for multiple VAT registrations 
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to do reporting for multiple value-added tax (VAT) registrations from a single legal entity. The functionality is available for the following countries or regions: 
+This article explains how to do reporting for multiple value-added tax (VAT) registrations from a single legal entity. The functionality is available for the following countries or regions: 
 
 - Austria
 - Belgium
@@ -38,11 +29,12 @@ This topic explains how to do reporting for multiple value-added tax (VAT) regis
 - France
 - Germany
 - Netherlands
-- United Kingdom
 - Norway
+- Poland
 - Spain
 - Sweden
 - Switzerland
+- United Kingdom
   
 The scope of reporting is limited to generation of the following reports:
 
@@ -279,14 +271,13 @@ All tax registrations have the same settings for EU sales list parameters.
 
     ![transfer intrastat.](media/Multipleid-image8.png)
 
-4. In the **Intrastat (Transfer)** dialog box, select the documents to transfer: **Free text invoice**, **Customer invoice**, **Customer packing slips**, **Vendor invoice**, **Vendor product receipts**, **Project invoice**, or **Transfer order**. Then and select **OK**.
+4. In the **Intrastat (Transfer)** dialog box, select the documents to transfer: **Free text invoice**, **Customer invoice**, **Customer packing slips**, **Vendor invoice**, **Vendor product receipts**, **Project invoice**, or **Transfer order**. Then select **OK**.
 
     ![Intrastat  Transfer  dialog box.](media/Multipleid-image9.png)
 
 5. Transactions for the selected tax registration and documents are transferred. Review the transactions, and make any adjustments that are required.
 
     > [!NOTE]
-    > 
     > In the 10.0.19, 10.0.20 release, Intrastat **Transfer** function has country-specific logic that isn't yet covered in the **Intrastat transfer for Multiple Tax ID** feature for the following countries: Czech Republic, Finland, Germany, Hungary, Italy, Latvia, Lithuania, Poland, and Spain.
 
 6. Select **Output** > **Report**.
@@ -338,9 +329,9 @@ All tax registrations have the same settings for EU sales list parameters.
     > [!NOTE]
     > You can select an ER format if the **ISO Country/region codes** field on the **ISO Country/region codes** FastTab is blank in this format.
 
-    The following table shows the earliest ER format versions that you can select the format for. For more information about how to run VAT declaration for specific country, review the related topic.
+    The following table shows the earliest ER format versions that you can select the format for. For more information about how to run VAT declaration for specific country, review the related article.
     
-    | Release | Country | ER format | Link to topic |
+    | Release | Country | ER format | Link to article |
     |---------|---------|-----------|---------------|
     | 10.0.19 | All | Tax declaration model.version.85<br>Tax declaration model mapping.version.85.138 | |
     | 10.0.19 | Netherlands | VAT Declaration XML (NL).version.85.14<br>VAT Declaration Excel (NL).version.85.14.17| [VAT declaration (Netherlands)](emea-nl-vat-declaration-netherlands.md) |
@@ -353,6 +344,10 @@ All tax registrations have the same settings for EU sales list parameters.
     | 10.0.21 | Norway | Tax declaration model.version.112<br>Tax declaration model mapping.version.112.192<br>VAT Declaration XML (NO).version.112.54<br>VAT Declaration Excel (NO).version.112.54.39 | [VAT return with direct submission to Altinn](emea-nor-vat-return.md) |
     | 10.0.23 | Spain | VAT Declaration TXT(ES).version.101.28<br>VAT Declaration Excel (ES).version.101.28.17 | [VAT declaration (Spain)](emea-esp-vat-declaration-spain.md) |
     | 10.0.25 | Denmark | VAT Declaration Excel (DK).version.101.8 | [VAT declaration (Denmark)](emea-dnk-vat-declaration-denmark.md) |
+    | 10.0.29 | Poland  | Standard Audit File (SAF-T).version.129<br>Standard Audit File model mapping.version.131.283<br>JPK-V7M XML format (PL).version.129.221<br>JPK-V7M Excel format (PL).version.129.221.70 | [VAT declaration (Poland)](emea-pol-vat-declaration.md) |
+
+    > [!NOTE]
+    > The VAT declaration of Poland (JPK-V7M) is supported by using the Electronic messaging functionality only. For more information, see [VAT declaration with registers (JPK-V7M, VDEK)](emea-pol-vdek.md).
 
 ## Generate a VAT declaration for multiple VAT registrations
 

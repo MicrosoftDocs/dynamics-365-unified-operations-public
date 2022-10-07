@@ -2,7 +2,7 @@
 # required metadata
 
 title: Add dimensions to Excel templates
-description: This topic provides information about dimensions, dimensions that have entities, and the dimension controls that are available.
+description: This article provides information about dimensions, dimensions that have entities, and the dimension controls that are available.
 author: RyanCCarlson2
 ms.date: 03/16/2022
 ms.topic: overview
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: ["11314", "intro-internal"]
 ms.assetid: 20e6b97e-30ed-48d4-b63c-a073f80300b2
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about dimensions, dimensions that have entities, and the dimension controls that are available.
+This article provides information about dimensions, dimensions that have entities, and the dimension controls that are available.
 
 The only value that is present on Microsoft Excel templates after installation is the MainAccount. This is the only dimension that all customers will have. To add the dimensions to Microsoft Excel templates you need to complete the following steps:
 
@@ -40,7 +40,7 @@ The only value that is present on Microsoft Excel templates after installation i
 3. Add the [capability to look up financial dimension values in Excel](add-dimensions-excel-templates.md).
 3.  Publish the template.
 
-This topic shows how to modify DimensionCombinationEntity to enable the dimensions in columns for Excel. The same steps can be used to modify the DimensionSet entity. 
+This article shows how to modify DimensionCombinationEntity to enable the dimensions in columns for Excel. The same steps can be used to modify the DimensionSet entity. 
 
 > [!NOTE]
 > This information is subject to change for each release. Therefore, be sure to check back frequently for the most up-to-date information.

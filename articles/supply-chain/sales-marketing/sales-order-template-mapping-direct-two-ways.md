@@ -2,7 +2,7 @@
 # required metadata
 
 title: Synchronization of sales orders directly between Sales and Supply Chain Management
-description: The topic discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Dynamics 365 Sales and Dynamics 365 Supply Chain Management.
+description: The article discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Dynamics 365 Sales and Dynamics 365 Supply Chain Management.
 author: Henrikan
 ms.date: 05/09/2019
 ms.topic: article
@@ -33,7 +33,7 @@ ms.search.validFrom: 2017-07-8
 
 
 
-The topic discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Dynamics 365 Sales and Dynamics 365 Supply Chain Management.
+The article discusses the templates and underlying tasks that are used to run synchronization of sales orders directly between Dynamics 365 Sales and Dynamics 365 Supply Chain Management.
 
 ## Data flow in Prospect to cash
 
@@ -207,7 +207,7 @@ The following illustrations show an example of a template mapping in Data integr
 
 [![Template mapping in Data integration, Sales Orders (Sales to Supply Chain Management) - Direct: OrderLine.](./media/sales-order-direct-template-mapping-data-integrator-4.png)](./media/sales-order-direct-template-mapping-data-integrator-4.png)
 
-## Related topics
+## Related articles
 
 [Prospect to cash](prospect-to-cash.md)
 

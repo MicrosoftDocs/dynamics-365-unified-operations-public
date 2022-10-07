@@ -1,36 +1,25 @@
 ---
-# required metadata
-
 title: Dynamics 365 Commerce online SDK FAQ
-description: This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
+description: This article summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
 ms.date: 04/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 # Dynamics 365 Commerce online SDK FAQ
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
-This topic summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
+This article summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 
 ### Why does my e-commerce extension package fail to build due to an incompatible version of Node.js?
 

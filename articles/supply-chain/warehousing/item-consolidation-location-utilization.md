@@ -2,9 +2,9 @@
 # required metadata
 
 title: Item consolidation - location utilization
-description: This topic provides information about functionality that makes it easy for warehouse managers to view and filter the volumetric utilization of locations across the warehouse. Managers can select locations and create inventory movement work directly from the Item Consolidation page to consolidate items and therefore make better use of warehouse space.
+description: This article provides information about functionality that makes it easy for warehouse managers to view and filter the volumetric utilization of locations across the warehouse. Managers can select locations and create inventory movement work directly from the Item Consolidation page to consolidate items and therefore make better use of warehouse space.
 author: Mirzaab
-ms.date: 07/16/2020
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -27,14 +27,14 @@ ms.dyn365.ops.version: 10.0.7
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about functionality that makes it easy for warehouse managers to view and filter the volumetric utilization of locations across the warehouse. Managers can select locations and create inventory movement work directly from the **Item Consolidation** page to consolidate items and therefore make better use of warehouse space.
+This article provides information about functionality that makes it easy for warehouse managers to view and filter the volumetric utilization of locations across the warehouse. Managers can select locations and create inventory movement work directly from the **Item Consolidation** page to consolidate items and therefore make better use of warehouse space.
 
 ## Turn on the features
 
-Before you can use the features that are described in this topic, you must turn them on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the features and turn them on if they are required. Turn on both the following features, in the order that they are listed in. (Both features are for the **Warehouse management** module.)
+Before you can use the features that are described in this article, you must turn them on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the features and turn them on if they are required. Turn on both the following features, in the order that they are listed in. (Both features are for the **Warehouse management** module.)
 
-1. Warehouse location status
-2. Item consolidation location utilization
+1. *Warehouse location status*<br>(As of Supply Chain Management version 10.0.29, this feature is mandatory and can't be turned off. For more information, see [Warehouse location status](warehouse-location-status.md).)
+2. *Item consolidation location utilization*<br>(As of Supply Chain Management version 10.0.29, this feature is turned on by default.)
 
 ## Warehouse location status
 
@@ -54,7 +54,7 @@ These fields let warehouse managers get a better overview of the status of the l
 
 ## Set up item consolidation and location utilization
 
-This section describes how to prepare your system to use item consolidation and location utilization. The procedures use sample values from the standard demo data. If you plan to work through the example scenario that is provided later in this topic, select the **USMF** legal entity (which contains the standard demo data), and create each record that is described in this section. If you don't plan to work through the example scenario, the values that are provided here can be considered examples of the types of setup that you must complete to use the features.
+This section describes how to prepare your system to use item consolidation and location utilization. The procedures use sample values from the standard demo data. If you plan to work through the example scenario that is provided later in this article, select the **USMF** legal entity (which contains the standard demo data), and create each record that is described in this section. If you don't plan to work through the example scenario, the values that are provided here can be considered examples of the types of setup that you must complete to use the features.
 
 ### Released product
 

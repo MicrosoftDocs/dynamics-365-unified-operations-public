@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Attach a template BOM to a service object
 
-1.  Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+1.  Click **Service management** \> **Service agreements** \> **Service agreements**.
 
 2.  Double-click the service agreement in which you want to attach a template BOM to an object relation.
 
@@ -48,7 +48,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Delete a service BOM from a service object
 
-1.  Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+1.  Click **Service management** \> **Service agreements** \> **Service agreements**.
 
 2.  Double-click the service agreement in which you want to delete a service BOM from an object relation.
 
@@ -60,7 +60,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 ## Move the service BOM history from one service agreement to another
 
-1.  Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+1.  Click **Service management** \> **Service agreements** \> **Service agreements**.
 
 2.  Double-click the service agreement to move a service BOM from.
 

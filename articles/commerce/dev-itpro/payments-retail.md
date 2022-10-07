@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Payments FAQ
-description: This topic describes the payment options that are available in Dynamics 365 Commerce.
-author: athinesh99
+description: This article describes the payment options that are available in Dynamics 365 Commerce.
+author: josaw1
 ms.date: 10/14/2021
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
-# ROBOTS:
+ms.prod: 
+ms.technology: 
 audience: Developer
-# ms.devlang:
-ms.reviewer: tfehr
-# ms.tgt_pltfrm:
-ms.custom: 65801
-ms.assetid: 99079d81-fde2-4432-8cee-82bbcc3bd57e
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry:
-ms.author: athinesh
+ms.author: josaw
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 65801
+ms.assetid: 99079d81-fde2-4432-8cee-82bbcc3bd57e
 ---
 # Payments FAQ
 
@@ -74,7 +63,7 @@ If a payment connector update is issued by the payment connector provider, the u
 
 No, cash back or cash out operations are not supported in POS during a transaction. However, customizations via extensibility can be achieved using cash return and payment operations that are similar to gift card "cash out" operations. 
 
-## Related topics
+## Related articles
 
 - [Create an end-to-end payment integration for a payment terminal](end-to-end-payment-extension.md)
 - [Deploy payment connectors](deploy-payment-connector.md)

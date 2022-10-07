@@ -2,7 +2,7 @@
 # required metadata
 
 title: Troubleshoot analytic reports
-description: This topic explains how to troubleshoot and diagnose issues if a customer's data changes don't appear in any of the customer's workspaces.
+description: This article explains how to troubleshoot and diagnose issues if a customer's data changes don't appear in any of the customer's workspaces.
 author: twheeloc
 ms.date: 08/19/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 

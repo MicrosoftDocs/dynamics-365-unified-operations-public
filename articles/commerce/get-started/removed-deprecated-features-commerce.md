@@ -1,57 +1,76 @@
 ---
-# required metadata
-
-title: Removed or deprecated features in Dynamics 365 Commerce 
-description: This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
-author: josaw
-ms.date: 04/27/2022
+title: Removed or deprecated features in Dynamics 365 Commerce
+description: This article describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
+author: josaw1
+ms.date: 08/23/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: josaw
 ms.search.validFrom: 2020-04-30
 ms.dyn365.ops.version: Platform update 33
-
 ---
 
 # Removed or deprecated features in Dynamics 365 Commerce
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
+This article describes features that have been removed, or that are planned for removal from Dynamics 365 Commerce.
 
 - A *removed* feature is no longer available in the product.
-- A *deprecated* feature is not in active development and may be removed in a future update.
+- A *deprecated* feature isn't in active development and may be removed in a future update.
 
 This list is intended to help you consider these removals and deprecations for your own planning. 
 
 > [!NOTE]
-> Detailed information about objects in Finance and Operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of Finance and Operations apps.
+> Detailed information about objects in finance and operations apps can be found in the [Technical reference reports](/dynamics/s-e/). You can compare the different versions of these reports to learn about objects that have changed or been removed in each version of finance and operations apps.
 
-## Features removed or deprecated in the Commerce 10.0.25 release
+## Features removed or deprecated in the Commerce 10.0.29 release
 
-### Modern Point of Sale (MPOS)
-
-The Modern Point of Sale (MPOS) application will be deprecated in the Commerce version 10.0.25 release and replaced with the Store Commerce app.
+### Commerce parameters setting - Allow price adjustments to increase product price
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | In-store apps are the cornerstone of the Dynamics 365 Commerce omnichannel offering. We continuously innovate to provide modern and intelligent store experiences, and to further modernize our solution we are rolling out new sets of changes that will significantly improve IT operations and user experiences with our existing in-store applications on Windows. The new Store Commerce application is a technology upgrade of the existing MPOS. It provides improved performance, reliability, and long-term support on the Windows platform and eliminates the need to repackage the app with each update. |
-| **Replaced by another feature?**   |  [Store Commerce](../dev-itpro/store-commerce.md) |
-| **Product areas affected**         | Modern Point of Sale |
+| **Reason for deprecation/removal** | We had this setting to control whether the price adjustment function allows increasing the product price. When this parameter is turned off, when using the price adjustment function organizations can only set a product's unit price lower than its base price and trade agreement sales price. We deprecate this setting because the price adjustment function has been updated to support two-way adjustments (increase or decrease) out of the box. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Pricing and discounts |
 | **Deployment option**              | All |
-| **Status**                         | Deprecated: As of the Commerce version 10.0.25 release, the MPOS installer shipped via the LCS virtual machines (VMs) will be removed in Oct 2023. |
+| **Status**                         | Deprecated: This setting is turned on by default since Commerce version 10.0.29 and will be removed in October 2023. |
+
+### Commerce parameters setting - Enable price report for retail store
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | We had this setting to control whether the price report function is available for use on the store configuration form. We deprecate this setting because the store configuration form has been updated to always provide the price report function as standard function. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Pricing and discounts |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: This setting will be removed in October 2023. |
+
+### Commerce parameters setting - Use today’s date to calculate prices
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The supply chain management (SCM) pricing engine supports pricing calculation based on the requested ship date or requested receipt date, along with today's date. TheCommerce pricing engine only supports pricing calculation based on today's date. For customers who use both SCM and Commerce capabilities, we provided this setting and recommended that customers always set it to **Yes** so that the two pricing engines can work together. We deprecate this setting because it doesn't change the calculation behavior and is redundant. |
+| **Replaced by another feature?**   | No |
+| **Product areas affected**         | Pricing and discounts |
+| **Deployment option**              | All |
+| **Status**                         | Deprecated: This setting is turned on by default since Commerce version 10.0.29 and will be removed in October 2023. |
+
+## Feature deprecation effective July 2022
+
+### Commerce analytics (Preview)
+
+| &nbsp;  | &nbsp; |
+|------------|--------------------|
+| **Reason for deprecation/removal** | The Dynamics 365 Commerce team has analyzed the usage and uptake of the Commerce analytics (Preview) feature, and a decision has been made to no longer move forward in bringing the feature to general availability.   |
+| **Replaced by another feature?**   | At this time, Commerce analytics (Preview) won't be replaced by another feature or solution. The export of raw transactions and master data from finance and operations apps to Azure Data Lake continues to be available, as explained in [Export to Data Lake in finance and operations apps](../../fin-ops-core/dev-itpro/data-entities/finance-data-azure-data-lake.md). Partners and customers can leverage that data stream to author any intended analytics reports for their business needs.
+| **Product areas affected**         | Commerce analytics (Preview) |
+| **Deployment option**              | All |
+| **Status**                         | We'll be looking at disabling this feature by August 30, 2022.  From this date forward, no refreshing will occur in the current Power BI reports provided by Commerce analytics (Preview).     |
 
 ## Features removed or deprecated in the Commerce 10.0.21 release
 
@@ -63,7 +82,7 @@ The **Overlapping discounts handling** setting on the **Commerce parameters** pa
 
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | <p>The **Overlapping discounts handling** setting in Commerce parameters controls how the Commerce pricing engine searches and determines the optimal combination of overlapping discounts. It currently offers three options:<p><ul><li> **Best performance** – This option uses an advanced heuristics algorithm and a [marginal value ranking](../optimal-combination-overlapping-discounts.md) method to prioritize, evaluate, and determine the best discount combination in a timely manner.</li><li>**Balanced calculation** – In the current code base, this option works just like the **Best performance** option. Therefore, it's essentially a duplicated option.</li><li>**Exhaustive calculation** – This option uses an old algorithm that goes through all possible discount combinations during the price calculation. For orders that have large lines and quantities, this option might cause performance issues.</li></ul><p>To help simplify configuration, improve performance, and reduce incidents that are caused by the old algorithm, we will completely remove the **Overlapping discounts handling** setting and update the internal logic of the Commerce pricing engine so that it now uses only the advanced algorithm (that is, the algorithm behind the **Best performance** option).</p> |
+| **Reason for deprecation/removal** | <p>The **Overlapping discounts handling** setting in Commerce parameters controls how the Commerce pricing engine searches and determines the optimal combination of overlapping discounts. It currently offers three options:<p><ul><li> **Best performance** – This option uses an advanced heuristics algorithm and a [marginal value ranking](../optimal-combination-overlapping-discounts.md) method to prioritize, evaluate, and determine the best discount combination in a timely manner.</li><li>**Balanced calculation** – In the current code base, this option works just like the **Best performance** option. Therefore, it's essentially a duplicated option.</li><li>**Exhaustive calculation** – This option uses an old algorithm that goes through all possible discount combinations during the price calculation. For orders that have large lines and quantities, this option might cause performance issues.</li></ul><p>To help simplify configuration, improve performance, and reduce incidents that are caused by the old algorithm, we'll completely remove the **Overlapping discounts handling** setting and update the internal logic of the Commerce pricing engine so that it now uses only the advanced algorithm (that is, the algorithm behind the **Best performance** option).</p> |
 | **Replaced by another feature?**   | No. We recommend that organizations that use the **Balanced calculation** or **Exhaustive calculation** option switch to the **Best performance** option before this feature is removed. |
 | **Product areas affected**         | Pricing and discounts |
 | **Deployment option**              | All |
@@ -120,11 +139,11 @@ POS extension development using ModernPos.sln, CloudPos.sln, POS.Extension.cspro
 
 |  &nbsp; | &nbsp; |
 |------------|--------------------|
-| **Reason for deprecation/removal** | Beginning in this release, in the **Commerce scheduler parameters** form in Dynamics 365 headquarters, the **Full dataset generation interval in days** field will be deprecated. Also starting in this release, the field will be visually removed so that the value cannot be edited. This will stay as the value **0**. |
+| **Reason for deprecation/removal** | Beginning in this release, in the **Commerce scheduler parameters** form in Dynamics 365 headquarters, the **Full dataset generation interval in days** field will be deprecated. Also starting in this release, the field will be visually removed so that the value can't be edited. This will stay as the value **0**. |
 | **Replaced by another feature?**   | No |
 | **Product areas affected**         | Dynamics 365 Commerce |
 | **Deployment option**              | All|
-| **Status**                         | Deprecated. Do not use this field or change the value in it.|
+| **Status**                         | Deprecated. Don't use this field or change the value in it.|
 
 ## Features removed or deprecated in the Commerce 10.0.15 release
 
@@ -170,7 +189,7 @@ POS extension development using ModernPos.sln, CloudPos.sln, POS.Extension.cspro
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Hardware station extension using IHardwareStationController has been deprecated to provide simplified extension model. The new implementation will have only the IController class without any additional class implementation and to avoid the dependency with core hardware station libraries, previously extension need to refer multiple libraries.) |
-| **Replaced by another feature?**   | It is recommended to use the IController class extension model by importing the NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts) package. |
+| **Replaced by another feature?**   | It's recommended to use the IController class extension model by importing the NuGet (Microsoft.Dynamics.Commerce.Hosting.Contracts) package. |
 | **Product areas affected**         | Hardware station extensions |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: As of release 10.0.11 |
@@ -180,18 +199,18 @@ POS extension development using ModernPos.sln, CloudPos.sln, POS.Extension.cspro
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | Picking and receiving operations is being deprecated due to new operation redesign. |
-| **Replaced by another feature?**   | Yes. It is replaced by two new POS operations: inbound operation (804) and outbound operation (805).|
+| **Replaced by another feature?**   | Yes. It's replaced by two new POS operations: inbound operation (804) and outbound operation (805).|
 | **Product areas affected**         | Point of sale (POS) application |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: As of release 10.0.10, the picking and receiving operation will no longer receive any new feature updates. Only critical bug fixes will be done for this operation in future releases. All customers are encouraged to move to the new [Inbound operations](../pos-inbound-inventory-operation.md) and [Outbound operations](../pos-outbound-inventory-operation.md), which will continue to be part of our long-term product roadmap. |
 
 
 ## Features removed or deprecated in the Commerce 10.0.7 release
-### Commerce GetProductAvailabilities and GetAvailableInventoryNearby API's
+### Commerce GetProductAvailabilities and GetAvailableInventoryNearby APIs
 | &nbsp;  | &nbsp; |
 |------------|--------------------|
 | **Reason for deprecation/removal** | New optimized APIs have been created to replace the GetProductAvailabilities and GetAvailableInventoryNearby APIs. |
-| **Replaced by another feature?**   | Yes: It is replaced by GetEstimatedAvailabilty and GetEstimatedProductWarehouseAvailability APIs. |
+| **Replaced by another feature?**   | Yes: It's replaced by GetEstimatedAvailabilty and GetEstimatedProductWarehouseAvailability APIs. |
 | **Product areas affected**         | e-Commerce application SDK |
 | **Deployment option**              | All |
 | **Status**                         | Deprecated: As of release 10.0.7, there will no longer be engineering investments made for GetProductAvailabilities and GetAvailableInventoryNearby. Organizations that use these APIs in their e-Commerce deployments should convert to the new GetEstimatedAvailabilty and GetEstimatedProductWarehouseAvailability APIs and enable the [Optimized product availability calculation feature](../calculated-inventory-retail-channels.md).  |
@@ -201,3 +220,4 @@ To learn more about features that have been removed or deprecated in previous re
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

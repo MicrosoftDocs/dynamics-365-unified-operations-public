@@ -1,26 +1,18 @@
 ---
-# required metadata
 title: Set up bank accounts (Russia)
-description: This topic provides information about local settings and prerequisites for bank modules for Russia. 
-author: anasyash
+description: This article provides information about local settings and prerequisites for bank modules for Russia.
+author: AdamTrukawka
 ms.date: 12/06/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-ms.search.form: BankGroup, BankAccountTable 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
+ms.search.form: BankGroup, BankAccountTable
 ---
 
 # Set up bank accounts (Russia)

@@ -2,7 +2,7 @@
 # required metadata
 
 title: View liability, asset, and expense transactions
-description: This topic explains how to view transactions for a leased asset. These transactions include lease liability transactions and executory expense transactions that have been posted.
+description: This article explains how to view transactions for a leased asset. These transactions include lease liability transactions and executory expense transactions that have been posted.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: SysQueryForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to view transactions for a leased asset. These transactions include lease liability transactions and executory expense transactions that have been posted. The carrying values of the liability and right-of-use (ROU) asset are used on several reports. They are also used to calculate adjustment values.
+This article explains how to view transactions for a leased asset. These transactions include lease liability transactions and executory expense transactions that have been posted. The carrying values of the liability and right-of-use (ROU) asset are used on several reports. They are also used to calculate adjustment values.
 
 ## Liability transactions
 
