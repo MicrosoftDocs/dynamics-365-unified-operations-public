@@ -68,7 +68,7 @@ You must set up the **Container packing policy** and **Packing profile ID** for 
     - **Location** - Select *Pack*. Note that the Warehouse Management mobile app will always prompt for confirmation for the assigned value, which can get overwritten. In case you do not provide a default packing location value the warehouse worker must always scan or look up the packing location in the app, which can get achieved by using the [Data inquiry](warehouse-app-data-inquiry.md) capability.
 
 > [!NOTE]
-> You can automatically print container labels when creating a new container record. For more information, see [Print container labels](print-continer-labels.md).
+> You can automatically print container labels when creating a new container record. For more information, see [Print container labels](print-container-labels.md).
 
 ### Create a new *Pack inventory into containers* mobile device menu item
 

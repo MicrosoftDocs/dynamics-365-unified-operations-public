@@ -147,7 +147,7 @@ $DisplayListOfItemsNumbers()[1]$
 
 For more information about how to set up and print labels, see:
    - [License plate label printing](tasks/license-plate-label-printing.md)
-   - [Print container labels](print-continer-labels.md)
+   - [Print container labels](print-container-labels.md)
    - [Wave label printing](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

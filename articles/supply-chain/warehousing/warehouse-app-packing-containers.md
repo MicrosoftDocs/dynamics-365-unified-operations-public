@@ -78,7 +78,7 @@ The following table shows which processes are and aren't supported when using th
 | Identification via GS1 barcode scanning | No | |
 | Identification item via barcode setup | (Yes) | But quantity and unit (piece-by-piece) scanning is not supported |
 | New container | Yes | Both via **Container creation** mobile device menu item incl. container type capturing and number sequence defaulting when having *Container ID mode* as **Auto**. But as well container ID creation when using the *Autocreate container at container close* process <!--KFM: I don't understand this. Please clarify. --> |
-| Print container label | Yes | Labels can be printed automatically during **Container creation** process or manually using the **Print container label** mobile device menu item. For more information about how to set this up, see  [Print container labels](print-continer-labels.md). |
+| Print container label | Yes | Labels can be printed automatically during **Container creation** process or manually using the **Print container label** mobile device menu item. For more information about how to set this up, see  [Print container labels](print-container-labels.md). |
 | Close container | Yes | Via the **Container closing** mobile device menu item, which also captures the weight. |
 | Release container | No | Only possible based on the container closing policy (not available as a mobile device menu option). Workers aren't able to trigger the release, or reply yes or now, using the mobile app. <!--KFM: Please confirm my rephrasing. --> |
 | Reopen container | No | |
@@ -107,6 +107,6 @@ The following table shows which processes are and aren't supported when using th
 
 ## Next steps
 
-- Work through an example of how to set up and use this feature by reading [Scenario: Pack containers with the Warehouse Management mobile app](warehouse-app-pack-containers-scenario.md).
+- Work through an example of how to set up and use this feature by reading [Scenario – Pack containers with the Warehouse Management mobile app](warehouse-app-pack-containers-scenario.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

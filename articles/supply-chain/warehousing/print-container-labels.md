@@ -15,20 +15,20 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-Container labels provide information about a container and the related shipment data. A typical scenario that could include this type of label is when a worker is [creating and packing containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md), where the worker could print a container label with a barcode of the container ID and apply it to the physical container.
+Container labels provide information about a container and the related shipment data. A typical scenario that could include this type of label is when a worker is [creating and packing containers using the Warehouse Management mobile app](warehouse-app-packing-containers.md), where the worker could print a container label with a barcode of the container ID and apply it to the physical container.
 
 As with [*license plate labels*](document-routing-layout-for-license-plates.md), *container labels* use the Zebra Programming Language (ZPL) to create label layouts.
 
 ## Turn on the container label printing functionality
 
-*Container label* functionality is part of the *Pack containers using the Warehouse Management mobile app* feature (see also [Pack containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md)). To use this functionality, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+*Container label* functionality is part of the *Pack containers using the Warehouse Management mobile app* feature (see also [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md)). To use this functionality, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Pack containers using the Warehouse Management mobile app*
 
 ## Example scenario: Print container labels while creating a container using the Warehouse Management mobile app
 
-This example scenario shows how you can set up your system to print container labels when a worker creates a container using the Warehouse Management mobile app. This scenario builds on the information provided in [Pack containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md), which provides more details about the full process of packing containers using the Warehouse Management mobile app.
+This example scenario shows how you can set up your system to print container labels when a worker creates a container using the Warehouse Management mobile app. This scenario builds on the information provided in [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md), which provides more details about the full process of Packing containers with the Warehouse Management mobile app.
 
 ### Make sample data available
 
@@ -221,7 +221,7 @@ Now that you've created the mobile device menu item you're ready to add it to th
 
 ### Run a scenario to print container labels
 
-For an example of how to print bar codes manually, follow the instructions given in [Pack containers using the Warehouse Management mobile app](warehouse-app-pack-containers.md) and confirm that the scenario describe in this article is also supported.
+For an example of how to print bar codes manually, follow the instructions given in [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md) and confirm that the scenario describe in this article is also supported.
 
 Here are a few suggestions for how to customize and fine-tune this scenario to reduce the number of steps workers must perform when printing container labels.
 
