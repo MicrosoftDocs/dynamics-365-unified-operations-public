@@ -29,16 +29,16 @@ A new change tracking option has been added to finance and operations apps to en
 
 Before creating or updating data entities to use with row version change tracking, verify that all tables used as data sources for the entity allow row version change tracking.
 
-To create a new entity, see [Build and consume data entities](/dev-tools/design-best-practices.md)
+To create a new entity, see [Build and consume data entities](/dev-itpro/data-entities/build-consuming-data-entities.md)
 
 ## Allow row version change tracking on tables
 
-You can enable **Allow Row Version Change Tracking** on tables by setting its metadata property to **Yes**. All table(s) used as data source for a data entity, must have the property set to **Yes** to allow row version change tracking for the entity. 
+You can enable **Allow Row Version Change Tracking** on tables by setting its metadata property to **Yes**. All table(s) used as data source for a data entity, must have the property set to **Yes** to allow row version change tracking for the entity. A **SysRowVersionNumber** column, of data type **rowversion** is added to the table during build operations. 
 
-The **SQL row version** column performs version stamping of table rows. SQL server maintains a database level counter that is incremented for each insert or update operation. Every time a row with a row version column is modified or inserted, the incremented database row version counter is inserted in the row version column. Changes to a table row can be detected by comparing the current value in row version column with the previous value. 
+The **SysRowVersionNumber** column performs version stamping of table rows. SQL server maintains a database level counter that is incremented for each insert or update operation. Changes to a table row can be detected by comparing the current value in **SysRowVersionNumber** with the previous value. 
 
 > [!NOTE]
-> The SQL row version column is read only in SQL. This means that direct SQL update statements will break if they try to create or update this column, e.g. statements similar to:
+> The **SysRowVersionNumber** column, aka **rowversion** column, is read only in SQL. This means that direct SQL update statements will break if they try to create or update this column, e.g. statements similar to:
 > ```SQL
 > INSERT INTO table2
 > SELECT * FROM table1
@@ -46,7 +46,7 @@ The **SQL row version** column performs version stamping of table rows. SQL serv
 
 ## Allow row version change tracking on data entities
 
-You can enable **Allow Row Version Change Tracking** on data entities by setting their metadata properties to **Yes**. Not all existing data entities are configured to support row version change tracking, this is mainly due to the complexity of the entity. Validations rules are evaluated at build time when **Allow Row Version Change Tracking** is set to **Yes**. It's recommended to be aware about these rules when creating or updating entities.     
+You can enable **Allow Row Version Change Tracking** on data entities by setting their metadata properties to **Yes**. Not all existing data entities are configured to support row version change tracking, this is mainly due to the complexity of the entity. Validations rules are evaluated at build time when **Allow Row Version Change Tracking** is set to **Yes** for a data entity. It is still recommended you review and proactively apply these rules when creating or updating entities.
 
 **Data entity validation rules**
 
