@@ -45,6 +45,7 @@ To help organizations use async customer creation mode to manage customers, and 
 | Enable parity between synchronous and asynchronous customer creation. | 10.0.24 and later | <p>Feature switch: **Enable enhanced async customer creation**</p><p>Feature details: Ability to capture additional information, such as the title, affiliations from the default customer, and secondary contact information (phone number and email address), while you create customers asynchronously</p> |
 | User-friendly error messages | 10.0.28 and later | These enhancements help improve user-friendly error messages if a user can't immediately edit information while synchronization is in process. You enable these enhancements by using the **Allow certain UI elements to be unmodifiable by an async customer** setting at **Site settings \> Extensions** in Commerce site builder. |
 | Ability to edit customer information asynchronously | 10.0.29 and later | <p>Feature switch: **Enable editing customers in asynchronous mode**</p><p>Feature details: Ability to edit customer data asynchronously</p><p>For answers to common questions about issues that are related to editing customer information asynchronously, see [Asynchronous customer creation mode FAQ](async-customer-mode-faq.md).</p> |
+| Ability to audit synchronization of customer management operations | 10.0.31 and later | <p>Gives an ability for C1 to audit the synchronization of customer management operations in headquarters. Also allows C1 to make changes, if needed, and synchronize the data.</p> |
 
 ### Feature switch hierarchy
 
