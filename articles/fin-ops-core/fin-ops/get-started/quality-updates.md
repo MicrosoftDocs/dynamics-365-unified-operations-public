@@ -69,7 +69,7 @@ Because customers will regularly receive smaller payloads, we expect the process
 At this time, quality updates are only targeting sandboxes. We will update this space with a start date for production environments when we have more concrete data and metrics from proactive updates for sandboxes to gauge readiness for prod.
 
 ## What is the schedule for sandbox proactive quality updates?
-For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#What-are-the-planned-maintenance-windows).
+For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 
 ### Proactive quality update release: 10.0.28
 **App version: 10.0.1265.89**
@@ -83,7 +83,7 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 4 | North Europe, Central US, West US | September 28 to October 1, 2022 | October 7 to October 10, 2022 |
 | Station 5 | DoD, Government Community Cloud, China | Not Scheduled | Not Scheduled |
 
-### Proactive quality update release: 10.0.29
+### <a name="update"></a> Proactive quality update release: 10.0.29
 | Station | Regions | Upcoming Sandbox Schedule
 |---|---|---|
 | Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | October 14 to October 17, 2022 |
@@ -93,7 +93,7 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 5 | DoD, Government Community Cloud, China | Not Scheduled |
 
 > [!IMPORTANT] 
-> Five business days in advance, Microsoft will update the preceding schedule and send email notifications to the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#What-are-the-planned-maintenance-windows).
+> Five business days in advance, Microsoft will update the preceding schedule and send email notifications to the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 >
 > For each region group, or *station*, where a quality update is currently scheduled to be rolled out, the schedule shows a range of four days. Quality updates will start with only sandbox environments. Then, as the percentage of successfully deployed sandboxes increases, deployment to production environments will begin with advance notifications to customers.
 > 
@@ -145,7 +145,7 @@ Yes. You can install a quality update proactively. Microsoft will skip the updat
 - We recommend you utilize the latest quality update build to test your changes for an upcoming service update for better stability and results.
 
 ## If an environment has an upcoming scheduled action and a scheduled quality update in the same maintenance window, will it still receive the quality update?
-If there is any contention with a pre-scheduled action, for example a Point In Time Restore (PITR), the quality update will be rescheduled to the next available maintenance window within the four-day window. For more details on the schedule, see [What is the schedule for proactive quality updates?](../../fin-ops/get-started/quality-updates.md#What-is-the-schedule-for-sandbox-proactive-quality-updates). 
+If there is any contention with a pre-scheduled action, for example a Point In Time Restore (PITR), the quality update will be rescheduled to the next available maintenance window within the four-day window. For more details on the schedule, see [What is the schedule for proactive quality updates?](#schedule). 
 
 ## Can an environment be brought back to its previous state if there are issues after a quality update is applied?
 After a quality update is applied, there is no rollback under any circumstances. There are only patch forward options available to mitigate issues.
