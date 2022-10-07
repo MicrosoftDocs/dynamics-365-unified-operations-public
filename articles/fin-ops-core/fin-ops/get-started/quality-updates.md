@@ -83,7 +83,7 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 4 | North Europe, Central US, West US | September 28 to October 1, 2022 | October 7 to October 10, 2022 |
 | Station 5 | DoD, Government Community Cloud, China | Not Scheduled | Not Scheduled |
 
-### <a name="update"></a> Proactive quality update release: 10.0.29
+### <a name="schedule"></a> Proactive quality update release: 10.0.29
 | Station | Regions | Upcoming Sandbox Schedule
 |---|---|---|
 | Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | October 14 to October 17, 2022 |
