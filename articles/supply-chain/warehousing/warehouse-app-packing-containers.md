@@ -36,7 +36,7 @@ We recommend that you use the [detour]( warehouse-app-detours.md) functionality 
 
 ### Pack inventory into containers
 
-During the **Pack inventory into containers** process, workers must identify and confirm the following information:
+During the *Pack inventory into containers* process, workers must identify and confirm the following information:
 
 - **Packing location** - Where the container packing occurs (you can assign default values for each worker by going to **Warehouse management \> Setup \> Worker**).
 - **Shipment ID** - To validate which inventory items to pack.
@@ -84,29 +84,29 @@ The following table shows which processes are and aren't supported when using th
 | Reopen container | No | |
 | Change container packing policy | No | The default policy assigned to each worker (on the **Warehouse management \> Setup \> Worker** page) is always used. |
 | Release shipment | No | |
-| Work details | (Yes) | You can use view via [Data inquiry detour](warehouse-app-data-inquiry.md) |
-| Containers for shipment (Open/Closed) | (Yes) | View via [Data inquiry detour](warehouse-app-data-inquiry.md) |
-| Shipment details | (Yes) | View via [Data inquiry detour](warehouse-app-data-inquiry.md) |
-| Display dimensions | (no) | But view via [Data inquiry detour](warehouse-app-data-inquiry.md) - capturing of dimensions are not supported |
+| Work details | (Yes) | Can be made visible (read-only) by setting up a [data inquiry detour](warehouse-app-data-inquiry.md). |
+| Containers for shipment (Open/Closed) | (Yes) | Can be made visible (read-only) by setting up a [data inquiry detour](warehouse-app-data-inquiry.md). |
+| Shipment details | (Yes) | Can be made visible (read-only) by setting up a [data inquiry detour](warehouse-app-data-inquiry.md). |
+| Display dimensions | (No) | Can be made visible (read-only) by setting up a [data inquiry detour](warehouse-app-data-inquiry.md), but capturing of dimensions isn't supported. |
 | Manifest containers | No | Only automatic manifesting setup is supported |
 | Unmanifest containers | No | |
-| Manifest container group | No | No weight capturing process supported |
+| Manifest container group | No | No weight capturing process is supported. |
 | Unmanifest container group | No | |
-| Manifest shipment | No | No weight capturing process supported |
+| Manifest shipment | No | No weight capturing process is supported. |
 | Unmanifest shipment | No | |
-| Transport route rate details | (No) | Only view via [Data inquiry detour](warehouse-app-data-inquiry.md) |
-| Transport shipment accessorial charges | (No) | Only view via [Data inquiry detour](warehouse-app-data-inquiry.md) |
-| Transport status | (No) | Only View via [Data inquiry detour](warehouse-app-data-inquiry.md) |
-| Print packing slip | No | The setting to process sales packing slip processing as part of closing the last container for a shipment will not apply when using the Warehouse Management mobile app |
-| Print container content | (No) | Only automatic printing setup is supported as part of closing container |
-| Print shipping label | (No) | Only automatic printing setup is supported as part of closing container |
-| Pack (all shipment items) | No | Each item number must be identified and packed individually |
-| Pack items (based on defined quantity) | (Yes) | But only AFTER the item number has been identified by updating the quantity as part of the **Pack inventory into containers** process |
-| Container group license plate ID with delayed work creation | No | It is not possible to specify a grouping license plate ID |
+| Transport route rate details | (No) | Can be made visible (read-only) by setting up a [data inquiry detour](warehouse-app-data-inquiry.md). |
+| Transport shipment accessorial charges | (No) | Can be made visible (read-only) by setting up a [data inquiry detour](warehouse-app-data-inquiry.md). |
+| Transport status | (No) | Can be made visible (read-only) by setting up a [data inquiry detour](warehouse-app-data-inquiry.md). |
+| Print packing slip | No | The setting to process sales packing slips as part of closing the last container for a shipment won't apply when using the Warehouse Management mobile app. |
+| Print container content | (No) | Only automatic printing (as part of the the close-container process) can be setup. |
+| Print shipping label | (No) | Only automatic printing (as part of the the close-container process) can be setup. |
+| Pack (all shipment items) | No | Each item number must be identified and packed individually. |
+| Pack items (based on defined quantity) | (Yes) | Yes, but only *after* the item number has been identified by updating the quantity as part of the *Pack inventory into containers* process |
+| Container group license plate ID with delayed work creation | No | It isn't possible to specify a grouping license plate ID |
 | Container type creation | No | |
 
 ## Next steps
 
-- Work through an example of how to set up and use this feature by reading [Scenario – Pack containers with the Warehouse Management mobile app](warehouse-app-pack-containers-scenario.md).
+- Work through an example of how to set up and use this feature by reading [Example scenario – Pack containers with the Warehouse Management mobile app](warehouse-app-pack-containers-scenario.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

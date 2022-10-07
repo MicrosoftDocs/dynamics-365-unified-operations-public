@@ -3403,7 +3403,7 @@
             href: warehousing/packing-work.md
           - name: Packing containers with the Warehouse Management mobile app
             href: warehousing/warehouse-app-packing-containers.md
-          - name: Scenario – Pack containers with the Warehouse Management mobile app
+          - name: Example scenario – Pack containers with the Warehouse Management mobile app
             href: warehousing/warehouse-app-pack-containers-scenario.md
           - name: Set up short picking item reallocation
             href: warehousing/tasks/set-up-short-picking-item-reallocation.md
