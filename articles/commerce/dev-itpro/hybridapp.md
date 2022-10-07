@@ -18,7 +18,7 @@ ms.search.validFrom: 2018-10-29
 
 This article shows how to build and run the Retail point of sale (POS) hybrid app on Android and iOS devices. 
 
-Retail hybrid app is shell built using [Xamarin](/xamarin/). Inside the shell is a Web view controller that loads the Cloud POS (CPOS), which is based on the Commerce Scale Unit URL specified in the settings of this app. This is a Retail hybrid app shell for Android and iOS which will internally load the Cloud POS. For more information, see [Cloud POS](/dynamics365/unified-operations/retail/mpos-or-cpos).
+The Retail hybrid app is a shell built using [Xamarin](/xamarin/). Inside the shell is a Web view controller that loads the Cloud POS (CPOS), which is based on the Commerce Scale Unit URL specified in the settings of this app. The Retail hybrid app shell is for Android and iOS, which will internally load the Cloud POS. For more information, see [Cloud POS](/dynamics365/unified-operations/retail/mpos-or-cpos).
 
 The Store Commerce apps for [Windows](store-commerce.md) and [mobile platforms](store-commerce-mobile.md) are the next generation of point of sale applications for Dynamics 365 Commerce. Modern POS (MPOS) and the Retail hybrid app will be deprecated in October of 2023. Microsoft recommends that you use Store Commerce or CPOS for all new deployments. Existing customers should plan to migrate MPOS and the Retail hybrid app to Store Commerce. 
 
@@ -49,7 +49,7 @@ After you've installed Xamarin, you must update it to the latest stable version 
 
 To build the Android Retail hybrid app, follow these steps.
 
-1. When installation is complete, launch Visual Studio and sign in with your Microsoft account (this is the same account that you use with Windows). Check for Xamarin updates by clicking **Tools \> Options \> Xamarin** or **Tools \> Options \> Xamarin \> Other**. Here you'll find a **Check Now** link. If you do not see an option for Xamarin in **Tools \> Options**, review your installation, or try restarting Visual Studio. You can also search for Xamarin in the **Options** dialog box. If needed, download and install the latest version.
+1. When installation is complete, launch Visual Studio and sign in with your Microsoft account (the same account that you use with Windows). Check for Xamarin updates by clicking **Tools \> Options \> Xamarin** or **Tools \> Options \> Xamarin \> Other**. Here you'll find a **Check Now** link. If you don't see an option for Xamarin in **Tools \> Options**, review your installation, or try restarting Visual Studio. You can also search for Xamarin in the **Options** dialog box. If needed, download and install the latest version.
 1. In the [Retail SDK folder](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk), open **SampleExtensions\HybridApp\Android\Sample.HybridApp.Android.sln**. Build and deploy using the emulator and verify that everything appears as it should.
 
     > [!NOTE]
@@ -62,7 +62,7 @@ To build the Android Retail hybrid app, follow these steps.
 
 ### Connect to a Mac
 
-If you're developing on Windows and using the Mac just for building the iOS app then you must connect the computer that runs Windows and the Mac. For instructions, see [Connecting to the Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/).
+If you're developing on Windows and using the Mac just for building the iOS app, you must connect the computer that runs Windows with the Mac. For instructions, see [Connecting to the Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/).
 
 ## Set up and install Xamarin on iOS
 
@@ -70,7 +70,7 @@ To set up and install Xamarin on iOS, follow these steps.
 
 1. Download and install Xcode from <https://developer.apple.com/xcode/>. Add your Apple ID using the instructions described in [Adding your account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
 1. Download and install Xamarin by following the instructions in [Installing and configuring Xamarin.iOS](https://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com).
-1. When you have completed installing Xamarin on both the Windows and Mac computers, follow the instructions in [Connecting to the Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/) (xamarin.com). After you do this, you can work with iOS and Mac from Visual Studio on the Windows computer.
+1. When you have completed installing Xamarin on both the Windows and Mac computers, follow the instructions in [Connecting to the Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/) (xamarin.com). Once connected to the Mac, you can work with iOS and Mac from Visual Studio on the Windows computer.
 
 For more detailed steps on installing Xamarin on iOS, see [Xamarin.iOS installation](/xamarin/ios/get-started/installation/).
 
