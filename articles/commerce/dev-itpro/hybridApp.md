@@ -84,9 +84,6 @@ For more detailed steps on installing Xamarin on iOS, refer to [Xamarin.iOS inst
       After connecting to the Mac and building the application in Visual Studio, select the iOS device type and deploy the app on the selected device.
       
        ![POS iOS app VS setting for deployment.](./media/iOSSetting.png)
-       
-    > [!NOTE]
-    > If you want to add a custom Azure AD host URL for activation, in the solution edit the **PosActivity.cs** file, search for the string array variable named **AadHostUrls**, and then add your custom Azure AD host URL to the array. 
    
 1. Using the Emulator, go to **Settings \> RetailMPOS**. Enter the Commerce Scale Unit URL.
       
