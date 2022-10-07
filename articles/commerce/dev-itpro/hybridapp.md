@@ -18,9 +18,9 @@ ms.search.validFrom: 2018-10-29
 
 This article shows how to build and run the Retail point of sale (POS) hybrid app on Android and iOS devices. 
 
-The Retail hybrid app is a shell built using [Xamarin](/xamarin/). Inside the shell is a Web view controller that loads the Cloud POS (CPOS), which is based on the Commerce Scale Unit URL specified in the settings of this app. The Retail hybrid app shell is for Android and iOS, which will internally load the Cloud POS. For more information, see [Cloud POS](/dynamics365/unified-operations/retail/mpos-or-cpos).
+The Retail hybrid app is a shell that was built by using [Xamarin](/xamarin/). Inside the shell is a Web view controller that loads Cloud POS (CPOS), which is based on the Commerce Scale Unit URL that is specified in the settings of this app. The Retail hybrid app shell is for Android and iOS, which will internally load CPOS. For more information, see [Cloud POS](/dynamics365/unified-operations/retail/mpos-or-cpos).
 
-The Store Commerce apps for [Windows](store-commerce.md) and [mobile platforms](store-commerce-mobile.md) are the next generation of point of sale applications for Dynamics 365 Commerce. Modern POS (MPOS) and the Retail hybrid app will be deprecated in October of 2023. Microsoft recommends that you use Store Commerce or CPOS for all new deployments. Existing customers should plan to migrate MPOS and the Retail hybrid app to Store Commerce. 
+The Store Commerce apps for [Microsoft Windows](store-commerce.md) and [mobile platforms](store-commerce-mobile.md) are the next generation of POS applications for Dynamics 365 Commerce. Modern POS (MPOS) and the Retail hybrid app will be deprecated in October 2023. Microsoft recommends that you use Store Commerce or CPOS for all new deployments. Existing customers should plan to migrate MPOS and the Retail hybrid app to Store Commerce. 
 
 ## Development tools
 
@@ -39,8 +39,8 @@ To set up and install Xamarin on Windows, go to [Windows Installation](/xamarin/
 
 After you've installed Xamarin, you must update it to the latest stable version (Xamarin.Android SDK version must be < 10.0).
 
-- **Windows** - In Microsoft Visual Studio, select **Tools \> Options \> Environment \> Xamarin \> Other**.
-- **Mac** - In Xamarin Studio, select **Check for Updates \> Update channel**. For more information about this step, see [Change the Updates Channel](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/).
+- **Windows:** In Microsoft Visual Studio, select **Tools \> Options \> Environment \> Xamarin \> Other**.
+- **Mac:** In Xamarin Studio, select **Check for Updates \> Update channel**. For more information about this step, see [Change the Updates Channel](https://developer.xamarin.com/recipes/cross-platform/ide/change_updates_channel/).
 
 ### Build the Android Retail hybrid app
 
@@ -49,7 +49,7 @@ After you've installed Xamarin, you must update it to the latest stable version 
 
 To build the Android Retail hybrid app, follow these steps.
 
-1. When installation is complete, launch Visual Studio and sign in with your Microsoft account (the same account that you use with Windows). Check for Xamarin updates by clicking **Tools \> Options \> Xamarin** or **Tools \> Options \> Xamarin \> Other**. Here you'll find a **Check Now** link. If you don't see an option for Xamarin in **Tools \> Options**, review your installation, or try restarting Visual Studio. You can also search for Xamarin in the **Options** dialog box. If needed, download and install the latest version.
+1. When installation is completed, open Visual Studio, and sign in by using your Microsoft account (the same account that you use with Windows). Check for Xamarin updates by selecting **Tools \> Options \> Xamarin** or **Tools \> Options \> Xamarin \> Other**. You will find a **Check Now** link. If you don't see an option for Xamarin at **Tools \> Options**, review your installation, or try to close and reopen Visual Studio. You can also search for Xamarin in the **Options** dialog box. Download and install the latest version as needed.
 1. In the [Retail SDK folder](retail-sdk/retail-sdk-overview.md#download-the-retail-sdk), open **SampleExtensions\HybridApp\Android\Sample.HybridApp.Android.sln**. Build and deploy using the emulator and verify that everything appears as it should.
 
     > [!NOTE]
@@ -62,31 +62,31 @@ To build the Android Retail hybrid app, follow these steps.
 
 ### Connect to a Mac
 
-If you're developing on Windows and using the Mac just for building the iOS app, you must connect the computer that runs Windows with the Mac. For instructions, see [Connecting to the Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/).
+If you're developing on Windows and using a Mac just to build the iOS app, you must connect the computer that runs Windows with the Mac. For instructions, see [Connecting to the Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/connecting-to-mac/).
 
 ## Set up and install Xamarin on iOS
 
 To set up and install Xamarin on iOS, follow these steps.
 
-1. Download and install Xcode from <https://developer.apple.com/xcode/>. Add your Apple ID using the instructions described in [Adding your account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
+1. Download and install Xcode from <https://developer.apple.com/xcode/>. Add your Apple ID by following the instructions in [Adding your account to Xcode](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/AddingYourAccounttoXcode/AddingYourAccounttoXcode.html#//apple_ref/doc/uid/TP40013839-CH40-SW1) (apple.com).
 1. Download and install Xamarin by following the instructions in [Installing and configuring Xamarin.iOS](https://developer.xamarin.com/guides/ios/getting_started/installation/mac/) (xamarin.com).
-1. When you have completed installing Xamarin on both the Windows and Mac computers, follow the instructions in [Connecting to the Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/) (xamarin.com). Once connected to the Mac, you can work with iOS and Mac from Visual Studio on the Windows computer.
+1. When you've finished installing Xamarin on both the Windows computer and the Mac, follow the instructions in [Connecting to the Mac](https://developer.xamarin.com/guides/ios/getting_started/installation/windows/xamarin-mac-agent/) (xamarin.com). After you've connected to the Mac, you can work with iOS and Mac from Visual Studio on the Windows computer.
 
-For more detailed steps on installing Xamarin on iOS, see [Xamarin.iOS installation](/xamarin/ios/get-started/installation/).
+For more detailed information about how to install Xamarin on iOS, see [Xamarin.iOS installation](/xamarin/ios/get-started/installation/).
 
 ### Build the iOS Retail hybrid app
 
-1. In the [Retail SDK folder](/retail-sdk/retail-sdk-overview#download-the-retail-sdk), open SampleExtensions\HybridApp\iOS\solution. After connecting to the Mac and building the application in Visual Studio, select the iOS device type and deploy the app on the selected device.
+1. In the [Retail SDK folder](/retail-sdk/retail-sdk-overview#download-the-retail-sdk), open **SampleExtensions\\HybridApp\\iOS\\solution**. After you've connected to the Mac and built the application in Visual Studio, select the iOS device type, and deploy the app on the selected device.
       
     ![POS iOS app Visual Studio setting for deployment](./media/iOSSetting.png)
    
-1. Using the Emulator, go to **Settings \> RetailMPOS** and enter the Commerce Scale Unit URL.
+1. In the Emulator, go to **Settings \> Retail Modern Pos**, and enter the Commerce Scale Unit URL.
       
     ![POS iOS app setting.](./media/iOSApp.png)
       
-    ![POS iOS app setting for RS URL.](./media/iOSRSURL.png)
+    ![POS iOS app setting for the Commerce Scale Unit URL.](./media/iOSRSURL.png)
       
-1. Launch the MPOS app. You should now be able to sign in and activate the device.
+1. Open the MPOS app. You should now be able to sign in and activate the device.
 
 ## Hybrid app signing and distribution
 
@@ -121,7 +121,7 @@ Support for other payment processors and peripheral devices can be implemented b
 To enable direct hardware support for the hybrid Android app, set up a dedicated hardware station in the same way it would be set up for MPOS. Instructions for setting up the dedicated, or IPC, hardware station can be found in [Retail peripherals](../retail-peripherals-overview.md#modern-pos-for-windows-with-an-ipc-built-in-hardware-station-1)
 
 > [!NOTE]
-> The dedicated hardware station provided with demo data should not be used with the hybrid Android app. To test the hybrid Android app in an environment with demo data, delete the existing hardware stations and create a new dedicated hardware station. To do this, go to **Retail and Commerce \> Channels \> Stores \> All stores** and select the store that will be used (typically **HOUSTON**). In the store details form, scroll down to the **Hardware stations** FastTab. Remove the existing dedicated hardware station, then select **Add** to add a new hardware station of type **Dedicated**. A description is optional. No other details are necessary for the hardware station. 
+> The dedicated hardware station that includes demo data should not be used with the hybrid Android app. To test the hybrid Android app in an environment that has demo data, delete the existing hardware stations, and create a new dedicated hardware station. Go to **Retail and Commerce \> Channels \> Stores \> All stores**, and select the store that will be used (typically **HOUSTON**). On the store details page, on the **Hardware stations** FastTab, remove the existing dedicated hardware station, and then select **Add** to add a new hardware station of the **Dedicated** type. A description is optional. No other details are required for the hardware station. 
 
 To set up the payment connector, follow the standard setup steps noted in the [Dynamics 365 Payment Connector for Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3#setup-and-configuration). Skip the section labeled "Update the Modern POS or IIS Hardware Station configuration."
 
