@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
-ms.author: mumani
+ms.author: stuharg
 ms.search.validFrom: 2018-10-29
 ms.dyn365.ops.version: AX 8.0, AX 8.1
 
@@ -41,7 +41,7 @@ The Store Commerce apps for Windows, Android and iOS are the next generation of 
 
 The Store Commerce mobile apps use the same topology as the Store Commerce app for Windows when it is deployed in hybrid mode. The Store Commerce mobile apps are shell applications that render Cloud Point of Sale (CPOS) directly from the CSU, as well as connecting to Headless Commerce and Commerce Headquarters through the CSU. The shell application model allows Store Commerce to support a dedicated hardware station for direct integration with a payment terminal, printer, cash drawer, and other peripherals. You don't have to set up a shared hardware station to use hardware devices. 
 
-To update the Store Commerce mobile apps, simply update the CSU - all new POS functionality and features will automatically be picked up by the apps. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](deployment/update-retail-channel.md).
+To update the Store Commerce mobile apps, simply update the CSU - all new POS functionality and features will automatically be picked up by the apps. For more information about how to update the CSU, see [Apply updates and extensions to Commerce Scale Unit (cloud)](../../fin-ops-core/dev-it-pro/deployment/update-retail-channel.md).
 
 The shell apps are serviced through app store updates. When minor versions reach general availability (GA), Microsoft will publish that version to the app stores. We may also publish patches between minor version updates to release high priority bug fixes.
 
@@ -49,10 +49,10 @@ The shell apps are serviced through app store updates. When minor versions reach
 
 The Store Commerce mobile apps require Dynamics 365 Commerce, and specifically the Commerce headquarters and Cloud Scale Unit components. Below are the minimum OS and CSU versions required by the Android and iOS mobile apps. 
 
-|                                    | Android      | iOS  |
+| Prerequisite                       | Android      | iOS  |
 | ---------------------------------- | ------------ | ---- |
 | OS version                         | 7.0          | 15.0 |
-| Commerce Scale  Unit (CSU) version | 9.38.22266.8 | TBD  |
+| Commerce Scale Unit (CSU) version | 9.38.22266.8 | TBD  |
 
 ## Installation
 
@@ -73,11 +73,11 @@ In Commerce Headquarters, go to Retail and Commerce > Channel setup > POS setup 
 
 ### **Register setup**
 
-You can create a new register and associate it with the device you created in the previous step, or you can associate an existing register to your new device. For more information about registers, see the [Create and associate registers](../tasks/create-associate-registers) help topic.
+You can create a new register and associate it with the device you created in the previous step, or you can associate an existing register to your new device. For more information about registers, see the [Create and associate registers](../tasks/create-associate-registers.md) help topic.
 
 ### **Screen layout setup**
 
-If you are repurposing a screen layout that is included in the demo data provided with Dynamics 365 Commerce license, the Store Commerce app will automatically select the included Compact layout, as long as the screen resolution of your device is smaller than 480px x 853px in portrait orientation. However, if you are creating a screen layout from scratch, or your mobile device uses a larger resolution than the compact layout supports, be sure to create a resolution and associated button grids appropriate to the phone or tablet you plan to deploy to. For more information about screen layout configuration, see the [POS user interface visual configurations](../pos-screen-layouts) help topic. 
+If you are repurposing a screen layout that is included in the demo data provided with Dynamics 365 Commerce license, the Store Commerce app will automatically select the included Compact layout, as long as the screen resolution of your device is smaller than 480px x 853px in portrait orientation. However, if you are creating a screen layout from scratch, or your mobile device uses a larger resolution than the compact layout supports, be sure to create a resolution and associated button grids appropriate to the phone or tablet you plan to deploy to. For more information about screen layout configuration, see the [POS user interface visual configurations](../pos-screen-layouts.md) help topic. 
 
 After devices and registers have been configured, go to Retail and Commerce > Retail and Commerce ID > Distribution Schedules and run the registers job.
 
@@ -99,7 +99,7 @@ For more information about device activation, see [Point of sale (POS) device ac
 
  The table below compares the capabilities of the Store Commerce app across Windows, Android and iOS platforms.
 
-|                                                              | Windows | Android | iOS  |
+| Feature                                                      | Windows | Android | iOS  |
 | ------------------------------------------------------------ | ------- | ------- | ---- |
 | Dedicated hardware station                                   | Y       | Y       | Y    |
 | Shared hardware station                                      | Y       | Y       | Y    |
