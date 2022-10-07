@@ -1228,6 +1228,8 @@
           href: power-platform/admin-reference.md
         - name: Enable Dataverse virtual entities
           href: power-platform/enable-virtual-entities.md
+        - name: Track changes for virtual tables in Dataverse
+          href: power-platform/track-changes-fin-ops-virtual-table.md
         - name: Power Apps portals with finance and operations
           href: power-platform/power-portal-reference.md
         - name: Finance and operations virtual entities FAQ
