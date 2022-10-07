@@ -54,10 +54,10 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
-|              |              |                  |
-|              |              |                  |
-|              |              |                  |
-|              |              |                  |
+| Subscription billing  | Quotation report | This feature provides the ability to generate a quotation document from a billing schedule. |
+| Subscription billing  | Trade agreement integration | Billing schedules can now leverage more functionality available in Trade agreements. Billing schedule lines can be updated with new amounts at the time the trade agreement is posted or at renewal. Trade agreements that become effective in the middle of a billing period can be weighted with the effective price for the number of days in the billing period. Date consideration is added for tier pricing. When using renew automatically the trade agreement’s effective price and billing period dates are compared to retrieve the proper pricing. |
+| Subscription billing  | Renew automatically for Unbilled revenue billing schedule lines | Billing schedules with lines that are marked for Unbilled revenue will now have the ability to be marked to renew automatically. |
+| Subscription billing  | Renew automatically for Milestone billing schedule lines | Billing schedules with lines that have an item type of Milestone will now have the ability to be marked to renew automatically. |
 
 ## Additional resources
 
