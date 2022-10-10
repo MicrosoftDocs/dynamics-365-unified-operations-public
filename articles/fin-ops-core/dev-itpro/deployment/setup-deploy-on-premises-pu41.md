@@ -601,8 +601,11 @@ You can configure more than one SSRS node. For more information, see [Configurin
 
     ```powershell
     # Exports the script files to be executed on each VM into a directory VMs\<VMName>.
-    .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -D365FOVersion "<Version of D365 that you will deploy>"
     ```
+
+    > [!NOTE]
+    > The scripts will install/require different versions according to the version of D365 Finance + Operations that you deploy. Specify the application version that you will deploy so that the scripts correctly configure your environment for the version you are deploying. If you will be deploying application 10.0.17 with platform update 41, you should specify 10.0.17 for the D365FOVersion parameter.
 
 2. Download the following Microsoft Windows Installers (MSIs) into a file share that can be accessed by all VMs. For example, use the same file share where you put your **Infrastructure** folder.
 
