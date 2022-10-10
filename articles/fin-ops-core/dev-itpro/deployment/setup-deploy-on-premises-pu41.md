@@ -1012,7 +1012,7 @@ Finally, verify that you can access the AD FS OpenID configuration URL on a Serv
 
 If you can access the URL, a JavaScript Object Notation (JSON) file is returned. This file contains your AD FS configuration, and it will indicate that your AD FS URL is trusted.
 
-You've now completed the setup of the infrastructure. The following sections describe how set up your connector and deploy your Finance + Operations environment in LCS.
+You've now completed the setup of the infrastructure. The following sections describe how to set up your connector and deploy your Finance + Operations environment in LCS.
 
 ### <a name="configureconnector"></a>Step 20. Configure a connector and install an on-premises local agent
 
