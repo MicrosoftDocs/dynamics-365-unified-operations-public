@@ -129,7 +129,8 @@ The distributions are recalculated based on the allocation type that is selected
 
 A billing schedule is entered for three years, and the invoices are billed annually over a three-year period. The whole contract amount is recorded in the unbilled revenue account that annual invoices are created from. The offset account is the revenue or deferred revenue account.
 
-Note that top billing and unbilled revenue don't work together, because reconciliation issues can occur in the general ledger. For example, on the **Item group setup** page, item group A is set up so that the **Number of top lines** field is set to **2**. On the **Billing schedules** page, three items are added. All three items belong to item group A. When the initial journal entry is created for the unbilled revenue feature, the amount for all three items is processed to the unbilled account. When the invoice for the billing schedule is created, only the amounts for the top two items are included. Therefore, the invoice amount doesn't match the amount that was processed to the unbilled revenue account, and reconciliation issues occur in the general ledger.
+> [!NOTE]
+> Top billing and unbilled revenue don't work together, because reconciliation issues can occur in the general ledger. For example, on the **Item group setup** page, item group A is set up so that the **Number of top lines** field is set to **2**. On the **Billing schedules** page, three items are added. All three items belong to item group A. When the initial journal entry is created for the unbilled revenue feature, the amount for all three items is processed to the unbilled account. When the invoice for the billing schedule is created, only the amounts for the top two items are included. Therefore, the invoice amount doesn't match the amount that was processed to the unbilled revenue account, and reconciliation issues occur in the general ledger.
 
 If you want to use unbilled revenue, leave the **Item group setup** page blank, or set up all item groups so that the **Number of top lines** field is set to **0** (zero). If you want to use top billing, no unbilled revenue actions are available.
 
@@ -271,7 +272,7 @@ The following table shows the initial journal entry for the items and the invoic
 | **Item 1000 journal entry** | | | 
 | Unbilled revenue account (401250) | $1,465.26 | |
 | Deferred revenue account (250600) | | $1,465.26 |
-| **Item 0021 Journal entry** | | | |
+| **Item 0021 Journal entry** | | | 
 | Unbilled revenue account (401250) | $274.74 | |
 | Deferred revenue account (250600) | | $274.74 |
 | **Invoice** | | |
