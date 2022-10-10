@@ -78,7 +78,7 @@ When the Invoice capture solution is installed, a default file filter is defined
 You can choose the accepted file size.
 
 > [!NOTE]
-> Files that are larger than 20.480 kilobytes (KB) aren't supported.
+> Files that are larger than 20,480 kilobytes (KB) aren't supported.
 
 ### Supported file types
 
