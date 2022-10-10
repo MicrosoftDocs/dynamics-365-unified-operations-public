@@ -180,6 +180,9 @@ This article explains how to update the local agent. The latest version of the l
 
 When a local agent becomes expired it is no longer able to communicate with LCS after that date. This means that you will have to update your local agent to a supported version. Going forward we plan on only supporting a few versions of the local agent at a time. The two most recently released versions will not receive an expiration date until a new version has been released. At that point the oldest version that does not have an expiration date will receive an expiration date. The expiration date will be set a few months into the future to allow customers time to upgrade to a newer version.
 
+> [!NOTE]
+> A released local agent version will be supported for at least 6 months.
+
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 
