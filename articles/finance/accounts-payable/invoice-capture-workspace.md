@@ -54,7 +54,7 @@ To start to review the invoice, select **Start review**. All fields become edita
 
 Users should start the review process from the message pane. Error messages are indicated by a red X, warning messages are indicated by a triangle, and informational messages are indicated by a circle. Confidence score–related messages can be classified as either warnings or errors, depending on the threshold that is set by the configuration group. For more information, see [Invoice capture solution configuration groups](invoice-capture-config-group.md).
 
-Warning and error messages can be ignored from the message pane, the invoice header, or invoice lines. After a message is ignored, it no longer appears as an error or a warning, and it won't fail validation.
+Warning and error messages can be ignored from the message pane, the invoice header, or invoice lines. After a message is ignored, it no longer appears as an error or a warning, and the invoice won't fail validation.
 
 - To ignore messages from the message pane, select **Ignore**. To reset a message that has been ignored, select **Ignore** again. Its type is then changed from error or warning to information.
 - To ignore messages from the invoice header or the invoice line, select **Ignore** on the field. The message symbol disappears. However, it will reappear if the message is reset from the message pane.
@@ -65,7 +65,7 @@ For messages that are related to invoice header fields, when you select the mess
 
 If a field's value is read from the original invoice through optical character recognition (OCR), a symbol appears on the field. If you select the symbol, the document viewer zooms in and highlights the place that the field value is read from, to help you verify invoice data.
 
-To reset the document viewer to its original display ratio, follow one of these steps:
+To reset the document viewer to its original magnification, follow one of these steps:
 
 - Select the same symbol that you previously selected.
 - Select the button in the upper-right corner of the document viewer.
@@ -106,7 +106,7 @@ The fields that must be derived are **Legal Entity**, **Vendor Account**, and **
 
 To run a validation, select **Check** in the side-by-side viewer. Currently, the validation performs the following checks:
 
-- **Mandatory check** – This check validates the mandatory fields for the side-by-side viewer. Users can select which fields must be mandatory in the **Configuration setting**.
+- **Mandatory check** – This check validates the mandatory fields for the side-by-side viewer. Users can select which fields must be mandatory on the **Configuration setting** page.
 - **Confidence score** – Users can set the warning threshold and error threshold for the confidence score. This check focuses on the confidence score from OCR that is below those thresholds. Error or warning messages will be shown based on the validation result.
 - **Legal entity** – This check validates that a legal entity is in Finance. If the legal entity doesn't exist in the Finance environment, the validation fails.
 
