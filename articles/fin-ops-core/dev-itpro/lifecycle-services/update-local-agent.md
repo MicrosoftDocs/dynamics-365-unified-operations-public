@@ -36,26 +36,26 @@ This article explains how to update the local agent. The latest version of the l
 > [!IMPORTANT]
 > Do not update the local agent during a servicing operation, even if the preparation phase has completed. 
 
-| Local agent version | Capability | 
-|---------------------|------------|
-| 3.1.0               | This version upgrades the Service Fabric SDK and adds a new deployment option. |
-| 3.0.0               | This version includes support for Edge Scale Unit Application Lifecycle Management. |
-| 2.7.2               | This version includes a fix for deploying older application versions. | 
-| 2.7.1               | This version introduces a new deployment option and fixes a bug with a deployment option. |
-| 2.7.0               | Enables deploying or updating to 10.0.21 and later versions. Additionally, this version enables deploying on environments with Microsoft SQL Server 2019 and some bug fixes. |
-| 2.6.0               | This version upgrades the Service Fabric SDK, fixes a bug with refresh state, and increases the application provisioning timeout. |
-| 2.5.0               | This version updates dependencies and fixes a cleanup bug. |
-| 2.4.0               | This version fixes a deployment issue and upgrades the runtime of the local agent. |
-| 2.3.1               | This version fixes orchestration service crashes that may occur during clean up on some environments.<br><br>Deploying version 10.0.5 with Platform update 29 or earlier requires the use of pre-deployment scripts for automatic updating of FinancialReportingDeployer.exe.config. For more information, see [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework). |
-| 2.3.0               | This version adds support for pre- and post-deployment scripts.  |
-| 2.2.0               | This version fixes locked dlls during cleanup and enables prerequisites for supporting Active Directory Federation Services (AD FS) that also is used for Microsoft 365. |
-| 2.1.2               | This version contains updated Azure dependencies for improved download stability and logic to correctly evaluate if files are downloaded. This fixes an issue where files are fully downloaded, but the logic would still consider them as missing a few bytes and therefore fail the download.  |
-| 2.1.1               | This version fixes an issue that occurs when the download fails and the Lifecycle Services (LCS) **Maintain** button is not available. Additional changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.2.  |
-| 2.1.0               | This version enables two-phased servicing where **Preparation** and **Update** are two separate steps. |
-| 2.0.0               | This version enables servicing flows and deploys Platform update 12. |
-| 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md)  for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | 
-| 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. |
-| Null                | This initial version deploys Platform update 8. |
+| Local agent version | Capability | Expiration date |
+|---------------------|------------|-----------------|
+| 3.1.0               | This version upgrades the Service Fabric SDK and adds a new deployment option. | Not applicable |
+| 3.0.0               | This version includes support for Edge Scale Unit Application Lifecycle Management. | Not applicable |
+| 2.7.2               | This version includes a fix for deploying older application versions. | 30th of June 2023 |
+| 2.7.1               | This version introduces a new deployment option and fixes a bug with a deployment option. | 30th of June 2023 |
+| 2.7.0               | Enables deploying or updating to 10.0.21 and later versions. Additionally, this version enables deploying on environments with Microsoft SQL Server 2019 and some bug fixes. | 30th of June 2023 |
+| 2.6.0               | This version upgrades the Service Fabric SDK, fixes a bug with refresh state, and increases the application provisioning timeout. | 30th of June 2023 |
+| 2.5.0               | This version updates dependencies and fixes a cleanup bug. | 30th of June 2023 |
+| 2.4.0               | This version fixes a deployment issue and upgrades the runtime of the local agent. | 30th of April 2023 |
+| 2.3.1               | This version fixes orchestration service crashes that may occur during clean up on some environments.<br><br>Deploying version 10.0.5 with Platform update 29 or earlier requires the use of pre-deployment scripts for automatic updating of FinancialReportingDeployer.exe.config. For more information, see [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework). | 30th of April 2023 |
+| 2.3.0               | This version adds support for pre- and post-deployment scripts. | 30th of April 2023 |
+| 2.2.0               | This version fixes locked dlls during cleanup and enables prerequisites for supporting Active Directory Federation Services (AD FS) that also is used for Microsoft 365. | 31st of January 2023 |
+| 2.1.2               | This version contains updated Azure dependencies for improved download stability and logic to correctly evaluate if files are downloaded. This fixes an issue where files are fully downloaded, but the logic would still consider them as missing a few bytes and therefore fail the download. | 31st of January 2023 |
+| 2.1.1               | This version fixes an issue that occurs when the download fails and the Lifecycle Services (LCS) **Maintain** button is not available. Additional changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.2. | 31st of January 2023 |
+| 2.1.0               | This version enables two-phased servicing where **Preparation** and **Update** are two separate steps. | 31st of January 2023 |
+| 2.0.0               | This version enables servicing flows and deploys Platform update 12. | 31st of January 2023 |
+| 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | 31st of January 2023 |
+| 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. | 31st of January 2023 |
+| Null                | This initial version deploys Platform update 8. | 31st of January 2023 |
 
 ## What's new in local agent 3.1.0
 
@@ -170,6 +170,10 @@ This article explains how to update the local agent. The latest version of the l
 
 8. After the local agent is successfully installed, go back to your on-premises connector in LCS.
 9. On the **Validate setup** tab, select **Message agent** to test LCS connectivity to your new local agent.
+
+## Local agent expiration dates
+
+When a local agent becomes expired it is no longer able to communicate with LCS after that date. This means that you will have to update your local agent to a supported version. Going forward we plan on only supporting a few versions of the local agent at a time. The two most recently released versions will not receive an expiration date until a new version has been released. At that point the oldest version that does not have an expiration date will receive an expiration date. The expiration date will be set a few months into the future to allow customers time to upgrade to a newer version.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
