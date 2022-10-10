@@ -46,11 +46,11 @@ This article explains how to update the local agent. The latest version of the l
 | 2.6.0               | This version upgrades the Service Fabric SDK, fixes a bug with refresh state, and increases the application provisioning timeout. | October 2020 | 30th of June 2023 |
 | 2.5.0               | This version updates dependencies and fixes a cleanup bug. | May 2020 | 30th of June 2023 |
 | 2.4.0               | This version fixes a deployment issue and upgrades the runtime of the local agent. | December 2019 | 30th of April 2023 |
-| 2.3.1               | This version fixes orchestration service crashes that may occur during clean up on some environments.<br><br>Deploying version 10.0.5 with Platform update 29 or earlier requires the use of pre-deployment scripts for automatic updating of FinancialReportingDeployer.exe.config. For more information, see [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework). || September 2019 | 30th of April 2023 |
+| 2.3.1               | This version fixes orchestration service crashes that may occur during cleanup on some environments.<br><br>Deploying version 10.0.5 with Platform update 29 or earlier requires the use of pre-deployment scripts for automatic updating of FinancialReportingDeployer.exe.config. For more information, see [Troubleshoot on-premises deployments](../../dev-itpro/deployment/troubleshoot-on-prem.md#FREntityFramework). || September 2019 | 30th of April 2023 |
 | 2.3.0               | This version adds support for pre- and post-deployment scripts. | August 2019 | 30th of April 2023 |
 | 2.2.0               | This version fixes locked dlls during cleanup and enables prerequisites for supporting Active Directory Federation Services (AD FS) that also is used for Microsoft 365. | July 2019 | 31st of January 2023 |
 | 2.1.2               | This version contains updated Azure dependencies for improved download stability and logic to correctly evaluate if files are downloaded. This fixes an issue where files are fully downloaded, but the logic would still consider them as missing a few bytes and therefore fail the download. | July 2019 | 31st of January 2023 |
-| 2.1.1               | This version fixes an issue that occurs when the download fails and the Lifecycle Services (LCS) **Maintain** button is not available. Additional changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.2. | February 2019 | 31st of January 2023 |
+| 2.1.1               | This version fixes an issue that occurs when the download fails and the Lifecycle Services (LCS) **Maintain** button isn't available. Additional changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.2. | February 2019 | 31st of January 2023 |
 | 2.1.0               | This version enables two-phased servicing where **Preparation** and **Update** are two separate steps. | June 2018 | 31st of January 2023 |
 | 2.0.0               | This version enables servicing flows and deploys Platform update 12. | January 2018 | | 31st of January 2023 |
 | 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | December 2017 | 31st of January 2023 |
@@ -60,7 +60,7 @@ This article explains how to update the local agent. The latest version of the l
 ## What's new in local agent 3.1.0
 
 - Local agent 3.1.0 uptakes a new Service Fabric SDK and runtime.
-- This releases introduces a new deployment option to [specify that an environment should be configured to work with the Regression suite automation tool (RSAT)](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-an-environment-should-be-configured-to-work-with-the-regression-suite-automation-tool).
+- This release introduces a new deployment option to [specify that an environment should be configured to work with the Regression suite automation tool (RSAT)](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-an-environment-should-be-configured-to-work-with-the-regression-suite-automation-tool).
 
 > [!IMPORTANT]
 > This release is only compatible with 8.1+ Service Fabric clusters.
@@ -77,7 +77,7 @@ This article explains how to update the local agent. The latest version of the l
 ## What's new in local agent 2.7.1
 
 - Local agent 2.7.1 introduces a new deployment option to [Specify that checking the Certificate Revocation List of a certificate should be skipped](../../dev-itpro/deployment/onprem-localagent-options.md#specify-that-checking-the-certificate-revocation-list-of-a-certificate-should-be-skipped).
-- This release addresses a bug where the **office365AdfsCompatibility** deploymentOption was not being correctly set.
+- This release addresses a bug where the **office365AdfsCompatibility** deploymentOption wasn't being correctly set.
 
 ## What's new in local agent 2.7.0
 
@@ -148,7 +148,7 @@ This article explains how to update the local agent. The latest version of the l
 
 ## Update the local agent
 
-### Cleanup the existing local agent
+### Clean up the existing local agent
 
 1. Locate the folder where you previously installed the local agent from.
 1. In a **Powershell** window, navigate to that folder and run the following command.
@@ -178,7 +178,7 @@ This article explains how to update the local agent. The latest version of the l
 
 ## Local agent expiration dates
 
-When a local agent becomes expired it is no longer able to communicate with LCS after that date. This means that you will have to update your local agent to a supported version. Going forward we plan on only supporting a few versions of the local agent at a time. The two most recently released versions will not receive an expiration date until a new version has been released. At that point the oldest version that does not have an expiration date will receive an expiration date. The expiration date will be set a few months into the future to allow customers time to upgrade to a newer version.
+When a local agent becomes expired it's no longer able to communicate with LCS after that date. This means that you will have to update your local agent to a supported version. Going forward we plan on only supporting a few versions of the local agent at a time. The two most recently released versions won't receive an expiration date until a new version has been released. At that point the oldest version that doesn't have an expiration date will receive an expiration date. The expiration date will be set a few months into the future to allow customers time to upgrade to a newer version.
 
 > [!NOTE]
 > A released local agent version will be supported for at least 6 months.
