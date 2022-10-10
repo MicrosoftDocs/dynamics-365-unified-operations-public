@@ -26,7 +26,10 @@ Information from aging snapshots is shown on the **Aged balances** list page and
 The **Customer credit and collections** workspace also shows the customer aging. For more information, see [Credit and collections management Power BI content](credit-collections-power-bi.md).
 
 > [!NOTE]
-> To help reduce the time that is required to create an aging snapshot, turn on the **Customer aging performance enhancement** feature and the **Customer aging performance enhancement with customer pools** feature in the **Feature management** workspace. With both enhancements enabled you can use Customer pools when creating the aging snapshot. 
+> To help reduce the time that is required to create an aging snapshot, turn on the following features in the **Feature management** workspace: 
+> **Customer aging performance enhancement** 
+> **Customer aging performance enhancement with customer pools**  
+> With both features enabled, **Customer pools** can be used when creating the aging snapshot. 
 
 When you create a customer aging snapshot, use the following fields to enter information about it:
 
@@ -48,8 +51,8 @@ When you create a customer aging snapshot, use the following fields to enter inf
     For example, the current aging period is 30 days. If you select **Today's date** in this field, the current aging period starts on today's date and then includes the previous 29 days. If you select **Selected date** and enter a date, the current aging period starts on the specified date and then includes the previous 29 days.
 
 - **Update collection status** – Set this option to **Yes** to update the collection status of transactions on the **Collections** page from **Promise to pay** to **Promise to pay broken** if the aging date is beyond the date in the **Promise to pay date** field. Set this option to **No** to leave the collection status unchanged on the **Collections** page.
-- **Include customers with zero balance** – Set this option to **Yes** to include all customers, regardless of their balance. If you include all customers, we recommend that you to turn on both the **Customer aging performance enhancement** and **Customer aging performance enhancement with customer pools** feature. Set this option to **No** to include only customers that have a balance. This setting helps speed up performance, because customers that don't have a balance are skipped.
-- **Bypass credit limit calculations during aging** - If this option is set to **Yes** the aging process will not recalculate the Packing slip subtotal amount, Open order subtotal amount and Credit available for each customer. These balances are shown on the Aged balances page, in the FactBox under Credit limit. For faster performance during the aging process, set this option to Yes. Set it to **No** to recalculate the balances when running the aging process. 
+- **Include customers with zero balance** – Set this option to **Yes** to include all customers, regardless of their balance. If you include all customers, we recommend that you to turn on both the **Customer aging performance enhancement** and **Customer aging performance enhancement with customer pools** features. Set this option to **No** to include only customers that have a balance. This setting will help speed up performance, because customers that don't have a balance are skipped.
+- **Bypass credit limit calculations during aging** - If this option is set to **Yes** the aging process will not recalculate the **Packing slip subtotal** amount, **Open order subtotal** amount and **Credit available** for each customer. These balances are shown on the **Aged balances** page, in the FactBox under **Credit limit**. For faster performance during the aging process, set this option to **Yes**. Set it to **No** to recalculate the balances when running the aging process. 
 - **Company range** – On the **Company range** tab, select the legal entities (companies) to include in the aging snapshot. Only legal entities that are set up for centralized payments are available for selection. Transactions from the selected legal entities are then included in the aging periods for customers that have the same party ID in all those legal entities. Currency amounts are converted to the currency of the legal entity that you're signed in to when you create the aging snapshot.
 
 We recommend that you schedule this process to run in a batch.
