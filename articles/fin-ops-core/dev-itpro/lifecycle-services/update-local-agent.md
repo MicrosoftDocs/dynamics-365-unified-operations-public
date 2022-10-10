@@ -148,11 +148,10 @@ This article explains how to update the local agent. The latest version of the l
 
 ## Update the local agent
 
-1. Copy the zip file and the localagent-config.json file into one of the **Orchestrator** nodes, such as **c:\\DynamicsAgent** in the **Orch1** virtual machine (VM).
-2. Unzip the agent installer to C:\\DynamicsAgent\\LocalAgent.
-3. Copy the localagent-config.json file to C:\\DynamicsAgent\\LocalAgent.
-4. In a **Command Prompt** window, go to C:\\DynamicsAgent\\LocalAgent, and run the following command.
+### Cleanup the existing local agent
 
+1. Locate the folder where you previously installed the local agent from.
+1. In a **Powershell** window, navigate to that folder and run the following command.
     ```Console
     LocalAgentCLI.exe Cleanup <path of localagent-config.json>
     ```
@@ -160,9 +159,15 @@ This article explains how to update the local agent. The latest version of the l
     > [!NOTE]
     > You must use the current agent's binaries to clean up the agent. If you don't have the current agent's binaries, you can delete the local agent application from Service Fabric Explorer.
 
-5. Press any key to exit the cleanup operation.
-6. Verify that the local agent has been successfully cleaned up by looking in Service Fabric Explorer and making sure that there are no apps in the **Deployed Applications** section in the **Orchestrator** nodes.
-7. After the local agent is successfully cleaned up, run the following command.
+1. Press any key to exit the cleanup operation.
+1. Verify that the local agent has been successfully cleaned up by looking in Service Fabric Explorer and making sure that there are no apps in the **Deployed Applications** section in the **Orchestrator** nodes.
+
+### Install the new local agent
+
+1. Copy the zip file and the localagent-config.json file you download previosuly into the fileshare where you placed your **infrastructure** folder (for example, \\\\LBDFFILE01\\Install)).
+1. Unzip the agent installer to \\\\LBDFFILE01\\Install\LocalAgent.
+1. Copy the localagent-config.json file to \\\\LBDFFILE01\\Install\LocalAgent.
+1. In a **Powershell** window, navigate to \\\\LBDFFILE01\\Install\LocalAgent and run the following command.
 
     ```Console
     LocalAgentCLI.exe Install <path of localagent-config.json>
