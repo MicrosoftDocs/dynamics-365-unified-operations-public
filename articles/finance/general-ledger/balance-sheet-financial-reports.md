@@ -4,7 +4,7 @@
 title: Balance sheet financial reports
 description: This article describes the default reports for balance sheets. It also describes the building blocks that are associated with these reports. 
 author: jcart1106
-ms.date: 06/20/2017
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -38,8 +38,8 @@ This article describes the default reports for balance sheets. It also describes
 There are two default balance sheet reports. On one report, the sections are stacked. On the other report, the sections are side by side.
 
 | Default report                       | What it does                                                                                                                           |
-|--------------------------------------|----------------------------------------------------------------------------------------------|
-| Balance Sheet – Default              | Provides a view of the organization's financial position for the year.                                                                 |
+|--------------------------------------|--------------------------------------------------------------------------------------|
+| Balance Sheet – Default              | Provides a view of the organization's financial position for the year.                    |
 | Balance Sheet and Income Statement Side by Side – Default | Provides a view of the organization's financial position for the year side by side. |
 
 ## Building blocks
