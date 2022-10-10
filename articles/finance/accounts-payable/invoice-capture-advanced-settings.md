@@ -45,7 +45,7 @@ The following connection types are used to import invoices:
 - OneDrive
 - SharePoint
 
-The **Channel for invoice importing** will use the connections in further configuration steps. Before users can create a channel of a specific connection, the **Administrator** security role must be granted to them, and they must create connections.
+The channel for invoice importing will use the connections in further configuration steps. Before users can create a channel of a specific connection, the **Administrator** security role must be granted to them, and they must create connections.
 
 To create a connection to Microsoft Dataverse, follow these steps.
 
