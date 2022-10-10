@@ -40,7 +40,7 @@ There are two default balance sheet reports. On one report, the sections are sta
 | Default report                       | What it does                                                                                                                           |
 |--------------------------------------|----------------------------------------------------------------------------------------------|
 | Balance Sheet – Default              | Provides a view of the organization's financial position for the year.                                                                 |
-| Side by Side Balance Sheet – Default | Provides a view of the organization's financial position for the year. Assets and liability and shareholder’s equity are side by side. |
+| Balance Sheet and Income Statement Side by Side – Default | Provides a view of the organization's financial position for the year side by side. |
 
 ## Building blocks
 The balance sheet financial reports use the following building blocks.
@@ -48,7 +48,7 @@ The balance sheet financial reports use the following building blocks.
 | Default report                       | Row definition                       | Column definition             |
 |--------------------------------------|--------------------------------------|-------------------------------|
 | Balance Sheet - Default              | Balance Sheet - Default              | YTD and Variance - Default    |
-| Side by Side Balance Sheet – Default | Side by Side Balance Sheet – Default | Year to Date Column - Default |
+| Balance Sheet and Income Statement Side by Side – Default | Balance Sheet and Income Statement Side by Side – Default | Year to Date Column - Default |
 
 ### Row definition
 
