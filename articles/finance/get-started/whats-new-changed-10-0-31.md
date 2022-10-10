@@ -60,6 +60,8 @@ The following table lists the feature enhancements that are included in this rel
 | Subscription billing  | Renew automatically for Unbilled revenue billing schedule lines | Billing schedules with lines that are marked for Unbilled revenue will now have the ability to be marked to renew automatically. |
 | Subscription billing  | Renew automatically for Milestone billing schedule lines | Billing schedules with lines that have an item type of Milestone will now have the ability to be marked to renew automatically. |
 | General ledger  | Ledger settlement inquiry | The Ledger settlement inquiry has been added to view settled, unsettled, or settled and unsettled ledger transactions for a date range and individual main account. The inquiry is similar to the trial balance, requiring a date range within a single fiscal year. The inquiry will display the age of unsettled transactions, or the settlement ID for settled transactions.  |
+| Tax Calculation | Wildcard support in the tax group and item tax group configuration to the Tax Calculation service |  The wildcard character asterisk (\*) is now supported by the tax group and item tax group configuration table in tax calculation service. The user can enter * to stand for all tax codes and SP* for tax codes that start with SP. |
+| Tax Calculation | Extended tax calculation data model | The following fields are extended to the Tax Calculation data model: <br> - **Vendor group** <br>- **Vendor invoice group** <br>- **Customer group** <br>- **Customer invoice group** <br>- **Order type** <br>- **Item group** | 
 
 ## Additional resources
 
