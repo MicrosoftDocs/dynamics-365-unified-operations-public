@@ -212,7 +212,7 @@ Before you start the setup, the following prerequisites must be in place. The se
 - SSRS must be installed (but not configured) in **Native** mode on the SSRS machines.
 - Optional: AD CS is installed and configured in your network.
 
-The following table shows the windows features that will be installed on the VMs by the infrastructure setup scripts that are downloaded from LCS. For details on additional prerequisite software that will need to be downloaded and installed see [Set up VMs](#setupvms).
+The following table shows the Microsoft Windows features that will be installed on the VMs by the infrastructure setup scripts that are downloaded from LCS. For details on additional prerequisite software that will need to be downloaded and installed see [Set up VMs](#setupvms).
 
 | Node type | Component | Details |
 |-----------|-----------|---------|
