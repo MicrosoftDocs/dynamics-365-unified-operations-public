@@ -4,7 +4,7 @@
 title: Unbilled revenue
 description: This article explains how to set up items and accounts to use the unbilled revenue feature in Subscription billing.
 author: JodiChristiansen
-ms.date: 11/04/2021
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -268,7 +268,7 @@ The following table shows the initial journal entry for the items and the invoic
 
 | Main account | Debit amount | Credit amount |
 |---|---|---|
-| **Item 1000 journal entry** | | | |
+| **Item 1000 journal entry** | | | 
 | Unbilled revenue account (401250) | $1,465.26 | |
 | Deferred revenue account (250600) | | $1,465.26 |
 | **Item 0021 Journal entry** | | | |
