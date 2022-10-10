@@ -1,0 +1,80 @@
+---
+title: Preview of Dynamics 365 Supply Chain Management 10.0.31 (February 2023)
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.31. 
+author: kamaybac
+ms.author: kamaybac
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: conceptual
+ms.date: 10/14/2022
+ms.custom: bap-template
+---
+
+# Preview of Dynamics 365 Supply Chain Management 10.0.31 (February 2023)
+
+[!include [banner](../includes/banner.md)]
+[!include [preview banner](../includes/preview-banner.md)]
+
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.31. This version has a build number of 10.0.1418 <!-- KFM: Get final build number --> and is available on the following schedule:
+
+- **Preview of release:** October 2022
+- **General availability of release (self-update):** January 2023
+- **General availability of release (auto-update):** February 2023
+
+## Features included in this release
+
+The following table lists the features that are included in this release. We might update this article to include features that were added to the build after this article was originally published.
+
+| Feature area | Feature | More information | Enabled by |
+|---|---|---|---|
+| Planning | [Use batch disposition codes in Planning Optimization](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/use-batch-disposition-codes-planning-optimization) | [Use batch disposition codes to mark batches as available or unavailable](../inventory/batch-disposition-codes.md) | Enabled by default |
+| Planning | [Use finite material scheduling in Planning Optimization](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/use-finite-material-scheduling-planning-optimization) | Coming soon | Feature management:<br>*Finite material scheduling for Planning Optimization* <!-- KFM: RP says coming first in December, but FM shows it now. Name should start with "(Preview)" and not end with period --> |
+| Procurement | [Assess supply risks to prevent supply chain disruptions](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/assess-supply-risks-prevent-supply-chain-disruptions) | Coming soon | Feature management:<br>*Assess supply risks to prevent supply chain disruptions* |
+| Product information management | [Display product info in user's language](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/display-product-info-users-language) | Coming soon | Feature management:<br>*(Preview) Display product info in user’s language* |
+| Warehouse management | [Auto-submit detour steps for the Warehouse Management mobile app](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/auto-submit-detour-steps-warehouse-management-mobile-app) | Coming soon | Feature management<br>*Auto-submit detour steps for the Warehouse Management mobile app* |
+| Warehouse management | [Pack shipments with the Warehouse Management mobile app](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/pack-shipments-warehouse-management-mobile-app) | Coming soon | Feature management<br>*Pack containers using the Warehouse Management mobile app* |
+| Warehouse management | Test location directives with acceptance tests | [Test location directives with acceptance tests](../warehousing/location-directive-acceptance-tests.md) | Enabled by default |
+
+## Feature enhancements included in this release
+
+The following table lists the feature enhancements that are included in this release. Each of these enhancements provides an incremental improvement to an existing feature. Because they are only enhancements, they aren't listed in the [release plan](/dynamics365-release-plan/2022wave1/finance-operations/dynamics365-supply-chain-management/planned-features). However, to ensure that these enhancements won't conflict with your existing customizations or preferences, each of them is turned off by default (unless otherwise noted).
+
+If you want to turn any of these features on or off, you must do so in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+
+| Module | Feature name in feature management | More information |
+|---|---|---|
+| Master planning | Restart and resume logic for the forecast generation batch process | Enables the forecast generation batch process to be restarted or resumed after an infrastructure failure occurs. |
+| Master planning | Source products and materials from multiple vendors using Planning Optimization | Lets you source products and materials from multiple vendors. You configure it by defining multiple vendors for an item and setting allocation percentages for each of them. Planning Optimization will automatically suggest the right vendor for a planned purchased order according to the defined allocation percentages and your order history. |
+| Production control | Enable use of a numpad in the sign-in page | Enables admins to add a numpad control to the sign-in page for the production floor execution. Workers can use the numpad to sign in with their badge ID or personal number. <!-- KFM: Small doc update may be needed (list on page of PFE FM features, maybe a new config control?) --> |
+| Sales and marketing | Settle customer payment deductions using the matching invoice | Adds an option that lets you choose to settle customer payment deductions using the invoice selected for each deduction. When you use this option, the system automatically settles deduction transactions using the matching invoice provided an open balance exists for that invoice; otherwise, the deduction won't be settled automatically. Without this option, the system instead settles deduction transactions using the open amount for payment invoices, which was the standard behavior in Supply Chain Management version 10.0.24 and earlier.<br><br>This feature adds a new setting called **Settle customer payment deductions** to the **Accounts receivable parameters** page. Set this option to *Match to invoice* to use the new functionality. Set it to *Match to open payments*, to use the previous behavior.<br><br>When you first enable this feature, the **Settle customer payment deductions** field will initially be set to *Match to invoice* (the new behavior). The *Match to open payments* option is provided chiefly to support legacy integration scenarios. |
+| Transportation management | Generate data manually on voyage editor | Instead of generating data for the **Voyage editor** page each time a filter value is changed, this feature lets you generate data manually as needed, which improves system performance and user experience. |
+| Warehouse management | Location directive scopes | Gives you more freedom when you design location directives and helps reduce redundant configurations. It adds a **Scopes** option to the **Location directives** page, replacing the previous **Multiple SKU** option. Whereas the **Multiple SKU** option can be set only to *Yes* or *No*, the **Scopes** option provides not only those two settings (through the *Single item* and *Multiple items* values) but also two more (through the *Single item or order* and *All* values).<br><br>For more information, see [Work with location directives](../warehousing/create-location-directive.md). |
+
+## Additional resources
+
+### Platform updates for Finance and Operations apps
+
+Microsoft Dynamics 365 Supply Chain Management 10.0.31 includes platform updates. To learn more, see [Platform updates for version 10.0.31 of Finance and Operations apps (February 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-31.md). <!--KFM: Confirm link -->
+
+### Bug fixes
+
+For information about the bug fixes included in each of the updates that are part of version 10.0.29, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=745468).
+
+### Dynamics 365 and industry clouds: 2022 release wave 1 plan
+
+Wondering about upcoming and recently released capabilities in any of our business apps or platform?
+
+Check out the [Dynamics 365 and industry clouds: 2022 release wave 2 plan](/dynamics365-release-plan/2022wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
+
+### Removed and deprecated Supply Chain Management features
+
+The [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) article describes features that have been or are scheduled to be removed or deprecated for Supply Chain Management.
+
+- A *removed* feature is no longer available in the product.
+- A *deprecated* feature is not in active development and may be removed in a future update.
+
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) article 12 months prior to the removal.
+
+For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
+
+[!INCLUDE[footer-include](../../includes/footer-banner.md)]
