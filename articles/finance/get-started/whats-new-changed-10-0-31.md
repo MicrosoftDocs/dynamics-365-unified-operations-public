@@ -45,7 +45,7 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |--------------|---------|------------------|------------|
-|              |         |                  |            |
+| Tax Calculation             |Update tax exempt number from customer address         | This feature will automatically update "Tax exempt number" field on sales order and free text invoice header based on the selected customer address. User can turn on this feature using parameter "Update tax exempt number from customer address" from "Tax Calculation Parameters"  when Tax Calculation service is enabled.               | Parameter           |
 |              |         |                  |            |
 
 ## Feature enhancements included in this release
