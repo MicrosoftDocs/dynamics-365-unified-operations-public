@@ -27,13 +27,13 @@ Use the following procedure to set up master planning to consider sales quotatio
 1. Select an existing plan from the list pane or select **New** on the Action Pane to create a new one.
 1. Expand the **General** FastTab, and make the following settings:
     - **Include sales quotations** – Set to *Yes* to consider sales quotations when running the current plan. Set to *No* to ignore them.
-    - **Probability %** – Set the minimum level of confidence required for a quotation to be included in master planning. The master planning calculation will include all quotations that were created from opportunities that have this probability percentage or higher (see also the following section). <!-- KFM: Set to zero to plan for all quotations (including those with no opportunity?) -->
-    - **Include requests for quotations** – Set to *Yes* to consider RFQs when running the current plan. Set to *No* to ignore them. <!--KFM: What does it mean to consider RFQs? Do we generate planned orders to cover all of them? Does the Probability % apply for these too?  -->
+    - **Probability %** – Set the minimum level of confidence required for a quotation to be included in master planning. The master planning calculation will include all quotations that were created from opportunities that have this probability percentage or higher (see also the following section). Set this to zero to include all quotations, including quotations that have no probably assigned or opportunity associated with them.
+    - **Include requests for quotations** – Set to *Yes* to consider RFQs when running the current plan. Set to *No* to ignore them. If you choose to consider RFQs, then the system will create planned purchase orders for them (which may affect the quantities of other planned orders), but won't specify the vendor until the RFQ is resolved.
 1. Continue setting up your master plan as usual.
 
 ## Assign and view probabilities for quotations
 
-As mentioned in the previous section, a master plan will only consider quotations that meet or exceed the probability threshold established for the plan. However, the probability isn't set directly on each quotation. Instead, it is inherited from the opportunity used to generate the quotation. That means that quotations created directly on the **All quotations** page won't have a probability associated with them, and therefore won't ever be considered by master planning <!-- KFM: What about plans set to 0%? -->. For a quotation to be considered by master planning, it must be generated from an opportunity that has a qualifying probability value. <!-- KFM: Is there really no way to assign an opportunity to an existing quotation? -->
+As mentioned in the previous section, a master plan will only consider quotations that meet or exceed the probability threshold established for the plan (if any). However, the probability isn't set directly on each quotation. Instead, it is inherited from the opportunity used to generate the quotation. That means that quotations created directly on the **All quotations** page won't have a probability or opportunity associated with them, and therefore won't ever be considered by master planning (other than for plans that have **Probability %** set to zero). For a quotation to have a probability associated with it, it must be generated from an opportunity.
 
 ### Create a quotation from an opportunity
 
@@ -53,12 +53,9 @@ Use the following procedure to assign a probability to an opportunity and then c
 The only way to view the probably associated with a quotation is to go to the open the opportunity used to create that quotation, as described in the following procedure.
 
 1. **Sales and marketing \> Sales quotations \> All quotations**
-1. If the **Opportunity ID** column isn't shown (it's hidden in a default installation), then do the following steps to show it: <!-- KFM: Is there a way to make the app show this column from now on? For me it goes away each time I reload the page. -->
+1. If the **Opportunity ID** column isn't shown (it's hidden in a default installation), then do the following steps to show it temporarily (or create a [saved view](../../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json) that includes the **Opportunity ID** column to keep it available):
     1. Right-click on the grid and select **Insert columns...** from the context menu.
     1. The **Insert columns** dialog opens. Find the row where **Field** is *Opportunity* and select the **Select** checkbox for that row.
     1. Select **Update** to add the selected column to the **All quotations** page.
 1. Find the relevant quotation in the grid and, for that row, select the value in the **Opportunity ID** column. (If you're looking for a project quotation, you may need to select the **Quotation type** column header and clear its filter, which is set to show only *Sales quotations* in a default installation.)
-1. The related opportunity opens, where you can view and edit the **Probability** value as needed. <!-- KFM: Will editing this now have any effect? -->
-
-
-<!-- KFM: I think we need a section that explains how master planning works with RFQs. Any special considerations, such as status, type, date, responses, etc.? When/how do these get resolved? -->
+1. The related opportunity opens, where you can view and edit the **Probability** value as needed.

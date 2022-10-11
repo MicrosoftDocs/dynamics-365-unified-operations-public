@@ -26,9 +26,6 @@ Environments that use Planning Optimization automatically receive the latest rel
 
 Because notifications aren't shown when Planning Optimization is updated in your environment, you can review the release notes in the following table to determine when changes were released and what functionality they introduced. This table shows the changes that were released for Planning Optimization, whether those changes are associated with a feature from feature management, and the date of the release.
 
-<!-- KFM: Add this? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> 
-<!-- KFM: @beatriz: Add this? [Plan based on quotations](quotation-planning.md) --> 
-
 | Changes | Feature management details | Release dates |
 |---|---|---|
 | <p>General performance, quality, and stability improvements. | No feature management is required. | August 29 - September 3, 2022 |
