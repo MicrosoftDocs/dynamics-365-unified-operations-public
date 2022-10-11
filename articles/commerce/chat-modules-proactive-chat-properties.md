@@ -2,7 +2,7 @@
 # required metadata
 
 title: Commerce Chat modules parameters - proactive chat
-description: This article describes the proactive chat parameters that Commerce Chat with Omnichannel for Customer Service module and Commerce Chat with Power Virtual Agents module allows in Microsoft Dynamics 365 Commerce.
+description: This article describes the proactive chat parameters used with the Commerce chat modules in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 10/11/2022
 ms.topic: article
@@ -14,6 +14,11 @@ ms.search.validFrom: 2022-07-20
 ---
 
 # Omnichannel for Customer Service module parameters
+
+[!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+
+This article describes the proactive chat parameters used with the Commerce chat modules in Microsoft Dynamics 365 Commerce.
 
 This document provides details of the proactive chat parameters supported by both Commerce Chat with Omnichannel for Customer Service and Commerce Chat with Power Virtual Agents modules in the Dynamics 365 Commerce's module library.
 
