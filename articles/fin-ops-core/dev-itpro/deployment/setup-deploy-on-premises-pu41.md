@@ -589,6 +589,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
 
     ```powershell
     # Exports the script files to be executed on each VM into a directory VMs\<VMName>.
+    # .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -D365FOVersion "10.0.17"
     .\Export-Scripts.ps1 -ConfigurationFilePath .\ConfigTemplate.xml -D365FOVersion "<Version of D365 that you will deploy>"
     ```
 
