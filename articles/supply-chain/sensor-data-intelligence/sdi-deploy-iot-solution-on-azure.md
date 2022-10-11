@@ -22,6 +22,14 @@ Sensor Data Intelligence uses data from sensors that are connected to Microsoft 
 
 ![Sensor Data Intelligence architectural diagram.](media/sdi-architecture.png "Sensor Data Intelligence architectural diagram")
 
+## Video instructions
+
+The following video shows how to [turn on the Sensor Data Intelligence feature](sdi-enable-feature.md) and deploy the required Azure resources. The other section in this article provides the same instructions in a text-based format.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58g3I]
+
+## Procedure
+
 Follow these steps to deploy the required resources on Azure.
 
 1. Sign in to Supply Chain Management as an admin.
