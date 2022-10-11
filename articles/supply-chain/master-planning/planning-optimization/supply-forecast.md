@@ -29,8 +29,8 @@ For each master plan, you can choose whether or not to consider forecasts when t
     - **Forecast model** – Select the model that contains the supply and/or demand forecasts to be considered by this master plan.
     - **Include supply forecast** –  Set to *Yes* to set this master plan to consider supply forecasts.
     - **Include demand forecast** –  Set to *Yes* to set this master plan to consider demand forecasts. This setting is independent of the **Include supply forecast** setting, but some of the other settings on this page  apply to both supply and demand forecast. For more information about planning with demand forecasts, see [Master planning with demand forecasts](demand-forecast.md).
-    - **Method used to reduce forecast requirements**: select a method to use to reduce forecast requirements during master scheduling. Choose one of the following values
-        - *None*: Forecast requirements won't be reduced during master scheduling. <!-- KFM: What is the difference between master planning and master scheduling? -->
+    - **Method used to reduce forecast requirements**: select a method to use to reduce forecast requirements during master planning. Choose one of the following values
+        - *None*: Forecast requirements won't be reduced during master planning.
         - *Percent - reduction key*: Forecast requirements will be reduced according to the percentages and time periods that are defined in the reduction key.
         - *Transactions – reduction key*: Forecast requirements will be reduced by the transactions that occur during the time periods defined by the reduction key.
         - *Transactions – dynamic period*: Forecast requirements will be reduced by the order transactions that occur during the dynamic period. The dynamic period covers the current forecast dates and ends with the start of the next forecast. The *Transactions – dynamic period* method doesn't use or require a reduction key and, when you use it, the following conditions apply:
@@ -123,11 +123,11 @@ There's only one forecast period because there's only one supply forecast line.
 
 When you run a master plan set to use a reduction method of *Transactions – dynamic period*. One of the following results could occur:
 
-- If a purchase order exists for vendor *US-101*, site *1*, warehouse *11*, quantity *10 ea* (with **Supply forecast** set to *Yes*), then master planning will create a new planned purchase order for the remaining quantity of *10 ea*. The forecast line is reduced because the vendor, site, and warehouse all match the existing purchase order. <!-- KFM: Does only the vendor matter, or do the site and warehouse also matter? -->
+- If a purchase order exists for vendor *US-101*, quantity *10 ea* (with **Supply forecast** set to *Yes*), then master planning will create a new planned purchase order for the remaining quantity of *10 ea*. The forecast line is reduced because the vendor matches the existing purchase order.
 - If a purchase order exists for another vendor *US-102*, site *1*, warehouse *11*, quantity *10 ea* (with **Supply forecast** set to *Yes*), then master planning will create a new planned purchase order for the full quantity of *25 ea*. The forecast line can't be reduced because it has a different vendor than the existing purchase order.
 
 > [!NOTE]
-> This situation can occur for planned purchase orders because they have a vendor associated. However, for transfer orders and production orders, the supply forecast amounts will always be reduced by existing orders because no vendor is specified for these types of orders. <!-- KFM: Does only the vendor matter, or do the site and warehouse also matter? -->
+> This situation can occur for planned purchase orders because they have a vendor associated. However, for transfer orders and production orders, the supply forecast amounts will always be reduced by existing orders because no vendor is specified for these types of orders.
 
 ### Example 4: Plans using the "Transactions - dynamic period" reduction method over several forecast periods
 
@@ -140,7 +140,7 @@ Suppose you have an item with a default order type of *Purchase order* and the s
 
 In this example, there are two forecast lines with different dates, so those dates establish the boundaries of the forecast periods. The first period is 10/10/22 - 10/14/22 and the second is 10/15/22 onwards.
 
-There is an existing purchase order for vendor *US-101*, quantity *10 ea*, date *10/12/22*. <!-- KFM: Is (**Supply forecast** set to *Yes*) relevant here?  --> Then you run a master plan set to use a reduction method of *Transactions – dynamic period*, which results in the following orders:
+There is an existing purchase order for vendor *US-101*, quantity *10 ea*, date *10/12/22*. Then you run a master plan set to use a reduction method of *Transactions – dynamic period*, which results in the following orders:
 
 - Planned order for quantity *15 ea*, date *10/10/22* (reduced by the existing purchase order dated within this same forecast period)
 - Planned order for quantity *25 ea*, date *10/15/22* (full quantity of the forecast)
@@ -155,13 +155,11 @@ Suppose you have an item with a default order type of *Purchase order* and the s
 |----------|----------|----------------|--------------|----------|------|------|-----------|
 | CurrentF | 10/10/22 | US-101         |              | 25       | ea   | 1    | 11        |
 
-A purchase order exists for vendor *US-101*, site *1*, warehouse *11*, quantity *25 ea*, date *10/10/22*. <!-- KFM: Is (**Supply forecast** set to *Yes*) relevant here?  -->
+A purchase order exists for vendor *US-101*, site *1*, warehouse *11*, quantity *25 ea*, date *10/10/22*. 
 
 When you run a master plan set to use a reduction method of *None*, it will create a planned purchase order for vendor *US-101*, site *1*, warehouse *11*, quantity *25 ea*, date *10/10/22*. In other words, the existing purchase order won't be reduces because the forecast reduction method is none.
 
 Suppose you now edit the planned purchase order created after the last planning run so that it has a quantity of *15 ea*, and then approve that order. The next time you run the master plan, it will create a planned purchase order for vendor *US-101*, site *1*, warehouse *11*, quantity *10 ea*, date *10/10/22*. This time, the quantity was reduced to reflect the quantity of the existing approved order from the previous planning run.
-
-<!-- KFM: This section previously used "firmed" and "approved" interchangeably. Are these the same? If not, which do we mean here? I assumed "approved" everywhere. -->
 
 ## Differences between Planning Optimization and the built-in planning engine
 
@@ -171,7 +169,7 @@ Supply forecasts work slightly differently depending on which planning engine yo
 
 When you add a forecasted line, you can specify a vendor and vendor group. In the built-in planning engine, created planned orders are grouped by the combination of vendor and vendor group values, while in Planning Optimization they're grouped by vendor.
 
-The following table provides a few example forecast lines for an item.
+The following table provides a few example supply forecast lines for an item.
 
 | Model    | Date     | Vendor account | Vendor group | Quantity | Unit | Site | Warehouse |
 |----------|----------|----------------|--------------|----------|------|------|-----------|
@@ -192,11 +190,11 @@ Planning Optimization will create just one order:
 
 ### Reduction of general forecasts with a more specific one
 
-With the built-in master planning engine, the result is nondeterministic <!-- KFM: nondeterministic = unpredictable? --> when you have some forecasts with a vendor and some without a vendor. In Planning Optimization general forecast quantities will always be reduced by more specific ones, as illustrated in the following example.
+With the built-in master planning engine, the result is unpredictable when you have some forecasts with a vendor and some without a vendor. In Planning Optimization general forecast quantities will always be reduced by more specific ones, as illustrated in the following example.
 
 In the Planning Optimization, general forecasts are reduced by the more specific ones.
 
-<!-- KFM: What is this table? Forecasts? -->
+The following table provides a few example supply forecast lines for an item.
 
 | Date       | Quantity | Vendor   | Vendor group  |
 |------------|----------|----------|---------------|
@@ -204,20 +202,16 @@ In the Planning Optimization, general forecasts are reduced by the more specific
 | 02/11/2022 | 6.00     | Vendor-A | VendorGroup-A |
 | 02/11/2022 | 15.00    |          |               |
 
-The general forecast (for 15.00 pieces) is reduced by the more specific forecasts (for 5.00 + 6.00 = 11.00 pieces), with the remainder assigned to the default vendor.
-
-<!-- KFM: What is this table? Planned orders? -->
+The general forecast (for 15.00 pieces) is reduced by the more specific forecasts (for 5.00 + 6.00 = 11.00 pieces), with the remainder assigned to the default vendor. The following table shows the planned orders.
 
 | Date       | Quantity | Vendor   | Vendor group  |
 |------------|----------|----------|---------------|
 | 02/11/2022 | 11.00    | Vendor-A | VendorGroup-A |
 | 02/11/2022 | 4.00     | Vendor-A | VendorGroup-A |
 
-<!-- KFM: Are we missing an example for built-in engine? -->
-
 ### Respect default order settings when generating planned orders
 
-Each item can have default order settings, such as to establish a minimum purchase order quantity and so on. These settings are respected when it comes to generating planned orders from supply forecasts <!-- KFM: Is this sentence describing Planning Optimization? -->. The built-in planning engine ignores these settings and therefore translates forecasts into planned orders with the same quantity.
+Each item can have default order settings, such as to establish a minimum purchase order quantity and so on. Planning Optimization respects these settings when it comes to generating planned orders from supply forecasts. However, the built-in planning engine ignores these settings and therefore translates forecasts into planned orders with the same quantity.
 
 ### Reduction by approved orders aggregates planned orders
 
@@ -237,6 +231,4 @@ For transfer and production orders, the vendor field is always ignored because i
 
 If the default order type for an item is *Transfer*, then forecasts can only be reduced by existing planned transfer orders. However, for production orders and purchase orders, only released orders reduce the supply forecast.
 
-Planning Optimization only reduces forecasts by transfer orders that are *Released*.
-
-<!-- KFM: How is this different for the built-in engine? -->
+Planning Optimization only reduces forecasts by transfer orders that are *Released*, while the built-in planning engine reduces for all transfer order states.
