@@ -92,6 +92,8 @@ For example, environment "xyz" has been provisioned, and two sites have been cre
 
 When a domain query string is not given in an environment with multiple domains provided, Commerce uses the first domain you provided. For example, if the path "fabrikam" was provided first during site setup, the URL `https://xyz.dynamics365commerce.ms` could be used to access the published site content site for `www.fabrikam.com`.
 
+Custom domains can also be added. In the environment Commerce management for the project, under the e-Commerce subheading, the option to **+ Add custom domain** is shown. The slider that appears shows the existing custom domains and the option to list a new custom domain.
+
 ## Traffic forwarding in production
 
 You can simulate multiple domains using domain query string parameters on the commerce.dynamics.com endpoint itself. But when you need to go live in production, you must forward the traffic for your custom domain to the `<e-commerce tenant name>.dynamics365commerce.ms` endpoint.
