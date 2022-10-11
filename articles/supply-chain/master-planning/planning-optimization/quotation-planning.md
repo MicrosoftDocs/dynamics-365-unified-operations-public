@@ -19,8 +19,6 @@ ms.dyn365.ops.version: 10.0.30
 
 Quotations and requests for quotations (RFQs) represent possible or even likely future orders. Therefore, it makes sense to take these into consideration during master planning to plan extra supply based on existing RFQs and how likely each quotation is to become an actual order. This topic describes how to set up master planning to take quotations and RFQs into consideration when generating planned orders.
 
-<!-- KFM: Does this require PO, or does the legacy engine also support this? Is any FM needed? -->
-
 ## Set up master planning to consider sales quotations and/or RFQs
 
 Use the following procedure to set up master planning to consider sales quotations and/or RFQs.
@@ -45,7 +43,7 @@ Use the following procedure to assign a probability to an opportunity and then c
 1. Select an existing opportunity or select **New** on the Action Pane to create a new one.
 1. Fill out the opportunity page however you like to identify the opportunity, but be sure to set **Probably** to an appropriate value. Only master plans set to look for properties of this value or lower will consider quotations generated from this opportunity.
 1. Select **Save** on the Action Pane.
-1. On the Action Pane, open the **Opportunity** tab and, from the **New** group, select **Sales quotation** or **Project quotation**, depending on which type of quotation you want to make. <!-- KFM: Are project quotations really relevant? -->
+1. On the Action Pane, open the **Opportunity** tab and, from the **New** group, select **Sales quotation** or **Project quotation**, depending on which type of quotation you want to make.
 1. The **Create quotation** dialog opens. Set options as needed and then select **OK**.
 1. A new quotation is created and opened. Oon the **Lines** FastTab toolbar, define the content of the quotation by adding sales lines or project lines as needed.
 1. On the Action Pane, select **Save** and then close the quotation.
@@ -60,8 +58,7 @@ The only way to view the probably associated with a quotation is to go to the op
     1. The **Insert columns** dialog opens. Find the row where **Field** is *Opportunity* and select the **Select** checkbox for that row.
     1. Select **Update** to add the selected column to the **All quotations** page.
 1. Find the relevant quotation in the grid and, for that row, select the value in the **Opportunity ID** column. (If you're looking for a project quotation, you may need to select the **Quotation type** column header and clear its filter, which is set to show only *Sales quotations* in a default installation.)
-1. The related opportunity opens, where you can view and edit the **Probably** value as needed. <!-- KFM: Will editing this now have any effect? -->
+1. The related opportunity opens, where you can view and edit the **Probability** value as needed. <!-- KFM: Will editing this now have any effect? -->
 
-<!-- KFM: Does the quotation status have any effect? (created, approved, sent, confirmed, etc.) -->
 
 <!-- KFM: I think we need a section that explains how master planning works with RFQs. Any special considerations, such as status, type, date, responses, etc.? When/how do these get resolved? -->
