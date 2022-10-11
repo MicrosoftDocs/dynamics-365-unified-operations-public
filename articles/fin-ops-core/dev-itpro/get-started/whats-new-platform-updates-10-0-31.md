@@ -30,14 +30,14 @@ The following table lists the features that are included in this release.
 
 | Module or feature area | Feature name | More information | Enabled by |
 |---|---|---|---|
-|  Data management | <p>**Allow Row version change tracking for tables and data entities.**</p>  | [Allow Row version change tracking for tables and data entities](../data-entilimits.md) | Default  |
-|  Power platform | <p>**Track changes for finance and operations virtual tables in Dataverse (Preview).**</p>  | [Track changes for finance and operations virtual tables in Dataverse](../dev-itpro/power-platform/track-changes-fin-ops-virtual-table.md) | [Power platform preview](https://learn.microsoft.com/en-us/power-platform/admin/what-are-preview-features-how-do-i-enable-them)  |
-|  System administration | <p>**New SecurityRole metadata property.**</p>  | A new SecurityRole metadata property, **Can Be Deleted From UI**, has been added to protect system roles from being deleted using the Finance and Operations apps. Default value is **Yes**. If set to **No**, a delete action will result in an error message being displayed: "'NN' is a system role that can not be removed.". [![Can Be Deleted From UI.](./devitpro/media/CanBeDeletedFromUI.jpg)](./dev-itpro/media/CanBeDeletedFromUI.jpg) |  Default |  
-|  System administration | <p>**New Table metadata property.**</p>  | A new Table metadata property, **DisableDatabaseLog**, makes it possible to exclude tables from being possible to add to the database log. Default value is **No**. If set to **Yes**, it will not be possible to add the table during database log setup. . [![Disable Database Logging.](./dev-itpro/media/DisableDatabaseLogging.jpg)](./dev-itpro/media/DisableDatabaseLogging.jpg) | Default | 
+| Data management | Allow Row version change tracking for tables and data entities | See [Allow Row version change tracking for tables and data entities](../data-entilimits.md). | Default |
+| Power platform | Track changes for finance and operations virtual tables in Dataverse (Preview) | See [Track changes for finance and operations virtual tables in Dataverse](../dev-itpro/power-platform/track-changes-fin-ops-virtual-table.md). | [Power platform preview](https://learn.microsoft.com/power-platform/admin/what-are-preview-features-how-do-i-enable-them) |
+| System administration | New SecurityRole metadata property | <p>A new **SecurityRole** metadata property, **Can Be Deleted From UI**, has been added to help protect system roles from being deleted by using finance and operations apps. The default value is **Yes**. If the value is set to **No**, a delete action will cause the following error message to be shown: "'NN' is a system role that can not be removed."</p>[![Can Be Deleted From UI property.](./devitpro/media/CanBeDeletedFromUI.jpg)](./dev-itpro/media/CanBeDeletedFromUI.jpg) | Default |
+| System administration | New Table metadata property | <p>A new **Table** metadata property, **DisableDatabaseLog**, lets you prevent tables from being added to the database log. The default value is **No**. If the value is set to **Yes**, the table can't be added when the database log is set up.</p>[![DisableDatabaseLog property.](./dev-itpro/media/DisableDatabaseLogging.jpg)](./dev-itpro/media/DisableDatabaseLogging.jpg) | Default | 
 
 ### Bug fixes
 
-For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services (LCS), and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=xxxx).
+For information about the bug fixes that are included in this update, sign in to Microsoft Dynamics Lifecycle Services, and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=xxxx).
 
 ### Dynamics 365: 2022 release wave 2 plan
 
