@@ -55,7 +55,7 @@ To use the specified sample records and values to work through this scenario, yo
 
 ### Create a menu-specific override and configure the detour for scenario 1
 
-In this procedure, you will configure a detour for the **Sales picking** menu item in the license plate step.
+In this procedure, you'll configure a detour for the **Sales picking** menu item in the license plate step.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device steps**.
 1. Find the step ID that is named *LicensePlateId*, and select it.
@@ -66,17 +66,17 @@ In this procedure, you will configure a detour for the **Sales picking** menu it
 1. In the **Add detour** dialog box, select **Location inquiry** as the detour that will be made available in the Warehouse Management mobile app.
 1. Select **OK**.
 1. On the **Available detours (menu items)** FastTab, select the detour that you just added, and then select **Select fields to send** on the toolbar.
-1. In the **Select fields to send** dialog box, specify the information that should be sent to and from the detour. In this scenario, you're enabling workers to use the location that they are supposed to pick from as input for the location inquiry detour. Therefore, in the **Send from sales picking** section, select **Add** on the toolbar to add a row to the grid. Then set the following values for the new row:
+1. In the **Select fields to send** dialog box, specify the information that should be sent to and from the detour. In this scenario, you're enabling workers to use the location that they're supposed to pick from as input for the location inquiry detour. Therefore, in the **Send from sales picking** section, select **Add** on the toolbar to add a row to the grid. Then set the following values for the new row:
 
     - **Copy from Sales Picking:** *Location*
     - **Paste in Location Inquiry:** *Location*
-    - **Auto submit:** *Selected* - Page will get refreshed with the pasted *Location* value
+    - **Auto submit:** *Selected* (the page will be refreshed with the pasted *Location* value)
 
 1. Because the detour in this scenario is configured on the license plate step, it will be useful if workers can bring the license plate from the inquiry back to the main flow. Therefore, in the **Bring back from location inquiry** section, select **Add** on the toolbar to add a row to the grid. Then set the following values for the new row:
 
     - **Copy from Location Inquiry:** *License plate*
     - **Paste in Sales Picking:** *License plate*
-    - **Auto submit:** *Cleared* - No auto update process when returning from detour with a *License plate* value
+    - **Auto submit:** *Cleared* (no auto update will occur when returning from the detour with a *License plate* value)
 
 1. Select **OK**.
 
@@ -84,7 +84,7 @@ The detour is now fully configured. A button to start the **Location inquiry** d
 
 ### Complete a sales pick on a mobile device and use the detour
 
-In this procedure, you will complete a sales pick by using the Warehouse Management mobile app. You will use the detour that you just configured to find the license plate that you will use to complete the pick step.
+In this procedure, you'll complete a sales pick by using the Warehouse Management mobile app. You'll use the detour that you just configured to find the license plate that you'll use to complete the pick step.
 
 1. In Microsoft Dynamics 365 Supply Chain Management, create a sales order that will require a pick step to pick from a location that is license plate tracked. Then release the sales order to the warehouse. Make a note of the work ID that is generated.
 1. Open the Warehouse Management mobile app, and sign in to warehouse 24. (In the standard demo data, sign in by using *24* as the user ID and *1* as the password.)
@@ -110,7 +110,7 @@ To use the specified sample records and values to work through this scenario, yo
 
 ### Create a menu-specific override and configure the detour for scenario 2
 
-In this procedure, you will configure a detour for the **Sales picking** menu item in the license plate step.
+In this procedure, you'll configure a detour for the **Sales picking** menu item in the license plate step.
 
 1. Go to **Warehouse management \> Setup \> Mobile device \> Mobile device steps**.
 1. Find and select the step ID that is named *LocationInquiryList*.
@@ -129,7 +129,7 @@ In this procedure, you will configure a detour for the **Sales picking** menu it
 
     - **Copy from Location Inquiry:** *Location*
     - **Paste in Movement:** *Loc / LP*
-    - **Auto submit:** *Cleared* - No auto update process
+    - **Auto submit:** *Cleared* (no auto update will occur)
 
     In this detour, you aren't expecting any information to be copied back, because the main flow was an inquiry where no additional steps are required.
 
@@ -139,7 +139,7 @@ The detour is now fully configured. A button to start the **Movement** detour wi
 
 ### Do a location inquiry on a mobile device and use the detour
 
-In this procedure, you will do a location inquiry by using the Warehouse Management mobile app. You will then use the detour to complete a movement of goods.
+In this procedure, you'll do a location inquiry by using the Warehouse Management mobile app. You'll then use the detour to complete a movement of goods.
 
 1. Open the Warehouse Management mobile app, and sign in to warehouse 24. (In the standard demo data, sign in by using *24* as the user ID and *1* as the password.)
 1. Select the **Inventory** menu, and then select the **Location inquiry** menu item.
@@ -153,4 +153,4 @@ In this procedure, you will do a location inquiry by using the Warehouse Managem
 > [!NOTE]
 > The *Multi-level detours for the Warehouse Management mobile app* feature enables you to define multi-level detours (detours within detours), which will allow workers to jump from an existing detour two a second one and then back again. The feature supports two levels of detours out of the box and, if necessary, you can customize your system to support three or more levels of detours by creating code extensions on the `WHSWorkUserSessionState` table.
 >
-> The *Auto-submit detour steps for the Warehouse Management mobile app* feature can make it faster and easier for workers to complete detour flows in the Warehouse Management mobile app. It enables some flow steps to be skipped by letting the app populate detour data on the back end and then move automatically to the next step by auto submitting the page step, like in the above [*Scenario 1*](#scenario-1).
+> The *Auto-submit detour steps for the Warehouse Management mobile app* feature can make it faster and easier for workers to complete detour flows in the Warehouse Management mobile app. It enables some flow steps to be skipped by letting the app populate detour data on the back end and then move automatically to the next step by auto submitting the page, as shown in [*Sample scenario 1: Sales picking where a location inquiry acts as a detour*](#scenario-1).
