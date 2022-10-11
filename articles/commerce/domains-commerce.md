@@ -94,6 +94,10 @@ When a domain query string is not given in an environment with multiple domains 
 
 Custom domains can also be added. In the environment Commerce management for the project, under the e-Commerce subheading, the option to **+ Add custom domain** is shown. The slider that appears shows the existing custom domains and the option to list a new custom domain.
 
+## Update which Commerce Scale Unit is used
+
+The selected Commerce Scale Unit (CSU) used by e-Commerce was typically selected when initially created. By selecting **Update scale unit** (on the same e-Commerce management page as detailed just prior to this subheading), a slider is shown that details the current CSU being used and the option to select a **New commerce scale unit** from the list of what CSU exist for that environment. This allows customers to better maintain their architecture through self-service functionality, reducing the need to connect with support.
+
 ## Traffic forwarding in production
 
 You can simulate multiple domains using domain query string parameters on the commerce.dynamics.com endpoint itself. But when you need to go live in production, you must forward the traffic for your custom domain to the `<e-commerce tenant name>.dynamics365commerce.ms` endpoint.
