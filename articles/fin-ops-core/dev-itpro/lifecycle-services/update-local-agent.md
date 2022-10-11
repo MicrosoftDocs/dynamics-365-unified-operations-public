@@ -52,7 +52,7 @@ This article explains how to update the local agent. The latest version of the l
 | 2.1.2               | This version contains updated Azure dependencies for improved download stability and logic to correctly evaluate if files are downloaded. This fixes an issue where files are fully downloaded, but the logic would still consider them as missing a few bytes and therefore fail the download. | July 2019 | January 31, 2023 |
 | 2.1.1               | This version fixes an issue that occurs when the download fails and the Microsoft Dynamics Lifecycle Services **Maintain** button isn't available. Additional changes include updates to Azure storage libraries to improve communication with Azure storage and enable TLS 1.2. | February 2019 | January 31, 2023 |
 | 2.1.0               | This version enables two-phased servicing where **Preparation** and **Update** are two separate steps. | June 2018 | January 31, 2023 |
-| 2.0.0               | This version enables servicing flows and deploys Platform update 12. | January 2018 | | January 31, 2023 |
+| 2.0.0               | This version enables servicing flows and deploys Platform update 12. | January 2018 | January 31, 2023 |
 | 1.1.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for successful deployments, enables multi-model package deployments, and deploys Platform update 8 and 11. | December 2017 | January 31, 2023 |
 | 1.0.0               | This version enables the [Reconfigure feature](../../dev-itpro/lifecycle-services/reconfigure-environment.md) for failed deployments. | October 2017 | January 31, 2023 |
 | Null                | This initial version deploys Platform update 8. | July 2017 | January 31, 2023 |
