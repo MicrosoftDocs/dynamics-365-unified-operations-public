@@ -24,13 +24,13 @@ Sensor Data Intelligence uses data from sensors that are connected to Microsoft 
 
 ## Video instructions
 
-The following video shows how to [turn on the Sensor Data Intelligence feature](sdi-enable-feature.md) and deploy the required Azure resources.
+The following video shows how to [turn on the Sensor Data Intelligence feature](sdi-enable-feature.md) and deploy the required Azure resources. The other section in this article provides the same instructions in a text-based format.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58g3I]
 
 ## Procedure
 
-Follow these steps to deploy the required resources on Azure. These steps are also shown in the video embedded at the start of this topic.
+Follow these steps to deploy the required resources on Azure.
 
 1. Sign in to Supply Chain Management as an admin.
 1. Go to **System administration \> Setup \> Sensor Data Intelligence \> Deploy and connect Azure resources** to open the deployment wizard.
