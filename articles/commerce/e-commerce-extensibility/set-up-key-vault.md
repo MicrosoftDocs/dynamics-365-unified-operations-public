@@ -48,11 +48,17 @@ To create a new Key Vault, follow these steps.
 
 ## Configure server-to-server authentication between the e-commerce Node application and Retail Server
 
+> [!NOTE]
+> For Commerce versions 10.0.31 and higher, this "Configure server-to-server authentication between the e-commerce Node application and Retail Server" section can be skipped.
+
 Next, the e-commerce Node application needs to be configured to securely communicate with Retail Server.
 
 For the following steps, you will need to have the tenant ID of the Azure App Service hosting your Node application, as well as the client ID of the managed identity tied to your Azure App Service. You will not have access to these IDs, so please work with your service integrator or support team to obtain the required information. Once you have these IDs available you can continue with the steps below.
 
 ### Add your Node application details into Retail Server’s authentication allow list
+
+> [!NOTE]
+> For Commerce versions 10.0.31 and higher, this "Add your Node application details into Retail Server's authentication allow list" section can be skipped.
 
 To add your Node application details into Retail Server's authentication allow list, follow these steps.
 
