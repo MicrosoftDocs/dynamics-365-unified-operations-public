@@ -3657,7 +3657,7 @@
             href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
           - name: System grouping on an open work list
             href: warehousing/system-group-on-open-work-list.md
-          - name: Document routing layout for license plate labels
+          - name: Document routing label layouts
             href: warehousing/document-routing-layout-for-license-plates.md
           - name: GS1 bar codes and QR codes
             href: warehousing/gs1-barcodes.md

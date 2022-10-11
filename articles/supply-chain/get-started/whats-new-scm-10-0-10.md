@@ -44,7 +44,7 @@ The following features are included in this release. The feature titles link to 
 
 - [Inbound load management enhancements for warehouse management](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/warehouse-management-inbound-load-management-enhancement)<br> - For more information, see [Warehouse handling of inbound loads for purchase orders](../warehousing/inbound-load-handling.md).
 
-- [Label printing enhancements for warehouse management](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - For more information, see [Document routing layout for license plate labels](../warehousing/document-routing-layout-for-license-plates.md).
+- [Label printing enhancements for warehouse management](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/label-printing-enhancements-warehouse-management)<br> - For more information, see [Document routing label layouts](../warehousing/document-routing-layout-for-license-plates.md).
 
 - [Master planning includes items with on-hand inventory when pre-processing filters are enabled](/dynamics365-release-plan/2020wave1/dynamics365-supply-chain-management/master-planning-include-items-on-hand-when-pre-processing-filters-are-enabled)
 
