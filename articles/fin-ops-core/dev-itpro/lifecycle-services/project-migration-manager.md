@@ -48,8 +48,8 @@ The following table shows the data that can be transferred between instances and
 | Migration method | Project types | Capabilities |
 |------------------|---------------|--------------|
 | Automated | <ul><li>Cloud implementation project</li><li>On-premises implementation project</li><li>Partner project</li></ul> | <ul><li>Business process modeler</li><li>Methodologies</li><li>Project onboarding</li><li>Project settings</li><lip>Support</li><li>Work items</li></ul> |
-| Manual migration | <ul><li>Cloud implementation project</li><li>On-premises project</li><li>Partner project</li></ul> | <ul><li>Asset library</li><li>Commerce</li><li>Self-service environments (support ticket)</li><li>Cloud-hosted environments (CHE)</li></ul> |
-| Not supported | All | <ul><li>Configuration and Data Manager (CDM)</li><li>SharePoint Online integration</li><li>System diagnostics</li><li>Upgrade analysis</li><li>Globalization</li><li>Code upgrade</li><li>Translation service</li><li>Non-project features</li></ul> |
+| Manual migration | <ul><li>Cloud implementation project</li><li>On-premises project</li><li>Partner project</li></ul> | <ul><li>Asset library</li><li>Commerce</li><li>Self-service environments (support ticket)</li><li>Cloud-hosted environments </li></ul> |
+| Not supported | All | <ul><li>Configuration and Data Manager </li><li>SharePoint Online integration</li><li>System diagnostics</li><li>Upgrade analysis</li><li>Globalization</li><li>Code upgrade</li><li>Translation service</li><li>Non-project features</li></ul> |
 
 You're responsible for migrating data that requires manual migration. However, you aren't required to migrate any or all of this data. You might choose to migrate only your most recent assets from the Asset library. Alternatively, you might choose to re-create developer cloud-hosted environments, for example, in the target project.
 
