@@ -86,6 +86,7 @@ For information on the dark hours for each region, see [What are the planned mai
 ### <a name="schedule"></a> Proactive quality update release: 10.0.29
 **App version: 10.0.1326.70**
 **Corresponding latest KB article: 748926**
+
 | Station | Regions | Upcoming Sandbox Schedule
 |---|---|---|
 | Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | October 14 to October 17, 2022 |
