@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "articles/fin-ops-core/fin-ops/get-started/public-preview-terms.md",
+      "redirect_url": "https://go.microsoft.com/fwlink/?linkid=2105274",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "articles/fin-ops-core/dev-itpro/sysadmin/user-session-management.md",
       "redirect_url": "/dynamics365/finance",
       "redirect_document_id": "false"
