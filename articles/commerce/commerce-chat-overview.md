@@ -28,4 +28,4 @@ Microsoft is offering two products, Dynamics 365 Omnichannel for Customer Servic
 ## Commerce chat modules
 
 - For information on integrating a Dynamics 365 Commerce e-commerce website with Omnichannel for Customer Service, see [Commerce Chat with Omnichannel for Customer Service module](commerce-chat-module.md)
-- For information on integrating a Dynamics 365 Commerce e-commerce website with Power Virtual Agents, see [Commerce Chat with Microsoft Power Virtual Agents](commerce-chat-with-pva-module.md). 
+- For information on integrating a Dynamics 365 Commerce e-commerce website with Power Virtual Agents, see [Commerce Chat with Microsoft Power Virtual Agents](commerce-chat-with-pva.md). 
