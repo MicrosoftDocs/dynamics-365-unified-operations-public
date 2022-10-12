@@ -4,26 +4,16 @@
 title: Limit payment token usage
 description: This topic reviews the capability to limit how payment tokens are used within the system. Token usage is restricted to the scope of a Sales Order, or stored as a card-on-file for the shopper per their consent.
 author: BrianShook
-ms.date: 07/28/2022
+ms.date: 10/12/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
 ms.custom: 141393
 ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom:
-ms.dyn365.ops.version: AX 7.0.1
 
 ---
 
@@ -79,17 +69,18 @@ Additionally, a **Save for future use** checkbox will be presented at the end of
 
 ### Headquarters Forms the Recurring Token Restrictions are Enforced
 
-The token restriction scoping affects the following areas in Headquarters when the feature is enabled:
+The token restriction scoping affects the following areas in headquarters when the feature is enabled:
 
-- The Sales Order > Payments > Enter customer payment information
-- Continuity Orders
-- Installment Payments
-- Accounts Receivable Credit Card payments
+- The **Sales Order \> Payments \> Enter customer payment** information
+- Continuity orders
+- Installment payments
+- Accounts receivable credit card payments
 
-### Managing payment tokens (Archive or Removal)
+### Manage payment tokens (Archive or Removal)
+
 Payment tokens created prior to the **Restrict Payment Token usage to Order context** feature flag being enabled (or created while the feature is disabled) will remain 'unscoped' in the system and be referencable in the Headquarters Payment Form selection lists. These tokens can be removed regularly in two ways:
 
-- Utilize the **Archive credit card transaction data** page to set a job to regularly purge or archive the payment tokens. The **Delete data without archiving** setting to "Yes" will delete the tokens that meet the **Minimum transaction age (in days)** setting.  More information can be found in the [Archive credit card transaction data](archive-cc-data) article.
+- Utilize the **Archive credit card transaction data** page to set a job to regularly purge or archive the payment tokens. The **Delete data without archiving** setting to "Yes" will delete the tokens that meet the **Minimum transaction age (in days)** setting.  For more information, see [Archive credit card transaction data](archive-cc-data.md).
 
 - Use the new **Account receivable > Inquiries and reports > Clean up > Purge credit card tokens** form. This form allows to run or set a batch job to delete payment tokens. Set the parameters:
   - **Minimum token age in days** must be 90 days or more.
@@ -100,9 +91,10 @@ Payment tokens created prior to the **Restrict Payment Token usage to Order cont
  
 Deleted tokens are not retrievable. Use the **Minimum token age in days** setting to an age that suites the longer-running transactional lifespan (from authorization to capture or refund) for your environment.
 
-
 ## Additional resources
 
-- [Payments FAQ](dev-itpro/payments-retail.md)
-- [Checkout module](add-checkout-module.md)
-- [Payment module](payment-module.md)
+[Payments FAQ](payments-retail.md)
+
+[Checkout module](../add-checkout-module.md)
+
+[Payment module](../payment-module.md)
