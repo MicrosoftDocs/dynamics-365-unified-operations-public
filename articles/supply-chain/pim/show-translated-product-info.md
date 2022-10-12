@@ -10,8 +10,11 @@ ms.date: 10/14/2022
 ms.custom: bap-template
 ---
 
-
 # Show translated product names and descriptions in the UI
+
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 For companies operating worldwide, in multiple countries or regions, it's important to enable each user to work with product information in their own language. Sales representatives communicating with customers by phone will see product names in their local language. Purchasers will be able to search for products in the language they speak. Shop floor workers will get product names and instructions in familiar terms. In each case, the information can be shown in a language other than the system language.
 
