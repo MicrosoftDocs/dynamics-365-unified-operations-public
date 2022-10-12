@@ -4,7 +4,7 @@
 title: Commerce Chat modules parameters - proactive chat
 description: This article describes the proactive chat parameters used with the Commerce chat modules in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 10/11/2022
+ms.date: 10/12/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -41,7 +41,7 @@ This document provides details of the proactive chat parameters supported by bot
 |  Wait time (sec)|  Time (in seconds) spent on page before chat is triggered.| 
 |  Chat greeting | Greeting message for when proactive chat has been triggered.  | 
 
-### Number of page visits (Proactive Chat)
+### Number of Page Visits (Proactive Chat)
 
 | Friendly name | Description |
 | ------------- |--------------|
@@ -55,7 +55,7 @@ This document provides details of the proactive chat parameters supported by bot
 | Page(s) |  List of pages that will trigger proactive chat when visited.| 
 |Chat greeting  |Greeting message for when proactive chat has been triggered.  | 
 
-### From specific page(s) (Proactive Chat)
+### From Specific Page(s) (Proactive Chat)
 
 | Friendly name | Description |
 | ------------- |--------------|
@@ -85,7 +85,6 @@ This document provides details of the proactive chat parameters supported by bot
 |  Maximum|The maximum monetary amount (inclusive), in the shopping cart, required to trigger proactive chat when user visits cart page.  | 
 |Chat greeting  | Greeting message for when proactive chat has been triggered. | 
  
-
 ### Total Number of Items in Cart (Proactive Chat)
 
 | Friendly name | Description |
