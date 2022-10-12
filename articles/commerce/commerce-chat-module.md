@@ -4,7 +4,7 @@
 title: Commerce Chat with Omnichannel for Customer Service module
 description: This article describes the Commerce Chat with Omnichannel for Customer Service module in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 10/11/2022
+ms.date: 10/12/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -18,7 +18,7 @@ ms.search.validFrom: 2022-07-20
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This article describes the Commerce Chat with Omnichannel for Customer Service module in Microsoft Dynamics 365 Commerce.
+This article describes the *Commerce Chat with Omnichannel for Customer Service* module in Microsoft Dynamics 365 Commerce.
 
 In the Commerce version 10.0.29 release, a new Commerce Chat with Omnichannel for Customer Service module has been added to the Commerce module library. The Commerce chat feature provides e-commerce customers with the chat capabilities of Dynamics 365 Omnichannel for Customer Service, which includes live agent support to help address customer queries, provide customer service, and facilitate sales for Commerce customers.
 
@@ -81,8 +81,7 @@ To add the chat module to your site's header fragment in Commerce site builder, 
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
 > [!NOTE]
-> Refer to  **[Commerce Chat with Omnichannel  for Customer Service additional parameters](/omnichannel-chat-module-properties.md)** for complete list of configuration parameters.
-
+> For a complete list of configuration parameters, see [Commerce Chat with Omnichannel for Customer Service additional parameters](/omnichannel-chat-module-properties.md).
 
 ## Add Commerce headquarters as an application tab for Omnichannel for Customer Service
 
@@ -118,7 +117,7 @@ To enable a new application tab for customer agents in Dynamics 365 Omnichannel 
 1. Under **Application Tabs**, select **Add Existing Application Tab**, and then add the new application tab that you created earlier. This step ensures that an application tab that loads Commerce headquarters in an iFrame module will appear when an agent receives an incoming chat call from your e-commerce website.
 
 > [!NOTE]
-> In the workstream, the default chat session template cannot be modified. So, you may want to create a new template or duplicate the existing one to update. Refer to [Associate templates with workstream](/dynamics365/app-profile-manager/associate-templates) for more details.
+> You can't modify the default chat session template in the workstream, so you may want to create a new template or duplicate the existing template to update it. For more information, see [Associate templates with workstream](/dynamics365/app-profile-manager/associate-templates).
 
 ## Add context variables in Dynamics 365 Omnichannel for Customer Service
 
