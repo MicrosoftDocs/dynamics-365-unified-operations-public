@@ -43,13 +43,30 @@ There are some limitations to this functionality in terms of all the data that i
 
 ## Data that can be transferred between instances
 
-The following table shows the data that can be transferred between instances and the actions that can be used to transfer it.
+Data can be transferred using the Project migration manager within Cloud implementation projects, and partner projects.  Other types of projects are not yet supported.
 
-| Migration method | Project types | Capabilities |
-|------------------|---------------|--------------|
-| Automated | <ul><li>Cloud implementation project</li><li>On-premises implementation project</li><li>Partner project</li></ul> | <ul><li>Business process modeler</li><li>Methodologies</li><li>Project onboarding</li><li>Project settings</li><lip>Support</li><li>Work items</li></ul> |
-| Manual migration | <ul><li>Cloud implementation project</li><li>On-premises project</li><li>Partner project</li></ul> | <ul><li>Asset library</li><li>Commerce</li><li>Self-service environments (support ticket)</li><li>Cloud-hosted environments </li></ul> |
-| Not supported | All | <ul><li>Configuration and Data Manager </li><li>SharePoint Online integration</li><li>System diagnostics</li><li>Upgrade analysis</li><li>Globalization</li><li>Code upgrade</li><li>Translation service</li><li>Non-project features</li></ul> |
+The following table shows the data that can be transferred between instances of and the actions that can be used to transfer it.
+
+| Migration method | Feature | Details |
+|------------------|---------|---------|
+| Automated | Business process modeler | |
+| Automated | Methodologies | |
+| Automated | Project onboarding | |
+| Automated | Project settings | *Update schedules including paused updates, as well as Azure connectors are not migrated |
+| Automated | Support | |
+| Automated | Work items | |
+| Manual | Asset library | You will be able to download and manually upload in the target project.  You do not need to move all assets, only those you require. |
+| Manual | Commerce | Help? |
+| Manual | Self-service environments | Sandbox and Production environments will remain in their current deployed region and are not touched by the Project migration manager.  If you need to move your enviornment to a different region, please open a support ticket separately. |
+| Manual | Cloud-hosted environments | Azure connectors can be manually re-configured, and new environments can be deployed thereafter in the target. |
+| Not supported | Configuration and Data Manager | ? |
+| Not supported | Sharepoint Online Integration | ? |
+| Not supported | System diagnostics | ? |
+| Not supported | Upgrade analysis | ? |
+| Not supported | Globalization | ? |
+| Not supported | Code upgrade | ? |
+| Not supported | Translation service | ? |
+| Not supported | Non-project features | ? |
 
 You're responsible for migrating data that requires manual migration. However, you aren't required to migrate any or all of this data. You might choose to migrate only your most recent assets from the Asset library. Alternatively, you might choose to re-create developer cloud-hosted environments, for example, in the target project.
 
@@ -58,7 +75,7 @@ You're responsible for migrating data that requires manual migration. However, y
 1. On the navigation menu, select **Project migration manager**.
 
     > [!NOTE]
-    > You must be a project owner to migrate a project.
+    > You must be a project owner to migrate a project.  In addition, your account must be in the same tenant that owns the project.
 
 2. Select **New** to start a new migration request.
 3. In the **Schedule Migration** dialog box, select a target geography that meets your specifications.
@@ -71,6 +88,8 @@ After the migration is scheduled, you can cancel it by selecting it on the Proje
 
 The Project migration manager utility performs several validations:
 
+- Project environments (Sandbox and Production) must all be on supported versions prior to scheduling migration.
+- At the time migration begins, all environments must be in a Deployed state.  Any other state will cancel the migration.
 - All migrations must be scheduled in the future.
 - Migration can be done for only some project types. For information about the supported project types, see the "Automated" row of the table earlier in this article.
 - A migration can be deleted or canceled only if it hasn't yet started.
@@ -78,6 +97,8 @@ The Project migration manager utility performs several validations:
 ### During migration
 
 While the migration is in progress, a banner is shown across the source and target projects to indicate that they are participating in a migration. The projects are locked for changes until either the migration is successfully completed, or it fails and is rolled back.
+
+If there are any customization, service or quality updates scheduled during your migration, those updates will be automatically cancelled.
 
 ## Frequently asked questions (FAQ)
 
@@ -89,10 +110,18 @@ Finance and operations apps store metadata that includes the connection to the L
 
 ### Which geographies are available for me to choose from?
 
-For more information about the different geographies that are available, see [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo).
+For the initial preview, the first target region supported is EU.  Over time we will add support for all LCS geographies.  For more information about the different geographies that are available, see [Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies](/dynamics365/fin-ops-core/dev-itpro/deployment/deployment-options-geo).
 
 ### What happens to the source project after migration is completed?
 
 The source project remains available for up to one year, in read-only mode. Although you can download assets, you can't make any other changes. You also can't manage the environments from the source project. After one year, the source project and its data are deleted. You can delete the project sooner if you've moved all your required data to the target project and no longer want data to reside in the source geography.
+
+### What happens if I want to go back to my source geo after migration completes successfully?
+
+This is not supported via the software.  You will need to open a support ticket for the product engineering group to help you.
+
+### What happens if my migration is cancelled or is rolled back?
+
+Please open a support ticket and we will help you.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
