@@ -1601,7 +1601,7 @@
       - name: Cross-company data sharing
         href: sysadmin/srs-overview.md
       - name: Tables supported for data sharing
-        href: sysadmin/sysadmin/drs-srs-tables.md#tables-supported-for-master-company-data-sharing
+        href: sysadmin/sysadmin/drs-srs-tables.md
       - name: Data sharing for developers
         href: sysadmin/drs-srs-dev.md
       - name: Maintenance mode
