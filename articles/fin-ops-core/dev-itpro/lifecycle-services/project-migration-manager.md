@@ -43,30 +43,31 @@ There are some limitations to this functionality in terms of all the data that i
 
 ## Data that can be transferred between instances
 
-Data can be transferred using the Project migration manager within Cloud implementation projects, and partner projects.  Other types of projects are not yet supported.
+Data can be transferred using the Project migration manager within cloud implementation projects, and partner projects.  Other types of projects are not yet supported.
 
 The following table shows the data that can be transferred between instances of and the actions that can be used to transfer it.
 
 | Migration method | Feature | Details |
 |------------------|---------|---------|
-| Automated | Business process modeler | |
-| Automated | Methodologies | |
+| Automated | Business process modeler | ** |
+| Automated | Methodologies | *The state of the methodology is not migrated.  You can manually complete as needed. |
+| Automated | Commerce |  |
+| Automated | Subscription estimator | |
 | Automated | Project onboarding | |
 | Automated | Project settings | *Update schedules including paused updates, as well as Azure connectors are not migrated |
 | Automated | Support | |
 | Automated | Work items | |
+| Automated | Organization users | *Only users who were in the source project will be created as organization users in the target LCS geo |
+| Automated | Project users | *Only Project Owners from the tenant who owns the source project are migrated to the target LCS project | 
+| Automated | Asset library | *Only the last asset applied to your sandbox / production environments are migrated automatically |
 | Manual | Asset library | You will be able to download and manually upload in the target project.  You do not need to move all assets, only those you require. |
-| Manual | Commerce | Help? |
-| Manual | Self-service environments | Sandbox and Production environments will remain in their current deployed region and are not touched by the Project migration manager.  If you need to move your enviornment to a different region, please open a support ticket separately. |
+| Manual | Self-service environments | Sandbox and Production environments will remain in their current deployed region and are not touched by the Project migration manager.  They will have the same Environment IDs but will live in a new Project.  If you need to move your enviornment to a different region, please open a support ticket separately. |
 | Manual | Cloud-hosted environments | Azure connectors can be manually re-configured, and new environments can be deployed thereafter in the target. |
-| Not supported | Configuration and Data Manager | ? |
-| Not supported | Sharepoint Online Integration | ? |
-| Not supported | System diagnostics | ? |
-| Not supported | Upgrade analysis | ? |
-| Not supported | Globalization | ? |
-| Not supported | Code upgrade | ? |
-| Not supported | Translation service | ? |
-| Not supported | Non-project features | ? |
+| Not supported | System diagnostics | This cannot be exported, but new diagnostics will be generated from your environments in the target project after migration |
+| Not supported | Upgrade analysis | This cannot be exported, but you can start a new upgrade analysis in the target project after migration |
+| Not supported | Globalization | Regulatory alerts ** |
+| Not supported | Code upgrade | This cannot be exported, but you can start a new Code upgrade in the target project after migration |
+| Not supported | Translation service | This cannot be exported, but you can start a new translation request in the target project after migration |
 
 You're responsible for migrating data that requires manual migration. However, you aren't required to migrate any or all of this data. You might choose to migrate only your most recent assets from the Asset library. Alternatively, you might choose to re-create developer cloud-hosted environments, for example, in the target project.
 
@@ -91,14 +92,28 @@ The Project migration manager utility performs several validations:
 - Project environments (Sandbox and Production) must all be on supported versions prior to scheduling migration.
 - At the time migration begins, all environments must be in a Deployed state.  Any other state will cancel the migration.
 - All migrations must be scheduled in the future.
+- Only one migration can be scheduled at a time.
 - Migration can be done for only some project types. For information about the supported project types, see the "Automated" row of the table earlier in this article.
 - A migration can be deleted or canceled only if it hasn't yet started.
+- Commerce is not available in all target geos.  If you have Commerce components enabled, your migration will not be scheduled if you're migrating to one of these target geos.  (Need list from Commerce team).
+
+### Before the migration starts
+
+Emails will be sent out to all Project Owners, indicating that a migration has been scheduled.  This will include the date when the migration will start.  During preview, emails may not be sent.
+
+Banners will also be shown across the source project that indicates an upcoming migration has been scheduled.  
+
+You may cancel the migration at any time up until it starts.
 
 ### During migration
 
 While the migration is in progress, a banner is shown across the source and target projects to indicate that they are participating in a migration. The projects are locked for changes until either the migration is successfully completed, or it fails and is rolled back.
 
 If there are any customization, service or quality updates scheduled during your migration, those updates will be automatically cancelled.
+
+### Post migration
+
+What do I do in source vs target?
 
 ## Frequently asked questions (FAQ)
 
@@ -122,6 +137,11 @@ This is not supported via the software.  You will need to open a support ticket 
 
 ### What happens if my migration is cancelled or is rolled back?
 
-Please open a support ticket and we will help you.
+Your source project will be unlocked, and you will receive an email notification that the migration has not completed successfully.  Please open a support ticket and we will help you.
+
+### I am a First Release customer today, will I still be First Release after migration?
+
+TBD
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+
