@@ -28,6 +28,7 @@ Currently, we support dual-write in the following regions:
 + Canada
 + Europe
 + France
++ Germany
 + India
 + Japan
 + South America
