@@ -2323,6 +2323,8 @@
           href: pim/tasks/create-product-master.md
         - name: Create predefined product variants
           href: pim/tasks/create-predefined-product-variants.md
+        - name: Show translated product names and descriptions in the UI
+          href: pim/show-translated-product-info.md
         - name: Manage units of measure
           href: pim/tasks/manage-unit-measure.md
         - name: Unit of measure conversion per product variant
