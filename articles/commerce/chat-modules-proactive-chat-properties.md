@@ -2,9 +2,9 @@
 # required metadata
 
 title: Commerce chat module proactive chat parameters 
-description: This article describes the proactive chat parameters used with Commerce chat modules in Microsoft Dynamics 365 Commerce.
+description: This article describes the proactive chat parameters of Commerce chat modules in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 10/12/2022
+ms.date: 10/13/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -18,7 +18,7 @@ ms.search.validFrom: 2022-07-20
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This article describes the proactive chat parameters used with the Commerce Chat with Omnichannel for Customer Service and Commerce Chat with Power Virtual Agents chat modules in Microsoft Dynamics 365 Commerce.
+This article describes the proactive chat parameters of the Commerce Chat with Omnichannel for Customer Service and Commerce Chat with Power Virtual Agents chat modules in Microsoft Dynamics 365 Commerce.
 
 ## Proactive chat properties
 
@@ -38,7 +38,7 @@ The proactive chat properties are located in the properties pane of the Commerce
 
 | Friendly name | Description |
 | ------------- |--------------|
-|  Wait time (sec)|  Time (in seconds) spent on  site apage before a proactive chat is triggered.| 
+|  Wait time (sec)|  Time (in seconds) spent on  a site page before a proactive chat is triggered.| 
 |  Chat greeting | Greeting message for when a proactive chat has been triggered.  | 
 
 ### Number of Page Visits (Proactive Chat)
@@ -59,14 +59,14 @@ The proactive chat properties are located in the properties pane of the Commerce
 
 | Friendly name | Description |
 | ------------- |--------------|
-|  Page(s)| List of pages that will trigger a proactive chat when users navigates away from them. | 
+|  Page(s)| List of pages that will trigger a proactive chat when users navigate away from them. | 
 |Chat greeting  | Greeting message for when a proactive chat has been triggered. | 
 
 ### Specific Country/Region (Proactive Chat)
 
 | Friendly name | Description |
 | ------------- |--------------|
-| Country code | User visiting from specified countries or regions will trigger a proactive chat. Country/region code should be 2-characters and uppercase (for example, US). | 
+| Country code | User visiting from specified countries or regions will trigger a proactive chat. Country/region code should be 2 characters and uppercase (for example, US). | 
 |  Chat greeting| Greeting message for when a proactive chat has been triggered. | 
 
 ### Date Range (Proactive Chat)
