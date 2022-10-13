@@ -1787,6 +1787,8 @@
           href: master-planning/planning-optimization/demand-forecast.md
         - name: Master planning with purchase trade agreements
           href: master-planning/planning-optimization/purchase-trade-agreement.md
+        - name: Plan based on quotations and RFQs
+          href: master-planning/planning-optimization/quotation-planning.md
         - name: Date and time parameters used by Planning Optimization
           href: master-planning/planning-optimization/date-time-used.md
         - name: Safety margins
