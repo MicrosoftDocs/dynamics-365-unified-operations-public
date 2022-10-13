@@ -53,7 +53,7 @@ Finance defines legal entities as organizations that are identified through regi
 
 Business units are used together with security roles to control data access. Users see only the information that they require to do their jobs. The Invoice capture solution provides a configuration space where you can load basic information from existing legal entities in Finance and manage those entities that are created manually. The legal entities are used on vendor invoices and in security control.
 
-When a legal entity is created and shown in the list view, a default business unit and team that have the same name are automatically created. The team is granted the **AP clerk** security role. When legal entities are imported, basic master data from Finance is imported. The nonexistent items will be identified by legal entity and will add them to the Invoice capture solution. The default configuration group is assigned to new legal entities.
+When a legal entity is created and shown in the list view, a default business unit that has the same name is automatically created. The team is granted the **AP clerk** security role. When legal entities are imported, basic master data from Finance is imported. The nonexistent items will be identified by legal entity and will add them to the Invoice capture solution. The default configuration group is assigned to new legal entities.
 
 ### Sync legal entities
 
