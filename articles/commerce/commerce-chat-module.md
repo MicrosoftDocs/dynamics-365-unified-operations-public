@@ -4,7 +4,7 @@
 title: Commerce Chat with Omnichannel for Customer Service module
 description: This article describes the Commerce Chat with Omnichannel for Customer Service module in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 10/12/2022
+ms.date: 10/13/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -132,3 +132,11 @@ To add context variables in Dynamics 365 Omnichannel for Customer Service, follo
 
 > [!NOTE]
 > If you want to read the email addresses and names of signed-in users from an e-commerce channel, you can add **Email** and **Name** as context variables of the **text** type, in addition to the **AccountNumber** context variable.
+
+## Additional resources
+
+[Commerce chat features overview](commerce-chat-overview.md)
+
+[Commerce Chat with Power Virtual Agents module](chat-module-pva.md)
+
+[Commerce chat module proactive chat parameters](chat-proactive-chat-parameters.md)
