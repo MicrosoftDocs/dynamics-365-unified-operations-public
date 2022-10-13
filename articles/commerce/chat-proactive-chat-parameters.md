@@ -100,3 +100,10 @@ The proactive chat properties are located in the properties pane of the Commerce
 | Product(s) ID/SKU | List of product IDs/SKU numbers that will trigger a proactive chat when users visit the cart page. | 
 | Chat greeting | Greeting message for when a proactive chat has been triggered. | 
 
+## Additional resources
+
+[Commerce chat features overview](commerce-chat-overview.md)
+
+[Commerce Chat with Omnichannel for Customer Service module](commerce-chat-module.md)
+
+[Commerce Chat with Power Virtual Agents module](chat-module-pva.md)
