@@ -39,7 +39,7 @@ To render the user interface (UI), Store Commerce uses the Chromium engine inste
 - Dedicated hardware station is supported.
 - Offline deployment is supported.
 
-To review the capabilities of the Store Commerce app, refer to the [Store Commerce app capabilities](../store-commerce-capabilities.md) article.
+To review the capabilities of the Store Commerce app, see [Store Commerce app capabilities](../store-commerce-capabilities.md).
 
 ## Application lifecycle management
 
