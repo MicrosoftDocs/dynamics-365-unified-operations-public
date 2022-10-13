@@ -43,7 +43,7 @@ a)	Register an application and add a client secret to Azure Active Directory (Az
 >[!NOTE] 
 > You will want to note the **Application (client) ID**, **Client secret**, and **Tenant ID** values. These values will be needed later.
 
-b)	Register the Azure application in a Dynamics 365 Finance environment. For instructions, see [Register your external application](.
+b)	Register the Azure application in a Dynamics 365 Finance environment. For instructions, see [Register your external application](../../dev-itpro/data-entities/services-home-page.md#register-your-external-application).
 
 ## Install and set up
 
@@ -57,16 +57,16 @@ Download the [assistant solution](https://github.com/InvoiceCapture/Installation
 
 To complete the setup, follow these steps:
 
-1.	In Power apps, go to your environment, and select **Import solution**.
+1.	In Power Apps, go to your environment, and select **Import solution**.
 2.	Click **Browse**, select the solution package provided and click **Next**.
 3.	Click **Next**.
 4.	Assign an existing connection or create a new one by clicking **+New connection**.
 5.	After successful import, open **Dynamics 365 Invoice capture – Installation Tools**.
 6.	Run the Cloud flow to set up the connection between **Invoice capture** in Power Platform and Dynamics 365 Finance. 
 7.	Click **Run** with the parameters below:
-    •	**Dynamics 365 Finance Url**: URL for Dynamics 365 Finance environment which you want to integrate with.  
-    •	**Tenant Id**: The tenant Id for the Dynamics 365 Finance environment.
-    •	**Client Id**: the Azure application Id that was registered
+    •	**Dynamics 365 Finance Url**: URL for Dynamics 365 Finance environment, which you want to integrate with.  
+    •	**Tenant ID**: The tenant ID for the Dynamics 365 Finance environment.
+    •	**Client ID**: the Azure application ID that was registered
     •	**Client Secret**: the client secret that was generated for the Azure application.
 
 
