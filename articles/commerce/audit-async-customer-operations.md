@@ -20,13 +20,11 @@ ms.search.validFrom: 2022-09-28
 
 This article explains how to audit synchronization of customer operations in Microsoft Dynamics 365 Commerce headquarters to help resolve any site user issues.
 
-As organizations start adopting the ability to create and edit customers asynchronously, site administrators want a way to view and troubleshoot operations based on site user requests or process failures. In those scenarios, site administrators should be able audit customer creation and edit operations and fix any failures using a self-serve model. 
+As organizations start adopting the ability to create and edit customers asynchronously, site administrators need a way to view and troubleshoot operations based on site user requests or process failures. In those scenarios, site administrators should be able audit customer creation and edit operations and fix any failures using a self-serve model. 
 
 ## Customer synchronization status
 
 When you opt in for the asynchronous mode of customer management and its corresponding features, Commerce headquarters administrators must create and schedule a recurring batch job for the **P-job**, the **Synchronize customers and business partners from async mode** job, and the **1010** job so that any async customers are converted to sync customers in Commerce headquarters. Synchronization of customer management operations occurs whenever these jobs are run. For more information, see [Asynchronous customer creation mode](async-customer-mode.md).
-
-To view a list of all synchronization operations, go to **Commerce and Retail \> Customers \> Customer synchronization status**.  
 
 As a business owner, you have the ability to do the following operations:
 
@@ -34,8 +32,14 @@ As a business owner, you have the ability to do the following operations:
 - Filter operations using any of the customer table fields and values to narrow down the audit log. 
 - View brief descriptions of changes along with the status details to understand operations at a high level.   
 - For failures, edit and fix problematic fields, and then save and synchronize specific customer operations. 
-	
-The customer synchronization operations list will show the following columns by default: 
+
+### Components of the Customer synchronization status page
+
+To view a list of all synchronization operations, in headquarters go to **Commerce and Retail \> Customers \> Customer synchronization status**. The following illustration shows an example of the **Customer synchronization status** page.
+
+![Customer synchronization status page in headquarters](media/D365-Commerce-Customer-Mgmt-Audi-Async-Operations.png)
+
+The customer synchronization operations list on the left side of the **Customer synchronization status** page displays the following columns by default: 
 
 - **Channel name**
 - **Customer account**
@@ -43,12 +47,10 @@ The customer synchronization operations list will show the following columns by 
 - **Operations timestamp**
 - **Customer sync status**
 
-The following table lists the sections of the **Customer synchronization status** page and their details. 
+The top right side of the **Customer synchronization status** page displays customer account details such as **Customer account**, **Retail async operation**, **Customer sync status**, and **Last known error**.
 
-| Section| Description  | 
-| ------------- |:--------------:|
-| General | Customer account details  |
-| Change description | Type of customer management operation (for example, customer creation, update to an account, or failure of synchronization with detail). |
-| Customer attributes | Shows table of all customer attributes name, old and new values. You can edit this section if you want to change your customer attribute values to fix bugs, and then synchronize again.  | 
+The **Change description** section contains a description of the type of customer management operation that ran (for example, customer creation, account update, or synchronization failure with detail).
 
-![Dynamics 365 Commerce Headquarters - Customer synchronization status report](media/D365-Commerce-Customer-Mgmt-Audi-Async-Operations.png)
+The **Customer attributes** section displays a table of all customer attributes, with columns for old and new values. You can edit this section if you want to change your customer attribute values to fix bugs, and then synchronize again.
+
+
