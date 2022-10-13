@@ -52,6 +52,15 @@ If you want to turn any of these features on or off, you must do so in [feature 
 | Transportation management | Generate data manually on voyage editor | This feature lets you manually generate data for the **Voyage editor** page as it's required. Because data is no longer generated each time that a filter value is changed, this feature helps improve system performance and the user experience.</p> |
 | Warehouse management | Location directive scopes | <p>This feature gives you more flexibility when you design location directives, and it helps reduce redundant configurations. It adds a **Scopes** option to the **Location directives** page. This option replaces the previous **Multiple SKU** option. Whereas the **Multiple SKU** option can be set only to *Yes* or *No*, the **Scopes** option provides not only those two settings (through the *Single item* and *Multiple items* values) but also two more (through the *Single item or order* and *All* values).</p><p>For more information, see [Work with location directives](../warehousing/create-location-directive.md).</p> |
 
+## New and updated documentation resources
+
+We have recently added or significantly updated the following help articles. These articles aren't necessarily related to the new features that were added for this release, as listed in the previous sections. However, they might help you get more out of existing features.
+
+| Feature area | New or updated articles |
+|---|---|
+| Master planning | [Master planning for products with limited shelf life](../master-planning/planning-optimization/shelf-life.md) |
+| Warehouse management | [Manually handle sales and transfer line picking exceptions](../warehousing/manual-order-line-picking-exception-handling.md) |
+
 ## Additional resources
 
 ### Platform updates for Finance and Operations apps
