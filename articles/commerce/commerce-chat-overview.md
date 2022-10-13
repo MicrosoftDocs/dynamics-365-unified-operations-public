@@ -2,9 +2,9 @@
 # required metadata
 
 title: Commerce Chat for online shoppers 
-description: This article provides an overview of the Commerce chat features available for online shoppers when Microsoft Dynamics 365 Omnichannel for Customer Service and Microsoft Power Virtual Agents are integrated with Microsoft Dynamics 365 Commerce e-commerce websites.
+description: This article provides an overview of the Commerce chat features available for online shoppers when the Microsoft Dynamics 365 Omnichannel for Customer Service and Microsoft Power Virtual Agents applications are integrated with Microsoft Dynamics 365 Commerce e-commerce sites.
 author: gvrmohanreddy
-ms.date: 10/12/2022
+ms.date: 10/13/2022
 ms.topic: overview
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -19,7 +19,7 @@ ms.search.validFrom: 2022-07-20
 [!include [banner](includes/banner.md)]
 [!include [banner](includes/preview-banner.md)]
 
-This article provides an overview of the Commerce chat features available for online shoppers when Microsoft Dynamics 365 Omnichannel for Customer Service and Microsoft Power Virtual Agents are integrated with Microsoft Dynamics 365 Commerce e-commerce websites.
+This article provides an overview of the Commerce chat features available for online shoppers when the Microsoft Dynamics 365 Omnichannel for Customer Service and Microsoft Power Virtual Agents applications are integrated with Microsoft Dynamics 365 Commerce e-commerce sites.
 
 Dynamics 365 Commerce e-commerce websites can be integrated with Omnichannel for Customer Service and Power Virtual Agents to enable businesses to empower their online shoppers with chat capabilities.
 
