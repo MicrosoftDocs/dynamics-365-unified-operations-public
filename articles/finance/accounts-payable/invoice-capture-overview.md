@@ -45,9 +45,9 @@ The evolution of artificial intelligence (AI) technology has enabled modern OCR 
 
 ## System landscape
 
-The following illustration shows the major components and steps in the Invoice capture solution .
+The following illustration shows the major components and steps in the Invoice capture solution.
 
-[![Components and steps in the Invoice capture solution.](./media/Invoice-capture2.png)](./media/Invoice-capture.png)
+[![Components and steps in the Invoice capture solution.](./media/Invoice-capture2.png)](./media/Invoice-capture2.png)
 
 ## Required roles
 
