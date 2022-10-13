@@ -2,7 +2,7 @@
 # required metadata
 
 title: Invoice capture solution dashboard
-description: This article explains the Invoice capture solution dashboard.
+description: This article describes the Invoice capture solution dashboard.
 author: sunfzam
 ms.date: 10/15/2022
 ms.topic: overview
@@ -32,30 +32,28 @@ ms.dyn365.ops.version:
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-Dashboard provides an overview of the captured invoices with different charts. AP manager may see the high-level invoice process status and then drill down into 
-detailed view by applying different filtering condition. This helps AP manager to better analysis the performance of invoice process. 
+In Invoice capture, the **Dashboard** provides an overview of invoices that have been imported. The Accounts Payable manager can see the status of the invoice process. The AP manager can view details by applying different filters. These charts can help the AP manager analyze the performance of the invoice generation process. 
 
-## Dashboard charts
+## Charts available on the Dashboard: 
 
-1.	All captured invoice by status:
-The chart shows the distribution of statuses for the captured invoice (Captured, Complete, In review, Obsoleted). User is able to quick navigate to the detailed list 
-by clicking icon  , and by selecting the corresponding status to filter the captured invoices.
+ - **All captured invoice by status**
+This chart displays the following statuses for the captured invoice:
+**Captured** 
+**Complete** 
+**In review** 
+**Obsoleted** 
 
-2.	Total captured invoice volume
-The chart displays the number of captured invoices by the time granularity. User is able to switch the time-period by clicking the drop down of the view. 
+Users can select a status to filter the captured invoices in the detailed list.
 
-3.	Captured invoice from top vendors
-The chart displays the total number of invoices for the vendors. The vendors with biggest invoice volume will be displayed on the top. By clicking the , it will 
-navigate to the captured invoice list. By clicking the bar, the captured invoices list will be filtered and displayed. 
+ - **Total captured invoice volume**
+This chart displays the number of captured invoices by time period. Users are able to change the time period by clicking the drop-down. 
 
-4.	Days to complete per invoice with exceptions
-The chart shows the average time by days to complete one captured invoice. This helps AP manager to check the trend of the time to process the invoice with manual 
-intervention. In case the trend goes higher, AP manager needs to check the details and adjust the settings to make the improvement. 
+ - **Captured invoice from top vendors**
+This chart displays the total number of invoices per vendor. The vendors with largest number of invoices will be displayed on the top. 
 
-5.	Incomplete invoices by pending time
-The chart shows the pending days that captured invoice hasn’t yet been successfully generated in the ERP system. The larger the pending days, the more attention is 
-acquired from AP manager. AP manager needs to drill down into the detailed captured invoices and take some action to make the invoice to be generated successfully in 
-ERP system. 
+ - **Days to complete per invoice with exceptions**
+This chart displays the average number of days needed to capture one invoice. This helps the AP manager analyze the time to process an invoice with manual intervention. If there's an upward trend, users can check the process details and adjust settings to improve the days to complete. 
 
->[!NOTE]
-> Only the accounts payable clerk can access the Invoice capture dashboard.
+ - **Incomplete invoices by pending time**
+This chart displays the number of days that a captured invoice hasn’t been generated in the ERP system. The larger the number of pending days, the longer the invoice generation process. The AP manager can drill into the detailed captured invoices and generate invoices in the ERP system. 
+
