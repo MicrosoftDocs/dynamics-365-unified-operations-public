@@ -21,13 +21,13 @@ ms.search.form:
 # Retail discounts
 
 [!include [banner](includes/banner.md)]
-
+[!include [banner](includes/preview-banner.md)]
 
 This article provides an overview of the discount functionality in the Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management. However, this article doesn't cover the various discount types in detail, for example, simple, quantity, mix and match, and threshold discounts. These details will be covered in separate articles created for each of these discount types.
 
 Because retailers require flexible discounting, and discount styles and types vary by industry, there are many ways to define discounts in Commerce. The discounting functionality was added on top of the existing discount functionality in the core product (Supply Chain Management), resulting in some duplication of functionality. As a result, the discount types can be configured for five different entities: customer, loyalty program, channel, catalog, and affiliations. Because of the number of discounting options, it's especially important that you plan and document your discounting strategy.
 
-## Creating discounts
+## Create discounts
 
 Each discount type has a dedicated page that you use to create and manage the discount. Commerce also has an **All discounts** page and a **Pricing and discounts management** workspace, both of which you can use to create a new discount of any type.
 
@@ -40,7 +40,7 @@ When you create discounts, we recommend that you always avoid or minimize overla
 > [!NOTE]
 > When the number of lines in a single discount reaches a few thousand, users may experience performance issues when enabling discounts with quantity limits, or enabling discounts with both include and exclude lines. Users may also see performance degradation to a much lesser degree in pricing calculation for call center and POS orders. To avoid these performance issues, you can instead create a single category that contains all of the discounted products, and then create a discount line using the category.
 
-## Managing discounts
+## Manage discounts
 
 ### Settings and options that are common to all discounts
 
@@ -111,6 +111,7 @@ When **Coupon code required** is set to **Yes** on a discount, the discount is a
 These two fields work together. When **Override priority** is set to **Yes** , the **Pricing priority** field becomes available for editing. You can then select a pricing priority to set directly on the discount. When **Override priority** is set to **No** , the priority is inherited from the priority of the price group associated with the discount. In the case of multiple price groups association, the priority number is determined by selecting the highest pricing priority of all the price groups associated with the discount.
 
 ### Match all associated price groups
+
 In Commerce version 10.0.16 and later, a configuration called **Match all associated price groups** is available on all discount forms. If the configuration is enabled, the discount will be considered only if all the price groups associated to the discount are applicable to the transaction. For example, if the two price groups named "PG-Student" (price group for student affiliation) and "RP-Houston" (price group for the Houston store) are associated to a discount, and **Match all associated price groups** is enabled, the discount will be considered only for students who are shopping in the Houston store. This configuration provides a way to restrict affiliation and loyalty-based discounts to limited stores.
 
 > [!NOTE]
