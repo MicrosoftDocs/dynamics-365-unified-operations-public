@@ -30,7 +30,9 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
-
+| Dynamics 365 Payment Connector for Adyen | [Enable Apple Pay with Dynamics 365 Payment Connector for Adyen](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-apple-pay-dynamics-365-payment-connector-adyen)  | E-commerce customers can use Apple Pay on cart and checkout pages when using supported devices or browsers. | Developer opt-in |
+| Dynamics 365 Payment Connector for Adyen | [Enable Google Pay with Dynamics 365 Payment Connector for Adyen](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/enable-google-pay-dynamics-365-payment-connector-adyen)  | E-commerce customers can use Google Pay on cart and checkout pages that are configured with the express checkout module.<p>[Configure Google Pay with Adyen](../dev-itpro/google-pay-adyen.md) | Developer opt-in |
+| POS | [Create purchase orders from POS](/dynamics365-release-plan/2022wave2/commerce/dynamics365-commerce/create-purchase-orders-pos)  |  Improved inbound inventory operation in point of sale (POS) app to allow users create, edit and confirm purchase order requests. |  Feature management<p>*Ability to create purchase order request in POS*   |
 
 
 
@@ -38,11 +40,12 @@ The following table lists the features that are included in this release. We mig
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.31 includes platform updates. To learn more, see [Platform updates for version 10.0.31 of Finance and Operations apps (February 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-31.md). <!--KFM: Confirm link -->
+Microsoft Dynamics 365 Commerce 10.0.31 includes platform updates. To learn more, see [Platform updates for version 10.0.31 of Finance and Operations apps (February 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-31.md). 
+  
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.29, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=745468).
+For information about the bug fixes included in each of the updates that are part of version 10.0.31, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=745468).
 
 ### Dynamics 365 and industry clouds: 2022 release wave 2 plan
 
@@ -50,7 +53,7 @@ Wondering about upcoming and recently released capabilities in any of our busine
 
 Check out the [Dynamics 365 and industry clouds: 2022 release wave 2 plan](/dynamics365-release-plan/2022wave2/). We've captured all the details, end to end, top to bottom, in a single document that you can use for planning.
 
-### Removed and deprecated Supply Chain Management features
+### Removed and deprecated Commerce features
 
 The [Removed or deprecated features in Dynamics 365 Commerce](removed-deprecated-features-commerce.md) article describes features that have been removed or deprecated for Commerce.
 
