@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!INCLUDE [PEAP](../includes/peap-1.md)]
 
-In versions prior to Dynamics 365 Human Resource 10.0.30, when editing a task, the users would need to go to each checklist that contained the task and update the tasks individually.
+In versions prior to Dynamics 365 Human Resources 10.0.30, when editing a task, the users would need to go to each checklist that contained the task and update the tasks individually.
 
 Beginning in Dynamics 365 Human Resources version 10.0.30, users can select to how edited tasks are handled. When a task is edited and the task is in a checklist, for the checklist to use the edited task, the **Enable task management upgrade** option must be selected on the **Human resources shared parameters** page. 
 
