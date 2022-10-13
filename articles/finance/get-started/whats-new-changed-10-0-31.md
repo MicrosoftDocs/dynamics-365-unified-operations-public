@@ -4,7 +4,7 @@
 title: What's new or changed in Dynamics 365 Finance 10.0.31 (January 2023)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Finance version 10.0.31 preview release.
 author: kfend
-ms.date: 10/06/2022
+ms.date: 10/13/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,8 +45,8 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |--------------|---------|------------------|------------|
-| Tax Calculation             |Update tax exempt number from customer address         | This feature will automatically update "Tax exempt number" field on sales order and free text invoice header based on the selected customer address. User can turn on this feature using parameter "Update tax exempt number from customer address" from "Tax Calculation Parameters"  when Tax Calculation service is enabled.               | Parameter           |
-| General ledger     | Automate ledger settlements process       |  The automation of Ledger settlement uses the Process automation framework to define matching rules, along with the schedule for when the rules will be run. Users can define matching criteria such as Posting type and Financial dimensions.  |  Feature management          |
+| Tax Calculation    | Update tax exempt number from customer address   | This feature automatically updates the **Tax exempt number** field on the sales order and free text invoice header based on the selected customer address. You can enable this feature using the parameter **Update tax exempt number from customer address** on the **Tax Calculation Parameters** page when the Tax Calculation service is enabled. | Parameter  |
+| General ledger | Automate ledger settlements process  |  The automation of Ledger settlement uses the Process automation framework to define matching rules, along with the schedule for when the rules will be run. You can define matching criteria such as Posting type and Financial dimensions.  |  Feature management  |
 
 
 ## Feature enhancements included in this release
