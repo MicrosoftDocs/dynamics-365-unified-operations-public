@@ -33,7 +33,7 @@ As a business owner, you have the ability to do the following operations:
 - View brief descriptions of changes along with the status details to understand operations at a high level.   
 - For failures, edit and fix problematic fields, and then save and synchronize specific customer operations. 
 
-### Components of the Customer synchronization status page
+### Customer synchronization status page elements 
 
 To view a list of all synchronization operations, in headquarters go to **Commerce and Retail \> Customers \> Customer synchronization status**. The following illustration shows an example of the **Customer synchronization status** page.
 
