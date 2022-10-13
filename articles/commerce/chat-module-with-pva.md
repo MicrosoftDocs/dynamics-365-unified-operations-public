@@ -61,9 +61,17 @@ To add the chat module to your site's header fragment in Commerce site builder, 
 
 ## Proactive chat parameters
 
-For a complete list of proactive chat configuration parameters, see [Proactive chat parameters](/chat-modules-proactive-chat-properties.md).
-
-<!--![Dynamics 365 Commerce Site Builder - Commerce Chat with PVA](media/Commerce-chat-with-pva-creating-new-fragment.png)-->
+For a complete list of proactive chat configuration parameters, see [Commerce chat module proactive chat parameters](chat-proactive-chat-parameters.md).
 
 > [!NOTE] 
-> Currently, Power Virtual Agents doesn't support Azure Active Directory business-to-consumer (B2C) authentication. Only anonymous Retail Cloud Scale Unit (RCSU) calls to get product availability or interact with other anonymous APIs are supported. Calling authenticated APIs via Power Virtual Agents chatbots requires an explicit sign-in. 
+> Currently, Power Virtual Agents doesn't support Azure Active Directory business-to-consumer (B2C) authentication. Only anonymous Retail Cloud Scale Unit (RCSU) calls to get product availability or interact with other anonymous APIs are supported. Calling authenticated APIs via Power Virtual Agents chatbots requires an explicit customer sign-in. 
+
+## Additional resources
+
+[Commerce chat features overview](commerce-chat-overview.md)
+
+[Commerce Chat with Omnichannel for Customer Service module](commerce-chat-module.md)
+
+[Commerce chat module proactive chat parameters](chat-proactive-chat-parameters.md)
+
+
