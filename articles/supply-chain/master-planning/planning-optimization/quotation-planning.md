@@ -55,7 +55,7 @@ Use the following procedure to assign a probability to an opportunity and then c
 The only way to view the probability that is assigned to a quotation is to open the opportunity that was used to create that quotation, as described in the following procedure.
 
 1. Go to **Sales and marketing \> Sales quotations \> All quotations**.
-1. If the **Opportunity ID** column isn't shown (it's hidden in a default installation), follow these steps to temporarily show it. (Alternatively, to keep the **Opportunity ID** column available, create a [saved view](../../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json) that includes it.)
+1. If the **Opportunity ID** column isn't shown (it's hidden in a default installation), follow these steps to temporarily show it. (Alternatively, to keep the **Opportunity ID** column available, create a [saved view](../../../fin-ops-core/fin-ops/get-started/saved-views.md?toc=/dynamics365/supply-chain/toc.json) that includes it.)
 
     1. Select and hold (or right-click) in the grid, and then select **Insert columns**.
     1. In the **Insert columns** dialog box, find the row where the **Field** field is set to *Opportunity*, and select the **Select** checkbox for that row.
