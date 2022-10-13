@@ -20,11 +20,11 @@ ms.search.validFrom: 2022-09-28
 
 This article explains how to audit synchronization of customer operations in Microsoft Dynamics 365 Commerce headquarters to help resolve any site user issues.
 
-As organizations start adopting the ability to create and edit customers asynchronously, they want a way to view all the operations and troubleshoot any operations based on site user requests or process failures. In those scenarios, you should be able audit customer creation and edit operations and fix any failures using a self-serve model. 
+As organizations start adopting the ability to create and edit customers asynchronously, site administrators want a way to view and troubleshoot operations based on site user requests or process failures. In those scenarios, site administrators should be able audit customer creation and edit operations and fix any failures using a self-serve model. 
 
 ## Customer synchronization status
 
-When you opt in for the asynchronous mode of customer management and its corresponding features, Commerce headquarters administrators must create and schedule a recurring batch job for the **P-job**, the **Synchronize customers and business partners from async mode** job, and the **1010** job so that any async customers are converted to sync customers in Commerce headquarters. Synchronization of customer management operations occurs whenever these jobs are run. For kore information, see [Asynchronous customer creation mode](async-customer-mode.md).
+When you opt in for the asynchronous mode of customer management and its corresponding features, Commerce headquarters administrators must create and schedule a recurring batch job for the **P-job**, the **Synchronize customers and business partners from async mode** job, and the **1010** job so that any async customers are converted to sync customers in Commerce headquarters. Synchronization of customer management operations occurs whenever these jobs are run. For more information, see [Asynchronous customer creation mode](async-customer-mode.md).
 
 To view a list of all synchronization operations, go to **Commerce and Retail \> Customers \> Customer synchronization status**.  
 
