@@ -81,7 +81,7 @@ To add the chat module to your site's header fragment in Commerce site builder, 
 1. Select **Save**, select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
 > [!NOTE]
-> For a complete list of configuration parameters, see [Commerce Chat with Omnichannel for Customer Service additional parameters](/omnichannel-chat-module-properties.md).
+> For a complete list of configuration parameters, see [Commerce chat module proactive chat parameters](chat-proactive-chat-parameters.md).
 
 ## Add Commerce headquarters as an application tab for Omnichannel for Customer Service
 
