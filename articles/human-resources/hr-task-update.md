@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Task management update
-description: This article explains the task management update that is available in Microsoft Dynamics 365 Human Resources.
+title: Set up tasks in Task management 
+description: This article explains how to set up tasks in Task management that is available in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 10/12/2022
 ms.topic: article
@@ -27,13 +27,13 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Task management update
+# Set up tasks in Task management 
 
 [!INCLUDE [PEAP](../includes/peap-1.md)]
 
 You can create tasks individually and then reuse them in multiple checklists. To create a task, on the **Onboarding setup** page, on the **Tasks** tab, select **New**.
 
-## Setting up tasks
+## Set up tasks
 
 You can select a created task and assign it to multiple checklists by selecting **Apply to checklists** from the menu.
 
