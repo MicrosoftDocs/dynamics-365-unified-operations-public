@@ -43,7 +43,7 @@ Use the following procedure to assign a probability to an opportunity and then c
 
 1. Go to **Sales and marketing \> Relationships \> Opportunities \> All opportunities**.
 1. Select an existing opportunity, or select **New** on the Action Pane to create a new one.
-1. Fill in the opportunity page to identify the opportunity as you want. Be sure to set the **Probability** field to an appropriate value. Only master plans that are set up to look for probabilities of this value or lower will consider quotations that are generated from this opportunity.
+1. Fill in the opportunity page to identify the opportunity as you want. Be sure to set the **Probability** field to an appropriate value. Only master plans that are set up to look for probabilities of this value or higher will consider quotations that are generated from this opportunity.
 1. On the Action Pane, select **Save**.
 1. On the Action Pane, on the **Opportunity** tab, in the **New** group, select **Sales quotation** or **Project quotation**, depending on the type of quotation that you want to create.
 1. In the **Create quotation** dialog box, set the fields as you require, and then select **OK**.
