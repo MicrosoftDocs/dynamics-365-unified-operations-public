@@ -47,6 +47,7 @@ You can select a created task and assign it to multiple checklists by selecting 
 
 Alternatively, you can add tasks directly to a checklist. To add a task to a checklist, on the **Onboarding setup** page, on the **Checklist** tab, either create a new checklist to add the task to, or add the task to an existing checklist.
 
+
 To edit a library task, select **Edit** from the task library menu. If the task is associated to any checklists, those checklists will display in the **Edit task** page. If you would like the tasks in the checklists to be updated with the edits, select the checklists where the task should be updated in the **Apply to checklists** section.
 
 To delete tasks from the library select **Delete**. If the task is in an associated checklist, this action won't delete the task from the checklist. The task must be removed from the checklist in a separate action.
