@@ -38,3 +38,10 @@ For information on integrating a Dynamics 365 Commerce e-commerce website with P
 > [!NOTE] 
 > Power Virtual Agents is already included in Omnichannel for Customer Service. If you need both virtual agent (chatbot) and live agent capabilities, use Omnichannel for Customer Service. 
 
+## Additional resources
+
+[Commerce Chat with Omnichannel for Customer Service module](commerce-chat-module.md)
+
+[Commerce Chat with Power Virtual Agents module](chat-module-pva.md)
+
+[Commerce chat module proactive chat parameters](chat-proactive-chat-parameters.md)
