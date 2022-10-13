@@ -38,17 +38,17 @@ ms.dyn365.ops.version:
 ## Prerequisites
 
 Prerequisites for installing Invoice capture solution:
-a)	Register an application and add a client secret to Azure Active Directory (Azure AD) under your Azure subscription. For instructions, see [Register a web application with AAD](../../dev-itpro/data-entities/services-home-page.md#register-a-web-application-with-aad). 
+a)	Register an application and add a client secret to Azure Active Directory (Azure AD) under your Azure subscription. For more information, see [Register a web application with AAD](../../dev-itpro/data-entities/services-home-page.md#register-a-web-application-with-aad). 
 
 >[!NOTE] 
 > You will want to note the **Application (client) ID**, **Client secret**, and **Tenant ID** values. These values will be needed later.
 
-b)	Register the Azure application in a Dynamics 365 Finance environment. For instructions, see [Register your external application](../../dev-itpro/data-entities/services-home-page.md#register-your-external-application).
+b)	Register the Azure application in a Dynamics 365 Finance environment. For more information, see [Register your external application](../../dev-itpro/data-entities/services-home-page.md#register-your-external-application).
 
 ## Install and set up
 
 Go to AppSource and select the link for preview version of [Dynamics 365 Invoice capture](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dynamics365-invoice-capture-preview?flightCodes=invoicecapture). 
-Once the installation is completed, you will see the solution installed in selected environment in Power Apps.
+Once the installation is completed, you'll see the solution installed in selected environment in Power Apps.
 
 Download the [assistant solution](https://github.com/InvoiceCapture/InstallationTools/releases/download/latest/msdyn_InvoiceCaptureIntallationTools.zip) to set up the following:
 
@@ -66,7 +66,7 @@ To complete the setup, follow these steps:
 7.	Click **Run** with the parameters below:
     •	**Dynamics 365 Finance Url**: URL for Dynamics 365 Finance environment, which you want to integrate with.  
     •	**Tenant ID**: The tenant ID for the Dynamics 365 Finance environment.
-    •	**Client ID**: the Azure application ID that was registered
+    •	**Client ID**: the Azure application ID that was registered.
     •	**Client Secret**: the client secret that was generated for the Azure application.
 
 
