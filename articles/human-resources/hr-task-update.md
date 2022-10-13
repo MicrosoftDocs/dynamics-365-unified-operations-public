@@ -31,13 +31,13 @@ ms.dyn365.ops.version: Human Resources
 
 [!INCLUDE [PEAP](../includes/peap-1.md)]
 
-In versions prior to Dynamics 365 Human Resource 10.0.30, when updating a task, the users would need to go to each checklist that contained the task and update the tasks individually.
+In versions prior to Dynamics 365 Human Resource 10.0.30, when editing a task, the users would need to go to each checklist that contained the task and update the tasks individually.
 
-Beginning in Dynamics 365 Human Resources version 10.0.30, users can select to update how tasks are handled. When a user edits a task and the task is in a checklist, for the checklist to use the updated task, the **Enable task management upgrade** option must be selected on the **Human resources shared parameters** page. 
+Beginning in Dynamics 365 Human Resources version 10.0.30, users can select to how edited tasks are handled. When a task is edited and the task is in a checklist, for the checklist to use the edited task, the **Enable task management upgrade** option must be selected on the **Human resources shared parameters** page. 
 
 [![Human resources shared parameters.](./media/task-update.png)](./media/task-update.png)
 
-Edits to tasks to be applied to all associated checklist tasks, a relationship must already exist between the task in the task library and the task in the checklist.  An option was added to create the relationship between the library task and the checklist task.
+If edits to tasks should be applied to all associated checklist tasks, a relationship must already exist between the task in the task library and the task in the checklist.  An option was added to create the relationship between the library task and the checklist task.
 
 You can create tasks individually and then reuse them in multiple checklists. To create a task, on the **Onboarding setup** page, on the **Tasks** tab, select **New**.
 
