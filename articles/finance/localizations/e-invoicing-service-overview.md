@@ -56,7 +56,7 @@ Electronic invoicing is deployed in the following Azure geographies:
 - France
 - India
 - Norway
-- New Zealand
+- South Africa
 
 > [!NOTE]
 > Electronic invoicing doesn't support on-premises deployments.
