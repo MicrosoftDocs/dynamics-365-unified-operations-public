@@ -40,7 +40,7 @@ To manage configuration groups by using the app, go to **Setup**, and then selec
 
 On the **Define configuration groups** page, the main tab shows the list of configuration groups that have been defined. It also shows a default configuration group. For each configuration group, the following actions are available:
 
-- **Duplicate a configuration group** – You can create a new configuration group by duplicating an existing group. The new group has the same values as the original group for all the fields except **Group name** and **Group description**. After the configuration group is duplicated, select **OK**.
+- **Copy a configuration group** – You can create a new configuration group by duplicating an existing group. The new group has the same values as the original group for all the fields except **Group name** and **Group description**. After the configuration group is duplicated, select **OK**.
 - **Delete configuration groups** – To delete a configuration group, select it, and then select **Delete**.
 
     > [!NOTE]
@@ -71,7 +71,7 @@ On the **Define configuration groups** page, the main tab shows the list of conf
 
 Manage file filters lets users define additional filters for incoming invoice files. Files that don't meet the filter criteria will be received and will appear in the **Received files** list, but they will show file validation errors. This behavior differs from the behavior for filters that are defined in the channel. For those filters, files that don't meet the criteria won't be received at all. Users can review the incoming files and decide whether each file is a non-valid invoice, and they can obsolete the file or manually include it for recognition and inclusion in captured invoices.
 
-When the Invoice capture solution is installed, a default file filter is defined. This file filter is global. If you want different filter settings, you can update the default filter.
+When the Invoice capture solution is installed, a default file filter is defined. This file filter is global. If you want different filter settings, you can update the default filter. If a field is mandatory, select **Required**. 
 
 ### Accepted file size
 
