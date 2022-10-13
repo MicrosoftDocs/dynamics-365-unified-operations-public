@@ -46,5 +46,5 @@ Ensure that the following actions have been performed in the order that they are
 
 ### How do I know which customer management in asynchronous mode operation has failed, and how do I make changes, if needed?
 
-To view all synchronization operations and their synchronization statuses, in headquarters go to **Commerce and Retail \> Customers \> Customer synchronization status**. To make changes, edit a specific operation, update the fields, select **Save**, and then select **Synchronize** to sync the changes. 
+To view all asynchronous mode operations and their synchronization statuses, in headquarters go to **Commerce and Retail \> Customers \> Customer synchronization status**. To make changes, edit a specific operation, update the fields, select **Save**, and then select **Synchronize** to sync the changes. 
 
