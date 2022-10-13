@@ -4,7 +4,7 @@
 title: Asynchronous customer creation mode FAQ
 description: This article provides answers to frequently asked questions about asynchronous customer creation mode in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 08/04/2022
+ms.date: 10/13/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -44,7 +44,7 @@ Ensure that the following actions have been performed in the order that they are
 1. Run the CDX P-job in Commerce headquarters to ensure that async customer data that is stored in the **RETAILASYNCCUSTOMERV2**, **RETAILASYNCADDRESSV2**, **RETAILASYNCCUSTOMERCONTACT**, **RETAILASYNCCUSTOMERAFFILIATION**, and **RETAILASYNCCUSTOMERATTRIBUTEV2** tables is available in Commerce headquarters.
 1. Run the **Synchronize customers and channel requests** batch job in Commerce headquarters. After successful execution of the batch job, all records that have been successfully processed from the previously mentioned tables will have the **OnlineOperationCompleted** field set to **1**.
 
-### How do I know which operation of customer management in asynchronous mode has failed and make changes, if needed?
+### How do I know which customer management in asynchronous mode operation has failed, and how do I make changes, if needed?
 
-You can view all synchronization operations list along with their synchronization status on **Customer synchronization status** page under **Commerce & Retail > Customers** section. You can also edit a specific operation and make changes to the fields, **Save**, and then **Synchronize** the change into Headquarters. 
+To view all synchronization operations and their synchronization statuses, in headquarters go to **Commerce and Retail \> Customers \> Customer synchronization status**. To make changes, edit a specific operation, update the fields, select **Save**, and then select **Synchronize** to sync the changes. 
 
