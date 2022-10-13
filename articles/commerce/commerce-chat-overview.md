@@ -33,7 +33,7 @@ For information on integrating a Dynamics 365 Commerce e-commerce website with O
 
 Power Virtual Agents lets you create powerful AI-powered chatbots for a range of requests. For more information about Power Virtual Agents, see [Power Virtual Agents overview](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
 
-For information on integrating a Dynamics 365 Commerce e-commerce website with Power Virtual Agents, see [Commerce chat with Microsoft Power Virtual Agents](chat-module-with-pva.md). 
+For information on integrating a Dynamics 365 Commerce e-commerce website with Power Virtual Agents, see [Commerce chat with Microsoft Power Virtual Agents](chat-module-pva.md). 
 
 > [!NOTE] 
 > Power Virtual Agents is already included in Omnichannel for Customer Service. If you need both virtual agent (chatbot) and live agent capabilities, use Omnichannel for Customer Service. 
