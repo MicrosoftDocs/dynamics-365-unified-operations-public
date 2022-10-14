@@ -183,4 +183,3 @@ Planning Optimization doesn't use the following parameter on the **Batch disposi
 
   - **Nettable** – Pending *Batch disposition codes* support.
  
-<!-- KFM: Now available? [Use batch disposition codes to mark batches as available or unavailable](../../inventory/batch-disposition-codes.md) --> 
