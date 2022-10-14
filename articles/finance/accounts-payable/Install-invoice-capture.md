@@ -2,7 +2,7 @@
 # required metadata
 
 title: Install the Invoice capture solution
-description: This article provides information about how to install the Invoice capture solution with integration to Microsoft Dynamics 365 Finance.
+description: This article provides information about how to install the Invoice capture solution and integrate it with Microsoft Dynamics 365 Finance.
 author: sunfzam
 ms.date: 09/25/2022
 ms.topic: overview
@@ -37,36 +37,35 @@ ms.dyn365.ops.version:
 
 ## Prerequisites
 
-Prerequisites for installing Invoice capture solution:
-a)	Register an application and add a client secret to Azure Active Directory (Azure AD) under your Azure subscription. For more information, see [Register a web application with AAD](../../dev-itpro/data-entities/services-home-page.md#register-a-web-application-with-aad). 
+Before you can install the Invoice capture solution, you must complete the following prerequisites:
 
->[!NOTE] 
-> You will want to note the **Application (client) ID**, **Client secret**, and **Tenant ID** values. These values will be needed later.
+1. Register an application, and add a client secret to Microsoft Azure Active Directory (Azure AD) under your Azure subscription. For more information, see [Register a web application with AAD](../../dev-itpro/data-entities/services-home-page.md#register-a-web-application-with-aad).
 
-b)	Register the Azure application in a Dynamics 365 Finance environment. For more information, see [Register your external application](../../dev-itpro/data-entities/services-home-page.md#register-your-external-application).
+    > [!NOTE]
+    > Make a note of the **Application (client) ID**, **Client secret**, and **Tenant ID** values, because you will need them later.
 
-## Install and set up
+2. Register the Azure application in a Dynamics 365 Finance environment. For more information, see [Register your external application](../../dev-itpro/data-entities/services-home-page.md#register-your-external-application).
 
-Go to AppSource and select the link for preview version of [Dynamics 365 Invoice capture](https://appsource.microsoft.com/en-us/product/dynamics-365/mscrm.dynamics365-invoice-capture-preview?flightCodes=invoicecapture). 
-Once the installation is completed, you'll see the solution installed in selected environment in Power Apps.
+## Install and set up the solution
 
+To install the Invoice capture solution, go to AppSource, and select the link for the preview version of [Dynamics 365 Invoice capture](https://appsource.microsoft.com/product/dynamics-365/mscrm.dynamics365-invoice-capture-preview?flightCodes=invoicecapture). After the installation is completed, you will see the solution installed in the selected environment in Power Apps.
 
-To complete the setup, follow these steps:
+To complete the setup, follow these steps.
 
-1.	Download the [assistant solution](https://github.com/InvoiceCapture/InstallationTools/releases/download/latest/msdyn_InvoiceCaptureIntallationTools.zip) to set up the following:
--	Set up the communication between Power Platform and Dynamics 365 Finance environment
--	Set up connection reference for Dataverse and Office 365 Outlook that will be used by the channel
+1. Download the [assistant solution](https://github.com/InvoiceCapture/InstallationTools/releases/download/latest/msdyn_InvoiceCaptureIntallationTools.zip) to set up the following details:
 
-2.	In Power Apps, go to your environment, and select **Import solution**.
-3.	Click **Browse**, select the assistant solution package downloaded and click **Next**.
-4.	Click **Next**.
-5.	Assign an existing connection or create a new one by clicking **+New connection**.
-6.	After successful import, open **Dynamics 365 Invoice capture – Installation Tools**.
-7.	Run the Cloud flow to set up the connection between **Invoice capture** in Power Platform and Dynamics 365 Finance. 
-8.	Click **Run** with the parameters below:
- - **Dynamics 365 Finance Url**: URL for Dynamics 365 Finance environment, which you want to integrate with.  
- - **Tenant ID**: The tenant ID for the Dynamics 365 Finance environment.
- - **Client ID**: the Azure application ID that was registered.
- - **Client Secret**: the client secret that was generated for the Azure application.
+    - The communication between Microsoft Power Platform and the Finance environment
+    - The connection reference for Dataverse and Office 365 Outlook that will be used by the channel
 
+2. In Power Apps, go to your environment, and select **Import solution**.
+3. Select **Browse**, select the assistant solution package that you downloaded, and then select **Next**.
+4. Select **Next**.
+5. Assign an existing connection, or create a new one by selecting **New connection**.
+6. After the package is successfully imported, open **Dynamics 365 Invoice capture – Installation Tools**.
+7. Run the Cloud flow to set up the connection between **Invoice capture** in Microsoft Power Platform and Finance.
+8. Select **Run**, and specify the following parameters:
 
+    - **Dynamics 365 Finance Url** – The URL of the Finance environment that you want to integrate with.
+    - **Tenant ID** – The tenant ID for the Finance environment.
+    - **Client ID** – The Azure application ID that was registered.
+    - **Client Secret** – The client secret that was generated for the Azure application.
