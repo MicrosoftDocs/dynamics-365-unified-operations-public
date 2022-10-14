@@ -62,7 +62,7 @@ To complete the setup, follow these steps.
 4. Select **Next**.
 5. Assign an existing connection, or create a new one by selecting **New connection**.
 6. After the package is successfully imported, open **Dynamics 365 Invoice capture – Installation Tools**.
-7. Run the Cloud flow to set up the connection between **Invoice capture** in Microsoft Power Platform and Finance.
+7. Run the Cloud flow to set up the connection between the Invoice capture solution in Microsoft Power Platform and Finance.
 8. Select **Run**, and specify the following parameters:
 
     - **Dynamics 365 Finance Url** – The URL of the Finance environment that you want to integrate with.
