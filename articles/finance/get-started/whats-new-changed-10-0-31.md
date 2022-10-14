@@ -45,9 +45,8 @@ The following table lists the features that are included in this release. We mig
 
 | Feature area | Feature | More information | Enabled by |
 |--------------|---------|------------------|------------|
-| Tax Calculation    | Update tax exempt number from customer address   | This feature automatically updates the **Tax exempt number** field on the sales order and free text invoice header based on the selected customer address. You can enable this feature using the parameter **Update tax exempt number from customer address** on the **Tax Calculation Parameters** page when the Tax Calculation service is enabled. | Parameter  |
-| General ledger | Automate ledger settlements process  |  The automation of Ledger settlement uses the Process automation framework to define matching rules, along with the schedule for when the rules will be run. You can define matching criteria such as Posting type and Financial dimensions.  |  Feature management  |
-
+| Tax Calculation | Update tax exempt number from customer address | This feature automatically updates the **Tax exempt number** field on the sales order and free text invoice header, based on the customer address that is selected. You can enable this feature by using the **Update tax exempt number from customer address** parameter on the **Tax Calculation parameters** page when the Tax Calculation service is enabled. | Parameter |
+| General ledger | Automate ledger settlements process | The automation of ledger settlement uses the Process automation framework to define matching rules and the schedule that they will be run on. You can define matching criteria such as the posting type and financial dimensions. | Feature management |
 
 ## Feature enhancements included in this release
 
@@ -55,13 +54,13 @@ The following table lists the feature enhancements that are included in this rel
 
 | Feature area | Feature name | More information |
 |--------------|--------------|------------------|
-| Subscription billing  | Quotation report | This feature provides the ability to generate a quotation document from a billing schedule. |
-| Subscription billing  | Trade agreement integration | Billing schedules can now leverage more functionality available in Trade agreements. Billing schedule lines can be updated with new amounts at the time the trade agreement is posted or at renewal. Trade agreements that become effective in the middle of a billing period can be weighted with the effective price for the number of days in the billing period. Date consideration is added for tier pricing. When using renew automatically the trade agreement’s effective price and billing period dates are compared to retrieve the proper pricing. |
-| Subscription billing  | Renew automatically for Unbilled revenue billing schedule lines | Billing schedules with lines that are marked for Unbilled revenue will now have the ability to be marked to renew automatically. |
-| Subscription billing  | Renew automatically for Milestone billing schedule lines | Billing schedules with lines that have an item type of Milestone will now have the ability to be marked to renew automatically. |
-| General ledger  | Ledger settlement inquiry | The Ledger settlement inquiry has been added to view settled, unsettled, or settled and unsettled ledger transactions for a date range and individual main account. The inquiry is similar to the trial balance, requiring a date range within a single fiscal year. The inquiry will display the age of unsettled transactions, or the settlement ID for settled transactions.  |
-| Tax Calculation | Wildcard support in the tax group and item tax group configuration to the Tax Calculation service |  The wildcard character asterisk (\*) is now supported by the tax group and item tax group configuration table in tax calculation service. The user can enter * to stand for all tax codes and SP* for tax codes that start with SP. |
-| Tax Calculation | Extended tax calculation data model | The following fields are extended to the Tax Calculation data model: <br> - **Vendor group** <br>- **Vendor invoice group** <br>- **Customer group** <br>- **Customer invoice group** <br>- **Order type** <br>- **Item group** | 
+| Subscription billing | Quotation report | This feature enables a quotation document to be generated from a billing schedule. |
+| Subscription billing | Trade agreement integration | Billing schedules can now take advantage of more functionality that is available for trade agreements. Billing schedule lines can be updated with new amounts when the trade agreement is posted or at renewal. Trade agreements that become effective in the middle of a billing period can be weighted with the effective price for the number of days in the billing period. Date consideration is added for tier pricing. When automatic renewal is used, the trade agreement's effective price and billing period dates are compared to retrieve the correct pricing. |
+| Subscription billing | Renew automatically for Unbilled revenue billing schedule lines | Billing schedules where lines are marked for unbilled revenue can now be marked for automatic renewal. |
+| Subscription billing | Renew automatically for Milestone billing schedule lines | Billing schedules where lines have an item type of **Milestone** can now be marked for automatic renewal. |
+| General ledger | Ledger settlement inquiry | A new ledger settlement inquiry lets you view settled, unsettled, or settled and unsettled ledger transactions for a date range and individual main account. The inquiry resembles the trial balance inquiry and requires a date range within a single fiscal year. The inquiry will show the age of unsettled transactions or the settlement ID of settled transactions. |
+| Tax Calculation | Wildcard support in the tax group and item tax group configuration to the Tax Calculation service | The asterisk (\*) wildcard character is now supported by the tax group and item tax group configuration table in Tax Calculation service. Users can enter **\*** to represent all tax codes and **SP\*** to represent tax codes that start with "SP." |
+| Tax Calculation | Extended tax calculation data model | <p>The following fields are extended for the Tax Calculation data model:</p><ul><li>Vendor group</li><li>Vendor invoice group</li><li>Customer group</li><li>Customer invoice group</li><li>Order type</li><li>Item group</li></ul> | 
 
 ## Additional resources
 
@@ -71,7 +70,7 @@ Dynamics 365 Finance 10.0.31 includes platform updates. To learn more, see [Plat
 
 ### Bug fixes
 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=xxxx).
+For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=xxxx).
 
 ### Regulatory updates
 
