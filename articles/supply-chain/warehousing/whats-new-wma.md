@@ -25,11 +25,11 @@ This version introduces the following new features, fixes, and improvements:
 - Improved stability.
 - Improved performance.
 - Improved the screen layout to allow more space for the details card.
-- Added a search function to the Work List page. Workers can now scan or type to search in all the fields and titles on the page.
+- Added a search function to the **Work List** page. Workers can now scan or type to search in all the fields and titles on the page.
 - The list of available connections is now sorted alphabetically.
 - Fixed an issue where duplicate cards were shown for items that have multiple inventory statuses at the same location.
-- Fixed an issue where the Selection List page didn't scroll to show the preselected item.
-- Fixed the search bar colors on the Large Selection List page.
+- Fixed an issue where the **Large Selection List** page didn't scroll to show the preselected item.
+- Fixed the search bar colors on the **Large Selection List** page.
 - Fixed an issue where the default button defined in the XML wasn't used as the submit button.
 - Fixed an issue where the buttons in the multi-scan and fast validation flows didn't update when new IDs were scanned
 - Added support for more languages.
