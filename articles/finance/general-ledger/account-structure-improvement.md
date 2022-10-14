@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: RyanCCarlson2
+ms.author: rcarlson
 ms.search.validFrom: 2022-10-08
 ms.dyn365.ops.version: 10.0.31
 
