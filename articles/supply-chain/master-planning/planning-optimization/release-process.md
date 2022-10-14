@@ -30,7 +30,8 @@ Because notifications aren't shown when Planning Optimization is updated in your
 
 | Changes | Feature management details | Release dates |
 |---|---|---|
-| <p> Support for resource scheduling with finite capacity. <p>General performance, quality, and stability improvements. | No feature management is required. | September 19-23, 2022 |
+| <p> Batch disposition codes. Include on-hand inventory and Include inventory transactions parameters on master plans <p> Batch disposition codes.  <p>General performance, quality, and stability improvements. | No feature management is required. | October 10-14, 2022 |
+| <p> Support for resource scheduling with finite capacity. <p>General performance, quality, and stability improvements. | No feature management is required. [Finite capacity planning and scheduling](../../master-planning/planning-optimization/finite-capacity) | September 19-23, 2022 |
 | <p>General performance, quality, and stability improvements. | No feature management is required. | August 29 - September 3, 2022 |
 | <p>General performance, quality, and stability improvements.<p>[Planning Optimization centralized calendar maintenance](../supply-chain-calendars-master-planning.md)<p>[Planning Optimization suggestions to optimize existing supply](../action-messages.md)<p>[Planning Optimization support for subcontracting](../../production-control/manage-subcontract-work-production.md) | No feature management is required. | March 7-11, 2022 |
 | <p>Added planning priority support for production orders. | Available with version 10.0.25 as part of the feature named *Priority driven MRP support for Planning Optimization*. | November 12-18, 2021 |
