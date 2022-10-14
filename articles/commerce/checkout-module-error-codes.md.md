@@ -28,7 +28,7 @@ Use the following table to reference an error code reference provided by a custo
 
 | Error Code | Dynamics Correlated Error Code                               | Error Description                                            |
 | ---------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| CCR001     | Microsoft_Dynamics_Commerce_Runtime_UnableToAuthorizePaymentCardTypeMissingOrNotSupported | The payment couldn't be authorized. Card Type Id in 'TokenizedPaymentCard' is missing or provided Card Type Id is not supported. |
+| CCR001     | Microsoft_Dynamics_Commerce_Runtime_UnableToAuthorizePaymentCardTypeMissingOrNotSupported | The payment couldn't be authorized. Card Type Id in 'TokenizedPaymentCard' is missing or provided Card Type Id isn't supported. |
 | CCR002     | Microsoft_Dynamics_Commerce_Runtime_UnableToAuthorizePayment | Declined. The payment couldn't be authorized.                |
 | CCR003     | Microsoft_Dynamics_Commerce_Runtime_UnableToAuthorizePaymentCardAdditionalContextRequired | The payment couldn't be authorized. Additional information required from the customer. |
 | CCR004     | Microsoft_Dynamics_Commerce_Runtime_UnableToRetrieveCardPaymentAcceptResult | Sorry, something went wrong. We were unable to obtain the card payment accept result. Try again or contact your system administrator. |
@@ -39,19 +39,19 @@ Use the following table to reference an error code reference provided by a custo
 | CCR009     | Microsoft_Dynamics_Commerce_Runtime_CustomerAccountPaymentExceedsTotalAmountForCarryOutAndReturnItems | The Customer Account payment exceeds the total due for the listed items. Try again later or contact Customer Support for additional assistance. |
 | CCR010     | Microsoft_Dynamics_Commerce_Runtime_PaymentUsingUnauthorizedAccount | Customer account payment requires its own account or matching invoice account on a tender line. |
 | CCR011     | Microsoft_Dynamics_Commerce_Runtime_CustomerAccountPaymentExceedsCustomerAccountFloorLimit | Unable to process a customer account payment at this time – floor limit value exceeded. |
-| CCR012     | Microsoft_Dynamics_Commerce_Runtime_CustomerAccountPaymentForCustomerWithoutAllowOnAccount | This customer is not allowed to pay on account.              |
-| CCR013     | Microsoft_Dynamics_Commerce_Runtime_UnableToCancelPayment    | Sorry, something went wrong. The payment could not be canceled. Try again. |
+| CCR012     | Microsoft_Dynamics_Commerce_Runtime_CustomerAccountPaymentForCustomerWithoutAllowOnAccount | This customer isn't allowed to pay on account.              |
+| CCR013     | Microsoft_Dynamics_Commerce_Runtime_UnableToCancelPayment    | Sorry, something went wrong. The payment couldn't be canceled. Try again. |
 | CCR014     | Microsoft_Dynamics_Commerce_Runtime_UnableToReadCardTokenInfo | An error occurred when processing the payment. Try again later. |
 | CCR015     | Microsoft_Dynamics_Commerce_Runtime_NotEnoughRewardPoints    | The loyalty payment amount exceeds what is allowed for this loyalty card in this transaction. |
 | CCR016     | Microsoft_Dynamics_Commerce_Runtime_RefundAmountMoreThanAllowed | The loyalty refund amount exceeds what is allowed for this loyalty card in this transaction. |
 | CCR017     | Microsoft_Dynamics_Commerce_Runtime_InvalidLoyaltyCardNumber | The loyalty card number wasn't found. Either activate the loyalty card number or enter a different card number, and then try again. |
-| CCR018     | Microsoft_Dynamics_Commerce_Runtime_BlockedLoyaltyCard       | The loyalty card number is not available. Enter a different card number, and then try again. |
-| CCR019     | Microsoft_Dynamics_Commerce_Runtime_NoTenderLoyaltyCard      | This loyalty card is not eligible to redeem loyalty points for this transaction. |
+| CCR018     | Microsoft_Dynamics_Commerce_Runtime_BlockedLoyaltyCard       | The loyalty card number isn't available. Enter a different card number, and then try again. |
+| CCR019     | Microsoft_Dynamics_Commerce_Runtime_NoTenderLoyaltyCard      | This loyalty card isn't eligible to redeem loyalty points for this transaction. |
 | CCR020     | Microsoft_Dynamics_Commerce_Runtime_GiftCardCurrencyMismatch | The gift card number encountered an error. Try a different gift card or contact Customer Support for additional assistance. |
 | CCR021     | Microsoft_Dynamics_Commerce_Runtime_PaymentAmountExceedsGiftBalance | The amount exceeds the balance on the gift card. Enter a different amount and then try again. |
-| CCR022     | Microsoft_Dynamics_Commerce_Runtime_NoMoreThanOneLoyaltyTender | The transaction cannot contain more than one loyalty payment line. |
-| CCR023     | Microsoft_Dynamics_Commerce_Runtime_PaymentAlreadyVoided     | The payment information is either missing information or it is incorrect. Verify the payment information and then try again. |
-| CCR024     | Microsoft_Dynamics_Commerce_Runtime_FraudRisk                | The order cannot be processed at this time. Try again later. |
+| CCR022     | Microsoft_Dynamics_Commerce_Runtime_NoMoreThanOneLoyaltyTender | The transaction can't contain more than one loyalty payment line. |
+| CCR023     | Microsoft_Dynamics_Commerce_Runtime_PaymentAlreadyVoided     | The payment information is either missing information or it's incorrect. Verify the payment information and then try again. |
+| CCR024     | Microsoft_Dynamics_Commerce_Runtime_FraudRisk                | The order can't be processed at this time. Try again later. |
 | CCR025     | Front End Timeout for Checkout API                           | The front end operation has timed out. Confirm if the order has processed in Dynamics 365 Commerce Headquarters. |
 | CCR026     | Original Authorized Amount Changed                           | The order amount has changed from the original authorization amount processed with the payment gateway. This may be due to a timed expiry of a coupon, promotion, or sale. |
 | CCR027     | Microsoft_Dynamics_Commerce_Runtime_InvalidCartVersion       | An error occurred when processing a payment. The reference provided to the Cart API has a different reference than expected (noting potential inconsistency during the checkout process). |
