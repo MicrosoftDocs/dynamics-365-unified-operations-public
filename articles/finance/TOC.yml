@@ -232,6 +232,22 @@
           href: accounts-payable/accounts-payable-invoice-matching.md
         - name: Set up Accounts payable invoice matching validation
           href: accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
+      - name: Invoice capture solution
+        items:
+        - name: Invoice capture overview
+          href: accounts-payable/invoice-capture-overview.md
+        - name: Invoice capture install
+          href: accounts-payable/install-invoice-capture.md
+        - name: Configure Invoice capture
+          href: accounts-payable/config-invoice-capture.md
+        - name: Invoice capture configuration groups
+          href: accounts-payable/invoice-capture-config-group.md
+        - name: Invoice capture mapping rules
+          href: accounts-payable/invoice-capture-mapping-rules.md
+        - name: Invoice capture workspace
+          href: accounts-payable/invoice-capture-workspace.md
+        - name: Invoice capture advanced settings
+          href: accounts-payable/invoice-capture-advanced-settings.md
       - name: Vendor invoice automation    
         items: 
         - name: Automated vendor invoicing processes overview
