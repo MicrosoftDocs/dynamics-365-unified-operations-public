@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Invoice capture solution
+title: Invoice capture solution overview
 description: This article provides information about the Invoice capture solution.
 author: sunfzam
 ms.date: 09/25/2022
@@ -59,3 +59,5 @@ The following table shows the roles that are required to set up and use the Invo
 | AI maker      | <ul><li>Maintain flows.</li><li>Create custom AI models.</li></ul> | <ul><li>Microsoft Power Platform</li></ul> | <ul><li>Citizen makers</li></ul> |
 | AP clerk      | <ul><li>Review and take actions in the vendor invoice staging area.</li><ul> | <ul><li>Microsoft Power Platform</li></ul> | <ul><li>New AP clerk role in Power Platform</li></ul> |
 | AP clerk      | <ul><li>Perform daily operations as an AP clerk.</li><li>Navigate to the vendor invoice staging area.</li></ul> | <ul><li>Dynamics 365</li></ul> | <ul><li>Accounts payable clerk</li></ul> |
+  
+For more information about installing Invoice capture, see [Install Invoice capture](../accounts-payable/install-invoice-capture.md).  
