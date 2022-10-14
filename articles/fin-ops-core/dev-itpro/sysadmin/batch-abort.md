@@ -4,7 +4,7 @@
 title: Cancel an executing batch job
 description: This article provides information about how to cancel an executing batch job.
 author: karimelazzouni
-ms.date: 03/26/2021
+ms.date: 10/14/22
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: IT Pro
 # ms.devlang: 
-ms.reviewer: sericks
+ms.reviewer: johnmichalak
 # ms.tgt_pltfrm: 
 ms.custom: 62333
 ms.assetid: 6135bcf7-bf8f-42ae-b2c6-458f6538e6a4
@@ -33,10 +33,10 @@ ms.dyn365.ops.version: Platform update 27
 
 ## Cancelling a batch job
 
-Wherever there is a requirement to cancel an executing batch job, you can change the status of the batch job to cancelling.
-This will prevent batch from picking up new tasks for execution. The tasks which are not picked up for execution will be marked as not run and executing tasks will be marked as cancelling, but it will wait till tasks terminate gracefully i.e. finish or error out.  
+Wherever there is a requirement to cancel a batch job that is running, you can change the status of the batch job to **Cancelling**.
+This prevents the batch from picking up new tasks. The status for tasks that haven't been started are set to **Not run**, and tasks that have started are set to **Cancelling**. The statuses will not change utill tasks can terminate gracefully (that is either finish or error out).  
 <br/>
-![Cancelling a batch job](./media/cancelling-a-batch-job.png)  
+![Screen shot of showing how the change the status to Cancelling for a selected batch job](./media/cancelling-a-batch-job.png)  
 <br/>
 State of the batch job and its tasks after cancelling:  
 <br/>
