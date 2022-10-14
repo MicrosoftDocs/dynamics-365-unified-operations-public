@@ -7,7 +7,7 @@ author: BrianShook
 ms.date: 10/14/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
-ms.reviewer: josaw
+ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: brshoo
 ms.search.validFrom: 2022-09-20
