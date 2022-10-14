@@ -106,10 +106,8 @@ Planning Optimization doesn't use the following parameters or options on the **M
 
 - **General** FastTab:
 
-  - **Include on-hand inventory** – Pending *Consumption of on-hand inventory* support.
   - **Override on hand** – Pending *Consumption of on-hand inventory* support.
   - **Consume on-hand inventory** – Pending *Consumption of on-hand inventory* support.
-  - **Include inventory transactions** – Pending *Consumption of on-hand inventory* support.
   - **Include sales quotations** – Pending *Sales quotations* support.
   - **Include request for quotations** – Pending *Request for quotations* support.
   - **Use shelf life dates** – Pending *Shelf life* support.
