@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: The Invoice capture Received files
+title: Invoice capture received files
 description: This article explains how to collect invoice files from different sources in Invoice capture.
 author: sunfzam
 ms.date: 10/13/2022
@@ -27,21 +27,21 @@ ms.dyn365.ops.version:
 
 ---
 
-# Invoice capture Received files
+# Invoice capture received files
 
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-In Invoice Capture, the **Received files** page is a central place to receive invoice files from different sources. 
+In Invoice capture, the **Received files** page is a central place where invoice files are received from different sources.
 
-## Upload invoice file
-Accounts Payable clerks can upload invoice images by clicking  **Upload a file**. The **Upload** page will be displayed in the side panel. 
-The **Upload** button is available after selecting the file.
+## Upload invoice files
 
-## Include/Obsolete invoice files
-Users can first select invoices with errors or warnings and decide whether include or obsolete the invoice by clicking the corresponding button in the ribbon. 
-An invoice marked as obsolete won't be found in the **Received files (Obsoleted)** view.
+Accounts Payable (AP) clerks can upload invoice images by selecting **Upload a file** to open the **Upload** dialog box. After an AP clerk selects a file, the **Upload** button becomes available.
 
-## Navigate to captured invoice
-Once the received file is successfully recognized, the captured invoice’s information will be returned by the AI model and entered in Dataverse. The Accounts Payable 
-clerk can verify the invoice details by clicking **View captured invoice**. Users can download the original invoice file if needed. 
+## Include or obsolete invoice files
+
+Users can select invoices that have errors or warnings, and then either include or obsolete the invoices by selecting the corresponding button on the Action Pane. An invoice that is marked as obsolete won't appear in the **Received files (Obsoleted)** view.
+
+## View captured invoices
+
+After a received file is successfully recognized, the captured invoice's information is returned by the AI model and entered in Microsoft Dataverse. The AP clerk can then verify the invoice details by selecting **View captured invoice**. Users can download the original invoice file as required.
