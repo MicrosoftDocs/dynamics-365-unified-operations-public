@@ -33,15 +33,15 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Account structures use the main account and financial dimensions to create a set of rules that determine the order and values used when entering the account number. You can set up as many account structures as you need for your business. The account structures are assigned to a company’s ledger setup, so they can be shared.
 
-When creating an account structure, the maximum number of segments is 11. If you need more segments than this, thoroughly evaluate your setup and requirements, as it will impact the user experience. Consider if a segment could be derived in a reporting scenario using a hierarchy instead of during data entry, or by using a user-defined field. For example, if you want to report on location, but you can figure location by department or cost center, you would not need location as a financial dimension. If after evaluation you do determine more than 11 segments are needed, you can add additional segments using advanced rules.
+When creating an account structure, the maximum number of segments is 11. If you need more segments than 11, thoroughly evaluate your setup and requirements, as it will impact the user experience. Consider if a segment could be derived in a reporting scenario using a hierarchy instead of during data entry, or by using a user-defined field. For example, if you want to report on location, but you can figure location by department or cost center, you wouldn't need location as a financial dimension. If after evaluation you do determine more than 11 segments are needed, you can add additional segments using advanced rules.
 
-Account structures require the main account. The main account does not need to be the first segment in the structure, but it does identify what account structure is being used during the account number entry. Because of this, a main account value can only exist in one structure assigned to the ledger so that they do not overlap. After the account structure is identified, the allowed values list is filtered to guide the user through picking only valid dimension values, decreasing the possibility of an incorrect journal entry.
+Account structures require the main account. The main account doesn't need to be the first segment in the structure, but it does identify what account structure is being used during the account number entry. Because of this, a main account value can only exist in one structure assigned to the ledger so that they don't overlap. After the account structure is identified, the allowed values list is filtered to guide the user through picking only valid dimension values, decreasing the possibility of an incorrect journal entry.
 
 > [!NOTE] 
 > If you plan to budget against a financial dimension, it will need to be part of an account structure. Budgeting does not currently utilize advanced rules.
 
 ## Example
-To illustrate a best practice for setting up an account structure, let's assume that a company wants to track their balance sheet accounts (100000..399999) at the account and business unit financial dimension level. For revenue and expense accounts (400000..999999), they track financial dimensions Business Unit, Department, and Cost center. If they make a sale, they also like to track Customer. Using this scenario, it would be recommended to have two account structures assigned to the company’s ledger - one for Balance sheet accounts, and one for Profit and Loss accounts. To optimize the user experience and validation, Customer should be an advanced rule that is only used when a sales account is used.
+To illustrate a best practice for setting up an account structure, let's assume a company wants to track their balance sheet accounts (100000..399999) at the account and business unit financial dimension level. For revenue and expense accounts (400000..999999), they track financial dimensions Business Unit, Department, and Cost center. If they make a sale, they also like to track Customer. Using this scenario, it would be recommended to have two account structures assigned to the company’s ledger - one for Balance sheet accounts, and one for Profit and Loss accounts. To optimize the user experience and validation, Customer should be an advanced rule that is only used when a sales account is used.
 
 **Balance sheet account structure**
 
@@ -57,7 +57,7 @@ To illustrate a best practice for setting up an account structure, let's assume 
 
 **Advanced rule for adding a Customer**
 
-Criteria: Where Main account is between 400000 and 499999, then add customer. It cannot be left blank.
+Criteria: Where Main account is between 400000 and 499999, then add customer. It can't be left blank.
 
 |Customer         |
 |-----------------|
@@ -82,9 +82,9 @@ Here's an example of the **Profit and loss account structure**.
 
 When entering a journal and selecting an account in the profit and loss range, selecting business unit '002' will cause values 022 and 014 to be the default on the account control. This behavior will also occur with the accounting distribution page. 
 
-## More than 7 criteria needed
+## More than seven criteria needed
 
-If you have more than 7 criteria that are needed, you can continue adding them on the next line. You will notice when working in the **Allowed value details** section that the **+Add new** criteria is no longer active after the seventh criteria is entered. This is due to many factors such as: 
+If you have more than seven criteria that are needed, you can continue adding them on the next line. You will notice when working in the **Allowed value details** section that the **+Add new** criteria is no longer active after the seventh criteria is entered. This is due to many factors such as: 
  - Column width 
  - How the data is stored 
  - Performance of the **Allowed value details** control
@@ -93,7 +93,7 @@ If you have more than 7 criteria that are needed, you can continue adding them o
 To continue to add additional criteria, click **Duplicate in the Segment** and **Allowed values section**. This will copy the criteria to a new line. You can then type over or modify the **Allowed value details** section.
 
 ## Best practices
-When setting up your account structures there are some best practices you can follow. However, this is only guidance so a holistic discussion about your business, growth plan, and maintenance plan should be considered as part of that discussion.
+When setting up your account structures, there are some best practices you can follow. However, this is only guidance so a holistic discussion about your business, growth plan, and maintenance plan should be considered as part of that discussion.
 
 - Make main account first or as close to the front of the account structure as possible, so users get the best guided experience they can during account entry.
   
@@ -108,9 +108,9 @@ When setting up your account structures there are some best practices you can fo
 - Do not just put an asterisk for every segment in the account structure and then solely rely on the advanced rules. This can be difficult to manage and often leads to user error during maintenance that can make the system unable to post.
 
 ## Account structure activation
-When you are satisfied with your new setup or a change to an account structure, you must activate it. If an account structure is assigned to a ledger, this activation can be a long running process, as all unposted transactions in the system must be synced to the new structure. Posted transactions are not impacted with account structure changes. Beginnging in application version 10.0.31 there is a new feature available in feature management **Account structure activation performance enhancement**.  For more information about this new feature for account structure activation see [Account structure activation performance enhancement](account-structure-improvement.md). 
+When you are satisfied with your new setup or a change to an account structure, you must activate it. If an account structure is assigned to a ledger, this activation can be a long running process, as all unposted transactions in the system must be synced to the new structure. Posted transactions are not impacted with account structure changes. Beginning in application version 10.0.31, there's a new feature available in feature management **Account structure activation performance enhancement**.  For more information about this new feature for account structure activation, see [Account structure activation performance enhancement](account-structure-improvement.md). 
 
-For more information, see [Plan your chart of accounts](plan-chart-of-accounts.md), [Financial dimensions](financial-dimensions.md) and [Enter account and dimension combinations (segmented entry control)](enter-account-dimension-combinations-segmented-entry-control.md).
+For more information, see [Plan your chart of accounts](plan-chart-of-accounts.md), [Financial dimensions](financial-dimensions.md), and [Enter account and dimension combinations (segmented entry control)](enter-account-dimension-combinations-segmented-entry-control.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
