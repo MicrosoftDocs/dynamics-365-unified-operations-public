@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Checkout Module Error Codes
-description: This article references the checkout module error code references provided in the user-facing error messages.
+title: Checkout module error reference codes
+description: This article describes the checkout module error reference codes displayed in user-facing error messages in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 10/14/2022
 ms.topic: article
@@ -14,15 +14,21 @@ ms.search.validFrom: 2022-09-20
 
 ---
 
-# Checkout Module Error Codes
+# Checkout module error reference codes
 
-Dynamics 365 Commerce is introducing standardized error references to be included in online channel checkout errors presented to online shoppers. Available in 10.0.31 and higher, error messages in the checkout module will now include an error reference that will be detailed in this article. These error references allow for referencing conditions of the error through this article without displaying unnecessary information to the online shopper. Depending upon the error encountered, the table below will:
+[!include [banner](includes/banner.md)]
 
-- Describe the condition that caused the error or provide additional details
-- Provide information for consideration in the environment or payment connector configurations
-- Include information that can be referenced in a Support Case if needed for additional assistance
+This article describes the checkout module error codes displayed in user-facing error messages in Microsoft Dynamics 365 Commerce.
 
-## Checkout Module Error Reference codes
+Dynamics 365 Commerce has introduced standardized error references to be included in online channel checkout errors presented to online customers. Available in Commerce version 10.0.31 and later, error messages in the checkout module include error codes that reference errors detailed in this article without displaying unnecessary information to the online customer. 
+
+Depending upon the error encountered, the table below will:
+
+- Describe the condition that caused the error or provide additional details.
+- Provide information for consideration in the environment or payment connector configurations.
+- Include information that can be referenced in a support case, if needed for additional assistance.
+
+## Checkout module error reference codes
 
 Use the following table to reference an error code reference provided by a customer or experienced on the online store for additional details of the code.
 
