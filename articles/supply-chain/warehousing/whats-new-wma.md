@@ -31,7 +31,7 @@ This version introduces the following new features, fixes, and improvements:
 - Fixed an issue where the **Large Selection List** page didn't scroll to show the preselected item.
 - Fixed the search bar colors on the **Large Selection List** page.
 - Fixed an issue where the default button defined in the XML wasn't used as the submit button.
-- Fixed an issue where the buttons in the multi-scan and fast validation flows didn't update when new IDs were scanned
+- Fixed an issue where the buttons in the multi-scan and fast validation flows didn't update when new IDs were scanned.
 - Added support for more languages.
 
 ## Version 2.0.32.0
