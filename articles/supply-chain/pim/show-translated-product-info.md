@@ -22,6 +22,10 @@ All users of Microsoft Dynamics 365 Supply Chain Management can select the langu
 
 By entering product translations and configuring the system to show them in the UI, you enable each user to see product data (names and descriptions) in their own preferred language while they work online. For products where no name or description is available in the user's preferred language, the system will show the name or description in the system language instead.
 
+The following video provides an introduction to this feature.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE59tCd]
+
 ## Turn the feature on or off in your system
 
 Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
