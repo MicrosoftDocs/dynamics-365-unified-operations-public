@@ -18,6 +18,7 @@ ms.search.validFrom: 2022-09-20
 # Limit payment token usage
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article describes the feature that limits how payment tokens are used in Microsoft Dynamics 365 Commerce. Token usage is restricted to the scope of a sales order, or stored as a card on file with customer consent.
 
