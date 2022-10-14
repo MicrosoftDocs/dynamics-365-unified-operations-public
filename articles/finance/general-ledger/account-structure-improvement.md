@@ -40,5 +40,6 @@ The account structure activation dialog that appears when you click activate for
 Some factors that can impact the performance of the activation process are: 
  - High number of unposted journal records
  - High number of open source document records such as Free Text invoices, Vendor Invoices and related documents that use the source document framework and have open accounting distributions. 
- - The amount of data found in TaxUncommitted
+ - The amount of data in TaxUncommitted.
  - The amount of open budget data. 
+ - Importing journal data while the activation tasks are still running. 
