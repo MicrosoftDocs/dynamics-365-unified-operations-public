@@ -68,7 +68,7 @@ To use this functionality, refer to the following steps:
 1. To abort all cancelling tasks of the batch job, in the batch job form, go to **Batch tasks** tab, and select **Abort**.
 2. This can potentially disrupt a list of other batch jobs which are displayed on the dialog. If you are okay with disrupting those jobs, select **Yes**.
 
-![Confirm that you want to end the canceling tasks.](./media/enhanceabort-a-batchjob.png)
+![Screen shot asking you to confirm that you want to end the canceling tasks.](./media/enhanceabort-a-batchjob.png)
 
 If you do not want to cancel other running batch tasks on the server and prefer the old behavior of canceling only the tasks under the batch job and not all the jobs running, you can turn off the **Enhanced batch abort** feature in the Feature management workspace and try to [abort a batch job](#aborting-tasks-in-a-batch-job) again.
 
