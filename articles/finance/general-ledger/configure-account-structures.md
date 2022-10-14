@@ -4,7 +4,7 @@
 title: Configure account structures
 description: This article provides information about account structures and financial dimensions.
 author: aprilolson
-ms.date: 07/12/2022
+ms.date: 10/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Account structures use the main account and financial dimensions to create a set of rules that determine the order and values used when entering the account number. You can set up as many account structures as you need for your business. The account structures are assigned to a company’s ledger setup, so they can be shared.
 
-When creating an account structure, the maximum number of segments is 11. If you need more segments than 11, thoroughly evaluate your setup and requirements, as it will impact the user experience. Consider if a segment could be derived in a reporting scenario using a hierarchy instead of during data entry, or by using a user-defined field. For example, if you want to report on location, but you can figure location by department or cost center, you wouldn't need location as a financial dimension. If after evaluation you do determine more than 11 segments are needed, you can add additional segments using advanced rules.
+When creating an account structure, the maximum number of segments is 11. If you need more than 11 segments, thoroughly evaluate your setup and requirements, as it will impact the user experience. Consider if a segment could be derived in a reporting scenario using a hierarchy instead of during data entry, or by using a user-defined field. For example, if you want to report on location, but you can figure location by department or cost center, you wouldn't need location as a financial dimension. If after evaluation you do determine more than 11 segments are needed, you can add additional segments using advanced rules.
 
 Account structures require the main account. The main account doesn't need to be the first segment in the structure, but it does identify what account structure is being used during the account number entry. Because of this, a main account value can only exist in one structure assigned to the ledger so that they don't overlap. After the account structure is identified, the allowed values list is filtered to guide the user through picking only valid dimension values, decreasing the possibility of an incorrect journal entry.
 
@@ -108,9 +108,9 @@ When setting up your account structures, there are some best practices you can f
 - Do not just put an asterisk for every segment in the account structure and then solely rely on the advanced rules. This can be difficult to manage and often leads to user error during maintenance that can make the system unable to post.
 
 ## Account structure activation
-When you are satisfied with your new setup or a change to an account structure, you must activate it. If an account structure is assigned to a ledger, this activation can be a long running process, as all unposted transactions in the system must be synced to the new structure. Posted transactions are not impacted with account structure changes. Beginning in application version 10.0.31, there's a new feature available in feature management **Account structure activation performance enhancement**.  For more information about this new feature for account structure activation, see [Account structure activation performance enhancement](account-structure-improvement.md). 
+When you are satisfied with your new setup or a change to an account structure, you must activate it. If an account structure is assigned to a ledger, this activation can be a long running process, as all unposted transactions in the system must be synced to the new structure. Posted transactions are not impacted with account structure changes. Beginning in application version 10.0.31, a new feature, **Account structure activation performance enhancement**, is available in feature management.  For more information about this new feature for account structure activation, refer to [Account structure activation performance enhancement](account-structure-improvement.md). 
 
-For more information, see [Plan your chart of accounts](plan-chart-of-accounts.md), [Financial dimensions](financial-dimensions.md), and [Enter account and dimension combinations (segmented entry control)](enter-account-dimension-combinations-segmented-entry-control.md).
+For more information, refer to [Plan your chart of accounts](plan-chart-of-accounts.md), [Financial dimensions](financial-dimensions.md), and [Enter account and dimension combinations (segmented entry control)](enter-account-dimension-combinations-segmented-entry-control.md).
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
