@@ -79,10 +79,10 @@ For information on the dark hours for each region, see [What are the planned mai
 
 | Station | Regions | Completed Schedule| Upcoming Sandbox Schedule
 |---|---|---|---|
-| Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | September 15 to September 18, 2022, September 19 to September 22, 2022, and October 7 to October 10, 2022 | October 24 to October 27, 2022 |
-| Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | September 25 to September 28, 2022, and October 7 to October 10, 2022 | October 24 to October 27, 2022 |
-| Station 3 | East Asia, UK West, Japan West, Brazil South, West Europe, East US, UAE Central | September 26 to September 29, 2022, and October 7 to October 10, 2022 | October 24 to October 27, 2022 |
-| Station 4 | North Europe, Central US, West US | September 28 to October 1, 2022, and October 7 to October 10, 2022 | October 24 to October 27, 2022 |
+| Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | September 15 to September 18, 2022, September 19 to September 22, 2022, and October 7 to October 10, 2022 | October 25 to October 28, 2022 |
+| Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | September 25 to September 28, 2022, and October 7 to October 10, 2022 | October 25 to October 28, 2022 |
+| Station 3 | East Asia, UK West, Japan West, Brazil South, West Europe, East US, UAE Central | September 26 to September 29, 2022, and October 7 to October 10, 2022 | October 25 to October 28, 2022 |
+| Station 4 | North Europe, Central US, West US | September 28 to October 1, 2022, and October 7 to October 10, 2022 | October 25 to October 28, 2022 |
 | Station 5 | DoD, Government Community Cloud, China | Not Scheduled | Not Scheduled |
 
 ### <a name="schedule"></a> Proactive quality update release: 10.0.29
