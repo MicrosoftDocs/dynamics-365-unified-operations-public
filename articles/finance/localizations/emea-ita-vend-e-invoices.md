@@ -47,7 +47,7 @@ Follow these steps to set up the electronic invoice configuration in Accounts pa
    > 
    >     These default settings are required for all scenarios, even if **Reverse charge** isn't applicable.
    >
-   > 2. In the **Conditions** section, in the **Name** column, add the other required Reverse charge item groups and associate them with the related values in the **Lookup result** column. For more details about how to set up Reverese charge item groups, see ![Customer electronic invoices](emea-ita-e-invoices.md)
+   > 2. In the **Conditions** section, in the **Name** column, add the other required Reverse charge item groups and associate them with the related values in the **Lookup result** column. For more details about how to set up Reverese charge item groups, see [Customer electronic invoices](emea-ita-e-invoices.md).
 
 
 
