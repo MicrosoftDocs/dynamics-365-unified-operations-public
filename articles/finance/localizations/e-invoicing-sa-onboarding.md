@@ -43,7 +43,7 @@ The onboarding process consists of two steps:
 2. On the main landing page of the Onboarding and Management Portal, select the **Onboard new solution unit/device** tile, and then select **Generate OTP code**.
 3. Select the number of one-time password (OTP) codes to generate. The number depends on the number of e-invoicing generation units (devices) that will be used.
 4. Save the generated OTP codes so that you can use them in later steps.
-5. Prepare a configuration file for the certificate signing request. This configuration file should be in the form of a plain text file that contains the following data, save to the same location as the on boarding script as csr_config.txt.
+5. Prepare a configuration file for the certificate signing request. This configuration file should be in the form of a plain text file that contains the following data.
 
     ```txt
     oid_section = OIDs
@@ -77,6 +77,7 @@ The onboarding process consists of two steps:
     businessCategory=Industry
     ```
 
+6. Save the file to the same location as the on boarding script with the name, **csr_config.txt**.
 6. In the configuration file, update the **emailAddress** value and the following specific data.
 
     | Code              | Description | Specification |
@@ -98,7 +99,7 @@ The onboarding process consists of two steps:
     > [!NOTE]
     > The **password** parameter is optional and can be omitted. If it's included, the certificate that is generated will have the specified password.
 
-8. The CCSID is received as a certificate file "CCSID.pfx" and the secret for CCSID is saved as txt file "CCSIDSecret.txt". Save this CCSID certificate file in the Microsoft Azure key vault certificate and save the secret in Microsoft Azure key vault secret. For more information, see [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md).
+8. The CCSID is received as a certificate file "CCSID.pfx", and the secret for CCSID is saved as txt file "CCSIDSecret.txt". Save this CCSID certificate file in the Microsoft Azure key vault certificate and save the secret in Microsoft Azure key vault secret. For more information, refer to [Customer certificates and secrets](e-invoicing-customer-certificates-secrets.md).
 9. Configure the related feature setup in the **Saudi Arabian electronic invoice (SA)** electronic invoicing feature, and reference the CCSID certificate that you saved in the key vault. The certificate will be used for communication with the ZATCA electronic invoicing portal.
 
 ### Compliance check
