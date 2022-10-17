@@ -55,6 +55,10 @@ The default memory setting should be sufficient for most customization scenarios
 "build": "SET NODE_OPTIONS=--max_old_space_size=4096 && yarn msdyn365b build --use-eslint",
 ```
 
+### Can I clear a node app's cache?
+
+Yes, you can use the "Cache key suffix" setting in the **Configuration** tab within site builder under **Site settings->Extensions**. Set the value in the text box to any random characters (e.g.: xyz) to invalidate / clear the app cache for a node app.
+
 ### During package upload, I receive this error message: "The e-commerce package has an outdated online SDK. Please create a new package and retry." Or, during package deployment, I receive this error message: "The e-commerce package cannot be deployed due to an outdated online SDK. Please create a new package and retry deployment." Why?
 
 To help decrease deployment time during package deployment, uploaded packages are prebuilt while the **yarn msdyn365 pack** [command-line interface (CLI) command](cli-command-reference.md#pack) is run by using the latest online SDK. If package upload fails, and you receive one of the error messages, update to the latest SDK by using the **[yarn msdyn365 update-versions sdk](cli-command-reference.md#update-versions)** CLI command. In this way, you ensure that the yarn.lock file is deleted before you run yarn to pull down the latest online SDK. You can then rebuild the package by using the **yarn msdyn365 pack** command, and then redeploy the new package.
@@ -268,10 +272,6 @@ If you want to completely disable linting during build time, you can use the **-
 "build": "yarn msdyn365b build --disable-linter",
 "build:prod": "yarn clean && yarn msdyn365b build --disable-linter",
 ```
-
-### Can I clear a node app's cache?
-
-Yes, you can use the "Cache key suffix" setting in the **Configuration** tab within site builder under **Site settings->Extensions**. Set the value in the text box to any random characters (e.g.: xyz) to invalidate / clear the app cache for a node app.
 
 ### After upgrading to module library version 9.27 (Commerce version 10.0.17 release), buy box module view extensions might generate a compilation error.
 
