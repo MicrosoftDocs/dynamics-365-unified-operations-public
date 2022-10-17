@@ -117,7 +117,7 @@ To enable a new application tab for customer agents in Dynamics 365 Omnichannel 
 1. Under **Application Tabs**, select **Add Existing Application Tab**, and then add the new application tab that you created earlier. This step ensures that an application tab that loads Commerce headquarters in an iFrame module will appear when an agent receives an incoming chat call from your e-commerce website.
 
 > [!NOTE]
-> You can't modify the default chat session template in the workstream, so you may want to create a new template or duplicate the existing template to update it. For more information, see [Associate templates with workstream](/dynamics365/app-profile-manager/associate-templates).
+> You can't modify the default chat session template in the workstream. Therefore, you might want to create a new template or duplicate the existing template to update it. For more information, see [Associate templates with workstream](/dynamics365/app-profile-manager/associate-templates).
 
 ## Add context variables in Dynamics 365 Omnichannel for Customer Service
 
