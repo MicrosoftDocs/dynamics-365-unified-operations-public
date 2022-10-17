@@ -18,7 +18,7 @@ ms.search.validFrom: 2022-10-14
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This article lists the features that are included in the platform updates for version 10.0.31 of finance and operations apps. This version has a build number of 7.0.xxx and is available on the following schedule:
+This article lists the features that are included in the platform updates for version 10.0.31 of finance and operations apps. This version has a build number of 7.0.6651 and is available on the following schedule:
 
 - **Preview of release:** October 2022
 - **General availability of release (self-update):** January 2023
