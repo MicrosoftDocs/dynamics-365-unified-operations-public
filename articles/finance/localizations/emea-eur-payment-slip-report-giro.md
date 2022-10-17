@@ -3,7 +3,7 @@
 
 title: Payment slip report for Europe
 description: This article provides information about payment slip reports for Europe.
-author: EvgenyPopovMBS
+author: mrolecki
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 ms.custom: 264604
 ms.search.region: Belgium, Denmark, Finland, Norway, Switzerland
 # ms.search.industry: 
-ms.author: epopov
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
