@@ -4,7 +4,7 @@ description: This article describes how to create and print a commercial invoice
 author: Weijiesa
 ms.author: weijiesa
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: WHSShipPlanningListPage, WHSShipmentDetails
 ms.topic: how-to
 ms.date: 10/17/2022
 ms.custom: bap-template
