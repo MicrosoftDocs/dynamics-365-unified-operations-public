@@ -269,6 +269,10 @@ If you want to completely disable linting during build time, you can use the **-
 "build:prod": "yarn clean && yarn msdyn365b build --disable-linter",
 ```
 
+### Can I clear a node app's cache?
+
+Yes, you can use the "Cache key suffix" setting in the **Configuration** tab within site builder under **Site settings->Extensions**. Set the value in the text box to any random characters (e.g.: xyz) to invalidate / clear the app cache for a node app.
+
 ### After upgrading to module library version 9.27 (Commerce version 10.0.17 release), buy box module view extensions might generate a compilation error.
 
 The compilation error is caused by code sharing that is related to the product quick view module that was introduced in the Commerce version 10.0.17 release. Because the quick view module shares many functionalities with the buy box module, some common components were moved to a common folder, so that the buy box and quick view modules can share the code.
