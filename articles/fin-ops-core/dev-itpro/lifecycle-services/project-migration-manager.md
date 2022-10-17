@@ -62,7 +62,7 @@ The following table shows the data that can be transferred between instances of 
 | Automated | Asset library | *Only the last asset applied to your sandbox / production environments are migrated automatically |
 | Manual | Asset library | You will be able to download and manually upload in the target project.  You do not need to move all assets, only those you require. |
 | Manual | Self-service environments | Sandbox and Production environments will remain in their current deployed region and are not touched by the Project migration manager.  They will have the same Environment IDs but will live in a new Project.  If you need to move your enviornment to a different region, please open a support ticket separately. |
-| Manual | Cloud-hosted environments | Azure connectors can be manually re-configured, and new environments can be deployed thereafter in the target. |
+| Manual | Cloud-hosted environments | Azure connectors can be manually re-configured, and new environments can be deployed thereafter in the target.  You will want to deallocate and delete all cloud-hosted environments before migration begins. |
 | Not supported | System diagnostics | This cannot be exported, but new diagnostics will be generated from your environments in the target project after migration |
 | Not supported | Upgrade analysis | This cannot be exported, but you can start a new upgrade analysis in the target project after migration |
 | Not supported | Globalization | Regulatory alerts ** |
@@ -113,7 +113,9 @@ If there are any customization, service or quality updates scheduled during your
 
 ### Post migration
 
-What do I do in source vs target?
+After the migration is completed, you will want to manually transfer any required assets from the old project to the new.  The update calendar for automatic updates will also need to be reconfigured, and any pause requests you had previously entered will need to be resubmitted.
+
+You will want to attend to any other project data that was not automatically transferred, that you require in the new project.
 
 ## Frequently asked questions (FAQ)
 
