@@ -23,7 +23,7 @@ By integrating the Microsoft Dynamics 365 Omnichannel for Customer Service and P
 
 ## Omnichannel for Customer Service
 
-Omnichannel for Customer Service is a robust application that extends the power of Dynamics 365 Customer Service to enable organizations to instantly connect and engage with their customers via channels such as live chat, voice, and Short Message Service (SMS). For more information about Omnichannel for Customer Service, see [Introduction to Omnichannel for Customer Service](/dynamics365/customer-service/introduction-omnichannel). For information about how to integrate Omnichannel for Customer Service with a Dynamics 365 Commerce e-commerce website, see [Commerce chat with Omnichannel for Customer Service module](commerce-chat-module.md).
+Omnichannel for Customer Service is a robust application that extends the power of Dynamics 365 Customer Service. It enables organizations to instantly connect and engage with their customers via channels such as live chat, voice, and Short Message Service (SMS). For more information about Omnichannel for Customer Service, see [Introduction to Omnichannel for Customer Service](/dynamics365/customer-service/introduction-omnichannel). For information about how to integrate Omnichannel for Customer Service with a Dynamics 365 Commerce e-commerce website, see [Commerce chat with Omnichannel for Customer Service module](commerce-chat-module.md).
 
 ## Power Virtual Agents
 
