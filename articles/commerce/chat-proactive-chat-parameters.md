@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Commerce chat module proactive chat parameters 
+title: Commerce chat module proactive chat parameters
 description: This article describes the proactive chat parameters of Commerce chat modules in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
 ms.date: 10/13/2022
@@ -24,81 +24,81 @@ This article describes the proactive chat parameters of the Commerce Chat with O
 
 The proactive chat properties are located in the properties pane of the Commerce Chat with Omnichannel for Customer Service and Commerce Chat with Power Virtual Agents modules in Commerce site builder.
 
-> [!NOTE] 
-> All of the proactive chat properties listed below are empty by default. It is recommended that you learn more about these properties and set them only as needed, which will help reduce any erroneous proactive chats from being triggered.
+> [!NOTE]
+> By default, all the proactive chat properties that are listed here are blank. We recommend that you learn more about these properties and set them only as they are required. This approach will help reduce erroneous proactive chats from being triggered.
 
 ### Proactive Chat
 
 | Friendly name | Description | Default value |
-| ------------- |--------------|--------------|
-|  Enabled| Engage customers proactively based on different triggers. |Disabled |
-|Chat greeting  |  Greeting message for when a proactive chat has been triggered.| Empty|
+|---------------|-------------|---------------|
+| Enabled | Proactively engage customers, based on different triggers. | Disabled |
+| Chat greeting | The greeting message that is used when a proactive chat has been triggered. | Blank |
 
 ### Wait Time (Proactive Chat)
 
 | Friendly name | Description |
-| ------------- |--------------|
-|  Wait time (sec)|  Time (in seconds) spent on  a site page before a proactive chat is triggered.| 
-|  Chat greeting | Greeting message for when a proactive chat has been triggered.  | 
+|---------------|-------------|
+| Wait time (sec) | The time (in seconds) that site users spend on a site page before a proactive chat is triggered. |
+| Chat greeting | The greeting message that is used when a proactive chat has been triggered. |
 
 ### Number of Page Visits (Proactive Chat)
 
 | Friendly name | Description |
-| ------------- |--------------|
-|Number of page visits  |  Number of page visits before a proactive chat is triggered. Site users must first accept the prompt on the cookie consent banner.| 
-|Chat greeting  | Greeting message for when a proactive chat has been triggered. | 
+|---------------|-------------|
+| Number of page visits | The number of page visits before a proactive chat is triggered. Site users must first accept the prompt in the cookie consent banner. |
+| Chat greeting | The greeting message that is used when a proactive chat has been triggered. |
 
 ### Specific Page(s) (Proactive Chat)
 
 | Friendly name | Description |
-| ------------- |--------------|
-| Page(s) |  List of pages that will trigger a proactive chat when visited.| 
-|Chat greeting  |Greeting message for when a proactive chat has been triggered.  | 
+|---------------|-------------|
+| Page(s) | A list of the pages that will trigger a proactive chat when they are visited. |
+| Chat greeting | The greeting message that is used when a proactive chat has been triggered. |
 
 ### From Specific Page(s) (Proactive Chat)
 
 | Friendly name | Description |
-| ------------- |--------------|
-|  Page(s)| List of pages that will trigger a proactive chat when users navigate away from them. | 
-|Chat greeting  | Greeting message for when a proactive chat has been triggered. | 
+|---------------|-------------|
+| Page(s) | A list of the pages that will trigger a proactive chat when users navigate away from them. |
+| Chat greeting | The greeting message that is used when a proactive chat has been triggered. |
 
 ### Specific Country/Region (Proactive Chat)
 
 | Friendly name | Description |
-| ------------- |--------------|
-| Country code | User visiting from specified countries or regions will trigger a proactive chat. Country/region code should be 2 characters and uppercase (for example, US). | 
-|  Chat greeting| Greeting message for when a proactive chat has been triggered. | 
+|---------------|-------------|
+| Country code | Users who visit from specified countries or regions will trigger a proactive chat. Country/region codes should be two uppercase letters (for example, **US**). |
+| Chat greeting | The greeting message that is used when a proactive chat has been triggered. |
 
 ### Date Range (Proactive Chat)
 
 | Friendly name | Description |
-| ------------- |--------------|
-| Start Date (dd/mm/yyyy) |  On or after this date, a proactive chat will be triggered.| 
-| End Date (dd/mm/yyyy) | On or before this date, a proactive chat will be triggered. | 
-| Chat greeting | Greeting message for when a proactive chat has been triggered. | 
+|---------------|-------------|
+| Start Date (dd/mm/yyyy) | The date on or after which a proactive chat will be triggered. |
+| End Date (dd/mm/yyyy) | The date on or before which a proactive chat will be triggered. |
+| Chat greeting | The greeting message that is used when a proactive chat has been triggered. |
 
 ### Total Amount in Cart (Proactive Chat)
 
 | Friendly name | Description |
-| ------------- |--------------|
-|  Minimum| The minimum monetary amount (inclusive) in the shopping cart that is required to trigger a proactive chat when users visit the cart page. | 
-|  Maximum|The maximum monetary amount (inclusive) in the shopping cart that is required to trigger a proactive chat when users visit the cart page.  | 
-|Chat greeting  | Greeting message for when proactive chat has been triggered. | 
- 
+|---------------|-------------|
+| Minimum | The minimum monetary amount (inclusive) in the shopping cart that will trigger a proactive chat when users visit the cart page. |
+| Maximum | The maximum monetary amount (inclusive) in the shopping cart that will trigger a proactive chat when users visit the cart page. |
+|Chat greeting | The greeting message that is used when a proactive chat has been triggered. |
+
 ### Total Number of Items in Cart (Proactive Chat)
 
 | Friendly name | Description |
-| ------------- |--------------|
-|Minimum  | The minimum number of items (inclusive) in the shopping cart required to trigger a proactive chat when users visit the cart page. | 
-|Maximum  | The maximum number of items (inclusive) in the shopping cart required to trigger a proactive chat when users visit the cart page. | 
- |Chat greeting  | Greeting message for when a proactive chat has been triggered. | 
+|---------------|-------------|
+| Minimum | The minimum number of items (inclusive) in the shopping cart that will trigger a proactive chat when users visit the cart page. |
+| Maximum | The maximum number of items (inclusive) in the shopping cart that will trigger a proactive chat when users visit the cart page. |
+| Chat greeting | The greeting message that is used when a proactive chat has been triggered. |
 
 ### Specific Product(s) in Cart (Proactive Chat)
 
 | Friendly name | Description |
-| ------------- |--------------|
-| Product(s) ID/SKU | List of product IDs/SKU numbers that will trigger a proactive chat when users visit the cart page. | 
-| Chat greeting | Greeting message for when a proactive chat has been triggered. | 
+|---------------|-------------|
+| Product(s) ID/SKU | A list of the product IDs/stock keeping unit (SKU) numbers that will trigger a proactive chat when users visit the cart page. |
+| Chat greeting | The greeting message that is used when a proactive chat has been triggered. |
 
 ## Additional resources
 
