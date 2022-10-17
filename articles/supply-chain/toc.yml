@@ -3239,6 +3239,8 @@
         href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
       - name: USMCA certification of origin
         href: transportation/usmca-certification-of-origin.md
+      - name: Commercial invoices
+        href: transportation/commercial-invoice.md
       - name: Create a bill of lading
         href: transportation/create-bill-of-lading.md
       - name: Plan freight transportation routes
