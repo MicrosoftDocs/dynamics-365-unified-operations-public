@@ -39,7 +39,7 @@ ms.dyn365.ops.version: Platform update 27
 Whenever there's a requirement to cancel a batch job that is running, you can change the status of the batch job to **Canceling**.
 Canceling prevents the batch from picking up new tasks. The status for tasks that haven't been started are set to **Don't run**, and tasks that have started are set to **Canceling**. The statuses of the tasks won't change until they can terminate gracefully (that is either finish or error out).  
 <br/>
-![Screen shot showing how to change the status to Canceling for a selected batch job](./media/canceling-a-batch-job.png)  
+![Screen shot showing how to change the status to Canceling for a selected batch job](./media/cancelling-a-batch-job.png)  
 <br/>
 State of the batch job and its tasks after canceling:  
 <br/>
