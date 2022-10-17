@@ -353,7 +353,7 @@ Follow these steps to define which item sales tax groups generate which descript
 
    This format is printed when you run the **Report sales tax for settlement period** report. It's also printed when you select **Print** on the **Sales tax payments** page.
 
-4. In the **Special report** section, check that **Inclide corrections** is set to **Yes**.
+4. In the **Special report** section, check that **Include corrections** is set to **Yes**.
 5. On the **Tax authorities** page, select the tax authority, and in the **Report layout** field, select **Default**.
 
 If you're configuring the VAT declaration in a legal entity that has [multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md), follow these steps.
