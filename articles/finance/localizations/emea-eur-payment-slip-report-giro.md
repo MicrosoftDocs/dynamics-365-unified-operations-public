@@ -62,7 +62,7 @@ After you set up the payment slip attachment format for sales invoices, free tex
 4.  Close the form to save your changes.
 
 
-
+For more information about setting up and maintaining payment IDs, refer to [NO-00002 Customer payment based on payment ID](tasks/no-00002-customer-payment-based-payment-id.md).
 
 
 
