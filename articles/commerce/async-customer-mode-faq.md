@@ -44,7 +44,7 @@ Ensure the following actions have been performed in the order that they're liste
 1. Run the CDX P-job in Commerce headquarters to ensure async customer data is stored in the **RETAILASYNCCUSTOMERV2**, **RETAILASYNCADDRESSV2**, **RETAILASYNCCUSTOMERCONTACT**, **RETAILASYNCCUSTOMERAFFILIATION**, and **RETAILASYNCCUSTOMERATTRIBUTEV2** tables.
 1. Run the **Synchronize customers and channel requests** batch job in Commerce headquarters. After successful execution of the batch job, all records that have been successfully processed from the previously mentioned tables will have the **OnlineOperationCompleted** field set to **1**.
 
-### How do I know which customer management in asynchronous mode operation has failed, and how do I make changes, if needed?
+### How do I know which customer management in asynchronous mode operation has failed, and how do I make changes if they are required?
 
-To view all asynchronous mode operations and their synchronization statuses, in headquarters go to **Commerce and Retail \> Customers \> Customer synchronization status**. To make changes, edit a specific operation, update the fields, select **Save**, and then select **Synchronize** to sync the changes. 
+To view all asynchronous mode operations and their synchronization status, in Commerce headquarters go to **Commerce and Retail \> Customers \> Customer synchronization status**. To make changes, edit a specific operation, update the fields, select **Save**, and then select **Synchronize** to sync the changes.
 
