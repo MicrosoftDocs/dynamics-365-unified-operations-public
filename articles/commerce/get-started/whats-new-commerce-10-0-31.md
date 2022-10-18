@@ -2,7 +2,7 @@
 title: Preview of Dynamics 365 Commerce 10.0.31 (February 2023)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Commerce 10.0.31. 
 author: josaw1
-ms.date: 10/17/2022
+ms.date: 10/18/2022
 ms.topic: article
 # ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
@@ -18,7 +18,7 @@ ms.dyn365.ops.version: 10.0.31
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.31. This version has a build number of 10.0.1418 <!-- KFM: Get final build number --> and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Commerce preview version 10.0.31. This version has a build number of 10.0.1406 and is available on the following schedule:
 
 - **Preview of release:** October 2022
 - **General availability of release (self-update):** January 2023
@@ -41,12 +41,12 @@ The following table lists the features that are included in this release. We mig
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Commerce 10.0.31 includes platform updates. To learn more, see [Platform updates for version 10.0.31 of Finance and Operations apps (February 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-31.md). 
+Microsoft Dynamics 365 Commerce 10.0.31 includes platform updates. To learn more, see [Platform updates for version 10.0.31 of finance and operations apps (February 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-31.md). 
   
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.31, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=745468).
+For information about the bug fixes included in each of the updates that are part of version 10.0.31, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=758525).
 
 ### Dynamics 365 and industry clouds: 2022 release wave 2 plan
 
