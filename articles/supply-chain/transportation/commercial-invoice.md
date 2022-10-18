@@ -1,6 +1,6 @@
 ---
 title: Commercial invoices
-description: This article describes how to create and print a commercial invoice when using warehouse management processes (WMS).  
+description: This article describes how to create and print a commercial invoice when using transportation management processes (TMS).  
 author: Weijiesa
 ms.author: weijiesa
 ms.reviewer: kamaybac
@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-This article describes how to create and print a commercial invoice when using warehouse management processes (WMS).  <!-- KFM: Is WMS required for this? If so, we should move this topic to the Warehouse management area. -->
+This article describes how to create and print a commercial invoice when using transportation management processes (TMS).  <!-- KFM: Is WMS required for this? If so, we should move this topic to the Warehouse management area. -->
 
 A commercial invoice is required for the export and import clearance process. It's used to calculate tariffs, international commercial terms, and for customs purposes. Commercial invoices aren't usually needed for shipments between EU countries, just between EU countries and non-EU countries. A few countries require the commercial invoice to be on a specific form, but for most countries the seller or exporter version is acceptable as long as all the pertinent information is included.
 
