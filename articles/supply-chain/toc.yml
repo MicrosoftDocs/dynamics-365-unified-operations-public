@@ -206,8 +206,10 @@
           href: ../fin-ops-core/fin-ops/get-started/implement-multiple-projects-aad-tenant.md?context=/dynamics365/context/supply-chain
     - name: Troubleshooting and FAQs
       href: supply-chain-management-troubleshooting.md
-    - name: Globalization
+    - name: Globalization Studio
       items:
+      - name: Globalization Studio overview
+        href: ../finance/localizations/globalization-studio-overview.md?context=/dynamics365/context/supply-chai
       - name: Globalization resources
         href: ../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?context=/dynamics365/context/supply-chain
       - name: Globalization services
@@ -1747,18 +1749,8 @@
           href: sensor-data-intelligence/sdi-scenario-production-delays.md
     - name: IoT Intelligence
       items:
-        - name: IoT Intelligence home page
+        - name: IoT Intelligence now replaced by Sensor Data Intelligence
           href: iot/iot-intelligence-home-page.md
-        - name: Set up Azure resources
-          href: iot/iot-azure-setup.md
-        - name: Message schema formats for IoT Hub
-          href: iot/iot-schema-format.md
-        - name: Set up metrics
-          href: iot/iot-metrics-setup.md
-        - name: Scenario setup
-          href: iot/iot-scenario-setup.md
-        - name: Monitor and manage
-          href: iot/iot-management.md   
     - name: Master planning
       items:
       - name: Master planning home page
@@ -1783,8 +1775,10 @@
           href: master-planning/supply-schedule.md
         - name: Apply filters to a plan
           href: master-planning/planning-optimization/plan-filters.md
-        - name: Master planning with demand forecast
+        - name: Master planning with demand forecasts
           href: master-planning/planning-optimization/demand-forecast.md
+        - name: Master planning with supply forecasts
+          href: master-planning/planning-optimization/supply-forecast.md
         - name: Master planning with purchase trade agreements
           href: master-planning/planning-optimization/purchase-trade-agreement.md
         - name: Plan based on quotations and RFQs
@@ -1803,6 +1797,8 @@
           href: master-planning/planning-optimization/shelf-life.md
         - name: Scheduling with infinite capacity
           href: master-planning/planning-optimization/infinite-capacity-planning.md
+        - name: Finite capacity planning and scheduling
+          href: master-planning/planning-optimization/finite-capacity.md
         - name: Scheduling with resource selection based on capability
           href: master-planning/planning-optimization/capability-based-scheduling.md
         - name: Priority-based planning

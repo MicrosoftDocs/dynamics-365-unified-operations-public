@@ -4,10 +4,10 @@
 title: Commerce offline implementation and troubleshooting
 description: This article provides an overview of Microsoft Dynamics 365 Commerce offline implementation considerations and troubleshooting.
 author: jashanno
-ms.date: 11/22/2021
+ms.date: 09/29/2022
 ms.topic: article
 audience: IT Pro
-ms.reviewer: sericks
+ms.reviewer: josaw
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jashanno
@@ -35,7 +35,8 @@ For details regarding features that enhance or alter the data synchronization of
 | Feature name | Description |
 |--------------|-------------|
 | Advanced offline | This feature consists of a series of settings in the offline profile. These settings make additional offline switching scenarios available, give users the ability to switch to offline mode before they sign in to the POS, and allow for enhanced Commerce headquarters availability testing so that you can easily switch to offline mode and return to online status. |
-| Offline status dashboard | A new dashboard, provided as of the Commerce version 10.0.20 release, shows the latest offline status, error, and details of the database for each device.  This dashboard can be found at **Retail and Commerce \> Channel setup \> POS setup \> Register offline status**. For this dashboard to function correctly the **Modern POS offline monitoring** feature must be turned on in the **Feature management** workspace, followed by the execution of an 1110 distribution schedule job. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). |
+| Offline status dashboard | A new dashboard, provided as of the Commerce version 10.0.20 release, shows the latest offline status, error, and details of the database for each device.  This dashboard can be found at **Retail and Commerce \> Channel setup \> POS setup \> Register offline status**. For this dashboard to function correctly the **Modern POS offline monitoring** feature must be turned on in the **Feature management** workspace, followed by the execution of the **1110** distribution schedule job. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). |
+| Offline database compression | To reduce offline database sizes, this feature, available in Commerce release 10.0.29 and later, enables automated index compression outside of channel [store hours](store-hours.md). If store hours are not configured or not working properly, the compression will occur at all times. When compression occurs, whether based on store hours or not, Modern POS or Store Commerce will query the offline database for non-compressed and non-clustered indexes that are either greater than 100 MB, or at least 1% of the total database size. If any indexes are found that meet this criteria, compression will start for the largest index in the list, and then go idle for 10 minutes. After this time, compression will start for the next index, and this cycle will repeat until all of the selected indexes are compressed. If no indexes are found, the compression logic will pause for 30 minutes before checking again. For this feature to function correctly, **POS offline database compression** must be turned on in the **Feature management** workspace, then the **1070** distribution schedule job must be run. For more information, see the [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) article. |
 | Performance-based offline switching (POS seamless offline for performance degradation) | This feature, provided in release 10.0.20 and later, enables Modern POS devices to switch to offline mode seamlessly when encountering outbound web request performance degradation.  This feature requires the **Enable advanced offline switching** functionality to be enabled from the **Offline profile** page in Headquarters. The **POS seamless offline for performance degradations** feature must be turned on in the Feature management workspace. For more information, see [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). |
 
 ### Advanced offline feature
@@ -84,7 +85,7 @@ When you perform updates, it's crucial that you thoroughly test Modern POS (MPOS
     -	Customer account
     -	Gift card
 -	Test **Show journal**.
--	Start a transaction while you're in online mode. Then force the switch to offline mode (that is, disconnect the system from the internet instead of manually switching to offline mode), and continue to checkout.
+-	Start a transaction while you're in online mode. Then force the switch to offline mode (that is, disconnect the system from the internet instead of manually switching to offline mode), and continue to check out.
 -	Perform the previous test when the offline database doesn't have the latest data for the customer (missing) or a product (missing) in cart, for example. In this case, the expectation is that the cashier will receive a warning or error message, but will still be able to continue to use MPOS in offline mode to perform new cash and carry transactions.
 -	Perform one or more transactions while you're offline. Then switch back to online mode, and verify that the transactions are uploaded.
 

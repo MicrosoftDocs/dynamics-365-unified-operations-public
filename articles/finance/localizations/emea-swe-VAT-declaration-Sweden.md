@@ -166,7 +166,8 @@ To automatically generate a VAT declaration, associate sales tax codes in the ap
 
    This format will be printed when you run the **Report sales tax for settlement period** report and also when you select **Print** on the **Sales tax payments** page.
 
-4. On the **Tax authorities** page, select the tax authority, and then, in the **Report layout** field, select **Default**.
+4. If you must report the corrections, in the **Special report** section, set **Include corrections** to **Yes**.
+5. On the **Tax authorities** page, select the tax authority, and in the **Report layout** field, select **Default**.
 
 If you're configuring the VAT declaration in a legal entity where there are [multiple VAT registrations](emea-reporting-for-multiple-vat-registrations.md), follow these steps.
 

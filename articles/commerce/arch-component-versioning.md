@@ -34,15 +34,15 @@ The following illustration shows an overview of Dynamics 365 Commerce components
 
 To ensure compatibility between all Commerce components that are serviced and deployed by customers and partners, you must follow several versioning dependencies during servicing updates. The following list describes all these dependencies.
 
-- **Commerce headquarters and finance and operations apps must be on the same version as, or a newer version than, Commerce Scale Unit (both cloud and self-hosted).**
+- **Commerce headquarters and finance and operations apps must be on the same version as, or a later version than, Commerce Scale Unit (both cloud and self-hosted).**
 
     For example, if Commerce headquarters and finance and operations apps are on version 10.0.29, Commerce Scale Unit must be on version 10.0.29 or earlier (for example, 10.0.28 or 10.0.27).
 
-- **Commerce Scale Unit must be on the same version as, or a newer version than, Modern Point of Sale (POS), Hardware Station, and the Commerce software development kit (SDK) and associated local site configurations (such as modules, data actions, and themes).**
+- **Commerce Scale Unit must be on the same version as, or an later version than, Modern Point of Sale (MPOS), Hardware Station, and the Commerce software development kit (SDK) and associated local site configurations (such as modules, data actions, and themes).**
 
     For example, if Commerce Scale Unit is on version 10.0.29, Modern POS, Hardware Station, and the Commerce storefront must be on version 10.0.29 or earlier (for example, 10.0.28 or 10.0.27).
 
-- **Extension packages must be compiled against the same version as, or a newer version than, the target component that the extension applies to.**
+- **Extension packages must be compiled against the same version as, or an earlier version than, the target component that the extension applies to.**
 
     For example, if the deployed Commerce Scale Unit is on version 10.0.29, the corresponding extension packages must be compiled against version 10.0.29 or earlier (for example, 10.0.28 or 10.0.27).
 

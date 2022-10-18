@@ -7,7 +7,7 @@ ms.topic: article
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
-ms.author: v-savanh
+ms.author: TaylorVH
 ms.search.validFrom: 2022-02-01
 ms.dyn365.ops.version: Version 1611
 ms.search.form: LedgerFund

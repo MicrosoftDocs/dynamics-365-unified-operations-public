@@ -394,6 +394,8 @@
           items:
           - name: Store Commerce app
             href: dev-itpro/store-commerce.md
+          - name: Store Commerce app for mobile platforms
+            href: dev-itpro/store-commerce-mobile.md
           - name: Migrate Modern POS to Store Commerce
             href: dev-itpro/pos-extension/migrate-mpos-store-commerce.md
           - name: Device management implementation guidance
@@ -1384,8 +1386,10 @@
         href: set-up-rfm-analysis.md
       - name: Set up Microsoft Clarity in Dynamics 36 Commerce
         href: set-up-clarity.md
-    - name: Globalization
+    - name: Globalization Studio
       items:
+      - name: Globalization Studio overview
+        href: ../finance/localizations/globalization-studio-overview.md?context=/dynamics365/context/commerce
       - name: Fiscal integration overview for Commerce channel
         href: localizations/fiscal-integration-for-retail-channel.md
       - name: Set up fiscal integration for Commerce channel
