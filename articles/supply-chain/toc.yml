@@ -3699,7 +3699,7 @@
         items:
         - name: Enable warehousing telemetry with Application Insights
           href: warehousing/application-insights-warehousing.md
-        - name: Monitor Warehouse Management mobile app usage and performance
+        - name: Monitor mobile device usage and performance
           href: warehousing/application-insights-wma.md
     - name: Supply Chain Management development 
       items:

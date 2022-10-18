@@ -1,5 +1,5 @@
 ﻿---
-title: Monitor Warehouse Management mobile app usage and performance
+title: Monitor mobile device usage and performance
 description: The Warehouse Management mobile app emits telemetry data, which lets you monitor and analyze the activities and general health of your devices. You can use this information to diagnose problems and analyze operations that affect performance.
 author: Mirzaab
 ms.author: mirzaab
@@ -15,7 +15,7 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-The Warehouse Management mobile app emits telemetry data, which lets you monitor and analyze the activities and general health of your devices. You can use this information to diagnose problems and analyze operations that affect performance. Telemetry data is collected and processed using [Application Insights](/azure/azure-monitor/app/app-insights-overview), which is an Azure service optimized for this purpose.
+The Warehouse Management mobile app emits telemetry data, which lets you monitor and analyze the activity and general health of your mobile devices. You can use this information to diagnose problems and analyze operations that affect performance. Telemetry data is collected and processed using [Application Insights](/azure/azure-monitor/app/app-insights-overview), which is an Azure service optimized for this purpose.
 
 ## Prerequisites
 

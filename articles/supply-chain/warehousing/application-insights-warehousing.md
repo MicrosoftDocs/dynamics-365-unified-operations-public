@@ -62,4 +62,4 @@ Once you have set up Application Insights and have a copy of its instrumentation
 
 ## Next steps
 
-- [Monitor Warehouse Management mobile app usage and performance](application-insights-wma.md)
+- [Monitor mobile device usage and performance](application-insights-wma.md)
