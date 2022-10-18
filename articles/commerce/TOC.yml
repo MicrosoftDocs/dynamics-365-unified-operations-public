@@ -1296,8 +1296,14 @@
             href: cookie-consent-module.md
         - name: Chat modules
           items:
-          - name: Commerce chat module
+          - name: Commerce chat features overview
+            href: commerce-chat-overview.md
+          - name: Commerce Chat with Omnichannel for Customer Service module
             href: commerce-chat-module.md
+          - name: Commerce Chat with Power Virtual Agents module
+            href: chat-module-pva.md
+          - name: Commerce chat module proactive chat parameters
+            href: chat-proactive-chat-parameters.md
       - name: Search
         items:
         - name: Default category landing page and search results page overview
