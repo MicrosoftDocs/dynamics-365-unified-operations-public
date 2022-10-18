@@ -73,6 +73,7 @@ The minimum and maximum number of participants that you can register for a cours
 ### Course setup type 
 
 **Setup types** determine the structure of the course and there are three **Setup types** for courses: 
+
 |**Setup type**|**Description**|
 |--------------|------------------|
 |**Standard** | This course type doesn't have a daily agenda. This is the default setup type when you create a new course.|
@@ -90,12 +91,13 @@ For each course, complete the following tasks:
  - Recommend hotels to course participants 
  - Create a course description, which you can be posted on **Employee self service** 
 
-> [!Note] 
-> You can only delete a course if no one has registered for it. 
+>[!Note] 
+>You can only delete a course if no one has registered for it. 
 
 ### Course statuses 
 
 The following table lists course statuses and the actions to complete for a specific status: 
+ 
 |Status|Actions| 
 |------|--------|
 |**Created**| </p><ul><li>Enter and modify course information</li><li>Change the course status to **Open** so that workers can register for the course</li></ul><p>| 
