@@ -98,8 +98,7 @@ For each course, complete the following tasks:
 The following table lists course statuses and the actions to complete for a specific status: 
  
 |Status|Actions| 
-|------|--------|
- 
+|------|--------| 
 |**Created**|</p><ul><li>Enter and modify course information</li><li>Change the course status to **Open** so that workers can register for the course</li></ul><p>| 
 |**Open**|</p><ul><li>Register participants for the course</li><li>Remove participants from the course</li><li>Confirm participants for the course</li><li>Change the course status to **Closed** or **Canceled** for participants whose status is **Confirmed**</p><ul><li>|
 |**Closed**|You can reopen the course.| 
