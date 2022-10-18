@@ -22,7 +22,7 @@ The Warehouse Management mobile app emits telemetry data, which lets you monitor
 To use Warehouse Management mobile app, the following prerequisites must be in place for your system:
 
 - **Supply Chain Management version** – You must be running Supply Chain Management version 10.0.29 or higher.
-- **Application Insights** – you must have an Application Insights resource in Azure and configure your Supply Chain Management environment to send telemetry data to it. For instructions about how to set this up, see [Enable warehousing telemetry with Application Insights](application-insights-warehousing.md).
+- **Application Insights** – you must have an Application Insights resource in Azure and configure your Supply Chain Management environment to send telemetry data to it. For instructions, see [Enable warehousing telemetry with Application Insights](application-insights-warehousing.md).
 
 ## Available telemetry
 
@@ -30,18 +30,18 @@ In Application Insights, telemetry from the Warehouse Management mobile app is l
 
 | Name | Description |
 |---|---|
-| backendProcessingTime | Provides information about the processing time of the request on the server. |
-| batteryLevel | Provides information about the device's battery level. |
-| batterySession | Provides information about the battery session of the device.</br></br>If the device is charging, the telemetry logs it as such. Otherwise, a GUID is logged that represents an on-battery session. Every time the device charges, the on-battery session GUID is changed. |
-| batteryState | Provides information about the charging status of the device.</br></br>For more information, see [BatteryState Enum](/dotnet/api/xamarin.essentials.batterystate). |
-| deviceId | The GUID of the device that performs the call. |
-| eventid | A constant that identifies the telemetry emitted by the Warehouse Management mobile app. This helps you tell mobile-app data apart from other warehousing telemetry events emitted from Supply Chain Management. |
-| isEnergySaverTurnedOn | Provides information about the energy saver status of the device. |
-| powerSource | Provides information about the power source of the device.</br></br>For more information, see [BatteryPowerSource Enum](/dotnet/api/xamarin.essentials.batterypowersource). |
-| renderingDurationInMilliseconds | Provides information about the time the mobile app takes to render page controls after calling the server. |
-| roundTripLatencyDurationInMilliseconds | Provides information about the total time of a server call, from the request to the response. |
-| serverAadTenantId | Provides the Azure AD Tenant ID of the connected Supply Chain Management environment. |
-| serverEnvironmentId | Provides the environment ID of the connected Supply Chain Management environment. |
+| `backendProcessingTime` | Provides information about the processing time of the request on the server. |
+| `batteryLevel` | Provides information about the device's battery level. |
+| `batterySession` | Provides information about the battery session of the device. </br></br>If the device is charging, the telemetry logs it as such. Otherwise, a GUID is logged that represents an on-battery session. Every time the device charges, the on-battery session GUID is changed. |
+| `batteryState` | Provides information about the charging status of the device.</br></br>For more information, see [BatteryState Enum](/dotnet/api/xamarin.essentials.batterystate). |
+| `deviceId` | The GUID of the device that performs the call. |
+| `eventid` | A constant that identifies the telemetry emitted by the Warehouse Management mobile app. This information helps you tell mobile-app data apart from other warehousing telemetry events emitted from Supply Chain Management. |
+| `isEnergySaverTurnedOn` | Provides information about the energy saver status of the device. |
+| `powerSource` | Provides information about the power source of the device.</br></br>For more information, see [BatteryPowerSource Enum](/dotnet/api/xamarin.essentials.batterypowersource). |
+| `renderingDurationInMilliseconds` | Provides information about the time the mobile app takes to render page controls after calling the server. |
+| `roundTripLatencyDurationInMilliseconds` | Provides information about the total time of a server call, from the request to the response. |
+| `serverAadTenantId` | Provides the Azure AD Tenant ID of the connected Supply Chain Management environment. |
+| `serverEnvironmentId` | Provides the environment ID of the connected Supply Chain Management environment. |
 
 ## View telemetry data in Application Insights
 

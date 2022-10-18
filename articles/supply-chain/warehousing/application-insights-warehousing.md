@@ -39,20 +39,20 @@ Start by setting up Application Insights on your Azure subscription. Follow thes
 
 ## Set up your apps to send telemetry data to Azure Application Insights
 
-Once you have set up Application Insights and have a copy of its instrumentation key, you are ready to enable Supply Chain Management to send telemetry data. Follow these steps:
+Once you have set up Application Insights and have a copy of its instrumentation key, you're ready to enable Supply Chain Management to send telemetry data. Follow these steps:
 
 1. Sign in to Supply Chain Management as a user with system admin privileges.
 1. Go to **System administration \> Setup \> Operational insights**.
 1. Open the **Configure** tab and make the following settings:
-    - **Commerce channel events** – Choose whether to send commerce-channel telemetry data to Application Insights. This setting isn't relevant for warehousing. If you aren't using Dynamics 365 Commerce and/or don't want to collect telemetry about it, you should set this to *No*.
-    - **Warehouse events** – Choose whether to send warehousing telemetry data to Application Insights. You should set this to *Yes*.
+    - **Commerce channel events** – Choose whether to send commerce-channel telemetry data to Application Insights. This setting isn't relevant for warehousing. If you aren't using Dynamics 365 Commerce and/or don't want to collect telemetry about it, you should set this option to *No*.
+    - **Warehouse events** – Choose whether to send warehousing telemetry data to Application Insights. You should set this option to *Yes*.
 
 1. Open the **Environments** tab and make the following settings:
     - **LCS Environment ID** – Enter the ID for the Lifecycle Services (LCS) environment that you want to send telemetry data from. To find this ID, [sign in to LCS](https://lcs.dynamics.com/Logon/Index), go to the environment details page for your environment, and look in the **Environment Details** section, which lists the **Environment ID**.
     - **Environment mode** – Identify the mode of your selected environment. The supported environment modes are *Development*, *Test*, and*Production*.
 
 1. Open the **Application Insights registry** tab and make the following settings:
-    - **Environment mode** – Identify the mode of your selected environment. This must match the mode you specified on the **Environments** tab.
+    - **Environment mode** – Identify the mode of your selected environment. This value must match the mode you specified on the **Environments** tab.
     - **Instrumentation key** – Enter the instrumentation key that you copied when setting up Application Insights in Azure.
 
     > [!NOTE]
