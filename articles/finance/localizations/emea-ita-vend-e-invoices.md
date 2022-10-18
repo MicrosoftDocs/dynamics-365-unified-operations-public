@@ -91,6 +91,7 @@ If no invoice type is associated with the sales tax code, the following types of
 - **TD16** – For vendors that are located in Italy, if an invoice contains a sales tax code where either **Use tax** or **Reverse charge** is activated.
 - **TD17** – For vendors that are located in the European Union (EU), if an invoice is issued for the provision of **services**.
 - **TD18** – For vendors that are located in the EU, if an invoice is issued for the sale of **products**.
+- **TD28** – For vendors that are located in the San-Marino and the sales tax amount is greater then zero (available from version 273.47 of the **Vendor Invoice (IT)** format).
 
 If a required invoice type isn't entered, you can manually adjust the invoice type in the vendor invoice journal.
 
