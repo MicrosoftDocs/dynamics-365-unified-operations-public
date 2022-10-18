@@ -112,6 +112,9 @@ After the data is prepared, and the *asset maintenance* scenario is configured a
 1. Find and select the asset that you want to inspect. (If you're using the demo data that you created earlier in this article, select *AK-101*.)
 1. On the Action Pane, on the **Asset** tab, in the **Preventive** group, select **Counters** to open the page for counter records for asset *AK-101*.
 
+> [!NOTE]
+> The counter records are configured by default to be inserted every three hours, which means sensor data will be aggregated at that interval. You can change the interval by editing the query in the Azure Stream Analytics component.
+
 ### Generate maintenance work orders
 
 After you enable the *asset maintenance* scenario and set up the maintenance plan, you can run the maintenance schedule to generate maintenance work orders. For more information about how to work with preventive maintenance, see [Preventive maintenance overview](../asset-management/preventive-and-reactive-maintenance/preventive-maintenance-overview.md).
