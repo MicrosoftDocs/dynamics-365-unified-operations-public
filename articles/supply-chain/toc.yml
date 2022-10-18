@@ -3637,6 +3637,8 @@
             href: warehousing/control-warehouse-location-directives.md
           - name: Work with location directives
             href: warehousing/create-location-directive.md
+          - name: Test location directives with acceptance tests
+            href: warehousing/location-directive-acceptance-tests.md
           - name: Configure product filters for warehouse transactions
             href: warehousing/filters-and-filter-codes.md
           - name: Location stocking limits
