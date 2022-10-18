@@ -76,7 +76,6 @@ The minimum and maximum number of participants that you can register for a cours
 
 |Setup type|Description|
 |------|--------|
-
 |**Standard** | This course type doesn't have a daily agenda. This is the default setup type when you create a new course.|
 |**Agenda**| Select this type to plan the details of each day of a course that takes place over multiple days.| 
 | **Agenda + session**|<p>Select this type for the more complex courses. For example, you can divide the agenda for the course into tracks and sessions:</p><ul><li>**Track** – Tracks are specific subject areas for a course.</li><li>**Sessions** – Sessions divide up tracks and help identify specific processes or techniques that are relevant to the track.</li></ul><p>| 
@@ -100,8 +99,7 @@ The following table lists course statuses and the actions to complete for a spec
  
 |Status|Actions| 
 |------|--------|
-
-|**Created**| </p><ul><li>Enter and modify course information</li><li>Change the course status to **Open** so that workers can register for the course</li></ul><p>| 
+|**Created**|</p><ul><li>Enter and modify course information</li><li>Change the course status to **Open** so that workers can register for the course</li></ul><p>| 
 |**Open**|</p><ul><li>Register participants for the course</li><li>Remove participants from the course</li><li>Confirm participants for the course</li><li>Change the course status to **Closed** or **Canceled** for participants whose status is **Confirmed**</p><ul><li>|
 |**Closed**|You can reopen the course.| 
 |**Canceled**|You can reopen the course.| 
