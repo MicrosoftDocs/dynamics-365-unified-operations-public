@@ -4,7 +4,7 @@ description: This article describes how to set up Supply Chain Management to sen
 author: Mirzaab
 ms.author: mirzaab
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: OperationalInsightsProvisioningForm
 ms.topic: how-to
 ms.date: 10/18/2022
 ms.custom: bap-template
