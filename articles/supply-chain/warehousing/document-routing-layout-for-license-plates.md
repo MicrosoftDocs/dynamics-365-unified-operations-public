@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 10.0.10
 
 This article describes how to create layouts for license plate, container, and wave labels. It also provides guidelines for using the Zebra Programming Language (ZPL) used to create the layouts.
 
-Document routing layouts define the the way labels are laid out and the data that is printed on them. You configure the printing trigger points when you set up mobile device menu items and work templates.
+Document routing label layouts define the way that labels are laid out and the data that is printed on them. You configure the printing trigger points when you set up mobile device menu items and work templates.
 
-The information in this article applies for all document routing label layouts, including [license plate labels](tasks/license-plate-label-printing.md), [container labels](print-container-labels.md), and [wave labels](configure-wave-label-printing.md).
+The information in this article applies to all document routing label layouts, including the layouts for [license plate labels](tasks/license-plate-label-printing.md), [container labels](print-container-labels.md), and [wave labels](configure-wave-label-printing.md).
 
 You can print highly complex labels, provided that the printing device can interpret the text that is sent to it. For example, a ZPL layout that includes a bar code might resemble the following example.
 
@@ -140,7 +140,7 @@ $DisplayListOfItemsNumbers()[1]$
 
 ## More information about how to print labels
 
-For more information about how to set up and print labels, see:
+For more information about how to set up and print labels, see the following articles:
 
 - [License plate label printing](tasks/license-plate-label-printing.md)
 - [Print container labels](print-container-labels.md)
