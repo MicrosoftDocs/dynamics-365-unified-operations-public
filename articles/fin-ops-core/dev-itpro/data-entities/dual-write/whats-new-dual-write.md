@@ -45,6 +45,16 @@ The August release of Dual-write Global Address Book solution 3.5.1.22 contains 
 |Bug fix|	Contact created from the marketing portal and during the lead qualification scenario doesn't having a valid party id. |	General availability|
 |Bug fix|	Fixed **The 'contact' entity must be in the default (null) or unchanged state** error when a contact is created from CRM portals.|	General availability|
 
+### Solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+|Party|	Yes|	3.5.1.22|	3.5.1.55|
+|Dynamics365GABExtended	|Yes	|3.5.1.22	|3.5.1.55|
+|Dynamics365GABDualWriteEntityMaps	|Yes|	3.5.1.22	|3.5.1.55|
+|Dynamics365GABPartyAnchor|	Yes	|3.5.1.22	|3.5.1.55|
+|Dynamics365GABPartyCommon	|Yes|	3.5.1.22	|3.5.1.55|
+
 
 ## July 2022 release 
 
