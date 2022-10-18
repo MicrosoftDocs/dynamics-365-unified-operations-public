@@ -4,7 +4,7 @@
 title: Commerce Chat with Power Virtual Agents module
 description: This article describes the Commerce Chat with Power Virtual Agents module that integrates Microsoft Power Virtual Agents with Dynamics 365 Commerce websites.
 author: gvrmohanreddy
-ms.date: 10/13/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -17,7 +17,6 @@ ms.search.validFrom: 2022-09-07
 # Commerce Chat with Power Virtual Agents module
 
 [!include [banner](includes/banner.md)]
-[!include [banner](includes/preview-banner.md)]
 
 This article describes the Commerce Chat with Power Virtual Agents module that integrates Microsoft Power Virtual Agents with Dynamics 365 Commerce websites.
 
