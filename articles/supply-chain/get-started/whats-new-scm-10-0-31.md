@@ -15,7 +15,7 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.31. This version has a build number of 10.0.1418 <!-- KFM: Get final build number --> and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.31. This version has a build number of 10.0.1406 and is available on the following schedule:
 
 - **Preview of release:** October 2022
 - **General availability of release (self-update):** January 2023
@@ -67,9 +67,12 @@ We have recently added or significantly updated the following help articles. The
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.31 includes platform updates. To learn more, see [Platform updates for version 10.0.31 of Finance and Operations apps (February 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-31.md). <!--KFM: Confirm link -->
 
+<!--KFM: Update when KB is available 
 ### Bug fixes
 
 For information about the bug fixes included in each of the updates that are part of version 10.0.29, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=745468).
+
+-->
 
 ### Dynamics 365 and industry clouds: 2022 release wave 1 plan
 
