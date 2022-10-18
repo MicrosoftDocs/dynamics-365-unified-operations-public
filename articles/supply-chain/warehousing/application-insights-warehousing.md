@@ -13,7 +13,6 @@ ms.custom: bap-template
 # Enable warehousing telemetry with Application Insights
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 This article describes how to set up Supply Chain Management to send warehousing telemetry data to Azure Application Insights.
 

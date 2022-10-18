@@ -56,8 +56,8 @@ As a simple example, follow these steps:
     ```plaintext
     kql
     customEvents
-    \| take 100
-    \| sort by timestamp desc
+    | take 100
+    | sort by timestamp desc
     ```
 
 ## Set up alerts on telemetry events
