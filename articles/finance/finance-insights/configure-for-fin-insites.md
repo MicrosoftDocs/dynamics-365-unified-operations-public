@@ -110,8 +110,4 @@ After the add-in is successfully installed, it might take up to an hour before y
 > [!NOTE]
 > If the **Insights provisioning status check** process doesn't run, go to **System administration** > **Inquiries** > **Batch jobs**. In the **Process automation polling system** field, change the value to **Waiting** to initiate the process. 
 > 
-## Feedback and support
-
-If you're interested in providing feedback, or if you need support, send email to [Finance insights (Preview)](mailto:fiap@microsoft.com).
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

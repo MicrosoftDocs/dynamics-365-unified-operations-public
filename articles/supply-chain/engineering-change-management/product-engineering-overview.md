@@ -79,6 +79,9 @@ Next, turn on the configuration keys by following these steps. These are not tur
     - **For Tier 1 (development) environments**: Open your project in Microsoft Visual Studio and then select **Dynamics 365 \> Synchronize database \> Synchronize**.
     - **For Tier 2 (and higher) environments**: The database syncs automatically after you put the environment in and out of maintenance mode, so you can skip this step.
 
+> [!NOTE]
+> To use engineering change management, both the BOM number sequence and the formula number sequence (if you are using formulas) must be set to *Automatic* on the **Number sequences** page.
+
 ### Turn on additional engineering change management features
 
 After you turn on the basic engineering change management features and enable their configuration keys, several additional and optional engineering change management features are added to feature management. Each of those features is listed under the **Engineering change management** module. The following table describes each optional feature and provides links for more information.

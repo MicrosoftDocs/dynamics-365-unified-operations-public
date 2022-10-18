@@ -276,6 +276,7 @@ If you don't have a file or QR code, you can manually configure the app on the d
 
         > [!IMPORTANT]
         > Don't end this value with a slash (/).
+        > Ensure the HTTPS (SSL) certificate is valid.
 
     - **Active directory tenant** – Enter the Azure AD domain name that you're using with the Supply Chain Management server. This value has the form `https://login.windows.net/<your-Azure-AD-domain-name>`. Here is an example: `https://login.windows.net/contosooperations.onmicrosoft.com`. For more information about how to find your Azure AD domain name, see [Locate important IDs for a user](/partner-center/find-ids-and-domain-names).
 

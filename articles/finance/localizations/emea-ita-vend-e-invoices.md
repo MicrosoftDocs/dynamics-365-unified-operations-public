@@ -47,7 +47,7 @@ Follow these steps to set up the electronic invoice configuration in Accounts pa
    > 
    >     These default settings are required for all scenarios, even if **Reverse charge** isn't applicable.
    >
-   > 2. In the **Conditions** section, in the **Name** column, add the other required Reverse charge item groups and associate them with the related values in the **Lookup result** column. For more details about how to set up Reverese charge item groups, see ![Customer electronic invoices](emea-ita-e-invoices.md)
+   > 2. In the **Conditions** section, in the **Name** column, add the other required Reverse charge item groups and associate them with the related values in the **Lookup result** column. For more details about how to set up Reverese charge item groups, see [Customer electronic invoices](emea-ita-e-invoices.md).
 
 
 
@@ -91,6 +91,7 @@ If no invoice type is associated with the sales tax code, the following types of
 - **TD16** – For vendors that are located in Italy, if an invoice contains a sales tax code where either **Use tax** or **Reverse charge** is activated.
 - **TD17** – For vendors that are located in the European Union (EU), if an invoice is issued for the provision of **services**.
 - **TD18** – For vendors that are located in the EU, if an invoice is issued for the sale of **products**.
+- **TD28** – For vendors that are located in the San-Marino and the sales tax amount is greater then zero (available from version 273.47 of the **Vendor Invoice (IT)** format).
 
 If a required invoice type isn't entered, you can manually adjust the invoice type in the vendor invoice journal.
 

@@ -17,6 +17,7 @@ ms.dyn365.ops.version: 10.0.28
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Before you can use Demand Driven Material Requirements Planning (DDMRP) functionality, it and its prerequisite feature must be turned on for your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of these features and turn them on. Turn on the following features in the following order:
 

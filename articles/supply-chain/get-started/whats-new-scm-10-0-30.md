@@ -13,12 +13,11 @@ ms.search.validFrom: 2022-09-08
 ms.dyn365.ops.version: 10.0.30
 ---
 
-# Preview of Dynamics 365 Supply Chain Management 10.0.30 (November 2022)
+# What's new or changed in Dynamics 365 Supply Chain Management 10.0.30 (November 2022)
 
 [!include [banner](../includes/banner.md)]
-[!include [preview banner](../includes/preview-banner.md)]
 
-This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management preview version 10.0.30. This version has a build number of 10.0.1362 and is available on the following schedule:
+This article lists features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management version 10.0.30. This version has a build number of 10.0.1362 and is available on the following schedule:
 
 - **Preview of release:** September 2022
 - **General availability of release (self-update):** October 2022
@@ -31,7 +30,7 @@ The following table lists the features that are included in this release. We mig
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
 | Manufacturing | [Monitor equipment with Sensor Data Intelligence](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/monitor-equipment-sensor-data-intelligence) | [Sensor Data Intelligence home page](../sensor-data-intelligence/sdi-home-page.md) | Feature management:<br>*(Preview) Sensor Data Intelligence* |
-| Warehouse management | Multi-level detours for the Warehouse Management mobile app <!-- KFM: Add link when RP updates --> | [Configure detours for steps in mobile device menu items](../warehousing/warehouse-app-detours.md) | Feature management:<br>*Multi-level detours for the Warehouse Management mobile app* |
+| Warehouse management | [Multilevel detours for the Warehouse Management mobile app](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/multi-level-detours-warehouse-management-mobile-app) | [Configure detours for steps in mobile device menu items](../warehousing/warehouse-app-detours.md) | Feature management:<br>*Multi-level detours for the Warehouse Management mobile app* |
 
 ## Feature enhancements included in this release
 
@@ -48,7 +47,7 @@ If you want to turn any of these features on or off, you must do so in [feature 
 
 ### Platform updates for Finance and Operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.30 includes platform updates. To learn more, see [Platform updates for version 10.0.30 of Finance and Operations apps (November 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md). <!--KFM: Confirm link -->
+Microsoft Dynamics 365 Supply Chain Management 10.0.30 includes platform updates. To learn more, see [Platform updates for version 10.0.30 of Finance and Operations apps (November 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-30.md).
 
 ### Bug fixes
 

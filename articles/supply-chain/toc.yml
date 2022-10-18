@@ -12,14 +12,12 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
+        - name: Supply Chain Management 10.0.31 (February 2022)
+          href: get-started/whats-new-scm-10-0-31.md
         - name: Supply Chain Management 10.0.30 (November 2022)
           href: get-started/whats-new-scm-10-0-30.md
         - name: Supply Chain Management 10.0.29 (October 2022)
           href: get-started/whats-new-scm-10-0-29.md
-        - name: Supply Chain Management 10.0.28 (August 2022)
-          href: get-started/whats-new-scm-10-0-28.md
-        - name: Supply Chain Management 10.0.27 (July 2022)
-          href: get-started/whats-new-scm-10-0-27.md
       - name: Removed or deprecated features
         items:
         - name: Removed or deprecated features home page
@@ -1775,10 +1773,14 @@
           href: master-planning/supply-schedule.md
         - name: Apply filters to a plan
           href: master-planning/planning-optimization/plan-filters.md
-        - name: Master planning with demand forecast
+        - name: Master planning with demand forecasts
           href: master-planning/planning-optimization/demand-forecast.md
+        - name: Master planning with supply forecasts
+          href: master-planning/planning-optimization/supply-forecast.md
         - name: Master planning with purchase trade agreements
           href: master-planning/planning-optimization/purchase-trade-agreement.md
+        - name: Plan based on quotations and RFQs
+          href: master-planning/planning-optimization/quotation-planning.md
         - name: Date and time parameters used by Planning Optimization
           href: master-planning/planning-optimization/date-time-used.md
         - name: Safety margins
@@ -2323,6 +2325,8 @@
           href: pim/tasks/create-product-master.md
         - name: Create predefined product variants
           href: pim/tasks/create-predefined-product-variants.md
+        - name: Show translated product names and descriptions in the UI
+          href: pim/show-translated-product-info.md
         - name: Manage units of measure
           href: pim/tasks/manage-unit-measure.md
         - name: Unit of measure conversion per product variant
@@ -3633,6 +3637,8 @@
             href: warehousing/control-warehouse-location-directives.md
           - name: Work with location directives
             href: warehousing/create-location-directive.md
+          - name: Test location directives with acceptance tests
+            href: warehousing/location-directive-acceptance-tests.md
           - name: Configure product filters for warehouse transactions
             href: warehousing/filters-and-filter-codes.md
           - name: Location stocking limits

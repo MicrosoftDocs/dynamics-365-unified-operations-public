@@ -70,6 +70,10 @@ When updating an existing time off request, you can add an attachment. You can a
 
 ## Cancel time off requests
 
+>[!NOTE] 
+> **Cancel time off** is available when the feature **Leave request workflow experience enhancements** is enabled in the **Feature management** workspace.  
+
+
 1. In the **Employee self service** workspace, select **View time off** in the **Time Off Balances** tile.
 
 2. On the **Time off** page, select one or more time off requests to cancel.

@@ -17,6 +17,15 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
+
+## Video instructions
+
+The following video shows how to turn on the Sensor Data Intelligence feature and [deploy the required Azure resources](sdi-deploy-iot-solution-on-azure.md). The other section in this article provides the same instructions in a text-based format.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE58g3I]
+
+## Procedure
 
 Before you can use Sensor Data Intelligence, it must be turned on for your system.
 

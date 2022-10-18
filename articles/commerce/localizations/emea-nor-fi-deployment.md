@@ -2,7 +2,7 @@
 title: Deployment guidelines for cash registers for Norway
 description: This article provides guidance about how to enable the cash register functionality for the Microsoft Dynamics 365 Commerce localization for Norway.
 author: EvgenyPopovMBS
-ms.date: 08/23/2022
+ms.date: 10/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -27,7 +27,7 @@ Complete the fiscal registration setup steps that are described in [Set up the f
 
 1. [Set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to make a note of the settings of the fiscal registration process that are [specific to Norway](#configure-the-fiscal-registration-process).
 1. [Set error handling settings](./setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
-1. [Enable manual execution of postponed fiscal registration](./setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-postponed-fiscal-registration).
+1. [Enable manual execution of deferred fiscal registration](./setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
 1. [Configure channel components](#configure-channel-components).
 
 ### Configure the fiscal registration process
