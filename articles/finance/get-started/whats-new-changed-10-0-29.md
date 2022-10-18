@@ -134,7 +134,7 @@ The following table lists the features that are turned on by default in 10.0.29.
 | Budget planning query optimization generation for large budget plans  |  8/1/2022 | Mandatory | Budget planning |
 | Budget register entries for quantity only |  8/1/2022  | On by default | Budgeting|
 | Open payment journal from Checks page   |  8/1/2022  | Mandatory | Budgeting |
-| Restrict case lookup based on legal entity |3/31/22  | On by default | Cast management |
+| Restrict case lookup based on legal entity |3/31/22  | On by default | Case management |
 | Open payment journal from Checks page   |   8/1/2022  | Mandatory | Cash management |
 | Vendor details added to Bridged transactions and Checks pages   |  8/1/2022  | Mandatory | Cash management |
 | Enable bank revaluation globally without a parameter |  8/1/2022 | Mandatory | Cash management |
