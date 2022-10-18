@@ -250,7 +250,7 @@
           href: accounts-payable/invoice-capture-advanced-settings.md
         - name: Invoice capture dashboard
           href: accounts-payable/invoice-capture-dashboard.md
-        - href: Invoice capture received files
+        - name: Invoice capture received files
           href: accounts-payable/invoice-capture-rec-files.md
       - name: Vendor invoice automation    
         items: 
