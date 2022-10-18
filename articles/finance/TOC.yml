@@ -248,6 +248,10 @@
           href: accounts-payable/invoice-capture-workspace.md
         - name: Invoice capture advanced settings
           href: accounts-payable/invoice-capture-advanced-settings.md
+        - name: Invoice capture dashboard
+          href: accounts-payable/invoice-capture-dashboard.md
+        - href: Invoice capture received files
+          href: accounts-payable/invoice-capture-rec-files.md
       - name: Vendor invoice automation    
         items: 
         - name: Automated vendor invoicing processes overview
@@ -263,7 +267,7 @@
         - name: View vendor invoice automation results
           href: accounts-payable/view-automated-vendor-invoice.md
         - name: Vendor invoice entry workspace
-          href: accounts-payable/vendor-invoices-workspace.md
+          href: accounts-payable/vendor-invoices-workspace.md         
       - name: Accounting distributions and subledger journal entries for vendor invoices
         href: accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
       - name: Invoice matching and intercompany purchase orders
@@ -440,7 +444,7 @@
           href: accounts-receivable/subscription-billing-summary.md
         - name: Recurring contract billing
           items:
-          - name: Set up recurring contact billing
+          - name: Set up recurring contract billing
             href: accounts-receivable/sb-recur-bill-parameters.md
           - name: Create billing schedules
             href: accounts-receivable/sb-billing-schedules.md
