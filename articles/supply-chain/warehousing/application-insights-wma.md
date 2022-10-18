@@ -10,7 +10,7 @@ ms.date: 10/18/2022
 ms.custom: bap-template
 ---
 
-# Monitor Warehouse Management mobile app usage and performance
+# Monitor mobile device usage and performance
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
