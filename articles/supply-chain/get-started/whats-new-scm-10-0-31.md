@@ -59,6 +59,7 @@ We have recently added or significantly updated the following help articles. The
 | Feature area | New or updated articles |
 |---|---|
 | Master planning | [Master planning for products with limited shelf life](../master-planning/planning-optimization/shelf-life.md) |
+| Master planning | [Run planning for a subset of items](../master-planning/planning-optimization/plan-filters.md) |
 | Warehouse management | [Manually handle sales and transfer line picking exceptions](../warehousing/manual-order-line-picking-exception-handling.md) |
 
 ## Additional resources
@@ -67,12 +68,9 @@ We have recently added or significantly updated the following help articles. The
 
 Microsoft Dynamics 365 Supply Chain Management 10.0.31 includes platform updates. To learn more, see [Platform updates for version 10.0.31 of Finance and Operations apps (February 2023)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-31.md). <!--KFM: Confirm link -->
 
-<!--KFM: Update when KB is available 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.29, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=745468).
-
--->
+For information about the bug fixes included in each of the updates that are part of version 10.0.29, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=758525).
 
 ### Dynamics 365 and industry clouds: 2022 release wave 1 plan
 
