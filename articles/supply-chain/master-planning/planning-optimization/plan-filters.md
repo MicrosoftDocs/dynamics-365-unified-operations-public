@@ -67,7 +67,7 @@ Follow these steps to set up the runtime filter and BOM levels for a master plan
         - Set this field to *1* to include supply for BOM components.
         - Set this field to *2* to include supply for BOM components and their derived BOM components.
 
-1. On the **Run in the background** FastTab, set recurrence and other batch options in the usual way. The fields work just as they do for other types of [background jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Microsoft Dynamics 365 Supply Chain Management.
+1. On the **Run in the background** FastTab, set recurrence and other batch options in the usual way. The fields work just as they do for other types of [background jobs](../../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Microsoft Dynamics 365 Supply Chain Management.
 
 ## Combine plan filters and runtime filters
 
