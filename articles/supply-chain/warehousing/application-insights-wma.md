@@ -33,11 +33,11 @@ In Application Insights, telemetry from the Warehouse Management mobile app is l
 | backendProcessingTime | Provides information about the processing time of the request on the server. |
 | batteryLevel | Provides information about the device's battery level. |
 | batterySession | Provides information about the battery session of the device.</br></br>If the device is charging, the telemetry logs it as such. Otherwise, a GUID is logged that represents an on-battery session. Every time the device charges, the on-battery session GUID is changed. |
-| batteryState | Provides information about the charging status of the device.</br></br>For more information, see [BatteryState Enum](/dotnet/api/xamarin.essentials.batterystate?view=xamarin-essentials). |
+| batteryState | Provides information about the charging status of the device.</br></br>For more information, see [BatteryState Enum](/dotnet/api/xamarin.essentials.batterystate). |
 | deviceId | The GUID of the device that performs the call. |
 | eventid | A constant that identifies the telemetry emitted by the Warehouse Management mobile app. This helps you tell mobile-app data apart from other warehousing telemetry events emitted from Supply Chain Management. |
 | isEnergySaverTurnedOn | Provides information about the energy saver status of the device. |
-| powerSource | Provides information about the power source of the device.</br></br>For more information, see [BatteryPowerSource Enum](/dotnet/api/xamarin.essentials.batterypowersource?view=xamarin-essentials). |
+| powerSource | Provides information about the power source of the device.</br></br>For more information, see [BatteryPowerSource Enum](/dotnet/api/xamarin.essentials.batterypowersource). |
 | renderingDurationInMilliseconds | Provides information about the time the mobile app takes to render page controls after calling the server. |
 | roundTripLatencyDurationInMilliseconds | Provides information about the total time of a server call, from the request to the response. |
 | serverAadTenantId | Provides the Azure AD Tenant ID of the connected Supply Chain Management environment. |
