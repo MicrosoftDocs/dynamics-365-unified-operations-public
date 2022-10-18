@@ -60,6 +60,10 @@ Once you have set up Application Insights and have a copy of its instrumentation
 
 1. Select **Save** on the Action Pane to save your settings.
 
+## Pricing
+
+Azure Application Insights is billed based on the volume of telemetry data your application sends (data ingestion) and how long time you want data to be available (data retention). For up-to-date information on pricing, see  [Azure Monitor pricing](https://azure.microsoft.com/pricing/details/monitor/).
+
 ## Next steps
 
 - [Monitor mobile device usage and performance](application-insights-wma.md)
