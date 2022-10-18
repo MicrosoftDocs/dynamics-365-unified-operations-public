@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.31. This version has a build number of 10.0.xx and is 
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.31. This version has a build number of 10.0.1406 and is 
 available on the following schedule:
 
 - **Preview of release:** October 2022
@@ -44,7 +44,11 @@ article was initially published.
 
 | Feature name | Overview | Release status |
 |----|----|----|
-
+|Course enhancements |<p>The course enhancements feature enables the following:</p><ul><li>
+Ability to designate courses as virtual and define course link</li><li> 
+Ability to define a due date for course assignment</li><li> 
+Employes self service now shows employees an overview within Courses/Learning to see overdue, due soon, and assigned courses</li><li> 
+Employees can complete virtual courses and self-attest to those virtual courses</li></ul> |Preview|
 
 ## Feature enhancements included in this release
 
@@ -55,16 +59,13 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 |--------------|------------------|
 |Task management |Previously when making updates to a task, the user needed to go to each checklist that contained the task and update the tasks individually. Changes in the 10.0.30 release added the option to update checklist tasks when a library task is edited. For those edits to be applied to all associated checklist tasks, a relationship must already exist between the task in the task library and the task in the checklist. Prior to the 10.0.30 release a relationship was not created. An upgrade has been created to create the relationship between the library task and the checklist task.|
 
-## Known issues
 
-| Issue summary | More information |
-| ---- | ---- | 
+## Additional resources
 
+### Platform updates for finance and operations apps
 
+Dynamics 365 Human Resources 10.0.31 includes platform updates. To learn more, see [Platform updates for version 10.0.30 of finance and operations apps](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-31.md).
 
-## Features on by default in this release
+### Bug fixes
 
-The following table lists the features that are turned on by default in version 10.0.31. Most features that have been turned on automatically can be turned off in Feature management. In the future, some features that have been turned on automatically might be removed from Feature management and will become mandatory to ensure that customers are using current functionality. In this way, enhancements can build on the current functionality as they are added. Features will never be automatically enabled in less than one year unless they are determined to be essential. 
-
-| Feature name | Feature added | Feature state | Module |
-| ---- | ---- | ---- | ---- |
+For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=758525).
