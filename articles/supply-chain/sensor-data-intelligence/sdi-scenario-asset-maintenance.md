@@ -17,6 +17,7 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 The *asset maintenance* scenario lets you use sensor data to create counter records. Counter records track the use of a machine asset and are used as input to generate the maintenance schedule for machine assets.
 
@@ -110,6 +111,9 @@ After the data is prepared, and the *asset maintenance* scenario is configured a
 1. Go to **Asset management \> Assets \> All assets**.
 1. Find and select the asset that you want to inspect. (If you're using the demo data that you created earlier in this article, select *AK-101*.)
 1. On the Action Pane, on the **Asset** tab, in the **Preventive** group, select **Counters** to open the page for counter records for asset *AK-101*.
+
+> [!NOTE]
+> The counter records are configured by default to be inserted every three hours, which means sensor data will be aggregated at that interval. You can change the interval by editing the query in the Azure Stream Analytics component.
 
 ### Generate maintenance work orders
 
