@@ -3,7 +3,7 @@
 
 title: Payment slip report for Europe
 description: This article provides information about payment slip reports for Europe.
-author: EvgenyPopovMBS
+author: mrolecki
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 ms.custom: 264604
 ms.search.region: Belgium, Denmark, Finland, Norway, Switzerland
 # ms.search.industry: 
-ms.author: epopov
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -62,7 +62,7 @@ After you set up the payment slip attachment format for sales invoices, free tex
 4.  Close the form to save your changes.
 
 
-
+For more information about setting up and maintaining payment IDs, refer to [NO-00002 Customer payment based on payment ID](tasks/no-00002-customer-payment-based-payment-id.md).
 
 
 
