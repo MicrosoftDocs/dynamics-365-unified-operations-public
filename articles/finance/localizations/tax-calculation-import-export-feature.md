@@ -4,7 +4,7 @@
 title: Import and export tax calculations
 description: This article provides information about the import and export functionality of the tax calculation service.
 author: Kai-Cloud
-ms.date: 04/29/2022
+ms.date: 10/17/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -114,7 +114,7 @@ Follow these steps to import feature demo data.
 6. In Finance, switch to the **DEMF** legal entity, and then go to **Tax** \> **Setup** \> **Tax configuration** \> **Tax calculation parameters**.
 7. On the **General** tab, select **Enable Tax Calculation Service**.
 8. In the **Feature setup name** field, select **tax-calculation-feature-demo-data**.
-9. Select **Settlement period** and **Ledger posting group** for the new demo tax codes, and then select **Confirm**.
+9. Select a **Settlement period** and a **Ledger posting group** for the new demo tax codes, and then select **Confirm**.
 10. Select **Save**.
 
 > [!NOTE]
