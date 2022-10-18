@@ -54,7 +54,7 @@ After the **Virtual course enhancements** are enabled in **Feature management**:
 
 ## Set up Instructor-led courses
 
-**Instructor-led** course don't need to be configured before using.  
+**Instructor-led** courses don't need to be configured before using.  
 
 The following information is optional and can be specified for courses. If this information will be entered for courses, it should be set up before 
 the course records are created: 
@@ -74,8 +74,8 @@ The minimum and maximum number of participants that you can register for a cours
 
 **Setup types** determine the structure of the course and there are three **Setup types** for courses: 
 |**Setup type**|**Description**|
-|-------------|----------------|
-|**Standard** | This type of course doesn't have a daily agenda. This is the default setup type when you create a new course.|
+|--------------|------------------|
+|**Standard** | This course type doesn't have a daily agenda. This is the default setup type when you create a new course.|
 |**Agenda**| Select this type to plan the details of each day of a course that takes place over multiple days.| 
 | **Agenda + session**| <p>Select this type for the more complex courses. For example, you can divide the agenda for the course into tracks and sessions:</p><ul><li>
 **Track** – Tracks are specific subject areas for a course.</li><li>**Sessions** – Sessions divide up tracks and help identify specific processes or techniques that are 
@@ -98,9 +98,9 @@ For each course, complete the following tasks:
 The following table lists course statuses and the actions to complete for a specific status: 
 |Status|Actions| 
 |------|--------|
-|**Created**| </p><ul><li>Enter and modify course information.</li><li>Change the course status to Open so that workers can register for the course.</li></ul><p>| 
-|**Open**|</p><ul><li>Register participants for the course.</li><li>Remove participants from the course. </li><li>Confirm participants for the course.</li><li>Change
-the course status to **Closed** or **Cancelled** plan questionnaires for participants whose status is **Confirmed**. </p><ul><li>|
+|**Created**| </p><ul><li>Enter and modify course information</li><li>Change the course status to **Open** so that workers can register for the course</li></ul><p>| 
+|**Open**|</p><ul><li>Register participants for the course</li><li>Remove participants from the course</li><li>Confirm participants for the course</li><li>Change
+the course status to **Closed** or **Canceled** for participants whose status is **Confirmed**</p><ul><li>|
 |**Closed**|You can reopen the course.| 
 |**Canceled**|You can reopen the course.| 
 
