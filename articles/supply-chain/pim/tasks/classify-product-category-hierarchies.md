@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Classify a product using category hierarchies
-description: This topic describes how to classify a product using category hierarchies. 
+description: This article describes how to classify a product using category hierarchies. 
 author: t-benebo
 ms.date: 08/02/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to classify a product using category hierarchies. Use category hierarchies to classify products for export, procurement, sales, or other purposes. This task is typically performed by a product manager. The example uses product number M0009 in demo data company USMF.
+This article describes how to classify a product using category hierarchies. Use category hierarchies to classify products for export, procurement, sales, or other purposes. This task is typically performed by a product manager. The example uses product number M0009 in demo data company USMF.
 
 1. Go to **Product information management \> Products \> Released products**.
 1. In the list, find and select the desired record.

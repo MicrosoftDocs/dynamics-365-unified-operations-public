@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Connected applications
-description: This topic explains how to set up connected applications in Electronic invoicing.
-author: dkalyuzh
+description: This article explains how to set up connected applications in Electronic invoicing.
+author: gionoder
 ms.date: 02/07/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: dkalyuzh
+ms.author: gionoder
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: 
 ---
 # Connected applications
 
@@ -39,7 +29,7 @@ Availability of the Finance or Supply Chain Management parameters in RCS is usef
 ## Create a connected application
 
 1. Sign in to your RCS account.
-2. In the **Globalization feature** workspace, in the **Environment** section, select the **Electronic invoicing** tile.
+2. In the **Globalization feature** workspace, in the **Related links** section, select **Environment setup**.
 3. On the **Environment setup** page, on the Action Pane, select **Connected applications**.
 4. Select **New** to create a connected application.
 5. In the **Name** field, enter the name of the application to connect.

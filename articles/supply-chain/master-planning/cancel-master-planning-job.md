@@ -2,7 +2,7 @@
 # required metadata
 
 title: Cancel a master planning job
-description: This topic explains how to cancel an active planning job that uses built-in planning functionality.
+description: This article explains how to cancel an active planning job that uses built-in planning functionality.
 author: t-benebo
 ms.date: 05/14/2020
 ms.topic: article

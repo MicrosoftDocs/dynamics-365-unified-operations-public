@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Create a free text invoice
-description: This topic explains how to create free text invoices. 
+description: This article explains how to create free text invoices. 
 author: abruer
 ms.date: 02/15/2022
 ms.topic: article 
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 8.0.4
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to create free text invoices. For the procedure, use the **USMF** demo company.
+This article explains how to create free text invoices. For the procedure, use the **USMF** demo company.
 
 ## Create a free text invoice
 
@@ -43,7 +43,7 @@ This topic explains how to create free text invoices. For the procedure, use the
     * If you're using Single Euro Payments Area (SEPA) mandates, the direct debit mandate is automatically entered when you select the customer account.
 
 4. In the **Description** field, enter a value.
-5. In the **Main account** field, specify an account number that doesn't have dimensions. You will enter dimensions later in this topic.
+5. In the **Main account** field, specify an account number that doesn't have dimensions. You will enter dimensions later in this article.
 
     You can also enter one or more characters for the main account, and use the lookup to find the account.
 

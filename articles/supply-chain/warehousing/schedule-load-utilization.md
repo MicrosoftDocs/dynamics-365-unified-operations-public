@@ -2,7 +2,7 @@
 # required metadata
 
 title: Schedule load utilization
-description: This topic explains how to set up and schedule the load for a warehouse.
+description: This article explains how to set up and schedule the load for a warehouse.
 author: Mirzaab
 ms.date: 05/26/2017
 ms.topic: article

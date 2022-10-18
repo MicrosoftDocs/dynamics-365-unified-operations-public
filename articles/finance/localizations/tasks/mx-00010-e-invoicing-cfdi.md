@@ -1,33 +1,24 @@
---- 
-# required metadata 
- 
+---
 title: E-invoicing CFDI
-description: This topic walks you through creating and posting a customer invoice as an electronic invoice by using the CFDI method. 
-author: sndray
+description: This article walks you through creating and posting a customer invoice as an electronic invoice by using the CFDI method.
+author: AdamTrukawka
 ms.date: 08/03/2021
-ms.topic: business-process 
+ms.topic: business-process
 ms.prod: 
 ms.technology: 
- 
-# optional metadata 
- 
-ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxGroupLookup, InventLocationIdLookup, SalesEditLines, EInvoiceCFDIJournal_AR
-audience: Application User 
-# ms.devlang: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Mexico
-# ms.search.industry: 
-ms.author: sndray
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: atrukawk
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: SalesTableListPage, SalesCreateOrder, SalesTable, TaxGroupLookup, InventLocationIdLookup, SalesEditLines, EInvoiceCFDIJournal_AR
 ---
 # E-invoicing CFDI
 
 [!include [banner](../../includes/banner.md)]
 
-This topic walks you through creating and posting a customer invoice as an electronic invoice by using the CFDI method. You can create and post multiple sales orders as electronic invoices and send the .pdf and .xml files as email attachments to customers. This task can only be completed if you are logged into a legal entity with a primary address in Mexico. This task uses the MXMF demo company data.
+This article walks you through creating and posting a customer invoice as an electronic invoice by using the CFDI method. You can create and post multiple sales orders as electronic invoices and send the .pdf and .xml files as email attachments to customers. This task can only be completed if you are logged into a legal entity with a primary address in Mexico. This task uses the MXMF demo company data.
 
 > [!NOTE] 
 > Customer invoices that are created by using a general ledger journal aren't included among the CFDI-Accounts Receivable electronic invoices that are found at **Accounts receivable** \> **Inquiries and reports** \> **CFDI (electronic invoices)**.

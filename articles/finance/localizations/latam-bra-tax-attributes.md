@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Tax attributes for Brazil
-description: This topic explains how to set up fiscal information for addresses, legal entities, customers, and vendors, and for products that are released to a Brazilian legal entity. This information is required for tax calculation, and for fiscal documents and other required statements that you submit from Fiscal books.
-author: sndray
+description: This article explains how to set up fiscal information for addresses, legal entities, customers, and vendors, and for products that are released to a Brazilian legal entity. This information is required for tax calculation, and for fiscal documents and other required statements that you submit from Fiscal books.
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustTable, EcoResProductDetails, LogisticsAddressSetup
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 269544
-ms.assetid: 92b0cf1b-51ec-4611-bf8e-db4cd10ffed0
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 269544
+ms.assetid: 92b0cf1b-51ec-4611-bf8e-db4cd10ffed0
+ms.search.form: CustTable, EcoResProductDetails, LogisticsAddressSetup
 ---
 
 # Tax attributes for Brazil
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up fiscal information for addresses, legal entities, customers, and vendors, and for products that are released to a Brazilian legal entity. This information is required for tax calculation, and for fiscal documents and other required statements that you submit from Fiscal books.
+This article explains how to set up fiscal information for addresses, legal entities, customers, and vendors, and for products that are released to a Brazilian legal entity. This information is required for tax calculation, and for fiscal documents and other required statements that you submit from Fiscal books.
 
 ## Tax address attributes
 

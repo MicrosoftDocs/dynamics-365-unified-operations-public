@@ -2,7 +2,7 @@
 # required metadata
 
 title: Generate invoice lines when you import vendor invoices
-description: This topic describes the functionality for automatically generating invoice lines on vendor invoices when invoices are imported.
+description: This article describes the functionality for automatically generating invoice lines on vendor invoices when invoices are imported.
 author: sunfzam
 ms.date: 09/10/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.23
 [!include [banner](../includes/banner.md)]
 [!include [preview banner](../includes/preview-banner.md)]
 
-This topic describes the functionality for automatically generating invoice lines on vendor invoices when invoices are imported.
+This article describes the functionality for automatically generating invoice lines on vendor invoices when invoices are imported.
 
 Sometimes, vendor invoices contain limited information, such as recipient information and subtotals. However, they contain no information for line items. When you import invoices, the invoice lines will be automatically generated, based on information on the corresponding purchase order.
 
@@ -46,10 +46,10 @@ To enable automatic creation of invoice lines, follow these steps.
 
 ## Data entity changes
 
-To support the functionality that is described in this topic, the **Vendor invoice header** data entity has been enhanced. Three fields have been added:
+To support the functionality that is described in this article, the **Vendor invoice header** data entity has been enhanced. Three fields have been added:
 
 - **HeaderOnlyImport** – This field must be set to **Yes** to generate lines for invoice headers.
-- **PurchIdRange** – The list of purchase order numbers. The invoice numbers can be a range, such as **INV0001..INV0009** (where two dots separate the start and end of the range), or discrete values, such as **INV0001, INV0003, INV0006**. All purchase orders must belong to the same vendor account on the invoice header. Otherwise, you will receive the following error message: "Failed to generate invoice lines. Purchase orders have different vendor accounts."
+- **PurchIdRange** – The list of purchase order numbers. The invoice numbers can be a range, such as **PO0001..PO0009** (where two dots separate the start and end of the range), or discrete values, such as **PO0001, PO0003, PO0006**. All purchase orders must belong to the same vendor account on the invoice header. Otherwise, you will receive the following error message: "Failed to generate invoice lines. Purchase orders have different vendor accounts."
 - **PackingslipRange** – The list of product receipt numbers. Vendor invoice lines can be created from product receipts. However, product receipt numbers aren't typically included on vendor invoices. Only enter the product receipt numbers into this field if you can clearly identify which product receipts are for which specific invoices. Invoice lines can be generated based on product receipts. If this field is used, the setting of the **Choose default quantity for automatic invoice lines creation** field on the **Accounts payable parameters** page is ignored. 
 
 **Limitation**: If you enter multiple product receipt numbers, several pending vendor invoices will be created with the same invoice number. You must consolidate them manually before processing the invoice further. In future releases, we plan to consolidate the invoices automatically, so the limitation will be removed.

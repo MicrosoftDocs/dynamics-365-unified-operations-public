@@ -1,27 +1,20 @@
---- 
-# required metadata 
- 
+---
 title: Design a new ER configuration to generate reports in Word format
-description: This topic explains how users can configure a new Electronic reporting (ER) format to generate reports as Microsoft Word documents. 
-author: NickSelin
+description: This article explains how users can configure a new Electronic reporting (ER) format to generate reports as Microsoft Word documents.
+author: kfend
 ms.date: 12/17/2020
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner,  LedgerJournalTable, LedgerJournalTransVendPaym   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2020-01-01 
-ms.dyn365.ops.version: Version 10.0.6 
+ms.author: filatovm
+ms.search.validFrom: 2020-01-01
+ms.dyn365.ops.version: Version 10.0.6
+ms.search.form: 
+  - ERWorkspace, ERSolutionTable, EROperationDesigner
+  - LedgerJournalTable, LedgerJournalTransVendPaym
 ---
 
 # Design a new ER configuration to generate reports in Word format
@@ -39,7 +32,7 @@ To use a Word document as a template for reports in Word format, you can configu
 
 ![Creating a format configuration on the Configurations page.](./media/er-design-configuration-word-image2.gif)
 
-The ER format component of the solution must contain the **Excel\\File** format element, and that format element must be linked to the Word document that will be used as the template for generated reports at runtime. To configure the ER format component, you must open the [draft](general-electronic-reporting.md#component-versioning) version of the created ER configuration in the ER format designer. Then add the **Excel\\File** element, attach your Word template to the editable ER format, and link that template to the **Excel\\File** element that you added.
+The ER format component of the solution must contain the **Excel\\File** format element, and that format element must be linked to the Word document that will be used as the template for generated reports at runtime. To configure the ER format component, you must open the draft version of the created ER configuration in the ER format designer. Then add the **Excel\\File** element, attach your Word template to the editable ER format, and link that template to the **Excel\\File** element that you added.
 
 > [!NOTE]
 > When you attach a template, you must use a [document type](../../fin-ops/organization-administration/configure-document-management.md#configure-document-types) that has previously been [configured](electronic-reporting-er-configure-parameters.md#parameters-to-manage-documents) in the ER parameters to store templates of ER formats.

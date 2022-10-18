@@ -1,25 +1,19 @@
 ---
 title: Extensibility FAQ
-description: This topic provides answers to some frequently asked questions about extensibility.
+description: This article provides answers to some frequently asked questions about extensibility.
 author: FrankDahl
 ms.date: 02/25/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 89563
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: fdahl
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: Platform update 9
-
+ms.custom: 89563
+ms.assetid: 
 ---
 
 # Extensibility FAQ

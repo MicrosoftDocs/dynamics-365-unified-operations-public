@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Core data actions
-description: This topic covers the list of core data actions that are included with the Microsoft Dynamics 365 Commerce online software development kit (SDK).
+description: This article covers the list of core data actions that are included with the Microsoft Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
 ms.date: 01/19/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 # Core data actions
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers the list of core data actions that are included with the Microsoft Dynamics 365 Commerce online software development kit (SDK). 
+This article covers the list of core data actions that are included with the Microsoft Dynamics 365 Commerce online software development kit (SDK). 
 
 You can find most of the core data actions in the **\\node\_modules\\@msdyn365-commerce-modules** and **\\node\_modules\\@msdyn365-commerce** directories. Many core data actions can be found under the **\\node\_modules\\@msdyn365-commerce-modules\\retail-actions\\dist\\lib** directory, and some core data actions can be found within specific related subdirectories, like for example the cart state data actions which can be found under the **\\node\_modules\\@msdyn365-commerce\\global-state\\src\\cart-state** directory.
 

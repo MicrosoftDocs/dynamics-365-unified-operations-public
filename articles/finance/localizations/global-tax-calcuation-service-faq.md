@@ -1,34 +1,22 @@
 ---
-# required metadata
-
 title: Tax Calculation FAQ
-description: This topic answers frequently asked questions about the functionality of the Tax Calculation service.
-author: epodkolz
+description: This article answers frequently asked questions about the functionality of the Tax Calculation service.
+author: EricWangChen
 ms.date: 10/26/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope: Core, Operations, global
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region:
-# ms.search.industry: 
-ms.author: epodkolz
-ms.search.validFrom:
+ms.search.region: 
+ms.author: wangchen
+ms.search.validFrom: 
 ms.dyn365.ops.version: AX 10.0.21
 ---
 
 # Tax Calculation FAQ
 
-This topic answers frequently asked questions about the functionality of the Tax Calculation service.
+This article answers frequently asked questions about the functionality of the Tax Calculation service.
 
 ## When will the Tax Calculation service be generally available?
 
@@ -42,11 +30,11 @@ No. At a minimum, Tier 2 is required for testing.
 
 No, the Tax Calculation service isn't currently supported for on-premises.
 
-## Do I have to continue to maintain tax codes and sales tax groups in Finance and Operations apps and Regulatory Configuration Service (RCS), or will there eventually be an integration, so that maintenance is required in only one application?
+## Do I have to continue to maintain tax codes and sales tax groups in finance and operations apps and Regulatory Configuration Service (RCS), or will there eventually be an integration, so that maintenance is required in only one application?
 
-A tax setup can be created and maintained in the Tax calculation feature in RCS. When the Tax feature is selected on the **Tax calculation parameters** page in Finance and Operations apps, the setting is synchronized from RCS to your Finance and Operations apps.
+A tax setup can be created and maintained in the Tax calculation feature in RCS. When the Tax feature is selected on the **Tax calculation parameters** page in finance and operations apps, the setting is synchronized from RCS to your finance and operations apps.
 
-## Do you expect the performance to be better than the performance of the existing Finance and Operations apps tax engine?
+## Do you expect the performance to be better than the performance of the existing finance and operations apps tax engine?
 
 The performance of the Tax Calculation service is better than the performance of the existing tax engine.
 
@@ -84,11 +72,11 @@ The correction process is the same as it currently is. If you discover that the 
 
 ## What are the triggers for calling the Tax Calculation service?
 
-The triggers for the Tax Calculation service in Finance and Operations apps are the same as the current triggers for the existing tax engine.
+The triggers for the Tax Calculation service in finance and operations apps are the same as the current triggers for the existing tax engine.
 
 ## On the Tax calculation parameters page, why is the list of values in the Feature setup name field blank?
 
-The Tax calculation feature should be completed and published in RCS. Verify that the tenant between RCS and your Finance and Operations apps is the same.
+The Tax calculation feature should be completed and published in RCS. Verify that the tenant between RCS and your finance and operations apps is the same.
 
 ## Why can't I turn on the Enable tax calculation service parameter?
 
@@ -101,3 +89,4 @@ If the **Feature name** field in the **Feature management** workspace is blank, 
 - The application version contains hotfix [KB597182](https://fix.lcs.dynamics.com/Issue/Details?bugId=597182&dbType=3).
 - The batch service is running. If it isn't running, start it.
 - The status of the **Runs Feature Translation population** batch job is **Complete**. To verify the job's status, go to **System administration** \> **Inquiries** \> **Batch jobs**. If the batch job is set to **Withhold**, set it to **Wait**. If the job's status is **Waiting**, wait until the job has finished running.
+

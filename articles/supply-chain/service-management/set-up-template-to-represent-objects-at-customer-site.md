@@ -3,7 +3,7 @@
 
 title: Set up template to represent objects at customer site 
 description: Set up template to represent objects at customer site.
-author: kamaybac
+author: sorenva
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 Use this procedure to set up a template that represents objects at a customer site.
 
-1.  Click **Service management** \> **Common** \> **Service agreements** \> **Service agreements**.
+1.  Click **Service management** \> **Service agreements** \> **Service agreements**.
 
 2.  Double-click a service agreement, or click **Service agreement** to create a new service agreement.
 

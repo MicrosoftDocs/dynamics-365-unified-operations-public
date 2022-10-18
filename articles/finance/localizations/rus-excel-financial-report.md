@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Configure financial reports in Excel (Russia)
-description: This topic walks you through the process of creating an Electronic reporting (ER) configuration that contains a template for generating a financial report in an Excel format. 
-author: Anasyash
+description: This article walks you through the process of creating an Electronic reporting (ER) configuration that contains a template for generating a financial report in an Excel format.
+author: AdamTrukawka
 ms.date: 07/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ms.dyn365.ops.version: 10.0.1
-
 ---
 
 # Configure financial reports in Excel (Russia)
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating a financial report in Microsoft Excel format.
+This article explains how a user in the System Administrator or Electronic Reporting Developer role can create a new Electronic reporting (ER) configuration that contains a template for generating a financial report in Microsoft Excel format.
 
-Before you read this topic, you should review [Create Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=%2ffin-and-ops%2ftoc.json) and related electronic reporting topics about creating configurations.
+Before you read this article, you should review [Create Electronic reporting (ER) configurations](../../fin-ops-core/dev-itpro/analytics/electronic-reporting-configuration.md?toc=%2ffin-and-ops%2ftoc.json) and related electronic reporting topics about creating configurations.
 
 ## Set up a financial report
 

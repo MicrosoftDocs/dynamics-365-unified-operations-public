@@ -2,8 +2,8 @@
 # required metadata
 
 title: Finance home page
-description: This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 Finance. 
-author: roschlom
+description: This article provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 Finance. 
+author: kfend
 ms.date: 11/04/2021
 ms.topic: index-page
 ms.prod: 
@@ -14,13 +14,13 @@ ms.technology:
 # ms.search.form: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: ["206434", "intro-internal"]
 ms.assetid: 8a6238bd-9d6f-48d9-8752-3966836364a4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](includes/banner.md)]
 
-This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 Finance. 
+This article provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 Finance. 
 
 Select a feature area to learn more about it.
 
@@ -44,7 +44,7 @@ Select a feature area to learn more about it.
         - [Cost accounting](cost-accounting/cost-accounting-home-page.md)
     :::column-end:::
     :::column:::
-        - [Financial reporting](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=%2ffin-and-ops%2ftoc.json)
+        - [Financial reporting](../fin-ops-core/dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Fixed assets](fixed-assets/fixed-assets.md)
         - [Finance insights](finance-insights/finance-insights-home-page.md)
         - [General ledger and Financial reporting](general-ledger/general-ledger.md) 
@@ -67,7 +67,7 @@ Check out the how-to videos that are now available on the [Microsoft Dynamics 36
 
 ### Country/region functionality
 
-Country/region regulations affect tax setup and other areas of financial management. To learn about country/region-specific functionality, see [Localization and regulatory features](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=%2ffin-and-ops%2ftoc.json).
+Country/region regulations affect tax setup and other areas of financial management. To learn about country/region-specific functionality, see [Localization and regulatory features](../fin-ops-core/dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json).
 
 ### Additional content
 
@@ -79,10 +79,10 @@ Supply chain management functionality covers parts of the procure-to-pay process
    - Invoicing
    - Paying for the goods and services your organization purchases 
     
-For information about the capabilities for managing purchases, inventory, and manufacturing, see the [Supply Chain Management home page](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/WhatsNew-SCM-10-0-6/articles/supply-chain/index.md).
+For information about the capabilities for managing purchases, inventory, and manufacturing, see the [Supply Chain Management home page](../supply-chain/index.md).
 
 ## eLearning courses
 
-For online courses and training, check out [Dynamics 365 Finance on Microsoft Learn](/learn/browse/?products=dynamics-finance&resource_type=learning+path).
+For online courses and training, check out [Dynamics 365 Finance learning paths](/training/browse/?products=dynamics-finance&resource_type=learning+path).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

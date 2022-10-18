@@ -2,7 +2,7 @@
 # required metadata
 
 title: Customer prepayments
-description: This topic explains how to set up and process customer prepayments (also known as customer deposits).
+description: This article explains how to set up and process customer prepayments (also known as customer deposits).
 author: twheeloc
 ms.date: 04/30/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.search.form: CustPosting, LedgerJournalTransCustPaym, CustParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 24651
 ms.assetid: cb82245e-8c02-429c-b36e-8db0e3e6f7e5

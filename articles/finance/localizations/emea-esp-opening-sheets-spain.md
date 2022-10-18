@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Special entries and opening sheets
 description: Legal entities in Spain can post special entries as opening entries for the current period, while adapting accounts to changes in accounting rules.
-author: ShylaThompson
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: LedgerOpeningSheet_ES
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261334
 ms.search.region: Spain
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 261334
+ms.search.form: LedgerOpeningSheet_ES
 ---
 
 # Special entries and opening sheets

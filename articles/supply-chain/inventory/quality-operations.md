@@ -2,7 +2,7 @@
 # required metadata
 
 title: Operations for nonconformances
-description: This topic describes how to create and use operations for nonconformances.
+description: This article describes how to create and use operations for nonconformances.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create and use operations for nonconformances.
+This article describes how to create and use operations for nonconformances.
 
 You can use the **Operations** page to define classifications of the work that can be performed for an approved nonconformance. When you assign a related operation to a nonconformance, you can provide details such as the associated material, labor hours, and charges that are required to do the operation. The system uses this information to calculate an estimated cost for the operation. The detailed information and estimated costs are for reference. The related operations for quality differ from the operations that can be defined for a production route.
 

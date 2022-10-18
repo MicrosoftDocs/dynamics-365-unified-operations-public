@@ -2,8 +2,8 @@
 # required metadata
 
 title: Inventory aging report examples and logic
-description: This topic presents some examples that show how to interpret the results of an Inventory aging report.
-author: AndersGirke
+description: This article presents some examples that show how to interpret the results of an Inventory aging report.
+author: JennySong-SH
 ms.date: 5/29/2020
 ms.topic: article
 ms.prod:
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2020-5-29
 ms.dyn365.ops.version: 
 
@@ -31,13 +31,13 @@ ms.dyn365.ops.version:
 
 [!include [banner](../includes/banner.md)]
 
-This topic presents some examples that show how to interpret the results of an **Inventory aging** report. This report categorizes on-hand quantity and inventory values for a selected item or item group into several period buckets. This topic also shows the internal logic of the report.
+This article presents some examples that show how to interpret the results of an **Inventory aging** report. This report categorizes on-hand quantity and inventory values for a selected item or item group into several period buckets. This article also shows the internal logic of the report.
 
-The examples in this topic show results that are presented on a standard **Inventory aging** report. However, in general, we recommend that you use the [Inventory aging report storage](inventory-aging-report-storage.md) version of this report, especially when you have many items and warehouses that must be processed. Inventory aging report storage saves each report that you generate, shows the results as an interactive page and a chart, and lets you export any saved report.
+The examples in this article show results that are presented on a standard **Inventory aging** report. However, in general, we recommend that you use the [Inventory aging report storage](inventory-aging-report-storage.md) version of this report, especially when you have many items and warehouses that must be processed. Inventory aging report storage saves each report that you generate, shows the results as an interactive page and a chart, and lets you export any saved report.
 
 ## Sample data that is used in these examples
 
-The examples in this topic are based on the sample inventory transaction data that is described in this section.
+The examples in this article are based on the sample inventory transaction data that is described in this section.
 
 ### Storage dimension setup
 

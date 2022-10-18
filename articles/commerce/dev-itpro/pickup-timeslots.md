@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Create and update time slots for customer pickup
-description: This topic describes how to create, configure, and update customer pickup time slots in Commerce headquarters.
+description: This article describes how to create, configure, and update customer pickup time slots in Commerce headquarters.
 author: anupamar-ms
 ms.date: 01/05/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
-ms.author: rapraj
+ms.author: anupamar
 ms.search.validFrom: 2020-09-20
 ms.dyn365.ops.version: Retail 10.0.15 update
-
+ms.custom: 
+ms.search.industry: Retail
 ---
 
 # Create and update time slots for customer pickup
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to create, configure, and update customer pickup time slots in Commerce headquarters.
+This article describes how to create, configure, and update customer pickup time slots in Commerce headquarters.
 
 The time slot feature gives retailers a way to define a time slot for items that the customer pickup delivery mode is turned on for. Time slots let retailers define the days and times when orders can be picked up from a store. Retailers can also define the number of orders that can be picked up during a given period. In this way, retailers can limit the number of orders that can be picked up on a given day and at a given time. The result is a better-quality experience for their customers.
 

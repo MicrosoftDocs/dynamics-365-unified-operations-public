@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Configure locations in a WMS-enabled warehouse
-description: This guide shows you how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses advanced warehouse management processes). 
+description: This guide shows you how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses warehouse management processes (WMS)). 
 author: perlynne
 ms.date: 06/26/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This guide shows you how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses advanced warehouse management processes). The process is typically done by a warehouse manager. You can run this guide in demo data company USMF or on your own data. A precondition is that you have at least one site configured.
+This guide shows you how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses warehouse management processes (WMS)). The process is typically done by a warehouse manager. You can run this guide in demo data company USMF or on your own data. A precondition is that you have at least one site configured.
 
 
 ## Create a new warehouse
@@ -37,11 +37,11 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 4. In the **Name** field, type a value.
 5. In the **Site** field, select or type an existing site value.
 6. Expand the **Warehouse** section.
-7. Set the **Use warehouse management processes option** to Yes. This setting allows you to run advanced warehousing processes using warehouse work and mobile devices.
+7. Set the **Use warehouse management processes option** to Yes. This setting allows you to run warehouse management processes (WMS) using warehouse work and mobile devices.
 8. Close the page.
 
 ## Define a location format
-1. Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse >Location formats**. Location formats are a naming-system used to create unique and consistent names for the different location bin positions used within a warehouse. It can be useful to use separators as part of the location format to make it easier to identify components of the location such as the aisle number. In this example, we'll create a name with four components. For example, these could be aisle, rack, shelf, and bin.
+1. Go to **Navigation pane > Modules > Warehouse management > Setup > Warehouse >Location formats**. Location formats are a naming system used to create unique and consistent names for the different location bin positions used within a warehouse. It can be useful to use separators as part of the location format to make it easier to identify components of the location such as the aisle number. In this example, we'll create a name with four components. For example, these could be aisle, rack, shelf, and bin.
 2. Click **New**.
 3. In the **Location format** field, type a value.
 4. In the **Name** field, type a value.
@@ -70,7 +70,7 @@ This guide shows you how to configure the location setup for a new WMS-enabled w
 5. Close the page.
 
 ## Define location profile
-1. Go to **Navigation pane > modules > Warehouse management > Setup > Warehouse > Location profiles**. The definition of location profiles is very important. Grouped locations capacity can be controlled here, as well as the policies related to what inventory gets stored, and how it is stored. Location profiles can be used as filtering options to control the different warehouse management processes. As a minimum, you must create a user location profile in order to enable the warehouse management processes.
+1. Go to **Navigation pane > modules > Warehouse management > Setup > Warehouse > Location profiles**. The definition of location profiles is very important. Grouped locations capacity can be controlled here, as well as the policies related to what inventory gets stored, and how it is stored. Location profiles can be used as filtering options to control the different warehouse management processes. As a minimum, you must create a user location profile in order to enable WMS.
 2. Click **New**.
 3. In the **Location profile ID** field, type a value.
 4. In the **Name** field, type a value.

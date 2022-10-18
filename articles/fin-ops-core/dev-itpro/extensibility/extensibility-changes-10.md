@@ -1,27 +1,19 @@
 ---
 title: Extensibility changes in Dynamics 365 for Finance and Operations version 10.0
-description: This topic lists the extensibility features that were released in Dynamics 365 for Finance and Operations version 10.0.
+description: This article lists the extensibility features that were released in Dynamics 365 for Finance and Operations version 10.0.
 author: FrankDahl
 ms.date: 03/05/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: fdahl
 ms.search.validFrom: 2019-02-11
 ms.dyn365.ops.version: App 10.0
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Extensibility changes in Dynamics 365 for Finance and Operations version 10.0

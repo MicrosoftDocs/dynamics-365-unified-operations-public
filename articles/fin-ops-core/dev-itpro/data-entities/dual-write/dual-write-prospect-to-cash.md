@@ -1,11 +1,11 @@
 ---
 title: Prospect-to-cash in dual-write
-description: This topic provides information about prospect-to-cash in dual-write.
+description: This article provides information about prospect-to-cash in dual-write.
 author: RamaKrishnamoorthy
 ms.date: 01/07/2021
 ms.topic: article
 audience: Application User, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: sericks
 ms.search.region: global
 ms.author: ramasri
 ms.search.validFrom: 2020-01-27
@@ -24,7 +24,7 @@ In the app interfaces, you can access the processing statuses and invoice inform
 For information about customer and contact integration, see [Integrated customer master](customer-mapping.md). For information about product integration, see [Unified product experience](product-mapping.md).
 
 > [!NOTE]
-> In Dynamics 365 Sales, both prospect and customer refer to a record in the **Account** table where the **RelationshipType** column is either **Prospect** or **Customer**. If your business logic includes an **Account** qualification process where the **Account** record is created and qualified as a prospect first and then as a customer, that record synchronizes to the Finance and Operations app only when it is a customer (`RelationshipType=Customer`). If you want the **Account** row to synchronize as a prospect, then you need a custom map to integrate the prospect data.
+> In Dynamics 365 Sales, both prospect and customer refer to a record in the **Account** table where the **RelationshipType** column is either **Prospect** or **Customer**. If your business logic includes an **Account** qualification process where the **Account** record is created and qualified as a prospect first and then as a customer, that record synchronizes to the finance and operations app only when it is a customer (`RelationshipType=Customer`). If you want the **Account** row to synchronize as a prospect, then you need a custom map to integrate the prospect data.
 
 ## Prerequisites and mapping setup
 
@@ -106,7 +106,7 @@ Sales invoices are created in Supply Chain Management and synced to Sales. Note 
 
 Prospect-to-cash includes a collection of core table maps that work together during data interaction, as shown in the following table.
 
-| Finance and Operations apps | Customer engagement apps | Description |
+| Finance and operations apps | Customer engagement apps | Description |
 |-----------------------------|-----------------------------------|-------------|
 [All products](mapping-reference.md#138) | msdyn_globalproducts | |
 [Customers V3](mapping-reference.md#101) | accounts | |
@@ -117,7 +117,7 @@ Prospect-to-cash includes a collection of core table maps that work together dur
 [CDS sales quotation header](mapping-reference.md#215) | quotes | |
 [CDS sales quotation lines](mapping-reference.md#214) | quotedetails | |
 [Released products V2](mapping-reference.md#189) | msdyn_sharedproductdetails | |
-[Sales invoice headers V2](mapping-reference.md#118) | invoices | The Sales invoice headers V2 table in the Finance and Operations app contains invoices for sales orders and free text invoices. A filter is applied in Dataverse for dual-write that will filter out any free text invoice documents. |
+[Sales invoice headers V2](mapping-reference.md#118) | invoices | The Sales invoice headers V2 table in the finance and operations app contains invoices for sales orders and free text invoices. A filter is applied in Dataverse for dual-write that will filter out any free text invoice documents. |
 [Sales invoice lines V2](mapping-reference.md#117) | invoicedetails | |
 [Sales order origin codes](mapping-reference.md#186) | msdyn_salesorderorigins | |
 
@@ -130,3 +130,4 @@ For information about price lists, see [Unified product experience](product-mapp
 - Financial dimensions must be set for the master data, for example, customer and vendor. When a customer is added to a quotation or sales order, the financial dimensions associated with the customer record flow to the order automatically. Currently dual-write does not include financial dimensions data for master data.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

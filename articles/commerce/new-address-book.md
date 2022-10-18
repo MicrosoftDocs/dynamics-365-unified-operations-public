@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Create a new address book
-description: This topic describes how to create address books in Microsoft Dynamics 365 Commerce.
+description: This article describes how to create address books in Microsoft Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 01/27/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2020-01-20
 ms.dyn365.ops.version: Release 10.0.8
-
+ms.custom: 
+ms.assetid: 
 ---
 # Create new address book
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to create a new address book in Microsoft Dynamics 365 Commerce.
+This article describes how to create a new address book in Microsoft Dynamics 365 Commerce.
 
 Address books are used in Commerce for various reasons including storing customer lists and employee lists for a channel. Address books can be used for a single channel or shared between channels.
 

@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Compensation processing allows you to calculate new base compensation amounts for your employees based on equity adjustments, merit increase targets, and performance. This topic covers the basic flow of compensation processing for fixed compensation plans without factoring an employee's performance.
+Compensation processing allows you to calculate new base compensation amounts for your employees based on equity adjustments, merit increase targets, and performance. This article covers the basic flow of compensation processing for fixed compensation plans without factoring an employee's performance.
 
 ## Plan the new compensation amounts and budgets
 To give your employees a merit increase, you must set up a fixed increase budget for each of your Departments:  **Compensation management** > **Links** > **Merit increase targets**. (Alternatively, you can open this page through the Department: **Organization** > **Departments**.) You can specify whether employees in a certain labor union or location should get a different increase percent. The **Budget** and **Currency** fields are informational and can be used to note a currency amount for the budget.
@@ -48,7 +48,7 @@ The process event **Point-in-time** date is used for processing only certain var
 
 After the parameters of the process event have been saved, you can click the **Setup** button to select the plans to include when the process is run, and which fixed compensation actions to take for each plan.
 
-Click the **Add** button on the **Plans** tab to add a compensation plan to the process event. The **Use other leverage**, **Leverage factor**, and **Leverage description** columns are used for variable compensation plans only and are not be covered in this topic.
+Click the **Add** button on the **Plans** tab to add a compensation plan to the process event. The **Use other leverage**, **Leverage factor**, and **Leverage description** columns are used for variable compensation plans only and are not be covered in this article.
 
 Save the record, then click the **Add** button on the **Actions** tab to add fixed compensation actions for the selected plan. Use the **Enable recommendation** option to enter an amount that's different than the calculated guideline increase for the action. To calculate an action that's based on the result of the previous action to link multiple compensation actions, mark the **Use previous result** option. Fixed compensation actions are types of compensation logic that you can give descriptive names to. For **Grade** and **Band** plans, you can only add fixed compensation actions that are of the following Types:
 

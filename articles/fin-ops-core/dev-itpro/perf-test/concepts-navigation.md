@@ -1,26 +1,19 @@
 ---
 title: Navigation concepts for test data
-description: This topic provides information about how to use navigation to simplify the discoverability of test data generation methods.
+description: This article provides information about how to use navigation to simplify the discoverability of test data generation methods.
 author: MichaelFruergaardPontoppidan
 ms.date: 03/27/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: mfp
 ms.search.validFrom: 2019-03-27
 ms.dyn365.ops.version: App Update 10.0.2
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Navigation concepts for test data

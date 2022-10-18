@@ -3,7 +3,7 @@
  
 title: Set up automatic freight reconciliation
 description: This procedure shows how to set up data for automatic freight reconciliation. 
-author: Henrikan
+author: Weijiesa
 ms.date: 10/16/2018
 ms.topic: business-process 
 ms.prod:  
@@ -19,7 +19,7 @@ ms.reviewer: kamaybac
 # ms.custom:  
 ms.search.region: Global
 ms.search.industry: Distribution
-ms.author: henrikan
+ms.author: weijiesa
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: AX 7.0.0 
 ---

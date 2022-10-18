@@ -2,7 +2,7 @@
 # required metadata
 
 title: Budget proposals
-description: This topic describes the process for using a machine learning model with your organization's historical data to generate a budget proposal.
+description: This article describes the process for using a machine learning model with your organization's historical data to generate a budget proposal.
 author: panolte
 ms.date: 07/16/2021
 ms.topic: article
@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form: BudgetProposalConfiguration, BudgetProposalConfigurationWizard  
 audience: Developer
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: [Global for most topics. Set Country/Region name for localizations]

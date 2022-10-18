@@ -2,7 +2,7 @@
 # required metadata
 
 title: Fixed assets (Russia)
-description: This topic provides information about fixed asset management for Russia.
+description: This article provides information about fixed asset management for Russia.
 author: kfend
 ms.date: 08/05/2019
 ms.topic: article

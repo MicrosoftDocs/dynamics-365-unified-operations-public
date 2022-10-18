@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Configure a worker using the mobile job device
-description: This topic explains how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations. 
+description: This article explains how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations. 
 author: johanhoffmann
 ms.date: 07/09/2019
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations.
+This article explains how to assign the correct roles to the user account of a worker, and then enable the worker to do shop floor registrations.
 
 ## Verify that a worker is assigned a certain role
 

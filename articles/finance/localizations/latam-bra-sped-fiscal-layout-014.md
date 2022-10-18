@@ -1,35 +1,24 @@
 ---
-# required metadata
-
 title: SPED fiscal ICMS-IPI layout 014
-description: This topic explains how to set up and generate SPED fiscal statement layout 014.
-author: sndray
+description: This article explains how to set up and generate SPED fiscal statement layout 014.
+author: AdamTrukawka
 ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:  
+ms.technology: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2020-01-15
 ms.dyn365.ops.version: 10.0.9
-
 ---
 
 # SPED fiscal ICMS-IPI layout 014 
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up and generate the SPED fiscal statement layout 014. This layout is applicable as of January 2020 under the practical guide, **EFD-ICMS/IPI – version 3.0.3**.
+This article explains how to set up and generate the SPED fiscal statement layout 014. This layout is applicable as of January 2020 under the practical guide, **EFD-ICMS/IPI – version 3.0.3**.
 
 To view the new layout, go to **Fiscal books** \> **Setup** \> **Tax statements parameters** \> **Sped fiscal** \> **Sped fiscal parameters** \> **Layout version**.
 

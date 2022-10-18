@@ -1,37 +1,27 @@
 ---
-# required metadata
-
-title: Incremental payment capture  
-description: This topic describes out-of-box support for incremental capture as part of order invoicing in Dynamics 365 Commerce.
+title: Incremental payment capture
+description: This article describes out-of-box support for incremental capture as part of order invoicing in Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 3/12/2021
+ms.date: 03/12/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 141393
-ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.reviewer: josaw
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 141393
+ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.search.industry: Retail
 ---
 
 # Incremental capture for order invoicing
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes out-of-box support for incremental capture as part of order invoicing in Dynamics 365 Commerce. This topic also describes how to enable incremental capture for the Dynamics 365 Payment Connector for Adyen, and how incremental capture can be added to third-party payment connectors using the payments software development kit (SDK).
+This article describes out-of-box support for incremental capture as part of order invoicing in Dynamics 365 Commerce. This article also describes how to enable incremental capture for the Dynamics 365 Payment Connector for Adyen, and how incremental capture can be added to third-party payment connectors using the payments software development kit (SDK).
 
 When incremental capture is enabled, orders that are fulfilled over time with multiple invoices will reference the original authorization for multiple invoices and captured payments. This contrasts with legacy support for fulfilling orders with multiple invoices, which causes a new authorization to be obtained every time a portion of the order is fulfilled and the balance due changes.
 

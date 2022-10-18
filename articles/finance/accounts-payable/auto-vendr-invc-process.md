@@ -2,7 +2,7 @@
 # required metadata
 
 title: Automated vendor invoicing processes overview
-description: This topic describes the capability for automating your vendor invoice processing and the benefits of using an automated process. 
+description: This article describes the capability for automating your vendor invoice processing and the benefits of using an automated process. 
 author: abruer
 ms.date: 02/12/2021
 ms.topic: overview
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the capability for automating your vendor invoice processing and the benefits of using an automated process. This capability consists of features that are turned on in Feature management. These features apply only to vendor invoices, not to invoices that are processed using the **Invoice journal** or **Invoice register journal** page.
+This article describes the capability for automating your vendor invoice processing and the benefits of using an automated process. This capability consists of features that are turned on in Feature management. These features apply only to vendor invoices, not to invoices that are processed using the **Invoice journal** or **Invoice register journal** page.
 
 Organizations often work with third parties to process paper invoices by using an optical character recognition (OCR) service provider. The service provider returns machine-readable invoice metadata. To help with automation, the Accounts payable automation features let you consume these artifacts from Accounts payable.
 

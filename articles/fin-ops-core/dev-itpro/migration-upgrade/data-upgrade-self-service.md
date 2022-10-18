@@ -2,9 +2,9 @@
 # required metadata
 
 title: Upgrade from AX 2012 - Data upgrade in self-service environments
-description: This topic explains how to do a data upgrade from Microsoft Dynamics AX 2012 in self-service environments.
+description: This article explains how to do a data upgrade from Microsoft Dynamics AX 2012 in self-service environments.
 author: veeravendhan-s 
-ms.date: 03/21/2022
+ms.date: 10/06/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
@@ -18,13 +18,12 @@ ms.search.validFrom: 2021-06-30
 
 [!include[banner](../includes/banner.md)]
 
-This Microsoft Dynamics AX 2012 data upgrade process is for self-service environments. Complete the sections of this topic in the following order:
+This Microsoft Dynamics AX 2012 data upgrade process is for self-service environments. Complete the sections of this article in the following order:
 
 1. **[Prerequisites](data-upgrade-self-service.md#prerequisites)**
 2. **[Data upgrade process](data-upgrade-self-service.md#data-upgrade-process)** – Run the AX2012DataUpgradeToolKit.exe application to complete the upgrade process.
 3. **[Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application)** – Review the reports of the replication validation, replication status, data upgrade status, and rollback data upgrade status.
 4. **[Tooling section of the application](data-upgrade-self-service.md#tooling-section-of-the-application)**  – This section will help you reset the process parameters and restart any of the processes.
-5. **[Troubleshooting](data-upgrade-self-service.md#troubleshooting)**
 
 ## Prerequisites
 
@@ -34,9 +33,9 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 > [!NOTE]
 > Keep the following points in mind:
 > 
-> - The AX 2012 upgrade process should be run on the sandbox environment, not the production environment.
+> - The Microsoft Dynamics AX 2012 data upgrade process is for finance and operations self-service, sandbox (UAT) environments only. It can never be run against a production environment.
 > - Make sure you download the latest version of the **AX 2012 Database Upgrade Toolkit for Dynamics 365** from LCS.
-> - Do not deploy or use the linked Power Platform environment for the AX 2012 data upgrade. The Power Platform environemnt can be deployed and used after the data upgrade is completed.
+> - Do not deploy or use the linked Power Platform environment for the AX 2012 data upgrade. The Power Platform environment can be deployed and used after the data upgrade is completed.
 
 4. Download and install the [.NET Framework version 4.7.1](https://dotnet.microsoft.com/download/dotnet-framework/net471) if it isn't already installed.
 5. Make sure that the replication feature is installed and enabled for the source SQL Server instance. To determine whether replication is enabled, run the following SQL script.
@@ -57,12 +56,13 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
 
     If the replication components aren't installed, follow the steps in [Install SQL Server replication](/sql/database-engine/install-windows/install-sql-server-replication) to install them.
 
-5. Enable and start the SQL Server Agent on the source database server.
+6. SQL Server authentication must be set to **SQL Server and Windows Authentication mode**. (This change requires a restart of the SQL Server service.) The toolkit uses native SQL logins only.
+7. Enable and start the SQL Server Agent on the source database server.
 
     > [!NOTE]
     > A user should have the **DB\_Owner** privilege in the source database, and should have access to the master database and the source database.
 
-6. **Migration toolkit setup:** If you don't want some of the source database tables to be replicated in the target database, you can specify them in the IgnoreTables.xml file. Likewise, if you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file.
+8. **Migration toolkit setup:** If you don't want some of the source database tables to be replicated in the target database, you can specify them in the IgnoreTables.xml file. Likewise, if you don't want some of the functions to be replicated, you can specify them in the IgnoreFunctions.xml file.
 
     - **Path of the IgnoreTables.xml file:** Data\\IgnoreTables.xml
     - **Path of the IgnoreFunctions.xml file:** Data\\IgnoreFunctions.xml
@@ -95,7 +95,7 @@ This Microsoft Dynamics AX 2012 data upgrade process is for self-service environ
     > [!IMPORTANT]
     > The tables and functions that are specified in these XML files won't be replicated in the target database, and the same format should be followed.
     
-7. To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
+9. To optimize the replication latency/performance, you can update the following distributor parameters in the **App.config** file:
 
     - **MaxBcpThreads** – By default, this parameter is set to **6**. If the machine has fewer than six cores, update the value to the number of cores. The maximum value that you can specify is **8**.
     - **NumberOfPublishers** – By default, this parameter is set to **2**. We recommend that you use this value.
@@ -144,7 +144,9 @@ After the validation is successful, the application presents a set of menu optio
     - Replication snapshot path (for example, **D:\\SQLServer\\Snapshot**)
 
     > [!IMPORTANT]
-    > The specified distribution database and replication snapshot paths should have enough space. We recommend that the amount of space be at least the size of the source database. The paths should be in the local disk of the machine. Avoid using shared paths.
+    > You must use SQL Server authentication. You can't use a domain sign-in.
+    > 
+    > The specified distribution database and replication snapshot paths should have enough space. We recommend that the amount of space be at least the size of the source database. If you have used compression in your AX 2012 database, then the space needed will be larger as the snapshot is uncompressed. The paths should be in the local disk of the machine. Avoid using shared paths.
     > 
     > We recommend that you have a static IP address for the virtual machine (VM) or machine (for the allowlist in step 1). In this way, you help prevent connection issues with the target database.
 
@@ -177,7 +179,7 @@ After the validation is successful, the application presents a set of menu optio
     **Created publishers:** AX\_PUB\_PkTable\_\[\*\]
 
     > [!NOTE]
-    > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job will take some time to be completed. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this topic.
+    > After this replication configuration step is completed, actual data replication will occur as a SQL job that runs in the background. This job will take some time to be completed. You can view the status of the replication by providing the **'rs'** option. To learn more about the **'rs'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
 
 6. **Replication: Set up publication for other objects (functions)**
 
@@ -190,7 +192,7 @@ After the validation is successful, the application presents a set of menu optio
     >
     > If there are no functions to replicate, the publication won't be created.
     > 
-    > Don't move on to next step until the **DataReplicationStatus** property for this step is shown as completed.
+    > Don't move on to the next step until the **DataReplicationStatus** property for this step is shown as completed.
 
 7. **Cutover: Set up publication for non-primary key tables**
 
@@ -209,7 +211,7 @@ After the validation is successful, the application presents a set of menu optio
     > [!NOTE]
     > You can validate the replicated data by using the **'dv'** option. If there are mismatched tables, this step lets you create publications for them. If you want to exclude any mismatched tables for replication, close the app, and add those tables in **Data/IgnoreTables.xml**. Then rerun the app, and use the **'dv'** option.
     > 
-    > To learn more about the **'dv'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this topic.
+    > To learn more about the **'dv'** option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
  
 8. **Cutover: Remove replication setup**
 
@@ -236,7 +238,7 @@ After the validation is successful, the application presents a set of menu optio
 
     This step triggers the data upgrade. When the action is successful, the state of the LCS environment changes from **Replication completed** to **Data upgrade in progress**.
 
-    At this point, only the data upgrade trigger occurs. The actual data upgrade occurs in the self-service environment. To learn the status of the data upgrade, use the **'ds'** option. To learn more about this option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this topic.
+    At this point, only the data upgrade trigger occurs. The actual data upgrade occurs in the self-service environment. To learn the status of the data upgrade, use the **'ds'** option. To learn more about this option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) section later in this article.
 
     If data upgrade is successful, the **'ds'** option is shown as **AX 2012 upgrade topology (LCS) status: Deployed**, and all the upgrade steps will be in a **Completed** state.
 
@@ -251,13 +253,13 @@ After the validation is successful, the application presents a set of menu optio
 
     This step triggers the rollback of data upgrade. This rolls back the data to the point before the upgrade is triggered and sets the LCS environment state to **Replicated**. This will change the environment from **Failed** to the **Replicated** state.
     
-    At this point, you have only triggered the rollback. To see the rollback status, use the **'rbs'** option. To learn more about this option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) later in this topic.
+    At this point, you have only triggered the rollback. To see the rollback status, use the **'rbs'** option. To learn more about this option, see the [Reporting section of the application](data-upgrade-self-service.md#reporting-section-of-the-application) later in this article.
     
     If rollback is successful, the **'rbs'** option is shown as **AX 2012 upgrade topology (LCS) status: Replicated**.
 
     If rollback fails, the **'rbs'** option is shown as **AX 2012 upgrade topology (LCS) status: Failed**.
 
-For more information about the data upgrade process, see [Upgrade from AX 2012 – Data upgrade FAQ](upgrade-faq.md). This topic answers some frequently asked questions about data upgrade during an upgrade from Microsoft Dynamics AX 2012.
+For more information about the data upgrade process, see [Upgrade from AX 2012 – Data upgrade FAQ](upgrade-faq.md). This article answers some frequently asked questions about data upgrade during an upgrade from Microsoft Dynamics AX 2012.
 
 ## Reporting section of the application
 
@@ -294,114 +296,7 @@ You can use the following options to review the reports of the replication valid
 
 ## Troubleshooting
 
-- **Scenario 1:** The migration app is prompting you to enter **Project-Id** and **Environment-Id** values.
-
-    **Solution:** The user should be part of the project and should be assigned to one of the following roles: **ProjectOwner**, **EnvironmentAdmin**, or **OperationsAdmin**.
-
-- **Scenario 2:** Migration app database connectivity failed for the source database server or the target database server.
-
-    **Solution:** In the migration app, complete step 1, [Data upgrade preparation: Environment setup activity](data-upgrade-self-service.md#complete-the-data-replication-and-upgrade).
-
-- **Scenario 3:** The snapshot for any of the publications failed. This failure can be tracked in the Replication Monitor.
-
-    **Solution:** In the Replication Monitor, on the **Agents** tab, select the failed publication, select and hold (or right-click) the snapshot agent, and then select **Start agent** to generate a snapshot.
-
-- **Scenario 4:** If one of the steps fails in the migration app, and you must rerun that step, follow these steps:
-
-    1. Close the migration app.
-    2. In the migration app folder, find the **Data** folder.
-    3. In the **Data** folder, open the **ReplicationMenu.Json** file.
-    4. In the file, you can see all the menu options that have the same ID sequence. Find the step that you want to rerun, and update the **Status** value to **0**.
-
-        > [!IMPORTANT] 
-        > Don't change anything else in this file. When you update the file, make sure that the migration app isn't in a running state.
-
-    5. Open the migration app, and run the step.
-
-- **Scenario 5:** After the publication is created, the replication job fails, and the following exceptions occur:
-
-    - **Exception 1:**
-
-        > Cannot execute as the database principal because the principal "dbo" does not exist, this type of principal cannot be impersonated, or you do not have permission. (Source: MSSQLServer, Error number: 15517)  
-        Get help: `http://help/15517`
-
-    - **Exception 2:**
-
-        > The process could not execute 'sp_replcmds' on 'replicationsrv\\MSSQLSERVER2016'. (Source: MSSQL_REPL, Error number: MSSQL_REPL20011)  
-        Get help: `http://help/MSSQL_REPL20011`
-        >
-        > Cannot execute as the database principal because the principal "dbo" does not exist, this type of principal cannot be impersonated, or you do not have permission. (Source: MSSQLServer, Error number: 15517)  
-        Get help: `http://help/15517`
-
-    **Solution:** In SQL Server Management Studio (SSMS), open a query window, connect to the source database, and run the following command:
-
-    ```sql
-    EXEC sp_changedbowner 'sa'
-    ```
-
-- **Scenario 6:** The LCS status is **Failed**. However, in the migration app, the data upgrade trigger is successful.
-
-    **Solution:** In the migration app, run the **'ds'** option. This option reads the LCS environment state and the data upgrade status for every step and substep.
-
-    > [!NOTE] 
-    > If the data upgrade status and the LCS environment status are **Failed**, the status of step 10 in the [Complete the data replication and upgrade](data-upgrade-self-service.md#complete-the-data-replication-and-upgrade) procedure will be updated to **Resume**. The user can then resume the operation from the point where the upgrade process failed.
-
-- **Scenario 7:** If you want to skip the failed step (if that step was manually run) and proceed with further steps, follow these steps:
-
-    1. Close the migration app. 
-    2. In the migration app folder, find the **Data** folder.
-    3. In the **Data** folder, open the **ReplicationMenu.Json** file.
-    4. In the file, you can see all the menu options that have the same ID sequence. Find the step that you want to rerun, and update the **Status** value to **1**. By changing the status to **1**, you mark the step as completed.
-
-        > [!IMPORTANT] 
-        > Don't change anything else in this file. When you update the file, make sure that the migration app isn't in a running state.
-
-- **Scenario 8:** To migrate from an old version to the new version of the console app, follow these steps:
-
-    1. Download the latest version of the console app from LCS.
-    2. Take the **paramsdata.txt** (**/paramsdata.txt**) and **ReplicationMenu.json** (**/Data/ReplicationMenu.json**) files from the old version of the console app, and put them under the same paths in the new version of the console app.
-    3. Rerun the app.
-
-- **Scenario 9:** The replication status for any of the publications is shown as **Waiting for snapshot to complete** for more than two hours.
-
-    **Solution:** In the Replication Monitor, select and hold (or right-click) the publication, and then select **Reinitialize Subscription**.
-
-- **Scenario 10:** You want to resume the data upgrade.
-
-    **Solution:** The data upgrade status might not have been updated in the console app. Follow these steps to resume the data upgrade:
-
-    1. To learn the status of the console app, perform the **Help** option. This option lists all the menu options and shows the current state.
-    2. In the [Complete the data replication and upgrade](data-upgrade-self-service.md#complete-the-data-replication-and-upgrade) procedure, if the status of step 10 is **Successful**, run the **'ds'** option in the migration app. This option updates the data upgrade status.
-
-    After the **'ds'** option is run, two types of status will be listed: the LCS environment status and the data upgrade status.
-
-    - **Case 1:** If the LCS environment status is **Failed**, and the last step of the data upgrade is **Failed**, step 10 will show the **Resume** option.
-    - **Case 2:** If the LCS environment status is **Failed**, and the last step of the data upgrade is **Completed**, step 10 will show the **Resume** option.
-    - **Case 3:** If the LCS environment status is **Deployed**, and the last step of the data upgrade is **Completed**, step 10 will show **Successful**.
-    - **Case 4:** If the LCS environment status is **Deployed**, and the last step of the data upgrade is **In Progress**, step 10 will show **Successful**, because the data upgrade job is running in the background.
-
-- **Scenario 11:** After creating the publication, if the snapshot creation fails with the following error.
-
-    ```
-        Error messages:
-        Source: Microsoft.SqlServer.Smo
-        Target Site: Void PrefetchObjectsImpl(System.Type, Microsoft.SqlServer.Management.Smo.ScriptingPreferences)
-        Message: Prefetch objects failed for Database 'AxDB_ASIA'.
-        Stack:    at Microsoft.SqlServer.Management.Smo.Database.PrefetchObjectsImpl(Type objectType, ScriptingPreferences scriptingPreferences)
-           at Microsoft.SqlServer.Replication.Snapshot.SmoScriptingManager.ObjectPrefetchControl.DoPrefetch(Database database)
-           at Microsoft.SqlServer.Replication.Snapshot.SmoScriptingManager.PrefetchObjects(ObjectPrefetchControl[] objectPrefetchControls)
-           at Microsoft.SqlServer.Replication.Snapshot.SmoScriptingManager.DoPrefetchWithRetry()
-           at Microsoft.SqlServer.Replication.Snapshot.SmoScriptingManager.DoScripting()
-           at Microsoft.SqlServer.Replication.Snapshot.SqlServerSnapshotProvider.DoScripting()
-           at Microsoft.SqlServer.Replication.Snapshot.SqlServerSnapshotProvider.GenerateSnapshot()
-           at Microsoft.SqlServer.Replication.SnapshotGenerationAgent.InternalRun()
-           at Microsoft.SqlServer.Replication.AgentCore.Run() (Source: Microsoft.SqlServer.Smo, Error number: 0)
-    ```
-    **Solution:** In the Replication Monitor, select and right-click the failed publication, and then select **Generate Snapshot**.
-
-- **Scenario 12:** Data upgrade **pre-sync and post-synch processes are taking time.** How can I troubleshoot which specific process or job is taking more time?.
-
-    **Solution:** **ReleaseUpgradeDB*** framework logs the execution of each script into ReleaseUpdateScriptsLog table. You can monitor the duration of scripts that are run in this table. You can easily identify the longest-running process or job when you're trying to tune the performance of the data upgrade process.
+For troubleshooting information, see [Troubleshoot upgrades to Dynamics 365 Finance + Operations self-service environments](troubleshoot-self-service-env.md).
 
 ## Learn about the replication configuration and status via SQL Server Management Studio
 
@@ -413,4 +308,5 @@ After step 3 of the data upgrade process is completed, you should find the publi
 - On the **Snapshot** tab, you can view the status of the snapshot.
 - To view the detail log/transaction, double-tap (or double-click) a grid item.
 - To view the data replication to the target, on the **All Subscription** tab, double-tap (or double-click) the subscription from the grid item.
+
 

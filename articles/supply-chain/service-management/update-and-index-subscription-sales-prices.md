@@ -3,7 +3,7 @@
 
 title: Update and index subscription sales prices 
 description: Update and index subscription sales prices 
-author: kamaybac
+author: sorenva
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0
 [!include [banner](../includes/banner.md)]
 
 
-1.  Click **Service management** \> **Common** \> **Service subscriptions** \> **All service subscriptions**.
+1.  Click **Service management** \> **Service subscriptions** \> **All service subscriptions**.
 
 2.  Select the subscription to update the index or base price for.
 

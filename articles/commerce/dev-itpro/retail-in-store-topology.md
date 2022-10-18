@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Select an in-store topology
-description: This topic provides information about the various Dynamics 365 Commerce in-store topologies.
-author: rassadi
+description: This article provides information about the various Dynamics 365 Commerce in-store topologies.
+author: Reza-Assadi
 ms.date: 06/02/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 44351
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jashanno
 ms.search.validFrom: 2019-03-01
-
+ms.custom: 44351
+ms.search.form: SysAADClientTable, RetailTransactionServiceProfile
 ---
 
 # Select an in-store topology
 
 [!include [banner](../../includes/banner.md)]
 
-This topic provides an overview of the various Dynamics 365 Commerce in-store topologies. 
+This article provides an overview of the various Dynamics 365 Commerce in-store topologies. 
 
 <a href="/dynamics365/unified-operations/retail/dev-itpro/media/channel/instore/topology.jpg" rel="some text">![Choose the right store topology.](media/CHANNEL/INSTORE/Topology.jpg)</a>
 

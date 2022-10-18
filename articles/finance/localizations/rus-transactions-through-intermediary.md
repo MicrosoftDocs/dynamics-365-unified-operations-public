@@ -1,27 +1,17 @@
 ---
-# required metadata
 title: Transactions through intermediary
-description: This topic provides information about the functionality for accounting intermediary deals that are made by an agent. 
-author: v-nadyuz
+description: This article provides information about the functionality for accounting intermediary deals that are made by an agent.
+author: AdamTrukawka
 ms.date: 03/03/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Transactions through intermediary
@@ -44,7 +34,7 @@ The intermediary (that is, the commissioner, agent, or attorney) performs legal 
 - In their own name but at the principal's expense
 - In the principal's name and at the principal's expense
 
-Throughout this topic, the term *principal* refers to the party that engages the agent.
+Throughout this article, the term *principal* refers to the party that engages the agent.
 
 ## Overview
 

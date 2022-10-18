@@ -1,27 +1,17 @@
 ---
-# required metadata
-title: Sales books, purchase books, and invoice-factures journals  
-description: This topic provides information about sales books, purchase books, and invoice-factures journals for Russia.
-author: anasyash
+title: Sales books, purchase books, and invoice-factures journals
+description: This article provides information about sales books, purchase books, and invoice-factures journals for Russia.
+author: AdamTrukawka
 ms.date: 01/25/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Sales books, purchase books, and invoice-factures journals

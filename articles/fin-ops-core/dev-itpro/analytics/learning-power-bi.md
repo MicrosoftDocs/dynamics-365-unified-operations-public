@@ -1,34 +1,24 @@
 ---
-# required metadata
-
 title: Learning Power BI content
-description: This topic describes the Learning Power BI content. 
-author: jcart1106 
+description: This article describes the Learning Power BI content.
+author: jcart1106
 ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: twheeloc
 ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: jcart
-ms.search.validFrom: 2017-06-30 
-ms.dyn365.ops.version: July 2017 update 
+ms.search.validFrom: 2017-06-30
+ms.dyn365.ops.version: July 2017 update
 ---
 
 # Learning Power BI content
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the **Learning** Microsoft Power BI content.
+This article describes the **Learning** Microsoft Power BI content.
 
 ## Reports that are included in the Power BI content
 

@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Tax plafond
-description: This topic explains how to set up and work with tax plafond, which is a tax exemption process.
-author: ilkond
+description: This article explains how to set up and work with tax plafond, which is a tax exemption process.
+author: mrolecki
 ms.date: 02/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2020-06-01
 ms.dyn365.ops.version: 10.0.9
-
+ms.search.form: 
 ---
 
 # Tax plafond
@@ -31,7 +21,7 @@ ms.dyn365.ops.version: 10.0.9
 
 Tax plafond is a tax exemption process available for companies, called *usual exporter*, of purchasing and importing goods and services without paying sales tax, within a limited value of their sales to foreign countries in the previous period. A company is a *usual exporter* if, during the previous year, 10 percent of its revenue value came from selling to a foreign country. The initial plafond amount and its validity dates are established at the beginning of the period. The company can buy without paying sales tax as long as the value of the purchases is less than the initial plafond amount.
 
-This topic describes how to complete these tasks:
+This article describes how to complete these tasks:
 
 - Set up the system to use the **Tax plafond** feature.
 - Work with tax plafond and intent letters.

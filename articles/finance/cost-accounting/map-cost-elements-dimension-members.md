@@ -15,13 +15,13 @@ ms.search.form: CAMDimension, CAMDimensionMember, CAMDimensionMapping
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 223234
 ms.assetid: 4c66a231-aed2-48b5-9727-b3eb4fe6e6aa
 ms.search.region: global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -38,12 +38,12 @@ If you're a global company and comply with statutory accounting requirements, yo
 ## Map cost element dimension members to a common format
 The following example shows how you, as a cost controller, can create a new cost element dimension in Cost accounting that maps cost element dimension members from the US chart of accounts structure and the French chart of accounts structure to a common set of cost element dimension members. You can then use the common set of cost element dimension members to analyze cost data from the two legal entities in a cost accounting ledger.
 
-| Source: US chart of accounts                                          | Source: French chart of accounts                                          | New common set of cost element dimension members                        |
-|-----------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| Source: US chart of accounts          | Source: French chart of accounts           | New common set of cost element dimension members                        |
+|------------------------------------|----------------------------------------------|-------------------------------------------------------------------------|
 | Imported cost element dimension members from the US chart of accounts | Imported cost element dimension members from the French chart of accounts | Mapping of US and French cost element dimension members to a common set |
-| 5001: Sales                                                           | 5001: Sales and advertising                                               | 5000: Sales and advertising                                             |
-| 5030: Advertising                                                     | 6390: Stock purchase\*                                                    | 7000: Cleaning expenses                                                 |
-| 7001: Cleaning expenses                                               | 7001: Travel expense                                                      | 7001: Travel expenses                                                   |
+| 5001: Sales                   | 5001: Sales and advertising                      | 5000: Sales and advertising                               |
+| 5030: Advertising             | 6390: Stock purchase\*                          | 7000: Cleaning expenses                                   |
+| 7001: Cleaning expenses              | 7001: Travel expense                     | 7001: Travel expenses                                                   |
 
 \*The Stock purchase French cost element dimension member isn't mapped.
 

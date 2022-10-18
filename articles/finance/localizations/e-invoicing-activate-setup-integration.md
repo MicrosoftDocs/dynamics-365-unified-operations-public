@@ -1,42 +1,40 @@
 ---
-# required metadata
-
 title: Activate and set up integration with Electronic invoicing
-description: This topic explains how to activate and set up the integration of Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management with Electronic invoicing.
-author: dkalyuzh
+description: This article explains how to activate and set up the integration of Microsoft Dynamics 365 Finance and Dynamics 365 Supply Chain Management with Electronic invoicing.
+author: gionoder
 ms.date: 01/21/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: 
-# ms.search.industry: 
-ms.author: leguo
+ms.author: gionoder
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Activate and set up integration with Electronic invoicing
 
 [!include [banner](../includes/banner.md)]
 
-Before you can activate and set up integration with Electronic invoicing, you must have a Microsoft Dynamics Lifecycle Services (LCS) project that includes version 10.0.17 or later of Dynamics 365 Finance or Dynamics 365 Supply Chain Management. Additionally, those apps must be deployed in one of the following Azure geographies:
+Before you can activate and set up integration with Electronic invoicing, you must have a Microsoft Dynamics Lifecycle Services (LCS) project that includes Dynamics 365 Finance or Dynamics 365 Supply Chain Management. Additionally, those apps must be deployed in one of the following Azure geographies:
 
 - United States
 - Europe
 - United Kingdom
 - Asia
 - Japan
+- Switzerland
+- Brazil
+- United Arab Emirates
+- Australia
+- Canada
+- France
+- India
 
 ## Enable the Electronic invoicing integration feature
 

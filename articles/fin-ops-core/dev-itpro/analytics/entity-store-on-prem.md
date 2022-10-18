@@ -1,31 +1,21 @@
 ---
-# required metadata
-
 title: PowerBI.com integration with on-premises environments
-description: This topic provides information about how to enable Entity Store for on-premises deployments.
+description: This article provides information about how to enable Entity Store for on-premises deployments.
 author: MilindaV
 ms.date: 05/27/2021
 ms.topic: article
 ms.prod: dynamics-365
-ms.service:
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: EntityStoreOnPrem
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 27661
-ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: milindav
 ms.search.validFrom: 2019-06-17
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 27661
+ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
+ms.search.form: EntityStoreOnPrem
+ms.service: 
 ---
 
 # PowerBI.com integration with on-premises environments
@@ -34,7 +24,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 The cloud version provides several features that allow for deeper integration with Microsoft Power BI. Some of these features haven't yet been implemented for on-premises deployments. However, the availability of Entity Store in on-premises deployments lets customers use PowerBI.com to report on and analyze data. 
 
-This topic outlines the analytical capabilities that are available in on-premises deployments that run Microsoft Dynamics 365 for Finance and Operations platform update 26 (May 2019) and later.
+This article outlines the analytical capabilities that are available in on-premises deployments that run Microsoft Dynamics 365 Finance platform update 26 (May 2019) and later.
 
 | Feature/capability                                                           | Cloud     | On-premises (Platform update 26 or later) |
 |------------------------------------------------------------------------------|-----------|-------------------------------------------|
@@ -45,7 +35,7 @@ This topic outlines the analytical capabilities that are available in on-premise
 
 ## Enable Entity Store on-premises
 
-This topic supplements the [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md) topic. The section numbers that follow correspond to the section numbers in that topic.
+This article supplements the [Set up and deploy on-premises environments (Platform update 12 and later)](../deployment/setup-deploy-on-premises-pu12.md) article. The section numbers that follow correspond to the section numbers in that article.
 
 ### [3. Plan your users and service accounts](../deployment/setup-deploy-on-premises-pu12.md#plansvcacct)
 
@@ -140,3 +130,4 @@ Note the following additional steps that are specific to on-premises deployments
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

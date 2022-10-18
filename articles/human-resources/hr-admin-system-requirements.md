@@ -2,7 +2,7 @@
 # required metadata
 
 title: System requirements
-description: This topic lists the system requirements for Microsoft Dynamics 365 Human Resources.
+description: This article lists the system requirements for Microsoft Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 08/11/2021
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.form: SystemAdministrationWorkspaceForm
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic lists the system requirements for Microsoft Dynamics 365 Human Resources. It also outlines the countries and regions where Human Resources is available, and information about languages and localization for Human Resources data.
+This article lists the system requirements for Microsoft Dynamics 365 Human Resources. It also outlines the countries and regions where Human Resources is available, and information about languages and localization for Human Resources data.
 
 ## Supported web browsers
 

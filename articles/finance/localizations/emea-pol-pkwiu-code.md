@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Set up and use PKWiU codes for Poland
-description: This topic walks you through setting up the PKWiU code for Poland.  
-author: ShylaThompson
+description: This article walks you through setting up the PKWiU code for Poland.
+author: AdamTrukawka
 ms.date: 09/20/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
 ms.search.region: Poland
-# ms.search.industry: 
-ms.author: kfend
-ms.dyn365.ops.version: Version 1611
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
-
+ms.dyn365.ops.version: Version 1611
+ms.custom: 
 ---
 
 # Set up and use PKWiU codes for Poland

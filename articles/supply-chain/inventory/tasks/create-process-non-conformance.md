@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create and process nonconformances
-description: This topic describes how to perform nonconformance management based on an existing quality order.
+description: This article describes how to perform nonconformance management based on an existing quality order.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: business-process
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes how to perform nonconformance management based on an existing quality order. Typically, nonconformance management is done by a quality clerk. As a prerequisite, you must have a quality order available. (For information about how to create a quality order, see [Inspect the quality of goods](inspect-quality-goods.md).)
+This article describes how to perform nonconformance management based on an existing quality order. Typically, nonconformance management is done by a quality clerk. As a prerequisite, you must have a quality order available. (For information about how to create a quality order, see [Inspect the quality of goods](inspect-quality-goods.md).)
 
 Before a user can process the approval of a nonconformance, a worker must be assigned to them in the **Person** field on the **Users** page. Additionally, before the user can use the document notes, the **Enable document handling** option must be set to *Yes* in their user options.
 

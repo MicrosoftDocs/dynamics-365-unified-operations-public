@@ -2,7 +2,7 @@
 # required metadata
 
 title: Flushing principles
-description: This topic describes the four flushing principles that are used for raw material consumption.
+description: This article describes the four flushing principles that are used for raw material consumption.
 author: johanhoffmann
 ms.date: 04/04/2017
 ms.topic: article
@@ -54,13 +54,16 @@ The flushing principles are configured in a hierarchy of default values. The hie
 ## Description of the flushing principles
 
 ### Manual
-The Manual flushing principle indicates that the registration of material consumption is a manual operation. This principle is relevant if, for example, you want to be able to track time, and the quantity of consumed batch numbers or serial numbers must be accounted for, for tracking purposes. Manual consumption is registered in a production picking list journal. For items that are enabled for advanced warehouse processes, a hand-held flow can be applied.
+The Manual flushing principle indicates that the registration of material consumption is a manual operation. This principle is relevant if, for example, you want to be able to track time, and the quantity of consumed batch numbers or serial numbers must be accounted for, for tracking purposes. Manual consumption is registered in a production picking list journal. For items that are enabled for warehouse management processes (WMS), a hand-held flow can be applied.
 
 ### Start
 The Start flushing principle indicates that material will be automatically consumed when the production order is started. The amount of material that is consumed is proportional to the quantity that is started. When the Start flushing principle is used together with the manufacturing execution system, it can also be used to flush materials when an operation or a process job is started. This principle is relevant if, for example, the variance in the consumption is low, the materials are low-value materials, there are no tracking requirements, or there is a short run time on operations. 
 
 ### Finish
-The Finish flushing principle indicates that material will be automatically consumed when the production order is reported as finished, or when an operation that is set up to consume the materials is registered as completed. The amount of material that is consumed is proportional to the quantity that is reported as finished. When the Finish flushing principle is used together with the manufacturing execution system, it can also be used to flush materials when an operation or a process job is completed. This principle is relevant in the same situations as the Start principle. However, the Finish principle is for operations that have a longer run time, where materials should not be set to WIP before the operation is completed. 
+The Finish flushing principle indicates that material will be automatically consumed when the production order is reported as finished, or when an operation that is set up to consume the materials is registered as completed. The amount of material that is consumed is proportional to the quantity that is reported as finished. When the Finish flushing principle is used together with the manufacturing execution system, it can also be used to flush materials when an operation or a process job is completed. This principle is relevant in the same situations as the Start principle. However, the Finish principle is for operations that have a longer run time, where materials should not be set to WIP before the operation is completed.
+
+> [!NOTE]
+> You can't use the Finish flushing principle together with planning items. Instead, we recommend that you use the Start flushing principle. Planning items have a production type of *planning item*, and only co-products and by-products can be reported as finished on batch orders that are created for planning items.
 
 ### Available at location
 The Available at location flushing principle indicates that the material will be automatically consumed when it's registered as picked for production. The material is registered as picked from location when work for the raw material picking is completed, or when material is available on the production input location and the material line is released to the warehouse. The picking list that is generated during the process is posted in a batch job. This principle is relevant if, for example, you have many picking activities against one production order. In this case, you don't have to update the picking list manually, and you can get a current view of the WIP balance.

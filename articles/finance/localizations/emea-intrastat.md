@@ -2,7 +2,7 @@
 # required metadata
 
 title: Intrastat overview
-description: This topic provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). 
+description: This article provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). 
 author: EvgenyPopovMBS
 ms.date: 01/13/2021
 ms.topic: overview
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). This topic also gives an overview of the reporting process, and describes the required settings and prerequisites.
+This article provides information about Intrastat reporting for the trade of goods and, in some cases, services among countries/regions of the European Union (EU). This article also gives an overview of the reporting process, and describes the required settings and prerequisites.
 
 Intrastat is the system for collecting information and generating statistics about the trade of goods among countries/regions of the European Union (EU). Intrastat reporting is required whenever a product crosses the border of another EU country/region. In several countries/regions, Intrastat reporting also applies to services. Mandatory and optional elements can be collected in Intrastat reporting. The following elements are mandatory: the value-added tax (VAT) number of the party that is responsible for providing information, the reference period, the flow (arrival or dispatch), the eight-digit commodity code, the partner member state (member state of consignment on arrivals and member state of destination on dispatches), the value of the goods, the quantity of the goods (net mass and supplementary unit), and the nature of the transaction. Countries/regions can also collect optional elements under various conditions. Some optional elements are the country/region of origin, the delivery terms, the mode of transport, a more detailed commodity code than CN8, the region of origin on dispatches and the region of destination on arrivals, the statistical procedure, the statistical value, a description of the goods, and the port/airport of loading/unloading.
 
@@ -155,7 +155,7 @@ Use the **Foreign trade parameters** page to set up the parameters in the follow
 
 ### <a name= "transaction-codes-and-miscellaneous-charges"></a>Transaction codes and miscellaneous charges
 
-This topic covers a scenario where a company in Germany must purchase goods from a company in Italy. To make this purchase, the German company must set up new transaction codes, and configure calculation rules for the invoice amount and statistical amount for those transaction codes. Additionally, when the company creates an invoice, it must specify miscellaneous charges and their percentages. Those values will be considered when the statistical value is calculated.
+This article covers a scenario where a company in Germany must purchase goods from a company in Italy. To make this purchase, the German company must set up new transaction codes, and configure calculation rules for the invoice amount and statistical amount for those transaction codes. Additionally, when the company creates an invoice, it must specify miscellaneous charges and their percentages. Those values will be considered when the statistical value is calculated.
 
 This scenario uses the **DEMF** legal entity.
 

@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Build operational workspaces
-description: This topic provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces. 
+description: This article provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces.
 author: jasongre
 ms.date: 02/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 27111
-ms.assetid: b8ddf156-eb7c-4010-95bd-16754cb1e122
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 27111
+ms.assetid: b8ddf156-eb7c-4010-95bd-16754cb1e122
 ---
 
 # Build operational workspaces
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces. 
+This article provides detailed information about workspaces and the patterns and subpatterns that are used to build operational workspaces. 
 
 ## A workspace is defined as...
 

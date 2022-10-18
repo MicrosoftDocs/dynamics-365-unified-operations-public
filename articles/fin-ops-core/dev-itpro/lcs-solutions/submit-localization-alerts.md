@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Submit alerts about country/region-specific regulatory features
-description: This topic describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the Localization and translation service.
-author: JaneA07
+description: This article describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the Localization and translation service.
+author: kfend
 ms.date: 12/14/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 27791
-ms.assetid: b37140b4-5d6f-460f-ae36-f0d7bd90c0d3
 ms.search.region: global
-# ms.search.industry: 
-ms.author: janeaug
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 27791
+ms.assetid: b37140b4-5d6f-460f-ae36-f0d7bd90c0d3
 ---
 
 # Submit alerts about country/region-specific regulatory features
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the  Dynamics regulatory alert submission service. This topic also explains how to track planned and released regulatory features through LCS Issue search. 
+This article describes how to use Microsoft Dynamics Lifecycle Services (LCS) to submit alerts through the  Dynamics regulatory alert submission service. This article also explains how to track planned and released regulatory features through LCS Issue search. 
 
 ## Accessing the regulatory alert submission service
 

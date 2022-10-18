@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Invoice issue deadline (GBL)
-description: This topic provides information about how to calculate the due dates for issuing customer invoices.
-author: v-oloski
+description: This article provides information about how to calculate the due dates for issuing customer invoices.
+author: AdamTrukawka
 ms.date: 10/06/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: kfend
 ms.search.region: GBL
-# ms.search.industry: 
-ms.author: v-oloski
+ms.author: atrukawk
 ms.search.validFrom: 2020-07-03
 ms.dyn365.ops.version: 10.0.13
-
+ms.search.form: 
 ---
 
 # Invoice issue deadline (GBL)
@@ -31,7 +21,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/preview-banner.md)]
 
-This topic explains how to configure Microsoft Dynamics 365 Finance so that it complies with legal requirements for the invoice issue deadline. For example, legislation can require that an invoice be issued no later than the fifteenth day of the month after the month when the sale occurs.
+This article explains how to configure Microsoft Dynamics 365 Finance so that it complies with legal requirements for the invoice issue deadline. For example, legislation can require that an invoice be issued no later than the fifteenth day of the month after the month when the sale occurs.
 
 ## Prerequisites
 

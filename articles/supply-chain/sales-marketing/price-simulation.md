@@ -37,7 +37,7 @@ A price simulation for a quotation shows a new total amount, based on a proposed
 
 A price simulation doesn't change the price in the quotation. If the price simulation is applied to a whole quotation, it’s treated as a special discount on the quotation header. If the price simulation is applied to specific items, it’s treated as a special discount on the quotation lines. The unit sales price on a quotation line that is created doesn't change when a price simulation is applied. Instead, a discount percentage that corresponds to the price reduction of the quotation line is applied. When a price simulation is applied, the unit sales price and the discount percentage are transferred to the quotation line or the quotation header.  
 
->[Note!]
+>[!NOTE]
 >When you run a price simulation, only the current sales currency is used to create the simulation. However, when you view the quotation totals, you see a combination of the company currency and the sales currency.  
 
 Supplementary items that are added to quotation lines might trigger line discounts or multiline discounts. They might also trigger total discounts that change the contribution margins and contribution ratios of the quotation lines and the whole discount.  

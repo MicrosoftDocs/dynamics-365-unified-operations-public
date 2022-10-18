@@ -1,36 +1,27 @@
 ---
-# required metadata
-
 title: Apply unit of measure settings
-description: This topic covers unit of measure settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
-author:  anupamar-ms
+description: This article covers unit of measure settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
+author: anupamar-ms
 ms.date: 04/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: anupamar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 
+ms.custom: 
+ms.assetid: 
+ms.search.industry: 
 ---
 
 # Apply unit of measure settings
 
 [!include [banner](includes/banner.md)]
 
-This topic covers unit of measure settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
+This article covers unit of measure settings and describes how to apply them in Microsoft Dynamics 365 Commerce.
 
 A product can be sold in different units, such as "each," "pair," and "dozen." In Commerce headquarters, the sell-by unit of measure can be defined for a product and shown on an e-commerce site. For example, if a retailer sells a product both individually and in dozens, the available units of measure can be shown together with other product information.
 

@@ -2,8 +2,8 @@
 # required metadata
 
 title: Settlement overview for centralized payments
-description: This topic describes settlement for centralized payments for Microsoft Dynamics 365 Finance. 
-author: abruer
+description: This article describes settlement for centralized payments for Microsoft Dynamics 365 Finance. 
+author: angelad116
 ms.date: 08/02/2018
 ms.topic: overview
 ms.prod: 
@@ -14,13 +14,13 @@ ms.technology:
 ms.search.form: CustOpenTrans 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: ["222414", "intro-internal"]
 ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: abruer
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

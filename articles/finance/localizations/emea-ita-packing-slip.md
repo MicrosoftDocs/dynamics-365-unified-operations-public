@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Post and print a packing slip with transportation delivery details for Italy
-description: This topic explains how to set up transportation delivery details and post a packing slip for Italy.
-author: ShylaThompson
+description: This article explains how to set up transportation delivery details and post a packing slip for Italy.
+author: AdamTrukawka
 ms.date: 04/06/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: epopov
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
 ---
 
 # Post and print a packing slip with transportation delivery details for Italy

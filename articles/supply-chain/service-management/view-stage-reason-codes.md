@@ -3,7 +3,7 @@
 
 title: View stage reason codes 
 description: View and modify the list of stage reasons for a service order.
-author: kamaybac
+author: sorenva
 ms.date: 05/07/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -34,7 +34,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 View and modify the list of stage reasons for a service order. Use stage reasons to indicate the reason for the status of a service order. For example, you can create a **Canceled** stage that is assigned a reason code of **Canceled by the customer**.
 
-  - Click **Service management** \> **Common** \> **Service orders** \> **Service orders**. Open a service order.
+  - Click **Service management** \> **Service orders** \> **Service orders**. Open a service order.
 
   - In the **Service orders** form, on the **Action Pane**, on the **Dispatch** tab, click **Stage reasons**.
 

@@ -1,42 +1,32 @@
 ---
-# required metadata
-
 title: Accessibility features and capabilities
-description: This topic provides information about the accessibility features and capabilities in Microsoft Dynamics 365 Commerce.
+description: This article provides information about the accessibility features and capabilities in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 04/14/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application user
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: retail 
 ms.author: brshoo
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 
 # Accessibility features and capabilities
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information about the accessibility features and capabilities in Microsoft Dynamics 365 Commerce.
+This article provides information about the accessibility features and capabilities in Microsoft Dynamics 365 Commerce.
 
 Accessibility features and capabilities provide the functional means for all users to access and perform actions so that they can accomplish their goals. This broad range of users might require assistive tools for hearing, vision, mobility, or neurodiversity.
 
 Various features in Dynamics 365 Commerce let you build your site so that it includes assistive functionality. When you design your site, you should consider the areas of accessibility functionality that are mentioned in the [Microsoft Accessibility Center](https://www.microsoft.com/accessibility). 
 
-This topic describes some additional areas of accessibility functionality that you should consider when you use Dynamics 365 Commerce.
+This article describes some additional areas of accessibility functionality that you should consider when you use Dynamics 365 Commerce.
 
 ## Image alt text
 

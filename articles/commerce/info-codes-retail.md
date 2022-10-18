@@ -1,31 +1,21 @@
 ---
-# required metadata
-
 title: Info codes and info code groups
 description: This article provides an overview about info codes, info code groups, and how to use them.
-author: mugunthanm
+author: josaw1
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailInfocodeTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 22761
-ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
-
+ms.custom: 22761
+ms.assetid: 99877dba-a6e3-4d88-ba0a-ee5913aea17e
+ms.search.industry: Retail
+ms.search.form: RetailInfocodeTable
 ---
 
 # Info codes and info code groups

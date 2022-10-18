@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Separate accounts for credit notes
-description: This topic explains how to set up and use separate accounts for credit notes.
-author: ilkond
+description: This article explains how to set up and use separate accounts for credit notes.
+author: mrolecki
 ms.date: 09/16/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2019-11-01
 ms.dyn365.ops.version: 10.0.7
-
+ms.search.form: 
 ---
 
 # Separate accounts for credit notes

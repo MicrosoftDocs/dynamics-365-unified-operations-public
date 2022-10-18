@@ -1,35 +1,24 @@
 ---
-# required metadata
-
 title: EU Sales list for Sweden
-description: This topic provides information about the European Union (EU) sales list report for Sweden.
-author: AKroshkina
+description: This article provides information about the European Union (EU) sales list report for Sweden.
+author: AdamTrukawka
 ms.date: 03/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-#ms.search.form:
 audience: IT Pro, Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.suite: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: 
-# ms.search.industry: 
-ms.author: anasyash
-ms.dyn365.ops.version: 
+ms.author: atrukawk
 ms.search.validFrom: 
+ms.dyn365.ops.version: 
 ---
 
 # EU Sales list for Sweden
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the European Union (EU) sales list report. The Swedish EU sales list report contains information about the sale of goods and services for reporting in text format.
+This article provides information about the European Union (EU) sales list report. The Swedish EU sales list report contains information about the sale of goods and services for reporting in text format.
 
 The following fields are included on the Swedish EU sales list report:
 
@@ -119,7 +108,7 @@ For general information about which types of transactions are included in the EU
 
 ## Example
 
-For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for Sweden, see [Example for generic EU Sales list](emea-eu-sales-list-example.md). However, for the example in this topic, create **SE100200300400** as the company's VAT ID. Additionally, set the **DE-011** customer location to Germany, and create **DE100200300** as the VAT ID.
+For information about how to create a general setup, create postings, and transfer transactions by using the **DEMF** legal entity for Sweden, see [Example for generic EU Sales list](emea-eu-sales-list-example.md). However, for the example in this article, create **SE100200300400** as the company's VAT ID. Additionally, set the **DE-011** customer location to Germany, and create **DE100200300** as the VAT ID.
 
 ### Create a contact for the person who is responsible for the report
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Prospect to cash
-description: This topic provides an overview of the Prospect to cash solution between Dynamics 365 Supply Chain Management and Dynamics 365 Sales. 
+description: This article provides an overview of the Prospect to cash solution between Dynamics 365 Supply Chain Management and Dynamics 365 Sales. 
 author: Henrikan 
 ms.date: 04/25/2018
 ms.topic: article
@@ -47,13 +47,13 @@ In the current version, the Prospect to cash solution provides the following typ
 ## System requirements for Supply Chain Management
 Prospect to cash integration is supported on the following versions:
 
-### Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3 (December 2017)
+### Microsoft Dynamics 365 Finance and Operations, Enterprise edition 7.3 (December 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (December 2017) - Application build 7.3.11971.56116 with Platform Update 12 (7.0.4709.41129)
+- Dynamics 365 Finance and Operations, Enterprise edition (December 2017) - Application build 7.3.11971.56116 with Platform Update 12 (7.0.4709.41129)
 
-### Dynamics 365 for Finance and Operations, Enterprise edition (July 2017)
+### Dynamics 365 Finance, Enterprise edition (July 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise edition (July 2017) - with platform update 8 (application build 7.2.11792.56024 with platform build 7.0.4565.16212).
+- Dynamics 365 Finance and Operations, Enterprise edition (July 2017) - with platform update 8 (application build 7.2.11792.56024 with platform build 7.0.4565.16212).
 - The following hotfixes are required:
 
   - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – This hotfix enables sales order synchronization from Sales to Supply Chain Management via the Data Integration feature. It also provides several other enhancements.
@@ -63,9 +63,9 @@ Prospect to cash integration is supported on the following versions:
     > [!NOTE]
     > You only have to install KB4045570 because the installation includes the changes from other hotfixes. 
 
-### Dynamics 365 for Finance and Operations version 1611 (November 2016)
+### Dynamics 365 Finance and Operations version 1611 (November 2016)
 
-- Dynamics 365 for Finance and Operations version 1611 (November 2016)  with platform update 8 or higher
+- Dynamics 365 Finance and Operations version 1611 (November 2016)  with platform update 8 or higher
 
 - The following hotfixes are required:
 

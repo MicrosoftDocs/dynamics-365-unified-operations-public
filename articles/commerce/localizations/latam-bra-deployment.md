@@ -1,39 +1,28 @@
 ---
-# required metadata
-
 title: Set up and deploy the Dynamics 365 Commerce localization for Brazil
-description: This topic covers how to set up and deploy the Microsoft Dynamics 365 Commerce localization for Brazil.
-author: akviklis
+description: This article covers how to set up and deploy the Microsoft Dynamics 365 Commerce localization for Brazil.
+author: EvgenyPopovMBS
 ms.date: 03/04/2022
 ms.topic: article
 ms.prod: 
-
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Brazil
-ms.search.industry: Retail
-ms.author: akviklis
+ms.author: josaw
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.search.industry: Retail
 ---
 # Set up and deploy the Dynamics 365 Commerce localization for Brazil
 
 [!include [banner](../includes/banner.md)]
 
-This topic covers how to set up and deploy the Microsoft Dynamics 365 Commerce localization for Brazil.
+This article covers how to set up and deploy the Microsoft Dynamics 365 Commerce localization for Brazil.
 
 The Dynamics 365 Commerce localization for Brazil includes several extensions of the following Commerce components: the Commerce runtime (CRT), Retail Server, and point of sale (POS). These extensions let you calculate Brazil-specific taxes, generate electronic fiscal documents for retail sales, print DANFE (Documento Auxiliar de Nota Fiscal Eletrônica) and CF-e-SAT (Cupom Fiscal Eletrônico - Sistema Autenticador e Transmissor de Cupons Fiscais Eletrônicos) fiscal receipts that have custom fields, manage Brazil-specific customer information, and issue sales in offline contingency mode where registration of electronic fiscal documents is postponed. For more information about the Commerce localization for Brazil, see [Brazilian localization scope](../../finance/localizations/latam-bra-scope.md) and [Commerce localization for Brazil](latam-bra-commerce-localization.md).
 
-The extensions that are described in this topic were developed based on the fiscal integration framework. For information about the fiscal integration functionality, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md). [Electronic reporting (ER)](/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting) is used to implement formats for Brazilian electronic fiscal documents.
+The extensions that are described in this article were developed based on the fiscal integration framework. For information about the fiscal integration functionality, see [Overview of fiscal integration for Commerce channels](fiscal-integration-for-retail-channel.md). [Electronic reporting (ER)](/dynamics365/fin-ops-core/dev-itpro/analytics/general-electronic-reporting) is used to implement formats for Brazilian electronic fiscal documents.
 
 ## Enable Brazil-specific Commerce functionality
 

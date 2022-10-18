@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Annual VAT listing of domestic sales
-description: This topic provides information about Belgium annual VAT listing of domestic sales or Invoice turnover report.
-author: andosip
+description: This article provides information about Belgium annual VAT listing of domestic sales or Invoice turnover report.
+author: AdamTrukawka
 ms.date: 09/09/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Belgium
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Annual VAT listing of domestic sales

@@ -1,30 +1,21 @@
 ---
-# required metadata
-
 title: Cost management Power BI content
-description: This topic describes what is included in the Cost management Power BI content. 
-author: ShylaThompson
+description: This article describes what is included in the Cost management Power BI content.
+author: JennySong-SH
 ms.date: 03/16/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 270314
-ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
+ms.reviewer: kamaybac
 ms.search.region: Global
-ms.search.industry: Manufacturing
-ms.author: kfend
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 270314
+ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
+ms.search.industry: Manufacturing
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace, CostObjectWithLowestAccuracy, CostVarianceChart, CostObjectWithLowestTurn
 ---
 
 # Cost management Power BI content
@@ -172,7 +163,7 @@ Data from the application is used to fill the report pages in the **Cost managem
 
 The key aggregate measurements of the following objects are used as the basis of the Power BI content.
 
-| Object                          | Key aggregate measurements | Data source for Finance and Operations | Field               |
+| Object                          | Key aggregate measurements | Data source for finance and operations | Field               |
 |---------------------------------|----------------------------|----------------------------------------|---------------------|
 | CostObjectStatementCacheMonthly | Amount                     | CostObjectStatementCache               | Amount              |
 | CostObjectStatementCacheMonthly | Quantity                   | CostObjectStatementCache               | Qty                 |
@@ -207,3 +198,4 @@ The following key dimensions are used as filters to slice the aggregate measurem
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

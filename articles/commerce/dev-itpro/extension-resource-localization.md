@@ -1,27 +1,18 @@
 ---
-# required metadata
-
 title: Localize Commerce extension resources and label files
-description: This topic explains how to modify POS UI labels, POS messages, receipt labels, and error messages for Commerce Scale Unit or CRT.
-author: mugunthanm
+description: This article explains how to modify POS UI labels, POS messages, receipt labels, and error messages for Commerce Scale Unit or CRT.
+author: josaw1
 ms.date: 01/06/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.search.region: Global 
-ms.search.industry: retail
-ms.author: mumani
+ms.reviewer: josaw
+ms.search.region: Global
+ms.author: josaw
 ms.search.validFrom: 2018-05-31
 ms.dyn365.ops.version: 8.0.1
-
+ms.search.industry: retail
 ---
 
 # Localize Commerce extension resources and label files
@@ -29,7 +20,7 @@ ms.dyn365.ops.version: 8.0.1
 [!include[banner](../includes/banner.md)]
 
 
-This topic explains how to modify labels in the point of sale (POS) user interface (UI), POS messages (error, warning, and information), receipt labels, and error messages for Commerce Scale Unit or Commerce Runtime Services (CRT). You can also add custom error messages for in the same way. However, for new POS extension labels, you should use the localization framework in the POS extension.
+This article explains how to modify labels in the point of sale (POS) user interface (UI), POS messages (error, warning, and information), receipt labels, and error messages for Commerce Scale Unit or Commerce Runtime Services (CRT). You can also add custom error messages for in the same way. However, for new POS extension labels, you should use the localization framework in the POS extension.
 
 ## POS labels and messages (error, warning, and information)
 

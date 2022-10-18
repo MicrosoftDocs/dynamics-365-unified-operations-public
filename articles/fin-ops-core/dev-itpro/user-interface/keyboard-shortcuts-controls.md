@@ -1,40 +1,29 @@
 ---
-# required metadata
-
 title: Keyboard shortcuts for extensible controls
-description: This topic outlines the recommended method for implementing keyboard shortcuts for extensible controls.
-author: tonyafehr
+description: This article outlines the recommended method for implementing keyboard shortcuts for extensible controls.
+author: jasongre
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 89563
-ms.assetid: C0E2E0F9-19C1-4CE0-A81C-1ACFA841F6AB
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
+ms.author: jasongre
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-
+ms.custom: 89563
+ms.assetid: C0E2E0F9-19C1-4CE0-A81C-1ACFA841F6AB
 ---
 
 # Keyboard shortcuts for extensible controls
 
 [!include [banner](../includes/banner.md)]
 
-Keyboard shortcuts are an important consideration when you create any extensible control. This topic provides information that will help you choose keyboard shortcuts for your extensible controls. It also outlines the recommended method for implementing keyboard shortcuts for extensible controls.
+Keyboard shortcuts are an important consideration when you create any extensible control. This article provides information that will help you choose keyboard shortcuts for your extensible controls. It also outlines the recommended method for implementing keyboard shortcuts for extensible controls.
 
 ## Overview
-For accessibility, it's essential that keyboard-only users be able to use controls. Therefore, keyboard shortcuts are an important consideration when you create any extensible control. This topic provides information that will help you choose key combinations to use as keyboard shortcuts. It highlights the shortcuts that are currently used by Finance and Operations apps and supported browsers, shortcuts that are planned for implementation, and shortcuts that one or more browsers don't allow to be overridden. This topic also outlines the recommended way to implement keyboard shortcuts for extensible controls.
+For accessibility, it's essential that keyboard-only users be able to use controls. Therefore, keyboard shortcuts are an important consideration when you create any extensible control. This article provides information that will help you choose key combinations to use as keyboard shortcuts. It highlights the shortcuts that are currently used by finance and operations apps and supported browsers, shortcuts that are planned for implementation, and shortcuts that one or more browsers don't allow to be overridden. This article also outlines the recommended way to implement keyboard shortcuts for extensible controls.
 
 ## Choosing a key combination
 When you're trying to choose a key combination to use as a keyboard shortcut, it's important that you be aware of other existing shortcuts. In this way, you help guarantee that your shortcut won't overlap an existing shortcut. If you try to collide with an existing shortcut, one of the following outcomes might occur:
@@ -44,14 +33,14 @@ When you're trying to choose a key combination to use as a keyboard shortcut, it
 
 Because of these potential issues, we recommend that you adhere to this guidance when you choose a key combination:
 
-- **Don't** choose any key combination that is currently used by Finance and Operations apps, or that is planned for future implementation.
+- **Don't** choose any key combination that is currently used by finance and operations apps, or that is planned for future implementation.
 - **Do** pick key combinations that will work in all supported browsers.
 - **Do** be careful when you override shortcuts that are used by a supported browser. You should not suppress shortcuts for important or frequently used browser functionality.
 - **Do** use longer key combinations (three keys) for control-specific behavior. Shorter combinations should be reserved for user-defined keyboard shortcuts.
 - **Don't** choose any key combination that involves Ctrl+Alt, because this combination maps to Alt+Gr for some Eastern European languages and will conflict with other shortcuts.
 
 ### Keyboard shortcut links
-Here are links to the keyboard shortcuts that are documented for Finance and Operations apps and supported browsers:
+Here are links to the keyboard shortcuts that are documented for finance and operations apps and supported browsers:
 
 - <a href="../../fin-ops/get-started/shortcut-keys.md">Keyboard shortcuts</a>
 - <a href="https://support.microsoft.com/help/13805">Microsoft Edge</a>

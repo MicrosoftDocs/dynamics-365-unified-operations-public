@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Select account groups for Chinese voucher types
-description: This topic explains how to select account groups when you set up voucher types for China.
-author: anasyash
+description: This article explains how to select account groups when you set up voucher types for China.
+author: AdamTrukawka
 ms.date: 07/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
 ms.search.region: China (PRC)
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 
+ms.search.form: 
 ---
 
 # Select account groups for Chinese voucher types
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to select account groups when you set up voucher types for China.
+This article explains how to select account groups when you set up voucher types for China.
 
 ## Enable the feature
 

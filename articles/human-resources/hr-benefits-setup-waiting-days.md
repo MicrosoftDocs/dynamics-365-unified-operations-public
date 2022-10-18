@@ -15,7 +15,7 @@ ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -28,11 +28,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Configure waiting days
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 In Microsoft Dynamics 365 Human Resources, waiting days establish a monthly milestone to use for benefit plans. For example, a waiting day of 15 represents the 15th day of each month. 
 

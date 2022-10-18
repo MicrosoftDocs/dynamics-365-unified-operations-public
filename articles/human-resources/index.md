@@ -15,7 +15,7 @@ ms.search.form: DefaultDashboard
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: ["260624", "intro-internal"]
 ms.assetid: 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 
 
-This topic provides a list of the help topics and other resources in Dynamics 365 Human resources. 
+This article provides a list of the help topics and other resources in Microsoft Dynamics 365 Human resources. 
 
 Select a feature area to learn more about it.
 
@@ -44,7 +44,7 @@ Select a feature area to learn more about it.
 - [Compensation management](hr-compensation-overview.md)
 - [Employee development](hr-develop-performance-management-overview.md)
 - [Learning](hr-learning-courses.md)
-- [Workflow system]( ../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
+- [Workflow system](../fin-ops-core/fin-ops/organization-administration/overview-workflow-system.md?toc=/dynamics365/human-resources/toc.json)
 
 Human Resources connects people and operations data to help you optimize workforce costs and take care of your employees.
 
@@ -55,7 +55,8 @@ For information about Dynamics 365 Finance, see [Finance home page](../finance/i
 ## Additional resources
 
 ### eLearning courses
-For online courses and training, check out [Dynamics 365 Human Resources on Microsoft Learn](/learn/browse/?products=dynamics-human-resources&expanded=dynamics-365).
+
+For online courses and training, check out [Dynamics 365 Human Resources](/training/browse/?products=dynamics-human-resources&expanded=dynamics-365).
 
 ### Videos
 

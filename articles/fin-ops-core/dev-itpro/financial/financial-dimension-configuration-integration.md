@@ -2,7 +2,7 @@
 # required metadata
 
 title: Financial dimension configuration
-description: This topic describes the Financial dimension configuration for integrating applications page.
+description: This article describes the Financial dimension configuration for integrating applications page.
 author: RyanCCarlson2
 ms.date: 12/01/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Developer
 # ms.devlang: 
-ms.reviewer: tfehr
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 91363
 ms.assetid: 6be04fc8-5e2b-4ea6-b9bc-940fb5b811e5
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.1
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the Financial dimension configuration. There are two important areas for setup: 
+This article describes the Financial dimension configuration. There are two important areas for setup: 
 
 - The order of financial dimensions for financial reporting. The order is configured on the **Financial reporting setup** page. 
 - The data entity integration formats. The formats are configured on the **Integrating applications** page. Data entity integration formats are required in order to import transactions that contain accounts and financial dimensions.

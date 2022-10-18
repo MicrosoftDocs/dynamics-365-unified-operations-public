@@ -1,30 +1,18 @@
 ---
-# required metadata
-
 title: SPED-Reinf events
-description: This topic explains how to set up SPED-Reinf events by using Fiscal books and the SII reporting register framework.
-author: sndray
+description: This article explains how to set up SPED-Reinf events by using Fiscal books and the SII reporting register framework.
+author: AdamTrukawka
 ms.date: 05/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 8.1
-
+ms.search.form: 
 ---
 
 # SPED-Reinf events
@@ -271,7 +259,7 @@ The event sends four types of amounts to the government database:
 - **Suspended withholding** – The amount of the suspended retained INSS tax type.
 - **Suspended additional withholding** – The suspended amount on the variation of the INSS tax type that is linked to the fiscal document line.
 
-When a suspension of amounts occurs, the associated administrative or lawsuits process must be specified in the event to support or explain the reasons for the suspension. Manually enter this information in the **Amount of withholding** and **Additional amount of withholding** fields on the **Administration and judicial process** page that is described earlier in the topic.
+When a suspension of amounts occurs, the associated administrative or lawsuits process must be specified in the event to support or explain the reasons for the suspension. Manually enter this information in the **Amount of withholding** and **Additional amount of withholding** fields on the **Administration and judicial process** page that is described earlier in the article.
 
 Event R-2010 uses the concept of closing. After this event is closed, the web service will refuse any new entries or modifications for it, unless it's manually reopened.
 

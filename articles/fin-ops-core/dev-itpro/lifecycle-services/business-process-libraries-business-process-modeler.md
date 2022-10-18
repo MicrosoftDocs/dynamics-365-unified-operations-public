@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Business process libraries in Business process modeler (BPM)
-description: This topic explains how to view a business process library, how to copy and modify it, and how to export information about the library to Microsoft Word.
-author: RobinARH
+description: This article explains how to view a business process library, how to copy and modify it, and how to export information about the library to Microsoft Word.
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 13301
-ms.assetid: 94c88919-39de-4a7b-9d1a-359b99500abe
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 
 ms.dyn365.ops.version: 2012
-
+ms.custom: 13301
+ms.assetid: 94c88919-39de-4a7b-9d1a-359b99500abe
 ---
 
 # Business process libraries in Business process modeler (BPM)
@@ -33,7 +22,7 @@ ms.dyn365.ops.version: 2012
 
 This article explains how to view a standard business process library in Business process modeler, how to copy and modify a business process library, and how to export information about the business process library to Microsoft Word.
 
-This topic explains how to view a standard business process library, how to copy a business process library, modify it, and how to export information for the business process library to Microsoft Word.
+This article explains how to view a standard business process library, how to copy a business process library, modify it, and how to export information for the business process library to Microsoft Word.
 
 ## View and copy a standard business process library
 You can select a standard business process library on the Business process library page. To open this page, sign in to Lifecycle Services, open a project, and then click the Business process modeler tile.

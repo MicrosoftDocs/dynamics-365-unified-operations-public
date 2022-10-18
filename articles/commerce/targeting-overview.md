@@ -1,36 +1,27 @@
 ---
-# required metadata
-
 title: Device, market, and geolocation targeting
-description: This topic describes how to create, edit, and manage audiences and targets in Microsoft Dynamics 365 Commerce site builder by using device, market, and geolocation information.
-author:  sushma-rao 
+description: This article describes how to create, edit, and manage audiences and targets in Microsoft Dynamics 365 Commerce site builder by using device, market, and geolocation information.
+author: sushma-rao
 ms.date: 02/03/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: global
-ms.search.industry: Retail
 ms.author: sushmar
 ms.search.validFrom: 2021-07-31
 ms.dyn365.ops.version: AX 10.0.21
+ms.custom: 
+ms.assetid: 
+ms.search.industry: Retail
 ---
 
 # Device, market, and geolocation targeting
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to create, edit, and manage audiences and targets in Microsoft Dynamics 365 Commerce site builder by using device, market, and geolocation information.
+This article describes how to create, edit, and manage audiences and targets in Microsoft Dynamics 365 Commerce site builder by using device, market, and geolocation information.
 
 Dynamics 365 Commerce lets you personalize variations of your page content (known as *targets*) for specific groups of customers (known as *audiences*) to help increase user engagement and satisfaction. You can create either an audience or a target first. However, a successful targeting experience requires both these components.
 

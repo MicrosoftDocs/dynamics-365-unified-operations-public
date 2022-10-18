@@ -1,24 +1,14 @@
 ---
-# required metadata
-
-title: Import or export a customized security configuration by using Data management 
-description: The topic explains how a customized security configuration can be exported and imported across environments by using the Data management framework.
-author: tonyafehr
-ms.date: 07/17/2020
+title: Import or export a customized security configuration by using Data management
+description: The article explains how a customized security configuration can be exported and imported across environments by using the Data management framework.
+author: peakerbl
+ms.date: 9/16/2022
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-# ms.custom: NotInToc
 ms.search.region: Global
-# ms.search.industry:
 ms.author: peakerbl
 ms.search.validFrom: 2020-07-31
 ms.dyn365.ops.version: 10.0.12
@@ -28,7 +18,7 @@ ms.dyn365.ops.version: 10.0.12
 
 [!include[banner](../includes/banner.md)]
 
-The topic explains how a customized security configuration can be exported and imported across environments by using the [Data management framework](../data-entities/data-entities-data-packages.md). This functionality can be used when, for example, a customized security configuration must be moved from a test environment to a production environment.
+The article explains how a customized security configuration can be exported and imported across environments by using the [Data management framework](../data-entities/data-entities-data-packages.md). This functionality can be used when, for example, a customized security configuration must be moved from a test environment to a production environment.
 
 The following entities hold the customized, role-based security (that is, privileges, duties, and roles) that has been added or modified by using security configuration:
 
@@ -55,7 +45,10 @@ The following entities hold the customized, role-based security (that is, privil
 8. Select the applicable security customization entities.
 9. Select **Add selected**.
 
-    In version 10.0.12 and later, ignore any warning messages about data length. Those messages aren't applicable, because the entities that are included use containers in data package mode.
+    > [!NOTE]
+    > Ignore any warning messages that have the following format: "The data entity \<Entity name\> has public field XmlObjectFileName that is not defined on the staging table." These messages aren't applicable, because the security entities use containers in the data package to store the security XML object.
+    >
+    > ![Warning messages about an undefined XmlObjectFileName public field.](https://user-images.githubusercontent.com/28597769/190197998-3f22ad9b-8dc7-47f9-9882-86f775616035.png)
 
 10. Select **Close**.
 11. Make sure that the **Sequence** field is set in the order of the entity dependencies. Privileges should be first, then duties, and finally roles.
@@ -74,7 +67,8 @@ The following entities hold the customized, role-based security (that is, privil
 5. Select **Upload and add**.
 6. Find the exported package, and then select **Open**.
 
-    In version 10.0.12 and later, ignore any warning messages about data length. Those messages aren't applicable, because the entities that are included use containers in data package mode.
+    > [!NOTE]
+    > Ignore any warning messages that have the following format: "The data entity \<Entity name\> has public field XmlObjectFileName that is not defined on the staging table." These messages aren't applicable, because the security entities use containers in the data package to store the security XML object.
 
 7. Select **Close**.
 8. Select **Import**.

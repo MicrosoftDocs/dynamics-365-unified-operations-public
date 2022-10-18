@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Electronic reporting (ER) overview
-description: This topic provides an overview of the Electronic reporting tool. It describes key concepts, supported scenarios, and formats that are part of the solution.
-author: NickSelin
+description: This article provides an overview of the Electronic reporting tool. It describes key concepts, supported scenarios, and formats that are part of the solution.
+author: kfend
 ms.date: 11/02/2021
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERWorkspace
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: ["58941", "intro-internal"]
-ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
 ms.search.region: global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 58941,  ""intro-internal
+ms.assetid: 5d51b6a6-ad12-4af9-a66d-a1eb820ae57f
+ms.search.form: ERWorkspace
 ---
 
 # Electronic reporting (ER) overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
+This article provides an overview of the Electronic reporting (ER) tool. It includes information about key concepts, the scenarios that ER supports, and a list of formats that have been designed and released as part of the solution.
 
 ER is a configurable tool that helps you create and maintain regulatory electronic reporting and payments. It's based on the following three concepts:
 
@@ -69,7 +59,7 @@ ER currently supports the TEXT, XML, JSON, PDF, Microsoft Word, Microsoft Excel,
 
 The ER engine has the following capabilities:
 
-- It represents a single shared tool for electronic reporting in different domains and replaces more than 20 different engines that do some type of electronic reporting for Finance and Operations.
+- It represents a single shared tool for electronic reporting in different domains and replaces more than 20 different engines that do some type of electronic reporting for finance and operations.
 - It makes a report's format insulated from the current implementation. In other words, the format is applicable for different versions.
 - It supports the creation of a custom format that is based on an original format. It also includes capabilities for automatically upgrading the customized format when the original format is changed because of localization/customization requirements.
 - It becomes the primary standard tool to support localization requirements in electronic reporting, both for Microsoft and for Microsoft partners.
@@ -81,7 +71,7 @@ The ER engine has the following capabilities:
 
 [![ER main data flow.](./media/ger-main-data-flow.jpg)](./media/ger-main-data-flow.jpg)
 
-### Components
+### Component
 
 ER supports the following types of components:
 
@@ -92,32 +82,7 @@ ER supports the following types of components:
 
 For more information, see [Electronic reporting components](er-overview-components.md).
 
-
-#### Component versioning
-
-Versioning is supported for ER components. The following workflow is provided to manage changes in ER components:
-
-1. The version that is originally created is marked as a **Draft** version. This version can be edited and is available for test runs.
-2. The **Draft** version can be converted to a **Completed** version. This version can be used in local reporting processes.
-3. The **Completed** version can be converted to a **Shared** version. This version is published on LCS and can be used in global reporting processes.
-4. The **Shared** version can be converted to a **Discontinued** version. This version can then be deleted.
-
-Versions that have either **Completed** or **Shared** status are available for other data interchange. The following actions can be performed on a component that has these statuses:
-
-- The component can be serialized in XML format and exported as a file in XML format.
-- The component can be reserialized from an XML file and imported into the application as a new version of an ER component.
-
-#### Component date effectivity
-
-ER component versions are date-effective. You can set the **Effective from** date for an ER component to specify the date that the component becomes effective for reporting processes. The application session date is used to define whether a component is valid for execution. If more than one version is valid for a particular date, the latest version is used for reporting processes.
-
-#### Component access
-
-Access to ER format components depends on the setting for the ISO country/region code. When this setting is blank for a selected version of a format configuration, a format component can be accessed from any company at run time. When this setting contains ISO country/region codes, a format component is available only from companies that have a primary address that is defined for one of a format component's ISO country/region codes.
-
-Different versions of a data format component can have different settings for ISO country/region codes.
-
-#### <a name="Configuration"></a>Configuration
+### <a name="Configuration"></a>Configuration
 
 An ER configuration is the wrapper of a particular ER component. That component can be either a data model component or a format component. A configuration can include different versions of an ER component. Each configuration is marked as owned by a specific configuration provider. The **Draft** version of a component of a configuration can be edited when the owner of the configuration has been selected as an active provider in the ER settings in the application.
 
@@ -127,13 +92,13 @@ The format configuration that is created contains a format component. The data m
 
 An ER configuration is shared for application companies.
 
-#### <a name="Provider"></a>Provider
+### <a name="Provider"></a>Provider
 
-The ER provider is the party identifier that is used to indicate the author (owner) of each ER configuration. ER lets you manage the list of configuration providers. Format configurations that are released for electronic documents as part of the Finance and Operations solution are marked as owned by the **Microsoft** configuration provider.
+The ER provider is the party identifier that is used to indicate the author (owner) of each ER configuration. ER lets you manage the list of configuration providers. Format configurations that are released for electronic documents as part of the finance and operations solution are marked as owned by the **Microsoft** configuration provider.
 
 To learn how to register a new ER provider, play the task guide, **ER Create a configuration provider and mark it as active** (part of the **7.5.4.3 Acquire/Develop IT service/solution components (10677)** business process).
 
-#### <a name="Repository"></a>Repository
+### <a name="Repository"></a>Repository
 
 An ER repository stores ER configurations. The following types of ER repositories are currently supported: 
 
@@ -146,9 +111,9 @@ An ER repository stores ER configurations. The following types of ER repositorie
 
 An **LCS shared library** repository provides access to the list of configurations within the Shared asset library in Lifecycle Services (LCS). This type of ER repository can only be registered for the Microsoft provider. From the LCS Shared asset library you can import the latest versions of ER configurations into the current instance.
 
-An **LCS project** repository provides access to the list of configurations of a specific LCS project (LCS project assets library) that was selected when the repository was registered. ER lets you upload shared configurations from the current instance to a specific **LCS project** repository. You can also import configurations from an **LCS project** repository into the current instance of your Finance and Operations apps.
+An **LCS project** repository provides access to the list of configurations of a specific LCS project (LCS project assets library) that was selected when the repository was registered. ER lets you upload shared configurations from the current instance to a specific **LCS project** repository. You can also import configurations from an **LCS project** repository into the current instance of your finance and operations apps.
 
-A **File system** repository provides access to the list of configurations that are located as xml files in the specific folder of the local file system of the machine where the AOS service is hosted. Required folder is selected at the repository registration stage. You can import configurations from a **File system** repository into the current instance. 
+A **File system** repository provides access to the list of configurations that are located as XML files in the specific folder of the local file system of the machine where the AOS service is hosted. The required folder is selected at the repository registration stage. You can import configurations from a **File system** repository into the current instance. 
 
 Note that this repository type is accessible in the following environments:
 
@@ -165,7 +130,7 @@ A **Global repository** repository provides access to the list of configurations
 
 For more information, see [Import Electronic reporting (ER) configurations from Global repository of Configuration service](./er-download-configurations-global-repo.md).
 
-An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, initially releases as part of the application solution. These configurations can be imported into the current instance and used for electronic reporting or playing sample task guides. They can also be used for additional localizations and customizations. Note that the latest versions provided by Microsoft ER configurations must be imported from the LCS Shared asset library by using corresponding the ER repository.
+An **Operations resources** repository provides access to the list of configurations that Microsoft, as an ER configuration provider, initially releases as part of the application solution. These configurations can be imported into the current instance and used for electronic reporting or playing sample task guides. They can also be used for additional localizations and customizations. Note that the latest versions provided by Microsoft ER configurations must be imported from the LCS Shared asset library by using the corresponding ER repository.
 
 Required **LCS project**, **File system**, and **Regulatory Configuration Services (RCS)** repositories can be registered individually for each configuration provider of the current instance. Each repository can be dedicated to a specific configuration provider.
 
@@ -268,8 +233,10 @@ The list of ER configurations for Finance is constantly updated. Open the [Globa
 
 ## Additional resources
 
+- [Electronic reporting components](er-overview-components.md)
 - [Create Electronic reporting (ER) configurations](electronic-reporting-configuration.md)
 - [Manage the Electronic reporting (ER) configuration lifecycle](general-electronic-reporting-manage-configuration-lifecycle.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

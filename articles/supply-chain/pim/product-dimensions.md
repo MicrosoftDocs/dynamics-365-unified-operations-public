@@ -53,7 +53,7 @@ Product dimension values for the size, color, and style dimensions can be create
 
 Product dimension values for the configuration dimension are typically created by using either the Product configurator or the Dimension-based configurator. 
 
-Product versions are usually created for specific versions as the product evolves during its lifecycle. Product versions are covered in detail later in this topic.
+Product versions are usually created for specific versions as the product evolves during its lifecycle. Product versions are covered in detail later in this article.
 
 Product dimensions can also be created and maintained on the **Product dimensions** page, which can be accessed from the following locations:
 
@@ -114,7 +114,7 @@ When you're testing your solutions for compatibility with the version dimension,
 
 #### Turn on the version dimension
 
-Before you can use the version dimension, it must be turned on in your system. This task requires admin permissions.
+Before you can use the version dimension, it must be turned on for your system. This task requires admin permissions.
 
 1. Go to **System administration \> Workspaces \> Feature management**.
 1. Turn on the feature that is named *Product dimension version*. (For more information, see [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).)

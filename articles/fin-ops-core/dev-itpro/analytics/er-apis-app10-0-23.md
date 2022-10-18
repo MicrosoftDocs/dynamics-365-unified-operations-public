@@ -1,37 +1,25 @@
 ---
-# required metadata
-
 title: Electronic reporting framework API changes for Application update 10.0.23
-description: This topic describes how the APIs of the Electronic reporting (ER) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.23.
-author: NickSelin
+description: This article describes how the APIs of the Electronic reporting (ER) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.23.
+author: kfend
 ms.date: 10/05/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERFormatDestinationTable, ERParameters
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
-ms.search.region: Global 
-# ms.search.industry: 
-ms.author: nselin
+ms.search.region: Global
+ms.author: filatovm
 ms.search.validFrom: 2021-10-01
 ms.dyn365.ops.version: 10.0.23
-
+ms.search.form: ERFormatDestinationTable, ERParameters
 ---
 
 # Electronic reporting framework API changes for Application update 10.0.23
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how the application programming interfaces (APIs) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.23.
+This article describes how the application programming interfaces (APIs) of the [Electronic reporting (ER)](general-electronic-reporting.md) framework have been changed in Microsoft Dynamics 365 Finance version 10.0.23.
 
 ## <a name="er-api-extend-file-source"></a>API to extend the list of ER sources of inbound documents
 

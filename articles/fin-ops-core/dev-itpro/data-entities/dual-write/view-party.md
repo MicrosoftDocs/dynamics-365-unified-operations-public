@@ -1,6 +1,6 @@
 ---
 title: View party data
-description: This topic explains how to view party data by using the Party page.
+description: This article explains how to view party data by using the Party page.
 author: RamaKrishnamoorthy 
 ms.date: 11/23/2021
 ms.topic: article

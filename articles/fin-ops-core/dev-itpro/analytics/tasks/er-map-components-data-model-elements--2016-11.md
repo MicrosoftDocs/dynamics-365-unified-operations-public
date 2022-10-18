@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: ER Map components of the created format to data model elements (November 2016)
-description: This topic describes how to map data model elements to components of the created Electronic reporting (ER) configuration. 
-author: NickSelin
+description: This article describes how to map data model elements to components of the created Electronic reporting (ER) configuration.
+author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: filatovm
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: ERWorkspace, ERSolutionTable, EROperationDesigner
 ---
 # ER Map components of the created format to data model elements (November 2016)
 

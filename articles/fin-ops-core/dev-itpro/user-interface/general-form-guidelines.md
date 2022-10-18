@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: General form guidelines
-description: This topic contains the guidelines that apply to all forms. This checklist must be used in addition to any pattern-specific guidelines.
+description: This article contains the guidelines that apply to all forms. This checklist must be used in addition to any pattern-specific guidelines.
 author: jasongre
 ms.date: 03/09/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 14701
-ms.assetid: 02d48414-6b6e-4bbd-bff9-2d33726dbd63
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 14701
+ms.assetid: 02d48414-6b6e-4bbd-bff9-2d33726dbd63
 ---
 
 # General form guidelines
 
 [!include [banner](../includes/banner.md)]
 
-This topic contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
+This article contains the guidelines that apply to all forms, regardless of form pattern. This checklist must be used in addition to any pattern-specific guidelines.
 
 ## Verification checklist
 

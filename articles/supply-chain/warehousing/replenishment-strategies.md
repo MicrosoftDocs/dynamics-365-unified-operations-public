@@ -2,8 +2,8 @@
 # required metadata
 
 title: Replenishment strategies
-description: This topic provides information about replenishment strategies and explains how you can use the Replenishment strategy field on wave demand replenishment template lines to select how replenishment is done.
-author: mirzaab
+description: This article provides information about replenishment strategies and explains how you can use the Replenishment strategy field on wave demand replenishment template lines to select how replenishment is done.
+author: Mirzaab
 ms.date: 10/29/2020
 ms.topic: article
 ms.prod: 
@@ -11,12 +11,12 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -41,7 +41,7 @@ Peak season is one example of a situation where the *Maximum location capacity* 
 
 ## Turn on the Replenish to max based on stocking limits feature
 
-Before you can use this feature, it must be turned on in your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of this feature and turn it on if it's required. There, the feature is listed in the following way:
+Before you can use this feature, it must be turned on for your system. Administrators can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of this feature and turn it on if it's required. There, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Replenish to max based on stocking limits*

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dispose of a fixed asset as scrap
-description: The topic describes the process of eliminating transactions for a fixed asset that was disposed of as scrap.
+description: The article describes the process of eliminating transactions for a fixed asset that was disposed of as scrap.
 author: moaamer
 ms.date: 08/14/2019
 ms.topic: article
@@ -15,14 +15,14 @@ ms.search.form: TaxTable
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 
 # ms.tgt_pltfrm: 
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: moaamer
 ms.search.validFrom: 2019-08-14
 ms.dyn365.ops.version: 10.0.6
 
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-The topic describes the process of eliminating transactions for a fixed asset that was disposed of as scrap. The transaction types that can be eliminated include an asset's acquisition and accumulated depreciation transactions and other fixed asset transactions. Elimination of these transactions affects balance sheet accounts, such as acquisition adjustment, depreciation adjustment, revaluation, write-up, and write-down accounts.
+The article describes the process of eliminating transactions for a fixed asset that was disposed of as scrap. The transaction types that can be eliminated include an asset's acquisition and accumulated depreciation transactions and other fixed asset transactions. Elimination of these transactions affects balance sheet accounts, such as acquisition adjustment, depreciation adjustment, revaluation, write-up, and write-down accounts.
 
 | Transaction                                         | Debit (Dr.) | Credit (Cr.) |
 |-----------------------------------------------------|-------------|--------------|

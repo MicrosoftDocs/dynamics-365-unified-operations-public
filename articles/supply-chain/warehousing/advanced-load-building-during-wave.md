@@ -2,8 +2,8 @@
 # required metadata
 
 title: Advanced load building during wave
-description: This topic provides information about advanced wave load building, which automatically assigns shipments to existing waves during wave execution. Therefore, you can create meaningful loads that represent trucks without having to use the load planning workbench.
-author: mirzaab
+description: This article provides information about advanced wave load building, which automatically assigns shipments to existing waves during wave execution. Therefore, you can create meaningful loads that represent trucks without having to use the load planning workbench.
+author: Mirzaab
 ms.date: 07/01/2020
 ms.topic: article
 ms.prod: 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -40,7 +40,7 @@ To use the feature, you must set up the system in the following way:
 
 ## Turn on advanced wave load building in your system
 
-Before you can use advanced wave load building, two features must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of these features and turn them on if they are required. In the **Feature management** workspace, the features are listed in the following way:
+Before you can use advanced wave load building, two features must be turned on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of these features and turn them on if they are required. In the **Feature management** workspace, the features are listed in the following way:
 
 - Wave load building feature:
 
@@ -54,7 +54,7 @@ Before you can use advanced wave load building, two features must be turned on i
 
 ### Make sample data available
 
-To work through this demo by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
+To work through this demo by using the sample records and values that are specified here, you must be on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. Additionally, you must select the **USMF** legal entity before you begin.
 
 You can also use this demo as guidance for using this feature when you work on a production system. However, in that case, you must substitute your own values, and you might be missing some types of required records that the standard demo data provides.
 
@@ -224,7 +224,7 @@ You can set up as many load build templates as you require. However, to use adva
 
 ## Scenario
 
-This scenario shows how the settings that were described earlier in this topic affect warehouse operations while a sales order is processed. This scenario uses the **USMF** demo data together with other demo values that are provided in those setup instructions.
+This scenario shows how the settings that were described earlier in this article affect warehouse operations while a sales order is processed. This scenario uses the **USMF** demo data together with other demo values that are provided in those setup instructions.
 
 ### Create sales orders
 

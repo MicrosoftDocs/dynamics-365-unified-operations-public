@@ -2,7 +2,7 @@
 # required metadata
 
 title: Tax inquiry
-description: This topic explains how to view various types of tax information.
+description: This article explains how to view various types of tax information.
 author: EricWangChen
 ms.date: 06/05/2019
 ms.topic: article

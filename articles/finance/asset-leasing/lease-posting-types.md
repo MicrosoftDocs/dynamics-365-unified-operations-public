@@ -2,7 +2,7 @@
 # required metadata
 
 title: Lease posting types
-description: This topic describes the posting types that are used for asset leasing transactions.
+description: This article describes the posting types that are used for asset leasing transactions.
 author: moaamer
 ms.date: 04/12/2021
 ms.topic: article
@@ -15,8 +15,7 @@ ms.search.form: AssetLeasePostingAccounts
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
-
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 4464
 ms.assetid: 5f89daf1-acc2-4959-b48d-91542fb6bacb
@@ -31,7 +30,7 @@ ms.dyn365.ops.version: 10.0.14
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the posting types that are used for asset leasing transactions.
+This article describes the posting types that are used for asset leasing transactions.
 
 ## Lease asset
 

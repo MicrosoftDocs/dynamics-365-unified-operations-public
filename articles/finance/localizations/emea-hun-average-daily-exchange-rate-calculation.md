@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Calculate average and daily exchange rates
-description: This topic explains how to calculate the average currency exchange rate for outgoing bank and cash transactions.
-author: anasyash
+description: This article explains how to calculate the average currency exchange rate for outgoing bank and cash transactions.
+author: AdamTrukawka
 ms.date: 03/30/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetParameters
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 264684
 ms.search.region: Hungary
-# ms.search.industry: 
-ms.author: epopov
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 10.0.0
-
+ms.custom: 264684
+ms.search.form: AssetParameters
 ---
 
 # Calculate average and daily exchange rates
@@ -36,7 +27,7 @@ According to the requirements for accounting foreign currencies under "Act C of 
 
 In legal entities that have Hungarian country context, the function for calculating the average exchange rate for outgoing petty cash and bank transactions is available. When journal lines have outgoing petty cash or bank transactions, the calculation algorithm of the average exchange rate uses the summarized amounts of the accounting currency and the foreign currency before the specified transaction date.
 
-This topic explains how to use the function for calculating the average currency exchange rate for outgoing bank and cash transactions. It also explains how to use the function for calculating the daily exchange rate for incoming and outgoing bank and petty cash transactions.
+This article explains how to use the function for calculating the average currency exchange rate for outgoing bank and cash transactions. It also explains how to use the function for calculating the daily exchange rate for incoming and outgoing bank and petty cash transactions.
 
 ## Daily exchange rate
 

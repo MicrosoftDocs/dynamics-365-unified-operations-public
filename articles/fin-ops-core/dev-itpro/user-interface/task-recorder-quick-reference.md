@@ -1,13 +1,13 @@
 ---
 title: Task Recorder quick reference
 description: This article provides a quick reference sheet that explains what each button in the Task recorder menus does.
-author: RobinARH
+author: jasongre
 ms.date: 12/01/2019
 ms.topic: article
 audience: Developer, IT Pro
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: global
-ms.author: tfehr 
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -31,7 +31,7 @@ This article provides a quick reference sheet that explains what each button in 
 <td><h3 id="create-recording">Create recording</h3>
 Choose this option to begin creating a new recording.
 <h3 id="play-recording-as-guide">Play recording as guide</h3>
-Choose this option to see what your recording looks like when viewed as a Help topic or played as a Task guide.
+Choose this option to see what your recording looks like when viewed as a Help article or played as a Task guide.
 <h3 id="change-recording-text">Edit recording</h3>
 Choose this option if you need to change the recording’s name, description, or the text that is displayed in the steps.
 <h3 id="playback-recording">Playback recording</h3>

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Budget planning overview
-description: This topic describes budget planning. It contains information that can help you configure budget planning and set up budget planning processes.
+description: This article describes budget planning. It contains information that can help you configure budget planning and set up budget planning processes.
 author: panolte
 ms.date: 01/11/2018
 ms.topic: overview
@@ -15,13 +15,13 @@ ms.search.form: BudgetPlanningConfiguration
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: ["17251", "intro-internal"]
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sigitac
+ms.author: panolte
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes budget planning. It contains information that can help you configure budget planning and set up budget planning processes.
+This article describes budget planning. It contains information that can help you configure budget planning and set up budget planning processes.
 
 ## Overview of budget planning
 
@@ -94,7 +94,7 @@ A budget planning workflow consists of an ordered set of stages that a budget pl
 
 You create a budget planning workflow in the **Workflow stages** section of the **Budget planning configuration** page. There, you can select the stages and the budgeting workflow that will be used, and you configure additional settings.
 
-A good practice is to create a budget planning workflow for each level of a budgeting hierarchy. You then assign a budgeting workflow that contains elements that correspond to the stages in the budget planning workflow. In the example schema that appears earlier in this topic, one budget planning workflow will be created for the Sales departments, and another will be created for the headquarters. A budgeting workflow moves the budget plans through the stages.
+A good practice is to create a budget planning workflow for each level of a budgeting hierarchy. You then assign a budgeting workflow that contains elements that correspond to the stages in the budget planning workflow. In the example schema that appears earlier in this article, one budget planning workflow will be created for the Sales departments, and another will be created for the headquarters. A budgeting workflow moves the budget plans through the stages.
 
 You create a budgeting workflow for budget planning on the **Budgeting workflows** page. The process resembles the process for creating other workflows. The following illustration shows an example of a workflow for the headquarters.
 
@@ -144,7 +144,7 @@ Stage allocations are used to automatically allocate budget plan lines during wo
 
 When you set up a stage allocation, you associate the budget planning workflow and stage with the allocation schedule. The budget planning workflow must be associated with a budgeting workflow that uses the **Budget planning stage allocation** automated workflow task. When the workflow reaches the specified stage, the allocation occurs automatically. This automated task can be used to create budget plan lines in a new scenario.
 
-In the example schema that appears earlier in this topic, an allocation is done to transfer amounts from a budget plan and scenarios in the "Baseline" stage for the headquarters to another budget plan and scenarios in the "Estimate" stage for the Sales departments. The following illustration shows the relevant section of the example schema.
+In the example schema that appears earlier in this article, an allocation is done to transfer amounts from a budget plan and scenarios in the "Baseline" stage for the headquarters to another budget plan and scenarios in the "Estimate" stage for the Sales departments. The following illustration shows the relevant section of the example schema.
 
 [![Stage allocation.](./media/stageallocation-204x300.png)](./media/stageallocation.png) 
 

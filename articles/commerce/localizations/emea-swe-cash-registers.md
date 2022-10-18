@@ -1,33 +1,23 @@
 ---
-# required metadata
-
 title: Cash register functionality for Sweden
-description: This topic provides an overview of the cash register functionality that is available for Sweden. 
+description: This article provides an overview of the cash register functionality that is available for Sweden. 
 author: EvgenyPopovMBS
 ms.date: 12/02/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailHardwareProfile, RetailFiscalPrinterConfigTable
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Sweden
 ms.search.industry: retail
-ms.author: epopov
-ms.search.validFrom: 2017-06-30
-ms.dyn365.ops.version: July 2017 update
+ms.author: josaw
+
 ---
 # Cash register functionality for Sweden
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the cash register functionality that is available for Sweden in Dynamics 365 Commerce. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
+This article provides an overview of the cash register functionality that is available for Sweden in Dynamics 365 Commerce. It also provides guidelines for setting up the functionality. The functionality consists of the following parts:
 
 - Common point-of sale (POS) features that are made available to customers in all countries or regions, such as an option to prevent sales and returns from being combined on one receipt
 - Sweden-specific features, such as additional counters in daily POS reports
@@ -153,11 +143,6 @@ You must specify the following general settings for Sweden.
    # [Retail 10.0.7 and later](#tab/retail-10-0-7)
 
   For more information about setting up and configuring the control unit integration sample, see [Control unit integration sample for Sweden](./emea-swe-fi-sample.md#setting-up-the-integration-with-control-units).
-
----
-
-    
-
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

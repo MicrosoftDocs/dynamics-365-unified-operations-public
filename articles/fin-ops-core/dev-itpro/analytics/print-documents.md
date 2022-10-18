@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Document printing overview
 description: You can print documents by using either a local printer or a network-connected device. This article provides an overview of how documents are printed.
 author: RichdiMSFT
@@ -8,23 +6,14 @@ ms.date: 07/25/2019
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro, Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: ["69161", "intro-internal"]
-ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 69161,  ""intro-internal
+ms.assetid: 7815bddd-c4f4-4bc3-a29b-315458065374
 ---
 
 # Document printing overview
@@ -58,7 +47,7 @@ Because the solution varies, depending on the scenario, applications provide bui
 - **Scenario 2** uses client applications and Microsoft 365 services.
 - **Scenario 3** requires support from client applications and from services that are hosted in Microsoft Azure.
 
-In addition to the platform that is deployed to the Azure subscription, Finance and Operations applications provide customers with an integrated, first-party Azure application that helps them more easily use domain-hosted devices to print documents.
+In addition to the platform that is deployed to the Azure subscription, finance and operations applications provide customers with an integrated, first-party Azure application that helps them more easily use domain-hosted devices to print documents.
 
 ## Service overview
 While documents that are produced by the hosted applications are waiting to be printed on a network-connected device, they are stored in Azure blob storage. The [Install the Document Routing Agent to enable network printing](install-document-routing-agent.md) uses Azure authentication to establish a secure channel to the Azure services.

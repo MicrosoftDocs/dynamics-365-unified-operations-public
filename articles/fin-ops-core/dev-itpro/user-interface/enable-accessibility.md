@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: Accessibility in forms, products, and controls
-description: This topic describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
-author: RobinARH
+description: This article describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
+author: jasongre
 ms.date: 08/13/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 104943
-ms.assetid: 5b97c471-212a-4487-baef-120d01063319
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: tlefor
+ms.author: jasongre
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
-
+ms.custom: 104943
+ms.assetid: 5b97c471-212a-4487-baef-120d01063319
 ---
 
 # Accessibility in forms, products, and controls
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
+This article describes best practices for enabling accessibility in your form, product, or control. An accessibility checklist is also included.
 
 Accessibility is about inclusion, that is, a person with a disability can perform the same task as a person without that disability. Making an accessible control or form should be as fundamental as making it secure, high-performing, or easy-to-understand.
 
@@ -161,7 +150,7 @@ Complex interactions can be learned, but current state isn’t always easy to de
 
 #### Describe applicable context menu
 
-Finance and Operations apps provide a context menu. When the application author has provided functionality to the current control or context, you can announce that functionality.
+Finance and operations apps provide a context menu. When the application author has provided functionality to the current control or context, you can announce that functionality.
 
 - *aria-haspopup* - Indicates that the element has a pop-up context menu or sub-level menu.
 

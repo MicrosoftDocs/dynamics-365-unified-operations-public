@@ -1,15 +1,15 @@
 ---
 title: Electronic reporting formula language
-description: This topic provides information about how to use the formula language in Electronic reporting (ER).
-author: NickSelin
+description: This article provides information about how to use the formula language in Electronic reporting (ER).
+author: kfend
 ms.date: 05/04/2020
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # Electronic reporting formula language

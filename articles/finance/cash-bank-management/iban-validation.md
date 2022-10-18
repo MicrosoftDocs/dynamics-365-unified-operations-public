@@ -2,8 +2,8 @@
 # required metadata
 
 title: Manage International Bank Account Number (IBAN) account validation
-description: This topic explains how to manage International Bank Account Number (IBAN) account validation.
-author: twheeloc
+description: This article explains how to manage International Bank Account Number (IBAN) account validation.
+author: angelad116
 ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
@@ -19,7 +19,7 @@ ms.reviewer: twheeloc
 # ms.custom: 
 ms.search.region: Global 
 # ms.search.industry: 
-ms.author: twheeloc
+ms.author: angelading
 ms.search.validFrom: 2018-08-30
 ms.dyn365.ops.version: 8.0.4
 

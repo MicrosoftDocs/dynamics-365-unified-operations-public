@@ -2,7 +2,7 @@
 # required metadata
 
 title: Put to wall - put to store
-description: This topic provides information about the Put to wall - put to store functionality. This functionality lets you handle scenarios where you must consolidate a product to a prepack staging area, based on configurable criteria. It helps decrease picking time because it allows for picking to a single target license plate and can use more put positions than cluster picking.
+description: This article provides information about the Put to wall - put to store functionality. This functionality lets you handle scenarios where you must consolidate a product to a prepack staging area, based on configurable criteria. It helps decrease picking time because it allows for picking to a single target license plate and can use more put positions than cluster picking.
 author: Mirzaab
 ms.date: 07/16/2020
 ms.topic: article
@@ -15,7 +15,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -35,7 +35,7 @@ This warehousing functionality is also referred to by other names, such as put-t
 
 ## Turn on the Outbound sorting feature
 
-Before you can use the *Put to wall - put to store* functionality, the *Outbound sorting* feature must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+Before you can use the *Put to wall - put to store* functionality, the *Outbound sorting* feature must be turned on for your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Outbound sorting*

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Awareness between ledger settlement and year-end close
-description: This topic provides information about enhancements which impact ledger settlements and the General ledger year-end close.
+description: This article provides information about enhancements which impact ledger settlements and the General ledger year-end close.
 author: kweekley
 ms.date: 04/06/2022
 ms.topic: article

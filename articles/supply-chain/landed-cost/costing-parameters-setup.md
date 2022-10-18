@@ -2,8 +2,8 @@
 # required metadata
 
 title: Costing parameter values setup
-description: When you set up the Landed cost module, you can define several sets of common values that will be available when you select specific types of costing parameter values in other parts of the app. This topic explains how to set up these sets of values.
-author: sherry-zheng
+description: When you set up the Landed cost module, you can define several sets of common values that will be available when you select specific types of costing parameter values in other parts of the app. This article explains how to set up these sets of values.
+author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
 ms.prod: 
@@ -15,12 +15,12 @@ ms.search.form: ITMCostTypeTable, ITMCostTypeGroup, ITMCostTransferGroup, ITMCos
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: chuzheng
+ms.author: weijiesa
 ms.search.validFrom: 2020-12-07
 ms.dyn365.ops.version: 10.0.17
 ---
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../../includes/banner.md)]
 
-When you set up the **Landed cost** module, you can define several sets of common values and related settings per value. These values will then be available when you select specific types of costing parameter values in other parts of the app. This topic explains how to set up these sets of values.
+When you set up the **Landed cost** module, you can define several sets of common values and related settings per value. These values will then be available when you select specific types of costing parameter values in other parts of the app. This article explains how to set up these sets of values.
 
 ## Set up cost type codes
 

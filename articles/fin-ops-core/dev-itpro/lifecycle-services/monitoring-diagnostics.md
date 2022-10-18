@@ -2,9 +2,9 @@
 # required metadata
 
 title: Monitoring and diagnostics tools in Lifecycle Services (LCS)
-description: This topic describes the tools that Microsoft Dynamics Lifecycle Services provides to help you monitor, diagnose, and analyze the health of the environments.
+description: This article describes the tools that Microsoft Dynamics Lifecycle Services provides to help you monitor, diagnose, and analyze the health of the environments.
 author: angelmarshall
-ms.date: 08/23/2021
+ms.date: 05/25/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -30,8 +30,9 @@ ms.dyn365.ops.version: Version 1611
 # Monitoring and diagnostics tools in Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
-This topic describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you monitor, diagnose, and analyze the health of the Finance and Operations environments that you manage.
+This article describes the various tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you monitor, diagnose, and analyze the health of the finance and operations environments that you manage.
 
 To have a successful onboarding experience to the cloud service, you must know the health of your environments at all times. You must also be able to troubleshoot any health issues that occur. Microsoft Dynamics Lifecycle Services (LCS), which is the administration center, contains a collection of monitoring and diagnostics tools that can help to ensure that you have an accurate view of the environments that you manage.
 
@@ -43,14 +44,13 @@ The telemetry data that is the basis of the Monitoring and diagnostics portal in
 
 ### Monitoring
 
-In business operations software, you should always know whether your environment is up and running, so that it can perform business operations. You should also be able to easily view the health of the environment through LCS. Microsoft supports two types of monitoring capabilities:
+In business operations software, you should always know whether your environment is up and running, so that it can perform business operations. You should also be able to easily view the health of the environment through LCS. Microsoft supports the following monitoring capabilities:
 
-- **Availability monitoring** – This type of monitoring performs a check against the environment to make sure that it's available at all times. If the check fails, the Microsoft Service Engineering team is immediately notified.
 - **Health monitoring** – In addition to availability checks, some basic health checks must be performed. These health checks span various components, such as Application Object Server (AOS), Batch Framework, Data Management Framework, Microsoft Azure SQL, and Management Reporter. These checks are done based on multiple data sources, such as the telemetry that is collected from the environments, checks that are done by a watchdog service that continuously monitors the environment, and CPU counters and other system-level counters that the environment emits. Some health checks are self-healing and are mitigated immediately. However, other health checks are reported to the Microsoft Service Engineering team for investigation.
 
 ### Diagnostics
 
-When a user reports an issue, you can use various tools in LCS for troubleshooting. The rich set of telemetry data helps you build a storyboard view that shows what that user and other users were doing when the issue was reported. In addition to user activity tracking, a rich set of SQL data is available for performance troubleshooting.
+When a user reports an issue, you can use various tools in LCS for troubleshooting. The rich set of telemetry data helps you build a storyboard view that shows what that user and other users were doing when the issue was reported. 
 
 ### Analytics
 
@@ -58,7 +58,7 @@ Analytics is another critical use case for the telemetry data that is collected.
 
 ## Responsibilities
 
-For a managed cloud service such as Finance and Operations, Microsoft is responsible for actively monitoring the health of production environments at all times. If a customer's environment is affected by an issue, the Microsoft Service Engineering team is immediately alerted. The team will start to investigate the issue and will work with you to find a resolution. However, you're responsible for proactively or reactively monitoring and troubleshooting the health of non-production environments.
+For a managed cloud service such as finance and operations, Microsoft is responsible for actively monitoring the health of production environments at all times. If a customer's environment is affected by an issue, the Microsoft Service Engineering team is immediately alerted. The team will start to investigate the issue and will work with you to find a resolution. 
 
 ## Access the Monitoring and diagnostics portal
 
@@ -126,7 +126,6 @@ On the **Environment monitoring** page, select the **Activity** tab to use the A
 
 [![Activity tab.](./media/activitymonitoringview-1024x507.jpg)](./media/activitymonitoringview.jpg)
 
-- The **User interaction** chart shows a user's activities on various machines in the environment and the SQL utilization trend.
 - The **User load** section shows all the system users. Each chart shows the time that the user spent on a specific machine.
 - The **Activity load** section shows the activities that were performed on each machine. If you hover over an activity, you see the Form:Control:Action as a tuple. For example, if you look at LedgerJournal:New:Click in this section, you can see that user A opened the **LedgerJournals** page and selected the **New** button to create a new journal entry.
 - The **User activity** grid shows the various activities that users performed, based on their session timestamp.
@@ -147,7 +146,7 @@ You can use the filters on this page to narrow the information logs. Here are so
 
 For advanced troubleshooting, you can view raw information logs. You can use a set of predefined queries to get raw logs for an issue. You can then export the logs to do more advanced analysis. The following types of queries are available:
 
-- Slow queries
+- Long queries
 - Deadlocks
 - Crashes
 - Financial reporting issues
@@ -156,8 +155,9 @@ For information about how to use Azure Data Explorer with raw information logs, 
 
 ### SQL insights
 
-The Monitoring and diagnostics portal also includes advanced SQL troubleshooting tools to enable performance analysis. Some of these tools are similar to the DynPerf tool that was used for SQL troubleshooting in Microsoft Dynamics AX 2012. For more details, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](performancetroubleshooting.md).
+The Monitoring and diagnostics portal also includes advanced SQL troubleshooting tools to enable performance analysis. For more details, see [Performance troubleshooting using tools in Lifecycle Services (LCS)](performancetroubleshooting.md).
 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

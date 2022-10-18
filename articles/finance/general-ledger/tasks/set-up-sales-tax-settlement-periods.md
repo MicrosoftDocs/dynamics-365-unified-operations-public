@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Set up sales tax settlement periods
-description: This topic explains how to set up sales tax settlement periods in Dynamics 365 Finance.
+description: This article explains how to set up sales tax settlement periods in Dynamics 365 Finance.
 author: twheeloc
 ms.date: 08/05/2019
 ms.topic: business-process 
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: TaxPeriod   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -27,11 +27,11 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up sales tax settlement periods. Sales tax settlement periods contain information about the period intervals for which sales tax needs to be reported and paid. A settlement process can be run for a settlement period for a specific date interval. All tax codes associated with the settlement period will be settled. Depending on the set up of the related Sales tax authority, the tax liability is posted either to a vendor or a General ledger account.
+This article explains how to set up sales tax settlement periods. Sales tax settlement periods contain information about the period intervals for which sales tax needs to be reported and paid. A settlement process can be run for a settlement period for a specific date interval. All tax codes associated with the settlement period will be settled. Depending on the set up of the related Sales tax authority, the tax liability is posted either to a vendor or a General ledger account.
 
 This task uses the USMF demo company.
 
-1. In the navigation pane, go to **Modules > Tax > Indirect taxes > Sales tax > Sales tax settlement periods**.
+1. Go to **Tax > Indirect taxes > Sales tax > Sales tax settlement periods**.
 2. Select **New**.
 3. In the **Settlement period** field, type a value.
 4. In the **Description** field, type a value.

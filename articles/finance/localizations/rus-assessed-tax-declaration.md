@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Assessed tax declaration (Russia)
-description: This topic explains how to set up and use assessed tax declarations for Russia.
-author: ShylaThompson
+description: This article explains how to set up and use assessed tax declarations for Russia.
+author: AdamTrukawka
 ms.date: 01/15/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2019-05-01
 ms.dyn365.ops.version: 10.0.1
-
+ms.search.industry: 
 ---
 
 # Assessed tax declaration (Russia)
@@ -48,7 +37,7 @@ The annual average cost is calculated as the sum of residual values (net book va
 
 The cadastral cost is defined by cadastral authorities and should be specified by the user on the fixed asset card. Realty assets that are taxed at the cadastral cost are reported in section 3 of the assessed tax declaration.
 
-This topic explains how to perform the following tasks:
+This article explains how to perform the following tasks:
 
 1. [Set up assessed tax](#set-up-assessed-tax)
 2. [Create a realty asset and set up parameters for assessed tax calculation](#create-a-realty-asset-and-set-up-parameters-for-assessed-tax-calculation)
@@ -198,7 +187,7 @@ If the organization has realty objects that are located in territories that diff
 3. On the **General** FastTab, in the **Separate division ID** field, select the company division that you created in the previous procedure.
 
     > [!NOTE]
-    > For realty objects that are located in territories that differ from the organization's main location, the tax authority that assessed tax is reported to is defined as the tax authority that has an OKTMO code that matches the OKTMO code of the separate division that is associated with the realty location. For information about how to associate a fixed asset with a location, see the [Specify the location of the realty](#specify-the-location-of-the-realty) section later in this topic.
+    > For realty objects that are located in territories that differ from the organization's main location, the tax authority that assessed tax is reported to is defined as the tax authority that has an OKTMO code that matches the OKTMO code of the separate division that is associated with the realty location. For information about how to associate a fixed asset with a location, see the [Specify the location of the realty](#specify-the-location-of-the-realty) section later in this article.
 
 If the **Separate division ID** field is blank, the location is the same as the location of the organization's head office.
 

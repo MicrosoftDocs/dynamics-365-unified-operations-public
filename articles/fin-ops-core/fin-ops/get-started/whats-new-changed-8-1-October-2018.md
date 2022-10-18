@@ -1,36 +1,26 @@
 ---
-# required metadata
-
-title: What's new or changed in Dynamics 365 for Finance and Operations version 8.1 (October 2018)
-description: This topic describes features that are either new or changed in Dynamics 365 for Finance and Operations version 8.1. This version was released in October 2018.
-author: tonyafehr
+title: What's new or changed in Dynamics 365 Finance and Operations version 8.1 (October 2018)
+description: This article describes features that are either new or changed in Dynamics 365 Finance and Operations version 8.1. This version was released in October 2018.
+author: sericks007
 ms.date: 10/15/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-ROBOTS: NOINDEX, NOFOLLOW 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: josaw
-# ms.tgt_pltfrm: 
+ms.reviewer: sericks
+ms.search.region: Global
+ms.author: sericks
+ms.search.validFrom: 2018-10-01
+ms.dyn365.ops.version: Release 8.1
 ms.custom: 
 ms.assetid: b264a51c-52d1-45c5-b698-64c5242c592a
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: tfehr
-ms.search.validFrom: 2018-10-01 
-ms.dyn365.ops.version: Release 8.1
-
+ROBOTS: NOINDEX, NOFOLLOW
 ---
-# What's new or changed in Dynamics 365 for Finance and Operations version 8.1 (October 2018)
+# What's new or changed in Dynamics 365 Finance and Operations version 8.1 (October 2018)
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes features that are either new or changed in Microsoft Dynamics 365 for Finance and Operations version 8.1 (October 2018). This version was released in October 2018 and has a build number of 8.1.136.
+This article describes features that are either new or changed in Microsoft Dynamics 365 Finance and Operations version 8.1 (October 2018). This version was released in October 2018 and has a build number of 8.1.136.
 
 To learn about the new features and changes in the latest releases of Retail, see [What's new or changed in Dynamics 365 for Retail](../../../commerce/get-started/whats-new.md).
 
@@ -88,7 +78,7 @@ For more information, see [Dual currency](../../../finance/general-ledger/dual-c
 
 ## Extensibility enhancements
 
-In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility through chain of command, delegates, or by providing access to members. In addition, enhancements have been made to enumerations, metadata, and SQL operations. For detailed information, see [Extensibility changes in Dynamics 365 for Finance and Operations version 8.1](../../dev-itpro/extensibility/extensibility-changes-81.md)
+In this release of Finance and Operations, numerous extensibility enhancements have been made to support extensibility through chain of command, delegates, or by providing access to members. In addition, enhancements have been made to enumerations, metadata, and SQL operations. For detailed information, see [Extensibility changes in Dynamics 365 Finance version 8.1](../../dev-itpro/extensibility/extensibility-changes-81.md)
 
 ## Phantom items
 
@@ -98,7 +88,7 @@ For more information, see [Phantom items](../../../supply-chain/production-contr
 
 ## Russian localization
 
-Dynamics 365 for Finance and Operations now supports mandatory regulatory requirements in Russia (for on-premises deployment only). This release of Russian localization covers the following functional areas: accounts payable, accounts receivable, advance holders, bank and cash, export part of Client-Bank interface, fixed assets, general ledger and G/L reporting, electronic reporting for financial reports, inventory, addresses/FIAS, VAT and profit tax registers in areas of cash movement, goods movement, rated expenses, deferred expenses, exchange difference and WIP.
+Dynamics 365 Finance and Operations now supports mandatory regulatory requirements in Russia (for on-premises deployment only). This release of Russian localization covers the following functional areas: accounts payable, accounts receivable, advance holders, bank and cash, export part of Client-Bank interface, fixed assets, general ledger and G/L reporting, electronic reporting for financial reports, inventory, addresses/FIAS, VAT and profit tax registers in areas of cash movement, goods movement, rated expenses, deferred expenses, exchange difference and WIP.
 
 For more information, see [Russia](../../../finance/localizations/russia.md).
 
@@ -115,3 +105,4 @@ Standard sales tax functionality in Finance and Operations now fulfils the major
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

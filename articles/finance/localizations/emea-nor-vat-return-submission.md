@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Submit a VAT return to the Altinn web service
-description: This topic explains how to submit a VAT return to the Altinn web service of Norway.
-author: liza-golub
+description: This article explains how to submit a VAT return to the Altinn web service of Norway.
+author: AdamTrukawka
 ms.date: 12/13/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Norway
-# ms.search.industry: 
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: 2021-11-18
 ms.dyn365.ops.version: AX 10.0.22
-
 ---
 
 # Submit a VAT return to the Altinn web service

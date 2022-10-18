@@ -3,7 +3,7 @@
 
 title: Cancel service orders  
 description: You can cancel a service order or service order line from the service order itself, or you can cancel multiple service orders by running a periodic job.
-author: kamaybac
+author: sorenva
 ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom:
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: kamaybac
+ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ---
@@ -40,11 +40,11 @@ You can cancel a service order or service order line from the service order itse
 
 ## Cancel a service order in the Service orders form
 
-1.  Click **Service management** \> **Common** \> **Service orders** \> **Service orders**. Select the service order, and on the Action Pane, click **Cancel order**.
+1.  Click **Service management** \> **Service orders** \> **Service orders**. Select the service order, and on the Action Pane, click **Cancel order**.
 
 ## Cancel a service order line
 
-1.  Click **Service management** \> **Common** \> **Service orders** \> **Service orders**. Double-click the service order that contains the line you want to cancel.
+1.  Click **Service management** \> **Service orders** \> **Service orders**. Double-click the service order that contains the line you want to cancel.
 
 2.  Select the service order line that you want to cancel, and then click **Cancel order line** to change the status of the line to **Canceled**.
 

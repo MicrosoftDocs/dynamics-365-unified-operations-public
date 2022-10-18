@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Create tax registers and the tax register journal
-description: This topic provides information about creating tax registers and the tax register journal.  
-author: akroshkina
+description: This article provides information about creating tax registers and the tax register journal.
+author: AdamTrukawka
 ms.date: 08/05/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
+ms.search.region: Russia
+ms.author: atrukawk
+ms.search.validFrom: 
+ms.dyn365.ops.version: 
 ms.custom: 
 ms.assetid: 
-ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
-ms.dyn365.ops.version: 
-ms.search.validFrom: 
-
+ms.search.form: 
 ---
 
 # Create tax registers and the tax register journal
@@ -132,7 +122,7 @@ The set of tax registers that must be provided for the reporting period is gener
     The list of fields that are included in the calculation for each tax register can be adjusted on the tax register lines.
     If the list of hidden fields is changed, the fields will be saved for all data that was created before those changes were made.
 
-4. On the **Parameters** FastTab, you can set up additional parameters for the tax register. On the line for each parameter, specify a value in the **Value** field. The parameters are different for every register. For more information about parameters, see the topic for each tax register.
+4. On the **Parameters** FastTab, you can set up additional parameters for the tax register. On the line for each parameter, specify a value in the **Value** field. The parameters are different for every register. For more information about parameters, see the article for each tax register.
 
     ![Tax registers](media/rus-profit-tax-1.png)
 
@@ -249,7 +239,7 @@ Follow these steps to recalculate the tax register.
 
 ### View and print the register lines
 
-1. On the **Register journal lines** page, select the register line, and then, on the Action Pane, select **Register lines** to view the lines of the tax register. The content and the list of columns differ for each tax register. For detailed information, see the topic for each register.
+1. On the **Register journal lines** page, select the register line, and then, on the Action Pane, select **Register lines** to view the lines of the tax register. The content and the list of columns differ for each tax register. For detailed information, see the article for each register.
 2. Select **Expand/Collapse node** to view all lines or just the last line.
 3. Select the **General** tab to view the following information about the selected line:
 

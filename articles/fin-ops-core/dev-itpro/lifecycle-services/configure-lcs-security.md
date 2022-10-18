@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure Lifecycle Services (LCS) security
-description: This topic explains how security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level.
+description: This article explains how security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level.
 author: AngelMarshall
 ms.date: 03/15/2022
 ms.topic: article
@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Configure Lifecycle Services (LCS) security
 
 [!include [banner](../includes/banner.md)]
+[!include [LCS deprecation](../includes/lcs-deprecation.md)]
 
 Security in Microsoft Dynamics Lifecycle Services (LCS) is controlled at both the organization level and the project level. Not all members of an organization have access to all projects. Additionally, the members of a project might not all be members of the same organization. <br>
 
@@ -55,7 +56,7 @@ At the organization or tenant level, anyone who has the Global Administrator rol
 In addition, admins can create additional LCS implementation projects by following the steps in [Create multiple LCS projects](../../fin-ops/get-started/implement-multiple-projects-aad-tenant.md#create-multiple-lcs-projects).
 
 ### Organization contributor
-Contributors are other users from your Azure AD tenant, but they don't have admin capabilities. Contributors can create projects. They can also create the first implementation project if they are the first user of their tenant to sign in, and if they do so after the purchase of applicable Finance and Operations apps licenses.
+Contributors are other users from your Azure AD tenant, but they don't have admin capabilities. Contributors can create projects. They can also create the first implementation project if they are the first user of their tenant to sign in, and if they do so after the purchase of applicable finance and operations apps licenses.
 
 ### Delegated admin
 The delegated admin role is identical to the admin role, except the user is from a Microsoft partner tenant and has an established relationship with the customer organization. The delegated admin can sign in on behalf of the customer, and can perform required operations and provide required support.
@@ -125,7 +126,7 @@ You can invite users from inside or outside your organization to join your proje
 After you've configured security for one project, you can import the users to another project.
 
 ## Configure implementation roles 
-If you have an implementation project, you will have the option to specify project user's implementation roles. For more information, see [Roles in a Dynamics 365 implementation](/learn/modules/get-started-implementation-project/01-2-roles).
+If you have an implementation project, you will have the option to specify project user's implementation roles. For more information, see [Roles in a Dynamics 365 implementation](/training/modules/get-started-implementation-project/01-2-roles).
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

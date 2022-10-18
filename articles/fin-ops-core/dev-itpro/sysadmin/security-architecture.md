@@ -2,7 +2,7 @@
 # required metadata
 
 title: Security architecture
-description: This topic provides an overview of the security architecture of Finance and Operations.
+description: This article provides an overview of the security architecture of finance and operations.
 author: Peakerbl
 ms.date: 11/20/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 7.0.0
 # Security architecture
 [!include [banner](../includes/banner.md)]
 
-This topic provides an overview of the security architecture of Finance and Operations.
+This article provides an overview of the security architecture of finance and operations.
 
 When you understand the security architecture, you can more easily customize security to fit the requirements of your business. The following diagram provides a high-level overview of the security architecture. 
 
@@ -39,10 +39,10 @@ When you understand the security architecture, you can more easily customize sec
 ## Authentication
 By default, only authenticated users who have user rights can establish a connection. 
 
-Microsoft Azure Active Directory (AAD) is a primary identity provider. To access the system, users must be provisioned into a Finance and Operations instance and should have a valid AAD account in an authorized tenant.
+Microsoft Azure Active Directory (AAD) is a primary identity provider. To access the system, users must be provisioned into a finance and operations instance and should have a valid AAD account in an authorized tenant.
 
 ## Authorization
-Authorization is the control of access to Finance and Operations applications. Security permissions are used to control access to individual elements of the program: menus, menu items, action and command buttons, reports, service operations, web URL menu items, web controls, and fields in the Finance and Operations client. 
+Authorization is the control of access to finance and operations applications. Security permissions are used to control access to individual elements of the program: menus, menu items, action and command buttons, reports, service operations, web URL menu items, web controls, and fields in the finance and operations client. 
 
 Individual security permissions are combined into privileges, and privileges are combined into duties. The administrator grants security roles access to the program by assigning duties and privileges to those roles. 
 

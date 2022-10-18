@@ -2,7 +2,7 @@
 # required metadata
 
 title: Show order notifications in the point of sale (POS)
-description: This topic describes how to enable order notifications in the point of sale and the notification framework.
+description: This article describes how to enable order notifications in the point of sale and the notification framework.
 author: ShalabhjainMSFT
 ms.date: 03/12/2021
 ms.topic: article
@@ -69,10 +69,10 @@ For both the order fulfillment and recall order notifications, as new orders are
 
 ## Enable live content on POS buttons
 
-POS buttons can now show a count to help workers easily determine which tasks require their immediate attention. To show this number on a POS button, you must complete the notification setup that is described earlier in this topic (that is, you must enable notifications for an operation, set up a notification interval, and update the POS permission group for the worker). Additionally, you must open the button grid designer, view the button's properties, and select the **Enable live content** check box. In the **Content alignment** field, you can select whether the count appears in the upper-right corner of the button (**Top right**) or in the center (**Center**).
+POS buttons can now show a count to help workers easily determine which tasks require their immediate attention. To show this number on a POS button, you must complete the notification setup that is described earlier in this article (that is, you must enable notifications for an operation, set up a notification interval, and update the POS permission group for the worker). Additionally, you must open the button grid designer, view the button's properties, and select the **Enable live content** check box. In the **Content alignment** field, you can select whether the count appears in the upper-right corner of the button (**Top right**) or in the center (**Center**).
 
 > [!NOTE]
-> The live content can be enabled for operations only if the **Enable notifications** check box has been selected for them on the **POS operations** page, as described earlier in this topic.
+> The live content can be enabled for operations only if the **Enable notifications** check box has been selected for them on the **POS operations** page, as described earlier in this article.
 
 The following illustration shows the live content settings in the button grid designer.
 

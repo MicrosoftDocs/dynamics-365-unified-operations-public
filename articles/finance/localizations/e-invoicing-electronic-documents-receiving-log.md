@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Work with the Electronic document receipt log
-description: This topic explains how to work with the Electronic document receipt log.
-author: dkalyuzh
+description: This article explains how to work with the Electronic document receipt log.
+author: gionoder
 ms.date: 02/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
 ms.search.region: 
-# ms.search.industry: 
-ms.author: dkalyuzh
+ms.author: gionoder
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 
+ms.search.form: 
 ---
 
 # Work with the Electronic document receipt log

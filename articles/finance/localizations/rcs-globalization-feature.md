@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Regulatory Configuration Services (RCS) - Globalization features
-description: This topic explains how to use Microsoft Regulatory Configuration Services (RCS) and the Global repository to create and use Globalization features. 
-author: JaneA07
+description: This article explains how to use Microsoft Regulatory Configuration Services (RCS) and the Global repository to create and use Globalization features.
+author: kfend
 ms.date: 06/04/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RCS, RCSWorkspace, e-Invoicing service
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 97423
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: leguo
+ms.author: filatovm
 ms.search.validFrom: 2020-05-01
 ms.dyn365.ops.version: AX 10.0.11
-
+ms.custom: 97423
+ms.assetid: 
+ms.search.form: RCS, RCSWorkspace, e-Invoicing service
 ---
 
 # Regulatory Configuration Services (RCS) - Globalization features
@@ -44,7 +35,7 @@ Before you complete the procedures, you must complete the steps that are related
 - Accessing an RCS instance.
 - Creating and activating a configuration provider. For more information, see [Create configuration providers and mark them as active](../../fin-ops-core/dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md).
 
-In your Finance and Operations apps instance, follow these steps.
+In your finance and operations apps instance, follow these steps.
 
 1. Go to **Organization administration** \> **Workspaces** \> **Electronic reporting**.
 2. If no RCS environment is provisioned for your company, select **Regulatory services – Configuration**, and follow the instructions to provision one.
@@ -68,7 +59,7 @@ To use a Globalization feature, you must first import it from the the Global rep
 
 ## Access Globalization features
 
-1. Make sure that the **Globalization features** feature is turned on in Feature management, as described earlier in this topic.
+1. Make sure that the **Globalization features** feature is turned on in Feature management, as described earlier in this article.
 2. Open the new **Globalization Features** workspace, and then, under **Features**, select the **e-Invoicing** tile.
 
     ![Global Features workspace.](./media/RCS_GlobalF_2%20Feature%20wrkspace.JPG)
@@ -165,7 +156,7 @@ The following actions are available for configurations:
 - **View** – View the underlying feature configurations that don't require any update.
 - **Edit** – Create a draft version of a selected configuration so that you can edit the format or format mapping in the Format designer.
 - **Delete** – Delete a selected configuration from the feature.
-- **Rebase** – Rebase the feature. For more information, see the [Rebase derived Globalization features](#rebase) section later in this topic.
+- **Rebase** – Rebase the feature. For more information, see the [Rebase derived Globalization features](#rebase) section later in this article.
 
 ### Setups
 
@@ -186,7 +177,7 @@ The following actions are available for feature setups:
 
 The following actions are available for environments:
 
-- **Enable** – For a selected feature version, select a published environment, and select an **Effective from** date when it should be available. For more information, see the [Configure environments for enablement](#configureenvironment) section later in this topic.
+- **Enable** – For a selected feature version, select a published environment, and select an **Effective from** date when it should be available. For more information, see the [Configure environments for enablement](#configureenvironment) section later in this article.
 - **Cancel** – Remove an environment for a feature setup.
 
 ### Organizations

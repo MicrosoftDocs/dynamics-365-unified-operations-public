@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: View independent software vendor license status
-description: The topic explains how to view the status of an independent software vendor in Finance and Operations apps.
+description: The article explains how to view the status of an independent software vendor in finance and operations apps.
 author: Peakerbl
 ms.date: 04/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: toskaue
+ms.author: peakerbl
 ms.search.validFrom: 2021-01-31
 ms.dyn365.ops.version: 10.0.17
-
 ---
 
 # View independent software vendor license status
@@ -30,12 +19,12 @@ ms.dyn365.ops.version: 10.0.17
 [!include [banner](../includes/banner.md)]
 
 
-This topic explains how you can view the status of independent software vendor (ISV) licenses for Finance and Operations apps, such as Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Commerce.
+This article explains how you can view the status of independent software vendor (ISV) licenses for finance and operations apps, such as Dynamics 365 Finance, Dynamics 365 Supply Chain Management, and Dynamics 365 Commerce.
 
-License codes and configuration keys are part of the ISV licensing model for Finance and Operations apps.
+License codes and configuration keys are part of the ISV licensing model for finance and operations apps.
 
 > [!NOTE]
-> Configuration keys that are provided by Microsoft aren't part of the licensing model for Finance and Operations apps. The keys are only used to enable and disable functionality.
+> Configuration keys that are provided by Microsoft aren't part of the licensing model for finance and operations apps. The keys are only used to enable and disable functionality.
 
 When an ISV license key and code are installed, the corresponding configuration key will be available and enabled on the **License configuration** page.
 
@@ -55,3 +44,4 @@ For more information about the configuration keys report, see [License codes and
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

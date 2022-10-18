@@ -1,29 +1,20 @@
 ---
-# required metadata
-
 title: Titres de recette in the public sector in France
 description: The titre de recette is used by the director to notify and authorize the accountant to collect and deposit a specific amount from another entity.
-author: rschloma
+author: brpotter
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: CustFreeInvoice
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 19931
 ms.search.region: France
-ms.search.industry: Public sector
 ms.author: brpotter
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 19931
+ms.search.industry: Public sector
+ms.search.form: CustFreeInvoice
 ---
 
 # Titres de recette in the public sector in France

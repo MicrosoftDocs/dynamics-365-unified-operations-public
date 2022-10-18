@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Assign users to security roles
-description: To access Finance and Operations apps, users must be assigned to security roles. 
+description: To access finance and operations apps, users must be assigned to security roles. 
 author: Peakerbl
 ms.date: 02/09/2022
 ms.topic: business-process 
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-To use anything other than common capabilities in Finance and Operations apps, users must be assigned to security roles. You can assign users to roles automatically, based on rules and business data, exclude users from automatic role assignment, or add users to roles manually.
+To use anything other than common capabilities in finance and operations apps, users must be assigned to security roles. You can assign users to roles automatically, based on rules and business data, exclude users from automatic role assignment, or add users to roles manually.
 
 ## Automatically assign users to roles
 This procedure explains how system administrators can automatically assign users to roles, based on business data. 
@@ -76,3 +76,4 @@ Users who are manually assigned to security roles must also be manually removed 
    4. On the **Action pane**, select **Exclude from role**. The **Assignment mode** column is now updated to **Manual** and the users are now excluded from the role.
 
 [!INCLUDE[footer-include](../../../../includes/footer-banner.md)]
+

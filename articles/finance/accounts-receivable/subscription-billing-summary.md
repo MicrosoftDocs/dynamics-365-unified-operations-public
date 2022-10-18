@@ -2,7 +2,7 @@
 # required metadata
 
 title: Subscription billing overview
-description: This topic describes subscription billing in Microsoft Dynamics 365 Finance.
+description: This article describes subscription billing in Microsoft Dynamics 365 Finance.
 author: JodiChristiansen
 ms.date: 04/13/2022
 ms.topic: article

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: Set up withholding tax
-description: This topic explains how to set up withholding tax.   
+description: This article explains how to set up withholding tax.   
 author: twheeloc
 ms.date: 07/11/2019  
 ms.topic: business-process  
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: Version 7.0.0
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how to set up withholding tax. *Withholding tax* is a tax on vendors that does not create sales tax transactions. Withholding tax that is calculated on vendor payments is a liability. Therefore, only balance sheet accounts or liability accounts are valid accounts for posting withholding tax. This task guide demonstrates how to set up withholding tax.
+This article explains how to set up withholding tax. *Withholding tax* is a tax on vendors that does not create sales tax transactions. Withholding tax that is calculated on vendor payments is a liability. Therefore, only balance sheet accounts or liability accounts are valid accounts for posting withholding tax. This task guide demonstrates how to set up withholding tax.
 
 1. Go to **Navigation pane > Modules > Tax > Indirect taxes > Withholding tax > Withholding tax codes**.
 2. Select **New**.

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Quality management test groups
-description: This topic describes how to create test groups, so that multiple tests can be used with quality orders in Microsoft Dynamics 365 Supply Chain Management.
+description: This article describes how to create test groups, so that multiple tests can be used with quality orders in Microsoft Dynamics 365 Supply Chain Management.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to create test groups, so that multiple tests can be used with quality orders in Microsoft Dynamics 365 Supply Chain Management.
+This article describes how to create test groups, so that multiple tests can be used with quality orders in Microsoft Dynamics 365 Supply Chain Management.
 
 You use the **Test groups** page to set up, edit, and view test groups and the individual tests that are assigned to them. The upper part of the page shows the test groups, and the lower part shows the tests that are assigned to a selected test group.
 
@@ -143,6 +143,6 @@ To add a quantitative test to a test group, follow these steps.
 - [Quality management tests](quality-management-processes.md)
 - [Quality management test variables](quality-management-processes.md)
 - [Quality associations](quality-management-processes.md)
-- [Batch attributes](/supply-chain/production-control/batch-attributes.md)
+- [Batch attributes](../production-control/batch-attributes.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

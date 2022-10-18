@@ -1,33 +1,25 @@
 ---
-# required metadata
 title: Goods and Services Tax (GST) integration for e-commerce sites for India
-description: This topic gives an overview of the Microsoft Dynamics 365 Commerce e-commerce functionality that is available for India. It also provides guidelines for setting up the functionality.
+description: This article gives an overview of the Microsoft Dynamics 365 Commerce e-commerce functionality that is available for India. It also provides guidelines for setting up the functionality.
 author: EvgenyPopovMBS
 ms.date: 12/07/2021
 ms.topic: article
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:
+ms.prod: 
+ms.technology: 
 audience: IT Pro
-# ms.devlang:
 ms.reviewer: v-chgriffin
-# ms.tgt_pltfrm:
-# ms.custom:
 ms.search.region: India
-ms.search.industry: Retail
-ms.author: epopov
+ms.author: josaw
 ms.search.validFrom: 2021-12-10
 ms.dyn365.ops.version: 10.0.23
+ms.search.industry: Retail
 ---
 
 # Goods and Services Tax (GST) integration for e-commerce sites for India
 
 [!include [banner](../includes/banner.md)]
 
-This topic gives an overview of the Microsoft Dynamics 365 Commerce e-commerce functionality that is available for India. It also provides guidelines for setting up the functionality. 
+This article gives an overview of the Microsoft Dynamics 365 Commerce e-commerce functionality that is available for India. It also provides guidelines for setting up the functionality. 
 
 For more information about the e-commerce capabilities that are available in Dynamics 365 Commerce, see [E-commerce site overview](../online-store-overview.md). For more information about how Goods and Services Tax (GST) is supported in Commerce, see [Goods and Services Tax (GST) integration for cash registers for India](apac-ind-cash-registers.md).
 
@@ -43,7 +35,7 @@ The Commerce e-commerce functionality for India provides the following capabilit
 
 GST calculation for an e-commerce order is based on the customer's invoice address that can be specified on the **Checkout** page of the e-commerce site. By default, the shipping address of the order is used as the invoice address. However, the invoice address can also be selected in the list of other addresses for the customer, or a new address can be added.
 
-To enable GST calculation for e-commerce orders that is based on invoice information, you must add the **Invoice address for India** module to the checkout page. You must also enable the **(India) Calculate GST based on invoice address for e-commerce orders** feature in the **Feature management** workspace in Commerce headquarters. For more information, see the [Setting up e-commerce for India](#setting-up-e-commerce-for-india) section later in this topic.
+To enable GST calculation for e-commerce orders that is based on invoice information, you must add the **Invoice address for India** module to the checkout page. You must also enable the **(India) Calculate GST based on invoice address for e-commerce orders** feature in the **Feature management** workspace in Commerce headquarters. For more information, see the [Setting up e-commerce for India](#setting-up-e-commerce-for-india) section later in this article.
 
 ### GST calculation for shipping charges
 

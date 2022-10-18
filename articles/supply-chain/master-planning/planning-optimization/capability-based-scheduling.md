@@ -1,8 +1,8 @@
 ---
 title: Scheduling with resource selection based on capability
-description: This topic describes resource selection during infinite capacity scheduling when you specify capabilities as resource requirements for an operation.
+description: This article describes resource selection during infinite capacity scheduling when you specify capabilities as resource requirements for an operation.
 author: t-benebo
-ms.date: 9/3/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: RouteInventProd, WrkCtrTable, WrkCtrCapability
 audience: Application User
@@ -17,14 +17,11 @@ ms.dyn365.ops.version: 10.0.20
 
 [!include [banner](../../includes/banner.md)]
 
-By specifying resource requirements for an operation of a production route, you define what is required to perform that operation. For example, an operation might require a specific resource or a resource group, or a combination of skills or capabilities. This topic describes resource selection during infinite capacity scheduling when you specify capabilities as resource requirements for an operation.
+By specifying resource requirements for an operation of a production route, you define what is required to perform that operation. For example, an operation might require a specific resource or a resource group, or a combination of skills or capabilities. This article describes resource selection during infinite capacity scheduling when you specify capabilities as resource requirements for an operation.
 
-## Turn on the capability-based scheduling feature
+## Turn the capability-based scheduling feature on or off
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Master planning*
-- **Feature name:** *Infinite capacity scheduling for Planning Optimization*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is turned on by default. Admins can turn this functionality on or off by searching for the *Infinite capacity scheduling for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 For more information about this feature, see [Scheduling with infinite capacity](infinite-capacity-planning.md).
 

@@ -2,9 +2,9 @@
 # required metadata
 
 title: Configure account structures
-description: This topic provides information about account structures and financial dimensions.
+description: This article provides information about account structures and financial dimensions.
 author: aprilolson
-ms.date: 06/03/2019
+ms.date: 07/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: LedgerEliminationRule
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 13131
 ms.assetid: 08fd46ef-2eb8-4942-985d-40fd757b74a8
@@ -96,6 +96,8 @@ To continue to add additional criteria, click **Duplicate in the Segment** and *
 When setting up your account structures there are some best practices you can follow. However, this is only guidance so a holistic discussion about your business, growth plan, and maintenance plan should be considered as part of that discussion.
 
 - Make main account first or as close to the front of the account structure as possible, so users get the best guided experience they can during account entry.
+  
+  - Verify that any third party solutions you intend to use support main account in the first position.
 
 - Reuse account structures as much as possible to reduce maintenance across your legal entities.
 

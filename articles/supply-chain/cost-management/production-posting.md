@@ -3,7 +3,7 @@
 
 title: Production posting
 description: This article provides information about different types of postings in the production process.
-author: AndersGirke
+author: JennySong-SH
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 54591
 ms.assetid: 0917fe64-f643-46ae-98ff-5013b266a067
 ms.search.region: Global
 ms.search.industry: Manufacturing
-ms.author: aevengir
+ms.author: yanansong
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

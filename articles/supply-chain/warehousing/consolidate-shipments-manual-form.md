@@ -2,8 +2,8 @@
 # required metadata
 
 title: Consolidate shipments manually by using the Consolidate shipments page
-description: This topic presents a scenario where multiple orders are released to the warehouse and then consolidated later by using the Consolidate shipments page.
-author: GarmMSFT
+description: This article presents a scenario where multiple orders are released to the warehouse and then consolidated later by using the Consolidate shipments page.
+author: Mirzaab
 ms.date: 05/12/2020
 ms.topic: article
 ms.prod:
@@ -30,11 +30,11 @@ ms.dyn365.ops.version: 10.0.3
 
 [!include [banner](../includes/banner.md)]
 
-This topic presents a scenario where multiple orders are released to the warehouse and then consolidated later by using the **Consolidate shipments** page.
+This article presents a scenario where multiple orders are released to the warehouse and then consolidated later by using the **Consolidate shipments** page.
 
 ## Make demo data available
 
-The scenario in this topic references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management. If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to **USMF** before you begin.
+The scenario in this article references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management. If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to **USMF** before you begin.
 
 ## Set up shipment consolidation policies and product filters
 
@@ -99,7 +99,7 @@ Follow these steps to release each sales order that you created for this scenari
 
 ## Additional resources
 
-- [Shipment consolidation policies](about-shipment-consolidation-policies.md)
+- [Shipment consolidation policies overview](about-shipment-consolidation-policies.md)
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

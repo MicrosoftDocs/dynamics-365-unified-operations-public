@@ -1,33 +1,24 @@
---- 
-# required metadata 
- 
+---
 title: Create configuration providers and mark them as active
-description: This topic explains how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider. 
-author: NickSelin
+description: This article explains how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider.
+author: kfend
 ms.date: 07/02/2019
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: ERWorkspace, ERVendorPart, ERVendorTable   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: filatovm
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: ERWorkspace, ERVendorPart, ERVendorTable
 ---
 # Create configuration providers and mark them as active
 
 [!include [banner](../../includes/banner.md)]
 
-This topic explains how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider for Electronic reporting (ER). Each ER configuration will refer to the provider as the author of the configuration. In this example, you will create a configuration provider for sample company, Litware, Inc. These steps can be performed in any company as ER configuration providers are shared among all companies.
+This article explains how a user assigned to the System Administrator or Electronic Reporting Developer role can create a configuration provider for Electronic reporting (ER). Each ER configuration will refer to the provider as the author of the configuration. In this example, you will create a configuration provider for sample company, Litware, Inc. These steps can be performed in any company as ER configuration providers are shared among all companies.
 
 ## Create a provider
 1. Go to the **navigation pane** in the upper left corner and select **Organization administration**.

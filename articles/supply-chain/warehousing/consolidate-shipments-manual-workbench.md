@@ -2,9 +2,9 @@
 # required metadata
 
 title: Consolidate shipments by using the shipment consolidation workbench
-description: This topic presents a scenario where multiple orders are released to the warehouse and then consolidated into shipments later by using the shipment consolidation workbench.
-author: GarmMSFT
-ms.date: 05/12/2020
+description: This article presents a scenario where multiple orders are released to the warehouse and then consolidated into shipments later by using the shipment consolidation workbench.
+author: Mirzaab
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod:
 ms.technology:
@@ -30,24 +30,21 @@ ms.dyn365.ops.version: 10.0.6
 
 [!include [banner](../includes/banner.md)]
 
-This topic presents a scenario where multiple orders are released to the warehouse and then consolidated into shipments later by using the shipment consolidation workbench.
+This article presents a scenario where multiple orders are released to the warehouse and then consolidated into shipments later by using the shipment consolidation workbench.
 
 ## Make demo data available
 
-The scenario in this topic references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management. If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to **USMF** before you begin.
+The scenario in this article references values and records that are included in the standard demo data that is provided for Microsoft Dynamics 365 Supply Chain Management. If you want to use the values that are provided here as you do the exercises, be sure to work in an environment where the demo data is installed, and set the legal entity to **USMF** before you begin.
 
 ## Set up shipment consolidation policies and product filters
 
 The scenario that is described here assumes that you've already turned on the feature, done the exercises in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md), and created the policies and other records that are described there. Be sure to do those exercises before you continue with this scenario.
 
-## Turn on the manual shipment consolidation feature
+## Turn the manual shipment consolidation feature on or off
 
-Before you can use the *Manual shipment consolidation* feature, you must turn it on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+To use manual shipment consolidation, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is turned on by default. Admins can turn this functionality on or off by searching for the *Manual shipment consolidation* feature in the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
-- **Module:** *Warehouse management*
-- **Feature name:** *Manual shipment consolidation*
-
-As was mentioned in [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md), you must also turn on the *Consolidate shipment* feature before you can create policies. However, you should already have completed that step.
+You must also turn on the *Consolidate shipment* feature before you can create policies (as of Supply Chain Management version 10.0.29, the feature is mandatory and can't be turned off). For more information, see [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md).
 
 ## Create the sales orders for this scenario
 
@@ -268,7 +265,7 @@ Four shipments should have been created:
 
 ## Additional resources
 
-- [Shipment consolidation policies](about-shipment-consolidation-policies.md)
+- [Shipment consolidation policies overview](about-shipment-consolidation-policies.md)
 - [Configure shipment consolidation policies](configure-shipment-consolidation-policies.md)
 
 

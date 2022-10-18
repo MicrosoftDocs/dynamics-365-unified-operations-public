@@ -2,21 +2,21 @@
 # required metadata
 
 title: Engineering change management feature walkthrough
-description: This topic provides an end-to-end walkthrough that shows how to work with engineering change management.
+description: This article provides an end-to-end walkthrough that shows how to work with engineering change management.
 author: t-benebo
-ms.date: 09/28/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: benebotg
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.15
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides an end-to-end walkthrough that shows how to work with engineering change management. It goes through each of the most important scenarios:
+This article provides an end-to-end walkthrough that shows how to work with engineering change management. It goes through each of the most important scenarios:
 
 - Basic feature configuration
 - How an engineering company creates a new engineering product
@@ -40,17 +40,17 @@ This topic provides an end-to-end walkthrough that shows how to work with engine
 - How to schedule and implement requested changes by creating an engineering change order
 - How to release a product that has been changed
 
-All the exercises in this topic use the standard sample data that is provided for Microsoft Dynamics 365 Supply Chain Management. Additionally, each exercise builds on the previous exercise. Therefore, we recommend that you work through the exercises in order, from beginning to end, especially if you've never used the engineering change management feature before. In this way, you will gain a complete understanding of the feature.
+All the exercises in this article use the standard sample data that is provided for Microsoft Dynamics 365 Supply Chain Management. Additionally, each exercise builds on the previous exercise. Therefore, we recommend that you work through the exercises in order, from beginning to end, especially if you've never used the engineering change management feature before. In this way, you will gain a complete understanding of the feature.
 
 ## Set up for the sample scenario
 
-To follow the sample scenario that is provided in this topic, you must first prepare the feature by making demo data available and adding a few custom records.
+To follow the sample scenario that is provided in this article, you must first prepare the feature by making demo data available and adding a few custom records.
 
-Before you try to do any of the exercises in the rest of this topic, follow the instructions in all the following subsections. These subsections also introduce several important settings pages that you will use when you set up engineering change management for your own organization.
+Before you try to do any of the exercises in the rest of this article, follow the instructions in all the following subsections. These subsections also introduce several important settings pages that you will use when you set up engineering change management for your own organization.
 
 ### Make standard demo data available
 
-Work on a system where the [standard demo data is installed](../../fin-ops-core/dev-itpro/deployment/deploy-demo-environment.md). The standard demo data adds data for several demo legal entities (companies and organizations). As you work through the exercises, you will use the company picker on the right side of the navigation bar to switch between one company (*DEMF*) that is set up as an *engineering organization* and another company (*USMF*) that is set up as an *operational organization*.
+Work on a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. The standard demo data adds data for several demo legal entities (companies and organizations). As you work through the exercises, you will use the company picker on the right side of the navigation bar to switch between one company (*DEMF*) that is set up as an *engineering organization* and another company (*USMF*) that is set up as an *operational organization*.
 
 ### Set up an engineering organization
 
@@ -289,7 +289,7 @@ To review the product and release it in the *USMF* company, follow these steps.
 
 1. Select the value in the **Product number** column to open the **Product release details** page. Notice the following details:
 
-    - The **General** FastTab shows information about the product release, such as the releasing company (*DEMF* for this example), the releasing site (*1*), and the receiving site (*1*). Because you didn't specify a receiving site in the **Release products** wizard, the the releasing site value is copied to the receiving site.
+    - The **General** FastTab shows information about the product release, such as the releasing company (*DEMF* for this example), the releasing site (*1*), and the receiving site (*1*). Because you didn't specify a receiving site in the **Release products** wizard, the releasing site value is copied to the receiving site.
     - The **Release details** FastTab shows information about the product and the version that was released. Here, you can modify settings such as the effectivity dates.
     - The **Route** FastTab shows the route of the product. However, for this example, you didn't release any routes.
 

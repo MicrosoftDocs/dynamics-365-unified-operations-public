@@ -2,7 +2,7 @@
 # required metadata
 
 title: Rebate management parameters
-description: This topic describes the Rebate management parameters page. This page contains settings that affect posting, status updates, number sequences, and other behavior.
+description: This article describes the Rebate management parameters page. This page contains settings that affect posting, status updates, number sequences, and other behavior.
 author: sherry-zheng
 ms.date: 02/19/2021
 ms.topic: article
@@ -15,9 +15,9 @@ ms.search.form: TAMRebateParameters
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: chuzheng
@@ -50,7 +50,7 @@ The following table describes the fields that are available on the **Rebate mana
 
 ## Number sequences tab
 
-Use the **Number sequences** tab on the **Rebate management parameters** page to assign number sequence codes to the different number sequences that Rebate management uses. The following table describes the purpose of each of those number sequences. For more information about number sequences, see [Number sequences overview](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) and its related topics.
+Use the **Number sequences** tab on the **Rebate management parameters** page to assign number sequence codes to the different number sequences that Rebate management uses. The following table describes the purpose of each of those number sequences. For more information about number sequences, see [Number sequences overview](../../fin-ops-core/fin-ops/organization-administration/number-sequence-overview.md) and its related articles.
 
 | Reference | Description |
 |---|---|

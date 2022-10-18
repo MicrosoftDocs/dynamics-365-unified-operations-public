@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: View and export field descriptions
 description: This article describes how to view field descriptions and how to use the Field descriptions page to export descriptions.
-author: rschloma
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: FieldDescriptions
-# ROBOTS: 
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 11534
-ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
+ms.reviewer: twheeloc
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 11534
+ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
+ms.search.form: FieldDescriptions
 ---
 
 # View and export field descriptions
@@ -96,11 +86,11 @@ This section provides information to help you troubleshoot issues that you might
 
 ### I can't find a field description
 
-We're in the process of adding descriptions for the more complex fields. If you require help for a particular field, let us know by adding a comment for this topic.
+We're in the process of adding descriptions for the more complex fields. If you require help for a particular field, let us know by adding a comment for this article.
 
 ### The field description isn't helpful
 
-Let us know by adding a comment for this topic. If you can, describe the additional information that you require.
+Let us know by adding a comment for this article. If you can, describe the additional information that you require.
 
 ### I can't find a field on the Field descriptions page
 

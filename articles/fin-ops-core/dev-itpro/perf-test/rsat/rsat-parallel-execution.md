@@ -1,16 +1,15 @@
 ---
 title: Run the Regression suite automation tool (RSAT) with parallel execution
-description: This topic explains how you can use the Regression suite automation tool (RSAT) version 2.3 and later to run multiple RSAT apps in parallel.
+description: This article explains how you can use the Regression suite automation tool (RSAT) version 2.3 and later to run multiple RSAT apps in parallel.
 author: FrankDahl
 ms.date: 12/16/2021
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom:
+ms.reviewer: sericks
 ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2021-12-16
-
+ms.custom: 
 ---
 
 # Run the Regression suite automation tool (RSAT) with parallel execution
@@ -52,7 +51,7 @@ Even users who continue to run tests on their own dedicated machine benefit from
 
 ## Changes that have been made to RSAT to enable parallel execution
 
-The way that RSAT communicates with the test environment has changed. Technically, RSAT communicates with a Finance and Operations environment through communication port 745, which is used to communicate with the web. Previously, this port was exclusively used each time that RSAT started a test run.
+The way that RSAT communicates with the test environment has changed. Technically, RSAT communicates with a finance and operations environment through communication port 745, which is used to communicate with the web. Previously, this port was exclusively used each time that RSAT started a test run.
 
 In the new RSAT release, port 745 is no longer exclusively used. Instead, endpoints are technically added for each test run. The endpoints provide isolation from other test runs. Each endpoint has its own dedicated browser window where Finance and Operation apps perform processing. Everything is now neatly isolated during the communication, and no intervention or blocking occurs.
 
@@ -83,7 +82,7 @@ After you've installed RSAT version 2.3, you should decide when you want to enab
 The following conditions must be met before you can enable parallel execution:
 
 - Run only RSAT version 2.3 or later in an environment where parallel execution is enabled. If parallel execution is enabled, RSAT version 2.3 won't work well with earlier versions.
-- Use only test Finance and Operations environments that run app version 10.0.21 and platform update 45 (PU45) or later. RSAT depends upon platform features.
+- Use only test finance and operations environments that run app version 10.0.21 and platform update 45 (PU45) or later. RSAT depends upon platform features.
 
 > [!NOTE]
 > Parallel execution doesn't start to be used immediately after you enable it. Instead, the option to use it becomes available to you when you're ready to run your suite of tests.
@@ -133,9 +132,10 @@ Each time that RSAT is opened, it automatically uses any new settings that are s
 - Consider using only one RSAT app at a time to maintain tests. When you maintain tests, local files are changed, and those changes must then be uploaded. If two RSAT apps are used to maintain tests at the same time, there is a risk that one RSAT app will overwrite files from another RSAT app. Additional RSAT apps can be used to run tests.
 - Consider using separate settings to specify a different working directory for each RSAT app that you use to run tests. In this way, if you use multiple apps to run tests, you help prevent file conflicts and reduce the risk that one RSAT app will overwrite files from another RSAT app. This practice is especially important for RSAT that is run via the CLI.
 - A unique ID is assigned to each test case in Azure DevOps. However, a test case can be reused for multiple test suites. Therefore, there is a risk that two test runs will have to run the same test case and will cause a blocked case. RSAT will abort execution for an RSAT app that tries to run a case while another RSAT app is already running it. To help prevent conflicts, you should minimize reuse of test cases. Unfortunately, local files are organized by test case IDs and can cause conflicts. When these situations are unavoidable, consider using the **retry** command-line switch to help RSAT manage the situation.
-- Shared environment can be configured so that they interact with only one test Finance and Operations environment at a time. Each test environment has its own set of certificates. Therefore, to switch to another environment, you must install new certificates in it. Users who have administrative access in the environment can install the new certificates for themselves. However, users who don't have administrative access will require help to install new certificates and run non-admin scripts in the environment each time that you change the test environment that is used with an environment that is used to run RSAT. Because this process might be cumbersome, consider whether it's feasible to devote at least one shared environment to each test environment, so that you can avoid regularly changing test environments.
+- Shared environment can be configured so that they interact with only one test finance and operations environment at a time. Each test environment has its own set of certificates. Therefore, to switch to another environment, you must install new certificates in it. Users who have administrative access in the environment can install the new certificates for themselves. However, users who don't have administrative access will require help to install new certificates and run non-admin scripts in the environment each time that you change the test environment that is used with an environment that is used to run RSAT. Because this process might be cumbersome, consider whether it's feasible to devote at least one shared environment to each test environment, so that you can avoid regularly changing test environments.
 
     > [!NOTE]
     > An environment that is used to run RSAT can be configured to work with only one test environment at a time. This limitation exists because the certificates that are used to access the test environment must be bound to communication port 745, and only one set of certificates from one test environment can be bound at a time.
 
 - When new non-admin users start to use a shared environment, you must run the non-admin script for them to enable them to access critical RSAT resources.
+

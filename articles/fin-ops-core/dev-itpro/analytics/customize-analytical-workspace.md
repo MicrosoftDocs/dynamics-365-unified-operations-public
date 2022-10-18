@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Customize embedded reports in analytical workspaces (contains video)
-description: This topic describes how power users can customize the application reports that are embedded in analytical workspaces.
+description: This article describes how power users can customize the application reports that are embedded in analytical workspaces.
 author: RichdiMSFT
 ms.date: 09/11/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: PowerBIConfiguration
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 27661
-ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: richdi
 ms.search.validFrom: 2019-07-20
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 27661
+ms.assetid: 861cfa94-c6f3-4c84-89ac-22c78bf6b7a4
+ms.search.form: PowerBIConfiguration
 ---
 
 # Customize embedded reports in analytical workspaces
@@ -109,7 +99,8 @@ The Power BI service requires explicit permission from the user to allow access 
 
 1. Open any application workspace containing a section titled **Link**. For example, "Bank management".
 2. Select **Options**, and then select **Open report catalog** on the top left.
-3. Follow the steps in the dialog box to **Authorize to Power BI** to access Finance and Operations apps for the current user.
+3. Follow the steps in the dialog box to **Authorize to Power BI** to access finance and operations apps for the current user.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

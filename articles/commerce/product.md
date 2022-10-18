@@ -2,9 +2,9 @@
 # required metadata
 
 title: Add product recommendations on POS
-description: This topic describes using product recommendations on a point of sale (POS) device.
+description: This article describes using product recommendations on a point of sale (POS) device.
 author: bebeale
-ms.date: 05/26/2020
+ms.date: 09/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -41,7 +41,7 @@ Product recommendations are enabled for the following POS scenarios. They are av
 
 1. On the **Product details** page:
 
-    - If a store associate visits a **Product details** page when looking at previous transactions across different channels, the recommendations service suggests additional items that are likely to be purchased together.
+    - If a store associate visits a **Product details** page when they are looking at previous transactions across different channels, the recommendations service suggests additional items that are likely to be purchased together. Depending on the add-ons for the service, retailers can show **Shop similar looks** and **Shop similar description** recommendations for products, in addition to personalized recommendations for users who have a previous purchase history.
 
     [![Recommendations on the Product details page.](./media/proddetails.png)](./media/proddetails.png)
 
@@ -54,21 +54,17 @@ Product recommendations are enabled for the following POS scenarios. They are av
 
     [![Recommendations on the Transaction page.](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-## Configure Commerce to enable POS recommendations
+## Configure Commerce to enable POS recommendations 
 
-To set up product recommendations, follow these steps:
+To set up product recommendations, confirm that you've completed the provisioning process for Commerce product recommendations by following the steps in [Enable product recommendations](../commerce/enable-product-recommendations.md). By default, recommendations appear on both the **Product details** page and the **Customer details** page after you complete the provisioning steps and the data has successfully cooked. 
 
-1. Ensure your service has been updated to the **10.0.6 build.**
-2. Follow the instructions on how to [enable product recommendations](../commerce/enable-product-recommendations.md) for your business.
-3. Optional: To display recommendations on the transaction screen, go to **Screen Layout**, choose your screen layout, launch the **Screen layout designer**, and then drop the **recommendations** control where needed.
-4. Go to **Commerce parameters**, select **Machine-learning**, select **Yes** under **Enable POS recommendations**.
-5. To see recommendations on POS, run global configuration job **1110**. To reflect changes made to POS screen layout designer, run channel configuration job **1070**.
+## Add recommendations to the transaction screen
 
-## Troubleshoot issues where you have Product recommendations already enabled
+1. To add recommendations to the transaction screen, follow the steps in [Add recommendations to the transaction screen](add-recommendations-control-pos-screen.md).
+1. To reflect changes that were made in the POS screen layout designer, run channel configuration job **1070** in Commerce headquarters.
 
-- Navigate to **Commerce Parameters** \> **Recommendation lists** \> **Disable product recommendations** and run **Global configuration job \[9999\]**. 
-- If you added the **Recommendations control** to your transaction screen using the **Screen layout designer**, please remove that as well.
-- If you have additional questions, check out the [Product recommendations FAQ](../commerce/faq-recommendations.md) for more information.
+> [!NOTE] 
+> If you want to enable POS recommendations by using the RecoMock comma-separated values (CSV) file, you must deploy the CSV file to the Microsoft Dynamics Lifecycle Services (LCS) asset library before you configure the layout manager. If you use the RecoMock CSV file, you don't have to enable recommendations. The CSV file is available only for demo purposes. It's recommended for customers or solution architects who want to mimic the appearance of recommendation lists for demo purposes without having to purchase an add-on stock keeping unit (SKU).
 
 ## Additional resources
 
