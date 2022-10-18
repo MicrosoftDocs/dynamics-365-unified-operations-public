@@ -40,7 +40,7 @@ The Store Commerce app is the retail point-of-sale (POS) experience for Microsof
 | Multiple form factors | The Store Commerce app is supported on multiple device form factors, such as PCs, tablets, and mobile devices. The responsive user interface (UI) enables the layout to automatically be resized and adjust to the screen size. | [Visual configurations](pos-screen-layouts.md) | |
 | Cross-platform | The Store Commerce app is supported on web, Windows, iOS, and Android platforms. | [Platforms](dev-itpro/hybridapp.md) | |
 | Branding | The screen designer lets you customize screen layouts to meet your business requirements. In addition, themes, layouts, colors, and images can be created based on employee roles, and can then be shared across users for brand consistency and ease of use. | [Visual configurations](pos-screen-layouts.md) | [Video](https://www.youtube.com/watch?v=ldqCw2wf5fY) |
-| Topology | Different in-store topologies are supported, based on network availability. | <p>[Topology](https://docs.microsoft.com/dynamics365/commerce/dev-itpro/retail-modern-pos-architecture)</p><p>[Infographic](dev-itpro/retail-in-store-topology.md)</p> | |
+| Topology | Different in-store topologies are supported, based on network availability. | <p>[Topology](dev-itpro/retail-modern-pos-architecture.md)</p><p>[Infographic](dev-itpro/retail-in-store-topology.md)</p> | |
 | Multi-device management | Multiple devices across stores can be easily managed from Commerce headquarters. | [Activation](set-up-activation-accounts-validate-devices-hq.md) | |
 
 ## Employee management
@@ -69,7 +69,7 @@ The Store Commerce app is the retail point-of-sale (POS) experience for Microsof
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Product browsing | Browse products by category. | [Hierarchy](https://docs.microsoft.com/dynamics365/commerce/retail-hierarchies) | |
+| Product browsing | Browse products by category. | [Hierarchy](retail-hierarchies.md) | |
 | Product search | Search products by name, and refine searches by using product attributes such as the brand, price, and material. This capability is powered by Azure Cognitive Search. | [Cloud powered search](cloud-powered-search-overview.md) | |
 | Product details page | Rich product details pages can include images, a description, product attributes, and recommended products. Recommendations are powered by the Recommendations Service. | | |
 | Product compare | Compare multiple products, and help customers choose one and add it to a transaction. | | |
@@ -140,9 +140,9 @@ The Store Commerce app is the retail point-of-sale (POS) experience for Microsof
 | Inbound inventory | Receive inventory from a vendor via a purchase order, or from another warehouse via a transfer order. Create an inbound purchase order or transfer order request. | [Inbound]() | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
 | Outbound inventory | Ship inventory to another warehouse via a transfer order, and create an outbound transfer order request. | [Outbound](pos-outbound-inventory-operation.md) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
 | Inventory lookup | Check on-hand inventory for products across stores and warehouses, and check available-to-promise (ATP) inventory on future dates. | [Inventory lookup](pos-inventory-lookup-operation.md) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Inventory adjustment | Adjust inventory into or out of a store warehouse to meet specific business requirements without using a sale, receipt, or recount. | [Inventory adjustment](https://learn.microsoft.com/dynamics365/commerce/work-with-store-inventory) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
+| Inventory adjustment | Adjust inventory into or out of a store warehouse to meet specific business requirements without using a sale, receipt, or recount. | [Inventory adjustment](work-with-store-inventory.md) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
 | Stock counts | Count physical inventory, and adjust the system bookkeeping inventory to match it. | [Counting](work-with-store-inventory.md) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Inventory movement | Move inventory between locations in a store. | [Movement](https://learn.microsoft.com/dynamics365/commerce/work-with-store-inventory) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
+| Inventory movement | Move inventory between locations in a store. | [Movement](work-with-store-inventory.md) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
 
 ## Financials
 
@@ -157,7 +157,7 @@ The Store Commerce app is the retail point-of-sale (POS) experience for Microsof
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Task management | Create task lists and tasks, and assign them to stores and employees. Track the status of tasks across stores. Seamless integration with Microsoft Teams is provided. | <p>[Task Management](https://docs.microsoft.com/dynamics365/commerce/task-mgmt-overview)</p><p>[Teams](commerce-teams-integration.md)</p> | [Video](https://www.youtube.com/watch?v=ES1whB4C2lU) |
+| Task management | Create task lists and tasks, and assign them to stores and employees. Track the status of tasks across stores. Seamless integration with Microsoft Teams is provided. | <p>[Task Management](task-mgmt-overview.md)</p><p>[Teams](commerce-teams-integration.md)</p> | [Video](https://www.youtube.com/watch?v=ES1whB4C2lU) |
 
 ## Hardware and peripherals
 
