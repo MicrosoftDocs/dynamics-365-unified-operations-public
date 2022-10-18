@@ -44,11 +44,8 @@ article was initially published.
 
 | Feature name | Overview | Release status |
 |----|----|----|
-|Course enhancements |<p>The course enhancements feature enables the following:</p><ul><li>
-Ability to designate courses as virtual and define course link</li><li> 
-Ability to define a due date for course assignment</li><li> 
-Employes self service now shows employees an overview within Courses/Learning to see overdue, due soon, and assigned courses</li><li> 
-Employees can complete virtual courses and self-attest to those virtual courses</li></ul> |Preview|
+|Course enhancements |<p>The course enhancements feature enables the following:</p><ul><li>Ability to designate courses as virtual and define course link</li><li> 
+Ability to define a due date for course assignment</li><li>**Employes self service** now shows employees an overview within Courses/Learning to see overdue, due soon, and assigned courses</li><li>Employees can complete virtual courses and self-attest to those virtual courses</li></ul><p> |Preview|
 
 ## Feature enhancements included in this release
 
