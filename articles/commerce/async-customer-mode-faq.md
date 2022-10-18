@@ -4,7 +4,7 @@
 title: Asynchronous customer creation mode FAQ
 description: This article provides answers to frequently asked questions about asynchronous customer creation mode in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 10/13/2022
+ms.date: 10/18/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
