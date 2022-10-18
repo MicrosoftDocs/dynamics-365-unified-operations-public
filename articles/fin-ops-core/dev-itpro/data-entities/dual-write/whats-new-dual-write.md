@@ -26,6 +26,15 @@ The October release of [Dual-write core solution 1.0.37.0](https://appsource.mic
 |---|---|---|
 | Bug | Before this release, dual-write plugins on the Dataverse side is triggered every time a record is updated regardless of the updated field was in dual-write map or not. As a result, it created performance overhead on all database operations of Dataverse. With this release, dual-write plugins on the Dataverse side will be trigger only when the updated field is in dual-write map. | Preview |
 
+The October release of Dual-write Global Address Book solution 3.5.1.55 contains the following bug fixes.
+
+| Feature | Description | Status |
+|---|---|---|
+|Bug fix| Creating a new record in **Contact for Customer or Vendor** using the **Contact for Party** page was giving an OnLoad error.|General availability|
+|Bug fix| During certain lead qualification scenarios, the postal address and electronic address were not syncing from contact entity to party entity. GAB plugins were not getting invoked in these scenarios. | 	General availability |
+| Error handling |	Provides an actionable error message when company id is not included in the **Account** page.|	General availability|
+| Bug fix |	The Street information on the **Address** page was not displaying correctly on the **Postal address** page (Street field) when Street 2 was not present.| General availability|
+|Bug fix| County information for customer address is not syncing between Dynamics 365 finance and operations and Customer engagement. GAB plugins have been corrected to address this issue.|	General availability|
 
 ## July 2022 release 
 
