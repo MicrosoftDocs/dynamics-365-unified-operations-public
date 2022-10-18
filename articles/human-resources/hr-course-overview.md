@@ -99,9 +99,10 @@ The following table lists course statuses and the actions to complete for a spec
  
 |Status|Actions| 
 |------|--------| 
-|**Created**|</p><ul><li>Enter and modify course information</li><li>Change the course status to **Open** so that workers can register for the course</li></ul><p>| |**Open**|</p><ul><li>Register participants for the course</li><li>Remove participants from the course</li><li>Confirm participants for the course</li><li>Change the course status to **Closed** or **Canceled** for participants whose status is **Confirmed**.</li></ul><p>|
+|**Created**|<ul><li>Enter and modify course information</li><li>Change the course status to **Open** so that workers can register for the course</li></ul>| 
+|**Open**|<ul><li>Register participants for the course</li><li>Remove participants from the course</li><li>Confirm participants for the course</li><li>Change the course status to **Closed** or **Canceled** for participants whose status is **Confirmed**.</li></ul>|
 |**Closed**|You can reopen the course.| 
-|**Canceled**|You can reopen the course.| 
+|**Canceled**|You can reopen the course. | 
 
 ### Course participants 
 Course participants are workers who participate in a training course or event. You can only register participants for open courses.  
