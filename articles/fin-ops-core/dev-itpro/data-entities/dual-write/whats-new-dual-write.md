@@ -36,6 +36,16 @@ The October release of Dual-write Global Address Book solution 3.5.1.55 contains
 | Bug fix |	The Street information on the **Address** page was not displaying correctly on the **Postal address** page (Street field) when Street 2 was not present.| General availability|
 |Bug fix| County information for customer address is not syncing between Dynamics 365 finance and operations and Customer engagement. GAB plugins have been corrected to address this issue.|	General availability|
 
+## August 2022 release
+
+The August release of Dual-write Global Address Book solution 3.5.1.22 contains the following bug fixes.
+
+| Feature | Description | Status |
+|---|---|---|
+|Bug fix|	Contact created from the marketing portal and during the lead qualification scenario doesn't having a valid party id. |	General availability|
+|Bug fix|	Fixed **The 'contact' entity must be in the default (null) or unchanged state** error when a contact is created from CRM portals.|	General availability|
+
+
 ## July 2022 release 
 
 The July release of [Dual-write core solution 1.0.36.0](https://appsource.microsoft.com/product/dynamics-365/mscrm.msft-d365-dual-write) contains the following changes.
