@@ -14,6 +14,8 @@
         items:
         - name: What's new or changed in Platform updates home page
           href: get-started/whats-new-home-page.md
+        - name: Platform updates for version 10.0.31 (February 2023)
+          href: get-started/whats-new-platform-updates-10-0-31.md
         - name: Platform updates for version 10.0.30 (November 2022)
           href: get-started/whats-new-platform-updates-10-0-30.md
         - name: Platform updates for version 10.0.29 (October 2022)
@@ -182,6 +184,8 @@
           href: data-entities/configuration-data-templates.md
         - name: Track changes to an entity
           href: data-entities/entity-change-track.md
+        - name: Allow row version change tracking for an entity
+          href: data-entities/rowversion-change-track.md          
         - name: Find information about standard data entities
           href: data-entities/data-entities-report.md
         - name: Data templates with multiple worksheets

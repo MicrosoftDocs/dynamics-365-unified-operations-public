@@ -37,8 +37,8 @@ A new change tracking option has been added to finance and operations apps to en
 ## Prerequisite to track changes for finance and operations virtual tables in Dataverse 
 
 track-changes-fin-ops-virtual-table.md)
-- The **Allow Row Version Change Tracking** metadata property, must be set to **Yes** for the data entity, see [Allow Row version change tracking for Data entities](/track-changes-fin-ops-virtual-table.md)
-- Finance and Operations entities must be visible in Dataverse, see [Enable Microsoft Dataverse virtual entities](/enable-virtual-entities.md)
+- The **Allow Row Version Change Tracking** metadata property, must be set to **Yes** for the data entity, see [Allow Row version change tracking for Data entities](../data-entities/rowversion-change-track.md)
+- Finance and Operations entities must be visible in Dataverse, see [Enable Microsoft Dataverse virtual entities](enable-virtual-entities.md)
  
  ## Track changes for finance and operations virtual tables in Dataverse 
 
