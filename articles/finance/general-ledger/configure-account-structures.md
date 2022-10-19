@@ -90,7 +90,8 @@ If you have more than seven criteria that are needed, you can continue adding th
  - Performance of the **Allowed value details** control
  - Usability  
 
-*NOTE: Upgrading from AX2012 where more than 7 criteria were specified is not supported and should be corrected prior to completing the upgrade to Dynamics 365. 
+>[!NOTE] 
+> Upgrading from AX2012 where more than 7 criteria are specified is not supported and needs to be corrected prior to completing the upgrade to Dynamics 365 finance and operations.. 
 
 To continue to add additional criteria, click **Duplicate in the Segment** and **Allowed values section**. This will copy the criteria to a new line. You can then type over or modify the **Allowed value details** section.
 
