@@ -19,7 +19,7 @@ ms.dyn365.ops.version: 10.0.21
 
 This article describes how to install the Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management.
 
-You must use Microsoft Dynamics Lifecycle Services (LCS) to install the Inventory Visibility Add-in. LCS is a collaboration portal that provides an environment and a set of regularly updated services that help you manage the application lifecycle of your finance and operations apps. For more information, see [Lifecycle Services resources](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
+You must use [Microsoft Dynamics Lifecycle Services (LCS)](https://lcs.dynamics.com/v2) to install the Inventory Visibility Add-in. LCS is a collaboration portal that provides an environment and a set of regularly updated services that help you manage the application lifecycle of your finance and operations apps. For more information, see [Lifecycle Services resources](../../fin-ops-core/dev-itpro/lifecycle-services/lcs.md).
 
 > [!TIP]
 > We recommend that you join the Inventory Visibility Add-in user group, where you can find useful guides, get our latest updates, and post any questions you may have about using Inventory Visibility. To join, please send email to the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com) and include your Supply Chain Management environment ID.
@@ -71,6 +71,9 @@ After you register an application and add a client secret to Azure AD, follow th
 1. Agree to the terms and condition by selecting the **Terms and conditions** checkbox.
 1. Select **Install**. The status of the add-in is shown as **Installing**. When the installation is completed, refresh the page. The status should change to **Installed**.
 1. In Dataverse, select the **Apps** section in the left navigation, and verify that the **Inventory Visibility** Power Apps is installed successfully. If the **Apps** section doesn't exist, contact the Inventory Visibility product team at [inventvisibilitysupp@microsoft.com](mailto:inventvisibilitysupp@microsoft.com).
+
+> [!NOTE]
+> If the system warns that you do not have permission to install Inventory Visibility on LCS, then you need to contact the administrator to modify your permission.  
 
 > [!NOTE]
 > If it takes more than an hour to install from the LCS page, then your user account probably lacks permission to install solutions in the Dataverse environment. Follow these steps to resolve the issue:
@@ -137,11 +140,11 @@ To uninstall the Inventory Visibility Add-in, follow these steps:
 1. Select **Environment** on the navigation bar
 1. Select the Dataverse environment that is bonded with your LCS environment.
 1. Go to **Solutions** and delete the following solutions in the following order:
-    1. Dynamics 365 Inventory Visibility - Anchor
-    1. Dynamics 365 Inventory Visibility - Application
-    1. Dynamics 365 Inventory Visibility - Controls
-    1. Dynamics 365 Inventory Visibility - Plugins
-    1. Dynamics 365 Inventory Visibility - Base
+    1. Anchor solution for inventory visibility application in Dynamics 365 solution.
+    1. Dynamics 365 FNO SCM Inventory Visibility Application Solution
+    1. Dynamics 365 Inventory Visibility – Controls 
+    1. Dynamics 365 FNO SCM Inventory Visibility Base Solution
+    1. Inventory visibility Standalone
 
     After you delete these solutions, the data that is stored in tables will also be deleted.
 
