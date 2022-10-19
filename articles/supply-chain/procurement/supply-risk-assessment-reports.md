@@ -90,3 +90,4 @@ A typical filter is the data range filter that you can access in the filter side
 ## Next steps
 
 You may use additional filters in the reports to reduce the calculation scope of the metrics within the reports.
+<!--KFM: I think we can probably remove this section. I moved the section about the date filter out of here. We could maybe add a couple more sections of general advice (that applies to all reports) like that one. -->
