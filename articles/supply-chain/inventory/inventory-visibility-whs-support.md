@@ -44,7 +44,7 @@ We recommend that you use the Advanced WMS feature for Inventory Visibility in s
 
 - You're syncing Supply Chain Management data with Inventory Visibility.
 - You're using WMS in Supply Chain Management.
-- Users make reservations for WMS items at levels other than the warehouse level (for example, because you're using warehouse work).
+- Users make reservations for WMS items at levels below the warehouse level (for example, at license plate level because you're processing warehouse work).
 
 In other scenarios, on-hand query results will be the same, regardless of whether the Advanced WMS feature for Inventory Visibility is enabled. Additionally, performance will be better if you don't enable the feature in these scenarios, because there are fewer calculations and less overhead.
 
@@ -60,7 +60,7 @@ To enable the Advanced WMS feature for Inventory Visibility, follow these steps.
 
 1. Go to **Inventory Management \> Setup \> Inventory Visibility integration parameters**.
 1. On the **Enable WMS Items** tab, set the **Enable WMS Items** option to *Yes*.
-1. Sign in to Power Apps.
+1. Sign in to Inventory Visibility add-in Power Apps.
 1. Open the **Configuration** page, and then, on the **Feature Management** tab, turn on the *AdvancedWHS* feature.
 1. In Supply Chain Management, go to **Inventory Management \> Periodic Tasks \> Inventory Visibility integration**.
 1. On the Action Pane, select **Disable** to temporarily disable Inventory Visibility.
@@ -81,17 +81,19 @@ All other physical measures are calculated just as they are when the Advanced WM
 
 For detailed information about how on-hand calculations for WMS items work, see the [Reservations in Warehouse management](https://www.microsoft.com/download/details.aspx?id=43284) white paper.
 
-The data entities that are exported to Dataverse can't yet update the quantities for WMS items. The quantities that are shown in the data entities are correct both for non-WMS items and for quantities that aren't affected by WMS logic (that is, measures except `AvailPhysical`, `AvailOrdered`, `ReservPhysical`, and `ReservOrdered` in the `fno` data source).
+## Onhand list view and data entity for WMS items
+The **Preload the Inventory Visibility Summary** page provides a view for the *On-hand Index Query Preload Results* entity. Unlike the *Inventory summary* entity, the *On-hand Index Query Preload Results* entity provides an on-hand inventory list for products together with selected dimensions. Inventory Visibility syncs the preloaded summary data every 15 minutes.
+If you use inventory visibility with WMS items and would like to view onhand list for WMS items, it is recommeded that you enable the Preload the Inventory Visibility Summary feature, you can find detailed in [Use the Inventory Visibility app-Preload the inventory visibility onhand query](inventory-visibility-power-platform.md#preload-the-inventory-visibility-onhand-query). There will be a corresponding data entity in dataverse that stores your query preload result which is updated every 15 minutes. The data entity's name is `Onhand Index Query Preload Result`
 
-Changes to WMS item quantities that are stored in the Supply Chain Management data source are prohibited. As for other features of Inventory Visibility, this restriction is enforced to help prevent conflicts.
+>[!NOTE]
+>The dataverse entity is for read-only, you can view and export but DO NOT MODIFY the data in the inventory visibility entities.
 
-## Soft reservations on WMS items in Inventory Visibility
+Changes to WMS item quantities that are stored in the Inventory Visibility Supply Chain Management data source (fnO) are prohibited. This is the same behaviour for other features of Inventory Visibility, this restriction is enforced to help prevent conflicts.
 
-In general, [soft reservations](inventory-visibility-reservations.md) on WMS items are supported. You can include WMS-related physical measures in soft reservation calculations. 
+## WMS items compatiability for other functions in Inventory Visibility
 
-In a known limitation, the *available for reservation* calculation isn't currently supported for WMS items. Therefore, if there is reservation above the current dimensions where a soft reservation is occurring, the *available for reservation* calculation is incorrect. Soft reservations won't be affected when the **ifCheckAvailForReserv** option is disabled in the [soft reservation API](inventory-visibility-api.md#create-one-reservation-event).
+[soft reservations](inventory-visibility-reservations.md) and [Inventory Allocation](inventory-visibility-allocation.md) on WMS items are supported. You can include WMS-related physical measures in soft reservation and allocation calculations. 
 
-This constraint also applies to features and customizations that are based on soft reservations (such as allocation).
 
 ## Calculate available-to-promise quantities
 
