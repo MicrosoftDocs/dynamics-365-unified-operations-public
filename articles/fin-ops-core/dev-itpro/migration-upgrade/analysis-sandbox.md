@@ -30,5 +30,7 @@ If you haven’t yet purchased licenses, and you’re using a free trial, you ca
 
 If you’ve already purchased licenses, you received a link to configure a special type of project in Microsoft Dynamics Lifecycle Services (LCS): an implementation project. The implementation project will let you deploy a dev/test environment and a sandbox environment. For more information about this type of environment deployment, see [Upgrade from AX 2012 - Data upgrade in sandbox environments](/d365F-O/fin-ops-core/dev-itpro/migration-upgrade/data-upgrade-self-service).
 
+> [!IMPORTANT]
+> It is recommended that before you run the upgrade, that you apply the latest **Quality Update** for the Dynamics 365 version you are using.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
