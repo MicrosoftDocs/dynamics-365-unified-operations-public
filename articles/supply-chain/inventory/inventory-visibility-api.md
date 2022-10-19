@@ -78,20 +78,18 @@ The region short name can be found in the Microsoft Dynamics Lifecycle Services 
 | West UK             | wuk               |
 | East Japan          | ejp               |
 | West Japan          | wjp               |
-| South Brazil        | sbr               |
-| South Central US    | scus              |
-|xxxxxxxxxxxxxxxxx    | cin               |
-|xxxxxxxxxxxxxxxxx    | sin               |
-|xxxxxxxxxxxxxxxxx    | nch               |
-|xxxxxxxxxxxxxxxxx    | wch               |
-|xxxxxxxxxxxxxxxxx    | sfr               |
-|xxxxxxxxxxxxxxxxx    | eas               |
-|xxxxxxxxxxxxxxxxx    | seas              |
-|xxxxxxxxxxxxxxxxx    | nae               |
-|xxxxxxxxxxxxxxxxx    | eno               |
-|xxxxxxxxxxxxxxxxx    | wno               |
-|xxxxxxxxxxxxxxxxx    | wza               |
-|xxxxxxxxxxxxxxxxx    | nza               |
+| Central India       | cin               |
+| South India         | sin               |
+| Switzerland North   | nch               |
+| Switzerland West    | wch               |
+| France South        | sfr               |
+| East Asia           | eas               |
+| South East Asia     | seas              |
+| Uae North           | nae               |
+| Norway East         | eno               |
+| Norway West         | wno               |
+| South Africa West   | wza               |
+| South Africa North  | nza               |
 
 The island number is where your LCS environment is deployed on Service Fabric. There's currently no way to get this information from the user side.
 
