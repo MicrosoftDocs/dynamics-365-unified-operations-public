@@ -1605,7 +1605,11 @@
       - name: License codes and configuration keys report
         href: sysadmin/license-codes-configuration-keys-report.md
       - name: Cross-company data sharing
-        href: sysadmin/cross-company-data-sharing.md
+        href: sysadmin/srs-overview.md
+      - name: Tables supported for data sharing
+        href: sysadmin/drs-srs-tables.md
+      - name: Data sharing for developers
+        href: sysadmin/drs-srs-dev.md
       - name: Maintenance mode
         href: sysadmin/maintenance-mode.md
       - name: Preconfigured system accounts
