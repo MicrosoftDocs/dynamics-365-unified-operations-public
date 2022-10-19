@@ -31,17 +31,18 @@ The following table lists the APIs that are currently available:
 
 | Path | Method | Description |
 |---|---|---|
-| /api/environment/{environmentId}/onhand | Post | [Create one on-hand change event](#create-one-onhand-change-event) |
+| /api/environment/{environmentId}/onhand | Post | [Create one on-hand change event](#create-one-onhand-change-event)|
 | /api/environment/{environmentId}/onhand/bulk | Post | [Create multiple change events](#create-multiple-onhand-change-events) |
 | /api/environment/{environmentId}/setonhand/{inventorySystem}/bulk | Post | [Set/override on-hand quantities](#set-onhand-quantities) |
-| /api/environment/{environmentId}/onhand/reserve | Post | [Create one reservation event](#create-one-reservation-event) |
-| /api/environment/{environmentId}/onhand/reserve/bulk | Post | [Create multiple reservation events](#create-multiple-reservation-events) |
-| /api/environment/{environmentId}/onhand/unreserve | Post | [Reverse one reservation event](#reverse-one-reservation-event) |
-| /api/environment/{environmentId}/onhand/unreserve/bulk | Post | [Reverse multiple reservation events](#reverse-multiple-reservation-events) |
+| /api/environment/{environmentId}/onhand/reserve | Post | [Create one soft reservation event](#create-one-reservation-event) |
+| /api/environment/{environmentId}/onhand/reserve/bulk | Post | [Create multiple soft reservation events](#create-multiple-reservation-events) |
+| /api/environment/{environmentId}/onhand/unreserve | Post | [Reverse one soft reservation event](#reverse-one-reservation-event) |
+| /api/environment/{environmentId}/onhand/unreserve/bulk | Post | [Reverse multiple soft reservation events](#reverse-multiple-reservation-events) |
 | /api/environment/{environmentId}/onhand/changeschedule | Post | [Create one scheduled on-hand change](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/onhand/changeschedule/bulk | Post | [Create multiple scheduled on-hand changes](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the post method](#query-with-post-method) |
+| /api/environment/{environmentId}/onhand/changeschedule/bulk | Post | [Create multiple on-hand changes with dates](inventory-visibility-available-to-promise.md) |
+| /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the post method (recommended)](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Get | [Query by using the get method](#query-with-get-method) |
+| /api/environment/{environmentId}/onhand/exactquery | Post | [Exact query (acknowledge site and warehouse mapping) by using the post method](#exact-query-with-post-method) |
 | /api/environment/{environmentId}/allocation​/allocate | Post | [Create one allocate event](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation​/unallocate | Post | [Create one unallocate event](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation​/reallocate | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
@@ -79,6 +80,18 @@ The region short name can be found in the Microsoft Dynamics Lifecycle Services 
 | West Japan          | wjp               |
 | South Brazil        | sbr               |
 | South Central US    | scus              |
+|xxxxxxxxxxxxxxxxx    | cin               |
+|xxxxxxxxxxxxxxxxx    | sin               |
+|xxxxxxxxxxxxxxxxx    | nch               |
+|xxxxxxxxxxxxxxxxx    | wch               |
+|xxxxxxxxxxxxxxxxx    | sfr               |
+|xxxxxxxxxxxxxxxxx    | eas               |
+|xxxxxxxxxxxxxxxxx    | seas              |
+|xxxxxxxxxxxxxxxxx    | nae               |
+|xxxxxxxxxxxxxxxxx    | eno               |
+|xxxxxxxxxxxxxxxxx    | wno               |
+|xxxxxxxxxxxxxxxxx    | wza               |
+|xxxxxxxxxxxxxxxxx    | nza               |
 
 The island number is where your LCS environment is deployed on Service Fabric. There's currently no way to get this information from the user side.
 
@@ -685,6 +698,94 @@ Here's a sample get URL. This get request is exactly the same as the post sample
 
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
+```
+
+## <a name="exact-query-with-post-method"></a>Onhand Exact query
+
+Onhand exact query is complimentory to normal onhand query. It allows you to specify a mapping hierarchy between Site and Location. For example, you have two sites, site 1 and site 2 and 
+- Within Site 1 it is mapped with location A
+- Within Site 2 it is mapped with location B
+
+With normal onhand query, when you specify siteId = 1,2 and locationId = A,B,C,D, inventory visibility will automatically query the result for 
+- site 1, location A
+- site 1, location B
+- site 2, location A
+- site 2, location B
+
+As you can see here, the normal onhand query does not recognize that location A only exists in site 1 and location B only exists for site 2 and therefore making redundant queries. To acknowledge this hierarchical mapping, you can use Onhand Exact query and specify such mapping in your query body, you will only query and receive result for site 1 location A and site 2 location B
+
+You can make the exact query using post method:
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            dimensions: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+In the body part of this request, `dimensionDataSource` is still an optional parameter. If it isn't set, `dimensions` in `filters` will be treated as *base dimensions*. There are four required fields for `filters`: `organizationId`, `productId`, `dimensions`, and `values`.
+
+- `organizationId` should contain only one value, but it's still an array.
+- `productId` could contain one or more values. If it's an empty array, all products will be returned.
+- In `dimensions` array, `siteId` and `locationId` are required but could appear with other elements in any order.
+- `values` could contain ore or more distinct tuples of values corresponding to `dimensions`
+
+`dimensions` in `filters` will be automatically added to `groupByValues`.
+
+The `returnNegative` parameter controls whether the results contain negative entries.
+
+The following example shows sample body content.
+
+```json
+{
+    "dimensionDataSource": "pos",
+    "filters": {
+        "organizationId": ["SCM_IV"],
+        "productId": ["iv_postman_product"],
+        "dimensions": ["siteId", "locationId", "colorId"],
+        "values" : [
+            ["iv_postman_site", "iv_postman_location", "red"],
+            ["iv_postman_site", "iv_postman_location", "blue"],
+        ]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
+```
+
+The following example shows how to query all products in multiple sites and locations.
+
+```json
+{
+    "filters": {
+        "organizationId": ["SCM_IV"],
+        "productId": [],
+        "dimensions": ["siteId", "locationId"],
+        "values" : [
+            ["iv_postman_site_1", "iv_postman_location_1"],
+            ["iv_postman_site_2", "iv_postman_location_2"],
+        ]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
 ```
 
 ## Available to promise
