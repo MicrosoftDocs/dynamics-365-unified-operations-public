@@ -337,7 +337,7 @@
           - name: Deployment FAQ
             href: deployment/deploymentFAQ.md
           - name: Geo to Geo Migrations
-            href: geo-to-geo-migrations.md
+            href: deployment/geo-to-geo-migrations.md
           - name: Known issues with self-service deployment
             href: deployment/known-issues-new-deployment-experience.md
           - name: Maintenance operations for deployments
