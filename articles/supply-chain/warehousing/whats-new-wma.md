@@ -22,7 +22,7 @@ This article lists new features, fixes, improvements, and known issues for each 
 ## Version 2.0.35.0
 
 This version introduces the following new features, fixes, and improvements:
-- Fixed an issue on Android where the application would crash if the **Work List** page was opened when no cards are to be shown.
+- Fixed an issue on Android where the application would crash if the **Work List** page was opened when no cards were to be shown.
 
 ## Version 2.0.34.0
 
