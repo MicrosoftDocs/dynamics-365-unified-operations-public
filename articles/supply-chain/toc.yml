@@ -2247,11 +2247,11 @@
           href: procurement/tasks/create-purchasing-policies.md
         - name: Set up policies for procurement category hierarchies
           href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
-      - name: Supply Risk Assessment
+      - name: Supply risk assessment
         items:
-        - name: Supply Risk Assessment overview
+        - name: Supply risk assessment overview
           href: procurement/supply-risk-assessment-overview.md
-        - name: Supply Risk Assessment configuration
+        - name: Supply risk assessment configuration
           href: procurement/supply-risk-assessment-configuration.md
         - name: Actionable workspace to discover and handle supplier risks
           href: procurement/supply-risk-assessment-workspace.md

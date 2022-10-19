@@ -22,25 +22,24 @@ ms.custom: bap-template
 
 The Supply Risk Assessment workspace gives you a direct view on top key insights related to supplier performance and related risks. It also provides [embedded reports](supply-risk-assessment-reports.md) for detailed performance and risk analysis.
 
-:::image type="content" source="media/sra-workspace-page.png" alt-text="Supply Risk Assessment workspace screenshot":::
-
-<!--Introductory paragraph - Required. Lead with a light intro that describes what the article covers. Answer the fundamental "What is X and how will learning this help me accomplish Y?" question. A good lead is a sentence in the form, "X is a (type of) Y that does Z." Keep this paragraph short.-->
-<!--add your intro paragraph here-->
-
-<!--H2s - Required. Give each H2 a heading that sets expectations for the content that follows. Follow H2 headings with a sentence about how the section contributes to the whole.-->
-## Workspace content
-
 The workspace is grouped into three sections, for direct actionable navigation and embedded analytic reporting using Power BI.
 
 - Overview
 - Performance
 - Risk
 
-### Overview section
+
+
+[<img src="media/sra-workspace-page.png" alt="Supply risk assessment workspace, screenshot" title="Supply risk assessment workspace, screenshot" width="720" />](media/sra-workspace-page.png)
+
+> [!NOTE]
+> If the workspace isn't showing the data you expect to see, you may need to initialize or refresh the data. For instructions, see [Supply Risk Assessment configuration](supply-risk-assessment-configuration.md).
+
+## Overview section
 
 The Overview sections contains metrics and actionable content that allows you to navigate to views and records in Dynamics 365, such as planned orders, products, vendors and more. The data shown in the overview section are filtered by the currently selected legal entity.
 
-#### Metrics
+### Metrics
 
 The following metrics are calculated for the scope of the work center:
 
@@ -48,13 +47,14 @@ The following metrics are calculated for the scope of the work center:
 - "Not on time": The number of purchase order lines that have not been delivered on time.
 - "Not in full": The number of purchase order lines that have not been delivered in full.
 - "Single sourced": The number of planned order items that have only one vendor assigned and potentially indicating increased risk
+
 Each of above metrics represents a view, that you may navigate to to get detailed lists of records represented.
 
 :::image type="content" source="media/sra-single-source-planned-items.png" alt-text="Single sourced Items view screenshot":::
 
 In this view the On-Time In-Full rating is highlighted and visually indicates whether the rating meets the expected rate as [configured](supply-risk-assessment-overview.md#configure-thresholds) in the supply risk assessment parameters.
 
-#### Details and impact
+### Details and impact
 
 The section provides the actionable galley view of Products and Vendors that have not meet the OTIF rate expectations based on purchase orders in the past.
 
@@ -64,7 +64,7 @@ Each Product or vendor shown informs about the number of items ordered and the n
 
 You can navigate from each item shown to the list of order lines represented.
 
-### Performance and Risk sections
+## Performance and Risk sections
 
 In these sections you will find in-depth [analytics reports](supply-risk-assessment-reports.md) of your vendor and supply performance and calculated risks for your planned supply orders.
 

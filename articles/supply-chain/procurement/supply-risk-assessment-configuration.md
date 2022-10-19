@@ -10,33 +10,37 @@ ms.date: 10/17/2022
 ms.custom: bap-template
 ---
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
-
-<!--This template provides the basic structure of a how-to article. See [Write a how-to topic](write-a how-to.md) in the contributor guide. To provide feedback on this template contact [bace feedback](mailto:templateswg@microsoft.com).-->
-
-<!--H1. Required. Pick an H1 that clearly conveys the task the user will complete.-->
 # Supply Risk Assessment configuration
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-<!--Introductory paragraph. Required. Lead with a light intro that describes, in customer-friendly language, what the customer will learn, or do, or accomplish. Answer the fundamental "why would I want to do this?" question. Keep it short.-->
-<!--add your intro paragraph here-->
+## Turn on the supply risk assessment feature
 
-<!--Prerequisites. Optional. If you need prerequisites, make them your first H2 in a how-to guide. Use clear language and use a list format.-->
-## Prerequisites
+Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
-<!--add your content here-->
+- **Module:** *Procurement and sourcing*
+- **Feature name:** *Supply risk assessment*
 
-<!--H2s. Required. A how-to article explains how to do a task. The bulk of each H2 should be a procedure.-->
-## Section heading
+## Enable the capability
 
-<!--Intro paragraph-->
-<!--Step 1-->
-<!--Step 2-->
-<!--Step n-->
+You must first enable the supply risk assessment capability in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md). The feature is named “Assess supply risks to prevent supply chain disruptions".
+Once enabled you can configure individual risk thresholds, access the workspace and  embedded Power BI reports.
+thresholds
 
-<!--Next steps. Optional. Provide no more than three next steps. Include some context so the customer can determine why they would click the link.-->
-## Next steps
+## Configure thresholds
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
+Navigate to the page called “Supply risk assessment parameters” to change minimum rates used to calculate risks. The system uses 4 metrics to assess risks.
+
+- Requested delivery date acceptance rate
+- In-Full delivery rate (IT)
+- On-Time delivery  rate (OT)
+- On-Time In-Full delivery rate (OTIF)
+
+![Supply risk assessment parameters, screenshot.](media/sra-parameters-general.png "Supply risk assessment parameters,screenshot")
+
+Each metric is calculated as a rate against within a current scope of analysis. Set the rate which you regard a risk for your business. By default the threshold is set to a rate of 96%.
+
+## Initialize or refresh data on the supply risk assessment workspace
+
+You might need to use the **Refresh data** link to immediately see the updated data in the workspace. If this link is not accessible for you, go to the **Data set cache configuration** from the search bar and you will see the cache consumer `VendSupplyRiskCacheDataSet`, which you can edit and enable for manual refresh. <!-- KFM: I moved this here from the overview. I think a more detailed procedure may be needed here. -->
