@@ -187,6 +187,8 @@ The following table summarizes the meaning of each field in the JSON body.
 
 > [!NOTE]
 > The `siteId` and `locationId` parameters construct the [partition configuration](inventory-visibility-configuration.md#partition-configuration). Therefore, you must specify them in dimensions when you create on-hand change events, set or override on-hand quantities, or create reservation events.
+###Sample scenario
+In the following sections we will use a sample company Contoso that produces clothing (Product ID: T-shirt) to explain typical use cases you can consider leveraging each APIs.
 
 ### <a name="create-one-onhand-change-event"></a>Create one on-hand change event
 
@@ -219,17 +221,17 @@ Body:
     }
 ```
 
-The following example shows sample body content. In this sample, you post a change event for the *T-shirt* product. This event is from the point of sale (POS) system, and the customer has returned a red T-shirt back to your store. This event will increase the quantity of the *T-shirt* product by 1.
+The following example shows sample body content. Company Contoso operates in stores. They have a Point-of-Sales (POS) system that processes in-store transactions and therefore inventory changes. In this sample, the customer has returned a red T-shirt back to your store. To reflect the change you post a single change event for the *T-shirt* product and this event will increase the quantity of the *T-shirt* product by 1.
 
 ```json
 {
-    "id": "123456",
-    "organizationId": "SCM_IV",
+    "id": "Test201",
+    "organizationId": "usmf",
     "productId": "T-shirt",
     "dimensionDataSource": "pos",
     "dimensions": {
-        "siteId": "iv_postman_site",
-        "locationId": "iv_postman_location",
+        "siteId": "1",
+        "locationId": "11",
         "posMachineId": "0001",
         "colorId": "red"
     },
@@ -245,12 +247,12 @@ The following example shows sample body content without `dimensionDataSource`. I
 
 ```json
 {
-    "id": "123456",
-    "organizationId": "SCM_IV",
-    "productId": "iv_postman_product",
+    "id": "Test202",
+    "organizationId": "usmf",
+    "productId": "T-shirt",
     "dimensions": {
-        "siteId": "iv_postman_site",
-        "locationId": "iv_postman_location",
+        "siteId": "1",
+        "locationId": "11",
         "colorId": "red"
     },
     "quantities": {
@@ -263,7 +265,10 @@ The following example shows sample body content without `dimensionDataSource`. I
 
 ### <a name="create-multiple-onhand-change-events"></a>Create multiple change events
 
-This API can create multiple records at the same time. The only differences between this API and the [single-event API](#create-one-onhand-change-event) are the `Path` and `Body` values. For this API, `Body` provides an array of records. The maximum number of records is 512, which means that the on-hand change bulk API  can support up to 512 change events at a time.
+This API is also used to create change events as the [single-event API](#create-one-onhand-change-event), the only difference is it can create multiple records at the same time. Therefore the `Path` and `Body` values are different. For this API, `Body` provides an array of records. The maximum number of records is 512, which means that the on-hand change bulk API can support up to 512 change events at a time. For example, the Contoso store POS machine processed two transactions:
+- one return order of 1 red T-shirt
+- one sales transaction of 3 block T-shirt
+You can include both inventory updates in one API
 
 ```txt
 Path:
@@ -300,26 +305,27 @@ The following example shows sample body content.
 ```json
 [
     {
-        "id": "123456",
-        "organizationId": "SCM_IV",
-        "productId": "iv_postman_product_1",
+        "id": "Test203",
+        "organizationId": "usmf",
+        "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
-            "posSiteId": "posSite1",
-            "posLocationId": "posLocation1",
+            "SiteId": "Site1",
+            "LocationId": "11",
             "posMachineId": "0001"
+            "colorId": "red"
         },
         "quantities": {
             "pos": { "inbound": 1 }
         }
     },
     {
-        "id": "654321",
-        "organizationId": "SCM_IV",
-        "productId": "iv_postman_product_2",
+        "id": "Test204",
+        "organizationId": "usmf",
+        "productId": "T-shirt",
         "dimensions": {
-            "siteId": "iv_postman_site",
-            "locationId": "iv_postman_location",
+            "siteId": "1",
+            "locationId": "11",
             "colorId": "black"
         },
         "quantities": {
@@ -331,7 +337,7 @@ The following example shows sample body content.
 
 ## <a name="set-onhand-quantities"></a>Set/override on-hand quantities
 
-The _Set on-hand_ API overrides the current data for the specified product.
+The _Set on-hand_ API overrides the current data for the specified product.Typical use case for this is to do inventory counting update. For example, this Contoso store does daily inventory counting and identified that the actual onhand for red T-shirt is 100, therefore the POS inbound quantity needs to be updated to 100 regardless of what previous quantity is. You can use this API to override the existing value.
 
 ```txt
 Path:
@@ -369,18 +375,19 @@ The following example shows sample body content. The behavior of this API differ
 ```json
 [
     {
-        "id": "123456",
-        "organizationId": "SCM_IV",
+        "id": "Test204",
+        "organizationId": "usmf",
         "productId": "T-shirt",
         "dimensionDataSource": "pos",
         "dimensions": {
-            "posSiteId": "iv_postman_site",
-            "posLocationId": "iv_postman_location",
+            "SiteId": "1",
+            "LocationId": "11",
             "posMachineId": "0001"
+            "colorId": "red"
         },
         "quantities": {
             "pos": {
-                "inbound": 1
+                "inbound": 100
             }
         }
     }
@@ -389,7 +396,7 @@ The following example shows sample body content. The behavior of this API differ
 
 ## Create reservation events
 
-To use the *Reserve* API, you must turn on the reservation feature and complete the reservation configuration. For more information, see [Reservation configuration (optional)](inventory-visibility-configuration.md#reservation-configuration).
+To use the *Reserve* API, you must turn on the reservation feature and complete the reservation configuration. For more information with dataflow and sample scenario, see [Reservation configuration (optional)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a>Create one reservation event
 
@@ -598,7 +605,7 @@ Body:
 
 ## Query on-hand
 
-Use the *Query on-hand* API to fetch current on-hand inventory data for your products. The API currently supports querying up to 5000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. The maximum limit is defined by the following equation:
+Use the *Query on-hand* API to fetch current on-hand inventory data for your products. This API is frequently used whenever you need to know the stock, whether you want to expose product stock levels on your ecommerce website, or you want to check product availability in nearby stores/warehouses or across regions. You can use this API to fetch the result. The API currently supports querying up to 5000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. The maximum limit is defined by the following equation:
 
 *NumOf(SiteID) \* NumOf(LocationID) <= 100*.
 
@@ -642,16 +649,16 @@ The `returnNegative` parameter controls whether the results contain negative ent
 > [!NOTE]
 > If you've enabled the on-hand change schedule and available-to-promise (ATP) features, your query can also include the `QueryATP` Boolean parameter, which controls whether the query results include ATP information. For more information and examples, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
 
-The following example shows sample body content.
+The following example shows sample body content,this is an example that you can query the onhand inventory from multiple locations(warehouses).
 
 ```json
 {
     "dimensionDataSource": "pos",
     "filters": {
-        "organizationId": ["SCM_IV"],
-        "productId": ["iv_postman_product"],
-        "siteId": ["iv_postman_site"],
-        "locationId": ["iv_postman_location"],
+        "organizationId": ["usmf"],
+        "productId": ["T-shirt"],
+        "siteId": ["1"],
+        "locationId": ["11","12","13"],
         "colorId": ["red"]
     },
     "groupByValues": ["colorId", "sizeId"],
@@ -664,10 +671,10 @@ The following example shows how to query all products in a specific site and loc
 ```json
 {
     "filters": {
-        "organizationId": ["SCM_IV"],
+        "organizationId": ["usmf"],
         "productId": [],
-        "siteId": ["iv_postman_site"],
-        "locationId": ["iv_postman_location"],
+        "siteId": ["1"],
+        "locationId": ["11"],
     },
     "groupByValues": ["colorId", "sizeId"],
     "returnNegative": true
