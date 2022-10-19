@@ -33,6 +33,7 @@ The monitoring and telemetry feature in Finance and Operations apps is a point-t
 
 ## What telemetry and which tables are being populated in Application Insights?
 The following table describes the different telemetry types coming from X++ and the target table name in Application Insights.
+
 |Telemetry type |	Application Insights table name |
 |------------|---------------------------------|
 |FormRun form loads |	pageViews |
@@ -87,7 +88,7 @@ Once enabled, you will need to configure the parameters.
 3.	Visit the **Application Insights Registry** tab.  Here you can determine which categories of environments send telemetry to which specific application insights destination.  In this way developer telemetry can go to one place, while Production telemetry can go to another for example.
 4.	Lastly, return to the top tab called **Configure**.  Here you can turn on and off each type of telemetry you wish to capture.  You can keep them all enabled, or only enable them when you need to diagnose an issue. 
 
-> [!IMPORTANT]
+> [!Note]
 > Note that if you disable the telemetry, there is a cache so it will take a few minutes to stop sending. In addition, if it is disabled you won’t receive proactive alerts if you have enabled those in Application Insights.  Lastly, if the telemetry is enabled you will have usage and potential extra costs with Application Insights.
 
 ## How to disable the private preview feature
