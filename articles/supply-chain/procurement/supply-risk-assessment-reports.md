@@ -15,13 +15,18 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-The supply risk assessment workspace offers embedded Power BI reports that are based on the same metrics like the risk assessment workspace. Yet it offers rich filtering and data slicing options to identify the most pressing supplier performance issues and potential risks for planned supply.
+The **Supply risk assessment** workspace offers embedded Power BI reports that are based on the same metrics as the workspace. Yet it offers rich filtering and data slicing options to identify the most pressing supplier performance issues and potential risks for planned supply.
 
 The metric and KPI tiles at the top of each report page show relevant key figures that summarize the performance in each currently selected filter scope. These include the total number of purchase orders and order lines in scope for the performance assessment. On some risk assessment reports you will find information on the planned order volume.
 
 You also typically find the performance rates across those for percentage of order lines with delivery data on or before requested date, based on order line receipts the rates of On-Time (OT), In-Full (IF) and On-Time In-Full (OTIF) delivered order lines.
 
 The metric and KPI tiles will update when you filter or select vendors, products, regions, delivery methods which help you to identify correlations with different factors impacting the supply performance.
+
+<!--KFM: We should explain how to open each of these reports, either within each section or in a section by itself (depending on the steps required). -->
+
+<!--KFM: We have a page that doesn't seem to be documented: **Procurement and sourcing \> Inquiries and reports \> Supply risk assessment \> Supply risk assessment**. We should explain what this is for and what to do with it. For me, it's just blank.
+. -->
 
 ## Supplier performance analysis
 
@@ -33,13 +38,13 @@ Use the two similar reports for product and vendor ranking to study the historic
 
 You can zoom in on the timeline, and select individual data points to see vendors or products behind. Alternatively select one or more vendors based on their ranking and see the respective performance timeline.
 
-[![Performance ranking report for products, screenshot.](media/sra-perf-supplier-rating.png "Performance ranking report for products, screenshot")](media/sra-perf-supplier-rating.png)
+[<img src="media/sra-perf-supplier-rating.png" alt="Performance ranking report for products, screenshot." title="Performance ranking report for products, screenshot" width="720" />](media/sra-perf-supplier-rating.png)
 
 ### Multi perspective OTIF ranking
 
 In this report the worst OTIF ranking is calculated from different perspectives and shown side by side for products, vendors, delivery ,methods and sites. Use individual or combinations of the dimensions to identify bottlenecks that may lead to drop in supply performance.
 
-[![Multi dimensional OTIF ranking report, screenshot.](media/sra-otif-analysis.png "Multi dimensional OTIF ranking report, screenshot")](media/sra-otif-analysis.png)
+[<img src="media/sra-otif-analysis.png" alt="Multi dimensional OTIF ranking report, screenshot." title="Multi dimensional OTIF ranking report, screenshot" width="720" />](media/sra-otif-analysis.png)
 
 ## Supply risk assessment analysis
 
@@ -56,7 +61,7 @@ find all calculated risks for your planned purchase in this report. After filter
 
 Once you circle in on a group of planned product supply you can study additional performance statistics for the products and vendors assigned to the planned orders.
 
-[![Risk assessment report for planned purchase, screenshot.](media/sra-risk-planned-purchase.png "Risk assessment report for planned purchase, screenshot")](media/sra-risk-planned-purchase.png)
+[<img src="media/sra-risk-planned-purchase.png" alt="Risk assessment report for planned purchase, screenshot." title="Risk assessment report for planned purchase, screenshot" width="720" />](media/sra-risk-planned-purchase.png)
 
 ### Detailed sourcing risk breakdown
 
@@ -64,24 +69,24 @@ In the detailed planned purchase risk breakdown lists you can find all products 
 
 Helpful is here to study vendors used in past orders that led to bad performance and the risk assessment and the vendors assigned in planned orders. Consider using other or additional vendors may reduce the risk for planned purchase.
 
-[![Sourcing risk report, screenshot.](media/sra-risk-sourcing.png "Sourcing risk report, screenshot")](sra-risk-sourcing.png)
+[<img src="media/sra-risk-sourcing.png" alt="Sourcing risk report, screenshot." title="Sourcing risk report, screenshot" width="720" />](media/sra-risk-sourcing.png)
 
 ### Compare vendor locations between past order and planned orders
 
 To better compare the overall supply originating location (vendor location) study the geographic maps that highlight side by side on heatmaps  where supply was coming from in purchase orders versus planned supply orders.
 
-[![Risk assessment by comparing past orders and planned sourcing, screenshot.](media/sra-risk-past-vs-planned-purchase.png "Risk assessment by comparing past orders and planned sourcing, screenshot")](media/sra-risk-past-vs-planned-purchase.png)
+[<img src="media/sra-risk-past-vs-planned-purchase.png" alt="Risk assessment by comparing past orders and planned sourcing, screenshot." title="Risk assessment by comparing past orders and planned sourcing, screenshot" width="720" />](media/sra-risk-past-vs-planned-purchase.png)
 
 ### Supply flow comparison from the past against  planned supply
 
 Dive deeper on the supply from source to delivery location in comparison of past purchase and planned supply. Filter by items identified at risk and delivery methods to identify potential risks imposed by the  route and  method of delivery.
 
-[![Risk assessment comparing supply flow, screenshot.](media/sra-risk-supply-flow.png "Risk assessment comparing supply flow, screenshot")](media/sra-risk-supply-flow.png)
+[<img src="media/sra-risk-supply-flow.png" alt="Risk assessment comparing supply flow, screenshot." title="Risk assessment comparing supply flow, screenshot" width="720" />](media/sra-risk-supply-flow.png)
+
+## Use date range filtering
+
+A typical filter is the data range filter that you can access in the filter side bar. Select the Date field in the filter side panel and control the time range to look back at when accounting past purchase order lines used for the performance metrics of past order fulfillment. You could, for example, filter on only looking at order lines and receipts of the last 6 month.
 
 ## Next steps
 
 You may use additional filters in the reports to reduce the calculation scope of the metrics within the reports.
-
-### Use date range filtering
-
-A typical filter is the data range filter that you can access in the filter side bar. Select the Date field in the filter side panel and control the time range to look back at when accounting past purchase order lines used for the performance metrics of past order fulfillment. You could, for example, filter on only looking at order lines and receipts of the last 6 month.

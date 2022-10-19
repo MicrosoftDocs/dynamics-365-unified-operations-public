@@ -5,75 +5,75 @@ author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form: 
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 10/17/2022
 ms.custom: bap-template
 ---
 
-<!--Remove all the comments in this template before you sign-off or merge to the main branch.-->
-
-<!--This template provides the basic structure of a concept article. See [Write a concept article](write-a-concept-article.md) in the contributor guide. To provide feedback on this template contact [bace feedback team](mailto:templateswg@microsoft.com).-->
-
-<!--H1 - Required. This should match the title you entered in the metadata. Set expectations for what the content covers, so customers know the content meets their needs. Should NOT begin with a verb.-->
 # Actionable workspace to discover and handle supplier risks
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-The Supply Risk Assessment workspace gives you a direct view on top key insights related to supplier performance and related risks. It also provides [embedded reports](supply-risk-assessment-reports.md) for detailed performance and risk analysis.
+The **Supply risk assessment** workspace gives you a direct view into the top key insights related to supplier performance and related risks. It also provides [embedded reports](supply-risk-assessment-reports.md) for detailed performance and risk analysis.
 
-The workspace is grouped into three sections, for direct actionable navigation and embedded analytic reporting using Power BI.
+## Open the Supply risk assessment workspace
 
-- Overview
-- Performance
-- Risk
+To open the workspace, go to  **Procurement and sourcing \> Workspaces \> Supply risk assessment**.
 
+The workspace provides three tabs for direct actionable navigation and embedded analytic reporting using Power BI.
 
+- **Overview**
+- **Performance**
+- **Risk**
 
-[<img src="media/sra-workspace-page.png" alt="Supply risk assessment workspace, screenshot" title="Supply risk assessment workspace, screenshot" width="720" />](media/sra-workspace-page.png)
+Each tab is described in detail later in this article.
 
 > [!NOTE]
-> If the workspace isn't showing the data you expect to see, you may need to initialize or refresh the data. For instructions, see [Supply Risk Assessment configuration](supply-risk-assessment-configuration.md).
+> If the workspace is empty or isn't showing the latest data you expect to see, you may need to initialize or refresh the data. For instructions, see [Configure supply risk assessment](supply-risk-assessment-configuration.md).
 
-## Overview section
+## The Overview tab
 
-The Overview sections contains metrics and actionable content that allows you to navigate to views and records in Dynamics 365, such as planned orders, products, vendors and more. The data shown in the overview section are filtered by the currently selected legal entity.
+The **Overview** tab shows metrics and actionable content that let you navigate to relevant views and records in Supply Chain Management, such as planned orders, products, vendors, and more. The data shown in the **Overview** tab are filtered by the currently selected legal entity.
 
-### Metrics
+[<img src="media/sra-workspace-page.png" alt="Supply risk assessment workspace, screenshot." title="Supply risk assessment workspace, screenshot" width="720" />](media/sra-workspace-page.png)
 
-The following metrics are calculated for the scope of the work center:
+### Key insights
 
-- "Late confirmed": the number of purchase order lines that have a later confirmed delivery data than the requested date.
-- "Not on time": The number of purchase order lines that have not been delivered on time.
-- "Not in full": The number of purchase order lines that have not been delivered in full.
-- "Single sourced": The number of planned order items that have only one vendor assigned and potentially indicating increased risk
+The **Key insights** FastTab of the **Overview** tab shows the following tiles, each of which reports a metric calculated for the scope of the work center: <!--KFM: Is "work center" the right term here? What is that? What "scope" do we mean? -->
 
-Each of above metrics represents a view, that you may navigate to to get detailed lists of records represented.
+- **Late confirmed** – The number of purchase order lines where vendors returned a confirmed delivery date (CDD) that was later than your requested delivery date (RDD). <!-- KFM: I rephrased this. Please confirm. -->
+- **Not on time** – The number of purchase order lines that weren't delivered on time (OT).
+- **Not in full** – The number of purchase order lines that weren't delivered in full (IF).
+- **Single sourced** – The number of planned order items that have only one vendor assigned, which potentially indicates increased risk
 
-:::image type="content" source="media/sra-single-source-planned-items.png" alt-text="Single sourced Items view screenshot":::
+Each of these tiles summarizes a view, which you can open by selecting the relevant tile. The following screenshot shows the details view available from the **Single sourced** tile. Note that it shows on-time in-full (OTIF) ratings and highlights whether your [configured threshold](supply-risk-assessment-configuration.md) was met for each item.
 
-In this view the On-Time In-Full rating is highlighted and visually indicates whether the rating meets the expected rate as [configured](supply-risk-assessment-overview.md#configure-thresholds) in the supply risk assessment parameters.
+![Single sourced items view, screenshot.](media/sra-single-source-planned-items.png "Single sourced items view, screenshot")
 
 ### Details and impact
 
-The section provides the actionable galley view of Products and Vendors that have not meet the OTIF rate expectations based on purchase orders in the past.
+The **Details and impact** FastTab of the **Overview** tab shows a tile for each product and vendor that didn't met the OTIF rate expectations based on past purchase orders. There is one sub-tab each for **Products not OTIF** and **Vendors not OTIF**.
 
-Each Product or vendor shown informs about the number of items ordered and the number of items delivered in the relevant unit of measure. The header of each items shows the number of relevant order lines for this calculation.
+Each tile shows the number of items ordered and the number of items delivered in the relevant unit of measure. The header of each tile shows the number of relevant order lines for this calculation. The following screenshot shows an example of tiles on the **Vendors not OTIF** tab.
 
 ![Details and Impact view screenshot.](media/sra-details-impact.png "Details and Impact view screenshot")
 
-You can navigate from each item shown to the list of order lines represented.
+Select a tile to see the list of order lines counted by that tile.
 
-## Performance and Risk sections
+## The Performance and Risk tabs
 
-In these sections you will find in-depth [analytics reports](supply-risk-assessment-reports.md) of your vendor and supply performance and calculated risks for your planned supply orders.
+The **Performance** and **Risk** tabs provide in-depth [analytics reports](supply-risk-assessment-reports.md) of your vendor and supply performance and the calculated risks for your planned supply orders. <!-- KFM: These are both blank for me. Why is that? Am I missing some setup?  -->
 
-<!--Next steps - Required. Provide at least one next step and no more than three. Include some context so the customer can determine why they would click the link.-->
+In addition to the embedded performance and risk reports, you can also open the Power BI report in a combined full page experience. <!-- KFM: Describe how.  -->
+
+<!-- KFM: Maybe add some screenshots here. We have them everywhere else.  -->
+
 ## Next steps
 
 Explore how the purchase order fulfillment history from the perspective of products or vendors can be used to calculate future risk for your supply.
 
-Aside to the embedded performance and risk reports you can also open the Power BI report in a combined full page experience. 
 
 > [!NOTE]
-> The combined performance-risk reports filters the performance reports to items that are also planned.
+> The combined performance-risk reports filter the performance reports to items that are also planned. <!-- KFM: I don't understand this. Please clarify.  -->
+

@@ -17,6 +17,8 @@ ms.custom: bap-template
 
 Supply risk assessment for Dynamics 365 Supply Chain Management lets you identify supply risks to prevent supply chain disruptions.
 
+<!-- KFM: This topic is pretty short now. Consider fleshing out this overview with some business scenarios and business values (maybe taken from your existing PPTs or release plan article). Start with these before mentioning the workspace mechanics. Maybe also add a diagram and/or an intriguing screenshot (like your favorite Power BI report as an example.)  -->
+
 The [Supply risk assessment workspace](supply-risk-assessment-workspace.md) helps supply managers understand the risk of encountering sourcing shortages and delays. It enables businesses to take proactive actions to balance cost and resilience when optimizing their supply chains.
 
 The workspace is composed of actionable items lists and embedded Power Bi reports, shows metric like On-Time In-Full (OTIF) ratings for vendor and product ranking. And it represents the past performance as a risk for future supply. Using planned purchase orders, risks can be quantified in quantity and amount at risk if the same performance and trend continues into the future.
@@ -25,5 +27,6 @@ To mitigate discovered risks you can take different approaches, such as diversif
 
 ## Next steps
 
-- Turn on and set up the feature as described in [Supply Risk Assessment configuration](supply-risk-assessment-configuration.md)
+- Turn on and set up the feature as described in [Configure supply risk assessment](supply-risk-assessment-configuration.md)
 - Go to the **Supply risk assessment** workspace to start your discovery of products and vendors with low ratings in the past and access the Power BI reports for performance and supply risk analysis, as described in [Actionable workspace to discover and handle supplier risks](supply-risk-assessment-workspace.md)
+- Go to the [embedded reports](supply-risk-assessment-reports.md) for detailed performance and risk analysis.

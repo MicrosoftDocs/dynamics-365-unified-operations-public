@@ -2251,7 +2251,7 @@
         items:
         - name: Supply risk assessment overview
           href: procurement/supply-risk-assessment-overview.md
-        - name: Supply risk assessment configuration
+        - name: Configure supply risk assessment
           href: procurement/supply-risk-assessment-configuration.md
         - name: Actionable workspace to discover and handle supplier risks
           href: procurement/supply-risk-assessment-workspace.md
