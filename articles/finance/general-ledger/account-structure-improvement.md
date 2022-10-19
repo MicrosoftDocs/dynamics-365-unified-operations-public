@@ -41,7 +41,7 @@ After you select **View activation status**, a dialog box opens that contains th
  
 ## Account structure activation tips 
 
-The account structure activation dialog box that appears when you select **Activate** for a draft account structure has a tab section called **Update unposted transactions**. This section has an option to select titled **Force update**. USe this option to update all unposted transactions to the current structure. This option should only be selected when a prior error has happened or you have been directed by Microsoft support to do so. 
+The account structure activation dialog box that appears when you select **Activate** for a draft account structure has a tab section called **Update unposted transactions**. This section has an option to select titled **Force update**. Use this option to update all unposted transactions to the current structure. This option should only be selected when a prior error has happened or you have been directed by Microsoft support to do so. 
 
 Some factors that can impact the performance of the activation process are: 
  
