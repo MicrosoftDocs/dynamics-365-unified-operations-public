@@ -165,7 +165,7 @@ For example, you want to allocate a quantity of 10 for product *Bike*, site *1*,
     "id": "test101",
     "productId": "Bike",
     "groups": {
-        "channel": "Online",
+        "channel": "Web",
         "customerGroup": "VIP",
         "region": "US"
     },
@@ -221,12 +221,12 @@ For example, you can move two bikes that have the dimensions \[site=1, location=
     "id": "test102",
     "productId": "Bike",
     "sourceGroups": {
-        "channel": "Online",
+        "channel": "Web",
         "customerGroup": "VIP",
         "region": "US"
     },
     "groups": {
-        "channel": "Online",
+        "channel": "Web",
         "customerGroup": "VIP",
         "region": "EU"
     },
@@ -288,7 +288,7 @@ Now, three bikes are sold, and they're taken from the allocation pool. To regist
         "colorId": "red"
     },
     "groups": {
-        "channel": "Online",
+        "channel": "Web",
         "customerGroup": "VIP",
         "region": "US"
     },
@@ -334,7 +334,7 @@ When you want to consume a quantity of 3 and directly reserve this quantity, you
         "colorId": "red"
     },
     "groups": {
-        "channel": "Online",
+        "channel": "Web",
         "customerGroup": "VIP",
         "region": "US"
     },
@@ -382,7 +382,7 @@ For example, use \[site=1, location=11, color=red\] and empty groups field to ge
         "colorId": "red"
     },
     "groups": {
-        "channel": "Online",
+        "channel": "Web",
         "customerGroup": "VIP",
         "region": "US"
     },
@@ -401,7 +401,7 @@ Use \[site=1, location=11, color=red\] and groups \[channel=Online, customerGrou
         "colorId": "red"
     },
     "groups": {
-        "channel": "Online",
+        "channel": "Web",
         "customerGroup": "VIP",
         "region": "US"
     },
