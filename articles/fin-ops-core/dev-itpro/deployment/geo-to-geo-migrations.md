@@ -1,7 +1,7 @@
 ---
 title: Geo to geo migrations
 description: This article describes hot to move your environment from one geography to another.
-author: matgupta
+author: matapg007
 ms.author: matgupta
 ms.reviewer: johnmichalak
 ms.service: dynamics-365-finance
