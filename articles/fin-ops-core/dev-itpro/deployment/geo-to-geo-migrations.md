@@ -21,7 +21,7 @@ When your tenant resides in a Microsoft 365 environment in a single tenant, movi
 - Support for geo migration is limited, and generally isn't available everywhere.
 - Create your support request for migration at least 10 days in advance of when you would like the environment to migrate.
 - Geo migrations aren't supported into or out of a sovereign cloud environment. For example, US GCC and China.
-- Decide the source and target geographies based on availability of products in [local geographies](../dev-itpro/deployment/deployment-options-geo.md).
+- Decide the source and target geographies based on availability of products in [local geographies](deployment-options-geo.md).
 - Review the availability of features in the target geography.
   - Microsoft strives to maintain functional parity between our commercially available services across geographies. We continue to evaluate these services and capabilities for inclusion and updates in future releases. Use the documents below to get an overview of services and their availability in the geographies you're planning to use.
     - [Microsoft Business Application Feature Availability - Americas](https://aka.ms/bapfunctionalparityamericas)
@@ -30,7 +30,7 @@ When your tenant resides in a Microsoft 365 environment in a single tenant, movi
 - During this preview, migration is supported only within US, EU, Norway, and UAE. Other local geographies will be made available in other areas after the geo migration feature is made publicly available.
 - Microservices (add-ins) aren't covered by the migration process. You'll need to uninstall the add-ins prior to migration, and then reinstall them post migration.
 - If your environment that is being migrated has power platform integration enabled, then corresponding Dataverse organization will be migrated at the same time. If you don't want to migrate the Dataverse Organization, then explicitly mention that in the support request.
-- To request a geo migration, contact your account manager and open a support ticket with the Microsoft team [Technical Support](../dev-itpro/lifecycle-services/lcs-support.md).
+- To request a geo migration, contact your account manager and open a support ticket with the Microsoft team [Technical Support](../lifecycle-services/lcs-support.md).
   - Provide the following details: Tenant ID, Environment ID, Source Geo, Target Geo, Preferred Date and time in support ticket
   - Technical support will notify you about migration updates
 
