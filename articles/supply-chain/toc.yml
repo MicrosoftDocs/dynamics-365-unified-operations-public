@@ -2247,6 +2247,16 @@
           href: procurement/tasks/create-purchasing-policies.md
         - name: Set up policies for procurement category hierarchies
           href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+      - name: Supply Risk Assessment
+        items:
+        - name: Supply Risk Assessment overview
+          href: procurement/supply-risk-assessment-overview.md
+        - name: Supply Risk Assessment configuration
+          href: procurement/supply-risk-assessment-configuration.md
+        - name: Actionable workspace to discover and handle supplier risks
+          href: procurement/supply-risk-assessment-workspace.md
+        - name: Power BI reports for risks analysis and performance ranking
+          href: procurement/supply-risk-assessment-reports.md
       - name: Product receipts and invoicing
         items:
         - name: Product receipt against purchase orders
