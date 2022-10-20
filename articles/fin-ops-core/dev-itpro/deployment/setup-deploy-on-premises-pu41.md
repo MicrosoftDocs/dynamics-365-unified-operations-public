@@ -491,6 +491,8 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 1. Install SQL Server with high availability, unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. (Nevertheless, you might want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
 
     > [!IMPORTANT]
+    > Avoid using named instances. If you use named instances, you may run into issues as the documentation and scripts assume that default instances are used.
+    >
     > You must enable the [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode).
 
     You can install SQL Server with high availability either as SQL clusters that include a Storage Area Network (SAN) or in an Always-On configuration. Verify that the Database Engine, SSRS, Full-Text Search, and SQL Server Management Tools are already installed.
