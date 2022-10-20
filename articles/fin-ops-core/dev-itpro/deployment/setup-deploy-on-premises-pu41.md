@@ -559,6 +559,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
     > [!IMPORTANT]
     > - You must install the Database Engine when you install SSRS.
     > - Do **not** configure the SSRS instance. The reporting service will automatically configure everything.
+    > - Do **not** use named instances when setting up the database engine or the SSRS service.
     > - Environments that were deployed with a base topology older than Platform update 41, do not need to go through the following steps. In those environments, SSRS should be configured manually according to [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md).
 
 1. For each BI node, follow these steps:
