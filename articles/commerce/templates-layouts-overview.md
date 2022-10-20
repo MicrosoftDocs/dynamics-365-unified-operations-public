@@ -61,7 +61,7 @@ The template in this example defines a simple structure and set of options for d
 
 An important initial step for site and brand admins is to determine the correct balance between constraint and flexibility for child layout and page authors. When templates are used, this balance is completely configurable. It affects whether page elements are centrally updated (locked in the template) or left to individual child levels that are lower in the page hierarchy.
 
-### Template defaults vs. localizable page content
+### Relationship between template defaults <-> page content
 
 A template's primary function is to streamline the set of module options and defaults that are available to authors at the time of page creation. While module defaults can be set (and even locked) within a template, there is no data connection from a page's module configurations -> template, _except_ while editing the page. Templates control the authoring experience for page structure, and are not inteded to define the localizable content within child pages.  
 
