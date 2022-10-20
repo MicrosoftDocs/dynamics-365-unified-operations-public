@@ -3433,8 +3433,14 @@
             href: warehousing/pack-materials-packing-material-fees.md
           - name: Pack containers for shipment
             href: warehousing/packing-containers.md
+          - name: Print container labels
+            href: warehousing/print-container-labels.md
           - name: Packing work for packing outbound containers and processing shipments
             href: warehousing/packing-work.md
+          - name: Packing containers with the Warehouse Management mobile app
+            href: warehousing/warehouse-app-packing-containers.md
+          - name: Example scenario – Pack containers with the Warehouse Management mobile app
+            href: warehousing/warehouse-app-pack-containers-scenario.md
           - name: Set up short picking item reallocation
             href: warehousing/tasks/set-up-short-picking-item-reallocation.md
           - name: System-directed work sequencing
@@ -3691,7 +3697,7 @@
             href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
           - name: System grouping on an open work list
             href: warehousing/system-group-on-open-work-list.md
-          - name: Document routing layout for license plate labels
+          - name: Document routing label layouts
             href: warehousing/document-routing-layout-for-license-plates.md
           - name: GS1 bar codes and QR codes
             href: warehousing/gs1-barcodes.md
