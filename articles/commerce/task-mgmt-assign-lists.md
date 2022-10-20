@@ -25,7 +25,7 @@ Task management in Dynamics 365 Commerce lets you assign a task list to multiple
 
 ## Start the task list assignment process
 
-To start the process of assigning a task list, follow these steps.
+Before start, make sure you have created a task list following steps in [Create task lists and add tasks](task-mgmt-create-lists.md). To start the process of assigning a task list, follow these steps.
 
 1. Go to **Retail and Commerce \> Task management \> Task management administration**.
 1. Select the task list to assign.
