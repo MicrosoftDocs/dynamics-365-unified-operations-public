@@ -61,10 +61,11 @@ The template in this example defines a simple structure and set of options for d
 
 An important initial step for site and brand admins is to determine the correct balance between constraint and flexibility for child layout and page authors. When templates are used, this balance is completely configurable. It affects whether page elements are centrally updated (locked in the template) or left to individual child levels that are lower in the page hierarchy.
 
+### Template defaults vs. localizable page content
 > [!NOTE]
-> A template's primary function is to streamline the set of module options and defaults that are available to authors at the time of page creation. While module defaults can be set (and even locked) within a template, there is no data connection from page -> template, except while editing the page. Templates control the authoring experience for page structure, and are not inteded to define localizable content within child pages.  
-> 
-> The _exception_ to this behavior is when a [fragment](work-with-fragments.md) is added to a template.  Fragments can be used to dynamically add or edit content across all child pages of a template (or a layout) at anytime, even after a page has been created from a given template.  It is best practice to use fragments within templates and layouts whenever localizable content should be centrally editable and exactly the same accross all child pages (for example: headers, footers, common metadata/scripts, or any other content that should be centrally editable and the same accross all child pages).
+> A template's primary function is to streamline the set of module options and defaults that are available to authors at the time of page creation. While module defaults can be set (and even locked) within a template, there is no data connection from a page's module configurations -> template, _except_ while editing the page. Templates control the authoring experience for page structure, and are not inteded to define the localizable content within child pages.  
+
+_An important exception_ to this behavior is when a [fragment](work-with-fragments.md) is added to a template.  Fragments can be used to dynamically add or edit content across all child pages of a template (or a layout) at anytime, even after a page has been created from a given template.  It is best practice to use fragments within templates and layouts whenever localizable content should be centrally editable and exactly the same accross all child pages (for example: headers, footers, common metadata/scripts, or any other content that should be centrally editable and the same accross all child pages).
 
 To start to use templates, [Work with templates](work-with-templates.md).
 
