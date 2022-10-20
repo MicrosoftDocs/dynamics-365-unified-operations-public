@@ -4,7 +4,7 @@
 title: Employee and Manager self service overview
 description: This article provides an overview of the Employee and Manager self service workspace.
 author: twheeloc
-ms.date: 08/26/2021
+ms.date: 09/12/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
