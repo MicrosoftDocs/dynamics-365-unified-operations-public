@@ -4,7 +4,7 @@
 title: Limit payment token usage
 description: This article describes the feature that limits how payment tokens are used in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/17/2022
+ms.date: 10/20/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -82,11 +82,11 @@ Token restriction scoping affects the following areas in Commerce headquarters w
 Payment tokens that were created before the **Restrict Payment Token usage to Order context** feature flag was enabled (or while the feature was disabled) will remain "unscoped" in the system and can be referenced in selection lists on the Commerce headquarters payment page. These tokens can be removed on a regular basis in two ways in Commerce headquarters:
 
 - Use the **Archive credit card transaction data** page to set up a job that regularly purges or archives the payment tokens. If you set the **Delete data without archiving** option to **Yes**, the tokens that meet the **Minimum transaction age (in days)** setting will be deleted. For more information, see [Archive credit card transaction data](archive-cc-data.md).
-- Use the new **Purge credit card tokens** page (**Account receivable \> Inquiries and reports \> Clean up \> Purge credit card tokens**), which lets you run or set up a batch job that deletes payment tokens. Set the following parameters:
+- Use the new **Purge credit card tokens** page (**Accounts receivable \> Inquiries and reports \> Clean up \> Purge credit card tokens**), which lets you run or set up a batch job that deletes payment tokens. Set the following parameters:
 
     - The **Minimum token age in days** value must be 90 days or more.
     - The **Run in the background** settings can be used to define **Recurrence** or **Alerts** settings.
-    - A batch group can be assigned to run the task with a specific group as created.
+    - A batch group can be assigned to run the task for a specific group.
     - If the **Private** option is set to **Yes**, only the user who creates the job can run it.
     - A setting of **Yes** for the **Critical Job** option ensures that the system actively tracks the job's status.
 
