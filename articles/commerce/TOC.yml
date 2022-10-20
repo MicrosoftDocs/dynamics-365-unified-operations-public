@@ -568,7 +568,7 @@
             href: call-center-refund-payments.md
           - name: Credit card setup, authorization, and capture
             href: ../finance/accounts-receivable/credit-card-authorizations.md?context=/dynamics365/context/commerce
-            name: Limit payment token usage
+          - name: Limit payment token usage
             href: dev-itpro/limit-token-usage.md
           - name: Configure cash denominations for the POS
             href: cash-denominations.md
