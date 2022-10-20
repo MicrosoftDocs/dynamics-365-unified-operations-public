@@ -30,7 +30,7 @@ Both managers and workers can create task lists in Commerce back office, and the
 
 ## Create a task list
 
-To create a task list, follow these steps.
+Before start, make sure you have completed the configurations in [Configure task management](task-mgmt-configure.md). To create a task list, follow these steps.
 
 1. Go to **Retail and Commerce \> Task management \> Task management administration**.
 1. Select **New**, and then enter values in the **Name**, **Description**, and **Owner** fields.
