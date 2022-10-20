@@ -160,6 +160,10 @@ It's very important that e-commerce site pages be performance tested before they
 
 The **frame-ancestors** directive can be used to restrict the loading of your e-commerce site inside external website HTML iframe elements. For more information on how to configure this feature in Commerce site builder, see [Manage Content Security Policy](../manage-csp.md).
 
+## Optimize data action API calls to Retail APIs by specifying Top(N) pagination parameters
+
+Modules that use Retail data actions to return search, list, or other paginated results should ensure that the **Top(N)** parameter is optimized for web performance.  Native library modules that call these data actions (example: **Search Result Container** used for list pages) have an authoring control to set the **Items per page** property.  This is passed to the module's Retail API data actions as the **Top(N)** parameter.  If an author does not set this parameter for the module, then the data action will fall back to the **Default page size** app setting authored within **Site Builder > [your website] > Site settings > Extensions > General**.  If this is also not configured, then the fallback will be the default for the Retail API.  The default **Top(N)** parameter for most paginated retail APIs is 1,000, which can cause performance issues for many web scenarios.  For this reason, it is best practice to ensure that the **Default page size** setting is configured appropriately for the needs of the site.
+
 ## Additional resources
 
 [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
