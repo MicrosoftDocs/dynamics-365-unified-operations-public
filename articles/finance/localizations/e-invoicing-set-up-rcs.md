@@ -59,7 +59,7 @@ A tile for the **Globalization features** workspace should now  appear on the ma
     | France                     | <p>`https://gw.fr-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
     | India                      | <p>`https://gw.in-il101.gateway.prod.island.powerapps.com/electronicinvoicing/`</p> |
 
-3. Verify that the **Application ID** field is set to **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. This value is a fixed value. Make sure that only a globally unique identifier (GUID) is entered, and that the value doesn't include any other symbols, such as spaces, commas, periods, or quotation marks.
+3. Verify that the **Application ID** field contains the fixed value **0cdb527f-a8d1-4bf8-9436-b352c68682b2**. Make sure that only a globally unique identifier (GUID) is entered, and that the value doesn't include any other symbols, such as spaces, commas, periods, or quotation marks.
 4. In the **LCS Environment ID** field, enter the ID of your Microsoft Dynamics Lifecycle Services (LCS) environment. This value is the reference to the Finance or Supply Chain Management environment that you will use with the Electronic Invoicing service. To get your ID, sign in to [LCS](https://lcs.dynamics.com/), open your project, and then, on the **Manage environment** tab, in the **Environment details** section, look in the **Environment Id** field.
 
     > [!IMPORTANT]
