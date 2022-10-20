@@ -66,7 +66,7 @@ Workers can trigger the *Container closing* process directly, by using a Warehou
 
 ## Supported and unsupported processes
 
-The following table shows which processes are and aren't supported when the container packing process in the Warehouse Management mobile app is used instead of the **Pack** page in the Supply Chain management web client.
+The following table shows which processes are and aren't supported when the container packing process in the Warehouse Management mobile app is used instead of the **Pack** page in the Supply Chain management web client. Some rows use parentheses in the *Supported in the mobile app* column; these indicate either a partial-yes or partial-no status, which is clarified in the *Notes* column.
 
 | Logic | Supported in the mobile app | Notes |
 |---|---|---|
@@ -107,5 +107,6 @@ The following table shows which processes are and aren't supported when the cont
 ## Next steps
 
 - Work through an example that shows how to set up and use this feature. See [Example scenario – Pack containers with the Warehouse Management mobile app](warehouse-app-pack-containers-scenario.md).
+- Learn how to set up container labels and print them from the mobile app. See [Print container labels](print-container-labels.md).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
