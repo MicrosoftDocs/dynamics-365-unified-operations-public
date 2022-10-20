@@ -29,8 +29,6 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include [banner](../includes/banner.md)]
 
-[!include [banner](../includes/preview-banner.md)]
-
 This article describes how to use the functionality on the **Documents pending accounting** page.
 
 In Microsoft Dynamics 365 Finance 10.0.30, the **Enhanced performance for source document accounting framework** feature is available. This feature improves the posting processes for source document–enabled document postings, starting with the posting process for free text invoices.
