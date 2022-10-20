@@ -164,7 +164,13 @@ The **frame-ancestors** directive can be used to restrict the loading of your e-
 
 Modules that use Retail data actions to return search, list, or other paginated results should ensure that the **Top(N)** parameter is optimized for web performance.  Native library modules that call these data actions (example: the **Search Result Container** module used for list pages) have an authoring control to set the **Items per page** property.  This is passed to the module's Retail API data actions as the **Top(N)** parameter.  If a Site Builder author does not set this parameter for the module, then the data action will fall back to the **Default page size** app setting authored within **Site Builder > [your website] > Site settings > Extensions > General**.  If this is also not configured, then the fallback will be the default value set by the Retail API iteself.  The default **Top(N)** parameter for most paginated retail APIs is 1,000, which can cause performance issues for many web scenarios.  For this reason, it is best practice to ensure that the **Default page size** setting is configured appropriately for the performance and UX needs of the site.
 
+Site Builder **Default page size** setting:
+
 ![Default 'top(n)' parameter setting.](media/top-n-results-default.png)
+
+Data action example - Top(N) paging parameter for Retail APIs:
+
+![Data action Top(N) pagination parameter example .](media/top-n-pagination-data-action-example.png)
 
 ## Additional resources
 
