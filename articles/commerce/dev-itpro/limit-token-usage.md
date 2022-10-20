@@ -9,7 +9,6 @@ ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2022-09-20
 
