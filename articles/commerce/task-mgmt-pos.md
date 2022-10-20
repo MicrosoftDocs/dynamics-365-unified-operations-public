@@ -31,6 +31,7 @@ Store managers can perform the following task operations in the POS application 
 - **Task status** – Change the status of selected tasks.
 - **Filter** – By default, only active tasks are shown. However, by applying filters, managers can view all tasks, even tasks that have been completed or canceled.
 - **New task** – Create a task under an existing task list, or create an single-purpose task.
+- **Edit task** – Edit a task details.
 
 Store workers can perform the following task operations in the POS application by using the buttons on the command bar:
 
