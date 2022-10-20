@@ -1,5 +1,5 @@
 ---
-title: Geo to geo migrations
+title: Geo-to-geo migrations
 description: This article describes hot to move your environment from one geography to another.
 author: matapg007
 ms.author: matgupta
@@ -10,52 +10,54 @@ ms.date: 10/19/2022
 ms.custom:
 ---
 
-# Geo to geo migrations
+# Geo-to-geo migrations
 
-Microsoft continues to open datacenters for business service in both existing and new regions. The Geo migration feature lets you move your environments in a single tenant from geography (or geo) to another geography. No user-interface or version changes occur part of this move.
+Microsoft continues to open datacenters for business service in both existing regions and new regions. The Geo migration feature lets you move your environments that are in a single tenant from one geography (or geo) to another. No changes to the user interface or version occur as part of the move.
 
-When your tenant resides in a Microsoft 365 environment in a single tenant, moving the environment doesn't move the Microsoft 365 environment; they're separate services. Your environment will still appear in your tenant alongside the Microsoft 365 environment.
+If your tenant resides in a Microsoft 365 environment in a single tenant, when you move your environment, the Microsoft 365 environment isn't moved. Your environment and the Microsoft 365 environment are separate services. Your environment will still appear alongside the Microsoft 365 environment in your tenant.
 
 ## Important information
 
-- Support for geo migration is limited, and generally isn't available everywhere.
-- Create your support request for migration at least 10 days in advance of when you would like the environment to migrate.
-- Geo migrations aren't supported into or out of a sovereign cloud environment. For example, US GCC and China.
-- Decide the source and target geographies based on availability of products in [local geographies](deployment-options-geo.md).
+- Support for geo-to-geo migration is limited and isn't generally available everywhere.
+- Create your support request for migration at least 10 days before you want the environment to be migrated.
+- Geo-to-geo migrations into or out of a sovereign cloud environment (for example, US Government Community Cloud \[GCC\] and China) aren't supported.
+- Decide on the source and target geographies, based on the availability of products in [local geographies](deployment-options-geo.md).
 - Review the availability of features in the target geography.
-  - Microsoft strives to maintain functional parity between our commercially available services across geographies. We continue to evaluate these services and capabilities for inclusion and updates in future releases. Use the documents below to get an overview of services and their availability in the geographies you're planning to use.
+
+    Microsoft strives to maintain functional parity between our commercially available services across geographies. We continue to evaluate these services and capabilities for inclusion and updates in future releases. Use the following documents to get an overview of services and their availability in the geographies that you're planning to use:
+
     - [Microsoft Business Application Feature Availability - Americas](https://aka.ms/bapfunctionalparityamericas)
     - [Microsoft Business Application Feature Availability - EMEA](https://aka.ms/bapfunctionalparityemea)
     - [Microsoft Business Application Feature Availability - APAC](https://aka.ms/bapfunctionalparityapac)
-- During this preview, migration is supported only within US, EU, Norway, and UAE. Other local geographies will be made available in other areas after the geo migration feature is made publicly available.
-- Microservices (add-ins) aren't covered by the migration process. You'll need to uninstall the add-ins prior to migration, and then reinstall them post migration.
-- If your environment that is being migrated has power platform integration enabled, then corresponding Dataverse organization will be migrated at the same time. If you don't want to migrate the Dataverse Organization, then explicitly mention that in the support request.
-- To request a geo migration, contact your account manager and open a support ticket with the Microsoft team [Technical Support](../lifecycle-services/lcs-support.md).
-  - Provide the following details: Tenant ID, Environment ID, Source Geo, Target Geo, Preferred Date and time in support ticket
-  - Technical support will notify you about migration updates
+
+- During this preview, migration is supported only within the United States, the European Union (EU), Norway, and the United Arab Emirates (UAE). Other local geographies will be made available in other areas after the Geo migration feature becomes publicly available.
+- Microservices (add-ins) aren't covered by the migration process. You will have to uninstall the add-ins before the migration and then reinstall them afterward.
+- If Microsoft Power Platform integration is enabled for the environment that is being migrated, the corresponding Dataverse organization will be migrated at the same time. If you don't want to migrate the Dataverse organization, explicitly mention this fact in your support request.
+- To request a geo-to-geo migration, contact your account manager, and open a support ticket with the Microsoft [Technical Support](../lifecycle-services/lcs-support.md) team.
+
+    - In the support ticket, provide the following details: tenant ID, environment ID, source geography, target geography, and preferred date and time.
+    - Technical Support will notify you about migration updates.
 
 ## Supported environments
 
 - Sandbox environments
-- Production environments – It's suggested to migrate Sandbox first and validate before triggering Production migration.
+- Production environments
+
+We recommend that you migrate sandbox environments first and validate them before you trigger a production migration.
 
 ## Migration process
 
-The geo migration process consists of three phases:
+The geo-to-geo migration process consists of three phases:
 
-1. Premigration:
-   - The environment is available for end-user use but is put into an Infrastructure Maintenance state so no Lifecycle management operations can be performed.
-1. Migration:
-   - The environment requires downtime of up to 48 hours and isn't available for use during this time.
-   - The resources move to the new geography.
-1. Postmigration:
-   - The environment is available for use, and after confirmation you're your customers the environment is working as expected, cleanup operations are performed.
+1. **Premigration** – The environment remains available for use but is put into an Infrastructure Maintenance state so that no lifecycle management operations can be performed.
+1. **Migration** – The resources are moved to the new geography. The environment requires downtime of up to 48 hours and isn't available for use during this time.
+1. **Post-migration** – The environment is available for use, and after your customers confirm that the environment is working as expected, cleanup operations are performed.
 
 ## How the move works
 
-You'll be provided with a list of prerequisites and post-requisites for your migration. The following table describes Customer and Microsoft responsibilities does before, during, and after migration process.
+A list of prerequisites and post-requisites for your migration will be provided to you. The following table describes customer and Microsoft responsibilities before, during, and after the migration.
 
-| Responsible party | Before the migration | During the move | After the migration |
-| --- | --- | --- | --- |
-| Customer | - Submit a geo to geo migration support request. <br> - After the request is approved, uninstall any microservices or add-ins. |   | - Reinstall any microservices or add-ins <br> - May choose to migrate retail components. |
-| Microsoft | - Reviews the geo to geo migration request. <br> - Approves the geo to geo migration request. <br> - Premigration work begins 12 hours prior to scheduled downtime. | - Unlinks Microsoft Dynamics 365 Finance and Microsoft Dataverse environments. <br> - Performs migration of the Dynamics 365 Finance environment. <br> - Performs migration of the Dataverse environment. <br>- Relinks Dynamics 365 Finance and Dataverse environments.  | - Microsoft technical support will notify customers about migration updates.  |
+| Responsible party | Before the migration | During the migration | After the migration |
+|---|---|---|---|
+| Customer | <ul><li>Submit a support request for geo-to-geo migration.</li><li>After the request is approved, uninstall any microservices or add-ins.</li></ul> | | <ul><li>Reinstall any microservices or add-ins.</li><li>Optionally migrate retail components.</li></ul> |
+| Microsoft | <ul><li>Review the geo-to-geo migration request.</li><li>Approve the geo-to-geo migration request.</li><li>Premigration work begins 12 hours before the scheduled downtime.</li></ul> | <ul><li>Unlink Dynamics 365 Finance and Dataverse environments.</li><li>Perform the migration of the Finance environment.</li><li>Perform the migration of the Dataverse environment.</li><li>Relink the Finance and Dataverse environments.</li></ul> | <ul><li>Microsoft Technical Support will notify customers about migration updates.</li></ul> |
