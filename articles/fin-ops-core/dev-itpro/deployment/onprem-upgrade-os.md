@@ -84,6 +84,7 @@ If you're using a SQL Server database, follow the instructions in [Upgrading to 
 1. If your new farm/instance identifier differs from the old farm/instance identifier, you must update the user info table so that it reflects the new configuration. As of version 2.17.0 of the infrastructure scripts, you can run the following command from one of your AOS nodes to automatically update and regenerate the configuration of each user.
 
     ```powershell
+    Import-Module ".\D365FO-OP" -Force
     .\Reset-SID.ps1 -AxsfCodePath 'C:\ProgramData\SF\AOS_13\Fabric\work\Applications\AXSFType_App184\AXSF.Code.1.0.20190902'
     ```
 
