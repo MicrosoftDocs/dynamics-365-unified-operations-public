@@ -26,6 +26,21 @@ Because Planner is used as a repository for tasks in Teams, there must be a link
 
 The following procedures show how to set up task management synchronization between the POS and Teams applications.
 
+## Link POS and Teams for task management
+
+To link the POS and Microsoft Teams applications for task management in Commerce headquarters, follow these steps.
+
+> [!NOTE]
+> Before you try to integrate Task management with Microsoft Teams, make sure that you've enabled [Dynamics 365 Commerce and Microsoft Teams integration](enable-teams-integration.md). 
+
+1. Go to **Retail and Commerce \> Task management \> Tasks integration with Microsoft Teams**.
+1. On the Action Pane, select **Edit**.
+1. Set the **Enable Task Management Integration** option to **Yes**.
+1. On the Action Pane, select **Save**.
+1. On the Action Pane, select **Setup task management**. You should receive a notification that indicates that a batch job that is named **Teams provision** is being created.
+1. Go to **System administration \> Inquiries \> Batch jobs**, and find the most recent job that has the description **Teams provision**. Wait until this job has finished running.
+1. Run the **CDX job 1070** to publish the plan ID and store references to Retail Server.
+
 ## Publish a test task list in Teams
 
 The following procedure assumes that your store teams are using Microsoft Teams task management integration with Commerce for the first time.
@@ -45,20 +60,8 @@ To publish a test task list in Teams, follow these steps.
 
 For more information, see [Publish task lists to create and track work in your organization](https://support.microsoft.com/office/publish-task-lists-to-create-and-track-work-in-your-organization-095409b3-f5af-40aa-9f9e-339b54e705df).
 
-## Link POS and Teams for task management
-
-To link the POS and Microsoft Teams applications for task management in Commerce headquarters, follow these steps.
-
 > [!NOTE]
-> Before you try to integrate Task management with Microsoft Teams, make sure that you've enabled [Dynamics 365 Commerce and Microsoft Teams integration](enable-teams-integration.md). 
-
-1. Go to **Retail and Commerce \> Task management \> Tasks integration with Microsoft Teams**.
-1. On the Action Pane, select **Edit**.
-1. Set the **Enable Task Management Integration** option to **Yes**.
-1. On the Action Pane, select **Save**.
-1. On the Action Pane, select **Setup task management**. You should receive a notification that indicates that a batch job that is named **Teams provision** is being created.
-1. Go to **System administration \> Inquiries \> Batch jobs**, and find the most recent job that has the description **Teams provision**. Wait until this job has finished running.
-1. Run the **CDX job 1070** to publish the plan ID and store references to Retail Server.
+> After published successfully in Teams, POS managers and cashiers could start to see those tasks in POS and they need to turn on AAD login in POS, see [Enable Azure Active Directory authentication for POS sign-in](aad-pos-logon.md). 
 
 ## Additional resources
 
