@@ -2,7 +2,7 @@
 title: Dynamics 365 Commerce online SDK FAQ
 description: This article summarizes answers to questions frequently asked by users of the Dynamics 365 Commerce online software development kit (SDK).
 author: samjarawan
-ms.date: 04/21/2022
+ms.date: 10/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -54,6 +54,10 @@ The default memory setting should be sufficient for most customization scenarios
 ```JSON
 "build": "SET NODE_OPTIONS=--max_old_space_size=4096 && yarn msdyn365b build --use-eslint",
 ```
+
+### Can I clear a node app's cache?
+
+Yes. To clear a node app's cache in Commerce site builder, select **Site settings \> Extensions**, select the **Configuration** tab, and update the value of the **Cache key suffix** setting value to any random characters (for example, "xyz"). Updating the value will clear the node app's cache.
 
 ### During package upload, I receive this error message: "The e-commerce package has an outdated online SDK. Please create a new package and retry." Or, during package deployment, I receive this error message: "The e-commerce package cannot be deployed due to an outdated online SDK. Please create a new package and retry deployment." Why?
 
