@@ -79,7 +79,12 @@ To create and configure a custom CPOS app in Azure AD, follow these steps.
 1. In the **Overview** section, make a note of the value in the **Application (client) ID** field.
 
 > [!NOTE]
-> If you are upgrading your existing CPOS AAD app created before 10.0.21, when changing redirect URI type to SPA, you need to delete previous redirect URI in WEB type first. You also need to do step 7 to add optional claims. 
+> If you are upgrading your existing CPOS AAD app created before 10.0.21, follow these steps. 
+> - Open your custom CPOS AAD app in azure portal, open **Authentication** tab.
+> - Delete the original redirect URI from **Web** type.
+> - Click **Add a platform** button and select **Single-page application (SPA)**.
+> - Add the original Web redirect URI in SPA platform.
+> - Do above step 7 to add optional claims.
 
 ## Update the CPOS configuration file
 
