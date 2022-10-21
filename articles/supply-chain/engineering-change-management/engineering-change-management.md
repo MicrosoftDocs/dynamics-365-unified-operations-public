@@ -146,6 +146,8 @@ As you're reviewing production order notifications on the **Engineering notifica
 
 An engineer who is reviewing an engineering change request can create an engineering change order directly from the **Engineering change requests** page. On the Action Pane, on the **Change request** tab, in the **Engineering change order** group, select **Copy link and products**.
 
+Note that the right company must be selected for making the engineering change order. This means that if there is a needed change order for the product resulting in the engineering product itself being changed (new version, new product, new variant), then the change order must be done in the engineering company. If a local change is needed, then the change order can be done in a local company, and then changes apply to the current product (Impact is selected to None). 
+
 ## Engineering change orders
 
 Engineering change orders provide a structured process for making changes to engineering products. You propose changes by using a copy of the engineering-relevant data. The real master data isn't affected. For more information about engineering-relevant data, see [Engineering versions and engineering product categories](engineering-versions-product-category.md).
