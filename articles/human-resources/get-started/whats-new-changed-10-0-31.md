@@ -39,12 +39,13 @@ available on the following schedule:
 - **General availability of release (auto-update):** February 2023
 
 ## Features included in this release
+
 The following table lists the features that are included in this release. We might update this article to include features that made it into the build after this 
 article was initially published.
 
 | Feature name | Overview | Release status |
 |----|----|----|
-|Course enhancements |<p>The course enhancements feature enables the following:</p><ul><li>Ability to designate courses as virtual and define course link</li><li>Ability to define a due date for course assignment</li><li>**Employes self service** now shows employees an overview within Courses/Learning to see overdue, due soon, and assigned courses</li><li>Employees can complete virtual courses and self-attest to those virtual courses</li></ul><p> |Preview|
+| Course enhancements | <p>The Course enhancements feature enables the following capabilities:</p><ul><li>Courses can be designated as virtual, and course links can be defined.</li><li>A due date can be defined for course assignments.</li><li>**Employee self service** now shows employees an overview within Courses/Learning, so that they can view courses that are overdue, due soon, and assigned.</li><li>Employees can complete virtual courses and self-attest to them.</li></ul><p> | Preview |
 
 ## Feature enhancements included in this release
 
@@ -53,8 +54,7 @@ feature. Because they are only enhancements, they aren't listed in the [release 
 
 | Feature name | More information |
 |--------------|------------------|
-|Task management |Previously when making updates to a task, the user needed to go to each checklist that contained the task and update the tasks individually. Changes in the 10.0.30 release added the option to update checklist tasks when a library task is edited. For those edits to be applied to all associated checklist tasks, a relationship must already exist between the task in the task library and the task in the checklist. Prior to the 10.0.30 release a relationship was not created. An upgrade has been created to create the relationship between the library task and the checklist task.|
-
+| Task management | Previously, when updates were made to a task, the user had to go to each checklist that contained the task and update the tasks individually. Changes in the 10.0.30 release added the option to update checklist tasks when a library task is edited. For those edits to be applied to all associated checklist tasks, a relationship must already exist between the task in the task library and the task in the checklist. Before the 10.0.30 release, a relationship wasn't created. An upgrade has been created to create the relationship between the library task and the checklist task. |
 
 ## Additional resources
 
@@ -64,4 +64,4 @@ Dynamics 365 Human Resources 10.0.31 includes platform updates. To learn more, s
 
 ### Bug fixes
 
-For information about the bug fixes included in this update, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=758525).
+For information about the bug fixes included in this update, sign in to Microsoft Dynamics Lifecycle Services and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=758525).
