@@ -57,7 +57,7 @@ RCS is generally available in the following regions:
 For a complete list of regions, see [Dynamics 365 and Power Platform: Availability, data location, language, and localization](https://aka.ms/dynamics_365_international_availability_deck).
 
 > [!NOTE] 
-> RCS is not currently available for Government Community Cloud (GCC).
+> RCS isn't currently available for Government Community Cloud (GCC).
 
 ## RCS default company
 
