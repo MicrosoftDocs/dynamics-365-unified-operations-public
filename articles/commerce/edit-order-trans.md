@@ -2,7 +2,7 @@
 title: Edit and audit online order and asynchronous customer order transactions
 description: This article describes how to edit and audit online order and asynchronous customer order transactions in Microsoft Dynamics 365 Commerce.
 author: josaw1
-ms.date: 11/04/2020
+ms.date: 10/21/2022
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
@@ -32,7 +32,7 @@ To edit and audit order transactions in Commerce headquarters, follow these step
 
 1. Install the [Microsoft Dynamics Office Add-in](https://appsource.microsoft.com/product/office/WA104379629?tab=Overview).
 1. On the **Commerce parameters** page, on the **Customer orders** tab, on the **Order** FastTab, specify a hold code for **Hold code for order synchronization errors**.
-2. Please pause other order synchronization jobs if it is going to coflict with time of using Edit and Audit.
+2. Pause other order synchronization jobs that will conflict with the timing of your edit and audit.
 3. Open the **Store financials** workspace. The **Online order synchronization errors** and **Customer order synchronization errors** tiles provide a prefiltered view of the retail transaction page. Each shows the transaction records that have failed synchronization for the corresponding order type.
 4. Open either the **Online order synchronization errors** page or the **Customer order synchronization errors** page. Select a record to view the synchronization error details. The **Synchronization status** FastTab provides the following error details:
 
