@@ -4,7 +4,7 @@
 title: Configure CPOS to use a custom Azure AD app
 description: This article explains how to configure Cloud POS (CPOS) to use a custom Azure Active Directory (Azure AD) app.
 author: boycez
-ms.date: 08/02/2022
+ms.date: 10/21/2022
 ms.topic: article
 ms.prod:
 ms.technology: 
@@ -77,6 +77,9 @@ To create and configure a custom CPOS app in Azure AD, follow these steps.
 1. In the **API permissions** section, select **Add a permission**.
 1. On the **APIs my organization uses** tab, search for the Retail Server app that you created in the [Set up a custom Retail Server app in Azure AD](#set-up-a-custom-retail-server-app-in-azure-ad) section. Then select **Add permissions**.
 1. In the **Overview** section, make a note of the value in the **Application (client) ID** field.
+
+> [!NOTE]
+> If you are upgrading your existing CPOS AAD app created before 10.0.21, when changing redirect URI type to SPA, you need to delete previous redirect URI in WEB type first. You also need to do step 7 to add optional claims. 
 
 ## Update the CPOS configuration file
 
