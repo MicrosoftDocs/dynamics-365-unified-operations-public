@@ -56,6 +56,9 @@ RCS is generally available in the following regions:
 
 For a complete list of regions, see [Dynamics 365 and Power Platform: Availability, data location, language, and localization](https://aka.ms/dynamics_365_international_availability_deck).
 
+> [!NOTE] 
+> RCS isn't currently available for Government Community Cloud (GCC).
+
 ## RCS default company
 
 Design time functionality that is used in RCS is shared across all companies. There is no company-specific functionality. Therefore, we recommend that you use one company, **DAT**, with your RCS environment.
