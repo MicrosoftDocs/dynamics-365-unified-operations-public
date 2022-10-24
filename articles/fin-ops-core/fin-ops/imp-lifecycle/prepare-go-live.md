@@ -91,7 +91,7 @@ For most projects, the Go-live Readiness Review is done in the FastTrack for Dyn
 
 > [!Note]
 > There are only **two exceptions** that will not use the FastTrack for Dynamics 365 implementation portal:
-> - Projects that are in **[United States (US) Government Community Cloud (GCC)](../../dev-itpro/deployment/us-gcc-deployment.md)**. Please [download the Go-live checklist](https://aka.ms/d365fogolivechecklist), fill in all necessary details, and send it via email to <d365fogccglr@microsoft.com>. Always include a key stakeholder from the customer and the implementation partner on the email. Microsoft FastTrack will review the project and follow up.
+> - Projects that are in **[United States (US) Government Community Cloud (GCC)](../../dev-itpro/deployment/us-gcc-deployment.md)** and **[China Cloud operated by 21Vianet (21V)](../../dev-itpro/deployment/china-local-deployment.md)**. Please [download the Go-live checklist](https://aka.ms/d365fogolivechecklist), fill in all necessary details, and send it via email to <d365fogccglr@microsoft.com>. Always include a key stakeholder from the customer and the implementation partner on the email. Microsoft FastTrack will review the project and follow up.
 > - For projects that are already live, but planning to move the live solution to a new tenant if the solution is not changing, completing a new Go-live Readiness review is not necessary. Please follow the steps described in [Move your production environment to the new tenant](../get-started/move-lcs-implementation-project-tenant.md#move-your-production-environment-to-the-new-tenant) to get the production slot enabled on the new tenant.
 
 ### Initiate the Go-live Readiness Review in the Portal
