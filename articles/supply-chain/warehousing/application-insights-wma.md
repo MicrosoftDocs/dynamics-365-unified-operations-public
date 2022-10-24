@@ -13,7 +13,6 @@ ms.custom: bap-template
 # Monitor mobile device usage and performance
 
 [!include [banner](../includes/banner.md)]
-[!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
 The Warehouse Management mobile app emits telemetry data, which lets you monitor and analyze the activity and general health of your mobile devices. You can use the information to diagnose issues and analyze operations that affect performance. Telemetry data is collected and processed by using [Application Insights](/azure/azure-monitor/app/app-insights-overview), a Microsoft Azure service that is optimized for this purpose.
 
