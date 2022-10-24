@@ -103,7 +103,7 @@ During the automatic process the following actions are completed and you'll want
     -   Attachments
 
  - Data management – Bring your own database (BYOD)
- - Feature management: Enabled/disabled features
+ - Feature management - Enabled/disabled features
  - Embedded PowerApps
  - PPAC attached Environment (production only)
  - Batch Jobs 
