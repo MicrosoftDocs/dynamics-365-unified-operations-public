@@ -718,6 +718,8 @@
         href: hr-develop-create-performance-review.md
     - name: Learning
       items:
+      - name: Course overview
+        href: hr-course-overview.md
       - name: Set up training courses
         href: hr-learning-courses.md
       - name: Questionnaires overview
