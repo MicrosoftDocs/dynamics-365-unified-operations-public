@@ -60,6 +60,10 @@ As a simple example, follow these steps.
     | sort by timestamp desc
     ```
 
+## Review sample code, FAQs, and more in the Supply Chain Management telemetry GitHub repository
+
+For more examples of how to work with KQL, plus answers to frequently asked questions, and tips about using Supply Chain Management telemetry with Excel, Power Automate, Power BI, PowerShell, and more, see the [Supply Chain Management telemetry repository on GitHub](https://github.com/microsoft/d365-scm-telemetry).
+
 ## Set up alerts on telemetry events
 
 You can configure the system to send you an alert message if something occurs in your environment or app that requires immediate action. Application Insights makes it easy to define these alerts. For more information and instructions, see [What are Azure Monitor Alerts](/azure/azure-monitor/alerts/alerts-overview).
