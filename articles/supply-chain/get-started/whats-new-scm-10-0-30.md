@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.30 (November 2022)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.30 (November 2022)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.30. 
 author: kamaybac
 ms.date: 09/08/2022
@@ -51,7 +51,7 @@ Microsoft Dynamics 365 Supply Chain Management 10.0.30 includes platform updates
 
 ### Bug fixes
 
-For information about the bug fixes included in each of the updates that are part of version 10.0.29, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=745468).
+For information about the bug fixes included in each of the updates that are part of version 10.0.30, sign in to Lifecycle Services (LCS) and view the [KB article](https://fix.lcs.dynamics.com/Issue/Details?bugId=745468).
 
 ### Dynamics 365 and industry clouds: 2022 release wave 1 plan
 
