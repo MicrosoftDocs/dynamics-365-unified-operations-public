@@ -44,8 +44,8 @@ This article explains how to upgrade the Microsoft SQL Server instance or cluste
 
 All your SQL Server components across an environment must be on the same version. For example, if you're upgrading to SQL Server 2019, SQL Server Reporting Services (SSRS), SQL Server Integration Services (SSIS), and the database engines must all be on the same version.
 
-1. On your AOS nodes, upgrade the SSIS component. When you carry out this action, the Data Management Framework (DMF) will cease to work correctly as it will rely on the older version of SSIS. Once you service your environment, DMF will continue working as it will have been updated to use the new version of SSIS.
-1. On your Business Intelligence (BI) nodes, upgrade the SSRS and database engine components. When you upgrade this component, you will need to rerun the **Complete-Prereqs.ps1** script on the node so that the service permissions are reconfigured. When you upgrade the database engine component on your BI nodes from SQL Server 2016 to SQL Server 2019, the SSRS component will be removed. Once removed, use the SSRS 2019 installer to install the SSRS service.
+1. On your AOS nodes, upgrade the SSIS component. When you perform this action, the Data Management Framework (DMF) will cease to work correctly, because it will rely on the older version of SSIS. After you service your environment, DMF will continue to work, because it will have been updated to use the new version of SSIS.
+1. On your Business Intelligence (BI) nodes, upgrade the SSRS and database engine components. When you do this upgrade, you will have to rerun the **Complete-Prereqs.ps1** script on the node, so that the service permissions are reconfigured. When you upgrade the database engine component on your BI nodes from SQL Server 2016 to SQL Server 2019, the SSRS component will be removed. After it's removed, use the SSRS 2019 installer to install the SSRS service.
 
 > [!IMPORTANT]
 >  In SQL Server 2019, SSRS has its own installer.
@@ -84,7 +84,7 @@ All your SQL Server components across an environment must be on the same version
 ## Force the re-adding of the assemblies to the Global Assembly Cache
 
 > [!NOTE]
-> If your environment is on application version 10.0.31 or later you can skip this step as the SQL version change will be detected automatically.
+> If your environment is on application version 10.0.31 or later, you can skip this step, because the change in the SQL version will be detected automatically.
 
 Typically, when servicing an environment with a package deployment, the Service Fabric package version of the AXSFType changes. This will make the environment carry out additional deployment and servicing operations. When using the **Update Settings** action, the version does not change. As a result, the appropriate assemblies will not be present in the Global Assembly Cache. To force the re-adding of the assemblies to the Global Assembly Cache, complete the following steps:
 
@@ -94,9 +94,9 @@ Typically, when servicing an environment with a package deployment, the Service 
 4. Rename the existing .txt file to 1.0.txt.
 5. Repeat step 4 for each folder.
 
-## Force redeploying your reports to the SSRS node
+## Force the redeployment of your reports to the SSRS node
 
-If you are replacing your BI node with a new node or you deleted your database engine and reinstalled it you may need to have to force the deployment of your reports. In that case from your business database execute the following command before you trigger the **Update environment** action below.
+If you're replacing your BI node with a new node, or if you deleted your database engine and reinstalled it, you might have to force the deployment of your reports. In this case, run the following command from your business database before you trigger the **Update environment** action as described in the next section.
 
 ```SQL
 UPDATE SF.synclog SET STATE=5, SyncStepName = 'ReportSyncstarted' WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
