@@ -11,7 +11,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form:  [Operations AOT form name to tie this article to]
+ms.search.form: WHSShipPlanningListPage, WHSShipmentDetails
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
@@ -62,7 +62,7 @@ For more information about each of these elements and how their values are found
 To print a USMCA certification of origin document for a shipment, do the following:
 
 1. Do one of the following:
-    - Go to **Transportation management> Shipments > All shipments** and select the shipment you want to print the document for.
+    - Go to **Transportation management \> Planning \> Shipments \> All shipments** and select the shipment you want to print the document for.
     - Open the **Shipment details** page for the shipment you want to print the document for (there are several ways to get here, including from the **All shipments** page).
 1. On the Action Pane, open the **Shipments** tab and, from the **Print** group, select **USMCA certificate of origin**.
 1. The **Certificate or origin** dialog box opens. Make the settings described in the following subsections and then select **OK** to generate the document.
