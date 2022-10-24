@@ -3709,6 +3709,12 @@
           items:
           - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to finance and operations
             href: warehousing/upgrade-migration-warehouse-management-processes.md
+      - name: Warehousing telemetry 
+        items:
+        - name: Enable warehousing telemetry with Application Insights
+          href: warehousing/application-insights-warehousing.md
+        - name: Monitor mobile device usage and performance
+          href: warehousing/application-insights-wma.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide
