@@ -79,19 +79,22 @@ The following table describes the default user-based service protection API limi
 
 Each web server that is available to your environment will independently enforce the service protection API limits. Most environments will have more than one web server. However, only one web server is allocated to trial environments. The actual number of web servers that are available to your environment depends on multiple factors that are part of the managed finance and operations apps service. One of these factors is the number of user licenses that you've purchased. For information about how to use web resources that are available in your environment, see [Monitoring for API throttling](service-protection-monitoring.md).
 
-To track API usage for enforcing service protection API limits, each web server on the environment tracks a throttling key for API requests. The throttling key is a combination of:
-- **User**: The user making the API request 
-  - If the application authenticates with user authentication, this is the object ID of the Azure Active Directory user principal of the user making the API request.
-  - If the application authenticates with app authentication, this is the object ID of the application in Azure Active Directory.
-- **Application**: The client ID of the application from the app registration in Azure Active Directory.
+To track API usage to enforce service protection API limits, each web server in the environment tracks a throttling key for API requests. The throttling key is a combination of the following values:
 
-These values are taken from the access token used on the API request. For example, a company has an employee portal that is a web application that connects to finance and operations data using the OData API. Each employee signs into the web app using a company email address and password. In this scenario the user object ID and the application client ID used in the API request are used for tracking usage against the service protection API limits. Each user of the application has API usage tracked and throttled independently. For more information on the authentication flow for this scenario, see [Authentication](services-home-page.md#authentication).
+- **User** – The user who is making the API request.
 
-If the application uses app authentication rather than user authentication, in which case there is no user signing into the application, then the user in the throttling key is the object ID of the application in Azure Active Directory.
+    - If the application authenticates by using user authentication, this value is the object ID of the Azure Active Directory (Azure AD) user principal of the user who is making the API request.
+    - If the application authenticates by using app authentication, this value is the object ID of the application in Azure AD.
+
+- **Application** – The client ID of the application from the app registration in Azure AD.
+
+These values are taken from the access token that is used for the API request. For example, a company has an employee portal that is a web application that uses the OData API to connect to finance and operations data. Each employee signs in to the web app by using a company email address and password. In this scenario, the user object ID and the application client ID that are used in the API request are used to track usage against the service protection API limits. Each user of the application has API usage tracked and throttled independently. For more information about the authentication flow for this scenario, see [Authentication](services-home-page.md#authentication).
+
+If the application uses app authentication instead of user authentication, so that there is no user who signs in to the application, the user in the throttling key is the object ID of the application in Azure AD.
 
 ### Resource-based service protection API limits
 
-Whereas user-based service protection API limits are specified per user per web server, resource-based service protection API limits are enforced based on environment resource utilization thresholds. The resource limits will throttle service requests when the aggregate consumption of web server resources reaches levels that threaten service performance and availability. The thresholds are based on percentage utilization of resources such as memory and CPU on the environment web servers. If the utilization of the server resources exceed defined thresholds when the API request is made, then the request is throttled and will receive a "Too Many Requests" response.
+Whereas user-based service protection API limits are specified per user per web server, resource-based service protection API limits are enforced based on environment resource utilization thresholds. The resource limits will throttle service requests when the aggregate consumption of web server resources reaches levels that threaten service performance and availability. The thresholds are based on percentage utilization of resources such as memory and CPU on the environment web servers. If the utilization of the server resources exceeds defined thresholds when the API request is made, then the request is throttled and will receive a "Too Many Requests" response.
 
 Resource-based service protection API limits work together with user-based limits as protective settings that help prevent the over-utilization of resources. In this way, they help preserve the system's responsiveness and ensure consistent availability and performance for environments that run finance and operations apps.
 
@@ -165,7 +168,7 @@ The exemption for virtual tables applies only when the [Microsoft Power Platform
 
 Although these services are currently exempt from the limits, they prioritize implementation of the service protection limits. Notifications will be provided before any changes, and the documentation will be updated when exemptions are removed for these services.
 
-Services that do not use finance and operations OData or custom service API endpoints, like the [Inventory Visibility Add-in](../../../supply-chain/inventory/inventory-visibility.md), are not exempt from throttling because no exemption is needed. Service protection API limits are only applied for finance and operations OData and custom service API endpoints. Services that do not use these endpoints are not subject to throttling.
+Services that don't use finance and operations OData or custom service API endpoints, such as the [Inventory Visibility Add-in](../../../supply-chain/inventory/inventory-visibility.md), aren't exempt from throttling, because no exemption is needed. Service protection API limits are applied only for finance and operations OData and custom service API endpoints. Services that don't use these endpoints aren't subject to throttling.
 
 > [!NOTE]
 > When service protection limits are applied to them, these services will implement handlers that use Retry-After logic. However, we still recommend that you have client-side handling for throttling when you use these services. Consider implementing the 429 handler that uses Retry-After logic.
