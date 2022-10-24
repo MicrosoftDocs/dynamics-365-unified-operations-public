@@ -101,12 +101,19 @@ Data
  - Transactions
  - Custom fields
  - Attachments
+
 Data management – Bring your own database (BYOD) 
+
 Feature management: Enabled/disabled features
+
 Embedded PowerApps
+
 PPAC attached Environment (production only)
+
 Batch Jobs 
+
 An empty ledger is created for each legal entity. The default exchange rate type and the accounting currency for each ledger is set.  
+
 A new chart of accounts is automatcially created and linked to the **Ledger** page in each Legal entity. The financial dimensions configured in your Human Resources environment will be automatcially added to a new Account structure and linked to the ledger. 
 
 >[!Note]
