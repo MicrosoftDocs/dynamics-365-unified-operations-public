@@ -1,5 +1,5 @@
 ---
-title: Preview of Dynamics 365 Supply Chain Management 10.0.29 (October 2022)
+title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.29 (October 2022)
 description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.29. 
 author: kamaybac
 ms.date: 08/12/2022
