@@ -491,7 +491,7 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 1. Install SQL Server with high availability, unless you're deploying in a sandbox environment, where one instance of SQL Server is sufficient. (Nevertheless, you might want to install SQL Server with high availability in sandbox environments to test high-availability scenarios.)
 
     > [!IMPORTANT]
-    > Avoid using named instances. If you use named instances, you may run into issues as the documentation and scripts assume that default instances are used.
+    > Avoid using named instances. If you use named instances, you might encounter issues, because the documentation and scripts assume that default instances are used.
     >
     > You must enable the [SQL Server and Windows Authentication mode](/sql/database-engine/configure-windows/change-server-authentication-mode).
 
@@ -559,7 +559,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
     > [!IMPORTANT]
     > - You must install the Database Engine when you install SSRS.
     > - Do **not** configure the SSRS instance. The reporting service will automatically configure everything.
-    > - Do **not** use named instances when setting up the database engine or the SSRS service.
+    > - Do **not** use named instances when you set up the database engine or the SSRS service.
     > - Environments that were deployed with a base topology older than Platform update 41, do not need to go through the following steps. In those environments, SSRS should be configured manually according to [Configure SQL Server Reporting Services for on-premises deployments](../analytics/configure-ssrs-on-premises.md).
 
 1. For each BI node, follow these steps:
@@ -617,7 +617,7 @@ You can configure more than one SSRS node. For more information, see [Configurin
     | The .NET Framework version 4.7.2 (CLR 4.0) | [.NET Framework 4.7.2 Offline Installer](https://dotnet.microsoft.com/download/thank-you/net472-offline) | ndp472-x86-x64-allos-enu.exe | 10.0.0 | Not applicable |
 
 > [!IMPORTANT]
-> - Make sure that the Management Studio setup is in english US.
+> - Make sure that the Management Studio setup is in US English.
 > - Make sure that the installer files have the names that are specified in the "Expected file name" column of the preceding table. Rename any files that don't have the expected name. Otherwise, you will encounter errors when you run the Configure-PreReqs.ps1 script.
 
 Next, follow these steps for each VM, or use remoting from a single machine.
