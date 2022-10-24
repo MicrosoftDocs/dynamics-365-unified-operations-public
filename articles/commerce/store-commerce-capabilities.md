@@ -59,9 +59,9 @@ The Store Commerce app is the retail point-of-sale (POS) experience for Microsof
 | Assortment management | Merchandising managers can assort products so that they are available for sale in a specific channel and during a specific period. | [Assortments](assortments.md) | |
 | Catalogs | Merchandising managers can manage catalogs to identify the products that you want to offer with catalog-specific pricing. | [Catalogs](/dynamicsax-2012/appuser-itpro/about-retail-product-catalogs) | |
 | Product and category management | In Commerce headquarters, merchandising managers can create products that have variants, attributes, a unit of measure, and so on. They can also define a category hierarchy to organize products. | [Product](retail-hierarchies.md) | |
-| Bundles | Merchandising managers can group products so that they are sold as a bundle or kit. | [Kit]() | |
-| Info codes | Use info codes to prompt the cashier to enter information during different actions at the POS, such as item sales, item returns, or customer selection. | | |
-| Linked items | Use linked items to upsell products when an item is added to transaction. | | |
+| Bundles | Merchandising managers can group products so that they are sold as a bundle or kit. | [Kits](dynamicsax-2012/appuser-itpro/about-setting-up-retail-product-kits) | |
+| Info codes | Use info codes to prompt the cashier to enter information during different actions at the POS, such as item sales, item returns, or customer selection. | | [Info codes] (dynamicsax-2012/appuser-itpro/about-info-codes-retail) | |
+| Linked items | Use linked items to upsell products when an item is added to transaction. | [Linked items](dynamicsax-2012/appuser-itpro/set-up-products-for-cross-selling-and-up-selling) | |
 | Warranties | Extended warranties can be sold together with products. | [Warranty](extended-warranty.md) | |
 | Label printing | Labels can be generated that contain product information such as the batch number, serial number, and expiration date. | [Label printing](/dynamicsax-2012/appuser-itpro/create-and-print-labels-overview) | |
 
@@ -69,18 +69,18 @@ The Store Commerce app is the retail point-of-sale (POS) experience for Microsof
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Product browsing | Browse products by category. | [Hierarchy](retail-hierarchies.md) | |
+| Product browsing | Browse products by category. | [Product hierarchy](retail-hierarchies.md) | |
 | Product search | Search products by name, and refine searches by using product attributes such as the brand, price, and material. This capability is powered by Azure Cognitive Search. | [Cloud powered search](cloud-powered-search-overview.md) | |
 | Product details page | Rich product details pages can include images, a description, product attributes, and recommended products. Recommendations are powered by the Recommendations Service. | | |
 | Product compare | Compare multiple products, and help customers choose one and add it to a transaction. | | |
 | Endless aisle | Easily look up inventory in other stores, and create orders. | [Inventory lookup](pos-inventory-lookup-operation.md) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
-| Recommendations | Upsell and cross-sell products by using the Recommendations Service. This service uses patented technology to suggest recommendations, based on purchase trends, and characteristics such as newly arrived, similar looks, and bestselling. These recommendations are available on product details pages, the **Customer details** page, and the **Transactions** page. | [Recommendations]() | |
+| Recommendations | Upsell and cross-sell products by using the Recommendations Service. This service uses patented technology to suggest recommendations, based on purchase trends, and characteristics such as newly arrived, similar looks, and bestselling. These recommendations are available on product details pages, the **Customer details** page, and the **Transactions** page. | [Recommendations](product-recommendations.md) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/unlock-the-power-of-dynamics-365-commerce-recommendations-march-2-2021) |
 
 ## Customer relationship
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Customer accounts | Create, edit, and manage customer accounts. Customer accounts can be managed in async mode to avoid real-time processing. | [Accounts]() | |
+| Customer management | Create, edit, and manage customer accounts. Customer accounts can be managed in async mode to avoid real-time processing. | [Management](customer-mgmt-stores.md) | |
 | Customer attributes | The Customer attributes framework enables additional customer related data to be captured based on business requirements. | [Attributes](dev-itpro/customer-attributes.md) | |
 | Customer details page | A rich customer details page provides an omni-channel view of the customer's interactions across all channels. These interactions include purchases, wish lists, and loyalty points. | | |
 | Cloud-powered customer search | Search customers by name, telephone number, email address, loyalty card, address, and so on. | [Cloud powered search](pos-search-improvements.md#customer-search) | |
@@ -100,7 +100,7 @@ The Store Commerce app is the retail point-of-sale (POS) experience for Microsof
 | Available promotions | Sales associates can easily look up available promotions for products in the store, products that have been added to a transaction, and so on. | [Pricing functions](pos-pricing-functions.md) | |
 | Price checks | Sales associates can quickly check active sales prices of products in the store. | [Pricing functions](pos-pricing-functions.md) | |
 | Price overrides | Sales associates who have the required permissions can override system-configured or calculated prices. | [Pricing functions](pos-pricing-functions.md) | |
-| Manual discounts | Sales associates who have the required permissions can apply manual discounts to sales transaction or sales lines. | [Link](pos-pricing-functions.md) | |
+| Manual discounts | Sales associates who have the required permissions can apply manual discounts to sales transaction or sales lines. | [Pricing functions](pos-pricing-functions.md) | |
 
 ## Electronic payments
 
@@ -122,7 +122,7 @@ The Store Commerce app is the retail point-of-sale (POS) experience for Microsof
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Order creation | An order can be created for shipment or for pickup at a nearby store. Time slots can be provided for pickup. | [Overview]() | |
+| Order creation | An order can be created for shipment or for pickup at a nearby store. Time slots can be provided for pickup. | [Overview](customer-orders-overview.md) | |
 | Order modification | An order can be modified, returned, canceled, and so on. | <p>[Cancel](customer-orders-overview.md#cancel-a-customer-order)</p><p>[Returns](pos-returns.md)</p> | |
 | Search | Search for and filter orders by using order-specific information. | [Search](enhancedorderrecall.md) | |
 | Order attributes | The Order attribute framework enables additional order-related information to be captured based on business requirements. | [Attributes](dev-itpro/order-attributes.md) | |
@@ -135,7 +135,7 @@ The Store Commerce app is the retail point-of-sale (POS) experience for Microsof
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Buyer's push | Streamline the distribution of available inventory from a distribution center to multiple stores or warehouses. | [Buyer's push]() | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
+| Buyer's push | Streamline the distribution of available inventory from a distribution center to multiple stores or warehouses. | [Buyer's push](tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
 | Cross-docking | Streamline the distribution of inventory on incoming purchase orders to multiple stores or warehouses. | [Cross docking](tasks/set-up-rules-parameters-cross-docking-buyers-push.md) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
 | Inbound inventory | Receive inventory from a vendor via a purchase order, or from another warehouse via a transfer order. Create an inbound purchase order or transfer order request. | [Inbound]() | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
 | Outbound inventory | Ship inventory to another warehouse via a transfer order, and create an outbound transfer order request. | [Outbound](pos-outbound-inventory-operation.md) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-dynamics-365-commerce---store-inventory-may-13-2021) |
@@ -149,23 +149,23 @@ The Store Commerce app is the retail point-of-sale (POS) experience for Microsof
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
 | Cash management | The Store Commerce app supports management of cash and other specified tenders in the store. In addition, shift reconciliation in the store can be enabled for advanced cash management capabilities. | [Cash](cash-mgmt.md) | |
-| Financial statements and reconciliation | Cash and transactional transactions for a store are recorded in Commerce headquarters through the statement posting processes. | [Statements]() | |
-| Income and expense transactions | Process petty cash transactions in the store, and record income that doesn't come in the traditional way, such as lost-and-found money, the share of revenue from a coffee shop in your lobby, and carpet cleaning services. | [Statements]() | |
+| Financial statements and reconciliation | Cash and transactional transactions for a store are recorded in Commerce headquarters through the statement posting processes. | [Statements](retail-statements.md) | |
+| Income and expense transactions | Process petty cash transactions in the store, and record income that doesn't come in the traditional way, such as lost-and-found money, the share of revenue from a coffee shop in your lobby, and carpet cleaning services. | [Statements](retail-statements.md) | |
 | Invoice payments | Capture payments against invoices. | [Invoice](payinvoice.md) | |
 
 ## Employee productivity
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Task management | Create task lists and tasks, and assign them to stores and employees. Track the status of tasks across stores. Seamless integration with Microsoft Teams is provided. | <p>[Task Management](task-mgmt-overview.md)</p><p>[Teams](commerce-teams-integration.md)</p> | [Video](https://www.youtube.com/watch?v=ES1whB4C2lU) |
+| Task management | Create task lists and tasks, and assign them to stores and employees. Track the status of tasks across stores. Seamless integration with Microsoft Teams is provided. | <p>[Task Management](task-mgmt-overview.md)</p><p>[Microsoft Teams](commerce-teams-integration.md)</p> | [Video](https://www.youtube.com/watch?v=ES1whB4C2lU) |
 
 ## Hardware and peripherals
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Connect peripherals | Connect peripherals such as printers, cash drawers, scanners, and payment devices to a POS terminal. | <p>[Peripherals](retail-peripherals-overview.md)</p><p>[Hardware station]()</p> | |
-| Share peripherals | Receipt printers, cash drawers, and payment devices can be shared among many terminals by connecting them to a shared hardware station. | <p>[Peripherals](retail-peripherals-overview.md)</p><p>[Hardware station]()</p> | |
-| POS and peripheral simulator | The peripheral simulator supports testing of scenarios that usually require physical POS peripheral devices. It also includes a POS simulator that can be used to test the compatibility of physical peripheral devices without requiring deployment of the POS client. | [Simulator]() | |
+| Connect peripherals | Connect peripherals such as printers, cash drawers, scanners, and payment devices to a POS terminal. | [Peripherals](retail-peripherals-overview.md) ||
+| Share peripherals | Receipt printers, cash drawers, and payment devices can be shared among many terminals by connecting them to a shared hardware station. | <p>[Hardware station](retail-peripherals-overview.md) ||
+| POS and peripheral simulator | The peripheral simulator supports testing of scenarios that usually require physical POS peripheral devices. It also includes a POS simulator that can be used to test the compatibility of physical peripheral devices without requiring deployment of the POS client. | [Simulator](dev-itpro/retail-peripheral-simulator.md) | |
 
 ## Receipts
 
@@ -173,23 +173,23 @@ The Store Commerce app is the retail point-of-sale (POS) experience for Microsof
 |---|---|---|---|
 | Print receipts | Receipts of various types, such as sales receipts, credit card receipts, gift receipts, and invoices, can be printed by default or after cashier confirmation at checkout. They can also be reprinted from the journal. | [Printing](receipt-templates-printing.md) | |
 | Email receipts | Receipts can be emailed from the POS after a checkout is completed. | [Email](email-receipts.md) | |
-| Design receipts | Store receipts can be customized so that they show data and layouts that are appropriate to the retailer and transaction type. Receipts can also be extended so that they show custom data that is required by the retailer. | [Printing](receipt-templates-printing.md) | |
+| Design receipts | Store receipts can be customized so that they show data and layouts that are appropriate to the retailer and transaction type. Receipts can also be extended so that they show custom data that is required by the retailer. | [Design](receipt-templates-printing.md) | |
 
 ## Offline support
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Seamless offline | Seamless offline lets you continue to transact even when internet connectivity is limited or unavailable. Data exclusion helps you reduce the data size of the offline databases and maximize performance. | [Offline]() | |
+| Seamless offline | Seamless offline lets you continue to transact even when internet connectivity is limited or unavailable. Data exclusion helps you reduce the data size of the offline databases and maximize performance. | [Offline](pos-operations.md) | |
 | Performance-based switching | Switch to offline when performance degradation is detected. | [Offline](dev-itpro/implementation-considerations-offline.md) | [Video](https://youtu.be/sQU-2pgHToI) |
-| Offline dashboard | The **Offline status** dashboard shows the offline status, errors, and details of the data for each device. Therefore, it's easy to manage the status of many devices. | [Offline]() | |
+| Offline dashboard | The **Offline status** dashboard shows the offline status, errors, and details of the data for each device. Therefore, it's easy to manage the status of many devices. | [Offline](dev-itpro/implementation-considerations-offline.md) | [Video](https://youtu.be/sQU-2pgHToI)|
 
 ## Extensibility
 
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
-| Commerce headquarters | Commerce headquarters solutions can be customized by adding or modifying business processes. Commerce headquarters supports the use of metadata and a code-driven extension model to add custom functionality. It can be easily integrated into external solutions. | [Overview]() | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-unlock-the-power-of-dynamics-365-commerce-commerce-extensibility-overview-february-23-2021) |
-| Headless Commerce | The Extensible Omni channel API framework can be used to customize and add business logic. APIs that have request handlers, and pre-trigger and post-trigger extension patterns. | [SDK]() | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions) |
-| Commerce SDK | The Commerce SDK includes the code, code samples, templates, and tools that are required to extend or customize Dynamics 365 Commerce functionality. The SDK is published in different repositories (repos) in GitHub, depending on the extension components. | [SDK]() | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions) |
+| Commerce headquarters | Commerce headquarters solutions can be customized by adding or modifying business processes. Commerce headquarters supports the use of metadata and a code-driven extension model to add custom functionality. It can be easily integrated into external solutions. | [Overview](dev-itpro/extend-customer-cdx-package.md) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-unlock-the-power-of-dynamics-365-commerce-commerce-extensibility-overview-february-23-2021) |
+| Headless Commerce | The Extensible Omni channel API framework can be used to customize and add business logic. APIs that have request handlers, and pre-trigger and post-trigger extension patterns. | [CSU](dev-itpro/retail-server-customer-consumer-api.md) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions) |
+| Commerce SDK | The Commerce SDK includes the code, code samples, templates, and tools that are required to extend or customize Dynamics 365 Commerce functionality. The SDK is published in different repositories (repos) in GitHub, depending on the extension components. | [SDK](dev-itpro/retail-sdk/sdk-github.md) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions) |
 | Point of sale | Store Commerce app can be extended independently by using the POS extension feature of the Commerce SDk. The framework supports customization of the user experience (UX), workflows, and business logic. | [POS](dev-itpro/pos-extension/pos-extension-overview.md) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions) |
 
 ## Reporting
