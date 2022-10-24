@@ -93,28 +93,22 @@ The following manual steps need to be completed:
 
 During the automatic process the following actions are completed and you'll want to validate the following:
 
-Data
- - Configurations
- - Security roles (including custom roles)
- - Workflows
- - Personalizations and saved views
- - Transactions
- - Custom fields
- - Attachments
+ - Data
+    -   Configurations
+    -   Security roles (including custom roles)
+    -   Workflows
+    -   Personalizations and saved views
+    -   Transactions
+    -   Custom fields
+    -   Attachments
 
-Data management – Bring your own database (BYOD) 
-
-Feature management: Enabled/disabled features
-
-Embedded PowerApps
-
-PPAC attached Environment (production only)
-
-Batch Jobs 
-
-An empty ledger is created for each legal entity. The default exchange rate type and the accounting currency for each ledger is set.  
-
-A new chart of accounts is automatcially created and linked to the **Ledger** page in each Legal entity. The financial dimensions configured in your Human Resources environment will be automatcially added to a new Account structure and linked to the ledger. 
+ - Data management – Bring your own database (BYOD)
+ - Feature management: Enabled/disabled features
+ - Embedded PowerApps
+ - PPAC attached Environment (production only)
+ - Batch Jobs 
+ - An empty ledger is created for each legal entity. The default exchange rate type and the accounting currency for each ledger is set.
+ - A new chart of accounts is automatcially created and linked to the **Ledger** page in each Legal entity. The financial dimensions configured in your Human Resources environment will be automatcially added to a new Account structure and linked to the ledger. 
 
 >[!Note]
 >A ledger is required in finance and operations as part of the Dynamics 365 Finance product. The custom dimension controller that existed in Dynamics 365 Human Resources standalone application isn't available. The merged infrastructure for Human Resources is dependent on the finance logic for displaying financial dimensions in the Human Resources module. Learn more about the chart of accounts and financial dimensions here. 
