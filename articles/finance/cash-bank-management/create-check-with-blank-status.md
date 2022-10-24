@@ -4,7 +4,7 @@
 title: Create checks that have Blank status 
 description: This article explains how to create blank checks for a bank account. 
 author: angelad116
-ms.date: 10/26/2017
+ms.date: 10/24/2022
 ms.topic: index-page
 ms.prod: 
 ms.technology: 

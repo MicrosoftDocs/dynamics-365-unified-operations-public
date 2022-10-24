@@ -4,7 +4,7 @@
 title: Enter account and dimension combinations (segmented entry control)
 description: This article describes how to enter account and dimension combinations or ledger accounts. The entry experience is often referred to as segmented entry control.
 author: aprilolson
-ms.date: 06/20/2017
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 

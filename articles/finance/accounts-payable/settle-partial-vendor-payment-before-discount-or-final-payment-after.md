@@ -3,8 +3,8 @@
 
 title: Settle partial payment before discount date and final payment after discount date
 description: This article walks you through a scenario where multiple partial payments are made, some within the cash discount period and others outside the cash discount period.
-author: abruer
-ms.date: 06/20/2017
+author: angelad116
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 14411
 ms.assetid: 302ad6ae-28ee-4899-9f6b-f74424a5f50c
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shpandey
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 
