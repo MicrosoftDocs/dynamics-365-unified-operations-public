@@ -38,10 +38,10 @@ create a workplace where people and the business can thrive. To learn more about
 
 - **Transform employee experiences.** Retain top performers by empowering managers and employees through connected self-service experiences that drive engagement and 
 growth.
-- **Optimize HR programs.** Decrease operational costs, and create people-centric leave and absence, time, benefit, and compensation management programs.
-- **Increase organizational agility.** Enable HR to operate with the dexterity that the business requires by using Dataverse and Microsoft Power Platform to centralize
+- **Optimize HR programs** Decrease operational costs, and create people-centric leave and absence, time, benefit, and compensation management programs.
+- **Increase organizational agility** Enable HR to operate with the dexterity that the business requires by using Dataverse and Microsoft Power Platform to centralize
 people data and easily extend Dynamics 365 Human Resources.
-- **Discover workforce insights.** Make data-driven decisions through the ability to analyze and visualize people data on rich dashboards that are available on any 
+- **Discover workforce insights** Make data-driven decisions through the ability to analyze and visualize people data on rich dashboards that are available on any 
 device.
 
 ## Human Resources infrastructure merge
@@ -52,7 +52,9 @@ To learn more about frequently asked questions, see [Human Resources infrastruct
 ## Customer migration vs. customer merge
 
 As part of the infrastructure merge, all Human Resources application capabilities have been made available on finance and operations environments. With the 
-availability of the migration tooling through Lifecycle services (LCS), customers may migrate their Human resources environment(s). Customers may optionally elect to merge their data with their existing finance and operations environment. It's important to understand the difference between customer migration and customer merge:
+availability of the migration tooling through Lifecycle services (LCS), customers may migrate their Human resources environment(s). Customers may optionally elect to merge their data with their existing finance and operations environment. 
+
+The difference between customer migration and customer merge is as follows:
 -	Customer migration: This is a lift and shift migration of customer database using the automated migration tooling to the finance and operations infrastructure. The result is a new finance and operations environment utilizing the customer’s Human resources database. 
 -	Customer merge: This not required by Microsoft and is at the customer’s discretion. This is an additional step to move customer data into an existing environment like a Dynamics 365 Finance or Project Operations environment. This is mostly manual and can be done using DMF data entities, on customer’s own timeline. 
 
@@ -89,7 +91,7 @@ The following manual steps need to be completed:
  - Link to LCS for help.
  - Create fiscal calendars.
 
-During the automatic process the following actions are automatic, You'll want to validate the following during testing:
+During the automatic process the following actions are completed and you'll want to validate the following:
 
 Data
  - Configurations
