@@ -71,4 +71,9 @@ From the AppBar, a user can select an operation. Depending on the status of the 
 
 In version 10.0.18 and later, you can configure POS notifications and live tile alerts for the **Order Recall** operation if desired. For more information, see [Show order notifications in the point of sale (POS)](notifications-pos.md).  
 
+> [!NOTE]
+> For Order lookup feature to work, please make sure that 'Quotations' key is enabled among the license configurations. 
+> ![Quotations license key configuration must be enabled](./media/Quotations_License_Key_Configuration.png)
+
+
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
