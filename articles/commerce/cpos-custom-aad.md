@@ -100,7 +100,7 @@ CPOS will use both parameters when it sends requests to Azure AD to acquire a se
 Next, you must update identity providers settings in Commerce headquarters.
 
 1. In Commerce headquarters, open the **Commerce shared parameters** page.
-1. On the **Identity Providers** tab, in the **Identity providers** section, select the row where the **Type** field is set to **Azure Active Directory** and the **Issuer** field points to your Azure AD tenant. This setting declares that you will work with child grids that contain the data that is related to the identity provider that corresponds to your Azure AD tenant.
+1. On the **Identity Providers** tab, in the **Identity providers** section, select the row where the **Type** field is set to **Azure Active Directory** and the **Issuer** field points to your Azure AD tenant. This setting declares that you'll work with child grids that contain the data that is related to the identity provider that corresponds to your Azure AD tenant.
 1. In the **Relying parties** section, select **Add** to add a row.
 1. Set the following fields:
 
