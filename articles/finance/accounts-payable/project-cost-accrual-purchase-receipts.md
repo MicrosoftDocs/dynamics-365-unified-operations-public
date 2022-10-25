@@ -3,7 +3,7 @@
 
 title: Project cost accrual on purchase receipts
 description: This article describes how accrued project costs from purchase receipts can be tracked in Microsoft Dynamics 365 Finance. 
-author: sunfzam
+author: mukumarm 
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -21,7 +21,7 @@ ms.custom: 266984
 ms.assetid: 61e7d2a3-5aab-4113-bccc-213f932885d2
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: sigitac
+ms.author: mukumarm 
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
