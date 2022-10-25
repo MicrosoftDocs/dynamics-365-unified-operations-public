@@ -40,6 +40,11 @@ The following illustration shows an example of the form that is rendered by the 
 
 The order lookup module can be added to the body of any page of your e-commerce site. If you want to use the order lookup module to enable order lookup for guest checkouts, be sure to add it to a page that doesn't require that the user be signed in. To find a page's **Requires sign in?** setting in the Commerce site builder tree view, select the **Default page (Required)** slot, and look at the bottom of the right pane.
 
+
+> [!NOTE]
+> For Order lookup feature to work, please make sure that 'Quotations' key is enabled among the license configurations. 
+> ![Quotations license key configuration must be enabled](./media/Quotations_License_Key_Configuration.png)
+> 
 ## Additional resources
 
 [Enable order lookup for guest checkouts](order-lookup-guest.md)
