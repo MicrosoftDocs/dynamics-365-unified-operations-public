@@ -4,22 +4,14 @@
 title: Configure CPOS to use a custom Azure AD app
 description: This article explains how to configure Cloud POS (CPOS) to use a custom Azure Active Directory (Azure AD) app.
 author: boycez
-ms.date: 10/21/2022
+ms.date: 10/25/2022
 ms.topic: article
-ms.prod:
-ms.technology: 
-# optional metadata
-# ms.search.form:
-audience: Application User
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-# ms.custom:
 ms.search.region: global
-# ms.search.industry:
 ms.author: boycez
-ms.search.validFrom:
-ms.dyn365.ops.version: 10.0.21
+ms.search.validFrom: 2017-06-20
+
 ---
 
 # Configure CPOS to use a custom Azure AD app
@@ -55,6 +47,9 @@ To create and configure a custom Retail Server app in Azure AD, follow these ste
 
 ## Set up a custom CPOS app in Azure AD
 
+> [!IMPORTANT]
+> If you are upgrading an existing custom CPOS Azure AD app that was created before Commerce version 10.0.21, follow the steps in [Upgrade an existing custom CPOS Azure AD app created before Commerce version 10.0.21](#upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10.0.21).
+
 To create and configure a custom CPOS app in Azure AD, follow these steps.
 
 1. Sign in to the [Azure Active Directory admin center](https://aad.portal.azure.com) by using any Azure AD user account. The user account doesn't have to have administrator permissions.
@@ -71,20 +66,25 @@ To create and configure a custom CPOS app in Azure AD, follow these steps.
 1. In the **Manifest** section, set the **oauth2AllowIdTokenImplicitFlow** and **oauth2AllowImplicitFlow** parameters to **true**, and then select **Save**.
 1. In the **Token configuration** section, follow these steps to add two claims:
 
-    - Select **Add optional claim**. Set the **Token type** field to **ID**, and then select the **sid** claim. Select **Add**.
-    - Select **Add optional claim**. Set the **Token type** field to **Access**, and then select the **sid** claim. Select **Add**.
+    1. Select **Add optional claim**. Set the **Token type** field to **ID**, and then select the **sid** claim. Select **Add**.
+    1. Select **Add optional claim**. Set the **Token type** field to **Access**, and then select the **sid** claim. Select **Add**.
 
 1. In the **API permissions** section, select **Add a permission**.
 1. On the **APIs my organization uses** tab, search for the Retail Server app that you created in the [Set up a custom Retail Server app in Azure AD](#set-up-a-custom-retail-server-app-in-azure-ad) section. Then select **Add permissions**.
 1. In the **Overview** section, make a note of the value in the **Application (client) ID** field.
 
-> [!NOTE]
-> If you are upgrading your existing CPOS AAD app created before 10.0.21, follow these steps. 
-> - Open your custom CPOS AAD app in azure portal, open **Authentication** tab.
-> - Delete the original redirect URI from **Web** type.
-> - Click **Add a platform** button and select **Single-page application (SPA)**.
-> - Add the original Web redirect URI in SPA platform.
-> - Do above step 7 to add optional claims.
+### Upgrade an existing custom CPOS Azure AD app created before Commerce version 10.0.21
+
+To upgrade an existing custom CPOS Azure AD app created before Commerce version 10.0.21, follow these steps. 
+
+1. Open your custom CPOS Azure AD app in the Azure portal.
+1. Select the **Authentication** tab.
+1. Copy and save the original redirect URI from the **Web** type for use later, and then delete it.
+1. Select **Add a platform**, and then select **Single-page application (SPA)**.
+1. Add the original web redirect URI copied to the SPA platform.
+1. In the **Token configuration** section, follow these steps to add two claims:
+    1. Select **Add optional claim**. Set the **Token type** field to **ID**, and then select the **sid** claim. Select **Add**.
+    1. Select **Add optional claim**. Set the **Token type** field to **Access**, and then select the **sid** claim. Select **Add**.
 
 ## Update the CPOS configuration file
 
