@@ -42,6 +42,7 @@ The following table lists the APIs that are currently available:
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | Post | [Create multiple scheduled on-hand changes](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the post method](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Get | [Query by using the get method](#query-with-get-method) |
+| /api/environment/{environmentId}/onhand/exactquery | Post | [Exact query by using the post method](#exact-query-with-post-method) |
 | /api/environment/{environmentId}/allocation​/allocate | Post | [Create one allocate event](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation​/unallocate | Post | [Create one unallocate event](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation​/reallocate | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
@@ -685,6 +686,80 @@ Here's a sample get URL. This get request is exactly the same as the post sample
 
 ```txt
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
+```
+
+### <a name="exact-query-with-post-method"></a>Exact query by using the post method
+
+```txt
+Path:
+    /api/environment/{environmentId}/onhand/exactquery
+Method:
+    Post
+Headers:
+    Api-Version="1.0"
+    Authorization="Bearer $access_token"
+ContentType:
+    application/json
+Body:
+    {
+        dimensionDataSource: string, # Optional
+        filters: {
+            organizationId: string[],
+            productId: string[],
+            dimensions: string[],
+            values: string[][],
+        },
+        groupByValues: string[],
+        returnNegative: boolean,
+    }
+```
+
+In the body part of this request, `dimensionDataSource` is an optional parameter. If it isn't set, `dimensions` in `filters` will be treated as *base dimensions*. There are four required fields for `filters`: `organizationId`, `productId`, `dimensions`, and `values`.
+
+- `organizationId` should contain only one value, but it's still an array.
+- `productId` could contain one or more values. If it's an empty array, all products will be returned.
+- In the `dimensions` array, `siteId` and `locationId` are required but could appear with other elements in any order.
+- `values` could contain one or more distinct tuples of values corresponding to `dimensions`.
+
+`dimensions` in `filters` will be automatically added to `groupByValues`.
+
+The `returnNegative` parameter controls whether the results contain negative entries.
+
+The following example shows sample body content.
+
+```json
+{
+    "dimensionDataSource": "pos",
+    "filters": {
+        "organizationId": ["SCM_IV"],
+        "productId": ["iv_postman_product"],
+        "dimensions": ["siteId", "locationId", "colorId"],
+        "values" : [
+            ["iv_postman_site", "iv_postman_location", "red"],
+            ["iv_postman_site", "iv_postman_location", "blue"],
+        ]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
+```
+
+The following example shows how to query all products in multiple sites and locations.
+
+```json
+{
+    "filters": {
+        "organizationId": ["SCM_IV"],
+        "productId": [],
+        "dimensions": ["siteId", "locationId"],
+        "values" : [
+            ["iv_postman_site_1", "iv_postman_location_1"],
+            ["iv_postman_site_2", "iv_postman_location_2"],
+        ]
+    },
+    "groupByValues": ["colorId", "sizeId"],
+    "returnNegative": true
+}
 ```
 
 ## Available to promise
