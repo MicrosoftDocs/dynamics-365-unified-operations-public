@@ -16,12 +16,11 @@ ms.search.validFrom: 2022-09-30
 
 [!include [banner](includes/banner.md)]
 
-The Store Commerce app is the modern point-of-sale (POS) experience for Microsoft Dynamics 365 Commerce. It enables businesses to process transactions in-store and manage backoffice operations such as inventory, order-proccessing etc. In addition, it allows businesses to  manage customer relationship via loyalty and clientelling. 
-Store commerce application is critical to retail business, and is an extension of the brand providing a unique customer experience.
+The Store Commerce app is the modern point of sale (POS) experience for Microsoft Dynamics 365 Commerce. It enables businesses to process transactions in-store and manage backoffice operations such as inventory and order-proccessing. The app also enables businesses to manage customer relationships with loyalty and clienteling. 
 
-Powered by Headless Commerce it provides a complete omnichannel solution. A customer can buy online and pick up in a nearby store and continue their shopping journey across channels without losing any data. 
+Powered by Commerce Scale Unit (CSU), the Store Commerce app provides a complete omnichannel solution. For example, a customer can buy a product online and pick it up in a nearby store, thereby continuing their shopping journey across channels without losing any data. 
 
-This document provides an overview of the Dynamics 365 Commerce, Store Commerce app capabilities.
+This article provides an overview of the Store Commerce app capabilities.
 
 ## Platform
 
