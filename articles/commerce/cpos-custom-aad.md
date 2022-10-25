@@ -81,7 +81,7 @@ To upgrade an existing custom CPOS Azure AD app created before Commerce version 
 1. Select the **Authentication** tab.
 1. Copy and save the original redirect URI from the **Web** type for use later, and then delete it.
 1. Select **Add a platform**, and then select **Single-page application (SPA)**.
-1. Add the original web redirect URI copied to the SPA platform.
+1. Add the original web redirect URI copied above to the SPA platform.
 1. In the **Token configuration** section, follow these steps to add two claims:
     1. Select **Add optional claim**. Set the **Token type** field to **ID**, and then select the **sid** claim. Select **Add**.
     1. Select **Add optional claim**. Set the **Token type** field to **Access**, and then select the **sid** claim. Select **Add**.
