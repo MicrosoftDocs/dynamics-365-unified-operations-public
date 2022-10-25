@@ -48,7 +48,7 @@ To create and configure a custom Retail Server app in Azure AD, follow these ste
 ## Set up a custom CPOS app in Azure AD
 
 > [!IMPORTANT]
-> If you are upgrading an existing custom CPOS Azure AD app that was created before Commerce version 10.0.21, follow the steps in [Upgrade an existing custom CPOS Azure AD app created before Commerce version 10.0.21](#upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10.0.21).
+> If you are upgrading an existing custom CPOS Azure AD app that was created before Commerce version 10.0.21, follow the steps in [Upgrade an existing custom CPOS Azure AD app created before Commerce version 10.0.21](#upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021).
 
 To create and configure a custom CPOS app in Azure AD, follow these steps.
 
