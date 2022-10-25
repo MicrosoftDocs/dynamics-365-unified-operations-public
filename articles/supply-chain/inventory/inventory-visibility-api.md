@@ -714,12 +714,12 @@ Body:
     }
 ```
 
-In the body part of this request, `dimensionDataSource` is still an optional parameter. If it isn't set, `dimensions` in `filters` will be treated as *base dimensions*. There are four required fields for `filters`: `organizationId`, `productId`, `dimensions`, and `values`.
+In the body part of this request, `dimensionDataSource` is an optional parameter. If it isn't set, `dimensions` in `filters` will be treated as *base dimensions*. There are four required fields for `filters`: `organizationId`, `productId`, `dimensions`, and `values`.
 
 - `organizationId` should contain only one value, but it's still an array.
 - `productId` could contain one or more values. If it's an empty array, all products will be returned.
-- In `dimensions` array, `siteId` and `locationId` are required but could appear with other elements in any order.
-- `values` could contain ore or more distinct tuples of values corresponding to `dimensions`
+- In the `dimensions` array, `siteId` and `locationId` are required but could appear with other elements in any order.
+- `values` could contain one or more distinct tuples of values corresponding to `dimensions`.
 
 `dimensions` in `filters` will be automatically added to `groupByValues`.
 
