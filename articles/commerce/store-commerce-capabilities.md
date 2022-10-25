@@ -16,7 +16,12 @@ ms.search.validFrom: 2022-09-30
 
 [!include [banner](includes/banner.md)]
 
-The Store Commerce app is the retail point-of-sale (POS) experience for Microsoft Dynamics 365 Commerce. It delivers feature-rich and comprehensive POS capabilities that help sales associates, cashiers, and managers provide superior customer service. This document provides an overview of the Store Commerce app capabilities. 
+The Store Commerce app is the modern point-of-sale (POS) experience for Microsoft Dynamics 365 Commerce. It enables businesses to process transactions in-store and manage backoffice operations such as inventory, order-proccessing etc. In addition it allows businesses to  manage customer relationship via loyalty and clientelling. 
+Store commerce application is critical to retail business, and is an extension of the brand providing a unique customer experience.
+
+Powered by Headless Commerce it provides a complete omnichannel solution. A customer can buy online and pick up in a nearby store and continue their shopping journey across channels without losing any data. 
+
+This document provides an overview of the Dynamics 365 Commerce, Store Commerce app capabilities.
 
 ## Platform
 
@@ -37,7 +42,7 @@ The Store Commerce app is the retail point-of-sale (POS) experience for Microsof
 | Cross-platform | The Store Commerce app is supported on web, Windows, iOS, and Android platforms. | [Platforms](dev-itpro/hybridapp.md) | |
 | Branding | The screen designer lets you customize screen layouts to meet your business requirements. In addition, themes, layouts, colors, and images can be created based on employee roles, and can then be shared across users for brand consistency and ease of use. | [Visual configurations](pos-screen-layouts.md) | [Video](https://www.youtube.com/watch?v=ldqCw2wf5fY) |
 | Topology | Different in-store topologies are supported, based on network availability. | <p>[Topology](dev-itpro/retail-modern-pos-architecture.md)</p><p>[Infographic](dev-itpro/retail-in-store-topology.md)</p> | |
-| Multi-device management | Multiple devices across stores can be easily managed from Commerce headquarters. | [Activation](set-up-activation-accounts-validate-devices-hq.md) | |
+| Multi-device management | Multiple devices across stores can be easily managed from Commerce headquarters. | [Activation](set-up-activation-accounts-validate-devices-hq.md) | [Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/commerce-mass-deployment-with-sccm-system-center-configuration-manager-october-6-2022) |
 
 ## Employee management
 
