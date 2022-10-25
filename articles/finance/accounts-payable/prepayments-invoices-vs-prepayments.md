@@ -4,7 +4,7 @@
 title: Prepayment invoices vs. prepayments
 description: This article describes and contrasts the two methods that organizations can use for advance payments (prepayments). 
 author: abruer
-ms.date: 10/26/2017
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
