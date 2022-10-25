@@ -3,7 +3,7 @@
 title: Domains in Dynamics 365 Commerce
 description: This article describes how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 09/09/2022
+ms.date: 10/25/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -92,11 +92,11 @@ For example, environment "xyz" has been provisioned, and two sites have been cre
 
 When a domain query string is not given in an environment with multiple domains provided, Commerce uses the first domain you provided. For example, if the path "fabrikam" was provided first during site setup, the URL `https://xyz.dynamics365commerce.ms` could be used to access the published site content site for `www.fabrikam.com`.
 
-Custom domains can also be added. In the environment Commerce management for the project, under the e-Commerce subheading, the option to **+ Add custom domain** is shown. The slider that appears shows the existing custom domains and the option to list a new custom domain.
+You can also add custom domains. To do so, on the environment Commerce management page for the project, under the **e-Commerce** subheading, select **+ Add custom domain**. The slider shows the existing custom domains and provides the option to add a new custom domain.
 
 ## Update which Commerce Scale Unit is used
 
-The selected Commerce Scale Unit (CSU) used by e-Commerce was typically selected when initially created. By selecting **Update scale unit** (on the same e-Commerce management page as detailed just prior to this subheading), a slider is shown that details the current CSU being used and the option to select a **New commerce scale unit** from the list of what CSU exist for that environment. This allows customers to better maintain their architecture through self-service functionality, reducing the need to connect with support.
+The selected Commerce Scale Unit (CSU) used by Commerce was typically selected when initially created. By selecting **Update scale unit** (on the same Commerce management page as detailed just prior to this subheading), a slider is shown that details the current CSU being used and the option to select a **New commerce scale unit** from the list of what CSU exist for that environment. This allows customers to better maintain their architecture through self-service functionality, reducing the need to connect with support.
 
 ## Traffic forwarding in production
 
