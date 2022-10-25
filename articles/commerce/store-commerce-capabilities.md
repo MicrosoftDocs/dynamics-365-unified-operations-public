@@ -2,19 +2,14 @@
 title: Store Commerce app capabilities
 description: This article describes the functionality that is available in the Store Commerce app for Microsoft Dynamics 365 Commerce.
 author: anupamar-ms
-ms.date: 10/18/2022
+ms.date: 10/25/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: anupamar
-ms.search.validFrom: 2022-10-31
-ms.dyn365.ops.version: 10.0.28
-ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail
+ms.search.validFrom: 2022-09-30
+
 ---
 
 # Store Commerce app capabilities
@@ -31,9 +26,8 @@ The Store Commerce app is the retail point-of-sale (POS) experience for Microsof
 | Headless Commerce | The Commerce Scale Unit hosts the headless commerce engine. The Headless Commerce engine serves as the central point for all commerce business logic and powers a complete omni-channel solution. | <p>[Architecture overview]()</p><p>[Headless architecture](dev-itpro/retail-server-architecture.md)</p> | [Tech talk](https://community.dynamics.com/365/b/techtalks/posts/dynamics-365-commerce-architecture-overview-december-4-2020) |
 | Commerce headquarters | Commerce headquarters provides back-office capabilities that enable the configuration of products, employees, business processes, pricing, and other functionality that is required for the business. | [Architecture overview](commerce-architecture.md) | |
 | Point of sale | The Store Commerce app is the POS experience for Dynamics 365 Commerce. It delivers feature-rich and comprehensive POS capabilities that help sales associates, cashiers, and managers provide superior customer service. In addition, it provides several deployment options to retailers, helps improve performance, and offers improved application lifecycle management (ALM). | [Store Commerce App](dev-itpro/store-commerce.md) | <p>[Tech talk](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/modernize-the-dynamics-365-commerce-in-store-technology-using-the-new-store-commerce-app-march-30-2022)</p><p>[Video](https://youtu.be/7B332XH_zfs)</p><p>[Migration from MPOS to Store Commerce](dev-itpro/pos-extension/migrate-mpos-store-commerce.md)</p> |
-| Cloud deployment | Multiple instances of Commerce Scale Units can be deployed for load distribution and geo proximity. | [Cloud deployment](dev-itpro/deployment/cloud-deployment-overview.md) | |
-| On-premises deploymen | Using a local business data deployment, Commerce customers can have greater ownership and management of a Dynamics 365 environments. | [On-premises deployment](dev-itpro/deployment/deploy-retail-onprem.md) | |
-
+| Cloud deployment | Multiple instances of Commerce Scale Units can be deployed for load distribution and geo proximity. | [Cloud deployment](/dynamics365/fin-ops-core/dev-itpro/deployment/cloud-deployment-overview) | |
+| On-premises deploymen | Using a local business data deployment, Commerce customers can have greater ownership and management of a Dynamics 365 environments. | [On-premises deployment](/dynamics365/fin-ops-core/dev-itpro/deployment/deploy-retail-onprem) | |
 
 ## Device management
 
@@ -61,9 +55,9 @@ The Store Commerce app is the retail point-of-sale (POS) experience for Microsof
 | Assortment management | Merchandising managers can assort products so that they are available for sale in a specific channel and during a specific period. | [Assortments](assortments.md) | |
 | Catalogs | Merchandising managers can manage catalogs to identify the products that you want to offer with catalog-specific pricing. | [Catalogs](/dynamicsax-2012/appuser-itpro/about-retail-product-catalogs) | |
 | Product and category management | In Commerce headquarters, merchandising managers can create products that have variants, attributes, a unit of measure, and so on. They can also define a category hierarchy to organize products. | [Product](retail-hierarchies.md) | |
-| Bundles | Merchandising managers can group products so that they are sold as a bundle or kit. | [Kits](dynamicsax-2012/appuser-itpro/about-setting-up-retail-product-kits) | |
-| Info codes | Use info codes to prompt the cashier to enter information during different actions at the POS, such as item sales, item returns, or customer selection. | [Info codes](dynamicsax-2012/appuser-itpro/about-info-codes-retail) | |
-| Linked items | Use linked items to upsell products when an item is added to transaction. | [Linked items](dynamicsax-2012/appuser-itpro/set-up-products-for-cross-selling-and-up-selling) | |
+| Bundles | Merchandising managers can group products so that they are sold as a bundle or kit. | [Kits](/dynamicsax-2012/appuser-itpro/about-setting-up-retail-product-kits) | |
+| Info codes | Use info codes to prompt the cashier to enter information during different actions at the POS, such as item sales, item returns, or customer selection. | [Info codes](/dynamicsax-2012/appuser-itpro/about-info-codes-retail) | |
+| Linked items | Use linked items to upsell products when an item is added to transaction. | [Linked items](/dynamicsax-2012/appuser-itpro/set-up-products-for-cross-selling-and-up-selling) | |
 | Warranties | Extended warranties can be sold together with products. | [Warranty](extended-warranty.md) | |
 | Label printing | Labels can be generated that contain product information such as the batch number, serial number, and expiration date. | [Label printing](/dynamicsax-2012/appuser-itpro/create-and-print-labels-overview) | |
 
