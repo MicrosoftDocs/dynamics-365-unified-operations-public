@@ -25,12 +25,19 @@ The metric and KPI tiles will update when you filter or select vendors, products
 
 <!--KFM: We should explain how to open each of these reports, either within each section or in a section by itself (depending on the steps required). -->
 
-<!--KFM: We have a page that doesn't seem to be documented: **Procurement and sourcing \> Inquiries and reports \> Supply risk assessment \> Supply risk assessment**. We should explain what this is for and what to do with it. For me, it's just blank.
-. -->
+## Open the integrated risk and performance report
 
-## Supplier performance analysis
+The integrated risk and performance report shows information about what has been planned and is therefore relevant for risk assessment. 
+
+<!--KFM: Decribe: **Procurement and sourcing \> Inquiries and reports \> Supply risk assessment \> Supply risk assessment**.Metnion it's also available from workspace. Refer to rest of topic for more info about how this works. -->
+
+## Embedded supplier performance analysis
+
+The workspace-embedded supplier performance report shows a holistic performance assessment, not only for planned products, but also for all products that have been purchased before. 
 
 All supply performance analysis reports carry a header with slicers and filters. Use these to select the relevant legal companies, regions, vendors, item groups or select products if your want to limit your analysis. The filter will carry through the different report pages so you do not have to reapply the filter settings repeatedly.
+
+<!-- KFM: Add how to get here (tabs on workspace) and mention that you use the tabs at the bottom to change views, where are described below. -->
 
 ### Vendor and product ranking report
 
@@ -46,11 +53,13 @@ In this report the worst OTIF ranking is calculated from different perspectives 
 
 [<img src="media/sra-otif-analysis.png" alt="Multi dimensional OTIF ranking report, screenshot." title="Multi dimensional OTIF ranking report, screenshot" width="720" />](media/sra-otif-analysis.png)
 
-## Supply risk assessment analysis
+## Embedded supply risk assessment analysis
 
 Risk assessment report turn the performance observations based on purchase order receipts into a risk calculation for planned orders.
 
 All supply risk analysis reports carry a slicer and filter header that includes the Master Plan selector. Use this filter to select only one or your master plans to prevent unwanted double accounting planned orders from multiple plans.
+
+<!-- KFM: Add how to get here (tabs on workspace) and mention that you use the tabs at the bottom to change views, where are described below. -->
 
 ### Risk assessment overview report
 
@@ -86,8 +95,3 @@ Dive deeper on the supply from source to delivery location in comparison of past
 ## Use date range filtering
 
 A typical filter is the data range filter that you can access in the filter side bar. Select the Date field in the filter side panel and control the time range to look back at when accounting past purchase order lines used for the performance metrics of past order fulfillment. You could, for example, filter on only looking at order lines and receipts of the last 6 month.
-
-## Next steps
-
-You may use additional filters in the reports to reduce the calculation scope of the metrics within the reports.
-<!--KFM: I think we can probably remove this section. I moved the section about the date filter out of here. We could maybe add a couple more sections of general advice (that applies to all reports) like that one. -->

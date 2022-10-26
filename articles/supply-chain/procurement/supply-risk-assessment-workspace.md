@@ -71,9 +71,4 @@ In addition to the embedded performance and risk reports, you can also open the 
 
 ## Next steps
 
-Explore how the purchase order fulfillment history from the perspective of products or vendors can be used to calculate future risk for your supply.
-
-
-> [!NOTE]
-> The combined performance-risk reports filter the performance reports to items that are also planned. <!-- KFM: I don't understand this. Please clarify.  -->
-
+Explore how the purchase order fulfillment history from the perspective of products or vendors can be used to calculate future risk for your supply. See [Power BI reports for risks analysis and performance ranking](supply-risk-assessment-reports.md).

@@ -19,11 +19,9 @@ Supply risk assessment for Dynamics 365 Supply Chain Management lets you identif
 
 The [Supply risk assessment workspace](supply-risk-assessment-workspace.md) together with the [Supplier performance and risk analysis reports](supply-risk-assessment-reports.md) help supply managers understand the risk of encountering sourcing shortages and delays. It enables businesses to take proactive actions to balance cost and resilience when optimizing their supply chains.
 
-<!-- KFM: This topic is pretty short now. Consider fleshing out this overview with some business scenarios and business values (maybe taken from your existing PPTs or release plan article). Start with these before mentioning the workspace mechanics. Maybe also add a diagram and/or an intriguing screenshot (like your favorite Power BI report as an example.)  -->
-
-|||
+|  |  |
 |---------|---------|
-|[<img src="media/sra-workspace-page.png" alt="Supply risk assessment workspace, screenshot." title="Supply risk assessment workspace, screenshot" width="400" />](media/sra-workspace-page.png)|[<img src="media/sra-risk-planned-purchase.png" alt="Risk assessment report for planned purchase, screenshot." title="Risk assessment report for planned purchase, screenshot" width="400" />](media/sra-risk-planned-purchase.png)|
+|[<img src="media/sra-workspace-page.png" alt="Supply risk assessment workspace, screenshot." title="Supply risk assessment workspace, screenshot" width="400" />](media/sra-workspace-page.png)<br>*Supply risk assessment workspace*|[<img src="media/sra-risk-planned-purchase.png" alt="Risk assessment report for planned purchase, screenshot." title="Risk assessment report for planned purchase, screenshot" width="400" />](media/sra-risk-planned-purchase.png)<br>*Supplier performance and risk analysis report*|
 |||
 
 The first release of this set of capabilities is available in release version 10.0.31. The release focusses on delivery performance by suppliers, allows ranking and risk assessment based for planned orders.
