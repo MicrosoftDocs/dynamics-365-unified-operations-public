@@ -43,15 +43,15 @@ Customer migration is a lift and shift migration of customer database using the 
 
 ### Dataverse environment backup (Sandbox)
  - Refresh existing Human Resources sandbox with copy of the HR Production environment (optional, recommended) 
- - [Create a new dataverse environment](../power-platform/admin/create-environment#create-an-environment-with-a-database.md) using Power platform admin center. 
+ - [Create a new dataverse environment](../../power-platform/admin/create-environment#create-an-environment-with-a-database.md) using Power platform admin center. 
 >[!Note]
 >When adding database, ensure that **Enable Dynamics 365 apps** button is selected **Yes** 
- - [Copy existing dataverse environment](../power-platform/admin/copy-environment.md) (linked to standalone HR app) to the newly created environment (in previous step) 
+ - [Copy existing dataverse environment](../../power-platform/admin/copy-environment.md) (linked to standalone HR app) to the newly created environment (in previous step) 
 
 ### Dataverse capacity 
  - Verify that available capacity is sufficient for the environment copy in the Dataverse storage using the **Summary** page in the Power Platform admin center (PPAC). 
  - If available capacity is not sufficient, reduce the overall consumption using the free up storage space guidance. Customer may also elect to [add additional storage 
- capacity](../power-platform/admin/add-storage.md).  
+ capacity](../../power-platform/admin/add-storage.md).  
 
 ## Customer Migration Process 
 
@@ -147,12 +147,12 @@ Before you begin testing, validate the following:
 You will not have remote desktop access to the migrated sandbox. You can operate your Tier 2+ sandbox environments by using self-service capabilities and tools to 
 perform the following common critical actions: 
 
- - Access the [Azure SQL database](../fin-ops-core/dev-itpro/deployment/deploymentfaq#access-the-azure-sql-database.md) 
- - Access [log files](../fin-ops-core/dev-itpro/deployment/deploymentfaq#access-log-files.md)
- - Use [perfmon tools](../fin-ops-core/dev-itpro/deployment/deploymentfaq#use-perfmon-tools.md) 
- - Turn [Maintenance mode on/off](../fin-ops-core/dev-itpro/deployment/deploymentfaq#access-self-service-logs.md)
- - Restart [services](../fin-ops-core/dev-itpro/deployment/deploymentfaq#restart-services.md)
- - Configure the [Regression suite automation tool](../fin-ops-core/dev-itpro/deployment/deploymentfaq#configure-the-regression-suite-automation-tool.md) 
+ - Access the [Azure SQL database](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-the-azure-sql-database) 
+ - Access [log files](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-log-files)
+ - Use [perfmon tools](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#use-perfmon-tools) 
+ - Turn [Maintenance mode on/off](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-self-service-logs)
+ - Restart [services](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#restart-services)
+ - Configure the [Regression suite automation tool](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#configure-the-regression-suite-automation-tool) 
 
 For more information, see [FAQ for Self-service deployment](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md).  
 
@@ -188,7 +188,7 @@ Once you have completed migrating and validation of a sandbox environment, follo
 1. Go to Power Platform admin center and the **Environments** tab.  
 2. Select the previously copied/refreshed environment and confirm the state is **Ready**.  
 3. Go to LCS and confirm the migration project status is **Deployed**. 
-4. Select **Full details** under the migrated environment, to review additional details and [set up Dual-write application](./fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup#set-up-dual-write-for-new-or-existing-dataverse-environments.md).  
+4. Select **Full details** under the migrated environment, to review additional details and [set up Dual-write application](../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup#set-up-dual-write-for-new-or-existing-dataverse-environments.md).  
 5. In the **Dual-write application configuration** pane, select the checkbox to agree mapping and synchronizing data between databases and select **Configure**.  
 6. A pop-up message of successful trigger for the Dual-write configuration will be received, click **OK**. 
 7. Progress status can be monitored for the configuration in the details.  
