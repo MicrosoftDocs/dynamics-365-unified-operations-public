@@ -32,8 +32,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Customer migration is a lift & shift migration of customer database using the automated migration tooling to the finance and operations infrastructure; the result is a 
-new Finance and operations environment utilizing the customer’s Human resources database.  
+Customer migration is a lift and shift migration of customer database using the automated migration tooling to the finance and operations infrastructure; the result is a new Finance and operations environment utilizing the customer’s Human resources database.  
 
 ## Prerequisites 
 
@@ -45,7 +44,8 @@ new Finance and operations environment utilizing the customer’s Human resource
 ### Dataverse environment backup (Sandbox)
  - Refresh existing Human Resources sandbox with copy of HR Production (optional, recommended) 
  - Create a new dataverse environment using Power platform admin center. 
- Note: When adding database, ensure that Enable Dynamics 365 apps button is selected to Yes 
+>[!Note]
+>When adding database, ensure that Enable Dynamics 365 apps button is selected **Yes** 
  - Copy existing dataverse environment (linked to standalone HR app) to the newly created environment (in previous step) 
 
 ### Dataverse capacity 
