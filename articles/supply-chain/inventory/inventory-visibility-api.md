@@ -40,7 +40,7 @@ The following table lists the APIs that are currently available:
 | /api/environment/{environmentId}/onhand/unreserve/bulk | Post | [Reverse multiple soft reservation events](#reverse-multiple-reservation-events) |
 | /api/environment/{environmentId}/onhand/changeschedule | Post | [Create one scheduled on-hand change](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | Post | [Create multiple on-hand changes with dates](inventory-visibility-available-to-promise.md) |
-| /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the post method (recommended)](#query-with-post-method) |
+| /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the post method](#query-with-post-method) (recommended) |
 | /api/environment/{environmentId}/onhand | Get | [Query by using the get method](#query-with-get-method) |
 | /api/environment/{environmentId}/onhand/exactquery | Post | [Exact query by using the post method](#exact-query-with-post-method) |
 | /api/environment/{environmentId}/allocation​/allocate | Post | [Create one allocate event](inventory-visibility-allocation.md#using-allocation-api) |
@@ -187,8 +187,8 @@ The following table summarizes the meaning of each field in the JSON body.
 
 > [!NOTE]
 > The `siteId` and `locationId` parameters construct the [partition configuration](inventory-visibility-configuration.md#partition-configuration). Therefore, you must specify them in dimensions when you create on-hand change events, set or override on-hand quantities, or create reservation events.
-###Sample scenario
-In the following sections we will use a sample company Contoso that produces clothing (Product ID: T-shirt) to explain typical use cases you can consider leveraging each APIs.
+
+The following subsections provide examples of how to use each of the two APIs.
 
 ### <a name="create-one-onhand-change-event"></a>Create one on-hand change event
 
@@ -221,7 +221,7 @@ Body:
     }
 ```
 
-The following example shows sample body content. Company Contoso operates in stores. They have a Point-of-Sales (POS) system that processes in-store transactions and therefore inventory changes. In this sample, the customer has returned a red T-shirt back to your store. To reflect the change you post a single change event for the *T-shirt* product and this event will increase the quantity of the *T-shirt* product by 1.
+The following example shows sample body content. In this example, the company has a point-of-sales (POS) system that processes in-store transactions and therefore inventory changes. The customer has returned a red T-shirt back to your store. To reflect the change you post a single change event for the *T-shirt* product and this event will increase the quantity of the *T-shirt* product by 1.
 
 ```json
 {
