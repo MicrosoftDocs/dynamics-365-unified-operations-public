@@ -53,5 +53,7 @@ When the page is refreshed, the database account will be shown with its expiry t
 
 You can now use tools like SQL Server Management Studio (SSMS) to connect to the database, using the accounts from LCS and the IP address that you enabled. Note that LCS shows the server and database in the following format: **serverName\databaseName**.  To connect in SSMS, you will need to append the domain name suffix, such as **serverName.database.windows.net** if you are in Azure public cloud. On the **Options** tab in the SSMS connection window, you will also need to explicitly enter the databaseName value in the **Database** field to successfully connect.
 
+> [!NOTE]
+> The domain name suffix might be different for Government Community Cloud (GCC).
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
