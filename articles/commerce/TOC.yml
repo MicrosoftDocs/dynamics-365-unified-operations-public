@@ -12,6 +12,8 @@
         items:
         - name: What's new or changed in Commerce home page
           href: get-started/whats-new-home-page.md
+        - name: Commerce 10.0.31 (February 2023)
+          href: get-started/whats-new-commerce-10-0-31.md
         - name: Commerce 10.0.30 (November 2022)
           href: get-started/whats-new-commerce-10-0-30.md
         - name: Commerce 10.0.29 (October 2022)
@@ -568,6 +570,8 @@
             href: call-center-refund-payments.md
           - name: Credit card setup, authorization, and capture
             href: ../finance/accounts-receivable/credit-card-authorizations.md?context=/dynamics365/context/commerce
+          - name: Limit payment token usage
+            href: dev-itpro/limit-token-usage.md
           - name: Configure cash denominations for the POS
             href: cash-denominations.md
           - name: Configure credit card processing
@@ -1236,6 +1240,8 @@
             href: cart-icon-module.md
           - name: Checkout module
             href: add-checkout-module.md
+          - name: Checkout module error reference codes
+            href: checkout-module-error-codes.md
           - name: Payment module
             href: payment-module.md
           - name: Shipping address module

@@ -3,8 +3,8 @@
 
 title: Settle a partial vendor payment and the final payment in full before the discount date
 description: This article walks you through a scenario where partial payments are made for a vendor invoice, and a cash discount is taken.
-author: abruer
-ms.date: 08/22/2017
+author: angelad116
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: LedgerJournalTransVendPaym, VendOpenTrans
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: twheeloc
+ms.reviewer: angelading
 # ms.tgt_pltfrm: 
 ms.custom: 14431
 ms.assetid: 6b8e3420-b4c9-4e02-9588-598fe6d3df0d

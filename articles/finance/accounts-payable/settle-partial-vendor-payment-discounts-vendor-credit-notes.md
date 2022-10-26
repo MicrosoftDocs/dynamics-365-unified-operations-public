@@ -1,15 +1,15 @@
 ---
 title: Settle a partial vendor payment that has discounts on credit notes
 description: This article walks you through a scenario where a credit memo is settled against an invoice.
-author: abruer
-ms.date: 08/22/2017
+author: angelad116
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: shpandey
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 14222

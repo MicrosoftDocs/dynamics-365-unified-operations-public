@@ -17,6 +17,7 @@ ms.dyn365.ops.version: 10.0.28
 
 [!include [banner](../../includes/banner.md)]
 [!INCLUDE [preview-banner](../../includes/preview-banner.md)]
+<!-- KFM: Preview until further notice -->
 
 Capable-to-promise (CTP) functionality lets you give customers realistic dates for when you can promise specific goods. For each sales line, you can provide a date that takes account of existing on-hand inventory, production capacity, and transportation times.
 

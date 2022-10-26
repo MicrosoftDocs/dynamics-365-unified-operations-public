@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Document routing layout for license plate labels
+title: Document routing label layouts
 description: This article describes how to use formatting methods to print values on labels.
 author: perlynne
 ms.date: 04/01/2020
@@ -24,16 +24,17 @@ ms.search.validFrom: 2012-04-01
 ms.dyn365.ops.version: 10.0.10
 ---
 
-# Document routing layout for license plate labels
+# Document routing label layout
 
 [!include [banner](../includes/banner.md)]
 
+This article describes how to create layouts for license plate, container, and wave labels. It also provides guidelines for using the Zebra Programming Language (ZPL) used to create the layouts.
 
-The document routing layout defines the layout of license plate labels, and the data that is printed on them. You configure the printing trigger points when you set up mobile device menu items and work templates.
+Document routing label layouts define the way that labels are laid out and the data that is printed on them. You configure the printing trigger points when you set up mobile device menu items and work templates.
 
-In a typical scenario, warehouse receiving clerks print license plate labels immediately after they record the contents of pallets that arrive in the receiving area. The physical labels are applied to the pallets. They can then be used for validation as part of the put-away process that follows and future outbound picking operations.
+The information in this article applies to all document routing label layouts, including the layouts for [license plate labels](tasks/license-plate-label-printing.md), [container labels](print-container-labels.md), and [wave labels](configure-wave-label-printing.md).
 
-You can print highly complex labels, provided that the printing device can interpret the text that is sent to it. For example, a Zebra Programming Language (ZPL) layout that includes a bar code might resemble the following example.
+You can print highly complex labels, provided that the printing device can interpret the text that is sent to it. For example, a ZPL layout that includes a bar code might resemble the following example.
 
 ```dos
 ^XA~TA000~JSN^LT0^MNW^MTD^PON^PMN^LH0,0^JMA^PR2,2~SD15^JUS^LRN^CI0^XZ
@@ -49,11 +50,9 @@ You can print highly complex labels, provided that the printing device can inter
 ^PQ1,,,Y^XZ
 ```
 
-As part of the label printing process, the text `$LicensePlateId$` in this example will be replaced with a data value.
+As part of the label printing process, the text `$LicensePlateId$` in this example will be replaced with a data value. Several widely available label generation tools can help you format the text for the label layout. Many of these tools support the `$FieldName$` format. In addition, Microsoft Dynamics 365 Supply Chain Management uses special formatting logic as part of the field mapping for the document routing layout.
 
 To see the values that will be printed, go to **Warehouse management \> Inquiries and reports \> License plate labels**.
-
-Several widely available label generation tools can help you format the text for the label layout. Many of these tools support the `$FieldName$` format. In addition, Microsoft Dynamics 365 Supply Chain Management uses special formatting logic as part of the field mapping for the document routing layout.
 
 ## Turn on this feature for your system
 
@@ -141,7 +140,10 @@ $DisplayListOfItemsNumbers()[1]$
 
 ## More information about how to print labels
 
-For more information about how to set up and print labels, see [Enable license plate label printing](tasks/license-plate-label-printing.md).
+For more information about how to set up and print labels, see the following articles:
 
+- [License plate label printing](tasks/license-plate-label-printing.md)
+- [Print container labels](print-container-labels.md)
+- [Wave label printing](configure-wave-label-printing.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

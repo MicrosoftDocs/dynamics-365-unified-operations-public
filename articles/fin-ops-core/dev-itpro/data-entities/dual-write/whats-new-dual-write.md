@@ -26,6 +26,34 @@ The October release of [Dual-write core solution 1.0.37.0](https://appsource.mic
 |---|---|---|
 | Bug | Before this release, dual-write plugins on the Dataverse side is triggered every time a record is updated regardless of the updated field was in dual-write map or not. As a result, it created performance overhead on all database operations of Dataverse. With this release, dual-write plugins on the Dataverse side will be trigger only when the updated field is in dual-write map. | Preview |
 
+The October release of Dual-write Global Address Book solution 3.5.1.55 contains the following bug fixes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug fix | An OnLoad error occurred when the **Contact for Party** page was used to create a new record in **Contact for Customer or Vendor**. | General availability |
+| Bug fix | During some lead qualification scenarios, the postal address and electronic address weren't being synced from the contact entity to the party entity. Global address book plug-ins weren't being invoked in these scenarios. | General availability |
+| Error handling | Provide an actionable error message if a company ID isn't included on the **Account** page. | General availability |
+| Bug fix | The street information on the **Address** page wasn't shown correctly in the **Street** field on the **Postal address** page if **Street 2** information wasn't present. | General availability |
+| Bug fix | County information for the customer address wasn't synced between finance and operations apps and customer engagement apps. Global address book plug-ins have been corrected to address this issue. | General availability |
+
+## August 2022 release
+
+The August release of Dual-write Global Address Book solution 3.5.1.22 contains the following bug fixes.
+
+| Feature | Description | Status |
+|---|---|---|
+| Bug fix | Contacts that were created from the marketing portal and during the lead qualification scenario didn't having a valid party ID. | General availability |
+| Bug fix | Fixed the following error that occurred when a contact was created from CRM portals: "The 'contact' entity must be in the default (null) or unchanged state." | General availability |
+
+### Solution details
+
+| Solution name | Has new changes? | Previous version | New version |
+|---|---|---|---|
+| Party | Yes | 3.5.1.22 | 3.5.1.55 |
+| Dynamics365GABExtended | Yes | 3.5.1.22 | 3.5.1.55 |
+| Dynamics365GABDualWriteEntityMaps | Yes | 3.5.1.22 | 3.5.1.55 |
+| Dynamics365GABPartyAnchor | Yes | 3.5.1.22 | 3.5.1.55 |
+| Dynamics365GABPartyCommon | Yes | 3.5.1.22 | 3.5.1.55 |
 
 ## July 2022 release 
 

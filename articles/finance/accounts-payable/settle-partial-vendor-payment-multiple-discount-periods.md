@@ -3,8 +3,8 @@
 
 title: Settle a partial vendor payment that has multiple discount periods
 description: This article walks you through a scenario where multiple partial payments are made to a vendor that offers multiple cash discounts. 
-author: abruer
-ms.date: 08/22/2017
+author: angelad116
+ms.date: 10/24/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -21,7 +21,7 @@ ms.custom: 14262
 ms.assetid: af95c48a-afd1-476c-978d-e34995100be4
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: shpandey
+ms.author: angelading
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 

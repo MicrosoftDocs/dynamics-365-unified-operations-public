@@ -12,7 +12,7 @@
         items:
         - name: What's new or changed in Supply Chain Management home page
           href: get-started/whats-new-home-page.md
-        - name: Supply Chain Management 10.0.31 (February 2022)
+        - name: Supply Chain Management 10.0.31 (February 2023)
           href: get-started/whats-new-scm-10-0-31.md
         - name: Supply Chain Management 10.0.30 (November 2022)
           href: get-started/whats-new-scm-10-0-30.md
@@ -3243,6 +3243,8 @@
         href: transportation/tasks/associate-fuel-index-carrier-accessorial-charge.md
       - name: USMCA certification of origin
         href: transportation/usmca-certification-of-origin.md
+      - name: Commercial invoices
+        href: transportation/commercial-invoice.md
       - name: Create a bill of lading
         href: transportation/create-bill-of-lading.md
       - name: Plan freight transportation routes
@@ -3433,8 +3435,14 @@
             href: warehousing/pack-materials-packing-material-fees.md
           - name: Pack containers for shipment
             href: warehousing/packing-containers.md
+          - name: Print container labels
+            href: warehousing/print-container-labels.md
           - name: Packing work for packing outbound containers and processing shipments
             href: warehousing/packing-work.md
+          - name: Packing containers with the Warehouse Management mobile app
+            href: warehousing/warehouse-app-packing-containers.md
+          - name: Example scenario – Pack containers with the Warehouse Management mobile app
+            href: warehousing/warehouse-app-pack-containers-scenario.md
           - name: Set up short picking item reallocation
             href: warehousing/tasks/set-up-short-picking-item-reallocation.md
           - name: System-directed work sequencing
@@ -3691,7 +3699,7 @@
             href: ../fin-ops-core/dev-itpro/analytics/warehouse-power-bi-content.md?toc=/fin-and-ops/toc.json
           - name: System grouping on an open work list
             href: warehousing/system-group-on-open-work-list.md
-          - name: Document routing layout for license plate labels
+          - name: Document routing label layouts
             href: warehousing/document-routing-layout-for-license-plates.md
           - name: GS1 bar codes and QR codes
             href: warehousing/gs1-barcodes.md
@@ -3701,6 +3709,12 @@
           items:
           - name: Upgrade Warehouse management processes from Microsoft Dynamics AX 2012 to finance and operations
             href: warehousing/upgrade-migration-warehouse-management-processes.md
+      - name: Warehousing telemetry 
+        items:
+        - name: Enable warehousing telemetry with Application Insights
+          href: warehousing/application-insights-warehousing.md
+        - name: Monitor mobile device usage and performance
+          href: warehousing/application-insights-wma.md
     - name: Supply Chain Management development 
       items:
       - name: Gantt control development guide

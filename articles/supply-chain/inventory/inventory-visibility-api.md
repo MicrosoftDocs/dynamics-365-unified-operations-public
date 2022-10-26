@@ -42,7 +42,7 @@ The following table lists the APIs that are currently available:
 | /api/environment/{environmentId}/onhand/changeschedule/bulk | Post | [Create multiple on-hand changes with dates](inventory-visibility-available-to-promise.md) |
 | /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the post method (recommended)](#query-with-post-method) |
 | /api/environment/{environmentId}/onhand | Get | [Query by using the get method](#query-with-get-method) |
-| /api/environment/{environmentId}/onhand/exactquery | Post | [Exact query (acknowledge site and warehouse mapping) by using the post method](#exact-query-with-post-method) |
+| /api/environment/{environmentId}/onhand/exactquery | Post | [Exact query by using the post method](#exact-query-with-post-method) |
 | /api/environment/{environmentId}/allocation​/allocate | Post | [Create one allocate event](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation​/unallocate | Post | [Create one unallocate event](inventory-visibility-allocation.md#using-allocation-api) |
 | /api/environment/{environmentId}/allocation​/reallocate | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
@@ -719,7 +719,7 @@ With normal onhand query, when you specify siteId = 1,2 and locationId = A,B,C,D
 
 As you can see here, the normal onhand query does not recognize that location A only exists in site 1 and location B only exists for site 2 and therefore making redundant queries. To acknowledge this hierarchical mapping, you can use Onhand Exact query and specify such mapping in your query body, you will only query and receive result for site 1 location A and site 2 location B
 
-You can make the exact query using post method:
+### <a name="exact-query-with-post-method"></a>Exact query by using the post method
 
 ```txt
 Path:
@@ -745,12 +745,12 @@ Body:
     }
 ```
 
-In the body part of this request, `dimensionDataSource` is still an optional parameter. If it isn't set, `dimensions` in `filters` will be treated as *base dimensions*. There are four required fields for `filters`: `organizationId`, `productId`, `dimensions`, and `values`.
+In the body part of this request, `dimensionDataSource` is an optional parameter. If it isn't set, `dimensions` in `filters` will be treated as *base dimensions*. There are four required fields for `filters`: `organizationId`, `productId`, `dimensions`, and `values`.
 
 - `organizationId` should contain only one value, but it's still an array.
 - `productId` could contain one or more values. If it's an empty array, all products will be returned.
-- In `dimensions` array, `siteId` and `locationId` are required but could appear with other elements in any order.
-- `values` could contain ore or more distinct tuples of values corresponding to `dimensions`
+- In the `dimensions` array, `siteId` and `locationId` are required but could appear with other elements in any order.
+- `values` could contain one or more distinct tuples of values corresponding to `dimensions`.
 
 `dimensions` in `filters` will be automatically added to `groupByValues`.
 
