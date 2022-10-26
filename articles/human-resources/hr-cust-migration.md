@@ -224,8 +224,8 @@ The following section outlines recommendations for performing the migration from
  - Plan and document the detailed steps to migrate integrations to the migrated environment. 
  - Create a detailed checklist to outline the cutover process for your migration. 
  - Plan an appropriate amount of downtime for your business while you perform the migration. 
- - Additionally, FastTrack qualified customers are also highly encouraged to work with your FastTrack Solution Architect to help oversee the migration process.  
+ - Additionally, FastTrack qualified customers are also highly encouraged to work with your FastTrack solution architect to help oversee the migration process.  
  - We highly recommend that you refresh your sandbox environment in the standalone infrastructure before you perform the first migration. This includes refreshing your 
  Dataverse environment connected to the sandbox environment you plan to migrate to.  
  - We strongly recommend that you use a service account when you deploy, migrate, and create your LCS project.  
- - Plan to upgrade sandbox for UAT validation on the latest GA release. For more information, see [considerations](hr-infrastructure-merge.md)  
+ - Plan to upgrade sandbox for UAT validation on the latest GA release. For more information, see [considerations](hr-infrastructure-merge.md#considerations).  
