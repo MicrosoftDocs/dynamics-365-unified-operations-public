@@ -43,15 +43,15 @@ Customer migration is a lift and shift migration of customer database using the 
 
 ### Dataverse environment backup (Sandbox)
  - Refresh existing Human Resources sandbox with copy of the HR Production environment (optional, recommended) 
- - Create a new dataverse environment using Power platform admin center. 
+ - [Create a new dataverse environment](../power-platform/admin/create-environment#create-an-environment-with-a-database.md) using Power platform admin center. 
 >[!Note]
 >When adding database, ensure that **Enable Dynamics 365 apps** button is selected **Yes** 
- - Copy existing dataverse environment (linked to standalone HR app) to the newly created environment (in previous step) 
+ - [Copy existing dataverse environment](../power-platform/admin/copy-environment.md) (linked to standalone HR app) to the newly created environment (in previous step) 
 
 ### Dataverse capacity 
- - Verify that available capacity is sufficient for the environment copy in the Dataverse storage using the **Summary** page in the Power Platform admin center (PPAC).  
- - If available capacity is not sufficient, reduce the overall consumption using the free up storage space guidance. Customer may also elect to add additional storage 
- capacity.  
+ - Verify that available capacity is sufficient for the environment copy in the Dataverse storage using the **Summary** page in the Power Platform admin center (PPAC). 
+ - If available capacity is not sufficient, reduce the overall consumption using the free up storage space guidance. Customer may also elect to [add additional storage 
+ capacity](../power-platform/admin/add-storage.md).  
 
 ## Customer Migration Process 
 
@@ -110,14 +110,6 @@ Human Resources application).
 7. Complete the **Deployment settings** (Finance and Operations – Sandbox) wizard to confirm details and Customer sign off before selecting **Deploy**.  
 8. The environment state shows progress status from **Loading** to **Deploying** to **Deployed**.  
 
-Graphical user interface, text, application, email
-
-Description automatically generated 
-
-Graphical user interface, text, application, email
-
-Description automatically generated 
-
                 
 >[!NOTE]
 >The production pane is grayed out and will not be available until the go-live project readiness checklist is completed. For more information, see [Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) 
@@ -138,11 +130,6 @@ A Dynamics 365 Human Resources sandbox environment exists in an LCS project on t
  - For any reason when a migration is not successful, a failure error message is displayed on the respective environment. A **Delete** button is available to
  delete failed migration and follow steps to remigrate the environment. Customer may also elect to create a support ticket for additional assistance.  
 
-Graphical user interface, application, email
-
-Description automatically generated 
-
- 
 
 ### Validate Human Resources migration 
 
@@ -160,14 +147,14 @@ Before you begin testing, validate the following:
 You will not have remote desktop access to the migrated sandbox. You can operate your Tier 2+ sandbox environments by using self-service capabilities and tools to 
 perform the following common critical actions: 
 
- - Access the Azure SQL database 
- - Access log files
- - Use perfmon tools 
- - Turn Maintenance mode on/off
- - Restart services
- - Configure the Regression suite automation tool 
+ - Access the [Azure SQL database](../fin-ops-core/dev-itpro/deployment/deploymentfaq#access-the-azure-sql-database.md) 
+ - Access [log files](../fin-ops-core/dev-itpro/deployment/deploymentfaq#access-log-files.md)
+ - Use [perfmon tools](../fin-ops-core/dev-itpro/deployment/deploymentfaq#use-perfmon-tools.md) 
+ - Turn [Maintenance mode on/off](../fin-ops-core/dev-itpro/deployment/deploymentfaq#access-self-service-logs.md)
+ - Restart [services](../fin-ops-core/dev-itpro/deployment/deploymentfaq#restart-services.md)
+ - Configure the [Regression suite automation tool](../fin-ops-core/dev-itpro/deployment/deploymentfaq#configure-the-regression-suite-automation-tool.md) 
 
-Please review FAQ for Self-service deployment here.  
+For more information, see [FAQ for Self-service deployment](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md).  
 
 ### Migrating Human Resources Production environment 
 
@@ -175,7 +162,7 @@ Once you have completed migrating and validation of a sandbox environment, follo
 
 #### Pre-requisites to migrate Human Resources Production environment  
  - Subscription estimator should be completed 
- - Go-live readiness assessment should be completed 
+ - Go-live [readiness assessment](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) should be completed 
 
 #### Steps to migrate Human Resources Production environment 
  1. Log into LCS as the global administrator or designated service account user.  
@@ -191,11 +178,7 @@ Once you have completed migrating and validation of a sandbox environment, follo
 #### Post migration considerations:  
 
  - Apply the latest quality updates on your environment(s) 
- - If using Virtual Tables, reconfigure the endpoints.  
- 
-Graphical user interface, text, application, email
-Description automatically generated 
-
+ - If using [Virtual Tables](hr-admin-integration-common-data-service-virtual-entities.md), reconfigure the endpoints.  
  - Reconfigure Dual-write integration – Evaluate which entities are necessary to be enabled. 
  - Additional reconsideration for integration would be to utilize virtual tables to replace Dual-write.  
 
@@ -205,7 +188,7 @@ Description automatically generated
 1. Go to Power Platform admin center and the **Environments** tab.  
 2. Select the previously copied/refreshed environment and confirm the state is **Ready**.  
 3. Go to LCS and confirm the migration project status is **Deployed**. 
-4. Select **Full details** under the migrated environment, to review additional details and set up Dual-write application.  
+4. Select **Full details** under the migrated environment, to review additional details and [set up Dual-write application](./fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup#set-up-dual-write-for-new-or-existing-dataverse-environments.md).  
 5. In the **Dual-write application configuration** pane, select the checkbox to agree mapping and synchronizing data between databases and select **Configure**.  
 6. A pop-up message of successful trigger for the Dual-write configuration will be received, click **OK**. 
 7. Progress status can be monitored for the configuration in the details.  
