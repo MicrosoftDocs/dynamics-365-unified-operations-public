@@ -97,11 +97,11 @@ you refresh the sandbox environment that you want to migrate from your productio
 
 #### Steps to Migrate Human Resources Sandbox environment 
 
-1. Log into LCS as the global administrator or designated service account user.  
+1. Log into LCS as the global administrator or designated service account user.
 
 >[!Note]
 >It is recommended to use a named user account. The user should be logged in with the security role of **Project owner** or **Environment manager** in the standalone 
-Human Resources LCS project.  
+Human Resources LCS project.
 
 2. Open the newly created Human resources migration project in LCS. 
 3. Review and complete appropriate phases of the migration methodology and the project onboarding.  
@@ -110,7 +110,11 @@ Human Resources LCS project.
 Human Resources application).
 6. Enable **Map to new Power Platform environment** and select appropriate Power Platform environment then click **Next**.  
 7. Complete the **Deployment settings** (Finance and Operations – Sandbox) wizard to confirm details and Customer sign off before selecting **Deploy**.  
-8. The environment state shows progress status from **Loading** to **Deploying** to **Deployed**.  
+8. The environment state shows progress status from **Loading** to **Deploying** to **Deployed**.    
+
+>[!Note]
+>It is recommended to use a named user account. The user should be logged in with the security role of **Project owner** or **Environment manager** in the standalone 
+Human Resources LCS project.  
 
                 
 >[!NOTE]
