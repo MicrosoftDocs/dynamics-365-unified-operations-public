@@ -105,7 +105,7 @@ During the automatic process, the following actions are completed and should be 
 - A new chart of accounts is automatically created and linked to the **Ledger** page in each legal entity. The financial dimensions that are configured in your Human Resources environment will automatically be added to a new account structure and linked to the ledger. 
 
 > [!NOTE]
-> A ledger is required on the finance and operations infrastructure as part of the Dynamics 365 Finance product. The custom dimension controller that existed in the Dynamics 365 Human Resources standalone application isn't available. The merged infrastructure for Human Resources depends on the Finance logic to show financial dimensions in the **Human Resources** module. To learn more about the chart of accounts and financial dimensions, see [here](./finance/general-ledger/plan-chart-of-accounts.md). 
+> A ledger is required on the finance and operations infrastructure as part of the Dynamics 365 Finance product. The custom dimension controller that existed in the Dynamics 365 Human Resources standalone application isn't available. The merged infrastructure for Human Resources depends on the Finance logic to show financial dimensions in the **Human Resources** module. To learn more about the chart of accounts and financial dimensions, see [here](../finance/general-ledger/plan-chart-of-accounts.md). 
 
 ## Considerations
 
