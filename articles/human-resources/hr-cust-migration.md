@@ -168,8 +168,8 @@ Once you have completed migrating and validation of a sandbox environment, follo
 #### Steps to migrate Human Resources production environment 
  
  1. Log into LCS as the global administrator or designated service account user.  
- 
-   > [!NOTE]
+
+   > [!Note]
    > It's recommended to use a named user account. The user should be logged in with the security role of **Project owner** or **Environment manager** in the LCS project.
     
 2. Open newly created Human resources migration project in LCS. 
