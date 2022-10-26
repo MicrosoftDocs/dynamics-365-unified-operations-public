@@ -122,7 +122,7 @@ ModernPosSetupOffline.exe -UseAdfsAuthentication
 
 > [!NOTE]
 >
-> the "UseAdfsAuthentication" parameter is only available for non-sealed MPOS. Customers that need to use ADFS authentication for an on-premises deployment using the sealed extensibility model should use the [Store Commerce app](../dev-itpro/store-commerce.md) instead.
+> the "UseAdfsAuthentication" parameter is only available for non-sealed MPOS. Customers that need to use ADFS authentication for an on-premises deployment using the sealed extensibility model should use the [Store Commerce app](dev-itpro/store-commerce.md) instead.
 
 ### Run the Modern POS installer on a Windows computer
 
