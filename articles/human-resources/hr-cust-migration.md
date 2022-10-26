@@ -72,7 +72,7 @@ project. The existing Human Resources environment(s) will be migrated to the new
 
 After you have created a new LCS project, you will need to complete the following setup and configuration of your LCS project:
 
- - Complete the project onboarding by clicking the hamburger menu and select **Project onboarding**. For more information, see [Project onboarding](../dev-itpro/lifecycle-services/project-onboarding.md) 
+ - Complete the project onboarding by clicking the hamburger menu and select **Project onboarding**. For more information, see [Project onboarding](../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md) 
       - For region selection, choose the same region as your current environment(s); this region selection does not impact migration.  
       - Use ‘other’ for legacy system.  
  - Complete the project settings. This includes optionally configuring the SharePoint Online library, Azure DevOps and Azure connections. For more information, 
@@ -120,7 +120,7 @@ Description automatically generated
 
                 
 >[!NOTE]
->The production pane is grayed out and will not be available until the go-live project readiness checklist is completed. For more information, see [Prepare for go-live](./fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) 
+>The production pane is grayed out and will not be available until the go-live project readiness checklist is completed. For more information, see [Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) 
 
  
 ### Considerations and assumptions:  
