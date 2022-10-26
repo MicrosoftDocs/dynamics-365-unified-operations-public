@@ -72,11 +72,11 @@ project. The existing Human Resources environment(s) will be migrated to the new
 
 After you have created a new LCS project, you will need to complete the following setup and configuration of your LCS project:
 
- - Complete the project onboarding by clicking the hamburger menu and select **Project onboarding**. For more information, see [Project onboarding](./dev-itpro/lifecycle-services/project-onboarding.md) 
+ - Complete the project onboarding by clicking the hamburger menu and select **Project onboarding**. For more information, see [Project onboarding](../dev-itpro/lifecycle-services/project-onboarding.md) 
       - For region selection, choose the same region as your current environment(s); this region selection does not impact migration.  
       - Use ‘other’ for legacy system.  
  - Complete the project settings. This includes optionally configuring the SharePoint Online library, Azure DevOps and Azure connections. For more information, 
- see [Lifecycle Services (LCS) user guide](./dev-itpro/lifecycle-services/lcs-user-guide.md). 
+ see [Lifecycle Services (LCS) user guide](../dev-itpro/lifecycle-services/lcs-user-guide.md). 
 
 >[!Note] 
 >Customers may use an existing Azure DevOps project and the associated Personal Access Security Token. When using existing project, the configurations related to the project are automatically available and can be reviewed for accuracy.  
@@ -245,4 +245,4 @@ The following section outlines recommendations for performing the migration from
  - We highly recommend that you refresh your sandbox environment in the standalone infrastructure before you perform the first migration. This includes refreshing your 
  Dataverse environment connected to the sandbox environment you plan to migrate to.  
  - We strongly recommend that you use a service account when you deploy, migrate, and create your LCS project.  
- - Plan to upgrade sandbox for UAT validation on the latest GA release. For more information, see [considerations](./hr-infrastructure-merge.md)  
+ - Plan to upgrade sandbox for UAT validation on the latest GA release. For more information, see [considerations](hr-infrastructure-merge.md)  
