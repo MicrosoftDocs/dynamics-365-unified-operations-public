@@ -98,6 +98,16 @@ To set up the **Process retail order email notification** job in Commerce headqu
 1. Select **OK** to return to the **Process retail order email notification** dialog box.
 1. Select **OK** to complete the job setup.
 
+### Enable optimized email notification processing
+
+The **Optimized order notifications processing** feature switch enables optimized processing of email order notifications. When this feature is enabled, order notification emails are sent by several tasks running in parallel which results in higher job throughput. 
+
+To enable optimized email notification processing, go to **Workspaces** > **Feature Management** and enable the **Optimized order notifications processing** feature switch. 
+
+> [!NOTE]
+>
+> If your Headquarters version is older than 10.0.31, you will need to cancel the currently running **Process retail email order notification** batch job by going to **System Administration > Inquiries > Batch jobs** and deleting it. Then follow the instructions in the **Schedule a recurring email notification process job** section above to recreate the batch job. 
+
 ### Next steps
 
 Before you can send mails, you must configure your outgoing mail service and set up a batch job. For more information, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).

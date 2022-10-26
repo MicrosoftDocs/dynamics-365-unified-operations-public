@@ -47,7 +47,7 @@ To ensure compatibility between all Commerce components that are serviced and de
 
     For example, if Commerce headquarters and Finance and Operations apps are on version 10.0.26, Commerce Scale Unit must be on version 10.0.26 or earlier (for example, 10.0.25 or 10.0.24).
 
-- **Commerce Scale Unit must be on the same version as, or a newer version than, Modern Point of Sale (POS), Hardware Station, and the Commerce software development kit (SDK) and associated local site configurations (such as modules, data actions, and themes).**
+- **Commerce Scale Unit must be on the same version as, or a newer version than the Store Commerce app and/or Modern Point of Sale (POS), Hardware Station, and the Commerce software development kit (SDK) and associated local site configurations (such as modules, data actions, and themes).**
 
     For example, if Commerce Scale Unit is on version 10.0.26, Modern POS, Hardware Station, and the Commerce storefront must be on version 10.0.26 or earlier (for example, 10.0.25 or 10.0.24).
 

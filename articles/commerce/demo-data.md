@@ -92,7 +92,7 @@ The following illustration shows an example of the Welcome screen for a Fabrikam
 A screen layout can have configurations for both full devices and compact devices. Therefore, a user can be assigned to a single screen layout that will work across various sizes and form factors in the store.
 
 - **Modern POS - Full** – Typically, full layouts are best used for larger displays, such as desktop computer monitors or tablets. Users can select the UI elements that the layout includes, specify the size and placement of those elements, and configure their detailed properties. Full layouts support both portrait and landscape configurations.
-- **Modern POS - Compact** – Typically, compact layouts are best used for phones or small tablets. Design possibilities are limited for compact devices. Users can configure the columns and fields for the receipt pane and the totals pane.
+- **Modern POS - Compact** – Typically, compact layouts are best used for phones or small tablets. Design possibilities are limited for compact devices. Users can configure the columns and fields for the receipt pane and the totals pane. Additionally, certain operations that need higher screen resolutions such as Reports and Inventory management are not supported in the compact layout. 
 
 ### Screen resolutions that are provided
 

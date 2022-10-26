@@ -98,7 +98,7 @@ At startup, the POS application automatically selects the closest layout size th
 - **Layout type** – The POS application can show its UI in various modes to provide the best user experience on a given device.
 
     - **Modern POS – Full** – Full layouts are typically best for larger displays, such as desktop monitors and tablets. You can select the UI elements to include, specify the size and placement of those elements, and configure their detailed properties. Full layouts support both portrait and landscape configurations.
-    - **Modern POS – Compact** – Compact layouts are typically best for phones and small tablets. The design possibilities for compact devices are limited. You can configure the columns and fields for the receipt and totals panels.
+    - **Modern POS – Compact** – Compact layouts are typically best for phones and small tablets. The design possibilities for compact devices are limited. You can configure the columns and fields for the receipt and totals panels. Additionally, certain operations that need higher screen resolutions such as Reports and Inventory management are not supported in the compact layout. 
 
 - **Width/Height** – These values represent the effective screen size, in pixels, that is expected for the layout. Remember that some operating systems use scaling for high-resolution displays.
 

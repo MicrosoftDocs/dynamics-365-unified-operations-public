@@ -132,7 +132,7 @@ We recommend that you use Store Commerce or CPOS for all new deployments. Existi
 
 ### Prerequisites
 
-- Windows 10 version 17763.0 or later, Windows 11, or Windows Server 2019
+- Windows 10 version 17763.0 or later (Pro, Enterprise or Enterprise LTSC), Windows 11 (Pro, Enterprise, LTSC, and IOT Enterprise editions), or Windows Server 2019 (Standard, Essentials)
 - [Microsoft Edge WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/) (Use the Evergreen Standalone Installer.)
 - SQL Server (required only for offline)
 - Dynamics 365 Commerce (Commerce headquarters and Cloud Scale Unit)
@@ -165,6 +165,7 @@ You can also use the **help** command in PowerShell to find information about al
 | enablewebviewdevtools | Enable developer tools for Store Commerce. If you don't specify this parameter, developer tools will be enabled only if Windows Developer Mode is enabled. |
 | retailserverurl | Specify the default Retail Server URL to use for Store Commerce. If you don't specify this parameter, the user will be prompted to enter the Retail Server URL during device activation. |
 | useremoteappcontent | Use the remote application content to download the Store Commerce app content from CPOS that is hosted in CSU. By default, the local application content that is deployed with Store Commerce is used. |
+| disableaadauthentication | Disable the AAD authentication used by default during device authentication and use the Retail authentication (Operation ID and PIN) to activate the device. This parameter is used for on-premises deployments that use ADFS authentication. |
 | skipversioncheck | Skip the validation during downgrade. |
 | skipurlcheck | Skip the validation of URLs that are passed to the installer. |
 | logdirectorypath | Specify the path of the log's directory. |
@@ -177,7 +178,7 @@ You can also use the **help** command in PowerShell to find information about al
 
 To activate Store Commerce after installation, follow these steps.
 
-1. On the Windows **Start** menu, search for **Store Commerce**, and then open the application.
+1. On the Windows **Start** menu, search for **Store Commerce**, and then open the application. NOTE: The Store Commerce app should not be run with elevated privileges, and should not be run from an account with elevated privileges.
 1. On the application's start page, if you select **Remote app content** as the deployment option, enter the CPOS URL, and then select **Save**. You can find the CPOS URL on the environment details page in LCS or on the **Channel profiles** page in Commerce (**Dynamics 365 Commerce \> Channel setup \> Channel profiles**).
 1. Activate Store Commerce by following the steps in the [POS activation guide](retail-device-activation.md#activate-a-modern-pos-or-cloud-pos-device-by-using-guided-activation).
 1. After activation is completed, sign in to the application by using an employee account.

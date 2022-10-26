@@ -114,6 +114,10 @@ If you are installing Modern POS for use with an on-premises environment, you mu
 ModernPosSetupOffline.exe -UseAdfsAuthentication
 ```
 
+> [!NOTE]
+>
+> the "UseAdfsAuthentication" parameter is only available for non-sealed MPOS. Customers that need to use ADFS authentication for an on-premises deployment using the sealed extensibility model should use the [Store Commerce app](../dev-itpro/store-commerce.md) instead.
+
 ### Run the Modern POS installer on a Windows computer
 
 The Modern POS installer first extracts the associated files and then starts the installation.
@@ -333,7 +337,7 @@ The device should now be activated and ready to use.
     **Solution:** Verify that the Azure AD user is mapped to a worker who has POS permission to activate devices. The **Manage device** permission for the worker should be set to **Yes**.
 
 - When using Modern POS on an Android device, the device activation and Azure AD-based POS sign-in open the Azure AD sign-in page in a standalone browser instance, but the sign-in process doesn't proceed.
-    
+  
     **Solution:** Check whether your Commerce Scale Unit is version 10.0.22 or later, and that Modern POS is version 10.0.21 or earlier. If so, you must rebuild Modern POS from the latest Commerce sample repository (version 10.0.22 or later) and then update the Modern POS application on the Android device.
 
 - Device activation isn't completed. It fails during one of the steps.
