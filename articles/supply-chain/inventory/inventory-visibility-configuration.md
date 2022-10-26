@@ -28,6 +28,7 @@ Before you start to work with Inventory Visibility, you must complete the follow
 - [Partition configuration](#partition-configuration)
 - [Product index hierarchy configuration](#index-configuration)
 - [Reservation configuration (optional)](#reservation-configuration)
+- [Preload onhand index configuration](#preload-onhand-configuration)
 - [Default configuration sample](#default-configuration-sample)
 
 ## Prerequisites
@@ -488,6 +489,19 @@ A valid dimension sequence should strictly follow the reservation hierarchy, dim
 ## Available to promise configuration (optional)
 
 You can set up Inventory Visibility to let you schedule future on-hand changes and calculate available-to-promise (ATP) quantities. ATP is the quantity of an item that is available and can be promised to a customer in the next period. Use of this calculation can greatly increase your order fulfillment capability. To use this feature, you must enable it on the **Feature Management** tab and then set it up on the **ATP Setting** tab. For more information, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
+
+## <a name="preload-onhand-configuration"></a>Preload Onhand Index Query Configuration (optional)
+
+The Inventory Visibility service can periodically fetch and store a streamlined set of on-hand inventory data based on your configured dimensions to make that optimized information continuously available. 
+Please fllow the steps list in the web. Our current version only supports one set of dimension options. 
+
+- First, you have to clean up the storage in order to proceed to next step. We will only accept update on the preload setting when the preload storage is empty. 
+- Second, please choose the desired dimension options. 
+
+> [!NOTE]
+> when you have a large amount of data volumn in the preload storage entity, it is recommendaed to turn off the **OnHandIndexQueryPrelaod** feature first and then try to clean up the storage, since the cleanup process might take very long time to complete.
+> When you toggle the **OnHandIndexQueryPrelaod** feature to false, please select **Update Configuration** in the upper-right corner of the **Configuration** page in Power Apps to commit the change. 
+
 
 ## Complete and update the configuration
 
