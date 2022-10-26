@@ -166,9 +166,12 @@ Once you have completed migrating and validation of a sandbox environment, follo
  - Go-live [readiness assessment](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) should be completed 
 
 #### Steps to migrate Human Resources production environment 
+ 
  1. Log into LCS as the global administrator or designated service account user.  
->[!NOTE]
->It is recommended to use a named user account. The user should be logged in with the security role of **Project owner** or **Environment manager** in the LCS project. 
+ 
+   > [!NOTE]
+   > It's recommended to use a named user account. The user should be logged in with the security role of **Project owner** or **Environment manager** in the LCS project.
+    
 2. Open newly created Human resources migration project in LCS. 
 3. Review and complete appropriate phases of the migration methodology and project onboarding.  
 4. In the project dashboard, select **Migrate HR** in the Production pane.  
