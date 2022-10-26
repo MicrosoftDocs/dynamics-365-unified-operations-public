@@ -2,7 +2,7 @@
 # required metadata
 
 title: Threshold limit and exception threshold limit
-description: This topic describes the threshold and exception limits for Tax Deducted at Source (TDS).
+description: This article describes the threshold and exception limits for Tax Deducted at Source (TDS).
 author: kailiang
 ms.date: 02/12/2021
 ms.topic: article
@@ -16,8 +16,8 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
-# ms.search.scope: Core, Operations
+ms.reviewer: kfend
+# 
 # ms.tgt_pltfrm: 
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
@@ -33,7 +33,7 @@ ms.dyn365.ops.version: AX 10.0.17
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the threshold and exception limits for Tax Deducted at Source (TDS). The TDS on invoices and payments is always calculated considering the threshold limit and exception threshold limit defined for the TDS tax components on the **Withholding tax components** page. The TDS tax components are attached to TDS tax codes, which are included in the TDS tax groups. The TDS tax groups are attached to vendors and customers to calculate TDS at the invoice-level or payment-level.
+This article describes the threshold and exception limits for Tax Deducted at Source (TDS). The TDS on invoices and payments is always calculated considering the threshold limit and exception threshold limit defined for the TDS tax components on the **Withholding tax components** page. The TDS tax components are attached to TDS tax codes, which are included in the TDS tax groups. The TDS tax groups are attached to vendors and customers to calculate TDS at the invoice-level or payment-level.
 
 TDS is calculated if the amount for a transaction or the cumulative transactions posted with a specific TDS group for a vendor exceeds the threshold limit specified on the **Withholding tax components** page. TDS will not be calculated until the cumulative transaction amount exceeds the specified threshold limit.
 

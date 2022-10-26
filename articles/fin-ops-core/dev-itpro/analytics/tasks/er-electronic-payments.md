@@ -1,27 +1,18 @@
---- 
-# required metadata 
- 
+---
 title: ER Generate electronic documents for payments using a format configuration
-description: This topic describes how to use a new Electronic reporting (ER) format configuration to generate electronic documents for processing payments. 
-author: NickSelin
+description: This article describes how to use a new Electronic reporting (ER) format configuration to generate electronic documents for processing payments.
+author: kfend
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: VendPaymMode, LedgerJournalTable, LedgerJournalTransVendPaym, BankAccountTableLookUp   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: filatovm
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: VendPaymMode, LedgerJournalTable, LedgerJournalTransVendPaym, BankAccountTableLookUp
 ---
 # ER Generate electronic documents for payments using a format configuration
 

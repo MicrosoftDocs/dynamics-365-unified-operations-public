@@ -1,26 +1,18 @@
 ---
-# required metadata
 title: Goods in transit from vendor
-description: This topic provides information about the settings and actions that are required for the Counting act for goods in transit (INV-6) report.
-author: anasyash
+description: This article provides information about the settings and actions that are required for the Counting act for goods in transit (INV-6) report.
+author: AdamTrukawka
 ms.date: 05/20/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2019-06-28
 ms.dyn365.ops.version: 8.1.2
-
+ms.search.form: 
 ---
 
 # Goods in transit from vendor (Russia)

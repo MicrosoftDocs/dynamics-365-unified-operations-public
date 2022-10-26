@@ -3,7 +3,7 @@
  
 title: Create cost objects 
 description: This procedure shows how to create cost objects by importing the cost center financial dimension into Cost accounting via a data connector. 
-author: ShylaThompson
+author: twheeloc
 ms.date: 08/29/2018
 ms.topic: business-process 
 ms.prod:  
@@ -14,12 +14,12 @@ ms.technology:
 ms.search.form: CAMDimension, CAMAXFinancialDimensionMemberProviderConfiguration, CAMDimensionMember   
 audience: Application User 
 # ms.devlang:  
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm:  
 # ms.custom:  
 ms.search.region: Global
 # ms.search.industry: 
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-06-30 
 ms.dyn365.ops.version: Version 7.0.0 
 ---
@@ -31,25 +31,25 @@ This procedure shows how to create cost objects by importing the cost center fin
 
 
 ## Create new cost objects
-1. Go to Cost accounting > Dimensions > Cost object dimensions.
-2. Click New.
-3. In the Name field, type a value.
-4. In the Data connector for dimension members field, enter or select a value.
-5. In the Description field, type a value.
-6. Click Save.
+1. Go to **Cost accounting > Dimensions > Cost object dimensions**.
+2. Click **New**.
+3. In the **Name** field, type a value.
+4. In the **Data connector for dimension members** field, enter or select a value.
+5. In the **Description** field, type a value.
+6. Click **Save**.
 
 ## Configure the data connector
-1. Click Configure dimension member provider.
+1. Click **Configure dimension member provider**.
     * Select CostCenter to import the CostCenter dimension into Cost accounting.  
-2. In the Dimension name field, select Cost center.
-3. Click OK.
+2. In the **Dimension name** field, select Cost center.
+3. Click **OK**.
 
 ## Import cost centers
-1. Click Import dimension members.
-2. Click OK.
+1. Click **Import dimension members**.
+2. Click **OK**.
 
 ## View the imported cost centers
-1. Click View dimension members.
+1. Click **View dimension members**.
 
 
 

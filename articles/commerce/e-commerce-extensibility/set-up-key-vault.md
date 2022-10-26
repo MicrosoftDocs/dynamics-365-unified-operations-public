@@ -1,39 +1,29 @@
 ---
-# required metadata
-
 title: Set up Azure Key Vault for secure key management
-description: This topic describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.  
+description: This article describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.
 author: samjarawan
-ms.date: 09/17/2021
+ms.date: 10/12/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: 
+ms.assetid: 
 ---
 # Set up Azure Key Vault for secure key management
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.
+This article describes how to set up Azure Key Vault to provide secure key management in Dynamics 365 Commerce.
 
 Some Dynamics 365 Commerce e-commerce development scenarios require business-sensitive data such as credentials or access tokens that must be stored securely. [Azure Key Vault](https://azure.microsoft.com/services/key-vault/) provides the capability to import, store, and manage cryptographic keys and certificates that can be securely accessed as needed. 
 
-This topic shows how to do the following: 
+This article shows how to do the following: 
 
 - Create a Key Vault to securely store sensitive information.
 - Configure your e-commerce site to securely communicate with Retail Server.
@@ -58,11 +48,17 @@ To create a new Key Vault, follow these steps.
 
 ## Configure server-to-server authentication between the e-commerce Node application and Retail Server
 
+> [!NOTE]
+> If you are running Commerce version 10.0.31 or later, this section can be skipped.
+
 Next, the e-commerce Node application needs to be configured to securely communicate with Retail Server.
 
 For the following steps, you will need to have the tenant ID of the Azure App Service hosting your Node application, as well as the client ID of the managed identity tied to your Azure App Service. You will not have access to these IDs, so please work with your service integrator or support team to obtain the required information. Once you have these IDs available you can continue with the steps below.
 
 ### Add your Node application details into Retail Server’s authentication allow list
+
+> [!NOTE]
+> If you are running Commerce version 10.0.31 or later, this section can be skipped.
 
 To add your Node application details into Retail Server's authentication allow list, follow these steps.
 

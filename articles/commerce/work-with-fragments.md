@@ -1,35 +1,26 @@
 ---
-# required metadata
-
 title: Work with fragments
-description: This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
+description: This article describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
 ms.date: 02/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: retail
 ms.author: stuharg
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.search.industry: retail
+ms.search.form: 
 ---
 
 # Work with fragments 
 
 [!include [banner](includes/banner.md)]
 
-This topic describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
+This article describes why, when, and how to use fragments in Microsoft Dynamics 365 Commerce.
 
 Fragments allow for a centralized authoring experience for module configurations that must be reused throughout your site. For example, headers, footers, and banners are often configured as fragments, because they are shared across many pages. You can think of fragments as miniature webpages that can be inserted into other pages on your site. Fragments have their own lifecycle. In other words, they are created, referenced, updated, and deleted as independent entities in the authoring tools.
 
@@ -149,6 +140,8 @@ You can rename a fragment after it is created by editing it and then selecting t
 [Work with preset layouts](work-with-layouts.md)
 
 [Work with publish groups](publish-groups.md)
+
+[View version history to revert pages and fragments](version-history-revert.md)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

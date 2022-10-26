@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: NT2020.006 – Intermediary sales digital platform for NF-e
-description: This topic explains how to tag intermediary digital sales for NF-e.
+description: This article explains how to tag intermediary digital sales for NF-e.
 author: gionoder
 ms.date: 07/27/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-# ms.assetid: 
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: sndray
+ms.author: gionoder
 ms.search.validFrom: 2021-02-05
-ms.dyn365.ops.version: 8.0
-
+ms.dyn365.ops.version: 8
 ---
 
 # NT2020.006 – Intermediary sales digital platform for NF-e

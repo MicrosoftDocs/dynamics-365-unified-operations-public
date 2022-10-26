@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Upgrades, updates, and hotfixes resources
-description: This topic shows where to find information about upgrading, updating, and applying hotfixes to your Finance and Operations environment and data.
-author: margoc
+description: This article shows where to find information about upgrading, updating, and applying hotfixes to your finance and operations environment and data.
+author: LaneSwenka
 ms.date: 07/23/2019
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: margoc
+ms.author: laswenka
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: "intro-internal"
 ---
 
 # Upgrades, updates, and hotfixes resources
@@ -34,25 +23,25 @@ Upgrades, updates, and hotfixes can include moving to new product versions, code
 
 The processes for each type of upgrade are similar, but different enough that we think that you should review the topics for a specific task before you begin.
 
-## Upgrade from Microsoft Dynamics AX 2012 to Finance and Operations
+## Upgrade from Microsoft Dynamics AX 2012 to finance and operations
 
 To get started, review the following topics:
 
-- [Upgrade from AX 2012 to Finance and Operations](upgrade-overview-2012.md)
+- [Upgrade from AX 2012 to finance and operations](upgrade-overview-2012.md)
 
-- [Prepare to migrate code to Finance and Operations](prepare-migration.md)
+- [Prepare to migrate code to finance and operations](prepare-migration.md)
 
-## Migration from Microsoft Dynamics AX 2009 to Finance and Operations
-This Tech Talk video provides an introduction to migration from AX 2009 to Finance and Operations: [Dynamics 365 for Operations – Tech Talk: Migration tools](https://www.youtube.com/watch?v=kdQ58arACP4).
+## Migration from Microsoft Dynamics AX 2009 to finance and operations
+This Tech Talk video provides an introduction to migration from AX 2009 to finance and operations: [Dynamics 365 for Operations – Tech Talk: Migration tools](https://www.youtube.com/watch?v=kdQ58arACP4).
 
-## Upgrade from a previous version of Finance and Operations
+## Upgrade from a previous version of finance and operations
 
 The steps for applying updates and upgrading differ between cloud and on-premises implementations. 
 
 ### Cloud
-If you are upgrading a cloud version of Finance and Operations, review the following topics:
+If you are upgrading a cloud version of finance and operations, review the following topics:
 
-- [Process for moving to the latest update of Finance and Operations](upgrade-latest-update.md)
+- [Process for moving to the latest update of finance and operations](upgrade-latest-update.md)
 
 - [Apply the latest platform update to environments](upgrade-latest-platform-update.md)
 
@@ -60,7 +49,7 @@ If you are upgrading a cloud version of Finance and Operations, review the follo
 
 
 ### On-premises
-If you are applying updates to an on-premises version of Finance and Operations, review the following topic:
+If you are applying updates to an on-premises version of finance and operations, review the following article:
 
 - [Apply updates to on-premises deployments](../deployment/apply-updates-on-premises.md)
 - [Redeploy on-premises environments](../deployment/redeploy-on-prem.md)
@@ -77,7 +66,7 @@ This Tech Talk video provides an introduction servicing (applying code updates, 
 
  For more information, see: 
 - [Refresh database](../database/database-refresh.md)
-- [Set up technical support for Finance and Operations apps](../lifecycle-services/support-experience.md) 
+- [Set up technical support for finance and operations apps](../lifecycle-services/support-experience.md) 
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

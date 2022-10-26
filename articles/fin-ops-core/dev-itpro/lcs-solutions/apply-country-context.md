@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: Apply country/region context
-description: This topic provides information about how to apply country/region context to meet localization and translation requirements.
-author: ShylaThompson
+description: This article provides information about how to apply country/region context to meet localization and translation requirements.
+author: sericks007
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 21681
-ms.assetid: d02eee15-bbeb-4e0f-a59f-0313da9334da
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mrolecki
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 21681
+ms.assetid: d02eee15-bbeb-4e0f-a59f-0313da9334da
 ---
 
 # Apply country/region context

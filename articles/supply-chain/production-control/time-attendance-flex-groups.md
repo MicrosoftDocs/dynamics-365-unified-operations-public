@@ -2,7 +2,7 @@
 # required metadata
 
 title: Flex groups
-description: This topic describes how flex groups are used in Time and attendance.
+description: This article describes how flex groups are used in Time and attendance.
 author: johanhoffmann
 ms.date: 03/15/2017
 ms.topic: article

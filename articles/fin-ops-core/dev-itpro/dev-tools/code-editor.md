@@ -1,24 +1,24 @@
 ---
 title: Code editor features
-description: This topic describes the code editor for Visual Studio.
-author: RobinARH
+description: This article describes the code editor for Visual Studio.
+author: gianugo
 ms.date: 06/20/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 23941
-ms.assetid: 87d75162-a9dd-43d2-a316-833e2c799f08
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 23941
+ms.assetid: 87d75162-a9dd-43d2-a316-833e2c799f08
 ---
 
 # Code editor features
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the code editor for Visual Studio.
+This article describes the code editor for Visual Studio.
 
 ## Code editor
 

@@ -42,7 +42,7 @@ A dispatch board is the central location from which you can view the status of a
 
   - Review the list of service activities that have not been dispatched.
 
-For information about how to perform specific tasks in a dispatch board, see the topics in the **See also** section.
+For information about how to perform specific tasks in a dispatch board, see the articles in the **See also** section.
 
 ## See also
 

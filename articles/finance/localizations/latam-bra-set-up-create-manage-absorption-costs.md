@@ -1,28 +1,17 @@
 ---
-# required metadata
-
-title: Set up, create, and manage absorption costs 
-description: This topic provides information on how to set up, create, and manage absorption costs for Brazil. 
-author: ShylaThompson
+title: Set up, create, and manage absorption costs
+description: This article provides information on how to set up, create, and manage absorption costs for Brazil.
+author: AdamTrukawka
 ms.date: 09/13/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
-
 ---
 
 # Set up, create, and manage absorption costs 

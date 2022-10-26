@@ -2,9 +2,9 @@
 # required metadata
 
 title: Report as finished from the job card device
-description: This topic describes how to configure the system so that users of a job card device can report finished products from a production order to inventory.
+description: This article describes how to configure the system so that users of a job card device can report finished products from a production order to inventory.
 author: johanhoffmann
-ms.date: 07/31/2020
+ms.date: 08/05/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: johanho
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../includes/banner.md)]
 
-Workers use the **Report progress** page on the job card device to report quantities that have been completed for a production job. This topic describes how to set up various options that establish how workers can report as finished using this page and what happens next. Options include:
+Workers use the **Report progress** page on the job card device to report quantities that have been completed for a production job. This article describes how to set up various options that establish how workers can report as finished using this page and what happens next. Options include:
 
 - Control whether and how quantities that are reported as finished are added to inventory.
 - Control whether and how batch numbers are generated and applied when reporting as finished.
@@ -54,19 +54,18 @@ For more information about how to work with the **Production order defaults** pa
 
 ## Report batch-controlled items as finished
 
-The job card device supports three scenarios for reporting on batch items. These scenarios apply both to items that are enabled for advanced warehouse processes and to items that aren't enabled for advanced warehouse processes.
+The job card device supports three scenarios for reporting on batch items. These scenarios apply both to items that are enabled for warehouse management processes (WMS) and to items that aren't enabled for WMS.
 
 - **Manually assigned batch numbers** - Workers enter a custom batch number. This batch number might come from an external source that isn't known to the system.
 - **Predefined batch numbers** - Workers select a batch number in a list of batch numbers that the system automatically generates before the production order is released to the job card device.
 - **Fixed batch numbers** - Workers don't enter or select a batch number. Instead, the system automatically assigns a batch number to the production order before it's released.
 
-
 ### Enable the feature on your system
 
-To enable your job card devices to accept a batch number during reporting as finished, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the following features (in this order):
+To enable your job card devices to accept a batch number during reporting as finished, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the following features:
 
-1. Improved user experience for the Report progress dialog in the Job Card Device
-1. Enable to enter batch and serial numbers while reporting as finished from the Job Card Device
+- *Improved user experience for the Report progress dialog in the Job Card Device*
+- *Enable to enter batch and serial numbers while reporting as finished from the Job Card Device*<br>(As of Supply Chain Management version 10.0.29, this feature is on by default.)
 
 ### Configure products that require batch number reporting
 
@@ -133,7 +132,7 @@ When you use this scenario, the **Batch number** field that the **Report progres
 
 ## Report serial-controlled items as finished
 
-The job card device supports three scenarios for reporting on serial-controlled items. These scenarios apply both to items that are enabled for advanced warehouse processes and to items that aren't enabled for advanced warehouse processes.
+The job card device supports three scenarios for reporting on serial-controlled items. These scenarios apply both to items that are enabled for warehouse management processes (WMS) and to items that aren't enabled for WMS.
 
 - **Manually assigned serial numbers** - Workers enter a custom serial number. This serial number might come from an external source that isn't known to the system.
 - **Predefined serial numbers** - Workers select a serial number in a list of serial numbers that the system automatically generates before the production order is released to the job card device.
@@ -141,10 +140,10 @@ The job card device supports three scenarios for reporting on serial-controlled 
 
 ### Enable the feature on your system
 
-To enable your job card devices to accept a serial number during reporting as finished, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the following features (in this order):
+To enable your job card devices to accept a serial number during reporting as finished, you must use [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn on the following features:
 
-1. Improved user experience for the Report progress dialog in the Job Card Device
-1. Enable to enter batch and serial numbers while reporting as finished from the Job Card Device
+- *Improved user experience for the Report progress dialog in the Job Card Device*
+- *Enable to enter batch and serial numbers while reporting as finished from the Job Card Device*<br>(As of Supply Chain Management version 10.0.29, this feature is on by default.)
 
 ### Configure products that require serial-number reporting
 
@@ -216,7 +215,7 @@ When you use this scenario, the **Serial number** field that the **Report progre
 
 ## Report as finished to a license plate
 
-Advanced warehouse processes can use the license plate dimension to track inventory on warehouse locations that have been set up for this purpose. In this case, the license plate number is required when a worker reports quantities as finished.
+Warehouse management processes (WMS) can use the license plate dimension to track inventory on warehouse locations that have been set up for this purpose. In this case, the license plate number is required when a worker reports quantities as finished.
 
 ### Enable license plate reporting and label printing
 

@@ -2,7 +2,7 @@
 # required metadata 
  
 title: MY-00006 02 Print GST customer invoices with a relief clause
-description: This topic explains how to print GST customer invoices that include a relief clause. 
+description: This article explains how to print GST customer invoices that include a relief clause. 
 author: EvgenyPopovMBS
 ms.date: 08/29/2018
 ms.topic: business-process 

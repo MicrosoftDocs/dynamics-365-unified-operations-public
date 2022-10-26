@@ -2,7 +2,7 @@
 # required metadata
 
 title: Personnel actions FAQ
-description: This topic contains answers to questions that you might have if your organization uses personnel actions.
+description: This article contains answers to questions that you might have if your organization uses personnel actions.
 author: twheeloc
 ms.date: 10/28/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 3b953d5f-6325-4c9e-8b9b-6ab0458a73f8
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: AX 7.0.0, Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic contains answers to questions that you might have if your organization uses personnel actions. Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks. 
+This article contains answers to questions that you might have if your organization uses personnel actions. Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks. 
 
 Examples of tasks that might require personnel actions are:
  - When you create new positions. 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure number sequences for warehouse flows
-description: This topic provides an overview of the functionality that provides number sequence extensions for license plate IDs, wave label IDs, container IDs, and bill of lading IDs.
+description: This article provides an overview of the functionality that provides number sequence extensions for license plate IDs, wave label IDs, container IDs, and bill of lading IDs.
 author: Mirzaab
 ms.date: 06/10/2020
 ms.topic: article
@@ -45,7 +45,7 @@ This functionality makes it more efficient to support labeling of cartons and to
 
 ## Turn on the Number sequence extensions feature
 
-Before you can use the feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+Before you can use the feature, it must be turned on for your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Number sequence extensions*

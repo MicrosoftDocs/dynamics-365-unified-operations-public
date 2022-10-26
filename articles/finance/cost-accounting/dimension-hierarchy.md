@@ -2,7 +2,7 @@
 # required metadata
 
 title: Dimension hierarchy
-description: This topic provides information about dimension hierarchies. You use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.  
+description: This article provides information about dimension hierarchies. You use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.  
 author: AndersGirke
 ms.date: 06/16/2017
 ms.topic: article
@@ -15,13 +15,13 @@ ms.search.form: CAMDimensionHierarchy,
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
-ms.author: roschlom
+ms.author: twheeloc
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about dimension hierarchies. You use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.  
+This article provides information about dimension hierarchies. You use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.  
 
 ## Overview
 
@@ -207,13 +207,13 @@ If you create reports by using Excel or Power BI, only the first 15 levels of th
 The following example shows what a dimension hierarchy might look like in the reporting structure.
 
 | Cost object dimension hierarchy – Level 1 | Cost object dimension hierarchy – Level 2 | Cost object dimension hierarchy – Level 3 | Cost object dimension hierarchy – Level 4 | Cost object dimension hierarchy – Level 15 |
-|-------------------------------------------|-------------------------------------------|-------------------------------------------|-------------------------------------------|--------------------------------------------|
-| Organization                              | Admin                                     | Finance                                   | CC002                                     |                                            |
-| Organization                              | Admin                                     | Finance                                   | CC003                                     |                                            |
-| Organization                              | Admin                                     | Finance                                   | CC007                                     |                                            |
-| Organization                              | Admin                                     | HR                                        | CC001                                     |                                            |
-| Organization                              | Production                                | Packaging                                 | CC005                                     |                                            |
-| Organization                              | Production                                | Assembly                                  | CC006                                     |                                            |
+|----------------------------------|---------------------------------|-------------------------|-------------------------|----------------------------------------|
+| Organization              | Admin                 | Finance                    | CC002              |                                            |
+| Organization              | Admin                 | Finance                    | CC003              |                                            |
+| Organization              | Admin               | Finance                     | CC007               |                                            |
+| Organization              | Admin                | HR                           | CC001              |                                            |
+| Organization              | Production           | Packaging                    | CC005             |                                            |
+| Organization              | Production          | Assembly                      | CC006            |                                            |
 
 ### Update the dimension hierarchies that are used for reporting 
 

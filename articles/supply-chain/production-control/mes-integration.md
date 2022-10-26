@@ -1,8 +1,8 @@
 ---
 title: Integrate with third-party manufacturing execution systems
-description: This topic explains how you can integrate Microsoft Dynamics 365 Supply Chain Management with a third-party manufacturing execution system (MES).
+description: This article explains how you can integrate Microsoft Dynamics 365 Supply Chain Management with a third-party manufacturing execution system (MES).
 author: johanhoffmann
-ms.date: 10/01/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -40,9 +40,7 @@ Before you can use this feature, an administrator must turn it on in your system
     1. On the **License configuration** page, select the **Time and attendance** check box.
     1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md)
 1. Go to the **System administration \> Workspaces \> Feature management**.
-1. Turn on the feature that is listed in the following way (see also [Feature management overview](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)):
-    - **Module:** *Production control*
-    - **Feature name:** *Manufacturing execution system integration*
+1. Use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to turn on the *Manufacturing execution system integration* feature. (As of Supply Chain Management version 10.0.29, this feature is on by default.)
 
 ## Processes available for MES integration
 
@@ -233,7 +231,7 @@ For the *end production order* message, the `_messageType` value is `ProdProduct
 
 ## Other production information
 
-The messages support actions or events that happen on the shop floor. They are processed using the MES integration framework described in this topic. The design assumes that other reference information to be shared with the MES (such as product-related information, or the bill of materials or route (with its specific setup and configuration times) used in a specific production order) will be retrieved from the system using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) via file transfer or OData.
+The messages support actions or events that happen on the shop floor. They are processed using the MES integration framework described in this article. The design assumes that other reference information to be shared with the MES (such as product-related information, or the bill of materials or route (with its specific setup and configuration times) used in a specific production order) will be retrieved from the system using [data entities](../../fin-ops-core/dev-itpro/data-entities/data-entities-data-packages.md#data-entities) via file transfer or OData.
 
 ## Receive feedback about the state of a message
 
@@ -246,10 +244,11 @@ After the MES has sent a message to Supply Chain Management, it might be relevan
 
 In these cases, you can take advantage of the standard alert feature in Supply Chain Management. For information about how standard alerts work, see the following resources:
 
-- Help topic: [Alerts overview](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
-- Video: [Alert rule options in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
+- Help article: [Alerts overview](../../fin-ops-core/fin-ops/get-started/alerts-overview.md)
+- Video: [Alert rule options in finance and operations](https://www.youtube.com/watch?v=cpzimwOjicM&ab_channel=MicrosoftDynamics365)
 
 For example, you might set up the following alerts to provide feedback about the state of a message:
 
 - Create a business event ("Send externally") that is used when a message is *Failed*.
 - Send a notification and email to the IT admin or production floor manager.
+

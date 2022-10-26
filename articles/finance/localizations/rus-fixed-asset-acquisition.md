@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Acquiring fixed assets and putting them into operation (Russia)
-description: This topic provides information about fixed asset acquisitions for Russia.
-author: anasyash
+description: This article provides information about fixed asset acquisitions for Russia.
+author: AdamTrukawka
 ms.date: 09/25/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: RAssetTable, LedgerJournalTable
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
+ms.search.form: RAssetTable, LedgerJournalTable
 ---
 
 # Acquiring fixed assets and putting them into operation (Russia)

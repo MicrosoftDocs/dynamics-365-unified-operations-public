@@ -1,8 +1,8 @@
 ---
 title: Scheduling with infinite capacity
-description: This topic provides information about infinite capacity scheduling for Planning Optimization. It also describes current feature limitations.
+description: This article provides information about infinite capacity scheduling for Planning Optimization. It also describes current feature limitations.
 author: t-benebo
-ms.date: 09/21/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.search.form: RouteInventProd
 audience: Application User
@@ -19,12 +19,9 @@ ms.dyn365.ops.version: 10.0.22
 
 The *Infinite capacity scheduling for Planning Optimization* feature introduces scheduling that is based on route information. It lets you schedule jobs based on a wide range of route setups. Scheduling for Planning Optimization covers frequently used route settings, including the route operation sequence or requirements for route operation resources.
 
-## Turn on the infinite capacity scheduling feature
+## Turn the infinite capacity scheduling feature on or off
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
-
-- **Module:** *Master planning*
-- **Feature name:** *Infinite capacity scheduling for Planning Optimization*
+To use this feature, it must be turned on for your system. As of Supply Chain Management version 10.0.29, the feature is turned on by default. Admins can turn this functionality on or off by searching for the *Infinite capacity scheduling for Planning Optimization* feature in the [Feature management](../../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace.
 
 For more information about this feature, see [Scheduling with resource selection based on capability](capability-based-scheduling.md).
 

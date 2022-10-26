@@ -2,7 +2,7 @@
 # required metadata
 
 title: Diagnostic types for nonconformances
-description: This topic describes how to use and create diagnostic types that can be used with nonconformances.
+description: This article describes how to use and create diagnostic types that can be used with nonconformances.
 author: yufeihuang
 ms.date: 03/23/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to use and create diagnostic types that can be used with nonconformances.
+This article describes how to use and create diagnostic types that can be used with nonconformances.
 
 You use the **Diagnostic types** page to define a classification of diagnostic actions. Then, when you create a correction for a nonconformance, you select a diagnostic. A correction specifies what type of diagnostic action should be taken for an approved nonconformance, and who should take that action. It also specifies the requested completion date and the planned completion date.
 

@@ -1,33 +1,24 @@
---- 
-# required metadata 
- 
+---
 title: EUR-00015 Set up VAT ID
-description: This procedure walks you through VAT ID registration prerequisites, such as setting up a registration type and assigning it to a registration category. 
-author: v-oloski
+description: This procedure walks you through VAT ID registration prerequisites, such as setting up a registration type and assigning it to a registration category.
+author: AdamTrukawka
 ms.date: 08/29/2018
-ms.topic: business-process 
-ms.prod:  
-ms.technology:  
- 
-# optional metadata 
- 
-ms.search.form: TaxRegistrationType, TaxRegistrationTypeCreate, TaxRegistrationLegislationTypes   
-audience: Application User 
-# ms.devlang:  
+ms.topic: business-process
+ms.prod: 
+ms.technology: 
+audience: Application User
 ms.reviewer: kfend
-# ms.tgt_pltfrm:  
-# ms.custom:  
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
-# ms.search.industry: 
-ms.author: v-oloski
-ms.search.validFrom: 2016-06-30 
-ms.dyn365.ops.version: Version 7.0.0 
+ms.author: atrukawk
+ms.search.validFrom: 2016-06-30
+ms.dyn365.ops.version: Version 7.0.0
+ms.search.form: TaxRegistrationType, TaxRegistrationTypeCreate, TaxRegistrationLegislationTypes
 ---
 # EUR-00015 Set up VAT ID
 
 [!include [banner](../../includes/banner.md)]
 
-This procedure walks you through VAT ID registration prerequisites, such as setting up a registration type and assigning it to a registration category. You can find additional information about registration IDs and registration ID processing, including required prerequisites, in the Registration IDs help topic. 
+This procedure walks you through VAT ID registration prerequisites, such as setting up a registration type and assigning it to a registration category. You can find additional information about registration IDs and registration ID processing, including required prerequisites, in the Registration IDs help article. 
 
 The information here applies to all European countries/regions. The task was created using the demo data company DEMF with Germany as the legal entity primary address. This task is intended for system administrators. This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.
 

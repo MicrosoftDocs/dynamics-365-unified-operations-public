@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: Foreign currency sales, purchases, and transfers
-description: This topic describes the functionality for registering transactions for the sale, purchase, and transfer of currency.
-author: anasyash
+description: This article describes the functionality for registering transactions for the sale, purchase, and transfer of currency.
+author: AdamTrukawka
 ms.date: 02/20/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2018-10-28
 ms.dyn365.ops.version: 8.1
-
 ---
 
 # Foreign currency sales, purchases, and transfers

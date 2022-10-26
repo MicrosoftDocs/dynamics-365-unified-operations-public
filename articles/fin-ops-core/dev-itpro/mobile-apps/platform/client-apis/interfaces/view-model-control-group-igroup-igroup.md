@@ -1,17 +1,18 @@
 ---
 title: Group type
 description: Group container control type.
-author: tonyafehr
-ms.date: 08/01/2017
+author: jasongre
+ms.date: 05/24/2022
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
+ms.author: jasongre
 ---
 
 # Group type
 
 [!include [banner](../../../../includes/banner.md)]
+[!include [mobile app deprecated](../../../../includes/mobile-app-deprecation-banner.md)]
 
 Group container control type.
 A group control is a container control that has any number of controls as children.

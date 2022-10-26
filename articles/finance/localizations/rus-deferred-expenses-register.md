@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Deferred expenses register
-description: This topic provides information about how to generate and set up deferrals.
-author: Akroshkina
+description: This article provides information about how to generate and set up deferrals.
+author: AdamTrukawka
 ms.date: 08/16/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Russia
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2020-09-11
 ms.dyn365.ops.version: 10.0.0
-
+ms.search.form: 
 ---
 
 # Deferrals register
@@ -94,7 +84,7 @@ The register lines show the following information:
 
 ### Set up the deferrals register
 
-Set up the deferrals register by following the instructions in the topic, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register). In the **Register type** field, select **Deferrals**.
+Set up the deferrals register by following the instructions in the article, [Create tax registers and the tax register journal](rus-profit-tax-registers.md#create-a-tax-register). In the **Register type** field, select **Deferrals**.
 
 ### Examples
 

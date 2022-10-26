@@ -2,7 +2,7 @@
 # required metadata
 
 title: Operations scheduling options
-description: This topic describes the options for operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
+description: This article describes the options for operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
 author: johanhoffmann
 ms.date: 06/20/2017
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the options for operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
+This article describes the options for operations scheduling. You can use operations scheduling to provide a general estimate of the production process over time.
 
 Operations scheduling calculates the following information for a production order:
 

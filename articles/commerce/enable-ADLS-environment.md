@@ -1,37 +1,28 @@
 ---
-# required metadata
-
 title: Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment
-description: This topic provides instructions on how to connect an Azure Data Lake Storage Gen 2 solution to a Dynamics 365 Commerce environment's Entity store. This is a required step before enabling product recommendations.
+description: This article provides instructions on how to connect an Azure Data Lake Storage Gen 2 solution to a Dynamics 365 Commerce environment's Entity store. This is a required step before enabling product recommendations.
 author: bebeale
 ms.date: 08/31/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: global
-ms.search.industry: Retail, eCommerce
 ms.author: bebeale
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: 10.0.5
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: Retail, eCommerce
+ms.search.form: 
 ---
 
 # Enable Azure Data Lake Storage in a Dynamics 365 Commerce environment
 
 [!include [banner](includes/banner.md)]
 
-This topic provides instructions on how to connect an Azure Data Lake Storage Gen2 solution to a Dynamics 365 Commerce environment's Entity store. This is a required step before enabling product recommendations.
+This article provides instructions on how to connect an Azure Data Lake Storage Gen2 solution to a Dynamics 365 Commerce environment's Entity store. This is a required step before enabling product recommendations.
 
 In the Dynamics 365 Commerce solution, the data necessary to compute recommendations, products, and transactions are aggregated in the environment's Entity store. To make this data accessible to other Dynamics 365 services, such as data analytics, business intelligence, and personalized recommendations, it is necessary to connect the environment to a customer-owned Azure Data Lake Storage Gen2 solution.
 

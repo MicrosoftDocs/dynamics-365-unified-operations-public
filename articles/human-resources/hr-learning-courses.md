@@ -15,7 +15,7 @@ ms.search.form: HcmCourseType, HcmCourseTypeGroup, HRMCourseTable, HcmLearningWo
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7532
 ms.assetid: a6950c29-8b3e-45b2-9084-ddfb1317ffaa

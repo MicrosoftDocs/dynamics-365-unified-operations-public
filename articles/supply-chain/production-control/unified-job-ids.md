@@ -4,7 +4,7 @@ description: This feature provides a single, unified number sequence that genera
 author: johanhoffmann
 ms.date: 03/25/2021
 ms.topic: article
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+# ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -21,7 +21,7 @@ This feature provides a single, unified number sequence that generates job IDs f
 
 ## Turn on this feature for your system
 
-If your system doesn't already include the feature described in this topic, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Unified number sequence for job IDs* feature.
+If your system doesn't already include the feature described in this article, go to [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) and turn on the *Unified number sequence for job IDs* feature.
 
 ## Set up the unified number sequence for job IDs
 

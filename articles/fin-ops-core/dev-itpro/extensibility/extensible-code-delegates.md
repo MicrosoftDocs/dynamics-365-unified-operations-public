@@ -1,26 +1,19 @@
 ---
 title: Delegates
-description: This topic provides information about how to write extensible code and delegates.
+description: This article provides information about how to write extensible code and delegates.
 author: MichaelFruergaardPontoppidan
 ms.date: 09/09/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 268724
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: mfp
 ms.search.validFrom: 2018-09-09
 ms.dyn365.ops.version: Platform update 20
+ms.custom: 268724
+ms.assetid: 
 ---
 
 

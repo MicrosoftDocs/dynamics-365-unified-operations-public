@@ -1,25 +1,15 @@
 ---
-# required metadata
-
 title: ER framework API changes for Application update 7.3
-description: This topic describes Electronic reporting framework APIs changes in the Dynamics 365 for Finance and Operations, Enterprise edition Application update 7.3.
-author: NickSelin
+description: This article describes Electronic reporting framework APIs changes in the Dynamics 365 Finance, Enterprise edition Application update 7.3.
+author: kfend
 ms.date: 11/28/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
-ms.search.region: Global 
-# ms.search.industry: 
-ms.author: nselin
+ms.search.region: Global
+ms.author: filatovm
 ms.search.validFrom: 2017-11-28
 ms.dyn365.ops.version: Platform update 8
 ---
@@ -28,7 +18,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how the API of the Electronic reporting (ER) framework has been changed in the Dynamics 365 for Finance and Operations, Enterprise edition Application update 7.3.
+This article describes how the API of the Electronic reporting (ER) framework has been changed in the Dynamics 365 Finance, Enterprise edition Application update 7.3.
 
 There are two types of changes to the ER APIs:
 

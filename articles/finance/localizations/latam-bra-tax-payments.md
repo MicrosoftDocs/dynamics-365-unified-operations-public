@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Tax payments in Brazil
-description: This topic provides information about tax payments in Brazil. In Brazil, users can register and post tax payments together with related fiscal information that must be reported to the tax authorities.
-author: sndray
+description: This article provides information about tax payments in Brazil. In Brazil, users can register and post tax payments together with related fiscal information that must be reported to the tax authorities.
+author: AdamTrukawka
 ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: FBTaxAssessmentPayment_BR, FBTaxAssessmentPaymentOtherDebits_BR
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 270254
-ms.assetid: 92223189-69a8-4a40-b867-ef9b4f14c23d
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 270254
+ms.assetid: 92223189-69a8-4a40-b867-ef9b4f14c23d
+ms.search.form: FBTaxAssessmentPayment_BR, FBTaxAssessmentPaymentOtherDebits_BR
 ---
 
 # Tax payments in Brazil
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about tax payments in Brazil. In Brazil, users can register and post tax payments together with related fiscal information that must be reported to the tax authorities.
+This article provides information about tax payments in Brazil. In Brazil, users can register and post tax payments together with related fiscal information that must be reported to the tax authorities.
 
 ## Overview
 

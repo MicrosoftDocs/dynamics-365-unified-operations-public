@@ -2,7 +2,7 @@
 # required metadata
 
 title: Production parameters in Manufacturing execution 
-description: This topic provides information about the setup of production parameters in Manufacturing execution. 
+description: This article provides information about the setup of production parameters in Manufacturing execution. 
 author: johanhoffmann
 ms.date: 06/16/2017
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the setup of production parameters in Manufacturing execution.
+This article provides information about the setup of production parameters in Manufacturing execution.
 
 The **Manufacturing execution** module is intended primarily for manufacturing companies. It can be used to register time and item consumption on production jobs or projects. Before you start to use Manufacturing execution for job registrations, you must set up various production parameters that define how and when registrations are posted during the production process. The settings of production parameters affect inventory management, production management, and cost calculation.
 
@@ -66,7 +66,7 @@ On the **Production parameters** page, automatic BOM consumption is set up in th
 
 For each stage, the **Automatic BOM consumption** field lets you select one of three methods for picking items for a production order:
 
-- **Flushing principle** – This option is used in combination with an option that is defined for the BOM in the **Production** module. Click **Production control** &gt; **Common** &gt; **Production orders** &gt; **All production orders**. On the **All production orders** page, select a production order in the list, and then, on the Action Pane, click **BOM**. On the **BOM** page, on the **Setup** tab, in **Flushing principle** field, select one of the following options:
+- **Flushing principle** – This option is used in combination with an option that is defined for the BOM in the **Production** module. Click **Production control** &gt; **Production orders** &gt; **All production orders**. On the **All production orders** page, select a production order in the list, and then, on the Action Pane, click **BOM**. On the **BOM** page, on the **Setup** tab, in **Flushing principle** field, select one of the following options:
 
   - **Start**
   - **Finish**
@@ -74,7 +74,7 @@ For each stage, the **Automatic BOM consumption** field lets you select one of t
   - Blank (No option is selected.)
   - **Available at location**
 
-    In Manufacturing execution, if **Flushing principle** is selected in the **Automatic BOM consumption** field on the **Start** tab, all materials that are set to **Start** in the BOM are deducted from inventory when the operation is started. The **Available at location** option is used for products that are enabled for advanced warehouse processes. If you select this flushing principle, material is flushed when warehouse work for raw material picking is completed. Material is also flushed when a BOM line that uses this flushing principle is released to warehouse and the material is available at the production input location.
+    In Manufacturing execution, if **Flushing principle** is selected in the **Automatic BOM consumption** field on the **Start** tab, all materials that are set to **Start** in the BOM are deducted from inventory when the operation is started. The **Available at location** option is used for products that are enabled for warehouse management processes (WMS). If you select this flushing principle, material is flushed when warehouse work for raw material picking is completed. Material is also flushed when a BOM line that uses this flushing principle is released to warehouse and the material is available at the production input location.
 
     > [!NOTE]
     > If the **Flushing principle** field is set on the **Start** tab in Manufacturing execution, you must select the same principle on either the **Operations** tab or the **Report as finished** tab. This requirement helps guarantee that materials are deducted from inventory on BOMs that use **Finish** as a flushing principle on the production order. If the same flushing principle isn't selected on either the **Operations** tab or the **Report as finished** tab, materials might be deducted from inventory two times.

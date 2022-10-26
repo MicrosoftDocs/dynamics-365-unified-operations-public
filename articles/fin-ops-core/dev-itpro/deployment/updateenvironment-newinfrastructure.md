@@ -2,7 +2,7 @@
 # required metadata
 
 title: Update an environment
-description: This topic explains how to update an environment that was deployed by using the self-service deployment experience.
+description: This article explains how to update an environment that was deployed by using the self-service deployment experience.
 author: laneswenka
 ms.date: 04/29/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 8.1.1
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/limited-availability.md)]
 
-This topic walks through the process of applying updates to an environment that was deployed by using the [self-service deployment](infrastructure-stack.md) experience.
+This article walks through the process of applying updates to an environment that was deployed by using the [self-service deployment](infrastructure-stack.md) experience.
 
 > [!IMPORTANT]
 > In the next-generation infrastructure, updates are applied differently than they are applied in the current flow. *Whatever is provided in the package is applied to the environment, and it **overwrites** whatever is already present in that environment.* Therefore, you **must** create a single deployable package that contains all customizations and independent software vendor (ISV) solutions from your build environment. If the list of models in the environment differs from the list of models in in the package, you receive a warning before the update is applied. For information about how to create a single package, see [Manage third-party models and runtime packages by using source control](../dev-tools/manage-runtime-packages.md).
@@ -105,7 +105,7 @@ This automatic update will overwrite the Microsoft binary from your latest sandb
 
 Packages are no longer applied directly to production environments. Historically, in Microsoft-managed environments, customers were able to apply any package that was successfully applied to a sandbox environment and marked as a *Release candidate*. However, this approach posed many challenges, because there are order of operation scenarios where application of package A before package B produced a healthy environment, but a different order led to regressing functionality.
 
-To address these challenges, Microsoft has introduced the image-based, update process. As was discussed earlier in this topic, as packages are applied to sandbox environments, Microsoft creates images that are given an **Update name** value. This value represents the whole runtime, including Microsoft code and all custom code as a single unit. When customers want to promote a change to a production environment, they select an update from a sandbox environment's history. The whole runtime is then moved to the production infrastructure as is and should better safeguard against regressions.
+To address these challenges, Microsoft has introduced the image-based, update process. As was discussed earlier in this article, as packages are applied to sandbox environments, Microsoft creates images that are given an **Update name** value. This value represents the whole runtime, including Microsoft code and all custom code as a single unit. When customers want to promote a change to a production environment, they select an update from a sandbox environment's history. The whole runtime is then moved to the production infrastructure as is and should better safeguard against regressions.
 
 > [!IMPORTANT]
 > Package application causes system downtime. All relevant services will be stopped, and you won't be able to use your environments while the package is being applied.

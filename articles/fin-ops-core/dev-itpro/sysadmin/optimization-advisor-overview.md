@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Optimization advisor overview
-description: This topic describes how you can use Optimization advisor to help ensure optimal configuration of Finance and Operations. 
-author: roxanadiaconu
+description: This article describes how you can use Optimization advisor to help ensure optimal configuration of finance and operations.
+author: kamaybac
 ms.date: 07/23/2019
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: SelfHealingWorkspace
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
+ms.reviewer: kamaybac
 ms.search.region: global
-ms.search.industry: 
-ms.author: sericks
+ms.author: kamaybac
 ms.search.validFrom: 2017-12-01
-ms.dyn365.ops.version: 7.3 
-
+ms.dyn365.ops.version: 7.3
+ms.assetid: 
+ms.search.industry: 
+ms.search.form: SelfHealingWorkspace
 ---
 
 # Optimization advisor overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how you can use Optimization advisor to help ensure optimal configuration of Finance and Operations.
+This article describes how you can use Optimization advisor to help ensure optimal configuration of finance and operations.
 
 ## Overview
 
@@ -49,7 +39,7 @@ Standard security policies apply to optimization opportunities. For example, the
 
 When you take action on some optimization opportunities, the system calculates the impact of the opportunity in terms of the reduction in the runtime of business processes. Unfortunately, this feature isn't available for all optimization opportunities.
 
-To learn more about Optimization advisor, watch the short [Optimization advisor in Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=MRsAzgFCUSQ) video.
+To learn more about Optimization advisor, watch the short [Optimization advisor in Dynamics 365 Finance](https://www.youtube.com/watch?v=MRsAzgFCUSQ) video.
 
 ## Optimization rules
 
@@ -95,7 +85,7 @@ To deactivate the evaluation of specific rules, select the opportunity that was 
 
 [Create rules for Optimization advisor](./create-rules-optimization-advisor.md)
 
-[Optimization advisor in Dynamics 365 for Finance and Operations (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
+[Optimization advisor in Dynamics 365 Finance (Video)](https://www.youtube.com/watch?v=MRsAzgFCUSQ)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

@@ -1,11 +1,11 @@
 ---
 title: Lookup form pattern
-description: This topic provides information about the Lookup form pattern. 
+description: This article provides information about the Lookup form pattern.
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the Lookup form pattern. Custom lookup forms should be used when a standard framework-provided lookup would not provide the correct data, or when advanced visualization of the data is required.
+This article provides information about the Lookup form pattern. Custom lookup forms should be used when a standard framework-provided lookup would not provide the correct data, or when advanced visualization of the data is required.
 
 ## Usage
 

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Automate vendor payment proposals
-description: This topic explains how organizations that pay vendors on a recurring schedule can automate the process of generating vendor payment proposals.
+description: This article explains how organizations that pay vendors on a recurring schedule can automate the process of generating vendor payment proposals.
 author: kweekley
 ms.date: 04/08/2020
 ms.topic: article
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 262034
 ms.assetid: 9db38b3f-26b3-436e-8449-7ff243568a18

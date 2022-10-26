@@ -1,28 +1,48 @@
 ---
-# required metadata
-
-title: Sovereign and local cloud deployment options for Dynamics 365 Finance and Dynamics 365 Supply Chain Management
-description: This topic provides information about the three localization options that the Microsoft global network of datacenters offers to help you meet data residency, sovereignty, and compliance requirements.
-author: hasaid
-ms.date: 11/12/2021
+title: Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies
+description: This article provides information about the supported geographies and endpoints for Microsoft Dynamics 365 Commerce, Dynamics 365 Finance, and Dynamics 365 Supply Chain Management.
+author: Shailesh4all
+ms.date: 08/29/2022
 ms.topic: article
 audience: IT Pro
 ms.reviewer: sericks
 ms.search.region: Global
-ms.author: hasaid
-ms.search.validFrom: 2021-11-10
+ms.author: shailesn
+ms.search.validFrom: 2022-04-28
 ---
 
-# Sovereign and local cloud deployment options for Dynamics 365 Finance and Dynamics 365 Supply Chain Management
+# Dynamics 365 Finance, Supply Chain Management, and Commerce in local geographies
 
 [!include[banner](../includes/banner.md)]
 
-The Microsoft global network of datacenters offers the following localization options to help you meet data residency, sovereignty, and compliance requirements:
+## Data residency
 
-- [Dynamics 365 Finance and Dynamics 365 Supply Chain Management in US Government Community Cloud (GCC)](us-gcc-deployment.md)
-- [Finance and Operations apps in France](france-local-deployment.md)
-- [Dynamics 365 Finance and Dynamics 365 Supply Chain Management operated by 21Vianet in China](china-local-deployment.md)
+Microsoft Dynamics 365 Commerce, Dynamics 365 Finance, and Dynamics 365 Supply Chain Management are generally available to support data residency in specific geographies. These deployment options serve customers in regulated industries and commercial organizations that do business with entities in specific geographies that require local data residency.
 
-## See also
+All required services and related data are deployed in the corresponding data centers of the geography. These services and data include Microsoft Dynamics Lifecycle Services (LCS), telemetry, databases, and environments. Customer data doesn't leave the geographic boundary.
 
-For information about product availability per country or region and workload, see [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/availability-reports/).
+### Supported local geographies and endpoints
+
+The following table lists the local geographies and endpoints that Commerce, Finance, and Supply Chain Management support.
+
+| Geography | LCS endpoint |
+|-----------|--------------|
+| France | [https://fr.lcs.dynamics.com/](https://fr.lcs.dynamics.com/) |
+| United Arab Emirates | [https://uae.lcs.dynamics.com/](https://uae.lcs.dynamics.com/) |
+| South Africa | [https://sa.lcs.dynamics.com/](https://sa.lcs.dynamics.com/) |
+| Switzerland | [https://ch.lcs.dynamics.com/](https://ch.lcs.dynamics.com/) |
+| Europe | [https://eu.lcs.dynamics.com/](https://eu.lcs.dynamics.com/) |
+| Norway | [https://no.lcs.dynamics.com/](https://no.lcs.dynamics.com/) |
+
+## Feature availability in local geographies
+
+Microsoft strives to maintain functional parity between our commercially available services across geographies. We continue to evaluate these services and capabilities for inclusion and updates in future releases. Use the below documents to get an overview of services and their availability in the geographies you are planning to use. 
+
+*	[Microsoft Business Application Feature Availability - Americas](https://aka.ms/bapfunctionalparityamericas)
+*	[Microsoft Business Application Feature Availability - EMEA](https://aka.ms/bapfunctionalparityemea)
+*	[Microsoft Business Application Feature Availability - APAC](https://aka.ms/bapfunctionalparityapac)
+
+For more information about these exceptions, or for questions about regional services, contact [Microsoft Dynamics 365 Support](https://dynamics.microsoft.com/support/).
+
+For information about product availability per country and workload, see [Dynamics 365 and Power Platform availability](https://dynamics.microsoft.com/availability-reports/).
+

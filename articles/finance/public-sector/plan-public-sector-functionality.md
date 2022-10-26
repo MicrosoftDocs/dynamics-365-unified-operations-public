@@ -1,37 +1,28 @@
 ---
-# required metadata
-
 title: Plan for public sector functionality
-description: This topic suggests the first steps to setting up Public sector functionality.
-author: v-kiarnd
+description: This article suggests the first steps to setting up Public sector functionality.
+author: TaylorVH
 ms.date: 02/18/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysConfiguration
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: twheeloc
-# ms.tgt_pltfrm: 
-ms.custom: 19851
-ms.assetid: 877eabf3-19c7-4897-b33e-c5a8a319cb35
 ms.search.region: Global
-ms.search.industry: Public sector
-ms.author: twheeloc
+ms.author: TaylorVH
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 19851
+ms.assetid: 877eabf3-19c7-4897-b33e-c5a8a319cb35
+ms.search.industry: Public sector
+ms.search.form: SysConfiguration
 ---
 
 # Plan for public sector functionality
 
 [!include [banner](../includes/banner.md)]
 
-This topic suggests the first steps to setting up Public sector functionality.
+This article suggests the first steps to setting up Public sector functionality.
 
 ## What should I do first?
 

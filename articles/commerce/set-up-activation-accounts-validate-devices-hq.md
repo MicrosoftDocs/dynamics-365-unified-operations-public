@@ -1,38 +1,28 @@
 ---
-# required metadata
-
 title: Manage activation accounts and validate devices
-description: This topic explains how an IT Pro can set up Commerce activation accounts for workers to activate Modern POS or Cloud POS devices.
-author: athinesh99
+description: This article explains how an IT Pro can set up Commerce activation accounts for workers to activate Modern POS or Cloud POS devices.
+author: josaw1
 ms.date: 07/15/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: HcmWorker, RetailDeviceActivationValidation, RetailPositionPosPermission
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 20471
-ms.assetid: 5394e10c-539c-4e26-a097-504c6950cd56
 ms.search.region: Global
-ms.search.industry: Retail
-
-ms.author: athinesh
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-
+ms.custom: 20471
+ms.assetid: 5394e10c-539c-4e26-a097-504c6950cd56
+ms.search.industry: Retail
+ms.search.form: HcmWorker, RetailDeviceActivationValidation, RetailPositionPosPermission
 ---
 
 # Manage activation accounts and validate devices
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how an IT Pro can set up Commerce activation accounts for workers to activate Modern POS or Cloud POS devices.
+This article explains how an IT Pro can set up Commerce activation accounts for workers to activate Modern POS or Cloud POS devices.
 
 ## Setting up a device activation account for a single worker
 

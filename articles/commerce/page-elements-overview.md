@@ -1,35 +1,27 @@
 ---
-# required metadata
-
 title: Page model glossary
-description: This topic describes the various elements that are used on the pages of a Microsoft Dynamics 365 Commerce site.
+description: This article describes the various elements that are used on the pages of a Microsoft Dynamics 365 Commerce site.
 author: phinneyridge
 ms.date: 10/09/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form:  
 audience: Application User
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: "intro-internal"
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: 
 ms.author: niholman
 ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: Release 10.0.5
-
+ms.custom: "intro-internal"
+ms.search.industry: 
+ms.search.form: 
 ---
 # Page model glossary
 
 
 [!include [banner](includes/banner.md)]
 
-This topic describes the various elements that are used on the pages of a Microsoft Dynamics 365 Commerce site.
+This article describes the various elements that are used on the pages of a Microsoft Dynamics 365 Commerce site.
 
 ## Page element definitions
 

@@ -4,7 +4,7 @@
 title: Export and import transactions for General ledger consolidation for Brazil
 description: You can transfer the general ledger transactions from the source company to the consolidated account in the consolidated company without consolidating the transactions.
 author: v-gonode
-ms.date: 10/31/2017
+ms.date: 10/10/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -19,7 +19,7 @@ ms.reviewer: kfend
 # ms.custom: 
 ms.search.region: Brazil
 # ms.search.industry: 
-ms.author: kfend
+ms.author: gionoder
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 

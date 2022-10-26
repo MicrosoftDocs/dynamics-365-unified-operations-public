@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Electronic invoicing setup
-description: This topic provides an overview of the process for setting up and configuring Electronic invoicing.
-author: dkalyuzh
+description: This article provides an overview of the process for setting up and configuring Electronic invoicing.
+author: gionoder
 ms.date: 02/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: dkalyuzh
+ms.author: gionoder
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Electronic invoicing setup
 
 [!include [banner](../includes/banner.md)]
 
-The topic provides an overview of the process for setting up and configuring Electronic invoicing. You must complete the setup steps in the order that is specified here. If a step is mandatory, but you skip it, the functionality won't work correctly, and multiple failures will occur during subsequent steps or when you use the functionality. 
+The article provides an overview of the process for setting up and configuring Electronic invoicing. You must complete the setup steps in the order that is specified here. If a step is mandatory, but you skip it, the functionality won't work correctly, and multiple failures will occur during subsequent steps or when you use the functionality. 
 
 Before you begin, make sure that all main components are set up correctly, that you have signed up for Regulatory Configuration Service (RCS) and have an instance of RCS, and that the Electronic invoicing add-in is installed for your Microsoft Dynamics 365 Finance or Dynamics 365 Supply Chain Management environment. For more information, see [Sign up and install Electronic invoicing](e-invoicing-install-add-in-microservices-lcs.md).
 

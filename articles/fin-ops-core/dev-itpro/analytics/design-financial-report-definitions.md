@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Report definitions in financial report designer
 description: This article provides information about report definitions.
-author: ShylaThompson
+author: aprilolson
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: FinancialReports
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 59131
-ms.assetid: 966a3f1d-c59c-4a84-acd4-5bb7e65144c8
+ms.reviewer: twheeloc
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611 
-
+ms.dyn365.ops.version: Version 1611
+ms.custom: 59131
+ms.assetid: 966a3f1d-c59c-4a84-acd4-5bb7e65144c8
+ms.search.form: FinancialReports
 ---
 
 # Report definitions in financial report designer

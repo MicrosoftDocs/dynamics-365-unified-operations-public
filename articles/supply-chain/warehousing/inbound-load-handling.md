@@ -2,7 +2,7 @@
 # required metadata
 
 title: Warehouse handling of inbound loads for purchase orders
-description: This topic describes the warehouse handling process for inbound loads for purchase orders.
+description: This article describes the warehouse handling process for inbound loads for purchase orders.
 author: Mirzaab
 ms.date: 03/21/2020
 ms.topic: article
@@ -16,7 +16,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -28,7 +28,7 @@ ms.dyn365.ops.version: 10.0.10
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes the warehouse handling process for inbound loads for purchase orders.
+This article describes the warehouse handling process for inbound loads for purchase orders.
 
 For each inbound load, your system should already include a related sales order, and it might also contain a related load specification and/or transportation plan. For more information about how to create and manage inbound loads, see [Business process: Planning transportation for inbound loads](/dynamicsax-2012/appuser-itpro/business-process-planning-transportation-for-inbound-loads).
 
@@ -60,7 +60,7 @@ The following illustration shows the typical flow for handling inbound loads tha
 
 ## <a name="register-item-quantities-arriving"></a>Register item quantities that arrive on an inbound load
 
-Microsoft Dynamics 365 Supply Chain Management supports several operational approaches to recording the arrival of ordered products. Therefore, you can configure the system to match your specific business requirements. This section describes how to register incoming item quantities by using a mobile device when advanced warehouse management is turned on in the system. However, there is an alternative flow that is based on using the item arrival journal instead of a mobile device. For more information about that flow, see [Register items for an advanced warehousing enabled item using an item arrival journal](tasks/register-items-advanced-warehousing.md).
+Microsoft Dynamics 365 Supply Chain Management supports several operational approaches to recording the arrival of ordered products. Therefore, you can configure the system to match your specific business requirements. This section describes how to register incoming item quantities by using a mobile device when warehouse management processes (WMS) is turned on in the system. However, there is an alternative flow that is based on using the item arrival journal instead of a mobile device. For more information about that flow, see [Register items enabled for warehouse management processes using an item arrival journal](tasks/register-items-advanced-warehousing.md).
 
 When an inbound load first arrives at the warehouse, warehouse workers must register the item quantities that are included in the shipment. Typically, they use handheld scanners. This workflow is available only if the following items are present in the system:
 
@@ -213,7 +213,7 @@ The following table summarizes the effects of the **Allow multiple product recei
 | Yes | No updates | _Received_, if the total registered load quantity is equal to or more than the load quantity | |
 | Yes | No updates | _Shipped_ or _In process_, if the total registered load quantity is less than the load quantity | |
 
-After the **Load status** field is set to _Received_, no more product receipt postings can be done for that load. However, the worker can register the remaining order quantity against the received load under the following conditions. (For more information, see the [Load over-receiving](#load-over-receiving) section earlier in this topic.)
+After the **Load status** field is set to _Received_, no more product receipt postings can be done for that load. However, the worker can register the remaining order quantity against the received load under the following conditions. (For more information, see the [Load over-receiving](#load-over-receiving) section earlier in this article.)
 
 - The version of Supply Chain Management is older than version 10.0.11.
 - The _Over receipt of load quantities_ feature is turned on, and the **Load line quantity over receipt** field on the mobile device menu item for the load item receiving action is set to _Allow_.
@@ -263,7 +263,7 @@ Companies that use loads to plan and manage transportation and warehouse handlin
 
 ### Prepare your system to run the sample scenarios
 
-To work through the sample scenarios that are described in this section, you must first make sure that all the required features are turned on in your system. The required demo data must also be available in the system.
+To work through the sample scenarios that are described in this section, you must first make sure that all the required features are turned on for your system. The required demo data must also be available in the system.
 
 #### Turn on the required features
 
@@ -283,7 +283,7 @@ These scenarios require the _Multiple product receipt postings per load_ feature
 
 #### Enable sample data
 
-To work through these scenarios by using the specified sample records and values, you must be using a system where the standard demo data is installed. You must also select the **USMF** legal entity before you begin.
+To work through these scenarios by using the specified sample records and values, you must be using a system where the standard [demo data](../../fin-ops-core/fin-ops/get-started/demo-data.md) is installed. You must also select the **USMF** legal entity before you begin.
 
 #### Add a menu item for receiving load items when a mobile device is used
 

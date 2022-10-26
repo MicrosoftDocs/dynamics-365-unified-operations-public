@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: NEWGUID ER function
-description: This topic provides information about how the NEWGUID Electronic reporting (ER) function is used.
-author: NickSelin
+description: This article provides information about how the NEWGUID Electronic reporting (ER) function is used.
+author: kfend
 ms.date: 09/09/2021
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2021-09-08
 ms.dyn365.ops.version: AX 10.0.23
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # NEWGUID ER function

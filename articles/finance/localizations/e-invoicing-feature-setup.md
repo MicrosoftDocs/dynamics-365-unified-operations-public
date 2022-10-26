@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Work with feature setups
-description: This topic explains how to set up Electronic invoicing features.
-author: dkalyuzh
+description: This article explains how to set up Electronic invoicing features.
+author: gionoder
 ms.date: 12/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: dkalyuzh
+ms.author: gionoder
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: 
 ---
 
 # Work with feature setups

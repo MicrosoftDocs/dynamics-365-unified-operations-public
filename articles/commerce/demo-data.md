@@ -2,7 +2,7 @@
 # required metadata
 
 title: Demo data screen layouts in Modern POS (MPOS) and Cloud POS
-description: This topic provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Dynamics 365 Commerce.
+description: This article provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Dynamics 365 Commerce.
 author: josaw1
 ms.date: 10/05/2017
 ms.topic: article
@@ -31,11 +31,11 @@ ms.dyn365.ops.version: Retail April 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Dynamics 365 Commerce.
+This article provides information about the screen layouts that are included with the demo data set for the point of sale (POS) experiences in Dynamics 365 Commerce.
 
 ## Overview
 
-The sample screen layouts that are included with Commerce demo data provide content that is optimized for various retail segments, store worker roles, and devices. A single layout can contain several layout sizes and combinations of button grids, to help ensure coverage as store workers move between devices and stations. This topic highlights the differences between these layouts, the operations that they provide, and the overall experiences that they deliver.
+The sample screen layouts that are included with Commerce demo data provide content that is optimized for various retail segments, store worker roles, and devices. A single layout can contain several layout sizes and combinations of button grids, to help ensure coverage as store workers move between devices and stations. This article highlights the differences between these layouts, the operations that they provide, and the overall experiences that they deliver.
 
 ![Cross-device demo data layouts.](../commerce/media/demo-screen-layouts-fig-1-1.png)
 

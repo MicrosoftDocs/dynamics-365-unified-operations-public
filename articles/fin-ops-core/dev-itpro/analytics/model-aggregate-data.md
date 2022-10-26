@@ -1,6 +1,4 @@
 ---
-# required metadata
-
 title: Model aggregate data
 description: This tutorial will walk you through the process of modeling aggregate data.
 author: MilindaV2
@@ -8,23 +6,14 @@ ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 10234
-ms.assetid: b91f6ad9-31dc-4717-82bf-5fd2a466c100
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: milindav
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 10234
+ms.assetid: b91f6ad9-31dc-4717-82bf-5fd2a466c100
 ---
 
 # Model aggregate data
@@ -35,7 +24,7 @@ This tutorial will walk you through the process of modeling aggregate data.
 
 ## Prerequisites
 
-This tutorial requires you to access the environment using Remote Desktop, and be provisioned as an administrator. For more information, see the topic named [Deploy and access development environments](../dev-tools/access-instances.md).
+This tutorial requires you to access the environment using Remote Desktop, and be provisioned as an administrator. For more information, see the article named [Deploy and access development environments](../dev-tools/access-instances.md).
 
 ## Key concepts
 - **Aggregate measurements**, similar to **perspectives** and **Cubes** from earlier versions, enable you to model and consume aggregate data.

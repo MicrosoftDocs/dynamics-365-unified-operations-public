@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: Create Electronic reporting (ER) configurations
-description: This topic provides background information that will help you start to use Electronic reporting to create configurations. 
-author: nselin
+description: This article provides background information that will help you start to use Electronic reporting to create configurations.
+author: kfend
 ms.date: 02/01/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 27621
-ms.assetid: e3f7960d-2e01-46a7-9ac8-c355ac933cd6
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 27621
+ms.assetid: e3f7960d-2e01-46a7-9ac8-c355ac933cd6
+ms.search.form: ERSolutionTable, ERVendorTable, ERWorkspace
 ---
 
 # Create Electronic reporting (ER) configurations
 
 [!include [banner](../includes/banner.md)]
 
-As part of the requirements for Microsoft Dynamics Lifecycle Services (LCS) solutions for localization and translation, localization ISV solution providers must implement country/region-specific or solution-specific features by using the Electronic reporting tool. This topic provides background information that will help you start to use Electronic reporting to create configurations. This topic isn't meant to replace any available and upcoming Electronic reporting documentation, but is intended as a supplemental view from the perspective of localization requirements.
+As part of the requirements for Microsoft Dynamics Lifecycle Services (LCS) solutions for localization and translation, localization ISV solution providers must implement country/region-specific or solution-specific features by using the Electronic reporting tool. This article provides background information that will help you start to use Electronic reporting to create configurations. This article isn't meant to replace any available and upcoming Electronic reporting documentation, but is intended as a supplemental view from the perspective of localization requirements.
 
 Electronic reporting (ER) is a configurable tool that helps you create and maintain regulatory electronic reporting and payments, based on the following three concepts:
  - Configuration instead of coding
@@ -132,7 +122,7 @@ You can choose how to move your electronic reporting functionality into ER. Howe
 | ER                  | Electronic reporting is an engine that simplifies the creation of electronic reports for information interchange with governments, banks, and other parties. Currently, Electronic reporting supports text, XML, and OpenXML spreadsheet formats, and provides an extension interface to support more formats. |
 | Transformation       | If you have a typical action that must be done on the source of data before it is sent as output to a format, you can introduce a transformation and attach it to format components. Transformation is an ER formula that takes one value as a parameter and returns another value. For example, you have many format fields that contain spaces, and the spaces should be replaced by spaces when the fields are exported. In this case, you can create a transformation that takes a string argument and uses the REPLACE function to do the job. You can then create string components and associate them with that transformation. |
 | Data model           | A data model provides a structure for data. This structure is used to abstractly describe certain business domain areas at sufficient detail to satisfy the reporting requirements in this domain. |
-| Configuration        | A container for either a data model or a format, together with its mappings to data sources, that can be maintained and executed, and that supports versioning. The configuration is the entity that will be imported or exported to organize electronic document format exchange between Finance and Operations instances. |
+| Configuration        | A container for either a data model or a format, together with its mappings to data sources, that can be maintained and executed, and that supports versioning. The configuration is the entity that will be imported or exported to organize electronic document format exchange between finance and operations instances. |
 | Derive action        | An operation that uses a configuration that already exists as a basis to create a new configuration. |
 | Rebase action        | An operation that updates a derived configuration with changes that were introduced in a new version of the base configuration. The version number is selected at the rebase initialization stage. |
 | Update conflict      | A conflict that is discovered during the rebase action, where the new base version contains adjustments of a format/mapping element (name, property, and so on) that has also been adjusted in the derived version. |
@@ -147,3 +137,4 @@ You can choose how to move your electronic reporting functionality into ER. Howe
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: French Intrastat
-description: This topic contains information about Intrastat declaration in France.
-author: anasyash
-ms.date: 07/9/2021
+description: This article contains information about Intrastat declaration in France.
+author: AdamTrukawka
+ms.date: 07/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ---
 
@@ -95,7 +93,7 @@ The table also indicates the report level of the field. The field can be **4** (
     3. On the **Commodity code hierarchy** FastTab, in the **Category hierarchy** field, select **Intrastat**.
     4. On the **General** FastTab, in the **Transaction code** field, select the code that is used for transfers of goods.
     5. In the **Credit note** field, select the code that is used for returns of goods.
-    6. In the **Obligation level for export** field, enter the level of detail for the export report. The level that you select affects the lines that are shown on the report. For more information, see the tables at the beginning of this topic.
+    6. In the **Obligation level for export** field, enter the level of detail for the export report. The level that you select affects the lines that are shown on the report. For more information, see the tables at the beginning of this article.
 
 3. Go to **Organization administration** > **Organizations** > **Legal entities**, select your company, and then follow these steps:
 

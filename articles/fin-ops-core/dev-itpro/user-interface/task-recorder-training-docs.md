@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Create documentation or training with Task Recorder
-description: This topic explains what Task recorder and task guides are, how to create recordings, and how to customize Microsoft task guides and include them in your Help.
-author: josaw1
+description: This article explains what Task recorder and task guides are, how to create recordings, and how to customize Microsoft task guides and include them in your Help.
+author: jasongre
 ms.date: 03/24/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: SysHelpSetup
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 25391
-ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: josaw
+ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 25391
+ms.assetid: 59bf39f8-1464-441e-8b23-9a856c73471b
+ms.search.form: SysHelpSetup
 ---
 
 # Create documentation or training with Task Recorder
@@ -34,7 +24,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!INCLUDE [PEAP](../../../includes/peap-1.md)]
 
-This topic explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides and include them in your Help.
+This article explains what Task recorder and task guides are, how to create task recordings, and how to customize Microsoft task guides and include them in your Help.
 
 > [!IMPORTANT]
 > You can record your own task guides for Dynamics 365 Human Resources, but you won't be able to save them to a Business Process Modeler (BPM) library or open them from the Help pane at this time. You can save them locally or to a network location, and then open and replay them using Task recorder. 

@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Suspend and resume a transaction in the point of sale (POS)
-description: This topic explains how users can suspend in-progress transactions and then resume them later or on a different register by using Dynamics 365 Commerce.
-author: jblucher
+description: This article explains how users can suspend in-progress transactions and then resume them later or on a different register by using Dynamics 365 Commerce.
+author: josaw1
 ms.date: 11/27/2018
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 261234
-ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
 ms.search.region: global
-ms.search.industry: Retail
-ms.author: jeffbl
+ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 261234
+ms.assetid: 7cd68ecc-cc09-48ab-8cb8-48d5c304effa
+ms.search.industry: Retail
 ---
 
 # Suspend and resume a transaction in the point of sale (POS)

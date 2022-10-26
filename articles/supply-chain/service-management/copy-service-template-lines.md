@@ -57,7 +57,7 @@ The service template lines are now copied to the service agreement, together wit
 
 The service template lines are now copied to the new service order, together with the attached service object and service task relations. 
 
-## Related topics
+## Related articles
 
 [Service templates](service-template.md)
 

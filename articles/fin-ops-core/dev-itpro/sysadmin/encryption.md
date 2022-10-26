@@ -1,31 +1,21 @@
 ---
-# required metadata
-
-title: Encryption in Finance and Operations apps
-description: This topic describes the encryption technology that is used to protect customer data while at rest in an environment's SQL Server database and Azure Storage.
+title: Encryption in finance and operations apps
+description: This article describes the encryption technology that is used to protect customer data while at rest in an environment's SQL Server database and Azure Storage.
 author: nedb
 ms.date: 06/15/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 21631
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: nedb
 ms.search.validFrom: 2020-01-01
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 21631
 ---
 
-# Encryption in Finance and Operations apps
+# Encryption in finance and operations apps
 
 [!include [banner](../includes/banner.md)]
 
@@ -35,7 +25,7 @@ Microsoft uses encryption technology to protect customer data while at rest in a
 
 All instances utilize [Microsoft SQL Server Transparent Data Encryption (TDE)](/sql/relational-databases/security/encryption/transparent-data-encryption) and [Azure Storage encryption](/azure/storage/common/storage-service-encryption) to perform real-time encryption of data when written to the disk at rest. 
 
-Finance and Operations apps use server-side encryption using service-managed keys. All key management aspects such as key issuance, rotation, and backup are handled by Microsoft.
+Finance and operations apps use server-side encryption using service-managed keys. All key management aspects such as key issuance, rotation, and backup are handled by Microsoft.
 
 In addition to the default encryption at rest provided above, you can use the encryption API available in the **Global** X++ class. The methods **Global::editEncryptedField()** and **Global::editEncryptedStringField()** use the environment-specific data encryption certificate to perform data encryption and decryption. You can use these methods as an additional layer of protection beyond the default encryption at rest technology used for data storage.
 
@@ -45,11 +35,11 @@ Connections established between customers and Microsoft datacenters are encrypte
 
 ### Supported TLS versions
 
-Finance and Operations apps support TLS 1.2 only. Earlier TLS versions, 1.0 and 1.1, are not supported.
+Finance and operations apps support TLS 1.2 only. Earlier TLS versions, 1.0 and 1.1, are not supported.
 
 ### Supported cipher suites
 
-Finance and Operations apps only support the following cipher suites:
+Finance and operations apps only support the following cipher suites:
 
 * TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
 * TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256

@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Email ER destination type
-description: This topic explains how to configure an email destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
-author: NickSelin
+description: This article explains how to configure an email destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
+author: kfend
 ms.date: 08/03/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 97423
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 97423
+ms.assetid: 
+ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 ---
 
 # Email ER destination type
@@ -167,7 +157,7 @@ The following illustration shows the structure of an ER format that was configur
 
 [![Structure of an ER format that generates outbound documents.](./media/ER_Destinations-Email-Grouping1.png)](./media/ER_Destinations-Email-Grouping1.png)
 
-The following illustration shows the process, as described in this topic, of grouping individual components and enabling the **Email** destination for the new group, so that a collection letter note is sent together with appropriate customer invoices as email attachments.
+The following illustration shows the process, as described in this article, of grouping individual components and enabling the **Email** destination for the new group, so that a collection letter note is sent together with appropriate customer invoices as email attachments.
 
 [![Grouping individual components and enabling the Email destination.](./media/ER_Destinations-Email-Grouping2.gif)](./media/ER_Destinations-Email-Grouping2.gif)
 

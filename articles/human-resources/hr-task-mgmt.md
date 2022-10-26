@@ -2,9 +2,9 @@
 # required metadata
 
 title: Task management
-description: This topic explains the task management functionality that is available in Microsoft Dynamics 365 Human Resources.
+description: This article explains the task management functionality that is available in Microsoft Dynamics 365 Human Resources.
 author: twheeloc
-ms.date: 12/20/2021
+ms.date: 09/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,14 +15,14 @@ ms.search.form:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
 ms.search.region: Global
 # ms.search.industry: 
 ms.author: twheeloc
-ms.search.validFrom: 2021-29-11
+ms.search.validFrom: 2022-06-09
 ms.dyn365.ops.version: Human Resources
 
 ---
@@ -49,7 +49,7 @@ Every employee who is hired in the United States must complete tasks such as fil
 
 **Example 2**
 
-A company has both seasonal employees and regular full-time employees. Although some tasks (such as verifying the arrival time of the new employee) apply to employees of both types, some additional tasks apply only to regular full-time employees. In this case, you can create two checklists. Both checklists include the tasks that apply to both seasonal and regular full-time employees, but only one checklist includes that tasks that are specific to regular full-time employees.
+A company has both seasonal employees and regular full-time employees. Although some tasks (such as verifying the arrival time of the new employee) apply to employees of both types, some additional tasks apply only to regular full-time employees. In this case, you can create two checklists. Both checklists include the tasks that apply to both seasonal and regular full-time employees, but only one checklist includes the tasks that are specific to regular full-time employees.
 
 ## Task management workspace
 
@@ -62,24 +62,26 @@ The **Offboarding** tab contains a list of employees who are exiting the company
 The **Transitions** tab contains an **All tasks** list that shows all tasks for all employees who will be changing positions or who have recently changed positions. There is also a list of overdue tasks and a list of tasks that are assigned to the current user.
 
 On all three tabs, HR assistants and managers can complete the following activities:
-
-- Apply a checklist to an employee.
-- Update the status of a task.
-- Reassign a task.
-- Update the due date of a task.
+- Apply a checklist to an employee
+- Update the status of a task
+- Reassign a task
+- Update the due date of a task
 
 > [!NOTE]
 > By default, the **Onboarding** tab shows employees who were hired in the last seven days. To change this setting, on the **Human resources parameters** page, on the **General** tab, in the **Recent hires** field, enter a time frame. The information in the **Recent hires** list can be shown for a specific number of days, months, or years. For example, to view the list of employees who were hired in the last 14 days, set the **Period** field to **14** and the **Unit** field to **Days**.
->
-> On the **Human resources parameters** page, you can also update the date range for the lists of exiting and exited employees that are shown on the **Offboarding** tab.
->
-> These settings also apply to the **Personnel management** workspace.
+> On the **Human resources parameters** page, you can also update the date range for the lists of exiting and exited employees that are shown on the **Offboarding** tab. These settings also apply to the **Personnel management** workspace.
 
 ## Setting up tasks
 
 You can create tasks individually and then reuse them in multiple checklists. To create a task, on the **Onboarding setup** page, on the **Tasks** tab, select **New**.
 
+You can assign a created task to multiple checklists by selecting the task and then selecting **Apply to checklists** on the menu.
+
 Alternatively, you can add tasks directly to a checklist. To add a task to a checklist, on the **Onboarding setup** page, on the **Checklist** tab, either create a new checklist to add the task to, or add the task to an existing checklist.
+
+To edit a task in the library, select **Edit** on the task library menu. If the task is associated with any checklists, those checklists will be shown on the **Edit task** page. If you want the tasks in any checklists to be updated with the edits, select those checklists in the **Apply to checklists** section.
+
+To delete tasks from the library, select the **Delete** option. If a task is associated with any checklist, this action won't delete the task from that checklist. The task must be removed from the checklist in a separate action.
 
 > [!NOTE]
 > If you add a task directly to a checklist, you can't reuse it in other checklists.
@@ -143,7 +145,15 @@ Complex tasks might require multiple steps, or the person who is performing the 
 
 ## Setting up checklists
 
-A checklist is a group of tasks. You can create as many checklists as you require, and you can assign the same tasks to multiple checklists. When you create a checklist, you specify an owner and a calendar.
+A checklist is a group of tasks. You can create as many checklists as you require, and you can assign the same tasks to multiple checklists.
+
+To create a new task in a checklist, select **New** on the **Tasks** menu bar. When you create a new task, you can select to add it to the task library, so that it can be shared across multiple checklists. You can add the task to the library only if the **Apply task to library** option is set to **Yes**. If you add the task to the task library, you can also add it to other checklists at the same time by selecting those checklists in the **Apply to checklists** section. If you don't add the task to the library, it will exist only in the checklist that you create it in.
+
+To edit a task in the checklist, select **Edit**. If the task is associated with any checklists, those checklists will be shown on the **Edit task** page. If you want the tasks in other checklists to be updated with the edits, select those checklists in the **Apply to checklists** section.
+
+To remove tasks from the checklist, select **Remove**. This action just removes tasks from the checklist. It doesn't delete them from the task library. To delete a task from the library, go to the task library page, and select **Delete**.
+
+When you create a checklist, you specify an owner and a calendar.
 
 If the **Assignment type** field for a task is set to **Position**, **Manager**, or **Group**, but no specific individual can be derived from the assignment type, the task will be assigned to the checklist owner. Here are some examples of situations where tasks will be assigned to the checklist owner:
 
@@ -176,7 +186,7 @@ After an assignment group is created, it's available for selection when a task i
 
 An onboarding, offboarding, or transition process can include many tasks. To make it easier to assign all the required tasks to a checklist, you can create optional task groups to categorize related tasks. For example, the HR, IT, and Payroll departments must each complete specific tasks to hire a new employee. Therefore, you create the following task groups: **HR**, **IT**, and **Payroll**. Then, when you create a task, you can associate one of those task groups with it.
 
-When you want to add a task to a checklist, you can filter the list of tasks by the task group that the desired task is assigned to. For example, when you create a checklist template, you can filter the list so that only the IT tasks that are assigned to to the **IT** task group are show. Therefore, you can ensure that only the relevant IT tasks are selected.
+When you want to add a task to a checklist, you can filter the list of tasks by the task group that the desired task is assigned to. For example, when you create a checklist template, you can filter the list so that only the IT tasks that are assigned to the **IT** task group are shown. Therefore, you can ensure that only the relevant IT tasks are selected.
 
 ## Using checklists
 
@@ -193,6 +203,13 @@ You can also apply a checklist to an employee by opening their **Worker** page a
 ## Completing tasks
 
 On the **Employee self service** page, an employee can view all the tasks that are assigned to them. For each assigned task, **Task**, **Description**, **Instructions**, and **Contact person** values are shown. Additionally, for each task, the employee can open the associated external webpage or the associated page in the Dynamics 365 app.
+
+Tasks can also be displayed on the default dashboard. To display tasks on the default dashboard:
+1. Go to **User Options – Preferences – Task Management** 
+2. Select the **Display tasks on default dashboard** to **On**.  
+
+>[!Note] 
+>The **Task management** feature must be turned on in **Feature management** for the option to display in **User options**.
 
 Tasks can be marked as **In progress**, **Canceled**, or **Completed**. If a task was assigned to a group, it will be marked as **Completed** when one person in the group completes it.
 

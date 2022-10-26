@@ -1,27 +1,17 @@
 ---
-# required metadata
-
 title: Deprecation of methods and metadata elements
-description: This topic provides information about the deprecation of methods and metadata elements that become obsolete as the code base evolves. 
-author: jorisdg
+description: This article provides information about the deprecation of methods and metadata elements that become obsolete as the code base evolves.
+author: gianugo
 ms.date: 02/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: [leave blank for most, retail, public sector]
-ms.author: jorisde
-ms.search.validFrom: 2019-1-31 
-ms.dyn365.ops.version: 8.1.3 
+ms.author: gianura
+ms.search.validFrom: 2019-01-31
+ms.dyn365.ops.version: 8.1.3
 ---
 
 # Deprecation of methods and metadata elements

@@ -1,36 +1,27 @@
 ---
-# required metadata
-
 title: VAT statements details for Italy
-description: This topic explains how to set up a VAT statement for legal entities in Italy. 
-author: ShylaThompson
+description: This article explains how to set up a VAT statement for legal entities in Italy.
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: TaxYearlyCom_IT, TaxAuthority, TaxPeriod
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 269664
-ms.assetid: af07d122-5694-4de6-96bf-7bf5478b0175
 ms.search.region: Italy
-# ms.search.industry: 
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 269664
+ms.assetid: af07d122-5694-4de6-96bf-7bf5478b0175
+ms.search.form: TaxYearlyCom_IT, TaxAuthority, TaxPeriod
 ---
 
 # VAT statements details for Italy
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up a VAT statement for legal entities in Italy. 
+This article explains how to set up a VAT statement for legal entities in Italy. 
 
 ## Set up customer/vendor tax information for tax reports
 

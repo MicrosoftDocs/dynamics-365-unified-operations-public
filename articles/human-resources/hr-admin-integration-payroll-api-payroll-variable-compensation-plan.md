@@ -2,7 +2,7 @@
 # required metadata
 
 title: Payroll variable compensation plan
-description: This topic provides details and an example query for the Payroll variable compensation plan entity in Dynamics 365 Human Resources.
+description: This article provides details and an example query for the Payroll variable compensation plan entity in Dynamics 365 Human Resources.
 author: twheeloc
 ms.date: 06/15/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-This topic describes the Payroll variable compensation plan entity for Dynamics 365 Human Resources.
+This article describes the Payroll variable compensation plan entity for Dynamics 365 Human Resources.
 
 ### Description
 

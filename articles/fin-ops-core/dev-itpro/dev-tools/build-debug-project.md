@@ -1,17 +1,17 @@
 ---
 title: Build and debug projects
-description: This tutorial uses the Fleet Management app to show you how to set breakpoints, modify code, and build the result. 
+description: This tutorial uses the Fleet Management app to show you how to set breakpoints, modify code, and build the result.
 author: pvillads
 ms.date: 02/06/2019
 ms.topic: article
 audience: Developer
-ms.reviewer: tfehr
-ms.custom: 26731
-ms.assetid: 5c2378fe-cb34-4a81-a940-57d4e13eb282
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: pvillads
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
+ms.custom: 26731
+ms.assetid: 5c2378fe-cb34-4a81-a940-57d4e13eb282
 ---
 
 # Build and debug projects
@@ -50,7 +50,7 @@ The rental company has had unfortunate events when customers rent cars using cre
     [![Breakpoint in FMRentalCheckoutProcessor.](./media/redcirclemargin_builddebugproj.png)](./media/redcirclemargin_builddebugproj.png) 
 
     The FinalizeRentalCheckout method is called when a rental transaction is saved. This method calls the delegate named RentalTransactionAboutTobeFinalizedEvent. You can implement an event handler method, which is called by this delegate. The method that calls the delegate passes a parameter, named RentalConfirmation, which contains a value that indicates whether the rental should be allowed or blocked. If the rental is allowed, the value contains "true"; if it's blocked, the value contains "false". An event handler can change this value, based on any test the developer chooses to implement in code. In this case, we'll modify the code to test the expiration date of the credit card.
-10. Press F5 to start the application for debugging, or, on the **Debug** menu, click **Start Debugging**. It's important that you start the application in one of these ways. If you don't, the Visual Studio debugger won't start, so you won't hit any of the breakpoints you've set. **Note**: The debugger needs to relate code position to source positions. It does this through consuming PDB files produced alongside the assemblies and net modules. The debugger will load symbols from the PDB files as described in the settings in the global tools settings. To open the options page containing the setting that controls which symbols load, go to the **Tools** menu and choose **Options**. In the **Microsoft Dynamics 365 for Finance and Operations** group, select the **Debugging** page. If this option is selected, the system will load symbols from only the PDB files related to the artifacts in the current solution. This reduces the startup time significantly, so be sure it’s selected for this lab. Be aware that when this option is selected, it won’t be possible to see source code from entities outside of the current solution. After a few moments, the browser will start and display the startup object that was selected in the project.
+10. Press F5 to start the application for debugging, or, on the **Debug** menu, click **Start Debugging**. It's important that you start the application in one of these ways. If you don't, the Visual Studio debugger won't start, so you won't hit any of the breakpoints you've set. **Note**: The debugger needs to relate code position to source positions. It does this through consuming PDB files produced alongside the assemblies and net modules. The debugger will load symbols from the PDB files as described in the settings in the global tools settings. To open the options page containing the setting that controls which symbols load, go to the **Tools** menu and choose **Options**. In the **Microsoft Dynamics 365 Finance** group, select the **Debugging** page. If this option is selected, the system will load symbols from only the PDB files related to the artifacts in the current solution. This reduces the startup time significantly, so be sure it’s selected for this lab. Be aware that when this option is selected, it won’t be possible to see source code from entities outside of the current solution. After a few moments, the browser will start and display the startup object that was selected in the project.
 11. The **Current Rentals** page will open.
     1.  In the Action Pane, click **Edit**.
     2.  When the page is displayed, click **Show list** in the **Show/Hide** list (or press **Ctrl+F8**).
@@ -219,3 +219,4 @@ Earlier in this tutorial, you had the opportunity to add code to the project and
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
+

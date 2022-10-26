@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure fiscal books
-description: This topic explains how to configure fiscal books. Fiscal books help you consolidate fiscal and statutory books into electronic files, so that you can fulfill the requirements under SPED.
+description: This article explains how to configure fiscal books. Fiscal books help you consolidate fiscal and statutory books into electronic files, so that you can fulfill the requirements under SPED.
 author:  v-gonode
 ms.date: 04/04/2017
 ms.topic: article

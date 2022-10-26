@@ -2,7 +2,7 @@
 # required metadata
 
 title: Outbound sorting
-description: This topic provides information about outbound sorting. This functionality makes it easier to handle small containers, and helps warehouse workers better plan and organize pallet capacity in the truck.
+description: This article provides information about outbound sorting. This functionality makes it easier to handle small containers, and helps warehouse workers better plan and organize pallet capacity in the truck.
 author: Mirzaab
 ms.date: 07/15/2020
 ms.topic: article
@@ -15,7 +15,7 @@ audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -33,7 +33,7 @@ This functionality lets you build pallets from containers that are packed throug
 
 ## Turn on the Outbound sorting feature
 
-Before you can use the feature, it must be turned on in your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
+Before you can use the feature, it must be turned on for your system. Admins can use the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace to check the status of the feature and turn it on if it's required. There, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Outbound sorting*

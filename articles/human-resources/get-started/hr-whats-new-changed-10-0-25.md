@@ -2,7 +2,7 @@
 # required metadata
 
 title: What's new or changed in Dynamics 365 Human Resources 10.0.25 
-description: This topic describes features that are either new or changed in the Dynamics 365 Human Resources version 10.0.25 preview release.
+description: This article describes features that are either new or changed in the Dynamics 365 Human Resources version 10.0.25 preview release.
 author: twheeloc
 ms.date: 01/24/2022
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: 10.0.25
 
 [!include [banner](../../includes/preview-banner.md)]
 
-This topic lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.25. This version has a build number of 10.0.1149 and is available as 
+This article lists features that are new or changed for Microsoft Dynamics 365 Human Resources version 10.0.25. This version has a build number of 10.0.1149 and is available as 
 follows:
 
 - **Preview of release**: January 2022
@@ -39,12 +39,12 @@ follows:
 - **General availability of release (auto-update)**: April 2022
 
 The 10.0.25 release brings the first wave of capabilities in the infrastructure merge. During the infrastructure merge, Microsoft Dynamics 365 Human Resources will be merged
-with the Finance and Operations infrastructure. However, it will continue to be licensed as an independent application, like Dynamics 365 Finance and Dynamics 365 Supply Chain 
+with the finance and operations infrastructure. However, it will continue to be licensed as an independent application, like Dynamics 365 Finance and Dynamics 365 Supply Chain 
 Management. For more information about the infrastructure merge, see [Dynamics 365 Human Resources infrastructure merge FAQ](../../human-resources/hr-infrastructure-merge-faq.md).
 
 ## Features included in this release
 
-The following table lists the features that are included in this release. We might update this topic to include features that made it into the build after this topic was 
+The following table lists the features that are included in this release. We might update this article to include features that made it into the build after this article was 
 initially published. If you want to use or turn off any of these features, you must do that in 
 [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
@@ -90,4 +90,5 @@ initially published. If you want to use or turn off any of these features, you m
 |**Personnel management** workspace needs to be updated to add checklist information to the cards| In the **Personnel management** workspace, the employee cards need to be updated to indicate the following information: <br>	No checklist applied <br>	Tasks outstanding <br>	Overdue tasks |Go to the **Task management** workspace to view this information|
 |Error 'The parent node failed in Business process' in the **Human resources** workspace| When a user creates a task on the fly in the **Business Process** workspace, and then changes the **Due date** filter, the user will receive an error.| Refresh the page after creating a new task on the fly.|
 |Custom controls render incorrectly when using compressed visual sizing.|In **User options**, if the user has selected the **Compressed** visual size, rather than the **Standard** size, some of the custom controls may render incorrectly.| Select to view **Standard size** in the **User options-Visual tab**. |
+
 

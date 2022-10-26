@@ -1,41 +1,30 @@
 ---
-# required metadata
-
-title: Prepare to migrate code to Finance and Operations
-description: This topic describes how the code upgrade service and Visual Studio tools help you migrate from Dynamics AX 2012 R3 to Finance and Operations.
-author: RobinARH
+title: Prepare to migrate code to finance and operations
+description: This article describes how the code upgrade service and Visual Studio tools help you migrate from Dynamics AX 2012 R3 to finance and operations.
+author: gianugo
 ms.date: 11/10/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 25971
-ms.assetid: a911b0f2-a7b0-4643-bf5b-16e55c9397be
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 25971
+ms.assetid: a911b0f2-a7b0-4643-bf5b-16e55c9397be
 ---
 
-# Prepare to migrate code to Finance and Operations
+# Prepare to migrate code to finance and operations
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how the Lifecycle Services code upgrade service and Visual Studio tools help you migrate your code and metadata from Dynamics AX 2012 R3 to Finance and Operations. Most of these steps also apply to code migration between two major versions of Finance and Operations. 
+This article describes how the Lifecycle Services code upgrade service and Visual Studio tools help you migrate your code and metadata from Dynamics AX 2012 R3 to finance and operations. Most of these steps also apply to code migration between two major versions of finance and operations. 
 
 ## Prerequisites
 
-You will need access to a Finance and Operations development environment using Remote Desktop, and be provisioned as an administrator on the instance. We recommend you become familiar with some of the Finance and  Operations development, customization, and user interface concepts before you upgrade your code. Here are some references.
+You will need access to a finance and operations development environments using Remote Desktop, and be provisioned as an administrator on the instance. We recommend you become familiar with some of the Finance and  Operations development, customization, and user interface concepts before you upgrade your code. Here are some references.
 
 -   [Development tools](../dev-tools/developer-home-page.md)
 -   [Models and packages](../dev-tools/models.md)
@@ -46,7 +35,7 @@ You will need access to a Finance and Operations development environment using R
 ## Overview of the code migration process
 ### Model split
 
-The Finance and Operations application is split into several packages, or assemblies: 
+The finance and operations apps are split into several packages, or assemblies: 
 
 **Platform Packages**
 
@@ -116,10 +105,10 @@ These rules should be set to “ON” while migrating your solution. The setting
 To complete the migration, you need to fix all migration-specific Best Practice rules. The errors will show up in the error list as warnings. In the error list, you will see compiler warnings and best practice errors. Best Practice errors are prefixed with the text **BP**. For example, **BPErrorFormControlPatternUnspecified**.
 
 ## Debugging
-By default, Finance and Operations optimizes the debugging experience for the files that you are working on. As a result, when you step into a file (F11) that is not in your project, the PDBs are not loaded and you can’t debug the code. To work around this, change the project debugging setting by clicking <strong>Dynamics 365 **&gt; **Options</strong> &gt; <strong>Debugging</strong>. Verify that the <strong>Load symbols only for items in the solution</strong> check box is not selected. This option is selected by default because it improves the debugger speed significantly. Another debugging setting that you may want to turn off is Intellitrace. Intellitrace collects the complete execution history of an application. It creates a lot of noise in the IDE when debugging. To turn off Intellitrace, click <strong>Options</strong> &gt; <strong>IntelliTrace</strong> &gt; <strong>Enable IntelliTrace</strong>, clear the check box, and then click <strong>OK</strong>. Note that Intellitrace is only available in the Enterprise version of Visual Studio.  
+By default, finance and operations optimizes the debugging experience for the files that you are working on. As a result, when you step into a file (F11) that is not in your project, the PDBs are not loaded and you can’t debug the code. To work around this, change the project debugging setting by clicking <strong>Dynamics 365 **&gt; **Options</strong> &gt; <strong>Debugging</strong>. Verify that the <strong>Load symbols only for items in the solution</strong> check box is not selected. This option is selected by default because it improves the debugger speed significantly. Another debugging setting that you may want to turn off is Intellitrace. Intellitrace collects the complete execution history of an application. It creates a lot of noise in the IDE when debugging. To turn off Intellitrace, click <strong>Options</strong> &gt; <strong>IntelliTrace</strong> &gt; <strong>Enable IntelliTrace</strong>, clear the check box, and then click <strong>OK</strong>. Note that Intellitrace is only available in the Enterprise version of Visual Studio.  
 
 ## Address code migration tasks
-When metadata is migrated to Finance and Operations, multiple auto-upgrade scripts are run. In the case where developers need to complete manual migration tasks, TO DOs and Best Practices (BP) have been added.
+When metadata is migrated to finance and operations apps, multiple auto-upgrade scripts are run. In the case where developers need to complete manual migration tasks, TO DOs and Best Practices (BP) have been added.
 
 -   TO DOs are prefixed with `/* TODO: (Code Upgrade)`, and need to be fixed as a part of code migration.
 -   BP migration specific rules also need to be fixed as part of code migration.
@@ -150,7 +139,7 @@ While the form looks complete, there are still code migration tasks necessary to
 
 ### Code upgrade rule - Action Pane
 
-In Finance and Operations, the following core actions are provided as system-defined buttons:
+In finance and operations apps, the following core actions are provided as system-defined buttons:
 
 -   New
 -   Delete
@@ -291,7 +280,7 @@ As part of the auto-migration, the Action Pane rule is run to identify redundant
 13. Press **Ctrl+F5** to view the form. Notice the **Delete** and **Edit** buttons in the **Commitment** tab have been removed.
 
 ## Resolve casting exceptions
-In Finance and Operations, X++ is completely intermediate-language (IL) based and therefore has a stricter runtime type behavior than the interpreted Dynamics AX2 012. This stricter runtime type behavior can generate exceptions in migrated Dynamics AX 2012 R3 metadata. It is likely you will encounter these exceptions during your migration. The casting exceptions can be raised in different runtime scenarios, such as down-casting, casting runtime to design time objects, and side-casting. In the section below, we will walk through an example where a form, CosJournalName, is generating controls at runtime, and has a type mismatch which causes a .NET exception because it is strongly typed.
+In finance and operations apps, X++ is completely intermediate-language (IL) based and therefore has a stricter runtime type behavior than the interpreted Dynamics AX2 012. This stricter runtime type behavior can generate exceptions in migrated Dynamics AX 2012 R3 metadata. It is likely you will encounter these exceptions during your migration. The casting exceptions can be raised in different runtime scenarios, such as down-casting, casting runtime to design time objects, and side-casting. In the section below, we will walk through an example where a form, CosJournalName, is generating controls at runtime, and has a type mismatch which causes a .NET exception because it is strongly typed.
 
 ### Example: Side-casting exception
 

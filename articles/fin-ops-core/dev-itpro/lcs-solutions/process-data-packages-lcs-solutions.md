@@ -1,36 +1,24 @@
 ---
-# required metadata
-
-title: Process and consume data packages in Dynamics 365 Finance and Operations apps solution
-description: This topic explains how to process and consume data packages in a solution.
-author: kfend
+title: Process and consume data packages in finance and operations apps
+description: This article explains how to process and consume data packages in a solution.
+author: sericks007
 ms.date: 02/28/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: sericks
-# ms.tgt_pltfrm: 
+ms.search.region: Global
+ms.author: sericks
 ms.custom: 197113
 ms.assetid: ff06961e-2d11-4e4c-addf-5e4b9528a924
-ms.search.region: Global
-# ms.search.industry: 
-ms.author: omarc
-
-
 ---
 
-# Process and consume data packages in Dynamics 365 Finance and Operations apps solution
+# Process and consume data packages in finance and operations apps 
 
 [!include [banner](../includes/banner.md)]
 
-A data package for a Dynamics 365 Finance and Operations app can consist of one or many data entities. A typical data package consists of a group of entities for a specific task, process, or function. For example, the data entities that are required for general ledger setup might be part of one data package. The format of a data package is a compressed file that contains a package manifest, a package header, and any additional files for the data entities that are included.
+A data package for a finance and operations app can consist of one or many data entities. A typical data package consists of a group of entities for a specific task, process, or function. For example, the data entities that are required for general ledger setup might be part of one data package. The format of a data package is a compressed file that contains a package manifest, a package header, and any additional files for the data entities that are included.
 
 Before you create your data package, plan out what it should include. In this way, you help guarantee that the correct entities, entity sequence, and fields are included. You create a data package by using the **Data management** workspace in your application. Follow these steps to create a data package.
 

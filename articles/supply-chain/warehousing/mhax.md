@@ -2,9 +2,9 @@
 # required metadata
 
 title: Material handling equipment interface (MHAX)
-description: This topic describes how to set up the material handling equipment interface (MHAX) so that you can connect to external physical material handling (MH) systems.
+description: This article describes how to set up the material handling equipment interface (MHAX) so that you can connect to external physical material handling (MH) systems.
 author: Mirzaab
-ms.date: 03/04/2021
+ms.date: 08/09/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -15,9 +15,9 @@ ms.search.form: WMHEParameters, WMHESubscription, WMHEQueueManagerWorkspace, WMH
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope:  Core, Operations
+
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: mirzaab
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../../includes/banner.md)]
 
-You can use the *material handling equipment interface* (MHAX) to connect external physical material handling (MH) systems to a warehouse that is managed by advanced warehouse management (WMS) in Microsoft Dynamics 365 Supply Chain Management. The interface between the WMS and MH systems consists of two queues: one for outbound events (WMS to MH) and one for inbound events (MH to WMS). The WMS system generates outbound events based on work lines that are created during various work creation and execution processes. The MH system then regularly polls the WMS system for new events and processes the responses. After the MH system has finished handling the events in accordance with work instructions, it sends inbound events, such as work line completion and short picking.
+You can use the *material handling equipment interface* (MHAX) to connect external physical material handling (MH) systems to a warehouse that is managed by warehouse management processes (WMS) in Microsoft Dynamics 365 Supply Chain Management. The interface between the WMS and MH systems consists of two queues: one for outbound events (WMS to MH) and one for inbound events (MH to WMS). The WMS system generates outbound events based on work lines that are created during various work creation and execution processes. The MH system then regularly polls the WMS system for new events and processes the responses. After the MH system has finished handling the events in accordance with work instructions, it sends inbound events, such as work line completion and short picking.
 
 The following illustration shows the various elements and the order that processes occur in when you use MHAX integration.
 
@@ -46,12 +46,13 @@ Here is an explanation of the interactions that are shown in the previous illust
 
 Before you can use the MHAX feature, you must turn on both its feature and its configuration key.
 
-1. Go to **System administration \> Workspaces \> Feature management**.
-2. In the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, turn on the feature that is named *Material handling equipment interface*.
-3. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
-4. Go to **System administration \> Setup \> License configuration**.
-5. Expand **Trade \> Warehouse and Transportation management**, and then select the **Material handling equipment interface** check box.
-6. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. If you are running Supply Chain Management version 10.0.28 or earlier, do the following steps:
+    1. Go to **System administration \> Workspaces \> Feature management**.
+    1. In the **[Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md)** workspace, turn on the feature that is named *Material handling equipment interface*. (As of Supply Chain Management 10.0.29, this feature is mandatory and can't be turned off.)
+1. Put your system into maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
+1. Go to **System administration \> Setup \> License configuration**.
+1. Expand **Trade \> Warehouse and Transportation management**, and then select the **Material handling equipment interface** check box.
+1. Turn off maintenance mode, as described in [Maintenance mode](../../fin-ops-core/dev-itpro/sysadmin/maintenance-mode.md).
 
 ## Set MHAX parameters
 
@@ -93,7 +94,7 @@ To create a subscription, go to **Material handling equipment interface \> Setup
 
 A query can be associated with each subscription. This query filters work lines and headers to further limit the work that will use the subscription to generate events. To add a query to a subscription, select the **Run query** check box for the relevant subscription on the **Subscriptions** page, and then select **Edit query** on the Action Pane. The standard Supply Chain Management query editor appears.
 
-In addition, the subscription includes a *subscription map* that maps fields from either the work header or the work line to some or all of the 10 free data fields of the outbound event, as required. To return information to the MHAX service, you will typically include the work line record ID or the *work line pair ID*. (The work line pair ID is a new property that enables the system to use a single return command to process pick and put lines.) The remaining fields depend on the use case. Some examples are provided later in this topic.
+In addition, the subscription includes a *subscription map* that maps fields from either the work header or the work line to some or all of the 10 free data fields of the outbound event, as required. To return information to the MHAX service, you will typically include the work line record ID or the *work line pair ID*. (The work line pair ID is a new property that enables the system to use a single return command to process pick and put lines.) The remaining fields depend on the use case. Some examples are provided later in this article.
 
 To set up a subscription map, select the relevant subscription on the **Subscriptions** page, and then select **Subscription map** on the Action Pane. In the **Subscription map** dialog box that appears, you can assign a table and field for each available data field as you require.
 
@@ -166,7 +167,7 @@ If the work line pair ID is provided, all pick, put, or custom work lines that a
 
 Pick lines from license plate–controlled locations require that the **data03** specify the license plate that should be picked from, regardless of whether the lines are marked by the work line record ID or the work line pair ID. The **data04** field must specify the work header's target license plate for the pick.
 
-Put lines don't accept further information. They are run based only on the current work line's location and the work's target license plate. If the put must be done to a different location, change the location of the work line as described in the [Override events](#override-events) section later in this topic.
+Put lines don't accept further information. They are run based only on the current work line's location and the work's target license plate. If the put must be done to a different location, change the location of the work line as described in the [Override events](#override-events) section later in this article.
 
 Custom work lines don't require, or support, any additional information in the inbound event.
 
@@ -225,7 +226,7 @@ Eventually, your inbound queue will start to become full of queue items that hav
 
 ## Get a quick overview by using the queue manager
 
-To get a quick overview of all the activity that is related to your inbound and outbound queues, go to **Material handling equipment interface \> Workspaces \> Queue manager**. The **Queue manager** page provides a set of tabs and tiles that you can use to monitor and explore your queues. It also provides useful links to most of the other pages that are mentioned in this topic.
+To get a quick overview of all the activity that is related to your inbound and outbound queues, go to **Material handling equipment interface \> Workspaces \> Queue manager**. The **Queue manager** page provides a set of tabs and tiles that you can use to monitor and explore your queues. It also provides useful links to most of the other pages that are mentioned in this article.
 
 ## Connect to the MHAX service
 

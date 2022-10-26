@@ -1,14 +1,14 @@
 ---
 title: Extend the customer CDX package to add custom data
-description: This topic explains how to add custom data to the customer Commerce Data Exchange (CDX) package in Microsoft Dynamics 365 Commerce.
-author: mugunthanm
+description: This article explains how to add custom data to the customer Commerce Data Exchange (CDX) package in Microsoft Dynamics 365 Commerce.
+author: josaw1
 ms.date: 04/21/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.author: mumani
-ms.search.validFrom: 03-30-2022
+ms.author: josaw
+ms.search.validFrom: 2022-03-30
 ms.dyn365.ops.version: AX 10.0.25
 ---
 
@@ -16,7 +16,7 @@ ms.dyn365.ops.version: AX 10.0.25
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to extend the customer Commerce Data Exchange (CDX) package to add custom data in Microsoft Dynamics 365 Commerce.
+This article explains how to extend the customer Commerce Data Exchange (CDX) package to add custom data in Microsoft Dynamics 365 Commerce.
 
 When point of sale (POS) or any client application calls the Commerce Customer Search application programming interface (API), the API searches for the customer in the channel database. If the customer isn't found in the channel database, and if remote search is enabled in Commerce headquarters, the API makes a real-time call to Commerce headquarters to fetch the data. If the customer data is found in Commerce headquarters, Commerce headquarters generates the customer data CDX package and synchronizes it to the channel database.
 

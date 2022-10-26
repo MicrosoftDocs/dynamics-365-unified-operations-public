@@ -15,7 +15,7 @@ ms.search.form: FinancialReports
 # ROBOTS: 
 audience: IT Pro, Developer
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 261824
 ms.search.region: Global
@@ -68,7 +68,7 @@ For amounts being translated within Financial reporting, the following types of 
 | Current | Uses the last rate on or before the period specified. Typically used for Balance Sheet accounts.  |  (Rate) |   
 | Weighted average  | Uses the weighted average rate for the period. Typically used for P&L accounts. | ((Rate1 * Number of days in effect) + (Rate2 * Number of days in effect)) + …/ Number of days in the period  |   
 |  Average | This is a simpler average rate for the period. Typically used for Profit and loss accounts.  | (Sum of rates)/(number of rates)  |   
-| Transaction date (Historical)  | Uses the rate in effect on the posting date of the transaction. If no rate is available, the system will use the closest previously entered rate. Typically used for Retained Earnings, Equity accounts and longer-term fixed assets (for example, Land).  | (Rate)  |   
+| Transaction date (Historical)  | Uses the rate in effect on the posting date of the transaction. If no rate is available, the system will use the closest previously entered rate. Typically used for [Retained earnings](retained-earnings-enhancements.md), Equity accounts and longer-term fixed assets (for example, Land).  | (Rate)  |   
 
 
 ### Setup for Exchange rate type

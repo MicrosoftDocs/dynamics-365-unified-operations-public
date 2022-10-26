@@ -2,7 +2,7 @@
 # required metadata
 
 title: Alignment date scenarios
-description: This topic provides examples that show how alignment dates work in Subscription billing.
+description: This article provides examples that show how alignment dates work in Subscription billing.
 author: JodiChristiansen
 ms.date: 11/04/2021
 ms.topic: article
@@ -16,7 +16,7 @@ ms.search.form:
 audience: Application User
 # ms.devlang: 
 ms.reviewer: twheeloc
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
 ms.custom: 539093
 ms.search.region: Global
@@ -29,7 +29,7 @@ ms.dyn365.ops.version: 10.0.24
 
 # Alignment date scenarios
 
-This topic provides examples that show how alignment dates work in Subscription billing.
+This article provides examples that show how alignment dates work in Subscription billing.
 
 For these examples, a billing detail for a billing schedule has an alignment date of October 31, 2019. The first billing detail for the line ends on October 31, 2019 and is prorated accordingly. The line is automatically renewed by using a renewal start date of November 11.
 

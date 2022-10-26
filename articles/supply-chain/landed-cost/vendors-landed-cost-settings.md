@@ -2,7 +2,7 @@
 # required metadata
 
 title: Vendor settings added for Landed cost
-description: This topic describes the new fields that are added to the existing Vendors page when you enable the Landed cost module. You use these fields to set up the vendors that you will use together with Landed cost features.
+description: This article describes the new fields that are added to the existing Vendors page when you enable the Landed cost module. You use these fields to set up the vendors that you will use together with Landed cost features.
 author: Weijiesa
 ms.date: 12/07/2020
 ms.topic: article
@@ -15,9 +15,9 @@ ms.search.form: VendTable
 audience: Application User
 # ms.devlang: 
 ms.reviewer: kamaybac
-ms.search.scope: Core, Operations
+
 # ms.tgt_pltfrm: 
-# ms.custom: [used by loc for topics migrated from the wiki]
+# ms.custom: [used by loc for articles migrated from the wiki]
 ms.search.region: Global
 # ms.search.industry: [leave blank for most, retail, public sector]
 ms.author: weijiesa

@@ -1,30 +1,19 @@
 ---
-# required metadata
-
 title: Document Reporting Services
-description: This topic describes the reporting solution that simplifies service administration, increases developer productivity, and provides enhanced report viewing.
+description: This article describes the reporting solution that simplifies service administration, increases developer productivity, and provides enhanced report viewing.
 author: RichdiMSFT
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 69191
-ms.assetid: 57aaba22-4068-4c3f-9428-7fcd99632295
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: richdi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 69191
+ms.assetid: 57aaba22-4068-4c3f-9428-7fcd99632295
 ---
 
 # Document Reporting Services

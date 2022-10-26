@@ -1,21 +1,15 @@
 ---
 title: Learning catalog for Dynamics 365 Commerce
 description: Find all the training options for Dynamics 365 Commerce.
-author: margoc
-ms.topic: article
+author: josaw1
 ms.date: 07/23/2020
-ms.author: margoc
-
-ms.prod:
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:  [Operations AOT form name to tie this topic to]
+ms.topic: article
+ms.prod: 
+ms.technology: 
 audience: Application user
-ms.reviewer: margoc
-ms.search.scope: Operations
+ms.reviewer: josaw
 ms.search.region: Global
+ms.author: josaw
 ms.search.validFrom: 2020-07-23
 ms.dyn365.ops.version: 8.1
 ---

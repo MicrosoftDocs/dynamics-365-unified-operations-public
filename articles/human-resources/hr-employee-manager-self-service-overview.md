@@ -4,7 +4,7 @@
 title: Employee and Manager self service overview
 description: This article provides an overview of the Employee and Manager self service workspace.
 author: twheeloc
-ms.date: 08/26/2021
+ms.date: 09/12/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -15,7 +15,7 @@ ms.search.form: HRMParameters, EssWorkspace
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: ["51941", "intro-internal"]
 ms.assetid: 2cfb061a-a616-4bf9-9d98-9cde00039eec

@@ -2,7 +2,7 @@
 # required metadata
 
 title: Performance troubleshooting using tools in Lifecycle Services (LCS)
-description: This topic describes tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you diagnose and mitigate performance issues.
+description: This article describes tools that Microsoft Dynamics Lifecycle Services (LCS) provides to help you diagnose and mitigate performance issues.
 author: laneswenka
 ms.date: 10/06/2021
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how you can troubleshoot and mitigate performance issues using the tools available in Microsoft Dynamics Lifecycle Services (LCS).
+This article describes how you can troubleshoot and mitigate performance issues using the tools available in Microsoft Dynamics Lifecycle Services (LCS).
 
 ## Overview
 
@@ -59,7 +59,7 @@ All SQL performance tools in LCS are available under the **SQL Insights** tab on
 ## How do I use this feature?
 
 1. Go to your project in LCS and open the environment details page. Select the **Environment Monitoring** link in the **Monitoring** section. Select the **SQL Insights** tab to access this feature.
-2. You can navigate to each of the tabs (**Live View**, **Queries**, **Actions**, **Performance Metrics**, **Index**, **Analysis**) to view or query for more information.
+2. You can navigate to each of the tabs (**Live View**, **Queries**, **Actions**) to view or query for more information.
 3. You have the option to search or export to Excel any of results from the query execution.
 4. After you have narrowed down the reason for the performance issue, you can use a predefined action to mitigate the issue.
 5. After an action is performed, an entry is made on the **Environment History** page, which shows the details of the action, the parameters that were passed in, a timestamp, and who triggered the action.
@@ -75,7 +75,7 @@ All SQL performance tools in LCS are available under the **SQL Insights** tab on
 5. Open the **Actions** tab and select the **End SQL Process** action and pass in the root blocker query ID. This will execute a query against the SQL database to terminate the blocking statement.
 6. Go to the **Queries** tab and run **Current blocking query** to verify if the blocking statement was terminated.
 7. You can also check the **Environment History** page to see details on what process was terminated.
-8. To avoid this issue in the future, you should use indexes or plan guides, or turn off lock escalation, or use page locks if processes are blocking each other while operating on different records. If processes are operating on the same records, the only way to avoid blocking is by refactoring or rescheduling the processes to not operate on the same records at the same time.
+
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

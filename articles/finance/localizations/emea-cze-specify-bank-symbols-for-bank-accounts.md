@@ -1,28 +1,19 @@
 ---
-# required metadata
-
 title: Bank symbols for bank accounts
-description: This topic provides information about bank symbols for bank accounts.
-author: anasyash
+description: This article provides information about bank symbols for bank accounts.
+author: AdamTrukawka
 ms.date: 07/23/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 265124
 ms.search.region: Czech Republic
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 
-
+ms.custom: 265124
+ms.search.form: 
 ---
 
 # Bank symbols for bank accounts

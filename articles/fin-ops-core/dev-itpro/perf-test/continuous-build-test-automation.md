@@ -1,33 +1,26 @@
 ---
 title: Deploy and use a continuous build and test automation environment
-description: This topic describes how to deploy a developer topology that supports continuous build and test automation.
-author: RobinARH
+description: This article describes how to deploy a developer topology that supports continuous build and test automation.
+author: josaw1
 ms.date: 01/21/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 13171
-ms.assetid: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: shailesn
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 13171
+ms.assetid: 
 ---
 
 # Deploy and use a continuous build and test automation environment
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to deploy and use an environment that supports continuous build and test automation.
+This article describes how to deploy and use an environment that supports continuous build and test automation.
 
 ## Prerequisites
 
@@ -54,7 +47,7 @@ For information about how to write custom test code or generate automated test c
 The first step is to [choose an Azure DevOps plan](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) for your organization.
 
 > [!NOTE]
-> TFVC is the only source control repository that is supported. Git isn't supported.
+> LCS is designed to work with TFVC repositories, and currently does not work with Git repositories.
 
 ### Set up Azure DevOps
 
@@ -81,7 +74,7 @@ If you have not already done so, you need to first setup your LCS project to con
 4. Select **Azure DevOps** and enter the Azure DevOps URL where the source code for your module project is located.
 5. Specify the Azure DevOps link, authorize, and then click **Choose default project**.
    > [!NOTE]
-   > We currently support VSTF as source control and do not support Git. 
+   > LCS is designed to work with TFVC repositories, and currently does not work with Git repositories.
 
 ### Check-in migrated or new module code into Azure DevOps
 
@@ -91,7 +84,7 @@ As part of code Migration process or development activities, we expect you to ch
 
 ### Deploy a Build environment
 
-The topic [Deploy and access development environments](../dev-tools/access-instances.md) describes how to deploy developer environments. Use the same flow to deploy a build environment. As you are going through the deployment or configuration wizard, when prompted to **Select a Topology**, select **DevTest** then select a **Build and Test** topology.
+The article [Deploy and access development environments](../dev-tools/access-instances.md) describes how to deploy developer environments. Use the same flow to deploy a build environment. As you are going through the deployment or configuration wizard, when prompted to **Select a Topology**, select **DevTest** then select a **Build and Test** topology.
 
 As part of the deployment wizard, you can configure the build agent name and build agent pool.
 

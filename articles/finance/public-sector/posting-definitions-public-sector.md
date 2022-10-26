@@ -1,38 +1,29 @@
 ---
-# required metadata
-
 title: Posting definitions in the public sector
-description: This topic lists examples of public sector posting definitions that can be used to create subledger journal lines for originating transactions that meet selected criteria.
-author: v-kiarnd
+description: This article lists examples of public sector posting definitions that can be used to create subledger journal lines for originating transactions that meet selected criteria.
+author: velofog
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: BudgetDetailsInquiry, CustGroup, JournalizingDefinition, JournalizingDefinitionTrans, LedgerFund, LedgerParameters, LedgerTransferOpening, MainAccount
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 27271
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.search.industry: Public sector
-ms.author: kfend
+ms.author: velofog
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 27271
+ms.search.industry: Public sector
+ms.search.form: BudgetDetailsInquiry, CustGroup, JournalizingDefinition, JournalizingDefinitionTrans, LedgerFund, LedgerParameters, LedgerTransferOpening, MainAccount
 ---
 
 # Posting definitions in the public sector
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists examples of public sector posting definitions that can be used to create subledger journal lines for originating transactions that meet selected criteria. Examples include budget appropriations, pooled cash settlements, write-offs, COD settlements, advanced ledger entries, general ledger year-end close, and proprietary funds.
+This article lists examples of public sector posting definitions that can be used to create subledger journal lines for originating transactions that meet selected criteria. Examples include budget appropriations, pooled cash settlements, write-offs, COD settlements, advanced ledger entries, general ledger year-end close, and proprietary funds.
 
-This article describes the posting definitions functionality available for the public sector. Before you read this topic, you should be familiar with posting definitions.
+This article describes the posting definitions functionality available for the public sector. Before you read this article, you should be familiar with posting definitions.
 
 ## How do I use these examples of public sector posting definitions?
 You can set up the examples in this article on the **Posting definitions** page. Each example contains these sections:

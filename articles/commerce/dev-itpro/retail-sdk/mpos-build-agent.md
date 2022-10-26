@@ -1,24 +1,22 @@
 ---
-# required metadata
-
 title: Set up a Visual Studio 2017 build agent to build Modern POS
-description: This topic explains how to set up a self-hosted Microsoft Visual Studio build agent to build Dynamics 365 Commerce Modern POS (MPOS) in an Azure DevOps pipeline.
-author: mugunthanm
+description: This article explains how to set up a self-hosted Microsoft Visual Studio build agent to build Dynamics 365 Commerce Modern POS (MPOS) in an Azure DevOps pipeline.
+author: josaw1
 ms.date: 12/21/2021
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
-ms.custom: "intro-internal"
 ms.search.region: Global
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-06-20
+ms.custom: "intro-internal"
 ---
 
 # Set up a Visual Studio 2017 build agent to build Modern POS
 
 [!include [banner](../../../includes/banner.md)]
 
-This topic explains how to set up a self-hosted Microsoft Visual Studio build agent to build Dynamics 365 Commerce Modern POS (MPOS) in an Azure DevOps pipeline.
+This article explains how to set up a self-hosted Microsoft Visual Studio build agent to build Dynamics 365 Commerce Modern POS (MPOS) in an Azure DevOps pipeline.
 
 ## Create and configure the self-hosted Visual Studio build agent to build MPOS extensions in an Azure DevOps build pipeline
 

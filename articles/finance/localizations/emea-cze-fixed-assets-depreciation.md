@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: Fixed assets depreciation methods for the Czech Republic
-description: This topic provides information about fixed assets depreciation for legal entities in the Czech Republic. 
-author: ShylaThompson
+description: This article provides information about fixed assets depreciation for legal entities in the Czech Republic.
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: AssetDepreciationGroup_W
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 264314
 ms.search.region: Czech Republic
-# ms.search.industry: 
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 264314
+ms.search.form: AssetDepreciationGroup_W
 ---
 
 # Fixed assets depreciation methods for the Czech Republic
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about fixed assets depreciation for legal entities in the Czech Republic. 
+This article provides information about fixed assets depreciation for legal entities in the Czech Republic. 
 
 Fixed assets depreciation for the legal requirements in the Czech Republic include:
 

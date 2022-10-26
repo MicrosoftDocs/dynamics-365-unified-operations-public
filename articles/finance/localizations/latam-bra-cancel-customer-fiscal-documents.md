@@ -1,28 +1,17 @@
 ---
-# required metadata
-
-title: Cancel a customer fiscal document (Brazil) 
-description: This topic provides information about canceling a customer fiscal document for Brazil. 
-author: ShylaThompson
+title: Cancel a customer fiscal document (Brazil)
+description: This article provides information about canceling a customer fiscal document for Brazil.
+author: gionoder
 ms.date: 06/05/2018
 ms.topic: article
 ms.prod: 
-ms.technology:
-
-# optional metadata
-
-# ms.search.form:  
+ms.technology: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Brazil
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: gionoder
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
-
 ---
 
 # Cancel a customer fiscal document (Brazil)

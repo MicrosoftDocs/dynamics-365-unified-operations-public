@@ -1,35 +1,26 @@
 ---
-# required metadata
-
 title: Configure receipt emails to use custom layouts and templates
-description: This topic describes how to configure receipt emails so that they use custom layouts and templates in Microsoft Dynamics 365 Commerce.
+description: This article describes how to configure receipt emails so that they use custom layouts and templates in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
 ms.date: 04/29/2021
 ms.topic: article
 ms.prod: 
-
-# optional metadata
-
-ms.search.form: RetailParameters, SysEmailTable,
-# ROBOTS: 
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom:
-ms.assetid:
+ms.reviewer: v-chgriffin
 ms.search.region: global
-ms.search.industry: 
 ms.author: stuharg
 ms.search.validFrom: 2021-02-16
 ms.dyn365.ops.version: 
-
+ms.custom: 
+ms.assetid: 
+ms.search.industry: 
+ms.search.form: RetailParameters, SysEmailTable,
 ---
 
 # Configure receipt emails to use custom layouts and templates
 
 [!include [banner](includes/banner.md)]
 
-This topic describes how to configure receipt emails so that they use custom layouts and templates in Microsoft Dynamics 365 Commerce. You can also send receipt emails that use unique receipt formats, and configure the emailing of receipts on a receipt-by-receipt basis.
+This article describes how to configure receipt emails so that they use custom layouts and templates in Microsoft Dynamics 365 Commerce. You can also send receipt emails that use unique receipt formats, and configure the emailing of receipts on a receipt-by-receipt basis.
 
 Most receipt formats can be emailed from a point of sale (POS) terminal, both during checkout and from the journal. Before the Commerce version 10.0.18 release, the sales receipt format (receipt format 1) was used for all receipts that were emailed.
 
@@ -65,7 +56,7 @@ To set up receipt emails so that they use additional receipt formats, you must f
 
 When the **Email any receipt type and customize emailed receipts** feature is turned on, it enables the following functionality:
 
-- The ability to email the receipt formats that are listed in the [Email receipt formats](#email-receipt-formats) section earlier in this topic.
+- The ability to email the receipt formats that are listed in the [Email receipt formats](#email-receipt-formats) section earlier in this article.
 - The ability to customize the template that delivers the receipt emails for specific receipt types.
 - The ability to configure whether specific receipt types are emailed from the POS, and whether cashiers are prompted to ask customers whether they want to receive a receipt by email.
 - A fix for a formatting issue that required that implementers remove line breaks from the HTML for receipt emails.
@@ -88,10 +79,10 @@ To add receipt types to a receipt profile that will be used to email receipts, f
 1. Select **Add** to create a new, empty row.
 1. In the **Receipt type** field, select the receipt type.
 1. In the **Receipt format** field, select a receipt format that defines the layout of the selected receipt type. For more information about how to create receipt formats, see [Set up and design receipt formats](receipt-templates-printing.md).
-1. Select an email template that should be used as the container template for receipt emails. All the templates that are created on the **Organization email templates** page are available for selection. If you've previously configured receipt emails, you will have a template that is named **emailrecpt**. You can use this template. For information about how specify a custom container template on a receipt-by-receipt basis, see the [Create receipt email templates](#create-receipt-email-templates) section later in this topic.
+1. Select an email template that should be used as the container template for receipt emails. All the templates that are created on the **Organization email templates** page are available for selection. If you've previously configured receipt emails, you will have a template that is named **emailrecpt**. You can use this template. For information about how specify a custom container template on a receipt-by-receipt basis, see the [Create receipt email templates](#create-receipt-email-templates) section later in this article.
 
 > [!NOTE]
-> Even if a receipt type can't be emailed, Commerce headquarters doesn't prevent you from adding it to a receipt profile. For a list of the receipt formats that can be emailed, see the [Email receipt formats](#email-receipt-formats) section earlier in this topic.
+> Even if a receipt type can't be emailed, Commerce headquarters doesn't prevent you from adding it to a receipt profile. For a list of the receipt formats that can be emailed, see the [Email receipt formats](#email-receipt-formats) section earlier in this article.
 
 ### Create receipt email templates
 

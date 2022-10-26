@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Work with the Electronic messages functionality
-description: This topic provides information about how to work with the Electronic messages (EM) functionality.
-author: liza-golub
+description: This article provides information about how to work with the Electronic messages (EM) functionality.
+author: AdamTrukawka
 ms.date: 07/07/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
-ms.reviewer: 
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: kfend
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: 2021-06-24
 ms.dyn365.ops.version: 10.0.21
-
 ---
 
 # Work with the Electronic messages functionality

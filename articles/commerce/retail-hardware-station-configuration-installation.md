@@ -2,7 +2,7 @@
 # required metadata
 
 title: Configure and install Retail hardware station
-description: This topic explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
+description: This article explains how to configure, download, and install Retail hardware station by using self-service. It also explains how to uninstall Retail hardware station.
 author: jashanno
 ms.date: 05/11/2021
 ms.topic: article
@@ -32,7 +32,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This topic explains how to configure, download, and install the legacy Commerce hardware station by using self-service functionality. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](dev-itpro/Enhanced-Mass-Deployment.md). It also explains how to uninstall Retail hardware station.
+This article explains how to configure, download, and install the legacy Commerce hardware station by using self-service functionality. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](dev-itpro/Enhanced-Mass-Deployment.md). It also explains how to uninstall Retail hardware station.
 
 > [!IMPORTANT]
 > It is critical to note that this component utilizes a server certificate. Server certificates must be managed for expiration. By default, a certificate expires in one calendar year (365 days).
@@ -122,7 +122,7 @@ The Retail hardware station installer first extracts the associated files and th
 5. Enter the HTTPS port to use.
 
     > [!NOTE]
-    > - You can find the HTTPS port in Retail. (See the configuration instructions earlier in this topic).
+    > - You can find the HTTPS port in Retail. (See the configuration instructions earlier in this article).
     > - The installer automatically enters the host name. If, for any reason, you must change the host name for the installation, you can change it here. The host name must be the fully-qualified domain name (FQDN) of the system, and it must be entered in the **Host name** field for the selected hardware station entry.
 
 6. The installer installs Retail hardware station and then indicates whether the installation was successful.
@@ -197,7 +197,7 @@ Current security standards state that the following options should be set in a p
 
 **Solution:** Any one of the following factors can cause this issue:
 
-- Retail hardware station hasn't been set up correctly in Commerce headquarters. Use the steps earlier in this topic to verify that the hardware station profile and the hardware station are correctly entered.
+- Retail hardware station hasn't been set up correctly in Commerce headquarters. Use the steps earlier in this article to verify that the hardware station profile and the hardware station are correctly entered.
 - The jobs haven't been run to update the channel configuration. In this case, run the 1070 job for channel configuration.
 - The hardware station isn't accessible from that computer. Verify that the hardware station URL ping test is accessible from a web browser. This URL can be found at the end of the hardware station installer and is in the following form: `https://<Computer Name>:<Port Number>/HardwareStation/ping`
 

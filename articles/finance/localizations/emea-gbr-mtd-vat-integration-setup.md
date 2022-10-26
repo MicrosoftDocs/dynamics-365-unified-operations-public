@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Prepare your environment to interoperate with HMRC's MTD VAT web service
-description: This topic explains how to set up Making Tax Digital for value-added tax (MTD VAT) in the United Kingdom (UK).
-author: liza-golub
+description: This article explains how to set up Making Tax Digital for value-added tax (MTD VAT) in the United Kingdom (UK).
+author: AdamTrukawka
 ms.date: 11/22/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: United Kingdom
-# ms.search.industry: 
-ms.author: elgolu
+ms.author: atrukawk
 ms.search.validFrom: 2021-07-30
 ms.dyn365.ops.version: AX 10.0.22
-
 ---
 
 # Prepare your environment to interoperate with HMRC's MTD VAT web service
@@ -205,10 +193,10 @@ The **UK MTD VAT setup** package provides a setup for two sets of processing tha
 
 The **UK MTD VAT setup** package also provides a setup for two web applications that are used to interoperate with HMRC web services:
 
-- **Dynamics 365 for Finance and Operations** – For interoperation with the **production** HMRC web service.
+- **Dynamics 365 Finance** – For interoperation with the **production** HMRC web service.
 - **Sandbox HMRC** – For interoperation with the **sandbox** HMRC web service.
 
-When you import the setup of Electronic messages functionality for MTD VAT from the **UK MTD VAT setup** package that Microsoft provides, credentials for the **Dynamics 365 for Finance and Operations** web application are imported into your system and stored in encrypted format. These credentials are provided by Microsoft and will be used for production interoperation with HMRC.
+When you import the setup of Electronic messages functionality for MTD VAT from the **UK MTD VAT setup** package that Microsoft provides, credentials for the **Dynamics 365 Finance** web application are imported into your system and stored in encrypted format. These credentials are provided by Microsoft and will be used for production interoperation with HMRC.
 
 For more information about the predefined setup that is included in the data entities in the package for MTD VAT, see [Checklist for Electronic messages setup for MTD VAT](emea-gbr-mtd-vat-integration-em-setup-checklist.md).
 
@@ -245,7 +233,7 @@ To prepare Finance to report a VAT return for a VAT group, make sure that your b
 - VAT settlement, and the [Settle and post sales tax](../general-ledger/tasks/create-sales-tax-payment.md) job, are completed in each subsidiary legal entity.
 - [Application-specific parameters for the VAT Declaration format](#declaration) are setup for each subsidiary legal entity. The setup configurations are completed for both **VAT Declaration JSON (UK)** and **VAT Declaration Excel (UK)** formats.
 - A [**VAT 100** report](#format) is correctly generated in paper format in each subsidiary legal entity.
-- One legal entity is set up for interoperation with HMRC according to the information in this topic, and users can request VAT obligations from this legal entity for the VAT group.
+- One legal entity is set up for interoperation with HMRC according to the information in this article, and users can request VAT obligations from this legal entity for the VAT group.
 - [Sales tax settlement periods for the **Populate VAT return records** action](#settlement) are defined for each subsidiary legal entity. 
 
 To enable Finance to report VAT returns from multiple legal entities in the same system database, turn on the **Cross-company queries for the populate records actions** feature in Feature management. Go to **Workspaces** \> **Feature management**, find **Cross-company queries for the populate records actions** in the list, and then select **Enable now**.
@@ -264,7 +252,7 @@ Both the **UK MTD VAT returns** processing for production and the **UK MTD VAT T
 
     If you don't set the **Settlement period** field, all tax transactions from the selected legal entity will be considered for reporting for MTD VAT.
 
-If your company must report a VAT return as a VAT group, make sure that all the conditions that are described in the [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vatgroup) section of this topic are met. Set up the sales tax settlement period for all the legal entities that are included in the VAT group.
+If your company must report a VAT return as a VAT group, make sure that all the conditions that are described in the [Enable VAT return reporting for companies that report as a VAT group in the same system database](#vatgroup) section of this article are met. Set up the sales tax settlement period for all the legal entities that are included in the VAT group.
 
 1. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Populate records actions**. On the **Populate records action** page, the **Datasources setup** grid includes a **Company** field. For existing records that were created during the general setup of the MTD VAT feature, this field shows the identifier of the current legal entity. It's assumed that the settlement period for the current legal entity was set up during the general setup of the MTD VAT feature.
 2. In the **Datasources setup** grid, add a line for each subsidiary legal entity that must be included in reporting for the VAT group. Set the following fields.
@@ -341,7 +329,7 @@ To review the general implementation details for the fraud prevention headers, s
 Each time that a user initiates a request to HMRC's MTD VAT API, Finance starts to collect values for all the fraud prevention headers. When the values are collected, Finance shows them to the user.
 
 > [!NOTE]
-> <a id="remark"></a>Finance provides an alternative to using external web addresses to retrieve public IP addresses of the client and server in cases where a system admin can manually identify and specify the values. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**. On the **Supplementary headers** FastTab, manually define the values for the **Gov-Client-Public-IP** and **Gov-Vendor-Public-IP** headers. The system will then use those values if external web services aren't defined as described in the [Set up application-specific parameters for MTD VAT web request headers format](#headers) section of this topic, or if the system didn't automatically obtain the IP addresses.
+> <a id="remark"></a>Finance provides an alternative to using external web addresses to retrieve public IP addresses of the client and server in cases where a system admin can manually identify and specify the values. Go to **Tax** \> **Setup** \> **Electronic messages** \> **Web applications**. On the **Supplementary headers** FastTab, manually define the values for the **Gov-Client-Public-IP** and **Gov-Vendor-Public-IP** headers. The system will then use those values if external web services aren't defined as described in the [Set up application-specific parameters for MTD VAT web request headers format](#headers) section of this article, or if the system didn't automatically obtain the IP addresses.
 >
 > The system admin can also define the value for the **Gov-Vendor-Forwarded** header. The system will then use that value if it was not able to obtain the IP address automatically. If the value of the **Gov-Vendor-Forwarded** header isn't specified, its value will be composed from the values of the **Gov-Client-Public-IP** and **Gov-Vendor-Public-IP** headers.
 >
@@ -356,3 +344,4 @@ If you cancel the transmission at this point by selecting **Do not submit**, the
 When a request to HMRC in a batch job is initiated, the fraud prevention headers are transmitted to HMRC, and information about the headers that were sent is attached to the batch job. To view this information, go to **System administration** \> **Inquiries** \> **Batch jobs**, and select your batch job. To review the log details, select **Batch job** \> **Log** on the Action Pane.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

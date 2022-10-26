@@ -1,42 +1,31 @@
 ---
-# required metadata
-
 title: Reporting and analytics with Power BI home page
-description: This topic points you to resources that you can use to learn more about the business intelligence and reporting tools that are available.
+description: This article points you to resources that you can use to learn more about the business intelligence and reporting tools that are available.
 author: sericks007
 ms.date: 10/02/2019
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: ["27681", "intro-internal"]
-ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
+ms.reviewer: sericks
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 27681,  ""intro-internal
+ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ---
 
 # Reporting and analytics with Power BI home page
 
 [!include [banner](../includes/banner.md)]
 
-This topic points you to resources that you can use to learn more about the business intelligence (BI) and reporting tools that are available.
+This article points you to resources that you can use to learn more about the business intelligence (BI) and reporting tools that are available.
 
 ## Get started
 - [Information access and reporting](information-access-reporting.md)
 - [Tech Talk: Reporting options](https://www.youtube.com/watch?v=NzZONjKs5xA) (video)
-- [Finance and Operations: Power BI Analytics & Reporting Services blog](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
+- [finance and operations: Power BI Analytics & Reporting Services blog](https://community.dynamics.com/365/financeandoperations/b/powerbianalyticsandreporting) (blog)
 
 ## Analytical workspaces
 Workspaces can use rich infographics and visuals that are supported by Microsoft Power BI. These infographics and visuals include many controls that are provided by third parties. Therefore, workspaces can provide a highly visual, interactive experience for users.

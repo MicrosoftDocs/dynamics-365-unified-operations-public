@@ -1,10 +1,10 @@
 ---
 title: What's new or changed in Dynamics 365 Supply Chain Management 10.0.24 (February 2022)
-description: This topic describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.24. 
+description: This article describes features that are either new or changed in Microsoft Dynamics 365 Supply Chain Management 10.0.24. 
 author: kamaybac
 ms.date: 12/03/2021
 ms.topic: article
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: Application User
 ms.reviewer: kamaybac
 ms.search.region: Global
@@ -17,7 +17,7 @@ ms.dyn365.ops.version: 10.0.24
 
 [!include [banner](../includes/banner.md)]
 
-This topic lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.24. This version has a build number of 10.0.1084 and is available as follows:
+This article lists features that are either new or changed in the Microsoft Dynamics 365 Supply Chain Management version 10.0.24. This version has a build number of 10.0.1084 and is available as follows:
 
 - **Preview of release:** December 2021
 - **General availability of release (self-update):** January 2022
@@ -25,7 +25,7 @@ This topic lists features that are either new or changed in the Microsoft Dynami
 
 ## Features included in this release
 
-The following table lists the features that are included in this release. We might update this topic to include features that made it into the build after this topic was initially published.
+The following table lists the features that are included in this release. We might update this article to include features that made it into the build after this article was initially published.
 
 | Feature area | Feature | More information | Enabled by |
 |---|---|---|---|
@@ -42,15 +42,15 @@ If you want to turn any of these features on or off, you must do that in [featur
 | Module | Feature name in feature management | More information |
 |---|---|---|
 | Production control | On-demand material availability check for production orders | This feature makes it faster to open the **Production orders to release** page, which is available from the **Production floor management** workspace. Without this feature, the system automatically checks whether materials are available for all listed production orders as soon as you open the page, which can take significant time if you have a large number of orders. When this feature is enabled, the system instead provides a toolbar button, which you can use to initiate the materials check only for selected orders and when needed. |
-| Production control | (Preview) Register material consumption on the production floor execution interface (non-WMS) | This feature enables workers to use the production floor execution interface to register material consumption, batch numbers, and serial numbers. This feature only supports items that are not enabled to use advanced warehouse processes (WMS). Support for WMS-enabled items is scheduled for a future release.<p>Some manufacturers, especially those within the process industries, need to explicitly register the amount of material consumed for each batch or production order. For example, workers might use a scale to weigh the amount of material consumed as they work. To ensure full material traceability, these organizations also need to register which batch numbers were consumed when producing each product. |
+| Production control | Register material consumption on the production floor execution interface (non-WMS) | This feature enables workers to use the production floor execution interface to register material consumption, batch numbers, and serial numbers. This feature only supports items that are not enabled to use warehouse management processes (WMS). Support for WMS-enabled items is scheduled for a future release.<p>Some manufacturers, especially those within the process industries, need to explicitly register the amount of material consumed for each batch or production order. For example, workers might use a scale to weigh the amount of material consumed as they work. To ensure full material traceability, these organizations also need to register which batch numbers were consumed when producing each product. |
 | Production control | Report as finished on warehouse management workload for the cloud and edge scale unit | This feature lets workers use the Warehouse Management mobile app to report a production or batch order as finished when the app is running against a warehouse management workload on a cloud or edge scale unit. For more information, see [Report as finished and putaway on a scale unit](../cloud-edge/cloud-edge-workload-manufacturing.md#RAF). |
-| Warehouse management | New load planning workbench pages | Enables two new load planning workbench pages: **Inbound load planning workbench** and **Outbound load planning workbench**. |
+| Warehouse management | New load planning workbench pages | Adds two new load planning workbench pages: **Inbound load planning workbench** and **Outbound load planning workbench**. |
 
 ## New and updated documentation resources
 
-We have recently added or significantly updated the following help topics. These topics aren't necessarily related to the new features that were added for this release, as listed in the previous section. However, they might help you to get more out of existing features.
+We have recently added or significantly updated the following help articles. These articles aren't necessarily related to the new features that were added for this release, as listed in the previous section. However, they might help you to get more out of existing features.
 
-| Feature area | New or updated topics |
+| Feature area | New or updated articles |
 |---|---|
 | Cost management | [Inventory value reports](../cost-management/inventory-value-report-storage.md) |
 | Cost management | [Inventory value report examples and logic](../cost-management/inventory-value-report-examples.md) |
@@ -64,9 +64,9 @@ We have recently added or significantly updated the following help topics. These
 
 ## Additional resources
 
-### Platform updates for Finance and Operations apps
+### Platform updates for finance and operations apps
 
-Microsoft Dynamics 365 Supply Chain Management 10.0.24 includes platform updates. To learn more, see [Platform updates for version 10.0.24 of Finance and Operations apps (February 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
+Microsoft Dynamics 365 Supply Chain Management 10.0.24 includes platform updates. To learn more, see [Platform updates for version 10.0.24 of finance and operations apps (February 2022)](../../fin-ops-core/dev-itpro/get-started/whats-new-platform-updates-10-0-24.md).
 
 ### Bug fixes
 
@@ -80,13 +80,14 @@ Check out the [Dynamics 365 and industry clouds: 2021 release wave 2 plan](/dyna
 
 ### Removed and deprecated Supply Chain Management features
 
-The [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic describes features that have been or are scheduled to be removed or deprecated for Supply Chain Management.
+The [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) article describes features that have been or are scheduled to be removed or deprecated for Supply Chain Management.
 
 - A *removed* feature is no longer available in the product.
 - A *deprecated* feature is not in active development and may be removed in a future update.
 
-Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) topic 12 months prior to the removal.
+Before any feature is removed from the product, the deprecation notice will be announced in the [Removed or deprecated features in Dynamics 365 Supply Chain Management](removed-deprecated-features-scm-updates.md) article 12 months prior to the removal.
 
 For breaking changes that only affect compilation time, but are binary compatible with sandbox and production environments, the deprecation time will be less than 12 months. Typically, these are functional updates that need to be made to the compiler.
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
+

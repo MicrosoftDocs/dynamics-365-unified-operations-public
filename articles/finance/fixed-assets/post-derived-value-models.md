@@ -15,7 +15,7 @@ ms.search.form: AssetBookTable, LedgerJournalTransAsset
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: roschlom
+ms.reviewer: kfend
 # ms.tgt_pltfrm: 
 ms.custom: 3421
 ms.assetid: f5187c21-eec5-4148-b178-b8a5feff7f23
@@ -39,7 +39,7 @@ When you post transactions for a book that contains derived books, the derived b
 -   Other values for the transaction type can also apply. For example, if the primary book and the derived books have the same intervals regarding sale or disposal, all fixed asset transaction types are available for the setup of a derived book.
 
 > [!WARNING]
-> Depreciation posted in the derived book will be the same amount that was posted for the primary book. If the depreciation methods are different between the books, you should not generate depreciation transactions using the derived process. |
+> Depreciation posted in the derived book will be the same amount that was posted for the primary book. If the depreciation methods are different between the books, you should not generate depreciation transactions using the derived process. 
 
 ## Example 
 The following information describes how to set up acquisition transactions with the derived book functionality.

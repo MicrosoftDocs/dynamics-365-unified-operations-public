@@ -1,28 +1,18 @@
 ---
-# required metadata
-
 title: Report 340 for Spain
-description: This topic provides information about how to set up and generate Report 340 for Spain.
-author: anasyash
+description: This article provides information about how to set up and generate Report 340 for Spain.
+author: AdamTrukawka
 ms.date: 05/02/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Spain
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.search.form: 
 ---
 
 # Report 340 for Spain

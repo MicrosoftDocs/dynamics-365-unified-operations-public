@@ -2,8 +2,8 @@
 # required metadata
 
 title: Standard payroll reports
-description: This topic describes the standard payroll reports that are provided to help you with payroll processing and government reporting. 
-author: andreabichsel
+description: This article describes the standard payroll reports that are provided to help you with payroll processing and government reporting. 
+author: twheeloc
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
@@ -15,7 +15,7 @@ ms.technology:
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: anbichse
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 220994
 ms.assetid: 92b0da78-1c42-46f7-b1a2-334d75e625f3
@@ -31,9 +31,9 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [banner](../../includes/banner.md)]
 
-This topic describes the standard payroll reports that are provided to help you with payroll processing and government reporting. Use these standard reports to create pay statements and W-2 forms that you can issue to your workers, validate payroll taxes and benefit amounts, and complete federal and state regulatory reports.
+This article describes the standard payroll reports that are provided to help you with payroll processing and government reporting. Use these standard reports to create pay statements and W-2 forms that you can issue to your workers, validate payroll taxes and benefit amounts, and complete federal and state regulatory reports.
 
-This topic describes functionality that is available only if the **Payroll - USA** configuration key is selected.
+This article describes functionality that is available only if the **Payroll - USA** configuration key is selected.
 
 ## Payroll standard reports
 

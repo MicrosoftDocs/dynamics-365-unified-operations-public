@@ -1,14 +1,14 @@
 ---
 title: Write select statements as expressions
-description: This topic explains how you can use a select statement as an expression.
-author: tonyafehr
+description: This article explains how you can use a select statement as an expression.
+author: josaw1
 ms.date: 06/16/2020
 audience: Developer
-ms.reviewer: tfehr
+ms.reviewer: josaw
 ms.search.region: Global
-ms.author: tfehr
-ms.dyn365.ops.version: AX 7.0.0
+ms.author: josaw
 ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
 ---
 
 # Write select statements as expressions

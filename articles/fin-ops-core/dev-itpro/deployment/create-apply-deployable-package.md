@@ -1,36 +1,25 @@
 ---
-# required metadata
-
 title: Create deployable packages of models
-description: This topic describes the workflow for creating and applying a deployable package.
-author: jorisdg
+description: This article describes the workflow for creating and applying a deployable package.
+author: gianugo
 ms.date: 05/07/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: sericks
-# ms.tgt_pltfrm: 
-ms.custom: 24211
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: jorisde
+ms.author: gianura
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 24211
 ---
 
 # Create deployable packages of models
 
 [!include [banner](../includes/banner.md)]
 
-An AOT package is a deployment and compilation unit of one or more models that can be applied to an environment. It includes model metadata, binaries, reports and other associated resources. One or more AOT packages can be packaged into a deployable package, which is the vehicle used for deployment of code (and customizations) on demo, sandbox, and production environments. This topic guides you through the process of creating and applying a deployable package. 
+An AOT package is a deployment and compilation unit of one or more models that can be applied to an environment. It includes model metadata, binaries, reports and other associated resources. One or more AOT packages can be packaged into a deployable package, which is the vehicle used for deployment of code (and customizations) on demo, sandbox, and production environments. This article guides you through the process of creating and applying a deployable package. 
 
 ## Overview of the process
 

@@ -1,24 +1,15 @@
 ---
-# required metadata
-
 title: Quarterly VAT communication report
-description: This topic provides information about Quarterly VAT communication report in Italy.
-author: liza-golub
+description: This article provides information about Quarterly VAT communication report in Italy.
+author: AdamTrukawka
 ms.date: 09/15/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: Italy
-ms.author: elgolu
-# ms.search.industry: 
+ms.author: atrukawk
 ---
 
 # Quarterly VAT communication report

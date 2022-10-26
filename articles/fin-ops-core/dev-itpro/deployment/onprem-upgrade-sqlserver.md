@@ -2,7 +2,7 @@
 # required metadata
 
 title: Upgrade or replace the SQL Server instance of Microsoft Dynamics 365 Finance + Operations (on-premises) environments
-description: This topic explains how to upgrade the Microsoft SQL Server instance or cluster that your environment is using.
+description: This article explains how to upgrade the Microsoft SQL Server instance or cluster that your environment is using.
 author: faix
 ms.date: 04/05/2022
 ms.topic: article
@@ -18,7 +18,7 @@ ms.search.validFrom: 2021-11-29
 
 # Upgrade or replace the SQL Server instance of Microsoft Dynamics 365 Finance + Operations (on-premises) environments
 
-This topic explains how to upgrade the Microsoft SQL Server instance or cluster that your environment is using. You must complete this process if you want to upgrade from one major version of SQL Server to another but don't want to do an [in-place upgrade](/sql/database-engine/install-windows/choose-a-database-engine-upgrade-method). If you choose to do an in-place upgrade, you can still follow the guidance in this topic although some of the steps won't apply.
+This article explains how to upgrade the Microsoft SQL Server instance or cluster that your environment is using. You must complete this process if you want to upgrade from one major version of SQL Server to another but don't want to do an [in-place upgrade](/sql/database-engine/install-windows/choose-a-database-engine-upgrade-method). If you choose to do an in-place upgrade, you can still follow the guidance in this article although some of the steps won't apply.
 
 ## Prerequisites for upgrading the SQL Server version
 
@@ -44,11 +44,11 @@ This topic explains how to upgrade the Microsoft SQL Server instance or cluster 
 
 All your SQL Server components across an environment must be on the same version. For example, if you're upgrading to SQL Server 2019, SQL Server Reporting Services (SSRS), SQL Server Integration Services (SSIS), and the database engines must all be on the same version.
 
-1. On your AOS nodes, upgrade the SSIS component.
-1. On your Business Intelligence (BI) nodes, upgrade the SSRS and database engine components.
+1. On your AOS nodes, upgrade the SSIS component. When you perform this action, the Data Management Framework (DMF) will cease to work correctly, because it will rely on the older version of SSIS. After you service your environment, DMF will continue to work, because it will have been updated to use the new version of SSIS.
+1. On your Business Intelligence (BI) nodes, upgrade the SSRS and database engine components. When you do this upgrade, you will have to rerun the **Complete-Prereqs.ps1** script on the node, so that the service permissions are reconfigured. When you upgrade the database engine component on your BI nodes from SQL Server 2016 to SQL Server 2019, the SSRS component will be removed. After it's removed, use the SSRS 2019 installer to install the SSRS service.
 
 > [!IMPORTANT]
-> When you upgrade the database engine component on your BI nodes from SQL Server 2016 to SQL Server 2019, the SSRS component will be removed. In SQL Server 2019, SSRS has its own installer.
+>  In SQL Server 2019, SSRS has its own installer.
 
 ## Update the local agent
 
@@ -83,6 +83,9 @@ All your SQL Server components across an environment must be on the same version
 
 ## Force the re-adding of the assemblies to the Global Assembly Cache
 
+> [!NOTE]
+> If your environment is on application version 10.0.31 or later, you can skip this step, because the change in the SQL version will be detected automatically.
+
 Typically, when servicing an environment with a package deployment, the Service Fabric package version of the AXSFType changes. This will make the environment carry out additional deployment and servicing operations. When using the **Update Settings** action, the version does not change. As a result, the appropriate assemblies will not be present in the Global Assembly Cache. To force the re-adding of the assemblies to the Global Assembly Cache, complete the following steps:
 
 1. Go to your aos-storage file share.
@@ -90,6 +93,14 @@ Typically, when servicing an environment with a package deployment, the Service 
 3. You will see a list of folders corresponding with the names of your AOS nodes. Open any of the folders. 
 4. Rename the existing .txt file to 1.0.txt.
 5. Repeat step 4 for each folder.
+
+## Force the redeployment of your reports to the SSRS node
+
+If you're replacing your BI node with a new node, or if you deleted your database engine and reinstalled it, you might have to force the deployment of your reports. In this case, run the following command from your business database before you trigger the **Update environment** action as described in the next section.
+
+```SQL
+UPDATE SF.synclog SET STATE=5, SyncStepName = 'ReportSyncstarted' WHERE CODEPACKAGEVERSION in (SELECT TOP(1) CODEPACKAGEVERSION from SF.SYNCLOG ORDER BY CREATIONDATE DESC)
+```
 
 ## Update your environment settings
 

@@ -1,6 +1,6 @@
 ---
 title: Inventory value report examples and logic
-description: This topic provides some examples of results that are presented on each type of inventory value report. Inventory value reports provide details about your inventory physical and financial quantities and amounts.
+description: This article provides some examples of results that are presented on each type of inventory value report. Inventory value reports provide details about your inventory physical and financial quantities and amounts.
 author: JennySong-SH
 ms.date: 10/19/2021
 ms.topic: article
@@ -17,13 +17,13 @@ ms.dyn365.ops.version: 10.0.22
 
 [!include [banner](../includes/banner.md)]
 
-Inventory value reports provide details about your inventory physical and financial quantities and amounts. This topic provides some examples of results that are presented on each type of inventory value report.
+Inventory value reports provide details about your inventory physical and financial quantities and amounts. This article provides some examples of results that are presented on each type of inventory value report.
 
 For more information about how to generate and use each type of inventory value report, see [Inventory value reports](inventory-value-report-storage.md).
 
 ## Sample data that is used in these examples
 
-The examples in this topic are based on the sample inventory transaction data that is described in this section.
+The examples in this article are based on the sample inventory transaction data that is described in this section.
 
 ### Storage dimension setup
 
@@ -65,7 +65,7 @@ The example system includes an inventory value report configuration that has the
 
 ## Inventory value report example 1
 
-The following table and illustrations show the results when you use the sample data and report configuration that are described earlier in this topic.
+The following table and illustrations show the results when you use the sample data and report configuration that are described earlier in this article.
 
 | Resource type | Resource | Site | Reference | Inventory: Financial quantity | Inventory: Financial amount | Inventory: Physical quantity posted | Inventory: Physical amount posted | Inventory: Quantity | Inventory: Amount | Average unit cost |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -86,7 +86,7 @@ The following illustration shows the **Inventory value report storage** report 
 
 ## Inventory value report example 2
 
-The following table and illustrations show the results when you use the sample data that is described earlier in this topic, but you change the value of the **Level** field to *Transactions* in the report configuration, and you set the **From date** field to *March 15* when you run the report.
+The following table and illustrations show the results when you use the sample data that is described earlier in this article, but you change the value of the **Level** field to *Transactions* in the report configuration, and you set the **From date** field to *March 15* when you run the report.
 
 | Resource type | Resource | Site | Date | Number | Reference | Inventory: Financial quantity | Inventory: Financial amount | Inventory: Physical quantity posted | Inventory: Physical amount posted | Inventory: Quantity | Inventory: Amount |
 |---|---|---|---|---|---|---|---|---|---|---|---|
@@ -122,7 +122,7 @@ The following subsections show the inventory value reports that are generated af
 
 ### Example 3 when the Totals level is used
 
-The following table shows the results when you use the sample data and report configuration that are described earlier in this topic. (In that report configuration, the **Level** field is set to *Totals*.)
+The following table shows the results when you use the sample data and report configuration that are described earlier in this article. (In that report configuration, the **Level** field is set to *Totals*.)
 
 | Resource type | Resource | Site | Reference | Inventory: Financial quantity | Inventory: Financial amount | Inventory: Physical quantity posted | Inventory: Physical amount posted | Inventory: Quantity | Inventory: Amount | Average unit cost |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -131,7 +131,7 @@ The following table shows the results when you use the sample data and report co
 
 ### Example 3 when the Transactions level is used
 
-The following table shows the results when you use the sample data that is described earlier in this topic, but you change the value of the **Level** field to *Transactions* in the report configuration.
+The following table shows the results when you use the sample data that is described earlier in this article, but you change the value of the **Level** field to *Transactions* in the report configuration.
 
 | Resource type | Resource | Site | Date | Number | Reference | Inventory: Financial quantity | Inventory: Financial amount | Inventory: Physical quantity posted | Inventory: Physical amount posted | Inventory: Quantity | Inventory: Amount |
 |---|---|---|---|---|---|---|---|---|---|---|---|

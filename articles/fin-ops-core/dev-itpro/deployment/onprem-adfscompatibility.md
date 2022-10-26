@@ -2,7 +2,7 @@
 # required metadata
 
 title: AD FS Microsoft 365 compatibility
-description: This topic explains how to use the same instance of Active Directory Federation Services (AD FS) for a Dynamics 365 Finance + Operations (on-premises) environment and for Microsoft 365.
+description: This article explains how to use the same instance of Active Directory Federation Services (AD FS) for a Dynamics 365 Finance + Operations (on-premises) environment and for Microsoft 365.
 author: faix
 ms.date: 01/13/2020
 ms.topic: article
@@ -12,7 +12,7 @@ ms.technology:
 
 # optional metadata
 
-# ms.search.form: [Operations AOT form name to tie this topic to]
+# ms.search.form: [Operations AOT form name to tie this article to]
 audience: IT Pro
 # ms.devlang: 
 ms.reviewer: sericks
@@ -33,13 +33,13 @@ ms.dyn365.ops.version: Platform update 28
 > [!IMPORTANT]
 > This feature is only fully supported starting with application update 10.0.8, Platform update 32, and LocalAgent 2.2.0. For details, see [Partial support](#partialsupport). 
 
-This topic explains how to use the same instance of Active Directory Federation Services (AD FS) for a Dynamics 365 Finance + Operations (on-premises) environment and for Microsoft 365.
+This article explains how to use the same instance of Active Directory Federation Services (AD FS) for a Dynamics 365 Finance + Operations (on-premises) environment and for Microsoft 365.
 
 ## Existing deployments
 
 1. Download the new local agent version from Microsoft Dynamics Lifecycle Services (LCS). It should be version 2.2.0 or later.
-2. Download the new version of the local agent configuration file, because it has additional configuration that is required for this functionality.
-3. Modify the new local agent configuration file, and set the **office365AdfsCompatibility** value to **True**.
+2. Update your agent configuration in LCS by setting the deployment option to **Enable AD FS Microsoft 365 Compatibility**.
+3. Download the new version of the local agent configuration file.
 4. Run the following command to uninstall the old local agent version from your cluster.
 
     ```powershell
@@ -69,6 +69,7 @@ This topic explains how to use the same instance of Active Directory Federation 
 12. Execute the Reset-Sid.ps1 script.
     
     ```powershell
+    Import-Module ".\D365FO-OP" -Force
     .\Reset-SID.ps1 -AxsfCodePath 'C:\ProgramData\SF\AOS_13\Fabric\work\Applications\AXSFType_App184\AXSF.Code.1.0.20190902'
     ```
 

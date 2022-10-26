@@ -2,7 +2,7 @@
 # required metadata
 
 title: Create tax components
-description: This topic explains how to create tax components manually and by using predefined rules.
+description: This article explains how to create tax components manually and by using predefined rules.
 author: EricWangChen
 ms.date: 09/10/2021
 ms.topic: article

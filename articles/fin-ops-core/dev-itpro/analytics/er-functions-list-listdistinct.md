@@ -1,29 +1,19 @@
 ---
-# required metadata
-
 title: LISTDISTINCT ER function
-description: This topic provides information about how the LISTDISTINCT Electronic reporting (ER) function is used.
-author: NickSelin
-ms.date: 7/30/2020
+description: This article provides information about how the LISTDISTINCT Electronic reporting (ER) function is used.
+author: kfend
+ms.date: 07/30/2020
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
-# ROBOTS: 
 audience: Application User, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-08-01
 ms.dyn365.ops.version: AX 10.0.14
-
+ms.custom: 
+ms.assetid: 
+ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 ---
 
 # LISTDISTINCT ER Function

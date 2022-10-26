@@ -1,28 +1,16 @@
 ---
-# required metadata
-
 title: Generate a VAT declaration in paper format (VAT 100 report)
-description: This topic explains how to generate a VAT declaration in paper format (VAT 100 report) for the United Kingdom (UK).
-author: liza-golub
+description: This article explains how to generate a VAT declaration in paper format (VAT 100 report) for the United Kingdom (UK).
+author: AdamTrukawka
 ms.date: 09/07/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: United Kingdom
-# ms.search.industry: 
-ms.author: elgolu
-ms.search.validFrom: 08/06/2021
-
+ms.author: atrukawk
+ms.search.validFrom: 2021-08-06
 ---
 
 # Generate a VAT declaration in paper format (VAT 100 report)

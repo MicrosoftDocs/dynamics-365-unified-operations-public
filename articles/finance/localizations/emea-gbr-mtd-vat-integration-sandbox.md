@@ -1,35 +1,23 @@
 ---
-# required metadata
-
 title: Test interoperation with the MTD VAT sandbox
-description: This topic explains how to test the interoperation of Microsoft Dynamics 365 Finance with the Making Tax Digital for value-added tax (MTD VAT) application programming interface (API) of Her Majesty's Revenue and Customs (HMRC).
-author: liza-golub
+description: This article explains how to test the interoperation of Microsoft Dynamics 365 Finance with the Making Tax Digital for value-added tax (MTD VAT) application programming interface (API) of Her Majesty's Revenue and Customs (HMRC).
+author: AdamTrukawka
 ms.date: 08/19/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: United Kingdom
-# ms.search.industry: 
-ms.author: elgolu
-ms.search.validFrom: 08/06/2021
-
+ms.author: atrukawk
+ms.search.validFrom: 2021-08-06
 ---
 
 # Test interoperation with the MTD VAT sandbox
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to test the interoperation of Microsoft Dynamics 365 Finance with the Making Tax Digital for value-added tax (MTD VAT) application programming interface (API) of Her Majesty's Revenue and Customs (HMRC).
+This article explains how to test the interoperation of Microsoft Dynamics 365 Finance with the Making Tax Digital for value-added tax (MTD VAT) application programming interface (API) of Her Majesty's Revenue and Customs (HMRC).
 
 For testing purposes, HMRC lets you register as a developer in the [HMRC Developer Hub](https://developer.service.hmrc.gov.uk/developer/registration) and access the sandbox environment. When you're registered as a developer, you can use the **UK MTD VAT TEST** Electronic messaging (EM) processing in Finance to try to interoperate with HMRC's sandbox environment.
 
@@ -77,7 +65,7 @@ Follow these steps to get an authorization code.
 4. In the **Electronic reporting parameters** dialog box, in the **Scope** field, enter **read:vat write:vat**. Then select **OK**.
 5. In the **System administrator consent** dialog box, select the checkbox to confirm that you want to enable interoperation with HMRC's MTD API and use external web services. Your privacy is important to us. To learn more, read our [privacy notice](emea-gbr-mtd-vat-integration.md#privacy-notice).
 6. Select **Agree** to continue, and then, in the HMRC portal, select **Continue** at the bottom of the page.
-7. In the HMRC portal for authorization, on the **Sign in** page, enter the **User ID** and **Password** values that you saved in the [Obtain test user credentials](#user) section of this topic.
+7. In the HMRC portal for authorization, on the **Sign in** page, enter the **User ID** and **Password** values that you saved in the [Obtain test user credentials](#user) section of this article.
 8. Select **Grant authority**.
 9. The **Authorisation granted** page shows the authorization code that HMRC granted to you for testing in the sandbox application. Copy this authorization code to the clipboard.
 

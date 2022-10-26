@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: Polish Intrastat
-description: This topic contains information about Intrastat reporting in Poland.
-author: andosip
+description: This article contains information about Intrastat reporting in Poland.
+author: AdamTrukawka
 ms.date: 11/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: kfend
+ms.author: atrukawk
 ms.search.validFrom: 
 ---
 # Polish Intrastat

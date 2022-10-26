@@ -1,37 +1,27 @@
 ---
-# required metadata
-
 title: VAT exchange rate overview
-description: This topic provides information about exchange rates for the VAT calculation that's available for the Czech Republic, Hungary, and Poland. 
-author: ShylaThompson
+description: This article provides information about exchange rates for the VAT calculation that's available for the Czech Republic, Hungary, and Poland.
+author: mrolecki
 ms.date: 07/08/2021
 ms.topic: overview
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: ExchangeRateCurrencyPairCalculationRules, LedgerParameters, SalesTaxExchangeRateType, TaxTmpWorkTrans
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: ["272703", "intro-internal"]
-ms.assetid: 2d1fad67-8234-49cc-b009-0f3cc29f5886
 ms.search.region: Czech Republic, Hungary, Poland
-# ms.search.industry: 
 ms.author: mrolecki
-ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
-
+ms.dyn365.ops.version: Version 1611
+ms.custom: 272703,  ""intro-internal
+ms.assetid: 2d1fad67-8234-49cc-b009-0f3cc29f5886
+ms.search.form: ExchangeRateCurrencyPairCalculationRules, LedgerParameters, SalesTaxExchangeRateType, TaxTmpWorkTrans
 ---
 
 # VAT exchange rate overview
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about exchange rates for the VAT calculation that's available for the Czech Republic, Hungary, and Poland. The exchange rate that's used for VAT calculation can differ from the exchange rate used for company accounting functions. When a document in a foreign currency is posted, any exchange rate differences that occur are posted to specific ledger accounts.
+This article provides information about exchange rates for the VAT calculation that's available for the Czech Republic, Hungary, and Poland. The exchange rate that's used for VAT calculation can differ from the exchange rate used for company accounting functions. When a document in a foreign currency is posted, any exchange rate differences that occur are posted to specific ledger accounts.
 
 Your organization can select the exchange rate that it uses to calculate value-added tax (VAT) for VAT statements. This exchange rate can differ from the exchange rate that your organization uses for company accounting functions. Accounting functions include the preparation of the following tax-related documents:
 

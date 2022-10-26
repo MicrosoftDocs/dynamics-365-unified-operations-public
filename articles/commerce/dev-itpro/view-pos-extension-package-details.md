@@ -1,28 +1,17 @@
 ---
-# required metadata
-
 title: View POS extension package information
-description: This topic provides information about the Extension packages section of the Settings view in the point of sale (POS).
-author: mugunthanm
+description: This article provides information about the Extension packages section of the Settings view in the point of sale (POS).
+author: josaw1
 ms.date: 04/25/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2019-02-25
 ms.dyn365.ops.version: AX 10.0.1
-
 ---
 
 # View POS extension package information

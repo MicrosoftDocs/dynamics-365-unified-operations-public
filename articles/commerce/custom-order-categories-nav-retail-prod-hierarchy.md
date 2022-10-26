@@ -2,9 +2,9 @@
 # required metadata
 
 title: Change the sort order for merchandising entities
-description: This topic explains the concepts that are related to controlling the display order for various merchandising-related entities in Dynamics 365 Commerce.
+description: This article explains the concepts that are related to controlling the display order for various merchandising-related entities in Dynamics 365 Commerce.
 author: josaw1
-ms.date: 08/05/2019
+ms.date: 08/11/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -31,15 +31,15 @@ ms.dyn365.ops.version: Version 1611
 
 [!Include [banner](includes/banner.md)]
 
-Retailers consider product discovery a primary tool for customer interaction across all channels. Various functionality can help customers easily discover products. For example, they can browse categories, search, and filter.
+Retailers consider product discovery a primary tool for customer interaction across all channels. There are several features that can help customers easily discover products. For example, customers can browse categories, search, and filter.
 
-This topic explains the concepts that are related to controlling the display order for various merchandising-related entities. It also explains how to change the sort order.
+This article explains the concepts that are related to controlling the display order for various merchandising-related entities. It also explains how to change the sort order.
 
 ## Overview
 
-The support for sorting various merchandising-related entities has been enhanced. This support is now better aligned with existing customer scenarios that previously required extensions from implementation partners.
+In Commerce, sorting various merchadising-relating entities is aligned with existing customer scenarios and no longer requires extensions from implementation partners.
 
-In versions of Retail that are earlier than version 10.0.5, the sort order for categories in the navigation hierarchy was alphabetical. The new custom sort order functionality lets merchandising managers configure the sort order for various merchandising-related entities across all end-user clients. These clients include headquarters (HQ) and call centers.
+In Commerce versions 10.0.5 and earlier, the sort order for categories in the navigation hierarchy was alphabetical. The current custom sort order functionality enables merchandising managers to configure the sort order for various merchandising-related entities across all end-user clients. These clients include headquarters (HQ) and call centers.
 
 ## Configure the display order for categories in the product hierarchy
 
@@ -67,11 +67,11 @@ Before you can complete this procedure, demo data must be installed in your envi
 2. In the list, select the **Fashion navigation** hierarchy.
 3. Click **Edit category hierarchy**.
 4. Click **Edit**.
-5. In the tree, select **Fashion \> Womenswear \> Womens Shoes**.
+5. In the tree, select **Fashion \> Womenswear \> Women's Shoes**.
 6. In the **Display order** field, enter a number.
 7. In the tree, select **Fashion \> Womenswear \> Tops**.
 
-    Likewise, you can define the sort order for the sub-categories.
+Likewise, you can define the sort order for the subcategories.
 
 8. In the tree, select **Fashion \> Menswear \> Casual Shirts**.
 9. In the **Display order** field, enter a number.
@@ -88,7 +88,7 @@ The display order for the channel navigation hierarchy is reflected in HQ, catal
 ![POS with custom sorted categories.](./media/POSChannelCategoriesCustomSorted.png)
 
 > [!NOTE]
-> By default the custom sort order feature is turned off. To learn how to turn on this feature and other features, see [Feature management](/dynamics365/unified-operations/fin-and-ops/get-started/feature-management/feature-management-overview).
-
+> By default, the **Enable display order for merchandising entities** feature is turned off. Use [Feature management](../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) to turn it on. After you tun the feature on, run **Global configuration -1110** CDX job from the distribution schedule.
+> If your categories order in POS aren't updated, reactivate the device. Category information is fetched when device activation occurs, so the device may need to refetch the category information with updated display orders. 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

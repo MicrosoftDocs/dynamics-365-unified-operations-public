@@ -1,31 +1,20 @@
 ---
-# required metadata
-
 title: Archive credit card transaction data
-description: This topic describes an archival job in Microsoft Dynamics 365 Commerce that can help free up space in the database by archiving credit card transactions.
+description: This article describes an archival job in Microsoft Dynamics 365 Commerce that can help free up space in the database by archiving credit card transactions.
 author: BrianShook
-ms.date: 01/28/2021
+ms.date: 09/20/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: IT Pro
-# ms.devlang: 
-ms.reviewer: v-chgri
-ms.search.scope: Operations, Retail
-# ms.tgt_pltfrm: 
-ms.custom: 141393
-ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: brshoo
 ms.search.validFrom: 2019-01-01
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 141393
+ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
+ms.search.industry: Retail
 ---
 
 # Archive credit card transaction data
@@ -33,9 +22,9 @@ ms.dyn365.ops.version: AX 7.0.1
 [!include [banner](../includes/banner.md)]
 [!include [banner](../includes/preview-banner.md)]
 
-This topic describes an archival job in Microsoft Dynamics 365 Commerce that can help free up space in the database by archiving credit card transactions. This job is available as of the Commerce version 10.0.17 release.
+This article describes an archival job in Microsoft Dynamics 365 Commerce that can help free up space in the database by archiving credit card transactions. This job is available as of the Commerce version 10.0.17 release.
 
-For every credit card authorization, the authentication binary large object ([auth blob](#key-terms)) is stored in the database. Auth blobs contain data that is related to the authorization. Over time, these auth blobs can grow and take up a significant amount of space in the database. The job that is described in this topic lets you archive auth blob data by exporting it to Azure Blob storage and then deleting the data from the database.
+For every credit card authorization, the authentication binary large object ([auth blob](#key-terms)) is stored in the database. Auth blobs contain data that is related to the authorization. Over time, these auth blobs can grow and take up a significant amount of space in the database. The job that is described in this article lets you archive auth blob data by exporting it to Azure Blob storage and then deleting the data from the database.
 
 The parameters for the archival job are based on the age of the transaction in days. In other words, if the **Minimum transaction age in days** field for the job is set to **365**, for example, all XML data about credit card authorizations that is older than 365 days will be subject to archiving when the job is run.
 
@@ -82,6 +71,19 @@ After you confirm the parameters for data that must be archived, you're prompted
 ![Confirmation message box.](media/PAYMENTS/Batch3.png)
 
 After you select **Yes**, the archival job becomes active, and all XML data about credit card authorizations that is older than the **Minimum transaction age in days** value will be subject to archiving.
+
+## Further storage management with token compression
+
+To decrease the footprint of underlying storage tables, you can compress tokens by enabling the **Compress payment tokens** feature. Enabling this feature flag will allow the system to use compression on stored payment property tokens. 
+
+> [!IMPORTANT]
+> To use the **Compress payment tokens** feature, your system must be running Commerce version 10.0.25 or later and point-of-sale (POS) version 9.35 or later.
+
+To enable the **Compress payment tokens** feature in headquarters, follow these steps.
+
+1. Go to **Workspaces \> Feature management**. 
+1. Under **All**, search for the **Compress payment tokens** feature.
+1. Select the feature, and then select **Enable now** in the properties pane.
 
 ## Additional resources
 

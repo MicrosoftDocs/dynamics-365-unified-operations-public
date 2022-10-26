@@ -1,35 +1,26 @@
 ---
-# required metadata
-
 title: Import the Chinese Golden Tax files
-description: This topic explains how to import the Chinese Golden Tax files into Microsoft Dynamics 365 Finance.
-author: ilkond
+description: This article explains how to import the Chinese Golden Tax files into Microsoft Dynamics 365 Finance.
+author: mrolecki
 ms.date: 12/20/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: DataManagementWorkspace, DMFQuickImportExportRnr
 audience: IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 261394
 ms.search.region: China (PRC)
-# ms.search.industry: 
-ms.author: ilyako
+ms.author: mrolecki
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 261394
+ms.search.form: DataManagementWorkspace, DMFQuickImportExportRnr
 ---
 
 # Import the Chinese Golden Tax files
 
 [!include [banner](../includes/banner.md)]
   
-This topic explains how to import files with external invoice numbers from providers (Aisino or BaiWang) into Dynamics 365 Finance. You can import txt and xml files from the BaiWang provider, and txt and txt files from the Aisino provider.
+This article explains how to import files with external invoice numbers from providers (Aisino or BaiWang) into Dynamics 365 Finance. You can import txt and xml files from the BaiWang provider, and txt and txt files from the Aisino provider.
 
 To import the files from a provider with external invoice numbers, complete the following steps.
 

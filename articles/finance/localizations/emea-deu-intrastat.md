@@ -1,15 +1,13 @@
 ---
-# required metadata
-
 title: German Intrastat
-description: This topic contains information about Intrastat declaration in Germany.
-author: anasyash
+description: This article contains information about Intrastat declaration in Germany.
+author: AdamTrukawka
 ms.date: 09/09/2021
 ms.topic: article
 audience: Application User
 ms.reviewer: kfend
 ms.search.region: Global
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 
 ---
 

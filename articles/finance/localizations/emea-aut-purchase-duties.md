@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Purchase duties
-description: This topic provides information about purchase duties in Austria.
-author: ShylaThompson
+description: This article provides information about purchase duties in Austria.
+author: AdamTrukawka
 ms.date: 07/21/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 
 ms.search.region: Austria
-# ms.search.industry: 
-ms.author: roschlom
+ms.author: atrukawk
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-
+ms.custom: 
 ---
 
 # Purchase duties

@@ -1,29 +1,18 @@
 ---
-# required metadata
-
 title: Define and set order attributes
-description: This topic explains how to edit and set attributes values for orders directly in Commerce Headquarters, the POS, and CRT.
-author: mugunthanm
+description: This article explains how to edit and set attributes values for orders directly in Commerce Headquarters, the POS, and CRT.
+author: josaw1
 ms.date: 09/25/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 83892
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: mumani
+ms.author: josaw
 ms.search.validFrom: 2017-10-24
 ms.dyn365.ops.version: AX 7.0.0, Retail September 2017 update
-
+ms.custom: 83892
 ---
 
 # Define and set order attributes

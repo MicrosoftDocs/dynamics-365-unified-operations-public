@@ -1,29 +1,17 @@
 ---
-# required metadata
-
 title: Tax point date (Date of VAT register)
-description: This topic provides information about how to indicate when the tax date is different from the transaction date regarding VAT registration.
-author: LizaGolub
+description: This article provides information about how to indicate when the tax date is different from the transaction date regarding VAT registration.
+author: AdamTrukawka
 ms.date: 01/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
 ms.search.region: United Kingdom
-# ms.search.industry: 
 ms.author: kfend
-ms.search.validFrom: 09/06/2020
+ms.search.validFrom: 2020-09-06
 ms.dyn365.ops.version: AX 10.0.6
-
 ---
 
 # Tax point date (Date of VAT register)

@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Data action overrides
-description: This topic describes how to override default data actions with custom data actions in Dynamics 365 Commerce.
+description: This article describes how to override default data actions with custom data actions in Dynamics 365 Commerce.
 author: samjarawan
 ms.date: 07/16/2020
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
 audience: Developer
-# ms.devlang: 
-ms.reviewer: v-chgri
-# ms.tgt_pltfrm: 
-ms.custom: 
-ms.assetid: 
+ms.reviewer: v-chgriffin
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: samjar
 ms.search.validFrom: 2020-01-31
 ms.dyn365.ops.version: Release 10.0.10
-
+ms.custom: 
+ms.assetid: 
 ---
 # Data action overrides
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to override default data actions with custom data actions in Dynamics 365 Commerce.
+This article describes how to override default data actions with custom data actions in Dynamics 365 Commerce.
 
 The modules included with the Dynamics 365 Commerce software development kit (SDK) module library use pre-existing data actions to fetch data for the modules to use. There may be times when you want to use a custom data action to alter the business logic, but do not want to clone the module because you won't be changing the UX rendered by the module. With data action overrides, you can override the registered action by creating a new action with the same action ID. Overriding a data action will cause all previous uses of the data action, either through import or inclusion in the module definition.json file, to use your new data action.
 

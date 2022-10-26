@@ -1,30 +1,20 @@
 ---
-# required metadata
-
 title: Printer ER destination type
-description: This topic explains how you can configure a printer destination for each FOLDER or FILE component of an Electronic reporting (ER) format. 
-author: NickSelin
+description: This article explains how you can configure a printer destination for each FOLDER or FILE component of an Electronic reporting (ER) format.
+author: kfend
 ms.date: 02/14/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 97423
-ms.assetid: 
 ms.search.region: Global
-# ms.search.industry: 
-ms.author: nselin
+ms.author: filatovm
 ms.search.validFrom: 2020-04-01
 ms.dyn365.ops.version: AX 10.0.9
-
+ms.custom: 97423
+ms.assetid: 
+ms.search.form: DocuType, ERSolutionTable, ERFormatDestinationTable
 ---
 
 # <a name="PrinterDestinationType"></a>Printer destination

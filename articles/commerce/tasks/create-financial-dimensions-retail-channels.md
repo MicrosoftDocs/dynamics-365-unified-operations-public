@@ -27,7 +27,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-This procedure walks through creating a commerce channel financial dimension with dimension values and steps to configure financial dimension values on stores. The topic does not include other related steps, such as creating dimension sets and account structures. This procedure uses the USRT company in demo data.
+This procedure walks through creating a commerce channel financial dimension with dimension values and steps to configure financial dimension values on stores. The article does not include other related steps, such as creating dimension sets and account structures. This procedure uses the USRT company in demo data.
 
 1. Go to General ledger > Chart of accounts > Dimensions > Financial dimensions.
 2. Click New.

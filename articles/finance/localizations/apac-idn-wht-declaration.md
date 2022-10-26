@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Withholding tax report for Indonesia
-description: This topic explains how to configure and generate the withholding tax report for Indonesia.
-author: sndray
+description: This article explains how to configure and generate the withholding tax report for Indonesia.
+author: AdamTrukawka
 ms.date: 12/15/2021
 ms.topic: article
-ms.prod:
+ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User, Developer, IT Pro
-# ms.devlang: 
 ms.reviewer: kfend
-ms.search.scope:
-# ms.tgt_pltfrm: 
-# ms.custom: NotInTOC
 ms.search.region: Global
-# ms.search.industry:
-ms.author: sndray
+ms.author: atrukawk
 ms.search.validFrom: 2021-12-02
 ms.dyn365.ops.version: 10.0.20
+ms.search.scope: 
 ---
 
 # Withholding tax report for Indonesia (ID-00005)
 
 [!include [banner](../includes/banner.md)]
 
-This topic explains how to set up and generate the PPH withholding tax file that legal entities in Indonesia use to report withholding transactions in the e-Bupot application.
+This article explains how to set up and generate the PPH withholding tax file that legal entities in Indonesia use to report withholding transactions in the e-Bupot application.
 
 The Indonesia tax authority (DGT) determines that taxable entrepreneurs (PKP) that are registered at KPP Pratama as tax withholders/collectors of income tax (PPh) Article 23 and/or Article 26 must electronically report Income Tax Return Article 23 and 26 by using the e-Bupot application. 
 

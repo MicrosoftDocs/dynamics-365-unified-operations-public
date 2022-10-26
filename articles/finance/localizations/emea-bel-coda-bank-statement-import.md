@@ -1,36 +1,26 @@
 ---
-# required metadata
-
 title: CODA bank statement
-description: This topic includes information about CODA, which is a report format used in the Belgian electronic banking system. 
-author: anasyash
+description: This article includes information about CODA, which is a report format used in the Belgian electronic banking system.
+author: AdamTrukawka
 ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-ms.search.form: BankAccountTable, BankCodaAccountStatement, BankCodaAccountStatementLines, BankCodaParameters, BankCodaTrans, BankCodaTransCategory, BankCodaTransDefTable, BankCodaTransFamily
-# ROBOTS: 
 audience: Application User
-# ms.devlang: 
 ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-ms.custom: 262534
 ms.search.region: Belgium
-# ms.search.industry: 
-ms.author: anasyash
+ms.author: atrukawk
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-
+ms.custom: 262534
+ms.search.form: BankAccountTable, BankCodaAccountStatement, BankCodaAccountStatementLines, BankCodaParameters, BankCodaTrans, BankCodaTransCategory, BankCodaTransDefTable, BankCodaTransFamily
 ---
 
 # CODA bank statement
 
 [!include [banner](../includes/banner.md)]
 
-This topic includes information about CODA, which is a report format used in the Belgian electronic banking system. 
+This article includes information about CODA, which is a report format used in the Belgian electronic banking system. 
 
 For Belgian bank statement imports, you'll use the CODA file format. This feature lets you verify company bank account opening and ending balances, and reconcile imported transactions based on reconciliation rules.
 

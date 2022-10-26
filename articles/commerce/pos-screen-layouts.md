@@ -2,7 +2,7 @@
 # required metadata
 
 title: POS user interface visual configurations
-description: This topic provides information about screen layouts for Dynamics 365 Commerce point of sale (POS) experiences.
+description: This article provides information about screen layouts for Dynamics 365 Commerce point of sale (POS) experiences.
 author: boycezhu
 ms.date: 09/22/2020
 ms.topic: article
@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 [!include [banner](includes/banner.md)]
 
 
-The user interface (UI) of the Microsoft Dynamics 365 Commerce point of sale (POS) can be configured by using a combination of visual profiles and screen layouts that are assigned to stores, registers, and users. This topic provides information about those configuration options.
+The user interface (UI) of the Microsoft Dynamics 365 Commerce point of sale (POS) can be configured by using a combination of visual profiles and screen layouts that are assigned to stores, registers, and users. This article provides information about those configuration options.
 
 The following illustration shows the relationships among the various entities that make up the configurable aspects of the POS UI.
 

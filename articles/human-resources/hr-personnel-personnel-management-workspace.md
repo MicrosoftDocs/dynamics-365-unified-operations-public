@@ -2,7 +2,7 @@
 # required metadata
 
 title: Personnel management workspace
-description: This topic describes the conceptual elements of the Personnel management workspace. 
+description: This article describes the conceptual elements of the Personnel management workspace. 
 author: twheeloc
 ms.date: 11/03/2021
 ms.topic: article
@@ -17,7 +17,7 @@ audience: Application User
 # ms.devlang: 
 ms.author: twheeloc
 ms.reviewer: twheeloc
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 269054
 ms.assetid: 889a8fab-0eef-45c2-91fc-ff2f4d44d54f
@@ -35,7 +35,7 @@ ms.dyn365.ops.version: Version 1611
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-The **Personnel management** workspace includes a vast amount of content. It contains personnel movements, tracks employee changes, open positions, address changes, expiring records, and analytics, and provides links to specific information. This topic provides detailed information about each part of the workspace.
+The **Personnel management** workspace includes a vast amount of content. It contains personnel movements, tracks employee changes, open positions, address changes, expiring records, and analytics, and provides links to specific information. This article provides detailed information about each part of the workspace.
 
 ## Activity tab
 

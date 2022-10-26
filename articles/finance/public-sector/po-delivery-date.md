@@ -1,35 +1,25 @@
 ---
-# required metadata
-
 title: Calculate the delivery date for a line, based on the lead time
-description: This topic describes how to calculate a delivery date for a line, based on the vendor's lead time and your organization's working days calendar. 
+description: This article describes how to calculate a delivery date for a line, based on the vendor's lead time and your organization's working days calendar.
 author: velofog
 ms.date: 09/03/2019
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form:
 audience: Application User
-# ms.devlang: 
-ms.reviewer: kfend
-# ms.tgt_pltfrm: 
-# ms.custom: 
+ms.reviewer: twheeloc
 ms.search.region: Global
-ms.search.industry: public sector
-ms.author: roschlom
-ms.search.validFrom: 2019-9-03
+ms.author: velofog
+ms.search.validFrom: 2019-09-03
 ms.dyn365.ops.version: 10.0.7
-
+ms.search.industry: public sector
 ---
 
 # Calculate the delivery date for a line, based on the lead time
 
 [!include [banner](../includes/banner.md)]
 
-This topic describes how to calculate a delivery date for a line, based on the vendor's lead time and your organization's working days calendar, as they are specified on the **Quotation** tab of the **Request for quotation reply** page. Vendors can specify a lead time for each line. Then, when a purchase order is confirmed, a delivery date for a line is calculated from the confirmation date, based on the lead time and the working days calendar. If no lead time is specified, the confirmation date is used as the delivery date, unless the delivery date is automatically calculated.
+This article describes how to calculate a delivery date for a line, based on the vendor's lead time and your organization's working days calendar, as they are specified on the **Quotation** tab of the **Request for quotation reply** page. Vendors can specify a lead time for each line. Then, when a purchase order is confirmed, a delivery date for a line is calculated from the confirmation date, based on the lead time and the working days calendar. If no lead time is specified, the confirmation date is used as the delivery date, unless the delivery date is automatically calculated.
 
 The lead time details for a line are available on the following pages: **Request for quotation reply**, **Purchase requisitions**, **Purchase agreements**, and **Purchase order**.
 

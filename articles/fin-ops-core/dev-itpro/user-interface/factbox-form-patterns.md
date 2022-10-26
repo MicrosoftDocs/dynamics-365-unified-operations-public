@@ -1,37 +1,26 @@
 ---
-# required metadata
-
 title: FactBox form patterns
-description: This topic provides information about the FactBox form patterns. FactBoxes are used to provide related information for a record.
+description: This article provides information about the FactBox form patterns. FactBoxes are used to provide related information for a record.
 author: jasongre
 ms.date: 11/09/2017
 ms.topic: article
 ms.prod: 
 ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: Developer 
-# ms.devlang: 
-ms.reviewer: tfehr
-# ms.tgt_pltfrm: 
-ms.custom: 14721
-ms.assetid: b3d527bf-6b56-42fb-a135-493a62eb1435
+audience: Developer
+ms.reviewer: josaw
 ms.search.region: Global
-# ms.search.industry: 
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-
+ms.custom: 14721
+ms.assetid: b3d527bf-6b56-42fb-a135-493a62eb1435
 ---
 
 # FactBox form patterns
 
 [!include [banner](../includes/banner.md)]
 
-This topic provides information about the FactBox form patterns. FactBoxes are used to provide related information for a record.
+This article provides information about the FactBox form patterns. FactBoxes are used to provide related information for a record.
 
 ## Usage
 

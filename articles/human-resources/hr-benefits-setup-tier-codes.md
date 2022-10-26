@@ -15,7 +15,7 @@ ms.search.form: BenefitWorkspace, HcmBenefitSummaryPart
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.search.scope: Human Resources
+
 # ms.tgt_pltfrm: 
 ms.custom: 7521
 ms.assetid: 
@@ -28,11 +28,6 @@ ms.dyn365.ops.version: Human Resources
 ---
 
 # Set up tier codes
-
-
-[!INCLUDE [PEAP](../includes/peap-2.md)]
-
-[!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 Dynamics 365 Human Resources uses tier codes with benefit rates that are paid by employees and the employer. You can define an unlimited number of tier codes and set up rate calculations to meet the needs of your company.
 
