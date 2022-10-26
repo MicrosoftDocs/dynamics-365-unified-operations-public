@@ -43,15 +43,15 @@ Customer migration is a lift and shift migration of customer database using the 
 
 ### Dataverse environment backup (Sandbox)
  - Refresh existing Human Resources sandbox with copy of the HR Production environment (optional, recommended) 
- - [Create a new dataverse environment](../../power-platform/admin/create-environment#create-an-environment-with-a-database.md) using Power platform admin center. 
+ - [Create a new dataverse environment](/power-platform/admin/create-environment#create-an-environment-with-a-database) using Power platform admin center. 
 >[!Note]
 >When adding database, ensure that **Enable Dynamics 365 apps** button is selected **Yes** 
- - [Copy existing dataverse environment](../../power-platform/admin/copy-environment.md) (linked to standalone HR app) to the newly created environment (in previous step) 
+ - [Copy existing dataverse environment](/power-platform/admin/copy-environment) (linked to standalone HR app) to the newly created environment (in previous step) 
 
 ### Dataverse capacity 
  - Verify that available capacity is sufficient for the environment copy in the Dataverse storage using the **Summary** page in the Power Platform admin center (PPAC). 
  - If available capacity is not sufficient, reduce the overall consumption using the free up storage space guidance. Customer may also elect to [add additional storage 
- capacity](../../power-platform/admin/add-storage.md).  
+ capacity](/power-platform/admin/add-storage).  
 
 ## Customer Migration Process 
 
@@ -98,9 +98,11 @@ you refresh the sandbox environment that you want to migrate from your productio
 #### Steps to Migrate Human Resources Sandbox environment 
 
 1. Log into LCS as the global administrator or designated service account user.  
+
 >[!Note]
 >It is recommended to use a named user account. The user should be logged in with the security role of **Project owner** or **Environment manager** in the standalone 
 Human Resources LCS project.  
+
 2. Open the newly created Human resources migration project in LCS. 
 3. Review and complete appropriate phases of the migration methodology and the project onboarding.  
 4. In the project dashboard, select **Migrate HR** the **Default: Standard acceptance test** pane.  
@@ -188,7 +190,7 @@ Once you have completed migrating and validation of a sandbox environment, follo
 1. Go to Power Platform admin center and the **Environments** tab.  
 2. Select the previously copied/refreshed environment and confirm the state is **Ready**.  
 3. Go to LCS and confirm the migration project status is **Deployed**. 
-4. Select **Full details** under the migrated environment, to review additional details and [set up Dual-write application](../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup#set-up-dual-write-for-new-or-existing-dataverse-environments.md).  
+4. Select **Full details** under the migrated environment, to review additional details and [set up Dual-write application](../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-new-or-existing-dataverse-environments).  
 5. In the **Dual-write application configuration** pane, select the checkbox to agree mapping and synchronizing data between databases and select **Configure**.  
 6. A pop-up message of successful trigger for the Dual-write configuration will be received, click **OK**. 
 7. Progress status can be monitored for the configuration in the details.  
