@@ -2,8 +2,8 @@
 
 # required metadata
 
-title: Dynamics 365 Human Resources customer migration to the finance and operations infrastructure 
-description: This article describes customer's Dynamics 365 Human Resources migration to the finance and operations infrastructure. 
+title: Dynamics 365 Human Resources customer migration to the finance and operations infrastructure
+description: This article describes customer migration of Microsoft Dynamics 365 Human Resources to the finance and operations infrastructure.
 author: twheeloc
 ms.date: 10/25/2022
 ms.topic: article
@@ -28,202 +28,204 @@ ms.dyn365.ops.version: Human Resources
 
 ---
 
-# Dynamics 365 Human Resources customer migration 
+# Dynamics 365 Human Resources customer migration
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-Customer migration is a lift and shift migration of customer database using automated migration tooling to the finance and operations infrastructure. The result is a new finance and operations environment utilizing the customer’s Human resources database.  
+Customer migration is a "lift-and-shift migration" (movement) of a customer database to the finance and operations infrastructure. Automated migration tooling is used for it. The result is a new finance and operations environment that uses the customer's Human Resources database.
 
-## Prerequisites 
+## Prerequisites
 
-### User access and permissions 
- - LCS user should have Organization admin role 
- - User should be able to create Azure DevOps project or use an existing DevOps project 
- - User should have access to create Azure DevOps Personal Access Security Token or have a token available to use 
+### User access and permissions
+
+- The Microsoft Dynamics Lifecycle Services user should have the **Organization admin** role.
+- The user should be able to create Azure DevOps projects or use an existing Azure DevOps project.
+- The user should have access to create an Azure DevOps Personal Access Security Token, or should have a token that is available to use.
 
 ### Dataverse environment backup (Sandbox)
- - Refresh existing Human Resources sandbox with copy of the HR Production environment (optional, recommended) 
- - [Create a new Dataverse environment](/power-platform/admin/create-environment#create-an-environment-with-a-database) using Power platform admin center. 
->[!Note]
->When adding database, ensure that **Enable Dynamics 365 apps** button is selected **Yes** 
- - [Copy existing Dataverse environment](/power-platform/admin/copy-environment) (linked to standalone HR app) to the newly created environment (in previous step) 
 
-### Dataverse capacity 
- - Verify that available capacity is sufficient for the environment copy in the Dataverse storage using the **Summary** page in the Power Platform admin center. 
- - If available capacity isn't sufficient, reduce the overall consumption using the free up storage space guidance. Customer may also elect to [add additional storage 
- capacity](/power-platform/admin/add-storage).  
+1. Optional but recommended: Refresh the existing Human Resources sandbox environment by using a copy of the Human Resources production environment.
+2. [Create a new Dataverse environment](/power-platform/admin/create-environment#create-an-environment-with-a-database) by using the Power Platform admin center.
 
-## Customer Migration Process 
+    > [!NOTE]
+    > When you add a database, ensure that the **Enable Dynamics 365 apps** option is set to **Yes**.
 
-### Create HR Migration LCS Project 
-The first step is to create a new finance and operations implementation project in Lifecycle Services (LCS). The customer will have an existing Human Resources LCS 
-project. The existing Human Resources environment(s) will be migrated to the new finance and operations Implementation project. 
+3. [Copy the existing Dataverse environment](/power-platform/admin/copy-environment), which is linked to the standalone Human Resources app, to the environment that you created in the previous step.
 
-### Steps to create a new project 
+### Dataverse capacity
 
-1. Log into LCS using the global administrator or designated service account user. 
-2. On the LCS home page, select **Create/new (+)**.  
-3. Select the finance and operations product.  
-4. Select **Implementation** in the **Project purpose** field.  
-5. Enter a project name and description. 
-6. In the **Project custom type** drop-down list, select **Microsoft Dynamics 365 Human Resources migration**.  
-7. Select the checkbox to agree to the terms and conditions. 
-8. Select **Create**. 
+1. Use the **Summary** page in the Power Platform admin center to verify that Dataverse storage has enough available capacity for the environment copy.
+2. If there isn't enough available capacity, use the guidance for freeing up storage space to reduce the overall consumption. Customers can also [add additional storage capacity](/power-platform/admin/add-storage).
 
-After you've created a new LCS project, complete the following setup and configuration of your LCS project:
+## Customer migration process
 
- - Complete the project onboarding by selecting **Project onboarding**. For more information, see [Project onboarding](../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md) 
-      - Select the same region as your current environment(s). This selection won't impact migration.  
-      - Select **Other** for legacy systems.  
- - Complete the project settings. This includes configuring the SharePoint Online library, Azure DevOps and Azure connections if needed. For more information, 
- see [Lifecycle Services (LCS) user guide](../dev-itpro/lifecycle-services/lcs-user-guide.md). 
+### Create a Lifecycle Services project for Human Resources migration
 
->[!Note] 
->Customers may use an existing Azure DevOps project and the associated Personal Access Security Token. When using existing project, the configurations related to the project are automatically available and can be reviewed for accuracy.  
+The first step is to create a new finance and operations Implementation project in Lifecycle Services. The customer will have an existing Human Resources Lifecycle Services project. The existing Human Resources environments will be migrated to the new finance and operations Implementation project.
 
-### Migrating Human Resources environment 
+To create a new project, follow these steps.
 
-After a new LCS project has been created and the LCS project onboarding process has been completed, you're ready to migrate your first environment. It's recommended to refresh the sandbox environment that you want to migrate from your production environment in the standalone infrastructure before starting this process.  
+1. Sign in to Lifecycle Services as the global administrator or the designated service account user.
+2. On the Lifecycle Services home page, select **Create/new (+)**.
+3. Select finance and operations apps as the product.
+4. In the **Project purpose** field, select **Implementation**.
+5. Enter a project name and description.
+6. In the **Project custom type** field, select **Microsoft Dynamics 365 Human Resources migration**.
+7. Select the checkbox to agree to the terms and conditions.
+8. Select **Create**.
 
-### Prepare to migrate Human Resources Sandbox environment 
+After you've created a new Lifecycle Services project, follow these steps to set up and configure it.
 
-#### Power Platform environment 
->[!Note] 
->This is only applicable for the sandbox environment migration. When migrating the production environment, the existing Power Platform admin center environment attached to the production environment will be carried forward.  
+1. Select **Project onboarding** to complete the project onboarding. For more information, see [Project onboarding](../fin-ops-core/dev-itpro/lifecycle-services/project-onboarding.md).
 
- - Create or use an existing Power platform environment in the Power platform admin center to be used for sandbox migration.  
- - Copy an environment to refresh the power platform environment to use for mapping.  
+    - Select the same region as your current environments. This selection won't affect migration.
+    - For legacy systems, select **Other**.
 
-#### Steps to migrate Human Resources sandbox environment 
+2. Complete the project settings. As part of this step, you should configure the SharePoint Online library, Azure DevOps, and Azure connections if they are required. For more information, see [Lifecycle Services (LCS) user guide](../dev-itpro/lifecycle-services/lcs-user-guide.md).
 
-1. Log into LCS as the global administrator or the designated service account user.
+> [!NOTE]
+> Customers can use an existing Azure DevOps project and the associated Personal Access Security Token. If an existing project is used, the configurations that are related to the project are automatically available and can be reviewed for accuracy.
 
-    > [!Note]
-    > It's recommended to use a named user account. The user should be logged in with the security role of **Project owner** or **Environment manager** in the standalone Human Resources LCS project.
+### Migrate a Human Resources sandbox environment
 
-2. Open the newly created Human resources migration project in LCS. 
-3. Review and complete appropriate phases of the migration methodology and the project onboarding.  
-4. In the project dashboard, select **Migrate HR** in the **Default: Standard acceptance test** pane.  
-5. In the **Select environment to migrate** pane, select appropriate Lifecycle Services project and originating Human Resources environment (from your source standalone 
-Human Resources application).
-6. Enable **Map to new Power Platform environment** and select the appropriate Power Platform environment then click **Next**.  
-7. Complete the **Deployment settings** (finance and operations – sandbox) wizard to confirm details and Customer sign off and select **Deploy**.  
-8. The environment state will display the progress status.  The status will progress from **Loading** to **Deploying** to **Deployed**.   
+#### Prepare to migrate the sandbox environment
 
-                
->[!NOTE]
->The production pane is grayed out and won't be available until the go-live project readiness checklist is completed. For more information, see [Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) 
+After a new Lifecycle Services project has been created, and the project onboarding process has been completed, you're ready to migrate your first environment. Before you start this process, we recommend that you refresh the sandbox environment that you want to migrate from your production environment on the standalone infrastructure.
 
- 
-### Considerations and assumptions  
+#### Prepare a Power Platform environment
 
-A Dynamics 365 Human Resources sandbox environment exists in an LCS project on the tenant for which: 
- - The Human Resources sandbox environment isn't linked to an existing merged environment. A Human Resources environment may only have one migration in process at any
- time. 
- - The number of sandbox environments allowed at a time is based on Human Resources licensing. If sufficient licensing has been purchased for the tenant, additional 
- sandbox environments will be listed in the **Environments** pane of the project. 
- - Migrations must be done to environments of the same type. This means sandbox to sandbox or production to production.  
+> [!NOTE]
+> This step is applicable only to sandbox environment migration. When you migrate the production environment, the existing Power Platform admin center environment that is attached to the production environment will be carried forward.
 
->[!NOTE] 
->Only Human Resources environment types are considered when determining production or sandbox status. If the environments are categorized incorrectly, a production environment is marked as sandbox or vice versa, contact support. 
+- In the Power platform admin center, create a Power platform environment to use for sandbox migration, or select an existing environment.
+- Copy an environment to refresh the Power Platform environment that is used for mapping.
 
- - If the migration is not successful, a failure error message will be displayed. A **Delete** button is available to delete failed migration and you can remigrate the environment. 
+#### Migrate the sandbox environment
 
+1. Sign in to Lifecycle Services as the global administrator or the designated service account user.
 
-### Validate Human Resources migration 
+    > [!NOTE]
+    > We recommend that you use a named user account. The signed-in user should have the **Project owner** or **Environment manager** security role in the standalone Human Resources Lifecycle Services project.
 
-Once the sandbox migration process has successfully completed, create a detailed testing plan where all business processes will be verified and signed off.  
+2. Open the newly created Human Resources migration project.
+3. Review and complete the appropriate phases of the migration methodology and the project onboarding.
+4. On the project dashboard, in the **Default: Standard acceptance test** pane, select **Migrate HR**.
+5. In the **Select environment to migrate** pane, select appropriate Lifecycle Services project and the originating Human Resources environment (from your source standalone Human Resources application).
+6. Enable **Map to new Power Platform environment**, and select the appropriate Power Platform environment. Then select **Next**.
+7. Complete the **Deployment settings (finance and operations – sandbox)** wizard to confirm details and customer sign-off, and then select **Deploy**.
 
-Before you begin testing, validate the following: 
- - The migrated environment is accessible with the generated URL. 
- - Users can access the migrated sandbox.  
- - Dataverse environment that is associated with migrated sandbox is accessible.  
- - Spot check various data to confirm the most updated data is available.  
- - Complete the critical business processes for validation.  
- - Your security policies are applicable.
- - Batch jobs are triggered as expected.  
+The environment state will show the progress. The state will be changed from **Loading** to **Deploying** to **Deployed**.
 
-You won't have remote desktop access to the migrated sandbox. You can operate your Tier 2+ sandbox environments by using self-service capabilities and tools to 
-perform the following actions: 
+> [!NOTE]
+> The production pane will be unavailable until the go-live project readiness checklist is completed. For more information, see [Prepare for go-live](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md).
 
- - Access the [Azure SQL database](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-the-azure-sql-database) 
- - Access [log files](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-log-files)
- - Use [perfmon tools](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#use-perfmon-tools) 
- - Turn [Maintenance mode on/off](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-self-service-logs)
- - Restart [services](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#restart-services)
- - Configure the [Regression suite automation tool](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#configure-the-regression-suite-automation-tool) 
+#### Considerations and assumptions
 
-For more information, see [FAQ for self-service deployment](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md).  
+A Human Resources sandbox environment exists in a Lifecycle Services project on the tenant that has the following characteristics:
 
-### Migrating Human Resources production environment 
+- The Human Resources sandbox environment isn't linked to an existing merged environment. Only one migration at a time can be in progress for a given Human Resources environment.
+- The number of sandbox environments that are allowed at a time is based on Human Resources licensing. If enough licensing has been purchased for the tenant, additional sandbox environments will be listed in the **Environments** pane of the project.
+- Migrations must be done to environments of the same type. In other words, only sandbox-to-sandbox or production-to-production migrations can be done.
 
-Once you have completed migrating and validation of a sandbox environment, follow these steps to migrate the production environment.  
+    > [!NOTE]
+    > Only Human Resources environment types are considered when the production or sandbox status is determined. If the environments are incorrectly categorized (that is, a production environment is marked as a sandbox environment, or a sandbox environment is marked as a production environment), contact Support.
 
-#### Prerequisites to migrate Human Resources production environment  
- - Subscription estimator should be completed 
- - Go-live [readiness assessment](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) should be completed 
+- If the migration isn't successful, a failure error message will be shown, and a **Delete** button will become available. Use this button to delete the failed migration. You can then remigrate the environment.
 
-#### Steps to migrate Human Resources production environment 
- 
- 1. Log into LCS as the global administrator or designated service account user.  
+#### Validate the sandbox migration
 
-   > [!Note]
-   > It's recommended to use a named user account. The user should be logged in with the security role of **Project owner** or **Environment manager** in the LCS project.
-    
-2. Open the newly created Human resources migration project in LCS. 
-3. Review and complete appropriate phases of the migration methodology and project onboarding.  
-4. On the project dashboard, select **Migrate HR** in the **Production** pane.  
-5. In the **Select environment to migrate** pane, select the appropriate Lifecycle Services project and **Originating Human Resources environment** (from your source standalone Human Resources application), click **Next**.
-6. Complete the **Deployment settings** (finance and operations – sandbox) wizard to confirm details and Customer sign off before selecting **Deploy**.  
-7. The environment state will show the deployment progress. The status will progress from **Loading** to **Deploying** to **Deployed**.  
+After the sandbox migration process is successfully completed, create a detailed testing plan to verify and sign off on all business processes.
 
-#### Post migration considerations:  
+Before you begin testing, validate the following details:
 
- - Apply the latest quality updates on your environment(s) 
- - If using [Virtual Tables](hr-admin-integration-common-data-service-virtual-entities.md), reconfigure the endpoints.  
- - Reconfigure dual-write integration – Evaluate which entities are necessary to be enabled. 
- - Additional reconsideration for integration would be to utilize virtual tables to replace dual-write.  
+- Confirm that the migrated environment is accessible at the URL that is generated.
+- Confirm that users can access the migrated sandbox.
+- Confirm that the Dataverse environment that is associated with the migrated sandbox environment is accessible.
+- Spot-check different data to confirm that the most up-to-date data is available.
+- Complete the critical business processes for validation.
+- Confirm that your security policies are applicable.
+- Confirm that batch jobs are triggered as expected.
 
-#### Dual-write integration 
-#### Set up Power Platform dual-write integration 
+You won't have Remote Desktop access to the migrated sandbox. You can use self-service capabilities and tools to perform the following actions for your Tier 2+ sandbox environments:
 
-1. Go to Power Platform admin center and the **Environments** tab.  
-2. Select the previously copied/refreshed environment and confirm the state is **Ready**.  
-3. Go to LCS and confirm the migration project status is **Deployed**. 
-4. Select **Full details** under the migrated environment to review additional details and [set up dual-write application](../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-new-or-existing-dataverse-environments).  
-5. In the **Dual-write application configuration** pane, select the checkbox to agree to mapping and synchronizing data between databases and select **Configure**.  
-6. A pop-up message of a successful dual-write configuration will be received, click **OK**. 
-7. The progress status can be monitored in the details.  
-8. After the configuration is complete, select **Link to Power Platform environment** to synchronize the available data entities.  
-9. When the status reflects that the environments have been successfully linked, go to Power Platform admin center to review and select the appropriate data entities.  
-10. In the left pane, select **Dynamics 365 apps** > **Resources** menu.  
-11. Confirm that the dual-write Dynamics 365 Human Resources app status is **Enabled**.  
-12. Select the dual-write Dynamics 365 Human Resources app and click **Install**.  
-13. In the **Install dual-write Dynamics 365 Human Resources app** pane, select the appropriate environment to install the package.  
-14. Select checkbox to agree to the terms of service and select **Install**.  
-15. In the Environment Dynamics 365 apps, the status will be **Installing** while the installation is in progress. The staus will update to **Installed** after the installation is completed.  
+- Access the [Azure SQL database](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-the-azure-sql-database).
+- Access [log files](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-log-files).
+- Use [perfmon tools](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#use-perfmon-tools).
+- Turn [Maintenance mode on/off](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#access-self-service-logs).
+- Restart [services](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#restart-services).
+- Configure the [Regression suite automation tool](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md#configure-the-regression-suite-automation-tool).
 
-#### Review and apply dual-write solution 
+For more information, see [FAQ for self-service deployment](../fin-ops-core/dev-itpro/deployment/deploymentfaq.md).
 
-1. In the newly created finance and operations environment, go to **Data management > Dual-write**. 
-2. Click **Apply solution**.  
-3. In the pane, select **Dynamics installed solutions**, **Dual-write applications core entity maps** and **Dynamics 365 Human Resources maps** and click **Apply**.  
-4. An info message will be displayed to confirm solution is being applied.  
-5. Once solution is applied successfully, all the available table maps will be displayed.   
-6. Review the available table maps to select and run the integration using dual-write. 
-7. When running the dual-write integration for the first time for that table map, select the **Initial sync** checkbox. If there's an existing integration from the source Human resources environment, customers don't need to select the **Initial sync** checkbox when running the integration for table map(s).  
+### Migrate a Human Resources production environment
 
-#### Recommended practices 
+After you've finished migrating and validating a sandbox environment, follow these steps to migrate the production environment.
 
-The following section outlines recommendations for performing the migration from the standalone infrastructure to the finance and operations app infrastructure. 
+#### Prerequisites
 
- - We highly recommend working with your Microsoft Dynamics partner to help with your Human Resources environment migration.   
- - Plan appropriate time to conduct a full user acceptance test (UAT) on the sandbox migrated environment. 
- - Plan and document the detailed steps to migrate integrations to the migrated environment. 
- - Create a detailed checklist to outline the cutover process for your migration. 
- - Plan an appropriate amount of downtime for your business while you perform the migration. 
- - Additionally, FastTrack qualified customers are also highly encouraged to work with your FastTrack solution architect to help oversee the migration process.  
- - We highly recommend that you refresh your sandbox environment in the standalone infrastructure before you perform the first migration. This includes refreshing your 
- Dataverse environment connected to the sandbox environment you plan to migrate to.  
- - We strongly recommend that you use a service account when you deploy, migrate, and create your LCS project.  
- - Plan to upgrade sandbox for UAT validation on the latest GA release. For more information, see [considerations](hr-infrastructure-merge.md#considerations).  
+- The Subscription estimator should be completed.
+- The Go-live [readiness assessment](../fin-ops-core/fin-ops/imp-lifecycle/prepare-go-live.md) should be completed.
+
+#### Migrate the production environment
+
+1. Sign in to Lifecycle Services as the global administrator or the designated service account user.
+
+    > [!NOTE]
+    > We recommend that you use a named user account. The signed-in user should have the **Project owner** or **Environment manager** security role in the Lifecycle Services project.
+
+2. Open the new Human resources migration project.
+3. Review and complete the appropriate phases of the migration methodology and project onboarding.
+4. On the project dashboard, in the **Production** pane, select **Migrate HR**.
+5. In the **Select environment to migrate** pane, select the appropriate Lifecycle Services project and the originating Human Resources environment (from your source standalone Human Resources application). Then select **Next**.
+6. Complete the **Deployment settings (finance and operations – sandbox)** wizard to confirm details and customer sign-off, and then select **Deploy**.
+
+The environment state will show the deployment progress. The state will be changed from **Loading** to **Deploying** to **Deployed**.
+
+#### Post-migration considerations
+
+- Apply the latest quality updates to your environments.
+- If you're using [virtual tables](hr-admin-integration-common-data-service-virtual-entities.md), reconfigure the endpoints.
+- Reconfigure dual-write integration. Evaluate which entities must be enabled.
+- Consider using virtual tables to replace dual-write for integration.
+
+#### Dual-write integration
+
+##### Set up Microsoft Power Platform dual-write integration
+
+1. Go to the Power Platform admin center, and select **Environments** in the left navigation.
+2. Select the previously copied/refreshed environment, and confirm that the state is **Ready**.
+3. Go to Lifecycle Services, and confirm that the status of the migration project is **Deployed**.
+4. Under the migrated environment, select **Full details** to review additional details and [set up a dual-write application](../fin-ops-core/dev-itpro/data-entities/dual-write/lcs-setup.md#set-up-dual-write-for-new-or-existing-dataverse-environments).
+5. In the **Dual-write application configuration** pane, select the checkbox to agree to map and sync data between databases, and then select **Configure**.
+6. When a message box notifies you of successful dual-write configuration, select **OK**.
+7. You can monitor the progress of the configuration in the details.
+8. When the configuration is completed, select **Link to Power Platform environment** to sync the available data entities.
+9. When the status indicates that the environments have been successfully linked, go to the Power Platform admin center to review and select the appropriate data entities.
+10. In the left pane, select **Dynamics 365 apps \> Resources**.
+11. Confirm that the status of the dual-write Human Resources app is **Enabled**.
+12. Select the dual-write Human Resources app, and then select **Install**.
+13. In the **Install dual-write Dynamics 365 Human Resources app** pane, select the appropriate environment to install the package in.
+14. Select checkbox to agree to the terms of service, and then select **Install**.
+15. In the Environment Dynamics 365 apps, the status will be **Installing** while the installation is in progress. It will be updated to **Installed** when the installation is completed.
+
+##### Review and apply a dual-write solution
+
+1. In the new finance and operations environment, go to **Data management \> Dual-write**.
+2. Select **Apply solution**.
+3. In the pane, select **Dynamics installed solutions**, **Dual-write applications core entity maps**, and **Dynamics 365 Human Resources maps**. Then select **Apply**. A message confirms that the solution is being applied. After the solution is successfully applied, all the available table maps will be shown.
+4. Review the available table maps to select and run the integration by using dual-write.
+5. When you run the dual-write integration for the first time for table maps, select the **Initial sync** checkbox. If there's an existing integration from the source Human Resources environment, you don't have to select the **Initial sync** checkbox when you run the integration for table maps.
+
+#### Recommended practices
+
+This section outlines recommendations for migrating from the standalone infrastructure to the finance and operations infrastructure.
+
+- We highly recommend that you work with your Microsoft Dynamics partner to get help with your Human Resources environment migration.
+- Plan appropriate time to do full user acceptance testing (UAT) on the sandbox migrated environment.
+- Plan and document the detailed steps to migrate integrations to the migrated environment.
+- Create a detailed checklist to outline the cutover process for your migration.
+- Plan an appropriate amount of downtime for your business while you do the migration.
+- We highly recommend that FastTrack-qualified customers work with their FastTrack solution architect to get help overseeing the migration process.
+- We highly recommend that you refresh your sandbox environment in the standalone infrastructure before you do the first migration. This refresh should include your Dataverse environment that is connected to the sandbox environment that you plan to migrate to.
+- We highly recommend that you use a service account when you deploy, migrate, and create your Lifecycle Services project.
+- Plan to upgrade the sandbox environment for UAT validation on the latest general availability (GA) release. For more information, see [considerations](hr-infrastructure-merge.md#considerations).
