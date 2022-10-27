@@ -43,22 +43,22 @@ If you have a Dataverse environment that is shared with:
 
 ## Misshaped environments 
 
-If either of the following are applicable, those environments are considered misshaped and will need to mitigate the conditions before migrating:  
+Environments are considered misshaped if the following conditions apply:    
 
- - If you don't have any Sandbox standalone environments, you'll need to create one to use for your validation migration. 
- - If you have multiple Production standalone environments, you'll only be able to migrate one of them. Reach out to Microsoft Support to mark your other 
- environments as sandboxes. 
+ - If you don't have any Sandbox standalone environments, you'll need to create one for validation migration. 
+ - If you have multiple Production standalone environments, you'll can migrate one of them. Reach out to Microsoft Support to mark your other environments as sandboxes. 
+
+These conditions will need to be addressed before migrating.
 
 ## Teams Integration 
 
-For the Teams integration, the existing Human Resources app in Teams is in the process of being shifted to a Power Platform solution. For more information, see 
-[Human Resources app in Teams](hr-admin-teams-leave-app.md).  
+The existing Human Resources app in Teams is in the process of being shifted to a Power Platform solution. For more information, see [Human Resources app in Teams](hr-admin-teams-leave-app.md).  
 
 ## Licensing  
 
 There are no changes to licensing for Dynamics 365 Human Resources including:  
 
  - Minimum number of licenses purchase requirement  
- - License(s) to a production and a sandbox environment: If you have existing standalone Human Resources license(s) that grants one production and one sandbox 
+ - License(s) to a production and a sandbox environment: If you have existing standalone Human Resources license(s) that includes one production and one sandbox 
  environment, the same will be available on the finance and operations infrastructure. 
  - Additional sandbox license(s): If you have purchased additional sandbox license(s) for the standalone Human Resources application, the same number of sandbox licenses will be available for a standard acceptance test (sandbox) environment on the finance and operations infrastructure.  
