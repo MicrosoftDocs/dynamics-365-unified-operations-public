@@ -31,7 +31,7 @@ ms.dyn365.ops.version: Human Resources
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
-## Shared dataverse
+## Shared Dataverse
 
 The Dual Write framework doesn't support linking two finance and operations app environments to the same Dataverse.  
 If you have a Dataverse environment that is shared with both:
