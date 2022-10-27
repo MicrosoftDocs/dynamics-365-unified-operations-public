@@ -56,7 +56,7 @@ The following table lists the APIs that are currently available:
 
 Microsoft has provided an out-of-box *Postman* request collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/95a57891aff1c5f2a7c2>.
 
-## Find the endpoint according to your Lifecycle Services environment
+## <a name = "endpoint-lcs"></a>Find the endpoint according to your Lifecycle Services environment
 
 The microservice of Inventory Visibility is deployed on Microsoft Azure Service Fabric, in multiple geographies and multiple regions. There isn't currently a central endpoint that can automatically redirect your request to the corresponding geography and region. Therefore, you must compose the pieces of information into a URL by using the following pattern:
 
@@ -97,7 +97,7 @@ Microsoft has built a user interface (UI) in Power Apps so that you can get the 
 
 ## <a name="inventory-visibility-authentication"></a>Authentication
 
-The platform security token is used to call the Inventory Visibility public API. Therefore, you must generate an _Azure Active Directory (Azure AD) token_ by using your Azure AD application. You must then use the Azure AD token to get the _access token_ from the security service.
+The platform security token is used to call the Inventory Visibility public API. Therefore, you must generate an *Azure Active Directory (Azure AD) token* by using your Azure AD application. You must then use the Azure AD token to get the *access token* from the security service.
 
 Microsoft provides an out-of-box *Postman* get token collection. You can import this collection into your *Postman* software by using the following shared link: <https://www.getpostman.com/collections/496645018f96b3f0455e>.
 
@@ -183,7 +183,7 @@ The following table summarizes the meaning of each field in the JSON body.
 | `productId` | The identifier of the product. |
 | `quantities` | The quantity that the on-hand quantity must be changed by. For example, if 10 new books are added to a shelf, this value will be `quantities:{ shelf:{ received: 10 }}`. If three books are removed from the shelf or sold, this value will be `quantities:{ shelf:{ sold: 3 }}`. |
 | `dimensionDataSource` | The data source of the dimensions that are used in the posting change event and query. If you specify the data source, you can use the custom dimensions from the specified data source. Inventory Visibility can use the dimension configuration to map the custom dimensions to the general default dimensions. If no `dimensionDataSource` value is specified, you can use only the general [base dimensions](inventory-visibility-configuration.md#data-source-configuration-dimension) in your queries. |
-| `dimensions` | A dynamic key-value pair. The values are mapped to some of the dimensions in Supply Chain Management. However, you can also add custom dimensions (for example, _Source_) to indicate whether the event is coming from Supply Chain Management or an external system. |
+| `dimensions` | A dynamic key-value pair. The values are mapped to some of the dimensions in Supply Chain Management. However, you can also add custom dimensions (for example, *Source*) to indicate whether the event is coming from Supply Chain Management or an external system. |
 
 > [!NOTE]
 > The `siteId` and `locationId` parameters construct the [partition configuration](inventory-visibility-configuration.md#partition-configuration). Therefore, you must specify them in dimensions when you create on-hand change events, set or override on-hand quantities, or create reservation events.
@@ -265,10 +265,14 @@ The following example shows sample body content without `dimensionDataSource`. I
 
 ### <a name="create-multiple-onhand-change-events"></a>Create multiple change events
 
-This API is also used to create change events as the [single-event API](#create-one-onhand-change-event), the only difference is it can create multiple records at the same time. Therefore the `Path` and `Body` values are different. For this API, `Body` provides an array of records. The maximum number of records is 512, which means that the on-hand change bulk API can support up to 512 change events at a time. For example, the Contoso store POS machine processed two transactions:
-- one return order of 1 red T-shirt
-- one sales transaction of 3 block T-shirt
-You can include both inventory updates in one API
+This API can create change events like the [single-event API](#create-one-onhand-change-event) can. The only difference is that it can create multiple records at the same time. Therefore the `Path` and `Body` values are different. For this API, `Body` provides an array of records. The maximum number of records is 512, which means that the on-hand change bulk API can support up to 512 change events at a time. 
+
+For example, suppose a retail store POS machine processed the following two transactions:
+
+- One return order of one red T-shirt
+- One sales transaction of three black T-shirt
+
+In this case, you can include both inventory updates in one API call.
 
 ```txt
 Path:
@@ -337,7 +341,7 @@ The following example shows sample body content.
 
 ## <a name="set-onhand-quantities"></a>Set/override on-hand quantities
 
-The _Set on-hand_ API overrides the current data for the specified product.Typical use case for this is to do inventory counting update. For example, this Contoso store does daily inventory counting and identified that the actual onhand for red T-shirt is 100, therefore the POS inbound quantity needs to be updated to 100 regardless of what previous quantity is. You can use this API to override the existing value.
+The *Set on-hand* API overrides the current data for the specified product. This is typically used to do inventory counting updates. For example, during their daily inventory counting, a store might find that the actual on-hand inventory for a red T-shirt is 100. Therefore, the POS inbound quantity must be updated to 100 regardless of what previous quantity was. You can use this API to override the existing value.
 
 ```txt
 Path:
@@ -396,7 +400,7 @@ The following example shows sample body content. The behavior of this API differ
 
 ## Create reservation events
 
-To use the *Reserve* API, you must turn on the reservation feature and complete the reservation configuration. For more information with dataflow and sample scenario, see [Reservation configuration (optional)](inventory-visibility-configuration.md#reservation-configuration).
+To use the *Reserve* API, you must turn on the reservation feature and complete the reservation configuration. For more information (including a dataflow and sample scenario), see [Reservation configuration (optional)](inventory-visibility-configuration.md#reservation-configuration).
 
 ### <a name="create-one-reservation-event"></a>Create one reservation event
 
@@ -404,7 +408,7 @@ A reservation can be made against different data source settings. To configure t
 
 When you call the reservation API, you can control the reservation validation by specifying the Boolean `ifCheckAvailForReserv` parameter in the request body. A value of `True` means that the validation is required, whereas a value of `False` means that the validation isn't required. The default value is `True`.
 
-If you want to reverse a reservation or unreserve specified inventory quantities, set the quantity to a negative value, and set the `ifCheckAvailForReserv` parameter to `False` to skip the validation. There's also a dedicated unreserve API to do the same. The difference is only in the way the two APIs are called. It's easier to reverse a specific reservation event by using `reservationId` with the *unreserve* API. For more information, see the [_Unreserve one reservation event_](#reverse-reservation-events) section.
+If you want to reverse a reservation or unreserve specified inventory quantities, set the quantity to a negative value, and set the `ifCheckAvailForReserv` parameter to `False` to skip the validation. There's also a dedicated unreserve API to do the same. The difference is only in the way the two APIs are called. It's easier to reverse a specific reservation event by using `reservationId` with the *unreserve* API. For more information, see [Unreserve one reservation event](#reverse-reservation-events) section.
 
 ```txt
 Path:
@@ -605,7 +609,7 @@ Body:
 
 ## Query on-hand
 
-Use the *Query on-hand* API to fetch current on-hand inventory data for your products. This API is frequently used whenever you need to know the stock, whether you want to expose product stock levels on your ecommerce website, or you want to check product availability in nearby stores/warehouses or across regions. You can use this API to fetch the result. The API currently supports querying up to 5000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. The maximum limit is defined by the following equation:
+Use the *Query on-hand* API to fetch current on-hand inventory data for your products. You can use this API whenever you need to know the stock, such as when you want to review product stock levels on your e-commerce website, or when you want to check product availability across regions or in nearby stores and warehouses. The API currently supports querying up to 5000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. The maximum limit is defined by the following equation:
 
 *NumOf(SiteID) \* NumOf(LocationID) <= 100*.
 
@@ -649,7 +653,7 @@ The `returnNegative` parameter controls whether the results contain negative ent
 > [!NOTE]
 > If you've enabled the on-hand change schedule and available-to-promise (ATP) features, your query can also include the `QueryATP` Boolean parameter, which controls whether the query results include ATP information. For more information and examples, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
 
-The following example shows sample body content,this is an example that you can query the onhand inventory from multiple locations(warehouses).
+The following example shows sample body content. This is an example that you can query the on-hand inventory from multiple locations(warehouses).
 
 ```json
 {
@@ -705,19 +709,21 @@ Here's a sample get URL. This get request is exactly the same as the post sample
 /api/environment/{environmentId}/onhand?organizationId=SCM_IV&productId=iv_postman_product&siteId=iv_postman_site&locationId=iv_postman_location&colorId=red&groupBy=colorId,sizeId&returnNegative=true
 ```
 
-## <a name="exact-query-with-post-method"></a>Onhand Exact query
+## <a name="exact-query-with-post-method"></a>On-hand exact query
 
-Onhand exact query is complimentory to normal onhand query. It allows you to specify a mapping hierarchy between Site and Location. For example, you have two sites, site 1 and site 2 and 
-- Within Site 1 it is mapped with location A
-- Within Site 2 it is mapped with location B
+On-hand exact queries are similar to normal on-hand queries, but they allow you to specify a mapping hierarchy between site and location. For example, you might have the following two sites:
 
-With normal onhand query, when you specify siteId = 1,2 and locationId = A,B,C,D, inventory visibility will automatically query the result for 
-- site 1, location A
-- site 1, location B
-- site 2, location A
-- site 2, location B
+- Site 1, which is mapped to location A
+- Site 2, which is mapped to location B
 
-As you can see here, the normal onhand query does not recognize that location A only exists in site 1 and location B only exists for site 2 and therefore making redundant queries. To acknowledge this hierarchical mapping, you can use Onhand Exact query and specify such mapping in your query body, you will only query and receive result for site 1 location A and site 2 location B
+With a normal on-hand query, when you specify `"siteId": ["1","2"]` and `"locationId": ["A","B"]`, Inventory Visibility will automatically query the result for the following sites and locations:
+
+- Site 1, location A
+- Site 1, location B
+- Site 2, location A
+- Site 2, location B
+
+As you can see here, the normal onhand query doesn't recognize that location A only exists in site 1 and location B only exists for site 2 and therefore makes redundant queries. To acknowledge this hierarchical mapping, you can use an on-hand exact query and specify the location mappings in your query body. As a result, you will only query and receive result for site 1 location A and site 2 location B.
 
 ### <a name="exact-query-with-post-method"></a>Exact query by using the post method
 

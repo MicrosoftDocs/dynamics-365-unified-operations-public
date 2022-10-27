@@ -56,23 +56,25 @@ The Inventory Visibility Add-in adds several new features to your Power Apps ins
 
 ## <a name="get-service-endpoint"></a>Find the service endpoint
 
-If you don't know the correct Inventory Visibility service endpoint, open the **Configuration** page in Power Apps, and then select **Show Service Details** in the upper-right corner. The page will show the correct service endpoint.You can also find the endpoint from the life cycle system, and the instruction of this method is presented in [Find the endpoint according to your Lifecycle Services environment](inventory-visibility-api.md/#find-the-endpoint-according-to-your-lifecycle-services-environment).
+If you don't know the correct Inventory Visibility service endpoint, open the **Configuration** page in Power Apps, and then select **Show Service Details** in the upper-right corner. The page will show the correct service endpoint. You can also find the endpoint from Lifecycle Services (LCS), as described in [Find the endpoint according to your Lifecycle Services environment](inventory-visibility-api.md/#endpoint-lcs).
 
->[!NOTE] Incorrect endpoint can lead to failed IV installation and error when synchronizing Dynamics Supply Chain Management date to Inventory Visibility. Please refer to the sample endpoint format below to double check. You can also contact your administrator to provide the correct endpoint. The sample format is:
-https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com
+> [!NOTE]
+> Using an incorrect endpoint can lead to a failed Inventory Visibility installation and errors when synchronizing Supply Chain Management to Inventory Visibility. If you're not sure what your endpoint is, contact your system administrator. Endpoint URLs use the following format:
+>
+> `https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
 
 ## <a name="data-source-configuration"></a>Data source configuration
 
-Each data source represents a system that your data comes from. Example data source names include `fno` (which stands for "Dynamics 365 Supply Chain Management") and `pos` (which stands for "point of sale"). By default, Dynamics Supply Chain Management is set up as a default data source (`fno`) in Inventory Visibility.
+Each data source represents a system that your data comes from. Example data source names include `fno` (corresponds to Supply Chain Management) and `pos` (which stands for "point of sale"). By default, Supply Chain Management is set up as a default data source (`fno`) in Inventory Visibility.
 
 > [!NOTE]
-> The `fno` data source is reserved for Dynamics Supply Chain Management. If your Inventory Visibility Add-in is integrated with a Supply Chain Management environment, we recommend that you do not delete configurations that are related to `fno` in the data source.
+> The `fno` data source is reserved for Supply Chain Management. If your Inventory Visibility Add-in is integrated with a Supply Chain Management environment, we recommend that you do not delete configurations that are related to `fno` in the data source.
 
 To add a data source, follow these steps.
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
 1. Open the **Configuration** page.
-1. On the **Data Source** tab, select **New Data Source** to add a data source, for example `ecommerce`or other meaningful datasource ID
+1. On the **Data Source** tab, select **New Data Source** to add a data source (for example `ecommerce`or another meaningful data source ID).
 
 > [!NOTE]
 > When you add a data source, be sure to validate your data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You won't be able to modify these settings after you select **Update Configuration**.
@@ -88,11 +90,10 @@ The data source configuration includes the following parts:
 The purpose of the dimension configuration is to standardize the multi-system integration for posting events and queries, based on dimension combinations. Inventory Visibility provides a list of base dimensions that can be mapped from the dimensions of your data source. Thirty-three dimensions are available for mapping.
 
 - If you're using Supply Chain Management as one of your data sources, by default 13 dimensions are already mapped to the Supply Chain Management standard dimensions. The other twelve dimensions (`inventDimension1` through `inventDimension12`) are also mapped to custom dimensions in Supply Chain Management. The remaining eight dimensions `ExtendedDimension1` through `ExtendedDimension8`are extended dimensions that you can map to external data sources.
-- 
 - If you don't use Supply Chain Management as one of your data sources, you can freely map the dimensions. The following table shows the full list of available dimensions.
 
 > [!NOTE]
-> If you do use Dynamics 365 Supply Chain Management and change the default dimension mappings between Dynamics Suppply Chain Management and Inventory Visibility, the changed dimension will not sync data. Therefore if your dimension isn't on the default dimension list, and you're using an external data source, we recommend that you use `ExtendedDimension1` through `ExtendedDimension8` to do the mapping.
+> If you do use Supply Chain Management and change the default dimension mappings between Supply Chain Management and Inventory Visibility, the changed dimension will not sync data. Therefore, if your dimension isn't on the default dimension list, and you're using an external data source, we recommend that you use `ExtendedDimension1` through `ExtendedDimension8` to do the mapping.
 
 | Dimension type | Base dimension |
 |---|---|
@@ -116,8 +117,9 @@ The purpose of the dimension configuration is to standardize the multi-system in
 > [!NOTE]
 > The dimension types that are listed in the preceding table are for your reference only. You don't have to define them in Inventory Visibility.
 >
+> The inventory (custom) dimensions might be reserved for Supply Chain Management. In that case, use the extended dimensions instead.
 
-External systems can access Inventory Visibility through its RESTful APIs. For the integration, Inventory Visibility lets you configure the _external data source_ and the mapping from the _external dimensions_ to the _base dimensions_. Here's an example of a dimension mapping table.
+External systems can access Inventory Visibility through its RESTful APIs. For the integration, Inventory Visibility lets you configure the *external data source* and the mapping from the *external dimensions* to the *base dimensions*. Here's an example of a dimension mapping table.
 
 | External dimension | Base dimension |
 |---|---|
@@ -133,20 +135,20 @@ To add dimension mappings, follow these steps.
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
 1. Open the **Configuration** page.
-1. On the **Data Source** tab, select the data source you want to do the dimension mapping. In the **Dimension Mappings** section, select **Add** to add dimension mappings.
+1. On the **Data Source** tab, select the data source where you want to do the dimension mapping. In the **Dimension Mappings** section, select **Add** to add dimension mappings.
     ![Adding dimension mappings](media/inventory-visibility-dimension-mapping.png "Adding dimension mappings")
 
 1. In the **Dimension Name** field, specify the source dimension.
 1. In the **To Base Dimension** field, select the dimension in Inventory Visibility that you want to map.
 1. Select **Save**.
 
-For example, you have already created a datasource called `ecommerce`, this datasource originally includes a product color dimension, to do the mapping, you can first add a `ProductColor` to the **Dimension Name** in the `ecommerce` data source and then select `ColorId` from **To Base Dimension** dropdown list. 
+For example, if you have already created a data source called `ecommerce`, and this data source includes a product color dimension, to do the mapping, you could first add a `ProductColor` to the **Dimension Name** in the `ecommerce` data source and then select `ColorId` from **To Base Dimension** dropdown list.
 
 ### <a name="data-source-configuration-physical-measures"></a>Physical measures
 
-When a data source posts an inventory change to Inventory Visibility, it posts that change by using *physical measures*. Physical measures modify the quantity and reflect the inventory status. You can define your own physical measures, based on your requirements. Queries can base on the physical measures.
+When a data source posts an inventory change to Inventory Visibility, it posts that change by using *physical measures*. Physical measures modify the quantity and reflect the inventory status. You can define your own physical measures based on your requirements. Queries can be based on the physical measures.
 
-Inventory Visibility provides a list of default physical measures that are mapped to Dynamics 365 Supply Chain Management (the `fno` data source). These default physical measures are taken from the inventory transaction statuses on the **On-hand list** page in Supply Chain Management (**Inventory Management \> Inquiries and Report \> On-hand list**). The following table provides an example of physical measures.
+Inventory Visibility provides a list of default physical measures that are mapped to Supply Chain Management (the `fno` data source). These default physical measures are taken from the inventory transaction statuses on the **On-hand list** page in Supply Chain Management (**Inventory Management \> Inquiries and Report \> On-hand list**). The following table provides an example of physical measures.
 
 | Physical measure name | Description |
 |---|---|
@@ -171,7 +173,7 @@ If your data source is Supply Chain Management, you don't have to re-create the 
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
 1. Open the **Configuration** page.
-1. On the **Data Source** tab, select the data source you want to add physical measures, e.g. data source `ecommerce`. Next in the **Physical Measures** section, select **Add**, specify the measure name, e.g. `Returned` if you want to record returned quantities within this datasource to Inventory Visibility. Save your changes.
+1. On the **Data Source** tab, select the data source you want to add physical measures, e.g. data source `ecommerce`. Next in the **Physical Measures** section, select **Add**, specify the measure name, e.g. `Returned` if you want to record returned quantities within this data source to Inventory Visibility. Save your changes.
 
 ### Calculated measures
 
@@ -202,12 +204,13 @@ To set up a custom calculated measure, follow these steps.
 1. Repeat steps 5 through 6 until you've added all the required modifiers and complete the formula of your calculated measure.
 1. Select **Save**.
 
-For example, As a fashion company you operate across three data sources: 
-* `pos` -corresponds to store channel
-* `fno` - corresponds to Dynamics 365 SCM
-* `ecommerce` - corresponds to your web channel. 
+For example, As a fashion company you operate across three data sources:
 
-Without calculated measures, when you query for product D0002 (Cabinet) under site 1, warehouse 11 and dimension colorID Red, you could have the following query result -showing inventory quantities under each pre-configured physical measures. But you do not have visibility on the total available for reservation quanties across your datasources.
+- `pos` – Corresponds to the store channel
+- `fno` – Corresponds to Supply Chain Management
+- `ecommerce` – Corresponds to your web channel
+
+Without calculated measures, when you query for product D0002 (Cabinet) under site 1, warehouse 11 and dimension colorID Red, you could have the following query result -showing inventory quantities under each pre-configured physical measures. But you do not have visibility on the total available for reservation quantities across your data sources.
 
 ```json
 [
@@ -308,7 +311,7 @@ The solution includes this partition configuration by default. Therefore, *you d
 
 Most of the time, the inventory on-hand query won't be only at the highest "total" level. Instead, you might also want to see results that are aggregated based on the inventory dimensions.
 
-Inventory Visibility provides flexibility by letting you set up _indexes_ to improve the performance of your queries. These indexes are based on a dimension or a combination of dimensions. An index consists of a *set number*, a *dimension*, and a *hierarchy*, as defined in the following table.
+Inventory Visibility provides flexibility by letting you set up *indexes* to improve the performance of your queries. These indexes are based on a dimension or a combination of dimensions. An index consists of a *set number*, a *dimension*, and a *hierarchy*, as defined in the following table.
 
 | Name | Description |
 |---|---|
