@@ -33,8 +33,10 @@ ms.dyn365.ops.version: Human Resources
 
 ## Shared dataverse
 
-If you have a Dataverse environment that is shared with a finance and operations app and your current Human Resources environments, the Dataverse environment will need to be either duplicated or split into two separate Dataverse environments. The Dual Write framework doesn't support linking two finance and operations app 
-environments to the same Dataverse.  
+The Dual Write framework doesn't support linking two finance and operations app environments to the same Dataverse.  
+If you have a Dataverse environment that is shared with both a finance and operations app and a current Human Resources environment, you will need to either:
+ - Duplicate the Dataverse environment 
+ - Split into two separate Dataverse environments  
 
 ## Misshaped environments 
 
