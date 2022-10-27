@@ -55,7 +55,7 @@ Customer migration is a "lift-and-shift migration" (movement) of a customer data
 ### Dataverse capacity
 
 1. Use the **Summary** page in the Power Platform admin center to verify that Dataverse storage has enough available capacity for the environment copy.
-2. If there isn't enough available capacity, use the guidance for freeing up storage space to reduce the overall consumption. Customers can also [add additional storage capacity](/power-platform/admin/add-storage).
+2. If there isn't enough available capacity, use the [guidance for freeing up storage space](power-platform/admin/free-storage-space) to reduce the overall consumption. Customers can also [add additional storage capacity](/power-platform/admin/add-storage).
 
 ## Customer migration process
 
@@ -206,7 +206,7 @@ The environment state will show the deployment progress. The state will be chang
 12. Select the dual-write Human Resources app, and then select **Install**.
 13. In the **Install dual-write Dynamics 365 Human Resources app** pane, select the appropriate environment to install the package in.
 14. Select checkbox to agree to the terms of service, and then select **Install**.
-15. In the Environment Dynamics 365 apps, the status will be **Installing** while the installation is in progress. It will be updated to **Installed** when the installation is completed.
+15. In the Dynamics 365 app environment, the status will be **Installing** while the installation is in progress. It will be updated to **Installed** when the installation is completed.
 
 ##### Review and apply a dual-write solution
 
