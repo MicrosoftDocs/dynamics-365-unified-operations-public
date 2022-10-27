@@ -45,9 +45,9 @@ The following table describes the buttons that are available on the **Manage** t
 
 | Button | Descriptions |
 |---|---|
-| Post receipts list | Post a receipt list, or view the product receipt lists for all purchase order lines in the shipping container. If multi-company shipments are used, a new receipt list posting dialog box is opened for each company. |
+| Post receipts list | Post a receipt list, or view the product receipt lists for all purchase order lines in the shipping container.  |
 | Post product receipt | Post a product receipt for all purchase order lines in the shipping container. |
-| Post invoice | Post an invoice for all purchase order lines in the shipping container. If multi-company shipments are used, a new invoice posting dialog box is opened for each company. |
+| Post invoice | Post an invoice for all purchase order lines in the shipping container.  |
 | Ship transfer order | Post a transfer order shipment for all transfer order lines in the shipping container. Only those lines in the shipping container that are a type of transfer order appear in the dialog box. |
 | Receive transfer order | Post a transfer order receipt for all transfer order lines in the shipping container. The receive dialog box is the simplest way to receive goods in a shipping container or voyage, and is one of three available options. You can also receive via arrival journals or mobile device processing. |
 | Create arrival journal | You can generate an arrival journal for organizations by using advanced warehouse features. The options are _Initialize quantity_ (recommended), and either _Create from goods in transit_ or _Create from purchase orders_. The last two options depend on whether goods-in-transit processing is being used. |
@@ -61,7 +61,7 @@ The following table describes the buttons that are available on the **General** 
 
 | Button | Descriptions |
 |---|---|
-| Receipts list | Post a receipt list for all purchase order lines in the shipping container. If multi-company voyages are used, a new receipt list posting dialog box is opened for each company. |
+| Receipts list | Post a receipt list for all purchase order lines in the shipping container.  |
 | Product Receipt | View the product receipt record, if it's used. The product receipt process will be used only if the goods don't use goods-in-transit functionality. |
 | Item arrival | View the item arrival journal for the shipping container, if that journal is used. |
 | Legs | Legs are used to identify separate parts of a journey. Lead times can be associated with each leg to help with shipment tracking. For more information, see [Multi-leg journey setup](multi-leg-journey-setup.md). |

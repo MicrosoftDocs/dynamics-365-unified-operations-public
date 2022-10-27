@@ -53,9 +53,9 @@ The following table describes the buttons that are available on the **Manage** t
 
 | Button | Description |
 |---|---|
-| Post receipts list | Post a receipt list for all purchase order lines in the folio. If multi-company shipments are used, a new receipt list posting dialog box is opened for each company. |
-| Post product receipt | Post a product receipt for all purchase order lines in the folio. If multi-company voyages are used, a new product receipt posting dialog box is opened for each company. |
-| Post invoice | Post an invoice for all purchase order lines in the folio. If multi-company voyages are used, a new invoice posting dialog box is opened for each company. |
+| Post receipts list | Post a receipt list for all purchase order lines in the folio.  |
+| Post product receipt | Post a product receipt for all purchase order lines in the folio. |
+| Post invoice | Post an invoice for all purchase order lines in the folio.  |
 | Ship transfer order | Post a transfer order for all transfer order lines that are related to the current folio in the related shipment. |
 | Receive transfer order | Post a transfer order receipt for all transfer order lines that are related to the current folio in the related shipment. |
 | Receive goods in transit | Receive all order lines that are in transit in the folio. |
@@ -70,7 +70,7 @@ The following table describes the buttons that are available on the **General** 
 
 | Button | Description |
 |---|---|
-| Receipts list | Post a receipt list for all purchase order lines in the folio. If multi-company voyages are used, a new receipt list posting dialog box is opened for each company. |
+| Receipts list | Post a receipt list for all purchase order lines in the folio.  |
 | Product receipt | View the product receipt record, if it's used. |
 | Item arrival | View the item arrival journal, if it's used. |
 | Costs inquiry | Open the cost inquiry page to view all the costs of a voyage, including the shipping container, folio, and purchase order. You can adjust the exact view of the page by using the View action. On the cost inquiry page, you can view any of the areas, plus the item and cost type code. By removing these items, you can adjust the page by grouping together costs. This capability can be useful if you're using sizes and colors. You can change the dimensions that are shown on the page. The **Costs** page shows only cost type codes where the **Dr** entry on the **Posting** tab is set to *Item*. |
