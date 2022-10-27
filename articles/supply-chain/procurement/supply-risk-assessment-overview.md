@@ -16,19 +16,19 @@ ms.custom: bap-template
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.31 GA -->
 
-Supply risk assessment for Dynamics 365 Supply Chain Management lets you identify supply risks to prevent supply chain disruptions.
+Supply risk assessment for Dynamics 365 Supply Chain Management lets you identify supply risks so you can act to prevent supply chain disruptions.
 
 The [Supply risk assessment workspace](supply-risk-assessment-workspace.md) together with the [Supplier performance and risk analysis reports](supply-risk-assessment-reports.md) help supply managers understand the risk of encountering sourcing shortages and delays. It enables businesses to take proactive actions to balance cost and resilience when optimizing their supply chains.
 
-|||
+|&nbsp;|&nbsp;|
 |---------|---------|
 |[<img src="media/sra-workspace-page.png" alt="Supply risk assessment workspace, screenshot." title="Supply risk assessment workspace, screenshot" width="400" />](media/sra-workspace-page.png)<br>*Supply risk assessment workspace*|[<img src="media/sra-risk-planned-purchase.png" alt="Risk assessment report for planned purchase, screenshot." title="Risk assessment report for planned purchase, screenshot" width="400" />](media/sra-risk-planned-purchase.png)<br>*Supplier performance and risk analysis report*|
 
-The first release of this set of capabilities is available in release version 10.0.31. The release focusses on delivery performance by suppliers, allows ranking and risk assessment based for planned orders.
+The first release of this set of capabilities is available in release version 10.0.31. The release focuses on delivery performance by suppliers, allows ranking and risk assessment based for planned orders.
 
 What you can do with the capabilities:
 
-- Measure supply delivery performance of suppliers and products along a number of dimensions.
+- Measure supply delivery performance of suppliers and products along several dimensions.
 - Derive a risk for future planned supply.
 
 What is not included in this release:
@@ -38,9 +38,9 @@ What is not included in this release:
 
 ## Your entry point is the supply risk assessment workspace
 
-The workspace is composed of actionable items lists and embedded Power Bi reports, shows metric like On-Time In-Full (OTIF) ratings for vendor and product ranking. And it represents the past performance as a risk for future supply. Using planned purchase orders, risks can be quantified in quantity and amount at risk if the same performance and trend continues into the future.
+The workspace is composed of actionable items lists and embedded Power BI reports, shows metric like On-Time In-Full (OTIF) ratings for vendor and product ranking. And it represents the past performance as a risk for future supply. Using planned purchase orders, risks can be quantified in quantity and amount at risk if the same performance and trend continues into the future.
 
-To mitigate discovered risks you can take different approaches, such as diversifying vendors, planning with different shipping methods or sourcing locations. Once you have updated the plan you would reassess the supply risks and validate the improvements.
+To mitigate discovered risks you can take different approaches, such as diversifying vendors, planning with different shipping methods or sourcing locations. Once you've updated the plan, you can reassess the supply risks and validate the improvements.
 
 ## Next steps
 
