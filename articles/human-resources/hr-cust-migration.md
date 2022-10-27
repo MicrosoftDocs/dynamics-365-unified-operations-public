@@ -55,7 +55,7 @@ Customer migration is a "lift-and-shift migration" (movement) of a customer data
 ### Dataverse capacity
 
 1. Use the **Summary** page in the Power Platform admin center to verify that Dataverse storage has enough available capacity for the environment copy.
-2. If there isn't enough available capacity, use the [guidance for freeing up storage space](power-platform/admin/free-storage-space) to reduce the overall consumption. Customers can also [add additional storage capacity](/power-platform/admin/add-storage).
+2. If there isn't enough available capacity, use the [guidance for freeing up storage space](/power-platform/admin/free-storage-space) to reduce the overall consumption. Customers can also [add additional storage capacity](/power-platform/admin/add-storage).
 
 ## Customer migration process
 
