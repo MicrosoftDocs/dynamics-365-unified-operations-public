@@ -29,9 +29,14 @@ Depending on the error that is encountered, the table in this article includes t
 - Information for consideration in the environment or payment connector configurations
 - Information that can be referenced in a support case, if additional assistance is required
 
+## Prerequisites
+To enable the below checkout module error reference codes, navigate to your site in Site Builder and in the **Site settings > Extensions** section for **Cart and checkout**, select the **Enable Enhanced Online Channel Error Display Messaging**. 
+
 ## Checkout module error reference codes
 
 Use the following table to get more details about error code references that are provided by customers or experienced in the online store.
+
+*Scroll right in the table to view the Error Description column*
 
 | Error code | Dynamics-correlated error code | Error description |
 | ---------- | ------------------------------ | ----------------- |
