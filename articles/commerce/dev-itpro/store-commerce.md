@@ -2,7 +2,7 @@
 title: Store Commerce app
 description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows. It applies to Dynamics 365 Commerce versions 10.0.25 and later.
 author: josaw1
-ms.date: 10/07/2022
+ms.date: 10/25/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -40,6 +40,8 @@ The Store Commerce app is also available for the Android and iOS platforms. For 
 - POS and extension upgrades are simplified through the Commerce sealed installer framework.
 - Dedicated hardware station is supported.
 - Offline deployment is supported.
+
+To review the capabilities of the Store Commerce app, see [Store Commerce app capabilities](../store-commerce-capabilities.md).
 
 ## Application lifecycle management
 
@@ -209,6 +211,8 @@ Store Commerce can be extended so that it's integrated with hardware devices. Yo
 + During activation, when prompted for entering the AAD password with multiple options, choose password. The other options might not work.
 
 ## Additional Resources
+[Store Commerce app capabilities](../store-commerce-capabilities.md)
+
 [Modernizing the Dynamics 365 Commerce in-store technology stack](https://www.microsoft.com/download/details.aspx?id=103896)
 
 [Commerce SDK Tech Talk Series](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions)
