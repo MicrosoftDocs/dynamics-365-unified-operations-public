@@ -34,19 +34,18 @@ ms.dyn365.ops.version: Human Resources
 ## Shared dataverse
 
 The Dual Write framework doesn't support linking two finance and operations app environments to the same Dataverse.  
-If you have a Dataverse environment that is shared with: 
- - a finance and operations app 
- and
+If you have a Dataverse environment that is shared with both:
+ - a finance and operations app  
  - a current Human Resources environment
- 
- You will need to either duplicate or split the Dataverse environment.   
+  
+ You'll need to either duplicate or split the Dataverse environment.   
 
 ## Misshaped environments 
 
 Environments are considered misshaped if the following conditions apply:    
 
  - If you don't have any Sandbox standalone environments, you'll need to create one for validation migration. 
- - If you have multiple Production standalone environments, you'll can migrate one of them. Reach out to Microsoft Support to mark your other environments as sandboxes. 
+ - If you have multiple Production standalone environments, one of the environments can be migrated. Reach out to Microsoft Support to mark the other environments as sandboxes. 
 
 These conditions will need to be addressed before migrating.
 
@@ -58,7 +57,7 @@ The existing Human Resources app in Teams is in the process of being shifted to 
 
 There are no changes to licensing for Dynamics 365 Human Resources including:  
 
- - Minimum number of licenses purchase requirement  
+ - Minimum number of purchase licenses requirement  
  - License(s) to a production and a sandbox environment: If you have existing standalone Human Resources license(s) that includes one production and one sandbox 
  environment, the same will be available on the finance and operations infrastructure. 
- - Additional sandbox license(s): If you have purchased additional sandbox license(s) for the standalone Human Resources application, the same number of sandbox licenses will be available for a standard acceptance test (sandbox) environment on the finance and operations infrastructure.  
+ - Additional sandbox license(s): If you have purchased additional sandbox license(s) for the standalone Human Resources, the same number of licenses will be available for sandbox environments on the finance and operations infrastructure.  
