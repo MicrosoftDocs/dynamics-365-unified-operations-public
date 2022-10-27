@@ -69,7 +69,3 @@ The **Links** FastTab provides convenient links to the **Supply risk assessment 
 ## The Performance and Risk tabs
 
 The **Performance** and **Risk** tabs provide in-depth analytics reports of your vendor and supply performance and the calculated risks for your planned supply orders. For more information about how to work with these reports, see [Power BI reports for risks analysis and performance ranking](supply-risk-assessment-reports.md).
-
-## Next steps
-
-Explore how the purchase order fulfillment history from the perspective of products or vendors can be used to calculate future risk for your supply. See [Power BI reports for risks analysis and performance ranking](supply-risk-assessment-reports.md).

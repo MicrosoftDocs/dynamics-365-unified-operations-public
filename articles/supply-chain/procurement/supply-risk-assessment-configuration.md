@@ -16,12 +16,12 @@ ms.custom: bap-template
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.31 GA -->
 
-## Turn on the supply risk assessment feature
+## Prerequisites
 
-Before you can use this feature, it must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+To use this feature, your system must meet the following requirements:
 
-- **Module:** *Procurement and sourcing*
-- **Feature name:** *Assess supply risks to prevent supply chain disruptions*
+- You must be running Supply Chain Management 10.0.31 or later.
+- The feature called *Assess supply risks to prevent supply chain disruptions* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Configure thresholds
 
