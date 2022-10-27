@@ -203,7 +203,7 @@ This article provides an overview of the Store Commerce app capabilities.
 | Capability | Description | Documentation | Supplemental content |
 |---|---|---|---|
 | Operational insights | Store-curated service health reliability and performance metrics are available in the customer's Application Insights subscription. Advanced alerting and monitoring capabilities are available. | | |
-| Health check | Availability of peripherals that are connected to a POS can be verified by running the health check operation. Individual peripheral issues can then be fixed and verified. | [Health check](pos-healthcheck.md) | [Release video](https://www.youtube.com/watch?v=RfPDNmnqYvY) |
+| Health check | Availability of peripherals that are connected to a POS can be verified by running the health check operation. Individual peripheral issues can then be fixed and verified. | [Health check](pos-healthcheck.md) | [Video](https://www.youtube.com/watch?v=RfPDNmnqYvY) |
 
 ## Globalization
 
