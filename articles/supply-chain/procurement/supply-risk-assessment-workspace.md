@@ -48,13 +48,13 @@ The **Key insights** FastTab of the **Overview** tab shows the following tiles, 
 - **Not in full** – The number of purchase order lines that weren't delivered in full (IF).
 - **Single sourced** – The number of planned order items that have only one vendor assigned, which potentially indicates increased risk
 
-Each of these tiles summarizes a view, which you can open by selecting the relevant tile. The following screenshot shows the details view available from the **Single sourced** tile. Note that it shows on-time in-full (OTIF) ratings and highlights whether your [configured threshold](supply-risk-assessment-configuration.md) was met for each item.
+Each of these tiles summarizes a view, which you can open by selecting the relevant tile. The following screenshot shows the details view available from the **Single sourced** tile. It shows on-time in-full (OTIF) ratings and highlights whether your [configured threshold](supply-risk-assessment-configuration.md) was met for each item.
 
 ![Single sourced items view, screenshot.](media/sra-single-source-planned-items.png "Single sourced items view, screenshot")
 
 ### Details and impact
 
-The **Details and impact** FastTab of the **Overview** tab shows a tile for each product and vendor that didn't met the OTIF rate expectations based on past purchase orders. There is one sub-tab each for **Products not OTIF** and **Vendors not OTIF**.
+The **Details and impact** FastTab of the **Overview** tab shows a tile for each product and vendor that didn't meet the OTIF rate expectations based on past purchase orders. There's one tab each for **Products not OTIF** and **Vendors not OTIF**.
 
 Each tile shows the number of items ordered and the number of items delivered in the relevant unit of measure. The header of each tile shows the number of relevant order lines for this calculation. The following screenshot shows an example of tiles on the **Vendors not OTIF** tab.
 

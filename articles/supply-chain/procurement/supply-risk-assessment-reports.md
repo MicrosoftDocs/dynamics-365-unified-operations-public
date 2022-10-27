@@ -16,13 +16,11 @@ ms.custom: bap-template
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.31 GA -->
 
-Supply Chain Management provides both an integrated risk and performance report and two reports that are embedded into the **Supply risk assessment** workspace (supplier performance analysis and risk assessment analysis). All three reports use Power BI and are based on the same metrics as the workspace and offer rich filtering and data slicing options to identify the most pressing supplier performance issues and potential risks for planned supply.
+Supply Chain Management provides both an integrated risk and performance report and two reports that are embedded into the **Supply risk assessment** workspace (supplier performance analysis and risk assessment analysis). All three reports use Power BI and are based on the same metrics as the workspace. Each report offers rich filtering and data slicing options to identify the most pressing supplier performance issues and potential risks for planned supply.
 
-The metric and KPI tiles at the top of each report page show relevant key figures that summarize the performance in each currently selected filter scope. These include the total number of purchase orders and order lines in scope for the performance assessment. On some risk assessment reports you will find information on the planned order volume.
+The metric and KPI tiles at the top of each report page show relevant key figures that summarize the performance in each currently selected filter scope (including the total number of purchase orders and order lines). Some risk assessment reports show information about the planned order volume. You'll also typically find performance rates for the percentage of order lines with delivery data on or before requested date, based on order line receipts the rates of on-time (OT), in-full (IF) and on-time in-full (OTIF) delivered order lines.
 
-You also typically find the performance rates across those for percentage of order lines with delivery data on or before requested date, based on order line receipts the rates of On-Time (OT), In-Full (IF) and On-Time In-Full (OTIF) delivered order lines.
-
-The metric and KPI tiles will update when you filter or select vendors, products, regions, delivery methods which help you to identify correlations with different factors impacting the supply performance.
+The metrics and KPI tiles update when you filter or select different vendors, products, regions or delivery methods. This changing information can help you to identify correlations with different factors that impact supply performance.
 
 ## Integrated risk and performance report
 
@@ -39,19 +37,19 @@ The workspace-embedded supplier performance report shows a holistic performance 
 
 To open the embedded supplier performance analysis report, go to **Procurement and sourcing \> Workspaces \> Supply risk assessment** and then open the **Performance** tab.
 
-All supply performance analysis reports carry a header with slicers and filters. Use these to select the relevant legal companies, regions, vendors, item groups or select products if your want to limit your analysis. The filter will carry through the different report pages so you do not have to reapply the filter settings repeatedly.
+All supply performance analysis reports provide a header with slicers and filters. To limit your analysis, select products and use the slicers and filters to select the relevant legal companies, regions, vendors, and item groups. The filter will carry through the different report pages so you don't have to reapply the filter settings repeatedly.
 
 ### Vendor and product ranking report
 
-Use the two similar reports for product and vendor ranking to study the historic order performance in terms of OTIF deliveries. Find OTIF trends and outliers in the timeline of deliveries and see those in relation to the total line amounts.
+Use the two similar reports for product and vendor ranking to study the historic order performance in terms of OTIF deliveries. Find OTIF trends and outliers in the timeline of deliveries and see them in relation to the total line amounts.
 
-You can zoom in on the timeline and select individual data points to see the related vendors or products. Alternatively, select one or more vendors based on their ranking and see the respective performance timeline.
+Zoom in on the timeline and select individual data points to see the related vendors or products. Alternatively, select one or more vendors based on their ranking and see the respective performance timeline.
 
 [<img src="media/sra-perf-supplier-rating.png" alt="Performance ranking report for products, screenshot." title="Performance ranking report for products, screenshot" width="720" />](media/sra-perf-supplier-rating.png)
 
 ### Multi perspective OTIF ranking
 
-In this report, the worst OTIF ranking is calculated from various perspectives and is shown side-by-side for products, vendors, delivery methods, and sites. Use individual or combined dimensions to identify bottlenecks that may lead to a drop in supply performance.
+In this report, the worst OTIF rankings are calculated from various perspectives and are shown side-by-side for products, vendors, delivery methods, and sites. Use individual or combined dimensions to identify bottlenecks that may lead to a drop in supply performance.
 
 [<img src="media/sra-otif-analysis.png" alt="Multi dimensional OTIF ranking report, screenshot." title="Multi dimensional OTIF ranking report, screenshot" width="720" />](media/sra-otif-analysis.png)
 
@@ -67,7 +65,7 @@ All supply risk analysis reports carry a slicer and filter header that includes 
 
 ### Risk assessment overview report
 
-This report helps you analyze the calculated risks for your planned purchases. After filtering to the desired scope, you will see the top-10 products ranked by risk in their aggregated quantity and amount. The high-risk classification is derived from the planned product quantity and amount multiplied by the observed OTIF rate of past orders. The low OTIF risk is the remaining total quantity or amount.
+This report helps you analyze the calculated risks for your planned purchases. After filtering to the desired scope, you'll see the top-10 products ranked by risk in their aggregated quantity and amount. The high-risk classification is derived from the planned product quantity and amount multiplied by the observed OTIF rate of past orders. The low OTIF risk is the remaining total quantity or amount.
 
 > [!NOTE]
 > The risk assessment is most statically significant when most of the order lines in the observed time frame are for products where few fundamental changes to surrounding factors are expected.
