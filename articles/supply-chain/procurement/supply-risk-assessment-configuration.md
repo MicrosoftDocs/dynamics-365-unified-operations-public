@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to 
-ms.date: 10/17/2022 
+ms.date: 10/27/2022 
 ms.custom: bap-template
 ---
 
@@ -14,6 +14,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
 
 ## Turn on the supply risk assessment feature
 
@@ -59,10 +60,10 @@ When you first turn on and set up this feature, the **Supply risk assessment** w
 
 ## Refresh the analytics entity store data used by Power BI reports
 
-If you haven't been using purchase data for Power BI before, then you may need to refresh this data and/or set it to update automatically going forward. If this data hasn't been refreshed, then your Power BI reports for supply risk assessment will show errors.
+If you haven't been using purchase data for Power BI until now, then you may need to refresh this data and/or set it to update automatically going forward. If this data hasn't been refreshed, then your Power BI reports for supply risk assessment will show errors.
 
 1. Go to **System administration \> Setup \> Entity store**.
 1. On the list pane, find and select the record called *Purchase cube*.
 1. On the Action Pane, select **Edit**.
 1. Select **Refresh** to start the refresh process, which will take about 15 minutes.
-1. If you'd like to set up a scheduled refresh (recommended), set **Automatic refresh enabled** to *Yes* ad then set **Recurrence** to your desired refresh interval.
+1. If you'd like to set up a scheduled refresh (recommended), set **Automatic refresh enabled** to *Yes* and then set **Recurrence** to your desired refresh interval.

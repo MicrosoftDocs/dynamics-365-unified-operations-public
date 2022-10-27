@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: how-to
-ms.date: 10/17/2022
+ms.date: 10/27/2022 
 ms.custom: bap-template
 ---
 
@@ -14,12 +14,13 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
 
 The **Supply risk assessment** workspace gives you a direct view into the top key insights related to supplier performance and related risks. It also provides [embedded reports](supply-risk-assessment-reports.md) for detailed performance and risk analysis.
 
 ## Open the Supply risk assessment workspace
 
-To open the workspace, go to  **Procurement and sourcing \> Workspaces \> Supply risk assessment**.
+To open the workspace, go to **Procurement and sourcing \> Workspaces \> Supply risk assessment**.
 
 The workspace provides three tabs for direct actionable navigation and embedded analytic reporting using Power BI.
 
@@ -40,9 +41,9 @@ The **Overview** tab shows metrics and actionable content that let you navigate 
 
 ### Key insights
 
-The **Key insights** FastTab of the **Overview** tab shows the following tiles, each of which reports a metric calculated for the scope of the work center: <!--KFM: Is "work center" the right term here? What is that? What "scope" do we mean? -->
+The **Key insights** FastTab of the **Overview** tab shows the following tiles, each of which reports a metric calculated for the scope of the workspace:
 
-- **Late confirmed** – The number of purchase order lines where vendors returned a confirmed delivery date (CDD) that was later than your requested delivery date (RDD). <!-- KFM: I rephrased this. Please confirm. -->
+- **Late confirmed** – The number of purchase order lines where vendors returned a confirmed delivery date (CDD) that was later than your requested delivery date (RDD).
 - **Not on time** – The number of purchase order lines that weren't delivered on time (OT).
 - **Not in full** – The number of purchase order lines that weren't delivered in full (IF).
 - **Single sourced** – The number of planned order items that have only one vendor assigned, which potentially indicates increased risk
@@ -61,13 +62,13 @@ Each tile shows the number of items ordered and the number of items delivered in
 
 Select a tile to see the list of order lines counted by that tile.
 
+### Links
+
+The **Links** FastTab provides convenient links to the **Supply risk assessment parameters** page (see [Configure supply risk assessment](supply-risk-assessment-configuration.md)) and to the integrated supply risk assessment report (see [Power BI reports for risks analysis and performance ranking](supply-risk-assessment-reports.md)).
+
 ## The Performance and Risk tabs
 
-The **Performance** and **Risk** tabs provide in-depth [analytics reports](supply-risk-assessment-reports.md) of your vendor and supply performance and the calculated risks for your planned supply orders. <!-- KFM: These are both blank for me. Why is that? Am I missing some setup?  -->
-
-In addition to the embedded performance and risk reports, you can also open the Power BI report in a combined full page experience. <!-- KFM: Describe how.  -->
-
-<!-- KFM: Maybe add some screenshots here. We have them everywhere else.  -->
+The **Performance** and **Risk** tabs provide in-depth analytics reports of your vendor and supply performance and the calculated risks for your planned supply orders. For more information about how to work with these reports, see [Power BI reports for risks analysis and performance ranking](supply-risk-assessment-reports.md).
 
 ## Next steps
 

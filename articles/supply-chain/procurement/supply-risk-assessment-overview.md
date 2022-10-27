@@ -6,7 +6,7 @@ ms.author: cabeln
 ms.reviewer: kamaybac
 ms.search.form: 
 ms.topic: overview 
-ms.date: 10/17/2022 
+ms.date: 10/27/2022 
 ms.custom: bap-template
 ---
 
@@ -14,6 +14,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
 
 Supply risk assessment for Dynamics 365 Supply Chain Management lets you identify supply risks to prevent supply chain disruptions.
 
