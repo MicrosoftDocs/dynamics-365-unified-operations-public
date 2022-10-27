@@ -40,14 +40,13 @@ If you have a Dataverse environment that is shared with both:
   
  You'll need to either duplicate or split the Dataverse environment.   
 
-## Misshaped environments 
+## Environment type requirements 
 
-Environments are considered misshaped if the following conditions apply:    
+The following are the required environment types needed before migrating:     
 
- - If you don't have any Sandbox standalone environments, you'll need to create one for validation migration. 
+ - If you don't have any Sandbox standalone environments, you'll need to create one to validate the migration. 
  - If you have multiple Production standalone environments, one of the environments can be migrated. Reach out to Microsoft Support to mark the other environments as sandboxes. 
 
-These conditions will need to be addressed before migrating.
 
 ## Teams Integration 
 
