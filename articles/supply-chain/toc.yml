@@ -1779,16 +1779,16 @@
         items:
         - name: Master planning configuraton overview
           href: master-planning/master-planning-onfiguration-overview.md
-      - name: Deprecated master planning
+      - name: Deprecated planning engine
         items:
-          - name: Deprecated master planning
+          - name: Deprecated planning engine overview
             href: master-planning/deprecated-master-planning-overview.md
           - name: Migration to Planning Optimization for master planning
             href: master-planning/new-master-planning-engine.md
-          - name: Planning Optimization fit analysis
-            href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
           - name: Differences between built-in master planning and Planning Optimization
             href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
+          - name: Planning Optimization fit analysis
+            href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
       - name: Old structure
         items:
         - name: Planning Optimization
