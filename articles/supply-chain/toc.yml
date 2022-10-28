@@ -1760,6 +1760,14 @@
         - name: Master plans overview
           href: master-planning/master-plans-overview.md
       - name: Set up replenishment strategies
+      - name: Configure master planning
+        items:
+        - name: Master planning configuraton overview
+          href: master-planning/master-planning-onfiguration-overview.md
+      - name: Master planning administration
+        items:
+        - name: Master planning administration overview
+          href: master-planning/planning-admin-overview.md
         items:
         - name: Replenishment strategies overview
           href: master-planning/replenishment-strategies-overview.md
@@ -1767,18 +1775,10 @@
         items:
         - name: Safety stock overview
           href: master-planning/safety-stock-overview.md
-      - name: Master planning administration
-        items:
-        - name: Master planning administration overview
-          href: master-planning/planning-admin-overview.md
       - name: Manage planned orders
         items:
         - name: Planned-order management overview
           href: master-planning/manage-planned-orders-overview.md
-      - name: Configure master planning
-        items:
-        - name: Master planning configuraton overview
-          href: master-planning/master-planning-onfiguration-overview.md
       - name: Deprecated planning engine
         items:
           - name: Deprecated planning engine overview
