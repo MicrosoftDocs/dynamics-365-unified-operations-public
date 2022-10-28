@@ -89,13 +89,13 @@ For information on the dark hours for each region, see [What are the planned mai
 **App version: 10.0.1326.70**
 **Corresponding latest KB article: 748926**
 
-| Station | Regions | Upcoming Sandbox Schedule
-|---|---|---|
-| Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | October 14 to October 17, 2022 |
-| Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | October 15 to October 18, 2022 |
-| Station 3 | East Asia, UK West, Japan West, Brazil South, West Europe, East US, UAE Central | October 16 to October 19, 2022 |
-| Station 4 | North Europe, Central US, West US | October 17 to October 20, 2022 |
-| Station 5 | DoD, Government Community Cloud, China | Not Scheduled |
+| Station | Regions | Completed Schedule | Upcoming Sandbox Schedule
+|---|---|---|---|
+| Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | October 14 to October 17, 2022 | November 2 to November 5, 2022 |
+| Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | October 15 to October 18, 2022 | November 2 to November 5, 2022 |
+| Station 3 | East Asia, UK West, Japan West, Brazil South, West Europe, East US, UAE Central | October 16 to October 19, 2022 | November 2 to November 5, 2022 |
+| Station 4 | North Europe, Central US, West US | October 17 to October 20, 2022 | November 2 to November 5, 2022 |
+| Station 5 | DoD, Government Community Cloud, China | Not Scheduled | Not Scheduled |
 
 > [!IMPORTANT] 
 > Five days in advance, Microsoft will update the preceding schedule and send email notifications to the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
