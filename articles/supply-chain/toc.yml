@@ -1757,7 +1757,7 @@
         href: master-planning/master-planning-architecture.md
       - name: Set up master plans
         items:
-        - name: Master planns overview
+        - name: Master plans overview
           href: master-planning/master-plans-overview.md
       - name: Set up replenishment strategies
         items:
@@ -1773,7 +1773,7 @@
           href: master-planning/planning-admin-overview.md
       - name: Manage planned orders
         items:
-        - name: Planned order management overview
+        - name: Planned-order management overview
           href: master-planning/manage-planned-orders-overview.md
       - name: Configure master planning
         items:
