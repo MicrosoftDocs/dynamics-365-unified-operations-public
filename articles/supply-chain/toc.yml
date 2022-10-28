@@ -1777,7 +1777,7 @@
             href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
           - name: Differences between built-in master planning and Planning Optimization
             href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
-      -name: Old structure
+      - name: Old structure
         items:
         - name: Planning Optimization
           items:

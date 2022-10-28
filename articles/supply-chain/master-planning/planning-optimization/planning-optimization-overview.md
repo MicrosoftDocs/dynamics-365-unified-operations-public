@@ -29,7 +29,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 <!-- KFM: Delete this topic -->
 
-# Master planning system architecture
+# Planning Optimization overview
 
 [!include [banner](../../includes/banner.md)]
 

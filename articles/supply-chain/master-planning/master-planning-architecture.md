@@ -1,30 +1,13 @@
 ---
-# required metadata
-
 title: Master planning system architecture
-description: This article provides an overview of the Planning Optimization functionality.
+description: This article describes the system architecture used to process master plans in Supply Chain Management.
 author: t-benebo
-ms.date: 10/31/2019
-ms.topic: overview
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: ReqCreatePlanWorkspace
-# ROBOTS: 
-audience: Application User
-# ms.devlang: 
-ms.reviewer: kamaybac
-# ms.tgt_pltfrm: 
-
-ms.assetid: 
-ms.search.region: Global
-ms.search.industry: Manufacturing
 ms.author: benebotg
-ms.search.validFrom: 2019-10-31
-ms.dyn365.ops.version: AX 10.0.5
-
+ms.reviewer: kamaybac
+ms.search.form: ReqCreatePlanWorkspace
+ms.topic: conceptual
+ms.date: 01/01/2023
+ms.custom: bap-template
 ---
 
 # Master planning system architecture
@@ -67,18 +50,3 @@ If the Planning Optimization Add-in is uninstalled, all related data in the Plan
 The following illustration shows the data flow.
 
 ![Data flow for regeneration runs.](media/PlanningOptimization2.png)
-
-## Related resources
-
-[Get started with Planning Optimization](get-started.md)
-
-[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
-
-[View plan history and planning logs](plan-history-logs.md)
-
-[Apply filters to a plan](plan-filters.md)
-
-[Cancel a planning job](cancel-planning-job.md)
-
-
-[!INCLUDE[footer-include](../../../includes/footer-banner.md)]

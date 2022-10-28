@@ -1,3 +1,19 @@
+---
+title: Deprecated master planning overview
+description: This article describes how the new Planning Optimization planning engine is now replacing the legacy build-in planning engine.
+author: t-benebo
+ms.author: benebotg
+ms.reviewer: kamaybac
+ms.search.form:
+ms.topic: overview
+ms.date: 01/01/2023
+ms.custom: bap-template
+---
+
+# Deprecated master planning overview
+
+[!include [banner](../../includes/banner.md)]
+
 As [previously announced](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios), Planning Optimization is scheduled to replace the existing built-in master planning engine.
 
 If you currently use the built-in master planning engine, you should start planning your migration to Planning Optimization now. It is important to get started right away because your operations could otherwise be impacted when deprecation is enforced (though enforcement isn't currently scheduled). We strongly encourage you to complete the migration as soon as Planning Optimization supports the features you require so that you can start taking advantage of the many performance improvements and other new capabilities provided by the new service.
