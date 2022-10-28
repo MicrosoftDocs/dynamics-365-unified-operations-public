@@ -140,11 +140,11 @@ To uninstall the Inventory Visibility Add-in, follow these steps:
 1. Select **Environment** on the navigation bar
 1. Select the Dataverse environment that is bonded with your LCS environment.
 1. Go to **Solutions** and delete the following solutions in the following order:
-    1. Anchor solution for inventory visibility application in Dynamics 365 solution.
-    1. Dynamics 365 FNO SCM Inventory Visibility Application Solution
-    1. Dynamics 365 Inventory Visibility – Controls 
-    1. Dynamics 365 FNO SCM Inventory Visibility Base Solution
-    1. Inventory visibility Standalone
+    1. Dynamics 365 Inventory Visibility – Anchor
+    1. Dynamics 365 Inventory Visibility – Plugins
+    1. Dynamics 365 Inventory Visibility – Application
+    1. Dynamics 365 Inventory Visibility – Controls
+    1. Dynamics 365 Inventory Visibility – Base 
 
     After you delete these solutions, the data that is stored in tables will also be deleted.
 
