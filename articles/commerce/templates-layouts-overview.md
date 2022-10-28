@@ -2,7 +2,7 @@
 title: Templates and layouts overview
 description: This article covers templates and layouts in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 12/12/2019
+ms.date: 10/26/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -61,11 +61,11 @@ The template in this example defines a simple structure and set of options for d
 
 An important initial step for site and brand admins is to determine the correct balance between constraint and flexibility for child layout and page authors. When templates are used, this balance is completely configurable. It affects whether page elements are centrally updated (locked in the template) or left to individual child levels that are lower in the page hierarchy.
 
-### Relationship between template defaults <-> page content
+### Relationship between template defaults and page content
 
-A template's primary function is to streamline the module authoring experience at the time of page creation. It's important to understand that even when module defaults are set (and even locked) within a template there is no further data connection from a page's module configurations to the template defaults, _except_ while editing the page. Templates control the authoring experience for page structure, and after page creation the template defaults are no longer linked to the actual localizable content within the page.  In summary, module defaults set within a template are there to control the _authoring experience_ for child pages; they do not control the actual _content_ within those pages after the page is created and edited, with one significant exception: _fragments_.
+The primary function of a template is to streamline the module authoring experience at the time a page is created. Even when module defaults are set, or even locked, within a template, there's no further data connection from the module configurations of a page to the template defaults, except when editing the page. Templates control the authoring experience for page structure, and after the page is created, the template defaults are no longer linked to the localizable content within the page. In summary, the module defaults that are set within a template control the authoring experience for child pages. The module defaults don't control the content within those pages after the page is created and edited. The only exception to this is fragments.
 
-_The exception_ to the behavior described above is when a [fragment](work-with-fragments.md) is added to a template.  Fragments can be used to dynamically add or edit localizable content across all child pages of a template (or a layout) at anytime, even after many pages have been created from a given template.  It is best practice to use fragments within templates (and layouts) whenever localizable content should be dynamically added, removed, or edited accross all child pages (for example: headers, footers, common metadata/scripts, or any other content that should be centrally editable and the same accross all child pages).  Fragments provide a way to use templates (and layouts) to control content accross all child pages.
+The exception to the behavior described above is when a [fragment](work-with-fragments.md) is added to a template.  Fragments can be used to dynamically add or edit localizable content across all child pages of a template or a layout at any time, even after many pages have been created from a given template. It's best practice to use fragments within templates and layouts whenever localizable content should be dynamically added, removed, or edited accross all child pages. For example, fragments should be used for headers, footers, common metadata/scripts, or any other content that needs to be centrally editable and the same accross all child pages.  Fragments provide a way to use templates and layouts to control content accross all child pages.
 
 To start to use templates, read: [Work with templates](work-with-templates.md).
 
