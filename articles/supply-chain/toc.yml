@@ -1760,6 +1760,9 @@
         - name: Master plans overview
           href: master-planning/master-plans-overview.md
       - name: Set up replenishment strategies
+        items:
+        - name: Replenishment strategies overview
+          href: master-planning/replenishment-strategies-overview.md
       - name: Configure master planning
         items:
         - name: Master planning configuraton overview
@@ -1768,9 +1771,6 @@
         items:
         - name: Master planning administration overview
           href: master-planning/planning-admin-overview.md
-        items:
-        - name: Replenishment strategies overview
-          href: master-planning/replenishment-strategies-overview.md
       - name: Safety stock
         items:
         - name: Safety stock overview
