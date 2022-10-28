@@ -6,7 +6,7 @@ ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: ReqCreatePlanWorkspace
 ms.topic: conceptual
-ms.date: 01/01/2023
+ms.date: 11/11/2022
 ms.custom: bap-template
 ---
 
