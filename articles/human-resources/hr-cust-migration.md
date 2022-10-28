@@ -39,8 +39,8 @@ Customer migration is a "lift-and-shift migration" (movement) of a customer data
 ### User access and permissions
 
 - The Microsoft Dynamics Lifecycle Services user should have the **Organization admin** role.
-- The user should be able to create Azure DevOps projects or use an existing Azure DevOps project.
-- The user should have access to create an Azure DevOps Personal Access Security Token, or should have a token that is available to use.
+- The user should be able to [create Azure DevOps projects](/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=browser) or use an existing Azure DevOps project.
+- The user should have access to [create an Azure DevOps Personal Access Security Token](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows), or should have a token that is available to use.
 
 ### Dataverse environment backup (Sandbox)
 
@@ -54,7 +54,7 @@ Customer migration is a "lift-and-shift migration" (movement) of a customer data
 
 ### Dataverse capacity
 
-1. Use the **Summary** page in the Power Platform admin center to verify that Dataverse storage has enough available capacity for the environment copy.
+1. Use the **Summary** page in the Power Platform admin center to verify that [Dataverse storage](/power-platform/admin/finance-operations-storage-capacity) has enough available capacity for the environment copy.
 2. If there isn't enough available capacity, use the [guidance for freeing up storage space](/power-platform/admin/free-storage-space) to reduce the overall consumption. Customers can also [add additional storage capacity](/power-platform/admin/add-storage).
 
 ## Customer migration process
@@ -97,8 +97,8 @@ After a new Lifecycle Services project has been created, and the project onboard
 > [!NOTE]
 > This step is applicable only to sandbox environment migration. When you migrate the production environment, the existing Power Platform admin center environment that is attached to the production environment will be carried forward.
 
-- In the Power platform admin center, create a Power platform environment to use for sandbox migration, or select an existing environment.
-- Copy an environment to refresh the Power Platform environment that is used for mapping.
+- In the Power platform admin center, [create a Power platform environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) to use for sandbox migration, or select an existing environment.
+- [Copy an environment](/power-platform/admin/copy-environment) to refresh the Power Platform environment that is used for mapping.
 
 #### Migrate the sandbox environment
 
@@ -183,7 +183,7 @@ The environment state will show the deployment progress. The state will be chang
 
 #### Post-migration considerations
 
-- Apply the latest quality updates to your environments.
+- Apply the latest [quality updates](/fin-ops-core/fin-ops/get-started/quality-updates) to your environments.
 - If you're using [virtual tables](hr-admin-integration-common-data-service-virtual-entities.md), reconfigure the endpoints.
 - Reconfigure dual-write integration. Evaluate which entities must be enabled.
 - Consider using virtual tables to replace dual-write for integration.
