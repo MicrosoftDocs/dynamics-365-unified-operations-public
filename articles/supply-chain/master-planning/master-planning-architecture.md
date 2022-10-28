@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Planning Optimization overview
+title: Master planning system architecture
 description: This article provides an overview of the Planning Optimization functionality.
 author: t-benebo
 ms.date: 10/31/2019
@@ -27,8 +27,6 @@ ms.dyn365.ops.version: AX 10.0.5
 
 ---
 
-<!-- KFM: Delete this topic -->
-
 # Master planning system architecture
 
 [!include [banner](../../includes/banner.md)]
@@ -41,7 +39,7 @@ The following illustration shows the advantage of running Planning Optimization 
 
 ![Advantage of running Planning Optimization during office hours.](media/PlanningOptimization1.png)
 
-## Improved performance
+## Performance
 
 Planning Optimization can be used in scenarios that involve long-running master plans. It's specifically designed for very fast calculations that involve very large volumes of data. Because it's built as a hyper-scalable multitenant service, multiple instances can work together simultaneously to calculate the plan. Additionally, the planning service removes the load of master planning from your system and works with a data stream that minimizes the server load.
 
