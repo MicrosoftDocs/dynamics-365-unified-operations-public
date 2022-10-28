@@ -1757,16 +1757,28 @@
         href: master-planning/master-planning-architecture.md
       - name: Set up master plans
         items:
+        - name: Master planns overview
+          href: master-planning/master-plans-overview.md
       - name: Set up replenishment strategies
         items:
+        - name: Replenishment strategies overview
+          href: master-planning/replenishment-strategies-overview.md
       - name: Safety stock
         items:
+        - name: Safety stock overview
+          href: master-planning/safety-stock-overview.md
       - name: Master planning administration
-        items: 
+        items:
+        - name: Master planning administration overview
+          href: master-planning/planning-admin-overview.md
       - name: Manage planned orders
-        items: 
+        items:
+        - name: Planned order management overview
+          href: master-planning/manage-planned-orders-overview.md
       - name: Configure master planning
-        items: 
+        items:
+        - name: Master planning configuraton overview
+          href: master-planning/master-planning-onfiguration-overview.md
       - name: Deprecated master planning
         items:
           - name: Deprecated master planning
