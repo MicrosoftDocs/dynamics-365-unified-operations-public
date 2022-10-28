@@ -89,7 +89,7 @@ For information on the dark hours for each region, see [What are the planned mai
 **App version: 10.0.1326.70**
 **Corresponding latest KB article: 748926**
 
-| Station | Regions | Completed Schedule | Upcoming Sandbox Schedule
+| Station | Regions | Completed Schedule | Upcoming Sandbox Schedule|
 |---|---|---|---|
 | Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | October 14 to October 17, 2022 | November 2 to November 5, 2022 |
 | Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | October 15 to October 18, 2022 | November 2 to November 5, 2022 |
