@@ -12,11 +12,16 @@ ms.custom: bap-template
 
 # Source products and materials from multiple vendors
 
-Diversifying the supply network helps businesses be agile and responsive to changes. One of the most common ways to diversify supply is to balance (split) the supply of a certain product into different vendors according to some percentages. That is the case for having a main vendor and a secondary one, where the usual split is 80%/20% or 70%/30%. Or other strategies such as dividing equally into 3 different vendors 33/33/33.
+[!include [banner](../includes/banner.md)]
+[!INCLUDE [preview-banner](../../commerce/includes/preview-banner.md)]
+<!-- KFM: Preview until 10.0.31 GA -->
+<!-- KFM: Where does this belong? Under procurement or under planning? -->
 
-With this feature, the system automatically suggests the vendor for a planned purchase order so that over time the percentages specified are respected. It assigns a vendor for a certain planned order that, over time, matches the percentages set. However, it won't split an existing planned order into several smaller orders.
+Diversifying the supply network helps businesses be agile and responsive to changes. One of the most common ways to diversify supply is to divide the supply of a certain product between different vendors by assigning a supply percentage to each of them. That is the case for having a main vendor and a secondary one, where the usual split is 80/20 or 70/30. Another strategy could be do divide equally among 3 different vendors 33/33/34.
 
-A simple example can be seen here on how the whole planned order quantity is assigned to a single vendor balancing both (and the order quantity is NOT split):
+With this feature, the system automatically suggests a vendor for each planned purchase order so that, over time, the specified percentages for each vendor are respected. However, it won't split an existing planned order into several smaller orders.
+
+The following tables shows a simple example of how each planned order quantity is assigned to a single vendor (without splitting the order quantity) such that the overall percentages are respected over time.
 
 | Demand | Vendor A quantity (target: 50%) | Vendor B quantity (target: 50%) |
 |---|---|---|
@@ -26,25 +31,33 @@ A simple example can be seen here on how the whole planned order quantity is ass
 | 100 | 0 | 100 |
 | 100 | 0 | 100 |
 
-The automatic vendor selection based on predefined splits secures improved supplier resilience, without needing to keep outside track of the purchases to the vendors outside the system as you are also able to keep track of the actual purchases and percentages versus the targeted ones.
+Automatic vendor selection based on predefined splits secures improved supplier resilience. Because the system tracks actual purchases (not just planned ones), it will also consider purchases made outside of the planning system when calculating the percentage of orders granted to each supplier.
 
-## Turn on multisource for your system
+## Prerequisites
 
-This feature is available for Planning Optimization.
+To use this feature, your system must meet the following requirements:
 
-Before you can Source products and materials from multiple vendors, it is a prerequisite that the following feature is turned on for your system. Admins can use feature management settings to check the status of these features and turn them on. The feature that must be enabled is:
+- You must be running Supply Chain Management 10.0.31 or later.
+- The feature called *Source products and materials from multiple vendors using Planning Optimization* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
-- Source products and materials from multiple vendors using Planning Optimization
+## Set multisource policies and assign them to products
 
-## Setup the split policy for a product
+### Define multisource policies
 
-### Define the multisource policy
+Multisource policies let you establish the sourcing percentages for each vendor. You can create as many policies as you need to set up different percentage splits between different combinations of vendors. Later, you will assign a policy to each product as needed. Follow these steps to create a multisource policy:
 
-To define what split should be kept between vendors, a multisource policy must be created.
+1. Go to **Procurement and sourcing \> Setup \> Policies \> Multisource policies**.
+1. Do one of the following steps:
+    - To edit an existing policy, select it in the list pane and then select **Edit** on the Action Pane.
+    - To create a new policy, select **New** on the Action Pane.
+1. Make the following settings in the header of your new or selected policy:
+    - **Name** – Enter a name for the policy (you can't edit this after the policy has been saved).
+    - **Description** – Enter a short description of the policy.
+1. Expand the General FastTab and make the following settings:
+    - **Active** – Only active policies will available for use by the system. Set to *Yes* to make the policy active; set to *No* to deactivate it.
+    - **Balance period (days)** – Set the number of days that master planning should look into the past when allocating orders to vendors. In other words, when master planning is choosing a vendor for a planned purchase order, it will look this number of days in the past and choose the vendor that will result in an actual allocation that is closest to the preferred allocation established by the multisource policy. We recommend that you choose a balance period that will include purchases from the relevant vendors but without going too far back. By default, it is 180 days. <!--KFM: What are we looking for here, purchase orders, planned orders, invoices, or all three? -->
+1. Expand the Pol
 
-Go to **Procurement and sourcing \> Setup \> Policies \> Multisource policies** to define a policy.
-
-Create a policy:
 
 - Click on New
 - Enter a name for the policy
