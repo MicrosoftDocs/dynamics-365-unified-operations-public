@@ -39,8 +39,8 @@ Customer migration is a "lift-and-shift migration" (movement) of a customer data
 ### User access and permissions
 
 - The Microsoft Dynamics Lifecycle Services user should have the **Organization admin** role.
-- The user should be able to [create Azure DevOps projects](/azure/devops/organizations/projects/create-project?view=azure-devops&tabs=browser) or use an existing Azure DevOps project.
-- The user should have access to [create an Azure DevOps Personal Access Security Token](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=Windows), or should have a token that is available to use.
+- The user should be able to [create Azure DevOps projects](/azure/devops/organizations/projects/create-project) or use an existing Azure DevOps project.
+- The user should have access to [create an Azure DevOps Personal Access Security Token](/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate), or should have a token that is available to use.
 
 ### Dataverse environment backup (Sandbox)
 
