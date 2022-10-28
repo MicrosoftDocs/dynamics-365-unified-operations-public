@@ -31,6 +31,7 @@ ms.dyn365.ops.version: Human Resources
 # Dynamics 365 Human Resources customer migration
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
+[!include [preview banner](../includes/preview-banner.md)]
 
 Customer migration is a "lift-and-shift migration" (movement) of a customer database to the finance and operations infrastructure. Automated migration tooling is used for it. The result is a new finance and operations environment that uses the customer's Human Resources database.
 
