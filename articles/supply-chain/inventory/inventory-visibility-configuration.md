@@ -482,22 +482,28 @@ A valid dimension sequence should strictly follow the reservation hierarchy, dim
 
 You can set up Inventory Visibility to let you schedule future on-hand changes and calculate available-to-promise (ATP) quantities. ATP is the quantity of an item that is available and can be promised to a customer in the next period. Use of this calculation can greatly increase your order fulfillment capability. To use this feature, you must enable it on the **Feature Management** tab and then set it up on the **ATP Setting** tab. For more information, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
 
-## <a name="query-preload-configuration"></a>Query Preload configuration (optional)
-The Inventory Visibility add-in supports periodically fetch and store a set of on-hand inventory summary data based on your pre-configured dimensions. This will provide two benefits:
-- A cleaner view that stores only inventory summary with inventory dimensions that are relevant to your daily business.
-- A inventory summary that is compatiable with **Warehouse enabled items**
+## <a name="query-preload-configuration"></a>Turn on and configure preloaded on-hand queries (optional)
 
-Please follow the steps to set up the feature.
+Inventory Visibility can periodically fetch and store a set of on-hand inventory summary data based on your preconfigured dimensions. This provides the following benefits:
 
-- Log onto Inventory Visibility Power App > Configuration > Feature Management & Settings. Switch on the **OnHandIndexQueryPreloadBackgroundService** feature. Please note it is recommended you either use the **OnHandIndexQueryPreloadBackgroundService** feature, or use the **OnHandMostSpecificBackgroundService** feature. Enabling both features will have an impact on performance.
-- Go to **Preload Setting**，you will see two steps. 
-- Step 1: Clean Up Preload Storage if there are already data stored in the **Preloaded Inventory Summary. This is normally the case this feature is already in use.
-You can only preceed to Step 2 and update the Group-by dimensions when the preload storage is empty.
-- Step 2: Set up Group By dimensions. Our current version supports you to set up one set of dimension options.
+- A cleaner view that stores an inventory summary that only includes the dimensions that are relevant to your daily business.
+- A inventory summary that is compatible with items enabled for warehouse management processes (WMS).
 
-> [!NOTE]
-> when you have a large amount of data volumn in the preload storage entity, it is recommendaed to turn off the **OnHandIndexQueryPreload** feature first and then try to clean up the storage, since the cleanup process might take very long time to complete. Once you complete the settings, you can turn on the feature again.
-> Please select **Update Configuration** in the upper-right corner of the **Configuration** page in Power Apps to commit the configuration changes you made.
+Follow these steps to set up the feature:
+
+1. Sign into the Inventory Visibility power app.
+1. Go to **Configuration \> Feature Management & Settings**.
+1. Turn on the *OnHandIndexQueryPreloadBackgroundService* feature. We recommend that you use either the *OnHandIndexQueryPreloadBackgroundService* feature or the *OnHandMostSpecificBackgroundService* feature, not both. Enabling both features will impact performance.
+1. Go to **Preload Setting**，where you you will see the following two steps: <!-- KFM: What and where is "Preload setting"? -->
+    - **Step 1: Clean Up Preload Storage** – If data is already stored in the **Preloaded Inventory Summary**. This is normally the case this feature is already in use. You can only proceed to Step 2 and update the group-by dimensions when the preload storage is empty. <!-- KFM: What do we do here? Press a button? Something else? -->
+    - **Step 2: Set up Group By dimensions** – The current version lets you set up one set of dimension options. <!-- KFM: What do we do here? Press a button? Something else? -->
+
+    > [!NOTE]
+    > If you have a large volume of data in the preload storage entity, we recommend that you turn off the *OnHandIndexQueryPreload* feature first and then clean up the storage because the cleanup process might take a very long time to complete. Once you complete the settings, you can turn on the feature again. <!-- KFM: Do you mean the *OnHandIndexQueryPreloadBackgroundService* feature? If so, maybe this step should come before the step that tells us to turn that feature on? -->
+
+1. Select **Update Configuration** in the upper-right corner of the **Configuration** page to commit your changes.
+
+See [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-the-inventory-visibility-onhand-query) for more information about how to work with this feature.
 
 ## Complete and update the configuration
 
