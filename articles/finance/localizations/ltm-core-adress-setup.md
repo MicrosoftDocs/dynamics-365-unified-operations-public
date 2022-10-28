@@ -18,21 +18,22 @@ The following prerequisites are recommended to be set up before you can add info
 Country, state, and county standard fields
 Latam fiscal register feature
 
-## **Country configuration**
-To associate one tax identification to a country you can:
-1. Go to Organization administration > Global address book > Addresses > Address setup.
-2. Go to Country/region tab.
-3. Select LATAM.
-4. Click LATAM
+## **Country tab configuration**
 
-### **General section**
+On the Address setup page, on the Country/region tab use the LATAM button to select one option from the menu
+- LATAM
+- Tax application
+- Country per Taxpayer Type identification
+
+### LATAM
+
 **Foreign country/region Field:** this field of verification will indicate whether the country  selected is different from the company’s home country. 
 
 
 > [!NOTE]
 > By default the checkbox is on “Yes” option. Is importat to verify that the base country has this unmarked checkbox.
 
-### **Allowed country/region document types section**
+Allowed country/region document types section
 
 **Country document type:** In this field you will be able to select Tax Identification created on Fiscal register feature. 
 
@@ -40,7 +41,7 @@ To associate one tax identification to a country you can:
 > If the field “It is a foreign country” is tilted, only the Tax ID types that are configured as Foreing 
 > in Tax ID menu can be selected.
 
-### **Tax application-  agregar link a tax application document
+### Tax application  agregar link a tax application document
 
 You can use Tax application option to add the codification provided by the fiscal autorities. 
 
