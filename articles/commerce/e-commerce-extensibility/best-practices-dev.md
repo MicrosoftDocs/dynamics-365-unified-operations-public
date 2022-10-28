@@ -2,7 +2,7 @@
 title: Best practices for Dynamics 365 Commerce development
 description: This article describes some best practices to follow when developing Dynamics 365 Commerce customizations.
 author: samjarawan
-ms.date: 05/19/2022
+ms.date: 10/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -162,13 +162,13 @@ The **frame-ancestors** directive can be used to restrict the loading of your e-
 
 ## Optimize data action API calls to Retail APIs by specifying Top(N) pagination parameters
 
-Modules that use Retail data actions to return search, list, or other paginated results should ensure that the **Top(N)** parameter is optimized for web performance.  Native library modules that call these data actions (example: the **Search Result Container** module used for list pages) have an authoring control to set the **Items per page** property.  This is passed to the module's Retail API data actions as the **Top(N)** parameter.  If a Site Builder author does not set this parameter for the module, then the data action will fall back to the **Default page size** app setting authored within **Site Builder > [your website] > Site settings > Extensions > General**.  If this is also not configured, then the fallback will be the default value set by the Retail API iteself.  The default **Top(N)** parameter for most paginated retail APIs is 1,000, which can cause performance issues for many web scenarios.  For this reason, it is best practice to ensure that the **Default page size** setting is configured appropriately for the performance and UX needs of the site.
+For modules that use Retail data actions to return search, list, or other paginated results, you should ensure that the **Top(N)** parameter is optimized for web performance. Native library modules that call these data actions (for example, the **Search Result Container** module used for list pages) have an authoring control to set the **Items per page** property. This property is passed to the module's Retail API data actions as the **Top(N)** parameter. If you don't set this parameter for the module, then the data action will fall back to the **Default page size** app setting authored within **Site Builder > [your website] > Site settings > Extensions > General**.  If this setting isn't configured either, then the fallback will be the default value set by the Retail API. The default **Top(N)** parameter for most paginated Retail APIs is 1,000, which can cause performance issues for many web scenarios. For this reason, it's best practice to ensure that the **Default page size** setting is configured appropriately for the performance and user experience requirements of the site.
 
-Site Builder **Default page size** setting:
+The image below shows the site builder **Default page size** setting.
 
 ![Default 'top(n)' parameter setting.](media/top-n-results-default.png)
 
-Data action example - Top(N) paging parameter for Retail APIs:
+The image below shows a data action example (**Top(N)** paging parameter for Retail APIs).
 
 ![Data action Top(N) pagination parameter example .](media/top-n-pagination-data-action-example.png)
 
