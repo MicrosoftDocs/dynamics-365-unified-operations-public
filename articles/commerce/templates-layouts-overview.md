@@ -2,7 +2,7 @@
 title: Templates and layouts overview
 description: This article covers templates and layouts in Microsoft Dynamics 365 Commerce.
 author: phinneyridge
-ms.date: 12/12/2019
+ms.date: 10/26/2022
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -61,7 +61,13 @@ The template in this example defines a simple structure and set of options for d
 
 An important initial step for site and brand admins is to determine the correct balance between constraint and flexibility for child layout and page authors. When templates are used, this balance is completely configurable. It affects whether page elements are centrally updated (locked in the template) or left to individual child levels that are lower in the page hierarchy.
 
-To start to use templates, [Work with templates](work-with-templates.md).
+### Relationship between template defaults and page content
+
+The primary function of a template is to streamline the module authoring experience when a page is created. Even when module defaults are set, or even locked, in a template, there's no further data connection from the module configurations of a page to the template defaults, except when the page is edited. Templates control the authoring experience for page structure, and after a page is created, the template defaults are no longer linked to the localizable content on that page. In other words, the module defaults that are set in a template control the authoring experience for child pages. They don't control the content on those pages after the pages are created and edited.
+
+The only exception to the previously described behavior occurs when a [fragment](work-with-fragments.md) is added to a template. Fragments can be used to dynamically add or edit localizable content across all child pages of a template or a layout at any time, even after many pages have been created from a given template. It's best practice to use fragments in templates and layouts whenever localizable content should be dynamically added, removed, or edited across all child pages. For example, fragments should be used for headers, footers, common metadata/scripts, or any other content that must be centrally editable and the same across all child pages. Fragments provide a way to use templates and layouts to control content across all child pages.
+
+To start to use templates, see [Work with templates](work-with-templates.md).
 
 ## Layouts
 
@@ -91,7 +97,7 @@ Layouts on your site can be either *preset* or *custom*:
 
 Preset layout and custom layouts are edited in different parts of the authoring toolset. Because custom layouts have no dependencies on other pages, they are edited directly in the page editor. In this case, the existence of a layout is mostly transparent to the user and is exposed only in page-level properties and through the actions for layout options. However, because changes to preset layouts can affect many child pages, they must be edited in the layout editor, where publish actions consider the full downstream impact on child pages.
 
-The following illustrations shows scenarios for preset and custom layouts.
+The following illustration shows scenarios for preset and custom layouts.
 
 ![Preset and custom layout scenarios.](../commerce/media/template-figure1.png)
 

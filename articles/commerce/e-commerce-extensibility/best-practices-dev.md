@@ -2,7 +2,7 @@
 title: Best practices for Dynamics 365 Commerce development
 description: This article describes some best practices to follow when developing Dynamics 365 Commerce customizations.
 author: samjarawan
-ms.date: 05/19/2022
+ms.date: 10/28/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -159,6 +159,22 @@ It's very important that e-commerce site pages be performance tested before they
 ## Restrict your e-commerce website from loading inside external website HTML iframe elements
 
 The **frame-ancestors** directive can be used to restrict the loading of your e-commerce site inside external website HTML iframe elements. For more information on how to configure this feature in Commerce site builder, see [Manage Content Security Policy](../manage-csp.md).
+
+## Optimize data action API calls to Retail APIs by specifying Top(N) pagination parameters
+
+For modules that use Retail data actions to return search, list, or other paginated results, you should ensure that the **Top(N)** parameter is optimized for web performance. Native library modules that call these data actions (for example, the **Search Result Container** module that is used for list pages) have an authoring control that lets you set the **Items per page** property. This property is passed to the module's Retail API data actions as the **Top(N)** parameter.
+
+If you don't set the **Top(N)** parameter for a module, the data action will fall back to the **Default page size** app setting that was defined at **Site Builder \> \[your website\] \> Site settings \> Extensions \> General**. If that setting isn't configured either, the fallback will be the default value that is set by the Retail API.
+
+For most paginated Retail APIs, the default value of the **Top(N)** parameter is **1000**, which can cause performance issues for many web scenarios. Therefore, as a best practice, you should ensure that the **Default page size** setting is appropriately configured for the performance and user experience requirements of the site.
+
+The following illustration shows the **Default page size** setting in Commerce site builder.
+
+![Default 'top(n)' parameter setting.](media/top-n-results-default.png)
+
+The following illustration shows an example of a data action (**Top(N)** paging parameter for Retail APIs).
+
+![Data action Top(N) pagination parameter example.](media/top-n-pagination-data-action-example.png)
 
 ## Additional resources
 
