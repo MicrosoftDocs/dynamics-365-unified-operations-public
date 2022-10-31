@@ -1613,7 +1613,7 @@
       - name: Monitoring and telemetry using Application Insights
         items:  
         - name: Overview
-          href: monitoring-and-telemetry-appinsights.md
+          href: sysadmin/monitoring-and-telemetry-appinsights.md
       - name: Security
         items:
         - name: Role-based security
