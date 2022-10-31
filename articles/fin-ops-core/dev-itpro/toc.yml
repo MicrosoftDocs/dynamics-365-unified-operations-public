@@ -1610,6 +1610,10 @@
         href: sysadmin/DataMaintenancePortal.md
       - name: Manage access to network printers across legal entities
         href: sysadmin/sys-admin-tools-network-printer.md
+      - name: Monitoring and telemetry using Application Insights
+        items:  
+        - name: Overview
+          href: monitoring-and-telemetry-appinsights.md
       - name: Security
         items:
         - name: Role-based security
