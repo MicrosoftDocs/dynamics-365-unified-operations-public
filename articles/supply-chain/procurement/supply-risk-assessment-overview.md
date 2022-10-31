@@ -1,6 +1,6 @@
 ---
 title: Supply risk assessment overview
-description: The Supply risk assessment workspace helps supply managers understand the risk of encountering sourcing shortages and delays.
+description: This article provides an overview of the Supply risk assessment workspace, which helps supply managers understand the risk of encountering sourcing shortages and delays.
 author: cabeln
 ms.author: cabeln
 ms.reviewer: kamaybac
@@ -16,34 +16,38 @@ ms.custom: bap-template
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.31 GA -->
 
-Supply risk assessment for Dynamics 365 Supply Chain Management lets you identify supply risks so you can act to prevent supply chain disruptions.
+Supply risk assessment for Microsoft Dynamics 365 Supply Chain Management lets you identify supply risks, so that you can act to help prevent supply chain disruptions.
 
-The [Supply risk assessment workspace](supply-risk-assessment-workspace.md) together with the [Supplier performance and risk analysis reports](supply-risk-assessment-reports.md) help supply managers understand the risk of encountering sourcing shortages and delays. It enables businesses to take proactive actions to balance cost and resilience when optimizing their supply chains.
+The [Supply risk assessment workspace](supply-risk-assessment-workspace.md), together with the [supplier performance and risk analysis reports](supply-risk-assessment-reports.md), helps supply managers understand the risk of encountering sourcing shortages and delays. It enables businesses to take proactive actions to balance cost and resilience when they optimize their supply chains.
 
-|&nbsp;|&nbsp;|
-|---------|---------|
-|[<img src="media/sra-workspace-page.png" alt="Supply risk assessment workspace, screenshot." title="Supply risk assessment workspace, screenshot" width="400" />](media/sra-workspace-page.png)<br>*Supply risk assessment workspace*|[<img src="media/sra-risk-planned-purchase.png" alt="Risk assessment report for planned purchase, screenshot." title="Risk assessment report for planned purchase, screenshot" width="400" />](media/sra-risk-planned-purchase.png)<br>*Supplier performance and risk analysis report*|
+The following illustration shows an example of the **Supply risk assessment** workspace.
 
-The first release of this set of capabilities is available in release version 10.0.31. The release focuses on delivery performance by suppliers, allows ranking and risk assessment based for planned orders.
+[<img src="media/sra-workspace-page.png" alt="Supply risk assessment workspace." title="Supply risk assessment workspace" width="400" />](media/sra-workspace-page.png)
 
-What you can do with the capabilities:
+The following illustration shows an example of the **Risk assessment** report for planned purchases. This report is one of the supplier performance and risk analysis reports.
 
-- Measure supply delivery performance of suppliers and products along several dimensions.
-- Derive a risk for future planned supply.
+[<img src="media/sra-risk-planned-purchase.png" alt="Risk assessment report for planned purchases." title="Risk assessment report for planned purchases" width="400" />](media/sra-risk-planned-purchase.png)
 
-What is not included in this release:
+The first release of this set of capabilities is available in release version 10.0.31. This release is focused on delivery performance by suppliers. It enables ranking and risk assessment based on planned orders.
 
-- Holistic assessment of vendors along other aspects like financial ratings, compliance, security, and other risks
-- Risks from other supply kinds like production
+The capabilities let you perform the following tasks:
 
-## Your entry point is the supply risk assessment workspace
+- Measure the supply delivery performance of suppliers and products along several dimensions.
+- Derive a risk assessment for future planned supply.
 
-The workspace is composed of actionable items lists and embedded Power BI reports, shows metric like On-Time In-Full (OTIF) ratings for vendor and product ranking. And it represents the past performance as a risk for future supply. Using planned purchase orders, risks can be quantified in quantity and amount at risk if the same performance and trend continues into the future.
+This release doesn't include the following capabilities:
 
-To mitigate discovered risks you can take different approaches, such as diversifying vendors, planning with different shipping methods or sourcing locations. Once you've updated the plan, you can reassess the supply risks and validate the improvements.
+- Holistic assessment of vendors along other aspects, such as financial ratings, compliance, security, and other risks
+- Risks from other types of supply, such as production
+
+## The Supply risk assessment workspace as your point of entry
+
+The **Supply risk assessment** workspace consists of lists of actionable items and embedded Power BI reports. It shows metrics such as on-time in-full (OTIF) ratings for vendors and product rankings. It also represents the past performance as a risk for future supply. Planned purchase orders can be used to quantify risk in terms of the quantity and amount that are at risk if the same performance and trend continue into the future.
+
+To help mitigate the risks that are discovered, you can take different approaches. For example, you can diversify vendors, or you can use different shipping methods or sourcing locations for planning. After you've updated the plan, you can reassess the supply risks and validate the improvements.
 
 ## Next steps
 
-- Turn on and set up the feature as described in [Configure supply risk assessment](supply-risk-assessment-configuration.md)
-- Go to the **Supply risk assessment** workspace to start your discovery of products and vendors with low ratings in the past and access the Power BI reports for performance and supply risk analysis, as described in [Actionable workspace to discover and handle supplier risks](supply-risk-assessment-workspace.md)
+- Turn on and set up the feature as described in [Configure Supply risk assessment](supply-risk-assessment-configuration.md).
+- Open the **Supply risk assessment** workspace to start to discover products and vendors that had low ratings in the past, and to access the Power BI reports for performance and supply risk analysis, as described in [Actionable workspace for discovering and handling supplier risks](supply-risk-assessment-workspace.md).
 - Open the [Power BI reports](supply-risk-assessment-reports.md) for detailed performance and risk analysis.
