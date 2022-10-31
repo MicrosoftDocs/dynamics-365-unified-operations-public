@@ -44,10 +44,7 @@ For information about how to write custom test code or generate automated test c
 
 ### Choose a plan
 
-The first step is to [choose an Azure DevOps plan](https://www.visualstudio.com/products/visual-studio-team-services-feature-matrix-vs) for your organization.
-
-> [!NOTE]
-> LCS is designed to work with TFVC repositories, and currently does not work with Git repositories.
+The first step is to [choose an Azure DevOps plan](https://azure.microsoft.com/en-us/pricing/details/devops/azure-devops-services) for your organization.
 
 ### Set up Azure DevOps
 
@@ -63,9 +60,13 @@ Until you authorize LCS access to Azure DevOps, you will see a "setup is not com
 If you're deploying a build environment on an existing Azure DevOps project that already has a build definition, make sure that you don't have any active triggers to queue the build. Additionally, make sure that no builds are scheduled or queued against the build pool.
 
 ## Deploy Developer and Build/Test environments from LCS
+
 LCS provides an option to deploy Development and Build/Test environments. With this option, you can deploy developer and build VMs in the cloud that are connected to your Azure DevOps project.
 
+Alternatively, you can make use of [Microsoft-hosted agents](../dev-tools/hosted-build-automation.md) to build and deploy your X++ code.
+
 ### Azure DevOps credential setup and linking to LCS project
+
 If you have not already done so, you need to first setup your LCS project to connect to your Azure DevOps project before you deploy a build environment.
 
 1. Login to the LCS portal to connect to Azure DevOps and your LCS project at [https://lcs.dynamics.com/](https://lcs.dynamics.com/).
@@ -73,8 +74,6 @@ If you have not already done so, you need to first setup your LCS project to con
 3. Click the **Project Settings** tile.
 4. Select **Azure DevOps** and enter the Azure DevOps URL where the source code for your module project is located.
 5. Specify the Azure DevOps link, authorize, and then click **Choose default project**.
-   > [!NOTE]
-   > LCS is designed to work with TFVC repositories, and currently does not work with Git repositories.
 
 ### Check-in migrated or new module code into Azure DevOps
 
@@ -95,6 +94,7 @@ Click **Advanced settings**, select **Azure DevOps**
 
    
 ## Test integration with the build
+
 There are two ways to integrate test as part of build process for testing and validation:
 
 -   SysTest framework based unit and component level tests.
@@ -103,6 +103,7 @@ There are two ways to integrate test as part of build process for testing and va
 The details of these two approaches are mentioned in the [Testing and validation](testing-validation.md) article. Review this article for testing and validation strategy.
 
 ## Use the Build VM environment
+
 When a Build VM is deployed in Developer topology through LCS, it is pre-configured and ready to start a build. You can change the default configuration at any time from the Visual Studio IDE or the Azure DevOps interface. On a Build VM, the module source code is synchronized to the build machine for easy build setup. The build machine is also auto-configured with default settings for build agent, build controller, build process template, and build definition. Tests that are integrated with build definition are executed after the build is successful.
 
 ### Review a pre-configured customizable build environment
@@ -142,6 +143,7 @@ Default build definition contains multiple tasks to perform specific operation, 
 You can make changes to the default configuration, and the build VM will be ready to trigger a build.
 
 ## Start a build and verify the build and test execution results
+
 After you review the default build configuration, you can manually trigger a build from Visual Studio IDE or Azure DevOps web interface.
 
 1.  Open your browser and connect to the Azure DevOps URL.
