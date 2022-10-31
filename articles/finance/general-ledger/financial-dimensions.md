@@ -141,6 +141,9 @@ You can set up the derived dimensions segments and values by using entities.
 
 When you use an entity to import data, if that entity imports dimensions, the derived dimension rules are applied during the import unless the entity specifically overrides those dimensions.
 
+## Financial Dimension Service
+The Financial Dimension service add-in available in your LCS environment page provides improved performance when you import a journal with a large number of lines using the data management framework. The service will only operate on imported journals with 500 lines or greater. The service is currently limited to only processing general journals with account type lines set to Ledger.  Other account types such as Customer, Vendor, Bank in your journal lines are not currently supported. 
+
 For more information, see the following topics:
 
 - [Define financial dimensions](tasks/define-financial-dimensions.md)
