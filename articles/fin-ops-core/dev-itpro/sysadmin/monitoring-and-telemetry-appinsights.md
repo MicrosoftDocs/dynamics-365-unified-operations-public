@@ -42,11 +42,11 @@ The following table describes the different telemetry types coming from X++ and 
 |X++ custom metrics |	customMetrics |
 
 Application Insights has a wide range of features to help you use this data:
-* [Create a dashboard](https://learn.microsoft.com/en-us/azure/azure-monitor/visualize/tutorial-logs-dashboards) for an overview of the health of your org.
-* Perform proactive monitoring by using [Smart Detection](https://learn.microsoft.com/en-us/azure/azure-monitor/app/proactive-diagnostics).
-* [Set up alerts](https://learn.microsoft.com/en-us/azure/azure-monitor/app/tutorial-alert) for important scenarios based on your org.
-* Visualize and track common navigation [patterns from a usage](https://learn.microsoft.com/en-us/azure/azure-monitor/app/usage-flows) perspective. This will help you understand, for example, whether a user always selects a specific tab first before navigating back to the main tab and closing the form. If so, this might indicate that a field should be positioned on the first tab, instead of another tab, to save the user time every time they open this record.
-* Create custom queries to troubleshoot performance and errors by using the [Logs](https://learn.microsoft.com/en-us/azure/azure-monitor/log-query/log-query-overview) panel under Monitoring on the left pane.
+* [Create a dashboard](https://learn.microsoft.com/azure/azure-monitor/visualize/tutorial-logs-dashboards) for an overview of the health of your org.
+* Perform proactive monitoring by using [Smart Detection](https://learn.microsoft.com/azure/azure-monitor/app/proactive-diagnostics).
+* [Set up alerts](https://learn.microsoft.com/azure/azure-monitor/app/tutorial-alert) for important scenarios based on your org.
+* Visualize and track common navigation [patterns from a usage](https://learn.microsoft.com/azure/azure-monitor/app/usage-flows) perspective. This will help you understand, for example, whether a user always selects a specific tab first before navigating back to the main tab and closing the form. If so, this might indicate that a field should be positioned on the first tab, instead of another tab, to save the user time every time they open this record.
+* Create custom queries to troubleshoot performance and errors by using the [Logs](https://learn.microsoft.com/azure/azure-monitor/log-query/log-query-overview) panel under Monitoring on the left pane.
 
 
 ## Overview panel in Application Insights
@@ -66,7 +66,7 @@ In the telemetry properties you can identify if a failure originated in Interact
 
 <img src="media/AppInsights/Exceptions.png" width="400px" />
 <br/>
-More information: [Find and diagnose run-time exceptions with Azure Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-runtime-exceptions)
+More information: [Find and diagnose run-time exceptions with Azure Application Insights](https://learn.microsoft.com/azure/azure-monitor/learn/tutorial-runtime-exceptions)
 
 ## Querying data in Application Insights
 In Application Insights, go to the Logs panel under Monitoring on the left pane.
