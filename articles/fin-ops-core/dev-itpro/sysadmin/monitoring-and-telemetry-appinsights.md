@@ -50,9 +50,9 @@ Application Insights has a wide range of features to help you use this data:
 
 
 ## Overview panel in Application Insights
-Application Insights provides different views. The Overview panel shows a summary of the key diagnostic metrics of your app and is a gateway to the other features of the portal. You can drill into metrics for more details. See the following sample.
+<img src="media/AppInsights/overview.png" width="400px" />
 
-<img src="media/AppInsights/overview.png" width="200px" />
+Application Insights provides different views. The Overview panel shows a summary of the key diagnostic metrics of your app and is a gateway to the other features of the portal. You can drill into metrics for more details. See the following sample.
  
 ## Performance panel in Application Insights
 The performance panel is not used by this feature today, but may be populated in the future.
@@ -64,7 +64,7 @@ The exceptions table in Application Insights powers the Failures panel. It shows
  
 In the telemetry properties you can identify if a failure originated in Interactive vs Batch, by which user, and from which legal entity.  The exception can also be logged as a bug in Azure DevOps or GitHub using standard integrations from Azure Application Insights.
 
-<img src="media/AppInsights/Exceptions.png" width="200px" />
+<img src="media/AppInsights/Exceptions.png" width="400px" />
 
 More information: [Find and diagnose run-time exceptions with Azure Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/learn/tutorial-runtime-exceptions)
 
