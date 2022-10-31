@@ -42,11 +42,11 @@ The following table describes the different telemetry types coming from X++ and 
 |X++ custom metrics |	customMetrics |
 
 Application Insights has a wide range of features to help you use this data:
-* [Create a dashboard](https://learn.microsoft.com/azure/azure-monitor/visualize/tutorial-logs-dashboards) for an overview of the health of your org.
-* Perform proactive monitoring by using [Smart Detection](https://learn.microsoft.com/azure/azure-monitor/app/proactive-diagnostics).
-* [Set up alerts](https://learn.microsoft.com/azure/azure-monitor/app/tutorial-alert) for important scenarios based on your org.
-* Visualize and track common navigation [patterns from a usage](https://learn.microsoft.com/azure/azure-monitor/app/usage-flows) perspective. This will help you understand, for example, whether a user always selects a specific tab first before navigating back to the main tab and closing the form. If so, this might indicate that a field should be positioned on the first tab, instead of another tab, to save the user time every time they open this record.
-* Create custom queries to troubleshoot performance and errors by using the [Logs](https://learn.microsoft.com/azure/azure-monitor/log-query/log-query-overview) panel under Monitoring on the left pane.
+* [Create a dashboard](/azure/azure-monitor/visualize/tutorial-logs-dashboards) for an overview of the health of your org.
+* Perform proactive monitoring by using [Smart Detection](/azure/azure-monitor/app/proactive-diagnostics).
+* [Set up alerts](/azure/azure-monitor/app/tutorial-alert) for important scenarios based on your org.
+* Visualize and track common navigation [patterns from a usage](/azure/azure-monitor/app/usage-flows) perspective. This will help you understand, for example, whether a user always selects a specific tab first before navigating back to the main tab and closing the form. If so, this might indicate that a field should be positioned on the first tab, instead of another tab, to save the user time every time they open this record.
+* Create custom queries to troubleshoot performance and errors by using the [Logs](/azure/azure-monitor/log-query/log-query-overview) panel under Monitoring on the left pane.
 
 
 ## Overview panel in Application Insights
@@ -66,7 +66,7 @@ In the telemetry properties you can identify if a failure originated in Interact
 
 <img src="media/AppInsights/Exceptions.png" width="400px" />
 <br/>
-More information: [Find and diagnose run-time exceptions with Azure Application Insights](https://learn.microsoft.com/azure/azure-monitor/learn/tutorial-runtime-exceptions)
+More information: [Find and diagnose run-time exceptions with Azure Application Insights](/azure/azure-monitor/learn/tutorial-runtime-exceptions)
 
 ## Querying data in Application Insights
 In Application Insights, go to the Logs panel under Monitoring on the left pane.
@@ -86,7 +86,7 @@ All the telemetry and events populated in Application Insights have these common
 ## How to enable the public preview feature
 
 > [!Note]
-> This feature is not available in Azure China at this time.  We will work to add this to the generally available feature when it comes available.
+> This feature is not available in Azure China or Azure Government at this time.  We will work to add this to the generally available feature when it comes available.  Today, all of the telemetry is sent **only** to Azure public cloud, so you will not be able to supply an instrumentation key for China or Government at this time.
 
 Since this feature is in public preview, it is first enabled by going to the Feature Management workspace.  Once there, search for the “Monitoring and Telemetry” feature and enable it.  If you do not see this option, and you had the private preview feature enabled you will need to disable that first.  Detailed instructions are in the next section of this article.
 
@@ -103,6 +103,9 @@ Once enabled, you will need to configure the parameters.
 For those who had the private preview software installed, you must first remove that from your environment through Lifecycle Services.  This can be bundled in to your next regularly scheduled package deployment, by following the steps outlined in [Uninstall a package](/dynamics365/fin-ops-core/dev-itpro/deployment/uninstall-deployable-package).  
 
 Once it is removed, you will see the Monitoring and Telemetry feature in the Feature Management workspace.  Once re-enabled, you will notice that none of setup or configurations were changed as the schema names are identical in the public preview, so no data is lost by removing the private preview version.
+
+## What's coming next
+Soon we will document how to write custom X++ code to populate custom events and metrics, which are supported as part of the public preview.  We will add more articles soon on these topics.
 
 
 [!include [banner](../includes/banner.md)]
