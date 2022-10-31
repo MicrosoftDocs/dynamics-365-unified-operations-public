@@ -28,10 +28,10 @@ ms.dyn365.ops.version: 10.0.31
 ---
 # Customer split on billing schedules
 
-On a billing schedule, the **Invoice account** is the customer that receives the sales order invoice to pay the bill. There are scenarios where more than one customer can pay for an invoice. The Customer split functionality allows you to add more customers that can be billed for the same billing schedule. You can enable this functionality by going to **Subscription billing > Recurring contract billing > Setup > Recurring contract billing parameters**. Set **Customer split** to **Yes**. 
+On a billing schedule, the **Invoice account** is the customer that receives the sales order invoice to pay the bill. There are scenarios where more than one customer can pay for an invoice. The **Customer split** functionality allows you to add more customers that can be billed for the same billing schedule. This functionality is enabled by going to **Subscription billing > Recurring contract billing > Setup > Recurring contract billing parameters**. Set **Customer split** to **Yes**. 
 
 ## Customer split on billing schedule header
-Once a billing schedule is created, additional customers can be added to the billing schedule header. Select **Customer split** on the **Billing schedule** tab. The customer assigned as the **Billing schedule customer** is listed at the top in the **Customer account** and **Customer account name** fields. The new customer account added cannot be the same as the invoice account. 
+Once a billing schedule is created, additional customers can be added to the billing schedule header. Select **Customer split** on the **Billing schedule** tab. The customer assigned as the **Billing schedule customer** is listed at the top in the **Customer account** and **Customer account name** fields. The new customer account added can't be the same as the invoice account. 
 
 To add a new customer:
 1. Select **Add line** on **Customer split lines**. 
@@ -42,8 +42,8 @@ You can add more than one customer to the **Customer split lines**. The total pe
 
 The **Line details** will display the added customers’ **Contact information**, **Delivery address**, **Bill to address** and **Payment details** and will be displayed on the sales order for the customer. 
 
-When adding customer split information to the billing schedule header, if there are unbilled billing schedule lines on the billing schedule, you will be asked to roll
-down the changes. **“Do you want to roll down the change from the header to the lines? Changes will only update the billing schedule lines that are not billed.”** Select **Yes** to update the **Customer split** information on the billing schedule line. Changes will not be updated if the billing schedule line has already been billed. 
+When adding customer split information to the billing schedule header, if there are unbilled billing schedule lines on the billing schedule, you'll be asked to roll
+down the changes. **“Do you want to roll down the change from the header to the lines? Changes will only update the billing schedule lines that are not billed.”** Select **Yes** to update the **Customer split** information on the billing schedule line. Changes won't be updated if the billing schedule line has already been billed. 
 
 If a billing schedule is created using the **Copy schedule** option, the **Customer split header lines** information will default and can't be the same as the **Customer account**.
 
