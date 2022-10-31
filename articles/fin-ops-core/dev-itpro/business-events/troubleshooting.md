@@ -4,7 +4,7 @@
 title: Troubleshoot business events
 description: This article provides information about troubleshooting business events.
 author: Sunil-Garg
-ms.date: 04/01/2022
+ms.date: 10/31/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
