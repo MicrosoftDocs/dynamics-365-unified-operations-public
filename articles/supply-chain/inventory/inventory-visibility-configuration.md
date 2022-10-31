@@ -49,10 +49,13 @@ The Inventory Visibility Add-in adds several new features to your Power Apps ins
 |---|---|
 | *OnHandReservation* | This feature lets you create reservations, consume reservations, and/or unreserve specified inventory quantities by using Inventory Visibility. For more information, see [Inventory Visibility reservations](inventory-visibility-reservations.md). |
 | *OnHandMostSpecificBackgroundService* | This feature provides an inventory summary for products, together with all dimensions. The inventory summary data will periodically be synced from Inventory Visibility. The default synchronization frequency is once every 15 minutes, and can be set as high as once every 5 minutes. For more information, see [Inventory summary](inventory-visibility-power-platform.md#inventory-summary). |
-| *onHandIndexQueryPreloadBackgroundService* | This feature makes it possible to preload Inventory Visibility on-hand queries to assemble on-hand lists with preselected dimensions. The default synchronization frequency is once every 15 minutes. For more information, see [Inventory summary](inventory-visibility-power-platform.md#preload-the-inventory-visibility-onhand-query). |
+| *OnHandIndexQueryPreloadBackgroundService* | This feature periodically fetches and stores a set of on-hand inventory summary data based on your preconfigured dimensions. This provides an inventory summary that only includes the dimensions that are relevant to your daily business and that is compatible with items enabled for warehouse management processes (WMS). For more information, see [Turn on and configure preloaded on-hand queries](#query-preload-configuration) and [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-the-inventory-visibility-onhand-query). |
 | *OnhandChangeSchedule* | This optional feature enables the on-hand change schedule and available to promise (ATP) features. For more information, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md). |
 | *Allocation* | This optional feature enables Inventory Visibility to have the ability for inventory protection (ringfencing) and oversell control. For more information, see [Inventory Visibility inventory allocation](inventory-visibility-allocation.md). |
 | *Enable warehouse items in Inventory Visibility* | This optional feature enables Inventory Visibility to support items that are enabled for warehouse management processes (WMS). For more information, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md). |
+
+> [!IMPORTANT]
+> We recommend that you use either the *OnHandIndexQueryPreloadBackgroundService* feature or the *OnHandMostSpecificBackgroundService* feature, not both. Enabling both features will impact performance.
 
 ## <a name="get-service-endpoint"></a>Find the service endpoint
 
