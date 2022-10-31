@@ -489,21 +489,22 @@ Inventory Visibility can periodically fetch and store a set of on-hand inventory
 - A cleaner view that stores an inventory summary that only includes the dimensions that are relevant to your daily business.
 - A inventory summary that is compatible with items enabled for warehouse management processes (WMS).
 
+See [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-the-inventory-visibility-onhand-query) for more information about how to work with this feature after you have set it up.
+
+> [!IMPORTANT]
+> We recommend that you use either the *OnHandIndexQueryPreloadBackgroundService* feature or the *OnHandMostSpecificBackgroundService* feature, not both. Enabling both features will impact performance.
+
 Follow these steps to set up the feature:
 
 1. Sign into the Inventory Visibility power app.
 1. Go to **Configuration \> Feature Management & Settings**.
-1. Turn on the *OnHandIndexQueryPreloadBackgroundService* feature. We recommend that you use either the *OnHandIndexQueryPreloadBackgroundService* feature or the *OnHandMostSpecificBackgroundService* feature, not both. Enabling both features will impact performance.
-1. Go to **Preload Setting**，where you you will see the following two steps: <!-- KFM: What and where is "Preload setting"? -->
-    - **Step 1: Clean Up Preload Storage** – If data is already stored in the **Preloaded Inventory Summary**. This is normally the case this feature is already in use. You can only proceed to Step 2 and update the group-by dimensions when the preload storage is empty. <!-- KFM: What do we do here? Press a button? Something else? -->
-    - **Step 2: Set up Group By dimensions** – The current version lets you set up one set of dimension options. <!-- KFM: What do we do here? Press a button? Something else? -->
-
-    > [!NOTE]
-    > If you have a large volume of data in the preload storage entity, we recommend that you turn off the *OnHandIndexQueryPreload* feature first and then clean up the storage because the cleanup process might take a very long time to complete. Once you complete the settings, you can turn on the feature again. <!-- KFM: Do you mean the *OnHandIndexQueryPreloadBackgroundService* feature? If so, maybe this step should come before the step that tells us to turn that feature on? -->
-
+1. If the *OnHandIndexQueryPreloadBackgroundService* feature is already enabled, then we recommend you turn it off for now because the cleanup process might take a very long time to complete. You'll turn it on again later in this procedure. <!-- KFM: Please confirm this feature name. Your original draft name the feature as *OnHandIndexQueryPreload*, but I think you meant this one. -->
+1. Open the **Preload Setting** tab.
+1. In the **Step 1: Clean up Preload Storage** section, select **Clean** to clean up the database and make it ready to accept your new group-by settings.
+1. In the **Step 2: Set up Group By Values** section, in the **Group Result By** field, enter a comma-separated list of field names by which to group your query results. Once you have data in the preload storage database, you won't be able to change this setting until you clean the database, as described in the previous step.
+1. Go to **Configuration \> Feature Management & Settings**.
+1. Turn on the *OnHandIndexQueryPreloadBackgroundService* feature.
 1. Select **Update Configuration** in the upper-right corner of the **Configuration** page to commit your changes.
-
-See [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-the-inventory-visibility-onhand-query) for more information about how to work with this feature.
 
 ## Complete and update the configuration
 
