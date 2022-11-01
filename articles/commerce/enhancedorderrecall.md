@@ -73,8 +73,8 @@ In version 10.0.18 and later, you can configure POS notifications and live tile 
 
 > [!NOTE]
 > To enable the order lookup feature, ensure that the **Quotations** key is enabled under **License configuration** > **Configuration keys**.
-
-![Quotations license key configuration must be enabled](./media/Quotations_License_Key_Configuration.png)
+>
+> ![Quotations license key configuration must be enabled](./media/Quotations_License_Key_Configuration.png)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
