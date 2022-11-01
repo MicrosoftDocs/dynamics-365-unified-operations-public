@@ -107,7 +107,7 @@ You can cancel the migration at any time before it begins.
 
 ### During the migration
 
-A new Lifecycle Services project is created in the target geography.  This will provide you with a new LCS Project ID and URL.
+A new Lifecycle Services project is created in the target geography.  This will provide you with a new LCS Project ID and URL.  The migration can take up to two hours depending on the size of the data that is automatically transferred.
 
 While the migration is in progress, a banner will be shown across the source and target projects to indicate that they are participating in a migration. The projects will be locked for changes until either the migration is successfully completed, or it fails and is rolled back.
 
