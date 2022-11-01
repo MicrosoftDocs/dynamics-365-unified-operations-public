@@ -1,7 +1,7 @@
 ---
 title: Reimbursements in the public sector
 description: This article answers common questions related to reimbursements in the public sector.
-author: velofog
+author: JodiChristiansen
 ms.date: 11/02/2022
 ms.topic: article
 ms.prod: 
@@ -9,7 +9,7 @@ ms.technology:
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.region: Global
-ms.author: velofog
+ms.author: jchrist
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.custom: 27311
