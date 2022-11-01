@@ -63,7 +63,7 @@ The following table shows the data that can be transferred between instances and
 | Automated | Asset library | Only the last asset that was applied to your sandbox or production environments is automatically migrated. |
 | Manual | Asset library | You will be able to download and manually upload assets in the target project. You don't have to move all assets. You can move only assets that you require. |
 | Manual | Self-service environments | Sandbox and production environments will remain in their current deployed region and aren't affected by the Project migration manager utility. They will have the same environment IDs but will be in a new project. If you must move your environment to a different region, open a support ticket separately. |
-| Manual | Cloud-hosted environments | Azure connectors can be manually reconfigured, and new environments can be deployed in the target afterward. You should deallocate and delete all cloud-hosted environments before migration begins. |
+| Manual | Cloud-hosted environments | Azure connectors can be manually reconfigured, and new environments can be deployed in the target after migration. After migration, the source project will be locked but you will still be allowed to delete cloud-hosted environments from the source to clean up the older project. |
 | Not supported | System diagnostics | System diagnostics data can't be exported. However, new diagnostics will be generated from your environments in the target project after migration. |
 | Not supported | Upgrade analysis | Upgrade analysis data can't be exported. However, you can start a new upgrade analysis in the target project after migration. |
 | Not supported | Globalization | Regulatory alerts are not transferrable between projects. |
@@ -94,7 +94,7 @@ The Project migration manager utility performs several validations:
 - When a migration begins, all environments must be in a **Deployed** state. Any other state will cancel the migration.
 - All migrations must be scheduled in the future.
 - Only one migration can be scheduled at a time.
-- Migration can be done for only some project types. For information about the supported project types, see the rows where the migration method is "Automated" in the table earlier in this article.
+- Migration can be done for cloud implementation projects, and partner projects. 
 - A migration can be deleted or canceled only if it hasn't yet begun.
 - Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available.
 
@@ -118,9 +118,11 @@ If any customization, service, or quality updates are scheduled during your migr
 
 After the migration is completed you will receive an email stating the success of the migration, or the reason for the failure. During preview, emails might not be sent.  Upon successful migration, you should manually transfer any additional assets and settings from the old project to the new project, that weren't automatically transferred. In addition, you will have to reconfigure the update calendar for automatic updates and resubmit any pause requests that you previously entered.
 
-You should attend to any project data that wasn't automatically transferred and that you require in the new project.
+You should attend to any project data that wasn't automatically transferred and that you require in the new project.  
 
-The source project is then locked after successful migration, and data will be in read-only mode.  Microsoft will store the source project for up to one year until it will be automatically deleted.
+The source project is then locked after successful migration, and data will be in read-only mode.  If you still have cloud-hosted environments deployed on the source project, you will still be allowed to deallocate and delete them despite the source project being locked.  This is to allow for cleaning up any resources as required on the source project.
+
+Microsoft will store the source project for up to one year until it will be automatically deleted.
 
 ## Frequently asked questions (FAQ)
 
