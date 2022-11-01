@@ -26,9 +26,11 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
 
 ---
-# Get started with Planning Optimization
+# Get started with master planning
 
 [!include [banner](../../includes/banner.md)]
+
+Master planning in Supply Chain Management is provided by an external service called the Planning Optimiation Add-in for Dyamics 365 Supply Chain Management. This topic explains how to obtain and set up that service.
 
 ## Availability
 
