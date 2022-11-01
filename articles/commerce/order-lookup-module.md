@@ -42,9 +42,10 @@ The order lookup module can be added to the body of any page of your e-commerce 
 
 
 > [!NOTE]
-> For Order lookup feature to work, please make sure that 'Quotations' key is enabled among the license configurations. 
+> To enable the order lookup feature, ensure that the **Quotations** key is enabled under **License configuration** > **Configuration keys**.
+>
 > ![Quotations license key configuration must be enabled](./media/Quotations_License_Key_Configuration.png)
-> 
+
 ## Additional resources
 
 [Enable order lookup for guest checkouts](order-lookup-guest.md)
