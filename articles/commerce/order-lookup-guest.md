@@ -70,8 +70,9 @@ In order-related emails, you can provide a link or button that takes customers t
 `<a href="https://[domain]/[orderdetailspage]?confirmationId=%orderconfirmationid%&propertyName=email&propertyValue=%customeremailaddress%" target="_blank">View my order status</a>`
 
 > [!NOTE]
-> For Order lookup feature to work, please make sure that 'Quotations' key is enabled among the license configurations. 
-> ![Quotations license key configuration must be enabled](./media/Quotations_License_Key_Configuration.png)
+> To enable the order lookup feature, ensure that the **Quotations** key is enabled under **License configuration** > **Configuration keys**.
+
+![Quotations license key configuration must be enabled](./media/Quotations_License_Key_Configuration.png)
 
 ## Additional resources
 
