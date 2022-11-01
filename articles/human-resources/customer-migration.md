@@ -173,4 +173,4 @@ Microsoft is still defining what tools and resources will be available from Fast
 
 ## Licensing impact
 
-For more information about how licensing is affected, see [Dynamics 365 Human Resources infrastructure merge FAQ](hr-infrastructure-merge-faq.md#licensing-impact).
+For more information about how licensing is affected, see [Dynamics 365 Human Resources infrastructure merge](hr-infrastructure-merge.md#licensing).
