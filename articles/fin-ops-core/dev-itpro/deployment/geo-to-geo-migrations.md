@@ -12,7 +12,7 @@ ms.custom:
 
 # Geo-to-geo migrations
 
-Microsoft continues to open datacenters for business service in both existing regions and new regions. The Geo migration feature lets you move your environments that are in a single tenant from one geography (or geo) to another. No changes to the user interface or version occur as part of the move.
+Microsoft continues to open datacenters for business service in both existing regions and new regions. The Geo migration feature lets you move your Finance and Operations environments that are in a single tenant from one geography (or geo) to another. No changes to the user interface or version occur as part of the move.
 
 If your tenant resides in a Microsoft 365 environment in a single tenant, when you move your environment, the Microsoft 365 environment isn't moved. Your environment and the Microsoft 365 environment are separate services. Your environment will still appear alongside the Microsoft 365 environment in your tenant.
 
@@ -30,8 +30,9 @@ If your tenant resides in a Microsoft 365 environment in a single tenant, when y
     - [Microsoft Business Application Feature Availability - EMEA](https://aka.ms/bapfunctionalparityemea)
     - [Microsoft Business Application Feature Availability - APAC](https://aka.ms/bapfunctionalparityapac)
 
-- During this preview, migration is supported only within the United States, the European Union (EU), Norway, and the United Arab Emirates (UAE). Other local geographies will be made available in other areas after the Geo migration feature becomes publicly available.
+- During this preview, migration is supported only within the United States and the European Union (EU). Other local geographies will be made available in other areas after the Geo migration feature becomes publicly available.
 - Microservices (add-ins) aren't covered by the migration process. You will have to uninstall the add-ins before the migration and then reinstall them afterward.
+- Retail environments may require special handling. Retail integrations will not be migrated, but will remain functional. The customer may choose to have these migrated at a later date. Many of the retail integrations can be migrated in a self-service manner by the customer
 - If Microsoft Power Platform integration is enabled for the environment that is being migrated, the corresponding Dataverse organization will be migrated at the same time. If you don't want to migrate the Dataverse organization, explicitly mention this fact in your support request.
 - To request a geo-to-geo migration, contact your account manager, and open a support ticket with the Microsoft [Technical Support](../lifecycle-services/lcs-support.md) team.
 
@@ -45,13 +46,14 @@ If your tenant resides in a Microsoft 365 environment in a single tenant, when y
 
 We recommend that you migrate sandbox environments first and validate them before you trigger a production migration.
 
+CHE environments are not supported.
+
 ## Migration process
 
 The geo-to-geo migration process consists of three phases:
 
 1. **Premigration** – The environment remains available for use but is put into an Infrastructure Maintenance state so that no lifecycle management operations can be performed.
 1. **Migration** – The resources are moved to the new geography. The environment requires downtime of up to 48 hours and isn't available for use during this time.
-1. **Post-migration** – The environment is available for use, and after your customers confirm that the environment is working as expected, cleanup operations are performed.
 
 ## How the move works
 
