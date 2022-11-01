@@ -65,7 +65,7 @@ The following table shows the data that can be transferred between instances and
 | Manual | Cloud-hosted environments | Azure connectors can be manually reconfigured, and new environments can be deployed in the target afterward. You should deallocate and delete all cloud-hosted environments before migration begins. |
 | Not supported | System diagnostics | System diagnostics data can't be exported. However, new diagnostics will be generated from your environments in the target project after migration. |
 | Not supported | Upgrade analysis | Upgrade analysis data can't be exported. However, you can start a new upgrade analysis in the target project after migration. |
-| Not supported | Globalization | Regulatory alerts |
+| Not supported | Globalization | Regulatory alerts are not transferrable between projects. |
 | Not supported | Code upgrade | Code upgrade data can't be exported. However, you can start a new code upgrade in the target project after migration. |
 | Not supported | Translation service | Translation service data can't be exported. However, you can start a new translation request in the target project after migration. |
 
