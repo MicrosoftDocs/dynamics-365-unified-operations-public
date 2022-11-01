@@ -49,23 +49,24 @@ The following table shows the data that can be transferred between instances and
 
 | Migration method | Feature | Details |
 |------------------|---------|---------|
-| Automated | Business process modeler | \*\* |
-| Automated | Methodologies | The state of the methodology isn't migrated. You can manually complete as required.\* |
-| Automated | Commerce |  |
+| Automated | Business process modeler | |
+| Automated | Methodologies | The state of the methodology isn't migrated. You can manually complete stages as required in the target project. |
+| Automated | Commerce | Metadata is moved for the Commerce Scalue Unit (CSU) and other Commerce functionality.  This doesn't migrate the CSU, but rather ensures it is available for use in the target project.  |
+| Automated | Self-service environments | Metadata is moved for the Sandbox and Production environments.  This doesn't migrate the actual environment to a new geography, but rather ensures it is available for use in the target project for applying updates, database movement, and other admin activities. |
 | Automated | Subscription estimator | |
 | Automated | Project onboarding | |
-| Automated | Project settings | Update schedules (including paused updates) and Azure connectors aren't migrated.\* |
+| Automated | Project settings | Update schedules (including paused updates) and Azure connectors aren't migrated.  These aspects can be manually configured in the target project. |
 | Automated | Support | |
 | Automated | Work items | |
-| Automated | Organization users | Only users who were in the source project are created as organization users in the target Lifecycle Services geography.\* |
-| Automated | Project users | Only project owners from the tenant that owns the source project are migrated to the target Lifecycle Services project.\* | 
-| Automated | Asset library | Only the last asset that was applied to your sandbox or production environments is automatically migrated.\* |
+| Automated | Organization users | Only users who were in the source project are created as organization users in the target Lifecycle Services geography. |
+| Automated | Project users | Only project owners from the tenant that owns the source project are migrated to the target Lifecycle Services project. | 
+| Automated | Asset library | Only the last asset that was applied to your sandbox or production environments is automatically migrated. |
 | Manual | Asset library | You will be able to download and manually upload assets in the target project. You don't have to move all assets. You can move only assets that you require. |
 | Manual | Self-service environments | Sandbox and production environments will remain in their current deployed region and aren't affected by the Project migration manager utility. They will have the same environment IDs but will be in a new project. If you must move your environment to a different region, open a support ticket separately. |
-| Manual | Cloud-hosted environments | Azure connectors can be manually reconfigured, and new environments can be deployed in the target afterward. You should deallocate and delete all cloud-hosted environments before migration begins. |
+| Manual | Cloud-hosted environments | Azure connectors can be manually reconfigured, and new environments can be deployed in the target after migration. After migration, the source project will be locked but you will still be allowed to delete cloud-hosted environments from the source to clean up the older project. |
 | Not supported | System diagnostics | System diagnostics data can't be exported. However, new diagnostics will be generated from your environments in the target project after migration. |
 | Not supported | Upgrade analysis | Upgrade analysis data can't be exported. However, you can start a new upgrade analysis in the target project after migration. |
-| Not supported | Globalization | Regulatory alerts\*\* |
+| Not supported | Globalization | Regulatory alerts are not transferrable between projects. |
 | Not supported | Code upgrade | Code upgrade data can't be exported. However, you can start a new code upgrade in the target project after migration. |
 | Not supported | Translation service | Translation service data can't be exported. However, you can start a new translation request in the target project after migration. |
 
@@ -93,9 +94,9 @@ The Project migration manager utility performs several validations:
 - When a migration begins, all environments must be in a **Deployed** state. Any other state will cancel the migration.
 - All migrations must be scheduled in the future.
 - Only one migration can be scheduled at a time.
-- Migration can be done for only some project types. For information about the supported project types, see the rows where the migration method is "Automated" in the table earlier in this article.
+- Migration can be done for cloud implementation projects, and partner projects. 
 - A migration can be deleted or canceled only if it hasn't yet begun.
-- Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available.<!--(Need list from Commerce team)-->
+- Commerce isn't available in all target geographies. If you have Commerce components enabled, your migration won't be scheduled if you're migrating to one of the target geographies where Commerce isn't available.
 
 ### Before the migration begins
 
@@ -107,15 +108,21 @@ You can cancel the migration at any time before it begins.
 
 ### During the migration
 
+A new Lifecycle Services project is created in the target geography.  This will provide you with a new LCS Project ID and URL.  The migration can take up to two hours depending on the size of the data that is automatically transferred.
+
 While the migration is in progress, a banner will be shown across the source and target projects to indicate that they are participating in a migration. The projects will be locked for changes until either the migration is successfully completed, or it fails and is rolled back.
 
 If any customization, service, or quality updates are scheduled during your migration, they will automatically be canceled.
 
 ### After the migration
 
-After the migration is completed, you should manually transfer any required assets from the old project to the new project. In addition, you will have to reconfigure the update calendar for automatic updates and resubmit any pause requests that you previously entered.
+After the migration is completed you will receive an email stating the success of the migration, or the reason for the failure. During preview, emails might not be sent.  Upon successful migration, you should manually transfer any additional assets and settings from the old project to the new project, that weren't automatically transferred. In addition, you will have to reconfigure the update calendar for automatic updates and resubmit any pause requests that you previously entered.
 
-You should attend to any project data that wasn't automatically transferred and that you require in the new project.
+You should attend to any project data that wasn't automatically transferred and that you require in the new project.  
+
+The source project is then locked after successful migration, and data will be in read-only mode.  If you still have cloud-hosted environments deployed on the source project, you will still be allowed to deallocate and delete them despite the source project being locked.  This is to allow for cleaning up any resources as required on the source project.
+
+Microsoft will store the source project for up to one year until it will be automatically deleted.
 
 ## Frequently asked questions (FAQ)
 
@@ -143,6 +150,6 @@ Your source project will be unlocked, and you will receive an email notification
 
 ### I'm currently a First Release customer. Will I still be a First Release customer after migration?
 
-TBD
+First release is a program that only exists in the US-based public cloud instance of Lifecycle Services.  It is not available in the other geographies at this time.  If you were previously part of the First Release program and are migrating to another geography, you won't be on the First Release program after migration.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
