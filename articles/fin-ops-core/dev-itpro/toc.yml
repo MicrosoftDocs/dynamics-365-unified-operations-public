@@ -972,6 +972,8 @@
         href: lifecycle-services/lcs-user-guide.md
       - name: Project onboarding
         href: lifecycle-services/project-onboarding.md
+      - name: Project migration manager
+        href: lifecycle-services/project-migration-manager.md
       - name: Subscription estimator
         href: lifecycle-services/subscription-estimator.md
       - name: Configure security
