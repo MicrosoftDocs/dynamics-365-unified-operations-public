@@ -16,12 +16,14 @@ ms.custom: bap-template
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.31 GA -->
 
+This article describes how to enable and set up Supply risk assessment.
+
 ## Prerequisites
 
-To use this feature, your system must meet the following requirements:
+To use supply risk assessment, the following prerequisites must be in place for your system:
 
-- You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.31 or later.
-- The feature that is named *Assess supply risks to prevent supply chain disruptions* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
+- **Supply Chain Management version** – You must be running Microsoft Dynamics 365 Supply Chain Management 10.0.31 or later.
+- **Feature management** – The feature that is named *Assess supply risks to prevent supply chain disruptions* must be turned on in [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md).
 
 ## Configure thresholds
 
