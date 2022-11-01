@@ -35,7 +35,7 @@ If your tenant resides in a Microsoft 365 environment in a single tenant, when y
 - If Microsoft Power Platform integration is enabled for the environment that is being migrated, the corresponding Dataverse organization will be migrated at the same time. If you don't want to migrate the Dataverse organization, explicitly mention this fact in your support request.
 - To request a geo-to-geo migration, contact your account manager, and open a support ticket with the Microsoft [Technical Support](../lifecycle-services/lcs-support.md) team.
 
-    - In the support ticket, provide the following details: tenant ID, environment ID, source geography, target geography, and preferred date and time.
+    - In the support ticket, provide the following details: tenant ID, environment ID, project ID, source geography, target geography, and preferred date and time.
     - Technical Support will notify you about migration updates.
 
 ## Supported environments
@@ -55,7 +55,7 @@ The geo-to-geo migration process consists of three phases:
 
 ## How the move works
 
-A list of prerequisites and post-requisites for your migration will be provided to you. The following table describes customer and Microsoft responsibilities before, during, and after the migration.
+The following table describes customer and Microsoft responsibilities before, during, and after the migration.
 
 | Responsible party | Before the migration | During the migration | After the migration |
 |---|---|---|---|
