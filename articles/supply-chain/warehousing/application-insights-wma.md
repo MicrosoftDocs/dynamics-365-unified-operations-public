@@ -18,7 +18,7 @@ The Warehouse Management mobile app emits telemetry data, which lets you monitor
 
 ## Prerequisites
 
-Before you can use the Warehouse Management mobile app, the following prerequisites must be in place for your system:
+Before you can collect and analyze telemetry data for your mobile devices, the following prerequisites must be in place for your system:
 
 - **Supply Chain Management version** – You must be running Microsoft Dynamics 365 Supply Chain Management version 10.0.29 or later.
 - **Application Insights** – You must have an Application Insights resource in Azure, and you must configure your Supply Chain Management environment to send telemetry data to it. For instructions, see [Enable warehousing telemetry with Application Insights](application-insights-warehousing.md).
