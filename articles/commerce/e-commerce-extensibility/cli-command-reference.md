@@ -263,6 +263,16 @@ The packageVersions.json file includes information about Dynamics 365 Commerce p
 yarn msdyn365 packages
 ```
 
+## preview
+
+**Usage**
+
+```bash
+yarn msdyn365 pack --preview
+```
+
+This command creates a package with the latest available SDK preview version.
+
 ## update-versions
 
 **Usage**
