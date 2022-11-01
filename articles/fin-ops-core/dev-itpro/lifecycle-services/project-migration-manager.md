@@ -51,7 +51,8 @@ The following table shows the data that can be transferred between instances and
 |------------------|---------|---------|
 | Automated | Business process modeler | |
 | Automated | Methodologies | The state of the methodology isn't migrated. You can manually complete stages as required in the target project. |
-| Automated | Commerce |  |
+| Automated | Commerce | Metadata is moved for the Commerce Scalue Unit (CSU) and other Commerce functionality.  This doesn't migrate the CSU, but rather ensures it is available for use in the target project.  |
+| Automated | Self-service environments | Metadata is moved for the Sandbox and Production environments.  This doesn't migrate the actual environment to a new geography, but rather ensures it is available for use in the target project for applying updates, database movement, and other admin activities. |
 | Automated | Subscription estimator | |
 | Automated | Project onboarding | |
 | Automated | Project settings | Update schedules (including paused updates) and Azure connectors aren't migrated.  These aspects can be manually configured in the target project. |
