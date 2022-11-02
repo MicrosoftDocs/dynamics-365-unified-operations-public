@@ -25,7 +25,8 @@ This premise is confirmed by the results: lower incident counts across our produ
 
 ## What you need to know
 
-- Microsoft will apply proactive quality updates on a monthly basis to any sandbox or production environments running a service update that is [in service](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)
+- Proactive quality updates are applied on a monthly basis
+- Microsoft will apply proactive quality updates to any sandbox or production environments running a service update that was [in service](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) when the proactive quality update was created
 - FDA-regulated and sovereign and government cloud customers will not receive proactive quality updates while Microsoft works on the related details
 - Notifications related to proactive quality updates are posted in the [Microsoft 365 Message Center](https://admin.microsoft.com/AdminPortal/)
 - Customers are notified that a proactive quality update will be applied to an environment 5 days before the update will take place
