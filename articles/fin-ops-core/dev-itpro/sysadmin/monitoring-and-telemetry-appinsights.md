@@ -46,7 +46,7 @@ Application Insights has a wide range of features to help you use this data:
 * [Create a dashboard](/azure/azure-monitor/visualize/tutorial-logs-dashboards) for an overview of the health of your org.
 * Perform proactive monitoring by using [Smart detection](/azure/azure-monitor/app/proactive-diagnostics).
 * [Set up alerts](/azure/azure-monitor/app/tutorial-alert) for important scenarios based on your org.
-* Visualize and track common navigation [patterns from a usage](/azure/azure-monitor/app/usage-flows) perspective. For example, this helps you understand if a user always selects a specific tab first before navigating back to the main tab and closing the page. This might indicate that a field should be positioned on the first tab, to save the user time every time they open this record.
+* Visualize and track common navigation [patterns from a usage](/azure/azure-monitor/app/usage-flows) perspective. For example, if a user always selects a specific tab first before navigating back to the main tab and closing the page. This might indicate that a field should be positioned on the first tab to save the user time.
 * Create custom queries to troubleshoot performance and errors by using the [Logs](/azure/azure-monitor/log-query/log-query-overview) panel under **Monitoring** on the left pane.
 
 
@@ -102,7 +102,7 @@ All the telemetry and events populated in Application insights have these common
 ## How to enable the public preview feature
 
 > [!Note]
-> This feature isn't available in Azure China or Azure Government at this time. We will work to add this to the generally available feature when it comes available.  Currently, all of the telemetry is sent **only** to Azure public cloud, so you will not be able to supply an instrumentation key for China or Government at this time.
+> This feature isn't available in Azure China or Azure Government at this time. We will work to add this to the generally available feature when it comes available.  Currently, all of the telemetry is sent **only** to Azure public cloud, so you won't be able to supply an instrumentation key for China or Government at this time.
 
 This feature is in public preview and is first enabled by going to the **Feature management** workspace. Search for **Monitoring and telemetry** and enable it. If you don't see this option, and the private preview feature enabled, you'll need to disable that first. For more information, see the next section of this article.
 
@@ -121,8 +121,5 @@ If the private preview software is installed, it must be removed from your envir
 
 Once it's removed, you'll see the **Monitoring and telemetry** feature in the **Feature management** workspace. Once re-enabled, none of setup or configurations were changed as the schema names are identical in the public preview, so no data is lost by removing the private preview version.
 
-## What's coming next
-
-We will document how to write custom X++ code to populate custom events and metrics, which are supported as part of the public preview. 
 
 [!include [banner](../includes/banner.md)]
