@@ -40,13 +40,13 @@ Planning Optimization requires a Lifecycle Services (LCS) enabled, high-availabi
 
 ## Planning of batch jobs fails when Planning Optimization is enabled
 
-When you enable Planning Optimization, the built-in master planning engine is automatically disabled. Master planning batch jobs that were created for the built-in Supply Chain Management planning engine will fail if they are triggered while Planning Optimization is enabled. You may receive an error message such as *This operation triggered master planning that isn't supported when Planning Optimization is enabled*.
+When you enable Planning Optimization, the deprecated master planning engine is automatically disabled. Master planning batch jobs that were created for the deprecated master planning engine will fail if they are triggered while Planning Optimization is enabled. You may receive an error message such as *This operation triggered master planning that isn't supported when Planning Optimization is enabled*.
 
-**Fix**: Cancel all master planning batch jobs that were created for the built-in Supply Chain Management planning engine.
+**Fix**: Cancel all master planning batch jobs that were created for the deprecated master planning engine.
 
 ## Planning Optimization results are different from earlier results
 
-Planning Optimization differs from the built-in master planning design in some areas. This can also be caused by pending features.
+Planning Optimization differs from the deprecated master planning engine design in some areas. This can also be caused by pending features.
 
 **Fix**: Run Planning Optimization fit analysis and then analyze the results while referring to the related documentation to understand the impact. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
 

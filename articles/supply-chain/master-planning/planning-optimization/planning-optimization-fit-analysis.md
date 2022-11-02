@@ -30,9 +30,9 @@ ms.dyn365.ops.version: 10.0.9
 
 [!include [banner](../../includes/banner.md)]
 
-You should analyze the result from the Planning Optimization fit analysis as part of the migration process. Note that the scope of Planning Optimization is not equal to the current built-in master planning functionality. We recommend that you work with your partner and read the documentation to prepare for the migration. 
+You should analyze the result from the Planning Optimization fit analysis as part of the migration process. Note that the scope of Planning Optimization is not equal to the deprecated master planning engine functionality. We recommend that you work with your partner and read the documentation to prepare for the migration.
 
-Planning Optimization fit analysis helps you to identify where the result might differ between the built-in master planning engine and Planning Optimization. This analysis is done based on your current setup and data. 
+Planning Optimization fit analysis helps you to identify where the result might differ between the deprecated master planning engine and Planning Optimization. This analysis is done based on your current setup and data. 
 
 To see the Planning Optimization fit analysis result, go to **Master planning** \> **Setup** \> **Planning Optimization fit analysis**, and then select **Run analysis**. If the analysis finds any inconsistencies, they are listed on the same page. (The analysis can take a few minutes to run.)
 

@@ -102,31 +102,15 @@ The connection status indicates the current status of the connection between Sup
 The setting of the **Use Planning Optimization** option determines which planning engine is used for master planning:
 
 - **Yes** – Planning Optimization is used for master planning.
-- **No** – The built-in Supply Chain Management planning engine is used for master planning.
+- **No** – The deprecated master planning engine is used for master planning.
 
-This setting applies to all legal entities (companies). It is not possible to use Planning Optimization in some legal entities and the built-in master planning in other legal entities.
+This setting applies to all legal entities (companies). It is not possible to use Planning Optimization in some legal entities and the deprecated master planning engine in other legal entities.
 
 > [!NOTE]
-> If existing planning batch jobs that were created for the built-in Supply Chain Management planning engine are triggered while the **Use Planning Optimization** option is set to **Yes**, those jobs will fail.
+> If existing planning batch jobs that were created for the deprecated master planning engine are triggered while the **Use Planning Optimization** option is set to **Yes**, those jobs will fail.
 
 ### Integration with the setup
 
 If the Planning Optimization is turned on, master planning is done by using the Planning Optimization Add-in. In this case, master planning results and features are affected.
 
-## Additional resources
-
-[Terms and conditions for the preview](https://go.microsoft.com/fwlink/?linkid=2015274)
-
-[Planning Optimization overview](planning-optimization-overview.md)
-
-[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
-
-[View plan history and planning logs](plan-history-logs.md)
-
-[Apply filters to a plan](plan-filters.md)
-
-[Cancel a planning job](cancel-planning-job.md)
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

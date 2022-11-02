@@ -163,13 +163,13 @@ When you run a master plan that is set up to use *None* as the reduction method,
 
 You now edit the planned purchase order that was created after the last planning run, and change the quantity to *15 ea*. You then approve the order. The next time that you run the master plan, it will create a planned purchase order for vendor *US-101*, site *1*, warehouse *11*, a quantity of *10 ea*, and the date *10/10/22*. This time, the quantity will be reduced to reflect the quantity of the existing approved order from the previous planning run.
 
-## Differences between Planning Optimization and the built-in planning engine
+## Differences between Planning Optimization and the deprecated master planning engine
 
-Supply forecasts work slightly differently, depending on the planning engine that you're using (built-in master planning or Planning Optimization). This section describes the differences.
+Supply forecasts work slightly differently, depending on the planning engine that you're using (Planning Optimization or the deprecated master planning engine). This section describes the differences.
 
 ### Vendor groups
 
-When you add a forecasted line, you can specify a vendor and a vendor group. In the built-in planning engine, planned orders that are created are grouped by the combination of the vendor and vendor group values. In Planning Optimization, planned orders are grouped by vendor.
+When you add a forecasted line, you can specify a vendor and a vendor group. In the deprecated master planning engine, planned orders that are created are grouped by the combination of the vendor and vendor group values. In Planning Optimization, planned orders are grouped by vendor.
 
 The following table provides some examples of supply forecast lines for an item.
 
@@ -181,7 +181,7 @@ The following table provides some examples of supply forecast lines for an item.
 
 Vendor *VendorA* is the default vendor for vendor group *VendorGroupA*. It's also the default vendor for the item.
 
-The built-in planning engine will create the following orders:
+The deprecated master planning engine will create the following orders:
 
 - A planned purchase order for vendor *VendorA*, vendor group *VendorGroupA*, and a quantity of *11*
 - A planned purchase order for vendor *VendorA* and a quantity of *7*
@@ -192,7 +192,7 @@ Planning Optimization will create just one order:
 
 ### Reduction of general forecasts by more specific forecasts
 
-In the built-in master planning engine, the result is unpredictable if some forecasts have a vendor but others don't.
+In the deprecated master planning engine, the result is unpredictable if some forecasts have a vendor but others don't.
 
 In Planning Optimization, general forecasts are always reduced by more specific forecasts, as the following example shows.
 
@@ -213,15 +213,15 @@ The general forecast (for 15.00 pieces) is reduced by the more specific forecast
 
 ### Respect for default order settings when planned orders are generated
 
-Each item can have default order settings, such as a minimum purchase order quantity. The built-in planning engine ignores these settings, and therefore translates forecasts into planned orders that have the same quantity. Planning Optimization respects these settings when planned orders are generated from supply forecasts. 
+Each item can have default order settings, such as a minimum purchase order quantity. The deprecated master planning engine ignores these settings, and therefore translates forecasts into planned orders that have the same quantity. Planning Optimization respects these settings when planned orders are generated from supply forecasts. 
 
 ### Aggregation of planned orders as a result of reduction by approved orders
 
-The built-in master planning engine assumes that only one order will reduce the existing supply forecast. Therefore, if several orders match a supply forecast line, only the first order will reduce it. In Planning Optimization, all orders that match the supply forecast line will reduce it.
+The deprecated master planning engine assumes that only one order will reduce the existing supply forecast. Therefore, if several orders match a supply forecast line, only the first order will reduce it. In Planning Optimization, all orders that match the supply forecast line will reduce it.
 
 ### Reduction of forecasts by matching vendors only
 
-When the built-in master planning engine reduces a forecast by existing released purchase orders, it doesn't ensure that the vendor on the purchase order matches the vendor from the forecast. Planning Optimization reduces forecasts only by purchase orders that have a matching value in the vendor field.
+When the deprecated master planning engine reduces a forecast by existing released purchase orders, it doesn't ensure that the vendor on the purchase order matches the vendor from the forecast. Planning Optimization reduces forecasts only by purchase orders that have a matching value in the vendor field.
 
 For transfer and production orders, the vendor field is always ignored, because it isn't relevant for those order types.
 
@@ -229,4 +229,4 @@ For transfer and production orders, the vendor field is always ignored, because 
 
 If the default order type for an item is *Transfer*, forecasts can be reduced only by existing planned transfer orders. However, for production orders and purchase orders, only released orders reduce the supply forecast.
 
-The built-in planning engine reduces for all transfer order states, whereas Planning Optimization reduces forecasts only by transfer orders that are in the *Released* state.
+The deprecated master planning engine reduces for all transfer order states, whereas Planning Optimization reduces forecasts only by transfer orders that are in the *Released* state.

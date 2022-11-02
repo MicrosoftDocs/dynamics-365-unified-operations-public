@@ -1825,8 +1825,6 @@
           href: master-planning/planning-optimization/purchase-trade-agreement.md
         - name: Plan based on quotations and RFQs
           href: master-planning/planning-optimization/quotation-planning.md
-        - name: Date and time parameters used by Planning Optimization
-          href: master-planning/planning-optimization/date-time-used.md
         - name: Safety margins
           href: master-planning/planning-optimization/safety-margins.md
         - name: Delay tolerance (negative days)
@@ -1843,7 +1841,7 @@
           href: master-planning/planning-optimization/finite-capacity.md
         - name: Scheduling with resource selection based on capability
           href: master-planning/planning-optimization/capability-based-scheduling.md
-        - name: Inventory marking with Planning Optimization
+        - name: Inventory marking
           href: master-planning/planning-optimization/marking.md
         - name: Intercompany planning
           href: master-planning/planning-optimization/Intercompany-planning.md
@@ -1851,7 +1849,7 @@
           href: master-planning/planning-optimization/product-lifecycle-state.md
         - name: Coverage time fences
           href: master-planning/planning-optimization/coverage-time-fence.md
-        - name: Net requirements and pegging information with Planning Optimization
+        - name: Net requirements and pegging information
           href: master-planning/planning-optimization/net-requirements.md
         - name: Planning with negative on-hand quantities
           href: master-planning/planning-optimization/negative-on-hand.md 
@@ -1873,6 +1871,8 @@
           href: master-planning/planning-optimization/plan-history-logs.md
         - name: Resolve the "Not enough capacity could be found" scheduling engine error
           href: master-planning/not-enough-capacity-error-resolution.md
+        - name: Date and time parameters used by Planning Optimization
+          href: master-planning/planning-optimization/date-time-used.md
       - name: Safety stock
         items:
         - name: Safety stock overview
@@ -1949,7 +1949,7 @@
             href: master-planning/new-master-planning-engine.md
           - name: Parameters not used by Planning Optimization
             href: master-planning/planning-optimization/not-used-parameters.md
-          - name: Differences between built-in master planning and Planning Optimization
+          - name: Differences between Planning Optimization and the deprecated master planning engine
             href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
           - name: Planning Optimization fit analysis
             href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
@@ -1963,11 +1963,11 @@
             href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
           - name: Monitor a master planning run
             href: master-planning/tasks/monitor-master-planning-run.md
-          - name: Net requirements and pegging information with built-in master planning
+          - name: Net requirements and pegging information with the deprecated planning engine
             href: master-planning/net-requirements-built-in-master-planning.md
           - name: Create a material plan for co-products
             href: master-planning/tasks/create-material-plan-co-products.md
-          - name: Cancel a master planning job
+          - name: Cancel a job that was created using the deprecated master planning engine
             href: master-planning/cancel-master-planning-job.md
     - name: Mobile app
       items:
