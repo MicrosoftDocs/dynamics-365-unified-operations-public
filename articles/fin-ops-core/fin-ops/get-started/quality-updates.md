@@ -23,6 +23,17 @@ Over the last several years, Microsoft has made continuous progress on what we r
 
 This premise is confirmed by the results: lower incident counts across our products. When customers aren't on the same version, we consistently see that they are affected by issues that a solution is already available for. We've already made great progress with Dynamics 365 Finance, Dynamics 365 Supply Chain, Dynamics 365 Project Operations, and Dynamics 365 Commerce, and thanks to recent technical advances, it's now possible to take the next step. The following information lays out what we're going to do, what we've already done to set the stage, and how and when we will introduce the new capabilities without disruption.
 
+## What you need to know
+
+- Microsoft will apply proactive quality updates on a monthly basis to any sandbox or production environments running a service update that is [in service](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change)
+- FDA-regulated and sovereign and government cloud customers will not receive proactive quality updates while Microsoft works on the related details
+- Notifications related to proactive quality updates are posted in the [Microsoft 365 Message Center](https://admin.microsoft.com/AdminPortal/)
+- Customers are notified that a proactive quality update will be applied to an environment 5 days before the update will take place
+- Customers can't cancel or postpone proactive quality updates
+- Proactive quality updates are installed during the region-specific [planned maintenance window](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows)
+- Quality updates are engineered to have a low risk of issues or regressions and this is supported by the Microsoft data
+- Microsoft does not require end-to-end solution testing for quality updates, but targeted testing for a specific issue or a specific hot fix is a best practice
+
 ## Focus on quality updates
 
 We currently provide seven [service updates](public-preview-releases.md) per year. For example, version 10.0.29 is a service update. Until recently, there were eight updates per year. However, we dropped one update in response to customer feedback that revealed a desire to avoid changes near the end of the calendar year.
@@ -98,7 +109,7 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 5 | DoD, Government Community Cloud, China | Not Scheduled | Not Scheduled |
 
 > [!IMPORTANT] 
-> Five days in advance, Microsoft will update the preceding schedule and send email notifications to the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
+> Five days in advance, Microsoft will update the preceding schedule and send a notification for the set of environments that are scheduled to receive these quality updates. The preceding schedule is applicable only to environments that have been notified about an upcoming update. For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 >
 > For each region group, or *station*, where a quality update is currently scheduled to be rolled out, the schedule shows a range of four days. Quality updates will start with only sandbox environments. Then, as the percentage of successfully deployed sandboxes increases, deployment to production environments will begin with advance notifications to customers.
 > 
