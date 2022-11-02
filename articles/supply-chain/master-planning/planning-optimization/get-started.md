@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Get started with Planning Optimization
-description: This article explains how to start to use the Planning Optimization functionality. 
+title: Get started with master planning
+description: This article explains how to start to use master planning functionality in Dynamics 365 Supply Chain Management. 
 author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.5
 
 [!include [banner](../../includes/banner.md)]
 
-Master planning in Supply Chain Management is provided by an external service called the Planning Optimiation Add-in for Dyamics 365 Supply Chain Management. This topic explains how to obtain and set up that service.
+Master planning in Supply Chain Management is provided by an external service called the Planning Optimization Add-in for Dynamics 365 Supply Chain Management. This topic explains how to obtain and set up that service.
 
 ## Availability
 
