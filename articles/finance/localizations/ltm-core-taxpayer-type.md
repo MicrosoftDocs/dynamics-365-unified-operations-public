@@ -1,6 +1,6 @@
 ---
-title: LATAM Taxpayer type 
-description: This topic provides information about the taxpayer type configuration for LATAM. 
+title: Taxpayer types for Latin America 
+description: This topic provides information about the taxpayer type configuration for Latin America. 
 author: Fhernandez0088
 ms.date: 10/27/2022
 ms.topic: Article
@@ -9,15 +9,13 @@ ms.author: v-federicohe
 ms.custom: bap-template
 ---
 
-# LATAM Taxpayer type
+# Taxpayer types for Latin America 
 
-## **Overview**
-
-This form allows to create any type of tax responsible entity with which the company operates (customers, vendors, employees, and even the company itself).
+You can set up a type of tax responsible entity with which the company operates. Entities can include customers, vendors, employees, or even the company itself.
 To make the corresponding settings enter go to: **Organization administration > Setup > LATAM > Taxpayer type**.
  
  
-## **General panel**
+## General panel
 
 To modify an existing taxpayer type access the browser list and select or create a new register.
 
@@ -27,7 +25,7 @@ The fields to complete are:
 
 **Description:** this field should be completed manually, extending in a detail the taxpayer type that is being created.
 
-## **Settings panel**
+## Settings panel
 
 | Field                                   | Description                                                                                                                                                                                                                                  |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -63,7 +61,7 @@ The options are as follows:
 
   - **Mandatory country of residence/Mandatory registered jurisdiction/Mandatory country identification number/Mandatory state identification number:** can be enabled or disabled according to the configuration desired.
 
-## **Document types panel**
+## Document types panel
 
 In this panel, the tax ID types created in the master record will be linked with the taxpayer type.
 
@@ -100,7 +98,7 @@ You can use Tax application option to add the codification provided by the fisca
 5.	In the Tax application code field, type a value.
 6.	Click Save.
 
-## Prerequisites:
+## Prerequisites
 
 - Tax ID type configured
 - Document class letter configured
