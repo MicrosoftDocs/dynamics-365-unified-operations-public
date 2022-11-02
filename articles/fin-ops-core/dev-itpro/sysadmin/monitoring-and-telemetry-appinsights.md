@@ -57,6 +57,7 @@ Application insights provides different views of the telemetry data it has colle
 
 [![Application insights overview.](./media/AppInsights/overview.png)](./media/AppInsights/overview.png)
 
+
 The list can be filtered to the telemetry types of your choosing, and these views can be saved on to Azure dashboards.
  
 ## Performance panel in Application insights
@@ -71,8 +72,9 @@ The exceptions table in Application insights powers the **Failures** panel. All 
  
 In the telemetry properties, you can identify if a failure originated in **Interactive** or **Batch**, by which user, and from which legal entity. The exception can also be logged as a bug in Azure DevOps or GitHub using standard integrations from Azure Application Insights. Exceptions can also be logged to a bug in your bug tracking system of choice.
 
-<img src="media/AppInsights/Exceptions.png" width="600px" />
-<br/>
+
+[![Application insights exceptions.](./media/AppInsights/Exceptions.png)](./media/AppInsights/Exceptions.png)
+
 
 More information: [Find and diagnose run-time exceptions with Azure Application Insights](/azure/azure-monitor/learn/tutorial-runtime-exceptions)
 
