@@ -12,7 +12,7 @@ ms.custom:
 
 # Geo-to-geo migrations
 
-Microsoft continues to open datacenters for business service in both existing regions and new regions. The Geo migration feature lets you move your Finance and Operations environments that are in a single tenant from one geography (or geo) to another. No changes to the user interface or version occur as part of the move.
+Microsoft continues to open datacenters for business service in both existing regions and new regions. The Geo migration feature lets you move your finance and operations environments that are in a single tenant from one geography (or geo) to another. No changes to the user interface or version occur as part of the move. 
 
 If your tenant resides in a Microsoft 365 environment in a single tenant, when you move your environment, the Microsoft 365 environment isn't moved. Your environment and the Microsoft 365 environment are separate services. Your environment will still appear alongside the Microsoft 365 environment in your tenant.
 
