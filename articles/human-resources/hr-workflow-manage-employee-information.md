@@ -29,7 +29,6 @@ ms.dyn365.ops.version: Version 1611
 
 # Use workflows to manage employee information
 
-
 [!INCLUDE [PEAP](../includes/peap-1.md)]
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
@@ -65,7 +64,7 @@ If submitting a purchase request for a new computer, a workflow could be configu
 
 ## Configurable hierarchy example 
 
-If a position is associated with a matrix reporting hierarchy, you might configure a workflow that routes expenses for a specific project to the project lead instead of the manager of the employee. Using the same steps as above, the assignment type would be set to hierarchy. In this example, select **Configurable** hierarchy. Once the workflow is setup, select **Associate** hierarchy on the **Workflow setup** page to select the hierarchy that should be used for the workflow routing.
+If a position is associated with a matrix reporting hierarchy, you might configure a workflow that routes expenses for a specific project to the project lead instead of the manager of the employee. Using the same steps as above, the **Assignment type** would be set to **Hierarchy**. In this example, select **Configurable** hierarchy. Once the workflow is set up, select **Associate** hierarchy on the **Workflow setup** page to select the hierarchy that should be used for the workflow routing.
 
 >[!Important] 
 >When submitting a document, transaction or master record for workflow approval, the submitter’s primary position will be used when determining who the document should be routed to next.  
@@ -79,7 +78,7 @@ On the **Workflow parameters** page, follow these steps:
 
 ## Example with the option off and on:
 
-Employee Grace Sturman has two positions; Consultant and Trainer. Graces’s primary position is trainer. However, when she is not training new employees, she’s available for some consulting work. Grace reports to Claire the director of human resources via her primary position. Claire reports to Charlie. For her consulting position, she has multiple dotted line relationships, depending on the project.
+Employee Grace Sturman has two positions; Consultant and Trainer. Graces’s primary position is trainer. However, when she's not training new employees, she’s available for some consulting work. Grace reports to Claire, the director of human resources via her primary position. Claire reports to Charlie. For her consulting position, she has multiple dotted line relationships, depending on the project.
 
 Grace’s company creates workflow routing rules based on a **Configurable** hierarchy (matrix/project based hierarchies) – which uses Grace’s consultant position. With the parameter **Off**, a document will be routed to Grace for her approval. The workflow will look at her primary position to see where the document should be routed next. In this instance, it would be routed to Claire, and then onto Charlie.
 
