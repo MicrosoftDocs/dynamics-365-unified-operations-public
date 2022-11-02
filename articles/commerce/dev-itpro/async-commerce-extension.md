@@ -2,7 +2,7 @@
 title: Create asynchronous Commerce (CRT) APIs in your business logic
 description: This article explains how to create Commerce (CRT) application programming interfaces (APIs) (that is, requests) that run asynchronously.
 author: josaw1
-ms.date: 03/16/2022
+ms.date: 11/02/2022
 ms.topic: article
 audience: Developer
 ms.reviewer: josaw
@@ -34,7 +34,7 @@ The following asynchronous classes and interfaces were added in the Commerce API
 | SingleAsyncRequestHandler | The base class for asynchronous handlers that support only one request. |
 | IRequestHandlerAsync      | The interface for the asynchronous request handler. |
 | IRequestTriggerAsync      | The interface for the request trigger. |
-| IController               | The base class for asynchronous extension Retail server controller class. Replaces the deprecated CommerceControllerAsync class. |
+| IController               | The base class for asynchronous extension Retail server controller class. Replaces CommerceControllerAsync class which was deprecated. |
 | DatabaseContext           | The base class for asynchronous database execution methods. |
 
 The following asynchronous methods were added in the Commerce API framework.
