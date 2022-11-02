@@ -4,7 +4,7 @@
 title: Use workflows to manage employee information
 description: This article explains how you can use workflows to manage employee information. 
 author: twheeloc
-ms.date: 11/03/2021
+ms.date: 11/03/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -53,7 +53,37 @@ The workflow capability for Human resources provides numerous workflows for mana
 When employees are hired, transferred, or terminated, the workflow can include a review process. In this way, a document can be revised, or the terms of an action can be defined as part of the workflow. When the review process is completed, the document or action is completed, and the workflow moves to a final approval step.
 
 ## Associate a workflow with a position hierarchy
-You can associate a workflow with any hierarchy that you configure. For example, if a position is associated with a matrix reporting hierarchy, you might configure a workflow that routes expenses for a specific project to the project lead instead of the manager of the employee who is associated with that position. To create a new workflow or modify an existing workflow, on the **Human resources workflow** page, select **New**. Select a workflow in the list to open the Workflow designer. You can use the designer to create a new workflow or change the steps in an existing workflow. When you change an existing workflow, your changes are saved as a new version. Therefore, you can always go back to a previous version if you have to.
+You can associate a workflow with any position hierarchy that you configure. There are two hierarchy types that are used for workflow routing: **Managerial** and **Configurable**.
+
+A **Managerial** hierarchy represents the reporting structure of the company or organization. For more information about this hierarchy type, go to [Positions](hr-personnel-positions.md#reports-to-position).
+
+A **Configurable** hierarchy represents a matrix or custom hierarchy. For more information about this hierarchy type, see [Positions]((hr-personnel-positions.md#relationships). 
+
+## Managerial hierarchy example 
+
+If submitting a purchase request for a new computer, a workflow could be configured that routes an employee’s purchase request to their manager, and their skip level manager. When configuring the **Assignment type** of the workflow step, select **Hierarchy**. Once the **Assignment type** is set to **Hierarchy**, the **Hierarchy type** tab is available. For this example, select **Managerial** hierarchy.
+
+## Configurable hierarchy example 
+
+If a position is associated with a matrix reporting hierarchy, you might configure a workflow that routes expenses for a specific project to the project lead instead of the manager of the employee. Using the same steps as above, the assignment type would be set to hierarchy. In this example, select **Configurable** hierarchy. Once the workflow is setup, select **Associate** hierarchy on the **Workflow setup** page to select the hierarchy that should be used for the workflow routing.
+
+>[!Important] 
+>When submitting a document, transaction or master record for workflow approval, the submitter’s primary position will be used when determining who the document should be routed to next.  
+
+## Hierarchy setting in Workflow parameters
+
+On the **Workflow parameters** page, follow these steps:
+1. Go to **Hierarchy routing**. 
+2. The option **Use position hierarchy** defaults as **No**. 
+3. When this option is set to **Yes**, the workflow will use the positions parent when navigating the hierarchy instead of using the primary position of the worker.
+
+## Example with the option off and on:
+
+Employee Grace Sturman has two positions; Consultant and Trainer. Graces’s primary position is trainer. However, when she is not training new employees, she’s available for some consulting work. Grace reports to Claire the director of human resources via her primary position. Claire reports to Charlie. For her consulting position, she has multiple dotted line relationships, depending on the project.
+
+Grace’s company creates workflow routing rules based on a **Configurable** hierarchy (matrix/project based hierarchies) – which uses Grace’s consultant position. With the parameter **Off**, a document will be routed to Grace for her approval. The workflow will look at her primary position to see where the document should be routed next. In this instance, it would be routed to Claire, and then onto Charlie.
+
+If the parameter is **On** and the workflow uses a configurable hierarchy, the workflow will look at Grace’s consulting position, and the reporting relationship, to determine who should receive the document next.
 
 ## Configure a Human resources workflow
 To configure a basic workflow that is started when employees request changes to their personal identification, follow these steps.
