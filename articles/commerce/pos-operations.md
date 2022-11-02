@@ -37,6 +37,7 @@ The following columns specify where the operations can be invoked:
 
 > [!NOTE]
 > The operations listed below apply to the latest version of Commerce. Some operations may have changed or may not be available in previous versions.
+> For additional details regarding offline features and configuration, refer to the [Commerce offline implementation and troubleshooting](dev-itpro/implementation-considerations-offline.md) article.
 
 | ID   | Operation                                         | Description                                                                                                                                                                                                    | User operations    | Transaction screen | Welcome screen | Available offline? | Locale-specific |
 | ---- | ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------------------ | -------------- | ----------------- | --------------- |

@@ -109,6 +109,7 @@ If the following table does not list an error that you are receiving, create a s
 - [Commerce Data Exchange implementation guidance](implementation-considerations-cdx.md)
 - [Commerce Data Exchange troubleshooting](CDX-Troubleshooting.md)
 - [Commerce Data Exchange best practices](CDX-Best-Practices.md)
+- [Online and offline point of sale (POS) operations](../pos-operations.md)
 - [Dynamics 365 Commerce architecture overview](../commerce-architecture.md)
 - [Select an in-store topology](retail-in-store-topology.md)
 - [Device management implementation guidance](../implementation-considerations-devices.md)
