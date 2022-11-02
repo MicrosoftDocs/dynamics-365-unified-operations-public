@@ -271,7 +271,7 @@ yarn msdyn365 packages
 yarn msdyn365 pack --preview
 ```
 
-This command creates a package with the latest available SDK preview version.
+This command creates a package with the latest SDK preview version, and is available with SDK version 1.41.10-preview.0 and later.
 
 ## update-versions
 
