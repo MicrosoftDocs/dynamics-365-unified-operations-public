@@ -2,7 +2,7 @@
 title: Inventory Visibility inventory allocation
 description: This article explains how to set up and use the inventory allocation feature, which lets you set aside dedicated inventory to ensure that you can fulfill your most profitable channels or customers.
 author: yufeihuang
-ms.date: 05/27/2022
+ms.date: 11/02/2022
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -21,7 +21,7 @@ ms.dyn365.ops.version: 10.0.27
 
 Organizations often need to preallocate their on-hand stock to their most important sales channels, customer groups, regions, and promotional events to ensure that the preallocated stocks are protected against any other usage and can only be consumed via sales transactions that are relevant to the allocation. Inventory allocation in Inventory Visibility is a component of the sales operational planning process, and is done before any actual sales activities occur or a sales order is created.
 
-For example, Contoso produces a very popular bike. Unfortunately, a recent supply chain disruption has affected all in-transit stocks of that bike, so Contoso only has limited on-hand stock and needs to make best use of that stock. Contoso operates both online and in-store sales. In each sales channel, the company has a few important corporate partners (marketplaces and large retailers) that demand that a specific portion of the bike's available inventory be saved for them. Therefore, the bicycle company must be able to balance stock distribution across channels and also manage the expectations of its VIP partners. The best way to achieve both goals is to use inventory allocation, so that each channel and retailer can receive specific allocated quantities that can be sold to consumers later.
+For example, a company called Contoso produces a very popular bike. Unfortunately, a recent supply chain disruption has affected all in-transit stocks of that bike, so Contoso only has limited on-hand stock and needs to make best use of that stock. Contoso operates both online and in-store sales. In each sales channel, the company has a few important corporate partners (marketplaces and large retailers) that demand that a specific portion of the bike's available inventory be saved for them. Therefore, the bicycle company must be able to balance stock distribution across channels and also manage the expectations of its VIP partners. The best way to achieve both goals is to use inventory allocation, so that each channel and retailer can receive specific allocated quantities that can be sold to consumers later.
 
 Inventory allocation has two basic business purposes:
 

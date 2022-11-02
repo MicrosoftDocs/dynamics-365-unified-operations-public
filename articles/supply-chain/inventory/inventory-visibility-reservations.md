@@ -17,15 +17,16 @@ ms.dyn365.ops.version: 10.0.21
 
 [!include [banner](../includes/banner.md)]
 
+This article describes a typical use case for soft reservations and explains how to set them up in Inventory Visibility, including how to create soft reservations, offset soft reservations upon physical consumption, and adjust or unreserve specified inventory quantities.
 
-This article describes the use case and how to set up the soft reservation feature in inventory visibility add-in (IV), including how to create soft reservations, offset soft reservations upon physical consumption, adjust and unreserve specified inventory quantities.
+## Sample use case for soft reservation
 
-## Sample Use Case for Soft Reservation
-Typical use case is to help organizations achieve single source of truth for available inventory via the central soft reservation in Inventory Visibility, especially during order fulfillment process.
+<!--KFM: Continue here -->
 
-It is applicable for orgainizations that fulfills both the below criteria
-1. With at least two different systems that are directly taking outbound orders. 
-1. Your organization is very strict and cares about double-booking on exactly the same set of product inventory. It can happen if the two or more systems are overbooking the last piecen of stock hence making instant soft reservation API call to inventory visibility directly from each order systems are key to achieve a source of truth for inventory availability.
+Soft reservations help organizations achieve a single source of truth for available inventory, especially during order fulfillment process. This functionality is useful for organizations that fulfill the following criteria:
+
+- At least two different systems that are directly taking outbound orders
+- Your organization is very strict and cares about double-booking on exactly the same set of product inventory. It can happen if the two or more systems are overbooking the last piecen of stock hence making instant soft reservation API call to inventory visibility directly from each order systems are key to achieve a source of truth for inventory availability.
 
 Otherwise you can simply leverage the [Inventory Adjustment via onhand change posting](TBD) feature that you can first query inventory availability, and make a separate inventory adjustment call to deduct the available inventory.
 
@@ -33,7 +34,7 @@ Otherwise you can simply leverage the [Inventory Adjustment via onhand change po
 This sample flow explains how soft reservation works
 
 - Your initial inventory level is synchronized to Inventory Visibility add-in from inventory management system Dynamics 365 SCM
-- Soft reservations are posted from each of your order channel/system to IV, IV will perform inventory availability validation and proceed soft reservation. Upon successful soft reservation, IV will add to soft reserved quantity, deduct available for reservation (AFR) quantity and also respond with a soft reservation ID.
+- Soft reservations are posted from each of your order channel/system to Inventory Visibility, Inventory Visibility will perform inventory availability validation and proceed soft reservation. Upon successful soft reservation, Inventory Visibility will add to soft reserved quantity, deduct available for reservation (AFR) quantity and also respond with a soft reservation ID.
 - At this time your physical inventory quantity remains the same
 - You can then synchronize either single or aggregated successfully soft reserved orders (order lines) into Dynamics 365 SCM to do hard reservation/release to warehouse or simply final inventory update. 
 - With proper configuration [Offset soft reservations](inventory-visibility-reservations.md#offset-reservations-in-supply-chain-management) the soft reservation can be offset upon physical inventory update in Dynamcis 365 SCM.
@@ -67,7 +68,7 @@ Refer to [Inventory Visibility Configuration](inventory-visibility-configuration
 >[!NOTE]
 >The reservation hierarchy describes the sequence of dimensions that must be specified when reservations are made. It works in the same way that the index hierarchy works for on-hand queries. But it is used independent to let users specify dimensions details to make more precise reservations.
 
->Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components, because they construct the partition configuration of IV.
+>Your soft reservation hierarchy should contain `SiteId` and `LocationId` as components, because they construct the partition configuration of Inventory Visibility.
 
 For more information about how to configure reservations, see [Reservation configuration](inventory-visibility-configuration.md#reservation-configuration).
 
@@ -83,7 +84,7 @@ Contoso sells procut D0002 (Cabinet) via their ecommerce website. A customer pla
 - product D0002
 - Colour = red, size=small
 
-They have already built API connection with Inventory Visibility add-in (IV) in their own ecommerce system, the API call to do soft reservation for this order is triggerd instantly to make sure 1 quantity of this Cabinet is reserved centrally in IV.
+They have already built API connection with Inventory Visibility in their own ecommerce system, the API call to do soft reservation for this order is triggerd instantly to make sure 1 quantity of this Cabinet is reserved centrally in Inventory Visibility.
 
 ### Create Soft Reservation via the reservation API
 

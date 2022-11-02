@@ -2,7 +2,7 @@
 title: Configure Inventory Visibility
 description: This article describes how to configure Inventory Visibility.
 author: yufeihuang
-ms.date: 05/27/2022
+ms.date: 11/02/2022
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -16,7 +16,6 @@ ms.dyn365.ops.version: 10.0.21
 # Configure Inventory Visibility
 
 [!include [banner](../includes/banner.md)]
-
 
 This article describes how to configure Inventory Visibility using the Inventory Visibility app in Power Apps.
 
@@ -462,7 +461,7 @@ In this case, the following calculation applies:
 Therefore, if you try to make reservations on `iv.SoftReservPhysical`, and the quantity is less than or equal to `AvailableToReserve` (10), the soft reservation request will succeed.
 
 > [!NOTE]
-> When you call the reservation API, you can control the reservation validation by specifying the Boolean `ifCheckAvailForReserv` parameter in the request body. A value of `True` means that the validation is required, whereas a value of `False` means that the validation isn't required and you may end up with a negative `AvailableToReserve` quantity but the system will still allow you to soft reserve. The default value is `True`.
+> When you call the reservation API, you can control the reservation validation by specifying the Boolean `ifCheckAvailForReserv` parameter in the request body. A value of `True` means that the validation is required, whereas a value of `False` means that the validation isn't required (you may end up with a negative `AvailableToReserve` quantity but the system will still allow you to soft reserve). The default value is `True`.
 
 ### Soft reservation hierarchy
 
@@ -493,35 +492,22 @@ A valid dimension sequence should strictly follow the reservation hierarchy, dim
 
 You can set up Inventory Visibility to let you schedule future on-hand changes and calculate available-to-promise (ATP) quantities. ATP is the quantity of an item that is available and can be promised to a customer in the next period. Use of this calculation can greatly increase your order fulfillment capability. To use this feature, you must enable it on the **Feature Management** tab and then set it up on the **ATP Setting** tab. For more information, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
 
-## <a name="preload-onhand-configuration"></a>Preload Onhand Index Query Configuration (optional)
-
-The Inventory Visibility service can periodically fetch and store a streamlined set of on-hand inventory data based on your configured dimensions to make that optimized information continuously available. 
-Please fllow the steps list in the web. Our current version only supports one set of dimension options. 
-
-- First, you have to clean up the storage in order to proceed to next step. We will only accept update on the preload setting when the preload storage is empty. 
-- Second, please choose the desired dimension options. 
-
-> [!NOTE]
-> when you have a large amount of data volumn in the preload storage entity, it is recommendaed to turn off the **OnHandIndexQueryPrelaod** feature first and then try to clean up the storage, since the cleanup process might take very long time to complete.
-> When you toggle the **OnHandIndexQueryPrelaod** feature to false, please select **Update Configuration** in the upper-right corner of the **Configuration** page in Power Apps to commit the change. 
-
-
 ## Complete and update the configuration
 
-After you've completed the configuration, you must commit all the changes to Inventory Visibility. To commit changes, select **Update Configuration** in the upper-right corner of the **Configuration** page in Power Apps.
+After you've completed the configuration, you must commit all the changes to Inventory Visibility. Follow these steps to commit your changes:
 
-Updating the new settings consists of two steps, which means you need to click the button twice to complete the update.
+1. Select **Update Configuration** in the upper-right corner of the **Configuration** page in Power Apps. 
+1. The system requests sign-in credentials. Enter the following values:
+    - **Client Id** – The Azure application ID that you created for Inventory Visibility.
+    - **Tenant Id** – Your Azure tenant ID.
+    - **Client Secret** – The Azure application secret that you created for Inventory Visibility.
 
-The first time that you select **Update Configuration**, the system requests your credentials.After logging in, you need to click the  **"Update Configuration"** again and the system will compare the settings changes and display the results. The instructions of credentials details are provided in [Install the Inventory Visibility Add-in](inventory-visibility-setup.md/#install-and-set-up-inventory-visibility) chapter. If you did not record the credentials, you can refer the link to request the IDs.
+    For more information about these credentials and how to find them, see [Install and set up Inventory Visibility](inventory-visibility-setup.md)
 
-- **Client Id** – The Azure application ID that you created for Inventory Visibility.
-- **Tenant Id** – Your Azure tenant ID.
-- **Client Secret** – The Azure application secret that you created for Inventory Visibility.
+    > [!IMPORTANT]
+    > Be sure to validate your data source name, physical measures, and dimension mappings before you update the configuration. You won't be able to modify these settings after you update it.
 
-After you sign in, the configuration is updated in the Inventory Visibility service.
-
-> [!NOTE]
-> Be sure to validate your data source name, physical measures, and dimension mappings before you update the configuration for the Inventory Visibility service. You won't be able to modify these settings after you select **Update Configuration**.
+1. After signing in, select the  **"Update Configuration"** again. The system then applies your settings and shows what has changed.
 
 ## <a name="default-configuration-sample"></a>Default configuration sample
 
@@ -807,6 +793,4 @@ The following table shows the default reservation hierarchy.
 | `ColorId` | 3 |
 | `SizeId` | 4 |
 
-
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
-
