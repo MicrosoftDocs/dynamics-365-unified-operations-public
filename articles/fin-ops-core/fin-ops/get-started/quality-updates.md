@@ -26,14 +26,15 @@ This premise is confirmed by the results: lower incident counts across our produ
 ## What you need to know
 
 - Proactive quality updates are applied on a monthly basis
-- Microsoft will apply proactive quality updates to any sandbox or production environments running a service update that was [in service](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) when the proactive quality update was created
-- FDA-regulated and sovereign and government cloud customers will not receive proactive quality updates while Microsoft works on the related details
-- Notifications related to proactive quality updates are posted in the [Microsoft 365 Message Center](https://admin.microsoft.com/AdminPortal/)
+- Microsoft will apply proactive quality updates to any sandbox environments running a service update that was [in service](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) when the proactive quality update was created
+- Exceptions for proactive quality updates will be allowed for FDA-regulated customers
+- Microsoft is working out how proactive quality updates will be managed for regulated environments and sovereign and government cloud customers
+- Notifications related to proactive quality updates are posted in the [Microsoft 365 Message Center](https://admin.microsoft.com/AdminPortal/) and on a banner in the customer's Lifecycle Services (LCS) project
 - Customers are notified that a proactive quality update will be applied to an environment 5 days before the update will take place
 - Customers can't cancel or postpone proactive quality updates
 - Proactive quality updates are installed during the region-specific [planned maintenance window](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows)
 - Quality updates are engineered to have a low risk of issues or regressions and this is supported by the Microsoft data
-- Microsoft does not require end-to-end solution testing for quality updates, but targeted testing for a specific issue or a specific hot fix is a best practice
+- Microsoft recommends targeted testing for specific issues or specific hot fixes related to a proactive quality update
 
 ## Focus on quality updates
 
@@ -65,7 +66,7 @@ A set of process changes is being implemented ahead of the activation of proacti
 
 - **Schema** – Tooling will ensure that quality update builds include only schema changes that can be applied while the service is online. This approach will help preserve the ability to apply the update with near-zero downtime.
 - **Increased change scrutiny** – Currently, there is already an extra process step to approve changes for inclusion in a quality update. The scrutiny in the extra step will be increased to help reduce the potential for regressions. Breaking changes aren't allowed in quality updates, and the increased change scrutiny will help ensure that we meet this target.
-- **Visibility** – We will send notifications through the admin center, Lifecycle Services (LCS) and other available channels for upcoming proactive quality updates. In addition, support teams and incident leads will have visibility into where quality updates have been proactively deployed.
+- **Visibility** – We will send notifications through the admin center, LCS and other available channels for upcoming proactive quality updates. In addition, support teams and incident leads will have visibility into where quality updates have been proactively deployed.
  > [!NOTE]
  > The Microsoft Communications team is investigating an ongoing degradation of the email tooling which is preventing the delivery of email notifications. Please continue to monitor the Microsoft 365 Message Center for onboarding and notification related messages.
 - **Fail Safe via flighting** – Flighting will be used to guard code changes wherever applicable in a quality update bug fix or use the existing feature flighting relevant to the fix. If a fallback or turning a change off change is required after a proactive deployment, it can be done through the flighting system to avoid further failures.
