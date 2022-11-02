@@ -54,8 +54,8 @@ Application Insights has a wide range of features to help you use this data:
 
 Application insights provides different views of the telemetry data it has collected. The **Transaction search** panel shows a detailed list of the various diagnostics and events from your finance and operations app and is a gateway to the other features of the portal. You can drill into each entry for more details. See the following sample.
 
-<img src="media/AppInsights/overview.png" width="600px" />
-<br/>
+
+[![Application insights overview.](./media/AppInsights/overview.png)](./media/AppInsights/overview.png)
 
 The list can be filtered to the telemetry types of your choosing, and these views can be saved on to Azure dashboards.
  
