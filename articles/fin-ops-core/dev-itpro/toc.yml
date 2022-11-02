@@ -334,12 +334,16 @@
             href: deployment/deployenvironment-newinfrastructure.md
           - name: Deployment FAQ
             href: deployment/deploymentFAQ.md
+          - name: Migrate an environment
+            href: deployment/geo-to-geo-migrations.md
           - name: Known issues with self-service deployment
             href: deployment/known-issues-new-deployment-experience.md
           - name: Maintenance operations for deployments
             href: deployment/maintenanceoperationsguide-newinfrastructure.md
           - name: Update an environment
             href: deployment/updateenvironment-newinfrastructure.md
+          - name: Migrate an environment
+            href: deployment/geo-to-geo-migrations.md
           - name: Troubleshoot environments deployed through self-service deployment
             href: deployment/troubleshoot-newinfrastructure.md
           - name: Planned maintenance in self-service environments FAQ
