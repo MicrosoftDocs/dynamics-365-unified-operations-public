@@ -1757,44 +1757,22 @@
         href: master-planning/planning-optimization/get-started.md
       - name: Master planning system architeceture
         href: master-planning/master-planning-architecture.md
-      - name: Set up master plans
+      - name: Master planning administration
         items:
-        - name: Master plans overview
-          href: master-planning/master-plans.md
-        - name: Set up master plans
-          href: master-planning/master-planning-setup.md
-        - name: Master planning setup wizard
-          href: master-planning/master-planning-setup-wizard.md
-        - name: Generate a constrained plan
-          href: master-planning/tasks/constrained-plan.md
-      - name: Set up replenishment strategies
-        items:
-        - name: Replenishment strategies overview
-          href: master-planning/replenishment-strategies-overview.md
-        - name: Coverage settings
-          href: master-planning/coverage-settings.md
-        - name: Define coverage rules for items
-          href: master-planning/tasks/define-coverage-rules-items.md
-        - name: Priority-based planning
-          href: master-planning/planning-optimization/priority-based-planning.md
-        - name: Replenishment methods and quantity modification
-          href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
-      - name: Master plans and multisite functionality
-        items:
-        - name: Master planning and multisite functionality overview
-          href: master-planning/master-plan-multisite-functionality.md
-        - name: Master planning for site coverage, mandatory warehouse
-          href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
-        - name: Master planning for site coverage, warehouse not mandatory
-          href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
-        - name: Master planning for site and warehouse coverage, warehouse mandatory
-          href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
-        - name: Master planning for site and warehouse coverage, warehouse not mandatory
-          href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
-        - name: Determine the BOM version
-          href: master-planning/master-plan-bom-version-determined.md
-        - name: Explosion of a BOM version
-          href: master-planning/master-plan-explosion-bom-version.md
+        - name: Planning Optimization release process and release history
+          href: master-planning/planning-optimization/release-process.md
+        - name: Troubleshoot Planning Optimization
+          href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+        - name: Resolve the "Not enough capacity could be found" scheduling engine error
+          href: master-planning/not-enough-capacity-error-resolution.md
+        - name: Cancel a planning job
+          href: master-planning/planning-optimization/cancel-planning-job.md
+        - name: Planning Optimization extensibility
+          href: master-planning/planning-optimization/extensibility.md
+        - name: View plan history and planning logs
+          href: master-planning/planning-optimization/plan-history-logs.md
+        - name: Date and time parameters used by Planning Optimization
+          href: master-planning/planning-optimization/date-time-used.md
       - name: Configure master planning
         items:
         - name: Master planning configuraton overview
@@ -1819,7 +1797,7 @@
           href: master-planning/planning-optimization/supply-forecast.md
         - name: Supply schedule
           href: master-planning/supply-schedule.md
-        - name: Apply filters to a plan
+        - name: Run planning for a subset of items
           href: master-planning/planning-optimization/plan-filters.md
         - name: Master planning with purchase trade agreements
           href: master-planning/planning-optimization/purchase-trade-agreement.md
@@ -1855,39 +1833,53 @@
           href: master-planning/planning-optimization/negative-on-hand.md 
         - name: Calculate sales order delivery dates using CTP
           href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
-      - name: Master planning administration
+      - name: Set up master plans
         items:
-        - name: Master planning administration overview
-          href: master-planning/planning-admin-overview.md
-        - name: Planning Optimization release process and release history
-          href: master-planning/planning-optimization/release-process.md
-        - name: Cancel a planning job
-          href: master-planning/planning-optimization/cancel-planning-job.md
-        - name: Troubleshoot Planning Optimization
-          href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
-        - name: Planning Optimization extensibility
-          href: master-planning/planning-optimization/extensibility.md
-        - name: View plan history and planning logs
-          href: master-planning/planning-optimization/plan-history-logs.md
-        - name: Resolve the "Not enough capacity could be found" scheduling engine error
-          href: master-planning/not-enough-capacity-error-resolution.md
-        - name: Date and time parameters used by Planning Optimization
-          href: master-planning/planning-optimization/date-time-used.md
+        - name: Master plans overview
+          href: master-planning/master-plans.md
+        - name: Set up master plans
+          href: master-planning/master-planning-setup.md
+        - name: Master planning setup wizard
+          href: master-planning/master-planning-setup-wizard.md
+        - name: Generate a constrained plan
+          href: master-planning/tasks/constrained-plan.md
+      - name: Set up replenishment strategies
+        items:
+        - name: Coverage settings
+          href: master-planning/coverage-settings.md
+        - name: Define coverage rules for items
+          href: master-planning/tasks/define-coverage-rules-items.md
+        - name: Priority-based planning
+          href: master-planning/planning-optimization/priority-based-planning.md
+        - name: Replenishment methods and quantity modification
+          href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
+      - name: Master plans and multisite functionality
+        items:
+        - name: Master planning and multisite functionality overview
+          href: master-planning/master-plan-multisite-functionality.md
+        - name: Master planning for site coverage, mandatory warehouse
+          href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
+        - name: Master planning for site coverage, warehouse not mandatory
+          href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
+        - name: Master planning for site and warehouse coverage, warehouse mandatory
+          href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
+        - name: Master planning for site and warehouse coverage, warehouse not mandatory
+          href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
+        - name: Determine the BOM version
+          href: master-planning/master-plan-bom-version-determined.md
+        - name: Explosion of a BOM version
+          href: master-planning/master-plan-explosion-bom-version.md
       - name: Safety stock
         items:
-        - name: Safety stock overview
-          href: master-planning/safety-stock-overview.md
         - name: Safety stock fulfillment for items
           href: master-planning/safety-stock-replenishment.md
         - name: Use the safety stock journal to update minimum coverage for items
           href: master-planning/safety-stock-journal.md
       - name: Manage planned orders
         items:
-        - name: Planned-order management overview
-          href: master-planning/manage-planned-orders-overview.md
         - name: Maintain planned orders
           href: master-planning/maintain-planned-orders.md
-        - name: Approve planned orders
+        - name: View, manage, and approve planned orders
           href: master-planning/planning-optimization/approved-planned-order.md
         - name: Firm planned orders
           href: master-planning/planning-optimization/planned-order-firming.md
@@ -1897,12 +1889,10 @@
           href: master-planning/action-messages.md
       - name: Forecasting
         items:
-        - name: Demand and supply forecasting
-          items:
-          - name: Inventory forecasts
-            href: master-planning/inventory-forecast.md
-          - name: "Guide: Modify a demand forecast manually"
-            href: master-planning/tasks/modify-demand-forecast-manually.md
+        - name: Inventory forecasts
+          href: master-planning/inventory-forecast.md
+        - name: "Guide: Modify a demand forecast manually"
+          href: master-planning/tasks/modify-demand-forecast-manually.md
         - name: Demand forecasting
           items:
           - name: Demand forecasting overview
@@ -1923,10 +1913,8 @@
             href: master-planning/monitor-forecast-accuracy.md
           - name: "Guide: Create a baseline forecast"
             href: master-planning/tasks/create-baseline-forecast.md
-        - name: Master planning with forecast
-          items:
-          - name: Forecast reduction keys
-            href: master-planning/reduction-keys.md
+        - name: Forecast reduction keys
+          href: master-planning/reduction-keys.md
       - name: Demand Driven Material Requirements Planning (DDMRP)
         items:
         - name: DDMRP overview
