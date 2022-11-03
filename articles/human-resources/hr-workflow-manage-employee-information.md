@@ -58,41 +58,41 @@ A **Managerial** hierarchy represents the reporting structure of the company or 
 
 A **Configurable** hierarchy represents a matrix or custom hierarchy. For more information about this hierarchy type, see [Positions]((hr-personnel-positions.md#relationships). 
 
-## Managerial hierarchy example 
+### Managerial hierarchy example 
 
 If submitting a purchase request for a new computer, a workflow could be configured that routes an employee’s purchase request to their manager, and their skip level manager. When configuring the **Assignment type** of the workflow step, select **Hierarchy**. Once the **Assignment type** is set to **Hierarchy**, the **Hierarchy type** tab is available. For this example, select **Managerial** hierarchy.
 
-## Configurable hierarchy example 
+### Configurable hierarchy example 
 
 If a position is associated with a matrix reporting hierarchy, you might configure a workflow that routes expenses for a specific project to the project lead instead of the manager of the employee. Using the same steps as above, the **Assignment type** would be set to **Hierarchy**. In this example, select **Configurable** hierarchy. Once the workflow is set up, select **Associate** hierarchy on the **Workflow setup** page to select the hierarchy that should be used for the workflow routing.
 
 >[!Important] 
 >When submitting a document, transaction or master record for workflow approval, the submitter’s primary position will be used when determining who the document should be routed to next.  
 
-## Hierarchy setting in Workflow parameters
+### Hierarchy setting in Workflow parameters
 
 On the **Workflow parameters** page, follow these steps:
 1. Go to **Hierarchy routing**. 
 2. The option **Use position hierarchy** defaults as **No**. 
 3. When this option is set to **Yes**, the workflow will use the positions parent when navigating the hierarchy instead of using the primary position of the worker.
 
-## Example with the option off and on:
+### Additional example 
 
-Employee Grace Sturman has two positions; Consultant and Trainer. Graces’s primary position is trainer. However, when she's not training new employees, she’s available for some consulting work. Grace reports to Claire, the director of human resources via her primary position. Claire reports to Charlie. For her consulting position, she has multiple dotted line relationships, depending on the project.
+Employee Grace Sturman has two positions: consultant and trainer. Graces’s primary position is trainer. However, when she's not training new employees, she’s available for some consulting work. Grace reports to Claire, the director of human resources via her primary position. Claire reports to Charlie. For her consulting position, she has multiple dotted line relationships, depending on the project.
 
 Grace’s company creates workflow routing rules based on a **Configurable** hierarchy (matrix/project based hierarchies) – which uses Grace’s consultant position. With the parameter **Off**, a document will be routed to Grace for her approval. The workflow will look at her primary position to see where the document should be routed next. In this instance, it would be routed to Claire, and then onto Charlie.
 
 If the parameter is **On** and the workflow uses a configurable hierarchy, the workflow will look at Grace’s consulting position, and the reporting relationship, to determine who should receive the document next.
 
-## Configure a Human resources workflow
+### Configure a Human resources workflow
 To configure a basic workflow that is started when employees request changes to their personal identification, follow these steps.
 
 1.  On the **Human resources workflows** page, select **New**.
 2.  In the list of available workflows, select **Identification numbers**.
 3.  Select **Run** to open the Workflow designer, and then enter your user name and password when you're prompted.
-4.  Drag the **Approve identification number** element from the list of workflow elements to the designer canvas.
+4.  Move the **Approve identification number** element from the list of workflow elements to the designer canvas.
 5.  Connect the approval element to **Start** and **Finish**.
-6.  Double-tap (or double-click) **Approve element**, select and hold (or right-click), and then select **Properties**.
+6.  Double-click **Approve element**, select and hold (or right-click), and then select **Properties**.
 7.  Follow these steps to add work item instructions:
 
     1.  Select **Assignment**, and then select **Hierarchy** under the assignment type.
@@ -105,7 +105,7 @@ To configure a basic workflow that is started when employees request changes to 
 11. Select **Matrix**.
 12. Add the **Worker identification number** workflow to the list.
 
-## Additional resources
+### Additional resources
 
 [View and manage address changes](hr-personnel-view-address-changes.md) 
 
