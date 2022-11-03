@@ -188,6 +188,6 @@ Dataverse is the unified data store that integrates the data from all your busin
 
 [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview)
 
-
+[Azure Cognitive Search](/azure/search/search-what-is-azure-search)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
