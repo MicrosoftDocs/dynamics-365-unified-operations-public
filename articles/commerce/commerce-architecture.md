@@ -53,7 +53,7 @@ Because of the accessible, persistent, up-to-date, and unified organizational da
 
 The prepackaged set of business and transactional analytical reports in Commerce provides retailers with intelligent insights across all points of the Commerce ecosystem by embedding high-charts and SSRS-based reports in Store commerce point of sale (POS) systems and Commerce headquarters. The commerce analytics solution provides a comprehensive set of out-of-the-box business and transactional reports, enabling retailers to take avantage of insights across all channels.
 
-The high-charts-based reports on POS are real-time, enabling store associates to analyze their channel's transactional and other POS activities at the conclusion of a transaction. This contrasts with the out-of-the-box reports in Commerce headquarters, which enable retailers to view analytical reports for transactional activity across all channels, once the data is synced. Commerce headquarters reports are specifically designed for channel managers who focus on sales performance to predict trends and uncover insights, allowing them to drill down in reports about organization-wide sales performance across global geography by employee, category, product, terminal, channel, and more.
+The highcharts-based reports on POS are real-time, enabling store associates to analyze their channel's transactional and other POS activities at the conclusion of a transaction. This contrasts with the out-of-the-box reports in Commerce headquarters, which enable retailers to view analytical reports for transactional activity across all channels, once the data is synced. Commerce headquarters reports are specifically designed for channel managers who focus on sales performance to predict trends and uncover insights, allowing them to drill down in reports about organization-wide sales performance across global geography by employee, category, product, terminal, channel, and more.
 
 ## Component overview
 
@@ -172,7 +172,7 @@ Dataverse is the unified data store that integrates the data from all your busin
 
 [Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-introduction)
 
-[Dataverse](https://powerplatform.microsoft.com/dataverse/)
+[Microsoft Dataverse](https://powerplatform.microsoft.com/dataverse/)
 
 [Modern POS (MPOS) architecture](./dev-itpro/retail-modern-pos-architecture.md)
 
@@ -188,7 +188,6 @@ Dataverse is the unified data store that integrates the data from all your busin
 
 [Dynamics 365 Customer Insights](/dynamics365/ai/customer-insights/overview)
 
-[Microsoft Bing for Commerce](https://www.microsoft.com/bing/commerce)
 
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
