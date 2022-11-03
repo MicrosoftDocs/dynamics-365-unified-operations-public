@@ -17,8 +17,6 @@ ms.dyn365.ops.version: 10.0.13
 
 [!include [banner](../../includes/banner.md)]
 
-Planning Optimizations supports several production scenarios. If you're migrating from the existing, built-in master planning engine, it's important to be aware of some changed behavior.
-
 The following video gives a short introduction to some of the concepts discussed in this article: [Dynamics 365 Supply Chain Management: Planning Optimization enhancements](https://youtu.be/u1pcmZuZBTw).
 
 ## Turn this feature on or off for your system
@@ -41,10 +39,6 @@ Planned production orders include the route ID that is required for production s
 
 - **Planned production order** – The lead time is based on the static lead time from the released product.
 - **Firmed production order** – The lead time is based on scheduling that uses route information and related resource constraints.
-
-For more information about expected feature availability, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
-
-If you depend on production functionality that isn't yet available for Planning Optimization, you can continue to use the built-in master planning engine. No exception is required.
 
 ## Delays
 
@@ -71,15 +65,15 @@ You can use the **Explosion** page to analyze the demand that is required for a 
 
 ## <a name="filters"></a>Filters
 
-To ensure that Planning Optimization has the information that it needs to calculate the correct result, you must include all products that have any relation to products in the whole BOM structure of the planned order. For planning scenarios that include production, we therefore recommend that you avoid filtered master planning runs.
+To ensure that master planning has the information that it needs to calculate the correct result, you must include all products that have any relation to products in the whole BOM structure of the planned order. For planning scenarios that include production, we therefore recommend that you avoid filtered master planning runs.
 
-Although dependent child items are automatically detected and included in master planning runs when the built-in master planning engine is used, Planning Optimization doesn't currently perform this action.
+Although dependent child items are automatically detected and included in master planning runs when the deprecated master planning engine is used, Planning Optimization doesn't currently perform this action.
 
 For example, if a single bolt from the BOM structure of product A is also used to produce product B, all products in the BOM structure of products A and B must be included in the filter. Because it can be complex to ensure that all products are part of the filter, we recommend that you avoid filtered master planning runs when production orders are involved. Otherwise, master planning will provide undesired results.
 
 ### Reasons to avoid filtered master planning runs
 
-When you run filtered master planning for a product, Planning Optimization (unlike the built-in master planning engine) doesn't detect all the subproducts and raw materials in the BOM structure of that product, and therefore doesn't include them in the master planning run. Even though Planning Optimization identifies the first level in the BOM structure of the product, it doesn't load any product settings (such as the default order type or item coverage) from the database.
+When you run filtered master planning for a product, Planning Optimization (unlike the deprecated master planning engine) doesn't detect all the subproducts and raw materials in the BOM structure of that product, and therefore doesn't include them in the master planning run. Even though Planning Optimization identifies the first level in the BOM structure of the product, it doesn't load any product settings (such as the default order type or item coverage) from the database.
 
 In Planning Optimization, data for the run is loaded beforehand and applies the filters. This means that if a subproduct or raw material included in a specific product isn't part of the filter, information about it won't be captured for the run. Additionally, if the subproduct or raw material is also included in another product, then a filtered run that includes only the original product and its components would remove existing planned demand that was created for that other product.
 

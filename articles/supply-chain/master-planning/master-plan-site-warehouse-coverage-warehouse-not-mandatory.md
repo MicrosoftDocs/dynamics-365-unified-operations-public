@@ -51,15 +51,11 @@ The following graphic illustrates how master planning proceeds. The parameters t
 
 ## Additional resources
 
-[Master planning and multisite functionality overview](master-plan-multisite-functionality.md)
-
-[Master planning for site coverage, mandatory warehouse](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-
-[Master planning for site and warehouse coverage, warehouse mandatory](master-plan-site-coverage-warehouse-mandatory.md)
-
-[Master planning for site and warehouse coverage, warehouse not mandatory](master-plan-site-coverage-warehouse-not-mandatory.md)
-
-[Determine the BOM version](master-plan-bom-version-determined.md)
+- [Master planning and multisite functionality overview](master-plan-multisite-functionality.md)
+- [Master planning for site coverage, mandatory warehouse](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+- [Master planning for site and warehouse coverage, warehouse mandatory](master-plan-site-coverage-warehouse-mandatory.md)
+- [Master planning for site and warehouse coverage, warehouse not mandatory](master-plan-site-coverage-warehouse-not-mandatory.md)
+- [Determine the BOM version](master-plan-bom-version-determined.md)
 
 
 

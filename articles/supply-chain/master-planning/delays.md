@@ -58,7 +58,7 @@ On the **Planned order** page, under the **Delays** tab is the **Desired date** 
 
 ## Additional resources
 
-[Coverage settings](coverage-settings.md)
+- [Coverage settings](coverage-settings.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

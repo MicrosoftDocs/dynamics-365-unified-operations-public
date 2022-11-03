@@ -39,6 +39,6 @@ DDMRP is typically used by manufacturers that have a multi-level bill of materia
 
 ## DDMRP in Dynamics 365 Supply Chain Management
 
-DDMRP is included with Microsoft Dynamics 365 Supply Chain Management and requires no additional license fees. In Supply Chain Management, DDMRP functionality has been added to the existing **Master planning** module. However, it requires that you use the Planning Optimization Add-in. 
+DDMRP is included with Microsoft Dynamics 365 Supply Chain Management and requires no additional license fees. In Supply Chain Management, DDMRP functionality has been added to the existing **Master planning** module. However, it requires that you use the Planning Optimization Add-in.
 
 DDMRP is integrated with the existing planning setups in Supply Chain Management and is used together with those setups to arrive at the correct planning configuration for your business. It's controlled by a new coverage code that is completely different from period, min/max, requirement, and so on. It isn't a new module, and it doesn't replace existing planning functionality. However, it does give you more functionality to use.

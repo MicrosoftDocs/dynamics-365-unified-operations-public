@@ -2,7 +2,7 @@
 # required metadata
 
 title: Coverage time fences
-description: This article describes how to set up coverage time fences when you're using Planning Optimization. A coverage time fence indicates your planning horizon and limit.
+description: This article describes how to set up coverage time fences. A coverage time fence indicates your planning horizon and limit.
 author: t-benebo
 ms.date: 01/18/2021
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: 10.0.17
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how to set up *coverage time fences* when you're using Planning Optimization. Planners can define the planning horizon (the coverage time fence in days), and exclude supply and demand that falls beyond that horizon. Therefore, coverage time fences help prevent "noise" that is caused by supply suggestions that you don't have to react to for months. Examples include next year's forecast and customer orders that are placed far beyond the normal lead time.
+This article describes how to set up *coverage time fences*. Planners can define the planning horizon (the coverage time fence in days), and exclude supply and demand that falls beyond that horizon. Therefore, coverage time fences help prevent "noise" that is caused by supply suggestions that you don't have to react to for months. Examples include next year's forecast and customer orders that are placed far beyond the normal lead time.
 
 A coverage time fence is the number of days after today's date (or, more precisely, the date when you do the planning run) that supply and demand is excluded. To help avoid delays, you must ensure that the coverage time fence is longer that the total lead time. The default system value is 100 days.
 
@@ -85,9 +85,9 @@ As you're setting up coverage time fences, consider the following points:
 - Requirement transactions won't be generated for any supply and demand that falls outside the coverage time fence.
 - If any approved supply and demand falls outside the coverage time fence, it won't be loaded into the engine. Therefore, it won't trigger any replenishment, and delays won't be calculated. Nevertheless, this supply and demand should not be wiped from the system.
 - Variations in safety stock quantities (from minimum keys) will be ignored if they fall outside the coverage time fence.
-- Intercompany demand will be ignored if the requested ship date that is calculated isn't inside the coverage time fence. Note that, for built-in master planning, intercompany demand isn't limited by the coverage time fence.
-- Demand forecasts will be ignored if the budget date isn't inside the coverage time fence. Note that, for built-in master planning, demand forecasts aren't limited by the coverage time fence.
-- Planning Optimization is time zone–aware. It considers the time zone at the supply and demand sites, and the time of the planning run. For example, master planning is triggered at 11 AM on October 15 from a site in Denmark (GMT+1 time zone), and a coverage time fence of ten days is used. In this case, supply and demand from a site in Seattle (GMT-8 time zone) is included until 2 AM on October 25 (= ten 24-hour days after master planning was triggered, minus the time zone difference of nine hours). Note that the built-in master planning engine considers only the date of the time fence. Therefore, the result can differ.
+- Intercompany demand will be ignored if the requested ship date that is calculated isn't inside the coverage time fence. Note that, for the deprecated master planning engine, intercompany demand isn't limited by the coverage time fence.
+- Demand forecasts will be ignored if the budget date isn't inside the coverage time fence. Note that, for the deprecated master planning engine, demand forecasts aren't limited by the coverage time fence.
+- Planning Optimization is time zone–aware. It considers the time zone at the supply and demand sites, and the time of the planning run. For example, master planning is triggered at 11 AM on October 15 from a site in Denmark (GMT+1 time zone), and a coverage time fence of ten days is used. In this case, supply and demand from a site in Seattle (GMT-8 time zone) is included until 2 AM on October 25 (= ten 24-hour days after master planning was triggered, minus the time zone difference of nine hours). Note that the deprecated master planning engine considers only the date of the time fence. Therefore, the result can differ.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
