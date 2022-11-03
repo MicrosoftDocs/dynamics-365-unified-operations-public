@@ -29,7 +29,7 @@ ms.dyn365.ops.version: Platform update 8
 
 [!include [banner](../includes/banner.md)]
 
-You may want to secure the Dynamics 365 Finance + Operations (on-premises) environment behind a proxy. Proxy is a server that hides the actual servers that are serving traffic from the clients. The proxy server accepts requests from the clients on behalf of the environment and forwards the traffic to it. The clients are not aware of the actual servers that compose the environment. This adds another measure of security and enables load balancing. 
+Some organizations require that all server traffic goes through a proxy server for tracking or packet inspection. This section describes how we recommend configuring your environment in these cases.
 
 ## Configure the proxy
 
@@ -59,7 +59,9 @@ The above procedure must be performed for all Orchestrator node VMs.
 
 ## Safe list URLs
 
-The LocalAgent needs to communicate with Azure resources. As a result, the following URLs should be added to a safe list on the proxy or firewalls so that all **OrchestratorType** nodes can access them:
+The LocalAgent needs to communicate with Azure resources and Microsoft Dynamics Lifecyle Services (LCS). As a result, some URLs need to be added to a safe list on the proxy or firewalls so that all **OrchestratorType** nodes can access them. The urls will vary depending which LCS region your environment is being deployed from.
+
+### LCS Global
 
 ```Text
 - lcsapi.lcs.dynamics.com
@@ -69,6 +71,18 @@ The LocalAgent needs to communicate with Azure resources. As a result, the follo
 - login.microsoftonline.com
 - dc.services.visualstudio.com
 - uswelcs1lcm.blob.core.windows.net
+```
+
+### LCS EU
+
+```Text
+- lcsapi.eu.lcs.dynamics.com
+- login.windows.net
+- euweprodlcm.queue.core.windows.net
+- www.office.com
+- login.microsoftonline.com
+- dc.services.visualstudio.com
+- euweprodlcm.blob.core.windows.net
 ```
 
 
