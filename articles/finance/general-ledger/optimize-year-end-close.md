@@ -54,7 +54,7 @@ By enabling **Optimize year-end close** feature there are two new columns, **Res
 
 The following screen shot shows the **Results** and **Status** columns that have been added to the **Year-end close** page. The **View results** link to open up results of the year-end close, and status shows the current state of the year-end close process. Those options provides visibility where the year-end close process is. 
 
-[![Year-end close.](./media/YEC.png)](./media/YEC.png)
+[![Year-end close.](./media/yearendclose.jpg)](./media/yearendclose.jpg)
 
 By enabling the **Optimize year-end close** feature, the **Balance sheet financial dimensions** fasttab is available in the **Year-end close template**. This gives the ability to specify balance sheet financial dimensions in detail when you close a year. This functionality now parallels the capability that is available for profit and loss accounts.
 
@@ -64,7 +64,9 @@ In order to use **Optimize year-end close** feature and run the year-end close o
  - install the **Optimize year-end close** service add-in from LCS 
  - enable **Optimize year-end close** feature in **Feature management** 
  
-As illustrated in the below diagram, the year-end close processing will check if the service add-in is installed and **Optimize year-end close** feature is enabled. If both are enabled, the execution of the year-end close will run on the microservice.   
+As illustrated in the below diagram, the year-end close processing will check if the service add-in is installed and **Optimize year-end close** feature is enabled. If both are enabled, the execution of the year-end close will run on the microservice.
+
+[![Lifecycle services.](./media/Lifecycle-services.jpg)](./media/Lifecycle-services.jpg)
 
 
 ## High-level flow for year-end close processing
