@@ -42,9 +42,8 @@ The following illustration shows how the process for master planning demand expl
 
 ## Additional resources
 
-[Determine the BOM version](master-plan-bom-version-determined.md)
-
-[Master planning and multisite functionality overview](master-plan-multisite-functionality.md)
+- [Determine the BOM version](master-plan-bom-version-determined.md)
+- [Master planning and multisite functionality overview](master-plan-multisite-functionality.md)
 
 
 

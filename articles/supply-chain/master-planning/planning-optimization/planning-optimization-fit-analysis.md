@@ -111,19 +111,13 @@ The following table shows the various results that can be shown after a fit anal
 
 ## Additional resources
 
-[Planning Optimization overview](planning-optimization-overview.md)
-
-[Get started with Planning Optimization](get-started.md)
-
-[Differences between classic master planning and Planning Optimization](planning-optimization-differences-with-built-in.md)
-
-[Parameters not used by Planning Optimization](not-used-parameters.md)
-
-[View plan history and planning logs](plan-history-logs.md)
-
-[Apply filters to a plan](plan-filters.md)
-
-[Cancel a planning job](cancel-planning-job.md)
+- [Planning Optimization overview](planning-optimization-overview.md)
+- [Get started with Planning Optimization](get-started.md)
+- [Differences between classic master planning and Planning Optimization](planning-optimization-differences-with-built-in.md)
+- [Parameters not used by Planning Optimization](not-used-parameters.md)
+- [View plan history and planning logs](plan-history-logs.md)
+- [Run planning for a subset of items](plan-filters.md)
+- [Cancel a planning job](cancel-planning-job.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

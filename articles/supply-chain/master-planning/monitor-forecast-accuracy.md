@@ -43,9 +43,8 @@ Supply Chain Management calculates the following types of forecast accuracy:
 
 ## Additional resources
 
-[Authorize an adjusted forecast](authorize-adjusted-forecast.md)
-
-[Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
+- [Authorize an adjusted forecast](authorize-adjusted-forecast.md)
+- [Remove outliers from historical transaction data when calculating a demand forecast](remove-historical-outliers-calculating-demand-forecast.md)
 
 
 
