@@ -54,7 +54,7 @@ By enabling **Optimize year-end close** feature, there are two new columns, **Re
 
 The following screenshot shows the **Results** and **Status** columns that have been added to the **Year-end close** page. The **View results** link to open up results of the year-end close, and status shows the current state of the year-end close process. Those options provide visibility where the year-end close process is. 
 
-[![Year-end close.](./media/Yearendclose.jpg)](./media/Yearendclose.jpg)
+[![Year-end close .](./media/Yearendclose.jpg)](./media/Yearendclose.jpg)
 
 By enabling the **Optimize year-end close** feature, the **Balance sheet financial dimensions** FastTab is available in the **Year-end close template**. This gives the ability to specify balance sheet financial dimensions in detail when you close a year. This functionality now parallels the capability that is available for profit and loss accounts.
 
