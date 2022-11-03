@@ -4,9 +4,9 @@ description: With this feature, the system automatically suggests a vendor for e
 author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
-ms.search.form:
+ms.search.form: MpsMultiSourcePolicy, MpsMultiSourcePolicyAssignment
 ms.topic: how-to
-ms.date: 10/27/2022
+ms.date: 11/03/2022
 ms.custom: bap-template
 ---
 
@@ -17,11 +17,11 @@ ms.custom: bap-template
 <!-- KFM: Preview until 10.0.31 GA -->
 <!-- KFM: belongs in "replenishment strategies" section in new TOC structure for master planning -->
 
-Diversifying the supply network helps businesses be agile and responsive to changes. One of the most common ways to diversify supply is to divide the supply of a certain product between different vendors by assigning a supply percentage to each of them. That is the case for having a main vendor and a secondary one, where the usual split is 80/20 or 70/30. Another strategy could be do divide equally among 3 different vendors 33/33/34.
+Diversifying the supply network helps businesses be agile and responsive to changes. One of the most common ways to diversify supply is to divide the supply of a certain product between different vendors by assigning a supply percentage to each of them. For example, you might have a product with both a main vendor and a secondary one, where the usual split is 80/20 or 70/30. Another strategy could be to divide equally among three different vendors 33/33/34.
 
 With this feature, the system automatically suggests a vendor for each planned purchase order so that, over time, the specified percentages for each vendor are respected. However, it won't split an existing planned order into several smaller orders.
 
-The following tables shows a simple example of how each planned order quantity is assigned to a single vendor (without splitting the order quantity) such that the overall percentages are respected over time.
+The following table shows a simple example of how each planned order quantity is assigned to a single vendor (without splitting the order quantity) such that the overall percentages are respected over time.
 
 | Demand | Vendor A quantity (target: 50%) | Vendor B quantity (target: 50%) |
 |---|---|---|
@@ -42,14 +42,14 @@ To use this feature, your system must meet the following requirements:
 
 ## Define multisource policies
 
-Multisource policies let you establish the sourcing percentages for each vendor. You can create as many policies as you need to set up different percentage splits between different combinations of vendors. Later, you will assign a policy to each product as needed. Follow these steps to create a multisource policy:
+Multisource policies let you establish the sourcing percentages for each vendor. You can create as many policies as you need to set up different percentage splits between different combinations of vendors. Later, you'll assign a policy to each product as needed. Follow these steps to create a multisource policy:
 
 1. Go to **Procurement and sourcing \> Setup \> Policies \> Multisource policies**.
 1. Do one of the following steps:
-    - To edit an existing policy, select it in the list pane and select **Edit** on the Action Pane. If the policy has **Active** set to *Yes*, then you must set this to *No* and save before you can edit it. You can only deactivate and edit policies that aren't assigned to any products.
+    - To edit an existing policy, select it in the list pane and select **Edit** on the Action Pane. If the policy has **Active** set to *Yes*, then you must set this option to *No* and save before you can edit or delete it. You can only deactivate and edit policies that aren't assigned to any products.
     - To create a new policy, select **New** on the Action Pane.
 1. Make the following settings in the header of your new or selected policy:
-    - **Name** – Enter a name for the policy (you can't edit this after the policy has been saved).
+    - **Name** – Enter a name for the policy (you can't edit this field after the policy has been saved).
     - **Description** – Enter a short description of the policy.
 1. Expand the **General** FastTab and make the following settings:
     - **Active** – Choose whether the policy should be active or not. Only active policies can be assigned to products. You can only edit or delete policies that were last saved while this option was set to *No*. You can't deactivate policies that are currently in use (assigned to one or more products for the current or a future period).
@@ -58,12 +58,12 @@ Multisource policies let you establish the sourcing percentages for each vendor.
     - **Vendor account** – Choose the vendor the line applies to.
     - **Target allocation (%)** – Specify the percentage of planned orders that should be assigned to this vendor (relative to the others) over time.
 1. Do one of the following steps:
-    - If you're ready to activate the policy, set **Active** to *Yes* and select **Save** on the Action Pane. The system will validate your settings (for example, to make sure that all percentages add up to 100%) and will only proceed with the save provided it passes the test. Otherwise, you will get an error that you must address before you can save.
-    - If you want to prevent the policy from being used (or if you want to save it before you are finished setting up all of the allocations), set **Active** to *No* and then select **Save**. This will allow you to save an invalid policy, but you also won't be able to assign the policy to any products.
+    - If you're ready to activate the policy, set **Active** to *Yes* and select **Save** on the Action Pane. The system will validate your settings (for example, to make sure that all percentages add up to 100%) and will only proceed with the save provided it passes the test. Otherwise, you'll get an error that you must address before you can save.
+    - If you want to prevent the policy from being used (or if you want to save it before you're finished setting up all of the allocations), set **Active** to *No* and then select **Save**. This configuration will allow you to save an invalid policy, but you won't be able to assign the policy to any products.
 
 ## Define minimum order quantities per vendor
 
-If you have vendor agreements in place that establish a minimum quantity per order for some items, then you can add rules for these to the system as needed. These minimum order settings apply to all multisource policies and only to multisource policies (in other words, minimum order per vendor rules only apply to planned purchase orders created by master planning and don't apply quantities from manually created purchase orders).
+If you have vendor agreements in place that establish a minimum quantity per order for some items, then you can add rules for these conditions to the system as needed. These minimum order settings apply to all multisource policies and only to multisource policies (in other words, minimum order per vendor rules only apply to planned purchase orders created by master planning and don't apply quantities from manually created purchase orders).
 
 To set up minimum order per vendor rules, follow these steps:
 
@@ -72,7 +72,7 @@ To set up minimum order per vendor rules, follow these steps:
 1. Do one of the following steps:
     - To edit an existing rule, find and select it in the grid and select **Edit** on the Action Pane.
     - To create a new rule, select **New** on the Action Pane.
-1. Make the following settings for you new or selected rule:
+1. Make the following settings for your new or selected rule:
     - **Vendor account** – Select the vendor the rule applies to.
     - **Item number** – Select the item the rule applies to.
     - **Minimum** – Enter the minimum purchase per order for the specified combination of vendor and item.
@@ -107,7 +107,7 @@ For each multisource policy assignment, you can view your actual purchases and v
 1. Select **Current allocation** from the Action Pane.
 1. The **Current allocation** page opens, showing information about your selected assignment. For each vendor, you can see the total quantity purchased, current allocation, target allocation and how much each actual allocation deviates from the target. Each quantity and allocation value counts all purchases made during the *current period*. The current period expands backwards the number of days defined by the **Balance period (days)** setting for the assigned policy, but not earlier than the first date for which the assignment is valid (**From date**). The current period expands into the future until the last day the assignment is valid (**To date**).
 
-This is useful to see if your purchasing department is firming the orders as suggested by master planning (in which case, the actual allocation will be close to the current allocation), or if purchasers are making changes, in which case actual allocations could be quite different.
+This feature is useful, for example, to see if your purchasing department is firming orders as suggested by master planning (in which case, the actual allocation will be close to the current allocation), or if purchasers are making changes (in which case actual allocations could be quite different from the current allocation).
 
 ## How master planning suggests a vendor for each planned order
 
@@ -120,16 +120,16 @@ The system uses the following rules when choosing the vendor for a new planned o
 - The system will apply a multisource policy according to the following rules:
   - The planned order must match the product and all the dimensions specified for a multisource policy assignment.
   - The planned order date must occur during the *current period* for a matching multisource policy assignment. The current period expands backwards the number of days defined by the **Balance period (days)** setting for the assigned policy, but not earlier than the first date for which the assignment is valid (**From date**). The current period expands into the future until the last day the assignment is valid (**To date**).
-  - If more than one policy assignment matches the planned order, then the most specific assignment is used. For example, if there is demand for the item A0001, Site 1, Warehouse 11 and the polices shown in the following table exist, then policy X will be used because it is the most specific one.
+  - If more than one policy assignment matches the planned order, then the most specific assignment is used. For example, if there's demand for the item A0001, Site 1, Warehouse 11 and the policies shown in the following table exist, then policy X will be used because it's the most specific one.
 
     | Item | Site | Warehouse | From date | To date | Policy |
     |---|---|---|---|---|---|
     | A0001 | 1 | | 24/10/2022 | | X |
     | A0001 | 1 | 11 | 24/10/2022 | | Y |
 
-- Classic vendor selection based on cost/price is not performed with trade agreements. If a multisource policy is established, then the system will seek to meet its vendor allocation targets.
+- Classic vendor selection based on cost/price isn't performed with trade agreements. If a multisource policy is established, then the system will seek to meet its vendor allocation targets.
 - If a vendor lead time is specified in a trade agreement, it will be respected.
-- The approved vendor list will be respected if available. If the system is set up to disallow vendors other than the approved vendors (**Approved vendor check method** set to *Not allowed*), the system will respect that setting. A vendor specified in the multisource policy will not be selected if it isn't approved. The **Approved vendor check method** default setting is established on the item model group level and can also be overwritten at the released product level.
+- The approved vendor list will be respected if available. If the system is set up to disallow vendors other than the approved vendors (**Approved vendor check method** set to *Not allowed*), the system will respect that setting. A vendor specified in the multisource policy won't be selected if it isn't approved. The **Approved vendor check method** default setting is established on the item model group level and can also be overwritten at the released product level.
 - Default order settings are respected as follows:
   - The minimum, multiple, and maximum values established in the default order settings are respected (if specified).
   - If the multisource policy includes a relevant minimum order quantity for the vendor, then that minimum will also be applied. This means that the higher of the two minimum order values (default order settings or minimum vendor quantity) will take effect.
@@ -152,7 +152,7 @@ The following table shows how the system would assign orders to each of two diff
 | Demand | Vendor A quantity (target:&nbsp;80%) | Vendor B quantity (target:&nbsp;20%) | If vendor A were selected:</br>Qty&nbsp;A&nbsp;\|&nbsp;Qty&nbsp;B</br>A%&nbsp;\|&nbsp;B%</br>Deviation | If vendor B were selected:</br>Qty&nbsp;A&nbsp;\|&nbsp;Qty&nbsp;B</br>A%&nbsp;\|&nbsp;B%</br>Deviation | Total accumulated quantity |
 |---|---|---|---|---|---|
 | 100 | 100 | 0 | 100 \| 0</br>100% \| 0%</br>20% | 0 \| 100</br>0% \| 100%</br>80% | 100 |
-| 100 | 100 | 0 | 200* \| 0</br>100% \| 0%</br>20%** | 100 \| 100</br>50% \| 50%</br>25% | 200 |
+| 100 | 100 | 0 | 200\* \| 0</br>100% \| 0%</br>20%\*\* | 100 \| 100</br>50% \| 50%</br>25% | 200 |
 | 100 | 0 | 100 | 300 \| 0</br>100% \| 0%</br>20% | 200 \| 100</br>66% \| 33%</br>13% | 300 |
 
 \* 100 accumulated + current demand</br>
