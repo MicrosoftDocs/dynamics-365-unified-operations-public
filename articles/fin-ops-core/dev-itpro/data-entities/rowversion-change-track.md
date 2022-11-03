@@ -46,7 +46,7 @@ The **SysRowVersionNumber** column performs version stamping of table rows. SQL 
 > INSERT INTO table2
 > SELECT * FROM table1
 > ```
-> The **SysRowVersionNumber** column is controlled by the **Sql row version** onfiguration key in the License configuration form, **System administration > Setup > Licensing > License configuration**. In the unlikley event that custom SQL update statements are trying to create or update the colum, it will be required to disable the configurationn key until the issue is resolved. Configuration keys can only be edited in maintenance mode, see [Maintenance mode](../sysadmin/maintenance-mode.md).
+> The **SysRowVersionNumber** column is controlled by the **Sql row version** configuration key in the License configuration form, **System administration > Setup > Licensing > License configuration**. In the unlikely event that custom SQL update statements are trying to create or update the column, it will be required to disable the configuration key until the issue is resolved. Configuration keys can only be edited in maintenance mode, see [Maintenance mode](../sysadmin/maintenance-mode.md).
 
 ## Enable row version change tracking for data entities
 
