@@ -40,7 +40,7 @@ You can enable the **Allow Row Version Change Tracking** option for tables by se
 The **SysRowVersionNumber** column performs version stamping of table rows. SQL Server maintains a database-level counter that is incremented for each insert or update operation. Changes to a table row can be detected by comparing the current value in the **SysRowVersionNumber** column with the previous value.
 
 > [!NOTE]
-> The **SysRowVersionNumber** column (which is also known as the **rowversion** column) is read-only in SQL Server. Therefore, direct SQL update statements, such as the following example, will break if they try to create or update this column.
+> The **SysRowVersionNumber** column (which is also known as the **rowversion** column) is read-only in SQL Server. Therefore, direct SQL update statements, such as the following example, will break if they try to create or update this column. 
 >
 > ```SQL
 > INSERT INTO table2
