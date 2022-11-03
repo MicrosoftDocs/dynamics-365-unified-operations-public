@@ -66,7 +66,7 @@ This is related to a pending feature that is planned as part of the support for 
 
 ## Additional resources
 
-- [Get started with Planning Optimization](get-started.md)
+- [Get started with master planning](get-started.md)
 - [Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
 
 

@@ -1775,8 +1775,6 @@
           href: master-planning/planning-optimization/date-time-used.md
       - name: Configure master planning
         items:
-        - name: Master planning configuraton overview
-          href: master-planning/master-planning-onfiguration-overview.md
         - name: Delays
           href: master-planning/delays.md
         - name: Use tracing for explosion

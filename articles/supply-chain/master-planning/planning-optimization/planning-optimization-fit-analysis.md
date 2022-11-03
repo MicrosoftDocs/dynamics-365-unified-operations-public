@@ -112,7 +112,7 @@ The following table shows the various results that can be shown after a fit anal
 ## Additional resources
 
 - [Master planning system architecture](../master-planning-architecture.md)
-- [Get started with Planning Optimization](get-started.md)
+- [Get started with master planning](get-started.md)
 - [Differences between classic master planning and Planning Optimization](planning-optimization-differences-with-built-in.md)
 - [Parameters not used by Planning Optimization](not-used-parameters.md)
 - [View plan history and planning logs](plan-history-logs.md)
