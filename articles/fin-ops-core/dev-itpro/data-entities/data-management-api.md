@@ -293,6 +293,56 @@ HTTP/1.1 200 OK
 
 The following APIs are used to export files (data packages).
 
+### ExportToPackagePreview 
+
+The **ExportToPackagePreview ** API is used to preview an export of a data package with large number of records. This API is applicable to both cloud deployments and on-premises deployments.
+
+- The export data project must be created before you call this API. If the project doesn't exist, a call to the API returns an error.
+- If change tracking has been turned on, only records that have been created or updated since the last run are exported. (In other words, only the delta is returned.)
+- The number of records returned can limited using the **count** parameter.
+
+```csharp
+POST /data/DataManagementDefinitionGroups/Microsoft.Dynamics.DataEntities.ExportToPackagePreview
+BODY
+{
+    "definitionGroupId":"<Data project name>",
+    "packageName":"<Name to use for downloaded file.>",
+    "executionId":"<Execution Id if it is a rerun>",
+    "reExecute":<bool>,
+    "legalEntityId":"<Legal entity Id>",
+    "count":"<Legal entity Id>"
+}
+```
+
+Here is an example of a successful response.
+
+```json
+HTTP/1.1 200 OK
+{
+    "@odata.context":"https://<baseurl>/data/$metadata#Edm.String",
+    "value":{
+        "value":"<executionId>"
+    }
+}
+```
+
+**Input parameters**
+
+| Parameter                | Description |
+|--------------------------|-------------|
+| string definitionGroupId | The name of the data project for export. |
+| string packageName       | The name of the exported data package. |
+| string executionId       | The ID to use for the job. This is called as Job ID in the UI. If an empty ID is assigned, a new execution ID will be created. |
+| bool reExecute           | Set this parameter to **True** to run the target step. Otherwise, set it to **False**. |
+| string legalEntityId     | The legal entity for the data import. |
+| count                    | The number of records to return. No top count condition will be applied if set to zero. |
+	
+**Output parameters**
+
+| Parameter          | Description |
+|--------------------|-------------|
+| string executionId | The execution ID of the data export. This is called as Job ID in the UI. |
+
 ### ExportToPackage
 
 The **ExportToPackage** API is used to initiate an export of a data package. This API is applicable to both cloud deployments and on-premises deployments.
@@ -339,6 +389,7 @@ HTTP/1.1 200 OK
 | Parameter          | Description |
 |--------------------|-------------|
 | string executionId | The execution ID of the data export. This is called as Job ID in the UI. |
+
 
 ### GetExportedPackageUrl
 
