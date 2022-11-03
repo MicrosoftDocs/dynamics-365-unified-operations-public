@@ -1173,7 +1173,7 @@
         - name: Financial period close workspace
           href: general-ledger/financial-period-close-workspace.md
         - name: Optimize year-end close
-          href: general-ledger/optimize-year-end.md
+          href: general-ledger/optimize-year-end-close.md
         - name: Year-end close
           href: general-ledger/year-end-close.md
         - name: Close the fiscal year
