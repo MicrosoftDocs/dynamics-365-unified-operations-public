@@ -78,18 +78,18 @@ On the **Workflow parameters** page, follow these steps:
 
 ### Additional example 
 
-Employee Grace Sturman has two positions: consultant and trainer. Graces’s primary position is trainer. However, when she's not training new employees, she’s available for some consulting work. Grace reports to Claire, the director of human resources via her primary position. Claire reports to Charlie. For her consulting position, she has multiple dotted line relationships, depending on the project.
+Employee Grace Sturman has two positions: consultant and trainer. Graces’s primary position is trainer. When she's not training new employees, she’s available for  consulting work. Grace reports to Claire, the director of human resources via her primary position and Claire reports to Charlie. For her consulting position, she has multiple dotted line relationships, depending on the project.
 
 Grace’s company creates workflow routing rules based on a **Configurable** hierarchy (matrix/project based hierarchies) – which uses Grace’s consultant position. With the parameter **Off**, a document will be routed to Grace for her approval. The workflow will look at her primary position to see where the document should be routed next. In this instance, it would be routed to Claire, and then onto Charlie.
 
 If the parameter is **On** and the workflow uses a configurable hierarchy, the workflow will look at Grace’s consulting position, and the reporting relationship, to determine who should receive the document next.
 
 ### Configure a Human resources workflow
-To configure a basic workflow that is started when employees request changes to their personal identification, follow these steps.
+To configure a basic workflow that is started when employees request changes to their personal identification, follow these steps:
 
 1.  On the **Human resources workflows** page, select **New**.
 2.  In the list of available workflows, select **Identification numbers**.
-3.  Select **Run** to open the Workflow designer, and then enter your user name and password when you're prompted.
+3.  Select **Run** to open the Workflow designer, and then enter your user name and password.
 4.  Move the **Approve identification number** element from the list of workflow elements to the designer canvas.
 5.  Connect the approval element to **Start** and **Finish**.
 6.  Double-click **Approve element**, select and hold (or right-click), and then select **Properties**.
@@ -99,7 +99,7 @@ To configure a basic workflow that is started when employees request changes to 
     2.  Under the **Hierarchy** selection, select **Configurable hierarchy**.
     3.  Add a stop condition, and close the page.
 
-8.  Complete any additional instructions (no additional warnings should exist).
+8.  Complete any additional instructions.
 9.  Select **Save and close**. Activate the new workflow when the dialog box opens, and select **Make active**.
 10. Go to **Human Resources** &gt; **Positions** &gt; **Position hierarchy types**.
 11. Select **Matrix**.
