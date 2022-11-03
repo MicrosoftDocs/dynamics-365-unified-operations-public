@@ -2,7 +2,7 @@
 # required metadata
 
 title: Master planning with purchase trade agreements
-description: This article describes how Planning Optimization can find the vendor and/or lead time for a planned order, based on the best price or lead time that is found in purchase trade agreements.
+description: This article describes how master planning can find the vendor and/or lead time for a planned order, based on the best price or lead time that is found in purchase trade agreements.
 author: t-benebo
 ms.date: 08/09/2022
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.12
 
 [!include [banner](../../includes/banner.md)]
 
-This article describes how Planning Optimization can find the vendor and/or lead time for a planned order, based on the best price or lead time that is found among all purchase trade agreements that have been specified for a given product.
+This article describes how master planning can find the vendor and/or lead time for a planned order, based on the best price or lead time that is found among all purchase trade agreements that have been specified for a given product.
 
 ## Turn the Purchase trade agreements for Planning Optimization feature on or off
 
@@ -38,7 +38,7 @@ To use this feature, it must be turned on for your system. As of Supply Chain Ma
 
 ## Prepare your system to evaluate purchase trade agreements during master planning
 
-Follow these steps to configure your system to apply Planning Optimization that evaluates purchase trade agreements.
+Follow these steps to configure your system to apply master planning that evaluates purchase trade agreements.
 
 1. Go to **Master planning \> Setup \> Master planning parameters**. On the **Planned orders** tab, in the **Vendor** section, set the following values:
 
@@ -56,22 +56,22 @@ After your system is prepared as described in the previous section, you should f
 1. On the **Purchase** FastTab, make sure that no vendor is assigned in the **Vendor** field.
 1. On the Action Pane, on the **Plan** tab, in the **Coverage** group, select **Item coverage** to open the **Item coverage** page for the selected product. Verify the following settings:
 
-    - On the **General** tab, you can set up vendor overrides. If you want Planning Optimization to use purchase trade agreements to select a vendor, you should prevent vendor overrides by clearing the **Use specific setting** check box.
-    - On the **Lead time** tab, you can set up lead-time overrides. If you want Planning Optimization to use purchase trade agreements to select lead times, you should prevent lead-time overrides. Clear the check box for each type of lead time that you want to select by using purchase trade agreements (**Purchase**, **Production**, and/or **Transfer**).
+    - On the **General** tab, you can set up vendor overrides. If you want master planning to use purchase trade agreements to select a vendor, you should prevent vendor overrides by clearing the **Use specific setting** check box.
+    - On the **Lead time** tab, you can set up lead-time overrides. If you want master planning to use purchase trade agreements to select lead times, you should prevent lead-time overrides. Clear the check box for each type of lead time that you want to select by using purchase trade agreements (**Purchase**, **Production**, and/or **Transfer**).
 
 1. Close the **Item coverage** page to return to the details page for the selected product.
 1. On the Action Pane, on the **Plan** tab, in the **Forecast** group, select **Supply forecast** to open the **Supply forecast** page. Make sure that no row that is shown here has a value in the **Vendor account** column.
 1. Close the **Supply forecast** page to return to the details page for the selected product.
-1. On the Action Pane, on the **Purchase** tab, in the **Trade agreements** group, select **View trade agreements**. Make sure that all the relevant purchase trade agreements are listed. Also make sure that the **Disregard lead time** option is set to **No** for each agreement where you want Planning Optimization to use the lead time that is specified for that agreement.
-1. On the Action Pane, on the **Plan** tab, in the **Order settings** group, select **Default order settings** to open the **Default order settings** page for the selected product. On the **Purchase order** FastTab, view the value of the **Purchase lead time** field. If no item coverage lead-time override is defined, Planning Optimization will use this value when it selects trade agreements where the **Disregard lead time** option is set to **Yes**. Therefore, you should adjust this value as you require.
+1. On the Action Pane, on the **Purchase** tab, in the **Trade agreements** group, select **View trade agreements**. Make sure that all the relevant purchase trade agreements are listed. Also make sure that the **Disregard lead time** option is set to **No** for each agreement where you want master planning to use the lead time that is specified for that agreement.
+1. On the Action Pane, on the **Plan** tab, in the **Order settings** group, select **Default order settings** to open the **Default order settings** page for the selected product. On the **Purchase order** FastTab, view the value of the **Purchase lead time** field. If no item coverage lead-time override is defined, master planning will use this value when it selects trade agreements where the **Disregard lead time** option is set to **Yes**. Therefore, you should adjust this value as you require.
 1. Repeat this procedure for each relevant product.
 
 > [!NOTE]
-> Planning Optimization supports multi-currency purchase trade agreements. When searching for a trade agreement using the **Lowest unit price** option, the system will consider purchase trade agreement lines with different currencies provided an exchange rate has been defined between the trade agreement line currency and the accounting currency of the legal entity. Otherwise, the trade agreement line will be ignored, and you will see an error during master planning. Therefore, master planning will include information from all relevant purchase trade agreement lines where prices can be converted to the accounting currency. It is important to note that rounding rules will not be taken into account during the trade agreement line price conversion.
+> Master planning supports multi-currency purchase trade agreements. When searching for a trade agreement using the **Lowest unit price** option, the system will consider purchase trade agreement lines with different currencies provided an exchange rate has been defined between the trade agreement line currency and the accounting currency of the legal entity. Otherwise, the trade agreement line will be ignored, and you will see an error during master planning. Therefore, master planning will include information from all relevant purchase trade agreement lines where prices can be converted to the accounting currency. It is important to note that rounding rules will not be taken into account during the trade agreement line price conversion.
 
-## Examples of how Planning Optimization finds vendor and lead times
+## Examples of how master planning finds vendor and lead times
 
-The following table provides examples that show how various settings for a released product and its associated purchase trade agreements affect the values that are found for the resulting planned purchase order. The **bold** values in the two rightmost columns are the values that are selected by Planning Optimization. The ***bold and italic*** values in the other columns are the settings that produced those resulting values for each row.
+The following table provides examples that show how various settings for a released product and its associated purchase trade agreements affect the values that are found for the resulting planned purchase order. The **bold** values in the two rightmost columns are the values that are selected by master planning. The ***bold and italic*** values in the other columns are the settings that produced those resulting values for each row.
 
 | Released product: Vendor | Default order settings: Lead time | Item coverage: Override vendor | Item coverage: Override lead time | Trade agreement: Vendor | Trade agreement: Lead time | Trade agreement: Disregard lead time | Resulting vendor | Resulting lead time |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -86,7 +86,7 @@ The following table provides examples that show how various settings for a relea
 
 ## Additional resources
 
-[Purchase agreements](../../procurement/purchase-agreements.md)
+- [Purchase agreements](../../procurement/purchase-agreements.md)
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]

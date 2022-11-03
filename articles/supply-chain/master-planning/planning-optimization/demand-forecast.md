@@ -2,7 +2,7 @@
 # required metadata
 
 title: Master planning with demand forecasts
-description: This article explains how to include demand forecasts during master planning with Planning Optimization.
+description: This article explains how to include demand forecasts during master planning.
 author: t-benebo
 ms.date: 12/02/2020
 ms.topic: article
@@ -30,7 +30,7 @@ ms.dyn365.ops.version: AX 10.0.13
 
 [!include [banner](../../includes/banner.md)]
 
-You can use a demand forecast together with Planning Optimization to account for expected demand in your master planning. You can manually create a demand forecast, import it, or generate it by using the demand forecasting functionality in Microsoft Dynamics 365 Supply Chain Management. For more information about demand forecasting, see [Demand forecasting overview](../introduction-demand-forecasting.md).
+You can use a demand forecast to account for expected demand in your master planning. You can manually create a demand forecast, import it, or generate it by using the demand forecasting functionality in Microsoft Dynamics 365 Supply Chain Management. For more information about demand forecasting, see [Demand forecasting overview](../introduction-demand-forecasting.md).
 
 > [!NOTE]
 > Separate forecast planning isn't supported with Planning Optimization. Therefore, the **Current forecast plan** setting on the **Master planning parameters** page has no effect when you use Planning Optimization.
@@ -53,7 +53,7 @@ To configure a master plan so that it includes a demand forecast, follow these s
     - **Forecast time period** – If you set the **Forecast plan** option to *Yes*, specify the number of days (from today's date) that the demand forecast should be applied.
 
     > [!IMPORTANT]
-    > The **Forecast plan** setting isn't yet supported with Planning Optimization.
+    > The **Forecast plan** setting isn't supported with Planning Optimization.
 
 ## Set up a coverage group to include a demand forecast
 

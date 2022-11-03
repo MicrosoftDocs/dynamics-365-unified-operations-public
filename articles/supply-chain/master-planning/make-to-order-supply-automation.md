@@ -28,12 +28,6 @@ The *Make-to-order supply automation* feature adds several enhancements to Micro
 
 This article describes how to set up and use each enhancement.
 
-> [!NOTE]
-> All the enhancements that are described in this article apply to systems that use built-in master planning. The following two enhancements are also supported by the Planning Optimization Add-in for Microsoft Dynamics 365 Supply Chain Management:
->
-> - Delay tolerance on master plans
-> - Control over the pegging sequence that is used during master planning
-
 ## Turn on the Make-to-order supply automation feature
 
 Before you can use the feature that is described in this article, you must turn it on for your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, where the feature is listed in the following way:
@@ -68,7 +62,7 @@ To open the **Capacity load** page so that you can review the available capacity
 
 These options are also available in the **Update marking** field on the **Standard update** tab of the **Master planning parameters** page, where you define the default selection for the **Firming** dialog box.
 
-For more information, see [Inventory marking with Planning Optimization](planning-optimization/marking.md).
+For more information, see [Inventory marking](planning-optimization/marking.md).
 
 ## Set delay tolerance (negative days) at the master plan level
 

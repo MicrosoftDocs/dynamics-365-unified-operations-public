@@ -66,7 +66,7 @@ Each replenishment method is assigned one of the following coverage codes:
 
 ## Additional resources
 
-[Master plans overview](master-plans.md)
+- [Master plans overview](master-plans.md)
 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
