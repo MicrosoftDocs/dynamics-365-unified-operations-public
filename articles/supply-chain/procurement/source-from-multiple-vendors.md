@@ -15,7 +15,7 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../../commerce/includes/preview-banner.md)]
 <!-- KFM: Preview until 10.0.31 GA -->
-<!-- KFM: Where does this belong? Under procurement or under planning? -->
+<!-- KFM: belongs in "replenishment strategies" section in new TOC structure for master planning -->
 
 Diversifying the supply network helps businesses be agile and responsive to changes. One of the most common ways to diversify supply is to divide the supply of a certain product between different vendors by assigning a supply percentage to each of them. That is the case for having a main vendor and a secondary one, where the usual split is 80/20 or 70/30. Another strategy could be do divide equally among 3 different vendors 33/33/34.
 
@@ -53,7 +53,7 @@ Multisource policies let you establish the sourcing percentages for each vendor.
     - **Description** – Enter a short description of the policy.
 1. Expand the **General** FastTab and make the following settings:
     - **Active** – Choose whether the policy should be active or not. Only active policies can be assigned to products. You can only edit or delete policies that were last saved while this option was set to *No*. You can't deactivate policies that are currently in use (assigned to one or more products for the current or a future period).
-    - **Balance period (days)** – Set the number of days that master planning should look into the past when allocating orders to vendors. In other words, when master planning is choosing a vendor for a planned purchase order, it will look this number of days in the past and choose the vendor that will result in an actual allocation that is closest to the preferred allocation established by the multisource policy. We recommend that you choose a balance period that will include purchases from the relevant vendors but without going too far back. The default value is 180 days. <!--KFM: What are we looking for here, purchase orders, planned orders, invoices, or all three? -->
+    - **Balance period (days)** – Set the number of days that master planning should look into the past when allocating orders to vendors. In other words, when master planning is choosing a vendor for a planned purchase order, it will look this number of days in the past and choose the vendor that will result in an actual allocation that is closest to the preferred allocation established by the multisource policy. We recommend that you choose a balance period that will include purchases from the relevant vendors but without going too far back. The default value is 180 days. 
 1. Expand the **Policy rules** FastTab. Add a line here for each vendor that is part of this policy, and assign each vendor a target allocation. The sum of all allocations specified on this grid must be 100%. Use the toolbar buttons to add or remove lines from the grid. For each line, make the following settings:
     - **Vendor account** – Choose the vendor the line applies to.
     - **Target allocation (%)** – Specify the percentage of planned orders that should be assigned to this vendor (relative to the others) over time.
@@ -63,7 +63,7 @@ Multisource policies let you establish the sourcing percentages for each vendor.
 
 ## Define minimum order quantities per vendor
 
-If you have vendor agreements in place that establish a minimum quantity per order for some items, then you can add rules for these to the system as needed. <!--KFM: Please confirm this reformulation--> These minimum order settings apply to all multisource policies and only to multisource policies (in other words, minimum order per vendor rules only consider purchase orders created by master planning and don't consider quantities from manually created purchase orders). <!--KFM: Confirm this rephrasing of the second sentence -->
+If you have vendor agreements in place that establish a minimum quantity per order for some items, then you can add rules for these to the system as needed. These minimum order settings apply to all multisource policies and only to multisource policies (in other words, minimum order per vendor rules only apply to planned purchase orders created by master planning and don't apply quantities from manually created purchase orders).
 
 To set up minimum order per vendor rules, follow these steps:
 
@@ -75,7 +75,7 @@ To set up minimum order per vendor rules, follow these steps:
 1. Make the following settings for you new or selected rule:
     - **Vendor account** – Select the vendor the rule applies to.
     - **Item number** – Select the item the rule applies to.
-    - **Minimum** – Enter the minimum purchase per order for the specified combination of vendor and item. <!--KFM: Please confirm this formulation-->
+    - **Minimum** – Enter the minimum purchase per order for the specified combination of vendor and item.
     - **Unit** – Select the unit of measure that applies to the **Minimum** value.
 1. Select **Save** on the Action Pane.
 
@@ -105,9 +105,9 @@ For each multisource policy assignment, you can view your actual purchases and v
 1. Go to **Procurement and sourcing \> Setup \> Policies \> Multisource policy assignments**.
 1. Select the assignment you want to inspect.
 1. Select **Current allocation** from the Action Pane.
-1. The **Current allocation** page opens, showing information about your selected assignment. For each vendor, you can see the total quantity purchased, current allocation, target allocation and how much each actual allocation deviates from the target. Each quantity and allocation value counts all purchases made during the *current period* <!--KFM: Do quantities include both firmed planned orders and manually entered purchase orders? -->. The current period expands backwards the number of days defined by the **Balance period (days)** setting for the assigned policy, but not earlier than the first date for which the assignment is valid (**From date**). The current period expands into the future until the last day the assignment is valid (**To date**). <!--KFM: I added this description of the current period. Correct? -->
+1. The **Current allocation** page opens, showing information about your selected assignment. For each vendor, you can see the total quantity purchased, current allocation, target allocation and how much each actual allocation deviates from the target. Each quantity and allocation value counts all purchases made during the *current period*. The current period expands backwards the number of days defined by the **Balance period (days)** setting for the assigned policy, but not earlier than the first date for which the assignment is valid (**From date**). The current period expands into the future until the last day the assignment is valid (**To date**).
 
-This is useful to see if your purchasing department is just firming the orders as they are and then the target percentages are filled or if any changes are being made to the suggested. <!--KFM: I'm not sure what we are saying here. Please clarify. Or maybe just remove... -->
+This is useful to see if your purchasing department is firming the orders as suggested by master planning (in which case, the actual allocation will be close to the current allocation), or if purchasers are making changes, in which case actual allocations could be quite different.
 
 ## How master planning suggests a vendor for each planned order
 
@@ -119,7 +119,7 @@ The system uses the following rules when choosing the vendor for a new planned o
 
 - The system will apply a multisource policy according to the following rules:
   - The planned order must match the product and all the dimensions specified for a multisource policy assignment.
-  - The planned order date must occur during the *current period* for a matching multisource policy assignment. The current period expands backwards the number of days defined by the **Balance period (days)** setting for the assigned policy, but not earlier than the first date for which the assignment is valid (**From date**). The current period expands into the future until the last day the assignment is valid (**To date**). <!--KFM: I added this description of the current period. Correct? -->
+  - The planned order date must occur during the *current period* for a matching multisource policy assignment. The current period expands backwards the number of days defined by the **Balance period (days)** setting for the assigned policy, but not earlier than the first date for which the assignment is valid (**From date**). The current period expands into the future until the last day the assignment is valid (**To date**).
   - If more than one policy assignment matches the planned order, then the most specific assignment is used. For example, if there is demand for the item A0001, Site 1, Warehouse 11 and the polices shown in the following table exist, then policy X will be used because it is the most specific one.
 
     | Item | Site | Warehouse | From date | To date | Policy |
@@ -145,7 +145,7 @@ The following table shows how the system would assign orders to each of two diff
   - **Qty B** = Accumulated quantity for vendor B
   - **A%** = (Qty A / Total accumulated quantity) × 100%
   - **B%** = (Qty B / Total accumulated quantity) × 100%
-  - **Deviation** = ( \| A% – Vendor A target \| + \| B% – Vendor B target \| ) ÷ 2 <!-- KFM: Please confirm this reformulation...  -->
+  - **Deviation** = ( \| A% – Vendor A target \| + \| B% – Vendor B target \| ) ÷ 2
 - The **Total accumulate quantity** column shows the total quantity ordered after each new purchase order.
 - All planned orders in the table occur during the same period, as defined by the relevant policy and policy assignment.
 
