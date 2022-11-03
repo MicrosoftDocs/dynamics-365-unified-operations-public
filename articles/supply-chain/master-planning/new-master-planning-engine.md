@@ -35,7 +35,7 @@ The built-in master planning engine is scheduled to be made obsolete (deprecated
 
 Planning Optimization enables master planning calculations to occur outside Supply Chain Management and its Azure SQL database. The benefits that are associated with Planning Optimization include improved performance and minimized impact on the SQL database during master planning runs. Because quick planning runs can be done even during office hours, planners can immediately react to demand or parameter changes.
 
-For more information about Planning Optimization, see [Planning Optimization overview](planning-optimization/planning-optimization-overview.md).
+For more information about Planning Optimization, see [Master planning system architecture](master-planning-architecture.md).
 
 ## Obsolescence of the existing master planning engine
 
