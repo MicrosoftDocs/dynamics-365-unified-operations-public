@@ -2,7 +2,7 @@
 # required metadata
 
 title: Optimize year-end close 
-description: This article describes the Optimize year-end close add-in that is available for running the general ledger year-end close process. 
+description: This article describes the Optimize year-end close add-in that is available for the general ledger year-end close process. 
 author: moaamer
 ms.date: 11/02/2022
 ms.topic: article
@@ -37,16 +37,17 @@ To use the Optimize year-end close, you must install the Optimize year-end close
 enable the feature in **Feature management**.
 
 > [!NOTE] 
-> You can still use the current year-end close on Dynamics 365 Finance resources by disabling Optimize year-end close in **Feature management**. 
+> You can still use the current year-end close on Dynamics 365 Finance resources by disabling the **Optimize year-end close** in **Feature management**. 
 
 ## Improved performance
 
-**Optimize year-end close** is designed to accelerate the year-end close processing for all customers, but especially for customers with large volumes of data. The year-end close on service offloads the heavy processing from Dynamics 365 Finance resources to reduce the processing time and free up the resources that may affect the 
-daily operations of other users. The **Optimize year-end close** feature can help:
+**Optimize year-end close** is designed to accelerate the year-end close processing, especially for customers with large volumes of data. The year-end close on a service offloads the heavy processing from Dynamics 365 Finance resources to reduce the processing time and free up the resources that may affect the daily operations of other users. 
+
+The **Optimize year-end close** feature can help:
 
  - Improve year-end closing performance by reducing run time
  - Reduce the impact on other processes during year-end close run
- - Improve year-end results reporting and adjustments as the year-end close run takes a shorter amount of time
+ - Improve year-end result reporting and adjustments as the year-end close run takes a shorter amount of time
 
 ## New options and visibility
 By enabling **Optimize year-end close** feature there are two new columns, **Results** and **Status**. These columns are added to the **Year-end close** page, **Year-end close results** dialogue, and the **Balance sheet financial dimension transfer** options in the **Year-end close template** page. 
