@@ -2,7 +2,7 @@
 title: Enhanced payments in storefront checkout
 description: This article provides an overview of enhanced strong customer authentication (SCA) support for storefront checkout in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 06/09/2021
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -60,7 +60,7 @@ In the traditional flow, after the payment details were entered in the embedded 
 By default, the out-of-box payment connectors for Adyen and PayPal support the enhanced payment flows during checkout.
 
 > [!IMPORTANT]
-> - Only Adyen connector version **V002** and **V003** supports enhanced SCA.
+> - Only Adyen connector versions **V002** and **V003** support enhanced SCA.
 > - Because of SCA requirements that went into effect in the European Union (EU) on January 1, 2021, version **V001** of the Adyen connector should no longer be used. For information about how to configure the Adyen connector to use version **V002** or **V003**, see [Set up a processor for new credit cards](adyen-connector-setup.md#set-up-a-processor-for-new-credit-cards).
 
 ## Enable enhanced payments in storefront checkout in Commerce site builder
@@ -74,17 +74,17 @@ To enable the enhanced payments feature in Commerce site builder, follow these s
 
 ![Enabling enhanced payments in storefront checkout in Commerce site builder.](media/rfac.png)
 
-## Checkout Module arrangements
+## Checkout module placement
 
-Due to the change in the way the checkout flow places the order when single payment authorization is enabled, the **Checkout section container** should be the last module of the **Checkout information** module node in Site Builder for your checkout page. 
+Due to a change in the way the checkout flow places the order when SCA is enabled, in site builder for your checkout page, the checkout section container should be the last module in the **Checkout information** module node. 
 
-A common setup for the **Checkout information** module block when using single payment authorization patterns include these modules in the following order:
+A common setup for the checkout information module block when using SCA places modules in the following order:
 
-1. **Pickup information**
-2. **Shipping address**
-3. **Delivery options**
-4. **Contact information**
-5. **Checkout section container** (which includes **text block**, **loyalty points**, **gift card**, **payment(s)**, and **Billing address** modules within it)
+- **Pickup information**
+- **Shipping address**
+- **Delivery options**
+- **Contact information**
+- **Checkout section container** (which includes text block, loyalty points, gift card, payment(s), and billing address modules within it)
 
 ![The common Checkout module tree view in Site Builder.](./media/CheckoutFormModuleTreeOrder.png)
 
