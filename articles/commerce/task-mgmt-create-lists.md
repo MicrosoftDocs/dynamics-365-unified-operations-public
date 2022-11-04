@@ -2,12 +2,12 @@
 title: Create task lists and add tasks
 description: This article describes how to create task lists and add tasks to them in Microsoft Dynamics 365 Commerce.
 author: gvrmohanreddy
-ms.date: 02/10/2020
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
 audience: Application User
-ms.reviewer: v-chgriffin
+ms.reviewer: josaw
 ms.search.region: Global
 ms.author: gmohanv
 ms.search.validFrom: 2020-02-03
@@ -30,7 +30,7 @@ Both managers and workers can create task lists in Commerce back office, and the
 
 ## Create a task list
 
-To create a task list, follow these steps.
+Before you start the process of creating a task list, make sure you complete the configurations in the [Configure task management](task-mgmt-configure.md) article. To create a task list, follow these steps.
 
 1. Go to **Retail and Commerce \> Task management \> Task management administration**.
 1. Select **New**, and then enter values in the **Name**, **Description**, and **Owner** fields.
