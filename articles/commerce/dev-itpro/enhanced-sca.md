@@ -86,7 +86,7 @@ A common setup for the **Checkout information** module block when using single p
 4. **Contact information**
 5. **Checkout section container** (which includes **text block**, **loyalty points**, **gift card**, **payment(s)**, and **Billing address** modules within it)
 
-![The common Checkout module tree view in Site Builder.](media/CheckoutFormModuleTreeOrder.png)
+![The common Checkout module tree view in Site Builder.](./media/CheckoutFormModuleTreeOrder.png)
 
 ## Additional resources
 
