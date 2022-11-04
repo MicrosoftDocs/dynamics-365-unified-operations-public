@@ -47,7 +47,7 @@ Application Insights has a wide range of features to help you use this data:
 - [Create a dashboard](/azure/azure-monitor/visualize/tutorial-logs-dashboards) for an overview of the health of your organization.
 - Perform proactive monitoring by using [Smart detection](/azure/azure-monitor/app/proactive-diagnostics).
 - [Set up alerts](/azure/azure-monitor/app/tutorial-alert) for important scenarios, based on your organization.
-- Visualize and track common [navigation patterns from a usage perspective](/azure/azure-monitor/app/usage-flows). For example, if a user always selects a specific tab before they go back to the main tab and close the page, this pattern might indicate that a field should be located on the first tab to save the user time.
+- Visualize and track common [navigation patterns from a usage perspective](/azure/azure-monitor/app/usage-flows). For example, a user always selects a specific tab before they go back to the main tab and close the page. This pattern might indicate that a field should be located on the first tab to save the user time.
 - Create custom queries to troubleshoot performance and errors by using the [Logs](/azure/azure-monitor/log-query/log-query-overview) panel that can be accessed under **Monitoring** in the left pane.
 
 ## Overview panel in Application Insights
