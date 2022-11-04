@@ -2,7 +2,7 @@
 title: Set up Dynamics 365 Payment Connector for Adyen
 description: This article describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 09/14/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -133,7 +133,7 @@ The Adyen payment connector can be configured to communicate with devices via th
     | Local Key Identifier | Enter the Adyen key identifier for the payment terminal. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | mykey |
     | Local Key Version | Enter the Adyen key version for the payment terminal. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](#sign-up-with-adyen) section. | Yes | No | 0 |
     | Local Cryptor Version | Enter the Adyen cryptor version to use when you interact with the Adyen gateway. You should set this field to **1**. | Yes | Yes | 1 |
-    | Cloud API Key | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. Note that this field is required even for local terminal setups. | Yes | No | abcdefg |
+    | Cloud API Key | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. This field is required even for local terminal setups. | Yes | No | abcdefg |
     | Supported Currencies | Enter the currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes | Yes | USD;EUR |
     | Supported Tender Types | Enter the tender types that the connector should process. These values are case-sensitive. | Yes | Yes | Visa;MasterCard;Amex;Discover;Debit |
     | Gift card provider | Enter the gift card provider that the connector should use to process gift cards. This field is case-sensitive. | No | No | "svs" or "givex" |    
@@ -147,7 +147,7 @@ The Adyen payment connector can be configured to communicate with devices via th
 1. On the Action Pane, select **Save**.
 
 > [!NOTE]
-> Even though setting up a Local POS instance, the **Cloud API** key field is still required for Card Not Present scenarios to work. Scenarios include omni-channel payments Customer Orders created in POS, linked refunds, and using the payment authorization token reference on order pickup.
+> When setting up a local POS instance, the **Cloud API** key field is still required for "card not present" scenarios to work. Scenarios include omnichannel payments customer orders created in POS, linked refunds, and payment authorization token references on order pickups.
 
 ##### EFT service for cloud communication
 
