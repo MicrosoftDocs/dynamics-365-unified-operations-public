@@ -4,7 +4,7 @@
 title: Omni-channel payments overview
 description: This article provides an overview of omni-channel payments in Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 09/17/2020
+ms.date: 11/04/2020
 ms.topic: overview
 ms.prod: 
 ms.technology: 
@@ -176,7 +176,7 @@ Follow these steps to run the scenario.
 9. Select **Pay card** to initiate the payment.
 10. Tender the card payment for the amount that is due for the deposit.
 11. Complete the deposit payment on the payment terminal. 
-12. After the deposit is paid, select the option to use the same card for fulfillment, and wait for the order to be completed. Note that if 100% of the deposit is paid (from step 10), the funds are captured immediately against the card and an authorization token will not be available at invoicing (as the funds are already captured and tracked as 'Paid').
+12. After the deposit is paid, select the option to use the same card for fulfillment, and wait for the order to be completed. If 100% of the deposit is paid (from step 10 above), the funds are captured immediately against the card and an authorization token will not be available at invoicing because the funds have already been captured and tracked as paid.
 13. Start the POS for the Seattle store.
 14. In the POS, on the welcome page, select the **Orders to pickup** operation to see the orders for in-store pickup. 
 15. Select one or more lines from the order that was created in the reference storefront, and then select **Pick up**.
