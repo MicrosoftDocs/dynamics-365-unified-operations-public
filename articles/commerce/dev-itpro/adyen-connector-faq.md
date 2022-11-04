@@ -52,11 +52,11 @@ The following tables show common payment events in Dynamics 365 Commerce and the
 
 | Commerce event | Adyen payment status code |
 |---|---|
-| Initial transaction in progress | **AuthorisedPending** |
-| Successful transaction | **Authorised** |
+| Initial transaction in progress | **AuthorizedPending** |
+| Successful transaction | **Authorized** |
 | Successful transaction in progress | **SentForSettle** |
 | Successful transaction completed | **Settled** |
-| Void | **Cancelled** (if authorized state only) or **Refunded** (if funds have been captured) |
+| Void | **Canceled** (if authorized state only) or **Refunded** (if funds have been captured) |
 | Cancel | Canceled items aren't expected to appear in the Adyen portal. |
 | Linked refund | **SentForRefund** or **Refunded** |
 | Unlinked refund | The original payment line remains in the final state (for example, **Authorized**). The new line shows **RefundPending** for the payment method that is used. |
@@ -67,9 +67,9 @@ The following tables show common payment events in Dynamics 365 Commerce and the
 
 | Commerce event | Adyen payment status code |
 |---|---|
-| Successful Transaction | **Authorised** |
+| Successful Transaction | **Authorized** |
 | Authorisation | **Settled** |
-| Void | **Cancelled** (if authorized state only) or **Refunded** (if funds have been captured) |
+| Void | **Canceled** (if authorized state only) or **Refunded** (if funds have been captured) |
 | Cancel | Canceled items aren't expected to appear in the Adyen portal. |
 | Linked Refund | **SentForRefund** or **Refunded** (*Call center only*) |
 | Unlinked Refund | The original payment line remains in the final state (for example, **Authorized**). The new line shows **RefundPending** for the payment method that is used. (*Call center only*) |
