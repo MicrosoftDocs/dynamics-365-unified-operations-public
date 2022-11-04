@@ -488,7 +488,7 @@
               href: help/migrate-dynamicsax2012.md
         - name: Language and locale descriptors in across product and help
           href: help/language-locale.md
-        - name: Extend, customize, and collaborate on the help
+        - name: Extend and collaborate on the help
           href: help/contributor-guide.md
       - name: Finance and operations apps regional services
         items:
