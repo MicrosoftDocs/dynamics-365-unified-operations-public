@@ -4,7 +4,7 @@
 title: Configure CPOS to use a custom Azure AD app
 description: This article explains how to configure Cloud POS (CPOS) to use a custom Azure Active Directory (Azure AD) app.
 author: boycez
-ms.date: 10/25/2022
+ms.date: 11/04/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
