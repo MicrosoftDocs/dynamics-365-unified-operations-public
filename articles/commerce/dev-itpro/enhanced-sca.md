@@ -60,8 +60,8 @@ In the traditional flow, after the payment details were entered in the embedded 
 By default, the out-of-box payment connectors for Adyen and PayPal support the enhanced payment flows during checkout.
 
 > [!IMPORTANT]
-> - Only Adyen connector version **V002** truly supports enhanced SCA. Version **V001** still works when the checkout is configured for enhanced SCA. However, behind the scenes, that version still makes two calls.
-> - Because of SCA requirements that went into effect in the European Union (EU) on January 1, 2021, version **V001** of the Adyen connector should no longer be used. For information about how to configure the Adyen connector to use version **V002**, see [Set up a processor for new credit cards](adyen-connector-setup.md#set-up-a-processor-for-new-credit-cards).
+> - Only Adyen connector version **V002** and **V003** supports enhanced SCA.
+> - Because of SCA requirements that went into effect in the European Union (EU) on January 1, 2021, version **V001** of the Adyen connector should no longer be used. For information about how to configure the Adyen connector to use version **V002** or **V003**, see [Set up a processor for new credit cards](adyen-connector-setup.md#set-up-a-processor-for-new-credit-cards).
 
 ## Enable enhanced payments in storefront checkout in Commerce site builder
 
@@ -73,6 +73,20 @@ To enable the enhanced payments feature in Commerce site builder, follow these s
 4. Select **Save and publish**.
 
 ![Enabling enhanced payments in storefront checkout in Commerce site builder.](media/rfac.png)
+
+## Checkout Module arrangements
+
+Due to the change in the way the checkout flow places the order when single payment authorization is enabled, the **Checkout section container** should be the last module of the **Checkout information** module node in Site Builder for your checkout page. 
+
+A common setup for the **Checkout information** module block when using single payment authorization patterns include these modules in the following order:
+
+1. **Pickup information**
+2. **Shipping address**
+3. **Delivery options**
+4. **Contact information**
+5. **Checkout section container** (which includes **text block**, **loyalty points**, **gift card**, **payment(s)**, and **Billing address** modules within it)
+
+![The common Checkout module tree view in Site Builder.](media/CheckoutFormModuleTreeOrder.png)
 
 ## Additional resources
 
