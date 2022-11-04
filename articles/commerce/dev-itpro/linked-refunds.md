@@ -59,7 +59,7 @@ Cashiers can process a refund to the card that was used during the original tran
 
 - Linked refunds for cash-and-carry transactions that use credit or debit cards.
 - Linked refunds for customer orders that use credit or debit cards.
-- Linked refunds when the **Unified return processing experience in POS** feature is enabled, only if a single invoice is being returned at a time. 
+- Linked refunds when the **Unified return processing experience in POS** feature is enabled, and only if a single invoice is being returned at a time. 
  
 ### Unsupported flows
 
