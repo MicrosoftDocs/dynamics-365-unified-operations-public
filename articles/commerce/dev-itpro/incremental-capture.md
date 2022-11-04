@@ -2,7 +2,7 @@
 title: Incremental payment capture
 description: This article describes out-of-box support for incremental capture as part of order invoicing in Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 03/12/2021
+ms.date: 11/04/2021
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -65,8 +65,13 @@ To enable the "Extensibility to support incremental credit card capture" feature
 1. Search for **Extensibility to support incremental credit card capture**.
 1. Select the feature and then select **Enable now**.
 
-### Set the Credit card authorization Accounts Receivable parameter
-In Headquarters, navigate to **Accounts Receivalbe > Setup > Accounts receivable parameters**. In the **Credit Card** section, under **Setup**, ensure the **Credit card authorization** section is set to **Yes**. If set to 'No', the incremental capture functionality will not operate properly.
+### Set the credit card authorization parameter
+
+To set the credit card authorization parameter in headquarters, follow these steps.
+
+1. Go to **Accounts receivable \> Setup \> Accounts receivable parameters**. 
+1. In the left navigation pane, select **Credit card**.
+1. On the **Set up information for the delivery of shipments** FastTab, under **Setup**, ensure that the **Credit card authorization** option is set to **Yes**. If set to **No**, the incremental capture functionality will not work properly.
 
 ### Enable incremental capture for the Dynamics 365 Payment Connector for Adyen
 
