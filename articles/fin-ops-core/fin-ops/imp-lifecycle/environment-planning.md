@@ -147,7 +147,7 @@ The following table compares the deployment options.
 
 It's important that you select the correct Tier-2 or higher environment, depending on the purpose of the environment. 
 
-![Subscription estimate.](./media/environment-planning-3-environment-tiers.png)
+![Environment tiers.](./media/environment-planning-3-environment-tiers.png)
 
 > [!IMPORTANT]
 > The provided values are for reference only, you must work with your implementation partner to adjust this guidance, based on your specific business scenarios and factors such as type of users, complexity, and volumes.
