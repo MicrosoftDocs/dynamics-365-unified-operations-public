@@ -20,6 +20,7 @@ ms.search.industry: Retail
 # Enhanced payments in storefront checkout
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article provides an overview of enhanced strong customer authentication (SCA) support for storefront checkout in Microsoft Dynamics 365 Commerce.
 
@@ -61,7 +62,7 @@ By default, the out-of-box payment connectors for Adyen and PayPal support the e
 
 > [!IMPORTANT]
 > - Only Adyen connector versions **V002** and **V003** support enhanced SCA.
-> - Because of SCA requirements that went into effect in the European Union (EU) on January 1, 2021, version **V001** of the Adyen connector should no longer be used. For information about how to configure the Adyen connector to use version **V002** or **V003**, see [Set up a processor for new credit cards](adyen-connector-setup.md#set-up-a-processor-for-new-credit-cards).
+> - Because of SCA requirements that went into effect in the European Union (EU) on January 1, 2021, version **V001** of the Adyen connector should no longer be used. For information about how to configure the Adyen connector to use versions **V002** or **V003**, see [Set up a processor for new credit cards](adyen-connector-setup.md#set-up-a-processor-for-new-credit-cards).
 
 ## Enable enhanced payments in storefront checkout in Commerce site builder
 
@@ -76,7 +77,7 @@ To enable the enhanced payments feature in Commerce site builder, follow these s
 
 ## Checkout module placement
 
-Due to a change in the way the checkout flow places the order when SCA is enabled, in site builder for your checkout page, the checkout section container should be the last module in the **Checkout information** module node. 
+Due to a change in the way the checkout flow places the order when SCA is enabled, the checkout section container on your checkout page should be the last module in the **Checkout information** module node. 
 
 A common setup for the checkout information module block when using SCA places modules in the following order:
 
@@ -86,7 +87,7 @@ A common setup for the checkout information module block when using SCA places m
 - **Contact information**
 - **Checkout section container** (which includes text block, loyalty points, gift card, payment(s), and billing address modules within it)
 
-![The common Checkout module tree view in Site Builder.](../media/CheckoutFormModuleTreeOrder.png)
+![The common checkout module setup tree view in site builder](../media/CheckoutFormModuleTreeOrder.png)
 
 ## Additional resources
 
