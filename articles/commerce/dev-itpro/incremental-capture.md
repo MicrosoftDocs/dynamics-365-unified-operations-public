@@ -65,6 +65,9 @@ To enable the "Extensibility to support incremental credit card capture" feature
 1. Search for **Extensibility to support incremental credit card capture**.
 1. Select the feature and then select **Enable now**.
 
+### Set the Credit card authorization Accounts Receivable parameter
+In Headquarters, navigate to **Accounts Receivalbe > Setup > Accounts receivable parameters**. In the **Credit Card** section, under **Setup**, ensure the **Credit card authorization** section is set to **Yes**. If set to 'No', the incremental capture functionality will not operate properly.
+
 ### Enable incremental capture for the Dynamics 365 Payment Connector for Adyen
 
 In addition to enabling the "Extensibility to support incremental credit card capture" feature, the value of the **Enable Request Protection** property must also be set to **True** in the Dynamics 365 Payment Connector for Adyen merchant properties for every channel where the connector is used. If the value is set to **False** or left blank, incremental capture will not be enabled for the connector. When the property is set to **True**, a tracking ID is added to requests to the payment provider to prevent duplicate requests. Tracking ID support for third-party payment connectors is explained in the [Uptake incremental capture for third-party payment connectors](#uptake-incremental-capture-for-third-party-payment-connectors) section below.
