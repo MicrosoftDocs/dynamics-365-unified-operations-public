@@ -205,7 +205,7 @@ If product variants are used, the person who creates the gift card order is prom
 Modes of delivery must support the type of gift card. For example, a gift card product variant of the **Physical** style must be mapped to a mode of delivery that is related to shipping. A gift card product variant of the **Email** style must be mapped to an electronic mode of delivery. The electronic mode of delivery is defined on the **Customer orders** tab of the **Commerce parameters** page.
 
 > [!NOTE]
-> Only virtual gift cards are currently supported in e-commerce. For more details about setting up virtual gift cards in e-commerce, see [E-commerce digital gift cards](../digital-gift-cards.md). 
+> Only digital gift cards are supported in e-commerce currently. For more details about setting up digital gift cards, see [E-commerce digital gift cards](../digital-gift-cards.md). 
 
 ## Setup for the call center and storefront
 
