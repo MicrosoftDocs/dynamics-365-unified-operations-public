@@ -32,7 +32,7 @@ This article provides an overview of enhanced strong customer authentication (SC
 | Redirect | The action of moving an online shopper's browsing session out of the context of the merchant's storefront. |
 | Card token | An alias that is used to refer to a real payment card number. Card tokens enable a reference to an actual payment card to be saved. At the same time, they help prevent the security issues that can occur when real payment card numbers are saved. |
 
-Traditionally, the storefront checkout process made two distinct calls to the payment processor. The first call was used to tokenize the card number that was entered in the payment processor's embedded HTML iframe element during checkout. During this call, SCA was also enabled, so that the cardholder could be authenticated with the card's issuing bank as required. The second call used the card token that was obtained from the first call to request the actual authorization response.
+Traditionally, the storefront checkout process made two distinct calls to the payment processor. The first call was used to tokenize the card number that was entered in the payment processor's embedded HTML iFrame element during checkout. During this call, SCA was also enabled, so that the cardholder could be authenticated with the card's issuing bank as required. The second call used the card token that was obtained from the first call to request the actual authorization response.
 
 This two-call method for acquiring payment authorizations wasn't ideal for all cases, for the following reasons:
 
@@ -50,11 +50,11 @@ To address these issues, payments in Commerce storefront checkout have been refa
 
 ### No order review step
 
-After the payments flow is initiated, there is no step to review and submit the order. After payment details are entered, customers have only the **Place order** option. If the payment method that was provided requires SCA, customers are redirected to the bank's authentication page. After authentication is completed, customers are directed back to the checkout page, and the order is processed.
+After the payments flow is initiated, there's no step to review and submit the order. After payment details are entered, customers have only the **Place order** option. If the payment method that was provided requires SCA, customers are redirected to the bank's authentication page. After authentication is completed, customers are directed back to the checkout page, and the order is processed.
 
 The flow that was just described also applies to payment methods that redirect by default, such as PayPal. After payment details are provided to PayPal, the redirect back to the checkout page initiates order placement.
 
-In the traditional flow, after the payment details were entered in the embedded iframe element, a **Save and continue** button became available. When the customer selected this button, the tokenized payment was added to the checkout. In demonstration environments, there could also be a step that either collected the customer's email address or had the customer agree to terms of use. In the new flow, the validation that was previously done when the customer selected the final **Save and continue** button is now done when the customer selects the **Place order** button. Therefore, one fewer click is required on the customer's part, and a page load is eliminated from the checkout flow.
+In the traditional flow, after the payment details were entered in the embedded iFrame element, a **Save and continue** button became available. When the customer selected this button, the tokenized payment was added to the checkout. In demonstration environments, there could also be a step that either collected the customer's email address or had the customer agree to terms of use. In the new flow, the validation that was previously done when the customer selected the final **Save and continue** button is now done when the customer selects the **Place order** button. Therefore, one fewer click is required on the customer's part, and a page load is eliminated from the checkout flow.
 
 ## Payment connector support
 
