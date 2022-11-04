@@ -93,7 +93,7 @@ All the telemetry and events populated in Application insights have these fields
  - **user_Id**: This is currently set to user ID from the UserInfo table of finance and operations. 
  
 >[!NOTE] 
->This is only enabled if User sessions telemetry is configured.
+>This is only enabled if **User sessions** telemetry is configured.
 
  - **client_IP**: This field is always populated to 0.0.0.0 by Application insights for General Data Protection Regulation (GDPR) compliance. The IP address provided is used to populate the **client_City**, **client_StateOrProvince**, and **client_CountryOrRegion** fields.
  - **message**: This field is used to capture the error message shown to the user, in their local language, and the X++ stacktrace that originated in the error for failure type telemetry.
@@ -104,14 +104,14 @@ All the telemetry and events populated in Application insights have these fields
 ## How to enable the public preview feature
 
 > [!Note]
-> This feature isn't available in Azure China or Azure Government at this time. We will work to add this to the generally available feature when it comes available.  Currently, all of the telemetry is sent **only** to Azure public cloud, so you won't be able to supply an instrumentation key for China or Government at this time.
+> This feature isn't available in Azure China or Azure Government at this time. We will work to add this to the generally available feature when it comes available.  Currently, all of the telemetry is only sent to Azure public cloud, so you won't be able to supply an instrumentation key for China or Government at this time.
 
-This feature is in public preview and is first enabled by going to the **Feature management** workspace. Search for **Monitoring and telemetry** and enable it. If you don't see this option, and the private preview feature enabled, you'll need to disable that first. For more information, see the next section of this article.
+This feature is in public preview and is first enabled by going to **Feature management**. Enable the **Monitoring and telemetry** feature. If you don't see this option, and the private preview feature enabled, you'll need to disable that first. For more information, see the next section of this article.
 
 Once enabled, you will need to configure the parameters.
 1.	Go to **System Administration > Setup > Monitoring and telemetry parameters** page.
 2. On the **Environments** tab, fill in the LCS Environment IDs for each environment, and categorize the environment as a **Development**, **Test**, or **Production** environment. The **Environment ID** can be retrieved from the **Environment details** page in Lifecycle Services.
-3.	On the **Application Insights Registry** tab, determine which categories of environments send telemetry to which specific application insights destination. For example, developer telemetry can go to one place, while Production telemetry can go to another.
+3.	On the **Application Insights Registry** tab, determine which categories of environments send telemetry to which specific application insights destination. For example, developer telemetry can go to one place, while production telemetry can go to another.
 4.	On the top tab called **Configure**, you can turn on and off each type of telemetry you wish to capture. You can keep them all enabled, or only enable them when you need to diagnose an issue. 
 
 > [!Note]
