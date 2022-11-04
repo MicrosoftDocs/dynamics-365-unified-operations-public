@@ -2,7 +2,7 @@
 title: Set up Dynamics 365 Payment Connector for Adyen
 description: This article describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen.
 author: Reza-Assadi
-ms.date: 09/14/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -225,7 +225,7 @@ If you're packaging your own version of Modern POS by using the Retail SDK, you 
 
 To configure the Dynamics 365 Payment Connector for Adyen for call center payments, follow the instructions in the [Set up a processor for new credit cards](#set-up-a-processor-for-new-credit-cards) section earlier in this article.
 
-The configuration in Payment Services is the connector configuration used in Call Center. Note that 3DS is not supported in Call Center. Nor are digital wallet modern payment methods requiring users to sign-in, as Call Center users must not collect or utilize user passwords on behalf of customers.
+The configuration in headquarters at **Accounts receivable \> Payments setup \> Payment service** is the connector configuration used in the call center. 3D Secure (3DS) authentication is not supported in call center. Digital wallet modern payment methods requiring users to sign in are also not supported in call center, because call center agents are prohibited from collecting or using user passwords on behalf of customers.
 
 ### Configure additional information for the connector
 
