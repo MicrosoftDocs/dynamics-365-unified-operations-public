@@ -19,6 +19,7 @@ ms.assetid:
 # Checkout module
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article describes how to add a checkout module to a page and set the required properties.
 
@@ -101,7 +102,7 @@ To add a checkout module to a new page and set the required properties, follow t
 1. Create a checkout page that uses the new template.
 
 > [NOTE]
-> When using Single Payment Authorization as described in [Enhanced payments in storefront checkout](./dev-itpro/enhanced-sca.md), in the **Checkout information** section of the checkout page, confirm that the checkout section container is positioned last. This ensures that all required information is gathered by the checkout page prior to the final payment checkout and order completion actions. 
+> When using single payment authorization as described in [Enhanced payments in storefront checkout](./dev-itpro/enhanced-sca.md), in the **Checkout information** section of the checkout page, confirm that the checkout section container is positioned last. This ensures that all required information is gathered by the checkout page prior to the final payment checkout and order completion actions. 
 
 ## Additional resources
 
