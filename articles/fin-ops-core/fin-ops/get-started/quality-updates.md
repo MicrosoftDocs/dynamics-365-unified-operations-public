@@ -101,12 +101,12 @@ For information on the dark hours for each region, see [What are the planned mai
 **App version: TBD**
 **Corresponding latest KB article: TBD**
 
-| Station | Regions | Completed Schedule |
+| Station | Regions | Upcoming Sandbox Schedule |
 |---|---|---|
 | Station 1 | Canada Central, Canada East, France Central, India Central, Norway East, Switzerland West | December 1 to December 4, 2022 |
 | Station 2 | France South, India South, Norway West, Switzerland North, South Africa North, Australia East, UK South, UAE North, Japan East, Australia South East, South East Asia | December 2 to December 5, 2022 |
-| Station 3 | East Asia, UK West, Japan West, Brazil South, West Europe, East US, UAE Central | December 3 to December 6, 2022 |
-| Station 4 | North Europe, Central US, West US | December 4 to December 7, 2022 |
+| Station 3 | East Asia, UK West, Japan West, Brazil South, North Europe, East US, UAE Central | December 3 to December 6, 2022 |
+| Station 4 | West Europe, Central US, West US | December 4 to December 7, 2022 |
 | Station 5 | DoD, Government Community Cloud, China | Not Scheduled |
 
 > [!IMPORTANT] 
