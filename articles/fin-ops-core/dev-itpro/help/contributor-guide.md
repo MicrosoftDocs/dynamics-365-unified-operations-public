@@ -50,7 +50,7 @@ To join Microsoft in the world of GitHub and Markdown, you must be familiar with
 
 2. Fork the appropriate repo.
 
-    If you want to supplement Microsoft's content, then you do not need a fork of our repo. Only to customize Microsoft content for a custom Help solution, you must create a fork of the repo. If you want to customize Microsoft content in Markdown format, we recommend that you manually fork the relevant repo and use your favorite Markdown editor. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) and [Git and GitHub essentials for Docs](/contribute/git-github-fundamentals) in the Docs contributor guide.
+    If you want to supplement Microsoft's content, then you do not need a fork of our repo. If you will customize Microsoft content using the MarkDown format, we recommend that you manually fork the relevant repo and use your favorite MarkDown editor. For more information, see [Set up Git repository locally for documentation](/contribute/get-started-setup-local) and [Git and GitHub essentials for Docs](/contribute/git-github-fundamentals) in the Docs contributor guide.
 
     > [!TIP]
     > You aren't required to make your GitHub repos public. When you fork a public repo, in the settings for the new repo, you can specify whether the repo is public, private, or available only to specific GitHub accounts.
