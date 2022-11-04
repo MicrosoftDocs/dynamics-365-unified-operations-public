@@ -41,7 +41,7 @@ To add a customer, follow these steps.
     > [!NOTE]
     > The customer account that you add can't be the same as the invoice account.
 
-2. On **Customer split lines**, select **Add line**.
+2. On the **Customer split lines** tab, select **Add line**.
 3. Select a customer, and then enter the percentage of each invoice for that customer.
 4. By default, the start and end dates of the billing schedule are used as the start and end dates. Enter different start and end dates if the new customer will pay the specified percentage for only a portion of the billing schedule. For example, if the billing schedule has a start date of January 1 and an end date of December 31, and the new customer is billed 40 percent for the first nine months, specify January 1 as the start date and September 30 as the end date, and enter **40.00** as the percentage.
 
@@ -64,4 +64,4 @@ The audit information is updated if the billing schedule has already been billed
 > [!NOTE]
 > - The customer split option can't be used with stocked products.
 > - If the **Unbilled revenue** checkbox is selected, the **Customer split** checkbox can't be selected.
-> - If you use **Revenue split only**, the parent line has the **Customer split** option, but the child line items don't.
+> - If you use **Revenue split only** option, the parent line has the **Customer split** option, but the child line items don't.
