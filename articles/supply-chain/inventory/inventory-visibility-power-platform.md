@@ -82,13 +82,13 @@ Follow these steps to post a soft reservation request using the user interface:
 1. Open the **Inventory Visibility** power app.
 1. Open the **Operational Visibility** page from the left panel.
 1. Open the **Reservation Posting** tab.
-1. In the **Quantity** field, specify how many you want to soft reserve.
+1. In the **Quantity** field, specify the quantity that you want to soft reserve.
 1. Clear the **Enable negative inventory to support oversell** checkbox to prevent overselling or over-reserving the stock.
 1. In the **Operator** field, select the data source and physical measure that apply for soft reserved quantity.
 1. Enter the **Organization ID**, **Site ID** and **Location ID** and **Product ID** that you want to query.
 1. To get a more granular result, select a data source, dimensions, and dimension values.
 
-Another way to post a soft reservation is to make direct API requests. Use the pattern described in [Create one reservation event](inventory-visibility-api.md#create-one-reservation-event). Then select **Post**. To view the request response details, select **Show details**. You can also get the `reservationId` value from the response detailss.
+Another way to post a soft reservation is to make direct API requests. Use the pattern described in [Create one reservation event](inventory-visibility-api.md#create-one-reservation-event). Then select **Post**. To view the request response details, select **Show details**. You can also get the `reservationId` value from the response details.
 
 ### Allocation
 
@@ -112,7 +112,7 @@ To enable the **Inventory summary** page and set the synchronization frequency, 
 > [!NOTE]
 > The *OnHandMostSpecificBackgroundService* feature only tracks on-hand inventory changes that occurred after you turned on the feature. Data for products that haven't changed since you turned on the feature won't be synced from the inventory service cache to the Dataverse environment. If your **Inventory summary** page doesn't show all of the on-hand information you are expecting, open Supply Chain Management, go to **Inventory Management > Periodic tasks > Inventory Visibility integration**, disable the batch job and reenable it. This will do the initial push, and all data will sync to the *Inventory OnHand Sum* entity in the next 15 minutes. If you want to use the *OnHandMostSpecificBackgroundService* feature, we recommend that you turn it on before you create any on-hand changes and enable the **Inventory Visibility integration** batch job.
 
-## <a name="preload-the-inventory-visibility-onhand-query"></a>Preload a streamlined on-hand query
+## <a name="preload-streamlined-onhand-query"></a>Preload a streamlined on-hand query
 
 [!INCLUDE [preview-banner-section](../../includes/preview-banner-section.md)]
 <!-- KFM: Preview until further notice -->

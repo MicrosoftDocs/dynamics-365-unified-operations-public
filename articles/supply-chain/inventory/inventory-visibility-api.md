@@ -2,7 +2,7 @@
 title: Inventory Visibility public APIs
 description: This article describes the public APIs that are provided by Inventory Visibility.
 author: yufeihuang
-ms.date: 11/02/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.search.form:
 audience: Application User

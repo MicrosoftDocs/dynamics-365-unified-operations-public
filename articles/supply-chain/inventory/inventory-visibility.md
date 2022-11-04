@@ -2,7 +2,7 @@
 title: Inventory Visibility Add-in overview
 description: This article explains what Inventory Visibility is and describes its features.
 author: yufeihuang
-ms.date: 03/18/2022
+ms.date: 11/04/2022
 ms.topic: overview
 ms.search.form:
 audience: Application User
@@ -34,8 +34,10 @@ Additionally, because Inventory Visibility is built on Microsoft Dataverse, its 
 
 The Inventory Visibility service can be scaled up or down, depending on your data volume. The scalability experience is mostly seamless and is conducted by the Microsoft platform team, based on automatic detection and assessment of your transaction data volume.
 
-Below is inventory visibility architecture using example from East US island.
-![Inventory Visibility Architecture](media/inventory-visibility-architecture.png "Inventory Visibility Architecture")
+The following illustration shows the Inventory Visibility architecture.
+
+[<img src="media/inventory-visibility-architecture.png" alt="Inventory Visibility architecture." title="Inventory Visibility architecture" width="720" />](media/inventory-visibility-architecture.png)
+
 ## Feature highlights
 
 ### Get a global view of real-time inventory
@@ -44,7 +46,7 @@ Inventory Visibility ensures that you have access to the most up-to-date invento
 
 ### Central inventory adjustment
 
-Inventory Visibility allow you to call our API and direct post inventory changes from either inventory counting in your 3rd-party warehouse or inventory consumption in store to inventory visibility add-in (IV) from your datasources. The changes will take effect immediately in IV therefore inventory onhand deducted instantly.
+Inventory Visibility allows external systems to call its API to post inventory changes. The changes will immediately take effect in Inventory Visibility, so on-hand inventory is deducted instantly.
 
 ### Soft reservation to avoid overselling across all order channels
 
@@ -64,30 +66,34 @@ The ATP feature is easy to adopt into your daily order fulfillment process. Most
 
 ### Preallocate your stock to important channels or customers with Inventory Allocation
 
-Protect and ringfence your valuable onhand stock to important channels, customer groups or locations with inventory visibility allocation feature. Once allocated, the consumption of the inventory is restricted to the allocated pool and the inventory quantities left in the pool will be deducted in near real-time to relect latest pool availability for further consumption. For more information, see [Inventory Visibility inventory allocation] (inventory-visibility-allocation.md).
+The Inventory Visibility allocation feature lets you protect and ring-fence your valuable on-hand stock for important channels, customer groups, or locations. Once allocated, inventory consumption is restricted to the allocated pool and the quantities left in the pool will be deducted in near real-time to reflect the quantity still available for consumption. For more information, see [Inventory Visibility inventory allocation](inventory-visibility-allocation.md).
 
-### Compatibility with warehouse management processes (WMS) items
+### Compatibility with WMS items
 
 Microsoft aims to provide out-of-box integration with warehouse management processes (WMS), so that WMS customers can also enjoy the benefits of the Inventory Visibility service. Per the 2022 Wave 1 release (public preview in March), inventory service supports WMS item on-hand queries and ATP. The soft reservation and allocation feature will be supported for WMS customers in next wave. For more information, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md).
 
-The below picture shows highlevel summary on existing features and how they can be positioned in the dataflow.
-![Inventory Visibility feature overview](media/inventory-visibility-feature-overview.png "Inventory Visibility feature overview")
+The following illustration shows a high-level summary of existing features and how they can be positioned in the data flow.
+
+[<img src="media/inventory-visibility-feature-overview.png" alt="Inventory Visibility feature overview." title="Inventory Visibility feature overview" width="720" />](media/inventory-visibility-feature-overview.png)
+
 ## Licensing
 
 The Inventory Visibility service is available in the following versions:
 
-- **Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management** – For companies that have a valid Supply Chain Management license, Inventory Visibility is available at no extra prodcuct license cost. As Inventory Visibility is based on power platform therefore it is subject to power platform storage capacity and API limits. Your Dynamics Suppply Chain Management license should have included default storage and API capacity and you can purchase professional license if you need more capacity and storage. For details about default API allocation and professional license see [request limits and allocations](https://learn.microsoft.com/en-us/power-platform/admin/api-request-limits-allocations) and [Licensing overview for Microsoft Powerplatform](https://learn.microsoft.com/en-us/power-platform/admin/pricing-billing-skus). With default storage and API allocation you can start to try out Inventory Visibility add-in today. For installation details, see [Install and set up Inventory Visibility](inventory-visibility-setup.md). Please note if your estimated API/storage limit exeeds the standard allocation, you can contact your sales representive to reach out to platform team for exceptions.
-- **Inventory Visibility Service as a component of IOM** – This version is for either Intelligent Order Management (IOM) customers or companies that aren't using Supply Chain Management as their ERP system. The license is included in the IOM bundle. For more information, see [Intelligent Order Management overview](/dynamics365/intelligent-order-management/overview).
+- **Inventory Visibility Add-in for Microsoft Dynamics 365 Supply Chain Management** – For companies that have a valid Supply Chain Management license, Inventory Visibility is available at no extra cost. Because Inventory Visibility is based on the Microsoft Power Platform, it is subject to Power Platform storage capacity and API limits. Your Dynamics Supply Chain Management license should include default storage and API capacity and you can purchase a professional license if you need more. For details about default API allocation and the professional license, see [Request limits and allocations](/power-platform/admin/api-request-limits-allocations) and [Licensing overview for Microsoft Power Platform](/power-platform/admin/pricing-billing-skus). With default storage and API allocations, you can start to try out the Inventory Visibility add-in today. For installation details, see [Install and set up Inventory Visibility](inventory-visibility-setup.md). If your estimated API and storage usage exceeds the standard allocation, you can contact your sales representative and ask them to reach out to the platform team for an exception.
+- **Inventory Visibility Service as a component of IOM** – This version is for either Intelligent Order Management (IOM) customers or companies that aren't using Supply Chain Management as their ERP system. The license is included in the Intelligent Order Management bundle. For more information, see [Intelligent Order Management overview](/dynamics365/intelligent-order-management/overview).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
 
-## Inventory Visibility Terminology
+## Inventory Visibility terminology
 
-Common concepts and terminologies explained in Inventory Visibility add-in, for more information, see [Configure Inventory Visibility](inventory-visibility-configuration.md)
+The following concepts and terms are important to understand when you are working with the Inventory Visibility add-in.
 
-- **Data Source** - represents the system that your data is from
-- **Dimension** - Inventory dimensions that are used to identify product charateristics. It can be storage dimensions such as Site and warehouse, or product dimensions such as colour, size, style.
-- **Physical Measure** - Quantities that are measuring different inventory statuses, such as onhand,purchased, On Order, Sold. 
-- **Calculated Measure** - A quantitative measure that is calculated from a set of physical measures, for example calculated measure Total Available = onhand + purchased - On Order - Sold
-- **Partition** - Patition defines a hierarchy how inventory visibility will distribute the received data. Currently the default partition is Site and Location
-- **Index Hierarchy** - Index Hierarchy further defines how you would like to query inventory and obtain result with more granularity
+- **Data Source** - Represents the system that your data is from.
+- **Dimensions** - Identify product characteristics. They can be storage dimensions (such as site or warehouse), or product dimensions (such as color, size, or style).
+- **Physical measures** - Quantities that measure various inventory statuses, such as on-hand, purchased, on-order, or sold.
+- **Calculated measures** - Quantitative measures that are calculated from a set of physical measures. For example, the calculated measure *Total available* = on-hand + purchased – on-order – sold.
+- **Partition** - Defines a hierarchy for how inventory visibility will distribute received data. Currently, the default partition is site and location.
+- **Index hierarchy** - Further defines how you would like to query inventory and obtain results with more granularity.
+
+For more information about these terms and concepts, see [Configure Inventory Visibility](inventory-visibility-configuration.md).

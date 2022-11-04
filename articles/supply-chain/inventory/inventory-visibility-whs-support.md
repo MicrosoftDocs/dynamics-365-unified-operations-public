@@ -2,7 +2,7 @@
 title: Inventory Visibility support for WMS items
 description: This article describes Inventory Visibility support for items that are enabled for warehouse management processes (WMS items).
 author: yufeihuang
-ms.date: 03/10/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.search.form:
 audience: Application User
@@ -40,17 +40,17 @@ When you use the Advanced WMS feature for Inventory Visibility, all query result
 
 ## When to use the feature
 
-We recommend that you use the Advanced WMS feature for Inventory Visibility in scenarios where all the following conditions are met:
+We recommend that you use the WMS feature for Inventory Visibility in scenarios where all the following conditions are met:
 
 - You're syncing Supply Chain Management data with Inventory Visibility.
 - You're using WMS in Supply Chain Management.
-- Users make reservations for WMS items at levels below the warehouse level (for example, at license plate level because you're processing warehouse work).
+- Users make reservations for WMS items at levels below the warehouse level (for example, at the license plate level because you're processing warehouse work).
 
 In other scenarios, on-hand query results will be the same, regardless of whether the Advanced WMS feature for Inventory Visibility is enabled. Additionally, performance will be better if you don't enable the feature in these scenarios, because there are fewer calculations and less overhead.
 
-## Enable the Advanced WMS feature for Inventory Visibility
+## Enable the WMS feature for Inventory Visibility
 
-To enable the Advanced WMS feature for Inventory Visibility, follow these steps.
+To enable the WMS feature for Inventory Visibility, follow these steps.
 
 1. Sign in to Supply Chain Management as an admin.
 1. Open the [Feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) workspace, and enable the following features in this order:
@@ -77,23 +77,24 @@ The results from queries for WMS items are essentially the same as the results f
 - `ReservOrdered`
 - `ReservPhysical`
 
-All other physical measures are calculated just as they are when the Advanced WMS feature for Inventory Visibility is disabled.
+All other physical measures are calculated just as they are when the WMS feature for Inventory Visibility is disabled.
 
 For detailed information about how on-hand calculations for WMS items work, see the [Reservations in Warehouse management](https://www.microsoft.com/download/details.aspx?id=43284) white paper.
 
-## Onhand list view and data entity for WMS items
+## On-hand list view and data entity for WMS items
+
 The **Preload the Inventory Visibility Summary** page provides a view for the *On-hand Index Query Preload Results* entity. Unlike the *Inventory summary* entity, the *On-hand Index Query Preload Results* entity provides an on-hand inventory list for products together with selected dimensions. Inventory Visibility syncs the preloaded summary data every 15 minutes.
-If you use inventory visibility with WMS items and would like to view onhand list for WMS items, it is recommeded that you enable the Preload the Inventory Visibility Summary feature, you can find detailed in [Use the Inventory Visibility app-Preload the inventory visibility onhand query](inventory-visibility-power-platform.md#preload-the-inventory-visibility-onhand-query). There will be a corresponding data entity in dataverse that stores your query preload result which is updated every 15 minutes. The data entity's name is `Onhand Index Query Preload Result`
 
->[!NOTE]
->The dataverse entity is for read-only, you can view and export but DO NOT MODIFY the data in the inventory visibility entities.
+If you use inventory visibility with WMS items and would like to view the on-hand list for WMS items, we recommend that you enable the *Preload the Inventory Visibility Summary* feature (see also [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-streamlined-onhand-query)). A corresponding data entity in Dataverse stores your query preload result, which is updated every 15 minutes. The data entity's name is `Onhand Index Query Preload Result`.
 
-Changes to WMS item quantities that are stored in the Inventory Visibility Supply Chain Management data source (fnO) are prohibited. This is the same behaviour for other features of Inventory Visibility, this restriction is enforced to help prevent conflicts.
+> [!IMPORTANT]
+> The Dataverse entity is read-only. You can view and export but **do not modify** the data in the Inventory Visibility entities.
 
-## WMS items compatiability for other functions in Inventory Visibility
+Changes to WMS item quantities that are stored in the Supply Chain Management data source (`fnO`) are prohibited. This matches the behavior of other features of Inventory Visibility. This restriction is enforced to help prevent conflicts.
 
-[soft reservations](inventory-visibility-reservations.md) and [Inventory Allocation](inventory-visibility-allocation.md) on WMS items are supported. You can include WMS-related physical measures in soft reservation and allocation calculations. 
+## WMS item compatibility for other functions in Inventory Visibility
 
+[Soft reservations](inventory-visibility-reservations.md) and [inventory allocation](inventory-visibility-allocation.md) of WMS items are supported. You can include WMS-related physical measures in soft reservation and allocation calculations.
 
 ## Calculate available-to-promise quantities
 
