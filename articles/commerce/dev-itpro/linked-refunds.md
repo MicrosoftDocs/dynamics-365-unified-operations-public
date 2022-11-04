@@ -55,11 +55,11 @@ When the omni-channel payments functionality is turned on, the card payment toke
 
 ### Supported flows
 
-Cashiers can process a refund to the card that was used during the original transaction, even if the card isn't presented for the return.
+Cashiers can process a refund to the card that was used during the original transaction, even if the card isn't presented for the return. Supported flows include the following:
 
 - Linked refunds for cash-and-carry transactions that use credit or debit cards.
 - Linked refunds for customer orders that use credit or debit cards.
-- Linked refunds when the **Unified return processing experience in POS** feature is enabled, and only if a single invoice is being returned at a time. 
+- Linked refunds when the **Unified return processing experience in POS** feature is enabled, but only if a single invoice is being returned at a time. 
  
 ### Unsupported flows
 
