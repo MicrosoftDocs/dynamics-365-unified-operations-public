@@ -145,9 +145,14 @@ The following table compares the deployment options.
 
 ### Selecting the correct Tier-2 or higher environment
 
-It's important that you select the correct Tier-2 or higher environment, depending on the purpose of the environment. You must work with your implementation partner to adjust this guidance, based on your specific business scenarios and factors such as type of users, complexity, and volumes.
+It's important that you select the correct Tier-2 or higher environment, depending on the purpose of the environment. 
 
-After a subscription estimate is activated, you can also view transaction lines per hour in LCS for a volume check, as shown in the following illustration.
+![Subscription estimate.](./media/environment-planning-3-environment-tiers.png)
+
+> [!IMPORTANT]
+> The provided values are for reference only, you must work with your implementation partner to adjust this guidance, based on your specific business scenarios and factors such as type of users, complexity, and volumes.
+
+The [LCS Subscription estimator](../../dev-itpro/lifecycle-services/subscription-estimator.md) could be leveraged to get an indication of the transaction lines per hour in LCS for a volume check, as shown in the following illustration.
 
 ![Subscription estimate.](./media/environment-planning-4-subscription-estimate.png)
 
