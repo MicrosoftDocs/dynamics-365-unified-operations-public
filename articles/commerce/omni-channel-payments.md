@@ -30,6 +30,7 @@ ms.dyn365.ops.version: AX 8.1.3
 # Omni-channel payments overview
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article provides an overview of omni-channel payments in Dynamics 365 Commerce. It includes a comprehensive list of supported scenarios, information about functionality, setup, and troubleshooting, and descriptions of some typical issues.
 
@@ -176,7 +177,7 @@ Follow these steps to run the scenario.
 9. Select **Pay card** to initiate the payment.
 10. Tender the card payment for the amount that is due for the deposit.
 11. Complete the deposit payment on the payment terminal. 
-12. After the deposit is paid, select the option to use the same card for fulfillment, and wait for the order to be completed. If 100% of the deposit is paid (from step 10 above), the funds are captured immediately against the card and an authorization token will not be available at invoicing because the funds have already been captured and tracked as paid.
+12. After the deposit is paid, select the option to use the same card for fulfillment, and wait for the order to be completed. If 100% of the deposit is paid (from step 10 above), the funds are captured immediately against the card and an authorization token won't be available at invoicing because the funds have already been captured and tracked as paid.
 13. Start the POS for the Seattle store.
 14. In the POS, on the welcome page, select the **Orders to pickup** operation to see the orders for in-store pickup. 
 15. Select one or more lines from the order that was created in the reference storefront, and then select **Pick up**.
@@ -203,7 +204,7 @@ Follow these steps to run the scenario.
 8. Select **Pay card** to initiate the payment.
 9. Tender the card payment for the amount that is due for the deposit. 
 10. Complete the deposit payment on the payment terminal. 
-11. After the deposit is paid, select the option to use the same card for fulfillment, and wait for the order to be completed. If 100% of the deposit is paid (from step 9 above), the funds are captured immediately against the card and an authorization token will not be available at invoicing because the funds have already been captured and tracked as paid.
+11. After the deposit is paid, select the option to use the same card for fulfillment, and wait for the order to be completed. If 100% of the deposit is paid (from step 9 above), the funds are captured immediately against the card and an authorization token won't be available at invoicing because the funds have already been captured and tracked as paid.
 
 When the order is picked, packed, and invoiced in the back office, the payment details that are provided at the POS will be used to capture the funds for the goods that are being shipped to the customer. 
 
