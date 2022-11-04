@@ -51,7 +51,7 @@ When the **Generate invoice** process is complete, multiple sales orders (and sa
 
 ## Customer split on billing schedule lines
 
-The Customer split can be added to each individual billing schedule line if you only want to split certain billing schedule lines. Mark the **Customer split checkbox**
+The Customer split can be added to each individual billing schedule line if you only want to split certain billing schedule lines. Mark the **Customer split** checkbox
 on the line, select **Customer split** on the billing schedule line menu to update or enter the **Customer split** information. 
 
 The **Audit** information is updated if the billing schedule has already been billed and then the percentage is changed on the billing schedule line. Any lines billed
