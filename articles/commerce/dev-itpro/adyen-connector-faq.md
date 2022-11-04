@@ -20,6 +20,7 @@ ms.search.industry: Retail
 # Dynamics 365 Payment Connector for Adyen FAQ
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article provides answers to frequently asked questions regarding the Microsoft Dynamics 365 Payment Connector for Adyen. For an overview of the Dynamics 365 Payment Connector for Adyen, see [Dynamics 365 Payment Connector for Adyen overview](adyen-connector.md). 
 
@@ -83,9 +84,9 @@ For a complete list of Adyen payment status codes, see [Payments lifecycle](http
 
 Adyen supports two types of refunds: referenced and unreferenced. Referenced refunds can't be canceled. For unreferenced refunds, a cancellation attempt is made, but successful cancellation depends on the payment issuer and the potential delay that is configured for the processing by Adyen. If an error occurs when you force a local refund cancellation in POS, POS allows for a credit. However, if the cancellation of the unlinked refund isn't accepted on the payment gateway, discrepancies might occur between Dynamics 365 reports and Adyen reporting. For more information about Adyen's cancellation of unreferenced refunds, see [Cancel an unreferenced refund](https://docs.adyen.com/point-of-sale/refund-payment/cancel-unreferenced). 
 
-### Is 3D Secure (3DS) supported for Commerce call center iFrame payment windows?
+### Is 3D Secure (3DS) authentication supported in Commerce call center iFrame payment windows?
 
-No, the payment window used in the Commerce call center payment forms (configured via the connector on the **Payment Services** page in headquarters) doesn't support 3DS flows. Customer authentications requiring passwords or Strong Customer Authentication (SCA) are only supported in the online channel where customers are directly entering their sensitive and protective data.
+No, the payment window used in the Commerce call center payment forms (configured via the connector on the **Payment Services** page in headquarters) doesn't support 3DS authentication flows. Customer authentications requiring passwords or Strong Customer Authentication (SCA) are only supported in the online channel where customers are directly entering their sensitive and protective data.
 
 ## Next steps
 
