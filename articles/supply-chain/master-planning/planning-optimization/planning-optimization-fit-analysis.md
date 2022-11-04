@@ -107,7 +107,7 @@ The following table shows the various results that can be shown after a fit anal
 | Safety margins | Master plans with safety margin: *\#* | This feature is now supported. For additional information, see [Safety margins](safety-margins.md) |  Supported |
 | Safety stock fulfillment | Item coverage records with "Fulfill minimum" different from "Today's date + procurement time": *\#* | Planning Optimization always uses *Today's date + procurement time*. This change is made to prepare for a simplified planning setup in the future, and to provide an actionable result. If the procurement time isn't included for safety stock, planned orders that are created for current low on-hand inventory will always be delayed because of the lead time. This behavior can cause significant noise and unwanted planned orders. The best practice is to change the setting so that *Today's date + procurement time* is used. Update master data to avoid warnings. | N/A |
 | Sales quotations | Master plans with sales quotations enabled: *\#* | This feature is pending. Currently, quotations aren't considered when Planning Optimization is enabled. They will be ignored, regardless of this setting. | 2022 release wave 2 or later |
-| Shelf life | Master plans with shelf life enabled: *\#* | This feature is pending. | 2022 release wave 2 |
+| Shelf life | Master plans with shelf life enabled: *\#* | This feature is now supported. | Supported |
 
 ## Additional resources
 
