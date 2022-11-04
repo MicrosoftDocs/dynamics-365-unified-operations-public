@@ -100,6 +100,8 @@ To add a checkout module to a new page and set the required properties, follow t
 1. Create a template that uses the new checkout fragment.
 1. Create a checkout page that uses the new template.
 
+Note that when using Single Payment Authorization as described in the [Enhanced payments in storefront checkout](./dev-itpro/enhanced-sca.md) article, ensure the **Checkout section container** is positioned last in the **Checkout information** section for the checkout page in Site Builder. This ensures all required information is gathered by the checkout page prior to the final payment checkout and order completion actions. 
+
 ## Additional resources
 
 [Cart module](add-cart-module.md)
