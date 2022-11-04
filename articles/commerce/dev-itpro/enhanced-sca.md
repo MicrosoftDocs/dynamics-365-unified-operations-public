@@ -86,7 +86,7 @@ A common setup for the checkout information module block when using SCA places m
 - **Contact information**
 - **Checkout section container** (which includes text block, loyalty points, gift card, payment(s), and billing address modules within it)
 
-![The common Checkout module tree view in Site Builder.](./media/CheckoutFormModuleTreeOrder.png)
+![The common Checkout module tree view in Site Builder.](../media/CheckoutFormModuleTreeOrder.png)
 
 ## Additional resources
 
