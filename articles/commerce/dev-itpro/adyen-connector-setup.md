@@ -20,6 +20,7 @@ ms.search.industry: Retail
 # Set up Dynamics 365 Payment Connector for Adyen
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](../includes/preview-banner.md)]
 
 This article describes how to sign up with Adyen and set up the Microsoft Dynamics 365 Payment Connector for Adyen. For an overview of the Dynamics 365 Payment Connector for Adyen, see [Dynamics 365 Payment Connector for Adyen overview](adyen-connector.md).
 
@@ -147,7 +148,7 @@ The Adyen payment connector can be configured to communicate with devices via th
 1. On the Action Pane, select **Save**.
 
 > [!NOTE]
-> When setting up a local POS instance, the **Cloud API** key field is still required for "card not present" scenarios to work. Scenarios include omnichannel payments customer orders created in POS, linked refunds, and payment authorization token references on order pickups.
+> When setting up a local POS instance, the **Cloud API** key field is still required for "card not present" scenarios to work. Such scenarios include omnichannel payments customer orders created in POS, linked refunds, and payment authorization token references on order pickups.
 
 ##### EFT service for cloud communication
 
