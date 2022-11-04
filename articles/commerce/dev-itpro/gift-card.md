@@ -134,7 +134,7 @@ In the following example, if the first four digits of a card number are **6036**
 12. Wait until **Applied** appears next to all the jobs, and then close the browser.
 
     > [!NOTE]
-    > If you are using Retail Commerce Scale Unit (RCSU) that is located in the store, you need to perform an IIS reset to clear the cache. You can either do this through the IIS application or open an admin Command Prompt window and enter `iisreset`. Otherwise, wait for the RCSU to be updated.
+    > If you're using Retail Commerce Scale Unit (RCSU) that is located in the store, you need to perform an IIS reset to clear the cache. You can either do this through the IIS application or open an admin Command Prompt window and enter `iisreset`. Otherwise, wait for the RCSU to be updated.
 
 ## Configure and test Modern POS
 
@@ -374,7 +374,7 @@ For physical external gift cards, complete the following steps to register the g
 > [!NOTE]
 > If the error message "Credit card process failed, due to 'Declined'" is displayed, the gift card has already been activated. You should select a different card number.
 
-When you are finished with the registration process, return to the sales order. The **Gift card number** and **Expiration** fields are displayed with the added information under the **Lines details > Packaging** section.
+When you're finished with the registration process, return to the sales order. The **Gift card number** and **Expiration** fields are displayed with the added information under the **Lines details > Packaging** section.
 
 ### Pay by using external gift cards in the call center
 
