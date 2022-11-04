@@ -4,7 +4,7 @@
 title: Data management package REST API
 description: This article describes the Data management framework's package REST API.
 author: peakerbl
-ms.date: 11/4/22
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
