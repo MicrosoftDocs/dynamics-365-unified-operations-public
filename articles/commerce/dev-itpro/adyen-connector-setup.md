@@ -147,7 +147,7 @@ The Adyen payment connector can be configured to communicate with devices via th
 1. On the Action Pane, select **Save**.
 
 > [!NOTE]
-> Even though setting up a Local POS instance, the **Cloud API** key field is still required.
+> Even though setting up a Local POS instance, the **Cloud API** key field is still required for Card Not Present scenarios to work. Scenarios include omni-channel payments Customer Orders created in POS, linked refunds, and using the payment authorization token reference on order pickup.
 
 ##### EFT service for cloud communication
 
