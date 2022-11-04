@@ -38,7 +38,7 @@ This article provides an overview of omni-channel payments in Dynamics 365 Comme
 
 | Term | Description |
 |---|---|
-| Token | A string of data that a payment processor provides as a reference. Tokens can represent payment card numbers, payment authorizations, and previous payment captures. Tokens are important because they help keep sensitive data out of the point of sale (POS) system. They are sometimes also referred to as *references*. |
+| Token | A string of data that a payment processor provides as a reference. Tokens can represent payment card numbers, payment authorizations, and previous payment captures. Tokens are important because they help keep sensitive data out of the point of sale (POS) system. They're sometimes also referred to as *references*. |
 | Card token | A token that a payment processor provides for storage in the POS system. A card token can be used only by the merchant who receives it. Card tokens are sometimes also referred to as *card references*. |
 | Authorization (auth) token | A unique ID that a payment process provides as part of the response that it sends to a POS system after the POS system makes an authorization request. An authorization token can be used later if the processor is called to perform actions such as reversing or voiding the authorization. However, it's most often used to capture funds when an order is fulfilled or a transaction is finalized. Authorization tokens are sometimes also referred to as *authorization references*. |
 | Capture token | A reference that a payment processor provides to a POS system when a payment is finalized or captured. The capture token can then be used to reference the payment capture in subsequent operations, such as refund requests. | 
@@ -47,7 +47,7 @@ This article provides an overview of omni-channel payments in Dynamics 365 Comme
 
 ## Overview
 
-In general, the term *omni-channel payments* describes the ability to create an order in one channel and fulfill it in another channel. The key to omni-channel payment support is preserving payment details together with the rest of the order details, and then using those payment details when the order is recalled or processed in another channel. A classic example is the "Buy online, pick up in store" scenario. In this scenario, the payment details are added when the order is created online. They are then recalled at the POS to charge the customer's payment card at the time of pickup. 
+In general, the term *omni-channel payments* describes the ability to create an order in one channel and fulfill it in another channel. The key to omni-channel payment support is preserving payment details together with the rest of the order details, and then using those payment details when the order is recalled or processed in another channel. A classic example is the "Buy online, pick up in store" scenario. In this scenario, the payment details are added when the order is created online. They're then recalled at the POS to charge the customer's payment card at the time of pickup. 
 
 All the scenarios that are described in this article can be implemented by using the standard Payments software development kit (SDK) that is provided with Commerce. The [Dynamics 365 Payment Connector for Adyen](/dynamics365/unified-operations/retail/dev-itpro/adyen-connector?tabs=8-1-3) provides an out-of-box implementation of every scenario that is described here. 
 
@@ -109,7 +109,7 @@ The following sections describe the steps for each scenario and show how to run 
 Before you start, make sure that the following prerequisites are in place:
 
 - You have a reference storefront where the Adyen connector is configured.
-- The **Omni-channel payments** option on the **Commerce shared parameters** page is set to **True**. In later versions this settng is moved to the **Feature Management** workspace where you can select the **Omni-channel payments** feature and click **Enable now**. 
+- The **Omni-channel payments** option on the **Commerce shared parameters** page is set to **True**. In later versions this setting is moved to the **Feature Management** workspace where you can select the **Omni-channel payments** feature and click **Enable now**. 
 - The Adyen payment connector is configured for the Houston POS register.
 - The Retail Modern POS for Windows or Android with built-in hardware station
     -or-
@@ -231,7 +231,7 @@ A customer who comes to the store for order pickup has the option to use a diffe
 
 ### Invalid authorizations
 
-If the card that was used to create an order is no longer valid, when products are selected for pickup, the payment capture request will fail. The POS payment connector will then try to create a new authorization and capture by using the same card details. If the new authorization or capture fails, the cashier will be informed that the payment could not be processed. The cashier must then get a new payment from the customer. 
+If the card that was used to create an order is no longer valid, when products are selected for pickup, the payment capture request will fail. The POS payment connector will then try to create a new authorization and capture by using the same card details. If the new authorization or capture fails, the cashier will be informed that the payment couldn't be processed. The cashier must then get a new payment from the customer. 
 
 ### Multiple available payments
 
