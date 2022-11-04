@@ -56,23 +56,23 @@ You can access the archival job in Commerce headquarters at **Retail and Commerc
 ### Parameters section
 
 The **Parameters** section of the **Archive credit card transaction data** flyout menu contains the following parameters:
-  - **Minimum transaction age in days** - This is a required field. Enter the age, in days, of credit card authorizations that will be subject to archiving. The value you enter should be the amount of time that customers can have refunds linked to their original credit card authorization. If you set the field to 365 days, for example, a return for a transaction that is 366 days old might still be eligible for refund, depending on the merchant's policies. However, because the data that is required to do a linked refund won't be available in Dynamics after it is archived, any refund that is processed will have to be a standalone refund.
+  - **Minimum transaction age in days** - This is a required field. Enter the age, in days, of credit card authorizations that will be subject to archiving. The value you enter should be the time period that customers can have refunds linked to their original credit card authorization. For example, if you set the field to 365 days, a return for a transaction that is 366 days old might still be eligible for refund, depending on the merchant's policies. However, because the data that is required to do a linked refund won't be available in Dynamics after it is archived, any refund that is processed will have to be a standalone refund.
   - **Delete data without archiving** - When this parameter is set to **Yes**, Commerce will delete (not archive) the transaction and signature capture data for all transactional records that meet the criteria of minimum transaction age in days.
   - **Corresponding transaction date** - This is a reference field displaying the date in the past that currently corresponds to the value of the **Minimum transaction age in days** parameter. Records older than the date shown will be affected by the job.
-  - **Use Compression** - When this parameter is set to **Yes**, Commerce will compress tokens to save on storage space. For more information, see [Further storage management with token compression](#further-storage-management-with-token-compression) below.
+  - **Use compression** - When this parameter is set to **Yes**, Commerce compresses tokens to save on storage space. For more information, see [Further storage management with token compression](#further-storage-management-with-token-compression) below.
 
 ### Run in the background section
 
-The **Run in the background** section of the **Archive credit card transaction data** flyout menu controls the batch functionality and scheduling of the batch job, and contains the following parameters that you must set for your batch job:
+The **Run in the background** section of the **Archive credit card transaction data** flyout menu controls the batch functionality and scheduling of the batch job, and contains the following parameters that you can set for your batch job:
 
 - **Batch processing** - This parameter is set to **Yes** by default and can't be turned off.
 - **Recurrence** - The parameters on the **Recurrence \> Define recurrence** tab allow you to set recurrence timing configurations to run the job.
 - **Alerts** - The parameters on the **Alerts \> Batch job alerts** tab allow you to configure alerts for different events related to the batch job.
-- **Task description** - This parameter is the batch job display label.
+- **Task description** - This parameter specifies the batch job display label.
 - **Batch group** - This parameter can be used to specify batch groups to distribute the workload to different servers.
-- **Private** - When this parameter is set to **Yes**, Commerce will restrict other users from processing your batch job. Only the user who configured the form will be able to run the job.
-- **Critical Job** - Setting this parameter to **Yes** will prioritize processing capacity for the job.
-- **Monitoring category** - A monitoring category can be assigned to make it easier to identify types of jobs during monitoring.
+- **Private** - When this parameter is set to **Yes**, Commerce restricts other users from processing your batch job. Only the user who configured the form will be able to run the job.
+- **Critical Job** - Setting this parameter to **Yes** prioritizes processing capacity for the job.
+- **Monitoring category** - A monitoring category can be assigned to make it easier to identify different types of jobs during monitoring.
 
 The following illustration shows an example of parameter settings in the **Archive credit card transaction data** dialog box.
 
@@ -85,7 +85,7 @@ After the **Minimum transaction age in days** field and batch details have been 
 > [!IMPORTANT]
 > The data that is subject to archiving includes personally identifiable customer information such as the name of the cardholder. This sensitive data should be handled according to your local regulatory requirements.
 
-After you confirm the parameters for data that must be archived, you're prompted to confirm that you understand that the data that is being archived and can't easily be restored, as shown in the following illustration.
+After you confirm the parameters for data that must be archived, you'll be prompted to confirm that you understand that the data that is being archived and can't easily be restored, as shown in the following illustration.
 
 ![Confirmation message box.](media/PAYMENTS/Batch3.png)
 
@@ -104,7 +104,7 @@ To enable the **Compress payment tokens** feature in headquarters, follow these 
 1. Under **All**, search for the **Compress payment tokens** feature.
 1. Select the feature, and then select **Enable now** in the properties pane.
 
-Once the **Compress payment tokens** feature is enabled, the **Use compression** property can be set to **Yes** in the **Archive credit card transaction data** parameters section.
+Once the **Compress payment tokens** feature is enabled, the **Use compression** property in the **Archive credit card transaction data** parameters section can be set to **Yes**.
 
 ## Additional resources
 
