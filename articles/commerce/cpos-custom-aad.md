@@ -48,7 +48,7 @@ To create and configure a custom Retail Server app in Azure AD, follow these ste
 ## Set up a custom CPOS app in Azure AD
 
 > [!IMPORTANT]
-> If you are upgrading an existing custom CPOS Azure AD app that was created before Commerce version 10.0.21, follow the steps in [Upgrade an existing custom CPOS Azure AD app created before Commerce version 10.0.21](#upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021).
+> If you're upgrading an existing custom CPOS Azure AD app that was created before Commerce version 10.0.21, follow the steps in [Upgrade an existing custom CPOS Azure AD app created before Commerce version 10.0.21](#upgrade-an-existing-custom-cpos-azure-ad-app-created-before-commerce-version-10021).
 
 To create and configure a custom CPOS app in Azure AD, follow these steps.
 
@@ -100,7 +100,7 @@ CPOS will use both parameters when it sends requests to Azure AD to acquire a se
 Next, you must update identity providers settings in Commerce headquarters.
 
 1. In Commerce headquarters, open the **Commerce shared parameters** page.
-1. On the **Identity Providers** tab, in the **Identity providers** section, select the row where the **Type** field is set to **Azure Active Directory** and the **Issuer** field points to your Azure AD tenant. This setting declares that you'll work with child grids that contain the data that is related to the identity provider that corresponds to your Azure AD tenant.
+1. On the **Identity Providers** tab, in the **Identity providers** section, select the row where the **Type** field is set to **Azure Active Directory** and the **Issuer** field points to your Azure AD tenant. This setting declares that you'll work with child grids that contain the data that's related to the identity provider that corresponds to your Azure AD tenant.
 1. In the **Relying parties** section, select **Add** to add a row.
 1. Set the following fields:
 
