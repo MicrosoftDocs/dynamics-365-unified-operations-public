@@ -4,7 +4,7 @@
 title: Data management package REST API
 description: This article describes the Data management framework's package REST API.
 author: peakerbl
-ms.date: 08/16/2021
+ms.date: 11/04/22
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -295,7 +295,7 @@ The following APIs are used to export files (data packages).
 
 ### ExportToPackagePreview 
 
-The **ExportToPackagePreview ** API is used to preview an export of a data package with large number of records. This API is applicable to both cloud deployments and on-premises deployments.
+The **ExportToPackagePreview ** API is used to preview an export of a data package with a large number of records. This API is applicable to both cloud deployments and on-premises deployments.
 
 - The export data project must be created before you call this API. If the project doesn't exist, a call to the API returns an error.
 - If change tracking has been turned on, only records that have been created or updated since the last run are exported. (In other words, only the delta is returned.)
