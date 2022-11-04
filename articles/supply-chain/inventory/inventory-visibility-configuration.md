@@ -27,7 +27,6 @@ Before you start to work with Inventory Visibility, you must complete the follow
 - [Partition configuration](#partition-configuration)
 - [Product index hierarchy configuration](#index-configuration)
 - [Reservation configuration (optional)](#reservation-configuration)
-- [Preload onhand index configuration](#preload-onhand-configuration)
 - [Default configuration sample](#default-configuration-sample)
 
 ## Prerequisites
@@ -50,7 +49,7 @@ The Inventory Visibility Add-in adds several new features to your Power Apps ins
 | *OnHandMostSpecificBackgroundService* | This feature provides an inventory summary for products, together with all dimensions. The inventory summary data will periodically be synced from Inventory Visibility. The default synchronization frequency is once every 15 minutes, and can be set as high as once every 5 minutes. For more information, see [Inventory summary](inventory-visibility-power-platform.md#inventory-summary). |
 | *onHandIndexQueryPreloadBackgroundService* | This feature makes it possible to preload Inventory Visibility on-hand queries to assemble on-hand lists with preselected dimensions. The default synchronization frequency is once every 15 minutes. For more information, see [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-streamlined-onhand-query). |
 | *OnhandChangeSchedule* | This optional feature enables the on-hand change schedule and available to promise (ATP) features. For more information, see [Inventory Visibility on-hand change schedule and available to promise](inventory-visibility-available-to-promise.md). |
-| *Allocation* | This optional feature enables Inventory Visibility to have the ability for inventory protection (ringfencing) and oversell control. For more information, see [Inventory Visibility inventory allocation](inventory-visibility-allocation.md). |
+| *Allocation* | This optional feature enables Inventory Visibility to have the ability for inventory protection (ring fencing) and oversell control. For more information, see [Inventory Visibility inventory allocation](inventory-visibility-allocation.md). |
 | *Enable warehouse items in Inventory Visibility* | This optional feature enables Inventory Visibility to support items that are enabled for warehouse management processes (WMS). For more information, see [Inventory Visibility support for WMS items](inventory-visibility-whs-support.md). |
 
 ## <a name="get-service-endpoint"></a>Find the service endpoint
@@ -88,7 +87,7 @@ The data source configuration includes the following parts:
 
 The purpose of the dimension configuration is to standardize the multi-system integration for posting events and queries, based on dimension combinations. Inventory Visibility provides a list of base dimensions that can be mapped from the dimensions of your data source. Thirty-three dimensions are available for mapping.
 
-- If you're using Supply Chain Management as one of your data sources, by default 13 dimensions are already mapped to the Supply Chain Management standard dimensions. The other twelve dimensions (`inventDimension1` through `inventDimension12`) are also mapped to custom dimensions in Supply Chain Management. The remaining eight dimensions `ExtendedDimension1` through `ExtendedDimension8`are extended dimensions that you can map to external data sources.
+- If you're using Supply Chain Management as one of your data sources, by default 13 dimensions are already mapped to the Supply Chain Management standard dimensions. The other 12 dimensions (`inventDimension1` through `inventDimension12`) are also mapped to custom dimensions in Supply Chain Management. The remaining eight dimensions `ExtendedDimension1` through `ExtendedDimension8`are extended dimensions that you can map to external data sources.
 - If you don't use Supply Chain Management as one of your data sources, you can freely map the dimensions. The following table shows the full list of available dimensions.
 
 > [!NOTE]
@@ -141,7 +140,7 @@ To add dimension mappings, follow these steps.
 1. In the **To Base Dimension** field, select the dimension in Inventory Visibility that you want to map.
 1. Select **Save**.
 
-For example, if you have already created a data source called `ecommerce`, and this data source includes a product color dimension, to do the mapping, you could first add a `ProductColor` to the **Dimension Name** in the `ecommerce` data source and then select `ColorId` from **To Base Dimension** dropdown list.
+For example, if you've already created a data source called `ecommerce`, and this data source includes a product color dimension, to do the mapping, you could first add a `ProductColor` to the **Dimension Name** in the `ecommerce` data source and then select `ColorId` from **To Base Dimension** dropdown list.
 
 ### <a name="data-source-configuration-physical-measures"></a>Physical measures
 
@@ -172,7 +171,7 @@ If your data source is Supply Chain Management, you don't have to re-create the 
 
 1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
 1. Open the **Configuration** page.
-1. On the **Data Source** tab, select the data source you want to add physical measures, e.g. data source `ecommerce`. Next in the **Physical Measures** section, select **Add**, specify the measure name, e.g. `Returned` if you want to record returned quantities within this data source to Inventory Visibility. Save your changes.
+1. On the **Data Source** tab, select the data source you want to add physical measures, for example, data source `ecommerce`. Next in the **Physical Measures** section, select **Add**, specify the measure name, for example, `Returned` if you want to record returned quantities within this data source to Inventory Visibility. Save your changes.
 
 ### Calculated measures
 
@@ -181,7 +180,7 @@ You can use Inventory Visibility to query on both inventory physical measures an
 > [!IMPORTANT]
 > A calculated measure is a composition of physical measures. Its formula can include only physical measures without duplicates, not calculated measures.
 
-The configuration lets you define a set of calculated measure fomulas that includes modifiers of addition or subtraction to get the total aggregated output quantity.
+The configuration lets you define a set of calculated measure formulas that includes modifiers of addition or subtraction to get the total aggregated output quantity.
 
 To set up a custom calculated measure, follow these steps.
 
@@ -205,11 +204,11 @@ To set up a custom calculated measure, follow these steps.
 
 For example, As a fashion company you operate across three data sources:
 
-- `pos` – Corresponds to the store channel
-- `fno` – Corresponds to Supply Chain Management
-- `ecommerce` – Corresponds to your web channel
+- `pos` – Corresponds to the store channel.
+- `fno` – Corresponds to Supply Chain Management.
+- `ecommerce` – Corresponds to your web channel.
 
-Without calculated measures, when you query for product D0002 (Cabinet) under site 1, warehouse 11 and dimension colorID Red, you could have the following query result -showing inventory quantities under each pre-configured physical measures. But you do not have visibility on the total available for reservation quantities across your data sources.
+Without calculated measures, when you query for product D0002 (Cabinet) under site 1, warehouse 11 and dimension colorID Red, you could have the following query result, which shows inventory quantities under each pre-configured physical measure. But you don't have visibility on the total available for reservation quantities across your data sources.
 
 ```json
 [

@@ -25,7 +25,7 @@ Inventory Visibility provides a model-driven app for visualization. The app cont
 - It supports real-time on-hand inventory queries on various dimension combinations.
 - It provides a UI for posting reservation requests.
 - It provides a view of the inventory on-hand for products together with all dimensions.
-- It provides a view of an on-hand inventory list for products together with pre-defined dimensions. The onhand list view can either be a full summary, or a preloaded result from onhand query.
+- It provides a view of an on-hand inventory list for products together with pre-defined dimensions. The on-hand list view can either be a full summary, or a preloaded result from an on-hand query.
 
 ## Prerequisites
 
@@ -40,11 +40,11 @@ To open and authenticate the Inventory Visibility app, follow these steps:
 1. Open the **Operational Visibility** page from the left panel.
 1. Select the **Settings** button (gear icon) at the top of the page.
 1. The **Settings** dialog opens. Enter the **Client Id**,**Tenant Id** and **Client Secret** that you noted when [installing and setting up Inventory Visibility](inventory-visibility-setup.md).
-1. Select the **Refresh** button next to the **Bearer Token** field. The system generates a new bearer token based on the information you have entered.
+1. Select the **Refresh** button next to the **Bearer Token** field. The system generates a new bearer token based on the information you've entered.
 
     ![On-hand query settings](media/inventory-visibility-query-settings.png "On-hand query settings")
 
-1. On receiving a valid bearer token, close the window. The bearer token will expires after some time, so you will need refresh it now and then when you need to update the configuration, post data, or query data.
+1. On receiving a valid bearer token, close the window. The bearer token will expire after some time, so you'll need to refresh it now and then when you need to update the configuration, post data, or query data.
 
 ## <a name="configuration"></a>Configure the Inventory Visibility app
 
@@ -66,9 +66,9 @@ The **Onhand Query** tab of the **Operational Visibility** page lets you query t
 1. In the **Product ID** field, enter one or more product IDs to get an exact match to your query. If you leave **Product ID** filed blank, your result will include all the products at the specified site and location.
 1. To get a more granular result (such as view by dimension values like color and size), select group-by dimensions from the **Group Result By** dropdown list.
 1. To find items with a specific dimension value (such as color = red), select the dimension from the **Filter Dimensions** field and enter a dimension value.
-1. Select **Query**. You will receive a success (green) or failed (red) message. If your query fails, check your query criteria and and make sure your [bearer token](#open-authenticate) hasn't expired.
+1. Select **Query**. You'll receive a success (green) or failed (red) message. If your query fails, check your query criteria and make sure your [bearer token](#open-authenticate) hasn't expired.
 
-Another way to make an on-hand queries is to make direct API requests. You can use either `/api/environment/{environmentId}/onhand/indexquery` or `/api/environment/{environmentId}/onhand`. For more information, see [Inventory Visibility public APIs](inventory-visibility-api.md). 
+Another way to make an on-hand query is to make direct API requests. You can use either `/api/environment/{environmentId}/onhand/indexquery` or `/api/environment/{environmentId}/onhand`. For more information, see [Inventory Visibility public APIs](inventory-visibility-api.md).
 
 ### Reservation posting
 
@@ -134,8 +134,8 @@ The **Inventory summary** page provides three fields above the grid (**Default d
 
 ![The Inventory summary page.](media/inventory-visibility-onhand-list.png "The Inventory summary page")
 
-Because you will have predefined the dimensions used for loading summary data, the **Preload the Inventory Visibility summary** page displays dimension-related columns. *The dimensions aren't customizable&mdash;the system only supports site and location dimensions for preloaded on-hand lists.* The **Preload the Inventory Visibility summary** page provides filters that are similar to those on the **Inventory summary** page, except the dimensions are already selected. The following screenshot highlights the filtering fields available on the **Preload the Inventory Visibility summary** page.
+Because you'll have predefined the dimensions used for loading summary data, the **Preload the Inventory Visibility summary** page displays dimension-related columns. *The dimensions aren't customizable&mdash;the system only supports site and location dimensions for preloaded on-hand lists.* The **Preload the Inventory Visibility summary** page provides filters that are similar to those on the **Inventory summary** page, except the dimensions are already selected. The following screenshot highlights the filtering fields available on the **Preload the Inventory Visibility summary** page.
 
 ![The Preload the Inventory Visibility summary page.](media/inventory-visibility-preload-onhand-list.png "The Preload the Inventory Visibility summary page")
 
-At the bottom of the **Preload the Inventory Visibility summary** and  **Inventory summary** pages, you'll find information such as "50 records (29 selected)" or "50 records". This information refers to the currently loaded records from the **Advanced filter** result. The text "29 selected" refers to the number of records that have been selected by using the column header filter for the loaded records. There is also a **Load more** button that you can use to load more records from Dataverse. The default number of loaded records is 50. When you select **Load more**, the next 1,000 available records will be loaded into the view. The number on the **Load more** button indicates the currently loaded records and the total number of records for the **Advanced Filter** result.
+At the bottom of the **Preload the Inventory Visibility summary** and  **Inventory summary** pages, you'll find information such as "50 records (29 selected)" or "50 records". This information refers to the currently loaded records from the **Advanced filter** result. The text "29 selected" refers to the number of records that have been selected by using the column header filter for the loaded records. There's also a **Load more** button that you can use to load more records from Dataverse. The default number of loaded records is 50. When you select **Load more**, the next 1,000 available records will be loaded into the view. The number on the **Load more** button indicates the currently loaded records and the total number of records for the **Advanced Filter** result.

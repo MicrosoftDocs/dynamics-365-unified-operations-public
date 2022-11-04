@@ -24,13 +24,7 @@ This article describes a typical use case for soft reservations and explains how
 Soft reservations help organizations achieve a single source of truth for available inventory, especially during the order fulfillment process. This functionality is useful for organizations where the following conditions exist:
 
 - The organization has at least two different systems that are directly taking outbound orders.
-- The organization is very strict and wants to prevent double-booking product inventory, which can happen if multiple systems are able to overbook the last piece of stock. This is prevented when all order systems can make instant soft reservation API calls to Inventory Visibility, which provides a single source of truth for inventory availability.
-
-<!-- KFM: The following link isn't valid. Not sure what we are talking about here. 
-
-Otherwise you can simply leverage the [Inventory Adjustment via onhand change posting](TBD) feature that you can first query inventory availability, and make a separate inventory adjustment call to deduct the available inventory.
-
--->
+- The organization is very strict and wants to prevent double-booking product inventory, which can happen if multiple systems are able to overbook the last piece of stock. This situation is prevented when all order systems can make instant soft reservation API calls to Inventory Visibility, which provides a single source of truth for inventory availability.
 
 [<img src="media/inventory-visibility-soft-reservation.png" alt="Inventory Visibility soft reservation." title="Inventory Visibility soft reservation" width="720" />](media/inventory-visibility-soft-reservation.png)
 
@@ -40,7 +34,7 @@ The previous illustration shows how soft reservation works and highlights the fo
 - Soft reservations are posted from each of your order channels/systems to Inventory Visibility. Inventory Visibility validates inventory availability and tries to make a soft reservation. If soft reservation succeeds, Inventory Visibility adds to the soft reserved quantity, deducts from the available for reservation (AFR) quantity, and respond with a soft reservation ID.
 - At this time, your physical inventory quantity remains the same.
 - You can then synchronize either single or aggregated soft-reserved orders (order lines) into Supply Chain Management to make hard reservations and release to warehouse or update the final inventory quantity.
-- You can set the system to [offset soft reservations](inventory-visibility-reservations.md#offset-reservations-in-supply-chain-management) so that soft reservation are offset when physical inventory is updated in Supply Chain Management.
+- You can set the system to [offset soft reservations](inventory-visibility-reservations.md#offset-reservations-in-supply-chain-management) so that soft reservations are offset when physical inventory is updated in Supply Chain Management.
 
 Soft reservations are normally created, consumed, and canceled by using API calls to the Inventory Visibility service.
 
@@ -61,8 +55,8 @@ To turn on the reservation feature, follow these steps.
 1. Go to **Inventory Management \> Setup \> Inventory Visibility integration parameters**, open the **Reservation offset** tab and make the following settings:
     - **Enable reservation offset** – Set to *Yes* to enable this functionality.
     - **Reservation offset modifier** – Select the inventory transaction status that will offset reservations made in Inventory Visibility. This setting determines the order processing stage that triggers offsets. The stage is traced by the order's inventory transaction status. Choose one of the following values:
-        - *On order* – Orders with an *On order* status will send an offset request when they are created. The offset quantity will be the quantity of the created order (line).
-        - *Reserve* – Orders with a *Reserve* status will send an offset request when they are either order reserved or physically reserved. When you offset at *Reserve* status (even if you skip the reservation in Supply Chain Management and continue to another inventory status, for example release to warehouse to pick and pack) the order will send an offset request at any new inventory status that is closest to reserved picked (for example, pick, packing-slip posted, or invoiced). The request will be triggered only once. If it's been triggered at pick, it will not duplicate the offset when posting a packing slip. The offset quantity will be the same as the quantity of the inventory transaction status when the offset was triggered (in other words, *Reserved ordered/Reserve Physical* (or later status) on the corresponding order line).
+        - *On order* – Orders with an *On order* status will send an offset request when they're created. The offset quantity will be the quantity of the created order (line).
+        - *Reserve* – Orders with a *Reserve* status will send an offset request when they're either order reserved or physically reserved. When you offset at *Reserve* status (even if you skip the reservation in Supply Chain Management and continue to another inventory status, for example release to warehouse to pick and pack) the order will send an offset request at any new inventory status that is closest to reserved picked (for example, pick, packing-slip posted, or invoiced). The request will be triggered only once. If it's been triggered at pick, it will not duplicate the offset when posting a packing slip. The offset quantity will be the same as the quantity of the inventory transaction status when the offset was triggered (in other words, *Reserved ordered/Reserve Physical* (or later status) on the corresponding order line).
 1. Sign back in to the Inventory Visibility power app, go to the **Configuration** page and open the **Soft Reservation** tab. Review the default soft reservation hierarchy and add new dimensions to the hierarchy if needed.
 1. In the **Set Soft Reservation Mapping** section, view the default settings. By default, the soft reserved inventory quantities will be recorded against the `softreservephysical` physical measure, data source `iv`. The calculated measure *Available for reservation* is mapped to `availabletoreserve`. If you wish to update the `availabletoreserve` calculated measure, go to the **Configuration** page and open the **Calculated Measure** tab. Then expand and modify the calculated measure.
 
@@ -79,7 +73,7 @@ For more information about how to configure reservations, see [Reservation confi
 
 When you call the reservation API, the system marks the reservation of the specified goods and quantities.
 
-Here is a sample scenario and sample API query body. The company Contoso sells product D0002 (Cabinet) from their e-commerce website. A customer places a sales order via the website, asking for a small red cabinet. Contoso then decides to fulfill this order using the following dimensions
+Here's a sample scenario and sample API query body. The company Contoso sells product D0002 (Cabinet) from their e-commerce website. A customer places a sales order via the website, asking for a small red cabinet. Contoso then decides to fulfill this order using the following dimensions
 
 - Organization ID = usmf
 - Site = 1
@@ -100,7 +94,7 @@ When you call the reservation API, you can control the reservation validation by
 
 If you want to cancel a reservation or unreserve specified inventory quantities, set the quantity to a negative value, and set the `ifCheckAvailForReserv` parameter to `False` to skip the validation.
 
-Here is an example of the request body referencing the sales order in the previous context.
+Here's an example of the request body referencing the sales order in the previous context.
 
 ```json
 # Url
@@ -135,7 +129,7 @@ Authorization: "Bearer {access_token}"
 }
 ```
 
-A successful soft reservation request returns a *soft reservation ID* for each reservation record. The soft reservation ID is not a unique identifier for an individual soft reservation record, but a combination of product ID and dimension values that are associated with the soft reservation request. You can record the soft reservation ID back into the order line when you synchronize the successfully reserved orders to Supply Chain Management or another ERP system for offset.
+A successful soft reservation request returns a *soft reservation ID* for each reservation record. The soft reservation ID isn't a unique identifier for an individual soft reservation record, but a combination of product ID and dimension values that are associated with the soft reservation request. You can record the soft reservation ID back into the order line when you synchronize the successfully reserved orders to Supply Chain Management or another ERP system for offset.
 
 ### Offset soft reservation in Supply Chain Management
 
@@ -165,4 +159,4 @@ Offset quantities follow the inventory quantities specified on the relevant inve
 
 ### Cancel or revert a soft reservation
 
-If an original order line gets cancelled or deleted and you need to revert the corresponding soft reservation, post a negative quantity with the exact the same information in your API query body.
+If an original order line gets canceled or deleted and you need to revert the corresponding soft reservation, post a negative quantity with the exact the same information in your API query body.

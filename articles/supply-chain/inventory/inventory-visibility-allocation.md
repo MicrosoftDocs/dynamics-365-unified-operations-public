@@ -21,11 +21,11 @@ ms.dyn365.ops.version: 10.0.27
 
 Organizations often need to preallocate their on-hand stock to their most important sales channels, customer groups, regions, and promotional events to ensure that the preallocated stocks are protected against any other usage and can only be consumed via sales transactions that are relevant to the allocation. Inventory allocation in Inventory Visibility is a component of the sales operational planning process, and is done before any actual sales activities occur or a sales order is created.
 
-For example, a company called Contoso produces a very popular bike. Unfortunately, a recent supply chain disruption has affected all in-transit stocks of that bike, so Contoso only has limited on-hand stock and needs to make best use of that stock. Contoso operates both online and in-store sales. In each sales channel, the company has a few important corporate partners (marketplaces and large retailers) that demand that a specific portion of the bike's available inventory be saved for them. Therefore, the bicycle company must be able to balance stock distribution across channels and also manage the expectations of its VIP partners. The best way to achieve both goals is to use inventory allocation, so that each channel and retailer can receive specific allocated quantities that can be sold to consumers later.
+For example, a company called Contoso produces a popular bike. Unfortunately, a recent supply chain disruption has affected all in-transit stocks of that bike, so Contoso only has limited on-hand stock and needs to make best use of that stock. Contoso operates both online and in-store sales. In each sales channel, the company has a few important corporate partners (marketplaces and large retailers) that demand that a specific portion of the bike's available inventory be saved for them. Therefore, the bicycle company must be able to balance stock distribution across channels and also manage the expectations of its VIP partners. The best way to achieve both goals is to use inventory allocation, so that each channel and retailer can receive specific allocated quantities that can be sold to consumers later.
 
 Inventory allocation has two basic business purposes:
 
-- **Inventory protection (ringfencing)** – Organizations want to preallocate restricted or limited stock to prioritized channels, regions, VIP customers, and subsidiary companies. The Inventory Visibility allocation feature aims to protect the allocated inventory, so that the other allocations, reservations, or other sales demands won't affect the previously allocated inventory.
+- **Inventory protection (ring fencing)** – Organizations want to preallocate restricted or limited stock to prioritized channels, regions, VIP customers, and subsidiary companies. The Inventory Visibility allocation feature aims to protect the allocated inventory, so that the other allocations, reservations, or other sales demands won't affect the previously allocated inventory.
 - **Oversell control** – The Inventory Visibility allocation feature aims to put a restriction on the previously allocated quantities, so that the receiving party (for example, a channel or customer group) won't over-consume them when the actual sales transaction that is based on a soft reservation goes into effect.
 
 ## Allocation definition in Inventory Visibility Service
@@ -48,7 +48,7 @@ The following terms and concepts are useful in discussions of inventory allocati
 - **Allocation group value** – The value of each allocation group. For example, *web* or *store* might be the value of the sales channel allocation group, whereas *VIP* or *normal* might be the value of the customer allocation group.
 - **Allocation hierarchy** – A means to combine allocation groups in a hierarchical manner. For example, you can define *channel* as hierarchy level 1, *region* as level 2, and *customer group* as level 3. During inventory allocation, you must follow the allocation hierarchy sequence when you specify the value of the allocation group. For example, you might allocate 200 red bikes to the *Web* channel, the *London* region, and the *VIP* customer group.
 - **Available to allocate** – The *virtual common pool* that indicates the quantity that is available for further allocation. It's a calculated measure that you can freely define by using your own formula. If you're also using the soft reservation feature, we recommend that you use the same formula to calculate available-to-allocate and available-to-reserve.
-- **Allocated** – A physical measure that shows the allocated quota that can be consumed by the allocation groups. It is deducted at the same time the consumed quantity is added.
+- **Allocated** – A physical measure that shows the allocated quota that can be consumed by the allocation groups. It's deducted at the same time the consumed quantity is added.
 - **Consumed** – A physical measure that indicates that quantities that have been consumed against the original allocated quantity. As numbers are added to this physical measure, the Allocated physical measure is automatically reduced.
 
 The following illustration shows the business workflow for inventory allocation.
@@ -112,9 +112,9 @@ To use allocation, you must correctly set up the formula for the available-to-al
 
 A maximum of eight allocation group names can be set. The groups have a hierarchy. Follow these steps to view and update allocation groups:
 
-1. Go to **Inventory Visibility Power App** \> **Configuration** \> **Allocation** \> **Edit Configuration**. By default there is an allocation hierarchy with four layers: `Channel` (top layer), `customerGroup` (second layer),`Region` (third layer), and `OrderType` (fourth layer).
-1. You can remove the existing allocation group by selecting the cross next to it (you must be very cautious when deleting or changing the allocation hierarchy mapping; see [Tips for using allocation](inventory-visibility-allocation.md#allocation-using-tips) for guidance). You can also add new allocation groups on the hierarchy by typing the new group name directly into the field.
-1. Once you are done with allocation group and hierarchy settings, save and select **Update Configuration** on the upper right.
+1. Go to **Inventory Visibility Power App** \> **Configuration** \> **Allocation** \> **Edit Configuration**. By default there's an allocation hierarchy with four layers: `Channel` (top layer), `customerGroup` (second layer),`Region` (third layer), and `OrderType` (fourth layer).
+1. You can remove the existing allocation group by selecting the cross next to it (you must be cautious when deleting or changing the allocation hierarchy mapping; see [Tips for using allocation](inventory-visibility-allocation.md#allocation-using-tips) for guidance). You can also add new allocation groups on the hierarchy by typing the new group name directly into the field.
+1. Once you're done with allocation group and hierarchy settings, save and select **Update Configuration** on the upper right.
 1. The values of the configured allocation groups will be updated when you create an allocation using either the user interface or API POST (​/api​/environment​/{environmentId}​/allocation​/allocate). (Details about both approaches are provided later in this article.)
 
 If you use four group names and set them to \[`channel`, `customerGroup`, `region`, `orderType`\], these names will be valid for allocation-related requests when you call the configuration update API.
@@ -413,14 +413,14 @@ Use \[site=1, location=11, color=red\] and groups \[channel=Online, customerGrou
 
 ## Use the allocation user interface
 
-You can  manually manage allocations using the user interface by opening the Inventory Visibility power app and going to**Operational Visibility \> Allocation**. From here, you can do any of the actions described in teh following subsections.
+You can  manually manage allocations using the user interface by opening the Inventory Visibility power app and going to**Operational Visibility \> Allocation**. From here, you can do any of the actions described in the following subsections.
 
 ### Create an allocation
 
 Use these steps to create an allocation from the **Allocation** page of the Inventory Visibility power app.
 
 1. Select the **Allocate** button.
-1. Fill out the the base fields, dimensions, and target allocation groups value. (When you select the collect data source in the **Dimensions** section, first use the drop down list to specify the dimensions (for example `siteId`) and then fields for entering dimension values will appear.)
+1. Fill out the base fields, dimensions, and target allocation groups value. (When you select the collect data source in the **Dimensions** section, first use the drop-down list to specify the dimensions (for example `siteId`) and then fields for entering dimension values will appear.)
 1. Select **submit**.
 
 ### Consume an allocation

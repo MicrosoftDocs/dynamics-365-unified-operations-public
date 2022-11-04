@@ -220,7 +220,7 @@ Body:
     }
 ```
 
-The following example shows sample body content. In this example, the company has a point-of-sales (POS) system that processes in-store transactions and therefore inventory changes. The customer has returned a red T-shirt back to your store. To reflect the change you post a single change event for the *T-shirt* product and this event will increase the quantity of the *T-shirt* product by 1.
+The following example shows sample body content. In this example, the company has a point-of-sales (POS) system that processes in-store transactions and therefore inventory changes. The customer has returned a red T-shirt back to your store. To reflect the change, you post a single change event for the *T-shirt* product and this event will increase the quantity of the *T-shirt* product by 1.
 
 ```json
 {
@@ -340,7 +340,7 @@ The following example shows sample body content.
 
 ## <a name="set-onhand-quantities"></a>Set/override on-hand quantities
 
-The *Set on-hand* API overrides the current data for the specified product. This is typically used to do inventory counting updates. For example, during their daily inventory counting, a store might find that the actual on-hand inventory for a red T-shirt is 100. Therefore, the POS inbound quantity must be updated to 100 regardless of what previous quantity was. You can use this API to override the existing value.
+The *Set on-hand* API overrides the current data for the specified product. This functionality is typically used to do inventory counting updates. For example, during their daily inventory counting, a store might find that the actual on-hand inventory for a red T-shirt is 100. Therefore, the POS inbound quantity must be updated to 100 regardless of what previous quantity was. You can use this API to override the existing value.
 
 ```txt
 Path:
@@ -652,7 +652,7 @@ The `returnNegative` parameter controls whether the results contain negative ent
 > [!NOTE]
 > If you've enabled the on-hand change schedule and available-to-promise (ATP) features, your query can also include the `QueryATP` Boolean parameter, which controls whether the query results include ATP information. For more information and examples, see [Inventory Visibility on-hand change schedules and available to promise](inventory-visibility-available-to-promise.md).
 
-The following example shows sample body content. This is an example that you can query the on-hand inventory from multiple locations(warehouses).
+The following example shows sample body content. It shows that you can query the on-hand inventory from multiple locations (warehouses).
 
 ```json
 {
@@ -722,7 +722,7 @@ With a normal on-hand query, when you specify `"siteId": ["1","2"]` and `"locati
 - Site 2, location A
 - Site 2, location B
 
-As you can see here, the normal onhand query doesn't recognize that location A only exists in site 1 and location B only exists for site 2 and therefore makes redundant queries. To acknowledge this hierarchical mapping, you can use an on-hand exact query and specify the location mappings in your query body. As a result, you will only query and receive result for site 1 location A and site 2 location B.
+As you can see here, the normal on-hand query doesn't recognize that location A only exists in site 1, and location B only exists for site 2 and therefore makes redundant queries. To acknowledge this hierarchical mapping, you can use an on-hand exact query and specify the location mappings in your query body. As a result, you'll only query and receive result for site 1 location A and site 2 location B.
 
 ### <a name="exact-query-with-post-method"></a>Exact query by using the post method
 
