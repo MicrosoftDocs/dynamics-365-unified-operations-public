@@ -2,7 +2,7 @@
 title: Archive credit card transaction data
 description: This article describes an archival job in Microsoft Dynamics 365 Commerce that can help free up space in the database by archiving credit card transactions.
 author: BrianShook
-ms.date: 09/20/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -51,25 +51,28 @@ The archival job archives data in the **PaymentAuthorization**, **PaymentCapture
 
 ## Batch job setup
 
-You can access the archival job in Commerce headquarters by going to **Retail and commerce \> Retail and Commerce IT \> Clean up \> Archive credit card transaction data**. 
+You can access the archival job in Commerce headquarters at **Retail and Commerce \> Retail and Commerce IT \> Clean up \> Archive credit card transaction data**. 
 
-### Parameters
-In the **Archive credit card transaction data** dialog box, the following Parameters are:
-  - **Minimum transaction age in days** is a required field. Enter the age, in days, of credit card authorizations that will be subject to archiving. The value that you enter should be the amount of time that customers can have refunds linked to their original credit card authorization. If you set the field to 365 days, for example, a return for a transaction that is 366 days old might still be eligible for refund, depending on the merchant's policies. However, because the data that is required to do a linked refund won't be available in Dynamics after it is archived, any refund that is done will have to be a standalone refund.
-  - **Delete data without archiving**, when set to **Yes**, will delete (not archive, full delete) the transaction and signature capture data for all transactional records that meet the minimum transaction age in days criteria
-  - **Corresponding transaction date** is a reference field displaying the date in the past that currently meets the minimum transaction age in days parameter. Records older than this date shown will be affected by the job.
-  - **Use Compression**, when set to **Yes**, will compress tokens to additionally help save on storage space. (Note: See section below **Further storage management with token compression** for additional details)
+### Parameters section
 
-### Run in the background
-This section controls the batch functionality and scheduling of the batch job. Set the following parameters for your batch job:
- - **Batch processing** for the job is turned on by default and can't be turned off.
- - **Recurrence** menu displays the recurrence timing configurations to run the job.
- - **Alerts** allows the set up of alerts for different events related to the batch job.
- - **Task description** is the label assigned that will show for the batch
- - **Batch group** can be used to distribute the workload to different servers
- - **Private** When enabled will restrict other users from processing your batch job. Only the user setting up the form will be able to run the job
- - **Critical Job** will carry highest weight in processing capacity
- - **Monitoring category** can be assigned to make it easier to identify types of jobs during monitoring
+The **Parameters** section of the **Archive credit card transaction data** flyout menu contains the following parameters:
+  - **Minimum transaction age in days** - This is a required field. Enter the age, in days, of credit card authorizations that will be subject to archiving. The value you enter should be the amount of time that customers can have refunds linked to their original credit card authorization. If you set the field to 365 days, for example, a return for a transaction that is 366 days old might still be eligible for refund, depending on the merchant's policies. However, because the data that is required to do a linked refund won't be available in Dynamics after it is archived, any refund that is processed will have to be a standalone refund.
+  - **Delete data without archiving** - When this parameter is set to **Yes**, Commerce will delete (not archive) the transaction and signature capture data for all transactional records that meet the criteria of minimum transaction age in days.
+  - **Corresponding transaction date** - This is a reference field displaying the date in the past that currently corresponds to the value of the **Minimum transaction age in days** parameter. Records older than the date shown will be affected by the job.
+  - **Use Compression** - When this parameter is set to **Yes**, Commerce will compress tokens to save on storage space. For more information, see [Further storage management with token compression](#further-storage-management-with-token-compression) below.
+
+### Run in the background section
+
+The **Run in the background** section of the **Archive credit card transaction data** flyout menu controls the batch functionality and scheduling of the batch job, and contains the following parameters that you must set for your batch job:
+
+- **Batch processing** - This parameter is set to **Yes** by default and can't be turned off.
+- **Recurrence** - The parameters on the **Recurrence \> Define recurrence** tab allow you to set recurrence timing configurations to run the job.
+- **Alerts** - The parameters on the **Alerts \> Batch job alerts** tab allow you to configure alerts for different events related to the batch job.
+- **Task description** - This parameter is the batch job display label.
+- **Batch group** - This parameter can be used to specify batch groups to distribute the workload to different servers.
+- **Private** - When this parameter is set to **Yes**, Commerce will restrict other users from processing your batch job. Only the user who configured the form will be able to run the job.
+- **Critical Job** - Setting this parameter to **Yes** will prioritize processing capacity for the job.
+- **Monitoring category** - A monitoring category can be assigned to make it easier to identify types of jobs during monitoring.
 
 The following illustration shows an example of parameter settings in the **Archive credit card transaction data** dialog box.
 
@@ -101,7 +104,7 @@ To enable the **Compress payment tokens** feature in headquarters, follow these 
 1. Under **All**, search for the **Compress payment tokens** feature.
 1. Select the feature, and then select **Enable now** in the properties pane.
 
-Once the feature is enabled, the **Use Compression** property can be set to **Yes** in the **Archive credit card transaction data** parameters section as noted above.
+Once the **Compress payment tokens** feature is enabled, the **Use compression** property can be set to **Yes** in the **Archive credit card transaction data** parameters section.
 
 ## Additional resources
 
