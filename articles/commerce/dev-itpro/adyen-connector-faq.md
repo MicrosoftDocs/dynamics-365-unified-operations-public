@@ -83,6 +83,10 @@ For a complete list of Adyen payment status codes, see [Payments lifecycle](http
 
 Adyen supports two types of refunds: referenced and unreferenced. Referenced refunds can't be canceled. For unreferenced refunds, a cancellation attempt is made, but successful cancellation depends on the payment issuer and the potential delay that is configured for the processing by Adyen. If an error occurs when you force a local refund cancellation in POS, POS allows for a credit. However, if the cancellation of the unlinked refund isn't accepted on the payment gateway, discrepancies might occur between Dynamics 365 reports and Adyen reporting. For more information about Adyen's cancellation of unreferenced refunds, see [Cancel an unreferenced refund](https://docs.adyen.com/point-of-sale/refund-payment/cancel-unreferenced). 
 
+### Is 3DS supported for Dynamics 365 Commerce Call Center payment iFrames?
+
+No, the payment window as utilized in the Dynamics 365 Commerce Call Center payment forms (configured via connector in the **Payment Services** page in Headquarters) does not support 3DS flows. Customer authentications requiring passwords, or Strong Customer Authentication, is only supported in the online channel where customers are directly inputting their sensitive and protective data directly.
+
 ## Next steps
 
 For guidance on troubleshooting common issues related to the Dynamics 365 Payment Connector for Adyen, see [Troubleshoot Dynamics 365 Payment Connector for Adyen](adyen-connector-troubleshoot.md). 
