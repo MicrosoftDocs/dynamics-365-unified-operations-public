@@ -1755,7 +1755,7 @@
         href: master-planning/master-planning-home-page.md
       - name: Get started with master planning
         href: master-planning/planning-optimization/get-started.md
-      - name: Master planning system architeceture
+      - name: Master planning system architecture
         href: master-planning/master-planning-architecture.md
       - name: Master planning administration
         items:
