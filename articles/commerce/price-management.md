@@ -162,7 +162,9 @@ A **Group** sales price trade agreement is the type that is most often used with
 
 ### Price adjustment
 
-As the name implies, a price adjustment is used to modify the price that was either set directly on the product or set by using a trade agreement. A price adjustment can be used only to lower the price, not raise it. A price adjustment is the recommended way for retailers to create, track, and manage price markdowns for their products over time.
+As the name implies, a price adjustment is used to modify the price that was either set directly on the product or set by using a trade agreement. A price adjustment can be used to lower or increase the price. A price adjustment is the recommended way for retailers to create, track, and manage price markdowns for their products over time.
+
+There are three types of price adjustments: percentage off, amount off, and unit price.
 
 There are three types of price adjustments: percentage off, amount off, and price. A price adjustment of the percentage off or amount off type is always applied to a sale transaction. However, a price adjustment of the price type is applied only if the adjusted price is less than the price that was set by using the base price or trade agreement price. Therefore, if the price that is set in a price adjustment is more than the unadjusted price, the price adjustment isn't used.
 
@@ -178,7 +180,7 @@ The base price is just the property on the product and is the same for everyone 
 
 On the sales price trade agreement, if the **Find next** option is set to **Yes**, the lowest price that is found for applicable sales price trade agreements is used as the trade agreement price. Trade agreements can be found by using price groups or the **ALL** account code. Alternatively, trade agreements can be assigned directly to a customer. If the **Find next** option is set to **No**, the first trade agreement price that is found is used. If no sales price trade agreements are found, then the trade agreement price is set equal to the base price.
 
-The active price is calculated by taking the trade agreement price and applying the largest price adjustment that applies to the product. If no price adjustments are found, or if the calculated active price is more than the trade agreement price, the active price is set equal to the trade agreement price. Remember that you can't raise the price of a product by using a price adjustment. The applicable price adjustments can be found only by using price groups that are assigned to a channel, catalog, affiliation, or loyalty program.
+The active price is calculated by taking the trade agreement price and applying the largest price adjustment that applies to the product. If no price adjustments are found, or if the calculated active price is more than the trade agreement price, the active price is set equal to the trade agreement price. The applicable price adjustments can be found only by using price groups that are assigned to a channel, catalog, affiliation, or loyalty program.
 
 ## Category price rules
 
@@ -226,7 +228,6 @@ Pricing is designed to work with Commerce entities instead of non-Commerce entit
 
 The Commerce pricing engine **does not support** the following pricing features:
 
-- Setting prices by Site or Site and Warehouse storage dimensions is not supported. If you only specify Site dimension on the trade agreements, then the pricing engine will ignore the Site and apply the trade agreement to all sites. If you specify both Site and Warehouse, then the behavior is undefined/untested because it’s expected that retailers use the store price groups to control the prices for each store/warehouse.
 - Attribute-based pricing is not supported.
 - Vendor discount pass-through is not supported.
 - The generic currency feature is not supported i.e. even if a trade agreement has the **Include generic currency** toggle turned on, still this trade agreement will only be considered valid for the currency defined on the trade agreement.
