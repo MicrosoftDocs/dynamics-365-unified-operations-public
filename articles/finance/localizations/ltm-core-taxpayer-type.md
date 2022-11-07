@@ -11,23 +11,33 @@ ms.custom: bap-template
 
 # Taxpayer types for Latin America 
 
-You can set up a type of tax responsible entity with which the company operates. Entities can include customers, vendors, employees, or even the company itself.
-To make the corresponding settings enter go to: **Organization administration > Setup > LATAM > Taxpayer type**.
+You can set up a type of tax responsible entity with which the company operates. Entities can include customers, vendors, employees, and even the company itself.
  
- 
-## General panel
+## Prerequisites
 
-To modify an existing taxpayer type access the browser list and select or create a new register.
+The following prerequisites must be met before you can set up taxpayer types for organizations in Latin America:
 
-The fields to complete are:
+- **Tax ID types** must be configured.
+- **Document class letters** must be configured.
 
-**Taxpayer type:** this field should be completed manually, identifying with a code the taxpayer type that is being registered.
+## Set up a Taxpayer type for Latin America
 
-**Description:** this field should be completed manually, extending in a detail the taxpayer type that is being created.
+1. Go to **Navigation pane > Organization administration > Setup > LATAM > Taxpayer type**.
 
-## Settings panel
+1. In the **General** section complete the following fields:
 
-| Field                                   | Description                                                                                                                                                                                                                                  |
+  - In the **Taxpayer type** field enter the code that identifies the register.
+
+  - In the **Description** field enter an extended explanation of the taxpayer type.
+
+> [!NOTE]
+> These fields are mandatory.
+
+2. In the **Settings** section complete the configuration according to the taxpayer type characteristics:
+
+Enable or disable the buttons as required:
+
+| Button                                  | Description                                                                                                                                                                                                                                  |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Foreign taxpayer                        | This verification field should be selected if the entity registered is foreign.                                                                                                                                                              |
 | Validate vendor AC                      | This verification field should be selected if the authorization code issued by the vendors is required to be validated.                                                                                                                      |
@@ -37,70 +47,24 @@ The fields to complete are:
 | Mandatory country identification number | If this button is set to yes, the “Country identification number” field in the entity configuration will be mandatory.                                                                                                                       |
 | Mandatory state identification number   | If this button is set to yes, the field “State identification number” will be mandatory.                                                                                                                                                     |
 
-Depending on the taxpayer type selected, the verification fields will vary.
-
-The options are as follows:
-
-- If the taxpayer is set up as a national (i.e., it doesn’t have the foreign taxpayer and internal contributor buttons set to yes):
-
-  - Every option can be enabled or disabled according to the national taxpayer type configuration.
-
-- If the taxpayer is configured as foreign:
-
-  - **Internal taxpayer:** this field will be set to no by default and cannot be edited.
-
-  - **Validate vendor AC:** this field will be set to no by default and cannot be edited.
-
-  - **Mandatory country of residence/Mandatory registered jurisdiction/Mandatory country identification number:** can be enabled or disabled.
-
-  - **Mandatory state identification number:** If this option is enabled, the field corresponding to the mandatory country identification number should also be enabled.
-
-- If the taxpayer is configured as an internal:
-
-  - **Foreign taxpayer/Validate vendor CA:** this fields will come disabled by default and cannot be edited.
-
-  - **Mandatory country of residence/Mandatory registered jurisdiction/Mandatory country identification number/Mandatory state identification number:** can be enabled or disabled according to the configuration desired.
-
-## Document types panel
-
-In this panel, the tax ID types created in the master record will be linked with the taxpayer type.
-
-The fields to complete are:
-
-| Field          | Description                                                                                    |
-|----------------|------------------------------------------------------------------------------------------------|
-| Document types | In this field you must select one or more of the Tax ID types configured in the master record. |
-| Description    | This field will expand the information of the tax ID type.                                     |
+3. In the **Document types** grid add the **Tax Id types** associated to the taxpayer type according to the country legislation.
 
 > [!NOTE]
 > This configuration, together with the tax ID type configuration in the country address master, allows filtering or directly assign the Tax ID type in the customer/vendor master record.
 
-## Document class letter panel
+4. In the **Document class letter** grid select the Ids that the taxpayer type will use in their transactions.
 
-In this tab the document class letters will be associated with the taxpayer.
+5. Select **Save**.
 
-The fields to complete are:
+## Add the fiscal codification provided by the fiscal authorities
 
-| Field                    | Description                                                                                 |
-|--------------------------|---------------------------------------------------------------------------------------------|
-| Document class letter Id | In this field you must select one of document class letter ID created in the master record. |
-| Description              | This field will expand the information document class letter.                               |
+You can use **Tax application** option to add this codification.
 
-
-## Tax application button
-
-You can use Tax application option to add the codification provided by the fiscal autorities.
-
-1.	Go to Organization administration > Setup > LATAM > Taxpayer type.
-2.	Click Tax application.
-3.	Click New.
-4.	In the Tax application Id. field, enter or select a value.
-5.	In the Tax application code field, type a value.
-6.	Click Save.
-
-## Prerequisites
-
-- Tax ID type configured
-- Document class letter configured
+1.	Go to **Navigation pane > Organization administration > Setup > LATAM > Taxpayer type**.
+2.	Select the **Tax application** button on the action pane.
+3.	Slect **New** to add a line to the grid.
+4.	In the **Tax application Id.** field select a value from the list.
+5.	In the **Tax application code field** type the code with wich the fiscal authority identifies the tax payer type.
+6.	Select **Save**.
 
 
