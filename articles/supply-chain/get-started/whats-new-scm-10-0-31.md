@@ -6,7 +6,7 @@ ms.author: kamaybac
 ms.reviewer: kamaybac
 ms.search.form:
 ms.topic: conceptual
-ms.date: 10/14/2022
+ms.date: 11/07/2022
 ms.custom: bap-template
 ---
 
@@ -35,8 +35,9 @@ The following table lists the features that are included in this release. We mig
 | Procurement | [Source products and materials from multiple vendors](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/source-products-materials-multiple-vendors) | Coming soon | Feature management:<br>*Source products and materials from multiple vendors using Planning Optimization* |
 | Product information management | [Display product info in user's language](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/display-product-info-users-language) | [Show translated product names and descriptions in the UI](../pim/show-translated-product-info.md) | Feature management:<br>*(Preview) Display product info in user’s language* |
 | Warehouse management | [Auto-submit detour steps for the Warehouse Management mobile app](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/auto-submit-detour-steps-warehouse-management-mobile-app) | [Configure detours for steps in mobile device menu items](../warehousing/warehouse-app-detours.md) | Feature management<br>*Auto-submit detour steps for the Warehouse Management mobile app* |
+| Warehouse management | [Guided warehouse implementation experience](/2022wave2/finance-operations/dynamics365-supply-chain-management/guided-warehouse-implementation-experience) | [Test location directives with acceptance tests](../warehousing/location-directive-acceptance-tests.md) | Enabled by default |
+| Warehouse management | [Optimize warehousing setup with Application Insights](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/optimize-warehousing-setup-application-insights) | [Enable warehousing telemetry with Application Insights](../warehousing/application-insights-warehousing.md)<br><br>[Monitor mobile device usage and performance](../warehousing/application-insights-wma.md) | Feature management<br>*Operational insights* |
 | Warehouse management | [Pack shipments with the Warehouse Management mobile app](/dynamics365-release-plan/2022wave2/finance-operations/dynamics365-supply-chain-management/pack-shipments-warehouse-management-mobile-app) | [Packing containers with the Warehouse Management mobile app](../warehousing/warehouse-app-packing-containers.md)<br><br>[Example scenario – Pack containers with the Warehouse Management mobile app](../warehousing/warehouse-app-pack-containers-scenario.md)<br><br>[Print container labels](../warehousing/print-container-labels.md) | Feature management<br>*Pack containers using the Warehouse Management mobile app* |
-| Warehouse management | Test location directives with acceptance tests | [Test location directives with acceptance tests](../warehousing/location-directive-acceptance-tests.md) | Enabled by default |
 
 ## Feature enhancements included in this release
 
@@ -59,7 +60,7 @@ We have recently added or significantly updated the following help articles. The
 | Feature area | New or updated articles |
 |---|---|
 | Master planning | [Master planning for products with limited shelf life](../master-planning/planning-optimization/shelf-life.md)<br>[Run planning for a subset of items](../master-planning/planning-optimization/plan-filters.md) |
-| Warehouse management | [Manually handle sales and transfer line picking exceptions](../warehousing/manual-order-line-picking-exception-handling.md)<br>[Enable warehousing telemetry with Application Insights](../warehousing/application-insights-warehousing.md)<br>[Monitor mobile device usage and performance](../warehousing/application-insights-wma.md) |
+| Warehouse management | [Manually handle sales and transfer line picking exceptions](../warehousing/manual-order-line-picking-exception-handling.md) |
 
 ## Additional resources
 
