@@ -155,7 +155,8 @@ For all entities except Products, you can overwrite the image URL for a given en
     [![Catalog images gallery page.](./media/preview-4.png)](./media/preview-4.png)
 
 > [!NOTE]
-> Currently, the gallery doesn't show image previews for media template image URLs. For Catalog, Worker, Customer, and Category entities, if the user explicitly provides a URL through this page, we recommend that you indicate which image is the default image, because Commerce Scale Unit clients show only one image per Catalog, Customer, Worker, and Category. If the user doesn't specify a default image, the system determines the default image and send it to the Commerce service caller (MPOS or Ecommerce).
+>  Only publicly and anonymously accessible images are renderable on POS. POS supports rendering of images that are externally hosted with requirement being to return images as inline octet stream to GET requests without headers. And even with anonymous access policy, specifically for SharePoint hosted images that require request headers to contain both Host and User-Agent headers, it will return "Forbidden" response otherwise. Thus, image management using SharePoint as host is currently not supported out of the box. 
+>  Currently, the gallery doesn't show image previews for media template image URLs. For Catalog, Worker, Customer, and Category entities, if the user explicitly provides a URL through this page, we recommend that you indicate which image is the default image, because Commerce Scale Unit clients show only one image per Catalog, Customer, Worker, and Category. If the user doesn't specify a default image, the system determines the default image and send it to the Commerce service caller (MPOS or Ecommerce).
 
 ### Overwrite the image URL for catalog product images from the Preview page
 
