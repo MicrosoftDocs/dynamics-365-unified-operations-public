@@ -84,8 +84,8 @@ A typical request requires the Adapter to query Dynamics 365 for data and then s
 >[!NOTE] 
 >Authentication—of which token acquisition is a major part—is a prerequisite that will be dealt with in the Understanding authentication and authorization section.
  
-    a.	The specifics or the query are not important here, but understand that this is a call against the Dataverse Web API to query for application data exposed 
-    through a virtual table. Refer to requests (2. Initial Sync) and (3. Delta Sync) in the diagram as examples. 
+  a.	The specifics or the query are not important here, but understand that this is a call against the Dataverse Web API to query for application data exposed 
+  through a virtual table. Refer to requests (2. Initial Sync) and (3. Delta Sync) in the diagram as examples. 
     
 2.	Dataverse handles the request by querying the Virtual Table through the Virtual Entity Plugin (simplified conceptually as “Virtual Table Proxy” in the diagram). The
 Dataverse request is forwarded to the Dynamics 365 Finance/HR Virtual Entity Service to query for the data that is physically stored in the Finance/HR database. 
@@ -136,7 +136,7 @@ Assuming Dataverse-level application permission checks pass, the Virtual Entity 
 environment. This call is made using Server-to-Server (S2S) authentication using the identity and secret configured in the Finance and Operations Virtual Data Source
 Configuration record: 
 
-![Sandbox.](./media/sanbox.jpg)
+![Sandbox.](./media/sandbox.jpg)
 
 
   Refer to Configure Dataverse virtual entities - Finance & Operations | Dynamics 365 | Microsoft Learn for specifics. 
