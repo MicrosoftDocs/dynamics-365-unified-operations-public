@@ -55,21 +55,21 @@ Identify the following diagram elements:
 
 Microsoft: 
  - Microsoft hosts and operates the various Dynamics 365 products (and related technologies) on behalf of customers. 
- - AAD Tenant ‘C’ – An Azure active directory tenant owned by Microsoft. This is the tenant in which the Dynamics 365 applications are registered. 
+ - Azure Active Directory (Azure AD) Tenant ‘C’ – An Azure AD tenant owned by Microsoft. This is the tenant in which the Dynamics 365 applications are registered. 
 
 Integrating partner: 
 - Integrating system – The system being integrated with Dynamics 365. This might be a payroll system or any system that rely on data stored in Dynamics 365. 
 - Adapter – The software or service responsible for interacting with both Dynamics 365 and with the integrating system.
 
 >[!NOTE] 
->Adapters that are intended to be used by multiple Dynamics 365 customers are expected to be registered in Azure active directory as multitenant applications.
+>Adapters that are intended to be used by multiple Dynamics 365 customers are expected to be registered in Azure AD as multitenant applications.
  
--	Azure active directory tenant ‘A’ – The Azure active directory tenant owned by the integrating partner, and the tenant that the Adapter application ID is registered. 
+-	Azure AD tenant ‘A’ – The Azure AD tenant owned by the integrating partner, and the tenant that the Adapter application ID is registered. 
 
 Mutual customer (Implements Dynamics 365 Human Resources and the integrating partner’s solution): 
  - Dynamics 365 Human Resources – The customer-specific instance of Dynamics 365 Finance or Human Resources that contains the customer data required by the integrating system.
- - Dataverse – The customer-specific Dataverse environment connected to either Dynamics 365 Finance or Human Resources. Dataverse provides a Web API for interacting with Dynamics 365 data. 
- - Azure active directory Tenant ‘B’ – This is the customer’s Azure active directory tenant, and functions as the identity provider (Authorization Server). This issues tokens that authorize callers to call the customer’s Dataverse instance.
+ - Dataverse – The customer specific Dataverse environment connected to either Dynamics 365 Finance or Human Resources. Dataverse provides a Web API for interacting with Dynamics 365 data. 
+ - Azure AD Tenant ‘B’ – This is the customer’s Azure AD tenant, and functions as the identity provider (Authorization server). This issues tokens that authorize callers to call the customer’s Dataverse instance.
 
 ### Understanding the basic flow of a request
 
@@ -92,37 +92,35 @@ system database. Refer to 4. Save data in the diagram.
 ### Understanding Authentication and authorization at system boundaries 
 
 Authentication is the validation that a user or application identity has been proven, confirming that the user or application is who they say they are. 
-Authorization grants the user/application the right to access specific application-level permissions. 
+Authorization grants the user/application the right to access specific application level permissions. 
 
 >[!NOTE] 
 >See Authentication vs. authorization for more information. 
 
-Most cross-system calls (with the exception of the call from Dataverse to Dynamics 365 Finance or Human Resources through the Virtual Table Proxy) in the diagram involve the Adapter. The Adapter needs to authenticate itself to: 
+Most cross system calls (with the exception of the call from Dataverse to Dynamics 365 Finance or Human Resources through the Virtual table proxy) in the diagram involve the Adapter. The Adapter needs to authenticate itself to: 
  - Make the call to Dataverse 
  - Make calls to the integrating system  
 
-Looking at the system boundaries in the diagram, understand that every web request between systems must be authenticated and that application-level authorization checks
-will be performed before data will be returned to the caller. For a request against a Dynamics 365 Virtual Table backed byDynamics 365 Finance or Human Resources, the relevant system boundaries where authentication and authorization checks are enforced are: 
+Looking at the system boundaries in the diagram, every web request between systems must be authenticated and that application-level authorization checks will be performed before data will be returned to the caller. For a request against a Dynamics 365 Virtual table backed by Dynamics 365 Finance or Human Resources, the relevant system boundaries where authentication and authorization checks are enforced are: 
 
   1.	The call between the Adapter and the Dataverse Web API (Odata) endpoint 
   2.	The call between the Dataverse Virtual Entity plugin and the Dynamics 365 Dynamics 365 Finance or Human Resources Virtual entity service 
 
-In both cases, authentication checks are performed first, followed by application-level authorization checks to ensure the authenticated user or application has the proper application-level privileges to retrieve the requested data. 
+In both cases, authentication checks are performed first, followed by application level authorization checks to ensure the authenticated user or application has the proper application level privileges to retrieve the requested data. 
 
 Authentication to call Dataverse is handled through a Bearer token that must be included as an HTTP header in the web request to Dataverse. The Adapter must get a token
-from the Tenant ‘B’ Azure Active Directory instance (the call designated as “1. Get Token” in the diagram). AAD acts as the Identity Provider in the authentication flow.
+from the Tenant ‘B’ Azure AD instance (1. Get Token in the diagram). Azure AD acts as the Identity provider in the authentication flow.
 
-The Adapter authenticates by providing its application identity (non-secret, as registered in AAD Tenant ‘A’) and an application secret or certificate possessed only by
-the Adapter application. 
+The Adapter authenticates by providing its application identity (non-secret, as registered in Azure AD Tenant ‘A’) and an application secret or certificate possessed only by the Adapter application. 
 
-Once authenticated to make calls to Dataverse, the Dataverse-level authorization checks are performed against each request, ensuring the caller (the Adapter 
-application’s identity designated as \<Guid A>\) has the appropriate application permissions. Application-level authorization is managed in Dataverse through an 
-Application User that represents the Adapter application ID. Application-level permissions are managed by granting access to specific Dataverse-defined application 
-roles. The roles, in turn, provide the granular privileges to the application. 
+Once authenticated to make calls to Dataverse, the Dataverse level authorization checks are performed against each request, ensuring the caller (the Adapter 
+application’s identity designated as \<Guid A>\) has the appropriate application permissions. Application level authorization is managed in Dataverse through an 
+Application user that represents the Adapter application ID. Application level permissions are managed by granting access to specific Dataverse defined application 
+roles. The roles provide the granular privileges to the application. 
 
 For more detailed guidance, see [Use multi-tenant server-to-server authentication](/power-apps/developer/data-platform/use-multi-tenant-server-server-authentication). 
   
-Assuming Dataverse-level application permission checks pass, the Virtual entity plugin next makes a call to the Virtual entity service endpoint on the Dynamics 365 Finance or Human Resources environment. This call is made using Server-to-Server (S2S) authentication using the identity and secret configured in the finance and operations Virtual data source configuration record: 
+Assuming Dataverse level application permission checks pass, the Virtual entity plugin makes a call to the Virtual entity service endpoint on the Dynamics 365 Finance or Human Resources environment. This call is made using Server-to-Server (S2S) authentication using the identity and secret configured in the finance and operations Virtual data source configuration record: 
 
 ![Sandbox.](./media/sandbox.jpg)
 
@@ -132,9 +130,9 @@ Refer to Configure Dataverse virtual entities - Finance & Operations | Dynamics 
 The call from the Dataverse virtual entity plugin to Dynamics 365 Finance or Human Resources includes the Adapter identity of the original call from the “Adapter” (the identity designated as \<Guid A>\ in the diagram) to Dataverse. Assuming the Virtual entity data source is configured correctly and the S2S Authentication checks pass, the Virtual entity service in Dynamics 365 Finance or Human Resources will run the query in the context of the original caller (the Adapter, aka identity \<Guid A>\). Dynamics 365 Finance or Human Resources level application permission checks (Authorization) will be done to ensure that the Adapter has the privileges required to access the data entities requested through the query. 
 
 
-Finance/HR security is managed by: 
-1. Mapping the Adapter identity (\<Guid A>\) to a specific Dynamics 365 Finance or Human Resources user. This is done on the **Azure Active Directory applications** page. For more information, see [Register your external application](/dev-itpro/data-entities/services-home-page.md#register-your-external-application). 
-2. Granting the Dynamics 365 Finance or Human Resources user from (1) the appropriate application-level roles/duties/privileges. For more information, see [Role-based security](/dev-itpro/sysadmin/role-based-security). 
+Dynamics 365 Finance and Human Resources security is managed by: 
+1. Mapping the Adapter identity (\<Guid A>\) to a specific Dynamics 365 Finance or Human Resources user. This is done on the **Azure active directory applications** page. For more information, see [Register your external application](/dev-itpro/data-entities/services-home-page.md#register-your-external-application). 
+2. Granting the Dynamics 365 Finance or Human Resources user from the appropriate application-level roles/duties/privileges. For more information, see [Role-based security](/dev-itpro/sysadmin/role-based-security). 
    
     
 Assuming the Adapter application (\<Guid A>\) has been granted the privileges required:
