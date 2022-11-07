@@ -40,7 +40,7 @@ the authentication and authorization aspects required between the system boundar
 
 Please familiarize yourself with the following articles to gain the best understanding of the concepts presented in this article: 
 
-•	[Virtual entities overview](/dev-itpro/power-platform/virtual-entities-overview) 
+•	[Virtual entities overview](./dev-itpro/power-platform/virtual-entities-overview) 
 •	[Get started with virtual tables (entities)](developer/data-platform/virtual-entities/get-started-ve) 
 •	[Use multi-tenant server-to-server authentication (Microsoft Dataverse)](/developer/data-platform/use-multi-tenant-server-server-authentication) 
 •	[Use OAuth authentication with Microsoft dataverse (Dataverse)](/developer/data-platform/authenticate-oauth) 
@@ -135,14 +135,13 @@ Configuration record:
   Refer to Configure Dataverse virtual entities - Finance & Operations | Dynamics 365 | Microsoft Learn for specifics. 
 
   The call from the Dataverse Virtual Entity plugin to Finance/HR includes the Adapter identity of the original call from the “Adapter” (the identity designated as 
-  <Guid A> in the diagram) to Dataverse. Assuming the Virtual Entity Data Source is configured correctly and the S2S Authentication checks pass, the Virtual Entity Service in Finance/HR will proceed to run the query in the context of the original caller (the Adapter, aka identity <Guid A>). Finance/HR-level application permission checks (Authorization) will be done to ensure that the Adapter has the privileges required to access the data entities requested through the query. 
+  \<Guid A>\ in the diagram) to Dataverse. Assuming the Virtual Entity Data Source is configured correctly and the S2S Authentication checks pass, the Virtual Entity Service in Finance/HR will proceed to run the query in the context of the original caller (the Adapter, aka identity \<Guid A>\). Finance/HR-level application permission checks (Authorization) will be done to ensure that the Adapter has the privileges required to access the data entities requested through the query. 
 Finance/HR security is managed by: 
-1. Mapping the Adapter identity (<Guid A>) to a specific Finance/HR user. This is done on the “Azure Active Directory applications” form, as described by Register your
-   external application. 
+1. Mapping the Adapter identity (\<Guid A>\) to a specific Finance/HR user. This is done on the “Azure Active Directory applications” form, as described by Register your external application. 
 2. Granting the Finance/HR user from (1) the appropriate application-level roles/duties/privileges. See Role-based security - 
     
     
-Assuming the Adapter application (<Guid A>) has been granted the privileges required to access the data requested, the query is executed, the data is translated back 
+Assuming the Adapter application (\<Guid A>\) has been granted the privileges required to access the data requested, the query is executed, the data is translated back 
 into its Dataverse Entity form, and the data is returned to the Adapter. 
 
 >[!NOTE]
@@ -153,7 +152,7 @@ into its Dataverse Entity form, and the data is returned to the Adapter.
     
 Important implications of the Virtual Table/Entity architecture are: 
 •	Security configuration for Virtual Tables that are backed by Dynamics 365 Finance/HR is managed in Finance/HR. 
-•	The customer (designated as “Mutual Customer” in the diagram) has full control over what privileges are granted to the integrating Adapter identity (<Guid A>). 
+•	The customer (designated as “Mutual Customer” in the diagram) has full control over what privileges are granted to the integrating Adapter identity (\<Guid A>\). 
 •	The customer is responsible for proper security configuration of their Dynamics Finance/HR environment, although the “Integrating Partner” who authors the “Adapter”
   needs to provide guidance as to what privileges (e.g. Data Entities) the Adapter requires. 
  
