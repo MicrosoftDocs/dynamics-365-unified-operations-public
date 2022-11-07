@@ -43,7 +43,7 @@ Please familiarize yourself with the following articles to gain the best underst
 •	[Virtual entities overview](/dev-itpro/power-platform/virtual-entities-overview) 
 •	[Get started with virtual tables (entities)](developer/data-platform/virtual-entities/get-started-ve) 
 •	[Use multi-tenant server-to-server authentication (Microsoft Dataverse)](/developer/data-platform/use-multi-tenant-server-server-authentication) 
-•	[Use OAuth authentication with Microsoft dataverse (Dataverse)](power-apps/developer/data-platform/authenticate-oauth) 
+•	[Use OAuth authentication with Microsoft dataverse (Dataverse)](/developer/data-platform/authenticate-oauth) 
 •	[OAuth 2.0 client credentials flow on the Microsoft identity platform](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) 
 •	[Authentication and authorization](/dev-itpro/power-platform/authentication-and-authorization) 
 
@@ -122,7 +122,7 @@ The Adapter authenticates by providing its application identity (non-secret, as 
 the Adapter application. 
 
 Once authenticated to make calls to Dataverse, the Dataverse-level Authorization checks are performed against each request, ensuring the caller (the Adapter 
-application’s identity designated as <Guid A>) has the appropriate application permissions. Application-level authorization is managed in Dataverse through an 
+application’s identity designated as \<Guid A>\) has the appropriate application permissions. Application-level authorization is managed in Dataverse through an 
 Application User that represents the Adapter application ID. Application-level permissions are managed by granting access to specific Dataverse-defined application 
 roles. The roles, in turn, provide the granular privileges to the application. 
 
