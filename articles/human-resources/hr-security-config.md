@@ -95,13 +95,13 @@ Authentication is the validation that a user or application identity has been pr
 Authorization grants the user/application the right to access specific application level permissions. 
 
 >[!NOTE] 
->See Authentication vs. authorization for more information. 
+>For more information, see Authentication vs. authorization. 
 
-Most cross system calls (with the exception of the call from Dataverse to Dynamics 365 Finance or Human Resources through the Virtual table proxy) in the diagram involve the Adapter. The Adapter needs to authenticate itself to: 
+Most cross system calls in the diagram involve the Adapter. The Adapter needs to authenticate itself to: 
  - Make the call to Dataverse 
  - Make calls to the integrating system  
 
-Looking at the system boundaries in the diagram, every web request between systems must be authenticated and that application-level authorization checks will be performed before data will be returned to the caller. For a request against a Dynamics 365 Virtual table backed by Dynamics 365 Finance or Human Resources, the relevant system boundaries where authentication and authorization checks are enforced are: 
+Looking at the system boundaries in the diagram, every web request between systems must be authenticated and that application level authorization checks will be performed before data will be returned to the caller. For a request against a Dynamics 365 Virtual table backed by Dynamics 365 Finance or Human Resources, the relevant system boundaries where authentication and authorization checks are enforced are: 
 
   1.	The call between the Adapter and the Dataverse Web API (Odata) endpoint 
   2.	The call between the Dataverse Virtual Entity plugin and the Dynamics 365 Dynamics 365 Finance or Human Resources Virtual entity service 
@@ -127,7 +127,7 @@ Assuming Dataverse level application permission checks pass, the Virtual entity 
 
 Refer to Configure Dataverse virtual entities - Finance & Operations | Dynamics 365 | Microsoft Learn for specifics. 
 
-The call from the Dataverse virtual entity plugin to Dynamics 365 Finance or Human Resources includes the Adapter identity of the original call from the “Adapter” (the identity designated as \<Guid A>\ in the diagram) to Dataverse. Assuming the Virtual entity data source is configured correctly and the S2S Authentication checks pass, the Virtual entity service in Dynamics 365 Finance or Human Resources will run the query in the context of the original caller (the Adapter, aka identity \<Guid A>\). Dynamics 365 Finance or Human Resources level application permission checks (Authorization) will be done to ensure that the Adapter has the privileges required to access the data entities requested through the query. 
+The call from the Dataverse virtual entity plugin to Dynamics 365 Finance or Human Resources includes the Adapter identity of the original call from the Adapter (the identity designated as \<Guid A>\ in the diagram) to Dataverse. Assuming the Virtual entity data source is configured correctly and the S2S Authentication checks pass, the Virtual entity service in Dynamics 365 Finance or Human Resources will run the query in the context of the original caller (the Adapter, dentity \<Guid A>\). Dynamics 365 Finance or Human Resources level application permission checks (Authorization) will be done to ensure that the Adapter has the privileges required to access the data entities requested through the query. 
 
 
 Dynamics 365 Finance and Human Resources security is managed by: 
