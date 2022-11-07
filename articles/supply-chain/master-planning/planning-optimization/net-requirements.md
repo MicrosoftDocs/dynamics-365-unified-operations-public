@@ -128,5 +128,6 @@ Next, you will open the **Net requirements** page for product *1000* to review h
     ![Pegging information for the sales order](media/pegging-planned-purchase-order.png "Pegging information for the sales order")
 
 > [!NOTE]
-> Note the *Safety stock* requirement is not included on the **Net requirements** page. 
+> The *Safety stock* requirement isn't included on the **Net requirements** page.
+
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
