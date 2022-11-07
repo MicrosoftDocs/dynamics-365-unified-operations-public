@@ -164,9 +164,7 @@ A **Group** sales price trade agreement is the type that is most often used with
 
 As the name implies, a price adjustment is used to modify the price that was either set directly on the product or set by using a trade agreement. A price adjustment can be used to lower or increase the price. A price adjustment is the recommended way for retailers to create, track, and manage price markdowns for their products over time.
 
-There are three types of price adjustments: percentage off, amount off, and unit price.
-
-There are three types of price adjustments: percentage off, amount off, and price. A price adjustment of the percentage off or amount off type is always applied to a sale transaction. However, a price adjustment of the price type is applied only if the adjusted price is less than the price that was set by using the base price or trade agreement price. Therefore, if the price that is set in a price adjustment is more than the unadjusted price, the price adjustment isn't used.
+There are three types of price adjustments: **Percentage off**, **Amount off**, and **Unit price**. A price adjustment of the percentage off or amount off type is always applied to a sale transaction. However, a price adjustment of the price type is applied only if the adjusted price is less than the price that was set by using the base price or trade agreement price. Therefore, if the price that is set in a price adjustment is more than the unadjusted price, the price adjustment isn't used.
 
 ## Determining price for a product in a transaction
 
