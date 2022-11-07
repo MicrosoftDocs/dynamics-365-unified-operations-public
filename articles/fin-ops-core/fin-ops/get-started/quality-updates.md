@@ -26,15 +26,15 @@ This premise is confirmed by the results: lower incident counts across our produ
 ## What you need to know
 
 - Proactive quality updates are applied on a monthly basis.
-- Microsoft will apply proactive quality updates to any sandbox environments running a service update that was [in service](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) when the proactive quality update was created.
-- Exceptions for proactive quality updates will be allowed for FDA-regulated customers.
-- Microsoft is determining how proactive quality updates will be managed for regulated environments and sovereign and government cloud customers.
-- Notifications related to proactive quality updates are posted in the [Microsoft 365 Message Center](https://admin.microsoft.com/AdminPortal/) and on a banner in the customer's Microsoft Dynamics 365 Lifecycle Services project.
-- Customers are notified that a proactive quality update will be applied to an environment 5 days before the update will take place.
+- Microsoft will apply proactive quality updates to any sandbox environments that are running a service update that was [in service](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) when the proactive quality updates were created.
+- Exceptions for proactive quality updates will be allowed for customers that are regulated by the US Food and Drug Administration (FDA).
+- Microsoft is determining how proactive quality updates will be managed for regulated environments, and for sovereign and government cloud customers.
+- Notifications that are related to proactive quality updates are posted in the [Microsoft 365 Message Center](https://admin.microsoft.com/AdminPortal/) and on a banner in the customer's Microsoft Dynamics Lifecycle Services project.
+- Five days before a proactive quality update is applied to an environment, customers are notified that the update will occur.
 - Customers can't cancel or postpone proactive quality updates.
 - Proactive quality updates are installed during the region-specific [planned maintenance window](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
-- Quality updates are engineered to have a low risk of issues or regressions and this is supported by the Microsoft data.
-- Microsoft recommends targeted testing for specific issues or specific hot fixes related to a proactive quality update.
+- Quality updates are engineered to have a low risk of issues or regressions, and this is supported by Microsoft data.
+- Microsoft recommends targeted testing for specific issues or specific hotfixes that are related to a proactive quality update.
 
 ## Focus on quality updates
 
@@ -50,7 +50,7 @@ Multiple advances have already been deployed that enable proactive delivery of q
 
 - **Near-zero downtime updating** – To push more frequent environments, it's essential that the impact to environment availability be reduced to preserve Dynamics 365 Service Level Agreements (SLAs). Near-zero downtime updating was originally introduced to help improve monthly operating system patching by using a cluster failover to activate the updated image with minimal disruption. The mechanism for applying updates is being enhanced so that it's even less disruptive, and it will cover both operating system patching and quality update deployment.
 
-For interactive users, an active session might be interrupted, and the retry will go to the now-updated environment. With the introduction of [priority-based batch scheduling](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md), batch scheduling and processing recovers and resumes immediately after the update. Priority-based batch scheduling will be in place for customers before they start to participate in proactive distribution of quality updates for their production environments.
+    For interactive users, an active session might be interrupted, and the retry will go to the now-updated environment. With the introduction of [priority-based batch scheduling](../../dev-itpro/sysadmin/priority-based-batch-scheduling.md), batch scheduling and processing recovers and resumes immediately after the update. Priority-based batch scheduling will be in place for customers before they start to participate in proactive distribution of quality updates for their production environments.
 
 - **Dark hours** – Dark hours are defined for each Azure region, and near-zero downtime updates will occur during the dark hour period.
 
@@ -66,9 +66,11 @@ A set of process changes is being implemented ahead of the activation of proacti
 
 - **Schema** – Tooling will ensure that quality update builds include only schema changes that can be applied while the service is online. This approach will help preserve the ability to apply the update with near-zero downtime.
 - **Increased change scrutiny** – Currently, there is already an extra process step to approve changes for inclusion in a quality update. The scrutiny in the extra step will be increased to help reduce the potential for regressions. Breaking changes aren't allowed in quality updates, and the increased change scrutiny will help ensure that we meet this target.
-- **Visibility** – Notifications are sent through the admin center, Lifecycle Services and other available channels for upcoming proactive quality updates. In addition, support teams and incident leads will have visibility into where quality updates have been proactively deployed.
- > [!NOTE]
- > The Microsoft Communications team is investigating an ongoing degradation of the email tooling which is preventing the delivery of email notifications. Please continue to monitor the Microsoft 365 Message Center for onboarding and notification related messages.
+- **Visibility** – Notifications are sent through the admin center, Lifecycle Services, and other available channels for upcoming proactive quality updates. In addition, support teams and incident leads will have visibility into where quality updates have been proactively deployed.
+
+    > [!NOTE]
+    > The Microsoft Communications team is investigating an ongoing degradation of the email tooling which is preventing the delivery of email notifications. Please continue to monitor the Microsoft 365 Message Center for onboarding and notification related messages.
+
 - **Fail Safe via flighting** – Flighting will be used to guard code changes wherever applicable in a quality update bug fix or use the existing feature flighting relevant to the fix. If a fallback or turning a change off change is required after a proactive deployment, it can be done through the flighting system to avoid further failures.
 - **Sandbox sync designation** – Less than 20 percent of customers today have multiple sandboxes and keep one sandbox deployed where the version matches production, to help with troubleshooting. If a customer is using a sandbox to test a newer version than their production, that sandbox will receive quality updates to the newer version.
 
@@ -87,7 +89,7 @@ At this time, quality updates are only targeting sandboxes. We will update this 
 For information on the dark hours for each region, see [What are the planned maintenance windows by region?](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
 
 ### Proactive quality update release: 10.0.28
-**App version: 10.0.1265.89**
+**App version: 10.0.1265.89**  
 **Corresponding latest KB article: 745340**
 
 | Station | Regions | Completed Schedule| Upcoming Sandbox Schedule
@@ -99,7 +101,7 @@ For information on the dark hours for each region, see [What are the planned mai
 | Station 5 | DoD, Government Community Cloud, China | Not Scheduled | Not Scheduled |
 
 ### <a name="schedule"></a> Proactive quality update release: 10.0.29
-**App version: 10.0.1326.70**
+**App version: 10.0.1326.70**  
 **Corresponding latest KB article: 748926**
 
 | Station | Regions | Completed Schedule | Upcoming Sandbox Schedule|
@@ -139,8 +141,8 @@ Use KB# 745340 for the 10.0.28 Quality Update train and the related App version 
 3. Export the build into a CSV or Microsoft Excel file.
 4. In the exported file, sort the information based on time (oldest first) and then search for the KB number 745340 in the **Update Id** column. You should now be able to see the delta list of KBs.
  
- > [!NOTE]
- > The export to a CSV or Excel file must happen before the environment is updated. Otherwise, you can use an environment with a similar configuration that doesn't have the update installed and follow the steps above.
+> [!NOTE]
+> The export to a CSV or Excel file must happen before the environment is updated. Otherwise, you can use an environment with a similar configuration that doesn't have the update installed and follow the steps above.
 
 [![Example of environment with quality update.](./media/how-to-get-kb-list-pqu.png)](./media/how-to-get-kb-list-pqu.png)
 
@@ -153,7 +155,7 @@ If a single customer environment is affected, contact Microsoft support to open 
 Yes. To ensure ongoing parity with how hotfixes work, hotfix updates can still be applied to customer environments in Lifecycle Services. However, it's important to note that hotfixes that are deployed as part of a quality update go through the standard SDP before the update is deployed. This reduces the risk of regressions due to higher quality. We recommend that you choose a quality update over manually applying hotfixes for increased reliability.
 
 ## Can customers proactively install a quality update build ahead of the schedule?
-Yes. You can install a quality update proactively. Microsoft will skip the update if the environment’s current build version is equal or higher than the quality update in question.
+Yes. You can install a quality update proactively. Microsoft will skip the update if the environment's current build version is equal or higher than the quality update in question.
 
 ## If an environment has an upcoming scheduled monthly service update within a week, will it still receive quality updates?
 - Quality updates aren't applied to production environments if there's an impending service update scheduled within a week from when the quality update is scheduled to happen.
@@ -174,11 +176,11 @@ The plan for customers subject to FDA validation and regulation is still evolvin
 ## What versions of service updates are supported for these quality updates?
 Customers on all supported version of service updates qualify for quality updates. 
 
-## Finance and operations apps deployments with Retail components typically require additional work in addition to having to redeploy MPOS. How will these quality updates impact the RetailSDK? 
-Because the nature of the hotfix itself doesn’t change in the quality updates payload, we don’t anticipate any additional impact specifically related to Retail components at this time.
+## Finance and operations apps deployments with Retail components typically require additional work in addition to having to redeploy MPOS. How will these quality updates impact the Retail SDK? 
+Because the nature of the hotfix itself doesn't change in the quality updates payload, we don't anticipate any additional impact specifically related to Retail components at this time.
 
 ## Is there any impact to Cloud Hosted Environments (CHE)? 
-CHE environments are out of scope for quality updates because they are outside the purview of Microsoft
+CHE environments are out of scope for quality updates because they are outside the purview of Microsoft.
 
 ## Are there any integration issues with Microsoft Dataverse? 
 There are no known integration issues for quality updates with Dataverse.
