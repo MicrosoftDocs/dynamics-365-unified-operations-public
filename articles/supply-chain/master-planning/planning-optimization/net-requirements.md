@@ -128,8 +128,5 @@ Next, you will open the **Net requirements** page for product *1000* to review h
     ![Pegging information for the sales order](media/pegging-planned-purchase-order.png "Pegging information for the sales order")
 
 > [!NOTE]
-> Because Planning Optimization doesn't support some features, the *Safety stock* and *Expired batch* requirement types aren't included on the **Net requirements** page. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
->
-> If you're using the deprecated master planning engine, batch-controlled products are supported. For batch-controlled products, expired on-hand inventory is shown on the **Net requirements** page, but it isn't pegged with demand requirements. Expired on-hand lines of this type are shown as *Expired batch* requirement lines on the **Net requirements** page.
-
+> Note the *Safety stock* requirement is not included on the **Net requirements** page. 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
