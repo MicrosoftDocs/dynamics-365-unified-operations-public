@@ -4,7 +4,7 @@
 title: Proactive quality updates
 description: This article provides information about proactive delivery of quality updates.
 author: rashmansur
-ms.date: 09/12/2022
+ms.date: 11/07/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: sericks
@@ -25,16 +25,16 @@ This premise is confirmed by the results: lower incident counts across our produ
 
 ## What you need to know
 
-- Proactive quality updates are applied on a monthly basis
-- Microsoft will apply proactive quality updates to any sandbox environments running a service update that was [in service](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) when the proactive quality update was created
-- Exceptions for proactive quality updates will be allowed for FDA-regulated customers
-- Microsoft is working out how proactive quality updates will be managed for regulated environments and sovereign and government cloud customers
-- Notifications related to proactive quality updates are posted in the [Microsoft 365 Message Center](https://admin.microsoft.com/AdminPortal/) and on a banner in the customer's Lifecycle Services (LCS) project
-- Customers are notified that a proactive quality update will be applied to an environment 5 days before the update will take place
-- Customers can't cancel or postpone proactive quality updates
-- Proactive quality updates are installed during the region-specific [planned maintenance window](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows)
-- Quality updates are engineered to have a low risk of issues or regressions and this is supported by the Microsoft data
-- Microsoft recommends targeted testing for specific issues or specific hot fixes related to a proactive quality update
+- Proactive quality updates are applied on a monthly basis.
+- Microsoft will apply proactive quality updates to any sandbox environments running a service update that was [in service](./public-preview-releases.md#targeted-release-schedule-dates-subject-to-change) when the proactive quality update was created.
+- Exceptions for proactive quality updates will be allowed for FDA-regulated customers.
+- Microsoft is determining how proactive quality updates will be managed for regulated environments and sovereign and government cloud customers.
+- Notifications related to proactive quality updates are posted in the [Microsoft 365 Message Center](https://admin.microsoft.com/AdminPortal/) and on a banner in the customer's Microsoft Dynamics 365 Lifecycle Services project.
+- Customers are notified that a proactive quality update will be applied to an environment 5 days before the update will take place.
+- Customers can't cancel or postpone proactive quality updates.
+- Proactive quality updates are installed during the region-specific [planned maintenance window](../../dev-itpro/deployment/plannedmaintenance-selfservice.md#windows).
+- Quality updates are engineered to have a low risk of issues or regressions and this is supported by the Microsoft data.
+- Microsoft recommends targeted testing for specific issues or specific hot fixes related to a proactive quality update.
 
 ## Focus on quality updates
 
@@ -66,7 +66,7 @@ A set of process changes is being implemented ahead of the activation of proacti
 
 - **Schema** – Tooling will ensure that quality update builds include only schema changes that can be applied while the service is online. This approach will help preserve the ability to apply the update with near-zero downtime.
 - **Increased change scrutiny** – Currently, there is already an extra process step to approve changes for inclusion in a quality update. The scrutiny in the extra step will be increased to help reduce the potential for regressions. Breaking changes aren't allowed in quality updates, and the increased change scrutiny will help ensure that we meet this target.
-- **Visibility** – We will send notifications through the admin center, LCS and other available channels for upcoming proactive quality updates. In addition, support teams and incident leads will have visibility into where quality updates have been proactively deployed.
+- **Visibility** – Notifications are sent through the admin center, Lifecycle Services and other available channels for upcoming proactive quality updates. In addition, support teams and incident leads will have visibility into where quality updates have been proactively deployed.
  > [!NOTE]
  > The Microsoft Communications team is investigating an ongoing degradation of the email tooling which is preventing the delivery of email notifications. Please continue to monitor the Microsoft 365 Message Center for onboarding and notification related messages.
 - **Fail Safe via flighting** – Flighting will be used to guard code changes wherever applicable in a quality update bug fix or use the existing feature flighting relevant to the fix. If a fallback or turning a change off change is required after a proactive deployment, it can be done through the flighting system to avoid further failures.
@@ -134,7 +134,7 @@ The following steps are a temporary solution as we continue to work on providing
 
 Use KB# 745340 for the 10.0.28 Quality Update train and the related App version 10.0.1265.89.
 
-1. In LCS, open the **Environment details** page for your sandbox. 
+1. In Lifecycle Services, open the **Environment details** page for your sandbox. 
 2. In the **Available Updates** section, select **View Update** for the latest Quality Update build. 
 3. Export the build into a CSV or Microsoft Excel file.
 4. In the exported file, sort the information based on time (oldest first) and then search for the KB number 745340 in the **Update Id** column. You should now be able to see the delta list of KBs.
@@ -149,8 +149,8 @@ A critical issue or regression is one or more events that typically cause multip
 
 If a single customer environment is affected, contact Microsoft support to open a ticket. Based on the justification, we will stop the quality update rollout to all other environments in that project until the issue is mitigated.
 
-## Can customers still manually apply hotfix updates from LCS?
-Yes. To ensure ongoing parity with how hotfixes work, hotfix updates can still be applied to customer environments in LCS. However, it's important to note that hotfixes that are deployed as part of a quality update go through the standard SDP before the update is deployed. This reduces the risk of regressions due to higher quality. We recommend that you choose a quality update over manually applying hotfixes for increased reliability.
+## Can customers still manually apply hotfix updates from Lifecycle Services?
+Yes. To ensure ongoing parity with how hotfixes work, hotfix updates can still be applied to customer environments in Lifecycle Services. However, it's important to note that hotfixes that are deployed as part of a quality update go through the standard SDP before the update is deployed. This reduces the risk of regressions due to higher quality. We recommend that you choose a quality update over manually applying hotfixes for increased reliability.
 
 ## Can customers proactively install a quality update build ahead of the schedule?
 Yes. You can install a quality update proactively. Microsoft will skip the update if the environment’s current build version is equal or higher than the quality update in question.
@@ -159,7 +159,7 @@ Yes. You can install a quality update proactively. Microsoft will skip the updat
 - Quality updates aren't applied to production environments if there's an impending service update scheduled within a week from when the quality update is scheduled to happen.
 - If a sandbox environment has the same or higher build version than the impending quality update, it will be skipped.
 - If a production environment has the same or higher build version than the impending quality update, it will be skipped.
-- If a sandbox has the same or higher build version because of a quality update or a manual update to the production, the production will still get the scheduled version of the monthly service update. If you don't want the scheduled production environment to be updated to the service update version, you can pause the service update from LCS. 
+- If a sandbox has the same or higher build version because of a quality update or a manual update to the production, the production will still get the scheduled version of the monthly service update. If you don't want the scheduled production environment to be updated to the service update version, you can pause the service update from Lifecycle Services. 
 - We recommend you utilize the latest quality update build to test your changes for an upcoming service update for better stability and results.
 
 ## If an environment has an upcoming scheduled action and a scheduled quality update in the same maintenance window, will it still receive the quality update?
