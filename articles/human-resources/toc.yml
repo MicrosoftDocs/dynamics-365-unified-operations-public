@@ -836,6 +836,10 @@
       href: hr-developer-entities.md
     - name: Custom fields
       href: hr-developer-custom-fields.md
+    - name: Develop and customize
+      items:
+      - name: Gender base enum
+        href: enum-exten.md 
     - name: Set up data integration
       items:
       - name: Choose a data integration technology
