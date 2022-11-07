@@ -40,8 +40,8 @@ the authentication and authorization aspects required between the system boundar
 
 Please familiarize yourself with the following articles to gain the best understanding of the concepts presented in this article: 
 
-•	[Virtual entities overview](./dev-itpro/power-platform/virtual-entities-overview) 
-•	[Get started with virtual tables (entities)](developer/data-platform/virtual-entities/get-started-ve) 
+•	[Virtual entities overview](/dev-itpro/power-platform/virtual-entities-overview) 
+•	[Get started with virtual tables (entities)](/developer/data-platform/virtual-entities/get-started-ve) 
 •	[Use multi-tenant server-to-server authentication (Microsoft Dataverse)](/developer/data-platform/use-multi-tenant-server-server-authentication) 
 •	[Use OAuth authentication with Microsoft dataverse (Dataverse)](/developer/data-platform/authenticate-oauth) 
 •	[OAuth 2.0 client credentials flow on the Microsoft identity platform](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) 
