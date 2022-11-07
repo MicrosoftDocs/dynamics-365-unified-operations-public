@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Optimize year-end close 
-description: This article describes the Optimize year-end close add-in that is available for the general ledger year-end close process. 
+title: Optimize year-end close
+description: This article describes the Optimize year-end close service add-in that's available for the general ledger year-end close process.
 author: moaamer
 ms.date: 11/02/2022
 ms.topic: article
@@ -27,56 +27,58 @@ ms.dyn365.ops.version: AX 10.0.0
 
 ---
 
-# Optimize year-end close overview
+# Optimize year-end close
 
-The Optimize year-end close add-in for Microsoft Dynamics 365 Finance enables year-end close processing to execute outside the Dynamics 365 Finance resources AOS. It 
-uses microservice technology. The benefits that are associated with the Optimize year-end close functionality include improved performance and minimized impact on the 
-SQL database during year-end close processing. 
+The Optimize year-end close service add-in for Microsoft Dynamics 365 Finance enables year-end close processing to run outside the Application Object Server (AOS) instance for Dynamics 365 Finance resources. It uses microservice technology. The benefits that are associated with the Optimize year-end close functionality include improved performance and minimized impact on the SQL database during year-end close processing.
 
-To use the Optimize year-end close, you must install the Optimize year-end close service add-ins from your project in Microsoft Dynamics Lifecycle Service (LCS) and 
-enable the feature in **Feature management**.
+To use the Optimize year-end close functionality, you must complete the following tasks:
 
-> [!NOTE] 
-> You can still use the current year-end close on Dynamics 365 Finance resources by disabling the **Optimize year-end close** in **Feature management**. 
+1. Install the Optimize year-end close service add-in from your project in Microsoft Dynamics Lifecycle Service.
+2. Enable the **Optimize year-end close** feature in Feature management.
+
+> [!NOTE]
+> You can still use the current year-end close functionality for Finance resources by disabling the **Optimize year-end close** feature in Feature management.
 
 ## Improved performance
 
-**Optimize year-end close** is designed to accelerate the year-end close processing, especially for customers with large volumes of data. The year-end close on a service offloads the heavy processing from Dynamics 365 Finance resources to reduce the processing time and free up the resources that may affect the daily operations of other users. 
+The **Optimize year-end close** feature is designed to accelerate year-end close processing, especially for customers who have large volumes of data. When the year-end close runs on a service, the heavy processing is offloaded from Finance resources to help reduce the processing time and free up the resources that might affect the daily operations of other users.
 
-The **Optimize year-end close** feature can help:
+The **Optimize year-end close** feature can help you achieve the following goals:
 
- - Improve year-end closing performance by reducing run time
- - Reduce the impact on other processes during year-end close run
- - Improve year-end result reporting and adjustments as the year-end close run takes a shorter amount of time
+- Improve the performance of the year-end close by reducing the runtime.
+- Reduce the impact on other processes during the year-end close run.
+- Improve reporting and adjustments for the year-end results, because the year-end close run takes less time.
 
 ## New options and visibility
-By enabling **Optimize year-end close** feature, there are two new columns, **Results** and **Status**. These columns are added to the **Year-end close** page, **Year-end close results** dialogue, and the **Balance sheet financial dimension transfer** options in the **Year-end close template** page. 
 
-The following screenshot shows the **Results** and **Status** columns that have been added to the **Year-end close** page. The **View results** link to open up results of the year-end close, and status shows the current state of the year-end close process. Those options provide visibility where the year-end close process is. 
+When the **Optimize year-end close** feature is enabled, two new columns, **Results** and **Status**, are added in the following places:
 
-[![Year-end close .](./media/Yearendclose.jpg)](./media/Yearendclose.jpg)
+- On the **Year-end close** page
+- In the **Year-end close results** dialog box
+- In the **Balance sheet financial dimension transfer** options on the **Year-end close template** page
 
-By enabling the **Optimize year-end close** feature, the **Balance sheet financial dimensions** FastTab is available in the **Year-end close template**. This gives the ability to specify balance sheet financial dimensions in detail when you close a year. This functionality now parallels the capability that is available for profit and loss accounts.
+The following illustration shows an example of the **Results** and **Status** columns on the **Year-end close** page. You can select the **View results** link in the **Results** column to open the results of the year-end close. The **Status** column shows the current state of the year-end close process. Therefore, the new columns provide visibility into the progress of the year-end close process.
 
-## Architecture and data flow 
+[![Results and Status columns on the Year-end close page.](./media/Yearendclose.jpg)](./media/Yearendclose.jpg)
 
-In order to use **Optimize year-end close** feature and run the year-end close on a microservice, you'll need to:
- - install the **Optimize year-end close** service add-in from LCS 
- - enable **Optimize year-end close** feature in **Feature management** 
- 
-As illustrated in the below diagram, the year-end close processing will check if the service add-in is installed and **Optimize year-end close** feature is enabled. If both are enabled, the execution of the year-end close will run on the microservice.
+In addition, when the **Optimize year-end close** feature is enabled, a **Balance sheet financial dimensions** FastTab becomes available on the **Year-end close template** page. You can use this FastTab to specify balance sheet financial dimensions in detail when you close a year. This capability is parallel to the capability that's already available for profit and loss accounts.
 
-[![Lifecycle services.](./media/Lifecycle-services.jpg)](./media/Lifecycle-services.jpg)
+## Architecture and data flow
 
+To use **Optimize year-end close** feature and run the year-end close on a microservice, you must install the Optimize year-end close service add-in from Lifecycle Services and then enable the **Optimize year-end close** feature in Feature management.
+
+As the following illustration shows, the year-end close processing verifies that the add-in is installed and the feature is enabled. If both prerequisites are met, the year-end close runs on the microservice.
+
+[![Data flow diagram.](./media/Lifecycle-services.jpg)](./media/Lifecycle-services.jpg)
 
 ## High-level flow for year-end close processing
 
-1.	The year-end close process begins in Dynamics 365 Finance under **General ledger > Period close > Year-end close**. The process creates closing batch jobs
-and tasks for the legal entities being closed.
-2.	The year-end close determines whether to run the year-end close on service or on the current closing logic. 
-    a.	If the **Optimize year-end close** service is installed in LCS and **Optimize year-end close** feature management is enabled, then the Year-end close will run in microservice. 
-        i.	Optimize year-end close creates a year-end close service job for each legal entity being closed, then executes the year-end close logic. The microservice 
-        performs the year-end close. 
-        ii.	Dynamics 365 Finance listens to the microservice year-end close to determine when the microservice has completed. The year-end close results are updated in 
-        the **Year-end close** page in Dynamics 365 Finance. 
-    b.	Otherwise, the year-end close will run on the current design.
+1. The year-end close process begins in Finance, at **General ledger \> Period close \> Year-end close**. The process creates closing batch jobs and tasks for the legal entities that are being closed.
+2. The year-end close determines whether the year-end close should be run on the microservice or on the current closing logic.
+
+    - If the Optimize year-end close service add-in is installed in Lifecycle Services, and the **Optimize year-end close** feature is enabled in Feature management, the year-end close will run on the microservice.
+
+        1. The Optimize year-end close functionality creates a year-end close service job for each legal entity that's being closed, and then runs the year-end close logic. The microservice performs the year-end close.
+        2. Finance listens to the year-end close on the microservice to determine when the microservice has finished. The year-end close results are then updated on the **Year-end close** page in Finance.
+
+    - Otherwise, the year-end close will run on the current closing logic.
