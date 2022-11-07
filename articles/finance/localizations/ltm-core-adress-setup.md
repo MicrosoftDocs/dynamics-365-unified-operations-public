@@ -12,17 +12,42 @@ ms.custom: bap-template
 # Latam Address setup
 
 ## **Overview**
-For Latam countries you can use Latam extension from the Address setup. Each country has a Tax Identification to identify its taxpayers. For example, in Argentina taxpayers Tax ID is called are identified by the number of CUIT, in Chile by the RUT, etc. This article provides information about how to associate the tax identification ID to each country, state, and county.
+Each Latin America country has a Tax Identification to identify its taxpayers. This article provides information about how to associate the tax identification ID to each country, state, and county using the Latam extension from the Address setup
+
 ## **Prerequisites**
-The following prerequisites are recommended to be set up before you can add information to Latam extension 
-Country, state, and county standard fields
-Latam fiscal register feature
+The following prerequisites are recommended to be set up before you can add information to Latam extension: 
+- Country, state, and county standard fields
+- Latam fiscal register feature
 
 ## **Country tab configuration**
 
-On the Address setup page, on the Country/region tab use the LATAM button to select one option from the menu
-- LATAM
-- Tax application
+To associate a tax identification ID to a country go the Address setup page
+1.	Go to the Country/region tab.
+2.	In the list, find and select the desired country.
+3.	Go to LATAM button
+4.	Select LATAM option.
+5.	In the Foreign country/region field select Yes only for a foreign country
+6.	In the allowed country/region document types section select New.
+7.	In the list, select the tax identification ID desired.
+8.  Save
+9.	Close the page.
+
+Add the codification provided by the fiscal authorities
+
+1.	Go the Country/region tab.
+2.	Go to LATAM button.
+3.	Select Tax application option.
+4.	Click New.
+5.	In the list, choose the Tax application Id. desired.
+6.	In the Tax application code field, type a value.
+7.	Click Save.
+8.	Close the page.
+
+
+
+
+
+
 - Country per Taxpayer Type identification
 
 ### LATAM
