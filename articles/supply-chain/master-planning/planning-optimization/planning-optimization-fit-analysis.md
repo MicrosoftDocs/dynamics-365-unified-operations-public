@@ -95,16 +95,16 @@ The following table shows the various results that can be shown after a fit anal
 | Production | Formula versions with Co/By products: *\#* | This feature is pending. Currently, co-products and by-products that are associated with the formula version are ignored when Planning Optimization is enabled. | 2022 release wave 2 |
 | Production | Formula versions with Yield: *\#* | This feature is pending. Currently, yield that is associated with the formula version is ignored when Planning Optimization is enabled. | 2022 release wave 2 |
 | Production | Plans including sequencing: *\#* | This feature is pending. Currently, sequencing is ignored when Planning Optimization is enabled, regardless of this setting. | 2022 release wave 2 |
-| Production | Released production orders that are not started, where scheduled start is earlier than today: *\#* | This feature is pending. Currently, if a production order is delayed, then master planning will assume that it will be completed today. This is relevant for released production orders where a delivery date is in the past, but it has not been completed yet. | Future wave |
+| Production | Released production orders that are not started, where scheduled start is earlier than today: *\#* | This feature is pending. Currently, if a production order is delayed, then master planning will assume that it will be completed today. This is relevant for released production orders where a delivery date is in the past, but it has not been completed yet. | 2022 release wave 2 |
 | Production | Resources scheduled with finite capacity: *\#* | This feature is now supported.| Supported |
 | Production | Routes used in planning: *\#* | This feature is supported. | Supported |
-| Production | Sales line reservation using explosion: *\#* | Sales line reservation that uses explosion isn't supported when Planning Optimization is enabled. | Future wave |
-| Production | Scheduling with explosion of production orders: *\#* | Scheduling that uses explosion of production orders isn't supported when Planning Optimization is enabled. Production orders can be scheduled individually. | Future wave |
+| Production | Sales line reservation using explosion: *\#* | Sales line reservation that uses explosion isn't supported when Planning Optimization is enabled. | 2022 release wave 2 |
+| Production | Scheduling with explosion of production orders: *\#* | Scheduling that uses explosion of production orders isn't supported when Planning Optimization is enabled. Production orders can be scheduled individually. | 2022 release wave 2 |
 | Request for quotations | Master plans with request for quotations enabled: *\#* | This feature is pending. Currently, requests for quotation (RFQs) aren't considered as demand when Planning Optimization is enabled. They will be ignored, regardless of this setting. | 2022 release wave 2 |
 | Requisitions | Master plans with requisitions enabled: *\#* | This feature is now supported. For additional information, see [Purchase requisitions](purchase-requisitions.md) | Supported |
 | Safety margins | Coverage groups with safety margin: *\#* | This feature is now supported. For additional information, see [Safety margins](safety-margins.md) | Supported |
 | Safety margins | Master plans with safety margin: *\#* | This feature is now supported. For additional information, see [Safety margins](safety-margins.md) |  Supported |
-| Sales quotations | Master plans with sales quotations enabled: *\#* | This feature is pending. Currently, quotations aren't considered when Planning Optimization is enabled. They will be ignored, regardless of this setting. | 2022 release wave 2 or later |
+| Sales quotations | Master plans with sales quotations enabled: *\#* | This feature is pending. Currently, quotations aren't considered when Planning Optimization is enabled. They will be ignored, regardless of this setting. | 2022 release wave 2 |
 | Shelf life | Master plans with shelf life enabled: *\#* | This feature is now supported. | Supported |
 
 ## Additional resources
