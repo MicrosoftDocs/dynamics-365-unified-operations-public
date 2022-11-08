@@ -3,7 +3,7 @@
 title: Domains in Dynamics 365 Commerce
 description: This article describes how domains are handled in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/25/2022
+ms.date: 11/08/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -96,7 +96,7 @@ You can also add custom domains. To do so, on the environment Commerce managemen
 
 ## Update which Commerce Scale Unit is used
 
-The selected Commerce Scale Unit (CSU) used by Commerce was typically selected when initially created. By selecting **Update scale unit** (on the same Commerce management page as detailed just prior to this subheading), a slider is shown that details the current CSU being used and the option to select a **New commerce scale unit** from the list of what CSU exist for that environment. This allows customers to better maintain their architecture through self-service functionality, reducing the need to connect with support.
+The Commerce Scale Unit (CSU) used by Commerce is typically selected when an environment is initially created. Commerce lets you to change which CSU instance is used, allowing you to better maintain your architecture through self-service functionality, and reducing the need to contact support. To update your CSU instance, go to the environment Commerce management page for the project and select **Update scale  unit**. Use the **New commerce scale unit** slider to select a new CSU instance from the list of CSUs available for the environment.
 
 ## Traffic forwarding in production
 
