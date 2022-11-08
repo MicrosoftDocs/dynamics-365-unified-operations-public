@@ -2,34 +2,21 @@
 # required metadata
 
 title: Setting up Apple Pay with Adyen in Dynamics 365 Commerce
-description: This topic provides an overview of the Microsoft Dynamics 365 Payment support for Apple Pay with Adyen.
+description: This article describes how to set up Apple Pay with Adyen in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/01/2022
+ms.date: 11/08/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-# ms.search.form: 
-# ROBOTS: 
-audience: IT Pro
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
-ms.custom: 141393
-ms.assetid: e23e944c-15de-459d-bcc5-ea03615ebf4c
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: brshoo
-ms.search.validFrom:
-ms.dyn365.ops.version: AX 7.0.1
+ms.search.validFrom: 2022-06-20
 
 ---
 
-# Setting up Apple Pay with Adyen in Dynamics 365 Commerce
+# Set up Apple Pay with Adyen in Dynamics 365 Commerce
 
-This topic provides an overview of the Microsoft Dynamics 365 payments support for accepting payments via Apple Pay on supported devices.
+This article describes how to set up Apple Pay with Adyen in Microsoft Dynamics 365 Commerce.
 
 ## Key terms
 
@@ -47,11 +34,9 @@ The Apple Pay payment method must also be integrated with your Adyen account. Ad
 
 Enable the enhanced wallet feature flag in Commerce headquarters. Go to **Workspaces > Feature management** and search for the **Enhanced wallet support and payment improvements** feature. Select the feature, and then click **Enable**. After the feature has been enabled, run the **1110** distribution schedule to make the change available in all channels.
 
-
-
 ## Map the Apple Pay Payment Method
 
-Apple Pay is a digital wallet payment method. Set up payment mapping for Apple Pay as described in the [Wallet payment support](https://docs.microsoft.com/en-us/dynamics365/commerce/wallets) article. 
+Apple Pay is a digital wallet payment method. For information on setting up payment mapping for Apple Pay, see [Wallet payment support](../wallets.md). 
 
 - In Commerce headquarters, go to **Retail and Commerce > Channel setup > Payment methods > Card types**. 
 - Select **New** and add a line for Apple Pay: 
@@ -74,16 +59,14 @@ In the base domain for the sites in Site Builder, use the following steps:
 2. Go to **URLs** for your site.
 3. Select **New > New URL**.
 4. In the **New URL** dialog box, select **Media library asset**.
-5. In the **URL path** field, enter the URL path (if not pre-populated by SIte Builder already). From the domain base, enter the required Apple pattern: '<domain>/.well-known/apple-developer-merchantid-domain-association.txt' pattern.
+5. In the **URL path** field, enter the URL path (if not pre-populated by SIte Builder already). From the domain base, enter the required Apple pattern: `<domain>/.well-known/apple-developer-merchantid-domain-association.txt`.
 6. Select **Next**. The Media library is opened and shows all media assets of the **document** type that have been uploaded.
 7. Select the file that should be served for requests to the URL that you defined in step 5. 
 8. Select **Create**. 
 
 At this point, the URL that you created is in a draft state. The file that the URL points to won't be returned until you publish the URL. Publish the URL to complete the process.
 
-These steps, along with URL preview prior to validation steps, are utilizing the general [Upload and Serve Static files](https://learn.microsoft.com/en-us/dynamics365/commerce/upload-serve-static-files#create-a-site-url-that-returns-a-static-file) instructions for Commerce, provided here as additional reference.
-
-
+These steps, along with URL preview prior to validation steps, are utilizing the general [Upload and serve static files](../upload-serve-static-files.md#create-a-site-url-that-returns-a-static-file) instructions for Commerce, provided here as additional reference.
 
 ## Configure a Commerce online store for Apple Pay
 
@@ -95,7 +78,7 @@ Once the Adyen Connector is configured, click on **Add** to add the **Dynamics 3
 | ---------------------- | ------------------------------------------------------------ | -------- | ----------------- | -------------------- |
 | Assembly Name          | Auto populated name of the assembly for the Dynamics 365 Payment Connector for Apple Pay | Yes      | Yes               | *Binary name*        |
 | Service account ID     | Auto populated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes      | Yes               | *Guid*               |
-| Merchant account ID    | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector-setup#sign-up-with-adyen) section. | Yes      | No                | *MerchantIdentifier* |
+| Merchant account ID    | Enter the unique Adyen merchant identifier. This value is provided when you sign up with Adyen as described in the [Sign up with Adyen](adyen-connector-setup.md#sign-up-with-adyen) section. | Yes      | No                | *MerchantIdentifier* |
 | Cloud API Key          | Enter the Adyen cloud API key. You can obtain this key by following the instructions on the [How to get the API key](https://docs.adyen.com/developers/user-management/how-to-get-the-api-key) page on the Adyen website. | Yes      | No                | *abcdefg*            |
 | Gateway environment    | Enter the Adyen gateway environment to map to. The possible values are **Test** and **Live**. You should set this field to **Live** only for production devices and transactions. | Yes      | Yes               | *Live*               |
 | Supported Currencies   | Enter the currencies that the connector should process. In card-present scenarios, Adyen can support additional currencies through [Dynamic Currency Conversion](https://www.adyen.com/pos-payments/dynamic-currency-conversion) after the transaction request is sent to the payment terminal. Contact Adyen support to get a list of supported currencies. | Yes      | Yes               | *USD;EUR*            |
@@ -103,31 +86,23 @@ Once the Adyen Connector is configured, click on **Add** to add the **Dynamics 3
 
 Once the merchant information has been filled, run the **1070** Channel configuration distribution schedule.
 
-
-
 ## Configure Commerce Point-of-Sale for Apple Pay
 
-The Point-of-Sale (POS) configuration will utilize the hardware profile's **EFT service** field configuration for the **Dynamics 365 Payment Connector for Adyen**. In headquarters, configure the EFT service for Dynamics 365 Payment Connector for Adyen as described in the [Set up Dynamics 365 Payment Connector for Adyen](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector-setup) article's [Set up a Dynamics 365 POS hardware profile section](https://docs.microsoft.com/en-us/dynamics365/commerce/dev-itpro/adyen-connector-setup). 
+The Point-of-Sale (POS) configuration will utilize the hardware profile's **EFT service** field configuration for the **Dynamics 365 Payment Connector for Adyen**. In headquarters, configure the EFT service for Dynamics 365 Payment Connector for Adyen as described in the [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md) article's [Set up a Dynamics 365 POS hardware profile section](adyen-connector-setup.md). 
 
 Ensure to add "ApplePay" to the list of **Supported Tender Types** listed (separated by semi-colon).
 
 The previous Card Types > Processor mapping maps for the Adyen connector will capture the wallet card types used by Apple Pay at the POS terminal. 
-
-
 
 ### Configure your Commerce site builder site for Apple Pay
 
 Before configuring your fragments or pages with Apple Pay, make sure your Content security policy's are set in Commerce site builder for your site. To do this, log in to your Commerce site builder tool:
 
 - Navigate to your site in site builder (choosing the site from the **Home** screen, or selecting the site in the upper right site-picker menu).
-
 - Open **Site Settings** > **Extensions** and go to the **Content security policy** tab.
-
 - Click **Add** and add a line with "https://applepay.cdn-apple.com/jsapi/v1/apple-pay-sdk.js" to the **child-src**, **connect-src**, **frame-src**, **img-src**, **script-src**, and **style-src** sections.
 
 - When completed, click the **Save and publish** button at the top of the page to commit the changes.
-
-  
 
 ### Set up Apple Pay as a Checkout Payment Option
 
@@ -142,19 +117,16 @@ To set up Apple Pay as a payment button in the Checkout (non-express) form, foll
 
 Settings for the **Apple Pay** module are built-in to the module and connect back specifically to the configured **Dynamics 365 Payment Connector for Apple Pay** connector set for the online channel in Headquarters. The **Custom CSS class name** can be used to 
 
-
-
 ### Apple Pay payment behavior
 
 The **Apple Pay** payment button will only be shown on supported Apple Pay devices (iPhones, iPads, and Safari browsers that support Apple Pay). When not using these devices, the button will be hidden from view as a payment option to the user.
 
 Clicking on the **Apple Pay** payment button will launch an Apple Pay dialogue to allow the user to authenticate against their Apple Pay device or browser, with experience showing a summary of the order amount and which selected payment method the user has configured against their Apple Wallet. Users can review and select the "Pay" button within the Apple Pay dialogue to complete the payment. Once completed, a user will be directed back to the "Order Complete" page on the site showing them their order detailed summary for the completed transaction.
 
-
-
-
 ## Additional resources
 
-- [Payments FAQ](dev-itpro/payments-retail.md)
-- [Checkout module](add-checkout-module.md)
-- [Payment module](payment-module.md)
+[Payments FAQ](payments-retail.md)
+
+[Checkout module](../add-checkout-module.md)
+  
+[Payment module](../payment-module.md)
