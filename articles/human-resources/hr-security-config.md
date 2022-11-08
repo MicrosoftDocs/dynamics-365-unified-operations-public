@@ -41,7 +41,7 @@ The following articles provide additional information about the concepts in this
  - [Virtual entities overview](/dev-itpro/power-platform/virtual-entities-overview) 
  - [Get started with virtual tables (entities)](/developer/data-platform/virtual-entities/get-started-ve) 
  - [Use multi-tenant server-to-server authentication (Microsoft Dataverse)](/developer/data-platform/use-multi-tenant-server-server-authentication) 
- - [Use OAuth authentication with Microsoft dataverse (Dataverse)](/developer/data-platform/authenticate-oauth) 
+ - [Use OAuth authentication with Microsoft Dataverse (Dataverse)](/developer/data-platform/authenticate-oauth) 
  - [OAuth 2.0 client credentials flow on the Microsoft identity platform](/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow) 
  - [Authentication and authorization](/dev-itpro/power-platform/authentication-and-authorization) 
 
@@ -54,7 +54,7 @@ The following diagram represents the major concepts involved in an integration t
 Identify the following diagram elements: 
 
 Microsoft: 
- - Microsoft hosts and operates the various Dynamics 365 products (and related technologies) on behalf of customers. 
+ - Microsoft hosts and operates the various Dynamics 365 products on behalf of customers. 
  - Azure Active Directory (Azure AD) Tenant ‘C’ – An Azure AD tenant owned by Microsoft. This is the tenant in which the Dynamics 365 applications are registered. 
 
 Integrating partner: 
@@ -62,12 +62,12 @@ Integrating partner:
 - Adapter – The software or service responsible for interacting with both Dynamics 365 and with the integrating system.
 
 >[!NOTE] 
->Adapters that are intended to be used by multiple Dynamics 365 customers are expected to be registered in Azure AD as multitenant applications.
+>Adapters that are intended to be used by multiple Dynamics 365 customers and are expected to be registered in Azure AD as multitenant applications.
  
 -	Azure AD tenant ‘A’ – The Azure AD tenant owned by the integrating partner, and the tenant that the Adapter application ID is registered. 
 
 Mutual customer (Implements Dynamics 365 Human Resources and the integrating partner’s solution): 
- - Dynamics 365 Human Resources – The customer-specific instance of Dynamics 365 Finance or Human Resources that contains the customer data required by the integrating system.
+ - Dynamics 365 Human Resources – The customer specific instance of Dynamics 365 Finance or Human Resources that contains the customer data required by the integrating system.
  - Dataverse – The customer specific Dataverse environment connected to either Dynamics 365 Finance or Human Resources. Dataverse provides a Web API for interacting with Dynamics 365 data. 
  - Azure AD Tenant ‘B’ – This is the customer’s Azure AD tenant, and functions as the identity provider (Authorization server). This issues tokens that authorize callers to call the customer’s Dataverse instance.
 
@@ -99,7 +99,7 @@ Authorization grants the user/application the right to access specific applicati
 
 Most cross system calls in the diagram involve the Adapter. The Adapter needs to authenticate itself to: 
  - Make the call to Dataverse 
- - Make calls to the integrating system  
+ - Make the call to the integrating system  
 
 Looking at the system boundaries in the diagram, every web request between systems must be authenticated and that application level authorization checks will be performed before data will be returned to the caller. For a request against a Dynamics 365 Virtual table backed by Dynamics 365 Finance or Human Resources, the relevant system boundaries where authentication and authorization checks are enforced are: 
 
