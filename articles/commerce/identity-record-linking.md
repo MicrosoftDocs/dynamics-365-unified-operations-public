@@ -2,7 +2,7 @@
 title: Enable automatic linking of identity records to customer accounts
 description: This article describes how to enable automatic linking of identity records to customer accounts in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 07/21/2021
+ms.date: 11/08/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -50,11 +50,11 @@ For B2B sites, automatic linking will perform the following checks:
 
 - If only one customer record within the legal entity meets the matching condition, the user signing up is automatically linked to that record.
 - If no customer records within the legal entity meet the matching conditions, Commerce will generate a **CommerceIdentityNotFound** error with error code **Microsoft_Dynamics_CommerceIdentityNotFound**.
-  - If using the Module Library starter kit, in SiteBuilder the "Header" fragment includes a property **Error message if customer not found** with the **Header** module selected in the module tree-view. Use this textbox to enter a user-facing message to display when this error occurs. You must ensure the Notification module is included in the site. It can be added in the "Header" fragment's 'Default container' for the page above the "Header" module in the module-tree.
+    - If using the Module Library starter kit, in SiteBuilder the "Header" fragment includes a property **Error message if customer not found** with the **Header** module selected in the module tree-view. Use this textbox to enter a user-facing message to display when this error occurs. You must ensure the Notification module is included in the site. It can be added in the "Header" fragment's 'Default container' for the page above the "Header" module in the module-tree.
 
 - If more than one customer record within the legal entity is found to have matching conditions, Commerce will generate a **CustomerServiceMultipleCustomerAccountsFoundErrorOccurredWhenAutoLinking** error with error code **Microsoft_Dynamics_Commerce_Runtime_MultipleCustomerAccountsFoundWithSameEmailAddress**.
 
-  - If using the Module Library starter kit, in SiteBuilder the "Header" fragment includes a property **Multiple customers found error msg** with the **Header** module selected in the module tree-view. Use this textbox to enter a user-facing message to display when this error occurs. You must ensure the Notification module is included in the site. It can be added in the "Header" fragment's 'Default container' for the page above the "Header" module in the module-tree.
+    - If using the Module Library starter kit, in SiteBuilder the "Header" fragment includes a property **Multiple customers found error msg** with the **Header** module selected in the module tree-view. Use this textbox to enter a user-facing message to display when this error occurs. You must ensure the Notification module is included in the site. It can be added in the "Header" fragment's 'Default container' for the page above the "Header" module in the module-tree.
 
 ## Automatic linking on B2C sites
 
@@ -68,7 +68,7 @@ For B2C sites, automatic linking will perform the following checks:
 - If no customer records within the legal entity meet the matching condition, Commerce will generate a new customer record that is linked to the identity provider record. 
 - If more than one customer record within the legal entity meets the matching conditions, Commerce will generate a **CustomerServiceMultipleCustomerAccountsFoundErrorOccurredWhenAutoLinking** error with error code **Microsoft_Dynamics_Commerce_Runtime_MultipleCustomerAccountsFoundWithSameEmailAddress**.
 
-  - If using the Module Library starter kit, in SiteBuilder the "Header" fragment includes a property **Multiple customers found error msg** with the **Header** module selected in the module tree-view. Use this textbox to enter a user-facing message to display when this error occurs. You must ensure the Notification module is included in the site. It can be added in the "Header" fragment's 'Default container' for the page above the "Header" module in the module-tree.
+    - If using the Module Library starter kit, in SiteBuilder the "Header" fragment includes a property **Multiple customers found error msg** with the **Header** module selected in the module tree-view. Use this textbox to enter a user-facing message to display when this error occurs. You must ensure the Notification module is included in the site. It can be added in the "Header" fragment's 'Default container' for the page above the "Header" module in the module-tree.
 
 > [!NOTE]
 > - The Commerce notifications module can be extended to display error messages to users when error conditions are met.
