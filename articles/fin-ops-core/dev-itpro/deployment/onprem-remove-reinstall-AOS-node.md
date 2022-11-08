@@ -182,7 +182,7 @@ The next step is to start a new AOS server.
 2. If you're adding a new server to an existing cluster, update the ConfigTemplate.xml file so that it contains the additional information. This information will be used when you push out the prerequisites and apply settings through Windows PowerShell scripts.
 3. Make sure that you've added the **AXServiceUser** and **svc-AXSF\$** group Managed Service Accounts (gMSAs) to the local admin group on the AOS server.
 
-    After the server is connected to the domain, you must follow the prerequisite steps for on-premises environments in [Set up and deploy on-premises environments (Platform update 41 and later)](./setup-deploy-on-premises-pu41.md#follow-these-steps-for-each-vm-or-use-remoting-from-a-single-machine). The following steps summarize those prerequisite steps.
+    After the server is connected to the domain, you must follow the prerequisite steps for on-premises environments in [Set up and deploy on-premises environments (Platform update 41 and later)](./setup-deploy-on-premises-pu41.md). The following steps summarize those prerequisite steps.
 
 4. Copy the contents of each infrastructure\\VMs\<VMName\> folder into the corresponding virtual machine (VM). (If you use remoting scripts, they will automatically copy the contents to the target VMs.) Then run the following Windows PowerShell scripts as an admin.
 
