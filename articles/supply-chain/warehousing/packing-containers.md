@@ -169,6 +169,8 @@ Follow these steps to set up a container packing policy.
         - *Transportation management* – Manifesting will be done through Transportation management (TMS) rate engines. Because this option requires custom development to implement a specific engine for the transportation provider, it won't work out of the box in the current version.
 
     - **Print container contents** – Set this option to *Yes* to automatically print the container contents report when a container is registered as closed. The report can also be printed on demand.
+    - **Print packing slip asynchronously** - You can enable this setting when having the **Print container contents** enabled. This setup makes it possible to run the sales packing slip processing as a asynchronously process as part of a *Message processor messages* of type *Run packing slip for container*. This setting requires you to define a *Packing slip posting parameter*.
+    - **Packing slip posting parameters Id** - Used for the asynchronously sales packing slip posting. You must define the parameter settings in the **Warehouse management \> Setup \> Packing \> Packing slip posting parameters** page which will be used when closing the last container for a shipment. Note that the warehouse worker will not get prompted to confirm the values and that when using the **Warehouse Management mobile app** [*Container closing*](warehouse-app-packing-containers.md) process, this will be the only supported process for automatically packing slip posting.
 
 1. On the **Container group manifest** FastTab, in the **Manifest requirements for container group** field, select one of the following options:
 
@@ -228,6 +230,7 @@ Follow these steps to set up a packing profile.
     - **Container ID mode** – Select whether a container ID should automatically be generated when a container is created, or whether it must be manually created.
     - **Container type** – Select the container type that is used by default when a new container is created.
     - **Autocreate container at container close** – Select this checkbox to automatically create a new container if the previous container is closed, and one or more lines remain in the current shipment.
+    - **Print container label at container creation** - Select this checkbox to automatically print a container label when a new container gets created. You can read more about the needed label layout setup [here](print-container-labels.md).
 
 ### Set up warehouse workers
 

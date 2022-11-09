@@ -22,14 +22,14 @@ As for [license plate labels](document-routing-layout-for-license-plates.md), th
 
 ## Turn on the container label printing functionality
 
-Container label functionality is part of the *Pack containers using the Warehouse Management mobile app* feature. (For more information, see [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md).) To use this functionality, the feature must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
+Container label functionality is available by default in 10.0.32. In 10.0.31 it is part of the *Pack containers using the Warehouse Management mobile app* feature. (For more information, see [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md).) To use this functionality, the feature must be turned on in your system. Admins can use the [feature management](../../fin-ops-core/fin-ops/get-started/feature-management/feature-management-overview.md) settings to check the status of the feature and turn it on. In the **Feature management** workspace, the feature is listed in the following way:
 
 - **Module:** *Warehouse management*
 - **Feature name:** *Pack containers using the Warehouse Management mobile app*
 
 ## Example scenario: Print container labels when containers are created by using the Warehouse Management mobile app
 
-This example scenario shows how you can set up your system to print container labels when a worker creates a container by using the Warehouse Management mobile app. This scenario builds on the information that is provided in [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). That article provides more details about the full process of packing containers by using the Warehouse Management mobile app.
+This example scenario shows how you can set up your system to print container labels when a worker creates a container by using the web client and/or the Warehouse Management mobile app. The Warehouse Management mobile app scenario builds on the information that is provided in [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). That article provides more details about the full process of packing containers by using the Warehouse Management mobile app.
 
 ### Make sample data available
 
@@ -102,12 +102,15 @@ Follow these steps to create a container label layout.
 
 If you must create more advanced label layouts, you can benefit from using some of the widely available label generation tools that are described in [Document routing label layout](document-routing-layout-for-license-plates.md).
 
-To format a label by using header, row, and footer elements, open the **Label layout** page, select or create a layout, and set the **Enable label template support** option to *Yes* for the new or selected layout. Then use the `{{Header ... }}`, `{{Row ... }}`, and `{{Footer ... }}` elements in your code. The following example shows a label that includes all these elements. It prints data about items that are packed in a container.
+To format a label by using header, row, and footer elements, open the **Label layout** page, select or create a layout, and set the **Enable label template support** option to *Yes* for the new or selected layout. Then use the `{{LabelStart ...}}`, `{{HeaderFirst ... }}`, `{{Header ... }}`, `{{Row ... }}`, `{{FooterFirst ... }}`, `{{Footer ... }}`, and `{{LabelEnd ...}}` elements in your code.
 
+The following example shows a label that includes all these elements. It prints data about items that are packed in a container, so you will need to use a **Label layout data source ID** using a query which joins to the container lines (Container Details). The data can get split on multiple pages, ensuring getting all data printed in case of having many container lines. In this example the first page will print a container ID barcode and 6 container lines. The following pages prints 10 lines per page. Each line containing information about the *Item*, *Quantity*, and *Unit*. This setup gets controlled by the *RowsPerLabelFirst=6* and *RowsPerLabel=10* attributes.  
+
+<!--Q:When viewed in a browser the end user sees the "plaintext" - so can't we write "ZPL text" or something instead? -->
 ``` plaintext
-{{Header
-^FX ... ZPL commands that will be printed on every label ...
-CT~~CD,~CC^~CT~
+{{LabelStart
+^FX ... ZPL commands to start the label ...
+
 ^XA
 ~TA000
 ~JSN
@@ -127,35 +130,67 @@ CT~~CD,~CC^~CT~
 ^XZ
 ^XA
 ^MMT
-^PW1276
+^PW800
 ^LL900
 ^LS0
-^FT80,150^A0N,58,58^FH\^CI28^FDShipment: $WHSContainerTable.ShipmentId$^FS^CI27
-^FT80,250^A0N,33,33^FH\^CI28^FDItem^FS^CI27
-^FT579,250^A0N,33,33^FH\^CI28^FDQuantity^FS^CI27
-^FT720,250^A0N,33,33^FH\^CI28^FDUnit^FS^CI27
 }}
-^FX ... This section goes on the first label only...
-^FT85,51^A0N,17,18^FH\^CI28^FDFIRST CONTAINER LABEL^FS^CI27
-{{Row Table=WHSContainerLine_1 RowsPerLabel=10 StartY=300 IncY=50
+
+{{HeaderFirst
+^FX ... Header on the first label only ...
+
+^BY3,3,220
+^FO150,120^BC
+^FD$WHSContainerTable.ContainerId$^FS
+^FT80,420^A0N,33,33^FH\^CI28^FDItem^FS^CI27
+^FT579,420^A0N,33,33^FH\^CI28^FDQuantity^FS^CI27
+^FT720,420^A0N,33,33^FH\^CI28^FDUnit^FS^CI27
+^FT80,100^A0N,58,58^FH\^CI28
+^FDShipment: $WHSContainerTable.ShipmentId$^FS^CI27
+}}
+
+{{Header
+^FX ... Header on every label after the first ...
+
+^FT80,100^A0N,58,58^FH\^CI28
+^FDShipment: $WHSContainerTable.ShipmentId$^FS^CI27
+^FT80,150^A0N,40,40^FH\^CI28
+^FDContainer: $WHSContainerTable.ContainerId$^FS^CI27
+^FT80,220^A0N,33,33^FH\^CI28^FDItem^FS^CI27
+^FT579,220^A0N,33,33^FH\^CI28^FDQuantity^FS^CI27
+^FT720,220^A0N,33,33^FH\^CI28^FDUnit^FS^CI27
+}}
+
+{{Row Table=WHSContainerLine_1 RowsPerLabelFirst=6 RowsPerLabel=10 StartYFirst=500 StartY=300 IncY=50
 ^FX... ZPL commands to format the row using *$position.YPos$* to position the location of the text fields ...
-^FT80,$position.YPos$^A0N,33,33^FH\^CI28^FD$WHSContainerLine_1.ItemId$^FS^CI27
-^FT579,$position.YPos$^A0N,33,33^FH\^CI28^FD$WHSContainerLine_1.Qty$^FS^CI27
-^FT720,$position.YPos$^A0N,33,33^FH\^CI28^FD$WHSContainerLine_1.UnitId$^FS^CI27
+
+^FT80,$position.YPos$^A0N,30,30^TBN,480,30^FH\^CI28^FD$WHSContainerLine_1.ItemId$^FS^CI27
+^FT579,$position.YPos$^A0N,30,30^TBN,120,30^FH\^CI28^FD$WHSContainerLine_1.Qty$^FS^CI27
+^FT720,$position.YPos$^A0N,30,30^TBN,100,30^FH\^CI28^FD$WHSContainerLine_1.UnitId$^FS^CI27
 }}
-^FX ... This part goes on the last label only ... 
-^FT100,750^A0N,17,18^FH\^CI28^FDLast container label^FS^CI27
+
+{{FooterFirst
+^FX ... Footer on the first label only ...
+
+^FT550,800^A0N,58,58^FH\^CI28^FDLabel: $position.labelNumber$/$position.labelCount$^FS^CI27
+^PQ1,0,1,Y
+}}
+
 {{Footer
-^FX ... ZPL commands that close every label ...
-^FT600,750^A0N,58,58^FH\^CI28^FDLabel: $position.labelNumber$/$position.labelCount$^FS^CI27
+^FX ... Footer on every label after the first...
+
+^FT550,800^A0N,58,58^FH\^CI28^FDLabel: $position.labelNumber$/$position.labelCount$^FS^CI27
+^PQ1,0,1,Y
+}}
+
+{{LabelEnd
+^FX ... ZPL commands to end the label ...
+
 ^XZ
 }}
 ```
 
 > [!NOTE]
-> Because of the `RowsPerLabel=10` attribute, this setup will loop over container lines and split out a label for each set of 10 container lines. If you change the attribute to `RowsPerLabel=1`, a label will be generated for each line.
->
-> This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the container), set the `n` value for the `\^PQn` section in the footer to the required number of copies. For example, to print two copies of each label, specify `\^PQ2`. <!--KFM: @per Let's add a `\^PQn` section in the sample code so we can see where it goes. -->
+> This setup will print one copy of each label. If you require more copies (for example, one copy for each side of the container), set the `n` value for the `^PQn...` section in the footer to the required number of copies. For example, to print two copies of each label, specify `^PQ2...`.
 
 #### Specify date, time, and number formats
 
@@ -232,9 +267,9 @@ Now that you've created the mobile device menu item, you can add it to the mobil
 
 ### Run a scenario to print container labels
 
-For an example that shows how to print bar codes manually, see [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). Follow the instructions there, and confirm that the scenario that is described in this article is also supported.
+For an example that shows how to print bar codes automatically as part of a container creation process, see [Packing containers with the Warehouse Management mobile app](warehouse-app-packing-containers.md). Follow the instructions there, and confirm that the scenario that is described in this article is also supported by using a **Packing profile** with the **Print container label at container creation** enabled.
 
-Here are a few suggestions for ways that you can customize and fine-tune this scenario to help reduce the number of steps that workers must perform when they print container labels.
+To manually print a container label you can use the web client **Warehouse management \> Packing and containerization \> Containers** followed by **Print \> Container label** and/or use the Warehouse Management mobile app **Print container label** mobile device menu item. Here are a few suggestions for ways that you can customize and fine-tune this scenario to help reduce the number of steps that workers must perform when they print container labels.
 
 - You can [query data by using Warehouse Management mobile app detours](warehouse-app-data-inquiry.md) to look up a container ID instead of prompting the worker to enter it manually.
 - When a worker selects the **Print container label** mobile device menu item on the **Outbound** menu, the app automatically submits the current **User ID** and **Warehouse** values. If workers want to specify a **Location** value, they can do so in the app.
