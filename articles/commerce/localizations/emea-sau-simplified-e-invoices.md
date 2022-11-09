@@ -33,4 +33,4 @@ For more information about the electronic invoicing requirements for Saudi Arabi
 
 The XML format of e-invoice for Saudi Arabia is implemented by using [Electronic reporting (ER)](../../dev-itpro/analytics/general-electronic-reporting.md). The format is common for simplified e-invoices in Commerce and regular tax e-invoices in Dynamics 365 Finance.
 
-The submission of simplified e-invoices for Saudi Arabia is done from Commerce headquarters (HQ) by means of integration with the Electronic Invoicing service. For more information about the common electronic invoicing capabilities available for Saudi Arabia, see [Customer electronic invoices in Saudi Arabia](../../finance/localizations/emea-sau-e-invoices.md).
+The submission of simplified e-invoices for Saudi Arabia is done from Commerce headquarters (HQ) by means of integration with the [Electronic Invoicing service](../../finance/localizations/e-invoicing-sa-get-started.md). For more information about the common electronic invoicing capabilities available for Saudi Arabia, see [Customer electronic invoices in Saudi Arabia](../../finance/localizations/emea-sau-e-invoices.md).
