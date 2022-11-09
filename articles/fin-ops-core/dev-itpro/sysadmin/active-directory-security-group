@@ -37,14 +37,14 @@ Group based role assignment are applied in combination with manual and automatic
 Before enabling the **Active Directory security groups** featue it is important to be aware of the known limitations. The limitations are mianly due to the fact the role assignment is resolved at log in, i.e. at runtime, and these roles assignments are not persisted by Finance and Operations apps. 
 Several of the limitations impacts Internal control and auditing.
 
--	Segregation of duty reporting will not conider these role assignments.
-- No database logging is possible of these role assignments. 
-- Security and licensing reports does not include these role assignments.
-- Pages that show role assingments, e.g., the ** Assign users to role** page and the **Roles for selected user** FactBox does not include these role assignments.
-- External users are not supported and will not be able to use JIT or be assinged any roles based on group memberships.
--	Workflows that are depending on assigned roles will not consider these role assingments.
--	Disabling a group in system administration will not stop JIT or roles assingment.
--	**User Id** for JIT created users are created with a leading $ sign and numbers. 
+- Segregation of duty reporting will not conider these role assignments
+- No database logging is possible of these role assignments
+- Security and licensing reports does not include these role assignments
+- Pages that show role assingments, e.g., the ** Assign users to role** page and the **Roles for selected user** FactBox does not include these role assignments
+- External users are not supported and will not be able to use JIT or be assinged any roles based on group memberships
+- Workflows that are depending on assigned roles will not consider these role assingments
+- Disabling a group in system administration will not stop JIT or roles assingment
+- **User Id** for JIT created users are created with a leading $ sign and numbers
 
 The known limitiations are not expected to be address until this experinces is unified with the more comprehensive feature in Dataverse, see https://learn.microsoft.com/en-us/power-platform/admin/manage-group-teams
 
