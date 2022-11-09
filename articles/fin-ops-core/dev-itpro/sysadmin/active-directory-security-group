@@ -1,0 +1,41 @@
+---
+title: Actice Directory security group
+description: This article explains how to enable row version change tracking for data entities and tables for finance and operations apps.
+author: peakerbl
+ms.date: 11/09/2022
+ms.topic: article
+ms.prod:
+ms.technology: 
+
+# optional metadata
+
+# ms.search.form:
+audience: Developer, IT Pro
+# ms.devlang: 
+ms.reviewer: 
+# ms.tgt_pltfrm: 
+# ms.custom: NotInToc
+ms.search.region: Global
+# ms.search.industry:
+ms.author: peakerbl
+ms.search.validFrom: 2022-11-10
+ms.dyn365.ops.version: 10.0.30
+---
+
+# Active Directory security group
+
+[!include[banner](../includes/banner.md)]
+
+*Active Directory security group** is a legacy feature that enables assigning roles to users based on their Active Directory security groups memberships. For more details on Active Directory security groups, see https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups. It also enables Just-In-time (JIT) provisioning of users when a user login in for the first time in an environment.
+
+
+user roles and oranizations per roles  
+
+that can be enabled under **System administration > Setup > License configuration**. Configuration keys can only be edited in maintenance mode, see [Maintenance mode](../sysadmin/maintenance-mode.md). 
+Once enabled a new page is added under 
+
+## Active Directory security group
+
+
+
+[!INCLUDE[footer-include](../../../includes/footer-banner.md)]
