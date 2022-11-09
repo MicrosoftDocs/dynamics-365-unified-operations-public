@@ -71,7 +71,7 @@ The revaluation can be run for one or more foreign currencies. The lookup will i
 
 Set **Preview before posting** to **Yes** if you would like to review the result of the General ledger revaluation. The preview in General ledger is different from the simulation in the AR and AP foreign currency revaluation. The simulation in AR and AP is a report, but general ledger has a preview which can be posted, without having to run the revaluation process again. The results of the preview can be exported to Microsoft Excel to retain the history of how the amounts were calculated. You cannot use batch processing if you want to preview the results of the revaluation. From the preview, the user has the option to post the results of all legal entities using the **Post** button. If there's an issue with the results for a legal entity, the user also has the option to post a subset of the legal entities using the **Select legal entities to post** button.
 
-Set **Exclude reporting currency adjustments** to **Yes**, if you would like to exclude adjustments that were posted using the **Reporting currency adjustments journal** from the revaluation process.  By default, reporting currency adjustments are included in the revaluation. 
+If you would like to exclude adjustments that were posted using the **Reporting currency adjustments journal** from the revaluation process, set **Exclude reporting currency adjustments** to **Yes**. By default, reporting currency adjustments are included in the revaluation. 
 
 After the foreign currency revaluation process is complete, a record will be created to track the history of each run.  A separate record will be created for each legal entity and posting layer.
 
