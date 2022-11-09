@@ -384,7 +384,7 @@
             href: ../finance/localizations/rus-goods-transit-vendor.md?context=/dynamics365/context/supply-chain
     - name: Distributed hybrid topology
       items:
-      - name: Scale unit capability is currently paused for new customers
+      - name: Scale unit capability for Supply Chain Management is currently paused
         href: cloud-edge/cloud-edge-landing-page.md
     - name: Asset management
       items:
