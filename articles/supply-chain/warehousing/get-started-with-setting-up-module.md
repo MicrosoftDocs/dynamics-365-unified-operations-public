@@ -23,9 +23,10 @@ This article provides capabilities overview that will help you configure Warehou
 The Warehouse implementation tasks workspace lets you track warehouse management configuration processes. The workspace can be used during a new implementation, after an upgrade, or after a migration.
 
 This workspace lets you maintain and track warehouse implementation checklists. It allows:
+
 - Track the progress by viewing all current and closed configuration tasks.
 - Quick access to the required configuration though hyperlinks..
-- Import default configuration checklist with required list of tasks that need to be completed to have warehouse up and running. 
+- Import default configuration checklist with required list of tasks that need to be completed to have warehouse up and running.
 
 You can see all remaining tasks in the **Summary** section in addition to a completed vs remaining chart that helps you track and manage the amount of work remaining to implement warehousing module.
 
@@ -51,7 +52,7 @@ The next page in the wizard is the **Initialize base data** page. It's used to d
 
 The wizard will automate the following processes:
 
-| **Configuration** | **Action** | **Description** |
+| Configuration | Action | Description |
 | --- | --- | --- |
 | Location types | Create | Location types defined in the wizard will be automatically created. Created location types can be found here: **Warehouse management \> Setup \> Warehouse \> Location types**. |
 | Location profiles | Create | Location profiles defined in the wizard will be automatically created. Created location profiles can be found here: **Warehouse management \> Setup \> Warehouse \> Location profiles**. |
@@ -76,7 +77,7 @@ The next page in the wizard is the **General warehouse setup** page. It's used t
 
 After this wizard execution, you will be able to successfully execute sales shipment and purchase receive basic processes. The wizard will automate the following:
 
-| **Configuration** | **Action** | **Description** |
+| Configuration | Action | Description |
 | --- | --- | --- |
 | Locations | Create | Locations defined in the wizard will be automatically created. Created locations can be found here: **Warehouse management \> Setup \> Warehouse \> Locations**. |
 | Directive codes | Create | Directive codes defined in the wizard will be automatically created. Created directive codes can be found here: **Warehouse management \> Setup \> Directive codes**. |
@@ -84,6 +85,5 @@ After this wizard execution, you will be able to successfully execute sales ship
 | Location directives | Create | Location directives defined in the wizard will be automatically created. Created location directives can be found here: **Warehouse management \> Setup \> Location directives**. **Note** : Only location directives with work order types Sales orders and Purchase orders will be created. |
 | Wave templates | Create | Wave templates defined in the wizard will be automatically created. Created wave templates can be found here: **Warehouse management \> Setup \> Waves \> Wave templates**. **Note** : Only wave templates with wave template type Shipping will be created. |
 | Work templates | Create | Work templates defined in the wizard will be automatically created. Created work templates can be found here: **Warehouse management \> Setup \> Work \> Work template**. **Note** : Only location directives with work order types Sales orders and Purchase orders will be created. |
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
