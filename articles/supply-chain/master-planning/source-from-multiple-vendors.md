@@ -146,7 +146,7 @@ The system uses the following rules to select the vendor for a new planned order
 
     - The planned order must match the product and all the dimensions that are specified for a multisource policy assignment.
     - The planned order date must occur during the *current period* for a matching multisource policy assignment. The current period extends backwards the number of days that is defined by the **Balance period (days)** setting for the assigned policy. However, it can't extend earlier than the first date that the assignment is valid (the **From date** value). It extends into the future until the last date that the assignment is valid (the **To date** value).
-    - If more than one policy assignment matches the planned order, the most specific assignment is used. For example, if there's demand for item A0001, site 1, and warehouse 11, and the policies that are shown in the following table exist, policy X will be used, because it's the more specific one.
+    - If more than one policy assignment matches the planned order, the most specific assignment is used. For example, if there's demand for item A0001, site 1, and warehouse 11, and the policies that are shown in the following table exist, policy Y will be used, because it's the more specific one.
 
         | Item | Site | Warehouse | From date | To date | Policy |
         |---|---|---|---|---|---|
