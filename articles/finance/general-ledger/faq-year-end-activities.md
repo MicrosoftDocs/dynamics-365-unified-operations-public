@@ -4,7 +4,7 @@
 title: Year-end activities FAQ 
 description: This article lists questions that can arise when closing a year, and the answers that can assist with year-end closing activities.
 author: moaamer
-ms.date: 12/21/2021
+ms.date: 11/08/2022
 ms.topic: index-page
 ms.prod: 
 ms.technology: 
