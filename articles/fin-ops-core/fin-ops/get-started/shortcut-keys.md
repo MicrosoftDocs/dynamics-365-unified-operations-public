@@ -114,7 +114,7 @@ Users can discover currently available shortcuts directly from the user interfac
 | Move to the next record (outside a grid)      | Ctrl+Down arrow   |
 | Move to the first record (outside a grid)     | Ctrl+Home         |
 | Move to the last record (outside a grid)      | Ctrl+End          |
-| Close the form (click Back)                   | Esc               |
+| Close the form (select the Back button)<br><br>**Note:** If there is a popup window (tooltip, date picker, dropdown, etc.) open, the first use of Esc will dismiss the popup.       | Esc               |
 | Close the form with explicit save             | Shift+Esc         |
 | Close the form discarding any unsaved changes | Alt+Shift+Q       |
 
