@@ -4,7 +4,7 @@
 title: Establish customer payment terms
 description: This procedure defines a cash discount and due date setup. 
 author: aprilolson
-ms.date: 08/29/2018
+ms.date: 08/29/2022
 ms.topic: business-process 
 ms.prod:  
 ms.technology:  
@@ -37,7 +37,11 @@ This procedure defines a cash discount and due date setup. This task guide uses 
 6. In the **Day of month** field, enter a date. The date should be entered as a number, such as '10', and not as '10th'. 
 7. Click **Save**.
 8. Close the page.
-9. Go to **Navigation pane > Modules > Accounts receivable > Payments setup > Terms of payment**.
+9. Go to **Navigation pane > Modules > Accounts receivable > Payments setup > Terms of payment**. 
+
+>[!NOTE] 
+>If the **Terms of payment** is **Cash**, the **Cash payment** field on the **Terms of payment** page must be **No**.
+
 10. Click **New**. **Terms of payment** is used to define how the due dates will be calculated. The cash discount date setup is defined in a separate page. 
 11. In the **Terms of payment field**, enter an ID.
 12. In the **Description** field, enter a description.
