@@ -143,7 +143,7 @@ To publish a view, follow these steps:
 
 1. Create and save a personal copy of the view that you want to publish. 
 2. With that view currently loaded, select the view name to open the view selector drop-down menu. 
-3. Select the **More** button and then select **Publish**. The Publish dialog box will open.
+3. Select the **More** button and then select **Publish**. The **Publish** dialog box will open.
 4. Enter a name for the view. The name that you enter is the name that users who receive this view will see in their view selectors. The names of published views for a page must be unique. No duplicate names are allowed, even if the list of roles or legal entities that the views are applied to differ.
 5. If the **Translation support for organization views** feature is turned on, you can add translations for your view name in as many languages as your organization requires by selecting the **Translations** button next to the **Name** field. The view name will then be shown to users in their current language. You can also set the default language to specify the translation that will be shown to users who are running languages that no translation is defined for.
 5. Optional: Enter a description for the view, so that users who receive this view can better understand its purpose. 
