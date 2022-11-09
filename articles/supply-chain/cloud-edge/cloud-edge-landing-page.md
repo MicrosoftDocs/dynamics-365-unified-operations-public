@@ -22,4 +22,4 @@ ms.dyn365.ops.version: 10.0.28
 >
 > We are working to enhance Dynamics 365 Supply Chain Management to allow for further composability across specific modules like Warehouse management. We will continue to plan for and develop new cloud and edge scale unit offerings to meet our customers' needs. For more information, please reach out to [d365scmcneext@microsoft.com](mailto:d365scmcneext@microsoft.com).
 >
-> Scale units are still fully supported for the Dynamics 365 Commerce application. For more information about that functionality, see [Introduction to Commerce Scale Unit (CSU) Core](../../commerce/dev-itpro/CSU-core.md).
+> The Commerce Scale Unit (CSU) Core platform for Microsoft Dynamics 365 Commerce isn't related to the scale unit capability for Dynamics 365 Supply Chain Management in any way. CSU Core is not affected by this announcement and is still fully supported for the Dynamics 365 Commerce application. For more information about that functionality, see [Introduction to Commerce Scale Unit (CSU) Core](../../commerce/dev-itpro/CSU-core.md).
