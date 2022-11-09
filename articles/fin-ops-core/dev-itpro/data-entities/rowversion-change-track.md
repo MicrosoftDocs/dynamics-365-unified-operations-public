@@ -78,6 +78,6 @@ A system batch job that is named **Delete tracking history clean-up** cleans up 
 
 ## Retrieve row version entity changes
 
-This change tracking feature is fully compatible with Dataverse change tracking; however, there are some differences. For example, changes for finance and operations apps are returned if the last token is within the default value of 10 days, not the value of 90 days that is used for Dataverse tables. For more information, see [Use change tracking to synchronize data with external systems](/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems.md). 
+This change tracking feature is fully compatible with Dataverse change tracking; however, there are some differences. For example, changes for finance and operations apps are returned if the last token is within the default value of 10 days, not the value of 90 days that is used for Dataverse tables. For more information, see [Use change tracking to synchronize data with external systems](/power-apps/developer/data-platform/use-change-tracking-synchronize-data-external-systems). 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
