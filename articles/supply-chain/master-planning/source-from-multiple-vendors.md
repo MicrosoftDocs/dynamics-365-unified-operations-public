@@ -174,7 +174,7 @@ Here's an explanation of the table:
     - **Qty B** = Accumulated quantity for vendor B
     - **A%** = (*Qty A* &divide; *Total accumulated quantity*) &times; 100%
     - **B%** = (*Qty B* &divide; *Total accumulated quantity*) &times; 100%
-    - **Deviation** = (\[*A%* – *Vendor A target*\] + \[*B%* – *Vendor B target*\]) &divide; 2
+    - **Deviation** = ( \| *A%* – *Vendor A target* \| + \| *B%* – *Vendor B target* \| ) &divide; 2
 
 - The "Total accumulate quantity" column shows the total quantity that is ordered after each new purchase order.
 - All planned orders in the table occur during the same period, as defined by the relevant policy and policy assignment.
