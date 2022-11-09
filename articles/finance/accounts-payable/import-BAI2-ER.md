@@ -38,7 +38,7 @@ The Advanced bank reconciliation feature lets you import electronic bank stateme
 2. On the tile for the **Microsoft** configuration provider, select **Repositories**.
 3. Select **Global**, and then select **Open**.
 4. If a connection to the repository must be established, select the blue link in the dialog box.
-5. In the configuration list, find **Bank statement model \> Bank statement model of BAI2**.
+5. In the configuration list, find **Advanced bank reconciliation statement model \> ABR BAI2 format**..
 6. Select the **BAI2** format.
 7. On the **Versions** FastTab, select the latest version, and then select **Import**.
 
