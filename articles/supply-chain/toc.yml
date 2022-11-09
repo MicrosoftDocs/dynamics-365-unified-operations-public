@@ -1847,6 +1847,8 @@
           href: master-planning/coverage-settings.md
         - name: Define coverage rules for items
           href: master-planning/tasks/define-coverage-rules-items.md
+        - name: Source products and materials from multiple vendors
+          href: master-planning/source-from-multiple-vendors.md
         - name: Priority-based planning
           href: master-planning/planning-optimization/priority-based-planning.md
         - name: Replenishment methods and quantity modification
