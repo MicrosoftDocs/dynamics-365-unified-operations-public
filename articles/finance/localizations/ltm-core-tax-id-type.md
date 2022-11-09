@@ -27,7 +27,7 @@ Before you can set up a tax ID type with a fiscal codification, the tax applicat
     | Method   | Description |
     |----------|-------------|
     | Basic    | Use a simplified mask to define the number and types of characters. **A** represents alphabetic characters, **9** represents numeric characters, and **X** represents alphanumeric characters. Symbols such as hyphens (-) and periods (.) can also be added to the mask. |
-    | Advanced | Use a complete mask that has SQL sentences to define each character. The mask can include alphabetic characters (A–Z), numeric characters (0–9), and alphanumeric characters (A–Z, 0–9). Symbols such as hyphens (-) and slashes (/) can also be added to the mask. |
+    | Advanced | Use a complete mask with SQL sentences to define each character. The mask can include alphabetic characters (A–Z), numeric characters (0–9), and alphanumeric characters (A–Z, 0–9). Symbols such as hyphens (-) and slashes (/) can also be added to the mask. |
     | None     | The mask isn't validated, and the **Mask** and **Length** fields can't be edited. |
 
 5. In the **Mask** field, enter the mask format. The **Length** field is automatically set to the number of characters in the **Mask** value.
