@@ -50,11 +50,3 @@ The following environment types are required before you can do the migration:
 
 The existing Human Resources app in Teams is currently being shifted to a Microsoft Power Platform solution. For more information, see [Human Resources app in Teams](hr-admin-teams-leave-app.md).
 
-## Licensing
-
-There are no changes to the licensing for Dynamics 365 Human Resources in the following areas: 
-
-- **Minimum number of license purchase requirement**
-- **Licenses to a production environment and a sandbox environment** – If you have existing standalone Human Resources licenses that include one production environment and one sandbox environment, the same number of licenses will be available on the finance and operations infrastructure.
-- **Additional sandbox licenses** – If you've purchased additional sandbox licenses for the standalone Human Resources application, the same number of licenses 
-will be available for sandbox environments on the finance and operations infrastructure. 
