@@ -29,39 +29,7 @@ In Microsoft Dynamics 365 Commerce version 10.0.10 and later, inbound and outbou
 
 ## Prerequisite: Configure an asynchronous document framework
 
-The inbound operation includes performance improvements to ensure that users who have high volumes of receipt postings across many stores or companies, and large inventory documents, can process those documents to Commerce Headquarters without experiencing time-outs or failures. These improvements require use of an asynchronous document framework.
-
-When an asynchronous document framework is used, you can commit inbound document changes from POS to Commerce Headquarters and then move on to other tasks while the processing to Commerce Headquarters occurs in the background. You can check the status of a document through the **Inbound operation** document list page in POS to make sure that posting was successful. In the POS application, you can also use the inbound operation active document list to see any documents that could not be posted to Commerce Headquarters. If a document fails, POS users can make corrections to it and then try again to process it to Commerce Headquarters.
-
-> [!IMPORTANT]
-> The asynchronous document framework must be configured before a company tries to use the inbound operation in POS.
-
-To configure an asynchronous document framework, complete the following procedures.
-
-### Create and configure a number sequence
-
-1. Go to **Organization administration \> Number sequences \> Number sequences**.
-2. On the **Number sequences** page, create a number sequence.
-3. In the **Number sequence code** and **Name** fields, enter user-defined values.
-4. On the **References** FastTab, select **Add**.
-5. In the **Area** field, select **Commerce parameters**.
-4. In the **Reference** field, select **Retail document operation identifier**.
-5. On the **General** FastTab, in the **Setup** section, set the **Continuous** option to **No** to ensure that there are no performance issues.
-
-### Create and schedule two batch jobs for the document processing and monitoring tasks
-
-> [!NOTE]
-> In Commerce version 10.0.13 and later, you don't have to configure these batch jobs through the batch job framework. The batch processes can be configured from the **Retail and Commerce  >Retail and Commerce IT** menu. Use the **Retail document operation monitor** and **Retail document operation processing** menu options to configure the batch jobs.
-
-The batch jobs that you create will be used to process documents that fail or time out. They will also be used when the number of active inventory documents that are being processed from POS exceeds a system-configured value.
-
-1. Go to **System administration \> Inquiries \> Batch jobs**.
-2. On the **Batch job** page, create two batch jobs:
-
-    - Configure one job to run the **RetailDocumentOperationMonitorBatch** class.
-    - Configure the other job to run the **RetailDocumentOperationProcessingBatch** class.
-
-2. Schedule the new batch jobs to run on a recurring basis. For example, set the schedule so that the jobs are run every five minutes.
+Please follow [Commerce asynchronous document framework](commerce-asynchronous-document-framework.md) to complete the configuration. You can skip this step if you have already configured it for other operations.
 
 ## Prerequisite: Add Inbound operation to the POS screen layout
 
