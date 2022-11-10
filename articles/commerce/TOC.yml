@@ -1566,7 +1566,7 @@
         items:
         - name: Generate QR codes and print them on receipts for Saudi Arabia
           href: localizations/emea-sau-qr-code.md
-        - name: Generate and submit simplified electronic invoices for Saudi Arabia
+        - name: Generate and submit simplified electronic invoices for Saudi  Arabia
           href: localizations/emea-sau-simplified-e-invoices.md
       - name: Sweden
         items:
