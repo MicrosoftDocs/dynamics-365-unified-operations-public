@@ -49,7 +49,7 @@ Customer migration is a "lift-and-shift migration" (movement) of a customer data
 2. [Create a new Dataverse environment](/power-platform/admin/create-environment#create-an-environment-with-a-database) by using the Power Platform admin center.
 
     > [!NOTE]
-    > When you add a database, ensure that the **Enable Dynamics 365 apps** option is set to **Yes**. For detailed information, see [Prepare a Power Platform environment](human-resources/hr-cust-migration.md#prepare-a-power-platform-environment)
+    > When you add a database, ensure that the **Enable Dynamics 365 apps** option is set to **Yes**. For detailed information, see [Prepare a Power Platform environment](human-resources/hr-cust-migration#prepare-a-power-platform-environment)
 
 3. [Copy the existing Dataverse environment](/power-platform/admin/copy-environment), which is linked to the standalone Human Resources app, to the environment that you created in the previous step.
 
