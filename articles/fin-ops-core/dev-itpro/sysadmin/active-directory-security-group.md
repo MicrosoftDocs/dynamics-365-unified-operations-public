@@ -18,13 +18,13 @@ ms.dyn365.ops.version: AX 7.0
 
 [!include [banner](../includes/banner.md)]
 
-**Active Directory security group** is a legacy feature that enables assigning roles and organizations to users based on their Active Directory security groups memberships. For more details on Active Directory security groups, see [Active Directory security groups]{/windows-server/identity/ad-ds/manage/understand-security-groups). The feature also enables Just-In-time (JIT) provisioning of users when a user login in to the finance and operations environment for the first time.
+**Active Directory security group** is a legacy feature that enables assigning roles and organizations to users based on their Active Directory security groups memberships. For more details on Active directory security groups, see [Active directory security groups](/windows-server/identity/ad-ds/manage/understand-security-groups). The feature also enables Just-In-time (JIT) provisioning of users when a user logins into the finance and operations environment for the first time.
 
 Group based role assignments are applied with manual and automatic rule based assignments for a user, and it's the union of assigned roles that determines the actual data access.
 
 ## Known limitations when using Active Directory security group
 
-Before enabling the **Active Directory security groups** feature, it's important to be aware of the known limitations. The limitations are because the role assignment is resolved at log in and these roles assignments aren't persisted by finance and operations apps. Several of the limitations impact internal control and auditing.
+Before enabling the **Active Directory security groups** feature, it's important to be aware of the known limitations. The limitations are because the role assignment is resolved at login and these roles assignments aren't persisted by finance and operations apps. Several of the limitations impact internal control and auditing.
 
 - Segregation of duty reporting won't consider these role assignments
 - No database logging is possible for these role assignments
