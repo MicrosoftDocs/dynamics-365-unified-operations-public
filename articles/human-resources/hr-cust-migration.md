@@ -49,7 +49,7 @@ Customer migration is a "lift-and-shift migration" (movement) of a customer data
 2. [Create a new Dataverse environment](/power-platform/admin/create-environment#create-an-environment-with-a-database) by using the Power Platform admin center.
 
     > [!NOTE]
-    > When you add a database, ensure that the **Enable Dynamics 365 apps** option is set to **Yes**.
+    > When you add a database, ensure that the **Enable Dynamics 365 apps** option is set to **Yes**. For detailed information, see [Prepare a Power Platform environment](human-resources/hr-cust-migration.md#prepare-a-power-platform-environment)
 
 3. [Copy the existing Dataverse environment](/power-platform/admin/copy-environment), which is linked to the standalone Human Resources app, to the environment that you created in the previous step.
 
@@ -98,7 +98,9 @@ After a new Lifecycle Services project has been created, and the project onboard
 > [!NOTE]
 > This step is applicable only to sandbox environment migration. When you migrate the production environment, the existing Power Platform admin center environment that is attached to the production environment will be carried forward.
 
-- In the Power platform admin center, [create a Power platform environment](/power-platform/admin/create-environment#create-an-environment-in-the-power-platform-admin-center) to use for sandbox migration, or select an existing environment.
+When you add a database, ensure that the **Enable Dynamics 365 apps** button is set to **Yes**. 
+
+- In the Power platform admin center, [create a Power platform environment](/power-platform/admin/create-environment#create-an-environment-with-a-database) to use for sandbox migration, or select an existing environment.
 - [Copy an environment](/power-platform/admin/copy-environment) to refresh the Power Platform environment that is used for mapping.
 
 #### Migrate the sandbox environment
