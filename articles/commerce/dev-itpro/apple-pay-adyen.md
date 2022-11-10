@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Setting up Apple Pay with Adyen in Dynamics 365 Commerce
+title: Set up Apple Pay with Adyen in Dynamics 365 Commerce
 description: This article describes how to set up Apple Pay with Adyen in Microsoft Dynamics 365 Commerce.
 author: BrianShook
 ms.date: 11/10/2022
@@ -24,33 +24,35 @@ This article describes how to set up Apple Pay with Adyen in Microsoft Dynamics 
 
 | Term | Description |
 |---|---|
-| Apple Pay | Also known as the Apple Pay "button", Apple Pay is a wallet payment offering supported through the Adyen connector, allowing the customer experience and integration supported by the **Dynamic's 365 Apple Pay Connector**. |
-| Wallet | A payment type that does not include traditional payment characteristics, such as the BIN range and expiration date, which are used to differentiate among credit and debit card types. |
+| Apple Pay | Also known as the Apple Pay "button", Apple Pay is a wallet payment offering supported through the Adyen connector that allows the customer experience and integration supported by the Microsoft Dynamics 365 Apple Pay Connector. |
+| Wallet | A payment type that does not include traditional payment characteristics, such as the Bank Identification Number (BIN) range and expiration date, that are used to differentiate among credit and debit card types. |
 
-Microsoft Dynamics 365 Commerce offers an out-of-box integration for Apple Pay when using the Adyen payment gateway service. Apple Pay is a digital wallet payment method using an Apple Pay merchant account in coordination with the Adyen payment service. When configured, the Apple Pay button is a selectable payment method as part of online store's order checkout. The Apple Pay button will only be presented as a payment option for supported Apple Pay devices. When users select **Apple Pay** from a supported browser or device, they are directed to complete their payment directly with the Apple Pay service and then are returned to the online storefront for order completion. The **Dynamics 365 Payment Connector for Apple Pay** connector reference is used in addition to the **Dynamics 365 Payment Connector for Adyen** to enable Apple Pay and Credit Card payments on a site. Apple Pay can also be configured to use in store with Adyen payment terminals which will utilized the Dynamics 365 Payment Connector for Adyen (which will handle the Apple Payment device tap through the terminal) with the Commerce point-of-sale.
+Dynamics 365 Commerce offers an out-of-the-box integration for Apple Pay when using the Adyen payment gateway service. Apple Pay is a digital wallet payment method that uses an Apple Pay merchant account in coordination with the Adyen payment service. When configured, the Apple Pay button is a selectable payment method that is part of an online store's order checkout page. The Apple Pay button is only presented as a payment option for supported Apple Pay devices. When users select **Apple Pay** from a supported browser or device, they are directed to the Apple Pay service to complete their payment directly, and are then returned to the online storefront for order completion. The Dynamics 365 Payment Connector for Apple Pay connector reference is used in addition to the Dynamics 365 Payment Connector for Adyen to enable Apple Pay and credit card payments on a site. Apple Pay can also be configured to use in stores with Adyen payment terminals that use the Dynamics 365 Payment Connector for Adyen (which handles the Apple Payment device tap through the terminal) with the Commerce point of sale (POS).
 
 ## Prerequisites
 
-Using Apple Pay with Adyen in Commerce requires a Apple merchant account. Please review the [Adyen documentation on Apple Pay]([Apple Pay Drop-in integration | Adyen Docs](https://docs.adyen.com/payment-methods/apple-pay/web-drop-in#set-up-apple-pay)) regarding setting up Apple Pay in your test Customer Area. When ready to go live in production, refer to the [Going live](https://docs.adyen.com/payment-methods/apple-pay/web-drop-in#going-live) section in the above Adyen article.
+Using Apple Pay with Adyen in Commerce requires an Apple merchant account. For information regarding setting up Apple Pay in your test customer area, see [Apple Pay Drop-in integration](https://docs.adyen.com/payment-methods/apple-pay/web-drop-in#set-up-apple-pay). For information on what to do when you are ready to go live in your production environment, see [Going live](https://docs.adyen.com/payment-methods/apple-pay/web-drop-in#going-live).
 
-The Apple Pay payment method must also be integrated with your Adyen account. Adyen can assist in both setting up the payment method and ensuring the domains you will use the certificate are assigned for use with the certificate.
+The Apple Pay payment method must also be integrated with your Adyen account. Adyen can assist both in setting up the payment method and ensuring that the domains you will use the certificate for are assigned for use with the certificate.
 
-Enable the enhanced wallet feature flag in Commerce headquarters. Go to **Workspaces > Feature management** and search for the **Enhanced wallet support and payment improvements** feature. Select the feature, and then click **Enable**. After the feature has been enabled, run the **1110** distribution schedule to make the change available in all channels.
+To enable the enhanced wallet feature flag in Commerce headquarters, go to **Workspaces \> Feature management** and search for the **Enhanced wallet support and payment improvements** feature. Select the feature, and then select **Enable**. After the feature has been enabled, run the **1110** distribution schedule to make the change available in all channels.
 
-## Map the Apple Pay Payment Method
+## Map the Apple Pay payment method
 
 Apple Pay is a digital wallet payment method. For information on setting up payment mapping for Apple Pay, see [Wallet payment support](../wallets.md). 
 
-- In Commerce headquarters, go to **Retail and Commerce > Channel setup > Payment methods > Card types**. 
-- Select **New** and add a line for Apple Pay: 
-  - ID = ApplePay
-  - Electronic payment name = Apple Pay
-  - Type = Wallet
-  - Issuer = Apple
-- Select the **Processor mapping** menu to bring up the Processor payment mapping methods dialogue
-- In the **Unmapped Processor Payment Methods** center column, you will see payment methods supported listed against each of the Connectors available (Adyen, PayPal, Apple). 
-- Map any of the supported payment methods you wish against both the **Dynamics 365 Payment Connector for Adyen** (for use at POS) and the **Dynamics 365 Payment Connector for Apple Pay** (for online channel) connectors. Select each mapping line to support in the **Unmapped Processor Payment Methods** column and select **Add** to move the selections to the **Mapped Processor Payment Methods** column to map them. 
-- Select **OK**, and select **Save** back in the **Card Types** page. 
+To map the Apple Pay payment method in Commerce headquarters, follow these steps.
+
+1. Go to **Retail and Commerce \> Channel setup z\> Payment methods \> Card types**. 
+1. Select **New** and add a line for Apple Pay with the following values assigned: 
+  - **ID** = ApplePay
+  - **Electronic payment name** = Apple Pay
+  - **Type** = Wallet
+  - **Issuer** = Apple
+1. Select **Processor mapping** to bring up the **Processor payment mapping methods** dialog box. In the **Unmapped Processor Payment Methods** center column, you'll see supported payment methods listed against each of the connectors available (Adyen, PayPal, Apple). 
+1. Map any of the supported payment methods you want against both the **Dynamics 365 Payment Connector for Adyen** (for use at POS) and the **Dynamics 365 Payment Connector for Apple Pay** (for online channel) connectors.  
+1. For each mapping line, select the line to support in the **Unmapped Processor Payment Methods** column, and then select **Add** to move the selections to the **Mapped Processor Payment Methods** column.
+1. Select **OK**, and then on the **Card Types** page, select **Save**. 
 
 ## Set up the Apple Pay certificate for your site
 
@@ -89,25 +91,24 @@ Once the Adyen Connector is configured, click on **Add** to add the **Dynamics 3
 
 Once the merchant information has been filled, run the **1070** Channel configuration distribution schedule.
 
-## Configure Commerce Point-of-Sale for Apple Pay
+## Configure Commerce POS for Apple Pay
 
-The Point-of-Sale (POS) configuration will utilize the hardware profile's **EFT service** field configuration for the **Dynamics 365 Payment Connector for Adyen**. In headquarters, configure the EFT service for Dynamics 365 Payment Connector for Adyen as described in the [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md) article's [Set up a Dynamics 365 POS hardware profile section](adyen-connector-setup.md). 
+The POS configuration uses the hardware profile's **EFT service** field configuration for the Dynamics 365 Payment Connector for Adyen. In headquarters, configure the EFT service for Dynamics 365 Payment Connector for Adyen as described in the [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md) article's [Set up a Dynamics 365 POS hardware profile section](adyen-connector-setup.md). 
 
 Ensure to add "ApplePay" to the list of **Supported Tender Types** listed (separated by semi-colon).
 
 The previous Card Types > Processor mapping maps for the Adyen connector will capture the wallet card types used by Apple Pay at the POS terminal. 
 
-### Configure your Commerce site builder site for Apple Pay
+### Configure your Commerce site builder site to use Apple Pay
 
 Before configuring your fragments or pages with Apple Pay, make sure your Content security policy's are set in Commerce site builder for your site. To do this, log in to your Commerce site builder tool:
 
 - Navigate to your site in site builder (choosing the site from the **Home** screen, or selecting the site in the upper right site-picker menu).
-- Open **Site Settings** > **Extensions** and go to the **Content security policy** tab.
-- Click **Add** and add a line with "https://applepay.cdn-apple.com/jsapi/v1/apple-pay-sdk.js" to the **child-src**, **connect-src**, **frame-src**, **img-src**, **script-src**, and **style-src** sections.
+- Go to **Site Settings \> Extensions**. 
+- On the **Content security policy** tab, select **Add**, and then add a line with "https://applepay.cdn-apple.com/jsapi/v1/apple-pay-sdk.js" to the **child-src**, **connect-src**, **frame-src**, **img-src**, **script-src**, and **style-src** sections.
+- When completed, select **Save and publish** to commit the changes.
 
-- When completed, click the **Save and publish** button at the top of the page to commit the changes.
-
-### Set up Apple Pay as a Checkout Payment Option
+### Set up Apple Pay as a checkout payment option
 
 To set up Apple Pay as a payment button in the Checkout (non-express) form, follow these steps:
 
