@@ -18,7 +18,7 @@ ms.search.industry: Retail
 ms.search.form: 
 ---
 
-# Inbound inventory operation in POS
+# Commerce asynchronous document framework
 
 [!include [banner](includes/banner.md)]
 
