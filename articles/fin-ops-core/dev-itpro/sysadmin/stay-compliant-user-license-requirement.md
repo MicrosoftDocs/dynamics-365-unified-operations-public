@@ -2,7 +2,7 @@
 title: Stay compliant with user licensing requirements
 description: This article provides information about how you can stay compliant with the user licensing requirements for finance and operations apps.
 author: VolkerDeuss
-ms.date: 10/06/2020
+ms.date: 10/06/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -45,7 +45,7 @@ For unexpected licensing requirements for a role, it is possible to use the **Vi
 
 During security configuration on the **Configure security** page, you can select any security object, a role, duty, or permissions, and then select **View permissions** to view all permissions that are currently included and their licensing requirements. The header of the **View permissions** page shows the required license level.
 
-![View permissions page.](media/View-permissons2.png)
+![View permissions page.](media/View-permissions2.png)
 
 The **License** column can be filtered to focus on the resources for the unexpected license. Next step could be to remove these resources or modify the grants. For example, **Read** instead of full access and then reevaluate impact on licensing requirements. It is recommended to first change security configuration in a non-production environment and validate the impact before updating production. 
 
