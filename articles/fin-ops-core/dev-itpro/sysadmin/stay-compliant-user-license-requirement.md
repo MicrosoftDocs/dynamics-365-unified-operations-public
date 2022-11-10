@@ -85,7 +85,7 @@ For customers on the app specific licensing model, it will be required to first 
 
 ## User license estimator report
 
-The **User license estimator** report will tell how many combined **base** and **attach** licenses are required. For more details about base and attach licenses, see the **Base licenses and cost savings opportunities for “attach” licenses** section in the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409). 
+The **User license estimator** report will tell how many combined **base** and **attach** licenses are required. For more details about **base** and **attach** licenses, see the **Base licenses and cost savings opportunities for “attach” licenses** section in the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409). 
 
 The **User license estimator** report cannot distinguish between **base** vs. **attach** licenses for a user, since this it a choice when assigning licenses. A new comprehensive report is expected to be available during calendar year 2023, stay tuned!
 
