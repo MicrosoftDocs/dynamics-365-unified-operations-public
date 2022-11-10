@@ -26,7 +26,7 @@ ms.dyn365.ops.version: 10.0.30
 
 [!include[banner](../includes/banner.md)]
 
-**Active Directory security group** is a legacy feature that enables assigning roles to users based on their Active Directory security groups memberships. For more details on Active Directory security groups, see https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-security-groups. It also enables Just-In-time (JIT) provisioning of users when a user login in to an environment for the first time.
+**Active Directory security group** is a legacy feature that enables assigning roles and organizations to users based on their Active Directory security groups memberships. For more details on Active Directory security groups, see [Active Directory security groups]{/windows-server/identity/ad-ds/manage/understand-security-groups). The feature also enables Just-In-time (JIT) provisioning of users when a user login in to the Finance and Operations environment for the first time.
 
 Group based role assignments are applied in combination with manual and automatic rule based assignments for a user, and it is the union that determines the actual data access.
 
@@ -43,7 +43,7 @@ Before enabling the **Active Directory security groups** feature it is important
 - Disabling a group in system administration will not stop JIT or roles assignment
 - **User Id** for JIT created users are created with a leading $ sign and numbers
 
-The known limitations are not expected to be addressed until the user group experiences is unified with the more comprehensive feature in Dataverse, see https://learn.microsoft.com/en-us/power-platform/admin/manage-group-teams
+These known limitations are not expected to be addressed until the group experiences is unified with the more comprehensive feature in Dataverse, See [Manage group teams](/power-platform/admin/manage-group-teams.md).
 
 ## Enable Active Directory security group
 
