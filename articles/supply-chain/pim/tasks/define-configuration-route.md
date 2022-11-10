@@ -1,6 +1,7 @@
 ---
 title: Define configuration route
 description: This procedure focuses on defining a configuration route that determines the sequence in which the configuration groups will be presented. 
+author: t-benebo
 ms.author: benebotg
 ms.reviewer: kamaybac
 ms.search.form: BOMTable   
