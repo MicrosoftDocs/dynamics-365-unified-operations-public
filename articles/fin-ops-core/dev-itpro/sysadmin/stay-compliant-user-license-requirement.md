@@ -33,7 +33,7 @@ The licensing requirements for users are determined at the organization or tenan
 
 A licensing requirement is assigned to every securable object/resource that is included in a user role. 
 
-The rest of this article describes the various tools that you can use to ensure that the actual licensing complies with the expected licensing requirements. The first thing to verify is that the user roles have the expected licensing requirements and that they are assigned to the appropriate users.
+The rest of this article describes the various tools that you can use to ensure that the actual licensing complies with the expected licensing requirements. The first thing to verify is that the user roles have the expected licensing requirements and that they're assigned to the appropriate users.
 
 ## License requirement per role
 
@@ -53,7 +53,7 @@ Select **View permissions** to view all permissions that are currently included 
 
 ![View permissions page.](media/View-permissions2.png)
 
-The **License** column can be filtered to focus on the resources for the unexpected license. Next step could be to remove these resources or modify the grants. For example, **Read** instead of full access and then reevaluate impact on licensing requirements. It is recommended to first change security configuration in a non-production environment and validate the impact before updating production. 
+The **License** column can be filtered to focus on the resources for the unexpected license. Next step could be to remove these resources or modify the grants. For example, **Read** instead of full access and then reevaluate impact on licensing requirements. It's recommended to first change security configuration in a non-production environment and validate the impact before updating production. 
 
 The **Operations** license value indicates that a full user finance and operations apps license is required/compliant.  
 
@@ -73,7 +73,7 @@ The **Role to user assignment** report or the **Assign users to role** page can 
 
 ## Enabled users
 
-For internal security and to avoid licensing requirements for users that have left or are not actively using the finance and operations apps, it is recommended to disable these users in the **Users** page.
+For internal security and to avoid licensing requirements for users that have left or aren't actively using the finance and operations apps, it's recommended to disable these users in the **Users** page.
 
 ## User license counts report
 
@@ -91,7 +91,7 @@ For customers on the app specific licensing model, it will be required to first 
 
 ## User license estimator report
 
-The **User license estimator** report will tell how many combined **base** and **attach** licenses are required. For more details about **base** and **attach** licenses, see the **Base licenses and cost savings opportunities for “attach” licenses** section in the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409). 
+The **User license estimator** report will tell how many combined **base** and **attach** licenses are required. For more information about **base** and **attach** licenses, see the **Base licenses and cost savings opportunities for “attach” licenses** section in the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409). 
 
 The **User license estimator** report can't distinguish between **base** vs. **attach** licenses for a user, this it a choice when assigning licenses. A new comprehensive report is expected to be available during calendar year 2023. 
 
@@ -99,11 +99,11 @@ The **User license estimator** report can't distinguish between **base** vs. **a
 
 Users with one indicated application license, for example, **April** above, are required to be assigned that specific app **base** license, Dynamics 365 Finance. 
 
-Users with more than one indicated application license, **Brooke** above, are required to be to be assigned licenses for all apps, one **base** and **attach** for the others. 
+Users with more than one indicated application license, **Brooke** above, are required to be assigned licenses for all apps, one **base** and **attach** for the others. 
 
-Users listed in the reports, but without any indicated application license, **Charlie** above, are required to be to be assigned any finance and operations **base** license. This would be a license for Finance, Supply Chain Management, Commerce, Project Operations and Human resources. 
+Users listed in the reports, but without any indicated application license, **Charlie** above, are required to be assigned any finance and operations **base** license. This would be a license for Finance, Supply Chain Management, Commerce, Project Operations and Human resources. 
 
-A rough compliance check can be made by using the combined total for required app specific licneses at the bottom of the report, is equal or less than the total of available **base** and **attach** licenses for finance and operations apps in the **Microsoft 365 Admin center**. 
+A rough compliance check can be made by using the combined total for required app specific licenses at the bottom of the report, is equal or less than the total of available **base** and **attach** licenses for finance and operations apps in the **Microsoft 365 Admin center**. 
 
 ## Available and assigned licenses
 
