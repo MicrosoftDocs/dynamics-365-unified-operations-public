@@ -51,16 +51,17 @@ The high-level, end-to-end process flow for Saudi Arabia is as follows:
 1. Commerce headquarters extracts the e-invoice in the XML format from the fiscal transaction linked to the sales transaction and submits the e-invoice to ZATCA. The submission is done by means of integration with the [Electronic Invoicing service](../../finance/localizations/e-invoicing-sa-get-started.md). For more information about the common electronic invoicing capabilities available for Saudi Arabia, see [Customer electronic invoices in Saudi Arabia](../../finance/localizations/emea-sau-e-invoices.md).
 
 ## Set up Comerce for Saudi Arabia
-This section describes the Commerce settings that are specific to and recommended for France. For more information about common Commerce features and settings, see [Commerce home page](../index.md).
 
-To use the France-specific functionality, you must complete these tasks:
+This section describes the Commerce settings that are specific to and recommended for Saudi Arabia. For more information about common Commerce features and settings, see [Commerce home page](../index.md).
 
-- Set the **Country/region** field to **FRA** (France) in the primary address of the legal entity.
-- Set the **ISO code** field to **FR** (France) in the POS functionality profile of every store that is located in France.
+To use the Saudi Arabia-specific functionality, you must complete these tasks:
 
-You must also specify the following settings for France. Note that you must run appropriate distribution jobs after you complete the setup.
+- Set the **Country/region** field to **SAU** (Saudi Arabia) in the primary address of the legal entity.
+- Set the **ISO code** field to **SA** (Saudi Arabia) in the POS functionality profile of every store that is located in Saudi Arabia.
 
-1. [Enable Commerce features](#enable-features-for-france) for France in the **Feature management** workspace.
+You must also specify the following settings for Saudi Arabia. Note that you must run appropriate distribution jobs after you complete the setup.
+
+1. [Enable Commerce features](#enable-features-for-saudi-arabia) for Saudi Arabia in the **Feature management** workspace.
 1. [Specify various registration numbers](#set-up-the-legal-entity) of the organization, such as the VAT identifier, on the **Legal entities** page. These registration numbers will be used when the fiscal archive is exported.
 1. [Set up VAT](#set-up-vat-per-french-requirements) per the French VAT regulations.
 1. [Set up POS functionality profiles](#set-up-pos-functionality-profiles) to enable features and options that are required for France.
