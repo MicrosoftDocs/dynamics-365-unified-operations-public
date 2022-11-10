@@ -47,10 +47,188 @@ The high-level, end-to-end process flow for Saudi Arabia is as follows:
 
 1. CRT digitally signs the e-invoice data. The e-invoice and the signature, together with other information, is saved in the channel database (DB) in a fiscal transaction that is linked to the sales transaction.
 1. POS requests a sales receipt from CRT. CRT builds the receipt, including a QR code, and sends it back to POS. POS sends the receipt to the receipt printer.
-1. Commerce headquarters downloads the transaction data together with fiscal transactions from CSU via Commerce Data Exchange (CDX). The data is stored in the headquarters DB throughout the period of life of your production environment.
-1. Commerce headquarters submits the e-invoice the ZATCA. The submission is done by means of integration with the [Electronic Invoicing service](../../finance/localizations/e-invoicing-sa-get-started.md). For more information about the common electronic invoicing capabilities available for Saudi Arabia, see [Customer electronic invoices in Saudi Arabia](../../finance/localizations/emea-sau-e-invoices.md).
+1. Commerce headquarters downloads the sales transaction data together with fiscal transactions from CSU via Commerce Data Exchange (CDX). The data is stored in the headquarters DB throughout the period of life of your production environment.
+1. Commerce headquarters extracts the e-invoice in the XML format from the fiscal transaction linked to the sales transaction and submits the e-invoice to ZATCA. The submission is done by means of integration with the [Electronic Invoicing service](../../finance/localizations/e-invoicing-sa-get-started.md). For more information about the common electronic invoicing capabilities available for Saudi Arabia, see [Customer electronic invoices in Saudi Arabia](../../finance/localizations/emea-sau-e-invoices.md).
 
 ## Set up Comerce for Saudi Arabia
+This section describes the Commerce settings that are specific to and recommended for France. For more information about common Commerce features and settings, see [Commerce home page](../index.md).
+
+To use the France-specific functionality, you must complete these tasks:
+
+- Set the **Country/region** field to **FRA** (France) in the primary address of the legal entity.
+- Set the **ISO code** field to **FR** (France) in the POS functionality profile of every store that is located in France.
+
+You must also specify the following settings for France. Note that you must run appropriate distribution jobs after you complete the setup.
+
+1. [Enable Commerce features](#enable-features-for-france) for France in the **Feature management** workspace.
+1. [Specify various registration numbers](#set-up-the-legal-entity) of the organization, such as the VAT identifier, on the **Legal entities** page. These registration numbers will be used when the fiscal archive is exported.
+1. [Set up VAT](#set-up-vat-per-french-requirements) per the French VAT regulations.
+1. [Set up POS functionality profiles](#set-up-pos-functionality-profiles) to enable features and options that are required for France.
+1. [Configure custom fields](#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts) and [receipt formats](#configure-receipt-formats) to comply with the local regulatory requirements.
+1. [Configure the fiscal registration functionality](#set-up-fiscal-registration) for France to enable digital signing of sales transactions and audit events.
+1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the Commerce channel and Commerce headquarters sides.
+1. [Specify Electronic reporting (ER) formats](#configure-the-z-report-and-archive-export-formats) that should be used to export Z-reports and fiscal archives from Commerce headquarters.
+1. [Reinitialize Commerce components](#reinitialize-commerce-components) to enable France-specific audit events and transmission of France-specific data from POS to Commerce headquarters.
+1. [Configure channel components](#configure-channel-components) to enable France-specific extensions of the components.
+
+    > [!IMPORTANT]
+    > You should configure channel components only if you're using Commerce version 10.0.28 or earlier. As of version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you're using Commerce version 10.0.28 or earlier, and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
+
+1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode).
+1. [Validate your configuration](#compliance-checklist) to make sure all France-specific features work properly.
+
+### Enable features for France
+
+You must enable the following features in the **Feature management** workspace:
+
+- (France) Enable additional audit events in POS
+- (France) Enable additional information in end-of-day statements in POS
+- (France) Enable exporting Z-Report to file
+
+### Set up the legal entity
+
+You must make the following changes on the **Legal entities** page. These settings are used in the archive format.
+
+- On the **Bank account information** FastTab, in the **Routing number** field, specify the VAT identifier of the organization.
+- On the **Registration numbers** FastTab, in the **NAF code** field, specify the Nomenclature des Activités Françaises (NAF) code of the organization.
+- On the **Tax registration** FastTab, in the **Tax registration number** field, specify the Système d'identification du répertoire des établissements (SIRET) number of the organization.
+
+### Set up VAT per French requirements
+
+You must create sales tax codes, sales tax groups, and item sales tax groups. You must also set up sales tax information for products and services. For more information about how to set up and use sales tax, see [Sales tax overview](/dynamics365/finance/general-ledger/indirect-taxes-overview).
+
+You must also specify sales tax groups and enable the **Prices include sales tax** option for stores that are located in France.
+
+### Set up POS functionality profiles
+
+You must enable printing of Z-reports by setting the **Print X/Z report on POS** option to **Yes**.
+
+You must enable auditing by setting the **Audit** option to **Yes**.
+
+To enforce daily shift closing, you must make the following changes:
+
+- Set the **Enforce daily shift closing** option to **Yes**.
+- Set the **Shift closing time** and **Shift closing interval (minutes)** fields.
+
+### Configure custom fields so that they can be used in receipt formats for sales receipts
+
+You can configure the language text and custom fields that are used in the POS receipt formats. The default company of the user who creates the receipt setup should be the same legal entity where the language text setup is created. Alternatively, the same language texts should be created in both the user's default company and the legal entity of the store that the setup is created for.
+
+On the **Language text** page, add the following records for the labels of the custom fields for receipt layouts. Note that the **Language ID**, **Text ID**, and **Text** values that are shown in the table are just examples. You can change them to meet your requirements. However, the **Text ID** values that you use must be unique, and they must be equal to or higher than 900001.
+
+| Language ID | Text ID | Text                      |
+|-------------|---------|---------------------------|
+| en-US       | 900001  | Transaction type          |
+| en-US       | 900002  | Sequential number         |
+| en-US       | 900003  | Digital signature         |
+| en-US       | 900004  | Reprint number            |
+| en-US       | 900005  | Sales tax basis           |
+| en-US       | 900006  | Sales tax amount          |
+| en-US       | 900007  | Sales total               |
+| en-US       | 900008  | Sales total tax           |
+| en-US       | 900009  | Sales total including tax |
+| en-US       | 900010  | NF 525 Certificate        |
+| en-US       | 900011  | Line count                |
+| en-US       | 900012  | Reprint date              |
+| en-US       | 900013  | Reprint time 12H          |
+| en-US       | 900014  | Reprint time 24H          |
+| en-US       | 900015  | Reprint digital signature |
+
+On the **Custom fields** page, add the following records for the custom fields for receipt layouts. Note that **Caption text ID** values must correspond to the **Text ID** values that you specified on the **Language text** page.
+
+| Name                            | Type    | Caption text ID |
+|---------------------------------|---------|-----------------|
+| TRANSACTIONTYPE_FR              | Receipt | 900001          |
+| SEQUENTIALNUMBER_FR             | Receipt | 900002          |
+| DIGITALSIGNATURE_FR             | Receipt | 900003          |
+| REPRINTNUMBER_FR                | Receipt | 900004          |
+| SALESTAXBASIS_FR                | Receipt | 900005          |
+| SALESTAXAMOUNT_FR               | Receipt | 900006          |
+| SALESTOTAL_FR                   | Receipt | 900007          |
+| SALESTOTALTAX_FR                | Receipt | 900008          |
+| SALESTOTALINCLUDETAX_FR         | Receipt | 900009          |
+| CERTIFICATENUMBERANDCATEGORY_FR | Receipt | 900010          |
+| LINECOUNT_FR                    | Receipt | 900011          |
+| REPRINTDATE_FR                  | Receipt | 900012          |
+| REPRINTTIME12H_FR               | Receipt | 900013          |
+| REPRINTTIME24H_FR               | Receipt | 900014          |
+| REPRINTDIGITALSIGNATURE_FR      | Receipt | 900015          |
+
+### Configure receipt formats
+
+For every required receipt format, change the value of the **Print behavior** field to **Always print**. You must also configure hardware profiles to support receipt printers and to enable Hardware station. For more information about how to work with POS peripherals, see [Peripherals](../retail-peripherals-overview.md).
+
+In the Receipt format designer, add the following custom fields to the appropriate receipt sections. Note that field names correspond to the language texts that you defined in the previous section.
+
+- **Header:** Add the following field:
+
+    - **Transaction type** – This field identifies the type of receipt.
+    - **Reprint message** – This standard field prints a "Copy" caption on a receipt copy.
+
+- **Lines:** We recommend that you add the following standard fields:
+
+    - **Unit price with tax**
+    - **Total price with tax**
+    - **Tax ID**
+
+- **Footer:** Add the following fields:
+
+    - **Sales total** – This field prints the receipt's total cash sale amount. The amount excludes tax. Prepayments and gift card operations are excluded.
+    - **Sales total tax** – This field prints the receipt's total tax amount for cash sales. Prepayments and gift card operations are excluded. 
+    - **Sales total including tax** – This field prints the receipt's total cash sale amount. The amount includes tax. Prepayments and gift card operations are excluded.
+    - **Tax ID** – This standard field enables a sales tax summary to be printed per sales tax code. The field must be added to a new line.
+    - **Sales tax basis** – This field prints the receipt's tax basis for cash sales per sales tax code. Prepayments and gift card operations are excluded. The field must be added to the same line as the **Tax ID** field.
+    - **Sales tax amount** – This field prints the receipt's tax amount for cash sales per sales tax code. Prepayments and gift card operations are excluded. The field must be added to the same line as the **Tax ID** field.
+    - **Sequential number** – This field prints the sequential number of a signed sales transaction.
+    - **Digital signature** – This field prints the extract from the digital signature.
+    - **Reprint number** – This field prints the number of a receipt copy. For an original receipt, the value is **0** (zero).
+    - **Reprint date** – This field prints the date of a receipt copy.
+    - **Reprint time 12H** or **Reprint time 24H** – This field prints the time of a receipt copy in the selected format.
+    - **Reprint digital signature** – This field prints an extract from the digital signature of a receipt copy.
+    - **NF 525 Certificate** – This field prints the category and number of the certificate of compliance that an authorized body issued to Dynamics 365 Commerce version 10 per the NF 525 certification requirements.
+    - **Text** – Add a text field, and specify the version of the software that was certified per the NF 525 certification requirements and that is used to produce receipts (for example, **Microsoft Dynamics 365 Commerce v.10**).
+
+        > [!NOTE]
+        > If you customize the POS application, and your customizations affect the compliance of the application, you might have to request a new certificate of compliance from an accredited body. In this case, you must override the certificate category and number, and specify a corresponding software version number. Otherwise, the default values for the certificate category and number will be printed.
+
+    - **Line count** – This field prints the number of printed item lines on a receipt.
+    - **Text** – Add a text field, and specify the VAT identifier of the organization.
+    - **Text** – Add a text field, and specify the NAF code of the organization.
+    - **Text** – Add a text field, and specify the SIRET number of the organization.
+    - **Store name** – This standard field prints the name of the store.
+    - **Store address** – This standard field prints the address of the store.
+
+For more information about how to work with receipt formats, see [Set up and design receipt formats](../receipt-templates-printing.md).
+
+### Set up fiscal registration
+
+Complete the fiscal registration setup steps that are described in [Set up the fiscal integration for Commerce channels](./setting-up-fiscal-integration-for-retail-channel.md):
+
+1. [Set up a fiscal registration process](./setting-up-fiscal-integration-for-retail-channel.md#set-up-a-fiscal-registration-process). Be sure to note the settings of the fiscal registration process that are [specific to France](#configure-the-fiscal-registration-process).
+1. [Set error handling settings](./setting-up-fiscal-integration-for-retail-channel.md#set-error-handling-settings).
+1. [Enable manual execution of deferred fiscal registration](./setting-up-fiscal-integration-for-retail-channel.md#enable-manual-execution-of-deferred-fiscal-registration).
+
+#### Configure the fiscal registration process
+
+To enable the fiscal registration process for France in Commerce headquarters, follow these steps.
+
+1. Download configuration files for the fiscal document provider and the fiscal connector from the Commerce SDK:
+
+    1. Open the [Dynamics 365 Commerce Solutions](https://github.com/microsoft/Dynamics365Commerce.Solutions/) repository.
+    2. Open the last available release branch.
+    3. Open **src \> FiscalIntegration \> SequentialSignatureFrance \> Configurations**.
+    4. Download the fiscal connector configuration file at **Connector \> ConnectorMicrosoftSequentialSignatureFRA.xml**.
+    5. Download the fiscal document provider configuration file at **DocumentProvider \> DocumentProviderMicrosoftSequentialSignatureFRA.xml**.
+
+1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Shared parameters**. On the **General** tab, set the **Enable fiscal integration** option to **Yes**.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connectors**, and load the fiscal connector configuration file that you downloaded earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal document providers**, and load the fiscal document provider configuration file that you downloaded earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector functional profiles**. Create a new connector functional profile, and select the document provider and the connector that you loaded earlier. Update the data mapping settings as required.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**. Create a new connector technical profile, and select the connector that you loaded earlier. Set the connector type to **Internal**. Update the other connection settings as required.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal connector groups**, and create a new fiscal connector group for the connector functional profile that you created earlier.
+1. Go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Fiscal registration processes**. Create a new fiscal registration process, create a fiscal registration process step, and select the fiscal connector group that you created earlier.
+1. Go to **Retail and Commerce \> Channel setup \> POS setup \> POS profiles \> Functionality profiles**. Select a functionality profile that is linked to the store where the registration process should be activated. On the **Fiscal registration process** FastTab, select the fiscal registration process that you created earlier. On the **Fiscal services** FastTab, select the connector technical profile that you created earlier. 
+1. Go to **Retail and Commerce \> Retail and Commerce IT \> Distribution schedule**. Open the distribution schedule, and select jobs **1070** and **1090** to transfer data to the channel database.
 
 ### Configure the digital signature parameters
 
@@ -76,3 +254,54 @@ Finally, on the **Commerce parameters** page (**Retail and Commerce \> Headquart
 
 > [!NOTE]
 > The following hash functions aren't acceptable: CRC16, CRC32, SHA-1, and MD5. Commerce supports only the SHA256, SHA384, and SHA512 hash functions. If you want to use a different hash function, you must implement a customization.
+
+### Configure the Z report and archive export formats
+
+Depending on your purposes, you can download the ER configurations for the Z report and archive from the following sources:
+
+- If you don't have to customize the ER configurations that are provided by Microsoft or create your own ER configurations, you can import the Microsoft-provided configurations from Microsoft Dynamics Lifecycle Services. For more information, see [Import a configuration from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Alternatively, you can [download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
+- If you must customize the ER configurations that are provided by Microsoft or create your own ER configurations, you must provision a Regulatory Configuration Services (RCS) environment. For more information about how to work with RCS, see [Import ER configurations from RCS](../../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md).
+
+You must download the following versions (or later versions) of the configurations:
+
+- **Retail channel data.version.2** data model
+- **Archiving DMM.version.2.3** data model mapping
+- **Retail Z-Report (FR).version.24.23.3** format
+- **Retail data archive (FR).version.2.5** format
+
+After you import the configurations, select ER formats for the Z report and archive in the following fields on the **Electronic documents** tab of the **Commerce parameters** page:
+
+- **Z-Report export format** – Select the **Retail Z-Report (FR).version.24.23.3** format or the format that you downloaded earlier.
+- **Retail data archive export format** – Select the **Retail data archive (FR).version.2.5** format or the format that you downloaded earlier.
+
+### Reinitialize Commerce components
+
+> [!NOTE]
+> You only need to complete the steps of this section if you are updating an existing environment.
+
+To enable audit events, you must reinitialize the Commerce extensible enumerations. To enable France-specific data to be transmitted from POS to Commerce headquarters, you must reinitialize the Commerce scheduler.
+
+1. On the **Commerce parameters** page, on the **General** FastTab, select **Initialize**. For more information, see [Initialize seed data in new Retail environments](../enable-configure-retail-functionality.md).
+1. There is an option to separately configure the scheduler. Go to **Commerce scheduler** \> **Initialize Commerce scheduler**. In the **Initialize Commerce scheduler** dialog box, select **OK**.
+
+### Configure channel components
+
+> [!IMPORTANT]
+> You should configure channel components only if you're using Commerce version 10.0.28 or earlier. As of version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you're using Commerce version 10.0.28 or earlier, and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
+
+To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-fi-deployment.md).
+
+> [!NOTE]
+> This version of the Commerce functionality for France is based on the [Fiscal integration framework](./fiscal-integration-for-retail-channel.md). For information about the legacy digital signing sample for France, see [Deployment guidelines for cash registers for France (legacy)](./emea-fra-deployment.md). For guidance about how to enable the fiscal integration functionality for France in existing environments that use the legacy digital signing sample, see [Migrate from legacy Commerce functionality for France](./emea-fra-fi-migration.md).
+
+### Enable the digital signature in offline mode
+
+To enable the digital signature in offline mode, you must follow these steps after you activate POS on a new device.
+
+1. Sign in to POS.
+1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending downloads** field is **0** (zero), the database is fully synchronized.
+1. Sign out of POS.
+1. Wait for the offline database to be fully synchronized.
+1. Sign in to POS.
+1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending transactions in offline database** field is **0** (zero), the database is fully synchronized.
+1. Restart POS.
