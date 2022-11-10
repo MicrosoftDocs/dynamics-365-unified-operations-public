@@ -1,6 +1,6 @@
 ---
 title: Get started with setting up Warehouse management module
-description: This article shows how to work with built-in wizards and checklists that will help you set up and configure the Warehouse management module quickly and efficiently.
+description: This article explains how to work with the built-in wizards and checklists that will help you set up and configure the Warehouse management module quickly and efficiently.
 author: gfedorova
 ms.author: gfedorova 
 ms.reviewer: kmaybac
@@ -16,7 +16,7 @@ ms.custom: bap-template
 [!include [banner](../includes/banner.md)]
 [!INCLUDE [preview-banner](../includes/preview-banner.md)]
 
-This article shows how to work with built-in wizards and checklists that will help you set up and configure the Warehouse management module quickly and efficiently.
+This article explains how to work with the built-in wizards and checklists that will help you set up and configure the Warehouse management module quickly and efficiently.
 
 ## Track the warehouse management configuration processes
 
@@ -32,15 +32,15 @@ This workspace lets you create, edit, and import checklists that you can use to 
 
 To open the workspace, go to **Warehouse management \> Workspaces \> Warehouse implementation tasks**.
 
-### Import the default configuration checklist
+### Import the default configuration task list
 
-You use **Import default tasks** to import pre-configured Warehouse implementation tasks for you. You can use Add, Edit, Remove, Move up and Move down buttons to adjust the tasks based on your needs that are part of the warehouse management process.
+Use **Import default tasks** to import pre-configured Warehouse implementation tasks.
 
 <!--KFM: We need to provide more details about how to import the checklist. Don't we have a standard one that users can import? How can they get it? All I could get was an error message: "Entity Warehouse implementation tasks not found. Refresh entity list from Data import/export framework parameters form." I couldn't find the "Data import/export framework parameters" page--how do we get there?   -->
 
 ### Customize the task list
 
-After importing a configuration checklist, you can customize it as needed my adding, remove, and rearranging the tasks. You could also create a fully customized task list by starting with a blank list. Use the following commands in the **Tasks and status** FastTab toolbar to customize the list:
+After importing a task list, you can customize it as needed my adding, removing, and rearranging the tasks. You could also create a fully customized task list by starting with a blank list. Use the following commands in the **Tasks and status** FastTab toolbar to customize the list:
 
 - **Add task** – Create a new task. This opens the **Add task** dialog, where you must define the following:
     - **Task category** – Enter the type of task this is.
@@ -51,7 +51,7 @@ After importing a configuration checklist, you can customize it as needed my add
 - **Move up** – Move the selected task up in the sequence order.
 - **Move down** – Move the selected task down in the sequence order.
 
-### Work with the checklist
+### Work with the task list
 
 When your task list is ready, follow these steps to work through it:
 
@@ -63,24 +63,24 @@ When your task list is ready, follow these steps to work through it:
 
     - **Sequence number** – Indicates the order in which you should complete each task. Start with the lowest number and work up from there.
     - **Completed** – Indicates whether a task has been completed. Mark this check box for each task as you complete them.
-    - **Task category** – Tells what kind of task it is. Select this text to open the page in Supply Chain Management where you can make the settings needed to complete the task.
+    - **Task category** – Tells what kind of task it is. Select this text to open the page where you can make the settings needed to complete the task.
     - **Description** – Provides full details about what must be done to complete the task.
-    - **Status** –  <!--KFM: Just duplicates the check box? -->
+    - **Status** –  <!--KFM: Just duplicates the check box? What values/icons might appear here? -->
     - **Completed by** – Complete tasks show the name of the user who completed the task.
     - **Completed date** – Complete tasks shows the date on which the task was completed.
 
-    Use the following fields and buttons in the Tasks and status FastTab toolbar to help you find your way around the list:
+    Use the following fields and buttons in the **Tasks and status** FastTab toolbar to help you find your way around the list:
 
     - **Filter** – To quickly find a specific task in a long list, enter a value here and then choose the column in which to find that value.
-    - **Hide completed tasks** or **Show completed tasks** – Choose whether to hide or show tasks that have already been completed. The button label toggles based on the current view.
+    - **Hide completed tasks** or **Show completed tasks** – Choose whether to hide or show tasks that have already been completed. The button label toggles based on whether completed tasks are currently shown.
 
-    To see the full task list (including both completed and unfinished tasks), expand the Links FastTab and select the All tasks link. This is the same page that opens when you selectt the **Warehouse implementation tasks** tile on the **Summary** FastTab. <!--KFM: This page again!? Why?-->
+    To see the full task list (including both completed and unfinished tasks), expand the Links FastTab and select the All tasks link. This is the same page that opens when you select the **Warehouse implementation tasks** tile on the **Summary** FastTab. <!--KFM: This page again!? Why?-->
 
 1. Continue working until all tasks are complete.
 
 ## Initiate the Warehouse management module
 
-The **Warehouse management initiation wizard** provides a step-by-step guide that will help you make the most basic settings required by the Warehouse management module. 
+The **Warehouse management initiation wizard** provides a step-by-step guide that will help you make the most basic settings required by the Warehouse management module. <!--KFM: In what circumstances should we use this wizard? How does it relate to the other tools on this page? -->
 
 The following table summarizes the configurations made by the wizard.
 
@@ -90,7 +90,7 @@ The following table summarizes the configurations made by the wizard.
 | Location profiles | Create | <!-- KFM: What are these and how do we use them? --> The wizard will create several location profiles using the names you specify. <!--KFM: Where do the various options come from for each created profile? Seems like we only assign a name. --> After running the wizard, you can add, remove, and/or edit these and other location profiles by going to **Warehouse management \> Setup \> Warehouse \> Location profiles**. |
 | Location formats | Create | Location formats are a naming system used to create unique and consistent names for the different location bin positions used within a warehouse. It can be useful to use separators as part of the location format to make it easier to identify components of the location such as the aisle number. The wizard will create an initial location format using the name you specify. You can tell the wizard to create separate location formats for each profile or to create one location format for each profile <!-- KFM: These options both seem the same(?) I think we should clarify. -->. After running the wizard, you can add, remove, and/or edit these and other location formats by going to **Warehouse management \> Setup \> Warehouse \> Location formats**. |
 | Inventory status | Create | <!-- KFM: What are these and how do we use them? --> The wizard will create an initial inventory status value using the name you specify. After running the wizard, you can add, remove, and/or edit this and other inventory statuses by going to **Warehouse management \> Setup \> Inventory \> Inventory statuses**. |
-| Default work user and password | Create | The wizard will create an initial work user using the user name and password you specify.  After running the wizard, you can add, remove, and/or edit this and other work users by going to **Warehouse management \> Setup \> Worker**. |
+| Default work user and password | Create | <!-- KFM: Explain what a "work user" is. -->  The wizard will create an initial work user using the user name and password you specify.  After running the wizard, you can add, remove, and/or edit this and other work users by going to **Warehouse management \> Setup \> Worker**. |
 | Load posting methods | Regenerate | <!-- KFM: What are these and how do we use them? --> The wizard will generate or regenerate the load posting methods. After running the wizard, you can manually regenerate and/or edit the methods list by going to **Warehouse management \> Setup \> Load posting methods**. |
 | Wave processing methods | Regenerate | <!-- KFM: What are these and how do we use them? --> The wizard will generate or regenerate the wave processing methods. After running the wizard, you can manually regenerate and/or edit the methods list by going to  **Warehouse management \> Setup \> Waves \> Wave process methods**. |
 | Warehouse management parameters | Set up | The wizard will initialize several settings on the **Warehouse management parameters** page based on the settings you make while running the wizard. To open this page, go to **Warehouse management \> Setup \> Warehouse management parameters**. The following values will be set: <ul><li>**User location profile**</li><li>**Location types**</li><li>**Default work user ID**</li><li>**Default inventory status**</li></ul> |
@@ -115,11 +115,11 @@ Follow these steps to launch and complete the warehouse management initiation wi
 
 1. Select **Next** to continue to the **Base data setup complete** page. This page summarizes the settings the wizard will make based on your input. 
 1. Select **Finish** to apply the listed settings.
-1. **Note:** Your user must be associated with an employee record to successfully create work user. <!--KFM: Describe how to do this here, or give a link. -->
+1. **Note:** Your work user must be associated with an employee record to successfully create work user. <!--KFM: Describe how to do this here, or give a link. -->
 
 ## Warehouse initiation wizard
 
-The **Warehouse initiation wizard** provides a step-by-step guide that will help you set one or more individual warehouses. After completing this wizard, settings will be in place that will allow you to successfully ship sales and receive purchases.
+The **Warehouse initiation wizard** provides a step-by-step guide that will help you set one or more individual warehouses. After completing this wizard, settings will be in place that will allow you to successfully ship sales and receive purchases.  <!--KFM: In what circumstances should we use this wizard? How does it relate to the other tools on this page? -->
 
 The following table summarizes the configurations made by the wizard.
 
