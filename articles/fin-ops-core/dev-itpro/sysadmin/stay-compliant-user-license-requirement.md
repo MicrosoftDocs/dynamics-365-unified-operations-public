@@ -47,9 +47,9 @@ During security configuration on the **Configure security** page, you can select
 
 ![View permissions page.](media/ViewPermissons.png) **TBU**
 
-The **License** column can be filtered to focus on the resources for the unexpected license. Next step could be to remove these resources or modify the grants e.g. just **Read** instead of full access and then reevaluate impact on licensing requirements. It is recommended to first change security configuration in a non-production environment and validate the impact before updating production. 
+The **License** column can be filtered to focus on the resources for the unexpected license. Next step could be to remove these resources or modify the grants. For example, **Read** instead of full access and then reevaluate impact on licensing requirements. It is recommended to first change security configuration in a non-production environment and validate the impact before updating production. 
 
-The **Operations** license value indicates that any full user Finance and Operations apps license is required/compliant.  
+The **Operations** license value indicates that any full user finance and operations apps license is required/compliant.  
 
 It is recommended to always use the **View permissions** page while configuring security for roles, duties, and privileges, in order to evaluate the user licensing impact.
 
@@ -67,7 +67,7 @@ The **Role to user assignment** report or the ** Assign users to role** page can
 
 ## Enabled users
 
-For internal security and to avoid licensing requirements for users that have left or are not actively using the Finance and operations apps, it is recommended to disable these users in the **Users** page.
+For internal security and to avoid licensing requirements for users that have left or are not actively using the finance and operations apps, it is recommended to disable these users in the **Users** page.
 
 ## User license counts report
 
