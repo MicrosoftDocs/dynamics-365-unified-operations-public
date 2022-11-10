@@ -33,7 +33,7 @@ The licensing requirements for users are determined at the organization or tenan
 
 A licensing requirement is assigned to every securable object/resource that is included in a user role. 
 
-The rest of this article describes the various tools that you can use to ensure that the actual licensing complies with the expected licensing requirements. The first thing to verify is that the user roles have the expected licensing requirments and that they are assign to the correct users.
+The rest of this article describes the various tools that you can use to ensure that the actual licensing complies with the expected licensing requirements. The first thing to verify is that the user roles have the expected licensing requirements and that they are assigned to the appropriate users.
 
 ## License requirement per role
 
@@ -45,7 +45,7 @@ For unexpected licensing requirements for a role, it is possible to use the **Vi
 
 During security configuration on the **Configure security** page, you can select any security object, a role, duty, or permissions, and then select **View permissions** to view all permissions that are currently included and their licensing requirements. The header of the **View permissions** page shows the required license level.
 
-![View permissions page.](media/ViewPermissons.png) **TBU**
+![View permissions page.](media/View-permissons2.png)
 
 The **License** column can be filtered to focus on the resources for the unexpected license. Next step could be to remove these resources or modify the grants. For example, **Read** instead of full access and then reevaluate impact on licensing requirements. It is recommended to first change security configuration in a non-production environment and validate the impact before updating production. 
 
@@ -57,13 +57,13 @@ It is recommended to always use the **View permissions** page while configuring 
 
 You assign roles to users on the **Users** page (**System administration \> Users**). You can view license requirements for each user and role in the **Roles for selected user** FactBox.
 
-![Roles for selected user FactBox on the Users page.](media/UsersRoles.png) **TBU**
+![Roles for selected user FactBox on the Users page.](media/Roles-for-selected-user2.png)
 
 ## Users per role
 
 The **Role to user assignment** report or the ** Assign users to role** page can be used to view all users that are assigned a specific role.
 
-**Screeshot to be added**
+![Assing users to role.](media/Assign-roles-to-user.png)
 
 ## Enabled users
 
@@ -71,9 +71,9 @@ For internal security and to avoid licensing requirements for users that have le
 
 ## User license counts report
 
-The **User license counts** report is used to get a count of required licenses per license type (for example, **Team members**, **Activity**, and **Operations**). This  report is the only report needed for customers on the legacy unified operations licensing model. The report provides totals for Unified operations, Activity and Team members licenses. 
+The **User license counts** report is used to get a count of required licenses per license type (for example, **Team members**, **Activity**, and **Operations**). This report is the only report needed for customers on the legacy unified operations licensing model. The report provides totals for Unified operations, Activity and Team members licenses. 
 
-![User license counts report.](media/UserLicenseCountsReport.png) **TBU**
+![User license counts report.](media/User-count-report2.png)
 
 The report also provides details about each user and the licensing requirements for each assigned role. Users are listed under the highest license type. 
 The **User counts history** report shows total counts per date, but without any details.
@@ -81,27 +81,27 @@ The **User counts history** report shows total counts per date, but without any 
 > [!NOTE]
 > This report depends on the **Named user license count reports processing** batch job. To determine when the batch was last run, use the **Batch job history** page.
 
-For customers on the app specific licensing model, it will be required to first use the **User license count** report to determine required licenses for **Activity** and **Team members** only and the to use the **User license estimator** report.
+For customers on the app specific licensing model, it will be required to first use the **User license count** report to determine required licenses for **Activity** and **Team members** only and then to use the **User license estimator** report for full user licenses.
 
 ## User license estimator report
 
 The **User license estimator** report will tell how many combined **base** and **attach** licenses are required. For more details about base and attach licenses see the **Base licenses and cost savings opportunities for “attach” licenses** section in the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409). The report cannot distinguish between **base** vs. **attach** licenses for a user, since this it a choice when assigning licenses. A new comprehensive report is expected to be available during calendar year 2023, stay tuned!
 
-![User license estimator report.](media/LicenseGuide.png) **TBU**
+![User license estimator report.](media/User-license-estimator2.png)
 
-Users with one indicated application license, e.g., April above, are required to be assigned that specific app **base** license, e.g., **Finance** (Dynamics 365 Finance). 
+Users with one indicated application license, e.g., **April** above, are required to be assigned that specific app **base** license, e.g., **Finance** (Dynamics 365 Finance). 
 
-Users with more than one indicated application license, e.g., Brooke above, are required to be to be assigned licenses for all apps, one **base** and **attach** for the others. 
+Users with more than one indicated application license, e.g., **Brooke** above, are required to be to be assigned licenses for all apps, one **base** and **attach** for the others. 
 
-Users listed in the reports, but without any indicated application license, e.g., Charlie above, are required to be to be assigned any Fiance and Operations **base** license, i.e., Finance, Supply Chain Management, Commerce, Project Operations and Human resources. 
+Users listed in the reports, but without any indicated application license, e.g., **Charlie** above, are required to be to be assigned any Finance and Operations **base** license, i.e., Finance, Supply Chain Management, Commerce, Project Operations and Human resources. 
 
 A rough compliance check can be made by using the combined total at the bottom of the report is the required totals of **base** and **attach** licenses 
 
 ## Available and assigned licenses
 
-Avaialble and assigned license can be viewed in the **Microsoft 365 Admin center** under **Licenses**.
+Available and assigned licenses can be viewed in the **Microsoft 365 Admin center** under **Licenses**.
 
-**Screeshot to be added**
+![Microsoft 365 Admin center.](media/M365-admin-center.png)
 
 ## Additional resources
 
