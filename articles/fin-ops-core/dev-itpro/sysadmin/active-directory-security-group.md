@@ -18,28 +18,28 @@ ms.dyn365.ops.version: AX 7.0
 
 [!include [banner](../includes/banner.md)]
 
-**Active Directory security group** is a legacy feature that enables assigning roles and organizations to users based on their Active Directory security groups memberships. For more details on Active Directory security groups, see [Active Directory security groups]{/windows-server/identity/ad-ds/manage/understand-security-groups). The feature also enables Just-In-time (JIT) provisioning of users when a user login in to the Finance and Operations environment for the first time.
+**Active Directory security group** is a legacy feature that enables assigning roles and organizations to users based on their Active Directory security groups memberships. For more details on Active Directory security groups, see [Active Directory security groups]{/windows-server/identity/ad-ds/manage/understand-security-groups). The feature also enables Just-In-time (JIT) provisioning of users when a user login in to the finance and operations environment for the first time.
 
-Group based role assignments are applied in combination with manual and automatic rule based assignments for a user, and it is the union of assinged roles that determines the actual data access.
+Group based role assignments are applied with manual and automatic rule based assignments for a user, and it's the union of assigned roles that determines the actual data access.
 
 ## Known limitations when using Active Directory security group
 
-Before enabling the **Active Directory security groups** feature it is important to be aware of the known limitations. The limitations are mainly due to the fact the role assignment is resolved at log in, i.e. at runtime, and these roles assignments are not persisted by Finance and Operations apps. Several of the limitations impacts Internal control and auditing.
+Before enabling the **Active Directory security groups** feature, it's important to be aware of the known limitations. The limitations are because the role assignment is resolved at log in and these roles assignments aren't persisted by finance and operations apps. Several of the limitations impact internal control and auditing.
 
-- Segregation of duty reporting will not consider these role assignments
+- Segregation of duty reporting won't consider these role assignments
 - No database logging is possible for these role assignments
-- Security and licensing reports do not include these role assignments
-- Pages that show role assignments, e.g., the **Assign users to role** page and the **Roles for selected user** FactBox does not include these role assignments
-- External users are not supported and will not be able to use JIT or be assigned any roles based on group memberships
-- Workflows that are depending on assigned roles will not consider these role assignments
-- Disabling a group in system administration will not stop JIT or roles assignment
+- Security and licensing reports don't include these role assignments
+- Pages that show role assignments, the **Assign users to role** page and the **Roles for selected user** FactBox doesn't include these role assignments
+- External users aren't supported and won't be able to use JIT or be assigned any roles based on group memberships
+- Workflows that are depending on assigned roles won't consider these role assignments
+- Disabling a group in system administration won't stop JIT or roles assignment
 - **User Id** for JIT created users are created with a leading $ sign and numbers
 
-These known limitations are not expected to be addressed until the group experiences is unified with the more comprehensive feature in Dataverse, See [Manage group teams](/power-platform/admin/manage-group-teams.md).
+These known limitations aren't expected to be addressed until the group experiences is unified with the more comprehensive feature in Dataverse. For more information, see [Manage group teams](/power-platform/admin/manage-group-teams.md).
 
 ## Enable Active Directory security group
 
-The feature is enabled under **System administration > Setup > License configuration**. The **Active Directory security group** configuration key can be found in the *Administration** folder. Configuration keys can only be edited in maintenance mode, see [Maintenance mode](../sysadmin/maintenance-mode.md). 
+The feature is enabled under **System administration > Setup > License configuration**. The **Active Directory security group** configuration key can be found in the **Administration** folder. Configuration keys can only be edited in maintenance mode, see [Maintenance mode](../sysadmin/maintenance-mode.md). 
 
 ## Import and configure Active Directory security groups
 
