@@ -4,7 +4,7 @@
 title: Setting up Apple Pay with Adyen in Dynamics 365 Commerce
 description: This article describes how to set up Apple Pay with Adyen in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 11/08/2022
+ms.date: 11/10/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
@@ -15,6 +15,8 @@ ms.search.validFrom: 2022-06-20
 ---
 
 # Set up Apple Pay with Adyen in Dynamics 365 Commerce
+
+[!include [banner](../includes/banner.md)]
 
 This article describes how to set up Apple Pay with Adyen in Microsoft Dynamics 365 Commerce.
 
@@ -28,6 +30,7 @@ This article describes how to set up Apple Pay with Adyen in Microsoft Dynamics 
 Microsoft Dynamics 365 Commerce offers an out-of-box integration for Apple Pay when using the Adyen payment gateway service. Apple Pay is a digital wallet payment method using an Apple Pay merchant account in coordination with the Adyen payment service. When configured, the Apple Pay button is a selectable payment method as part of online store's order checkout. The Apple Pay button will only be presented as a payment option for supported Apple Pay devices. When users select **Apple Pay** from a supported browser or device, they are directed to complete their payment directly with the Apple Pay service and then are returned to the online storefront for order completion. The **Dynamics 365 Payment Connector for Apple Pay** connector reference is used in addition to the **Dynamics 365 Payment Connector for Adyen** to enable Apple Pay and Credit Card payments on a site. Apple Pay can also be configured to use in store with Adyen payment terminals which will utilized the Dynamics 365 Payment Connector for Adyen (which will handle the Apple Payment device tap through the terminal) with the Commerce point-of-sale.
 
 ## Prerequisites
+
 Using Apple Pay with Adyen in Commerce requires a Apple merchant account. Please review the [Adyen documentation on Apple Pay]([Apple Pay Drop-in integration | Adyen Docs](https://docs.adyen.com/payment-methods/apple-pay/web-drop-in#set-up-apple-pay)) regarding setting up Apple Pay in your test Customer Area. When ready to go live in production, refer to the [Going live](https://docs.adyen.com/payment-methods/apple-pay/web-drop-in#going-live) section in the above Adyen article.
 
 The Apple Pay payment method must also be integrated with your Adyen account. Adyen can assist in both setting up the payment method and ensuring the domains you will use the certificate are assigned for use with the certificate.
