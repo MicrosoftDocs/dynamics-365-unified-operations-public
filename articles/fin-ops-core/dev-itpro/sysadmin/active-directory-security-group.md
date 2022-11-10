@@ -43,7 +43,7 @@ The feature is enabled under **System administration > Setup > License configura
 
 ## Import and configure Active Directory security groups
 
-Once the feature is enabled, a new **Groups** page is available **System administration > Users > Groups**. To start importing Azure Directory security groups, select **Import groups** and the applicable groups to be imported. After the import is completed, you can maintain role and organization assignments in the similar way as in the **Users** page.
+Once the feature is enabled, a new **Groups** page is available under **System administration > Users > Groups**. To start importing Azure Directory security groups, select **Import groups** and the applicable groups to be imported. After the import is completed, you can maintain role and organization assignments in the similar way as in the **Users** page.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
