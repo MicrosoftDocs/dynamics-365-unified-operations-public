@@ -85,7 +85,9 @@ For customers on the app specific licensing model, it will be required to first 
 
 ## User license estimator report
 
-The **User license estimator** report will tell how many combined **base** and **attach** licenses are required. For more details about base and attach licenses see the **Base licenses and cost savings opportunities for “attach” licenses** section in the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409). The report cannot distinguish between **base** vs. **attach** licenses for a user, since this it a choice when assigning licenses. A new comprehensive report is expected to be available during calendar year 2023, stay tuned!
+The **User license estimator** report will tell how many combined **base** and **attach** licenses are required. For more details about base and attach licenses, see the **Base licenses and cost savings opportunities for “attach” licenses** section in the [Microsoft Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/?LinkId=866544&amp;clcid=0x409). 
+
+The **User license estimator** report cannot distinguish between **base** vs. **attach** licenses for a user, since this it a choice when assigning licenses. A new comprehensive report is expected to be available during calendar year 2023, stay tuned!
 
 ![User license estimator report.](media/User-license-estimator2.png)
 
@@ -95,7 +97,7 @@ Users with more than one indicated application license, e.g., **Brooke** above, 
 
 Users listed in the reports, but without any indicated application license, e.g., **Charlie** above, are required to be to be assigned any Finance and Operations **base** license, i.e., Finance, Supply Chain Management, Commerce, Project Operations and Human resources. 
 
-A rough compliance check can be made by using the combined total at the bottom of the report is the required totals of **base** and **attach** licenses 
+A rough compliance check can be made by using the combined total for required app specific licneses at the bottom of the report, is equal or less than the total of available **base** and **attach** licenses for Finance and Operations apps in the **Microsoft 365 Admin center**. 
 
 ## Available and assigned licenses
 
