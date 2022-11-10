@@ -20,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0
 
 **Active Directory security group** is a legacy feature that enables assigning roles and organizations to users based on their Active Directory security groups memberships. For more details on Active directory security groups, see [Active directory security groups](/windows-server/identity/ad-ds/manage/understand-security-groups). The feature also enables Just-In-time (JIT) provisioning of users when a user logins into the finance and operations environment for the first time.
 
-Group based role assignments are applied with manual and automatic rule based assignments for a user, and it's the union of assigned roles that determines the actual data access.
+Group based role assignments are applied with manual and automatic rule based assignments for a user. The union of assigned roles that determines the actual data access.
 
 ## Known limitations when using Active Directory security group
 
@@ -43,7 +43,7 @@ The feature is enabled under **System administration > Setup > License configura
 
 ## Import and configure Active Directory security groups
 
-Once the feature is enabled a new **Groups** page will be available under **System administration > Users > Groups**. To start importing Azure Directory security groups, select the **Import groups** action menu and select the applicable groups to be imported. After the import is completed, you can maintain role and organization assignments in the similar way as in the **Users** page.
+Once the feature is enabled, a new **Groups** page is available **System administration > Users > Groups**. To start importing Azure Directory security groups, select **Import groups** and the applicable groups to be imported. After the import is completed, you can maintain role and organization assignments in the similar way as in the **Users** page.
 
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
