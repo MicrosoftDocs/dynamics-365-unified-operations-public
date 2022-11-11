@@ -29,6 +29,8 @@ ms.dyn365.ops.version: Human Resources
 
 # Restrict access to workers by legal entity
 
+This article explains how to set up worker access by legal entity.
+
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
@@ -46,7 +48,7 @@ For example, a user who has access to the **Worker** page and has access only to
 
 Depending on the application that you're using, the visual experience will vary slightly.
 
-## Dynamics 365 Human Resources stand-alone 
+### Dynamics 365 Human Resources stand-alone 
 
 When the feature is enabled to restrict access to worker information, the restricted user will see a blank value in some lists that contain the worker name. 
 
@@ -55,7 +57,7 @@ For example, using the demo data above:
  - On the **Active positions** list, the **Worker** column will be blank for Aaron’s position because the user doesn't have access to employees in USSI. 
  - If the user drills down on the worker name, a blank **Worker** page will be displayed.
 
-## Dynamics 365 Human Resources on Finance infrastructure 
+### Dynamics 365 Human Resources on Finance infrastructure 
 
 When the feature is enabled to restrict access to worker information, the restricted user will see the worker name in some lists. 
 For example using the demo data above: 
