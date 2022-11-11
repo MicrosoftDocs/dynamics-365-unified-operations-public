@@ -85,12 +85,12 @@ For detailed information about how on-hand calculations for WMS items work, see 
 
 The **Preload the Inventory Visibility Summary** page provides a view for the *On-hand Index Query Preload Results* entity. Unlike the *Inventory summary* entity, the *On-hand Index Query Preload Results* entity provides an on-hand inventory list for products together with selected dimensions. Inventory Visibility syncs the preloaded summary data every 15 minutes.
 
-If you use inventory visibility with WMS items and would like to view the on-hand list for WMS items, we recommend that you enable the *Preload the Inventory Visibility Summary* feature (see also [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-streamlined-onhand-query)). A corresponding data entity in Dataverse stores your query preload result, which is updated every 15 minutes. The data entity's name is `Onhand Index Query Preload Result`.
+If you use Inventory Visibility with WMS items and want to view the on-hand list for WMS items, we recommend that you enable the *Preload the Inventory Visibility Summary* feature (see also [Preload a streamlined on-hand query](inventory-visibility-power-platform.md#preload-streamlined-onhand-query)). A corresponding data entity in Dataverse stores your query preload result, which is updated every 15 minutes. The data entity's name is `Onhand Index Query Preload Result`.
 
 > [!IMPORTANT]
-> The Dataverse entity is read-only. You can view and export but **do not modify** the data in the Inventory Visibility entities.
+> The Dataverse entity is read-only. You can view and export the data in the Inventory Visibility entities, but **do not modify it**.
 
-Changes to WMS item quantities that are stored in the Supply Chain Management data source (`fnO`) are prohibited. This matches the behavior of other features of Inventory Visibility. This restriction is enforced to help prevent conflicts.
+Changes to WMS item quantities that are stored in the Supply Chain Management data source (`fno`) are prohibited. This behavior matches the behavior of other features of Inventory Visibility. This restriction is enforced to help prevent conflicts.
 
 ## WMS item compatibility for other functions in Inventory Visibility
 
