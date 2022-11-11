@@ -2,7 +2,7 @@
 title: Retail discounts
 description: This article provides an overview of the discount functionality in Dynamics 365 Commerce. It explains the properties found on the various discount forms, and best practices for discount management.
 author: ShalabhjainMSFT
-ms.date: 10/17/2022
+ms.date: 11/11/2022
 ms.topic: overview
 audience: IT Pro
 ms.reviewer: v-chgriffin
@@ -56,11 +56,11 @@ This field is a short free text field that is used to describe the discount. The
 
 ### Discount type
 
-There are five types of discounts in Commerce: **Discount**, **Discount with quantity limit**, **Quantity**, **Mix and match**, and **Threshold**. The discount type is set when you first create a discount and can't be changed later. The only exceptions are **Discount**, **Discount with quantity limit** where the two discount types can switch to the other by changing the quantity limit. The discount type determines whether there's a quantity or amount criterion that must be met to qualify for the discount.
+There are five types of discounts in Commerce: **Discount**, **Discount with quantity limit**, **Quantity**, **Mix and match**, and **Threshold**. The discount type is set when you first create a discount and can't be changed later, except for **Discount** and **Discount with quantity limit** where the two discount types can switch to the other by changing the quantity limit. The discount type determines whether there's a quantity or amount criterion that must be met to qualify for the discount.
 
 ### Status
 
-The status of a discount can be either **Enabled** or **Disabled**. When you first create a discount, the status is **Disabled**. Discounts can only be edited when they're disabled. When discount data is pushed to a channel, disabled discounts aren't pushed if **Clean up irrelevant master data after sync** in **Commerce scheduler parameters** is enabled. If a discount was previously enabled and pushed to the channel, then this new push will also remove the discount from the channel if the aforementioned parameter is enabled. When you change the status to **Enabled**, various validation checks are performed on the discount, depending on the type of discount. The list of validation checks has increased in recent updates of the product to prevent incomplete or poorly defined discounts from being pushed to commerce channels. Here's a partial list of the validations that are performed when you enable a discount:
+The status of a discount can be either **Enabled** or **Disabled**. When you first create a discount, the status is **Disabled**. Discounts can only be edited when they're disabled. When discount data is pushed to a channel, disabled discounts aren't pushed if the **Clean up irrelevant master data after sync** parameter in **Commerce scheduler parameters** is enabled. If a discount was previously enabled and pushed to the channel, then this new push will also remove the discount from the channel if the **Clean up irrelevant master data after sync** parameter is enabled. When you change the status to **Enabled**, various validation checks are performed on the discount, depending on the type of discount. The list of validation checks has increased in recent updates of the product to prevent incomplete or poorly defined discounts from being pushed to commerce channels. Here's a partial list of the validations that are performed when you enable a discount:
 
 - A discount must have at least one discount line.
 - The percentage value for a percentage discount must be more than 0 (zero) and less than or equal to 100.
@@ -79,19 +79,17 @@ The currency of a discount defines the currency of all amount and price fields o
 
 This determines which discounts compete on a transaction, and which discounts are compounded together. The three values for this option are **Exclusive**, **Best price**, and **Compounded**.
 
-**Exclusive** discounts are always evaluated and applied before **Best price** and **Compounded** discounts and if all other settings are the same, and will prevent all other discounts to be applied to the same lines where they are applied. And two or more **Exclusive** discounts will compete for the best price.
+**Exclusive** discounts are always evaluated and applied before **Best price** and **Compounded** discounts if all other settings are the same, and will prevent all other discounts to be applied to the same lines where they are applied. Two or more **Exclusive** discounts will compete for the best price.
 
-# When discount concurrency control is set to "Best price and compound within priority, never compound across priorities"
-All **Compounded** discounts within the same pricing priority are combined, and the combined result competes with any **Best price** discounts in the same pricing priority. After the discount is applied to a transaction line, all discounts at lower pricing priorities are ignored.
+When the discount concurrency control is set to **Best price and compound within priority, never compound across priorities**, all **Compounded** discounts within the same pricing priority are combined, and the combined result competes with any **Best price** discounts in the same pricing priority. After the discount is applied to a transaction line, all discounts at lower pricing priorities are ignored.
 
-# When discount concurrency control is set to "Best price only within priority, always compound across priority"
-All **Best price** and **Compounded** discounts are treated as **Best price** within a single pricing priority and they compete to determine the best discount for that pricing priority. Only a single discount can be applied to a product per pricing priority, and if that single discount is a **Best price** or **Compounded** discount, then it will compound with best discount of **Best price** or **Compounded** discounts at lower pricing priorities.
+When the discount concurrency control is set to **Best price only within priority, always compound across priority**, all **Best price** and **Compounded** discounts are treated as a **Best price** discount within a single pricing priority and they compete to determine the best discount for that pricing priority. Only a single discount can be applied to a product per pricing priority, and if that single discount is a **Best price** or **Compounded** discount, then it will compound with the best discount of **Best price** or **Compounded** discounts at lower pricing priorities.
 
 When multiple discounts are applied to a transaction line, they're applied in the following order:
 
-1. Discount price discounts
-2. Amount-off discounts
-3. Percentage-off discounts
+- Discount price discounts
+- Amount-off discounts
+- Percentage-off discounts
 
 **Compound** discounts compete with **Best price** discounts when both types apply to a transaction line. Therefore, the **Compound** setting is used to determine which discounts are combined. Depending on the discount concurrency control mode used, two or more **Compound** discounts can be combined and compete with the **Best price** discounts that apply to the same products. The discount or discounts that have the largest total discount amount are applied.
 
