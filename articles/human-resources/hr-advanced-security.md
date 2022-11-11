@@ -32,15 +32,19 @@ ms.dyn365.ops.version: Human Resources
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
-Employees are employed in legal entities. For example, using demo data- Aaron Con is employed in USSI, Ahmed Barnett is employed in USMF, and Alicia Thornber is
-employed in GLSI and USMF. Depending on a user’s role in the company, they may need access to view all employees across all legal entities or they may need to be
-restricted to viewing only employees in the legal entity that they have access to. Use the **Restrict access to worker information** setting on the **Human Resources shared parameters** page to control which employees the user can see.
+Employees are employed in legal entities. For example, using the demo data:
+- Aaron Con is employed in USSI 
+- Ahmed Barnett is employed in USMF 
+- Alicia Thornber is employed in GLSI and USMF 
 
-For example, a user who has access to the **Worker** page and only has access to USMF:
+To control which employees the user can see, select the **Restrict access to worker information** setting on the **Human Resources shared parameters** page.
+Depending on a user’s role in the company, they may need access to view all employees across all legal entities. Or they may need to be restricted to viewing only employees in the legal entity that they have access to. 
+
+For example, a user who has access to the **Worker** page and has access only to USMF:
  - If the feature isn't enabled, the user will be able to see information for Aaron, Ahmed, and Alicia.
  - When this feature is enabled, the user will see information for only Alicia and Ahmed.
 
-Depending on the application that you are using, the visual experience will vary slightly.
+Depending on the application that you're using, the visual experience will vary slightly.
 
 ## Dynamics 365 Human Resources stand-alone 
 
@@ -48,7 +52,7 @@ When the feature is enabled to restrict access to worker information, the restri
 
 For example, using the demo data above: 
  - The user only has access to USMF. 
- - On the **Active positions** list, the **Worker** column will be blank for Aaron’s position because the user does not have access to employees in USSI. 
+ - On the **Active positions** list, the **Worker** column will be blank for Aaron’s position because the user doesn't have access to employees in USSI. 
  - If the user drills down on the worker name, a blank **Worker** page will be displayed.
 
 ## Dynamics 365 Human Resources on Finance infrastructure 
@@ -56,15 +60,15 @@ For example, using the demo data above:
 When the feature is enabled to restrict access to worker information, the restricted user will see the worker name in some lists. 
 For example using the demo data above: 
  - The user only has access to USMF. 
- - On the **Active positions** list, the **Worker** column will display Aaron’s name. When hovering on his name, only his name and title will display. 
+ - On the **Active positions** list, the **Worker** column will display Aaron’s name. When hovering on the name, only the name and title will display. 
  - If the user drills down on the worker name, a blank **Worker** page will be displayed.
 
 >[!Note] 
->If you are using Dynamics 365 Human resources on Finance infrastructure, and would like restricted users to see blank values for worker names, you can add 
-security privilege Restrict access to workers to their user roles in **Security configuration** page.
+>If you are using Dynamics 365 Human resources on Finance infrastructure and would like restricted users to see blank values for worker names. You can add 
+security privilege **Restrict access to workers** to the user roles in **Security configuration** page.
 
 
-After turning the feature on, there are additional steps to set appropriate permissions for each user whose view must be restricted.
+After turning on the feature, there are extra steps to set permissions for each user whose view must be restricted.
 1.	On the **Users** page, select a user.
 2.	Select a role for the user. The **Assign organizations** option becomes available.
 3.	Select **Assign organizations**.
