@@ -19,9 +19,9 @@ ms.dyn365.ops.version: 10.0.27
 
 ## Business background and purpose
 
-Organizations often need to preallocate their on-hand stock to their most important sales channels, customer groups, regions, and promotional events to ensure that the preallocated stocks are protected against any other usage and can only be consumed via sales transactions that are relevant to the allocation. Inventory allocation in Inventory Visibility is a component of the sales operational planning process, and is done before any actual sales activities occur or a sales order is created.
+Organizations often have to preallocate their on-hand stock to their most important sales channels, customer groups, regions, and promotional events to ensure that the preallocated stock is protected against any other use and can be consumed only via sales transactions that are relevant to the allocation. Inventory allocation in Inventory Visibility is a component of the sales operational planning process, and is done before any actual sales activities occur or a sales order is created.
 
-For example, a company called Contoso produces a popular bike. Unfortunately, a recent supply chain disruption has affected all in-transit stocks of that bike, so Contoso only has limited on-hand stock and needs to make best use of that stock. Contoso operates both online and in-store sales. In each sales channel, the company has a few important corporate partners (marketplaces and large retailers) that demand that a specific portion of the bike's available inventory be saved for them. Therefore, the bicycle company must be able to balance stock distribution across channels and also manage the expectations of its VIP partners. The best way to achieve both goals is to use inventory allocation, so that each channel and retailer can receive specific allocated quantities that can be sold to consumers later.
+For example, a company that is named Contoso produces a popular bike. Unfortunately, because a recent supply chain disruption has affected all in-transit stock of that bike, Contoso has only limited on-hand stock and must make best use of it. Contoso operates both online and in-store sales. In each sales channel, the company has a few important corporate partners (marketplaces and large retailers) that demand that a specific portion of the bike's available inventory be saved for them. Therefore, the bicycle company must be able to balance stock distribution across channels and also manage the expectations of its VIP partners. The best way to achieve both goals is to use inventory allocation, so that each channel and retailer can receive specific allocated quantities that can be sold to consumers later.
 
 Inventory allocation has two basic business purposes:
 
@@ -36,9 +36,9 @@ Although the allocation feature in Inventory Visibility doesn't set aside physic
 
 ### Difference between inventory allocation and soft reservation
 
-[Soft reservations](inventory-visibility-reservations.md) are usually linked to actual sales transactions (sales order lines). Both allocation and soft reservation can be used independently, but if you want to use them together, soft reservation should happen after allocation is done. We recommend that you do inventory allocation first and then soft reserve against the allocated quantities to achieve near real-time consumption against allocation. For more information, see [Consume as a soft reservation](#consume-to-soft-reserved).
+[Soft reservations](inventory-visibility-reservations.md) are usually linked to actual sales transactions (sales order lines). Both allocation and soft reservation can be used independently, but if you want to use them together, soft reservation should be done after allocation. We recommend that you do inventory allocation first and then soft reserve against the allocated quantities to achieve near-real-time consumption against allocation. For more information, see [Consume as a soft reservation](#consume-to-soft-reserved).
 
-The inventory allocation feature lets sales planners or key account managers to manage and preallocate important stock across allocation groups (such as channels, regions, and customer groups). It also supports real-time tracking, adjustment, and analytics of consumption against allocated quantities, ensuring that replenishment or reallocation can be done on time. This ability to have real-time visibility into allocation, consumption, and allocation balance is especially important at fast-sale or promotion events.
+The inventory allocation feature lets sales planners or key account managers manage and preallocate important stock across allocation groups (such as channels, regions, and customer groups). It also supports real-time tracking, adjustment, and analytics of consumption against allocated quantities, to ensure that replenishment or reallocation can be done on time. This ability to have real-time visibility into allocation, consumption, and allocation balance is especially important at fast-sale or promotion events.
 
 ## Terminology
 
@@ -48,17 +48,16 @@ The following terms and concepts are useful in discussions of inventory allocati
 - **Allocation group value** – The value of each allocation group. For example, *web* or *store* might be the value of the sales channel allocation group, whereas *VIP* or *normal* might be the value of the customer allocation group.
 - **Allocation hierarchy** – A means to combine allocation groups in a hierarchical manner. For example, you can define *channel* as hierarchy level 1, *region* as level 2, and *customer group* as level 3. During inventory allocation, you must follow the allocation hierarchy sequence when you specify the value of the allocation group. For example, you might allocate 200 red bikes to the *Web* channel, the *London* region, and the *VIP* customer group.
 - **Available to allocate** – The *virtual common pool* that indicates the quantity that is available for further allocation. It's a calculated measure that you can freely define by using your own formula. If you're also using the soft reservation feature, we recommend that you use the same formula to calculate available-to-allocate and available-to-reserve.
-- **Allocated** – A physical measure that shows the allocated quota that can be consumed by the allocation groups. It's deducted at the same time the consumed quantity is added.
+- **Allocated** – A physical measure that shows the allocated quota that can be consumed by the allocation groups. It's deducted at the same time that the consumed quantity is added.
 - **Consumed** – A physical measure that indicates that quantities that have been consumed against the original allocated quantity. As numbers are added to this physical measure, the Allocated physical measure is automatically reduced.
 
 The following illustration shows the business workflow for inventory allocation.
 
 ![Inventory Visibility allocation business workflow.](media/inventory-visibility-allocation-flow.png "Inventory Visibility allocation business workflow.")
 
-The following illustration shows the allocation hierarchy and allocation groups. The *virtual common pool* shown here is the available-to-allocate quantity.
+The following illustration shows the allocation hierarchy and allocation groups. The *virtual common pool* that is shown here is the available-to-allocate quantity.
 
 [<img src="media/inventory-visibility-allocation-hierarchy.png" alt="Inventory Visibility allocation hierarchy." title="Inventory Visibility allocation hierarchy" width="720" />](media/inventory-visibility-allocation-hierarchy.png)
-
 
 ## Set up inventory allocation
 
@@ -67,15 +66,16 @@ The inventory allocation feature consists of the following components:
 - The predefined, allocation-related data source, physical measures, and calculated measures.
 - Customizable allocation groups that have a maximum of eight levels.
 - A set of allocation application programming interfaces (APIs):
-  - allocate
-  - reallocate
-  - unallocate
-  - consume
-  - query
+
+    - allocate
+    - reallocate
+    - unallocate
+    - consume
+    - query
 
 The process of configuring the allocation feature has three steps:
 
-- Enable the feature in the Inventory Visibility power app by going to **Configuration \> Feature Management & Settings \> Allocation**.
+- Enable the feature in the Inventory Visibility app by going to **Configuration \> Feature Management & Settings \> Allocation**.
 - Set up the [data source](inventory-visibility-configuration.md#data-source-configuration) and its [measures](inventory-visibility-configuration.md#data-source-configuration-physical-measures).
 - Set up the allocation group name and hierarchy.
 
@@ -83,23 +83,24 @@ The process of configuring the allocation feature has three steps:
 
 When you enable the allocation feature and call the configuration update API, Inventory Visibility creates one predefined data source and several initial measures.
 
-The data source is named `@iv`. It includes a set of default physical measures. You can view them from the Inventory Visibility power app by going to **Configuration \> Data Source**, you can see a **Datasource - @IV**
-Expand the `@iv` data source to see the list of initial physical measures:
+The data source is named `@iv`. It includes a set of default physical measures. You can view them from the Inventory Visibility app by going to **Configuration \> Data Source**. You should see **Datasource - @IV**. Expand the `@iv` data source to view the list of initial physical measures:
 
 - `@iv`
-  - `@allocated`
-  - `@cumulative_allocated`
-  - `@consumed`
-  - `@cumulative_consumed`
 
-Go to the **Calculated Measures** tab to see the initial calculated measure, which is named `@iv.@available_to_allocate`:
+    - `@allocated`
+    - `@cumulative_allocated`
+    - `@consumed`
+    - `@cumulative_consumed`
+
+Select the **Calculated Measures** tab to view the initial calculated measure, which is named `@iv.@available_to_allocate`:
 
 - `@iv`
-  - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
+
+    - `@iv.@available_to_allocate` = `??` – `??` – `@iv.@allocated`
 
 ### Add other physical measures to the available-to-allocate calculated measure
 
-To use allocation, you must correctly set up the formula for the available-to-allocate calculated measure (`@iv.@available_to_allocate`). For example, you have `fno` data source and the `onordered` measure, the `pos` data source and the `inbound` measure, and you want to do allocation on the on hand for the sum of `fno.onordered` and `pos.inbound`. In this case, `@iv.@available_to_allocate` should contain `pos.inbound` and `fno.onordered` in the formula. Here's an example:
+To use allocation, you must correctly set up the formula for the available-to-allocate calculated measure (`@iv.@available_to_allocate`). For example, you have the `fno` data source and the `onordered` measure, and the `pos` data source and the `inbound` measure, and you want to do allocation on the on-hand stock for the sum of `fno.onordered` and `pos.inbound`. In this case, `@iv.@available_to_allocate` should contain `pos.inbound` and `fno.onordered` in the formula. Here's an example:
 
 `@iv.@available_to_allocate` = `fno.onordered` + `pos.inbound` – `@iv.@allocated`
 
@@ -110,32 +111,35 @@ To use allocation, you must correctly set up the formula for the available-to-al
 
 ### Manage allocation groups
 
-A maximum of eight allocation group names can be set. The groups have a hierarchy. Follow these steps to view and update allocation groups:
+A maximum of eight allocation group names can be set. The groups have a hierarchy. Follow these steps to view and update allocation groups.
 
-1. Go to **Inventory Visibility Power App** \> **Configuration** \> **Allocation** \> **Edit Configuration**. By default there's an allocation hierarchy with four layers: `Channel` (top layer), `customerGroup` (second layer),`Region` (third layer), and `OrderType` (fourth layer).
-1. You can remove the existing allocation group by selecting the cross next to it (you must be cautious when deleting or changing the allocation hierarchy mapping; see [Tips for using allocation](inventory-visibility-allocation.md#allocation-using-tips) for guidance). You can also add new allocation groups on the hierarchy by typing the new group name directly into the field.
-1. Once you're done with allocation group and hierarchy settings, save and select **Update Configuration** on the upper right.
-1. The values of the configured allocation groups will be updated when you create an allocation using either the user interface or API POST (​/api​/environment​/{environmentId}​/allocation​/allocate). (Details about both approaches are provided later in this article.)
+1. Go to **Inventory Visibility Power App \> Configuration \> Allocation \> Edit Configuration**. By default, there's an allocation hierarchy that has four layers: `Channel` (top layer), `customerGroup` (second layer),`Region` (third layer), and `OrderType` (fourth layer).
+1. You can remove the existing allocation group by selecting the cross next to it. You can also add new allocation groups to the hierarchy by entering the name of each new group directly in the field.
+
+    > [!IMPORTANT]
+    > Be careful when you delete or change the allocation hierarchy mapping. For guidance, see [Tips for using allocation](inventory-visibility-allocation.md#allocation-using-tips).
+
+1. When you've finished configuring the allocation group and hierarchy settings, save your changes, and then select **Update Configuration** in the upper right. The values of the configured allocation groups will be updated when you create an allocation by using either the user interface or API POST (/api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/allocate). Details about both approaches are provided later in this article.
 
 If you use four group names and set them to \[`channel`, `customerGroup`, `region`, `orderType`\], these names will be valid for allocation-related requests when you call the configuration update API.
 
 ### Tips for using allocation
 
 - For every product, the allocation function should use in the same *dimension level* according to the product index hierarchy you set in the [product index hierarchy configuration](inventory-visibility-configuration.md#index-configuration). For example, suppose your index hierarchy is \[`Site`, `Location`, `Color`, `Size`\]. If you allocate some quantity for one product in the dimension level \[`Site`, `Location`, `Color`\], the next time you want to allocate this product, you should also allocate at the same level, \[`Site`, `Location`, `Color`\]. If you use the level \[`Site`, `Location`, `Color`, `Size`\] or \[`Site`, `Location`\], the data will be inconsistent.
-- **Modify allocation groups and hierarchy**: If allocation data already exists in the system, deleting existing allocation groups or shifting the allocation group hierarchy will corrupt the existing mapping between the allocation groups. Therefore, be sure to manually clean up all the old data before you update your new configuration. However, adding new allocation groups to the lowest hierarchy doesn't impact existing mappings, so you won't need to clean the data.
-- Allocation will only succeed when the product has positive `available_to_allocate` quantity.
+- **Modifying allocation groups and the hierarchy:** If allocation data already exists in the system, deletion of existing allocation groups or a shift in the allocation group hierarchy will corrupt the existing mapping between the allocation groups. Therefore, be sure to manually clean up all the old data before you update your new configuration. However, because the addition of new allocation groups to the lowest hierarchy doesn't affect existing mappings, you won't need to clean the data.
+- Allocation will succeed only if the product has a positive `available_to_allocate` quantity.
 - To allocate products from a high *allocation level* group to a subgroup, use the `Reallocate` API. For example, you have an allocation group hierarchy \[`channel`, `customerGroup`, `region`, `orderType`\], and you want to allocate some product from allocation group \[Online, VIP\] to the sub allocation group \[Online, VIP, EU\], use the `Reallocate` API to move the quantity. If you use the `Allocate` API, it will allocate the quantity from the virtual common pool.
-- To view overall product availability (the common pool), use the [query on-hand](inventory-visibility-api.md#query-on-hand) API to request the inventory amount that is *available to allocate*, and then you can make allocation decisions based on this information.
+- To view overall product availability (the common pool), use the [query on-hand](inventory-visibility-api.md#query-on-hand) API to request the inventory amount that is *available to allocate*. You can then make allocation decisions based on this information.
 
 ## <a name="using-allocation-api"></a>Use the allocation API
 
 Currently, five allocation APIs are opened:
 
-- POST ​/api​/environment​/{environmentId}​/allocation​/allocate (to create initial allocation)
-- POST ​/api​/environment​/{environmentId}​/allocation​/unallocate (to revert/remove the allocated quantities)
-- POST ​/api​/environment​/{environmentId}​/allocation​/reallocate (to move allocated quantity from an existing allocation to other allocation groups)
-- POST ​/api​/environment​/{environmentId}​/allocation​/consume (to use (deduct) the allocated quantity)
-- POST ​/api​/environment​/{environmentId}​/allocation​/query (to check existing allocation records against the allocation groups and hierarchy)
+- **POST /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/allocate** – This API is used to create the initial allocation.
+- **POST /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/unallocate** – This API is used to revert or remove the allocated quantities.
+- **POST /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/reallocate** – This API is used to move the allocated quantity from an existing allocation to other allocation groups.
+- **POST /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/consume** – This API is used to deduct (use) the allocated quantity.
+- **POST /api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/query** – This API is used to check existing allocation records against the allocation groups and hierarchy.
 
 ### Allocate
 
@@ -306,7 +310,7 @@ Now, three bikes are sold, and they're taken from the allocation pool. To regist
 
 After this call, the allocated quantity for the product will be reduced by 3. In addition, Inventory Visibility will generate an on-hand change event where `pos.inbound` = *-3*. Alternatively, you can keep the `pos.inbound` value as it is and just consume the allocated quantity. However, in this case, you must either create another physical measure to keep the consumed quantities or use the predefined measure `@iv.@consumed`.
 
-In this request, notice that the physical measure you use in the consume request body should use the opposite modifier type(Addition or Subtraction), compared with the modifier type used in the calculated measure. So in this consume body,  `iv.inbound`  has the value `Subtraction`, not `Addition`.
+In this request, notice that the physical measure you use in the consume request body should use the opposite modifier type(Addition or Subtraction), compared with the modifier type used in the calculated measure. So in this consume body, `iv.inbound` has the value `Subtraction`, not `Addition`.
 
 The `fno` data source can't be used in the consume body as we always claimed that Inventory Visibility can't change any data for the `fno` data source. The data flow is one-way, which means that all quantity changes for the `fno` data source must come from your Supply Chain Management environment.
 
@@ -314,7 +318,7 @@ The `fno` data source can't be used in the consume body as we always claimed tha
 
 The `Consume` API can also consume the allocated quantity as a soft reservation. In this case, the `Consume` operation will reduce the allocated quantity and then do a soft reservation for that quantity. To use this approach, you must also be using the [soft reservation](inventory-visibility-reservations.md) feature of Inventory Visibility.
 
-For example, you have set a soft reservation physical measure as `iv.softreserved`. The following formula is used for the available-to-reserve calculated measure:
+For example, you've set a soft reservation physical measure as `iv.softreserved`. The following formula is used for the available-to-reserve calculated measure:
 
 `iv.available_to_reserve` = `fno.onordered` + `pos.inbound` – `iv.softreserved`
 
@@ -413,24 +417,24 @@ Use \[site=1, location=11, color=red\] and groups \[channel=Online, customerGrou
 
 ## Use the allocation user interface
 
-You can  manually manage allocations using the user interface by opening the Inventory Visibility power app and going to**Operational Visibility \> Allocation**. From here, you can do any of the actions described in the following subsections.
+You can manually manage allocations through the user interface by opening the Inventory Visibility app and going to **Operational Visibility \> Allocation**. From there, you can perform any of the actions that are described in the following subsections.
 
 ### Create an allocation
 
-Use these steps to create an allocation from the **Allocation** page of the Inventory Visibility power app.
+Follow these steps to create an allocation from the **Allocation** page of the Inventory Visibility app.
 
-1. Select the **Allocate** button.
-1. Fill out the base fields, dimensions, and target allocation groups value. (When you select the collect data source in the **Dimensions** section, first use the drop-down list to specify the dimensions (for example `siteId`) and then fields for entering dimension values will appear.)
+1. Select **Allocate**.
+1. Set the base fields, dimensions, and target allocation groups values. (When you select the collect data source in the **Dimensions** section, first use the drop-down list to specify the dimensions (for example, `siteId`). Then enter dimension values in the fields that appear.)
 1. Select **submit**.
 
 ### Consume an allocation
 
-Select **Consume** to consume an allocation. To consume within the correct allocation group and hierarchy, be sure to enter the exact same sets of organization and dimension details that you entered when creating the allocation.
+Select **Consume** to consume an allocation. To ensure that you consume within the correct allocation group and hierarchy, enter the same sets of organization and dimension details that you entered when you created the allocation.
 
 ### Reallocate an allocation
 
-Select **Reallocate** to move existing allocated quantity from one set of allocation groups to another set of allocation groups.
+Select **Reallocate** to move existing allocated quantity from one set of allocation groups to another.
 
 ### Query existing allocations
 
-Select **Query** and then enter product, organization, dimension, and allocation group values to obtain query results of existing allocations.
+Select **Query**, and then enter product, organization, dimension, and allocation group values to obtain query results of existing allocations.
