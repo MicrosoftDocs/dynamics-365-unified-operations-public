@@ -1,15 +1,15 @@
 ---
 title: Store Commerce app
-description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows. It applies to Dynamics 365 Commerce versions 10.0.25 and later.
+description: This article explains how to set up and configure the Microsoft Dynamics 365 Commerce Store Commerce app for Windows.
 author: josaw1
-ms.date: 10/07/2022
+ms.date: 11/11/2022
 ms.topic: article
-audience: Developer
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2022-03-01
-ms.dyn365.ops.version: AX 10.0.25
+
 ---
 
 # Store Commerce app
