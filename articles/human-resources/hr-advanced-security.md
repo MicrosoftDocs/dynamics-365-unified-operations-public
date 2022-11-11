@@ -34,7 +34,7 @@ This article explains how to set up worker access by legal entity.
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
 
-Employees are employed in legal entities. For example, using the demo data:
+Employees are employed in legal entities. For example:
 - Aaron Con is employed in USSI 
 - Ahmed Barnett is employed in USMF 
 - Alicia Thornber is employed in GLSI and USMF 
@@ -52,7 +52,7 @@ Depending on the application that you're using, the visual experience will vary 
 
 When the feature is enabled to restrict access to worker information, the restricted user will see a blank value in some lists that contain the worker name. 
 
-For example, using the demo data above: 
+For example: 
  - The user only has access to USMF. 
  - On the **Active positions** list, the **Worker** column will be blank for Aaron’s position because the user doesn't have access to employees in USSI. 
  - If the user drills down on the worker name, a blank **Worker** page will be displayed.
@@ -60,7 +60,7 @@ For example, using the demo data above:
 ### Dynamics 365 Human Resources on Finance infrastructure 
 
 When the feature is enabled to restrict access to worker information, the restricted user will see the worker name in some lists. 
-For example using the demo data above: 
+For example: 
  - The user only has access to USMF. 
  - On the **Active positions** list, the **Worker** column will display Aaron’s name. When hovering on the name, only the name and title will display. 
  - If the user drills down on the worker name, a blank **Worker** page will be displayed.
