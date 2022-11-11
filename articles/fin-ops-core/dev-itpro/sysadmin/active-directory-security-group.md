@@ -35,7 +35,7 @@ Before enabling the **Active Directory security groups** feature, it's important
 - Disabling a group in system administration won't stop JIT or roles assignment
 - **User Id** for JIT created users are created with a leading $ sign and numbers
 
-These known limitations aren't expected to be addressed until the group experiences is unified with the more comprehensive feature in Dataverse. For more information, see [Manage group teams](../power-platform/admin/manage-group-teams.md).
+These known limitations aren't expected to be addressed until the group experiences is unified with the more comprehensive feature in Dataverse. For more information, see [Manage group teams](/power-platform/admin/manage-group-teams).
 
 ## Enable Active Directory security group
 
