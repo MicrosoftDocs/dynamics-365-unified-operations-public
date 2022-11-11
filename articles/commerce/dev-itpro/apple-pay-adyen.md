@@ -27,7 +27,9 @@ This article describes how to set up Apple Pay with Adyen in Microsoft Dynamics 
 | Apple Pay | Also known as the Apple Pay "button", Apple Pay is a wallet payment offering supported through the Adyen connector that allows the customer experience and integration supported by the Microsoft Dynamics 365 Apple Pay Connector. |
 | Wallet | A payment type that doesn't include traditional payment characteristics, such as the Bank Identification Number (BIN) range and expiration date that are used to differentiate among credit and debit card types. |
 
-Dynamics 365 Commerce offers an out-of-the-box integration for Apple Pay when using the Adyen payment gateway service. Apple Pay is a digital wallet payment method that uses an Apple Pay merchant account in coordination with the Adyen payment service. When configured, the Apple Pay button is a selectable payment method that is part of an online store's order checkout page. The Apple Pay button is only presented as a payment option for supported Apple Pay devices. When users select **Apple Pay** from a supported browser or device, they're directed to the Apple Pay service to complete their payment directly, and are then returned to the online storefront for order completion. The Dynamics 365 Payment Connector for Apple Pay connector reference is used in addition to the Dynamics 365 Payment Connector for Adyen to enable Apple Pay and credit card payments on a site. Apple Pay can also be configured to use in stores with Adyen payment terminals that use the Dynamics 365 Payment Connector for Adyen (which handles the Apple Payment device tap through the terminal) with the Commerce point of sale (POS).
+Dynamics 365 Commerce offers an out-of-the-box integration for Apple Pay when using the Adyen payment gateway service. Apple Pay is a digital wallet payment method that uses an Apple Pay merchant account in coordination with the Adyen payment service. When configured, the Apple Pay button is a selectable payment method that is part of an online store's order checkout page. The Apple Pay button is only presented as a payment option for supported Apple Pay devices. When users select **Apple Pay** from a supported browser or device, they're directed to the Apple Pay service to complete their payment directly, and are then returned to the online storefront for order completion. 
+
+The Dynamics 365 Payment Connector for Apple Pay connector reference is used in addition to the Dynamics 365 Payment Connector for Adyen to enable Apple Pay and credit card payments on a site. Apple Pay can also be configured to use in stores with Adyen payment terminals that use the Dynamics 365 Payment Connector for Adyen (which handles the Apple Payment device tap through the terminal) with the Commerce point of sale (POS).
 
 ## Prerequisites
 
@@ -43,22 +45,20 @@ Apple Pay is a digital wallet payment method. For information on setting up paym
 
 To map the Apple Pay payment method in Commerce headquarters, follow these steps.
 
-1. Go to **Retail and Commerce \> Channel setup z\> Payment methods \> Card types**. 
+1. Go to **Retail and Commerce \> Channel setup \> Payment methods \> Card types**. 
 1. Select **New** and add a line for Apple Pay with the following values assigned: 
-  - **ID** = ApplePay
-  - **Electronic payment name** = Apple Pay
-  - **Type** = Wallet
-  - **Issuer** = Apple
-1. Select **Processor mapping** to bring up the **Processor payment mapping methods** dialog box. In the **Unmapped Processor Payment Methods** center column, you'll see supported payment methods listed against each of the connectors available (Adyen, PayPal, Apple). 
-1. Map any of the supported payment methods you want against both the **Dynamics 365 Payment Connector for Adyen** (for use at POS) and the **Dynamics 365 Payment Connector for Apple Pay** (for online channel) connectors.  
+    - **ID**: ApplePay
+    - **Electronic payment name**: Apple Pay
+    - **Type**: Wallet
+    - **Issuer**: Apple
+1. Select **Processor mapping** to bring up the **Processor payment mapping methods** dialog box. In the **Unmapped Processor Payment Methods** column, supported payment methods are listed for each of the available connectors (Adyen, PayPal, Apple). 
+1. Map any of the supported payment methods you want for both the **Dynamics 365 Payment Connector for Adyen** (for use at POS) and the **Dynamics 365 Payment Connector for Apple Pay** (for online channel) connectors.  
 1. For each mapping line, select the line to support in the **Unmapped Processor Payment Methods** column, and then select **Add** to move the selections to the **Mapped Processor Payment Methods** column.
 1. Select **OK**, and then on the **Card Types** page, select **Save**. 
 
 ## Set up the Apple Pay certificate for your site
 
 For each site, you'll need to upload the domain association file (also known as the Apple Pay certificate) as described in the [Adyen Apple Pay documentation](https://docs.adyen.com/payment-methods/apple-pay/web-drop-in#going-live). The domain association file can be uploaded to the Media Library for your site using site builder.
-
-In the base domain for the sites in Site Builder, use :
 
 To set up the Apple Pay certificate in site builder, follow these steps.
 
@@ -67,10 +67,10 @@ To set up the Apple Pay certificate in site builder, follow these steps.
 1. In site builder, [upload](../upload-serve-static-files.md) the domain association file to your site's Media Library. 
 1. Go to **URLs**.
 1. Select **New \> New URL**.
-1. In the **New URL** dialog box, select **Media library asset**.
-1. In the **URL path** field, enter the URL path (if not already prepopulated). From the domain base, enter the required Apple pattern: `<domain>/.well-known/apple-developer-merchantid-domain-association.txt`.
+1. In the **New URL** dialog box, select **Media Library asset**.
+1. In the **URL path** field, enter the URL path (if not already prepopulated). After the domain base URL, enter the following required Apple string: `<domain>/.well-known/apple-developer-merchantid-domain-association.txt`.
 1. Select **Next**. The Media Library shows all uploaded media assets of the type **document** (.txt).
-1. Select the domain association file that should be served for requests to the URL that you defined in step 5. 
+1. Select the domain association file that should be served for requests to the URL that you defined above. 
 1. Select **Create**. 
 
 At this point, the URL that you created is in a draft state. Publish the URL to complete the process. The file that the URL points to won't be returned until you publish the URL.
@@ -80,13 +80,13 @@ At this point, the URL that you created is in a draft state. Publish the URL to 
 To configure a Commerce online store for Apple Pay, follow these steps.
 
 1. In Commerce headquarters, navigate to the **Retail and Commerce \> Channels \> Online stores**. 
-1. Select your site's online store channel's **Retail Channel Id**. 
-1. Open the **Payment accounts** FastTab. If it's not already set up, add the **Dynamics 365 Payment Connector for Adyen** according to the instructions in [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md).
+1. Select your site's online store channel's **Retail Channel ID**. 
+1. Expand the **Payment accounts** FastTab. If it's not already set up, add the **Dynamics 365 Payment Connector for Adyen** according to the instructions in [Set up Dynamics 365 Payment Connector for Adyen](adyen-connector-setup.md).
 1. Once the Adyen Connector is configured, select **Add** to add the **Dynamics 365 Payment Connector for Apple Pay**. 
 1. Enter values for the following connector merchant properties:
 
 
-| Field                  | Description                                                  | Required | Automatically set | Sample value         |
+| Property               | Description                                                  | Required | Automatically set | Sample value         |
 | ---------------------- | ------------------------------------------------------------ | -------- | ----------------- | -------------------- |
 | Assembly Name          | Autopopulated name of the assembly for the Dynamics 365 Payment Connector for Apple Pay. | Yes      | Yes               | *Binary name*        |
 | Service Account ID     | Autopopulated unique identifier for the setup of the merchant properties. This identifier is stamped on payment transactions and identifies the merchant properties that downstream processes (such as invoicing) should use. | Yes      | Yes               | *Guid*               |
@@ -104,13 +104,13 @@ The POS configuration uses the hardware profile's **EFT service** field configur
 
 Ensure that you add "ApplePay" to the list of **Supported Tender Types** (which are separated by semi-colons).
 
-The previous processor mapping maps for the Adyen connector will capture the wallet card types used by Apple Pay at the POS terminal. 
+The processor mapping for the Adyen connector will capture the wallet card types used by Apple Pay at the POS terminal. 
 
-### Configure your content security policies in site builder
+### Configure content security policies in site builder
 
 Before configuring your fragments or pages to use Apple Pay, you must ensure that your content security policies (CSPs) are configured in Commerce site builder for your site.
 
-To configure your content security policies in site builder, follow these steps.
+To configure content security policies in site builder, follow these steps.
 
 - Go to **Site Settings \> Extensions**. 
 - On the **Content security policy** tab, select **Add**, and then add a line with "https://applepay.cdn-apple.com/jsapi/v1/apple-pay-sdk.js" to the **child-src**, **connect-src**, **frame-src**, **img-src**, **script-src**, and **style-src** sections.
@@ -118,7 +118,7 @@ To configure your content security policies in site builder, follow these steps.
 
 ### Set up Apple Pay as a checkout payment option
 
-To set up Apple Pay as a checkout payment option on your site's (non-express) checkout page, follow these steps:
+To set up Apple Pay as a checkout payment option on your site's (non-express) checkout page, follow these steps.
 
 1. In site builder, go to **Fragments**, and then select your site's checkout fragment.
 1. Select **Edit**.
@@ -127,13 +127,13 @@ To set up Apple Pay as a checkout payment option on your site's (non-express) ch
 1. Select **Save**.
 1. Select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
-Settings for the **Apple Pay** module are built in to the module and connect with the configured Dynamics 365 Payment Connector for Apple Pay connector that is set up for the online channel in headquarters.
+Settings for the **Apple Pay** module are built into the module and connect with the configured Dynamics 365 Payment Connector for Apple Pay connector that is set up for the online channel in headquarters.
 
 ### Apple Pay payment behavior
 
-The **Apple Pay** payment button will only be shown on supported Apple Pay devices (iPhones, iPads, and Safari browsers that support Apple Pay). When a user isn't using one of these devices, the **Apple Pay** payment button is hidden from view.
+The **Apple Pay** payment button is only shown on supported Apple Pay devices (iPhones, iPads, and Safari browsers that support Apple Pay). When a user isn't using one of these devices, the **Apple Pay** payment button is hidden from view.
 
-Selecting the **Apple Pay** payment button launches an **Apple Pay** dialog box that allows the user to authenticate against their Apple Pay device or browser. **Apple Pay** dialog box displays a summary of the order amount and the selected payment method the user has configured against their Apple Wallet. Users can review and select **Pay** within the Apple Pay dialog box to complete the payment. Once a payment is completed, the user is directed back to the **Order Complete** site page that displays a detailed order summary for the completed transaction.
+Selecting the **Apple Pay** payment button launches an **Apple Pay** dialog box that allows the user to authenticate against their Apple Pay device or browser. The **Apple Pay** dialog box displays a summary of the order amount and the selected payment method the user has configured against their Apple Wallet. Users can review and select **Pay** within the Apple Pay dialog box to complete the payment. Once a payment is completed, the user is directed back to the **Order Complete** site page that displays a detailed order summary for the completed transaction.
 
 ## Additional resources
 
