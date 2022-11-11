@@ -306,6 +306,8 @@
           href: hr-setup-parameters.md
         - name: Configure Human resources shared parameters
           href: hr-setup-shared-parameters.md
+        - name: Restrict access to workers by legal entity
+          href: hr-advanced-security.md
         - name: Set up Human resource workflows
           href: hr-workflow-manage-employee-information.md
         - name: Understand Date and Time fields
