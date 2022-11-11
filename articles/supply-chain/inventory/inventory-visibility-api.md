@@ -42,14 +42,14 @@ The following table lists the APIs that are currently available:
 | /api/environment/{environmentId}/onhand/indexquery | Post | [Query by using the post method](#query-with-post-method) (recommended) |
 | /api/environment/{environmentId}/onhand | Get | [Query by using the get method](#query-with-get-method) |
 | /api/environment/{environmentId}/onhand/exactquery | Post | [Exact query by using the post method](#exact-query-with-post-method) |
-| /api/environment/{environmentId}/allocation​/allocate | Post | [Create one allocate event](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation​/unallocate | Post | [Create one unallocate event](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation​/reallocate | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation​/consume | Post | [Create one consume event](inventory-visibility-allocation.md#using-allocation-api) |
-| /api/environment/{environmentId}/allocation​/query | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation<wbr>/allocate | Post | [Create one allocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation<wbr>/unallocate | Post | [Create one unallocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation<wbr>/reallocate | Post | [Create one reallocate event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation<wbr>/consume | Post | [Create one consume event](inventory-visibility-allocation.md#using-allocation-api) |
+| /api/environment/{environmentId}/allocation<wbr>/query | Post | [Query allocation result](inventory-visibility-allocation.md#using-allocation-api) |
 
 > [!NOTE]
-> The {environmentId} part of the path is the environment ID in Microsoft Dynamics Lifecycle Services (LCS).
+> The {environmentId} part of the path is the environment ID in Microsoft Dynamics Lifecycle Services.
 > 
 > The bulk API can return a maximum of 512 records for each request.
 
@@ -61,7 +61,7 @@ The microservice of Inventory Visibility is deployed on Microsoft Azure Service 
 
 `https://inventoryservice.<RegionShortName>-il<IsLandNumber>.gateway.prod.island.powerapps.com`
 
-The region short name can be found in the Microsoft Dynamics Lifecycle Services (LCS) environment. The following table lists the regions that are currently available.
+The region short name can be found in the Lifecycle Services environment. The following table lists the regions that are currently available.
 
 | Azure region        | Region short name |
 | ------------------- | ----------------- |
@@ -90,7 +90,7 @@ The region short name can be found in the Microsoft Dynamics Lifecycle Services 
 | South Africa West   | wza               |
 | South Africa North  | nza               |
 
-The island number is where your LCS environment is deployed on Service Fabric. There's currently no way to get this information from the user side.
+The island number is where your Lifecycle Services environment is deployed on Service Fabric. There's currently no way to get this information from the user side.
 
 Microsoft has built a user interface (UI) in Power Apps so that you can get the complete endpoint of the microservice. For more information, see [Find the service endpoint](inventory-visibility-configuration.md#get-service-endpoint).
 
@@ -105,63 +105,63 @@ To get a security service token, follow these steps.
 1. Sign in to the Azure portal, and use it to find the `clientId` and `clientSecret` values for your Dynamics 365 Supply Chain Management app.
 1. Fetch an Azure AD token (`aadToken`) by submitting an HTTP request that has the following properties:
 
-   - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/v2.0/token`
-   - **Method:** `GET`
-   - **Body content (form data):**
+    - **URL:** `https://login.microsoftonline.com/${aadTenantId}/oauth2/v2.0/token`
+    - **Method:** `GET`
+    - **Body content (form data):**
 
-     | Key           | Value                                            |
-     | ------------- | -------------------------------------------------|
-     | client_id     | ${aadAppId}                                      |
-     | client_secret | ${aadAppSecret}                                  |
-     | grant_type    | client_credentials                               |
-     | scope         | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default    |
+        | Key           | Value                                            |
+        | ------------- | -------------------------------------------------|
+        | client_id     | ${aadAppId}                                      |
+        | client_secret | ${aadAppSecret}                                  |
+        | grant_type    | client_credentials                               |
+        | scope         | 0cdb527f-a8d1-4bf8-9436-b352c68682b2/.default    |
 
-   You should receive an Azure AD token (`aadToken`) in response. It should resemble the following example.
+    You should receive an Azure AD token (`aadToken`) in response. It should resemble the following example.
 
-   ```json
-   {
-       "token_type": "Bearer",
-       "expires_in": "3599",
-       "ext_expires_in": "3599",
-       "access_token": "eyJ0eX...8WQ"
-   }
-   ```
+    ```json
+    {
+        "token_type": "Bearer",
+        "expires_in": "3599",
+        "ext_expires_in": "3599",
+        "access_token": "eyJ0eX...8WQ"
+    }
+    ```
 
 1. Formulate a JavaScript Object Notation (JSON) request that resembles the following example.
 
-   ```json
-   {
-       "grant_type": "client_credentials",
-       "client_assertion_type": "aad_app",
-       "client_assertion": "{Your_AADToken}",
-       "scope": "https://inventoryservice.operations365.dynamics.com/.default",
-       "context": "{$LCS_environment_id}",
-       "context_type": "finops-env"
-   }
-   ```
+    ```json
+    {
+        "grant_type": "client_credentials",
+        "client_assertion_type": "aad_app",
+        "client_assertion": "{Your_AADToken}",
+        "scope": "https://inventoryservice.operations365.dynamics.com/.default",
+        "context": "{$LCS_environment_id}",
+        "context_type": "finops-env"
+    }
+    ```
 
-   Note the following points:
+    Note the following points:
 
-   - The `client_assertion` value must be the Azure AD token (`aadToken`) that you received in the previous step.
-   - The `context` value must be the LCS environment ID where you want to deploy the add-in.
-   - Set all the other values as shown in the example.
+    - The `client_assertion` value must be the Azure AD token (`aadToken`) that you received in the previous step.
+    - The `context` value must be the Lifecycle Services environment ID where you want to deploy the add-in.
+    - Set all the other values as shown in the example.
 
 1. Fetch an access token (`access_token`) by submitting an HTTP request that has the following properties:
 
-   - **URL:** `https://securityservice.operations365.dynamics.com/token`
-   - **Method:** `POST`
-   - **HTTP header:** Include the API version. (The key is `Api-Version`, and the value is `1.0`.)
-   - **Body content:** Include the JSON request that you created in the previous step.
+    - **URL:** `https://securityservice.operations365.dynamics.com/token`
+    - **Method:** `POST`
+    - **HTTP header:** Include the API version. (The key is `Api-Version`, and the value is `1.0`.)
+    - **Body content:** Include the JSON request that you created in the previous step.
 
-   You should receive an access token (`access_token`) in response. You must use this token as a bearer token to call the Inventory Visibility API. Here's an example.
+    You should receive an access token (`access_token`) in response. You must use this token as a bearer token to call the Inventory Visibility API. Here's an example.
 
-   ```json
-   {
-       "access_token": "{Returned_Token}",
-       "token_type": "bearer",
-       "expires_in": 3600
-   }
-   ```
+    ```json
+    {
+        "access_token": "{Returned_Token}",
+        "token_type": "bearer",
+        "expires_in": 3600
+    }
+    ```
 
 > [!IMPORTANT]
 > When you use the *Postman* request collection to call Inventory Visibility public APIs, you must add a bearer token for each request. To find your bearer token, select the **Authorization** tab under the request URL, select the **Bearer Token** type, and copy the access token that was fetched in the last step. In later sections of this article, `$access_token` will be used to represent the token that was fetched in the last step.
@@ -187,7 +187,7 @@ The following table summarizes the meaning of each field in the JSON body.
 > [!NOTE]
 > The `siteId` and `locationId` parameters construct the [partition configuration](inventory-visibility-configuration.md#partition-configuration). Therefore, you must specify them in dimensions when you create on-hand change events, set or override on-hand quantities, or create reservation events.
 
-The following subsections provide examples of how to use each of the two APIs.
+The following subsections provide examples that show how to use these APIs.
 
 ### <a name="create-one-onhand-change-event"></a>Create one on-hand change event
 
@@ -220,7 +220,7 @@ Body:
     }
 ```
 
-The following example shows sample body content. In this example, the company has a point-of-sales (POS) system that processes in-store transactions and therefore inventory changes. The customer has returned a red T-shirt back to your store. To reflect the change, you post a single change event for the *T-shirt* product and this event will increase the quantity of the *T-shirt* product by 1.
+The following example shows sample body content. In this example, the company has a point-of-sale (POS) system that processes in-store transactions and therefore inventory changes. The customer has returned a red T-shirt to your store. To reflect the change, you post a single change event for the *T-shirt* product. This event will increase the quantity of the *T-shirt* product by 1.
 
 ```json
 {
@@ -264,12 +264,12 @@ The following example shows sample body content without `dimensionDataSource`. I
 
 ### <a name="create-multiple-onhand-change-events"></a>Create multiple change events
 
-This API can create change events like the [single-event API](#create-one-onhand-change-event) can. The only difference is that it can create multiple records at the same time. Therefore the `Path` and `Body` values are different. For this API, `Body` provides an array of records. The maximum number of records is 512, which means that the on-hand change bulk API can support up to 512 change events at a time. 
+This API can create change events, just as the [single-event API](#create-one-onhand-change-event) can. The only difference is that this API can create multiple records at the same time. Therefore, the `Path` and `Body` values differ. For this API, `Body` provides an array of records. The maximum number of records is 512. Therefore, the on-hand change bulk API can support up to 512 change events at a time. 
 
-For example, suppose a retail store POS machine processed the following two transactions:
+For example, a retail store POS machine processed the following two transactions:
 
 - One return order of one red T-shirt
-- One sales transaction of three black T-shirt
+- One sales transaction of three black T-shirts
 
 In this case, you can include both inventory updates in one API call.
 
@@ -340,7 +340,7 @@ The following example shows sample body content.
 
 ## <a name="set-onhand-quantities"></a>Set/override on-hand quantities
 
-The *Set on-hand* API overrides the current data for the specified product. This functionality is typically used to do inventory counting updates. For example, during their daily inventory counting, a store might find that the actual on-hand inventory for a red T-shirt is 100. Therefore, the POS inbound quantity must be updated to 100 regardless of what previous quantity was. You can use this API to override the existing value.
+The *Set on-hand* API overrides the current data for the specified product. This functionality is typically used to do inventory counting updates. For example, during its daily inventory counting, a store might find that the actual on-hand inventory for a red T-shirt is 100. Therefore, the POS inbound quantity must be updated to 100, regardless of what the previous quantity was. You can use this API to override the existing value.
 
 ```txt
 Path:
@@ -608,7 +608,7 @@ Body:
 
 ## Query on-hand
 
-Use the *Query on-hand* API to fetch current on-hand inventory data for your products. You can use this API whenever you need to know the stock, such as when you want to review product stock levels on your e-commerce website, or when you want to check product availability across regions or in nearby stores and warehouses. The API currently supports querying up to 5000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. The maximum limit is defined by the following equation:
+Use the *Query on-hand* API to fetch current on-hand inventory data for your products. You can use this API whenever you must know the stock, such as when you want to review product stock levels on your e-commerce website, or when you want to check product availability across regions or in nearby stores and warehouses. The API currently supports querying up to 5,000 individual items by `productID` value. Multiple `siteID` and `locationID` values can also be specified in each query. The maximum limit is defined by the following equation:
 
 *NumOf(SiteID) \* NumOf(LocationID) <= 100*.
 
@@ -710,19 +710,19 @@ Here's a sample get URL. This get request is exactly the same as the post sample
 
 ## <a name="exact-query-with-post-method"></a>On-hand exact query
 
-On-hand exact queries are similar to normal on-hand queries, but they allow you to specify a mapping hierarchy between site and location. For example, you might have the following two sites:
+On-hand exact queries resemble regular on-hand queries, but they let you specify a mapping hierarchy between a site and a location. For example, you have the following two sites:
 
 - Site 1, which is mapped to location A
 - Site 2, which is mapped to location B
 
-With a normal on-hand query, when you specify `"siteId": ["1","2"]` and `"locationId": ["A","B"]`, Inventory Visibility will automatically query the result for the following sites and locations:
+For a regular on-hand query, if you specify `"siteId": ["1","2"]` and `"locationId": ["A","B"]`, Inventory Visibility will automatically query the result for the following sites and locations:
 
 - Site 1, location A
 - Site 1, location B
 - Site 2, location A
 - Site 2, location B
 
-As you can see here, the normal on-hand query doesn't recognize that location A only exists in site 1, and location B only exists for site 2 and therefore makes redundant queries. To acknowledge this hierarchical mapping, you can use an on-hand exact query and specify the location mappings in your query body. As a result, you'll only query and receive result for site 1 location A and site 2 location B.
+As you see, the regular on-hand query doesn't recognize that location A exists only in site 1, and location B exists only in site 2. Therefore, it makes redundant queries. To accommodate this hierarchical mapping, you can use an on-hand exact query and specify the location mappings in the query body. In this case, you'll query and receive results for only site 1, location A and site 2, location B.
 
 ### <a name="exact-query-with-post-method"></a>Exact query by using the post method
 
