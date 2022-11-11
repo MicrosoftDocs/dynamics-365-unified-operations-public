@@ -789,6 +789,7 @@
       - name: Manage your inventory
         items:
         - name: Inventory availability
+          items:
           - name: Calculate inventory availability for retail channels
             href: calculated-inventory-retail-channels.md
           - name: How to use channel-side inventory calculation
