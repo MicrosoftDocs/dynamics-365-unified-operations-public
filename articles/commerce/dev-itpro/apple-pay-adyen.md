@@ -118,22 +118,22 @@ To configure your content security policies in site builder, follow these steps.
 
 ### Set up Apple Pay as a checkout payment option
 
-To set up Apple Pay as a payment button in the Checkout (non-express) form, follow these steps:
+To set up Apple Pay as a checkout payment option on your site's (non-express) checkout page, follow these steps:
 
-1. In site builder, with your site context set, navigate to the **Fragments** menu and select the **Checkout** fragment.
-2. Click **Edit** to edit the page.
-3. Expand the **Checkout \> Checkout information \> Checkout section container** in the tree view and select the ellipsis ("**...**") for the **Checkout section container** and select **Add module**.
-4. Select the **Apple Pay** module, and then select **OK**.
-5. Review and select **Save** or **Finish editing** to commit the changes to the unpublished edit.
-6. When you're ready to commit the changes to the public published version of the checkout fragment, select **Publish**.
+1. In site builder, go to **Fragments**, and then select your site's checkout fragment.
+1. Select **Edit**.
+1. In the **Checkout section container** slot, select the ellipsis ("**...**"), and then select **Add module**.
+1. In the **Select modules** dialog box, select the **Apple Pay** module, and then select **OK**.
+1. Select **Save**.
+1. Select **Finish editing** to check in the fragment, and then select **Publish** to publish it.
 
-Settings for the **Apple Pay** module are built in to the module and connect back specifically to the configured **Dynamics 365 Payment Connector for Apple Pay** connector set for the online channel in headquarters.
+Settings for the **Apple Pay** module are built in to the module and connect with the configured Dynamics 365 Payment Connector for Apple Pay connector that is set up for the online channel in headquarters.
 
 ### Apple Pay payment behavior
 
-The **Apple Pay** payment button will only be shown on supported Apple Pay devices (iPhones, iPads, and Safari browsers that support Apple Pay). When not using these devices, the button will be hidden from view as a payment option to the user.
+The **Apple Pay** payment button will only be shown on supported Apple Pay devices (iPhones, iPads, and Safari browsers that support Apple Pay). When a user isn't using one of these devices, the **Apple Pay** payment button is hidden from view.
 
-Clicking on the **Apple Pay** payment button will launch an Apple Pay dialogue to allow the user to authenticate against their Apple Pay device or browser, with experience showing a summary of the order amount and which selected payment method the user has configured against their Apple Wallet. Users can review and select the "Pay" button within the Apple Pay dialogue to complete the payment. Once completed, a user will be directed back to the "Order Complete" page on the site showing them their order detailed summary for the completed transaction.
+Selecting the **Apple Pay** payment button launches an **Apple Pay** dialog box that allows the user to authenticate against their Apple Pay device or browser. **Apple Pay** dialog box displays a summary of the order amount and the selected payment method the user has configured against their Apple Wallet. Users can review and select **Pay** within the Apple Pay dialog box to complete the payment. Once a payment is completed, the user is directed back to the **Order Complete** site page that displays a detailed order summary for the completed transaction.
 
 ## Additional resources
 
