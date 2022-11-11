@@ -37,7 +37,7 @@ After the feature is turned on, you can find inventory levels at **Retail and Co
 
 An *inventory level profile* determines whether a given product quantity status is considered in stock, out of stock, or some other custom status. You can create and configure multiple inventory level profiles per legal entity. Each profile consists of a set of inventory levels, and each level is defined by a *range*, a *code*, and a *label*.
 
-- **Range** – Each range is defined by a *start quantity* and an *end quantity*. A quantity value falls in a range if it's more than the start quantity of that range and not more than the end quantity.
+- **Range** – Each range is defined by a *start quantity* and an *end quantity*. A quantity value falls in a range if it's more than the start quantity of that range and not more than the end quantity. The quantity value is treated as sales unit of measure in calculation.
 - **Code** – A code is an internal abbreviation that represents the level. Customers who directly integrate with the inventory APIs can use codes to build additional logic for a given inventory level. For example, they can turn off the purchase capability for a product when its inventory level code is **OOS** ("out of stock").
 - **Label** – A label is a meaningful customer-facing message that conveys an inventory level to customers on an e-Commerce site.
 

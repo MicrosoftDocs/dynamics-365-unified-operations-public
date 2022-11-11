@@ -791,7 +791,7 @@
         - name: Inventory availability
           - name: Calculate inventory availability for retail channels
             href: calculated-inventory-retail-channels.md
-          - name: Configure channel-side inventory calculation
+          - name: How to use channel-side inventory calculation
             href: commerce-how-to-use-channel-side-calculation.md
           - name: Configure inventory buffers and inventory levels
             href: inventory-buffers-levels.md
@@ -801,10 +801,10 @@
             href: commerce-inventory-lookup-with-channel-side-calculation.md
           - name: Optimize your inventory data
             href: commerce-optimize-inventory-availability-data.md
-          - name: Inventory-aware product listing
-            href: inventory-aware-product-listing.md
           - name: Channel-side calculation frequently asked questions
             href: commerce-channel-side-calculation-faq.md
+          - name: Inventory-aware product listing
+            href: inventory-aware-product-listing.md
         - name: Store inventory
           items:
           - name: Store inventory management

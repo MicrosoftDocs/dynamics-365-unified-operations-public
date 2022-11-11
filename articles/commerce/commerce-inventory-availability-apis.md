@@ -85,7 +85,7 @@ For more information about how to consume Retail Server APIs in external applica
             "PhysicalInventory": 0,
             "PhysicalReserved": 0,
             "TotalAvailable": 1,
-            "TotalAvailableInventoryLevelLabel": "In stock",
+            "TotalAvailableInventoryLevelLabel": "Available",
             "TotalAvailableInventoryLevelCode": "AVAIL",
             "OrderedInTotal": 0,
             "PhysicalAvailable": 0,
@@ -109,7 +109,7 @@ For more information about how to consume Retail Server APIs in external applica
             "ProductId": 123456,
             "DataAreaId": "{DataAreaId}",
             "TotalAvailableQuantity": 1,
-            "TotalAvailableInventoryLevelLabel": "In stock",
+            "TotalAvailableInventoryLevelLabel": "Available",
             "TotalAvailableInventoryLevelCode": "AVAIL",
             "PhysicalAvailableQuantity": 0,
             "PhysicalAvailableInventoryLevelLabel": "Out of stock",
@@ -167,7 +167,7 @@ For more information about how to consume Retail Server APIs in external applica
             "PhysicalInventory": 0,
             "PhysicalReserved": 0,
             "TotalAvailable": 1,
-            "TotalAvailableInventoryLevelLabel": "In stock",
+            "TotalAvailableInventoryLevelLabel": "Available",
             "TotalAvailableInventoryLevelCode": "AVAIL",
             "OrderedInTotal": 0,
             "PhysicalAvailable": 0,
@@ -191,7 +191,7 @@ For more information about how to consume Retail Server APIs in external applica
             "ProductId": 123456,
             "DataAreaId": "{DataAreaId}",
             "TotalAvailableQuantity": 1,
-            "TotalAvailableInventoryLevelLabel": "In stock",
+            "TotalAvailableInventoryLevelLabel": "Available",
             "TotalAvailableInventoryLevelCode": "AVAIL",
             "PhysicalAvailableQuantity": 0,
             "PhysicalAvailableInventoryLevelLabel": "Out of stock",
@@ -282,9 +282,9 @@ For more information about how to consume Retail Server APIs in external applica
             "ProductIds": [
                 123456
             ],
-            "TotalAvailableInventoryLevelLabel": "In stock",
+            "TotalAvailableInventoryLevelLabel": "Available",
             "TotalAvailableInventoryLevelCode": "AVAIL",
-            "PhysicalAvailableInventoryLevelLabel": "In stock",
+            "PhysicalAvailableInventoryLevelLabel": "Available",
             "PhysicalAvailableInventoryLevelCode": "AVAIL"
         }
     ]
