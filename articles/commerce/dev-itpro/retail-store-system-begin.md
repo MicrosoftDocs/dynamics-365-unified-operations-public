@@ -1,29 +1,24 @@
 ---
 title: Commerce Scale Unit (self-hosted)
-description: This article describes Commerce Scale Unit (self-hosted) and when to use it.
+description: This article describes Microsoft Dynamics 365 Commerce Scale Unit (self-hosted) and when to use it.
 author: josaw1
-ms.date: 06/04/2020
+ms.date: 11/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: IT Pro
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
-ms.dyn365.ops.version: Version 1611
 ms.custom: 219714
 ms.assetid: 773fb32d-14c1-4dc8-8330-0332c6a037a2
-ms.search.industry: Retail
+
 ---
 
 # Commerce Scale Unit (self-hosted)
 
 [!include [banner](../includes/banner.md)]
 
-This article describes Commerce Scale Unit (self-hosted) and when to use it.
-
-## Overview
+This article describes Microsoft Dynamics 365 Commerce Scale Unit (self-hosted) and when to use it.
 
 Commerce Scale Unit (self-hosted) is a set of features that supports selling products in a store that has inconsistent internet connectivity to Commerce headquarters. The Store Scale Unit is designed specifically for in-store operation, and enables cross-terminal transactions and shift operations despite poor internet service. By automatically connecting to the back office, when you do have internet connectivity, your store can seamlessly process credit card transactions, issue gift cards, and sync data with HQ. The Store Scale Unit is available for download in the standard HQ deployment.
 
