@@ -68,7 +68,7 @@ When your task list is ready, follow these steps to work through it:
 1. Expand the **Summary** FastTab to see an overview of how many tasks there are in total and what proportion of them have been marked as completed.
 1. Expand the **Tasks and status** FastTab to see the full list and mark tasks completed as you work.
 
-    Each tasks shows the following information:
+    Each task shows the following information:
 
     - **Sequence number** – Indicates the order in which you should complete each task. Start with the lowest number and work up from there.
     - **Completed** – Indicates whether a task has been completed. Mark this check box for each task as you complete them.
