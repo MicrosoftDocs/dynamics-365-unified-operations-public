@@ -14,7 +14,7 @@ ms.custom: bap-template
 
 [!include [banner](../includes/banner.md)]
 
-The message processor is a framework for processing messages representing events. The processing has the following properties
+The message processor is a framework for processing messages representing events. It has the following properties
 
 - Processes messages in the correct order (dependent messages are processed in sequence)
 - Scalable (independent messages can processed in parallel)
@@ -24,6 +24,8 @@ The message processor is a framework for processing messages representing events
 - Traceable
 
 <!-- KFM: Provide a bit more background and a couple of usage examples. -->
+
+<!-- KFM: The [Integrate with third-party manufacturing execution systems](../production-control/mes-integration.md) topic provides API documentation. Don't we need that for this feature too? Maybe it's similar? -->
 
 ## The message processor messages list
 
@@ -58,19 +60,29 @@ The toolbar on the **Log** tab includes the following buttons:
 
 If needed, you can manually process or cancel a message, depending on its current state. To do so, select the message in the grid and then select **Process** or **Cancel** on the Action Pane.
 
-<!-- KFM: What about the **Queue** button. What does that do and how do we use it? -->
+<!-- KFM: What about the **Queue** button. What does that do and how do we use it? We might need a new section about this...  -->
 
 ## Message processor batch job
 
 The *Message processor* batch job will automatically be evoked when a new message is created for processing, so you should not need to schedule this job manually.
 
-If necessary, you can access the batch job by going to **System administration \> Message  processor \> Message processor**.
+If necessary, you can create the batch job using the following steps:
 
-<!-- KFM: Give full description of this dialog, especially how to use the **Message queue** drop-down. -->
+1. Go to **System administration \> Message  processor \> Message processor**.
+1. The **Message processor** dialog opens. From the **Message queue** drop-down list, select the message queue associated with the messages you want to process. The value you pick will depend on which feature or system generated the messages you want to process. Often, this will be a custom value established by one of your system customizers or developers. <!-- KFM: How do we get new queues in here? We may need a section or topic about this... -->
+1. On the **Run in the background** FastTab, set up batch and scheduling options as you require, just as you would do for [other types of jobs](../../fin-ops-core/dev-itpro/sysadmin/batch-processing-overview.md) in Supply Chain Management. However, in most situations, you'll probably just skip these settings and run the job right now.
+1. Select **OK** to run or schedule the job based on your settings.
 
 ## Message processor queue setup
 
-<!-- KFM: Describe what this page is for and how to use it. -->
+You can configure the number of processor tasks that should be dedicated to each message processor queue. Unconfigured queues will use a default of <!-- KFM: What is the default? --> processor tasks. Follow these steps to customize one or more queues:
+
+1. Go to **System administration \> Message processor \> Message queue setup**.
+1. Do one of the following steps:
+    - To edit an existing queue, select **Edit** on the Action Pane and then select the target queue in the grid.
+    - To add a new configuration , select **Add** on the Action Pane to add a new row to the grid. Then set the **Message queue** drop-down list for the new row to the name of the queue you want to configure.
+1. For your new or selected row, set Number of processor tasks to the number of processor tasks to dedicate to the specified queue. The maximum value is 8. The minimum value depends on the minimum number of batch threads configured for your system (typically 2). <!-- KFM: What do we recommend? -->
+1. Select **Save** on the Action Pane.
 
 ## Set up business events to deliver alerts for failed processing results
 
