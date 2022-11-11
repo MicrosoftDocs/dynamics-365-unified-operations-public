@@ -3393,6 +3393,8 @@
       items:
       - name: Warehouse management overview
         href: warehousing/warehouse-management-overview.md
+      - name: Get started with setting up the Warehouse management module
+        href: warehousing/get-started-with-setting-up-module.md
       - name: Inbound warehouse operations
         items:
         - name: Warehouse handling of inbound loads for purchase orders
