@@ -184,7 +184,7 @@ To enable Commerce component diagnostic events, you must have an Application Ins
 To enable diagnostic events in Application Insights in Commerce headquarters, follow these steps.
 
 1. In the **Feature Management** workspace, enable the **Operational Insights** feature.
-1. Go to **System administration \> Operational Insights**.
+1. Go to **System administration \> Setup \> Operational Insights**.
 1. On the **Configure** tab, set the **Commerce channel events** option to **Yes**.
 1. On the **Environments** tab, enter **LCS Environment ID** and **Environment mode** values for every environment where you plan to use Application Insights. You can find each environment's LCS environment ID on the **Environment details** page for that environment in LCS. This step is required to prevent diagnostic events from being inadvertently sent to an incorrect environment when database copy operations are performed.
 1. On the **Application Insights registry** tab, specify the Application Insights instrumentation key and corresponding environment mode of the environments where you plan to use each Application Insights account.

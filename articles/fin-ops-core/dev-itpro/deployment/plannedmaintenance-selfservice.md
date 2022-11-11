@@ -52,12 +52,10 @@ A planned maintenance window is typically during the dark hours of the geographi
 
 | Month and year | Americas (5:00 AM–8:00 AM UTC) | EMEA (2:00 AM–5:00 AM UTC) | APAC (6:00 PM–9:00 PM UTC) |
 |----------|--------------------------|----------------------|----------------------|
-| May 2022 | May 22, 2022 | May 21, 2022 | May 21, 2022 |
-| June 2022 | June 26, 2022 | June 25, 2022 | June 25, 2022 |
-| July 2022 | July 24, 2022 | July 23, 2022 | July 23, 2022 |
 | August 2022 | August 21, 2022 | August 20, 2022 | August 20, 2022 |
 | September 2022 | September 25, 2022 | September 24, 2022 | September 24, 2022 |
 | October 2022 | October 23, 2022 | October 22, 2022 | October 22, 2022 |
+| November 2022 | November 20, 2022 | November 19, 2022 | November 19, 2022 |
 
 ## What is the schedule for proactive quality updates?
 

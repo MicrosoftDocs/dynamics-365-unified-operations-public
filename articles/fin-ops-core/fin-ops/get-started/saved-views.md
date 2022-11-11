@@ -112,7 +112,7 @@ Alternatively, when you create a new view (by using the **Save as** action), you
 
 The **Manage my views** dialog box gives you basic maintenance capabilities over your personal views and the order of views in the view selector. To open this page, select the view name to open the view selector drop-down menu, select **More**, and then select **Manage my views**.
 
-**Version 10.0.21 or later:** If the **Improved legal entity support for saved views** feature is turned on, the **My views** section of the **Manage my views** dialog box shows the available views for the page in sections. Any views that are specific to the current legal entity are shown in their own section. The **Global views** section is always shown, so that you can manage the views that are available for the page in all legal entities. 
+If the **Improved legal entity support for saved views** feature is turned on, the **My views** section of the **Manage my views** dialog box shows the available views for the page in sections. Any views that are specific to the current legal entity are shown in their own section. The **Global views** section is always shown, so that you can manage the views that are available for the page in all legal entities. 
 
 For a list of available views for that page, the following set of actions are available.
 
@@ -143,9 +143,9 @@ To publish a view, follow these steps:
 
 1. Create and save a personal copy of the view that you want to publish. 
 2. With that view currently loaded, select the view name to open the view selector drop-down menu. 
-3. Select the **More** button and then select **Publish**. The Publish dialog box will open.
+3. Select the **More** button and then select **Publish**. The **Publish** dialog box will open.
 4. Enter a name for the view. The name that you enter is the name that users who receive this view will see in their view selectors. The names of published views for a page must be unique. No duplicate names are allowed, even if the list of roles or legal entities that the views are applied to differ.
-5. **Update 10.0.17 or later:** If the **(Preview) Translation support for organization views** feature is turned on, you can add translations for your view name in as many languages as your organization requires by selecting the **Translations** button next to the **Name** field. The view name will then be shown to users in their current language. You can also set the default language to specify the translation that will be shown to users who are running languages that no translation is defined for.
+5. If the **Translation support for organization views** feature is turned on, you can add translations for your view name in as many languages as your organization requires by selecting the **Translations** button next to the **Name** field. The view name will then be shown to users in their current language. You can also set the default language to specify the translation that will be shown to users who are running languages that no translation is defined for.
 5. Optional: Enter a description for the view, so that users who receive this view can better understand its purpose. 
 6. Determine whether the view should be published as the default view for the selected users. When a view is made the default view, users will see it the next time that they open the target page. The single, global default view of every targeted user will be changed. However, users can still change their default view after publishing has occurred.
 
@@ -155,9 +155,10 @@ To publish a view, follow these steps:
     > - If you publish a view as the default view to some or all legal entities, the following behavior occurs:
     >
     >    - If only the base **Saved views** feature is turned on, the single, global default view will be changed for every targeted user. 
-    >    - **Version 10.0.21 or later:** If the **Improved legal entity support for saved views** feature is turned on, and you publish the view to a subset of legal entities, the default view for those legal entities will be changed for every targeted user.
+    >    - ** If the **Improved legal entity support for saved views** feature is turned on, and you publish the view to a subset of legal entities, the default view for those legal entities will be changed for every targeted user.
     >
     > - If a user has roles where multiple views are published as the default view, the last view that was published will be used as the user's default view. 
+    > - Publishing will not work for role assignments made using AAD groups. 
 
 8. Add the security roles that correspond to the users who are being targeted by this view. 
 9. Determine whether you want to publish the view to the child roles of each security role that is selected. If you do, select the **Include child roles** check box in the row for the appropriate security roles. Note that this check box isn't available for roles that don't have child roles.
@@ -167,7 +168,7 @@ To publish a view, follow these steps:
     > Be aware of the following behavior if you publish a view to a specific legal entity, but you don't publish that view as the default view:
     >
     > - If only the base **Saved views** feature is turned on, the user's view selector for the page initially shows the view only for the specified legal entities. However, after the view is loaded for the first time, the view selector for the page will always show it, regardless of the legal entity.
-    > - **Version 10.0.21 or later:** If the **Improved legal entity support for saved views** feature is turned on, the view selector will only ever show the view for the specified legal entities.
+    > - If the **Improved legal entity support for saved views** feature is turned on, the view selector will only ever show the view for the specified legal entities.
 
 11. Select **Publish**.
 
@@ -264,7 +265,7 @@ For pages that have large view selectors (both personalizations and queries can 
 If you publish a view to a specific legal entity, but you don't publish that view as the default view, the following behavior occurs:
 
 - If only the base **Saved views** feature is turned on, the user's view selector for the page initially shows the view only for the specified legal entities. However, after the view is loaded for the first time, the view selector for the page will always show it, regardless of the legal entity. This behavior occurs because users get their own personal copy of the published view when it's loaded, and personal views are global.
-- **Version 10.0.21 or later:** If the **Improved legal entity support for saved views** feature is turned on, the view selector will only ever show the view for the specified legal entities. This behavior occurs because the feature enables views (including personal views) to be linked to specific legal entities.
+- If the **Improved legal entity support for saved views** feature is turned on, the view selector will only ever show the view for the specified legal entities. This behavior occurs because the feature enables views (including personal views) to be linked to specific legal entities.
 
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
 

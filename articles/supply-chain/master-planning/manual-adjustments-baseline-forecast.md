@@ -79,9 +79,8 @@ You can also make manual adjustments to the forecast on the **Demand forecast de
 
 ## Additional resources
 
-[Monitor forecast accuracy](monitor-forecast-accuracy.md)
-
-[Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)
+- [Monitor forecast accuracy](monitor-forecast-accuracy.md)
+- [Generate a statistical baseline forecast](generate-statistical-baseline-forecast.md)
 
 
 

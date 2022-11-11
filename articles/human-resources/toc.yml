@@ -4,6 +4,18 @@
     items:
     - name: Dynamics 365 Human Resources home page
       href: index.md  
+    - name: Human Resources infrastructure merge
+      items:
+      - name: Human Resources infrastructure merge overview
+        href: hr-infrastructure-merge.md
+      - name: Human Resources infrastructure customer migration
+        href: hr-cust-migration.md  
+      - name: Human Resources infrastructure merge FAQ
+        href: hr-infrastructure-merge-faq.md
+      - name: Human Resources customer migration FAQ
+        href: customer-migration.md 
+      - name: Human Resources infrastructure merge known issues
+        href: hr-migration-issues.md
     - name: What's new or changed
       items:
       - name: What's new or changed in finance and operations apps
@@ -242,10 +254,6 @@
           href: hr-admin-go-live-prepare.md
         - name: Go-live FAQ
           href: hr-admin-go-live-faq.md
-        - name: Human Resources infrastructure merge FAQ
-          href: hr-infrastructure-merge-faq.md
-        - name: Human Resources customer migration FAQ
-          href: customer-migration.md        
         - name: Documentation resources
           items:
           - name: Help system
@@ -533,7 +541,11 @@
           - name: Recruit job candidates
             href: hr-personnel-recruit.md  
     - name: Task management
-      href: hr-task-mgmt.md
+      items:
+      - name: Overview
+        href: hr-task-mgmt.md
+      - name: Task management upgrade
+        href: hr-task-update.md
     - name: Leave and absence
       items:
       - name: Overview
@@ -824,6 +836,10 @@
       href: hr-developer-entities.md
     - name: Custom fields
       href: hr-developer-custom-fields.md
+    - name: Develop and customize
+      items:
+      - name: Gender base enum
+        href: enum-exten.md 
     - name: Set up data integration
       items:
       - name: Choose a data integration technology
@@ -832,6 +848,8 @@
         href: hr-admin-integration-common-data-service.md
       - name: Configure Dataverse virtual tables
         href: hr-admin-integration-common-data-service-virtual-entities.md
+      - name: Security for virtual table integrations  
+        href: hr-security-config.md
       - name: Configure integration with Finance
         href: hr-admin-integration-finance.md
       - name: Create links from Human resources to another environment

@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Get started with Planning Optimization
-description: This article explains how to start to use the Planning Optimization functionality. 
+title: Get started with master planning
+description: This article explains how to start to use master planning functionality in Dynamics 365 Supply Chain Management. 
 author: t-benebo
 ms.date: 05/20/2021
 ms.topic: article
@@ -26,20 +26,11 @@ ms.search.validFrom: 2019-10-31
 ms.dyn365.ops.version: AX 10.0.5
 
 ---
-# Get started with Planning Optimization
+# Get started with master planning
 
 [!include [banner](../../includes/banner.md)]
 
-As [previously announced](../../get-started/removed-deprecated-features-scm-updates.md#use-of-built-in-supply-chain-management-master-planning-engine-for-distribution-scenarios), Planning Optimization is scheduled to replace the existing built-in master planning engine.
-
-If you currently use the built-in master planning engine, you should start planning your migration to Planning Optimization now. It is important to get started right away because your operations could otherwise be impacted when deprecation is enforced (though enforcement isn't currently scheduled). We strongly encourage you to complete the migration as soon as Planning Optimization supports the features you require so that you can start taking advantage of the many performance improvements and other new capabilities provided by the new service.
-
-The Planning Optimization functionality doesn't currently support all the features that are available in the planning engine that is built into Supply Chain Management. Therefore, it's important that you evaluate whether the feature set that is currently available in Planning Optimization will meet your requirements. The Planning Optimization functionality isn't currently turned on by default in Dynamics Lifecycle Services (LCS), so you have the opportunity to do your evaluation before the feature is turned on.
-
-> [!NOTE]
-> You need to request an exception from migration to Planning Optimization if your master planning process does not include production (master planning generated planned production orders) and you require the built-in master planning engine beyond version 10.0.15. Starting in version 10.0.16, an error will be shown in environments when running built-in master planning without generation of planned production orders. Planning Optimization should be used for all new deployments that do not generate planned production orders during master planning. Owners of existing environments running the built-in master planning engine without generation of Planned production orders, will receive a mail with details about the exception process. We recommend that you work with a partner to evaluate and plan the migration to Planning Optimization.
-
-Before you turn on Planning Optimization, we strongly recommend that you evaluate the results of the Planning Optimization fit analysis. For more information, see [Planning Optimization fit analysis](planning-optimization-fit-analysis.md).
+Master planning in Supply Chain Management is provided by an external service called the Planning Optimization Add-in for Dynamics 365 Supply Chain Management. This topic explains how to obtain and set up that service.
 
 ## Availability
 
@@ -111,31 +102,15 @@ The connection status indicates the current status of the connection between Sup
 The setting of the **Use Planning Optimization** option determines which planning engine is used for master planning:
 
 - **Yes** – Planning Optimization is used for master planning.
-- **No** – The built-in Supply Chain Management planning engine is used for master planning.
+- **No** – The deprecated master planning engine is used for master planning.
 
-This setting applies to all legal entities (companies). It is not possible to use Planning Optimization in some legal entities and the built-in master planning in other legal entities.
+This setting applies to all legal entities (companies). It is not possible to use Planning Optimization in some legal entities and the deprecated master planning engine in other legal entities.
 
 > [!NOTE]
-> If existing planning batch jobs that were created for the built-in Supply Chain Management planning engine are triggered while the **Use Planning Optimization** option is set to **Yes**, those jobs will fail.
+> If existing planning batch jobs that were created for the deprecated master planning engine are triggered while the **Use Planning Optimization** option is set to **Yes**, those jobs will fail.
 
 ### Integration with the setup
 
 If the Planning Optimization is turned on, master planning is done by using the Planning Optimization Add-in. In this case, master planning results and features are affected.
 
-## Additional resources
-
-[Terms and conditions for the preview](https://go.microsoft.com/fwlink/?linkid=2015274)
-
-[Planning Optimization overview](planning-optimization-overview.md)
-
-[Planning Optimization fit analysis](planning-optimization-fit-analysis.md)
-
-[View plan history and planning logs](plan-history-logs.md)
-
-[Apply filters to a plan](plan-filters.md)
-
-[Cancel a planning job](cancel-planning-job.md)
-
-
 [!INCLUDE[footer-include](../../../includes/footer-banner.md)]
-

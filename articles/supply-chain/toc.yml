@@ -384,7 +384,7 @@
             href: ../finance/localizations/rus-goods-transit-vendor.md?context=/dynamics365/context/supply-chain
     - name: Distributed hybrid topology
       items:
-      - name: Scale unit capability is currently paused for new customers
+      - name: Scale unit capability for Supply Chain Management is currently paused
         href: cloud-edge/cloud-edge-landing-page.md
     - name: Asset management
       items:
@@ -1753,36 +1753,54 @@
       items:
       - name: Master planning home page
         href: master-planning/master-planning-home-page.md
-      - name: Migration to Planning Optimization for master planning
-        href: master-planning/new-master-planning-engine.md
-      - name: Planning Optimization
+      - name: Get started with master planning
+        href: master-planning/planning-optimization/get-started.md
+      - name: Master planning system architecture
+        href: master-planning/master-planning-architecture.md
+      - name: Master planning administration
         items:
-        - name: Planning Optimization overview
-          href: master-planning/planning-optimization/planning-optimization-overview.md
-        - name: Get started with Planning Optimization
-          href: master-planning/planning-optimization/get-started.md
         - name: Planning Optimization release process and release history
           href: master-planning/planning-optimization/release-process.md
-        - name: Planning Optimization fit analysis
-          href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
-        - name: Differences between built-in master planning and Planning Optimization
-          href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
-        - name: Parameters not used by Planning Optimization
-          href: master-planning/planning-optimization/not-used-parameters.md
-        - name: Supply schedule
-          href: master-planning/supply-schedule.md
-        - name: Apply filters to a plan
-          href: master-planning/planning-optimization/plan-filters.md
+        - name: Troubleshoot Planning Optimization
+          href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
+        - name: Resolve the "Not enough capacity could be found" scheduling engine error
+          href: master-planning/not-enough-capacity-error-resolution.md
+        - name: Cancel a planning job
+          href: master-planning/planning-optimization/cancel-planning-job.md
+        - name: Planning Optimization extensibility
+          href: master-planning/planning-optimization/extensibility.md
+        - name: View plan history and planning logs
+          href: master-planning/planning-optimization/plan-history-logs.md
+        - name: Date and time parameters used by Planning Optimization
+          href: master-planning/planning-optimization/date-time-used.md
+      - name: Configure master planning
+        items:
+        - name: Delays
+          href: master-planning/delays.md
+        - name: Use tracing for explosion
+          href: master-planning/trace-explosion.md
+        - name: Make-to-order supply automation
+          href: master-planning/make-to-order-supply-automation.md
+        - name: Negative days and dynamic negative days
+          href: master-planning/more-about-dynamic-negative-days.md
+        - name: Calendars and master planning
+          href: master-planning/supply-chain-calendars-master-planning.md
+        - name: Create a schedule for a site
+          href: master-planning/tasks/create-schedule-site.md
+        - name: Create a plan for a site
+          href: master-planning/tasks/create-plan-site.md
         - name: Master planning with demand forecasts
           href: master-planning/planning-optimization/demand-forecast.md
         - name: Master planning with supply forecasts
           href: master-planning/planning-optimization/supply-forecast.md
+        - name: Supply schedule
+          href: master-planning/supply-schedule.md
+        - name: Run planning for a subset of items
+          href: master-planning/planning-optimization/plan-filters.md
         - name: Master planning with purchase trade agreements
           href: master-planning/planning-optimization/purchase-trade-agreement.md
         - name: Plan based on quotations and RFQs
           href: master-planning/planning-optimization/quotation-planning.md
-        - name: Date and time parameters used by Planning Optimization
-          href: master-planning/planning-optimization/date-time-used.md
         - name: Safety margins
           href: master-planning/planning-optimization/safety-margins.md
         - name: Delay tolerance (negative days)
@@ -1799,55 +1817,21 @@
           href: master-planning/planning-optimization/finite-capacity.md
         - name: Scheduling with resource selection based on capability
           href: master-planning/planning-optimization/capability-based-scheduling.md
-        - name: Priority-based planning
-          href: master-planning/planning-optimization/priority-based-planning.md
-        - name: Demand Driven Material Requirements Planning (DDMRP)
-          items:
-          - name: DDMRP overview
-            href: master-planning/planning-optimization/ddmrp-overview.md
-          - name: Turn on the DDMRP feature for your system
-            href: master-planning/planning-optimization/ddmrp-enable.md
-          - name: Inventory positioning
-            href: master-planning/planning-optimization/ddmrp-inventory-positioning.md
-          - name: Buffer profile and levels
-            href: master-planning/planning-optimization/ddmrp-buffer-profile-and-levels.md
-          - name: Demand driven planning
-            href: master-planning/planning-optimization/ddmrp-planning.md
-          - name: Visual and collaborative execution
-            href: master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md
-        - name: Inventory marking with Planning Optimization
+        - name: Inventory marking
           href: master-planning/planning-optimization/marking.md
         - name: Intercompany planning
           href: master-planning/planning-optimization/Intercompany-planning.md
         - name: Exclude products with certain product lifecycle states
           href: master-planning/planning-optimization/product-lifecycle-state.md
-        - name: Replenishment methods and quantity modification
-          href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
         - name: Coverage time fences
           href: master-planning/planning-optimization/coverage-time-fence.md
-        - name: Net requirements and pegging information with Planning Optimization
+        - name: Net requirements and pegging information
           href: master-planning/planning-optimization/net-requirements.md
-        - name: Approve planned orders
-          href: master-planning/planning-optimization/approved-planned-order.md
-        - name: Firm planned orders
-          href: master-planning/planning-optimization/planned-order-firming.md
-        - name: Planned orders simplified
-          href: master-planning/planning-optimization/planned-orders-simplified.md
         - name: Planning with negative on-hand quantities
           href: master-planning/planning-optimization/negative-on-hand.md 
-        - name: View plan history and planning logs
-          href: master-planning/planning-optimization/plan-history-logs.md
-        - name: Cancel a planning job
-          href: master-planning/planning-optimization/cancel-planning-job.md
-        - name: Action messages
-          href: master-planning/action-messages.md
         - name: Calculate sales order delivery dates using CTP
           href: master-planning/planning-optimization/calculate-delivery-dates-using-ctp.md
-        - name: Troubleshoot Planning Optimization
-          href: master-planning/planning-optimization/planning-optimization-trouble-shooting.md
-        - name: Planning Optimization extensibility
-          href: master-planning/planning-optimization/extensibility.md
-      - name: Master plans
+      - name: Set up master plans
         items:
         - name: Master plans overview
           href: master-planning/master-plans.md
@@ -1855,74 +1839,60 @@
           href: master-planning/master-planning-setup.md
         - name: Master planning setup wizard
           href: master-planning/master-planning-setup-wizard.md
+        - name: Generate a constrained plan
+          href: master-planning/tasks/constrained-plan.md
+      - name: Set up replenishment strategies
+        items:
         - name: Coverage settings
           href: master-planning/coverage-settings.md
         - name: Define coverage rules for items
           href: master-planning/tasks/define-coverage-rules-items.md
-        - name: Generate a constrained plan
-          href: master-planning/tasks/constrained-plan.md
-        - name: Create a material plan for co-products
-          href: master-planning/tasks/create-material-plan-co-products.md
-        - name: Maintain planned orders
-          href: master-planning/maintain-planned-orders.md
+        - name: Source products and materials from multiple vendors
+          href: master-planning/source-from-multiple-vendors.md
+        - name: Priority-based planning
+          href: master-planning/planning-optimization/priority-based-planning.md
+        - name: Replenishment methods and quantity modification
+          href: master-planning/planning-optimization/replenishment-methods-quantity-modification.md
+      - name: Master plans and multisite functionality
+        items:
+        - name: Master planning and multisite functionality overview
+          href: master-planning/master-plan-multisite-functionality.md
+        - name: Master planning for site coverage, mandatory warehouse
+          href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
+        - name: Master planning for site coverage, warehouse not mandatory
+          href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
+        - name: Master planning for site and warehouse coverage, warehouse mandatory
+          href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
+        - name: Master planning for site and warehouse coverage, warehouse not mandatory
+          href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
+        - name: Determine the BOM version
+          href: master-planning/master-plan-bom-version-determined.md
+        - name: Explosion of a BOM version
+          href: master-planning/master-plan-explosion-bom-version.md
+      - name: Safety stock
+        items:
         - name: Safety stock fulfillment for items
           href: master-planning/safety-stock-replenishment.md
         - name: Use the safety stock journal to update minimum coverage for items
           href: master-planning/safety-stock-journal.md
-        - name: Delays
-          href: master-planning/delays.md
-        - name: Cancel a master planning job
-          href: master-planning/cancel-master-planning-job.md
-        - name: Use tracing for explosion
-          href: master-planning/trace-explosion.md
-        - name: Monitor a master planning run
-          href: master-planning/tasks/monitor-master-planning-run.md
-        - name: Create a schedule for a site
-          href: master-planning/tasks/create-schedule-site.md
-        - name: Create a plan for a site
-          href: master-planning/tasks/create-plan-site.md
-        - name: Calendars and master planning
-          href: master-planning/supply-chain-calendars-master-planning.md
-        - name: Resolve the "Not enough capacity could be found" scheduling engine error
-          href: master-planning/not-enough-capacity-error-resolution.md
-        - name: Improve master planning performance
-          href: master-planning/master-planning-performance.md
-        - name: Improve scheduling engine performance
-          href: master-planning/scheduling-engine-performance.md
-        - name: Master plans and multisite functionality
-          items:
-          - name: Master planning and multisite functionality overview
-            href: master-planning/master-plan-multisite-functionality.md
-          - name: Master planning for site coverage, mandatory warehouse
-            href: master-planning/master-plan-site-coverage-warehouse-mandatory.md
-          - name: Master planning for site coverage, warehouse not mandatory
-            href: master-planning/master-plan-site-coverage-warehouse-not-mandatory.md
-          - name: Master planning for site and warehouse coverage, warehouse mandatory
-            href: master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md
-          - name: Master planning for site and warehouse coverage, warehouse not mandatory
-            href: master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md
-          - name: Determine the BOM version
-            href: master-planning/master-plan-bom-version-determined.md
-          - name: Explosion of a BOM version
-            href: master-planning/master-plan-explosion-bom-version.md
-        - name: Negative days and dynamic negative days
-          href: master-planning/more-about-dynamic-negative-days.md
-        - name: Create an intercompany plan
-          href: master-planning/tasks/create-intercompany-plan.md
-        - name: View outbound planned intercompany demand
-          href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
-        - name: Net requirements and pegging information with built-in master planning
-          href: master-planning/net-requirements-built-in-master-planning.md
-        - name: Make-to-order supply automation
-          href: master-planning/make-to-order-supply-automation.md
+      - name: Manage planned orders
+        items:
+        - name: Maintain planned orders
+          href: master-planning/maintain-planned-orders.md
+        - name: View, manage, and approve planned orders
+          href: master-planning/planning-optimization/approved-planned-order.md
+        - name: Firm planned orders
+          href: master-planning/planning-optimization/planned-order-firming.md
+        - name: Planned orders simplified
+          href: master-planning/planning-optimization/planned-orders-simplified.md
+        - name: Action messages
+          href: master-planning/action-messages.md
       - name: Forecasting
         items:
-        - name: Demand and supply forecasting
-          items:
-          - name: Inventory forecasts
-            href: master-planning/inventory-forecast.md
-          - name: "Guide: Modify a demand forecast manually"
-            href: master-planning/tasks/modify-demand-forecast-manually.md
+        - name: Inventory forecasts
+          href: master-planning/inventory-forecast.md
+        - name: "Guide: Modify a demand forecast manually"
+          href: master-planning/tasks/modify-demand-forecast-manually.md
         - name: Demand forecasting
           items:
           - name: Demand forecasting overview
@@ -1943,10 +1913,50 @@
             href: master-planning/monitor-forecast-accuracy.md
           - name: "Guide: Create a baseline forecast"
             href: master-planning/tasks/create-baseline-forecast.md
-        - name: Master planning with forecast
-          items:
-          - name: Forecast reduction keys
-            href: master-planning/reduction-keys.md
+        - name: Forecast reduction keys
+          href: master-planning/reduction-keys.md
+      - name: Demand Driven Material Requirements Planning (DDMRP)
+        items:
+        - name: DDMRP overview
+          href: master-planning/planning-optimization/ddmrp-overview.md
+        - name: Turn on the DDMRP feature for your system
+          href: master-planning/planning-optimization/ddmrp-enable.md
+        - name: Inventory positioning
+          href: master-planning/planning-optimization/ddmrp-inventory-positioning.md
+        - name: Buffer profile and levels
+          href: master-planning/planning-optimization/ddmrp-buffer-profile-and-levels.md
+        - name: Demand driven planning
+          href: master-planning/planning-optimization/ddmrp-planning.md
+        - name: Visual and collaborative execution
+          href: master-planning/planning-optimization/ddmrp-visual-and-collaborative-execution.md
+      - name: Deprecated planning engine
+        items:
+          - name: Deprecated planning engine overview
+            href: master-planning/deprecated-master-planning-overview.md
+          - name: Migration to Planning Optimization for master planning
+            href: master-planning/new-master-planning-engine.md
+          - name: Parameters not used by Planning Optimization
+            href: master-planning/planning-optimization/not-used-parameters.md
+          - name: Differences between Planning Optimization and the deprecated master planning engine
+            href: master-planning/planning-optimization/planning-optimization-differences-with-built-in.md
+          - name: Planning Optimization fit analysis
+            href: master-planning/planning-optimization/planning-optimization-fit-analysis.md 
+          - name: Improve master planning performance
+            href: master-planning/master-planning-performance.md
+          - name: Improve scheduling engine performance
+            href: master-planning/scheduling-engine-performance.md
+          - name: Create an intercompany plan
+            href: master-planning/tasks/create-intercompany-plan.md
+          - name: View outbound planned intercompany demand
+            href: master-planning/tasks/view-outbound-planned-intercompany-demand.md
+          - name: Monitor a master planning run
+            href: master-planning/tasks/monitor-master-planning-run.md
+          - name: Net requirements and pegging information with the deprecated planning engine
+            href: master-planning/net-requirements-built-in-master-planning.md
+          - name: Create a material plan for co-products
+            href: master-planning/tasks/create-material-plan-co-products.md
+          - name: Cancel a job that was created using the deprecated master planning engine
+            href: master-planning/cancel-master-planning-job.md
     - name: Mobile app
       items:
       - name: Mobile app home page
@@ -2239,6 +2249,16 @@
           href: procurement/tasks/create-purchasing-policies.md
         - name: Set up policies for procurement category hierarchies
           href: procurement/tasks/set-up-policies-procurement-category-hierarchies.md
+      - name: Supply risk assessment
+        items:
+        - name: Supply risk assessment overview
+          href: procurement/supply-risk-assessment-overview.md
+        - name: Configure supply risk assessment
+          href: procurement/supply-risk-assessment-configuration.md
+        - name: Actionable workspace to discover and handle supplier risks
+          href: procurement/supply-risk-assessment-workspace.md
+        - name: Power BI reports for risks analysis and performance ranking
+          href: procurement/supply-risk-assessment-reports.md
       - name: Product receipts and invoicing
         items:
         - name: Product receipt against purchase orders

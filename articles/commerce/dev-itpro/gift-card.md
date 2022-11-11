@@ -2,7 +2,7 @@
 title: Support for external gift cards
 description: This article provides information about the support for external gift cards that is now available in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 04/05/2022
+ms.date: 11/04/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -134,7 +134,7 @@ In the following example, if the first four digits of a card number are **6036**
 12. Wait until **Applied** appears next to all the jobs, and then close the browser.
 
     > [!NOTE]
-    > If you are using Retail Commerce Scale Unit (RCSU) that is located in the store, you need to perform an IIS reset to clear the cache. You can either do this through the IIS application or open an admin Command Prompt window and enter `iisreset`. Otherwise, wait for the RCSU to be updated.
+    > If you're using Retail Commerce Scale Unit (RCSU) that is located in the store, you need to perform an IIS reset to clear the cache. You can either do this through the IIS application or open an admin Command Prompt window and enter `iisreset`. Otherwise, wait for the RCSU to be updated.
 
 ## Configure and test Modern POS
 
@@ -205,7 +205,7 @@ If product variants are used, the person who creates the gift card order is prom
 Modes of delivery must support the type of gift card. For example, a gift card product variant of the **Physical** style must be mapped to a mode of delivery that is related to shipping. A gift card product variant of the **Email** style must be mapped to an electronic mode of delivery. The electronic mode of delivery is defined on the **Customer orders** tab of the **Commerce parameters** page.
 
 > [!NOTE]
-> Only virtual gift cards are currently supported in e-commerce. For more details about setting up virtual gift cards in e-commerce, see [E-commerce digital gift cards](../digital-gift-cards.md). 
+> Currently, Commerce only supports digital gift cards. For information about setting up digital gift cards, see [E-commerce digital gift cards](../digital-gift-cards.md). 
 
 ## Setup for the call center and storefront
 
@@ -374,7 +374,7 @@ For physical external gift cards, complete the following steps to register the g
 > [!NOTE]
 > If the error message "Credit card process failed, due to 'Declined'" is displayed, the gift card has already been activated. You should select a different card number.
 
-When you are finished with the registration process, return to the sales order. The **Gift card number** and **Expiration** fields are displayed with the added information under the **Lines details > Packaging** section.
+When you're finished with the registration process, return to the sales order. The **Gift card number** and **Expiration** fields are displayed with the added information under the **Lines details > Packaging** section.
 
 ### Pay by using external gift cards in the call center
 

@@ -76,7 +76,7 @@ The natural sequence for building a product model for a dimension-based product 
 
 The dimension-based configuration technology is best used for products with limited variability and the combination of the standard product dimensions size, color, style, and configuration is unsuitable for identifying a specific product variant. An example could be bicycle with frame height, wheel size, brake types, and different gears.
 
-### Next step 
+### <a name="sequence"></a>Next step
 
 The following eight task guides are listed in the order in which you should complete them. 
 

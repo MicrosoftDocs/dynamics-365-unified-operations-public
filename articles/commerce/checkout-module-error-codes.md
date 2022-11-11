@@ -4,7 +4,7 @@
 title: Checkout module error reference codes
 description: This article describes the checkout module error reference codes that are shown in user-facing error messages in Microsoft Dynamics 365 Commerce.
 author: BrianShook
-ms.date: 10/20/2022
+ms.date: 10/27/2022
 ms.topic: article
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -29,9 +29,13 @@ Depending on the error that is encountered, the table in this article includes t
 - Information for consideration in the environment or payment connector configurations
 - Information that can be referenced in a support case, if additional assistance is required
 
+## Prerequisites
+
+To enable the checkout module error reference codes listed below, in site builder for your site, go to **Site settings \> Extensions**, and in the **Cart and checkout** section, select **Enable Enhanced Online Channel Error Display Messaging**. 
+
 ## Checkout module error reference codes
 
-Use the following table to get more details about error code references that are provided by customers or experienced in the online store.
+Use the following table to get more details about error code references that are provided by customers or experienced in the online store. Scroll to the right to view the **Error Description** column.
 
 | Error code | Dynamics-correlated error code | Error description |
 | ---------- | ------------------------------ | ----------------- |

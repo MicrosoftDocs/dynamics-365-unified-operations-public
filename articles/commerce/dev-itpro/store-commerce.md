@@ -41,6 +41,8 @@ The Store Commerce app is also available for the Android and iOS platforms. For 
 - Dedicated hardware station is supported.
 - Offline deployment is supported.
 
+To review the capabilities of the Store Commerce app, see [Store Commerce app capabilities](../store-commerce-capabilities.md).
+
 ## Application lifecycle management
 
 The Store Commerce app runs on Windows devices and can be downloaded from the [Shared asset library in Microsoft Lifecycle Services (LCS)](https://lcs.dynamics.com/V2/SharedAssetLibrary). On the **Shared asset library** page, select **Retail Self-service package** as the asset type, and then find the file that ends with "Store Commerce." Be sure to select the version for the Commerce release that you're using (for example, 10.0.25 or 10.0.26).
@@ -212,6 +214,8 @@ Store Commerce can be extended so that it's integrated with hardware devices. Yo
 + During activation, when prompted for entering the AAD password with multiple options, choose password. The other options might not work.
 
 ## Additional Resources
+[Store Commerce app capabilities](../store-commerce-capabilities.md)
+
 [Modernizing the Dynamics 365 Commerce in-store technology stack](https://www.microsoft.com/download/details.aspx?id=103896)
 
 [Commerce SDK Tech Talk Series](https://community.dynamics.com/365/dynamics-365-fasttrack/b/techtalks/posts/techtalk-series-commerce-extensions)

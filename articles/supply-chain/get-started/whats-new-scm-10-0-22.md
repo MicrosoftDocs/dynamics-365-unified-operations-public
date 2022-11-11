@@ -49,7 +49,7 @@ We have recently added or significantly updated the following help articles. The
 |---|---|
 | Engineering change management | [Engineering change management overview](../engineering-change-management/product-engineering-overview.md) now lists all related, optional features available in feature management |
 | Master planning | [Demand forecasting setup](../master-planning/demand-forecasting-setup.md) |
-| Master planning | [Net requirements and pegging information with Planning Optimization](../master-planning/planning-optimization/net-requirements.md) |
+| Master planning | [Net requirements and pegging information](../master-planning/planning-optimization/net-requirements.md) |
 | Warehouse management | [Release to warehouse](../warehousing/release-to-warehouse-process.md) provides a detailed overview of the full release to warehouse process |
 
 ## Additional resources

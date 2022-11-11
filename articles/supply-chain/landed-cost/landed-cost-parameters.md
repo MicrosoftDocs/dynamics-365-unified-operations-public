@@ -130,14 +130,11 @@ The settings on this tab establish the default dimensions for each designated pa
 
 The **Number sequences** tab of the **Landed cost parameters** page lists each type of reference number sequence that Landed cost requires, but that isn't shared across legal entities. For each reference in the list, select a number sequence code.
 
-> [!NOTE]
-> In a multi-company configuration, different number sequences must be created for each company (legal entity).
 
 ## Shared number sequences tab
 
 The **Shared number sequences** tab of the **Landed cost parameters** page lists each type of reference number sequence that is shared across legal entities for Landed cost. Currently, there is just one number sequence in the list. This number sequence is used for the voyage ID.
 
-On the **All voyages** page, users can view all voyages across all legal entities. However, to edit and process a voyage, users must be in the legal entity of the selected record.
 
 ## Feature visibility tab
 

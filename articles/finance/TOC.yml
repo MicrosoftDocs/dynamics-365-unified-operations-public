@@ -450,6 +450,8 @@
             href: accounts-receivable/sb-billing-schedules.md
           - name: Copy a billing schedule
             href: accounts-receivable/sb-copy-schedules-items.md
+          - name: Customer split with a billing schedule
+            href: accounts-receivable/sb-customer-split.md
           - name: Billing schedule features
             href: accounts-receivable/sb-schedule-billing-features.md
           - name: Milestone billing
@@ -692,20 +694,14 @@
         items:
         - name: Advanced bank reconciliation setup process
           href: cash-bank-management/configure-advanced-bank-reconciliation.md
-        - name: Set up the advanced bank reconciliation import process
-          href: cash-bank-management/set-up-advanced-bank-reconciliation-import-process.md
         - name: Set up advanced bank reconciliation import process using Electronic reporting
           href: accounts-payable/import-bai2-er.md
         - name: Set up bank reconciliation matching rules
           href: cash-bank-management/set-up-bank-reconciliation-matching-rules.md
         - name: Reconcile bank statements by using advanced bank reconciliation
           href: cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation.md
-        - name: Advanced bank reconciliation MT940 Import – Composite data entity upgrade
-          href: cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps.md
         - name: Advanced bank reconciliation overview
           href: cash-bank-management/advanced-bank-reconciliation-overview.md
-        - name: Bank statement file import troubleshooting
-          href: cash-bank-management/import-bank-statement-file-failed-incorrect-results.md
         - name: Update the bank journal composite entity
           href: cash-bank-management/upgrade-bank-journal-composite-entity.md
     - name: Cost accounting
@@ -1178,6 +1174,8 @@
           href: general-ledger/close-general-ledger-at-period-end.md
         - name: Financial period close workspace
           href: general-ledger/financial-period-close-workspace.md
+        - name: Optimize year-end close
+          href: general-ledger/optimize-year-end-close.md
         - name: Year-end close
           href: general-ledger/year-end-close.md
         - name: Close the fiscal year
