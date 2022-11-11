@@ -4,26 +4,15 @@
 title: Configure, install, and activate Modern POS (MPOS)
 description: This article describes how to configure, download, and install Modern POS on various platforms. It then describes how to activate Modern POS through device activation.
 author: jashanno
-ms.date: 08/31/2022
+ms.date: 11/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-
-# optional metadata
-
-ms.search.form: RetailChannelManagementWorkspace, RetailDevice, RetailTerminalTable
-# ROBOTS: 
-audience: Developer, IT Pro
-# ms.devlang: 
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-# ms.tgt_pltfrm: 
 ms.custom: 20501
 ms.assetid: 1a8dba89-f81b-40d5-9e1e-dba7b335600d
 ms.search.region: Global
-ms.search.industry: Retail
 ms.author: jashanno
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 ---
 
@@ -31,7 +20,7 @@ ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 
 [!include [banner](includes/banner.md)]
 
-This article describes how to configure, download, and install Modern POS on various platforms. This article is based on the legacy self-service installer. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](dev-itpro/Enhanced-Mass-Deployment.md). It then describes how to activate Modern POS through device activation.
+This article describes how to configure, download, and install Modern point of sale (MPOS) on various platforms. This article is based on the legacy self-service installer. For more information about sealed self-service installers, see [Mass deployment of sealed Commerce self-service components](dev-itpro/Enhanced-Mass-Deployment.md). It then describes how to activate Modern POS through device activation.
 
 > [!NOTE]
 > There are two Modern POS installers: Modern POS and Modern POS with offline (this installer also installs the offline database).
@@ -121,8 +110,7 @@ ModernPosSetupOffline.exe -UseAdfsAuthentication
 ```
 
 > [!NOTE]
->
-> the "UseAdfsAuthentication" parameter is only available for non-sealed MPOS. Customers that need to use ADFS authentication for an on-premises deployment using the sealed extensibility model should use the [Store Commerce app](dev-itpro/store-commerce.md) instead.
+> The **UseAdfsAuthentication** parameter is only available for non-sealed MPOS. Customers that need to use Active Directory Federation Services (ADFS) authentication for an on-premises deployment using the sealed extensibility model should instead use the [Store Commerce app](dev-itpro/store-commerce.md).
 
 ### Run the Modern POS installer on a Windows computer
 
