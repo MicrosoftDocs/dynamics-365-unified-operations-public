@@ -1,27 +1,24 @@
 ---
 title: Retail price reports
-description: This article provides an overview of the price report feature that can used to view the upcoming price changes for the assorted products.
+description: This article provides an overview of the price report feature that can used to view upcoming price changes for assorted products in Microsoft Dynamics 365 Commerce.
 author: ShalabhjainMSFT
-ms.date: 03/05/2019
-ms.topic: article
-ms.prod: 
-ms.technology: 
+ms.date: 11/11/2022
+ms.topic: overview
 audience: Application user
 ms.reviewer: josaw
 ms.search.region: global
 ms.author: shajain
 ms.search.validFrom: 2019-01-18
-ms.dyn365.ops.version: AX 10.0.0
 ms.custom: 16181
 ms.assetid: b1b57734-1406-4ed6-8e28-21c705ee17e2
-ms.search.industry: Retail
-ms.search.form: 
+
 ---
 
 # Retail price reports
 
 [!include [banner](includes/banner.md)]
 
+This article provides an overview of the price report feature that can used to view upcoming price changes for assorted products in Microsoft Dynamics 365 Commerce.
 
 In order to provide competitive prices to their customers, retailers often change prices of products. Store managers want the ability to easily access recent or upcoming price changes so that they can plan for the required resources to update the price labels displayed on the store shelves. With release 10.0 of Retail, a store manager can open the **Price** report by navigating to **All stores \> Store \> Price report** and viewing the updated prices for the products associated to the store. 
 
