@@ -2,18 +2,14 @@
 title: Set up an email notification profile
 description: This article describes how to create an email notification profile in Microsoft Dynamics 365 Commerce.
 author: bicyclingfool
-ms.date: 02/11/2022
+ms.date: 11/11/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
 ms.search.region: Global
 ms.author: stuharg
 ms.search.validFrom: 2020-01-20
-ms.dyn365.ops.version: Release 10.0.8
-ms.custom: 
-ms.assetid: 
+
 ---
 # Set up an email notification profile
 
@@ -24,8 +20,6 @@ This article describes how to create an email notification profile in Microsoft 
 When you create channels, you can set up an email notification profile. The email notification profile defines the events of a sales transaction (such as order created, order packed, and order invoiced events) for which you will send notifications to your customers. 
 
 For additional email configuration information, see [Configure and send email](../fin-ops-core/fin-ops/organization-administration/configure-email.md?toc=/dynamics365/commerce/toc.json).
-
-
 
 ## Create an email template
 
@@ -90,13 +84,12 @@ To set up a batch job in headquarters for sending transactional emails, follow t
 
 ### Enable optimized email notification processing
 
-The **Optimized order notifications processing** feature switch enables optimized processing of email order notifications. When this feature is enabled, order notification emails are sent by several tasks running in parallel which results in higher job throughput. 
+The **Optimized order notifications processing** feature enables optimized processing of email order notifications. When this feature is enabled, order notification emails are sent by several tasks running in parallel, resulting in higher job throughput. 
 
-To enable optimized email notification processing, go to **Workspaces** > **Feature Management** and enable the **Optimized order notifications processing** feature switch. 
+To enable optimized email notification processing, go to **Workspaces \> Feature Management** and enable the **Optimized order notifications processing** feature. 
 
 > [!NOTE]
->
-> If your Headquarters version is older than 10.0.31, you will need to cancel the currently running **Process retail email order notification** batch job by going to **System Administration > Inquiries > Batch jobs** and deleting it. Then follow the instructions in the **Schedule a recurring email notification process job** section above to recreate the batch job. 
+> If your Commerce headquarters version is older than 10.0.31, you must cancel the currently running **Process retail email order notification** batch job by going to **System Administration \> Inquiries \> Batch jobs** and deleting it. Then follow the instructions in [Schedule a recurring email notification process job](#schedule-a-recurring-email-notification-process-job) to recreate the batch job. 
 
 ## Next steps
 
