@@ -113,8 +113,9 @@ To use allocation, you must correctly set up the formula for the available-to-al
 
 A maximum of eight allocation group names can be set. The groups have a hierarchy. Follow these steps to view and update allocation groups.
 
-1. Go to **Inventory Visibility Power App \> Configuration \> Allocation \> Edit Configuration**. By default, there's an allocation hierarchy that has four layers: `Channel` (top layer), `customerGroup` (second layer),`Region` (third layer), and `OrderType` (fourth layer).
-1. You can remove the existing allocation group by selecting the cross next to it. You can also add new allocation groups to the hierarchy by entering the name of each new group directly in the field.
+1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
+1. Open the **Configuration** page, and then, on the **Allocation** tab, select **Edit Configuration**. By default, there's an allocation hierarchy that has four layers: `Channel` (top layer), `customerGroup` (second layer),`Region` (third layer), and `OrderType` (fourth layer).
+1. You can remove an existing allocation group by selecting the **X** next to it. You can also add new allocation groups to the hierarchy by entering the name of each new group directly in the field.
 
     > [!IMPORTANT]
     > Be careful when you delete or change the allocation hierarchy mapping. For guidance, see [Tips for using allocation](inventory-visibility-allocation.md#allocation-using-tips).

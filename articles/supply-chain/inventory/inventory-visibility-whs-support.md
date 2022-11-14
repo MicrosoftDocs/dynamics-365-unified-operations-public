@@ -60,7 +60,7 @@ To enable the WMS feature for Inventory Visibility, follow these steps.
 
 1. Go to **Inventory Management \> Setup \> Inventory Visibility integration parameters**.
 1. On the **Enable WMS Items** tab, set the **Enable WMS Items** option to *Yes*.
-1. Sign in to Inventory Visibility add-in Power Apps.
+1. Sign in to your Power Apps environment, and open **Inventory Visibility**.
 1. Open the **Configuration** page, and then, on the **Feature Management** tab, turn on the *AdvancedWHS* feature.
 1. In Supply Chain Management, go to **Inventory Management \> Periodic Tasks \> Inventory Visibility integration**.
 1. On the Action Pane, select **Disable** to temporarily disable Inventory Visibility.
