@@ -39,14 +39,14 @@ Employees are employed in legal entities. For example:
 - Ahmed Barnett is employed in USMF 
 - Alicia Thornber is employed in GLSI and USMF 
 
-To control which employees the user can see, select the **Restrict access to worker information** setting on the **Human Resources shared parameters** page.
+To control which employees the user can see, select the **Restrict access to worker information** parameter on the **Human Resources shared parameters** page.
 Depending on a user’s role in the company, they may need access to view all employees across all legal entities. Or they may need to be restricted to viewing only employees in the legal entity that they have access to. 
 
 For example, a user who has access to the **Worker** page and has access only to USMF:
  - If the feature isn't enabled, the user will be able to see information for Aaron, Ahmed, and Alicia.
  - When this feature is enabled, the user will see information for only Alicia and Ahmed.
 
-Depending on the application that you're using, the visual experience will vary slightly.
+Depending on the application that you're using, different information will be displayed.
 
 ### Dynamics 365 Human Resources stand-alone 
 
