@@ -219,7 +219,7 @@ For more information about how to consume Retail Server APIs in external applica
 | Name | Type | Required/Optional | Description |
 |:----|:----|:----|:----|
 | RequestedDimensionTypeValue | (int) ProductDimensionType | Required | The product dimension type to request and to aggregate inventory quantities.<br/>• (1) Color: color dimension.<br/>• (2) Configuration: configuration dimension.<br/>• (3) Size: size dimension.<br/>• (4) Style: style dimension. |
-| MatchingDimensionValues | ICollection\<ProductDimension\> | Optional | Only aggregate products which has matching dimension values. |
+| MatchingDimensionValues | ICollection\<ProductDimension\> | Optional | Only aggregate products that have matching dimension values. |
 | DefaultWarehouseOnly | bool | Optional | True to query online channel's default warehouse only; otherwise, query warehouses that are linked to the online channel's fulfillment group. |
 | FilterByChannelFulfillmentGroup | bool | Optional | Decides the fulfillment groups when DefaultWarehouseOnly is set to false. |
 | DeliveryModeTypeFilterValue | (int) DeliveryModeTypeFilter | Optional | Filter warehouses by their supported delivery modes: <br/> • (0) All: all warehouses. **Default value**. <br/> • (1) Shipping: find warehouses eligible for shipping. <br/> • (2) Pickup: find warehouses eligible for pickup. |
@@ -294,7 +294,7 @@ For more information about how to consume Retail Server APIs in external applica
 
 Both the **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs internally use the channel-side calculation logic and return estimated **physical available** quantity, **total available** quantity, **unit of measure (UoM)**, and **inventory level** for the requested product and warehouse. The returned values can be shown on your e-commerce site if you want, or they can be used to trigger other business logic on your e-commerce site. For example, you can prevent the purchase of products with an "out of stock" inventory level.
 
-Although other APIs that are available in Commerce can go directly to headquarters to fetch on-hand quantities for products, it is not recommended that they be used in an e-commerce environment because of potential performance issues and the impact that such frequent requests can have on your headquarters servers. Also, with channel-side calculation, the two APIs mentioned above can provide a more accurate estimate of a product's availability by taking into account the transactions created in the channels that aren't yet known to headquarters.
+Although other APIs that are available in Commerce can directly access headquarters to fetch on-hand quantities for products, it isn't recommended they be used in an e-commerce environment because of potential performance issues and the impact that such frequent requests can have on your headquarters servers. With channel-side calculation, the two APIs mentioned above can provide a more accurate estimate of a product's availability by taking into account the transactions created in the channels that aren't yet known to headquarters.
 
 To define how product quantity should be returned in the API output, follow these steps.
 
