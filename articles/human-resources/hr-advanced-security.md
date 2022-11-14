@@ -75,7 +75,7 @@ After you enable the feature, you must complete some extra steps to set permissi
 2. Select a role for the user. The **Assign organizations** option becomes available.
 3. Select **Assign organizations**.
 4. On the new page, select **Grant access to specific organizations individually**, and then select the organizations that the user should have access to.
-5. Repeat steps 2 through 4 for every additional role that the user has, including the system user role.
+5. Repeat steps 2 through 4 for every other role that the user has, including the system user role.
 
 > [!NOTE]
 > The legal entities that a user has access to must match across all the user's roles.
