@@ -29,7 +29,7 @@ The **Customer credit and collections** workspace also shows the customer aging.
 > To help reduce the time that is required to create an aging snapshot, turn on the following features in the **Feature management** workspace: 
 > - **Customer aging performance enhancement** 
 > - **Customer aging performance enhancement with customer pools**  
-> With both features enabled, **Customer pools** can be used when creating the aging snapshot. 
+>With both features enabled, **Customer pools** can be used when creating the aging snapshot. 
 
 When you create a customer aging snapshot, use the following fields to enter information about it:
 
