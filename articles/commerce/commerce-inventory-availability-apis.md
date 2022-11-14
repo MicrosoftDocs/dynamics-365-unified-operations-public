@@ -1,32 +1,31 @@
 ---
 title: Inventory availability APIs for e-commerce
-description: This article describes the inventory availability APIs for e-commerce.
+description: This article describes the inventory availability APIs for e-commerce in Microsoft Dynamics 365 Commerce.
 author: rickwyang
-ms.date: 11/10/2022
+ms.date: 11/14/2022
 ms.topic: article
-ms.prod:
-ms.technology:
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
 ms.search.region: Global
 ms.author: wenxyang
 ms.search.validFrom: 2022-11-10
-ms.dyn365.ops.version: Release 10.0.10
-ms.custom:
-ms.assetid:
+
 ---
 # Inventory availability APIs for e-commerce
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
+
+This article describes the inventory availability APIs for e-commerce in Microsoft Dynamics 365 Commerce.
 
 Commerce provides the following APIs for e-commerce scenarios to query inventory availability of a product:
 
 - **GetEstimatedAvailability** – Use this API to query inventory for a product or product variant in the online channel's default warehouse or warehouses that are linked to the online channel's fulfillment group.
 - **GetEstimatedProductWarehouseAvailability** – Use this API to query inventory for a product or product variant from a specific warehouse.
-- **GetDimensionValuesWithEstimatedAvailabilities** – Use this API to query inventory levels aggregated on the dimensions for a product, in the online channel's default warehouse or warehouses that are linked to the online channel's fulfillment group.
+- **GetDimensionValuesWithEstimatedAvailabilities** – Use this API to query inventory levels aggregated on the dimensions for a product, either in the online channel's default warehouse or warehouses that are linked to the online channel's fulfillment group.
 
 > [!NOTE]
-> GetEstimatedAvailability and GetEstimatedProductWarehouseAvailability APIs replace the **GetProductAvailabilities** and **GetAvailableInventoryNearby** APIs in Commerce release 10.0.7 and earlier.
+> The **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs replace the **GetProductAvailabilities** and **GetAvailableInventoryNearby** APIs used in Commerce versions 10.0.7 and earlier.
 
 For more information about how to consume Retail Server APIs in external applications, see [Consume Retail Server APIs in external applications](dev-itpro/consume-retail-server-api.md).
 
@@ -293,14 +292,14 @@ For more information about how to consume Retail Server APIs in external applica
 
 ## The quantity output of APIs
 
-Both GetEstimatedAvailability and GetEstimatedProductWarehouseAvailability APIs internally use the channel-side calculation logic and return estimated **physical available** quantity, **total available** quantity, **unit of measure (UoM)**, and **inventory level** for the requested product and warehouse. The returned values can be shown on your e-commerce site if you want, or they can be used to trigger other business logic on your e-commerce site. For example, you can prevent the purchase of products with an "out of stock" inventory level.
+Both the **GetEstimatedAvailability** and **GetEstimatedProductWarehouseAvailability** APIs internally use the channel-side calculation logic and return estimated **physical available** quantity, **total available** quantity, **unit of measure (UoM)**, and **inventory level** for the requested product and warehouse. The returned values can be shown on your e-commerce site if you want, or they can be used to trigger other business logic on your e-commerce site. For example, you can prevent the purchase of products with an "out of stock" inventory level.
 
-Although other APIs that are available in Commerce can go directly to headquarters to fetch on-hand quantities for products, we don't recommend that they be used in an e-commerce environment because of potential performance issues and the impact that these frequent requests can have on your headquarters servers. Additionally, with channel-side calculation, the two APIs mentioned above can provide a more accurate estimate of a product's availability by taking into account the transactions created in the channels that aren't yet known to headquarters.
+Although other APIs that are available in Commerce can go directly to headquarters to fetch on-hand quantities for products, it is not recommended that they be used in an e-commerce environment because of potential performance issues and the impact that such frequent requests can have on your headquarters servers. Also, with channel-side calculation, the two APIs mentioned above can provide a more accurate estimate of a product's availability by taking into account the transactions created in the channels that aren't yet known to headquarters.
 
 To define how product quantity should be returned in the API output, follow these steps.
 
 1. Go to **Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**.
-1. Select the **Inventory** tab, and then on the **Inventory availability APIs for e-Commerce** FastTab configure the value of the **Quantity in API output** setting.
+1. Select the **Inventory** tab, and then on the **Inventory availability APIs for e-Commerce** FastTab, configure the value of the **Quantity in API output** setting.
 1. Run the **1070** (**Channel configuration**) job to sync the latest setting to channels.
 
 The **Quantity in API output** setting provides three options:
