@@ -1,6 +1,6 @@
 ---
 title: Configure your B2C tenant in Commerce site builder
-description: This article describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
+description: This article describes how to configure your business-to-consumer (B2C) tenant in Microsoft Dynamics 365 Commerce site builder.
 author: BrianShook
 ms.date: 11/14/2022
 ms.topic: article 
@@ -12,9 +12,11 @@ ms.search.validFrom: 2020-02-13
 
 ---
 
-# Set up a B2C tenant in Commerce
+# Configure your B2C tenant in Commerce site builder
 
 [!include [banner](includes/banner.md)]
+
+This article describes how to configure your business-to-consumer (B2C) tenant in Microsoft Dynamics 365 Commerce site builder.
 
 Once setup of your Azure AD B2C tenant is completed, you must configure the B2C tenant in Commerce site builder. Configuration steps include collecting B2C application information from the Azure portal, entering that B2C application information into site builder, and then associating the B2C application with your site and channel.
 
@@ -59,7 +61,7 @@ To add your Azure AD B2C tenant application information to Commerce, follow thes
 1. Select **OK**. You should now see the name of your B2C application appear in the list.
 1. Select **Save** to save your changes.
 
-The optional **Login custom domain** field should only be used if you are setting up a custom domain for the Azure AD B2C tenant. For additional details and considerations regarding the usage of the **Login custom domain** field, see [Additional B2C information](#additional-b2c-information) below.
+The optional **Login custom domain** field should only be used if you are setting up a custom domain for the Azure AD B2C tenant. For additional details and considerations regarding the usage of the **Login custom domain** field, see [Additional B2C information](additional-b2c-info.md).
 
 ### Associate the B2C application to your site and channel
 
