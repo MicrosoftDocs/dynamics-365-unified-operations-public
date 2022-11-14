@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Configure worker access
+title: Restrict access to workers by legal entity
 description: This article explains how to set up worker access by legal entity.
 author: twheeloc
 ms.date: 11/28/2022
@@ -33,49 +33,49 @@ This article explains how to set up worker access by legal entity.
 
 [!include [Applies to Human Resources](../includes/applies-to-hr.md)]
 
+Employees are employed in legal entities. Here are some examples:
 
-Employees are employed in legal entities. For example:
-- Aaron Con is employed in USSI 
-- Ahmed Barnett is employed in USMF 
-- Alicia Thornber is employed in GLSI and USMF 
+- Aaron Con is employed in the USSI legal entity.
+- Ahmed Barnett is employed in the USMF legal entity.
+- Alicia Thornber is employed in the GLSI and USMF legal entities.
 
-To control which employees the user can see, select the **Restrict access to worker information** parameter on the **Human Resources shared parameters** page.
-Depending on a user’s role in the company, they may need access to view all employees across all legal entities. Or they may need to be restricted to viewing only employees in the legal entity that they have access to. 
+Depending on a user's role in the company, they might require access to view all employees across all legal entities. Alternatively, a user might have to be restricted, so that they can view only employees in the legal entity that they have access to. To control which employees a user can view, select the **Restrict access to worker information** parameter on the **Human Resources shared parameters** page.
 
-For example, a user who has access to the **Worker** page and has access only to USMF:
- - If the feature isn't enabled, the user will be able to see information for Aaron, Ahmed, and Alicia.
- - When this feature is enabled, the user will see information for only Alicia and Ahmed.
+For example, a user has access to the **Worker** page and has access only to the USMF legal entity. In this case, the user can view the following information for the employees in the preceding list:
 
-Depending on the application that you're using, different information will be displayed.
+- If the feature for restricting access to worker information isn't enabled, the user can view information for Aaron, Ahmed, and Alicia.
+- If the feature is enabled, the user can view information only for Alicia and Ahmed, because they're also employed in the USMF legal entity.
 
-### Dynamics 365 Human Resources stand-alone 
+The information that's shown varies, depending on the application that you're using.
 
-When the feature is enabled to restrict access to worker information, the restricted user will see a blank value in some lists that contain the worker name. 
+## Dynamics 365 Human Resources stand-alone
 
-For example: 
- - The user only has access to USMF. 
- - On the **Active positions** list, the **Worker** column will be blank for Aaron’s position because the user doesn't have access to employees in USSI. 
- - If the user drills down on the worker name, a blank **Worker** page will be displayed.
+If the feature for restricting access to worker information is enabled, the restricted user will see a blank value in some lists that contain the worker's name.
 
-### Dynamics 365 Human Resources on Finance infrastructure 
+For example, a user who has access only to the USMF legal entity will experience the following behavior:
 
-When the feature is enabled to restrict access to worker information, the restricted user will see the worker name in some lists. 
-For example: 
- - The user only has access to USMF. 
- - On the **Active positions** list, the **Worker** column will display Aaron’s name. When hovering on the name, only the name and title will display. 
- - If the user drills down on the worker name, a blank **Worker** page will be displayed.
+- In the **Active positions** list, the **Worker** column will be blank for Aaron's position, because the user doesn't have access to employees in the USSI legal entity.
+- If the user drills down on the worker's name, a blank **Worker** page will appear.
 
->[!Note] 
->If you are using Dynamics 365 Human resources on Finance infrastructure and would like restricted users to see blank values for worker names. You can add 
-security privilege **Restrict access to workers** to the user roles in **Security configuration** page.
+## Dynamics 365 Human Resources on Finance infrastructure
 
+If the feature for restricting access to worker information is enabled, the restricted user will see the worker's name in some lists.
 
-After turning on the feature, there are extra steps to set permissions for each user whose view must be restricted.
-1.	On the **Users** page, select a user.
-2.	Select a role for the user. The **Assign organizations** option becomes available.
-3.	Select **Assign organizations**.
-4.	On the new page, select **Grant access to specific organizations individually**, and then select the organizations that the user should have access to.
-5.	Repeat steps 2 through 4 for every additional role that the user has, including the system user role.
+For example, a user who has access only to the USMF legal entity will experience the following behavior:
 
->[!Note] 
->The companies that a user has access to must match across all the user's roles.
+- In the **Active positions** list, the **Worker** column will show Aaron's name. If the user hovers over the worker's name, only the name and title will be shown.
+- If the user drills down on the worker's name, a blank **Worker** page will appear.
+
+> [!TIP]
+> If you're using Dynamics 365 Human resources on Finance infrastructure and want restricted users to see blank values for worker names, you can add the **Restrict access to workers** security privilege to the user roles on the **Security configuration** page.
+
+After you enable the feature, you must complete some extra steps to set permissions for each user whose view must be restricted.
+
+1. On the **Users** page, select a user.
+2. Select a role for the user. The **Assign organizations** option becomes available.
+3. Select **Assign organizations**.
+4. On the new page, select **Grant access to specific organizations individually**, and then select the organizations that the user should have access to.
+5. Repeat steps 2 through 4 for every additional role that the user has, including the system user role.
+
+> [!NOTE]
+> The legal entities that a user has access to must match across all the user's roles.
