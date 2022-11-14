@@ -793,15 +793,15 @@
           - name: Calculate inventory availability for retail channels
             href: calculated-inventory-retail-channels.md
           - name: How to use channel-side inventory calculation
-            href: how-to-use-channel-side-calculation.md
+            href: use-channel-side-calculation.md
           - name: Configure inventory buffers and inventory levels
             href: inventory-buffers-levels.md
           - name: Inventory availability APIs for e-commerce
             href: inventory-availability-apis.md
           - name: POS inventory lookup with channel-side calculation
-            href: inventory-lookup-with-channel-side-calculation.md
+            href: inventory-lookup-channel-side-calc.md
           - name: Optimize your inventory data
-            href: optimize-inventory-availability-data.md
+            href: optimize-inventory-data.md
           - name: Channel-side calculation frequently asked questions
             href: channel-side-calculation-faq.md
           - name: Inventory-aware product listing
@@ -811,7 +811,7 @@
           - name: Store inventory management
             href: work-with-store-inventory.md
           - name: Commerce asynchronous document framework
-            href: asynchronous-document-framework.md
+            href: async-document-framework.md
           - name: Inbound inventory operation in POS
             href: pos-inbound-inventory-operation.md
           - name: Outbound inventory operation in POS
