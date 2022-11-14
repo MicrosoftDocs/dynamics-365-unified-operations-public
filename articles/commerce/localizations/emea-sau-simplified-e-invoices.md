@@ -25,7 +25,7 @@ This article provides an overview of the functionality of simplified electronic 
 The electronic invoicing functionality that is available for Saudi Arabia in Commerce provides the following capabilities:
 
 - Generation of an XML file of a simplified e-invoice upon concluding a sales transaction in Commerce point of sale (POS).
-- Generation of a cryptographic stamp for the simplified e-invoice.
+- Generation of a cryptographic stamp (that is, a digital signature) for the simplified e-invoice.
 - Generation and printing of QR code for the simplified e-invoice that includes the cryptographic stamp.
 - Submission of the simplified e-invoice from Commerce headquarters to Saudi Arabian tax authorities (Zakat, Tax and Customs Authority - ZATCA) for reporting purposes.
 
@@ -162,28 +162,20 @@ To enable the fiscal registration process for Saudi Arabia in Commerce headquart
 
 ### Configure the digital signature parameters
 
-You must configure certificates that will be used for digital signing of records on the Commerce channel side (sales transactions and audit events) and on the Commerce headquarters side (period grand total journals, Z reports, and fiscal archives). The signing is done by using a digital certificate that is stored in Azure Key Vault. For the offline mode of Modern POS, the signing can also be done by using a digital certificate that is stored in the local storage of the machine that Modern POS is installed on. The [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature enables configuration of certificates that are stored in Key Vault. It also supports failover to offline mode when Key Vault or Commerce headquarters isn't available. This feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
+You must configure certificates that will be used for digital signing of simplified e-invoices. The signing is done by using digital certificates that are stored in Azure Key Vault. For the offline mode of Modern POS, the signing can also be done by using a digital certificate that is stored in the local storage of the machine that Modern POS is installed on. The [User-defined certificate profiles for retail stores](./certificate-profiles-for-retail-stores.md) feature enables configuration of certificates that are stored in Key Vault. It also supports failover to offline mode when Key Vault or Commerce headquarters isn't available. This feature extends the [Manage secrets for retail channels](../dev-itpro/manage-secrets.md) feature.
+
+<!-- NEED TO UPDATE THE NOTE BELOW AND ADD INFORMATION ABOUT HOW TO GET CERTIFICATES FOR SAUDI ARABIA
 
 > [!NOTE]
-> You can use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing. Only certificates that have RSA-2048-bit or Elliptic Curve Digital Signature Algorithm (ECDSA) 224-bit minimum private keys are acceptable. Commerce supports only RSA-2048-bit or longer keys. If you want to use an ECDSA key, you must implement a customization.
+> You should use either a digital certificate that is issued by an accredited body or a self-signed certificate for digital signing. Only certificates that have RSA-2048-bit or Elliptic Curve Digital Signature Algorithm (ECDSA) 224-bit minimum private keys are acceptable. Commerce supports only RSA-2048-bit or longer keys. If you want to use an ECDSA key, you must implement a customization.
+
+-->
 
 To configure certificates and certificate profiles that can be used for digital signing, follow the steps in [Set up certificate profiles](./certificate-profiles-for-retail-stores.md#set-up-certificate-profiles).
 
-After you configure certificate profiles, go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**, select the connector technical profile that you created earlier, and then, on the **Settings** FastTab, set the following parameters for digital signatures:
+After you configure certificate profiles, go to **Retail and Commerce \> Channel setup \> Fiscal integration \> Connector technical profiles**, select the connector technical profile that you created earlier, and then, on the **Device** FastTab, select a certificate profile that you configured earlier in the **Certificate profile** field.
 
-- **Certificate profile** – Select the certificate profile that you configured earlier.
-- **Hash algorithm** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET (for example, **SHA256**).
-- **Activate health check** – For more information about the health check feature, see [Fiscal registration health check](./fiscal-integration-for-retail-channel.md#fiscal-registration-health-check).
-
-Finally, on the **Commerce parameters** page (**Retail and Commerce \> Headquarters setup \> Parameters \> Commerce parameters**), you must specify the following parameters for digital signing on the Commerce headquarters side:
-
-- **Certificate** – Select a certificate that is stored in Key Vault.
-- **Hash function** – Specify one of the cryptographic hash algorithms that are supported by Microsoft .NET, such as **SHA256**.
-- **Encoding** – Specify the encoding of the signed data, such as **UTF-8**.
-- You can also specify a number sequence to use for automatic numbering of period grand total journals. On the **Number sequences** tab, select a record where the **Reference** field is set to **Period grand total journal**, and then select a number sequence code in it.
-
-> [!NOTE]
-> The following hash functions aren't acceptable: CRC16, CRC32, SHA-1, and MD5. Commerce supports only the SHA256, SHA384, and SHA512 hash functions. If you want to use a different hash function, you must implement a customization.
+You can also override the connector technical profile settings and specify certificate profiles on the individual store or register level. On the **Connector technical profile** page, select the **Override** menu item and create records for the stores or registers that you need to override the certificate profiles for. See [Create connector technical profiles](./setting-up-fiscal-integration-for-retail-channel.md#create-connector-technical-profiles) for more details on how to override connector technical profile settings.
 
 ### Configure the Z report and archive export formats
 
