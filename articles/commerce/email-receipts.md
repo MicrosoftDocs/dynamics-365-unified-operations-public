@@ -41,6 +41,8 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
 
 ### Set default options for email receipts
 
+To configure the default emailed receipt behavior for all customers, do the following steps:
+
 1. Select **Retail and Commerce &gt; Headquarters setup &gt; Parameters &gt; Commerce parameters**.
 1. On the **Posting** tab, on the **Email receipt** FastTab, in the **Receipt option** field, select a default option:
 
@@ -50,11 +52,11 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
 
 1. In the **Subject** field, enter the text that should appear by default on the subject line of a receipt that is sent as an email message.
 
-### Set email receipt options for a customer
+If you want to override the default option selected in **Commerce parameters** for a single customer, do the following:
 
 1. Go to **Retail and Commerce &gt; Customers &gt; All customers**.
 1. On the **All customers** list page, select a customer, and then select **Edit**.
-1. On the customer details page, on the **Commerce** FastTab, in the **Receipt option** field, select an option:
+1. Select the **Commerce** tab and open the **Retail** FastTab. in the **Receipt option** field, select an option:
 
     - **Standard receipt** – The customer will receive only printed receipts. The printed receipt is generated from the POS register.
     - **Email** – The customer will receive only email receipts.
@@ -75,6 +77,14 @@ To send email receipts, you must configure a Simple Mail Transfer Protocol (SMTP
 1. Go to **Retail and Commerce &gt; Channel setup &gt; POS setup &gt; POS profiles &gt; Functionality profiles**.
 1. Select **Edit**.
 1. On the **General** FastTab, in the **Receipt profile ID** field, specify an email receipt profile.
+
+### Enable emailing for receipt types
+
+To enable emailing for individual receipt types within your receipt profile and specify whether cashiers are prompted to ask customers if they'd like an emailed receipt, open the receipt format for that receipt and select one of the following options in the **email behavior** dropdown. 
+
+- **Do not email** – Never send email receipts or prompt cashiers. This value overrides the **Email** and **Both** values on the **Commerce parameters** and **Customer profile** pages.
+- **Always email** – Always send emailed receipts, without prompting cashiers.
+- **Prompt user** – Prompt cashiers to ask customers whether they want to receive a receipt by email and, if they do, what email address the receipt should be sent to.
 
 ### Set up an email template for receipts
 
