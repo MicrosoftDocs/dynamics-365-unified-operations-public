@@ -1,7 +1,7 @@
 ---
 title: Modification on switch functions and frontend
 description: This topic introduces the modification on switch functions and frontent in order to integrate a new transaction.
-author: Quichen-Ren
+author: Qiuchen-Ren
 ms.author: qire
 ms.reviewer: kfend
 ms.topic: conceptual
