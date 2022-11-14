@@ -24,7 +24,7 @@ Group-based role assignments are applied by using manual and automatic rule-base
 
 ## Known limitations when the Active Directory security groups feature is used
 
-Before you enable the **Active Directory security groups** feature, it's important that you be aware of the following known limitations. Several of the limitations affect internal control and auditing.
+Before you enable the **Active Directory security groups** feature, it's important that you are aware of the following known limitations. Several of the limitations affect internal control and auditing.
 
 - Segregation of duty reporting doesn't consider these role assignments.
 - No database logging can be done for these role assignments.
