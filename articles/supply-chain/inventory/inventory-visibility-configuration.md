@@ -54,7 +54,7 @@ The Inventory Visibility Add-in adds several new features to your Power Apps ins
 
 ## <a name="get-service-endpoint"></a>Find the service endpoint
 
-If you don't know the correct Inventory Visibility service endpoint, open the **Configuration** page in Power Apps, and then select **Show Service Details** in the upper-right corner. The page will show the correct service endpoint. You can also find the endpoint in Microsoft Dynamics Lifecycle Services, as described in [Find the endpoint according to your Lifecycle Services environment](inventory-visibility-api.md/#endpoint-lcs).
+If you don't know the correct Inventory Visibility service endpoint, open the **Configuration** page in Power Apps, and then select **Show Service Details** in the upper-right corner. The page will show the correct service endpoint. You can also find the endpoint in Microsoft Dynamics Lifecycle Services, as described in [Find the endpoint according to your Lifecycle Services environment](inventory-visibility-api.md#endpoint-lcs).
 
 > [!NOTE]
 > Use of an incorrect endpoint can cause a failed Inventory Visibility installation and errors when Supply Chain Management is synced to Inventory Visibility. If you aren't sure what your endpoint is, contact your system administrator. Endpoint URLs use the following format:

@@ -34,7 +34,7 @@ The previous illustration shows how soft reservation works and highlights the fo
 - Soft reservations are posted from each of your order channels or systems to Inventory Visibility. Inventory Visibility validates inventory availability and tries to make a soft reservation. If soft reservation succeeds, Inventory Visibility adds to the soft reserved quantity, deducts from the available for reservation (AFR) quantity, and respond with a soft reservation ID.
 - At this time, your physical inventory quantity remains the same.
 - You can then sync either single or aggregated soft-reserved orders (order lines) into Supply Chain Management to make hard reservations and release to the warehouse or update the final inventory quantity.
-- You can set the system to [offset soft reservations](inventory-visibility-reservations.md#offset-reservations-in-supply-chain-management) when physical inventory is updated in Supply Chain Management.
+- You can set the system to [offset soft reservations](#offset-scm) when physical inventory is updated in Supply Chain Management.
 
 Soft reservations are usually created, consumed, and canceled by using API calls to the Inventory Visibility service.
 
@@ -134,7 +134,7 @@ Authorization: "Bearer {access_token}"
 
 A successful soft reservation request returns a *soft reservation ID* for each reservation record. The soft reservation ID isn't a unique identifier for an individual soft reservation record, but a combination of the product ID and dimension values that are associated with the soft reservation request. You can record the soft reservation ID on the order line when you sync the successfully reserved orders to Supply Chain Management or another ERP system for offset.
 
-### Offset soft reservation in Supply Chain Management
+### <a name="offset-scm"></a>Offset soft reservations in Supply Chain Management
 
 You can offset a soft-reserved quantity after the quantity on an order is physically deducted in Supply Chain Management or another ERP system. Inventory Visibility offers out-of-box soft reservation offset integration with Supply Chain Management.
 

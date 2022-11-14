@@ -118,13 +118,13 @@ A maximum of eight allocation group names can be set. The groups have a hierarch
 1. You can remove an existing allocation group by selecting the **X** next to it. You can also add new allocation groups to the hierarchy by entering the name of each new group directly in the field.
 
     > [!IMPORTANT]
-    > Be careful when you delete or change the allocation hierarchy mapping. For guidance, see [Tips for using allocation](inventory-visibility-allocation.md#allocation-using-tips).
+    > Be careful when you delete or change the allocation hierarchy mapping. For guidance, see [Tips for using allocation](#allocation-tips).
 
 1. When you've finished configuring the allocation group and hierarchy settings, save your changes, and then select **Update Configuration** in the upper right. The values of the configured allocation groups will be updated when you create an allocation by using either the user interface or API POST (/api<wbr>/environment<wbr>/\{environmentId\}<wbr>/allocation<wbr>/allocate). Details about both approaches are provided later in this article.
 
 If you use four group names and set them to \[`channel`, `customerGroup`, `region`, `orderType`\], these names will be valid for allocation-related requests when you call the configuration update API.
 
-### Tips for using allocation
+### <a name="allocation-tips"></a>Tips for using allocation
 
 - For every product, the allocation function should use in the same *dimension level* according to the product index hierarchy you set in the [product index hierarchy configuration](inventory-visibility-configuration.md#index-configuration). For example, suppose your index hierarchy is \[`Site`, `Location`, `Color`, `Size`\]. If you allocate some quantity for one product in the dimension level \[`Site`, `Location`, `Color`\], the next time you want to allocate this product, you should also allocate at the same level, \[`Site`, `Location`, `Color`\]. If you use the level \[`Site`, `Location`, `Color`, `Size`\] or \[`Site`, `Location`\], the data will be inconsistent.
 - **Modifying allocation groups and the hierarchy:** If allocation data already exists in the system, deletion of existing allocation groups or a shift in the allocation group hierarchy will corrupt the existing mapping between the allocation groups. Therefore, be sure to manually clean up all the old data before you update your new configuration. However, because the addition of new allocation groups to the lowest hierarchy doesn't affect existing mappings, you won't need to clean the data.
