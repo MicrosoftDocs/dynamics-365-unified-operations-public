@@ -14,6 +14,7 @@ ms.search.validFrom: 2022-11-10
 # Channel-side calculation frequently asked questions
 
 [!include [banner](../includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
 This article answers frequently asked questions (FAQs) about the channel-side calculation feature in Microsoft Dynamics 365 Commerce.
 
