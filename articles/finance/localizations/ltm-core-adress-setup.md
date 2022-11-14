@@ -2,7 +2,7 @@
 title: ltm-core-adress-setup
 description: This topic provides information about how to complete address setup´s Latam extension
 author: cpicon85 
-ms.date: 27/10/2022  
+ms.date: 14/11/2022  
 ms.topic: article
 ms.reviewer: kfend
 ms.author: v-cpicon 
