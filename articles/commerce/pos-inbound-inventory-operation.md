@@ -30,7 +30,7 @@ Before your organization can use the inbound operation functionality, you must f
 
 ### Configure an asynchronous document framework
 
-For instructions on how to complete configure an asynchronous document framework, see [Commerce asynchronous document framework](commerce-asynchronous-document-framework.md). You can skip this step if you have already configured an asynchronous document framework for other operations.
+For instructions on how to complete configure an asynchronous document framework, see [Commerce asynchronous document framework](async-document-framework.md). You can skip this step if you have already configured an asynchronous document framework for other operations.
 
 ### Add Inbound operation to the POS screen layout
 
