@@ -19,6 +19,18 @@ ms.dyn365.ops.version: 10.0.21
 
 This article lists new features, fixes, improvements, and known issues for each released version of the Warehouse Management mobile app for Microsoft Dynamics 365 Supply Chain Management.
 
+## Version 2.0.37.0
+
+This version introduces the following new features, fixes, and improvements:
+- Added a user setting that lets workers choose where the app displays product photos (in both cards and step headers, only in step headers, or not at all). 
+- Improved the details card screen layout by reducing the size of the step banner and quantity input spinner, which leaves more room for other content. 
+- Improved the user interface when running on a Honeywell Thor device. 
+- Improved full-screen mode (only applies to devices with a hardware keyboard). 
+- Improved results when sorting details cards and custom pages by priority or sub-priority (DataPriority or DisplaySubPriority). 
+- Added support for more languages. 
+- Improved stability. 
+- Improved several images and icons. 
+
 ## Version 2.0.35.0
 
 This version introduces the following new features, fixes, and improvements:
