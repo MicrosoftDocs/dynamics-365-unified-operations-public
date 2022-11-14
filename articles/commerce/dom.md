@@ -72,7 +72,7 @@ The following illustration shows the lifecycle of a sales order in a DOM system.
         > [!NOTE]
         > The Simplified Solver is provided so that retailers can try out the DOM feature without having to deploy the special license. Organizations should not use the Simplified Solver in production environments.
         >
-        > The Production Solver improves performance (such as the number of orders and order lines that can be handled in a run) and convergence of results (since a batch of orders might not yield the best result in some scenarios). Some rules like the **Partial orders** rule and the **Maximum number of locations** rule require Production Solver.
+        > The Production Solver improves performance (such as the number of orders and order lines that can be handled in a run) and convergence of results (since a batch of orders might not yield the best result in some scenarios). The **Partial orders** rule requires Production Solver.
 
 6. Go back to **Retail and Commerce \> Distributed order management \> Setup \> DOM parameters**.
 7. On the **Number sequences** tab, assign the required number sequences to the various DOM entities.
