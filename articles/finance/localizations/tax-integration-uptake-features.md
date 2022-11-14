@@ -1,7 +1,7 @@
 ---
 title: Update features and functions 
 description: This article introduces the features and functions that must be implemented to integrate a new transaction.
-author: Quichen-Ren
+author: Qiuchen-Ren
 ms.author: qire
 ms.reviewer: kfend
 ms.topic: conceptual
