@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: What's new or changed in Dynamics 365 Human Resources 10.0.31 (January 2023)
+title: What's new or changed in Dynamics 365 Human Resources 10.0.31 (February 2023)
 description: This article describes features that are either new or changed in the Microsoft Dynamics 365 Human Resources version 10.0.31 preview release.
 author: twheeloc
 ms.date: 10/12/2022
@@ -27,7 +27,7 @@ ms.dyn365.ops.version: 10.0.30
 
 ---
 
-# What's new or changed in Dynamics 365 Human Resources 10.0.31 (January 2023)
+# What's new or changed in Dynamics 365 Human Resources 10.0.31 (February 2023)
 
 [!include [banner](../../includes/preview-banner.md)]
 
