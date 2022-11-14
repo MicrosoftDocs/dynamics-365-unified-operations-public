@@ -64,7 +64,7 @@ You must also specify the following settings for Saudi Arabia. Note that you mus
 1. [Enable Commerce features](#enable-features-for-saudi-arabia) for Saudi Arabia in the **Feature management** workspace.
 1. [Specify a tax registration number](#set-up-the-legal-entity) of the organization on the **Legal entities** page.
 1. [Set up VAT](#set-up-vat-per-saudi-arabia-requirements) per the Saudi Arabia VAT regulations.
-1. [Configure custom fields](#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts) and [receipt formats](#configure-receipt-formats) to comply with the local regulatory requirements.
+1. [Configure custom fields](#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts) and [receipt formats](#configure-receipt-formats) to print QR codes in receipts and comply with the local regulatory requirements.
 1. [Configure the fiscal registration functionality](#set-up-fiscal-registration) for Saudi Arabia to enable generation and digital signing of simplified e-invoices.
 1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the Commerce channel and Commerce headquarters sides.
 1. [Specify Electronic reporting (ER) configurations](#specify-electronic-reporting-configurations) that should be used to generate simplified e-invoices in POS.
