@@ -20,11 +20,11 @@ ms.dyn365.ops.version: AX 7.0
 
 **Active Directory security groups** is a legacy feature that enables roles and organizations to be assigned to users, based on their memberships in Microsoft Active Directory security groups. (For more information about Active Directory security groups, see [Active Directory security groups](/windows-server/identity/ad-ds/manage/understand-security-groups).) The feature also enables just-in-time (JIT) provisioning of users when they sign in to the finance and operations environment for the first time.
 
-Group-based role assignments are applied with manual and automatic rule-based assignments for a user. The union of assigned roles determines the actual data access.
+Group-based role assignments are applied by using manual and automatic rule-based assignments for a user. The union of assigned roles determines the actual data access.
 
 ## Known limitations when the Active Directory security groups feature is used
 
-Before you enable the **Active Directory security groups** feature, it's important that you be aware of the following known limitations. Role assignments are resolved at sign-in and aren't persisted by finance and operations apps. Several of the limitations affect internal control and auditing.
+Before you enable the **Active Directory security groups** feature, it's important that you be aware of the following known limitations. Several of the limitations affect internal control and auditing.
 
 - Segregation of duty reporting doesn't consider these role assignments.
 - No database logging can be done for these role assignments.
