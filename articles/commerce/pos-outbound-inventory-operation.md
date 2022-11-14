@@ -28,11 +28,11 @@ Before your organization can use the outbound operation functionality, you must 
 
 ### Configure an asynchronous document framework
 
-For instructions on how to complete configure an asynchronous document framework, see [Commerce asynchronous document framework](async-document-framework.md). You can skip this step if you have already configured an asynchronous document framework for other operations.
+For instructions on how to configure an asynchronous document framework, see [Commerce asynchronous document framework](async-document-framework.md). You can skip this step if you've already configured an asynchronous document framework for other operations.
 
 ### Add Outbound operation to the POS screen layout
 
-You must configure the **Outbound operation** POS operation on one or more of your [POS screen layouts](/dynamics365/unified-operations/retail/pos-screen-layouts). Before you deploy the new operation in a production environment, ensure that you thoroughly test it and train your users to use it.
+You must configure the **Outbound operation** POS operation on one or more of your [POS screen layouts](/dynamics365/unified-operations/retail/pos-screen-layouts). Before you deploy the new operation in a production environment, ensure that you thoroughly test it, and train your users to use it.
 
 ## Outbound inventory operation
 
@@ -46,7 +46,7 @@ When the outbound operation is started from the POS application, a list page vie
 
 The outbound inventory document list has three tabs.
 
-- **Active** – This tab shows transfer orders that have a status of **Requested** or **Partially Shipped**. The orders contain lines or quantities on lines that must be shipped by the user's current store. This tab also shows orders that have a status of **Processing in HQ** (that is, they are waiting for confirmation of successful posting from headquarters) or **Processing failed** (that is, posting to headquarters was unsuccessful, and the user must correct data and try again to submit the orders).
+- **Active** – This tab shows transfer orders that have a status of **Requested** or **Partially Shipped**. The orders contain lines or quantities on lines that must be shipped by the user's current store. This tab also shows orders that have a status of **Processing in HQ** (that is, they're waiting for confirmation of successful posting from headquarters) or **Processing failed** (that is, posting to headquarters was unsuccessful, and the user must correct data and try again to submit the orders).
 - **Draft** – This tab shows new outbound transfer order requests that the user's store created. However, the documents have only been saved locally. They haven't yet been submitted to headquarters for processing.
 - **Complete** – This tab shows a list of transfer order documents that the store has fully shipped during the last seven days. This tab is for informational purposes only. All the information about the documents is read-only data for the store.
 
@@ -95,7 +95,7 @@ After the shipment is synced to headquarters, the quantities that are defined in
 
 If the items that are being shipped are location-controlled, users can choose the location that they want to issue the inventory from during the shipping process. We recommend that you configure a default issue location for your store warehouse, to make this process more efficient. Even if a default location is configured, users can override the issue location on selected lines as they require.
 
-The operation respects the **Blank receipt allowed** configuration on the **Location** storage dimension and doesn't require that a location dimension be entered if blank receipt is configured. If blank receipt locations aren't allowed for an item, the POS application shows an error and requires that a location be entered before the receipt can be posted.
+The operation respects the **Blank receipt allowed** configuration on the **Location** storage dimension and doesn't require that a location dimension is entered if **Blank receipt allowed** is configured. If blank receipt locations aren't allowed for an item, the POS application shows an error and requires that a location be entered before the receipt can be posted.
 
 ### Ship all
 
@@ -116,11 +116,11 @@ When you select **Pause fulfillment**, the document's status is changed to **Pau
 Before the final commitment of the fulfillment to headquarters, you can use the **Review** function to validate the outbound document. This function alerts you to potential missing or incorrect data that may cause a processing failure, and provide you the opportunity to correct issues before submitting the fulfillment request. To enable the **Review** function on the app bar, enable the **Enable validation in POS inbound and outbound inventory operations** feature through Feature management in headquarters.
 
 The **Review** function validates the following issues in an outbound document:
-- **Over-shipping** – the shipping now quantity is greater than the ordered quantity. The severity of this issue is determined by the overdelivery configuration in headquarters.
-- **Under-shipping** – the shipping now quantity is less than the ordered quantity. The severity of this issue is determined by the underdelivery configuration in headquarters.
-- **Serial number** – serial number is not provided or not available for a serialized item that requires a serial number to be registered in inventory.
-- **Location not set** – location is not specified for a location-controlled item where location is not allowed to be blank.
-- **Deleted lines** – the order has lines deleted by a headquarters user that is not known to the POS application.
+- **Over-shipping** – The shipping now quantity is greater than the ordered quantity. The severity of this issue is determined by the overdelivery configuration in headquarters.
+- **Under-shipping** – The shipping now quantity is less than the ordered quantity. The severity of this issue is determined by the underdelivery configuration in headquarters.
+- **Serial number** – The serial number isn't provided or not available for a serialized item that requires a serial number to be registered in inventory.
+- **Location not set** – The location isn't specified for a location-controlled item where location isn't allowed to be blank.
+- **Deleted lines** – The order has lines deleted by a headquarters user that isn't known to the POS application.
 
 If you set the **Enable automatic validation** parameter to **Yes** in **Commerce parameters** > **Inventory** > **Store inventory operations**, validation is executed automatically when you select the **Finish fulfillment** function.
 
@@ -138,11 +138,11 @@ You can enter values in the **Ship date**, **Receive date**, and **Mode of deliv
 
 After the header information is created, you can add products to the transfer order. To start the process of adding items and requested quantities, scan bar codes or select **Add product**.
 
-After lines are entered on the outbound transfer order, you must select **Save** to save the document changes locally or **Submit request** to submit the order details to headquarters for further processing. If you select **Save**, the draft document is stored in the channel database, and the outbound warehouse can't run the document until it has been successfully processed via **Submit request**. Select **Save** only if you aren't ready to commit the request to headquarters for processing.
+After lines are entered on the outbound transfer order, you must select **Save** to save the document changes locally, or **Submit request** to submit the order details to headquarters for further processing. If you select **Save**, the draft document is stored in the channel database, and the outbound warehouse can't run the document until it has been successfully processed via **Submit request**. Select **Save** only if you aren't ready to commit the request to headquarters for processing.
 
 If a document is saved locally, it can be found on the **Drafts** tab of the **Inbound operation** document list. While a document is in **Draft** status, you can edit it by selecting **Edit**. You can update, add, or delete lines as you require. You can also delete the whole document while it's in **Draft** status, by selecting **Delete** on the **Drafts** tab.
 
-After the draft document is successfully submitted to headquarters, it appears on the **Active** tab and has a status of **Requested**. At this point, only users in the outbound warehouse can edit the document, by selecting **Outbound operation** in the POS application. Users in the inbound warehouse can view the transfer order on the **Active** tab of the **Inbound operation** document list, but they can't edit or delete it. The editing lock ensures that no conflicts occur because an inbound requestor changes the transfer order at the same time that the outbound shipper is actively picking and shipping the order. If changes are required from the inbound store or warehouse after the transfer order has been submitted, the outbound shipper should be contacted and asked to enter the changes.
+After the draft document is successfully submitted to headquarters, it appears on the **Active** tab and has a status of **Requested**. At this point, only users in the outbound warehouse can edit the document, by selecting **Outbound operation** in the POS application. Users in the inbound warehouse can view the transfer order on the **Active** tab of the **Inbound operation** document list, but they can't edit or delete it. The editing lock ensures that no conflicts occur because an inbound requestor changes the transfer order at the same time that the outbound shipper is actively picking and shipping the order. If changes are required from the inbound store or warehouse after the transfer order has been submitted, you should contact the outbound shipper ask them to enter the changes.
 
 After the document is in **Requested** status, it's ready for fulfillment processing by the outbound warehouse. As the shipment is processed by using the outbound operation, the status of the transfer order documents is updated from **Requested** to **Fully shipped** or **Partially shipped**. After the documents are in **Fully shipped** or **Partially shipped** status, the inbound store or warehouse can post receipts against them by using the inbound operation receiving process.
 
