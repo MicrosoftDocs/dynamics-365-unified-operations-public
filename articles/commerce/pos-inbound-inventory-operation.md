@@ -1,74 +1,75 @@
 ---
 title: Inbound inventory operation in POS
-description: This article describes capabilities of the point of sale (POS) inbound inventory operation.
+description: This article describes the capabilities of the point of sale (POS) inbound inventory operation in Microsoft Dynamics 365 Commerce.
 author: hhainesms
-ms.date: 09/17/2020
+ms.date: 11/14/2022
 ms.topic: article
-ms.prod: 
-ms.technology: 
-audience: Application User
+audience: Application User, Developer, IT Pro
 ms.reviewer: josaw
-ms.search.region: global
+ms.search.region: Global
 ms.author: hhaines
 ms.search.validFrom: 
-ms.dyn365.ops.version: 10.0.9
-ms.custom: 
-ms.assetid: 
-ms.search.industry: Retail
-ms.search.form: 
+
 ---
 
 # Inbound inventory operation in POS
 
 [!include [banner](includes/banner.md)]
+[!include [banner](includes/preview-banner.md)]
 
-In Microsoft Dynamics 365 Commerce version 10.0.10 and later, inbound and outbound operations in the point of sale (POS) replace the picking and receiving operation.
+This article describes the capabilities of the point of sale (POS) inbound inventory operation in Microsoft Dynamics 365 Commerce.
+
+In Dynamics 365 Commerce version 10.0.10 and later, inbound and outbound operations in the point of sale (POS) replaced the picking and receiving operation.
 
 > [!NOTE]
-> In Commerce version 10.0.10 and later, any new features in the POS application that are related to receiving store inventory against purchase orders and transfer orders will be added to the **Inbound operation** POS operation. If you're currently using the picking and receiving operation in POS, we recommend that you develop a strategy for moving from that operation to the new inbound and outbound operations. Although the picking and receiving operation won't be removed from the product, there will be no further investments in it, from a functional or performance perspective, after version 10.0.9.
+> In Commerce version 10.0.10 and later, any new features in the POS application that are related to receiving store inventory against purchase orders and transfer orders will be added to the **Inbound operation** POS operation. If you're currently using the picking and receiving operation in POS, it is recommended that you develop a strategy for moving from that operation to the new inbound and outbound operations. Although the picking and receiving operation won't be removed from the product, from a functional or performance perspective there will be no further investments in it after Commerce version 10.0.9.
 
-## Prerequisite: Configure an asynchronous document framework
+## Prerequisites
 
-Please follow [Commerce asynchronous document framework](commerce-asynchronous-document-framework.md) to complete the configuration. You can skip this step if you have already configured it for other operations.
+Before your organization can use the inbound operation functionality, you must fulfill the following prerequisites.
 
-## Prerequisite: Add Inbound operation to the POS screen layout
+### Configure an asynchronous document framework
 
-Before your organization can use the inbound operation functionality, it must configure the **Inbound operation** POS operation on one or more of your [POS screen layouts](/dynamics365/unified-operations/retail/pos-screen-layouts). Before you deploy the new operation in a production environment, make sure that you thoroughly test it and train your users to use it.
+For instructions on how to complete configure an asynchronous document framework, see [Commerce asynchronous document framework](commerce-asynchronous-document-framework.md). You can skip this step if you have already configured an asynchronous document framework for other operations.
 
-## Overview
+### Add Inbound operation to the POS screen layout
 
-The inbound operation lets POS users perform the following tasks:
+You must configure the **Inbound operation** POS operation on one or more of your [POS screen layouts](/dynamics365/unified-operations/retail/pos-screen-layouts). Before you deploy the new operation in a production environment, ensure that you thoroughly test it and train your users to use it.
+
+## Inbound inventory operation
+
+The inbound inventory operation lets POS users perform the following tasks:
 
 - Receive inventory into store stock from either confirmed purchase order documents or shipped transfer order documents.
 - View information about historical inventory receipts for a period of seven days after the document has been fully received.
 - Create new inbound transfer order requests.
 
-When the inbound operation is started from the POS application, a list page view appears. This view shows open purchase order and transfer order documents that have inventory lines that are scheduled to be received by the current store. To find and select a specific document, users can scroll the list or use the search feature.
+When the inbound operation is started from the POS application, a list page view appears. This view shows open purchase order and transfer order documents that have inventory lines that are scheduled to be received by the current store. To find and select a specific document, you can scroll the list or use the search feature.
 
 The inbound inventory document list has three tabs:
 
 - **Active** – This tab shows documents that are fully or partially open, and that contain lines or quantities on lines that must still be received.
-- **Draft** – This tab shows new inbound transfer order requests that the store has created. However, the documents have only been saved locally. They haven't yet been submitted to Commerce Headquarters for processing.
+- **Draft** – This tab shows new inbound transfer order requests that the store has created. However, the documents have only been saved locally. They haven't yet been submitted to Commerce headquarters for processing.
 - **Complete** – This tab shows a list of purchase order or transfer order documents that the store has fully received during the last seven days. This tab is for informational purposes only. All the information about the documents is read-only data for the store.
 
-When you view documents on any of the tabs, the **Status** field can help you understand the stage that the document is in.
+When you view documents on any of the tabs, the **Status** field helps you understand the stage that the document is in.
 
-- **Draft** – The transfer order document has only been saved locally to the store's channel database. No information about the transfer order request has yet been submitted to Commerce Headquarters.
-- **Requested** – The purchase order or transfer order has been created in Commerce Headquarters, and is fully open. No receipts have yet been processed against the document. For documents of the purchase order document type, receiving can begin at any time while the status is **Requested**.
+- **Draft** – The transfer order document has only been saved locally to the store's channel database. No information about the transfer order request has yet been submitted to headquarters.
+- **Requested** – The purchase order or transfer order has been created in headquarters, and is fully open. No receipts have yet been processed against the document. For documents of the purchase order document type, receiving can begin at any time while the status is **Requested**.
 - **Partially shipped** – The transfer order document has one or more lines or partial line quantities that have been posted as shipped by the outbound warehouse. These shipped lines are available to be received through the inbound operation.
 - **Fully shipped** – The transfer order has had all its lines and full line quantities posted as shipped by the outbound warehouse. The whole document is available to be received through the inbound operation.
 - **Partially received** – Some of the lines or line quantities on the purchase order or transfer order document have been received by the store, but some lines remain open.
 - **Fully received** – All lines and quantities on the purchase order or transfer order document have been fully received. The documents are accessible only on the **Complete** tab and are read-only by store users.
 - **In progress** – This status is used to inform device users that the document is being actively worked on by another user.
 - **Paused** – This status is shown after **Pause receiving** is selected to temporarily stop the receiving process.
-- **Processing in HQ** – The document was submitted to Commerce Headquarters from the POS application, but it hasn't yet been successfully posted to Commerce Headquarters. The document is going through the asynchronous document posting process. After the document is successfully posted to Commerce Headquarters, its status should be updated to **Fully received** or **Partially received**.
-- **Processing failed** – The document was posted to Commerce Headquarters and rejected. The **Details** pane shows the reason for the posting failure. The document must be edited to fix data issues, and then it must be resubmitted to Commerce Headquarters for processing.
+- **Processing in HQ** – The document was submitted to headquarters from the POS application, but it hasn't yet been successfully posted to headquarters. The document is going through the asynchronous document posting process. After the document is successfully posted to headquarters, its status should be updated to **Fully received** or **Partially received**.
+- **Processing failed** – The document was posted to headquarters and rejected. The **Details** pane shows the reason for the posting failure. The document must be edited to fix data issues, and then it must be resubmitted to headquarters for processing.
 
-When you select a document line in the list, a **Details** pane appears. This pane shows additional information about the document, such as shipment and date information. A progress bar shows how many items must still be processed. If the document wasn't successfully processed to Commerce Headquarters, the **Details** pane also shows error messages that are related to the failure.
+When you select a document line in the list, a **Details** pane appears. This pane shows additional information about the document, such as shipment and date information. A progress bar shows how many items must still be processed. If the document wasn't successfully processed to headquarters, the **Details** pane also shows error messages that are related to the failure.
 
 In the document list page view, you can select **Order details** on the app bar to view the document details. You can also activate receipt processing on eligible document lines.
 
-In the document list page view, you can also create a new inbound transfer order request for a store. The documents remain in **Draft** status, and they can be adjusted or deleted until they are submitted to Commerce Headquarters for processing. After they are submitted to Commerce Headquarters, the transfer order lines can no longer be changed from the POS application.
+In the document list page view, you can also create a new inbound transfer order request for a store. The documents remain in **Draft** status, and they can be adjusted or deleted until they are submitted to headquarters for processing. After the transfer order lines are submitted to headquarters, they can no longer be changed from the POS application.
 
 ## Receiving process
 
@@ -84,9 +85,9 @@ A user receives a purchase order that contains 10 units of bar code 5657900266. 
 
 Alternatively, in a scenario where the item quantity is large, the user might prefer to manually enter the quantity instead of scanning the bar code for each item that is received. In this case, the user can scan the bar code one time to add the item to the **Receiving now** list. The user can then select the associated line in the **Receiving now** view and then, in the **Details** pane that appears on the right side of the page, update the **Receiving quantity** field for the item.
 
-Although the **Receiving now** view is optimized for bar code scanning, users can also select **Receive product** on the app bar, and then enter the item ID or bar code data through a dialog box. After the item that was entered is validated, the user is prompted to enter the receipt quantity.
+Although the **Receiving now** view is optimized for bar code scanning, users can also select **Receive product** on the app bar, and then enter the item ID or bar code data via a dialog box. After the item that was entered is validated, the user is prompted to enter the receipt quantity.
 
-The **Receiving now** view provides a focused way for users to see which products they are receiving. Alternatively, the **Full order list** view can be used. This view shows the whole list of document lines for the selected purchase or transfer order document. Users can manually select lines manually in the list and then, in the **Details** pane, update the **Receiving quantity** field for the selected line. In the **Full order list** view, users can scan bar codes, or they can use the **Receive product** function to enter the item ID or bar code, and data about the received quantity, without first having to select the matching item line in the list.
+The **Receiving now** view provides a focused way for users to see which products they are receiving. Alternatively, the **Full order list** view can be used. This view shows the whole list of document lines for the selected purchase or transfer order document. Users can manually select lines in the list and then, on the **Details** pane, update the **Receiving quantity** field for the selected line. In the **Full order list** view, users can scan bar codes, or they can use the **Receive product** function to enter the item ID or bar code, and data about the received quantity, without first having to select the matching item line in the list.
 
 ### Over-receiving validations
 
@@ -176,7 +177,7 @@ After the draft document is successfully submitted to Commerce Headquarters, it 
 
 After the document is in **Requested** status, it's visible on the **Active** tab. However, it can't yet be received by the inbound store or warehouse. After the outbound warehouse has shipped some or all of the transfer order, the inbound store or warehouse can post receipts in POS. When the outbound side processes the transfer order documents, their status is updated from **Requested** to **Shipped** or **Partially Shipped**. After the documents are in **Shipped** or **Partially Shipped** status, the inbound store or warehouse can post receipts against them using the inbound operation receiving process.
 
-## Related articles
+## Additional resources
 
 [Outbound inventory operation in POS](pos-outbound-inventory-operation.md)
 
