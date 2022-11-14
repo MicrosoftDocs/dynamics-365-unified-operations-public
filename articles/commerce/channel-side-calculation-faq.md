@@ -20,12 +20,12 @@ This article answers frequently asked questions (FAQs) about the channel-side ca
 
 #### Why do my products show as available in Commerce headquarters, but appear to be out-of-stock on my e-commerce site?
 
-- To push the latest inventory snapshot to the channel database, follow the instructions in [How to use channel-side inventory calculation](./commerce-how-to-use-channel-side-calculation.md).
-- Unposted transactions are only visible on Commerce Scale Unit (CSU) before uploading to headquarters, which can cause discrepancies. Double-check after uploading transactions to headquarters. For more information, see [Optimize your inventory data](commerce-optimize-inventory-availability-data.md).
+- To push the latest inventory snapshot to the channel database, follow the instructions in [How to use channel-side inventory calculation](how-to-use-channel-side-calculation.md).
+- Unposted transactions are only visible on Commerce Scale Unit (CSU) before uploading to headquarters, which can cause discrepancies. Double-check after uploading transactions to headquarters. For more information, see [Optimize your inventory data](optimize-inventory-data.md).
 
 #### Why are my products show as out-of-stock in Commerce headquarters, but appear as available on my e-commerce site?
 
-- To push the latest inventory snapshot to the channel database, follow the instructions in [How to use channel-side inventory calculation](./commerce-how-to-use-channel-side-calculation.md).
+- To push the latest inventory snapshot to the channel database, follow the instructions in [How to use channel-side inventory calculation](how-to-use-channel-side-calculation.md).
 - Unstocked products are always treated as being available. Check the item model group settings of products, and then run **Distribution schedule job 1040 (Product)** after making any changes.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
