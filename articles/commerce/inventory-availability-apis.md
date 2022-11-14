@@ -42,11 +42,11 @@ For more information about how to consume Retail Server APIs in external applica
 | Name | Type | Required/Optional | Description |
 |:----|:----|:----|:----|
 | ProductIds | IEnumberable\<long\> | Required | |
-| DefaultWarehouseOnly | bool | Optional | True to query online channel's default warehouse only; otherwise, query warehouses that are linked to the online channel's fulfillment group. |
+| DefaultWarehouseOnly | bool | Optional | **True** to query online channel's default warehouse only; otherwise, query warehouses that are linked to the online channel's fulfillment group. |
 | SearchArea | SearchArea | Optional | The area to search stores for pickup within the fulfillment groups. |
-| FilterByChannelFulfillmentGroup | bool | Optional | Decides the fulfillment groups when DefaultWarehouseOnly is set to false. |
-| DeliveryModeTypeFilterValue | (int) DeliveryModeTypeFilter | Optional | Filter warehouses by their supported delivery modes: <br/> • (0) All: all warehouses. **Default value**. <br/> • (1) Shipping: find warehouses eligible for shipping. <br/> • (2) Pickup: find warehouses eligible for pickup. |
-| QuantityUnitTypeValue | (int) QuantityUnitType | Optional | Which unit of measure to return quantity: <br/> • (0) Inventory: inventory unit of measure. **Default value**. <br/> • (1) Purchase: purchase unit of measure. <br/> • (2) Sales: sales unit of measure. |
+| FilterByChannelFulfillmentGroup | bool | Optional | Decides the fulfillment groups when DefaultWarehouseOnly is set to **false**. |
+| DeliveryModeTypeFilterValue | (int) DeliveryModeTypeFilter | Optional | Filter warehouses by their supported delivery modes: <br/> • (0) All: all warehouses. This is the default value. <br/> • (1) Shipping: find warehouses eligible for shipping. <br/> • (2) Pickup: find warehouses eligible for pickup. |
+| QuantityUnitTypeValue | (int) QuantityUnitType | Optional | Which unit of measure to return quantity: <br/> • (0) Inventory: inventory unit of measure. This is the default value. <br/> • (1) Purchase: purchase unit of measure. <br/> • (2) Sales: sales unit of measure. |
 
 #### SearchArea
 
@@ -137,7 +137,7 @@ For more information about how to consume Retail Server APIs in external applica
 | Name | Type | Required/Optional | Description |
 |:----|:----|:----|:----|
 | ProductId | long | Required | |
-| InventLocationId | string | Required | The warehouse. |
+| InventLocationId | string | Required | The ID of the warehouse. |
 | DataAreaId | string | Required | |
 
 ### Sample request body
@@ -220,16 +220,16 @@ For more information about how to consume Retail Server APIs in external applica
 |:----|:----|:----|:----|
 | RequestedDimensionTypeValue | (int) ProductDimensionType | Required | The product dimension type to request and to aggregate inventory quantities.<br/>• (1) Color: color dimension.<br/>• (2) Configuration: configuration dimension.<br/>• (3) Size: size dimension.<br/>• (4) Style: style dimension. |
 | MatchingDimensionValues | ICollection\<ProductDimension\> | Optional | Only aggregate products that have matching dimension values. |
-| DefaultWarehouseOnly | bool | Optional | True to query online channel's default warehouse only; otherwise, query warehouses that are linked to the online channel's fulfillment group. |
-| FilterByChannelFulfillmentGroup | bool | Optional | Decides the fulfillment groups when DefaultWarehouseOnly is set to false. |
-| DeliveryModeTypeFilterValue | (int) DeliveryModeTypeFilter | Optional | Filter warehouses by their supported delivery modes: <br/> • (0) All: all warehouses. **Default value**. <br/> • (1) Shipping: find warehouses eligible for shipping. <br/> • (2) Pickup: find warehouses eligible for pickup. |
+| DefaultWarehouseOnly | bool | Optional | **True** to query online channel's default warehouse only; otherwise, query warehouses that are linked to the online channel's fulfillment group. |
+| FilterByChannelFulfillmentGroup | bool | Optional | Decides the fulfillment groups when DefaultWarehouseOnly is set to **false**. |
+| DeliveryModeTypeFilterValue | (int) DeliveryModeTypeFilter | Optional | Filter warehouses by their supported delivery modes: <br/> • (0) All: all warehouses. This is the default value. <br/> • (1) Shipping: find warehouses eligible for shipping. <br/> • (2) Pickup: find warehouses eligible for pickup. |
 | CatalogId | long | Optional | Which catalog identifier the product belong to. |
 
 #### ProductDimension
 
 | Name | Type | Required/Optional | Description |
 |:----|:----|:----|:----|
-| DimensionTypeValue | (int) ProductDimensionType | Required | Same as above. |
+| DimensionTypeValue | (int) ProductDimensionType | Required | The product dimension type to request and to aggregate inventory quantities.<br/>• (1) Color: color dimension.<br/>• (2) Configuration: configuration dimension.<br/>• (3) Size: size dimension.<br/>• (4) Style: style dimension. |
 | DimensionValue | ProductDimensionValue | Required | |
 
 #### ProductDimensionValue
