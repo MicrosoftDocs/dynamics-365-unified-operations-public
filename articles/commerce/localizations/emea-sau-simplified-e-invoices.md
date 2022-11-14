@@ -199,9 +199,9 @@ Follow these steps to configure e-invoice submission parameters that are specifi
 
 1. Open **Electronic document parameters**.
 1. On the **Electronic document** tab, create a new record and specify the following parameters:
-    1. Select **Fiscal transaction** document in the **Table name** field.
-    1. Select **Retail fiscal document context** in the **Document context** field.
-    1. Select **Retail fiscal document mapping** in the **Electronic document model mapping** field.
+    1. Select *Fiscal transaction document* in the **Table name** field.
+    1. Select *Retail fiscal document context* in the **Document context** field.
+    1. Select *Retail fiscal document mapping* in the **Electronic document model mapping** field.
     1. Select number sequences for submitted file names and batch submission IDs.
 1. On the **Features** tab, mark the **Saudi Arabia electronic invoice** feature as **Enabled**.
 1. On the **Electronic Invoicing**, set the **Endpoint URL** and **Environment** fields.
