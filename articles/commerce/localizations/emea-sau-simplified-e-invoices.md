@@ -67,7 +67,8 @@ You must also specify the following settings for Saudi Arabia. Note that you mus
 1. [Configure custom fields](#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts) and [receipt formats](#configure-receipt-formats) to print QR codes in receipts and comply with the local regulatory requirements.
 1. [Configure the fiscal registration functionality](#set-up-fiscal-registration) for Saudi Arabia to enable generation and digital signing of simplified e-invoices.
 1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the Commerce channel and Commerce headquarters sides.
-1. [Specify Electronic reporting (ER) configurations](#specify-electronic-reporting-configurations) that should be used to generate simplified e-invoices in POS.
+1. [Specify Electronic reporting (ER) configurations](#specify-electronic-reporting-configurations) that should be used to generate simplified e-invoices in POS and submit these simplified e-invoices from Commerce headquarters.
+1. [Configure e-invoice submission parameters](#configure-e-invoice-submission-parameters) for simplified e-invoices generated in POS.
 1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode).
 
 ### Enable features for Saudi Arabia
@@ -75,6 +76,7 @@ You must also specify the following settings for Saudi Arabia. Note that you mus
 You must enable the following features in the **Feature management** workspace:
 
 - KSA Electronic-Invoicing capability for the fiscal integration framework
+- (Saudi Arabia) Electronic invoicing integration
 
 ### Set up the legal entity
 
@@ -179,9 +181,30 @@ Depending on your purposes, you can download the ER configurations for electroni
 
 You must download the following versions (or later versions) of the configurations:
 
-- **Invoice model** data model
-- **Invoice model mapping for commerce (SA)** data model mapping
-- **Sales e-invoice (SA)** format
+- E-invoice generation configurations:
+    - **Invoice model** data model
+    - **Invoice model mapping for commerce (SA)** data model mapping
+    - **Sales e-invoice (SA)** format
+- E-invoice submission configurations:
+    - **Customer invoice context model** data model
+    - **Retail channel data** data model
+    - **Retail fiscal document mapping** data model mapping
+    - **Retail fiscal document format** format
+
+### Configure e-invoice submission parameters
+
+<!-- ADD LINK TO COMMON E-INVOICING SETUP FOR SAUDI ARABIA -->
+
+Follow these steps to configure e-invoice submission parameters that are specific to Commerce for Saudi Arabia.
+
+1. Open **Electronic document parameters**.
+1. On the **Electronic document** tab, create a new record and specify the following parameters:
+    1. Select **Fiscal transaction** document in the **Table name** field.
+    1. Select **Retail fiscal document context** in the **Document context** field.
+    1. Select **Retail fiscal document mapping** in the **Electronic document model mapping** field.
+    1. Select number sequences for submitted file names and batch submission IDs.
+1. On the **Features** tab, mark the **Saudi Arabia electronic invoice** feature as **Enabled**.
+1. On the **Electronic Invoicing**, set the **Endpoint URL** and **Environment** fields.
 
 ### Enable the digital signature in offline mode
 
