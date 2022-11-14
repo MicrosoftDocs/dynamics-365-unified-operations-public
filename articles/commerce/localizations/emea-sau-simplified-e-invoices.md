@@ -67,15 +67,8 @@ You must also specify the following settings for Saudi Arabia. Note that you mus
 1. [Configure custom fields](#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts) and [receipt formats](#configure-receipt-formats) to comply with the local regulatory requirements.
 1. [Configure the fiscal registration functionality](#set-up-fiscal-registration) for Saudi Arabia to enable generation and digital signing of simplified e-invoices.
 1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the Commerce channel and Commerce headquarters sides.
-1. [Specify Electronic reporting (ER) formats](#configure-the-z-report-and-archive-export-formats) that should be used to export Z-reports and fiscal archives from Commerce headquarters.
-1. [Reinitialize Commerce components](#reinitialize-commerce-components) to enable France-specific audit events and transmission of France-specific data from POS to Commerce headquarters.
-1. [Configure channel components](#configure-channel-components) to enable France-specific extensions of the components.
-
-    > [!IMPORTANT]
-    > You should configure channel components only if you're using Commerce version 10.0.28 or earlier. As of version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you're using Commerce version 10.0.28 or earlier, and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
-
+1. [Specify Electronic reporting (ER) configurations](#specify-electronic-reporting-configurations) that should be used to generate simplified e-invoices in POS.
 1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode).
-1. [Validate your configuration](#compliance-checklist) to make sure all France-specific features work properly.
 
 ### Enable features for Saudi Arabia
 
@@ -177,44 +170,18 @@ After you configure certificate profiles, go to **Retail and Commerce \> Channel
 
 You can also override the connector technical profile settings and specify certificate profiles on the individual store or register level. On the **Connector technical profile** page, select the **Override** menu item and create records for the stores or registers that you need to override the certificate profiles for. See [Create connector technical profiles](./setting-up-fiscal-integration-for-retail-channel.md#create-connector-technical-profiles) for more details on how to override connector technical profile settings.
 
-### Configure the Z report and archive export formats
+### Specify Electronic Reporting configurations
 
-Depending on your purposes, you can download the ER configurations for the Z report and archive from the following sources:
+Depending on your purposes, you can download the ER configurations for electronic invoicing from the following sources:
 
 - If you don't have to customize the ER configurations that are provided by Microsoft or create your own ER configurations, you can import the Microsoft-provided configurations from Microsoft Dynamics Lifecycle Services. For more information, see [Import a configuration from Lifecycle Services](../../fin-ops-core/dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md). Alternatively, you can [download ER configurations from the Global repository of Configuration service](../../fin-ops-core/dev-itpro/analytics/er-download-configurations-global-repo.md).
 - If you must customize the ER configurations that are provided by Microsoft or create your own ER configurations, you must provision a Regulatory Configuration Services (RCS) environment. For more information about how to work with RCS, see [Import ER configurations from RCS](../../fin-ops-core/dev-itpro/analytics/rcs-download-configurations.md).
 
 You must download the following versions (or later versions) of the configurations:
 
-- **Retail channel data.version.2** data model
-- **Archiving DMM.version.2.3** data model mapping
-- **Retail Z-Report (FR).version.24.23.3** format
-- **Retail data archive (FR).version.2.5** format
-
-After you import the configurations, select ER formats for the Z report and archive in the following fields on the **Electronic documents** tab of the **Commerce parameters** page:
-
-- **Z-Report export format** – Select the **Retail Z-Report (FR).version.24.23.3** format or the format that you downloaded earlier.
-- **Retail data archive export format** – Select the **Retail data archive (FR).version.2.5** format or the format that you downloaded earlier.
-
-### Reinitialize Commerce components
-
-> [!NOTE]
-> You only need to complete the steps of this section if you are updating an existing environment.
-
-To enable audit events, you must reinitialize the Commerce extensible enumerations. To enable France-specific data to be transmitted from POS to Commerce headquarters, you must reinitialize the Commerce scheduler.
-
-1. On the **Commerce parameters** page, on the **General** FastTab, select **Initialize**. For more information, see [Initialize seed data in new Retail environments](../enable-configure-retail-functionality.md).
-1. There is an option to separately configure the scheduler. Go to **Commerce scheduler** \> **Initialize Commerce scheduler**. In the **Initialize Commerce scheduler** dialog box, select **OK**.
-
-### Configure channel components
-
-> [!IMPORTANT]
-> You should configure channel components only if you're using Commerce version 10.0.28 or earlier. As of version 10.0.29, all required Commerce channel components for France are enabled out of the box. If you're using Commerce version 10.0.28 or earlier, and are migrating to Commerce version 10.0.29 or later, you must follow the steps in [Migrate to Commerce version 10.0.29 or later](./emea-fra-fi-deployment.md#migrate-to-commerce-version-10029-or-later).
-
-To enable France-specific functionality, you must configure extensions for channel components. For more information, see the [deployment guidelines](./emea-fra-fi-deployment.md).
-
-> [!NOTE]
-> This version of the Commerce functionality for France is based on the [Fiscal integration framework](./fiscal-integration-for-retail-channel.md). For information about the legacy digital signing sample for France, see [Deployment guidelines for cash registers for France (legacy)](./emea-fra-deployment.md). For guidance about how to enable the fiscal integration functionality for France in existing environments that use the legacy digital signing sample, see [Migrate from legacy Commerce functionality for France](./emea-fra-fi-migration.md).
+- **Invoice model** data model
+- **Invoice model mapping for commerce (SA)** data model mapping
+- **Sales e-invoice (SA)** format
 
 ### Enable the digital signature in offline mode
 
