@@ -4,7 +4,7 @@
 title: Settle partial payment before discount date with final payment after discount date
 description: This article discusses the effect of settling payments to invoices for customers. The scenario focuses on the effects in the subledger, not in General ledger.
 author: ShivamPandey-msft
-ms.date: 08/22/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
