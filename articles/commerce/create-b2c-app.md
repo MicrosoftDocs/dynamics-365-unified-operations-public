@@ -43,6 +43,8 @@ In the **Reply URL** box on the **Azure AD B2c - Applications \> New application
 - ``https://www.fabrikam.com/_msdyn365/authresp`` (The domain should match the e-commerce domain completely. If you have multiple domains, you need to add this URL for each domain.)
 - ``https://fabrikam-prod.commerce.dynamics.com/_msdyn365/authresp``
 
+## Next steps
+
 To continue the process of setting up a B2C tenant in Commerce, proceed to [Create user flow policies](create-user-flow-policies.md).
 
 ## Additional resources
