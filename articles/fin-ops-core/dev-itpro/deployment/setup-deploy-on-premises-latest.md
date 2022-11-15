@@ -1,8 +1,8 @@
 ---
 # required metadata
 
-title: Set up and deploy on-premises environments (Platform update 41 and later)
-description: This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later.
+title: Set up and deploy on-premises environments (Application 10.0.32 and later)
+description: This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Application version 10.0.32 and later.
 author: faix
 ms.date: 10/10/2022
 ms.topic: article
@@ -24,25 +24,26 @@ ms.search.region: Global
 # ms.search.industry: 
 ms.author: osfaixat
 ms.search.validFrom: 2021-01-31 
-ms.dyn365.ops.version: Platform update 41
+ms.dyn365.ops.version: Platform update 56
 
 ---
 
-# Set up and deploy on-premises environments (Platform update 41 and later)
+# Set up and deploy on-premises environments (Application 10.0.32 and later)
 
 [!include [banner](../includes/banner.md)]
 
-This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Platform update 41 and later. Platform update 41 is available with version 10.0.17.
+This article explains how to plan, set up, and deploy Microsoft Dynamics 365 Finance + Operations (on-premises) with Application version 10.0.32 later. Application version 10.0.17 includes platform update 56.
 
 The [Local Business Data Yammer group](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=13595809&view=all) is available. There, you can post any questions or feedback that you have about the on-premises deployment.
 
 ## Finance + Operations components
 
-The Finance + Operations application consists of three main components:
+The Finance + Operations application consists of four main components:
 
 - Application Object Server (AOS)
 - Business Intelligence (BI)
 - Financial Reporting/Management Reporter
+- Data Management Framework (DMF)
 
 These components depend on the following system software:
 
@@ -58,7 +59,7 @@ These components depend on the following system software:
 
 - SQL Server Integration Services (SSIS)
 
-    SSIS is deployed on AOS VMs.
+    SSIS is deployed on VMs hosting the DMF Service.
 
 - SQL Server Management Studio
 - Standalone Microsoft Azure Service Fabric
@@ -96,6 +97,7 @@ Setup of Finance + Operations will deploy a set of applications inside Service F
 - **OrchestratorType** – Nodes of this node type work as Service Fabric Primary nodes, and host deployment and servicing logic.
 - **ReportServerType** – Nodes of this type host SSRS and reporting logic.
 - **MRType** – Nodes of this type host Management Reporter logic.
+- **SSISNodeType** Nodes of this type host the Data Management Framework service.
 
 ## Infrastructure
 
@@ -147,6 +149,7 @@ The following table shows an example of a hardware layout. This example is used 
 | Orchestrator 3           | OrchestratorType         | LBDEN01SFORCH3  | 10.179.108.23 |
 | Management Reporter node | MRType                   | LBDEN01SFMR1    | 10.179.108.31 |
 | SSRS node 1              | ReportServerType         | LBDEN01SFBI1    | 10.179.108.41 |
+| SSIS node 1              | SSISNodeType             | LBDEN01SFSSIS1  | 10.179.108.42 |
 | Client                   |                          | LBDEN01CLIENT1  | 10.179.108.51 |
 
 
@@ -171,8 +174,8 @@ The following table shows an example of a hardware layout where batch execution 
 | Orchestrator 3           | OrchestratorType           | LBDEN01SFORCH3  | 10.179.108.23 |
 | Management Reporter node | MRType                     | LBDEN01SFMR1    | 10.179.108.31 |
 | SSRS node 1              | ReportServerType           | LBDEN01SFBI1    | 10.179.108.41 |
+| SSIS node 1              | SSISNodeType               | LBDEN01SFSSIS1  | 10.179.108.42 |
 | Client                   |                            | LBDEN01CLIENT1  | 10.179.108.51 |
-
 
 ## Overview of the setup process
 
@@ -301,11 +304,12 @@ You must create several user or service accounts for Finance + Operations to wor
 | Financial Reporting Application Service Account         | gMSA | | Contoso\\svc-FRAS$ |
 | Financial Reporting Process Service Account             | gMSA | | Contoso\\svc-FRPS$ |
 | Financial Reporting Click Once Designer Service Account | gMSA | | Contoso\\svc-FRCO$ |
-| AOS Service Account                                     | gMSA | You should create this user for future proofing. Microsoft plans to enable AOS to work with the gMSA in upcoming releases. By creating this user at the time of setup, you help to ensure a seamless transition to the gMSA.\* | Contoso\\svc-AXSF$ |
+| AOS Service Account                                     | gMSA | | Contoso\\svc-AXSF$ |
 | SSRS bootstrapper Service Account                       | gMSA | The reporting service bootstrapper uses this account to configure the SSRS service. | Contoso\\svc-ReportSvc$ |
-| AOS Service Account                                     | Domain account | AOS uses this user in the general availability (GA) release.\* | Contoso\\AXServiceUser |
+| AOS Service Account                                     | Domain account | This account is no longer used in new deployments since Application version 10.0.20.\* | Contoso\\AXServiceUser |
 | AOS SQL DB Admin user                                   | SQL user | Finance + Operations uses this user to authenticate with SQL\*\*. This user will also be replaced by the gMSA user in upcoming releases\*\*\*. | AXDBAdmin |
 | Local Deployment Agent Service Account                  | gMSA | The local agent uses this account to orchestrate the deployment on various nodes. | Contoso\\Svc-LocalAgent$ |
+| Data Management Framework Service Account               | gMSA | | Contoso\\svc-DIXF$ |
 
 \* These accounts should not have their regional settings changed. They should have the default EN-US region settings. 
 
@@ -372,14 +376,15 @@ Microsoft has provided several scripts to help improve the setup experience. Fol
 
 1. Sign in to [LCS](https://lcs.dynamics.com/v2).
 2. On the dashboard, select the **Shared asset library** tile.
-3. Select **Model** as the asset type, and then, in the grid, select the row for **Microsoft Dynamics 365 Finance + Operations (on-premises), Deployment scripts**.
-4. Select **Versions**, and download the latest version of the zip file for the scripts.
-5. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
-6. Create a file share, and copy the zip file into it.
-7. Unzip the files into a folder that is named **infrastructure**.
+3. Select **Model** as the asset type.
+4. Find assets that are labeled **Microsoft Dynamics 365 Finance + Operations (on-premises), Deployment scripts version X.X.X**.
+5. Download the latest version available.
+6. After the zip file is downloaded, select and hold (or right-click) it, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
+7. Create a file share, and copy the zip file into it.
+8. Unzip the files into a folder that is named **infrastructure**.
 
 > [!IMPORTANT]
-> It's important that you put the **Infrastructure** folder in a file share (for example, \\\\LBDEN01FS01\\Install). In this way, the scripts can be run on any machine without requiring that the folder be copied to each machine. 
+> It's important that you put the **Infrastructure** folder in a file share (for example, \\\\LBDEN01FS01\\Install). This way, the scripts can be run on any machine without requiring that the folder be copied to each machine. 
 > Make sure that all edits are made to the ConfigTemplate.xml file in this folder.
 
 ### <a name="describeconfig"></a>Step 7. Describe your configuration
@@ -389,6 +394,7 @@ The infrastructure setup scripts use the following configuration files to drive 
 - infrastructure\\ConfigTemplate.xml
 - infrastructure\\D365FO-OP\\NodeTopologyDefinition.xml
 - infrastructure\\D365FO-OP\\DatabaseTopologyDefinition.xml
+- infrastructure\\D365FO-OP\\FileShareTopologyDefinition.xml
 
 > [!IMPORTANT]
 > To ensure that the setup scripts work correctly, you must update these configuration files with the correct computer names, IP addresses, service accounts, and domain, based on the setup of your environment.
@@ -445,7 +451,8 @@ You must set up the following SMB 3.0 file shares:
 
 - A file share that stores user documents that are uploaded to AOS (for example, \\\\LBDEN01FS01\\aos-storage).
 - A file share that stores the latest build and configuration files to orchestrate the deployment (for example, \\\\LBDEN01FS01\\agent).
-- A file share that stores diagnostics information for the Service Fabric cluster (for example, \\\\LBDEN01FS01\\DiagnosticsStore).
+- A file share that stores files for the Data Management Framework (for example, \\\\LBDEN01FS01\dixf-share).
+- A file share that stores diagnostics information for the Service Fabric cluster (for example, \\\\LBDEN01FS01\\diagnostics-store).
 
     > [!WARNING]
     > Keep this file share path as short as possible, to avoid exceeding the maximum path length on the files that will be put in the share.
@@ -462,29 +469,25 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
     Install-WindowsFeature -Name FS-FileServer -IncludeAllSubFeature -IncludeManagementTools
     ```
 
-2. Set up the **\\\\LBDEN01FS01\\aos-storage** file share:
+1. Update the FileShares section of your ConfigTemplate.xml if you want to change the default share names and base paths.
 
-    1. In Server Manager, select **File and Storage Services** \> **Shares**.
-    2. Select **Tasks** \> **New Share** to create a share. Name the new share **aos-storage**.
-    3. Leave **Allow caching of share** selected.
-    4. Select the **Encrypt data access** checkbox.
-    5. Grant **Modify** permissions for every machine in the Service Fabric cluster except **OrchestratorType**.
-    6. Grant **Modify** permissions for the gMSA user (**contoso\\svc-AXSF$**). If your AOS servers are running under a domain user, also add that domain user (**contoso\\AXServiceUser**).
+1. Run the following script to create the file shares:
+    
+    ```powershell
+    New-FileShares.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    ```
 
-    > [!NOTE]
-    > To add machines, you might have to enable **Computers** under **Object Types**. To add service accounts, you might have to enable **Service Accounts** under **Object Types**.
+1. Run the following script to apply necessary configuration and permissions to each file share:
 
-3. Set up the **\\\\LBDEN01FS01\\agent** file share:
+    ```powershell
+    Configure-FileShares.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    ```
 
-    1. In Server Manager, select **File and Storage Services** \> **Shares**.
-    2. Select **Tasks** \> **New Share** to create a share. Name the new share **agent**.
-    3. Grant **Full-Control** permissions to the gMSA user for the local deployment agent (**contoso\\svc-LocalAgent$**).
+1. Run the following script to check that the required permissions and configuration have been applied to each file share:
 
-4. Optional: Set up the **\\\\LBDEN01FS01\\DiagnosticsStore** file share:
-
-    1. In Server Manager, select **File and Storage Services** \> **Shares**.
-    1. Select **Tasks** \> **New Share** to create a share. Name the new share **DiagnosticsStore**.
-    1. Grant **Modify** permissions for every machine in the Service Fabric cluster.
+    ```powershell
+    Test-FileShares.ps1 -ConfigurationFilePath .\ConfigTemplate.xml
+    ```
 
 ### <a name="setupsql"></a>Step 9. Set up SQL Server
 
@@ -542,9 +545,18 @@ For information about how to enable SMB 3.0, see [SMB Security Enhancements](/pr
 
 ### <a name="setupssis"></a>Step 11. Set up SSIS
 
-To enable Data management and SSIS workloads, you must install SSIS on each AOS VM. Follow these steps on each AOS VM.
+To enable Data management and SSIS workloads, you must install SSIS on at least two nodes (at least 1 if the environment is a sandbox environment). This is a requirement so that the data management framework service can run. 
 
-1. Verify that the machine has access to the SSIS installation, and open the **SSIS Setup** wizard.
+You can have dedicated nodes that contain SSIS or you can install SSIS on other node types. If you would like to have dedicated SSIS nodes then specify which machines will host this node type by filling in the details for that node in the **ConfigTemplate.xml**.
+
+If your use of the data management framework is low you can instead choose to not have dedicated nodes. In that case, you can pick and choose which nodes will have SSIS installed by updating the **hasSSIS** attribute for each VM in the ServiceFabricCluster section of your **ConfigTemplate.xml** to true. When you do this you should set **disabled** to true for the **SSISNodeType** in your **ConfigTemplate.xml**.
+
+> [!NOTE]
+> If you disable the **SSISNodeType** but don't set the **hasSSIS** property on any node, the scripts and installation logic will provision the DMF service to all nodes belonging to BatchOnlyAOSNodeType. If that node type doesn't exist then the DMF service will be provisioned to all nodes belonging to AOSNodeType.
+
+
+
+1. Once you have decided which VMs will need SSIS, verify that the machine has access to the SQL installation, and open the **SQL Setup** wizard.
 2. On the **Feature Selection** page, in the **Features** pane, select the **Integration Services** and **SQL Client Connectivity SDK** checkboxes.
 3. Complete the setup, and verify that the installation was successful.
 
@@ -807,18 +819,8 @@ You can verify that everything has been configured correctly by running the foll
 
     | Release | Database |
     |---------|----------|
-    | Version 10.0.29 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.29 Demo Data |
-    | Version 10.0.29 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.29 Empty Data |
-    | Version 10.0.26 (with Platform update 50) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.26 Demo Data |
-    | Version 10.0.26 (with Platform update 50) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.26 Empty Data |
-    | Version 10.0.23 (with Platform update 47) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.23 Demo Data |
-    | Version 10.0.23 (with Platform update 47) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.23 Empty Data |
-    | Version 10.0.21 (with Platform update 45) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.21 Demo Data |
-    | Version 10.0.21 (with Platform update 45) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.21 Empty Data |
-    | Version 10.0.20 (with Platform update 44) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.20 Demo Data |
-    | Version 10.0.20 (with Platform update 44) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.20 Empty Data |
-    | Version 10.0.17 (with Platform update 41) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.17 Demo Data |
-    | Version 10.0.17 (with Platform update 41) | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.17 Empty Data |
+    | Version 10.0.32 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.32 Demo Data |
+    | Version 10.0.32 | Microsoft Dynamics 365 Finance + Operations (on-premises), Version 10.0.32 Empty Data |
 
 1. The zip file contains a single backup (.bak) file. Select the file to download, based on your requirements.
 1. After the zip file is downloaded, verify that it's unblocked. Select and hold (or right-click) the file, and then select **Properties**. In the **Properties** dialog box, select the **Unblock** checkbox.
@@ -1104,14 +1106,6 @@ If you're creating and generating gMSA passwords in your domain for the first ti
 ### When you run the remoting script Configure-Prereqs-AllVms cmdlet, you receive the following error message: "The WinRM client cannot process the request"
 
 Follow the instructions in the error message to enable the **Allow delegation fresh credentials** computer policy on all machines of the Service Fabric cluster.
-
-### When you Configure-Prereqs on servers of the MRType and ReportServerType types, you receive the following error message: "Install-WindowsFeature: The request to add or remove features on the specified server failed" 
-
-The .NET Framework version 3.5 is required on servers of the **MRType** and **ReportServerType** types. However, by default, source files for the .NET Framework version 3.5 aren't included in Windows Server 2016 installations. To work around the error, install the .NET Framework version 3.5. When you use Server Manager to manually add new features, specify the source files by using the **source** option.
-
-### When you run the Publish-ADFSApplicationGroup cmdlet, you receive the following error message: "MSIS7628: Scope names should be a valid Scope description name in AD FS configuration"
-
-This error occurs because an OpenID **allatclaims** scope that D365FO-OP-ADFSApplicationGroup requires might be missing in some Windows Server 2016 installations. To work around the error, open Server Manager, go to **Tools** /> **AD FS Management** /> **Service** /> **Scope Descriptions**, and add the **allatclaims** scope description.
 
 ### When you run the Publish-ADFSApplicationGroup cmdlet, you receive the following error message: "ADMIN0077: Access control policy does not exist: Permit everyone"
 
