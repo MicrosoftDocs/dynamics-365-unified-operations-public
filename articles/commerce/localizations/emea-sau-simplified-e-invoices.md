@@ -50,7 +50,7 @@ The high-level, end-to-end process flow for Saudi Arabia is as follows:
 1. Commerce headquarters downloads the sales transaction data together with fiscal transactions from CSU via Commerce Data Exchange (CDX). The data is stored in the headquarters DB throughout the period of life of your production environment.
 1. Commerce headquarters extracts the e-invoice in the XML format from the fiscal transaction linked to the sales transaction and submits the e-invoice to ZATCA. The submission is done by means of integration with the [Electronic Invoicing service](../../finance/localizations/e-invoicing-sa-get-started.md). For more information about the common electronic invoicing capabilities available for Saudi Arabia, see [Customer electronic invoices in Saudi Arabia](../../finance/localizations/emea-sau-e-invoices.md).
 
-## Set up Comerce for Saudi Arabia
+## Set up Commerce for Saudi Arabia
 
 This section describes the Commerce settings that are specific to and recommended for Saudi Arabia. For more information about common Commerce features and settings, see [Commerce home page](../index.md).
 
@@ -199,9 +199,9 @@ Follow these steps to set up e-invoice submission parameters that are specific t
     1. Select *Retail fiscal document mapping* in the **Electronic document model mapping** field.
     1. Select number sequences for submitted file names and batch submission IDs.
 1. On the **Features** tab, mark the **Saudi Arabia electronic invoice** feature as **Enabled**.
-1. On the **Electronic Invoicing**, set the the following fields:
+1. On the **Electronic Invoicing**, set the following fields:
     1. **Endpoint URL**: specify the endpoint URL of the Electronic invoicing service instance.
-    1. **Environment**: specify the name of the ELectronic Invoicing environment in the Regulatory Configuration Service (RCS).
+    1. **Environment**: specify the name of the Electronic Invoicing environment in the Regulatory Configuration Service (RCS).
 
 ### Enable the digital signature in offline mode
 
@@ -220,4 +220,3 @@ To enable the digital signature in offline mode, you must follow these steps aft
 To initiate the submission of simplified e-invoices to ZATCA, run the **Submit electronic documents** periodic operation in Commerce headquarters.
 
 You can check the submission log on the **Electronic document submission log** page.
-
