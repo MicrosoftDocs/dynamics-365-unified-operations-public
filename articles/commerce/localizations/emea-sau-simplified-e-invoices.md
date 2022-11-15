@@ -54,7 +54,9 @@ The high-level, end-to-end process flow for Saudi Arabia is as follows:
 
 This section describes the Commerce settings that are specific to and recommended for Saudi Arabia. For more information about common Commerce features and settings, see [Commerce home page](../index.md).
 
-To use the Saudi Arabia-specific functionality, you must complete these tasks:
+As a prerequisite, you should complete the setup of the electronic invoicing functionality for Saudi Arabia, including the Electronic invoicing service configuration. For more information, see [Customer electronic invoices in Saudi Arabia](../../finance/localizations/emea-sau-e-invoices.md).
+
+To use the Saudi Arabia-specific Commerce functionality, you must complete these tasks:
 
 - Set the **Country/region** field to **SAU** (Saudi Arabia) in the primary address of the legal entity.
 - Set the **ISO code** field to **SA** (Saudi Arabia) in the POS functionality profile of every store that is located in Saudi Arabia.
@@ -62,13 +64,12 @@ To use the Saudi Arabia-specific functionality, you must complete these tasks:
 You must also specify the following settings for Saudi Arabia. Note that you must run appropriate distribution jobs after you complete the setup.
 
 1. [Enable Commerce features](#enable-features-for-saudi-arabia) for Saudi Arabia in the **Feature management** workspace.
-1. [Specify a tax registration number](#set-up-the-legal-entity) of the organization on the **Legal entities** page.
 1. [Set up VAT](#set-up-vat-per-saudi-arabia-requirements) per the Saudi Arabia VAT regulations.
 1. [Configure custom fields](#configure-custom-fields-so-that-they-can-be-used-in-receipt-formats-for-sales-receipts) and [receipt formats](#configure-receipt-formats) to print QR codes in receipts and comply with the local regulatory requirements.
 1. [Configure the fiscal registration functionality](#set-up-fiscal-registration) for Saudi Arabia to enable generation and digital signing of simplified e-invoices.
 1. [Configure digital certificates](#configure-the-digital-signature-parameters) and other parameters of digital signing for the Commerce channel and Commerce headquarters sides.
 1. [Specify Electronic reporting (ER) configurations](#specify-electronic-reporting-configurations) that should be used to generate simplified e-invoices in POS and submit these simplified e-invoices from Commerce headquarters.
-1. [Configure e-invoice submission parameters](#configure-e-invoice-submission-parameters) for simplified e-invoices generated in POS.
+1. [Configure e-invoice submission](#configure-e-invoice-submission) for simplified e-invoices generated in POS.
 1. [Enable the digital signature in offline mode](#enable-the-digital-signature-in-offline-mode).
 
 ### Enable features for Saudi Arabia
@@ -77,12 +78,6 @@ You must enable the following features in the **Feature management** workspace:
 
 - KSA Electronic-Invoicing capability for the fiscal integration framework
 - (Saudi Arabia) Electronic invoicing integration
-
-### Set up the legal entity
-
-You must make the following changes on the **Legal entities** page.
-
-- On the **Tax registration** FastTab, in the **Tax registration number** field, specify the VAT registration number of the organization.
 
 ### Set up VAT per Saudi Arabia requirements
 
@@ -191,11 +186,11 @@ You must download the following versions (or later versions) of the configuratio
     - **Retail fiscal document mapping** data model mapping
     - **Retail fiscal document format** format
 
-### Configure e-invoice submission parameters
+### Configure e-invoice submission
 
-<!-- ADD LINK TO COMMON E-INVOICING SETUP FOR SAUDI ARABIA -->
+Before setting up e-invoice submission parameters for Commerce, you must configure the Electronic invoicing service to be used for Saudi Arabia. For more information, see [Get started with Electronic invoicing for Saudi Arabia](../../finance/localizations/e-invoicing-sa-get-started.md).
 
-Follow these steps to configure e-invoice submission parameters that are specific to Commerce for Saudi Arabia.
+Follow these steps to set up e-invoice submission parameters that are specific to Commerce for Saudi Arabia.
 
 1. Open **Electronic document parameters**.
 1. On the **Electronic document** tab, create a new record and specify the following parameters:
