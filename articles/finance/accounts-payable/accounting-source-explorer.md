@@ -52,9 +52,6 @@ For source documents that use the source document reference identities concept, 
 For these documents, you can also navigate to the actual source document from Accounting source explorer.
 
 > [!NOTE]
-> As of version 10.0.20, the **Update** button provides two additional ranges to restrict the initial query that is run to enter data on the page. These additional ranges are also available in version 10.0.19 as a service update. The following fields were added:
->
-> - From Voucher, To Voucher
-> - From Main account, To Main account
+> As of version 10.0.32, a new feature **Accounting source explorer advanced filtering** is available in feature management. This feature will replace the **Update** button in order to provide a more robust advanced query experience similar to the one found with the voucher transactions form.  The advanced filter will provide the ability to filter on similar fields you find in the voucher transactions query page such as ledger account, business unit, cost center, and department. 
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]
