@@ -18,8 +18,6 @@ ms.search.validFrom: 2020-02-13
 
 This article describes how create or link to an Azure Active Directory (Azure AD) business-to-consumer (B2C) tenant in the Microsoft Azure portal. For more information, see [Tutorial: Create an Azure Active Directory B2C tenant](/azure/active-directory-b2c/tutorial-create-tenant).
 
-## Create or link to an existing Azure AD B2C tenant in the Azure portal
-
 To create or link to an existing Azure AD B2C tenant in the Azure portal, follow these steps.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/).
