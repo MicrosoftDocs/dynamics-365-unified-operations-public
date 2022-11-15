@@ -31,7 +31,7 @@ ms.dyn365.ops.version: AX 7.0.0
 
 [!include [banner](../includes/banner.md)]
 
-A bridged payment is a payment that is posted to the general ledger in two steps. Typically, this approach is used when the method of payment is set to **Bank**, and you must post transactions to the bank account only when the transaction has cleared the bank. However, you can also use it for a ledger account. In this case, the system moves the amount from one main account to another main account when the bridging posting is processed.
+A bridged payment is a payment that is posted to the general ledger in two steps. Typically, this approach is used when the method of payment is set to **Bank**, and you must post transactions to the bank account only when the transaction has cleared the bank. However, you can also use it for a ledger account. In this case, the amount will be moved from one main account to another main account when the bridging posting is processed.
 
 You can create bridged payments from either Accounts payable or Accounts receivable. Although this article explains how to configure bridging posting for Accounts receivable, the steps for Accounts payable transactions are similar.
 
