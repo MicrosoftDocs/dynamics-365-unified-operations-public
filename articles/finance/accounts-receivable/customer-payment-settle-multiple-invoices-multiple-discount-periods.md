@@ -4,7 +4,7 @@
 title: Use one payment to settle invoices that span multiple discount periods
 description: This article shows how multiple invoices are paid when each invoice qualifies for a cash discount. The scenarios in this article highlight how the cash discounts that are taken vary, depending on when the payment is made.
 author: ShivamPandey-msft
-ms.date: 10/26/2017
+ms.date: 11/15/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
