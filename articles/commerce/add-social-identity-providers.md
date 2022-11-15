@@ -20,7 +20,7 @@ This article describes how to add social identity providers in the Microsoft Azu
 
 Social identity providers allow users to use their social accounts for authentication. Adding social identity provider authentication is optional in Dynamics 365 Commerce. 
 
-If social identity provider authentication is not added, the default Azure AD B2C profiles will be the main profiles for your user base. Users will select their own username (their preferred email address) and set a password. Azure AD B2C will authenticate users directly. 
+If social identity provider authentication isn't added, the default Azure AD B2C profiles will be the main profiles for your user base. Users will select their own username (their preferred email address) and set a password. Azure AD B2C will authenticate users directly. 
 
 If social identity provider authentication is added and a user chooses one of the social identity providers offered, an entity is still created in the Azure AD B2C tenant. Azure AD B2C will then authenticate the user's credentials with the social identity provider.
 
@@ -53,7 +53,7 @@ To add and set up a social identity provider, follow these steps.
 1. Under **Client secret**, enter the client secret as obtained from the identity provider application setup.
 1. Attach user flow for sign-in/sign-up policies:
 1. Go to **Azure AD B2C – User flows (policies) \> {your sign-in sign-up policy} \> Identity providers**.
-1. To attach the sign-in/sign-up user flow policy, select each identity provider you have set up for your account. To test these, select **Run user flow** for each identity provider. A new tab will display the sign-in page displaying the new identity provider selection box.
+1. To attach the sign-in/sign-up user flow policy, select each identity provider you have set up for your account. To test the flows, select **Run user flow** for each identity provider. A new tab displays the sign-in page displaying the new identity provider selection box.
 
 The following image shows examples of the **Add identity provider** and **Set up the social identity provider** screens in Azure AD B2C.
 
