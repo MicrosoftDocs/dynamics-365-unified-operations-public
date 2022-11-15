@@ -77,6 +77,9 @@ A checkout module shows an order summary and provides the functionality for plac
     The following image shows an example of terms and conditions on a checkout page.
 
     ![Example of terms and conditions on a checkout page.](./media/ecommerce-checkout-terms.PNG)
+    
+> [!NOTE]
+> If planning to accept multiple payment methods for online orders in your Online Channel (example: Loyalty points and credit card payment for the transaction) the **Omni-channel Commerce order payments** feature management feature and the call center **Enable order completion** (found in headquarters on the **General** FastTab of your channel at **Retail and Commerce \> Channels \> Call Centers**)  must both be **Enabled** to properly accept multiple payment methods for online orders. **Enable order completion** will be hidden and on by default if the **Omni-channel Commerce order payments** feature management feature is enabled.
 
 ## Commerce Scale Unit interaction
 
