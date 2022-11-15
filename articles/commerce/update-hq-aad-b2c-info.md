@@ -1,8 +1,8 @@
 ---
 title: Update Commerce headquarters with the new Azure AD B2C information
-description: This article describes how to set up your Azure Active Directory (Azure AD) business-to-consumer (B2C) tenants for user site authentication in Dynamics 365 Commerce.
+description: This article describes how to update Microsoft Dynamics 365 Commerce headquarters with new Azure Active Directory (Azure AD) business-to-consumer (B2C) information.
 author: BrianShook
-ms.date: 11/14/2022
+ms.date: 11/15/2022
 ms.topic: article 
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -15,6 +15,8 @@ ms.search.validFrom: 2020-02-13
 # Update Commerce headquarters with the new Azure AD B2C information
 
 [!include [banner](includes/banner.md)]
+
+This article describes how to update Microsoft Dynamics 365 Commerce headquarters with new Azure Active Directory (Azure AD) business-to-consumer (B2C) information.
 
 Once the Azure AD B2C provisioning steps above are completed, the Azure AD B2C application must be registered in your Dynamics 365 Commerce environment.
 
@@ -52,12 +54,9 @@ To obtain your identity provider issuer string, follow these steps.
 1. In the metadata, copy the identity provider issuer URL (the value for **"issuer"**).
     - Example: ``https://login.fabrikam.com/011115c3-0113-4f43-b5e2-df01266e24ae/v2.0/``.
 
+## Next steps
 
-
-
-
-Proceed to the next step: [Configure your B2C tenant in Commerce site builder](config-b2c-tenant-site-builder.md)
-
+To continue the process of setting up a B2C tenant in Commerce, proceed to [Configure your B2C tenant in Commerce site builder](config-b2c-tenant-site-builder.md).
 
 ## Additional resources
 
