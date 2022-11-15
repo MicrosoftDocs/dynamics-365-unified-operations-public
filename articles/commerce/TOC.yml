@@ -590,7 +590,7 @@
               href: dev-itpro/adyen-connector-faq.md
             - name: Configure Google Pay with Adyen
               href: dev-itpro/google-pay-adyen.md
-            - name: Set up Apple Pay with Adyen in Dynamics 365 Commerce
+            - name: Set up Apple Pay with Adyen
               href: dev-itpro/apple-pay-adyen.md
             - name: Troubleshoot Dynamics 365 Payment Connector for Adyen
               href: dev-itpro/adyen-connector-troubleshoot.md
