@@ -136,6 +136,8 @@ In the following example, if the first four digits of a card number are **6036**
     > [!NOTE]
     > If you're using Retail Commerce Scale Unit (RCSU) that is located in the store, you need to perform an IIS reset to clear the cache. You can either do this through the IIS application or open an admin Command Prompt window and enter `iisreset`. Otherwise, wait for the RCSU to be updated.
 
+Also to note, existing buttons on the F2S1m (or version F*n*S1M you may be using for layout) button grid can similarly be configured for *Internal* Gift Cards also. The existing Issue Gift Card (sometimes depicted with the card and plut button in the existing layout) require the **Button properties** have the **Action** set (ex: Issue gift card) and the **Payment type** set ("Gift Card" for *Internal* gift cards). Same for the **Add to gift card** and **check gift card balance** buttons that are pre-configured for this view. If these buttons are intended to handle *Internal* gift cards, the "Gift Card" **Payment type** should be set for their properties.
+
 ## Configure and test Modern POS
 
 1. Start the Modern POS (MPOS) application.
