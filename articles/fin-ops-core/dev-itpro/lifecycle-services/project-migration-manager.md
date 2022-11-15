@@ -78,8 +78,8 @@ You're responsible for migrating data that requires manual migration. However, y
 
 1. On the navigation menu, select **Project migration manager**.
 
-    > [!NOTE]
-    > You must be a project owner to migrate a project, In addition, your account must be in the tenant that owns the project.
+> [!NOTE]
+> You must be a project owner to migrate a project, In addition, your account must be in the tenant that owns the project.
 
 2. Select **New** to start a new migration request.
 3. In the **Schedule Migration** dialog box, select a target geography that meets your specifications.
