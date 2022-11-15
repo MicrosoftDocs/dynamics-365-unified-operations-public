@@ -4,7 +4,7 @@
 title: Reconcile a bank account
 description: This article describes how to reconcile a bank account.
 author: angelad116
-ms.date: 07/01/2019
+ms.date: 11/16/2022
 ms.topic: article
 ms.prod: 
 ms.technology: 
@@ -14,7 +14,7 @@ ms.technology:
 # ms.search.form:  [Operations AOT form name to tie this article to]
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 # ms.custom: [used by loc for topics migrated from the wiki]
 ms.search.region: Global
@@ -32,27 +32,27 @@ When you receive a bank statement, you should periodically reconcile legal entit
 
 You cannot reconcile a bank statement with a bank account if any of the checks or deposit slip payments that are listed on the statement currently have a status of **Pending cancellation**. After a reviewer posts or rejects a check reversal or deposit slip payment cancellation, the status is no longer **Pending cancellation**, and you can reconcile the bank account.
 
-1.  Go to **Cash and bank management** \> **Bank Accounts** \> **Bank accounts**. Select the bank account to reconcile with the bank statement and select **Reconcile** > **Account reconciliation**.
+1. Go to **Cash and bank management** \> **Bank Accounts** \> **Bank accounts**. Select the bank account to reconcile with the bank statement and select **Reconcile** > **Account reconciliation**.
 
-2.  Enter information in the **Bank statement date** and **Bank statement** fields. In the **Ending balance** field, you can enter the balance of the bank account as it appears on the bank statement.
+2. Enter information in the **Bank statement date** and **Bank statement** fields. In the **Ending balance** field, you can enter the balance of the bank account as it appears on the bank statement.
 
-3.  Select **Transactions** to open the **Account reconciliation** page.
+3. Select **Transactions** to open the **Account reconciliation** page.
 
-4.  For each transaction that is included on the bank statement, select the **Cleared** check box if the amount in Dynamics 365 Finance corresponds to the amount on the bank statement. You can also enter or modify the value in the **Bank transaction type** field. This field value is important for bank transaction statistics and for some reports.
+4. For each transaction that is included on the bank statement, select the **Cleared** check box if the amount in Dynamics 365 Finance corresponds to the amount on the bank statement. You can also enter or modify the value in the **Bank transaction type** field. This field value is important for bank transaction statistics and for some reports.
     
 
-    > [!NOTE]
-    > <P>Do not select the <STRONG>Cleared</STRONG> check box for transactions that are not on the bank statement. These transactions will continue to be displayed in on this page until they are reconciled with a future bank statement.</P>
-    > <P>The <STRONG>Cleared</STRONG> check box is not available if the transaction has a status of <STRONG>Pending cancellation</STRONG>. Transactions might have this status if Finance is set up to require that reversals or cancellations be sent to review before they are posted. After a reviewer posts or rejects the reversal or cancellation, the status is no longer <STRONG>Pending cancellation</STRONG>, and you can reconcile the bank account with the bank statement.</P>
+>[!NOTE]
+>Do not select the **Cleared** check box for transactions that are not on the bank statement. These transactions will continue to be displayed in on this page until they are reconciled with a future bank statement.
+>The **Cleared** check box is not available if the transaction has a status of **Pending cancellation**. Transactions might have this status if Finance is set up to require that reversals or cancellations be sent to review before they are posted. After a reviewer posts or rejects the reversal or cancellation, the status is no longer **Pending cancellation**, and you can reconcile the bank account with the bank statement.
 
-    
-    To select the **Cleared** check box for an interval of checks that all are displayed on the bank statement, select **Mark check interval**, and then indicate the interval.
+
+To select the **Cleared** check box for an interval of checks that all are displayed on the bank statement, select **Mark check interval**, and then indicate the interval.
 
 5.  If the amount for a bank account transaction does not correspond to the amount for the transaction on the bank statement, enter the amount of the correction in the **Correction amount** field.
     
 
-    > [!NOTE]
-    > <P>If the fiscal period of the transaction to be corrected is closed, the <STRONG>Correction amount</STRONG> field cannot be used. Instead, create a line that has a transaction date that is in an open fiscal period for the correction. In this case, you must add the financial dimensions that were used on the original transaction, and also the offset main account.</P>
+> [!NOTE]
+> If the fiscal period of the transaction to be corrected is closed, the **Correction amount** field cannot be used. Instead, create a line that has a transaction date that is in an open fiscal period for the correction. In this case, you must add the financial dimensions that were used on the original transaction, and also the offset main account.
 
 
 
