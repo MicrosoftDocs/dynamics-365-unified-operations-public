@@ -2,7 +2,7 @@
 title: Create or link to an existing Azure AD B2C tenant in the Azure portal
 description: This article describes how create or link to an existing Azure Active Directory (Azure AD) business-to-consumer (B2C) tenant in the Microsoft Azure portal.
 author: BrianShook
-ms.date: 11/14/2022
+ms.date: 11/15/2022
 ms.topic: article 
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -55,7 +55,9 @@ The following image shows an example of an Azure AD B2C **Troubleshoot** banner.
 
 ![Warning showing directory has no Active Subscription.](./media/B2CImage_5.png)
 
-To continue the process of setting up a B2C tenant in Commerce, proceed to [Create the B2C application](create-b2c-app.md)\.
+## Next steps
+
+To continue the process of setting up a B2C tenant in Commerce, proceed to [Create the B2C application](create-b2c-app.md).
 
 ## Additional resources
 
