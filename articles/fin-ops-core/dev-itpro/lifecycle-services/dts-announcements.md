@@ -26,7 +26,7 @@ ms.assetid:
 
 ## Visual Studio Code Extension Release
 
-DTS has released a Visual Studio Code extension that brings a set of DTS functionalities directly to VS Code so users can save the manual visit to LCS to use Translation Service and get the results within the app. This extension is targeted towards Business Central developers for whom VS Code is their primary development environment. 
+Users can now create, submit, and retrieve new DTS translation requests as well as view and manage existing resource files from VS Code. This release saves users the manual visit to our website and provides a better DTS experience from their IDE. 
 
 ### Where to download? 
 
@@ -50,7 +50,7 @@ This extension was created for Dynamics 365 Business Central users who develop e
 
 ## Visual Studio Extension Release
 
-DTS has released a Visual Studio extension which provides Translation, Regeneration, and Alignment support within the app. This extension is targeted towards Finance & Operations developers for whom Visual Studio is their primary development environment. 
+Allows users to save time by creating translation requests and translation memories as well as regenerating the label resource files straight from Visual Studio app. Now users will not have to visit our website to submit their requests.  
 
 ### Where to download? 
 
