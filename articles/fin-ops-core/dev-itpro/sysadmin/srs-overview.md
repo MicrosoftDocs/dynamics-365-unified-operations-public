@@ -76,11 +76,8 @@ Master company sharing should be considered only if there's a need to share:
 | List of officially supported tables |  [Supported tables](/dynamics365/fin-ops-core/dev-itpro/sysadmin/drs-srs-tables)  | [Supported tables](/dynamics365/fin-ops-core/dev-itpro/sysadmin/drs-srs-tables#tables-supported-for-master-company-data-sharing)   |
 | Are Microsoft-provided policy templates available?  |  Yes  |  No  |
 
-It is possible to combine duplicate record sharing and master company sharing for the same set of companies by using different policies. It's important to always select all applicable tables and optional foreign key fields in the duplicate record policy and enable the policy before the master company sharing policy is enabled. 
+It's possible to combine duplicate record sharing and master company sharing for the same set of companies by using different policies. It's important to always select all applicable tables and optional foreign key fields in the duplicate record policy and enable the policy before the master company sharing policy is enabled. This way you can share, for example, the customer groups and terms of payment tables, using duplicate record sharing and the customer table using master Company sharing for scenarios where it's only the number of customer records that exceeds the limit and the number of companies do not exceed 300 for the policy.
 
-For exampe, you can share: 
- - the customer groups and terms of payment tables using duplicate record sharing 
- - the customer table using master Company sharing. This can be used for scenarios where it's only the number of customer records that exceeds the limit and the number of companies don't exceed 300 for the policy.
 
 ## Specific considerations for successful data sharing
 ### Automatically added tables based on selected foreign key fields 
@@ -93,7 +90,9 @@ In the example shown in the following image, unless the terms of payment table i
 > [!NOTE]
 > Only one level of child foreign key relationships is added automatically. 
 
-Tables that are automatically added when a policy is enabled or updated won't be visible in the Configure cross-company data sharing form until the policy is disabled. The best practice is to manually add tables based on the selected foreign key fields prior to enabling or updating the policy. This makes it possible to understand the tables and fields that will be shared. This way it also provides the option for DRS policies to select fields for these tables, including optional foreign key fields that in turn might add more tables. 
+
+Tables that are automatically added when a policy is enabled or updated will not be visible in the Configure cross-company data sharing form until the policy is disabled. The best practice is to manually add tables based on the selected foreign key fields prior to enabling or updating the policy. This makes it possible to understand the tables and fields that will be shared. This way it also provides the option for DRS policies to select fields for these tables, including optional foreign key fields that in turn might add more tables. 
+
 
 ### Country/region specific considerations for successful data sharing
 Tables that include country/region specific fields and/or logic need to be carefully considered. It might be required to use sharing policies per country/region for certain tables to avoid configuration conflicts. Country/region specific fields will only be viable/editable for companies in that country/region, but updates for these fields might trigger conflicts with companies in other country regions. 
@@ -117,7 +116,9 @@ Only required foreign key fields are selected by default when adding a table to 
 Validation rules are run when a sharing policy is enabled or updated. It is recommended to always use 'Find sharing issues' to view and resolve any inconsistencies between companies. Inconsistencies occur when attribute values differ between companies based on unique record keys. For example, the same name for terms of payment. Examples can be differences in description or payment method. In data sharing issues, it's possible to select the company’s values that should be used for all other companies in the policy - either field by field or the full record.  
 
 ### Customer and vendor master data sharing feature
-Customer and vendor master data sharing allows you to share customer and vendor data across multiple companies. It can be enabled using the customer and vendor master data sharing feature in Feature management. It's important to consider limits in the maximum number of records and companies stated above. Tables that are part of the party concept might require additional preparations before sharing can be enabled. Any scenario where the party relations differ across companies for the same unique record key will have to be resolved. For example, customer account number 1000 might be related to different party IDs across companies. In this case, it will be required to align party relationships if the customers use the rename function to keep them as separate customers. For more information, see [Party and global address book](../data-entities/dual-write/party-gab.md).
+
+Customer and vendor master data sharing allows you to share customer and vendor data across multiple companies. It can be enabled using the customer and vendor master data sharing feature in Feature management. It's very important to consider limits in the maximum number of records and companies stated above. Tables that are part of the party concept might require additional preparations before sharing can be enabled. Any scenario where the party relations differ across companies for the same unique record key will have to be resolved. For example, customer account number 1000 might be related to different party IDs across companies. In this case, it will be required to align party relationships if the customers use the rename function to keep them as separate customers. For more information, see [Party and global address book](../data-entities/dual-write/party-gab.md).
+
 
 ### Stop or reduce sharing scope 
 Sharing can be stopped by removed for one or more companies before you can update the policy. The approach is applicable for deselecting fields from sharing. 
