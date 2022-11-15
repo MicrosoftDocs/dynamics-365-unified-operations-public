@@ -1012,7 +1012,7 @@
             href: set-up-B2C-tenant.md
           - name: Create or link to an existing Azure AD B2C tenant
             href: create-link-aad-b2c-tenant.md
-          - name: Create the B2C application
+          - name: Create a B2C application
             href: create-b2c-app.md
           - name: Create user flow policies
             href: create-user-flow-policies.md
