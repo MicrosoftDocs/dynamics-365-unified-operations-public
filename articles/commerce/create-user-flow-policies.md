@@ -2,7 +2,7 @@
 title: Create user flow policies
 description: This article describes how to create user flow policies in the Microsoft Azure portal.
 author: BrianShook
-ms.date: 11/14/2022
+ms.date: 11/15/2022
 ms.topic: article 
 audience: Application User, Developer, IT Pro
 ms.reviewer: v-chgriffin
@@ -18,7 +18,7 @@ ms.search.validFrom: 2020-02-13
 
 This article describes how to create user flow policies in the Microsoft Azure portal.
 
-User flows are the policies Azure Active Directory (Azure AD) business-to-consumer (B2C) uses to provide secure sign in, sign up, edit profile, and forget password user experiences. Dynamics 365 Commerce uses these flows to perform the policy actions to interact with the Azure AD B2C tenant. When a user interacts with these policies, they are redirected to the Azure AD B2C tenant to perform the actions.
+User flows are the policies Azure Active Directory (Azure AD) business-to-consumer (B2C) uses to provide secure sign in, sign up, edit profile, and forget password user experiences. Dynamics 365 Commerce uses these flows to perform the policy actions to interact with the Azure AD B2C tenant. When a user interacts with these policies, they're redirected to the Azure AD B2C tenant to perform the actions.
 
 Azure AD B2C provides three basic user flow types:
 - Sign up and sign in
@@ -27,7 +27,7 @@ Azure AD B2C provides three basic user flow types:
 
 You can choose to use the default user flows provided by Azure AD, which will display a page hosted by Azure AD B2C. Alternately, you can create an HTML page to control the look and feel of these user flow experiences. 
 
-To customize the user policy pages with pages built in Dynamics 365 Commerce, see [Set up custom pages for user logins](custom-pages-user-logins.md). For additional information, see [Customize the interface of user experiences in Azure Active Directory B2C](/azure/active-directory-b2c/tutorial-customize-ui).
+To customize the user policy pages with pages built in Dynamics 365 Commerce, see [Set up custom pages for user logins](custom-pages-user-logins.md). For more information, see [Customize the interface of user experiences in Azure Active Directory B2C](/azure/active-directory-b2c/tutorial-customize-ui).
 
 ### Create a sign-up and sign-in user flow policy
 
@@ -37,7 +37,7 @@ To create a sign-up and sign-in user flow policy, follow these steps.
 1. On the **Azure AD B2C – User flows (policies)** page, select **New User Flow**.
 1. Select the **Sign up and sign in** policy, and then select the **Recommended** version.
 1. Under **Name**, enter a policy name. This name will display afterwards with a prefix the portal assigns (for example, "B2C_1_").
-1. Under **Identity providers**, in the **Local accounts** section, select **Email signup**. Email authentication is used in most common scenarios for Commerce. If you are also using social identity provider authentication, these can also be selected at this time.
+1. Under **Identity providers**, in the **Local accounts** section, select **Email signup**. Email authentication is used in most common scenarios for Commerce. If you're also using social identity provider authentication, you can also select them at this time.
 1. Under **Multifactor Authentication**, select the appropriate choice for your company. 
 1. Under **User attributes and claims**, select options to collect attributes or return claims as appropriate. Select **Show more...** to get the full list of attributes and claims options. Commerce requires the following default options:
 
