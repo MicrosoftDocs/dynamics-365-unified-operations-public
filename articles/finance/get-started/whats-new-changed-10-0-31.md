@@ -47,6 +47,7 @@ The following table lists the features that are included in this release. We mig
 |--------------|---------|------------------|------------|
 | Tax Calculation | Update tax exempt number from customer address | This feature automatically updates the **Tax exempt number** field on the sales order and free text invoice header, based on the customer address that is selected. You can enable this feature by using the **Update tax exempt number from customer address** parameter on the **Tax Calculation parameters** page when the Tax Calculation service is enabled. | Parameter |
 | General ledger | Automate ledger settlements process | The automation of ledger settlement uses the Process automation framework to define matching rules and the schedule that they will be run on. You can define matching criteria such as the posting type and financial dimensions. | Feature management |
+| Additional languages available | Four additional languages are available | Four new languages are available for user selection in the preferred language list: Korean, Portuguese (Portugal), Vietnamese, and Chinese (Traditional). To select this option, go to **User options \> Preferences \> Language and country/region preference**. | Localized preferences |
 
 ## Feature enhancements included in this release
 
