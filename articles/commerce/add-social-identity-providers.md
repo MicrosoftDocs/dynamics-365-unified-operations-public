@@ -1,5 +1,5 @@
 ---
-title: Add social identity providers (Optional)
+title: Add social identity providers
 description: This article describes how to add social identity providers in the Microsoft Azure portal.
 author: BrianShook
 ms.date: 11/15/2022
@@ -12,7 +12,7 @@ ms.search.validFrom: 2020-02-13
 
 ---
 
-# Add social identity providers (Optional)
+# Add social identity providers
 
 [!include [banner](includes/banner.md)]
 
@@ -20,7 +20,7 @@ This article describes how to add social identity providers in the Microsoft Azu
 
 Social identity providers allow users to use their social accounts for authentication. Adding social identity provider authentication is optional in Dynamics 365 Commerce. 
 
-If social identity provider authentication isn't added, the default Azure AD B2C profiles will be the main profiles for your user base. Users will select their own username (their preferred email address) and set a password. Azure AD B2C will authenticate users directly. 
+If social identity provider authentication isn't added, the default Azure Active Directory (Azure AD) B2C profiles will be the main profiles for your user base. Users will select their own username (their preferred email address) and set a password. Azure AD B2C will authenticate users directly. 
 
 If social identity provider authentication is added and a user chooses one of the social identity providers offered, an entity is still created in the Azure AD B2C tenant. Azure AD B2C will then authenticate the user's credentials with the social identity provider.
 
@@ -40,6 +40,9 @@ Before you can add a social identity provider for authentication, you must go to
 - [Twitter](/azure/active-directory-b2c/active-directory-b2c-setup-twitter-app)
 
 ### Add and set up a social identity provider
+
+> [!NOTE]
+> Adding social identity providers is an optional step when setting up a business-to-consumer (B2C) tenant in Microsoft Dynamics 365 Commerce.
 
 To add and set up a social identity provider, follow these steps.  
 
