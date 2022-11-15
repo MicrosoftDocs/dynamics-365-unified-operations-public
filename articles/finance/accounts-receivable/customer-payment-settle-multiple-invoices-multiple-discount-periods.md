@@ -15,7 +15,7 @@ ms.search.form: CustOpenTrans, LedgerJournalTransCustPaym
 # ROBOTS: 
 audience: Application User
 # ms.devlang: 
-ms.reviewer: kfend
+ms.reviewer: twheeloc
 # ms.tgt_pltfrm: 
 ms.custom: 14511
 ms.assetid: 3e42ccb5-b9d7-4a70-8db9-4206d10fd433
@@ -49,11 +49,11 @@ If Arnie creates a payment journal to fully settle these invoices on June 29, th
 -   The payment for invoice FTI-10041 is 990.00. A cash discount of 1 percent, or 10.00, is taken.
 -   The payment for invoice FTI-10042 is 980.00. A cash discount of 2 percent, or 20.00, is taken.
 
-| Mark                     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Currency | Amount to settle |
-|--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
-| Selected                 | Normal            | FTI-10040 | 4032    | 5/15/2015 | 6/15/2015 | 10040   | 1,000.00                             |                                       | USD      | 1,000.00         |
-| Selected                 | Normal            | FTI-10041 | 4032    | 6/25/2015 | 7/25/2015 | 10041   | 1,000.00                             |                                       | USD      | 990.00           |
-| Selected and highlighted | Normal            | FTI-10042 | 4032    | 6/25/2015 | 7/25/2015 | 10042   | 1,000.00                             |                                       | USD      | 980.00           |
+| Mark | Use cash discount | Voucher   | Account | Date   | Due date  | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Currency | Amount to settle |
+|------|----------|-----------|---------|-----------|-----------|---------|---------------------|---------------------|----------|------------------|
+| Selected     | Normal      | FTI-10040 | 4032    | 5/15/2020 | 6/15/2020 | 10040   | 1,000.00  |                    | USD      | 1,000.00         |
+| Selected     | Normal      | FTI-10041 | 4032    | 6/25/2020 | 7/25/2020 | 10041   | 1,000.00  |                    | USD      | 990.00           |
+| Selected and highlighted | Normal      | FTI-10042 | 4032    | 6/25/2020 | 7/25/2020 | 10042   | 1,000.00    |              | USD      | 980.00           |
 
 After the payment is posted, the customer balance is 0.00.
 
@@ -65,19 +65,19 @@ If Arnie creates a payment journal to fully settle these invoices on July 1, the
 -   The payment for invoice FTI-10042 is 990.00. A cash discount of 1 percent, or 10.00 is taken. Although July 1 is after the period that qualifies for the 2-percent discount, it's still in the period that qualifies for the 1-percent discount.
 
 | Mark                     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Currency | Amount to settle |
-|--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
-| Selected                 | Normal            | FTI-10040 | 4032    | 5/15/2015 | 6/15/2015 | 10040   | 1,000.00                             |                                       | USD      | 1,000.00         |
-| Selected                 | Normal            | FTI-10041 | 4032    | 6/25/2015 | 7/25/2015 | 10041   | 1,000.00                             |                                       | USD      | 990.00           |
-| Selected and highlighted | Normal            | FTI-10042 | 4032    | 6/25/2015 | 7/25/2015 | 10042   | 1,000.00                             |                                       | USD      | 990.00           |
+|----------|---------|-----------|---------|-----------|-----------|---------|--------------------|------------------|----------|------------------|
+| Selected         | Normal            | FTI-10040 | 4032    | 5/15/2020 | 6/15/2020 | 10040   | 1,000.00         |                | USD      | 1,000.00         |
+| Selected                 | Normal            | FTI-10041 | 4032    | 6/25/2020 | 7/25/2020 | 10041   | 1,000.00  |               | USD      | 990.00           |
+| Selected and highlighted | Normal            | FTI-10042 | 4032    | 6/25/2020 | 7/25/2020 | 10042   | 1,000.00  |             | USD      | 990.00           |
 
 ## Partial settlement on June 29
 Customer 4032 can pay a partial amount, such as half of each invoice. Arnie creates a payment for customer 4032 and then opens the **Settle transactions** page. On the **Settle transactions** page, Arnie marks all three invoice lines for settlement. On each line, Arnie enters the amount to settle, based on the instructions that the customer provided. When Arnie selects a line, Arnie sees the discount amount for that line and the cash discount amount that is taken. Because the customer is paying half the invoice, Arnie sees that the value in the **Cash discount amount** field for FTI-10042 is **20.00**, but the value in the **Cash discount taken** field is **10.00**. The payment amount is 1,485.00.
 
-| Mark                     | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Currency | Amount to settle |
-|--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
-| Selected                 | Normal            | FTI-10040 | 4032    | 5/15/2015 | 6/15/2015 | 10040   | 1,000.00                             |                                       | USD      | 500.00           |
-| Selected                 | Normal            | FTI-10041 | 4032    | 6/25/2015 | 7/25/2015 | 10041   | 1,000.00                             |                                       | USD      | 495.00           |
-| Selected and highlighted | Normal            | FTI-10042 | 4032    | 6/25/2015 | 7/25/2015 | 10042   | 1,000.00                             |                                       | USD      | 490.00           |
+| Mark   | Use cash discount | Voucher   | Account | Date      | Due date  | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Currency | Amount to settle |
+|-------------|-------------------|-----------|---------|-----------|-----------|---------|-----------|------------------|----------|------------------|
+| Selected   | Normal       | FTI-10040 | 4032    | 5/15/2020 | 6/15/2020 | 10040   | 1,000.00        |               | USD      | 500.00           |
+| Selected                 | Normal            | FTI-10041 | 4032    | 6/25/2020 | 7/25/2020 | 10041   | 1,000.00     |     | USD      | 495.00           |
+| Selected and highlighted | Normal            | FTI-10042 | 4032    | 6/25/2020 | 7/25/2020 | 10042   | 1,000.00     |         | USD      | 490.00           |
 
 Arnie can also manually enter the payment amount of 1,485.00 before opening the **Settle transactions** page. If Arnie manually enters the payment amount and then marks all three transactions, but doesn't adjust the value in the **Amount to settle** field for each transaction, Arnie receives the following message when the page closes:
 
@@ -93,11 +93,11 @@ Arnie views the information on the **Customer transactions** page.
 
 | Voucher    | Transaction type | Date      | Invoice | Amount in transaction currency debit | Amount in transaction currency credit | Balance  | Currency |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
-| FTI-10040  | Invoice          | 5/15/2015 | 10040   | 1,000.00                             |                                       | 0.00     | USD      |
-| FTI-10041  | Invoice          | 6/25/2015 | 10041   | 1,000.00                             |                                       | 1,000.00 | USD      |
-| FTI-10042  | Invoice          | 6/25/2015 | 10042   | 1,000.00                             |                                       | 505.10   | USD      |
-| ARP-10040  | Payment          | 6/29/2015 |         |                                      | 1,485.00                              | 0.00     | USD      |
-| DISC-10040 | Cash discount    | 6/29/2015 |         |                                      | 9.90                                  | 0.00     | USD      |
+| FTI-10040  | Invoice          | 5/15/2020 | 10040   | 1,000.00                             |                                       | 0.00     | USD      |
+| FTI-10041  | Invoice          | 6/25/2020 | 10041   | 1,000.00                             |                                       | 1,000.00 | USD      |
+| FTI-10042  | Invoice          | 6/25/2020 | 10042   | 1,000.00                             |                                       | 505.10   | USD      |
+| ARP-10040  | Payment          | 6/29/2020 |         |                                      | 1,485.00                              | 0.00     | USD      |
+| DISC-10040 | Cash discount    | 6/29/2020 |         |                                      | 9.90                                  | 0.00     | USD      |
 
 
 
