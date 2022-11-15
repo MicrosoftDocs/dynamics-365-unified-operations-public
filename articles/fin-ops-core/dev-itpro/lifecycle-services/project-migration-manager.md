@@ -83,9 +83,9 @@ You're responsible for migrating data that requires manual migration. However, y
 
 2. Select **New** to start a new migration request.
 3. In the **Schedule Migration** dialog box, select a target geography that meets your specifications.
-<br/>
-<img src="media/projectmigrationmanager.png" width="300px" alt="Image showing the Schedule Migration dialog with inputs to populate." />
-<br/>
+
+![Image showing the Schedule Migration dialog with inputs to populate.](media/projectmigrationmanager.png)
+
 4. Select a migration start time in the future. This step will begin the migration of your project, and several aspects of the project will become read-only.
 5. Select the checkbox to agree to the terms and continue.
 
