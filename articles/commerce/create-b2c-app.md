@@ -1,5 +1,5 @@
 ---
-title: Create the B2C application
+title: Create a B2C application
 description: This article describes how to create a business-to-consumer (B2C) application in the Microsoft Azure portal.
 author: BrianShook
 ms.date: 11/15/2022
@@ -12,7 +12,7 @@ ms.search.validFrom: 2020-02-13
 
 ---
 
-# Create the B2C application
+# Create a B2C application
 
 [!include [banner](includes/banner.md)]
 
