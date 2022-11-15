@@ -67,7 +67,7 @@ When you enter a free text invoice, each amount will be distributed as follows.
 <li>If the main account is an allocation account, use the default value from the allocation account definition.</li>
 <li>If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</li>
 <li>Use the default financial dimension values on the free text invoice line.</li>
-<li>Use the default financial dimension values from the ledger account in the Chart of accounts page.</li>
+<li>Use the default financial dimension values from the ledger account on the Chart of accounts page.</li>
 </ol></td>
 </tr>
 <tr class="even">
@@ -89,36 +89,36 @@ When you enter a free text invoice, each amount will be distributed as follows.
 <td>The ledger account on the free text invoice line.</td>
 <td><ol>
 <li>Use the default financial dimension values on the free text invoice line.</li>
-<li>Use the default financial dimension values from the ledger account on the **Chart of accounts** page.</li>
+<li>Use the default financial dimension values from the ledger account on the Chart of accounts page.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Free text invoice discount amount</td>
-<td>The Main account for **Customer discounts** field on the **Cash discounts** page.</td>
+<td>The Main account for Customer discounts field on the Cash discounts page.</td>
 <td><ol>
 <li>If the main account is an allocation account, use the default value from the allocation account definition.</li>
 <li>If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</li>
 <li>Use the default financial dimension values on the free text invoice line.</li>
-<li>Use the default financial dimension values from the ledger account on the **Chart of accounts** page.</li>
+<li>Use the default financial dimension values from the ledger account on the Chart of accounts page.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Free text invoice sales tax amount</td>
-<td>The **Sales tax payable** field on the **Ledger posting groups** page.</td>
+<td>The Sales tax payable field on the Ledger posting groups page.</td>
 <td><ol>
 <li>Use the financial dimensions that are defined on the free text invoice line amount or the distributions for the charge line amount.</li>
 <li>Use the default financial dimension values on the free text invoice line.</li>
-<li>Use the default financial dimension values from the ledger account on the **Chart of accounts** page.</li>
+<li>Use the default financial dimension values from the ledger account on the Chart of accounts page.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Free text invoice charge line amount</td>
-<td>The **Credit account** field on the **Charges code** page.</td>
+<td>The Credit account field on the Charges code page.</td>
 <td><ol>
 <li>If the main account is an allocation account, use the default value from the allocation account definition.</li>
 <li>If the main account is not an allocation account, use the financial dimension default template on the free text invoice line.</li>
 <li>Use the default financial dimension values on the free text invoice line.</li>
-<li>Use the default financial dimension values from the ledger account on the **Chart of accounts** page.</li>
+<li>Use the default financial dimension values from the ledger account on the Chart of accounts page.</li>
 </ol></td>
 </tr>
 </tbody>
