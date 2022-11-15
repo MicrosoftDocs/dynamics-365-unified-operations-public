@@ -72,7 +72,7 @@ The following image shows an example of a default sign-in screen with a social i
 
 ## Next steps
 
-To continue the process of setting up a B2C tenant in Commerce, proceed to [Update Commerce headquarters with the new Azure AD B2C information](update-hq-aad-b2c-info.md)
+To continue the process of setting up a B2C tenant in Commerce, proceed to [Update Commerce headquarters with the new Azure AD B2C information](update-hq-aad-b2c-info.md).
 
 ## Additional resources
 
