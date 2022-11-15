@@ -199,7 +199,9 @@ Follow these steps to set up e-invoice submission parameters that are specific t
     1. Select *Retail fiscal document mapping* in the **Electronic document model mapping** field.
     1. Select number sequences for submitted file names and batch submission IDs.
 1. On the **Features** tab, mark the **Saudi Arabia electronic invoice** feature as **Enabled**.
-1. On the **Electronic Invoicing**, set the **Endpoint URL** and **Environment** fields.
+1. On the **Electronic Invoicing**, set the the following fields:
+    1. **Endpoint URL**: specify the endpoint URL of the Electronic invoicing service instance.
+    1. **Environment**: specify the name of the ELectronic Invoicing environment in the Regulatory Configuration Service (RCS).
 
 ### Enable the digital signature in offline mode
 
@@ -212,3 +214,10 @@ To enable the digital signature in offline mode, you must follow these steps aft
 1. Sign in to POS.
 1. On the **Database connection status** page, ensure that the offline database is fully synchronized. When the value of the **Pending transactions in offline database** field is **0** (zero), the database is fully synchronized.
 1. Restart POS.
+
+## E-invoice submission
+
+To initiate the submission of simplified e-invoices to ZATCA, run the **Submit electronic documents** periodic operation in Commerce headquarters.
+
+You can check the submission log on the **Electronic document submission log** page.
+
