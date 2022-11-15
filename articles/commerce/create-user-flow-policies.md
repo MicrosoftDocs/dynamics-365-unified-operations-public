@@ -104,7 +104,7 @@ The following image shows where to set **Reset Password using mail address** in 
 
 ## Next steps
 
-To continue the process of setting up a B2C tenant in Commerce, proceed to [Add social identity providers (Optional)](add-social-identity-providers.md).
+To continue the process of setting up a B2C tenant in Commerce, proceed to [Add social identity providers](add-social-identity-providers.md).
 
 ## Additional resources
 
